@@ -2,53 +2,57 @@
   "question_id": "8dd9e329-f1b1-433f-8eb7-c4e9c4cd6a4a",
   "baseline_hash": "sha256:4b0f9cd16652f4cea8892435eb3f588c26367689786543661740c51b31c190f5",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-001-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-001-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
     "parent_article_slug": "lea-prac-eth-001-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118",
+    "source_locator": "UAP Code of Ethics line 56",
     "checked_markdown_lines": [
-      "raw markdown lines 23-29",
-      "raw markdown lines 31-118"
+      "UAP Code of Ethics lines 23-29",
+      "UAP Code of Ethics lines 31-42",
+      "UAP Code of Ethics lines 44-58",
+      "UAP Code of Ethics lines 60-79",
+      "UAP Code of Ethics lines 81-102"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+        "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "A question about clarifying scope and professional charges at the start of the engagement most directly belongs to which section?",
+    "text": "How should the architect handle outside returns from interested sources?",
     "options": [
       {
         "id": "a",
-        "text": "Section 2, responsibilities in relation to the client"
+        "text": "Do not accept or ask for returns from sources other than the client"
       },
       {
         "id": "b",
-        "text": "Section 1, responsibilities in relation to the people"
+        "text": "Accept them privately if the client does not ask"
       },
       {
         "id": "c",
-        "text": "Section 3, responsibilities in relation to the contractor"
+        "text": "Accept them only from contractors"
       },
       {
         "id": "d",
-        "text": "Section 4, responsibilities in relation to agents"
+        "text": "Convert them into design credits without disclosure"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +60,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Section 2-b requires the architect to ascertain the exact nature and scope of services and corresponding professional charges at the inception of the relationship.",
-    "explanation": "Section 2-b requires the architect to ascertain the exact nature and scope of services and corresponding professional charges at the inception of the relationship.",
-    "code_citation": "UAP Document Code of Ethics, lines 47-63",
+    "rationale": {
+      "correct": "Section 2-h requires compensation solely through the professional fee charged directly to the client.",
+      "takeaway": "Section 2-h requires compensation solely through the professional fee charged directly to the client."
+    },
+    "explanation": "Use UAP Code of Ethics line 56 for this Batch 111 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics line 56",
     "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 111"
     ],
-    "difficulty": 0.7,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-001-006"
+    "model_id": "BATCH-111-lea-prac-eth-001-core-concept-006"
   }
 }

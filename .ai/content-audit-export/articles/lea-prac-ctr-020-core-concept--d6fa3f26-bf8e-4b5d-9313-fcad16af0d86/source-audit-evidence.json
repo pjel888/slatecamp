@@ -1,315 +1,102 @@
 {
-  "batch_id": "source-audited-article-batch-030-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T08:28:21.061+08:00",
-  "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
-  "slug": "lea-prac-ctr-020-core-concept",
-  "title": "Construction claims",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 2,
+  "batch_id": "source-audited-article-batch-111-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T16:20:41+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
+  "target": {
+    "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+    "slug": "lea-prac-ctr-020-core-concept",
+    "title": "Construction Claims"
+  },
   "classification": {
-    "legal_or_code_content": true,
-    "requires_raw_pdf_audit": true,
-    "local_first_only": true
+    "topic": "construction claims and contract administration",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": true
+  },
+  "checked_sources": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "source_id": "lea-prac-ctr-020-core-concept-ciap-document-102-local",
+      "locator": "CIAP Document 102 refined markdown lines 510-518, 522-528, 667, 870-874, and 901-905"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_id": "lea-prac-ctr-020-core-concept-ciap-document-102-local",
+      "locator": "CIAP Document 102 refined markdown lines 510-518, 522-528, 667, 870-874, and 901-905"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "source_id": "lea-prac-ctr-020-core-concept-uap-document-301-local",
+      "locator": "UAP Document 301 refined markdown lines 760-775, 1016-1028, and 1068"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "source_id": "lea-prac-ctr-020-core-concept-uap-document-301-local",
+      "locator": "UAP Document 301 refined markdown lines 760-775, 1016-1028, and 1068"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+      "sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+      "source_id": "lea-prac-ctr-020-core-concept-eo-1008-local",
+      "locator": "EO 1008 refined markdown lines 23-29, 57-63, and 76-78"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
+      "sha256": "sha256:0755335760c2f2452946207668923ce33034f5fae595c8d4796b6b2d56e6bd14",
+      "source_id": "lea-prac-ctr-020-core-concept-eo-1008-local",
+      "locator": "EO 1008 refined markdown lines 23-29, 57-63, and 76-78"
+    }
+  ],
+  "claims": [
+    "Written notice for extra cost under CIAP 20.08 is due within fifteen days after receipt of the instruction, drawing, or specification involving a change.",
+    "Owner-attributable delay notice is due within fifteen days after recognition of the delay.",
+    "Actual direct cost claims require vouchers and supporting documents.",
+    "Unresolved construction contract disputes may proceed through CIAC arbitration under CIAP 102 and EO 1008."
+  ],
+  "removed_or_rewritten_material": [
+    "Replaced generic 30-day claim deadline wording with CIAP/UAP 15-day notice rules.",
+    "Replaced unsupported delay-documentation checklist with source-supported written notice, vouchers, architect decision, and arbitration path."
+  ],
+  "final_depth_findings_preserved": [
+    "Preserve claim-form, notice-template, and project-specific dispute-clause comparison for final depth after current local forms are acquired.",
+    "Do not restore broad weather-delay documentation lists unless a local source specifically supports the required proof set."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe owner-instruction and late extra-cost claim scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
   },
   "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "blockers": [],
-    "warnings": [
-      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "CIAP Document 102 refined markdown lines 510-518, 522-528, 667, 870-874, and 901-905",
+      "UAP Document 301 refined markdown lines 760-775, 1016-1028, and 1068",
+      "EO 1008 refined markdown lines 23-29, 57-63, and 76-78"
     ]
   },
   "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
-        "source_type": "construction_contract_pdf",
-        "source_locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "checked_markdown_lines": [
-          "CIAP Document 102 line 522",
-          "CIAP Document 102 line 667",
-          "CIAP Document 102 line 848",
-          "CIAP Document 102 lines 870-874",
-          "CIAP Document 102 lines 901-905"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "uap-document-301-general-conditions-local",
-        "label": "UAP Document 301 - General Conditions",
-        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
-        "source_type": "professional_practice_contract_pdf",
-        "source_locator": "UAP Document 301 refined markdown lines 775, 1019-1026 and 1068",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "checked_markdown_lines": [
-          "UAP Document 301 line 775",
-          "UAP Document 301 lines 1019-1026",
-          "UAP Document 301 line 1068"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ra-386-civil-code-local",
-        "label": "RA 386 - Civil Code of the Philippines",
-        "authority": "Civil Code of the Philippines local legal source",
-        "source_type": "law_pdf",
-        "source_locator": "Civil Code refined markdown lines 349, 359-360",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-        "checked_markdown_lines": [
-          "RA 386 Civil Code line 349",
-          "RA 386 Civil Code lines 359-360"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905; UAP Document 301 refined markdown lines 775, 1019-1026 and 1068; Civil Code refined markdown lines 349, 359-360",
-    "checked_markdown_lines": [
-      "CIAP Document 102 line 522",
-      "CIAP Document 102 line 667",
-      "CIAP Document 102 line 848",
-      "CIAP Document 102 lines 870-874",
-      "CIAP Document 102 lines 901-905",
-      "UAP Document 301 line 775",
-      "UAP Document 301 lines 1019-1026",
-      "UAP Document 301 line 1068",
-      "RA 386 Civil Code line 349",
-      "RA 386 Civil Code lines 359-360"
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Preserve claim-form, notice-template, and project-specific dispute-clause comparison for final depth after current local forms are acquired.",
+      "Do not restore broad weather-delay documentation lists unless a local source specifically supports the required proof set."
     ]
   },
-  "claims": [
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-001",
-      "claim_text": "Question 137470a9-eef4-444f-85e5-fe80bee37c5d / model BATCH-030-lea-prac-ctr-020-core-concept-001 rewritten to source-safe local form.",
-      "question_id": "137470a9-eef4-444f-85e5-fe80bee37c5d",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 522",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-002",
-      "claim_text": "Question a5e70859-01e1-4bed-bce3-cf1b8df713b0 / model BATCH-030-lea-prac-ctr-020-core-concept-002 rewritten to source-safe local form.",
-      "question_id": "a5e70859-01e1-4bed-bce3-cf1b8df713b0",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 522",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-003",
-      "claim_text": "Question dc876255-b1ad-496a-ad5a-248b5f3f71ac / model BATCH-030-lea-prac-ctr-020-core-concept-003 rewritten to source-safe local form.",
-      "question_id": "dc876255-b1ad-496a-ad5a-248b5f3f71ac",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 522",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-004",
-      "claim_text": "Question 4f094fb5-ee08-43b4-9c53-315ef51dbe2a / model BATCH-030-lea-prac-ctr-020-core-concept-004 rewritten to source-safe local form.",
-      "question_id": "4f094fb5-ee08-43b4-9c53-315ef51dbe2a",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "UAP Document 301 line 775",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-005",
-      "claim_text": "Question 5aa53ed7-441e-4080-89c5-5072a99461cb / model BATCH-030-lea-prac-ctr-020-core-concept-005 rewritten to source-safe local form.",
-      "question_id": "5aa53ed7-441e-4080-89c5-5072a99461cb",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "UAP Document 301 lines 1019-1026",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-006",
-      "claim_text": "Question 99bd7463-0801-4cba-95a4-6ca00916c5a9 / model BATCH-030-lea-prac-ctr-020-core-concept-006 rewritten to source-safe local form.",
-      "question_id": "99bd7463-0801-4cba-95a4-6ca00916c5a9",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 lines 870-874",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-007",
-      "claim_text": "Question e5231e62-0a7c-4545-af66-0306d7a2447f / model BATCH-030-lea-prac-ctr-020-core-concept-007 rewritten to source-safe local form.",
-      "question_id": "e5231e62-0a7c-4545-af66-0306d7a2447f",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 667",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-008",
-      "claim_text": "Question 286f8c8b-3a29-4719-86ec-be5b130279a5 / model BATCH-030-lea-prac-ctr-020-core-concept-008 rewritten to source-safe local form.",
-      "question_id": "286f8c8b-3a29-4719-86ec-be5b130279a5",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 667",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-009",
-      "claim_text": "Question 859e56b7-b6fb-4ba4-bb62-2c3222b631eb / model BATCH-030-lea-prac-ctr-020-core-concept-009 rewritten to source-safe local form.",
-      "question_id": "859e56b7-b6fb-4ba4-bb62-2c3222b631eb",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 848",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-020-core-concept-question-010",
-      "claim_text": "Question bf1a9166-fbef-4a7f-94ea-fb7f3c301917 / model BATCH-030-lea-prac-ctr-020-core-concept-010 rewritten to source-safe local form.",
-      "question_id": "bf1a9166-fbef-4a7f-94ea-fb7f3c301917",
-      "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "RA 386 Civil Code line 360",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    }
-  ]
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/question-edits"
+  }
 }

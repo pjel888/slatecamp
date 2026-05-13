@@ -2,52 +2,53 @@
   "question_id": "4f7fb1a8-eaf6-40f0-aa28-bde64a23033d",
   "baseline_hash": "sha256:c0c4b67124545ceef638a3eae98f24bf4a001cd0a95f1f64c9bece62a3aa2ba6",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-002-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-002-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
     "parent_article_slug": "lea-prac-eth-002-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21",
+    "source_locator": "UAP Code of Ethics line 21",
     "checked_markdown_lines": [
-      "raw markdown lines 1-21"
+      "UAP Code of Ethics lines 1-21"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+        "source_id": "lea-prac-eth-002-core-concept-uap-architects-credo-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 1-21"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-002-core-concept-uap-architects-credo-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 1-21"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "What does the Credo say about sharing professional experience and experiments?",
+    "text": "What does the Credo say about sharing professional experience?",
     "options": [
       {
         "id": "a",
-        "text": "Share them generously with colleagues, friends, and strangers alike"
+        "text": "Share the benefits of experience and experiments with colleagues, friends, and strangers"
       },
       {
         "id": "b",
-        "text": "Share them only with paying clients"
+        "text": "Keep all experience secret forever"
       },
       {
         "id": "c",
-        "text": "Hide them from colleagues to gain advantage"
+        "text": "Share only for supplier commissions"
       },
       {
         "id": "d",
-        "text": "Share them only after supplier approval"
+        "text": "Share only after final payment disputes"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The Credo says the architect should generously share the benefits of experience and experiments with colleagues, friends, and strangers.",
-    "explanation": "The Credo says the architect should generously share the benefits of experience and experiments with colleagues, friends, and strangers.",
-    "code_citation": "UAP Document Code of Ethics, line 21",
+    "rationale": {
+      "correct": "The Credo supports generous sharing of experience and experiments.",
+      "takeaway": "The Credo supports generous sharing of experience and experiments."
+    },
+    "explanation": "Use UAP Code of Ethics line 21 for this Batch 111 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics line 21",
     "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 111"
     ],
     "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-002-004"
+    "model_id": "BATCH-111-lea-prac-eth-002-core-concept-009"
   }
 }

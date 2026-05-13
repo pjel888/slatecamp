@@ -1,15 +1,41 @@
 # Architect's Credo
 
-The UAP Code of Ethics presents the Architect's Credo before the numbered Code of Ethical Conduct. Read it as a professional pledge about character, judgment, client interest, impartiality, mentorship, and sharing knowledge.
+## Board Exam Quick Check
 
-## Source-Supported Pledges
+The Architect's Credo is a professional conduct statement. In the checked local source, it pledges duty beyond self, honorable professional conduct, fair dealing, fair remuneration, client-first judgment, impartiality, avoidance of conflicting private ventures, mentorship, constructive criticism, and knowledge sharing.
 
-The Credo states that the architect's duty is not only to self, but also to country and God. It asks the architect to uphold the ideals and norms of a noble profession and to seek success through industrious work, quality of service, and fair dealing rather than solicited personal publicity.
+## Learning Goal
 
-It also contains practice-facing commitments: ask fair remuneration while expecting no profit from another source, place the client's interest above self-interest, act with impartiality and disinterestedness, and avoid private business investments or ventures that may influence professional judgment to the detriment of trust.
+After studying this article, you should be able to:
 
-The Credo also addresses professional culture. It calls on the architect to inspire loyalty among associates and subordinates, mentor aspirants to the profession, keep criticism and praise constructive rather than malicious, and share experience and experiments generously with colleagues, friends, and strangers.
+- Recall the main professional duties stated in the checked Credo.
+- Apply the Credo to conflicts of interest and client trust.
+- Connect fair remuneration with the rejection of outside profit.
+- Avoid unsupported adoption-date or oath-recitation claims not present in the checked source.
 
-## LEA Study Anchor
+## Core Commitments
 
-Read the Credo as a compact statement of professional character. It is useful for values-based questions about impartiality, fair remuneration, client interest, conflicts, mentoring, constructive criticism, and sharing professional knowledge.
+The Credo begins with duty not only to self but also to country and God. It then commits the architect to the norms of a noble profession and to furthering the profession's just ends.
+
+The Credo rejects publicity-seeking as the measure of success. Instead, it points to industrious work, quality service, and fair dealing. It also states that the architect should ask fair remuneration for services while expecting and asking no profit from another source.
+
+The client is central. The architect should hold the client's interest over self-interest for financial returns and exercise professional prerogatives with impartiality and disinterestedness. The Credo also warns the architect to avoid private business investments or ventures that may influence professional judgment to the detriment of entrusted trust.
+
+The professional community also matters. The architect should inspire loyalty among associates and subordinates, mentor aspirants to the profession, keep criticism and praise constructive and inspirational, avoid malicious motives, and share experience and experiments with colleagues, friends, and strangers.
+
+## Real World Scenario
+
+An architect is asked to specify a product made by a company in which the architect has a private financial interest. The source-safe answer is to protect client trust and professional judgment. The Credo says the architect should hold the client's interest above self-interest, act with impartiality and disinterestedness, and avoid private ventures that may influence judgment to the detriment of trust.
+
+## Exam Traps
+
+- Treating the Credo as only ceremonial wording with no practical conflict-of-interest effect.
+- Accepting outside profit while also claiming fair remuneration from the client.
+- Using praise or criticism to serve malicious motives.
+- Restoring adoption-date or recitation requirements without a checked local primary source.
+
+## Related Articles
+
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Conflict of Interest](lea-prac-eth-003)
+- [Professional Fees](lea-prac-cmp-001)

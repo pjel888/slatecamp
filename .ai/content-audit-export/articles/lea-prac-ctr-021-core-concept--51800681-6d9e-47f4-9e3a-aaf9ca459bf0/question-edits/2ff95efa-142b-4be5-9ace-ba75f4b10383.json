@@ -2,70 +2,90 @@
   "question_id": "2ff95efa-142b-4be5-9ace-ba75f4b10383",
   "baseline_hash": "sha256:ea3ab809b1217a0b119633ae94e450534418ac100cb6131db5b2dbb447d855e2",
   "action": "replace",
-  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-ctr-021-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-031",
-  "approved_at": "2026-05-11T08:56:01+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-ctr-021-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
     "parent_article_slug": "lea-prac-ctr-021-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "EO 1008 lines 23-27, 57-63, 76-78; CIAP Document 102 line 874",
+    "source_locator": "EO 1008 line 25",
+    "checked_markdown_lines": [
+      "EO 1008 lines 23-29",
+      "EO 1008 lines 57-63",
+      "EO 1008 lines 76-78",
+      "CIAP Document 102 lines 870-874"
+    ],
     "checked_sources": [
       {
-        "source_id": "eo-1008-construction-industry-arbitration-law-local",
-        "label": "Executive Order No. 1008 - Construction Industry Arbitration Law",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
-        "raw_pdf_sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
-        "refined_markdown_sha256": "sha256:0755335760c2f2452946207668923ce33034f5fae595c8d4796b6b2d56e6bd14",
-        "source_locator": "EO 1008 refined markdown lines 23-27, 57-63, 76-78",
-        "checked_markdown_lines": [
-          "EO 1008 refined markdown lines 23-27, 57-63, 76-78"
-        ]
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+        "sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+        "source_id": "lea-prac-ctr-021-core-concept-eo-1008-local",
+        "locator": "EO 1008 refined markdown lines 23-29, 57-63, and 76-78"
       },
       {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "source_locator": "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874",
-        "checked_markdown_lines": [
-          "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
-        ]
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
+        "sha256": "sha256:0755335760c2f2452946207668923ce33034f5fae595c8d4796b6b2d56e6bd14",
+        "source_id": "lea-prac-ctr-021-core-concept-eo-1008-local",
+        "locator": "EO 1008 refined markdown lines 23-29, 57-63, and 76-78"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "lea-prac-ctr-021-core-concept-ciap-document-102-arbitration-local",
+        "locator": "CIAP Document 102 refined markdown lines 870-874"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "lea-prac-ctr-021-core-concept-ciap-document-102-arbitration-local",
+        "locator": "CIAP Document 102 refined markdown lines 870-874"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "At what project moment can a covered construction dispute arise under EO 1008?",
+    "text": "Does EO 1008 cover disputes after abandonment or breach of the construction contract?",
     "options": [
       {
         "id": "a",
-        "text": "Only before the contract is signed"
+        "text": "Yes, if the dispute arises from or is connected with the construction contract"
       },
       {
         "id": "b",
-        "text": "Only after full final completion"
+        "text": "No, abandonment automatically removes jurisdiction"
       },
       {
         "id": "c",
-        "text": "Before or after completion, abandonment, or breach when the other jurisdictional requirements are met"
+        "text": "Only if no contract exists"
       },
       {
         "id": "d",
-        "text": "Only after a regular court judgment"
+        "text": "Only for employment termination"
       }
     ],
-    "correct_option_id": "c",
-    "rationale": "EO 1008 covers covered disputes before or after completion, abandonment, or breach.",
-    "explanation": "EO 1008 covers covered disputes before or after completion, abandonment, or breach.",
-    "code_citation": "EO 1008 lines 23-27, 57-63, 76-78; CIAP Document 102 line 874"
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "correct": "EO 1008 covers disputes before or after completion and after abandonment or breach when connected with the construction contract.",
+      "takeaway": "EO 1008 covers disputes before or after completion and after abandonment or breach when connected with the construction contract."
+    },
+    "explanation": "Use EO 1008 line 25 for this Batch 111 source-safe rewrite.",
+    "code_citation": "EO 1008 line 25",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 111"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-111-lea-prac-ctr-021-core-concept-004"
   }
 }

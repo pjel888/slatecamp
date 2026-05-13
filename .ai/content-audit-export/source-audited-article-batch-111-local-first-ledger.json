@@ -1,0 +1,361 @@
+{
+  "batch_number": "111",
+  "batch_id": "source-audited-article-batch-111-local-first",
+  "generated_at": "2026-05-13T16:20:41+08:00",
+  "status": "pass",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "3dbb5def8dbe9cd7933d7fa246c0612167b9ef96",
+  "previous_batch_commit": "3dbb5def8",
+  "articles": [
+    {
+      "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "slug": "lea-prac-ctr-020-core-concept",
+      "title": "Construction Claims",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "status": "pass",
+      "source_count": 3,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_safe_real_world_scenario": "added",
+      "thin_needs_expansion": true,
+      "final_depth_findings": [
+        "Preserve claim-form, notice-template, and project-specific dispute-clause comparison for final depth after current local forms are acquired.",
+        "Do not restore broad weather-delay documentation lists unless a local source specifically supports the required proof set."
+      ],
+      "original_hash": "sha256:b7b4b60a2f2b2f3fa1c438e19a060cf16777de99f64e3a2160c86236263d0c50",
+      "candidate_hash": "sha256:477157fab720b32dc35695568422f69f88e9311e130487e8305b7f0a169081e6"
+    },
+    {
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "slug": "lea-prac-ctr-021-core-concept",
+      "title": "CIAC Jurisdiction for Construction Contract Disputes",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "status": "pass",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_safe_real_world_scenario": "added",
+      "thin_needs_expansion": false,
+      "final_depth_findings": [
+        "Preserve richer CIAC procedural filing, fee, and rule details as final-depth source-needed unless current CIAC rules are locally acquired."
+      ],
+      "original_hash": "sha256:8fa6f7728bf000dcb0eab6e4e95378713304a4fd56db502aedda24c12f5b99f9",
+      "candidate_hash": "sha256:c019aa21c70219d7d0f345ff19ae9586b9a656cfcf828fa086f74f9b793cba1b"
+    },
+    {
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "slug": "lea-prac-ctr-022-core-concept",
+      "title": "Liquidated Damages for Delay in Construction Contracts",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
+      "status": "pass",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_safe_real_world_scenario": "added",
+      "thin_needs_expansion": false,
+      "final_depth_findings": [
+        "Preserve project-specific liquidated-damages rate tables and owner contract forms for final-depth comparison."
+      ],
+      "original_hash": "sha256:bb1105448078cdc98b14ed792d13456709a76c947ce21de7fe55a32c818a90cb",
+      "candidate_hash": "sha256:a070d10e54e758ddc7cbe58fefc5882aafbd99e87bcce939bde116724d9192a9"
+    },
+    {
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "slug": "lea-prac-eth-001-core-concept",
+      "title": "Code of Ethical Conduct",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "status": "pass",
+      "source_count": 1,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_safe_real_world_scenario": "added",
+      "thin_needs_expansion": false,
+      "final_depth_findings": [
+        "Preserve comparison with newer PRBoA or UAP ethics issuances for final depth if local primary sources are acquired."
+      ],
+      "original_hash": "sha256:6990994997770f91082d39c5713929976a2d8dfea21cedf8292ce9604bf5ebbb",
+      "candidate_hash": "sha256:e163936ceb27ca5237eb5581a0f5659012b9e62830c1682c26d2588df0ad07a7"
+    },
+    {
+      "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+      "slug": "lea-prac-eth-002-core-concept",
+      "title": "Architect's Credo",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+      "status": "pass",
+      "source_count": 1,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_safe_real_world_scenario": "added",
+      "thin_needs_expansion": false,
+      "final_depth_findings": [
+        "Acquire local primary source before restoring PRBoA Resolution No. 05 Series 2018 adoption, recitation, or oath-history claims."
+      ],
+      "original_hash": "sha256:706435b86e24446f746d3066796b4881a6a469fdea5ac48188ffc33ff3616633",
+      "candidate_hash": "sha256:96a0cef625e584520dbe3dcf43c188d0f4b5313051ef5c200e58eaeea9a30b55"
+    }
+  ],
+  "gates": {
+    "compose_diff_validate_strict_5_of_5": {
+      "status": "pass",
+      "expected_articles": 5,
+      "actual_articles": 5,
+      "compose": [
+        {
+          "slug": "lea-prac-ctr-020-core-concept",
+          "command": "bun scripts/content-audit/compose-candidates.ts --article-id d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 --overwrite --strict --summary",
+          "status": "pass",
+          "output": "✓ compose d6fa3f26-bf8e-4b5d-9313-fcad16af0d86: changed; blockers=0\nComposed 1 candidate(s)\n"
+        },
+        {
+          "slug": "lea-prac-ctr-021-core-concept",
+          "command": "bun scripts/content-audit/compose-candidates.ts --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --overwrite --strict --summary",
+          "status": "pass",
+          "output": "✓ compose 51800681-6d9e-47f4-9e3a-aaf9ca459bf0: changed; blockers=0\nComposed 1 candidate(s)\n"
+        },
+        {
+          "slug": "lea-prac-ctr-022-core-concept",
+          "command": "bun scripts/content-audit/compose-candidates.ts --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --overwrite --strict --summary",
+          "status": "pass",
+          "output": "✓ compose 6d669d7f-d03f-433f-af13-9443b6144033: changed; blockers=0\nComposed 1 candidate(s)\n"
+        },
+        {
+          "slug": "lea-prac-eth-001-core-concept",
+          "command": "bun scripts/content-audit/compose-candidates.ts --article-id 6604a199-6687-435d-aeb1-ffdc46be7d23 --overwrite --strict --summary",
+          "status": "pass",
+          "output": "✓ compose 6604a199-6687-435d-aeb1-ffdc46be7d23: changed; blockers=0\nComposed 1 candidate(s)\n"
+        },
+        {
+          "slug": "lea-prac-eth-002-core-concept",
+          "command": "bun scripts/content-audit/compose-candidates.ts --article-id f769b43e-e467-4ce4-afd9-2d0152fe8d46 --overwrite --strict --summary",
+          "status": "pass",
+          "output": "✓ compose f769b43e-e467-4ce4-afd9-2d0152fe8d46: changed; blockers=0\nComposed 1 candidate(s)\n"
+        }
+      ],
+      "diff": [
+        {
+          "slug": "lea-prac-ctr-020-core-concept",
+          "command": "bun scripts/content-audit/diff-candidates.ts --article-id d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 --strict --summary",
+          "status": "pass",
+          "output": "✓ diff d6fa3f26-bf8e-4b5d-9313-fcad16af0d86: changed=true safe=true\n[\n  {\n    \"article_id\": \"d6fa3f26-bf8e-4b5d-9313-fcad16af0d86\",\n    \"slug\": \"lea-prac-ctr-020-core-concept\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]\n"
+        },
+        {
+          "slug": "lea-prac-ctr-021-core-concept",
+          "command": "bun scripts/content-audit/diff-candidates.ts --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --strict --summary",
+          "status": "pass",
+          "output": "✓ diff 51800681-6d9e-47f4-9e3a-aaf9ca459bf0: changed=true safe=true\n[\n  {\n    \"article_id\": \"51800681-6d9e-47f4-9e3a-aaf9ca459bf0\",\n    \"slug\": \"lea-prac-ctr-021-core-concept\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]\n"
+        },
+        {
+          "slug": "lea-prac-ctr-022-core-concept",
+          "command": "bun scripts/content-audit/diff-candidates.ts --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --strict --summary",
+          "status": "pass",
+          "output": "✓ diff 6d669d7f-d03f-433f-af13-9443b6144033: changed=true safe=true\n[\n  {\n    \"article_id\": \"6d669d7f-d03f-433f-af13-9443b6144033\",\n    \"slug\": \"lea-prac-ctr-022-core-concept\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]\n"
+        },
+        {
+          "slug": "lea-prac-eth-001-core-concept",
+          "command": "bun scripts/content-audit/diff-candidates.ts --article-id 6604a199-6687-435d-aeb1-ffdc46be7d23 --strict --summary",
+          "status": "pass",
+          "output": "✓ diff 6604a199-6687-435d-aeb1-ffdc46be7d23: changed=true safe=true\n[\n  {\n    \"article_id\": \"6604a199-6687-435d-aeb1-ffdc46be7d23\",\n    \"slug\": \"lea-prac-eth-001-core-concept\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]\n"
+        },
+        {
+          "slug": "lea-prac-eth-002-core-concept",
+          "command": "bun scripts/content-audit/diff-candidates.ts --article-id f769b43e-e467-4ce4-afd9-2d0152fe8d46 --strict --summary",
+          "status": "pass",
+          "output": "✓ diff f769b43e-e467-4ce4-afd9-2d0152fe8d46: changed=true safe=true\n[\n  {\n    \"article_id\": \"f769b43e-e467-4ce4-afd9-2d0152fe8d46\",\n    \"slug\": \"lea-prac-eth-002-core-concept\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]\n"
+        }
+      ],
+      "validate": [
+        {
+          "slug": "lea-prac-ctr-020-core-concept",
+          "command": "bun scripts/content-audit/validate-bundles.ts --article-id d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 --summary",
+          "status": "pass",
+          "output": "{\n  \"generated_at\": \"2026-05-13T09:10:21.477Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"d6fa3f26-bf8e-4b5d-9313-fcad16af0d86\",\n      \"slug\": \"lea-prac-ctr-020-core-concept\",\n      \"folder\": \"lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:b7b4b60a2f2b2f3fa1c438e19a060cf16777de99f64e3a2160c86236263d0c50\",\n        \"normalized\": \"sha256:477157fab720b32dc35695568422f69f88e9311e130487e8305b7f0a169081e6\",\n        \"candidate\": \"sha256:477157fab720b32dc35695568422f69f88e9311e130487e8305b7f0a169081e6\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}\n"
+        },
+        {
+          "slug": "lea-prac-ctr-021-core-concept",
+          "command": "bun scripts/content-audit/validate-bundles.ts --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --summary",
+          "status": "pass",
+          "output": "{\n  \"generated_at\": \"2026-05-13T09:10:21.836Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"51800681-6d9e-47f4-9e3a-aaf9ca459bf0\",\n      \"slug\": \"lea-prac-ctr-021-core-concept\",\n      \"folder\": \"lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:8fa6f7728bf000dcb0eab6e4e95378713304a4fd56db502aedda24c12f5b99f9\",\n        \"normalized\": \"sha256:c019aa21c70219d7d0f345ff19ae9586b9a656cfcf828fa086f74f9b793cba1b\",\n        \"candidate\": \"sha256:c019aa21c70219d7d0f345ff19ae9586b9a656cfcf828fa086f74f9b793cba1b\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}\n"
+        },
+        {
+          "slug": "lea-prac-ctr-022-core-concept",
+          "command": "bun scripts/content-audit/validate-bundles.ts --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --summary",
+          "status": "pass",
+          "output": "{\n  \"generated_at\": \"2026-05-13T09:10:22.112Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"6d669d7f-d03f-433f-af13-9443b6144033\",\n      \"slug\": \"lea-prac-ctr-022-core-concept\",\n      \"folder\": \"lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:bb1105448078cdc98b14ed792d13456709a76c947ce21de7fe55a32c818a90cb\",\n        \"normalized\": \"sha256:a070d10e54e758ddc7cbe58fefc5882aafbd99e87bcce939bde116724d9192a9\",\n        \"candidate\": \"sha256:a070d10e54e758ddc7cbe58fefc5882aafbd99e87bcce939bde116724d9192a9\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}\n"
+        },
+        {
+          "slug": "lea-prac-eth-001-core-concept",
+          "command": "bun scripts/content-audit/validate-bundles.ts --article-id 6604a199-6687-435d-aeb1-ffdc46be7d23 --summary",
+          "status": "pass",
+          "output": "{\n  \"generated_at\": \"2026-05-13T09:10:22.431Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"6604a199-6687-435d-aeb1-ffdc46be7d23\",\n      \"slug\": \"lea-prac-eth-001-core-concept\",\n      \"folder\": \"lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:6990994997770f91082d39c5713929976a2d8dfea21cedf8292ce9604bf5ebbb\",\n        \"normalized\": \"sha256:e163936ceb27ca5237eb5581a0f5659012b9e62830c1682c26d2588df0ad07a7\",\n        \"candidate\": \"sha256:e163936ceb27ca5237eb5581a0f5659012b9e62830c1682c26d2588df0ad07a7\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}\n"
+        },
+        {
+          "slug": "lea-prac-eth-002-core-concept",
+          "command": "bun scripts/content-audit/validate-bundles.ts --article-id f769b43e-e467-4ce4-afd9-2d0152fe8d46 --summary",
+          "status": "pass",
+          "output": "{\n  \"generated_at\": \"2026-05-13T09:10:22.753Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"f769b43e-e467-4ce4-afd9-2d0152fe8d46\",\n      \"slug\": \"lea-prac-eth-002-core-concept\",\n      \"folder\": \"lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:706435b86e24446f746d3066796b4881a6a469fdea5ac48188ffc33ff3616633\",\n        \"normalized\": \"sha256:96a0cef625e584520dbe3dcf43c188d0f4b5313051ef5c200e58eaeea9a30b55\",\n        \"candidate\": \"sha256:96a0cef625e584520dbe3dcf43c188d0f4b5313051ef5c200e58eaeea9a30b55\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}\n"
+        }
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "commands": [
+        {
+          "slug": "lea-prac-ctr-020-core-concept",
+          "command": "bun scripts/content-audit/validate-ui-block-edits.ts --article-id d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+          "status": "pass",
+          "output": "{\n  \"valid\": true,\n  \"article_count\": 1,\n  \"blockers\": 0,\n  \"warnings\": 0\n}\n"
+        },
+        {
+          "slug": "lea-prac-ctr-021-core-concept",
+          "command": "bun scripts/content-audit/validate-ui-block-edits.ts --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+          "status": "pass",
+          "output": "{\n  \"valid\": true,\n  \"article_count\": 1,\n  \"blockers\": 0,\n  \"warnings\": 0\n}\n"
+        },
+        {
+          "slug": "lea-prac-ctr-022-core-concept",
+          "command": "bun scripts/content-audit/validate-ui-block-edits.ts --article-id 6d669d7f-d03f-433f-af13-9443b6144033",
+          "status": "pass",
+          "output": "{\n  \"valid\": true,\n  \"article_count\": 1,\n  \"blockers\": 0,\n  \"warnings\": 0\n}\n"
+        },
+        {
+          "slug": "lea-prac-eth-001-core-concept",
+          "command": "bun scripts/content-audit/validate-ui-block-edits.ts --article-id 6604a199-6687-435d-aeb1-ffdc46be7d23",
+          "status": "pass",
+          "output": "{\n  \"valid\": true,\n  \"article_count\": 1,\n  \"blockers\": 0,\n  \"warnings\": 0\n}\n"
+        },
+        {
+          "slug": "lea-prac-eth-002-core-concept",
+          "command": "bun scripts/content-audit/validate-ui-block-edits.ts --article-id f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+          "status": "pass",
+          "output": "{\n  \"valid\": true,\n  \"article_count\": 1,\n  \"blockers\": 0,\n  \"warnings\": 0\n}\n"
+        }
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 111,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "findings": []
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "checked_references": 18,
+      "unique_source_artifacts_checked": 10,
+      "failures": []
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "pass",
+      "linked_questions": 50,
+      "question_edits": 50,
+      "checks": [
+        {
+          "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+          "slug": "lea-prac-ctr-020-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+          "slug": "lea-prac-ctr-021-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+          "slug": "lea-prac-ctr-022-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+          "slug": "lea-prac-eth-001-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+          "slug": "lea-prac-eth-002-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+          "slug": "lea-prac-ctr-020-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+          "slug": "lea-prac-ctr-021-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+          "slug": "lea-prac-ctr-022-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+          "slug": "lea-prac-eth-001-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+          "slug": "lea-prac-eth-002-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        }
+      ]
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-110",
+      "duplicate_hits": [],
+      "historical_reaudit_overlap_recorded_separately": [
+        "CTR-020 and neighboring selected articles have historical pre-087 audit artifacts; none are duplicates of accepted Batches 087-110.",
+        "ETH clusters have historical source-audit sidecars; Batch 111 refreshes them under the current serial production-line baseline."
+      ]
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "summary": []
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- .ai/03_plans/production-line-batch-111-manifest.json .ai/content-audit-export/source-audited-article-batch-111-local-first-report.md .ai/content-audit-export/source-audited-article-batch-111-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-111-local-first-scoped-checks.json .ai/03_plans/batch-111-independent-quality-review.md .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/03_plans/source-audited-production-line-coordination.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/validation-report.json .ai/content-audit-export/ui-block-edit-validation.json .ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 .ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0 .ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033 .ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23 .ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46"
+    },
+    "cached_git_diff_check": {
+      "status": "pass",
+      "command": "GIT_INDEX_FILE=/private/tmp/batch111.KO0gJk/index GIT_OBJECT_DIRECTORY=/private/tmp/batch111.KO0gJk/objects GIT_ALTERNATE_OBJECT_DIRECTORIES=$PWD/.git/objects git diff --cached --check",
+      "note": "Real repository index writes are blocked in this session; cached diff was verified using a temporary index and object directory containing only Batch 111 intended paths. A temporary commit object could be created, but push failed because github.com could not be resolved."
+    }
+  },
+  "forbidden_actions_observed": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_to_main": false
+  }
+}

@@ -2,52 +2,53 @@
   "question_id": "07fa12c6-b2b5-42e1-aa6a-4bd122a5e045",
   "baseline_hash": "sha256:a8dde74dd8cdd890552567962fca3ff41aef8cbec75089ba2e1cb6078d6c492a",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-002-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-002-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
     "parent_article_slug": "lea-prac-eth-002-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21",
+    "source_locator": "UAP Code of Ethics line 7",
     "checked_markdown_lines": [
-      "raw markdown lines 1-21"
+      "UAP Code of Ethics lines 1-21"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+        "source_id": "lea-prac-eth-002-core-concept-uap-architects-credo-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 1-21"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-002-core-concept-uap-architects-credo-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 1-21"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "Which behavior is most consistent with the Credo's statement about professional success?",
+    "text": "According to the Credo, how should the architect seek success?",
     "options": [
       {
         "id": "a",
-        "text": "Building a reputation through quality service and fair dealing"
+        "text": "Through industrious work, quality service, and fair dealing rather than solicited personal publicity"
       },
       {
         "id": "b",
-        "text": "Seeking success through solicited personal publicity"
+        "text": "Through hidden commissions"
       },
       {
         "id": "c",
-        "text": "Offering hidden commissions to clients"
+        "text": "Through misleading specialization claims"
       },
       {
         "id": "d",
-        "text": "Using malicious criticism to gain work"
+        "text": "Through malicious criticism"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The Credo says the architect should seek success not through solicited personal publicity, but through industrious work, quality service, and fair dealing.",
-    "explanation": "The Credo says the architect should seek success not through solicited personal publicity, but through industrious work, quality service, and fair dealing.",
-    "code_citation": "UAP Document Code of Ethics, line 7",
+    "rationale": {
+      "correct": "The Credo rejects solicited personal publicity as the measure of success and points to work, service quality, and fair dealing.",
+      "takeaway": "The Credo rejects solicited personal publicity as the measure of success and points to work, service quality, and fair dealing."
+    },
+    "explanation": "Use UAP Code of Ethics line 7 for this Batch 111 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics line 7",
     "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 111"
     ],
-    "difficulty": 0.7,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-002-006"
+    "model_id": "BATCH-111-lea-prac-eth-002-core-concept-002"
   }
 }

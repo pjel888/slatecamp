@@ -1,0 +1,112 @@
+{
+  "batch_id": "source-audited-article-batch-111-local-first",
+  "batch_number": "111",
+  "reserved_at": "2026-05-13T16:20:41+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "3dbb5def8dbe9cd7933d7fa246c0612167b9ef96",
+  "current_head_at_manifest_generation": "3dbb5def8dbe9cd7933d7fa246c0612167b9ef96",
+  "previous_batch": {
+    "batch_number": "110",
+    "commit": "3dbb5def8",
+    "status": "accepted_and_pushed"
+  },
+  "manifest_status": "local_first_validated_real_git_index_and_network_push_blocked",
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batch 110 CTR-019; selected CTR-020 through CTR-022 and ETH-001 through ETH-002 with no duplicate article IDs from accepted Batches 087-110.",
+  "inherited_blocker_status": {
+    "status": "clear",
+    "notes": [
+      "Batch 110 is accepted and pushed at 3dbb5def8; Batch 111 starts from that live baseline.",
+      "Unrelated stairway and 3D learning work remains out of scope and must not be staged in this content batch."
+    ]
+  },
+  "article_clusters": [
+    "Construction extra-cost claims, owner-attributable delay notice, cost vouchers, final-payment reservation, and dispute path",
+    "CIAC construction contract jurisdiction, covered disputes, arbitration agreement, tribunal composition, and award finality",
+    "Liquidated damages for delay, substantial completion cutoff, contract deduction, and Civil Code penal-clause boundary",
+    "Code of Ethical Conduct relationship map across public, client, contractor, suppliers, colleagues, and subordinates",
+    "Architects Credo duties, fair remuneration, impartiality, conflicts, mentorship, constructive criticism, and knowledge sharing"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "source_safe_real_world_scenarios_expected": 5
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "slug": "lea-prac-ctr-020-core-concept",
+      "title": "Construction Claims",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86"
+    },
+    {
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "slug": "lea-prac-ctr-021-core-concept",
+      "title": "CIAC Jurisdiction for Construction Contract Disputes",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0"
+    },
+    {
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "slug": "lea-prac-ctr-022-core-concept",
+      "title": "Liquidated Damages for Delay in Construction Contracts",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033"
+    },
+    {
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "slug": "lea-prac-eth-001-core-concept",
+      "title": "Code of Ethical Conduct",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23"
+    },
+    {
+      "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+      "slug": "lea-prac-eth-002-core-concept",
+      "title": "Architect's Credo",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-110",
+    "duplicate_hits": [],
+    "historical_reaudit_overlap_recorded_separately": [
+      "CTR-020 and neighboring selected articles have historical pre-087 audit artifacts; none are duplicates of accepted Batches 087-110.",
+      "ETH clusters have historical source-audit sidecars; Batch 111 refreshes them under the current serial production-line baseline."
+    ]
+  },
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "CTR-020 and neighboring selected articles have historical pre-087 audit artifacts; none are duplicates of accepted Batches 087-110.",
+      "ETH clusters have historical source-audit sidecars; Batch 111 refreshes them under the current serial production-line baseline."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_real_git_index_and_network_push",
+    "expected_commit_message": "chore(content): accept source-audited batch 111",
+    "commit_created": false,
+    "push_performed": false,
+    "temporary_index_cached_diff_check": "pass",
+    "temporary_commit_object_created": true,
+    "blocker": "real git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted; a temporary-index commit object could be created, but push failed with Could not resolve host: github.com"
+  }
+}

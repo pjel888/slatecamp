@@ -1,241 +1,87 @@
 {
-  "schema_version": "source-audit-evidence-v1-local-first",
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-031-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T08:56:01+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 2,
+  "batch_id": "source-audited-article-batch-111-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T16:20:41+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
   "target": {
     "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
     "slug": "lea-prac-ctr-022-core-concept",
-    "title": "Liquidated Damages for Delay in Construction Contracts",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/candidate.md",
-    "candidate_sha256": "sha256:59ee06e2cba97a739444a4e8c39413bfe1a1c58facee15c7f09cf34a1a804210",
-    "normalized_sha256": "sha256:59ee06e2cba97a739444a4e8c39413bfe1a1c58facee15c7f09cf34a1a804210",
-    "linked_questions_sha256": "sha256:6eddfb91912e3f6d00b6b9924655cfe98c8d5c51cdca3e2bac1bd860ec277801",
-    "sources_sha256": "sha256:0f4864427a03aa8588ca04930c9b509ef89ededf54e0830fa7dbecf2046922c1"
+    "title": "Liquidated Damages for Delay in Construction Contracts"
   },
   "classification": {
-    "content_domain": "LEA Professional Practice and Jurisprudence",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "high_value_lea_professional_practice",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "18121003-89ba-427e-8c73-e0e624fa6230",
-      "7b3e9db4-7f80-4341-a2bb-a7d704d00217",
-      "19df8252-e1a5-4ea6-a53b-3308442f3ca9",
-      "22d95fe7-78b4-4c2c-8caa-22378a5d4dba",
-      "2aa2c207-09d3-4c4e-8600-82d2222b80e6",
-      "69943e14-b750-4975-8f9c-366547100056",
-      "7e8288fa-a25a-4c9b-bdb6-7e59efa801e8",
-      "a2e6bf03-ab36-45cc-b543-531f15bac75c",
-      "22d20b4a-cde4-4328-a90d-cf163319c2b0",
-      "8fc3f206-60fb-43a5-b12b-99f8056e2690"
-    ]
+    "topic": "liquidated damages and substantial completion",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
   },
-  "paths": {
-    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
-    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits",
-    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits",
-    "question_edit_files": [
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/18121003-89ba-427e-8c73-e0e624fa6230.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/7b3e9db4-7f80-4341-a2bb-a7d704d00217.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/19df8252-e1a5-4ea6-a53b-3308442f3ca9.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/22d95fe7-78b4-4c2c-8caa-22378a5d4dba.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/2aa2c207-09d3-4c4e-8600-82d2222b80e6.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/69943e14-b750-4975-8f9c-366547100056.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/7e8288fa-a25a-4c9b-bdb6-7e59efa801e8.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/a2e6bf03-ab36-45cc-b543-531f15bac75c.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/22d20b4a-cde4-4328-a90d-cf163319c2b0.json",
-      ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits/8fc3f206-60fb-43a5-b12b-99f8056e2690.json"
-    ]
-  },
-  "raw_sources": [
-    {
-      "source_id": "ciap-document-102-private-construction-contract-local",
-      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-      "source_locator": "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874",
-      "checked_markdown_lines": [
-        "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
-      ]
-    },
-    {
-      "source_id": "ra-386-civil-code-local",
-      "label": "RA 386 - Civil Code of the Philippines",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-      "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-      "source_locator": "RA 386 Civil Code refined markdown lines 40-48",
-      "checked_markdown_lines": [
-        "RA 386 Civil Code refined markdown lines 40-48"
-      ]
-    }
-  ],
   "checked_sources": [
     {
-      "source_id": "ciap-document-102-private-construction-contract-local",
-      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-      "source_locator": "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874",
-      "checked_markdown_lines": [
-        "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
-      ]
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "source_id": "lea-prac-ctr-022-core-concept-ciap-document-102-liquidated-damages-local",
+      "locator": "CIAP Document 102 refined markdown lines 539-554 and 623-628"
     },
     {
-      "source_id": "ra-386-civil-code-local",
-      "label": "RA 386 - Civil Code of the Philippines",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-      "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-      "source_locator": "RA 386 Civil Code refined markdown lines 40-48",
-      "checked_markdown_lines": [
-        "RA 386 Civil Code refined markdown lines 40-48"
-      ]
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_id": "lea-prac-ctr-022-core-concept-ciap-document-102-liquidated-damages-local",
+      "locator": "CIAP Document 102 refined markdown lines 539-554 and 623-628"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "source_id": "lea-prac-ctr-022-core-concept-civil-code-penal-clause-local",
+      "locator": "Civil Code refined markdown lines 40-46"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+      "sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+      "source_id": "lea-prac-ctr-022-core-concept-civil-code-penal-clause-local",
+      "locator": "Civil Code refined markdown lines 40-46"
     }
   ],
   "claims": [
-    {
-      "claim_id": "ctr022-claim-01",
-      "claim_text": "CIAP Document 102 allows stipulated liquidated damages for failure to complete within the contract time as adjusted.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "locator": "CIAP Document 102 refined markdown lines 591 and 626",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "quoted_pdf_excerpt": "The contractor shall complete within the contract period as adjusted, and failure to complete within the completion time triggers stipulated liquidated damages."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "ctr022-claim-02",
-      "claim_text": "CIAP Document 102 states delay liquidated damages accrue from the first day of delay until substantial completion.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "locator": "CIAP Document 102 refined markdown line 626",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "quoted_pdf_excerpt": "Damages accrue from the first day of delay until substantial completion."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "ctr022-claim-03",
-      "claim_text": "Substantial completion is tied to 95 percent completion and normal use of the completed portion.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "locator": "CIAP Document 102 refined markdown lines 539-554",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "quoted_pdf_excerpt": "Substantial completion is at 95 percent of the work, with remaining work not preventing normal use."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "ctr022-claim-04",
-      "claim_text": "The Civil Code allows a demanded penalty without proof of actual damages and permits equitable reduction in stated cases.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "RA 386 - Civil Code of the Philippines",
-        "locator": "RA 386 refined markdown lines 40-48",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-        "quoted_pdf_excerpt": "Proof of actual damages is not necessary before the penalty may be demanded, and the judge may equitably reduce the penalty in stated cases."
-      },
-      "blockers": []
-    }
+    "CIAP Document 102 treats delay liquidated damages as the contract-stipulated amount, indemnity not penalty.",
+    "Liquidated damages accrue from the first day of delay until substantial completion.",
+    "No delay liquidated damages accrue after substantial completion under the checked CIAP clause.",
+    "Civil Code penal-clause rules support no proof of actual damages and possible equitable reduction when applicable."
   ],
-  "unverified_or_rejected_claims": [],
   "removed_or_rewritten_material": [
-    "Learner-facing article text was rewritten to local source-supported claims only.",
-    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
-    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+    "Removed invented universal daily liquidated-damages rates.",
+    "Separated CIAP contract indemnity language from Civil Code penal-clause principles."
   ],
+  "final_depth_findings_preserved": [
+    "Preserve project-specific liquidated-damages rate tables and owner contract forms for final-depth comparison."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe substantial completion cutoff scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
+  },
   "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "CIAP Document 102 refined markdown lines 539-554 and 623-628",
+      "Civil Code refined markdown lines 40-46"
+    ]
   },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --overwrite --strict; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --summary --strict; safe_to_push=true blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --summary; valid=true blockers=0 warnings=1 component-usage-only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
-  },
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "source_audit_evidence_json_created": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
-  },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:59ee06e2cba97a739444a4e8c39413bfe1a1c58facee15c7f09cf34a1a804210"
-    },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "PASS",
-      "output_placeholder_internal_source_gap_scan": "PASS",
-      "source_audit_evidence": "PASS",
-      "question_edits": "PASS"
-    }
-  },
-  "sme_review": {
-    "required": false,
-    "status": "PASS"
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
+  "source_audit": {
+    "overall": "pass",
     "blockers": [],
-    "warnings": []
+    "warnings": [
+      "Preserve project-specific liquidated-damages rate tables and owner contract forms for final-depth comparison."
+    ]
+  },
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits"
   }
 }

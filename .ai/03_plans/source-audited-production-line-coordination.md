@@ -1,3 +1,38 @@
+# Batch 111 Source-Audited Production-Line Coordination Update
+
+Updated: 2026-05-13T16:20:41+08:00
+
+## Status
+
+- Batch 111: pass local-first; real git index and network push blocked in this session
+- Branch: 3dlab-gray-viewport-bg
+- Selected articles: 5
+- Linked question edits: 50
+- Forbidden external actions: none performed.
+
+## Batch 111 Gate Summary
+
+- Compose/diff/validate strict 5/5: pass
+- UI-block edit validation: pass
+- Scoped JSON parse: pass
+- Placeholder/internal-note/source-gap scan: pass
+- Source hash checks: pass
+- Linked-question/question-edit count checks: pass
+- Stale compose-error scan: pass
+- Targeted content-audit tests: pass
+- Scoped git diff --check: pass
+- Cached diff check: pass via temporary index/object directory
+
+## Coordination Notes
+
+- Batch 110 is accepted and pushed at commit 3dbb5def8; Batch 111 starts from 3dbb5def8dbe9cd7933d7fa246c0612167b9ef96.
+- Batch 111 includes article improvements and linked question edits for every selected article.
+- Difficult clusters were resolved locally: CTR-020 was expanded instead of parked, CIAC jurisdiction was kept to EO 1008/CIAP source language, liquidated-damages rates were not invented, and unsupported PRBoA adoption language was removed from ETH-002.
+- Git gate: real `git add` failed on `.git/index.lock`; a temporary commit object was created; push failed because `github.com` could not be resolved.
+- Next production-line target: Batch 112 after Batch 111 commit and push from an environment with real git-index and GitHub network access.
+
+---
+
 # Batch 110 Source-Audited Production-Line Coordination Update
 
 Updated: 2026-05-13T15:42:08+08:00

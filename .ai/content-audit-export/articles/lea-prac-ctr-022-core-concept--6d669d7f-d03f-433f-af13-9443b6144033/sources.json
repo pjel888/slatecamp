@@ -1,32 +1,57 @@
 {
   "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
   "hash_algorithm": "sha256",
+  "sources_hash": "sha256:af92ab729c6558db92612b3d1e08a26773338af09f8f802afb06a2adf3fb2a67",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "ciap-document-102-private-construction-contract-local",
+      "source_id": "lea-prac-ctr-022-core-concept-ciap-document-102-liquidated-damages-local",
       "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
-      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "label": "CIAP Document 102 - Substantial Completion and Delay in Completion",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction; CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874; raw PDF checked locally for source-audited-article-batch-031-local-first.",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-11T08:56:01+08:00",
-      "updated_at": "2026-05-11T08:56:01+08:00"
-    },
-    {
-      "source_id": "ra-386-civil-code-local",
-      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
-      "label": "RA 386 - Civil Code of the Philippines",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "RA 386 - Civil Code of the Philippines; RA 386 Civil Code refined markdown lines 40-48; raw PDF checked locally for source-audited-article-batch-031-local-first.",
+      "source_type": "construction_contract_pdf",
+      "description": "Checked for 95 percent substantial completion, normal-use test, no liquidated damages after substantial completion, and delay-in-completion damages as indemnity not penalty.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-11T08:56:01+08:00",
-      "updated_at": "2026-05-11T08:56:01+08:00"
+      "created_at": "2026-05-13T16:20:41+08:00",
+      "updated_at": "2026-05-13T16:20:41+08:00",
+      "local_source_audit": {
+        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_locator": "CIAP Document 102 refined markdown lines 539-554 and 623-628",
+        "checked_markdown_lines": [
+          "CIAP Document 102 lines 539-554",
+          "CIAP Document 102 lines 623-628"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "lea-prac-ctr-022-core-concept-civil-code-penal-clause-local",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "label": "RA 386 - Civil Code of the Philippines Penal Clause Articles",
+      "url": null,
+      "source_type": "law_pdf",
+      "description": "Checked for penal clause rules on damages substitution, no need to prove actual damages, and equitable reduction.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-13T16:20:41+08:00",
+      "updated_at": "2026-05-13T16:20:41+08:00",
+      "local_source_audit": {
+        "authority": "Civil Code of the Philippines local legal source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+        "source_locator": "Civil Code refined markdown lines 40-46",
+        "checked_markdown_lines": [
+          "RA 386 Civil Code lines 40-46"
+        ],
+        "local_source_checked": true
+      }
     }
-  ],
-  "sources_hash": "sha256:0f4864427a03aa8588ca04930c9b509ef89ededf54e0830fa7dbecf2046922c1"
+  ]
 }

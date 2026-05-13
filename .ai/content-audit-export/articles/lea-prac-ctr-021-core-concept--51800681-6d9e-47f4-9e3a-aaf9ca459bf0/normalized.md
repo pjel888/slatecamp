@@ -1,29 +1,43 @@
 # CIAC Jurisdiction for Construction Contract Disputes
 
+## Board Exam Quick Check
+
+CIAC jurisdiction is anchored in construction contract disputes. EO 1008 gives CIAC original and exclusive jurisdiction over disputes arising from or connected with construction contracts in the Philippines, whether government or private, before or after completion, abandonment, or breach, when the parties agree to voluntary arbitration.
+
 ## Learning Goal
 
-Use EO 1008 and CIAP Document 102 to identify when a construction contract dispute belongs in CIAC arbitration, what kinds of disputes are included, and what the architect should check before giving procedural advice.
+After studying this article, you should be able to:
+
+- Identify the contract connection required for CIAC jurisdiction.
+- Recognize common covered disputes listed in EO 1008.
+- Distinguish construction contract disputes from employer-employee disputes excluded by the law.
+- Explain the basic tribunal and award-finality rules without inventing procedure details.
 
 ## Core Rule
 
-Executive Order No. 1008 creates the Construction Industry Arbitration Commission, or CIAC, within the Construction Industry Authority of the Philippines. It gives CIAC original and exclusive jurisdiction over disputes arising from, or connected with, construction contracts in the Philippines when the parties have agreed to submit the dispute to voluntary arbitration.
+EO 1008 creates CIAC and gives it original and exclusive jurisdiction over disputes arising from or connected with construction contracts entered into by parties involved in construction in the Philippines. The source includes government and private contracts. It also states that, for jurisdiction to be acquired, the parties must agree to submit the dispute to voluntary arbitration.
 
-For exam purposes, the trigger is not simply that a project involves a building. The dispute must be connected with a construction contract, and the parties' agreement to arbitrate is part of the jurisdictional frame stated in EO 1008.
+The listed dispute examples include violation of specifications for materials and workmanship, violation of agreement terms, interpretation or application of contractual provisions, amount of damages and penalties, commencement time and delays, maintenance and defects, payment default, and changes in contract cost.
 
-## Covered Disputes
+## Tribunal and Award
 
-EO 1008 lists construction disputes that can fall within CIAC jurisdiction, including issues involving specifications, workmanship, contract terms, damages, penalties, delays, defects, payment default, and changes in contract cost. The rule applies to government and private construction contracts, and the dispute may arise before or after completion, abandonment, or breach.
+EO 1008 allows a sole arbitrator or three arbitrators to settle a dispute. The award is binding, final, and inappealable except on questions of law appealable to the Supreme Court. Once final and executory, the tribunal or sole arbitrator with CIAC concurrence may issue a writ of execution.
 
-CIAP Document 102 reinforces the same local practice frame for private construction contracts: by entering into the contract, the parties are deemed to submit disputes connected with the contract to CIAC under the contract's dispute article.
+CIAP Document 102 also contains a private construction contract clause that sends unresolved contract disputes to arbitration under EO 1008 rules by filing with CIAC. It states that a party entering the contract is deemed to submit to CIAC jurisdiction for disputes arising out of or connected with the contract.
 
-## Arbitral Tribunal
+## Real World Scenario
 
-EO 1008 allows a sole arbitrator or a tribunal of three arbitrators. Parties may nominate arbitrators, and CIAC may appoint the sole arbitrator or complete the tribunal as provided in the order.
+After substantial completion, an owner withholds payment because of alleged defective waterproofing while the contractor claims delay costs and unpaid change work. The first exam question is not "who is more sympathetic." The source-safe check is whether the dispute arises out of or is connected with a Philippine construction contract and whether the contract/arbitration agreement submits disputes to CIAC. If yes, the dispute may fall within CIAC's construction arbitration jurisdiction.
 
-## Award Effect
+## Exam Traps
 
-EO 1008 states that the arbitral award is binding, final, and inappealable except on questions of law that may be raised before the Supreme Court. Treat that as a source-specific rule. Do not add deadlines, court procedures, or case-law rules unless a separate audited source supports them.
+- Treating CIAC as a forum for every business dispute even without a construction contract connection.
+- Forgetting the voluntary arbitration agreement requirement stated in EO 1008.
+- Including employer-employee disputes even though EO 1008 excludes them.
+- Inventing detailed CIAC procedure steps not present in the checked local source packet.
 
-## Practice Cue
+## Related Articles
 
-When a client asks where to file a construction dispute, start with three checks: the dispute's connection to a Philippine construction contract, whether the parties agreed to arbitration, and whether the claim type is within the EO 1008 examples. This keeps the advice grounded in the local source instead of assuming a generic court rule.
+- [Construction Claims](lea-prac-ctr-020)
+- [Liquidated Damages](lea-prac-ctr-022)
+- [Change Orders](lea-prac-ctr-016)

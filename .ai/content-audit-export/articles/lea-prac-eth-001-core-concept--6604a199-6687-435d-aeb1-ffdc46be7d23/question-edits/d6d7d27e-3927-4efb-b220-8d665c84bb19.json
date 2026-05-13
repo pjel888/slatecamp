@@ -2,53 +2,57 @@
   "question_id": "d6d7d27e-3927-4efb-b220-8d665c84bb19",
   "baseline_hash": "sha256:72f973caf242f7382bc579e7474fd9de39cc59f5c17f2e2a962591e212c97976",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-001-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-001-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
     "parent_article_slug": "lea-prac-eth-001-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118",
+    "source_locator": "UAP Code of Ethics lines 31-102",
     "checked_markdown_lines": [
-      "raw markdown lines 23-29",
-      "raw markdown lines 31-118"
+      "UAP Code of Ethics lines 23-29",
+      "UAP Code of Ethics lines 31-42",
+      "UAP Code of Ethics lines 44-58",
+      "UAP Code of Ethics lines 60-79",
+      "UAP Code of Ethics lines 81-102"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+        "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "What is the safest first step when analyzing an ethics question under the UAP Code?",
+    "text": "What is the best first move in an ethics scenario?",
     "options": [
       {
         "id": "a",
-        "text": "Identify which relationship the conduct affects, then apply the matching section."
+        "text": "Identify the relationship section being tested, then apply the specific duty"
       },
       {
         "id": "b",
-        "text": "Assume every question is about public advertising."
+        "text": "Choose the answer that gives the largest private benefit"
       },
       {
         "id": "c",
-        "text": "Treat supplier discounts and contractor gifts as the same issue without reading the facts."
+        "text": "Ignore the client agreement"
       },
       {
         "id": "d",
-        "text": "Answer by choosing the harshest penalty mentioned in the choices."
+        "text": "Assume all discounts are personal income"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +60,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The Code is organized by relationship: people, client, contractor, manufacturers/dealers/agents, and colleagues/subordinates.",
-    "explanation": "The Code is organized by relationship: people, client, contractor, manufacturers/dealers/agents, and colleagues/subordinates.",
-    "code_citation": "UAP Document Code of Ethics, lines 31-118",
+    "rationale": {
+      "correct": "The Code is organized by relationship, so classification of the relationship is the first exam move.",
+      "takeaway": "The Code is organized by relationship, so classification of the relationship is the first exam move."
+    },
+    "explanation": "Use UAP Code of Ethics lines 31-102 for this Batch 111 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 31-102",
     "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 111"
     ],
     "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-001-003"
+    "model_id": "BATCH-111-lea-prac-eth-001-core-concept-010"
   }
 }

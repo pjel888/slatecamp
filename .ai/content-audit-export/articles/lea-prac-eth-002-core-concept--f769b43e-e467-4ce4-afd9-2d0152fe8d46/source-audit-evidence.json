@@ -1,111 +1,75 @@
 {
-  "batch_id": "source-audited-article-batch-017-local-first",
-  "mode": "local_first_no_supabase_push",
-  "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
-  "slug": "lea-prac-eth-002-core-concept",
-  "title": "Architect's Credo",
-  "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46",
-  "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/question-edits",
-  "audited_at": "2026-05-10T23:30:00.000+08:00",
-  "status": "local_passed",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 2,
+  "batch_id": "source-audited-article-batch-111-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T16:20:41+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
+  "target": {
+    "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+    "slug": "lea-prac-eth-002-core-concept",
+    "title": "Architect's Credo"
+  },
   "classification": {
-    "content_domain": "LEA Professional Practice and Jurisprudence",
-    "legal_or_professional_practice": true,
-    "raw_pdf_audit_required": true,
-    "raw_pdf_audit_completed": true
+    "topic": "architect credo and professional identity",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
   },
   "checked_sources": [
     {
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
       "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "source_id": "uap-document-code-of-ethics",
-      "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+      "source_id": "lea-prac-eth-002-core-concept-uap-architects-credo-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 1-21"
     },
     {
-      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "source_id": "uap-document-code-of-ethics-raw-markdown",
-      "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+      "source_id": "lea-prac-eth-002-core-concept-uap-architects-credo-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 1-21"
     }
-  ],
-  "checked_markdown_lines": [
-    "raw markdown lines 1-21"
   ],
   "claims": [
-    {
-      "claim_id": "lea-prac-eth-002-core-concept-claim-01",
-      "claim": "The Credo states that the architect owes duty not only to self but also to country and God.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
-    },
-    {
-      "claim_id": "lea-prac-eth-002-core-concept-claim-02",
-      "claim": "The Credo rejects solicited personal publicity and outside profits as paths to professional success.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
-    },
-    {
-      "claim_id": "lea-prac-eth-002-core-concept-claim-03",
-      "claim": "The Credo emphasizes impartiality, client interest, conflict avoidance, mentorship, constructive criticism, and sharing knowledge.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
-    }
+    "The Credo states duty beyond self and commitment to the profession.",
+    "Success is tied to work, service quality, and fair dealing rather than solicited personal publicity.",
+    "Fair remuneration is paired with asking no profit from another source.",
+    "Client interest, impartiality, and avoidance of conflicting private ventures are core source-backed duties.",
+    "Mentorship, constructive criticism, and knowledge sharing are source-backed professional community duties."
   ],
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "unverified_external_resolution_claims_removed": true,
-    "unverified_reporting_or_enforcement_claims_removed": true,
-    "candidate_md_composed": true
+  "removed_or_rewritten_material": [
+    "Removed unsupported PRBoA Resolution No. 05 Series 2018 adoption and recitation details from linked question rewrites.",
+    "Reframed the article around the checked UAP Code of Ethics credo lines."
+  ],
+  "final_depth_findings_preserved": [
+    "Acquire local primary source before restoring PRBoA Resolution No. 05 Series 2018 adoption, recitation, or oath-history claims."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe conflict and fair-dealing scenario without unsupported adoption-date claims."
   },
-  "blockers": [],
-  "supabase": {
-    "pushed": false,
-    "deployed": false,
-    "committed": false,
-    "final_publishing_only": true
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
   },
-  "candidate_hash": "sha256:553a976b9ff45bd7bcd6ff5dbb9eb52cd128388288f57b94c4b92efda962efad",
-  "normalized_hash": "sha256:553a976b9ff45bd7bcd6ff5dbb9eb52cd128388288f57b94c4b92efda962efad",
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "placeholders_found": 0,
-      "unresolved_placeholders": []
-    },
-    "diff": {
-      "passed": true,
-      "changed": true,
-      "locally_safe_to_push": true,
-      "blockers": [],
-      "warnings": [
-        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
-      ]
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "pass",
-      "forbidden_marker_scan": "pass",
-      "source_path_hash_check": "pass",
-      "question_edit_schema_count": "pass",
-      "git_diff_check": "pass_after_eof_fix"
-    }
+  "raw_pdf_gate": {
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "UAP Document Code of Ethics refined markdown lines 1-21"
+    ]
   },
-  "next_phase_readiness": {
-    "local_first_ready": true,
-    "unresolved_local_blockers": 0,
-    "supabase_final_publishing_only": true,
-    "remote_stale_check_required_before_publish": true
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Acquire local primary source before restoring PRBoA Resolution No. 05 Series 2018 adoption, recitation, or oath-history claims."
+    ]
+  },
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/question-edits"
   }
 }

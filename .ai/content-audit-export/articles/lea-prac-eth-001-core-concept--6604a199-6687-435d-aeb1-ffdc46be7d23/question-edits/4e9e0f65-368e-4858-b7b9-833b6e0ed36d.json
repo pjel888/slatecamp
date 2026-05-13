@@ -2,53 +2,57 @@
   "question_id": "4e9e0f65-368e-4858-b7b9-833b6e0ed36d",
   "baseline_hash": "sha256:229e3d267d7f55324886a65f72dadd97a8c67d0feb7b2aefbad51239e422a12e",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-001-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-001-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
     "parent_article_slug": "lea-prac-eth-001-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118",
+    "source_locator": "UAP Code of Ethics line 49",
     "checked_markdown_lines": [
-      "raw markdown lines 23-29",
-      "raw markdown lines 31-118"
+      "UAP Code of Ethics lines 23-29",
+      "UAP Code of Ethics lines 31-42",
+      "UAP Code of Ethics lines 44-58",
+      "UAP Code of Ethics lines 60-79",
+      "UAP Code of Ethics lines 81-102"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+        "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "Which body is named in the source as codifying the Code with approval of the Board of Architecture and the Professional Regulation Commission?",
+    "text": "What should the architect establish at the inception of a client relationship?",
     "options": [
       {
         "id": "a",
-        "text": "United Architects of the Philippines"
+        "text": "The exact nature and scope of services and corresponding professional charges"
       },
       {
         "id": "b",
-        "text": "A private contractor association"
+        "text": "Only the color palette"
       },
       {
         "id": "c",
-        "text": "A city zoning board"
+        "text": "Only the contractor name"
       },
       {
         "id": "d",
-        "text": "A supplier federation"
+        "text": "No agreement until final payment"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +60,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The introduction states that the United Architects of the Philippines, with Board of Architecture and PRC approval, codified the principles.",
-    "explanation": "The introduction states that the United Architects of the Philippines, with Board of Architecture and PRC approval, codified the principles.",
-    "code_citation": "UAP Document Code of Ethics, line 29",
+    "rationale": {
+      "correct": "Section 2-b requires scope and professional charge clarity at the start.",
+      "takeaway": "Section 2-b requires scope and professional charge clarity at the start."
+    },
+    "explanation": "Use UAP Code of Ethics line 49 for this Batch 111 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics line 49",
     "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 111"
     ],
-    "difficulty": 0.3,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-001-002"
+    "model_id": "BATCH-111-lea-prac-eth-001-core-concept-004"
   }
 }

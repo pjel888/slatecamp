@@ -2,70 +2,89 @@
   "question_id": "19df8252-e1a5-4ea6-a53b-3308442f3ca9",
   "baseline_hash": "sha256:939c574a3c00ce130f13215c5980de03c7c362335e8c5c9562149e41268ce9df",
   "action": "replace",
-  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-ctr-022-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-031",
-  "approved_at": "2026-05-11T08:56:01+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-ctr-022-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
     "parent_article_slug": "lea-prac-ctr-022-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "CIAP Document 102 lines 538-554 and 626; RA 386 lines 40-48",
+    "source_locator": "CIAP Document 102 lines 539-544",
+    "checked_markdown_lines": [
+      "CIAP Document 102 lines 539-554",
+      "CIAP Document 102 lines 623-628",
+      "RA 386 Civil Code lines 40-46"
+    ],
     "checked_sources": [
       {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "source_locator": "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874",
-        "checked_markdown_lines": [
-          "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
-        ]
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "lea-prac-ctr-022-core-concept-ciap-document-102-liquidated-damages-local",
+        "locator": "CIAP Document 102 refined markdown lines 539-554 and 623-628"
       },
       {
-        "source_id": "ra-386-civil-code-local",
-        "label": "RA 386 - Civil Code of the Philippines",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-        "source_locator": "RA 386 Civil Code refined markdown lines 40-48",
-        "checked_markdown_lines": [
-          "RA 386 Civil Code refined markdown lines 40-48"
-        ]
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "lea-prac-ctr-022-core-concept-ciap-document-102-liquidated-damages-local",
+        "locator": "CIAP Document 102 refined markdown lines 539-554 and 623-628"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+        "source_id": "lea-prac-ctr-022-core-concept-civil-code-penal-clause-local",
+        "locator": "Civil Code refined markdown lines 40-46"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+        "source_id": "lea-prac-ctr-022-core-concept-civil-code-penal-clause-local",
+        "locator": "Civil Code refined markdown lines 40-46"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "For the CIAP Document 102 delay rule, through what date do delay damages accrue?",
+    "text": "What is substantial completion under CIAP Document 102?",
     "options": [
       {
         "id": "a",
-        "text": "Until substantial completion"
+        "text": "95 percent completion when remaining work does not prevent normal use of the completed portion"
       },
       {
         "id": "b",
-        "text": "Until the architect retires"
+        "text": "50 percent completion regardless of use"
       },
       {
         "id": "c",
-        "text": "Until every minor item is perfect regardless of use"
+        "text": "Any verbal owner approval"
       },
       {
         "id": "d",
-        "text": "Until the next project begins"
+        "text": "Final completion with zero defects only"
       }
     ],
     "correct_option_id": "a",
-    "rationale": "CIAP Document 102 states delay damages accrue until substantial completion.",
-    "explanation": "CIAP Document 102 states delay damages accrue until substantial completion.",
-    "code_citation": "CIAP Document 102 lines 538-554 and 626; RA 386 lines 40-48"
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "correct": "CIAP Document 102 defines substantial completion using 95 percent completion and normal-use capability.",
+      "takeaway": "CIAP Document 102 defines substantial completion using 95 percent completion and normal-use capability."
+    },
+    "explanation": "Use CIAP Document 102 lines 539-544 for this Batch 111 source-safe rewrite.",
+    "code_citation": "CIAP Document 102 lines 539-544",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 111"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-111-lea-prac-ctr-022-core-concept-003"
   }
 }

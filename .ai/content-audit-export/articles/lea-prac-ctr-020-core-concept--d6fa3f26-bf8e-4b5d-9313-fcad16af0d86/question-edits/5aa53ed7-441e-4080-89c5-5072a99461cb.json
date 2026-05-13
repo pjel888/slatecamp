@@ -2,85 +2,87 @@
   "question_id": "5aa53ed7-441e-4080-89c5-5072a99461cb",
   "baseline_hash": "sha256:e0c41a3b068d0064342eb969bb5491850def0e408092bf4a6f7da818017805cb",
   "action": "replace",
-  "reason": "source-audited-article-batch-030-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-020-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-030",
-  "approved_at": "2026-05-11T08:28:21.061+08:00",
+  "reason": "source-audited-article-batch-111-local-first rewrote this linked question after local raw-source recheck for lea-prac-ctr-020-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-111",
+  "approved_at": "2026-05-13T16:20:41+08:00",
   "source_audit_support": {
     "parent_article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
     "parent_article_slug": "lea-prac-ctr-020-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905; UAP Document 301 refined markdown lines 775, 1019-1026 and 1068; Civil Code refined markdown lines 349, 359-360",
+    "source_locator": "CIAP Document 102 line 514",
     "checked_markdown_lines": [
-      "CIAP Document 102 line 522",
+      "CIAP Document 102 lines 510-518",
+      "CIAP Document 102 lines 522-528",
       "CIAP Document 102 line 667",
-      "CIAP Document 102 line 848",
       "CIAP Document 102 lines 870-874",
       "CIAP Document 102 lines 901-905",
-      "UAP Document 301 line 775",
-      "UAP Document 301 lines 1019-1026",
+      "UAP Document 301 lines 760-775",
+      "UAP Document 301 lines 1016-1028",
       "UAP Document 301 line 1068",
-      "RA 386 Civil Code line 349",
-      "RA 386 Civil Code lines 359-360"
+      "EO 1008 lines 23-29",
+      "EO 1008 lines 57-63",
+      "EO 1008 lines 76-78"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905"
+        "source_id": "lea-prac-ctr-020-core-concept-ciap-document-102-local",
+        "locator": "CIAP Document 102 refined markdown lines 510-518, 522-528, 667, 870-874, and 901-905"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905"
+        "source_id": "lea-prac-ctr-020-core-concept-ciap-document-102-local",
+        "locator": "CIAP Document 102 refined markdown lines 510-518, 522-528, 667, 870-874, and 901-905"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 775, 1019-1026 and 1068"
+        "source_id": "lea-prac-ctr-020-core-concept-uap-document-301-local",
+        "locator": "UAP Document 301 refined markdown lines 760-775, 1016-1028, and 1068"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 775, 1019-1026 and 1068"
+        "source_id": "lea-prac-ctr-020-core-concept-uap-document-301-local",
+        "locator": "UAP Document 301 refined markdown lines 760-775, 1016-1028, and 1068"
       },
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-        "source_id": "ra-386-civil-code-local",
-        "locator": "Civil Code refined markdown lines 349, 359-360"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+        "sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+        "source_id": "lea-prac-ctr-020-core-concept-eo-1008-local",
+        "locator": "EO 1008 refined markdown lines 23-29, 57-63, and 76-78"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-        "sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-        "source_id": "ra-386-civil-code-local",
-        "locator": "Civil Code refined markdown lines 349, 359-360"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
+        "sha256": "sha256:0755335760c2f2452946207668923ce33034f5fae595c8d4796b6b2d56e6bd14",
+        "source_id": "lea-prac-ctr-020-core-concept-eo-1008-local",
+        "locator": "EO 1008 refined markdown lines 23-29, 57-63, and 76-78"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 111 replaced unsupported or thin wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-111-local-first"
   },
   "proposed": {
-    "text": "Under UAP Document 301, what does the architect decide within a reasonable time?",
+    "text": "What actual-direct-cost formula is supported by CIAP Document 102 for extra work?",
     "options": [
       {
         "id": "a",
-        "text": "Claims and matters relating to execution, progress, or interpretation of contract documents"
+        "text": "Actual direct cost plus VAT if any plus fifteen percent for contractor profit and overhead"
       },
       {
         "id": "b",
-        "text": "The winner of every public bidding"
+        "text": "Actual direct cost plus fifty percent automatically"
       },
       {
         "id": "c",
-        "text": "The contractor's professional license"
+        "text": "Owner estimate only"
       },
       {
         "id": "d",
-        "text": "The owner's tax return"
+        "text": "Architect fee plus contractor equipment only"
       }
     ],
     "correct_option_id": "a",
@@ -88,18 +90,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Correct because it follows UAP Document 301 lines 1019-1026. The other options change the timing, party, document, amount, or legal effect stated in the checked local source.",
-    "explanation": "Use UAP Document 301 lines 1019-1026 for this Batch 030 source-safe replacement.",
-    "code_citation": "UAP Document 301 lines 1019-1026",
+    "rationale": {
+      "correct": "The source states actual direct cost plus VAT if any plus fifteen percent for profit and overhead.",
+      "takeaway": "The source states actual direct cost plus VAT if any plus fifteen percent for profit and overhead."
+    },
+    "explanation": "Use CIAP Document 102 line 514 for this Batch 111 source-safe rewrite.",
+    "code_citation": "CIAP Document 102 line 514",
     "bloom_level": "understand",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "contracts",
-      "source-audited-article-batch-030-local-first"
+      "source-audited local-first",
+      "batch 111"
     ],
-    "difficulty": 0.38,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-005"
+    "model_id": "BATCH-111-lea-prac-ctr-020-core-concept-005"
   }
 }

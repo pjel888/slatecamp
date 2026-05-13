@@ -1,3 +1,47 @@
+# Batch 111 Local-First Handoff Update
+
+Last updated: 2026-05-13T16:20:41+08:00
+
+## Current State
+
+- Latest local-first production-line batch prepared: Batch 111
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 111: 3dbb5def8dbe9cd7933d7fa246c0612167b9ef96
+- Previous accepted Batch 110 commit: 3dbb5def8
+- Batch 111 local artifacts: pass
+- Git gate: real `.git/index.lock` writes are blocked; temporary-index cached diff passed and a temporary commit object was created, but push failed because `github.com` could not be resolved.
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 111 Selection
+
+- lea-prac-ctr-020-core-concept (d6fa3f26-bf8e-4b5d-9313-fcad16af0d86)
+- lea-prac-ctr-021-core-concept (51800681-6d9e-47f4-9e3a-aaf9ca459bf0)
+- lea-prac-ctr-022-core-concept (6d669d7f-d03f-433f-af13-9443b6144033)
+- lea-prac-eth-001-core-concept (6604a199-6687-435d-aeb1-ffdc46be7d23)
+- lea-prac-eth-002-core-concept (f769b43e-e467-4ce4-afd9-2d0152fe8d46)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-111-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-111-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-111-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-111-manifest.json`
+- QA memo: `.ai/03_plans/batch-111-independent-quality-review.md`
+
+## Preserved Final-Depth Items
+
+- Keep THIN_NEEDS_EXPANSION and source-primary findings in the final remediation plan.
+- CTR-020: compare current claim forms, notice templates, and project-specific dispute clauses in the final-depth pass.
+- CTR-021: keep richer CIAC procedure details source-needed unless local primary sources are acquired.
+- CTR-022: do not restore invented liquidated-damages daily rates without the project contract text.
+- ETH-002: do not restore PRBoA adoption/recitation claims until a local primary source is acquired.
+
+## Batch 111 Next Batch
+
+Continue with Batch 112 using the next eligible fixed/manifest articles not selected in accepted Batches 087-111 after Batch 111 is committed and pushed from an environment with real git-index and GitHub network access. Apply the same local-first gates, question-edit requirement, QA memo requirement, commit, push, and automatic continuation behavior.
+
+---
+
 # Batch 110 Post-Batch Handoff Addendum
 
 Updated: 2026-05-13T15:42:08+08:00

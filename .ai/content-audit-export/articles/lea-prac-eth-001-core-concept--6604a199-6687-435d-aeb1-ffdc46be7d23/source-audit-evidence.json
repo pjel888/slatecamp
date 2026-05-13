@@ -1,112 +1,74 @@
 {
-  "batch_id": "source-audited-article-batch-017-local-first",
-  "mode": "local_first_no_supabase_push",
-  "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
-  "slug": "lea-prac-eth-001-core-concept",
-  "title": "Code of Ethical Conduct (SPP Document 200)",
-  "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23",
-  "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/question-edits",
-  "audited_at": "2026-05-10T23:30:00.000+08:00",
-  "status": "local_passed",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 2,
+  "batch_id": "source-audited-article-batch-111-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T16:20:41+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
+  "target": {
+    "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+    "slug": "lea-prac-eth-001-core-concept",
+    "title": "Code of Ethical Conduct"
+  },
   "classification": {
-    "content_domain": "LEA Professional Practice and Jurisprudence",
-    "legal_or_professional_practice": true,
-    "raw_pdf_audit_required": true,
-    "raw_pdf_audit_completed": true
+    "topic": "architect ethics and professional conduct",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
   },
   "checked_sources": [
     {
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
       "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "source_id": "uap-document-code-of-ethics",
-      "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+      "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
     },
     {
-      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "source_id": "uap-document-code-of-ethics-raw-markdown",
-      "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+      "source_id": "lea-prac-eth-001-core-concept-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
     }
-  ],
-  "checked_markdown_lines": [
-    "raw markdown lines 23-29",
-    "raw markdown lines 31-118"
   ],
   "claims": [
-    {
-      "claim_id": "lea-prac-eth-001-core-concept-claim-01",
-      "claim": "The UAP source introduces architecture as a profession requiring integrity, judgment, business capacity, and artistic and technical ability.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
-    },
-    {
-      "claim_id": "lea-prac-eth-001-core-concept-claim-02",
-      "claim": "The Code groups obligations by people, client, contractor, manufacturers/dealers/agents, and colleagues/subordinates.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
-    },
-    {
-      "claim_id": "lea-prac-eth-001-core-concept-claim-03",
-      "claim": "The Code requires impartiality between client and contractor and identifies responsibilities to the public, associates, and subordinates.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
-    }
+    "The Code of Ethical Conduct frames architect duties through relationship sections.",
+    "Client duties include scope/fee clarity, advice against questionable projects, conditional estimates, no outside returns, disclosure, and arbitration clause.",
+    "Contractor duties include clear documents, fair administration, and rejection of nonconforming work.",
+    "Supplier duties prohibit private reciprocal benefits, while permitted market discounts are credited to the client.",
+    "Colleague/subordinate duties include direct-supervision sealing, fair employment, mentoring, and information sharing."
   ],
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "unverified_external_resolution_claims_removed": true,
-    "unverified_reporting_or_enforcement_claims_removed": true,
-    "candidate_md_composed": true
+  "removed_or_rewritten_material": [
+    "Reframed the article away from broad ethical slogans into source-section responsibilities and relationship duties."
+  ],
+  "final_depth_findings_preserved": [
+    "Preserve comparison with newer PRBoA or UAP ethics issuances for final depth if local primary sources are acquired."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe supplier-discount and client-credit scenario."
   },
-  "blockers": [],
-  "supabase": {
-    "pushed": false,
-    "deployed": false,
-    "committed": false,
-    "final_publishing_only": true
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
   },
-  "candidate_hash": "sha256:0e4a232b0e4a3c52d728f9562467e76e1e3e4357d5cb42cfb649ea442018a6f1",
-  "normalized_hash": "sha256:0e4a232b0e4a3c52d728f9562467e76e1e3e4357d5cb42cfb649ea442018a6f1",
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "placeholders_found": 0,
-      "unresolved_placeholders": []
-    },
-    "diff": {
-      "passed": true,
-      "changed": true,
-      "locally_safe_to_push": true,
-      "blockers": [],
-      "warnings": [
-        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
-      ]
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "pass",
-      "forbidden_marker_scan": "pass",
-      "source_path_hash_check": "pass",
-      "question_edit_schema_count": "pass",
-      "git_diff_check": "pass_after_eof_fix"
-    }
+  "raw_pdf_gate": {
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "UAP Document Code of Ethics refined markdown lines 23-29, 31-42, 44-58, 60-79, and 81-102"
+    ]
   },
-  "next_phase_readiness": {
-    "local_first_ready": true,
-    "unresolved_local_blockers": 0,
-    "supabase_final_publishing_only": true,
-    "remote_stale_check_required_before_publish": true
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Preserve comparison with newer PRBoA or UAP ethics issuances for final depth if local primary sources are acquired."
+    ]
+  },
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/question-edits"
   }
 }
