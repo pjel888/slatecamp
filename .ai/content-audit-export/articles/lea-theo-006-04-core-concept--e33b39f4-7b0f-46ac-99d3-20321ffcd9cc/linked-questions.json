@@ -1,30 +1,29 @@
 {
   "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:ab7594d5a771f583a286c6c6ac4d2878a16fe4d90d9b3d9a4c463348738f1b59",
   "question_count": 10,
   "questions": [
     {
       "question_id": "2c9d0d6f-a6ed-4d81-9acd-cfb47103529b",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "Who was the first recipient of the Pritzker Architecture Prize in 1979?",
+      "text": "What is the safest use of the Pritzker Prize in this article?",
       "options": [
         {
           "id": "a",
-          "text": "Le Corbusier"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "Philip Johnson"
+          "text": "As a recognition framework, not as an architectural movement."
         },
         {
           "id": "c",
-          "text": "I.M. Pei"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "d",
-          "text": "Frank Lloyd Wright"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +32,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Le Corbusier died in 1965, before the prize was established.",
-        "c": "I.M. Pei received the prize later (1983), not as the first laureate.",
-        "d": "Frank Lloyd Wright died in 1959, before the prize was established.",
-        "correct": "Philip Johnson received the inaugural Pritzker Prize in 1979, symbolizing the canonization of modernist and postmodern pioneers. His award represented the prize's early emphasis on formalist and structural innovation.",
-        "takeaway": "His award represented the prize's early emphasis on formalist and structural innovation."
+        "correct": "As a recognition framework, not as an architectural movement. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": "Le Corbusier died in 1965, before the prize was established. I.M. Pei received the prize later (1983), not as the first laureate. Frank Lloyd Wright died in 1959, before the prize was established. Philip Johnson received the inaugural Pritzker Prize in 1979, symbolizing the canonization of modernist and postmodern pioneers. His award represented the prize's early emphasis on formalist and structural innovation. His award represented the prize's early emphasis on formalist and structural innovation.",
-      "code_citation": null,
+      "explanation": "As a recognition framework, not as an architectural movement. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -53,30 +50,30 @@
       "model_id": "ALE-THEO-006-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:28.88987+00:00",
-      "content_hash": "sha256:303f19603b4312e3b4055ed27e256f57baf5aae2f975b0f45be6240ce9d2a48b"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:8b1fa3ca3925b9a973e773798440fc26d69ffa738d133136d32e1d26fd92c846"
     },
     {
       "question_id": "a93a004f-2a3c-4fe8-8be3-862f7ea2b628",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "Which 2022 Pritzker Prize winner represents the first African-born architect to receive the award?",
+      "text": "What local source anchor supports the 1979 prize reference?",
       "options": [
         {
           "id": "a",
-          "text": "Liu Jiakun (Chinese), known for his innovative use of traditional Chinese architectural elements in modern design"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "David Chipperfield (British), recognized for his minimalist approach and emphasis on context"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "c",
-          "text": "Diébédo Francis Kéré (Burkinabé-German, born in Gando, Burkina Faso)"
+          "text": "TOA 5 identifies Philip Johnson and the Pritzker Architecture Prize in 1979."
         },
         {
           "id": "d",
-          "text": "Smiljan Radić Clarke (Chilean), celebrated for his unique blend of organic forms and cultural references"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "c",
@@ -85,14 +82,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Liu Jiakun is Chinese; he received the Pritzker Prize in 2025, but he is not African-born.",
-        "b": "David Chipperfield is British, not African-born.",
-        "d": "Smiljan Radić Clarke is Chilean; he has not received the Pritzker Prize.",
-        "correct": "Diébédo Francis Kéré, born in Gando, Burkina Faso, received the 2022 Pritzker Prize as the first native African and the first sub-Saharan African architect to win. His award cemented the prize's shift toward recognizing humanitarian and sustainable practice.",
-        "takeaway": "His award cemented the prize's shift toward recognizing humanitarian and sustainable practice."
+        "correct": "TOA 5 identifies Philip Johnson and the Pritzker Architecture Prize in 1979. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": "Liu Jiakun is Chinese; he received the Pritzker Prize in 2025, but he is not African-born. David Chipperfield is British, not African-born. Smiljan Radić Clarke is Chilean; he has not received the Pritzker Prize. Diébédo Francis Kéré, born in Gando, Burkina Faso, received the 2022 Pritzker Prize as the first native African and the first sub-Saharan African architect to win. His award cemented the prize's shift toward recognizing humanitarian and sustainable practice. His award cemented the prize's shift toward recognizing humanitarian and sustainable practice.",
-      "code_citation": null,
+      "explanation": "TOA 5 identifies Philip Johnson and the Pritzker Architecture Prize in 1979. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +100,30 @@
       "model_id": "ALE-THEO-006-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:28.74342+00:00",
-      "content_hash": "sha256:7a3c009ef10ec9e79ce82c40b0d08229d45ec2df00123dee077b7d651153586c"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:b5ca65d53b7cfaa629ba07c9bd3c90154065c12a57ea794b417e4c4018f63639"
     },
     {
       "question_id": "e91b32da-cb5c-4a97-9508-53673b2cbe66",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "Japan has produced nine Pritzker laureates—more than any non-American country. What does this pattern suggest about Japanese architecture's role in global discourse?",
+      "text": "Why should current-year winner trivia be avoided here?",
       "options": [
         {
           "id": "a",
-          "text": "Japan has sustained investment in architectural culture and spatial thinking; the prize concentration reflects genuine global influence of Japanese architects and their ideas"
+          "text": "It is time-sensitive and outside the stable concept boundary needed for this local-first rewrite."
         },
         {
           "id": "b",
-          "text": "Japanese architecture is derivative of Western modernism; the prize overrepresents Japanese winners due to a focus on stylistic similarities"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "c",
-          "text": "The jury is biased toward Asian architecture; prizes should be more geographically distributed to ensure fair representation"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "d",
-          "text": "The prize winners are primarily famous for iconic buildings; Japan happens to have built more famous buildings than other countries, which skews the perception of influence"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "a",
@@ -137,14 +132,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Japanese architecture is not derivative; it has been generative of global movements.",
-        "c": "Geographic distribution is one perspective, but concentrated recognition may reflect actual influence and quality.",
-        "d": "Fame of individual buildings is secondary; the prize recognizes lifetime achievement and influence, not celebrity.",
-        "correct": "Japan's nine laureates reflect sustained cultural investment, rigorous design education, and global influence of Japanese spatial and design thinking (from Metabolism to minimalism). This concentration indicates recognized excellence and influence, not bias or overrepresentation. Japanese architects have shaped global discourse.",
-        "takeaway": "Japanese architects have shaped global discourse."
+        "correct": "It is time-sensitive and outside the stable concept boundary needed for this local-first rewrite. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": "Japanese architecture is not derivative; it has been generative of global movements. Geographic distribution is one perspective, but concentrated recognition may reflect actual influence and quality. Fame of individual buildings is secondary; the prize recognizes lifetime achievement and influence, not celebrity. Japan's nine laureates reflect sustained cultural investment, rigorous design education, and global influence of Japanese spatial and design thinking (from Metabolism to minimalism). This concentration indicates recognized excellence and influence, not bias or overrepresentation. Japanese architects have shaped global discourse. Japanese architects have shaped global discourse.",
-      "code_citation": null,
+      "explanation": "It is time-sensitive and outside the stable concept boundary needed for this local-first rewrite. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -157,30 +150,30 @@
       "model_id": "ALE-THEO-006-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:29.016024+00:00",
-      "content_hash": "sha256:a1e55ed3679ee3dcd5145aa783e9a9961bf8f1cb3c485d044b04bd7296af725b"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:f488fb34a2d7c7b7eb5a57ed1f479abc32428ba080e002c6ec4fbb17581cbe6b"
     },
     {
       "question_id": "c049b680-b293-41ff-ae4f-feb29432a7f2",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "Which Japanese architect won the Pritzker Prize first, in 1987?",
+      "text": "Which answer best handles a laureate question?",
       "options": [
         {
           "id": "a",
-          "text": "Tadao Ando"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "Kenzo Tange"
+          "text": "Use the prize as recognition context, then identify the source-supported work or design concept."
         },
         {
           "id": "c",
-          "text": "Toyo Ito"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "d",
-          "text": "Fumihiko Maki"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "b",
@@ -189,14 +182,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Tadao Ando received the prize in 1995.",
-        "c": "Toyo Ito received the prize in 2013.",
-        "d": "Fumihiko Maki received the prize in 1993.",
-        "correct": "Kenzo Tange received the 1987 Pritzker Prize as the first Japanese architect to win. Japan has since produced nine laureates, the most of any non-American country, reflecting the nation's influence on global architectural discourse.",
-        "takeaway": "Japan has since produced nine laureates, the most of any non-American country, reflecting the nation's influence on global architectural discourse."
+        "correct": "Use the prize as recognition context, then identify the source-supported work or design concept. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": "Tadao Ando received the prize in 1995. Toyo Ito received the prize in 2013. Fumihiko Maki received the prize in 1993. Kenzo Tange received the 1987 Pritzker Prize as the first Japanese architect to win. Japan has since produced nine laureates, the most of any non-American country, reflecting the nation's influence on global architectural discourse. Japan has since produced nine laureates, the most of any non-American country, reflecting the nation's influence on global architectural discourse.",
-      "code_citation": null,
+      "explanation": "Use the prize as recognition context, then identify the source-supported work or design concept. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -209,30 +200,30 @@
       "model_id": "ALE-THEO-006-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:28.345057+00:00",
-      "content_hash": "sha256:282ba6e38cfbf0e141355efb01c9d1dce3425e563749c5f4f2494964f65de339"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:64dece0f420e58ee34d13b0d4edeb1ac17ae3d1953bb08a2aae3cda3257f1e47"
     },
     {
       "question_id": "c7bc1bcd-91e1-4b1b-a698-2c95c8734721",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "The Pritzker Prize historically emphasized formalist and structural innovation (1979–2010s), but recent awards increasingly recognize social housing and humanitarian practice (Aravena 2016, Kéré 2022). What does this shift indicate about the institution?",
+      "text": "What does the official Pritzker source support?",
       "options": [
         {
           "id": "a",
-          "text": "The change reflects declining interest in contemporary architecture among practitioners, which is not supported by current trends"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "The jury is renegotiating what constitutes architectural excellence; recognition is expanding from formalist innovation to include humanitarian and social responsibility as valid forms of excellence"
+          "text": "The prize was founded through the Hyatt Foundation in 1979 and honors a living architect for contribution to humanity and the built environment."
         },
         {
           "id": "c",
-          "text": "The prize's jury has abandoned interest in architectural excellence; social practice is now prioritized over design quality, which is a controversial view"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "d",
-          "text": "This shift is temporary; the prize will soon return to honoring only formalist and structural achievements, which is speculative"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "b",
@@ -241,14 +232,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This misinterprets the trend; expanding recognition criteria indicates increased institutional engagement.",
-        "c": "Quality remains important; the definition of quality is evolving.",
-        "d": "The shift appears sustained, not temporary; recent laureates continue diverse approaches, not a reversion to formalism.",
-        "correct": "The shift from formalism to social/humanitarian practice represents institutional renegotiation of excellence, not abandonment of it. Aravena's 2,500-unit social housing and Kéré's participatory design demonstrate that architectural excellence is being redefined to include social and environmental responsibility alongside formal innovation.",
-        "takeaway": "Aravena's 2,500-unit social housing and Kéré's participatory design demonstrate that architectural excellence is being redefined to include social and environmental responsibility alongside formal innovation."
+        "correct": "The prize was founded through the Hyatt Foundation in 1979 and honors a living architect for contribution to humanity and the built environment. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": "This misinterprets the trend; expanding recognition criteria indicates increased institutional engagement. Quality remains important; the definition of quality is evolving. The shift appears sustained, not temporary; recent laureates continue diverse approaches, not a reversion to formalism. The shift from formalism to social/humanitarian practice represents institutional renegotiation of excellence, not abandonment of it. Aravena's 2,500-unit social housing and Kéré's participatory design demonstrate that architectural excellence is being redefined to include social and environmental responsibility alongside formal innovation. Aravena's 2,500-unit social housing and Kéré's participatory design demonstrate that architectural excellence is being redefined to include social and environmental responsibility alongside formal innovation.",
-      "code_citation": null,
+      "explanation": "The prize was founded through the Hyatt Foundation in 1979 and honors a living architect for contribution to humanity and the built environment. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +250,30 @@
       "model_id": "ALE-THEO-006-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:28.489841+00:00",
-      "content_hash": "sha256:12f283fa621b078f1d9493d2de74242c06810a246fdfff73a4026a85facf233c"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:ac98df1710a914eb172f5afda80d0eaba19bbda8426f96f92f3fe45b7e463bad"
     },
     {
       "question_id": "1a17d08d-3d78-4653-9b5e-2457cc7d7ac5",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "Frei Otto received the Pritzker Prize posthumously in 2015 after his death in March 2015 at age 89. What significance does this exceptional award hold?",
+      "text": "Which claim is weakest?",
       "options": [
         {
           "id": "a",
-          "text": "It indicates that architectural prizes are increasingly awarded to deceased architects as tribute, reflecting a shift in recognition practices"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "It proves that the Pritzker Prize recognizes buildings rather than architects; Otto's buildings justified posthumous awards"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "c",
-          "text": "It demonstrates that Otto's lifetime research into minimal-material design, biomimicry, and structural innovation had reshaped architectural thinking across generations, warranting exceptional recognition even after death"
+          "text": "Every Pritzker laureate belongs to one identical architectural style."
         },
         {
           "id": "d",
-          "text": "It shows that the prize has no standards; any architect can receive it regardless of career timing, undermining its prestige"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "c",
@@ -293,14 +282,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Posthumous awards remain rare (Otto is the only example to date); this doesn't indicate a trend.",
-        "b": "The prize emphasizes lifetime achievement and influence; it's not primarily about individual buildings.",
-        "d": "The exception demonstrates rigorous standards, not lack of them; Otto's impact justified the rare exception.",
-        "correct": "Frei Otto's posthumous award (still rare through 2026) honored his conceptual contributions to architectural thinking. His research on minimal-material systems influenced generations of architects and became foundational to sustainability discourse. The exception acknowledges intellectual and research contribution beyond completed buildings.",
-        "takeaway": "The exception acknowledges intellectual and research contribution beyond completed buildings."
+        "correct": "Every Pritzker laureate belongs to one identical architectural style. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": "Posthumous awards remain rare (Otto is the only example to date); this doesn't indicate a trend. The prize emphasizes lifetime achievement and influence; it's not primarily about individual buildings. The exception demonstrates rigorous standards, not lack of them; Otto's impact justified the rare exception. Frei Otto's posthumous award (still rare through 2026) honored his conceptual contributions to architectural thinking. His research on minimal-material systems influenced generations of architects and became foundational to sustainability discourse. The exception acknowledges intellectual and research contribution beyond completed buildings. The exception acknowledges intellectual and research contribution beyond completed buildings.",
-      "code_citation": null,
+      "explanation": "Every Pritzker laureate belongs to one identical architectural style. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +300,30 @@
       "model_id": "ALE-THEO-006-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:28.61337+00:00",
-      "content_hash": "sha256:7dc5258721e145bc7ce722f86e0e3628d81aca0e8a5c8143168ad87ab9b991e9"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:6cc9a0d04e6a91e210379ffc68bd295f83c2e6a92b63bc4299fb803de6acefe3"
     },
     {
       "question_id": "261f53d2-7b77-472a-ac52-59e6fc0b9162",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "Frank Gehry received the Pritzker Prize in 1989. Which statement accurately characterizes what this award recognized?",
+      "text": "How should Philip Johnson be treated?",
       "options": [
         {
           "id": "a",
-          "text": "The prize specifically recognized his deconstructivist design philosophy, not his buildings, which was a unique approach at the time"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "The prize honored Gehry's lifetime contribution to architecture and his influence on contemporary design; the Guggenheim Bilbao was completed eight years later in 1997"
+          "text": "As a TOA 5 master and 1979 Pritzker reference, with design claims kept inside checked sources."
         },
         {
           "id": "c",
-          "text": "The award was given only because Gehry was American; geographic representation was the primary criterion, which is a common misconception"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "d",
-          "text": "The 1989 award recognized the Guggenheim Bilbao, completed that year, which is factually incorrect"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "b",
@@ -345,14 +332,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While deconstructivism is relevant, the award honors lifetime work across his career, not a single philosophy.",
-        "c": "While Gehry is American, geographic representation is not the primary award criterion.",
-        "d": "The Guggenheim Bilbao opened in 1997, not 1989; this is a common misunderstanding.",
-        "correct": "The Pritzker Prize recognizes lifetime achievement, not a single building completion date. Gehry's 1989 award recognized his body of work and influence; the Guggenheim Bilbao opened in 1997. This distinction is commonly tested on the ALE to prevent confusing prize year with building completion year.",
-        "takeaway": "This distinction is commonly tested on the ALE to prevent confusing prize year with building completion year."
+        "correct": "As a TOA 5 master and 1979 Pritzker reference, with design claims kept inside checked sources. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "As a TOA 5 master and 1979 Pritzker reference, with design claims kept inside checked sources. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -365,30 +350,30 @@
       "model_id": "ALE-THEO-006-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d26fd6f3660fc31ea36c131f3208e95f7620a9486e63014a164203737f30bb0b"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:f86622b10c5debc6633a8266b7cb3176700b3ba61856c84ca84c091cb22cd6b7"
     },
     {
       "question_id": "9061bb84-4c34-407b-bde1-6293f607fb62",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "Which Pritzker Prize winner is recognized as the first woman architect to receive the award?",
+      "text": "What is the scenario lesson?",
       "options": [
         {
           "id": "a",
-          "text": "Eileen Gray (2000)"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "Gloria Steinem (1995)"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "c",
-          "text": "Zaha Hadid (2004)"
+          "text": "Recognition evidence and design-analysis evidence are separate tasks."
         },
         {
           "id": "d",
-          "text": "Shigeru Ban (2014)"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "c",
@@ -397,14 +382,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Eileen Gray, while an important designer, was not a Pritzker laureate.",
-        "b": "Gloria Steinem is not an architect; this is incorrect.",
-        "d": "Shigeru Ban is male; he received the prize in 2014.",
-        "correct": "Zaha Hadid received the 2004 Pritzker Prize, becoming the first woman architect to win the award. This milestone occurred 25 years after the prize was established, marking a significant shift in the institution's gatekeeping.",
-        "takeaway": "This milestone occurred 25 years after the prize was established, marking a significant shift in the institution's gatekeeping."
+        "correct": "Recognition evidence and design-analysis evidence are separate tasks. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Recognition evidence and design-analysis evidence are separate tasks. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +400,30 @@
       "model_id": "ALE-THEO-006-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9d714566485874951a8f9539e998b6416edb943d44f76afee4796293b101b2a5"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:8ff5f08647492c5228f6b4dc3ceee216af6529ebfbf621c0b3bb8be290cc0334"
     },
     {
       "question_id": "47afcf57-202e-487f-9fde-03298ce70870",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "The Pritzker Prize has recognized different architectural approaches across its 47-year history: formalism (Gehry, Hadid), social practice (Aravena, Kéré), and synthesis (Locsin-like modernism). What does this institutional pattern reveal about the prize's role in architectural discourse, and how should aspiring architects interpret it?",
+      "text": "Which option fits LEA reasoning?",
       "options": [
         {
           "id": "a",
-          "text": "The prize is inconsistent; architects cannot determine what excellence means because criteria constantly change, leading to confusion in the architectural community."
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "The prize reflects evolving understanding of architectural excellence; aspiring architects should pursue genuine conviction in their design approach (whether formalist, social, or synthetic) rather than chasing prize criteria, as the institution recognizes diverse forms of excellence"
+          "text": "Match the architect to supported work, idea, and movement instead of treating the prize as the answer."
         },
         {
           "id": "c",
-          "text": "All approaches are equally valid; the prize has abdicated its role as gatekeeper; architectural quality is meaningless, which undermines the value of the award."
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "d",
-          "text": "Social practice has become the only legitimate approach; previous formalist recognition was a historical error that should be disregarded, as it no longer aligns with contemporary values."
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +432,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Evolution is not inconsistency; criteria clarify over time rather than randomizing.",
-        "c": "The prize's role as canonizer remains active; expanded recognition doesn't eliminate meaning.",
-        "d": "Formalist contributions remain valid; the prize now recognizes additional approaches, not replacement of previous ones.",
-        "correct": "The prize's evolution demonstrates that excellence is contested and evolving, not static. Rather than representing inconsistency, this reflects institutional willingness to expand canonization. Aspiring architects should develop conviction in their work (whether formalist, social, or other) with rigor and integrity; the prize recognizes diverse legitimate approaches, not a single path.",
-        "takeaway": "Aspiring architects should develop conviction in their work (whether formalist, social, or other) with rigor and integrity; the prize recognizes diverse legitimate approaches, not a single path."
+        "correct": "Match the architect to supported work, idea, and movement instead of treating the prize as the answer. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Match the architect to supported work, idea, and movement instead of treating the prize as the answer. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -469,30 +450,30 @@
       "model_id": "ALE-THEO-006-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bad774a408a7db9999fbeea92939af2c7708ffaac77657f31d3664d455f807f5"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:865177d32eb36d6464800a6efb8ee0f845382835af99a29141353ae7ada8f6d5"
     },
     {
       "question_id": "f53b98e9-19e0-4818-928c-cbc898c680dd",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
       "topic_id": "57608b7a-a6b5-4718-8ff5-d1f5ab797a6f",
-      "text": "In what year was the Pritzker Architecture Prize established, and by whom?",
+      "text": "What should the source boundary exclude?",
       "options": [
         {
           "id": "a",
-          "text": "1985 by the National Academy of Architecture, recognizing outstanding contributions to the field"
+          "text": "Treat the Pritzker Prize as an architectural movement or style."
         },
         {
           "id": "b",
-          "text": "1990 by the International Union of Architects, aimed at promoting architectural excellence globally"
+          "text": "Answer from latest-winner trivia without verifying a current source."
         },
         {
           "id": "c",
-          "text": "1979 by Jay A. Pritzker and Cindy Pritzker through the Hyatt Foundation"
+          "text": "Complete laureate chronology and uncaptured latest-winner claims."
         },
         {
           "id": "d",
-          "text": "1975 by the American Institute of Architects, to honor innovative design practices"
+          "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
         }
       ],
       "correct_option_id": "c",
@@ -501,14 +482,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The date and organization are incorrect.",
-        "b": "The IUA is not the founding organization.",
-        "d": "The AIA did not establish this prize; they sponsor other awards.",
-        "correct": "The Pritzker Prize was established in 1979 by Jay A. Pritzker and his wife Cindy through the Hyatt Foundation. It is the first major international award recognizing lifetime achievement in architecture.",
-        "takeaway": "It is the first major international award recognizing lifetime achievement in architecture."
+        "correct": "Complete laureate chronology and uncaptured latest-winner claims. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+        "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
       },
-      "explanation": "The date and organization are incorrect. The IUA is not the founding organization. The AIA did not establish this prize; they sponsor other awards. The Pritzker Prize was established in 1979 by Jay A. Pritzker and his wife Cindy through the Hyatt Foundation. It is the first major international award recognizing lifetime achievement in architecture. It is the first major international award recognizing lifetime achievement in architecture.",
-      "code_citation": null,
+      "explanation": "Complete laureate chronology and uncaptured latest-winner claims. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -521,8 +500,9 @@
       "model_id": "ALE-THEO-006-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:29.233702+00:00",
-      "content_hash": "sha256:9714985c6ced6c66e4de295d613cc691fde1c375026aa58289fed9a2bde6040e"
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "content_hash": "sha256:8961a67398e758797f6c1841d62e42e3bc6b8dd7b3b2962575eafed6c44718cd"
     }
-  ]
+  ],
+  "linked_questions_hash": "sha256:fd26210a507f5e3ebe626cf591c6cecf614c294f36650eaaa4cf491f1874ae33"
 }

@@ -1,3 +1,13 @@
+## Batch 135 Coordination Update - 2026-05-14T07:05:00.000+08:00
+
+- Mode: local-first source-map/reservation pass.
+- Selected bundles: lea-theo-005-09-core-concept, lea-theo-005-10-core-concept, lea-theo-005-11-core-concept, lea-theo-006-04-core-concept, lea-theo-007-01-core-concept.
+- Scope evidence: 5 article clusters, 54 linked questions, 54 question edits, 10 local source artifacts.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main.
+- Stop condition: local validation gates passed; stage only Batch 135/source files for `chore(content): accept source-audited batch 135` and leave unrelated dirty work untouched.
+
+---
+
 ## Batch 134 Coordination Update - 2026-05-14T06:45:00.000+08:00
 
 - Mode: internet-enabled local-first source-map/reservation pass.

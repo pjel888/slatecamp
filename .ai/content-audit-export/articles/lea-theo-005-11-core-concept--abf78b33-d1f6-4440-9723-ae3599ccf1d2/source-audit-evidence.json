@@ -1,0 +1,183 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-135-local-first",
+  "batch_number": 135,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:55:00.000+08:00",
+  "target": {
+    "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+    "slug": "lea-theo-005-11-core-concept",
+    "title": "Feminist Critiques of Architecture",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-11-core-concept--abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-11-core-concept--abf78b33-d1f6-4440-9723-ae3599ccf1d2/question-edits",
+    "linked_questions": 12,
+    "question_edits": 12,
+    "normalized_sha256": "sha256:3afdd01b93b1a7e5a4fd0f0b088197d7fad84be0450d45166dfb3e8237e8b77e",
+    "original_sha256": "sha256:83c2f17186a5756faff82933a39799461609f8a881f5880308dd8586dfb9f473",
+    "candidate_sha256": "sha256:3afdd01b93b1a7e5a4fd0f0b088197d7fad84be0450d45166dfb3e8237e8b77e"
+  },
+  "local_source_gate": {
+    "status": "PASS",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus refined conversion under 002_Raw-Conversion-Layer",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "claims_cite_local_capture_hash": true,
+    "official_web_claims_captured_locally_first": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-005-11-core-concept-raw-source-capture",
+        "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+        "label": "Batch 135 raw source capture - Feminist Critiques of Architecture",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Feminist Critiques of Architecture; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T06:55:00.000+08:00",
+        "updated_at": "2026-05-14T06:55:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+        "local_sha256": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md#sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+        "checked_markdown_lines": [
+          "Stanford Encyclopedia of Philosophy Feminist Philosophy of Architecture, https://plato.stanford.edu/entries/feminism-architecture/, captured 2026-05-14: feminist architectural theory examines architecture through gender, sex, race, class, embodiment, power, labor, and historical exclusion.",
+          "MIT Press The Grand Domestic Revolution, https://mitpress.mit.edu/9780262580557/the-grand-domestic-revolution/, captured 2026-05-14: Hayden studies material feminists and designs for homes, neighborhoods, and cities.",
+          "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place."
+        ],
+        "local_source_families": [
+          {
+            "label": "Theory",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+            "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+            "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+          }
+        ],
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-135-lea-theo-005-11-core-concept-refined-source-map",
+        "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+        "label": "Batch 135 refined source conversion - Feminist Critiques of Architecture",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 135 raw source capture for Feminist Critiques of Architecture.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T06:55:00.000+08:00",
+        "updated_at": "2026-05-14T06:55:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md",
+        "local_sha256": "sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md#sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+        "upstream_capture_sha256": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+        "checked_markdown_lines": [
+          "Stanford Encyclopedia of Philosophy Feminist Philosophy of Architecture, https://plato.stanford.edu/entries/feminism-architecture/, captured 2026-05-14: feminist architectural theory examines architecture through gender, sex, race, class, embodiment, power, labor, and historical exclusion.",
+          "MIT Press The Grand Domestic Revolution, https://mitpress.mit.edu/9780262580557/the-grand-domestic-revolution/, captured 2026-05-14: Hayden studies material feminists and designs for homes, neighborhoods, and cities.",
+          "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place."
+        ],
+        "local_source_families": [
+          {
+            "label": "Theory",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+            "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+            "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+          }
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-feminist-critiques-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": false,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "89c3d06a-9904-4be1-9518-45b7aa9678de",
+      "585c0572-433b-4579-b95d-9ee5ba8b5ce4",
+      "7f7550fd-7fd2-4e33-9422-cd5230f8dc52",
+      "73c56966-7a5e-4941-a46a-c6787756a619",
+      "740e7361-0334-469d-be51-767c96c30b1c",
+      "b18c7a00-2db4-43cd-b3bb-58e53c688a74",
+      "b5676f32-0d1d-4b79-921c-5ffc432b1c45",
+      "991a99c5-be15-42d1-b37f-a738c8b67d64",
+      "f0202fb4-e39c-4c6f-890d-a620863f6740",
+      "2e4ce628-94ef-481c-8d8f-31bbff019bf7",
+      "057789e9-9fe2-4ae9-9bec-7c54dc5ec122",
+      "b41c87b3-4c8f-40e8-b45d-72433c4730ca"
+    ],
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A barangay health center is checked for caregiving routes, safe waiting areas, toilets, privacy, staff visibility, and access for different bodies. The critique asks whose labor and safety the plan assumes."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-005-11-core-concept-b135-claim-01",
+      "claim_text": "Feminist Critiques of Architecture is limited to checked local Batch 135 source capture and refined conversion artifacts.",
+      "source_support": {
+        "source_ids": [
+          "batch-135-lea-theo-005-11-core-concept-raw-source-capture",
+          "batch-135-lea-theo-005-11-core-concept-refined-source-map"
+        ],
+        "local_source_families": [
+          {
+            "label": "Theory",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+            "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+            "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+          }
+        ],
+        "checked_locators": [
+          "Stanford Encyclopedia of Philosophy Feminist Philosophy of Architecture, https://plato.stanford.edu/entries/feminism-architecture/, captured 2026-05-14: feminist architectural theory examines architecture through gender, sex, race, class, embodiment, power, labor, and historical exclusion.",
+          "MIT Press The Grand Domestic Revolution, https://mitpress.mit.edu/9780262580557/the-grand-domestic-revolution/, captured 2026-05-14: Hayden studies material feminists and designs for homes, neighborhoods, and cities.",
+          "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place."
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "Stanford Encyclopedia of Philosophy Feminist Philosophy of Architecture, https://plato.stanford.edu/entries/feminism-architecture/, captured 2026-05-14: feminist architectural theory examines architecture through gender, sex, race, class, embodiment, power, labor, and historical exclusion.",
+    "MIT Press The Grand Domestic Revolution, https://mitpress.mit.edu/9780262580557/the-grand-domestic-revolution/, captured 2026-05-14: Hayden studies material feminists and designs for homes, neighborhoods, and cities.",
+    "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported statistics about women in practice, uncaptured architect biographies, and broad political claims not tied to spatial evidence are excluded."
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_required_after_content_generation",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "pending_compose_diff_validate",
+    "validate_gate": "pending_compose_diff_validate",
+    "ui_block_edits_gate": "pending_ui_block_validation"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_handoff": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

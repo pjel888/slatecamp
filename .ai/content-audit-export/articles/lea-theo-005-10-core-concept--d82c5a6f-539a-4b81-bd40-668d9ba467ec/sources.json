@@ -1,56 +1,86 @@
 {
   "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:146d04b56f2d622eda392ea6cd0af37a1d586aed20c25f3d9257e90a554586b4",
-  "source_count": 4,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "116faac1-17d4-49c3-a5b6-237b1042057e",
+      "source_id": "batch-135-lea-theo-005-10-core-concept-raw-source-capture",
       "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
-      "label": "Saussure, Ferdinand de. *Course in General Linguistics*. Translated by Roy Harris. Open Court, 1998",
+      "label": "Batch 135 raw source capture - Structuralism and Semiotics",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Structuralism and Semiotics; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:55:00.000+08:00",
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+      "local_sha256": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md#sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+      "checked_markdown_lines": [
+        "Britannica Semiotics, https://www.britannica.com/science/semiotics, captured 2026-05-14: semiotics studies signs and sign-using behavior; Saussure separates signifier/signified; Peirce classifies signs such as icon, index, and symbol.",
+        "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+        "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
     },
     {
-      "source_id": "1090dd04-5154-4f65-909f-d19bccdedc28",
+      "source_id": "batch-135-lea-theo-005-10-core-concept-refined-source-map",
       "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
-      "label": "Venturi, Robert. *Complexity and Contradiction in Architecture*. Museum of Modern Art Papers on Architecture No. 1, 1966",
+      "label": "Batch 135 refined source conversion - Structuralism and Semiotics",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion of the Batch 135 raw source capture for Structuralism and Semiotics.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "5b516905-0c3e-4b80-b446-f8721e7a58b2",
-      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
-      "label": "Venturi, Robert, and Denise Scott Brown. *Architecture as Signs and Systems: For a Mannerist Time*. Harvard University Press, 1976",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "7077a4ed-d53b-446e-9e8d-54e3d7902c72",
-      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
-      "label": "Rowe, Colin, and Fred Koetter. *Collage City*. MIT Press, 1978",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:55:00.000+08:00",
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md",
+      "local_sha256": "sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md#sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+      "upstream_capture_sha256": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+      "checked_markdown_lines": [
+        "Britannica Semiotics, https://www.britannica.com/science/semiotics, captured 2026-05-14: semiotics studies signs and sign-using behavior; Saussure separates signifier/signified; Peirce classifies signs such as icon, index, and symbol.",
+        "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+        "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
-  ]
+  ],
+  "sources_hash": "sha256:8942559b3ecac6b60ee2089bee799d424d93fb056740ccb82e2b2ef1360dad8d"
 }

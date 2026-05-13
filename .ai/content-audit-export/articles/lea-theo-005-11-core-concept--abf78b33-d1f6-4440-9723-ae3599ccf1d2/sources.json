@@ -1,56 +1,72 @@
 {
   "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:f52896340f990e2c4fa3aeec4b09b24c063db114c403c3363f19632919ad2393",
-  "source_count": 4,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "055df9ac-e5aa-451c-ac57-03d40442bda9",
+      "source_id": "batch-135-lea-theo-005-11-core-concept-raw-source-capture",
       "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
-      "label": "Hayden, Dolores. *The Grand Domestic Revolution: A History of Feminist Designs for American Homes, Neighborhoods, and Cities*. MIT Press, 1981",
+      "label": "Batch 135 raw source capture - Feminist Critiques of Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Feminist Critiques of Architecture; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:55:00.000+08:00",
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+      "local_sha256": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md#sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+      "checked_markdown_lines": [
+        "Stanford Encyclopedia of Philosophy Feminist Philosophy of Architecture, https://plato.stanford.edu/entries/feminism-architecture/, captured 2026-05-14: feminist architectural theory examines architecture through gender, sex, race, class, embodiment, power, labor, and historical exclusion.",
+        "MIT Press The Grand Domestic Revolution, https://mitpress.mit.edu/9780262580557/the-grand-domestic-revolution/, captured 2026-05-14: Hayden studies material feminists and designs for homes, neighborhoods, and cities.",
+        "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place."
+      ],
+      "local_source_families": [
+        {
+          "label": "Theory",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+        }
+      ],
+      "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
     },
     {
-      "source_id": "dfd42e24-766d-4782-9740-35a72907bca3",
+      "source_id": "batch-135-lea-theo-005-11-core-concept-refined-source-map",
       "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
-      "label": "Brown, Lori A. *Contested Spaces: Abortion Clinics, Women's Shelters, and Hospitals*. University of North Carolina Press, 2013",
+      "label": "Batch 135 refined source conversion - Feminist Critiques of Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion of the Batch 135 raw source capture for Feminist Critiques of Architecture.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "33bc239c-db26-4ea9-93a9-80fe0727f47d",
-      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
-      "label": "Brown, Lori A. (editor). *Feminist Practices: Interdisciplinary Approaches to Women in Architecture*. Routledge, 2011",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "eae92ed0-b106-4947-9cfa-ef3ec0b184c7",
-      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
-      "label": "Chakrabarty, Dipesh. *Provincializing Europe: Postcolonial Thought and Historical Difference*. Princeton University Press, 2000",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:55:00.000+08:00",
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md",
+      "local_sha256": "sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md#sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+      "upstream_capture_sha256": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+      "checked_markdown_lines": [
+        "Stanford Encyclopedia of Philosophy Feminist Philosophy of Architecture, https://plato.stanford.edu/entries/feminism-architecture/, captured 2026-05-14: feminist architectural theory examines architecture through gender, sex, race, class, embodiment, power, labor, and historical exclusion.",
+        "MIT Press The Grand Domestic Revolution, https://mitpress.mit.edu/9780262580557/the-grand-domestic-revolution/, captured 2026-05-14: Hayden studies material feminists and designs for homes, neighborhoods, and cities.",
+        "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place."
+      ],
+      "local_source_families": [
+        {
+          "label": "Theory",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
-  ]
+  ],
+  "sources_hash": "sha256:abef6e4f887775a2345093e8545916e360586d3593fa36a5776cd05c60798c54"
 }

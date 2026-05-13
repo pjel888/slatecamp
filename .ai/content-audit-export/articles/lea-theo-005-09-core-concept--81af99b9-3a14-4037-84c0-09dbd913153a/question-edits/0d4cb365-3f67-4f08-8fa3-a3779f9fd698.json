@@ -1,0 +1,60 @@
+{
+  "question_id": "0d4cb365-3f67-4f08-8fa3-a3779f9fd698",
+  "baseline_hash": "sha256:7f31eb0f51625fd469b9daf7c6406ba52a24a85bfd6b6ac6072e8bb7becbed28",
+  "action": "replace",
+  "reason": "source-audited-article-batch-135-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Critical Regionalism.",
+  "approved_by": "codex-local-first-batch-135",
+  "approved_at": "2026-05-14T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+    "parent_article_slug": "lea-theo-005-09-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md#sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md#sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15",
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-005-09-core-concept-raw-source-capture",
+        "label": "Batch 135 raw source capture - Critical Regionalism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md",
+        "sha256": "sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501"
+      },
+      {
+        "source_id": "batch-135-lea-theo-005-09-core-concept-refined-source-map",
+        "label": "Batch 135 refined source conversion - Critical Regionalism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md",
+        "sha256": "sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 135 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which answer best fits LEA application?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Copy an old regional form as nostalgic costume without testing present-day conditions."
+      },
+      {
+        "id": "b",
+        "text": "Use a placeless universal style that ignores climate, material logic, culture, and site."
+      },
+      {
+        "id": "c",
+        "text": "Treat critical regionalism as a building-code rule or legal citation."
+      },
+      {
+        "id": "d",
+        "text": "Identify whether the building responds to place, culture, climate, and materials instead of using region as decoration."
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "Identify whether the building responds to place, culture, climate, and materials instead of using region as decoration. This stays inside the Batch 135 local source map for Critical Regionalism.",
+      "takeaway": "Use the local Batch 135 source capture and refined conversion for Critical Regionalism; avoid unsupported chronology, exact lists, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md#sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md#sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15"
+    },
+    "explanation": "Identify whether the building responds to place, culture, climate, and materials instead of using region as decoration. Supported by Batch 135 local source artifacts for Critical Regionalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md#sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md#sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md#sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md#sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15"
+  },
+  "batch_question_template_index": 7
+}

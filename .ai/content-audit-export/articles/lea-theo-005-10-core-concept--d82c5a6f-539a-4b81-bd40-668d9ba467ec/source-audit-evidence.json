@@ -1,0 +1,203 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-135-local-first",
+  "batch_number": 135,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:55:00.000+08:00",
+  "target": {
+    "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+    "slug": "lea-theo-005-10-core-concept",
+    "title": "Structuralism and Semiotics",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-10-core-concept--d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-10-core-concept--d82c5a6f-539a-4b81-bd40-668d9ba467ec/question-edits",
+    "linked_questions": 11,
+    "question_edits": 11,
+    "normalized_sha256": "sha256:9ff90f146d78408d8608be3e932dacf627ea919a32c5ff26b024ac85ecf23b8a",
+    "original_sha256": "sha256:4535403d4d37be152fc8c080a978352cdfa816fea8763f8d3b1006a88ac55795",
+    "candidate_sha256": "sha256:9ff90f146d78408d8608be3e932dacf627ea919a32c5ff26b024ac85ecf23b8a"
+  },
+  "local_source_gate": {
+    "status": "PASS",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus refined conversion under 002_Raw-Conversion-Layer",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "claims_cite_local_capture_hash": true,
+    "official_web_claims_captured_locally_first": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-005-10-core-concept-raw-source-capture",
+        "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+        "label": "Batch 135 raw source capture - Structuralism and Semiotics",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Structuralism and Semiotics; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T06:55:00.000+08:00",
+        "updated_at": "2026-05-14T06:55:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+        "local_sha256": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md#sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+        "checked_markdown_lines": [
+          "Britannica Semiotics, https://www.britannica.com/science/semiotics, captured 2026-05-14: semiotics studies signs and sign-using behavior; Saussure separates signifier/signified; Peirce classifies signs such as icon, index, and symbol.",
+          "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+          "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-135-lea-theo-005-10-core-concept-refined-source-map",
+        "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+        "label": "Batch 135 refined source conversion - Structuralism and Semiotics",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 135 raw source capture for Structuralism and Semiotics.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T06:55:00.000+08:00",
+        "updated_at": "2026-05-14T06:55:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md",
+        "local_sha256": "sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md#sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+        "upstream_capture_sha256": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+        "checked_markdown_lines": [
+          "Britannica Semiotics, https://www.britannica.com/science/semiotics, captured 2026-05-14: semiotics studies signs and sign-using behavior; Saussure separates signifier/signified; Peirce classifies signs such as icon, index, and symbol.",
+          "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+          "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-structuralism-semiotics",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": false,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "25d5ff5a-d385-4b9e-8ae4-dc59a112de51",
+      "a90b9096-c2fa-4fbc-8e8e-c0902b69f767",
+      "cb110826-3cc5-4a87-9266-483c9a5027a8",
+      "c8ebe93e-15b2-4062-b2a5-89c989de0d03",
+      "5979db94-b744-417f-97bd-428765f04eed",
+      "799efd36-ff86-4542-9e20-f6e9fffb65eb",
+      "0040878b-9c1a-4c1f-ad73-eda970e33a00",
+      "09c72926-d500-42a2-b932-91379b6a6dfb",
+      "9a4374ae-c6d0-4832-91f6-55430b36dcd1",
+      "de34d665-a5d2-447c-94b5-2d99104c0374",
+      "ad8cbaf7-7a35-4e52-9004-86044a39833d"
+    ],
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A transit terminal is evaluated for legible entrances, route hierarchy, civic symbols, and clear wayfinding. The best answer asks how users read the building as a system of signs, not whether it merely has decorative graphics."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-005-10-core-concept-b135-claim-01",
+      "claim_text": "Structuralism and Semiotics is limited to checked local Batch 135 source capture and refined conversion artifacts.",
+      "source_support": {
+        "source_ids": [
+          "batch-135-lea-theo-005-10-core-concept-raw-source-capture",
+          "batch-135-lea-theo-005-10-core-concept-refined-source-map"
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "checked_locators": [
+          "Britannica Semiotics, https://www.britannica.com/science/semiotics, captured 2026-05-14: semiotics studies signs and sign-using behavior; Saussure separates signifier/signified; Peirce classifies signs such as icon, index, and symbol.",
+          "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+          "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "Britannica Semiotics, https://www.britannica.com/science/semiotics, captured 2026-05-14: semiotics studies signs and sign-using behavior; Saussure separates signifier/signified; Peirce classifies signs such as icon, index, and symbol.",
+    "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+    "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported Saussure chapter details, exhaustive semiotic taxonomies, and unverified claims about every Venturi/Scott Brown text are excluded."
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_required_after_content_generation",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "pending_compose_diff_validate",
+    "validate_gate": "pending_compose_diff_validate",
+    "ui_block_edits_gate": "pending_ui_block_validation"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_handoff": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

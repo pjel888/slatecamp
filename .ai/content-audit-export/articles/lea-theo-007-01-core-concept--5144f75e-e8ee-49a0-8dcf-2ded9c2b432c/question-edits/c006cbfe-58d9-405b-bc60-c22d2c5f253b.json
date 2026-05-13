@@ -1,0 +1,60 @@
+{
+  "question_id": "c006cbfe-58d9-405b-bc60-c22d2c5f253b",
+  "baseline_hash": "sha256:dce070075dfaddb2e60ecb72b572106d15aae1f1182c39d91e5803c7cf4ea6cc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-135-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Architectural Modernism.",
+  "approved_by": "codex-local-first-batch-135",
+  "approved_at": "2026-05-14T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+    "parent_article_slug": "lea-theo-007-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.source-capture.md#sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.refined.md#sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352",
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-007-01-core-concept-raw-source-capture",
+        "label": "Batch 135 raw source capture - Architectural Modernism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.source-capture.md",
+        "sha256": "sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874"
+      },
+      {
+        "source_id": "batch-135-lea-theo-007-01-core-concept-refined-source-map",
+        "label": "Batch 135 refined source conversion - Architectural Modernism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.refined.md",
+        "sha256": "sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 135 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the safest comparison move?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separate modernist, postmodern, critical regionalist, deconstructive, and phenomenological claims by source-supported cues."
+      },
+      {
+        "id": "b",
+        "text": "Treat all twentieth-century movements as one identical modernist style."
+      },
+      {
+        "id": "c",
+        "text": "Identify the movement by surface color or fashion instead of source-supported logic."
+      },
+      {
+        "id": "d",
+        "text": "Import unsupported parametric chronology or exhaustive genealogy into this local-first pass."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Separate modernist, postmodern, critical regionalist, deconstructive, and phenomenological claims by source-supported cues. This stays inside the Batch 135 local source map for Architectural Modernism.",
+      "takeaway": "Use the local Batch 135 source capture and refined conversion for Architectural Modernism; avoid unsupported chronology, exact lists, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.source-capture.md#sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.refined.md#sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352"
+    },
+    "explanation": "Separate modernist, postmodern, critical regionalist, deconstructive, and phenomenological claims by source-supported cues. Supported by Batch 135 local source artifacts for Architectural Modernism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.source-capture.md#sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.refined.md#sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.source-capture.md#sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.refined.md#sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352"
+  },
+  "batch_question_template_index": 10
+}

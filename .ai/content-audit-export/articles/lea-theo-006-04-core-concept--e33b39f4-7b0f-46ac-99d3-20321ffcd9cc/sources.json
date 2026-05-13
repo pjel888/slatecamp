@@ -1,44 +1,88 @@
 {
   "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:c8aa574c749b261f8c34f5de4da1f09e7b55fa2a1aea497b5cb4fc432b8733c5",
-  "source_count": 3,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "a23cf8d8-2df3-4c53-b8dd-324e6cf89399",
+      "source_id": "batch-135-lea-theo-006-04-core-concept-raw-source-capture",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
-      "label": "The Hyatt Foundation. *The Pritzker Architecture Prize*. pritzkerprize.com, 1979–2026. Frampton, Kenneth. *Modern Architecture: A Critical History*. 4th ed",
+      "label": "Batch 135 raw source capture - The Pritzker Prize and Modern Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for The Pritzker Prize and Modern Architecture; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:55:00.000+08:00",
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md",
+      "local_sha256": "sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f",
+      "checked_markdown_lines": [
+        "Pritzker Prize About, https://www.pritzkerprize.com/about, captured 2026-05-14: the prize was founded by Jay and Cindy Pritzker through the Hyatt Foundation in 1979 and honors a living architect whose work contributes to humanity and the built environment.",
+        "TOA 5 lines 432-438 identify Philip Johnson, MoMA role, AIA Gold Medal, and Pritzker Architecture Prize in 1979.",
+        "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+        "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
     },
     {
-      "source_id": "eda3e9b1-996d-49b1-afeb-64ef3b3a7582",
+      "source_id": "batch-135-lea-theo-006-04-core-concept-refined-source-map",
       "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
-      "label": "Thames & Hudson, 2007. Ching, Francis D.K. *Architecture: Form, Space, and Order*. 4th ed",
+      "label": "Batch 135 refined source conversion - The Pritzker Prize and Modern Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion of the Batch 135 raw source capture for The Pritzker Prize and Modern Architecture.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "88725ced-1202-42e1-904d-07345ccb2eeb",
-      "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
-      "label": "Wiley, 2014. \"Smiljan Radić Clarke Wins 2026 Pritzker Architecture Prize.\" *Architectural Record*, March 2026",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:55:00.000+08:00",
+      "updated_at": "2026-05-14T06:55:00.000+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md",
+      "local_sha256": "sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md",
+      "upstream_capture_sha256": "sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f",
+      "checked_markdown_lines": [
+        "Pritzker Prize About, https://www.pritzkerprize.com/about, captured 2026-05-14: the prize was founded by Jay and Cindy Pritzker through the Hyatt Foundation in 1979 and honors a living architect whose work contributes to humanity and the built environment.",
+        "TOA 5 lines 432-438 identify Philip Johnson, MoMA role, AIA Gold Medal, and Pritzker Architecture Prize in 1979.",
+        "TOA 5 lines 122-146, 246-262, 548-558, 608-612, and 648-787 support Wright, Le Corbusier, Venturi, Gropius, Mies, Sullivan, Gehry, and related modern/postmodern quote anchors.",
+        "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
-  ]
+  ],
+  "sources_hash": "sha256:5b8f93b2469fdd5d4959f69ab28c988c81281f70c26ba1105c5cb415007e850d"
 }

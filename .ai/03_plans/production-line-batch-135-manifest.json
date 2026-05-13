@@ -1,0 +1,133 @@
+{
+  "batch_id": "source-audited-article-batch-135-local-first",
+  "batch_number": 135,
+  "generated_at": "2026-05-14T07:05:00.000+08:00",
+  "baseline_commit": "c1034cdff",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_pending",
+  "selection": {
+    "rule": "Next sorted sourceable residual Theory bundles after Batch 134 ending at lea-theo-005-08.",
+    "selected_slugs": [
+      "lea-theo-005-09-core-concept",
+      "lea-theo-005-10-core-concept",
+      "lea-theo-005-11-core-concept",
+      "lea-theo-006-04-core-concept",
+      "lea-theo-007-01-core-concept"
+    ],
+    "blocked_clusters": [],
+    "residual_queue_exhausted": false
+  },
+  "articles": [
+    {
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "slug": "lea-theo-005-09-core-concept",
+      "title": "Critical Regionalism",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-005-09-core-concept--81af99b9-3a14-4037-84c0-09dbd913153a",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "normalized_hash": "sha256:0a0dd8ffac0ce50490d898cab66340629ef21b91607a75fc47d8ec41ec6919b0",
+      "candidate_hash": "sha256:0a0dd8ffac0ce50490d898cab66340629ef21b91607a75fc47d8ec41ec6919b0",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md",
+      "source_capture_hash": "sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md",
+      "refined_source_map_hash": "sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15",
+      "diff_safe_to_push": true,
+      "scenario_status": "added_source_safe_scenario"
+    },
+    {
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "slug": "lea-theo-005-10-core-concept",
+      "title": "Structuralism and Semiotics",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-005-10-core-concept--d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "normalized_hash": "sha256:9ff90f146d78408d8608be3e932dacf627ea919a32c5ff26b024ac85ecf23b8a",
+      "candidate_hash": "sha256:9ff90f146d78408d8608be3e932dacf627ea919a32c5ff26b024ac85ecf23b8a",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+      "source_capture_hash": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md",
+      "refined_source_map_hash": "sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+      "diff_safe_to_push": true,
+      "scenario_status": "added_source_safe_scenario"
+    },
+    {
+      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "slug": "lea-theo-005-11-core-concept",
+      "title": "Feminist Critiques of Architecture",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-005-11-core-concept--abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "normalized_hash": "sha256:3afdd01b93b1a7e5a4fd0f0b088197d7fad84be0450d45166dfb3e8237e8b77e",
+      "candidate_hash": "sha256:3afdd01b93b1a7e5a4fd0f0b088197d7fad84be0450d45166dfb3e8237e8b77e",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+      "source_capture_hash": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md",
+      "refined_source_map_hash": "sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+      "diff_safe_to_push": true,
+      "scenario_status": "added_source_safe_scenario"
+    },
+    {
+      "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
+      "slug": "lea-theo-006-04-core-concept",
+      "title": "The Pritzker Prize and Modern Architecture",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-006-04-core-concept--e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:b6dc3ba84284572e5ff193156844c5bc5d5d5adfc2da0ebea8c0bbe077b402a4",
+      "candidate_hash": "sha256:b6dc3ba84284572e5ff193156844c5bc5d5d5adfc2da0ebea8c0bbe077b402a4",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md",
+      "source_capture_hash": "sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md",
+      "refined_source_map_hash": "sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
+      "diff_safe_to_push": true,
+      "scenario_status": "added_source_safe_scenario"
+    },
+    {
+      "article_id": "5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+      "slug": "lea-theo-007-01-core-concept",
+      "title": "Architectural Modernism",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-007-01-core-concept--5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:e3bc965c302561864b875c351141041013bbbe91e02d041d89aeb61844c571e9",
+      "candidate_hash": "sha256:e3bc965c302561864b875c351141041013bbbe91e02d041d89aeb61844c571e9",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.source-capture.md",
+      "source_capture_hash": "sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.refined.md",
+      "refined_source_map_hash": "sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352",
+      "diff_safe_to_push": true,
+      "scenario_status": "added_source_safe_scenario"
+    }
+  ],
+  "validation": {
+    "compose_diff_validate_passed": true,
+    "ui_block_validation_passed": true,
+    "scoped_json_parse_passed": true,
+    "marker_source_gap_scan_passed": true,
+    "source_hash_checks_passed": true,
+    "question_edit_count_passed": true,
+    "stale_compose_error_scan_passed": true,
+    "targeted_tests_passed": true,
+    "scoped_git_diff_check_passed": true
+  },
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "handoff": {
+    "intended_commit": "chore(content): accept source-audited batch 135",
+    "exact_stage_paths_file": ".ai/03_plans/batch-135-git-handoff-stage-paths.txt",
+    "git_index_blocker": null,
+    "no_supabase_or_deploy": true
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "batch_id": "source-audited-article-batch-135-local-first",
+  "generated_at": "2026-05-14T07:05:00.000+08:00",
+  "status": "passed_local_validation_git_handoff_pending",
+  "passed": true,
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+        "slug": "lea-theo-005-09-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+        "slug": "lea-theo-005-10-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+        "slug": "lea-theo-005-11-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
+        "slug": "lea-theo-006-04-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+        "slug": "lea-theo-007-01-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+        "slug": "lea-theo-005-09-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+        "slug": "lea-theo-005-10-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+        "slug": "lea-theo-005-11-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
+        "slug": "lea-theo-006-04-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+        "slug": "lea-theo-007-01-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "parsed_count": 105,
+    "failures": []
+  },
+  "placeholder_internal_marker_source_gap_scan": {
+    "passed": true,
+    "scanned_count": 79,
+    "matches": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md",
+        "expected": "sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501",
+        "actual": "sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md",
+        "expected": "sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15",
+        "actual": "sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-005-09-core-concept--81af99b9-3a14-4037-84c0-09dbd913153a/candidate.md",
+        "expected": "sha256:0a0dd8ffac0ce50490d898cab66340629ef21b91607a75fc47d8ec41ec6919b0",
+        "actual": "sha256:0a0dd8ffac0ce50490d898cab66340629ef21b91607a75fc47d8ec41ec6919b0",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+        "expected": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+        "actual": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md",
+        "expected": "sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+        "actual": "sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-005-10-core-concept--d82c5a6f-539a-4b81-bd40-668d9ba467ec/candidate.md",
+        "expected": "sha256:9ff90f146d78408d8608be3e932dacf627ea919a32c5ff26b024ac85ecf23b8a",
+        "actual": "sha256:9ff90f146d78408d8608be3e932dacf627ea919a32c5ff26b024ac85ecf23b8a",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+        "expected": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+        "actual": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md",
+        "expected": "sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+        "actual": "sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-005-11-core-concept--abf78b33-d1f6-4440-9723-ae3599ccf1d2/candidate.md",
+        "expected": "sha256:3afdd01b93b1a7e5a4fd0f0b088197d7fad84be0450d45166dfb3e8237e8b77e",
+        "actual": "sha256:3afdd01b93b1a7e5a4fd0f0b088197d7fad84be0450d45166dfb3e8237e8b77e",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md",
+        "expected": "sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f",
+        "actual": "sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md",
+        "expected": "sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
+        "actual": "sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-006-04-core-concept--e33b39f4-7b0f-46ac-99d3-20321ffcd9cc/candidate.md",
+        "expected": "sha256:b6dc3ba84284572e5ff193156844c5bc5d5d5adfc2da0ebea8c0bbe077b402a4",
+        "actual": "sha256:b6dc3ba84284572e5ff193156844c5bc5d5d5adfc2da0ebea8c0bbe077b402a4",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.source-capture.md",
+        "expected": "sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874",
+        "actual": "sha256:be38ce9b17385b585d96ce17b2bbf66b91e043efd6d4b97be0e10ae0f9d30874",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-007-01-core-concept-architectural-modernism-movement-sequence.refined.md",
+        "expected": "sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352",
+        "actual": "sha256:c13870fbca79da72600c454e1cb57726137db1cf691080e235737ff0303b1352",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-007-01-core-concept--5144f75e-e8ee-49a0-8dcf-2ded9c2b432c/candidate.md",
+        "expected": "sha256:e3bc965c302561864b875c351141041013bbbe91e02d041d89aeb61844c571e9",
+        "actual": "sha256:e3bc965c302561864b875c351141041013bbbe91e02d041d89aeb61844c571e9",
+        "passed": true
+      }
+    ]
+  },
+  "question_edit_count": {
+    "passed": true,
+    "expected": 54,
+    "actual": 54,
+    "answer_key_changes": 0,
+    "articles": [
+      {
+        "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+        "slug": "lea-theo-005-09-core-concept",
+        "linked_questions": 11,
+        "question_edits": 11,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+        "slug": "lea-theo-005-10-core-concept",
+        "linked_questions": 11,
+        "question_edits": 11,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+        "slug": "lea-theo-005-11-core-concept",
+        "linked_questions": 12,
+        "question_edits": 12,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
+        "slug": "lea-theo-006-04-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+        "slug": "lea-theo-007-01-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "stale_files": []
+  },
+  "targeted_tests": {
+    "passed": true,
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts"
+  },
+  "scoped_git_diff_check": {
+    "passed": true,
+    "command": "git diff --check -- <batch-135-stage-paths>",
+    "output": ""
+  }
+}

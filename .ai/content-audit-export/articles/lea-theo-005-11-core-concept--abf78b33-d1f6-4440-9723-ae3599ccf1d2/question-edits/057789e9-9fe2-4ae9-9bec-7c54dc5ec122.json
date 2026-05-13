@@ -1,0 +1,60 @@
+{
+  "question_id": "057789e9-9fe2-4ae9-9bec-7c54dc5ec122",
+  "baseline_hash": "sha256:25c4adb60d6481e76796392d1bdc27cf7337e690d3fe0f68b8162e5f07fc2aeb",
+  "action": "replace",
+  "reason": "source-audited-article-batch-135-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Feminist Critiques of Architecture.",
+  "approved_by": "codex-local-first-batch-135",
+  "approved_at": "2026-05-14T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+    "parent_article_slug": "lea-theo-005-11-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md#sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md#sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec",
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-005-11-core-concept-raw-source-capture",
+        "label": "Batch 135 raw source capture - Feminist Critiques of Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md",
+        "sha256": "sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4"
+      },
+      {
+        "source_id": "batch-135-lea-theo-005-11-core-concept-refined-source-map",
+        "label": "Batch 135 refined source conversion - Feminist Critiques of Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md",
+        "sha256": "sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 135 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What should the student identify first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat feminist critique as a facade style or color palette."
+      },
+      {
+        "id": "b",
+        "text": "Ignore care work, safety, privacy, toilets, circulation, visibility, and access."
+      },
+      {
+        "id": "c",
+        "text": "The user group, labor pattern, body condition, or power relation that the spatial decision affects."
+      },
+      {
+        "id": "d",
+        "text": "Use uncaptured statistics or biographies instead of checked spatial evidence."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "correct": "The user group, labor pattern, body condition, or power relation that the spatial decision affects. This stays inside the Batch 135 local source map for Feminist Critiques of Architecture.",
+      "takeaway": "Use the local Batch 135 source capture and refined conversion for Feminist Critiques of Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md#sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md#sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec"
+    },
+    "explanation": "The user group, labor pattern, body condition, or power relation that the spatial decision affects. Supported by Batch 135 local source artifacts for Feminist Critiques of Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md#sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md#sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.source-capture.md#sha256:356b9ab4bf35b004732f1e861b8ce974df8449b4ff094898a72b91c6d9578ba4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-11-core-concept-feminist-critiques-architecture.refined.md#sha256:64e6709d58900383d784b677d486ce7ba4814f172dffe3207b4960a06572b7ec"
+  },
+  "batch_question_template_index": 11
+}

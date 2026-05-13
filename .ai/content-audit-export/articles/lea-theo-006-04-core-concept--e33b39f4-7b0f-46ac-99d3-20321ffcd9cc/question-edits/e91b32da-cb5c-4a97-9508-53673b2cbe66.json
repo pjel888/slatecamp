@@ -1,0 +1,60 @@
+{
+  "question_id": "e91b32da-cb5c-4a97-9508-53673b2cbe66",
+  "baseline_hash": "sha256:fd6ad3619d8c095876fd2398e7ff122d37c8f5ce71dba28003d14ea02a09a83c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-135-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for The Pritzker Prize and Modern Architecture.",
+  "approved_by": "codex-local-first-batch-135",
+  "approved_at": "2026-05-14T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "e33b39f4-7b0f-46ac-99d3-20321ffcd9cc",
+    "parent_article_slug": "lea-theo-006-04-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c",
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-006-04-core-concept-raw-source-capture",
+        "label": "Batch 135 raw source capture - The Pritzker Prize and Modern Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md",
+        "sha256": "sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f"
+      },
+      {
+        "source_id": "batch-135-lea-theo-006-04-core-concept-refined-source-map",
+        "label": "Batch 135 refined source conversion - The Pritzker Prize and Modern Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md",
+        "sha256": "sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 135 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why should current-year winner trivia be avoided here?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is time-sensitive and outside the stable concept boundary needed for this local-first rewrite."
+      },
+      {
+        "id": "b",
+        "text": "Treat the Pritzker Prize as an architectural movement or style."
+      },
+      {
+        "id": "c",
+        "text": "Answer from latest-winner trivia without verifying a current source."
+      },
+      {
+        "id": "d",
+        "text": "Use the prize as proof of a design concept without reading the work or idea named by the prompt."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "It is time-sensitive and outside the stable concept boundary needed for this local-first rewrite. This stays inside the Batch 135 local source map for The Pritzker Prize and Modern Architecture.",
+      "takeaway": "Use the local Batch 135 source capture and refined conversion for The Pritzker Prize and Modern Architecture; avoid unsupported chronology, exact lists, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
+    },
+    "explanation": "It is time-sensitive and outside the stable concept boundary needed for this local-first rewrite. Supported by Batch 135 local source artifacts for The Pritzker Prize and Modern Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.source-capture.md#sha256:5cced12aeab9bf2bc720b7daca684ab8eb796069cfc89e5638e90c1dd71de22f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-006-04-core-concept-pritzker-prize-modern-architecture.refined.md#sha256:7c451bdf5dbdc360bae6b960d1ce1bc8ac1eaeb7d760edde5eb2c89fcf0ddc8c"
+  },
+  "batch_question_template_index": 3
+}

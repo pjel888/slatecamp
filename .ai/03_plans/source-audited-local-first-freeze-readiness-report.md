@@ -1,3 +1,13 @@
+## Batch 135 Freeze Readiness - 2026-05-14
+
+- Status: passed_local_validation_git_handoff_pending.
+- Source readiness: official web locators plus local TOA/Quotes theory locators are captured locally and refined for all five selected Theory clusters.
+- Question readiness: 54/54 linked question edits generated and applied locally with zero answer-key changes.
+- Known source-sensitive corrections: narrowed critical regionalism, semiotics, feminist critique, Pritzker, and modernism-sequence claims to checked source maps.
+- Freeze condition: local validation gates passed; acceptance requires staging only Batch 135 paths, cached diff checks, commit, and push. No Supabase/deploy/prod DB/main merge was attempted.
+
+---
+
 ## Batch 134 Freeze Readiness - 2026-05-14
 
 - Status: passed_local_validation_git_index_blocked_handoff.

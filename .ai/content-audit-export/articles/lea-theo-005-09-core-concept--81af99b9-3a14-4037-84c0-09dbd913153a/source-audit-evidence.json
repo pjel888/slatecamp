@@ -1,0 +1,232 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-135-local-first",
+  "batch_number": 135,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:55:00.000+08:00",
+  "target": {
+    "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+    "slug": "lea-theo-005-09-core-concept",
+    "title": "Critical Regionalism",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-09-core-concept--81af99b9-3a14-4037-84c0-09dbd913153a",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-09-core-concept--81af99b9-3a14-4037-84c0-09dbd913153a/question-edits",
+    "linked_questions": 11,
+    "question_edits": 11,
+    "normalized_sha256": "sha256:0a0dd8ffac0ce50490d898cab66340629ef21b91607a75fc47d8ec41ec6919b0",
+    "original_sha256": "sha256:062ae4a283cac8d3f92a3c77bf48860c83e99a62c39cd2de32725cc922e85b88",
+    "candidate_sha256": "sha256:0a0dd8ffac0ce50490d898cab66340629ef21b91607a75fc47d8ec41ec6919b0"
+  },
+  "local_source_gate": {
+    "status": "PASS",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus refined conversion under 002_Raw-Conversion-Layer",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "claims_cite_local_capture_hash": true,
+    "official_web_claims_captured_locally_first": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-005-09-core-concept-raw-source-capture",
+        "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+        "label": "Batch 135 raw source capture - Critical Regionalism",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Critical Regionalism; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T06:55:00.000+08:00",
+        "updated_at": "2026-05-14T06:55:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md",
+        "local_sha256": "sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md#sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501",
+        "checked_markdown_lines": [
+          "theory.md lines 257-260 define cultural concepts and Critical Regionalism as factoring cultural variations and contextual realities.",
+          "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place.",
+          "theory.md lines 326-328 map proponents and concepts including Bauhaus/Gropius, Organic Architecture/Wright, Post-Modernism/Venturi, Critical Regionalism/Tzonis-Lefaivre-Frampton, Deconstruction/Derrida, and Phenomenology/Place.",
+          "TOA 5 lines 226-232 identify Tange examples and distinguish modernism with traditional Japanese forms from later abstract international style.",
+          "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+        ],
+        "local_source_families": [
+          {
+            "label": "Theory",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+            "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+            "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+          },
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-135-lea-theo-005-09-core-concept-refined-source-map",
+        "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+        "label": "Batch 135 refined source conversion - Critical Regionalism",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 135 raw source capture for Critical Regionalism.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T06:55:00.000+08:00",
+        "updated_at": "2026-05-14T06:55:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md",
+        "local_sha256": "sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.refined.md#sha256:36c85cdfee39c59fce059ee35bd8804b40c283b9b44aae949b0aba3d74884e15",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-09-core-concept-critical-regionalism.source-capture.md",
+        "upstream_capture_sha256": "sha256:32ced7b66a9481fc37670238483f949664be4ebfb6b4b5c849272d7980f9c501",
+        "checked_markdown_lines": [
+          "theory.md lines 257-260 define cultural concepts and Critical Regionalism as factoring cultural variations and contextual realities.",
+          "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place.",
+          "theory.md lines 326-328 map proponents and concepts including Bauhaus/Gropius, Organic Architecture/Wright, Post-Modernism/Venturi, Critical Regionalism/Tzonis-Lefaivre-Frampton, Deconstruction/Derrida, and Phenomenology/Place.",
+          "TOA 5 lines 226-232 identify Tange examples and distinguish modernism with traditional Japanese forms from later abstract international style.",
+          "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+        ],
+        "local_source_families": [
+          {
+            "label": "Theory",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+            "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+            "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+          },
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-critical-regionalism",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": false,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "e9977585-95b1-49dc-88bf-136ceaabb616",
+      "eb47156c-6bfc-47b1-a40e-1b96c018c684",
+      "0df25d5f-1b4f-486c-bc63-bd298d0364e1",
+      "13eb4e90-f772-49ba-9727-e51abdd931ec",
+      "1c13276b-f0c5-43d3-9363-31e1af71baed",
+      "74ddc566-9777-4776-be72-3634382ac4fc",
+      "0d4cb365-3f67-4f08-8fa3-a3779f9fd698",
+      "52ecfcef-ef76-4513-ac1e-49073a62cc96",
+      "5539cf2c-098b-437e-9dcb-55db7b159182",
+      "facf8f6f-2b62-4293-86b0-860a776f9653",
+      "4ed55fef-1c0c-485b-8b35-d586df0107dd"
+    ],
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A provincial library is reviewed for shaded public edges, local construction capacity, climate fit, and civic memory. The critic rewards context-aware modern design, not nostalgic copying or placeless glass-box repetition."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-005-09-core-concept-b135-claim-01",
+      "claim_text": "Critical Regionalism is limited to checked local Batch 135 source capture and refined conversion artifacts.",
+      "source_support": {
+        "source_ids": [
+          "batch-135-lea-theo-005-09-core-concept-raw-source-capture",
+          "batch-135-lea-theo-005-09-core-concept-refined-source-map"
+        ],
+        "local_source_families": [
+          {
+            "label": "Theory",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+            "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+            "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+          },
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "checked_locators": [
+          "theory.md lines 257-260 define cultural concepts and Critical Regionalism as factoring cultural variations and contextual realities.",
+          "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place.",
+          "theory.md lines 326-328 map proponents and concepts including Bauhaus/Gropius, Organic Architecture/Wright, Post-Modernism/Venturi, Critical Regionalism/Tzonis-Lefaivre-Frampton, Deconstruction/Derrida, and Phenomenology/Place.",
+          "TOA 5 lines 226-232 identify Tange examples and distinguish modernism with traditional Japanese forms from later abstract international style.",
+          "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "theory.md lines 257-260 define cultural concepts and Critical Regionalism as factoring cultural variations and contextual realities.",
+    "theory.md lines 281-304 summarize modernism/International Style, postmodernism, critical regionalism, deconstruction, and phenomenology/place.",
+    "theory.md lines 326-328 map proponents and concepts including Bauhaus/Gropius, Organic Architecture/Wright, Post-Modernism/Venturi, Critical Regionalism/Tzonis-Lefaivre-Frampton, Deconstruction/Derrida, and Phenomenology/Place.",
+    "TOA 5 lines 226-232 identify Tange examples and distinguish modernism with traditional Japanese forms from later abstract international style.",
+    "Quotes (1) lines 13-87, 127-129, and 401-403 preserve Le Corbusier, Mies, Venturi, Sullivan, Wright, Gropius, and built-work quote anchors."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported exact six-point Frampton lists, unsourced Doshi/Fathy/Correa building details, and broad postcolonial claims beyond the checked local locators are excluded."
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_required_after_content_generation",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "pending_compose_diff_validate",
+    "validate_gate": "pending_compose_diff_validate",
+    "ui_block_edits_gate": "pending_ui_block_validation"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_handoff": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

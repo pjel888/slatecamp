@@ -1,0 +1,60 @@
+{
+  "question_id": "c8ebe93e-15b2-4062-b2a5-89c989de0d03",
+  "baseline_hash": "sha256:0e5f8e67be4d381a080e2692ff0b8358fca9c59d1a1c3fc722db403a86fc9419",
+  "action": "replace",
+  "reason": "source-audited-article-batch-135-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Structuralism and Semiotics.",
+  "approved_by": "codex-local-first-batch-135",
+  "approved_at": "2026-05-14T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+    "parent_article_slug": "lea-theo-005-10-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md#sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md#sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8",
+    "checked_sources": [
+      {
+        "source_id": "batch-135-lea-theo-005-10-core-concept-raw-source-capture",
+        "label": "Batch 135 raw source capture - Structuralism and Semiotics",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md",
+        "sha256": "sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c"
+      },
+      {
+        "source_id": "batch-135-lea-theo-005-10-core-concept-refined-source-map",
+        "label": "Batch 135 refined source conversion - Structuralism and Semiotics",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md",
+        "sha256": "sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 135 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which claim is too broad for this pass?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat every graphic or ornament as meaningful without checking the spatial system."
+      },
+      {
+        "id": "b",
+        "text": "Reduce semiotics to a famous-name recall question with no sign or user interpretation."
+      },
+      {
+        "id": "c",
+        "text": "Replace sign, system, and meaning with an unrelated legal or structural calculation."
+      },
+      {
+        "id": "d",
+        "text": "A complete theory of every Saussure or Peirce category in architectural practice."
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "A complete theory of every Saussure or Peirce category in architectural practice. This stays inside the Batch 135 local source map for Structuralism and Semiotics.",
+      "takeaway": "Use the local Batch 135 source capture and refined conversion for Structuralism and Semiotics; avoid unsupported chronology, exact lists, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md#sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md#sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8"
+    },
+    "explanation": "A complete theory of every Saussure or Peirce category in architectural practice. Supported by Batch 135 local source artifacts for Structuralism and Semiotics: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md#sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md#sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.source-capture.md#sha256:f0ef5537f7e45d37f8a5d3c60826b9101d7b91ebea5a71afc06b4b80c5142a0c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-135/lea-theo-005-10-core-concept-structuralism-semiotics.refined.md#sha256:9d32d978c9161db1f165286de59526d179e749a5c47adc115c6cd7dfcd82d3f8"
+  },
+  "batch_question_template_index": 4
+}
