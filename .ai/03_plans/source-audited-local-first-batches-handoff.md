@@ -1,3 +1,44 @@
+# Batch 112 Local-First Handoff Update
+
+Last updated: 2026-05-13T18:08:00+08:00
+
+## Current State
+
+- Latest local-first production-line batch prepared: Batch 112
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 112: a74335101
+- Previous accepted Batch 111 commit: a74335101
+- Batch 112 local artifacts: pass
+- Git gate: real `.git/index.lock` writes are blocked; temporary-index cached diff passed and a temporary commit object was created, but push failed because `github.com` could not be resolved. Commit/push remains pending from an environment with writable `.git/index` access and GitHub network resolution.
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 112 Selection
+
+- lea-prac-eth-003-core-concept (9bc92dcd-8cce-4970-9111-13e21a72fb68)
+- lea-prac-eth-004-core-concept (cd6c1a20-eee6-4475-b0cc-239897d3f4d7)
+- lea-prac-eth-005-core-concept (504b1844-1db1-44f8-9aa9-5b78705ca37e)
+- lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy (bceaa05b-1eaa-4369-a29c-fbd8aef6937b)
+- lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality (92d4ab9e-b544-4812-96b7-72ca589f102c)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-112-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-112-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-112-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-112-manifest.json`
+- QA memo: `.ai/03_plans/batch-112-independent-quality-review.md`
+
+## Preserved Final-Depth Items
+
+- Keep THIN_NEEDS_EXPANSION and scenario/source-primary findings in the final remediation plan.
+- ETH-003 through ETH-007 remain source-primary against UAP Code of Ethics; do not restore PRBoA discipline examples, exact percentage-credit formulas, or broader bias standards without local primary sources.
+
+## Batch 112 Next Batch
+
+After Batch 112 is committed and pushed, continue with Batch 113 using the next eligible fixed/manifest articles not selected in accepted Batches 087-112. Apply the same local-first gates, question-edit requirement, QA memo requirement, commit, push, and automatic continuation behavior.
+
+---
+
 # Batch 111 Local-First Handoff Update
 
 Last updated: 2026-05-13T16:20:41+08:00

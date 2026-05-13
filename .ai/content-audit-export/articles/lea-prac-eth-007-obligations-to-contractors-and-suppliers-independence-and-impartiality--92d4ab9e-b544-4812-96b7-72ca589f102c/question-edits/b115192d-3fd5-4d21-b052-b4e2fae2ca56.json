@@ -2,52 +2,53 @@
   "question_id": "b115192d-3fd5-4d21-b052-b4e2fae2ca56",
   "baseline_hash": "sha256:ea0cccc261ccaa080481f31491cd63a66b37cebd05cde230a9a2e846d507935b",
   "action": "replace",
-  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
-  "approved_by": "codex-local-source-audit-batch-018",
-  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
     "parent_article_slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
+    "source_locator": "UAP Code of Ethics lines 64-68",
     "checked_markdown_lines": [
-      "raw markdown lines 66-89"
+      "UAP Code of Ethics lines 60-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+        "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "What is the common ethical thread in the contractor and supplier provisions?",
+    "text": "What should the architect avoid when contract documents contain an oversight or error?",
     "options": [
       {
         "id": "a",
-        "text": "The architect must remain independent and avoid obligations that compromise fair judgment"
+        "text": "Knowingly making the contractor correct the architect oversight or error to the contractor financial disadvantage"
       },
       {
         "id": "b",
-        "text": "The architect must always prefer suppliers over contractors"
+        "text": "Providing clear information"
       },
       {
         "id": "c",
-        "text": "The architect may accept any benefit below a fixed peso threshold"
+        "text": "Inspecting completed conforming work"
       },
       {
         "id": "d",
-        "text": "The architect should avoid issuing certificates for conforming work"
+        "text": "Rejecting nonconforming work"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The contractor and supplier provisions protect fair judgment by requiring contractor fairness and barring benefits or obligations that compromise client interests or professional opinion.",
-    "explanation": "The contractor and supplier provisions protect fair judgment by requiring contractor fairness and barring benefits or obligations that compromise client interests or professional opinion.",
-    "code_citation": "UAP Document Code of Ethics, lines 66-89",
-    "bloom_level": "analyze",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 3-b controls this contractor-protection issue.",
+      "takeaway": "Section 3-b controls this contractor-protection issue."
+    },
+    "explanation": "Use UAP Code of Ethics lines 64-68 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 64-68",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
-    "difficulty": 0.7,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-007-007"
+    "model_id": "BATCH-112-lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-010"
   }
 }

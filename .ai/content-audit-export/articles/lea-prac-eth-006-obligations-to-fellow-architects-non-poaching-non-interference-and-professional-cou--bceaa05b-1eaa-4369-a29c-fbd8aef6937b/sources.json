@@ -1,28 +1,32 @@
 {
   "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d21710fd329f063dd101d42c0fac3a12a1939ec93e89e40d967e5b4afade4bb5",
+  "sources_hash": "sha256:4139c2d4650dcc94a8db0eab4609e7fb1783e368c3d8b36d6a74f845949604e6",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "uap-code-of-ethics-lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
+      "source_id": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy-uap-code-of-ethics-local",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
-      "label": "UAP Document Code of Ethics - Obligations to Fellow Architects",
+      "label": "UAP Document Code of Ethics",
       "url": null,
-      "source_type": "raw_pdf_and_markdown_source_audit",
-      "description": "Batch 018 local-first source audit; UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118.",
+      "source_type": "professional_ethics_pdf",
+      "description": "Checked for fellow-architect obligations: endowed commissions, written notice before takeover, termination and compensation, additions/remodeling notice, claim limitation, heritage preservation, non-injurious conduct, and information sharing.",
       "is_verified": true,
-      "sort_order": 0,
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "checked_markdown_lines": [
-        "raw markdown lines 92-118"
-      ],
-      "source_locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118",
-      "local_source_audit_batch": "source-audited-article-batch-018-local-first",
-      "audited_at": "2026-05-10T23:42:00.000+08:00"
+      "sort_order": 1,
+      "created_at": "2026-05-13T18:08:00+08:00",
+      "updated_at": "2026-05-13T18:08:00+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Board of Architecture and PRC approved ethics source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Document Code of Ethics refined markdown lines 81-100",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 81-100"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

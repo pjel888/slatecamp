@@ -1,212 +1,77 @@
 {
-  "schema_version": "source-audit-evidence-v1-local-first",
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-018-local-first",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T23:52:12+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-112-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T18:08:00+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
   "target": {
     "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
     "slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
-    "title": "Obligations to Fellow Architects",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/candidate.md",
-    "candidate_sha256": "sha256:e43e830621dd96d2af56bd50e17d5623519adb19e72084c106e25b3862f22a60",
-    "normalized_sha256": "sha256:e43e830621dd96d2af56bd50e17d5623519adb19e72084c106e25b3862f22a60",
-    "linked_questions_sha256": "sha256:ba58cec1b5ebe4ab607a8a91c5acbd268d2131b664bc9385366b7d1a8a71145b",
-    "sources_sha256": "sha256:d21710fd329f063dd101d42c0fac3a12a1939ec93e89e40d967e5b4afade4bb5"
+    "title": "Fellow Architect Obligations: Non-Poaching and Successor Work"
   },
   "classification": {
-    "content_domain": "LEA Professional Practice and Ethics",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "high_value_lea_professional_practice",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "289f3ba1-701f-4679-87ca-221e79094490",
-      "3c37ce65-ddb9-402a-8161-761296c04b0d",
-      "3eae681f-aafe-47ab-a487-d32ffb07c686",
-      "3f2cba45-3bc0-47a1-80b5-e19d635a0e18",
-      "77b369b6-b629-47a0-bff2-5ad10c50dfa8",
-      "831e3646-d71e-4263-88e8-87bc73789bb1",
-      "8fc4caed-7300-4425-b013-f3b901f57a76",
-      "999f0705-6283-4f33-976c-3df679bfcd31",
-      "ef7f6bf9-a270-4a1b-a7fd-ed8669343a72",
-      "fc9c8b45-c99f-40f2-8ca2-8e0df0ae22a2"
-    ]
+    "topic": "professional ethics fellow architect obligations",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
   },
-  "paths": {
-    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
-    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits",
-    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits",
-    "question_edit_files": [
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/289f3ba1-701f-4679-87ca-221e79094490.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/3c37ce65-ddb9-402a-8161-761296c04b0d.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/3eae681f-aafe-47ab-a487-d32ffb07c686.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/3f2cba45-3bc0-47a1-80b5-e19d635a0e18.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/77b369b6-b629-47a0-bff2-5ad10c50dfa8.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/831e3646-d71e-4263-88e8-87bc73789bb1.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/8fc4caed-7300-4425-b013-f3b901f57a76.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/999f0705-6283-4f33-976c-3df679bfcd31.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/ef7f6bf9-a270-4a1b-a7fd-ed8669343a72.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/fc9c8b45-c99f-40f2-8ca2-8e0df0ae22a2.json"
-    ]
-  },
-  "raw_sources": [
-    {
-      "source_key": "uap-document-code-of-ethics",
-      "label": "UAP Document Code of Ethics",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "locator": "raw markdown lines 111-113",
-      "quoted_pdf_excerpt": "direct personal supervision"
-    }
-  ],
   "checked_sources": [
     {
-      "source_id": "uap-code-of-ethics-lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
-      "label": "UAP Document Code of Ethics - Obligations to Fellow Architects",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "source_locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118",
-      "checked_markdown_lines": [
-        "raw markdown lines 92-118"
-      ]
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "source_id": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 81-100"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+      "source_id": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 81-100"
     }
   ],
   "claims": [
-    {
-      "claim_id": "eth006-claim-01",
-      "claim_text": "The UAP Code bars rendering professional services without compensation except small civic or charity projects, and bars conditional preliminary services before a definite compensation agreement.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "uap-document-code-of-ethics",
-        "label": "UAP Document Code of Ethics",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "locator": "raw markdown lines 97-100",
-        "quoted_pdf_excerpt": "shall not render professional services, without compensation"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "eth006-claim-02",
-      "claim_text": "The UAP Code bars seeking a commission already known to be endowed to another architect and requires written notice, termination, and compensation before undertaking a successor commission.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "uap-document-code-of-ethics",
-        "label": "UAP Document Code of Ethics",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "locator": "raw markdown lines 103-107",
-        "quoted_pdf_excerpt": "seek commissions already known"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "eth006-claim-03",
-      "claim_text": "The UAP Code bars knowingly false or malicious injury to another architect and bars sealing documents not prepared under direct personal supervision.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "uap-document-code-of-ethics",
-        "label": "UAP Document Code of Ethics",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "locator": "raw markdown lines 111-113",
-        "quoted_pdf_excerpt": "direct personal supervision"
-      },
-      "blockers": []
-    }
+    "Section 5-c bars seeking commissions known to be endowed to another architect, including work still in negotiation.",
+    "Section 5-e requires written notice and determination of termination and compensation before taking over previously assigned work.",
+    "Section 5-f requires notice for additions, rehabilitation, or remodeling of a structure previously undertaken by another architect and limits claims to actual work when original mass, area, or design remains substantially maintained.",
+    "Section 5-g bars false or malicious injury to another architect reputation, prospects, or practice."
   ],
-  "unverified_or_rejected_claims": [],
   "removed_or_rewritten_material": [
-    "Removed generated UI placeholders and internal repair notes from learner-visible article content.",
-    "Rewrote over-specific or unverified article/question claims to source-located professional-practice statements."
+    "Removed unsupported exact percentage-credit scenarios.",
+    "Replaced broad due-diligence and conflict-resolution process claims with verified Section 5-c, 5-e, 5-f, and 5-g text."
   ],
+  "unverified_or_rejected_claims": [
+    "Exact percentage-credit formulas remain final-depth source-needed; the checked source only says limit claims to the extent of work done when original mass, area, or design is substantially maintained.",
+    "Due-diligence mechanics for identifying retired or deceased original architects remain source-needed beyond the checked Section 5-f notice rule."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe successor-work and proportional-claim scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
+  },
   "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required_for_local_batch"
-  },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article bceaa05b-1eaa-4369-a29c-fbd8aef6937b --overwrite; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article bceaa05b-1eaa-4369-a29c-fbd8aef6937b; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article bceaa05b-1eaa-4369-a29c-fbd8aef6937b; valid=true blockers=0 warnings=1 component-usage-only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
-  },
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "unverified_external_claims_removed": true
-  },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:e43e830621dd96d2af56bd50e17d5623519adb19e72084c106e25b3862f22a60"
-    },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "PASS",
-      "placeholder_marker_scan": "PASS",
-      "source_hashes": "PASS",
-      "linked_question_edit_count": "PASS",
-      "prior_batch_collision_check": "PASS"
-    },
-    "checked_at": "2026-05-10T23:52:12+08:00"
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "local_first_recovery_complete": true,
-    "remote_publish_status": "not_attempted_by_request",
-    "blockers": [],
-    "warnings": [
-      "component-usage.json has not been generated for this article yet; validate treats this as a non-blocking warning."
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "UAP Document Code of Ethics refined markdown lines 81-100"
     ]
   },
-  "supabase": {
-    "pushed": false,
-    "deployed": false,
-    "committed": false,
-    "final_publishing_only": true
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Exact percentage-credit formulas remain final-depth source-needed; the checked source only says limit claims to the extent of work done when original mass, area, or design is substantially maintained.",
+      "Due-diligence mechanics for identifying retired or deceased original architects remain source-needed beyond the checked Section 5-f notice rule."
+    ]
+  },
+  "overall": "pass",
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits"
   }
 }

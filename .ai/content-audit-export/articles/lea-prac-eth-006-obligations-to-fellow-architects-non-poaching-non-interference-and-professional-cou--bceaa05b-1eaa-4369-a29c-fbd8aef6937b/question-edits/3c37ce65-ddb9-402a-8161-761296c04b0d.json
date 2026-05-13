@@ -2,52 +2,53 @@
   "question_id": "3c37ce65-ddb9-402a-8161-761296c04b0d",
   "baseline_hash": "sha256:82a3710720f877efc1f2d4c5119bba0c41fd5e0b0745bd3cec948845278e8ce4",
   "action": "replace",
-  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy.",
-  "approved_by": "codex-local-source-audit-batch-018",
-  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
     "parent_article_slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118",
+    "source_locator": "UAP Code of Ethics lines 95-97",
     "checked_markdown_lines": [
-      "raw markdown lines 92-118"
+      "UAP Code of Ethics lines 81-100"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118"
+        "source_id": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 81-100"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 81-100"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "Under the UAP Code of Ethics, what should an architect do when asked to take over a commission where another architect was previously employed?",
+    "text": "Which statement about injurious conduct is source-safe?",
     "options": [
       {
         "id": "a",
-        "text": "Notify the prior architect in writing and confirm termination and compensation before undertaking the commission"
+        "text": "The architect should not knowingly injure falsely or maliciously another architect reputation, prospects, or practice"
       },
       {
         "id": "b",
-        "text": "Accept immediately if the owner says the previous architect is no longer wanted"
+        "text": "All criticism is banned even when truthful and constructive"
       },
       {
         "id": "c",
-        "text": "Wait until construction starts before notifying the prior architect"
+        "text": "False injury is allowed if it wins a commission"
       },
       {
         "id": "d",
-        "text": "Proceed if the prior architect did not sign a construction contract"
+        "text": "The rule applies only to suppliers"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The Code requires written notice, conclusive termination, and due compensation before undertaking that commission.",
-    "explanation": "The Code requires written notice, conclusive termination, and due compensation before undertaking that commission.",
-    "code_citation": "UAP Document Code of Ethics, lines 106-107",
+    "rationale": {
+      "correct": "Section 5-g is limited to knowing, false, or malicious injury.",
+      "takeaway": "Section 5-g is limited to knowing, false, or malicious injury."
+    },
+    "explanation": "Use UAP Code of Ethics lines 95-97 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 95-97",
     "bloom_level": "apply",
-    "application_context": "professional_practice",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
-    "difficulty": 0.7,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-006-005"
+    "model_id": "BATCH-112-lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy-001"
   }
 }

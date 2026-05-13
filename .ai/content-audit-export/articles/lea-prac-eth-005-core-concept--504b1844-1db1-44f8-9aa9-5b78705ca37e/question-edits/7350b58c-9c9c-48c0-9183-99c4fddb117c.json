@@ -2,52 +2,53 @@
   "question_id": "7350b58c-9c9c-48c0-9183-99c4fddb117c",
   "baseline_hash": "sha256:a21a68afb36a1d7ec7ae337566ffe23d30f1d5f158dde39fc278e6756e509c05",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-005-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-005-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
     "parent_article_slug": "lea-prac-eth-005-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118",
+    "source_locator": "UAP Code of Ethics lines 95-97",
     "checked_markdown_lines": [
-      "raw markdown lines 92-118"
+      "UAP Code of Ethics lines 81-102"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118"
+        "source_id": "lea-prac-eth-005-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 81-102"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-005-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 81-102"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "What does Section 5-i say about signing and sealing documents?",
+    "text": "What does Section 5-g prohibit?",
     "options": [
       {
         "id": "a",
-        "text": "Do not sign and seal plans or professional documents prepared outside direct personal supervision."
+        "text": "Knowingly false or malicious injury to another architect reputation, prospects, or practice"
       },
       {
         "id": "b",
-        "text": "Sign any plan if the client pays the fee."
+        "text": "Constructive professional criticism within limits"
       },
       {
         "id": "c",
-        "text": "Seal contractor-prepared drawings to speed up permitting."
+        "text": "Fair compensation of employees"
       },
       {
         "id": "d",
-        "text": "Sign work from any entity if the project is small."
+        "text": "Technical information sharing"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Section 5-i prohibits affixing signature and seal to documents prepared by others or entities not under direct personal supervision.",
-    "explanation": "Section 5-i prohibits affixing signature and seal to documents prepared by others or entities not under direct personal supervision.",
-    "code_citation": "UAP Document Code of Ethics, line 113",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 5-g protects professional reputation, prospects, and practice from false or malicious injury.",
+      "takeaway": "Section 5-g protects professional reputation, prospects, and practice from false or malicious injury."
+    },
+    "explanation": "Use UAP Code of Ethics lines 95-97 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 95-97",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
     "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-005-004"
+    "model_id": "BATCH-112-lea-prac-eth-005-core-concept-009"
   }
 }

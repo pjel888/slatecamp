@@ -2,52 +2,53 @@
   "question_id": "18c651c2-e5ba-4111-896a-1250346043e0",
   "baseline_hash": "sha256:b6f51012768242b40568847288496e9a5fded861d7841286e7a26709e3842a67",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-005-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-005-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
     "parent_article_slug": "lea-prac-eth-005-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118",
+    "source_locator": "UAP Code of Ethics lines 85-88",
     "checked_markdown_lines": [
-      "raw markdown lines 92-118"
+      "UAP Code of Ethics lines 81-102"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118"
+        "source_id": "lea-prac-eth-005-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 81-102"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-005-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 81-102"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "Which relationship does Section 5 of the Code address?",
+    "text": "Which conduct does Section 5-b prohibit?",
     "options": [
       {
         "id": "a",
-        "text": "The architect's responsibilities in relation to colleagues and subordinates"
+        "text": "Knowingly competing with other architects on the basis of differences in professional charges"
       },
       {
         "id": "b",
-        "text": "Only the architect's responsibilities to suppliers"
+        "text": "Charging any professional fee at all"
       },
       {
         "id": "c",
-        "text": "Only the architect's responsibilities to the contractor"
+        "text": "Serving a small civic project without compensation"
       },
       {
         "id": "d",
-        "text": "Only the architect's responsibilities to tax officials"
+        "text": "Sharing technical information with colleagues"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Section 5 is titled responsibilities in relation to colleagues and subordinates.",
-    "explanation": "Section 5 is titled responsibilities in relation to colleagues and subordinates.",
-    "code_citation": "UAP Document Code of Ethics, lines 92-94",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 5-b bars fee-based competition.",
+      "takeaway": "Section 5-b bars fee-based competition."
+    },
+    "explanation": "Use UAP Code of Ethics lines 85-88 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 85-88",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
-    "difficulty": 0.7,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-005-006"
+    "model_id": "BATCH-112-lea-prac-eth-005-core-concept-001"
   }
 }

@@ -1,23 +1,45 @@
-# Code of Ethical Conduct: Responsibilities In Relation To The People
+# Public Responsibilities in the UAP Code of Ethical Conduct
 
-Section 1 of the UAP Code of Ethical Conduct is about the architect's responsibilities in relation to the people. It frames the architect's public-facing role as a civic responsibility, whether the responsibility comes from good citizenship, professional pursuit, informative and educational matters, or proper public relations.
+## Board Exam Quick Check
 
-## Duties To The People
+Section 1 of the UAP Code of Ethics is about the architect's responsibilities in relation to the people. For exam purposes, keep the answer anchored to the public-facing duties actually stated in the source: civic service, safety, health, well-being, heritage, compliance with laws and ethical standards, limits on paid publicity, no paid endorsements, and truthful qualification claims.
 
-Section 1-a requires the architect to seek opportunities for constructive service in civic and urban affairs. It also requires the architect, to the best of ability, to advance the safety, health, and well-being of the people and the community, and to promote, restore, or preserve general amenities and examples of historic and architectural heritage.
+## Learning Goal
 
-Section 1-b requires the architect to promote the interest of the professional organization and to share in the interchange of technical information and experience with other design professions and the building industry.
+After studying this article, you should be able to:
 
-Section 1-c requires the architect to observe government laws and regulations and comply with the standards of ethical conduct and practice of the profession in the Philippines. It also says the architect must not act in a manner detrimental to the best interest of the profession.
+- Explain why public welfare is an ethical responsibility, not only a permit issue.
+- Distinguish factual professional communication from self-laudatory or misleading publicity.
+- Apply the source rule on construction-material endorsements and publication support.
+- Identify when a specialization claim becomes misleading.
 
-## Publicity And Specialization
+## Public Duty Comes First
 
-Section 1-d prohibits paid advertisement and self-laudatory, exaggerated, or misleading publicity. It still allows factual materials about the profession's aims, standards, progress, and the architect's function in society when they dignify the profession or advance public knowledge.
+The source begins by describing architecture as a profession requiring integrity, judgment, business capacity, artistic ability, and technical ability. It also says the architect acts as professional adviser to the client, exercises impartial functions between client and contractor, carries responsibilities to associates and subordinates, and has grave responsibilities to the public.
 
-Section 1-e bars the architect from soliciting or permitting solicitation in the architect's name for advertisements or other support toward a publication presenting the architect's work. It also says the architect should refrain from paid advertisements endorsing construction materials or building equipment.
+Section 1 then states the public-facing rule. The architect is engaged in a profession with civic responsibilities to the public. Section 1-a requires the architect to seek opportunities for constructive service in civic and urban affairs, advance safety, health, and well-being, and promote, restore, or preserve architectural heritage.
 
-Section 1-f bars misleading the public through advertisements, signs, or printed matter that cite professional specializations unless the qualifications are well-known facts or are sanctioned by professional consensus and years of experience.
+## Laws, Publicity, and Qualification Claims
 
-## LEA Study Anchor
+Section 1-c requires the architect, as a good citizen, to observe laws and government regulations and comply with ethical standards of practice in the Philippines. The same provision says the architect must not act in a manner detrimental to the profession.
 
-For Section 1 items, look for public welfare, civic service, legal compliance, professional reputation, advertising, endorsements, specialization claims, and heritage. Do not assume duties or disciplinary details outside Section 1 unless the item gives another governing source.
+Section 1-d does not ban all public communication. It bans paid advertisement and self-laudatory, exaggerated, or misleading publicity. Factual verbal or visual materials about the aims, standards, progress, work, or services of the profession may be presented when they dignify the profession or advance public knowledge of the architect's function.
+
+Section 1-e bars soliciting advertisements or support for publications presenting the architect's work, and it bars participation in paid advertisements endorsing construction materials or equipment. Section 1-f bars misleading the public through advertisements, signs, or printed matter claiming specializations unless the qualifications are well-known facts or sanctioned by professional consensus and years of experience.
+
+## Real World Scenario
+
+A young architect wants to market a small clinic project as proof of being a "nationally recognized hospital specialist." The source-safe answer is to avoid that specialization claim unless it is backed by well-known facts or professional consensus and years of experience. The architect may publish factual material about the clinic work, but should not use exaggerated publicity or paid endorsement language.
+
+## Exam Traps
+
+- Treating a factual portfolio description as automatically banned advertising.
+- Allowing paid endorsement of construction materials because the product is technically acceptable.
+- Claiming a specialization from one or two projects without source-backed recognition or years of experience.
+- Answering a public-safety conflict as if client convenience overrides the public duty.
+
+## Related Articles
+
+- [Architect's Credo](lea-prac-eth-002)
+- [Client Responsibilities in the UAP Code](lea-prac-eth-004)
+- [Contractor and Supplier Independence](lea-prac-eth-007)

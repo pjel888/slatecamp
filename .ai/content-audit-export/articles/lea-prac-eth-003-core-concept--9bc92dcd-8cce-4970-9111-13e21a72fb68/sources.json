@@ -1,29 +1,32 @@
 {
   "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:3ae47258e9df4d4d4489cbae023343407fc595b778ed557c1aa30227b46c3eb4",
+  "sources_hash": "sha256:5caeceab165a34d58266534c4cd716857bc2e6a69b3309b318ff14865aa42eeb",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "uap-code-of-ethics-lea-prac-eth-003-core-concept",
+      "source_id": "lea-prac-eth-003-core-concept-uap-code-of-ethics-local",
       "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
-      "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
+      "label": "UAP Document Code of Ethics",
       "url": null,
-      "source_type": "raw_pdf_and_markdown_source_audit",
-      "description": "Batch 017 local-first source audit for Code of Ethical Conduct; UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44.",
+      "source_type": "professional_ethics_pdf",
+      "description": "Checked for Code introduction and public responsibilities: civic service, safety/health/well-being, laws and regulations, paid-advertising limits, endorsements, and specialization claims.",
       "is_verified": true,
-      "sort_order": 0,
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "checked_markdown_lines": [
-        "raw markdown lines 23-29",
-        "raw markdown lines 31-44"
-      ],
-      "source_locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44",
-      "local_source_audit_batch": "source-audited-article-batch-017-local-first",
-      "audited_at": "2026-05-10T23:30:00.000+08:00"
+      "sort_order": 1,
+      "created_at": "2026-05-13T18:08:00+08:00",
+      "updated_at": "2026-05-13T18:08:00+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Board of Architecture and PRC approved ethics source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Document Code of Ethics refined markdown lines 23-42",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 23-42"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

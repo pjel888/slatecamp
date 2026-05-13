@@ -2,71 +2,75 @@
   "question_id": "65171561-98ba-40a0-b83e-cdde17475038",
   "baseline_hash": "sha256:4fda7156602caf7d10200a6b549cac98ae98ad0e2b1f84c22c0a6dc74f206e61",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-003-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-003-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
     "parent_article_slug": "lea-prac-eth-003-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44",
+    "source_locator": "UAP Code of Ethics lines 31-36",
     "checked_markdown_lines": [
-      "raw markdown lines 23-29",
-      "raw markdown lines 31-44"
+      "UAP Code of Ethics lines 23-42"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44"
+        "source_id": "lea-prac-eth-003-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-42"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-003-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-42"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "Under Section 1-a, which action best reflects the architect's public responsibility?",
+    "text": "A client asks an architect to remove a safety measure to reduce cost. Which Section 1 answer is safest?",
     "options": [
       {
         "id": "a",
-        "text": "Seek constructive service in civic and urban affairs and advance safety, health, and well-being"
+        "text": "Follow the client because the client pays the fee"
       },
       {
         "id": "b",
-        "text": "Accept a hidden supplier fee for a public building"
+        "text": "Keep the answer anchored to the architect duty to advance safety, health, and well-being"
       },
       {
         "id": "c",
-        "text": "Advertise exaggerated specialization claims"
+        "text": "Treat the issue only as a contractor preference"
       },
       {
         "id": "d",
-        "text": "Avoid professional organization work"
+        "text": "Ignore laws and regulations if the project is private"
       }
     ],
-    "correct_option_id": "a",
+    "correct_option_id": "b",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Section 1-a requires constructive civic and urban service and advancement of safety, health, well-being, community amenities, and heritage.",
-    "explanation": "Section 1-a requires constructive civic and urban service and advancement of safety, health, well-being, community amenities, and heritage.",
-    "code_citation": "UAP Document Code of Ethics, line 36",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 1-a supports safety, health, and well-being as public responsibilities.",
+      "takeaway": "Section 1-a supports safety, health, and well-being as public responsibilities."
+    },
+    "explanation": "Use UAP Code of Ethics lines 31-36 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 31-36",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
-    "difficulty": 0.7,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-003-006"
+    "model_id": "BATCH-112-lea-prac-eth-003-core-concept-002"
   }
 }

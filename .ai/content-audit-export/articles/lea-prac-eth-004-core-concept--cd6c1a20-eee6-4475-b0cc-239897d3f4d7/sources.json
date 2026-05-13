@@ -1,29 +1,32 @@
 {
   "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:0ff17d3790420a982c3482012e6140512c40c04f6525f83a8eb7950b46dc9f3d",
+  "sources_hash": "sha256:cde4c1b8ec137a19edbeca6a9882a82f2ef71c644eb6d591ec84ae53673a2230",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "uap-code-of-ethics-lea-prac-eth-004-core-concept",
+      "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
       "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
-      "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
+      "label": "UAP Document Code of Ethics",
       "url": null,
-      "source_type": "raw_pdf_and_markdown_source_audit",
-      "description": "Batch 017 local-first source audit for Section 2 of the Code; UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89.",
+      "source_type": "professional_ethics_pdf",
+      "description": "Checked for client responsibilities and supplier-discount cross-boundary: scope/fees, questionable projects, estimates, fees, fixed-sum construction, compensation, related interests, arbitration, and client-credited market discounts.",
       "is_verified": true,
-      "sort_order": 0,
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "checked_markdown_lines": [
-        "raw markdown lines 47-63",
-        "raw markdown lines 82-89"
-      ],
-      "source_locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89",
-      "local_source_audit_batch": "source-audited-article-batch-017-local-first",
-      "audited_at": "2026-05-10T23:30:00.000+08:00"
+      "sort_order": 1,
+      "created_at": "2026-05-13T18:08:00+08:00",
+      "updated_at": "2026-05-13T18:08:00+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Board of Architecture and PRC approved ethics source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 44-58 and 75-79"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

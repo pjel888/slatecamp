@@ -2,52 +2,53 @@
   "question_id": "e4c7ecba-d157-4e3d-bac3-e339b60ac20c",
   "baseline_hash": "sha256:4ecdf09b42bd5b11e5ab149e4d9a03aec86cae1af51c6cd9ce2e0e5b012f3dd3",
   "action": "replace",
-  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
-  "approved_by": "codex-local-source-audit-batch-018",
-  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
     "parent_article_slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
+    "source_locator": "UAP Code of Ethics lines 68-69",
     "checked_markdown_lines": [
-      "raw markdown lines 66-89"
+      "UAP Code of Ethics lines 60-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+        "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "After personal knowledge and inspection, what should the architect do with nonconforming materials or workmanship?",
+    "text": "How should bids be evaluated if a contractor previously gave the architect a favor that creates moral obligation?",
     "options": [
       {
         "id": "a",
-        "text": "Reject or condemn them promptly"
+        "text": "The architect should not accept benefits that create moral obligation in the first place; the source concern is compromised independent judgment"
       },
       {
         "id": "b",
-        "text": "Accept them to avoid delay"
+        "text": "The favor requires choosing that contractor"
       },
       {
         "id": "c",
-        "text": "Ask the supplier to decide"
+        "text": "The favor permits ignoring the lowest compliant bid"
       },
       {
         "id": "d",
-        "text": "Ignore them until final payment"
+        "text": "The Code requires a hidden commission"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The Code requires immediate rejection or condemnation of nonconforming materials, equipment, or workmanship after personal knowledge and inspection.",
-    "explanation": "The Code requires immediate rejection or condemnation of nonconforming materials, equipment, or workmanship after personal knowledge and inspection.",
-    "code_citation": "UAP Document Code of Ethics, line 76",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 3-d bars benefits that tend to create moral obligation.",
+      "takeaway": "Section 3-d bars benefits that tend to create moral obligation."
+    },
+    "explanation": "Use UAP Code of Ethics lines 68-69 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 68-69",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
     "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-007-006"
+    "model_id": "BATCH-112-lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-004"
   }
 }

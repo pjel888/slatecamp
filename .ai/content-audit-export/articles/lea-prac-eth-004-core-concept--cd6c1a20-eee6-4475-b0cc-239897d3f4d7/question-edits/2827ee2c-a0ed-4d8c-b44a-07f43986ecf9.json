@@ -2,53 +2,53 @@
   "question_id": "2827ee2c-a0ed-4d8c-b44a-07f43986ecf9",
   "baseline_hash": "sha256:31c06b8a02b8a5ba5e1a9b1b6d2dc7b1da84d217365427a48d093c4fd65b4f94",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-004-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-004-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
     "parent_article_slug": "lea-prac-eth-004-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89",
+    "source_locator": "UAP Code of Ethics lines 44-58",
     "checked_markdown_lines": [
-      "raw markdown lines 47-63",
-      "raw markdown lines 82-89"
+      "UAP Code of Ethics lines 44-58 and 75-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+        "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "Which compensation and conflict rule matches Sections 2-h and 2-i?",
+    "text": "Which client-duty answer should be avoided as unsupported in this batch?",
     "options": [
       {
         "id": "a",
-        "text": "Compensation should come through the client fee, and business interests affecting the client should be disclosed."
+        "text": "Specific discipline anecdotes not found in the checked source"
       },
       {
         "id": "b",
-        "text": "The architect may secretly accept outside returns from interested sources."
+        "text": "The good-faith client relationship"
       },
       {
         "id": "c",
-        "text": "The architect should avoid informing the client about related business interests."
+        "text": "The conditional character of estimates"
       },
       {
         "id": "d",
-        "text": "The architect must be paid only by manufacturers."
+        "text": "Disclosure of related business interests"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Section 2-h requires compensation solely through the fee charged directly to the client, and Section 2-i requires informing the client of related business interests.",
-    "explanation": "Section 2-h requires compensation solely through the fee charged directly to the client, and Section 2-i requires informing the client of related business interests.",
-    "code_citation": "UAP Document Code of Ethics, lines 61-62",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "The checked passage supports Section 2 duties, not external discipline anecdotes.",
+      "takeaway": "The checked passage supports Section 2 duties, not external discipline anecdotes."
+    },
+    "explanation": "Use UAP Code of Ethics lines 44-58 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 44-58",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
-    "difficulty": 0.9,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-004-010"
+    "model_id": "BATCH-112-lea-prac-eth-004-core-concept-009"
   }
 }

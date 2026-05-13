@@ -1,29 +1,51 @@
-# Section 5 Of The Code: Responsibilities In Relation To Colleagues And Subordinates
+# Profession, Colleague, and Subordinate Duties in the UAP Code
 
-Section 5 of the UAP Code of Ethical Conduct states that the architect has moral responsibilities toward the profession, colleagues, and subordinates. This section is the main Code section for questions about fair competition, successor architects, signing and sealing, employees, mentoring, and professional unity.
+## Board Exam Quick Check
 
-## Compensation And Competition
+Section 5 of the UAP Code of Ethics is the profession, colleague, and subordinate responsibility section. It is broader than one signing-and-sealing rule. It covers fair compensation, competition conduct, commissions already endowed to another architect, architectural competitions, successor work, professional reputation, doubtful enterprises, direct personal supervision before signature and seal, employee treatment, mentorship, information sharing, and professional-organization commitment.
 
-Section 5-a says the architect shall not render professional services without compensation except for small civic or charity projects. It also bars preliminary services on a conditional basis before a definite agreement with the client for the commission.
+## Learning Goal
 
-Section 5-b says the architect shall not knowingly compete with other architects based on differences in professional charges, nor use donation as a device to gain competitive advantage except for worthy civic or religious projects. It also says competitive sketches or drawings should be submitted only under arrangements conducted substantially under the UAP Architectural Competition Code.
+After studying this article, you should be able to:
 
-Section 5-c bars seeking commissions already known to have been endowed to another architect, whether the endowment has been definitely agreed upon or remains under negotiation.
+- Identify fee competition and conditional free preliminary services as Section 5 issues.
+- Explain the source-safe rule for commissions already assigned or still in negotiation.
+- Apply the signature-and-seal rule without inventing supervision details not in the source.
+- Recognize the mentor, employee, and information-sharing duties in Section 5.
 
-## Successor Work And Professional Courtesy
+## Competition and Commission Boundaries
 
-Section 5-d bars participation as a competitor in an architectural competition when the architect has direct relations with the program or has served as professional adviser or juror. It also bars the adviser or juror from later accepting employment as architect for that competition project, except as consulting architect.
+Section 5-a says the architect should not render professional services without compensation except for small civic or charity projects. It also bars offering preliminary services on a conditional basis before a definite client agreement for the commission.
 
-Section 5-e bars undertaking a commission for which another architect was previously employed until that architect has been notified in writing and termination and compensation have been conclusively determined.
+Section 5-b bars knowingly competing with other architects on the basis of differences in professional charges. It also bars using donation as a device for competitive advantage except for worthy civic or religious projects. The same provision restricts sketches or drawings in competition with other architects unless the competitive arrangement substantially follows the UAP Architectural Competition Code.
 
-Section 5-f bars undertaking additions, rehabilitation, or remodeling of a structure previously undertaken by another architect without notifying that architect, even when the owner is no longer the same. If the original structure's mass, area, or design is substantially maintained, the new architect should limit advertisement or claim to the work actually done. The section also urges architects to preserve or restore remaining historic examples of architectural heritage where possible.
+Section 5-c then protects commissions already endowed to another architect, whether definitely agreed upon or still in negotiation. A source-safe answer does not require a signed contract before the ethical concern appears.
 
-## Reputation, Signing, Employees, And Professional Unity
+## Successor Work and Signature/Seal
 
-Section 5-g bars knowingly false or malicious injury to another architect's professional reputation, prospects, or practice. Section 5-h tells the architect to avoid enterprises of doubtful character or integrity. Section 5-i bars signing and sealing plans or professional documents prepared by others or entities when they were not done under the architect's direct personal supervision.
+Section 5-e says an architect should not undertake a commission previously assigned to another architect until the other architect has been notified in writing and the original employment has been terminated and duly compensated.
 
-Section 5-j calls for suitable working conditions, competent and efficient service, adequate and just compensation for employees and subordinates, and mentorship of aspirants. Section 5-k calls for sharing technical information and experience and fostering unity in the profession. The final paragraph calls for personal commitment and involvement with the accredited professional organization for architects.
+Section 5-f covers additions, rehabilitation, or remodeling of a structure previously undertaken by another architect. The new architect should notify the previous architect even when the owner has changed. If the greater mass, area, or design of the original structure is substantially maintained, the new architect should limit advertisement or claims to the extent of the work actually done.
 
-## LEA Study Anchor
+Section 5-i gives the signature-and-seal rule: the architect should not affix signature and seal to plans or professional documents prepared by others unless those documents were done under the architect's direct personal supervision.
 
-Section 5 questions usually turn on professional courtesy and authorship. Look for unpaid work, fee undercutting, commissions already held by another architect, competition conflicts, written notice to a prior architect, work on an existing building by another architect, malicious reputation injury, doubtful enterprises, direct personal supervision for signing and sealing, employee fairness, mentoring, information exchange, and accredited professional organization service.
+## Colleagues, Subordinates, and the Profession
+
+Section 5-g bars knowingly false or malicious injury to another architect's professional reputation, prospects, or practice. Section 5-h bars association with doubtful enterprises. Sections 5-j and 5-k require suitable working conditions, competent service, adequate and just compensation, mentorship, and sharing technical information and experience among colleagues and young aspirants.
+
+## Real World Scenario
+
+An owner asks Architect B to sign drawings prepared by an unlicensed drafting shop, while also mentioning that Architect A was previously negotiating the commission. Architect B should not treat this as a shortcut. The source-safe response is to avoid signing documents not under direct personal supervision and avoid seeking or accepting a commission known to be endowed to another architect until the Section 5 notification, termination, and compensation conditions are resolved.
+
+## Exam Traps
+
+- Treating lower fees as automatically ethical competition when the source bars fee-based undercutting.
+- Assuming negotiation with another architect gives no protection until a contract is signed.
+- Signing or sealing finished documents after only a final review.
+- Forgetting that Section 5 also protects employees, subordinates, young aspirants, and professional knowledge sharing.
+
+## Related Articles
+
+- [Fellow Architect Obligations](lea-prac-eth-006)
+- [Client Responsibilities](lea-prac-eth-004)
+- [Architect's Credo](lea-prac-eth-002)

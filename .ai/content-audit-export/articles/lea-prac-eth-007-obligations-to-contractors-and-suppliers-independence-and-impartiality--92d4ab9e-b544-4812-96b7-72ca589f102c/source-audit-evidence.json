@@ -1,212 +1,78 @@
 {
-  "schema_version": "source-audit-evidence-v1-local-first",
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-018-local-first",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T23:52:12+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-112-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T18:08:00+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
   "target": {
     "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
     "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
-    "title": "Obligations to Contractors and Suppliers",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/candidate.md",
-    "candidate_sha256": "sha256:7960ee3ad54cc8cc6a449fc5a769bfd92373c0f9abf7679858023257d5d8d7a1",
-    "normalized_sha256": "sha256:7960ee3ad54cc8cc6a449fc5a769bfd92373c0f9abf7679858023257d5d8d7a1",
-    "linked_questions_sha256": "sha256:97b9502934d8f612db02d8eb7bdaab973305b4188a73e81d1f690b42f6f84d52",
-    "sources_sha256": "sha256:6adb57ecafbae2ae7effebce519bc12af2c3317a1d12ab19f357b8ccd0a508c5"
+    "title": "Contractor and Supplier Independence in the UAP Code"
   },
   "classification": {
-    "content_domain": "LEA Professional Practice and Ethics",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "high_value_lea_professional_practice",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "215b49ad-ce9c-4843-a3d6-bb1124cf7cea",
-      "2ff5b9df-3d2e-42aa-a409-4f51dbf406e2",
-      "6097f8ef-9ea1-41f4-95e4-83195b35d11d",
-      "7031488b-005f-4395-8d0a-76df392a5889",
-      "7a9d4cfb-7fc1-457e-92dc-b4f6d75aad00",
-      "7db0b242-4918-4bf2-8284-f36a194f0719",
-      "b115192d-3fd5-4d21-b052-b4e2fae2ca56",
-      "b4dd359c-ce6e-4f7f-9a2c-aa1c74ba09a2",
-      "d1cb71cf-000b-4308-b705-588edc3e3d62",
-      "e4c7ecba-d157-4e3d-bac3-e339b60ac20c"
-    ]
+    "topic": "professional ethics contractor supplier responsibility",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
   },
-  "paths": {
-    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c",
-    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits",
-    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits",
-    "question_edit_files": [
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/215b49ad-ce9c-4843-a3d6-bb1124cf7cea.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/2ff5b9df-3d2e-42aa-a409-4f51dbf406e2.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/6097f8ef-9ea1-41f4-95e4-83195b35d11d.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/7031488b-005f-4395-8d0a-76df392a5889.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/7a9d4cfb-7fc1-457e-92dc-b4f6d75aad00.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/7db0b242-4918-4bf2-8284-f36a194f0719.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/b115192d-3fd5-4d21-b052-b4e2fae2ca56.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/b4dd359c-ce6e-4f7f-9a2c-aa1c74ba09a2.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/d1cb71cf-000b-4308-b705-588edc3e3d62.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/e4c7ecba-d157-4e3d-bac3-e339b60ac20c.json"
-    ]
-  },
-  "raw_sources": [
-    {
-      "source_key": "uap-document-code-of-ethics",
-      "label": "UAP Document Code of Ethics",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "locator": "raw markdown lines 77-89",
-      "quoted_pdf_excerpt": "credited to the Client"
-    }
-  ],
   "checked_sources": [
     {
-      "source_id": "uap-code-of-ethics-lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
-      "label": "UAP Document Code of Ethics - Obligations to Contractors and Suppliers",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
-      "checked_markdown_lines": [
-        "raw markdown lines 66-89"
-      ]
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+      "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
     }
   ],
   "claims": [
-    {
-      "claim_id": "eth007-claim-01",
-      "claim_text": "The UAP Code requires fair safeguarding of contractor interests, clear contract information, and no document-error correction to the contractor's financial disadvantage.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "uap-document-code-of-ethics",
-        "label": "UAP Document Code of Ethics",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "locator": "raw markdown lines 68-76",
-        "quoted_pdf_excerpt": "safeguard fairly his interests"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "eth007-claim-02",
-      "claim_text": "The UAP Code requires prompt inspection, rejection of nonconforming work after personal knowledge, and certificates when completed work conforms to contract documents.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "uap-document-code-of-ethics",
-        "label": "UAP Document Code of Ethics",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "locator": "raw markdown lines 76-80",
-        "quoted_pdf_excerpt": "promptly inspect each phase"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "eth007-claim-03",
-      "claim_text": "The UAP Code bars gifts, commissions, favors, or supplier technical services that create obligation or impair professional judgment, while market discounts must be credited to the client.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "uap-document-code-of-ethics",
-        "label": "UAP Document Code of Ethics",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "locator": "raw markdown lines 77-89",
-        "quoted_pdf_excerpt": "credited to the Client"
-      },
-      "blockers": []
-    }
+    "Section 3 frames the architect as a fair safeguard of contractor and client interests.",
+    "Section 3-a through 3-c supports clear contract information, no shifting architect document errors to the contractor, and prompt rejection of nonconforming work.",
+    "Section 3-d bars contractor or subcontractor benefits that tend to create moral obligation.",
+    "Section 4-a bars supplier technical services tied to obligations detrimental to the client or professional opinion.",
+    "Section 4-b permits market discounts only when credited to the client."
   ],
-  "unverified_or_rejected_claims": [],
   "removed_or_rewritten_material": [
-    "Removed generated UI placeholders and internal repair notes from learner-visible article content.",
-    "Rewrote over-specific or unverified article/question claims to source-located professional-practice statements."
+    "Removed unsupported appearance-of-bias standard as a standalone source rule.",
+    "Reframed supplier/contractor examples around moral obligation, technical-service obligation, and client-credited discount text."
   ],
+  "unverified_or_rejected_claims": [
+    "Appearance-of-bias doctrine and recusal mechanics remain final-depth source-needed; the checked text supports moral obligation and reciprocal frame of mind.",
+    "Exact software-value or time-passed examples remain scenario choices only when tied back to Section 3-d or 4-b source wording."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe contractor payment and supplier-discount scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
+  },
   "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required_for_local_batch"
-  },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article 92d4ab9e-b544-4812-96b7-72ca589f102c --overwrite; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article 92d4ab9e-b544-4812-96b7-72ca589f102c; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article 92d4ab9e-b544-4812-96b7-72ca589f102c; valid=true blockers=0 warnings=1 component-usage-only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
-  },
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "unverified_external_claims_removed": true
-  },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:7960ee3ad54cc8cc6a449fc5a769bfd92373c0f9abf7679858023257d5d8d7a1"
-    },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "PASS",
-      "placeholder_marker_scan": "PASS",
-      "source_hashes": "PASS",
-      "linked_question_edit_count": "PASS",
-      "prior_batch_collision_check": "PASS"
-    },
-    "checked_at": "2026-05-10T23:52:12+08:00"
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "local_first_recovery_complete": true,
-    "remote_publish_status": "not_attempted_by_request",
-    "blockers": [],
-    "warnings": [
-      "component-usage.json has not been generated for this article yet; validate treats this as a non-blocking warning."
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "UAP Document Code of Ethics refined markdown lines 60-79"
     ]
   },
-  "supabase": {
-    "pushed": false,
-    "deployed": false,
-    "committed": false,
-    "final_publishing_only": true
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Appearance-of-bias doctrine and recusal mechanics remain final-depth source-needed; the checked text supports moral obligation and reciprocal frame of mind.",
+      "Exact software-value or time-passed examples remain scenario choices only when tied back to Section 3-d or 4-b source wording."
+    ]
+  },
+  "overall": "pass",
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits"
   }
 }

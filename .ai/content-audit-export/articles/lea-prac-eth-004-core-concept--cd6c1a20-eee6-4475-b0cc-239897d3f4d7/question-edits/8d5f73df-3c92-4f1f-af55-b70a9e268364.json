@@ -2,53 +2,53 @@
   "question_id": "8d5f73df-3c92-4f1f-af55-b70a9e268364",
   "baseline_hash": "sha256:321239eafac82fa92472766c3534deaf9bc05296482fee2d50271dc8427b50de",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-004-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-004-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
     "parent_article_slug": "lea-prac-eth-004-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89",
+    "source_locator": "UAP Code of Ethics lines 54-55",
     "checked_markdown_lines": [
-      "raw markdown lines 47-63",
-      "raw markdown lines 82-89"
+      "UAP Code of Ethics lines 44-58 and 75-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+        "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "A project appears questionable because of financial or legal conditions. What does Section 2-c require?",
+    "text": "A client asks the architect to build the architect-designed project under a fixed contract sum. Which Section 2 rule controls?",
     "options": [
       {
         "id": "a",
-        "text": "Advise the client against proceeding, even if it may mean losing the commission"
+        "text": "Section 2-g limits this arrangement and points to SPP conditions for construction, comprehensive, or design-build services"
       },
       {
         "id": "b",
-        "text": "Proceed silently to preserve the commission"
+        "text": "Section 2-g requires fixed-sum construction for every design"
       },
       {
         "id": "c",
-        "text": "Guarantee success if the fee is increased"
+        "text": "Section 2-g eliminates professional fees"
       },
       {
         "id": "d",
-        "text": "Transfer the decision to a supplier"
+        "text": "Section 2-g concerns only paid advertisements"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Section 2-c requires advising against questionable projects even if the advice may mean loss of a prospective commission.",
-    "explanation": "Section 2-c requires advising against questionable projects even if the advice may mean loss of a prospective commission.",
-    "code_citation": "UAP Document Code of Ethics, line 54",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 2-g bars fixed-sum construction of the architect own design except under specified SPP service conditions.",
+      "takeaway": "Section 2-g bars fixed-sum construction of the architect own design except under specified SPP service conditions."
+    },
+    "explanation": "Use UAP Code of Ethics lines 54-55 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 54-55",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
-    "difficulty": 0.7,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-004-006"
+    "model_id": "BATCH-112-lea-prac-eth-004-core-concept-004"
   }
 }

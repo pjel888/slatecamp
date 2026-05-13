@@ -1,0 +1,163 @@
+{
+  "batch_number": "112",
+  "batch_id": "source-audited-article-batch-112-local-first",
+  "generated_at": "2026-05-13T18:08:00+08:00",
+  "status": "pass",
+  "gates": {
+    "compose_diff_validate_strict_5_of_5": {
+      "status": "pass",
+      "expected_articles": 5,
+      "actual_articles": 5,
+      "articles": [
+        {
+          "slug": "lea-prac-eth-003-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-eth-004-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-eth-005-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+          "status": "pass"
+        }
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "files": [
+        ".ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/ui-block-edit-validation.json"
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 107,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "findings": []
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "checked_files": 10,
+      "failures": []
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+          "slug": "lea-prac-eth-003-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+          "slug": "lea-prac-eth-004-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
+          "slug": "lea-prac-eth-005-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
+          "slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+          "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+          "slug": "lea-prac-eth-003-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+          "slug": "lea-prac-eth-004-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
+          "slug": "lea-prac-eth-005-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
+          "slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+          "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        }
+      ]
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-111",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+        "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts"
+    },
+    "scoped_git_diff_check": {
+        "status": "pass",
+      "command": "git diff --check -- .ai/03_plans/production-line-batch-112-manifest.json .ai/content-audit-export/source-audited-article-batch-112-local-first-report.md .ai/content-audit-export/source-audited-article-batch-112-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-112-local-first-scoped-checks.json .ai/03_plans/batch-112-independent-quality-review.md .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/03_plans/source-audited-production-line-coordination.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/runs/source-audited-batch-112-local-generator.mjs .ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68 .ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7 .ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e .ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b .ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c"
+    },
+    "cached_diff_check": {
+      "status": "pass",
+      "command": "git diff --cached --check using a temporary Batch 112 index/object directory because the real .git/index is not writable in this Codex App session"
+    },
+    "real_git_stage_commit_push_gate": {
+      "status": "blocked",
+      "blocker": "Real git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted.",
+      "temporary_commit_object_created": true,
+      "push_blocker": "Temporary commit push failed with fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com.",
+      "impact": "Normal staging, commit, and push from the live index cannot be completed in this session; Batch 112 is ready for acceptance from an environment with writable .git/index access and GitHub network resolution."
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy
 
-Generated: 2026-05-10T15:49:52.763Z
+Generated: 2026-05-13T10:00:54.670Z
 Article ID: bceaa05b-1eaa-4369-a29c-fbd8aef6937b
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:ea2abe67642b2b71d93ebb8b651e91220946e727d164fb0c5e2b87f6743405b3`
-- Normalized: `sha256:e43e830621dd96d2af56bd50e17d5623519adb19e72084c106e25b3862f22a60`
-- Candidate: `sha256:e43e830621dd96d2af56bd50e17d5623519adb19e72084c106e25b3862f22a60`
+- Normalized: `sha256:b3564e659eb646ad90835321c823e538df3b81e08d9804ded0f418861e230819`
+- Candidate: `sha256:b3564e659eb646ad90835321c823e538df3b81e08d9804ded0f418861e230819`
 
 ## Line summary
 
-- Changed lines: 85
+- Changed lines: 77
 - Inserted lines: 0
-- Deleted lines: 71
+- Deleted lines: 42
 
 ## UI block preservation
 

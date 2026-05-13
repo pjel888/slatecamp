@@ -2,52 +2,53 @@
   "question_id": "7031488b-005f-4395-8d0a-76df392a5889",
   "baseline_hash": "sha256:bf16371d76484d980abdca1687c4dabf3294587d6a12b311a94c7999f19417ba",
   "action": "replace",
-  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
-  "approved_by": "codex-local-source-audit-batch-018",
-  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
     "parent_article_slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
+    "source_locator": "UAP Code of Ethics lines 73-78",
     "checked_markdown_lines": [
-      "raw markdown lines 66-89"
+      "UAP Code of Ethics lines 60-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+        "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 60-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "When a contractor requests inspection of a completed phase, what should happen if the work conforms to the Contract Documents?",
+    "text": "A supplier offers free technical services tied to using its product. Which source rule controls?",
     "options": [
       {
         "id": "a",
-        "text": "The architect should issue the corresponding payment or completion certificate"
+        "text": "Section 4-a: do not use supplier technical services accompanied by an obligation detrimental to client interests or professional opinion"
       },
       {
         "id": "b",
-        "text": "The architect should withhold certification until the contractor offers a discount"
+        "text": "Section 5-c: endowed commissions"
       },
       {
         "id": "c",
-        "text": "The architect should reject the work automatically"
+        "text": "Section 1-d: factual materials"
       },
       {
         "id": "d",
-        "text": "The supplier should issue the certificate"
+        "text": "Section 2-j: arbitration"
       }
     ],
     "correct_option_id": "a",
@@ -55,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Upon request, the architect promptly inspects each completed phase and issues the corresponding certificate if it conforms.",
-    "explanation": "Upon request, the architect promptly inspects each completed phase and issues the corresponding certificate if it conforms.",
-    "code_citation": "UAP Document Code of Ethics, line 80",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 4-a controls supplier technical services with harmful obligations.",
+      "takeaway": "Section 4-a controls supplier technical services with harmful obligations."
+    },
+    "explanation": "Use UAP Code of Ethics lines 73-78 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 73-78",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
     "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-007-005"
+    "model_id": "BATCH-112-lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-006"
   }
 }

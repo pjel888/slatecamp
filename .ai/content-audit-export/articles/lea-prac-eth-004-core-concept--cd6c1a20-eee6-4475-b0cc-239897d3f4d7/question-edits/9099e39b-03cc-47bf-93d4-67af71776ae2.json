@@ -2,53 +2,53 @@
   "question_id": "9099e39b-03cc-47bf-93d4-67af71776ae2",
   "baseline_hash": "sha256:4444da17bc151b9a90c4887361923d7016fd237eba84c9c10810eeddc6570e86",
   "action": "replace",
-  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-004-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-017",
-  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "reason": "source-audited-article-batch-112-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-004-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-112",
+  "approved_at": "2026-05-13T18:08:00+08:00",
   "source_audit_support": {
     "parent_article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
     "parent_article_slug": "lea-prac-eth-004-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89",
+    "source_locator": "UAP Code of Ethics lines 57-58",
     "checked_markdown_lines": [
-      "raw markdown lines 47-63",
-      "raw markdown lines 82-89"
+      "UAP Code of Ethics lines 44-58 and 75-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+        "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+    "local_source_safe_action": "Batch 112 replaced unsupported, thin, or stale ethics wording with a local raw-source-supported question, answer key, citation, and explanation.",
+    "batch_id": "source-audited-article-batch-112-local-first"
   },
   "proposed": {
-    "text": "How does Section 2-f describe the professional fee?",
+    "text": "What does Section 2-i require when the architect has a business interest affecting the client interest?",
     "options": [
       {
         "id": "a",
-        "text": "Commensurate with the work, professional standing, and experience, based on the Basic Minimum Fee in the SPP"
+        "text": "Inform the client of the condition or situation"
       },
       {
         "id": "b",
-        "text": "Whatever fee undercuts all other architects"
+        "text": "Conceal the interest until final payment"
       },
       {
         "id": "c",
-        "text": "Only a commission from suppliers"
+        "text": "Transfer all decisions to the supplier"
       },
       {
         "id": "d",
-        "text": "Only a fixed amount set by the contractor"
+        "text": "Use paid advertising"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Section 2-f requires a professional fee commensurate with the work, standing, and experience and based on the Basic Minimum Fee under the SPP.",
-    "explanation": "Section 2-f requires a professional fee commensurate with the work, standing, and experience and based on the Basic Minimum Fee under the SPP.",
-    "code_citation": "UAP Document Code of Ethics, line 59",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 2-i requires disclosure of related business interests.",
+      "takeaway": "Section 2-i requires disclosure of related business interests."
+    },
+    "explanation": "Use UAP Code of Ethics lines 57-58 for this Batch 112 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 57-58",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 112"
     ],
-    "difficulty": 0.3,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-004-001"
+    "model_id": "BATCH-112-lea-prac-eth-004-core-concept-007"
   }
 }

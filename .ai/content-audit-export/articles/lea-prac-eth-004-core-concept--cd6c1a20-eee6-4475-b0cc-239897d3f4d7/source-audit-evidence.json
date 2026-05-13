@@ -1,112 +1,78 @@
 {
-  "batch_id": "source-audited-article-batch-017-local-first",
-  "mode": "local_first_no_supabase_push",
-  "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
-  "slug": "lea-prac-eth-004-core-concept",
-  "title": "Section 2 of the Code",
-  "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
-  "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/question-edits",
-  "audited_at": "2026-05-10T23:30:00.000+08:00",
-  "status": "local_passed",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-112-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T18:08:00+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
+  "target": {
+    "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+    "slug": "lea-prac-eth-004-core-concept",
+    "title": "Client Responsibilities in the UAP Code of Ethical Conduct"
+  },
   "classification": {
-    "content_domain": "LEA Professional Practice and Jurisprudence",
-    "legal_or_professional_practice": true,
-    "raw_pdf_audit_required": true,
-    "raw_pdf_audit_completed": true
+    "topic": "professional ethics client responsibility",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
   },
   "checked_sources": [
     {
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
       "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "source_id": "uap-document-code-of-ethics",
-      "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+      "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
     },
     {
-      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "source_id": "uap-document-code-of-ethics-raw-markdown",
-      "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+      "source_id": "lea-prac-eth-004-core-concept-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
     }
-  ],
-  "checked_markdown_lines": [
-    "raw markdown lines 47-63",
-    "raw markdown lines 82-89"
   ],
   "claims": [
-    {
-      "claim_id": "lea-prac-eth-004-core-concept-claim-01",
-      "claim": "Section 2 states that the architect-client relationship depends on good faith.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
-    },
-    {
-      "claim_id": "lea-prac-eth-004-core-concept-claim-02",
-      "claim": "Section 2-b requires exact nature, scope, services, and charges to be ascertained at engagement inception.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
-    },
-    {
-      "claim_id": "lea-prac-eth-004-core-concept-claim-03",
-      "claim": "Sections 2-h and 2-i require compensation from the client and disclosure of business interests affecting the client.",
-      "audit_result": "pass",
-      "source_support": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
-    }
+    "Section 2 frames the client relationship as one of good faith.",
+    "Section 2-b requires scope and charges to be clarified at the inception of the relationship.",
+    "Section 2-c and 2-d support honest advice against questionable projects and conditional treatment of estimates.",
+    "Section 2-h and 2-i support compensation through the client and disclosure of related business interests.",
+    "Section 4-b allows market discounts only when credited to the client."
   ],
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "unverified_external_resolution_claims_removed": true,
-    "unverified_reporting_or_enforcement_claims_removed": true,
-    "candidate_md_composed": true
+  "removed_or_rewritten_material": [
+    "Removed unsupported discipline-story claims and broad confidentiality claims not stated in the checked passage.",
+    "Replaced incorrect section-number framing with UAP Code Section 2 source labels."
+  ],
+  "unverified_or_rejected_claims": [
+    "Specific PRBoA discipline anecdotes and current confidentiality doctrine remain final-depth source-needed.",
+    "Do not restore section labels from other SPP article numbering; use UAP Code Section 2 labels verified in the local source."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe client budget, estimate, and conflict-disclosure scenario."
   },
-  "blockers": [],
-  "supabase": {
-    "pushed": false,
-    "deployed": false,
-    "committed": false,
-    "final_publishing_only": true
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
   },
-  "candidate_hash": "sha256:357c7f34d090d6663c74c8c86336e3e1657a0dcdd6f1e1e01c704ad365c3684c",
-  "normalized_hash": "sha256:357c7f34d090d6663c74c8c86336e3e1657a0dcdd6f1e1e01c704ad365c3684c",
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "placeholders_found": 0,
-      "unresolved_placeholders": []
-    },
-    "diff": {
-      "passed": true,
-      "changed": true,
-      "locally_safe_to_push": true,
-      "blockers": [],
-      "warnings": [
-        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
-      ]
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "pass",
-      "forbidden_marker_scan": "pass",
-      "source_path_hash_check": "pass",
-      "question_edit_schema_count": "pass",
-      "git_diff_check": "pass_after_eof_fix"
-    }
+  "raw_pdf_gate": {
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "UAP Document Code of Ethics refined markdown lines 44-58 and 75-79"
+    ]
   },
-  "next_phase_readiness": {
-    "local_first_ready": true,
-    "unresolved_local_blockers": 0,
-    "supabase_final_publishing_only": true,
-    "remote_stale_check_required_before_publish": true
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Specific PRBoA discipline anecdotes and current confidentiality doctrine remain final-depth source-needed.",
+      "Do not restore section labels from other SPP article numbering; use UAP Code Section 2 labels verified in the local source."
+    ]
+  },
+  "overall": "pass",
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/question-edits"
   }
 }

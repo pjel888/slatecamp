@@ -1,0 +1,110 @@
+{
+  "batch_id": "source-audited-article-batch-112-local-first",
+  "batch_number": "112",
+  "reserved_at": "2026-05-13T18:08:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "a74335101",
+  "current_head_at_manifest_generation": "a74335101",
+  "previous_batch": {
+    "batch_number": "111",
+    "commit": "a74335101",
+    "status": "accepted_and_pushed"
+  },
+  "manifest_status": "pass",
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batch 111 ETH-002; selected ETH-003 through ETH-007 with no duplicate article IDs from accepted Batches 087-111.",
+  "inherited_blocker_status": {
+    "status": "clear",
+    "notes": [
+      "Batch 111 is accepted and pushed at a74335101; Batch 112 starts from that live baseline.",
+      "Unrelated stairway and 3D learning work remains out of scope and must not be staged in this content batch."
+    ]
+  },
+  "article_clusters": [
+    "Public duties, civic responsibilities, laws, advertising, endorsements, and qualification claims",
+    "Client good faith, scope and fee clarity, questionable projects, estimate limits, and conflicts",
+    "Professional standing, fee competition, direct supervision, successor work, mentorship, and information sharing",
+    "Fellow-architect non-poaching, takeover notification, successor credit, and non-injurious conduct",
+    "Contractor/supplier impartiality, document clarity, rejection of nonconforming work, gifts, technical services, and client-credited discounts"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "source_safe_real_world_scenarios_expected": 5
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+      "slug": "lea-prac-eth-003-core-concept",
+      "title": "Public Responsibilities in the UAP Code of Ethical Conduct",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68"
+    },
+    {
+      "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+      "slug": "lea-prac-eth-004-core-concept",
+      "title": "Client Responsibilities in the UAP Code of Ethical Conduct",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7"
+    },
+    {
+      "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
+      "slug": "lea-prac-eth-005-core-concept",
+      "title": "Profession, Colleague, and Subordinate Duties in the UAP Code",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e"
+    },
+    {
+      "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
+      "slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
+      "title": "Fellow Architect Obligations: Non-Poaching and Successor Work",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b"
+    },
+    {
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+      "title": "Contractor and Supplier Independence in the UAP Code",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-111",
+    "duplicate_hits": []
+  },
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "ETH-003 through ETH-005 have historical Batch 017 source-audit sidecars.",
+      "ETH-006 and ETH-007 have historical Batch 018 source-audit sidecars.",
+      "Batch 112 refreshes these clusters under the current serial production-line baseline and records overlap separately from accepted Batches 087-111."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_real_git_index_and_network_push",
+    "expected_commit_message": "chore(content): accept source-audited batch 112",
+    "commit_created": false,
+    "push_performed": false,
+    "temporary_index_cached_diff_check": "pass",
+    "temporary_commit_object_created": true,
+    "blocker": "Real git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted.",
+    "push_blocker": "Temporary commit push failed with fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com."
+  }
+}

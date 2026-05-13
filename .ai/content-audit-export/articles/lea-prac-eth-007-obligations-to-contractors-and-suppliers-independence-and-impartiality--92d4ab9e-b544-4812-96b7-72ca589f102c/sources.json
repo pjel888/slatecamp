@@ -1,28 +1,32 @@
 {
   "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:6adb57ecafbae2ae7effebce519bc12af2c3317a1d12ab19f357b8ccd0a508c5",
+  "sources_hash": "sha256:ed8f4ed362aff8fa0d77ad3045fcb8519a6dfd63d2388d7d77b1efb2fb9e2b14",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "uap-code-of-ethics-lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+      "source_id": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality-uap-code-of-ethics-local",
       "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
-      "label": "UAP Document Code of Ethics - Obligations to Contractors and Suppliers",
+      "label": "UAP Document Code of Ethics",
       "url": null,
-      "source_type": "raw_pdf_and_markdown_source_audit",
-      "description": "Batch 018 local-first source audit; UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89.",
+      "source_type": "professional_ethics_pdf",
+      "description": "Checked for contractor and supplier responsibilities: fair safeguarding, clear contract documents, correction of errors, rejection of nonconforming work, payment certificates, technical information, technical services, gifts, commissions, favors, moral obligation, reciprocal frame of mind, and client-credited market discounts.",
       "is_verified": true,
-      "sort_order": 0,
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "checked_markdown_lines": [
-        "raw markdown lines 66-89"
-      ],
-      "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
-      "local_source_audit_batch": "source-audited-article-batch-018-local-first",
-      "audited_at": "2026-05-10T23:42:00.000+08:00"
+      "sort_order": 1,
+      "created_at": "2026-05-13T18:08:00+08:00",
+      "updated_at": "2026-05-13T18:08:00+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Board of Architecture and PRC approved ethics source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Document Code of Ethics refined markdown lines 60-79",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 60-79"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }
