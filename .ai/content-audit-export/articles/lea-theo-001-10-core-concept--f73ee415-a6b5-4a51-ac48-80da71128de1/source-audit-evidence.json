@@ -1,0 +1,60 @@
+{
+  "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+  "slug": "lea-theo-001-10-core-concept",
+  "batch_id": "source-audited-article-batch-129-local-first",
+  "generated_at": "2026-05-14T12:45:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24.",
+  "source_urls": [
+    "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+  ],
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md"
+  ],
+  "checked_sources": [
+    {
+      "source_id": "batch129-lea-theo-001-10-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+      "sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "locator": "Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24."
+    },
+    {
+      "source_id": "batch129-lea-theo-001-10-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+      "sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "locator": "Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24."
+    },
+    {
+      "source_id": "batch129-lea-theo-001-10-core-concept-checked-local-source-1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch129-lea-theo-001-10-core-concept-checked-local-source-2",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "locator": "lines 31-90, 162-309, 330-430"
+    },
+    {
+      "source_id": "batch129-lea-theo-001-10-core-concept-checked-local-source-3",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch129-lea-theo-001-10-core-concept-checked-local-source-4",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "locator": "lines 15-24"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed stale raw UI-block marker blocks from normalized content because ui-blocks.json has zero owned blocks.",
+    "Narrowed Ching claims to the checked primary-elements vocabulary instead of broad unsupported textbook summaries.",
+    "Cleaned linked-question rationales and removed repeated explanation text."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario: read a school courtyard by locating the flagpole as a point, the covered walk as a line, the wall and floor surfaces as planes, and the classroom block as volume before naming the design logic."
+}

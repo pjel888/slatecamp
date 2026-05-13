@@ -1,0 +1,546 @@
+{
+  "batch_id": "source-audited-article-batch-129-local-first",
+  "generated_at": "2026-05-14T12:45:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "baseline_full_commit": "63e22ccb98f3750d255944fc1a5ec12ed7b758ac",
+  "selected_article_count": 5,
+  "linked_question_count": 65,
+  "question_edit_count": 65,
+  "answer_key_change_count": 0,
+  "option_text_change_count": 1,
+  "scoped_paths_checked": [
+    ".ai/03_plans/production-line-batch-129-manifest.json",
+    ".ai/03_plans/batch-129-independent-quality-review.md",
+    ".ai/03_plans/batch-129-git-handoff-stage-list.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-129-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-129-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-129-local-first-scoped-checks.json",
+    ".ai/content-audit-export/ui-block-edit-validation.json",
+    ".ai/content-audit-export/validation-report.json",
+    ".ai/content-audit-export/sync-state.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/compose-error.json"
+  ],
+  "checks": [
+    {
+      "name": "compose/diff/validate",
+      "status": "pass",
+      "detail": "5/5 selected articles composed, diffed safe=true, and bundle-validated."
+    },
+    {
+      "name": "ui-block validation",
+      "status": "pass",
+      "detail": "5/5 selected articles valid; blockers=0 warnings=0."
+    },
+    {
+      "name": "scoped JSON parse",
+      "status": "pass",
+      "detail": "Batch manifest inputs, article metadata/source/question/ui-block JSON parsed."
+    },
+    {
+      "name": "placeholder/internal marker/source audit gap scan",
+      "status": "pass",
+      "detail": "No raw UI-block, internal marker, to-do marker, or source audit gap markers remain in selected normalized/candidate/question/source/evidence scope."
+    },
+    {
+      "name": "source hash checks",
+      "status": "pass",
+      "detail": "All local source capture/refined file hashes match sources.json, and all source-audit-evidence checked local source hashes match local files."
+    },
+    {
+      "name": "question-edit count",
+      "status": "pass",
+      "detail": "65 linked questions and 65 edits across 5 selected clusters; answer key changes=0; option text changes=1."
+    },
+    {
+      "name": "stale compose-error scan",
+      "status": "pass",
+      "detail": "No selected compose-error.json file exists after successful compose."
+    },
+    {
+      "name": "targeted content-audit tests",
+      "status": "pass",
+      "detail": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed 34 tests, 0 failures."
+    },
+    {
+      "name": "scoped git diff --check",
+      "status": "pass",
+      "detail": "git diff --check passed for intended tracked Batch 129 paths; separate whitespace scan passed for 87 existing intended paths including untracked artifacts."
+    },
+    {
+      "name": "git index stage",
+      "status": "blocked",
+      "detail": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "slug": "lea-theo-001-10-core-concept",
+      "title": "Francis D.K. Ching: Primary Elements of Form",
+      "folder": ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "ui_block_validation_valid": true,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "candidate_hash": "sha256:d78ea0b3d2a97dbeb0f09dc25401ae61052b7addac90dd97b9d4bde2efc752bf",
+      "source_hashes": [
+        "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+        "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671"
+      ],
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true
+      }
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "slug": "lea-theo-001-11-core-concept",
+      "title": "Space and Form in Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238",
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "ui_block_validation_valid": true,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "candidate_hash": "sha256:0b757bd169ed7e345672d8cea0a0c852074376d75eb207a6f999760f06eadda0",
+      "source_hashes": [
+        "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+        "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3"
+      ],
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true
+      }
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "slug": "lea-theo-002-02-core-concept",
+      "title": "Design Principles: Proportion, Balance, Rhythm, Contrast, Scale, and Character",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "ui_block_validation_valid": true,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "candidate_hash": "sha256:dc760568c063b2219637b474d7653dc9029899e0335bb712c9121ced26c12eca",
+      "source_hashes": [
+        "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+        "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9"
+      ],
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true
+      }
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "slug": "lea-theo-002-06-core-concept",
+      "title": "Spatial Organization Types",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "ui_block_validation_valid": true,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "candidate_hash": "sha256:10e23ab63d0cb5a5e472db61ff0564fb15a60e5db9d79a619043bc84642197d0",
+      "source_hashes": [
+        "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+        "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810"
+      ],
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true
+      }
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "slug": "lea-theo-002-07-core-concept",
+      "title": "Architectural Elements and Articulation",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b",
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "ui_block_validation_valid": true,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "candidate_hash": "sha256:885b69de0764c9aaa3066d632b299249aad8e334d0f3cef41ba9bb741117dd42",
+      "source_hashes": [
+        "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+        "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226"
+      ],
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true
+      }
+    }
+  ],
+  "source_hash_check": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+      "expected_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "actual_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+      "expected_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "actual_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+      "expected_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "actual_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md",
+      "expected_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "actual_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+      "expected_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "actual_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md",
+      "expected_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "actual_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+      "expected_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "actual_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+      "expected_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "actual_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+      "expected_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "actual_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md",
+      "expected_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "actual_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "passed": true
+    }
+  ],
+  "checked_local_source_hash_check": [
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+      "expected_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "actual_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+      "expected_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "actual_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+      "expected_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "actual_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md",
+      "expected_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "actual_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+      "expected_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "actual_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md",
+      "expected_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "actual_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+      "expected_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "actual_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+      "expected_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "actual_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+      "expected_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+      "actual_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+      "expected_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+      "actual_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+      "expected_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "actual_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md",
+      "expected_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "actual_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    }
+  ],
+  "forbidden_actions_not_performed": [
+    "supabase_push",
+    "deploy",
+    "production_db_mutation",
+    "main_merge"
+  ],
+  "git_handoff_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+}

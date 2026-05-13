@@ -1,0 +1,449 @@
+{
+  "batch_id": "source-audited-article-batch-129-local-first",
+  "generated_at": "2026-05-14T12:45:00.000+08:00",
+  "updated_at": "2026-05-14T12:45:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "baseline_full_commit": "63e22ccb98f3750d255944fc1a5ec12ed7b758ac",
+  "branch": "3dlab-gray-viewport-bg",
+  "local_first": true,
+  "internet_enabled": true,
+  "selected_articles": [
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "slug": "lea-theo-001-10-core-concept",
+      "title": "Francis D.K. Ching: Primary Elements of Form",
+      "folder": ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+        "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671"
+      ],
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "source_locator": "Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24.",
+      "normalized_hash": "sha256:d78ea0b3d2a97dbeb0f09dc25401ae61052b7addac90dd97b9d4bde2efc752bf",
+      "candidate_hash": "sha256:d78ea0b3d2a97dbeb0f09dc25401ae61052b7addac90dd97b9d4bde2efc752bf",
+      "original_hash": "sha256:be306bd4bc0f874f1dc9ddd2634f8071c4424c7ad2158a23011757f6d6d4e078",
+      "sources_hash": "sha256:781ac289d4812b76537268d6d775d11723521cd2663901f4140d8db011905f62",
+      "linked_questions_hash": "sha256:296bb55c78822aa83957bd7618e46dc8e6d46a7406e48b72d902232b461e9852",
+      "real_world_scenario": "added_source_safe_real_world_scenario: read a school courtyard by locating the flagpole as a point, the covered walk as a line, the wall and floor surfaces as planes, and the classroom block as volume before naming the design logic.",
+      "unsupported_or_removed_claims": [
+        "Removed stale raw UI-block marker blocks from normalized content because ui-blocks.json has zero owned blocks.",
+        "Narrowed Ching claims to the checked primary-elements vocabulary instead of broad unsupported textbook summaries.",
+        "Cleaned linked-question rationales and removed repeated explanation text."
+      ]
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "slug": "lea-theo-001-11-core-concept",
+      "title": "Space and Form in Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238",
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+        "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3"
+      ],
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "source_locator": "Wiley official Ching book record; TOA 2 refined markdown lines 46-48, 470-520, 730-817, 1009-1075; theory refined markdown lines 22-24.",
+      "normalized_hash": "sha256:0b757bd169ed7e345672d8cea0a0c852074376d75eb207a6f999760f06eadda0",
+      "candidate_hash": "sha256:0b757bd169ed7e345672d8cea0a0c852074376d75eb207a6f999760f06eadda0",
+      "original_hash": "sha256:271e9ae28ddc0e03a43144ab2a16235c1b52a98d3adbfff81ea4101a5ef20117",
+      "sources_hash": "sha256:c7d54e1ba006551ccd8df1426c43a4a9428063c4efbfae2d061eb411b14ffc59",
+      "linked_questions_hash": "sha256:b98601f5fcd1a416a1fbdda184be5bdfcbffd6172ec10725197d55f442ea709c",
+      "real_world_scenario": "added_source_safe_real_world_scenario: diagnose a chapel, lobby, or classroom by asking whether planes imply enclosure, openings weaken or reinforce the boundary, and volume is read as mass or space.",
+      "unsupported_or_removed_claims": [
+        "Reframed space/form as reciprocal mass, boundary, opening, and enclosure logic instead of a generic style statement.",
+        "Removed repeated or circular rationale text from linked questions.",
+        "Kept examples source-safe by tying them to the checked local source map instead of unsupported building trivia."
+      ]
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "slug": "lea-theo-002-02-core-concept",
+      "title": "Design Principles: Proportion, Balance, Rhythm, Contrast, Scale, and Character",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+        "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9"
+      ],
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "source_locator": "Wiley official Ching book record; TOA 2 refined markdown lines 1487-1517, 1527-1543, 1585-1593, 2069-2100, 2136-2177, 2352-2396; theory refined markdown lines 47-90.",
+      "normalized_hash": "sha256:dc760568c063b2219637b474d7653dc9029899e0335bb712c9121ced26c12eca",
+      "candidate_hash": "sha256:dc760568c063b2219637b474d7653dc9029899e0335bb712c9121ced26c12eca",
+      "original_hash": "sha256:b31582652d238ee665027a746ea81e1ca77a0d87211e102edd81efb89e8fab53",
+      "sources_hash": "sha256:41f01c671eee7eb3cc354e35bc2bb4a07ab1cc6b4d59940429a85bb3622777fa",
+      "linked_questions_hash": "sha256:30b496fc62f41f2d0675a6a84d072587fd8cae9afbf09c5a9bce74bf234ad35d",
+      "real_world_scenario": "added_source_safe_real_world_scenario: review a civic hall facade by identifying dominant axis, balanced masses, repeated bays, scaled entrances, and contrasting focal elements before selecting a principle label.",
+      "unsupported_or_removed_claims": [
+        "Corrected the old article-title drift from Building Types by Francis D.K. Ching to design-principles scope.",
+        "Bound axis, symmetry, hierarchy, datum, rhythm, balance, scale, and contrast to local source-map anchors.",
+        "Rewrote question feedback to distinguish principle recognition from memorized textbook labels."
+      ]
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "slug": "lea-theo-002-06-core-concept",
+      "title": "Spatial Organization Types",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+        "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810"
+      ],
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "source_locator": "Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39.",
+      "normalized_hash": "sha256:10e23ab63d0cb5a5e472db61ff0564fb15a60e5db9d79a619043bc84642197d0",
+      "candidate_hash": "sha256:10e23ab63d0cb5a5e472db61ff0564fb15a60e5db9d79a619043bc84642197d0",
+      "original_hash": "sha256:e98004b5689085171e60e7357de4ca8c481c1cfaea163febd073845b5c8d121c",
+      "sources_hash": "sha256:6727fd72802bd60ef5dce8cf188861e1ef6548974cff95eac12434e42f1e59be",
+      "linked_questions_hash": "sha256:19da38dc724e7d3ebd7169b9016a1672b877947158231a6bf959348678aeb77f",
+      "real_world_scenario": "added_source_safe_real_world_scenario: map a small campus by deciding whether rooms gather around a center, line up along a spine, cluster by adjacency, radiate from a core, or organize on a grid.",
+      "unsupported_or_removed_claims": [
+        "Corrected the incomplete old title to Spatial Organization Types.",
+        "Grounded centralized, linear, radial, clustered, and grid organization in local TOA 3 source locators.",
+        "Cleaned linked-question rationales so each distractor maps to a specific organization error."
+      ]
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "slug": "lea-theo-002-07-core-concept",
+      "title": "Architectural Elements and Articulation",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b",
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+        "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226"
+      ],
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4",
+        "https://www.wiley-vch.de/en/areas-interest/engineering/a-visual-dictionary-of-architecture-978-0-470-64885-8"
+      ],
+      "source_locator": "Wiley official Ching book records; TOA 2 refined markdown lines 250-303, 331-400, 470-520, 730-817, 1009-1075.",
+      "normalized_hash": "sha256:885b69de0764c9aaa3066d632b299249aad8e334d0f3cef41ba9bb741117dd42",
+      "candidate_hash": "sha256:885b69de0764c9aaa3066d632b299249aad8e334d0f3cef41ba9bb741117dd42",
+      "original_hash": "sha256:4a5351849425f267f6e2d68c071878ec7f2aae9afbe1cabd18224cdac1b97177",
+      "sources_hash": "sha256:191611a47767edcea109814523dc9a42883bbf0860b23f90856a196204b7b9df",
+      "linked_questions_hash": "sha256:8b3248ce87de00dd06b651b7ed14f94de457bdd5efb9b74ed6f83bd63df5205e",
+      "real_world_scenario": "added_source_safe_real_world_scenario: study an elevation by separating structural columns, wall planes, window openings, edge articulation, material expression, and visual hierarchy before naming the design move.",
+      "unsupported_or_removed_claims": [
+        "Corrected the old proportion-systems title drift to architectural elements and articulation.",
+        "Narrowed element/articulation claims to source-backed columns, walls, openings, edges, materials, and hierarchy.",
+        "Rewrote questions to test recognition of visible architectural elements rather than broad proportion-system recall."
+      ]
+    }
+  ],
+  "totals": {
+    "article_count": 5,
+    "linked_question_count": 65,
+    "question_edit_count": 65,
+    "source_entry_count": 10,
+    "local_source_artifact_count": 10,
+    "answer_key_change_count": 0,
+    "option_text_change_count": 1
+  },
+  "source_hash_check": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+      "expected_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "actual_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+      "expected_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "actual_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+      "expected_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "actual_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md",
+      "expected_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "actual_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+      "expected_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "actual_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md",
+      "expected_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "actual_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+      "expected_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "actual_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+      "expected_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "actual_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+      "expected_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "actual_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md",
+      "expected_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "actual_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "passed": true
+    }
+  ],
+  "checked_local_source_hash_check": [
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+      "expected_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "actual_sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+      "expected_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "actual_sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+      "expected_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "actual_sha256": "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md",
+      "expected_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "actual_sha256": "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+      "expected_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "actual_sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md",
+      "expected_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "actual_sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+      "expected_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "actual_sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+      "expected_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "actual_sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+      "expected_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+      "actual_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+      "expected_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+      "actual_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "expected_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "actual_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "passed": true
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "expected_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "actual_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+      "expected_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "actual_sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md",
+      "expected_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "actual_sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "expected_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "actual_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "passed": true
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "expected_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "actual_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "passed": true
+    }
+  ],
+  "forbidden_actions_not_performed": [
+    "supabase_push",
+    "deploy",
+    "production_db_mutation",
+    "main_merge"
+  ],
+  "git_handoff_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+}

@@ -1,44 +1,38 @@
 {
   "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:65931f0d0161bb79cf7d5ccc6679ce9efbaa0b06296573ef40dda2dee20657d1",
-  "source_count": 3,
+  "sources_hash": "sha256:41f01c671eee7eb3cc354e35bc2bb4a07ab1cc6b4d59940429a85bb3622777fa",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "741e5b64-5c62-4859-92e9-0977d61a7d1b",
+      "source_id": "batch129-lea-theo-002-02-core-concept-source-map-capture",
       "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "label": "Ching, Francis D.K. *Architecture: Form, Space, and Order*. 4th ed",
+      "label": "Design Principles: Proportion, Balance, Rhythm, Contrast, Scale, and Character source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "9e181322-e127-4c05-9d6f-0b27e6ed9f0f",
-      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "label": "Wiley, 2014. Ching, Francis D.K. *A Visual Dictionary of Architecture*. 2nd ed",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/source-backed anchors for Design Principles: Proportion, Balance, Rhythm, Contrast, Scale, and Character. raw_source_layer_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md; raw_source_sha256=sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada; checked_locator=Wiley official Ching book record; TOA 2 refined markdown lines 1487-1517, 1527-1543, 1585-1593, 2069-2100, 2136-2177, 2352-2396; theory refined markdown lines 47-90.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+      "sha256": "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+      "locator": "Wiley official Ching book record; TOA 2 refined markdown lines 1487-1517, 1527-1543, 1585-1593, 2069-2100, 2136-2177, 2352-2396; theory refined markdown lines 47-90.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     },
     {
-      "source_id": "fa38c279-68f1-45bc-9452-d29093ded2c6",
+      "source_id": "batch129-lea-theo-002-02-core-concept-source-map-refined",
       "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "label": "Wiley, 2011. Rasmussen, Steen Eiler. *Experiencing Architecture*. MIT Press, 1964",
+      "label": "Design Principles: Proportion, Balance, Rhythm, Contrast, Scale, and Character refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Design Principles: Proportion, Balance, Rhythm, Contrast, Scale, and Character and linked question edits. refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md; refined_markdown_sha256=sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9; checked_locator=Wiley official Ching book record; TOA 2 refined markdown lines 1487-1517, 1527-1543, 1585-1593, 2069-2100, 2136-2177, 2352-2396; theory refined markdown lines 47-90.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md",
+      "sha256": "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9",
+      "locator": "Wiley official Ching book record; TOA 2 refined markdown lines 1487-1517, 1527-1543, 1585-1593, 2069-2100, 2136-2177, 2352-2396; theory refined markdown lines 47-90.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     }
   ]
 }

@@ -1,44 +1,38 @@
 {
   "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:07e3fe2f7278ab5cc0171ed5cf3285a9a62654c41e61ad481026d948a4070152",
-  "source_count": 3,
+  "sources_hash": "sha256:6727fd72802bd60ef5dce8cf188861e1ef6548974cff95eac12434e42f1e59be",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "3add1978-6006-4526-83d7-85a8a4e6d5d3",
+      "source_id": "batch129-lea-theo-002-06-core-concept-source-map-capture",
       "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
-      "label": "Ching, Francis D.K. *Architecture: Form, Space, and Order*. 4th ed",
+      "label": "Spatial Organization Types source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "bd3c7396-79b9-4548-b1ff-69bac28790a2",
-      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
-      "label": "Wiley, 2014. Ching, Francis D.K. *A Visual Dictionary of Architecture*. 2nd ed",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/source-backed anchors for Spatial Organization Types. raw_source_layer_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md; raw_source_sha256=sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb; checked_locator=Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+      "sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "locator": "Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     },
     {
-      "source_id": "00c1f5d9-0ca2-4b90-8696-c14b3908be58",
+      "source_id": "batch129-lea-theo-002-06-core-concept-source-map-refined",
       "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
-      "label": "Wiley, 2011. Preiser, Wolfgang F.E., and Jacqueline C. Vischer, eds. *Assessing Building Performance*. Elsevier, 2005",
+      "label": "Spatial Organization Types refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Spatial Organization Types and linked question edits. refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md; refined_markdown_sha256=sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810; checked_locator=Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+      "sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "locator": "Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     }
   ]
 }

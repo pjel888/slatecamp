@@ -1,0 +1,103 @@
+# Batch 129 Git Handoff Stage List
+
+Generated: 2026-05-14T12:45:00.000+08:00
+Status: passed_local_validation_git_index_blocked_handoff
+
+Codex stage attempt blocked: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted.
+
+Stage exactly the following paths for Batch 129. Use git add -f for ignored vitruvius source-map artifacts if needed.
+
+- `.ai/03_plans/production-line-batch-129-manifest.json`
+- `.ai/03_plans/batch-129-independent-quality-review.md`
+- `.ai/03_plans/batch-129-git-handoff-stage-list.md`
+- `.ai/03_plans/source-audited-production-line-coordination.md`
+- `.ai/03_plans/source-audited-local-first-batches-handoff.md`
+- `.ai/03_plans/source-audited-local-first-freeze-readiness-report.md`
+- `.ai/content-audit-export/source-audited-article-batch-129-local-first-report.md`
+- `.ai/content-audit-export/source-audited-article-batch-129-local-first-ledger.json`
+- `.ai/content-audit-export/source-audited-article-batch-129-local-first-scoped-checks.json`
+- `.ai/content-audit-export/ui-block-edit-validation.json`
+- `.ai/content-audit-export/validation-report.json`
+- `.ai/content-audit-export/sync-state.json`
+- `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/candidate.md`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/compose-report.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/diff-report.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/diff-report.md`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/normalized.md`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/sources.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/candidate.md`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/compose-report.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/diff-report.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/diff-report.md`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/normalized.md`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/sources.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/candidate.md`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/compose-report.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/diff-report.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/diff-report.md`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/normalized.md`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/sources.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/candidate.md`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/compose-report.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/diff-report.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/diff-report.md`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/normalized.md`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/sources.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/candidate.md`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/compose-report.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/diff-report.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/diff-report.md`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/normalized.md`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/sources.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/compose-error.json`
+
+Do not stage unrelated dirty .ai/00_performance, .ai/00_system/DOCS_SOURCE_OF_TRUTH.md, .ai/README.md, .hermes/skills, .ai/00_system/philip-ux-ui-calibration.md, unrelated content-roundtrip run directories, or other non-Batch 129 files.

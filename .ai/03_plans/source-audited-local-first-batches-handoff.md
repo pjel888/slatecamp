@@ -1,3 +1,20 @@
+## Batch 129 Git Index Blocked Handoff - 2026-05-14T12:45:00.000+08:00
+
+Local validation passed, but Codex could not write .git/index.lock. Hermes should stage the Batch 129 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 129`, and push `origin/3dlab-gray-viewport-bg`.
+
+## Batch 129 Local-First Handoff - 2026-05-14T12:45:00.000+08:00
+
+Ready for acceptance commit: `chore(content): accept source-audited batch 129`. Intended paths are recorded in `.ai/03_plans/batch-129-git-handoff-stage-list.md`; unrelated dirty work remains excluded.
+
+## Batch 129 Handoff - 2026-05-14
+
+- Batch 129 continues after accepted Batch 128. History residuals are exhausted after `lea-hist-015-03`, so it consumes the next five sourceable Theory clusters: lea-theo-001-10-core-concept, lea-theo-001-11-core-concept, lea-theo-002-02-core-concept, lea-theo-002-06-core-concept, lea-theo-002-07-core-concept.
+- Required local artifacts are present under `.ai/03_plans`, `.ai/content-audit-export`, selected article folders, and `vitruvius-connection/.../source-map-batch-129`.
+- Next residual pointer after a successful commit: continue with the next sourceable non-prac residual cluster after `lea-theo-002-07-core-concept`.
+- If git index or GitHub DNS blocks finalization, Hermes should stage only the intended Batch 129 paths listed in the manifest and stage list.
+
+---
+
 ## Batch 128 Git Index Blocked Handoff - 2026-05-14T10:45:00.000+08:00
 
 Local validation passed, but Codex could not write .git/index.lock. Hermes should stage the Batch 128 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 128`, and push `origin/3dlab-gray-viewport-bg`.

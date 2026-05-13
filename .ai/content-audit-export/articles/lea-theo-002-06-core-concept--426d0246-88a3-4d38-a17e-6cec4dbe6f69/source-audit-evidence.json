@@ -1,0 +1,60 @@
+{
+  "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+  "slug": "lea-theo-002-06-core-concept",
+  "batch_id": "source-audited-article-batch-129-local-first",
+  "generated_at": "2026-05-14T12:45:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39.",
+  "source_urls": [
+    "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+  ],
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md"
+  ],
+  "checked_sources": [
+    {
+      "source_id": "batch129-lea-theo-002-06-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+      "sha256": "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+      "locator": "Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39."
+    },
+    {
+      "source_id": "batch129-lea-theo-002-06-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+      "sha256": "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810",
+      "locator": "Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39."
+    },
+    {
+      "source_id": "batch129-lea-theo-002-06-core-concept-checked-local-source-1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+      "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch129-lea-theo-002-06-core-concept-checked-local-source-2",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+      "sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+      "locator": "lines 142-164, 210-212, 277-347, 455-457"
+    },
+    {
+      "source_id": "batch129-lea-theo-002-06-core-concept-checked-local-source-3",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch129-lea-theo-002-06-core-concept-checked-local-source-4",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "locator": "lines 33-39"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Corrected article title from an incomplete sentence to spatial organization types.",
+    "Removed stale raw UI-block marker blocks from normalized content because ui-blocks.json has zero owned blocks.",
+    "Cleaned question rationales around centralized versus radial and clustered versus grid traps."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario: classify a clinic plan by checking whether departments cluster around an atrium, extend along corridors, radiate from a hub, group by function, or follow a grid."
+}

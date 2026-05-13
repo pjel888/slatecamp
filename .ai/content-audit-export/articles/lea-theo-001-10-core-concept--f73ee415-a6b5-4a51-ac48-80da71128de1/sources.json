@@ -1,32 +1,38 @@
 {
   "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:6bde34a0a5e8d12ef97c5d2ba41dbe0d33c1aeb820efe874ce9c23a6e0bc56ac",
+  "sources_hash": "sha256:781ac289d4812b76537268d6d775d11723521cd2663901f4140d8db011905f62",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "99beaa7e-3228-4cc9-9f8d-b6a223ed5b5f",
+      "source_id": "batch129-lea-theo-001-10-core-concept-source-map-capture",
       "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
-      "label": "Ching, Francis D. K. *Architecture: Form, Space, and Order*. 3rd ed., John Wiley & Sons, 2007. Beckwith House Interiors. \"Architecture: Form, Space, & Order by Francis D.K",
+      "label": "Francis D.K. Ching: Primary Elements of Form source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "Ching Chapter One Part II.\" Beckwith House Interiors, 14 Jan. 2020, https://beckwithhouseinteriors.wordpress.com/2020/01/14/architecture-form-space-order-by-francis-d-k-ching-chapter-one-part-ii/. Scribd. \"DK CHING SUMMARY NOTES - Architecture Form, Space and Order.\" Scribd, https://www.scribd.com/document/492343906/DK-CHING-SUMMARY-NOTES-Architecture-Form-Space-and-Order",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/source-backed anchors for Francis D.K. Ching: Primary Elements of Form. raw_source_layer_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md; raw_source_sha256=sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82; checked_locator=Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+      "sha256": "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+      "locator": "Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     },
     {
-      "source_id": "490a6b50-2095-48de-8c87-0016340bffed",
+      "source_id": "batch129-lea-theo-001-10-core-concept-source-map-refined",
       "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
-      "label": "Archive.org. \"Full text of 'Francis D. K. Ching, Architecture Form, Space And Order 3rd Edition.'\" Internet Archive",
+      "label": "Francis D.K. Ching: Primary Elements of Form refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "https://archive.org/stream/FrancisD.K.ChingArchitectureFormSpaceAndOrder3rdEdition/Francis+D.K.+Ching,+Architecture+-+Form,++Space+and+Order++3rd+Edition_djvu.txt",
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Francis D.K. Ching: Primary Elements of Form and linked question edits. refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md; refined_markdown_sha256=sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671; checked_locator=Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+      "sha256": "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671",
+      "locator": "Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     }
   ]
 }

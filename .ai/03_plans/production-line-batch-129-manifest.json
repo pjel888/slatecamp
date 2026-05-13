@@ -1,0 +1,368 @@
+{
+  "batch_id": "source-audited-article-batch-129-local-first",
+  "generated_at": "2026-05-14T12:45:00.000+08:00",
+  "updated_at": "2026-05-14T12:45:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "baseline_commit": "63e22ccb9",
+  "baseline_full_commit": "63e22ccb98f3750d255944fc1a5ec12ed7b758ac",
+  "previous_content_batch_commit": "63e22ccb98f3750d255944fc1a5ec12ed7b758ac",
+  "branch": "3dlab-gray-viewport-bg",
+  "selection_policy": "Batch 128 exhausted the history queue at lea-hist-015-03, so Batch 129 selected the next five sourceable residual non-prac theory bundles with linked questions and local source-map support.",
+  "consumed_before_batch_129": [
+    "lea-hist-014-04-core-concept",
+    "lea-hist-014-05-core-concept",
+    "lea-hist-015-01-core-concept",
+    "lea-hist-015-02-core-concept",
+    "lea-hist-015-03-core-concept"
+  ],
+  "selected_articles": [
+    {
+      "article_id": "f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "slug": "lea-theo-001-10-core-concept",
+      "title": "Francis D.K. Ching: Primary Elements of Form",
+      "folder": ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1",
+      "source_count": 2,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: read a school courtyard by locating the flagpole as a point, the covered walk as a line, the wall and floor surfaces as planes, and the classroom block as volume before naming the design logic.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to Batch 129 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed stale raw UI-block marker blocks from normalized content because ui-blocks.json has zero owned blocks.",
+        "Narrowed Ching claims to the checked primary-elements vocabulary instead of broad unsupported textbook summaries.",
+        "Cleaned linked-question rationales and removed repeated explanation text."
+      ],
+      "normalized_hash": "sha256:d78ea0b3d2a97dbeb0f09dc25401ae61052b7addac90dd97b9d4bde2efc752bf",
+      "candidate_hash": "sha256:d78ea0b3d2a97dbeb0f09dc25401ae61052b7addac90dd97b9d4bde2efc752bf",
+      "sources_hash": "sha256:781ac289d4812b76537268d6d775d11723521cd2663901f4140d8db011905f62",
+      "linked_questions_hash": "sha256:296bb55c78822aa83957bd7618e46dc8e6d46a7406e48b72d902232b461e9852",
+      "source_locator": "Wiley official Ching book record; TOA 2 refined markdown lines 31-90, 162-309, 330-430; theory refined markdown lines 15-24.",
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:4c7881202ce2a70ce01ecd36aedc1a2b6c97e61d58aadb4d9e875b13bfc38d82",
+        "sha256:3e8835f2e518687d89f49d9da3ac454ec3092ac23811398164898b347e038671"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "original_hash": "sha256:be306bd4bc0f874f1dc9ddd2634f8071c4424c7ad2158a23011757f6d6d4e078"
+    },
+    {
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "slug": "lea-theo-001-11-core-concept",
+      "title": "Space and Form in Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238",
+      "source_count": 2,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: diagnose a chapel, lobby, or classroom by asking whether planes imply enclosure, openings weaken or reinforce the boundary, and volume is read as mass or space.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to Batch 129 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Reframed space/form as reciprocal mass, boundary, opening, and enclosure logic instead of a generic style statement.",
+        "Removed repeated or circular rationale text from linked questions.",
+        "Kept examples source-safe by tying them to the checked local source map instead of unsupported building trivia."
+      ],
+      "normalized_hash": "sha256:0b757bd169ed7e345672d8cea0a0c852074376d75eb207a6f999760f06eadda0",
+      "candidate_hash": "sha256:0b757bd169ed7e345672d8cea0a0c852074376d75eb207a6f999760f06eadda0",
+      "sources_hash": "sha256:c7d54e1ba006551ccd8df1426c43a4a9428063c4efbfae2d061eb411b14ffc59",
+      "linked_questions_hash": "sha256:b98601f5fcd1a416a1fbdda184be5bdfcbffd6172ec10725197d55f442ea709c",
+      "source_locator": "Wiley official Ching book record; TOA 2 refined markdown lines 46-48, 470-520, 730-817, 1009-1075; theory refined markdown lines 22-24.",
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:eab0d6ff21e0b10347a9121fb076a38a5bedbfb285791dcc2e796b1158b868ca",
+        "sha256:489e4054f3fc1898adfb9d1ab8d65136a3a026351b55a0cf0cf7a58e3e6bd6f3"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "original_hash": "sha256:271e9ae28ddc0e03a43144ab2a16235c1b52a98d3adbfff81ea4101a5ef20117"
+    },
+    {
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "slug": "lea-theo-002-02-core-concept",
+      "title": "Design Principles: Proportion, Balance, Rhythm, Contrast, Scale, and Character",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "source_count": 2,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: review a civic hall facade by identifying dominant axis, balanced masses, repeated bays, scaled entrances, and contrasting focal elements before selecting a principle label.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to Batch 129 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Corrected the old article-title drift from Building Types by Francis D.K. Ching to design-principles scope.",
+        "Bound axis, symmetry, hierarchy, datum, rhythm, balance, scale, and contrast to local source-map anchors.",
+        "Rewrote question feedback to distinguish principle recognition from memorized textbook labels."
+      ],
+      "normalized_hash": "sha256:dc760568c063b2219637b474d7653dc9029899e0335bb712c9121ced26c12eca",
+      "candidate_hash": "sha256:dc760568c063b2219637b474d7653dc9029899e0335bb712c9121ced26c12eca",
+      "sources_hash": "sha256:41f01c671eee7eb3cc354e35bc2bb4a07ab1cc6b4d59940429a85bb3622777fa",
+      "linked_questions_hash": "sha256:30b496fc62f41f2d0675a6a84d072587fd8cae9afbf09c5a9bce74bf234ad35d",
+      "source_locator": "Wiley official Ching book record; TOA 2 refined markdown lines 1487-1517, 1527-1543, 1585-1593, 2069-2100, 2136-2177, 2352-2396; theory refined markdown lines 47-90.",
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:c56a11be111b7fbb0df9d577c1cbbde3df3f5ad36d0d42a951f946bf8620eada",
+        "sha256:e5082d4c1a5484f280ce8d36ae27d90aa78ec1184945f62788568ffec5266ce9"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "original_hash": "sha256:b31582652d238ee665027a746ea81e1ca77a0d87211e102edd81efb89e8fab53"
+    },
+    {
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "slug": "lea-theo-002-06-core-concept",
+      "title": "Spatial Organization Types",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "source_count": 2,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: map a small campus by deciding whether rooms gather around a center, line up along a spine, cluster by adjacency, radiate from a core, or organize on a grid.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to Batch 129 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Corrected the incomplete old title to Spatial Organization Types.",
+        "Grounded centralized, linear, radial, clustered, and grid organization in local TOA 3 source locators.",
+        "Cleaned linked-question rationales so each distractor maps to a specific organization error."
+      ],
+      "normalized_hash": "sha256:10e23ab63d0cb5a5e472db61ff0564fb15a60e5db9d79a619043bc84642197d0",
+      "candidate_hash": "sha256:10e23ab63d0cb5a5e472db61ff0564fb15a60e5db9d79a619043bc84642197d0",
+      "sources_hash": "sha256:6727fd72802bd60ef5dce8cf188861e1ef6548974cff95eac12434e42f1e59be",
+      "linked_questions_hash": "sha256:19da38dc724e7d3ebd7169b9016a1672b877947158231a6bf959348678aeb77f",
+      "source_locator": "Wiley official Ching book record; TOA 3 refined markdown lines 142-164, 210-212, 277-347, 455-457; theory refined markdown lines 33-39.",
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:38029f1eec89b8658e42071214844a6eae3cfc3cff76f1caef3adacfc95aaabb",
+        "sha256:5691cb5e19dce93ecf9193d9a69af5173f43e402e411931a22841af9ff54c810"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "original_hash": "sha256:e98004b5689085171e60e7357de4ca8c481c1cfaea163febd073845b5c8d121c"
+    },
+    {
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "slug": "lea-theo-002-07-core-concept",
+      "title": "Architectural Elements and Articulation",
+      "folder": ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b",
+      "source_count": 2,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: study an elevation by separating structural columns, wall planes, window openings, edge articulation, material expression, and visual hierarchy before naming the design move.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to Batch 129 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Corrected the old proportion-systems title drift to architectural elements and articulation.",
+        "Narrowed element/articulation claims to source-backed columns, walls, openings, edges, materials, and hierarchy.",
+        "Rewrote questions to test recognition of visible architectural elements rather than broad proportion-system recall."
+      ],
+      "normalized_hash": "sha256:885b69de0764c9aaa3066d632b299249aad8e334d0f3cef41ba9bb741117dd42",
+      "candidate_hash": "sha256:885b69de0764c9aaa3066d632b299249aad8e334d0f3cef41ba9bb741117dd42",
+      "sources_hash": "sha256:191611a47767edcea109814523dc9a42883bbf0860b23f90856a196204b7b9df",
+      "linked_questions_hash": "sha256:8b3248ce87de00dd06b651b7ed14f94de457bdd5efb9b74ed6f83bd63df5205e",
+      "source_locator": "Wiley official Ching book records; TOA 2 refined markdown lines 250-303, 331-400, 470-520, 730-817, 1009-1075.",
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4",
+        "https://www.wiley-vch.de/en/areas-interest/engineering/a-visual-dictionary-of-architecture-978-0-470-64885-8"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+        "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "original_hash": "sha256:4a5351849425f267f6e2d68c071878ec7f2aae9afbe1cabd18224cdac1b97177"
+    }
+  ],
+  "totals": {
+    "article_count": 5,
+    "linked_question_count": 65,
+    "question_edit_count": 65,
+    "source_entry_count": 10,
+    "local_source_artifact_count": 10,
+    "answer_key_change_count": 0,
+    "option_text_change_count": 1
+  },
+  "validation_gates": [
+    "compose --overwrite --strict per selected article",
+    "diff --strict per selected article",
+    "validate --summary per selected article",
+    "ui-block edit validation per selected article plus scoped aggregate",
+    "scoped JSON/source-hash/marker/question/stale-error checks",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "live git index stage attempt or handoff blocker capture"
+  ],
+  "validation_results": {
+    "compose": "pass_5_of_5",
+    "diff": "pass_5_of_5",
+    "bundle_validation": "pass_5_of_5_with_expected_component_usage_warnings",
+    "ui_block_validation": "pass_5_of_5_blockers_0_warnings_0",
+    "scoped_checks": "pass",
+    "targeted_tests": "pass_34_tests_0_failures",
+    "scoped_git_diff_check": "pass",
+    "git_index_stage": "blocked_index_lock_permission"
+  },
+  "blockers": [
+    "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  ],
+  "forbidden_actions_not_performed": [
+    "supabase_push",
+    "deploy",
+    "production_db_mutation",
+    "main_merge"
+  ],
+  "intended_paths": [
+    ".ai/03_plans/production-line-batch-129-manifest.json",
+    ".ai/03_plans/batch-129-independent-quality-review.md",
+    ".ai/03_plans/batch-129-git-handoff-stage-list.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-129-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-129-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-129-local-first-scoped-checks.json",
+    ".ai/content-audit-export/ui-block-edit-validation.json",
+    ".ai/content-audit-export/validation-report.json",
+    ".ai/content-audit-export/sync-state.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-10-core-concept-primary-elements-of-form.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-001-10-core-concept--f73ee415-a6b5-4a51-ac48-80da71128de1/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-001-11-core-concept-space-and-form.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-001-11-core-concept--82480e11-1573-4911-a865-c26ee4d44238/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-02-core-concept-design-principles.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-002-02-core-concept--20dc8dae-3a4e-4644-b4c6-b5b1881f830c/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-06-core-concept-spatial-organization-types.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-002-06-core-concept--426d0246-88a3-4d38-a17e-6cec4dbe6f69/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/candidate.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/compose-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/diff-report.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/diff-report.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/normalized.md",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/sources.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-theo-002-07-core-concept--8023b230-7871-463c-abb5-d3027212960b/compose-error.json"
+  ],
+  "git_handoff": {
+    "intended_stage_list": ".ai/03_plans/batch-129-git-handoff-stage-list.md",
+    "commit_message": "chore(content): accept source-audited batch 129",
+    "status": "blocked_index_lock_permission",
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  },
+  "commit_plan": {
+    "intent_line": "Accept Batch 129 because the history residual queue is exhausted and the next five sourceable theory article/question bundles now have local source-backed edits.",
+    "suggested_commit": "chore(content): accept source-audited batch 129"
+  }
+}

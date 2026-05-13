@@ -1,56 +1,38 @@
 {
   "article_id": "8023b230-7871-463c-abb5-d3027212960b",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d9bbd9a5565944b0596f960dda8c6ed8fa11bb8ff0a10aec1d3ce5c3c335e59d",
-  "source_count": 4,
+  "sources_hash": "sha256:191611a47767edcea109814523dc9a42883bbf0860b23f90856a196204b7b9df",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "a4305467-e8a8-4f44-807f-a96f27558f65",
+      "source_id": "batch129-lea-theo-002-07-core-concept-source-map-capture",
       "article_id": "8023b230-7871-463c-abb5-d3027212960b",
-      "label": "Ching, Francis D.K. *Architecture: Form, Space, and Order*. 4th ed",
+      "label": "Architectural Elements and Articulation source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "c0e2c614-7f34-405d-b0b8-212b9b009543",
-      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
-      "label": "Wiley, 2014. Ching, Francis D.K. *Building Construction Illustrated*. 5th ed",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/source-backed anchors for Architectural Elements and Articulation. raw_source_layer_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md; raw_source_sha256=sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49; checked_locator=Wiley official Ching book records; TOA 2 refined markdown lines 250-303, 331-400, 470-520, 730-817, 1009-1075.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.source-capture.md",
+      "sha256": "sha256:eb2bba04d565bbcaec3b3cd618661fa05d944ac4200ec5497302a71102087b49",
+      "locator": "Wiley official Ching book records; TOA 2 refined markdown lines 250-303, 331-400, 470-520, 730-817, 1009-1075.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     },
     {
-      "source_id": "ac2c7edf-1f79-4568-85bf-0474a8ca7649",
+      "source_id": "batch129-lea-theo-002-07-core-concept-source-map-refined",
       "article_id": "8023b230-7871-463c-abb5-d3027212960b",
-      "label": "Wiley, 2014. Ching, Francis D.K. *A Visual Dictionary of Architecture*. 2nd ed",
+      "label": "Architectural Elements and Articulation refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Architectural Elements and Articulation and linked question edits. refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md; refined_markdown_sha256=sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226; checked_locator=Wiley official Ching book records; TOA 2 refined markdown lines 250-303, 331-400, 470-520, 730-817, 1009-1075.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-129/lea-theo-002-07-core-concept-architectural-elements-and-articulation.refined.md",
+      "sha256": "sha256:148d2936e409292d1ed4f342953dda5f09ff87fb22df1eb65b8ec2dbae3a7226",
+      "locator": "Wiley official Ching book records; TOA 2 refined markdown lines 250-303, 331-400, 470-520, 730-817, 1009-1075.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "408667db-85fc-426e-bc50-ac6727260524",
-      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
-      "label": "Wiley, 2011",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-14T12:45:00.000+08:00",
+      "updated_at": "2026-05-14T12:45:00.000+08:00"
     }
   ]
 }
