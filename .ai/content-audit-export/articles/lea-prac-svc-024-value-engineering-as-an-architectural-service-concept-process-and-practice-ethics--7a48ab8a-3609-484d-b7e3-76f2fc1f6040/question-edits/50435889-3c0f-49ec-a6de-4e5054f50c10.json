@@ -2,40 +2,55 @@
   "question_id": "50435889-3c0f-49ec-a6de-4e5054f50c10",
   "baseline_hash": "sha256:780ecadffaf995a7610b647bbb0e341bebe943464cc75cc500198ceed13cd8c9",
   "action": "replace",
-  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
-  "approved_by": "codex-local-first-batch-036",
-  "approved_at": "2026-05-11T12:45:00+08:00",
+  "reason": "source-audited-article-batch-099-local-first retained and refreshed this linked question after local raw-source recheck for lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics.",
+  "approved_by": "codex-local-source-audit-batch-099",
+  "approved_at": "2026-05-13T09:07:08+08:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-036-local-first",
+    "batch_id": "source-audited-article-batch-099-local-first",
     "checked_sources": [
       {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
         "source_id": "construction-project-management-handbook-shadan-fleming-local",
-        "label": "Construction Project Management Handbook by Shadan and Fleming",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
-        "checked_markdown_lines": [
-          "Construction Project Management Handbook refined markdown lines 253-257",
-          "Construction Project Management Handbook refined markdown lines 287-301",
-          "Construction Project Management Handbook refined markdown lines 387-429",
-          "Construction Project Management Handbook refined markdown lines 1544-1577",
-          "Construction Project Management Handbook refined markdown lines 1614-1664",
-          "Construction Project Management Handbook refined markdown lines 1680-1722",
-          "Construction Project Management Handbook refined markdown lines 1808-1819"
-        ]
+        "locator": "Construction Project Management Handbook refined markdown lines 253-257; Construction Project Management Handbook refined markdown lines 287-301; Construction Project Management Handbook refined markdown lines 387-429; Construction Project Management Handbook refined markdown lines 1544-1577; Construction Project Management Handbook refined markdown lines 1614-1664; Construction Project Management Handbook refined markdown lines 1680-1722; Construction Project Management Handbook refined markdown lines 1808-1819"
       },
       {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+        "source_id": "construction-project-management-handbook-shadan-fleming-local",
+        "locator": "Construction Project Management Handbook refined markdown lines 253-257; Construction Project Management Handbook refined markdown lines 287-301; Construction Project Management Handbook refined markdown lines 387-429; Construction Project Management Handbook refined markdown lines 1544-1577; Construction Project Management Handbook refined markdown lines 1614-1664; Construction Project Management Handbook refined markdown lines 1680-1722; Construction Project Management Handbook refined markdown lines 1808-1819"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
         "source_id": "uap-document-401-402-local",
-        "label": "UAP Document 401-402 - Architect-Owner Agreement",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-        "checked_markdown_lines": [
-          "UAP Document 401-402 refined markdown lines 45-72",
-          "UAP Document 401-402 refined markdown lines 77-89",
-          "UAP Document 401-402 refined markdown lines 105-119"
-        ]
+        "locator": "UAP Document 401-402 refined markdown lines 45-72; UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 105-119"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+        "source_id": "uap-document-401-402-local",
+        "locator": "UAP Document 401-402 refined markdown lines 45-72; UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 105-119"
       }
     ],
-    "citation": "Construction Project Management Handbook"
+    "citation": "Construction Project Management Handbook",
+    "parent_article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+    "parent_article_slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Construction Project Management Handbook refined markdown lines 253-257; Construction Project Management Handbook refined markdown lines 287-301; Construction Project Management Handbook refined markdown lines 387-429; Construction Project Management Handbook refined markdown lines 1544-1577; Construction Project Management Handbook refined markdown lines 1614-1664; Construction Project Management Handbook refined markdown lines 1680-1722; Construction Project Management Handbook refined markdown lines 1808-1819; UAP Document 401-402 refined markdown lines 45-72; UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 105-119",
+    "checked_markdown_lines": [
+      "Construction Project Management Handbook refined markdown lines 253-257",
+      "Construction Project Management Handbook refined markdown lines 287-301",
+      "Construction Project Management Handbook refined markdown lines 387-429",
+      "Construction Project Management Handbook refined markdown lines 1544-1577",
+      "Construction Project Management Handbook refined markdown lines 1614-1664",
+      "Construction Project Management Handbook refined markdown lines 1680-1722",
+      "Construction Project Management Handbook refined markdown lines 1808-1819",
+      "UAP Document 401-402 refined markdown lines 45-72",
+      "UAP Document 401-402 refined markdown lines 77-89",
+      "UAP Document 401-402 refined markdown lines 105-119"
+    ],
+    "local_source_safe_action": "Batch 099 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "Why is VE not the same as simple cost cutting?",
@@ -59,7 +74,12 @@
     ],
     "correct_option_id": "b036-7a48-06-a",
     "rationale": "Correct answer: It preserves required functions and checks life-cycle cost, performance, reliability, maintainability, safety, and aesthetics. This is directly supported by Construction Project Management Handbook.",
-    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for Construction Project Management Handbook.",
-    "code_citation": "Construction Project Management Handbook"
+    "explanation": "Batch 099 refresh: this item is bounded to checked local raw/source-conversion evidence for Value Engineering As an Architectural Service Concept Process.",
+    "code_citation": "Construction Project Management Handbook",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 099"
+    ],
+    "model_id": "BATCH-099-lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics-50435889-3c0f-49ec-a6de-4e5054f50c10"
   }
 }

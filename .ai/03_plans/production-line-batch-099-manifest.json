@@ -1,0 +1,444 @@
+{
+  "batch_number": "099",
+  "batch_id": "source-audited-article-batch-099-local-first",
+  "manifest_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "reserved_at": "2026-05-13T09:04:54+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "0ea69579674ef121453af7f466fc0e39b25cfbd9",
+  "previous_batch": "098",
+  "selection_rule": "Continue the source-audited local-first production line after accepted Batch 098 with exactly five high-value LEA professional-services clusters, linked questions, and exact readable local raw PDFs under vitruvius-connection/001_Raw-Source-Layer. Process serially because validation and handoff outputs are shared mutable surfaces.",
+  "inherited_blocker_status": "Batch 098 accepted at commit 0ea695796 with blockers=0; Batch 099 starts local-first only with no Supabase push, deploy, production DB mutation, or main merge.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS_CURRENT_SERIAL_SET_WITH_HISTORICAL_OVERLAP_RECORDED",
+    "current_serial_source_audited_batches_checked": [
+      "087",
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094",
+      "095",
+      "096",
+      "097",
+      "098"
+    ],
+    "selected_article_count": 5,
+    "selected_ids_found_in_current_serial_accepted_selected_articles": [],
+    "historical_overlap_recorded_separately": true,
+    "historical_local_first_or_reaudit_artifacts": {
+      "ecf888fd-c314-4d20-87e6-4841f84b71a0": [
+        "Batch 025 local-first source-audited repair artifact"
+      ],
+      "4ecfe37d-2ee5-4d7e-8878-65fee5a29770": [
+        "Batch 034 local-first source-audited repair artifact"
+      ],
+      "2660de04-9a95-4581-83c1-792b09b79d48": [
+        "Batch 025 local-first source-audited repair artifact"
+      ],
+      "01e537a7-be03-49ec-b745-258474c27f70": [
+        "Batch 022 local-first source-audited repair artifact"
+      ],
+      "7a48ab8a-3609-484d-b7e3-76f2fc1f6040": [
+        "Batch 036 local-first source-audited repair artifact"
+      ]
+    }
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction"
+    },
+    {
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery"
+    },
+    {
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights"
+    },
+    {
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "slug": "lea-prac-svc-023-core-concept"
+    },
+    {
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "question_edits_existing_before_repair": 50,
+    "stale_question_edit_index_files_to_remove": 0,
+    "scenarios_expected": 5
+  },
+  "article_clusters": [
+    {
+      "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction",
+      "title": "Design Build by Administration vs Design Build by Guaranteed Maximum",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "SPP 207 design-build by administration versus guaranteed maximum project construction cost",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits",
+      "source_family": "UAP Document Standards of Professional Practice - Design-Build by Administration vs Design-Build by Guaranteed Maximum Cost; SPP 207 - Design-Build Services",
+      "source_locators": [
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
+          "label": "UAP Document Standards of Professional Practice - Design-Build by Administration vs Design-Build by Guaranteed Maximum Cost",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "checked_markdown_lines": [
+            "UAP Standards lines 1228-1267"
+          ]
+        },
+        {
+          "source_id": "spp207-design-build-services-local",
+          "label": "SPP 207 - Design-Build Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "conversion_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "checked_markdown_lines": [
+            "SPP 207 lines 147-153"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 025 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
+      "title": "Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "project delivery vocabulary across bidding, design-build, PM, CM, owner representative, and CIAP contract terms",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits",
+      "source_family": "UAP SPP Document 202 - Regular Design Services; UAP Standards of Professional Practice - compiled SPP source; UAP SPP Document 206 - Comprehensive Architectural Services; UAP SPP Document 207 - Design-Build Services; CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
+      "source_locators": [
+        {
+          "source_id": "uap-spp-202-local",
+          "label": "UAP SPP Document 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "conversion_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "checked_markdown_lines": [
+            "UAP SPP 202 refined markdown lines 173-183"
+          ]
+        },
+        {
+          "source_id": "uap-standards-professional-practice2-local",
+          "label": "UAP Standards of Professional Practice - compiled SPP source",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "conversion_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 300-350",
+            "362-418",
+            "475-586",
+            "1036-1077",
+            "1097-1215"
+          ]
+        },
+        {
+          "source_id": "uap-spp-206-local",
+          "label": "UAP SPP Document 206 - Comprehensive Architectural Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "conversion_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "checked_markdown_lines": [
+            "UAP SPP 206 refined markdown lines 3-7",
+            "185-187",
+            "781-785"
+          ]
+        },
+        {
+          "source_id": "uap-spp-207-local",
+          "label": "UAP SPP Document 207 - Design-Build Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "conversion_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "checked_markdown_lines": [
+            "UAP SPP 207 refined markdown lines 3-7",
+            "147-153"
+          ]
+        },
+        {
+          "source_id": "ciap-document-102-local",
+          "label": "CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+          "conversion_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+          "checked_markdown_lines": [
+            "CIAP Document 102 refined markdown lines 172-182",
+            "337-340",
+            "876-890"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 034 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+      "title": "Architectural Design Competitions Types Rules",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "SPP 208 architectural design competition roles, classifications, anonymity, jury, rights, and commission obligation",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits",
+      "source_family": "UAP Document Standards of Professional Practice - Architectural Design Competitions: Types, Rules, and the Architect's Rights; SPP 208 - Architectural Design Competitions",
+      "source_locators": [
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+          "label": "UAP Document Standards of Professional Practice - Architectural Design Competitions: Types, Rules, and the Architect's Rights",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "checked_markdown_lines": [
+            "UAP Standards lines 1284-1410"
+          ]
+        },
+        {
+          "source_id": "spp208-architectural-design-competitions-local",
+          "label": "SPP 208 - Architectural Design Competitions",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+          "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "conversion_sha256": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+          "checked_markdown_lines": [
+            "SPP 208 lines 100-123",
+            "SPP 208 line 305"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 025 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "slug": "lea-prac-svc-023-core-concept",
+      "title": "Architect's Guidelines (formerly 1979 UAP Doc 208-b",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "architect selection and compensation methods under UAP Standards, including MDPE and service-category fee methods",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/question-edits",
+      "source_family": "UAP Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+      "source_locators": [
+        {
+          "source_id": "uap-standards-selection-compensation-supervision-cm-local",
+          "label": "UAP Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "checked_markdown_lines": [
+            "UAP Standards lines 79-100",
+            "UAP Standards lines 217-265",
+            "UAP Standards lines 416-458",
+            "UAP Standards lines 915-964",
+            "UAP Standards lines 1129-1168",
+            "UAP Standards lines 1174-1216"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 022 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
+      "title": "Value Engineering As an Architectural Service Concept Process",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "value engineering timing, team, documented response, and professional ethics boundaries",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/question-edits",
+      "source_family": "Construction Project Management Handbook by Shadan and Fleming; UAP Document 401-402 - Architect-Owner Agreement",
+      "source_locators": [
+        {
+          "source_id": "construction-project-management-handbook-shadan-fleming-local",
+          "label": "Construction Project Management Handbook by Shadan and Fleming",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+          "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+          "conversion_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+          "checked_markdown_lines": [
+            "Construction Project Management Handbook refined markdown lines 253-257",
+            "Construction Project Management Handbook refined markdown lines 287-301",
+            "Construction Project Management Handbook refined markdown lines 387-429",
+            "Construction Project Management Handbook refined markdown lines 1544-1577",
+            "Construction Project Management Handbook refined markdown lines 1614-1664",
+            "Construction Project Management Handbook refined markdown lines 1680-1722",
+            "Construction Project Management Handbook refined markdown lines 1808-1819"
+          ]
+        },
+        {
+          "source_id": "uap-document-401-402-local",
+          "label": "UAP Document 401-402 - Architect-Owner Agreement",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "conversion_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 refined markdown lines 45-72",
+            "UAP Document 401-402 refined markdown lines 77-89",
+            "UAP Document 401-402 refined markdown lines 105-119"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 036 local-first source-audited repair artifact"
+        ]
+      }
+    }
+  ],
+  "required_validation_gates": [
+    "compose 5/5",
+    "diff 5/5",
+    "validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent QA review",
+    "git diff --cached --check before commit"
+  ],
+  "scenario_enrichment_instruction": "Add one source-safe Real World Scenario section for each selected article because these professional-service and delivery-method boundaries are exam-useful in realistic owner-client-contractor settings.",
+  "stop_condition": "Batch 099 local-first work is complete after blockers=0, independent QA PASS, final staged diff checks, commit, and push; then continue Batch 100 unless a real blocker or tool failure stops advancement.",
+  "report_path": ".ai/content-audit-export/source-audited-article-batch-099-local-first-report.md",
+  "ledger_path": ".ai/content-audit-export/source-audited-article-batch-099-local-first-ledger.json",
+  "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-099-local-first-scoped-checks.json",
+  "independent_quality_review_path": ".ai/03_plans/batch-099-independent-quality-review.md",
+  "completed_at": "2026-05-13T09:16:51+08:00",
+  "actuals": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 24,
+    "source_hash_failures": 0,
+    "blockers": 0,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false
+  },
+  "validation_results": {
+    "compose": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": 5,
+      "locally_safe": 5,
+      "blockers": 0
+    },
+    "validate_strict": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": "Expected component-usage.json warnings only."
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "failures": 0,
+      "files_checked": 107
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "matches": 0,
+      "files_checked": 65
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 24,
+      "failures": 0
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "matches": 0
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "tests": 34,
+      "failures": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 099 scoped paths>",
+      "checked_at": "2026-05-13T09:16:51+08:00"
+    },
+    "independent_qa": {
+      "status": "PASS",
+      "path": ".ai/03_plans/batch-099-independent-quality-review.md",
+      "verdict": "PASS",
+      "blockers": 0,
+      "checked_at": "2026-05-13T09:16:51+08:00"
+    }
+  }
+}

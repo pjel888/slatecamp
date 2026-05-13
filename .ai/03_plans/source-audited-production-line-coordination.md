@@ -1,17 +1,17 @@
 # Source-Audited Production-Line Coordination
 
-Updated: 2026-05-13T08:52:04+08:00
+Updated: 2026-05-13T09:16:51+08:00
 Workspace: /Users/philiplewis/slatecamp
 Branch: 3dlab-gray-viewport-bg
-Mode: controlled serial final-gate production line; Batch 097 is accepted at `688cceb08`; Batch 098 is local-first complete with commit/push gate pending.
+Mode: controlled serial final-gate production line; Batch 098 is accepted at `0ea695796`; Batch 099 is local-first complete with commit/push gate pending.
 
 ## Current Committed Baseline
 
-- Current HEAD observed before Batch 098 work: 688cceb08
-- Latest accepted and pushed commit: 688cceb08 (Batch 097 accepted)
-- Latest local-first completed batch: Batch 098, blockers=0, independent QA PASS, commit/push gate pending
-- Batches 087-097 are committed and pushed as the accepted source-audited serial baseline through 688cceb08.
-- Batch 098 completed local-first processing from the Batch 097 cursor recommendation with blockers=0 inherited from Batch 097.
+- Current HEAD observed before Batch 099 work: 0ea695796
+- Latest accepted and pushed commit: 0ea695796 (Batch 098 accepted)
+- Latest local-first completed batch: Batch 099, blockers=0, independent QA PASS, scoped git diff check PASS, commit/push gate pending
+- Batches 087-098 are committed and pushed as the accepted source-audited serial baseline through 0ea695796.
+- Batch 099 completed local-first processing from the Batch 098 cursor recommendation with blockers=0 inherited from Batch 098.
 
 ## Accepted Batches
 
@@ -35,19 +35,20 @@ Mode: controlled serial final-gate production line; Batch 097 is accepted at `68
 | 095 | Accepted, committed at 545d1adf3 with hygiene follow-up 48cf6bff5 | UAP professional services: pre-design, SPP 202 overview, schematic design, contract documents, regular design services | 5 | 50 | 0 | lea-prac-svc-001-pre-design-services (db248a33-44f2-411c-a069-9685200a588c)<br>lea-prac-svc-004-spp-doc-202-overview (0b116082-5275-4d0f-bb23-ce5b74339001)<br>lea-prac-svc-005-phase-1-schematic-design (b3d5ae5b-09a9-426c-9feb-00932e5555aa)<br>lea-prac-svc-007-phase-3-contract-documents (617cdac3-3b02-44b0-b81f-f8827fc4242e)<br>spp-doc-202-regular-design-services (24b0a3db-e6bc-45d0-a9a1-d83009112efb) | production-line-batch-095-manifest.json |
 | 096 | Accepted, committed at 9aa03deea | UAP professional services continuation: feasibility, programming, design development, bidding/construction phase, specialized services | 5 | 50 | 0 | lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role (332b32e5-1890-4765-a7b3-317790804247)<br>lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design (3d1c062c-7fef-4972-9245-c4e404639c49)<br>lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee (bdc69dbd-c7fb-405f-b8f7-38a6a8fce526)<br>lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202 (3a00f9dd-5b51-4ce3-9004-5ef0eec99a26)<br>lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation (debf8513-f91a-4e0a-9f32-8fe4f677ed71) | production-line-batch-096-manifest.json |
 | 097 | Accepted, committed at 688cceb08 | UAP professional services continuation: ADC, PACS, acoustics/lighting specializations, fulltime supervision, construction management | 5 | 50 | 0 | lea-prac-svc-010-core-concept (3e530aa4-6004-4664-a241-9634a725bd5c)<br>lea-prac-svc-011-core-concept (2ec8e3f1-4aa7-443f-8ca1-a77638b2a713)<br>lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations (b912733e-1018-4559-bd53-6c4ca2506e0d)<br>lea-prac-svc-013-full-time-supervision-services-construction-phase-administration (b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b)<br>lea-prac-svc-014-construction-management-services-scope-and-professional-authority (31d08115-b5ff-4b0e-b33e-522e25800da4) | production-line-batch-097-manifest.json |
-| 098 | Accepted local-first, commit/push gate pending | UAP professional services continuation: supervision/CM boundaries, post-construction, CAS, heritage/adaptive reuse, design-build | 5 | 50 | 0 | lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration (1277bf71-f3cc-4d29-86a8-8cadca0133f9)<br>lea-prac-svc-016-post-construction-services-building-administration-and-operations-support (355981c3-3480-4441-991d-8d8e94cd20b5)<br>lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission (50450ba8-a843-4399-9bd9-9b6c854ee65a)<br>lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services (75ef7a25-2d9d-455d-8d89-e6eb0b691240)<br>lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role (9796e088-8c83-4a6c-9599-51afd69d0e81) | production-line-batch-098-manifest.json |
+| 098 | Accepted, committed at 0ea695796 | UAP professional services continuation: supervision/CM boundaries, post-construction, CAS, heritage/adaptive reuse, design-build | 5 | 50 | 0 | lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration (1277bf71-f3cc-4d29-86a8-8cadca0133f9)<br>lea-prac-svc-016-post-construction-services-building-administration-and-operations-support (355981c3-3480-4441-991d-8d8e94cd20b5)<br>lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission (50450ba8-a843-4399-9bd9-9b6c854ee65a)<br>lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services (75ef7a25-2d9d-455d-8d89-e6eb0b691240)<br>lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role (9796e088-8c83-4a6c-9599-51afd69d0e81) | production-line-batch-098-manifest.json |
+| 099 | Accepted local-first, commit/push gate pending | UAP professional services continuation: design-build modes, project delivery terms, ADC rights, compensation methods, value engineering | 5 | 50 | 0 | lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction (ecf888fd-c314-4d20-87e6-4841f84b71a0)<br>lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery (4ecfe37d-2ee5-4d7e-8878-65fee5a29770)<br>lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights (2660de04-9a95-4581-83c1-792b09b79d48)<br>lea-prac-svc-023-core-concept (01e537a7-be03-49ec-b745-258474c27f70)<br>lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics (7a48ab8a-3609-484d-b7e3-76f2fc1f6040) | production-line-batch-099-manifest.json |
 
 ## Worker Instructions
 
-- Work one manifest batch at a time. Batches 090-097 are accepted/committed; Batch 098 is local-first complete and must pass the staged commit gate before Batch 099 starts.
-- Before editing, re-run the prior-batch exclusion check against the current serial accepted batches through Batch 097 plus reservation manifests and any local-first completed batch artifacts.
+- Work one manifest batch at a time. Batches 090-098 are accepted/committed; Batch 099 is local-first complete and must pass the staged commit gate before Batch 100 starts.
+- Before editing, re-run the prior-batch exclusion check against the current serial accepted batches through Batch 098 plus reservation manifests and any local-first completed batch artifacts.
 - Use local raw PDFs under /Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer as primary evidence. Internet lookup may only discover candidate source names or official copies for later local-source acquisition; it cannot be cited as primary evidence.
 - Do not permanently skip difficult articles. If a selected article has missing or weak source families, keep the reservation and mark blocker-resolution-needed with the exact source family and recommended path.
 - Do not edit article content or question edits until the batch is started by the serial coordinator. Reservation work may update only /Users/philiplewis/slatecamp/.ai/03_plans.
 
 ## Reviewer Instructions
 
-- Verify that every newly selected article ID is absent from the current serial accepted set through Batch 097 and any earlier accepted reservation batch; record historical/local re-audit overlap separately from accepted production-batch overlap.
+- Verify that every newly selected article ID is absent from the current serial accepted set through Batch 098 and any earlier accepted reservation batch; record historical/local re-audit overlap separately from accepted production-batch overlap.
 - Review raw-source evidence before prose quality. Claims must be traceable to local raw/source-conversion locators, not web snippets.
 - Confirm linked-question count equals created question-edit count for each article.
 - Check for placeholders, internal notes, source gaps, stale compose-error files, JSON parse failures, unsafe diffs, and scenario enrichment status.
@@ -59,11 +60,11 @@ Mode: controlled serial final-gate production line; Batch 097 is accepted at `68
 2. Worker runs the full validation gate list from the manifest.
 3. Independent reviewer validates the artifacts and source traceability.
 4. Coordinator accepts or rejects the batch. Acceptance requires blockers=0, source gaps=0, linked-question/question-edit counts matching, and scoped git diff --check passing.
-5. Only after coordinator acceptance and the required commit/push gate may the next batch begin. Batch 098 is accepted local-first with blockers=0 and must be committed/pushed before Batch 099 starts.
+5. Only after coordinator acceptance and the required commit/push gate may the next batch begin. Batch 099 is accepted local-first with blockers=0 and must be committed/pushed before Batch 100 starts.
 
 ## Commit/Push Rule
 
-After each accepted batch, stage only that batch's accepted article folders, question-edit files, batch report, ledger, scoped checks, and handoff/coordination updates. Commit with the Lore Commit Protocol and push the branch. Do not combine batches in one commit unless the coordinator explicitly records a batch-combination exception. This Batch 098 run may commit and push only the accepted Batch 098 scope.
+After each accepted batch, stage only that batch's accepted article folders, question-edit files, batch report, ledger, scoped checks, and handoff/coordination updates. Commit with the Lore Commit Protocol and push the branch. Do not combine batches in one commit unless the coordinator explicitly records a batch-combination exception. This Batch 099 run may commit and push only the accepted Batch 099 scope.
 
 ## Handoff Notes
 
@@ -138,3 +139,15 @@ Batch 098 selected clusters: SVC-015 supervision/CM/SPP 202 boundaries (`1277bf7
 Batch 098 followed the fixed manifest, produced current local-first source-audit evidence, refreshed 50/50 question edits, added five source-safe scenarios, and made no Supabase push/deploy/production DB mutation/merge-to-main. Required gates passed: compose 5/5, diff 5/5, validate strict 5/5, UI-block edit validation 5/5, scoped JSON parse 114 files, source hash checks 22/22, linked-question/question-edit counts 50/50, targeted content-audit tests 34 pass, and scoped `git diff --check`.
 
 Independent QA verdict: PASS. Current serial accepted-batch overlap check passed for Batches 087-097: no selected Batch 098 article ID appeared in that current serial accepted set. Historical local-first/re-audit overlap is present and explicitly classified separately: SVC-015 in Batch 022 artifacts, SVC-016 in Batch 034 artifacts, SVC-017 and SVC-019 in Batch 024 artifacts, and SVC-018 in Batch 031 artifacts.
+
+### Batch 099 pre-start reservation - 2026-05-13T09:11:07+08:00
+
+Batch 099 was reserved after confirming the live baseline includes accepted/pushed Batch 098 at `0ea695796`. Selected article IDs are absent from the current serial accepted selected-article set for Batches 087-098; historical local-first/re-audit overlap is recorded separately in `.ai/03_plans/production-line-batch-099-manifest.json`.
+
+Batch 099 selected clusters: SVC-020 design-build by administration/GMC (`ecf888fd-c314-4d20-87e6-4841f84b71a0`), SVC-021 project delivery source terms (`4ecfe37d-2ee5-4d7e-8878-65fee5a29770`), SVC-022 architectural design competitions (`2660de04-9a95-4581-83c1-792b09b79d48`), SVC-023 architect selection and compensation (`01e537a7-be03-49ec-b745-258474c27f70`), and SVC-024 value engineering (`7a48ab8a-3609-484d-b7e3-76f2fc1f6040`).
+
+### Batch 099 local-first acceptance - 2026-05-13T09:11:07+08:00
+
+Batch 099 followed the fixed manifest, produced current local-first source-audit evidence, refreshed 50/50 question edits, added five source-safe scenarios, and made no Supabase push/deploy/production DB mutation/merge-to-main. Required gates passed: compose 5/5, diff 5/5, validate strict 5/5, UI-block edit validation 5/5, scoped JSON parse 107 files, source hash checks 24/24, linked-question/question-edit counts 50/50, targeted content-audit tests 34 pass, independent QA PASS, and scoped `git diff --check` PASS.
+
+Current serial accepted-batch overlap check passed for Batches 087-098: no selected Batch 099 article ID appeared in that current serial accepted set. Historical local-first/re-audit overlap is present and explicitly classified separately: SVC-020 and SVC-022 in Batch 025 artifacts, SVC-021 in Batch 034 artifacts, SVC-023 in Batch 022 artifacts, and SVC-024 in Batch 036 artifacts.

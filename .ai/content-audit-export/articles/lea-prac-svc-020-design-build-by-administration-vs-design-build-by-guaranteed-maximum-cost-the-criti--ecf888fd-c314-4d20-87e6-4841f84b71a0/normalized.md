@@ -14,6 +14,11 @@ The checked source also limits the guarantee by identifying owner-borne addition
 
 For exam purposes, do not reduce SPP 207 to ordinary design services. The defining issue is that the Architect carries both design and construction responsibility. The clean distinction between the two modes is the guaranteed maximum project construction cost.
 
+
+## Real World Scenario
+
+A private owner asks the architect to use design-build because the project cannot wait for a separate bidding cycle. If the owner only wants the architect to administer the work, the safe SPP 207 answer is Design-Build Services by Administration: the architect's construction-phase role expands beyond periodic inspection into scheduling, procurement, hiring, contracts, payments, records, and other construction transactions. If the owner also wants a guaranteed maximum project construction cost, the question shifts to the GMC mode, where savings are shared and owner-borne additional costs remain limited to legitimate variation orders, extra work orders, substantial escalation evidenced by NEDA, or causes not attributable to the architect.
+
 ## Source Notes
 
-Local raw PDFs and refined markdown were checked for this Batch 025 repair: UAP Standards lines 1228-1267 and SPP 207 lines 147-153.
+Local raw PDFs and refined markdown were rechecked for Batch 099: UAP Standards lines 1228-1267; SPP 207 lines 147-153.

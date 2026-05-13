@@ -1,11 +1,11 @@
 {
-  "batch_id": "source-audited-article-batch-022-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T11:45:00.000+08:00",
+  "batch_id": "source-audited-article-batch-099-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T09:07:08+08:00",
   "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
   "slug": "lea-prac-svc-023-core-concept",
-  "title": "Architect's Guidelines and Compensation Methods",
-  "status": "local_pass_ready_for_final_publishing_review",
+  "title": "Architect's Guidelines (formerly 1979 UAP Doc 208-b",
+  "status": "PASS",
   "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
   "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
   "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/question-edits",
@@ -13,13 +13,33 @@
   "linked_questions": 10,
   "question_edits_created": 10,
   "source_safe_rewrite_question_edits": 10,
+  "real_world_scenario_status": "eligible-added",
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+    "slug": "lea-prac-svc-023-core-concept",
+    "normalized_sha256": "sha256:6a4cdc7774dce7889eaa1ab06287c7cdad0ddecca16f6e30c99ce452f702bde4",
+    "candidate_sha256": "sha256:6a4cdc7774dce7889eaa1ab06287c7cdad0ddecca16f6e30c99ce452f702bde4"
+  },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_supabase_upload": true,
     "local_first_only": true,
     "supabase_push_attempted": false,
     "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
     "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
   },
   "source_audit": {
     "checked_sources": [
@@ -27,12 +47,10 @@
         "source_id": "uap-standards-selection-compensation-supervision-cm-local",
         "label": "UAP Standards of Professional Practice - selection, compensation, supervision, and construction management services",
         "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
         "checked_markdown_lines": [
           "UAP Standards lines 79-100",
           "UAP Standards lines 217-265",
@@ -41,11 +59,11 @@
           "UAP Standards lines 1129-1168",
           "UAP Standards lines 1174-1216"
         ],
-        "use": "primary local source for selection, compensation, full-time supervision, SPP 202, and CM distinctions",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       }
     ],
-    "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Standards lines 79-100, UAP Standards lines 217-265, UAP Standards lines 416-458, UAP Standards lines 915-964, UAP Standards lines 1129-1168, UAP Standards lines 1174-1216",
     "checked_markdown_lines": [
       "UAP Standards lines 79-100",
       "UAP Standards lines 217-265",
@@ -53,218 +71,87 @@
       "UAP Standards lines 915-964",
       "UAP Standards lines 1129-1168",
       "UAP Standards lines 1174-1216"
-    ]
+    ],
+    "internet_evidence_used": false
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "diff_report_generated": true,
+    "real_world_scenario_added": true,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true
   },
   "claims": [
     {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-001",
-      "claim_text": "Question 2a63aece-29bd-4924-89d8-ae63cbf61fd3 / model BATCH-022-lea-prac-svc-023-core-concept-001 rewritten to source-safe local form.",
-      "question_id": "2a63aece-29bd-4924-89d8-ae63cbf61fd3",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-001",
+      "claim_id": "batch-099-lea-prac-svc-023-core-concept-article-scenario",
+      "claim_text": "Batch 099 added a source-safe Real World Scenario for Architect's Guidelines (formerly 1979 UAP Doc 208-b.",
       "support_status": "PASS",
+      "audit_result": "PASS",
       "source_ids": [
         "uap-standards-selection-compensation-supervision-cm-local"
       ],
-      "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP Standards lines 79-100",
+          "UAP Standards lines 217-265",
+          "UAP Standards lines 416-458",
+          "UAP Standards lines 915-964",
+          "UAP Standards lines 1129-1168",
+          "UAP Standards lines 1174-1216"
+        ]
       }
     },
     {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-002",
-      "claim_text": "Question 2d235697-4189-416f-b270-5a201bd27507 / model BATCH-022-lea-prac-svc-023-core-concept-002 rewritten to source-safe local form.",
-      "question_id": "2d235697-4189-416f-b270-5a201bd27507",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-002",
+      "claim_id": "batch-099-lea-prac-svc-023-core-concept-linked-questions",
+      "claim_text": "Batch 099 refreshed 10 linked question edits for source-safe alignment.",
       "support_status": "PASS",
+      "audit_result": "PASS",
       "source_ids": [
         "uap-standards-selection-compensation-supervision-cm-local"
       ],
-      "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-003",
-      "claim_text": "Question 71d16c66-b75f-4de9-b4f9-f8f25487b6ce / model BATCH-022-lea-prac-svc-023-core-concept-003 rewritten to source-safe local form.",
-      "question_id": "71d16c66-b75f-4de9-b4f9-f8f25487b6ce",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-004",
-      "claim_text": "Question 5e86bf41-a2b3-4916-8555-1e66ea55e925 / model BATCH-022-lea-prac-svc-023-core-concept-004 rewritten to source-safe local form.",
-      "question_id": "5e86bf41-a2b3-4916-8555-1e66ea55e925",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-005",
-      "claim_text": "Question 73eb1ab5-3175-411c-888d-37f2f4337871 / model BATCH-022-lea-prac-svc-023-core-concept-005 rewritten to source-safe local form.",
-      "question_id": "73eb1ab5-3175-411c-888d-37f2f4337871",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-006",
-      "claim_text": "Question 82a1cbaa-1d41-464f-b4fe-526a1c2092e3 / model BATCH-022-lea-prac-svc-023-core-concept-006 rewritten to source-safe local form.",
-      "question_id": "82a1cbaa-1d41-464f-b4fe-526a1c2092e3",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-007",
-      "claim_text": "Question 33905c86-e9f4-40b5-9d1d-7c21273c8058 / model BATCH-022-lea-prac-svc-023-core-concept-007 rewritten to source-safe local form.",
-      "question_id": "33905c86-e9f4-40b5-9d1d-7c21273c8058",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-008",
-      "claim_text": "Question 483b9ab9-98e3-467e-bb91-f7ab2ea6f719 / model BATCH-022-lea-prac-svc-023-core-concept-008 rewritten to source-safe local form.",
-      "question_id": "483b9ab9-98e3-467e-bb91-f7ab2ea6f719",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-009",
-      "claim_text": "Question c37a6a68-0ab4-4464-bad5-4cf36f66c7b1 / model BATCH-022-lea-prac-svc-023-core-concept-009 rewritten to source-safe local form.",
-      "question_id": "c37a6a68-0ab4-4464-bad5-4cf36f66c7b1",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-023-core-concept-question-010",
-      "claim_text": "Question cc3106c7-7c4b-4281-867c-4d1d447c462f / model BATCH-022-lea-prac-svc-023-core-concept-010 rewritten to source-safe local form.",
-      "question_id": "cc3106c7-7c4b-4281-867c-4d1d447c462f",
-      "model_id": "BATCH-022-lea-prac-svc-023-core-concept-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP Standards lines 79-100",
+          "UAP Standards lines 217-265",
+          "UAP Standards lines 416-458",
+          "UAP Standards lines 915-964",
+          "UAP Standards lines 1129-1168",
+          "UAP Standards lines 1174-1216"
+        ]
       }
     }
   ],
-  "local_repairs": {
-    "normalized_rewritten": true,
-    "candidate_recomposed": true,
-    "placeholders_removed": true,
-    "source_records_created": 1,
-    "question_edits_created": 10,
-    "source_safe_rewrite_question_edits": 10,
-    "non_source_claims_removed_or_rewritten": true
-  },
-  "validation": {
-    "compose_blockers": [],
-    "diff_safe_to_push": true,
-    "diff_blockers": [],
-    "validate_valid": true,
-    "validate_blockers": [],
-    "validate_warnings": [
-      "lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70: component-usage.json has not been generated for this article yet."
-    ],
-    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/batch-022-validate-report.json"
-  },
-  "blockers": [],
   "unverified_or_rejected_claims": [],
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "blockers": []
+  "removed_or_rewritten_material": [
+    "No unsupported source families were added; Batch 099 changes are limited to source-safe scenario enrichment and refreshed linked-question sidecars."
+  ],
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PENDING"
   },
-  "sme_review": {
-    "required": false,
-    "status": "not_required_for_local_first_batch"
+  "overall_result": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
   }
 }

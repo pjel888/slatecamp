@@ -2,15 +2,15 @@
   "question_id": "0281c044-6579-48f1-b4d5-e02e2e724922",
   "baseline_hash": "sha256:b3c1f419d79111baf8105c15c20202653467969df0864ab1a2dfcc2a196d8497",
   "action": "replace",
-  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights.",
-  "approved_by": "codex-local-source-audit-batch-025",
-  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "reason": "source-audited-article-batch-099-local-first retained and refreshed this linked question after local raw-source recheck for lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights.",
+  "approved_by": "codex-local-source-audit-batch-099",
+  "approved_at": "2026-05-13T09:07:08+08:00",
   "source_audit_support": {
     "parent_article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
     "parent_article_slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
+    "source_locator": "UAP Standards lines 1284-1410; SPP 208 lines 100-123; SPP 208 line 305",
     "checked_markdown_lines": [
       "UAP Standards lines 1284-1410",
       "SPP 208 lines 100-123",
@@ -42,7 +42,8 @@
         "locator": "SPP 208 lines 100-123; SPP 208 line 305"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 099 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-099-local-first"
   },
   "proposed": {
     "text": "In a Project ADC, what does awarding first prize oblige the Owner to do?",
@@ -70,16 +71,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The checked source states that first prize in a Project ADC obliges the Owner to entrust the commission to the author.",
-    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "explanation": "Batch 099 refresh: this item is bounded to checked local raw/source-conversion evidence for Architectural Design Competitions Types Rules.",
     "code_citation": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
     "bloom_level": "understand",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 025"
+      "source-audited batch 025",
+      "source-audited batch 099"
     ],
     "difficulty": 0.56,
     "is_assessment": false,
-    "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-008"
+    "model_id": "BATCH-099-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-008"
   }
 }

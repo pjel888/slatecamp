@@ -1,0 +1,270 @@
+{
+  "artifact_type": "source_audited_article_batch_scoped_checks",
+  "batch_number": "099",
+  "batch_id": "source-audited-article-batch-099-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-13T09:11:07+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-099-manifest.json",
+  "blockers": 0,
+  "warnings": [
+    "validate-bundles emitted only expected component-usage.json warnings for the five scoped articles."
+  ],
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 24,
+    "source_hash_failures": 0,
+    "scoped_json_parse_files": 107,
+    "scoped_json_parse_failures": 0,
+    "marker_scan_files": 65,
+    "marker_scan_matches": 0,
+    "stale_compose_error_matches": 0
+  },
+  "gates": {
+    "compose": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": 5,
+      "locally_safe": 5,
+      "blockers": 0
+    },
+    "validate_strict": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": "Expected component-usage.json warnings only."
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files_checked": 107,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "files_checked": 65,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 24,
+      "failures": [],
+      "checks_detail": [
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "actual": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "expected": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "actual": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "expected": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "actual": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "expected": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "actual": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "expected": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "actual": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "expected": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "actual": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "expected": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "actual": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "expected": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "actual": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "expected": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "actual": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "expected": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "actual": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "expected": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "actual": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "expected": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "actual": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+          "expected": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+          "actual": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "actual": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+          "expected": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+          "actual": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "expected": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+          "actual": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "actual": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+          "expected": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+          "actual": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+          "expected": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+          "actual": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "expected": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "actual": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "pass": true
+        }
+      ]
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "matches": 0,
+      "files": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "tests": 34,
+      "failures": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 099 scoped paths>",
+      "checked_at": "2026-05-13T09:16:51+08:00"
+    },
+    "independent_qa": {
+      "status": "PASS",
+      "path": ".ai/03_plans/batch-099-independent-quality-review.md",
+      "verdict": "PASS",
+      "blockers": 0,
+      "checked_at": "2026-05-13T09:16:51+08:00"
+    }
+  },
+  "completed_at": "2026-05-13T09:16:51+08:00"
+}

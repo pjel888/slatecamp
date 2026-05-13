@@ -16,6 +16,11 @@ For a Project ADC, the checked source states that awarding first prize obliges t
 
 Separate ADC roles cleanly: Owner finances and issues the invitation, Jury judges, and Professional Advisor organizes and safeguards the procedure without a vote. Also remember the rights issue: a winning scheme is not a free design library for the Owner.
 
+
+## Real World Scenario
+
+A city launches a competition for a civic hall and wants to reuse the strongest parts of several entries after judging. SPP 208 blocks that shortcut. The Owner finances the competition and appoints the Jury, but the Conditions must protect anonymity, apply identical requirements to competitors, and respect the author of each plan or design. In a Project ADC, first prize obliges the Owner to entrust the commission to the author; if no contract is signed within twelve months, the first prize winner receives a further sum equal to the first prize and the Owner still does not acquire project rights except through collaboration with the author.
+
 ## Source Notes
 
-Local raw PDFs and refined markdown were checked for this Batch 025 repair: UAP Standards lines 1284-1410 and SPP 208 lines 100-123 and 305.
+Local raw PDFs and refined markdown were rechecked for Batch 099: UAP Standards lines 1284-1410; SPP 208 lines 100-123; SPP 208 line 305.

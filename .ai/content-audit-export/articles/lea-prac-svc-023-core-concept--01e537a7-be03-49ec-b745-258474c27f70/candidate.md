@@ -1,3 +1,5 @@
+# Architect Selection and Compensation Methods
+
 ## Board Exam Quick Check
 
 For service-compensation questions, identify the service first. The UAP Standards do not give one universal fee rule for every engagement. They list methods for selecting architects and then list compensation methods by service category.
@@ -45,3 +47,11 @@ Expect questions that ask whether direct selection is a fee method, when MDPE ap
 - Treating percentage of project construction cost as the only fee method.
 - Treating MDPE as a fixed fee rather than a direct-personnel-expense multiplier plus reimbursables.
 - Applying regular-design compensation to a short expert consultation without checking the service facts.
+
+## Real World Scenario
+
+A client interviews three architects and then asks whether the fee should be MDPE, percentage of project construction cost, or per diem. Do not answer from the selection method alone. Direct selection, comparative selection, and architectural design competition explain how the architect is chosen. Compensation is matched to the service category. A time-measurable research or advisory task can point to MDPE or per diem plus reimbursables, while a regular design engagement can point to percentage of project construction cost or another listed method if the facts support it.
+
+## Source Notes
+
+Local raw PDFs and refined markdown were rechecked for Batch 099: UAP Standards lines 79-100; UAP Standards lines 217-265; UAP Standards lines 416-458; UAP Standards lines 915-964; UAP Standards lines 1129-1168; UAP Standards lines 1174-1216.

@@ -2,98 +2,96 @@
   "question_id": "cd99d7cd-f94f-44bc-bcdc-babf723cbfb2",
   "baseline_hash": "sha256:ef855f40c22b1d0709b0665e6b8d94f0ddcaa1e6f5463516f01987bb53634934",
   "action": "replace",
-  "reason": "source-audited-article-batch-034-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-  "approved_by": "codex-local-source-audit-batch-034",
-  "approved_at": "2026-05-11T10:59:50+08:00",
+  "reason": "source-audited-article-batch-099-local-first retained and refreshed this linked question after local raw-source recheck for lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
+  "approved_by": "codex-local-source-audit-batch-099",
+  "approved_at": "2026-05-13T09:07:08+08:00",
   "source_audit_support": {
     "parent_article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
     "parent_article_slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
     "parent_article_title": "Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "CIAP Document 102 refined markdown lines 876-882",
+    "source_locator": "UAP SPP 202 refined markdown lines 173-183; UAP Standards of Professional Practice refined markdown lines 300-350; 362-418; 475-586; 1036-1077; 1097-1215; UAP SPP 206 refined markdown lines 3-7; 185-187; 781-785; UAP SPP 207 refined markdown lines 3-7; 147-153; CIAP Document 102 refined markdown lines 172-182; 337-340; 876-890",
     "checked_sources": [
       {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
         "source_id": "uap-spp-202-local",
-        "label": "UAP SPP Document 202 - Regular Design Services",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-        "source_locator": "UAP SPP 202 refined markdown lines 173-183",
-        "checked_markdown_lines": [
-          "UAP SPP 202 refined markdown lines 173-183"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc"
+        "locator": "UAP SPP 202 refined markdown lines 173-183"
       },
       {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_id": "uap-spp-202-local",
+        "locator": "UAP SPP 202 refined markdown lines 173-183"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
         "source_id": "uap-standards-professional-practice2-local",
-        "label": "UAP Standards of Professional Practice - compiled SPP source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
-        "checked_markdown_lines": [
-          "UAP Standards of Professional Practice refined markdown lines 300-350",
-          "UAP Standards of Professional Practice refined markdown lines 362-418",
-          "UAP Standards of Professional Practice refined markdown lines 475-586",
-          "UAP Standards of Professional Practice refined markdown lines 1036-1077",
-          "UAP Standards of Professional Practice refined markdown lines 1097-1215"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c"
+        "locator": "UAP Standards of Professional Practice refined markdown lines 300-350; 362-418; 475-586; 1036-1077; 1097-1215"
       },
       {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_id": "uap-standards-professional-practice2-local",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 300-350; 362-418; 475-586; 1036-1077; 1097-1215"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+        "sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
         "source_id": "uap-spp-206-local",
-        "label": "UAP SPP Document 206 - Comprehensive Architectural Services",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
-        "source_locator": "UAP SPP 206 refined markdown lines 3-7, 185-187, 781-785",
-        "checked_markdown_lines": [
-          "UAP SPP 206 refined markdown lines 3-7",
-          "UAP SPP 206 refined markdown lines 185-187",
-          "UAP SPP 206 refined markdown lines 781-785"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
-        "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
-        "refined_markdown_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283"
+        "locator": "UAP SPP 206 refined markdown lines 3-7; 185-187; 781-785"
       },
       {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+        "sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+        "source_id": "uap-spp-206-local",
+        "locator": "UAP SPP 206 refined markdown lines 3-7; 185-187; 781-785"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
         "source_id": "uap-spp-207-local",
-        "label": "UAP SPP Document 207 - Design-Build Services",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-        "source_locator": "UAP SPP 207 refined markdown lines 3-7, 147-153",
-        "checked_markdown_lines": [
-          "UAP SPP 207 refined markdown lines 3-7",
-          "UAP SPP 207 refined markdown lines 147-153"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-        "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a"
+        "locator": "UAP SPP 207 refined markdown lines 3-7; 147-153"
       },
       {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+        "sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+        "source_id": "uap-spp-207-local",
+        "locator": "UAP SPP 207 refined markdown lines 3-7; 147-153"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "source_id": "ciap-document-102-local",
-        "label": "CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 refined markdown lines 172-182, 337-340, 876-890",
-        "checked_markdown_lines": [
-          "CIAP Document 102 refined markdown lines 172-182",
-          "CIAP Document 102 refined markdown lines 337-340",
-          "CIAP Document 102 refined markdown lines 876-890"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207"
+        "locator": "CIAP Document 102 refined markdown lines 172-182; 337-340; 876-890"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-local",
+        "locator": "CIAP Document 102 refined markdown lines 172-182; 337-340; 876-890"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+    "local_source_safe_action": "Batch 099 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-099-local-first",
+    "checked_markdown_lines": [
+      "UAP SPP 202 refined markdown lines 173-183",
+      "UAP Standards of Professional Practice refined markdown lines 300-350",
+      "362-418",
+      "475-586",
+      "1036-1077",
+      "1097-1215",
+      "UAP SPP 206 refined markdown lines 3-7",
+      "185-187",
+      "781-785",
+      "UAP SPP 207 refined markdown lines 3-7",
+      "147-153",
+      "CIAP Document 102 refined markdown lines 172-182",
+      "337-340",
+      "876-890"
+    ]
   },
   "proposed": {
     "text": "Who may serve as Owner's Representative under CIAP Document 102?",
@@ -117,7 +115,12 @@
     ],
     "correct_option_id": "a",
     "rationale": "CIAP Document 102 allows the Owner's Representative to be the Architect, Engineer, Construction Manager, or another designated person.",
-    "explanation": "CIAP Document 102 allows the Owner's Representative to be the Architect, Engineer, Construction Manager, or another designated person.",
-    "code_citation": "CIAP Document 102 refined markdown lines 876-882"
+    "explanation": "Batch 099 refresh: this item is bounded to checked local raw/source-conversion evidence for Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative.",
+    "code_citation": "CIAP Document 102 refined markdown lines 876-882",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 099"
+    ],
+    "model_id": "BATCH-099-lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery-cd99d7cd-f94f-44bc-bcdc-babf723cbfb2"
   }
 }

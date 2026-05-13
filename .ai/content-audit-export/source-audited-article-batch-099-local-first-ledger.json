@@ -1,0 +1,182 @@
+{
+  "artifact_type": "source_audited_article_batch_ledger",
+  "batch_number": "099",
+  "batch_id": "source-audited-article-batch-099-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-13T09:11:07+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-099-manifest.json",
+  "blockers": 0,
+  "exact_improved_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/question-edits"
+  ],
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 24,
+    "source_hash_failures": 0,
+    "scoped_json_parse_files": 107,
+    "scoped_json_parse_failures": 0,
+    "marker_scan_files": 65,
+    "marker_scan_matches": 0,
+    "stale_compose_error_matches": 0
+  },
+  "articles": [
+    {
+      "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction",
+      "title": "Design Build by Administration vs Design Build by Guaranteed Maximum",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 025 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:a14729d9912d6c9d5123a9bcb101259bcdd1d3573d6aad4dd8d8e6298c24868b",
+      "normalized_hash": "sha256:a14729d9912d6c9d5123a9bcb101259bcdd1d3573d6aad4dd8d8e6298c24868b"
+    },
+    {
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
+      "title": "Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 5,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 034 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:410c7277a6decf38208725214aed109e240e9303b7cd7c47cc3bd521aaf98229",
+      "normalized_hash": "sha256:410c7277a6decf38208725214aed109e240e9303b7cd7c47cc3bd521aaf98229"
+    },
+    {
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+      "title": "Architectural Design Competitions Types Rules",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 025 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:9087146cfd66d3f8918a17f673166dbcd18285f1687c1b8e9921b2b13f150bbd",
+      "normalized_hash": "sha256:9087146cfd66d3f8918a17f673166dbcd18285f1687c1b8e9921b2b13f150bbd"
+    },
+    {
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "slug": "lea-prac-svc-023-core-concept",
+      "title": "Architect's Guidelines (formerly 1979 UAP Doc 208-b",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 1,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 022 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:6a4cdc7774dce7889eaa1ab06287c7cdad0ddecca16f6e30c99ce452f702bde4",
+      "normalized_hash": "sha256:6a4cdc7774dce7889eaa1ab06287c7cdad0ddecca16f6e30c99ce452f702bde4"
+    },
+    {
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
+      "title": "Value Engineering As an Architectural Service Concept Process",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 036 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:16ac147d26e36d0969a3c6223f3997b51616d16557b8149d3e3f66972926f2b0",
+      "normalized_hash": "sha256:16ac147d26e36d0969a3c6223f3997b51616d16557b8149d3e3f66972926f2b0"
+    }
+  ],
+  "completed_at": "2026-05-13T09:16:51+08:00",
+  "independent_quality_review": {
+    "status": "PASS",
+    "path": ".ai/03_plans/batch-099-independent-quality-review.md",
+    "verdict": "PASS",
+    "blockers": 0,
+    "checked_at": "2026-05-13T09:16:51+08:00"
+  },
+  "scoped_git_diff_check": {
+    "status": "PASS",
+    "command": "git diff --check -- <Batch 099 scoped paths>",
+    "checked_at": "2026-05-13T09:16:51+08:00"
+  }
+}

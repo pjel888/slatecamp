@@ -1,11 +1,11 @@
 {
-  "batch_id": "source-audited-article-batch-025-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T18:30:00.000+08:00",
+  "batch_id": "source-audited-article-batch-099-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T09:07:08+08:00",
   "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
-  "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-  "title": "Design-Build by Administration vs Design-Build by Guaranteed Maximum Cost",
-  "status": "local_pass_ready_for_final_publishing_review",
+  "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction",
+  "title": "Design Build by Administration vs Design Build by Guaranteed Maximum",
+  "status": "PASS",
   "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
   "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
   "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits",
@@ -13,6 +13,7 @@
   "linked_questions": 10,
   "question_edits_created": 10,
   "source_safe_rewrite_question_edits": 10,
+  "real_world_scenario_status": "eligible-added",
   "classification": {
     "content_domain": "professional_practice",
     "requires_raw_pdf_audit": true,
@@ -20,9 +21,9 @@
   },
   "target": {
     "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
-    "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-    "normalized_sha256": "sha256:9607941960a5c5e98dc4b9376d26cb5cf9e6a59fae3bf3e5a2094ba1431ecb66",
-    "candidate_sha256": "sha256:9607941960a5c5e98dc4b9376d26cb5cf9e6a59fae3bf3e5a2094ba1431ecb66"
+    "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction",
+    "normalized_sha256": "sha256:a14729d9912d6c9d5123a9bcb101259bcdd1d3573d6aad4dd8d8e6298c24868b",
+    "candidate_sha256": "sha256:a14729d9912d6c9d5123a9bcb101259bcdd1d3573d6aad4dd8d8e6298c24868b"
   },
   "overall": {
     "source_audit_status": "PASS",
@@ -30,6 +31,7 @@
     "local_first_only": true,
     "supabase_push_attempted": false,
     "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
     "commit_attempted": false
   },
   "raw_pdf_gate": {
@@ -45,293 +47,114 @@
         "source_id": "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
         "label": "UAP Document Standards of Professional Practice - Design-Build by Administration vs Design-Build by Guaranteed Maximum Cost",
         "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards lines 1228-1267",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
         "checked_markdown_lines": [
           "UAP Standards lines 1228-1267"
         ],
-        "use": "Local UAP standards source checked for SPP 207 design-build purpose, liability, modes, and guaranteed maximum project construction cost rule.",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       },
       {
         "source_id": "spp207-design-build-services-local",
         "label": "SPP 207 - Design-Build Services",
         "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 207 lines 147-153",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
         "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-        "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+        "conversion_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
         "checked_markdown_lines": [
           "SPP 207 lines 147-153"
         ],
-        "use": "Local SPP 207 raw PDF and refined markdown checked as the article-specific source for the two design-build service types.",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       }
     ],
-    "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Standards lines 1228-1267; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md: SPP 207 lines 147-153",
     "checked_markdown_lines": [
       "UAP Standards lines 1228-1267",
       "SPP 207 lines 147-153"
-    ]
+    ],
+    "internet_evidence_used": false
   },
   "article_repair": {
     "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
+    "candidate_md_composed": true,
+    "diff_report_generated": true,
+    "real_world_scenario_added": true,
     "placeholders_removed": true,
     "internal_notes_removed": true,
     "source_gap_notes_removed": true,
-    "unsupported_claims_rewritten_or_removed": true,
-    "candidate_md_composed": true,
-    "diff_report_generated": true
+    "unsupported_claims_rewritten_or_removed": true
   },
   "claims": [
     {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-001",
-      "claim_text": "Question 104787da-f5be-477d-95bc-0e1e27f97a90 / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-001 rewritten to local source-safe form.",
-      "question_id": "104787da-f5be-477d-95bc-0e1e27f97a90",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-001",
+      "claim_id": "batch-099-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction-article-scenario",
+      "claim_text": "Batch 099 added a source-safe Real World Scenario for Design Build by Administration vs Design Build by Guaranteed Maximum.",
       "support_status": "PASS",
+      "audit_result": "PASS",
       "source_ids": [
         "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
         "spp207-design-build-services-local"
       ],
-      "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP Standards lines 1228-1267",
+          "SPP 207 lines 147-153"
+        ]
       }
     },
     {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-002",
-      "claim_text": "Question 1c643395-56b1-4599-b95a-74e4c87e7395 / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-002 rewritten to local source-safe form.",
-      "question_id": "1c643395-56b1-4599-b95a-74e4c87e7395",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-002",
+      "claim_id": "batch-099-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction-linked-questions",
+      "claim_text": "Batch 099 refreshed 10 linked question edits for source-safe alignment.",
       "support_status": "PASS",
+      "audit_result": "PASS",
       "source_ids": [
         "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
         "spp207-design-build-services-local"
       ],
-      "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-003",
-      "claim_text": "Question 306b8c60-f29e-4c9c-a8e0-43072ff991a4 / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-003 rewritten to local source-safe form.",
-      "question_id": "306b8c60-f29e-4c9c-a8e0-43072ff991a4",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-004",
-      "claim_text": "Question 234a754c-5a4b-4e9c-9a6f-6e9c5cf960bb / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-004 rewritten to local source-safe form.",
-      "question_id": "234a754c-5a4b-4e9c-9a6f-6e9c5cf960bb",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-005",
-      "claim_text": "Question 97c8e79e-62ea-4660-a1a5-90d8f4fed351 / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-005 rewritten to local source-safe form.",
-      "question_id": "97c8e79e-62ea-4660-a1a5-90d8f4fed351",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-006",
-      "claim_text": "Question e0462ca4-8b78-4020-afd9-22e40f0935ba / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-006 rewritten to local source-safe form.",
-      "question_id": "e0462ca4-8b78-4020-afd9-22e40f0935ba",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-007",
-      "claim_text": "Question 59092694-695e-4747-9ffe-c6d0e72c377f / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-007 rewritten to local source-safe form.",
-      "question_id": "59092694-695e-4747-9ffe-c6d0e72c377f",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-008",
-      "claim_text": "Question 34218721-e9c7-4e19-aa52-942199241895 / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-008 rewritten to local source-safe form.",
-      "question_id": "34218721-e9c7-4e19-aa52-942199241895",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-009",
-      "claim_text": "Question b2827a52-9e38-4c85-838a-361de87c5e09 / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-009 rewritten to local source-safe form.",
-      "question_id": "b2827a52-9e38-4c85-838a-361de87c5e09",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-question-010",
-      "claim_text": "Question 7ec35d00-6ac1-407b-8153-de0c4f23571f / model BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-010 rewritten to local source-safe form.",
-      "question_id": "7ec35d00-6ac1-407b-8153-de0c4f23571f",
-      "model_id": "BATCH-025-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
-        "spp207-design-build-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1228-1267; SPP 207 refined markdown lines 147-153",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP Standards lines 1228-1267",
+          "SPP 207 lines 147-153"
+        ]
       }
     }
   ],
-  "question_edits": [
-    {
-      "question_id": "104787da-f5be-477d-95bc-0e1e27f97a90",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/104787da-f5be-477d-95bc-0e1e27f97a90.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "1c643395-56b1-4599-b95a-74e4c87e7395",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/1c643395-56b1-4599-b95a-74e4c87e7395.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "306b8c60-f29e-4c9c-a8e0-43072ff991a4",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/306b8c60-f29e-4c9c-a8e0-43072ff991a4.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "234a754c-5a4b-4e9c-9a6f-6e9c5cf960bb",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/234a754c-5a4b-4e9c-9a6f-6e9c5cf960bb.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "97c8e79e-62ea-4660-a1a5-90d8f4fed351",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/97c8e79e-62ea-4660-a1a5-90d8f4fed351.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "e0462ca4-8b78-4020-afd9-22e40f0935ba",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/e0462ca4-8b78-4020-afd9-22e40f0935ba.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "59092694-695e-4747-9ffe-c6d0e72c377f",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/59092694-695e-4747-9ffe-c6d0e72c377f.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "34218721-e9c7-4e19-aa52-942199241895",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/34218721-e9c7-4e19-aa52-942199241895.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "b2827a52-9e38-4c85-838a-361de87c5e09",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/b2827a52-9e38-4c85-838a-361de87c5e09.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "7ec35d00-6ac1-407b-8153-de0c4f23571f",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits/7ec35d00-6ac1-407b-8153-de0c4f23571f.json",
-      "support_status": "PASS"
-    }
-  ]
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "No unsupported source families were added; Batch 099 changes are limited to source-safe scenario enrichment and refreshed linked-question sidecars."
+  ],
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PENDING"
+  },
+  "overall_result": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  }
 }

@@ -13,3 +13,11 @@ SPP 206 and the compiled SPP describe comprehensive architectural services and p
 CIAP Document 102 also defines the Owner's Representative role. The Owner's Representative may be the Architect, Engineer, Construction Manager, or another designated person. If the owner does not designate someone in writing for a building project, the Architect performs the functions and has the authority of the Owner's Representative. The Owner's Representative also performs the Construction Manager function unless the Owner designates another Construction Manager.
 
 Use the labels carefully. Bidding terms belong to the regular design/bid-document lane. Design-build belongs to SPP 207. Project Management and Construction Management belong to the comprehensive services/owner coordination lane. Owner's Representative authority is governed by the contract and CIAP Document 102.
+
+## Real World Scenario
+
+A client asks whether the architect should call the next step bidding, design-build, project management, construction management, or owner representation. Start with the source term. If the task is preparing and issuing bid documents, answering bidder questions, obtaining proposals, and preparing contract documents, it belongs to the Regular Design Services bidding or negotiation lane. If one party will carry both design and construction responsibility, use the SPP 207 design-build lane. If the owner names a representative under CIAP Document 102, that person acts for the owner under the contract; absent a written designation on a building project, the architect performs the Owner's Representative functions.
+
+## Source Notes
+
+Local raw PDFs and refined markdown were rechecked for Batch 099: UAP SPP 202 refined markdown lines 173-183; UAP Standards of Professional Practice refined markdown lines 300-350; 362-418; 475-586; 1036-1077; 1097-1215; UAP SPP 206 refined markdown lines 3-7; 185-187; 781-785; UAP SPP 207 refined markdown lines 3-7; 147-153; CIAP Document 102 refined markdown lines 172-182; 337-340; 876-890.

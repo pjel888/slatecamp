@@ -2,15 +2,15 @@
   "question_id": "cc3106c7-7c4b-4281-867c-4d1d447c462f",
   "baseline_hash": "sha256:51e089e44d9fb8919f978dd2f04d946a9ec1581284b5898fd817ec385816f13e",
   "action": "replace",
-  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-023-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-022",
-  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "reason": "source-audited-article-batch-099-local-first retained and refreshed this linked question after local raw-source recheck for lea-prac-svc-023-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-099",
+  "approved_at": "2026-05-13T09:07:08+08:00",
   "source_audit_support": {
     "parent_article_id": "01e537a7-be03-49ec-b745-258474c27f70",
     "parent_article_slug": "lea-prac-svc-023-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
+    "source_locator": "UAP Standards lines 79-100; UAP Standards lines 217-265; UAP Standards lines 416-458; UAP Standards lines 915-964; UAP Standards lines 1129-1168; UAP Standards lines 1174-1216",
     "checked_markdown_lines": [
       "UAP Standards lines 79-100",
       "UAP Standards lines 217-265",
@@ -24,16 +24,17 @@
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
         "source_id": "uap-standards-selection-compensation-supervision-cm-local",
-        "locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+        "locator": "UAP Standards lines 79-100; UAP Standards lines 217-265; UAP Standards lines 416-458; UAP Standards lines 915-964; UAP Standards lines 1129-1168; UAP Standards lines 1174-1216"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
         "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
         "source_id": "uap-standards-selection-compensation-supervision-cm-local",
-        "locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+        "locator": "UAP Standards lines 79-100; UAP Standards lines 217-265; UAP Standards lines 416-458; UAP Standards lines 915-964; UAP Standards lines 1129-1168; UAP Standards lines 1174-1216"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 099 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-099-local-first"
   },
   "proposed": {
     "text": "What does a mixed compensation method imply in this source context?",
@@ -61,16 +62,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The Standards list mixed methods as one of the compensation choices.",
-    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
+    "explanation": "Batch 099 refresh: this item is bounded to checked local raw/source-conversion evidence for Architect's Guidelines (formerly 1979 UAP Doc 208-b.",
     "code_citation": "UAP Standards lines 217-265",
     "bloom_level": "apply",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 022"
+      "source-audited batch 022",
+      "source-audited batch 099"
     ],
     "difficulty": 0.58,
     "is_assessment": false,
-    "model_id": "BATCH-022-lea-prac-svc-023-core-concept-010"
+    "model_id": "BATCH-099-lea-prac-svc-023-core-concept-010"
   }
 }

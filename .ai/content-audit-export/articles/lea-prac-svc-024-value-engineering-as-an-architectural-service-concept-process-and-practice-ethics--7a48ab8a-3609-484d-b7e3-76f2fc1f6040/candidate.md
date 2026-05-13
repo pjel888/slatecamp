@@ -31,3 +31,11 @@ This record is the professional control point. It prevents "value" from becoming
 The source connects VE to design reviews. Preliminary engineering review should confirm that selected approaches, major design concepts, and VE recommendations are resolved before final design proceeds. Later constructability reviews verify that the technical specifications, drawings, and bid documents can be built.
 
 For LEA practice, answer VE questions by asking four source-grounded checks: What required function is being protected? What total initial and life-cycle cost is affected? What performance, reliability, maintainability, safety, or aesthetic requirement is at risk? Is the accept/reject decision documented with reasons?
+
+## Real World Scenario
+
+During preliminary design, the owner asks the team to reduce cost without weakening required performance. A source-safe VE response starts by identifying the required function, life-cycle cost effect, and risks to performance, reliability, maintainability, safety, and aesthetics. The VE team may propose alternatives, but after project-manager review the design team must decide which proposals to adopt or reject. The final response report should list accepted proposals with revised costs and rejected proposals with reasons, so cost savings do not become undocumented quality reduction.
+
+## Source Notes
+
+Local raw PDFs and refined markdown were rechecked for Batch 099: Construction Project Management Handbook refined markdown lines 253-257; Construction Project Management Handbook refined markdown lines 287-301; Construction Project Management Handbook refined markdown lines 387-429; Construction Project Management Handbook refined markdown lines 1544-1577; Construction Project Management Handbook refined markdown lines 1614-1664; Construction Project Management Handbook refined markdown lines 1680-1722; Construction Project Management Handbook refined markdown lines 1808-1819; UAP Document 401-402 refined markdown lines 45-72; UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 105-119.

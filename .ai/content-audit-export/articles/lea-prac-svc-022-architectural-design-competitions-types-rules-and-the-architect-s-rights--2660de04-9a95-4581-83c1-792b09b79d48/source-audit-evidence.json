@@ -1,11 +1,11 @@
 {
-  "batch_id": "source-audited-article-batch-025-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T18:30:00.000+08:00",
+  "batch_id": "source-audited-article-batch-099-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T09:07:08+08:00",
   "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
   "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-  "title": "Architectural Design Competitions: Types, Rules, and the Architect's Rights",
-  "status": "local_pass_ready_for_final_publishing_review",
+  "title": "Architectural Design Competitions Types Rules",
+  "status": "PASS",
   "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
   "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
   "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits",
@@ -13,6 +13,7 @@
   "linked_questions": 10,
   "question_edits_created": 10,
   "source_safe_rewrite_question_edits": 10,
+  "real_world_scenario_status": "eligible-added",
   "classification": {
     "content_domain": "professional_practice",
     "requires_raw_pdf_audit": true,
@@ -21,8 +22,8 @@
   "target": {
     "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
     "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-    "normalized_sha256": "sha256:37ccd0b9be274c262b7d6c5f801c35f49cc047b92d41974fbadc3d5f3f33f655",
-    "candidate_sha256": "sha256:37ccd0b9be274c262b7d6c5f801c35f49cc047b92d41974fbadc3d5f3f33f655"
+    "normalized_sha256": "sha256:9087146cfd66d3f8918a17f673166dbcd18285f1687c1b8e9921b2b13f150bbd",
+    "candidate_sha256": "sha256:9087146cfd66d3f8918a17f673166dbcd18285f1687c1b8e9921b2b13f150bbd"
   },
   "overall": {
     "source_audit_status": "PASS",
@@ -30,6 +31,7 @@
     "local_first_only": true,
     "supabase_push_attempted": false,
     "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
     "commit_attempted": false
   },
   "raw_pdf_gate": {
@@ -45,295 +47,118 @@
         "source_id": "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
         "label": "UAP Document Standards of Professional Practice - Architectural Design Competitions: Types, Rules, and the Architect's Rights",
         "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards lines 1284-1410",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
         "checked_markdown_lines": [
           "UAP Standards lines 1284-1410"
         ],
-        "use": "Local UAP standards source checked for SPP 208 ADC purpose, roles, classifications, competition rules, jury, prizes, rights, and ADR provisions.",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       },
       {
         "source_id": "spp208-architectural-design-competitions-local",
         "label": "SPP 208 - Architectural Design Competitions",
         "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 208 lines 100-123; SPP 208 line 305",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
         "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
-        "refined_markdown_sha256": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "conversion_sha256": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
         "checked_markdown_lines": [
           "SPP 208 lines 100-123",
           "SPP 208 line 305"
         ],
-        "use": "Local SPP 208 raw PDF and refined markdown checked as the article-specific source for ADC role definitions and classifications.",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       }
     ],
-    "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Standards lines 1284-1410; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 lines 100-123, SPP 208 line 305",
     "checked_markdown_lines": [
       "UAP Standards lines 1284-1410",
       "SPP 208 lines 100-123",
       "SPP 208 line 305"
-    ]
+    ],
+    "internet_evidence_used": false
   },
   "article_repair": {
     "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
+    "candidate_md_composed": true,
+    "diff_report_generated": true,
+    "real_world_scenario_added": true,
     "placeholders_removed": true,
     "internal_notes_removed": true,
     "source_gap_notes_removed": true,
-    "unsupported_claims_rewritten_or_removed": true,
-    "candidate_md_composed": true,
-    "diff_report_generated": true
+    "unsupported_claims_rewritten_or_removed": true
   },
   "claims": [
     {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-001",
-      "claim_text": "Question 1ec258c0-4d69-4821-9f70-e1da7bb3b03d / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-001 rewritten to local source-safe form.",
-      "question_id": "1ec258c0-4d69-4821-9f70-e1da7bb3b03d",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-001",
+      "claim_id": "batch-099-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-article-scenario",
+      "claim_text": "Batch 099 added a source-safe Real World Scenario for Architectural Design Competitions Types Rules.",
       "support_status": "PASS",
+      "audit_result": "PASS",
       "source_ids": [
         "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
         "spp208-architectural-design-competitions-local"
       ],
-      "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP Standards lines 1284-1410",
+          "SPP 208 lines 100-123",
+          "SPP 208 line 305"
+        ]
       }
     },
     {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-002",
-      "claim_text": "Question b8d26b89-bdee-456d-8a5a-92a30793fced / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-002 rewritten to local source-safe form.",
-      "question_id": "b8d26b89-bdee-456d-8a5a-92a30793fced",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-002",
+      "claim_id": "batch-099-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-linked-questions",
+      "claim_text": "Batch 099 refreshed 10 linked question edits for source-safe alignment.",
       "support_status": "PASS",
+      "audit_result": "PASS",
       "source_ids": [
         "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
         "spp208-architectural-design-competitions-local"
       ],
-      "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-003",
-      "claim_text": "Question 589d8fc8-7187-428d-ab6f-eebebd2d5e2b / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-003 rewritten to local source-safe form.",
-      "question_id": "589d8fc8-7187-428d-ab6f-eebebd2d5e2b",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-004",
-      "claim_text": "Question 6797cb39-0d7c-4114-9419-71d858b0e7c0 / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-004 rewritten to local source-safe form.",
-      "question_id": "6797cb39-0d7c-4114-9419-71d858b0e7c0",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-005",
-      "claim_text": "Question e18e133f-b49d-4468-bba7-dd8ef6f99173 / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-005 rewritten to local source-safe form.",
-      "question_id": "e18e133f-b49d-4468-bba7-dd8ef6f99173",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-006",
-      "claim_text": "Question 24a03a45-a8d8-4870-993c-ff4e4e90e12c / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-006 rewritten to local source-safe form.",
-      "question_id": "24a03a45-a8d8-4870-993c-ff4e4e90e12c",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-007",
-      "claim_text": "Question efa82c83-bcb6-4744-809d-50f117cd3dcf / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-007 rewritten to local source-safe form.",
-      "question_id": "efa82c83-bcb6-4744-809d-50f117cd3dcf",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-008",
-      "claim_text": "Question 0281c044-6579-48f1-b4d5-e02e2e724922 / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-008 rewritten to local source-safe form.",
-      "question_id": "0281c044-6579-48f1-b4d5-e02e2e724922",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-009",
-      "claim_text": "Question 47beebb8-9fe7-4c5b-915b-044262110f3f / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-009 rewritten to local source-safe form.",
-      "question_id": "47beebb8-9fe7-4c5b-915b-044262110f3f",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-question-010",
-      "claim_text": "Question 59cde2f6-e25c-43aa-a08d-58705228c70f / model BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-010 rewritten to local source-safe form.",
-      "question_id": "59cde2f6-e25c-43aa-a08d-58705228c70f",
-      "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
-        "spp208-architectural-design-competitions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP Standards lines 1284-1410",
+          "SPP 208 lines 100-123",
+          "SPP 208 line 305"
+        ]
       }
     }
   ],
-  "question_edits": [
-    {
-      "question_id": "1ec258c0-4d69-4821-9f70-e1da7bb3b03d",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/1ec258c0-4d69-4821-9f70-e1da7bb3b03d.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "b8d26b89-bdee-456d-8a5a-92a30793fced",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/b8d26b89-bdee-456d-8a5a-92a30793fced.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "589d8fc8-7187-428d-ab6f-eebebd2d5e2b",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/589d8fc8-7187-428d-ab6f-eebebd2d5e2b.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "6797cb39-0d7c-4114-9419-71d858b0e7c0",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/6797cb39-0d7c-4114-9419-71d858b0e7c0.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "e18e133f-b49d-4468-bba7-dd8ef6f99173",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/e18e133f-b49d-4468-bba7-dd8ef6f99173.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "24a03a45-a8d8-4870-993c-ff4e4e90e12c",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/24a03a45-a8d8-4870-993c-ff4e4e90e12c.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "efa82c83-bcb6-4744-809d-50f117cd3dcf",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/efa82c83-bcb6-4744-809d-50f117cd3dcf.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "0281c044-6579-48f1-b4d5-e02e2e724922",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/0281c044-6579-48f1-b4d5-e02e2e724922.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "47beebb8-9fe7-4c5b-915b-044262110f3f",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/47beebb8-9fe7-4c5b-915b-044262110f3f.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "59cde2f6-e25c-43aa-a08d-58705228c70f",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits/59cde2f6-e25c-43aa-a08d-58705228c70f.json",
-      "support_status": "PASS"
-    }
-  ]
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "No unsupported source families were added; Batch 099 changes are limited to source-safe scenario enrichment and refreshed linked-question sidecars."
+  ],
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PENDING"
+  },
+  "overall_result": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  }
 }

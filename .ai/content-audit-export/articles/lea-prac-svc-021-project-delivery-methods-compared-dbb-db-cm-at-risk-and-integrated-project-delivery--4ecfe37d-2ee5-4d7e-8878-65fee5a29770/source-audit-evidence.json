@@ -1,453 +1,39 @@
 {
-  "schema_version": "source-audit-evidence-v1-local-first",
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-034-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T10:59:50+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "batch_id": "source-audited-article-batch-099-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T09:07:08+08:00",
+  "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+  "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
+  "title": "Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative",
+  "status": "PASS",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "real_world_scenario_status": "eligible-added",
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
   "target": {
     "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
     "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
-    "title": "Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/candidate.md",
-    "candidate_sha256": "sha256:cd236433a2723a29478ff9571b0f6d1fe2ad22faff29527ba76a83a9f05d56c6",
-    "normalized_sha256": "sha256:cd236433a2723a29478ff9571b0f6d1fe2ad22faff29527ba76a83a9f05d56c6",
-    "linked_questions_sha256": "sha256:ab2503972a99073dd3cc828c80498dc1e39e715192caf3661d960d4c63bf9477",
-    "sources_sha256": "sha256:26aaf6ed27aee29255d887394098bda17fc7da60447e2c6c090adc627e3c9706"
+    "normalized_sha256": "sha256:410c7277a6decf38208725214aed109e240e9303b7cd7c47cc3bd521aaf98229",
+    "candidate_sha256": "sha256:410c7277a6decf38208725214aed109e240e9303b7cd7c47cc3bd521aaf98229"
   },
-  "classification": {
-    "content_domain": "LEA Professional Services and Construction Contracts",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "high_value_project_delivery",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "9cf2fb2f-0766-4ccd-b5b6-bc642ff3f3a9",
-      "00c10664-ce33-4ce5-b901-3f043f3df729",
-      "37af1c85-9f44-46f0-a0dc-bbfe0395d1dc",
-      "fe4e5e58-39fa-45e8-8ada-c8121a1fd9eb",
-      "8524acf9-beff-4e9e-abab-a34e80229197",
-      "105f0979-2ad7-4521-b263-c0ffe6853724",
-      "26a095f6-3e39-4a70-a66d-b2e7b98bd297",
-      "cd99d7cd-f94f-44bc-bcdc-babf723cbfb2",
-      "a330e636-fc7a-4969-98c4-42092dea2efe",
-      "e77f66bd-6ea5-4033-9887-793d40ce87f0"
-    ]
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "commit_attempted": false
   },
-  "paths": {
-    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
-    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits",
-    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits",
-    "question_edit_files": [
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/9cf2fb2f-0766-4ccd-b5b6-bc642ff3f3a9.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/00c10664-ce33-4ce5-b901-3f043f3df729.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/37af1c85-9f44-46f0-a0dc-bbfe0395d1dc.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/fe4e5e58-39fa-45e8-8ada-c8121a1fd9eb.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/8524acf9-beff-4e9e-abab-a34e80229197.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/105f0979-2ad7-4521-b263-c0ffe6853724.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/26a095f6-3e39-4a70-a66d-b2e7b98bd297.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/cd99d7cd-f94f-44bc-bcdc-babf723cbfb2.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/a330e636-fc7a-4969-98c4-42092dea2efe.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770/question-edits/e77f66bd-6ea5-4033-9887-793d40ce87f0.json"
-    ]
-  },
-  "raw_sources": [
-    {
-      "source_id": "uap-spp-202-local",
-      "label": "UAP SPP Document 202 - Regular Design Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-      "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-      "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
-      "source_locator": "UAP SPP 202 refined markdown lines 173-183",
-      "checked_markdown_lines": [
-        "UAP SPP 202 refined markdown lines 173-183"
-      ]
-    },
-    {
-      "source_id": "uap-standards-professional-practice2-local",
-      "label": "UAP Standards of Professional Practice - compiled SPP source",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
-      "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 300-350",
-        "362-418",
-        "475-586",
-        "1036-1077",
-        "1097-1215"
-      ]
-    },
-    {
-      "source_id": "uap-spp-206-local",
-      "label": "UAP SPP Document 206 - Comprehensive Architectural Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
-      "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
-      "refined_markdown_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
-      "source_locator": "UAP SPP 206 refined markdown lines 3-7, 185-187, 781-785",
-      "checked_markdown_lines": [
-        "UAP SPP 206 refined markdown lines 3-7",
-        "185-187",
-        "781-785"
-      ]
-    },
-    {
-      "source_id": "uap-spp-207-local",
-      "label": "UAP SPP Document 207 - Design-Build Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-      "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-      "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
-      "source_locator": "UAP SPP 207 refined markdown lines 3-7, 147-153",
-      "checked_markdown_lines": [
-        "UAP SPP 207 refined markdown lines 3-7",
-        "147-153"
-      ]
-    },
-    {
-      "source_id": "ciap-document-102-local",
-      "label": "CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-      "source_locator": "CIAP Document 102 refined markdown lines 172-182, 337-340, 876-890",
-      "checked_markdown_lines": [
-        "CIAP Document 102 refined markdown lines 172-182",
-        "337-340",
-        "876-890"
-      ]
-    }
-  ],
-  "checked_sources": [
-    {
-      "source_id": "uap-spp-202-local",
-      "label": "UAP SPP Document 202 - Regular Design Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-      "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-      "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
-      "source_locator": "UAP SPP 202 refined markdown lines 173-183",
-      "checked_markdown_lines": [
-        "UAP SPP 202 refined markdown lines 173-183"
-      ]
-    },
-    {
-      "source_id": "uap-standards-professional-practice2-local",
-      "label": "UAP Standards of Professional Practice - compiled SPP source",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
-      "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 300-350",
-        "362-418",
-        "475-586",
-        "1036-1077",
-        "1097-1215"
-      ]
-    },
-    {
-      "source_id": "uap-spp-206-local",
-      "label": "UAP SPP Document 206 - Comprehensive Architectural Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
-      "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
-      "refined_markdown_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
-      "source_locator": "UAP SPP 206 refined markdown lines 3-7, 185-187, 781-785",
-      "checked_markdown_lines": [
-        "UAP SPP 206 refined markdown lines 3-7",
-        "185-187",
-        "781-785"
-      ]
-    },
-    {
-      "source_id": "uap-spp-207-local",
-      "label": "UAP SPP Document 207 - Design-Build Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-      "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-      "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
-      "source_locator": "UAP SPP 207 refined markdown lines 3-7, 147-153",
-      "checked_markdown_lines": [
-        "UAP SPP 207 refined markdown lines 3-7",
-        "147-153"
-      ]
-    },
-    {
-      "source_id": "ciap-document-102-local",
-      "label": "CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-      "source_locator": "CIAP Document 102 refined markdown lines 172-182, 337-340, 876-890",
-      "checked_markdown_lines": [
-        "CIAP Document 102 refined markdown lines 172-182",
-        "337-340",
-        "876-890"
-      ]
-    }
-  ],
-  "claims": [
-    {
-      "claim_id": "b034-svc021-01",
-      "claim_text": "The Bidding or Negotiation Phase includes bid documents and procurement assistance.",
-      "claim_type": "professional_practice_source_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
-        "locator": "UAP Standards of Professional Practice refined markdown lines 323-343",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "quoted_pdf_excerpt": "The compiled SPP describes bidding or negotiation phase tasks."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-svc021-02",
-      "claim_text": "CIAP Document 102 defines Invitation to Bid, Bid Documents, and Contract Documents.",
-      "claim_type": "professional_practice_source_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
-        "locator": "CIAP Document 102 refined markdown lines 172-182",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "quoted_pdf_excerpt": "CIAP Document 102 defines bidding and contract document terms."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-svc021-03",
-      "claim_text": "SPP 207 names two design-build service types.",
-      "claim_type": "professional_practice_source_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 207 - Design-Build Services",
-        "locator": "UAP SPP 207 refined markdown lines 147-153",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
-        "quoted_pdf_excerpt": "SPP 207 lists two types of design-build services."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-svc021-04",
-      "claim_text": "Comprehensive Architectural Services include pre-design, regular design, specialized, construction, and post-construction services.",
-      "claim_type": "professional_practice_source_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
-        "locator": "UAP Standards of Professional Practice refined markdown lines 1097-1103",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "quoted_pdf_excerpt": "The compiled SPP defines comprehensive architectural services."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-svc021-05",
-      "claim_text": "Project Management involves time, cost, and quality control without relieving designers or contractors of their duties.",
-      "claim_type": "professional_practice_source_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
-        "locator": "UAP Standards of Professional Practice refined markdown lines 1104-1108, 1178-1211",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "quoted_pdf_excerpt": "The compiled SPP describes PM objectives and responsibility boundaries."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-svc021-06",
-      "claim_text": "CIAP Document 102 defines Owner's Representative authority and default role for building projects.",
-      "claim_type": "professional_practice_source_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
-        "locator": "CIAP Document 102 refined markdown lines 876-890",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "quoted_pdf_excerpt": "CIAP Document 102 defines Owner's Representative authority and default building-project role."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-9cf2fb2f-0766-4ccd-b5b6-bc642ff3f3a9",
-      "claim_text": "Question 9cf2fb2f-0766-4ccd-b5b6-bc642ff3f3a9 / ALE-PRAC-SVC-021-002 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-00c10664-ce33-4ce5-b901-3f043f3df729",
-      "claim_text": "Question 00c10664-ce33-4ce5-b901-3f043f3df729 / ALE-PRAC-SVC-021-003 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-37af1c85-9f44-46f0-a0dc-bbfe0395d1dc",
-      "claim_text": "Question 37af1c85-9f44-46f0-a0dc-bbfe0395d1dc / ALE-PRAC-SVC-021-004 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-fe4e5e58-39fa-45e8-8ada-c8121a1fd9eb",
-      "claim_text": "Question fe4e5e58-39fa-45e8-8ada-c8121a1fd9eb / ALE-PRAC-SVC-021-005 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-8524acf9-beff-4e9e-abab-a34e80229197",
-      "claim_text": "Question 8524acf9-beff-4e9e-abab-a34e80229197 / ALE-PRAC-SVC-021-007 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-105f0979-2ad7-4521-b263-c0ffe6853724",
-      "claim_text": "Question 105f0979-2ad7-4521-b263-c0ffe6853724 / ALE-PRAC-SVC-021-008 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-26a095f6-3e39-4a70-a66d-b2e7b98bd297",
-      "claim_text": "Question 26a095f6-3e39-4a70-a66d-b2e7b98bd297 / ALE-PRAC-SVC-021-001 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-cd99d7cd-f94f-44bc-bcdc-babf723cbfb2",
-      "claim_text": "Question cd99d7cd-f94f-44bc-bcdc-babf723cbfb2 / ALE-PRAC-SVC-021-010 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-a330e636-fc7a-4969-98c4-42092dea2efe",
-      "claim_text": "Question a330e636-fc7a-4969-98c4-42092dea2efe / ALE-PRAC-SVC-021-006 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "b034-question-e77f66bd-6ea5-4033-9887-793d40ce87f0",
-      "claim_text": "Question e77f66bd-6ea5-4033-9887-793d40ce87f0 / ALE-PRAC-SVC-021-009 has a source-safe question-edits rewrite aligned to lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-      "claim_type": "linked_question_source_safe_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP Document 202 - Regular Design Services",
-        "locator": "UAP SPP 202 refined markdown lines 173-183",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
-      },
-      "blockers": []
-    }
-  ],
-  "unverified_or_rejected_claims": [],
-  "removed_or_rewritten_material": [
-    "Article body rewritten to local raw-source-supported professional-practice claims.",
-    "Legacy generated UI placeholders removed from normalized markdown.",
-    "Linked questions rewritten in question-edits JSON with source-safe answer keys, rationales, and citations."
-  ],
   "raw_pdf_gate": {
     "status": "PASS",
     "all_legal_code_claims_have_pdf_locator": true,
@@ -455,58 +41,225 @@
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
   },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 034 id> --overwrite --strict; changed candidates; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 034 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 034 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-spp-202-local",
+        "label": "UAP SPP Document 202 - Regular Design Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "conversion_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "checked_markdown_lines": [
+          "UAP SPP 202 refined markdown lines 173-183"
+        ],
+        "source_type": "local_raw_pdf_with_local_conversion",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-standards-professional-practice2-local",
+        "label": "UAP Standards of Professional Practice - compiled SPP source",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "conversion_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 300-350",
+          "362-418",
+          "475-586",
+          "1036-1077",
+          "1097-1215"
+        ],
+        "source_type": "local_raw_pdf_with_local_conversion",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-spp-206-local",
+        "label": "UAP SPP Document 206 - Comprehensive Architectural Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+        "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+        "conversion_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+        "checked_markdown_lines": [
+          "UAP SPP 206 refined markdown lines 3-7",
+          "185-187",
+          "781-785"
+        ],
+        "source_type": "local_raw_pdf_with_local_conversion",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-spp-207-local",
+        "label": "UAP SPP Document 207 - Design-Build Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+        "conversion_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+        "checked_markdown_lines": [
+          "UAP SPP 207 refined markdown lines 3-7",
+          "147-153"
+        ],
+        "source_type": "local_raw_pdf_with_local_conversion",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "ciap-document-102-local",
+        "label": "CIAP Document 102 Uniform General Conditions of Contract for Private Construction",
+        "authority": "Construction Industry Authority of the Philippines / contract document source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "conversion_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "checked_markdown_lines": [
+          "CIAP Document 102 refined markdown lines 172-182",
+          "337-340",
+          "876-890"
+        ],
+        "source_type": "local_raw_pdf_with_local_conversion",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md: UAP SPP 202 refined markdown lines 173-183; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md: UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md: UAP SPP 206 refined markdown lines 3-7, 185-187, 781-785; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md: UAP SPP 207 refined markdown lines 3-7, 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md: CIAP Document 102 refined markdown lines 172-182, 337-340, 876-890",
+    "checked_markdown_lines": [
+      "UAP SPP 202 refined markdown lines 173-183",
+      "UAP Standards of Professional Practice refined markdown lines 300-350",
+      "362-418",
+      "475-586",
+      "1036-1077",
+      "1097-1215",
+      "UAP SPP 206 refined markdown lines 3-7",
+      "185-187",
+      "781-785",
+      "UAP SPP 207 refined markdown lines 3-7",
+      "147-153",
+      "CIAP Document 102 refined markdown lines 172-182",
+      "337-340",
+      "876-890"
+    ],
+    "internet_evidence_used": false
   },
-  "source_safe_repair": {
+  "article_repair": {
     "normalized_md_rewritten": true,
     "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "source_audit_evidence_json_created": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
+    "diff_report_generated": true,
+    "real_world_scenario_added": true,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true
   },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:cd236433a2723a29478ff9571b0f6d1fe2ad22faff29527ba76a83a9f05d56c6",
-      "safe_to_diff": true
+  "claims": [
+    {
+      "claim_id": "batch-099-lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery-article-scenario",
+      "claim_text": "Batch 099 added a source-safe Real World Scenario for Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "uap-spp-202-local",
+        "uap-standards-professional-practice2-local",
+        "uap-spp-206-local",
+        "uap-spp-207-local",
+        "ciap-document-102-local"
+      ],
+      "source_support": {
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP SPP 202 refined markdown lines 173-183",
+          "UAP Standards of Professional Practice refined markdown lines 300-350",
+          "362-418",
+          "475-586",
+          "1036-1077",
+          "1097-1215",
+          "UAP SPP 206 refined markdown lines 3-7",
+          "185-187",
+          "781-785",
+          "UAP SPP 207 refined markdown lines 3-7",
+          "147-153",
+          "CIAP Document 102 refined markdown lines 172-182",
+          "337-340",
+          "876-890"
+        ]
+      }
     },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true,
-      "changed": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "expected component-usage.json warning only"
-      ]
-    },
-    "scoped_checks": {
-      "passed": true,
-      "blockers": [],
-      "placeholder_matches": []
+    {
+      "claim_id": "batch-099-lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery-linked-questions",
+      "claim_text": "Batch 099 refreshed 10 linked question edits for source-safe alignment.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "uap-spp-202-local",
+        "uap-standards-professional-practice2-local",
+        "uap-spp-206-local",
+        "uap-spp-207-local",
+        "ciap-document-102-local"
+      ],
+      "source_support": {
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md"
+        ],
+        "checked_markdown_lines": [
+          "UAP SPP 202 refined markdown lines 173-183",
+          "UAP Standards of Professional Practice refined markdown lines 300-350",
+          "362-418",
+          "475-586",
+          "1036-1077",
+          "1097-1215",
+          "UAP SPP 206 refined markdown lines 3-7",
+          "185-187",
+          "781-785",
+          "UAP SPP 207 refined markdown lines 3-7",
+          "147-153",
+          "CIAP Document 102 refined markdown lines 172-182",
+          "337-340",
+          "876-890"
+        ]
+      }
     }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "No unsupported source families were added; Batch 099 changes are limited to source-safe scenario enrichment and refreshed linked-question sidecars."
+  ],
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PENDING"
   },
-  "sme_review": {
-    "required": false,
-    "status": "PASS"
-  },
-  "overall": {
+  "overall_result": {
     "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
+    "blockers": []
   }
 }
