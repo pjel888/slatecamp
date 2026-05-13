@@ -161,6 +161,12 @@ export interface GeometryInstruction {
   color: string
   opacity?: number
   transparent?: boolean
+  /** Optional material override for unlit measurement/violation overlays. */
+  material?: 'standard' | 'basic'
+  /** Prevent non-authoritative guides/overlays from affecting camera fit bounds. */
+  cameraFitExclude?: boolean
+  /** Optional material depth write override, useful for transparent overlays. */
+  depthWrite?: boolean
   /** Optional label displayed via Html overlay */
   label?: string
   /** 2D cross-section points for extruded-profile type */

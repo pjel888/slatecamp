@@ -1,4 +1,4 @@
-// src/features/3d-lab/config/modules/08-vertical/stairway-configurator.ts
+// src/features/3d-lab/config/modules/08-vertical/stairway-code-compliance.ts
 // ─────────────────────────────────────────────────────────────────────────────
 // StairCode PH — Multi-Law Parallel Compliance Explorer
 // PD 1096 (NBCP) · BP 220 (Housing) · BP 344 (Accessibility) · RA 9514 (Fire)
@@ -20,7 +20,7 @@ import type {
   AnnotationDef,
 } from '@/features/3d-lab/types/templates'
 
-import { computeStairState } from './stairway-computation'
+import { computeParallelDimensionFailures, computeStairState } from './stairway-computation'
 import type {
   ComputedStairState,
   StairDimensionKey,
@@ -57,18 +57,16 @@ import {
   WIDTH_DEFICIT_OPACITY,
   HEADROOM_PLANE_OPACITY,
   HEADROOM_PASS_COLOR,
-  LAW_COLORS,
+  CODE_VIOLATION_COLOR,
   NEUTRAL_COLORS,
 } from './stairway-constants'
 
 import { ALL_PRESETS } from './stairway-presets'
-import { buildLShapeGeometry } from './stairway-geometry-l-shape'
-import { buildUShapeGeometry } from './stairway-geometry-u-shape'
-import { getMaterialById } from './stairway-materials'
 import { buildNosingProfile } from './stairway-nosing'
 import {
   computeStraightStairJoinContract,
   computeStepTopHeightsMeters,
+  computeVisualLandingDepthMeters,
 } from './stairway-geometry-contracts'
 import { validateStairGeometry } from './stairway-geometry-validator'
 import { computeEgressRequirements } from './stairway-egress'
@@ -217,46 +215,13 @@ const parameters: ParameterDef[] = [
 
   // ── Stair Geometry ────────────────────────────────────────────────────────
   {
-    key: 'stairType',
-    label: 'Stair Type',
-    type: 'dropdown',
-    default: 'straight',
-    options: [
-      { value: 'straight', label: 'Straight Run' },
-      { value: 'l-shape', label: 'L-Shape (Quarter Turn)' },
-      { value: 'u-shape', label: 'U-Shape (Switchback)' },
-    ],
-    group: 'Stair Geometry',
-  },
-  {
-    key: 'turnDirection',
-    label: 'Turn Direction',
-    type: 'dropdown',
-    default: 'right',
-    options: [
-      { value: 'left', label: 'Left' },
-      { value: 'right', label: 'Right' },
-    ],
-    group: 'Stair Geometry',
-  },
-  {
-    key: 'risersBeforeTurn',
-    label: 'Risers Before Turn',
-    type: 'slider',
-    min: 2,
-    max: 12,
-    step: 1,
-    default: 6,
-    group: 'Stair Geometry',
-  },
-  {
     key: 'stairWidth',
     label: 'Clear Width',
     type: 'slider',
     min: 500,
     max: 1500,
     step: 25,
-    default: 900,
+    default: 1200,
     unit: 'mm',
     group: 'Stair Geometry',
   },
@@ -267,7 +232,7 @@ const parameters: ParameterDef[] = [
     min: 100,
     max: 300,
     step: 5,
-    default: 185,
+    default: 175,
     unit: 'mm',
     group: 'Stair Geometry',
   },
@@ -278,7 +243,7 @@ const parameters: ParameterDef[] = [
     min: 150,
     max: 350,
     step: 5,
-    default: 250,
+    default: 300,
     unit: 'mm',
     group: 'Stair Geometry',
   },
@@ -544,25 +509,25 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
   const headroomM = state.headroom / 1000
   const hrH = state.handrailHeight / 1000
 
-  // Material color resolution (Task 5: material PBR → tread color)
-  const selectedMaterial = getMaterialById(str(rawParams.treadMaterial ?? 'concrete'))
-  const materialColor = selectedMaterial?.baseColor ?? NEUTRAL_COLORS.TREAD
-
-  // Resolved colors from computation engine (violation colors override material)
-  const rColor = state.riserColor ?? NEUTRAL_COLORS.RISER
-  const tColor = state.treadColor ? state.treadColor : materialColor
-  const wColor = state.widthColor
-  const headViol = state.headroomViolation
-  const hrColor = state.handrailColor ?? NEUTRAL_COLORS.HANDRAIL
+  // The right-side law cards intentionally evaluate all four laws in parallel.
+  // The model must use the same UX contract: if ANY law card shows a failure for
+  // a physical dimension, the corresponding model part turns universal red.
+  const parallelFailures = computeParallelDimensionFailures(rawParams)
+  const rColor = parallelFailures.riserHeight ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.RISER
+  const tColor = parallelFailures.treadDepth ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.TREAD
+  const wColor = parallelFailures.stairWidth ? CODE_VIOLATION_COLOR : null
+  const headViol = parallelFailures.headroom
+  const hrColor = parallelFailures.handrailHeight ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.HANDRAIL
   const stepTopHeights = computeStepTopHeightsMeters(state)
 
   // Geometry constants
   const totalRise = stepTopHeights[stepTopHeights.length - 1] ?? n * rH
   const totalRun = (n - 1) * tD
-  const strAngle = Math.atan2(Math.max(totalRise - rH, 0), Math.max(totalRun, tD))
-  const joinContract = computeStraightStairJoinContract(tD, n)
-  const railRun = totalRun
+  const landingDepth = computeVisualLandingDepthMeters(state.stairWidth)
+  const joinContract = computeStraightStairJoinContract(tD, n, landingDepth)
+  const railRun = Math.abs(joinContract.topJoinZ - joinContract.bottomJoinZ)
   const railRise = Math.max(totalRise - rH, 0)
+  const strAngle = Math.atan2(railRise, Math.max(railRun, tD))
   const strCZ = (joinContract.firstTreadCenterZ + joinContract.lastTreadCenterZ) / 2
 
   const g: GeometryInstruction[] = []
@@ -584,13 +549,6 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
     const thisRiserHeight = currentTop - previousTop
     const z = -(i * tD)
 
-    // Determine riser color: if this step violates uniformity, use PD 1096 color
-    const isUniformityViolation = state.toleranceMode &&
-      state.uniformityViolationIndices.includes(i)
-    const thisRiserColor = isUniformityViolation
-      ? LAW_COLORS.PD_1096
-      : rColor
-
     g.push({
       id: `tread-${i}`,
       type: 'box',
@@ -604,7 +562,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
       type: 'box',
       position: [0, currentTop - thisRiserHeight / 2, z + tD / 2],
       args: [sW, thisRiserHeight, RISER_THICKNESS_M],
-      color: thisRiserColor,
+      color: rColor,
     })
   }
 
@@ -613,17 +571,30 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
     const railStart: [number, number, number] = [
       s * (sW / 2 + STRINGER_THICKNESS_M / 2),
       (stepTopHeights[0] ?? rH) + hrH * Math.cos(strAngle),
-      joinContract.firstTreadCenterZ + hrH * Math.sin(strAngle),
+      joinContract.bottomJoinZ,
     ]
     const railEnd: [number, number, number] = [
       s * (sW / 2 + STRINGER_THICKNESS_M / 2),
       totalRise + hrH * Math.cos(strAngle),
-      joinContract.lastTreadCenterZ + hrH * Math.sin(strAngle),
+      joinContract.topJoinZ,
     ]
+    const bottomExtensionStartZ = joinContract.bottomLandingCenterZ + joinContract.landingDepth / 2
+    const topExtensionEndZ = joinContract.topLandingCenterZ - joinContract.landingDepth / 2
+    const bottomExtensionLength = Math.abs(bottomExtensionStartZ - railStart[2])
+    const topExtensionLength = Math.abs(railEnd[2] - topExtensionEndZ)
     const dx = railEnd[0] - railStart[0]
     const dy = railEnd[1] - railStart[1]
     const dz = railEnd[2] - railStart[2]
     const railLength = Math.sqrt(dx ** 2 + dy ** 2 + dz ** 2)
+
+    g.push({
+      id: `handrail-ext-bottom-${s < 0 ? 'L' : 'R'}`,
+      type: 'cylinder',
+      position: [railStart[0], railStart[1], (bottomExtensionStartZ + railStart[2]) / 2],
+      rotation: [Math.PI / 2, 0, 0],
+      args: [HANDRAIL_RADIUS_M, HANDRAIL_RADIUS_M, bottomExtensionLength, 8],
+      color: hrColor,
+    })
 
     g.push({
       id: `handrail-${s < 0 ? 'L' : 'R'}`,
@@ -635,6 +606,15 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
       ],
       rotation: [Math.PI / 2 + strAngle, 0, 0],
       args: [HANDRAIL_RADIUS_M, HANDRAIL_RADIUS_M, railLength, 8],
+      color: hrColor,
+    })
+
+    g.push({
+      id: `handrail-ext-top-${s < 0 ? 'L' : 'R'}`,
+      type: 'cylinder',
+      position: [railEnd[0], railEnd[1], (railEnd[2] + topExtensionEndZ) / 2],
+      rotation: [Math.PI / 2, 0, 0],
+      args: [HANDRAIL_RADIUS_M, HANDRAIL_RADIUS_M, topExtensionLength, 8],
       color: hrColor,
     })
   }
@@ -652,18 +632,27 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
   })
 
   // ── 6. Headroom clearance plane ───────────────────────────────────────────
-  const midI = Math.floor(n / 2)
-  const headY = (stepTopHeights[midI] ?? ((midI + 1) * rH)) + headroomM
-  const headZ = -(midI * tD - tD / 2)
+  // Headroom is represented as vertical clearance above the upper walking
+  // surface/2F landing datum. The reference plane must span the full walking
+  // path in plan: from the outer end of the GF landing to the outer end of the
+  // 2F landing, not only the top landing footprint.
+  const headY = topY + headroomM
+  const headStartZ = joinContract.topLandingCenterZ - joinContract.landingDepth / 2
+  const headEndZ = joinContract.bottomLandingCenterZ + joinContract.landingDepth / 2
+  const headZ = (headStartZ + headEndZ) / 2
+  const headDepth = Math.abs(headEndZ - headStartZ)
 
   g.push({
     id: 'headroom-plane',
     type: 'box',
     position: [0, headY, headZ],
-    args: [sW * 1.05, 0.005, totalRun + tD],
-    color: headViol ? LAW_COLORS.PD_1096 : HEADROOM_PASS_COLOR,
+    args: [sW, 0.005, headDepth],
+    color: headViol ? CODE_VIOLATION_COLOR : HEADROOM_PASS_COLOR,
     opacity: HEADROOM_PLANE_OPACITY,
     transparent: true,
+    material: 'basic',
+    depthWrite: false,
+    cameraFitExclude: true,
   })
 
   // ── 7. BP 344 Ghost Handrails (Accessible Route Overlay) ──────────────────
@@ -686,7 +675,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
             Math.sqrt(railRun ** 2 + railRise ** 2),
             8,
           ],
-          color: LAW_COLORS.BP_344,
+          color: hrColor,
           opacity: BP344_GHOST_OPACITY,
           transparent: true,
         })
@@ -705,7 +694,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
         position: [xPos, 0.9, joinContract.bottomJoinZ + extLen / 2],
         rotation: [Math.PI / 2, 0, 0],
         args: [BP344_GHOST_RAIL_RADIUS_M, BP344_GHOST_RAIL_RADIUS_M, extLen, 8],
-        color: LAW_COLORS.BP_344,
+        color: hrColor,
         opacity: BP344_GHOST_OPACITY,
         transparent: true,
       })
@@ -717,7 +706,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
         position: [xPos, topY + 0.9, joinContract.topJoinZ - extLen / 2],
         rotation: [Math.PI / 2, 0, 0],
         args: [BP344_GHOST_RAIL_RADIUS_M, BP344_GHOST_RAIL_RADIUS_M, extLen, 8],
-        color: LAW_COLORS.BP_344,
+        color: hrColor,
         opacity: BP344_GHOST_OPACITY,
         transparent: true,
       })
@@ -737,6 +726,9 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
           color: wColor,
           opacity: WIDTH_DEFICIT_OPACITY,
           transparent: true,
+          material: 'basic',
+          depthWrite: false,
+          cameraFitExclude: true,
         })
       }
     }
@@ -904,25 +896,11 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
   return g
 }
 
-// ── Geometry Routing by Stair Type ─────────────────────────────────────────
-
-const buildGeometryFromState = (state: ComputedStairState, rawParams: StairParams): GeometryInstruction[] => {
-  switch (state.stairType.type) {
-    case 'l-shape':
-      return buildLShapeGeometry(state, rawParams)
-    case 'u-shape':
-      return buildUShapeGeometry(state, rawParams)
-    case 'straight':
-    default:
-      return buildStraightGeometry(state, rawParams)
-  }
-}
-
-// Adapter: ParametricSceneConfig.geometry signature → computation engine → router
+// Adapter: ParametricSceneConfig.geometry signature → computation engine → straight stair model
 
 const geometry = (p: StairParams): GeometryInstruction[] => {
   const state = computeStairState(p)
-  const builtGeometry = buildGeometryFromState(state, p)
+  const builtGeometry = buildStraightGeometry(state, p)
 
   if (process.env.NODE_ENV !== 'production') {
     const report = validateStairGeometry(builtGeometry)
@@ -1413,8 +1391,8 @@ const annotations: AnnotationDef[] = [
 // ─── Export ──────────────────────────────────────────────────────────────────
 
 export const stairwayConfigurator: ParametricSceneConfig = {
-  id: 'stairway-configurator',
-  title: 'Stairway Configurator',
+  id: 'stairway-code-compliance',
+  title: 'Stairway Code Compliance',
   description:
     'Multi-law 3D stair compliance explorer — PD 1096, BP 220, BP 344, and RA 9514 evaluated in parallel with conflict detection.',
   subject: 'Building Technology',
@@ -1424,8 +1402,13 @@ export const stairwayConfigurator: ParametricSceneConfig = {
   annotations,
   presets: ALL_PRESETS,
   camera: {
-    position: [3, 3, 3],
-    fov: 45,
+    // Default module view: NW-framed perspective. Orientation buttons (NW/NE/etc.)
+    // only rotate the current projection; they must not force isometric mode.
+    position: [-8, 6, 8],
+    target: [0, 1, 0],
+    fov: 35,
+    zoomToFit: { position: [-8, 6, 8], target: [0, 1, 0], zoom: 50 },
+    resetPreset: 'perspective',
   },
   contextScenario:
     "You're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.",

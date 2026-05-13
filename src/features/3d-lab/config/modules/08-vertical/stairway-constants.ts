@@ -1,6 +1,6 @@
 // ──────────────────────────────────────────────────────────────────────────────
 // stairway-constants.ts — Philippine Code Constants & Rendering Constants
-// All thresholds extracted from stairway-configurator.ts with code citations.
+// All thresholds extracted from stairway-code-compliance.ts with code citations.
 // ──────────────────────────────────────────────────────────────────────────────
 
 // ──────────────────────────────────────────────────────────────────────────────
@@ -78,8 +78,10 @@ export const BP344_GHOST_RAIL_RADIUS_M = 0.015
 export const BP344_GHOST_OPACITY = 0.4
 export const BP344_GHOST_OFFSET_M = 0.03
 export const WIDTH_DEFICIT_OPACITY = 0.15
-export const HEADROOM_PLANE_OPACITY = 0.3
+export const HEADROOM_PLANE_OPACITY = 0.5
 export const HEADROOM_PASS_COLOR = '#dbeafe'        // Light blue — headroom plane when passing
+export const CODE_VIOLATION_COLOR = '#DC2626'       // Universal red — active code/legal violation
+export const STAIR_MODEL_COLOR = '#6B7280'          // Single neutral gray for the stair assembly
 
 // ──────────────────────────────────────────────────────────────────────────────
 // Law Color Palette (Ordered by Severity)
@@ -94,10 +96,10 @@ export const LAW_COLORS = {
 } as const
 
 export const NEUTRAL_COLORS = {
-  TREAD:    '#a1a1aa',
-  RISER:    '#a1a1aa',
-  LANDING:  '#a1a1aa',
-  HANDRAIL: '#71717a',
+  TREAD:    STAIR_MODEL_COLOR,
+  RISER:    STAIR_MODEL_COLOR,
+  LANDING:  STAIR_MODEL_COLOR,
+  HANDRAIL: STAIR_MODEL_COLOR,
 } as const
 
 // ──────────────────────────────────────────────────────────────────────────────

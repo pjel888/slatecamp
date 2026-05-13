@@ -12,7 +12,16 @@
 // Optional contextLine for info/warning/error hints below the slider.
 
 import { useCallback, memo, useState, useEffect, useRef } from 'react'
+import { Info } from 'lucide-react'
 import { Slider as SliderPrimitive, SliderRoot } from '@base-ui/react/slider'
+import {
+  Popover,
+  PopoverContent,
+  PopoverDescription,
+  PopoverHeader,
+  PopoverTitle,
+  PopoverTrigger,
+} from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
 
 const MONO_FONT = 'var(--font-dm-mono), monospace'
@@ -29,6 +38,8 @@ const CONTEXT_COLORS = {
 
 interface LabSliderProps {
   label: string
+  labelInfoTitle?: string
+  labelInfoDescription?: string
   value: number
   onChange: (value: number) => void
   min: number
@@ -54,6 +65,8 @@ interface LabSliderProps {
 
 const LabSlider = memo(({
   label,
+  labelInfoTitle,
+  labelInfoDescription,
   value,
   onChange,
   min,
@@ -113,6 +126,7 @@ const LabSlider = memo(({
       : String(Math.round(value))
 
   const shouldShowRangeLabels = showRangeLabels ?? !compact
+  const hasLabelInfo = Boolean(labelInfoDescription)
 
   // ── Compact variant (toolbar-embedded) ──────────────────────────────────
   if (compact) {
@@ -165,9 +179,32 @@ const LabSlider = memo(({
     <div className={cn('space-y-1', className)}>
       {/* Label row */}
       <div className="flex items-center justify-between">
-        <label className="text-[11px] font-medium text-foreground">
-          {label}
-        </label>
+        <div className="flex min-w-0 items-center gap-2">
+          {hasLabelInfo && (
+            <Popover>
+              <PopoverTrigger asChild>
+                <button
+                  type="button"
+                  className="inline-flex size-3 items-center justify-center rounded-full text-muted-foreground/45 transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40"
+                  aria-label={`Explain ${label}`}
+                >
+                  <Info className="size-3" aria-hidden="true" strokeWidth={1.8} />
+                </button>
+              </PopoverTrigger>
+              <PopoverContent side="right" align="start" sideOffset={8} className="w-72 max-w-[300px]">
+                <PopoverHeader>
+                  <PopoverTitle>{labelInfoTitle ?? label}</PopoverTitle>
+                  <PopoverDescription className="text-xs leading-relaxed">
+                    {labelInfoDescription}
+                  </PopoverDescription>
+                </PopoverHeader>
+              </PopoverContent>
+            </Popover>
+          )}
+          <label className="truncate text-[11px] font-medium text-foreground">
+            {label}
+          </label>
+        </div>
         <span
           className={cn(
             'font-medium tabular-nums',

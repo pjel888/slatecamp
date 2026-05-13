@@ -7,7 +7,6 @@
 import type {
   StairParams,
   ComputedStairState,
-  StairTypeConfig,
   ComfortZoneStatus,
   PitchStatus,
   ComplianceResult,
@@ -46,6 +45,7 @@ import {
   PITCH_COMFORTABLE_MAX_DEG,
   PITCH_STEEP_MAX_DEG,
   UNIFORMITY_TOLERANCE_MM,
+  CODE_VIOLATION_COLOR,
   LAW_COLORS,
 } from './stairway-constants'
 
@@ -67,7 +67,6 @@ import {
   IRC_MAX_VERTICAL_RISE_MM,
   IRC_HANDRAIL_MAX_HEIGHT_MM,
 } from './stairway-constants-international'
-import { getNormalizedTurningFlightSplit } from './stairway-geometry-contracts'
 
 // ── Value Coercion Helpers ───────────────────────────────────────────────────
 
@@ -571,7 +570,7 @@ export const computeVerticalRiseCompliance = (
 
 export const resolveDimensionColor = (
   status: StairDimensionStatus,
-): string | null => status.color
+): string | null => status.color ? CODE_VIOLATION_COLOR : null
 
 // ── International Comparison Deltas ──────────────────────────────────────────
 
@@ -672,38 +671,18 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
   const isAccessibleRoute = bool(params.isAccessibleRoute ?? false)
   const isExitStair = bool(params.isExitStair ?? false)
   const isHighOccupancy = bool(params.isHighOccupancy ?? false)
-  const stairWidth = num(params.stairWidth ?? 900)
-  const riserHeight = num(params.riserHeight ?? 185)
-  const treadDepth = num(params.treadDepth ?? 250)
+  const stairWidth = num(params.stairWidth ?? 1200)
+  const riserHeight = num(params.riserHeight ?? 175)
+  const treadDepth = num(params.treadDepth ?? 300)
   const headroom = num(params.headroom ?? 2100)
   const handrailHeight = num(params.handrailHeight ?? 900)
   const numRisers = num(params.numRisers ?? 12)
   const toleranceMode = bool(params.toleranceMode ?? false)
   const toleranceRange = num(params.toleranceRange ?? 5)
 
-  // Stair type parsing
-  const stairTypeStr = str(params.stairType ?? 'straight')
-  const parsedStairType: StairTypeConfig = stairTypeStr === 'l-shape'
-    ? {
-        type: 'l-shape',
-        turnDirection: str(params.turnDirection ?? 'right') as 'left' | 'right',
-        risersBeforeTurn: num(params.risersBeforeTurn ?? 6),
-      }
-    : stairTypeStr === 'u-shape'
-      ? { type: 'u-shape', risersBeforeTurn: num(params.risersBeforeTurn ?? 6) }
-      : { type: 'straight' }
-  const normalizedTurnSplit = getNormalizedTurningFlightSplit(parsedStairType, numRisers)
-  const stairType: StairTypeConfig = parsedStairType.type === 'l-shape'
-    ? {
-        ...parsedStairType,
-        risersBeforeTurn: normalizedTurnSplit?.before ?? parsedStairType.risersBeforeTurn,
-      }
-    : parsedStairType.type === 'u-shape'
-      ? {
-          ...parsedStairType,
-          risersBeforeTurn: normalizedTurnSplit?.before ?? parsedStairType.risersBeforeTurn,
-        }
-      : parsedStairType
+  // Current stairway configurator is a straight-run model only.
+  const stairType = { type: 'straight' } as const
+  const normalizedTurnSplit = null
 
   // Classification flags
   const isBP220 = computeIsBP220(projectType)
@@ -826,3 +805,41 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
     internationalDeltas,
   }
 }
+
+export const lawComparisonParamSets = (params: StairParams): StairParams[] => [
+  { ...params, isExitStair: true },
+  { ...params, isAccessibleRoute: true },
+  { ...params, projectType: 'general_residential' },
+  { ...params, projectType: 'bp220_socialized' },
+]
+
+export const computeParallelDimensionFailures = (
+  params: StairParams,
+): Record<StairDimensionKey, boolean> => {
+  const failures: Record<StairDimensionKey, boolean> = {
+    riserHeight: false,
+    treadDepth: false,
+    stairWidth: false,
+    headroom: false,
+    handrailHeight: false,
+    verticalRise: false,
+  }
+
+  for (const lawParams of lawComparisonParamSets(params)) {
+    const state = computeStairState(lawParams)
+
+    for (const dimension of Object.keys(failures) as StairDimensionKey[]) {
+      if (failures[dimension]) continue
+      failures[dimension] = state.dimensionStatuses[dimension].laws.some(
+        (law) => law.applies && !law.passes,
+      )
+    }
+  }
+
+  return failures
+}
+
+export const anyLawFailsDimension = (
+  params: StairParams,
+  dimension: StairDimensionKey,
+): boolean => computeParallelDimensionFailures(params)[dimension]

@@ -1,6 +1,6 @@
 // ──────────────────────────────────────────────────────────────────────────────
-// stairway-types.ts — Stairway Configurator Type Definitions
-// Stairway Configurator v2 module-specific types.
+// stairway-types.ts — Stairway Code Compliance Type Definitions
+// Stairway Code Compliance v2 module-specific types.
 // These EXTEND (never replace) existing types from types/templates.ts.
 // ──────────────────────────────────────────────────────────────────────────────
 
@@ -88,10 +88,7 @@ export interface InternationalComparisonDelta {
 
 // ── Stair Type Abstraction ───────────────────────────────────────────────────
 
-export type StairTypeConfig =
-  | { type: 'straight' }
-  | { type: 'l-shape'; turnDirection: 'left' | 'right'; risersBeforeTurn: number }
-  | { type: 'u-shape'; risersBeforeTurn: number }
+export type StairTypeConfig = { type: 'straight' }
 
 export interface NormalizedTurningFlightSplit {
   before: number

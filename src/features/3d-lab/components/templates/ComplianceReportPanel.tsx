@@ -13,6 +13,14 @@ import {
   Warning,
   Info,
 } from '@phosphor-icons/react/dist/ssr'
+import {
+  Popover,
+  PopoverContent,
+  PopoverDescription,
+  PopoverHeader,
+  PopoverTitle,
+  PopoverTrigger,
+} from '@/components/ui/popover'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { ViolationRule } from '@/features/3d-lab/types/templates'
@@ -27,9 +35,9 @@ type P = Record<string, number | boolean | string>
 
 interface LawMeta {
   label: string
+  shortLabel: string
+  description: string
   color: string
-  scope: string
-  citation: string
   priority: number
   isActive: (params: P) => boolean
 }
@@ -42,33 +50,33 @@ function isBP220Project(params: P): boolean {
 const LAWS: Record<string, LawMeta> = {
   ra9514: {
     label: 'RA 9514 — Fire Code',
+    shortLabel: 'RA 9514',
+    description: 'Fire Code checks for stairs used as exits. In this module, it focuses on safe egress dimensions such as exit-stair riser height, tread depth, clear width, and vertical rise per flight.',
     color: '#E74C3C',
-    scope: 'Exit stair · Life-safety overlay',
-    citation: 'RA 9514 IRR · BFP',
     priority: 4,
     isActive: (p) => p.isExitStair === true || p.isExitStair === 'true',
   },
   bp344: {
     label: 'BP 344 — Accessibility',
-    color: '#3498DB',
-    scope: 'Accessible route overlay',
-    citation: 'BP 344 IRR · DPWH',
+    shortLabel: 'BP 344',
+    description: 'Accessibility Law checks for stairs that form part of an accessible route. In this module, it highlights dimensions that affect usability, especially clear stair width and handrail height.',
+    color: '#D97706',
     priority: 3,
     isActive: (p) => p.isAccessibleRoute === true || p.isAccessibleRoute === 'true',
   },
   pd1096: {
     label: 'PD 1096 — NBCP',
+    shortLabel: 'PD 1096',
+    description: 'National Building Code checks for general stair safety and habitability. In this module, it tests core stair proportions such as riser height, tread depth, headroom, clear width, handrail height, and rise per flight.',
     color: '#4A7FAD',
-    scope: 'Baseline · All buildings',
-    citation: 'PD 1096 · DPWH',
     priority: 2,
     isActive: (p) => !isBP220Project(p),
   },
   bp220: {
     label: 'BP 220 — Housing',
-    color: '#F5A623',
-    scope: 'Economic / Socialized Housing',
-    citation: 'BP 220 IRR · DHSUD',
+    shortLabel: 'BP 220',
+    description: 'Economic and socialized housing checks. It applies when the project type is set to BP 220 housing and uses its own minimum stair dimensions for compact residential planning.',
+    color: '#16A34A',
     priority: 1,
     isActive: (p) => isBP220Project(p),
   },
@@ -78,6 +86,33 @@ const LAWS: Record<string, LawMeta> = {
 
 function getLawPrefix(id: string): string {
   return id.split('-')[0]
+}
+
+const REQUIREMENT_LABELS: Record<string, { description: string; value: string }> = {
+  'pd1096-max-riser': { description: 'Riser height', value: '≤ 200 mm' },
+  'pd1096-min-tread': { description: 'Tread depth', value: '≥ 200 mm' },
+  'pd1096-min-headroom': { description: 'Headroom', value: '≥ 2,000 mm' },
+  'pd1096-max-vertical': { description: 'Vertical rise per flight', value: '≤ 3,600 mm' },
+  'pd1096-min-width': { description: 'Width by occupancy', value: '≥ 750 / 900 / 1,100 mm' },
+  'pd1096-handrail-range': { description: 'Handrail height', value: '800–900 mm' },
+  'ra9514-max-riser': { description: 'Exit stair riser', value: '≤ 180 mm' },
+  'ra9514-min-width': { description: 'Exit stair width', value: '≥ 900 mm' },
+  'ra9514-min-tread': { description: 'Exit stair tread', value: '≥ 200 mm' },
+  'ra9514-max-vertical': { description: 'Vertical rise per flight', value: '≤ 3,000 mm' },
+  'bp220-max-riser': { description: 'Riser height', value: '≤ 250 mm' },
+  'bp220-min-tread': { description: 'Tread depth', value: '≥ 200 mm' },
+  'bp220-min-width': { description: 'Clear width', value: '≥ 600 mm' },
+  'bp344-min-width': { description: 'Accessible stair width', value: '≥ 1,200 mm' },
+  'bp344-handrail-upper': { description: 'Upper handrail height', value: '900 mm' },
+}
+
+function requirementLabel(rule: ViolationRule): string {
+  const label = REQUIREMENT_LABELS[rule.id]
+  return label ? `${label.description} ${label.value}` : rule.message.replace(/^(PD 1096|RA 9514|BP 220|BP 344):\s*/i, '')
+}
+
+function requirementParts(rule: ViolationRule): { description: string; value: string } {
+  return REQUIREMENT_LABELS[rule.id] ?? { description: requirementLabel(rule), value: '' }
 }
 
 // ─── Internal Types ─────────────────────────────────────────────────────────
@@ -97,50 +132,14 @@ interface LawGroup {
   applicable: boolean
 }
 
-// ─── Total Badge ────────────────────────────────────────────────────────────
-
-function TotalBadge({ count }: { count: number }) {
-  if (count === 0) {
-    return (
-      <span
-        className="rounded-full px-2 py-0.5 font-semibold"
-        style={{
-          fontSize: 10,
-          backgroundColor: 'rgba(46, 204, 113, 0.12)',
-          color: '#2ECC71',
-          fontFamily: MONO,
-        }}
-      >
-        ALL PASS
-      </span>
-    )
-  }
-
-  return (
-    <span
-      className="rounded-full px-2 py-0.5 font-semibold"
-      style={{
-        fontSize: 10,
-        backgroundColor: 'rgba(231, 76, 60, 0.12)',
-        color: '#E74C3C',
-        fontFamily: MONO,
-      }}
-    >
-      {count} {count === 1 ? 'VIOLATION' : 'VIOLATIONS'}
-    </span>
-  )
-}
-
 // ─── Status Badge ───────────────────────────────────────────────────────────
 
 function StatusBadge({
   allPass,
   activeCount,
-  color,
 }: {
   allPass: boolean
   activeCount: number
-  color: string
 }) {
   if (allPass) {
     return (
@@ -163,8 +162,8 @@ function StatusBadge({
       className="shrink-0 rounded-full px-2 py-0.5 font-semibold"
       style={{
         fontSize: 10,
-        backgroundColor: `${color}18`,
-        color,
+        backgroundColor: 'rgba(220, 38, 38, 0.12)',
+        color: '#DC2626',
         fontFamily: MONO,
       }}
     >
@@ -177,43 +176,53 @@ function StatusBadge({
 
 function CheckRow({
   ev,
-  lawColor,
 }: {
   ev: EvaluatedViolation
-  lawColor: string
 }) {
   const { rule, active } = ev
   const isError = active && rule.severity === 'error'
   const isWarning = active && rule.severity === 'warning'
   const isInfo = active && rule.severity === 'info'
+  const isViolation = isError || isWarning || isInfo
+  const label = requirementParts(rule)
 
   return (
-    <div className="flex items-start gap-2 px-3 py-1.5 border-t border-border first:border-t-0">
+    <div className={cn('flex items-center gap-2 px-3 py-1', isViolation && 'bg-red-50/80')}>
       <div className="shrink-0 mt-px">
         {isError && (
-          <span style={{ color: lawColor }}>
+          <span className="text-red-600">
             <SCIcon icon={XCircle} size="xs" />
           </span>
         )}
         {isWarning && (
-          <SCIcon icon={Warning} size="xs" className="text-amber-500" />
+          <SCIcon icon={Warning} size="xs" className="text-red-600" />
         )}
         {isInfo && (
-          <SCIcon icon={Info} size="xs" className="text-blue-400" />
+          <SCIcon icon={Info} size="xs" className="text-red-600" />
         )}
         {!active && (
           <SCIcon icon={CheckCircle} size="xs" className="text-emerald" />
         )}
       </div>
-      <div className="flex-1 min-w-0">
+      <div className="grid min-w-0 flex-1 grid-cols-[minmax(0,1fr)_auto] items-baseline gap-2">
         <div
           className={cn(
-            'leading-snug',
-            isError ? 'font-medium' : 'text-muted-foreground'
+            'truncate leading-snug',
+            isViolation ? 'font-medium text-red-700' : 'text-muted-foreground'
           )}
-          style={{ fontSize: 11, color: isError ? lawColor : undefined }}
+          style={{ fontSize: 11 }}
+          title={requirementLabel(rule)}
         >
-          {rule.message}
+          {label.description}
+        </div>
+        <div
+          className={cn(
+            'shrink-0 whitespace-nowrap text-right font-semibold tabular-nums leading-snug',
+            isViolation ? 'text-red-700' : 'text-foreground'
+          )}
+          style={{ fontSize: 11, fontFamily: MONO }}
+        >
+          {label.value}
         </div>
       </div>
     </div>
@@ -222,18 +231,43 @@ function CheckRow({
 
 // ─── Law Card ───────────────────────────────────────────────────────────────
 
+function LawInfoButton({ meta }: { meta: LawMeta }) {
+  return (
+    <Popover>
+      <PopoverTrigger asChild>
+        <button
+          type="button"
+          className="inline-flex size-3.5 shrink-0 items-center justify-center rounded-full text-muted-foreground/50 transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/40"
+          aria-label={`Explain ${meta.shortLabel}`}
+        >
+          <SCIcon icon={Info} size="xs" />
+        </button>
+      </PopoverTrigger>
+      <PopoverContent side="left" align="start" sideOffset={8} className="w-72 max-w-[300px]">
+        <PopoverHeader>
+          <PopoverTitle>{meta.label}</PopoverTitle>
+          <PopoverDescription className="text-xs leading-relaxed">
+            {meta.description}
+          </PopoverDescription>
+        </PopoverHeader>
+      </PopoverContent>
+    </Popover>
+  )
+}
+
 function LawCard({ group }: { group: LawGroup }) {
   const { meta, violations, activeCount } = group
   const allPass = activeCount === 0
 
   return (
-    <div className="rounded-md border border-border overflow-hidden bg-card">
+    <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-lg bg-card shadow-sm">
       {/* Header */}
-      <div className="flex items-center gap-2 px-3 py-2.5">
+      <div className="flex shrink-0 items-center gap-2 px-3 py-2">
         <div
-          className="w-[3px] h-8 rounded-full shrink-0"
+          className="w-[3px] h-7 rounded-full shrink-0"
           style={{ backgroundColor: meta.color }}
         />
+        <LawInfoButton meta={meta} />
         <div className="flex-1 min-w-0">
           <div
             className="font-bold text-foreground"
@@ -241,31 +275,18 @@ function LawCard({ group }: { group: LawGroup }) {
           >
             {meta.label}
           </div>
-          <div className="text-muted-foreground truncate" style={{ fontSize: 10 }}>
-            {meta.scope}
-          </div>
         </div>
         <StatusBadge
           allPass={allPass}
           activeCount={activeCount}
-          color={meta.color}
         />
       </div>
 
       {/* Dimension checks */}
-      <div className="border-t border-border">
+      <div className="min-h-0 flex-1 border-t border-border">
         {violations.map((ev) => (
-          <CheckRow key={ev.rule.id} ev={ev} lawColor={meta.color} />
+          <CheckRow key={ev.rule.id} ev={ev} />
         ))}
-      </div>
-
-      {/* Citation */}
-      <div
-        className="border-t border-border px-3 py-1.5 flex items-center gap-1"
-        style={{ fontSize: 10 }}
-      >
-        <span className="text-muted-foreground/50">Source:</span>
-        <span className="text-muted-foreground">{meta.citation}</span>
       </div>
     </div>
   )
@@ -330,7 +351,7 @@ export const ComplianceReportPanel = memo(function ComplianceReportPanel({
 }: ComplianceReportPanelProps) {
   const params = useStore((s) => s.params)
 
-  const { lawGroups, conflicts, totalActive } = useMemo(() => {
+  const { lawGroups, conflicts } = useMemo(() => {
     // Each law card evaluates its violations INDEPENDENTLY — as if that law
     // is active — so the card always reflects whether the current geometry
     // would pass or fail that code. This bypasses the project-type toggles
@@ -383,7 +404,11 @@ export const ComplianceReportPanel = memo(function ComplianceReportPanel({
       const activeCount = evs.filter((e) => e.active).length
       groups.push({ prefix, meta, violations: evs, activeCount, applicable })
     }
-    groups.sort((a, b) => b.meta.priority - a.meta.priority)
+    groups.sort((a, b) => {
+      if (a.prefix === 'bp344') return 1
+      if (b.prefix === 'bp344') return -1
+      return b.violations.length - a.violations.length || b.meta.priority - a.meta.priority
+    })
 
     // Conflicts use original params (they depend on actual project config)
     const conflictViolations: EvaluatedViolation[] = conflictRules
@@ -394,25 +419,16 @@ export const ComplianceReportPanel = memo(function ComplianceReportPanel({
       }))
       .filter((ev) => ev.active)
 
-    // Total counts only errors from applicable (governing) laws
-    const total = groups
-      .filter((g) => g.applicable)
-      .reduce(
-        (sum, g) =>
-          sum + g.violations.filter((e) => e.active && e.rule.severity === 'error').length,
-        0
-      )
-
-    return { lawGroups: groups, conflicts: conflictViolations, totalActive: total }
+    return { lawGroups: groups, conflicts: conflictViolations }
   }, [violations, params])
 
   return (
     <div
       className={cn(
         embedded
-          ? 'h-full overflow-y-auto'
+          ? 'h-full overflow-hidden'
           : cn(
-              'absolute right-0 top-0 bottom-0 z-10 w-[280px] overflow-y-auto',
+              'absolute right-0 top-0 bottom-0 z-10 min-w-[384px] overflow-hidden',
               'bg-card border-l border-border',
               'max-md:hidden'
             )
@@ -420,34 +436,12 @@ export const ComplianceReportPanel = memo(function ComplianceReportPanel({
       role="complementary"
       aria-label="Compliance report"
     >
-      {/* Header */}
-      <div className="sticky top-0 bg-card border-b border-border px-4 py-3 z-10">
-        <div className="flex items-center justify-between">
-          <span
-            className="text-muted-foreground uppercase"
-            style={{ fontFamily: MONO, fontSize: 11, letterSpacing: '0.1em' }}
-          >
-            Compliance Report
-          </span>
-          <TotalBadge count={totalActive} />
-        </div>
-      </div>
-
-      <div className="p-3 space-y-3">
+      <div className="grid h-full min-h-0 grid-rows-4 gap-1.5 p-1.5">
         {lawGroups.map((group) => (
           <LawCard key={group.prefix} group={group} />
         ))}
-
-        <ConflictBanner conflicts={conflicts} />
-
-        <div
-          className="rounded-sm bg-background px-3 py-2 leading-relaxed text-muted-foreground/60"
-          style={{ fontSize: 10 }}
-        >
-          Visual design aid only. Final authority rests with your LGU Building
-          Official and the Bureau of Fire Protection.
-        </div>
       </div>
+      <ConflictBanner conflicts={conflicts} />
     </div>
   )
 })

@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'bun:test'
-import { stairwayConfigurator } from './stairway-configurator'
+import { stairwayConfigurator } from './stairway-code-compliance'
 import {
   isExplicitlyNonInteractiveStairwayId,
   matchClickTarget,
@@ -31,11 +31,7 @@ const buildGeometry = (overrides: Record<string, number | boolean | string> = {}
 
 describe('stairway click target coverage', () => {
   test('all meaningful generated ids are inspectable or explicitly non-interactive', () => {
-    const ids = new Set([
-      ...buildGeometry().map((instruction) => instruction.id),
-      ...buildGeometry({ stairType: 'l-shape', turnDirection: 'right', risersBeforeTurn: 7 }).map((instruction) => instruction.id),
-      ...buildGeometry({ stairType: 'u-shape', risersBeforeTurn: 6 }).map((instruction) => instruction.id),
-    ])
+    const ids = new Set(buildGeometry().map((instruction) => instruction.id))
 
     const uncovered = [...ids].filter((id) => !matchClickTarget(id) && !isExplicitlyNonInteractiveStairwayId(id))
 

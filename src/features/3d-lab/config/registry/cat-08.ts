@@ -36,8 +36,8 @@ export const cat08Modules: ModuleRegistryEntry[] = [
     description: "Stairway section with handrail heights 800–900mm above nosing, 38mm wall clearance, dual rails per PD 1096 Rule VIII §809.",
   },
   {
-    id: "stairway-configurator",
-    title: "Stairway Configurator",
+    id: "stairway-code-compliance",
+    title: "Stairway Code Compliance",
     templateType: "parametric",
     subject: "Building Technology",
     categoryId: "VERTICAL",

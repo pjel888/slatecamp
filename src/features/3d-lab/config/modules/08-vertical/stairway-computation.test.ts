@@ -1,7 +1,14 @@
 import { describe, test, expect } from 'bun:test'
-import { computeStairState, computeBlondelComfort, computePitch } from './stairway-computation'
+import {
+  anyLawFailsDimension,
+  computeParallelDimensionFailures,
+  computeStairState,
+  computeBlondelComfort,
+  computePitch,
+} from './stairway-computation'
 import { computeEgressRequirements } from './stairway-egress'
-import { normalizeTurningFlightSplit } from './stairway-geometry-contracts'
+import { CODE_VIOLATION_COLOR } from './stairway-constants'
+import { stairwayConfigurator } from './stairway-code-compliance'
 
 describe('computeBlondelComfort', () => {
   test('riser=185, tread=250 → comfortable (2R+T=620)', () => {
@@ -62,6 +69,63 @@ describe('computePitch', () => {
 })
 
 describe('computeStairState — preset validation', () => {
+  test('module defaults have no parallel law-card violations', () => {
+    const params = Object.fromEntries(
+      stairwayConfigurator.parameters.map((parameter) => [parameter.key, parameter.default]),
+    )
+
+    const activeViolations = (stairwayConfigurator.violations ?? []).filter((rule) => {
+      const lawPrefix = rule.id.split('-')[0]
+      const evalParams =
+        lawPrefix === 'ra9514'
+          ? { ...params, isExitStair: true }
+          : lawPrefix === 'bp344'
+            ? { ...params, isAccessibleRoute: true }
+            : lawPrefix === 'bp220'
+              ? { ...params, projectType: 'bp220_socialized' }
+              : params
+
+      return rule.check(evalParams)
+    })
+
+    expect(activeViolations.map((rule) => rule.id)).toEqual([])
+  })
+
+  test('parallel law-card dimension failures are exposed for model and slider coloring', () => {
+    const baseParams = Object.fromEntries(
+      stairwayConfigurator.parameters.map((parameter) => [parameter.key, parameter.default]),
+    )
+
+    const failures = computeParallelDimensionFailures({
+      ...baseParams,
+      riserHeight: 185,
+      treadDepth: 195,
+      stairWidth: 900,
+      headroom: 1900,
+      handrailHeight: 950,
+    })
+
+    expect(failures).toMatchObject({
+      riserHeight: true,
+      treadDepth: true,
+      stairWidth: true,
+      headroom: true,
+      handrailHeight: true,
+    })
+
+    expect(anyLawFailsDimension({ ...baseParams, riserHeight: 185 }, 'riserHeight')).toBe(true)
+    expect(anyLawFailsDimension({ ...baseParams, treadDepth: 195 }, 'treadDepth')).toBe(true)
+    expect(anyLawFailsDimension({ ...baseParams, stairWidth: 900 }, 'stairWidth')).toBe(true)
+    expect(anyLawFailsDimension({ ...baseParams, headroom: 1900 }, 'headroom')).toBe(true)
+    expect(anyLawFailsDimension({ ...baseParams, handrailHeight: 950 }, 'handrailHeight')).toBe(true)
+
+    expect(anyLawFailsDimension({ ...baseParams, riserHeight: 175 }, 'riserHeight')).toBe(false)
+    expect(anyLawFailsDimension({ ...baseParams, treadDepth: 300 }, 'treadDepth')).toBe(false)
+    expect(anyLawFailsDimension({ ...baseParams, stairWidth: 1200 }, 'stairWidth')).toBe(false)
+    expect(anyLawFailsDimension({ ...baseParams, headroom: 2100 }, 'headroom')).toBe(false)
+    expect(anyLawFailsDimension({ ...baseParams, handrailHeight: 900 }, 'handrailHeight')).toBe(false)
+  })
+
   test('Standard House preset: no riser/tread violations', () => {
     const state = computeStairState({
       projectType: 'general_residential',
@@ -94,7 +158,7 @@ describe('computeStairState — preset validation', () => {
       handrailHeight: 900,
       numRisers: 14,
     })
-    expect(state.riserColor).toBe('#E74C3C') // RA 9514 red
+    expect(state.riserColor).toBe(CODE_VIOLATION_COLOR)
     expect(state.riserCompliance.ra9514.passes).toBe(false)
     expect(state.riserCompliance.ra9514.applies).toBe(true)
   })
@@ -118,51 +182,7 @@ describe('computeStairState — preset validation', () => {
     expect(state.riserCompliance.conflicts.length).toBeGreaterThan(0)
   })
 
-  test('stairType parsing: l-shape', () => {
-    const state = computeStairState({
-      stairType: 'l-shape',
-      turnDirection: 'left',
-      risersBeforeTurn: 8,
-      riserHeight: 185,
-      treadDepth: 250,
-      numRisers: 12,
-    })
-    expect(state.stairType.type).toBe('l-shape')
-    if (state.stairType.type === 'l-shape') {
-      expect(state.stairType.turnDirection).toBe('left')
-      expect(state.stairType.risersBeforeTurn).toBe(8)
-    }
-  })
-
-  test('turn split is clamped so both flights remain valid', () => {
-    const state = computeStairState({
-      stairType: 'u-shape',
-      risersBeforeTurn: 12,
-      numRisers: 5,
-      riserHeight: 185,
-      treadDepth: 250,
-    })
-
-    expect(state.normalizedTurningFlightSplit).toEqual({
-      before: 3,
-      after: 2,
-      minPerFlight: 2,
-    })
-    expect(state.stairType.type).toBe('u-shape')
-    if (state.stairType.type === 'u-shape') {
-      expect(state.stairType.risersBeforeTurn).toBe(3)
-    }
-  })
-
-  test('turn split normalization never overshoots the available risers', () => {
-    expect(normalizeTurningFlightSplit(1, 12)).toEqual({
-      before: 1,
-      after: 0,
-      minPerFlight: 1,
-    })
-  })
-
-  test('BP 344 handrail failures drive the canonical handrail color', () => {
+  test('BP 344 handrail failures drive the universal code violation color, not law blue', () => {
     const state = computeStairState({
       projectType: 'commercial',
       isAccessibleRoute: true,
@@ -176,7 +196,7 @@ describe('computeStairState — preset validation', () => {
     expect(state.handrailCompliance.bp344.applies).toBe(true)
     expect(state.handrailCompliance.bp344.passes).toBe(false)
     expect(state.dimensionStatuses.handrailHeight.failingLawKey).toBe('bp344')
-    expect(state.handrailColor).toBe('#3498DB')
+    expect(state.handrailColor).toBe(CODE_VIOLATION_COLOR)
   })
 
   test('international comparison uses the active Philippine baseline', () => {

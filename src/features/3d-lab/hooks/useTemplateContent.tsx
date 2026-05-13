@@ -5,6 +5,7 @@ import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
 import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { GenericControlPanel } from '@/features/3d-lab/components/templates/GenericControlPanel'
 import { ComplianceReportPanel } from '@/features/3d-lab/components/templates/ComplianceReportPanel'
+import { StairwayWorkbenchLeftPanel } from '@/features/3d-lab/components/templates/StairwayWorkbenchPanels'
 import {
   SourceCompliancePanel,
   SourceComplianceStatusBar,
@@ -176,6 +177,9 @@ export const useTemplateContent = (
       minDistance: 0.01,
       maxDistance: Infinity,
     }
+    const moduleCameraZoom = 'zoom' in moduleCameraControls.zoomToFit
+      ? moduleCameraControls.zoomToFit.zoom
+      : undefined
 
     const canvasWrapper = (
       children: React.ReactNode,
@@ -187,6 +191,7 @@ export const useTemplateContent = (
             cameraPosition: cameraPos,
             cameraTarget,
             cameraFov: cameraFov,
+            cameraZoom: moduleCameraZoom,
             minDistance: 0.01,
             maxDistance: Infinity,
             cameraControls: moduleCameraControls,
@@ -268,6 +273,45 @@ export const useTemplateContent = (
               rightSidebarContent: (
                 <WallConfiguratorRightPanel config={cfg} useStore={useStore} />
               ),
+            },
+          }
+        }
+
+        // ── Stairway Code Compliance special path ──
+        // Reuses the shared shell/canvas/right compliance component, but replaces
+        // the generic all-parameter left panel with the approved categorized
+        // board-vital control surface.
+        if (cfg.id === 'stairway-code-compliance') {
+          return {
+            shellConfig: {
+              ...shellConfig,
+              leftSidebar: { width: 286, title: cfg.title, mobileTabLabel: 'Controls' },
+              rightSidebar: { width: 386, title: 'Compliance', mobileTabLabel: 'Compliance' },
+            },
+            capabilities,
+            content: {
+              canvasContent: canvasWrapper(
+                <ParametricSceneRenderer
+                  config={cfg}
+                  useStore={useStore}
+                  hideOverlays
+                />,
+                {
+                  // Stairway is a static code-compliance diagram; neutral lighting
+                  // avoids real-time shadow work and keeps compliance colors legible.
+                  lightingPreset: 'clinical',
+                },
+              ),
+              leftSidebarContent: (
+                <StairwayWorkbenchLeftPanel embedded useStore={useStore} />
+              ),
+              rightSidebarContent: cfg.violations ? (
+                <ComplianceReportPanel
+                  embedded
+                  violations={cfg.violations}
+                  useStore={useStore}
+                />
+              ) : undefined,
             },
           }
         }

@@ -1,11 +1,5 @@
-import type {
-  ComputedStairState,
-  NormalizedTurningFlightSplit,
-  StairTypeConfig,
-} from './stairway-types'
+import type { ComputedStairState } from './stairway-types'
 import { LANDING_MIN_DEPTH_MM } from './stairway-constants'
-
-const DEFAULT_MIN_TURNING_RISERS_PER_FLIGHT = 2
 
 export interface StraightStairJoinContract {
   landingDepth: number
@@ -15,38 +9,6 @@ export interface StraightStairJoinContract {
   topJoinZ: number
   bottomLandingCenterZ: number
   topLandingCenterZ: number
-}
-
-export const normalizeTurningFlightSplit = (
-  numRisers: number,
-  requestedBeforeTurn: number,
-): NormalizedTurningFlightSplit => {
-  const minPerFlight = numRisers >= DEFAULT_MIN_TURNING_RISERS_PER_FLIGHT * 2
-    ? DEFAULT_MIN_TURNING_RISERS_PER_FLIGHT
-    : 1
-
-  const maxBefore = Math.max(minPerFlight, numRisers - minPerFlight)
-  const before = Math.min(
-    Math.max(Math.round(requestedBeforeTurn), minPerFlight),
-    maxBefore,
-  )
-
-  return {
-    before,
-    after: Math.max(numRisers - before, 0),
-    minPerFlight,
-  }
-}
-
-export const getNormalizedTurningFlightSplit = (
-  stairType: StairTypeConfig,
-  numRisers: number,
-): NormalizedTurningFlightSplit | null => {
-  if (stairType.type === 'straight') {
-    return null
-  }
-
-  return normalizeTurningFlightSplit(numRisers, stairType.risersBeforeTurn)
 }
 
 export const computeVisualLandingDepthMeters = (stairWidthMm: number): number =>

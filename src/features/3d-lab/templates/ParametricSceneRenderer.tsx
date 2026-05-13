@@ -162,7 +162,7 @@ export function ParametricSceneRenderer({
       </group>
 
       {/* Stairway-specific click inspection popover */}
-      {config.id === 'stairway-configurator' && inspectTarget && inspectPos && (
+      {config.id === 'stairway-code-compliance' && inspectTarget && inspectPos && (
         <ClickInspectPopover
           elementId={inspectTarget}
           screenPosition={inspectPos}
