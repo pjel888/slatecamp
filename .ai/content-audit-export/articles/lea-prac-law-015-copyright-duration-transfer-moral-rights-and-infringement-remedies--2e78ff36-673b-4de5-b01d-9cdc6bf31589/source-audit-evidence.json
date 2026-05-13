@@ -1,0 +1,143 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T21:23:11+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+    "slug": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies",
+    "title": "Copyright Duration Transfer Moral Rights and Infringement Remedies",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies--2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies--2e78ff36-673b-4de5-b01d-9cdc6bf31589/candidate.md",
+    "candidate_sha256": "sha256:a091c694f297f62819bbf3febb929673a3064b3bc07284dd8fdad7984b8c6013",
+    "normalized_sha256": "sha256:a091c694f297f62819bbf3febb929673a3064b3bc07284dd8fdad7984b8c6013",
+    "linked_questions_sha256": "sha256:9b67bb089141be9e78e6687f8344e5b5c5b7e5b53acd86172ff37c594f55bfeb",
+    "sources_sha256": "sha256:7e3a41181ff998d3383a01be8f643046101afdf34be99353c237be65dba493e7"
+  },
+  "classification": {
+    "content_type": "ra8293_architectural_copyright_article",
+    "focus": "RA 8293 copyright duration, assignment, moral rights, infringement remedies, criminal penalties, and damages limits",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "14e40c1e-bbd2-4e6b-9b3a-83a2132cc4bf",
+      "45690748-e390-4480-b415-8d27332a229e",
+      "f8ee2e9c-d6ad-4651-990e-1405aca9a97e",
+      "a26d48a9-28dd-4b90-a315-dece40a3594a",
+      "2f003089-bf9c-426c-bab7-45b3060e94cc",
+      "368ae03f-8257-46b2-a77b-7704293a921f",
+      "68a8a8b5-fb10-437f-a738-3e8a6417e42f",
+      "5ac59327-c523-4e0c-b081-bf1680d73013",
+      "eb50e294-bf0a-477b-8dc2-ceb0cd6e39ef",
+      "bf6e85b4-a9aa-4a13-82f1-8a6844e03306"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra8293-lawphil-primary",
+      "label": "RA 8293 Intellectual Property Code - Lawphil local text",
+      "source_type": "statute",
+      "source_id": "batch117-ra8293-lawphil-primary",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt",
+      "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+      "locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+    },
+    {
+      "key": "ra8293-lawphil-primary",
+      "label": "RA 8293 Intellectual Property Code - Lawphil local text",
+      "source_type": "statute",
+      "source_id": "batch117-ra8293-lawphil-primary",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.html",
+      "sha256": "sha256:9da8e412db30cb6cb76ec0713236d131589bd095262a90e471a9bc5b0323e52b",
+      "locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+    },
+    {
+      "key": "ra8293-lawphil-refined",
+      "label": "RA 8293 Intellectual Property Code - refined markdown conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch117-ra8293-lawphil-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md",
+      "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+      "locator": "RA 8293 refined markdown line anchors mirror Lawphil text; hash matches Lawphil text extraction."
+    },
+    {
+      "key": "ra8293-adb-pdf-companion",
+      "label": "RA 8293 Intellectual Property Code - ADB LPR 2015 local PDF companion",
+      "source_type": "local_pdf_companion",
+      "source_id": "batch117-ra8293-adb-pdf-companion",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf",
+      "sha256": "sha256:5729b8f785d0b10e30e493e3a0cda138bf14e5e8f11738a0cbc41052480ea109",
+      "locator": "Local RA 8293 PDF companion file acquired in source commit 1f73e77bd; Lawphil text remains the controlling audit text for section claims."
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 2e78ff36-673b-4de5-b01d-9cdc6bf31589 --overwrite; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 2e78ff36-673b-4de5-b01d-9cdc6bf31589 --summary; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 2e78ff36-673b-4de5-b01d-9cdc6bf31589 --summary; valid=true blockers=0; expected component-usage warning only",
+    "ui_block_edit_validation": "PASS: bun run content-audit:ui-block-edits -- --article-id 2e78ff36-673b-4de5-b01d-9cdc6bf31589; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/push is final publishing only and intentionally forbidden for Batch 117",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies-claim-01",
+      "claim_text": "RA 8293 Section 213.1 sets the individual-author term at life plus 50 years after death.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies-claim-02",
+      "claim_text": "RA 8293 Section 180 allows assignment in whole or in part and requires written indication for inter vivos assignment.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies-claim-03",
+      "claim_text": "RA 8293 Sections 193, 195, and 198 distinguish moral rights from economic copyright, limit waiver, and state moral rights are not assignable or subject to license.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies-claim-04",
+      "claim_text": "RA 8293 Sections 216 and 226 provide civil remedies and the four-year damages limit.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies-linked-question-edits",
+      "claim_text": "Question edits staged locally for 10 linked questions.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Corrected moral rights from forever/inalienable/unwaivable language to non-assignable/non-licensable, limited-waiver, life-plus-50 language.",
+    "Removed unsupported PHP 250,000 statutory-damages wording from linked question and article framing.",
+    "Corrected criminal-penalty explanation to local Section 217 text instead of unsupported willfulness/intent-to-defraud shorthand.",
+    "Added Section 226 damages-limit caution to delayed infringement remedies."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  }
+}

@@ -1,3 +1,37 @@
+# Batch 117 Source-Audited Production-Line Coordination Update
+
+Updated: 2026-05-13T21:23:11+08:00
+
+## Status
+
+- Batch 117: pass local-first; real git stage/commit/push blocked
+- Branch: 3dlab-gray-viewport-bg
+- Selected articles: 2
+- Linked question edits: 20
+- Forbidden external actions: none performed.
+
+## Batch 117 Gate Summary
+
+- Compose/diff/validate strict 2/2: pass
+- UI-block edit validation: pass
+- Scoped JSON parse: pass
+- Placeholder/internal-note/source-gap scan: pass in outgoing normalized/candidate/question-edit scope
+- Source hash checks: pass
+- Linked-question/question-edit count checks: pass
+- Stale compose-error scan: pass
+- Targeted content-audit tests: pass
+- Scoped git diff --check: pass (2026-05-13T21:23:11+08:00)
+- Cached diff check: pass via temporary index after intended files only
+
+## Coordination Notes
+
+- Batch 117 reopens LAW-014 and LAW-015 after RA 8293 source acquisition commit 1f73e77bd.
+- Batch 117 includes both article improvements and linked question edits for both selected articles.
+- Lawphil RA 8293 local text/refined markdown is controlling for IP/copyright claims; ADB LPR PDF is recorded as a local PDF companion; RA 9266 IRR Section 33 is used only for architecture-document ownership/consent.
+- Git gate: live `git add` failed on `.git/index.lock` permissions; temporary commit object creation succeeded; GitHub DNS resolution failed. Keep final second-audit/freeze guidance superseded for these two items; do not publish or Supabase-push without later authorization.
+
+---
+
 # Batch 116 Source-Audited Production-Line Coordination Update
 
 Updated: 2026-05-13T21:16:00+08:00

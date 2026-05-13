@@ -5,15 +5,22 @@
 **Subject:** Professional Practice & Jurisprudence (RA 8293 IP Code)
 **Category:** Law/Code (RA 8293 Intellectual Property Code)
 **Linked Questions:** 10
-**Issues:** 1
+**Batch 117 Status:** Resolved locally
 
-- sources.json empty (MISSING_CITATION - HIGH)
-  - Article references RA 8293 but sources.json has 0 sources
-  - RA 8293 PDF not clearly identified in source layer
+## Resolution
 
-**Verification Notes:**
-- Article covers application of IP Code to architectural works
-- Architectural plans and drawings as protected intellectual property — consistent with RA 8293
-- Copyright duration, moral rights, and infringement remedies — consistent
-- Content appears accurate based on training knowledge but cannot be verified against source PDFs (no RA 8293 PDF found in source layer)
-- Flagged as UNVERIFIED due to lack of primary source
+Batch 117 resolves the prior missing-citation flag by attaching local RA 8293 source records and creating 10 source-supported linked question edits.
+
+## Source Evidence
+
+- `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt`
+- `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.html`
+- `vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md`
+- `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf`
+- RA 9266 Section 33 support only where architecture-specific signed/sealed document ownership and written consent are required: `vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md`
+
+## Verification Notes
+
+- RA 8293 Sections 172, 175, 177, 178, 180, 181, 186, 193, 195, 198, 199, 213, 216, 217, 221, and 226 were checked against local Lawphil text/refined markdown.
+- Removed or corrected unsupported registration-certificate, life-plus-70, assignment, and remedy overstatements.
+- Article and linked question edits are accepted locally only; no Supabase publish was performed.

@@ -1,0 +1,162 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T21:23:11+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+    "slug": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works",
+    "title": "Intellectual Property Code RA 8293 Applied to Architectural Works",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works--6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works--6ec9b40c-a495-4a7a-8c51-bd0857fe69b4/candidate.md",
+    "candidate_sha256": "sha256:c87c4c6ef10c22d44306b0da3192f39ee281281c52276635e1f07b43a5cb3bed",
+    "normalized_sha256": "sha256:c87c4c6ef10c22d44306b0da3192f39ee281281c52276635e1f07b43a5cb3bed",
+    "linked_questions_sha256": "sha256:fb4b91ecf7a3b1b3bd1e40a015108b3b57c6512587bcc2f96e430c2fbb2f26f9",
+    "sources_sha256": "sha256:e599c61bac965de24c3943eff057099179d41b528ad83e076b0ab2fe0c56c38b"
+  },
+  "classification": {
+    "content_type": "ra8293_architectural_copyright_article",
+    "focus": "RA 8293 architectural works scope, ownership, assignment, RA 9266 Section 33 consent, and remedies",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "0feacd82-8606-4dda-a116-df0ad69a0fc9",
+      "69c2a255-5a49-40f9-a46c-79aac9f6be69",
+      "86771d12-c947-4226-bd6b-698821fabaa8",
+      "7be57ad9-76b5-431e-bf27-5279bea15a65",
+      "d27fd89f-fa52-40aa-92b9-0296f04fa0af",
+      "ca1955a1-84ec-4726-a5ab-db69b47c1e62",
+      "422f80c6-3cf5-4a4b-a779-2f9267b38d1c",
+      "a79a3fa1-7edf-49d7-b0a5-c1fdca16dc98",
+      "d312331d-0952-4ebc-b08b-cae706fb990a",
+      "f8926f7d-457f-4779-aa4a-600e214bb4b3"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra8293-lawphil-primary",
+      "label": "RA 8293 Intellectual Property Code - Lawphil local text",
+      "source_type": "statute",
+      "source_id": "batch117-ra8293-lawphil-primary",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt",
+      "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+      "locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+    },
+    {
+      "key": "ra8293-lawphil-primary",
+      "label": "RA 8293 Intellectual Property Code - Lawphil local text",
+      "source_type": "statute",
+      "source_id": "batch117-ra8293-lawphil-primary",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.html",
+      "sha256": "sha256:9da8e412db30cb6cb76ec0713236d131589bd095262a90e471a9bc5b0323e52b",
+      "locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+    },
+    {
+      "key": "ra8293-lawphil-refined",
+      "label": "RA 8293 Intellectual Property Code - refined markdown conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch117-ra8293-lawphil-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md",
+      "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+      "locator": "RA 8293 refined markdown line anchors mirror Lawphil text; hash matches Lawphil text extraction."
+    },
+    {
+      "key": "ra8293-adb-pdf-companion",
+      "label": "RA 8293 Intellectual Property Code - ADB LPR 2015 local PDF companion",
+      "source_type": "local_pdf_companion",
+      "source_id": "batch117-ra8293-adb-pdf-companion",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf",
+      "sha256": "sha256:5729b8f785d0b10e30e493e3a0cda138bf14e5e8f11738a0cbc41052480ea109",
+      "locator": "Local RA 8293 PDF companion file acquired in source commit 1f73e77bd; Lawphil text remains the controlling audit text for section claims."
+    },
+    {
+      "key": "ra9266-irr-section33",
+      "label": "RA 9266 IRR Section 33 - Ownership of Plans, Specifications and Other Contract Documents",
+      "source_type": "implementing_rules",
+      "source_id": "batch117-ra9266-irr-section33",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "locator": "RA 9266 IRR refined markdown lines 170-172 and 706-708"
+    },
+    {
+      "key": "ra9266-irr-section33",
+      "label": "RA 9266 IRR Section 33 - Ownership of Plans, Specifications and Other Contract Documents",
+      "source_type": "implementing_rules",
+      "source_id": "batch117-ra9266-irr-section33",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "locator": "RA 9266 IRR refined markdown lines 170-172 and 706-708"
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 6ec9b40c-a495-4a7a-8c51-bd0857fe69b4 --overwrite; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 6ec9b40c-a495-4a7a-8c51-bd0857fe69b4 --summary; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 6ec9b40c-a495-4a7a-8c51-bd0857fe69b4 --summary; valid=true blockers=0; expected component-usage warning only",
+    "ui_block_edit_validation": "PASS: bun run content-audit:ui-block-edits -- --article-id 6ec9b40c-a495-4a7a-8c51-bd0857fe69b4; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/push is final publishing only and intentionally forbidden for Batch 117",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works-claim-01",
+      "claim_text": "RA 8293 protects works of architecture and plans, sketches, charts, and three-dimensional works relative to architecture by the sole fact of creation.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works-claim-02",
+      "claim_text": "RA 8293 protects expression but not ideas, procedures, systems, methods, concepts, principles, discoveries, or mere data as such.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works-claim-03",
+      "claim_text": "RA 8293 Section 186 gives an architecture-specific erection-control right with a reconstruction/rehabilitation-in-same-style limit.",
+      "source_support": [
+        "ra8293-lawphil-primary"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works-claim-04",
+      "claim_text": "RA 9266 IRR Section 33 requires written consent to duplicate signed/sealed architectural documents for repetition or other projects.",
+      "source_support": [
+        "ra9266-irr-section33"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works-linked-question-edits",
+      "claim_text": "Question edits staged locally for 10 linked questions.",
+      "source_support": [
+        "ra8293-lawphil-primary",
+        "ra9266-irr-section33"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed unsupported IPOPHL prima-facie registration-certificate framing from the article and one linked question.",
+    "Corrected stale life-plus-70 answer option/rationale to life plus 50 under local RA 8293 Section 213.1.",
+    "Corrected the RA 9266/RA 8293 relationship question so the selected option is the source-supported answer.",
+    "Narrowed delayed online-use remedies to injunction plus damages subject to Section 226."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  }
+}

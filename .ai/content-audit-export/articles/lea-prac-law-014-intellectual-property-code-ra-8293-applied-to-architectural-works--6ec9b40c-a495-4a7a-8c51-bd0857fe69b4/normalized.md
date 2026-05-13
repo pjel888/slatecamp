@@ -1,81 +1,47 @@
+# Intellectual Property Code (RA 8293) Applied to Architectural Works
 
+## LEA Point
 
-## Board Exam Quick Check
+RA 8293 protects original architectural expression, not a generic building idea. For LEA purposes, separate three questions: what work is protected, who owns the copyright, and what remedy follows from unauthorized copying or erection.
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+## Source Anchors
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Law 014 Intellectual Property Code Ra 8293 Applied To Architectural Works** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Intellectual Property Code (RA 8293) Applied to Architectural Works
+- RA 8293 Section 172.1(g) includes works of architecture and designs for works of art among protected literary and artistic works.
+- RA 8293 Section 172.1(i) separately includes plans, sketches, charts, and three-dimensional works relative to architecture.
+- RA 8293 Section 172.2 states that these works are protected by the sole fact of creation, regardless of mode or form of expression, content, quality, or purpose.
+- RA 8293 Section 175 withholds protection from ideas, procedures, systems, methods, concepts, principles, discoveries, or mere data as such.
+- RA 8293 Section 178.4 keeps copyright with the creator of a commissioned work unless there is a written stipulation to the contrary.
+- RA 8293 Section 180 allows copyright assignment in whole or in part, but inter vivos assignment requires a written indication of that intention.
+- RA 8293 Section 186 gives the copyright owner of a work of architecture the right to control erection of a building that reproduces the whole or a substantial part of the work, while excluding control over reconstruction or rehabilitation in the same style.
+- RA 9266 IRR Section 33 separately treats signed, stamped, or sealed drawings, specifications, and other contract documents as the architect's intellectual property and requires written consent for duplication for repetition or other projects.
 
-## Learning Goal
+## What Is Protected
 
-After studying this article, you should be able to:
+RA 8293 expressly protects architecture as a literary and artistic work. It also protects plans, sketches, charts, and three-dimensional works relative to architecture. This is why copied drawings, copied design documents, or a building erected from a protected architectural work can raise copyright issues.
 
-- Explain how RA 8293 (Intellectual Property Code) protects architectural works.
-- Define what constitutes an 'architectural work' under IP law.
-- Distinguish copyright protection (expression) from patent protection (invention).
-- Identify the copyright owner in various commissioning scenarios.
+The protected part is the original expression. A distinctive facade composition, spatial sequence, massing idea expressed in drawings, or recognizable design arrangement may be protected. A code-required stair dimension, a common room adjacency, a standard construction method, or the general idea of a hotel, school, clinic, or office building is not protected by itself.
 
----
-### Architectural Works as Protected Creative Output
+## Ownership In Practice
 
-The Intellectual Property Code of the Philippines (RA 8293) recognizes architectural works as eligible copyright-protected creations. This protection extends to buildings and structures erected in the Philippines, as well as architectural designs and plans in their draft form. The law treats architecture as a legitimate artistic and creative discipline, placing it on the same footing as literature, music, visual arts, and other protected works.
+Start with RA 8293 Section 178.1: copyright in original literary and artistic works belongs to the author, subject to the rest of Section 178. For a commissioned work, Section 178.4 distinguishes ownership of the physical commissioned work from copyright. The commissioning client owns the work produced for the commission, but copyright remains with the creator unless there is a written stipulation to the contrary.
 
-Copyright protection under RA 8293 attaches automatically when an architectural work is fixed in a tangible medium—such as drawings, specifications, or the constructed building itself. The architect need not register the work or place a copyright notice on the plans for protection to arise. This automatic protection covers both the design process (preliminary sketches, schematic drawings, detailed plans) and the final built form as an integrated artistic expression.
+RA 9266 IRR Section 33 gives the architecture-specific rule for professional documents: signed, stamped, or sealed drawings, specifications, and other contract documents are the architect's intellectual property documents. They cannot be duplicated for repetition or other projects without the written consent of the architect or author.
 
-### Scope of Architectural Copyright Protection
+## Assignment, Material Ownership, And Reuse
 
-RA 8293 protects the original expression embodied in architectural designs and does not protect functional building systems or common construction methods. The copyright covers the architect's creative decisions regarding spatial arrangement, aesthetic proportions, elevation design, material selection patterns, and unique structural conceptualization. Functional elements required by building codes—such as staircase dimensions or electrical conduit sizing—are not independently protected.
+RA 8293 Section 180 allows copyright to be assigned in whole or in part. Within the assignment scope, the assignee receives the rights and remedies that the assignor had. But Section 180.2 requires a written indication of intent before copyright is deemed assigned inter vivos.
 
-An architect cannot copyright a generic office building layout that follows standard planning principles. However, the unique spatial flow, distinctive facade treatment, innovative structural solution, or original interior circulation pattern that makes a building distinctive are protected works. The distinction is between copying the architect's creative contribution versus independently designing a functional building that meets the same program requirements.
+RA 8293 Section 181 keeps copyright distinct from ownership of the material object. Transferring a drawing set, a copy of plans, or a constructed building does not automatically transfer copyright. In exam questions, do not assume that payment, possession, construction, or real property ownership equals copyright ownership.
 
-### Moral Rights and Attribution
+## Infringement And Remedies
 
-RA 8293 grants architects moral rights in addition to economic reproduction rights. Moral rights include the right of attribution (being credited as the author), the right of integrity (objecting to distortions or mutilations of the work that damage the creator's honor or reputation), and the right of withdrawal under limited circumstances. These rights protect the architect's personal and professional dignity separate from commercial exploitation rights.
+Section 177 lists economic rights such as reproduction, transformation, first public distribution, public display, public performance, and other communication to the public. Section 186 adds the architecture-specific right to control erection of a building reproducing the whole or a substantial part of the protected architectural work.
 
-When a completed building is modified, demolished, or significantly altered in ways that destroy or fundamentally change the original architectural design, the architect may object to the alteration as a violation of moral rights. However, RA 8293 Section 186 explicitly provides that copyright does not include the right to control 'the reconstruction or rehabilitation in the same style as the original of a building to which that copyright relates,' limiting the architect's control over such activities. For example, a radical facade renovation that removes distinctive architectural features originally designed by the architect could constitute a violation of the architect's right of integrity. However, routine maintenance, necessary repairs, and functional modifications required for the building's continued use are not considered violations of moral rights.
+Section 216 provides civil remedies, including injunction, actual damages and expenses plus infringer profits, court-determined damages in lieu of actual damages and profits, disposal or destruction of infringing copies or devices, moral and exemplary damages where proper, and seizure or impounding of evidence. Section 226 limits damages recovery to four years from the time the cause of action arose. This limit should not be confused with a total loss of all possible prospective relief for continuing infringement.
 
-### Duration and Term of Protection
+## Exam Guardrails
 
-Copyright protection for architectural works under RA 8293 extends for the lifetime of the architect plus 50 years after death (RA 8293 Section 213.1). However, if the architectural work qualifies as a 'work of applied art' under Section 171.10, protection may be limited to twenty-five (25) years from the date of making per Section 213.4. The applicable term depends on whether the work is classified as a literary/artistic work or as applied art. This extended protection period reflects the long-term significance of buildings and ensures that valuable architectural intellectual property remains protected across multiple generations. The 50-year post-mortem protection also allows the architect's heirs and estate to benefit from the value of the creative work for a reasonable period.
-
-Calculating the term requires establishing the date of the architect's death, not the date the building was completed or the plans were created. For architectural firms or corporate authors (where the legal entity holds copyright), protection runs for 50 years from first publication. This extended duration acknowledges that architectural works gain value over time and may be reproduced, referenced, or studied long after initial creation, requiring protection that spans decades.
-
-### Registration with the Intellectual Property Office
-
-Although copyright in architectural works arises automatically under RA 8293, registration with the Intellectual Property Office of the Philippines (IPOPHL) provides significant evidentiary and enforcement advantages. Registration creates a public record of copyright ownership and the date of creation, which strengthens the architect's position in infringement disputes. A registered copyright certificate constitutes prima facie evidence of the architect's authorship and validity of the copyright before Philippine courts.
-
-Registration also enables architects to pursue administrative remedies through IPOPHL, including issuance of cease-and-desist letters, investigation of alleged infringements, and recommendation for enforcement actions. Without registration, the architect bears the full burden of proving ownership, authorship, and copying in any legal proceeding. Costs for registration are minimal compared to the evidentiary value and enforceability advantage gained.
-
-### Distinction Between RA 9266 and RA 8293
-
-RA 9266 and RA 8293 work in tandem to protect architectural intellectual property, with RA 9266 regulating the architectural profession and RA 8293 providing the substantive copyright framework, but they serve different functions. RA 9266 is the profession-specific statute that regulates architects and their practice, explicitly addressing copyright in architectural documents prepared during professional services. RA 8293 is the comprehensive intellectual property law that provides the substantive copyright framework, including term of protection, moral rights, and statutory remedies for infringement.
-
-An architect asserting copyright ownership and seeking enforcement remedies may rely on both statutes. RA 9266 Section 33 establishes that architects retain copyright in their work and establishes the professional obligation to include copyright notice in service agreements. RA 8293 provides the mechanisms for pursuing infringement remedies, recovering damages, obtaining injunctions, and securing criminal penalties for certain types of copyright violations. Together they create a robust protection framework specific to architectural works.
-
-### Infringement and Remedies Under RA 8293
-
-Copyright infringement of architectural works occurs when a person reproduces, distributes, or publicly displays the work without authorization. For architectural plans, infringement includes unauthorized copying, photocopying, or digital reproduction of the drawings or specifications. For constructed buildings, infringement may include unauthorized construction of a substantially similar building based on the protected design, though courts must distinguish between copying expression and independently creating a functional building.
-
-The remedies available under RA 8293 include preliminary injunctions to stop ongoing infringement, delivery up of infringing materials, corrective advertising to restore the architect's reputation, payment of actual damages or profits derived from infringement, and in cases of willful infringement, statutory damages as determined by the court in accordance with RA 8293 Section 216. Criminal prosecution is available for commercial infringement with willful intent to defraud or profit, carrying penalties of fine and imprisonment.
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266", section="Section 33 - Ownership of Plans"
-- Text: Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (spatial arrangement, aesthetic proportions, facade design, unique structural concept). It does NOT protect FUNCTIONAL elements required by building code (stair dimensions, conduit sizing, minimum room areas).
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Use RA 8293 for copyright scope, ownership, assignment, moral rights, duration, and remedies. Use RA 9266 IRR Section 33 only for the architecture-specific professional-document rule: signed/sealed drawings, specifications, and contract documents require the architect's written consent before duplication for repetition or other projects.
 
 ---
 
@@ -86,8 +52,8 @@ Extracted summary:
 - [PRBoA Powers and Functions](lea-prac-law-005)
 - [PRC vs. PRBoA](lea-prac-law-006)
 - [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Copyright Duration, Transfer, Moral Rights, and Infringement Remedies](lea-prac-law-015)
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
-- [Professional Practice Forms](lea-prac-frm-001)
 
-<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+<!-- no-media-needed: professional practice article, text/tables are optimal format -->

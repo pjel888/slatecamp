@@ -1,0 +1,91 @@
+{
+  "question_id": "f8ee2e9c-d6ad-4651-990e-1405aca9a97e",
+  "baseline_hash": "sha256:f0a3664086b528b19f93811c3d409454bd5981ed8153fe17c79684ddf792ef1a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-117-local-first reopens lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies after local RA 8293 source acquisition and rewrites this linked question for source-safe citation, rationale, and answer explanation alignment.",
+  "approved_by": "codex-local-source-audit-batch-117",
+  "approved_at": "2026-05-13T21:23:11+08:00",
+  "source_audit_support": {
+    "parent_article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+    "parent_article_slug": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853",
+    "checked_markdown_lines": [
+      "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt",
+        "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+        "source_id": "batch117-ra8293-lawphil-primary",
+        "locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md",
+        "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+        "source_id": "batch117-ra8293-lawphil-refined",
+        "locator": "RA 8293 refined markdown line anchors mirror Lawphil text; hash matches Lawphil text extraction."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf",
+        "sha256": "sha256:5729b8f785d0b10e30e493e3a0cda138bf14e5e8f11738a0cbc41052480ea109",
+        "source_id": "batch117-ra8293-adb-secondary-pdf",
+        "locator": "ADB/LPR RA 8293 2015 edition retained as secondary PDF cross-check; Lawphil local text governs claims."
+      }
+    ],
+    "local_source_safe_action": "Batch 117 rechecked the linked question against local RA 8293 source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-117-local-first",
+    "reopened_from_source_gap": true
+  },
+  "proposed": {
+    "text": "An architect created a distinctive building design. Five years later, without authorization, another firm constructed an identical building using the same floor plans and facade design. What is the most appropriate civil remedy for the architect to seek?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A preliminary injunction to stop further infringing use or construction, plus monetary relief subject to RA 8293 proof and damages-limit rules"
+      },
+      {
+        "id": "b",
+        "text": "Automatic criminal prosecution for theft, without needing Section 217 facts"
+      },
+      {
+        "id": "c",
+        "text": "Automatic demolition of the completed building as the ordinary remedy"
+      },
+      {
+        "id": "d",
+        "text": "Damages only; injunctive relief is never available once construction is complete"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "b": "Criminal penalties require a separate Section 217 analysis.",
+      "c": "The local source supports disposal/destruction of infringing copies and devices, but not automatic demolition as the ordinary answer.",
+      "d": "Section 216 expressly includes injunction.",
+      "correct": "RA 8293 Section 186 covers erection of a building reproducing a protected architectural work. Section 216 includes injunction and damages/profits remedies. Section 226 limits damages recovery after four years from the time the cause of action arose, so the source-safe civil remedy is injunction plus monetary relief subject to proof and timing limits.",
+      "takeaway": "Civil remedies under RA 8293 can include injunction and money relief, but damages must respect Section 226."
+    },
+    "explanation": "Source-audited against RA 8293 Sections 186, 216, and 226.",
+    "code_citation": "RA 8293 Sections 186, 216, and 226",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 117"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-015-004",
+    "prompt_image_url": null
+  }
+}

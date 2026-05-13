@@ -1,3 +1,46 @@
+# Batch 117 Local-First Handoff Update
+
+Last updated: 2026-05-13T21:23:11+08:00
+
+## Current State
+
+- Latest local-first production-line batch prepared: Batch 117
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 117: 1f73e77bd
+- Source acquisition commit: 1f73e77bd
+- Batch 117 local artifacts: pass; real git stage/commit/push blocked by live index permissions and GitHub DNS resolution
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 117 Selection
+
+- lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works (6ec9b40c-a495-4a7a-8c51-bd0857fe69b4)
+- lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies (2e78ff36-673b-4de5-b01d-9cdc6bf31589)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-117-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-117-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-117-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-117-manifest.json`
+- QA memo: `.ai/03_plans/batch-117-independent-quality-review.md`
+
+## Reopened Source-Gap Items
+
+- LAW-014 and LAW-015 are no longer source-gap blocked after local RA 8293 source acquisition in commit 1f73e77bd.
+- Both reopened articles include article improvements and linked question improvements; no article-only acceptance was made.
+- RA 8293 Lawphil text/refined markdown is controlling for IP/copyright claims; RA 9266 IRR Section 33 is used only for architecture-specific signed/sealed document ownership and written-consent duplication.
+
+## Preserved Final-Depth Items
+
+- lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works: Do not restore IPOPHL prima-facie registration-certificate framing, life-plus-70 copyright duration, blanket post-assignment rights, or uncited online-use remedies without additional local primary source support.
+- lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies: Do not restore forever/inalienable/unwaivable moral-rights language, PHP 250,000 statutory-damages shorthand, willfulness/intent-to-defraud criminal shorthand, or life-plus-70 duration unless future local source law supports it.
+
+## Batch 117 Next Phase
+
+Scoped git gate result: temporary-index cached diff passed after staging only Batch 117 content/source paths; live `git add` failed on `.git/index.lock` permissions, a temporary commit object was created, and branch push is blocked by GitHub DNS resolution. Commit message remains `chore(content): accept source-audited batch 117`. Do not Supabase-push, deploy, mutate production DB, or merge to main.
+
+---
+
 # Batch 116 Local-First Handoff Update
 
 Last updated: 2026-05-13T21:16:00+08:00

@@ -68,7 +68,7 @@
 | 35 | `9527e4a9-f8f1-4554-999e-0d46cc49bcd1` | `lea-prac-law-007-lea-eligibility` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; DAE/eligibility requirements appear correct) | 0 flagged |
 | 36 | `6dc813a9-913d-47b5-9203-f59e8e909869` | `lea-prac-law-010-civil-code-article-1723` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; 15-year liability framework appears correct) | 0 flagged |
 | 37 | `17b95df0-6bea-43c6-ab03-2b82a358caa6` | `lea-prac-law-011-architect-of-record` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; AoR/AiCC distinctions appear correct) | 0 flagged |
-| 38 | `6ec9b40c-a495-4a7a-8c51-bd0857fe69b4` | `lea-prac-law-014-intellectual-property-code` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 8293 claims UNVERIFIED — no RA 8293 PDF in source layer) | 0 flagged |
+| 38 | `6ec9b40c-a495-4a7a-8c51-bd0857fe69b4` | `lea-prac-law-014-intellectual-property-code` | **BATCH 117 RESOLVED LOCAL** | RA 8293 local sources added; article rewritten and 10 source-supported question edits created | 0 open in Batch 117 scope |
 | 39 | `f7691e1a-81f3-4a93-aef2-6ae6426100a2` | `lea-prac-law-016-contract-document-package` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; contract document roles appear correct) | 0 flagged |
 | 40 | `16e972e5-378d-426c-9269-d716204c52de` | `lea-prac-law-017-signing-sealing` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 9266 Sec 33 signing/sealing rules appear correct) | 0 flagged |
 | 41 | `571e1d4f-999b-4cf9-a4de-3d35157314d2` | `accessible-seating-in-assembly-areas` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; BP 344 2024 IRR seating requirements appear correct) | 0 flagged |
@@ -103,7 +103,7 @@
 | 70 | `162054b5-5f86-4a99-ab8b-f7991bbab899` | `modern-filipino-identity` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; three waves identity LIKELY_CORRECT) | 31 Qs unsourced |
 | 71 | `4a8c01ab-5515-44f5-aaf7-c1274d8c8dce` | `african-vernacular-earth-architecture` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Sahel/Mali/Zimbabwe LIKELY_CORRECT) | 22 Qs unsourced |
 | 72 | `82862aca-27a6-4121-ba3f-6d53160d2e3c` | `lea-prac-law-012-quasi-delict` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; CC Arts 2176-2194 appear CORRECT) | 10 Qs unsourced |
-| 73 | `2e78ff36-673b-4de5-b01d-9cdc6bf31589` | `lea-prac-law-015-copyright` | **FLAGGED** | 2 issues (MISSING_CITATION — empty; TEXT_ERROR — \"RUnder\" duplication artifact on line 11) | 10 Qs unsourced |
+| 73 | `2e78ff36-673b-4de5-b01d-9cdc6bf31589` | `lea-prac-law-015-copyright` | **BATCH 117 RESOLVED LOCAL** | RA 8293 local sources added; article rewritten and 10 source-supported question edits created | 0 open in Batch 117 scope |
 | 74 | `5967e69f-d295-4dd2-9eb7-b4f1a321db4d` | `lea-prac-cmp-003-pcc` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; PCC definition appears CORRECT) | 10 Qs unsourced |
 | 75 | `0c599071-cf6f-4b07-9d5f-a6230dd77b36` | `lea-prac-cmp-004-payment-schedule` | **FLAGGED** | 2 issues (MISSING_CITATION — empty; TYPO — \"large-sclea\" → \"large-scale\") | 10 Qs unsourced |
 | 76 | `d18569e9-4401-4d85-8d59-d545240ef106` | `lea-prac-cmp-006-mdpe` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; MDPE formula appears CORRECT) | 10 Qs unsourced |

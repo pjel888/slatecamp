@@ -1,7 +1,92 @@
 {
   "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:9cb585050213d6e4a1e1cfe6c8ceba1fbb987dcba52ed64045a221affebca4c3",
+  "source_count": 4,
+  "sources": [
+    {
+      "source_id": "batch117-ra8293-lawphil-primary",
+      "label": "RA 8293 Intellectual Property Code - Lawphil local text",
+      "url": null,
+      "source_type": "statute",
+      "description": "ra8293_lawphil_primary; raw_text_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt; raw_text_sha256=sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6; raw_html_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.html; raw_html_sha256=sha256:9da8e412db30cb6cb76ec0713236d131589bd095262a90e471a9bc5b0323e52b; checked_sections=172,175,177,178,180,181,186,193,195,198,199,213,216,217,221,226",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-13T21:23:11+08:00",
+      "updated_at": "2026-05-13T21:23:11+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt",
+          "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.html",
+          "sha256": "sha256:9da8e412db30cb6cb76ec0713236d131589bd095262a90e471a9bc5b0323e52b"
+        }
+      ],
+      "locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853",
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4"
+    },
+    {
+      "source_id": "batch117-ra8293-lawphil-refined",
+      "label": "RA 8293 Intellectual Property Code - refined markdown conversion",
+      "url": null,
+      "source_type": "local_conversion",
+      "description": "ra8293_lawphil_refined_markdown; path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md; sha256=sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6; line_anchor_source_for_local_audit=true",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-13T21:23:11+08:00",
+      "updated_at": "2026-05-13T21:23:11+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md",
+          "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6"
+        }
+      ],
+      "locator": "RA 8293 refined markdown line anchors mirror Lawphil text; hash matches Lawphil text extraction.",
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4"
+    },
+    {
+      "source_id": "batch117-ra8293-adb-pdf-companion",
+      "label": "RA 8293 Intellectual Property Code - ADB LPR 2015 local PDF companion",
+      "url": null,
+      "source_type": "local_pdf_companion",
+      "description": "ra8293_adb_lpr_pdf_companion; path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf; sha256=sha256:5729b8f785d0b10e30e493e3a0cda138bf14e5e8f11738a0cbc41052480ea109; used_as_local_pdf_companion_not_controlling_over_lawphil_text",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-13T21:23:11+08:00",
+      "updated_at": "2026-05-13T21:23:11+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf",
+          "sha256": "sha256:5729b8f785d0b10e30e493e3a0cda138bf14e5e8f11738a0cbc41052480ea109"
+        }
+      ],
+      "locator": "Local RA 8293 PDF companion file acquired in source commit 1f73e77bd; Lawphil text remains the controlling audit text for section claims.",
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4"
+    },
+    {
+      "source_id": "batch117-ra9266-irr-section33",
+      "label": "RA 9266 IRR Section 33 - Ownership of Plans, Specifications and Other Contract Documents",
+      "url": null,
+      "source_type": "implementing_rules",
+      "description": "ra9266_irr_section33_architecture_specific_document_ownership; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf; raw_pdf_sha256=sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md; refined_markdown_sha256=sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0; used_only_for_signed_sealed_documents_and_written_consent",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-13T21:23:11+08:00",
+      "updated_at": "2026-05-13T21:23:11+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        }
+      ],
+      "locator": "RA 9266 IRR refined markdown lines 170-172 and 706-708",
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4"
+    }
+  ]
 }

@@ -1,0 +1,100 @@
+{
+  "batch_id": "source-audited-article-batch-117-local-first",
+  "batch_number": "117",
+  "reserved_at": "2026-05-13T21:23:11+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "1f73e77bd",
+  "previous_batch": {
+    "batch_number": "116/source-acquisition",
+    "commit": "1f73e77bd",
+    "status": "ra8293_source_layer_available_on_branch"
+  },
+  "current_head_at_manifest_generation": "1f73e77bd",
+  "manifest_status": "pass",
+  "selection_rule": "Reopen LAW-014 and LAW-015 from Batch 116 source-gap ineligible status after local RA 8293 source acquisition, but only because both article bundles have linked questions and Batch 117 generated source-supported question edits.",
+  "inherited_blocker_status": {
+    "status": "clear_for_local_first_batch_117",
+    "notes": [
+      "Unrelated stairway, 3D, marketing, docs, skills, and performance work remains out of scope and must not be staged in this content batch.",
+      "Batch 117 starts from source commit 1f73e77bd on branch 3dlab-gray-viewport-bg.",
+      "Read-only content-roundtrip temp run directories remain out of staging scope."
+    ]
+  },
+  "article_clusters": [
+    "RA 8293 architectural copyright scope, ownership, assignment, and remedies",
+    "RA 8293 copyright duration, moral rights, transfer, and infringement remedies"
+  ],
+  "counts": {
+    "articles": 2,
+    "linked_questions_expected": 20,
+    "question_edits_expected": 20,
+    "source_safe_real_world_scenarios_expected": 0
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+      "slug": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works",
+      "manifest_synonym": "lea-prac-law-014-intellectual-property-and-copyright-basics-for-architects",
+      "title": "Intellectual Property Code RA 8293 Applied to Architectural Works",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works--6ec9b40c-a495-4a7a-8c51-bd0857fe69b4"
+    },
+    {
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "slug": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies",
+      "manifest_synonym": "lea-prac-law-015-copyright-infringement-in-architectural-practice-unlicensed-reproduction-and-derivative-use",
+      "title": "Copyright Duration Transfer Moral Rights and Infringement Remedies",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies--2e78ff36-673b-4de5-b01d-9cdc6bf31589"
+    }
+  ],
+  "source_gap_reopen_check": {
+    "status": "pass",
+    "prior_blocker": "Batch 116 source-gap ineligible due to missing local RA 8293/IP Code source and no question-edits.",
+    "current_evidence": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.html",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md"
+    ],
+    "linked_questions": "20 observed across two article bundles",
+    "question_edits": "20 generated source-supported replacement edits"
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 2/2",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_live_index_and_network_push",
+    "expected_commit_message": "chore(content): accept source-audited batch 117",
+    "commit_created": false,
+    "push_performed": false,
+    "attempted_command": "git add -- <Batch 117 intended paths>",
+    "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "temporary_index_gate": {
+      "status": "pass",
+      "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch117.<tmp>/index GIT_OBJECT_DIRECTORY=/private/tmp/slatecamp-batch117.<tmp>/objects GIT_ALTERNATE_OBJECT_DIRECTORIES=/Users/philiplewis/slatecamp/.git/objects git diff --cached --check",
+      "temporary_commit_object_created": true
+    },
+    "network_reachability": {
+      "status": "blocked_dns_resolution",
+      "command": "git ls-remote --heads origin 3dlab-gray-viewport-bg",
+      "failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+    },
+    "push_failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+  },
+  "freeze_readiness_report_path": ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md"
+}

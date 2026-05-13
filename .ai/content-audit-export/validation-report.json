@@ -1,18 +1,23 @@
 {
-  "generated_at": "2026-05-13T12:08:39.665Z",
+  "generated_at": "2026-05-13T13:23:11.906Z",
   "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
-  "article_count": 1,
+  "article_count": 2,
   "valid": true,
   "blockers": [],
-  "warnings": [],
+  "warnings": [
+    "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works--6ec9b40c-a495-4a7a-8c51-bd0857fe69b4: component-usage.json has not been generated for this article yet.",
+    "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies--2e78ff36-673b-4de5-b01d-9cdc6bf31589: component-usage.json has not been generated for this article yet."
+  ],
   "articles": [
     {
-      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
-      "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
-      "folder": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de",
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+      "slug": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works",
+      "folder": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works--6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
       "valid": true,
       "blockers": [],
-      "warnings": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
       "files": {
         "metadata": true,
         "original": true,
@@ -23,7 +28,7 @@
         "linkedQuestions": true,
         "sources": true,
         "taxonomy": true,
-        "componentUsage": true,
+        "componentUsage": false,
         "candidate": true,
         "diffReport": true,
         "diffReportMarkdown": true,
@@ -31,9 +36,42 @@
         "pushResult": false
       },
       "hashes": {
-        "original": "sha256:ba9be43d524be00b1f9d36106879742028eac3dd176b49fbb6865a18f615224c",
-        "normalized": "sha256:377cbc158a0c657ff574405dcf1662b2c969d3fed86150574ec4fba33eab2014",
-        "candidate": "sha256:377cbc158a0c657ff574405dcf1662b2c969d3fed86150574ec4fba33eab2014",
+        "original": "sha256:d1b9249f4642d2d1d5be365dd5022062fa635ecdf1262fa64e86325ad0ba8a0b",
+        "normalized": "sha256:c87c4c6ef10c22d44306b0da3192f39ee281281c52276635e1f07b43a5cb3bed",
+        "candidate": "sha256:c87c4c6ef10c22d44306b0da3192f39ee281281c52276635e1f07b43a5cb3bed",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "slug": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies",
+      "folder": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies--2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:6a280bf6df4321878a820a4c89a7df2775e26d7be594e7310390e50e8f9884d4",
+        "normalized": "sha256:a091c694f297f62819bbf3febb929673a3064b3bc07284dd8fdad7984b8c6013",
+        "candidate": "sha256:a091c694f297f62819bbf3febb929673a3064b3bc07284dd8fdad7984b8c6013",
         "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
       }
     }

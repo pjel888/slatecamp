@@ -1,0 +1,91 @@
+{
+  "question_id": "ca1955a1-84ec-4726-a5ab-db69b47c1e62",
+  "baseline_hash": "sha256:045cffc03e5a8d30c6232d4336517e7afc5e0bb1d73ffc7162ad495e34e8b46b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-117-local-first reopens lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works after local RA 8293 source acquisition and rewrites this linked question for source-safe citation, rationale, and answer explanation alignment.",
+  "approved_by": "codex-local-source-audit-batch-117",
+  "approved_at": "2026-05-13T21:23:11+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+    "parent_article_slug": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853",
+    "checked_markdown_lines": [
+      "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/Lawphil - RA 8293.txt",
+        "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+        "source_id": "batch117-ra8293-lawphil-primary",
+        "locator": "RA 8293 Lawphil refined markdown lines 591-621, 631, 637-644, 647-663, 686-689, 718-731, 785-790, 798-805, 805-812, 830-833, and 853"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-8293/RA-8293 Intellectual Property Code - Lawphil.md",
+        "sha256": "sha256:fa73cbdc430a6c7bcff46e8b2f0b397b1d365f2a080e88ad5459741a37ed7df6",
+        "source_id": "batch117-ra8293-lawphil-refined",
+        "locator": "RA 8293 refined markdown line anchors mirror Lawphil text; hash matches Lawphil text extraction."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-8293/ADB LPR - Intellectual Property Code of the Philippines RA 8293 2015 edition.pdf",
+        "sha256": "sha256:5729b8f785d0b10e30e493e3a0cda138bf14e5e8f11738a0cbc41052480ea109",
+        "source_id": "batch117-ra8293-adb-secondary-pdf",
+        "locator": "ADB/LPR RA 8293 2015 edition retained as secondary PDF cross-check; Lawphil local text governs claims."
+      }
+    ],
+    "local_source_safe_action": "Batch 117 rechecked the linked question against local RA 8293 source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-117-local-first",
+    "reopened_from_source_gap": true
+  },
+  "proposed": {
+    "text": "An architect created distinctive building designs in 1990. The architect died in 2015. Under RA 8293, when does copyright in these works expire?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In 2040 (25 years after creation), which confuses ordinary architectural works with the separate applied-art term"
+      },
+      {
+        "id": "b",
+        "text": "In 2035 (20 years after creation), which is not the RA 8293 copyright term for this work"
+      },
+      {
+        "id": "c",
+        "text": "In 2065 (50 years after the architect's death under RA 8293 Section 213.1)"
+      },
+      {
+        "id": "d",
+        "text": "Copyright in architectural works never expires under Philippine law"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This uses the 25-year applied-art rule instead of Section 213.1 for the stated individual architect.",
+      "b": "This invents a 20-year creation-date term.",
+      "d": "RA 8293 gives a long term, not perpetual copyright.",
+      "correct": "RA 8293 Section 213.1 protects works under Sections 172 and 173 during the life of the author and for fifty years after death. The architect died in 2015, so the 50-year post-mortem period runs to 2065. The date of creation does not control this individual-author term.",
+      "takeaway": "For individual architects, add 50 years to the author's death year."
+    },
+    "explanation": "Corrected the answer option from 2085/life plus 70 to 2065/life plus 50 under local RA 8293.",
+    "code_citation": "RA 8293 Section 213.1",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 117"
+    ],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-014-008",
+    "prompt_image_url": null
+  }
+}
