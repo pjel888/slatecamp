@@ -9,6 +9,7 @@ import {
   Cards,
   FileText,
   Path,
+  Table,
   Users,
 } from '@phosphor-icons/react/dist/ssr'
 
@@ -99,6 +100,7 @@ export const ROUTES = {
     quizSessions: DASHBOARD_QUIZ_SESSIONS,
     settings: '/dashboard/settings',
     studio: '/dashboard/studio',
+    tables: '/dashboard/tables',
     upgrade: '/dashboard/upgrade',
     wiki: '/dashboard/wiki',
     // Dynamic helpers
@@ -343,6 +345,12 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     title: 'LEA Numbers Flash',
     sidebarLabel: 'Flash Cards',
     icon: Cards,
+    group: 'learn',
+  },
+  {
+    path: ROUTES.dashboard.tables,
+    title: 'Tables',
+    icon: Table,
     group: 'learn',
   },
   {

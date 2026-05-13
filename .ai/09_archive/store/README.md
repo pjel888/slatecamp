@@ -9,3 +9,7 @@ Canonical archive entrypoints live in:
 Rule:
 - keep historical content here when preservation matters
 - route humans and agents through `../09_archive/` first
+
+## Current notable preserved sets
+
+- `2026-05-13-li-vizcode-3d-learning-consolidation-inputs/` preserves the three source folders consolidated into the active LI/VizCode 3D learning master plan.

@@ -8,6 +8,7 @@ import {
   Cards,
   ChartBar,
   GearSix,
+  Table,
 } from '@phosphor-icons/react/dist/ssr'
 import type { SidebarNavItemConfig, SidebarNavGroupConfig } from './types'
 import { ROUTES } from '@/lib/routes'
@@ -22,6 +23,7 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
 
   // Learn group — tier: default (primary study loop)
   { id: 'wiki', href: ROUTES.dashboard.wiki, label: 'Wiki', icon: Globe, tier: 'default', group: 'learn', shortcut: '⌘2' },
+  { id: 'tables', href: ROUTES.dashboard.tables, label: 'Tables', icon: Table, tier: 'default', group: 'learn' },
   { id: 'notes', href: ROUTES.dashboard.notes, label: 'Notes', icon: FileText, tier: 'default', group: 'learn', shortcut: '⌘3' },
 
   // Explore group — tier: default (interactive tools)
