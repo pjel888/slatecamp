@@ -1,0 +1,64 @@
+{
+  "question_id": "086a58e8-a47b-4163-8c1b-227fd5296a30",
+  "baseline_hash": "sha256:8a8507fdee4a4bd1308b727df5cef14e9740529a59feef2506681721a8f5284a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Sustainable Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "83e55961-2180-4a29-8c83-76039225db36",
+    "parent_article_slug": "lea-theo-007-09-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Sustainable Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+        "sha256": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Sustainable Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+        "sha256": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which proposal is the clearest greenwashing risk under this rewrite?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A shaded classroom wing with cross-ventilation and protected openings"
+      },
+      {
+        "id": "b",
+        "text": "A library with deep balconies that buffer sun and rain"
+      },
+      {
+        "id": "c",
+        "text": "A mixed-mode office that uses natural ventilation when outdoor conditions permit"
+      },
+      {
+        "id": "d",
+        "text": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "A shaded classroom wing with cross-ventilation and protected openings is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "b": "A library with deep balconies that buffer sun and rain is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "c": "A mixed-mode office that uses natural ventilation when outdoor conditions permit is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "d": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy This is the source-safe answer for Sustainable Architecture.",
+      "correct": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy This stays inside the Batch 136 local source map for Sustainable Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+    },
+    "explanation": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+  },
+  "batch_question_template_index": 7
+}

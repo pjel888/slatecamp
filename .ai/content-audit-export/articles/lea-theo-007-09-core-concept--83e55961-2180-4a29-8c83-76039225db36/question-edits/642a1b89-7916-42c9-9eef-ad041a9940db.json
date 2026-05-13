@@ -1,0 +1,64 @@
+{
+  "question_id": "642a1b89-7916-42c9-9eef-ad041a9940db",
+  "baseline_hash": "sha256:ae174e7d453bc027f51f482eeacaa5b559dc180529bffd142047d532de2db3ba",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Sustainable Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "83e55961-2180-4a29-8c83-76039225db36",
+    "parent_article_slug": "lea-theo-007-09-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Sustainable Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+        "sha256": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Sustainable Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+        "sha256": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How should a student handle LEED, BERDE, or Passive House claims in this Batch 136 article?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assume all sustainable buildings automatically meet every rating system"
+      },
+      {
+        "id": "b",
+        "text": "Replace tropical passive-design evidence with brand names"
+      },
+      {
+        "id": "c",
+        "text": "Use certification acronyms as proof even when the source layer is silent"
+      },
+      {
+        "id": "d",
+        "text": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "Assume all sustainable buildings automatically meet every rating system is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "b": "Replace tropical passive-design evidence with brand names is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "c": "Use certification acronyms as proof even when the source layer is silent is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "d": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold This is the source-safe answer for Sustainable Architecture.",
+      "correct": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold This stays inside the Batch 136 local source map for Sustainable Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+    },
+    "explanation": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+  },
+  "batch_question_template_index": 4
+}

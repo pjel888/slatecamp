@@ -1,0 +1,150 @@
+{
+  "batch_id": "source-audited-article-batch-136-local-first",
+  "batch_number": 136,
+  "generated_at": "2026-05-13T23:19:28.125Z",
+  "baseline_commit": "6eef5e971",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_pending",
+  "selection": {
+    "selected_clusters": [
+      "lea-theo-007-09",
+      "lea-theo-007-11",
+      "lea-theo-007-12",
+      "lea-theo-007-13",
+      "lea-theo-007-14"
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-007-02",
+        "title": "Digital Architecture",
+        "reason": "Blocked for Batch 136 because the captured local source corpus only supported a generic parametric-design reference and did not safely support the article-level AI, biomimicry, workflow, or computational practice claims.",
+        "next_action": "Source a current local or authoritative digital-design reference before rewriting."
+      },
+      {
+        "cluster_id": "lea-theo-007-10",
+        "title": "Social Architecture",
+        "reason": "Blocked for Batch 136 because local captures did not safely support the Arnstein, participatory planning, co-design, and social-architecture framework needed by the residual article.",
+        "next_action": "Source an authoritative participatory-design/social-architecture reference before rewriting."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Selected the next sourceable residual Theory clusters after Batch 135 stopped at lea-theo-007-01. lea-theo-007-02 and lea-theo-007-10 were blocked for local-source gaps; selected lea-theo-007-09, 007-11, 007-12, 007-13, and 007-14."
+  },
+  "articles": [
+    {
+      "article_id": "83e55961-2180-4a29-8c83-76039225db36",
+      "cluster_id": "lea-theo-007-09",
+      "slug": "lea-theo-007-09-core-concept",
+      "title": "Sustainable Architecture",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-007-09-core-concept--83e55961-2180-4a29-8c83-76039225db36",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:39a8aaeba5adc84daecb005b924b4ee41b60a5762b4ac842883db7273aa9310f",
+      "candidate_hash": "sha256:39a8aaeba5adc84daecb005b924b4ee41b60a5762b4ac842883db7273aa9310f",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+      "cluster_id": "lea-theo-007-11",
+      "slug": "lea-theo-007-11-core-concept",
+      "title": "Minimalism",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-007-11-core-concept--a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:f46904e67643beea6ed52f2bd31f26906623db8b0e7590d0e20d8d83869b7900",
+      "candidate_hash": "sha256:f46904e67643beea6ed52f2bd31f26906623db8b0e7590d0e20d8d83869b7900",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+      "cluster_id": "lea-theo-007-12",
+      "slug": "lea-theo-007-12-core-concept",
+      "title": "High-Tech Architecture",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-007-12-core-concept--3d340472-3007-4a4e-8a25-9754506e17bc",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:f465a4e6cddd6e1eda6f0f120ea23d672b3a1de461be4741d3a59cd353e5ebdb",
+      "candidate_hash": "sha256:f465a4e6cddd6e1eda6f0f120ea23d672b3a1de461be4741d3a59cd353e5ebdb",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+      "cluster_id": "lea-theo-007-13",
+      "slug": "lea-theo-007-13-core-concept",
+      "title": "Vernacular Architecture",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-007-13-core-concept--3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:9bb6c997d4cd16c87704d5af75176f5262a7b8368cb4d431c3841dfef146b12c",
+      "candidate_hash": "sha256:9bb6c997d4cd16c87704d5af75176f5262a7b8368cb4d431c3841dfef146b12c",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "cluster_id": "lea-theo-007-14",
+      "slug": "lea-theo-007-14-core-concept",
+      "title": "Adaptive Reuse",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-007-14-core-concept--c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:69ca1156005346fd2f911932df71c5e33c37ed7d0102144dd23354448d4f34ed",
+      "candidate_hash": "sha256:69ca1156005346fd2f911932df71c5e33c37ed7d0102144dd23354448d4f34ed",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    }
+  ],
+  "validation": {
+    "compose_diff_validate_passed": true,
+    "ui_block_validation_passed": true,
+    "scoped_json_parse_passed": true,
+    "marker_source_gap_scan_passed": true,
+    "source_hash_checks_passed": true,
+    "question_edit_count_passed": true,
+    "stale_compose_error_scan_passed": true,
+    "targeted_tests_passed": true,
+    "scoped_git_diff_check_passed": true
+  },
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "handoff": {
+    "intended_commit": "chore(content): accept source-audited batch 136",
+    "exact_stage_paths_file": ".ai/03_plans/batch-136-git-handoff-stage-paths.txt",
+    "no_supabase_or_deploy": true
+  }
+}

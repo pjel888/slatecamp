@@ -1,0 +1,64 @@
+{
+  "question_id": "7cf92678-505a-4460-bcb0-ffd0f0677698",
+  "baseline_hash": "sha256:aebcbce13f4cd0623ed4db9a714893619a27d910508793561beb50f11a9f6cc9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Adaptive Reuse.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+    "parent_article_slug": "lea-theo-007-14-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Adaptive Reuse",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+        "sha256": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Adaptive Reuse",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+        "sha256": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How should reused materials be treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As automatic proof that no new material is needed"
+      },
+      {
+        "id": "b",
+        "text": "As decorative rubble even when unsafe"
+      },
+      {
+        "id": "c",
+        "text": "As irrelevant because reuse only concerns facade style"
+      },
+      {
+        "id": "d",
+        "text": "As part of a feasibility and design strategy that can recover value when materials remain safe and suitable"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "As automatic proof that no new material is needed is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "b": "As decorative rubble even when unsafe is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "c": "As irrelevant because reuse only concerns facade style is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "d": "As part of a feasibility and design strategy that can recover value when materials remain safe and suitable This is the source-safe answer for Adaptive Reuse.",
+      "correct": "As part of a feasibility and design strategy that can recover value when materials remain safe and suitable This stays inside the Batch 136 local source map for Adaptive Reuse.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Adaptive Reuse; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+    },
+    "explanation": "As part of a feasibility and design strategy that can recover value when materials remain safe and suitable Supported by Batch 136 local source artifacts for Adaptive Reuse: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+  },
+  "batch_question_template_index": 5
+}

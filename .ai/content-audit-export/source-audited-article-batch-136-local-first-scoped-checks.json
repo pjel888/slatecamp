@@ -1,0 +1,551 @@
+{
+  "batch_id": "source-audited-article-batch-136-local-first",
+  "generated_at": "2026-05-13T23:19:28.125Z",
+  "status": "passed_local_validation_git_handoff_pending",
+  "passed": true,
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "selection": {
+    "selected_clusters": [
+      "lea-theo-007-09",
+      "lea-theo-007-11",
+      "lea-theo-007-12",
+      "lea-theo-007-13",
+      "lea-theo-007-14"
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-007-02",
+        "title": "Digital Architecture",
+        "reason": "Blocked for Batch 136 because the captured local source corpus only supported a generic parametric-design reference and did not safely support the article-level AI, biomimicry, workflow, or computational practice claims.",
+        "next_action": "Source a current local or authoritative digital-design reference before rewriting."
+      },
+      {
+        "cluster_id": "lea-theo-007-10",
+        "title": "Social Architecture",
+        "reason": "Blocked for Batch 136 because local captures did not safely support the Arnstein, participatory planning, co-design, and social-architecture framework needed by the residual article.",
+        "next_action": "Source an authoritative participatory-design/social-architecture reference before rewriting."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Selected the next sourceable residual Theory clusters after Batch 135 stopped at lea-theo-007-01. lea-theo-007-02 and lea-theo-007-10 were blocked for local-source gaps; selected lea-theo-007-09, 007-11, 007-12, 007-13, and 007-14."
+  },
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "83e55961-2180-4a29-8c83-76039225db36",
+        "slug": "lea-theo-007-09-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+        "slug": "lea-theo-007-11-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+        "slug": "lea-theo-007-12-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+        "slug": "lea-theo-007-13-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+        "slug": "lea-theo-007-14-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "83e55961-2180-4a29-8c83-76039225db36",
+        "slug": "lea-theo-007-09-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+        "slug": "lea-theo-007-11-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+        "slug": "lea-theo-007-12-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+        "slug": "lea-theo-007-13-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+        "slug": "lea-theo-007-14-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "parsed_count": 99,
+    "failures": []
+  },
+  "marker_source_gap_scan": {
+    "passed": true,
+    "scanned_count": 75,
+    "matches": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+        "expected": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0",
+        "actual": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+        "expected": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+        "actual": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+        "expected": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0",
+        "actual": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+        "expected": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "actual": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture:raw:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+        "expected": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "actual": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture:refined:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+        "expected": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "actual": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture:raw:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+        "expected": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "actual": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture:refined:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+        "expected": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+        "actual": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+        "expected": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "actual": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map:raw:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+        "expected": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "actual": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map:refined:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+        "expected": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "actual": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map:raw:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+        "expected": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "actual": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map:refined:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md",
+        "expected": "sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f",
+        "actual": "sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+        "expected": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "actual": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-raw-source-capture:raw:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+        "expected": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "actual": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-raw-source-capture:refined:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+        "expected": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "actual": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-raw-source-capture:raw:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+        "expected": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "actual": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-raw-source-capture:refined:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md",
+        "expected": "sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+        "actual": "sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+        "expected": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "actual": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-refined-source-map:raw:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+        "expected": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "actual": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-refined-source-map:refined:TOA 5"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+        "expected": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "actual": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-refined-source-map:raw:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+        "expected": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "actual": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-12-core-concept-refined-source-map:refined:Quotes (Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+        "expected": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c",
+        "actual": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "expected": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "actual": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture:raw:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "expected": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "actual": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture:refined:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture:refined:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md",
+        "expected": "sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+        "actual": "sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "expected": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "actual": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map:raw:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "expected": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "actual": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map:refined:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map:refined:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+        "expected": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d",
+        "actual": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+        "expected": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "actual": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture:raw:Modern Architectures in History (USA)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+        "expected": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "actual": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture:refined:Modern Architectures in History (USA)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (Brazil) - Richard J. Williams.pdf",
+        "expected": "sha256:8499aca87680f75ec1c81b3ab27b099bb62b205fda2710fdc58c90fe5018c06f",
+        "actual": "sha256:8499aca87680f75ec1c81b3ab27b099bb62b205fda2710fdc58c90fe5018c06f",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture:raw:Modern Architectures in History (Brazil)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (Brazil) - Richard J. Williams.md",
+        "expected": "sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e",
+        "actual": "sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture:refined:Modern Architectures in History (Brazil)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+        "expected": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+        "actual": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+        "expected": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "actual": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map:raw:Modern Architectures in History (USA)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+        "expected": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "actual": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map:refined:Modern Architectures in History (USA)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (Brazil) - Richard J. Williams.pdf",
+        "expected": "sha256:8499aca87680f75ec1c81b3ab27b099bb62b205fda2710fdc58c90fe5018c06f",
+        "actual": "sha256:8499aca87680f75ec1c81b3ab27b099bb62b205fda2710fdc58c90fe5018c06f",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map:raw:Modern Architectures in History (Brazil)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (Brazil) - Richard J. Williams.md",
+        "expected": "sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e",
+        "actual": "sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e",
+        "passed": true,
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map:refined:Modern Architectures in History (Brazil)"
+      }
+    ]
+  },
+  "question_edit_count": {
+    "passed": true,
+    "expected": 50,
+    "actual": 50,
+    "answer_key_changes": 0,
+    "articles": [
+      {
+        "article_id": "83e55961-2180-4a29-8c83-76039225db36",
+        "slug": "lea-theo-007-09-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+        "slug": "lea-theo-007-11-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+        "slug": "lea-theo-007-12-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+        "slug": "lea-theo-007-13-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+        "slug": "lea-theo-007-14-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "stale_files": []
+  },
+  "targeted_tests": {
+    "passed": true,
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts"
+  },
+  "scoped_git_diff_check": {
+    "passed": true,
+    "command": "git diff --check -- <batch-136-stage-paths>",
+    "output": ""
+  }
+}

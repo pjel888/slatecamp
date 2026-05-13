@@ -1,0 +1,64 @@
+{
+  "question_id": "7aea0026-9d5e-44de-878e-274ded976126",
+  "baseline_hash": "sha256:1921fc8e789fd83a43683bbc2a7899252cdb80a7ad545504a302f4c0f86c2904",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Minimalism.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+    "parent_article_slug": "lea-theo-007-11-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Minimalism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+        "sha256": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Minimalism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+        "sha256": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why does the article keep user needs inside the minimalist test?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because all user needs should be removed for purity"
+      },
+      {
+        "id": "b",
+        "text": "Because minimalism is only a furniture style"
+      },
+      {
+        "id": "c",
+        "text": "Because comfort is never relevant to theory questions"
+      },
+      {
+        "id": "d",
+        "text": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "Because all user needs should be removed for purity is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "b": "Because minimalism is only a furniture style is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "c": "Because comfort is never relevant to theory questions is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "d": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning This is the source-safe answer for Minimalism.",
+      "correct": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning This stays inside the Batch 136 local source map for Minimalism.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+    },
+    "explanation": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+  },
+  "batch_question_template_index": 7
+}

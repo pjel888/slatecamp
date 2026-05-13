@@ -1,0 +1,64 @@
+{
+  "question_id": "4cba7297-0296-407d-a242-01d22e822e31",
+  "baseline_hash": "sha256:f0b8e32fd097478980009775c20473e8bc5554ba2d8d5de4325018b635718809",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Minimalism.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+    "parent_article_slug": "lea-theo-007-11-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Minimalism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+        "sha256": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Minimalism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+        "sha256": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the practical LEA takeaway from minimalism?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fewer elements automatically mean better architecture"
+      },
+      {
+        "id": "b",
+        "text": "Minimalism means the cheapest possible specification"
+      },
+      {
+        "id": "c",
+        "text": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use"
+      },
+      {
+        "id": "d",
+        "text": "Minimalism replaces site, program, and construction judgment"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Fewer elements automatically mean better architecture is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "b": "Minimalism means the cheapest possible specification is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "c": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use This is the source-safe answer for Minimalism.",
+      "d": "Minimalism replaces site, program, and construction judgment is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "correct": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use This stays inside the Batch 136 local source map for Minimalism.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+    },
+    "explanation": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+  },
+  "batch_question_template_index": 10
+}

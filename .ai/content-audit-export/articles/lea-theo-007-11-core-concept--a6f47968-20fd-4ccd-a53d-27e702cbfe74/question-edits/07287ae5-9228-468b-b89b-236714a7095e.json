@@ -1,0 +1,64 @@
+{
+  "question_id": "07287ae5-9228-468b-b89b-236714a7095e",
+  "baseline_hash": "sha256:496fc7252268a06c6bd6c167968e8be05e09080cdf4c39e65c579b313810fa14",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Minimalism.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+    "parent_article_slug": "lea-theo-007-11-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Minimalism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+        "sha256": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Minimalism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+        "sha256": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which claim should be avoided unless separately sourced?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimalism can use light and space as primary design materials"
+      },
+      {
+        "id": "b",
+        "text": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer"
+      },
+      {
+        "id": "c",
+        "text": "Minimalism makes each retained detail more consequential"
+      },
+      {
+        "id": "d",
+        "text": "Minimalism depends on restraint rather than visual noise"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Minimalism can use light and space as primary design materials is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "b": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer This is the source-safe answer for Minimalism.",
+      "c": "Minimalism makes each retained detail more consequential is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "d": "Minimalism depends on restraint rather than visual noise is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "correct": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer This stays inside the Batch 136 local source map for Minimalism.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+    },
+    "explanation": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+  },
+  "batch_question_template_index": 9
+}

@@ -1,0 +1,64 @@
+{
+  "question_id": "b9e6294f-24c4-4951-b941-f76100b3b423",
+  "baseline_hash": "sha256:d1d1dace51ca0e0105f068a091c5c28bd9e5bea537ad1ef4515a1d5d2d74b1e3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Adaptive Reuse.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+    "parent_article_slug": "lea-theo-007-14-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Adaptive Reuse",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+        "sha256": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Adaptive Reuse",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+        "sha256": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why does the article mention Hull House?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The local source describes it as adaptive reuse of a former mansion that expanded into social, educational, residential, and civic facilities"
+      },
+      {
+        "id": "b",
+        "text": "It proves all adaptive reuse must become a museum"
+      },
+      {
+        "id": "c",
+        "text": "It is used to claim exact carbon savings"
+      },
+      {
+        "id": "d",
+        "text": "It replaces feasibility and safety review"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "The local source describes it as adaptive reuse of a former mansion that expanded into social, educational, residential, and civic facilities This is the source-safe answer for Adaptive Reuse.",
+      "b": "It proves all adaptive reuse must become a museum is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "c": "It is used to claim exact carbon savings is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "d": "It replaces feasibility and safety review is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "correct": "The local source describes it as adaptive reuse of a former mansion that expanded into social, educational, residential, and civic facilities This stays inside the Batch 136 local source map for Adaptive Reuse.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Adaptive Reuse; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+    },
+    "explanation": "The local source describes it as adaptive reuse of a former mansion that expanded into social, educational, residential, and civic facilities Supported by Batch 136 local source artifacts for Adaptive Reuse: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+  },
+  "batch_question_template_index": 2
+}

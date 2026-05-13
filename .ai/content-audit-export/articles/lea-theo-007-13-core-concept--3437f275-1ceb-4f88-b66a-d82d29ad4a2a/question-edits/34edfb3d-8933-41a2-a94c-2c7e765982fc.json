@@ -1,0 +1,64 @@
+{
+  "question_id": "34edfb3d-8933-41a2-a94c-2c7e765982fc",
+  "baseline_hash": "sha256:0b11a543dc43bac0290ebc3f481f53119cf2516d21982191c871d08243293398",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Vernacular Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+    "parent_article_slug": "lea-theo-007-13-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Vernacular Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+        "sha256": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Vernacular Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md",
+        "sha256": "sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What does the theory source support about early building needs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shelter begins from imported style catalogues only"
+      },
+      {
+        "id": "b",
+        "text": "Shelter begins from immediate needs and materials available in the place"
+      },
+      {
+        "id": "c",
+        "text": "Local material knowledge is irrelevant to architecture"
+      },
+      {
+        "id": "d",
+        "text": "Climate response is a late decorative addition"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Shelter begins from imported style catalogues only is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "b": "Shelter begins from immediate needs and materials available in the place This is the source-safe answer for Vernacular Architecture.",
+      "c": "Local material knowledge is irrelevant to architecture is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "d": "Climate response is a late decorative addition is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "correct": "Shelter begins from immediate needs and materials available in the place This stays inside the Batch 136 local source map for Vernacular Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+    },
+    "explanation": "Shelter begins from immediate needs and materials available in the place Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+  },
+  "batch_question_template_index": 7
+}

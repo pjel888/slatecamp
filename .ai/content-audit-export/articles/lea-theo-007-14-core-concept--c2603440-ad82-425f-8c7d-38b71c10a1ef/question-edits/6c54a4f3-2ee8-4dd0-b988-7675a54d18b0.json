@@ -1,0 +1,64 @@
+{
+  "question_id": "6c54a4f3-2ee8-4dd0-b988-7675a54d18b0",
+  "baseline_hash": "sha256:798db312e8060778cb3cfff412fff786c4717092fc72eb37b8f92ebeebb937d6",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Adaptive Reuse.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+    "parent_article_slug": "lea-theo-007-14-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Adaptive Reuse",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+        "sha256": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Adaptive Reuse",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+        "sha256": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is adaptive reuse in the safest Batch 136 framing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Demolishing a usable structure before testing whether reuse can satisfy the brief"
+      },
+      {
+        "id": "b",
+        "text": "Keeping a building unchanged even when the program cannot work"
+      },
+      {
+        "id": "c",
+        "text": "Using old-looking decoration on a completely new shell and calling it reuse"
+      },
+      {
+        "id": "d",
+        "text": "Transforming an existing building or structure for a new use while evaluating structure, memory, materials, program, and safety"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "Demolishing a usable structure before testing whether reuse can satisfy the brief is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "b": "Keeping a building unchanged even when the program cannot work is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "c": "Using old-looking decoration on a completely new shell and calling it reuse is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "d": "Transforming an existing building or structure for a new use while evaluating structure, memory, materials, program, and safety This is the source-safe answer for Adaptive Reuse.",
+      "correct": "Transforming an existing building or structure for a new use while evaluating structure, memory, materials, program, and safety This stays inside the Batch 136 local source map for Adaptive Reuse.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Adaptive Reuse; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+    },
+    "explanation": "Transforming an existing building or structure for a new use while evaluating structure, memory, materials, program, and safety Supported by Batch 136 local source artifacts for Adaptive Reuse: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+  },
+  "batch_question_template_index": 1
+}

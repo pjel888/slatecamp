@@ -1,56 +1,90 @@
 {
   "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:048fa58b71874aad1147f447d786bd43c25d7151613a2b3926634bdade288661",
-  "source_count": 4,
+  "sources_hash": "sha256:931b1912f4034f78ca98fb12c3dfb799b81cae7953c3705bdf4d32f1ffa9bd6e",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "9b164b7b-ebe5-4d90-bc5c-36946d268a1b",
+      "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
-      "label": "Ando, Tadao. *The Architecture of Tadao Ando: Concrete and Wood*. Phaidon, 1996",
+      "label": "Batch 136 raw source capture - Minimalism",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Minimalism; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+      "local_sha256": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0",
+      "checked_markdown_lines": [
+        "Quotes (Architecture) lines 21-31: Canonical modernist language links architecture to forms assembled in light and disciplined Miesian aphorisms.",
+        "Quotes (Architecture) lines 151-159: Tadao Ando frames architecture through silence, light, wonder, and non-material experience.",
+        "Quotes (Architecture) lines 257-269: The quoted theory corpus connects architectural effect to searching for more light and space, and to space, light, and materials.",
+        "Quotes (Architecture) lines 395-395: John Pawson appears as a minimalism reference in the local quote corpus.",
+        "TOA 5 lines 648-785: Mies is treated as a major modern architect and the TOA 5 corpus repeatedly anchors design in form, light, structure, and material discipline."
+      ],
+      "local_source_families": [
+        {
+          "label": "Quotes (Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        },
+        {
+          "label": "TOA 5",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 136 source capture/refined conversion boundary."
     },
     {
-      "source_id": "2e4cbf22-cd4d-474d-9f39-a8a4f2eca5e1",
+      "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
-      "label": "Pawson, John. *John Pawson: Minimum*. Phaidon, 1996",
+      "label": "Batch 136 refined source conversion - Minimalism",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Minimalism.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "b0386074-76c2-40db-a387-cdc88daf2b9a",
-      "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
-      "label": "Sejima, Kazuyo, and Ryue Nishizawa. *SANAA: Works 1995–2015*. Electa/Rizzoli, 2016",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "06775562-1850-435d-b80e-d99d8d0b0fd9",
-      "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
-      "label": "Zumthor, Peter. *Thinking Architecture*. Birkhäuser, 2006",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+      "local_sha256": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0",
+      "checked_markdown_lines": [
+        "Quotes (Architecture) lines 21-31: Canonical modernist language links architecture to forms assembled in light and disciplined Miesian aphorisms.",
+        "Quotes (Architecture) lines 151-159: Tadao Ando frames architecture through silence, light, wonder, and non-material experience.",
+        "Quotes (Architecture) lines 257-269: The quoted theory corpus connects architectural effect to searching for more light and space, and to space, light, and materials.",
+        "Quotes (Architecture) lines 395-395: John Pawson appears as a minimalism reference in the local quote corpus.",
+        "TOA 5 lines 648-785: Mies is treated as a major modern architect and the TOA 5 corpus repeatedly anchors design in form, light, structure, and material discipline."
+      ],
+      "local_source_families": [
+        {
+          "label": "Quotes (Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        },
+        {
+          "label": "TOA 5",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

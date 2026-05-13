@@ -1,6 +1,6 @@
 {
   "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
-  "title": "Vernacular architecture comprises buildings designed",
+  "title": "Vernacular Architecture",
   "slug": "lea-theo-007-13-core-concept",
   "subject_label": "Theory of Architecture",
   "difficulty_label": null,
@@ -11,25 +11,54 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:08.667678+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:52:45.526848+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:1cd69160cce5e76360ecedbd70ca54ef20f1a950b012c62826efeee69ad0d2c1",
-  "original_content_hash": "sha256:1cd69160cce5e76360ecedbd70ca54ef20f1a950b012c62826efeee69ad0d2c1",
-  "normalized_content_hash": "sha256:1cd69160cce5e76360ecedbd70ca54ef20f1a950b012c62826efeee69ad0d2c1",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-13T23:17:50.015Z",
+  "updated_by": "codex-local-first-batch-136",
+  "updated_note": "Source-audited local-first Batch 136 content and linked-question replacement; claims cite local captured source artifacts.",
+  "content_hash": "sha256:85c6a182ee20fa3c3290df1c147e39f734e3a3b12c114360fe4bda9261f60847",
+  "original_content_hash": "sha256:85c6a182ee20fa3c3290df1c147e39f734e3a3b12c114360fe4bda9261f60847",
+  "normalized_content_hash": "sha256:9bb6c997d4cd16c87704d5af75176f5262a7b8368cb4d431c3841dfef146b12c",
+  "candidate_content_hash": "sha256:9bb6c997d4cd16c87704d5af75176f5262a7b8368cb4d431c3841dfef146b12c",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:98cd10699c295ec8a413ef22d7fe74224a07db9895545880acd7f0735d9b31bf",
-  "sources_hash": "sha256:9142646d82d989cabfa882fe404d4b631e442f875f5bbce6bd11228651325d89",
+  "linked_questions_hash": "sha256:ede9670754080f772a7de01a53f665739dabb5a50da93941d9997af9309ed64b",
+  "sources_hash": "sha256:ede03885809df728f59e41581c5536f15396697be6ef1370951d7084ff2c5dd4",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:18.464Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
   "export_version": "content-roundtrip-v1",
   "source_table": "wiki_articles",
-  "source_count": 4,
+  "source_count": 2,
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "batch-136",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+      "raw_sha256": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+      "refined_sha256": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "raw_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "refined_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+    }
+  ],
+  "blocked_residuals_logged": [
+    "lea-theo-007-02",
+    "lea-theo-007-10"
+  ]
 }

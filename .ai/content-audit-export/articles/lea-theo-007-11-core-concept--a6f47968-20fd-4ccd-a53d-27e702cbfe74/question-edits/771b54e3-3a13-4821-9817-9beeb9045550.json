@@ -1,0 +1,64 @@
+{
+  "question_id": "771b54e3-3a13-4821-9817-9beeb9045550",
+  "baseline_hash": "sha256:c341745cfea693f2fc095820052d2c1360b8a8a8c8dd13f71c59653b633063d3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Minimalism.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+    "parent_article_slug": "lea-theo-007-11-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Minimalism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+        "sha256": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Minimalism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+        "sha256": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What do the captured light-and-space quotations support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A rule that ornament is illegal in every building type"
+      },
+      {
+        "id": "b",
+        "text": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter"
+      },
+      {
+        "id": "c",
+        "text": "A guarantee that all minimalist buildings cost less"
+      },
+      {
+        "id": "d",
+        "text": "A claim that color and texture can never be used"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "A rule that ornament is illegal in every building type is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "b": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter This is the source-safe answer for Minimalism.",
+      "c": "A guarantee that all minimalist buildings cost less is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "d": "A claim that color and texture can never be used is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "correct": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter This stays inside the Batch 136 local source map for Minimalism.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+    },
+    "explanation": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+  },
+  "batch_question_template_index": 4
+}

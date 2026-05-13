@@ -1,56 +1,104 @@
 {
   "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9142646d82d989cabfa882fe404d4b631e442f875f5bbce6bd11228651325d89",
-  "source_count": 4,
+  "sources_hash": "sha256:ede03885809df728f59e41581c5536f15396697be6ef1370951d7084ff2c5dd4",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "dd60bc3b-ca00-475a-ad3c-93a9713c8970",
+      "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
-      "label": "Rudofsky, Bernard. *Architecture Without Architects: A Short Introduction to Non-Pedigree Architecture*. Museum of Modern Art, 1964",
+      "label": "Batch 136 raw source capture - Vernacular Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Vernacular Architecture; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+      "local_sha256": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c",
+      "checked_markdown_lines": [
+        "TOA 4 (Tropical Architecture) lines 1599-1616: TOA 4 names Bahay Kubo and Bahay na Bato as Philippine climate-responsive reference points.",
+        "TOA 4 (Tropical Architecture) lines 630-670: Tropical design uses natural ventilation, low thermal mass, shading, wind orientation, and shaded outdoor buffers.",
+        "Theory of Architecture Reviewer lines 1735-1779: Vernacular architecture is tied to trial-and-error, available materials, climate, lifestyle, and folk-derived design patterns.",
+        "Theory of Architecture Reviewer lines 1876-1924: The reviewer includes bahay kubo and bahay na bato vocabulary for local house form and spatial parts.",
+        "Theory Lecture lines 375-375: The theory lecture defines basic building origins through immediate need and locally available materials."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        },
+        {
+          "label": "Theory of Architecture Reviewer",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+          "rawHash": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+          "refinedHash": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+        },
+        {
+          "label": "Theory Lecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 136 source capture/refined conversion boundary."
     },
     {
-      "source_id": "559c6484-898c-40df-aa47-5e94aea7fa5d",
+      "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
-      "label": "Oliver, Paul, editor. *Encyclopedia of Vernacular Architecture of the World*. Cambridge University Press, 1997",
+      "label": "Batch 136 refined source conversion - Vernacular Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Vernacular Architecture.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "e37456f6-ca1e-4a79-ab2f-7f1bb6101b70",
-      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
-      "label": "Asquith, Lindsay, and Marcel Vellinga, editors. *Vernacular Architecture in the 21st Century: Theory, Education and Practice*. Taylor and Francis, 2005",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "61107f3b-fc84-403e-ad63-deedc277324f",
-      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
-      "label": "Santiago, Clodualdo. *The Bahay Kubo: Illustrated Guide to Traditional Filipino Architecture*. Local publication, various editions",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md",
+      "local_sha256": "sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c",
+      "checked_markdown_lines": [
+        "TOA 4 (Tropical Architecture) lines 1599-1616: TOA 4 names Bahay Kubo and Bahay na Bato as Philippine climate-responsive reference points.",
+        "TOA 4 (Tropical Architecture) lines 630-670: Tropical design uses natural ventilation, low thermal mass, shading, wind orientation, and shaded outdoor buffers.",
+        "Theory of Architecture Reviewer lines 1735-1779: Vernacular architecture is tied to trial-and-error, available materials, climate, lifestyle, and folk-derived design patterns.",
+        "Theory of Architecture Reviewer lines 1876-1924: The reviewer includes bahay kubo and bahay na bato vocabulary for local house form and spatial parts.",
+        "Theory Lecture lines 375-375: The theory lecture defines basic building origins through immediate need and locally available materials."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        },
+        {
+          "label": "Theory of Architecture Reviewer",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+          "rawHash": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+          "refinedHash": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+        },
+        {
+          "label": "Theory Lecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

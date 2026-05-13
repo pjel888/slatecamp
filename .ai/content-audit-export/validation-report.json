@@ -1,44 +1,130 @@
 {
-  "generated_at": "2026-05-13T22:56:54.250Z",
+  "generated_at": "2026-05-13T23:19:28.125Z",
   "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
-  "article_count": 1,
+  "scope": "source-audited-article-batch-136-local-first",
+  "article_count": 5,
   "valid": true,
   "blockers": [],
-  "warnings": [
-    "lea-theo-007-01-core-concept--5144f75e-e8ee-49a0-8dcf-2ded9c2b432c: component-usage.json has not been generated for this article yet."
-  ],
+  "warnings": [],
   "articles": [
     {
-      "article_id": "5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
-      "slug": "lea-theo-007-01-core-concept",
-      "folder": "lea-theo-007-01-core-concept--5144f75e-e8ee-49a0-8dcf-2ded9c2b432c",
+      "article_id": "83e55961-2180-4a29-8c83-76039225db36",
+      "slug": "lea-theo-007-09-core-concept",
+      "folder": "lea-theo-007-09-core-concept--83e55961-2180-4a29-8c83-76039225db36",
       "valid": true,
       "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ],
+      "warnings": [],
       "files": {
         "metadata": true,
         "original": true,
         "normalized": true,
         "uiBlocks": true,
-        "parserErrors": true,
         "uiBlockEdits": true,
         "linkedQuestions": true,
         "sources": true,
-        "taxonomy": true,
-        "componentUsage": false,
         "candidate": true,
         "diffReport": true,
-        "diffReportMarkdown": true,
-        "pushReport": false,
-        "pushResult": false
+        "diffReportMarkdown": true
       },
       "hashes": {
-        "original": "sha256:f757dbde023fd9fdf60917162f0bd46c691ded8052e11447414f1a612c7fbc4d",
-        "normalized": "sha256:e3bc965c302561864b875c351141041013bbbe91e02d041d89aeb61844c571e9",
-        "candidate": "sha256:e3bc965c302561864b875c351141041013bbbe91e02d041d89aeb61844c571e9",
-        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        "normalized": "sha256:39a8aaeba5adc84daecb005b924b4ee41b60a5762b4ac842883db7273aa9310f",
+        "candidate": "sha256:39a8aaeba5adc84daecb005b924b4ee41b60a5762b4ac842883db7273aa9310f"
+      }
+    },
+    {
+      "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+      "slug": "lea-theo-007-11-core-concept",
+      "folder": "lea-theo-007-11-core-concept--a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+      "valid": true,
+      "blockers": [],
+      "warnings": [],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true
+      },
+      "hashes": {
+        "normalized": "sha256:f46904e67643beea6ed52f2bd31f26906623db8b0e7590d0e20d8d83869b7900",
+        "candidate": "sha256:f46904e67643beea6ed52f2bd31f26906623db8b0e7590d0e20d8d83869b7900"
+      }
+    },
+    {
+      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+      "slug": "lea-theo-007-12-core-concept",
+      "folder": "lea-theo-007-12-core-concept--3d340472-3007-4a4e-8a25-9754506e17bc",
+      "valid": true,
+      "blockers": [],
+      "warnings": [],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true
+      },
+      "hashes": {
+        "normalized": "sha256:f465a4e6cddd6e1eda6f0f120ea23d672b3a1de461be4741d3a59cd353e5ebdb",
+        "candidate": "sha256:f465a4e6cddd6e1eda6f0f120ea23d672b3a1de461be4741d3a59cd353e5ebdb"
+      }
+    },
+    {
+      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+      "slug": "lea-theo-007-13-core-concept",
+      "folder": "lea-theo-007-13-core-concept--3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+      "valid": true,
+      "blockers": [],
+      "warnings": [],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true
+      },
+      "hashes": {
+        "normalized": "sha256:9bb6c997d4cd16c87704d5af75176f5262a7b8368cb4d431c3841dfef146b12c",
+        "candidate": "sha256:9bb6c997d4cd16c87704d5af75176f5262a7b8368cb4d431c3841dfef146b12c"
+      }
+    },
+    {
+      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "slug": "lea-theo-007-14-core-concept",
+      "folder": "lea-theo-007-14-core-concept--c2603440-ad82-425f-8c7d-38b71c10a1ef",
+      "valid": true,
+      "blockers": [],
+      "warnings": [],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true
+      },
+      "hashes": {
+        "normalized": "sha256:69ca1156005346fd2f911932df71c5e33c37ed7d0102144dd23354448d4f34ed",
+        "candidate": "sha256:69ca1156005346fd2f911932df71c5e33c37ed7d0102144dd23354448d4f34ed"
       }
     }
   ]

@@ -1,0 +1,64 @@
+{
+  "question_id": "afe86d03-cf07-4a31-a0c0-c3bfebe831ab",
+  "baseline_hash": "sha256:d8f503337559b4c1eaa3f2aecf67a85420ae86ea3f89de612afd5f80cb214462",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Adaptive Reuse.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
+    "parent_article_slug": "lea-theo-007-14-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Adaptive Reuse",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+        "sha256": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Adaptive Reuse",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+        "sha256": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How does neighborhood preservation connect to adaptive reuse?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It freezes all neighborhoods permanently"
+      },
+      {
+        "id": "b",
+        "text": "It applies only to isolated monuments"
+      },
+      {
+        "id": "c",
+        "text": "Reuse can keep useful urban fabric and memory while allowing renovation, infill, and new civic programs"
+      },
+      {
+        "id": "d",
+        "text": "It requires copying the past without current use"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "It freezes all neighborhoods permanently is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "b": "It applies only to isolated monuments is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "c": "Reuse can keep useful urban fabric and memory while allowing renovation, infill, and new civic programs This is the source-safe answer for Adaptive Reuse.",
+      "d": "It requires copying the past without current use is a distractor because it steps outside the Batch 136 source-safe claim boundary for Adaptive Reuse.",
+      "correct": "Reuse can keep useful urban fabric and memory while allowing renovation, infill, and new civic programs This stays inside the Batch 136 local source map for Adaptive Reuse.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Adaptive Reuse; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+    },
+    "explanation": "Reuse can keep useful urban fabric and memory while allowing renovation, infill, and new civic programs Supported by Batch 136 local source artifacts for Adaptive Reuse: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701"
+  },
+  "batch_question_template_index": 8
+}

@@ -1,0 +1,64 @@
+{
+  "question_id": "9386979d-876a-40b9-94b8-182a2e5f86f3",
+  "baseline_hash": "sha256:cceb7a9b20909da52bff67ac56e0a6712ed09cdec81fc7d9d56bf578741fe8ce",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Minimalism.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
+    "parent_article_slug": "lea-theo-007-11-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Minimalism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md",
+        "sha256": "sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-11-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Minimalism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md",
+        "sha256": "sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "In the Makati chapel-gallery scenario, what is the best value-engineering response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delete all seating, shading, and accessibility features to make the room look empty"
+      },
+      {
+        "id": "b",
+        "text": "Add more decorative features because the budget has been reduced"
+      },
+      {
+        "id": "c",
+        "text": "Replace spatial clarity with a branded minimalist color palette"
+      },
+      {
+        "id": "d",
+        "text": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "Delete all seating, shading, and accessibility features to make the room look empty is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "b": "Add more decorative features because the budget has been reduced is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "c": "Replace spatial clarity with a branded minimalist color palette is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+      "d": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures This is the source-safe answer for Minimalism.",
+      "correct": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures This stays inside the Batch 136 local source map for Minimalism.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+    },
+    "explanation": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
+  },
+  "batch_question_template_index": 8
+}

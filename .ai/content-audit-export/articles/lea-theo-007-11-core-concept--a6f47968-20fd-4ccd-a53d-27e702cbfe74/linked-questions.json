@@ -1,30 +1,30 @@
 {
   "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:39331b15188932705f07f46b3a8c6c58ec185df96270a8e7d7ec35e0087e3bda",
+  "linked_questions_hash": "sha256:10766da78e1453c56b1b376c8c22d595df97e8da0661bf965f840c4bbc0a6e79",
   "question_count": 10,
   "questions": [
     {
       "question_id": "070c6f12-fe41-4a9b-8c3f-38b440b64d24",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "In Tadao Ando's minimalism, what role does light play that distinguishes it from modernism's functional use of light?",
+      "text": "What is the safest Batch 136 definition of minimalism?",
       "options": [
         {
           "id": "a",
-          "text": "Light serves no significant function in Ando's work; darkness is preferred, creating a contemplative atmosphere"
+          "text": "Removing function until the building is unusable"
         },
         {
           "id": "b",
-          "text": "Light is treated as primary material equivalent to concrete or steel, shaped through apertures and revealing material surface; modernism uses light functionally (enabling vision)"
+          "text": "Disciplined reduction that uses proportion, light, space, and material restraint to strengthen the architectural idea"
         },
         {
           "id": "c",
-          "text": "Ando uses more light than modernism; the difference is quantitative, not philosophical, focusing on the intensity of illumination"
+          "text": "Choosing white paint and ignoring proportion or detail"
         },
         {
           "id": "d",
-          "text": "Light is eliminated; both Ando and modernism avoid illumination to emphasize shadow and form"
+          "text": "Adding expensive finishes because the room has fewer objects"
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Ando's spaces are luminous; the challenge is managing light intensity and direction, not achieving darkness.",
-        "c": "While both use light, the distinction is philosophical—light as material vs. light as utility.",
-        "d": "Ando creates precisely controlled light conditions; this is not elimination but sophisticated manipulation.",
-        "correct": "Rather than treating light instrumentally (enabling vision), Ando uses light as architectural material...Modernism uses light functionally.' In the Chapel of Light, a cross-shaped opening defines the space through light intersection with concrete; light is primary aesthetic material.",
-        "takeaway": "Rather than treating light instrumentally (enabling vision), Ando uses light as architectural material...Modernism uses light functionally.' In the Chapel of Light, a cross-shaped opening defines the space through light intersection with concrete; light is primary aesthetic material."
+        "a": "Removing function until the building is unusable is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "Disciplined reduction that uses proportion, light, space, and material restraint to strengthen the architectural idea This is the source-safe answer for Minimalism.",
+        "c": "Choosing white paint and ignoring proportion or detail is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "Adding expensive finishes because the room has fewer objects is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "Disciplined reduction that uses proportion, light, space, and material restraint to strengthen the architectural idea This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Disciplined reduction that uses proportion, light, space, and material restraint to strengthen the architectural idea Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-007-11-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cfc8c58ee0b8fc6860bec37712f26b0dbb634525a8ddc181c1531bba6017e6a9"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:3db8d088ffd53c0e0cb109979ac799f50ab57095d5c72de825d91848e45677e0",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "1c66c29c-c23c-4031-9f09-af65b47d47d2",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "What does 'phenomenological intensity' mean in minimalist architecture, and how is it achieved?",
+      "text": "Why is minimalism not the same as emptiness?",
       "options": [
         {
           "id": "a",
-          "text": "Maximum sensory stimulation through complex patterns and multiple simultaneous experiences, which can overwhelm the senses"
+          "text": "Because it requires every wall to be blank regardless of use"
         },
         {
           "id": "b",
-          "text": "The vividness and richness of direct sensory experience, achieved through eliminating visual distractions and heightening attention to what remains (light quality, material texture, spatial volume, proportional precision)"
+          "text": "Because it edits elements so the remaining light, space, materials, and details carry more intent"
         },
         {
           "id": "c",
-          "text": "The technical engineering of spatial acoustics and thermal comfort, focusing on environmental control systems"
+          "text": "Because it avoids all structure and enclosure"
         },
         {
           "id": "d",
-          "text": "The philosophical concept that all experiences are subjective and therefore unmeasurable, making architectural design purely interpretative"
+          "text": "Because it is only a decoration budget strategy"
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Minimalism achieves intensity through reduction, not stimulation multiplication.",
-        "c": "Phenomenological intensity concerns sensory awareness beyond only acoustics and thermal control; it includes light, material, spatial relationships.",
-        "d": "While phenomenology concerns subjective experience, This concept involves this as architecturally achievable through formal means, not merely philosophical assertion.",
-        "correct": "Phenomenological intensity achieved through elimination...the visitor's attention, uncluttered by decoration or complexity, becomes acutely aware of light quality, material texture, spatial volume.' Restraint enables acute sensory awareness.",
-        "takeaway": "Phenomenological intensity achieved through elimination...the visitor's attention, uncluttered by decoration or complexity, becomes acutely aware of light quality, material texture, spatial volume.' Restraint enables acute sensory awareness."
+        "a": "Because it requires every wall to be blank regardless of use is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "Because it edits elements so the remaining light, space, materials, and details carry more intent This is the source-safe answer for Minimalism.",
+        "c": "Because it avoids all structure and enclosure is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "Because it is only a decoration budget strategy is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "Because it edits elements so the remaining light, space, materials, and details carry more intent This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Because it edits elements so the remaining light, space, materials, and details carry more intent Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-007-11-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7bf1ce9e2e39971009abf451e1e106db12153ec5f249b2c09fb9cb7f8f71e365"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:173f8cacca10f1a4abb1d803095b0b2e63d1ccd3a0c2537172ed5f22b56bcff3",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "c4265af7-6dcc-41db-b48a-9edcc8db259d",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "How does SANAA's (Sejima and Nishizawa) approach to minimalism differ from Ando's in terms of sclea and programmatic organization?",
+      "text": "Which design decision best fits the source-safe article?",
       "options": [
         {
           "id": "a",
-          "text": "Ando works at intimate scale with material intensity; SANAA applies minimalism at larger scales through programmatic and structural sophistication where spatial definition emerges from movement and topography rather than architectural partition"
+          "text": "Simplifying the gallery so daylight, circulation, and a small set of durable materials define the experience"
         },
         {
           "id": "b",
-          "text": "Ando is more minimalist; SANAA adds complex programs that violate minimalist discipline by introducing excessive formal variety and spatial fragmentation"
+          "text": "Keeping every decorative motif so the room feels complete"
         },
         {
           "id": "c",
-          "text": "The two architects use identical approaches; differences are merely stylistic and do not represent distinct theoretical positions or spatial strategies"
+          "text": "Using random white surfaces without resolving openings or movement"
         },
         {
           "id": "d",
-          "text": "SANAA only designs museums; Ando works across building types including residential, religious, and commercial architecture at various scales"
+          "text": "Removing handrails, seating, and shade because minimalism means less of everything"
         }
       ],
       "correct_option_id": "a",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "SANAA as minimalist despite programmatic complexity; programmatic richness and formal minimalism are not contradictory.",
-        "c": "The approaches differ fundamentally in scale, strategic method (material vs. programmatic), and theoretical emphasis.",
-        "d": "SANAA designs various building types; Ando also works across types.",
-        "correct": "Ando's spatial minimalism features modest dimensions and material intensity. SANAA applies minimalism at larger scales...interior definition comes from program and subtle spatial manipulation, not walls.' Both are minimalist but at different scales and through different means.",
-        "takeaway": "SANAA applies minimalism at larger scales...interior definition comes from program and subtle spatial manipulation, not walls.' Both are minimalist but at different scales and through different means."
+        "a": "Simplifying the gallery so daylight, circulation, and a small set of durable materials define the experience This is the source-safe answer for Minimalism.",
+        "b": "Keeping every decorative motif so the room feels complete is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "c": "Using random white surfaces without resolving openings or movement is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "Removing handrails, seating, and shade because minimalism means less of everything is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "Simplifying the gallery so daylight, circulation, and a small set of durable materials define the experience This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": "SANAA as minimalist despite programmatic complexity; programmatic richness and formal minimalism are not contradictory. The approaches differ fundamentally in scale, strategic method (material vs. programmatic), and theoretical emphasis. SANAA designs various building types; Ando also works across types. Ando's spatial minimalism features modest dimensions and material intensity. SANAA applies minimalism at larger scales...interior definition comes from program and subtle spatial manipulation, not walls.' Both are minimalist but at different scales and through different means. SANAA applies minimalism at larger scales...interior definition comes from program and subtle spatial manipulation, not walls.' Both are minimalist but at different scales and through different means.",
-      "code_citation": null,
+      "explanation": "Simplifying the gallery so daylight, circulation, and a small set of durable materials define the experience Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-007-11-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T14:48:26.175829+00:00",
-      "content_hash": "sha256:fddf7f8cc5e1f7719c69c5c7fd2645772267ae804307d99b5934440455815aa1"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:63dc62b3ec1ad8be0f9a438315681f2e5315257b946a7d95417eb8e5f460115f",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "771b54e3-3a13-4821-9817-9beeb9045550",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "Which statement represents a common mistake in understanding or applying minimalism?",
+      "text": "What do the captured light-and-space quotations support?",
       "options": [
         {
           "id": "a",
-          "text": "Ignoring cultural genealogy of Japanese minimalism, applying the vocabulary in non-Japanese contexts without understanding sources"
+          "text": "A rule that ornament is illegal in every building type"
         },
         {
           "id": "b",
-          "text": "All of the above represent common mistakes in contemporary minimalist practice"
+          "text": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter"
         },
         {
           "id": "c",
-          "text": "Reducing minimalism to aesthetic style ('white walls and wooden floors') while ignoring the philosophical framework of disciplined reduction and material intensity"
+          "text": "A guarantee that all minimalist buildings cost less"
         },
         {
           "id": "d",
-          "text": "Equating minimalism with emptiness or absence—assuming minimal spaces are empty without recognizing that minimalism is active restraint and material intentionality, not passive lack"
+          "text": "A claim that color and texture can never be used"
         }
       ],
       "correct_option_id": "b",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is correct but incomplete; it identifies one mistake only.",
-        "c": "This is correct but incomplete; it identifies one mistake only.",
-        "d": "This is correct but incomplete; it identifies one mistake only.",
-        "correct": "All three: (a) 'Minimalism is active restraint, not passive absence'; (b) Superficially mimicking minimalism without engaging philosophical framework; (c) 'Applying minimalism without understanding...genealogy is appropriation without understanding.' All are documented mistakes.",
-        "takeaway": "All three: (a) 'Minimalism is active restraint, not passive absence'; (b) Superficially mimicking minimalism without engaging philosophical framework; (c) 'Applying minimalism without understanding...genealogy is appropriation without understanding.' All are documented mistakes."
+        "a": "A rule that ornament is illegal in every building type is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter This is the source-safe answer for Minimalism.",
+        "c": "A guarantee that all minimalist buildings cost less is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "A claim that color and texture can never be used is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A reading of architecture where form, light, space, material, and wonder matter more than visual clutter Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-007-11-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c341745cfea693f2fc095820052d2c1360b8a8a8c8dd13f71c59653b633063d3"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:e5ce2146aff77d7b04aac07febde6397210b37bd8e0d4722f25610f88f6254a7",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "b201b7df-8bf0-418a-bc42-78c1be26629c",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "What is the philosophical distinction between minimalism in architecture and mere simplicity or reductivism?",
+      "text": "How should a student evaluate minimalist detailing?",
       "options": [
         {
           "id": "a",
-          "text": "Minimalism is disciplined reduction where every retained element carries maximum significance; simplicity may reflect limited ambition or budget; reductivism eliminates elements until discomfort appears, without philosophical rigor"
+          "text": "Ask whether each joint, edge, opening, and material choice clarifies the spatial idea without hiding functional needs"
         },
         {
           "id": "b",
-          "text": "Minimalism is more complex than simplicity; it adds elements systematically, which contradicts its core principles"
+          "text": "Assume details are irrelevant because the design has few parts"
         },
         {
           "id": "c",
-          "text": "Minimalism and simplicity are identical concepts; both describe buildings with few elements, which oversimplifies their differences"
+          "text": "Use the thinnest detail possible even if it fails"
         },
         {
           "id": "d",
-          "text": "Reductivism is rigorous; minimalism is merely aesthetic preference, lacking depth"
+          "text": "Cover unresolved details with more decorative trim"
         }
       ],
       "correct_option_id": "a",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Minimalism reduces complexity through disciplined constraint, not through addition.",
-        "c": "These carefully; they are not identical despite superficial similarity.",
-        "d": "Minimalism as rigorously philosophical; reductivism is the less rigorous approach.",
-        "correct": "Minimalism asks what is essential and retains only those elements; reductivism asks what can we eliminate and removes until discomfort appears.' Minimalism requires intentional philosophical framework and rigor; simplicity may be accidental or budgetary.",
-        "takeaway": "Minimalism asks what is essential and retains only those elements; reductivism asks what can we eliminate and removes until discomfort appears.' Minimalism requires intentional philosophical framework and rigor; simplicity may be accidental or budgetary."
+        "a": "Ask whether each joint, edge, opening, and material choice clarifies the spatial idea without hiding functional needs This is the source-safe answer for Minimalism.",
+        "b": "Assume details are irrelevant because the design has few parts is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "c": "Use the thinnest detail possible even if it fails is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "Cover unresolved details with more decorative trim is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "Ask whether each joint, edge, opening, and material choice clarifies the spatial idea without hiding functional needs This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Ask whether each joint, edge, opening, and material choice clarifies the spatial idea without hiding functional needs Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-007-11-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c56a5af710da78f72e66b8b2af08875b692fe115ded63f4462603824af06d394"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:c07eae60e8fcf0be3934cddc07ab976eb31e7f0ea4e2a82c829281ec34f1bcdb",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "4e5cba01-120f-4256-92ae-ca75e502d013",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "How do Japanese aesthetic principles (*ma*, *shibui*, *wabi-sabi*) establish the philosophical foundation for minimalism, and why do these principles challenge Western architectural values?",
+      "text": "Which answer is the weakest reading of Miesian discipline in this pass?",
       "options": [
         {
           "id": "a",
-          "text": "These principles advocate elimination of all form; Western values reject this approach entirely, as they prioritize structural expression and material presence"
+          "text": "A concern for disciplined reduction"
         },
         {
           "id": "b",
-          "text": "These principles apply only to ornamental details; they cannot inform building form or spatial organization, which is a misconception of their broader philosophical implications"
+          "text": "A focus on clarity and restraint"
         },
         {
           "id": "c",
-          "text": "These principles value what is absent, understated, and imperfect; they challenge Western emphasis on abundance, ostentation, and perfection by claiming significance emerges through restraint and incompleteness"
+          "text": "A slogan that excuses copying a bare glass box without studying proportion, structure, light, or use"
         },
         {
           "id": "d",
-          "text": "These principles are purely decorative; they have no philosophical content relevant to architectural theory, which overlooks their deep cultural significance"
+          "text": "A warning that fewer elements make each decision more visible"
         }
       ],
       "correct_option_id": "c",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "These principles do not eliminate form; they establish that form is most powerful when disciplined and restrained.",
-        "b": "These principles inform comprehensive architectural approach—spatial organization, material expression, temporal experience—not only ornamental details.",
-        "d": "These as philosophical frameworks, not decoration. They profoundly inform minimalist architecture's spatial, material, and phenomenological approach.",
-        "correct": "These principles precisely: *ma* values negative space, *shibui* values understated beauty, *wabi-sabi* embraces imperfection and impermanence. These fundamentally challenge Western assumptions that significance requires abundance, perfection, and explicit articulation.",
-        "takeaway": "These fundamentally challenge Western assumptions that significance requires abundance, perfection, and explicit articulation."
+        "a": "A concern for disciplined reduction is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "A focus on clarity and restraint is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "c": "A slogan that excuses copying a bare glass box without studying proportion, structure, light, or use This is the source-safe answer for Minimalism.",
+        "d": "A warning that fewer elements make each decision more visible is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "A slogan that excuses copying a bare glass box without studying proportion, structure, light, or use This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A slogan that excuses copying a bare glass box without studying proportion, structure, light, or use Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-007-11-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9401a81508550d747fae27d90b44821942d0b3b896745e257734705ab0dfcdda"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:011cef100d59c347657bfb9cf77c58e419da6516dbcbd7071ecb4c9672dd4300",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "7aea0026-9d5e-44de-878e-274ded976126",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "How does the treatment of minimalism reveal the relationship between aesthetic restraint and philosophical rigor in architectural practice?",
+      "text": "Why does the article keep user needs inside the minimalist test?",
       "options": [
         {
           "id": "a",
-          "text": "Aesthetic restraint and philosophical rigor are unrelated; buildings can be visually minimal without theoretical substance, which may lead to a lack of depth in design"
+          "text": "Because all user needs should be removed for purity"
         },
         {
           "id": "b",
-          "text": "Aesthetic restraint and philosophical rigor are inverse; the more rigorous the philosophy, the more elaborate the formal expression, contradicting the minimalist ethos"
+          "text": "Because minimalism is only a furniture style"
         },
         {
           "id": "c",
-          "text": "Philosophical frameworks are unnecessary; minimalist aesthetics speak for themselves regardless of designer intention or theoretical articulation, potentially leading to superficial interpretations"
+          "text": "Because comfort is never relevant to theory questions"
         },
         {
           "id": "d",
-          "text": "Aesthetic restraint without philosophical framework is mere stylistic fashion; genuine minimalism requires disciplined theoretical commitment about what is essential, why certain elements are retained, and what phenomenological goals guide reduction"
+          "text": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning"
         }
       ],
       "correct_option_id": "d",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory demonstrates these are intimately related; minimalism is defined by the philosophical framework undergirding aesthetic choices.",
-        "b": "Rigor and restraint as mutually reinforcing, not inverse.",
-        "c": "Intention and theoretical rigor as essential; aesthetic appearance without philosophical content is not minimalism.",
-        "correct": "Minimalism is rigorous disciplinary framework...every element justified through essential function or philosophical necessity.' Mere visual simplicity divorced from intention is reductivism or stylistic fashion, not minimalism. True minimalism couples restrained aesthetics with coherent theoretical position.",
-        "takeaway": "True minimalism couples restrained aesthetics with coherent theoretical position."
+        "a": "Because all user needs should be removed for purity is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "Because minimalism is only a furniture style is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "c": "Because comfort is never relevant to theory questions is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning This is the source-safe answer for Minimalism.",
+        "correct": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": "architectural theory demonstrates these are intimately related; minimalism is defined by the philosophical framework undergirding aesthetic choices. Rigor and restraint as mutually reinforcing, not inverse. Intention and theoretical rigor as essential; aesthetic appearance without philosophical content is not minimalism. Minimalism is rigorous disciplinary framework...every element justified through essential function or philosophical necessity.' Mere visual simplicity divorced from intention is reductivism or stylistic fashion, not minimalism. True minimalism couples restrained aesthetics with coherent theoretical position. True minimalism couples restrained aesthetics with coherent theoretical position.",
-      "code_citation": null,
+      "explanation": "Because reduction is only successful when the remaining design still supports use, comfort, safety, and meaning Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-007-11-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T14:48:26.293622+00:00",
-      "content_hash": "sha256:1921fc8e789fd83a43683bbc2a7899252cdb80a7ad545504a302f4c0f86c2904"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:bc6da6cb0ec6e9800add7fe4ac0202f7dab91cc712c3d2a1030724dd07235459",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "9386979d-876a-40b9-94b8-182a2e5f86f3",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "A designer removes all interior walls, all ornament, and all detail from a building, leaving only bare structure and floor. Is this minimalism, and why or why not?",
+      "text": "In the Makati chapel-gallery scenario, what is the best value-engineering response?",
       "options": [
         {
           "id": "a",
-          "text": "This is definitely minimalism; the complete absence of elements demonstrates perfect restraint, aligning with minimalist principles"
+          "text": "Delete all seating, shading, and accessibility features to make the room look empty"
         },
         {
           "id": "b",
-          "text": "This cannot be minimalism because bare structure and floor are themselves 'elements'; true minimalism requires complete emptiness, which is rarely achievable"
+          "text": "Add more decorative features because the budget has been reduced"
         },
         {
           "id": "c",
-          "text": "This is minimalism only if the designer intended it; intention determines categorization regardless of actual result, which is subjective"
+          "text": "Replace spatial clarity with a branded minimalist color palette"
         },
         {
           "id": "d",
-          "text": "Not necessarily minimalism; removal without intent is reductivism. Minimalism requires that retained elements are essential and carry significance; stripping everything may produce austere discomfort rather than phenomenological intensity"
+          "text": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures"
         }
       ],
       "correct_option_id": "d",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Minimalism is not maximal emptiness; it is intentional restraint where what remains matters.",
-        "b": "Retained elements can include structure if they carry phenomenological significance; minimalism is not complete emptiness but disciplined reduction.",
-        "c": "Intent matters, but intention must be coupled with result—actual phenomenological intensity and significance. Stated intent without achieved meaning is not minimalism.",
-        "correct": "Minimalism is disciplined reduction where every retained element carries maximum significance.' Blind removal creates reductivism—potential discomfort without significance. Minimalism requires philosophical intention about what is essential; bare-bones removal without that framework is not minimalist.",
-        "takeaway": "Minimalism requires philosophical intention about what is essential; bare-bones removal without that framework is not minimalist."
+        "a": "Delete all seating, shading, and accessibility features to make the room look empty is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "Add more decorative features because the budget has been reduced is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "c": "Replace spatial clarity with a branded minimalist color palette is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures This is the source-safe answer for Minimalism.",
+        "correct": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": "Minimalism is not maximal emptiness; it is intentional restraint where what remains matters. Retained elements can include structure if they carry phenomenological significance; minimalism is not complete emptiness but disciplined reduction. Intent matters, but intention must be coupled with result—actual phenomenological intensity and significance. Stated intent without achieved meaning is not minimalism. Minimalism is disciplined reduction where every retained element carries maximum significance.' Blind removal creates reductivism—potential discomfort without significance. Minimalism requires philosophical intention about what is essential; bare-bones removal without that framework is not minimalist. Minimalism requires philosophical intention about what is essential; bare-bones removal without that framework is not minimalist.",
-      "code_citation": null,
+      "explanation": "Protect proportion, daylight, quiet circulation, and key material decisions while removing weak or redundant gestures Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-007-11-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T14:48:26.414348+00:00",
-      "content_hash": "sha256:cceb7a9b20909da52bff67ac56e0a6712ed09cdec81fc7d9d56bf578741fe8ce"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:2c4570e6e23d3fb5a5cec119238d07bc69b17a65998947023d0a9e1a222423ed",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "07287ae5-9228-468b-b89b-236714a7095e",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "Compare Tadao Ando's minimalism (Church on the Water, Water Temple) and John Pawson's minimalism (Calvin Klein Flagship Store). How do their approaches to materiality differ philosophically?",
+      "text": "Which claim should be avoided unless separately sourced?",
       "options": [
         {
           "id": "a",
-          "text": "Ando's minimalism is authentic; Pawson's is superficial styling, lacking depth in material exploration"
+          "text": "Minimalism can use light and space as primary design materials"
         },
         {
           "id": "b",
-          "text": "Ando exposes concrete weathering and construction marks as aesthetic; Pawson finishes surfaces to near-perfection with refined materials. Both achieve phenomenological intensity through restraint but emphasize different aesthetic values: Ando's asceticism vs. Pawson's refinement"
+          "text": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer"
         },
         {
           "id": "c",
-          "text": "Pawson's approach is more minimalist because his spaces are emptier than Ando's, focusing on the absence of objects"
+          "text": "Minimalism makes each retained detail more consequential"
         },
         {
           "id": "d",
-          "text": "Ando uses only raw concrete; Pawson uses only white plaster—the materials are entirely different, reflecting distinct philosophical approaches"
+          "text": "Minimalism depends on restraint rather than visual noise"
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Both as theoretically rigorous minimalism; authenticity is not the differentiator.",
-        "c": "Intensity of emptiness is not the measure; both achieve phenomenological intensity through disciplined material expression.",
-        "d": "Both architects work with multiple materials; Ando includes timber and water elements alongside concrete.",
-        "correct": "Ando exposes concrete weathering; Pawson finishes surfaces to near-perfection.' Yet both are minimalist because both achieve 'phenomenological intensity through carefully selected materials' and restraint. They differ in aesthetic emphasis (austerity vs. refinement) while sharing minimalist discipline.",
-        "takeaway": "refinement) while sharing minimalist discipline."
+        "a": "Minimalism can use light and space as primary design materials is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer This is the source-safe answer for Minimalism.",
+        "c": "Minimalism makes each retained detail more consequential is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "d": "Minimalism depends on restraint rather than visual noise is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A precise building-by-building history of every minimalist movement and architect not captured in the local source layer Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-007-11-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:496fc7252268a06c6bd6c167968e8be05e09080cdf4c39e65c579b313810fa14"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:7621644c31f84730383771e2da572a416b39a406e74640899bfa44f6f92098b1",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     },
     {
       "question_id": "4cba7297-0296-407d-a242-01d22e822e31",
       "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
       "topic_id": "225fb71c-1fae-46ba-b93e-6a9ab07c71b7",
-      "text": "Minimalist design commands high prices and is marketed as luxury lifestyle aesthetic. Does this alignment with high-end consumption resolve or contradict minimalism's philosophical goals?",
+      "text": "What is the practical LEA takeaway from minimalism?",
       "options": [
         {
           "id": "a",
-          "text": "Price and consumption patterns are irrelevant to minimalist philosophy; affordability does not determine whether design is genuinely minimalist, which is a common misconception"
+          "text": "Fewer elements automatically mean better architecture"
         },
         {
           "id": "b",
-          "text": "This alignment is entirely contradictory; minimalism and luxury consumption are philosophically incompatible; any designer selling minimalist design is betraying the movement"
+          "text": "Minimalism means the cheapest possible specification"
         },
         {
           "id": "c",
-          "text": "Tension exists; minimalism's aesthetic has been commodified as luxury brand, potentially contradicting minimalism's potential critique of consumerism; true minimalism might resist consumerism, yet contemporary practice often fails to achieve this philosophical consistency"
+          "text": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use"
         },
         {
           "id": "d",
-          "text": "The alignment is perfect; minimalism naturally appeals to wealthy consumers with refined taste; no tension exists, which oversimplifies the philosophical debate"
+          "text": "Minimalism replaces site, program, and construction judgment"
         }
       ],
       "correct_option_id": "c",
@@ -501,14 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory suggests economic and consumption context matters philosophically; minimalism operating as luxury consumption raises authentic questions about philosophical coherence.",
-        "b": "While tension is real, architectural theory does not claim incompatibility is total or that consumption contradicts all minimalist practice. The tension is ongoing and genuine but not necessarily absolute.",
-        "d": "This as significant tension, not natural alignment.",
-        "correct": "This explicitly: 'Minimalism's aesthetic has been commodified as luxury brand...True minimalism might resist consumerism; contemporary practice often fails to achieve this philosophical consistency.' There is real tension between minimalism's potential ethical critique of excess and its commodification as premium lifestyle.",
-        "takeaway": "This explicitly: 'Minimalism's aesthetic has been commodified as luxury brand...True minimalism might resist consumerism; contemporary practice often fails to achieve this philosophical consistency.' There is real tension between minimalism's potential ethical critique of excess and its commodification as premium lifestyle."
+        "a": "Fewer elements automatically mean better architecture is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "b": "Minimalism means the cheapest possible specification is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "c": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use This is the source-safe answer for Minimalism.",
+        "d": "Minimalism replaces site, program, and construction judgment is a distractor because it steps outside the Batch 136 source-safe claim boundary for Minimalism.",
+        "correct": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use This stays inside the Batch 136 local source map for Minimalism.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Minimalism; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Fewer elements increase the responsibility of proportion, light, material, detail, and fit to use Supported by Batch 136 local source artifacts for Minimalism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -521,8 +568,11 @@
       "model_id": "ALE-THEO-007-11-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f0b8e32fd097478980009775c20473e8bc5554ba2d8d5de4325018b635718809"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:5b94b5b87637035199727b7f3c96ffeea7cbffb346a79075a430aaf1518e7b4b",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-11-core-concept.source-capture.md#sha256:d221a8bb6abc57cd3324f5c559e4b036b9ceed5f000f0fddf483e3471b7e37d0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-11-core-concept.refined.md#sha256:e2bfdc3ea77d307f6719d7184288c32125cc7d6bc4bda2c3e49f4826cc1c8ae7",
+      "source_notes": "Batch 136 treats minimalism as disciplined reduction: fewer elements, clearer light, stronger proportion, and material restraint. The local source support comes from modern theory quotations around light, space, materials, wonder, Miesian discipline, Tadao Ando, John Pawson, and TOA 5 modernist references."
     }
   ]
 }

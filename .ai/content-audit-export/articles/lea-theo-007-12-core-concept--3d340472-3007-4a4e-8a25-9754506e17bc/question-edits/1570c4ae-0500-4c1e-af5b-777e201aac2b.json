@@ -1,0 +1,64 @@
+{
+  "question_id": "1570c4ae-0500-4c1e-af5b-777e201aac2b",
+  "baseline_hash": "sha256:8d0ca6cf9e29a95d69f9b1c2a1b5b5a5bebed0e77e36eeae5b4a83863c6cfea9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for High-Tech Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+    "parent_article_slug": "lea-theo-007-12-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-12-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - High-Tech Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md",
+        "sha256": "sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-12-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - High-Tech Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md",
+        "sha256": "sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which proposal best fits high-tech architecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sealed decorative shell with hidden systems and no maintenance logic"
+      },
+      {
+        "id": "b",
+        "text": "A historic replica with no technological expression"
+      },
+      {
+        "id": "c",
+        "text": "A blank minimalist room where all systems are concealed as a rule"
+      },
+      {
+        "id": "d",
+        "text": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "A sealed decorative shell with hidden systems and no maintenance logic is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+      "b": "A historic replica with no technological expression is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+      "c": "A blank minimalist room where all systems are concealed as a rule is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+      "d": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional This is the source-safe answer for High-Tech Architecture.",
+      "correct": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional This stays inside the Batch 136 local source map for High-Tech Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
+    },
+    "explanation": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
+  },
+  "batch_question_template_index": 3
+}

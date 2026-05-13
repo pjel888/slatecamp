@@ -1,6 +1,6 @@
 {
   "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
-  "title": "Adaptive reuse",
+  "title": "Adaptive Reuse",
   "slug": "lea-theo-007-14-core-concept",
   "subject_label": "Theory of Architecture",
   "difficulty_label": null,
@@ -11,25 +11,48 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:08.667678+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:56:32.611782+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:ae0c475725c64fb18b0f070ca7e3260a7f57857e20194d04dca31b96d8826f32",
-  "original_content_hash": "sha256:ae0c475725c64fb18b0f070ca7e3260a7f57857e20194d04dca31b96d8826f32",
-  "normalized_content_hash": "sha256:ae0c475725c64fb18b0f070ca7e3260a7f57857e20194d04dca31b96d8826f32",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-13T23:17:50.015Z",
+  "updated_by": "codex-local-first-batch-136",
+  "updated_note": "Source-audited local-first Batch 136 content and linked-question replacement; claims cite local captured source artifacts.",
+  "content_hash": "sha256:d1102bc5b2099e9b782abd66014a30b7ecbc7a53d96b54f6548d30f245fdbf72",
+  "original_content_hash": "sha256:d1102bc5b2099e9b782abd66014a30b7ecbc7a53d96b54f6548d30f245fdbf72",
+  "normalized_content_hash": "sha256:69ca1156005346fd2f911932df71c5e33c37ed7d0102144dd23354448d4f34ed",
+  "candidate_content_hash": "sha256:69ca1156005346fd2f911932df71c5e33c37ed7d0102144dd23354448d4f34ed",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:ed941f86213a199803ca0b6c4ab54af915ba7fbbe8190aff25c8f9afdb24abbe",
-  "sources_hash": "sha256:975f6d5414d40861e8b845096c03a5367cfa002f9ea5e95c2e4ef77139c4600c",
+  "linked_questions_hash": "sha256:075a36c0bc91d203fb1be5d3c54e7e2581ee6c23509523022dd135d0f5186a4b",
+  "sources_hash": "sha256:f2203e6c8dbbe17056612edbeea41213d2cef640941b02ee90cfc0bb0de05a9c",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:01:58.656Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
   "export_version": "content-roundtrip-v1",
   "source_table": "wiki_articles",
-  "source_count": 4,
+  "source_count": 2,
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "batch-136",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+      "raw_sha256": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+      "refined_sha256": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (Brazil) - Richard J. Williams.pdf",
+      "raw_sha256": "sha256:8499aca87680f75ec1c81b3ab27b099bb62b205fda2710fdc58c90fe5018c06f",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (Brazil) - Richard J. Williams.md",
+      "refined_sha256": "sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e"
+    }
+  ],
+  "blocked_residuals_logged": [
+    "lea-theo-007-02",
+    "lea-theo-007-10"
+  ]
 }

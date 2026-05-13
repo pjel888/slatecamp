@@ -1,6 +1,6 @@
 {
   "article_id": "83e55961-2180-4a29-8c83-76039225db36",
-  "title": "Sustainable architecture",
+  "title": "Sustainable Architecture",
   "slug": "lea-theo-007-09-core-concept",
   "subject_label": "Theory of Architecture",
   "difficulty_label": null,
@@ -11,25 +11,42 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:08.667678+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:46:28.708519+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:7d63e629e1203d1dc40c8f7d95809f896ae4affc3ce997c1754925f005264440",
-  "original_content_hash": "sha256:7d63e629e1203d1dc40c8f7d95809f896ae4affc3ce997c1754925f005264440",
-  "normalized_content_hash": "sha256:7d63e629e1203d1dc40c8f7d95809f896ae4affc3ce997c1754925f005264440",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-13T23:17:50.015Z",
+  "updated_by": "codex-local-first-batch-136",
+  "updated_note": "Source-audited local-first Batch 136 content and linked-question replacement; claims cite local captured source artifacts.",
+  "content_hash": "sha256:7d15dd4ca61df6fdcce4be543e351e17c6e363a754df6392dbd888bae9aee53e",
+  "original_content_hash": "sha256:7d15dd4ca61df6fdcce4be543e351e17c6e363a754df6392dbd888bae9aee53e",
+  "normalized_content_hash": "sha256:39a8aaeba5adc84daecb005b924b4ee41b60a5762b4ac842883db7273aa9310f",
+  "candidate_content_hash": "sha256:39a8aaeba5adc84daecb005b924b4ee41b60a5762b4ac842883db7273aa9310f",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:db46affeb339806640175a038812fcf07ce084997e9aa0b90f10ff1893313364",
-  "sources_hash": "sha256:6ab0172ec2ed83c9ade9e8e88fa0b64ea549de2430f8b309e51f654c4d15ca3e",
+  "linked_questions_hash": "sha256:937b00d82e4b1c09e3c352ea0cc7f5bb252d3df363bb6118a89dc85f9547a4da",
+  "sources_hash": "sha256:cf5a70691062d1ae4ac3a0534f221b600a9d007411a062bc0cae5005d4fc3f64",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:56.838Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
   "export_version": "content-roundtrip-v1",
   "source_table": "wiki_articles",
-  "source_count": 4,
+  "source_count": 2,
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "batch-136",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+    }
+  ],
+  "blocked_residuals_logged": [
+    "lea-theo-007-02",
+    "lea-theo-007-10"
+  ]
 }

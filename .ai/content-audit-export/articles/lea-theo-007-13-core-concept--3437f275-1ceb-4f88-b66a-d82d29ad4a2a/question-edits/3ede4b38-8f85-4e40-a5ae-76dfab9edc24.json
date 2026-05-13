@@ -1,0 +1,64 @@
+{
+  "question_id": "3ede4b38-8f85-4e40-a5ae-76dfab9edc24",
+  "baseline_hash": "sha256:9775fa5c5b84bef7f1d0e0ffefdf0185764dff458f3677a2492044c06efe39ee",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Vernacular Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+    "parent_article_slug": "lea-theo-007-13-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Vernacular Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+        "sha256": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Vernacular Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md",
+        "sha256": "sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How should trial-and-error knowledge be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a reason to avoid all technical review"
+      },
+      {
+        "id": "b",
+        "text": "As proof that old forms are always superior"
+      },
+      {
+        "id": "c",
+        "text": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs"
+      },
+      {
+        "id": "d",
+        "text": "As a decorative story unrelated to planning"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "As a reason to avoid all technical review is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "b": "As proof that old forms are always superior is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "c": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs This is the source-safe answer for Vernacular Architecture.",
+      "d": "As a decorative story unrelated to planning is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "correct": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs This stays inside the Batch 136 local source map for Vernacular Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+    },
+    "explanation": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+  },
+  "batch_question_template_index": 4
+}

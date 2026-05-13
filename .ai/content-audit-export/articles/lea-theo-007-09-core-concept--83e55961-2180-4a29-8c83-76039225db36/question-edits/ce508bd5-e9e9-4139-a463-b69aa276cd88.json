@@ -1,0 +1,64 @@
+{
+  "question_id": "ce508bd5-e9e9-4139-a463-b69aa276cd88",
+  "baseline_hash": "sha256:31a46f894acf46d0280587518a3fe6c118b6dadeedf63da896f8ae096c0f151d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Sustainable Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "83e55961-2180-4a29-8c83-76039225db36",
+    "parent_article_slug": "lea-theo-007-09-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Sustainable Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+        "sha256": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Sustainable Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+        "sha256": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why does the article treat shaded, operable windows as a sustainability strategy rather than only an aesthetic detail?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They guarantee a certified green rating without other documentation"
+      },
+      {
+        "id": "b",
+        "text": "They make every wall thermally heavy regardless of climate"
+      },
+      {
+        "id": "c",
+        "text": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions"
+      },
+      {
+        "id": "d",
+        "text": "They remove the need to study wind, sun, or room use"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "They guarantee a certified green rating without other documentation is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "b": "They make every wall thermally heavy regardless of climate is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "c": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions This is the source-safe answer for Sustainable Architecture.",
+      "d": "They remove the need to study wind, sun, or room use is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "correct": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions This stays inside the Batch 136 local source map for Sustainable Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+    },
+    "explanation": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+  },
+  "batch_question_template_index": 2
+}

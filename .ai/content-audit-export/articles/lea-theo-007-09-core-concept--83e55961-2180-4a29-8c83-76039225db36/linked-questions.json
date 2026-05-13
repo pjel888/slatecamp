@@ -1,30 +1,30 @@
 {
   "article_id": "83e55961-2180-4a29-8c83-76039225db36",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:db46affeb339806640175a038812fcf07ce084997e9aa0b90f10ff1893313364",
+  "linked_questions_hash": "sha256:937b00d82e4b1c09e3c352ea0cc7f5bb252d3df363bb6118a89dc85f9547a4da",
   "question_count": 10,
   "questions": [
     {
       "question_id": "eae60e75-55c4-499d-88c3-689449e1f32e",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "What is 'greenwashing' in sustainable architecture, and why does identify certification systems as potential enablers of this practice?",
+      "text": "In the Batch 136 source-safe framing, what is the strongest first move for sustainable architecture in a hot-humid Philippine setting?",
       "options": [
         {
           "id": "a",
-          "text": "Greenwashing is the preservation of natural ecosystems; certification systems encourage unnecessary environmental interventions that disrupt existing ecological balance"
+          "text": "Treating certification names or point totals as proof when the local capture does not support them"
         },
         {
           "id": "b",
-          "text": "Greenwashing is the use of green color in building design; certification systems reduce greenwashing by banning green facades and vegetated exterior surfaces"
+          "text": "Adding a visible style cue while ignoring the performance or spatial claim being tested"
         },
         {
           "id": "c",
-          "text": "Greenwashing is claiming sustainability through superficial measures while ignoring systemic environmental impact; certification systems can enable greenwashing if point-systems incentivize 'easy' credits (recycled content labeling) over systemic performance optimization"
+          "text": "Reduce cooling demand through orientation, shaded openings, ventilation paths, and climate-responsive buffers before adding active systems"
         },
         {
           "id": "d",
-          "text": "Greenwashing is legitimate marketing of genuine sustainability; certification systems prevent builders from communicating environmental benefits accurately to prospective buyers"
+          "text": "Assuming advanced systems automatically solve the design problem without passive or spatial judgment"
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Greenwashing does not concern ecosystem preservation; it concerns false environmental claims.",
-        "b": "Greenwashing is not color-related; green facades can be genuinely beneficial or cosmetic depending on systemic integration.",
-        "d": "Greenwashing is deceptive practice, not legitimate marketing; certification systems are designed to prevent it, though imperfectly if point-systems enable credit-stacking.",
-        "correct": "greenwashing as buildings claiming sustainability through visible features (rooftop gardens, rainwater collection) while remaining thermally inefficient and mechanically complex. Certification systems enable this through point-stacking: a building earning 50 of 100 possible points boasts 'LEED certification' without acknowledging 50% of possible improvements were omitted.",
-        "takeaway": "Certification systems enable this through point-stacking: a building earning 50 of 100 possible points boasts 'LEED certification' without acknowledging 50% of possible improvements were omitted."
+        "a": "Treating certification names or point totals as proof when the local capture does not support them is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "Adding a visible style cue while ignoring the performance or spatial claim being tested is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "Reduce cooling demand through orientation, shaded openings, ventilation paths, and climate-responsive buffers before adding active systems This is the source-safe answer for Sustainable Architecture.",
+        "d": "Assuming advanced systems automatically solve the design problem without passive or spatial judgment is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "correct": "Reduce cooling demand through orientation, shaded openings, ventilation paths, and climate-responsive buffers before adding active systems This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": "Greenwashing does not concern ecosystem preservation; it concerns false environmental claims. Greenwashing is not color-related; green facades can be genuinely beneficial or cosmetic depending on systemic integration. Greenwashing is deceptive practice, not legitimate marketing; certification systems are designed to prevent it, though imperfectly if point-systems enable credit-stacking. greenwashing as buildings claiming sustainability through visible features (rooftop gardens, rainwater collection) while remaining thermally inefficient and mechanically complex. Certification systems enable this through point-stacking: a building earning 50 of 100 possible points boasts 'LEED certification' without acknowledging 50% of possible improvements were omitted. Certification systems enable this through point-stacking: a building earning 50 of 100 possible points boasts 'LEED certification' without acknowledging 50% of possible improvements were omitted.",
-      "code_citation": null,
+      "explanation": "Reduce cooling demand through orientation, shaded openings, ventilation paths, and climate-responsive buffers before adding active systems Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-007-09-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-05-06T13:14:18.310951+00:00",
-      "content_hash": "sha256:45403b880be6933f8caa5ede9cd8f76c15049475c2889ec5e331b6caad5a4d46"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:683c145dd230eff6327015ff9e9f0e48ebca7ab216845d65f13870bc7eea9a87",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "ce508bd5-e9e9-4139-a463-b69aa276cd88",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "What are the four key passive design strategies appropriate for Philippines tropical climate, and why are they particularly effective in this context?",
+      "text": "Why does the article treat shaded, operable windows as a sustainability strategy rather than only an aesthetic detail?",
       "options": [
         {
           "id": "a",
-          "text": "Pitched roofs for snow shedding, operable windows for heating, ground-source heat pumps, triple glazing for insulation, which are more suited to cold climates"
+          "text": "They guarantee a certified green rating without other documentation"
         },
         {
           "id": "b",
-          "text": "Reflective roofing materials, passive solar orientation toward equator, internal courtyards, minimal fenestration, which are effective in reducing heat gain"
+          "text": "They make every wall thermally heavy regardless of climate"
         },
         {
           "id": "c",
-          "text": "Deep overhangs/shading (prevent solar gain), natural ventilation (trade winds enable cross-flow), water integration (monsoon abundance), vernacular integration (century-developed climate responses)"
+          "text": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions"
         },
         {
           "id": "d",
-          "text": "Massive thermal mass (moderate temperature swings), large south-facing windows (winter solar gain), sealed envelopes (prevent heat loss), mechanical ventilation (control humidity), which are more applicable to temperate climates"
+          "text": "They remove the need to study wind, sun, or room use"
         }
       ],
       "correct_option_id": "c",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Snow shedding and heating strategies are irrelevant to tropical climate; triple glazing addresses cold-climate heat loss, not tropical heat gain.",
-        "b": "While some strategies (reflective roofing, courtyards) are appropriate, architectural theory specifically emphasizes overhangs (more critical than reflectance), ventilation, and water management as primary tropical responses.",
-        "d": "These strategies are appropriate for cold or temperate climates, not tropics. Large south-facing windows increase solar gain (detrimental in Manila); massive thermal mass is less necessary where temperature swings are modest.",
-        "correct": "architectural theory specifically identifies these four strategies for Philippine tropical context: (1) deep overhangs prevent high solar radiation (5–6 kWh/m²/day), (2) natural ventilation exploits consistent trade winds, (3) water management addresses abundant monsoon rains (1,600+ mm/year), (4) vernacular integration applies centuries-proven strategies.",
-        "takeaway": "architectural theory specifically identifies these four strategies for Philippine tropical context: (1) deep overhangs prevent high solar radiation (5–6 kWh/m²/day), (2) natural ventilation exploits consistent trade winds, (3) water management addresses abundant monsoon rains (1,600+ mm/year), (4) vernacular integration applies centuries-proven strategies."
+        "a": "They guarantee a certified green rating without other documentation is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "They make every wall thermally heavy regardless of climate is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions This is the source-safe answer for Sustainable Architecture.",
+        "d": "They remove the need to study wind, sun, or room use is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "correct": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": "Snow shedding and heating strategies are irrelevant to tropical climate; triple glazing addresses cold-climate heat loss, not tropical heat gain. While some strategies (reflective roofing, courtyards) are appropriate, architectural theory specifically emphasizes overhangs (more critical than reflectance), ventilation, and water management as primary tropical responses. These strategies are appropriate for cold or temperate climates, not tropics. Large south-facing windows increase solar gain (detrimental in Manila); massive thermal mass is less necessary where temperature swings are modest. architectural theory specifically identifies these four strategies for Philippine tropical context: (1) deep overhangs prevent high solar radiation (5–6 kWh/m²/day), (2) natural ventilation exploits consistent trade winds, (3) water management addresses abundant monsoon rains (1,600+ mm/year), (4) vernacular integration applies centuries-proven strategies. architectural theory specifically identifies these four strategies for Philippine tropical context: (1) deep overhangs prevent high solar radiation (5–6 kWh/m²/day), (2) natural ventilation exploits consistent trade winds, (3) water management addresses abundant monsoon rains (1,600+ mm/year), (4) vernacular integration applies centuries-proven strategies.",
-      "code_citation": null,
+      "explanation": "They support airflow while reducing direct solar heat gain, which lowers cooling load in tropical conditions Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-007-09-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-05-06T13:14:18.476058+00:00",
-      "content_hash": "sha256:31a46f894acf46d0280587518a3fe6c118b6dadeedf63da896f8ae096c0f151d"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:606fbd2b0b330530d1b2b4c1a6227523cbb4c538205d27e02694a0f34498d93b",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "207bd046-0752-472f-84f5-3c1b91cbbecb",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "How does the treatment of sustainability certification systems reveal a deeper tension between measurable environmental standardization and the complexity of genuine environmental impact?",
+      "text": "Which answer best matches the local source support for passive design?",
       "options": [
         {
           "id": "a",
-          "text": "Certification systems are entirely inadequate; buildings cannot be genuinely sustainable if they are certified, since certification itself indicates superficial compliance and does not account for long-term environmental effects"
+          "text": "Seal the building and compensate with larger air-conditioning equipment"
         },
         {
           "id": "b",
-          "text": "Certification systems reduce complex environmental reality to point-checklist formats, enabling greenwashing where buildings achieve certification through credit-stacking while ignoring systemic performance; genuine sustainability requires lifecycle assessment beyond certification framework"
+          "text": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing"
         },
         {
           "id": "c",
-          "text": "The tension is between regulation-based compliance and voluntary sustainability; certification systems resolve this by making sustainability mandatory, thus bridging the gap between voluntary and enforced standards"
+          "text": "Use glass walls first and add plants later as the sustainability feature"
         },
         {
           "id": "d",
-          "text": "Certification systems perfectly measure environmental impact; any building receiving certification has achieved genuine sustainability, as they are rigorously evaluated against all possible environmental criteria"
+          "text": "Select any imported green product and assume the building is sustainable"
         }
       ],
       "correct_option_id": "b",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory does not claim certification is useless; rather it is 'necessary but insufficient.' Certification provides valuable standardization while obscuring complexity.",
-        "c": "Tension between complexity and measurable standardization, not between regulation and voluntarism.",
-        "d": "What does this tell you about actual environmental performance?' Certification may not correlate with actual performance.",
-        "correct": "Certification systems...can incentivize easy credits over systemic performance optimization; can subsidize greenification of environmentally problematic building types.' Certifications are 'design-stage projections'—many underperform operationally. The deeper issue: environmental reality is complex (embodied + operational carbon, grid intensity, lifecycle duration); certification systems reduce this to point-systems and marketing categories.",
-        "takeaway": "The deeper issue: environmental reality is complex (embodied + operational carbon, grid intensity, lifecycle duration); certification systems reduce this to point-systems and marketing categories."
+        "a": "Seal the building and compensate with larger air-conditioning equipment is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing This is the source-safe answer for Sustainable Architecture.",
+        "c": "Use glass walls first and add plants later as the sustainability feature is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "d": "Select any imported green product and assume the building is sustainable is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "correct": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": "architectural theory does not claim certification is useless; rather it is 'necessary but insufficient.' Certification provides valuable standardization while obscuring complexity. Tension between complexity and measurable standardization, not between regulation and voluntarism. What does this tell you about actual environmental performance?' Certification may not correlate with actual performance. Certification systems...can incentivize easy credits over systemic performance optimization; can subsidize greenification of environmentally problematic building types.' Certifications are 'design-stage projections'—many underperform operationally. The deeper issue: environmental reality is complex (embodied + operational carbon, grid intensity, lifecycle duration); certification systems reduce this to point-systems and marketing categories. The deeper issue: environmental reality is complex (embodied + operational carbon, grid intensity, lifecycle duration); certification systems reduce this to point-systems and marketing categories.",
-      "code_citation": null,
+      "explanation": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-007-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-05-06T13:14:17.899512+00:00",
-      "content_hash": "sha256:8799aa714267883157b5a3acedc9089505cf644bea6048218c17a040342b4faa"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:087fcd7e558a366bdb2b3e2fe2c9e0ce01e320372f815fc32f5636a5b301c07b",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "642a1b89-7916-42c9-9eef-ad041a9940db",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "Compare the theoretical difference between 'net-zero energy' and emerging 'net-zero carbon' standards. Why does this distinction matter for genuine sustainability?",
+      "text": "How should a student handle LEED, BERDE, or Passive House claims in this Batch 136 article?",
       "options": [
         {
           "id": "a",
-          "text": "Net-zero energy is appropriate for buildings; net-zero carbon is only applicable to urban districts or regional scales, which is a common misconception in sustainability discussions"
+          "text": "Assume all sustainable buildings automatically meet every rating system"
         },
         {
           "id": "b",
-          "text": "Net-zero carbon is merely net-zero energy with different terminology; the distinction is semantic, not substantive, which oversimplifies the complexity of sustainability standards"
+          "text": "Replace tropical passive-design evidence with brand names"
         },
         {
           "id": "c",
-          "text": "Net-zero carbon requires more renewable energy production than net-zero energy; the standards differ only in degree, not in kind, which is a misunderstanding of their fundamental differences"
+          "text": "Use certification acronyms as proof even when the source layer is silent"
         },
         {
           "id": "d",
-          "text": "Net-zero energy counts energy production regardless of grid carbon intensity; net-zero carbon accounts for grid carbon emissions. A building producing net-zero energy through rooftop solar may have higher total carbon than a grid-supplied building if grid is renewable-heavy"
+          "text": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold"
         }
       ],
       "correct_option_id": "d",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Both standards apply to individual buildings; the scale distinction is not point.",
-        "b": "These are substantively different: net-zero energy is agnostic to grid carbon; net-zero carbon explicitly integrates it.",
-        "c": "The distinction is not degree but methodology: energy quantity vs. carbon accounting.",
-        "correct": "This critical distinction: net-zero energy focuses on energy quantity (production = consumption) without accounting for grid carbon intensity. A building producing net-zero energy through PV while consuming 100 kWh/day embeds higher material carbon than a building consuming 40 kWh/day from a renewable-heavy grid. Net-zero carbon corrects this by accounting for grid emissions, making it more meaningful sustainability metric.",
-        "takeaway": "Net-zero carbon corrects this by accounting for grid emissions, making it more meaningful sustainability metric."
+        "a": "Assume all sustainable buildings automatically meet every rating system is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "Replace tropical passive-design evidence with brand names is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "Use certification acronyms as proof even when the source layer is silent is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "d": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold This is the source-safe answer for Sustainable Architecture.",
+        "correct": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Do not use those scoring claims unless a captured source directly supports the specific rating or threshold Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-007-09-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ae174e7d453bc027f51f482eeacaa5b559dc180529bffd142047d532de2db3ba"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:d721d42d1d13ac007510db68408b19c4568d072c0342fc7913faa443acd1c19a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "2009c041-a200-46ad-b92b-125f81505888",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "Which sustainability standard is specifically adapted for Philippine tropical context, emphasizing typhoon resilience, monsoon water management, solar control, and vernacular integration—rather than applying Northern Hemisphere-optimized standards?",
+      "text": "What does mixed-mode ventilation mean in the safest reading of the article?",
       "options": [
         {
           "id": "a",
-          "text": "LEED (Leadership in Energy and Environmental Design), which is a widely recognized standard but not specifically adapted for the Philippine context"
+          "text": "A purely decorative mix of old and new facade styles"
         },
         {
           "id": "b",
-          "text": "Passive House Standard, which focuses on energy efficiency but does not address tropical climate challenges"
+          "text": "A building where windows are fixed shut for energy performance"
         },
         {
           "id": "c",
-          "text": "BREEAM (Building Research Establishment Environmental Assessment Method), which is a comprehensive standard but not tailored for tropical environments"
+          "text": "A system that ignores opening placement and stack effect"
         },
         {
           "id": "d",
-          "text": "BERDE (Building for Ecologically Responsive Design Excellence)"
+          "text": "A design approach where natural ventilation is used when conditions allow and active cooling is reserved for conditions that require it"
         }
       ],
       "correct_option_id": "d",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "LEED (USA, 1998) is global but reflects Northern Hemisphere bias; large windows for daylighting credit can increase solar gain in tropical climates.",
-        "b": "Passive House Standard (Germany, 1988) is heating-focused; it was not developed for tropical climates.",
-        "c": "BREEAM (UK, 1990) has regional variants but originated in temperate British climate.",
-        "correct": "BERDE (Philippines, 2010) explicitly adapts sustainability criteria for tropical climate, monsoon hydrology, typhoon resilience, and vernacular architectural principles. BERDE 'recognizes that Northern Hemisphere-optimized standards...can be thermally dysfunctional in Manila's equatorial climate.'",
-        "takeaway": "BERDE 'recognizes that Northern Hemisphere-optimized standards...can be thermally dysfunctional in Manila's equatorial climate.'."
+        "a": "A purely decorative mix of old and new facade styles is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "A building where windows are fixed shut for energy performance is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "A system that ignores opening placement and stack effect is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "d": "A design approach where natural ventilation is used when conditions allow and active cooling is reserved for conditions that require it This is the source-safe answer for Sustainable Architecture.",
+        "correct": "A design approach where natural ventilation is used when conditions allow and active cooling is reserved for conditions that require it This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": "LEED (USA, 1998) is global but reflects Northern Hemisphere bias; large windows for daylighting credit can increase solar gain in tropical climates. Passive House Standard (Germany, 1988) is heating-focused; it was not developed for tropical climates. BREEAM (UK, 1990) has regional variants but originated in temperate British climate. BERDE (Philippines, 2010) explicitly adapts sustainability criteria for tropical climate, monsoon hydrology, typhoon resilience, and vernacular architectural principles. BERDE 'recognizes that Northern Hemisphere-optimized standards...can be thermally dysfunctional in Manila's equatorial climate.' BERDE 'recognizes that Northern Hemisphere-optimized standards...can be thermally dysfunctional in Manila's equatorial climate.'.",
-      "code_citation": null,
+      "explanation": "A design approach where natural ventilation is used when conditions allow and active cooling is reserved for conditions that require it Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-007-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-05-06T13:14:18.088468+00:00",
-      "content_hash": "sha256:b08cb90b87a7c1675a2351ae7544f1d30924e00940013c178acf47839b0a72a2"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:f0a39b42b6c9c646aaf03099feb5796ecc3654b182116b44e178236b1be5f587",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "aaf42737-8e47-4721-a5c8-b563b5af2b8c",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "A development advertises 'green roofs and rainwater harvesting' prominently but provides minimal information on envelope insulation or operational energy projections. What is your critical assessment, and what sustainable architecture principle does this reflect?",
+      "text": "Why does the article mention Philippine wind seasons?",
       "options": [
         {
           "id": "a",
-          "text": "The project is demonstrably sustainable because it includes water management and green infrastructure systems, which are key components of sustainable urban development"
+          "text": "Because wind direction alone replaces all site analysis"
         },
         {
           "id": "b",
-          "text": "The project requires no assessment because rainwater harvesting automatically qualifies as sustainable practice regardless of other factors, which is a common misconception in sustainable design"
+          "text": "Because every building must face the same compass direction"
         },
         {
           "id": "c",
-          "text": "Likely greenwashing; visible green features may mask poor thermal performance; genuine sustainability requires lifecycle assessment including envelope and operational metrics, not merely feature-based marketing"
+          "text": "Because orientation and opening strategy should account for prevailing seasonal wind directions when planning natural ventilation"
         },
         {
           "id": "d",
-          "text": "The promotional emphasis on visible features indicates genuine commitment to sustainability; envelope details are secondary to public-visible environmental commitment, which may not always reflect true sustainability"
+          "text": "Because certification scores are determined by monsoon labels"
         }
       ],
       "correct_option_id": "c",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Green roofs and rainwater harvesting alone do not ensure sustainability; they can occur alongside poor thermal performance and high operational energy.",
-        "b": "Rainwater harvesting is beneficial but cannot be evaluated in isolation; total environmental impact requires holistic assessment.",
-        "d": "Marketing emphasis on visible over measurable performance is exactly the greenwashing pattern architectural theory critiques.",
-        "correct": "visible features are heavily marketed while systemic performance (thermal envelope, operational energy) is obscured. Genuine sustainability requires integrated lifecycle assessment, not feature-stacking.",
-        "takeaway": "Genuine sustainability requires integrated lifecycle assessment, not feature-stacking."
+        "a": "Because wind direction alone replaces all site analysis is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "Because every building must face the same compass direction is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "Because orientation and opening strategy should account for prevailing seasonal wind directions when planning natural ventilation This is the source-safe answer for Sustainable Architecture.",
+        "d": "Because certification scores are determined by monsoon labels is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "correct": "Because orientation and opening strategy should account for prevailing seasonal wind directions when planning natural ventilation This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Because orientation and opening strategy should account for prevailing seasonal wind directions when planning natural ventilation Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-007-09-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:982f883407d4826a75deb275546b213ffe67b40603cb062bd1392463c3624ce3"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:338178d335b1a8972e2f5fea737ec2ef1563ce23323dc1a45214ff1bbfb1daad",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "086a58e8-a47b-4163-8c1b-227fd5296a30",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "How does the Passive House Standard approach differ from net-zero energy building standards in their theoretical priorities?",
+      "text": "Which proposal is the clearest greenwashing risk under this rewrite?",
       "options": [
         {
           "id": "a",
-          "text": "Passive House is appropriate for cold climates only; net-zero energy is applicable globally without modification to its renewable energy generation requirements"
+          "text": "A shaded classroom wing with cross-ventilation and protected openings"
         },
         {
           "id": "b",
-          "text": "Passive House requires demolition of existing buildings; net-zero energy permits retrofitting existing structures using renewable systems added to the current envelope"
+          "text": "A library with deep balconies that buffer sun and rain"
         },
         {
           "id": "c",
-          "text": "Passive House accepts renewable energy as supplementary; net-zero energy rejects mechanical conditioning entirely and relies on passive strategies alone for all climate control"
+          "text": "A mixed-mode office that uses natural ventilation when outdoor conditions permit"
         },
         {
           "id": "d",
-          "text": "Passive House prioritizes envelope performance and minimal conditioning demand through rigorous insulation and air-tightness; net-zero energy prioritizes on-site renewable generation balancing high operational consumption"
+          "text": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy"
         }
       ],
       "correct_option_id": "d",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Passive House is heating-focused (cold climate origin); net-zero energy is climate-agnostic but both require climate-specific optimization.",
-        "b": "Both standards apply to new construction and retrofits; neither mandates demolition.",
-        "c": "Passive House now includes mechanically-assisted cooling for warm climates; net-zero energy does not reject mechanical conditioning, only net grid purchase.",
-        "correct": "Passive House (Germany, 1988) specifies ultra-high envelope performance—extreme insulation, minimal air leakage, triple glazing—allowing comfort with minimal or no mechanical heating/cooling. Net-zero energy requires producing as much renewable energy (typically solar) as consumed, regardless of efficiency. The distinction: Passive House minimizes load; net-zero energy produces to match consumption.",
-        "takeaway": "The distinction: Passive House minimizes load; net-zero energy produces to match consumption."
+        "a": "A shaded classroom wing with cross-ventilation and protected openings is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "A library with deep balconies that buffer sun and rain is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "A mixed-mode office that uses natural ventilation when outdoor conditions permit is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "d": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy This is the source-safe answer for Sustainable Architecture.",
+        "correct": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A sealed glass building marketed as green because of visible plants but without shading, airflow, or cooling-load strategy Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-007-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8a8507fdee4a4bd1308b727df5cef14e9740529a59feef2506681721a8f5284a"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:3442ba213e4a6e176a1a4d42b5f7996ca3f2bc81aa0e12b5dd19186e964bf9a7",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "d04df4fc-5ea3-4ce7-b5ee-b0226ae10c85",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "What is embodied carbon, and how does it differ from operational carbon in sustainability assessment?",
+      "text": "How should vegetation be used in the tropical green-building claim?",
       "options": [
         {
           "id": "a",
-          "text": "Embodied carbon is the total environmental impact of a building over its lifetime; operational carbon is only the impact during the first year of operation, focusing on initial energy use."
+          "text": "As a substitute for every other passive-design decision"
         },
         {
           "id": "b",
-          "text": "Embodied carbon and operational carbon are the same concept; 'embodied' and 'operational' are merely different terminology for identical measurements, often used interchangeably."
+          "text": "As dense planting that blocks air movement at all openings"
         },
         {
           "id": "c",
-          "text": "Embodied carbon is CO2 emissions locked in materials and construction processes (extraction, manufacturing, transport, assembly); operational carbon is energy-related emissions during the building's occupancy phase"
+          "text": "As shade and microclimate support that cools surrounding air while keeping ventilation paths clear"
         },
         {
           "id": "d",
-          "text": "Embodied carbon is carbon sequestered in timber materials; operational carbon is from mechanical conditioning systems, such as HVAC and lighting."
+          "text": "As proof of sustainability even when heat gain increases"
         }
       ],
       "correct_option_id": "c",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Embodied carbon is not necessarily total lifetime impact; it is specifically material/construction-phase emissions. Operational carbon extends across the entire occupancy phase, not just year one.",
-        "b": "These are fundamentally different categories with distinct temporal profiles; conflating them is a common sustainability mistake architectural theory critiques.",
-        "d": "Embodied carbon applies to all materials, not only timber. Operational carbon includes all energy sources, not only mechanical conditioning.",
-        "correct": "Embodied carbon is front-loaded at construction (materials, manufacturing, transport); operational carbon accrues continuously throughout occupancy (heating, cooling, lighting, equipment). These are distinct temporal and source profiles with different strategic implications.",
-        "takeaway": "These are distinct temporal and source profiles with different strategic implications."
+        "a": "As a substitute for every other passive-design decision is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "b": "As dense planting that blocks air movement at all openings is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "As shade and microclimate support that cools surrounding air while keeping ventilation paths clear This is the source-safe answer for Sustainable Architecture.",
+        "d": "As proof of sustainability even when heat gain increases is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "correct": "As shade and microclimate support that cools surrounding air while keeping ventilation paths clear This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "As shade and microclimate support that cools surrounding air while keeping ventilation paths clear Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-007-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ca7cde1a5dee04bba2289e6f89cd2ee30467dba9ca75b5bc1b590e1e4f9fa916"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:51a9cbb202662acfc5ef86642698f5f584078907da7180f2c655857d09f70e5b",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "6a38bf2c-e359-4ea7-aade-b572c792628b",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "A timber-framed building requires 10% more operational energy than a concrete building but has 40% lower embodied carbon. Over a 50-year lifecycle, which is more sustainable?",
+      "text": "What is the best interpretation of low thermal mass in this source-safe context?",
       "options": [
         {
           "id": "a",
-          "text": "The answer requires lifecycle assessment (LCA) calculation accounting for grid carbon intensity and discount rates; both are potentially viable if properly optimized"
+          "text": "It is one passive-design consideration for tropical comfort and should be applied with climate, sun, ventilation, and use in mind"
         },
         {
           "id": "b",
-          "text": "The concrete building is clearly more sustainable because operational energy is perpetual while embodied carbon is one-time, making it a more consistent choice"
+          "text": "It is a universal rule that heavy materials are always forbidden"
         },
         {
           "id": "c",
-          "text": "The timber building is clearly more sustainable because its lower embodied carbon outweighs operational disadvantage, especially in regions with renewable energy sources"
+          "text": "It means sustainability is only a material shopping list"
         },
         {
           "id": "d",
-          "text": "Neither is sustainable; both require additional interventions to achieve genuine environmental benefit, such as renewable energy integration"
+          "text": "It proves mechanical cooling is unnecessary in every room"
         }
       ],
       "correct_option_id": "a",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While operational carbon is perpetual, this does not automatically favor embodied reduction if grid carbon is low or timber building is poorly optimized.",
-        "c": "The statement assumes 40% embodied advantage automatically outweighs 10% operational disadvantage; this ignores the complex calculations required.",
-        "d": "architectural theory does not claim either approach is inherently unsustainable; rather it emphasizes the need for rigorous assessment.",
-        "correct": "The answer depends on climate, grid carbon sources, and discount rates—there is no universal answer.' Lifecycle assessment requires quantification of grid carbon intensity (renewable-heavy grids favor operational efficiency; carbon-heavy grids favor embodied reduction), occupancy duration, and weighting methods. This is genuine complexity .",
-        "takeaway": "This is genuine complexity ."
+        "a": "It is one passive-design consideration for tropical comfort and should be applied with climate, sun, ventilation, and use in mind This is the source-safe answer for Sustainable Architecture.",
+        "b": "It is a universal rule that heavy materials are always forbidden is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "It means sustainability is only a material shopping list is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "d": "It proves mechanical cooling is unnecessary in every room is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "correct": "It is one passive-design consideration for tropical comfort and should be applied with climate, sun, ventilation, and use in mind This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It is one passive-design consideration for tropical comfort and should be applied with climate, sun, ventilation, and use in mind Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-007-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0ea2fd0b0cd19b0ee9584d84d9e0d78d54dc441279460b62497e1fa5c9c5e0df"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:8ddeb0e4fdc26fa863adc286d5de26391f3b7c8562d8d9dc54e86bd806b923af",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     },
     {
       "question_id": "897a6511-0051-447b-b1ad-411e2cbcb8e6",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
       "topic_id": "b0a024e0-773a-4d93-8c2a-8fbe2b24ee19",
-      "text": "Which statement represents a common mistake in applying sustainability standards to Philippine architectural practice?",
+      "text": "For the Cebu barangay library scenario, which recommendation best follows the article?",
       "options": [
         {
           "id": "a",
-          "text": "Importing LEED criteria wholesale into Philippine context can incentivize large windows (standard daylighting credit) that increase solar gain in tropical climates—a Northern Hemisphere standard imposing dysfunction in tropical application"
+          "text": "Plan shaded, operable openings and airflow paths first, then size active cooling only for remaining comfort needs"
         },
         {
           "id": "b",
-          "text": "Treating renewable energy (rooftop solar) as sustainability substitute for efficiency, so a building consuming 100 kWh/day producing this via PV has higher embodied impact than building consuming 40 kWh/day from grid, which is a common oversight"
+          "text": "Select a green plaque and leave the windows unshaded"
         },
         {
           "id": "c",
-          "text": "Prioritizing operational efficiency while ignoring embodied carbon in high-carbon materials (concrete) can lock in more total lifecycle carbon than less-optimized timber buildings, which is a frequent error"
+          "text": "Demolish climate-responsive buffers to create an all-glass frontage"
         },
         {
           "id": "d",
-          "text": "Using BERDE standards proves that local adaptation is unnecessary because international standards work everywhere with translation, which is a misconception as local adaptation is crucial"
+          "text": "Ignore site wind because sustainability is only a product specification"
         }
       ],
       "correct_option_id": "a",
@@ -501,14 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This is a sustainability mistake but concerns renewable energy prioritization rather than standards application to Philippine context.",
-        "c": "While this is documented as a sustainability mistake, it concerns embodied vs. operational trade-offs rather than standards application to Philippine context specifically.",
-        "d": "architectural theory does not claim international standards are universally unnecessary; rather it shows localization (BERDE) addresses specific climate mismatches (Northern Hemisphere bias).",
-        "correct": "Importing LEED criteria wholesale into Philippine context can incentivize large windows...that increase solar gain in tropical climates. BERDE's localization reflects genuine need, not regional protectionism.' Standard criteria developed for Northern Hemisphere create dysfunction when uncritically applied.",
-        "takeaway": "BERDE's localization reflects genuine need, not regional protectionism.' Standard criteria developed for Northern Hemisphere create dysfunction when uncritically applied."
+        "a": "Plan shaded, operable openings and airflow paths first, then size active cooling only for remaining comfort needs This is the source-safe answer for Sustainable Architecture.",
+        "b": "Select a green plaque and leave the windows unshaded is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "c": "Demolish climate-responsive buffers to create an all-glass frontage is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "d": "Ignore site wind because sustainability is only a product specification is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+        "correct": "Plan shaded, operable openings and airflow paths first, then size active cooling only for remaining comfort needs This stays inside the Batch 136 local source map for Sustainable Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Plan shaded, operable openings and airflow paths first, then size active cooling only for remaining comfort needs Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -521,8 +568,11 @@
       "model_id": "ALE-THEO-007-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e02d8d2c6e050991cf5e0b88570063d48be51798c6e883e431d0467b2ab9218e"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:84ff7b0b6ed01a42ca1b64cfb4bcafe5a78a77ae89f0eddbe74b4721807bdef4",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_notes": "Batch 136 narrows sustainable architecture to the local tropical-architecture evidence: passive design, natural ventilation, shading, low thermal mass where appropriate, mixed-mode ventilation, and vegetation used for cooling without obstructing circulation."
     }
   ]
 }

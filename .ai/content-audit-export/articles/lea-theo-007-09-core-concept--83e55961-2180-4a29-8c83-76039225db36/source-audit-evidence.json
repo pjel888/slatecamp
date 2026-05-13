@@ -1,0 +1,122 @@
+{
+  "batch": "batch-136",
+  "batch_number": 136,
+  "cluster_id": "lea-theo-007-09",
+  "article_id": "83e55961-2180-4a29-8c83-76039225db36",
+  "slug": "lea-theo-007-09-core-concept",
+  "title": "Sustainable Architecture",
+  "generated_at": "2026-05-13T23:17:50.015Z",
+  "baseline": "6eef5e971",
+  "branch": "3dlab-gray-viewport-bg",
+  "locators": [
+    {
+      "family": "toa4",
+      "lines": "563-592",
+      "note": "Passive design and passive cooling reduce operating cost and environmental impact after higher initial effort."
+    },
+    {
+      "family": "toa4",
+      "lines": "630-643",
+      "note": "Passive design in the tropics emphasizes natural ventilation, low thermal mass, shading, and careful glazing."
+    },
+    {
+      "family": "toa4",
+      "lines": "649-670",
+      "note": "Site planning should orient openings to prevailing winds, use operable windows and ceiling vents, and add shaded verandas, balconies, and landscaping."
+    },
+    {
+      "family": "toa4",
+      "lines": "838-875",
+      "note": "Passive and mixed-mode ventilation can reduce air-conditioning dependence when openings and stack effect are planned."
+    },
+    {
+      "family": "toa4",
+      "lines": "1562-1573",
+      "note": "Green building in tropical climates reduces cooling load by filtered air movement, shade, and vegetation that does not block circulation."
+    }
+  ],
+  "source_families": [
+    {
+      "family": "toa4",
+      "label": "TOA 4 (Tropical Architecture)",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "raw_sha256": "aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_sha256": "b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "captured_lines": [
+        {
+          "lines": "563-592",
+          "note": "Passive design and passive cooling reduce operating cost and environmental impact after higher initial effort."
+        },
+        {
+          "lines": "630-643",
+          "note": "Passive design in the tropics emphasizes natural ventilation, low thermal mass, shading, and careful glazing."
+        },
+        {
+          "lines": "649-670",
+          "note": "Site planning should orient openings to prevailing winds, use operable windows and ceiling vents, and add shaded verandas, balconies, and landscaping."
+        },
+        {
+          "lines": "838-875",
+          "note": "Passive and mixed-mode ventilation can reduce air-conditioning dependence when openings and stack effect are planned."
+        },
+        {
+          "lines": "1562-1573",
+          "note": "Green building in tropical climates reduces cooling load by filtered air movement, shade, and vegetation that does not block circulation."
+        }
+      ],
+      "expected_raw_sha256": "aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "expected_refined_sha256": "b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "article_cluster_id": "lea-theo-007-09"
+    }
+  ],
+  "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+  "source_capture_hash": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0",
+  "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+  "refined_source_map_hash": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+  "real_world_scenario": "A Cebu barangay library is being designed on a hot, humid site with limited operating budget. The source-safe move is to reduce cooling demand before adding active equipment: orient openings to seasonal winds, keep windows shaded and operable, use verandas or deep balconies as shaded buffers, and place vegetation so it cools the microclimate without blocking air movement.",
+  "excluded_claims": "The rewrite does not claim LEED, BERDE, Passive House, embodied-carbon math, or certification thresholds because those claims were not captured in the local source layer for this pass.",
+  "question_edit_count": 10,
+  "preserving_correct_option_ids": [
+    {
+      "question_id": "eae60e75-55c4-499d-88c3-689449e1f32e",
+      "correct_option_id": "c"
+    },
+    {
+      "question_id": "ce508bd5-e9e9-4139-a463-b69aa276cd88",
+      "correct_option_id": "c"
+    },
+    {
+      "question_id": "207bd046-0752-472f-84f5-3c1b91cbbecb",
+      "correct_option_id": "b"
+    },
+    {
+      "question_id": "642a1b89-7916-42c9-9eef-ad041a9940db",
+      "correct_option_id": "d"
+    },
+    {
+      "question_id": "2009c041-a200-46ad-b92b-125f81505888",
+      "correct_option_id": "d"
+    },
+    {
+      "question_id": "aaf42737-8e47-4721-a5c8-b563b5af2b8c",
+      "correct_option_id": "c"
+    },
+    {
+      "question_id": "086a58e8-a47b-4163-8c1b-227fd5296a30",
+      "correct_option_id": "d"
+    },
+    {
+      "question_id": "d04df4fc-5ea3-4ce7-b5ee-b0226ae10c85",
+      "correct_option_id": "c"
+    },
+    {
+      "question_id": "6a38bf2c-e359-4ea7-aade-b572c792628b",
+      "correct_option_id": "a"
+    },
+    {
+      "question_id": "897a6511-0051-447b-b1ad-411e2cbcb8e6",
+      "correct_option_id": "a"
+    }
+  ]
+}

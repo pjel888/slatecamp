@@ -1,0 +1,64 @@
+{
+  "question_id": "207bd046-0752-472f-84f5-3c1b91cbbecb",
+  "baseline_hash": "sha256:8799aa714267883157b5a3acedc9089505cf644bea6048218c17a040342b4faa",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Sustainable Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "83e55961-2180-4a29-8c83-76039225db36",
+    "parent_article_slug": "lea-theo-007-09-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Sustainable Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+        "sha256": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Sustainable Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+        "sha256": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which answer best matches the local source support for passive design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seal the building and compensate with larger air-conditioning equipment"
+      },
+      {
+        "id": "b",
+        "text": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing"
+      },
+      {
+        "id": "c",
+        "text": "Use glass walls first and add plants later as the sustainability feature"
+      },
+      {
+        "id": "d",
+        "text": "Select any imported green product and assume the building is sustainable"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Seal the building and compensate with larger air-conditioning equipment is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "b": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing This is the source-safe answer for Sustainable Architecture.",
+      "c": "Use glass walls first and add plants later as the sustainability feature is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "d": "Select any imported green product and assume the building is sustainable is a distractor because it steps outside the Batch 136 source-safe claim boundary for Sustainable Architecture.",
+      "correct": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing This stays inside the Batch 136 local source map for Sustainable Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Sustainable Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+    },
+    "explanation": "Encourage natural ventilation, shade walls and windows, use low thermal mass where appropriate, and avoid unshaded glazing Supported by Batch 136 local source artifacts for Sustainable Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25"
+  },
+  "batch_question_template_index": 3
+}

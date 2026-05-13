@@ -1,56 +1,90 @@
 {
   "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:975f6d5414d40861e8b845096c03a5367cfa002f9ea5e95c2e4ef77139c4600c",
-  "source_count": 4,
+  "sources_hash": "sha256:f2203e6c8dbbe17056612edbeea41213d2cef640941b02ee90cfc0bb0de05a9c",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "b8af7836-5c0f-494e-b0d3-dec441673d61",
+      "source_id": "batch-136-lea-theo-007-14-core-concept-raw-source-capture",
       "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
-      "label": "Brooker, Graeme. *Rehabilitating Buildings: A Guide to Adaptive Reuse and Remediation*. Routledge, 2014",
+      "label": "Batch 136 raw source capture - Adaptive Reuse",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Adaptive Reuse; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+      "local_sha256": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md#sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d",
+      "checked_markdown_lines": [
+        "Modern Architectures in History (USA) lines 702-702: Hull House is described as adaptive reuse of a former mansion that grew into social, educational, residential, and civic facilities.",
+        "Modern Architectures in History (USA) lines 1797-1797: The USA modern history corpus links adaptive reuse, sensitive modern alterations, landmark preservation, and the post-Pennsylvania Station preservation shift.",
+        "Modern Architectures in History (USA) lines 1936-2056: Neighborhood-scale preservation, renovation, infill, community decision-making, and reused or cheap materials appear in the local corpus.",
+        "Modern Architectures in History (USA) lines 2171-2321: The source notes recycled debris, reused timber, recycled metal/plastic, and warehouse loft conversions.",
+        "Modern Architectures in History (Brazil) lines 1300-1300: SESC is described as occupying a former brick factory and reusing its low functional brick structures."
+      ],
+      "local_source_families": [
+        {
+          "label": "Modern Architectures in History (USA)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+          "rawHash": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+          "refinedHash": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d"
+        },
+        {
+          "label": "Modern Architectures in History (Brazil)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (Brazil) - Richard J. Williams.pdf",
+          "rawHash": "sha256:8499aca87680f75ec1c81b3ab27b099bb62b205fda2710fdc58c90fe5018c06f",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (Brazil) - Richard J. Williams.md",
+          "refinedHash": "sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 136 source capture/refined conversion boundary."
     },
     {
-      "source_id": "6d649f7f-6aa8-4f41-9f87-a45e508a3018",
+      "source_id": "batch-136-lea-theo-007-14-core-concept-refined-source-map",
       "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
-      "label": "Rose, Douglas D., editor. *Illustrated Handbook for Preserving Historic Structures: Repairing, Upgrading, and Adapting*. National Trust for Historic Preservation, 1988",
+      "label": "Batch 136 refined source conversion - Adaptive Reuse",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Adaptive Reuse.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "ea2818c4-3a9b-4798-a736-548e87f53ca3",
-      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
-      "label": "Brand, Stewart. *How Buildings Learn: What Happens After They're Built*. Viking, 1994",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "740be624-1df6-4182-9d89-4fd253f4b352",
-      "article_id": "c2603440-ad82-425f-8c7d-38b71c10a1ef",
-      "label": "Philippine Cultural Heritage Commission. *Heritage Conservation Guidelines*. Government of the Philippines, 2010",
-      "url": null,
-      "source_type": "heritage_body",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md",
+      "local_sha256": "sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-14-core-concept.refined.md#sha256:bd68d6b13ffd80496e513b96c971e75cfdb12cb4be8cba83ede3d528c4995701",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-14-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:76e390b1c86d8e1091272e3368700b8294b07b6df420c173947ee4917060961d",
+      "checked_markdown_lines": [
+        "Modern Architectures in History (USA) lines 702-702: Hull House is described as adaptive reuse of a former mansion that grew into social, educational, residential, and civic facilities.",
+        "Modern Architectures in History (USA) lines 1797-1797: The USA modern history corpus links adaptive reuse, sensitive modern alterations, landmark preservation, and the post-Pennsylvania Station preservation shift.",
+        "Modern Architectures in History (USA) lines 1936-2056: Neighborhood-scale preservation, renovation, infill, community decision-making, and reused or cheap materials appear in the local corpus.",
+        "Modern Architectures in History (USA) lines 2171-2321: The source notes recycled debris, reused timber, recycled metal/plastic, and warehouse loft conversions.",
+        "Modern Architectures in History (Brazil) lines 1300-1300: SESC is described as occupying a former brick factory and reusing its low functional brick structures."
+      ],
+      "local_source_families": [
+        {
+          "label": "Modern Architectures in History (USA)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+          "rawHash": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+          "refinedHash": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d"
+        },
+        {
+          "label": "Modern Architectures in History (Brazil)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (Brazil) - Richard J. Williams.pdf",
+          "rawHash": "sha256:8499aca87680f75ec1c81b3ab27b099bb62b205fda2710fdc58c90fe5018c06f",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (Brazil) - Richard J. Williams.md",
+          "refinedHash": "sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

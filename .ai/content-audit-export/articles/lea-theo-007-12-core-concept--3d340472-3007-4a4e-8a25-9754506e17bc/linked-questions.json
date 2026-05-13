@@ -1,30 +1,30 @@
 {
   "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3bd1fee320e10c98b4ea64ecba293084cff313c9fd4c2d6c99fbc5124724c7ea",
+  "linked_questions_hash": "sha256:c39903a3ee6641f4e927c4ca6ebdbbd1c0f9491a93edcf0e569ee12c1bf77690",
   "question_count": 10,
   "questions": [
     {
       "question_id": "d9f8126c-4c28-427d-94af-659a6c0c17c6",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "Compare how structural form generates aesthetics in High-Tech architecture versus how aesthetic form is imposed in postmodernism.",
+      "text": "What is the best source-safe definition of high-tech architecture in this article?",
       "options": [
         {
           "id": "a",
-          "text": "Postmodernism generates form through performance data; High-Tech relies on historical allusion, often disregarding structural efficiency"
+          "text": "Any building with computers inside"
         },
         {
           "id": "b",
-          "text": "Both High-Tech and postmodernism begin with aesthetic preferences and work backward to justify structural systems, though High-Tech often prioritizes technological innovation"
+          "text": "A facade style that hides all services behind ornament"
         },
         {
           "id": "c",
-          "text": "High-Tech is more creative; postmodernism merely copies historical precedent, lacking originality in its approach"
+          "text": "A historical revival style using handmade details only"
         },
         {
           "id": "d",
-          "text": "High-Tech allows structural optimization to generate visible form; postmodernism imposes preconceived formal geometry decorated with historical or ironic reference—inverse approaches to form-generation"
+          "text": "Architecture that makes technological systems, structure, modular components, and prefabricated logic visible as part of the design idea"
         }
       ],
       "correct_option_id": "d",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory associates performance data with contemporary parametricism and sustainability, not High-Tech specifically, and certainly not postmodernism.",
-        "b": "High-Tech prioritizes structural/functional logic generating form; postmodernism prioritizes semantic content and historical meaning imposed on form.",
-        "c": "Both are creative but employ different creative logics; the distinction concerns methodology not creativity level.",
-        "correct": "These: High-Tech calculates structural optimization to generate form; postmodernism treats facades as representational surfaces and applies ornament/historical reference as applied decoration. These are opposite methodologies: form-generation vs. form-imposition.",
-        "takeaway": "These are opposite methodologies: form-generation vs. form-imposition."
+        "a": "Any building with computers inside is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "b": "A facade style that hides all services behind ornament is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "c": "A historical revival style using handmade details only is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "Architecture that makes technological systems, structure, modular components, and prefabricated logic visible as part of the design idea This is the source-safe answer for High-Tech Architecture.",
+        "correct": "Architecture that makes technological systems, structure, modular components, and prefabricated logic visible as part of the design idea This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": "architectural theory associates performance data with contemporary parametricism and sustainability, not High-Tech specifically, and certainly not postmodernism. High-Tech prioritizes structural/functional logic generating form; postmodernism prioritizes semantic content and historical meaning imposed on form. Both are creative but employ different creative logics; the distinction concerns methodology not creativity level. These: High-Tech calculates structural optimization to generate form; postmodernism treats facades as representational surfaces and applies ornament/historical reference as applied decoration. These are opposite methodologies: form-generation vs. form-imposition. These are opposite methodologies: form-generation vs. form-imposition.",
-      "code_citation": null,
+      "explanation": "Architecture that makes technological systems, structure, modular components, and prefabricated logic visible as part of the design idea Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-007-12-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:23.611041+00:00",
-      "content_hash": "sha256:04e34aea6642fff975898a0cbbdb205a564fdb6e3f835cd6b9bead5c8ae90a39"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:36f995590df11a574f7d55f0dad9658a9783a684ed910e0c605a74a68e5e660c",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "cc6d30a1-c8d7-4347-9d35-360016acee91",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "Compare High-Tech's relationship to energy efficiency and sustainability with assessment of the movement's contemporary performance.",
+      "text": "Why is Pompidou important in the Batch 136 rewrite?",
       "options": [
         {
           "id": "a",
-          "text": "Early High-Tech (1970s–80s) was energy-intensive with glass facades and mechanical complexity; contemporary High-Tech integrates efficiency through advanced controls and materials while maintaining structural/mechanical expression as aesthetic principle"
+          "text": "The captured TOA 5 source describes it as a cultural machine with color-coded service elements and structure emphasized on the exterior"
         },
         {
           "id": "b",
-          "text": "High-Tech is inherently sustainable because it exposes and celebrates mechanical efficiency, which is a simplification of the movement's principles"
+          "text": "It proves all buildings must put pipes outside"
         },
         {
           "id": "c",
-          "text": "Sustainability and High-Tech aesthetic are incompatible; contemporary practice must choose one or the other, which is a debated perspective in architectural discourse"
+          "text": "It is used as proof of a Philippine code requirement"
         },
         {
           "id": "d",
-          "text": "High-Tech was always unsustainable; modern sustainability requires abandoning High-Tech principles entirely, which overlooks the evolution of the movement"
+          "text": "It replaces the need to understand structure or circulation"
         }
       ],
       "correct_option_id": "a",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Tension; exposed mechanical systems don't guarantee efficiency; they must be high-performance systems.",
-        "c": "architectural theory suggests compatibility is possible; contemporary practice demonstrates both can coexist.",
-        "d": "architectural theory does not propose abandoning High-Tech; rather it shows how principles can evolve to include efficiency.",
-        "correct": "This evolution: 'High-Tech emerged during energy abundance; its glass facades and mechanical complexity are energy-intensive. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction.",
-        "takeaway": "However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction."
+        "a": "The captured TOA 5 source describes it as a cultural machine with color-coded service elements and structure emphasized on the exterior This is the source-safe answer for High-Tech Architecture.",
+        "b": "It proves all buildings must put pipes outside is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "c": "It is used as proof of a Philippine code requirement is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "It replaces the need to understand structure or circulation is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "correct": "The captured TOA 5 source describes it as a cultural machine with color-coded service elements and structure emphasized on the exterior This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": "Tension; exposed mechanical systems don't guarantee efficiency; they must be high-performance systems. architectural theory suggests compatibility is possible; contemporary practice demonstrates both can coexist. architectural theory does not propose abandoning High-Tech; rather it shows how principles can evolve to include efficiency. This evolution: 'High-Tech emerged during energy abundance; its glass facades and mechanical complexity are energy-intensive. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction.",
-      "code_citation": null,
+      "explanation": "The captured TOA 5 source describes it as a cultural machine with color-coded service elements and structure emphasized on the exterior Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-007-12-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:23.749503+00:00",
-      "content_hash": "sha256:d2f5505e86c5b226d63e2395a80e449a562d314f066c10d71c637f40739bc4a5"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:5ddab2d7b69d71eda27fdc5599cc9ba82b54bf547c5db8f943e44899c20208fc",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "1570c4ae-0500-4c1e-af5b-777e201aac2b",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "In the Centre Pompidou (Rogers & Piano, 1977), why are structural and mechanical systems exposed on the building's exterior rather than concelead?",
+      "text": "Which proposal best fits high-tech architecture?",
       "options": [
         {
           "id": "a",
-          "text": "The architects ran out of budget and could not afford to conceal systems, leading to an unplanned exposure of structural elements."
+          "text": "A sealed decorative shell with hidden systems and no maintenance logic"
         },
         {
           "id": "b",
-          "text": "The site was too small to accommodate systems internally, necessitating an external arrangement to maximize interior space for exhibitions."
+          "text": "A historic replica with no technological expression"
         },
         {
           "id": "c",
-          "text": "Exposing systems was purely aesthetic; there were no functional advantages, as the design choice was driven by a desire to create a high-tech visual impact."
+          "text": "A blank minimalist room where all systems are concealed as a rule"
         },
         {
           "id": "d",
-          "text": "This arrangement keeps the interior clear and flexible for museum reconfiguration, achieves functional transparency educating users about building operation, expresses honesty without apology about actual construction"
+          "text": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional"
         }
       ],
       "correct_option_id": "d",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Budget constraints are not identified ; this is speculation rather than documented reason.",
-        "b": "Site constraints are not discussed; the design was intentional strategy.",
-        "c": "Functional and strategic purposes; this was not merely aesthetic but served flexibility, maintenance, and theoretical principles.",
-        "correct": "Three functional advantages: (1) 'keeping the interior clear enables reconfiguration without relocating services,' (2) 'functional transparency educates users about how the building operates,' (3) 'honesty without apology.' The exposure serves multiple strategic functions.",
-        "takeaway": "Three functional advantages: (1) 'keeping the interior clear enables reconfiguration without relocating services,' (2) 'functional transparency educates users about how the building operates,' (3) 'honesty without apology.' The exposure serves multiple strategic functions."
+        "a": "A sealed decorative shell with hidden systems and no maintenance logic is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "b": "A historic replica with no technological expression is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "c": "A blank minimalist room where all systems are concealed as a rule is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional This is the source-safe answer for High-Tech Architecture.",
+        "correct": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A transit hall where service routes, structure, and modular maintenance zones are expressed clearly and remain functional Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-007-12-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8d0ca6cf9e29a95d69f9b1c2a1b5b5a5bebed0e77e36eeae5b4a83863c6cfea9"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:55daf15cb40aeb7b3deb996f794fa33e4e01101ad32d70e4576b25cd9be364ed",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "2d2c7e12-6f85-4834-bca7-f2582633b07f",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "The Hong Kong and Shanghai Banking Corporation Building features eight massive steel suspension trusses hanging from two external towers, suspended floor plates unobstructed by columns. Why is this a High-Tech innovation, and how does structure generate architectural form?",
+      "text": "How should prefabrication be understood here?",
       "options": [
         {
           "id": "a",
-          "text": "The radical structural logic (suspension rather than vertical stacking) becomes primary aesthetic generator, creating comprehensible structural expression while enabling column-free floor plates; structure generates form and functional flexibility simultaneously"
+          "text": "As an industrialized construction and modular design strategy that may shape the architectural expression"
         },
         {
           "id": "b",
-          "text": "The design is postmodern because it creates dramatic visual effect, emphasizing form over function in a way that challenges traditional architectural norms"
+          "text": "As a guarantee that every project is cheap and fast"
         },
         {
           "id": "c",
-          "text": "This is High-Tech because the building is made of steel and glass; materials alone constitute High-Tech, reflecting the industrial aesthetic of the era"
+          "text": "As a decorative label unrelated to construction"
         },
         {
           "id": "d",
-          "text": "The design is merely decorative; the trusses serve no structural purpose, acting only as visual elements without contributing to the building's stability"
+          "text": "As a rule that buildings cannot respond to climate or use"
         }
       ],
       "correct_option_id": "a",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While visually dramatic, the design is driven by structural logic, not postmodern representational reference.",
-        "c": "High-Tech is more than material selection; it concerns structural expression as design methodology.",
-        "d": "The trusses are primary structural system; they are not decorative but essential to building behavior.",
-        "correct": "This precisely: structural logic becomes primary design generator. Suspension structure is not arbitrary aesthetic choice but results from optimization for column-free office floors and public plaza. The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture.",
-        "takeaway": "The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture."
+        "a": "As an industrialized construction and modular design strategy that may shape the architectural expression This is the source-safe answer for High-Tech Architecture.",
+        "b": "As a guarantee that every project is cheap and fast is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "c": "As a decorative label unrelated to construction is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "As a rule that buildings cannot respond to climate or use is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "correct": "As an industrialized construction and modular design strategy that may shape the architectural expression This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": "While visually dramatic, the design is driven by structural logic, not postmodern representational reference. High-Tech is more than material selection; it concerns structural expression as design methodology. The trusses are primary structural system; they are not decorative but essential to building behavior. This precisely: structural logic becomes primary design generator. Suspension structure is not arbitrary aesthetic choice but results from optimization for column-free office floors and public plaza. The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture. The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture.",
-      "code_citation": null,
+      "explanation": "As an industrialized construction and modular design strategy that may shape the architectural expression Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-007-12-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:23.463103+00:00",
-      "content_hash": "sha256:dfa3c0f1053ca20b952f5085a83319a28e33baf33ba4fa541aa8dc6d201df86d"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:f21a8b5eb2d2a6d8cdf09f1f4bf792ea5dfb2ef3bd8472cd83a0b367dbb3a43d",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "6e3227e0-2af4-4953-b164-6cafde3093e5",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "What is the core High-Tech principle, and how does it differ from modernism's 'form follows function'?",
+      "text": "What is the main caution in exposing technology?",
       "options": [
         {
           "id": "a",
-          "text": "High-Tech and modernism are identical; both prioritize function over ornament, which is a common misconception"
+          "text": "Every service must be hidden to be architecture"
         },
         {
           "id": "b",
-          "text": "High-Tech ignores mechanical systems; modernism is focused on industrial production, which misrepresents both movements"
+          "text": "Technology always improves design even when uncoordinated"
         },
         {
           "id": "c",
-          "text": "High-Tech celebrates visible expression of structural systems and mechanical infrastructure as primary aesthetic; modernism sought abstract functional purity. High-Tech is functionalist honesty made visible and material"
+          "text": "Exposed systems must still be coordinated, maintainable, safe, and meaningful rather than becoming arbitrary visual clutter"
         },
         {
           "id": "d",
-          "text": "High-Tech rejects function entirely in favor of aesthetic styling; modernism prioritized function, which oversimplifies the High-Tech approach"
+          "text": "Structure should be exposed even if it confuses users"
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While both reject ornament, High-Tech makes function visually and materially explicit; modernism worked toward abstract purity less concerned with visibility.",
-        "b": "High-Tech is fundamentally concerned with mechanical systems; this is a defining feature, not absence.",
-        "d": "High-Tech is rigorously functionalist; it celebrates function rather than abandoning it.",
-        "correct": "Rather than imposing preconceived formal geometry, High-Tech allows structural optimization to generate form.' Modernism sought abstract purity expressing universal principles; High-Tech celebrates the visible, material, expressed results of functional optimization—a more literal and embodied functionalism.",
-        "takeaway": "Rather than imposing preconceived formal geometry, High-Tech allows structural optimization to generate form.' Modernism sought abstract purity expressing universal principles; High-Tech celebrates the visible, material, expressed results of functional optimization—a more literal and embodied functionalism."
+        "a": "Every service must be hidden to be architecture is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "b": "Technology always improves design even when uncoordinated is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "c": "Exposed systems must still be coordinated, maintainable, safe, and meaningful rather than becoming arbitrary visual clutter This is the source-safe answer for High-Tech Architecture.",
+        "d": "Structure should be exposed even if it confuses users is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "correct": "Exposed systems must still be coordinated, maintainable, safe, and meaningful rather than becoming arbitrary visual clutter This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Exposed systems must still be coordinated, maintainable, safe, and meaningful rather than becoming arbitrary visual clutter Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-007-12-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:193b128c24b3a8c300a4238476d057dc8f8139ad64b72becac51dc91cdfd039d"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:0b4bb1863bde0f065b18eea1cecdd77ce8d6b1bba113c73c6d4a00d9306c9349",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "e182d53c-fc23-4bea-a696-47c7e61c25ff",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "How does Norman Foster's approach to High-Tech differ from Richard Rogers' approach, as exemplified in their respective buildings?",
+      "text": "Which names are safely tied to the local high-tech source support?",
       "options": [
         {
           "id": "a",
-          "text": "The two architects have identical approaches; distinctions are merely superficial, with no significant differences in their design philosophies"
+          "text": "A list of architects not captured in the local source layer"
         },
         {
           "id": "b",
-          "text": "Rogers is more refined; Foster uses purely industrial crude expression, focusing on raw materials and structural honesty"
+          "text": "Only premodern builders with no technological frame"
         },
         {
           "id": "c",
-          "text": "Foster abandons High-Tech; only Rogers practices true High-Tech architecture, maintaining a commitment to visible structural elements"
+          "text": "Any software company with an office tower"
         },
         {
           "id": "d",
-          "text": "Foster refines High-Tech toward material luxury and technological sophistication; Rogers/Piano pursued raw industrial aesthetic. Both expose systems, but Foster emphasizes refined stainless steel while Rogers/Piano used painted tubes—different aesthetic emphasis within shared High-Tech principle"
+          "text": "Foster, Piano, Rogers, Team 4, and the Centre Georges Pompidou"
         }
       ],
       "correct_option_id": "d",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While related, they emphasize different values within High-Tech framework.",
-        "b": "The relationship is inverse; Foster is more refined.",
-        "c": "Foster is explicitly identified as practicing High-Tech; his refinement represents evolution, not abandonment.",
-        "correct": "Rogers/Piano employed painted tubes and industrial aesthetic...Foster maintains High-Tech's structural expression but refines it through sophisticated mechanical systems and precise detailing. Both expose systems but with different aesthetic emphasis: Rogers/Piano raw industrial, Foster refined technological.'",
-        "takeaway": "Both expose systems but with different aesthetic emphasis: Rogers/Piano raw industrial, Foster refined technological.'."
+        "a": "A list of architects not captured in the local source layer is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "b": "Only premodern builders with no technological frame is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "c": "Any software company with an office tower is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "Foster, Piano, Rogers, Team 4, and the Centre Georges Pompidou This is the source-safe answer for High-Tech Architecture.",
+        "correct": "Foster, Piano, Rogers, Team 4, and the Centre Georges Pompidou This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Foster, Piano, Rogers, Team 4, and the Centre Georges Pompidou Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-007-12-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f3747e4b6a2eb8047a7f2d0b5c7bf6500ee7db70a98772109878f2ebe6ad77a0"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:2b53c5d4c831f7400af2178e6d5a19c7a5e44cc806d1cb2727d4451941310a05",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "41dfb841-0be2-4a93-8c04-0074b93ad6b7",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "What does 'mechanical transparency' mean in High-Tech architecture, and what is its theoretical purpose?",
+      "text": "What does color-coding services do in the source-safe Pompidou example?",
       "options": [
         {
           "id": "a",
-          "text": "Making building systems (HVAC, water, electrical) visible and comprehensible to occupants; the educational function demystifies building technology and develops occupant understanding of how buildings operate"
+          "text": "It helps make service elements legible as part of the building expression"
         },
         {
           "id": "b",
-          "text": "Concealing mechanical systems so occupants do not see complex equipment, which may be aesthetically unpleasing"
+          "text": "It turns maintenance colors into a universal law for all buildings"
         },
         {
           "id": "c",
-          "text": "Using transparent glass materials throughout the building envelope to enhance natural light penetration"
+          "text": "It means color alone defines high-tech architecture"
         },
         {
           "id": "d",
-          "text": "Making architectural drawings transparent to the public through open design processes, fostering community engagement"
+          "text": "It hides structural and service logic from users"
         }
       ],
       "correct_option_id": "a",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "The opposite of mechanical transparency; High-Tech deliberately exposes rather than conceals.",
-        "c": "Transparency refers to comprehensibility and visibility of systems, not material transparency of glass.",
-        "d": "This confuses transparency (clarity about systems) with design process accessibility; these are distinct concepts.",
-        "correct": "Mechanical transparency means making building systems visible and comprehensible; educational function of High-Tech expression.' This is distinct from visual transparency (glass materials) and from secrecy; it concerns deliberate clarity about mechanical operation.",
-        "takeaway": "Mechanical transparency means making building systems visible and comprehensible; educational function of High-Tech expression.' This is distinct from visual transparency (glass materials) and from secrecy; it concerns deliberate clarity about mechanical operation."
+        "a": "It helps make service elements legible as part of the building expression This is the source-safe answer for High-Tech Architecture.",
+        "b": "It turns maintenance colors into a universal law for all buildings is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "c": "It means color alone defines high-tech architecture is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "It hides structural and service logic from users is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "correct": "It helps make service elements legible as part of the building expression This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It helps make service elements legible as part of the building expression Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-007-12-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:238dce8657c1115159f7bad0bdcf59bdd26cf187db9302ab7fe7806d44be431e"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:98bf04099187f21765399d6664315691d30508d5dcefc5149f71617b3ebd9241",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "efdfe95c-f7b6-495d-9651-2c9cf1d6be59",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "Which represents a common mistake in understanding High-Tech architecture?",
+      "text": "In the Quezon City campus scenario, which answer is most defensible?",
       "options": [
         {
           "id": "a",
-          "text": "Assuming High-Tech is 'honest' while other styles are not; all architecture is mediated and constructed; High-Tech's honesty is selective (celebrating technology, minimizing decoration) rather than absolute"
+          "text": "Expose random pipes even if they block circulation and maintenance"
         },
         {
           "id": "b",
-          "text": "All of the above represent common mistakes in contemporary High-Tech discourse"
+          "text": "Expose service routes and modular components only where they improve legibility, maintenance, and the visitor understanding of the building"
         },
         {
           "id": "c",
-          "text": "Equating industrial expression with dehumanizing cold space; High-Tech can be warm and educational; coldness is partly cultural unfamiliarity with industrial aesthetic"
+          "text": "Hide all systems because technology should never be visible"
         },
         {
           "id": "d",
-          "text": "Confusing High-Tech with merely exposing visible systems; random visible ducts/conduits are not High-Tech unless they are designed as primary aesthetic and organized according to structural/mechanical logic"
+          "text": "Use a digital signboard and ignore the building systems"
         }
       ],
       "correct_option_id": "b",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is correct but incomplete.",
-        "c": "This is correct but incomplete.",
-        "d": "This is correct but incomplete.",
-        "correct": "(a) 'Random visible ducts are not High-Tech unless designed as primary aesthetic'; (b) 'High-Tech's honesty is selective, not absolute'; (c) 'Cold reception is partly cultural unfamiliarity, not inherent coldness.' All are documented common mistakes.",
-        "takeaway": "(a) 'Random visible ducts are not High-Tech unless designed as primary aesthetic'; (b) 'High-Tech's honesty is selective, not absolute'; (c) 'Cold reception is partly cultural unfamiliarity, not inherent coldness.' All are documented common mistakes."
+        "a": "Expose random pipes even if they block circulation and maintenance is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "b": "Expose service routes and modular components only where they improve legibility, maintenance, and the visitor understanding of the building This is the source-safe answer for High-Tech Architecture.",
+        "c": "Hide all systems because technology should never be visible is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "Use a digital signboard and ignore the building systems is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "correct": "Expose service routes and modular components only where they improve legibility, maintenance, and the visitor understanding of the building This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Expose service routes and modular components only where they improve legibility, maintenance, and the visitor understanding of the building Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-007-12-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:58821ed9688e022deab84da20f4747919b5ddff507c583b66e6d83c82b62e142"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:498ab25e1f2993ade3b4805408de9d15fc2cffcb06c82620d42ff9b63e069b36",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "76dbfac5-2575-48f6-9f5d-e97423cbae1e",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "What does High-Tech's embrace of technological expression reveal about the relationship between modernism's functional reduction and the celebration of visible technological reality?",
+      "text": "Which claim should be rejected in this pass?",
       "options": [
         {
           "id": "a",
-          "text": "High-Tech and modernism are identical; both reduce form to functional essentials, ignoring decorative elements"
+          "text": "High-tech architecture can use industrialized modular units"
         },
         {
           "id": "b",
-          "text": "Modernism sought abstract purity (universal principles, reduced geometry); High-Tech accepts that contemporary reality is technologically complex and celebrates this complexity as honest expression, rejecting modernism's aspiration toward simplification"
+          "text": "That high-tech architecture is automatically sustainable, safe, or efficient just because technology is visible"
         },
         {
           "id": "c",
-          "text": "High-Tech proves modernism was wrong about function; true design must be purely decorative, focusing on aesthetic appeal over utility"
+          "text": "High-tech architecture can express technological innovation"
         },
         {
           "id": "d",
-          "text": "High-Tech is a regression to pre-modern ornamental expression; it abandons modernism's functional discipline in favor of elaborate detailing"
+          "text": "High-tech architecture may externalize structure and services"
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Both are functional, but modernism pursued abstraction while High-Tech pursues material/visible honesty.",
-        "c": "High-Tech remains deeply functional; it celebrates function visibly rather than decoratively.",
-        "d": "High-Tech maintains functional discipline while rejecting modernism's geometric reduction.",
-        "correct": "This as philosophical evolution: modernism attempted to distill buildings to essential geometric form expressing universal principles. High-Tech accepts that contemporary buildings are inherently mechanically and structurally complex and proposes this complexity is honest and beautiful when expressed rather than concealed. This is not abandonment of functionalism but acceptance that honest expression of actual function is more truthful than abstract reduction.",
-        "takeaway": "This is not abandonment of functionalism but acceptance that honest expression of actual function is more truthful than abstract reduction."
+        "a": "High-tech architecture can use industrialized modular units is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "b": "That high-tech architecture is automatically sustainable, safe, or efficient just because technology is visible This is the source-safe answer for High-Tech Architecture.",
+        "c": "High-tech architecture can express technological innovation is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "High-tech architecture may externalize structure and services is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "correct": "That high-tech architecture is automatically sustainable, safe, or efficient just because technology is visible This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "That high-tech architecture is automatically sustainable, safe, or efficient just because technology is visible Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-007-12-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2c98172d1b2dcdde3042b1a51ae1bad459e4b996513ebc10af24acecee52bd90"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:1a5aabe6a834df10789423bf0228c1b586ffe3a3e57abc8dda2df4c40480f110",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     },
     {
       "question_id": "d4ff37f9-8eef-4795-bf86-25695f68cde6",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
       "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "What advantages does exposing mechanical and electrical systems externally (High-Tech approach) provide for building maintenance and future adaptation, and what challenges does this create?",
+      "text": "What is the LEA exam takeaway from high-tech architecture?",
       "options": [
         {
           "id": "a",
-          "text": "Exposed systems save costs but reduce building lifespan significantly, as they are more susceptible to environmental wear and tear"
+          "text": "Treat exposed ducts as the only required clue"
         },
         {
           "id": "b",
-          "text": "Advantages: systems are accessible without destructive wall opening, easily modified/upgraded, visible for occupant education. Challenges: accumulated dust/dirt, aesthetic aging, acoustic/thermal performance loss from absent wall cavities, potential cultural perception as dehumanizing"
+          "text": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated"
         },
         {
           "id": "c",
-          "text": "Advantages only; there are no challenges to High-Tech exposure, which is often seen as a purely beneficial approach"
+          "text": "Assume any futuristic-looking building is high-tech"
         },
         {
           "id": "d",
-          "text": "Challenges only; exposure creates maintenance problems without offsetting benefits, leading to increased long-term costs and potential regulatory issues"
+          "text": "Ignore construction logic and identify the style only by color"
         }
       ],
       "correct_option_id": "b",
@@ -501,14 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory does not emphasize cost savings as primary benefit nor suggests exposure significantly reduces lifespan.",
-        "c": "Multiple challenges alongside advantages; the relationship is complex, not unambiguously positive.",
-        "d": "Genuine advantages; exposure is not purely problematic.",
-        "correct": "advantages include 'maintenance accessibility, educational value, flexibility, visual honesty'; challenges include 'visual complexity/clutter, maintenance burden (dust accumulation, shabby appearance with aging), acoustic/thermal performance loss, cultural rejection by occupants preferring concealment.'",
-        "takeaway": "advantages include 'maintenance accessibility, educational value, flexibility, visual honesty'; challenges include 'visual complexity/clutter, maintenance burden (dust accumulation, shabby appearance with aging), acoustic/thermal performance loss, cultural rejection by occupants preferring concealment.'."
+        "a": "Treat exposed ducts as the only required clue is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "b": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated This is the source-safe answer for High-Tech Architecture.",
+        "c": "Assume any futuristic-looking building is high-tech is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "d": "Ignore construction logic and identify the style only by color is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+        "correct": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated This stays inside the Batch 136 local source map for High-Tech Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -521,8 +568,11 @@
       "model_id": "ALE-THEO-007-12-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bb5fb91b2452e5b3fc604a487d5e20474ac2b68fc51e9778234cbd4682ac3ba3"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:ae5d170d6ed6f7d6d488d3900574a5b58b39af79de44031453c417ec3d769647",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+      "source_notes": "Batch 136 narrows high-tech architecture to the local TOA 5 support: Foster and Team 4, High Tech forms, technological innovation, industrialized modular units, prefabricated elements, and Piano/Rogers at Centre Georges Pompidou with exteriorized structure and color-coded services."
     }
   ]
 }

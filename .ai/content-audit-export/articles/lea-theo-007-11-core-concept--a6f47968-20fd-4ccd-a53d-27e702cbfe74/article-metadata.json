@@ -1,6 +1,6 @@
 {
   "article_id": "a6f47968-20fd-4ccd-a53d-27e702cbfe74",
-  "title": "Minimalism in architecture",
+  "title": "Minimalism",
   "slug": "lea-theo-007-11-core-concept",
   "subject_label": "Theory of Architecture",
   "difficulty_label": null,
@@ -11,25 +11,48 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:08.667678+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:49:32.84072+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:ef3972b0a90432f7f9141c48f3f234057324ffb6bcb22697b824f2b657a723ff",
-  "original_content_hash": "sha256:ef3972b0a90432f7f9141c48f3f234057324ffb6bcb22697b824f2b657a723ff",
-  "normalized_content_hash": "sha256:ef3972b0a90432f7f9141c48f3f234057324ffb6bcb22697b824f2b657a723ff",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-13T23:17:50.015Z",
+  "updated_by": "codex-local-first-batch-136",
+  "updated_note": "Source-audited local-first Batch 136 content and linked-question replacement; claims cite local captured source artifacts.",
+  "content_hash": "sha256:211d7121e3017e2f23c8c18b10d54e36cc59ab9da9465c4521443283ec23ae8a",
+  "original_content_hash": "sha256:211d7121e3017e2f23c8c18b10d54e36cc59ab9da9465c4521443283ec23ae8a",
+  "normalized_content_hash": "sha256:f46904e67643beea6ed52f2bd31f26906623db8b0e7590d0e20d8d83869b7900",
+  "candidate_content_hash": "sha256:f46904e67643beea6ed52f2bd31f26906623db8b0e7590d0e20d8d83869b7900",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:39331b15188932705f07f46b3a8c6c58ec185df96270a8e7d7ec35e0087e3bda",
-  "sources_hash": "sha256:048fa58b71874aad1147f447d786bd43c25d7151613a2b3926634bdade288661",
+  "linked_questions_hash": "sha256:10766da78e1453c56b1b376c8c22d595df97e8da0661bf965f840c4bbc0a6e79",
+  "sources_hash": "sha256:931b1912f4034f78ca98fb12c3dfb799b81cae7953c3705bdf4d32f1ffa9bd6e",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:40.240Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
   "export_version": "content-roundtrip-v1",
   "source_table": "wiki_articles",
-  "source_count": 4,
+  "source_count": 2,
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "batch-136",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+      "raw_sha256": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+      "refined_sha256": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+      "raw_sha256": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+      "refined_sha256": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+    }
+  ],
+  "blocked_residuals_logged": [
+    "lea-theo-007-02",
+    "lea-theo-007-10"
+  ]
 }

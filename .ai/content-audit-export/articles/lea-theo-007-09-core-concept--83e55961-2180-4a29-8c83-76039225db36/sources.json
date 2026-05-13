@@ -1,56 +1,76 @@
 {
   "article_id": "83e55961-2180-4a29-8c83-76039225db36",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:6ab0172ec2ed83c9ade9e8e88fa0b64ea549de2430f8b309e51f654c4d15ca3e",
-  "source_count": 4,
+  "sources_hash": "sha256:cf5a70691062d1ae4ac3a0534f221b600a9d007411a062bc0cae5005d4fc3f64",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "5eae8178-ded0-4d80-b947-7efac0ab77a7",
+      "source_id": "batch-136-lea-theo-007-09-core-concept-raw-source-capture",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
-      "label": "Passive House Institute. *Passivhaus Standard*. www.passivehouse.com",
+      "label": "Batch 136 raw source capture - Sustainable Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Sustainable Architecture; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+      "local_sha256": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md#sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0",
+      "checked_markdown_lines": [
+        "TOA 4 (Tropical Architecture) lines 563-592: Passive design and passive cooling reduce operating cost and environmental impact after higher initial effort.",
+        "TOA 4 (Tropical Architecture) lines 630-643: Passive design in the tropics emphasizes natural ventilation, low thermal mass, shading, and careful glazing.",
+        "TOA 4 (Tropical Architecture) lines 649-670: Site planning should orient openings to prevailing winds, use operable windows and ceiling vents, and add shaded verandas, balconies, and landscaping.",
+        "TOA 4 (Tropical Architecture) lines 838-875: Passive and mixed-mode ventilation can reduce air-conditioning dependence when openings and stack effect are planned.",
+        "TOA 4 (Tropical Architecture) lines 1562-1573: Green building in tropical climates reduces cooling load by filtered air movement, shade, and vegetation that does not block circulation."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 136 source capture/refined conversion boundary."
     },
     {
-      "source_id": "f15dd45e-caa3-4d37-aa46-57923d543320",
+      "source_id": "batch-136-lea-theo-007-09-core-concept-refined-source-map",
       "article_id": "83e55961-2180-4a29-8c83-76039225db36",
-      "label": "BERDE Secretariat. *BERDE Reference Manual*. Philippine Green Building Council, 2010",
+      "label": "Batch 136 refined source conversion - Sustainable Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Sustainable Architecture.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "0d7ec221-8e1d-4568-92e5-5dc34de87812",
-      "article_id": "83e55961-2180-4a29-8c83-76039225db36",
-      "label": "LEED Certification System. U.S. Green Building Council, ongoing updates. www.usgbc.org",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "4b33f24e-0010-4c2f-99d4-82dd292251d8",
-      "article_id": "83e55961-2180-4a29-8c83-76039225db36",
-      "label": "Dixit, Mrigank Kumar. \"Life Cycle Assessment of Building Materials.\" *Journal of the Institution of Engineers (India) Series A*, vol. 100, no. 1, 2019",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:17:50.015Z",
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md",
+      "local_sha256": "sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-09-core-concept.refined.md#sha256:5e64a04f92ec1473cd62b3720383a380bb77a029d24eb7224aa84a6cd4d27c25",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-09-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:ccd7622373da2298e0e862703d31fe4897ca7190f71a90d6d1a5f4f27a7bd6a0",
+      "checked_markdown_lines": [
+        "TOA 4 (Tropical Architecture) lines 563-592: Passive design and passive cooling reduce operating cost and environmental impact after higher initial effort.",
+        "TOA 4 (Tropical Architecture) lines 630-643: Passive design in the tropics emphasizes natural ventilation, low thermal mass, shading, and careful glazing.",
+        "TOA 4 (Tropical Architecture) lines 649-670: Site planning should orient openings to prevailing winds, use operable windows and ceiling vents, and add shaded verandas, balconies, and landscaping.",
+        "TOA 4 (Tropical Architecture) lines 838-875: Passive and mixed-mode ventilation can reduce air-conditioning dependence when openings and stack effect are planned.",
+        "TOA 4 (Tropical Architecture) lines 1562-1573: Green building in tropical climates reduces cooling load by filtered air movement, shade, and vegetation that does not block circulation."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

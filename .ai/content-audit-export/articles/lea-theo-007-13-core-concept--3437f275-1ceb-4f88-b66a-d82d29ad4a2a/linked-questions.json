@@ -1,30 +1,30 @@
 {
   "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:98cd10699c295ec8a413ef22d7fe74224a07db9895545880acd7f0735d9b31bf",
+  "linked_questions_hash": "sha256:ede9670754080f772a7de01a53f665739dabb5a50da93941d9997af9309ed64b",
   "question_count": 10,
   "questions": [
     {
       "question_id": "0de8f29c-1ee6-4162-bdce-32d26d371498",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "Why did bahay kubo traditionally use nipa thatch and timber frame rather than stone or concrete, and what does this material choice reveal about vernacular rationality?",
+      "text": "What is the safest definition of vernacular architecture in this Batch 136 rewrite?",
       "options": [
         {
           "id": "a",
-          "text": "Builders lacked skill for stone construction; vernacular represents inability to access better materials, which is a misconception"
+          "text": "Copying old forms as nostalgia while ignoring climate, use, and present constraints"
         },
         {
           "id": "b",
-          "text": "Nipa thatch and timber were abundant local materials, cost-effective, adequate performance in humid tropical climate, repairable with local labor, flexible for earthquake resilience, and sustainable—vernacular material choice is rationally optimized to local constraints and resources"
+          "text": "Architecture shaped by local climate, available materials, lifestyle, and accumulated building practice rather than only formal style"
         },
         {
           "id": "c",
-          "text": "Material choice was arbitrary tradition with no rational basis, which overlooks the practical reasons for material selection"
+          "text": "A universal imported style applied the same way everywhere"
         },
         {
           "id": "d",
-          "text": "Nipa and timber are objectively superior materials; modern builders should abandon stone and concrete, which is an oversimplification"
+          "text": "A rule that modern safety and program needs are irrelevant"
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Vernacular builders possessed sophisticated timber craftsmanship; material choice reflects optimization, not limitation.",
-        "c": "architectural theory demonstrates material choice reflects rigorous climate and resource analysis, not arbitrary tradition.",
-        "d": "Material performance is context-specific; nipa and timber excel in tropical humid conditions; they are not universally superior but locally appropriate.",
-        "correct": "This as 'rationally optimized response.' Material selection reflects availability, cost, performance adequacy in humid climate, repairability with local knowledge, flexibility (wood accommodates settlement and earthquake movement), and sustainability. This is sophisticated decision-making constrained by resources and environment.",
-        "takeaway": "This is sophisticated decision-making constrained by resources and environment."
+        "a": "Copying old forms as nostalgia while ignoring climate, use, and present constraints is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "b": "Architecture shaped by local climate, available materials, lifestyle, and accumulated building practice rather than only formal style This is the source-safe answer for Vernacular Architecture.",
+        "c": "A universal imported style applied the same way everywhere is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "d": "A rule that modern safety and program needs are irrelevant is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "Architecture shaped by local climate, available materials, lifestyle, and accumulated building practice rather than only formal style This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Architecture shaped by local climate, available materials, lifestyle, and accumulated building practice rather than only formal style Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-007-13-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1f7c2384813403efec93ca686708e131438dd30354958632bd539987ea725ad3"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:bd86184f3ed8e8910e44498cff0f264cac87a7c4b0c49560166e81b48d5470a5",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "1204a959-3ea5-4f52-860f-235f35ba3e34",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "How do the bahay kubo (rural vernacular) and bahay na bato (urban vernacular) represent different adaptations to Philippine conditions, and what does this difference reveal about vernacular evolution?",
+      "text": "Why do bahay kubo and bahay na bato matter in the article?",
       "options": [
         {
           "id": "a",
-          "text": "The two buildings are identical in principle; urban/rural distinction is irrelevant, as both serve similar functions"
+          "text": "They prove every new building must copy one historic form exactly"
         },
         {
           "id": "b",
-          "text": "Bahay kubo prioritizes climate response (ventilation, elevation, water shedding) in rural agrarian context; bahay na bato merges Spanish colonial typology with tropical adaptation (courtyard ventilation, upper residential, minimal ground fenestration) showing vernacular's dynamic evolution through cultural contact"
+          "text": "They give Philippine examples of local house forms and vocabulary that connect climate, materials, space, and use"
         },
         {
           "id": "c",
-          "text": "Bahay kubo is true vernacular; bahay na bato is not vernacular but merely copied European architecture, lacking local adaptation"
+          "text": "They replace the need for current structural and safety checks"
         },
         {
           "id": "d",
-          "text": "Bahay na bato is more advanced; bahay kubo is primitive construction unsuitable for modern use, reflecting outdated techniques"
+          "text": "They are only decorative motifs with no environmental lesson"
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Scale, material, and programmatic differences reflect different contexts; these distinctions are significant.",
-        "c": "Bahay na bato, while incorporating colonial influence, is vernacular adaptation; it evolved locally through centuries of use.",
-        "d": "Both have sophistication; the distinction concerns context (rural vs. urban) and evolution, not primitive vs. advanced.",
-        "correct": "Bahay kubo as vernacular response to climate and agrarian life; bahay na bato as hybrid evolution merging Spanish colonial urban form with local climate and material response. This demonstrates vernacular is dynamic and evolves through cultural/environmental interaction, not frozen tradition.",
-        "takeaway": "This demonstrates vernacular is dynamic and evolves through cultural/environmental interaction, not frozen tradition."
+        "a": "They prove every new building must copy one historic form exactly is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "b": "They give Philippine examples of local house forms and vocabulary that connect climate, materials, space, and use This is the source-safe answer for Vernacular Architecture.",
+        "c": "They replace the need for current structural and safety checks is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "d": "They are only decorative motifs with no environmental lesson is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "They give Philippine examples of local house forms and vocabulary that connect climate, materials, space, and use This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They give Philippine examples of local house forms and vocabulary that connect climate, materials, space, and use Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-007-13-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:57edd9fb73ddc698cc829e5ae692d9422995d4b23daddf0dcd1be9c0d2fe052f"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:3d439b68a98e1d4ba33b602fb0e9cacc0d04a91919e9a2c0b6def44e18020a05",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "ca2e2bcd-1fa0-448b-882f-4ee4971fd5ee",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "Which climate adaptation strategy did the bahay kubo employ in response to Philippine tropical monsoon climate, and what building features implemented this strategy?",
+      "text": "Which proposal is most vernacular-informed?",
       "options": [
         {
           "id": "a",
-          "text": "Rapid water management through elevated structure (1–2 meters on posts), steep pitched roof (rapid runoff), open sides with adjustable screens (ventilation), and deep eaves (solar shading)"
+          "text": "A day-care that studies local shade, airflow, raised-floor logic, available materials, and community use before developing a current design"
         },
         {
           "id": "b",
-          "text": "Thermal mass accumulation using thick stone walls for temperature moderation, which is more suitable for arid climates"
+          "text": "A concrete box with pasted-on bamboo patterns but no climate response"
         },
         {
           "id": "c",
-          "text": "Underground construction to maintain cool temperatures year-round, a method typically used in temperate regions"
+          "text": "A nostalgic replica that ignores present safety and program"
         },
         {
           "id": "d",
-          "text": "Large south-facing windows for winter solar gain and mechanical heating systems, which are not applicable in tropical climates"
+          "text": "A fully imported prototype with no local adaptation"
         }
       ],
       "correct_option_id": "a",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Thermal mass is appropriate for diurnal temperature swings; tropical climate has modest swings, making thermal mass less critical. Stone construction was urban (bahay na bato), not vernacular bahay kubo.",
-        "c": "Underground construction was not employed in tropical vernacular; elevation above ground is the opposite strategy.",
-        "d": "Large south-facing windows increase solar gain detrimental in tropical climate; this is inappropriate for Philippine context.",
-        "correct": "elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation.",
-        "takeaway": "elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation."
+        "a": "A day-care that studies local shade, airflow, raised-floor logic, available materials, and community use before developing a current design This is the source-safe answer for Vernacular Architecture.",
+        "b": "A concrete box with pasted-on bamboo patterns but no climate response is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "c": "A nostalgic replica that ignores present safety and program is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "d": "A fully imported prototype with no local adaptation is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "A day-care that studies local shade, airflow, raised-floor logic, available materials, and community use before developing a current design This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": "Thermal mass is appropriate for diurnal temperature swings; tropical climate has modest swings, making thermal mass less critical. Stone construction was urban (bahay na bato), not vernacular bahay kubo. Underground construction was not employed in tropical vernacular; elevation above ground is the opposite strategy. Large south-facing windows increase solar gain detrimental in tropical climate; this is inappropriate for Philippine context. elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation. elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation.",
-      "code_citation": null,
+      "explanation": "A day-care that studies local shade, airflow, raised-floor logic, available materials, and community use before developing a current design Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-007-13-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:29.636951+00:00",
-      "content_hash": "sha256:d99d30ce7feddf90ff92d400b37a21fa7f243959469d4918d447b2cb16254694"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:4dc9dbd5809e198e92ca3f2098cfb158385c968f34b5dea1ce00c185ef3db7d4",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "3ede4b38-8f85-4e40-a5ae-76dfab9edc24",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "What is 'typological stability' in vernacular architecture, and why is it significant for understanding vernacular design methodology?",
+      "text": "How should trial-and-error knowledge be used?",
       "options": [
         {
           "id": "a",
-          "text": "Typological stability is irrelevant to vernacular architecture; constant radical innovation is vernacular's defining feature, challenging traditional norms"
+          "text": "As a reason to avoid all technical review"
         },
         {
           "id": "b",
-          "text": "Typological stability means all vernacular buildings worldwide are identical, ignoring regional variations and cultural influences"
+          "text": "As proof that old forms are always superior"
         },
         {
           "id": "c",
-          "text": "Vernacular building types remain fundamentally similar across generations because that type has proven optimized for local conditions; variation occurs within stable parameters rather than radical innovation, reflecting iterative refinement of proven solutions"
+          "text": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs"
         },
         {
           "id": "d",
-          "text": "Vernacular types never change; complete absence of innovation demonstrates cultural stagnation, preventing adaptation to new environmental challenges"
+          "text": "As a decorative story unrelated to planning"
         }
       ],
       "correct_option_id": "c",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Typological stability is central to understanding vernacular's methodology; it reflects rational constraint-based optimization.",
-        "b": "Types are locally specific; different climates and cultures develop distinct types optimized to their conditions.",
-        "d": "Typological stability involves incremental variation and refinement, not complete stagnation; ongoing evolution within stable types.",
-        "correct": "Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation.",
-        "takeaway": "Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation."
+        "a": "As a reason to avoid all technical review is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "b": "As proof that old forms are always superior is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "c": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs This is the source-safe answer for Vernacular Architecture.",
+        "d": "As a decorative story unrelated to planning is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": "Typological stability is central to understanding vernacular's methodology; it reflects rational constraint-based optimization. Types are locally specific; different climates and cultures develop distinct types optimized to their conditions. Typological stability involves incremental variation and refinement, not complete stagnation; ongoing evolution within stable types. Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation. Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation.",
-      "code_citation": null,
+      "explanation": "As evidence of accumulated local adaptation that can guide design decisions when checked against current needs Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-007-13-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:29.895589+00:00",
-      "content_hash": "sha256:9775fa5c5b84bef7f1d0e0ffefdf0185764dff458f3677a2492044c06efe39ee"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:7e33086acff994af617f3819e0e2b52de3652579d13a9b67c6d7c80aaa17f138",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "0add29df-0a82-4db2-bc6c-2bb33f93a51c",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "How does contemporary interest in vernacular architecture's seismic and typhoon performance relate to broader point about vernacular rationality?",
+      "text": "What is the main climate lesson shared with the tropical-design sources?",
       "options": [
         {
           "id": "a",
-          "text": "Vernacular seismic performance is accidental; buildings happen to survive despite builders lacking scientific understanding, which is often overlooked"
+          "text": "Ignore openings because local identity is only symbolic"
         },
         {
           "id": "b",
-          "text": "Contemporary engineers have disproven vernacular structural strategies; modern building codes reject vernacular principles as outdated and inefficient"
+          "text": "Use heavy sealed walls for every tropical building"
         },
         {
           "id": "c",
-          "text": "Vernacular timber construction (flexibility, articulated joints) and elevated platforms (flood resilience) embody sophisticated structural knowledge developed through generations of earthquake/typhoon experience; contemporary seismic design increasingly studies vernacular behavior, validating that accumulated experiential knowledge equals or exceeds theoretical engineering analysis"
+          "text": "Use shade, orientation, natural ventilation, and protected openings to respond to heat, sun, rain, and airflow"
         },
         {
           "id": "d",
-          "text": "Seismic performance is irrelevant to vernacular rationality; architecture's merit concerns aesthetics, not structural adequacy, which is a common misconception"
+          "text": "Choose materials only by appearance"
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Vernacular is intentional optimization, not accidental success; builders possessed conscious understanding of what works.",
-        "b": "Building codes increasingly accommodate vernacular strategies through 'alternative means of compliance'; codes and vernacular are increasingly integrated.",
-        "d": "Structural adequacy is central to vernacular rationality; form follows functional necessity, not aesthetic preference.",
-        "correct": "This explicitly: 'Vernacular timber construction and elevated platforms embody knowledge...Contemporary seismic design increasingly studies vernacular building behavior.' This exemplifies vernacular as sophisticated rational response to environmental constraints, developed through repeated exposure to hazards.",
-        "takeaway": "This explicitly: 'Vernacular timber construction and elevated platforms embody knowledge...Contemporary seismic design increasingly studies vernacular building behavior.' This exemplifies vernacular as sophisticated rational response to environmental constraints, developed through repeated exposure to hazards."
+        "a": "Ignore openings because local identity is only symbolic is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "b": "Use heavy sealed walls for every tropical building is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "c": "Use shade, orientation, natural ventilation, and protected openings to respond to heat, sun, rain, and airflow This is the source-safe answer for Vernacular Architecture.",
+        "d": "Choose materials only by appearance is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "Use shade, orientation, natural ventilation, and protected openings to respond to heat, sun, rain, and airflow This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Use shade, orientation, natural ventilation, and protected openings to respond to heat, sun, rain, and airflow Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-007-13-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fef0f7d2ff9698dde73aa8ea53d8f4ff80eebdf2d6134b01799deb5705f7c02c"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:50f8fb1e86b42ab7308b3f579932f81873d950e8e42abab24b6510f395d2b5e9",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "2f7b471f-fa30-4a09-aea8-8c64ee9b827f",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "Contemporary celebration of vernacular architecture risks romanticization. What does identify as genuine concerns about this romanticization, and how should vernacular principles be appropriately integrated?",
+      "text": "Which answer is an unsafe romanticization?",
       "options": [
         {
           "id": "a",
-          "text": "Romanticization is harmless; appreciation of vernacular requires no critical consideration, as it is purely an aesthetic choice"
+          "text": "Studying local material availability"
         },
         {
           "id": "b",
-          "text": "Vernacular buildings are so flawed that no principles are worth preserving; modern replacement is always preferable, given the advancements in building technology"
+          "text": "Learning from shaded edges and airflow"
         },
         {
           "id": "c",
-          "text": "Any appreciation of vernacular is necessarily romanticization; critical assessment requires rejecting vernacular entirely, as it cannot coexist with modern architectural practices"
+          "text": "Translating cultural patterns into current design"
         },
         {
           "id": "d",
-          "text": "Romanticization ignores material constraints (condensation, moisture intrusion, limited privacy, structural vulnerability) that indoor plumbing and insulation address; integration should learn vernacular principles while providing modern comfort, and recognize vernacular is dynamic, not frozen tradition"
+          "text": "Assuming vernacular architecture is automatically sustainable or code-compliant without testing performance and safety"
         }
       ],
       "correct_option_id": "d",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Romanticization as problematic; critical appreciation is necessary.",
-        "b": "Vernacular sophistication; dismissal of all vernacular principles misses real value.",
-        "c": "architectural theory advocates critical engagement, not rejection; romanticization is the problem to avoid.",
-        "correct": "Romanticization risks: 'Contemporary celebration can become nostalgic aesthetics while ignoring material constraints.' Genuine integration requires learning principles while addressing limitations, and recognizing vernacular 'evolves; the bahay kubo today differs from 200 years ago.' True engagement is neither uncritical celebration nor dismissal.",
-        "takeaway": "Romanticization risks: 'Contemporary celebration can become nostalgic aesthetics while ignoring material constraints.' Genuine integration requires learning principles while addressing limitations, and recognizing vernacular 'evolves; the bahay kubo today differs from 200 years ago.' True engagement is neither uncritical celebration nor dismissal."
+        "a": "Studying local material availability is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "b": "Learning from shaded edges and airflow is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "c": "Translating cultural patterns into current design is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "d": "Assuming vernacular architecture is automatically sustainable or code-compliant without testing performance and safety This is the source-safe answer for Vernacular Architecture.",
+        "correct": "Assuming vernacular architecture is automatically sustainable or code-compliant without testing performance and safety This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Assuming vernacular architecture is automatically sustainable or code-compliant without testing performance and safety Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-007-13-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a42d90df93f2d0adc312d26bf018c74cf04a1b7d4126f312312b87d500f2d775"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:e20f089b30e05ac99082eeb286b8ff8bef224533fa310f27e151ac9b520c02d8",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "34edfb3d-8933-41a2-a94c-2c7e765982fc",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "What does Bernard Rudofsky mean by 'Architecture Without Architects,' and why did this framework establish vernacular as legitimate intellectual subject?",
+      "text": "What does the theory source support about early building needs?",
       "options": [
         {
           "id": "a",
-          "text": "Architecture is impossible without professional training; Rudofsky proved vernacular cannot be legitimate design, as it lacks the formal education and theoretical grounding"
+          "text": "Shelter begins from imported style catalogues only"
         },
         {
           "id": "b",
-          "text": "Vernacular architecture represents sophisticated design by non-professionals developed through experiential learning; Rudofsky's framework challenged modernism's focus on authored innovative buildings and revealed that anonymous traditional structures sheltered humanity effectively for millennia"
+          "text": "Shelter begins from immediate needs and materials available in the place"
         },
         {
           "id": "c",
-          "text": "Vernacular is primitive and unsophisticated; Rudofsky was being ironic about its legitimacy, highlighting the contrast with modern architectural practices"
+          "text": "Local material knowledge is irrelevant to architecture"
         },
         {
           "id": "d",
-          "text": "Architects should not be paid; all architecture should be community volunteer labor, reflecting a utopian vision of shared responsibility and creativity"
+          "text": "Climate response is a late decorative addition"
         }
       ],
       "correct_option_id": "b",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Rudofsky's argument is the opposite; he established vernacular's intellectual validity against professional monopoly.",
-        "c": "Rudofsky was serious, not ironic; his exhibition and book documented vernacular sophistication rigorously.",
-        "d": "Rudofsky did not critique professional compensation; his point concerns epistemic authority, not labor economics.",
-        "correct": "Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement.",
-        "takeaway": "Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement."
+        "a": "Shelter begins from imported style catalogues only is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "b": "Shelter begins from immediate needs and materials available in the place This is the source-safe answer for Vernacular Architecture.",
+        "c": "Local material knowledge is irrelevant to architecture is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "d": "Climate response is a late decorative addition is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "Shelter begins from immediate needs and materials available in the place This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": "Rudofsky's argument is the opposite; he established vernacular's intellectual validity against professional monopoly. Rudofsky was serious, not ironic; his exhibition and book documented vernacular sophistication rigorously. Rudofsky did not critique professional compensation; his point concerns epistemic authority, not labor economics. Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement. Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement.",
-      "code_citation": null,
+      "explanation": "Shelter begins from immediate needs and materials available in the place Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-007-13-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:29.369164+00:00",
-      "content_hash": "sha256:0b11a543dc43bac0290ebc3f481f53119cf2516d21982191c871d08243293398"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:4f8bd21e83d5ad3778f9c247bf6f36165212ad8a405590fbcb232569e8db9457",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "dcc1b54e-ad4f-4fa5-a699-b9c7b5e87dce",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "What does treatment of vernacular architecture reveal about the epistemological status of 'professional knowledge' versus 'place-based traditional knowledge' in architectural practice?",
+      "text": "In the Pangasinan scenario, what is the best exam answer?",
       "options": [
         {
           "id": "a",
-          "text": "Both professional technical knowledge and vernacular place-based knowledge are legitimate forms of expertise addressing similar problems (climate, materials, structure) through different methods (analysis vs. experiential accumulation); contemporary practice increasingly recognizes these as complementary rather than hierarchical"
+          "text": "Translate local climate and use lessons into a safe contemporary building instead of copying old elements as costume"
         },
         {
           "id": "b",
-          "text": "Professional training provides the only valid knowledge; vernacular represents pre-professional naiveté and superstition, lacking the rigor and systematic approach of formal education"
+          "text": "Copy a bahay kubo image exactly and ignore occupancy, structure, and evacuation use"
         },
         {
           "id": "c",
-          "text": "These epistemologies are incompatible; architectural practice must choose between professional expertise and traditional knowledge, as they cannot be reconciled within a single framework"
+          "text": "Use bamboo-looking cladding on a sealed unshaded box"
         },
         {
           "id": "d",
-          "text": "Vernacular knowledge is superior; all professional training should be abandoned in favor of traditional methods, which are seen as more authentic and sustainable"
+          "text": "Reject all local knowledge because the project is modern"
         }
       ],
       "correct_option_id": "a",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Vernacular as sophisticated, not naive; professional and traditional knowledge differ in method, not validity.",
-        "c": "architectural theory demonstrates compatibility and value in integration of both knowledge forms.",
-        "d": "architectural theory advocates integration, not replacement; both contribute essential perspectives.",
-        "correct": "This as epistemological parity: 'Vernacular builders possessed sophisticated understanding of climate, materials, and building science developed through observation and iterative refinement, not formal education.' Contemporary practice increasingly treats these as complementary—professional analysis systematizes what vernacular has always known through experience. The recognition is that different epistemologies (theoretical analysis vs. empirical iteration) can reach similar conclusions.",
-        "takeaway": "empirical iteration) can reach similar conclusions."
+        "a": "Translate local climate and use lessons into a safe contemporary building instead of copying old elements as costume This is the source-safe answer for Vernacular Architecture.",
+        "b": "Copy a bahay kubo image exactly and ignore occupancy, structure, and evacuation use is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "c": "Use bamboo-looking cladding on a sealed unshaded box is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "d": "Reject all local knowledge because the project is modern is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "Translate local climate and use lessons into a safe contemporary building instead of copying old elements as costume This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": "Vernacular as sophisticated, not naive; professional and traditional knowledge differ in method, not validity. architectural theory demonstrates compatibility and value in integration of both knowledge forms. architectural theory advocates integration, not replacement; both contribute essential perspectives. This as epistemological parity: 'Vernacular builders possessed sophisticated understanding of climate, materials, and building science developed through observation and iterative refinement, not formal education.' Contemporary practice increasingly treats these as complementary—professional analysis systematizes what vernacular has always known through experience. The recognition is that different epistemologies (theoretical analysis vs. empirical iteration) can reach similar conclusions. empirical iteration) can reach similar conclusions.",
-      "code_citation": null,
+      "explanation": "Translate local climate and use lessons into a safe contemporary building instead of copying old elements as costume Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-007-13-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:29.503442+00:00",
-      "content_hash": "sha256:3ab6a844be94ee5cf2dddf2fc003a89e7f508cd0100fff461ff89fa119aa7750"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:5ab0c9c8f2311c3cc0ee996e2a8fc3246a3b82cebe5f453a5713321ef6f9681a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "4db09ee2-d61a-4796-a442-2af0be21f07a",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "How do vernacular architecture principles inform contemporary sustainable design, and what does this integration suggest about the relationship between traditional and modern knowledge?",
+      "text": "Which detail would most clearly weaken a vernacular-informed design?",
       "options": [
         {
           "id": "a",
-          "text": "Vernacular principles and contemporary design are incompatible; practitioners must choose one approach or the other, which limits innovation"
+          "text": "Providing shaded openings"
         },
         {
           "id": "b",
-          "text": "Vernacular principles are irrelevant to contemporary practice; modern sustainability must start from scientific analysis without reference to tradition, ignoring historical insights"
+          "text": "Respecting daily community use patterns"
         },
         {
           "id": "c",
-          "text": "Vernacular passive ventilation, solar control, local material sourcing, and site-specific optimization directly inform contemporary sustainability goals, suggesting traditional accumulated knowledge and modern technical analysis are complementary epistemologies addressing similar problems through different methods"
+          "text": "Blocking cross-ventilation and shade while adding token native patterns to the facade"
         },
         {
           "id": "d",
-          "text": "Contemporary sustainability proves vernacular was inefficient; traditional buildings should be replaced with modern technology, disregarding cultural heritage"
+          "text": "Choosing materials with local availability and maintenance in mind"
         }
       ],
       "correct_option_id": "c",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory shows successful integration and complementarity between traditional and contemporary approaches.",
-        "b": "architectural theory demonstrates vernacular principles are essential to contemporary practice; dismissing tradition misses centuries of accumulated optimization.",
-        "d": "Many vernacular buildings perform better environmentally than modern replacements; architectural theory critiques this assumption as mistaken.",
-        "correct": "This integration: 'Contemporary architectural practice increasingly learns from vernacular...passive design strategies, local material sourcing, site-specific optimization—all vernacular principles apply directly to sustainability goals.' This suggests traditional and modern knowledge address similar environmental challenges through different epistemologies (experiential vs. analytical).",
-        "takeaway": "analytical)."
+        "a": "Providing shaded openings is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "b": "Respecting daily community use patterns is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "c": "Blocking cross-ventilation and shade while adding token native patterns to the facade This is the source-safe answer for Vernacular Architecture.",
+        "d": "Choosing materials with local availability and maintenance in mind is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "Blocking cross-ventilation and shade while adding token native patterns to the facade This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": "architectural theory shows successful integration and complementarity between traditional and contemporary approaches. architectural theory demonstrates vernacular principles are essential to contemporary practice; dismissing tradition misses centuries of accumulated optimization. Many vernacular buildings perform better environmentally than modern replacements; architectural theory critiques this assumption as mistaken. This integration: 'Contemporary architectural practice increasingly learns from vernacular...passive design strategies, local material sourcing, site-specific optimization—all vernacular principles apply directly to sustainability goals.' This suggests traditional and modern knowledge address similar environmental challenges through different epistemologies (experiential vs. analytical). analytical).",
-      "code_citation": null,
+      "explanation": "Blocking cross-ventilation and shade while adding token native patterns to the facade Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-007-13-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:39:29.765248+00:00",
-      "content_hash": "sha256:8f7d81dffb6e0800cd5b7f579566b600e9b2f223b813a191d0ce974c9ae583b5"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:a0adfbeaeddb105a2ab944cd1f7298575218267faa3dab5033177d22da7998e4",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     },
     {
       "question_id": "55553333-93fa-4dee-a61a-94648d747a8e",
       "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
       "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "Which represents a common mistake in understanding or applying vernacular architecture principles?",
+      "text": "What is the LEA takeaway from vernacular architecture?",
       "options": [
         {
           "id": "a",
-          "text": "All of the above represent common mistakes in contemporary vernacular discourse"
+          "text": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically"
         },
         {
           "id": "b",
-          "text": "Applying vernacular forms without climate/context adaptation, assuming that bahay kubo design is universally appropriate when vernacular is climate and culture-specific"
+          "text": "Memorize a single look and apply it everywhere"
         },
         {
           "id": "c",
-          "text": "Assuming vernacular is unchanged and unchanging, treating it as frozen tradition when vernacular actually evolves continuously with available materials and resources"
+          "text": "Treat vernacular architecture as anti-technology by definition"
         },
         {
           "id": "d",
-          "text": "Treating vernacular as primitive or unsophisticated, missing that it embodies sophisticated environmental science and structural engineering developed through centuries of experiential learning"
+          "text": "Ignore present requirements because old buildings existed"
         }
       ],
       "correct_option_id": "a",
@@ -501,14 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This is correct but incomplete.",
-        "c": "This is correct but incomplete.",
-        "d": "This is correct but incomplete.",
-        "correct": "(a) 'Treating vernacular as primitive misses its intellectual rigor'; (b) 'Assuming vernacular is unchanged and unchanging is romanticization'; (c) 'Vernacular is climate-specific; applying without adaptation fails.' All are documented common mistakes.",
-        "takeaway": "(a) 'Treating vernacular as primitive misses its intellectual rigor'; (b) 'Assuming vernacular is unchanged and unchanging is romanticization'; (c) 'Vernacular is climate-specific; applying without adaptation fails.' All are documented common mistakes."
+        "a": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically This is the source-safe answer for Vernacular Architecture.",
+        "b": "Memorize a single look and apply it everywhere is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "c": "Treat vernacular architecture as anti-technology by definition is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "d": "Ignore present requirements because old buildings existed is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+        "correct": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically This stays inside the Batch 136 local source map for Vernacular Architecture.",
+        "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -521,8 +568,11 @@
       "model_id": "ALE-THEO-007-13-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:44ab5c848d6efec88e9136418a8e648d5e44fac6f6e974e301a8ca28d356cac6"
+      "updated_at": "2026-05-13T23:17:50.015Z",
+      "content_hash": "sha256:785fca07874908965bf5d58dafc966f6df772d6620139ef7ef59403cb3047ddf",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+      "source_notes": "Batch 136 grounds vernacular architecture in local source support: trial-and-error building knowledge, available materials, climate, lifestyle, folk-derived patterns, Philippine bahay kubo and bahay na bato vocabulary, and tropical passive-design principles."
     }
   ]
 }

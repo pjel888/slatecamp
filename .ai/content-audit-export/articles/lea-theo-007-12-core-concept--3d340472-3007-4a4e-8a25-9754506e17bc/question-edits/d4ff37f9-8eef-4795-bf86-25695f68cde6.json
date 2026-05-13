@@ -1,0 +1,64 @@
+{
+  "question_id": "d4ff37f9-8eef-4795-bf86-25695f68cde6",
+  "baseline_hash": "sha256:bb5fb91b2452e5b3fc604a487d5e20474ac2b68fc51e9778234cbd4682ac3ba3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for High-Tech Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+    "parent_article_slug": "lea-theo-007-12-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-12-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - High-Tech Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md",
+        "sha256": "sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-12-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - High-Tech Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md",
+        "sha256": "sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the LEA exam takeaway from high-tech architecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat exposed ducts as the only required clue"
+      },
+      {
+        "id": "b",
+        "text": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated"
+      },
+      {
+        "id": "c",
+        "text": "Assume any futuristic-looking building is high-tech"
+      },
+      {
+        "id": "d",
+        "text": "Ignore construction logic and identify the style only by color"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Treat exposed ducts as the only required clue is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+      "b": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated This is the source-safe answer for High-Tech Architecture.",
+      "c": "Assume any futuristic-looking building is high-tech is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+      "d": "Ignore construction logic and identify the style only by color is a distractor because it steps outside the Batch 136 source-safe claim boundary for High-Tech Architecture.",
+      "correct": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated This stays inside the Batch 136 local source map for High-Tech Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for High-Tech Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
+    },
+    "explanation": "Recognize how visible structure, services, modularity, and industrialized construction become a design language when technically coordinated Supported by Batch 136 local source artifacts for High-Tech Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-12-core-concept.source-capture.md#sha256:c271a0f25662c43ade3b52cead273ed37444aa55982b577c1a6403e0b392c70f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-12-core-concept.refined.md#sha256:0db6e772b6795b2306a67f4e7b5c0b0c74cea4e61b1b17d63e5e327d418e8113"
+  },
+  "batch_question_template_index": 10
+}

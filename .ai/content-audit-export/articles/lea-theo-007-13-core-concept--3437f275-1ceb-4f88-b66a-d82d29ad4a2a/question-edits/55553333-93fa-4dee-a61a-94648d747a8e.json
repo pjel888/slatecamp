@@ -1,0 +1,64 @@
+{
+  "question_id": "55553333-93fa-4dee-a61a-94648d747a8e",
+  "baseline_hash": "sha256:44ab5c848d6efec88e9136418a8e648d5e44fac6f6e974e301a8ca28d356cac6",
+  "action": "replace",
+  "reason": "source-audited-article-batch-136-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Vernacular Architecture.",
+  "approved_by": "codex-local-first-batch-136",
+  "approved_at": "2026-05-13T23:17:50.015Z",
+  "source_audit_support": {
+    "parent_article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+    "parent_article_slug": "lea-theo-007-13-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9",
+    "checked_sources": [
+      {
+        "source_id": "batch-136-lea-theo-007-13-core-concept-raw-source-capture",
+        "label": "Batch 136 raw source capture - Vernacular Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md",
+        "sha256": "sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c"
+      },
+      {
+        "source_id": "batch-136-lea-theo-007-13-core-concept-refined-source-map",
+        "label": "Batch 136 refined source conversion - Vernacular Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md",
+        "sha256": "sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 136 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the LEA takeaway from vernacular architecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically"
+      },
+      {
+        "id": "b",
+        "text": "Memorize a single look and apply it everywhere"
+      },
+      {
+        "id": "c",
+        "text": "Treat vernacular architecture as anti-technology by definition"
+      },
+      {
+        "id": "d",
+        "text": "Ignore present requirements because old buildings existed"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically This is the source-safe answer for Vernacular Architecture.",
+      "b": "Memorize a single look and apply it everywhere is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "c": "Treat vernacular architecture as anti-technology by definition is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "d": "Ignore present requirements because old buildings existed is a distractor because it steps outside the Batch 136 source-safe claim boundary for Vernacular Architecture.",
+      "correct": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically This stays inside the Batch 136 local source map for Vernacular Architecture.",
+      "takeaway": "Use the local Batch 136 source capture and refined conversion for Vernacular Architecture; avoid unsupported certification, legal, carbon, or project-detail claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+    },
+    "explanation": "Identify the underlying local intelligence in climate, materials, construction habit, and lifestyle, then adapt it critically Supported by Batch 136 local source artifacts for Vernacular Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-136/lea-theo-007-13-core-concept.source-capture.md#sha256:166254414503123dabea46a08bac5895c786dc5e2e30d7e6e01e8b3d6d32340c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-136/lea-theo-007-13-core-concept.refined.md#sha256:1d06da6f99d5b528e2aa454b788be43832b7d61350777683a6eee2609efc36a9"
+  },
+  "batch_question_template_index": 10
+}
