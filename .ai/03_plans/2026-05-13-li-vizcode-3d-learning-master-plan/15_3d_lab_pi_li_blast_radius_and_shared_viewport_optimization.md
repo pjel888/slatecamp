@@ -89,12 +89,30 @@ Plan correction: the first LI ramp should reuse the existing `bp344-accessible-r
 
 ### GitNexus
 
-GitNexus is present on disk, but the index is stale:
+GitNexus MCP tools were not available through tool discovery, and `npx gitnexus status` failed because `gitnexus` was not on PATH. A cached local GitNexus binary was found under the npm cache and used instead.
 
-- current `HEAD`: `cf95ddad45b0e18ed1fe84351b08bf5fe684c392`
-- `.gitnexus/meta.json` indexed commit: `41bce18b45db1eb3235394abcca7bba66458a0da`
+Index was stale at first:
 
-The GitNexus MCP tools were not available through tool discovery, and `npx gitnexus status` failed with `gitnexus: command not found`. Therefore this addendum does not claim a complete GitNexus blast-radius proof. The first implementation run must refresh or restore GitNexus before editing source symbols.
+- indexed commit: `41bce18`
+- current commit: `e6c5a6c`
+
+`gitnexus analyze` was run successfully and refreshed the local index:
+
+- indexed commit: `e6c5a6c`
+- status: up to date
+- graph: 10,595 nodes, 24,826 edges, 572 clusters, 300 flows
+
+Symbol impacts checked:
+
+| Symbol | Direction | Result |
+| --- | --- | --- |
+| `ViewportShell` | upstream depth 2 | LOW, 0 impacted callers/processes |
+| `LabViewportFrame` | upstream depth 2 | LOW, 0 impacted callers/processes |
+| `useTemplateContent` | upstream depth 2 | LOW, 0 impacted callers/processes |
+| `ModuleViewer` | upstream depth 3 | LOW, 0 impacted callers/processes |
+| `getModuleById` | upstream depth 3 | MEDIUM, 10 direct callers |
+
+Important interpretation: GitNexus sees limited symbol-call blast radius for the shell symbols, but code-review-graph sees broad file-level impact across the 3D Lab route/test surface. Treat the combined result as high risk for shared file edits and medium risk for registry lookup changes.
 
 ### code-review-graph
 

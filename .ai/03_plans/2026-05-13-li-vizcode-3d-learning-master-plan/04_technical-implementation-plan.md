@@ -80,7 +80,7 @@ Planned changes:
 Acceptance:
 
 - `bun run type-check` passes.
-- Existing tests that touch registry/template metadata pass.
+- Existing tests that touch registry/module metadata pass.
 - No LI module is dashboard-visible yet.
 
 ## Phase 2 - Hotspot Payload Contract

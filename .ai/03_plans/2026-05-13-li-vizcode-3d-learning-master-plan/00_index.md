@@ -19,7 +19,7 @@ The source folders are valuable evidence, but they should no longer be used as c
 1. LI is hotspot-centered, not sub-mode-tab-centered.
 2. PI and LI are complementary: PI is parametric compliance exploration; LI is guided spatial learning and recall.
 3. Keep the existing `/dashboard/3d-lab/[moduleId]` route. Mode is data-driven through module config.
-4. The first LI MVP modules are `bp344-ramp-hotspots`, `bp344-toilet-hotspots`, and `egress-stair-hotspots`.
+4. The first LI MVP modules are `bp344-ramp-hotspots`, `bp344-toilet-hotspots`, and `egress-stair-hotspots`; the ramp should compose from existing `bp344-accessible-route-ramp` work where safe.
 5. Every student-facing code claim must resolve to a source card, locator, formula/test seed where applicable, and review evidence.
 6. VizCode PH is a competitive product signal only. It is not a source of legal, code, or educational truth.
 7. The active product surface starts inside 3D Lab, including a future coverage view, not a new top-level navigation item.
