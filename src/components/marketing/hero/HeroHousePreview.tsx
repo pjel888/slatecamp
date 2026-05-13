@@ -22,7 +22,7 @@ const LOT_COLORS = {
   dimension: palette.campOrange,
   front: palette.slateBlue,
   side: palette.teal,
-  rear: palette.emerald,
+  rear: '#FACC15',
   road: palette.inkSecondary,
   roadStripe: palette.surfaceCard,
   roadEdge: palette.inkTertiary,
@@ -421,7 +421,7 @@ const SetbackFill = ({
   gradient,
 }: {
   spec: SetbackBandSpec
-  gradient?: { from: string; to: string }
+  gradient?: { from: string; to: string; mid?: string }
 }) => {
   const texture = useMemo(() => {
     if (!gradient || typeof document === 'undefined') return null
@@ -434,6 +434,9 @@ const SetbackFill = ({
 
     const grad = ctx.createLinearGradient(0, 0, 0, 128)
     grad.addColorStop(0, gradient.from)
+    if (gradient.mid) {
+      grad.addColorStop(0.5, gradient.mid)
+    }
     grad.addColorStop(1, gradient.to)
     ctx.fillStyle = grad
     ctx.fillRect(0, 0, 2, 128)
@@ -442,7 +445,7 @@ const SetbackFill = ({
     tex.colorSpace = SRGBColorSpace
     tex.needsUpdate = true
     return tex
-  }, [gradient?.from, gradient?.to])
+  }, [gradient?.from, gradient?.to, gradient?.mid])
 
   useEffect(() => () => texture?.dispose(), [texture])
 
@@ -547,7 +550,7 @@ const SetbackBands = ({ setbacks }: { setbacks: SetbackValues }) => {
   return (
     <>
       <SetbackFill spec={plan.bands.front} gradient={{ from: LOT_COLORS.front, to: LOT_COLORS.side }} />
-      <SetbackFill spec={plan.bands.rear} gradient={{ from: LOT_COLORS.side, to: LOT_COLORS.rear }} />
+      <SetbackFill spec={plan.bands.rear} gradient={{ from: LOT_COLORS.side, to: LOT_COLORS.rear, mid: LOT_COLORS.rear }} />
       <SetbackFill spec={plan.bands.leftSide} />
       <SetbackFill spec={plan.bands.rightSide} />
     </>

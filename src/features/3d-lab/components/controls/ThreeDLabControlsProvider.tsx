@@ -67,7 +67,11 @@ export function ThreeDLabControlsProvider({
 }: ThreeDLabControlsProviderProps) {
   useEffect(() => {
     const resolvedConfig = config ?? {}
-    useViewportShellStore.getState().setCameraControlConfig(resolvedConfig)
+    const viewportStore = useViewportShellStore.getState()
+    viewportStore.setCameraControlConfig(resolvedConfig)
+    if (resolvedConfig.resetPreset) {
+      viewportStore.snapToPreset(resolvedConfig.resetPreset, 'system')
+    }
 
     if (typeof window !== 'undefined') {
       ;(window as unknown as { __slatecamp3dLabControls?: unknown }).__slatecamp3dLabControls = {

@@ -35,14 +35,31 @@ export const InstancedMesh = ({ inst }: InstancedMeshProps) => {
   })()
 
   return (
-    <group position={inst.position} rotation={inst.rotation ?? [0, 0, 0]}>
-      <Instances limit={positions.length}>
+    <group
+      position={inst.position}
+      rotation={inst.rotation ?? [0, 0, 0]}
+      userData={{ slatecampCameraFitExclude: inst.cameraFitExclude === true }}
+    >
+      <Instances limit={positions.length} frustumCulled={false}>
         {geometryElement}
-        <meshStandardMaterial
-          color={inst.color}
-          opacity={inst.opacity ?? 1}
-          transparent={inst.transparent ?? (inst.opacity !== undefined && inst.opacity < 1)}
-        />
+        {inst.material === 'basic' ? (
+          <meshBasicMaterial
+            color={inst.color}
+            opacity={inst.opacity ?? 1}
+            transparent={inst.transparent ?? (inst.opacity !== undefined && inst.opacity < 1)}
+            depthWrite={inst.depthWrite ?? true}
+            toneMapped={false}
+          />
+        ) : (
+          <meshStandardMaterial
+            color={inst.color}
+            opacity={inst.opacity ?? 1}
+            transparent={inst.transparent ?? (inst.opacity !== undefined && inst.opacity < 1)}
+            depthWrite={inst.depthWrite ?? true}
+            roughness={0.86}
+            metalness={0}
+          />
+        )}
         {positions.map((pos, i) => (
           <Instance
             key={i}

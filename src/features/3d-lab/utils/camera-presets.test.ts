@@ -28,10 +28,12 @@ describe('camera preset helpers', () => {
     expect(getSelectedCameraPresetAfterCommand('rear', 'reset')).toBe(DEFAULT_VIEW_PRESET)
   })
 
-  test('changes projection only for explicit projection commands', () => {
+  test('preserves projection for labeled orientation view commands', () => {
     expect(getProjectionModeAfterCommand('perspective', 'iso-ne')).toBe('perspective')
+    expect(getProjectionModeAfterCommand('perspective', 'iso-nw')).toBe('perspective')
+    expect(getProjectionModeAfterCommand('orthographic', 'iso-nw')).toBe('orthographic')
     expect(getProjectionModeAfterCommand('orthographic', 'front')).toBe('orthographic')
-    expect(getProjectionModeAfterCommand('perspective', 'iso')).toBe('orthographic')
+    expect(getProjectionModeAfterCommand('perspective', 'iso')).toBe('perspective')
     expect(getProjectionModeAfterCommand('orthographic', 'perspective')).toBe('perspective')
     expect(getProjectionModeAfterCommand('orthographic', 'reset')).toBe('perspective')
   })

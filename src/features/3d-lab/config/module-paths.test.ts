@@ -8,8 +8,8 @@ describe('3D Lab module import paths', () => {
     expect(getModuleImportPath('site-development-controls')).toBe(
       '01-building-code/site-development-controls',
     )
-    expect(getModuleImportPath('stairway-configurator')).toBe(
-      '08-vertical/stairway-configurator',
+    expect(getModuleImportPath('stairway-code-compliance')).toBe(
+      '08-vertical/stairway-code-compliance',
     )
     expect(getModuleImportPath('unified-wall-configurator')).toBe(
       '10-materials/unified-wall-configurator',
@@ -21,10 +21,11 @@ describe('3D Lab module import paths', () => {
   })
 
   test('imports a mapped module config from the shared resolver', async () => {
-    const config = await importModuleConfig('stairway-configurator')
+    const config = await importModuleConfig('stairway-code-compliance')
 
     expect(config).not.toBeNull()
-    expect((config as { id?: string }).id).toBe('stairway-configurator')
+    expect((config as { id?: string }).id).toBe('stairway-code-compliance')
+    expect((config as { title?: string }).title).toBe('Stairway Code Compliance')
   })
 
   test('imports full configs for dashboard-visible modules without relying on registry configs', async () => {

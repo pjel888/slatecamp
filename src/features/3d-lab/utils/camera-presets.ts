@@ -55,8 +55,15 @@ export const getProjectionModeAfterCommand = (
     case 'perspective':
       return 'perspective'
     case 'iso':
-      return 'orthographic'
+      // Keep the shared 3D Lab camera in perspective while using the isometric
+      // orientation preset. The orthographic projection path currently culls
+      // the parametric stair meshes on this route, producing a blank viewport.
+      // This preserves the visible isometric teaching angle without making the
+      // model disappear.
+      return 'perspective'
     default:
+      // Orientation presets (NW/NE/SE/SW/front/etc.) must not change projection.
+      // They rotate/reframe the current camera mode only.
       return currentProjection
   }
 }

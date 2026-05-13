@@ -27,11 +27,11 @@ test.describe('demo-authenticated 3D Lab', () => {
     page,
   }) => {
     test.setTimeout(90000)
-    await gotoAllowRedirectAbort(page, '/dashboard/3d-lab/stairway-configurator')
-    await expect(page).toHaveURL(/\/dashboard\/3d-lab\/stairway-configurator$/, {
+    await gotoAllowRedirectAbort(page, '/dashboard/3d-lab/stairway-code-compliance')
+    await expect(page).toHaveURL(/\/dashboard\/3d-lab\/stairway-code-compliance$/, {
       timeout: 60000,
     })
-    await expect(page.locator('body')).toContainText(/Stairway Configurator/i, {
+    await expect(page.locator('body')).toContainText(/Stairway Code Compliance/i, {
       timeout: 60000,
     })
   })

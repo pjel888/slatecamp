@@ -45,7 +45,7 @@ These are the highest-priority modules with full LEA question sets and multi-pha
 
 | # | Title | ID | Type | Subject | Code Ref |
 |---|-------|-----|------|---------|----------|
-| 1 | Stairway Configurator | `stairway-configurator` | ⚙ parametric | PD 1096 | PD 1096 Rule VIII |
+| 1 | Stairway Code Compliance | `stairway-code-compliance` | ⚙ parametric | PD 1096 | PD 1096 Rule VIII |
 | 2 | Fire Travel Distance | `fire-travel-distance` | 🗺 floorplan | RA 9514 | RA 9514 Rule 10 |
 | 3 | Ramp & Accessible Toilet | `ramp-accessible-toilet` | ⚙ parametric | BP 344 | BP 344 |
 | 4 | Classical Orders Comparison | `classical-orders-comparison` | 💥 exploded | History | — |
@@ -62,7 +62,7 @@ These are the highest-priority modules with full LEA question sets and multi-pha
 
 | Title | ID | Type | Code Ref | Description |
 |-------|-----|------|----------|-------------|
-| Stairway Configurator ★ | `stairway-configurator` | ⚙ | PD 1096 Rule VIII | Configure stair geometry and verify code compliance for rise, run, headroom, and handrails. |
+| Stairway Code Compliance ★ | `stairway-code-compliance` | ⚙ | PD 1096 Rule VIII | Configure stair geometry and verify code compliance for rise, run, headroom, and handrails. |
 | NBCP Building Envelope ★ | `nbcp-envelope` | ⚙ | PD 1096 Rule VII | Interactive building envelope with FAR, setbacks, BHL, and firewall effects. |
 | Occupancy Classification | `occupancy-classification` | ⚙ | PD 1096 Rule V | Interactive occupancy type selector showing allowed building uses and mixed occupancy rules. |
 | Corridor Width Calculator | `corridor-width-calculator` | ⚙ | PD 1096 Rule VIII | Parametric corridor showing minimum widths based on occupant load. |
@@ -531,7 +531,7 @@ These are the highest-priority modules with full LEA question sets and multi-pha
 | Soil Profile Cutaway | `soil-profile-cutaway` | NSCP | ✂ |
 | Split AC Unit Cutaway | `split-ac-cutaway` | PMEC | ✂ |
 | Sprinkler System Layout | `sprinkler-layout` | RA 9514 | 🗺 |
-| Stairway Configurator | `stairway-configurator` | PD 1096 | ⚙ |
+| Stairway Code Compliance | `stairway-code-compliance` | PD 1096 | ⚙ |
 | Stairwell Enclosure | `stairwell-enclosure` | RA 9514 | ✂ |
 | Standard Material Sheets | `standard-material-sheets` | Materials | 💥 |
 | Standpipe Classes | `standpipe-classes` | RA 9514 | ✂ |

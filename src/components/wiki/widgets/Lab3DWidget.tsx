@@ -68,7 +68,7 @@ interface Lab3DWidgetProps {
  * Lab3DWidget: Embeds a 3D Lab module directly into a wiki article.
  *
  * Usage in MDX:
- * <Lab3DWidget moduleId="stairway-configurator" caption="Interactive Stair Compliance" />
+ * <Lab3DWidget moduleId="stairway-code-compliance" caption="Interactive Stair Compliance" />
  */
 export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWidgetProps) {
   const [config, setConfig] = React.useState<unknown>(null)

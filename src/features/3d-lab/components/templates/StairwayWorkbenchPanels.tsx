@@ -146,6 +146,7 @@ export const StairwayWorkbenchLeftPanel = memo(function StairwayWorkbenchLeftPan
   const stairWidth = num(params, 'stairWidth', state.stairWidth)
   const headroom = num(params, 'headroom', state.headroom)
   const handrailHeight = num(params, 'handrailHeight', state.handrailHeight)
+  const numRisers = num(params, 'numRisers', state.numRisers)
 
   const setNumber = (key: string) => (value: number) => setParam(key, value)
 
@@ -266,6 +267,21 @@ export const StairwayWorkbenchLeftPanel = memo(function StairwayWorkbenchLeftPan
               showRangeLabels={false}
               isViolating={dimensionViolates('stairWidth')}
               onChange={setNumber('stairWidth')}
+            />
+          </SliderRow>
+          <SliderRow>
+            <LabSlider
+              label="Vertical rise per flight"
+              labelInfoTitle="Vertical rise per flight"
+              labelInfoDescription="Controls the number of risers in this straight flight. Increase it to push the total vertical rise beyond the PD 1096 3,600 mm landing threshold shown in the legal card."
+              value={numRisers}
+              min={3}
+              max={24}
+              step={1}
+              unit="risers"
+              showRangeLabels={false}
+              isViolating={dimensionViolates('verticalRise')}
+              onChange={setNumber('numRisers')}
             />
           </SliderRow>
         </div>

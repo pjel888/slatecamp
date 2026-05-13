@@ -51,11 +51,11 @@ describe('3D Lab onboarding state', () => {
     const storage = new MemoryStorage()
 
     storage.setItem('3dlab_onboarded', 'true')
-    storage.setItem('module_stairway-configurator_seen', 'true')
+    storage.setItem('module_stairway-code-compliance_seen', 'true')
     storage.setItem('slatecamp-viewport-onboarding-seen', 'true')
 
     expect(readStorageFlag(storage, globalOnboardingKeys())).toBe(true)
-    expect(readStorageFlag(storage, moduleOnboardingKeys('stairway-configurator'))).toBe(true)
+    expect(readStorageFlag(storage, moduleOnboardingKeys('stairway-code-compliance'))).toBe(true)
     expect(readStorageFlag(storage, viewportTooltipKeys())).toBe(true)
   })
 })

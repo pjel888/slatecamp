@@ -99,7 +99,7 @@ src/
 │   ├── src/features/3d-lab/config/     # Module configuration layer
 │   │   ├── registry/                   # Central registry + subject-area slices
 │   │   └── modules/                    # (187 files) One .ts config file per module
-│   │       ├── stairway-configurator.ts
+│   │       ├── stairway-code-compliance.ts
 │   │       ├── fire-travel-distance.ts
 │   │       ├── ramp-accessible-toilet.ts
 │   │       └── ...                    # ~184 more module configs

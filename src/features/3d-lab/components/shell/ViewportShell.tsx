@@ -28,6 +28,7 @@ import type {
 // ─── Constants ──────────────────────────────────────────────────────────────
 
 const HANDLE_WIDTH = 20
+const SIDEBAR_MIN_WIDTH = 384
 const GRID_TRANSITION = 'grid-template-columns 200ms cubic-bezier(0.4, 0, 0.2, 1)'
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -126,8 +127,8 @@ export const ViewportShell = ({
   const leftCfg = resolveSidebar(shellConfig.leftSidebar)
   const rightCfg = resolveSidebar(shellConfig.rightSidebar)
 
-  const leftWidth = leftCfg?.width ?? 280
-  const rightWidth = rightCfg?.width ?? 320
+  const leftWidth = leftCfg ? Math.max(leftCfg.width ?? SIDEBAR_MIN_WIDTH, SIDEBAR_MIN_WIDTH) : 0
+  const rightWidth = rightCfg ? Math.max(rightCfg.width ?? SIDEBAR_MIN_WIDTH, SIDEBAR_MIN_WIDTH) : 0
 
   // Build CSS grid columns
   const gridTemplateColumns = useMemo(() => {
@@ -196,6 +197,7 @@ export const ViewportShell = ({
           totalCount={totalCount}
           onBack={onBack}
           className="flex-none z-20 shadow-md"
+          desktopGridTemplateColumns={gridTemplateColumns}
         />
       </div>
 

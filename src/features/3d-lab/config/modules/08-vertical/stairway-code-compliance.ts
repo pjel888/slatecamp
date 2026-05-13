@@ -274,7 +274,7 @@ const parameters: ParameterDef[] = [
     label: 'Number of Risers',
     type: 'slider',
     min: 3,
-    max: 20,
+    max: 24,
     step: 1,
     default: 12,
     group: 'Stair Geometry',
@@ -513,8 +513,10 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
   // The model must use the same UX contract: if ANY law card shows a failure for
   // a physical dimension, the corresponding model part turns universal red.
   const parallelFailures = computeParallelDimensionFailures(rawParams)
-  const rColor = parallelFailures.riserHeight ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.RISER
-  const tColor = parallelFailures.treadDepth ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.TREAD
+  const verticalRiseViol = parallelFailures.verticalRise
+  const rColor = parallelFailures.riserHeight || verticalRiseViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.RISER
+  const tColor = parallelFailures.treadDepth || verticalRiseViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.TREAD
+  const landingColor = verticalRiseViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.LANDING
   const wColor = parallelFailures.stairWidth ? CODE_VIOLATION_COLOR : null
   const headViol = parallelFailures.headroom
   const hrColor = parallelFailures.handrailHeight ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.HANDRAIL
@@ -538,7 +540,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
     type: 'box',
     position: [0, -TREAD_THICKNESS_M / 2, joinContract.bottomLandingCenterZ],
     args: [sW, TREAD_THICKNESS_M, joinContract.landingDepth],
-    color: NEUTRAL_COLORS.LANDING,
+    color: landingColor,
   })
 
   // ── 2. Treads & risers ────────────────────────────────────────────────────
@@ -628,7 +630,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
     type: 'box',
     position: [0, topY - TREAD_THICKNESS_M / 2, topZ],
     args: [sW, TREAD_THICKNESS_M, joinContract.landingDepth],
-    color: NEUTRAL_COLORS.LANDING,
+    color: landingColor,
   })
 
   // ── 6. Headroom clearance plane ───────────────────────────────────────────

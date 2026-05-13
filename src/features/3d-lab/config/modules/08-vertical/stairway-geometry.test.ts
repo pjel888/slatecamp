@@ -171,6 +171,31 @@ describe('stairway geometry validation', () => {
     expect(handrail.color).toBe(STAIR_MODEL_COLOR)
   })
 
+  test('vertical-rise violation turns the whole stair body red including treads, risers, and landings', () => {
+    const geometry = buildGeometry({
+      riserHeight: 180,
+      treadDepth: 280,
+      stairWidth: 1200,
+      handrailHeight: 900,
+      headroom: 2100,
+      numRisers: 21,
+      isExitStair: false,
+      isAccessibleRoute: false,
+    })
+
+    const tread = geometry.find((instruction) => instruction.id === 'tread-0')!
+    const riser = geometry.find((instruction) => instruction.id === 'riser-0')!
+    const bottomLanding = geometry.find((instruction) => instruction.id === 'base-platform')!
+    const topLanding = geometry.find((instruction) => instruction.id === 'top-landing')!
+    const handrail = geometry.find((instruction) => instruction.id === 'handrail-L')!
+
+    expect(tread.color).toBe(CODE_VIOLATION_COLOR)
+    expect(riser.color).toBe(CODE_VIOLATION_COLOR)
+    expect(bottomLanding.color).toBe(CODE_VIOLATION_COLOR)
+    expect(topLanding.color).toBe(CODE_VIOLATION_COLOR)
+    expect(handrail.color).toBe(STAIR_MODEL_COLOR)
+  })
+
   test('handrail extensions run horizontally to the landing edges', () => {
     const geometry = buildGeometry({
       stairWidth: 900,

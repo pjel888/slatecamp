@@ -12,19 +12,20 @@ interface ToolbarButton {
   id: string
   icon: typeof Grid3x3
   label: string
+  shortLabel: string
   shortcut: string
   type: 'toggle' | 'action'
   storeKey?: 'gridVisible' | 'dimensionsVisible' | 'xrayMode' | 'layersPanelOpen'
 }
 
 const TOOLBAR_BUTTONS: ToolbarButton[] = [
-  { id: 'grid', icon: Grid3x3, label: 'Grid', shortcut: 'G', type: 'toggle', storeKey: 'gridVisible' },
-  { id: 'dimensions', icon: Ruler, label: 'Dimensions', shortcut: 'D', type: 'toggle', storeKey: 'dimensionsVisible' },
-  { id: 'xray', icon: Eye, label: 'X-ray', shortcut: 'X', type: 'toggle', storeKey: 'xrayMode' },
-  { id: 'layers', icon: Layers, label: 'Layers', shortcut: 'L', type: 'toggle', storeKey: 'layersPanelOpen' },
+  { id: 'grid', icon: Grid3x3, label: 'Grid', shortLabel: 'Grid', shortcut: 'G', type: 'toggle', storeKey: 'gridVisible' },
+  { id: 'dimensions', icon: Ruler, label: 'Dimensions', shortLabel: 'Dim', shortcut: 'D', type: 'toggle', storeKey: 'dimensionsVisible' },
+  { id: 'xray', icon: Eye, label: 'X-ray', shortLabel: 'X-ray', shortcut: 'X', type: 'toggle', storeKey: 'xrayMode' },
+  { id: 'layers', icon: Layers, label: 'Layers', shortLabel: 'Layers', shortcut: 'L', type: 'toggle', storeKey: 'layersPanelOpen' },
   // Divider handled by index check
-  { id: 'screenshot', icon: Camera, label: 'Screenshot', shortcut: 'P', type: 'action' },
-  { id: 'fullscreen', icon: Maximize2, label: 'Fullscreen', shortcut: 'F', type: 'action' },
+  { id: 'screenshot', icon: Camera, label: 'Screenshot', shortLabel: 'Shot', shortcut: 'P', type: 'action' },
+  { id: 'fullscreen', icon: Maximize2, label: 'Fullscreen', shortLabel: 'Full', shortcut: 'F', type: 'action' },
 ]
 
 export const SceneToolbar = () => {
@@ -86,7 +87,7 @@ export const SceneToolbar = () => {
 
   return (
     <div
-      className="absolute top-4 left-4 z-20 flex items-center gap-0.5 rounded-lg p-1 pointer-events-auto cursor-default"
+      className="absolute top-4 left-4 z-20 flex items-center gap-0.5 rounded-lg px-1 py-0.5 pointer-events-auto cursor-default"
       style={{ backgroundColor: 'var(--viewport-overlay-bg)', backdropFilter: 'blur(8px)' }}
     >
       {TOOLBAR_BUTTONS.map((btn, i) => {
@@ -97,7 +98,7 @@ export const SceneToolbar = () => {
           <span key={btn.id} className="contents">
             {/* Divider before action buttons */}
             {i === 4 && (
-              <div className="mx-0.5 h-5 w-px" style={{ backgroundColor: 'var(--viewport-overlay-text)', opacity: 0.15 }} />
+              <div className="mx-0.5 h-7 w-px self-center" style={{ backgroundColor: 'var(--viewport-overlay-text)', opacity: 0.15 }} />
             )}
             <button
               type="button"
@@ -107,7 +108,7 @@ export const SceneToolbar = () => {
               data-testid={`3dlab-toolbar-${btn.id}`}
               title={`${btn.label} (${btn.shortcut})`}
               className={`
-                flex h-8 w-8 items-center justify-center rounded-md transition-colors duration-150 ease-out
+                flex h-7 min-w-7 flex-col items-center justify-center gap-0 rounded-md px-1 transition-colors duration-150 ease-out
                 ${isActive
                   ? 'text-white'
                   : 'hover:text-white'
@@ -118,7 +119,10 @@ export const SceneToolbar = () => {
                 color: isActive ? 'white' : 'var(--viewport-overlay-text)',
               }}
             >
-              <Icon className="h-4 w-4" />
+              <Icon className="h-3.5 w-3.5 shrink-0" />
+              <span className="max-w-7 truncate text-center font-medium uppercase leading-none" style={{ fontSize: 5 }}>
+                {btn.shortLabel}
+              </span>
             </button>
           </span>
         )

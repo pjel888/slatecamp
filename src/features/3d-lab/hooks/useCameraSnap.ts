@@ -89,6 +89,9 @@ interface AnimState {
   startTime: number
   duration: number
   currentTarget: THREE.Vector3
+  startZoom: number
+  endZoom: number
+  allowDuringManual: boolean
 }
 
 interface ProjectionTransitionFrame {
@@ -594,6 +597,9 @@ export const useCameraSnap = () => {
     startTime: 0,
     duration: 600,
     currentTarget: new THREE.Vector3(),
+    startZoom: 1,
+    endZoom: 1,
+    allowDuringManual: false,
   })
   const zoomDirectionRef = useRef(new THREE.Vector3())
   const fitBoundsRef = useRef(new THREE.Box3())
@@ -651,7 +657,7 @@ export const useCameraSnap = () => {
     }
 
     const state = useViewportShellStore.getState()
-    if (state.manualOrbit || state.cameraCommandId !== anim.commandId) {
+    if ((state.manualOrbit && !anim.allowDuringManual) || state.cameraCommandId !== anim.commandId) {
       anim.active = false
       anim.commandId = null
       writeLastCameraFrame()
@@ -670,6 +676,11 @@ export const useCameraSnap = () => {
       anim.currentTarget.lerpVectors(anim.startTarget, anim.endTarget, eased)
       orbitControls.target.copy(anim.currentTarget)
       orbitControls.update()
+    }
+
+    if (camera instanceof THREE.OrthographicCamera) {
+      camera.zoom = THREE.MathUtils.lerp(anim.startZoom, anim.endZoom, eased)
+      camera.updateProjectionMatrix()
     }
 
     if (t >= 1) {
@@ -739,17 +750,19 @@ export const useCameraSnap = () => {
     const applyZoomScale = (zoomFactor: number) => {
       if (!Number.isFinite(zoomFactor) || zoomFactor <= 0) return
 
+      const targetPosition = camera.position.clone()
+      const target = getOrbitTarget(controls)?.clone() ?? new THREE.Vector3()
+      let targetZoom = camera instanceof THREE.OrthographicCamera ? camera.zoom : 1
+
       if (camera instanceof THREE.OrthographicCamera) {
-        camera.zoom = clamp(camera.zoom * zoomFactor, MIN_ORTHOGRAPHIC_ZOOM, MAX_ORTHOGRAPHIC_ZOOM)
-        camera.updateProjectionMatrix()
+        targetZoom = clamp(camera.zoom * zoomFactor, MIN_ORTHOGRAPHIC_ZOOM, MAX_ORTHOGRAPHIC_ZOOM)
         syncOrthographicClipToVisibleScene()
       } else if (camera instanceof THREE.PerspectiveCamera) {
-        const orbitTarget = controls && typeof controls === 'object' && 'target' in controls
-          ? (controls as { target: THREE.Vector3 }).target
-          : null
+        const orbitTarget = getOrbitTarget(controls)
         const direction = zoomDirectionRef.current
 
         if (orbitTarget) {
+          target.copy(orbitTarget)
           direction.copy(camera.position).sub(orbitTarget)
           let currentDistance = direction.length()
 
@@ -764,16 +777,38 @@ export const useCameraSnap = () => {
           direction.normalize()
           const maxDistance = Math.max(5000, camera.far * 0.9)
           const nextDistance = clamp(currentDistance / zoomFactor, 0.01, maxDistance)
-          camera.position.copy(orbitTarget).addScaledVector(direction, nextDistance)
+          targetPosition.copy(orbitTarget).addScaledVector(direction, nextDistance)
         } else {
           camera.getWorldDirection(direction)
-          camera.position.addScaledVector(direction, zoomFactor > 1 ? 1.5 : -1.5)
+          targetPosition.addScaledVector(direction, zoomFactor > 1 ? 1.5 : -1.5)
         }
       }
 
-      if (controls && 'update' in controls) {
-        (controls as { update: () => void }).update()
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      if (prefersReducedMotion) {
+        camera.position.copy(targetPosition)
+        if (camera instanceof THREE.OrthographicCamera) {
+          camera.zoom = targetZoom
+          camera.updateProjectionMatrix()
+        }
+        setOrbitTarget(controls, target)
+        syncOrthographicClipToVisibleScene()
+        invalidate()
+        return
       }
+
+      const anim = animRef.current
+      anim.commandId = useViewportShellStore.getState().cameraCommandId
+      anim.startPosition.copy(camera.position)
+      anim.endPosition.copy(targetPosition)
+      anim.startTarget.copy(getOrbitTarget(controls) ?? target)
+      anim.endTarget.copy(target)
+      anim.startZoom = camera instanceof THREE.OrthographicCamera ? camera.zoom : 1
+      anim.endZoom = targetZoom
+      anim.startTime = performance.now()
+      anim.duration = 320
+      anim.allowDuringManual = true
+      anim.active = true
       invalidate()
     }
 
@@ -819,7 +854,38 @@ export const useCameraSnap = () => {
             controls,
           })
           if (applied) {
-            replayProjectionTransitionFrame(frame)
+            if (targetProjection === 'orthographic') {
+              const fittedTarget = resolveSceneZoomToFitTarget({
+                camera,
+                scene,
+                controls,
+                viewportSize,
+                viewPreset: state.selectedCameraPreset,
+                bounds: fitBoundsRef.current,
+                sphere: fitSphereRef.current,
+                direction: fitDirectionRef.current,
+                objectBounds: fitObjectBoundsRef.current,
+              })
+
+              if (fittedTarget) {
+                const [fitX, fitY, fitZ] = fittedTarget.position
+                camera.position.set(fitX, fitY, fitZ)
+                if (camera instanceof THREE.OrthographicCamera && fittedTarget.zoom != null) {
+                  camera.zoom = fittedTarget.zoom
+                  camera.updateProjectionMatrix()
+                }
+                const [targetX, targetY, targetZ] = fittedTarget.target
+                const fittedCenter = new THREE.Vector3(targetX, targetY, targetZ)
+                camera.lookAt(fittedCenter)
+                camera.updateMatrixWorld()
+                setOrbitTarget(controls, fittedCenter)
+                syncOrthographicClipToVisibleScene()
+              } else {
+                replayProjectionTransitionFrame(frame)
+              }
+            } else {
+              replayProjectionTransitionFrame(frame)
+            }
             projectionTransitionRef.current = null
           }
         }
@@ -897,9 +963,12 @@ export const useCameraSnap = () => {
           anim.startTarget.set(0, 0, 0)
         }
         anim.endTarget.set(...target.target)
+        anim.startZoom = camera instanceof THREE.OrthographicCamera ? camera.zoom : 1
+        anim.endZoom = camera instanceof THREE.OrthographicCamera ? target.zoom ?? camera.zoom : 1
 
         anim.startTime = performance.now()
         anim.duration = 600
+        anim.allowDuringManual = false
         anim.active = true
         invalidate()
         return
@@ -965,9 +1034,12 @@ export const useCameraSnap = () => {
         anim.startTarget.set(0, 0, 0)
       }
       anim.endTarget.set(...target.target)
+      anim.startZoom = camera instanceof THREE.OrthographicCamera ? camera.zoom : 1
+      anim.endZoom = camera instanceof THREE.OrthographicCamera ? target.zoom ?? camera.zoom : 1
 
       anim.startTime = performance.now()
       anim.duration = 600
+      anim.allowDuringManual = false
       anim.active = true
       invalidate()
     }

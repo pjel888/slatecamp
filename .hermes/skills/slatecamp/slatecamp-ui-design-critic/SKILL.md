@@ -26,6 +26,17 @@ Use for reviewing screens, components, flows, layout, interaction states, visual
 
 Good UI should make the next action obvious and reduce cognitive load. Visual polish must support product clarity.
 
+Philip-specific calibration:
+- Uniformity is a core requirement, not a cosmetic preference.
+- Layouts should read as deliberate grids: aligned columns, shared x-axes, equal sibling treatment, and consistent spacing.
+- Related toolbar controls must share button size, icon size, label treatment, and placement.
+- Paired sidebars/cards should share surface logic unless a semantic difference requires otherwise.
+- Do not claim visual parity by eye; verify with screenshot or DOM measurements when possible.
+- For 3D Lab, preserve the viewport as the learning surface: left = essential controls, right = live feedback/compliance, no hidden primary features.
+
+Reference before SlateCamp UI critique or polish:
+- `.ai/00_system/philip-ux-ui-calibration.md`
+
 ## Output
 
 Use `templates/design-review.md`.

@@ -10,6 +10,7 @@ interface ViewportHeaderProps {
   totalCount?: number
   onBack: () => void
   className?: string
+  desktopGridTemplateColumns?: string
 }
 
 /**
@@ -23,25 +24,30 @@ export const ViewportHeader = ({
   totalCount = 0,
   onBack,
   className,
+  desktopGridTemplateColumns,
 }: ViewportHeaderProps) => {
   return (
     <div
       className={cn(
-        'flex items-center justify-between px-4 shrink-0 h-10 bg-card text-muted-foreground border-b border-border',
+        'grid shrink-0 h-10 bg-card text-muted-foreground border-b border-border',
         className,
       )}
+      style={{ gridTemplateColumns: desktopGridTemplateColumns ?? '384px 20px minmax(0, 1fr) 20px 384px' }}
     >
       {/* Left: Back link */}
-      <button
-        onClick={onBack}
-        className="flex items-center gap-1.5 transition-colors duration-150 ease-out cursor-pointer bg-transparent border-0 p-0 font-mono text-[10px] uppercase tracking-wider text-muted-foreground hover:text-foreground"
-      >
-        <ArrowLeft className="h-3.5 w-3.5" />
-        <span>Back to Browser</span>
-      </button>
+      <div className="flex min-w-0 items-center px-4">
+        <button
+          onClick={onBack}
+          className="flex items-center gap-1.5 transition-colors duration-150 ease-out cursor-pointer bg-transparent border-0 p-0 font-mono text-[10px] uppercase tracking-wider text-muted-foreground hover:text-foreground"
+        >
+          <ArrowLeft className="h-3.5 w-3.5" />
+          <span>Back to Browser</span>
+        </button>
+      </div>
+      <div aria-hidden="true" />
 
       {/* Center: Module title + code reference */}
-      <div className="flex items-center gap-2.5">
+      <div className="flex min-w-0 items-center justify-center gap-2.5 px-3 text-center">
         <span className="font-sans text-[12px] font-semibold text-foreground tracking-tight">
           {title}
         </span>
@@ -54,9 +60,10 @@ export const ViewportHeader = ({
           </>
         )}
       </div>
+      <div aria-hidden="true" />
 
       {/* Right: Progress + Settings */}
-      <div className="flex items-center gap-2">
+      <div className="flex min-w-0 items-center justify-end gap-2 px-4">
         {totalCount > 0 && (
           <>
             <div className="h-1 w-16 bg-muted rounded-full overflow-hidden hidden sm:block">

@@ -118,6 +118,7 @@ describe('computeStairState — preset validation', () => {
     expect(anyLawFailsDimension({ ...baseParams, stairWidth: 900 }, 'stairWidth')).toBe(true)
     expect(anyLawFailsDimension({ ...baseParams, headroom: 1900 }, 'headroom')).toBe(true)
     expect(anyLawFailsDimension({ ...baseParams, handrailHeight: 950 }, 'handrailHeight')).toBe(true)
+    expect(anyLawFailsDimension({ ...baseParams, numRisers: 21 }, 'verticalRise')).toBe(true)
 
     expect(anyLawFailsDimension({ ...baseParams, riserHeight: 175 }, 'riserHeight')).toBe(false)
     expect(anyLawFailsDimension({ ...baseParams, treadDepth: 300 }, 'treadDepth')).toBe(false)

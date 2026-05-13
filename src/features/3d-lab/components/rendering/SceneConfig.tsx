@@ -2,7 +2,7 @@
 
 import { useEffect, useCallback, useMemo, useRef, type MutableRefObject } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
-import { OrbitControls, OrthographicCamera } from '@react-three/drei'
+import { OrbitControls, OrthographicCamera, PerspectiveCamera } from '@react-three/drei'
 import * as THREE from 'three'
 import { StudioLighting } from './StudioLighting'
 import type { LightingPreset } from './StudioLighting'
@@ -15,7 +15,6 @@ import {
 } from '@/features/3d-lab/components/controls/ThreeDLabControlsProvider'
 import {
   getEffectiveCameraProjectionMode,
-  isProjectionCommandPreset,
 } from '@/features/3d-lab/utils/camera-presets'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -164,49 +163,6 @@ const CameraDiagnostics = () => {
     const diagnostics = (window as CameraDiagnosticsWindow).__slatecamp3dLabCamera
     if (diagnostics?.read === readSnapshot) diagnostics.last = readSnapshot()
   })
-
-  return null
-}
-
-// ─── CameraSetup ─────────────────────────────────────────────────────────────
-
-/**
- * Imperatively configures the existing perspective camera.
- * Uses useEffect (not declarative props) to avoid fighting with OrbitControls
- * on parent re-renders — OrbitControls modifies camera.position directly,
- * and declarative position props would reset it.
- */
-const CameraSetup = ({
-  position,
-  fov,
-  near,
-  far,
-}: {
-  position: [number, number, number]
-  fov: number
-  near: number
-  far: number
-}) => {
-  const camera = useThree((s) => s.camera)
-  const invalidate = useThree((s) => s.invalidate)
-  const [x, y, z] = position
-
-  useEffect(() => {
-    const activeCommand = useViewportShellStore.getState().cameraCommandPreset
-    if (activeCommand === 'reset' || (activeCommand != null && isProjectionCommandPreset(activeCommand))) {
-      invalidate()
-      return
-    }
-
-    camera.position.set(x, y, z)
-    if (camera instanceof THREE.PerspectiveCamera) {
-      camera.fov = fov
-      camera.near = near
-      camera.far = far
-      camera.updateProjectionMatrix()
-    }
-    invalidate()
-  }, [camera, x, y, z, fov, near, far, invalidate])
 
   return null
 }
@@ -600,7 +556,10 @@ export const SceneConfig = ({
           slatecampControlProvider: 'ThreeDLabControlsProvider',
         }}
       />
-      {/* Camera — orthographic uses drei component; perspective uses imperative setup */}
+      {/* Camera — keep both projection modes as explicit makeDefault cameras.
+          Without a makeDefault perspective camera, switching back from the
+          OrthographicCamera can leave R3F/OrbitControls bound to the old
+          orthographic camera, making the model appear permanently gone. */}
       {useOrthographicCamera ? (
         <OrthographicCamera
           key="orthographic-camera"
@@ -611,7 +570,14 @@ export const SceneConfig = ({
           far={cameraFar}
         />
       ) : (
-        <CameraSetup position={cameraPosition} fov={cameraFov} near={cameraNear} far={cameraFar} />
+        <PerspectiveCamera
+          key="perspective-camera"
+          makeDefault
+          position={cameraPosition}
+          fov={cameraFov}
+          near={cameraNear}
+          far={cameraFar}
+        />
       )}
 
       {/* Controls — deterministic pan override + OrbitControls orbit/zoom fallback */}

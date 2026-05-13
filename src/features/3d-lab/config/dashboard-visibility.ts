@@ -10,7 +10,7 @@
  */
 export const DASHBOARD_VISIBLE_IDS: ReadonlySet<string> = new Set([
   'site-development-controls',
-  'stairway-configurator',
+  'stairway-code-compliance',
   'calculator-flooring',
   'unified-wall-configurator',
   'bp344-accessible-route-ramp',

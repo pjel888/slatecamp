@@ -32,14 +32,29 @@ export function InstructionMesh({
       position={inst.position}
       rotation={inst.rotation ?? [0, 0, 0]}
       scale={inst.scale ?? [1, 1, 1]}
+      frustumCulled={false}
       onClick={onClick}
+      userData={{ slatecampCameraFitExclude: inst.cameraFitExclude === true }}
     >
       <GeometryElement inst={inst} />
-      <meshStandardMaterial
-        color={inst.color}
-        opacity={inst.opacity ?? 1}
-        transparent={inst.transparent ?? (inst.opacity !== undefined && inst.opacity < 1)}
-      />
+      {inst.material === 'basic' ? (
+        <meshBasicMaterial
+          color={inst.color}
+          opacity={inst.opacity ?? 1}
+          transparent={inst.transparent ?? (inst.opacity !== undefined && inst.opacity < 1)}
+          depthWrite={inst.depthWrite ?? true}
+          toneMapped={false}
+        />
+      ) : (
+        <meshStandardMaterial
+          color={inst.color}
+          opacity={inst.opacity ?? 1}
+          transparent={inst.transparent ?? (inst.opacity !== undefined && inst.opacity < 1)}
+          depthWrite={inst.depthWrite ?? true}
+          roughness={0.86}
+          metalness={0}
+        />
+      )}
     </mesh>
   )
 }
