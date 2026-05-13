@@ -1,30 +1,29 @@
 {
   "article_id": "d862de93-c876-468d-9edf-95656a781f55",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6c66ae192f1aa131ada328b7719a735907aca2a2382d3a94d0180dc1bbe6420c",
   "question_count": 12,
   "questions": [
     {
       "question_id": "6f15e5f4-9ab2-4c1d-a1b3-87ad9c9ca629",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Design a sun shading strategy for a Coronas Type IV school building in Cebu (year-round rain, high humidity, diffuse light dominant). Integrate shading, daylighting, and BERDE Health/Wellbeing requirements without sacrificing passive ventilation.",
+      "text": "What is the primary tropical-design purpose of a solar shading device?",
       "options": [
         {
           "id": "a",
-          "text": "Type IV humidity eliminates shading effectiveness; mechanical cooling is mandatory, which is a common misconception"
+          "text": "To decorate the facade regardless of sun direction."
         },
         {
           "id": "b",
-          "text": "South/north-facing: 1.0–1.5m moderate overhangs (block direct sun, admit diffuse). East/west: vertical fins (0.4m width, 1.0m spacing) + light shelves for deep daylighting. Material: Aluminum + perforated metal allowing ventilation louver integration (prevent blocking stack effect exhaust). Result: 35–45% cooling load reduction, daylight autonomy ≥55% (BERDE daylighting 2–3 points), thermal comfort ≤27°C (BERDE 2 points), natural ventilation ≥6 ACH (passive design 3 points). Total: 7–8 shading-related BERDE points without sacrificing health benefits (daylighting, ventilation, thermal comfort)"
+          "text": "To reduce direct sun, glare, and heat gain while preserving useful daylight and airflow where possible."
         },
         {
           "id": "c",
-          "text": "Seal windows with dark tint to prevent all solar gain and use electric lighting, which negates passive design benefits"
+          "text": "To make every room dark."
         },
         {
           "id": "d",
-          "text": "Ventilation and shading are mutually exclusive; choose one strategy, which oversimplifies the design process"
+          "text": "To replace climate analysis."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +32,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Type IV humidity increases cooling demand, but shading still provides 35–45% load reduction.",
-        "c": "Dark tint eliminates daylighting and biophilic benefits; this violates BERDE health priorities.",
-        "d": "Thoughtful louver design (avoid blocking stack exhaust vents) allows both strategies simultaneously.",
-        "correct": "This comprehensive design question integrates climate, performance, and certification. Moderate shading (1.0–1.5m) balances Type IV cloud cover (need diffuse light) with cooling load reduction. Ventilation integration (avoiding louver obstruction of exhaust) preserves passive strategy. BERDE scoring reflects health benefits (daylighting, comfort, air quality) beyond thermal metrics.",
-        "takeaway": "BERDE scoring reflects health benefits (daylighting, comfort, air quality) beyond thermal metrics."
+        "correct": "To reduce direct sun, glare, and heat gain while preserving useful daylight and airflow where possible. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "To reduce direct sun, glare, and heat gain while preserving useful daylight and airflow where possible. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +50,30 @@
       "model_id": "ALE-THEO-004-13-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a51adb41cd73b2fff89e7eb0c333885ba225e87a2ab4a64133506c86435fa5ff"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:c1b65805aa5b8f651f644eba71d2ed2759a48bdd411b97e5c0db2a1d876168db"
     },
     {
       "question_id": "7c3964fa-ce6d-423b-9483-6b44365ea8c1",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "What does 'direct radiation' refer to in solar shading context, and how does it differ from 'diffuse radiation'?",
+      "text": "Which distinction is source-safe for daylight and shading questions?",
       "options": [
         {
           "id": "a",
-          "text": "Diffuse radiation creates all cooling load; direct is negligible, which is a common misconception in tropical design"
+          "text": "Direct radiation and diffuse light are the same design problem."
         },
         {
           "id": "b",
-          "text": "Direct radiation only occurs at solar noon, which is a misunderstanding of solar dynamics"
+          "text": "Diffuse sky light always creates more heat than direct sun."
         },
         {
           "id": "c",
-          "text": "Both terms are synonymous; no distinction exists, which is incorrect as they have distinct impacts on building design"
+          "text": "Direct sun never causes glare."
         },
         {
           "id": "d",
-          "text": "Direct radiation: Solar energy arriving straight from sun disk (60–75% of total in tropics); blocked by external shading. Diffuse radiation: Solar energy scattered by atmosphere/clouds; can pass around shading devices. Tropical design blocks direct while admitting diffuse for daylighting without heat gain"
+          "text": "Direct radiation comes from the sun direction; diffuse daylight is scattered sky light that can still be useful."
         }
       ],
       "correct_option_id": "d",
@@ -85,14 +82,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Direct radiation accounts for 60–75% of tropical solar load; diffuse is secondary.",
-        "b": "Direct radiation occurs throughout the day; sun angle varies but rays are always straight-line from disk.",
-        "c": "Distinction is fundamental; shading strategies depend on understanding this difference.",
-        "correct": ": 'Solar shading controls direct radiation (energy arriving straight from sun disk) while admitting diffuse radiation (scattered by atmosphere)... Blocking this while maintaining diffuse light is the central optimization challenge.'",
-        "takeaway": "Blocking this while maintaining diffuse light is the central optimization challenge.'."
+        "correct": "Direct radiation comes from the sun direction; diffuse daylight is scattered sky light that can still be useful. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Direct radiation comes from the sun direction; diffuse daylight is scattered sky light that can still be useful. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +100,30 @@
       "model_id": "ALE-THEO-004-13-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:361d04e09c613a4700d6e8098a56890cfa0d5f7ffdddb8cf9dd19f28467f4923"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:50f59e44a9fecc974d80e7b47bd6d9d08b163cca29109d0c8668ac95ce1a05a2"
     },
     {
       "question_id": "2404278a-c269-409e-915a-2c5f1a45d3bd",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Compare deep overhangs (bahay kubo vernacular strategy) versus adjustable horizontal louvers for south-facing windows in tropical architecture. Which is cost-effective for Coronas Type IV (year-round rainfall, perpetual diffuse light)?",
+      "text": "Why might adjustable louvers be selected instead of a fixed overhang?",
       "options": [
         {
           "id": "a",
-          "text": "Louvers are universally superior regardless of climate type"
+          "text": "They never require maintenance."
         },
         {
           "id": "b",
-          "text": "Deep overhangs provide no daylighting benefit"
+          "text": "They remove all need for sun-angle study."
         },
         {
           "id": "c",
-          "text": "Deep overhangs: One-time cost, no maintenance; effective thermal control (40–50% reduction). Louvers: Higher capital cost, mechanical complexity, maintenance overhead. In Type IV perpetual cloud cover, blocking winter light is actually liability; deep fixed overhang reduces daytime illumination 30–40%. Louvers allow seasonal/weather adjustment—open during cloudy periods, angled during rare clear skies. Cost: Louvers justified only if manual adjustment frequent. For passive low-maintenance design, vernacular 1.5–2.0m overhang (moderate overshade) balances thermal and daylighting"
+          "text": "They can respond to changing sun position, glare, and use conditions, but operation and maintenance must be considered."
         },
         {
           "id": "d",
-          "text": "Deep overhangs (2.0–3.0m) block beneficial winter diffuse light; louvers are superior for perpetual cloud cover"
+          "text": "They work only when sealed behind glass."
         }
       ],
       "correct_option_id": "c",
@@ -137,14 +132,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Louvers have mechanical cost/complexity; vernacular fixed strategy may be more cost-effective for low-change-frequency climates.",
-        "b": "Deep overhangs reduce daylighting; this is a measured effect (30–40% reduction possible in deep shadows).",
-        "d": "Overhangs do block some diffuse light; this is a real constraint in perpetually cloudy climates.",
-        "correct": "This tests cost-benefit and climate-responsive judgment. Deep overhangs are vernacular strategy optimized for seasonal variation (Type I); Type IV perpetual cloud cover makes fixed deep geometry problematic (blocks beneficial diffuse light). Moderate 1.5–2.0m overhang + manual louver adjustment (if needed) provides flexibility without motorized cost. This is the practical design decision for Type IV.",
-        "takeaway": "This is the practical design decision for Type IV."
+        "correct": "They can respond to changing sun position, glare, and use conditions, but operation and maintenance must be considered. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They can respond to changing sun position, glare, and use conditions, but operation and maintenance must be considered. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +150,30 @@
       "model_id": "ALE-THEO-004-13-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fbd000c9a8c4071714235b324e0c1c7de4be0325fb877495efef26e2100a38e0"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:ce532d4c3b1cb4e96b768df41dbce17851242eb44111e6bdd43f38565763595f"
     },
     {
       "question_id": "9056d1dc-450f-4fd3-8c41-63b24c8dece4",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Design a south-facing window brise-soleil for Manila (14.6°N). At winter solstice noon (solar altitude 59.5°), a 2.0m-tall window requires certain protection. At summer solstice noon (altitude 79.5°), diffuse light penetration is acceptable. What shading approach is practical?",
+      "text": "What is the source-safe approach for a southern facade needing high-sun control?",
       "options": [
         {
           "id": "a",
-          "text": "Fixed overhang creates impractical 3.2m depth for winter 59.5° altitude. Instead: horizontal louvers angled 60–70° from horizontal provide seasonal flexibility—winter sun penetrates louver gaps (diffuse light), summer high-altitude sun is blocked by louver top surface. This elegantly solves tropical high-altitude dilemma"
+          "text": "Consider horizontal overhangs or louvers and verify them against the local sun path and design constraints."
         },
         {
           "id": "b",
-          "text": "Fixed overhangs 2.0m deep are always optimal regardless of latitude, which is not true for varying solar angles"
+          "text": "Use vertical fins only and ignore altitude."
         },
         {
           "id": "c",
-          "text": "Fixed overhang depth = 2.0m / tan(59.5°) = 1.2m. This blocks winter sun but is excessive for summer; a static solution cannot satisfy both seasons effectively"
+          "text": "Avoid all daylight."
         },
         {
           "id": "d",
-          "text": "Tropical buildings should not shade south facades; winter sun penetration is beneficial, which ignores the need for summer shading"
+          "text": "Copy a detail from another latitude without checking it."
         }
       ],
       "correct_option_id": "a",
@@ -189,14 +182,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "2.0m fixed overhangs cannot satisfy both summer and winter in tropics; variable shading is required.",
-        "c": "Calculation is correct but the issue (impracticality) is recognized; louver solution is the standard approach.",
-        "d": "While south facades benefit from some winter sun in temperate zones, tropical high-altitude winter sun (59.5°) is still intense; shading is necessary.",
-        "correct": "Winter overhang depth = 2.0 × tan(59.5°) = 3.2m; this is impractical... Instead, horizontal louvers angled 60–70° from horizontal are more effective.' This is the tested critical design insight for tropical solar geometry.",
-        "takeaway": "Instead, horizontal louvers angled 60–70° from horizontal are more effective.' This is the tested critical design insight for tropical solar geometry."
+        "correct": "Consider horizontal overhangs or louvers and verify them against the local sun path and design constraints. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Consider horizontal overhangs or louvers and verify them against the local sun path and design constraints. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +200,30 @@
       "model_id": "ALE-THEO-004-13-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:18dcbcadb524ba27663f7519141a7e568066fe32addb726655bcf3002fca27bb"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:9c943000375d9880d5717ae6edc34c9350b990b4b958490b231c668b286f0878"
     },
     {
       "question_id": "f3695619-4542-4d4a-93b5-468177a9a31b",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Why are motorized louver systems cost-justified in Coronas Type III/IV (interior/distributed rainfall) but less valuable in Type I (pronounced dry/wet seasonal variation)?",
+      "text": "When is motorized shading source-safe to recommend?",
       "options": [
         {
           "id": "a",
-          "text": "Motorized systems are universally necessary for all tropical climates, providing consistent performance across all conditions"
+          "text": "Whenever it looks more advanced."
         },
         {
           "id": "b",
-          "text": "Motorized systems eliminate need for passive shading design, simplifying architectural planning"
+          "text": "Only when the facade faces north."
         },
         {
           "id": "c",
-          "text": "Type I climate is too hot for any shading optimization, making motorized systems redundant"
+          "text": "Whenever the project wants a rating-system point."
         },
         {
           "id": "d",
-          "text": "Type I strong monsoon seasonality (SW 225° May–Oct, NE 045° Nov–Apr) creates pronounced wind angle variation justifying fixed geometry tuned to seasonal average. Motorized adjustment cost cannot recoup seasonal adaptation benefit. Type III/IV year-round wind/rainfall variation without seasonal extremes makes continuous dynamic adjustment valuable. Cost-benefit is marginal in Type I; fixed design suffices. Type III/IV benefits from motorized optimization during transitional seasons"
+          "text": "When operation, user control, maintenance, safety, and performance needs justify the added complexity."
         }
       ],
       "correct_option_id": "d",
@@ -241,14 +232,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cost-benefit analysis determines necessity; universal application is inefficient.",
-        "b": "Motorized systems supplement, not replace, passive geometry; design foundation remains static.",
-        "c": "Type I heat is intense but shading effectiveness is consistent year-round; fixed design suffices.",
-        "correct": "Motorized louvers: Cost-benefit marginal in Type I/II perpetual heat. Type III/IV moderate seasonality justifies dynamic adjustment during transitional seasons (Oct–Nov, Feb–Mar) when solar orientation shifts rapidly.' Fixed design optimizes seasonal average; motors provide marginal gain in Type I but substantial gain in Type III/IV.",
-        "takeaway": "Type III/IV moderate seasonality justifies dynamic adjustment during transitional seasons (Oct–Nov, Feb–Mar) when solar orientation shifts rapidly.' Fixed design optimizes seasonal average; motors provide marginal gain in Type I but substantial gain in Type III/IV."
+        "correct": "When operation, user control, maintenance, safety, and performance needs justify the added complexity. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "When operation, user control, maintenance, safety, and performance needs justify the added complexity. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +250,30 @@
       "model_id": "ALE-THEO-004-13-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:018cc04f05c374c20364baf0b572c157f19353470003dae047e885e233355962"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:cb86531c2b596001e1fe0047d4132b4ab62898a0e43ff4aa739029b69a1a8f87"
     },
     {
       "question_id": "3213a792-0d75-4247-bd60-226c19c5c6ec",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Compare Le Corbusier's brise-soleil geometry (0.5–1.5m thick concrete shelves, egg-crate pattern) designed for Chandigarh (31°N) to what would be required for Manila (14.6°N). Why is direct copying problematic?",
+      "text": "Why is copy-pasting a brise-soleil detail from another project risky?",
       "options": [
         {
           "id": "a",
-          "text": "Tropical latitudes never need brise-soleil; vertical fins suffice, which is a simplification that overlooks specific climatic needs"
+          "text": "Brise-soleil devices never shade anything."
         },
         {
           "id": "b",
-          "text": "Chandigarh winter altitude = 36°; Manila winter = 59.5° (23° difference). Chandigarh deep 1.5m overhangs block low 36° winter sun. Manila's steep 59.5° angle makes Chandigarh overhangs undersized; winter sun penetrates deeply. Egg-crate cell spacing (0.5–0.7m at 31°N) becomes oversized for Manila's high altitude—insufficient shading for tropical geometry. Manila requires shallower, more densely spaced geometry adapted to low latitude"
+          "text": "Sun path, latitude, facade orientation, window geometry, use, and maintenance context can differ."
         },
         {
           "id": "c",
-          "text": "Le Corbusier's geometry is universally applicable regardless of latitude, which is a common misconception in architectural design"
+          "text": "All projects have identical solar exposure."
         },
         {
           "id": "d",
-          "text": "Chandigarh and Manila solar geometry are identical; brise-soleil design directly transfers, which ignores the specific solar angles and climatic conditions"
+          "text": "Only the material color matters."
         }
       ],
       "correct_option_id": "b",
@@ -293,14 +282,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Tropical latitudes benefit from brise-soleil; the geometry differs from temperate models.",
-        "c": "Universal application ignores latitude-specific solar geometry; adaptation is necessary.",
-        "d": "Latitude directly affects solar altitude; geometry must be calibrated to local solar position.",
-        "correct": "Copying Chandigarh egg-crate spacing (0.5–0.7 m cells, appropriate for 31°N) in Manila (14.6°N). Result: Oversized cells; insufficient shading for high-altitude tropical sun.' The 23° altitude difference fundamentally changes required geometry.",
-        "takeaway": "Result: Oversized cells; insufficient shading for high-altitude tropical sun.' The 23° altitude difference fundamentally changes required geometry."
+        "correct": "Sun path, latitude, facade orientation, window geometry, use, and maintenance context can differ. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Sun path, latitude, facade orientation, window geometry, use, and maintenance context can differ. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +300,30 @@
       "model_id": "ALE-THEO-004-13-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:32929bec72cf7452ca75f8c47f33db98ae3bb812cbf752742388a3917c20e943"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:0e053d1507eaab6aa28a88a161251a833ef10f921a4da62a21a784f281230d06"
     },
     {
       "question_id": "f27a51ac-b19b-483f-be48-00395caf9503",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Analyze how sun shading device design directly supports BERDE certification across multiple categories beyond passive cooling, and calculate total potential points if integrated throughout building.",
+      "text": "What should a source-safe LEA answer say about green-rating points for shading?",
       "options": [
         {
           "id": "a",
-          "text": "Only renewable energy and water management affect BERDE points, with no impact from shading devices"
+          "text": "Shading always earns a fixed point count."
         },
         {
           "id": "b",
-          "text": "Shading contributes <2% to BERDE scoring, making it a minor consideration in overall certification"
+          "text": "Points double when louvers are vertical."
         },
         {
           "id": "c",
-          "text": "Shading integration yields: Passive Design (3–4 points for 30–50% cooling reduction), Daylighting & Views (2–3 points for daylight autonomy ≥55% without glare), Thermal Comfort (2 points for ASHRAE 55 Category II via operative temperature ≤27°C), Health & Wellbeing (1–2 points for reduced glare/eye strain, improved psychological comfort from controlled light quality). Material selection (aluminum local vs. imported): Green Materials (1–2 points for local sourcing if available). Total: 9–14 points (12–20% of total BERDE threshold) from comprehensive shading strategy. Shading is not peripheral feature but central to green building performance"
+          "text": "Shading can support heat-gain, glare, and daylight goals, but point claims need the rating-system source and evidence."
         },
         {
           "id": "d",
-          "text": "Shading devices only affect cooling load; no other BERDE categories apply, limiting their overall impact"
+          "text": "Rating systems prohibit shading."
         }
       ],
       "correct_option_id": "c",
@@ -345,14 +332,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Passive design (shading, ventilation, daylighting) carries equal or greater weight than mechanical systems in tropical BERDE certification.",
-        "b": "Shading contributes 12–20% of BERDE points; this is significant.",
-        "d": "Shading supports multiple BERDE categories; cooling is only one benefit.",
-        "correct": "This synthesizes testing theme: shading is multifunctional. Beyond direct cooling reduction, it provides daylighting control (enabling high-autonomy metrics), thermal comfort support (operative temperature), health/wellbeing (glare reduction, psychological comfort), and material strategy opportunity (local sourcing). This integrated approach yields 9–14 BERDE points—substantial contribution demonstrating shading's central role in green building design.",
-        "takeaway": "This integrated approach yields 9–14 BERDE points—substantial contribution demonstrating shading's central role in green building design."
+        "correct": "Shading can support heat-gain, glare, and daylight goals, but point claims need the rating-system source and evidence. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Shading can support heat-gain, glare, and daylight goals, but point claims need the rating-system source and evidence. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -365,30 +350,30 @@
       "model_id": "ALE-THEO-004-13-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:68f1fc01097dd590109afb3ee1aea1df01d0efcb1e46ac753ab64a50adad82aa"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:c55523a6f14c6d9681147f5e137340f5ebb83cd252fc333de774e41ba81c005e"
     },
     {
       "question_id": "de7db05a-2318-4c7a-a3c5-bd7ff2447ed7",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Explain why light shelves are particularly valuable in deep floor-plate office buildings in tropical climates where monsoon cloud cover is common, and quantify the benefit.",
+      "text": "What is a light shelf in the checked design context?",
       "options": [
         {
           "id": "a",
-          "text": "Light shelves only function with direct sun, which is rare in monsoon climates, limiting their effectiveness in such environments."
+          "text": "A storage shelf beside a window."
         },
         {
           "id": "b",
-          "text": "Cloud cover eliminates all shading benefit, making light shelves redundant in tropical climates where overcast conditions prevail."
+          "text": "A device that blocks all daylight."
         },
         {
           "id": "c",
-          "text": "Light shelves redirect high-angle diffuse light to ceiling/deep interior, achieving daylighting penetration 12–15m (vs. 5–8m window-only). Even in Type II/IV perpetual cloud cover, diffuse light remains intense (Coronas Type II ~800 lux on cloudy day). Light shelves extend this ambient illumination deep into plan without concentrated heat at sill. Result: Daylight autonomy ≥55% (BERDE credit) without increased cooling load. Interior illumination is achieved; electric lighting reduced 40–50%"
+          "text": "A horizontal surface above eye level that can reflect daylight deeper into a space and shade the near-window area."
         },
         {
           "id": "d",
-          "text": "Light shelves are ineffective in cloudy tropical climates; direct sun is rare, and alternative daylighting strategies should be considered."
+          "text": "A roof vent for stack effect."
         }
       ],
       "correct_option_id": "c",
@@ -397,14 +382,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Light shelves function equally well with diffuse light; direct sun is optional.",
-        "b": "Cloud cover creates pure diffuse conditions ideal for light shelf performance (no glare, even illumination).",
-        "d": "Cloud cover provides intense diffuse light (~800 lux); light shelves maximize this resource.",
-        "correct": "In Type II/IV climates (perpetual cloud cover), diffuse light remains intense; light shelves extend penetration from 5–8m to 12–15m.' Even without direct sun, diffuse illumination is substantial. Light shelves are MORE valuable in cloudy tropics (Coronas Type II/IV) than in arid zones where they must filter direct sun.",
-        "takeaway": "Light shelves are MORE valuable in cloudy tropics (Coronas Type II/IV) than in arid zones where they must filter direct sun."
+        "correct": "A horizontal surface above eye level that can reflect daylight deeper into a space and shade the near-window area. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A horizontal surface above eye level that can reflect daylight deeper into a space and shade the near-window area. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -417,30 +400,30 @@
       "model_id": "ALE-THEO-004-13-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6cac25b6885c51f2c35b52e293c0623d5b15b0bcd2dc49d2afa770ec7fd5df3b"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:2ab9376b10a110afe49656c50c13606faafdcc385d70e7c6cba75477557a0d3d"
     },
     {
       "question_id": "8116b5ca-2a3a-4f29-a8c4-d09e389bb30c",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "What is a 'brise-soleil' and what architectural principle does it exemplify?",
+      "text": "What does brise-soleil mean as an architectural shading idea?",
       "options": [
         {
           "id": "a",
-          "text": "A type of thermal insulation material, which is used to reduce heat transfer"
+          "text": "A fully sealed curtain wall."
         },
         {
           "id": "b",
-          "text": "A reflective coating applied to window glass, enhancing energy efficiency"
+          "text": "A mechanical cooling system."
         },
         {
           "id": "c",
-          "text": "A fixed or adjustable external screen creating shadow patterns that evolve as solar position changes; expressed as architectural facade feature combining climate control with visual identity"
+          "text": "An exterior sun-breaking device or system used to control direct solar exposure."
         },
         {
           "id": "d",
-          "text": "A mechanical shading system requiring electrical operation, which can be automated for convenience"
+          "text": "A rainwater tank."
         }
       ],
       "correct_option_id": "c",
@@ -449,14 +432,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Brise-soleil is shading/screening, not insulation.",
-        "b": "Reflective glazing is distinct from brise-soleil structural shading.",
-        "d": "While adjustable versions exist, brise-soleil fundamentally operates passively; electrical operation is optional enhancement.",
-        "correct": "Brise-soleil is defined: 'A fixed or adjustable external screen creating shadow patterns that evolve daily and seasonally... is not hidden mechanical element but expressed facade feature—geometric patterns define building identity.'",
-        "takeaway": "is not hidden mechanical element but expressed facade feature—geometric patterns define building identity.'."
+        "correct": "An exterior sun-breaking device or system used to control direct solar exposure. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "An exterior sun-breaking device or system used to control direct solar exposure. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -469,30 +450,30 @@
       "model_id": "ALE-THEO-004-13-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:331d3f4cbe6d64f224a3db861025075574a72ffc57146ca046fab441b2852302"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:b217b2383527cf75404fed03230edd47490413cc5eaeaf9c4a1d629327792df8"
     },
     {
       "question_id": "926ad77c-6449-4a90-adf1-15c6213b6534",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "Specify a complete shading strategy for a mixed-use building (ground retail, upper residential) in Manila with 40% east-west facade area (solar liability). Include device types, materials, cooling load reduction, and BERDE point pathways.",
+      "text": "Which strategy is most defensible for difficult east or west sun?",
       "options": [
         {
           "id": "a",
-          "text": "Shading design has no BERDE relevance, as it does not directly impact energy efficiency or sustainability metrics"
+          "text": "Use only a shallow horizontal overhang."
         },
         {
           "id": "b",
-          "text": "Eliminate east-west windows entirely; orientation is the only solution, disregarding the potential for innovative shading devices"
+          "text": "Ignore low-angle sun because it is harmless."
         },
         {
           "id": "c",
-          "text": "East facade: 1.2m horizontal overhang + 0.4m vertical fins (0.8m spacing). West facade: 2.0m overhang + 0.5m fins. Material: Aluminum (lightweight, adjustable) frames with 50% open-area metal mesh (solar transmission reduction). Cooling load: 40% E-W facade reduction = 15–20% total building cooling savings (40% × 50% baseline cooling). BERDE points: Passive Design (3–4 points for >30% cooling load reduction), Daylighting (2–3 points for diffuse light penetration while blocking direct), Thermal Comfort (2 points for operative temperature ≤27°C). Total: 7–9 BERDE points from integrated shading strategy"
+          "text": "Consider vertical fins, louvers, or eggcrate combinations while minimizing exposed east-west glass and preserving airflow."
         },
         {
           "id": "d",
-          "text": "Generic wide overhangs (3m+) sufficient for all facades, assuming uniform solar exposure and ignoring facade-specific needs"
+          "text": "Use only skylights."
         }
       ],
       "correct_option_id": "c",
@@ -501,14 +482,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Shading design earns multiple BERDE categories (Passive Design, Daylighting, Thermal Comfort), making it highly relevant.",
-        "b": "Elimination loses daylighting benefit; thoughtful shading balances thermal and visual performance.",
-        "d": "Deep fixed overhangs are impractical for E-W in Manila; modular adjustable systems are cost-effective.",
-        "correct": "Testing approach: 'East-West Facade Shading Strategy: A 14-story Manila office building has 40% of facade area facing east and west. Design a comprehensive shading strategy combining vertical fins, horizontal shelves, and glazing selection. Calculate cooling load reduction percentage.' This integrates material, geometry, performance, and certification.",
-        "takeaway": "Calculate cooling load reduction percentage.' This integrates material, geometry, performance, and certification."
+        "correct": "Consider vertical fins, louvers, or eggcrate combinations while minimizing exposed east-west glass and preserving airflow. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Consider vertical fins, louvers, or eggcrate combinations while minimizing exposed east-west glass and preserving airflow. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -521,30 +500,30 @@
       "model_id": "ALE-THEO-004-13-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7a250df229e2b3b3ad87e4ff0970cace52965666120960cde1227cf3e8087bc4"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:66abdab2b891ce8af7aad3709facc9054eeeb5a3c2c293b29171dcd1453c1d9b"
     },
     {
       "question_id": "6848c504-1c44-4980-9560-00e39aa23109",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "An east-facing facade in Manila experiences 600 W/m² solar radiation at 6:00 AM (summer). Calculate the required overhang depth to block this early-morning sun. Then explain why vertical fins must supplement the overhang.",
+      "text": "Why might a west window need vertical control in addition to an overhang?",
       "options": [
         {
           "id": "a",
-          "text": "0.8m overhang alone is sufficient; vertical fins are unnecessary, as the overhang provides adequate shading throughout the morning"
+          "text": "Because west windows never receive direct sun."
         },
         {
           "id": "b",
-          "text": "Early morning (6am, altitude ~28°) overhang = 1.5m × tan(28°) = 0.8m. This depth blocks 6am sun but solar altitude increases to 40° by 8am, penetrating above the shallow overhang. Vertical fins angled 45–60° perpendicular to facade block low-angle oblique rays (6–8am) that overhangs alone miss. Combined horizontal (overhang) + vertical (fins) geometry is required for east facade effectiveness"
+          "text": "Because low afternoon sun can pass under a horizontal projection."
         },
         {
           "id": "c",
-          "text": "East facades do not require shading; only west facades are problematic due to afternoon sun exposure"
+          "text": "Because vertical fins calculate indoor air speed."
         },
         {
           "id": "d",
-          "text": "Vertical fins alone suffice without horizontal overhangs, as they can be adjusted to block varying sun angles throughout the day"
+          "text": "Because overhangs are illegal."
         }
       ],
       "correct_option_id": "b",
@@ -553,14 +532,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "0.8m blocks directly overhead sun but misses low-angle oblique rays; shading deficiency requires fins.",
-        "c": "East facade receives 600 W/m² (same magnitude as west); both E-W require aggressive shading.",
-        "d": "Vertical fins block low-angle rays, but horizontal elements block high-angle summer sun; both are necessary.",
-        "correct": "East facades require 2–3 meter overhangs... plus vertical fins angled to block low morning sun.' The calculation (0.8m) demonstrates that shallow overhangs cannot protect oblique early-morning rays; fins are essential complement.",
-        "takeaway": "plus vertical fins angled to block low morning sun.' The calculation (0.8m) demonstrates that shallow overhangs cannot protect oblique early-morning rays; fins are essential complement."
+        "correct": "Because low afternoon sun can pass under a horizontal projection. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Because low afternoon sun can pass under a horizontal projection. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -573,30 +550,30 @@
       "model_id": "ALE-THEO-004-13-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5e9784b12efec11707b0f1f130948e3903b150b13940ac0418238535e65b8780"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:f8a3e37612a0c0e132e55068c67044590379edb563719a8d66ac340825aa56c3"
     },
     {
       "question_id": "9faafdb3-5ce9-4541-a5b2-9ddbe85ff8b1",
       "article_id": "d862de93-c876-468d-9edf-95656a781f55",
       "topic_id": "c818b747-b490-4640-86cf-866bb8952d35",
-      "text": "What is an 'egg-crate screen' and what unique advantage does it provide over simple horizontal or vertical louvers?",
+      "text": "What is the basic logic of an eggcrate shading system?",
       "options": [
         {
           "id": "a",
-          "text": "Only horizontal shading is effective in tropical climates, as vertical elements do not significantly reduce solar heat gain"
+          "text": "It removes all windows."
         },
         {
           "id": "b",
-          "text": "Egg-crate screens prevent all light penetration; they create interior darkness, which is ideal for spaces requiring complete light control"
+          "text": "It shades only from rain."
         },
         {
           "id": "c",
-          "text": "A fixed grid pattern with no functional shading benefit, often used purely for decorative purposes rather than practical shading"
+          "text": "It works only as interior furniture."
         },
         {
           "id": "d",
-          "text": "A three-dimensional louver system combining horizontal and vertical elements simultaneously. Provides shading from both high-altitude sun (horizontal elements block noon rays) and low-altitude sun (vertical elements block morning/afternoon). Result: 50–70% cooling load reduction; superior to single-direction louvers"
+          "text": "It combines horizontal and vertical elements to control sun from more than one direction."
         }
       ],
       "correct_option_id": "d",
@@ -605,14 +582,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Vertical elements are essential for morning/afternoon; horizontal alone cannot handle full daily solar arc.",
-        "b": "20–40% light penetration allows interior illumination; they prevent darkness.",
-        "c": "Three-dimensional geometry provides functional integration of two shading directions.",
-        "correct": "Egg-crate screens are defined: 'Three-dimensional louver system combining horizontal and vertical elements; provides shading from both high angles (horizontal) and low angles (vertical) simultaneously... Daylighting penetration: 20–40% (higher transparency than full brise-soleil).'",
-        "takeaway": "Daylighting penetration: 20–40% (higher transparency than full brise-soleil).'."
+        "correct": "It combines horizontal and vertical elements to control sun from more than one direction. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It combines horizontal and vertical elements to control sun from more than one direction. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -625,8 +600,9 @@
       "model_id": "ALE-THEO-004-13-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7ce32c48ad5faa6d49d83d13fb8e777249747a7b5e082807e1ad9f205e434891"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:7f97317947ea848ccce21da4f07bf04e40bf8719d2322b3e82c922b198f50075"
     }
-  ]
+  ],
+  "linked_questions_hash": "sha256:79af2a6aead854f9da24e038bb78f7b3601c15bfe0818036f26e2533f96bd2a8"
 }

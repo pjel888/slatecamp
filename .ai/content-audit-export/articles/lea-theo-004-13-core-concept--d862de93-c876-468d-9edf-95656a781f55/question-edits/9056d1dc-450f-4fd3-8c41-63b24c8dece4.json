@@ -1,58 +1,60 @@
 {
   "question_id": "9056d1dc-450f-4fd3-8c41-63b24c8dece4",
-  "baseline_hash": "sha256:18dcbcadb524ba27663f7519141a7e568066fe32addb726655bcf3002fca27bb",
+  "baseline_hash": "sha256:e77e52cdb18a8bd300cfadae1e29a9d08c75168126292c9c5557ab8f3d755069",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Solar Shading Fundamentals.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "d862de93-c876-468d-9edf-95656a781f55",
     "parent_article_slug": "lea-theo-004-13-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 1201-1247",
-      "TOA 4 Tropical Architecture refined markdown lines 1258-1277",
-      "TOA 4 Tropical Architecture refined markdown lines 1315-1364"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-d862de93-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151"
+        "source_id": "batch-133-lea-theo-004-13-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Solar Shading Fundamentals",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md",
+        "sha256": "sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-13-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Solar Shading Fundamentals",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md",
+        "sha256": "sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "How should slanted louver angles be selected?",
+    "text": "What is the source-safe approach for a southern facade needing high-sun control?",
     "options": [
       {
         "id": "a",
-        "text": "According to the range of solar angles."
+        "text": "Consider horizontal overhangs or louvers and verify them against the local sun path and design constraints."
       },
       {
         "id": "b",
-        "text": "Randomly, because angle has no effect."
+        "text": "Use vertical fins only and ignore altitude."
       },
       {
         "id": "c",
-        "text": "Only by room name."
+        "text": "Avoid all daylight."
       },
       {
         "id": "d",
-        "text": "Only by paint color."
+        "text": "Copy a detail from another latitude without checking it."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "According to the range of solar angles. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Shading Fundamentals.",
-    "explanation": "According to the range of solar angles. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Shading Fundamentals.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151"
+    "rationale": {
+      "correct": "Consider horizontal overhangs or louvers and verify them against the local sun path and design constraints. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
+    },
+    "explanation": "Consider horizontal overhangs or louvers and verify them against the local sun path and design constraints. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
   },
   "batch_question_template_index": 4
 }

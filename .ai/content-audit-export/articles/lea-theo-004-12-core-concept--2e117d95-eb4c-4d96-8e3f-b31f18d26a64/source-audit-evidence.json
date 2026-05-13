@@ -1,10 +1,10 @@
 {
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-060-local-first",
-  "batch_number": 60,
-  "audit_mode": "local_first_raw_pdf_primary",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T21:02:00.000+08:00",
+  "batch_id": "source-audited-article-batch-133-local-first",
+  "batch_number": 133,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T18:45:00.000+08:00",
   "target": {
     "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
     "slug": "lea-theo-004-12-core-concept",
@@ -13,11 +13,11 @@
     "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/question-edits",
     "linked_questions": 11,
     "question_edits": 11,
-    "candidate_sha256": "sha256:ef96ecc8cf547f7e90ddd240d49e469602391d42af08f213aa532c2564af5be8"
+    "candidate_sha256": "sha256:ee432cabaf4f4b70e8be2709224c07175d06cb835916e2ae04b4e11f82c81210"
   },
   "raw_pdf_gate": {
     "status": "PASS",
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus local TOA 4 source family",
     "derivative_or_search_layers_used_as_primary_truth": false,
     "refined_markdown_used_only_as_locator": true,
     "all_legal_code_claims_have_pdf_locator": true,
@@ -26,21 +26,68 @@
     "blockers": [],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "source_id": "batch-133-lea-theo-004-12-core-concept-raw-source-capture",
+        "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+        "label": "Batch 133 raw source capture - Thermal Comfort",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Thermal Comfort; includes checked TOA 4 locators and official-source URL locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T18:45:00.000+08:00",
+        "updated_at": "2026-05-14T18:45:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md",
+        "local_sha256": "sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md#sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f",
+        "checked_markdown_lines": [
+          "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+          "TOA 4 lines 563-645 frame passive design as reducing heat gain, using natural ventilation, daylight, and cooler outdoor areas.",
+          "TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control.",
+          "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+          "ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants.",
+          "WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements."
+        ],
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
         "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
         "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172"
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-12-core-concept-refined-source-map",
+        "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+        "label": "Batch 133 refined source conversion - Thermal Comfort",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 133 raw source capture for Thermal Comfort.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T18:45:00.000+08:00",
+        "updated_at": "2026-05-14T18:45:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md",
+        "local_sha256": "sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md#sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md",
+        "upstream_capture_sha256": "sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f",
+        "checked_markdown_lines": [
+          "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+          "TOA 4 lines 563-645 frame passive design as reducing heat gain, using natural ventilation, daylight, and cooler outdoor areas.",
+          "TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control.",
+          "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+          "ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants.",
+          "WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements."
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
       }
     ]
   },
   "classification": {
-    "content_type": "theory-of-architecture-tropical-design",
+    "content_type": "theory-of-architecture-thermal-comfort",
     "contains_legal_or_code_claims": false,
     "source_risk_tier": "medium",
-    "requires_raw_pdf_audit": true,
+    "requires_raw_pdf_audit": false,
     "linked_questions_observed": 11,
     "question_edits_created": [
       "16cdfe20-bbc4-4cb2-acd9-1f59d7e4c335",
@@ -55,30 +102,33 @@
       "942b96fc-7324-404f-9a50-ed10943c9864",
       "dcc2b4f3-df05-4352-9353-04e5317c0c05"
     ],
-    "scenario_policy_status": "eligible-deferred",
-    "scenario_policy_reason": "A realistic tropical-site scenario could be useful, but Batch 060 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "In a naturally ventilated studio, the architect combines external shade, operable windows, high exhaust openings, ceiling fans where appropriate, moisture-resistant detailing, and user control. Comfort is evaluated as a combination of air temperature, radiant conditions, humidity, air movement, activity, and clothing rather than a single thermometer reading."
   },
   "claims": [
     {
-      "claim_id": "lea-theo-004-12-core-concept-b060-claim-01",
-      "claim_text": "Thermal Comfort is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "claim_id": "lea-theo-004-12-core-concept-b133-claim-01",
+      "claim_text": "Thermal Comfort is limited to checked local Batch 133 source capture and refined conversion artifacts.",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172",
+        "quoted_pdf_excerpt": "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds. | TOA 4 lines 563-645 frame passive design as reducing heat gain, using natural ventilation, daylight, and cooler outdoor areas. | TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control. | PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types. | ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants. | WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements.",
         "source_ids": [
-          "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01"
+          "batch-133-lea-theo-004-12-core-concept-raw-source-capture",
+          "batch-133-lea-theo-004-12-core-concept-refined-source-map"
         ]
       },
       "audit_result": "PASS"
     }
   ],
   "checked_markdown_lines": [
-    "TOA 4 Tropical Architecture refined markdown lines 513-591",
-    "TOA 4 Tropical Architecture refined markdown lines 622-660",
-    "TOA 4 Tropical Architecture refined markdown lines 840-874",
-    "TOA 4 Tropical Architecture refined markdown lines 1386-1420"
+    "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+    "TOA 4 lines 563-645 frame passive design as reducing heat gain, using natural ventilation, daylight, and cooler outdoor areas.",
+    "TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control.",
+    "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+    "ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants.",
+    "WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements."
   ],
-  "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+  "checked_pdf_pages": "TOA 4 tropical architecture PDF source family; exact page claims are not introduced by Batch 133.",
   "unverified_or_rejected_claims": [],
   "quality_protocol": {
     "roundtrip_protocol_preserved": true,

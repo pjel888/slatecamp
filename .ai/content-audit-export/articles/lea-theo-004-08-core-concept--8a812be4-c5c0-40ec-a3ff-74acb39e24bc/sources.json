@@ -1,33 +1,66 @@
 {
   "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
   "hash_algorithm": "sha256",
-  "source_count": 1,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
+      "source_id": "batch-133-lea-theo-004-08-core-concept-raw-source-capture",
       "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
-      "label": "TOA 4 Tropical Architecture - local raw PDF",
+      "label": "Batch 133 raw source capture - Solar Geometry Fundamentals",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148.",
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Solar Geometry Fundamentals; includes checked TOA 4 locators and official-source URL locators. Claims cite this artifact hash.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-11T20:48:00.000+08:00",
-      "updated_at": "2026-05-11T20:48:00.000+08:00",
+      "created_at": "2026-05-14T18:45:00.000+08:00",
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md",
+      "local_sha256": "sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738",
+      "checked_markdown_lines": [
+        "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+        "TOA 4 lines 563-645 frame passive design as reducing heat gain, using natural ventilation, daylight, and cooler outdoor areas.",
+        "TOA 4 lines 692-810 explain orientation, sun-path diagrams, azimuth, altitude, date lines, airflow, and Philippine prevailing wind seasons.",
+        "TOA 4 lines 1199-1247 and 1302-1352 list overhangs, louvers, eggcrate/brise-soleil, skylights, light shelves, and clerestories.",
+        "NOAA Solar Calculator glossary, https://gml.noaa.gov/grad/solcalc/glossary.html, lines 90-91 and 150-154: azimuth/elevation locate sky position and solar declination varies seasonally.",
+        "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+        "WBDG Sun Control and Shading Devices, https://www.wbdg.org/resources/sun-control-and-shading-devices, lines 80-87, 105-108, 125-143, and 150-160: shading controls heat gain, glare, daylight, sun angles, latitude transfer, and maintenance risk."
+      ],
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
       "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
       "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
+      "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+    },
+    {
+      "source_id": "batch-133-lea-theo-004-08-core-concept-refined-source-map",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "label": "Batch 133 refined source conversion - Solar Geometry Fundamentals",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion of the Batch 133 raw source capture for Solar Geometry Fundamentals.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T18:45:00.000+08:00",
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md",
+      "local_sha256": "sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md",
+      "upstream_capture_sha256": "sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738",
       "checked_markdown_lines": [
-        "TOA 4 Tropical Architecture refined markdown lines 708-810",
-        "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+        "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+        "TOA 4 lines 563-645 frame passive design as reducing heat gain, using natural ventilation, daylight, and cooler outdoor areas.",
+        "TOA 4 lines 692-810 explain orientation, sun-path diagrams, azimuth, altitude, date lines, airflow, and Philippine prevailing wind seasons.",
+        "TOA 4 lines 1199-1247 and 1302-1352 list overhangs, louvers, eggcrate/brise-soleil, skylights, light shelves, and clerestories.",
+        "NOAA Solar Calculator glossary, https://gml.noaa.gov/grad/solcalc/glossary.html, lines 90-91 and 150-154: azimuth/elevation locate sky position and solar declination varies seasonally.",
+        "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+        "WBDG Sun Control and Shading Devices, https://www.wbdg.org/resources/sun-control-and-shading-devices, lines 80-87, 105-108, 125-143, and 150-160: shading controls heat gain, glare, daylight, sun angles, latitude transfer, and maintenance risk."
       ],
-      "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
-      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ],
-  "sources_hash": "sha256:c7cb288f080923107d4fd44e5fe90caab4843bf956466aa7ef21a03452d8b61e"
+  "sources_hash": "sha256:126da876a87d9a06ac03831624fb31f4ed2955026057c8badfb112aaf1ee4436"
 }

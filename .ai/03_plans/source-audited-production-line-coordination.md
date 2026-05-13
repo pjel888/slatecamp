@@ -1,3 +1,13 @@
+## Batch 133 Coordination Update - 2026-05-14T18:58:00.000+08:00
+
+- Mode: internet-enabled local-first source-map/reservation pass.
+- Selected bundles: lea-theo-004-08-core-concept, lea-theo-004-09-core-concept, lea-theo-004-10-core-concept, lea-theo-004-12-core-concept, and lea-theo-004-13-core-concept.
+- Scope evidence: 5 article clusters, 56 linked questions, 56 question edits, 10 local source artifacts.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main.
+- Stop condition: local validation gates passed; live git staging is blocked by .git/index.lock permissions, so Hermes must stage only Batch 133/source files for `chore(content): accept source-audited batch 133` and leave unrelated dirty work untouched.
+
+---
+
 ## Batch 130 Git Index Blocked Handoff - 2026-05-14T04:50:00.000+08:00
 
 Local validation passed, but Codex could not write .git/index.lock: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should stage the Batch 130 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 130`, and push `origin/3dlab-gray-viewport-bg`.

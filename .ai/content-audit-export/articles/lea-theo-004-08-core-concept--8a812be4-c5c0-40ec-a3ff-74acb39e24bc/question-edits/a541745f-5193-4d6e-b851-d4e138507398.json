@@ -1,57 +1,60 @@
 {
   "question_id": "a541745f-5193-4d6e-b851-d4e138507398",
-  "baseline_hash": "sha256:71fa0dd41257c9674b04f28e8006f7c2345cd48e05706aa75702e268fa43663b",
+  "baseline_hash": "sha256:4058ce6de8f6ea1b797dcf1105ff543dd43df04a5157be0f112452a6b7fe9048",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Solar Geometry Fundamentals.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
     "parent_article_slug": "lea-theo-004-08-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 708-810",
-      "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+        "source_id": "batch-133-lea-theo-004-08-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Solar Geometry Fundamentals",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md",
+        "sha256": "sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-08-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Solar Geometry Fundamentals",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md",
+        "sha256": "sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "How should walls be treated for minimum heat gain?",
+    "text": "What does seasonal solar declination explain in a source-safe LEA answer?",
     "options": [
       {
         "id": "a",
-        "text": "Design so walls are shaded from the sun as much as possible."
+        "text": "Why all days have identical sun paths."
       },
       {
         "id": "b",
-        "text": "Expose every wall to direct sun."
+        "text": "Why shading should ignore the date line."
       },
       {
         "id": "c",
-        "text": "Use shading only on interior partitions."
+        "text": "Why wind direction is the same as solar azimuth."
       },
       {
         "id": "d",
-        "text": "Ignore wall exposure and study only furniture."
+        "text": "Why the apparent sun path and altitude vary through the year."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Design so walls are shaded from the sun as much as possible. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Geometry Fundamentals.",
-    "explanation": "Design so walls are shaded from the sun as much as possible. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Geometry Fundamentals.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "Why the apparent sun path and altitude vary through the year. This stays inside the Batch 133 local source map for Solar Geometry Fundamentals.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Geometry Fundamentals; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
+    },
+    "explanation": "Why the apparent sun path and altitude vary through the year. Supported by Batch 133 local source artifacts for Solar Geometry Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
   },
   "batch_question_template_index": 6
 }

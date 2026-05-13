@@ -1,59 +1,60 @@
 {
   "question_id": "6fed7052-57be-4907-8163-cdf15748fcd7",
-  "baseline_hash": "sha256:af3b2598d798220ac398ced43834668f1ffc448544889ab7369d65683627cd05",
+  "baseline_hash": "sha256:4c92631f673011c37086690b6613f67d17b936389729dcbfec475b7d60e1ea81",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Natural Ventilation.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
     "parent_article_slug": "lea-theo-004-09-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 809-874",
-      "TOA 4 Tropical Architecture refined markdown lines 1155-1172",
-      "TOA 4 Tropical Architecture refined markdown lines 1386-1420",
-      "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1685-1703"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-6bfa7e66-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187"
+        "source_id": "batch-133-lea-theo-004-09-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Natural Ventilation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md",
+        "sha256": "sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-09-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Natural Ventilation",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md",
+        "sha256": "sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "What principle does stack ventilation use?",
+    "text": "A reviewer proposes one universal wind-catcher height for all Philippine sites. What is the best critique?",
     "options": [
       {
         "id": "a",
-        "text": "Convection: warm air rises and exits high, drawing cooler air in low."
+        "text": "Height and size must be checked against site wind, building section, openings, structure, and maintenance."
       },
       {
         "id": "b",
-        "text": "Reflection: light bounces from the roof."
+        "text": "Wind catchers work only if they face west."
       },
       {
         "id": "c",
-        "text": "Compression: columns carry vertical load."
+        "text": "Wind catchers never need outlets."
       },
       {
         "id": "d",
-        "text": "Absorption: glass stores solar radiation."
+        "text": "Universal dimensions are more reliable than site data."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "Convection: warm air rises and exits high, drawing cooler air in low. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Natural Ventilation.",
-    "explanation": "Convection: warm air rises and exits high, drawing cooler air in low. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Natural Ventilation.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187"
+    "rationale": {
+      "correct": "Height and size must be checked against site wind, building section, openings, structure, and maintenance. This stays inside the Batch 133 local source map for Natural Ventilation.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
+    },
+    "explanation": "Height and size must be checked against site wind, building section, openings, structure, and maintenance. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
   },
   "batch_question_template_index": 6
 }

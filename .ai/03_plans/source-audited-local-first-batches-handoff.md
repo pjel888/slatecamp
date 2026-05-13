@@ -1,3 +1,13 @@
+## Batch 133 Local-First Handoff - 2026-05-14T18:58:00.000+08:00
+
+Local validation passed, but Codex could not write .git/index.lock: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should stage the Batch 133 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 133`, and push `origin/3dlab-gray-viewport-bg`.
+
+Ready for acceptance commit: `chore(content): accept source-audited batch 133`. Batch 133 consumes `lea-theo-004-08`, `lea-theo-004-09`, `lea-theo-004-10`, `lea-theo-004-12`, and `lea-theo-004-13`; it applies 56/56 linked-question rewrites with zero answer-key changes and local captured source artifacts. Intended paths are recorded in `.ai/03_plans/batch-133-git-handoff-stage-paths.txt`; unrelated dirty work remains excluded.
+
+Git index blocker observed: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted
+
+---
+
 ## Batch 131 Git Index Blocked Handoff - 2026-05-14T13:50:00.000+08:00
 
 Local validation passed, but Codex could not write .git/index.lock: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should stage the Batch 131 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 131`, and push `origin/3dlab-gray-viewport-bg`.

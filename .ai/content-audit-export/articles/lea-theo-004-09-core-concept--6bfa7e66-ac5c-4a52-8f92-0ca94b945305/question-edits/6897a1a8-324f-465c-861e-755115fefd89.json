@@ -1,59 +1,60 @@
 {
   "question_id": "6897a1a8-324f-465c-861e-755115fefd89",
-  "baseline_hash": "sha256:43c6421918346692a72c24d132ab8c23318cfb58daf377a66d0a2276ec0b81cd",
+  "baseline_hash": "sha256:a6aedb7ec1eac92fbee9a2fce0e34f43c343c8766dbb9f543f0a00ef9ac70730",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Natural Ventilation.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
     "parent_article_slug": "lea-theo-004-09-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 809-874",
-      "TOA 4 Tropical Architecture refined markdown lines 1155-1172",
-      "TOA 4 Tropical Architecture refined markdown lines 1386-1420",
-      "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1685-1703"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-6bfa7e66-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187"
+        "source_id": "batch-133-lea-theo-004-09-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Natural Ventilation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md",
+        "sha256": "sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-09-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Natural Ventilation",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md",
+        "sha256": "sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "Which move best supports wind-driven cross ventilation?",
+    "text": "How should a Philippine passive-design answer treat amihan and habagat winds?",
     "options": [
       {
         "id": "a",
-        "text": "Align vents, windows, and doors so air can pass through the building."
+        "text": "Ignore them because wind never changes seasonally."
       },
       {
         "id": "b",
-        "text": "Place all openings on one sealed interior wall."
+        "text": "Use only northeast openings for all months."
       },
       {
         "id": "c",
-        "text": "Block every internal path with partitions."
+        "text": "Seal the building during both seasons."
       },
       {
         "id": "d",
-        "text": "Use only fixed glass."
+        "text": "Allow operable, site-checked paths that can respond to seasonal wind direction."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Align vents, windows, and doors so air can pass through the building. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Natural Ventilation.",
-    "explanation": "Align vents, windows, and doors so air can pass through the building. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Natural Ventilation.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187"
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "Allow operable, site-checked paths that can respond to seasonal wind direction. This stays inside the Batch 133 local source map for Natural Ventilation.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
+    },
+    "explanation": "Allow operable, site-checked paths that can respond to seasonal wind direction. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
   },
   "batch_question_template_index": 4
 }

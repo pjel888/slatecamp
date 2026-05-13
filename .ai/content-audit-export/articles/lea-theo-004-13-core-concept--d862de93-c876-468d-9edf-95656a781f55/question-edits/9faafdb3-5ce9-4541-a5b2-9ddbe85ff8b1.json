@@ -1,58 +1,60 @@
 {
   "question_id": "9faafdb3-5ce9-4541-a5b2-9ddbe85ff8b1",
-  "baseline_hash": "sha256:7ce32c48ad5faa6d49d83d13fb8e777249747a7b5e082807e1ad9f205e434891",
+  "baseline_hash": "sha256:2dee4e03b747171724eaf63d414dc9deece34ced1d6c02237dc8c57c6ea9c032",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Solar Shading Fundamentals.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "d862de93-c876-468d-9edf-95656a781f55",
     "parent_article_slug": "lea-theo-004-13-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 1201-1247",
-      "TOA 4 Tropical Architecture refined markdown lines 1258-1277",
-      "TOA 4 Tropical Architecture refined markdown lines 1315-1364"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-d862de93-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151"
+        "source_id": "batch-133-lea-theo-004-13-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Solar Shading Fundamentals",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md",
+        "sha256": "sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-13-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Solar Shading Fundamentals",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md",
+        "sha256": "sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "Which source-safe statement links shading and ventilation?",
+    "text": "What is the basic logic of an eggcrate shading system?",
     "options": [
       {
         "id": "a",
-        "text": "Some louver systems can shade while still permitting air movement near the wall."
+        "text": "It removes all windows."
       },
       {
         "id": "b",
-        "text": "All shading devices must block all airflow."
+        "text": "It shades only from rain."
       },
       {
         "id": "c",
-        "text": "Ventilation makes shading unnecessary."
+        "text": "It works only as interior furniture."
       },
       {
         "id": "d",
-        "text": "Shading devices work only in cold climates."
+        "text": "It combines horizontal and vertical elements to control sun from more than one direction."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Some louver systems can shade while still permitting air movement near the wall. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Shading Fundamentals.",
-    "explanation": "Some louver systems can shade while still permitting air movement near the wall. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Shading Fundamentals.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151"
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "It combines horizontal and vertical elements to control sun from more than one direction. This stays inside the Batch 133 local source map for Solar Shading Fundamentals.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Shading Fundamentals; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
+    },
+    "explanation": "It combines horizontal and vertical elements to control sun from more than one direction. Supported by Batch 133 local source artifacts for Solar Shading Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77"
   },
   "batch_question_template_index": 12
 }

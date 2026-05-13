@@ -1,10 +1,10 @@
 {
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-059-local-first",
-  "batch_number": 59,
-  "audit_mode": "local_first_raw_pdf_primary",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T20:48:00.000+08:00",
+  "batch_id": "source-audited-article-batch-133-local-first",
+  "batch_number": 133,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T18:45:00.000+08:00",
   "target": {
     "article_id": "d862de93-c876-468d-9edf-95656a781f55",
     "slug": "lea-theo-004-13-core-concept",
@@ -13,11 +13,11 @@
     "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-13-core-concept--d862de93-c876-468d-9edf-95656a781f55/question-edits",
     "linked_questions": 12,
     "question_edits": 12,
-    "candidate_sha256": "sha256:8715dcaf024be243c5f7bb9088754cbbaf0e475c2870b8f46b3f6eaf66124b87"
+    "candidate_sha256": "sha256:1c4635cfccd76c66fa03491cb0b873412702f4ce36161589ded3b7a9fa0b04e9"
   },
   "raw_pdf_gate": {
     "status": "PASS",
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus local TOA 4 source family",
     "derivative_or_search_layers_used_as_primary_truth": false,
     "refined_markdown_used_only_as_locator": true,
     "all_legal_code_claims_have_pdf_locator": true,
@@ -26,21 +26,66 @@
     "blockers": [],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-d862de93-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "source_id": "batch-133-lea-theo-004-13-core-concept-raw-source-capture",
+        "article_id": "d862de93-c876-468d-9edf-95656a781f55",
+        "label": "Batch 133 raw source capture - Solar Shading Fundamentals",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Solar Shading Fundamentals; includes checked TOA 4 locators and official-source URL locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T18:45:00.000+08:00",
+        "updated_at": "2026-05-14T18:45:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md",
+        "local_sha256": "sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md#sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163",
+        "checked_markdown_lines": [
+          "TOA 4 lines 692-810 explain orientation, sun-path diagrams, azimuth, altitude, date lines, airflow, and Philippine prevailing wind seasons.",
+          "TOA 4 lines 1199-1247 and 1302-1352 list overhangs, louvers, eggcrate/brise-soleil, skylights, light shelves, and clerestories.",
+          "NOAA Solar Calculator glossary, https://gml.noaa.gov/grad/solcalc/glossary.html, lines 90-91 and 150-154: azimuth/elevation locate sky position and solar declination varies seasonally.",
+          "WBDG Sun Control and Shading Devices, https://www.wbdg.org/resources/sun-control-and-shading-devices, lines 80-87, 105-108, 125-143, and 150-160: shading controls heat gain, glare, daylight, sun angles, latitude transfer, and maintenance risk.",
+          "WBDG Daylighting, https://www.wbdg.org/resources/daylighting, lines 113-128 and 191-202: light shelves and louvers redirect daylight, reduce glare, and vary by orientation."
+        ],
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
         "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
         "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151"
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-13-core-concept-refined-source-map",
+        "article_id": "d862de93-c876-468d-9edf-95656a781f55",
+        "label": "Batch 133 refined source conversion - Solar Shading Fundamentals",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 133 raw source capture for Solar Shading Fundamentals.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T18:45:00.000+08:00",
+        "updated_at": "2026-05-14T18:45:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md",
+        "local_sha256": "sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md#sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md",
+        "upstream_capture_sha256": "sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163",
+        "checked_markdown_lines": [
+          "TOA 4 lines 692-810 explain orientation, sun-path diagrams, azimuth, altitude, date lines, airflow, and Philippine prevailing wind seasons.",
+          "TOA 4 lines 1199-1247 and 1302-1352 list overhangs, louvers, eggcrate/brise-soleil, skylights, light shelves, and clerestories.",
+          "NOAA Solar Calculator glossary, https://gml.noaa.gov/grad/solcalc/glossary.html, lines 90-91 and 150-154: azimuth/elevation locate sky position and solar declination varies seasonally.",
+          "WBDG Sun Control and Shading Devices, https://www.wbdg.org/resources/sun-control-and-shading-devices, lines 80-87, 105-108, 125-143, and 150-160: shading controls heat gain, glare, daylight, sun angles, latitude transfer, and maintenance risk.",
+          "WBDG Daylighting, https://www.wbdg.org/resources/daylighting, lines 113-128 and 191-202: light shelves and louvers redirect daylight, reduce glare, and vary by orientation."
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
       }
     ]
   },
   "classification": {
-    "content_type": "theory-of-architecture-tropical-design",
+    "content_type": "theory-of-architecture-solar-shading",
     "contains_legal_or_code_claims": false,
     "source_risk_tier": "medium",
-    "requires_raw_pdf_audit": true,
+    "requires_raw_pdf_audit": false,
     "linked_questions_observed": 12,
     "question_edits_created": [
       "6f15e5f4-9ab2-4c1d-a1b3-87ad9c9ca629",
@@ -56,29 +101,32 @@
       "6848c504-1c44-4980-9560-00e39aa23109",
       "9faafdb3-5ce9-4541-a5b2-9ddbe85ff8b1"
     ],
-    "scenario_policy_status": "eligible-deferred",
-    "scenario_policy_reason": "A realistic tropical-site design scenario could be useful, but Batch 059 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "For a west-facing library reading room, the architect avoids relying on a simple horizontal overhang alone. The study tests vertical fins, adjustable louvers, glare control, daylight penetration, maintenance access, and a clear ventilation path before selecting the final shading system."
   },
   "claims": [
     {
-      "claim_id": "lea-theo-004-13-core-concept-b059-claim-01",
-      "claim_text": "Solar Shading Fundamentals is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "claim_id": "lea-theo-004-13-core-concept-b133-claim-01",
+      "claim_text": "Solar Shading Fundamentals is limited to checked local Batch 133 source capture and refined conversion artifacts.",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 1201-1247, 1258-1277, 1315-1364, and raw PDF pages 140, 143-148, and 151",
+        "quoted_pdf_excerpt": "TOA 4 lines 692-810 explain orientation, sun-path diagrams, azimuth, altitude, date lines, airflow, and Philippine prevailing wind seasons. | TOA 4 lines 1199-1247 and 1302-1352 list overhangs, louvers, eggcrate/brise-soleil, skylights, light shelves, and clerestories. | NOAA Solar Calculator glossary, https://gml.noaa.gov/grad/solcalc/glossary.html, lines 90-91 and 150-154: azimuth/elevation locate sky position and solar declination varies seasonally. | WBDG Sun Control and Shading Devices, https://www.wbdg.org/resources/sun-control-and-shading-devices, lines 80-87, 105-108, 125-143, and 150-160: shading controls heat gain, glare, daylight, sun angles, latitude transfer, and maintenance risk. | WBDG Daylighting, https://www.wbdg.org/resources/daylighting, lines 113-128 and 191-202: light shelves and louvers redirect daylight, reduce glare, and vary by orientation.",
         "source_ids": [
-          "toa4-tropical-architecture-local-raw-pdf--b059-d862de93-01"
+          "batch-133-lea-theo-004-13-core-concept-raw-source-capture",
+          "batch-133-lea-theo-004-13-core-concept-refined-source-map"
         ]
       },
       "audit_result": "PASS"
     }
   ],
   "checked_markdown_lines": [
-    "TOA 4 Tropical Architecture refined markdown lines 1201-1247",
-    "TOA 4 Tropical Architecture refined markdown lines 1258-1277",
-    "TOA 4 Tropical Architecture refined markdown lines 1315-1364"
+    "TOA 4 lines 692-810 explain orientation, sun-path diagrams, azimuth, altitude, date lines, airflow, and Philippine prevailing wind seasons.",
+    "TOA 4 lines 1199-1247 and 1302-1352 list overhangs, louvers, eggcrate/brise-soleil, skylights, light shelves, and clerestories.",
+    "NOAA Solar Calculator glossary, https://gml.noaa.gov/grad/solcalc/glossary.html, lines 90-91 and 150-154: azimuth/elevation locate sky position and solar declination varies seasonally.",
+    "WBDG Sun Control and Shading Devices, https://www.wbdg.org/resources/sun-control-and-shading-devices, lines 80-87, 105-108, 125-143, and 150-160: shading controls heat gain, glare, daylight, sun angles, latitude transfer, and maintenance risk.",
+    "WBDG Daylighting, https://www.wbdg.org/resources/daylighting, lines 113-128 and 191-202: light shelves and louvers redirect daylight, reduce glare, and vary by orientation."
   ],
-  "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+  "checked_pdf_pages": "TOA 4 tropical architecture PDF source family; exact page claims are not introduced by Batch 133.",
   "unverified_or_rejected_claims": [],
   "quality_protocol": {
     "roundtrip_protocol_preserved": true,

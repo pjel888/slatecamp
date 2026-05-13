@@ -1,57 +1,60 @@
 {
   "question_id": "dc6f5231-c321-44f5-9847-2ced45915217",
-  "baseline_hash": "sha256:7194b5c840ed023520a3a4087029f1cdef275feca2d58be392790008bbb409b6",
+  "baseline_hash": "sha256:60726a585137c2aaffdf76d32de96ea52ecc8639dca4de70a4bb2d52d87dcc14",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Solar Geometry Fundamentals.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
     "parent_article_slug": "lea-theo-004-08-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 708-810",
-      "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+        "source_id": "batch-133-lea-theo-004-08-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Solar Geometry Fundamentals",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md",
+        "sha256": "sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-08-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Solar Geometry Fundamentals",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md",
+        "sha256": "sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "Why is airflow still relevant in a solar orientation item?",
+    "text": "Which answer best captures the tropical-design priority behind solar geometry?",
     "options": [
       {
         "id": "a",
-        "text": "TOA 4 pairs orientation for minimum heat gain with orientation for maximum airflow."
+        "text": "Maximize winter heat collection as the only goal."
       },
       {
         "id": "b",
-        "text": "Airflow cancels the need for solar control."
+        "text": "Decorate the facade with any visible shading device."
       },
       {
         "id": "c",
-        "text": "Airflow is prohibited in passive design."
+        "text": "Reduce unwanted heat gain while coordinating shade, daylight, and ventilation."
       },
       {
         "id": "d",
-        "text": "Airflow determines the date line on a sun chart."
+        "text": "Avoid all daylight in occupied rooms."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "TOA 4 pairs orientation for minimum heat gain with orientation for maximum airflow. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Geometry Fundamentals.",
-    "explanation": "TOA 4 pairs orientation for minimum heat gain with orientation for maximum airflow. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Geometry Fundamentals.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+    "correct_option_id": "c",
+    "rationale": {
+      "correct": "Reduce unwanted heat gain while coordinating shade, daylight, and ventilation. This stays inside the Batch 133 local source map for Solar Geometry Fundamentals.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Geometry Fundamentals; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
+    },
+    "explanation": "Reduce unwanted heat gain while coordinating shade, daylight, and ventilation. Supported by Batch 133 local source artifacts for Solar Geometry Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
   },
   "batch_question_template_index": 11
 }

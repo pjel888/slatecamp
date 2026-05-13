@@ -1,59 +1,60 @@
 {
   "question_id": "e49176a1-dadb-4c94-8758-cedaf4ab9925",
-  "baseline_hash": "sha256:429f62cd2fc7cc70b44ec95c3caa61b38084b89c9718829da7b64f8ead9e56c1",
+  "baseline_hash": "sha256:99df60704561a3113b73961bcc054ce17195c62622c08585c5ea3df8fdb88dbe",
   "action": "replace",
-  "reason": "source-audited-article-batch-060-local-first: local raw PDF backed replacement constrained to checked Batch 060 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-060",
-  "approved_at": "2026-05-11T21:02:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Thermal Comfort.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
     "parent_article_slug": "lea-theo-004-12-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 513-591",
-      "TOA 4 Tropical Architecture refined markdown lines 622-660",
-      "TOA 4 Tropical Architecture refined markdown lines 840-874",
-      "TOA 4 Tropical Architecture refined markdown lines 1386-1420"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md#sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md#sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172"
+        "source_id": "batch-133-lea-theo-004-12-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Thermal Comfort",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md",
+        "sha256": "sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-12-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Thermal Comfort",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md",
+        "sha256": "sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 060 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "Which statement avoids the common trap?",
+    "text": "Which statement about air movement stays within the checked sources?",
     "options": [
       {
         "id": "a",
-        "text": "Thermal comfort depends on heat gain, airflow, and body cooling sensation, not air temperature alone."
+        "text": "Air movement guarantees higher productivity in every office."
       },
       {
         "id": "b",
-        "text": "Only thermometer reading matters."
+        "text": "Air movement eliminates all humidity."
       },
       {
         "id": "c",
-        "text": "Air movement is irrelevant in hot-humid climates."
+        "text": "Air movement and occupant control can improve comfort sensation when program and health limits allow."
       },
       {
         "id": "d",
-        "text": "Shade has no effect on comfort."
+        "text": "Air movement is useful only in cold climates."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Thermal comfort depends on heat gain, airflow, and body cooling sensation, not air temperature alone. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Thermal Comfort.",
-    "explanation": "Thermal comfort depends on heat gain, airflow, and body cooling sensation, not air temperature alone. The Batch 060 source audit used the local raw PDF first and refined markdown only as locator evidence for Thermal Comfort.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172"
+    "correct_option_id": "c",
+    "rationale": {
+      "correct": "Air movement and occupant control can improve comfort sensation when program and health limits allow. This stays inside the Batch 133 local source map for Thermal Comfort.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Thermal Comfort; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md#sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md#sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1"
+    },
+    "explanation": "Air movement and occupant control can improve comfort sensation when program and health limits allow. Supported by Batch 133 local source artifacts for Thermal Comfort: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md#sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md#sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md#sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md#sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1"
   },
   "batch_question_template_index": 8
 }

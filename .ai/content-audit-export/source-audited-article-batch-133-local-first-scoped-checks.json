@@ -1,0 +1,275 @@
+{
+  "batch_id": "source-audited-article-batch-133-local-first",
+  "generated_at": "2026-05-14T18:58:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "passed": true,
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+        "slug": "lea-theo-004-08-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0
+      },
+      {
+        "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
+        "slug": "lea-theo-004-09-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0
+      },
+      {
+        "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+        "slug": "lea-theo-004-10-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0
+      },
+      {
+        "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+        "slug": "lea-theo-004-12-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0
+      },
+      {
+        "article_id": "d862de93-c876-468d-9edf-95656a781f55",
+        "slug": "lea-theo-004-13-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+        "slug": "lea-theo-004-08-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
+        "slug": "lea-theo-004-09-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+        "slug": "lea-theo-004-10-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+        "slug": "lea-theo-004-12-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      },
+      {
+        "article_id": "d862de93-c876-468d-9edf-95656a781f55",
+        "slug": "lea-theo-004-13-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "marker_free": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "parsed_count": 45,
+    "failures": []
+  },
+  "placeholder_internal_marker_source_gap_scan": {
+    "passed": true,
+    "scanned_count": 91,
+    "matches": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md",
+        "expected": "sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738",
+        "actual": "sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md",
+        "expected": "sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4",
+        "actual": "sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-004-08-core-concept--8a812be4-c5c0-40ec-a3ff-74acb39e24bc/candidate.md",
+        "expected": "sha256:7237db2611d11cfb555d8a52373b50c84f3fe0d359f5d2f37f35d1605f318053",
+        "actual": "sha256:7237db2611d11cfb555d8a52373b50c84f3fe0d359f5d2f37f35d1605f318053",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md",
+        "expected": "sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4",
+        "actual": "sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md",
+        "expected": "sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
+        "actual": "sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-004-09-core-concept--6bfa7e66-ac5c-4a52-8f92-0ca94b945305/candidate.md",
+        "expected": "sha256:2bcb6a394c7589dd3b594402c207c5c0181ea4c2f4ccac3c0f262b91d2730703",
+        "actual": "sha256:2bcb6a394c7589dd3b594402c207c5c0181ea4c2f4ccac3c0f262b91d2730703",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.source-capture.md",
+        "expected": "sha256:1bd14b99fa0537344091fe58aec7b753745b298159a752dcee8ab717537ad0c1",
+        "actual": "sha256:1bd14b99fa0537344091fe58aec7b753745b298159a752dcee8ab717537ad0c1",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.refined.md",
+        "expected": "sha256:117de94ba7a25d1baf111c9f4b2d7e8ee0943cc280c9d6689eb28f7cafeec31b",
+        "actual": "sha256:117de94ba7a25d1baf111c9f4b2d7e8ee0943cc280c9d6689eb28f7cafeec31b",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/candidate.md",
+        "expected": "sha256:d4d1ad0fecfb606bb344f0cbe52b669d5ffda3aa4b5c03d0ce39eaccf7ea2a2c",
+        "actual": "sha256:d4d1ad0fecfb606bb344f0cbe52b669d5ffda3aa4b5c03d0ce39eaccf7ea2a2c",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.source-capture.md",
+        "expected": "sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f",
+        "actual": "sha256:e4a9913cf748d642ca1f4990474cace9e298ff26d5d24916205598b087ff2f3f",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-12-core-concept-thermal-comfort.refined.md",
+        "expected": "sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1",
+        "actual": "sha256:50977887bc4ba60e261680ddbc22a7cc816282bfcfccb9f5176e742bfe4353d1",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/candidate.md",
+        "expected": "sha256:ee432cabaf4f4b70e8be2709224c07175d06cb835916e2ae04b4e11f82c81210",
+        "actual": "sha256:ee432cabaf4f4b70e8be2709224c07175d06cb835916e2ae04b4e11f82c81210",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.source-capture.md",
+        "expected": "sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163",
+        "actual": "sha256:71596a0a44987a97848d4042167efa910b58e3f4946fc6729a86677622226163",
+        "passed": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-13-core-concept-solar-shading-fundamentals.refined.md",
+        "expected": "sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
+        "actual": "sha256:b553bf0eb2789f598e9862d71704fa66a1757225ae7b4e849b0e0bd62adadb77",
+        "passed": true
+      },
+      {
+        "path": ".ai/content-audit-export/articles/lea-theo-004-13-core-concept--d862de93-c876-468d-9edf-95656a781f55/candidate.md",
+        "expected": "sha256:1c4635cfccd76c66fa03491cb0b873412702f4ce36161589ded3b7a9fa0b04e9",
+        "actual": "sha256:1c4635cfccd76c66fa03491cb0b873412702f4ce36161589ded3b7a9fa0b04e9",
+        "passed": true
+      }
+    ]
+  },
+  "question_edit_count": {
+    "passed": true,
+    "expected": 56,
+    "actual": 56,
+    "answer_key_changes": 0,
+    "articles": [
+      {
+        "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+        "slug": "lea-theo-004-08-core-concept",
+        "question_count": 11,
+        "question_edit_count": 11,
+        "answer_keys_preserved": true
+      },
+      {
+        "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
+        "slug": "lea-theo-004-09-core-concept",
+        "question_count": 11,
+        "question_edit_count": 11,
+        "answer_keys_preserved": true
+      },
+      {
+        "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+        "slug": "lea-theo-004-10-core-concept",
+        "question_count": 11,
+        "question_edit_count": 11,
+        "answer_keys_preserved": true
+      },
+      {
+        "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+        "slug": "lea-theo-004-12-core-concept",
+        "question_count": 11,
+        "question_edit_count": 11,
+        "answer_keys_preserved": true
+      },
+      {
+        "article_id": "d862de93-c876-468d-9edf-95656a781f55",
+        "slug": "lea-theo-004-13-core-concept",
+        "question_count": 12,
+        "question_edit_count": 12,
+        "answer_keys_preserved": true
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "files": []
+  },
+  "targeted_content_audit_tests": {
+    "passed": true,
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+    "exit_code": 0,
+    "evidence": "34 pass, 0 fail, 328 expect() calls."
+  },
+  "scoped_git_diff_check": {
+    "command": "xargs git diff --check -- < .ai/03_plans/batch-133-git-handoff-stage-paths.txt",
+    "exit_code": 0,
+    "stdout_tail": [],
+    "stderr_tail": [],
+    "passed": true
+  }
+}

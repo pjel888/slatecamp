@@ -1,57 +1,60 @@
 {
   "question_id": "1aa5f693-63e8-4105-912f-97332da0dd3a",
-  "baseline_hash": "sha256:9df5ef844321147a971da1163c4a56844082cd2d8a27d604043de5e0f7eb8570",
+  "baseline_hash": "sha256:8f1db9011ec7772cb3a8214a016486e383b0c5775745178058d9fc038fe26b55",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Solar Geometry Fundamentals.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
     "parent_article_slug": "lea-theo-004-08-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 708-810",
-      "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+        "source_id": "batch-133-lea-theo-004-08-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Solar Geometry Fundamentals",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md",
+        "sha256": "sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-08-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Solar Geometry Fundamentals",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md",
+        "sha256": "sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "What do date lines help show?",
+    "text": "A designer copies a Batanes overhang calculation into a Manila east facade without checking date, time, or facade context. What is the best critique?",
     "options": [
       {
         "id": "a",
-        "text": "The path of the sun for a particular date from east to west."
+        "text": "The calculation is acceptable because both sites are in the Philippines."
       },
       {
         "id": "b",
-        "text": "The plumbing layout."
+        "text": "The overhang is acceptable if the window width is unchanged."
       },
       {
         "id": "c",
-        "text": "The legal occupancy group."
+        "text": "Only west facades need solar checking."
       },
       {
         "id": "d",
-        "text": "The material warranty period."
+        "text": "Shading ideas must be checked against the actual sun path, latitude, orientation, and design constraints."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The path of the sun for a particular date from east to west. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Geometry Fundamentals.",
-    "explanation": "The path of the sun for a particular date from east to west. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Geometry Fundamentals.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "Shading ideas must be checked against the actual sun path, latitude, orientation, and design constraints. This stays inside the Batch 133 local source map for Solar Geometry Fundamentals.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Solar Geometry Fundamentals; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
+    },
+    "explanation": "Shading ideas must be checked against the actual sun path, latitude, orientation, and design constraints. Supported by Batch 133 local source artifacts for Solar Geometry Fundamentals: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.source-capture.md#sha256:b89e682e297a0d9aa412725ac5af50b0bdc1123477ca57f9707d2c59af823738; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-08-core-concept-solar-geometry-fundamentals.refined.md#sha256:39533526adbc7db8f6a805376c294a443907a1b8d9fb1b1d1747a0e2267bc7e4"
   },
   "batch_question_template_index": 4
 }

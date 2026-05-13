@@ -1,10 +1,10 @@
 {
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-059-local-first",
-  "batch_number": 59,
-  "audit_mode": "local_first_raw_pdf_primary",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T20:48:00.000+08:00",
+  "batch_id": "source-audited-article-batch-133-local-first",
+  "batch_number": 133,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T18:45:00.000+08:00",
   "target": {
     "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
     "slug": "lea-theo-004-09-core-concept",
@@ -13,11 +13,11 @@
     "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-09-core-concept--6bfa7e66-ac5c-4a52-8f92-0ca94b945305/question-edits",
     "linked_questions": 11,
     "question_edits": 11,
-    "candidate_sha256": "sha256:6171d6becf0b83cc4cac69b7d765eb1960a58132ca21a6633a0b6363ec74ba84"
+    "candidate_sha256": "sha256:2bcb6a394c7589dd3b594402c207c5c0181ea4c2f4ccac3c0f262b91d2730703"
   },
   "raw_pdf_gate": {
     "status": "PASS",
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus local TOA 4 source family",
     "derivative_or_search_layers_used_as_primary_truth": false,
     "refined_markdown_used_only_as_locator": true,
     "all_legal_code_claims_have_pdf_locator": true,
@@ -26,21 +26,68 @@
     "blockers": [],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-6bfa7e66-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "source_id": "batch-133-lea-theo-004-09-core-concept-raw-source-capture",
+        "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
+        "label": "Batch 133 raw source capture - Natural Ventilation",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Natural Ventilation; includes checked TOA 4 locators and official-source URL locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T18:45:00.000+08:00",
+        "updated_at": "2026-05-14T18:45:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md",
+        "local_sha256": "sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4",
+        "checked_markdown_lines": [
+          "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+          "TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control.",
+          "TOA 4 lines 1552-1627 and 1647-1709 describe tropical architecture goals, bahay kubo/bahay na bato climate devices, and opening logic.",
+          "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+          "WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements.",
+          "ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants."
+        ],
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
         "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
         "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187"
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-09-core-concept-refined-source-map",
+        "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
+        "label": "Batch 133 refined source conversion - Natural Ventilation",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 133 raw source capture for Natural Ventilation.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T18:45:00.000+08:00",
+        "updated_at": "2026-05-14T18:45:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md",
+        "local_sha256": "sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md",
+        "upstream_capture_sha256": "sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4",
+        "checked_markdown_lines": [
+          "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+          "TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control.",
+          "TOA 4 lines 1552-1627 and 1647-1709 describe tropical architecture goals, bahay kubo/bahay na bato climate devices, and opening logic.",
+          "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+          "WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements.",
+          "ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants."
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
       }
     ]
   },
   "classification": {
-    "content_type": "theory-of-architecture-tropical-design",
+    "content_type": "theory-of-architecture-natural-ventilation",
     "contains_legal_or_code_claims": false,
     "source_risk_tier": "medium",
-    "requires_raw_pdf_audit": true,
+    "requires_raw_pdf_audit": false,
     "linked_questions_observed": 11,
     "question_edits_created": [
       "a741bb40-909f-4034-96a2-005db3149252",
@@ -55,30 +102,33 @@
       "a67f4a91-1133-483f-8cd6-fbb5c0603f29",
       "dc2b5762-c10f-4f17-81a4-3a6b2658d467"
     ],
-    "scenario_policy_status": "eligible-deferred",
-    "scenario_policy_reason": "A realistic tropical-site design scenario could be useful, but Batch 059 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A low-rise barangay hall can use shaded operable openings on more than one side, a clear internal air path, and high exhaust points under a hot roof. A clinic treatment room in the same compound still needs mechanical ventilation or filtration where infection control, contaminants, or continuous conditioning require it."
   },
   "claims": [
     {
-      "claim_id": "lea-theo-004-09-core-concept-b059-claim-01",
-      "claim_text": "Natural Ventilation is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "claim_id": "lea-theo-004-09-core-concept-b133-claim-01",
+      "claim_text": "Natural Ventilation is limited to checked local Batch 133 source capture and refined conversion artifacts.",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187",
+        "quoted_pdf_excerpt": "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds. | TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control. | TOA 4 lines 1552-1627 and 1647-1709 describe tropical architecture goals, bahay kubo/bahay na bato climate devices, and opening logic. | PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types. | WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements. | ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants.",
         "source_ids": [
-          "toa4-tropical-architecture-local-raw-pdf--b059-6bfa7e66-01"
+          "batch-133-lea-theo-004-09-core-concept-raw-source-capture",
+          "batch-133-lea-theo-004-09-core-concept-refined-source-map"
         ]
       },
       "audit_result": "PASS"
     }
   ],
   "checked_markdown_lines": [
-    "TOA 4 Tropical Architecture refined markdown lines 809-874",
-    "TOA 4 Tropical Architecture refined markdown lines 1155-1172",
-    "TOA 4 Tropical Architecture refined markdown lines 1386-1420",
-    "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1685-1703"
+    "TOA 4 lines 400-483 locate Philippine humidity, rainfall, seasons, climate types, and prevailing amihan/habagat winds.",
+    "TOA 4 lines 838-889 and 1412-1504 explain passive ventilation, aligned openings, low/high openings, stack logic, and obstruction control.",
+    "TOA 4 lines 1552-1627 and 1647-1709 describe tropical architecture goals, bahay kubo/bahay na bato climate devices, and opening logic.",
+    "PAGASA Climate of the Philippines, https://www.pagasa.dost.gov.ph/information/climate-philippines, lines 329-350: Philippine climate is tropical and maritime, with high temperature, high humidity, abundant rainfall, seasons, and rainfall-based climate types.",
+    "WBDG Natural Ventilation, https://www.wbdg.org/resources/natural-ventilation, lines 99-118 and 183-196: avoid airflow obstructions, use wind and buoyancy carefully, and meet comfort, moisture, contaminant, smoke, and fire requirements.",
+    "ASHRAE Standard 55 page, https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy, lines 234-238: environmental and personal factors combine to create thermal conditions for most occupants."
   ],
-  "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+  "checked_pdf_pages": "TOA 4 tropical architecture PDF source family; exact page claims are not introduced by Batch 133.",
   "unverified_or_rejected_claims": [],
   "quality_protocol": {
     "roundtrip_protocol_preserved": true,

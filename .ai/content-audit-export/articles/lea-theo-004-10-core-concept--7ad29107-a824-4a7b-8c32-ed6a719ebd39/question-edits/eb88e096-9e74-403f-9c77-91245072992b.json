@@ -1,58 +1,60 @@
 {
   "question_id": "eb88e096-9e74-403f-9c77-91245072992b",
-  "baseline_hash": "sha256:1bcfc96c2ebb0230b6734b79b9e5c3553821165739517704daab9f3724c5a5c3",
+  "baseline_hash": "sha256:df3d3fc572fcc765f427cea5cefb61ba52e7204b3f7dea6cd6582849e7c32d1d",
   "action": "replace",
-  "reason": "source-audited-article-batch-060-local-first: local raw PDF backed replacement constrained to checked Batch 060 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-060",
-  "approved_at": "2026-05-11T21:02:00.000+08:00",
+  "reason": "source-audited-article-batch-133-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Bahay Kubo: Climate-Responsive Architecture.",
+  "approved_by": "codex-local-first-batch-133",
+  "approved_at": "2026-05-14T18:45:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
     "parent_article_slug": "lea-theo-004-10-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1591-1604, 1621-1622, 1648-1665, 1679, 1685-1703, and raw PDF pages 187 and 194",
-    "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 1591-1604",
-      "TOA 4 Tropical Architecture refined markdown lines 1621-1622",
-      "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1679, 1685-1703"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.source-capture.md#sha256:1bd14b99fa0537344091fe58aec7b753745b298159a752dcee8ab717537ad0c1; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.refined.md#sha256:117de94ba7a25d1baf111c9f4b2d7e8ee0943cc280c9d6689eb28f7cafeec31b",
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-7ad29107-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 1591-1604, 1621-1622, 1648-1665, 1679, 1685-1703, and raw PDF pages 187 and 194"
+        "source_id": "batch-133-lea-theo-004-10-core-concept-raw-source-capture",
+        "label": "Batch 133 raw source capture - Bahay Kubo: Climate-Responsive Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.source-capture.md",
+        "sha256": "sha256:1bd14b99fa0537344091fe58aec7b753745b298159a752dcee8ab717537ad0c1"
+      },
+      {
+        "source_id": "batch-133-lea-theo-004-10-core-concept-refined-source-map",
+        "label": "Batch 133 refined source conversion - Bahay Kubo: Climate-Responsive Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.refined.md",
+        "sha256": "sha256:117de94ba7a25d1baf111c9f4b2d7e8ee0943cc280c9d6689eb28f7cafeec31b"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 060 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 133 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "Which pairing is correct?",
+    "text": "Which sustainability claim stays within the checked source boundary?",
     "options": [
       {
         "id": "a",
-        "text": "Elevation for damp ground and roof pitch for rain drainage."
+        "text": "The bahay kubo automatically earns a fixed green-building score."
       },
       {
         "id": "b",
-        "text": "Elevation for glare control only and roof pitch for plumbing pressure."
+        "text": "A bamboo wall always outperforms every modern wall assembly."
       },
       {
         "id": "c",
-        "text": "Large windows for sealing the building and overhangs for heat gain."
+        "text": "Its principles can support shade, airflow, local materials, and lower dependence on mechanical cooling when properly adapted."
       },
       {
         "id": "d",
-        "text": "Gardens for blocking all airflow."
+        "text": "A vernacular reference eliminates maintenance."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Elevation for damp ground and roof pitch for rain drainage. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Bahay Kubo: Climate-Responsive Architecture.",
-    "explanation": "Elevation for damp ground and roof pitch for rain drainage. The Batch 060 source audit used the local raw PDF first and refined markdown only as locator evidence for Bahay Kubo: Climate-Responsive Architecture.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 1591-1604, 1621-1622, 1648-1665, 1679, 1685-1703, and raw PDF pages 187 and 194"
+    "correct_option_id": "c",
+    "rationale": {
+      "correct": "Its principles can support shade, airflow, local materials, and lower dependence on mechanical cooling when properly adapted. This stays inside the Batch 133 local source map for Bahay Kubo: Climate-Responsive Architecture.",
+      "takeaway": "Use the local Batch 133 source capture and refined conversion for Bahay Kubo: Climate-Responsive Architecture; avoid unsupported exact calculations or rating claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.source-capture.md#sha256:1bd14b99fa0537344091fe58aec7b753745b298159a752dcee8ab717537ad0c1; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.refined.md#sha256:117de94ba7a25d1baf111c9f4b2d7e8ee0943cc280c9d6689eb28f7cafeec31b"
+    },
+    "explanation": "Its principles can support shade, airflow, local materials, and lower dependence on mechanical cooling when properly adapted. Supported by Batch 133 local source artifacts for Bahay Kubo: Climate-Responsive Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.source-capture.md#sha256:1bd14b99fa0537344091fe58aec7b753745b298159a752dcee8ab717537ad0c1; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.refined.md#sha256:117de94ba7a25d1baf111c9f4b2d7e8ee0943cc280c9d6689eb28f7cafeec31b.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.source-capture.md#sha256:1bd14b99fa0537344091fe58aec7b753745b298159a752dcee8ab717537ad0c1; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-10-core-concept-bahay-kubo-climate-responsive-architecture.refined.md#sha256:117de94ba7a25d1baf111c9f4b2d7e8ee0943cc280c9d6689eb28f7cafeec31b"
   },
   "batch_question_template_index": 8
 }

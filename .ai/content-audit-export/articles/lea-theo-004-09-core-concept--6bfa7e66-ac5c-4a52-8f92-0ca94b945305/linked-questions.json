@@ -1,30 +1,29 @@
 {
   "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5824d296543c364ed0cf946275d0232ce80268d75ea2d8a129a4200f4e358241",
   "question_count": 11,
   "questions": [
     {
       "question_id": "a741bb40-909f-4034-96a2-005db3149252",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "Compare the ventilation effectiveness of well-designed cross-ventilation (VE = 0.7–0.85) versus poorly configured layouts (VE = 0.3–0.5). What design factor primarily drives this difference?",
+      "text": "A naturally ventilated classroom has large windows but little air movement. What source-safe design factor should be checked first?",
       "options": [
         {
           "id": "a",
-          "text": "Window size alone determines ventilation efficiency; larger windows always yield higher VE, regardless of their placement or orientation within the building envelope"
+          "text": "Paint color alone."
         },
         {
           "id": "b",
-          "text": "Climate type determines VE; Type I is always more efficient than Type II, due to inherent differences in temperature and humidity levels that affect air movement"
+          "text": "The number of decorative louvers on the elevation."
         },
         {
           "id": "c",
-          "text": "Ventilation efficiency depends on clear flow paths between openings, interior partitions (obstructions), and window positioning. Well-designed open floor plans achieve VE 0.7–0.85 (most air reaches occupied zones). Poorly partitioned buildings waste ventilation volume in dead zones; same air volume provides only 30–50% occupant benefit"
+          "text": "Whether openings create a clear wind or buoyancy path without major obstructions."
         },
         {
           "id": "d",
-          "text": "Ventilation efficiency is constant regardless of interior layout, as long as the total window area meets the minimum code requirements for natural ventilation"
+          "text": "Whether the room has a fixed air-change rate copied from another project."
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +32,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Window size is one factor, but layout (partitions, flow paths) is equally critical.",
-        "b": "Both Type I and Type II can achieve high or low VE depending on layout; climate does not determine efficiency.",
-        "d": "Layout directly affects VE; design choices matter greatly.",
-        "correct": ": 'Ventilation efficiency (VE) = Volume of fresh air reaching breathing zone / Total ventilation rate... Well-designed cross-ventilation: VE = 0.7–0.85... Poorly configured layouts: VE = 0.3–0.5.' The difference is layout quality—open floor plans enable high VE; partitions block flow and waste air volume.",
-        "takeaway": "Poorly configured layouts: VE = 0.3–0.5.' The difference is layout quality—open floor plans enable high VE; partitions block flow and waste air volume."
+        "correct": "Whether openings create a clear wind or buoyancy path without major obstructions. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": "Window size is one factor, but layout (partitions, flow paths) is equally critical. Both Type I and Type II can achieve high or low VE depending on layout; climate does not determine efficiency. Layout directly affects VE; design choices matter greatly. : 'Ventilation efficiency (VE) = Volume of fresh air reaching breathing zone / Total ventilation rate... Well-designed cross-ventilation: VE = 0.7–0.85... Poorly configured layouts: VE = 0.3–0.5.' The difference is layout quality—open floor plans enable high VE; partitions block flow and waste air volume. Poorly configured layouts: VE = 0.3–0.5.' The difference is layout quality—open floor plans enable high VE; partitions block flow and waste air volume.",
-      "code_citation": null,
+      "explanation": "Whether openings create a clear wind or buoyancy path without major obstructions. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +50,30 @@
       "model_id": "ALE-THEO-004-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T16:21:48.264181+00:00",
-      "content_hash": "sha256:be703de366f6fcc014fba4ba2601898d44479fa255a23e7e8e740583de2a39dc"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:4d84aed9268237623ec63315740c4436fca0a0ac25ab23b8ed71c1534af68cc4"
     },
     {
       "question_id": "04285ccf-f066-4d6f-976b-f83e41dc5017",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "A Coronas Type I school requires 6+ ACH for health/wellbeing without mechanical cooling. Calculate whether a 20m × 15m classroom with 4m ceiling (cross-ventilation + stack effect) can achieve this rate, given SW monsoon 3.5 m/s average wind and outdoor–indoor ΔT 2°C.",
+      "text": "A question asks for an exact air-change rate from only window labels on a plan. What is the correct response?",
       "options": [
         {
           "id": "a",
-          "text": "Cross-ventilation: Well-designed asymmetric windows (8% inlet, 25% outlet on 60m perimeter) can yield 4–6 ACH in 3.5 m/s wind. Stack effect (4m height, 2°C ΔT): ≈ 0.25 Pa → 2–3 ACH. Combined: 6–9 ACH achievable. With operable partitions enabling multi-zone stack, target is met without mechanical cooling"
+          "text": "The rate cannot be verified from that information alone; opening area, wind, temperature, path, and controls matter."
         },
         {
           "id": "b",
-          "text": "With ideal geometry, 6 ACH is unachievable in tropical climates; mechanical AC is mandatory for schools"
+          "text": "The rate is automatically acceptable if two windows exist."
         },
         {
           "id": "c",
-          "text": "Stack effect is negligible; cross-ventilation alone cannot reach 6 ACH"
+          "text": "The rate is always zero in humid climates."
         },
         {
           "id": "d",
-          "text": "Wind speed 3.5 m/s is insufficient; 5+ m/s required for 6 ACH"
+          "text": "The rate can be found from facade color."
         }
       ],
       "correct_option_id": "a",
@@ -85,14 +82,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "6 ACH is achievable in tropical Type I climates with design optimization; mechanical cooling is not mandatory for schools.",
-        "c": "Stack effect contributes 2–3 ACH; combined with cross-ventilation, the target is reached.",
-        "d": "3.5 m/s is adequate for tropical monsoon; higher wind speeds assist but are not required.",
-        "correct": "This tests the synergistic mechanism. tested calculation shows: 'Combined Cross + Stack: 6–12 ACH (synergistic)... Wind Speed Dependency: Varies 2–5 m/s seasonal (Type I).' At 3.5 m/s (within Type I range), cross-ventilation (4–6 ACH) + stack effect (2–3 ACH) combine for 6–9 ACH. The synergy is critical; neither alone suffices, but together they achieve 6+ ACH target for ASHRAE 55 adaptive compliance.",
-        "takeaway": "The synergy is critical; neither alone suffices, but together they achieve 6+ ACH target for ASHRAE 55 adaptive compliance."
+        "correct": "The rate cannot be verified from that information alone; opening area, wind, temperature, path, and controls matter. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The rate cannot be verified from that information alone; opening area, wind, temperature, path, and controls matter. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -105,30 +100,30 @@
       "model_id": "ALE-THEO-004-09-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:78379781367f3d0d50ad0007a8d7379197c18c3766a2cc88737db887e28cfef6"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:0fdd3fef4f7ec88ed4d96ea2f34154cd2ab9aa2210d5350079a3217736710c60"
     },
     {
       "question_id": "12105c87-c8d6-48b2-bca9-3f200ea2e5ca",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "For a Coronas Type II hospital in Manila (no dry season, perpetual low wind, continuous 24/7 occupancy), design a ventilation strategy combining cross-ventilation, stack effect, and supplementary cooling. Justify each mechanism's role.",
+      "text": "Why might a clinic space need mechanical support even when the site has good breezes?",
       "options": [
         {
           "id": "a",
-          "text": "Rely solely on mechanical air conditioning; natural ventilation is insufficient in Type II, given the climate's high humidity"
+          "text": "Because natural ventilation is illegal in every room."
         },
         {
           "id": "b",
-          "text": "Cross-ventilation (primary, 2–3 ACH weak wind): windows on all four sides, multi-zone layout, operable partitions. Stack effect (backup, 2–4 ACH): 6–8m atrium from ground to roof vent provides buoyancy-driven flow 24/7 regardless of wind. Supplementary evaporative cooling (tertiary): desiccant dehumidification for 75% RH exterior → 60% interior, enhancing passive cooling. Hybrid strategy reduces mechanical reliance 30–40%"
+          "text": "Because infection control, contaminants, filtration, and continuous conditioning may require more than operable openings."
         },
         {
           "id": "c",
-          "text": "Natural ventilation cannot achieve occupant comfort; sealed mechanical systems are mandatory to ensure consistent air quality"
+          "text": "Because air movement never affects comfort."
         },
         {
           "id": "d",
-          "text": "Type II climate is too wet; evaporative cooling is ineffective, making mechanical systems the only viable option"
+          "text": "Because roof vents replace all health requirements."
         }
       ],
       "correct_option_id": "b",
@@ -137,14 +132,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mechanical AC can be primary, but natural ventilation provides meaningful backup (30–40% cooling load reduction).",
-        "c": "Hybrid design (natural + mechanical) outperforms sealed mechanical alone for both comfort and energy efficiency.",
-        "d": "Type II high humidity reduces evaporative cooling benefit, but supplementary dehumidification can enhance passive strategy.",
-        "correct": "This is the tested multi-mechanism integration for Type II: 'For Coronas Type II hospital (no dry season, perpetual low wind)... design a ventilation strategy combining cross-ventilation, stack effect, and supplementary evaporative cooling.' case study specifies: 'Combined cross + stack: 6–12 ACH (synergistic); Coronas Type II (year-round weak wind + thermal buoyancy blend) is optimal for atrium stack effect.'",
-        "takeaway": "design a ventilation strategy combining cross-ventilation, stack effect, and supplementary evaporative cooling.' case study specifies: 'Combined cross + stack: 6–12 ACH (synergistic); Coronas Type II (year-round weak wind + thermal buoyancy blend) is optimal for atrium stack effect.'."
+        "correct": "Because infection control, contaminants, filtration, and continuous conditioning may require more than operable openings. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Because infection control, contaminants, filtration, and continuous conditioning may require more than operable openings. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +150,30 @@
       "model_id": "ALE-THEO-004-09-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8b929cc88acc184f0c36e2be584c6f403d74d7a38c2a77792d33daf03183692b"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:eb494f4c377a1d0cbf71e788a42e20dcc979ce178c0468e3809350dc566b7883"
     },
     {
       "question_id": "6897a1a8-324f-465c-861e-755115fefd89",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "A Coronas Type I office building in Manila requires natural ventilation during both monsoon (May–Oct, SW wind 225°) and calm seasons (Nov–Apr). How must window placement accommodate bidirectional flow?",
+      "text": "How should a Philippine passive-design answer treat amihan and habagat winds?",
       "options": [
         {
           "id": "a",
-          "text": "Windows on only two perpendicular walls (standard cross-ventilation); seasonal reversal is managed by temporary screens, which are adjusted biannually"
+          "text": "Ignore them because wind never changes seasonally."
         },
         {
           "id": "b",
-          "text": "Type I has uniform wind direction year-round; single-orientation window placement suffices, assuming no obstructions"
+          "text": "Use only northeast openings for all months."
         },
         {
           "id": "c",
-          "text": "Seasonal wind reversal makes natural ventilation impossible; mechanical AC is mandatory unless alternative passive systems are implemented"
+          "text": "Seal the building during both seasons."
         },
         {
           "id": "d",
-          "text": "Windows and doors positioned at multiple compass orientations (not just two); interior doors remain open enabling multi-zone cross-ventilation. Stack effect operates year-round regardless of wind direction, providing backup when seasonal reversals create non-optimal wind exposure"
+          "text": "Allow operable, site-checked paths that can respond to seasonal wind direction."
         }
       ],
       "correct_option_id": "d",
@@ -189,14 +182,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Two-wall orientation cannot accommodate seasonal wind reversal adequately; multi-orientation is necessary.",
-        "b": "Type I explicitly has monsoon reversal (SW May–Oct, NE Nov–Apr); wind direction changes seasonally.",
-        "c": "Stack effect + multi-oriented windows enable year-round natural ventilation despite seasonal wind reversal; mechanical AC is not mandatory.",
-        "correct": "For Coronas Type I climates with seasonal wind reversal, buildings must accommodate bidirectional flow: Windows and doors positioned at multiple compass orientations (not just two). Interior doors between rooms remain open (enables multi-zone cross-ventilation). Stack effect operates regardless of wind direction, providing year-round backup.'",
-        "takeaway": "Stack effect operates regardless of wind direction, providing year-round backup.'."
+        "correct": "Allow operable, site-checked paths that can respond to seasonal wind direction. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": "Two-wall orientation cannot accommodate seasonal wind reversal adequately; multi-orientation is necessary. Type I explicitly has monsoon reversal (SW May–Oct, NE Nov–Apr); wind direction changes seasonally. Stack effect + multi-oriented windows enable year-round natural ventilation despite seasonal wind reversal; mechanical AC is not mandatory. For Coronas Type I climates with seasonal wind reversal, buildings must accommodate bidirectional flow: Windows and doors positioned at multiple compass orientations (not just two). Interior doors between rooms remain open (enables multi-zone cross-ventilation). Stack effect operates regardless of wind direction, providing year-round backup.' Stack effect operates regardless of wind direction, providing year-round backup.'.",
-      "code_citation": null,
+      "explanation": "Allow operable, site-checked paths that can respond to seasonal wind direction. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +200,30 @@
       "model_id": "ALE-THEO-004-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T16:21:48.140542+00:00",
-      "content_hash": "sha256:43c6421918346692a72c24d132ab8c23318cfb58daf377a66d0a2276ec0b81cd"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:a6aedb7ec1eac92fbee9a2fce0e34f43c343c8766dbb9f543f0a00ef9ac70730"
     },
     {
       "question_id": "d279113a-bb85-4343-a0f2-6c4b6af782a8",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "What is a 'wind catcher' (windtower) and how does it enhance tropical natural ventilation?",
+      "text": "What is the source-safe purpose of a wind catcher or similar passive device?",
       "options": [
         {
           "id": "a",
-          "text": "A window-mounted screen that blocks wind, which is not its intended function"
+          "text": "To guarantee hospital-grade air quality."
         },
         {
           "id": "b",
-          "text": "A passive ventilation device that captures air at height (3–8m) above street-level turbulence, channels it down into building via vertical shaft (stack effect amplification), and creates Venturi-effect suction on downwind side. Combined effects drive ventilation 2–3× greater than window-level cross-ventilation"
+          "text": "To capture or redirect wind into a usable ventilation path when the site and section support it."
         },
         {
           "id": "c",
-          "text": "A decorative architectural element with no functional ventilation benefit, which is incorrect"
+          "text": "To replace all outlets in the building."
         },
         {
           "id": "d",
-          "text": "A mechanical fan system requiring electrical power, which contradicts its passive nature"
+          "text": "To calculate solar declination."
         }
       ],
       "correct_option_id": "b",
@@ -241,14 +232,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Wind catchers capture and direct wind flow; they do not block it.",
-        "c": "Wind catchers have proven passive ventilation function, quantified at 2–3× window-only effectiveness.",
-        "d": "Wind catchers are entirely passive; no electrical power required.",
-        "correct": "Wind catchers are defined: 'A passive ventilation device that captures air at height and channels it down into a building, exploiting both wind pressure and the Venturi effect. Effectiveness: Coronas Type I excellent during monsoon (May–Oct); less effective in calm dry season.'",
-        "takeaway": "Effectiveness: Coronas Type I excellent during monsoon (May–Oct); less effective in calm dry season.'."
+        "correct": "To capture or redirect wind into a usable ventilation path when the site and section support it. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "To capture or redirect wind into a usable ventilation path when the site and section support it. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -261,30 +250,30 @@
       "model_id": "ALE-THEO-004-09-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:53b83c64c2f0f9ccc5d6f019d9f8e6c3f41ad4f227a758390020d4b2eddc7fc3"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:f1ca6c724e168f762964959e3bf20f9c2ef23a0623dd3be49c6700af4777b41f"
     },
     {
       "question_id": "6fed7052-57be-4907-8163-cdf15748fcd7",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "A wind catcher installation for a Coronas Type I office in Cebu (SW monsoon 225°) should be sized with height 5m above adjacent rooflines and duct diameter 0.8m. Why are these specifications critical for tropical effectiveness?",
+      "text": "A reviewer proposes one universal wind-catcher height for all Philippine sites. What is the best critique?",
       "options": [
         {
           "id": "a",
-          "text": "Height 5m above surroundings captures wind above street-level turbulence zone (where regional wind dominates). Duct diameter 0.8m creates constriction amplifying Venturi effect. Undersized height (roofline level) eliminates advantage; oversized ducts (>1.0m) reduce velocity. Type I monsoon winds (3–5 m/s average) require this tuning for effectiveness"
+          "text": "Height and size must be checked against site wind, building section, openings, structure, and maintenance."
         },
         {
           "id": "b",
-          "text": "Tropical wind catchers should be installed at ground level for safety, which contradicts their purpose"
+          "text": "Wind catchers work only if they face west."
         },
         {
           "id": "c",
-          "text": "Type I seasonal wind variation makes wind catcher unreliable; design for mechanical backup only, which is not the primary design strategy"
+          "text": "Wind catchers never need outlets."
         },
         {
           "id": "d",
-          "text": "Height and duct size are irrelevant; wind catchers function equally at roofline level with any duct diameter, which is incorrect"
+          "text": "Universal dimensions are more reliable than site data."
         }
       ],
       "correct_option_id": "a",
@@ -293,14 +282,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Ground-level installation eliminates height advantage; roofline minimum is 5m ABOVE adjacent structures.",
-        "c": "Type I monsoon provides strong seasonal wind (May–Oct); wind catchers are highly effective during this period. Mechanical backup handles calm season (Nov–Apr).",
-        "d": "Height and duct sizing are critical to wind catcher functionality; 'critical' is the tested term.",
-        "correct": "Minimum height: 5 meters above surrounding buildings (escapes street-level turbulence)... Duct cross-section: 0.5–1.0 m² typical for residential; larger for commercial.' Height advantage and constriction-driven velocity are the core mechanisms. Undersizing either defeats the design.",
-        "takeaway": "Undersizing either defeats the design."
+        "correct": "Height and size must be checked against site wind, building section, openings, structure, and maintenance. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Height and size must be checked against site wind, building section, openings, structure, and maintenance. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +300,30 @@
       "model_id": "ALE-THEO-004-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:af3b2598d798220ac398ced43834668f1ffc448544889ab7369d65683627cd05"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:4c92631f673011c37086690b6613f67d17b936389729dcbfec475b7d60e1ea81"
     },
     {
       "question_id": "a2d99554-b70a-4a0c-897b-825f66961c68",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "Explain why naturally ventilated buildings can achieve occupant comfort at higher interior temperatures (26–29°C per ASHRAE 55 adaptive model) compared to selead mechanical buildings (23–25°C), and how this understanding changes ventilation design strategy.",
+      "text": "Why can air movement improve perceived comfort in a hot-humid setting?",
       "options": [
         {
           "id": "a",
-          "text": "ASHRAE 55 adaptive model recognizes that naturally ventilated occupants adapt physiologically and psychologically to higher temperatures. Variable air movement (0.5–1.5 m/s) and occupant control (opening windows) increase thermal tolerance. Result: 26–29°C with 6+ ACH = same comfort as 23–25°C sealed building. This 3–4K tolerance window enables 35–50% cooling energy savings and justifies investment in passive ventilation design"
+          "text": "It helps sweat evaporation and convective cooling sensation, within humidity and health limits."
         },
         {
           "id": "b",
-          "text": "ASHRAE 55 allows higher temperatures only in non-occupancy periods, which means that during occupied times, temperatures must be maintained at lower levels"
+          "text": "It lowers outdoor humidity by itself."
         },
         {
           "id": "c",
-          "text": "Higher temperatures in natural ventilation are unacceptable; sealed buildings always provide better comfort, ensuring consistent thermal conditions"
+          "text": "It eliminates the need for shade."
         },
         {
           "id": "d",
-          "text": "Occupant adaptation reduces comfort; natural ventilation comfort is always lower, leading to potential dissatisfaction among building users"
+          "text": "It proves the room has no contaminants."
         }
       ],
       "correct_option_id": "a",
@@ -345,14 +332,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "ASHRAE 55 applies continuously; adaptive model is active during all occupancy periods.",
-        "c": "Adaptive model legitimizes higher comfort temperatures in naturally ventilated buildings; comfort is not compromised.",
-        "d": "Occupant adaptation enhances comfort by enabling personal control and reducing mechanical dependency.",
-        "correct": "ASHRAE 55 Adaptive Comfort Model recognizes that naturally ventilated buildings can maintain occupant comfort at higher indoor temperatures (26–29°C) than fully air-conditioned spaces (23–25°C) because: (1) Occupants adapt psychologically and physiologically; (2) Variable air movement and thermal conditions increase engagement; (3) Personal control enhances tolerance.'",
-        "takeaway": "ASHRAE 55 Adaptive Comfort Model recognizes that naturally ventilated buildings can maintain occupant comfort at higher indoor temperatures (26–29°C) than fully air-conditioned spaces (23–25°C) because: (1) Occupants adapt psychologically and physiologically; (2) Variable air movement and thermal conditions increase engagement; (3) Personal control enhances tolerance.'."
+        "correct": "It helps sweat evaporation and convective cooling sensation, within humidity and health limits. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It helps sweat evaporation and convective cooling sensation, within humidity and health limits. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -365,30 +350,30 @@
       "model_id": "ALE-THEO-004-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:37f16da0e3069984392800085834b21b62e05841ddbd59402672f76a0efbd2ac"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:43e8780f26ed48c8a76b06e900572a0fe1e837e3f9e237fa64164de83bb0ba9f"
     },
     {
       "question_id": "3481a09b-41e1-42c5-a9f4-e2794ddb585a",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "Calculate the stack effect pressure differential for a 6-meter-tall library space (exterior 34°C, interior 37.5°C via passive cooling). Show calculation and estimate resulting ACH contribution.",
+      "text": "What is the basic stack-effect idea used in architectural ventilation?",
       "options": [
         {
           "id": "a",
-          "text": "ΔP = 1.2 × 9.81 × 4 × (2.5/308) = 0.38 Pa. This modest pressure generates 2–4 ACH in typical rooms. Combined with wind-driven flow (4–8 ACH), stack effect provides crucial backup during low-wind periods"
+          "text": "Warm or stale air leaves through higher openings while replacement air enters lower openings."
         },
         {
           "id": "b",
-          "text": "A 6-meter space generates ΔP > 1.0 Pa, driving 8–10 ACH, assuming no obstructions in the airflow path"
+          "text": "Cold air always rises above warm air."
         },
         {
           "id": "c",
-          "text": "Height is irrelevant to stack effect; only temperature differential matters, which is a common misconception"
+          "text": "A room ventilates only when all openings are at the same height."
         },
         {
           "id": "d",
-          "text": "Stack effect is negligible in tropical climates; pressure differentials <0.5 Pa are ineffective, especially in well-ventilated spaces"
+          "text": "Stack effect is a decorative roof profile."
         }
       ],
       "correct_option_id": "a",
@@ -397,14 +382,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "0.38 Pa is the correct result; this is not >1.0 Pa.",
-        "c": "Height (h in formula) directly affects ΔP magnitude; 6m vs. 3m height produces 50% greater pressure differential.",
-        "d": "0.38 Pa, though modest, drives measurable airflow (2–4 ACH); tropical buildings cannot ignore stack effect.",
-        "correct": "The exact calculation: 'h = 4 m (ground floor to roof opening), ΔT = 2.5 K, T_ext = 308 K... ΔP = 0.38 Pa... 2–4 air changes per hour.' This modest pressure, while not dominant, provides essential backup when wind is absent. The calculation + ACH estimation is the tested skill.",
-        "takeaway": "The calculation + ACH estimation is the tested skill."
+        "correct": "Warm or stale air leaves through higher openings while replacement air enters lower openings. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Warm or stale air leaves through higher openings while replacement air enters lower openings. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -417,30 +400,30 @@
       "model_id": "ALE-THEO-004-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ae7431eedc1bcec71c716f4edff3c585c4e36abdfed233695ebb035aee08488f"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:bcac987a3903dafd4102a58d0bd00480615e07f3084448561ef10c48631650d3"
     },
     {
       "question_id": "4fc32a3b-8e6d-4cca-8fa6-0a4388c4daea",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "How do Venturi-shaped roofs differ from flat roofs in their impact on natural ventilation, and when is the additional complexity cost-justified?",
+      "text": "When are roof vents or a double roof source-safe in a tropical design answer?",
       "options": [
         {
           "id": "a",
-          "text": "Venturi roofs are universally required for all tropical buildings, regardless of specific site conditions or climate variations"
+          "text": "Only when they are added as ornament."
         },
         {
           "id": "b",
-          "text": "Flat roofs are always superior; Venturi geometry worsens airflow, making them unsuitable for most applications"
+          "text": "Only when the roof is flat."
         },
         {
           "id": "c",
-          "text": "Venturi-shaped roofs (widest at bottom, narrowest at top) accelerate exhaust air and create suction enhancing stack effect by 15–25%. Cost-justified in Type II/IV (perpetual buoyancy reliance) where year-round 0.5+ Pa additional pressure is valuable. Coronas Type I daytime heating may not justify complexity; simpler flat + roof vents often suffice"
+          "text": "When they help remove trapped hot air and connect to a real inlet/outlet strategy."
         },
         {
           "id": "d",
-          "text": "Venturi roofs add no functional benefit; complexity is unnecessary, as simpler designs achieve the same results"
+          "text": "When all windows are sealed permanently."
         }
       ],
       "correct_option_id": "c",
@@ -449,14 +432,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Universal requirement is overstated; cost-benefit drives application.",
-        "b": "Venturi geometry enhances stack effect; it improves, not worsens, airflow.",
-        "d": "15–25% ventilation increase is significant; complexity is justified in low-wind climates.",
-        "correct": "Venturi roofs increase ventilation rates by 15–25% compared to flat roofs... In calm wind conditions (<1 m/s), Venturi effect accounts for only 10–15% additional flow; wind-driven flow dominates under favorable conditions.' Cost-benefit analysis determines necessity: Type II perpetual low-wind conditions justify investment; Type I strong monsoon may not require it.",
-        "takeaway": "In calm wind conditions (<1 m/s), Venturi effect accounts for only 10–15% additional flow; wind-driven flow dominates under favorable conditions.' Cost-benefit analysis determines necessity: Type II perpetual low-wind conditions justify investment; Type I strong monsoon may not require it."
+        "correct": "When they help remove trapped hot air and connect to a real inlet/outlet strategy. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "When they help remove trapped hot air and connect to a real inlet/outlet strategy. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +450,30 @@
       "model_id": "ALE-THEO-004-09-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a177415274dc18f07d04f011f45891b77628b0317f3b898b8eb487e94173fc70"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:8827887e87a958e19222e275d88bec29fc8c35e22db80e679fbdafb2869d4237"
     },
     {
       "question_id": "a67f4a91-1133-483f-8cd6-fbb5c0603f29",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "What are the two primary driving forces for natural ventilation in tropical buildings?",
+      "text": "Which drivers are normally named in a source-safe natural ventilation explanation?",
       "options": [
         {
           "id": "a",
-          "text": "Pressure-driven flow (wind) and buoyancy-driven flow (stack effect); both are perpetual in Philippine climate"
+          "text": "Wind pressure and thermal buoyancy or convection."
         },
         {
           "id": "b",
-          "text": "Humidity and rainfall patterns, which significantly influence ventilation needs and strategies"
+          "text": "Facade color and tile pattern only."
         },
         {
           "id": "c",
-          "text": "Mechanical fans and window operation, which are often used in conjunction with natural ventilation methods"
+          "text": "Paint finish and furniture style only."
         },
         {
           "id": "d",
-          "text": "Solar radiation intensity and building height, which can affect air movement and ventilation effectiveness"
+          "text": "Solar declination and rating-system points only."
         }
       ],
       "correct_option_id": "a",
@@ -501,14 +482,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Humidity and rainfall affect moisture management but not ventilation mechanics.",
-        "c": "Mechanical systems are active, not natural ventilation.",
-        "d": "These affect thermal conditions but are not primary ventilation drivers.",
-        "correct": "Natural ventilation operates through two primary mechanisms: pressure-driven flow (wind) and buoyancy-driven flow (stack effect). Both are perpetual in the Philippine climate; their interaction determines achievable ventilation rates.'",
-        "takeaway": "Both are perpetual in the Philippine climate; their interaction determines achievable ventilation rates.'."
+        "correct": "Wind pressure and thermal buoyancy or convection. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Wind pressure and thermal buoyancy or convection. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -521,30 +500,30 @@
       "model_id": "ALE-THEO-004-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4810adcbf6783ba320826ab9bf96411c45977d900e8f73e1130846dd54f07194"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:330cd75d6c692a24c1842deab1a36a4f188dd0a33d713fecd921a31a06a50afa"
     },
     {
       "question_id": "dc2b5762-c10f-4f17-81a4-3a6b2658d467",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
       "topic_id": "2890dfd5-3e47-4856-85cb-cffa44620547",
-      "text": "Explain why asymmetric aperture sizing (small inlet 6–10% floor area, large outlet 20–30%) is more effective than symmetric equal-sized openings for cross-ventilation in tropical buildings.",
+      "text": "Which opening strategy is consistent with TOA 4 tropical ventilation logic?",
       "options": [
         {
           "id": "a",
-          "text": "Asymmetry reduces daylighting; symmetric windows are better for interior illumination, which is crucial for energy efficiency and occupant comfort"
+          "text": "Put all openings on one wall and block the interior path."
         },
         {
           "id": "b",
-          "text": "Small inlets reduce occupant comfort; large outlets are preferable, as they allow for greater airflow and temperature regulation"
+          "text": "Use only fixed glass in a hot-humid room."
         },
         {
           "id": "c",
-          "text": "Asymmetric sizing creates velocity at small inlet (Bernoulli effect: fluid accelerates through constriction), amplifying pressure differential. Large outlet prevents backflow/pressure buildup. Result: higher air velocity, greater penetration depth into building interior. Symmetric 18%+18% openings yield lower velocity and shallower penetration; asymmetric 6%+28% is 20–30% more effective"
+          "text": "Coordinate windward and leeward openings, with outlet capacity and section height checked for flow."
         },
         {
           "id": "d",
-          "text": "Symmetric sizing is universally optimal; asymmetry has no advantage, as it complicates design without providing significant benefits"
+          "text": "Rely on a sealed attic to remove hot air."
         }
       ],
       "correct_option_id": "c",
@@ -553,14 +532,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Outlet size (20–30%) can be high-placement louvers (roof vents) that do not impact daylighting; asymmetry and lighting are independent.",
-        "b": "Small inlets (6–10%) are high-velocity air, which occupants perceive as refreshing; comfort is enhanced, not reduced.",
-        "d": "Asymmetry is demonstrably more effective; this is tested design knowledge.",
-        "correct": "Aperture sizing is counterintuitive. Smaller inlet openings (6–10% of floor area) create velocity; larger outlets (20–30% of floor area) maximize volume. Asymmetric aperture sizing is more effective than equal-sized openings.' This applies Bernoulli principle: constriction creates speed, preventing backflow.",
-        "takeaway": "Asymmetric aperture sizing is more effective than equal-sized openings.' This applies Bernoulli principle: constriction creates speed, preventing backflow."
+        "correct": "Coordinate windward and leeward openings, with outlet capacity and section height checked for flow. This stays inside the Batch 133 local source map for Natural Ventilation.",
+        "takeaway": "Use the local Batch 133 source capture and refined conversion for Natural Ventilation; avoid unsupported exact calculations or rating claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Coordinate windward and leeward openings, with outlet capacity and section height checked for flow. Supported by Batch 133 local source artifacts for Natural Ventilation: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.source-capture.md#sha256:f51278a74978284167fb79c011565b72202a807bd897954730c962950d93a4c4; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-133/lea-theo-004-09-core-concept-natural-ventilation.refined.md#sha256:675b047062be93427531018b60588afd1f1b03d4b3da5cdcb73e3661ce20e194",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -573,8 +550,9 @@
       "model_id": "ALE-THEO-004-09-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7a1fbc98d1ccb151d7c674de142bb34b190d287790fbe74b526080f3af3d12a2"
+      "updated_at": "2026-05-14T18:45:00.000+08:00",
+      "content_hash": "sha256:6c17f0000501b5380fe2615ae691c592a82ea8e8cf330bb1b3fde0778b32e0c7"
     }
-  ]
+  ],
+  "linked_questions_hash": "sha256:54434d2832bef7ec8ec1474cb36acd2e93f3551bf08ffaedd562849dfa838df1"
 }
