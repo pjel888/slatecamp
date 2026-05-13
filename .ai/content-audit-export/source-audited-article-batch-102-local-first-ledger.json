@@ -1,0 +1,80 @@
+{
+  "batch_number": "102",
+  "batch_id": "source-audited-article-batch-102-local-first",
+  "generated_at": "2026-05-13T11:00:00+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 4,
+      "eligible_retained_and_source_tightened": 1,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 26,
+    "source_hash_failures": 0,
+    "scoped_json_files": 108,
+    "scoped_json_failures": 0
+  },
+  "articles": [
+    {
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "slug": "lea-prac-frm-009-cpd-activity-types-for-architects",
+      "candidate_hash": "sha256:e3e4732ab406501ca02ad73e42af41c3e7d1aef5a5e85aa6bbfb2a21a0fe8270",
+      "diff_safe_to_push": true,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "source_classification": "SOURCE_PRIMARY_WITH_FINAL_DEPTH_CPD_DEFERRAL"
+    },
+    {
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "slug": "lea-prac-frm-010-cpd-provider-accreditation",
+      "candidate_hash": "sha256:07e49c6108d30d194518d78361f1ca52a1ff5160dd3eb73bf838bbf5711dabc4",
+      "diff_safe_to_push": true,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "source_classification": "SOURCE_PRIMARY_WITH_FINAL_DEPTH_CPD_PROVIDER_DEFERRAL"
+    },
+    {
+      "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
+      "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
+      "candidate_hash": "sha256:bf5a790e304b1369a8089688796a678ca37d16e8d3bb4f7c8f061e7d94daa834",
+      "diff_safe_to_push": true,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-retained-and-source-tightened",
+      "source_classification": "SOURCE_PRIMARY_MULTI_SOURCE"
+    },
+    {
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
+      "candidate_hash": "sha256:1b3ba23532f638d6f8c4d325bcdb546a3d7d7d2e1b2968b9bb5d273094ba8942",
+      "diff_safe_to_push": true,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "source_classification": "SOURCE_PRIMARY_MULTI_SOURCE"
+    },
+    {
+      "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+      "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
+      "candidate_hash": "sha256:2be0ee76d7b931e52ce265ce2a495ac9ae60d9818f98deb5b9a2176e96e52dc9",
+      "diff_safe_to_push": true,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "source_classification": "SOURCE_PRIMARY_WITH_FINAL_DEPTH_COA_DEFERRAL"
+    }
+  ],
+  "final_depth_preserved": [
+    "FRM-009 exact current CPD activity categories and credit-unit schedule require local raw CPD-law/guideline source.",
+    "FRM-010 exact provider accreditation validity, renewal mechanics, and CPD Council standards require local raw CPD-law/guideline source.",
+    "FRM-011 exact DPWH/NHA charter-specific architecture office mandates may need final-depth local charter review.",
+    "FRM-013 exact COA constitutional/PD 1445 authority, official COA terminology, and professional-liability-insurance requirements require local raw primary sources."
+  ]
+}

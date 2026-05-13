@@ -1,0 +1,84 @@
+{
+  "batch_number": "102",
+  "batch_id": "source-audited-article-batch-102-local-first",
+  "generated_at": "2026-05-13T11:00:00+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "checks": {
+    "compose_strict": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0
+    },
+    "diff_strict": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0
+    },
+    "bundle_validate": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0,
+      "warnings": "Known missing component-usage.json sidecar warning only."
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files": 111,
+      "failures": 0
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "matches": 0,
+      "patterns": [
+        "[SLATECAMP_UI_BLOCK",
+        "TODO",
+        "FIXME",
+        "SOURCE_GAP",
+        "INTERNAL_NOTE",
+        "internal note"
+      ]
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 26,
+      "failures": 0
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "articles": 5,
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "matches": 0
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 102 scoped paths>"
+    }
+  },
+  "forbidden_actions": {
+    "supabase_push": "not_attempted",
+    "deploy": "not_attempted",
+    "production_db_mutation": "not_attempted",
+    "merge_to_main": "not_attempted"
+  }
+}

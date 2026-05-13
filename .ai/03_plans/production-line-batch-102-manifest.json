@@ -1,0 +1,153 @@
+{
+  "batch_number": "102",
+  "batch_id": "source-audited-article-batch-102-local-first",
+  "manifest_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "reserved_at": "2026-05-13T11:00:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "0bf79f9e1",
+  "previous_batch": "101",
+  "selection_rule": "Continue after accepted Batch 101 with the next five sourceable professional-practice form clusters, FRM-009 through FRM-013. Process exactly five article clusters with linked questions and local raw source families.",
+  "inherited_blocker_status": "Batch 101 accepted at commit 0bf79f9e1 with blockers=0; Batch 102 starts local-first only with no Supabase push, deploy, production DB mutation, or main merge.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS_CURRENT_SERIAL_SET_WITH_HISTORICAL_OVERLAP_RECORDED",
+    "current_serial_source_audited_batches_checked": [
+      "087",
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094",
+      "095",
+      "096",
+      "097",
+      "098",
+      "099",
+      "100",
+      "101"
+    ],
+    "selected_article_count": 5,
+    "selected_ids_found_in_current_serial_accepted_selected_articles": [],
+    "historical_overlap_recorded_separately": true,
+    "historical_local_first_or_reaudit_artifacts": {
+      "939408a5-777b-437f-ad59-555132f8714a": [
+        "target-mapping-no-apply-2026-05-09 manifest; no accepted Batches 087-101 overlap"
+      ],
+      "31a0b194-7296-4360-821e-5bc5c49be135": [
+        "target-mapping-no-apply-2026-05-09 manifest; no accepted Batches 087-101 overlap"
+      ],
+      "46490e40-c2c3-4c76-bf43-87b40512989f": [
+        "older local-first artifacts around Batches 003/004; no accepted Batches 087-101 overlap"
+      ],
+      "8e546a58-36c2-4cd3-8340-2cb9d1189b13": [
+        "older local-first Batch 011 artifact; no accepted Batches 087-101 overlap"
+      ],
+      "9c859ffb-8b3a-4feb-b484-6700d3867e5c": [
+        "target-mapping-no-apply-2026-05-09 manifest; no accepted Batches 087-101 overlap"
+      ]
+    }
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "slug": "lea-prac-frm-009-cpd-activity-types-for-architects"
+    },
+    {
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "slug": "lea-prac-frm-010-cpd-provider-accreditation"
+    },
+    {
+      "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
+      "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function"
+    },
+    {
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions"
+    },
+    {
+      "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+      "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "stale_compose_error_files_removed": 4,
+    "scenarios_expected": 5,
+    "source_hash_checks_expected": 26
+  },
+  "article_clusters": [
+    {
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "slug": "lea-prac-frm-009-cpd-activity-types-for-architects",
+      "title": "CPD Activity Types for Architects",
+      "focus": "source-safe CPD activity classification under RA 9266 IRR with RA 10912 details deferred",
+      "linked_question_count": 10,
+      "source_family": "RA 9266 IRR Architecture Act of 2004",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": "Exact current CPD activity categories and credit-unit schedule under current CPD law/guidelines."
+    },
+    {
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "slug": "lea-prac-frm-010-cpd-provider-accreditation",
+      "title": "CPD Provider Accreditation",
+      "focus": "Board/IAPOA CPD provider recognition under RA 9266 IRR with current provider mechanics deferred",
+      "linked_question_count": 10,
+      "source_family": "RA 9266 IRR Architecture Act of 2004",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": "Exact provider accreditation validity period, renewal mechanics, and CPD Council standards."
+    },
+    {
+      "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
+      "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
+      "title": "Government Architects, In-House Design, and Public Accountability",
+      "focus": "government architect professional responsibility, procurement, DHSUD context, and LGU accountability records",
+      "linked_question_count": 10,
+      "source_family": "RA 9266 IRR; Civil Code Article 1723; RA 9184; RA 11201; RA 7160",
+      "scenario_status": "eligible-retained-and-source-tightened",
+      "thin_needs_expansion": "Exact DPWH/NHA charter-specific architecture office mandates if needed in final depth."
+    },
+    {
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
+      "title": "RA 9184 Government Procurement Reform Act Architecture Relevant Provisions",
+      "focus": "procurement principles, consulting services, BAC, planning, audit trail, and alternative-method boundary",
+      "linked_question_count": 10,
+      "source_family": "RA 9184; Updated 2016 IRR of RA 9184",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+      "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
+      "title": "COA Audit Compliance for Publicly Funded Architectural Projects",
+      "focus": "public procurement/accountability record under RA 9184 and RA 7160 with exact COA doctrine deferred",
+      "linked_question_count": 10,
+      "source_family": "RA 9184; Updated 2016 IRR of RA 9184; RA 7160; RA 9266 IRR",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": "Exact COA constitutional/PD 1445 authority, official COA terminology, and professional-liability-insurance requirements."
+    }
+  ],
+  "validation_gates": {
+    "compose": "PASS 5/5 blockers=0",
+    "diff": "PASS 5/5 locally_safe blockers=0",
+    "validate": "PASS 5/5 blockers=0",
+    "ui_block_edit_validation": "PASS 5/5 blockers=0 warnings=0",
+    "scoped_json_parse": "PASS 108 files failures=0",
+    "marker_scan": "PASS matches=0",
+    "source_hash_checks": "PASS 26/26",
+    "linked_question_question_edit_counts": "PASS 50/50",
+    "stale_compose_error_scan": "PASS matches=0",
+    "targeted_tests": "PASS 34 pass, 0 fail, 328 expects",
+    "scoped_git_diff_check": "pending at manifest write"
+  },
+  "forbidden_actions": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_to_main": false
+  }
+}

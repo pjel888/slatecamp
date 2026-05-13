@@ -1,173 +1,169 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T18:30:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
-  "protocols_applied": [
-    ".ai/CONTENT_EXCELLENCE_GOAL.md",
-    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
-    ".ai/00_system/vitruvius-source-reference.md"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "batch-102",
+  "audit_date": "2026-05-13",
+  "audit_mode": "local_first_source_audited",
+  "audited_at": "2026-05-13T10:45:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "classification": "SOURCE_PRIMARY_MULTI_SOURCE",
   "target": {
     "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
     "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
-    "title": "Government Architects, In-House Design, and Public Accountability",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function--46490e40-c2c3-4c76-bf43-87b40512989f",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function--46490e40-c2c3-4c76-bf43-87b40512989f/candidate.md",
-    "candidate_sha256": "sha256:357511191beb7d6444ef63d142ba20082a437803aa1a0f19597f8f26aa00957b",
-    "normalized_sha256": "sha256:357511191beb7d6444ef63d142ba20082a437803aa1a0f19597f8f26aa00957b",
-    "linked_questions_sha256": "sha256:cb4e65ae72ea5a34ff1fb19b1ff7cfff4c28fcf30777373d3a88a0f374bbc564",
-    "sources_sha256": "sha256:30d02606b3a00b6bc53e3791e04ca35748f738d766c4f2ee1dbb7e0b0989a93c"
+    "folder": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function--46490e40-c2c3-4c76-bf43-87b40512989f",
+    "batch_sequence": 3
   },
-  "classification": {
-    "content_type": "government_practice_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "0230b95d-eeee-4086-bd23-8551412e5268",
-      "1cbc9fea-8ed5-44af-b22c-8b7c5e2c7fd3",
-      "2ce1c900-2ee0-406b-af7b-a437fb24d3ac",
-      "431195e0-6c6d-4b83-bd55-415e9c11b405",
-      "57256fbf-67c1-4bc6-8c51-dd27bd49e134",
-      "5b8b7eb7-c401-4bef-84b8-f4eb467c8579",
-      "6979f68f-5f67-491a-9aae-471817f67146",
-      "811525b7-b940-47e1-9ffc-7b12ef0713e6",
-      "ac4b612d-2523-4345-b59e-e9f2736623ff",
-      "d3d33b7f-cb94-43f3-831c-658e47ea4de5"
-    ]
-  },
+  "protocols_applied": [
+    "vitruvius_raw_source_primary",
+    "local_conversion_line_anchor",
+    "question_edit_answer_key_preserved",
+    "ui_block_placeholder_removed_or_resolved",
+    "final_depth_deferrals_recorded"
+  ],
+  "scenario_status": "eligible_retained_and_source_tightened",
   "raw_sources": [
     {
-      "key": "ra9266_irr",
-      "label": "RA 9266 IRR, Architecture Act of 2004",
-      "source_type": "implementing_rules",
-      "source_id": "batch003-lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-source-01",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+      "label": "RA 9266 IRR",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "checked_markdown_lines": [
+        117,
+        119,
+        184,
+        186,
+        338,
+        340,
+        708,
+        712,
+        742,
+        748
+      ]
     },
     {
-      "key": "civil_code_ra386",
-      "label": "Civil Code of the Philippines, Article 1723",
-      "source_type": "primary_law",
-      "source_id": "batch003-lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-source-02",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5"
+      "label": "Civil Code Article 1723",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+      "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+      "raw_markdown_sha256": "sha256:d3e7bb551b299f6b31c45a9dbf9e81af90b2f863e4e1d82211a5ffb5ef782bdb",
+      "checked_markdown_lines": [
+        5519,
+        5523
+      ]
     },
     {
-      "key": "ra9184_gp_act",
-      "label": "RA 9184 Government Procurement Reform Act",
-      "source_type": "primary_law",
-      "source_id": "batch003-lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-source-03",
+      "label": "RA 9184",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
-      "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8"
+      "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA_9184.md",
+      "raw_markdown_sha256": "sha256:ecbcdb3b7cad01360562b13cff77d076aae591c81ad32caf49530ac4ad9d6dd7",
+      "checked_markdown_lines": [
+        32,
+        50,
+        80,
+        88,
+        126,
+        136,
+        140,
+        159,
+        211,
+        213
+      ]
     },
     {
-      "key": "ra7160_lgc",
-      "label": "RA 7160 Local Government Code, accounting and COA access provisions",
-      "source_type": "primary_law",
-      "source_id": "batch003-lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-source-04",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
-      "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff"
-    },
-    {
-      "key": "ra11201_dhsud",
-      "label": "RA 11201 DHSUD Act of 2019",
-      "source_type": "primary_law",
-      "source_id": "batch003-lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-source-05",
+      "label": "RA 11201",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
-      "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d"
+      "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-11201/RA 11201 - DHSUD Act of 2019.md",
+      "raw_markdown_sha256": "sha256:92c46564ca3a7bca04e70201428ec137ce3e620167269a25b5d88c6cae514003",
+      "checked_markdown_lines": [
+        228,
+        250,
+        292,
+        306
+      ]
     },
     {
-      "key": "eo90_shelter_program",
-      "label": "Executive Order No. 90, shelter agency coordination",
-      "source_type": "executive_issuance",
-      "source_id": "batch003-lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-source-06",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf",
-      "raw_pdf_sha256": "sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501"
+      "label": "RA 7160",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+      "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-7160/RA 7160 The Local Government Code.md",
+      "raw_markdown_sha256": "sha256:b414ad079021bfdbc19094ddffeef87b3e5038b3ef4de38d18c804beb1df2d15",
+      "checked_markdown_lines": [
+        2142,
+        2162,
+        2330,
+        2348,
+        2465,
+        2473
+      ]
     }
   ],
-  "gate_results": {
-    "compose": "PASS: blockers=0; warnings=0; preserved_blocks_reinserted=0",
-    "diff": "PASS: safe_to_push=true; locally_safe_to_push=true; blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id 46490e40-c2c3-4c76-bf43-87b40512989f --summary returned valid=true with zero blockers",
-    "push_dry_run": "not_attempted_local_first_recovery; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
-    "supabase_mutation": "not_attempted"
-  },
   "claims": [
     {
-      "claim_id": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-claim-01",
-      "claim_text": "RA 9266 IRR controls architect-of-record responsibility for government and private-firm architects.",
-      "audit_result": "PASS",
-      "source_support": [
-        "ra9266_irr",
-        "civil_code_ra386",
-        "ra9184_gp_act",
-        "ra7160_lgc",
-        "ra11201_dhsud",
-        "eo90_shelter_program"
-      ]
+      "claim_id": "FRM011-C01",
+      "claim_text": "Architectural documents include drawings, specifications, cost estimates, and other outputs only an architect can sign and seal.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        136,
+        138
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
     },
     {
-      "claim_id": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-claim-02",
-      "claim_text": "Civil Code Article 1723 remains the liability locator for plans and specifications in the tested collapse/damages frame.",
-      "audit_result": "PASS",
-      "source_support": [
-        "ra9266_irr",
-        "civil_code_ra386",
-        "ra9184_gp_act",
-        "ra7160_lgc",
-        "ra11201_dhsud",
-        "eo90_shelter_program"
-      ]
+      "claim_id": "FRM011-C02",
+      "claim_text": "Architect-of-record responsibility applies to architects in government and private firms.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        738,
+        742
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
     },
     {
-      "claim_id": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-claim-03",
-      "claim_text": "RA 9184 controls public procurement of infrastructure projects and consulting services; RA 7160/COA provisions support public accountability and audit records.",
-      "audit_result": "PASS",
-      "source_support": [
-        "ra9266_irr",
-        "civil_code_ra386",
-        "ra9184_gp_act",
-        "ra7160_lgc",
-        "ra11201_dhsud",
-        "eo90_shelter_program"
-      ]
+      "claim_id": "FRM011-C03",
+      "claim_text": "Civil Code Article 1723 supports collapse/defect liability for the architect or engineer who drew plans and specifications.",
+      "source": "Civil Code",
+      "lines": [
+        5519,
+        5523
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
     },
     {
-      "claim_id": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-claim-04",
-      "claim_text": "Agency mandate language was narrowed to sourced public-sector context and not overstated.",
-      "audit_result": "PASS",
-      "source_support": [
-        "ra9266_irr",
-        "civil_code_ra386",
-        "ra9184_gp_act",
-        "ra7160_lgc",
-        "ra11201_dhsud",
-        "eo90_shelter_program"
-      ]
+      "claim_id": "FRM011-C04",
+      "claim_text": "RA 9184 governs public procurement of infrastructure projects and consulting services.",
+      "source": "RA 9184",
+      "lines": [
+        80,
+        88,
+        140,
+        153
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
     },
     {
-      "claim_id": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function-linked-question-edits",
-      "claim_text": "Question edits staged locally for linked question IDs: 0230b95d-eeee-4086-bd23-8551412e5268, 1cbc9fea-8ed5-44af-b22c-8b7c5e2c7fd3, 2ce1c900-2ee0-406b-af7b-a437fb24d3ac, 431195e0-6c6d-4b83-bd55-415e9c11b405, 57256fbf-67c1-4bc6-8c51-dd27bd49e134, 5b8b7eb7-c401-4bef-84b8-f4eb467c8579, 6979f68f-5f67-491a-9aae-471817f67146, 811525b7-b940-47e1-9ffc-7b12ef0713e6, ac4b612d-2523-4345-b59e-e9f2736623ff, d3d33b7f-cb94-43f3-831c-658e47ea4de5",
-      "audit_result": "PASS",
-      "source_support": [
-        "ra9266_irr",
-        "civil_code_ra386",
-        "ra9184_gp_act",
-        "ra7160_lgc",
-        "ra11201_dhsud",
-        "eo90_shelter_program"
-      ]
+      "claim_id": "FRM011-C05",
+      "claim_text": "DHSUD is the primary national entity for housing, human settlement, and urban development planning/policy/coordination context.",
+      "source": "RA 11201",
+      "lines": [
+        228,
+        250,
+        292,
+        306
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
     }
   ],
-  "unsupported_or_removed_claims": [],
-  "remaining_local_blockers": [],
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_supabase_upload": true,
-    "local_first_recovery_complete": true,
-    "remote_publish_status": "not_attempted_by_request",
-    "remaining_local_blockers": []
-  }
+  "unsupported_claims_removed": [
+    "Agency mandate overstatements not backed by local raw charter source."
+  ],
+  "final_depth_deferrals": [
+    "Exact DPWH/NHA charter-specific architecture office mandates if needed in final depth."
+  ]
 }

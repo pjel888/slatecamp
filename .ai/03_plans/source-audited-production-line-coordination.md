@@ -1,17 +1,17 @@
 # Source-Audited Production-Line Coordination
 
-Updated: 2026-05-13T10:12:00+08:00
+Updated: 2026-05-13T11:00:00+08:00
 Workspace: /Users/philiplewis/slatecamp
 Branch: 3dlab-gray-viewport-bg
-Mode: controlled serial final-gate production line; Batch 099 is accepted and pushed at `0d3eb29e0`; Batch 100 is local-first complete with independent QA PASS and final commit gate pending.
+Mode: controlled serial final-gate production line; Batch 101 is accepted and pushed at `0bf79f9e1`; Batch 102 is local-first complete with independent QA PASS and final commit gate pending.
 
 ## Current Committed Baseline
 
-- Current HEAD observed before Batch 100 work: 0d3eb29e0
-- Latest accepted and pushed commit: 0d3eb29e0 (Batch 099 accepted)
-- Latest local-first completed batch: Batch 100, blockers=0, independent QA PASS, scoped git diff check PASS, commit/push gate pending
-- Batches 087-099 are committed and pushed as the accepted source-audited serial baseline through 0d3eb29e0.
-- Batch 100 completed local-first processing from the Batch 099 cursor recommendation with blockers=0 inherited from Batch 099.
+- Current HEAD observed before Batch 102 work: 0bf79f9e1
+- Latest accepted and pushed commit: 0bf79f9e1 (Batch 101 accepted)
+- Latest local-first completed batch: Batch 102, blockers=0, independent QA PASS, scoped validation PASS, commit/push gate pending
+- Batches 087-101 are committed and pushed as the accepted source-audited serial baseline through 0bf79f9e1.
+- Batch 102 completed local-first processing from the Batch 101 cursor recommendation with blockers=0 inherited from Batch 101.
 
 ## Accepted Batches
 
@@ -38,19 +38,21 @@ Mode: controlled serial final-gate production line; Batch 099 is accepted and pu
 | 098 | Accepted, committed at 0ea695796 | UAP professional services continuation: supervision/CM boundaries, post-construction, CAS, heritage/adaptive reuse, design-build | 5 | 50 | 0 | lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration (1277bf71-f3cc-4d29-86a8-8cadca0133f9)<br>lea-prac-svc-016-post-construction-services-building-administration-and-operations-support (355981c3-3480-4441-991d-8d8e94cd20b5)<br>lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission (50450ba8-a843-4399-9bd9-9b6c854ee65a)<br>lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services (75ef7a25-2d9d-455d-8d89-e6eb0b691240)<br>lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role (9796e088-8c83-4a6c-9599-51afd69d0e81) | production-line-batch-098-manifest.json |
 
 | 099 | Accepted, committed at 0d3eb29e0 | UAP professional services continuation: design-build modes, project delivery terms, ADC rights, compensation methods, value engineering | 5 | 50 | 0 | lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction (ecf888fd-c314-4d20-87e6-4841f84b71a0)<br>lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery (4ecfe37d-2ee5-4d7e-8878-65fee5a29770)<br>lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights (2660de04-9a95-4581-83c1-792b09b79d48)<br>lea-prac-svc-023-core-concept (01e537a7-be03-49ec-b745-258474c27f70)<br>lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics (7a48ab8a-3609-484d-b7e3-76f2fc1f6040) | production-line-batch-099-manifest.json |
-| 100 | Accepted local-first, independent QA PASS, final commit gate pending | Professional practice continuation: Architectural Interiors, Site Development Planning, sole proprietorship, partnership, and corporate practice | 5 | 50 | 0 | lea-prac-svc-025-core-concept (e37575ae-c640-4ddc-911a-7553f338b981)<br>lea-prac-svc-026-core-concept (91457094-42cc-44a0-ad00-3c34ade0d6f7)<br>lea-prac-frm-001-sole-proprietorship-in-architectural-practice (7a53c305-43d6-424a-9a4d-fc4f86de1805)<br>lea-prac-frm-002-partnership-in-architectural-practice (387760f0-6468-40d6-b78e-a463c9f543b2)<br>lea-prac-frm-003-corporate-practice-of-architecture (19da4ac7-d56b-4ec8-ae4a-8141d4058c30) | production-line-batch-100-manifest.json |
+| 100 | Accepted, committed at 42f3f17f4 | Professional practice continuation: Architectural Interiors, Site Development Planning, sole proprietorship, partnership, and corporate practice | 5 | 50 | 0 | lea-prac-svc-025-core-concept (e37575ae-c640-4ddc-911a-7553f338b981)<br>lea-prac-svc-026-core-concept (91457094-42cc-44a0-ad00-3c34ade0d6f7)<br>lea-prac-frm-001-sole-proprietorship-in-architectural-practice (7a53c305-43d6-424a-9a4d-fc4f86de1805)<br>lea-prac-frm-002-partnership-in-architectural-practice (387760f0-6468-40d6-b78e-a463c9f543b2)<br>lea-prac-frm-003-corporate-practice-of-architecture (19da4ac7-d56b-4ec8-ae4a-8141d4058c30) | production-line-batch-100-manifest.json |
+| 101 | Accepted, committed at 0bf79f9e1 | Professional practice form continuation: joint ventures, foreign architects, ASEAN/MRA gate, reciprocity, and CPD requirements | 5 | 50 | 0 | lea-prac-frm-004-joint-venture-in-architecture (846e0ded-f254-441a-a9d2-67af1f617ba5)<br>lea-prac-frm-005-foreign-architects-in-the-philippines (ae4bdc43-1451-4aa5-8c12-65283f4bbdfd)<br>lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services (a13cdc9c-f057-481e-a661-eedb6548f6d8)<br>lea-prac-frm-007-reciprocity-principles-in-architectural-practice (e51e9a56-7251-460e-8d00-5feaa3884f0a)<br>lea-prac-frm-008-cpd-requirements-for-architects (b071e0d5-f3ab-4404-9347-749caea186f0) | production-line-batch-101-manifest.json |
+| 102 | Accepted local-first, independent QA PASS, final commit gate pending | Professional practice form continuation: CPD activity/provider boundaries, government architects, RA 9184, and COA audit-trail accountability | 5 | 50 | 0 | lea-prac-frm-009-cpd-activity-types-for-architects (939408a5-777b-437f-ad59-555132f8714a)<br>lea-prac-frm-010-cpd-provider-accreditation (31a0b194-7296-4360-821e-5bc5c49be135)<br>lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function (46490e40-c2c3-4c76-bf43-87b40512989f)<br>lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions (8e546a58-36c2-4cd3-8340-2cb9d1189b13)<br>lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects (9c859ffb-8b3a-4feb-b484-6700d3867e5c) | production-line-batch-102-manifest.json |
 
 ## Worker Instructions
 
-- Work one manifest batch at a time. Batches 090-099 are accepted/committed; Batch 100 is local-first complete and must pass the staged commit gate before Batch 101 starts.
-- Before editing, re-run the prior-batch exclusion check against the current serial accepted batches through Batch 099 plus reservation manifests and any local-first completed batch artifacts.
+- Work one manifest batch at a time. Batches 090-101 are accepted/committed; Batch 102 is local-first complete and must pass the staged commit gate before Batch 103 starts.
+- Before editing, re-run the prior-batch exclusion check against the current serial accepted batches through Batch 101 plus reservation manifests and any local-first completed batch artifacts.
 - Use local raw PDFs under /Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer as primary evidence. Internet lookup may only discover candidate source names or official copies for later local-source acquisition; it cannot be cited as primary evidence.
 - Do not permanently skip difficult articles. If a selected article has missing or weak source families, keep the reservation and mark blocker-resolution-needed with the exact source family and recommended path.
 - Do not edit article content or question edits until the batch is started by the serial coordinator. Reservation work may update only /Users/philiplewis/slatecamp/.ai/03_plans.
 
 ## Reviewer Instructions
 
-- Verify that every newly selected article ID is absent from the current serial accepted set through Batch 099 and any earlier accepted reservation batch; record historical/local re-audit overlap separately from accepted production-batch overlap.
+- Verify that every newly selected article ID is absent from the current serial accepted set through Batch 101 and any earlier accepted reservation batch; record historical/local re-audit overlap separately from accepted production-batch overlap.
 - Review raw-source evidence before prose quality. Claims must be traceable to local raw/source-conversion locators, not web snippets.
 - Confirm linked-question count equals created question-edit count for each article.
 - Check for placeholders, internal notes, source gaps, stale compose-error files, JSON parse failures, unsafe diffs, and scenario enrichment status.
@@ -62,11 +64,11 @@ Mode: controlled serial final-gate production line; Batch 099 is accepted and pu
 2. Worker runs the full validation gate list from the manifest.
 3. Independent reviewer validates the artifacts and source traceability.
 4. Coordinator accepts or rejects the batch. Acceptance requires blockers=0, source gaps=0, linked-question/question-edit counts matching, and scoped git diff --check passing.
-5. Only after coordinator acceptance and the required commit/push gate may the next batch begin. Batch 100 is accepted local-first with blockers=0, independent QA PASS, and scoped diff PASS; it must be committed/pushed before Batch 101 starts.
+5. Only after coordinator acceptance and the required commit/push gate may the next batch begin. Batch 102 is accepted local-first with blockers=0, independent QA PASS, and scoped validation PASS; it must be committed/pushed before Batch 103 starts.
 
 ## Commit/Push Rule
 
-After each accepted batch, stage only that batch's accepted article folders, question-edit files, batch report, ledger, scoped checks, and handoff/coordination updates. Commit with the Lore Commit Protocol and push the branch. Do not combine batches in one commit unless the coordinator explicitly records a batch-combination exception. This Batch 100 run may commit and push only the accepted Batch 100 scope.
+After each accepted batch, stage only that batch's accepted article folders, question-edit files, batch report, ledger, scoped checks, and handoff/coordination updates. Commit with the Lore Commit Protocol and push the branch. Do not combine batches in one commit unless the coordinator explicitly records a batch-combination exception. This Batch 102 run may commit and push only the accepted Batch 102 scope.
 
 ## Handoff Notes
 

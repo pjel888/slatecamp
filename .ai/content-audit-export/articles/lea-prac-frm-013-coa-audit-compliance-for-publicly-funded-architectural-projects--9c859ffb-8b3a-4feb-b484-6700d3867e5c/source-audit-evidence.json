@@ -1,0 +1,166 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "batch-102",
+  "audit_date": "2026-05-13",
+  "audit_mode": "local_first_source_audited",
+  "audited_at": "2026-05-13T10:45:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "classification": "SOURCE_PRIMARY_WITH_FINAL_DEPTH_COA_DEFERRAL",
+  "target": {
+    "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+    "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
+    "folder": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects--9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+    "batch_sequence": 5
+  },
+  "protocols_applied": [
+    "vitruvius_raw_source_primary",
+    "local_conversion_line_anchor",
+    "question_edit_answer_key_preserved",
+    "ui_block_placeholder_removed_or_resolved",
+    "final_depth_deferrals_recorded"
+  ],
+  "scenario_status": "eligible_added",
+  "raw_sources": [
+    {
+      "label": "RA 9184",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+      "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA_9184.md",
+      "raw_markdown_sha256": "sha256:ecbcdb3b7cad01360562b13cff77d076aae591c81ad32caf49530ac4ad9d6dd7",
+      "checked_markdown_lines": [
+        32,
+        50,
+        80,
+        88,
+        126,
+        136,
+        140,
+        159,
+        211,
+        213
+      ]
+    },
+    {
+      "label": "Updated 2016 IRR of RA 9184",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/Updated 2016 IRR_31 March 2021.pdf",
+      "raw_pdf_sha256": "sha256:9e1db6ab2f6f9c9483338902fea28a3ed482f0a69c5e883bf98c58f4717a1c25",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/Updated 2016 IRR_31 March 2021.md",
+      "raw_markdown_sha256": "sha256:b6dde9a240d58f44212eff47191b57cb8d8747121a9ef667e093f1eff1f0f2bf",
+      "checked_markdown_lines": [
+        31,
+        410,
+        467,
+        1660,
+        2980,
+        2982
+      ]
+    },
+    {
+      "label": "RA 7160",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+      "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-7160/RA 7160 The Local Government Code.md",
+      "raw_markdown_sha256": "sha256:b414ad079021bfdbc19094ddffeef87b3e5038b3ef4de38d18c804beb1df2d15",
+      "checked_markdown_lines": [
+        2142,
+        2162,
+        2330,
+        2348,
+        2465,
+        2473
+      ]
+    },
+    {
+      "label": "RA 9266 IRR",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "checked_markdown_lines": [
+        117,
+        119,
+        184,
+        186,
+        338,
+        340,
+        708,
+        712,
+        742,
+        748
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "FRM013-C01",
+      "claim_text": "RA 9184 supplies procurement principles, planning, consulting-services scope, BAC functions, observers, and audit-trail hooks.",
+      "source": "RA 9184",
+      "lines": [
+        32,
+        50,
+        80,
+        88,
+        126,
+        159
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM013-C02",
+      "claim_text": "G-EPS includes an audit trail and allows COA verification of security and integrity.",
+      "source": "RA 9184",
+      "lines": [
+        132,
+        136
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM013-C03",
+      "claim_text": "RA 7160 supports vouchers certified for validity, propriety, and legality and requires accounts open to COA inspection.",
+      "source": "RA 7160",
+      "lines": [
+        2338,
+        2348
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM013-C04",
+      "claim_text": "RA 7160 requires local archival systems and accountability records for government property.",
+      "source": "RA 7160",
+      "lines": [
+        2465,
+        2473
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM013-C05",
+      "claim_text": "RA 9266 IRR supports architectural-document and architect-of-record professional responsibility.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        136,
+        138,
+        738,
+        742
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    }
+  ],
+  "unsupported_claims_removed": [
+    "PD 1445 and COA constitutional citations without local raw primary source.",
+    "Unsupported COA three-pillar doctrine stated as source-primary.",
+    "Professional liability insurance coverage details stated without policy or statutory source.",
+    "Empty preserved UI blocks."
+  ],
+  "final_depth_deferrals": [
+    "Exact COA constitutional/PD 1445 authority and terminology.",
+    "Professional-liability-insurance requirements and coverage terms for government architectural contracts."
+  ]
+}

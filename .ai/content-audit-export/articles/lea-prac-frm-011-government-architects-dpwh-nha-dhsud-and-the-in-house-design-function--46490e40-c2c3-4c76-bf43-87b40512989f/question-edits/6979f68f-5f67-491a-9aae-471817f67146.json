@@ -1,32 +1,93 @@
 {
   "question_id": "6979f68f-5f67-491a-9aae-471817f67146",
   "baseline_hash": "sha256:0ce188a0c39969a6ea27ddfd00b36fa2a5946068ef35f9d1f320bb3e0e5717ed",
-  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
-  "approved_by": "codex-local-source-audit-batch-003",
-  "approved_at": "2026-05-10T18:00:00+08:00",
-  "proposed": {
-    "text": "When a government architect evaluates BIM, green-building, or universal-design practices for an in-house office, what is the source-safe approach?",
-    "options": [
-      {
-        "id": "a",
-        "text": "Treat every innovation as mandatory under RA 9266 even without a cited rule"
-      },
-      {
-        "id": "b",
-        "text": "Ignore new technical standards because public agencies use only internal memos"
-      },
-      {
-        "id": "c",
-        "text": "Adopt useful tools only through the applicable law, code, agency standard, or approved project requirement, and cite that source for the specific element"
-      },
-      {
-        "id": "d",
-        "text": "Use RA 9184 as the technical design code for accessibility and fire safety"
-      }
+  "reason": "Batch 102 local-first source audit aligned the explanation/citation to local raw primary source support while preserving the answer key.",
+  "approved_by": "codex-local-source-audit-batch-102",
+  "approved_at": "2026-05-13T10:45:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+    "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+    "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+    "source_locator": "RA 9266 IRR; checked lines 117, 119, 184, 186, 338, 340, 708, 712, 742, 748",
+    "checked_markdown_lines": [
+      117,
+      119,
+      184,
+      186,
+      338,
+      340,
+      708,
+      712,
+      742,
+      748
     ],
-    "correct_option_id": "c",
-    "rationale": "Identify the controlling law, technical code, agency standard, or project requirement for the element being designed.",
-    "explanation": "The parent article supports RA 9266 responsibility and technical-code compliance while avoiding unsupported BIM or green-building mandate claims.",
-    "code_citation": "RA 9266 IRR; applicable project technical codes and agency standards when separately verified"
+    "parent_article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
+    "parent_article_slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
+    "answer_key_fields_changed": false,
+    "additional_sources": [
+      {
+        "label": "Civil Code Article 1723",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "raw_markdown_sha256": "sha256:d3e7bb551b299f6b31c45a9dbf9e81af90b2f863e4e1d82211a5ffb5ef782bdb",
+        "checked_markdown_lines": [
+          5519,
+          5523
+        ]
+      },
+      {
+        "label": "RA 9184",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA_9184.md",
+        "raw_markdown_sha256": "sha256:ecbcdb3b7cad01360562b13cff77d076aae591c81ad32caf49530ac4ad9d6dd7",
+        "checked_markdown_lines": [
+          32,
+          50,
+          80,
+          88,
+          126,
+          136,
+          140,
+          159,
+          211,
+          213
+        ]
+      },
+      {
+        "label": "RA 11201",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
+        "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-11201/RA 11201 - DHSUD Act of 2019.md",
+        "raw_markdown_sha256": "sha256:92c46564ca3a7bca04e70201428ec137ce3e620167269a25b5d88c6cae514003",
+        "checked_markdown_lines": [
+          228,
+          250,
+          292,
+          306
+        ]
+      },
+      {
+        "label": "RA 7160",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "raw_markdown_sha256": "sha256:b414ad079021bfdbc19094ddffeef87b3e5038b3ef4de38d18c804beb1df2d15",
+        "checked_markdown_lines": [
+          2142,
+          2162,
+          2330,
+          2348,
+          2465,
+          2473
+        ]
+      }
+    ]
+  },
+  "proposed": {
+    "code_citation": "RA 9266 IRR; Civil Code Article 1723; RA 9184; RA 11201; RA 7160 where LGU fund/accountability records apply",
+    "explanation": "Batch 102 source audit keeps the answer key unchanged and clarifies the governing-source map: RA 9266 IRR controls architectural documents, signing/sealing, and architect-of-record responsibility; Civil Code Article 1723 supports collapse/defect liability; RA 9184 controls government procurement; RA 11201 supports DHSUD context; RA 7160 supports LGU fund/accountability records."
   }
 }

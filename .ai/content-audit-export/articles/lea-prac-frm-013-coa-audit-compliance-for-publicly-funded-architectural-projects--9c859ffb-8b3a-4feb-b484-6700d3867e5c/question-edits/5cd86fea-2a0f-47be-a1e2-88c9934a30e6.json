@@ -1,0 +1,69 @@
+{
+  "question_id": "5cd86fea-2a0f-47be-a1e2-88c9934a30e6",
+  "baseline_hash": "sha256:d7fe2282c02f4c27ea488fa575d7ccedaa153ccec519fcf3136bbc15925f867b",
+  "reason": "Batch 102 local-first source audit aligned the explanation/citation to local raw primary source support while preserving the answer key.",
+  "approved_by": "codex-local-source-audit-batch-102",
+  "approved_at": "2026-05-13T10:45:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+    "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA_9184.md",
+    "raw_markdown_sha256": "sha256:ecbcdb3b7cad01360562b13cff77d076aae591c81ad32caf49530ac4ad9d6dd7",
+    "source_locator": "RA 9184; checked lines 32, 50, 80, 88, 126, 136, 140, 159, 211, 213",
+    "checked_markdown_lines": [
+      32,
+      50,
+      80,
+      88,
+      126,
+      136,
+      140,
+      159,
+      211,
+      213
+    ],
+    "parent_article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+    "parent_article_slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
+    "answer_key_fields_changed": false,
+    "additional_sources": [
+      {
+        "label": "RA 7160",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "raw_markdown_sha256": "sha256:b414ad079021bfdbc19094ddffeef87b3e5038b3ef4de38d18c804beb1df2d15",
+        "checked_markdown_lines": [
+          2142,
+          2162,
+          2330,
+          2348,
+          2465,
+          2473
+        ]
+      },
+      {
+        "label": "RA 9266 IRR",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "checked_markdown_lines": [
+          117,
+          119,
+          184,
+          186,
+          338,
+          340,
+          708,
+          712,
+          742,
+          748
+        ]
+      }
+    ]
+  },
+  "proposed": {
+    "code_citation": "RA 9184 audit-trail/BAC observer provisions; RA 7160 vouchers/accounts/COA access; RA 9266 IRR architect-of-record responsibility",
+    "explanation": "Batch 102 source audit keeps the answer key unchanged where possible but narrows the citation. The local source packet supports procurement/accountability review through RA 9184 audit-trail/BAC observer provisions, RA 7160 vouchers/accounts/COA-access provisions, and RA 9266 IRR architect-of-record responsibility. Exact COA doctrine and insurance-coverage details remain final-depth pending local raw primary source."
+  }
+}

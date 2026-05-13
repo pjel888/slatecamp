@@ -1,25 +1,50 @@
 {
   "question_id": "8b9110d3-b186-452c-9bfc-a0f2749c92ec",
   "baseline_hash": "sha256:7ea551cfd4b346601ad4fd0fe84b91d24e3ceff3eb25208f332543f11283e686",
-  "reason": "Batch 011 local source audit aligned linked question 8b9110d3-b186-452c-9bfc-a0f2749c92ec with the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-011",
-  "approved_at": "2026-05-10T12:05:00.000+08:00",
+  "reason": "Batch 102 local-first source audit aligned the explanation/citation to local raw primary source support while preserving the answer key.",
+  "approved_by": "codex-local-source-audit-batch-102",
+  "approved_at": "2026-05-13T10:45:00.000+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
     "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
-    "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
-    "source_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA_9184.md",
+    "raw_markdown_sha256": "sha256:ecbcdb3b7cad01360562b13cff77d076aae591c81ad32caf49530ac4ad9d6dd7",
+    "source_locator": "RA 9184; checked lines 32, 50, 80, 88, 126, 136, 140, 159, 211, 213",
     "checked_markdown_lines": [
-      "RA 9184 Act raw markdown lines 20-82 and 239-286",
-      "RA 9184 IRR raw markdown lines 140-157 and 1393-1458"
+      32,
+      50,
+      80,
+      88,
+      126,
+      136,
+      140,
+      159,
+      211,
+      213
     ],
     "parent_article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
     "parent_article_slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
-    "answer_key_fields_changed": false
+    "answer_key_fields_changed": false,
+    "additional_sources": [
+      {
+        "label": "Updated 2016 IRR of RA 9184",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/Updated 2016 IRR_31 March 2021.pdf",
+        "raw_pdf_sha256": "sha256:9e1db6ab2f6f9c9483338902fea28a3ed482f0a69c5e883bf98c58f4717a1c25",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/Updated 2016 IRR_31 March 2021.md",
+        "raw_markdown_sha256": "sha256:b6dde9a240d58f44212eff47191b57cb8d8747121a9ef667e093f1eff1f0f2bf",
+        "checked_markdown_lines": [
+          31,
+          410,
+          467,
+          1660,
+          2980,
+          2982
+        ]
+      }
+    ]
   },
   "proposed": {
-    "code_citation": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
-    "explanation": "The controlling audited sources are RA 9184 and the RA 9184 IRR-A provisions checked in this batch. They support the principles of transparency, competitiveness, streamlined process, accountability, and public monitoring; the scope covering infrastructure projects, goods, and consulting services; competitive bidding as the default mode; the BAC composition range and functions; and alternative methods as exceptional cases under Rule XVI."
+    "code_citation": "RA 9184 and Updated 2016 IRR of RA 9184",
+    "explanation": "Batch 102 source audit keeps the answer key unchanged and strengthens RA 9184 support. The Act and Updated 2016 IRR support procurement principles, consulting-services scope, procurement planning, competitive-bidding default, BAC functions, observer participation, and alternative methods as exceptions."
   }
 }

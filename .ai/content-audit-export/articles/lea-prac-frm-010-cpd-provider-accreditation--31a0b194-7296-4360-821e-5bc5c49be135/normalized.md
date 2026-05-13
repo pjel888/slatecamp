@@ -1,83 +1,68 @@
-
+# CPD Provider Accreditation
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Frm 010 Cpd Provider Accreditation** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## CPD Provider Accreditation
+For CPD provider questions, answer from the source-backed structure first: RA 9266 IRR defines CPD providers as entities, agencies, organizations, and similar bodies accredited or registered with the Board of Architecture of the PRC to deliver seminars, lectures, and other continuing professional education modules for architects. The Integrated Accredited Professional Organization of Architects is automatically accredited by the Board as a CPD provider.
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
-- Describe the CPD provider accreditation process.
-- Identify the CPD Council's requirements for accredited providers.
-- Explain how an architect verifies that a CPD program is accredited.
-- Distinguish CPD provider accreditation from program accreditation.
+- Identify the Board of Architecture and IAPOA/UAP roles in CPD provider recognition.
+- Explain why provider accreditation matters before an architect relies on an activity for CPD compliance.
+- Distinguish source-backed provider rules from exact validity-period or credit-unit claims that require the current CPD guidelines.
+- Apply the provider-accreditation rule to enrollment and documentation scenarios.
 
-### Accreditation Authority and Process
+## Source-Grounded Core Rules
 
-The Board of Architecture accredits CPD providers including entities, agencies, organizations, and institutions delivering seminars, lectures, and continuing professional education modules for architects. The Integrated Accredited Professional Organization of Architects is automatically accredited as a CPD provider by the Board, requiring no separate application. Other providers must apply for accreditation and meet prescribed quality standards established by the Board in consultation with the professional organization.
+RA 9266 IRR gives three rules that are enough for many LEA-style provider questions:
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The UAP (United Architects of the Philippines) is automatically accredited as a CPD provider — no separate application needed. Other organizations must undergo the standard accreditation process. Programs offered directly by UAP carry full accreditation authority automatically.
-[/SLATECAMP_UI_BLOCK]
+| Rule | Exam-safe meaning |
+| --- | --- |
+| CPD providers are accredited or registered with the Board of Architecture of the PRC. | A provider is not source-safe merely because it teaches an architecture topic. Recognition by the proper professional regulator matters. |
+| Providers deliver seminars, lectures, and other continuing professional education modules for architects. | The source-supported provider examples are formal education activities, not every informal learning event. |
+| The integrated accredited professional organization is automatically accredited as a CPD provider. | UAP/IAPOA has a special source-backed role that other providers do not automatically receive. |
 
-Accreditation authority rests exclusively with the Board of Architecture, which evaluates provider applications based on instructor qualifications, curriculum content, facilities, and instructional methodologies. The Board prescribes detailed requirements for provider accreditation including minimum standards for course design, learning outcomes, and assessment mechanisms. Providers must demonstrate institutional capacity to deliver consistent, quality professional education. The accreditation process includes initial application review and periodic re-accreditation to maintain status.
+Section 28 adds that all practicing architects maintain a CPD program, that the integrated accredited professional organization develops the program, and that other entities or organizations may become CPD providers upon accreditation by the Board. It also states that provider accreditation by the Board is based on existing PRC guidelines.
 
-### Accreditation Validity Period and Renewal
+## What Architects Should Verify
 
-CPD provider accreditation is valid for three years from issuance, after which providers must apply for re-accreditation. The three-year validity period ensures regular evaluation of provider quality and continued compliance with Board standards. During the validity period, accredited providers may deliver CPD activities that generate valid credits for participating architects. Providers seeking continued accreditation must demonstrate ongoing compliance with quality standards and successful delivery of approved programs.
+Before relying on a CPD activity, an architect should verify:
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: CPD provider accreditation is valid for **three years**. Activities delivered by a provider whose accreditation has expired do NOT generate valid CPD credits — regardless of content quality. Always verify accreditation status before enrolling. The Board maintains a current list of accredited providers.
-[/SLATECAMP_UI_BLOCK]
+- Whether the activity is offered by UAP/IAPOA or by another provider recognized under the current CPD framework.
+- Whether the program title, date, provider, and credit treatment are documented.
+- Whether the activity falls under the current CPD guideline in force at the time it is claimed.
+- Whether the certificate or record is clear enough to support later review.
 
-Re-accreditation applications must be submitted before current accreditation expires. Providers failing to renew before expiration lose accreditation status, and activities delivered after expiration date do not generate valid CPD credits. The Board may deny re-accreditation if providers fail to meet standards, deliver substandard programs, or violate professional conduct requirements. Architects should verify provider accreditation status before enrolling in CPD programs to ensure credits will be recognized for PIC renewal purposes.
+This protects the architect from treating a helpful lecture, product presentation, or informal workshop as CPD credit when it has not been recognized by the relevant CPD authority.
 
-### Accreditation Standards and Criteria
+## Provider Accreditation Is Not the Same as Article Quality
 
-The Board establishes minimum standards for accredited CPD providers including instructor qualifications, course structure, learning objectives, assessment methods, and record-keeping requirements. Instructors must demonstrate expertise in subject areas and teaching competency. Courses must have clearly defined learning outcomes aligned with professional track categories. Assessment methods must evaluate participant learning and competency acquisition. Providers must maintain attendance records and issue certificates documenting credit hours and competency areas.
+A lecture can be useful but still fail the provider-recognition requirement. A provider can be accredited but still need to show the specific program record and completion evidence. A UAP/IAPOA event has a source-backed automatic-provider link, but the architect should still keep the actual program and completion record.
 
-Accreditation criteria include evaluation of facilities, technology infrastructure, and instructional resources. Providers must demonstrate capacity to deliver quality instruction through adequate equipment, materials, and learning environments. Online providers must ensure secure systems, reliable access, and technical support. Providers must have established policies for participant privacy, data security, and record confidentiality. Quality assurance mechanisms including participant evaluations and outcome assessment demonstrate commitment to continuous improvement.
+Do not memorize an unsourced validity period as the main rule. In this batch, exact validity period, renewal mechanics, and detailed provider standards are reserved for final-depth review because the available local primary source is RA 9266 IRR rather than the current full CPD-law packet.
 
-### Architect Responsibility in Provider Selection
+## Real World Scenario
 
-Architects selecting CPD activities bear responsibility for verifying provider accreditation status before enrollment. Only credits from accredited providers count toward the mandatory 45-unit CPD requirement. Participation in non-accredited provider activities generates no valid CPD credits regardless of content quality or time invested. The Board maintains a current list of accredited providers available to architects for reference. Architects should consult this list before registering for any CPD activity.
+An architect is invited to three weekend programs: a UAP seminar on code updates, a supplier lecture about new cladding, and a design-studio webinar run by a private training company. The source-safe workflow is to treat the UAP seminar as provider-recognized under the RA 9266 IRR IAPOA rule, then verify whether the private provider or supplier program is currently accredited or otherwise recognized before claiming CPD credit. The architect keeps the certificate, provider identity, program title, date, and any official credit statement in the renewal file.
 
-Provider accreditation verification protects architects from wasted time and resources on activities generating no CPD credit. Architects should document provider accreditation status and credit award confirmation before completing CPD activities. When accreditation status is unclear, architects should contact the Board directly to confirm provider legitimacy. Program certificates should indicate provider accreditation and credit units awarded. Architects must retain documentation of all CPD activities, including verification of provider accreditation, for submission during PIC renewal.
+## Common Traps
 
-### Automatic Accreditation of Professional Organizations
+- Do not say every architecture seminar automatically earns CPD credit.
+- Do not say only UAP can ever provide CPD; the IRR allows other entities or organizations to become providers upon Board accreditation.
+- Do not treat exact validity periods or renewal deadlines as source-primary unless the current CPD guideline is cited.
+- Do not confuse the provider's business registration with professional CPD provider recognition.
 
-The Integrated Accredited Professional Organization of Architects, known as the United Architects of the Philippines, Inc. (UAP), is automatically accredited as a CPD provider without requiring separate application. This automatic accreditation recognizes the professional organization's central role in architect professional development and standard-setting. UAP programs addressing continuing professional education are automatically approved for CPD credit. The Board may adjust UAP accreditation status only if the organization fails to maintain professional standards or ceases to meet the definition of integrated accredited professional organization.
+## Final-Depth Note
 
-Other professional organizations may seek accreditation as CPD providers, but must undergo standard application and evaluation procedures. Only the designated integrated accredited professional organization receives automatic accreditation. Architects should recognize that CPD programs offered directly by UAP carry full accreditation authority. Programs offered in collaboration with other organizations must verify that co-offering organizations hold accreditation status. The automatic accreditation of the professional organization ensures that quality CPD remains widely available to all practicing architects through a nationally recognized institution.
+THIN_NEEDS_EXPANSION for exact current CPD provider validity period, renewal cycle, CPD Council standards, and RA 10912 details once a local raw primary CPD source is added. Batch 102 keeps the article source-primary to RA 9266 IRR.
 
----
+## Sources
+
+- Source: RA 9266 IRR, CPD provider definition and Section 28 CPD provisions.
 
 ## Related Articles
 
-- [Sole Proprietorship](lea-prac-frm-001)
-- [Partnership](lea-prac-frm-002)
-- [Corporate Practice](lea-prac-frm-003)
-- [Joint Venture](lea-prac-frm-004)
-- [Foreign Architects](lea-prac-frm-005)
-- [ASEAN MRA](lea-prac-frm-006)
 - [CPD Requirements](lea-prac-frm-008)
+- [CPD Activity Types](lea-prac-frm-009)
 - [RA 9266 Legal Framework](lea-prac-law-001)
-- [Government Procurement](lea-prac-frm-012)
-- [Environmental Laws](lea-prac-frm-017)
-
-<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
-
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-prac-frm-010-provider-process", layout="single", type="image", status="placeholder", alt="Process flowchart showing the CPD provider accreditation lifecycle: Start → Submit accreditation application to PRBoA → Quality evaluation (instructor qualifications, curriculum design, facilities, assessment) → Initial accreditation issued (3 years) → Deliver CPD programs → Participants earn credits → Re-accreditation evaluation → Renewal or denial. Decision diamonds: Does provider meet minimum standards? Is curriculum aligned with professional tracks? Are instructors qualified? Side panel shows required documentation: Articles of Incorporation, instructor CVs, course syllabi, sample materials, quality assurance procedures. Timeline bar at bottom showing 3-year validity cycle.", caption="CPD Provider Accreditation Process — Application, Evaluation, and Renewal Flowchart", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

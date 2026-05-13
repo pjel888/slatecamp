@@ -1,0 +1,98 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "batch-102",
+  "audit_date": "2026-05-13",
+  "audit_mode": "local_first_source_audited",
+  "audited_at": "2026-05-13T10:45:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "classification": "SOURCE_PRIMARY_WITH_FINAL_DEPTH_CPD_PROVIDER_DEFERRAL",
+  "target": {
+    "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+    "slug": "lea-prac-frm-010-cpd-provider-accreditation",
+    "folder": "lea-prac-frm-010-cpd-provider-accreditation--31a0b194-7296-4360-821e-5bc5c49be135",
+    "batch_sequence": 2
+  },
+  "protocols_applied": [
+    "vitruvius_raw_source_primary",
+    "local_conversion_line_anchor",
+    "question_edit_answer_key_preserved",
+    "ui_block_placeholder_removed_or_resolved",
+    "final_depth_deferrals_recorded"
+  ],
+  "scenario_status": "eligible_added",
+  "raw_sources": [
+    {
+      "label": "RA 9266 IRR",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "checked_markdown_lines": [
+        117,
+        119,
+        184,
+        186,
+        338,
+        340,
+        708,
+        712,
+        742,
+        748
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "FRM010-C01",
+      "claim_text": "CPD providers are accredited or registered with the Board of Architecture of the PRC.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        184,
+        186
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM010-C02",
+      "claim_text": "IAPOA/UAP is automatically accredited by the Board as a CPD provider.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        184,
+        186
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM010-C03",
+      "claim_text": "Other entities may become CPD providers upon accreditation by the Board.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        708,
+        712
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM010-C04",
+      "claim_text": "Provider accreditation by the Board is based on PRC guidelines.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        708,
+        712
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    }
+  ],
+  "unsupported_claims_removed": [
+    "Three-year provider validity period stated as source-primary from local packet.",
+    "Detailed provider standards and renewal mechanics without current CPD guideline source.",
+    "Placeholder media/UI blocks with unsupported provider-lifecycle details."
+  ],
+  "final_depth_deferrals": [
+    "Exact provider accreditation validity period, renewal mechanics, and CPD Council standards under current CPD law/guidelines."
+  ]
+}

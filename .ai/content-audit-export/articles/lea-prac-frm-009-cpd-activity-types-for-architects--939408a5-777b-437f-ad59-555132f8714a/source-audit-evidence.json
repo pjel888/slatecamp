@@ -1,0 +1,98 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "batch-102",
+  "audit_date": "2026-05-13",
+  "audit_mode": "local_first_source_audited",
+  "audited_at": "2026-05-13T10:45:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "classification": "SOURCE_PRIMARY_WITH_FINAL_DEPTH_CPD_DEFERRAL",
+  "target": {
+    "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+    "slug": "lea-prac-frm-009-cpd-activity-types-for-architects",
+    "folder": "lea-prac-frm-009-cpd-activity-types-for-architects--939408a5-777b-437f-ad59-555132f8714a",
+    "batch_sequence": 1
+  },
+  "protocols_applied": [
+    "vitruvius_raw_source_primary",
+    "local_conversion_line_anchor",
+    "question_edit_answer_key_preserved",
+    "ui_block_placeholder_removed_or_resolved",
+    "final_depth_deferrals_recorded"
+  ],
+  "scenario_status": "eligible_added",
+  "raw_sources": [
+    {
+      "label": "RA 9266 IRR",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "checked_markdown_lines": [
+        117,
+        119,
+        184,
+        186,
+        338,
+        340,
+        708,
+        712,
+        742,
+        748
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "FRM009-C01",
+      "claim_text": "CPD is a sustaining and progressive learning process for architects.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        117,
+        119
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM009-C02",
+      "claim_text": "CPD providers are Board/PRC-accredited or registered entities delivering seminars, lectures, and CPE modules.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        184,
+        186
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM009-C03",
+      "claim_text": "The Board prescribes CPD guidelines in consultation with IAPOA.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        338,
+        340
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    },
+    {
+      "claim_id": "FRM009-C04",
+      "claim_text": "Practicing architects maintain a CPD program, with IAPOA/UAP developing the program and other providers requiring Board accreditation.",
+      "source": "RA 9266 IRR",
+      "lines": [
+        708,
+        712
+      ],
+      "claim_class": "article_core",
+      "audit_result": "supported_by_local_raw_source"
+    }
+  ],
+  "unsupported_claims_removed": [
+    "Exact credit-unit hierarchy treated as source-primary.",
+    "Current RA 10912 activity-category schedule stated without local raw source.",
+    "Placeholder media/UI blocks with unsupported credit values."
+  ],
+  "final_depth_deferrals": [
+    "Exact current CPD activity categories and credit-unit schedule under current CPD law/guidelines."
+  ]
+}
