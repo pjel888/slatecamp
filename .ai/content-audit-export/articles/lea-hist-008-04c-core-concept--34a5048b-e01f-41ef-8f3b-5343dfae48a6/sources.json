@@ -1,20 +1,38 @@
 {
   "article_id": "34a5048b-e01f-41ef-8f3b-5343dfae48a6",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:584b0a9468e307dca83603269a899af9a33babdb4c2f6e183c6b83b8236391d4",
-  "source_count": 1,
+  "sources_hash": "sha256:7e56bc76f67155887c4f9411e7749a8efaa973ac2de4151d9e6420128a56a232",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "f7c240c4-290a-4f23-ad42-6962fda0bfa4",
+      "source_id": "batch124-lea-hist-008-04c-core-concept-source-map-capture",
       "article_id": "34a5048b-e01f-41ef-8f3b-5343dfae48a6",
-      "label": "Overy, P. (1991). *De Stijl 1917–1931*. Phaidon Press; Khan-Magomedov, S. O. (1987). *Pioneers of Soviet Architecture: The Search for New Solutions in the 1920s and 1930s*. Thames and Hudson; Whyte",
+      "label": "De Stijl, Constructivism, and Expressionism source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "I. B. (1985). *Erich Mendelsohn 1887–1953: Building and Drawings*. Academy Editions",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for De Stijl, Constructivism, and Expressionism.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04c-core-concept-de-stijl-constructivism-expressionism.source-capture.md",
+      "sha256": "sha256:65863bdef00b1344060906b4cd516c9840bddd33062373b9e3c96e89a16d1774",
+      "locator": "UNESCO Rietveld Schroder House, AIP Einstein Tower, Britannica Tatlin/Constructivism, Moscow heritage Melnikov House, HOA Module 2, TOA 3, and TOA 5 locators for movement distinctions, dates, and architect-work matching.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
+    },
+    {
+      "source_id": "batch124-lea-hist-008-04c-core-concept-source-map-refined",
+      "article_id": "34a5048b-e01f-41ef-8f3b-5343dfae48a6",
+      "label": "De Stijl, Constructivism, and Expressionism refined source map",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for De Stijl, Constructivism, and Expressionism and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04c-core-concept-de-stijl-constructivism-expressionism.refined.md",
+      "sha256": "sha256:c766c021fb713df6e58e86a71f83949e1c54b2fa04111527a6c00208f2d8206f",
+      "locator": "UNESCO Rietveld Schroder House, AIP Einstein Tower, Britannica Tatlin/Constructivism, Moscow heritage Melnikov House, HOA Module 2, TOA 3, and TOA 5 locators for movement distinctions, dates, and architect-work matching.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
     }
   ]
 }

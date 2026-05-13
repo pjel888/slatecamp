@@ -1,3 +1,13 @@
+## Batch 124 Coordination Update - 2026-05-14
+
+- Mode: internet-enabled local-first source-map/reservation pass.
+- Selected bundles: lea-hist-008-03d-core-concept, lea-hist-008-04a-core-concept, lea-hist-008-04b-core-concept, lea-hist-008-04c-core-concept, lea-hist-008-05-core-concept.
+- Scope evidence: 5 article clusters, 56 linked questions, 56 question edits, 10 local source artifacts.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main.
+- Stop condition: local validation passed; live git staging is blocked by .git/index.lock permissions, so Hermes must stage only Batch 124/source files for `chore(content): accept source-audited batch 124`.
+
+---
+
 ## Batch 123 Coordination Update - 2026-05-14
 
 - Mode: internet-enabled local-first source-map/reservation pass.

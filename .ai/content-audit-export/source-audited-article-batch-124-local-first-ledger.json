@@ -1,0 +1,216 @@
+{
+  "batch_id": "source-audited-article-batch-124-local-first",
+  "generated_at": "2026-05-14T01:24:00.000+08:00",
+  "updated_at": "2026-05-14T01:46:00.000+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "64d5062c5",
+  "status": "passed_local_validation_git_index_blocked",
+  "selected_articles": [
+    {
+      "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
+      "slug": "lea-hist-008-03d-core-concept",
+      "title": "Alvar Aalto",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-03d-core-concept--d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 2,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Finlandia Hall was narrowed from a generic Finnish neoclassical-reference claim to official civic-cultural, Carrara marble, black granite, and landscape symbolism anchors.",
+        "Paimio patient-care cues were kept to sourceable daylight, furniture, color/detail, and healthcare-program framing; unsupported condensation-ceiling shorthand was removed.",
+        "Aalto/Art Nouveau comparison was kept as a functional-versus-ornamental curve guardrail, not a claim that the movements are historically interchangeable."
+      ],
+      "original_hash": "sha256:0d565c6577a0da309de321bd8a340c70388a6ab8158389f5fb8f3d71265bc098",
+      "normalized_hash": "sha256:bc8da499d803737749e377ff81f4a5f8d0b8d5e7d9e3b34839c455358c113a8a",
+      "candidate_hash": "sha256:bc8da499d803737749e377ff81f4a5f8d0b8d5e7d9e3b34839c455358c113a8a",
+      "sources_hash": "sha256:e4bdbabbed926a9d92dc5e0607e07ccbc667f9502b873476231e4aae4b4371e0",
+      "linked_questions_hash": "sha256:9eb9ac619268b84e5e660aa1affc47e1f440f1f48640008b474ce93c5706e7a7",
+      "source_locator": "Alvar Aalto Foundation Paimio, Villa Mairea, and biography pages; Artek Armchair 42; Finlandia Hall architecture page; HOA Module 2 and TOA 5 locators for Aalto, Paimio/Villa Mairea-adjacent exam cues, and humanistic modernism guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-03d-core-concept-alvar-aalto.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-03d-core-concept-alvar-aalto.refined.md"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "slug": "lea-hist-008-04a-core-concept",
+      "title": "The Bauhaus",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-04a-core-concept--8769440f-0b98-49dd-b98b-a3b9be486892",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Bauhaus is framed as a school/curriculum/workshop system rather than a decorative style label.",
+        "Director roles are separated: Gropius, Meyer, and Mies are not interchangeable.",
+        "Industrial production is kept as art-and-technology integration, not as proof that all craft disappeared."
+      ],
+      "original_hash": "sha256:b0a87c6ec216d3244569ad49283d8eb194ce51df8145356f312bb213172db6da",
+      "normalized_hash": "sha256:c4f89fabb1d210c482acae98d3ab75b407c65fdf4825b589f05edeb3258f7e0d",
+      "candidate_hash": "sha256:c4f89fabb1d210c482acae98d3ab75b407c65fdf4825b589f05edeb3258f7e0d",
+      "sources_hash": "sha256:d7958d6c98f7e3011ddf98a01d69544d59117808bf8e8dc8a3689723a70d9b01",
+      "linked_questions_hash": "sha256:b28fadc4d82e038d160944151a213e9ffafc3e2b5dff4951dd07c5fb60ca168d",
+      "source_locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation Bauhaus Building, MoMA Bauhaus 1919-1933 exhibition, HOA Module 2, Salvan, and TOA 5 locators for Bauhaus founding, directors, pedagogy, closure, and Dessau building guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04a-core-concept-bauhaus.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04a-core-concept-bauhaus.refined.md"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "slug": "lea-hist-008-04b-core-concept",
+      "title": "The International Style",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Universalist criticism was narrowed to placeless repetition and climate/culture mismatch, not an unsupported claim of a single American corporate motive.",
+        "The style principles are phrased as volume/regularity/avoidance of applied decoration rather than \"form follows function absolutely.\"",
+        "Pilotis and open plans are treated as modernist vocabulary when sourceable, not as the only definition of International Style."
+      ],
+      "original_hash": "sha256:44231eb1cccffa887977c5d421d1b81d92a152b802ccc19f4d4aba6ea4a30333",
+      "normalized_hash": "sha256:710c557d12d4dd403b390298e3113e5105cf1286d7341e7dae4c6ce4fa64e8dc",
+      "candidate_hash": "sha256:710c557d12d4dd403b390298e3113e5105cf1286d7341e7dae4c6ce4fa64e8dc",
+      "sources_hash": "sha256:58c1eac86ba511971d9cb5c1f9d830920f799fd1d04c2c02299bf778d1dae3f3",
+      "linked_questions_hash": "sha256:ec38a5abd2342067d92932db0897cfb0fac840d8009245e7b26e4655671e46b0",
+      "source_locator": "MoMA Modern Architecture exhibition and International Style term pages, 20th Century Architects, HOA Module 2, TOA 3, and local modern architecture locators for MoMA 1932, Hitchcock/Johnson, Seagram, Lever House, Villa Savoye, glass curtain-wall vocabulary, and Art Deco contrast guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04b-core-concept-international-style.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04b-core-concept-international-style.refined.md"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "34a5048b-e01f-41ef-8f3b-5343dfae48a6",
+      "slug": "lea-hist-008-04c-core-concept",
+      "title": "De Stijl, Constructivism, and Expressionism",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-04c-core-concept--34a5048b-e01f-41ef-8f3b-5343dfae48a6",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The article title was corrected from Futurism to Expressionism because the current linked question bundle tests Expressionism, not Futurism.",
+        "Einstein Tower was corrected from a residential-building cue to a solar-observatory/tower cue.",
+        "Expressionism was framed as sculptural/emotional form, not a material philosophy equivalent to raw-concrete Brutalism."
+      ],
+      "original_hash": "sha256:aae2304f6107c54cf8281a5d2a9927663f0a8426296ce3ddd5c0ca69ba240b8e",
+      "normalized_hash": "sha256:95612805d7cb5554292eed7823e8f32120ad41bdcee5257846210df2f8149c96",
+      "candidate_hash": "sha256:95612805d7cb5554292eed7823e8f32120ad41bdcee5257846210df2f8149c96",
+      "sources_hash": "sha256:7e56bc76f67155887c4f9411e7749a8efaa973ac2de4151d9e6420128a56a232",
+      "linked_questions_hash": "sha256:18f0724ee58bbd0c3b96cbbcda92ac3cf8142d37da9ed34f2775d61feb51e689",
+      "source_locator": "UNESCO Rietveld Schroder House, AIP Einstein Tower, Britannica Tatlin/Constructivism, Moscow heritage Melnikov House, HOA Module 2, TOA 3, and TOA 5 locators for movement distinctions, dates, and architect-work matching.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04c-core-concept-de-stijl-constructivism-expressionism.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04c-core-concept-de-stijl-constructivism-expressionism.refined.md"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "slug": "lea-hist-008-05-core-concept",
+      "title": "Brutalism",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-05-core-concept--ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 4,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Barbican wording was narrowed from \"defensible community\" to raised podium, highwalks, mixed-use estate, and bush-hammered concrete qualities.",
+        "Boston City Hall wording was narrowed to completed 1968, Kallmann McKinnell and Knowles, civic transparency/accessibility intent, and inverted/tripartite concrete massing.",
+        "Kimbell is kept as refined concrete modernism/light-proportion comparison rather than rough fortress Brutalism."
+      ],
+      "original_hash": "sha256:f00ce1e01667cf634ade416b43141e45391ba8b2c598861aa33e3b76fcdb3641",
+      "normalized_hash": "sha256:d69736efc276722112f72e76ccfa49984aae30ead34f814794c3f06464009b95",
+      "candidate_hash": "sha256:d69736efc276722112f72e76ccfa49984aae30ead34f814794c3f06464009b95",
+      "sources_hash": "sha256:3663ded7fb5718b7518b0dbc81deeca11109fcb8fcc304292504fd7ebf619c31",
+      "linked_questions_hash": "sha256:351de74db3315b805697d3258179161f59627237b814a31c8d9ffd115117638b",
+      "source_locator": "Britannica Brutalism, Architectural Review Banham index, City of London and Barbican architecture pages, Safdie Architects Habitat 67, Boston.gov City Hall, Kimbell Kahn Building, HOA Module 2, Salvan, and TOA 3 locators for beton brut, Barbican, Habitat 67, Boston City Hall, and Kimbell guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-05-core-concept-brutalism.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-05-core-concept-brutalism.refined.md"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    }
+  ],
+  "totals": {
+    "article_clusters": 5,
+    "linked_questions": 56,
+    "question_edits": 56,
+    "answer_key_changes": 0,
+    "option_text_changes": 9,
+    "source_entries": 10,
+    "local_source_artifacts": 10
+  },
+  "source_artifacts": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-03d-core-concept-alvar-aalto.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-03d-core-concept-alvar-aalto.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04a-core-concept-bauhaus.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04a-core-concept-bauhaus.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04b-core-concept-international-style.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04b-core-concept-international-style.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04c-core-concept-de-stijl-constructivism-expressionism.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04c-core-concept-de-stijl-constructivism-expressionism.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-05-core-concept-brutalism.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-05-core-concept-brutalism.refined.md"
+  ],
+  "validation_evidence": {
+    "compose": "5/5 candidate compositions passed with blockers=0 using --overwrite scoped by slug",
+    "diff": "5/5 scoped diff reports safe_to_push=true with blockers=0",
+    "validate": "5/5 bundle validation valid=true; component-usage warnings only",
+    "ui_block_edit_validation": "5/5 valid=true, blockers=0, warnings=0",
+    "scoped_integrity": "59 JSON files parsed; 56 linked questions; 56 question edits; 0 answer-key changes; 10 source hashes verified; no stale compose errors; no placeholder/internal-note/source-gap hits",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts -> 34 pass, 0 fail",
+    "scoped_diff_check": "git diff --check scoped intended paths passed; custom whitespace scan checked 95 intended Markdown/JSON files with 0 problems"
+  },
+  "blockers": [],
+  "warnings": [
+    "Remote stale checks and Supabase push are intentionally out of scope for this local-first batch.",
+    "Live git stage/commit/push blocked in Codex because .git/index.lock cannot be created."
+  ],
+  "git_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+}

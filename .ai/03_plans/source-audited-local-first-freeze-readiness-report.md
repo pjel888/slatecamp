@@ -1,3 +1,13 @@
+## Batch 124 Freeze Readiness - 2026-05-14
+
+- Status: pass local-first; live git finalization blocked by .git/index.lock permissions.
+- Source readiness: official/authoritative URLs captured locally and refined for all five selected article clusters.
+- Question readiness: 56/56 linked question edits generated and applied locally.
+- Known source-sensitive corrections: Finlandia Hall/Aalto guardrail, Bauhaus-as-pedagogy guardrail, International Style universalism narrowing, 008-04c title correction to Expressionism, Brutalism/Kahn/Barbican/Boston guardrails.
+- Freeze condition: local validation gates passed; acceptance still requires Hermes to stage only Batch 124 paths, run cached diff check, commit, and push.
+
+---
+
 ## Batch 123 Freeze Readiness - 2026-05-14
 
 - Status: pending final validation gates.

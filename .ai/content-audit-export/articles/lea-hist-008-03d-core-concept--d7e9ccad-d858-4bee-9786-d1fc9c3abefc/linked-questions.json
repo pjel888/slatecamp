@@ -1,7 +1,7 @@
 {
   "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6634f67f264c69a195b17d8ab927e79c9e911d9a414f61c837ae0a4f0b94796f",
+  "linked_questions_hash": "sha256:9eb9ac619268b84e5e660aa1affc47e1f440f1f48640008b474ce93c5706e7a7",
   "question_count": 11,
   "questions": [
     {
@@ -37,9 +37,9 @@
         "c": "Aalto's work demonstrates the opposite: mass production can be individual and artistic.",
         "d": "Aalto didn't rank scales hierarchically; all work is equally important.",
         "correct": "Aalto's total design approach reflects his belief that humanistic modernism principles apply across all scales and disciplines. A chair and a building express the same philosophy.",
-        "takeaway": "A chair and a building express the same philosophy."
+        "takeaway": "Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design."
       },
-      "explanation": "Aalto's practice disproves this; he designed across scales. Aalto's work demonstrates the opposite: mass production can be individual and artistic. Aalto didn't rank scales hierarchically; all work is equally important. Aalto's total design approach reflects his belief that humanistic modernism principles apply across all scales and disciplines. A chair and a building express the same philosophy. A chair and a building express the same philosophy.",
+      "explanation": "Aalto's practice disproves this; he designed across scales. Aalto's work demonstrates the opposite: mass production can be individual and artistic. Aalto didn't rank scales hierarchically; all work is equally important. Aalto's total design approach reflects his belief that humanistic modernism principles apply across all scales and disciplines. A chair and a building express the same philosophy. Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -53,14 +53,14 @@
       "model_id": "ALE-HIST-008-03D-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:39:33.723403+00:00",
-      "content_hash": "sha256:d05bb7c795c8d6cf097a90427af9c0a5b0bc722f240f96b533535e30d8eeb4fd"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:ab554b6e6dd8cae5fea5dd7196328b364688e2059fa44bce78da3bf09fc695d7"
     },
     {
       "question_id": "38bd7328-62f6-498a-b37a-35cfd3461215",
       "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
       "topic_id": "e5cdb801-0610-4020-ad07-b134935c8465",
-      "text": "Finlandia Hall (completed 1971) features a white marble exterior referencing Finnish neoclassical tradition. This design choice represents Aalto's belief that [blank].",
+      "text": "Finlandia Hall, completed in 1971, uses white Carrara marble with black granite and was planned as part of Aalto's Helsinki civic-cultural setting. This design choice is safest read as Aalto's belief that [blank].",
       "options": [
         {
           "id": "a",
@@ -72,7 +72,7 @@
         },
         {
           "id": "c",
-          "text": "modernism should honor and integrate local cultural heritage, not impose a universal style"
+          "text": "modernism can be rooted in civic setting, landscape, and cultural symbolism rather than becoming a placeless formula"
         },
         {
           "id": "d",
@@ -88,10 +88,10 @@
         "a": "Aalto integrates historical references respectfully; he doesn't reject them.",
         "b": "Marble choice is cultural and aesthetic, not primarily structural.",
         "d": "Finlandia Hall is thoroughly modern; the marble gesture is integrated modernism, not rejection.",
-        "correct": "Aalto's mature philosophy is that modernism should be rooted in place and culture. The marble references local tradition while the building is thoroughly modern. This is regional modernism at its finest.",
-        "takeaway": "This is regional modernism at its finest."
+        "correct": "Finlandia Hall is sourceable as a modern civic-cultural building whose marble, black granite, and waterfront setting carry symbolic and contextual meaning; the safer lesson is place-sensitive modernism, not structural superiority of marble.",
+        "takeaway": "Finlandia Hall tests Aalto as civic and place-sensitive, not anti-modern."
       },
-      "explanation": "Aalto integrates historical references respectfully; he doesn't reject them. Marble choice is cultural and aesthetic, not primarily structural. Finlandia Hall is thoroughly modern; the marble gesture is integrated modernism, not rejection. Aalto's mature philosophy is that modernism should be rooted in place and culture. The marble references local tradition while the building is thoroughly modern. This is regional modernism at its finest. This is regional modernism at its finest.",
+      "explanation": "Aalto integrates historical references respectfully; he doesn't reject them. Marble choice is cultural and aesthetic, not primarily structural. Finlandia Hall is thoroughly modern; the marble gesture is integrated modernism, not rejection. Finlandia Hall is sourceable as a modern civic-cultural building whose marble, black granite, and waterfront setting carry symbolic and contextual meaning; the safer lesson is place-sensitive modernism, not structural superiority of marble. Finlandia Hall tests Aalto as civic and place-sensitive, not anti-modern.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -105,8 +105,8 @@
       "model_id": "ALE-HIST-008-03D-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:39:33.184032+00:00",
-      "content_hash": "sha256:397156fab6b4489157156ac4fd85fe5c7839af647dca3464e33c51c05f45f186"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:a1b6ac246d61002c086e917fa50af0576a96bd5997383a66f11e1553307dfd43"
     },
     {
       "question_id": "4145a0e7-5e97-4648-8397-a27c5ba67fe2",
@@ -140,10 +140,10 @@
         "a": "Aalto proved the opposite: industry can enable organic form.",
         "b": "Aalto synthesized handcraft feeling with industrial production, not rejecting industry.",
         "d": "Aalto integrated aesthetics and comfort; function comes first.",
-        "correct": "The bent plywood chair uses steam and molds (industrial process) to create organic curves fitting the human body. It bridges craft tradition and industrial production—the essence of Aalto's philosophy.",
-        "takeaway": "It bridges craft tradition and industrial production—the essence of Aalto's philosophy."
+        "correct": "The bent plywood chair uses steam and molds (industrial process) to create organic curves fitting the human body. It bridges craft tradition and industrial production-the essence of Aalto's philosophy.",
+        "takeaway": "Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design."
       },
-      "explanation": "Aalto proved the opposite: industry can enable organic form. Aalto synthesized handcraft feeling with industrial production, not rejecting industry. Aalto integrated aesthetics and comfort; function comes first. The bent plywood chair uses steam and molds (industrial process) to create organic curves fitting the human body. It bridges craft tradition and industrial production—the essence of Aalto's philosophy. It bridges craft tradition and industrial production—the essence of Aalto's philosophy.",
+      "explanation": "Aalto proved the opposite: industry can enable organic form. Aalto synthesized handcraft feeling with industrial production, not rejecting industry. Aalto integrated aesthetics and comfort; function comes first. The bent plywood chair uses steam and molds (industrial process) to create organic curves fitting the human body. It bridges craft tradition and industrial production-the essence of Aalto's philosophy. Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -157,8 +157,8 @@
       "model_id": "ALE-HIST-008-03D-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:39:33.323709+00:00",
-      "content_hash": "sha256:e36899380212463082c84e25984bfcefb13073b941a085a425cc1dcb43521b39"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:a8245bf860412e9437c5678a45974dd54c3212823f570e277ef057f4424f8f9a"
     },
     {
       "question_id": "5439c442-d938-445f-b183-7333e62d29bf",
@@ -192,10 +192,10 @@
         "a": "Le Corbusier pursued geometric abstraction and functional complexity.",
         "c": "Mies pursued minimalism and reduction to essentials.",
         "d": "Gropius founded the Bauhaus with emphasis on integration across disciplines.",
-        "correct": "Alvar Aalto of Finland developed humanistic modernism, which applies modernist principles while prioritizing human comfort, warmth, and organic forms—a counterpoint to the severity of geometric rationalism.",
-        "takeaway": "Alvar Aalto of Finland developed humanistic modernism, which applies modernist principles while prioritizing human comfort, warmth, and organic forms—a counterpoint to the severity of geometric rationalism."
+        "correct": "Alvar Aalto of Finland developed humanistic modernism, which applies modernist principles while prioritizing human comfort, warmth, and organic forms-a counterpoint to the severity of geometric rationalism.",
+        "takeaway": "Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design."
       },
-      "explanation": "Le Corbusier pursued geometric abstraction and functional complexity. Mies pursued minimalism and reduction to essentials. Gropius founded the Bauhaus with emphasis on integration across disciplines. Alvar Aalto of Finland developed humanistic modernism, which applies modernist principles while prioritizing human comfort, warmth, and organic forms—a counterpoint to the severity of geometric rationalism. Alvar Aalto of Finland developed humanistic modernism, which applies modernist principles while prioritizing human comfort, warmth, and organic forms—a counterpoint to the severity of geometric rationalism.",
+      "explanation": "Le Corbusier pursued geometric abstraction and functional complexity. Mies pursued minimalism and reduction to essentials. Gropius founded the Bauhaus with emphasis on integration across disciplines. Alvar Aalto of Finland developed humanistic modernism, which applies modernist principles while prioritizing human comfort, warmth, and organic forms-a counterpoint to the severity of geometric rationalism. Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -209,8 +209,8 @@
       "model_id": "ALE-HIST-008-03D-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:39:33.598985+00:00",
-      "content_hash": "sha256:2bb7542a2923c0cc3cf9d5b97b351e84a4ec4ac1ae51ad942ec1c30fa07686da"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:5faf443c07f862464c5077c5de942267396dd2b307301b6f76fd5daa56ce2d84"
     },
     {
       "question_id": "831edeb3-3574-468b-bb43-99afacdb6b4b",
@@ -245,9 +245,9 @@
         "b": "Aalto rejected pure handcraft nostalgia; he valued efficient production.",
         "d": "Aalto's work prioritizes human comfort and quality, even when mass-produced.",
         "correct": "Bent plywood proves Aalto's central belief: industry and craft are not opposites. Factory processes can produce beautiful, functional, human-scaled objects.",
-        "takeaway": "Factory processes can produce beautiful, functional, human-scaled objects."
+        "takeaway": "Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design."
       },
-      "explanation": null,
+      "explanation": "Aalto proved industry can be warm and humane. Aalto rejected pure handcraft nostalgia; he valued efficient production. Aalto's work prioritizes human comfort and quality, even when mass-produced. Bent plywood proves Aalto's central belief: industry and craft are not opposites. Factory processes can produce beautiful, functional, human-scaled objects. Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -261,8 +261,8 @@
       "model_id": "ALE-HIST-008-03D-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:68115cd43f22f9f7e172cec5a36e764133ee7fc91bd54ec1aa0a1314420345b2"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:89f0289c38a9800fced75556de01653e3f17925149bf23903146cf2650810332"
     },
     {
       "question_id": "87e8bd6e-61b6-4015-b8ac-f46d040f99dd",
@@ -297,9 +297,9 @@
         "c": "Aalto is fully modern; he simply insists modernism must be humanistic.",
         "d": "They represent fundamentally different modernist philosophies.",
         "correct": "Both are modernists, but their priorities differ: Aalto humanizes modernism through warmth and comfort; Le Corbusier pursues rational, programmatic design. Aalto's approach is experiential; Le Corbusier's is analytical.",
-        "takeaway": "Aalto's approach is experiential; Le Corbusier's is analytical."
+        "takeaway": "Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design."
       },
-      "explanation": null,
+      "explanation": "While Aalto emphasizes natural materials, Le Corbusier also used wood, tile, and other materials. Aalto is fully modern; he simply insists modernism must be humanistic. They represent fundamentally different modernist philosophies. Both are modernists, but their priorities differ: Aalto humanizes modernism through warmth and comfort; Le Corbusier pursues rational, programmatic design. Aalto's approach is experiential; Le Corbusier's is analytical. Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -313,8 +313,8 @@
       "model_id": "ALE-HIST-008-03D-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a5c068374b53439b3cda2954021d73b3523af83da1514c036548d94ad98337e6"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:cf44ec0d7a66ad1b106ca9d8f96a4750bb1b91a63f1d81cd5036c818b959cae2"
     },
     {
       "question_id": "90bfa0e7-b7a9-49f7-a977-7a5f3ffe9ee3",
@@ -349,9 +349,9 @@
         "c": "Aalto is modern; Art Nouveau is early 20th-century but pre-modernist.",
         "d": "The philosophical difference between ornamental and functional curves is crucial.",
         "correct": "Both use curves, but the purpose differs: Art Nouveau's whiplash curves are decorative expression; Aalto's curves are structural necessity and functional response to human use. They look similar but mean different things.",
-        "takeaway": "They look similar but mean different things."
+        "takeaway": "Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design."
       },
-      "explanation": "This reverses reality; Art Nouveau emphasizes curves. Aalto is modern; Art Nouveau is early 20th-century but pre-modernist. The philosophical difference between ornamental and functional curves is crucial. Both use curves, but the purpose differs: Art Nouveau's whiplash curves are decorative expression; Aalto's curves are structural necessity and functional response to human use. They look similar but mean different things. They look similar but mean different things.",
+      "explanation": "This reverses reality; Art Nouveau emphasizes curves. Aalto is modern; Art Nouveau is early 20th-century but pre-modernist. The philosophical difference between ornamental and functional curves is crucial. Both use curves, but the purpose differs: Art Nouveau's whiplash curves are decorative expression; Aalto's curves are structural necessity and functional response to human use. They look similar but mean different things. Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -365,14 +365,14 @@
       "model_id": "ALE-HIST-008-03D-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:39:33.046562+00:00",
-      "content_hash": "sha256:7d8abfd0ccee297c364dc3242ad8c48d5ec78205de3a71807d0a2251bc62428d"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:06db60bf6f8af069b1d0dcabccbdc11772455734996beeaebe0d01cc904ab901"
     },
     {
       "question_id": "fa22894e-cfa8-4348-850d-bf74f891af30",
       "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
       "topic_id": "e5cdb801-0610-4020-ad07-b134935c8465",
-      "text": "A sanatorium features curved forms reducing institutional coldness, large south-facing windows for light and fresh air, warm natural materials (wood, tile), and ceiling curves preventing condensation dripping. Which architect designed this and what does it demonstrate?",
+      "text": "A sanatorium uses modern planning, daylight, color, purpose-designed furniture, and carefully considered patient details to reduce institutional coldness in tuberculosis care. Which architect and idea does this best identify?",
       "options": [
         {
           "id": "a",
@@ -384,7 +384,7 @@
         },
         {
           "id": "c",
-          "text": "Alvar Aalto; humanistic modernism where design responds directly to human health and comfort"
+          "text": "Alvar Aalto; humane modernism where design responds directly to health, comfort, and daily use"
         },
         {
           "id": "d",
@@ -400,10 +400,10 @@
         "a": "While functional, this goes beyond Le Corbusier's rationalism to prioritize human experience.",
         "b": "Mies would pursue geometric purity; Aalto humanizes design.",
         "d": "Gropius's concern was pedagogical integration, not this level of functional specificity.",
-        "correct": "This describes the Paimio Sanatorium (1929–1933), where every feature responds to tuberculosis patient care. Aalto's design philosophy prioritizes human experience, not abstract geometric principles.",
-        "takeaway": "Aalto's design philosophy prioritizes human experience, not abstract geometric principles."
+        "correct": "This points to Aalto's Paimio Sanatorium, where the architecture, interiors, furniture, and details are tied to patient wellbeing within a modern functional program.",
+        "takeaway": "Paimio is the health-and-comfort anchor for Aalto."
       },
-      "explanation": null,
+      "explanation": "While functional, this goes beyond Le Corbusier's rationalism to prioritize human experience. Mies would pursue geometric purity; Aalto humanizes design. Gropius's concern was pedagogical integration, not this level of functional specificity. This points to Aalto's Paimio Sanatorium, where the architecture, interiors, furniture, and details are tied to patient wellbeing within a modern functional program. Paimio is the health-and-comfort anchor for Aalto.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "recall",
@@ -417,8 +417,8 @@
       "model_id": "ALE-HIST-008-03D-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a1ca31f8013baab6e61c6493355f508132bcf5400cfd0ee7c70d54a5a912321f"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:dfb1adee414b459dc00d081116d5ee5ce03c5fa7986a65db763c5dda6ea178be"
     },
     {
       "question_id": "60e54123-b2ce-4c6b-bbd4-414aeff70adf",
@@ -453,9 +453,9 @@
         "c": "Nordic Modernism adds to geometric principles; it doesn't eliminate them.",
         "d": "Nordic Modernism is functional; it balances function with human experience.",
         "correct": "Nordic Modernism is regional modernism: it maintains International Style's functional clarity but adds warmth, craft tradition, and local cultural context. It's modernism with a human face.",
-        "takeaway": "It's modernism with a human face."
+        "takeaway": "Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design."
       },
-      "explanation": null,
+      "explanation": "Nordic Modernism is fully modern, not anti-modern. Nordic Modernism adds to geometric principles; it doesn't eliminate them. Nordic Modernism is functional; it balances function with human experience. Nordic Modernism is regional modernism: it maintains International Style's functional clarity but adds warmth, craft tradition, and local cultural context. It's modernism with a human face. Aalto humanizes modernism through user comfort, organic/tactile form, and place-sensitive design.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -469,8 +469,8 @@
       "model_id": "ALE-HIST-008-03D-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b6ce968eeaa6f6c01f15f50e8793bb38c23d3c127323770d89fc40a0c7a13c9e"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:3d47b966dafb09063f959f90b0675462be55eda78bb19396910841ac39335728"
     },
     {
       "question_id": "b48e2bb8-7b0e-4269-a34e-060193d7c127",
@@ -504,10 +504,10 @@
         "a": "1925–1928 is too early.",
         "c": "1935–1939 is after completion.",
         "d": "1945–1950 is much later; the building opened in 1933.",
-        "correct": "The Paimio Sanatorium was designed and constructed 1929–1933. It represents an early demonstration of Aalto's humanistic modernism.",
-        "takeaway": "It represents an early demonstration of Aalto's humanistic modernism."
+        "correct": "The Paimio Sanatorium belongs to the 1929-1933 source frame and is one of Aalto's key early international works.",
+        "takeaway": "Paimio = 1929-1933."
       },
-      "explanation": "1925–1928 is too early. 1935–1939 is after completion. 1945–1950 is much later; the building opened in 1933. The Paimio Sanatorium was designed and constructed 1929–1933. It represents an early demonstration of Aalto's humanistic modernism. It represents an early demonstration of Aalto's humanistic modernism.",
+      "explanation": "1925–1928 is too early. 1935–1939 is after completion. 1945–1950 is much later; the building opened in 1933. The Paimio Sanatorium belongs to the 1929-1933 source frame and is one of Aalto's key early international works. Paimio = 1929-1933.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -521,8 +521,8 @@
       "model_id": "ALE-HIST-008-03D-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:39:33.449775+00:00",
-      "content_hash": "sha256:bcb80d14a41fc6762983eb9b78f981c96232dc4b6cb91fff02e398fa5c3cdbca"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:20cea58dd6853eccaa158c823ccd92d4f0be33adfcc7fd6b89010b80159536cc"
     },
     {
       "question_id": "1d15777d-7264-40ee-a1c0-3947a4665e47",
@@ -556,10 +556,10 @@
         "a": "Villa Savoye is orthogonal, machined, and geometric.",
         "b": "Barcelona Pavilion is austere and minimal.",
         "d": "Gropius House doesn't emphasize organic site integration to this degree.",
-        "correct": "This describes Villa Mairea (1938–1939) by Aalto—a masterpiece merging modernism with craft tradition, natural materials, and organic site integration.",
-        "takeaway": "This describes Villa Mairea (1938–1939) by Aalto—a masterpiece merging modernism with craft tradition, natural materials, and organic site integration."
+        "correct": "Villa Mairea, designed in 1938-1939 by Aino and Alvar Aalto, is the safe match: a modern private house using tactile materials, flowing space, and a strong garden/forest relationship.",
+        "takeaway": "Villa Mairea tests Aalto's warm domestic modernism."
       },
-      "explanation": null,
+      "explanation": "Villa Savoye is orthogonal, machined, and geometric. Barcelona Pavilion is austere and minimal. Gropius House doesn't emphasize organic site integration to this degree. Villa Mairea, designed in 1938-1939 by Aino and Alvar Aalto, is the safe match: a modern private house using tactile materials, flowing space, and a strong garden/forest relationship. Villa Mairea tests Aalto's warm domestic modernism.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "recall",
@@ -573,8 +573,8 @@
       "model_id": "ALE-HIST-008-03D-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0ab247a6e15e739b215a5e00eb9ed35d60de9c419cd00d0672352719117d365f"
+      "updated_at": "2026-05-13T17:24:00.000Z",
+      "content_hash": "sha256:012b73a21a9b153e93a98bf92e24248aaec46f339f67e4469a34f266d3d8ee3e"
     }
   ]
 }

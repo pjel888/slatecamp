@@ -1,32 +1,38 @@
 {
   "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:27ed1c60a82116003ae84718dfd907e755966b95e3ed6fcc75a74e065c660a42",
+  "sources_hash": "sha256:e4bdbabbed926a9d92dc5e0607e07ccbc667f9502b873476231e4aae4b4371e0",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "0e02fa62-5d1d-4f40-b578-cf0b467587a6",
+      "source_id": "batch124-lea-hist-008-03d-core-concept-source-map-capture",
       "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
-      "label": "Aalto, Alvar. *Complete Architectural Works*. Taschen. — Schildt, Göran. *Alvar Aalto: The Complete Catalogue of Architecture, Design and Art*. Academy Editions. — Frampton, Kenneth",
+      "label": "Alvar Aalto source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "*Modern Architecture: A Critical History*. 4th ed",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Alvar Aalto.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-03d-core-concept-alvar-aalto.source-capture.md",
+      "sha256": "sha256:a8a7fc6dc82a8f2a6e7fb6e245bb460a2285377d60124cf064b876c007f5b1e1",
+      "locator": "Alvar Aalto Foundation Paimio, Villa Mairea, and biography pages; Artek Armchair 42; Finlandia Hall architecture page; HOA Module 2 and TOA 5 locators for Aalto, Paimio/Villa Mairea-adjacent exam cues, and humanistic modernism guardrails.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
     },
     {
-      "source_id": "09b004e4-423f-4b88-8d5d-871cc35f303c",
+      "source_id": "batch124-lea-hist-008-03d-core-concept-source-map-refined",
       "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
-      "label": "Thames & Hudson",
+      "label": "Alvar Aalto refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Alvar Aalto and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-03d-core-concept-alvar-aalto.refined.md",
+      "sha256": "sha256:d06b355dc9dc350f1914a25452e5d045619858e1cbba8bbf117035fbe84f93c6",
+      "locator": "Alvar Aalto Foundation Paimio, Villa Mairea, and biography pages; Artek Armchair 42; Finlandia Hall architecture page; HOA Module 2 and TOA 5 locators for Aalto, Paimio/Villa Mairea-adjacent exam cues, and humanistic modernism guardrails.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
     }
   ]
 }

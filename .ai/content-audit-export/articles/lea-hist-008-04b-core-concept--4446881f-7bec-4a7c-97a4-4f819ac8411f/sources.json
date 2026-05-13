@@ -1,20 +1,38 @@
 {
   "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:5993fc7584e8136415393036187fd83e8556ffc46713e877f794cecc7d6164bf",
-  "source_count": 1,
+  "sources_hash": "sha256:58c1eac86ba511971d9cb5c1f9d830920f799fd1d04c2c02299bf778d1dae3f3",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "b1c09817-2b4d-4561-ad30-96cda191bab0",
+      "source_id": "batch124-lea-hist-008-04b-core-concept-source-map-capture",
       "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
-      "label": "Hitchcock, H. R., & Johnson, P. (1932). *The International Style: Architecture Since 1922*. W. W. Norton & Company; MoMA exhibition catalogue (1932)",
+      "label": "The International Style source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for The International Style.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04b-core-concept-international-style.source-capture.md",
+      "sha256": "sha256:b4d0f52b7f88178f23fa20d38a2d6e46e72a68b4e44663c0820a8c3cb846d056",
+      "locator": "MoMA Modern Architecture exhibition and International Style term pages, 20th Century Architects, HOA Module 2, TOA 3, and local modern architecture locators for MoMA 1932, Hitchcock/Johnson, Seagram, Lever House, Villa Savoye, glass curtain-wall vocabulary, and Art Deco contrast guardrails.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
+    },
+    {
+      "source_id": "batch124-lea-hist-008-04b-core-concept-source-map-refined",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "label": "The International Style refined source map",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for The International Style and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04b-core-concept-international-style.refined.md",
+      "sha256": "sha256:945af0f1ff7f0075a156c2224b9fe099e3175d24f0250fab2f089ac1292efee8",
+      "locator": "MoMA Modern Architecture exhibition and International Style term pages, 20th Century Architects, HOA Module 2, TOA 3, and local modern architecture locators for MoMA 1932, Hitchcock/Johnson, Seagram, Lever House, Villa Savoye, glass curtain-wall vocabulary, and Art Deco contrast guardrails.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
     }
   ]
 }

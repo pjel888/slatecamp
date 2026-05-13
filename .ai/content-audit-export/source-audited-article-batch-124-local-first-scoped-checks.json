@@ -1,0 +1,116 @@
+{
+  "batch_id": "source-audited-article-batch-124-local-first",
+  "generated_at": "2026-05-14T01:24:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked",
+  "selected_article_ids": [
+    "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
+    "8769440f-0b98-49dd-b98b-a3b9be486892",
+    "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+    "34a5048b-e01f-41ef-8f3b-5343dfae48a6",
+    "ed8d54e9-eef1-4585-9447-f9cff392bbff"
+  ],
+  "selected_slugs": [
+    "lea-hist-008-03d-core-concept",
+    "lea-hist-008-04a-core-concept",
+    "lea-hist-008-04b-core-concept",
+    "lea-hist-008-04c-core-concept",
+    "lea-hist-008-05-core-concept"
+  ],
+  "expected_article_count": 5,
+  "expected_question_edit_count": 56,
+  "expected_linked_question_count": 56,
+  "expected_answer_key_change_count": 0,
+  "gates": {
+    "compose": "passed",
+    "diff": "passed",
+    "validate": "passed_with_component_usage_warnings_only",
+    "ui_block_edit_validation": "passed",
+    "scoped_json_parse": "passed",
+    "placeholder_internal_note_source_gap_scan": "passed",
+    "source_hash_checks": "passed",
+    "question_edit_count_checks": "passed",
+    "stale_compose_error_scan": "passed",
+    "targeted_content_audit_tests": "passed_34_tests",
+    "scoped_git_diff_check": "passed",
+    "cached_git_diff_check": "blocked_git_index_unavailable",
+    "commit": "blocked_git_index_unavailable",
+    "push": "blocked_git_index_unavailable"
+  },
+  "updated_at": "2026-05-14T01:46:00.000+08:00",
+  "summary": {
+    "parsed_json_files": 59,
+    "linked_questions": 56,
+    "question_edits": 56,
+    "answer_key_changes": 0,
+    "source_hashes_verified": 10,
+    "stale_compose_errors": 0,
+    "placeholder_hits": 0,
+    "internal_note_or_source_gap_hits": 0
+  },
+  "articles": [
+    {
+      "article_id": "d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
+      "slug": "lea-hist-008-03d-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-03d-core-concept--d7e9ccad-d858-4bee-9786-d1fc9c3abefc",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "safe_to_push": true,
+      "candidate_hash": "sha256:bc8da499d803737749e377ff81f4a5f8d0b8d5e7d9e3b34839c455358c113a8a",
+      "source_count": 2
+    },
+    {
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "slug": "lea-hist-008-04a-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-04a-core-concept--8769440f-0b98-49dd-b98b-a3b9be486892",
+      "linked_questions": 12,
+      "question_edits": 12,
+      "safe_to_push": true,
+      "candidate_hash": "sha256:c4f89fabb1d210c482acae98d3ab75b407c65fdf4825b589f05edeb3258f7e0d",
+      "source_count": 2
+    },
+    {
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "slug": "lea-hist-008-04b-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "linked_questions": 12,
+      "question_edits": 12,
+      "safe_to_push": true,
+      "candidate_hash": "sha256:710c557d12d4dd403b390298e3113e5105cf1286d7341e7dae4c6ce4fa64e8dc",
+      "source_count": 2
+    },
+    {
+      "article_id": "34a5048b-e01f-41ef-8f3b-5343dfae48a6",
+      "slug": "lea-hist-008-04c-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-04c-core-concept--34a5048b-e01f-41ef-8f3b-5343dfae48a6",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "safe_to_push": true,
+      "candidate_hash": "sha256:95612805d7cb5554292eed7823e8f32120ad41bdcee5257846210df2f8149c96",
+      "source_count": 2
+    },
+    {
+      "article_id": "ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "slug": "lea-hist-008-05-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-05-core-concept--ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "safe_to_push": true,
+      "candidate_hash": "sha256:d69736efc276722112f72e76ccfa49984aae30ead34f814794c3f06464009b95",
+      "source_count": 2
+    }
+  ],
+  "blockers": [],
+  "warnings": [],
+  "validation_evidence": {
+    "compose": "5/5 candidate compositions passed with blockers=0 using --overwrite scoped by slug",
+    "diff": "5/5 scoped diff reports safe_to_push=true with blockers=0",
+    "validate": "5/5 bundle validation valid=true; component-usage warnings only",
+    "ui_block_edit_validation": "5/5 valid=true, blockers=0, warnings=0",
+    "scoped_integrity": "59 JSON files parsed; 56 linked questions; 56 question edits; 0 answer-key changes; 10 source hashes verified; no stale compose errors; no placeholder/internal-note/source-gap hits",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts -> 34 pass, 0 fail",
+    "scoped_diff_check": "git diff --check scoped intended paths passed; custom whitespace scan checked 95 intended Markdown/JSON files with 0 problems",
+    "cached_git_diff_check": "blocked before cached diff because live git add could not create .git/index.lock"
+  },
+  "git_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+  "handoff_stage_list": ".ai/03_plans/batch-124-git-handoff-stage-list.md"
+}

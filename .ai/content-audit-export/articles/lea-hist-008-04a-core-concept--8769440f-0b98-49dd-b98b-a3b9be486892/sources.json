@@ -1,20 +1,38 @@
 {
   "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:db1238ebb2c0c19625d28203bf66e489292f8dd42fbdb2e8996afa17894d86e1",
-  "source_count": 1,
+  "sources_hash": "sha256:d7958d6c98f7e3011ddf98a01d69544d59117808bf8e8dc8a3689723a70d9b01",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "83660c47-08fb-432a-bc3b-a2f5834c0c93",
+      "source_id": "batch124-lea-hist-008-04a-core-concept-source-map-capture",
       "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
-      "label": "Whitford, Frank. *The Bauhaus: Masters and Students*. Thames & Hudson. — Franciscono, Marcel. *Walter Gropius and the Creation of the Bauhaus at Weimar*. University of Illinois Press. — Gropius",
+      "label": "The Bauhaus source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "Walter. *The New Architecture and the Bauhaus*. Dover Publications",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for The Bauhaus.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-124/lea-hist-008-04a-core-concept-bauhaus.source-capture.md",
+      "sha256": "sha256:2a519ad032dc5c858689768773a99f4b4904f4896932db8e5862fe1489089dbb",
+      "locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation Bauhaus Building, MoMA Bauhaus 1919-1933 exhibition, HOA Module 2, Salvan, and TOA 5 locators for Bauhaus founding, directors, pedagogy, closure, and Dessau building guardrails.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
+    },
+    {
+      "source_id": "batch124-lea-hist-008-04a-core-concept-source-map-refined",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "label": "The Bauhaus refined source map",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for The Bauhaus and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-124/lea-hist-008-04a-core-concept-bauhaus.refined.md",
+      "sha256": "sha256:cf4dc57a9f110be983d2ff38d1d19b1688ed01eb0b61142b43653f1fe58ec089",
+      "locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation Bauhaus Building, MoMA Bauhaus 1919-1933 exhibition, HOA Module 2, Salvan, and TOA 5 locators for Bauhaus founding, directors, pedagogy, closure, and Dessau building guardrails.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:24:00.000+08:00",
+      "updated_at": "2026-05-14T01:24:00.000+08:00"
     }
   ]
 }
