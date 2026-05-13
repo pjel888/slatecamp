@@ -1,0 +1,32 @@
+# Batch 130 Source Capture: Kinesthetics and circulation
+
+Captured: 2026-05-14T04:35:00.000+08:00
+Batch: source-audited-article-batch-130-local-first
+Article slug: lea-theo-003-03-core-concept
+
+## Official Online Anchors
+
+- https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4
+- https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/
+- https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/53320
+
+## Local Source Files Checked First
+
+- TOA 1 raw PDF: vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf; sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0; local raw source file hash checked
+- TOA 1 refined markdown: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md; sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6; lines 155-160
+- TOA 2 raw PDF: vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf; sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201; local raw source file hash checked
+- TOA 2 refined markdown: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md; sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878; lines 885-966, 1110-1124, 1400-1429
+- BP 344 raw PDF: vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf; sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618; local raw source file hash checked
+- BP 344 refined markdown: vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md; sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040; lines 40-62
+- PD 1096 raw PDF: vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code of the Philippines (Compact).pdf; sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796; local raw source file hash checked
+- PD 1096 refined markdown: vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code of the Philippines (Compact).md; sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9; lines 1136-1191
+
+## Locator Summary
+
+Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191.
+
+## Capture Notes
+
+- This file is the local raw-source-layer capture artifact for Batch 130.
+- Refined claim conversion is stored at vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.refined.md.
+- Article and linked-question claims are constrained to the official online anchors plus the local checked source files and hashes listed above.

@@ -2,67 +2,91 @@
   "question_id": "481ba482-09ad-4d8e-8ef5-9b13e82c71e3",
   "baseline_hash": "sha256:44fe9bee6aaa8792bd4204e0c5350a16ceed6f97a5600db94b55f80132630486",
   "action": "replace",
-  "reason": "source-audited-article-batch-055-local-first: local raw PDF backed replacement constrained to checked Batch 055 source families.",
-  "approved_by": "codex-local-first-batch-055",
-  "approved_at": "2026-05-11T19:38:00.000+08:00",
+  "reason": "source-audited-article-batch-130-local-first: local source-map rewrite aligned with refreshed article scope and checked local source hashes.",
+  "approved_by": "codex-local-first-batch-130",
+  "approved_at": "2026-05-14T04:35:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
     "parent_article_slug": "lea-theo-002-08-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 813, 9972, 10123-10148; TOA 1 Intro to Theory refined markdown lines 147-151",
+    "source_locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132.",
     "checked_markdown_lines": [
-      "George Salvan Architectural Theories of Design refined markdown line 813",
-      "George Salvan Architectural Theories of Design refined markdown line 9972",
-      "George Salvan Architectural Theories of Design refined markdown lines 10123-10148",
-      "TOA 1 Intro to Theory refined markdown lines 147-151"
+      "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.source-capture.md: Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.refined.md: Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md: lines 147-160",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md: lines 1859-1907, 1937-1997, 2007-2132"
     ],
     "checked_sources": [
       {
-        "source_id": "salvan-theory-local-raw-pdf--b055-7872fb73-01",
-        "label": "George Salvan Architectural Theories of Design - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 813, 9972, 10123-10148"
+        "source_id": "batch130-lea-theo-002-08-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.source-capture.md",
+        "sha256": "sha256:66d235dbb030dc90f381fa4bc3b76cf41f9cff0d1396a84df0b4ad62ba683dfe",
+        "locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132."
       },
       {
-        "source_id": "toa1-intro-local-raw-pdf--b055-7872fb73-02",
-        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "source_id": "batch130-lea-theo-002-08-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.refined.md",
+        "sha256": "sha256:dba9c138d76de7c0d0f5d1d5dc4f650d5bb37889f4ade5f8eae07d325e442db7",
+        "locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132."
+      },
+      {
+        "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-1",
         "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
         "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
-        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
-        "locator": "TOA 1 Intro to Theory refined markdown lines 147-151"
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-2",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "lines 147-160"
+      },
+      {
+        "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-3",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+        "sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-4",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+        "sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+        "locator": "lines 1859-1907, 1937-1997, 2007-2132"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 055 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 130 checked source-map scope for Scale and Proportioning Systems in Architecture."
   },
   "proposed": {
-    "text": "Which qualities are listed with architectural space, structure, and enclosure?",
+    "text": "A student says scale means the actual length, width, and depth of a form. What correction best matches the source map?",
     "options": [
       {
         "id": "a",
-        "text": "Shape, color, texture, scale, proportion, surfaces, edges, and openings."
+        "text": "Those are size dimensions; scale is judged by comparison to another reference."
       },
       {
         "id": "b",
-        "text": "Pipe, trap, stack, valve, and cleanout."
+        "text": "Scale is unrelated to size or perception."
       },
       {
         "id": "c",
-        "text": "Mud, palm leaf, snow, and bark."
+        "text": "Scale can only be measured by the Golden Section."
       },
       {
         "id": "d",
-        "text": "Olmec, Maya, Toltec, and Aztec."
+        "text": "Scale applies only to historic buildings."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "Shape, color, texture, scale, proportion, surfaces, edges, and openings. This answer is supported by the checked Batch 055 local raw PDF source families for Scale in Architecture by Francis D.K. Ching.",
-    "explanation": "Shape, color, texture, scale, proportion, surfaces, edges, and openings. The Batch 055 source audit used local raw PDFs first and refined markdown only as locator evidence for Scale in Architecture by Francis D.K. Ching.",
-    "code_citation": "TOA 1 Intro to Theory refined markdown lines 147-151"
+    "rationale": {
+      "correct": "TOA 2 separates physical dimensions from the comparative judgment of scale.",
+      "takeaway": "Size is measured; scale is perceived through comparison.",
+      "b": "Scale still depends on size relationships.",
+      "c": "The Golden Section is one proportioning reference, not the definition of scale.",
+      "d": "Scale applies across building types and periods."
+    },
+    "explanation": "TOA 2 separates physical dimensions from the comparative judgment of scale. Size is measured; scale is perceived through comparison.",
+    "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record."
   },
-  "batch_question_template_index": 5
+  "batch_question_template_index": 4
 }

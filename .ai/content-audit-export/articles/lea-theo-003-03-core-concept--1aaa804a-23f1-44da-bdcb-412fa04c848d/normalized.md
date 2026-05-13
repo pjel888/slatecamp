@@ -1,48 +1,22 @@
-## Board Exam Quick Check
+# Architectural Kinesthetics: Movement Through Space
 
-For this topic, separate source-backed movement theory from unsourced code dimensions. The safe LEA task is to explain how bodies perceive and move through space, then connect that movement to circulation, spatial relationships, and human scale.
+Kinesthetics in architecture is the study of space through bodily movement. The local TOA source map frames architecture as experienced through movement in space and time: approach and entry, path configuration, sequence of spaces, and sensory cues such as light, view, touch, hearing, and smell.
 
-## What You Need to Know for the LEA
+The first movement decision is often approach. A frontal approach leads directly to an entrance along a straight axial path. An oblique approach changes perspective on the facade and form. A spiral approach prolongs the sequence and emphasizes the three-dimensional form as the user moves around it.
 
-## Learning Goal
+Path configuration then organizes the route. The source map notes that all paths of movement are linear in nature because they begin somewhere and lead through a sequence toward a destination. Specific configurations may be linear, radial, spiral, grid, or network.
 
-Explain architectural kinesthetics as the bodily experience of movement through space, using source-backed ideas about human proportions, circulation patterns, and kinesthetic vision.
+Circulation space is not only a line on plan. Corridors, halls, galleries, stairways, and rooms vary by boundaries, relation to linked spaces, scale, proportion, light, view, entrances, and changes in level through stairs and ramps. When the discussion turns from theory to Philippine safety and accessibility, code dimensions must be cited carefully: BP 344 requires ramps for many changes in level and gives accessible-ramp width, gradient, landing, and handrail requirements; PD 1096 supplies baseline corridor and stair requirements.
 
-## Core Concept
+## Real World Scenario
 
-Architecture is not perceived only as a static composition. It is also experienced as a sequence: the eye moves, the body advances, and the user continually updates orientation while passing through spaces. Salvan's theory text grounds this in two related ideas. First, forms and spaces are related to the human body because body dimensions affect the volume of space needed for movement, activity, and rest. Second, kinesthetic vision describes how space is experienced through eye movement from one part of a work to another, with the observer assembling parts into a whole.
+For a small school entrance, review the experience in order: how the gate announces approach, whether the path is frontal or oblique, where the user pauses, how the stair or ramp handles level change, and whether the corridor width and stair rise/run are code-safe before calling the sequence successful.
 
-TOA 3 supports the same exam frame through circulation and spatial organization. A centralized organization can create radial, loop, or spiral movement that terminates in or around a dominant central space. A linear organization is a series of spaces that may be directly related or linked through a separate linear space. In exam terms, the movement pattern is not a decorative afterthought; it is part of how the space is read.
+## Source Evidence
 
-Kinesthetic design therefore asks three practical questions. What does the body need to do? How does the route organize attention? What sequence of compression, direction, pause, and arrival helps the user understand the place? The answer should come from the plan, section, and spatial sequence, not from uncited dimensions or invented code citations.
-
-## Key Facts and Testable Items
-
-1. Kinesthetics concerns the bodily and perceptual experience of movement through space.
-2. Human dimensions influence the volume required for movement, activity, and rest.
-3. Kinesthetic vision involves the movement of the eyes across parts of a composition to organize them as a whole.
-4. Circulation patterns can be radial, loop, spiral, or linear depending on the spatial organization.
-5. A good LEA answer connects movement to orientation, sequence, and human scale.
-
-## Common Mistakes
-
-- Treating circulation as leftover space instead of a primary organizing system.
-- Memorizing unsourced stair or ramp numbers inside a theory article. Use a legal/code article for code dimensions.
-- Confusing visual movement in composition with actual bodily movement; both matter, but they are not identical.
-- Ignoring human scale when describing a movement sequence.
-
-## Key Terms
-
-**Kinesthetics** - The study of bodily movement and muscular or perceptual experience through space.
-
-**Kinesthetic vision** - The experience of space through eye movement across parts of a composition.
-
-**Circulation pattern** - The route structure that guides movement, such as radial, loop, spiral, or linear movement.
-
-**Human scale** - The relation between spatial dimensions and the body, including movement, reach, rest, and activity.
-
-**Spatial sequence** - The ordered experience of spaces as a user approaches, enters, moves, pauses, and arrives.
-
-## Related Articles
-
-See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-04-core-concept**, **lea-theo-003-05-core-concept**.
+- Wiley official Ching book record: Architecture: Form, Space, and Order, 5th edition, ISBN 978-1-119-85337-4; official URL captured in this batch source map.
+- NCDA 2024 BP 344 amendments official page and Supreme Court E-Library PD 1096 record captured in this batch source map.
+- TOA 1 raw PDF hash sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0; refined markdown hash sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6; locator lines 155-160.
+- TOA 2 raw PDF hash sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201; refined markdown hash sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878; locator lines 885-966, 1110-1124, and 1400-1429.
+- BP 344 raw PDF hash sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618; refined markdown hash sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040; locator lines 40-62.
+- PD 1096 raw PDF hash sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796; refined markdown hash sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9; locator lines 1136-1191.

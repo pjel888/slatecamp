@@ -1,3 +1,13 @@
+## Batch 130 Freeze Readiness - 2026-05-14
+
+- Status: pass local-first; live git finalization blocked by .git/index.lock permissions.
+- Source readiness: official/source-family URLs plus local Vitruvius theory/law source maps are captured and refined for all five selected article clusters.
+- Question readiness: 68/68 linked question edits generated and applied locally.
+- Known source-sensitive corrections: scale/proportion title repair, sensory-elements title repair, anthropometrics/ergonomics separation, proxemics title and cultural-generalization guardrails, and kinesthetics BP 344/PD 1096 code-claim narrowing.
+- Freeze condition: local validation gates passed; acceptance still requires Hermes to stage only Batch 130 paths, run cached diff check, commit, and push.
+
+---
+
 ## Batch 129 Freeze Readiness - 2026-05-14
 
 - Status: pass local-first; live git finalization blocked by .git/index.lock permissions.

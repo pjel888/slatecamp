@@ -2,76 +2,91 @@
   "question_id": "ef71fa56-1b43-45aa-9a8f-3089f41e2631",
   "baseline_hash": "sha256:68aa978fe2d9967da53110d4ce3164dae16d31910dc80d9166cda4fcb2d3e08a",
   "action": "replace",
-  "reason": "source-audited-article-batch-055-local-first: local raw PDF backed replacement constrained to checked Batch 055 source families.",
-  "approved_by": "codex-local-first-batch-055",
-  "approved_at": "2026-05-11T19:38:00.000+08:00",
+  "reason": "source-audited-article-batch-130-local-first: local source-map rewrite aligned with refreshed article scope and checked local source hashes.",
+  "approved_by": "codex-local-first-batch-130",
+  "approved_at": "2026-05-14T04:35:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
     "parent_article_slug": "lea-theo-002-09-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 1026 and 12770-12776; TOA 1 Intro to Theory refined markdown lines 147-151; theory refined markdown lines 11-12",
+    "source_locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 544-575, 780-797, 2116-2132.",
     "checked_markdown_lines": [
-      "George Salvan Architectural Theories of Design refined markdown line 1026",
-      "George Salvan Architectural Theories of Design refined markdown lines 12770-12776",
-      "TOA 1 Intro to Theory refined markdown lines 147-151",
-      "theory refined markdown lines 11-12"
+      "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-002-09-core-concept-color-texture-light-shadow.source-capture.md: Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 544-575, 780-797, 2116-2132.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-002-09-core-concept-color-texture-light-shadow.refined.md: Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 544-575, 780-797, 2116-2132.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md: lines 147-160",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md: lines 544-575, 780-797, 2116-2132"
     ],
     "checked_sources": [
       {
-        "source_id": "salvan-theory-local-raw-pdf--b055-458cde1d-01",
-        "label": "George Salvan Architectural Theories of Design - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 1026 and 12770-12776"
+        "source_id": "batch130-lea-theo-002-09-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-002-09-core-concept-color-texture-light-shadow.source-capture.md",
+        "sha256": "sha256:8124e9cb58f216eeb78ce2882cae995d28fc346026bd165da7ef52278b64dea8",
+        "locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 544-575, 780-797, 2116-2132."
       },
       {
-        "source_id": "toa1-intro-local-raw-pdf--b055-458cde1d-02",
-        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "source_id": "batch130-lea-theo-002-09-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-002-09-core-concept-color-texture-light-shadow.refined.md",
+        "sha256": "sha256:5b6743b7aff4cebcd42549ea39f72415c74c4c35a3338d423b0d8fef8c68b99c",
+        "locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 544-575, 780-797, 2116-2132."
+      },
+      {
+        "source_id": "batch130-lea-theo-002-09-core-concept-checked-local-source-1",
         "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
         "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
-        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
-        "locator": "TOA 1 Intro to Theory refined markdown lines 147-151"
+        "locator": "local raw source file hash checked"
       },
       {
-        "source_id": "theory-local-raw-pdf--b055-458cde1d-03",
-        "label": "theory - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
-        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
-        "locator": "theory refined markdown lines 11-12"
+        "source_id": "batch130-lea-theo-002-09-core-concept-checked-local-source-2",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "lines 147-160"
+      },
+      {
+        "source_id": "batch130-lea-theo-002-09-core-concept-checked-local-source-3",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+        "sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch130-lea-theo-002-09-core-concept-checked-local-source-4",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+        "sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+        "locator": "lines 544-575, 780-797, 2116-2132"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 055 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 130 checked source-map scope for Color, Texture, Light, and Shadow in Architecture."
   },
   "proposed": {
-    "text": "Which qualities are listed with architectural space in the checked TOA source?",
+    "text": "Why is flat, diffuse light likely to reduce the apparent depth of a textured surface compared with grazing light?",
     "options": [
       {
         "id": "a",
-        "text": "Surfaces, edges, and openings."
+        "text": "It removes all texture from the material permanently."
       },
       {
         "id": "b",
-        "text": "Pipes, traps, and cleanouts."
+        "text": "It changes hue into structural rhythm."
       },
       {
         "id": "c",
-        "text": "Mud walls and palm leaves."
+        "text": "It softens the shadows that make surface relief legible."
       },
       {
         "id": "d",
-        "text": "Smooth ashlar and polygonal stones."
+        "text": "It proves the surface has no tactile quality."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Surfaces, edges, and openings. This answer is supported by the checked Batch 055 local raw PDF source families for Enclosure and Openings by Francis D.K. Ching.",
-    "explanation": "Surfaces, edges, and openings. The Batch 055 source audit used local raw PDFs first and refined markdown only as locator evidence for Enclosure and Openings by Francis D.K. Ching.",
-    "code_citation": "TOA 1 Intro to Theory refined markdown lines 147-151"
+    "correct_option_id": "c",
+    "rationale": {
+      "correct": "Surface texture becomes legible through how incident light is reflected, absorbed, and shadowed.",
+      "takeaway": "Lighting condition is part of how texture is read.",
+      "a": "Lighting changes perception, not the material itself.",
+      "b": "Hue and rhythm are different vocabularies.",
+      "d": "The same surface can remain tactile even when less visually legible."
+    },
+    "explanation": "Surface texture becomes legible through how incident light is reflected, absorbed, and shadowed. Lighting condition is part of how texture is read.",
+    "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record."
   },
-  "batch_question_template_index": 5
+  "batch_question_template_index": 4
 }

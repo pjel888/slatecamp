@@ -1,123 +1,86 @@
 {
-  "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-058-local-first",
-  "batch_number": 58,
-  "audit_mode": "local_first_raw_pdf_primary",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T20:31:00.000+08:00",
-  "target": {
-    "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
-    "slug": "lea-theo-003-03-core-concept",
-    "title": "Architectural Kinesthetics: Movement Through Space",
-    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-03-core-concept--1aaa804a-23f1-44da-bdcb-412fa04c848d",
-    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-03-core-concept--1aaa804a-23f1-44da-bdcb-412fa04c848d/question-edits",
-    "linked_questions": 13,
-    "question_edits": 13
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
-    "derivative_or_search_layers_used_as_primary_truth": false,
-    "refined_markdown_used_only_as_locator": true,
-    "checked_sources": [
-      {
-        "source_id": "salvan-theory-local-raw-pdf--b058-1aaa804a-01",
-        "label": "George Salvan Architectural Theories of Design - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288"
-      },
-      {
-        "source_id": "toa3-design-perception-local-raw-pdf--b058-1aaa804a-02",
-        "label": "TOA 3 Design Perception - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-        "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
-        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
-        "locator": "TOA 3 Design Perception refined markdown lines 152-212 and raw PDF pages 22-26"
-      },
-      {
-        "source_id": "theory-local-raw-pdf--b058-1aaa804a-03",
-        "label": "theory - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
-        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
-        "locator": "theory refined markdown lines 11-13 and 140-142 and raw PDF page 1"
-      }
-    ]
-  },
-  "classification": {
-    "content_type": "theory-of-architecture-design-perception",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "medium",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 13,
-    "question_edits_created": [
-      "5edea809-6125-4d37-9628-fa03acf69fa9",
-      "cec7fad0-b3f7-44d8-a27b-7cae94102284",
-      "6ba72d02-471b-4fb2-9084-fbe3f1727be5",
-      "a8392740-f3b1-4a37-a24f-9b8ce26e3d70",
-      "b93c6d68-39c7-478b-a456-45331ddf6791",
-      "ecf613bb-c5e5-4215-a724-44cc0ad976dc",
-      "296f935a-b602-4a1d-a3bd-a7a52576f859",
-      "7bf7e6c9-bfc3-4159-a9ed-99acac222bbf",
-      "430f39d3-1518-4642-9eb4-9c86b1d02d38",
-      "d7b2955b-662e-460e-ae11-96dfbe78fb13",
-      "ca4a8979-e465-45cc-bab6-fcd42eaf7859",
-      "8c296a4d-d7c1-453a-a3d2-457c07cab6cd",
-      "cc11774e-241e-429c-aa8f-8c0d066a1d9b"
-    ],
-    "scenario_policy_status": "eligible-deferred",
-    "scenario_policy_reason": "A realistic movement-sequence scenario would be useful, but Batch 058 defers scenario enrichment to keep the source-audited article/question repair focused."
-  },
-  "claims": [
+  "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
+  "slug": "lea-theo-003-03-core-concept",
+  "batch_id": "source-audited-article-batch-130-local-first",
+  "generated_at": "2026-05-14T04:35:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191.",
+  "source_urls": [
+    "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4",
+    "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/",
+    "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/53320"
+  ],
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.refined.md"
+  ],
+  "checked_sources": [
     {
-      "claim_id": "lea-theo-003-03-core-concept-b058-claim-01",
-      "claim_text": "Architectural Kinesthetics: Movement Through Space is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288; TOA 3 Design Perception refined markdown lines 152-212 and raw PDF pages 22-26; theory refined markdown lines 11-13 and 140-142 and raw PDF page 1",
-        "source_ids": [
-          "salvan-theory-local-raw-pdf--b058-1aaa804a-01",
-          "toa3-design-perception-local-raw-pdf--b058-1aaa804a-02",
-          "theory-local-raw-pdf--b058-1aaa804a-03"
-        ]
-      },
-      "audit_result": "PASS"
+      "source_id": "batch130-lea-theo-003-03-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.source-capture.md",
+      "sha256": "sha256:ccd2731fdeac545699674eaab7d4c1bc623962105f78837916534317168a73f7",
+      "locator": "Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191."
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.refined.md",
+      "sha256": "sha256:073a7ac600d241f62153a464c86bdb382ca896f10ad240ab5435f2ab4f820205",
+      "locator": "Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191."
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+      "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-2",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+      "sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+      "locator": "lines 155-160"
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-3",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-4",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "locator": "lines 885-966, 1110-1124, 1400-1429"
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-5",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf",
+      "sha256": "sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-6",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "locator": "lines 40-62"
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-7",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code of the Philippines (Compact).pdf",
+      "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-8",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code of the Philippines (Compact).md",
+      "sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+      "locator": "lines 1136-1191"
     }
   ],
-  "checked_markdown_lines": [
-    "George Salvan Architectural Theories of Design refined markdown lines 3882-3888",
-    "George Salvan Architectural Theories of Design refined markdown lines 5938-5974",
-    "TOA 3 Design Perception refined markdown lines 152-212",
-    "theory refined markdown lines 11-13",
-    "theory refined markdown lines 140-142"
+  "unsupported_or_removed_claims": [
+    "Reduced unsupported promenade psychology claims and kept the article bounded to source-backed movement, approach, path, circulation-space, and cited code dimensions.",
+    "Separated theory claims from BP 344 and PD 1096 code claims so legal/code details are cited only where local source hashes support them.",
+    "Rewrote linked questions to test movement sequence, approach type, path configuration, and code-safe circulation dimensions with preserved answer keys."
   ],
-  "unverified_or_rejected_claims": [],
-  "quality_protocol": {
-    "roundtrip_protocol_preserved": true,
-    "ui_blocks_owner": "ui-blocks.json",
-    "normalized_owner": "normalized.md",
-    "candidate_generation": "compose_completed",
-    "local_first_only": true,
-    "supabase_write_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
-    "diff_gate": "safe_true_blockers_zero",
-    "validate_gate": "valid_true_blockers_zero",
-    "ui_block_edits_gate": "valid_true_blockers_zero"
-  },
-  "sme_review": {
-    "required_before_publication": true,
-    "status": "not_started_local_first_batch",
-    "note": "Local-first source audit is ready for later human/SME review before final publishing."
-  },
-  "overall": {
-    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-    "blockers": []
-  }
+  "real_world_scenario": "added_source_safe_real_world_scenario: review a school entrance from gate approach through level change, corridor, and stair/ramp dimensions before judging the movement sequence."
 }

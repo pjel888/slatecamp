@@ -1,30 +1,30 @@
 {
   "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:48aab46f2962f6470b312882456a69c6465febb6a3b21394dd57fc5e6192b8b3",
+  "linked_questions_hash": "sha256:8fbe04f6b04e069fadc76f7bf4783b8989e05ad0bfa44b88a3757d2f3b16bda3",
   "question_count": 14,
   "questions": [
     {
       "question_id": "59673c2d-fbab-4395-8994-5e1d495dd459",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Shadow in architectural design functions as:",
+      "text": "A rough concrete wall looks much deeper when sunlight grazes it from the side. Which source-backed relationship explains the effect?",
       "options": [
         {
           "id": "a",
-          "text": "A primary design element revealing and articulating form, organizing space, and creating rhythm—shadows are intentional design tools"
+          "text": "Texture affects how a surface reflects or absorbs light, and shadow can reveal the relief."
         },
         {
           "id": "b",
-          "text": "An absence of light that should be minimized for safety and visibility, especially in public spaces and pathways"
+          "text": "Texture affects only touch and never visual perception."
         },
         {
           "id": "c",
-          "text": "A problem created by poor lighting design, often requiring corrective measures such as additional artificial lighting"
+          "text": "The effect proves the wall color has changed physically."
         },
         {
           "id": "d",
-          "text": "Only a concern in theatrical or dramatic architectural contexts, where lighting effects are used to enhance the experience"
+          "text": "Only structural thickness can create shadow."
         }
       ],
       "correct_option_id": "a",
@@ -33,14 +33,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Shadow is a design tool, not a problem.",
-        "c": "Shadow is intentional design, not poor performance.",
-        "d": "All architecture uses shadow strategically.",
-        "correct": "Ching treats shadow as fundamental design element: shadows reveal form through highlights and dark areas (grazing light exaggerates texture); shadows create visual rhythm (column shadows on floor); shadows organize space. Shadows are intentional, not incidental.",
-        "takeaway": "Shadows are intentional, not incidental."
+        "correct": "TOA 2 defines texture as visual and tactile and links it to light reflection or absorption.",
+        "takeaway": "Texture, light, and shadow work together in perception.",
+        "b": "Texture is explicitly visual as well as tactile.",
+        "c": "The perceived change can come from light and shadow rather than pigment change.",
+        "d": "Openings and surface relief can also shape shadow."
       },
-      "explanation": "Shadow is a design tool, not a problem. Shadow is intentional design, not poor performance. All architecture uses shadow strategically. Ching treats shadow as fundamental design element: shadows reveal form through highlights and dark areas (grazing light exaggerates texture); shadows create visual rhythm (column shadows on floor); shadows organize space. Shadows are intentional, not incidental. Shadows are intentional, not incidental.",
-      "code_citation": null,
+      "explanation": "TOA 2 defines texture as visual and tactile and links it to light reflection or absorption. Texture, light, and shadow work together in perception.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -53,30 +53,30 @@
       "model_id": "ALE-THEO-002-09-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:20.73959+00:00",
-      "content_hash": "sha256:34037ed65b67c88c6d3ec43d1254f1e38f4d2ec99a51293b7cf4934b6f9b9608"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:156ad4994d54b1c76654ba19cd9197879c12e9b9aacce9b7185187561119cc73"
     },
     {
       "question_id": "21177a82-9cf3-42e2-8245-32815d9ca9f4",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "How do color, texture, light, and shadow work together as an integrated design system in architectural composition?",
+      "text": "Which set of terms best matches the Batch 130 source map for describing color?",
       "options": [
         {
           "id": "a",
-          "text": "Color and texture are primary; light and shadow are incidental results, which is a simplistic view"
+          "text": "Span, load, shear, and moment."
         },
         {
           "id": "b",
-          "text": "Light reveals color and texture, creating highlights and shadows; shadow articulates form; color affects spatial perception; texture modulates light and creates tactile richness—all four operate synergistically"
+          "text": "Hue, value, temperature, and intensity or chroma."
         },
         {
           "id": "c",
-          "text": "These elements operate independently; each can be designed without reference to others, which is not typically the case in integrated design"
+          "text": "Axis, datum, hierarchy, and rhythm only."
         },
         {
           "id": "d",
-          "text": "Only light and shadow matter; color and texture are secondary, which overlooks their importance"
+          "text": "Rise, run, landing, and handrail height."
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +85,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "All four are fundamental to spatial experience.",
-        "c": "They are deeply interconnected.",
-        "d": "All four contribute equally to design impact.",
-        "correct": "These elements are interdependent and mutually reinforcing: light makes color visible and reveals texture; shadow articulates the form that color and texture define; color's effects depend on how light and shadow interact with it; texture's character depends on light quality. Coherent design integrates all four simultaneously.",
-        "takeaway": "Coherent design integrates all four simultaneously."
+        "correct": "TOA 2 names hue, value, temperature, and intensity/chroma as color descriptors.",
+        "takeaway": "Color questions should use the source-backed vocabulary of hue, value, temperature, and intensity/chroma.",
+        "a": "Those terms belong to structural behavior, not color perception.",
+        "c": "Those are ordering principles, not the color descriptor set.",
+        "d": "Those are circulation/accessibility dimensions, not color descriptors."
       },
-      "explanation": "All four are fundamental to spatial experience. They are deeply interconnected. All four contribute equally to design impact. These elements are interdependent and mutually reinforcing: light makes color visible and reveals texture; shadow articulates the form that color and texture define; color's effects depend on how light and shadow interact with it; texture's character depends on light quality. Coherent design integrates all four simultaneously. Coherent design integrates all four simultaneously.",
-      "code_citation": null,
+      "explanation": "TOA 2 names hue, value, temperature, and intensity/chroma as color descriptors. Color questions should use the source-backed vocabulary of hue, value, temperature, and intensity/chroma.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -105,30 +105,30 @@
       "model_id": "ALE-THEO-002-09-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:20.908145+00:00",
-      "content_hash": "sha256:9ebae9543e759681ab7554a5bf13f3095775b9a6646c521989ec5195bbd6d82d"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:f24243e256a1ba59dee2e5e952ba2b83288897ce2f7b9cd7997c0d7389360cf5"
     },
     {
       "question_id": "81e45a77-1c19-4756-84ca-2866b7ed9ccb",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "A designer employs cool-toned light (5000K) in an office workspace and warm-toned light (2700K) in a residential evening space. What design principle is demonstrated?",
+      "text": "A wall with deep three-dimensional openings casts alternating light, shade, and shadow across its surface. What is the safest interpretation?",
       "options": [
         {
           "id": "a",
-          "text": "Cost minimization through standard lighting, which may not consider the specific needs of different environments"
+          "text": "The wall has no architectural effect because shadow is only absence of light."
         },
         {
           "id": "b",
-          "text": "Using color temperature to support functional needs and psychological effects—cool light aids alertness in work; warm light promotes relaxation at home"
+          "text": "The openings are articulating the wall by creating a texture of light, shade, and shadow."
         },
         {
           "id": "c",
-          "text": "Following lighting manufacturers' recommendations, which are often based on general guidelines rather than specific design principles"
+          "text": "The openings are relevant only if they are structural columns."
         },
         {
           "id": "d",
-          "text": "Arbitrary color temperature choices, without regard to the intended use or psychological impact of the space"
+          "text": "The pattern is a universal emotional code independent of context."
         }
       ],
       "correct_option_id": "b",
@@ -137,14 +137,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Color temperature choice is based on function, not cost.",
-        "c": "While manufacturers provide options, the designer chose intentionally for function.",
-        "d": "Selections are intentional and functional.",
-        "correct": "Color temperature is a functional design tool: cool light supports daytime alertness and circadian rhythm; warm light supports evening relaxation. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs.",
-        "takeaway": "This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs."
+        "correct": "TOA 2 states that three-dimensional openings can create a texture of light, shade, and shadows.",
+        "takeaway": "Shadow can be an articulation effect when tied to openings, depth, and surface reading.",
+        "a": "The source map treats shadow as a perceptual design effect, not just absence.",
+        "c": "Openings can shape perception even when not columns.",
+        "d": "Batch 130 avoids unsupported universal emotion claims."
       },
-      "explanation": "Color temperature choice is based on function, not cost. While manufacturers provide options, the designer chose intentionally for function. Selections are intentional and functional. Color temperature is a functional design tool: cool light supports daytime alertness and circadian rhythm; warm light supports evening relaxation. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs.",
-      "code_citation": null,
+      "explanation": "TOA 2 states that three-dimensional openings can create a texture of light, shade, and shadows. Shadow can be an articulation effect when tied to openings, depth, and surface reading.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +157,30 @@
       "model_id": "ALE-THEO-002-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:21.728416+00:00",
-      "content_hash": "sha256:bb4cf62c3a9bdaf70571dfc96fa73b5dc92ce3663f6b0743e6eb0af1c05384bc"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:0f67f11844102fee4a6284c5606f8e2b2b12f1bf1f430f61a1bc770cc7f71119"
     },
     {
       "question_id": "f9ebb355-80bb-4298-80f9-e5969565634a",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Texture in architectural design functions by:",
+      "text": "A designer wants a form to read more visually heavy against its surroundings. Which color-related idea is source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "Applying decorative patterns to surfaces for visual interest, enhancing the aesthetic appeal of the structure"
+          "text": "Only floor area can affect visual weight."
         },
         {
           "id": "b",
-          "text": "Creating smooth, reflective surfaces throughout the building, which can influence light distribution and perception"
+          "text": "Color is unrelated to light or visual perception."
         },
         {
           "id": "c",
-          "text": "Adding weight to a building's exterior, contributing to the structural integrity and visual grounding of the design"
+          "text": "Every warm color always makes a space socially successful."
         },
         {
           "id": "d",
-          "text": "The surface quality conveying material properties and creating both visual and tactile richness"
+          "text": "Color can distinguish a form from its environment and affect visual weight."
         }
       ],
       "correct_option_id": "d",
@@ -189,14 +189,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While patterns are textural, texture is about material surface quality.",
-        "b": "Texture varies from smooth to rough.",
-        "c": "Texture is about surface property, not structural weight.",
-        "correct": "Texture is surface quality—rough, fine, smooth, coarse. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely.",
-        "takeaway": "It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely."
+        "correct": "TOA 2 links color to visual perception and visual weight.",
+        "takeaway": "Use color claims carefully: visual distinction and weight are safer than universal emotional promises.",
+        "a": "Visual weight is not limited to floor area.",
+        "b": "The source defines color as a light and visual-perception phenomenon.",
+        "c": "The source map does not support universal psychological guarantees."
       },
-      "explanation": "While patterns are textural, texture is about material surface quality. Texture varies from smooth to rough. Texture is about surface property, not structural weight. Texture is surface quality—rough, fine, smooth, coarse. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely.",
-      "code_citation": null,
+      "explanation": "TOA 2 links color to visual perception and visual weight. Use color claims carefully: visual distinction and weight are safer than universal emotional promises.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -209,30 +209,30 @@
       "model_id": "ALE-THEO-002-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:22.056996+00:00",
-      "content_hash": "sha256:e0430f66c5b66bd662fe6f26514d6059d6ccddbd840ce1f058cd407181bcd28a"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:28dbfe37082519d4d16e1a19c01bf81184602b2b0f0bb1f93b65b479e75fccd8"
     },
     {
       "question_id": "c3298607-44b3-4269-a8a4-fe69fd185316",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "To make a low-ceilinged room feel higher and more spacious, which color strategy would be most effective?",
+      "text": "Why is flat, diffuse light likely to reduce the apparent depth of a textured surface compared with grazing light?",
       "options": [
         {
           "id": "a",
-          "text": "Paint the ceiling a warm color (red or orange), which can make the space feel more intimate"
+          "text": "It removes all texture from the material permanently."
         },
         {
           "id": "b",
-          "text": "Use highly saturated colors on all surfaces, which can overwhelm the space and make it feel smaller"
+          "text": "It changes hue into structural rhythm."
         },
         {
           "id": "c",
-          "text": "Paint the ceiling light (high value) and walls slightly darker"
+          "text": "It softens the shadows that make surface relief legible."
         },
         {
           "id": "d",
-          "text": "Paint the ceiling dark and walls light, which can create a sense of compression"
+          "text": "It proves the surface has no tactile quality."
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +241,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Warm colors advance, not elevate ceiling perception.",
-        "b": "Saturation doesn't address vertical perception.",
-        "d": "Dark ceilings lower perceived height—opposite of desired effect.",
-        "correct": "Light-value ceilings read as higher visually; slightly darker walls provide contrast. This color value strategy makes the room feel more spacious vertically. Darkness would lower the perceived ceiling.",
-        "takeaway": "Darkness would lower the perceived ceiling."
+        "correct": "Surface texture becomes legible through how incident light is reflected, absorbed, and shadowed.",
+        "takeaway": "Lighting condition is part of how texture is read.",
+        "a": "Lighting changes perception, not the material itself.",
+        "b": "Hue and rhythm are different vocabularies.",
+        "d": "The same surface can remain tactile even when less visually legible."
       },
-      "explanation": "Warm colors advance, not elevate ceiling perception. Saturation doesn't address vertical perception. Dark ceilings lower perceived height—opposite of desired effect. Light-value ceilings read as higher visually; slightly darker walls provide contrast. This color value strategy makes the room feel more spacious vertically. Darkness would lower the perceived ceiling. Darkness would lower the perceived ceiling.",
-      "code_citation": null,
+      "explanation": "Surface texture becomes legible through how incident light is reflected, absorbed, and shadowed. Lighting condition is part of how texture is read.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +261,30 @@
       "model_id": "ALE-THEO-002-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:20.576573+00:00",
-      "content_hash": "sha256:8dd308f6a39f684467f5458ab173c666aff22e39f0a147cadc89681d6dd001d8"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:8d96eb14a9fa693ac8ebee0148f2a7b5bdcb83e873a466f580c5fcc10d973a63"
     },
     {
       "question_id": "7166dcdd-4a90-4a08-af6c-e10223345569",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Why does Ching emphasize that color, texture, light, and shadow are primary design elements rather than secondary decoration?",
+      "text": "A rough concrete wall looks much deeper when sunlight grazes it from the side. Which source-backed relationship explains the effect?",
       "options": [
         {
           "id": "a",
-          "text": "Because these sensory elements affect spatial perception, emotional response, functional performance (wayfinding, visibility, acoustics), and material expression—they shape architectural experience and meaning"
+          "text": "Texture affects how a surface reflects or absorbs light, and shadow can reveal the relief."
         },
         {
           "id": "b",
-          "text": "Because these elements are required by building codes, ensuring compliance with safety and accessibility standards"
+          "text": "Texture affects only touch and never visual perception."
         },
         {
           "id": "c",
-          "text": "Because these elements are visually obvious and easy for students to understand, making them ideal for educational purposes"
+          "text": "The effect proves the wall color has changed physically."
         },
         {
           "id": "d",
-          "text": "Because these elements are cost-effective design solutions, offering aesthetic value without significant expense"
+          "text": "Only structural thickness can create shadow."
         }
       ],
       "correct_option_id": "a",
@@ -293,14 +293,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Codes rarely mandate these elements; they're design choices.",
-        "c": "While observable, their importance is deeper than mere visibility.",
-        "d": "Cost efficiency is not the reason; design quality and experience are.",
-        "correct": "These sensory elements are fundamental to design impact: color affects spatial perception and wayfinding; texture communicates material honesty and supports human scale; light defines form and creates emotional atmosphere; shadow reveals and articulates. They're not surface decoration but essential design tools shaping how buildings are experienced and function.",
-        "takeaway": "They're not surface decoration but essential design tools shaping how buildings are experienced and function."
+        "correct": "TOA 2 defines texture as visual and tactile and links it to light reflection or absorption.",
+        "takeaway": "Texture, light, and shadow work together in perception.",
+        "b": "Texture is explicitly visual as well as tactile.",
+        "c": "The perceived change can come from light and shadow rather than pigment change.",
+        "d": "Openings and surface relief can also shape shadow."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 defines texture as visual and tactile and links it to light reflection or absorption. Texture, light, and shadow work together in perception.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -313,30 +313,30 @@
       "model_id": "ALE-THEO-002-09-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0dc991717ec90038e00d9ac49266c0a1e3d88aaf26ce9294222457b877b99590"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:9246fd5097298200293a5bdec9f07b3b866567cf5a2142ba62c818c2719d0503"
     },
     {
       "question_id": "d553a483-33fe-4080-8e66-03d48c0e1ca5",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "In a hospital corridor, why might smooth, cleanable surfaces be specified despite their showing wear visibly?",
+      "text": "Which set of terms best matches the Batch 130 source map for describing color?",
       "options": [
         {
           "id": "a",
-          "text": "Hospital codes require smooth surfaces by law to ensure compliance with health and safety regulations"
+          "text": "Span, load, shear, and moment."
         },
         {
           "id": "b",
-          "text": "Functional requirement (hygiene control) overrides aesthetic concern about visible wear"
+          "text": "Hue, value, temperature, and intensity or chroma."
         },
         {
           "id": "c",
-          "text": "Smooth surfaces are always cheaper, making them the preferred choice for budget-conscious projects"
+          "text": "Axis, datum, hierarchy, and rhythm only."
         },
         {
           "id": "d",
-          "text": "Smooth surfaces absorb sound better than rough, contributing to a quieter environment"
+          "text": "Rise, run, landing, and handrail height."
         }
       ],
       "correct_option_id": "b",
@@ -345,14 +345,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Codes don't mandate smooth surfaces; function does.",
-        "c": "Cost isn't the justification.",
-        "d": "Rough surfaces are more absorptive acoustically.",
-        "correct": "Material honesty in context: hospitals require sanitation and easy cleaning (functional need). Smooth, washable surfaces serve functional purpose despite showing dirt/marks. This demonstrates that design choices balance multiple requirements.",
-        "takeaway": "This demonstrates that design choices balance multiple requirements."
+        "correct": "TOA 2 names hue, value, temperature, and intensity/chroma as color descriptors.",
+        "takeaway": "Color questions should use the source-backed vocabulary of hue, value, temperature, and intensity/chroma.",
+        "a": "Those terms belong to structural behavior, not color perception.",
+        "c": "Those are ordering principles, not the color descriptor set.",
+        "d": "Those are circulation/accessibility dimensions, not color descriptors."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 names hue, value, temperature, and intensity/chroma as color descriptors. Color questions should use the source-backed vocabulary of hue, value, temperature, and intensity/chroma.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -365,30 +365,30 @@
       "model_id": "ALE-THEO-002-09-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bbf18ecd8fe6163ddb8b3783cf7d1b62183c1572a80644c07382620f88dbf42c"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:2d475a9625aef9187b71274a675fc420e038c0a72f67ff2eeb423323a6681764"
     },
     {
       "question_id": "6829f8f7-ef45-43df-86b8-3638d8a289ec",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Natural light in architecture functions by:",
+      "text": "A wall with deep three-dimensional openings casts alternating light, shade, and shadow across its surface. What is the safest interpretation?",
       "options": [
         {
           "id": "a",
-          "text": "Providing consistent, unchanging illumination throughout the day, which is ideal for spaces requiring uniform lighting conditions"
+          "text": "The wall has no architectural effect because shadow is only absence of light."
         },
         {
           "id": "b",
-          "text": "Only illuminating vertical surfaces (walls), which limits its effectiveness in spaces with high ceilings"
+          "text": "The openings are relevant only if they are structural columns."
         },
         {
           "id": "c",
-          "text": "Requiring supplemental electric lighting for adequate visibility, especially in deep-plan buildings"
+          "text": "The pattern is a universal emotional code independent of context."
         },
         {
           "id": "d",
-          "text": "Creating time-bound, dynamic spatial experience—varying throughout the day (cool north, warm south, directional at dawn/dusk) and season (high summer angles, low winter angles)"
+          "text": "The openings are articulating the wall by creating a texture of light, shade, and shadow."
         }
       ],
       "correct_option_id": "d",
@@ -397,14 +397,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Natural light is inherently variable and time-bound.",
-        "b": "Natural light illuminates all surfaces depending on direction.",
-        "c": "Many buildings achieve adequate daylighting without supplemental artificial light.",
-        "correct": "Natural light's character changes throughout day and year, creating dynamic experience: cool north light, warm south light, dramatic directional grazing light at dawn/dusk. Windows, skylights, light shelves control this dynamic illumination.",
-        "takeaway": "Windows, skylights, light shelves control this dynamic illumination."
+        "correct": "TOA 2 states that three-dimensional openings can create a texture of light, shade, and shadows.",
+        "takeaway": "Shadow can be an articulation effect when tied to openings, depth, and surface reading.",
+        "a": "The source map treats shadow as a perceptual design effect, not just absence.",
+        "b": "Openings can shape perception even when not columns.",
+        "c": "Batch 130 avoids unsupported universal emotion claims."
       },
-      "explanation": "Natural light is inherently variable and time-bound. Natural light illuminates all surfaces depending on direction. Many buildings achieve adequate daylighting without supplemental artificial light. Natural light's character changes throughout day and year, creating dynamic experience: cool north light, warm south light, dramatic directional grazing light at dawn/dusk. Windows, skylights, light shelves control this dynamic illumination. Windows, skylights, light shelves control this dynamic illumination.",
-      "code_citation": null,
+      "explanation": "TOA 2 states that three-dimensional openings can create a texture of light, shade, and shadows. Shadow can be an articulation effect when tied to openings, depth, and surface reading.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +417,30 @@
       "model_id": "ALE-THEO-002-09-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:21.071887+00:00",
-      "content_hash": "sha256:36a53aca26b7609daf9ce6aa2a46cf7959c63faec68dcc453d78eda064609095"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:ddb4bb8f9cfe75973c2cdf6e1b4d0c8f4b1af671afa6f837838aa2e2273fee7c"
     },
     {
       "question_id": "6f9f3afd-e76b-46ba-a7da-79b526b6fd8c",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Color hue in architectural design refers to:",
+      "text": "A designer wants a form to read more visually heavy against its surroundings. Which color-related idea is source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "The lightness or darkness of a color on a scale from white to black, which is actually value"
+          "text": "Only floor area can affect visual weight."
         },
         {
           "id": "b",
-          "text": "The fundamental property distinguishing colors (red, blue, green, etc.) and carrying psychological and cultural associations"
+          "text": "Color can distinguish a form from its environment and affect visual weight."
         },
         {
           "id": "c",
-          "text": "The purity or intensity of a color from highly saturated to desaturated, which is actually chroma"
+          "text": "Color is unrelated to light or visual perception."
         },
         {
           "id": "d",
-          "text": "The reflection of light from colored surfaces, which is not specific to hue"
+          "text": "Every warm color always makes a space socially successful."
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +449,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That is color value (lightness/darkness).",
-        "c": "That is color saturation (intensity).",
-        "d": "That describes light behavior, not hue itself.",
-        "correct": "Hue is the fundamental color property: red, blue, green, etc. Warm hues (reds, oranges, yellows) advance and energize; cool hues (blues, greens, purples) recede and calm. Hues carry cultural and psychological associations.",
-        "takeaway": "Hues carry cultural and psychological associations."
+        "correct": "TOA 2 links color to visual perception and visual weight.",
+        "takeaway": "Use color claims carefully: visual distinction and weight are safer than universal emotional promises.",
+        "a": "Visual weight is not limited to floor area.",
+        "c": "The source defines color as a light and visual-perception phenomenon.",
+        "d": "The source map does not support universal psychological guarantees."
       },
-      "explanation": "That is color value (lightness/darkness). That is color saturation (intensity). That describes light behavior, not hue itself. Hue is the fundamental color property: red, blue, green, etc. Warm hues (reds, oranges, yellows) advance and energize; cool hues (blues, greens, purples) recede and calm. Hues carry cultural and psychological associations. Hues carry cultural and psychological associations.",
-      "code_citation": null,
+      "explanation": "TOA 2 links color to visual perception and visual weight. Use color claims carefully: visual distinction and weight are safer than universal emotional promises.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -469,30 +469,30 @@
       "model_id": "ALE-THEO-002-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:21.237213+00:00",
-      "content_hash": "sha256:884118d698df40b0d45915c06088daa4f5b6f28c638295c1ec96856309974bd4"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:bda3eeb62e4895e386abcd37eab13b9420abbbfdbbb3da22f819ef1af6c7a1d4"
     },
     {
       "question_id": "ef71fa56-1b43-45aa-9a8f-3089f41e2631",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Why would an architect place high windows on a south-facing wall rather than low windows?",
+      "text": "Why is flat, diffuse light likely to reduce the apparent depth of a textured surface compared with grazing light?",
       "options": [
         {
           "id": "a",
-          "text": "High windows provide more light overall, which is a common but incorrect assumption"
+          "text": "It removes all texture from the material permanently."
         },
         {
           "id": "b",
-          "text": "High windows are cheaper to install, a misconception as installation costs depend on various factors"
+          "text": "It changes hue into structural rhythm."
         },
         {
           "id": "c",
-          "text": "High windows admit light while maintaining privacy and reducing direct solar heat gain compared to low windows"
+          "text": "It softens the shadows that make surface relief legible."
         },
         {
           "id": "d",
-          "text": "Building codes require high windows on south facades, which is not a standard requirement in most codes"
+          "text": "It proves the surface has no tactile quality."
         }
       ],
       "correct_option_id": "c",
@@ -501,14 +501,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Window placement, not height alone, determines light quantity.",
-        "b": "Installation cost doesn't determine placement.",
-        "d": "Codes don't mandate window placement; function and design intent do.",
-        "correct": "Window placement affects function: high windows admit light while maintaining privacy and (in hot climates) reducing thermal load from direct sun on occupants. Low windows create transparency and connection but expose interior to heat gain and loss of privacy.",
-        "takeaway": "Low windows create transparency and connection but expose interior to heat gain and loss of privacy."
+        "correct": "Surface texture becomes legible through how incident light is reflected, absorbed, and shadowed.",
+        "takeaway": "Lighting condition is part of how texture is read.",
+        "a": "Lighting changes perception, not the material itself.",
+        "b": "Hue and rhythm are different vocabularies.",
+        "d": "The same surface can remain tactile even when less visually legible."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Surface texture becomes legible through how incident light is reflected, absorbed, and shadowed. Lighting condition is part of how texture is read.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,30 +521,30 @@
       "model_id": "ALE-THEO-002-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:68aa978fe2d9967da53110d4ce3164dae16d31910dc80d9166cda4fcb2d3e08a"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:92ac20200c4c07e3915e0df6d3bdc79c8016c1a7a45f8479908242ff6532481b"
     },
     {
       "question_id": "7d4f7fa5-8fc6-406a-9843-5a9b382f16ad",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Grazing light (nearly parallel to a surface) creates which effect on architectural form?",
+      "text": "A rough concrete wall looks much deeper when sunlight grazes it from the side. Which source-backed relationship explains the effect?",
       "options": [
         {
           "id": "a",
-          "text": "Evens out all surface variations, creating uniform appearance, which can be desirable in certain design contexts"
+          "text": "Texture affects only touch and never visual perception."
         },
         {
           "id": "b",
-          "text": "Exaggerated shadow articulating three-dimensional form and revealing texture details"
+          "text": "Texture affects how a surface reflects or absorbs light, and shadow can reveal the relief."
         },
         {
           "id": "c",
-          "text": "Eliminates shadows entirely, improving visibility, which is beneficial in workspaces requiring consistent lighting"
+          "text": "The effect proves the wall color has changed physically."
         },
         {
           "id": "d",
-          "text": "Creates confusion about actual surface geometry, potentially misleading viewers about the true form"
+          "text": "Only structural thickness can create shadow."
         }
       ],
       "correct_option_id": "b",
@@ -553,14 +553,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Grazing light emphasizes variation, not uniforms.",
-        "c": "Grazing light actually creates dramatic shadow patterns.",
-        "d": "Grazing light reveals surface geometry clearly through shadow articulation.",
-        "correct": "Grazing light creates dramatic shadows highlighting every surface variation, texture, and form undulation. This is why ruins and archaeological sites are photographed in golden-hour light—grazing light dramatically reveals form. Architects use this strategically through façade articulation and overhang placement.",
-        "takeaway": "Architects use this strategically through façade articulation and overhang placement."
+        "correct": "TOA 2 defines texture as visual and tactile and links it to light reflection or absorption.",
+        "takeaway": "Texture, light, and shadow work together in perception.",
+        "a": "Texture is explicitly visual as well as tactile.",
+        "c": "The perceived change can come from light and shadow rather than pigment change.",
+        "d": "Openings and surface relief can also shape shadow."
       },
-      "explanation": "Grazing light emphasizes variation, not uniforms. Grazing light actually creates dramatic shadow patterns. Grazing light reveals surface geometry clearly through shadow articulation. Grazing light creates dramatic shadows highlighting every surface variation, texture, and form undulation. This is why ruins and archaeological sites are photographed in golden-hour light—grazing light dramatically reveals form. Architects use this strategically through façade articulation and overhang placement. Architects use this strategically through façade articulation and overhang placement.",
-      "code_citation": null,
+      "explanation": "TOA 2 defines texture as visual and tactile and links it to light reflection or absorption. Texture, light, and shadow work together in perception.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -573,30 +573,30 @@
       "model_id": "ALE-THEO-002-09-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:21.400899+00:00",
-      "content_hash": "sha256:8855c8981d1a2b94ede04a9826f398b295287de4f03d1208da7786b03c08e164"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:6f70ea98de04a5d714a67aeb39f6983e205442935c7299081f2bd2c11156faa1"
     },
     {
       "question_id": "7e6dc778-716e-4825-ae9c-5c20bd7e07c8",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Artificial light color temperature (measured in Kelvin) affects spatial experience by:",
+      "text": "Which set of terms best matches the Batch 130 source map for describing color?",
       "options": [
         {
           "id": "a",
-          "text": "The warmth or coolness of light—2700K is warm and intimate; 5000K is cool and alert/clinical"
+          "text": "Hue, value, temperature, and intensity or chroma."
         },
         {
           "id": "b",
-          "text": "Controlling the direction light travels through space, which can affect how shadows are cast and perceived"
+          "text": "Span, load, shear, and moment."
         },
         {
           "id": "c",
-          "text": "Setting the color saturation of room finishes, which can alter the perceived intensity of colors in the environment"
+          "text": "Axis, datum, hierarchy, and rhythm only."
         },
         {
           "id": "d",
-          "text": "Determining whether lighting is bright or dim, which can influence the overall ambiance and mood of a space"
+          "text": "Rise, run, landing, and handrail height."
         }
       ],
       "correct_option_id": "a",
@@ -605,14 +605,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Direction is determined by fixture placement and angle.",
-        "c": "Color temperature of light, not saturation of finishes, affects mood.",
-        "d": "Intensity (brightness) is separate from color temperature.",
-        "correct": "Color temperature fundamentally affects mood: warm light (2700K) feels intimate and relaxing; cool light (5000K) feels alert and clinical. Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms.",
-        "takeaway": "Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms."
+        "correct": "TOA 2 names hue, value, temperature, and intensity/chroma as color descriptors.",
+        "takeaway": "Color questions should use the source-backed vocabulary of hue, value, temperature, and intensity/chroma.",
+        "b": "Those terms belong to structural behavior, not color perception.",
+        "c": "Those are ordering principles, not the color descriptor set.",
+        "d": "Those are circulation/accessibility dimensions, not color descriptors."
       },
-      "explanation": "Direction is determined by fixture placement and angle. Color temperature of light, not saturation of finishes, affects mood. Intensity (brightness) is separate from color temperature. Color temperature fundamentally affects mood: warm light (2700K) feels intimate and relaxing; cool light (5000K) feels alert and clinical. Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms. Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms.",
-      "code_citation": null,
+      "explanation": "TOA 2 names hue, value, temperature, and intensity/chroma as color descriptors. Color questions should use the source-backed vocabulary of hue, value, temperature, and intensity/chroma.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -625,30 +625,30 @@
       "model_id": "ALE-THEO-002-09-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:21.565969+00:00",
-      "content_hash": "sha256:bc96f0a14c35f2472d217c784d0b35833c84a0eabd82d6ee11ed3569e6cdbf8c"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:6f4c1ba0ec3fa02950eb1c5f3c753bdfdd36e875e4d309e6a81e25ef2b3df6c1"
     },
     {
       "question_id": "32e29bde-61a8-41fa-b76d-c74b47295e94",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Color value in architectural design affects spatial perception by:",
+      "text": "A wall with deep three-dimensional openings casts alternating light, shade, and shadow across its surface. What is the safest interpretation?",
       "options": [
         {
           "id": "a",
-          "text": "The cultural associations of different colors, which can influence emotional responses and perceived space"
+          "text": "The wall has no architectural effect because shadow is only absence of light."
         },
         {
           "id": "b",
-          "text": "Determining whether colors are warm or cool, which affects the psychological warmth or coolness of a space"
+          "text": "The openings are relevant only if they are structural columns."
         },
         {
           "id": "c",
-          "text": "The lightness or darkness of a color; light values read as spacious and high; dark values read as intimate and low"
+          "text": "The openings are articulating the wall by creating a texture of light, shade, and shadow."
         },
         {
           "id": "d",
-          "text": "The intensity of hue saturation, which can alter the perceived energy and vibrancy of a space"
+          "text": "The pattern is a universal emotional code independent of context."
         }
       ],
       "correct_option_id": "c",
@@ -657,14 +657,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That is cultural association, not value's spatial effect.",
-        "b": "That is hue property.",
-        "d": "That is saturation property.",
-        "correct": "Value (lightness/darkness) directly affects spatial perception: a light-colored ceiling reads as higher; dark ceiling reads as lower. Light values create openness; dark values create intimacy. This is a functional design tool, not decorative choice.",
-        "takeaway": "This is a functional design tool, not decorative choice."
+        "correct": "TOA 2 states that three-dimensional openings can create a texture of light, shade, and shadows.",
+        "takeaway": "Shadow can be an articulation effect when tied to openings, depth, and surface reading.",
+        "a": "The source map treats shadow as a perceptual design effect, not just absence.",
+        "b": "Openings can shape perception even when not columns.",
+        "d": "Batch 130 avoids unsupported universal emotion claims."
       },
-      "explanation": "That is cultural association, not value's spatial effect. That is hue property. That is saturation property. Value (lightness/darkness) directly affects spatial perception: a light-colored ceiling reads as higher; dark ceiling reads as lower. Light values create openness; dark values create intimacy. This is a functional design tool, not decorative choice. This is a functional design tool, not decorative choice.",
-      "code_citation": null,
+      "explanation": "TOA 2 states that three-dimensional openings can create a texture of light, shade, and shadows. Shadow can be an articulation effect when tied to openings, depth, and surface reading.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -677,30 +677,30 @@
       "model_id": "ALE-THEO-002-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:21.890962+00:00",
-      "content_hash": "sha256:39e0cef03c0400c96b504541ba9931b4a6fc389f3d5421e942780a98c94d7074"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:dd187ba447939d0a3e27a0d96bffb59c0ad47626d68f6e39bfbb28cde0836552"
     },
     {
       "question_id": "33a59956-773b-4dfe-a283-638e102da0fa",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
       "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "How do rough-textured and smooth-textured surfaces differ in their perceptual and functional effects?",
+      "text": "A designer wants a form to read more visually heavy against its surroundings. Which color-related idea is source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "Smooth textures are always more expensive, which affects budget considerations"
+          "text": "Only floor area can affect visual weight."
         },
         {
           "id": "b",
-          "text": "Rough textures feel warm and craft-expressive, create diffuse light reflection, support human scale through detail; smooth textures feel formal, reflect light specularly, age less visibly"
+          "text": "Color can distinguish a form from its environment and affect visual weight."
         },
         {
           "id": "c",
-          "text": "Both textures function identically; only appearance differs, which is a common misconception"
+          "text": "Color is unrelated to light or visual perception."
         },
         {
           "id": "d",
-          "text": "Rough textures are stronger structurally, providing additional durability"
+          "text": "Every warm color always makes a space socially successful."
         }
       ],
       "correct_option_id": "b",
@@ -709,14 +709,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cost varies by material and finish, not texture alone.",
-        "c": "Textures affect perception and function distinctly.",
-        "d": "Structural strength depends on material and form, not texture.",
-        "correct": "Texture creates functional and perceptual differences: rough reflects light diffusely (appears softer), shows aging beautifully; smooth reflects specularly (appears brighter), shows wear obviously. Rough feels warm and human-scaled; smooth feels formal and refined.",
-        "takeaway": "Rough feels warm and human-scaled; smooth feels formal and refined."
+        "correct": "TOA 2 links color to visual perception and visual weight.",
+        "takeaway": "Use color claims carefully: visual distinction and weight are safer than universal emotional promises.",
+        "a": "Visual weight is not limited to floor area.",
+        "c": "The source defines color as a light and visual-perception phenomenon.",
+        "d": "The source map does not support universal psychological guarantees."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 links color to visual perception and visual weight. Use color claims carefully: visual distinction and weight are safer than universal emotional promises.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 544-575, 780-797, 2116-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -729,8 +729,8 @@
       "model_id": "ALE-THEO-002-09-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b752e10bddb00e9bf0b7b9a8af63d6b59207e955cdcca89317c7a270b92d649c"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:916cea31d660ec7fb1e816e261a6270c7bc11593a94d15e85d5ab3cc769e9e45"
     }
   ]
 }

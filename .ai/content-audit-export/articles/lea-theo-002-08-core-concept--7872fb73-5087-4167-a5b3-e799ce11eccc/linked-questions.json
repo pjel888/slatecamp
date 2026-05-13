@@ -1,30 +1,30 @@
 {
   "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:1242915e46b8dc44e579e18bd825bdbc81bb620e2b1fc103cbec79aecd31ab8f",
+  "linked_questions_hash": "sha256:4e47c4f29d3b92b9d66c3806e81edd429145110e55aa1ee4050bf547a8c2b3d1",
   "question_count": 14,
   "questions": [
     {
       "question_id": "ed974785-5e2c-494c-a9d3-a80773061542",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "An architect sketches a diagonal across a building elevation and discovers that significant architectural features (window tops, cornice lines, major transitions) align with the diagonal. What is this diagonal functioning as?",
+      "text": "A facade has an oversized recessed portal visible from the street, but the actual door inside the portal is sized for a person. Which distinction is being tested?",
       "options": [
         {
           "id": "a",
-          "text": "A regulating line, revealing the underlying proportional order that generated the design"
+          "text": "The portal works at visual scale, while the inner door restores human scale."
         },
         {
           "id": "b",
-          "text": "A sight line for viewing the facade from a specific angle, enhancing the visual experience of the observer"
+          "text": "Both elements prove the building lacks scale because they differ in size."
         },
         {
           "id": "c",
-          "text": "A structural element supporting the building's weight, although diagonals are typically not used structurally in facades"
+          "text": "The portal is only decorative and has no effect on scale perception."
         },
         {
           "id": "d",
-          "text": "A decorative line applied to the facade, intended to add visual interest without structural function"
+          "text": "The inner door is a proportioning system rather than a human-scale cue."
         }
       ],
       "correct_option_id": "a",
@@ -33,14 +33,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Alignment demonstrates proportional generation, not viewing geometry.",
-        "c": "Regulating lines are proportional devices, not structural support.",
-        "d": "Regulating lines are conceptual, not decorative surface elements.",
-        "correct": "When a geometric line aligns with significant features, it reveals the proportional generating logic. The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships.",
-        "takeaway": "The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships."
+        "correct": "The source map distinguishes visual scale from human scale and shows that distance and bodily reference can produce different readings.",
+        "takeaway": "Scale questions usually ask what the comparison is: context, normal size, or the body.",
+        "b": "Different sizes can clarify, not erase, scale.",
+        "c": "A portal can strongly affect scale perception.",
+        "d": "A door can signal human scale without being a full proportioning system."
       },
-      "explanation": "Alignment demonstrates proportional generation, not viewing geometry. Regulating lines are proportional devices, not structural support. Regulating lines are conceptual, not decorative surface elements. When a geometric line aligns with significant features, it reveals the proportional generating logic. The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships. The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships.",
-      "code_citation": null,
+      "explanation": "The source map distinguishes visual scale from human scale and shows that distance and bodily reference can produce different readings. Scale questions usually ask what the comparison is: context, normal size, or the body.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +53,30 @@
       "model_id": "ALE-THEO-002-08-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T13:17:28.701352+00:00",
-      "content_hash": "sha256:6b40852c1c7ca3886ff8afe9b4bf5c32166f3a2cb2e241b82ae929677316a1b6"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:3c60691e501d425ccb9bba45fa3eaa147c46714adc44318c681ed13980787556"
     },
     {
       "question_id": "b5e756f8-8f8b-4e6e-8435-7b5d3dc9aa55",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "Regulating lines in architectural design are:",
+      "text": "A review panel asks why a lobby with the same floor area feels more monumental after its ceiling height is increased. What is the strongest source-backed explanation?",
       "options": [
         {
           "id": "a",
-          "text": "Decorative lines applied to ornamental surfaces, often used to enhance aesthetic appeal"
+          "text": "Floor area alone controls human scale."
         },
         {
           "id": "b",
-          "text": "Geometric lines (diagonals, proportional divisions, axes) drawn to reveal underlying proportional systems and guide dimensional decisions"
+          "text": "Room height has a strong effect on perceived human scale."
         },
         {
           "id": "c",
-          "text": "Lines required by building codes to separate property boundaries, ensuring legal compliance"
+          "text": "Only wall color can make the space feel monumental."
         },
         {
           "id": "d",
-          "text": "Lines on a facade indicating where windows and doors must be placed, based on design intent"
+          "text": "Scale is fixed by the building type and cannot change through dimensions."
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +85,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Regulating lines are structural/proportional devices, not decoration.",
-        "c": "Property lines are not architectural regulating lines.",
-        "d": "Regulating lines guide proportional logic, not specific element placement.",
-        "correct": "Regulating lines are conceptual tools—geometric lines (often diagonals, proportional divisions) that reveal hidden proportional order and guide dimensional relationships. They're not visible in the finished building but organize the design system.",
-        "takeaway": "They're not visible in the finished building but organize the design system."
+        "correct": "TOA 2 states that room height has greater effect on scale than width or length.",
+        "takeaway": "Human scale is read through bodily relation to height, openings, surfaces, and interior elements.",
+        "a": "Floor area is not the only scale cue.",
+        "c": "Color may affect perception but is not the only factor.",
+        "d": "Scale remains a comparative perception, not a fixed building-type label."
       },
-      "explanation": "Regulating lines are structural/proportional devices, not decoration. Property lines are not architectural regulating lines. Regulating lines guide proportional logic, not specific element placement. Regulating lines are conceptual tools—geometric lines (often diagonals, proportional divisions) that reveal hidden proportional order and guide dimensional relationships. They're not visible in the finished building but organize the design system. They're not visible in the finished building but organize the design system.",
-      "code_citation": null,
+      "explanation": "TOA 2 states that room height has greater effect on scale than width or length. Human scale is read through bodily relation to height, openings, surfaces, and interior elements.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +105,30 @@
       "model_id": "ALE-THEO-002-08-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T13:17:28.836399+00:00",
-      "content_hash": "sha256:c68a6d8c500e148a3e038fff6673063c3651eb35bb6b855602694b55b474a362"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:0aab40f62c9231e3d3e6090db4f0b2a744d2621fecd1661fa1ec7e497ecc7d6a"
     },
     {
       "question_id": "c07c2f69-6346-4336-b842-927bffa3d876",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "How do proportioning systems demonstrate that proportion is not merely aesthetic preference but a design discipline with functional and perceptual consequences?",
+      "text": "A design uses a repeated bay dimension to coordinate columns, mats, room sizes, and ceiling heights. Which source-backed principle does this best illustrate?",
       "options": [
         {
           "id": "a",
-          "text": "Because proportioning systems generate dimensional relationships that make buildings feel coherent and human-scaled—proportion is discipline determining how spaces feel and function, not decorative choice"
+          "text": "A modular proportioning system can order structure, materials, and space."
         },
         {
           "id": "b",
-          "text": "Because proportioning systems are required by building codes, ensuring compliance with legal standards"
+          "text": "A module is only a decorative motif on a facade."
         },
         {
           "id": "c",
-          "text": "Because architects historically used proportioning systems, they must be important for maintaining tradition"
+          "text": "A module eliminates the need to consider human scale."
         },
         {
           "id": "d",
-          "text": "Because proportioning systems are mathematically interesting to architects, providing intellectual stimulation"
+          "text": "A module is the same as visual scale at a distance."
         }
       ],
       "correct_option_id": "a",
@@ -137,14 +137,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Codes rarely mandate proportioning systems.",
-        "c": "Historical use supports the discipline but isn't the reason.",
-        "d": "Mathematics serves design intent, not decorative intellectualism.",
-        "correct": "Proportioning systems reveal that proportion is fundamental discipline: it governs how spaces feel, how parts relate, whether buildings feel harmonious or chaotic. The Modulor ensures human-scale appropriateness. Golden ratio feels inherently harmonious. Modules create order. These are functional consequences, not aesthetic taste.",
-        "takeaway": "These are functional consequences, not aesthetic taste."
+        "correct": "The ken source map treats the module as an ordering device for structure, materials, and space.",
+        "takeaway": "A proportioning system is strongest when it coordinates multiple architectural decisions.",
+        "b": "The module organizes dimensions, not just surface decoration.",
+        "c": "Modules still need to be tested against human use.",
+        "d": "Visual scale is a perceptual comparison, not the module itself."
       },
-      "explanation": "Codes rarely mandate proportioning systems. Historical use supports the discipline but isn't the reason. Mathematics serves design intent, not decorative intellectualism. Proportioning systems reveal that proportion is fundamental discipline: it governs how spaces feel, how parts relate, whether buildings feel harmonious or chaotic. The Modulor ensures human-scale appropriateness. Golden ratio feels inherently harmonious. Modules create order. These are functional consequences, not aesthetic taste. These are functional consequences, not aesthetic taste.",
-      "code_citation": null,
+      "explanation": "The ken source map treats the module as an ordering device for structure, materials, and space. A proportioning system is strongest when it coordinates multiple architectural decisions.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -157,30 +157,30 @@
       "model_id": "ALE-THEO-002-08-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T13:17:28.950409+00:00",
-      "content_hash": "sha256:5ffa2a484d6b22bd7e317743c7f873e1a459b78feb3c7ae5cf625547fa882f22"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:966460c96c10bce2adc1a328bff090ce9c083bacec6cd8921ab5f1e6097d7e69"
     },
     {
       "question_id": "66693173-cb91-4481-b918-1ffc555e3cf2",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "In traditional Japanese architecture, the Ken measurement is:",
+      "text": "Which statement most accurately describes the Modulor in the Batch 130 source map?",
       "options": [
         {
           "id": "a",
-          "text": "The thickness of a wall in millimeters, which varies depending on the structural requirements"
+          "text": "It is only a structural code for sizing beams."
         },
         {
           "id": "b",
-          "text": "The distance between columns, traditionally equal to 6 shaku (approximately 1.82 meters in modern standardization)"
+          "text": "It combines mathematical proportion with human-body dimensions to maintain human scale."
         },
         {
           "id": "c",
-          "text": "A decorative element applied to wooden beams, often used to enhance the aesthetic appeal of the structure"
+          "text": "It is a color system for choosing warm and cool palettes."
         },
         {
           "id": "d",
-          "text": "The maximum ceiling height in Japanese buildings, which is determined by local building codes"
+          "text": "It rejects proportional systems and uses random room dimensions."
         }
       ],
       "correct_option_id": "b",
@@ -189,14 +189,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Ken is a spacing module, not a wall thickness.",
-        "c": "Ken is structural/proportional, not decorative.",
-        "d": "Ceiling height may relate to ken, but ken is the fundamental spacing module.",
-        "correct": "Ken (柱間, 'space between columns') = 6 shaku ≈ 1.82m. This proportional module regulates all traditional Japanese building dimensions, creating proportional coherence throughout the building system.",
-        "takeaway": "This proportional module regulates all traditional Japanese building dimensions, creating proportional coherence throughout the building system."
+        "correct": "TOA 2 describes the Modulor as based on Golden Section/Fibonacci relationships and human-body proportions.",
+        "takeaway": "Do not confuse proportioning systems with codes, colors, or arbitrary sizing.",
+        "a": "The source map presents it as a proportioning system, not a structural code.",
+        "c": "Color is treated separately from Modulor.",
+        "d": "The Modulor is explicitly a system of measurement."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 describes the Modulor as based on Golden Section/Fibonacci relationships and human-body proportions. Do not confuse proportioning systems with codes, colors, or arbitrary sizing.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -209,30 +209,30 @@
       "model_id": "ALE-THEO-002-08-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d76c6f508f9f3747dafe13d0d60b91e36fd8a0d7ec0bd3ee7eae36a781945dfc"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:85fdd1fc1ff7bbbfa91243bf4aedbe87eb1604c3f3562c80a1b4a8db3a327a19"
     },
     {
       "question_id": "4d9f58b2-fba9-4087-bc74-7b734aa49007",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "A designer proportions a house in multiples of 1.8m module, ensuring that all room widths, door heights, and spatial intervals relate to this module. Which proportioning strategy is being employed?",
+      "text": "A student says scale means the actual length, width, and depth of a form. What correction best matches the source map?",
       "options": [
         {
           "id": "a",
-          "text": "Modulor system (anthropometric + golden ratio), which is based on human scale and aesthetic harmony"
+          "text": "Scale is unrelated to size or perception."
         },
         {
           "id": "b",
-          "text": "Golden section (irrational proportion), often used for its aesthetic appeal in art and architecture"
+          "text": "Scale can only be measured by the Golden Section."
         },
         {
           "id": "c",
-          "text": "Modular proportioning system (similar to Ken/Tatami logic)"
+          "text": "Those are size dimensions; scale is judged by comparison to another reference."
         },
         {
           "id": "d",
-          "text": "Regulating lines (geometric revelation), which guide the design through visual alignment and harmony"
+          "text": "Scale applies only to historic buildings."
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +241,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Modulor would be more specific human-scale anthropometry (2.26m, 1.13m, etc.).",
-        "b": "Golden section uses irrational proportion, not fixed modules.",
-        "d": "Regulating lines reveal hidden geometric order; this is openly modular.",
-        "correct": "A fixed module (1.8m) regulating all dimensions exemplifies modular proportioning—similar to Japanese ken/tatami logic. All spaces are multiples of the module, creating systematic proportional relationships and grid-based organization.",
-        "takeaway": "All spaces are multiples of the module, creating systematic proportional relationships and grid-based organization."
+        "correct": "TOA 2 separates physical dimensions from the comparative judgment of scale.",
+        "takeaway": "Size is measured; scale is perceived through comparison.",
+        "a": "Scale still depends on size relationships.",
+        "b": "The Golden Section is one proportioning reference, not the definition of scale.",
+        "d": "Scale applies across building types and periods."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 separates physical dimensions from the comparative judgment of scale. Size is measured; scale is perceived through comparison.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +261,30 @@
       "model_id": "ALE-THEO-002-08-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d4cb2724a2b3049926a2295af8c8de91b3983efa2318b065a9bcb13563290722"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:ed4ec7ee9197c381b715d427f39cdd984bd4b9db5937a08f7bb3bb4d3e5fc35c"
     },
     {
       "question_id": "70dbc3a4-1e80-42f5-8d49-911144987c01",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "Le Corbusier's Modulor proportioning system is based on:",
+      "text": "A facade has an oversized recessed portal visible from the street, but the actual door inside the portal is sized for a person. Which distinction is being tested?",
       "options": [
         {
           "id": "a",
-          "text": "A human figure of 2.26 meters (standing with arm raised) and the golden ratio applied to this dimension recursively"
+          "text": "The portal works at visual scale, while the inner door restores human scale."
         },
         {
           "id": "b",
-          "text": "Mathematical ratios derived from musical harmony, specifically focusing on the Pythagorean scale"
+          "text": "Both elements prove the building lacks scale because they differ in size."
         },
         {
           "id": "c",
-          "text": "The golden ratio alone, without anthropometric reference, as a universal constant for aesthetic proportions"
+          "text": "The portal is only decorative and has no effect on scale perception."
         },
         {
           "id": "d",
-          "text": "The average human height of 1.83 meters as the fundamental dimension, which is used to derive all other measurements"
+          "text": "The inner door is a proportioning system rather than a human-scale cue."
         }
       ],
       "correct_option_id": "a",
@@ -293,14 +293,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While music influenced some proportioning systems, Modulor uses golden ratio and human dimensions.",
-        "c": "Modulor specifically integrates golden ratio with human anthropometry.",
-        "d": "Modulor uses 2.26m (arm raised), not 1.83m (standing height).",
-        "correct": "Le Corbusier's Modulor is based on a 2.26m generating height (human standing with arm raised) and applies the golden ratio recursively to create cascading dimensions. This ensures that building elements (doors, counters, ceilings) relate to human measure and are proportionally harmonious.",
-        "takeaway": "This ensures that building elements (doors, counters, ceilings) relate to human measure and are proportionally harmonious."
+        "correct": "The source map distinguishes visual scale from human scale and shows that distance and bodily reference can produce different readings.",
+        "takeaway": "Scale questions usually ask what the comparison is: context, normal size, or the body.",
+        "b": "Different sizes can clarify, not erase, scale.",
+        "c": "A portal can strongly affect scale perception.",
+        "d": "A door can signal human scale without being a full proportioning system."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The source map distinguishes visual scale from human scale and shows that distance and bodily reference can produce different readings. Scale questions usually ask what the comparison is: context, normal size, or the body.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -313,30 +313,30 @@
       "model_id": "ALE-THEO-002-08-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4b177dfc3260ce4e15028ef1c0ecd144c757354bfabc5b2f76ea6fa9e1a78312"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:12f5e3316017a8531c953996cf539407bcf93e386d5404ac492c04880f628720"
     },
     {
       "question_id": "683c4156-8b3f-4100-97a9-ae37ab07cb06",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "Why do proportioning systems matter beyond ensuring mathematical precision?",
+      "text": "A review panel asks why a lobby with the same floor area feels more monumental after its ceiling height is increased. What is the strongest source-backed explanation?",
       "options": [
         {
           "id": "a",
-          "text": "Because architects require mathematical entertainment, which is essential for creative design processes"
+          "text": "Floor area alone controls human scale."
         },
         {
           "id": "b",
-          "text": "Because proportioning systems reduce construction costs by optimizing material usage and minimizing waste"
+          "text": "Only wall color can make the space feel monumental."
         },
         {
           "id": "c",
-          "text": "Because proportioning systems ensure that building dimensions feel harmonious and human-scaled, creating spatial coherence where parts relate to wholes through consistent logic"
+          "text": "Room height has a strong effect on perceived human scale."
         },
         {
           "id": "d",
-          "text": "Because building codes require proportioning systems to ensure safety and compliance with structural standards"
+          "text": "Scale is fixed by the building type and cannot change through dimensions."
         }
       ],
       "correct_option_id": "c",
@@ -345,14 +345,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Systems serve design coherence, not mathematics for its own sake.",
-        "b": "Proportioning systems enhance design quality, not reduce costs.",
-        "d": "Codes don't mandate proportioning systems; designers choose them.",
-        "correct": "Proportioning systems create feeling of coherence: when all dimensions relate through consistent logic (golden ratio, module, human measure), the building feels proportionally unified. This is experiential, not merely mathematical. Users may not know about golden ratio but perceive proportional harmony.",
-        "takeaway": "Users may not know about golden ratio but perceive proportional harmony."
+        "correct": "TOA 2 states that room height has greater effect on scale than width or length.",
+        "takeaway": "Human scale is read through bodily relation to height, openings, surfaces, and interior elements.",
+        "a": "Floor area is not the only scale cue.",
+        "b": "Color may affect perception but is not the only factor.",
+        "d": "Scale remains a comparative perception, not a fixed building-type label."
       },
-      "explanation": "Systems serve design coherence, not mathematics for its own sake. Proportioning systems enhance design quality, not reduce costs. Codes don't mandate proportioning systems; designers choose them. Proportioning systems create feeling of coherence: when all dimensions relate through consistent logic (golden ratio, module, human measure), the building feels proportionally unified. This is experiential, not merely mathematical. Users may not know about golden ratio but perceive proportional harmony. Users may not know about golden ratio but perceive proportional harmony.",
-      "code_citation": null,
+      "explanation": "TOA 2 states that room height has greater effect on scale than width or length. Human scale is read through bodily relation to height, openings, surfaces, and interior elements.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -365,30 +365,30 @@
       "model_id": "ALE-THEO-002-08-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T13:17:28.542673+00:00",
-      "content_hash": "sha256:8d864aa8f7dc771b8e2959390fd01652087a625a23a6f3495923db7a35baf548"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:e93df25e2a04180dc6080a7080d7b91f3b9a13818c314fef496287d02cbc1ad3"
     },
     {
       "question_id": "391c4e87-b596-41f6-a51f-69a063ed7c6e",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "The Red Series of Le Corbusier's Modulor is based on:",
+      "text": "A design uses a repeated bay dimension to coordinate columns, mats, room sizes, and ceiling heights. Which source-backed principle does this best illustrate?",
       "options": [
         {
           "id": "a",
-          "text": "A rectangular ratio rather than human anthropometric dimensions, emphasizing geometric harmony"
+          "text": "A module is only a decorative motif on a facade."
         },
         {
           "id": "b",
-          "text": "The color red and corresponds to warm-toned architectural materials, which are used to create a specific aesthetic"
+          "text": "A module eliminates the need to consider human scale."
         },
         {
           "id": "c",
-          "text": "Navel height of approximately 1.13 meters and its golden ratio divisions"
+          "text": "A modular proportioning system can order structure, materials, and space."
         },
         {
           "id": "d",
-          "text": "A standing human height of 2.26 meters, which serves as a basis for proportioning spaces"
+          "text": "A module is the same as visual scale at a distance."
         }
       ],
       "correct_option_id": "c",
@@ -397,14 +397,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Both Series are anthropometrically based.",
-        "b": "Color terminology does not define the proportional basis.",
-        "d": "That is the generating height for the Blue Series.",
-        "correct": "The Red Series uses navel height (approximately 1.13m) as the generating dimension and applies golden ratio divisions. This Series provides dimensions for smaller elements and interior details.",
-        "takeaway": "This Series provides dimensions for smaller elements and interior details."
+        "correct": "The ken source map treats the module as an ordering device for structure, materials, and space.",
+        "takeaway": "A proportioning system is strongest when it coordinates multiple architectural decisions.",
+        "a": "The module organizes dimensions, not just surface decoration.",
+        "b": "Modules still need to be tested against human use.",
+        "d": "Visual scale is a perceptual comparison, not the module itself."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The ken source map treats the module as an ordering device for structure, materials, and space. A proportioning system is strongest when it coordinates multiple architectural decisions.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +417,30 @@
       "model_id": "ALE-THEO-002-08-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e2e6db1bb912733db3e2f4f9242ad2c213340d1d5aba23c5b184fb3312f2c1b9"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:891899c8a4c881df15f6169abb0dd2c36e44ec7399178af993256509cfdc17b7"
     },
     {
       "question_id": "3e90e3ba-d11b-47aa-939f-4273650b1f6e",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "The Blue Series of Le Corbusier's Modulor is based on:",
+      "text": "Which statement most accurately describes the Modulor in the Batch 130 source map?",
       "options": [
         {
           "id": "a",
-          "text": "Standing human height of 1.83 meters, which is considered the average height for ergonomic design"
+          "text": "It is only a structural code for sizing beams."
         },
         {
           "id": "b",
-          "text": "Navel height of 1.13 meters, a key measurement in the Modulor system for proportional harmony"
+          "text": "It is a color system for choosing warm and cool palettes."
         },
         {
           "id": "c",
-          "text": "Standing height with arm raised of 2.26 meters and its golden ratio divisions"
+          "text": "It combines mathematical proportion with human-body dimensions to maintain human scale."
         },
         {
           "id": "d",
-          "text": "The color blue and corresponds to cool-toned architectural materials, which is a common misconception"
+          "text": "It rejects proportional systems and uses random room dimensions."
         }
       ],
       "correct_option_id": "c",
@@ -449,14 +449,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Standing height alone (1.83m) is not Modulor's basis.",
-        "b": "That is the basis for the Red Series.",
-        "d": "Color terminology does not define the basis.",
-        "correct": "The Blue Series uses the full 2.26m height (standing, arm raised) as generating dimension. This Series provides larger dimensions for doors, ceilings, and overall building heights.",
-        "takeaway": "This Series provides larger dimensions for doors, ceilings, and overall building heights."
+        "correct": "TOA 2 describes the Modulor as based on Golden Section/Fibonacci relationships and human-body proportions.",
+        "takeaway": "Do not confuse proportioning systems with codes, colors, or arbitrary sizing.",
+        "a": "The source map presents it as a proportioning system, not a structural code.",
+        "b": "Color is treated separately from Modulor.",
+        "d": "The Modulor is explicitly a system of measurement."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 describes the Modulor as based on Golden Section/Fibonacci relationships and human-body proportions. Do not confuse proportioning systems with codes, colors, or arbitrary sizing.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -469,30 +469,30 @@
       "model_id": "ALE-THEO-002-08-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5784ec64d807c9c4a24b4c6760212b4c7869fc38e44f27a76f580dc8e6ba3b20"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:79532b8f7d952409b6ad27f2bb3cef3c5c6beb5252218db5c6b47a963aa3ddf3"
     },
     {
       "question_id": "481ba482-09ad-4d8e-8ef5-9b13e82c71e3",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "A designer uses Modulor dimensions to establish that a doorway should be 2.26 meters tall and a kitchen counter should be 0.86 meters high. What design principle is demonstrated?",
+      "text": "A student says scale means the actual length, width, and depth of a form. What correction best matches the source map?",
       "options": [
         {
           "id": "a",
-          "text": "Ensuring building dimensions relate proportionally to human scale and are harmonious through golden ratio relationships"
+          "text": "Those are size dimensions; scale is judged by comparison to another reference."
         },
         {
           "id": "b",
-          "text": "Following a local building code standard, which may not necessarily align with the Modulor system but ensures compliance with legal requirements."
+          "text": "Scale is unrelated to size or perception."
         },
         {
           "id": "c",
-          "text": "Using the smallest possible dimensions to save construction costs, potentially compromising functionality and comfort."
+          "text": "Scale can only be measured by the Golden Section."
         },
         {
           "id": "d",
-          "text": "Arbitrary dimensional choice without proportional relationship, which can lead to a lack of coherence in design."
+          "text": "Scale applies only to historic buildings."
         }
       ],
       "correct_option_id": "a",
@@ -501,14 +501,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Modulor is an optional proportioning choice, not a building code.",
-        "c": "Modulor is chosen for proportion, not cost efficiency.",
-        "d": "Modulor is systematic, not arbitrary.",
-        "correct": "Using Modulor dimensions ensures proportional harmony and human-scale appropriateness. The doorway (2.26m) relates to arm-raised height; counter (0.86m ≈ 2.26 ÷ φ) relates through golden ratio. All elements feel proportionally coherent because they derive from a consistent system.",
-        "takeaway": "All elements feel proportionally coherent because they derive from a consistent system."
+        "correct": "TOA 2 separates physical dimensions from the comparative judgment of scale.",
+        "takeaway": "Size is measured; scale is perceived through comparison.",
+        "b": "Scale still depends on size relationships.",
+        "c": "The Golden Section is one proportioning reference, not the definition of scale.",
+        "d": "Scale applies across building types and periods."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 separates physical dimensions from the comparative judgment of scale. Size is measured; scale is perceived through comparison.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,30 +521,30 @@
       "model_id": "ALE-THEO-002-08-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:44fe9bee6aaa8792bd4204e0c5350a16ceed6f97a5600db94b55f80132630486"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:b95a492ac48c9d6d6273f2e5cf7031c6c88cc8b9424388877f22d7854275bc4b"
     },
     {
       "question_id": "650e7801-2473-42ad-8cc3-d854db82298e",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "The golden section is mathematically defined as:",
+      "text": "A facade has an oversized recessed portal visible from the street, but the actual door inside the portal is sized for a person. Which distinction is being tested?",
       "options": [
         {
           "id": "a",
-          "text": "A simple ratio of 1:2 or 2:3, found in nature and classical architecture, often used in the design of facades and floor plans"
+          "text": "Both elements prove the building lacks scale because they differ in size."
         },
         {
           "id": "b",
-          "text": "A mathematical proportion of approximately 1.618:1 (phi) where the ratio of the whole to the larger part equals the ratio of the larger part to the smaller part"
+          "text": "The portal works at visual scale, while the inner door restores human scale."
         },
         {
           "id": "c",
-          "text": "The average of several proportions found in human anatomy, which is often used as a guide in ergonomic design"
+          "text": "The portal is only decorative and has no effect on scale perception."
         },
         {
           "id": "d",
-          "text": "A geometric division into equal halves, commonly applied in the layout of symmetrical structures"
+          "text": "The inner door is a proportioning system rather than a human-scale cue."
         }
       ],
       "correct_option_id": "b",
@@ -553,14 +553,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Simple ratios are different from the golden ratio.",
-        "c": "The golden ratio is mathematical, not derived from averaging human dimensions.",
-        "d": "Equal halves (1:1) is not the golden ratio.",
-        "correct": "Ching provides the precise mathematical definition: the golden ratio (φ ≈ 1.618) has the property that whole:larger = larger:smaller. This irrational number appears in nature and has been used in art and architecture for centuries.",
-        "takeaway": "This irrational number appears in nature and has been used in art and architecture for centuries."
+        "correct": "The source map distinguishes visual scale from human scale and shows that distance and bodily reference can produce different readings.",
+        "takeaway": "Scale questions usually ask what the comparison is: context, normal size, or the body.",
+        "a": "Different sizes can clarify, not erase, scale.",
+        "c": "A portal can strongly affect scale perception.",
+        "d": "A door can signal human scale without being a full proportioning system."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The source map distinguishes visual scale from human scale and shows that distance and bodily reference can produce different readings. Scale questions usually ask what the comparison is: context, normal size, or the body.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -573,30 +573,30 @@
       "model_id": "ALE-THEO-002-08-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b0cc7406a0346450e968d4d0de68d6659def38fb31b2da640a3ed20cdf7bd118"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:76662c8b4039c0981cadf93303f557c690c3412ca7d49be4db5f18d17886cb45"
     },
     {
       "question_id": "4935c818-7589-4f45-acdb-6407ee9cafa7",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "How do the Fibonacci sequence and the golden ratio relate in architectural proportion?",
+      "text": "A review panel asks why a lobby with the same floor area feels more monumental after its ceiling height is increased. What is the strongest source-backed explanation?",
       "options": [
         {
           "id": "a",
-          "text": "The Fibonacci sequence is a method of approximating golden ratio relationships using whole numbers—consecutive Fibonacci ratios approach φ as the sequence progresses"
+          "text": "Room height has a strong effect on perceived human scale."
         },
         {
           "id": "b",
-          "text": "The Fibonacci sequence produces simpler proportions; the golden ratio is too complex for practical use, especially in modern architectural designs"
+          "text": "Floor area alone controls human scale."
         },
         {
           "id": "c",
-          "text": "The Fibonacci sequence is identical to the golden ratio; the terms are synonymous, although this is a common misconception"
+          "text": "Only wall color can make the space feel monumental."
         },
         {
           "id": "d",
-          "text": "The Fibonacci sequence is used for ornamental decoration; the golden ratio is used for structural dimensions, providing aesthetic harmony"
+          "text": "Scale is fixed by the building type and cannot change through dimensions."
         }
       ],
       "correct_option_id": "a",
@@ -605,14 +605,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Fibonacci is actually more practical than working with φ directly.",
-        "c": "Related but distinct: Fibonacci is a sequence; golden ratio is a specific proportion.",
-        "d": "Both serve structural and proportional purposes.",
-        "correct": "Fibonacci (1,1,2,3,5,8,13,21...) is a numerical sequence where consecutive ratios approach φ ≈ 1.618. This allows architects to use practical whole-number ratios (2:3, 3:5, 5:8, 8:13) approximating golden relationships without requiring irrational numbers.",
-        "takeaway": "This allows architects to use practical whole-number ratios (2:3, 3:5, 5:8, 8:13) approximating golden relationships without requiring irrational numbers."
+        "correct": "TOA 2 states that room height has greater effect on scale than width or length.",
+        "takeaway": "Human scale is read through bodily relation to height, openings, surfaces, and interior elements.",
+        "b": "Floor area is not the only scale cue.",
+        "c": "Color may affect perception but is not the only factor.",
+        "d": "Scale remains a comparative perception, not a fixed building-type label."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 states that room height has greater effect on scale than width or length. Human scale is read through bodily relation to height, openings, surfaces, and interior elements.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "design_application",
       "practice_context": [
@@ -625,30 +625,30 @@
       "model_id": "ALE-THEO-002-08-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6e673c977fb39522579c50a39ed7e36ad163452a6f346a80778cbcb9b716d743"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:71d8f4d5052014a7a71e567105e64834d16820fb7302117e9b8bce15f89926d9"
     },
     {
       "question_id": "8b7c4f08-af70-4de4-9b5a-ee807da1e1cd",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "The tatami mat in traditional Japanese architecture measures:",
+      "text": "A design uses a repeated bay dimension to coordinate columns, mats, room sizes, and ceiling heights. Which source-backed principle does this best illustrate?",
       "options": [
         {
           "id": "a",
-          "text": "1.0 meter × 2.0 meters, the modern metric equivalent, often used in contemporary adaptations"
+          "text": "A module is only a decorative motif on a facade."
         },
         {
           "id": "b",
-          "text": "3 shaku × 6 shaku (approximately 0.9m × 1.8m), regulating room dimensions in multiples of mat units"
+          "text": "A modular proportioning system can order structure, materials, and space."
         },
         {
           "id": "c",
-          "text": "1 ken × 1 ken (approximately 1.82m × 1.82m), a traditional measurement used in larger spaces"
+          "text": "A module eliminates the need to consider human scale."
         },
         {
           "id": "d",
-          "text": "Variable size depending on regional preferences, with no standardized module, allowing for flexibility in design"
+          "text": "A module is the same as visual scale at a distance."
         }
       ],
       "correct_option_id": "b",
@@ -657,14 +657,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Metric approximation is 0.9m × 1.8m, not 1.0m × 2.0m.",
-        "c": "1 ken = 6 shaku; tatami = 3 shaku × 6 shaku (half a ken in one dimension).",
-        "d": "While regional variations exist, standardization has made tatami dimensions consistent.",
-        "correct": "Tatami (traditional floor mat) = 3 shaku × 6 shaku ≈ 0.9m × 1.8m. All room dimensions are expressed in tatami counts (six-mat room, four-mat room). This is a grid spatial organization proportioning system.",
-        "takeaway": "This is a grid spatial organization proportioning system."
+        "correct": "The ken source map treats the module as an ordering device for structure, materials, and space.",
+        "takeaway": "A proportioning system is strongest when it coordinates multiple architectural decisions.",
+        "a": "The module organizes dimensions, not just surface decoration.",
+        "c": "Modules still need to be tested against human use.",
+        "d": "Visual scale is a perceptual comparison, not the module itself."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The ken source map treats the module as an ordering device for structure, materials, and space. A proportioning system is strongest when it coordinates multiple architectural decisions.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -677,30 +677,30 @@
       "model_id": "ALE-THEO-002-08-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2b72d375a2324ac4c9f297389d5ac7cc284259ecee6a12c821e1f155b67b5cfb"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:a1bcd7b42237af87d7fa41cbd31e372c6b360b6aca1416747997e57336a9aa84"
     },
     {
       "question_id": "e2ef0aee-770d-4beb-9ae8-224157eb9483",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
       "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "How do the Modulor and Japanese Ken/Tatami systems differ in their proportioning approaches?",
+      "text": "Which statement most accurately describes the Modulor in the Batch 130 source map?",
       "options": [
         {
           "id": "a",
-          "text": "They are identical systems with different names, both focusing on human-centric design principles without cultural distinctions"
+          "text": "It is only a structural code for sizing beams."
         },
         {
           "id": "b",
-          "text": "Modulor is modern; Ken/Tatami is only historical, reflecting the evolution of architectural practices over time"
+          "text": "It is a color system for choosing warm and cool palettes."
         },
         {
           "id": "c",
-          "text": "Modulor is anthropometrically based (human dimensions) with golden ratio; Ken/Tatami is culturally evolved modular system based on practical spacing and traditional standards"
+          "text": "It combines mathematical proportion with human-body dimensions to maintain human scale."
         },
         {
           "id": "d",
-          "text": "Modulor is mathematical; Ken/Tatami is purely decorative, emphasizing aesthetic appeal over functional design"
+          "text": "It rejects proportional systems and uses random room dimensions."
         }
       ],
       "correct_option_id": "c",
@@ -709,14 +709,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "They have distinct origins and bases.",
-        "b": "Both have contemporary applications.",
-        "d": "Ken/Tatami is also systematic and proportional.",
-        "correct": "Different philosophical bases: Modulor integrates human body dimensions with golden ratio mathematics (universal harmony intent). Ken/Tatami is culturally specific modular system evolved through tradition (practical, site-responsive). Both create proportional coherence; different conceptual origins.",
-        "takeaway": "Both create proportional coherence; different conceptual origins."
+        "correct": "TOA 2 describes the Modulor as based on Golden Section/Fibonacci relationships and human-body proportions.",
+        "takeaway": "Do not confuse proportioning systems with codes, colors, or arbitrary sizing.",
+        "a": "The source map presents it as a proportioning system, not a structural code.",
+        "b": "Color is treated separately from Modulor.",
+        "d": "The Modulor is explicitly a system of measurement."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 describes the Modulor as based on Golden Section/Fibonacci relationships and human-body proportions. Do not confuse proportioning systems with codes, colors, or arbitrary sizing.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 147-160; TOA 2 lines 1859-1907, 1937-1997, 2007-2132; Wiley official Ching record.",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -729,8 +729,8 @@
       "model_id": "ALE-THEO-002-08-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5981ec27c303c65e93e1e9ae9b262f2b06be942cfab2c6853b5fc137469bd6d2"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:ea51ea501ec2d33956bb272e2ac12ff98cf4632045b69435981f7ae49b369f75"
     }
   ]
 }

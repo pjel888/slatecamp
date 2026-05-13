@@ -1,30 +1,30 @@
 {
   "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:7c8b2be07dbbc514655237849e59cf501c779c8b8cab4f23a9b574167f873cf1",
+  "linked_questions_hash": "sha256:8464da677498c97cb3e39497d6e4150d97d7af5823e42ad9185c3ca6f73b5ae2",
   "question_count": 13,
   "questions": [
     {
       "question_id": "5edea809-6125-4d37-9628-fa03acf69fa9",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "How does the compression-release principle operate in promenade architecturlea?",
+      "text": "A path leads directly toward a clearly visible entrance along a straight axial route. Which approach type is most source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "All spaces should be uniformly proportioned to avoid confusing occupants, ensuring a consistent spatial experience"
+          "text": "Oblique approach."
         },
         {
           "id": "b",
-          "text": "Compression refers to HVAC systems; release refers to ventilation—unrelated to spatial experience, focusing instead on mechanical systems"
+          "text": "Spiral approach."
         },
         {
           "id": "c",
-          "text": "Narrow, low spaces compress; tall, wide spaces release, creating psychological rhythm and emotional impact through alternation"
+          "text": "Frontal approach."
         },
         {
           "id": "d",
-          "text": "Compression occurs at entrances; release occurs at exits, providing a clear transition between different spatial zones"
+          "text": "Grid path configuration only."
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +33,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Variation creates interest; uniformity creates monotony.",
-        "b": "Compression-release is a spatial and psychological principle, not mechanical systems.",
-        "d": "Compression-release can occur throughout a building's sequence, not just at entry and exit.",
-        "correct": "Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation.",
-        "takeaway": "Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation."
+        "correct": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path.",
+        "takeaway": "Approach questions usually ask how the route prepares entry.",
+        "a": "An oblique approach changes perspective rather than going straight to the entrance.",
+        "b": "A spiral approach prolongs movement around the form.",
+        "d": "A grid is a broader path configuration, not this approach type."
       },
-      "explanation": "Variation creates interest; uniformity creates monotony. Compression-release is a spatial and psychological principle, not mechanical systems. Compression-release can occur throughout a building's sequence, not just at entry and exit. Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation. Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation.",
-      "code_citation": null,
+      "explanation": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path. Approach questions usually ask how the route prepares entry.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -53,30 +53,30 @@
       "model_id": "ALE-THEO-003-03-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:06:23.513097+00:00",
-      "content_hash": "sha256:ea6a554fda32b8fd0cf5a46d632ff20886eab51a0387afca7709f560bc5722cc"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:5a892ce1859a3ed426b249ad32ae216ec85f40f9ed92ba36f89360d0edbf7a7a"
     },
     {
       "question_id": "cec7fad0-b3f7-44d8-a27b-7cae94102284",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "Why is consistency of riser and tread heights maintained within a 5 mm tolerance on a single stair flight?",
+      "text": "A visitor circles part of a building before entering, gradually seeing several sides of the form. Which approach type is being used?",
       "options": [
         {
           "id": "a",
-          "text": "To match aesthetic preferences of architects and building designers, ensuring a visually pleasing and uniform appearance"
+          "text": "Frontal approach, because every entry route is straight."
         },
         {
           "id": "b",
-          "text": "To permit the body's muscle memory to establish rhythm; inconsistency disrupts this rhythm and creates trip hazards"
+          "text": "Spiral approach, because it prolongs the sequence and emphasizes three-dimensional form."
         },
         {
           "id": "c",
-          "text": "To simplify construction and reduce building cost by minimizing material waste and labor time"
+          "text": "Static anthropometry, because the route is only body measurement."
         },
         {
           "id": "d",
-          "text": "To ensure structural integrity of the stair system, preventing potential failures due to uneven load distribution"
+          "text": "Color temperature, because the route changes mood."
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +85,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Aesthetic preference is secondary to safety.",
-        "c": "While cost is a factor, safety is the primary reason.",
-        "d": "Structural integrity is separate from step‑to‑step consistency.",
-        "correct": "Muscle memory expects identical step dimensions; variations beyond the allowable tolerance (5 mm per PD 1096) cause stumbling and falls.",
-        "takeaway": "Muscle memory expects identical step dimensions; variations beyond the allowable tolerance (5 mm per PD 1096) cause stumbling and falls."
+        "correct": "TOA 2 describes spiral approach as prolonging the approach and emphasizing three-dimensional form while moving around it.",
+        "takeaway": "Movement around a form is a key cue for spiral approach.",
+        "a": "A frontal approach is straight and direct.",
+        "c": "Anthropometry addresses body dimensions, not the path type.",
+        "d": "Color temperature is not the route configuration."
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VIII Sec. 806(b)",
+      "explanation": "TOA 2 describes spiral approach as prolonging the approach and emphasizing three-dimensional form while moving around it. Movement around a form is a key cue for spiral approach.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -105,30 +105,30 @@
       "model_id": "ALE-THEO-003-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:95fbcfbf4dc963576cc3790466d4b16b9a98a172932e068e86fd9af2b9e50ed5"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:42dcdc1ce2069b725d100a6725e6f2be13f5e2f4e56ebe612b4ee37ac49deab7"
     },
     {
       "question_id": "6ba72d02-471b-4fb2-9084-fbe3f1727be5",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "Using the 2R+T proportional rule, if a stair has a 170 mm riser, what tread depth is most comfortable?",
+      "text": "Which statement best matches the source map for path configuration?",
       "options": [
         {
           "id": "a",
-          "text": "240 mm"
+          "text": "Only spiral paths count as movement paths."
         },
         {
           "id": "b",
-          "text": "300 mm"
+          "text": "Paths are unrelated to the sequence of spaces."
         },
         {
           "id": "c",
-          "text": "270 mm"
+          "text": "All movement paths are linear in nature because they start somewhere and proceed through a sequence toward a destination."
         },
         {
           "id": "d",
-          "text": "340 mm"
+          "text": "Paths apply only to exterior roads and never to interiors."
         }
       ],
       "correct_option_id": "c",
@@ -137,14 +137,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2(170) + 240 = 580 mm, below the comfortable range.",
-        "b": "2(170) + 300 = 640 mm, at the upper limit but acceptable.",
-        "d": "2(170) + 340 = 680 mm, exceeding the comfortable range.",
-        "correct": "Using 2(170) + T = 600–630 mm: 340 + 270 = 610 mm, within the comfortable range. 270 mm is also ≥ the 250 mm minimum required by PD 1096.",
-        "takeaway": "270 mm is also ≥ the 250 mm minimum required by PD 1096."
+        "correct": "TOA 2 states that all paths of movement are linear in nature and lead through a sequence of spaces.",
+        "takeaway": "A path can be linear in movement even when configured as radial, spiral, grid, or network.",
+        "a": "Spiral is one configuration, not the only path type.",
+        "b": "Sequence is central to the source map.",
+        "d": "Interior circulation also uses paths."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 states that all paths of movement are linear in nature and lead through a sequence of spaces. A path can be linear in movement even when configured as radial, spiral, grid, or network.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +157,30 @@
       "model_id": "ALE-THEO-003-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:df88ad64f0eba47180924938a76e4fb77c5903d4d12ba7beec739cf2818f23f3"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:e4c1ff4d1c05e0dd05ac312983913680835aca6bf631140aa6e8913729da923e"
     },
     {
       "question_id": "a8392740-f3b1-4a37-a24f-9b8ce26e3d70",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "A residential corridor must accommodate single-file passage with minimal design constraints. What is the minimum required width under PD 1096?",
+      "text": "A ramp is used because the accessible route changes level. Which BP 344 detail is source-backed for the accessible ramp?",
       "options": [
         {
           "id": "a",
-          "text": "900 mm"
+          "text": "Minimum clear width of 1200 mm and gradient not steeper than 1:20, subject to the cited exceptions/special cases."
         },
         {
           "id": "b",
-          "text": "1200 mm"
+          "text": "Any width is acceptable if the path is attractive."
         },
         {
           "id": "c",
-          "text": "750 mm"
+          "text": "The ramp can replace all landings and handrails."
         },
         {
           "id": "d",
-          "text": "1500 mm"
+          "text": "Only color contrast is regulated for ramps."
         }
       ],
       "correct_option_id": "a",
@@ -189,14 +189,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "1200 mm is required for two-way traffic or corridors serving more than one dwelling unit, not for single-file passage.",
-        "c": "750 mm violates the code and creates accessibility barriers.",
-        "d": "1500 mm exceeds requirements and is not necessary for single-file movement.",
-        "correct": "PD 1096 Rule VIII Sec. 804 requires a minimum clear width of 900 mm for residential corridors; this permits single-file passage.",
-        "takeaway": "804 requires a minimum clear width of 900 mm for residential corridors; this permits single-file passage."
+        "correct": "The 2024 BP 344 source map gives the 1200 mm minimum clear width and 1:20 gradient rule for accessible ramps.",
+        "takeaway": "Code claims need exact local-source support.",
+        "b": "Aesthetic quality does not replace minimum dimensions.",
+        "c": "The source map also includes landings and handrails.",
+        "d": "Color/contrast is not the only ramp requirement."
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VIII Sec. 804",
+      "explanation": "The 2024 BP 344 source map gives the 1200 mm minimum clear width and 1:20 gradient rule for accessible ramps. Code claims need exact local-source support.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +209,30 @@
       "model_id": "ALE-THEO-003-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:609ba8a60106a0229305b89ce04735dc5e35fd02f3d5275d9bb9a3cac5265e58"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:91a34c5953ab79931cab3745239852c3ee1fe33aec395fd402edd66cf120880c"
     },
     {
       "question_id": "b93c6d68-39c7-478b-a456-45331ddf6791",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "Why do level changes of 300–600 mm between spaces create stronger territorial separation than smaller steps?",
+      "text": "A stair serving a typical building has 220 mm risers and 230 mm runs. Which PD 1096 source-backed issue is most direct?",
       "options": [
         {
           "id": "a",
-          "text": "Because large steps are easier to climb and therefore more noticeable, enhancing spatial awareness"
+          "text": "The stair is automatically correct because it has any rise and run."
         },
         {
           "id": "b",
-          "text": "Because the body must pause and consciously navigate the change, forcing acknowledgment of spatial boundary"
+          "text": "The riser exceeds 200 mm and the run is below 250 mm."
         },
         {
           "id": "c",
-          "text": "Because building codes require greater separation for safety purposes, ensuring compliance with regulations"
+          "text": "The issue is only proxemic personal distance."
         },
         {
           "id": "d",
-          "text": "Because large steps create more dramatic shadows and visual contrast, emphasizing the division"
+          "text": "The issue is only hue and chroma."
         }
       ],
       "correct_option_id": "b",
@@ -241,14 +241,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Larger steps are harder, not easier, to climb.",
-        "c": "Codes regulate accessibility, but territorial separation is psychological and experiential.",
-        "d": "Visual contrast may contribute, but the kinesthetic response is primary.",
-        "correct": "A change of 300–600 mm requires deliberate navigation; the body cannot pass without attention, creating psychological and kinesthetic acknowledgment of a boundary.",
-        "takeaway": "A change of 300–600 mm requires deliberate navigation; the body cannot pass without attention, creating psychological and kinesthetic acknowledgment of a boundary."
+        "correct": "The PD 1096 local source sets stair rise not exceeding 200 mm and run not less than 250 mm for the cited condition.",
+        "takeaway": "Movement-through-space questions can become code questions when stairs, ramps, and corridors are involved.",
+        "a": "The source gives specific limits.",
+        "c": "Personal distance does not replace stair geometry.",
+        "d": "Color vocabulary does not resolve stair safety dimensions."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The PD 1096 local source sets stair rise not exceeding 200 mm and run not less than 250 mm for the cited condition. Movement-through-space questions can become code questions when stairs, ramps, and corridors are involved.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -261,30 +261,30 @@
       "model_id": "ALE-THEO-003-03-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e6380bec6755613a8eb69bd1f81026d86632b0c8497dab58acf07d74bcbb539c"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:906edb218bc4bf7fc1377a19d631032a646abadd5a2c31ea7b10354a0691d2c4"
     },
     {
       "question_id": "ecf613bb-c5e5-4215-a724-44cc0ad976dc",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "A residential building's main circulation corridor should accommodate two-way traffic comfortably. What is the minimum width under PD 1096?",
+      "text": "A path leads directly toward a clearly visible entrance along a straight axial route. Which approach type is most source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "900 mm"
+          "text": "Oblique approach."
         },
         {
           "id": "b",
-          "text": "800 mm"
+          "text": "Spiral approach."
         },
         {
           "id": "c",
-          "text": "1500 mm"
+          "text": "Grid path configuration only."
         },
         {
           "id": "d",
-          "text": "1200 mm"
+          "text": "Frontal approach."
         }
       ],
       "correct_option_id": "d",
@@ -293,14 +293,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "900 mm accommodates single-file only; two people must synchronize.",
-        "b": "800 mm forces collision; two people cannot pass comfortably.",
-        "c": "1500 mm exceeds the requirement and may waste circulation space.",
-        "correct": "For corridors serving more than one dwelling unit or forming part of the main circulation, PD 1096 generally requires a minimum width of 1200 mm to allow two people to pass comfortably.",
-        "takeaway": "For corridors serving more than one dwelling unit or forming part of the main circulation, PD 1096 generally requires a minimum width of 1200 mm to allow two people to pass comfortably."
+        "correct": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path.",
+        "takeaway": "Approach questions usually ask how the route prepares entry.",
+        "a": "An oblique approach changes perspective rather than going straight to the entrance.",
+        "b": "A spiral approach prolongs movement around the form.",
+        "c": "A grid is a broader path configuration, not this approach type."
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VIII Sec. 804",
+      "explanation": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path. Approach questions usually ask how the route prepares entry.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +313,30 @@
       "model_id": "ALE-THEO-003-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:66095afd8764b7f1067db30e08f1792ce375c224ba61f6c739444b7e78bfaf06"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:f5568ce79e6c58713c30427e73eaddd83c1ab1b4bba47273c3eef8bd079e0e0e"
     },
     {
       "question_id": "296f935a-b602-4a1d-a3bd-a7a52576f859",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "Le Corbusier's term for the carefully choreographed sequence of spaces and experiences as one moves through a building is:",
+      "text": "A visitor circles part of a building before entering, gradually seeing several sides of the form. Which approach type is being used?",
       "options": [
         {
           "id": "a",
-          "text": "Promenade architecturale"
+          "text": "Spiral approach, because it prolongs the sequence and emphasizes three-dimensional form."
         },
         {
           "id": "b",
-          "text": "Kinesthetic rhythm, which refers to the movement and flow of spaces in a dynamic manner"
+          "text": "Frontal approach, because every entry route is straight."
         },
         {
           "id": "c",
-          "text": "Circulation sequence, emphasizing the planned path and movement through architectural spaces"
+          "text": "Static anthropometry, because the route is only body measurement."
         },
         {
           "id": "d",
-          "text": "Spatial composition, focusing on the arrangement and organization of spaces within a structure"
+          "text": "Color temperature, because the route changes mood."
         }
       ],
       "correct_option_id": "a",
@@ -345,14 +345,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Kinesthetic rhythm is a general term but not Le Corbusier's nomenclature.",
-        "c": "Circulation sequence is functional; promenade architecturale emphasizes aesthetic intent.",
-        "d": "Spatial composition is too broad and lacks the movement emphasis.",
-        "correct": "Promenade architecturale' (architectural promenade) is Le Corbusier's specific term for intentional spatial sequences experienced through movement.",
-        "takeaway": "Promenade architecturale' (architectural promenade) is Le Corbusier's specific term for intentional spatial sequences experienced through movement."
+        "correct": "TOA 2 describes spiral approach as prolonging the approach and emphasizing three-dimensional form while moving around it.",
+        "takeaway": "Movement around a form is a key cue for spiral approach.",
+        "b": "A frontal approach is straight and direct.",
+        "c": "Anthropometry addresses body dimensions, not the path type.",
+        "d": "Color temperature is not the route configuration."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 2 describes spiral approach as prolonging the approach and emphasizing three-dimensional form while moving around it. Movement around a form is a key cue for spiral approach.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +365,30 @@
       "model_id": "ALE-THEO-003-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2a3154e171bffb20e0aeb965b1e38dc34c2a2a51bfee0b7e9c5dec1c663936f6"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:0a7c1f4911df2424a176a3e581f875f255d369149575c74d8b2e52afc3ea6e6a"
     },
     {
       "question_id": "7bf7e6c9-bfc3-4159-a9ed-99acac222bbf",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "The minimum tread depth for residential stairs according to PD 1096 is:",
+      "text": "Which statement best matches the source map for path configuration?",
       "options": [
         {
           "id": "a",
-          "text": "200–220 mm"
+          "text": "Only spiral paths count as movement paths."
         },
         {
           "id": "b",
-          "text": "250–300 mm"
+          "text": "All movement paths are linear in nature because they start somewhere and proceed through a sequence toward a destination."
         },
         {
           "id": "c",
-          "text": "350–400 mm"
+          "text": "Paths are unrelated to the sequence of spaces."
         },
         {
           "id": "d",
-          "text": "150–180 mm"
+          "text": "Paths apply only to exterior roads and never to interiors."
         }
       ],
       "correct_option_id": "b",
@@ -397,14 +397,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "200–220 mm is below the minimum and creates unsafe foot positioning.",
-        "c": "350–400 mm exceeds comfortable depth and leads to disproportionately long stair runs.",
-        "d": "150–180 mm is riser height, not tread depth.",
-        "correct": "PD 1096 Rule VIII Sec. 806(b) requires a minimum tread depth of 250 mm; a comfortable tread depth is typically 250–300 mm, ensuring foot stability.",
-        "takeaway": "806(b) requires a minimum tread depth of 250 mm; a comfortable tread depth is typically 250–300 mm, ensuring foot stability."
+        "correct": "TOA 2 states that all paths of movement are linear in nature and lead through a sequence of spaces.",
+        "takeaway": "A path can be linear in movement even when configured as radial, spiral, grid, or network.",
+        "a": "Spiral is one configuration, not the only path type.",
+        "c": "Sequence is central to the source map.",
+        "d": "Interior circulation also uses paths."
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VIII Sec. 806(b)",
+      "explanation": "TOA 2 states that all paths of movement are linear in nature and lead through a sequence of spaces. A path can be linear in movement even when configured as radial, spiral, grid, or network.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +417,30 @@
       "model_id": "ALE-THEO-003-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:afcdedde559412e40a91ed8fea7235a241c528709124a83f1e07d06a00c780cb"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:60e9b6d2b3c300208c61d39880324f49cfe099a44a4a0e3b840b4b946dbdd4b2"
     },
     {
       "question_id": "430f39d3-1518-4642-9eb4-9c86b1d02d38",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "An accessible ramp must span a 1.5‑meter vertical height. According to BP 344 (2024 Revised IRR), what is the minimum horizontal length required at the maximum allowable slope?",
+      "text": "A ramp is used because the accessible route changes level. Which BP 344 detail is source-backed for the accessible ramp?",
       "options": [
         {
           "id": "a",
-          "text": "15 meters"
+          "text": "Any width is acceptable if the path is attractive."
         },
         {
           "id": "b",
-          "text": "20 meters"
+          "text": "The ramp can replace all landings and handrails."
         },
         {
           "id": "c",
-          "text": "25 meters"
+          "text": "Only color contrast is regulated for ramps."
         },
         {
           "id": "d",
-          "text": "30 meters"
+          "text": "Minimum clear width of 1200 mm and gradient not steeper than 1:20, subject to the cited exceptions/special cases."
         }
       ],
       "correct_option_id": "d",
@@ -449,14 +449,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "15 m would correspond to a 1:10 slope, which is too steep for an accessible building ramp.",
-        "b": "20 m would correspond to a 1:13.3 slope, steeper than permitted.",
-        "c": "25 m would correspond to a 1:16.7 slope, still steeper than 1:20.",
-        "correct": "BP 344 2024 Revised IRR Section 5.2.2 requires a maximum slope of 1:20 for accessible ramps in buildings. For a 1.5 m rise, the minimum horizontal run is 1.5 × 20 = 30 m.",
-        "takeaway": "For a 1.5 m rise, the minimum horizontal run is 1.5 × 20 = 30 m."
+        "correct": "The 2024 BP 344 source map gives the 1200 mm minimum clear width and 1:20 gradient rule for accessible ramps.",
+        "takeaway": "Code claims need exact local-source support.",
+        "a": "Aesthetic quality does not replace minimum dimensions.",
+        "b": "The source map also includes landings and handrails.",
+        "c": "Color/contrast is not the only ramp requirement."
       },
-      "explanation": null,
-      "code_citation": "BP 344 2024 Revised IRR Sec. 5.2.2",
+      "explanation": "The 2024 BP 344 source map gives the 1200 mm minimum clear width and 1:20 gradient rule for accessible ramps. Code claims need exact local-source support.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +469,30 @@
       "model_id": "ALE-THEO-003-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:439ef73208aba50cd150d5adc8ef11a39836c6e66503fb418ca3dcec3fc75338"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:c3b2a5226efe767caab556f8e0793486902bb54e219402e062924135a550447f"
     },
     {
       "question_id": "d7b2955b-662e-460e-ae11-96dfbe78fb13",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "The maximum accessible ramp slope for buildings according to BP 344 (2024 Revised IRR) is:",
+      "text": "A stair serving a typical building has 220 mm risers and 230 mm runs. Which PD 1096 source-backed issue is most direct?",
       "options": [
         {
           "id": "a",
-          "text": "1:8"
+          "text": "The stair is automatically correct because it has any rise and run."
         },
         {
           "id": "b",
-          "text": "1:10"
+          "text": "The issue is only proxemic personal distance."
         },
         {
           "id": "c",
-          "text": "1:15"
+          "text": "The issue is only hue and chroma."
         },
         {
           "id": "d",
-          "text": "1:20"
+          "text": "The riser exceeds 200 mm and the run is below 250 mm."
         }
       ],
       "correct_option_id": "d",
@@ -501,14 +501,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1:8 is far too steep and would be unsafe for wheelchair users.",
-        "b": "1:10 exceeds the allowable slope under Philippine accessibility law.",
-        "c": "1:15 is still steeper than 1:20 and is not compliant.",
-        "correct": "BP 344 2024 Revised IRR Section 5.2.2 mandates a maximum slope of 1:20 for accessible ramps within buildings. Slopes steeper than 1:20 are not permitted for building ramps; the 1:12 slope is only allowed for curb ramps or very short exterior ramps.",
-        "takeaway": "Slopes steeper than 1:20 are not permitted for building ramps; the 1:12 slope is only allowed for curb ramps or very short exterior ramps."
+        "correct": "The PD 1096 local source sets stair rise not exceeding 200 mm and run not less than 250 mm for the cited condition.",
+        "takeaway": "Movement-through-space questions can become code questions when stairs, ramps, and corridors are involved.",
+        "a": "The source gives specific limits.",
+        "b": "Personal distance does not replace stair geometry.",
+        "c": "Color vocabulary does not resolve stair safety dimensions."
       },
-      "explanation": null,
-      "code_citation": "BP 344 2024 Revised IRR Sec. 5.2.2",
+      "explanation": "The PD 1096 local source sets stair rise not exceeding 200 mm and run not less than 250 mm for the cited condition. Movement-through-space questions can become code questions when stairs, ramps, and corridors are involved.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -521,30 +521,30 @@
       "model_id": "ALE-THEO-003-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7ec34bcbda88a03d981ddb676abe766ac490aa596ac5651e5fda7782c7f8f55b"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:2a915c4f100a26f166586b3d5273c473c1945a57aff2c6f9ab9fe5fc63ea9120"
     },
     {
       "question_id": "ca4a8979-e465-45cc-bab6-fcd42eaf7859",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "Kinesthetics in architecture is best defined as:",
+      "text": "A path leads directly toward a clearly visible entrance along a straight axial route. Which approach type is most source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "The study of the body in motion through space, including the aesthetic and psychological experience of moving through a building"
+          "text": "Frontal approach."
         },
         {
           "id": "b",
-          "text": "The scientific measurement of standing and seated human postures, which is crucial for ergonomic design"
+          "text": "Oblique approach."
         },
         {
           "id": "c",
-          "text": "The principles governing accessible design for people with mobility disabilities, ensuring compliance with accessibility standards"
+          "text": "Spiral approach."
         },
         {
           "id": "d",
-          "text": "The analysis of how light changes as occupants move through spaces, affecting visual comfort and spatial perception"
+          "text": "Grid path configuration only."
         }
       ],
       "correct_option_id": "a",
@@ -553,14 +553,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This describes anthropometrics, not kinesthetics.",
-        "c": "This describes accessibility, related but distinct from kinesthetics.",
-        "d": "This describes dynamic light perception, not kinesthetics.",
-        "correct": "Kinesthetics studies how architecture is experienced through the body in motion—stairs, corridors, transitions—and their psychological impact.",
-        "takeaway": "Kinesthetics studies how architecture is experienced through the body in motion—stairs, corridors, transitions—and their psychological impact."
+        "correct": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path.",
+        "takeaway": "Approach questions usually ask how the route prepares entry.",
+        "b": "An oblique approach changes perspective rather than going straight to the entrance.",
+        "c": "A spiral approach prolongs movement around the form.",
+        "d": "A grid is a broader path configuration, not this approach type."
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VII (general circulation, context-specific)",
+      "explanation": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path. Approach questions usually ask how the route prepares entry.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -573,30 +573,30 @@
       "model_id": "ALE-THEO-003-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0413184a36b10dee4ebdd8443f6254d46cbd6aaa336af432e6f83775652db17a"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:951f2e88fa24d37739f9c7471d220feb8e54fe39508eb28f2ca67cb8c9c0a99e"
     },
     {
       "question_id": "8c296a4d-d7c1-453a-a3d2-457c07cab6cd",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "According to the National Building Code (PD 1096), the maximum riser height for residential stairs is:",
+      "text": "A visitor circles part of a building before entering, gradually seeing several sides of the form. Which approach type is being used?",
       "options": [
         {
           "id": "a",
-          "text": "250–280 mm"
+          "text": "Frontal approach, because every entry route is straight."
         },
         {
           "id": "b",
-          "text": "200–220 mm"
+          "text": "Spiral approach, because it prolongs the sequence and emphasizes three-dimensional form."
         },
         {
           "id": "c",
-          "text": "100–120 mm"
+          "text": "Static anthropometry, because the route is only body measurement."
         },
         {
           "id": "d",
-          "text": "150–180 mm"
+          "text": "Color temperature, because the route changes mood."
         }
       ],
       "correct_option_id": "b",
@@ -605,14 +605,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "250–280 mm exceeds the legal maximum and is also the typical tread depth range.",
-        "c": "100–120 mm is below the minimum and would cause inefficient overstriding.",
-        "d": "150–180 mm is a comfort range, but the maximum allowable under Philippine law is 200 mm.",
-        "correct": "PD 1096 Rule VIII Sec. 806(b) allows a maximum riser height of 200 mm for residential stairs and 190 mm for commercial; a range of 200–220 mm is the practical maximum, though comfort is best between 150–180 mm.",
-        "takeaway": "806(b) allows a maximum riser height of 200 mm for residential stairs and 190 mm for commercial; a range of 200–220 mm is the practical maximum, though comfort is best between 150–180 mm."
+        "correct": "TOA 2 describes spiral approach as prolonging the approach and emphasizing three-dimensional form while moving around it.",
+        "takeaway": "Movement around a form is a key cue for spiral approach.",
+        "a": "A frontal approach is straight and direct.",
+        "c": "Anthropometry addresses body dimensions, not the path type.",
+        "d": "Color temperature is not the route configuration."
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VIII Sec. 806(b)",
+      "explanation": "TOA 2 describes spiral approach as prolonging the approach and emphasizing three-dimensional form while moving around it. Movement around a form is a key cue for spiral approach.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -625,30 +625,30 @@
       "model_id": "ALE-THEO-003-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:05f1eba8db8557d2993efef3c30469f4bb6e4dbc50f2f1b556129a3a25eed556"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:10dc8a86e980e5acda381a1d9dc83cd5765b9132c0e6132cebbeefa8d5f4d491"
     },
     {
       "question_id": "cc11774e-241e-429c-aa8f-8c0d066a1d9b",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
       "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "In designing a building entrance threshold, a 15–20 mm step height signals to occupants that:",
+      "text": "Which statement best matches the source map for path configuration?",
       "options": [
         {
           "id": "a",
-          "text": "Wheelchair access is available through this entrance"
+          "text": "Only spiral paths count as movement paths."
         },
         {
           "id": "b",
-          "text": "A transition or boundary between spaces is occurring"
+          "text": "All movement paths are linear in nature because they start somewhere and proceed through a sequence toward a destination."
         },
         {
           "id": "c",
-          "text": "The building is not accessible and separate accessible entry is elsewhere"
+          "text": "Paths are unrelated to the sequence of spaces."
         },
         {
           "id": "d",
-          "text": "Construction has failed and a safety hazard exists"
+          "text": "Paths apply only to exterior roads and never to interiors."
         }
       ],
       "correct_option_id": "b",
@@ -657,14 +657,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Accessible entrances must have a level threshold (≤6 mm vertical change) or a ramp.",
-        "c": "The step signals transition, but it does not by itself indicate whether an accessible entry exists elsewhere.",
-        "d": "15–20 mm is an intentional design element, not a construction failure.",
-        "correct": "A 15–20 mm step is perceptible as a boundary. However, under BP 344, any vertical change greater than 13 mm requires a ramp or beveled treatment to be accessible.",
-        "takeaway": "However, under BP 344, any vertical change greater than 13 mm requires a ramp or beveled treatment to be accessible."
+        "correct": "TOA 2 states that all paths of movement are linear in nature and lead through a sequence of spaces.",
+        "takeaway": "A path can be linear in movement even when configured as radial, spiral, grid, or network.",
+        "a": "Spiral is one configuration, not the only path type.",
+        "c": "Sequence is central to the source map.",
+        "d": "Interior circulation also uses paths."
       },
-      "explanation": null,
-      "code_citation": "BP 344 2024 Revised IRR Sec. 5.2.5",
+      "explanation": "TOA 2 states that all paths of movement are linear in nature and lead through a sequence of spaces. A path can be linear in movement even when configured as radial, spiral, grid, or network.",
+      "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -677,8 +677,8 @@
       "model_id": "ALE-THEO-003-03-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1b8862dcfa2a050d3bdc8503dbf1c47e078ef49a2e8470362f973c41d887b3b9"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:f8dcdffb6dc69dabc09686cbe398add65592ea2619a54f49138f676c2e277aa9"
     }
   ]
 }

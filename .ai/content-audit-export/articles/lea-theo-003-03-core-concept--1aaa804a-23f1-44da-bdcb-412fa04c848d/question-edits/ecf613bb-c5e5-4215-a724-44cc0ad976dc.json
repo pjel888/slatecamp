@@ -2,77 +2,117 @@
   "question_id": "ecf613bb-c5e5-4215-a724-44cc0ad976dc",
   "baseline_hash": "sha256:66095afd8764b7f1067db30e08f1792ce375c224ba61f6c739444b7e78bfaf06",
   "action": "replace",
-  "reason": "source-audited-article-batch-058-local-first: local raw PDF backed replacement constrained to checked Batch 058 source families.",
-  "approved_by": "codex-local-first-batch-058",
-  "approved_at": "2026-05-11T20:31:00.000+08:00",
+  "reason": "source-audited-article-batch-130-local-first: local source-map rewrite aligned with refreshed article scope and checked local source hashes.",
+  "approved_by": "codex-local-first-batch-130",
+  "approved_at": "2026-05-14T04:35:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
     "parent_article_slug": "lea-theo-003-03-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288; TOA 3 Design Perception refined markdown lines 152-212 and raw PDF pages 22-26; theory refined markdown lines 11-13 and 140-142 and raw PDF page 1",
+    "source_locator": "Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191.",
     "checked_markdown_lines": [
-      "George Salvan Architectural Theories of Design refined markdown lines 3882-3888",
-      "George Salvan Architectural Theories of Design refined markdown lines 5938-5974",
-      "TOA 3 Design Perception refined markdown lines 152-212",
-      "theory refined markdown lines 11-13",
-      "theory refined markdown lines 140-142"
+      "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.source-capture.md: Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.refined.md: Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md: lines 155-160",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md: lines 885-966, 1110-1124, 1400-1429",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md: lines 40-62",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code of the Philippines (Compact).md: lines 1136-1191"
     ],
     "checked_sources": [
       {
-        "source_id": "salvan-theory-local-raw-pdf--b058-1aaa804a-01",
-        "label": "George Salvan Architectural Theories of Design - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288"
+        "source_id": "batch130-lea-theo-003-03-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.source-capture.md",
+        "sha256": "sha256:ccd2731fdeac545699674eaab7d4c1bc623962105f78837916534317168a73f7",
+        "locator": "Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191."
       },
       {
-        "source_id": "toa3-design-perception-local-raw-pdf--b058-1aaa804a-02",
-        "label": "TOA 3 Design Perception - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
-        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
-        "locator": "TOA 3 Design Perception refined markdown lines 152-212 and raw PDF pages 22-26"
+        "source_id": "batch130-lea-theo-003-03-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-003-03-core-concept-kinesthetics-circulation.refined.md",
+        "sha256": "sha256:073a7ac600d241f62153a464c86bdb382ca896f10ad240ab5435f2ab4f820205",
+        "locator": "Wiley official Ching book record; NCDA 2024 BP 344 amendments; Supreme Court E-Library PD 1096; TOA 1 refined markdown lines 155-160; TOA 2 refined markdown lines 885-966, 1110-1124, 1400-1429; BP 344 refined markdown lines 40-62; PD 1096 refined markdown lines 1136-1191."
       },
       {
-        "source_id": "theory-local-raw-pdf--b058-1aaa804a-03",
-        "label": "theory - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
-        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
-        "locator": "theory refined markdown lines 11-13 and 140-142 and raw PDF page 1"
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-1",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-2",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "lines 155-160"
+      },
+      {
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-3",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+        "sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-4",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+        "sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+        "locator": "lines 885-966, 1110-1124, 1400-1429"
+      },
+      {
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-5",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf",
+        "sha256": "sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-6",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "lines 40-62"
+      },
+      {
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-7",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code of the Philippines (Compact).pdf",
+        "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch130-lea-theo-003-03-core-concept-checked-local-source-8",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code of the Philippines (Compact).md",
+        "sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "lines 1136-1191"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 058 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 130 checked source-map scope for Architectural Kinesthetics: Movement Through Space."
   },
   "proposed": {
-    "text": "What is the safest way to answer a LEA kinesthetic-design question?",
+    "text": "A path leads directly toward a clearly visible entrance along a straight axial route. Which approach type is most source-backed?",
     "options": [
       {
         "id": "a",
-        "text": "Identify the movement sequence and explain how it supports orientation and human use."
+        "text": "Oblique approach."
       },
       {
         "id": "b",
-        "text": "Choose the option with the most unsourced dimensions."
+        "text": "Spiral approach."
       },
       {
         "id": "c",
-        "text": "Ignore the route and discuss facade style only."
+        "text": "Grid path configuration only."
       },
       {
         "id": "d",
-        "text": "Treat all circulation as leftover space."
+        "text": "Frontal approach."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Identify the movement sequence and explain how it supports orientation and human use. This answer is supported by the checked Batch 058 local raw PDF source families for Architectural Kinesthetics: Movement Through Space.",
-    "explanation": "Identify the movement sequence and explain how it supports orientation and human use. The Batch 058 source audit used local raw PDFs first and refined markdown only as locator evidence for Architectural Kinesthetics: Movement Through Space.",
-    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288"
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path.",
+      "takeaway": "Approach questions usually ask how the route prepares entry.",
+      "a": "An oblique approach changes perspective rather than going straight to the entrance.",
+      "b": "A spiral approach prolongs movement around the form.",
+      "c": "A grid is a broader path configuration, not this approach type."
+    },
+    "explanation": "TOA 2 defines frontal approach as direct movement to the entrance along a straight axial path. Approach questions usually ask how the route prepares entry.",
+    "code_citation": "Batch 130 local source map: TOA 1 lines 155-160; TOA 2 lines 885-966, 1110-1124, 1400-1429; BP 344 lines 40-62; PD 1096 lines 1136-1191."
   },
-  "batch_question_template_index": 6
+  "batch_question_template_index": 0
 }

@@ -1,131 +1,60 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-055-local-first",
-  "batch_number": 55,
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T19:38:00.000+08:00",
-  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
-  "target": {
-    "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
-    "slug": "lea-theo-002-08-core-concept",
-    "title": "Scale in Architecture by Francis D.K. Ching",
-    "article_folder": ".ai/content-audit-export/articles/lea-theo-002-08-core-concept--7872fb73-5087-4167-a5b3-e799ce11eccc",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-08-core-concept--7872fb73-5087-4167-a5b3-e799ce11eccc",
-    "candidate_path": ".ai/content-audit-export/articles/lea-theo-002-08-core-concept--7872fb73-5087-4167-a5b3-e799ce11eccc/candidate.md",
-    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-08-core-concept--7872fb73-5087-4167-a5b3-e799ce11eccc/candidate.md",
-    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-002-08-core-concept--7872fb73-5087-4167-a5b3-e799ce11eccc/question-edits",
-    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-08-core-concept--7872fb73-5087-4167-a5b3-e799ce11eccc/question-edits",
-    "normalized_sha256": "sha256:6f037b1b8083b864bced8f9bb6ca70ba3341cb5fb5dc4d7b6071a4a53a87ba43",
-    "candidate_sha256": "sha256:6f037b1b8083b864bced8f9bb6ca70ba3341cb5fb5dc4d7b6071a4a53a87ba43",
-    "linked_questions_sha256": "sha256:1242915e46b8dc44e579e18bd825bdbc81bb620e2b1fc103cbec79aecd31ab8f",
-    "sources_sha256": "sha256:3970f6b6403857e31c1b5922e614b95c7059be1be035428ea8dd944a62bf2a59"
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
-    "refined_markdown_role": "locator_only",
-    "derivative_or_search_layer_as_primary": false,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": [],
-    "source_families_checked": [
-      {
-        "label": "George Salvan Architectural Theories of Design - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 813, 9972, 10123-10148"
-      },
-      {
-        "label": "TOA 1 Intro to Theory - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
-        "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
-        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
-        "locator": "TOA 1 Intro to Theory refined markdown lines 147-151"
-      }
-    ]
-  },
-  "classification": {
-    "content_type": "theory-of-architecture",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "medium",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 14,
-    "question_edits_created": [
-      "ed974785-5e2c-494c-a9d3-a80773061542",
-      "b5e756f8-8f8b-4e6e-8435-7b5d3dc9aa55",
-      "c07c2f69-6346-4336-b842-927bffa3d876",
-      "66693173-cb91-4481-b918-1ffc555e3cf2",
-      "4d9f58b2-fba9-4087-bc74-7b734aa49007",
-      "70dbc3a4-1e80-42f5-8d49-911144987c01",
-      "683c4156-8b3f-4100-97a9-ae37ab07cb06",
-      "391c4e87-b596-41f6-a51f-69a063ed7c6e",
-      "3e90e3ba-d11b-47aa-939f-4273650b1f6e",
-      "481ba482-09ad-4d8e-8ef5-9b13e82c71e3",
-      "650e7801-2473-42ad-8cc3-d854db82298e",
-      "4935c818-7589-4f45-acdb-6407ee9cafa7",
-      "8b7c4f08-af70-4de4-9b5a-ee807da1e1cd",
-      "e2ef0aee-770d-4beb-9ae8-224157eb9483"
-    ]
-  },
-  "checked_markdown_lines": [
-    "George Salvan Architectural Theories of Design refined markdown line 813",
-    "George Salvan Architectural Theories of Design refined markdown line 9972",
-    "George Salvan Architectural Theories of Design refined markdown lines 10123-10148",
-    "TOA 1 Intro to Theory refined markdown lines 147-151"
+  "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
+  "slug": "lea-theo-002-08-core-concept",
+  "batch_id": "source-audited-article-batch-130-local-first",
+  "generated_at": "2026-05-14T04:35:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132.",
+  "source_urls": [
+    "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
   ],
-  "claims": [
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.refined.md"
+  ],
+  "checked_sources": [
     {
-      "claim_id": "lea-theo-002-08-core-concept-b055-claim-01",
-      "claim_text": "Scale in Architecture by Francis D.K. Ching in Batch 055 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 813, 9972, 10123-10148; TOA 1 Intro to Theory refined markdown lines 147-151",
-        "source_ids": [
-          "salvan-theory-local-raw-pdf--b055-7872fb73-01",
-          "toa1-intro-local-raw-pdf--b055-7872fb73-02"
-        ]
-      },
-      "audit_result": "PASS"
+      "source_id": "batch130-lea-theo-002-08-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.source-capture.md",
+      "sha256": "sha256:66d235dbb030dc90f381fa4bc3b76cf41f9cff0d1396a84df0b4ad62ba683dfe",
+      "locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132."
     },
     {
-      "claim_id": "lea-theo-002-08-core-concept-b055-claim-questions",
-      "claim_text": "Batch 055 question edits audited for lea-theo-002-08-core-concept: ed974785-5e2c-494c-a9d3-a80773061542, b5e756f8-8f8b-4e6e-8435-7b5d3dc9aa55, c07c2f69-6346-4336-b842-927bffa3d876, 66693173-cb91-4481-b918-1ffc555e3cf2, 4d9f58b2-fba9-4087-bc74-7b734aa49007, 70dbc3a4-1e80-42f5-8d49-911144987c01, 683c4156-8b3f-4100-97a9-ae37ab07cb06, 391c4e87-b596-41f6-a51f-69a063ed7c6e, 3e90e3ba-d11b-47aa-939f-4273650b1f6e, 481ba482-09ad-4d8e-8ef5-9b13e82c71e3, 650e7801-2473-42ad-8cc3-d854db82298e, 4935c818-7589-4f45-acdb-6407ee9cafa7, 8b7c4f08-af70-4de4-9b5a-ee807da1e1cd, e2ef0aee-770d-4beb-9ae8-224157eb9483",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 813, 9972, 10123-10148; TOA 1 Intro to Theory refined markdown lines 147-151",
-        "source_ids": [
-          "salvan-theory-local-raw-pdf--b055-7872fb73-01",
-          "toa1-intro-local-raw-pdf--b055-7872fb73-02"
-        ]
-      },
-      "audit_result": "PASS"
+      "source_id": "batch130-lea-theo-002-08-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-130/lea-theo-002-08-core-concept-scale-and-proportioning-systems.refined.md",
+      "sha256": "sha256:dba9c138d76de7c0d0f5d1d5dc4f650d5bb37889f4ade5f8eae07d325e442db7",
+      "locator": "Wiley official Ching book record; TOA 1 refined markdown lines 147-160; TOA 2 refined markdown lines 1859-1907, 1937-1997, 2007-2132."
+    },
+    {
+      "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-1",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+      "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-2",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+      "sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+      "locator": "lines 147-160"
+    },
+    {
+      "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-3",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "locator": "local raw source file hash checked"
+    },
+    {
+      "source_id": "batch130-lea-theo-002-08-core-concept-checked-local-source-4",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+      "locator": "lines 1859-1907, 1937-1997, 2007-2132"
     }
   ],
-  "unverified_or_rejected_claims": [],
-  "quality_protocol": {
-    "roundtrip_protocol_preserved": true,
-    "ui_blocks_owner": "ui-blocks.json",
-    "normalized_owner": "normalized.md",
-    "candidate_generation": "compose_completed",
-    "local_first_only": true,
-    "supabase_write_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  }
+  "unsupported_or_removed_claims": [
+    "Removed stale textbook-author framing from the title and replaced it with the source-backed scope: scale and proportioning systems.",
+    "Narrowed Modulor and ken claims to the checked local source-map locators instead of broad style-history claims.",
+    "Rewrote linked questions to test visual scale, human scale, and proportioning-system recognition with preserved answer keys."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario: review a school chapel by separating visual scale, human-scale entry/aisle cues, and repeated proportioning systems before naming the design logic."
 }

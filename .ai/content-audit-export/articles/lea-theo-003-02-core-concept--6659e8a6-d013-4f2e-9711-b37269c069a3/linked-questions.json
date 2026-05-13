@@ -1,30 +1,30 @@
 {
   "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:f3b52c7e193d1765fa533aa12161cbecbf36dab5503d5e07c31321f5bba17151",
+  "linked_questions_hash": "sha256:f11126bb45cbac140745bfe678fc29e2542039ecfa7c87b2c12dc003d8054a59",
   "question_count": 14,
   "questions": [
     {
       "question_id": "6c364c0b-644b-44a1-ad42-1f37ad82443a",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Comparing Western (Hall) and high-context cultural proxemic norms, which statement is accurate?",
+      "text": "A waiting area meets chair-width requirements but forces strangers to sit shoulder-to-shoulder. Which concept best explains the remaining problem?",
       "options": [
         {
           "id": "a",
-          "text": "Western cultures prefer closer personal and social distances than high-context cultures, reflecting individualistic social structures"
+          "text": "Color temperature, because seating distance is only a hue problem."
         },
         {
           "id": "b",
-          "text": "Proxemic distances have no cultural variation; they are biologically universal and consistent across all human societies"
+          "text": "The ken, because all seats must follow a Japanese bay module."
         },
         {
           "id": "c",
-          "text": "Both cultures maintain identical distance preferences across all proxemic zones, showing no significant differences"
+          "text": "Structural rhythm, because the problem is only column spacing."
         },
         {
           "id": "d",
-          "text": "High-context cultures (Latin American, Mediterranean, Middle Eastern) typically prefer closer interpersonal distances than Western cultures"
+          "text": "Proxemics, because comfortable interpersonal distance is separate from body fit."
         }
       ],
       "correct_option_id": "d",
@@ -33,14 +33,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is the opposite of documented cultural patterns",
-        "b": "Hall's fundamental finding is that proxemic distances are culturally learned, not biologically determined",
-        "c": "Hall's research specifically documents systematic cultural variation in distance preferences",
-        "correct": "Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation",
-        "takeaway": "Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation."
+        "correct": "TOA 3 defines proxemics through spatial separation in social and interpersonal situations.",
+        "takeaway": "A plan can fit bodies but still fail proxemic comfort.",
+        "a": "Color vocabulary does not explain interpersonal spacing.",
+        "b": "A specific module is not the issue here.",
+        "c": "Column rhythm does not by itself resolve personal-space comfort."
       },
-      "explanation": "This is the opposite of documented cultural patterns Hall's fundamental finding is that proxemic distances are culturally learned, not biologically determined Hall's research specifically documents systematic cultural variation in distance preferences Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation.",
-      "code_citation": null,
+      "explanation": "TOA 3 defines proxemics through spatial separation in social and interpersonal situations. A plan can fit bodies but still fail proxemic comfort.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +53,30 @@
       "model_id": "ALE-THEO-003-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T11:57:23.488659+00:00",
-      "content_hash": "sha256:426c7f3320fc6042401645b32d15fe4279928c6b28b52e53bb2d919448372f40"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:bb75ff7b737fa6b3cec77e9545ac20b0bfd696d3a1a0eadf37cfbd59995ce0fe"
     },
     {
       "question_id": "2c3d6a3f-5384-4c09-8d85-82aba9abc357",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Proxemics is best defined as:",
+      "text": "Which definition of personal space best matches the local source map?",
       "options": [
         {
           "id": "a",
-          "text": "The study of how people use and perceive space, including invisible boundaries that signal social relationship"
+          "text": "A variable and subjective comfortable talking distance between people."
         },
         {
           "id": "b",
-          "text": "The study of sound transmission and acoustic control in architectural spaces, which is crucial for designing auditoriums"
+          "text": "A fixed legal corridor width for all occupancy groups."
         },
         {
           "id": "c",
-          "text": "The principles governing visual perception and spatial organization in buildings, which are essential for effective design"
+          "text": "The physical length, width, and depth of a form."
         },
         {
           "id": "d",
-          "text": "The measurement of human body dimensions and their application to building design, which is a key aspect of ergonomics"
+          "text": "A universal color response shared by every culture."
         }
       ],
       "correct_option_id": "a",
@@ -85,14 +85,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This describes acoustic design, not proxemics",
-        "c": "This describes gestalt psychology or environmental perception, not proxemics",
-        "d": "This describes anthropometrics, not proxemics",
-        "correct": "Proxemics, developed by Edward T. Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction",
-        "takeaway": "Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction."
+        "correct": "TOA 3 defines personal space as variable and subjective comfortable talking distance.",
+        "takeaway": "Personal space is relational and variable, not only dimensional.",
+        "b": "Corridor width belongs to code and circulation, not the definition of personal space.",
+        "c": "Physical dimensions define size, not personal space.",
+        "d": "The source map does not support universal color responses."
       },
-      "explanation": "This describes acoustic design, not proxemics This describes gestalt psychology or environmental perception, not proxemics This describes anthropometrics, not proxemics Proxemics, developed by Edward T. Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction.",
-      "code_citation": null,
+      "explanation": "TOA 3 defines personal space as variable and subjective comfortable talking distance. Personal space is relational and variable, not only dimensional.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +105,30 @@
       "model_id": "ALE-THEO-003-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T11:57:22.645714+00:00",
-      "content_hash": "sha256:82061c2e1e129eb7af71e1672c0000ae77dc3339b201c5bbbeae172e9d704861"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:be1575b0f60f61e7d3ef4f207a0960d8381f4ee2a24ed7533941d372f08cd2b2"
     },
     {
       "question_id": "87430c02-b22d-46b5-9add-e2ff142db1b2",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "A reception area accommodates 20–30 visitors daily, requiring short-term seating without requiring intimate conversation. Which proxemic distance should seating prioritize?",
+      "text": "A conversation distance of about 450 mm to 1.20 m falls in which source-backed proxemic band?",
       "options": [
         {
           "id": "a",
-          "text": "Personal distance (45cm–1.2m), supporting light conversation and allowing for some personal space"
+          "text": "Intimate distance."
         },
         {
           "id": "b",
-          "text": "Intimate distance (0–45cm), maximizing occupant proximity, suitable for private interactions"
+          "text": "Social distance."
         },
         {
           "id": "c",
-          "text": "Public distance (3.7m+), creating anonymity and isolation, often used in large public gatherings"
+          "text": "Public distance only."
         },
         {
           "id": "d",
-          "text": "Social distance (1.2–3.7m), maintaining formality and minimal interaction"
+          "text": "Personal distance."
         }
       ],
       "correct_option_id": "d",
@@ -137,14 +137,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Personal distance is too close for brief reception visits without established relationship",
-        "b": "Intimate distance is inappropriate for professional reception contexts",
-        "c": "Public distance is excessive for a single reception room and creates isolation rather than purposeful formality",
-        "correct": "Reception areas require social distance (1.2–3.7m) to maintain formality, reduce cross-conversation, and support business context without intimacy",
-        "takeaway": "Reception areas require social distance (1.2–3.7m) to maintain formality, reduce cross-conversation, and support business context without intimacy."
+        "correct": "TOA 3 places personal distance at 18 inches to 4 feet, or 450 mm to 1.20 m.",
+        "takeaway": "Know the distance bands, but apply them as context-sensitive anchors.",
+        "a": "Intimate distance is 0-450 mm in the local source.",
+        "b": "Social distance begins at about 1.20 m in the local source.",
+        "c": "The local source map does not use public distance for this range."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 3 places personal distance at 18 inches to 4 feet, or 450 mm to 1.20 m. Know the distance bands, but apply them as context-sensitive anchors.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +157,30 @@
       "model_id": "ALE-THEO-003-02-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:49e46ddd9159a89fe7a998c700ed8228ae87fe23f7b98627c91d77bcc937987b"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:2e29f5d758d0c80012f7652163c37458c294370716aa3fbb18e60190db7aa5f1"
     },
     {
       "question_id": "7ca50e21-a6c5-4da3-903f-50cff510ac6a",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "A hospital is designing a private consultation room for sensitive medical interviews. Which spatial arrangement best supports the appropriate proxemic distance?",
+      "text": "Why should the proxemic distance bands not be treated as automatic answers for every room?",
       "options": [
         {
           "id": "a",
-          "text": "Seating 60–90 centimeters apart with acoustic privacy screens and visual isolation"
+          "text": "The source describes personal space as variable and tied to social, interpersonal, environmental, and cultural factors."
         },
         {
           "id": "b",
-          "text": "Seating 5 meters apart (public distance), with minimal enclosure and open sightlines"
+          "text": "Because distance bands are unrelated to architecture."
         },
         {
           "id": "c",
-          "text": "Seating 3 meters apart (social distance), open sight lines to surrounding corridors"
+          "text": "Because all users always prefer intimate distance."
         },
         {
           "id": "d",
-          "text": "Standing with 30 centimeters separation, maximizing intimacy for personal conversations"
+          "text": "Because anthropometrics replaces all social-spacing concerns."
         }
       ],
       "correct_option_id": "a",
@@ -189,14 +189,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "5 meters is public distance, entirely inappropriate for confidential medical consultations",
-        "c": "3 meters is social distance, too formal and distant for sensitive healthcare conversations",
-        "d": "30cm is intense intimate distance without privacy; inappropriate for clinical contexts",
-        "correct": "Personal-intimate distance (60–90cm) with acoustic privacy creates appropriate balance for sensitive medical conversations, combining closeness with protection",
-        "takeaway": "Personal-intimate distance (60–90cm) with acoustic privacy creates appropriate balance for sensitive medical conversations, combining closeness with protection."
+        "correct": "The source map explicitly connects proxemics to variable, subjective, environmental, and cultural factors.",
+        "takeaway": "Use bands as evidence, then test the social setting.",
+        "b": "The Hall publisher record and TOA 3 connect proxemics to architecture and social space.",
+        "c": "The source does not support one universal preference.",
+        "d": "Anthropometrics and proxemics answer different human-space questions."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The source map explicitly connects proxemics to variable, subjective, environmental, and cultural factors. Use bands as evidence, then test the social setting.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +209,30 @@
       "model_id": "ALE-THEO-003-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3bf5fee6aef40b702474658ed11440f53e175a59d30abf32e595c7f23e903c43"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:3a4485a33539662f3688598a39abeb6598addadc7cdf4760ede34a9a05422bed"
     },
     {
       "question_id": "678ebbcf-6fa4-4202-ab22-8580672d74f3",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Personal distance in Hall's proxemic theory ranges from:",
+      "text": "A studio pin-up zone gives enough aisle clearance but leaves no room for viewers to gather without blocking speakers. What is the best source-backed diagnosis?",
       "options": [
         {
           "id": "a",
-          "text": "0–45 centimeters, typically used for intimate interactions and close personal communication"
+          "text": "The design fails because all spaces must be spiral approaches."
         },
         {
           "id": "b",
-          "text": "3.7 meters and beyond, which is considered public distance and not suitable for personal interactions"
+          "text": "The design succeeds because anthropometrics is the only human-space issue."
         },
         {
           "id": "c",
-          "text": "45 centimeters – 1.2 meters"
+          "text": "The design solves movement clearance but misses proxemic gathering and conversation space."
         },
         {
           "id": "d",
-          "text": "1.2–3.7 meters, often used for social interactions and casual conversations"
+          "text": "The design is a color-value problem only."
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +241,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is intimate distance",
-        "b": "This is public distance",
-        "d": "This is social distance",
-        "correct": "Personal distance is 45cm–1.2m (18 inches–4 feet), used for friends, family conversation, and close colleagues",
-        "takeaway": "Personal distance is 45cm–1.2m (18 inches–4 feet), used for friends, family conversation, and close colleagues."
+        "correct": "Proxemics addresses spatial separation and communication, while anthropometrics addresses body fit and movement.",
+        "takeaway": "Group review spaces need both circulation clearance and interpersonal spacing.",
+        "a": "A spiral approach is only one circulation pattern.",
+        "b": "Human-space design includes more than body dimensions.",
+        "d": "Color value does not resolve gathering distance by itself."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Proxemics addresses spatial separation and communication, while anthropometrics addresses body fit and movement. Group review spaces need both circulation clearance and interpersonal spacing.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -261,30 +261,30 @@
       "model_id": "ALE-THEO-003-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9c2a8f6101e4c157073d12ac034fbc7f406474a667f2567242544de1ee9a3118"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:35ec7ad180cb08ef817688d9f1cb46154dfd577e33246b7ef3225569a93db0b2"
     },
     {
       "question_id": "f04fb0a9-bf8f-4faf-a9bd-9de9b2024cf2",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Edward T. Hall's proxemics research was based on which methodology?",
+      "text": "A waiting area meets chair-width requirements but forces strangers to sit shoulder-to-shoulder. Which concept best explains the remaining problem?",
       "options": [
         {
           "id": "a",
-          "text": "Cross-cultural anthropological fieldwork observing spatial behavior across diverse cultures including Native American, European, Middle Eastern, and East Asian populations"
+          "text": "Proxemics, because comfortable interpersonal distance is separate from body fit."
         },
         {
           "id": "b",
-          "text": "Laboratory experiments measuring controlled distance responses between pairs of subjects, focusing on the psychological impact of spatial proximity"
+          "text": "Color temperature, because seating distance is only a hue problem."
         },
         {
           "id": "c",
-          "text": "Analysis of historical building plans and room dimensions across major Western cities, aiming to correlate architectural design with social interaction patterns"
+          "text": "The ken, because all seats must follow a Japanese bay module."
         },
         {
           "id": "d",
-          "text": "Survey questionnaires distributed in American metropolitan areas measuring preferred interpersonal distances, with a focus on demographic variations"
+          "text": "Structural rhythm, because the problem is only column spacing."
         }
       ],
       "correct_option_id": "a",
@@ -293,14 +293,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Hall's methodology was naturalistic observation in real cultural contexts, not controlled laboratory experiments. His anthropological approach prioritized ecological validity over experimental control.",
-        "c": "Analysis of building plans describes architectural history methodology, not Hall's anthropological approach. Kevin Lynch's Image of the City (1960) studied how residents perceived cities like Boston, Jersey City, and Los Angeles — a common source of confusion with Hall's work.",
-        "d": "Hall relied on direct behavioral observation rather than self-reported survey data. His findings emerged from watching how people actually used space across cultures, not from asking them about preferences.",
-        "correct": "Hall's proxemic research was based on cross-cultural anthropological fieldwork spanning diverse populations. His observations of Navajo, Hopi, European, Middle Eastern, Japanese, and American spatial behaviors formed the empirical basis for The Hidden Dimension (1966). His approach was observational anthropology across cultures, not city-specific studies.",
-        "takeaway": "His approach was observational anthropology across cultures, not city-specific studies."
+        "correct": "TOA 3 defines proxemics through spatial separation in social and interpersonal situations.",
+        "takeaway": "A plan can fit bodies but still fail proxemic comfort.",
+        "b": "Color vocabulary does not explain interpersonal spacing.",
+        "c": "A specific module is not the issue here.",
+        "d": "Column rhythm does not by itself resolve personal-space comfort."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 3 defines proxemics through spatial separation in social and interpersonal situations. A plan can fit bodies but still fail proxemic comfort.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -313,30 +313,30 @@
       "model_id": "ALE-THEO-003-02-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:56a240dd513015c0e9e2065f2bb478e79976444f94c1e0e05fbe781896b83dee"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:02669c30c2076fda97d4063c59d33c6936ff0d9971c77477e7295df86fdec165"
     },
     {
       "question_id": "485fe58f-2305-4c4f-8996-83cd36ff6510",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "According to Edward T. Hall's proxemic theory, intimate distance ranges from:",
+      "text": "Which definition of personal space best matches the local source map?",
       "options": [
         {
           "id": "a",
-          "text": "45 centimeters – 1.2 meters (18 inches – 4 feet)"
+          "text": "A fixed legal corridor width for all occupancy groups."
         },
         {
           "id": "b",
-          "text": "1.2–3.7 meters (4–12 feet)"
+          "text": "The physical length, width, and depth of a form."
         },
         {
           "id": "c",
-          "text": "0–45 centimeters (0–18 inches)"
+          "text": "A variable and subjective comfortable talking distance between people."
         },
         {
           "id": "d",
-          "text": "3.7 meters and beyond (12 feet and beyond)"
+          "text": "A universal color response shared by every culture."
         }
       ],
       "correct_option_id": "c",
@@ -345,14 +345,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is personal distance (45cm–1.2m)",
-        "b": "This is social distance (1.2–3.7m)",
-        "d": "This is public distance (3.7m+)",
-        "correct": "Intimate distance is Hall's closest zone (0–45cm), reserved for lovers, close family, and trust-based relationships",
-        "takeaway": "Intimate distance is Hall's closest zone (0–45cm), reserved for lovers, close family, and trust-based relationships."
+        "correct": "TOA 3 defines personal space as variable and subjective comfortable talking distance.",
+        "takeaway": "Personal space is relational and variable, not only dimensional.",
+        "a": "Corridor width belongs to code and circulation, not the definition of personal space.",
+        "b": "Physical dimensions define size, not personal space.",
+        "d": "The source map does not support universal color responses."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 3 defines personal space as variable and subjective comfortable talking distance. Personal space is relational and variable, not only dimensional.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +365,30 @@
       "model_id": "ALE-THEO-003-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4b61f3012110c18a124a527e4e940133bc702382aeec479acb6390e591f7e584"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:cd609d373db7b5096d4c5951c8b9fd7da6f92531127f3c78ca4b4895788a0853"
     },
     {
       "question_id": "95b90c1d-979a-4ca7-a862-d2bfd7744c55",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "In a residential living room, chairs should be arranged at what distance to support comfortable conversation between family members?",
+      "text": "A conversation distance of about 450 mm to 1.20 m falls in which source-backed proxemic band?",
       "options": [
         {
           "id": "a",
-          "text": "1.5–2 meters (social distance)"
+          "text": "Intimate distance."
         },
         {
           "id": "b",
-          "text": "30–45 centimeters (intense intimate distance)"
+          "text": "Social distance."
         },
         {
           "id": "c",
-          "text": "45–120 centimeters (personal distance)"
+          "text": "Personal distance."
         },
         {
           "id": "d",
-          "text": "3–4 meters (public distance)"
+          "text": "Public distance only."
         }
       ],
       "correct_option_id": "c",
@@ -397,14 +397,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1.5–2m is social distance, too distant for comfortable conversation and family engagement",
-        "b": "30–45cm is intimate distance, too close for general family room arrangement",
-        "d": "3–4m is public distance, far too distant for residential living rooms",
-        "correct": "Personal distance (45–120cm, with closer end preferred for conversation) supports comfortable conversation without intimacy or excessive formality, maintaining proxemic comfort for family interaction",
-        "takeaway": "Personal distance (45–120cm, with closer end preferred for conversation) supports comfortable conversation without intimacy or excessive formality, maintaining proxemic comfort for family interaction."
+        "correct": "TOA 3 places personal distance at 18 inches to 4 feet, or 450 mm to 1.20 m.",
+        "takeaway": "Know the distance bands, but apply them as context-sensitive anchors.",
+        "a": "Intimate distance is 0-450 mm in the local source.",
+        "b": "Social distance begins at about 1.20 m in the local source.",
+        "d": "The local source map does not use public distance for this range."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 3 places personal distance at 18 inches to 4 feet, or 450 mm to 1.20 m. Know the distance bands, but apply them as context-sensitive anchors.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -417,30 +417,30 @@
       "model_id": "ALE-THEO-003-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:621f94b6be9bc4809467d50ce3e6e33fbdf30231165c16cfd9a856e13e40fa1e"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:9e54c5596ce51923afccc359d84ebc805a4c99b6f09ad583183fec2a20270101"
     },
     {
       "question_id": "bac6516e-a479-4fc7-b78d-0bfee91598d5",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "How do acoustic and visual privacy design elements support proxemic comfort in a restaurant with tables spaced at 1.2 meters?",
+      "text": "Why should the proxemic distance bands not be treated as automatic answers for every room?",
       "options": [
         {
           "id": "a",
-          "text": "They compensate for reduced distance by creating semi-private zones, making minimal spacing feel comfortable"
+          "text": "The source describes personal space as variable and tied to social, interpersonal, environmental, and cultural factors."
         },
         {
           "id": "b",
-          "text": "They are unnecessary; table spacing alone determines proxemic comfort, as long as the layout is consistent"
+          "text": "Because distance bands are unrelated to architecture."
         },
         {
           "id": "c",
-          "text": "They eliminate the need for any spatial separation between tables, allowing for a more open dining experience"
+          "text": "Because all users always prefer intimate distance."
         },
         {
           "id": "d",
-          "text": "They reduce acoustic isolation, making tables feel more open and public, which can enhance social interaction"
+          "text": "Because anthropometrics replaces all social-spacing concerns."
         }
       ],
       "correct_option_id": "a",
@@ -449,14 +449,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Proxemics integrates with sensory design; spacing alone is insufficient",
-        "c": "Screens and barriers enhance, not eliminate, the effect of spatial separation",
-        "d": "Privacy elements reduce noise transmission; they don't increase it",
-        "correct": "Screens, dividers, sound absorption, and visual barriers transform minimal spacing into semi-private zones, supporting proxemic comfort through sensory design",
-        "takeaway": "Screens, dividers, sound absorption, and visual barriers transform minimal spacing into semi-private zones, supporting proxemic comfort through sensory design."
+        "correct": "The source map explicitly connects proxemics to variable, subjective, environmental, and cultural factors.",
+        "takeaway": "Use bands as evidence, then test the social setting.",
+        "b": "The Hall publisher record and TOA 3 connect proxemics to architecture and social space.",
+        "c": "The source does not support one universal preference.",
+        "d": "Anthropometrics and proxemics answer different human-space questions."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The source map explicitly connects proxemics to variable, subjective, environmental, and cultural factors. Use bands as evidence, then test the social setting.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -469,30 +469,30 @@
       "model_id": "ALE-THEO-003-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:88626c36f6ee65eb7856c7c4ab0ae94cb3e4951c9070c384853ec7bee6913402"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:66595b817b173a94970ca65b92ff011b5691c8107339634f4d75b759e74914d6"
     },
     {
       "question_id": "8faeba60-9f6a-4e5a-91fa-737370ff8831",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "In designing a classroom, the distance from the teacher's position to the furthest student should be within which proxemic zone to maintain clear communication?",
+      "text": "A studio pin-up zone gives enough aisle clearance but leaves no room for viewers to gather without blocking speakers. What is the best source-backed diagnosis?",
       "options": [
         {
           "id": "a",
-          "text": "Public distance (3.7m+)"
+          "text": "The design fails because all spaces must be spiral approaches."
         },
         {
           "id": "b",
-          "text": "Social distance (1.2–3.7m)"
+          "text": "The design solves movement clearance but misses proxemic gathering and conversation space."
         },
         {
           "id": "c",
-          "text": "Personal distance (45cm–1.2m)"
+          "text": "The design succeeds because anthropometrics is the only human-space issue."
         },
         {
           "id": "d",
-          "text": "Intimate distance (0–45cm)"
+          "text": "The design is a color-value problem only."
         }
       ],
       "correct_option_id": "b",
@@ -501,14 +501,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Public distance would exceed typical classroom dimensions and prevent adequate visual and acoustic communication",
-        "c": "Personal distance would be too close and create informality unsuitable for instruction",
-        "d": "Intimate distance would be inappropriate for classroom formality and instruction",
-        "correct": "Classroom design requires social distance (1.2–3.7m) to maintain teacher authority, formality, and visual contact with all students while permitting communication",
-        "takeaway": "Classroom design requires social distance (1.2–3.7m) to maintain teacher authority, formality, and visual contact with all students while permitting communication."
+        "correct": "Proxemics addresses spatial separation and communication, while anthropometrics addresses body fit and movement.",
+        "takeaway": "Group review spaces need both circulation clearance and interpersonal spacing.",
+        "a": "A spiral approach is only one circulation pattern.",
+        "c": "Human-space design includes more than body dimensions.",
+        "d": "Color value does not resolve gathering distance by itself."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Proxemics addresses spatial separation and communication, while anthropometrics addresses body fit and movement. Group review spaces need both circulation clearance and interpersonal spacing.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,30 +521,30 @@
       "model_id": "ALE-THEO-003-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:81b66ede956f735d7dd239c1cbfa5a49f4d2769ddc5d564fa79b8a2545c2026a"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:76d9109339b51f2bed278158d1040b0f4d253dd18cff5f4d42802910b516fc02"
     },
     {
       "question_id": "0a479ae5-3d2f-4a41-aeb8-9f1755d3b425",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Social distance in Hall's proxemic theory is characterized by:",
+      "text": "A waiting area meets chair-width requirements but forces strangers to sit shoulder-to-shoulder. Which concept best explains the remaining problem?",
       "options": [
         {
           "id": "a",
-          "text": "Slightly raised voice, formal tone, reduced facial detail visibility, and formal posture—appropriate for colleagues and acquaintances"
+          "text": "Proxemics, because comfortable interpersonal distance is separate from body fit."
         },
         {
           "id": "b",
-          "text": "Close conversation, direct conversation without raised voice, permitting gesture and touch—appropriate for friends and family"
+          "text": "Color temperature, because seating distance is only a hue problem."
         },
         {
           "id": "c",
-          "text": "Raised voice, large gestures, minimal eye contact, and anonymous relationship—appropriate for large groups"
+          "text": "The ken, because all seats must follow a Japanese bay module."
         },
         {
           "id": "d",
-          "text": "Physical contact, shared breathing, and intimate space—appropriate for lovers and close family"
+          "text": "Structural rhythm, because the problem is only column spacing."
         }
       ],
       "correct_option_id": "a",
@@ -553,14 +553,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This describes personal distance characteristics",
-        "c": "This describes public distance characteristics",
-        "d": "This describes intimate distance characteristics",
-        "correct": "Social distance (1.2–3.7m) requires slightly raised voice, formal posture, and is appropriate for business and formal interactions",
-        "takeaway": "Social distance (1.2–3.7m) requires slightly raised voice, formal posture, and is appropriate for business and formal interactions."
+        "correct": "TOA 3 defines proxemics through spatial separation in social and interpersonal situations.",
+        "takeaway": "A plan can fit bodies but still fail proxemic comfort.",
+        "b": "Color vocabulary does not explain interpersonal spacing.",
+        "c": "A specific module is not the issue here.",
+        "d": "Column rhythm does not by itself resolve personal-space comfort."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 3 defines proxemics through spatial separation in social and interpersonal situations. A plan can fit bodies but still fail proxemic comfort.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -573,30 +573,30 @@
       "model_id": "ALE-THEO-003-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:37fa3d0d195fecfbf056761bbe2e9fcf7c3c02f74522bc641110d71b106b8217"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:443a8c992ca483c955cc1006a4af38b11397750528fb20c42c3657ae8b0021ea"
     },
     {
       "question_id": "42eb64fa-499b-4143-b951-5efa7a6163c5",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Given that the Philippines has a strong family-centered, high-context culture, how would you expect residential living room seating to differ from Western (Hall) standards?",
+      "text": "Which definition of personal space best matches the local source map?",
       "options": [
         {
           "id": "a",
-          "text": "Filipino families would prefer closer seating, with chairs spaced at 60–75 centimeters apart"
+          "text": "A variable and subjective comfortable talking distance between people."
         },
         {
           "id": "b",
-          "text": "There would be no difference; Western standards are universal and culture-independent"
+          "text": "A fixed legal corridor width for all occupancy groups."
         },
         {
           "id": "c",
-          "text": "Filipino families would require exclusively intimate distance seating, with no social space"
+          "text": "The physical length, width, and depth of a form."
         },
         {
           "id": "d",
-          "text": "Filipino families would prefer larger seating separation, with chairs spaced at 2–3 meters apart"
+          "text": "A universal color response shared by every culture."
         }
       ],
       "correct_option_id": "a",
@@ -605,14 +605,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Hall's research demonstrates clear cultural variation; Western standards are not universal",
-        "c": "Intimate distance is impractical for family living rooms; personal distance is culturally appropriate for closer-culture groups",
-        "d": "2–3 meters is social distance, contradicting high-context cultural preference for closeness",
-        "correct": "Filipino high-context culture would favor closer spacing within personal distance than Western norms (Hall 1966)",
-        "takeaway": "Filipino high-context culture would favor closer spacing within personal distance than Western norms (Hall 1966)."
+        "correct": "TOA 3 defines personal space as variable and subjective comfortable talking distance.",
+        "takeaway": "Personal space is relational and variable, not only dimensional.",
+        "b": "Corridor width belongs to code and circulation, not the definition of personal space.",
+        "c": "Physical dimensions define size, not personal space.",
+        "d": "The source map does not support universal color responses."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 3 defines personal space as variable and subjective comfortable talking distance. Personal space is relational and variable, not only dimensional.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -625,30 +625,30 @@
       "model_id": "ALE-THEO-003-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7340b3d9dedb66bcbd6caccf06d9e946205559ef0f289c5db45c39a5f8f04d40"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:9ccac0a1ca207497e97632fccd923e678d41b64a78d8afad40094ac085dbc998"
     },
     {
       "question_id": "8971467c-0162-447c-a33c-07b5de61517b",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Why is understanding proxemic variation critical for architects designing buildings in multicultural contexts such as Manila?",
+      "text": "A conversation distance of about 450 mm to 1.20 m falls in which source-backed proxemic band?",
       "options": [
         {
           "id": "a",
-          "text": "Proxemic standards are fixed and universal; architects must enforce Western standards regardless of occupant origin, which is a misconception as proxemics vary across cultures"
+          "text": "Intimate distance."
         },
         {
           "id": "b",
-          "text": "Only Hall's Western distance measurements are valid; other cultural norms are irrelevant, which is incorrect as cultural norms are diverse and significant"
+          "text": "Social distance."
         },
         {
           "id": "c",
-          "text": "Different occupant populations may have different spatial comfort norms, requiring design flexibility accommodating both Western and high-context cultural preferences"
+          "text": "Personal distance."
         },
         {
           "id": "d",
-          "text": "Proxemic theory is too abstract to apply to real building design; architects should ignore it, which is incorrect as proxemics are crucial in design"
+          "text": "Public distance only."
         }
       ],
       "correct_option_id": "c",
@@ -657,14 +657,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Hall's research documents cultural variation; enforcing single standards excludes non-Western populations",
-        "b": "Hall specifically documented cultural variation as his major research finding",
-        "d": "Proxemic theory directly informs building design decisions about spacing, privacy, and configuration",
-        "correct": "Multicultural populations require design flexibility—offering both private and shared spaces, varied seating distances—to accommodate diverse cultural comfort norms",
-        "takeaway": "Multicultural populations require design flexibility—offering both private and shared spaces, varied seating distances—to accommodate diverse cultural comfort norms."
+        "correct": "TOA 3 places personal distance at 18 inches to 4 feet, or 450 mm to 1.20 m.",
+        "takeaway": "Know the distance bands, but apply them as context-sensitive anchors.",
+        "a": "Intimate distance is 0-450 mm in the local source.",
+        "b": "Social distance begins at about 1.20 m in the local source.",
+        "d": "The local source map does not use public distance for this range."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "TOA 3 places personal distance at 18 inches to 4 feet, or 450 mm to 1.20 m. Know the distance bands, but apply them as context-sensitive anchors.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -677,30 +677,30 @@
       "model_id": "ALE-THEO-003-02-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6f58da4477443ac61e6aeb11a6a7df216ae58020ad9cb7b1e1e8f9e7accde515"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:23277fa070478a6a2013587c91f7989d0f67a8f586f3149637c551e7da7a9e17"
     },
     {
       "question_id": "a37ac27b-2fc6-49a2-b3f2-f80af3c7305e",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "What is the relationship between proxemic distance and building circulation design?",
+      "text": "Why should the proxemic distance bands not be treated as automatic answers for every room?",
       "options": [
         {
           "id": "a",
-          "text": "Corridor widths should accommodate the proxemic zones expected in different building uses—residential corridors different from office building circulation"
+          "text": "The source describes personal space as variable and tied to social, interpersonal, environmental, and cultural factors."
         },
         {
           "id": "b",
-          "text": "All corridors should be designed to the same width regardless of building type or occupant interaction expectations, which may not be practical"
+          "text": "Because distance bands are unrelated to architecture."
         },
         {
           "id": "c",
-          "text": "Proxemics applies only to sitting distances, not to standing circulation paths, which is a limited view"
+          "text": "Because all users always prefer intimate distance."
         },
         {
           "id": "d",
-          "text": "No relationship; circulation is based on efficient movement, independent of proxemic theory, though this overlooks user comfort"
+          "text": "Because anthropometrics replaces all social-spacing concerns."
         }
       ],
       "correct_option_id": "a",
@@ -709,14 +709,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Different building types require different proxemic contexts reflected in circulation width",
-        "c": "Proxemics applies to all human spacing, including standing movement through corridors",
-        "d": "Circulation inherently involves proxemic zones; narrow corridors force intimate/personal distance, wide corridors create social distance",
-        "correct": "Circulation design must accommodate appropriate proxemic zones—narrower widths for residential (intimate/personal contexts), wider for professional (social contexts)—reflecting expected interaction types",
-        "takeaway": "Circulation design must accommodate appropriate proxemic zones—narrower widths for residential (intimate/personal contexts), wider for professional (social contexts)—reflecting expected interaction types."
+        "correct": "The source map explicitly connects proxemics to variable, subjective, environmental, and cultural factors.",
+        "takeaway": "Use bands as evidence, then test the social setting.",
+        "b": "The Hall publisher record and TOA 3 connect proxemics to architecture and social space.",
+        "c": "The source does not support one universal preference.",
+        "d": "Anthropometrics and proxemics answer different human-space questions."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The source map explicitly connects proxemics to variable, subjective, environmental, and cultural factors. Use bands as evidence, then test the social setting.",
+      "code_citation": "Batch 130 local source map: Penguin Random House Hall record; TOA 2 lines 2041-2051; TOA 3 lines 506-558; theory lines 154-165.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -729,8 +729,8 @@
       "model_id": "ALE-THEO-003-02-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7ea970d38849290043b1378da90bfdf02c1234caad50dd6112c131eba54bbf38"
+      "updated_at": "2026-05-14T04:35:00.000+08:00",
+      "content_hash": "sha256:8402afc4e277e78c72e155ce73cf584a498d9d689dab1ea5d3f5cf6fed062270"
     }
   ]
 }
