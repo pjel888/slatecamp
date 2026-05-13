@@ -2,17 +2,17 @@
   "question_id": "afb1c9d5-6350-46d2-9bc4-72504a6bf400",
   "baseline_hash": "sha256:91ee36a0b43b2fa98f853099b1c033765e97c7e7ba7f4968811266564a367590",
   "action": "replace",
-  "reason": "source-audited-article-batch-030-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-018-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-030",
-  "approved_at": "2026-05-11T08:28:21.061+08:00",
+  "reason": "source-audited-article-batch-110-local-first refreshed this linked question to current source-safe local form for lea-prac-ctr-018-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-110",
+  "approved_at": "2026-05-13T15:24:00+08:00",
   "source_audit_support": {
     "parent_article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
     "parent_article_slug": "lea-prac-ctr-018-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "CIAP Document 102 refined markdown lines 550-568 and 911; UAP Document 301 refined markdown lines 786-790 and 1078",
+    "source_locator": "CIAP Document 102 refined markdown lines 550-570 and 911; UAP Document 301 refined markdown lines 786-790 and 1078",
     "checked_markdown_lines": [
-      "CIAP Document 102 lines 550-568",
+      "CIAP Document 102 lines 550-570",
       "CIAP Document 102 line 911",
       "UAP Document 301 lines 786-790",
       "UAP Document 301 line 1078"
@@ -22,47 +22,47 @@
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 550-568 and 911"
+        "locator": "CIAP Document 102 refined markdown lines 550-570 and 911; UAP Document 301 refined markdown lines 786-790 and 1078"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 550-568 and 911"
+        "locator": "CIAP Document 102 refined markdown lines 550-570 and 911; UAP Document 301 refined markdown lines 786-790 and 1078"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 786-790 and 1078"
+        "locator": "CIAP Document 102 refined markdown lines 550-570 and 911; UAP Document 301 refined markdown lines 786-790 and 1078"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 786-790 and 1078"
+        "locator": "CIAP Document 102 refined markdown lines 550-570 and 911; UAP Document 301 refined markdown lines 786-790 and 1078"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "refreshed article-linked question to Batch 110 source-safe local form with current citation, answer key, rationale, and scenario alignment"
   },
   "proposed": {
-    "text": "By when must the contractor receive the punch list under CIAP Document 102?",
+    "text": "What additions may the owner make to the punch list under CIAP Document 102?",
     "options": [
       {
         "id": "a",
-        "text": "Not later than thirty days from substantial completion"
+        "text": "Corrective work on items in the original punch list"
       },
       {
         "id": "b",
-        "text": "Before bid opening"
+        "text": "Any new owner preference regardless of timing"
       },
       {
         "id": "c",
-        "text": "Only after final payment"
+        "text": "A new building use classification"
       },
       {
         "id": "d",
-        "text": "Within fifteen years"
+        "text": "The architect's fee proposal"
       }
     ],
     "correct_option_id": "a",
@@ -70,18 +70,18 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Correct because it follows CIAP Document 102 line 550. The other options change the timing, party, document, amount, or legal effect stated in the checked local source.",
-    "explanation": "Use CIAP Document 102 line 550 for this Batch 030 source-safe replacement.",
-    "code_citation": "CIAP Document 102 line 550",
+    "rationale": "Additions are limited to corrective work on original punch-list items.",
+    "explanation": "Use CIAP Document 102 refined markdown lines 550-570 and 911; UAP Document 301 refined markdown lines 786-790 and 1078 for this Batch 110 source-safe refresh.",
+    "code_citation": "CIAP Document 102 line 552",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited-article-batch-030-local-first"
+      "source-audited-article-batch-110-local-first"
     ],
-    "difficulty": 0.48,
+    "difficulty": 0.55,
     "is_assessment": false,
-    "model_id": "BATCH-030-lea-prac-ctr-018-core-concept-003"
+    "model_id": "BATCH-110-lea-prac-ctr-018-core-concept-003"
   }
 }

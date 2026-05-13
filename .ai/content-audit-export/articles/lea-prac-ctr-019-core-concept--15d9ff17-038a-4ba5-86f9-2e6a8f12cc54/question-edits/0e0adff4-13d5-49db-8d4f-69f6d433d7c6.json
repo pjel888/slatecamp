@@ -2,9 +2,9 @@
   "question_id": "0e0adff4-13d5-49db-8d4f-69f6d433d7c6",
   "baseline_hash": "sha256:3dc3976cf19cf0c11fe8ac23ad0c8397790dd2c74457ef527533a6cf54475f18",
   "action": "replace",
-  "reason": "source-audited-article-batch-026-local-first rewrote this linked question to source-safe form against local raw PDF evidence for The Certificate of Occupancy.",
-  "approved_by": "codex-local-source-audit-batch-026",
-  "approved_at": "2026-05-11T20:30:00.000+08:00",
+  "reason": "source-audited-article-batch-110-local-first refreshed this linked question to current source-safe local form for lea-prac-ctr-019-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-110",
+  "approved_at": "2026-05-13T15:24:00+08:00",
   "source_audit_support": {
     "parent_article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
     "parent_article_slug": "lea-prac-ctr-019-core-concept",
@@ -17,65 +17,57 @@
     ],
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-2004-section-309-local",
-        "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
-        "authority": "Department of Public Works and Highways / National Building Code of the Philippines IRR",
-        "source_type": "building_code_pdf",
-        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "checked_markdown_lines": [
-          "PD 1096 RIRR lines 858-862",
-          "PD 1096 RIRR lines 906-923"
-        ],
-        "use": "Certificate of Occupancy, Certificate of Completion, logbook, as-built documents, FSIC, Building Official issuance, and partial occupancy.",
-        "local_source_checked": true
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "source_id": "pd-1096-2004-rirr-certificate-of-occupancy-local",
+        "locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_id": "pd-1096-2004-rirr-certificate-of-occupancy-local",
+        "locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923"
       }
     ],
-    "local_source_safe_action": "Replaced prior wording with a source-audited question, answer key, citation, and explanation."
+    "local_source_safe_action": "refreshed article-linked question to Batch 110 source-safe local form with current citation, answer key, rationale, and scenario alignment"
   },
   "proposed": {
-    "text": "Which fire-safety document must be issued before the Building Official issues the Certificate of Occupancy?",
+    "text": "Who signs and seals completion documents when full-time inspection and supervision were undertaken?",
     "options": [
       {
         "id": "a",
-        "text": "Fire evacuation drawing signed by the owner"
+        "text": "The owner's duly licensed architect or civil engineer who undertook full-time inspection and supervision"
       },
       {
         "id": "b",
-        "text": "Fire Safety Inspection Certificate"
+        "text": "Any contractor employee without license"
       },
       {
         "id": "c",
-        "text": "Fire insurance policy"
+        "text": "Only the surety"
       },
       {
         "id": "d",
-        "text": "Barangay fire-safety affidavit"
+        "text": "Only the zoning officer"
       }
     ],
-    "correct_option_id": "b",
+    "correct_option_id": "a",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": {
-      "a": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "b": "Correct.",
-      "c": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "d": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "correct": "Section 309 states that no Certificate of Occupancy shall be issued unless the Fire Safety Inspection Certificate is issued.",
-      "takeaway": "Section 309 states that no Certificate of Occupancy shall be issued unless the Fire Safety Inspection Certificate is issued."
-    },
-    "explanation": "Section 309 states that no Certificate of Occupancy shall be issued unless the Fire Safety Inspection Certificate is issued.",
-    "code_citation": "PD 1096 2004 Revised IRR, Rule III Section 309",
-    "bloom_level": "remember",
-    "application_context": "code_interpretation",
-    "practice_context": [],
-    "difficulty": 0.35,
+    "rationale": "The checked source requires the supervising licensed architect or civil engineer to sign and seal.",
+    "explanation": "Use PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923 for this Batch 110 source-safe refresh.",
+    "code_citation": "PD 1096 RIRR line 916",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-110-local-first"
+    ],
+    "difficulty": 0.62,
     "is_assessment": false,
-    "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-005"
+    "model_id": "BATCH-110-lea-prac-ctr-019-core-concept-005"
   }
 }

@@ -2,9 +2,9 @@
   "question_id": "08f01615-ad4e-4e4c-8ab0-51df28aa7a05",
   "baseline_hash": "sha256:3a20db729a8323aee07e30fe9c01a5a47d6c8ebf6760064fbec551330cb5293d",
   "action": "replace",
-  "reason": "source-audited-article-batch-030-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-017-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-030",
-  "approved_at": "2026-05-11T08:28:21.061+08:00",
+  "reason": "source-audited-article-batch-110-local-first refreshed this linked question to current source-safe local form for lea-prac-ctr-017-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-110",
+  "approved_at": "2026-05-13T15:24:00+08:00",
   "source_audit_support": {
     "parent_article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
     "parent_article_slug": "lea-prac-ctr-017-core-concept",
@@ -22,31 +22,31 @@
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 538-566 and 623-627"
+        "locator": "CIAP Document 102 refined markdown lines 538-566 and 623-627; UAP Document 301 refined markdown lines 786-790 and 811"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 538-566 and 623-627"
+        "locator": "CIAP Document 102 refined markdown lines 538-566 and 623-627; UAP Document 301 refined markdown lines 786-790 and 811"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 786-790 and 811"
+        "locator": "CIAP Document 102 refined markdown lines 538-566 and 623-627; UAP Document 301 refined markdown lines 786-790 and 811"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 786-790 and 811"
+        "locator": "CIAP Document 102 refined markdown lines 538-566 and 623-627; UAP Document 301 refined markdown lines 786-790 and 811"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "refreshed article-linked question to Batch 110 source-safe local form with current citation, answer key, rationale, and scenario alignment"
   },
   "proposed": {
-    "text": "Besides the percentage threshold, what must be true for substantial completion under CIAP Document 102?",
+    "text": "What must also be true under the CIAP substantial-completion test?",
     "options": [
       {
         "id": "a",
@@ -54,15 +54,15 @@
       },
       {
         "id": "b",
-        "text": "The contractor must have no subcontractors"
+        "text": "The contractor must have no punch-list items at all"
       },
       {
         "id": "c",
-        "text": "The owner must waive all defects forever"
+        "text": "The building permit must be newly issued"
       },
       {
         "id": "d",
-        "text": "The bid documents must be reissued"
+        "text": "The architect's fee must be fully paid"
       }
     ],
     "correct_option_id": "a",
@@ -70,18 +70,18 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Correct because it follows CIAP Document 102 line 541. The other options change the timing, party, document, amount, or legal effect stated in the checked local source.",
-    "explanation": "Use CIAP Document 102 line 541 for this Batch 030 source-safe replacement.",
+    "rationale": "Substantial completion depends on usability, not only percentage.",
+    "explanation": "Use CIAP Document 102 refined markdown lines 538-566 and 623-627; UAP Document 301 refined markdown lines 786-790 and 811 for this Batch 110 source-safe refresh.",
     "code_citation": "CIAP Document 102 line 541",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited-article-batch-030-local-first"
+      "source-audited-article-batch-110-local-first"
     ],
-    "difficulty": 0.43,
+    "difficulty": 0.52,
     "is_assessment": false,
-    "model_id": "BATCH-030-lea-prac-ctr-017-core-concept-002"
+    "model_id": "BATCH-110-lea-prac-ctr-017-core-concept-002"
   }
 }

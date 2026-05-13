@@ -1,30 +1,288 @@
 {
-  "batch_id": "source-audited-article-batch-030-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T08:28:21.061+08:00",
-  "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
-  "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
-  "title": "Retention Money Standard Rates Purpose and Release Conditions",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
+  "artifact_type": "source_audit_evidence",
+  "schema_version": "source-audited-local-first-v2",
+  "batch_id": "source-audited-article-batch-110-local-first",
+  "audit_mode": "local_raw_pdf_primary_with_refined_markdown_line_locators",
+  "audit_date": "2026-05-13T15:24:00+08:00",
+  "audited_at": "2026-05-13T15:24:00+08:00",
+  "target": {
+    "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
+    "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
+    "title": "Retention Money Standard Rates Purpose and Release Conditions",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254/candidate.md",
+    "candidate_sha256": "sha256:2f38fa6fa64f5a1ac1bd56bcaa06d9a2a5ef65af31afeb8dbb07f911a1b3d6d7",
+    "normalized_sha256": "sha256:2f38fa6fa64f5a1ac1bd56bcaa06d9a2a5ef65af31afeb8dbb07f911a1b3d6d7",
+    "linked_questions_sha256": "sha256:2cc0c68a0cd68623d0c2fd05b2954b04bf639c51f4ac987d024c61a504a80498",
+    "sources_sha256": "sha256:828493f56a8a6c4fa9f716f5acebcb09ce98a802d4c155bbb31a46107f9a9a9d"
+  },
   "classification": {
-    "legal_or_code_content": true,
+    "contains_legal_or_code_claims": true,
     "requires_raw_pdf_audit": true,
-    "local_first_only": true
+    "content_domain": "Philippine architecture professional practice",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "raw_pdf_gate": {
     "status": "PASS",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 2,
     "all_legal_code_claims_have_pdf_locator": true,
     "all_section_numbers_verified_against_raw_pdf": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
   },
+  "checked_sources": [
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15"
+    },
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "label": "UAP Document 301 - General Conditions",
+      "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3"
+    }
+  ],
+  "raw_sources": [
+    {
+      "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "checked_markdown_lines": [
+        "CIAP Document 102 line 193",
+        "CIAP Document 102 line 634",
+        "CIAP Document 102 line 681",
+        "CIAP Document 102 line 848",
+        "CIAP Document 102 line 905",
+        "UAP Document 301 line 816",
+        "UAP Document 301 line 878",
+        "UAP Document 301 line 1007",
+        "UAP Document 301 line 1072"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "checked_markdown_lines": [
+        "CIAP Document 102 line 193",
+        "CIAP Document 102 line 634",
+        "CIAP Document 102 line 681",
+        "CIAP Document 102 line 848",
+        "CIAP Document 102 line 905",
+        "UAP Document 301 line 816",
+        "UAP Document 301 line 878",
+        "UAP Document 301 line 1007",
+        "UAP Document 301 line 1072"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "historical_reaudit_overlap": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "prior_local_first_batch_id": "source-audited-article-batch-030-local-first for CTR-015",
+    "current_serial_accepted_batches_checked": "087-109",
+    "duplicate_in_current_serial_accepted_batches": false
+  },
+  "scenario": {
+    "status": "eligible-added",
+    "claim_text": "A contractor asks for full retention release after the owner starts using the building, but unpaid supplier claims remain and the guarantee bond has not been posted. The source-safe answer is to keep the request tied to the governing contract: CIAP Document 102 connects release of retention to the Period of Making Good of Known Defects, posting of the guarantee bond, and lien protection. Early occupancy or substantial completion does not by itself erase those close-out conditions.",
+    "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072"
+  },
+  "source_decisions": [
+    "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions refreshed in Batch 110 with source-safe local source-family boundaries and linked question edits."
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:article:batch-110",
+      "claim_text": "Retention Money Standard Rates Purpose and Release Conditions was refreshed in Batch 110 with source-safe local professional-practice boundaries.",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 article refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:scenario:batch-110",
+      "claim_text": "A contractor asks for full retention release after the owner starts using the building, but unpaid supplier claims remain and the guarantee bond has not been posted. The source-safe answer is to keep the request tied to the governing contract: CIAP Document 102 connects release of retention to the Period of Making Good of Known Defects, posting of the guarantee bond, and lien protection. Early occupancy or substantial completion does not by itself erase those close-out conditions.",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 Real World Scenario."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:001:batch-110",
+      "question_id": "e86621e9-a1b5-4220-9a4b-9c97af8a165b",
+      "claim_text": "Retention under CIAP Document 102 is deducted from what?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:002:batch-110",
+      "question_id": "e614319c-5318-4297-8a17-46f4adf244a8",
+      "claim_text": "Under the checked CIAP and UAP progress-payment language, what retention percentage is used unless the contract says otherwise?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:003:batch-110",
+      "question_id": "0d635def-b57b-4259-a862-07e8c26943ec",
+      "claim_text": "When does the checked source stop further retention on later progress billings?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:004:batch-110",
+      "question_id": "b4cd6732-ed16-4c23-8917-21d96ad66f8e",
+      "claim_text": "Which statement is source-safe about final payment under CIAP Document 102?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:005:batch-110",
+      "question_id": "4b862b03-7a93-4886-aedb-bf4097dde4d6",
+      "claim_text": "What condition is tied to retention release in CIAP Document 102?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:006:batch-110",
+      "question_id": "b785cc8e-66da-47e9-96f0-b334b8c2fee9",
+      "claim_text": "Which unpaid-claim issue can block final payment or retention release under CIAP Document 102?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:007:batch-110",
+      "question_id": "e71b2c7e-b47f-40da-bf31-5ba625e350fd",
+      "claim_text": "What does the CIAP time-limit table say about retention release?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:008:batch-110",
+      "question_id": "9a4e13b8-4062-4d41-b3af-1d2bfcce0556",
+      "claim_text": "How should a question handle the CIAP and UAP release rules?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:009:batch-110",
+      "question_id": "b743bdab-88b6-4299-8356-595aba3a576e",
+      "claim_text": "A contractor requests full retention release while supplier lien releases are missing. What is the source-safe response?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions:question:010:batch-110",
+      "question_id": "e4035947-d642-46ea-9a7e-930e4b7d8f46",
+      "claim_text": "Under UAP Document 301, when is retained money released?",
+      "support": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
+      }
+    }
+  ],
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
@@ -37,254 +295,5 @@
     "warnings": [
       "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
     ]
-  },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
-        "source_type": "construction_contract_pdf",
-        "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 814, 848 and 905",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "checked_markdown_lines": [
-          "CIAP Document 102 line 193",
-          "CIAP Document 102 line 634",
-          "CIAP Document 102 line 681",
-          "CIAP Document 102 line 814",
-          "CIAP Document 102 line 848",
-          "CIAP Document 102 line 905"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "uap-document-301-general-conditions-local",
-        "label": "UAP Document 301 - General Conditions",
-        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
-        "source_type": "professional_practice_contract_pdf",
-        "source_locator": "UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "checked_markdown_lines": [
-          "UAP Document 301 line 816",
-          "UAP Document 301 line 878",
-          "UAP Document 301 line 1007",
-          "UAP Document 301 line 1072"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 814, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
-    "checked_markdown_lines": [
-      "CIAP Document 102 line 193",
-      "CIAP Document 102 line 634",
-      "CIAP Document 102 line 681",
-      "CIAP Document 102 line 814",
-      "CIAP Document 102 line 848",
-      "CIAP Document 102 line 905",
-      "UAP Document 301 line 816",
-      "UAP Document 301 line 878",
-      "UAP Document 301 line 1007",
-      "UAP Document 301 line 1072"
-    ]
-  },
-  "claims": [
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-001",
-      "claim_text": "Question e86621e9-a1b5-4220-9a4b-9c97af8a165b / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-001 rewritten to source-safe local form.",
-      "question_id": "e86621e9-a1b5-4220-9a4b-9c97af8a165b",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 634",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-002",
-      "claim_text": "Question e614319c-5318-4297-8a17-46f4adf244a8 / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-002 rewritten to source-safe local form.",
-      "question_id": "e614319c-5318-4297-8a17-46f4adf244a8",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 634",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-003",
-      "claim_text": "Question 0d635def-b57b-4259-a862-07e8c26943ec / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-003 rewritten to source-safe local form.",
-      "question_id": "0d635def-b57b-4259-a862-07e8c26943ec",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 634",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-004",
-      "claim_text": "Question b4cd6732-ed16-4c23-8917-21d96ad66f8e / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-004 rewritten to source-safe local form.",
-      "question_id": "b4cd6732-ed16-4c23-8917-21d96ad66f8e",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 681",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-005",
-      "claim_text": "Question 4b862b03-7a93-4886-aedb-bf4097dde4d6 / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-005 rewritten to source-safe local form.",
-      "question_id": "4b862b03-7a93-4886-aedb-bf4097dde4d6",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 lines 681 and 814",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-006",
-      "claim_text": "Question b785cc8e-66da-47e9-96f0-b334b8c2fee9 / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-006 rewritten to source-safe local form.",
-      "question_id": "b785cc8e-66da-47e9-96f0-b334b8c2fee9",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 193",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-007",
-      "claim_text": "Question e71b2c7e-b47f-40da-bf31-5ba625e350fd / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-007 rewritten to source-safe local form.",
-      "question_id": "e71b2c7e-b47f-40da-bf31-5ba625e350fd",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 848",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-008",
-      "claim_text": "Question 9a4e13b8-4062-4d41-b3af-1d2bfcce0556 / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-008 rewritten to source-safe local form.",
-      "question_id": "9a4e13b8-4062-4d41-b3af-1d2bfcce0556",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 line 681; UAP Document 301 line 878",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-009",
-      "claim_text": "Question b743bdab-88b6-4299-8356-595aba3a576e / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-009 rewritten to source-safe local form.",
-      "question_id": "b743bdab-88b6-4299-8356-595aba3a576e",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "UAP Document 301 line 816",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-question-010",
-      "claim_text": "Question e4035947-d642-46ea-9a7e-930e4b7d8f46 / model BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-010 rewritten to source-safe local form.",
-      "question_id": "e4035947-d642-46ea-9a7e-930e4b7d8f46",
-      "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "ciap-document-102-private-construction-contract-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "source_locator": "CIAP Document 102 lines 634, 681 and 848",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    }
-  ]
+  }
 }

@@ -1,271 +1,266 @@
 {
-  "batch_id": "source-audited-article-batch-026-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T20:30:00.000+08:00",
-  "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
-  "slug": "lea-prac-ctr-019-core-concept",
-  "title": "The Certificate of Occupancy",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
-  "classification": {
-    "content_domain": "building_code",
-    "requires_raw_pdf_audit": true,
-    "legal_or_code_source": true
-  },
+  "artifact_type": "source_audit_evidence",
+  "schema_version": "source-audited-local-first-v2",
+  "batch_id": "source-audited-article-batch-110-local-first",
+  "audit_mode": "local_raw_pdf_primary_with_refined_markdown_line_locators",
+  "audit_date": "2026-05-13T15:24:00+08:00",
+  "audited_at": "2026-05-13T15:24:00+08:00",
   "target": {
     "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
     "slug": "lea-prac-ctr-019-core-concept",
-    "normalized_sha256": "sha256:3fbcc90a00858d88ae3509ad69e2c4771b220969cad5dfbcd138768b43452378",
-    "candidate_sha256": "sha256:3fbcc90a00858d88ae3509ad69e2c4771b220969cad5dfbcd138768b43452378"
+    "title": "The Certificate of Occupancy",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/candidate.md",
+    "candidate_sha256": "sha256:e1f5b1a5eb9b07c330b2ef4aa7c834d9cf77014a5c93f7246bc96223a92b02e2",
+    "normalized_sha256": "sha256:e1f5b1a5eb9b07c330b2ef4aa7c834d9cf77014a5c93f7246bc96223a92b02e2",
+    "linked_questions_sha256": "sha256:677f0076fec0fbe2a0b777ab7b3cca2bb73062d5764708f52e8d717d7d3cd718",
+    "sources_sha256": "sha256:207ddcd35f1c59ec257399de2b9654b27cfef46a0e7e15db53b17e836eecbbcc"
   },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "content_domain": "Philippine architecture professional practice",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "raw_pdf_gate": {
     "status": "PASS",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 1,
     "all_legal_code_claims_have_pdf_locator": true,
     "all_section_numbers_verified_against_raw_pdf": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
   },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "pd1096-rirr-2004-section-309-local",
-        "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
-        "authority": "Department of Public Works and Highways / National Building Code of the Philippines IRR",
-        "source_type": "building_code_pdf",
-        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "checked_markdown_lines": [
-          "PD 1096 RIRR lines 858-862",
-          "PD 1096 RIRR lines 906-923"
-        ],
-        "use": "Certificate of Occupancy, Certificate of Completion, logbook, as-built documents, FSIC, Building Official issuance, and partial occupancy.",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-    "checked_markdown_lines": [
-      "PD 1096 RIRR lines 858-862",
-      "PD 1096 RIRR lines 906-923"
-    ]
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-2004-rirr-certificate-of-occupancy-local",
+      "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
+      "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
+    }
+  ],
+  "raw_sources": [
+    {
+      "authority": "Department of Public Works and Highways / National Building Code of the Philippines IRR",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR lines 858-862",
+        "PD 1096 RIRR lines 906-923"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "historical_reaudit_overlap": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "prior_local_first_batch_id": "source-audited-article-batch-026-local-first for CTR-019",
+    "current_serial_accepted_batches_checked": "087-109",
+    "duplicate_in_current_serial_accepted_batches": false
   },
-  "article_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
-    "placeholders_removed": true,
-    "internal_notes_removed": true,
-    "source_gap_notes_removed": true,
-    "unsupported_claims_rewritten_or_removed": true,
-    "candidate_md_composed": true,
-    "diff_report_generated": true
+  "scenario": {
+    "status": "eligible-added",
+    "claim_text": "An owner wants to occupy an independently usable tower wing after substantial completion, while another wing remains under construction. The source-safe answer is to use the PD 1096 partial Certificate of Occupancy path only if the major independent portion can be used without hazard to occupants, adjacent building residents, or the public; architect certification or owner acceptance alone is not enough.",
+    "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923"
   },
+  "source_decisions": [
+    "lea-prac-ctr-019-core-concept refreshed in Batch 110 with source-safe local source-family boundaries and linked question edits."
+  ],
   "claims": [
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-001",
-      "claim_text": "Question 1aa545e5-78a5-4a02-a9fa-5dddeeb9461f / model BATCH-026-lea-prac-ctr-019-core-concept-001 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:article:batch-110",
+      "claim_text": "The Certificate of Occupancy was refreshed in Batch 110 with source-safe local professional-practice boundaries.",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 article refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-019-core-concept:scenario:batch-110",
+      "claim_text": "An owner wants to occupy an independently usable tower wing after substantial completion, while another wing remains under construction. The source-safe answer is to use the PD 1096 partial Certificate of Occupancy path only if the major independent portion can be used without hazard to occupants, adjacent building residents, or the public; architect certification or owner acceptance alone is not enough.",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 Real World Scenario."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-019-core-concept:question:001:batch-110",
       "question_id": "1aa545e5-78a5-4a02-a9fa-5dddeeb9461f",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "Who issues the Certificate of Occupancy under the checked PD 1096 IRR source?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-002",
-      "claim_text": "Question b3a498f5-b299-4efa-90df-93ccc5ade750 / model BATCH-026-lea-prac-ctr-019-core-concept-002 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:002:batch-110",
       "question_id": "b3a498f5-b299-4efa-90df-93ccc5ade750",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "What is the basic legal effect before a Certificate of Occupancy is issued?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-003",
-      "claim_text": "Question 3f77b2cd-3809-46af-a773-eb1a34733dc4 / model BATCH-026-lea-prac-ctr-019-core-concept-003 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:003:batch-110",
       "question_id": "3f77b2cd-3809-46af-a773-eb1a34733dc4",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "Which document is submitted with the Certificate of Occupancy application?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-004",
-      "claim_text": "Question 0b9b0dce-2c69-4871-855f-521fbff96210 / model BATCH-026-lea-prac-ctr-019-core-concept-004 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:004:batch-110",
       "question_id": "0b9b0dce-2c69-4871-855f-521fbff96210",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "What site record is submitted to the Building Official upon completion?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-005",
-      "claim_text": "Question 0e0adff4-13d5-49db-8d4f-69f6d433d7c6 / model BATCH-026-lea-prac-ctr-019-core-concept-005 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:005:batch-110",
       "question_id": "0e0adff4-13d5-49db-8d4f-69f6d433d7c6",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "Who signs and seals completion documents when full-time inspection and supervision were undertaken?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-006",
-      "claim_text": "Question 667a3387-0240-44fe-8e51-953e32b98a8b / model BATCH-026-lea-prac-ctr-019-core-concept-006 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:006:batch-110",
       "question_id": "667a3387-0240-44fe-8e51-953e32b98a8b",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "What does the OBO do before issuance?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-007",
-      "claim_text": "Question 8b50cf47-2a97-405c-9f03-4c367d5f1eda / model BATCH-026-lea-prac-ctr-019-core-concept-007 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:007:batch-110",
       "question_id": "8b50cf47-2a97-405c-9f03-4c367d5f1eda",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "What fire-safety step appears in the checked Certificate of Occupancy process?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-008",
-      "claim_text": "Question ae3493cb-2dfe-4e41-8247-ee2e77a55e4d / model BATCH-026-lea-prac-ctr-019-core-concept-008 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:008:batch-110",
       "question_id": "ae3493cb-2dfe-4e41-8247-ee2e77a55e4d",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "When does the Building Official issue the Certificate of Occupancy in the checked sequence?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-009",
-      "claim_text": "Question c1eebcfc-f5dd-4ed7-82cd-c696bdf6389a / model BATCH-026-lea-prac-ctr-019-core-concept-009 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:009:batch-110",
       "question_id": "c1eebcfc-f5dd-4ed7-82cd-c696bdf6389a",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "When may a partial Certificate of Occupancy be issued?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     },
     {
-      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-010",
-      "claim_text": "Question b07620ce-a43c-474c-95ed-fe1dde743e57 / model BATCH-026-lea-prac-ctr-019-core-concept-010 rewritten to local source-safe form.",
+      "claim_id": "lea-prac-ctr-019-core-concept:question:010:batch-110",
       "question_id": "b07620ce-a43c-474c-95ed-fe1dde743e57",
-      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "pd1096-rirr-2004-section-309-local"
-      ],
+      "claim_text": "Which statement is safest for LEA questions?",
+      "support": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+      "status": "verified_local_raw_pdf",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 110 source-safe question refresh."
       }
     }
   ],
-  "local_validation": {
-    "compose": "PASS",
-    "diff": "PASS",
-    "validate": "PASS",
-    "scoped_checks": "PASS",
-    "tests": "PASS - bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts: 34 pass, 0 fail"
-  },
-  "remaining_local_blockers": [],
-  "unsupported_or_removed_claims": [
-    "Removed or rewrote stale UI placeholders, internal notes, unverified numeric fee claims, and source claims not supported by the checked local raw PDFs."
-  ]
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "blockers": [],
+    "warnings": [
+      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
+    ]
+  }
 }

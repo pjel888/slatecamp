@@ -1,0 +1,233 @@
+{
+  "batch_id": "source-audited-article-batch-110-local-first",
+  "batch_number": "110",
+  "generated_at": "2026-05-13T15:42:08+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "775019ad09660ebb5691d29e61f8b73b285e2916",
+  "previous_accepted_batch_commit": "a8ef5730b",
+  "selected_articles": [
+    {
+      "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
+      "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "slug": "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "slug": "lea-prac-ctr-017-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "slug": "lea-prac-ctr-018-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "slug": "lea-prac-ctr-019-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 1,
+      "scenario_status": "eligible-added"
+    }
+  ],
+  "checks": {
+    "compose_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0,
+      "note": "rerun with article UUID filters after an initial folder-name selector mismatch processed 0 candidates"
+    },
+    "diff_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0
+    },
+    "validate_bundles_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0,
+      "blockers": 0,
+      "warnings": [
+        "component-usage warnings only"
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 109,
+      "selected_folder_json_files": 106,
+      "artifact_json_files": 3,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "matches": [],
+      "scan_scope": "normalized.md, candidate.md, question-edits JSON, and source-audit-evidence.json for selected Batch 110 article folders",
+      "note": "compose-report.json and diff-report.json contain schema fields with zero values; those are not content marker hits."
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "references_checked": 258,
+      "unique_source_artifacts_checked": 6,
+      "failures": []
+    },
+    "linked_question_question_edit_count": {
+      "status": "pass",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "remaining_selected_compose_errors": []
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-109",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <Batch 110 scoped paths>"
+    },
+    "cached_git_diff_check": {
+      "status": "pass",
+      "command": "GIT_INDEX_FILE=/tmp/batch110.index.* GIT_OBJECT_DIRECTORY=/tmp/batch110-objects.* GIT_ALTERNATE_OBJECT_DIRECTORIES=$PWD/.git/objects git diff --cached --check",
+      "note": "Real repository index writes are sandbox-blocked; cached diff was verified using a temporary index and temporary object database containing only Batch 110 intended paths."
+    }
+  },
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "overall": "pass_local_first_git_blocked",
+  "git_commit_push_state": {
+    "status": "blocked_real_git_index_write",
+    "expected_commit_message": "chore(content): accept source-audited batch 110",
+    "commit_created": false,
+    "push_performed": false,
+    "temporary_index_cached_diff_check": "pass",
+    "blocker": "real git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  },
+  "articles": [
+    {
+      "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
+      "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
+      "title": "Retention Money Standard Rates Purpose and Release Conditions",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth comparison of retention-release timing, lien-release wording, and project-specific bond forms if newer local proforma sources are acquired; Batch 110 uses CIAP Document 102 and UAP Document 301 only."
+      ]
+    },
+    {
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "slug": "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process",
+      "title": "Change Orders Types Authority Limits and the Documentation Process",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve current change-order form, approval-matrix, and notice-template comparisons as source-needed final-depth work; Batch 110 does not invent authority limits beyond checked UAP/CIAP text."
+      ]
+    },
+    {
+      "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "slug": "lea-prac-ctr-017-core-concept",
+      "title": "Substantial Completion",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth comparison of CIAP 95% substantial completion and UAP 98% substantial completion contexts, including certificate wording if current local forms are acquired."
+      ]
+    },
+    {
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "slug": "lea-prac-ctr-018-core-concept",
+      "title": "Punch list",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve punch-list notice/form workflow details as final-depth source-needed work; Batch 110 keeps owner preference changes separate from source-supported corrective punch-list work."
+      ]
+    },
+    {
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "slug": "lea-prac-ctr-019-core-concept",
+      "title": "The Certificate of Occupancy",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "status": "pass_validated_local_first",
+      "sources": 1,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve current local OBO application-form and fire-safety process details for final-depth remediation; Batch 110 states only PD 1096 RIRR completion-document, inspection, fee, fire-safety, and partial-occupancy boundaries."
+      ]
+    }
+  ],
+  "source_decisions": [
+    "CTR-015 ties retention to CIAP Document 102 progress-payment withholding, no further retention after 50% accomplishment, and release after the period for making good known defects plus guarantee/lien controls; UAP Document 301 release timing is kept as a separate UAP-contract boundary.",
+    "CTR-016 separates change-order triggers, written owner authority, architect-limited authority, emergency work, and 15-day extra-cost notice requirements without adding unsupported approval limits.",
+    "CTR-017 keeps CIAP substantial completion at 95% with normal-use capability and stops liquidated damages after substantial completion, while preserving UAP 98% wording as a separate source context.",
+    "CTR-018 limits punch-list additions to corrective work on original listed items within the CIAP timing controls and treats owner preference changes as additional work rather than defects.",
+    "CTR-019 anchors Certificate of Occupancy to the Building Official/OBO process, required completion documents, final inspection, fees, fire-safety step with the RIRR conditional-issuance nuance, and partial CoO for independent hazard-free portions."
+  ],
+  "final_depth_findings_preserved": [
+    "Preserve final-depth comparison of retention-release timing, lien-release wording, and project-specific bond forms if newer local proforma sources are acquired; Batch 110 uses CIAP Document 102 and UAP Document 301 only.",
+    "Preserve current change-order form, approval-matrix, and notice-template comparisons as source-needed final-depth work; Batch 110 does not invent authority limits beyond checked UAP/CIAP text.",
+    "Preserve final-depth comparison of CIAP 95% substantial completion and UAP 98% substantial completion contexts, including certificate wording if current local forms are acquired.",
+    "Preserve punch-list notice/form workflow details as final-depth source-needed work; Batch 110 keeps owner preference changes separate from source-supported corrective punch-list work.",
+    "Preserve current local OBO application-form and fire-safety process details for final-depth remediation; Batch 110 states only PD 1096 RIRR completion-document, inspection, fee, fire-safety, and partial-occupancy boundaries."
+  ]
+}

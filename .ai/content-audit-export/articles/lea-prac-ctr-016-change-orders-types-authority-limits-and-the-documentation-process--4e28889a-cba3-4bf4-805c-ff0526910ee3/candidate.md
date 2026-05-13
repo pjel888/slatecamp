@@ -1,51 +1,48 @@
-## Board Exam Quick Check
-
-In a change-order question, first ask what is changing: work scope, contract sum, completion time, payment entitlement, or documented extra cost. Then ask who has authority to approve the financial or time effect. The architect can evaluate, interpret, certify, and administer the contract, but owner financial commitments must be grounded in the contract and documented.
+# Change Orders: Types, Authority Limits, and Documentation
 
 ## Learning Goal
 
-After reading this article, you should be able to:
+After studying this article, you should be able to:
 
 - Recognize when a source-backed change order is needed.
-- Identify the 15-day notice rule for extra-cost claims in the checked sources.
-- Distinguish a claim or request from an approved change order.
-- Apply the architect's payment-request role without giving the architect unlimited owner authority.
+- Identify the checked 15-day written-notice path for extra-cost claims.
+- Distinguish a contractor claim from an approved change order.
+- Keep the architect's contract-administration role inside the authority granted by the contract documents.
 
 ## What a Change Order Does
 
-CIAP Document 102 defines a change order as a written order to the contractor that covers a change in the work and can adjust contract price or completion time. The source also links change orders to emergency work, quantity or scope increases, subsurface-condition changes, acceptance of nonconforming work with price reduction, and owner-requested acceleration where the owner benefits or causes delay.
+In the checked CIAP source, change orders are not casual site instructions. A change order is the written contract mechanism used when the work, contract price, or completion time must be adjusted because of changed conditions, owner-directed changes, emergency work, accepted nonconforming work, or other contract-recognized changes.
 
-UAP Document 301 also connects change orders with cost consequences. Its revisions state that if the contractor is compelled to suspend work due to listed hardships or difficulties, reasonable shutdown, delay, and startup costs are added to the contract sum by appropriate change order.
+CIAP Document 102 treats emergency work performed to prevent loss of life, work, or adjoining property as work under a change order unless the emergency was caused by the contractor's fault or negligence. It also states that increased quantities or increased contractor scope resulting from field adjustments must be covered by a change order.
 
-## Claims Are Not Automatically Approved Change Orders
+## Claims Are Not Automatically Approved
 
-The checked sources support a documentation sequence. A contractor who claims extra cost from an owner instruction, post-bid drawings or specifications, or owner-caused delay must give written notice within the source-stated time limit. UAP Document 301's time-limit table states the notice is given to the architect within 15 days after receipt of an instruction involving extra cost or after recognition of delay due to the owner's fault. CIAP Document 102 similarly states a 15-day written notice path for extra-cost claims.
+A claim starts the documentation path; it does not itself approve the money or time adjustment. Under CIAP Document 102, when a contractor claims that an owner instruction, post-bid drawing, post-bid specification, or owner-caused delay involves extra cost, the contractor gives written notice within fifteen days after receiving the instruction or recognizing the delay.
 
-The exam distinction is simple: a claim or notice starts the documentation path; an approved change order records the agreed or authorized adjustment.
+The CIAP time-limit table summarizes the same source rule: extra-cost notice is given within fifteen days after receipt of an instruction involving extra cost or after recognition of delay due to the owner's fault.
 
-## Architect's Role and Limits
+## Architect's Role and Limit
 
-The architect can interpret contract documents, evaluate work, certify payment, withhold a payment request with written reasons, and certify the amount the architect can represent to the owner when the contractor and architect cannot agree on a revised amount. UAP Document 301 states the architect acts on a payment request within 15 days after receipt.
+UAP Document 301 gives the architect an important contract-administration role. The architect decides claims and matters relating to execution, progress, and interpretation within the contract, acts within a reasonable time, and has authority only to the extent expressly provided in the contract documents or otherwise in writing.
 
-Those powers do not make the architect the unlimited source of owner funding. If a change affects contract sum or time, keep the documentation tied to contract authority, written notice, owner approval where needed, and an appropriate change order.
+That source boundary matters in LEA questions. The architect can evaluate, interpret, certify, and administer. The architect should not be treated as having unlimited authority to spend the owner's money or approve time extensions outside the contract's written authority path.
 
-## Practical Documentation Chain
+## Common Change-Order Triggers
 
-A source-safe change-order workflow is:
+Source-safe triggers in this article include:
 
-1. Identify the changed condition, instruction, work, or delay.
-2. Give written notice or request within the contract time limit when the source requires it.
-3. Let the architect evaluate the contract basis, amount, work quality, or payment request.
-4. Obtain required owner authorization for financial or time commitments.
-5. Record the approved adjustment in a written change order.
+- Emergency work that falls under the change-order treatment stated in CIAP Document 102.
+- Increased or decreased quantities or scope that require contract-price or completion-time adjustment.
+- Materially different subsurface conditions requiring additional or different work.
+- Owner-ordered extra work or changes within the general scope of the contract.
+- Accepted nonconforming work, where a change order reflects a price reduction when appropriate.
 
-## How It Is Tested
+## Real World Scenario
 
-Expect questions about extra-cost notice, payment-request action, emergency work, nonconforming work accepted with price reduction, owner-requested acceleration, suspension costs, and the difference between architect certification and owner approval.
+During excavation, the contractor encounters materially different subsurface conditions and starts extra work without a timely notice trail. The source-safe answer is not to treat the field condition alone as an approved price increase. CIAP Document 102 requires the changed condition and extra-cost claim to move through written notice, owner investigation or instruction, and a change order when additional or different work is required.
 
-## Common Mistakes
+## Exam Boundary
 
-- Treating a contractor's request as an approved change order.
-- Missing the 15-day written-notice path for extra-cost claims.
-- Letting the architect approve owner-funded scope increases without contract authority.
-- Forgetting that acceptance of nonconforming work may require a change order reflecting a price reduction.
+When the question asks about change orders, identify first whether it is asking about scope, cost, time, emergency work, accepted nonconforming work, or notice. Then separate the architect's evaluation role from the owner's financial authorization and the written change-order record.
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

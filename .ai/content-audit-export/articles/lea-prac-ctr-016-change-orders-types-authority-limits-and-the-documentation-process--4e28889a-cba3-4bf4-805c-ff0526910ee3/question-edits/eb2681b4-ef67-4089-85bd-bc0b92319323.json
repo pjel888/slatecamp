@@ -2,76 +2,71 @@
   "question_id": "eb2681b4-ef67-4089-85bd-bc0b92319323",
   "baseline_hash": "sha256:f4614d8c1e364a52e4717af990e611939a9057e1c0322e6e1c22e7db6c4c9852",
   "action": "replace",
-  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process.",
-  "approved_by": "codex-local-source-audit-batch-022",
-  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "reason": "source-audited-article-batch-110-local-first refreshed this linked question to current source-safe local form for lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process.",
+  "approved_by": "codex-local-source-audit-batch-110",
+  "approved_at": "2026-05-13T15:24:00+08:00",
   "source_audit_support": {
     "parent_article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
     "parent_article_slug": "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080; CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903",
+    "source_locator": "UAP Document 301 refined markdown lines 1019-1051 and 1068-1071; CIAP Document 102 refined markdown lines 468, 497, 507, 522-524, 573, and 899-903",
     "checked_markdown_lines": [
-      "UAP Document 301 lines 41-71",
-      "UAP Document 301 lines 482-520",
       "UAP Document 301 lines 1019-1051",
-      "UAP Document 301 lines 1062-1080",
-      "CIAP 102 line 21",
-      "CIAP 102 line 287",
-      "CIAP 102 line 468",
-      "CIAP 102 line 497",
-      "CIAP 102 line 507",
-      "CIAP 102 line 522",
-      "CIAP 102 line 573",
-      "CIAP 102 line 598",
-      "CIAP 102 lines 899-903"
+      "UAP Document 301 lines 1068-1071",
+      "CIAP Document 102 line 468",
+      "CIAP Document 102 line 497",
+      "CIAP Document 102 line 507",
+      "CIAP Document 102 lines 522-524",
+      "CIAP Document 102 line 573",
+      "CIAP Document 102 lines 899-903"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+        "locator": "UAP Document 301 refined markdown lines 1019-1051 and 1068-1071; CIAP Document 102 refined markdown lines 468, 497, 507, 522-524, 573, and 899-903"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+        "locator": "UAP Document 301 refined markdown lines 1019-1051 and 1068-1071; CIAP Document 102 refined markdown lines 468, 497, 507, 522-524, 573, and 899-903"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "source_id": "ciap-document-102-change-orders-claims-local",
-        "locator": "CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903"
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "UAP Document 301 refined markdown lines 1019-1051 and 1068-1071; CIAP Document 102 refined markdown lines 468, 497, 507, 522-524, 573, and 899-903"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "source_id": "ciap-document-102-change-orders-claims-local",
-        "locator": "CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903"
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "UAP Document 301 refined markdown lines 1019-1051 and 1068-1071; CIAP Document 102 refined markdown lines 468, 497, 507, 522-524, 573, and 899-903"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "refreshed article-linked question to Batch 110 source-safe local form with current citation, answer key, rationale, and scenario alignment"
   },
   "proposed": {
-    "text": "Which CIAP 102 situation is source-backed as requiring a change order?",
+    "text": "If the owner accepts defective or nonconforming work instead of requiring correction, what does CIAP Document 102 require where appropriate?",
     "options": [
       {
         "id": "a",
-        "text": "Additional or different work required because of subsurface conditions"
+        "text": "A change order reflecting a price reduction"
       },
       {
         "id": "b",
-        "text": "A contractor’s preference for a different font"
+        "text": "Automatic full payment with no adjustment"
       },
       {
         "id": "c",
-        "text": "A client’s unrelated marketing slogan"
+        "text": "A new architectural license"
       },
       {
         "id": "d",
-        "text": "The architect’s CPD attendance"
+        "text": "A fire safety inspection certificate"
       }
     ],
     "correct_option_id": "a",
@@ -79,17 +74,18 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "CIAP 102 states that additional or different work due to subsurface conditions requires a change order.",
-    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
-    "code_citation": "CIAP 102 line 507",
-    "bloom_level": "remember",
+    "rationale": "The source uses a change order to reflect a reduction in contract price where appropriate.",
+    "explanation": "Use UAP Document 301 refined markdown lines 1019-1051 and 1068-1071; CIAP Document 102 refined markdown lines 468, 497, 507, 522-524, 573, and 899-903 for this Batch 110 source-safe refresh.",
+    "code_citation": "CIAP Document 102 line 573",
+    "bloom_level": "apply",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 022"
+      "contracts",
+      "source-audited-article-batch-110-local-first"
     ],
-    "difficulty": 0.5,
+    "difficulty": 0.72,
     "is_assessment": false,
-    "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-008"
+    "model_id": "BATCH-110-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-008"
   }
 }

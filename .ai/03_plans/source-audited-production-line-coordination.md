@@ -1,10 +1,47 @@
+# Batch 110 Source-Audited Production-Line Coordination Update
+
+Updated: 2026-05-13T15:42:08+08:00
+
+## Status
+
+- Batch 110: local-first validated; real git stage/commit/push blocked by `.git/index.lock` write denial in this sandbox.
+- Branch: 3dlab-gray-viewport-bg
+- Start baseline: 775019ad0
+- Batch 109 acceptance: committed and pushed at a8ef5730b; earlier Batch 109 sandbox blocker text is superseded.
+- Selected articles: 5
+- Linked question edits: 50
+- Forbidden external actions: none performed.
+
+## Batch 110 Gate Summary
+
+- Compose/diff/validate strict 5/5: pass
+- UI-block edit validation: pass
+- Scoped JSON parse: pass; 109 files (106 selected-folder + 3 batch artifact JSON)
+- Placeholder/internal-note/source-gap scan: pass; learner-facing hits=0
+- Source hash checks: pass; 6 unique artifacts / 258 references
+- Linked-question/question-edit count checks: pass
+- Stale compose-error scan: pass
+- Targeted content-audit tests: pass; 34 pass, 0 fail, 328 expects
+- Scoped git diff --check: pass
+- Cached diff check: pass using a temporary index/object database; real index staging blocked
+
+## Coordination Notes
+
+- Batch 110 includes both article improvements and linked question edits for every selected article.
+- Historical local-first overlap from Batches 022/026/030 is recorded as non-current accepted overlap.
+- Source decisions preserve the checked CIAP/UAP/PD 1096 boundaries for retention, change orders, substantial completion, punch lists, and Certificate of Occupancy.
+- Git gate blocker: real `git add` failed on `.git/index.lock`; temporary-index cached diff passed, but final current worktree still requires normal staging/commit outside this sandbox.
+- Next production-line target after Batch 110 commit/push outside this blocked sandbox: Batch 111, continuing after CTR-019 unless live artifacts show a later accepted batch.
+
+---
+
 # Batch 109 Source-Audited Production-Line Coordination Update
 
 Updated: 2026-05-13T14:52:37.126+08:00
 
 ## Status
 
-- Batch 109: local-first validated; real git stage/commit/push blocked in this sandbox.
+- Batch 109: accepted, committed, and pushed at a8ef5730b; earlier sandbox blocker text is superseded by live git history.
 - Branch: 3dlab-gray-viewport-bg
 - Start baseline: bfa0931a3
 - Batch 108 acceptance: committed and pushed at bfa0931a3.
@@ -23,14 +60,14 @@ Updated: 2026-05-13T14:52:37.126+08:00
 - Stale compose-error scan: pass
 - Targeted content-audit tests: pass; 34 pass, 0 fail, 328 expects
 - Scoped git diff --check: pass
-- Cached diff check: pass using a temporary index/object database; real index staging blocked
+- Cached diff check: pass during original local-first validation; final real commit/push later accepted at a8ef5730b
 
 ## Coordination Notes
 
 - Batch 109 includes both article improvements and linked question edits for every selected article.
 - Historical local-first overlap from Batches 029/030 is recorded as non-current accepted overlap.
-- Git gate blocker: real `git add` failed on `.git/index.lock`; temporary-index cached diff passed, but final current worktree still requires normal staging/commit outside this sandbox. Push failed because `github.com` could not be resolved.
-- Next production-line target after Batch 109 commit/push outside this blocked sandbox: Batch 110, continuing CTR sequence at CTR-015.
+- Earlier sandbox git blocker language is superseded by the accepted Batch 109 commit/push at a8ef5730b.
+- Next production-line target after Batch 110 commit/push outside this blocked sandbox: Batch 111, continuing after CTR-019 unless live artifacts show a later accepted batch.
 
 ---
 

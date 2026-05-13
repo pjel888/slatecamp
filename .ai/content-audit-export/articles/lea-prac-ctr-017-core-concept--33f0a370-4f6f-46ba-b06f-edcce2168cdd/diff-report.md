@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-017-core-concept
 
-Generated: 2026-05-11T00:28:50.272Z
+Generated: 2026-05-13T07:30:04.341Z
 Article ID: 33f0a370-4f6f-46ba-b06f-edcce2168cdd
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:247bbf1a96fa55e0b48d09e6cc7966f9aaa0dad735479e5e1fabb2853054bf9d`
-- Normalized: `sha256:228bd242968b8f5eaed08902bb7c044cf7ef917e768fbb7ce57e21c6f44dec85`
-- Candidate: `sha256:228bd242968b8f5eaed08902bb7c044cf7ef917e768fbb7ce57e21c6f44dec85`
+- Normalized: `sha256:25bc44d03d8117e6ff1d4d0f0cd029629b510ee6d9f9ffbbbcf03419484ddd7d`
+- Candidate: `sha256:25bc44d03d8117e6ff1d4d0f0cd029629b510ee6d9f9ffbbbcf03419484ddd7d`
 
 ## Line summary
 
-- Changed lines: 111
+- Changed lines: 110
 - Inserted lines: 0
-- Deleted lines: 107
+- Deleted lines: 74
 
 ## UI block preservation
 

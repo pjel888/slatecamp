@@ -2,9 +2,9 @@
   "question_id": "1aa545e5-78a5-4a02-a9fa-5dddeeb9461f",
   "baseline_hash": "sha256:b6ed956108e50874d4350c6d1198729b72537c554c5359823affd783951309ce",
   "action": "replace",
-  "reason": "source-audited-article-batch-026-local-first rewrote this linked question to source-safe form against local raw PDF evidence for The Certificate of Occupancy.",
-  "approved_by": "codex-local-source-audit-batch-026",
-  "approved_at": "2026-05-11T20:30:00.000+08:00",
+  "reason": "source-audited-article-batch-110-local-first refreshed this linked question to current source-safe local form for lea-prac-ctr-019-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-110",
+  "approved_at": "2026-05-13T15:24:00+08:00",
   "source_audit_support": {
     "parent_article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
     "parent_article_slug": "lea-prac-ctr-019-core-concept",
@@ -17,65 +17,57 @@
     ],
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-2004-section-309-local",
-        "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
-        "authority": "Department of Public Works and Highways / National Building Code of the Philippines IRR",
-        "source_type": "building_code_pdf",
-        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "checked_markdown_lines": [
-          "PD 1096 RIRR lines 858-862",
-          "PD 1096 RIRR lines 906-923"
-        ],
-        "use": "Certificate of Occupancy, Certificate of Completion, logbook, as-built documents, FSIC, Building Official issuance, and partial occupancy.",
-        "local_source_checked": true
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "source_id": "pd-1096-2004-rirr-certificate-of-occupancy-local",
+        "locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_id": "pd-1096-2004-rirr-certificate-of-occupancy-local",
+        "locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923"
       }
     ],
-    "local_source_safe_action": "Replaced prior wording with a source-audited question, answer key, citation, and explanation."
+    "local_source_safe_action": "refreshed article-linked question to Batch 110 source-safe local form with current citation, answer key, rationale, and scenario alignment"
   },
   "proposed": {
-    "text": "Under the 2004 Revised IRR of PD 1096, which official issues the Certificate of Occupancy after the required process is completed?",
+    "text": "Who issues the Certificate of Occupancy under the checked PD 1096 IRR source?",
     "options": [
       {
         "id": "a",
-        "text": "The architect who signed and sealed the plans"
-      },
-      {
-        "id": "b",
-        "text": "The contractor after turnover"
-      },
-      {
-        "id": "c",
         "text": "The Building Official"
       },
       {
+        "id": "b",
+        "text": "The contractor alone"
+      },
+      {
+        "id": "c",
+        "text": "The architect alone"
+      },
+      {
         "id": "d",
-        "text": "The project owner or permittee"
+        "text": "The surety company"
       }
     ],
-    "correct_option_id": "c",
+    "correct_option_id": "a",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": {
-      "a": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "b": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "c": "Correct.",
-      "d": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "correct": "The Certificate of Occupancy is issued by the Building Official, not by the architect, contractor, or owner.",
-      "takeaway": "The Certificate of Occupancy is issued by the Building Official, not by the architect, contractor, or owner."
-    },
-    "explanation": "The Certificate of Occupancy is issued by the Building Official, not by the architect, contractor, or owner.",
-    "code_citation": "PD 1096 2004 Revised IRR, Rule III Section 309",
+    "rationale": "The Certificate of Occupancy is issued by the Building Official through the OBO process.",
+    "explanation": "Use PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923 for this Batch 110 source-safe refresh.",
+    "code_citation": "PD 1096 RIRR lines 862 and 914-919",
     "bloom_level": "remember",
-    "application_context": "code_interpretation",
-    "practice_context": [],
-    "difficulty": 0.3,
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-110-local-first"
+    ],
+    "difficulty": 0.48,
     "is_assessment": false,
-    "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-001"
+    "model_id": "BATCH-110-lea-prac-ctr-019-core-concept-001"
   }
 }

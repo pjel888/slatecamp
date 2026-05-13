@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process
 
-Generated: 2026-05-10T17:58:07.946Z
+Generated: 2026-05-13T07:30:04.169Z
 Article ID: 4e28889a-cba3-4bf4-805c-ff0526910ee3
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:3185fe3d6496627bca11f0d85a9c7906551a88d5e1cb6c9e07d8f10627ec4eee`
-- Normalized: `sha256:a9f5d3e5f4d95a28e557c1e75be185eaf033fa12adecdfa7f5f617fbe8a8c562`
-- Candidate: `sha256:a9f5d3e5f4d95a28e557c1e75be185eaf033fa12adecdfa7f5f617fbe8a8c562`
+- Normalized: `sha256:2a6e99fa8e2a16d07867536d3f98c2f884a2d8540fa25fefe65d20bd6a7054aa`
+- Candidate: `sha256:2a6e99fa8e2a16d07867536d3f98c2f884a2d8540fa25fefe65d20bd6a7054aa`
 
 ## Line summary
 
-- Changed lines: 87
+- Changed lines: 88
 - Inserted lines: 0
-- Deleted lines: 42
+- Deleted lines: 45
 
 ## UI block preservation
 
