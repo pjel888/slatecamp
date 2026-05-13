@@ -20,3 +20,9 @@ Use quasi-delict for negligence damage that does not fall into the Article 1723 
 ## Exam Guardrails
 
 No contract privity is required for quasi-delict. Quasi-delict requires negligence, not perfection. The four-year period is counted from the day the action may be brought. When the question gives a collapse caused by a defect mentioned in Article 1723, check Article 1723 and Article 2192 before choosing a general negligence answer.
+
+### Real World Scenario: Choosing Article 1723 or quasi-delict
+
+A neighboring owner claims damage from negligent design coordination, but the building did not collapse. Do not force the facts into Article 1723 just because an architect is involved. Article 2176 covers fault or negligence causing damage when there is no pre-existing contractual relation; Article 1723 is the special collapse rule for a building that falls within fifteen years because of defective plans/specifications, defective ground, construction defects, inferior materials, or contract violations. Article 2192 then routes third-party damage caused by Article 1723 construction defects back to that Article 1723 period.
+
+Source: Civil Code Articles 1723, 2176, 2192, and 2194; local raw PDF checked with refined markdown anchors around lines 5146 and 6639-6683.

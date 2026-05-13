@@ -1,11 +1,80 @@
 {
   "question_id": "4e2ee935-b8af-4e4f-8874-8f5d6434da82",
   "baseline_hash": "sha256:35810107bc26a66134145fd73cb1875297fa6da3a71ed9d401cc6e12fb88023b",
-  "reason": "Batch 005 local source audit aligned Certificate of Registration, Oath, and Professional Identification Card linked question ALE-PRAC-LAW-009-009 to verified RA 9266 IRR raw-source claims.",
-  "approved_by": "codex-local-source-audit-batch-005",
-  "approved_at": "2026-05-10T21:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+    "parent_article_slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "How does the requirement for oath-taking and regular PIC renewal work together to maintain the integrity of the architectural profession?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are unrelated administrative procedures with no professional significance, serving merely as bureaucratic formalities without impact on professional conduct"
+      },
+      {
+        "id": "b",
+        "text": "Oath commits architects to ethics; renewal verifies they maintain standing and compliance with professional standards"
+      },
+      {
+        "id": "c",
+        "text": "Both are voluntary measures that architects may choose to follow, with no mandatory enforcement or penalties for non-compliance"
+      },
+      {
+        "id": "d",
+        "text": "They serve only to generate revenue for the PRC, without any direct influence on the professional standards or ethical practices of architects"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Dismisses safeguards as merely administrative; oath and renewal together enforce professional responsibility and accountability.",
+      "c": "Contradicts legal structure; both oath and renewal are mandatory for practice authority, not voluntary options.",
+      "d": "Reduces public interest safeguards to revenue collection; oath and renewal protect the public by ensuring ethical practitioners remain in good standing.",
+      "correct": "The oath represents a binding commitment to the Code of Ethical Conduct and professional standards, while PIC renewal requires verification of continued standing and compliance. Together they ensure that only architects meeting ongoing ethical and professional requirements maintain practice authority.",
+      "takeaway": "Oath + renewal: initial ethical commitment + ongoing verification of compliance = sustained profession integrity."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(23), 3(37), 7(c)-(d), 17, and 18 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
     "code_citation": "RA 9266 IRR Sections 3(23), 3(37), 7(c)-(d), 17, and 18",
-    "explanation": "Source-audited against RA 9266 IRR Sections 3(23), 3(37), 7(c)-(d), 17, and 18 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster."
+    "bloom_level": "analyze",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.9,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-009-009"
   }
 }

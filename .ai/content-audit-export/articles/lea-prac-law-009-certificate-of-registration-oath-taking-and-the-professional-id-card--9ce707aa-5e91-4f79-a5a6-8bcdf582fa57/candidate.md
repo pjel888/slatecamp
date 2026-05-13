@@ -35,3 +35,9 @@ Section 7 gives the Board authority to administer oaths and to issue, suspend, r
 - PIC = registration number, issuance date, expiry date, and periodic renewal.
 - PIC cycle in RA 9266 IRR = three years, not one year.
 - COR remains effective until withdrawn, suspended, or revoked.
+
+### Real World Scenario: Passing the LEA is not yet practice authority
+
+A successful examinee may be listed among the passers, but the practice gate is still formal registration. Before entering practice, the passer must take the professional oath. After payment of prescribed fees, the Certificate of Registration and Professional Identification Card are issued; the certificate remains effective until withdrawn, suspended, or revoked, while the PIC carries issuance and expiry information and is renewed on the three-year fee cycle stated in the IRR.
+
+Source: RA 9266 IRR, Sections 18, 19, and 21; local raw PDF checked with refined markdown anchors around lines 542, 546-548, and 584.

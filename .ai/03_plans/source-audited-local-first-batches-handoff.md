@@ -1,3 +1,47 @@
+# Batch 115 Local-First Handoff Update
+
+Last updated: 2026-05-13T20:45:00+08:00
+
+## Current State
+
+- Latest local-first production-line batch prepared: Batch 115
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 115: 9c4d1f5e9
+- Previous accepted Batch 114 commit: 9c4d1f5e9
+- Batch 115 local artifacts: pass
+- Git gate: targeted tests, scoped diff checks, and temporary-index cached diff passed; live `git add` failed on `.git/index.lock` creation with `Operation not permitted`, and GitHub DNS resolution failed, so real commit/push was not performed.
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 115 Selection
+
+- lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking (63ba5964-80fc-472c-bc26-7d64f1507bed)
+- lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card (9ce707aa-5e91-4f79-a5a6-8bcdf582fa57)
+- lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194 (82862aca-27a6-4121-ba3f-6d53160d2e3c)
+- lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights (76b6cfd5-d416-4c6d-8a90-76a2d2b91774)
+- lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component (f7691e1a-81f3-4a93-aef2-6ae6426100a2)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-115-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-115-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-115-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-115-manifest.json`
+- QA memo: `.ai/03_plans/batch-115-independent-quality-review.md`
+
+## Preserved Final-Depth Items
+
+- lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking: Do not restore current PRC online-result workflow, per-subject review mechanics, or modern retaker scheduling without current local PRC/Board sources.
+- lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card: Do not restore current PRC appointment/online renewal mechanics, CPD-currentness, or replacement-card procedure without current local PRC/CPD sources.
+- lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194: Removed Article 1155/discovery-date framing and preserved deeper prescription/doctrine reconciliation for final depth if local primary legal sources are added.
+- lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights: Do not restore RA 8293/IP Code, moral-rights, transfer/license, or copyright-duration detail until a local primary IP source is added.
+- lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component: Do not restore current permit-office checklist, discipline-specific signing edge cases, or project-delivery contract exhibits without local current sources.
+
+## Batch 115 Next Batch
+
+After Batch 115 is committed and pushed, scan for Batch 116 using the next eligible fixed/manifest articles not selected in accepted Batches 087-115. LAW-014 and LAW-015 remain source-gap ineligible until a local RA 8293/IP Code source and linked question edits are added. If no eligible source-auditable clusters remain, freeze local-first state for second audit and do not publish.
+
+---
+
 # Batch 114 Local-First Handoff Update
 
 Last updated: 2026-05-13T19:45:00+08:00

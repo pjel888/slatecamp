@@ -1,11 +1,92 @@
 {
   "question_id": "35208cbe-8610-483e-b362-655d7c2b62ff",
   "baseline_hash": "sha256:c1e2127c34b22be567f9d9b4a432f20880c8a0f3bc02ad2c3824f54f276e2087",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-012-005 to verified raw-source claims for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+    "parent_article_slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+    "checked_markdown_lines": [
+      "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "Can a neighboring property owner sue an architect for quasi-delict damages if the architect's negligent design harms the neighbor's property?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, only the client has standing to sue, as the contract is between the client and the architect"
+      },
+      {
+        "id": "b",
+        "text": "Yes, because quasi-delict allows third parties without contract privity to recover"
+      },
+      {
+        "id": "c",
+        "text": "Yes, but only if the neighbor hired the architect, establishing a direct contractual relationship"
+      },
+      {
+        "id": "d",
+        "text": "No, unless the neighboring property was explicitly referenced in the building's design, creating a direct link to the architect's duty of care"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Wrongly restricts standing; quasi-delict operates independently of contract and applies to any injured third party.",
+      "c": "Adds an unnecessary contract requirement; quasi-delict does not require the third party to be a client.",
+      "d": "Requires impossible advance notice; design professionals cannot avoid liability to neighbors by omitting property references.",
+      "correct": "Quasi-delict liability extends to third parties not in contractual privity with the architect. Neighboring property owners harmed by design defects affecting lateral support, environmental damage, drainage, or vibration transmission have standing to sue under quasi-delict.",
+      "takeaway": "Quasi-delict standing: third parties without contract privity may sue for negligence-caused harm; not limited to direct clients."
+    },
+    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary.",
     "code_citation": "Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194",
-    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary."
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-012-005"
   }
 }

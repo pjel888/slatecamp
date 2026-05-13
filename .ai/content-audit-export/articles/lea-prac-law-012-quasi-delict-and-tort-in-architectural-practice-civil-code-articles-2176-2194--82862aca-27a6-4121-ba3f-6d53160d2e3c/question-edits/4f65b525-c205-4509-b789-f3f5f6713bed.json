@@ -1,11 +1,92 @@
 {
   "question_id": "4f65b525-c205-4509-b789-f3f5f6713bed",
   "baseline_hash": "sha256:ad6670a0b10425698f8548969702346b71f246e346350f89be6ea91198c56276",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-012-009 to verified raw-source claims for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+    "parent_article_slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+    "checked_markdown_lines": [
+      "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "How do Article 1723 and quasi-delict liability function together in protecting clients and the public from architectural negligence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are redundant; only Article 1723 applies to architects, and it covers all necessary legal aspects without the need for additional frameworks"
+      },
+      {
+        "id": "b",
+        "text": "Article 1723 provides strict liability for structural collapse; quasi-delict covers broader negligence-based claims and extends to third parties"
+      },
+      {
+        "id": "c",
+        "text": "Quasi-delict provides strict liability; Article 1723 requires proof of negligence, making it less applicable in cases where immediate action is needed"
+      },
+      {
+        "id": "d",
+        "text": "They apply only if the client explicitly chooses one framework in the service agreement, which is a rare occurrence in standard architectural contracts"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Falsely equates the two; they operate independently with different scopes and standards.",
+      "c": "Reverses the standards; Article 1723 is strict, quasi-delict requires negligence proof.",
+      "d": "Eliminates statutory rights; both frameworks apply by operation of law, not by client choice or contract.",
+      "correct": "The two frameworks are complementary: Article 1723 imposes strict liability for structural collapse within 15 years (no negligence proof needed), while quasi-delict covers broader negligence-based damages (functional defects, cost overruns, third-party claims) under a different statute of limitations.",
+      "takeaway": "Complementary liability: Article 1723 (structural collapse, strict liability, 15 years) + quasi-delict (negligence, 4 years from discovery) protect clients and third parties."
+    },
+    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary.",
     "code_citation": "Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194",
-    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary."
+    "bloom_level": "analyze",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.9,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-012-009"
   }
 }

@@ -1,11 +1,80 @@
 {
   "question_id": "6b422a1b-5daf-4271-890f-e3f792401441",
   "baseline_hash": "sha256:d6ad4e15805928f0fb08a766e0e83440383c2ad3a54cd0e0427448e8d04e7278",
-  "reason": "Batch 005 local source audit aligned Certificate of Registration, Oath, and Professional Identification Card linked question ALE-PRAC-LAW-009-002 to verified RA 9266 IRR raw-source claims.",
-  "approved_by": "codex-local-source-audit-batch-005",
-  "approved_at": "2026-05-10T21:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+    "parent_article_slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "How long is a Professional Identification Card valid from the date of issuance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 year"
+      },
+      {
+        "id": "b",
+        "text": "2 years"
+      },
+      {
+        "id": "c",
+        "text": "3 years"
+      },
+      {
+        "id": "d",
+        "text": "5 years"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Understates the validity period; the law establishes 3 years, not 1 year, to reduce renewal burden.",
+      "b": "Understates the validity period; the law establishes 3 years, not 2 years.",
+      "d": "Overstates the validity period; the law establishes 3 years, not 5 years.",
+      "correct": "RA 9266 Section 17 and IRR Rule III Section 302 specify that the registration (evidenced by PIC) remains valid for a three (3)-year period from the date of issuance and requires renewal upon expiry.",
+      "takeaway": "PIC validity: 3 years from issuance; renewal required before expiry to maintain practice authority."
+    },
+    "explanation": "Source-audited against Sections 3(37) and 18, which state that the PIC is due for periodic renewal and is issued/renewed on a three-year fee cycle.",
     "code_citation": "RA 9266 IRR Sections 3(37) and 18",
-    "explanation": "Source-audited against Sections 3(37) and 18, which state that the PIC is due for periodic renewal and is issued/renewed on a three-year fee cycle."
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-009-002"
   }
 }

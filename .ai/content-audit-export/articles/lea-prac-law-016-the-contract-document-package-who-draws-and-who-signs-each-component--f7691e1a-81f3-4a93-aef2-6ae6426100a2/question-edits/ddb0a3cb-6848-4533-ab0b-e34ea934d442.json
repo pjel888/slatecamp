@@ -1,11 +1,92 @@
 {
   "question_id": "ddb0a3cb-6848-4533-ab0b-e34ea934d442",
   "baseline_hash": "sha256:374555bf9a4abdf11e81b889973a15cf8cb7dc57e191088e92634e45a254bc96",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-016-005 to verified raw-source claims for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+    "parent_article_slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "An architect from Firm A signs and seals architectural drawings actually prepared by architects from Firm B. What professional and legal consequences result?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None, because the drawing is sealed and the contractor can rely on it, assuming all responsibility for any errors"
+      },
+      {
+        "id": "b",
+        "text": "Violation of RA 9266 Section 23; the architect from Firm A signed documents not prepared personally or under direct supervision"
+      },
+      {
+        "id": "c",
+        "text": "Only a disciplinary concern for the architect from Firm B for poor work, as Firm A's architect merely endorsed the documents"
+      },
+      {
+        "id": "d",
+        "text": "The architect from Firm A is not personally liable because the architect merely stamped pre-existing documents, which were assumed to be correct"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Mistakenly assumes the seal's presence validates the documents; the seal is only valid if the architect personally prepared or directly supervised the work.",
+      "c": "Misallocates responsibility; the architect signing the documents assumes full responsibility, regardless of where the work originated.",
+      "d": "Falsely claims the architect has no personal liability; the signer assumes full responsibility, not a mere administrative role.",
+      "correct": "RA 9266 Section 23 prohibits architects from signing and sealing documents they did not personally prepare or that were not prepared under their direct supervision. An architect who stamps documents prepared by another firm without personal involvement violates this requirement and faces professional discipline including suspension or revocation. The signature certifies personal responsibility, which cannot be delegated.",
+      "takeaway": "Signing and sealing documents prepared by others without direct supervision violates RA 9266 Section 23 and creates grounds for license suspension or revocation."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents.",
     "code_citation": "RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32; UAP Document 301 Articles 1-3 and 5.06",
-    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents."
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-016-005"
   }
 }

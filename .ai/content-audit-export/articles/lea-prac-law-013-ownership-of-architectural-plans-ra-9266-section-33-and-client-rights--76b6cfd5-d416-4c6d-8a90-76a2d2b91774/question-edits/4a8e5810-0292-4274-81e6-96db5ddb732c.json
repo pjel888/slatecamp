@@ -1,11 +1,80 @@
 {
   "question_id": "4a8e5810-0292-4274-81e6-96db5ddb732c",
   "baseline_hash": "sha256:343a8b86ac69e31253ca82257ef628554468622958ced852a3eb0167d4209054",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-013-001 to verified raw-source claims for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+    "parent_article_slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 170-192 and 708",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 170-192 and 708"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "Under RA 9266 Section 33, who owns the copyright to architectural drawings and specifications prepared for a commissioned project?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The client who paid for the design"
+      },
+      {
+        "id": "b",
+        "text": "The architect who created the documents"
+      },
+      {
+        "id": "c",
+        "text": "The contractor who will build the project"
+      },
+      {
+        "id": "d",
+        "text": "The government through the Board of Architecture"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Confuses payment for services with transfer of intellectual property ownership; paying for work does not transfer copyright to the client.",
+      "c": "Incorrectly assumes the contractor who builds the project acquires copyright rights; the contractor is merely implementing the design.",
+      "d": "Misunderstands the role of the Board of Architecture, which regulates the profession but does not hold copyright to professional works.",
+      "correct": "RA 9266 Section 33 explicitly states that drawings and specifications are the intellectual property of the architect, whether the project is executed or not. Copyright ownership belongs to the creator and author of the work.",
+      "takeaway": "The architect, as the creator, always retains copyright ownership of architectural documents regardless of who paid for the design."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
     "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
-    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects."
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-013-001"
   }
 }

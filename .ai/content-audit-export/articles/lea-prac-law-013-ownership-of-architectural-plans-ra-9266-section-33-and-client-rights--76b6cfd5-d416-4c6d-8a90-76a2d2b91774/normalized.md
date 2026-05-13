@@ -18,3 +18,9 @@ The client may use the documents for the original commissioned project. That is 
 ## Exam Guardrails
 
 Payment does not automatically transfer copyright ownership. Written consent matters for repetition or other projects. A written stipulation can change the default retained-ownership rule, so read the facts before choosing an absolute answer.
+
+### Real World Scenario: Reusing plans on a second project
+
+A client paid for a house design and built the original project. Years later, the client wants to reuse the same drawings for a different lot without the architect's written consent. Under the RA 9266 IRR ownership definition and Section 33 rule, the client's ownership is confined to using the architectural documents for the original project; using all or part of the work for repetitions or subsequent projects requires the architect or author's written consent.
+
+Source: RA 9266 IRR, Section 33 and definitions of copyright/ownership; local raw PDF checked with refined markdown anchors around lines 170-192 and 708.

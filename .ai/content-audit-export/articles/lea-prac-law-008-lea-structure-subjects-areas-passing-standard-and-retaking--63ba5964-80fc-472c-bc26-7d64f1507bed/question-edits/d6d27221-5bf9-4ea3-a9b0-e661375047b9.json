@@ -1,11 +1,80 @@
 {
   "question_id": "d6d27221-5bf9-4ea3-a9b0-e661375047b9",
   "baseline_hash": "sha256:5ff1f8f295ac1beed1347ed87a9cfc750e0824067653fe68547cb547747a5c8f",
-  "reason": "Batch 005 local source audit aligned LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries linked question ALE-PRAC-LAW-008-006 to verified RA 9266 IRR raw-source claims.",
-  "approved_by": "codex-local-source-audit-batch-005",
-  "approved_at": "2026-05-10T21:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+    "parent_article_slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 411, 532, and 538",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 411, 532, and 538"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "A candidate scoring 65% in Design, 72% in Building Science, 78% in Professional Practice, and 71% in History achieves a 71.5% weighted average. Is this passing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, the weighted average of 71.5% exceeds 70%"
+      },
+      {
+        "id": "b",
+        "text": "No, the Design score of 65% does not meet the 70% threshold for each subject"
+      },
+      {
+        "id": "c",
+        "text": "Yes, but the candidate must retake Design to improve overall performance"
+      },
+      {
+        "id": "d",
+        "text": "No, the composite score lacks sufficient margin above 70%"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "b": "Misapplies the threshold; the law requires 50% minimum per subject, not 70%; Design at 65% exceeds the 50% floor.",
+      "c": "Invents non-existent requirements; passing the dual threshold means no mandatory retakes; the candidate has met all requirements.",
+      "d": "Suggests an arbitrary margin requirement; RA 9266 establishes 70% as the passing standard, not a margin above 70%.",
+      "correct": "The 70% weighted average is satisfied (71.5%), and no individual subject falls below 50% (Design is 65%, which exceeds 50%). Both thresholds are met, so the candidate passes.",
+      "takeaway": "Passing criteria met: 71.5% weighted average + all subjects above 50% minimum = candidate passes."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
     "code_citation": "RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16",
-    "explanation": "Source-audited against RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster."
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-008-006"
   }
 }

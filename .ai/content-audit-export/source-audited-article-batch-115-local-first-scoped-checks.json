@@ -1,0 +1,315 @@
+{
+  "batch_number": "115",
+  "batch_id": "source-audited-article-batch-115-local-first",
+  "generated_at": "2026-05-13T20:45:00+08:00",
+  "status": "pass_local_first_git_blocked",
+  "gates": {
+    "compose_diff_validate_strict_5_of_5": {
+      "status": "pass",
+      "expected_articles": 5,
+      "actual_articles": 5,
+      "articles": [
+        {
+          "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+          "status": "pass"
+        }
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "files": [
+        ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/ui-block-edit-validation.json"
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 114,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "findings": []
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "checked_files": 14,
+      "failures": [],
+      "checks": [
+        {
+          "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+          "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538",
+          "actual_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "status": "pass"
+        },
+        {
+          "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+          "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538",
+          "actual_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "status": "pass"
+        },
+        {
+          "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+          "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584",
+          "actual_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "status": "pass"
+        },
+        {
+          "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+          "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584",
+          "actual_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "status": "pass"
+        },
+        {
+          "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+          "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+          "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+          "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+          "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+          "actual_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+          "status": "pass"
+        },
+        {
+          "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+          "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+          "sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+          "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+          "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+          "actual_sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+          "status": "pass"
+        },
+        {
+          "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+          "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+          "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+          "actual_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "status": "pass"
+        },
+        {
+          "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+          "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+          "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+          "actual_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "status": "pass"
+        },
+        {
+          "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+          "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 170-192 and 708",
+          "actual_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "status": "pass"
+        },
+        {
+          "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+          "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 170-192 and 708",
+          "actual_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "status": "pass"
+        },
+        {
+          "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+          "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+          "actual_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "status": "pass"
+        },
+        {
+          "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+          "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+          "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+          "actual_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "status": "pass"
+        },
+        {
+          "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+          "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+          "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+          "actual_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "status": "pass"
+        },
+        {
+          "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+          "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+          "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+          "actual_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "status": "pass"
+        }
+      ]
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+          "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+          "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+          "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+          "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+          "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+          "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+          "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+          "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+          "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+          "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        }
+      ]
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-114",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "34 pass, 0 fail, 328 expect() calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- .ai/03_plans/production-line-batch-115-manifest.json .ai/content-audit-export/source-audited-article-batch-115-local-first-report.md .ai/content-audit-export/source-audited-article-batch-115-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-115-local-first-scoped-checks.json .ai/03_plans/batch-115-independent-quality-review.md .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/03_plans/source-audited-production-line-coordination.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed .ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57 .ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c .ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774 .ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "executed_at": "2026-05-13T20:45:00+08:00"
+    },
+    "cached_diff_check": {
+      "status": "pass_via_temporary_index_after_intended_files_only",
+      "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch115.index GIT_OBJECT_DIRECTORY=/private/tmp/slatecamp-batch115-objects GIT_ALTERNATE_OBJECT_DIRECTORIES=/Users/philiplewis/slatecamp/.git/objects git diff --cached --check",
+      "executed_at": "2026-05-13T20:45:00+08:00"
+    },
+    "real_git_stage_commit_push_gate": {
+      "status": "blocked_live_index",
+      "expected_commit_message": "chore(content): accept source-audited batch 115",
+      "commit_created": false,
+      "push_performed": false,
+      "attempted_command": "git add -- <Batch 115 intended paths>",
+      "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+    },
+    "github_network_reachability": {
+      "status": "blocked_dns_resolution",
+      "executed_at": "2026-05-13T20:45:00+08:00",
+      "command": "git ls-remote --heads origin 3dlab-gray-viewport-bg",
+      "failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+    }
+  }
+}

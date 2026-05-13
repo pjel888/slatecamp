@@ -23,3 +23,9 @@ UAP Document 301 also keeps shop-drawing approval distinct from contractor respo
 ## Exam Guardrails
 
 Identify whether the document is architectural, another discipline's technical drawing, or a general contract document. Architectural documents require the architect's signature and seal. Contract documents are complementary and must be coordinated.
+
+### Real World Scenario: Signing a coordinated but borrowed sheet
+
+A project team sends an architect a nearly complete architectural sheet set prepared under another architect's supervision and asks for a signature and seal after minor local edits. The RA 9266 IRR makes that a signing-and-sealing problem: architectural documents must be prepared by or under the architect's direct supervision, and signing documents made under another architect's supervision is unlawful unless the actual part performed is clearly indicated. UAP Document 301 also treats drawings and specifications as coordinated contract documents, but that contract-document workflow does not override the statutory signing/sealing rule.
+
+Source: RA 9266 IRR, Sections 20, 21, 23, and 32; UAP Document 301, Articles 1.18, 1.21, 2.02, 2.03, 3.01-3.03, and 5.06; local raw PDFs checked with refined markdown anchors around RA 9266 lines 556-580, 584, 596-598, 698-702, 708, and UAP 301 lines 498-503, 521-540, and 573.

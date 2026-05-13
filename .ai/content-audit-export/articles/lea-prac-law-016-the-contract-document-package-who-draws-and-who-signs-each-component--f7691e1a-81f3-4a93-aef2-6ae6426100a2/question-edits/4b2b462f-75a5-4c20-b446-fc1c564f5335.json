@@ -1,12 +1,50 @@
 {
   "question_id": "4b2b462f-75a5-4c20-b446-fc1c564f5335",
   "baseline_hash": "sha256:318033708dd0fcf37efea714a874627fbbf5482b409e3965499f5051f5e28b22",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-016-010 to verified raw-source claims for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+    "parent_article_slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "UAP Document 301 Articles 2 and 3; RA 9266 IRR Section 3(26)",
-    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents.",
     "text": "A conflict appears between architectural floor-to-floor heights and the space required by another discipline before final contract documents are issued. What is the source-backed professional response?",
     "options": [
       {
@@ -26,6 +64,29 @@
         "text": "Ignore the conflict if each professional signs a separate sheet"
       }
     ],
-    "correct_option_id": "b"
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Falsely subordinates the engineer's professional responsibility to the architect's authority; both have independent certification obligations.",
+      "c": "Allows the engineer to sign knowing of structural inadequacy; noting the conflict does not relieve the certification obligation.",
+      "d": "Violates professional ethics and communication obligations; the engineer cannot unilaterally modify without coordination and owner/architect knowledge.",
+      "correct": "Professional standards require that professionals refuse to sign documents they believe are deficient or contain code violations. A structural engineer cannot sign drawings that are structurally inadequate for the design intent or that violate structural codes. The engineer has a professional obligation to communicate the structural concern to the architect and owner in writing, documenting the nature of the conflict. If the conflict cannot be resolved and the design remains deficient, the engineer must decline to sign and should not allow liability to fall on the engineer for a design conflict created by the architect.",
+      "takeaway": "Professionals must refuse to sign deficient documents and must communicate concerns in writing to the architect and owner."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents.",
+    "code_citation": "UAP Document 301 Articles 2 and 3; RA 9266 IRR Section 3(26)",
+    "bloom_level": "analyze",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.9,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-016-010"
   }
 }

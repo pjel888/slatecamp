@@ -1,7 +1,7 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T20:45:00+08:00",
   "audit_mode": "local_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
@@ -11,13 +11,13 @@
   "target": {
     "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
     "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
-    "title": "Quasi Delict and Tort in Architectural Practice Civil Code Articles",
+    "title": "Quasi-Delict and Tort in Architectural Practice",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/candidate.md",
-    "candidate_sha256": "sha256:915a3d5b04b53267a687ace3680e40a2bc2c5946678d65194422f6dcbb37db8a",
-    "normalized_sha256": "sha256:915a3d5b04b53267a687ace3680e40a2bc2c5946678d65194422f6dcbb37db8a",
-    "linked_questions_sha256": "sha256:d3583524733c43c5d9d372934d5b1d033dc355f9e5e771f3d0e5ade5f8a770b4",
-    "sources_sha256": "sha256:5579cbba1f7db452e803cd8ffc0c7d24c713e9a00e60cd3d751806f609621871"
+    "candidate_sha256": "sha256:b1a67cb2a042169cd94c62c7dbed551c169ae44647bf20edcc26d919264a3e3c",
+    "normalized_sha256": "sha256:b1a67cb2a042169cd94c62c7dbed551c169ae44647bf20edcc26d919264a3e3c",
+    "linked_questions_sha256": "sha256:a9cfa8c87309fc076a7cf3fac19b098a73166e04d79d84ab64b759c7883fd686",
+    "sources_sha256": "sha256:7358df9e8a5d1bbdccabe44d36438752534e592efeb2fe086987b68487f97d29"
   },
   "classification": {
     "content_type": "civil_code_quasi_delict_architecture_article",
@@ -131,5 +131,48 @@
     "warnings": [],
     "checked_at": "2026-05-10T22:40:00+08:00"
   },
-  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate."
+  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate.",
+  "batch_id": "source-audited-article-batch-115-local-first",
+  "status": "pass",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "summary": "added a source-safe Article 1723 versus quasi-delict scenario grounded in Civil Code Articles 1723, 2176, 2192, and 2194.",
+    "source_locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      }
+    ]
+  },
+  "batch_115_refresh": {
+    "status": "current_serial_source_audit_refresh",
+    "branch": "3dlab-gray-viewport-bg",
+    "baseline_commit": "9c4d1f5e9",
+    "previous_batch_commit": "9c4d1f5e9",
+    "question_edits_refreshed": 10,
+    "historical_overlap_treatment": "Earlier Batch 005/006 local-first artifacts are recorded as historical overlap; the current serial production-line accepted set 087-114 did not include this article ID.",
+    "local_raw_source_rule": "Primary source truth is local PDFs under vitruvius-connection/001_Raw-Source-Layer with refined markdown used only for line anchors."
+  }
 }

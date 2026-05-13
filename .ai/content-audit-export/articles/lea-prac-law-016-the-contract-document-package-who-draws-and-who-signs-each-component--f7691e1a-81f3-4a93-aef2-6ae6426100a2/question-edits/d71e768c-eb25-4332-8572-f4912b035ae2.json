@@ -1,11 +1,92 @@
 {
   "question_id": "d71e768c-eb25-4332-8572-f4912b035ae2",
   "baseline_hash": "sha256:de494d89aabf804d625f5772aca51da2a0bf3a4a84fbfc31315d35a577364ed4",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-016-006 to verified raw-source claims for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+    "parent_article_slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "The contract documents package includes architectural drawings, structural drawings, mechanical drawings, electrical drawings, and plumbing drawings. Who is responsible for ensuring these documents are coordinated and integrated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Each specialist is responsible only for their own drawings; coordination is the contractor's responsibility during construction"
+      },
+      {
+        "id": "b",
+        "text": "The architect, as the lead designer, typically coordinates the design and ensures all specialists integrate their work with the architectural design"
+      },
+      {
+        "id": "c",
+        "text": "The structural engineer, as the most technically senior professional, coordinates all design disciplines and resolves conflicts"
+      },
+      {
+        "id": "d",
+        "text": "No coordination is required if each professional signs and seals their respective documents independently"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Misallocates responsibility; coordination is a design team function, not a contractor construction function.",
+      "c": "Incorrectly designates the structural engineer as coordinator; the architect is the lead designer and coordinates all disciplines.",
+      "d": "Falsely assumes professional seals eliminate coordination responsibility; coordination is essential and precedes sealing.",
+      "correct": "Professional practice requires coordination of multi-disciplinary drawings. The architect typically serves as the lead designer (UAP SPP 202) and is responsible for facilitating coordination between the architect's design and the various engineering disciplines. Coordination ensures that structural elements fit within the architect's spatial design, that mechanical and electrical systems can be routed through available spaces, and that all elements integrate into a cohesive building. Failure to coordinate results in conflicts that create construction problems and cost overruns.",
+      "takeaway": "The architect, as lead designer, is responsible for coordinating all design disciplines to ensure integrated, conflict-free contract documents."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents.",
     "code_citation": "RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32; UAP Document 301 Articles 1-3 and 5.06",
-    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents."
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-016-006"
   }
 }

@@ -1,7 +1,7 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T21:50:00+08:00",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T20:45:00+08:00",
   "audit_mode": "local_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
@@ -11,13 +11,13 @@
   "target": {
     "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
     "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
-    "title": "Certificate of Registration, Oath, and Professional Identification Card",
+    "title": "Certificate of Registration, Oath Taking, and the Professional Identification Card",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/candidate.md",
-    "candidate_sha256": "sha256:ea07f18dc1b8cfba879cecd38f11d5a690a933915e1862fe504c6d78eaebe949",
-    "normalized_sha256": "sha256:ea07f18dc1b8cfba879cecd38f11d5a690a933915e1862fe504c6d78eaebe949",
-    "linked_questions_sha256": "sha256:eceeb08d3396f2e928bee29bd693f1d7d9b033f9e21feefb02de3996fc882f35",
-    "sources_sha256": "sha256:4de3ac65c397ffc6c8a2d1036a922a3f1fad15fc62afb3f7ce5b59d431e8a1cb"
+    "candidate_sha256": "sha256:318e9f62328cc7ff3f19e1f43aa387aa7f0ee6b957d43b8480f0d19c942e5adc",
+    "normalized_sha256": "sha256:318e9f62328cc7ff3f19e1f43aa387aa7f0ee6b957d43b8480f0d19c942e5adc",
+    "linked_questions_sha256": "sha256:9e7f7c8c2a7ceaadfcf96fddb7bfd0b9a67a55f164f573f4d7e3362a48b9ca3e",
+    "sources_sha256": "sha256:11e44969eb09890f231c02764c7008a4e82b7061e79abf2944a2cfaa5701eac5"
   },
   "classification": {
     "content_type": "ra9266_cor_oath_pic_article",
@@ -111,7 +111,7 @@
     }
   ],
   "unsupported_or_removed_claims": [
-    "Removed learner-visible UI placeholders, preserved placeholder blocks, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
+    "Removed learner-visible UI marker artifacts, preserved source-audited block structure, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
     "Removed one-year or annual PIC-validity claim; the checked source supports a three-year fee/renewal cycle.",
     "Removed unsupported photo/card-display claims not visible in Section 3(37).",
     "Rewrote cancellation/return scenario to the source-backed rule that COR remains in force until withdrawn, suspended, or revoked."
@@ -130,5 +130,36 @@
     "blockers": 0,
     "warnings": [],
     "checked_at": "2026-05-10T21:50:00+08:00"
+  },
+  "batch_id": "source-audited-article-batch-115-local-first",
+  "status": "pass",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "summary": "added a source-safe oath/COR/PIC practice-authority scenario grounded in RA 9266 IRR Sections 18, 19, and 21.",
+    "source_locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584",
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      }
+    ]
+  },
+  "batch_115_refresh": {
+    "status": "current_serial_source_audit_refresh",
+    "branch": "3dlab-gray-viewport-bg",
+    "baseline_commit": "9c4d1f5e9",
+    "previous_batch_commit": "9c4d1f5e9",
+    "question_edits_refreshed": 10,
+    "historical_overlap_treatment": "Earlier Batch 005/006 local-first artifacts are recorded as historical overlap; the current serial production-line accepted set 087-114 did not include this article ID.",
+    "local_raw_source_rule": "Primary source truth is local PDFs under vitruvius-connection/001_Raw-Source-Layer with refined markdown used only for line anchors."
   }
 }

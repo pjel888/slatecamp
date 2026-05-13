@@ -1,11 +1,80 @@
 {
   "question_id": "b9acbca7-4e97-47f9-819e-15cecdf21aa6",
   "baseline_hash": "sha256:839066ee057cf08d1e2e57bba8f3666a05d45d4359637ed15bdf7ffa961e4f81",
-  "reason": "Batch 005 local source audit aligned Certificate of Registration, Oath, and Professional Identification Card linked question ALE-PRAC-LAW-009-006 to verified RA 9266 IRR raw-source claims.",
-  "approved_by": "codex-local-source-audit-batch-005",
-  "approved_at": "2026-05-10T21:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+    "parent_article_slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "An architect's PIC expired six months ago and she has not renewed it. Can she legally accept new projects or represent herself as a registered architect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, as long as her original Certificate of Registration is still valid, which is a common misconception"
+      },
+      {
+        "id": "b",
+        "text": "No, because the expired PIC represents lapsed registration status and unauthorized practice"
+      },
+      {
+        "id": "c",
+        "text": "Yes, but only for projects that began before the expiration date, which is not legally permissible"
+      },
+      {
+        "id": "d",
+        "text": "No, but she may practice if she pays a late renewal penalty immediately, which is a temporary solution"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Confuses certificate validity with practice authority; the PIC's expiration represents lapsed registration status regardless of the original Certificate.",
+      "c": "Allows retroactive practice on expired credentials; practice authority requires current PIC; prior project commencement does not excuse renewal lapses.",
+      "d": "Overstates remedy availability; while renewal is possible, the claim about late penalties obscures the core rule: no practice without current PIC.",
+      "correct": "RA 9266 prohibits practice without a valid PIC (Sec 33); while the Certificate of Registration remains valid indefinitely unless revoked, an expired PIC means no legal authority to practice until renewed.",
+      "takeaway": "Expired PIC = lapsed registration = no legal practice authority until PIC is renewed."
+    },
+    "explanation": "Source-audited against the PIC definition and Section 18 renewal rule. The checked source supports an expiry date and three-year renewal cycle; it does not support a one-year validity claim.",
     "code_citation": "RA 9266 IRR Sections 3(37) and 18",
-    "explanation": "Source-audited against the PIC definition and Section 18 renewal rule. The checked source supports an expiry date and three-year renewal cycle; it does not support a one-year validity claim."
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-009-006"
   }
 }

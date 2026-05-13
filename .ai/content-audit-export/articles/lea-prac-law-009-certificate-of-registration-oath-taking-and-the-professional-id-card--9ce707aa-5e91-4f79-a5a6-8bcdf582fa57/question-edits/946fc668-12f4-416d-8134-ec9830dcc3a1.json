@@ -1,11 +1,80 @@
 {
   "question_id": "946fc668-12f4-416d-8134-ec9830dcc3a1",
   "baseline_hash": "sha256:27979cac4962cba0e566a01412a10ff7296095250f9bfb905452f8a9ecec27d9",
-  "reason": "Batch 005 local source audit aligned Certificate of Registration, Oath, and Professional Identification Card linked question ALE-PRAC-LAW-009-010 to verified RA 9266 IRR raw-source claims.",
-  "approved_by": "codex-local-source-audit-batch-005",
-  "approved_at": "2026-05-10T21:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+    "parent_article_slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 542, 546-548, and 584"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "The Board suspends an architect's Certificate of Registration for violation of the Code of Ethical Conduct. During suspension, what is the status of her professional practice authority?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She may practice but must report all projects to the Board monthly, ensuring transparency and compliance with ongoing ethical standards"
+      },
+      {
+        "id": "b",
+        "text": "She loses the right to practice entirely until the Board lifts the suspension"
+      },
+      {
+        "id": "c",
+        "text": "She may practice with clients' written consent, provided that all parties are aware of the suspension and its implications"
+      },
+      {
+        "id": "d",
+        "text": "She may practice only projects valued below 1 million pesos, limiting her professional scope during the suspension period"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Falsely permits practice with Board oversight; suspension is a complete prohibition, not a monitored-practice arrangement.",
+      "c": "Invents client-consent exception; client consent cannot override Board suspension; suspension bars all practice regardless of consent.",
+      "d": "Creates non-existent thresholds; suspension prohibits all practice, not just high-value projects; no monetary threshold creates exceptions.",
+      "correct": "The source document explicitly states: 'During suspension, the architect may not practice.' Suspension is a complete prohibition on practice authority until the Board lifts the suspension.",
+      "takeaway": "Certificate suspension: architect loses all practice authority until suspension is lifted by the Board."
+    },
+    "explanation": "Source-audited against Section 7(d) for Board authority to suspend or revoke the COR/PIC and Section 18 for the COR remaining in force until withdrawn, suspended, or revoked.",
     "code_citation": "RA 9266 IRR Sections 7(d) and 18",
-    "explanation": "Source-audited against Section 7(d) for Board authority to suspend or revoke the COR/PIC and Section 18 for the COR remaining in force until withdrawn, suspended, or revoked."
+    "bloom_level": "analyze",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.9,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-009-010"
   }
 }

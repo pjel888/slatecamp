@@ -1,12 +1,92 @@
 {
   "question_id": "211f8944-0730-48ee-8827-4fd27f5fbf35",
   "baseline_hash": "sha256:cdcc9a8085a01ddbae20c28c2dd4bd001ef2a1b7358d4fec9cbee123489e11e8",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-016-009 to verified raw-source claims for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+    "parent_article_slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32; UAP Document 301 Articles 1-3 and 5.06",
+    "text": "An architect received substantially complete architectural drawing sets from another design firm, made only minor site edits, and then signed and sealed them as the responsible architect. What professional and legal issue results?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None, because the architect made edits demonstrating personal involvement, which is a misunderstanding of RA 9266"
+      },
+      {
+        "id": "b",
+        "text": "None, because international architectural designs are legally permitted without modification, which is incorrect under RA 9266"
+      },
+      {
+        "id": "c",
+        "text": "The architect likely violated RA 9266 Section 23 by signing documents not prepared personally or under direct supervision, even though minor edits were made"
+      },
+      {
+        "id": "d",
+        "text": "The architect is responsible only for the portions of drawings the architect personally edited, which is not a valid defense under RA 9266"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Treats minor edits as sufficient involvement; the statute requires direct involvement in design development, not just minor corrections.",
+      "b": "Falsely permits international designs to be adopted without meeting RA 9266 Section 23 requirements; the statute applies to all work signed in the Philippines.",
+      "d": "Creates false partial responsibility; the seal certifies responsibility for the entire document, not just edited portions.",
+      "correct": "Making minor edits to substantially pre-existing drawings prepared by others does not constitute 'preparation' or 'direct supervision' within the meaning of RA 9266 Section 23. The architect's signature certifies responsibility for the entire document, including all portions. An architect cannot accept responsibility for major design work performed by others merely by making minor edits. The architect should either: (1) thoroughly review and coordinate the design with direct involvement in all major design decisions, or (2) decline to sign and let the original designer assume responsibility for work done in the Philippines.",
+      "takeaway": "Minor edits to foreign designs do not satisfy the direct supervision requirement; the architect must be actively involved in all major design decisions."
+    },
     "explanation": "Corrected the sealing typo and aligned the issue to RA 9266 Section 23: signing documents not personally prepared or prepared under immediate supervision can expose the architect to discipline.",
-    "text": "An architect received substantially complete architectural drawing sets from another design firm, made only minor site edits, and then signed and sealed them as the responsible architect. What professional and legal issue results?"
+    "code_citation": "RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32; UAP Document 301 Articles 1-3 and 5.06",
+    "bloom_level": "analyze",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.9,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-016-009"
   }
 }

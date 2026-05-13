@@ -1,12 +1,38 @@
 {
   "question_id": "13fe4f9a-1db3-4144-8380-2aee7bd42be8",
   "baseline_hash": "sha256:3afe7d7e89d95fcedb304f8c9bfef2bccb000816ca40310a809720d82790f969",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-013-005 to verified raw-source claims for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+    "parent_article_slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 170-192 and 708",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 170-192 and 708"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
-    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
     "text": "A developer uses the same floor-plan layout from the original architectural documents for an expansion or later project without Architect B's written permission. What Section 33 issue is triggered?",
     "options": [
       {
@@ -26,6 +52,29 @@
         "text": "Reuse is allowed whenever the later project has the same owner"
       }
     ],
-    "correct_option_id": "b"
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Confuses intellectual property infringement with criminal theft of tangible property; copyright violations are civil, not criminal, except in cases of willful fraud.",
+      "c": "Seeks an inappropriate administrative remedy; copyright infringement is a civil matter under intellectual property law, not a local government regulatory issue.",
+      "d": "Suggests informal mediation for a serious intellectual property violation; while mediation may be attempted, the primary remedy is civil litigation under RA 9266.",
+      "correct": "Unauthorized reproduction of architectural plans is a copyright violation under RA 9266 and the Intellectual Property Code. The architect may pursue civil remedies including injunctions to stop the unauthorized reproduction, damages for lost fees or harm to reputation, and recovery of attorney's fees.",
+      "takeaway": "Unauthorized reproduction of architectural designs creates a civil copyright infringement claim allowing the architect to seek injunctions and damages."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
+    "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-013-005"
   }
 }

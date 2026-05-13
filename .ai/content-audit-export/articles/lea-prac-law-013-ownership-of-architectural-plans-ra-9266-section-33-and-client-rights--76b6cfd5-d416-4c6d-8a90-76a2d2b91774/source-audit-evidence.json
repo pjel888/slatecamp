@@ -1,7 +1,7 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T20:45:00+08:00",
   "audit_mode": "local_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
@@ -11,13 +11,13 @@
   "target": {
     "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
     "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
-    "title": "Ownership of Architectural Plans RA 9266 Section 33 and Client Rights",
+    "title": "Ownership of Architectural Plans under RA 9266 Section 33",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/candidate.md",
-    "candidate_sha256": "sha256:ddac00073f7fbccdcd72e046fea797e8fd57f76350e1dce37f5766dd0c80464b",
-    "normalized_sha256": "sha256:ddac00073f7fbccdcd72e046fea797e8fd57f76350e1dce37f5766dd0c80464b",
-    "linked_questions_sha256": "sha256:36912894e46161da4dfa3e8abca7b0a8f5d3fb9f6bf45d334611294af438747a",
-    "sources_sha256": "sha256:475c8ba70bb9e9ed8e6c1004ca26ddb85bef7df6d7b86a3ef8bd97f6c17e8bdd"
+    "candidate_sha256": "sha256:3c161adf5b0689341ef24bb7d26323dbcaf60a79edfaa21bca231af9b475deab",
+    "normalized_sha256": "sha256:3c161adf5b0689341ef24bb7d26323dbcaf60a79edfaa21bca231af9b475deab",
+    "linked_questions_sha256": "sha256:ba8df75dda2872c6c9be1595fa2f610b1167885d221fa3e4cd678eee92be967b",
+    "sources_sha256": "sha256:32cdcdde849ee9313d38e774176d35ef391932849748d54febeae872b4a38c72"
   },
   "classification": {
     "content_type": "ra9266_architectural_document_ownership_article",
@@ -113,5 +113,36 @@
     "blockers": 0,
     "warnings": [],
     "checked_at": "2026-05-10T22:40:00+08:00"
+  },
+  "batch_id": "source-audited-article-batch-115-local-first",
+  "status": "pass",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "summary": "added a source-safe plan reuse scenario grounded in RA 9266 IRR Section 33 and the ownership definition.",
+    "source_locator": "RA 9266 IRR refined markdown lines 170-192 and 708",
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      }
+    ]
+  },
+  "batch_115_refresh": {
+    "status": "current_serial_source_audit_refresh",
+    "branch": "3dlab-gray-viewport-bg",
+    "baseline_commit": "9c4d1f5e9",
+    "previous_batch_commit": "9c4d1f5e9",
+    "question_edits_refreshed": 10,
+    "historical_overlap_treatment": "Earlier Batch 005/006 local-first artifacts are recorded as historical overlap; the current serial production-line accepted set 087-114 did not include this article ID.",
+    "local_raw_source_rule": "Primary source truth is local PDFs under vitruvius-connection/001_Raw-Source-Layer with refined markdown used only for line anchors."
   }
 }

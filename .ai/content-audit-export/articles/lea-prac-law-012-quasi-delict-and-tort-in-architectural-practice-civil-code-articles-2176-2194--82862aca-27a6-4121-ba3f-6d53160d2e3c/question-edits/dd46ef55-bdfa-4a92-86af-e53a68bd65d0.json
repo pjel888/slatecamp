@@ -1,11 +1,92 @@
 {
   "question_id": "dd46ef55-bdfa-4a92-86af-e53a68bd65d0",
   "baseline_hash": "sha256:df0b6f14adfd3350c1cec5e671bead1f8a7eb3d258d6d0439a7558613aaefadf",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-012-001 to verified raw-source claims for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+    "parent_article_slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+    "checked_markdown_lines": [
+      "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "What is the foundational principle of quasi-delict liability under Civil Code Article 2176?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Strict liability for all structural defects, regardless of the presence of negligence or intent"
+      },
+      {
+        "id": "b",
+        "text": "Liability based on negligence, regardless of contractual relationship"
+      },
+      {
+        "id": "c",
+        "text": "Liability only when a service contract exists, limiting responsibility to contractual obligations"
+      },
+      {
+        "id": "d",
+        "text": "Liability limited to direct employees of the architect, excluding subcontractors and third-party consultants"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Confuses quasi-delict with Article 1723; quasi-delict requires negligence proof, not strict liability.",
+      "c": "Wrongly requires contract; Article 2176 is broader and operates even without contractual privity.",
+      "d": "Confuses respondeat superior with the framework itself; quasi-delict applies broadly to any negligent actor.",
+      "correct": "Civil Code Article 2176 establishes that any person who causes damage to another through fault or negligence is obligated to pay for the damage, independent of contract and independent of the relationship between the parties.",
+      "takeaway": "Quasi-delict foundation: liability for negligence exists independently of contract; applies to anyone owed a duty of care."
+    },
+    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary.",
     "code_citation": "Civil Code Article 2176",
-    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary."
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-012-001"
   }
 }

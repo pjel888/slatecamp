@@ -1,7 +1,7 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T20:45:00+08:00",
   "audit_mode": "local_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
@@ -11,13 +11,13 @@
   "target": {
     "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
     "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
-    "title": "The Contract Document Package Who Draws and Who Signs Each Component",
+    "title": "The Contract Document Package: Signing, Sealing, and Coordination Boundaries",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/candidate.md",
-    "candidate_sha256": "sha256:0fcd2b08a537556fe41b657cbbc69a3266d8d8bdf5fc0f96c293ed29f60e6ff1",
-    "normalized_sha256": "sha256:0fcd2b08a537556fe41b657cbbc69a3266d8d8bdf5fc0f96c293ed29f60e6ff1",
-    "linked_questions_sha256": "sha256:2ce49ab7cca07498ee3b9403514f3455324125b8fb83175855872b5a2f3b74cc",
-    "sources_sha256": "sha256:b7f835307dac4cdebc5b9265bb135feeb9edbe57438bb7910c059ef03dac7d7b"
+    "candidate_sha256": "sha256:13fca75b404c15d82d8cb659aac8750efe0554810b3013e9b35955912dbf1764",
+    "normalized_sha256": "sha256:13fca75b404c15d82d8cb659aac8750efe0554810b3013e9b35955912dbf1764",
+    "linked_questions_sha256": "sha256:69caae8a3eedc60e64c92b2a05b89e1183cf0e094c595394d88157bf36837bdc",
+    "sources_sha256": "sha256:e2b5425cf387fd0756473be31691609a15224c8cfb903361a168dff7696a9840"
   },
   "classification": {
     "content_type": "ra9266_uap301_contract_documents_article",
@@ -134,5 +134,48 @@
     "warnings": [],
     "checked_at": "2026-05-10T22:40:00+08:00"
   },
-  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate."
+  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate.",
+  "batch_id": "source-audited-article-batch-115-local-first",
+  "status": "pass",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "summary": "added a source-safe signing/sealing and contract-document coordination scenario grounded in RA 9266 IRR and UAP Document 301.",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573",
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-uap-document-301-2",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 596-598, 698-708; UAP Document 301 refined markdown lines 498-503, 521-540, and 573"
+      }
+    ]
+  },
+  "batch_115_refresh": {
+    "status": "current_serial_source_audit_refresh",
+    "branch": "3dlab-gray-viewport-bg",
+    "baseline_commit": "9c4d1f5e9",
+    "previous_batch_commit": "9c4d1f5e9",
+    "question_edits_refreshed": 10,
+    "historical_overlap_treatment": "Earlier Batch 005/006 local-first artifacts are recorded as historical overlap; the current serial production-line accepted set 087-114 did not include this article ID.",
+    "local_raw_source_rule": "Primary source truth is local PDFs under vitruvius-connection/001_Raw-Source-Layer with refined markdown used only for line anchors."
+  }
 }

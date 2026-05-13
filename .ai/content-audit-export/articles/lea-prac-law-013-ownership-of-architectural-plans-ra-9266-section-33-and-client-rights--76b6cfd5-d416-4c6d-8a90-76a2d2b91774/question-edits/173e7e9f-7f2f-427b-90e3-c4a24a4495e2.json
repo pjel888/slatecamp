@@ -1,12 +1,39 @@
 {
   "question_id": "173e7e9f-7f2f-427b-90e3-c4a24a4495e2",
   "baseline_hash": "sha256:44e09155dc5c4b63e61d5e952fd8640909d2b7dd11eea0bdcb1139d4ebff783c",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-013-008 to verified raw-source claims for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+    "parent_article_slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 170-192 and 708",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 170-192 and 708"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 170-192 and 708"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
-    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
+    "text": "An architect's service agreement is silent on copyright ownership and does not include any Section 33 notice. The client commissioned the design, paid in full, and received the plans. The client then licensed the designs to a third party for royalties. What is the most likely outcome of an infringement dispute between the architect and the licensing client?",
     "options": [
       {
         "id": "a",
@@ -24,6 +51,30 @@
         "id": "d",
         "text": "Both architect and client automatically become equal co-owners"
       }
-    ]
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Confuses statutory copyright ownership with contractual transfer; copyright vests by operation of RA 9266 Section 33, independent of written notice.",
+      "c": "Misunderstands copyright transfer mechanics; copyright does not transfer by mere payment or acceptance of compensation without written assignment.",
+      "d": "Incorrectly creates a co-ownership situation where none exists; copyright ownership is solely in the architect unless explicitly transferred by written agreement.",
+      "correct": "RA 9266 Section 33 vests copyright in the architect by operation of law, not by contract. While architects must incorporate Section 33 notice in agreements, the absence of written notice does not strip the architect of statutory copyright ownership. However, the lack of notice in the service agreement may complicate proof that the client understood the restrictions and weakens the architect's position regarding the client's intent and liability.",
+      "takeaway": "Copyright in architectural work vests automatically by law in the architect; written notice is protective evidence but not required for ownership."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
+    "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-013-008"
   }
 }

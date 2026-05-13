@@ -1,7 +1,7 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T21:50:00+08:00",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T20:45:00+08:00",
   "audit_mode": "local_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
@@ -14,10 +14,10 @@
     "title": "LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/candidate.md",
-    "candidate_sha256": "sha256:fb216d5062309dfe0f323f2605a96dd5ca2d475124849d697f47fefd9fb3a459",
-    "normalized_sha256": "sha256:fb216d5062309dfe0f323f2605a96dd5ca2d475124849d697f47fefd9fb3a459",
-    "linked_questions_sha256": "sha256:a32a88d40964c9d60a4ebdd8e0eae0f75551e24904248d96ac061186ca573893",
-    "sources_sha256": "sha256:65f6e2147a89d1e045c61953a2e03dff070960ecee483bf30b636e89aa5180da"
+    "candidate_sha256": "sha256:8036f7a811d6e4434e97a118b92345e992804ed4b1ac99da67ac9b11d5f57f05",
+    "normalized_sha256": "sha256:8036f7a811d6e4434e97a118b92345e992804ed4b1ac99da67ac9b11d5f57f05",
+    "linked_questions_sha256": "sha256:f8333655f04dd17c2667a0ade0cae42ddb407b1c2fadb330b3a1b8809c18a912",
+    "sources_sha256": "sha256:be603cc8dddaab6c697fbeedea3b341d475e598f359a753280ae9331af354f6e"
   },
   "classification": {
     "content_type": "ra9266_lea_structure_article",
@@ -112,7 +112,7 @@
     }
   ],
   "unsupported_or_removed_claims": [
-    "Removed learner-visible UI placeholders, preserved placeholder blocks, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
+    "Removed learner-visible UI marker artifacts, preserved source-audited block structure, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
     "Removed five-subject and subject-weight claims; Section 14 lists four numbered subject groups and no weights.",
     "Corrected results rule from public announcement to submission of ratings to the Commission within thirty calendar days unless extended.",
     "Removed no-maximum-attempts retake claim; retained source-backed Section 13 reapplication/truthfulness boundary."
@@ -131,5 +131,36 @@
     "blockers": 0,
     "warnings": [],
     "checked_at": "2026-05-10T21:50:00+08:00"
+  },
+  "batch_id": "source-audited-article-batch-115-local-first",
+  "status": "pass",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "summary": "added a source-safe LEA results and reapplication scenario grounded in RA 9266 IRR Sections 13, 15, and 16.",
+    "source_locator": "RA 9266 IRR refined markdown lines 411, 532, and 538",
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538"
+      }
+    ]
+  },
+  "batch_115_refresh": {
+    "status": "current_serial_source_audit_refresh",
+    "branch": "3dlab-gray-viewport-bg",
+    "baseline_commit": "9c4d1f5e9",
+    "previous_batch_commit": "9c4d1f5e9",
+    "question_edits_refreshed": 10,
+    "historical_overlap_treatment": "Earlier Batch 005/006 local-first artifacts are recorded as historical overlap; the current serial production-line accepted set 087-114 did not include this article ID.",
+    "local_raw_source_rule": "Primary source truth is local PDFs under vitruvius-connection/001_Raw-Source-Layer with refined markdown used only for line anchors."
   }
 }

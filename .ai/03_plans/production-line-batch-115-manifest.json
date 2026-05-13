@@ -1,0 +1,128 @@
+{
+  "batch_id": "source-audited-article-batch-115-local-first",
+  "batch_number": "115",
+  "reserved_at": "2026-05-13T20:45:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "9c4d1f5e9",
+  "current_head_at_manifest_generation": "9c4d1f5e9",
+  "previous_batch": {
+    "batch_number": "114",
+    "commit": "9c4d1f5e9",
+    "status": "accepted_and_pushed"
+  },
+  "manifest_status": "pass",
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batch 114 LAW-007; selected LAW-008, LAW-009, LAW-012, LAW-013, and LAW-016 with no duplicate article IDs from accepted Batches 087-114. LAW-010 and LAW-011 were already accepted in Batch 094; LAW-014 and LAW-015 are source-gap ineligible until a local RA 8293/IP Code raw PDF is added.",
+  "inherited_blocker_status": {
+    "status": "clear",
+    "notes": [
+      "Batch 114 is accepted and pushed at 9c4d1f5e9; Batch 115 starts from that live baseline.",
+      "Unrelated stairway and 3D learning work remains out of scope and must not be staged in this content batch.",
+      "Read-only rolling audit reports under .ai/03_plans/final-second-audit/rolling-readonly-swarm remain unstaged."
+    ]
+  },
+  "article_clusters": [
+    "LEA subject coverage, passing score, failure, and retaking under RA 9266 IRR",
+    "Oath, Certificate of Registration, registry entry, and PIC under RA 9266 IRR",
+    "Civil Code quasi-delict, Article 1723, solidary responsibility, and damages classification",
+    "Ownership/copyright of architectural documents under RA 9266 IRR Section 33",
+    "Contract-document package authorship, coordination, signing, and sealing under RA 9266 IRR and UAP Document 301"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "source_safe_real_world_scenarios_expected": 5
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+      "title": "LEA Structure: Subject Areas, Passing Standard, and Retaking",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed"
+    },
+    {
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+      "title": "Certificate of Registration, Oath-Taking, and the Professional ID Card",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57"
+    },
+    {
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+      "title": "Quasi-Delict and Tort in Architectural Practice: Civil Code Articles 2176-2194",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c"
+    },
+    {
+      "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+      "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+      "title": "Ownership of Architectural Plans: RA 9266 Section 33 and Client Rights",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774"
+    },
+    {
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+      "title": "The Contract Document Package: Who Draws and Who Signs Each Component",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-114",
+    "duplicate_hits": []
+  },
+  "source_gap_ineligible": [
+    {
+      "article_id": "c6be4708-0b58-4a18-84cd-5b496d12cfd8",
+      "slug": "lea-prac-law-014-intellectual-property-and-copyright-basics-for-architects",
+      "status": "source_gap_ineligible",
+      "reason": "No local RA 8293/IP Code raw PDF was found under vitruvius-connection/001_Raw-Source-Layer; sources.json has source_count 0 and no question-edits are present."
+    },
+    {
+      "article_id": "dddf3650-c560-4116-a65d-df37bdc92183",
+      "slug": "lea-prac-law-015-copyright-infringement-in-architectural-practice-unlicensed-reproduction-and-derivative-use",
+      "status": "source_gap_ineligible",
+      "reason": "No local RA 8293/IP Code raw PDF was found under vitruvius-connection/001_Raw-Source-Layer; sources.json has source_count 0 and no question-edits are present."
+    }
+  ],
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "LAW-008, LAW-009, LAW-012, LAW-013, and LAW-016 have historical Batch 005/006 local-first source-audited artifacts.",
+      "Those historical artifacts are treated as overlap only; none of these article IDs appear in accepted Batches 087-114.",
+      "Batch 115 refreshes the clusters under the current serial production-line baseline and records source hashes against local raw PDFs."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_live_index",
+    "expected_commit_message": "chore(content): accept source-audited batch 115",
+    "commit_created": false,
+    "push_performed": false,
+    "attempted_command": "git add -- <Batch 115 intended paths>",
+    "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "network_reachability": {
+      "status": "blocked_dns_resolution",
+      "command": "git ls-remote --heads origin 3dlab-gray-viewport-bg",
+      "failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+    }
+  }
+}

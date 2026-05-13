@@ -1,11 +1,92 @@
 {
   "question_id": "910c48ef-07df-4cb2-b8ba-3de4399cf720",
   "baseline_hash": "sha256:d97bd7cf3729596e39add3f77365b34a19871fa480b13c736887100973a66d72",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-012-006 to verified raw-source claims for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+    "parent_article_slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702",
+    "checked_markdown_lines": [
+      "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-civil-code-1",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-ra-9266-2",
+        "locator": "Civil Code refined markdown lines 5146 and 6639-6683; RA 9266 IRR refined markdown lines 21-31 and 698-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "An architect's junior designer, supervised by the architect, makes a critical error in structural calculations that causes a building's premature deterioration (not collapse). Who bears liability under quasi-delict?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the junior designer, as they directly performed the calculations without oversight"
+      },
+      {
+        "id": "b",
+        "text": "The architect, as responsible for employees' negligent acts under Article 2180"
+      },
+      {
+        "id": "c",
+        "text": "Only the client for failing to hire a more experienced architect, which is a common oversight in project management"
+      },
+      {
+        "id": "d",
+        "text": "No one, because it is not a structural collapse, and thus not typically actionable under standard liability clauses"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Ignores vicarious liability; the architect bears responsibility for supervised employees' conduct.",
+      "c": "Transfers fault to the client; hiring decisions do not shield the architect from vicarious liability for employee negligence.",
+      "d": "Wrongly excludes non-collapse defects; quasi-delict covers premature deterioration and functional defects, not just structural collapse.",
+      "correct": "Article 2180 provides that architects are responsible for damages caused by their employees' negligent acts performed in the course of work. The architect bears vicarious liability and must maintain professional standards in recruiting, training, and supervising staff.",
+      "takeaway": "Vicarious liability (Article 2180): architect responsible for employees' negligent acts; damages recoverable under quasi-delict."
+    },
+    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary.",
     "code_citation": "Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194",
-    "explanation": "Source-audited against Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194; the answer turns on negligence, prescription, and the Article 1723 boundary."
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-012-006"
   }
 }

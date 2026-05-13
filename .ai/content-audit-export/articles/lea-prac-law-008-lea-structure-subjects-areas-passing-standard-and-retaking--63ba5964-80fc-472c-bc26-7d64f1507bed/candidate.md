@@ -41,3 +41,9 @@ The checked IRR pages do not state a maximum number of attempts. They also do no
 - Use 70 percent weighted general average plus no subject lower than 50 percent.
 - Use thirty calendar days for submission of ratings to the Commission, unless extended for just cause.
 - Do not add subject weights, item counts, or no-limit retake claims to this RA 9266 IRR lesson.
+
+### Real World Scenario: Reading a borderline LEA result
+
+A graduate sees a weighted general average above 70%, but one examination subject is below 50%. Treat that as a fail, not a close pass: the RA 9266 IRR passing rule requires both the 70% weighted general average and no grade lower than 50% in any subject. If the same candidate later reapplies, the application still has to be truthful because the Board may act against false evidence, false information, false swearing, or misrepresentation in registration or examination applications.
+
+Source: RA 9266 IRR, Sections 13, 15, and 16; local raw PDF checked with refined markdown anchors around lines 411, 532, and 538.

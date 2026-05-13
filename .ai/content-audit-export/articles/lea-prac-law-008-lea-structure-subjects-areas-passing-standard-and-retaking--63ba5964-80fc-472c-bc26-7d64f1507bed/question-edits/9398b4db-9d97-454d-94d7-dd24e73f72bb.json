@@ -1,11 +1,80 @@
 {
   "question_id": "9398b4db-9d97-454d-94d7-dd24e73f72bb",
   "baseline_hash": "sha256:eca38c808dabfc55eae4ef60301abcc26269f5ece59a6c781886deb0c81c0ce4",
-  "reason": "Batch 005 local source audit aligned LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries linked question ALE-PRAC-LAW-008-005 to verified RA 9266 IRR raw-source claims.",
-  "approved_by": "codex-local-source-audit-batch-005",
-  "approved_at": "2026-05-10T21:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-115-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking.",
+  "approved_by": "codex-local-source-audit-batch-115",
+  "approved_at": "2026-05-13T20:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+    "parent_article_slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 411, 532, and 538",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 411, 532, and 538"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-ra-9266-1",
+        "locator": "RA 9266 IRR refined markdown lines 411, 532, and 538"
+      }
+    ],
+    "local_source_safe_action": "Batch 115 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-115-local-first",
+    "historical_overlap_treatment": "Older Batch 005/006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "Where are LEA examination records, answer sheets, and graded papers custodially maintained?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the private office of the Board chairman, which is not a standard practice for record-keeping"
+      },
+      {
+        "id": "b",
+        "text": "Under the custody of the Professional Regulation Commission"
+      },
+      {
+        "id": "c",
+        "text": "At the CHED central office, which does not typically handle such records"
+      },
+      {
+        "id": "d",
+        "text": "In the candidate's personal file with the DTI, which is not a recognized procedure for examination records"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Misplaces records in private custody; Board chairs do not maintain official examination records; the PRC holds custodial responsibility.",
+      "c": "Conflates institutional roles; CHED accredits schools, not maintains examination records for professional licensure exams.",
+      "d": "Violates confidentiality and security; candidates do not hold official examination records; the PRC maintains centralized custody.",
+      "correct": "[UNVERIFIED] — Search results do not confirm the specific section or custodial requirement. Recommend verification against full RA 9266 IRR text before using this question., ensuring proper chain of custody and confidentiality.",
+      "takeaway": "ALE records custody: Professional Regulation Commission maintains official examination files under IRR Section 8."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
     "code_citation": "RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16",
-    "explanation": "Source-audited against RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster."
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 115"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-008-005"
   }
 }
