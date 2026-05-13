@@ -1,0 +1,71 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "audit_mode": "local_first_source_map_reservation",
+  "classification": "source_audited_article_question_bundle",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T23:15:59.429+08:00",
+  "overall": "pass",
+  "target": {
+    "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+    "slug": "lea-hist-002-03-core-concept",
+    "folder": ".ai/content-audit-export/articles/lea-hist-002-03-core-concept--630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+    "normalized_sha256": "sha256:da2150c2c7deb801cc4f512fb4c280302e96f909ca6c8a1c129574cc37c42da6",
+    "candidate_sha256_expected_after_compose": "sha256:da2150c2c7deb801cc4f512fb4c280302e96f909ca6c8a1c129574cc37c42da6",
+    "sources_sha256": "sha256:87dd9153855a90368004451c353e2d3b2881f969f7a0cabc70d99a5c2c8206c7"
+  },
+  "raw_sources": [
+    {
+      "source_id": "batch119-gothic-official-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-03-gothic-architecture.source-capture.md",
+      "sha256": "sha256:3a4b1ca5657471bc6960652666b4461c9b11dc6e7c8c43ca555fdd738f6f143b",
+      "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+      "status": "captured_local"
+    },
+    {
+      "source_id": "batch119-gothic-official-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-03-gothic-architecture.refined.md",
+      "sha256": "sha256:245a12de8046009563ffb24d6c10342c881e260be397532e37ff3c5fd2d490ce",
+      "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+      "status": "captured_local"
+    },
+    {
+      "source_id": "batch119-gothic-fletcher-local",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+      "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+      "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+      "status": "captured_local"
+    },
+    {
+      "source_id": "batch119-gothic-fletcher-local-pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+      "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+      "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+      "status": "captured_local"
+    }
+  ],
+  "claims": [
+    {
+      "status": "supported",
+      "claim": "Gothic Architecture article and linked-question edits are bounded to the Batch 119 local source map.",
+      "source_locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed exact Sainte-Chapelle glass area and scene-count dependence.",
+    "Removed exact Chartres window-count dependence.",
+    "Removed disputed Sainte-Chapelle architect attribution dependence."
+  ],
+  "remaining_local_blockers": [],
+  "gate_results": {
+    "local_capture_created": true,
+    "refined_conversion_created": true,
+    "linked_question_edits_created": true,
+    "unsupported_claims_removed_or_narrowed": true
+  },
+  "protocols_applied": [
+    "local source artifacts before article claims",
+    "article and linked questions improved together",
+    "roundtrip candidate composition preserved",
+    "no Supabase push, deploy, production DB mutation, or main merge"
+  ]
+}

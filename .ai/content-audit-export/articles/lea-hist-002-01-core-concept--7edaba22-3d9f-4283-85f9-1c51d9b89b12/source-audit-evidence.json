@@ -1,0 +1,71 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "audit_mode": "local_first_source_map_reservation",
+  "classification": "source_audited_article_question_bundle",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T23:15:59.429+08:00",
+  "overall": "pass",
+  "target": {
+    "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+    "slug": "lea-hist-002-01-core-concept",
+    "folder": ".ai/content-audit-export/articles/lea-hist-002-01-core-concept--7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+    "normalized_sha256": "sha256:6545e00e4135ebdf2a8a04d1228c458b8c96eb98e24e4bdfa7ee861b2c313056",
+    "candidate_sha256_expected_after_compose": "sha256:6545e00e4135ebdf2a8a04d1228c458b8c96eb98e24e4bdfa7ee861b2c313056",
+    "sources_sha256": "sha256:c60fad5e415a86834a811f596440953acc95bc0660a2b3c20ad2ba0ce4abdee4"
+  },
+  "raw_sources": [
+    {
+      "source_id": "batch119-byzantine-official-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.source-capture.md",
+      "sha256": "sha256:8ef9c81c76435309228863d9abb7a432b5f8b17bdccd771d01722348764a8add",
+      "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+      "status": "captured_local"
+    },
+    {
+      "source_id": "batch119-byzantine-official-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.refined.md",
+      "sha256": "sha256:a9d7eb3b6e61b9ec4c0e820e28e0958277bf0cdaae38db62cb49c324a386dc1d",
+      "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+      "status": "captured_local"
+    },
+    {
+      "source_id": "batch119-byzantine-fletcher-local",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+      "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+      "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+      "status": "captured_local"
+    },
+    {
+      "source_id": "batch119-byzantine-fletcher-local-pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+      "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+      "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+      "status": "captured_local"
+    }
+  ],
+  "claims": [
+    {
+      "status": "supported",
+      "claim": "Early Christian and Byzantine architecture article and linked-question edits are bounded to the Batch 119 local source map.",
+      "source_locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed exact Hagia Sophia dimension dependence.",
+    "Removed exact window-count dependence from the Hagia Sophia light prompt.",
+    "Narrowed icon/image claims to source-safe architectural visual culture."
+  ],
+  "remaining_local_blockers": [],
+  "gate_results": {
+    "local_capture_created": true,
+    "refined_conversion_created": true,
+    "linked_question_edits_created": true,
+    "unsupported_claims_removed_or_narrowed": true
+  },
+  "protocols_applied": [
+    "local source artifacts before article claims",
+    "article and linked questions improved together",
+    "roundtrip candidate composition preserved",
+    "no Supabase push, deploy, production DB mutation, or main merge"
+  ]
+}

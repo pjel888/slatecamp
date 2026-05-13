@@ -1,3 +1,32 @@
+# Batch 119 New Source-Map Phase Coordination Update
+
+Updated: 2026-05-13T23:12:59.669+08:00
+
+## Status
+
+- Batch 119: local-first article gates prepared; final live git gate tracked separately
+- Branch: 3dlab-gray-viewport-bg
+- Selected articles: 5
+- Linked question edits: 57
+- Phase: continued residual non-prac internet-source capture/source-map phase
+- Forbidden external actions: none performed.
+
+## Batch 119 Gate Summary
+
+- Compose/diff/validate strict 5/5: tracked in scoped checks
+- UI-block edit validation: tracked in scoped checks
+- Source hash checks: tracked in scoped checks
+- Linked-question/question-edit count checks: 57/57
+- Final JSON/test/git gates are tracked in the Batch 119 scoped checks artifact.
+
+## Coordination Notes
+
+- Batch 118 was accepted at a0d170bc6 and selected lea-hist-001-01 through lea-hist-001-05.
+- Batch 119 selected the next sourceable history clusters: Roman, Indus, Early Christian/Byzantine, Romanesque, and Gothic.
+- Do not publish, Supabase-push, deploy, mutate production DB, or merge to main without later authorization.
+
+---
+
 # Batch 118 New Source-Map Phase Coordination Update
 
 Updated: 2026-05-13T22:42:00+08:00

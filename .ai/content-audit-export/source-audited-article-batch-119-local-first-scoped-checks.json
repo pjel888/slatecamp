@@ -1,0 +1,343 @@
+{
+  "batch_id": "source-audited-article-batch-119-local-first",
+  "batch_number": 119,
+  "generated_at": "2026-05-13T23:15:59.429+08:00",
+  "status": "pass",
+  "gates": {
+    "compose_diff_validate_strict_5_of_5": {
+      "status": "pass",
+      "expected_articles": 5,
+      "actual_articles": 5,
+      "articles": [
+        {
+          "slug": "lea-hist-001-06-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-001-08-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-002-01-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-002-02-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-002-03-core-concept",
+          "status": "pass"
+        }
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "files": [
+        ".ai/content-audit-export/articles/lea-hist-001-06-core-concept--a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-001-08-core-concept--d74be6f2-436b-46ca-8755-1060ecb7c5c1/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-002-01-core-concept--7edaba22-3d9f-4283-85f9-1c51d9b89b12/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-002-03-core-concept--630d0fd8-e25f-4bf8-a62f-f31b4e320831/ui-block-edit-validation.json"
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 103,
+      "failures": [],
+      "note": "Count includes article bundle JSON, question-edit JSON, source-audit evidence, global validation/UI-block summaries, Batch 119 ledger, manifest, and scoped checks."
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "findings": [],
+      "scope": "normalized.md, candidate.md, and question-edits/*.json for five Batch 119 articles; original.md historical UI markers excluded from outgoing learner content scan.",
+      "hits": 0
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "checked_files": 18,
+      "failures": [],
+      "checks": [
+        {
+          "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+          "slug": "lea-hist-001-06-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-001-06-roman-architecture.source-capture.md",
+          "expected_sha256": "sha256:dec124142c514380097ecaef2375ec1e155395e0f0e0f755f1cf585154e84b51",
+          "actual_sha256": "sha256:dec124142c514380097ecaef2375ec1e155395e0f0e0f755f1cf585154e84b51",
+          "source_id": "batch119-roman-official-source-map-capture",
+          "locator": "UNESCO Rome/Pont du Gard captures plus Fletcher Roman architecture locators for concrete, arches, vaults, Pantheon, Colosseum, and aqueducts.",
+          "status": "pass"
+        },
+        {
+          "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+          "slug": "lea-hist-001-06-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-001-06-roman-architecture.refined.md",
+          "expected_sha256": "sha256:437ad47b5fc3e91e407e127fea6e99d70679d5e272fc0bbc147af31e444bac1e",
+          "actual_sha256": "sha256:437ad47b5fc3e91e407e127fea6e99d70679d5e272fc0bbc147af31e444bac1e",
+          "source_id": "batch119-roman-official-source-map-refined",
+          "locator": "UNESCO Rome/Pont du Gard captures plus Fletcher Roman architecture locators for concrete, arches, vaults, Pantheon, Colosseum, and aqueducts.",
+          "status": "pass"
+        },
+        {
+          "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+          "slug": "lea-hist-001-06-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "expected_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "actual_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "source_id": "batch119-roman-fletcher-local",
+          "locator": "UNESCO Rome/Pont du Gard captures plus Fletcher Roman architecture locators for concrete, arches, vaults, Pantheon, Colosseum, and aqueducts.",
+          "status": "pass"
+        },
+        {
+          "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+          "slug": "lea-hist-001-06-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "expected_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "actual_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "source_id": "batch119-roman-fletcher-local-pdf",
+          "locator": "UNESCO Rome/Pont du Gard captures plus Fletcher Roman architecture locators for concrete, arches, vaults, Pantheon, Colosseum, and aqueducts.",
+          "status": "pass"
+        },
+        {
+          "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+          "slug": "lea-hist-001-08-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.source-capture.md",
+          "expected_sha256": "sha256:2465efd298f19029d4ab4334aad289a1f18c6f304dc3ce954ab4ca9bfc324c4a",
+          "actual_sha256": "sha256:2465efd298f19029d4ab4334aad289a1f18c6f304dc3ce954ab4ca9bfc324c4a",
+          "source_id": "batch119-indus-official-source-map-capture",
+          "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution.",
+          "status": "pass"
+        },
+        {
+          "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+          "slug": "lea-hist-001-08-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.refined.md",
+          "expected_sha256": "sha256:1e3a9c845328c99516fee2717263d5d1a8f77b0fe4c3cd30735d7bd5afd017ad",
+          "actual_sha256": "sha256:1e3a9c845328c99516fee2717263d5d1a8f77b0fe4c3cd30735d7bd5afd017ad",
+          "source_id": "batch119-indus-official-source-map-refined",
+          "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution.",
+          "status": "pass"
+        },
+        {
+          "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+          "slug": "lea-hist-002-01-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.source-capture.md",
+          "expected_sha256": "sha256:8ef9c81c76435309228863d9abb7a432b5f8b17bdccd771d01722348764a8add",
+          "actual_sha256": "sha256:8ef9c81c76435309228863d9abb7a432b5f8b17bdccd771d01722348764a8add",
+          "source_id": "batch119-byzantine-official-source-map-capture",
+          "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+          "status": "pass"
+        },
+        {
+          "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+          "slug": "lea-hist-002-01-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.refined.md",
+          "expected_sha256": "sha256:a9d7eb3b6e61b9ec4c0e820e28e0958277bf0cdaae38db62cb49c324a386dc1d",
+          "actual_sha256": "sha256:a9d7eb3b6e61b9ec4c0e820e28e0958277bf0cdaae38db62cb49c324a386dc1d",
+          "source_id": "batch119-byzantine-official-source-map-refined",
+          "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+          "status": "pass"
+        },
+        {
+          "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+          "slug": "lea-hist-002-01-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "expected_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "actual_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "source_id": "batch119-byzantine-fletcher-local",
+          "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+          "status": "pass"
+        },
+        {
+          "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+          "slug": "lea-hist-002-01-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "expected_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "actual_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "source_id": "batch119-byzantine-fletcher-local-pdf",
+          "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+          "status": "pass"
+        },
+        {
+          "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+          "slug": "lea-hist-002-02-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-02-romanesque-architecture.source-capture.md",
+          "expected_sha256": "sha256:79e83d7bd1e78c1e994d00b2f5cce95ae9d5a11bb9d846cac888b868072ebe6d",
+          "actual_sha256": "sha256:79e83d7bd1e78c1e994d00b2f5cce95ae9d5a11bb9d846cac888b868072ebe6d",
+          "source_id": "batch119-romanesque-official-source-map-capture",
+          "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting.",
+          "status": "pass"
+        },
+        {
+          "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+          "slug": "lea-hist-002-02-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-02-romanesque-architecture.refined.md",
+          "expected_sha256": "sha256:e85bd0f7594d5eb4c311e39f10351413c35747518f9aa462a806362d0c0d371e",
+          "actual_sha256": "sha256:e85bd0f7594d5eb4c311e39f10351413c35747518f9aa462a806362d0c0d371e",
+          "source_id": "batch119-romanesque-official-source-map-refined",
+          "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting.",
+          "status": "pass"
+        },
+        {
+          "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+          "slug": "lea-hist-002-02-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "expected_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "actual_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "source_id": "batch119-romanesque-fletcher-local",
+          "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting.",
+          "status": "pass"
+        },
+        {
+          "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+          "slug": "lea-hist-002-02-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "expected_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "actual_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "source_id": "batch119-romanesque-fletcher-local-pdf",
+          "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting.",
+          "status": "pass"
+        },
+        {
+          "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+          "slug": "lea-hist-002-03-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-03-gothic-architecture.source-capture.md",
+          "expected_sha256": "sha256:3a4b1ca5657471bc6960652666b4461c9b11dc6e7c8c43ca555fdd738f6f143b",
+          "actual_sha256": "sha256:3a4b1ca5657471bc6960652666b4461c9b11dc6e7c8c43ca555fdd738f6f143b",
+          "source_id": "batch119-gothic-official-source-map-capture",
+          "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+          "status": "pass"
+        },
+        {
+          "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+          "slug": "lea-hist-002-03-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-03-gothic-architecture.refined.md",
+          "expected_sha256": "sha256:245a12de8046009563ffb24d6c10342c881e260be397532e37ff3c5fd2d490ce",
+          "actual_sha256": "sha256:245a12de8046009563ffb24d6c10342c881e260be397532e37ff3c5fd2d490ce",
+          "source_id": "batch119-gothic-official-source-map-refined",
+          "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+          "status": "pass"
+        },
+        {
+          "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+          "slug": "lea-hist-002-03-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "expected_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "actual_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "source_id": "batch119-gothic-fletcher-local",
+          "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+          "status": "pass"
+        },
+        {
+          "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+          "slug": "lea-hist-002-03-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "expected_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "actual_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "source_id": "batch119-gothic-fletcher-local-pdf",
+          "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+          "status": "pass"
+        }
+      ]
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+          "slug": "lea-hist-001-06-core-concept",
+          "linked_question_count": 12,
+          "question_edit_count": 12,
+          "status": "pass"
+        },
+        {
+          "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+          "slug": "lea-hist-001-08-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+          "slug": "lea-hist-002-01-core-concept",
+          "linked_question_count": 11,
+          "question_edit_count": 11,
+          "status": "pass"
+        },
+        {
+          "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+          "slug": "lea-hist-002-02-core-concept",
+          "linked_question_count": 12,
+          "question_edit_count": 12,
+          "status": "pass"
+        },
+        {
+          "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+          "slug": "lea-hist-002-03-core-concept",
+          "linked_question_count": 12,
+          "question_edit_count": 12,
+          "status": "pass"
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+          "slug": "lea-hist-001-06-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-001-06-core-concept--a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+          "slug": "lea-hist-001-08-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-001-08-core-concept--d74be6f2-436b-46ca-8755-1060ecb7c5c1/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+          "slug": "lea-hist-002-01-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-002-01-core-concept--7edaba22-3d9f-4283-85f9-1c51d9b89b12/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+          "slug": "lea-hist-002-02-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+          "slug": "lea-hist-002-03-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-002-03-core-concept--630d0fd8-e25f-4bf8-a62f-f31b4e320831/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        }
+      ]
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expect() calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <Batch 119 intended paths>",
+      "result": "PASS: git diff --check -- <Batch 119 intended paths>"
+    },
+    "cached_diff_check": {
+      "status": "pass",
+      "result": "PASS: temporary-index cached diff check passed after adding intended Batch 119 paths only, including ignored vitruvius source-map files via git add -f"
+    },
+    "real_git_stage_commit_push_gate": {
+      "status": "blocked",
+      "expected_commit_message": "chore(content): accept source-audited batch 119",
+      "result": "BLOCKED: live git add failed with .git/index.lock permission denial; GitHub reachability failed with Could not resolve host: github.com; Hermes should stage intended Batch 119 paths, commit chore(content): accept source-audited batch 119, and push origin/3dlab-gray-viewport-bg"
+    }
+  }
+}

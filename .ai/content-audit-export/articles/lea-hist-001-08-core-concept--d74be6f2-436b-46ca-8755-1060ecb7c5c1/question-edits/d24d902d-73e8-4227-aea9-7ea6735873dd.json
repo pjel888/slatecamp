@@ -1,0 +1,89 @@
+{
+  "question_id": "d24d902d-73e8-4227-aea9-7ea6735873dd",
+  "baseline_hash": "sha256:d4d3e052555c4fbafe1daf0342522eed1fbe63d9268a1d396fb76000e9a52705",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-001-08-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+    "parent_article_slug": "lea-hist-001-08-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution.",
+    "checked_markdown_lines": [
+      "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.source-capture.md",
+        "sha256": "sha256:2465efd298f19029d4ab4334aad289a1f18c6f304dc3ce954ab4ca9bfc324c4a",
+        "source_id": "batch119-indus-official-source-map-capture",
+        "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.refined.md",
+        "sha256": "sha256:1e3a9c845328c99516fee2717263d5d1a8f77b0fe4c3cd30735d7bd5afd017ad",
+        "source_id": "batch119-indus-official-source-map-refined",
+        "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "d24d902d-73e8-4227-aea9-7ea6735873dd",
+    "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+    "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+    "text": "What is the safest conclusion about Indus urban decline for source-audited LEA content?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A single proven invasion event explains every city at once"
+      },
+      {
+        "id": "b",
+        "text": "Urban change appears gradual, with environmental, economic, and settlement factors debated"
+      },
+      {
+        "id": "c",
+        "text": "The cities continued unchanged into the modern period"
+      },
+      {
+        "id": "d",
+        "text": "The decline is fully explained by one known ruler abandoning the cities"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The article avoids a single-cause collapse claim and keeps the explanation cautious.",
+      "takeaway": "Treat Indus decline as debated and gradual, not a simple invasion story."
+    },
+    "explanation": "The article avoids a single-cause collapse claim and keeps the explanation cautious. Treat Indus decline as debated and gradual, not a simple invasion story.",
+    "code_citation": null,
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "CON"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-08-009",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.126756+00:00",
+    "updated_at": "2026-05-06T15:00:16.763331+00:00",
+    "content_hash": "sha256:d4d3e052555c4fbafe1daf0342522eed1fbe63d9268a1d396fb76000e9a52705"
+  }
+}

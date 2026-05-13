@@ -1,0 +1,101 @@
+{
+  "question_id": "ffcec3a7-5802-4dc4-994d-3329524de238",
+  "baseline_hash": "sha256:95b7321afc4daaf4ab25d757dc431def6b3d7b11b6ea02c89db2a51b0ba61958",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-002-01-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+    "parent_article_slug": "lea-hist-002-01-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+    "checked_markdown_lines": [
+      "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.source-capture.md",
+        "sha256": "sha256:8ef9c81c76435309228863d9abb7a432b5f8b17bdccd771d01722348764a8add",
+        "source_id": "batch119-byzantine-official-source-map-capture",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.refined.md",
+        "sha256": "sha256:a9d7eb3b6e61b9ec4c0e820e28e0958277bf0cdaae38db62cb49c324a386dc1d",
+        "source_id": "batch119-byzantine-official-source-map-refined",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch119-byzantine-fletcher-local",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch119-byzantine-fletcher-local-pdf",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "ffcec3a7-5802-4dc4-994d-3329524de238",
+    "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+    "topic_id": "3f531a0e-fd27-401e-aa3b-221570c0666b",
+    "text": "What does Byzantine use of mosaics, gold surfaces, colored marble, and reflected light most safely express?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A purely secular display with no sacred reading"
+      },
+      {
+        "id": "b",
+        "text": "A luminous sacred interior where light helps make the divine visually present"
+      },
+      {
+        "id": "c",
+        "text": "A rejection of all images and ornament"
+      },
+      {
+        "id": "d",
+        "text": "A technical need to hide structural failure"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The source-safe article treats Byzantine light and mosaic as sacred interior atmosphere.",
+      "takeaway": "Byzantine interiors use light and mosaic as theological space."
+    },
+    "explanation": "The source-safe article treats Byzantine light and mosaic as sacred interior atmosphere. Byzantine interiors use light and mosaic as theological space.",
+    "code_citation": null,
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "CON"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-01-007",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-05-06T11:57:31.167229+00:00",
+    "content_hash": "sha256:95b7321afc4daaf4ab25d757dc431def6b3d7b11b6ea02c89db2a51b0ba61958"
+  }
+}

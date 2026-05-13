@@ -1,3 +1,32 @@
+# Batch 119 New Source-Map Phase Handoff Update
+
+Last updated: 2026-05-13T23:12:59.669+08:00
+
+## Current State
+
+- Latest local-first source-map batch prepared: Batch 119
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 119: a0d170bc6
+- Phase: continued user-authorized residual non-prac source-map/reservation phase after Batch 118 acceptance
+- Selected articles: lea-hist-001-06-core-concept, lea-hist-001-08-core-concept, lea-hist-002-01-core-concept, lea-hist-002-02-core-concept, lea-hist-002-03-core-concept
+- Linked question edits: 57/57
+- Source artifacts: 10 local source-map capture/conversion files under the Vitruvius raw source and raw conversion layers
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Validation Evidence
+
+- Report: .ai/content-audit-export/source-audited-article-batch-119-local-first-report.md
+- Ledger: .ai/content-audit-export/source-audited-article-batch-119-local-first-ledger.json
+- Scoped checks: .ai/content-audit-export/source-audited-article-batch-119-local-first-scoped-checks.json
+- Manifest: .ai/03_plans/production-line-batch-119-manifest.json
+- QA memo: .ai/03_plans/batch-119-independent-quality-review.md
+
+## Batch 119 Next Phase
+
+Continue residual non-prac source-map batches from the next sourceable linked-question bundles after lea-hist-002-03. Preserve the rule that every accepted article must include linked question edits and local source artifacts before candidate composition.
+
+---
+
 # Batch 118 New Source-Map Phase Handoff Update
 
 Last updated: 2026-05-13T22:42:00+08:00

@@ -1,0 +1,101 @@
+{
+  "question_id": "a8e7d30e-1331-46a9-a907-c96d5337018c",
+  "baseline_hash": "sha256:748e1af1af3b2e2916aa906e9f178d34ff0bc60fc0ba7ed37aafc2b5d2ee276c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-002-03-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+    "parent_article_slug": "lea-hist-002-03-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+    "checked_markdown_lines": [
+      "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-03-gothic-architecture.source-capture.md",
+        "sha256": "sha256:3a4b1ca5657471bc6960652666b4461c9b11dc6e7c8c43ca555fdd738f6f143b",
+        "source_id": "batch119-gothic-official-source-map-capture",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-03-gothic-architecture.refined.md",
+        "sha256": "sha256:245a12de8046009563ffb24d6c10342c881e260be397532e37ff3c5fd2d490ce",
+        "source_id": "batch119-gothic-official-source-map-refined",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch119-gothic-fletcher-local",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch119-gothic-fletcher-local-pdf",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "a8e7d30e-1331-46a9-a907-c96d5337018c",
+    "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+    "topic_id": "ce8e63ac-0dbb-4bcf-8a3d-5742edc9d930",
+    "text": "Why is the pointed arch important in Gothic structure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It makes walls carry no load at all"
+      },
+      {
+        "id": "b",
+        "text": "It can direct thrust more downward and adapt to varied spans, supporting taller and more flexible bays"
+      },
+      {
+        "id": "c",
+        "text": "It is only painted ornament"
+      },
+      {
+        "id": "d",
+        "text": "It replaces the need for vaults and buttresses in every case"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "Pointed arches help Gothic builders manage thrust and bay proportions.",
+      "takeaway": "Pointed arch helps Gothic height and flexibility."
+    },
+    "explanation": "Pointed arches help Gothic builders manage thrust and bay proportions. Pointed arch helps Gothic height and flexibility.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "ST"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-03-004",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-05-06T15:55:58.466213+00:00",
+    "content_hash": "sha256:748e1af1af3b2e2916aa906e9f178d34ff0bc60fc0ba7ed37aafc2b5d2ee276c"
+  }
+}

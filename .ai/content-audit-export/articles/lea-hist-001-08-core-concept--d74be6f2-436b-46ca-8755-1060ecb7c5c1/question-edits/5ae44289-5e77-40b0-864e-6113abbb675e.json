@@ -1,0 +1,89 @@
+{
+  "question_id": "5ae44289-5e77-40b0-864e-6113abbb675e",
+  "baseline_hash": "sha256:5b1035ae5a03b9bd0332518a8456dee57e1374f08c0bd3b72b223e850e048a0b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-001-08-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+    "parent_article_slug": "lea-hist-001-08-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution.",
+    "checked_markdown_lines": [
+      "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.source-capture.md",
+        "sha256": "sha256:2465efd298f19029d4ab4334aad289a1f18c6f304dc3ce954ab4ca9bfc324c4a",
+        "source_id": "batch119-indus-official-source-map-capture",
+        "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.refined.md",
+        "sha256": "sha256:1e3a9c845328c99516fee2717263d5d1a8f77b0fe4c3cd30735d7bd5afd017ad",
+        "source_id": "batch119-indus-official-source-map-refined",
+        "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "5ae44289-5e77-40b0-864e-6113abbb675e",
+    "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+    "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+    "text": "How should the lack of obvious monumental temples and palaces in Indus cities be interpreted safely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It proves the civilization was architecturally primitive"
+      },
+      {
+        "id": "b",
+        "text": "It suggests different social priorities, with urban functionality and standardization more visible than royal display"
+      },
+      {
+        "id": "c",
+        "text": "It means Indus cities were not planned"
+      },
+      {
+        "id": "d",
+        "text": "It proves there was no religion or public life"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The article frames this as a difference in visible priorities, not a lack of sophistication.",
+      "takeaway": "Do not equate absence of royal monuments with weak urbanism."
+    },
+    "explanation": "The article frames this as a difference in visible priorities, not a lack of sophistication. Do not equate absence of royal monuments with weak urbanism.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "design_application",
+    "practice_context": [
+      "CMP"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-08-006",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.126756+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:5b1035ae5a03b9bd0332518a8456dee57e1374f08c0bd3b72b223e850e048a0b"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "question_id": "ede9273d-a245-4b14-8029-efd88d0ab97c",
+  "baseline_hash": "sha256:4131775720dc334291a2afed72932eba70bb62fe654667fd8e147b3044489a39",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-002-01-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+    "parent_article_slug": "lea-hist-002-01-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans.",
+    "checked_markdown_lines": [
+      "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.source-capture.md",
+        "sha256": "sha256:8ef9c81c76435309228863d9abb7a432b5f8b17bdccd771d01722348764a8add",
+        "source_id": "batch119-byzantine-official-source-map-capture",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-01-early-christian-and-byzantine-architecture.refined.md",
+        "sha256": "sha256:a9d7eb3b6e61b9ec4c0e820e28e0958277bf0cdaae38db62cb49c324a386dc1d",
+        "source_id": "batch119-byzantine-official-source-map-refined",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch119-byzantine-fletcher-local",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch119-byzantine-fletcher-local-pdf",
+        "locator": "UNESCO Istanbul/Hagia Sophia and Ravenna captures plus Fletcher locators for basilica, pendentive, Hagia Sophia, San Vitale, mosaics, and centralized plans."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "ede9273d-a245-4b14-8029-efd88d0ab97c",
+    "article_id": "7edaba22-3d9f-4283-85f9-1c51d9b89b12",
+    "topic_id": "3f531a0e-fd27-401e-aa3b-221570c0666b",
+    "text": "How do Hagia Sophia and Old St. Peter's Basilica show different Christian spatial priorities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hagia Sophia emphasizes centralized vertical dome space; Old St. Peter's emphasizes longitudinal basilican procession"
+      },
+      {
+        "id": "b",
+        "text": "Both use identical pendentive dome systems"
+      },
+      {
+        "id": "c",
+        "text": "Old St. Peter's is a Gothic glass cathedral"
+      },
+      {
+        "id": "d",
+        "text": "Hagia Sophia is an amphitheatre for public spectacle"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The distinction is centralized Byzantine dome versus linear Early Christian basilica.",
+      "takeaway": "Byzantine centralization differs from basilican procession."
+    },
+    "explanation": "The distinction is centralized Byzantine dome versus linear Early Christian basilica. Byzantine centralization differs from basilican procession.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "design_application",
+    "practice_context": [
+      "CMP"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-01-009",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:4131775720dc334291a2afed72932eba70bb62fe654667fd8e147b3044489a39"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "question_id": "3ec40fbb-c347-4375-9de9-273808b4b665",
+  "baseline_hash": "sha256:ca21c4530cc3ce0461018ed671200f0af6bb8a1e163fcc966a2bb79ea217c4bf",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-002-02-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+    "parent_article_slug": "lea-hist-002-02-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting.",
+    "checked_markdown_lines": [
+      "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-02-romanesque-architecture.source-capture.md",
+        "sha256": "sha256:79e83d7bd1e78c1e994d00b2f5cce95ae9d5a11bb9d846cac888b868072ebe6d",
+        "source_id": "batch119-romanesque-official-source-map-capture",
+        "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-02-romanesque-architecture.refined.md",
+        "sha256": "sha256:e85bd0f7594d5eb4c311e39f10351413c35747518f9aa462a806362d0c0d371e",
+        "source_id": "batch119-romanesque-official-source-map-refined",
+        "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch119-romanesque-fletcher-local",
+        "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch119-romanesque-fletcher-local-pdf",
+        "locator": "UNESCO Durham/Pisa/Speyer/Santiago captures plus Fletcher Romanesque locators for round arches, barrel vaults, thick walls, pilgrimage plans, and transitional vaulting."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "3ec40fbb-c347-4375-9de9-273808b4b665",
+    "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+    "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+    "text": "What architectural challenge does a Romanesque barrel vault create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Too much wall transparency and glass area"
+      },
+      {
+        "id": "b",
+        "text": "Outward thrust that requires thick walls, heavy piers, and limited openings"
+      },
+      {
+        "id": "c",
+        "text": "A need for pendentives below every vault"
+      },
+      {
+        "id": "d",
+        "text": "A total lack of compression in the masonry"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "A barrel vault creates lateral thrust, so the wall system becomes heavy.",
+      "takeaway": "Barrel vault thrust explains Romanesque mass."
+    },
+    "explanation": "A barrel vault creates lateral thrust, so the wall system becomes heavy. Barrel vault thrust explains Romanesque mass.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "ST"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-02-004",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-05-06T11:57:20.901101+00:00",
+    "content_hash": "sha256:ca21c4530cc3ce0461018ed671200f0af6bb8a1e163fcc966a2bb79ea217c4bf"
+  }
+}

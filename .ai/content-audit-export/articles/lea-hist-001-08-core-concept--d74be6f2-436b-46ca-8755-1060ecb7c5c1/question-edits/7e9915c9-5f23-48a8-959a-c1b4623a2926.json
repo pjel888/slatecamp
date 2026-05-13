@@ -1,0 +1,89 @@
+{
+  "question_id": "7e9915c9-5f23-48a8-959a-c1b4623a2926",
+  "baseline_hash": "sha256:7177557a9f26115e1f12e93de5c6ec68845843c98b4758cabcb407c1133f6f29",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-001-08-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+    "parent_article_slug": "lea-hist-001-08-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution.",
+    "checked_markdown_lines": [
+      "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.source-capture.md",
+        "sha256": "sha256:2465efd298f19029d4ab4334aad289a1f18c6f304dc3ce954ab4ca9bfc324c4a",
+        "source_id": "batch119-indus-official-source-map-capture",
+        "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-001-08-indus-valley-civilization-architecture.refined.md",
+        "sha256": "sha256:1e3a9c845328c99516fee2717263d5d1a8f77b0fe4c3cd30735d7bd5afd017ad",
+        "source_id": "batch119-indus-official-source-map-refined",
+        "locator": "UNESCO Moenjodaro capture plus Harappa/British Museum/Met search-captured anchors for Indus urban planning, brick, drainage, and Great Bath caution."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "7e9915c9-5f23-48a8-959a-c1b4623a2926",
+    "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+    "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+    "text": "A brick-lined sunken water structure at Mohenjo-daro includes stairs, waterproofing, and drainage. Which structure is being described?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A granary at Harappa"
+      },
+      {
+        "id": "b",
+        "text": "The Great Bath at Mohenjo-daro"
+      },
+      {
+        "id": "c",
+        "text": "A Roman caldarium"
+      },
+      {
+        "id": "d",
+        "text": "A Mesopotamian ziggurat platform"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The Great Bath is the source-safe Indus recognition item for this water-structure description.",
+      "takeaway": "Great Bath is a Mohenjo-daro water-management anchor."
+    },
+    "explanation": "The Great Bath is the source-safe Indus recognition item for this water-structure description. Great Bath is a Mohenjo-daro water-management anchor.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "recall",
+    "practice_context": [
+      "DESC"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-08-008",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.126756+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:7177557a9f26115e1f12e93de5c6ec68845843c98b4758cabcb407c1133f6f29"
+  }
+}

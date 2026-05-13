@@ -1,0 +1,101 @@
+{
+  "question_id": "fefd377a-4872-4bce-982d-936d5521a632",
+  "baseline_hash": "sha256:a9e2c331e7fcc31698d20ca4726abb73843e9797155ae94388fe93d18f4a0fce",
+  "action": "replace",
+  "reason": "source-audited-article-batch-119-local-first source-maps lea-hist-002-03-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-119",
+  "approved_at": "2026-05-13T23:15:59.429+08:00",
+  "source_audit_support": {
+    "parent_article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+    "parent_article_slug": "lea-hist-002-03-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction.",
+    "checked_markdown_lines": [
+      "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-119/lea-hist-002-03-gothic-architecture.source-capture.md",
+        "sha256": "sha256:3a4b1ca5657471bc6960652666b4461c9b11dc6e7c8c43ca555fdd738f6f143b",
+        "source_id": "batch119-gothic-official-source-map-capture",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-119/lea-hist-002-03-gothic-architecture.refined.md",
+        "sha256": "sha256:245a12de8046009563ffb24d6c10342c881e260be397532e37ff3c5fd2d490ce",
+        "source_id": "batch119-gothic-official-source-map-refined",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch119-gothic-fletcher-local",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch119-gothic-fletcher-local-pdf",
+        "locator": "UNESCO Chartres/Amiens/Reims/Cologne captures, official Sainte-Chapelle page, and Fletcher Gothic locators for pointed arch, ribbed vault, flying buttress, light, and skeletal construction."
+      }
+    ],
+    "local_source_safe_action": "Batch 119 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-119-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "fefd377a-4872-4bce-982d-936d5521a632",
+    "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+    "topic_id": "ce8e63ac-0dbb-4bcf-8a3d-5742edc9d930",
+    "text": "What is the safest distinction between Romanesque rib experiments and the Gothic ribbed-vault system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Romanesque and Gothic ribs always behave identically"
+      },
+      {
+        "id": "b",
+        "text": "Gothic ribs are only painted decoration"
+      },
+      {
+        "id": "c",
+        "text": "Gothic ribs become part of a coordinated load path to supports, while Romanesque use is more limited or transitional"
+      },
+      {
+        "id": "d",
+        "text": "Romanesque never used any vaulting"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The article keeps Gothic ribs as part of an integrated structural system.",
+      "takeaway": "Gothic ribs matter because they join the whole skeletal system."
+    },
+    "explanation": "The article keeps Gothic ribs as part of an integrated structural system. Gothic ribs matter because they join the whole skeletal system.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "design_application",
+    "practice_context": [
+      "CMP"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-03-009",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:a9e2c331e7fcc31698d20ca4726abb73843e9797155ae94388fe93d18f4a0fce"
+  }
+}
