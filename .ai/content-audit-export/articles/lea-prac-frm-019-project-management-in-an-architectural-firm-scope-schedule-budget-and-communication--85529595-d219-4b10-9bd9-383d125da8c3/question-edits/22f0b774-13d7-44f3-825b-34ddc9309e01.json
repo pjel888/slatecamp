@@ -2,76 +2,96 @@
   "question_id": "22f0b774-13d7-44f3-825b-34ddc9309e01",
   "baseline_hash": "sha256:621ff7165abe5986300068e35c65ddba2c14ef9748f402f03fcda5ae2ae0e779",
   "action": "replace",
-  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
-  "approved_by": "codex-local-first-batch-036",
-  "approved_at": "2026-05-11T12:45:00+08:00",
+  "reason": "source-audited-article-batch-104-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control.",
+  "approved_by": "codex-local-source-audit-batch-104",
+  "approved_at": "2026-05-13T11:58:43+08:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-036-local-first",
+    "parent_article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+    "parent_article_slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite_with_deferred_final_depth_items",
+    "source_locator": "raw markdown lines 313-344; raw markdown lines 350-381; raw markdown lines 548-586; raw markdown lines 285-300; raw markdown lines 2920-2950; raw markdown lines 3320-3359; raw markdown lines 562-590; raw markdown lines 869-930; raw markdown lines 1161-1182",
+    "checked_markdown_lines": [
+      "raw markdown lines 313-344",
+      "raw markdown lines 350-381",
+      "raw markdown lines 548-586",
+      "raw markdown lines 285-300",
+      "raw markdown lines 2920-2950",
+      "raw markdown lines 3320-3359",
+      "raw markdown lines 562-590",
+      "raw markdown lines 869-930",
+      "raw markdown lines 1161-1182"
+    ],
     "checked_sources": [
       {
-        "source_id": "construction-project-management-handbook-shadan-fleming-local",
-        "label": "Construction Project Management Handbook by Shadan and Fleming",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
-        "checked_markdown_lines": [
-          "Construction Project Management Handbook refined markdown lines 253-257",
-          "Construction Project Management Handbook refined markdown lines 287-301",
-          "Construction Project Management Handbook refined markdown lines 387-429",
-          "Construction Project Management Handbook refined markdown lines 1544-1577",
-          "Construction Project Management Handbook refined markdown lines 1614-1664",
-          "Construction Project Management Handbook refined markdown lines 1680-1722",
-          "Construction Project Management Handbook refined markdown lines 1808-1819"
-        ]
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-uap-standards-service-phases",
+        "locator": "raw markdown lines 313-344; raw markdown lines 350-381; raw markdown lines 548-586"
       },
       {
-        "source_id": "uap-document-401-402-local",
-        "label": "UAP Document 401-402 - Architect-Owner Agreement",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-        "checked_markdown_lines": [
-          "UAP Document 401-402 refined markdown lines 45-72",
-          "UAP Document 401-402 refined markdown lines 77-89",
-          "UAP Document 401-402 refined markdown lines 105-119"
-        ]
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-uap-standards-service-phases",
+        "locator": "raw markdown lines 313-344; raw markdown lines 350-381; raw markdown lines 548-586"
       },
       {
-        "source_id": "uap-document-301-local",
-        "label": "UAP Document 301 - General Conditions",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "checked_markdown_lines": [
-          "UAP Document 301 refined markdown lines 478-529",
-          "UAP Document 301 refined markdown lines 531-573",
-          "UAP Document 301 refined markdown lines 579-604",
-          "UAP Document 301 refined markdown lines 608-662"
-        ]
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-construction-pm-handbook-controls",
+        "locator": "raw markdown lines 285-300; raw markdown lines 2920-2950; raw markdown lines 3320-3359"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "sha256": "sha256:1b61a31dd55a79f224dfb223243fcb897eec41a6403ea8730367a1642902538f",
+        "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-construction-pm-handbook-controls",
+        "locator": "raw markdown lines 285-300; raw markdown lines 2920-2950; raw markdown lines 3320-3359"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-uap301-contract-control",
+        "locator": "raw markdown lines 562-590; raw markdown lines 869-930; raw markdown lines 1161-1182"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:a3379af3a562d15513001839b14b07e0d00528535620f344d5f4587ae41a955e",
+        "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-uap301-contract-control",
+        "locator": "raw markdown lines 562-590; raw markdown lines 869-930; raw markdown lines 1161-1182"
       }
     ],
-    "citation": "Construction Project Management Handbook"
+    "local_source_safe_action": "Batch 104 rewrote the linked question using checked local raw source evidence and deferred unsupported exact claims.",
+    "batch_id": "source-audited-article-batch-104-local-first"
   },
   "proposed": {
-    "text": "What authority does the project manager need according to the source handbook?",
+    "text": "How should an architect handle an owner request for services beyond the agreed scope?",
     "options": [
       {
-        "id": "b036-8552-05-a",
-        "text": "Adequate authority to form and manage the team supporting the project"
+        "id": "a",
+        "text": "Absorb it silently as professional courtesy"
       },
       {
-        "id": "b036-8552-05-b",
-        "text": "Authority only to prepare renderings"
+        "id": "b",
+        "text": "Document the change and confirm service, compensation, schedule, and cost effects"
       },
       {
-        "id": "b036-8552-05-c",
-        "text": "No authority because all decisions belong to consultants"
+        "id": "c",
+        "text": "Let the contractor decide"
       },
       {
-        "id": "b036-8552-05-d",
-        "text": "Authority only after project closeout"
+        "id": "d",
+        "text": "Delete the original agreement"
       }
     ],
-    "correct_option_id": "b036-8552-05-a",
-    "rationale": "Correct answer: Adequate authority to form and manage the team supporting the project. This is directly supported by Construction Project Management Handbook.",
-    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for Construction Project Management Handbook.",
-    "code_citation": "Construction Project Management Handbook"
+    "correct_option_id": "b",
+    "rationale": "UAP Standards support additional compensation for additional services and documented control of changed scope.",
+    "explanation": "104 source-audited rewrite: UAP Standards support additional compensation for additional services and documented control of changed scope.",
+    "code_citation": "raw markdown lines 313-344; raw markdown lines 350-381; raw markdown lines 548-586; raw markdown lines 285-300; raw markdown lines 2920-2950; raw markdown lines 3320-3359; raw markdown lines 562-590; raw markdown lines 869-930; raw markdown lines 1161-1182",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 104"
+    ],
+    "model_id": "BATCH-104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-005"
   }
 }

@@ -2,82 +2,111 @@
   "question_id": "e889b717-92f9-456b-b21e-db8fb5186b75",
   "baseline_hash": "sha256:d0e79bd6c200f020fc708951b1c9d357de8898100b5ea3a95a27f0a8d56aba9d",
   "action": "replace",
-  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
-  "approved_by": "codex-local-first-batch-036",
-  "approved_at": "2026-05-11T12:45:00+08:00",
+  "reason": "source-audited-article-batch-104-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility.",
+  "approved_by": "codex-local-source-audit-batch-104",
+  "approved_at": "2026-05-13T11:58:43+08:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-036-local-first",
+    "parent_article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "parent_article_slug": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite_with_deferred_final_depth_items",
+    "source_locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636; raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586; raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182; raw markdown lines 187-199",
+    "checked_markdown_lines": [
+      "raw markdown lines 66-76",
+      "raw markdown lines 136-138",
+      "raw markdown lines 591-617",
+      "raw markdown lines 635-636",
+      "raw markdown lines 332-344",
+      "raw markdown lines 350-369",
+      "raw markdown lines 568-586",
+      "raw markdown lines 562-590",
+      "raw markdown lines 594-594",
+      "raw markdown lines 732-732",
+      "raw markdown lines 1161-1182",
+      "raw markdown lines 187-199"
+    ],
     "checked_sources": [
       {
-        "source_id": "uap-document-301-local",
-        "label": "UAP Document 301 - General Conditions",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "checked_markdown_lines": [
-          "UAP Document 301 refined markdown lines 478-529",
-          "UAP Document 301 refined markdown lines 531-573",
-          "UAP Document 301 refined markdown lines 579-604",
-          "UAP Document 301 refined markdown lines 608-662"
-        ]
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9266-technical-specifications",
+        "locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636"
       },
       {
-        "source_id": "ciap-document-102-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "checked_markdown_lines": [
-          "CIAP Document 102 refined markdown lines 180-213",
-          "CIAP Document 102 refined markdown lines 215-258"
-        ]
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9266-technical-specifications",
+        "locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636"
       },
       {
-        "source_id": "ra-9184-government-procurement-irr-local",
-        "label": "RA 9184 Government Procurement IRR",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
-        "checked_markdown_lines": [
-          "RA 9184 IRR refined markdown lines 24-50",
-          "RA 9184 IRR refined markdown lines 145-151",
-          "RA 9184 IRR refined markdown lines 167-201"
-        ]
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap-standards-contract-documents",
+        "locator": "raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586"
       },
       {
-        "source_id": "uap-document-401-402-local",
-        "label": "UAP Document 401-402 - Architect-Owner Agreement",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-        "checked_markdown_lines": [
-          "UAP Document 401-402 refined markdown lines 45-72",
-          "UAP Document 401-402 refined markdown lines 77-89",
-          "UAP Document 401-402 refined markdown lines 105-119"
-        ]
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap-standards-contract-documents",
+        "locator": "raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap301-specification-conflicts",
+        "locator": "raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:a3379af3a562d15513001839b14b07e0d00528535620f344d5f4587ae41a955e",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap301-specification-conflicts",
+        "locator": "raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+        "sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9184-performance-specifications",
+        "locator": "raw markdown lines 187-199"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+        "sha256": "sha256:32dd794a3030d72e05a60ff1faa9745543c1d1d75da0e0c1052fda845afa0197",
+        "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9184-performance-specifications",
+        "locator": "raw markdown lines 187-199"
       }
     ],
-    "citation": "UAP Document 301"
+    "local_source_safe_action": "Batch 104 rewrote the linked question using checked local raw source evidence and deferred unsupported exact claims.",
+    "batch_id": "source-audited-article-batch-104-local-first"
   },
   "proposed": {
-    "text": "If drawings and specifications conflict under UAP Document 301, what must happen before risky work proceeds?",
+    "text": "Why is vague specification language risky?",
     "options": [
       {
-        "id": "b036-4731-03-a",
-        "text": "The conflict or discrepancy must be reported for architect or engineer correction/interpretation"
+        "id": "a",
+        "text": "It makes requirements harder to price, build, inspect, and interpret"
       },
       {
-        "id": "b036-4731-03-b",
-        "text": "The contractor may choose the cheapest interpretation without notice"
+        "id": "b",
+        "text": "It always reduces project cost"
       },
       {
-        "id": "b036-4731-03-c",
-        "text": "The issue is ignored until final payment"
+        "id": "c",
+        "text": "It eliminates the need for drawings"
       },
       {
-        "id": "b036-4731-03-d",
-        "text": "The specification is deleted automatically"
+        "id": "d",
+        "text": "It transfers all professional responsibility to the owner"
       }
     ],
-    "correct_option_id": "b036-4731-03-a",
-    "rationale": "Correct answer: The conflict or discrepancy must be reported for architect or engineer correction/interpretation. This is directly supported by UAP Document 301.",
-    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for UAP Document 301.",
-    "code_citation": "UAP Document 301"
+    "correct_option_id": "a",
+    "rationale": "Specifications function as contract documents; unclear requirements create pricing, construction, and interpretation risk.",
+    "explanation": "104 source-audited rewrite: Specifications function as contract documents; unclear requirements create pricing, construction, and interpretation risk.",
+    "code_citation": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636; raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586; raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182; raw markdown lines 187-199",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 104"
+    ],
+    "model_id": "BATCH-104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-003"
   }
 }

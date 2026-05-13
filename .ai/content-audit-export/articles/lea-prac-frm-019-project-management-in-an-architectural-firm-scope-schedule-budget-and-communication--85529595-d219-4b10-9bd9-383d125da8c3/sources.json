@@ -1,44 +1,80 @@
-{
-  "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:055426da2b8bd6a75d91761886d645deefe54d48423a15bc7e253c5dc07a698c",
-  "source_count": 3,
-  "sources": [
-    {
-      "source_id": "construction-project-management-handbook-shadan-fleming-local",
-      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
-      "label": "Construction Project Management Handbook by Shadan and Fleming",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "Construction Project Management Handbook by Shadan and Fleming; Construction Project Management Handbook refined markdown lines 253-257, 287-301, 387-429, 1544-1577, 1614-1664, 1680-1722, 1808-1819; raw PDF checked locally for source-audited-article-batch-036-local-first.",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-11T12:45:00+08:00",
-      "updated_at": "2026-05-11T12:45:00+08:00"
-    },
-    {
-      "source_id": "uap-document-401-402-local",
-      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
-      "label": "UAP Document 401-402 - Architect-Owner Agreement",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "UAP Document 401-402 - Architect-Owner Agreement; UAP Document 401-402 refined markdown lines 45-72, 77-89, 105-119; raw PDF checked locally for source-audited-article-batch-036-local-first.",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-11T12:45:00+08:00",
-      "updated_at": "2026-05-11T12:45:00+08:00"
-    },
-    {
-      "source_id": "uap-document-301-local",
-      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
-      "label": "UAP Document 301 - General Conditions",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "UAP Document 301 - General Conditions; UAP Document 301 refined markdown lines 478-529, 531-573, 579-604, 608-662; raw PDF checked locally for source-audited-article-batch-036-local-first.",
-      "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-11T12:45:00+08:00",
-      "updated_at": "2026-05-11T12:45:00+08:00"
+[
+  {
+    "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-uap-standards-service-phases",
+    "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+    "label": "UAP Document Standards of Professional Practice - SPP 202 service phases and cost control",
+    "url": null,
+    "source_type": "professional_practice_pdf",
+    "description": "Checked for project definition, schematic, design development, contract documents, bidding, construction phase duties, additional services, cost estimates, and PCC.",
+    "is_verified": true,
+    "sort_order": 1,
+    "created_at": "2026-05-13T11:58:43+08:00",
+    "updated_at": "2026-05-13T11:58:43+08:00",
+    "local_source_audit": {
+      "authority": "Local raw source packet under vitruvius-connection/001_Raw-Source-Layer",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "source_locator": "raw markdown lines 313-344; raw markdown lines 350-381; raw markdown lines 548-586",
+      "checked_markdown_lines": [
+        "raw markdown lines 313-344",
+        "raw markdown lines 350-381",
+        "raw markdown lines 548-586"
+      ],
+      "local_source_checked": true
     }
-  ]
-}
+  },
+  {
+    "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-construction-pm-handbook-controls",
+    "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+    "label": "Construction Project Management Handbook by Shadan and Fleming",
+    "url": null,
+    "source_type": "project_management_reference_pdf",
+    "description": "Checked for project lifecycle, closeout/lessons learned, stakeholder communication, document control, baseline budget/schedule/drawings/specifications, and audit-trail logic.",
+    "is_verified": true,
+    "sort_order": 2,
+    "created_at": "2026-05-13T11:58:43+08:00",
+    "updated_at": "2026-05-13T11:58:43+08:00",
+    "local_source_audit": {
+      "authority": "Local raw source packet under vitruvius-connection/001_Raw-Source-Layer",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+      "conversion_sha256": "sha256:1b61a31dd55a79f224dfb223243fcb897eec41a6403ea8730367a1642902538f",
+      "source_locator": "raw markdown lines 285-300; raw markdown lines 2920-2950; raw markdown lines 3320-3359",
+      "checked_markdown_lines": [
+        "raw markdown lines 285-300",
+        "raw markdown lines 2920-2950",
+        "raw markdown lines 3320-3359"
+      ],
+      "local_source_checked": true
+    }
+  },
+  {
+    "source_id": "batch104-lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control-uap301-contract-control",
+    "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+    "label": "UAP Document 301 - General Conditions",
+    "url": null,
+    "source_type": "contract_conditions_pdf",
+    "description": "Checked for contract documents, drawing/specification conflicts, additional instructions, written claims, payment-certification timing, and architect decisions on contract-document interpretation.",
+    "is_verified": true,
+    "sort_order": 3,
+    "created_at": "2026-05-13T11:58:43+08:00",
+    "updated_at": "2026-05-13T11:58:43+08:00",
+    "local_source_audit": {
+      "authority": "Local raw source packet under vitruvius-connection/001_Raw-Source-Layer",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 301.md",
+      "conversion_sha256": "sha256:a3379af3a562d15513001839b14b07e0d00528535620f344d5f4587ae41a955e",
+      "source_locator": "raw markdown lines 562-590; raw markdown lines 869-930; raw markdown lines 1161-1182",
+      "checked_markdown_lines": [
+        "raw markdown lines 562-590",
+        "raw markdown lines 869-930",
+        "raw markdown lines 1161-1182"
+      ],
+      "local_source_checked": true
+    }
+  }
+]

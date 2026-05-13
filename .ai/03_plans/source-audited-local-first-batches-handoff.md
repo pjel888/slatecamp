@@ -1,3 +1,46 @@
+# Batch 104 Local-First Handoff Update
+
+Last updated: 2026-05-13T11:58:43+08:00
+
+## Current State
+
+- Latest accepted production-line batch: Batch 104
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 104: e6c5a6cf3
+- Previous accepted Batch 103 commit: ddf04af43
+- Batch 104 local artifacts: pass
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 104 Selection
+
+- lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control (85529595-d219-4b10-9bd9-383d125da8c3)
+- lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility (47317c8d-e2d6-4d17-b18a-3c469b73080c)
+- lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional (303f8a75-b42b-4405-8c39-082b4d7b6322)
+- lea-prac-cmp-001-core-concept (fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0)
+- lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework (218ac476-9857-4c14-9033-2f27c75da04b)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-104-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-104-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-104-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-104-manifest.json`
+- QA memo: `.ai/03_plans/batch-104-independent-quality-review.md`
+- SPP 202 OCR anchor extract: `.ai/content-audit-export/source-anchor-extracts/batch-104-spp-202-fee-table-ocr.md`
+
+## Preserved Final-Depth Items
+
+- Keep THIN_NEEDS_EXPANSION and scenario/source-primary findings in the final remediation plan.
+- FRM-020: exact CSI MasterFormat structure requires a local primary source before restoration.
+- FRM-021: exact QS professional scope and estimate accuracy percentage ranges require local primary sources before restoration.
+- CMP clusters: do not restore invented classification escalation rules unless supported by local professional-practice source text.
+
+## Batch 104 Next Batch
+
+Continue with Batch 105 using the next eligible fixed/manifest articles not selected in accepted Batches 087-104. Apply the same local-first gates, question-edit requirement, QA memo requirement, commit, push, and automatic continuation behavior.
+
+---
+
 # Source-Audited Local-First Batches Handoff
 
 Updated: 2026-05-13T11:22:58+08:00

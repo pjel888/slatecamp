@@ -1,3 +1,37 @@
+# Batch 104 Source-Audited Production-Line Coordination Update
+
+Updated: 2026-05-13T11:58:43+08:00
+
+## Status
+
+- Batch 104: pass
+- Branch: 3dlab-gray-viewport-bg
+- Selected articles: 5
+- Linked question edits: 50
+- Forbidden external actions: none performed.
+
+## Batch 104 Gate Summary
+
+- Compose/diff/validate strict 5/5: pass
+- UI-block edit validation: pass
+- Scoped JSON parse: pass
+- Placeholder/internal-note/source-gap scan: pass
+- Source hash checks: pass
+- Linked-question/question-edit count checks: pass
+- Stale compose-error scan: pass
+- Targeted content-audit tests: pass
+- Scoped git diff --check: pass
+- Cached diff check: pass
+
+## Coordination Notes
+
+- Batch 103 is accepted and pushed at commit ddf04af43; Batch 104 starts from e6c5a6cf3.
+- Batch 104 includes both article improvements and linked question edits for every selected article.
+- Difficult clusters were resolved locally: SPP 202 fee tables were OCR anchored, CSI exactness was deferred rather than invented, and QS accuracy percentages were rewritten to source-safe cost-estimate limitation claims.
+- Next production-line target: Batch 105 after Batch 104 commit and push.
+
+---
+
 # Source-Audited Production-Line Coordination
 
 Updated: 2026-05-13T11:22:58+08:00

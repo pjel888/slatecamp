@@ -1,33 +1,10 @@
-# Content Diff Report: lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility
+# Diff Report: Technical Specifications Writing: Specification Types and the Architect’s Responsibility
 
-Generated: 2026-05-11T04:58:25.911Z
-Article ID: 47317c8d-e2d6-4d17-b18a-3c469b73080c
-Changed: true
-Safe to push locally: true
-
-## Hashes
-
-- Original: `sha256:631b27ad1d95e47ab6c88f3da1fa599cde8cb564e8eb75418c0ce6293eda5ecd`
-- Normalized: `sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8`
-- Candidate: `sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8`
-
-## Line summary
-
-- Changed lines: 108
-- Inserted lines: 0
-- Deleted lines: 77
-
-## UI block preservation
-
-- UI blocks expected: 0
-- UI blocks preserved: 0
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
-
-## Blockers
-
-- None
-
-## Warnings
-
-- Remote stale check has not been run by diff; push command must verify Supabase before mutation.
+- Batch: source-audited-article-batch-104-local-first
+- Status: pass
+- Original hash: sha256:631b27ad1d95e47ab6c88f3da1fa599cde8cb564e8eb75418c0ce6293eda5ecd
+- Candidate hash: sha256:98843a4eff63b52c988445e3ee4f6dec1f23c7620b3cc6491111fd5ac9e538ab
+- Linked question edits: 10
+- UI-block edit validation: pass
+- Source-safe scenario: added
+- Deferred final-depth items: Exact CSI MasterFormat division structure remains final-depth source-needed because no local CSI primary source was in the checked packet.; Three-part CSI section format claims remain deferred until a local CSI source is added.

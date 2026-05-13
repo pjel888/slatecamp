@@ -1,0 +1,90 @@
+{
+  "batch_number": "104",
+  "batch_id": "source-audited-article-batch-104-local-first",
+  "reserved_at": "2026-05-13T11:58:43+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "baseline_commit": "e6c5a6cf3",
+  "previous_batch": {
+    "batch_number": "103",
+    "commit": "ddf04af43",
+    "status": "accepted_and_pushed"
+  },
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batches 087-103: remaining FRM-019..021 plus first two CMP clusters; no duplicate article IDs from accepted manifests.",
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+      "slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
+      "title": "Project Management in an Architectural Firm: Scope, Schedule, Budget, and Communication Control",
+      "folder": ".ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3"
+    },
+    {
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "slug": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility",
+      "title": "Technical Specifications Writing: Specification Types and the Architect’s Responsibility",
+      "folder": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c"
+    },
+    {
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "slug": "lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional",
+      "title": "Quantity Surveying and Cost Estimation: The Architect’s Role vs. the QS Professional",
+      "folder": ".ai/content-audit-export/articles/lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional---303f8a75-b42b-4405-8c39-082b4d7b6322"
+    },
+    {
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "slug": "lea-prac-cmp-001-core-concept",
+      "title": "Architect’s Guidelines",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0"
+    },
+    {
+      "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
+      "slug": "lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework",
+      "title": "Factors That Determine Project Group Classification: A Decision Framework",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b"
+    }
+  ],
+  "article_clusters": [
+    "FRM-019 project management and control",
+    "FRM-020 specifications and contract-document writing",
+    "FRM-021 cost estimation and QS boundary",
+    "CMP-001 architect fee guideline calculations",
+    "CMP-002 project classification decision framework"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_real_world_scenarios": 5
+  },
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-103",
+    "duplicate_hits": []
+  },
+  "inherited_blocker_status": {
+    "final_depth_remediation": "deferred_until_all_local_first_batches_complete",
+    "preserved_findings": [
+      "THIN_NEEDS_EXPANSION items retained in source-audit evidence.",
+      "Source-primary and scenario eligibility notes retained for final audit planning."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": [
+    "no Supabase push",
+    "no deploy",
+    "no production DB mutation",
+    "no merge to main"
+  ],
+  "manifest_status": "pass"
+}

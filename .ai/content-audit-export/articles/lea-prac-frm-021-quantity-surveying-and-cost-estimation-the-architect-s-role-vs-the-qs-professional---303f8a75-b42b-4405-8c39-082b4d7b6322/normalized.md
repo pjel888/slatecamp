@@ -1,68 +1,47 @@
+# Quantity Surveying and Cost Estimation: The Architect’s Role vs. the QS Professional
+
 ## Board Exam Quick Check
 
-For architect-versus-QS questions, identify the source-backed responsibility first. RA 9266 IRR supports the architect's role in cost estimates, bill of materials, bidding documents, specifications, and contract documents. UAP SPP 203 supports estimation and quantity survey within Contract Documentation and Review.
-
-## What You Need to Know for the LEA
-
-RA 9266 IRR includes preparation of architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents within the scope of architectural practice. It also defines architectural documents as including technical specifications and cost estimates, and contract documents as including drawings, specifications, and other bid documents.
-
-The same IRR requires architectural plans, drawings, specifications, and contract documents prepared by or under direct supervision to bear the architect's seal. It also places responsibility on the architect-of-record for architectural documents issued under the architect's seal or authorized signature.
-
-UAP SPP 203 identifies Contract Documentation and Review as a specialized architectural service. Its raw source page ties this service area to specifications writing, estimation and quantity survey, architectural production, architectural software, support services, and contract-document review.
+The local sources support the architect's role in preparing architectural plans, specifications, bill of materials, and cost estimates. They also warn that a probable project construction cost or cost estimate can only reach a degree of accuracy because the architect does not control labor, materials, competitive bidding, and other cost factors. The checked packet does not support exact estimate accuracy percentages or a complete Philippine QS credential boundary.
 
 ## Learning Goal
 
-- Identify cost estimates, bill of materials, bidding documents, specifications, and contract documents as part of the architect's source-backed scope.
-- Recognize estimation and quantity survey as a specialized service area under UAP SPP 203.
-- Avoid assigning detailed QS duties beyond what the checked source actually states.
+After studying this article, you should be able to:
 
-## Core Concept
+- Identify cost estimates and bill of materials as part of architectural professional outputs.
+- Explain the limits of architect cost-estimate responsibility under UAP Standards.
+- Use Project Construction Cost correctly when discussing fees and cost records.
+- Avoid unsupported exact QS and accuracy-percentage claims.
 
-The source-safe distinction is contractual and documentary. The architect's legal/professional scope includes cost estimates and related documents. Quantity survey appears in UAP SPP 203 as part of a specialized contract-documentation service area. Therefore, the exam-safe answer is to define roles by the service agreement, the documents issued, and the professional responsibility attached to those documents.
+## Architect Cost Responsibility
 
-| Item | Source-safe treatment |
-| --- | --- |
-| Cost estimate | Architectural document and scope item under RA 9266 IRR. |
-| Bill of materials | Included in architectural practice under RA 9266 IRR. |
-| Bidding documents | Included in architectural practice under RA 9266 IRR. |
-| Estimation and quantity survey | Named under UAP SPP 203 Contract Documentation and Review. |
-| Signed/sealed documents | Carry architect-of-record responsibility when issued under seal. |
+RA 9266 IRR includes bill of materials and cost estimates in the scope of architectural practice and identifies technical specifications and cost estimates as architectural documents. This supports an exam answer that the architect cannot ignore cost information. Cost information is part of the professional service and must be coordinated with drawings, specifications, and design decisions.
 
-PD 1096 RIRR also uses fixed construction cost tables for fee computation. Do not confuse those permit-fee cost bases with a project-specific professional cost estimate unless the item says so.
+UAP Standards make the boundary equally important. The architect submits and updates the Statement of Probable Project Construction Cost during the service phases. But any SPPCC or cost estimate can attain only a degree of accuracy. Unless glaring errors or discrepancies are evident, the architect does not assume professional responsibility for exact cost outcomes because labor, materials, bidding, and many market factors are outside the architect's control.
 
-## Key Facts and Testable Items
+## PCC, Budget, and Quantity Checks
 
-| Exam cue | Correct source-safe response |
-| --- | --- |
-| Architect prepares cost estimate | Supported by RA 9266 IRR scope and architectural-document definitions. |
-| Quantity survey appears in contract documentation | Supported by UAP SPP 203 specialized services. |
-| Final responsibility for sealed architectural documents | Architect-of-record responsibility applies. |
-| Service agreement | Clarify who prepares which cost, quantity, bidding, or contract-document output. |
-| Permit-fee fixed cost table | A regulatory fee-computation basis, not automatically the project estimate. |
+Project Construction Cost includes the completed building work and systems indicated in the architect's and consultants' plans, designs, drawings, and specifications. It excludes professional fees and construction inspector salaries. That distinction matters because fee computation, budget control, and cost communication depend on the correct cost base.
 
-## How It's Tested on the LEA
+The estimating reference supports the practical need to check quantities against plans and details. It is source-safe to say that quantities depend on drawings, dimensions, and construction details. It is not source-safe in this batch to claim exact schematic or construction-document accuracy percentages.
 
-Expect questions about role boundaries. Choose the answer that keeps the architect responsible for architectural documents and uses specialist quantity-survey support when the service scope requires detailed estimation or quantity work.
+## Role Boundary With QS
 
-Expect budget questions. If a cost estimate and client budget conflict, the source-safe professional answer is to document the issue, coordinate the service scope, and revise the project basis rather than silently proceeding.
+This batch keeps the QS discussion narrow. The local sources support the architect's preparation and coordination of cost estimates and bill of materials, and the architect may work with cost specialists when the project requires deeper measurement or value analysis. The local packet does not yet support a precise professional boundary between architect and QS, so exact QS credential claims remain final-depth source-needed.
 
-## Common Mistakes
+## Real World Scenario
 
-- Treating cost estimates as outside architectural practice even though RA 9266 IRR lists them.
-- Treating quantity survey as a vague contractor task instead of a service that can be scoped under contract documentation.
-- Confusing PD 1096 fixed cost tables for permit-fee computation with design-phase project estimates.
-- Issuing cost-related architectural documents without clear service scope and signing/sealing responsibility.
+A client asks whether a clinic design can stay within budget after a new imaging suite and upgraded mechanical system are added. The architect should update the probable construction cost, identify the changed scope, coordinate quantities and specifications, and advise whether cost specialist input or value analysis is needed. The architect should not guarantee the final bid amount as exact, because the checked UAP source limits cost-estimate accuracy.
 
-## Key Terms
+## Exam Traps
 
-**Cost Estimate** - A source-backed architectural document and practice-scope item under RA 9266 IRR.
-
-**Bill of Materials** - A listed output within the architect's scope of practice under RA 9266 IRR.
-
-**Quantity Survey** - A quantity/estimation service area named in UAP SPP 203 under Contract Documentation and Review.
-
-**Contract Documentation and Review** - A specialized architectural service involving specifications writing, estimation and quantity survey, production, support services, and document review.
+- Claiming exact ±20% or ±5% estimate accuracy without a local source.
+- Treating the architect as having no cost role even though RA 9266 includes bill of materials and cost estimates.
+- Treating an SPPCC as a guaranteed construction bid.
+- Using PCC incorrectly by including architect and engineer professional fees.
 
 ## Related Articles
 
-See also **lea-prac-law-001**, **lea-prac-frm-012**, and **lea-matl-009-01-core-concept**.
+- [Architect's Guidelines](lea-prac-cmp-001)
+- [Project Management in an Architectural Firm](lea-prac-frm-019)
+- [Technical Specifications Writing](lea-prac-frm-020)

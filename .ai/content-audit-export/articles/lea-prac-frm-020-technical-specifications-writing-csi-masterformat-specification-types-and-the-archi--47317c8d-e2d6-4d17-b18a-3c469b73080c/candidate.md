@@ -1,33 +1,47 @@
-# Technical Specifications Writing: Specification Types and the Architect Responsibility
+# Technical Specifications Writing: Specification Types and the Architect’s Responsibility
 
-## Exam scope
+## Board Exam Quick Check
 
-The curriculum title references CSI MasterFormat, but the exam duty in this lesson is broader and source-grounded: specifications are contract documents. Philippine contract and procurement sources establish what specifications do, how they coordinate with drawings, and why vague or brand-driven writing creates professional risk.
+The checked local sources support specifications as architectural and contract documents. They do not support restoring exact CSI MasterFormat divisions or the three-part CSI section format. For this local-first batch, the exam-safe rule is to answer from the Philippine professional-practice sources: specifications describe the required work, coordinate with drawings, support bidding and construction, and require written clarification when conflicts appear.
 
-## What specifications are
+## Learning Goal
 
-UAP Document 301 defines specifications as written or printed descriptions of the work to be done, describing qualities of material and mode of construction. CIAP Document 102 uses the same contract-document logic and describes specifications as written or printed descriptions of the work, qualities of materials, equipment to be installed, and mode of construction.
+After studying this article, you should be able to:
 
-This means a specification is not a mood board, a sales brochure, or a substitute for coordination. It is part of the contract instruction set. It should tell the builder what work is required, what material or equipment performance is required, how quality is controlled, and how substitutions, samples, shop drawings, and discrepancies are handled.
+- Explain why technical specifications are part of the architect's professional documents.
+- Distinguish outline specifications during design development from technical specifications in contract documents.
+- Resolve drawing/specification conflicts through written clarification and contract-document procedure.
+- Avoid unsupported CSI-specific answers when the local source packet does not contain a CSI primary source.
 
-## Contract-document coordination
+## Specifications as Professional Documents
 
-UAP Document 301 states that contract documents are complementary and that what is called for by one is binding as if called for by all. Drawings and specifications are intended to form part of the Contract Documents. If something is shown on the drawings but not mentioned in the specifications, or vice versa, or reasonably implied by either, it is treated as required without extra charge.
+RA 9266 IRR includes specifications, bill of materials, cost estimates, and technical specifications among architectural outputs. It also treats drawings, specifications, and other contract documents as professional instruments tied to the architect's signing, sealing, and responsibility rules.
 
-When drawings and specifications conflict, the source requires the contractor to ask for and obtain a written decision before proposal submission where possible. Discrepancies, errors, or omissions between drawings, specifications, and site conditions must be reported to the Architect or Engineer for prompt correction. Work done despite unreported discrepancies is done at the contractor risk.
+UAP Standards place specifications inside the service sequence. Design development includes outline specifications. Contract documents include complete construction drawings and technical specifications. Bidding then depends on the bid documents, pre-bid conferences, bidder questions, and bid analysis.
 
-## Supplementary specifications and shop drawings
+## What Specifications Control
 
-Supplementary specifications add to or amend the provisions of the specifications. Bid bulletins and special provisions can also modify the contract-document set before bidding. The architect must therefore keep specification updates traceable; silent changes are a dispute risk.
+UAP Document 301 treats drawings and specifications as complementary contract documents. Work shown in drawings but not mentioned in specifications, or mentioned in specifications but not shown in drawings, may still be required when reasonably implied. When there is a conflict or obscure wording, the contractor should obtain a written decision from the architect before proceeding.
 
-Shop drawings do not replace the contract documents. UAP Document 301 requires the contractor to submit shop drawings with enough information for review, identify variations from contract requirements, and keep responsibility for accuracy, fitting, construction, and work required by the contract even after approval.
+That makes the architect's responsibility practical. Specifications should be coordinated with drawings, state material and workmanship requirements clearly, avoid vague approval language, and keep changes traceable through addenda, supplementary specifications, additional drawings, or written instructions.
 
-## Procurement discipline
+## Performance and Prescriptive Language
 
-For government procurement, RA 9184 requires bidding documents to include plans and technical specifications. It also states that goods specifications must be based on relevant characteristics or performance requirements, and reference to brand names is not allowed.
+The local RA 9184 IRR source gives a government-procurement rule that technical specifications should be based on characteristics or performance requirements and should not use brand names as references. That source is enough to support a performance-specification concept in public procurement. A prescriptive specification can still describe required materials, workmanship, or installation, but it must be coordinated with the drawings and contract conditions.
 
-For private work, UAP and CIAP sources still lead to the same professional discipline: write measurable requirements, identify required samples or approval data, state substitution procedures, coordinate the drawings and specifications, and avoid vague phrases like "high-quality" unless the specification defines the quality by test, sample, standard, performance, or approval process.
+## Real World Scenario
 
-## Architect responsibility
+A clinic bid package states one ceiling type in the drawings but a different acoustic ceiling in the specifications. The contractor asks which to price before bidding. The architect should not give a casual verbal answer. Under the source-safe contract-document rule, the architect should issue a written clarification, addendum, supplementary specification, or instruction that resolves the conflict before it becomes a claim or an incorrectly priced bid.
 
-The architect responsibility is to produce coordinated documents that can be priced, reviewed, constructed, and administered. Specifications should support the drawings, conform to laws and regulations, control quality of materials and equipment, and create a clear process for samples, catalogue data, substitutions, discrepancies, supplementary details, and shop drawings.
+## Exam Traps
+
+- Answering exact CSI division numbers without a local CSI source.
+- Treating specifications as optional notes instead of contract documents.
+- Allowing a drawing/specification conflict to remain unresolved until construction.
+- Naming a brand as the specification when the applicable procurement source calls for characteristics or performance requirements.
+
+## Related Articles
+
+- [Contract Documents](lea-prac-svc-007)
+- [Project Management in an Architectural Firm](lea-prac-frm-019)
+- [Architect of Record](lea-prac-law-011)

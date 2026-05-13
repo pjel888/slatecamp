@@ -1,56 +1,106 @@
-{
-  "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:c2865f65f8a55f0802f000100e416bdffd4f1c32c96ebaa41c435453e553ad9b",
-  "source_count": 4,
-  "sources": [
-    {
-      "source_id": "uap-document-301-local",
-      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
-      "label": "UAP Document 301 - General Conditions",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "UAP Document 301 - General Conditions; UAP Document 301 refined markdown lines 478-529, 531-573, 579-604, 608-662; raw PDF checked locally for source-audited-article-batch-036-local-first.",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-11T12:45:00+08:00",
-      "updated_at": "2026-05-11T12:45:00+08:00"
-    },
-    {
-      "source_id": "ciap-document-102-local",
-      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
-      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction; CIAP Document 102 refined markdown lines 180-213, 215-258; raw PDF checked locally for source-audited-article-batch-036-local-first.",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-11T12:45:00+08:00",
-      "updated_at": "2026-05-11T12:45:00+08:00"
-    },
-    {
-      "source_id": "ra-9184-government-procurement-irr-local",
-      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
-      "label": "RA 9184 Government Procurement IRR",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "RA 9184 Government Procurement IRR; RA 9184 IRR refined markdown lines 24-50, 145-151, 167-201; raw PDF checked locally for source-audited-article-batch-036-local-first.",
-      "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-11T12:45:00+08:00",
-      "updated_at": "2026-05-11T12:45:00+08:00"
-    },
-    {
-      "source_id": "uap-document-401-402-local",
-      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
-      "label": "UAP Document 401-402 - Architect-Owner Agreement",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "UAP Document 401-402 - Architect-Owner Agreement; UAP Document 401-402 refined markdown lines 45-72, 77-89, 105-119; raw PDF checked locally for source-audited-article-batch-036-local-first.",
-      "is_verified": true,
-      "sort_order": 3,
-      "created_at": "2026-05-11T12:45:00+08:00",
-      "updated_at": "2026-05-11T12:45:00+08:00"
+[
+  {
+    "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9266-technical-specifications",
+    "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "label": "RA 9266 IRR Architecture Act of 2004 - technical specifications and architect outputs",
+    "url": null,
+    "source_type": "implementing_rules_pdf",
+    "description": "Checked for architectural plans, specifications, bill of materials, cost estimates, technical specifications, contract documents, signing/sealing, and supervision responsibility.",
+    "is_verified": true,
+    "sort_order": 1,
+    "created_at": "2026-05-13T11:58:43+08:00",
+    "updated_at": "2026-05-13T11:58:43+08:00",
+    "local_source_audit": {
+      "authority": "Local raw source packet under vitruvius-connection/001_Raw-Source-Layer",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "source_locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636",
+      "checked_markdown_lines": [
+        "raw markdown lines 66-76",
+        "raw markdown lines 136-138",
+        "raw markdown lines 591-617",
+        "raw markdown lines 635-636"
+      ],
+      "local_source_checked": true
     }
-  ]
-}
+  },
+  {
+    "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap-standards-contract-documents",
+    "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "label": "UAP Document Standards of Professional Practice - contract documents and technical specifications",
+    "url": null,
+    "source_type": "professional_practice_pdf",
+    "description": "Checked for outline specifications, technical specifications, contract documents, bidding, ownership, and PCC relation to plans/specifications.",
+    "is_verified": true,
+    "sort_order": 2,
+    "created_at": "2026-05-13T11:58:43+08:00",
+    "updated_at": "2026-05-13T11:58:43+08:00",
+    "local_source_audit": {
+      "authority": "Local raw source packet under vitruvius-connection/001_Raw-Source-Layer",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "source_locator": "raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586",
+      "checked_markdown_lines": [
+        "raw markdown lines 332-344",
+        "raw markdown lines 350-369",
+        "raw markdown lines 568-586"
+      ],
+      "local_source_checked": true
+    }
+  },
+  {
+    "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap301-specification-conflicts",
+    "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "label": "UAP Document 301 - General Conditions for drawings and specifications",
+    "url": null,
+    "source_type": "contract_conditions_pdf",
+    "description": "Checked for complementary contract documents, specification conflicts, additional instructions, defective materials, and architect interpretation of drawings/specifications.",
+    "is_verified": true,
+    "sort_order": 3,
+    "created_at": "2026-05-13T11:58:43+08:00",
+    "updated_at": "2026-05-13T11:58:43+08:00",
+    "local_source_audit": {
+      "authority": "Local raw source packet under vitruvius-connection/001_Raw-Source-Layer",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 301.md",
+      "conversion_sha256": "sha256:a3379af3a562d15513001839b14b07e0d00528535620f344d5f4587ae41a955e",
+      "source_locator": "raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182",
+      "checked_markdown_lines": [
+        "raw markdown lines 562-590",
+        "raw markdown lines 594-594",
+        "raw markdown lines 732-732",
+        "raw markdown lines 1161-1182"
+      ],
+      "local_source_checked": true
+    }
+  },
+  {
+    "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9184-performance-specifications",
+    "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "label": "RA 9184 IRR - government procurement technical specification rule",
+    "url": null,
+    "source_type": "procurement_irr_pdf",
+    "description": "Checked for government procurement rule that technical specifications should use characteristics or performance requirements and avoid brand-name references.",
+    "is_verified": true,
+    "sort_order": 4,
+    "created_at": "2026-05-13T11:58:43+08:00",
+    "updated_at": "2026-05-13T11:58:43+08:00",
+    "local_source_audit": {
+      "authority": "Local raw source packet under vitruvius-connection/001_Raw-Source-Layer",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+      "raw_pdf_sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+      "conversion_sha256": "sha256:32dd794a3030d72e05a60ff1faa9745543c1d1d75da0e0c1052fda845afa0197",
+      "source_locator": "raw markdown lines 187-199",
+      "checked_markdown_lines": [
+        "raw markdown lines 187-199"
+      ],
+      "local_source_checked": true
+    }
+  }
+]

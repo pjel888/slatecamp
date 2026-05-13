@@ -2,74 +2,97 @@
   "question_id": "343b6549-358b-482e-af91-b1d65b1e6c8e",
   "baseline_hash": "sha256:f1a74b99e025e5d5d29fd0b9027fb6f92548264ddbf27e611531391c69297563",
   "action": "replace",
-  "reason": "source-audited-article-batch-076-local-first aligned linked question with checked local raw PDF/source evidence for lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional.",
-  "approved_by": "codex-local-source-audit-batch-076",
-  "approved_at": "2026-05-12T03:12:00.000+08:00",
+  "reason": "source-audited-article-batch-104-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional.",
+  "approved_by": "codex-local-source-audit-batch-104",
+  "approved_at": "2026-05-13T11:58:43+08:00",
   "source_audit_support": {
     "parent_article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
     "parent_article_slug": "lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 690-710; UAP SPP 203 refined markdown lines 101-140 and raw PDF page 95; PD 1096 RIRR refined markdown lines 4976-4980 and raw PDF page 256",
+    "support_status": "source_safe_rewrite_with_deferred_final_depth_items",
+    "source_locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636; raw markdown lines 313-344; raw markdown lines 560-586; raw markdown lines 585-585; raw markdown lines 6928-6928; raw markdown lines 10673-10673; raw markdown lines 11138-11138",
     "checked_markdown_lines": [
-      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction",
-      "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by local PyMuPDF extraction",
-      "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+      "raw markdown lines 66-76",
+      "raw markdown lines 136-138",
+      "raw markdown lines 591-617",
+      "raw markdown lines 635-636",
+      "raw markdown lines 313-344",
+      "raw markdown lines 560-586",
+      "raw markdown lines 585-585",
+      "raw markdown lines 6928-6928",
+      "raw markdown lines 10673-10673",
+      "raw markdown lines 11138-11138"
     ],
     "checked_sources": [
       {
-        "source_id": "ra9266-irr-b076",
-        "label": "RA 9266 IRR - Architecture Act of 2004",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
         "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction"
+        "source_id": "batch104-lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-ra9266-cost-estimates",
+        "locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636"
       },
       {
-        "source_id": "uap-spp203-b076",
-        "label": "UAP SPP Doc. 203 - Specialized Architectural Services",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
-        "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-        "raw_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
-        "locator": "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by local PyMuPDF extraction"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch104-lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-ra9266-cost-estimates",
+        "locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636"
       },
       {
-        "source_id": "pd1096-rirr-b076",
-        "label": "PD 1096 RIRR 2004 - DPWH Official",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "batch104-lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-uap-standards-sppcc-pcc",
+        "locator": "raw markdown lines 313-344; raw markdown lines 560-586"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch104-lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-uap-standards-sppcc-pcc",
+        "locator": "raw markdown lines 313-344; raw markdown lines 560-586"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "source_id": "batch104-lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-fajardo-estimating-checks",
+        "locator": "raw markdown lines 585-585; raw markdown lines 6928-6928; raw markdown lines 10673-10673; raw markdown lines 11138-11138"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "sha256": "sha256:2287fb34cd3f5a61e3de1c7c66676506e095125876a53008297e0c35aca6a854",
+        "source_id": "batch104-lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-fajardo-estimating-checks",
+        "locator": "raw markdown lines 585-585; raw markdown lines 6928-6928; raw markdown lines 10673-10673; raw markdown lines 11138-11138"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 076 local raw-source-audited cost_estimation_quantity_survey scope."
+    "local_source_safe_action": "Batch 104 rewrote the linked question using checked local raw source evidence and deferred unsupported exact claims.",
+    "batch_id": "source-audited-article-batch-104-local-first"
   },
   "proposed": {
-    "text": "Under RA 9266 IRR, cost estimates are best classified as what?",
+    "text": "What should the architect do if an updated estimate exceeds the client budget?",
     "options": [
       {
         "id": "a",
-        "text": "Architectural documents and practice-scope outputs."
+        "text": "Hide the estimate until bidding"
       },
       {
         "id": "b",
-        "text": "Contractor-only private records."
+        "text": "Document the cost issue, review scope/design choices, update the SPPCC, and advise on cost control or value analysis"
       },
       {
         "id": "c",
-        "text": "Barangay clearances."
+        "text": "Guarantee a lower final bid without basis"
       },
       {
         "id": "d",
-        "text": "Perspective-only presentation items."
+        "text": "Delete the specifications"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "RA 9266 IRR lists cost estimates in the architect's scope and architectural-document definition.",
-    "explanation": "RA 9266 IRR lists cost estimates in the architect's scope and architectural-document definition.",
-    "code_citation": "RA 9266 IRR; UAP SPP 203; PD 1096 RIRR"
+    "correct_option_id": "b",
+    "rationale": "The source-safe response is documented cost and scope control, not concealment or a guaranteed bid.",
+    "explanation": "104 source-audited rewrite: The source-safe response is documented cost and scope control, not concealment or a guaranteed bid.",
+    "code_citation": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636; raw markdown lines 313-344; raw markdown lines 560-586; raw markdown lines 585-585; raw markdown lines 6928-6928; raw markdown lines 10673-10673; raw markdown lines 11138-11138",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 104"
+    ],
+    "model_id": "BATCH-104-lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-001"
   }
 }

@@ -1,242 +1,116 @@
 {
-  "schema_version": "source-audit-evidence-v1",
-  "artifact_type": "article_source_audit",
-  "batch_id": "source-audited-article-batch-036-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T12:45:00+08:00",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-104-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T11:58:43+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
   "target": {
     "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
     "slug": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility",
-    "candidate_sha256": "sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8",
-    "normalized_sha256": "sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8"
+    "title": "Technical Specifications Writing: Specification Types and the Architect’s Responsibility"
   },
   "classification": {
-    "requires_raw_pdf_audit": true,
-    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
-    "derivative_layer_role": "locator aid only",
-    "legal_or_code_sensitive": true
+    "topic": "professional practice specifications",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": true
   },
-  "paths": {
-    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c",
-    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/normalized.md",
-    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/candidate.md",
-    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/sources.json",
-    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/question-edits"
-  },
-  "raw_sources": [
-    {
-      "source_id": "uap-document-301-local",
-      "label": "UAP Document 301 - General Conditions",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-      "source_locator": "UAP Document 301 refined markdown lines 478-529, 531-573, 579-604, 608-662",
-      "checked_markdown_lines": [
-        "UAP Document 301 refined markdown lines 478-529",
-        "UAP Document 301 refined markdown lines 531-573",
-        "UAP Document 301 refined markdown lines 579-604",
-        "UAP Document 301 refined markdown lines 608-662"
-      ]
-    },
-    {
-      "source_id": "ciap-document-102-local",
-      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-      "source_locator": "CIAP Document 102 refined markdown lines 180-213, 215-258",
-      "checked_markdown_lines": [
-        "CIAP Document 102 refined markdown lines 180-213",
-        "CIAP Document 102 refined markdown lines 215-258"
-      ]
-    },
-    {
-      "source_id": "ra-9184-government-procurement-irr-local",
-      "label": "RA 9184 Government Procurement IRR",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
-      "raw_pdf_sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
-      "refined_markdown_sha256": "sha256:a868cf146c5516f23d74f41f5697c9f09b51251397eaad234694a5df11cf3e10",
-      "source_locator": "RA 9184 IRR refined markdown lines 24-50, 145-151, 167-201",
-      "checked_markdown_lines": [
-        "RA 9184 IRR refined markdown lines 24-50",
-        "RA 9184 IRR refined markdown lines 145-151",
-        "RA 9184 IRR refined markdown lines 167-201"
-      ]
-    },
-    {
-      "source_id": "uap-document-401-402-local",
-      "label": "UAP Document 401-402 - Architect-Owner Agreement",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-      "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
-      "source_locator": "UAP Document 401-402 refined markdown lines 45-72, 77-89, 105-119",
-      "checked_markdown_lines": [
-        "UAP Document 401-402 refined markdown lines 45-72",
-        "UAP Document 401-402 refined markdown lines 77-89",
-        "UAP Document 401-402 refined markdown lines 105-119"
-      ]
-    }
-  ],
   "checked_sources": [
     {
-      "source_id": "uap-document-301-local",
-      "label": "UAP Document 301 - General Conditions",
-      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-      "checked_markdown_lines": [
-        "UAP Document 301 refined markdown lines 478-529",
-        "UAP Document 301 refined markdown lines 531-573",
-        "UAP Document 301 refined markdown lines 579-604",
-        "UAP Document 301 refined markdown lines 608-662"
-      ]
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9266-technical-specifications",
+      "locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636"
     },
     {
-      "source_id": "ciap-document-102-local",
-      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-      "checked_markdown_lines": [
-        "CIAP Document 102 refined markdown lines 180-213",
-        "CIAP Document 102 refined markdown lines 215-258"
-      ]
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9266-technical-specifications",
+      "locator": "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636"
     },
     {
-      "source_id": "ra-9184-government-procurement-irr-local",
-      "label": "RA 9184 Government Procurement IRR",
-      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
-      "raw_pdf_sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
-      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
-      "refined_markdown_sha256": "sha256:a868cf146c5516f23d74f41f5697c9f09b51251397eaad234694a5df11cf3e10",
-      "checked_markdown_lines": [
-        "RA 9184 IRR refined markdown lines 24-50",
-        "RA 9184 IRR refined markdown lines 145-151",
-        "RA 9184 IRR refined markdown lines 167-201"
-      ]
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap-standards-contract-documents",
+      "locator": "raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586"
     },
     {
-      "source_id": "uap-document-401-402-local",
-      "label": "UAP Document 401-402 - Architect-Owner Agreement",
-      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
-      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-      "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
-      "checked_markdown_lines": [
-        "UAP Document 401-402 refined markdown lines 45-72",
-        "UAP Document 401-402 refined markdown lines 77-89",
-        "UAP Document 401-402 refined markdown lines 105-119"
-      ]
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap-standards-contract-documents",
+      "locator": "raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap301-specification-conflicts",
+      "locator": "raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 301.md",
+      "sha256": "sha256:a3379af3a562d15513001839b14b07e0d00528535620f344d5f4587ae41a955e",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-uap301-specification-conflicts",
+      "locator": "raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+      "sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9184-performance-specifications",
+      "locator": "raw markdown lines 187-199"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+      "sha256": "sha256:32dd794a3030d72e05a60ff1faa9745543c1d1d75da0e0c1052fda845afa0197",
+      "source_id": "batch104-lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility-ra9184-performance-specifications",
+      "locator": "raw markdown lines 187-199"
     }
   ],
   "claims": [
-    {
-      "claim_id": "uap301-specs-definition",
-      "claim_text": "Specifications are written or printed descriptions of work, material qualities, and mode of construction, and form part of the contract document set.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_ids": [
-          "uap-document-301-local",
-          "ciap-document-102-local",
-          "ra-9184-government-procurement-irr-local",
-          "uap-document-401-402-local"
-        ],
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "quoted_pdf_excerpt": "Specifications are written or printed descriptions of work, material qualities, and mode of construction, and form part of the contract document set.",
-        "locator": "UAP Document 301 refined markdown lines 478-505"
-      }
-    },
-    {
-      "claim_id": "uap301-doc-coordination",
-      "claim_text": "Drawings and specifications are complementary; variance and discrepancy rules require formal clarification before risky work proceeds.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_ids": [
-          "uap-document-301-local",
-          "ciap-document-102-local",
-          "ra-9184-government-procurement-irr-local",
-          "uap-document-401-402-local"
-        ],
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "quoted_pdf_excerpt": "Drawings and specifications are complementary; variance and discrepancy rules require formal clarification before risky work proceeds.",
-        "locator": "UAP Document 301 refined markdown lines 519-545"
-      }
-    },
-    {
-      "claim_id": "ra9184-bidding-docs",
-      "claim_text": "Government bidding documents include plans and technical specifications, and goods specifications must be based on relevant characteristics or performance requirements without brand-name references.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_ids": [
-          "uap-document-301-local",
-          "ciap-document-102-local",
-          "ra-9184-government-procurement-irr-local",
-          "uap-document-401-402-local"
-        ],
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "quoted_pdf_excerpt": "Government bidding documents include plans and technical specifications, and goods specifications must be based on relevant characteristics or performance requirements without brand-name references.",
-        "locator": "RA 9184 IRR refined markdown lines 167-201"
-      }
-    }
+    "Technical specifications are architectural outputs and contract-document components under the checked sources.",
+    "Outline specifications and final technical specifications occur at different service phases.",
+    "Drawing/specification conflicts require written architect clarification under UAP Document 301.",
+    "For government procurement, technical specifications should be stated by characteristics or performance requirements and avoid brand names."
   ],
-  "unverified_or_rejected_claims": [],
   "removed_or_rewritten_material": [
-    "Removed or rewrote unsupported imported comparisons, generated placeholders, broad practice claims, and stale source labels not grounded in the local raw PDFs for this batch."
+    "Rewrote exact CSI MasterFormat claims into local source-safe specification and contract-document controls.",
+    "Removed unsupported subjective claims about specification quality and replaced them with source-backed completeness, consistency, conflict, and performance-characteristic controls."
   ],
+  "unverified_or_rejected_claims": [
+    "Exact CSI MasterFormat division structure remains final-depth source-needed because no local CSI primary source was in the checked packet.",
+    "Three-part CSI section format claims remain deferred until a local CSI source is added."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe specification conflict and addendum scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
+  },
   "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "raw_pdf_families_checked": [
-      "UAP Document 301 - General Conditions",
-      "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-      "RA 9184 Government Procurement IRR",
-      "UAP Document 401-402 - Architect-Owner Agreement"
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "raw markdown lines 66-76; raw markdown lines 136-138; raw markdown lines 591-617; raw markdown lines 635-636",
+      "raw markdown lines 332-344; raw markdown lines 350-369; raw markdown lines 568-586",
+      "raw markdown lines 562-590; raw markdown lines 594-594; raw markdown lines 732-732; raw markdown lines 1161-1182",
+      "raw markdown lines 187-199"
     ]
   },
-  "gate_results": {
-    "placeholders_removed_or_resolved": true,
-    "internal_notes_removed": true,
-    "unsupported_claims_removed": true,
-    "sources_json_updated": true,
-    "question_edits_created": true
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Exact CSI MasterFormat division structure remains final-depth source-needed because no local CSI primary source was in the checked packet.",
+      "Three-part CSI section format claims remain deferred until a local CSI source is added."
+    ]
   },
-  "source_safe_repair": {
-    "performed": true,
-    "repair_notes": "Local-first article and question repairs were limited to claims supported by the listed raw PDFs and locator-checked refined markdown."
-  },
-  "local_validation": {
-    "compose": "PASS",
-    "diff": "PASS",
-    "validate": "PASS",
-    "ui_block_edits": "PASS",
-    "scoped_checks": "PASS",
-    "targeted_tests": "PASS",
-    "git_diff_check": "PASS"
-  },
-  "sme_review": {
-    "required": false,
-    "status": "PASS",
-    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_supabase_upload": true,
-    "blockers": []
+  "overall": "pass",
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/question-edits"
   }
 }

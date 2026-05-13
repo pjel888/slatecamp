@@ -1,18 +1,16 @@
 {
   "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
   "slug": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility",
-  "generated_at": "2026-05-11T04:58:25.781Z",
-  "original_hash": "sha256:631b27ad1d95e47ab6c88f3da1fa599cde8cb564e8eb75418c0ce6293eda5ecd",
-  "normalized_hash": "sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8",
-  "candidate_hash": "sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8",
-  "ui_blocks_count": 0,
-  "placeholders_found": 0,
-  "placeholders_resolved": 0,
-  "unresolved_placeholders": [],
-  "unused_blocks": [],
-  "preserved_blocks_reinserted": 0,
-  "candidate_matches_original": false,
-  "safe_to_diff": true,
+  "generated_at": "2026-05-13T11:58:43+08:00",
+  "batch_id": "source-audited-article-batch-104-local-first",
+  "status": "pass",
+  "strict": true,
+  "source_count": 4,
+  "linked_question_count": 10,
+  "source_safe_real_world_scenario": "added",
   "blockers": [],
-  "warnings": []
+  "warnings": [
+    "Exact CSI MasterFormat division structure remains final-depth source-needed because no local CSI primary source was in the checked packet.",
+    "Three-part CSI section format claims remain deferred until a local CSI source is added."
+  ]
 }
