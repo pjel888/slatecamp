@@ -1,44 +1,38 @@
 {
   "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:0917420971f1e592bb3f206ecdefb0593661cbf081908f1050745e3a481ab4bf",
-  "source_count": 3,
+  "sources_hash": "sha256:bde91e989963170d971bd9bcc91b8e620f75a09898501f75fc00f8c524538e48",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "8786c92f-5c1a-4f5b-98d1-ad53125471ef",
+      "source_id": "batch127-lea-hist-014-03-core-concept-source-map-capture",
       "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
-      "label": "Baker, P.R. (1996). *Richard Morris Hunt*. MIT Press",
+      "label": "The École des Beaux-Arts source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "c5d905eb-e8be-4607-954b-2658953550e0",
-      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
-      "label": "Roth, L.M. (2001). *American Architecture: A History*. Westview Press",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for The École des Beaux-Arts.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.source-capture.md",
+      "sha256": "sha256:e3e2318ddee849828b281d144e50804bdb1d8f3abf857be55efd897aa9d88c12",
+      "locator": "NYPL Schwarzman Building, Boston Public Library, Architect of the Capitol/Library of Congress, Britannica Ecole des Beaux-Arts, and Brooklyn Museum/Penn Station source anchors for Beaux-Arts composition, civic monumentality, and integrated arts.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:15:00.000+08:00",
+      "updated_at": "2026-05-14T10:15:00.000+08:00"
     },
     {
-      "source_id": "bb772882-e341-433d-af65-10dbed439490",
+      "source_id": "batch127-lea-hist-014-03-core-concept-source-map-refined",
       "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
-      "label": "Ching, F.D.K., Jarzombek, M.M., & Prakash, V. (2006). *A Global History of Architecture*. Wiley",
+      "label": "The École des Beaux-Arts refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for The École des Beaux-Arts and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.refined.md",
+      "sha256": "sha256:82897d8bfa1bfaaedb0085f27a48be7988e72df037bc85227f0173357bbe2887",
+      "locator": "NYPL Schwarzman Building, Boston Public Library, Architect of the Capitol/Library of Congress, Britannica Ecole des Beaux-Arts, and Brooklyn Museum/Penn Station source anchors for Beaux-Arts composition, civic monumentality, and integrated arts.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:15:00.000+08:00",
+      "updated_at": "2026-05-14T10:15:00.000+08:00"
     }
   ]
 }

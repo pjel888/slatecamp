@@ -1,44 +1,38 @@
 {
   "article_id": "6d9a90b6-39bf-423b-9986-74b978939702",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:ab20013e829b03119793f8de5b6c2e8861cd2f8161a06e4394557353fdcf721d",
-  "source_count": 3,
+  "sources_hash": "sha256:1961be9ad9b42c5b8276ead155cb9b4e8cc58a133b55abd584afa01c87680d34",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "93c08cca-0d5f-4e99-8c72-64fe3823d113",
+      "source_id": "batch127-lea-hist-014-01-core-concept-source-map-capture",
       "article_id": "6d9a90b6-39bf-423b-9986-74b978939702",
-      "label": "McAlester, V. & McAlester, L. (2013). *A Field Guide to American Houses*. Knopf",
+      "label": "American Colonial Architecture source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "5e4592dd-ce89-4322-8566-37554e990882",
-      "article_id": "6d9a90b6-39bf-423b-9986-74b978939702",
-      "label": "Roth, L.M. (2001). *American Architecture: A History*. Westview Press",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for American Colonial Architecture.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.source-capture.md",
+      "sha256": "sha256:990ffd6052701bf8b2e6eae38e962365399350600dc3d682c04ba96a5ef1497e",
+      "locator": "Historic New England style guide; NPS Federal Style and Castillo de San Marcos records; Mount Vernon mansion/enslaved quarters records; Architect of the Capitol neoclassical records; local source map for regional colonial and Federal guardrails.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:15:00.000+08:00",
+      "updated_at": "2026-05-14T10:15:00.000+08:00"
     },
     {
-      "source_id": "bd3bdb05-a79d-47c5-8760-9c083228cac3",
+      "source_id": "batch127-lea-hist-014-01-core-concept-source-map-refined",
       "article_id": "6d9a90b6-39bf-423b-9986-74b978939702",
-      "label": "Ching, F.D.K., Jarzombek, M.M., & Prakash, V. (2006). *A Global History of Architecture*. Wiley",
+      "label": "American Colonial Architecture refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for American Colonial Architecture and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.refined.md",
+      "sha256": "sha256:dfefb28c62e824adc01473e60db5cac8f6e6fb96e9ed0d16b751a4a77906aa11",
+      "locator": "Historic New England style guide; NPS Federal Style and Castillo de San Marcos records; Mount Vernon mansion/enslaved quarters records; Architect of the Capitol neoclassical records; local source map for regional colonial and Federal guardrails.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:15:00.000+08:00",
+      "updated_at": "2026-05-14T10:15:00.000+08:00"
     }
   ]
 }

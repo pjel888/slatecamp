@@ -1,0 +1,454 @@
+{
+  "batch_id": "source-audited-article-batch-127-local-first",
+  "generated_at": "2026-05-14T10:15:00.000+08:00",
+  "updated_at": "2026-05-13T19:07:25.929Z",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "2d2a92b5f",
+  "baseline_full_commit": "2d2a92b5f27c8416239bea7a0774d891bc1104c5",
+  "previous_content_batch_commit": "2d2a92b5f",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "selection_policy": "Next residual non-prac linked-question article bundles after Batch 126 consumed through lea-hist-012-03; selected lea-hist-013-01, lea-hist-013-02, lea-hist-014-01, lea-hist-014-02, and lea-hist-014-03 because all five were sourceable with official/authoritative local captures.",
+  "consumed_before_batch_127": [
+    "lea-hist-001-01..06",
+    "lea-hist-001-08",
+    "lea-hist-002-01..06",
+    "lea-hist-004-01..02",
+    "lea-hist-004-05..08",
+    "lea-hist-007-01..06",
+    "lea-hist-008-01",
+    "lea-hist-008-02",
+    "lea-hist-008-03a",
+    "lea-hist-008-03b",
+    "lea-hist-008-03c",
+    "lea-hist-008-03d",
+    "lea-hist-008-04a",
+    "lea-hist-008-04b",
+    "lea-hist-008-04c",
+    "lea-hist-008-05",
+    "lea-hist-008-06",
+    "lea-hist-008-07a",
+    "lea-hist-008-07b",
+    "lea-hist-008-08",
+    "lea-hist-008-09",
+    "lea-hist-011-01",
+    "lea-hist-011-02",
+    "lea-hist-012-01",
+    "lea-hist-012-02",
+    "lea-hist-012-03"
+  ],
+  "selected_articles": [
+    {
+      "article_id": "d785ad35-413a-4d53-b801-b5852bc4fb50",
+      "slug": "lea-hist-013-01-core-concept",
+      "title": "Spanish Colonial Architecture in Latin America",
+      "folder": ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 2,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: compare a historic-centre repair brief for Quito, Cuzco, Mexico City, and Old Havana; the plaza/grid grammar is shared, but topography, pre-contact fabric, fortification, and local craft traditions change the conservation response.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed unsupported exact plaza-dimension phrasing and kept Laws of the Indies as a planning/ordinance framework rather than a single universal measurement.",
+        "Corrected portleas to portales and treated arcades as shaded public/commercial edges, not defensive structures.",
+        "Softened pure-Spanish and every-town claims by foregrounding UNESCO-supported hybrid and site-specific adaptations."
+      ],
+      "normalized_hash": "sha256:de06a205c4e4c1849fe8d14097151552e8de8338f5c9f434e9b886abc4c2f22d",
+      "candidate_hash": "sha256:de06a205c4e4c1849fe8d14097151552e8de8338f5c9f434e9b886abc4c2f22d",
+      "sources_hash": "sha256:403c775c0eba9295f6e1334898c08f393024fb0fb9fb1627d95f54f34cd641f9",
+      "linked_questions_hash": "sha256:8831fc27b6c589df75a6bc73c189f64aeb6ede329ad104dff61d2fa31e22e4bb",
+      "source_locator": "UNESCO records for Quito, Cuzco, Mexico City/Xochimilco, and Old Havana; Britannica and J-STAGE records for Laws of the Indies/1573 ordinances; local source map for plaza, grid, Baroque fusion, and colonial-urban exam guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-013-01-core-concept-spanish-colonial-architecture-in-latin-america.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-013-01-core-concept-spanish-colonial-architecture-in-latin-america.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:dcd4e91b36eacbb556f76ac08f75f6d6245d2418ec3b81b793d04438ab1ba052",
+        "sha256:c2e542fe3601e382af7095f2df9c07d0f54cf4910e55de82f0b0f615966135ec"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "original_hash": "sha256:963b673dc2cf30bff82dbbb31d0e540515d3326d3db0af47753af916afca51f0"
+    },
+    {
+      "article_id": "59ad9766-1b0c-4256-8fde-a3661471c360",
+      "slug": "lea-hist-013-02-core-concept",
+      "title": "Latin American Modernism",
+      "folder": ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: compare a federal civic campus inspired by Brasilia with a small contemplative house inspired by Barragan; both are modernist, but one works through monumental urban order and the other through color, light, water, and enclosure.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Softened Lucio Costa founder language to architect-planner/helped define language.",
+        "Removed long Niemeyer quote dependency and summarized curve/free-form concrete language from official sources.",
+        "Kept Barragan as modernist while clarifying that his color and water strategies reject cold International Style minimalism, not modernism itself."
+      ],
+      "normalized_hash": "sha256:dcdb32c2fbde8117790c037810bb9e810123c78c83103da185c20984aee55f09",
+      "candidate_hash": "sha256:dcdb32c2fbde8117790c037810bb9e810123c78c83103da185c20984aee55f09",
+      "sources_hash": "sha256:ff118549ed0cf032cd76ffdbef3f78e54a6b15a53bff5c3303bbd72307b2ed7b",
+      "linked_questions_hash": "sha256:49e431dc064c8ada8ab761d6110f951319df4a7637eaf14b0a743514bfe2e3b0",
+      "source_locator": "UNESCO Brasilia and Luis Barragan House records; Pritzker records for Oscar Niemeyer and Luis Barragan; local source map for Costa/Niemeyer/Barragan distinctions, Brasilia guardrails, and emotional/monumental modernism.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-013-02-core-concept-latin-american-modernism.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-013-02-core-concept-latin-american-modernism.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:f85a7cce0852fc1182f1e3ddfc5fda0fe8675a8a81ad1d1f7ba14032ebaa414e",
+        "sha256:b14bdebcdcac64f479772fe07347bb36fb7584d3c2311da371dad242a7d6079d"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "original_hash": "sha256:72ed87a36556dfaeccd9f1b3f506540e961486def7147bdce6ed9845e9f81db4"
+    },
+    {
+      "article_id": "6d9a90b6-39bf-423b-9986-74b978939702",
+      "slug": "lea-hist-014-01-core-concept",
+      "title": "American Colonial Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: compare preservation briefs for a New England timber house, a Chesapeake plantation estate, a Spanish Florida coquina fortification, and a Federal civic building; material, climate, labor history, and political symbolism change the analysis.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Kept New England central chimney/steep roof claims only for New England, not all colonies.",
+        "Added source-safe slavery/labor context for plantation architecture instead of treating dependencies as neutral service forms.",
+        "Separated Federal/neoclassical civic symbolism from earlier colonial regional houses."
+      ],
+      "normalized_hash": "sha256:a2d7b12a6e3787cc1bb5a894b46079ab3e1fab0e3f9e5bcd483c05c3c7fe0f65",
+      "candidate_hash": "sha256:a2d7b12a6e3787cc1bb5a894b46079ab3e1fab0e3f9e5bcd483c05c3c7fe0f65",
+      "sources_hash": "sha256:1961be9ad9b42c5b8276ead155cb9b4e8cc58a133b55abd584afa01c87680d34",
+      "linked_questions_hash": "sha256:98346101fab06e8c018162330c1085ca275afa046bdd29fde8d6a0183b7f4ded",
+      "source_locator": "Historic New England style guide; NPS Federal Style and Castillo de San Marcos records; Mount Vernon mansion/enslaved quarters records; Architect of the Capitol neoclassical records; local source map for regional colonial and Federal guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:990ffd6052701bf8b2e6eae38e962365399350600dc3d682c04ba96a5ef1497e",
+        "sha256:dfefb28c62e824adc01473e60db5cac8f6e6fb96e9ed0d16b751a4a77906aa11"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "original_hash": "sha256:93ea539b410f319f38750664ab1cca77a87579291bfbecbd8e6237061664a7f3"
+    },
+    {
+      "article_id": "7bd084c7-e409-4927-84a0-9eac44e07ba4",
+      "slug": "lea-hist-014-02-core-concept",
+      "title": "The Modern Skyscraper",
+      "folder": ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: classify a tall 1890s office building by load path before style; a masonry wall building, a hybrid frame building, and a curtain-wall steel-frame building lead to different preservation and exam answers.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Softened Home Insurance all-load language to early metal-frame skeleton and reduced reliance on load-bearing masonry.",
+        "Kept Sullivan as form-follows-function while clarifying that he did not reject ornament.",
+        "Kept Masonic Temple height/story count only as approximate and supported by Chicago-history source anchors."
+      ],
+      "normalized_hash": "sha256:a2ed112b56453790e0046ef2b3868a6051aadaec97419093c40867451fe51801",
+      "candidate_hash": "sha256:a2ed112b56453790e0046ef2b3868a6051aadaec97419093c40867451fe51801",
+      "sources_hash": "sha256:c19a4b48b291406277ee8b11a6ae846b3527c5879df9a112484980fb1409eda1",
+      "linked_questions_hash": "sha256:8443e37c037efd178a31d53025ab367367826d060086f2694847b300a8f52da7",
+      "source_locator": "Chicago Architecture Center records for Home Insurance, Monadnock, Reliance, Burnham & Root, and Rookery; NPS/NHL and Britannica records for Wainwright/Sullivan; Chicago History source for Masonic Temple guardrail.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-02-core-concept-the-modern-skyscraper.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-02-core-concept-the-modern-skyscraper.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:585341054f8e5b2e8f87e87659e7baef33709cc2dccd96e4f53f9a6e864c3f34",
+        "sha256:4cd33337ba8fbb50c05da9ddd2b66dc3365f6b4d075c70c7191d5208ec5fd4f7"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "original_hash": "sha256:b8fdab34a05c0c893d0026fab74691719925fb9ac5a4b34af8dd1679ca2c1cb2"
+    },
+    {
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "slug": "lea-hist-014-03-core-concept",
+      "title": "The École des Beaux-Arts",
+      "folder": ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: evaluate a civic library, rail terminal, and congressional library by processional axis, hierarchy, classical vocabulary, material richness, and integrated fine arts before reducing the answer to ornament.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed the literal \"(Remove entire row - not Beaux-Arts)\" table artifact by replacing the UI table with plain source-backed text.",
+        "Softened \"not a style\" into \"exam-safe as a method/training system plus associated style vocabulary\" so it does not fight source terminology.",
+        "Fixed the incomplete \"this as\" linked-question wording and refreshed all rationales."
+      ],
+      "normalized_hash": "sha256:9a70f0587ba92fe5e4bd2e0b1737286610d3ccff4176146bd678ebd03fc77802",
+      "candidate_hash": "sha256:9a70f0587ba92fe5e4bd2e0b1737286610d3ccff4176146bd678ebd03fc77802",
+      "sources_hash": "sha256:bde91e989963170d971bd9bcc91b8e620f75a09898501f75fc00f8c524538e48",
+      "linked_questions_hash": "sha256:562484b1c42695495a861f2b4fac545977e3b3d708bf7516a54042c385e7c291",
+      "source_locator": "NYPL Schwarzman Building, Boston Public Library, Architect of the Capitol/Library of Congress, Britannica Ecole des Beaux-Arts, and Brooklyn Museum/Penn Station source anchors for Beaux-Arts composition, civic monumentality, and integrated arts.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:e3e2318ddee849828b281d144e50804bdb1d8f3abf857be55efd897aa9d88c12",
+        "sha256:82897d8bfa1bfaaedb0085f27a48be7988e72df037bc85227f0173357bbe2887"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "original_hash": "sha256:05ff27e550a994c39fd529da5bf27edbd242b523437b63c8d3ccf8c5dee4f0a4"
+    }
+  ],
+  "totals": {
+    "article_clusters": 5,
+    "linked_questions": 53,
+    "question_edits": 53,
+    "answer_key_changes": 0,
+    "option_text_changes": 3,
+    "source_entries": 10,
+    "local_source_artifacts": 10
+  },
+  "forbidden_actions_not_performed": [
+    "Supabase push",
+    "deploy",
+    "production DB mutation",
+    "merge to main",
+    "unrelated dirty-file staging"
+  ],
+  "validation_gates": [
+    "compose",
+    "diff",
+    "validate",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check after intended staging"
+  ],
+  "intended_paths": [
+    ".ai/03_plans/production-line-batch-127-manifest.json",
+    ".ai/03_plans/batch-127-independent-quality-review.md",
+    ".ai/03_plans/batch-127-git-handoff-stage-list.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-127-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-127-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-127-local-first-scoped-checks.json",
+    ".ai/content-audit-export/sync-state.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-013-01-core-concept-spanish-colonial-architecture-in-latin-america.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-013-01-core-concept-spanish-colonial-architecture-in-latin-america.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-013-02-core-concept-latin-american-modernism.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-013-02-core-concept-latin-american-modernism.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-02-core-concept-the-modern-skyscraper.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-02-core-concept-the-modern-skyscraper.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/compose-error.json"
+  ],
+  "commit_plan": {
+    "expected_commit_message": "chore(content): accept source-audited batch 127",
+    "target_branch": "3dlab-gray-viewport-bg",
+    "remote": "origin"
+  },
+  "validation_results": {
+    "compose": {
+      "status": "pass",
+      "command": "bun scripts/content-audit/compose-candidates.ts --article-id <id> --overwrite --strict",
+      "processed": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "pass",
+      "command": "bun scripts/content-audit/diff-candidates.ts --article-id <id> --strict",
+      "processed": 5,
+      "safe_to_push": 5
+    },
+    "validate_bundles": {
+      "status": "pass",
+      "command": "bun scripts/content-audit/validate-bundles.ts --article-id <id> --summary",
+      "processed": 5,
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "command": "bun scripts/content-audit/validate-ui-block-edits.ts --article-id <id>",
+      "processed": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "files_checked": 40
+    },
+    "placeholder_internal_note_scan": {
+      "status": "pass",
+      "patterns": [
+        "SLATECAMP_UI_BLOCK",
+        "INTERNAL_NOTE",
+        "SOURCE_GAP",
+        "TODO",
+        "FIXME"
+      ],
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "local_artifacts_checked": 10
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "pass",
+      "linked_questions": 53,
+      "question_edits": 53,
+      "content_hashes_checked": 53
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "deleted_paths": [
+        ".ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/compose-error.json",
+        ".ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/compose-error.json",
+        ".ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/compose-error.json",
+        ".ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/compose-error.json",
+        ".ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/compose-error.json"
+      ]
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass_count": 34,
+      "fail_count": 0
+    },
+    "git_index_stage_attempt": {
+      "status": "git_index_blocked_in_codex",
+      "attempted_at": "2026-05-13T19:07:25.929Z",
+      "attempted_commands": [
+        "git add -A -- $(jq -r ... non-vitruvius intended paths ...)",
+        "git add -f -- $(jq -r ... vitruvius intended paths ...)"
+      ],
+      "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+      "stop_condition": "Hermes must stage the manifest intended_paths, run git diff --cached --check, commit chore(content): accept source-audited batch 127, and push origin/3dlab-gray-viewport-bg."
+    }
+  },
+  "blockers": [],
+  "git_handoff": {
+    "status": "git_index_blocked_in_codex",
+    "attempted_at": "2026-05-13T19:07:25.929Z",
+    "attempted_commands": [
+      "git add -A -- $(jq -r ... non-vitruvius intended paths ...)",
+      "git add -f -- $(jq -r ... vitruvius intended paths ...)"
+    ],
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "stop_condition": "Hermes must stage the manifest intended_paths, run git diff --cached --check, commit chore(content): accept source-audited batch 127, and push origin/3dlab-gray-viewport-bg."
+  }
+}

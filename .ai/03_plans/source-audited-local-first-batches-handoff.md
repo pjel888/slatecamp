@@ -1,3 +1,20 @@
+## Batch 127 Git Index Blocked Handoff - 2026-05-13T19:07:25.929Z
+
+Local validation passed, but Codex could not write .git/index.lock. Hermes should stage the Batch 127 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 127`, and push `origin/3dlab-gray-viewport-bg`.
+
+## Batch 127 Local-First Handoff - 2026-05-13T19:05:15.575Z
+
+Ready for acceptance commit: `chore(content): accept source-audited batch 127`. Intended paths are recorded in `.ai/03_plans/batch-127-git-handoff-stage-list.md`; unrelated dirty work remains excluded.
+
+## Batch 127 Handoff - 2026-05-14
+
+- Batch 127 continues after accepted Batch 126 and consumes `lea-hist-013-01`, `lea-hist-013-02`, `lea-hist-014-01`, `lea-hist-014-02`, `lea-hist-014-03`.
+- Required local artifacts are present under `.ai/03_plans`, `.ai/content-audit-export`, selected article folders, and `vitruvius-connection/.../source-map-batch-127`.
+- Next residual pointer after a successful commit: continue with the next sourceable non-prac residual cluster after `lea-hist-014-03`.
+- If git index or GitHub DNS blocks finalization, Hermes should stage only the intended Batch 127 paths listed in the manifest and stage list.
+
+---
+
 ## Batch 126 Handoff - 2026-05-14
 
 - Batch 126 continues after accepted Batch 125 and consumes `lea-hist-011-01`, `lea-hist-011-02`, `lea-hist-012-01`, `lea-hist-012-02`, and `lea-hist-012-03`.

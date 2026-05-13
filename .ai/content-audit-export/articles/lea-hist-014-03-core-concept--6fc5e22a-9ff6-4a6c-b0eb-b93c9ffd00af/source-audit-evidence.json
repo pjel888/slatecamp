@@ -1,0 +1,43 @@
+{
+  "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+  "slug": "lea-hist-014-03-core-concept",
+  "batch_id": "source-audited-article-batch-127-local-first",
+  "generated_at": "2026-05-14T10:15:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "NYPL Schwarzman Building, Boston Public Library, Architect of the Capitol/Library of Congress, Britannica Ecole des Beaux-Arts, and Brooklyn Museum/Penn Station source anchors for Beaux-Arts composition, civic monumentality, and integrated arts.",
+  "source_urls": [
+    "https://www.nypl.org/about/locations/schwarzman",
+    "https://www.nypl.org/about/locations/schwarzman/facts",
+    "https://www.bpl.org/art-architecture/",
+    "https://www.bpl.org/bpl-history/",
+    "https://www.aoc.gov/explore-capitol-campus/buildings-grounds/beaux-arts",
+    "https://www.loc.gov/research-centers/main/about-this-research-center/art-and-architecture/",
+    "https://www.britannica.com/topic/Ecole-des-Beaux-Arts",
+    "https://www.brooklynmuseum.org/objects/90655"
+  ],
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.refined.md"
+  ],
+  "checked_sources": [
+    {
+      "source_id": "batch127-lea-hist-014-03-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.source-capture.md",
+      "sha256": "sha256:e3e2318ddee849828b281d144e50804bdb1d8f3abf857be55efd897aa9d88c12",
+      "locator": "NYPL Schwarzman Building, Boston Public Library, Architect of the Capitol/Library of Congress, Britannica Ecole des Beaux-Arts, and Brooklyn Museum/Penn Station source anchors for Beaux-Arts composition, civic monumentality, and integrated arts."
+    },
+    {
+      "source_id": "batch127-lea-hist-014-03-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.refined.md",
+      "sha256": "sha256:82897d8bfa1bfaaedb0085f27a48be7988e72df037bc85227f0173357bbe2887",
+      "locator": "NYPL Schwarzman Building, Boston Public Library, Architect of the Capitol/Library of Congress, Britannica Ecole des Beaux-Arts, and Brooklyn Museum/Penn Station source anchors for Beaux-Arts composition, civic monumentality, and integrated arts."
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed the literal \"(Remove entire row - not Beaux-Arts)\" table artifact by replacing the UI table with plain source-backed text.",
+    "Softened \"not a style\" into \"exam-safe as a method/training system plus associated style vocabulary\" so it does not fight source terminology.",
+    "Fixed the incomplete \"this as\" linked-question wording and refreshed all rationales."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario: evaluate a civic library, rail terminal, and congressional library by processional axis, hierarchy, classical vocabulary, material richness, and integrated fine arts before reducing the answer to ornament."
+}

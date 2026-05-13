@@ -1,3 +1,17 @@
+## Batch 127 Freeze Readiness Update - 2026-05-13T19:05:15.575Z
+
+Batch 127 is not an exhaustion/freeze report. The next residual queue advanced through `lea-hist-014-03-core-concept` with 5/5 sourceable clusters and 53 linked-question edits.
+
+## Batch 127 Freeze Readiness - 2026-05-14
+
+- Status: prepared pending validation.
+- Source readiness: official/authoritative URLs captured locally and refined for all five selected article clusters.
+- Question readiness: 53/53 linked question edits generated and applied locally.
+- Known source-sensitive corrections: portales typo and Laws of Indies measurement guardrails, Costa/Niemeyer/Barragan scope guardrails, plantation/slavery context, Home Insurance all-load overclaim, Beaux-Arts stale table artifact and wording fix.
+- Freeze condition: only after compose/diff/validate, UI-block edit validation, scoped JSON/hash/placeholder/question/stale-error checks, targeted tests, scoped git diff check, intended staging, cached diff check, commit, and push.
+
+---
+
 ## Batch 126 Freeze Readiness - 2026-05-14
 
 - Status: pass local-first; live git finalization blocked by .git/index.lock permissions.

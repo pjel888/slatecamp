@@ -1,0 +1,101 @@
+# Batch 127 Git Handoff Stage List
+
+Generated: 2026-05-13T19:05:15.575Z
+Status: passed_local_validation_git_index_blocked_handoff
+
+Codex stage attempt blocked: `fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted`.
+
+Stage exactly the following paths for Batch 127. Use `git add -f` for ignored vitruvius source-map artifacts if needed.
+
+- `.ai/03_plans/production-line-batch-127-manifest.json`
+- `.ai/03_plans/batch-127-independent-quality-review.md`
+- `.ai/03_plans/batch-127-git-handoff-stage-list.md`
+- `.ai/03_plans/source-audited-production-line-coordination.md`
+- `.ai/03_plans/source-audited-local-first-batches-handoff.md`
+- `.ai/03_plans/source-audited-local-first-freeze-readiness-report.md`
+- `.ai/content-audit-export/source-audited-article-batch-127-local-first-report.md`
+- `.ai/content-audit-export/source-audited-article-batch-127-local-first-ledger.json`
+- `.ai/content-audit-export/source-audited-article-batch-127-local-first-scoped-checks.json`
+- `.ai/content-audit-export/sync-state.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-013-01-core-concept-spanish-colonial-architecture-in-latin-america.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-013-01-core-concept-spanish-colonial-architecture-in-latin-america.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-013-01-core-concept--d785ad35-413a-4d53-b801-b5852bc4fb50/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-013-02-core-concept-latin-american-modernism.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-013-02-core-concept-latin-american-modernism.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-013-02-core-concept--59ad9766-1b0c-4256-8fde-a3661471c360/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-014-01-core-concept--6d9a90b6-39bf-423b-9986-74b978939702/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-02-core-concept-the-modern-skyscraper.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-02-core-concept-the-modern-skyscraper.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-014-02-core-concept--7bd084c7-e409-4927-84a0-9eac44e07ba4/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-03-core-concept-the-ecole-des-beaux-arts.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-014-03-core-concept--6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af/compose-error.json`
+
+Do not stage unrelated dirty stairway/3D/marketing/docs/skills/performance files or unrelated content-roundtrip run directories.

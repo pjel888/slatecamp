@@ -1,0 +1,41 @@
+{
+  "article_id": "6d9a90b6-39bf-423b-9986-74b978939702",
+  "slug": "lea-hist-014-01-core-concept",
+  "batch_id": "source-audited-article-batch-127-local-first",
+  "generated_at": "2026-05-14T10:15:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "Historic New England style guide; NPS Federal Style and Castillo de San Marcos records; Mount Vernon mansion/enslaved quarters records; Architect of the Capitol neoclassical records; local source map for regional colonial and Federal guardrails.",
+  "source_urls": [
+    "https://www.historicnewengland.org/preservation/for-homeowners-communities/your-old-or-historic-home/architectural-style-guide/",
+    "https://www.nps.gov/articles/000/federal-style-architecture.htm",
+    "https://home.nps.gov/casa/learn/historyculture/construction.htm",
+    "https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/exterior-architectural-details",
+    "https://www.mountvernon.org/digital-encyclopedia/article/slave-quarters/",
+    "https://www.aoc.gov/explore-capitol-campus/buildings-grounds/neoclassical"
+  ],
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.refined.md"
+  ],
+  "checked_sources": [
+    {
+      "source_id": "batch127-lea-hist-014-01-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.source-capture.md",
+      "sha256": "sha256:990ffd6052701bf8b2e6eae38e962365399350600dc3d682c04ba96a5ef1497e",
+      "locator": "Historic New England style guide; NPS Federal Style and Castillo de San Marcos records; Mount Vernon mansion/enslaved quarters records; Architect of the Capitol neoclassical records; local source map for regional colonial and Federal guardrails."
+    },
+    {
+      "source_id": "batch127-lea-hist-014-01-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-127/lea-hist-014-01-core-concept-american-colonial-architecture.refined.md",
+      "sha256": "sha256:dfefb28c62e824adc01473e60db5cac8f6e6fb96e9ed0d16b751a4a77906aa11",
+      "locator": "Historic New England style guide; NPS Federal Style and Castillo de San Marcos records; Mount Vernon mansion/enslaved quarters records; Architect of the Capitol neoclassical records; local source map for regional colonial and Federal guardrails."
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Kept New England central chimney/steep roof claims only for New England, not all colonies.",
+    "Added source-safe slavery/labor context for plantation architecture instead of treating dependencies as neutral service forms.",
+    "Separated Federal/neoclassical civic symbolism from earlier colonial regional houses."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario: compare preservation briefs for a New England timber house, a Chesapeake plantation estate, a Spanish Florida coquina fortification, and a Federal civic building; material, climate, labor history, and political symbolism change the analysis."
+}
