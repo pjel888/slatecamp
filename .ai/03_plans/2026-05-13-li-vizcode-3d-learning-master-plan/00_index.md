@@ -41,6 +41,7 @@ The source folders are valuable evidence, but they should no longer be used as c
 | `10_risk-register-open-decisions.md` | Risks, decisions, open questions, and default answers |
 | `11_source-ledger-and-archive-map.md` | Evidence ledger plus original-to-archive path map |
 | `12_agent-execution-handoff.md` | Handoff instructions for the later implementation run |
+| `13_vizcode-live-mode-deep-dive-2026-05-13.md` | Live VizCode mode study and SlateCamp counter-plan |
 
 ## Reading Order
 
