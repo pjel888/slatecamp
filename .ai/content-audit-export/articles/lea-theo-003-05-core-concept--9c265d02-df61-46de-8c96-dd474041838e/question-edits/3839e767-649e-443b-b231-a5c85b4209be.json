@@ -2,78 +2,84 @@
   "question_id": "3839e767-649e-443b-b231-a5c85b4209be",
   "baseline_hash": "sha256:2a01649373fc58c3abc7f92110a8eb754fec2896821f5971a57dd9e2fdbc4ae2",
   "action": "replace",
-  "reason": "source-audited-article-batch-058-local-first: local raw PDF backed replacement constrained to checked Batch 058 source families.",
-  "approved_by": "codex-local-first-batch-058",
-  "approved_at": "2026-05-11T20:31:00.000+08:00",
+  "reason": "source-audited-article-batch-131-local-first: source-safe rewrite constrained to checked Batch 131 source-map capture/refined artifacts and local source hashes.",
+  "approved_by": "codex-local-first-batch-131",
+  "approved_at": "2026-05-14T13:10:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9c265d02-df61-46de-8c96-dd474041838e",
     "parent_article_slug": "lea-theo-003-05-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 5972-5974, 10479-10493, 10659-10671, 11259-11261, and raw PDF pages 180, 320-328, and 349; theory refined markdown lines 11-13 and raw PDF page 1; TOA 3 Design Perception refined markdown lines 23-34 and raw PDF pages 4-5",
+    "source_locator": "Wiley Pallasmaa page lines 123-131 and 158-184; Wiley Ching page lines 124-130; theory refined markdown lines 11-13; Salvan refined markdown lines 5970-5973, 10481-10487, 10525-10671, and 11261.",
     "checked_markdown_lines": [
-      "George Salvan Architectural Theories of Design refined markdown lines 5972-5974",
-      "George Salvan Architectural Theories of Design refined markdown lines 10479-10493",
-      "George Salvan Architectural Theories of Design refined markdown lines 10659-10671",
-      "George Salvan Architectural Theories of Design refined markdown lines 11259-11261",
+      "Wiley Pallasmaa page lines 123-131 and 158-184",
+      "Wiley Ching page lines 124-130",
       "theory refined markdown lines 11-13",
-      "TOA 3 Design Perception refined markdown lines 23-34"
+      "Salvan refined markdown lines 5970-5973, 10481-10487, 10525-10671, and 11261."
     ],
     "checked_sources": [
       {
-        "source_id": "salvan-theory-local-raw-pdf--b058-9c265d02-01",
-        "label": "George Salvan Architectural Theories of Design - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 5972-5974, 10479-10493, 10659-10671, 11259-11261, and raw PDF pages 180, 320-328, and 349"
+        "source_id": "batch131-lea-theo-003-05-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-05-core-concept-multisensory-architecture.source-capture.md",
+        "sha256": "sha256:d5601afe7d8f090a5c0f3f889ea7d284b37c55e9d2e13148ff2d7e484591f9c7",
+        "locator": "Wiley Pallasmaa page lines 123-131 and 158-184; Wiley Ching page lines 124-130; theory refined markdown lines 11-13; Salvan refined markdown lines 5970-5973, 10481-10487, 10525-10671, and 11261."
       },
       {
-        "source_id": "theory-local-raw-pdf--b058-9c265d02-02",
-        "label": "theory - local raw PDF",
+        "source_id": "batch131-lea-theo-003-05-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-05-core-concept-multisensory-architecture.refined.md",
+        "sha256": "sha256:834b7952fd2dd6bf5225572f9f94138692e827cb937f7bcd27751551621db516",
+        "locator": "Wiley Pallasmaa page lines 123-131 and 158-184; Wiley Ching page lines 124-130; theory refined markdown lines 11-13; Salvan refined markdown lines 5970-5973, 10481-10487, 10525-10671, and 11261."
+      },
+      {
+        "source_id": "batch131-lea-theo-003-05-core-concept-checked-local-source-1",
         "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
         "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
-        "locator": "theory refined markdown lines 11-13 and raw PDF page 1"
+        "locator": "local raw source file hash checked"
       },
       {
-        "source_id": "toa3-design-perception-local-raw-pdf--b058-9c265d02-03",
-        "label": "TOA 3 Design Perception - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
-        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
-        "locator": "TOA 3 Design Perception refined markdown lines 23-34 and raw PDF pages 4-5"
+        "source_id": "batch131-lea-theo-003-05-core-concept-checked-local-source-2",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "lines 11-13, 154-191, 220"
+      },
+      {
+        "source_id": "batch131-lea-theo-003-05-core-concept-checked-local-source-3",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch131-lea-theo-003-05-core-concept-checked-local-source-4",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "lines 5926-5940, 5970-5973, 5990-5997, 6152-6172, 7978-8008, 10481-10487, 10525-10671, 11261, 15731-15917, 15980-15994"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 058 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to Batch 131 checked local-first source scope. Answer key preserved: true."
   },
   "proposed": {
-    "text": "Which answer best describes multisensory architecture?",
+    "text": "A pediatric clinic strategy most consistent with multisensory architecture is:",
     "options": [
       {
         "id": "a",
-        "text": "It shapes experience through several senses, not sight alone."
+        "text": "Clear wayfinding, controlled glare, moderated sound, friendly contact surfaces, and coherent color and texture"
       },
       {
         "id": "b",
-        "text": "It is limited to color selection."
+        "text": "A dramatic ceiling only visible in photographs"
       },
       {
         "id": "c",
-        "text": "It excludes material and sound."
+        "text": "No tactile cues because children mainly respond to images"
       },
       {
         "id": "d",
-        "text": "It applies only to mechanical systems."
+        "text": "A single loud feature wall as the whole sensory strategy"
       }
     ],
     "correct_option_id": "a",
-    "rationale": "It shapes experience through several senses, not sight alone. This answer is supported by the checked Batch 058 local raw PDF source families for Multisensory Architecture.",
-    "explanation": "It shapes experience through several senses, not sight alone. The Batch 058 source audit used local raw PDFs first and refined markdown only as locator evidence for Multisensory Architecture.",
-    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 5972-5974, 10479-10493, 10659-10671, 11259-11261, and raw PDF pages 180, 320-328, and 349"
-  },
-  "batch_question_template_index": 1
+    "rationale": "The best answer coordinates visual, auditory, tactile, material, and orientation cues.",
+    "explanation": "The best answer coordinates visual, auditory, tactile, material, and orientation cues. The best answer coordinates visual, auditory, tactile, material, and orientation cues.",
+    "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-05-core-concept-multisensory-architecture.refined.md; theory.md lines 11-13; Salvan lines 5970-5973, 10525-10671, and 11261."
+  }
 }

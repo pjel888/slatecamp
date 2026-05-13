@@ -1,30 +1,30 @@
 {
   "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:96ed07e17ddf6d5cc102b9626fd8193af75fb34cbce9c6bc5b488df224522c55",
+  "linked_questions_hash": "sha256:539dc4c8cad9e0d9fc22f4f6671fd0b171cf6ec9f1e73178a51be2f47e9547b1",
   "question_count": 13,
   "questions": [
     {
       "question_id": "eaa2a3e7-f1ae-4092-97fc-d8fbf88055da",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Low Physical Effort (Principle 6) means design that:",
+      "text": "Low Physical Effort, Principle 6 of Universal Design, means design that:",
       "options": [
         {
           "id": "a",
-          "text": "Eliminates all human movement, relying on mechanical systems to perform tasks that would otherwise require physical exertion"
+          "text": "Requires users to exert the maximum effort possible"
         },
         {
           "id": "b",
-          "text": "Works only for young, able-bodied users, excluding those who may have physical limitations or disabilities"
+          "text": "Works only for athletic users"
         },
         {
           "id": "c",
-          "text": "Requires significant strength, demanding user exertion, which can lead to fatigue and discomfort over time"
+          "text": "Eliminates the need to comply with BP 344"
         },
         {
           "id": "d",
-          "text": "Can be used efficiently and comfortably with minimum fatigue, requiring minimal force"
+          "text": "Can be used efficiently and comfortably with minimum fatigue"
         }
       ],
       "correct_option_id": "d",
@@ -33,13 +33,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mechanical systems require integration; users must operate them with minimum effort",
-        "b": "Low physical effort serves diverse abilities, not excluding elderly or weak users",
-        "c": "High effort excludes elderly and strength-limited users",
-        "correct": "Low physical effort accommodates limited strength, elderly users, and those with fatigue—automatic doors, counters at varied heights, gentle slopes"
+        "a": "This reverses the principle.",
+        "b": "Universal Design is not limited to athletic users.",
+        "c": "Universal Design does not replace BP 344 compliance.",
+        "d": "Correct.",
+        "correct": "NC State defines Low Physical Effort as efficient, comfortable use with minimum fatigue.",
+        "takeaway": "NC State defines Low Physical Effort as efficient, comfortable use with minimum fatigue."
       },
-      "explanation": "Mechanical systems require integration; users must operate them with minimum effort Low physical effort serves diverse abilities, not excluding elderly or weak users High effort excludes elderly and strength-limited users Low physical effort accommodates limited strength, elderly users, and those with fatigue—automatic doors, counters at varied heights, gentle slopes",
-      "code_citation": null,
+      "explanation": "NC State defines Low Physical Effort as efficient, comfortable use with minimum fatigue. NC State defines Low Physical Effort as efficient, comfortable use with minimum fatigue.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -52,30 +54,30 @@
       "model_id": "ale-theo-003-06-q07",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T14:43:15.869211+00:00",
-      "content_hash": "sha256:c1bc90a796170859f58c6da70a1e9c95dda03e487b4a04f35e333ee2cd88160a"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:a12c29a1cd2b3e052eb26f21c263026f5b1e0997b48ea89acec558b1df4ef923"
     },
     {
       "question_id": "9ecdabe3-3006-4f18-a0db-c2dfd8c6cfc3",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Flexibility in Use, Principle 2 of Universal Design, accommodates:",
+      "text": "Flexibility in Use, Principle 2, accommodates:",
       "options": [
         {
           "id": "a",
-          "text": "Only the average-sized user with typical abilities, excluding those with unique needs or preferences"
+          "text": "Only one prescribed way to use a space"
         },
         {
           "id": "b",
-          "text": "Only people with mobility disabilities, not considering other types of disabilities or user needs"
+          "text": "Only right-handed users"
         },
         {
           "id": "c",
-          "text": "Users willing to modify their behavior to fit the design, which may not be practical for all individuals"
+          "text": "Only users who move at the same pace"
         },
         {
           "id": "d",
-          "text": "A wide range of individual preferences and abilities, including different body types, sensory abilities, and user approaches"
+          "text": "A wide range of individual preferences and abilities"
         }
       ],
       "correct_option_id": "d",
@@ -84,13 +86,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Flexibility serves beyond average users, serving diverse capabilities",
-        "b": "Flexibility serves diverse disabilities and abilities, not exclusively mobility",
-        "c": "Universal design adapts to users; users don't adapt to design",
-        "correct": "Flexibility accommodates diverse users through multiple approaches—elements at varied heights, different modalities, adaptable layouts"
+        "a": "The principle supports choice in methods of use.",
+        "b": "It includes right- and left-handed access.",
+        "c": "It includes adaptability to user pace.",
+        "d": "Correct.",
+        "correct": "NC State defines Flexibility in Use as accommodating a wide range of preferences and abilities.",
+        "takeaway": "NC State defines Flexibility in Use as accommodating a wide range of preferences and abilities."
       },
-      "explanation": "Flexibility serves beyond average users, serving diverse capabilities Flexibility serves diverse disabilities and abilities, not exclusively mobility Universal design adapts to users; users don't adapt to design Flexibility accommodates diverse users through multiple approaches—elements at varied heights, different modalities, adaptable layouts",
-      "code_citation": null,
+      "explanation": "NC State defines Flexibility in Use as accommodating a wide range of preferences and abilities. NC State defines Flexibility in Use as accommodating a wide range of preferences and abilities.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -103,30 +107,30 @@
       "model_id": "ale-theo-003-06-q03",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T14:43:15.988599+00:00",
-      "content_hash": "sha256:a950cfc7daf5d2d678622eb7d95949683f32224eeba260b6efa930778be122e9"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:2da4514cade69b457782954298efa6d9a90001c09d1deb383c7774d4870103ce"
     },
     {
       "question_id": "7a0af96e-37c6-43b5-be44-f14e599d9948",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Size and Space for Approach and Use (Principle 7) requires clear floor spaces of minimum:",
+      "text": "Size and Space for Approach and Use, Principle 7, focuses on:",
       "options": [
         {
           "id": "a",
-          "text": "30 inches × 30 inches (0.76m × 0.76m)"
+          "text": "Making every corridor identical regardless of users"
         },
         {
           "id": "b",
-          "text": "60 inches × 60 inches (1.5m × 1.5m)"
+          "text": "Providing appropriate size and space for approach, reach, manipulation, and use regardless of body size, posture, or mobility"
         },
         {
           "id": "c",
-          "text": "48 inches × 48 inches (1.2m × 1.2m)"
+          "text": "Aesthetic proportion only"
         },
         {
           "id": "d",
-          "text": "72 inches × 72 inches (1.8m × 1.8m)"
+          "text": "Reducing all assistive-device clearances"
         }
       ],
       "correct_option_id": "b",
@@ -135,13 +139,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "0.76m is insufficient for wheelchair turning",
-        "c": "1.2m accommodates single approach but not turning",
-        "d": "1.8m exceeds requirements and wastes space",
-        "correct": "BP 344 requires 1.50m diameter turning circle for wheelchair maneuverability; adequate clear floor space radius and allows approach from multiple directions"
+        "a": "Uniformity is not the principle.",
+        "b": "Correct.",
+        "c": "This is a usability principle, not only aesthetics.",
+        "d": "The principle requires adequate space for assistive devices or assistance.",
+        "correct": "NC State defines Principle 7 around approach, reach, manipulation, and use for varied bodies, postures, and mobility.",
+        "takeaway": "NC State defines Principle 7 around approach, reach, manipulation, and use for varied bodies, postures, and mobility."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "NC State defines Principle 7 around approach, reach, manipulation, and use for varied bodies, postures, and mobility. NC State defines Principle 7 around approach, reach, manipulation, and use for varied bodies, postures, and mobility.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -154,30 +160,30 @@
       "model_id": "ale-theo-003-06-q08",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cd9b95e5b66cb7be290c894c6f6f9798916cbea09f5adb672332618c12a9f9e6"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:15be546770441d3459eee766cbde981fffaa26ebeeca60a76f4645e77cab86cb"
     },
     {
       "question_id": "7880e82d-b859-4177-afe6-63e1687fad32",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Perceptible Information (Principle 4) requires communicating necessary information through:",
+      "text": "Perceptible Information, Principle 4, requires:",
       "options": [
         {
           "id": "a",
-          "text": "Multiple sensory channels (visual, auditory, tactile) accommodating sensory diversity"
+          "text": "Communicating necessary information through modes such as pictorial, verbal, and tactile cues, with legibility and contrast"
         },
         {
           "id": "b",
-          "text": "Audio announcements exclusively, avoiding visual dependence, which may not be suitable for all users"
+          "text": "Using text only, even for users with sensory limitations"
         },
         {
           "id": "c",
-          "text": "Visual signage exclusively, relying on text and graphics, which can be limiting for those with visual impairments"
+          "text": "Avoiding tactile and visual redundancy"
         },
         {
           "id": "d",
-          "text": "Large print exclusively, serving only vision-impaired users, without considering other sensory needs"
+          "text": "Hiding wayfinding signs to reduce visual clutter"
         }
       ],
       "correct_option_id": "a",
@@ -186,13 +192,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Auditory alone excludes deaf and hard-of-hearing users",
-        "c": "Visual alone excludes blind and low-vision users",
-        "d": "Large print serves some vision limitations but not all; multimodal approach is superior",
-        "correct": "Perceptible information uses multiple modalities—text, symbols, color, audio, Braille, tactile elements—ensuring all sensory abilities can access information"
+        "a": "Correct.",
+        "b": "The principle uses different modes, not text only.",
+        "c": "Redundancy is part of the principle.",
+        "d": "Wayfinding information should be effective and legible.",
+        "correct": "NC State supports redundant modes, contrast, legibility, and compatibility with sensory techniques or devices.",
+        "takeaway": "NC State supports redundant modes, contrast, legibility, and compatibility with sensory techniques or devices."
       },
-      "explanation": "Auditory alone excludes deaf and hard-of-hearing users Visual alone excludes blind and low-vision users Large print serves some vision limitations but not all; multimodal approach is superior Perceptible information uses multiple modalities—text, symbols, color, audio, Braille, tactile elements—ensuring all sensory abilities can access information",
-      "code_citation": null,
+      "explanation": "NC State supports redundant modes, contrast, legibility, and compatibility with sensory techniques or devices. NC State supports redundant modes, contrast, legibility, and compatibility with sensory techniques or devices.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -205,30 +213,30 @@
       "model_id": "ale-theo-003-06-q05",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T14:43:15.751129+00:00",
-      "content_hash": "sha256:5b9caf8ffc24a9dcd780dab0b51e5ad349b5e948f1f243b5ca2187e430d74bf5"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:1238c438317019d94a354924ea77c064d7ff0bbf423542546713f57a22c12a8d"
     },
     {
       "question_id": "c3a08800-746c-4712-9953-053e75fa7c29",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "In designing a universally designed hospital, how would the seven principles guide design beyond minimum BP 344 compliance?",
+      "text": "In designing an inclusive hospital, how should the seven principles guide design beyond minimum BP 344 compliance?",
       "options": [
         {
           "id": "a",
-          "text": "Design for accessible users exclusively, not addressing general patient population, which may lead to exclusion of non-disabled users"
+          "text": "Ignore BP 344 once the design feels welcoming"
         },
         {
           "id": "b",
-          "text": "Provide minimum-required accessibility features only, meeting BP 344 standards exactly, without considering additional user needs"
+          "text": "Provide a separate route for every user group"
         },
         {
           "id": "c",
-          "text": "Provide separate accessible facilities (distinct bathrooms, special units) meeting compliance separately, potentially segregating users"
+          "text": "Use only decorative accessibility symbols"
         },
         {
           "id": "d",
-          "text": "Integrate all seven principles ensuring equitable entry, flexible spaces, intuitive wayfinding, multimodal information, error tolerance, low-effort operation, and appropriate dimensions throughout—exceeding minimum compliance"
+          "text": "Choose non-stigmatizing, flexible, legible, low-effort solutions, then verify BP 344 technical controls"
         }
       ],
       "correct_option_id": "d",
@@ -237,13 +245,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Universal design serves all users equally, not exclusively disabled persons",
-        "b": "Minimum compliance is inadequate; universal design thinks beyond code minimums",
-        "c": "Segregation violates equitable use principle; integration throughout is required",
-        "correct": "Universal design applies all seven principles systematically, creating excellent spaces for all users while meeting and exceeding BP 344 minimums"
+        "a": "BP 344 remains enforceable.",
+        "b": "Equitable Use avoids unnecessary segregation.",
+        "c": "Symbols alone do not create access.",
+        "d": "Correct.",
+        "correct": "The source-safe approach combines universal design intent with BP 344 verification.",
+        "takeaway": "The source-safe approach combines universal design intent with BP 344 verification."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The source-safe approach combines universal design intent with BP 344 verification. The source-safe approach combines universal design intent with BP 344 verification.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -256,30 +266,30 @@
       "model_id": "ale-theo-003-06-q13",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:626e3ac7f8a6dea8ab580c55052e86ff2fd4fcf45c71293bea2237b6ca365f18"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:6003d2e76562387fc4234ab0db21771089ba1f0299a91f4225da69beee2dca42"
     },
     {
       "question_id": "e2f74595-e293-45d6-beca-5eb2e7bd249a",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Why is universal design more cost-effective than retrofitting accessibility into completed buildings?",
+      "text": "Why is early integration of universal design preferable to treating access as an afterthought?",
       "options": [
         {
           "id": "a",
-          "text": "Universal design eliminates the need for any accessibility features, which can otherwise be costly to implement post-construction"
+          "text": "It lets the architect skip accessibility requirements"
         },
         {
           "id": "b",
-          "text": "Retrofitting accessibility always costs more than construction, due to the need for extensive modifications and potential disruptions to existing operations"
+          "text": "It guarantees a quantified cost saving in every project"
         },
         {
           "id": "c",
-          "text": "Integration from inception requires minimal additional cost; retrofitting requires structural modifications, relocation, and often exceeds initial design cost"
+          "text": "It helps access, safety, legibility, effort, and approach be planned as part of the main user experience"
         },
         {
           "id": "d",
-          "text": "Universal design eliminates the need for BP 344 compliance, simplifying regulatory processes and reducing associated costs"
+          "text": "It removes the need for technical detailing"
         }
       ],
       "correct_option_id": "c",
@@ -288,13 +298,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Universal design integrates accessibility features efficiently from start",
-        "b": "Some retrofits are feasible but significantly more expensive and often produce inferior solutions",
-        "d": "Universal design ensures BP 344 compliance while improving overall design quality",
-        "correct": "Early integration adds minimal cost; retrofitting requires expensive structural changes and often becomes technically infeasible"
+        "a": "Access requirements still apply.",
+        "b": "The Batch 131 source map does not support a quantified cost claim.",
+        "c": "Correct.",
+        "d": "Technical BP 344 detailing remains necessary.",
+        "correct": "The source-safe logic is integration of usability goals into the design process, not an unsupported cost claim.",
+        "takeaway": "The source-safe logic is integration of usability goals into the design process, not an unsupported cost claim."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The source-safe logic is integration of usability goals into the design process, not an unsupported cost claim. The source-safe logic is integration of usability goals into the design process, not an unsupported cost claim.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -307,30 +319,30 @@
       "model_id": "ale-theo-003-06-q12",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b70d295b1b0c33ec2d500d252a1e69cf93eeeb6b060d23736a5ad683875fa263"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:6aae8b62f40310f22f9bad48b786604060cd65f1253ab4cab549c7e502f9efba"
     },
     {
       "question_id": "9ae24fa9-33d7-402b-aa73-5537a4c7ac87",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "According to BP 344, a commercial office building in Manila must provide:",
+      "text": "According to the checked BP 344 source map, a public commercial building must be evaluated for:",
       "options": [
         {
           "id": "a",
-          "text": "Accessibility only in designated 'accessible zones,' not throughout the building, unless otherwise specified by local ordinances."
+          "text": "Historic ornament only"
         },
         {
           "id": "b",
-          "text": "Accessible parking, ramped/level entries, interior circulation routes, accessible restrooms, and elevators with audio systems"
+          "text": "Accessible routes, entrances, doors, signage, tactile surfaces, and related controls"
         },
         {
           "id": "c",
-          "text": "No specific accessibility requirements; accessibility is optional, depending on the building's intended use and occupancy."
+          "text": "Private preference without any measurable controls"
         },
         {
           "id": "d",
-          "text": "Retrofitted accessibility features within 5 years of construction completion, as part of a phased compliance strategy."
+          "text": "Facade color regardless of user access"
         }
       ],
       "correct_option_id": "b",
@@ -339,13 +351,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BP 344 requires accessible routes throughout, but allows designated paths rather than full universal integration",
-        "c": "BP 344 mandates accessibility; it is not optional",
-        "d": "Universal design integrates accessibility from inception, not as retrofit",
-        "correct": "BP 344 requires comprehensive accessibility: parking, entries, routes, restrooms, elevators throughout buildings serving the public"
+        "a": "Historic style is outside this source map.",
+        "b": "Correct.",
+        "c": "BP 344 includes measurable requirements.",
+        "d": "Color alone is not accessibility compliance.",
+        "correct": "The checked NCDA/BP 344 locators support routes, entrances, doors, signage, tactile surfaces, and related accessibility controls.",
+        "takeaway": "The checked NCDA/BP 344 locators support routes, entrances, doors, signage, tactile surfaces, and related accessibility controls."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The checked NCDA/BP 344 locators support routes, entrances, doors, signage, tactile surfaces, and related accessibility controls. The checked NCDA/BP 344 locators support routes, entrances, doors, signage, tactile surfaces, and related accessibility controls.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -358,30 +372,30 @@
       "model_id": "ale-theo-003-06-q10",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3d6c2b5ddd13be681a86cad7f820152dd444649d100dc08fbd9d87bff7e0e3c7"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:e433b041a720e6f3ede21b8780ddfde2dffcc761a555cae0b9678d09960c7e1a"
     },
     {
       "question_id": "9b679c49-586d-4f94-87db-6635f46d25ea",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Why do wheelchair-accessible ramps at front entries benefit more occupants than ramps at hidden side entrances?",
+      "text": "Why do wheelchair-accessible ramps at front entries support Universal Design better than hidden side routes?",
       "options": [
         {
           "id": "a",
-          "text": "Side ramps are inconvenient and create longer walking distances, which can be a barrier for some users"
+          "text": "They make all other users avoid the entrance"
         },
         {
           "id": "b",
-          "text": "Front ramps are structurally easier to construct than side ramps, which is a common misconception"
+          "text": "They are always cheaper, regardless of site"
         },
         {
           "id": "c",
-          "text": "Front ramps demonstrate Equitable Use by serving all users (wheelchair, stroller, delivery, elderly) equally at the primary entrance without segregation"
+          "text": "They support the same or equivalent means of use and avoid segregating users"
         },
         {
           "id": "d",
-          "text": "Hidden ramps reduce aesthetic impact on building design, which is often prioritized over accessibility"
+          "text": "They remove the need for signage and maneuvering space"
         }
       ],
       "correct_option_id": "c",
@@ -390,13 +404,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Distance is secondary to the equity principle of integrated access",
-        "b": "Structural construction is separate from design principle considerations",
-        "d": "Equitable use prioritizes integration over aesthetic concerns",
-        "correct": "Front ramps serve all users—wheelchair, strollers, elderly, delivery—equitably at primary entrance, avoiding segregation that side ramps create"
+        "a": "The goal is inclusive shared access.",
+        "b": "The source map does not make a universal cost claim.",
+        "c": "Correct.",
+        "d": "BP 344 controls still need checking.",
+        "correct": "Equitable Use supports the same means where possible and avoids segregating or stigmatizing users.",
+        "takeaway": "Equitable Use supports the same means where possible and avoids segregating or stigmatizing users."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Equitable Use supports the same means where possible and avoids segregating or stigmatizing users. Equitable Use supports the same means where possible and avoids segregating or stigmatizing users.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -409,30 +425,30 @@
       "model_id": "ale-theo-003-06-q11",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:39b4d753509a894e93af35b679c6d9243e498c35b0376ebd32bcf483c56874d2"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:b068dba375643a9531e74072fb1df22a0f3369d857b5cfa620c68fb3105c7895"
     },
     {
       "question_id": "b241f642-26b4-48eb-b2b6-b2393f7c00a9",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "In applying Simple and Intuitive Use (Principle 3) to a hospital wayfinding system, architects should:",
+      "text": "In applying Simple and Intuitive Use to hospital wayfinding, architects should:",
       "options": [
         {
           "id": "a",
-          "text": "Require wayfinding signage at every turn to accommodate all users, ensuring that no one is left without guidance at any point in the facility"
+          "text": "Add unnecessary complexity to impress users"
         },
         {
           "id": "b",
-          "text": "Use complex directional systems that challenge wayfinding navigation, which could inadvertently lead to confusion and inefficiency"
+          "text": "Arrange information randomly"
         },
         {
           "id": "c",
-          "text": "Design spatial organization so clear that occupants intuitively understand flow without needing signage"
+          "text": "Be consistent with user expectations, arrange information by importance, and provide effective prompts or feedback"
         },
         {
           "id": "d",
-          "text": "Provide signage in multiple languages to accommodate international patients, enhancing accessibility and understanding for a diverse user base"
+          "text": "Use only specialist medical jargon"
         }
       ],
       "correct_option_id": "c",
@@ -441,13 +457,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Excessive signage indicates poor spatial design, not good wayfinding",
-        "b": "Complex systems contradict the simplicity principle",
-        "d": "Language accommodation is important but secondary to intuitive spatial organization",
-        "correct": "Simple and intuitive use prioritizes spatial clarity so functions are obvious from design cues; signage supplements rather than compensates for design"
+        "a": "This reverses the principle.",
+        "b": "Information should be arranged by importance.",
+        "c": "Correct.",
+        "d": "The principle accommodates varied literacy and language skills.",
+        "correct": "NC State supports eliminating unnecessary complexity, consistency, important information order, and prompting/feedback.",
+        "takeaway": "NC State supports eliminating unnecessary complexity, consistency, important information order, and prompting/feedback."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "NC State supports eliminating unnecessary complexity, consistency, important information order, and prompting/feedback. NC State supports eliminating unnecessary complexity, consistency, important information order, and prompting/feedback.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -460,30 +478,30 @@
       "model_id": "ale-theo-003-06-q04",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e04fe562cbc70858b5ef9264d1f319d1d657382e08f78e8447fd2a5f3aff7efd"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:1b202a3d2db2f0db035893bb26285c2737d1988d6e4e0a12e6ced2697417c510"
     },
     {
       "question_id": "830dfed8-dcb2-4eaf-ac93-f6db75c38e57",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "In designing an accessible office building entry, Tolerance for Error (Principle 5) would require:",
+      "text": "Tolerance for Error at an accessible building entry would most directly require:",
       "options": [
         {
           "id": "a",
-          "text": "Handrails, adequate lighting, slip-resistant surfaces, and ramps preventing falls and accidents"
+          "text": "Minimizing hazards, providing warnings where needed, and arranging elements to reduce adverse consequences"
         },
         {
           "id": "b",
-          "text": "Sharp thresholds that clearly mark entry boundaries, potentially causing tripping hazards"
+          "text": "Making hazards harder to notice"
         },
         {
           "id": "c",
-          "text": "Narrow doors creating navigation challenge to ensure occupant attention, which may impede accessibility"
+          "text": "Removing all handrails and contrast"
         },
         {
           "id": "d",
-          "text": "Heavy doors requiring deliberate activation to prevent accidental entry, possibly hindering ease of access"
+          "text": "Relying on users to guess unsafe conditions"
         }
       ],
       "correct_option_id": "a",
@@ -492,13 +510,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Sharp thresholds create trip hazards; hazard tolerance requires rounded edges",
-        "c": "Narrow difficult doors increase errors and falls; tolerance requires error prevention",
-        "d": "Difficulty of activation doesn't reduce error consequences",
-        "correct": "Tolerance for error minimizes hazards and consequences of mistakes through design—handrails, lighting, non-slip surfaces prevent falls and injuries"
+        "a": "Correct.",
+        "b": "Warnings and hazard reduction are part of the principle.",
+        "c": "This conflicts with accessibility controls.",
+        "d": "The principle does not rely on guessing.",
+        "correct": "NC State defines Tolerance for Error around minimizing hazards and adverse consequences.",
+        "takeaway": "NC State defines Tolerance for Error around minimizing hazards and adverse consequences."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "NC State defines Tolerance for Error around minimizing hazards and adverse consequences. NC State defines Tolerance for Error around minimizing hazards and adverse consequences.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -511,30 +531,30 @@
       "model_id": "ale-theo-003-06-q06",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:25a3c1087472c6e9dc8d200d658463d1b8fdee2356b2af0c65b9cefbc6c6022f"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:49772b4a3e41f2fe8cda8c5b4d00eed0ac360fb1917434048c43a32cd93237bf"
     },
     {
       "question_id": "a3aacffa-4132-494c-b638-953bddebf317",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Batas Pambansa Bilang 344 (BP 344) is:",
+      "text": "Batas Pambansa Blg. 344, in this source-audited bundle, is best treated as:",
       "options": [
         {
           "id": "a",
-          "text": "An optional certification program for accessible design, which is incorrect as BP 344 is mandatory"
+          "text": "A voluntary style guide only"
         },
         {
           "id": "b",
-          "text": "A building code applying only to residential construction, which misrepresents its scope"
+          "text": "A foreign universal design poster"
         },
         {
           "id": "c",
-          "text": "The Philippine Accessibility Law requiring accessible features in buildings and public utilities"
+          "text": "The Philippine accessibility law/IRR source for enforceable built-environment controls"
         },
         {
           "id": "d",
-          "text": "A voluntary design guideline for architects seeking to improve accessibility, which is misleading"
+          "text": "A replacement for all design judgment"
         }
       ],
       "correct_option_id": "c",
@@ -543,13 +563,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BP 344 is a legal requirement, not an optional certification",
-        "b": "BP 344 applies to government buildings, commercial, educational, healthcare, and public facilities",
-        "d": "BP 344 is legally required, not voluntary",
-        "correct": "BP 344 is the mandatory Philippine law requiring accessibility in public and private buildings, institutions, and utilities"
+        "a": "The IRR is not merely a style guide.",
+        "b": "The NC State source is the universal design source; BP 344 is Philippine accessibility law.",
+        "c": "Correct.",
+        "d": "Legal controls do not replace design judgment.",
+        "correct": "BP 344 is the Philippine accessibility control layer used with universal design intent.",
+        "takeaway": "BP 344 is the Philippine accessibility control layer used with universal design intent."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "BP 344 is the Philippine accessibility control layer used with universal design intent. BP 344 is the Philippine accessibility control layer used with universal design intent.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -562,8 +584,8 @@
       "model_id": "ale-theo-003-06-q09",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fe2c87bb837a89519b87daf39239ba2cf00b61939d2f82ef0e5a1c0d2df48a7b"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:c4ddfd1385f3d59680c9be03aa38ed4366abcde2a9e5fcfa66cc38c76d85bc40"
     },
     {
       "question_id": "898fbb58-6412-430b-8f8b-bd79369c41c9",
@@ -573,19 +595,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Design of products, environments, and systems usable by all people to the greatest extent possible without adaptation, integrated from concept"
+          "text": "Design of products and environments usable by all people, to the greatest extent possible, without adaptation or specialized design"
         },
         {
           "id": "b",
-          "text": "Design exclusively for people with disabilities, accommodating special needs, often requiring additional resources and specialized knowledge"
+          "text": "Design only for wheelchair users"
         },
         {
           "id": "c",
-          "text": "Design meeting legal accessibility minimum requirements through compliance standards, ensuring basic access but not necessarily optimal usability for all"
+          "text": "A decorative theme for public buildings"
         },
         {
           "id": "d",
-          "text": "Design retrofitted with accessibility features after construction completion, which can lead to increased costs and potential design compromises"
+          "text": "A rule that every user must use a separate route"
         }
       ],
       "correct_option_id": "a",
@@ -594,13 +616,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Universal design serves all users, not exclusively disabled persons",
-        "c": "This describes accessible design (compliance), not universal design (inclusive from start)",
-        "d": "Retrofitting is the opposite of universal design's integrated approach",
-        "correct": "Universal Design integrates accessibility from inception, serving all users equitably without requiring specialized design modifications"
+        "a": "Correct.",
+        "b": "Universal Design is broader than one user group.",
+        "c": "It is a usability philosophy, not decoration.",
+        "d": "Equitable Use avoids unnecessary segregation.",
+        "correct": "This follows the NC State definition.",
+        "takeaway": "This follows the NC State definition."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "This follows the NC State definition. This follows the NC State definition.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -613,30 +637,30 @@
       "model_id": "ale-theo-003-06-q01",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:784c50088540937a6e68d7c2451518235395949431fe3dd58e74c47791ff37b7"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:67cf803ba581dc70cdcc8dda8a80625bc840fbc1290ad682891a44ca4a031917"
     },
     {
       "question_id": "9a848d81-038a-4b81-b90a-3cadc76b3024",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Ron Mace's Principle 1 of Universal Design, Equitable Use, means:",
+      "text": "Principle 1, Equitable Use, means:",
       "options": [
         {
           "id": "a",
-          "text": "Design exclusively prioritizes users with disabilities, ensuring that their needs are met above all others in every aspect of the design process."
+          "text": "Provide the most difficult route to users with disabilities"
         },
         {
           "id": "b",
-          "text": "Design that can be adapted later if accessibility problems arise, allowing for future modifications without significant structural changes."
+          "text": "Make privacy and safety available only to some users"
         },
         {
           "id": "c",
-          "text": "Design is useful and marketable to people with diverse abilities without making some users feel stigmatized or segregated"
+          "text": "Provide the same means of use where possible, equivalent means where needed, and avoid segregating or stigmatizing users"
         },
         {
           "id": "d",
-          "text": "Design must be identical for all users without any variation, ensuring uniformity in user experience regardless of individual needs."
+          "text": "Ignore attractiveness because usability is enough"
         }
       ],
       "correct_option_id": "c",
@@ -645,13 +669,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Equitable use serves all users equally, not prioritizing one group",
-        "b": "Universal design integrates accessibility from inception, not as afterthought",
-        "d": "Equitable use permits diverse approaches; it doesn't require uniformity",
-        "correct": "Equitable use means the same design serves diverse users without stigmatization; accessible features integrated as primary design, not secondary accommodation"
+        "a": "This violates equitable use.",
+        "b": "Privacy, security, and safety should be equally available.",
+        "c": "Correct.",
+        "d": "The guideline also says to make the design appealing to all users.",
+        "correct": "NC State supports same/equivalent means, avoiding segregation, and equal privacy, security, and safety.",
+        "takeaway": "NC State supports same/equivalent means, avoiding segregation, and equal privacy, security, and safety."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "NC State supports same/equivalent means, avoiding segregation, and equal privacy, security, and safety. NC State supports same/equivalent means, avoiding segregation, and equal privacy, security, and safety.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -664,8 +690,8 @@
       "model_id": "ale-theo-003-06-q02",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0174aa84bb0cb660d605a11e9a5fd85401df549ec601d011ade8d697f62df7f3"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:32f5bc425ea18294c47413161599a172c1ea2f62c14f2d282d808c6fe7b1dee4"
     }
   ]
 }

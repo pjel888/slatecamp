@@ -1,3 +1,11 @@
+## Batch 131 Git Index Blocked Handoff - 2026-05-14T13:50:00.000+08:00
+
+Local validation passed, but Codex could not write .git/index.lock: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should stage the Batch 131 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 131`, and push `origin/3dlab-gray-viewport-bg`.
+
+## Batch 131 Local-First Handoff - 2026-05-14T13:50:00.000+08:00
+
+Ready for acceptance commit: `chore(content): accept source-audited batch 131`. Intended paths are recorded in `.ai/03_plans/batch-131-git-handoff-stage-list.md`; unrelated dirty work remains excluded.
+
 ## Batch 130 Git Index Blocked Handoff - 2026-05-14T04:50:00.000+08:00
 
 Local validation passed, but Codex could not write .git/index.lock: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should stage the Batch 130 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 130`, and push `origin/3dlab-gray-viewport-bg`.
@@ -9275,3 +9283,17 @@ Batch 106 produced current local-first source-audit evidence, refreshed 50/50 li
 Commit/push gate: pending outside this sandbox because `.git` writes are blocked here; do not start Batch 107 until Batch 106 is actually committed and pushed. Next production-line target after that gate is Batch 107, continuing with the next eligible fixed/manifest articles after CMP-012 unless live artifacts show a later completed batch. Preserve THIN_NEEDS_EXPANSION, scenario/source-primary findings, and source-safe scenario decisions for final-depth remediation after all local-first batches are complete.
 
 <!-- batch-106-acceptance:end -->
+
+<!-- batch-131-handoff:start -->
+
+### Batch 131 handoff - 2026-05-14T13:42:00+08:00
+
+Batch 131 selected five residual Theory bundles after accepted Batch 130: lea-theo-003-04-core-concept, lea-theo-003-05-core-concept, lea-theo-003-06-core-concept, lea-theo-003-07-core-concept, and lea-theo-003-08-core-concept. It refreshed article content, 64 linked questions, and 64 question-edit ledgers together with zero answer-key changes.
+
+Local source artifacts were captured under vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/ and refined under vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/. No Supabase push, deploy, production DB mutation, main merge, force-push, auth/secret edit, or unrelated dirty-file staging is authorized.
+
+Git handoff blocker: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should stage only paths from `.ai/03_plans/batch-131-git-handoff-stage-list.md`, run cached diff checks, commit `chore(content): accept source-audited batch 131`, and push `origin/3dlab-gray-viewport-bg`.
+
+Next pointer after acceptance: continue from the next sourceable non-prac residual cluster after lea-theo-003-08-core-concept, unless live artifacts show a later accepted batch.
+
+<!-- batch-131-handoff:end -->

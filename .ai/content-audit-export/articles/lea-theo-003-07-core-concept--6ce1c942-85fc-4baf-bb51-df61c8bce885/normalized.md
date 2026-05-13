@@ -1,6 +1,6 @@
 ## Board Exam Quick Check
 
-For proxemics questions, identify whether the item is asking about symbolic distance, personal space, territoriality, privacy, or social arrangement. The correct answer should connect distance to communication and behavior.
+For Edward T. Hall and proxemics questions, identify whether the item asks about symbolic distance, personal space, territoriality, privacy, sociopetal arrangement, or sociofugal arrangement. The correct answer should connect spacing to communication and behavior.
 
 ## What You Need to Know for the LEA
 
@@ -10,26 +10,31 @@ Define proxemics, connect Edward T. Hall to the topic, and apply personal-space 
 
 ## Core Concept
 
-TOA 3 defines proxemics as the study of the symbolic and communicative role of spatial separation in social and interpersonal situations, including how that spatial arrangement relates to environmental and cultural factors. It also defines personal space as the variable and subjective distance at which one person feels comfortable talking to another.
+The official Hall publisher page identifies The Hidden Dimension as the book in which Edward T. Hall introduced proxemics, showing how human use of space can affect personal relations, cross-cultural interactions, architecture, city planning, and urban renewal.
 
-The theory source names Edward Hall as the father of proxemics and lists public, social, personal, and intimate distances. It also distinguishes sociopetal space, which brings people together, from sociofugal space, which separates people. For exam purposes, do not memorize the names alone; understand the design effect. Seating, reception counters, corridors, waiting areas, classrooms, and lobbies all communicate relationship through distance and orientation.
+TOA 3 defines proxemics as the study of the symbolic and communicative role of spatial separation in social and interpersonal situations, including how spatial arrangement relates to environmental and cultural factors. It defines personal space as the variable and subjective distance at which one person feels comfortable talking to another.
 
-Salvan's human-factors chapter explains that personal space is affected by the desire for privacy, intimacy, avoidance of contact, visibility, and the wish to observe without participating. It also connects defensible space to territoriality and physical barriers. These ideas help architects plan spaces that feel neither oppressive nor disconnected.
+The local theory source identifies Edward Hall as the father of proxemics and lists intimate, personal, social, and public distances. It also distinguishes sociopetal space, which brings people together, from sociofugal space, which separates people. Salvan adds the architectural application: barriers, seating distance, eye contact, formality, privacy, territoriality, and defensible space affect whether people feel at ease, exposed, or displaced.
+
+## Real World Scenario
+
+A reception counter can be technically accessible but still feel wrong if it forces a visitor into a confrontational position, too close to another waiting person, or too far for a private conversation. A proxemic review checks counter distance, seating orientation, queue visibility, acoustic exposure, and whether users can choose more social or more private positions.
 
 ## Key Facts and Testable Items
 
-1. Proxemics studies the symbolic and communicative role of spatial separation.
-2. Edward T. Hall is identified in the local theory source as the father of proxemics.
+1. Proxemics studies spatial separation as symbolic and communicative behavior.
+2. Edward T. Hall is the source-backed anchor for proxemics in this article.
 3. Personal space is variable and subjective.
 4. Sociopetal arrangements bring people together; sociofugal arrangements separate people.
 5. Territorial and defensible-space cues help users recognize control, ownership, and boundaries.
 
 ## Common Mistakes
 
-- Treating proxemics as furniture spacing only. It is about social meaning as well as distance.
+- Treating proxemics as furniture spacing only.
 - Assuming all cultures, activities, and relationships use the same comfortable distance.
 - Confusing sociopetal and sociofugal arrangements.
-- Ignoring territorial cues such as barriers, edges, visibility, and control.
+- Using unsupported named-culture stereotypes instead of source-backed spatial principles.
+- Ignoring barriers, visibility, privacy, and territorial cues.
 
 ## Key Terms
 

@@ -1,35 +1,40 @@
 ## Board Exam Quick Check
 
-For psychology-of-space questions, identify what human response is being tested: privacy, personal space, territoriality, comfort, control, social distance, or perception. Then choose the option that best connects space to behavior.
+For psychology-of-space questions, identify the human response being tested: privacy, control, personal space, territoriality, social comfort, crowding, wayfinding, or perception. Choose the answer that connects a spatial decision to behavior without inventing unsupported measurements.
 
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
-Explain how environmental perception and psychology of space connect design decisions to human behavior, comfort, privacy, and social interaction.
+Explain how environmental perception and psychology of space connect design decisions to behavior, comfort, privacy, control, and social interaction.
 
 ## Core Concept
 
-Salvan states that before designing a space for people to behave in, designers should understand how people behave. Physical space is the environment users see and use, but it should be determined through analysis of human behavior and the function the space supports. The same source distinguishes physical space from personal, psychological, social, and territorial concerns.
+Environmental psychology is the study of transactions between people and physical settings. For architecture, the useful exam frame is direct: spaces affect behavior and experience, and users also interpret, claim, avoid, personalize, or adapt spaces.
 
-The theory source supports this with anthropometrics, ergonomics, proxemics, territoriality, privacy, and psychological theories. It names privacy as the ability to control interactions with others and includes solitude, intimacy, anonymity, and reserve. It also links perception theories to cognition, signs, Gestalt grouping, ecological theory, and transactional theory.
+The checked local theory source supports the same logic through proxemics, territoriality, privacy, cognition, signs, Gestalt grouping, ecological theory, and transactional theory. Privacy is defined as the ability to control interaction with others. Territoriality is tied to ownership, defense against intrusion, and personalization. Social overcrowding is described as a lack of control over the environment that can lead to negative behavior.
 
-In LEA terms, psychology of space is tested because plans are not neutral diagrams. A corridor, lobby, clinic waiting area, classroom, worship space, or housing cluster can support comfort or produce stress depending on control, distance, visibility, and territorial cues. Good answers connect design choices to human response without inventing uncited measurements.
+Salvan's source gives the architectural application. Physical space is easier to measure, but designers must also account for psychological and social space. The amount and shape of personal space varies by individual and activity. Barriers, distance, seating position, visibility, noise, and opportunities to personalize can change whether a user feels at ease, exposed, displaced, or in control.
+
+## Real World Scenario
+
+In a clinic waiting area, a code-compliant seat count is not enough. Patients may need to see the counter, avoid direct face-to-face crowding with strangers, hear announcements, and keep a modest personal buffer. A better plan uses clear wayfinding, varied seating, acoustic moderation, visible but not exposed queues, and edges that let users choose how much interaction they want.
 
 ## Key Facts and Testable Items
 
-1. Physical space should be planned from human behavior and supported function.
-2. Personal space is psychological as well as physical.
-3. Privacy is the ability to control interactions with others.
-4. Territoriality is expressed when people claim, personalize, or defend space.
-5. Environmental perception is shaped by cognition, experience, grouping, ecological context, and expectation.
+1. Psychology of space links design decisions to behavior, comfort, control, and meaning.
+2. Privacy means control over interaction, not only being alone.
+3. Territoriality appears when users claim, personalize, or defend space.
+4. Personal space is psychological and variable, not just a fixed body dimension.
+5. Environmental perception depends on sensory information, experience, expectation, and whole-pattern interpretation.
 
 ## Common Mistakes
 
-- Treating behavior as separate from planning.
-- Assuming a larger space always feels better. Control, distance, visibility, and purpose matter.
-- Confusing privacy with isolation only. Privacy is control over interaction.
-- Using fixed legal dimensions where the source-backed issue is psychological response.
+- Treating psychology of space as decoration or mood only.
+- Assuming larger space is always better; control, visibility, sound, distance, and purpose matter.
+- Confusing privacy with total isolation.
+- Using unsupported exact productivity, healing, or stress percentages.
+- Answering with anthropometric dimensions when the stem asks about behavior or perception.
 
 ## Key Terms
 
@@ -39,9 +44,9 @@ In LEA terms, psychology of space is tested because plans are not neutral diagra
 
 **Territoriality** - The claim, personalization, or defense of space by individuals or groups.
 
-**Personal space** - The immediate area around a person that changes with relationship, culture, and activity.
+**Personal space** - The immediate psychological area around a person that changes with relationship, culture, activity, and setting.
 
-**Environmental perception** - The interpretation of surroundings through cognition, sensory cues, and prior experience.
+**Environmental perception** - The interpretation of surroundings through sensory cues, cognition, prior experience, and context.
 
 ## Related Articles
 

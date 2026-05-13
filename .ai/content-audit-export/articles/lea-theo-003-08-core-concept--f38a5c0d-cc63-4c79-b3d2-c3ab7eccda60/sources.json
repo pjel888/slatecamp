@@ -1,79 +1,38 @@
 {
   "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:0f1e685bb29c52bfad4ffe13249917fb958b2cc96c0b23781ba1f9c7e3625259",
-  "source_count": 3,
+  "sources_hash": "sha256:1553656d46a3f8390a7a7548c52111b29492d71aa714557c5c8a5647f4eaaa42",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "salvan-theory-local-raw-pdf--b056-f38a5c0d-01",
+      "source_id": "batch131-lea-theo-003-08-core-concept-source-map-capture",
       "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
-      "label": "George Salvan Architectural Theories of Design - local raw PDF",
+      "label": "Gestalt psychology and visual perception source-map capture",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "George Salvan Architectural Theories of Design - local raw PDF; local raw PDF checked first; refined markdown used only as locator. George Salvan Architectural Theories of Design refined markdown lines 5926-5942, 6152-6172, and 6600-6602.",
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/source-backed anchors for Gestalt psychology and visual perception. raw_source_layer_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.source-capture.md; raw_source_sha256=sha256:dda4985da8709ffd4918a9353be3ce88ae94fc8c9d1da67a33ad8416af0ebe5b; checked_locator=Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917.",
       "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-11T19:52:00.000+08:00",
-      "updated_at": "2026-05-11T19:52:00.000+08:00",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-      "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-      "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-      "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 5926-5942, 6152-6172, and 6600-6602",
-      "checked_markdown_lines": [
-        "George Salvan Architectural Theories of Design refined markdown lines 5926-5942",
-        "George Salvan Architectural Theories of Design refined markdown lines 6152-6172",
-        "George Salvan Architectural Theories of Design refined markdown lines 6600-6602"
-      ],
-      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
-    },
-    {
-      "source_id": "theory-local-raw-pdf--b056-f38a5c0d-02",
-      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
-      "label": "theory - local raw PDF",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "theory - local raw PDF; local raw PDF checked first; refined markdown used only as locator. theory refined markdown lines 186-191.",
-      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.source-capture.md",
+      "sha256": "sha256:dda4985da8709ffd4918a9353be3ce88ae94fc8c9d1da67a33ad8416af0ebe5b",
+      "locator": "Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917.",
       "sort_order": 1,
-      "created_at": "2026-05-11T19:52:00.000+08:00",
-      "updated_at": "2026-05-11T19:52:00.000+08:00",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
-      "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-      "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
-      "source_locator": "theory refined markdown lines 186-191",
-      "checked_markdown_lines": [
-        "theory refined markdown lines 186-191"
-      ],
-      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+      "created_at": "2026-05-14T13:10:00.000+08:00",
+      "updated_at": "2026-05-14T13:10:00.000+08:00"
     },
     {
-      "source_id": "toa3-design-perception-local-raw-pdf--b056-f38a5c0d-03",
+      "source_id": "batch131-lea-theo-003-08-core-concept-source-map-refined",
       "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
-      "label": "TOA 3 Design Perception - local raw PDF",
+      "label": "Gestalt psychology and visual perception refined source map",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "TOA 3 Design Perception - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 3 Design Perception refined markdown lines 23-34.",
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Gestalt psychology and visual perception and linked question edits. refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.refined.md; refined_markdown_sha256=sha256:efcd640e86c320319e692f980bd6c99ed61278ac73ac2f7c2b5cb9167f9de99d; checked_locator=Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917.",
       "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.refined.md",
+      "sha256": "sha256:efcd640e86c320319e692f980bd6c99ed61278ac73ac2f7c2b5cb9167f9de99d",
+      "locator": "Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917.",
       "sort_order": 2,
-      "created_at": "2026-05-11T19:52:00.000+08:00",
-      "updated_at": "2026-05-11T19:52:00.000+08:00",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-      "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
-      "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
-      "source_locator": "TOA 3 Design Perception refined markdown lines 23-34",
-      "checked_markdown_lines": [
-        "TOA 3 Design Perception refined markdown lines 23-34"
-      ],
-      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+      "created_at": "2026-05-14T13:10:00.000+08:00",
+      "updated_at": "2026-05-14T13:10:00.000+08:00"
     }
   ]
 }

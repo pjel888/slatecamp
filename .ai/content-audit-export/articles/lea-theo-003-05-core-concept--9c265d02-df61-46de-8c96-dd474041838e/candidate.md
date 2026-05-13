@@ -1,6 +1,6 @@
 ## Board Exam Quick Check
 
-When a question asks about multisensory architecture, do not reduce the topic to appearance. Look for the answer that links spatial character to more than one sense and to the user's embodied perception.
+When a question asks about multisensory architecture, do not reduce the topic to appearance. Look for the answer that links spatial character to several senses and to embodied user perception.
 
 ## What You Need to Know for the LEA
 
@@ -10,11 +10,15 @@ Explain how architecture communicates through multiple senses, and identify why 
 
 ## Core Concept
 
-The theory source classifies architectural order as physical, perceptual, and conceptual. Perceptual order includes sensory perception, light, color, texture, view, and sound. That is the simplest source-backed frame for multisensory architecture: a space is not only seen; it is also heard, touched, interpreted, and remembered.
+The checked theory source classifies architectural order as physical, perceptual, and conceptual. Perceptual order includes sensory perception, light, color, texture, view, and sound. That is the simplest source-backed frame for multisensory architecture: a space is not only seen; it is also heard, touched, interpreted, and remembered.
 
-Salvan extends this idea by noting that objects can be perceived visually and also by sound, touch, weight, smell, and taste. The same source says heat, light, sound, water, color, texture, materials, and form can be blended to give a place distinctive character, and that using the five measurable senses in design can result in successful architecture.
+Salvan extends this idea by noting that objects can be perceived visually and also by sound, touch, weight, smell, and taste. The same source says heat, light, sound, water, color, texture, materials, and form can be blended to give a place distinctive character. It also connects haptic and tactile expression to how forms suggest push, pull, smoothness, support, softness, warmth, and comfort.
 
-For LEA purposes, multisensory architecture is less about adding effects and more about coherence. A rough wall, subdued light, echo, glare, warmth, water sound, or smooth hand-contact surface changes how the space is understood. Haptic and tactile qualities are part of architectural expression because visual form can suggest touch, comfort, support, speed, protection, or discomfort.
+Pallasmaa's official publisher page gives the broader architectural frame: architecture should not suppress the nonvisual senses. Ching's official publisher page gives the basic design frame: architectural form and space are understood through light, view, openings, enclosures, organization, circulation, proportion, and scale.
+
+## Real World Scenario
+
+In a pediatric clinic, a visually attractive lobby can still fail if echoes amplify distress, glossy finishes create glare, surfaces feel harsh, and wayfinding is unclear. A better multisensory response uses soft but legible light, moderated sound, clear visual references, durable contact surfaces that do not feel hostile, and colors and textures that support calm orientation.
 
 ## Key Facts and Testable Items
 
@@ -29,7 +33,7 @@ For LEA purposes, multisensory architecture is less about adding effects and mor
 - Equating multisensory design with visual drama only.
 - Treating texture as a purely decorative finish rather than a perceptual cue.
 - Forgetting that sound, heat, light, and touch affect comfort and meaning.
-- Claiming exact acoustic, lighting, or code values without a source.
+- Claiming exact acoustic, lighting, color-temperature, or health values without a checked source.
 
 ## Key Terms
 

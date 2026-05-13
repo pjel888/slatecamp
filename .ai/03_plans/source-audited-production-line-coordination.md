@@ -819,3 +819,15 @@ Batch 106 produced current local-first source-audit evidence, refreshed 50/50 li
 Commit/push gate: pending outside this sandbox because `.git` writes are blocked here; do not start Batch 107 until Batch 106 is actually committed and pushed. Next production-line target after that gate is Batch 107, continuing with the next eligible fixed/manifest articles after CMP-012 unless live artifacts show a later completed batch. Preserve THIN_NEEDS_EXPANSION, scenario/source-primary findings, and source-safe scenario decisions for final-depth remediation after all local-first batches are complete.
 
 <!-- batch-106-acceptance:end -->
+
+<!-- batch-131-acceptance:start -->
+
+### Batch 131 local-first acceptance - 2026-05-14T13:42:00+08:00
+
+Batch 131 followed the residual source-map rule and selected the next Theory sequence after Batch 130: lea-theo-003-04 through lea-theo-003-08. Current serial accepted-batch overlap check is satisfied by cursor position after accepted/pushed Batch 130 at e8ef622a1; these five clusters are the next sourceable residual Theory bundles.
+
+Batch 131 produced current local-first source-audit evidence, refreshed 64/64 linked question edits, added five source-safe Real World Scenario sections, and made no Supabase push/deploy/production DB mutation/merge-to-main. Required gates passed locally: compose 5/5, diff 5/5, validate 5/5, UI-block edit validation 5/5, scoped JSON parse, source hash checks, linked-question/question-edit counts, marker scans, and targeted content-audit tests.
+
+Commit/push gate: local validation passed, but git staging is blocked by .git/index.lock permissions (fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted). Hermes should stage only Batch 131 paths from the stage list, run cached diff checks, commit, and push before Batch 132 acceptance. Next residual target after Batch 131 acceptance should continue with the next sourceable non-prac residual clusters after lea-theo-003-08 unless live artifacts show a later accepted batch.
+
+<!-- batch-131-acceptance:end -->

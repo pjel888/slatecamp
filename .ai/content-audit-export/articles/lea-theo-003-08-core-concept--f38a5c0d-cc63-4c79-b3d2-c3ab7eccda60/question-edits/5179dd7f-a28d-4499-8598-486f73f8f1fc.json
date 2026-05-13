@@ -2,77 +2,85 @@
   "question_id": "5179dd7f-a28d-4499-8598-486f73f8f1fc",
   "baseline_hash": "sha256:027ed31c1da4011e9905636788bfd50066d9aca874590b8f438c940e375e0b44",
   "action": "replace",
-  "reason": "source-audited-article-batch-056-local-first: local raw PDF backed replacement constrained to checked Batch 056 source families.",
-  "approved_by": "codex-local-first-batch-056",
-  "approved_at": "2026-05-11T19:52:00.000+08:00",
+  "reason": "source-audited-article-batch-131-local-first: source-safe rewrite constrained to checked Batch 131 source-map capture/refined artifacts and local source hashes.",
+  "approved_by": "codex-local-first-batch-131",
+  "approved_at": "2026-05-14T13:10:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
     "parent_article_slug": "lea-theo-003-08-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 5926-5942; George Salvan Architectural Theories of Design refined markdown lines 6152-6172; George Salvan Architectural Theories of Design refined markdown lines 6600-6602; theory refined markdown lines 186-191; TOA 3 Design Perception refined markdown lines 23-34",
+    "source_locator": "Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917.",
     "checked_markdown_lines": [
-      "George Salvan Architectural Theories of Design refined markdown lines 5926-5942",
-      "George Salvan Architectural Theories of Design refined markdown lines 6152-6172",
-      "George Salvan Architectural Theories of Design refined markdown lines 6600-6602",
+      "Britannica Gestalt page lines 172-186 and 204-205",
+      "Britannica perception page lines 233-235",
+      "Britannica primary tendencies page lines 213-215",
       "theory refined markdown lines 186-191",
-      "TOA 3 Design Perception refined markdown lines 23-34"
+      "Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917."
     ],
     "checked_sources": [
       {
-        "source_id": "salvan-theory-local-raw-pdf--b056-f38a5c0d-01",
-        "label": "George Salvan Architectural Theories of Design - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
-        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 5926-5942, 6152-6172, and 6600-6602"
+        "source_id": "batch131-lea-theo-003-08-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.source-capture.md",
+        "sha256": "sha256:dda4985da8709ffd4918a9353be3ce88ae94fc8c9d1da67a33ad8416af0ebe5b",
+        "locator": "Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917."
       },
       {
-        "source_id": "theory-local-raw-pdf--b056-f38a5c0d-02",
-        "label": "theory - local raw PDF",
+        "source_id": "batch131-lea-theo-003-08-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.refined.md",
+        "sha256": "sha256:efcd640e86c320319e692f980bd6c99ed61278ac73ac2f7c2b5cb9167f9de99d",
+        "locator": "Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917."
+      },
+      {
+        "source_id": "batch131-lea-theo-003-08-core-concept-checked-local-source-1",
         "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
         "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
-        "locator": "theory refined markdown lines 186-191"
+        "locator": "local raw source file hash checked"
       },
       {
-        "source_id": "toa3-design-perception-local-raw-pdf--b056-f38a5c0d-03",
-        "label": "TOA 3 Design Perception - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
-        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
-        "locator": "TOA 3 Design Perception refined markdown lines 23-34"
+        "source_id": "batch131-lea-theo-003-08-core-concept-checked-local-source-2",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "lines 11-13, 154-191, 220"
+      },
+      {
+        "source_id": "batch131-lea-theo-003-08-core-concept-checked-local-source-3",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch131-lea-theo-003-08-core-concept-checked-local-source-4",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "lines 5926-5940, 5970-5973, 5990-5997, 6152-6172, 7978-8008, 10481-10487, 10525-10671, 11261, 15731-15917, 15980-15994"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 056 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to Batch 131 checked local-first source scope. Answer key preserved: true."
   },
   "proposed": {
-    "text": "What can visual illusions show in the source-audited perception topic?",
+    "text": "The Gestalt principle of figure-ground describes:",
     "options": [
       {
         "id": "a",
-        "text": "Perception can be influenced by parts within a whole pattern."
+        "text": "A form or image standing out from its background"
       },
       {
         "id": "b",
-        "text": "Perception is unrelated to context."
+        "text": "The minimum width of a sidewalk"
       },
       {
         "id": "c",
-        "text": "Gestalt is a material-testing method."
+        "text": "The private distance between two people"
       },
       {
         "id": "d",
-        "text": "Architectural theory excludes visual experience."
+        "text": "The exact angle of a roof truss"
       }
     ],
     "correct_option_id": "a",
-    "rationale": "Perception can be influenced by parts within a whole pattern. This answer is supported by the checked Batch 056 local raw PDF source families for Gestalt Psychology and Visual Perception.",
-    "explanation": "Perception can be influenced by parts within a whole pattern. The Batch 056 source audit used local raw PDFs first and refined markdown only as locator evidence for Gestalt Psychology and Visual Perception.",
-    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 6172"
-  },
-  "batch_question_template_index": 3
+    "rationale": "The checked local sources define figure-ground as a figure standing out from the background.",
+    "explanation": "The checked local sources define figure-ground as a figure standing out from the background. The checked local sources define figure-ground as a figure standing out from the background.",
+    "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.refined.md; Britannica Gestalt lines 172-186; theory.md lines 186-191; Salvan lines 5990-5997 and 6152-6172."
+  }
 }

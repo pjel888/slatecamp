@@ -1,3 +1,13 @@
+## Batch 131 Freeze Readiness - 2026-05-14
+
+- Status: pass local-first; live git finalization blocked by .git/index.lock permissions.
+- Source readiness: official/authoritative URLs captured locally and refined for all five selected Theory clusters.
+- Question readiness: 64/64 linked question edits generated and applied locally with zero answer-key changes.
+- Known source-sensitive corrections: removed unsupported ART/biophilia drift from psychology of space, exact lux/Kelvin/acoustic thresholds from multisensory architecture, Universal Design/BP 344 conflation, named-culture proxemics stereotypes, and overextended Gestalt principle claims.
+- Freeze condition: local validation gates passed including scoped git diff check; acceptance still requires Hermes to stage only Batch 131 paths, run cached diff check, commit, and push.
+
+---
+
 ## Batch 130 Freeze Readiness - 2026-05-14
 
 - Status: pass local-first; live git finalization blocked by .git/index.lock permissions.

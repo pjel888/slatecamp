@@ -2,50 +2,71 @@
   "question_id": "b241f642-26b4-48eb-b2b6-b2393f7c00a9",
   "baseline_hash": "sha256:e04fe562cbc70858b5ef9264d1f319d1d657382e08f78e8447fd2a5f3aff7efd",
   "action": "replace",
-  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
-  "approved_by": "codex-local-first-batch-040",
-  "approved_at": "2026-05-11T14:04:00+08:00",
+  "reason": "source-audited-article-batch-131-local-first: source-safe rewrite constrained to checked Batch 131 source-map capture/refined artifacts and local source hashes.",
+  "approved_by": "codex-local-first-batch-131",
+  "approved_at": "2026-05-14T13:10:00.000+08:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-040-local-first",
+    "parent_article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+    "parent_article_slug": "lea-theo-003-06-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "NC State Center for Universal Design lines 176-197 and 199-270; NCDA 2024 BP 344 web page lines 271-281, 449-456, 770-818, and 895-912; local BP 344 refined markdown lines 317-319, 338-356, 362-399, 443-475, 654-685, and 770-818.",
+    "checked_markdown_lines": [
+      "NC State Center for Universal Design lines 176-197 and 199-270",
+      "NCDA 2024 BP 344 web page lines 271-281, 449-456, 770-818, and 895-912",
+      "local BP 344 refined markdown lines 317-319, 338-356, 362-399, 443-475, 654-685, and 770-818."
+    ],
     "checked_sources": [
       {
-        "source_id": "bp-344-2024-rirr-ncda-local",
-        "label": "BP 344 2024 Revised IRR - NCDA",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
-        "checked_markdown_lines": [
-          "BP 344 2024 IRR refined markdown lines 317-469",
-          "BP 344 2024 IRR refined markdown lines 654-685",
-          "BP 344 2024 IRR refined markdown lines 770-850",
-          "BP 344 2024 IRR refined markdown lines 539-585"
-        ]
+        "source_id": "batch131-lea-theo-003-06-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.source-capture.md",
+        "sha256": "sha256:1ead6a653d253412e45c6549bdc5eabb80c8f432290c4883af7da660ba37ce6d",
+        "locator": "NC State Center for Universal Design lines 176-197 and 199-270; NCDA 2024 BP 344 web page lines 271-281, 449-456, 770-818, and 895-912; local BP 344 refined markdown lines 317-319, 338-356, 362-399, 443-475, 654-685, and 770-818."
+      },
+      {
+        "source_id": "batch131-lea-theo-003-06-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md",
+        "sha256": "sha256:0cad672d99bff387eb6091936a56fb502fd557fc519dcf854d83821166be7214",
+        "locator": "NC State Center for Universal Design lines 176-197 and 199-270; NCDA 2024 BP 344 web page lines 271-281, 449-456, 770-818, and 895-912; local BP 344 refined markdown lines 317-319, 338-356, 362-399, 443-475, 654-685, and 770-818."
+      },
+      {
+        "source_id": "batch131-lea-theo-003-06-core-concept-checked-local-source-1",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "locator": "local raw source file hash checked"
+      },
+      {
+        "source_id": "batch131-lea-theo-003-06-core-concept-checked-local-source-2",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "lines 317-319, 338-356, 362-399, 443-475, 654-685, 770-818"
       }
     ],
-    "citation": "BP 344 2024 Revised IRR, Doors"
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to Batch 131 checked local-first source scope. Answer key preserved: true."
   },
   "proposed": {
-    "text": "What opening force limit applies to interior door closer devices, except stated exclusions?",
+    "text": "In applying Simple and Intuitive Use to hospital wayfinding, architects should:",
     "options": [
       {
-        "id": "b040-ec61-09-a",
-        "text": "Not more than 2.0 kg"
+        "id": "a",
+        "text": "Add unnecessary complexity to impress users"
       },
       {
-        "id": "b040-ec61-09-b",
-        "text": "Not more than 0.5 kg"
+        "id": "b",
+        "text": "Arrange information randomly"
       },
       {
-        "id": "b040-ec61-09-c",
-        "text": "Not more than 5.0 kg"
+        "id": "c",
+        "text": "Be consistent with user expectations, arrange information by importance, and provide effective prompts or feedback"
       },
       {
-        "id": "b040-ec61-09-d",
-        "text": "No limit is stated for interior door closers"
+        "id": "d",
+        "text": "Use only specialist medical jargon"
       }
     ],
-    "correct_option_id": "b040-ec61-09-a",
-    "rationale": "Correct answer: Not more than 2.0 kg. This is directly supported by BP 344 2024 Revised IRR, Doors.",
-    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Doors.",
-    "code_citation": "BP 344 2024 Revised IRR, Doors"
+    "correct_option_id": "c",
+    "rationale": "NC State supports eliminating unnecessary complexity, consistency, important information order, and prompting/feedback.",
+    "explanation": "NC State supports eliminating unnecessary complexity, consistency, important information order, and prompting/feedback. NC State supports eliminating unnecessary complexity, consistency, important information order, and prompting/feedback.",
+    "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md; NC State lines 176-197 and 199-270; BP 344 local lines 317-319, 654-685, and 770-818."
   }
 }

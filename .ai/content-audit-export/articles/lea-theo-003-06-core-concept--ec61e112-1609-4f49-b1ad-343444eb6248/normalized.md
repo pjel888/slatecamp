@@ -1,25 +1,52 @@
 # Universal Design: Inclusive Architecture
 
+## Board Exam Quick Check
+
+For LEA questions, separate the design philosophy from the enforceable controls. Universal Design asks whether environments are usable by as many people as possible without special adaptation. BP 344 gives Philippine accessibility requirements that must still be checked in the drawings.
+
+## Learning Goal
+
+Explain the seven principles of Universal Design and apply them together with BP 344 accessibility controls in inclusive architectural planning.
+
 ## Source Boundary
 
-This source-safe repair treats universal design through enforceable accessibility controls in the 2024 Revised IRR of BP 344. It avoids broad design-philosophy claims unless they are tied to a checked provision.
+This Batch 131 repair uses the NC State Center for Universal Design for the definition and seven principles, and the NCDA 2024 Revised IRR of BP 344 plus the checked local BP 344 files for Philippine accessibility controls. It avoids broad inclusion claims that are not tied to those sources.
 
-## Inclusive Routes
+## Core Concept
 
-The BP 344 route logic is continuous. Sidewalks, walkways, and pathways must be as level as possible, slip resistant in wet and dry conditions, and at least 1500 mm wide. Where two wheelchairs must pass, the minimum width is 1800 mm. Curb ramps are allowed only when they do not obstruct or reduce required sidewalk or turning clearances.
+Universal Design is defined by NC State as design of products and environments usable by all people, to the greatest extent possible, without the need for adaptation or specialized design. Its seven principles are Equitable Use, Flexibility in Use, Simple and Intuitive Use, Perceptible Information, Tolerance for Error, Low Physical Effort, and Size and Space for Approach and Use.
 
-## Inclusive Interfaces
+For Philippine architectural practice, Universal Design should not be treated as a replacement for BP 344. BP 344 is the enforceable accessibility layer. It controls items such as accessible routes, tactile surfaces, signage, entrances, door widths, maneuvering areas, hardware, ramps, stairs, handrails, contrast, and wayfinding.
 
-Doors are a major accessibility interface. All doors require at least 900 mm clear width. Double-leaf doors require 1800 mm clear width. A clear level space of 1800 mm by 1800 mm must be provided before and extending beyond a door, with a 1500 mm corridor-width exception where the door opens onto but not into a corridor. Door handles, pulls, latches, and lever-type locksets are centered at 900 mm above floor finish level.
+The LEA-safe answer connects both layers: use Universal Design to choose inclusive, non-stigmatizing solutions, then verify the minimum technical requirements under BP 344.
 
-## Inclusive Wayfinding
+## Real World Scenario
 
-The 2024 IRR requires accessible signage, tactile floor surfaces, luminance contrast, Braille, and tactile paths to key destinations such as elevators and accessible toilets. Tactile paths to elevators terminate in front of the Braille-equipped control panel, with warning tactile blocks 300 mm before the control panel.
+A clinic entrance should not send wheelchair users to a hidden side route while everyone else enters through the main lobby. Universal Design points toward the same or equivalent means of use, avoiding segregation. BP 344 then requires the accessible route, entrance, door clear width, maneuvering space, tactile warnings, contrast, signage, and hardware controls to be checked.
 
-## Inclusive Vertical Movement
+## Key Facts and Testable Items
 
-Where staircases occur along an accessible route, complementary ramps, lifts, or escalators must be provided. Accessible stairs use 150 mm maximum risers and 300 mm minimum treads, continuous handrails on both sides, 900 mm and 700 mm handrail heights, 1.50 m clear width, and landings not less than 1500 mm.
+1. Universal Design aims for usability by all people to the greatest extent possible.
+2. Equitable Use avoids segregating or stigmatizing users and supports privacy, security, and safety for all users.
+3. Flexibility in Use accommodates a wide range of preferences and abilities.
+4. Perceptible Information uses redundant modes such as pictorial, verbal, and tactile information with legibility and contrast.
+5. BP 344 provides enforceable Philippine accessibility requirements for routes, entrances, doors, signage, tactile surfaces, ramps, stairs, and related controls.
 
-## Exam Use
+## Common Mistakes
 
-For LEA review, translate universal design into measurable controls: route width, passing width, door width, door maneuvering space, hardware height, tactile warnings, contrast, Braille, stair geometry, handrail heights, and alternative vertical access.
+- Treating Universal Design and BP 344 as the same thing.
+- Calling a design universal because it has one ramp while the route is segregated or hard to find.
+- Memorizing the seven principles without applying them to approach, reach, manipulation, information, safety, and effort.
+- Inventing accessibility dimensions instead of checking the BP 344 locator.
+
+## Key Terms
+
+**Universal Design** - Design of products and environments usable by all people, to the greatest extent possible, without adaptation or specialized design.
+
+**Equitable Use** - Design useful and marketable to people with diverse abilities, using the same means where possible and equivalent means where needed.
+
+**Perceptible Information** - Communication of necessary information effectively regardless of ambient conditions or sensory abilities.
+
+**Low Physical Effort** - Design usable efficiently and comfortably with minimum fatigue.
+
+**BP 344** - The Philippine accessibility law and implementing rules used to verify enforceable accessibility controls in buildings and related facilities.

@@ -1,0 +1,278 @@
+{
+  "batch_id": "source-audited-article-batch-131-local-first",
+  "generated_at": "2026-05-14T13:42:00.000+08:00",
+  "updated_at": "2026-05-14T13:50:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "baseline_full_commit": "e8ef622a1c3bec98f6adaf65f1dffef5b1640859",
+  "branch": "3dlab-gray-viewport-bg",
+  "local_first": true,
+  "internet_enabled": true,
+  "totals": {
+    "selected_article_count": 5,
+    "linked_question_count": 64,
+    "question_edit_count": 64,
+    "answer_key_change_count": 0,
+    "option_text_change_count": 64,
+    "source_entry_count": 10,
+    "local_source_artifact_count": 10
+  },
+  "selected_articles": [
+    {
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "slug": "lea-theo-003-04-core-concept",
+      "title": "Psychology of Space and Environmental Perception",
+      "folder": ".ai/content-audit-export/articles/lea-theo-003-04-core-concept--b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 12,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: evaluate a clinic waiting area by checking whether seating, visibility, noise, and boundaries let patients control interaction while still finding the service counter easily.",
+      "scenario_summary": "Added source-safe Real World Scenario bounded to Batch 131 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed prior ART, biophilia, and prospect-refuge claims because they were not supported by the checked Batch 131 source map.",
+        "Avoided exact stress-reduction, productivity, or health claims without local locator support.",
+        "Kept the article focused on LEA-tested behavior, privacy, control, territoriality, personal space, and perception."
+      ],
+      "normalized_hash": "sha256:410709d83e6d62ceb13d5a01efa41cb2d1908be1d74ffc152788516a01e8dced",
+      "candidate_hash": "sha256:410709d83e6d62ceb13d5a01efa41cb2d1908be1d74ffc152788516a01e8dced",
+      "sources_hash": "sha256:eaabb35d824b1fe3e92e31b4849068894d8a024fcf84800fb0304e96bf0badb9",
+      "linked_questions_hash": "sha256:6bda8b655b4f49311013adb414f6740b4ed2e7fa920e0d57f854171844e0d84f",
+      "source_locator": "APS environmental psychology page lines 214-218; SEPCP behavior and built environment page lines 207-215 and 217-265; Salvan refined markdown lines 7978-8008 and 15731-15917; theory refined markdown lines 154-191 and 220; TOA 3 refined markdown lines 506-558.",
+      "source_urls": [
+        "https://psychology.org.au/community/advocacy-social-issues/environment-climate-change-psychology/psychologys-role-in-environmental-issues/what-is-environmental-psychology",
+        "https://www.sepcp.org/behavior-built"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:8cd20ae2a315a1d2fed17df7abb7bbaea82d54cc6c269ea3d663c66ffb4b36d0",
+        "sha256:df1b983b92531e2c61ca73163d42b705f443c8b579d5f88105d8629217a01886"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json remains absent for this content-audit bundle; bundle validation reports this as a warning only."
+      ],
+      "original_hash": "sha256:d004f8f15fad293ec6c08517610920fce15649dca87e65d44caab57f6d8deb3b",
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true,
+        "ui_block_validation_valid": true
+      }
+    },
+    {
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "slug": "lea-theo-003-05-core-concept",
+      "title": "Multisensory Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-theo-003-05-core-concept--9c265d02-df61-46de-8c96-dd474041838e",
+      "source_count": 2,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 13,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: review a pediatric clinic by checking whether light, glare, sound, touch surfaces, color, texture, and wayfinding work together instead of relying on visual appearance alone.",
+      "scenario_summary": "Added source-safe Real World Scenario bounded to Batch 131 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed unsupported exact lux, Kelvin, and reverberation-time thresholds from the prior linked questions.",
+        "Avoided health and circadian claims not backed by the Batch 131 source map.",
+        "Kept claims at the level of perceptual order, sensory balance, haptic/tactile expression, and spatial character."
+      ],
+      "normalized_hash": "sha256:f104b0efd3c334da3dae38f0b5af1da3f1075155b775cc6c1bdb67727ebbc32b",
+      "candidate_hash": "sha256:f104b0efd3c334da3dae38f0b5af1da3f1075155b775cc6c1bdb67727ebbc32b",
+      "sources_hash": "sha256:8b2108aee10b7b22d405430e8528977b954efca9120434ae59542664b44a3ccd",
+      "linked_questions_hash": "sha256:e4666310772946ff5999fda8cd9b50db41a20791b85081e852666f72edea3e1c",
+      "source_locator": "Wiley Pallasmaa page lines 123-131 and 158-184; Wiley Ching page lines 124-130; theory refined markdown lines 11-13; Salvan refined markdown lines 5970-5973, 10481-10487, 10525-10671, and 11261.",
+      "source_urls": [
+        "https://www.wiley-vch.de/en/areas-interest/engineering/the-eyes-of-the-skin-978-1-394-20067-2",
+        "https://www.wiley-vch.de/en/areas-interest/engineering/architecture-form-space-and-order-978-1-119-85337-4"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-05-core-concept-multisensory-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-05-core-concept-multisensory-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:d5601afe7d8f090a5c0f3f889ea7d284b37c55e9d2e13148ff2d7e484591f9c7",
+        "sha256:834b7952fd2dd6bf5225572f9f94138692e827cb937f7bcd27751551621db516"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json remains absent for this content-audit bundle; bundle validation reports this as a warning only."
+      ],
+      "original_hash": "sha256:f4b4afa91d06dbbb6d2e412847c8d15bfaa1ee844aa80924871cb0bf472b90ac",
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true,
+        "ui_block_validation_valid": true
+      }
+    },
+    {
+      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+      "slug": "lea-theo-003-06-core-concept",
+      "title": "Universal Design: Inclusive Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248",
+      "source_count": 2,
+      "linked_question_count": 13,
+      "question_edit_count": 13,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 13,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: review a public clinic entrance by checking both universal design intent and BP 344 controls for route, signage, tactile warnings, door clear width, maneuvering space, and hardware height.",
+      "scenario_summary": "Added source-safe Real World Scenario bounded to Batch 131 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Separated universal design philosophy from enforceable BP 344 requirements.",
+        "Removed unsupported cost-savings claims unless framed as source-safe early integration logic rather than a quantified economic claim.",
+        "Kept legal measurements tied to the checked NCDA/local BP 344 locators."
+      ],
+      "normalized_hash": "sha256:1ec290f2b1b32eca8a90bb072ec057d27bbcfb0e6df05c564120da11e1af3422",
+      "candidate_hash": "sha256:1ec290f2b1b32eca8a90bb072ec057d27bbcfb0e6df05c564120da11e1af3422",
+      "sources_hash": "sha256:66a4429e1b996b216e987a2a003c45771948f36c628fe6a829799a8aa881b179",
+      "linked_questions_hash": "sha256:539dc4c8cad9e0d9fc22f4f6671fd0b171cf6ec9f1e73178a51be2f47e9547b1",
+      "source_locator": "NC State Center for Universal Design lines 176-197 and 199-270; NCDA 2024 BP 344 web page lines 271-281, 449-456, 770-818, and 895-912; local BP 344 refined markdown lines 317-319, 338-356, 362-399, 443-475, 654-685, and 770-818.",
+      "source_urls": [
+        "https://design.ncsu.edu/research/center-for-universal-design/",
+        "https://ncda.gov.ph/revised-2024-rules-and-regulations-implementing-batas-pambansa-344/"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-06-core-concept-universal-design-inclusive-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:1ead6a653d253412e45c6549bdc5eabb80c8f432290c4883af7da660ba37ce6d",
+        "sha256:0cad672d99bff387eb6091936a56fb502fd557fc519dcf854d83821166be7214"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json remains absent for this content-audit bundle; bundle validation reports this as a warning only."
+      ],
+      "original_hash": "sha256:daa7fb042b502c3383da1dc13151747213456e7d951b558d389a1a325742c4a5",
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true,
+        "ui_block_validation_valid": true
+      }
+    },
+    {
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "slug": "lea-theo-003-07-core-concept",
+      "title": "Edward T. Hall: Proxemics and Personal Space",
+      "folder": ".ai/content-audit-export/articles/lea-theo-003-07-core-concept--6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 12,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: review a reception area by testing whether seating and counter distance force strangers into intimate or close personal space when the task only requires social or impersonal transaction.",
+      "scenario_summary": "Added source-safe Real World Scenario bounded to Batch 131 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed prior unsupported named-culture high-context/low-context generalizations where the local source map did not support them.",
+        "Kept cross-cultural framing only at the broad level supported by the Hall publisher page and TOA 3 environmental/cultural factors.",
+        "Preserved distance-band claims only where supported by local TOA/theory/Salvan locators."
+      ],
+      "normalized_hash": "sha256:69b88131b11654bd1b28eb3fd5ba660c73157d73c6628174e56cfba17c78bca2",
+      "candidate_hash": "sha256:69b88131b11654bd1b28eb3fd5ba660c73157d73c6628174e56cfba17c78bca2",
+      "sources_hash": "sha256:40ba1cd93b50ddd683ca54386474bed51750d4b230e90956dfa599c8803901ed",
+      "linked_questions_hash": "sha256:6256e8a35ea10dbbdb6f9d684d7d8e9f0fa612ba1576a6ce0c7eb4075294cc8c",
+      "source_locator": "Penguin Random House Hall book page lines 345-372 and 381-396; TOA 3 refined markdown lines 506-558; theory refined markdown lines 154-165; Salvan refined markdown lines 15731-15917.",
+      "source_urls": [
+        "https://www.penguinrandomhouse.com/books/73818/the-hidden-dimension-by-edward-t-hall/"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-07-core-concept-edward-hall-proxemics.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-07-core-concept-edward-hall-proxemics.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:590670f99666116b2f5f80d4508e12953e5bdb2024a04de4866e71191fdbb362",
+        "sha256:b4820012a2515f7752e497e486d433639e58ae786f3e3d6f06fa9919111396de"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json remains absent for this content-audit bundle; bundle validation reports this as a warning only."
+      ],
+      "original_hash": "sha256:2cc8b8f5d44c80e6a1fbe59c72b6dab469ba218a51130ed5f3032e593338bd38",
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true,
+        "ui_block_validation_valid": true
+      }
+    },
+    {
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "slug": "lea-theo-003-08-core-concept",
+      "title": "Gestalt Psychology and Visual Perception",
+      "folder": ".ai/content-audit-export/articles/lea-theo-003-08-core-concept--f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "source_count": 2,
+      "linked_question_count": 14,
+      "question_edit_count": 14,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 14,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: review an open-plan studio by checking whether ceiling lines, floor material, furniture clusters, and figure-ground contrast make work zones readable without full-height partitions.",
+      "scenario_summary": "Added source-safe Real World Scenario bounded to Batch 131 local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Corrected the prior typo in a linked question and removed overextended unsupported principle lists where local support was not sufficient.",
+        "Kept similarity and continuity language tied to the checked Britannica/Salvan/source-map level, not to unsourced exhaustive lists.",
+        "Avoided legal, anthropometric, or service-system answers when the stem asks about Gestalt visual organization."
+      ],
+      "normalized_hash": "sha256:fb324eeec8fd7b5cb7ca6aab23aa8fc82dca189fae89196c3a3aa742bdad2576",
+      "candidate_hash": "sha256:fb324eeec8fd7b5cb7ca6aab23aa8fc82dca189fae89196c3a3aa742bdad2576",
+      "sources_hash": "sha256:1553656d46a3f8390a7a7548c52111b29492d71aa714557c5c8a5647f4eaaa42",
+      "linked_questions_hash": "sha256:d758618195767543d0acdb4713a763cf543178b0b40094ad12e718c13a353564",
+      "source_locator": "Britannica Gestalt page lines 172-186 and 204-205; Britannica perception page lines 233-235; Britannica primary tendencies page lines 213-215; theory refined markdown lines 186-191; Salvan refined markdown lines 5926-5940, 5990-5997, 6152-6172, and 15907-15917.",
+      "source_urls": [
+        "https://www.britannica.com/science/Gestalt-psychology",
+        "https://www.britannica.com/topic/perception",
+        "https://www.britannica.com/topic/perception/Primary-tendencies-in-perceptual-organization"
+      ],
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-08-core-concept-gestalt-visual-perception.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:dda4985da8709ffd4918a9353be3ce88ae94fc8c9d1da67a33ad8416af0ebe5b",
+        "sha256:efcd640e86c320319e692f980bd6c99ed61278ac73ac2f7c2b5cb9167f9de99d"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json remains absent for this content-audit bundle; bundle validation reports this as a warning only."
+      ],
+      "original_hash": "sha256:d26cb1fc076db83c024b57a41205b5d5c5d2c9fcaebe8c74c3974dbc073a3e44",
+      "ui_block_roundtrip": {
+        "ui_block_count": 0,
+        "normalized_raw_ui_markers": 0,
+        "candidate_raw_ui_markers": 0,
+        "candidate_matches_normalized": true,
+        "ui_block_validation_valid": true
+      }
+    }
+  ],
+  "git_handoff": {
+    "status": "git_index_blocked",
+    "attempted_command": "git add -f --pathspec-from-file=/private/tmp/batch131-paths.txt",
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "stage_list_path": ".ai/03_plans/batch-131-git-handoff-stage-list.md",
+    "intended_commit": "chore(content): accept source-audited batch 131"
+  }
+}

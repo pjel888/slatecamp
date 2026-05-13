@@ -1,30 +1,30 @@
 {
   "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:da3d1614697dbf6b7a3550c6810f51a512b181d9fab3fccadc6b0e5ac031c529",
+  "linked_questions_hash": "sha256:6bda8b655b4f49311013adb414f6740b4ed2e7fa920e0d57f854171844e0d84f",
   "question_count": 12,
   "questions": [
     {
       "question_id": "c60923c5-d99c-49ca-8b97-03ffb513262b",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "Attention Restoration Theory (ART) explains how natural environments support well-being by:",
+      "text": "In LEA terms, environmental psychology is best applied to architecture by asking how:",
       "options": [
         {
           "id": "a",
-          "text": "Increasing cognitive load and demanding directed attention for sustained focus, which can lead to mental fatigue"
+          "text": "A building can ignore user behavior once code minimums are met"
         },
         {
           "id": "b",
-          "text": "Allowing the directed attention system to relax through soft fascinations, enabling cognitive recovery"
+          "text": "Physical settings and users affect one another through behavior, experience, and control"
         },
         {
           "id": "c",
-          "text": "Eliminating all sensory stimulation to reduce mental fatigue, creating a calming environment"
+          "text": "Only structural systems determine whether a space works"
         },
         {
           "id": "d",
-          "text": "Providing physical exercise and muscle development through outdoor activity, enhancing physical health"
+          "text": "Psychological response can be measured only by room area"
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "ART addresses recovery from directed attention demands, not increasing them",
-        "c": "ART relies on engaging stimuli (soft fascinations), not sensory deprivation",
-        "d": "Physical exercise is valuable but distinct from ART's attention restoration mechanism",
-        "correct": "ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly",
-        "takeaway": "ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly."
+        "a": "Code minimums do not replace behavior and perception analysis.",
+        "b": "Correct.",
+        "c": "Structure matters, but this topic is about person-environment response.",
+        "d": "Room area alone does not capture privacy, control, or perception.",
+        "correct": "Environmental psychology links people and physical settings, so the architectural issue is behavior and experience in space.",
+        "takeaway": "Environmental psychology links people and physical settings, so the architectural issue is behavior and experience in space."
       },
-      "explanation": "ART addresses recovery from directed attention demands, not increasing them ART relies on engaging stimuli (soft fascinations), not sensory deprivation Physical exercise is valuable but distinct from ART's attention restoration mechanism ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly.",
-      "code_citation": null,
+      "explanation": "Environmental psychology links people and physical settings, so the architectural issue is behavior and experience in space. Environmental psychology links people and physical settings, so the architectural issue is behavior and experience in space.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -53,30 +54,30 @@
       "model_id": "ALE-THEO-003-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T14:56:50.862725+00:00",
-      "content_hash": "sha256:7bb4f1796c1ee9388363d85646091c97910a3a4b82a884e52e207d7081bc909f"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:7b94de3f18a54f8848d8cbb9bec1a6fc56661e317215dcc0a9146981b0983413"
     },
     {
       "question_id": "a75ebdc0-42f3-466e-a584-ce2977ada43e",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "Biophilia is best defined as:",
+      "text": "Within the checked theory source, privacy is best understood as:",
       "options": [
         {
           "id": "a",
-          "text": "Preference for green-colored design elements and decorative plants"
+          "text": "The complete absence of windows and views"
         },
         {
           "id": "b",
-          "text": "The innate human affinity for connection with nature and natural systems"
+          "text": "The ability to control interactions with others"
         },
         {
           "id": "c",
-          "text": "The practice of growing plants in interior environments for air quality"
+          "text": "A luxury condition unrelated to planning"
         },
         {
           "id": "d",
-          "text": "The scientific study of biological organisms in buildings"
+          "text": "The same thing as sound isolation only"
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +86,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Green color or decoration alone does not constitute biophilic design",
-        "c": "While biophilic design may include living plants, the concept extends beyond horticultural practice",
-        "d": "This describes biology or ecology, not the design concept of biophilia",
-        "correct": "Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research",
-        "takeaway": "Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research."
+        "a": "Privacy is not simply windowless isolation.",
+        "b": "Correct.",
+        "c": "Privacy is a planning and behavior concern.",
+        "d": "Acoustics can support privacy but do not define it alone.",
+        "correct": "Privacy is source-backed as the ability to control interaction with others.",
+        "takeaway": "Privacy is source-backed as the ability to control interaction with others."
       },
-      "explanation": "Green color or decoration alone does not constitute biophilic design While biophilic design may include living plants, the concept extends beyond horticultural practice This describes biology or ecology, not the design concept of biophilia Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research.",
-      "code_citation": null,
+      "explanation": "Privacy is source-backed as the ability to control interaction with others. Privacy is source-backed as the ability to control interaction with others.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +107,30 @@
       "model_id": "ALE-THEO-003-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:14.365007+00:00",
-      "content_hash": "sha256:0d9f4193aeefc7e7ec8d88f54d7f94e66819026c0b78d2cb45c8122b26f990c8"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:c7a8a1b35f84ffe40c1d0cacc24b61ef04f515ac044998a35cbce76321893c39"
     },
     {
       "question_id": "7e196bd7-fbb4-4ea7-82c4-6fd38baaadb3",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "In designing a corporate office, biophilic design would most directly support occupant well-being by:",
+      "text": "A workplace plan most directly supports psychology of space when it:",
       "options": [
         {
           "id": "a",
-          "text": "Incorporating views to vegetation, living plants, natural light variation, and restorative break spaces supporting attention recovery"
+          "text": "Combines clear routes, usable personal buffers, acoustic moderation, and places users can control"
         },
         {
           "id": "b",
-          "text": "Reducing building size to minimize operational costs, which indirectly benefits occupant well-being by lowering stress related to financial constraints"
+          "text": "Maximizes desk count regardless of visibility and noise"
         },
         {
           "id": "c",
-          "text": "Maximizing desk area to increase productivity through work capacity, although this may not directly enhance well-being"
+          "text": "Uses one open room because larger shared space always feels better"
         },
         {
           "id": "d",
-          "text": "Increasing building glazing to maximize open floor plans, which can create a sense of openness but may not directly support well-being"
+          "text": "Treats employee comfort as unrelated to layout"
         }
       ],
       "correct_option_id": "a",
@@ -137,14 +139,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Cost reduction is unrelated to biophilic design benefits",
-        "c": "Desk area increases productivity but doesn't address biophilic well-being",
-        "d": "Glazing alone without biophilic elements doesn't provide restoration",
-        "correct": "Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration",
-        "takeaway": "Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration."
+        "a": "Correct.",
+        "b": "Density without control can worsen crowding.",
+        "c": "Large open space can still feel stressful if control is poor.",
+        "d": "The source map explicitly links space and behavior.",
+        "correct": "The strongest answer links layout to control, comfort, personal space, visibility, and noise.",
+        "takeaway": "The strongest answer links layout to control, comfort, personal space, visibility, and noise."
       },
-      "explanation": "Cost reduction is unrelated to biophilic design benefits Desk area increases productivity but doesn't address biophilic well-being Glazing alone without biophilic elements doesn't provide restoration Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration.",
-      "code_citation": null,
+      "explanation": "The strongest answer links layout to control, comfort, personal space, visibility, and noise. The strongest answer links layout to control, comfort, personal space, visibility, and noise.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +160,30 @@
       "model_id": "ALE-THEO-003-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-05-06T15:00:14.573638+00:00",
-      "content_hash": "sha256:efd62425e14dd7c279e7c019dbe191f4b876bce54b249919bfd1f81c0ec03462"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:f158255b7567ba16dcedca94a6ec052fa9d67d6135353173c8209443f37fddd6"
     },
     {
       "question_id": "4125c599-dfd2-46b7-b279-c371c277df8f",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "How does spatial coherence and environmental legibility (separate concepts from biophilia) support psychological well-being in healthcare facilities?",
+      "text": "How does environmental legibility support psychological comfort in a public building?",
       "options": [
         {
           "id": "a",
-          "text": "Spatial coherence reduces cognitive load and disorientation, directly reducing patient anxiety; integrated with biophilia, it creates comprehensive psychological support"
+          "text": "It gives users clear references, routes, and expectations, reducing uncertainty in the setting"
         },
         {
           "id": "b",
-          "text": "Spatial clarity and legibility are unrelated to psychological well-being; only biophilic design reduces patient stress, which is the primary concern in healthcare environments"
+          "text": "It removes all variety from the environment"
         },
         {
           "id": "c",
-          "text": "Spatial clarity is relevant only for staff efficiency, not patient psychology, as patients are more affected by direct care and medical treatment"
+          "text": "It replaces the need for accessible routes"
         },
         {
           "id": "d",
-          "text": "Biophilia and legibility contradict each other; architects must choose one or the other, as combining them could lead to design conflicts"
+          "text": "It works only when every room has the same size"
         }
       ],
       "correct_option_id": "a",
@@ -189,14 +192,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Both legibility and biophilia contribute independently and synergistically to psychological well-being",
-        "c": "Patient experience depends fundamentally on spatial clarity and orientation support",
-        "d": "Clear organization that integrates biophilic elements creates optimal well-being support",
-        "correct": "Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support",
-        "takeaway": "Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support."
+        "a": "Correct.",
+        "b": "The source supports order with sufficient variety, not monotony.",
+        "c": "Legibility complements access; it does not replace it.",
+        "d": "Room uniformity is not the source-backed principle.",
+        "correct": "Clear environmental references and order help users understand the whole setting and act with confidence.",
+        "takeaway": "Clear environmental references and order help users understand the whole setting and act with confidence."
       },
-      "explanation": "Both legibility and biophilia contribute independently and synergistically to psychological well-being Patient experience depends fundamentally on spatial clarity and orientation support Clear organization that integrates biophilic elements creates optimal well-being support Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support.",
-      "code_citation": null,
+      "explanation": "Clear environmental references and order help users understand the whole setting and act with confidence. Clear environmental references and order help users understand the whole setting and act with confidence.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -209,30 +213,30 @@
       "model_id": "ALE-THEO-003-04-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:14.909102+00:00",
-      "content_hash": "sha256:167d3a26f0fe4b20393d8e5d2077bd9b632af03055c2f43accdc078879907b30"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:8be2a0b46bce7fbf69d32dcdb3c1ef00c5e419f2a3517160470352f64c23f48b"
     },
     {
       "question_id": "a885c1e1-14f1-453b-aaf0-7a467a63fd24",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "In a tropical climate like the Philippines, how would biophilic design integrate with climate responsiveness?",
+      "text": "In a warm-climate waiting area, which design move is most aligned with the checked psychology-of-space sources?",
       "options": [
         {
           "id": "a",
-          "text": "Maximize air conditioning while adding decorative plants for biophilic effect, which may not be energy efficient"
+          "text": "Place every chair face-to-face to force interaction"
         },
         {
           "id": "b",
-          "text": "Integrate cross-ventilation through vegetation, strategic fenestration creating dappled light mimicking tree canopies, water features providing cooling and soft fascinations"
+          "text": "Provide shaded, ventilated, legible seating choices with different degrees of exposure and interaction"
         },
         {
           "id": "c",
-          "text": "Biophilic and climate responsive design are separate concerns requiring separate solutions, potentially leading to conflicting design strategies"
+          "text": "Use only maximum occupant load as the comfort criterion"
         },
         {
           "id": "d",
-          "text": "Eliminate windows to prevent heat gain, reducing opportunities for nature connection, which may not align with biophilic principles"
+          "text": "Remove all visual access to the service counter"
         }
       ],
       "correct_option_id": "b",
@@ -241,14 +245,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mechanical cooling doesn't address biophilic benefits; living systems provide both thermal and psychological benefit",
-        "c": "Excellent design integrates both concerns; they reinforce each other",
-        "d": "Strategic fenestration with shading provides views, daylighting, and thermal benefit simultaneously",
-        "correct": "In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration",
-        "takeaway": "In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration."
+        "a": "Forced face-to-face proximity can violate personal space.",
+        "b": "Correct.",
+        "c": "Occupant load does not answer privacy or control.",
+        "d": "Users still need legibility and orientation.",
+        "correct": "The source-safe answer combines comfort, control, visibility, and personal-space choice.",
+        "takeaway": "The source-safe answer combines comfort, control, visibility, and personal-space choice."
       },
-      "explanation": "Mechanical cooling doesn't address biophilic benefits; living systems provide both thermal and psychological benefit Excellent design integrates both concerns; they reinforce each other Strategic fenestration with shading provides views, daylighting, and thermal benefit simultaneously In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration.",
-      "code_citation": null,
+      "explanation": "The source-safe answer combines comfort, control, visibility, and personal-space choice. The source-safe answer combines comfort, control, visibility, and personal-space choice.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +266,30 @@
       "model_id": "ALE-THEO-003-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:15.401525+00:00",
-      "content_hash": "sha256:f8494a14016851b63c6b6a440ee6e3a03d3ac2a1ba2984f20b312bd5747526ac"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:75855fcd591aae08008fef2a52d7d6308f2ab7e9a1042b1e6ce51edcc3bc6c63"
     },
     {
       "question_id": "ae5ff407-f5d8-4c94-a759-e26b7027240d",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "The four characteristics of restorative environments are fascination, being away, extent, and compatibility. Which element is most directly related to biophilic design?",
+      "text": "The checked theory source connects social overcrowding most directly with:",
       "options": [
         {
           "id": "a",
-          "text": "Compatibility—agreement between building use and occupant expectations, which enhances user satisfaction"
+          "text": "Too much ornament on a facade"
         },
         {
           "id": "b",
-          "text": "Being away—psychological distance from work demands through spatial separation, fostering mental recovery"
+          "text": "A building being smaller than its lot"
         },
         {
           "id": "c",
-          "text": "Fascination—provided through soft fascinations of moving water, rustling leaves, and light variation in natural or nature-inspired spaces"
+          "text": "Lack of control over the environment, which can lead to negative behavior"
         },
         {
           "id": "d",
-          "text": "Extent—the overall size of the restorative space, which contributes to a sense of immersion"
+          "text": "The absence of a formal style"
         }
       ],
       "correct_option_id": "c",
@@ -293,14 +298,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Compatibility relates to program-user fit, not biophilic effect",
-        "b": "Being away relates to spatial separation and access to nature, connected to but distinct from biophilia",
-        "d": "Extent relates to environmental scale, not specifically biophilic mechanisms",
-        "correct": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments",
-        "takeaway": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments."
+        "a": "Ornament is not the source-backed cause.",
+        "b": "Lot fit is not the behavioral definition.",
+        "c": "Correct.",
+        "d": "Style labels do not define overcrowding.",
+        "correct": "Social overcrowding is source-backed as a lack of environmental control that can lead to negative behavior.",
+        "takeaway": "Social overcrowding is source-backed as a lack of environmental control that can lead to negative behavior."
       },
-      "explanation": "Compatibility relates to program-user fit, not biophilic effect Being away relates to spatial separation and access to nature, connected to but distinct from biophilia Extent relates to environmental scale, not specifically biophilic mechanisms Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments.",
-      "code_citation": null,
+      "explanation": "Social overcrowding is source-backed as a lack of environmental control that can lead to negative behavior. Social overcrowding is source-backed as a lack of environmental control that can lead to negative behavior.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -313,30 +319,30 @@
       "model_id": "ALE-THEO-003-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:15.566921+00:00",
-      "content_hash": "sha256:85d70751778cb31ce3d540c52267865bd828027ddee749f248adce93c906efe5"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:a431290c00b7e5c74d96217958f28a7e5c73925873f437d7b8be20a07ea6b914"
     },
     {
       "question_id": "d2553add-12b8-4ad6-be32-a5db85852632",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "A design brief requires a commercial office in dense Manila with high occupant well-being and low operational costs. Which biophilic strategy directly addresses both requirements?",
+      "text": "A dense office can improve user comfort without inventing unsupported health claims by:",
       "options": [
         {
           "id": "a",
-          "text": "Installing expensive hydroponic green walls throughout the building, which may not be cost-effective"
+          "text": "Adding arbitrary decorative themes"
         },
         {
           "id": "b",
-          "text": "Eliminating windows entirely to reduce HVAC load, which negatively impacts occupant well-being"
+          "text": "Ignoring noise because visual design is more important"
         },
         {
           "id": "c",
-          "text": "Decorating offices with high-quality artificial plants, which do not provide the same benefits as real plants"
+          "text": "Using one fixed seating type for all users"
         },
         {
           "id": "d",
-          "text": "Strategic fenestration maximizing views to existing vegetation, external water features, or sky with appropriate shading"
+          "text": "Improving legibility, acoustic control, visibility, and user choice in personal-space conditions"
         }
       ],
       "correct_option_id": "d",
@@ -345,14 +351,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Green walls require complex maintenance and irrigation",
-        "b": "Windowless design eliminates biophilic benefit and requires artificial lighting",
-        "c": "Artificial plants lack biophilic effect; living systems are required",
-        "correct": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost",
-        "takeaway": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost."
+        "a": "Decoration alone does not address the behavioral source map.",
+        "b": "Noise is a source-backed perceptual issue.",
+        "c": "One fixed setting ignores variable personal space.",
+        "d": "Correct.",
+        "correct": "The answer stays source-safe by tying design to perception, control, sound, and personal space.",
+        "takeaway": "The answer stays source-safe by tying design to perception, control, sound, and personal space."
       },
-      "explanation": "Green walls require complex maintenance and irrigation Windowless design eliminates biophilic benefit and requires artificial lighting Artificial plants lack biophilic effect; living systems are required Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost.",
-      "code_citation": null,
+      "explanation": "The answer stays source-safe by tying design to perception, control, sound, and personal space. The answer stays source-safe by tying design to perception, control, sound, and personal space.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -365,30 +372,30 @@
       "model_id": "ALE-THEO-003-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:15.732388+00:00",
-      "content_hash": "sha256:fce28e645a4aa689cc5410265c73166e9ea4db651cd81fe4f0fd7cfd059aa712"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:fac723f5c0dcf3a741b2c044fdd25ebbbf37ca6ac13693c9f9c6fd8a2036b5ba"
     },
     {
       "question_id": "57e80712-067a-4de0-b3eb-f718ca151d11",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "Attention Restoration Theory was developed by:",
+      "text": "Salvan defines perception as the process by which people:",
       "options": [
         {
           "id": "a",
-          "text": "Stephen and Rachel Kaplan"
+          "text": "Organize and interpret patterns of stimuli in the environment"
         },
         {
           "id": "b",
-          "text": "Le Corbusier and Edward T. Hall"
+          "text": "Calculate beam reactions from a plan"
         },
         {
           "id": "c",
-          "text": "Ernst Neufert and Henry Dreyfuss"
+          "text": "Automatically prefer the largest space"
         },
         {
           "id": "d",
-          "text": "Kevin Lynch and Ron Mace"
+          "text": "Ignore experience when viewing a setting"
         }
       ],
       "correct_option_id": "a",
@@ -397,14 +404,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Le Corbusier and Hall developed different theories (Modulor, proxemics)",
-        "c": "Neufert and Dreyfuss developed anthropometric systems, not psychological restoration theory",
-        "d": "Lynch and Mace developed urban legibility and universal design, not ART",
-        "correct": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration",
-        "takeaway": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration."
+        "a": "Correct.",
+        "b": "That is a structural analysis task.",
+        "c": "Preference is not reduced to size.",
+        "d": "The source map includes experience and mental conditioning.",
+        "correct": "The checked Salvan locator defines perception as organizing and interpreting environmental stimulus patterns.",
+        "takeaway": "The checked Salvan locator defines perception as organizing and interpreting environmental stimulus patterns."
       },
-      "explanation": "Le Corbusier and Hall developed different theories (Modulor, proxemics) Neufert and Dreyfuss developed anthropometric systems, not psychological restoration theory Lynch and Mace developed urban legibility and universal design, not ART Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration.",
-      "code_citation": null,
+      "explanation": "The checked Salvan locator defines perception as organizing and interpreting environmental stimulus patterns. The checked Salvan locator defines perception as organizing and interpreting environmental stimulus patterns.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +425,30 @@
       "model_id": "ALE-THEO-003-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:15.898603+00:00",
-      "content_hash": "sha256:8e3d1171a4bb8227d38bf467ad026f1d1c031115f54568267cba5a0bd04bb5bb"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:70ce69e02965991127489ced4ccddc1524831c7040c93d15f051e45e2e228bb2"
     },
     {
       "question_id": "f57580d1-6bc9-43bd-a32f-2d9f0ba0de89",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "In designing a hospital patient room, biophilic principles would most directly reduce patient stress through:",
+      "text": "In a patient interview room, the source-safe psychology-of-space strategy is to:",
       "options": [
         {
           "id": "a",
-          "text": "Using exclusively artificial lighting to control illumination precisely, ensuring consistent light levels"
+          "text": "Put the clinician behind the most imposing desk possible"
         },
         {
           "id": "b",
-          "text": "Eliminating all decorative elements to maintain sterile conditions, focusing solely on functionality"
+          "text": "Use distance to make the patient feel inferior"
         },
         {
           "id": "c",
-          "text": "Minimizing room size to reduce cleaning requirements, thereby optimizing maintenance efficiency"
+          "text": "Remove all visual privacy and face every chair toward the corridor"
         },
         {
           "id": "d",
-          "text": "Incorporating window views to vegetation, natural materials, variable daylighting, and color schemes supporting calm"
+          "text": "Reduce unnecessary barriers and arrange distance, visibility, and seating to support control and ease"
         }
       ],
       "correct_option_id": "d",
@@ -449,14 +457,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Static artificial lighting disrupts circadian rhythm and lacks biophilic benefit",
-        "b": "Sterility is hygienic requirement; biophilic elements support stress reduction without compromising cleanliness",
-        "c": "Room size doesn't address biophilic stress reduction",
-        "correct": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations",
-        "takeaway": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations."
+        "a": "The checked example warns that an imposing desk can create distance.",
+        "b": "A domineering arrangement is not patient-centered.",
+        "c": "Loss of privacy conflicts with the source map.",
+        "d": "Correct.",
+        "correct": "Salvan supports the idea that sensitive use of distance and barriers can affect behavior positively.",
+        "takeaway": "Salvan supports the idea that sensitive use of distance and barriers can affect behavior positively."
       },
-      "explanation": "Static artificial lighting disrupts circadian rhythm and lacks biophilic benefit Sterility is hygienic requirement; biophilic elements support stress reduction without compromising cleanliness Room size doesn't address biophilic stress reduction Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations.",
-      "code_citation": null,
+      "explanation": "Salvan supports the idea that sensitive use of distance and barriers can affect behavior positively. Salvan supports the idea that sensitive use of distance and barriers can affect behavior positively.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +478,30 @@
       "model_id": "ALE-THEO-003-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:15.073555+00:00",
-      "content_hash": "sha256:a261f39d1e94d530ffebc96158533f2828613f49caa51a1a0968548e10f17518"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:8d5de80dc67e491e98d9697f8872b9e42c03d9a30a69123da394870d01fd11d3"
     },
     {
       "question_id": "41f6f40b-0f19-4a23-910b-e8f9b0bdaeaf",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "The concept of 'prospect and refuge' in spatial psychology suggests humans prefer spaces where they can:",
+      "text": "Territoriality in architecture is most directly expressed through:",
       "options": [
         {
           "id": "a",
-          "text": "See out to surroundings (prospect) while maintaining protection and security (refuge)"
+          "text": "Cues that let users recognize, claim, personalize, or defend a space"
         },
         {
           "id": "b",
-          "text": "Maximize enclosed private space without external visual connection, prioritizing privacy over openness"
+          "text": "The thickness of a wall regardless of use"
         },
         {
           "id": "c",
-          "text": "Eliminate all barriers and create completely open environments, which may not always be practical"
+          "text": "A rule that no spaces may be shared"
         },
         {
           "id": "d",
-          "text": "Only view internal spaces, avoiding external distractions, which can enhance focus"
+          "text": "Purely decorative color selection"
         }
       ],
       "correct_option_id": "a",
@@ -501,14 +510,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Refuge alone without prospect creates isolation and anxiety",
-        "c": "Open environments without refuge create exposure anxiety",
-        "d": "External views provide engagement and well-being, not distraction",
-        "correct": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)",
-        "takeaway": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)."
+        "a": "Correct.",
+        "b": "Wall thickness alone is not the behavioral concept.",
+        "c": "Territoriality does not ban shared space.",
+        "d": "Color alone is too narrow.",
+        "correct": "Territoriality is source-backed as claim, ownership, personalization, and defense of space.",
+        "takeaway": "Territoriality is source-backed as claim, ownership, personalization, and defense of space."
       },
-      "explanation": "Refuge alone without prospect creates isolation and anxiety Open environments without refuge create exposure anxiety External views provide engagement and well-being, not distraction Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge) Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge).",
-      "code_citation": null,
+      "explanation": "Territoriality is source-backed as claim, ownership, personalization, and defense of space. Territoriality is source-backed as claim, ownership, personalization, and defense of space.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -521,30 +531,30 @@
       "model_id": "ALE-THEO-003-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:15.238823+00:00",
-      "content_hash": "sha256:9d8afbd95208e5e29ceb85fc8eb517cf4d1f70676b88e3a999efde3e88b6db76"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:cf140c6a1c8595a8a5a7ceff94d92f5a54b163a81049ec1cb455bf147d944e1d"
     },
     {
       "question_id": "aaa8a655-caf9-49b7-8889-e08826f63d96",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "Why might a building with 'biophilic elements' (potted plants in fixed locations) fail to deliver biophilic psychological benefits?",
+      "text": "Why can a dimensionally adequate room still fail psychologically?",
       "options": [
         {
           "id": "a",
-          "text": "Plants require regular maintenance that most buildings cannot provide, especially in environments with limited natural light and fluctuating temperatures"
+          "text": "Because dimensions never matter"
         },
         {
           "id": "b",
-          "text": "Plants emit pollen that creates allergic reactions in office environments, particularly in spaces with poor ventilation and high occupancy"
+          "text": "Because all psychological needs are identical"
         },
         {
           "id": "c",
-          "text": "Plants are merely decoration and lack the dynamic, living quality, views to nature, and soft fascinations that create psychological restoration"
+          "text": "Because physical fit can ignore privacy, control, personal space, noise, and territorial cues"
         },
         {
           "id": "d",
-          "text": "Biophilic design cannot be used indoors; it is limited to outdoor landscapes and natural settings"
+          "text": "Because users cannot perceive interiors"
         }
       ],
       "correct_option_id": "c",
@@ -553,14 +563,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Maintenance is a practical concern but not the core psychological limitation",
-        "b": "Pollen management is separate from biophilic design effectiveness",
-        "d": "Biophilic design effectively operates in interior environments when properly designed",
-        "correct": "Potted plants lack dynamic quality, views to nature, and soft fascinations required for psychological restoration; static decoration provides minimal biophilic benefit",
-        "takeaway": "Potted plants lack dynamic quality, views to nature, and soft fascinations required for psychological restoration; static decoration provides minimal biophilic benefit."
+        "a": "Dimensions still matter for physical fit.",
+        "b": "Personal space varies by individual and activity.",
+        "c": "Correct.",
+        "d": "Perception is central to this topic.",
+        "correct": "The local sources distinguish physical space from psychological and social space.",
+        "takeaway": "The local sources distinguish physical space from psychological and social space."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The local sources distinguish physical space from psychological and social space. The local sources distinguish physical space from psychological and social space.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -573,30 +584,30 @@
       "model_id": "ALE-THEO-003-04-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cba88320f8c28aa9124530dc671100f6bed535dd62f65ccf21bc8e78ad0f0981"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:3d4d316ab4fc37aa0a9f097f4c67c0b5ef806c3d0624fceee82c489680fb559e"
     },
     {
       "question_id": "e810bd78-8112-4c57-aa59-050ab61505b3",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "Why is the distinction between 'natural materials' and 'biophilic design' important for architects?",
+      "text": "Why is the distinction between physical space and personal space important for architects?",
       "options": [
         {
           "id": "a",
-          "text": "There is no meaningful distinction; both terms describe the same design approach, which focuses on integrating nature into built environments"
+          "text": "Physical space is irrelevant to planning"
         },
         {
           "id": "b",
-          "text": "Natural materials (wood, stone) are always biophilic; synthetic materials are never biophilic, as they do not evoke the same connection to nature"
+          "text": "Personal space is always the same legal dimension"
         },
         {
           "id": "c",
-          "text": "Biophilic design refers only to potted plants; natural materials are unrelated, as they do not contribute to the psychological benefits of nature"
+          "text": "Only furniture size affects comfort"
         },
         {
           "id": "d",
-          "text": "Natural materials provide environmental credentials while biophilic design includes living systems, views to nature, and dynamic elements"
+          "text": "A plan can meet body-clearance needs while still violating subjective comfort, privacy, or control"
         }
       ],
       "correct_option_id": "d",
@@ -605,14 +616,15 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The distinction is critical; natural materials without living systems or nature connection lack biophilic effect",
-        "b": "Material authenticity alone doesn't constitute biophilic design; plastic plants and dead wood are not biophilic",
-        "c": "Biophilic design encompasses living systems, views, light variation, and complexity—not just plants",
-        "correct": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity",
-        "takeaway": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity."
+        "a": "Physical space remains necessary.",
+        "b": "The sources describe personal space as variable.",
+        "c": "Furniture is only one part of spatial experience.",
+        "d": "Correct.",
+        "correct": "Personal space is a psychological concept; it varies with the person, activity, relationship, and setting.",
+        "takeaway": "Personal space is a psychological concept; it varies with the person, activity, relationship, and setting."
       },
-      "explanation": "The distinction is critical; natural materials without living systems or nature connection lack biophilic effect Material authenticity alone doesn't constitute biophilic design; plastic plants and dead wood are not biophilic Biophilic design encompasses living systems, views, light variation, and complexity—not just plants Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity.",
-      "code_citation": null,
+      "explanation": "Personal space is a psychological concept; it varies with the person, activity, relationship, and setting. Personal space is a psychological concept; it varies with the person, activity, relationship, and setting.",
+      "code_citation": "Batch 131 source map: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-131/lea-theo-003-04-core-concept-psychology-space-environmental-perception.refined.md; Salvan lines 7978-8008 and 15731-15917; theory.md lines 154-191.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -625,8 +637,8 @@
       "model_id": "ALE-THEO-003-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:00:14.738944+00:00",
-      "content_hash": "sha256:40fec668d75876ac6c9df4fe9e2efe4376ce8a752f76d3fc5688c5aa24e88158"
+      "updated_at": "2026-05-14T13:10:00.000+08:00",
+      "content_hash": "sha256:9c8748974351ba17323fb0d3eb57c519a63f8c33a08957cf863cddb694f11d5e"
     }
   ]
 }
