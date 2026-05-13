@@ -2,66 +2,77 @@
   "question_id": "f1d8b55e-144a-4637-bcd6-d3c47fcd89cd",
   "baseline_hash": "sha256:9b384bb967464c4f9ffe52848a23c03bfa025183aa4bd4188bb3e7c0e923b959",
   "action": "replace",
-  "reason": "source-audited-article-batch-019-local-first aligned linked question with audited local RA 9266 IRR and UAP SPP source language for lea-prac-frm-007-reciprocity-principles-in-architectural-practice.",
-  "approved_by": "codex-local-source-audit-batch-019",
-  "approved_at": "2026-05-10T23:59:00.000+08:00",
+  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-007-reciprocity-principles-in-architectural-practice.",
+  "approved_by": "codex-local-source-audit-batch-101",
+  "approved_at": "2026-05-13T10:20:00+08:00",
   "source_audit_support": {
     "parent_article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
     "parent_article_slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "RA 9266 IRR Secs. 25, 27, 38; UAP SPP 1.1.2",
+    "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
     "checked_markdown_lines": [
-      "raw markdown lines 684-691",
-      "raw markdown lines 687-689",
-      "raw markdown lines 805-824",
-      "raw markdown lines 293-297"
+      "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824",
+      "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
     ],
     "checked_sources": [
       {
-        "source_id": "ra-9266-irr-architecture-act-2004",
-        "label": "RA 9266 IRR Architecture Act of 2004",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
         "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-007-reciprocity-principles-in-architectural-practice-ra-9266-irr",
         "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
       },
       {
-        "source_id": "uap-standards-of-professional-practice",
-        "label": "UAP Document Standards of Professional Practice",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-007-reciprocity-principles-in-architectural-practice-ra-9266-irr",
+        "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+      },
+      {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-007-reciprocity-principles-in-architectural-practice-uap-standards-of-professional-practice",
+        "locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-007-reciprocity-principles-in-architectural-practice-uap-standards-of-professional-practice",
         "locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+    "local_source_safe_action": "Batch 101 rewrote the linked question using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-101-local-first"
   },
   "proposed": {
-    "text": "Do temporary or special permits under Section 38 require a reciprocity-related condition?",
+    "text": "Who initiates establishment of reciprocity under the IRR process?",
     "options": [
       {
         "id": "a",
-        "text": "No. Section 38 contains no home-country condition."
+        "text": "The project owner"
       },
       {
         "id": "b",
-        "text": "Yes. Section 38 requires, among other conditions, that the foreign national comes from a country permitting Filipino professionals to practice on the same basis."
+        "text": "The foreign citizen seeking to take the examination"
       },
       {
         "id": "c",
-        "text": "No. A client contract is enough."
+        "text": "The contractor"
       },
       {
         "id": "d",
-        "text": "Only if the project is residential."
+        "text": "The city building official"
       }
     ],
     "correct_option_id": "b",
-    "rationale": "Section 38 lists a condition that the foreign national is from a country that specifically permits Filipino professionals to practice within its territory on the same basis.",
-    "explanation": "Section 38 lists a condition that the foreign national is from a country that specifically permits Filipino professionals to practice within its territory on the same basis.",
-    "code_citation": "RA 9266 IRR Secs. 25, 27, 38; UAP SPP 1.1.2"
+    "rationale": "The IRR describes the foreign applicant initiating the reciprocity proof process.",
+    "explanation": "Batch 101 source-audited rewrite: The IRR describes the foreign applicant initiating the reciprocity proof process.",
+    "code_citation": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 101"
+    ],
+    "model_id": "BATCH-101-lea-prac-frm-007-reciprocity-principles-in-architectural-practice-005"
   }
 }

@@ -1,55 +1,91 @@
 {
   "question_id": "edbae089-2b69-424c-8abd-4082fd647dcf",
   "baseline_hash": "sha256:12505d7bd5b8c0f6c251323519727435383f79225863acb5604a7feb7bd0454e",
-  "status": "proposed_source_audited_local_no_supabase",
-  "reason": "Separates Section 27 reciprocity-examination documents from the PRBoA Temporary/Special Permit application form and rewrites the question to a source-supported application-form detail.",
-  "approved_by": "source-audit-local-agent",
-  "approved_at": "2026-05-10T12:40:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-005-foreign-architects-in-the-philippines.",
+  "approved_by": "codex-local-source-audit-batch-101",
+  "approved_at": "2026-05-13T10:20:00+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
-    "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
-    "pdf_pages": [
-      14,
-      16
+    "parent_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+    "parent_article_slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "raw markdown lines 672-691, 782-824; refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403; raw markdown lines 128-132, 293-297, 1854-1857",
+    "checked_markdown_lines": [
+      "raw markdown lines 672-691, 782-824",
+      "refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403",
+      "raw markdown lines 128-132, 293-297, 1854-1857"
     ],
-    "source_locator": "PRBoA Resolution No. 03 s.2008, Annex A Temporary/Special Permit application form and notes",
-    "quoted_pdf_excerpt": "Passport Number & Issuing Country/state ... Details of Registration of Architect ... CV or resume of the foreign architect ... information sheet on the project."
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-ra-9266-irr",
+        "locator": "raw markdown lines 672-691, 782-824"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-ra-9266-irr",
+        "locator": "raw markdown lines 672-691, 782-824"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-prboa-temporary-permits",
+        "locator": "refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+        "sha256": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-prboa-temporary-permits",
+        "locator": "refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-uap-standards-foreign-counterpart",
+        "locator": "raw markdown lines 128-132, 293-297, 1854-1857"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-uap-standards-foreign-counterpart",
+        "locator": "raw markdown lines 128-132, 293-297, 1854-1857"
+      }
+    ],
+    "local_source_safe_action": "Batch 101 rewrote the linked question using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-101-local-first"
   },
   "proposed": {
-    "text": "Which information is specifically requested from the foreign architect in the PRBoA Temporary/Special Permit application form?",
+    "text": "What local rules bind a foreign architect with a temporary or special permit?",
     "options": [
       {
         "id": "a",
-        "text": "Passport number and issuing country/state, plus details of the architect's professional registration"
+        "text": "Only the foreign architect's home-country rules"
       },
       {
         "id": "b",
-        "text": "Only a notarized employment contract with the Filipino counterpart"
+        "text": "Philippine laws, RA 9266, the IRR, the Code of Ethical Conduct, and SPP rules"
       },
       {
         "id": "c",
-        "text": "Only a UAP chapter endorsement and project perspective drawings"
+        "text": "Only the client contract"
       },
       {
         "id": "d",
-        "text": "Only a business permit from the local government unit"
+        "text": "Only international design standards"
       }
     ],
-    "correct_option_id": "a",
-    "code_citation": "PRBoA Resolution No. 03 s.2008, Annex A Temporary/Special Permit application form, PDF pp.14 and 16.",
-    "rationale": {
-      "a": "Correct. Annex A asks for the foreign architect's passport number and issuing country/state, and for registration/license details.",
-      "b": "The application form is broader than an employment contract.",
-      "c": "The source does not make a UAP chapter endorsement and perspective drawings the application-form answer.",
-      "d": "A local business permit alone does not supply the foreign architect's professional identity and registration information.",
-      "correct": "The PRBoA Temporary/Special Permit form asks for personal, passport, specialization, and professional registration details from the foreign architect, with supporting application notes.",
-      "takeaway": "For TSP documentation questions, use the PRBoA form details; do not import Section 27 reciprocity-exam documents unless the question is about licensure-exam reciprocity."
-    }
-  },
-  "baseline_refresh": {
-    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
-    "previous_baseline_hash": "sha256:12505d7bd5b8c0f6c251323519727435383f79225863acb5604a7feb7bd0454e",
-    "remote_hash_verified_before_apply": "sha256:12505d7bd5b8c0f6c251323519727435383f79225863acb5604a7feb7bd0454e",
-    "verified_at": "2026-05-10T12:58:00+08:00"
+    "correct_option_id": "b",
+    "rationale": "The PRBoA resolution states that local Philippine professional rules apply to the foreign architect with a permit.",
+    "explanation": "Batch 101 source-audited rewrite: The PRBoA resolution states that local Philippine professional rules apply to the foreign architect with a permit.",
+    "code_citation": "raw markdown lines 672-691, 782-824; refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403; raw markdown lines 128-132, 293-297, 1854-1857",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 101"
+    ],
+    "model_id": "BATCH-101-lea-prac-frm-005-foreign-architects-in-the-philippines-007"
   }
 }

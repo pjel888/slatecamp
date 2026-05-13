@@ -1,55 +1,91 @@
 {
   "question_id": "dffb3280-babd-44e7-869c-c9de9b42335c",
   "baseline_hash": "sha256:f38d430307456f1ff49086420850f7de41327239127eb91f1b0e96aa0327ef8a",
-  "status": "proposed_source_audited_local_no_supabase",
-  "reason": "Replaces an unsupported special-versus-temporary permit distinction with the source-supported scope rule for a Temporary/Special Permit.",
-  "approved_by": "source-audit-local-agent",
-  "approved_at": "2026-05-10T12:40:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-005-foreign-architects-in-the-philippines.",
+  "approved_by": "codex-local-source-audit-batch-101",
+  "approved_at": "2026-05-13T10:20:00+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
-    "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
-    "pdf_pages": [
-      4,
-      8
+    "parent_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+    "parent_article_slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "raw markdown lines 672-691, 782-824; refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403; raw markdown lines 128-132, 293-297, 1854-1857",
+    "checked_markdown_lines": [
+      "raw markdown lines 672-691, 782-824",
+      "refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403",
+      "raw markdown lines 128-132, 293-297, 1854-1857"
     ],
-    "source_locator": "PRBoA Resolution No. 03 s.2008, Definition of Temporary/Special Permit and Section 11",
-    "quoted_pdf_excerpt": "Temporary/Special Permit can only be issued to an individual foreign architect ... issued to a foreign architect for one (1) project alone."
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-ra-9266-irr",
+        "locator": "raw markdown lines 672-691, 782-824"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-ra-9266-irr",
+        "locator": "raw markdown lines 672-691, 782-824"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-prboa-temporary-permits",
+        "locator": "refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+        "sha256": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-prboa-temporary-permits",
+        "locator": "refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-uap-standards-foreign-counterpart",
+        "locator": "raw markdown lines 128-132, 293-297, 1854-1857"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-uap-standards-foreign-counterpart",
+        "locator": "raw markdown lines 128-132, 293-297, 1854-1857"
+      }
+    ],
+    "local_source_safe_action": "Batch 101 rewrote the linked question using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-101-local-first"
   },
   "proposed": {
-    "text": "Under PRBoA Resolution No. 03 s.2008, what is the scope of a Temporary/Special Permit issued to a foreign architect?",
+    "text": "Who remains architect of record when a foreign architect participates under a temporary or special permit?",
     "options": [
       {
         "id": "a",
-        "text": "It is issued to an individual foreign architect and is limited to one project"
+        "text": "The foreign architect automatically"
       },
       {
         "id": "b",
-        "text": "It is issued to a foreign architectural firm and covers all Philippine projects for one year"
+        "text": "The Filipino counterpart"
       },
       {
         "id": "c",
-        "text": "It is a permanent Philippine license once the foreign architect has a Filipino counterpart"
+        "text": "The foreign design firm"
       },
       {
         "id": "d",
-        "text": "It allows independent signing and sealing as Architect-of-record"
+        "text": "The project owner"
       }
     ],
-    "correct_option_id": "a",
-    "code_citation": "PRBoA Resolution No. 03 s.2008, Temporary/Special Permit Guidelines, PDF pp.4 and 8.",
-    "rationale": {
-      "a": "Correct. The source states that a Temporary/Special Permit is issued to an individual foreign architect and Section 11 limits the permit to one project.",
-      "b": "The source states the permit can only be issued to an individual foreign architect, not a foreign architectural firm.",
-      "c": "A Temporary/Special Permit is limited in period and scope; it is not permanent registration.",
-      "d": "Section 10 states that the Architect-of-record role is reserved to the Filipino counterpart.",
-      "correct": "PRBoA Resolution No. 03 s.2008 treats the Temporary/Special Permit as an individual, project-limited authority for a foreign architect.",
-      "takeaway": "Temporary/Special Permit = individual foreign architect + one project."
-    }
-  },
-  "baseline_refresh": {
-    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
-    "previous_baseline_hash": "sha256:f38d430307456f1ff49086420850f7de41327239127eb91f1b0e96aa0327ef8a",
-    "remote_hash_verified_before_apply": "sha256:f38d430307456f1ff49086420850f7de41327239127eb91f1b0e96aa0327ef8a",
-    "verified_at": "2026-05-10T12:58:00+08:00"
+    "correct_option_id": "b",
+    "rationale": "The PRBoA resolution allows consulting participation but keeps the architect-of-record role with the Filipino counterpart.",
+    "explanation": "Batch 101 source-audited rewrite: The PRBoA resolution allows consulting participation but keeps the architect-of-record role with the Filipino counterpart.",
+    "code_citation": "raw markdown lines 672-691, 782-824; refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403; raw markdown lines 128-132, 293-297, 1854-1857",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 101"
+    ],
+    "model_id": "BATCH-101-lea-prac-frm-005-foreign-architects-in-the-philippines-004"
   }
 }

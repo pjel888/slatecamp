@@ -1,38 +1,17 @@
 {
   "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
   "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
-  "generated_at": "2026-05-10T16:15:17.235Z",
-  "old_hash": "sha256:435fcc1d2657ba908c5926c1f321f29d46e2cf4193117c87a07b2f32841019ac",
-  "new_hash": "sha256:dd408e777fc0c9f6467c2b9b2808314fd95839b7dbf7d3606eb0ad86bffcc48f",
-  "original_hash": "sha256:435fcc1d2657ba908c5926c1f321f29d46e2cf4193117c87a07b2f32841019ac",
-  "normalized_hash": "sha256:dd408e777fc0c9f6467c2b9b2808314fd95839b7dbf7d3606eb0ad86bffcc48f",
-  "candidate_hash": "sha256:dd408e777fc0c9f6467c2b9b2808314fd95839b7dbf7d3606eb0ad86bffcc48f",
-  "changed": true,
-  "changed_line_count": 181,
-  "inserted_line_count": 0,
-  "deleted_line_count": 136,
-  "ui_blocks_original_count": 0,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 0,
-  "ui_blocks_count": 0,
-  "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 0,
-  "changed_text_summary": {
-    "changed": 181,
-    "inserted": 0,
-    "deleted": 136,
-    "original_line_count": 184,
-    "candidate_line_count": 48
-  },
-  "changed_ui_blocks_summary": {
-    "missing_block_ids": [],
-    "changed_count": 0
-  },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
+  "status": "PASS",
+  "batch_id": "source-audited-article-batch-101-local-first",
+  "generated_at": "2026-05-13T10:20:00+08:00",
+  "original_sha256": "sha256:435fcc1d2657ba908c5926c1f321f29d46e2cf4193117c87a07b2f32841019ac",
+  "candidate_sha256": "sha256:e709ee14b4b8fb04212d663422abe93cc7801ac7912e0bfe1c6df01ff5ed1228",
+  "locally_safe": true,
   "blockers": [],
-  "warnings": [
-    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
-  ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "warnings": [],
+  "changes_summary": [
+    "Rewrote article into local-source-bounded professional-practice guidance.",
+    "Added source-safe Real World Scenario.",
+    "Refreshed all 10 linked question edits."
+  ]
 }

@@ -2,66 +2,77 @@
   "question_id": "8b8e905c-e3c3-49ee-90fb-e826cefebeb7",
   "baseline_hash": "sha256:121851f5036a568af2e13fdedcbdf6fb735a255ab2e91cd9c86a5bc2a04af05a",
   "action": "replace",
-  "reason": "source-audited-article-batch-019-local-first aligned linked question with audited local RA 9266 IRR and UAP SPP source language for lea-prac-frm-004-joint-venture-in-architecture.",
-  "approved_by": "codex-local-source-audit-batch-019",
-  "approved_at": "2026-05-10T23:59:00.000+08:00",
+  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-004-joint-venture-in-architecture.",
+  "approved_by": "codex-local-source-audit-batch-101",
+  "approved_at": "2026-05-13T10:20:00+08:00",
   "source_audit_support": {
     "parent_article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
     "parent_article_slug": "lea-prac-frm-004-joint-venture-in-architecture",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "RA 9266 IRR Secs. 3(15), 38; UAP SPP 19.2, 19.6, 27.1",
+    "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
     "checked_markdown_lines": [
-      "raw markdown lines 123-126",
-      "raw markdown lines 1639-1648",
-      "raw markdown lines 807-824; UAP raw markdown lines 128-132, 293-297",
-      "raw markdown lines 1854-1857"
+      "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824",
+      "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
     ],
     "checked_sources": [
       {
-        "source_id": "ra-9266-irr-architecture-act-2004",
-        "label": "RA 9266 IRR Architecture Act of 2004",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
         "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-ra-9266-irr",
         "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
       },
       {
-        "source_id": "uap-standards-of-professional-practice",
-        "label": "UAP Document Standards of Professional Practice",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-ra-9266-irr",
+        "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+      },
+      {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-uap-standards-of-professional-practice",
+        "locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-uap-standards-of-professional-practice",
         "locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+    "local_source_safe_action": "Batch 101 rewrote the linked question using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-101-local-first"
   },
   "proposed": {
-    "text": "What is the role of the Filipino counterpart when a foreign architect participates?",
+    "text": "Which answer best handles a foreign firm name appearing on Philippine project documents?",
     "options": [
       {
         "id": "a",
-        "text": "To remove the need for a temporary/special permit."
+        "text": "Treat it as harmless marketing in all cases"
       },
       {
         "id": "b",
-        "text": "To act only as a translator with no professional role."
+        "text": "Check whether the use implies practice and whether Section 38 and counterpart requirements are satisfied"
       },
       {
         "id": "c",
-        "text": "To collaborate as the local RLA counterpart assuming the required professional responsibilities and civil liabilities."
+        "text": "Ignore it if the foreign firm is famous"
       },
       {
         "id": "d",
-        "text": "To let the foreign architect sign Philippine documents independently."
+        "text": "Allow it if the owner approves"
       }
     ],
-    "correct_option_id": "c",
-    "rationale": "UAP SPP states the local Filipino counterpart RLA assumes the requisite professional responsibilities and civil liabilities.",
-    "explanation": "UAP SPP states the local Filipino counterpart RLA assumes the requisite professional responsibilities and civil liabilities.",
-    "code_citation": "RA 9266 IRR Secs. 3(15), 38; UAP SPP 19.2, 19.6, 27.1"
+    "correct_option_id": "b",
+    "rationale": "Foreign names and titles on project documents can raise practice-authority issues, so the statutory gate must be checked.",
+    "explanation": "Batch 101 source-audited rewrite: Foreign names and titles on project documents can raise practice-authority issues, so the statutory gate must be checked.",
+    "code_citation": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 101"
+    ],
+    "model_id": "BATCH-101-lea-prac-frm-004-joint-venture-in-architecture-007"
   }
 }

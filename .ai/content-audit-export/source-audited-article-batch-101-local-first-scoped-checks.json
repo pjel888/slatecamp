@@ -1,0 +1,287 @@
+{
+  "artifact_type": "source_audited_article_batch_scoped_checks",
+  "batch_number": "101",
+  "batch_id": "source-audited-article-batch-101-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-13T10:20:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-101-manifest.json",
+  "blockers": 0,
+  "warnings": [
+    "Official root compose/validate sidecars were intentionally not rewritten because pre-existing global validation sidecars are unrelated dirty files in this workspace."
+  ],
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 21,
+    "source_hash_failures": 0,
+    "scoped_json_parse_files": 108,
+    "scoped_json_parse_failures": 0,
+    "marker_scan_files": 60,
+    "marker_scan_matches": 0,
+    "stale_compose_error_matches": 0
+  },
+  "gates": {
+    "compose": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": 5,
+      "locally_safe": 5,
+      "blockers": 0
+    },
+    "validate_strict": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": "Scoped strict validation only; global sidecars preserved."
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files_checked": 108,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "files_checked": 60,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 21,
+      "failures": [],
+      "checks_detail": [
+        {
+          "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "pass": true
+        },
+        {
+          "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "expected": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "actual": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "pass": true
+        },
+        {
+          "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "pass": true
+        },
+        {
+          "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "pass": true
+        },
+        {
+          "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "pass": true
+        },
+        {
+          "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "expected": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "actual": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "pass": true
+        },
+        {
+          "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+          "expected": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+          "actual": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+          "pass": true
+        },
+        {
+          "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+          "expected": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+          "actual": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+          "pass": true
+        },
+        {
+          "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "pass": true
+        },
+        {
+          "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "pass": true
+        },
+        {
+          "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "pass": true
+        },
+        {
+          "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "expected": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "actual": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "pass": true
+        },
+        {
+          "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+          "expected": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+          "actual": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+          "pass": true
+        },
+        {
+          "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+          "expected": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+          "actual": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+          "pass": true
+        },
+        {
+          "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "pass": true
+        },
+        {
+          "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "expected": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "actual": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "pass": true
+        },
+        {
+          "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "pass": true
+        },
+        {
+          "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "pass": true
+        },
+        {
+          "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "pass": true
+        },
+        {
+          "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "expected": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "actual": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "pass": true
+        },
+        {
+          "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+          "kind": "additional_conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+          "expected": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "actual": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "pass": true
+        }
+      ]
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50,
+      "details": [
+        {
+          "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+          "slug": "lea-prac-frm-004-joint-venture-in-architecture",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+          "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+          "slug": "lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+          "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+          "slug": "lea-prac-frm-008-cpd-requirements-for-architects",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "matches": []
+    }
+  }
+}

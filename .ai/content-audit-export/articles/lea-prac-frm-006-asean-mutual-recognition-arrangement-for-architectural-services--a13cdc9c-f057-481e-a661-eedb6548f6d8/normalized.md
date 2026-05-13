@@ -1,86 +1,50 @@
-
+# ASEAN Mutual Recognition Arrangement for Architectural Services
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+For this local-first pass, treat ASEAN or APEC registry facts as recognition facts, not automatic Philippine practice authority. On a Philippine project, the source-backed answer still checks RA 9266 reciprocity, the temporary or special permit gate, and the Filipino counterpart requirement.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Frm 006 Asean Mutual Recognition Arrangement For Architectural Services** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## ASEAN Mutual Recognition Arrangement for Architectural Services
 ## Learning Goal
 
-After reading this article, you should be able to:
+After studying this article, you should be able to:
 
-- Explain the purpose and scope of the ASEAN Mutual Recognition Arrangement (MRA) on Architectural Services.
-- Describe the ASEAN Architect Register (AAR) and the qualification requirements for ASEAN Architect registration.
-- Identify the role of the ASEAN Architect Council (AAC) and the Philippine Monitoring Committee (AMCASP).
-- Distinguish the ASEAN MRA from reciprocity under RA 9266 Section 27 and temporary permits under Section 38.
+- Avoid treating ASEAN or APEC recognition as a substitute for Philippine practice authority.
+- Apply RA 9266 Section 38 to a foreign architect working on a project in the Philippines.
+- Recognize that the PRBoA temporary-permit application asks about ASEAN or APEC registry status while still applying the permit gate.
+- Distinguish recognition language from architect-of-record authority.
 
-### Overview and Scope
+## Philippine Practice Gate
 
-The ASEAN Mutual Recognition Arrangement (MRA) on Architectural Services was signed by ASEAN Economic Ministers on 20 November 2007, facilitating mobility of architectural professionals within ASEAN member countries. The MRA promotes adoption of best practices on standards of architectural education, professional practices, and professional qualifications across Southeast Asia. The Philippines participates through the Professional Regulatory Board of Architecture (PRBoA), which serves as the Professional Regulatory Authority under the agreement.
+The locally checked sources for this batch do not make regional recognition a standalone license to practice architecture in the Philippines. RA 9266 Section 38 remains the controlling Philippine gate for a foreign national who enters the Philippines to perform professional services as an architect or consultant on a project.
 
-The MRA creates the ASEAN Architect Register (AAR) for qualified professionals certified by their home country Professional Regulatory Authority (PRA). Architects meeting MRA criteria can register as ASEAN Architects (AA), enabling practice across participating member countries under mutually agreed terms. The agreement facilitates information exchange and collaborative standard-setting among ASEAN member countries while preserving local regulatory control over practice requirements.
+The foreign architect must secure a special or temporary permit from the Board, subject to Commission approval, before assuming architectural duties, functions, and responsibilities. The same practice pathway also requires association with a Filipino counterpart.
 
-### ASEAN Architect Qualification Requirements
+## ASEAN or APEC Registry Status in the Permit File
 
-To qualify for ASEAN Architect registration, an architect must first obtain certification from the Professional Regulatory Authority of their country of origin. The architect must hold no record of serious violations of technical, professional, or ethical standards in local and international practice. Compliance with requirements agreed upon by the ASEAN Architect Council (AAC) is essential, including architectural education and training standards.
+The PRBoA temporary-permit application asks whether the applicant has ASEAN or APEC registry status. The same form notes that the application may proceed even if the answer is no. This makes registry status relevant information, not the whole legal authority.
 
-ASEAN Architects must demonstrate continuing professional competence through ongoing development activities. Educational credentials must be recognized and accredited by the country of origin's higher education authority. The architect's practice history and professional record are evaluated for any disciplinary actions or ethical violations. The AAR maintains a registry of qualified ASEAN Architects, updated continuously as new members achieve certification or members' status changes.
+For LEA purposes, the safe answer is that ASEAN or APEC status may support recognition facts, but it does not remove the Philippine permit, reciprocity, and counterpart checks required by RA 9266 and PRBoA permit procedure.
 
-### The ASEAN Architect Council and Monitoring Mechanism
+## Architect of Record Boundary
 
-The ASEAN Architect Council (AAC) coordinates implementation of the MRA across member countries, establishing mutual standards and evaluating professional qualifications. Each member country nominates representatives to the AAC, including architects, government officials, and professional organization members. The Council develops guidelines for architectural education equivleancy, professional practice standards, and disciplinary procedures affecting ASEAN Architects.
+The PRBoA temporary-permit resolution permits a foreign architect with a temporary or special permit to act as consultant or collaborator within the permit limits. It does not make the foreign architect the architect of record. The architect-of-record role stays with the Filipino counterpart under the local practice framework.
 
-In the Philippines, the ASEAN Monitoring Committee on Architectural Services (AMCASP) was created to serve the Monitoring Committee functions. This committee oversees implementation of MRA provisions, reviews professional conduct of ASEAN Architects practicing in the Philippines, and addresses complaints regarding MRA member conduct. The committee reports to the AAC on implementation status and identifies any barriers to professional mobility or practice equality.
+This matters because exam choices often use regional recognition as if it were an automatic signing, sealing, or AOR privilege. Reject that shortcut unless the facts show the applicable Philippine authority pathway.
 
-### Implementation in the Philippines
+## Real World Scenario
 
-The Professional Regulatory Board of Architecture (PRBoA) prescribes and adopts rules and regulations for MRA implementation consistent with RA 9266. ASEAN Architects holding Philippine temporary or special permits may practice in the Philippines under conditions equivalent to those granted Filipino architects in their home countries. The Board ensures ASEAN Architects comply with Philippine architectural standards, ethical codes, and professional practice regulations.
+A Singapore-based architect presents an ASEAN or APEC credential during a proposal for a mixed-use project in Quezon City. The owner asks whether that credential allows the architect to act as Philippine architect of record. The source-safe response is no. The credential may be relevant in the permit application, but the project still needs the RA 9266 temporary or special permit analysis, reciprocity evidence where required, and a Filipino counterpart RLA who carries the local architect-of-record responsibility.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
-[/SLATECAMP_UI_BLOCK]
+## Exam Traps
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
-[/SLATECAMP_UI_BLOCK]
+- Treating regional recognition as a single ASEAN professional license.
+- Treating ASEAN or APEC registry status as a waiver of RA 9266 Section 38.
+- Treating foreign recognition as authority to become architect of record in the Philippines.
+- Forgetting that the PRBoA form asks about registry status but still runs the permit process.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="asean", section="ASEAN MRA - Recognition Arrangement"
-- Text: Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
-[/SLATECAMP_UI_BLOCK]
-
-ASEAN Architects practicing in the Philippines must maintain compliance with Philippine technical standards and building codes. Professional liability insurance coverage is required as for all architects in the Philippines. The architect-of-record designation applies to ASEAN Architects, establishing responsibility for all documents issued under their authority. ASEAN Architect status in the Philippines does not exempt practitioners from normal professional registration and permit procedures; it establishes recognition of equivalent qualifications.
-
-### Comparison to Standard Foreign Practice Authorization
-
-ASEAN Architect status differs from standard foreign temporary permits in several respects. ASEAN Architects receive enhanced recognition of equivalent qualifications, potentially facilitating permit approval processes. The MRA establishes mutual standards so equivalent training and experience are acknowledged across member countries. However, ASEAN Architects still must comply with Philippine-specific regulations regarding Filipino counterparts, professional licensing, and local practice requirements.
-
-Standard foreign temporary permits remain available for non-ASEAN architects and for ASEAN professionals in countries without active MRA implementation. The MRA does not eliminate national licensing requirements but rather recognizes mutual equivleancy. ASEAN Architects may still be required to work with Filipino counterparts on projects governed by local procurement laws. The fundamental requirement that foreign architects work under local supervision remains unchanged, though the MRA facilitates professional recognition and mobility.
-
----
-
-
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-frm-006-asean-mutual--0", type="image", caption="ASEAN Architect Registration — MRA Process Flowchart", description="Flowchart showing ASEAN MRA qualification pathway: National certification → ASEAN Architect Register application → AAC evaluation → ASEAN Architect designation → Practice rights in member countries. Side panel shows ASEAN member countries and Philippine Monitoring Committee (AMCASP) role. Requirements checklist for AA registration: education, experience, ethical record."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
-- [Sole Proprietorship](lea-prac-frm-001)
-- [Partnership](lea-prac-frm-002)
-- [Corporate Practice](lea-prac-frm-003)
-- [Joint Venture](lea-prac-frm-004)
 - [Foreign Architects](lea-prac-frm-005)
-- [ASEAN MRA](lea-prac-frm-006)
-- [CPD Requirements](lea-prac-frm-008)
+- [Reciprocity Principles](lea-prac-frm-007)
+- [Joint Venture](lea-prac-frm-004)
 - [RA 9266 Legal Framework](lea-prac-law-001)
-- [Government Procurement](lea-prac-frm-012)
-- [Environmental Laws](lea-prac-frm-017)

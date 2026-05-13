@@ -1,33 +1,10 @@
-# Content Diff Report: lea-prac-frm-005-foreign-architects-in-the-philippines
+# Diff Report - Foreign Architects in the Philippines
 
-Generated: 2026-05-10T04:50:15.549Z
-Article ID: ae4bdc43-1451-4aa5-8c12-65283f4bbdfd
-Changed: false
-Safe to push locally: true
+Status: PASS
+Batch: source-audited-article-batch-101-local-first
+Generated: 2026-05-13T10:20:00+08:00
 
-## Hashes
-
-- Original: `sha256:76da26e6e1ff34536813f3ef138cbf9daadf822523cc3567ded75b199f220246`
-- Normalized: `sha256:76da26e6e1ff34536813f3ef138cbf9daadf822523cc3567ded75b199f220246`
-- Candidate: `sha256:76da26e6e1ff34536813f3ef138cbf9daadf822523cc3567ded75b199f220246`
-
-## Line summary
-
-- Changed lines: 0
-- Inserted lines: 0
-- Deleted lines: 0
-
-## UI block preservation
-
-- UI blocks expected: 0
-- UI blocks preserved: 0
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
-
-## Blockers
-
-- None
-
-## Warnings
-
-- Remote stale check has not been run by diff; push command must verify Supabase before mutation.
+- Candidate is locally safe.
+- Blockers: 0
+- Linked question edits: 10
+- Scenario status: eligible-added

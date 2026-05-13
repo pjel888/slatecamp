@@ -2,66 +2,77 @@
   "question_id": "55803950-4023-4f50-be30-c69321b3a809",
   "baseline_hash": "sha256:4f7a2a27f997a0616c698ebae7d11964455d5cadb431f7e1c6c67edcd710f11d",
   "action": "replace",
-  "reason": "source-audited-article-batch-019-local-first aligned linked question with audited local RA 9266 IRR and UAP SPP source language for lea-prac-frm-004-joint-venture-in-architecture.",
-  "approved_by": "codex-local-source-audit-batch-019",
-  "approved_at": "2026-05-10T23:59:00.000+08:00",
+  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-004-joint-venture-in-architecture.",
+  "approved_by": "codex-local-source-audit-batch-101",
+  "approved_at": "2026-05-13T10:20:00+08:00",
   "source_audit_support": {
     "parent_article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
     "parent_article_slug": "lea-prac-frm-004-joint-venture-in-architecture",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "RA 9266 IRR Secs. 3(15), 38; UAP SPP 19.2, 19.6, 27.1",
+    "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
     "checked_markdown_lines": [
-      "raw markdown lines 123-126",
-      "raw markdown lines 1639-1648",
-      "raw markdown lines 807-824; UAP raw markdown lines 128-132, 293-297",
-      "raw markdown lines 1854-1857"
+      "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824",
+      "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
     ],
     "checked_sources": [
       {
-        "source_id": "ra-9266-irr-architecture-act-2004",
-        "label": "RA 9266 IRR Architecture Act of 2004",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
         "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-ra-9266-irr",
         "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
       },
       {
-        "source_id": "uap-standards-of-professional-practice",
-        "label": "UAP Document Standards of Professional Practice",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-ra-9266-irr",
+        "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+      },
+      {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-uap-standards-of-professional-practice",
+        "locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-uap-standards-of-professional-practice",
         "locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+    "local_source_safe_action": "Batch 101 rewrote the linked question using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-101-local-first"
   },
   "proposed": {
-    "text": "Which is a source-backed application of a joint venture or association in architectural practice?",
+    "text": "A collaboration between two firms is limited to one transport terminal project. What fact best supports classifying it as a joint venture?",
     "options": [
       {
         "id": "a",
-        "text": "A permanent corporation formed without RLAs."
+        "text": "It has a shared logo"
       },
       {
         "id": "b",
-        "text": "A project-based formal grouping for specific work requiring special or technical skills and expertise."
+        "text": "The arrangement is project-based"
       },
       {
         "id": "c",
-        "text": "A DTI sole proprietorship with no other participants."
+        "text": "It has one private client"
       },
       {
         "id": "d",
-        "text": "A way for foreign architects to avoid permits."
+        "text": "It uses one email address"
       }
     ],
     "correct_option_id": "b",
-    "rationale": "RA 9266 frames the arrangement as project-based, and the UAP SPP describes a consulting agreement for specific work or joint venture requiring special or technical skills.",
-    "explanation": "RA 9266 frames the arrangement as project-based, and the UAP SPP describes a consulting agreement for specific work or joint venture requiring special or technical skills.",
-    "code_citation": "RA 9266 IRR Secs. 3(15), 38; UAP SPP 19.2, 19.6, 27.1"
+    "rationale": "The source-backed distinction is project basis, not branding or administrative convenience.",
+    "explanation": "Batch 101 source-audited rewrite: The source-backed distinction is project basis, not branding or administrative convenience.",
+    "code_citation": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 101"
+    ],
+    "model_id": "BATCH-101-lea-prac-frm-004-joint-venture-in-architecture-002"
   }
 }

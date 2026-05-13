@@ -1,0 +1,237 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-101-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T10:20:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_production_db_mutation_no_main_merge",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "target": {
+    "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+    "slug": "lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services",
+    "title": "ASEAN Mutual Recognition Arrangement for Architectural Services",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/candidate.md",
+    "candidate_sha256": "sha256:55a04967f7fffa333f0b386c82a8d136593850138d135b1a694653a9aa0fb3f2",
+    "normalized_sha256": "sha256:55a04967f7fffa333f0b386c82a8d136593850138d135b1a694653a9aa0fb3f2",
+    "linked_questions_sha256": "sha256:e5e6c1e3aa38b4637b95569a6aabb6859cbfc33f862dc0d8ba376de38fc30973",
+    "sources_sha256": "sha256:e6026513c35170446e553569b91bab037e5f611d856f800df03fa1909613b6f8"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "5956c799-0747-450a-a396-4764d5eb2c93",
+      "afc98bdc-30b4-497b-85a4-9931e7c34ed6",
+      "64ce72c7-62d6-4969-b8ab-16409dd34ea7",
+      "074782b5-9b01-4bd7-82c4-112cd5fe3f5b",
+      "c3459509-ec68-4d54-9e8e-4bb8cf5a36c1",
+      "3218bb25-c953-42ee-9133-c8ff49db4a05",
+      "151b2f8a-f828-4e00-a062-59902510e01a",
+      "16f14263-b5c6-4fe2-9540-40b9a28b2d11",
+      "2449b969-ed4b-483c-925f-604484afcfb4",
+      "51d64838-d0e5-4899-83fc-2db2773cb321"
+    ],
+    "real_world_scenario_status": "eligible-added"
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/5956c799-0747-450a-a396-4764d5eb2c93.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/afc98bdc-30b4-497b-85a4-9931e7c34ed6.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/64ce72c7-62d6-4969-b8ab-16409dd34ea7.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/074782b5-9b01-4bd7-82c4-112cd5fe3f5b.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/c3459509-ec68-4d54-9e8e-4bb8cf5a36c1.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/3218bb25-c953-42ee-9133-c8ff49db4a05.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/151b2f8a-f828-4e00-a062-59902510e01a.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/16f14263-b5c6-4fe2-9540-40b9a28b2d11.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/2449b969-ed4b-483c-925f-604484afcfb4.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits/51d64838-d0e5-4899-83fc-2db2773cb321.json"
+    ]
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-ra-9266-irr-section-38",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "implementing_rules",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 684-691, 782-824",
+      "checked_markdown_lines": [
+        "raw markdown lines 684-691, 782-824"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-prboa-temporary-permit-application",
+      "label": "PRBoA Resolution 03, series 2008 on Temporary Permits for Foreign Architects",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "board_resolution",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+      "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+      "conversion_sha256": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+      "checked_markdown_lines": [
+        "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-ra-9266-irr-section-38",
+        "label": "RA 9266 IRR Architecture Act of 2004",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "implementing_rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 684-691, 782-824",
+        "checked_markdown_lines": [
+          "raw markdown lines 684-691, 782-824"
+        ],
+        "local_source_checked": true
+      },
+      {
+        "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-prboa-temporary-permit-application",
+        "label": "PRBoA Resolution 03, series 2008 on Temporary Permits for Foreign Architects",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "board_resolution",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+        "conversion_sha256": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+        "checked_markdown_lines": [
+          "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "raw markdown lines 684-691, 782-824; refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+    "checked_markdown_lines": [
+      "raw markdown lines 684-691, 782-824",
+      "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-claim-01",
+      "claim_text": "RA 9266 Section 38 remains the Philippine practice gate for foreign architects performing services on Philippine projects.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; PRBoA Resolution 03, series 2008 on Temporary Permits for Foreign Architects",
+        "locator": "raw markdown lines 684-691, 782-824; refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "The application form asks about ASEAN or APEC registry status and may proceed if the answer is no.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-claim-02",
+      "claim_text": "The PRBoA temporary-permit application asks about ASEAN or APEC registry status but indicates the application may proceed if the answer is no.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; PRBoA Resolution 03, series 2008 on Temporary Permits for Foreign Architects",
+        "locator": "raw markdown lines 684-691, 782-824; refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "The application form asks about ASEAN or APEC registry status and may proceed if the answer is no.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-claim-03",
+      "claim_text": "The PRBoA temporary-permit resolution keeps the architect-of-record role with the Filipino counterpart.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; PRBoA Resolution 03, series 2008 on Temporary Permits for Foreign Architects",
+        "locator": "raw markdown lines 684-691, 782-824; refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "The application form asks about ASEAN or APEC registry status and may proceed if the answer is no.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64"
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Full ASEAN MRA date, council, register, and monitoring-committee details were not restored because no local raw primary MRA source was found in this batch source layer.",
+    "Final depth audit should restore or replace those details only after a local primary ASEAN MRA source is added."
+  ],
+  "question_repair_policy": {
+    "action": "refresh_linked_question_edits_with_batch_101_source_safe_metadata",
+    "source_safe_question_edits": 10,
+    "allowed_question_scope": "Only concepts directly supported by the checked local source lines are used."
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "note": "Batch 101 added a source-safe Real World Scenario grounded in the checked local source lines."
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false,
+    "blockers": []
+  }
+}

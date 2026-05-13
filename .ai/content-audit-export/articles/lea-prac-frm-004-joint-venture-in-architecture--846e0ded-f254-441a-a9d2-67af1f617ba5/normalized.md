@@ -1,41 +1,46 @@
+# Joint Venture in Architecture
+
 ## Board Exam Quick Check
 
-For joint-venture questions, first identify whether the grouping is project-based. Then check whether a foreign architect is involved, because foreign participation triggers the temporary/special permit and Filipino counterpart rules.
-
-## Joint Venture in Architecture
+For joint-venture questions, ask three things in order: is the arrangement project-based, are the participants architects or architectural firms, and is any foreign architect involved. The foreign-architect fact changes the answer because RA 9266 adds a temporary or special permit and Filipino counterpart gate.
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
-- Define the RA 9266 joint-venture concept as project-based association.
+- Define a joint venture as a project-based association under the RA 9266 IRR.
 - Distinguish a project-based grouping from a permanent partnership or corporation.
-- Apply the Filipino counterpart and temporary/special permit rule when foreign architects are involved.
-- Keep agreement mechanics separate from the source-backed professional-practice requirements.
+- Apply the Filipino counterpart and temporary or special permit rules when a foreign architect is involved.
+- Explain why a joint venture does not erase professional responsibility.
 
-### Definition and Project Basis
+## Source-Backed Definition
 
-RA 9266 IRR defines an association as any formal grouping of two or more architects or architectural firms working in joint venture on a project basis. The key exam words are formal grouping, two or more architects or architectural firms, and project basis.
+The RA 9266 IRR defines an association as a formal grouping of two or more architects or architectural firms working in joint venture on a project basis. The exam signal is the project basis. A joint venture is not tested as a permanent corporate form just because two firms collaborate.
 
-The UAP SPP uses related language for consortium or association: a coalition of Filipino professional consultants or registered architectural firms, or collaboration with foreign professional consultants or firms authorized to render consulting services. The source does not make every joint venture a permanent professional entity; it frames the arrangement around a specific work, study, or joint venture requiring special or technical skills and expertise.
+The UAP standards use related consortium or association language for professional consulting work. They allow collaboration among Filipino professional consultants or registered architectural firms, and collaboration with foreign professional consultants or firms when those foreign participants are authorized to render consulting services.
 
-### Agreement and Governance
+## Agreement and Authority
 
-A joint venture should be documented by a consulting agreement or similar binding covenant with the client and participating professionals. The agreement should state the work, roles, authority, fees, document custody, continuity plan, and dispute process.
+A joint-venture agreement should identify the project, roles, signing authority, fees, document custody, continuity procedures, and dispute process. These controls help the team work, but they do not replace the professional authority required by RA 9266.
 
-Those agreement details are important practice controls, but they are not replacements for RA 9266 registration and permit requirements. Each participating architect or firm still needs the professional authority required for the services it performs.
+Each participant must have the authority required for the services it performs. If a foreign architect is involved on Philippine soil, the project team must check the temporary or special permit gate and the Filipino counterpart requirement before letting the foreign participant act as architect or architectural consultant.
 
-### Foreign Architects and the Filipino Counterpart
+## Filipino Counterpart and Responsibility
 
-When a foreign architect or foreign firm works on a project on Philippine soil, RA 9266 Section 38 is the controlling pathway unless the person is already registered and licensed in the Philippines. The foreign national must secure a special or temporary permit from the Board, subject to Commission approval, before assuming duties as architect or consultant for the project.
+When a foreign architect or foreign firm participates in a Philippine project, the safer LEA answer is not "foreign expertise is enough." RA 9266 Section 38 requires a special or temporary permit before the foreign national assumes architectural duties, functions, and responsibilities. The UAP standards also require collaboration with a local Filipino counterpart registered and licensed architect for foreign competition or practice scenarios.
 
-The source also requires a Filipino counterpart. UAP SPP states that a foreign architect as competitor or practitioner must secure the temporary/special permit, secure the relevant DoLE work permit, and work in collaboration with a local Filipino counterpart RLA who assumes the required professional responsibilities and civil liabilities.
+The UAP standards state that individuals, partners, firms, corporations, consortiums, and joint ventures that render professional architectural consulting services remain professionally responsible before the State and civilly liable before the State, the public, and the client.
 
-### Responsibility
+## Real World Scenario
 
-UAP SPP states that any individual, partner, firm, corporation, consortium, or joint venture engaging in professional architectural consulting services is professionally responsible before the State and civilly liable before the State, the public, and the client for the conduct and performance of its services.
+A Filipino firm and a foreign design studio are invited to deliver a civic complex. The team may describe the collaboration as a joint venture, but the label does not settle the legal gate. The foreign architect still needs the required temporary or special permit before performing architectural duties, and the Filipino counterpart RLA must carry the local professional responsibility expected under RA 9266 and the UAP standards. The source-safe project response is to document roles, permit timing, counterpart duties, and liability before technical work appears on permit or construction documents.
 
-For LEA items, this supports a clear answer: a joint venture does not erase professional responsibility. The source-safe analysis asks who is authorized, what role the agreement assigns, whether a foreign participant has the required permit, and which Filipino counterpart RLA is responsible locally.
+## Exam Traps
+
+- Treating every collaboration as a permanent partnership or corporation.
+- Treating a foreign architect's home-country license as Philippine practice authority.
+- Treating the joint-venture agreement as a substitute for registration, permit, or counterpart requirements.
+- Treating shared branding as shared legal authority without checking who is authorized to practice.
 
 ## Related Articles
 
@@ -43,4 +48,4 @@ For LEA items, this supports a clear answer: a joint venture does not erase prof
 - [Partnership](lea-prac-frm-002)
 - [Corporate Practice](lea-prac-frm-003)
 - [Foreign Architects](lea-prac-frm-005)
-- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Reciprocity Principles](lea-prac-frm-007)

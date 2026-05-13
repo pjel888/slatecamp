@@ -1,0 +1,78 @@
+{
+  "question_id": "c3459509-ec68-4d54-9e8e-4bb8cf5a36c1",
+  "baseline_hash": "sha256:d3f8bbe3874e429601e9a7e9cacc9bdcc9a69edacc2bc79f6aa391553f86e83f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services.",
+  "approved_by": "codex-local-source-audit-batch-101",
+  "approved_at": "2026-05-13T10:20:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+    "parent_article_slug": "lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "raw markdown lines 684-691, 782-824; refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+    "checked_markdown_lines": [
+      "raw markdown lines 684-691, 782-824",
+      "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-ra-9266-irr-section-38",
+        "locator": "raw markdown lines 684-691, 782-824"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-ra-9266-irr-section-38",
+        "locator": "raw markdown lines 684-691, 782-824"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-prboa-temporary-permit-application",
+        "locator": "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+        "sha256": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+        "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-prboa-temporary-permit-application",
+        "locator": "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403"
+      }
+    ],
+    "local_source_safe_action": "Batch 101 rewrote the linked question using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-101-local-first"
+  },
+  "proposed": {
+    "text": "What architect-of-record rule should be applied to a foreign architect with a temporary or special permit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The foreign architect automatically becomes AOR"
+      },
+      {
+        "id": "b",
+        "text": "The foreign architect may consult within permit limits, but the Filipino counterpart remains architect of record"
+      },
+      {
+        "id": "c",
+        "text": "The project owner becomes AOR"
+      },
+      {
+        "id": "d",
+        "text": "No AOR is needed when a regional credential exists"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "The PRBoA temporary-permit source keeps AOR authority with the Filipino counterpart.",
+    "explanation": "Batch 101 source-audited rewrite: The PRBoA temporary-permit source keeps AOR authority with the Filipino counterpart.",
+    "code_citation": "raw markdown lines 684-691, 782-824; refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 101"
+    ],
+    "model_id": "BATCH-101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-005"
+  }
+}

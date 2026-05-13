@@ -1,0 +1,71 @@
+{
+  "question_id": "dc998947-7756-4c0a-b747-a726eed49e18",
+  "baseline_hash": "sha256:62ebb650a0ef0369f755d399882b6d76df1f624541cb02fd75815131bb5c5476",
+  "action": "replace",
+  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-008-cpd-requirements-for-architects.",
+  "approved_by": "codex-local-source-audit-batch-101",
+  "approved_at": "2026-05-13T10:20:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+    "parent_article_slug": "lea-prac-frm-008-cpd-requirements-for-architects",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "raw markdown lines 117-119, 221-223, 672-676; refined markdown lines 544-548, 582-584, 636-644, 668-672",
+    "checked_markdown_lines": [
+      "raw markdown lines 117-119, 221-223, 672-676; refined markdown lines 544-548, 582-584, 636-644, 668-672"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch101-lea-prac-frm-008-cpd-requirements-for-architects-ra-9266-irr-cpd-and-pic",
+        "locator": "raw markdown lines 117-119, 221-223, 672-676; refined markdown lines 544-548, 582-584, 636-644, 668-672"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch101-lea-prac-frm-008-cpd-requirements-for-architects-ra-9266-irr-cpd-and-pic",
+        "locator": "raw markdown lines 117-119, 221-223, 672-676; refined markdown lines 544-548, 582-584, 636-644, 668-672"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "batch101-lea-prac-frm-008-cpd-requirements-for-architects-ra-9266-irr-cpd-and-pic",
+        "locator": "raw markdown lines 117-119, 221-223, 672-676; refined markdown lines 544-548, 582-584, 636-644, 668-672"
+      }
+    ],
+    "local_source_safe_action": "Batch 101 rewrote the linked question using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-101-local-first"
+  },
+  "proposed": {
+    "text": "What information must architects indicate on documents they sign, use, or issue in practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the project budget"
+      },
+      {
+        "id": "b",
+        "text": "COR, PIC, and PTR details"
+      },
+      {
+        "id": "c",
+        "text": "Only the client address"
+      },
+      {
+        "id": "d",
+        "text": "Only the contractor license"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "The checked IRR source requires COR, PIC, and PTR details on practice documents.",
+    "explanation": "Batch 101 source-audited rewrite: The checked IRR source requires COR, PIC, and PTR details on practice documents.",
+    "code_citation": "raw markdown lines 117-119, 221-223, 672-676; refined markdown lines 544-548, 582-584, 636-644, 668-672",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 101"
+    ],
+    "model_id": "BATCH-101-lea-prac-frm-008-cpd-requirements-for-architects-006"
+  }
+}

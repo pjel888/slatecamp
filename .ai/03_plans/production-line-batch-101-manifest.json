@@ -1,0 +1,294 @@
+{
+  "batch_number": "101",
+  "batch_id": "source-audited-article-batch-101-local-first",
+  "manifest_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "reserved_at": "2026-05-13T10:20:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "fc48b8685b",
+  "previous_batch": "100",
+  "selection_rule": "Continue after accepted Batch 100 with the next five sourceable professional-practice form clusters, FRM-004 through FRM-008. Process exactly five article clusters with linked questions and local raw source families.",
+  "inherited_blocker_status": "Batch 100 accepted at commit fc48b8685 with blockers=0; Batch 101 starts local-first only with no Supabase push, deploy, production DB mutation, or main merge.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS_CURRENT_SERIAL_SET_WITH_HISTORICAL_OVERLAP_RECORDED",
+    "current_serial_source_audited_batches_checked": [
+      "087",
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094",
+      "095",
+      "096",
+      "097",
+      "098",
+      "099",
+      "100"
+    ],
+    "selected_article_count": 5,
+    "selected_ids_found_in_current_serial_accepted_selected_articles": [],
+    "historical_overlap_recorded_separately": true,
+    "historical_local_first_or_reaudit_artifacts": {
+      "846e0ded-f254-441a-a9d2-67af1f617ba5": [
+        "Batch 019 local-first source-audited repair artifact"
+      ],
+      "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd": [
+        "2026-05-10 partial local-first source audit; Batch 101 completed all 10 question edits"
+      ],
+      "a13cdc9c-f057-481e-a661-eedb6548f6d8": [],
+      "e51e9a56-7251-460e-8d00-5feaa3884f0a": [
+        "Batch 019 local-first source-audited repair artifact"
+      ],
+      "b071e0d5-f3ab-4404-9347-749caea186f0": []
+    }
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "slug": "lea-prac-frm-004-joint-venture-in-architecture"
+    },
+    {
+      "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines"
+    },
+    {
+      "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+      "slug": "lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services"
+    },
+    {
+      "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+      "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice"
+    },
+    {
+      "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+      "slug": "lea-prac-frm-008-cpd-requirements-for-architects"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "question_edits_existing_before_repair": 26,
+    "stale_compose_error_files_removed": 0,
+    "scenarios_expected": 5
+  },
+  "article_clusters": [
+    {
+      "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "slug": "lea-prac-frm-004-joint-venture-in-architecture",
+      "title": "Joint Venture in Architecture",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "project-based joint venture, foreign-architect gate, Filipino counterpart, and professional responsibility",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+      "source_locators": [
+        {
+          "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-ra-9266-irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+          ]
+        },
+        {
+          "source_id": "batch101-lea-prac-frm-004-joint-venture-in-architecture-uap-standards-of-professional-practice",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 019 local-first source-audited repair artifact"
+        ]
+      },
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+      "title": "Foreign Architects in the Philippines",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "foreign architect definition, temporary/special permit, Filipino counterpart, and architect-of-record boundary",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 6,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004; PRBoA temporary permit resolution; UAP Document Standards of Professional Practice",
+      "source_locators": [
+        {
+          "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-ra-9266-irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 672-691, 782-824"
+          ]
+        },
+        {
+          "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-prboa-temporary-permits",
+          "label": "PRBoA Resolution 03, series 2008 on Temporary Permits for Foreign Architects",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+          "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+          "conversion_sha256": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+          "checked_markdown_lines": [
+            "refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403"
+          ]
+        },
+        {
+          "source_id": "batch101-lea-prac-frm-005-foreign-architects-in-the-philippines-uap-standards-foreign-counterpart",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 128-132, 293-297, 1854-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "2026-05-10 partial local-first source audit; Batch 101 completed all 10 question edits"
+        ]
+      },
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+      "slug": "lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services",
+      "title": "ASEAN Mutual Recognition Arrangement for Architectural Services",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "Philippine practice gate for ASEAN/APEC registry scenarios using local RA 9266 and PRBoA temporary-permit sources",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 0,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services--a13cdc9c-f057-481e-a661-eedb6548f6d8/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004; PRBoA temporary permit resolution",
+      "source_locators": [
+        {
+          "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-ra-9266-irr-section-38",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 684-691, 782-824"
+          ]
+        },
+        {
+          "source_id": "batch101-lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services-prboa-temporary-permit-application",
+          "label": "PRBoA Resolution 03, series 2008 on Temporary Permits for Foreign Architects",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+          "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.md",
+          "conversion_sha256": "sha256:6b3b65067640dd72d58e96c10165c22afd4030f4f3cbb4493775fd48c3c8ff9e",
+          "checked_markdown_lines": [
+            "refined markdown lines 68-83, 108-123, 140-152, 287-290, 317, 393-403"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": []
+      },
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION final-depth candidate: full ASEAN MRA institutional details need a local primary MRA source before restoration."
+    },
+    {
+      "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+      "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
+      "title": "Reciprocity Principles in Architectural Practice",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "Section 27 reciprocity for licensure-exam access versus Section 38 project-specific temporary permit",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+      "source_locators": [
+        {
+          "source_id": "batch101-lea-prac-frm-007-reciprocity-principles-in-architectural-practice-ra-9266-irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+          ]
+        },
+        {
+          "source_id": "batch101-lea-prac-frm-007-reciprocity-principles-in-architectural-practice-uap-standards-of-professional-practice",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 019 local-first source-audited repair artifact"
+        ]
+      },
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+      "slug": "lea-prac-frm-008-cpd-requirements-for-architects",
+      "title": "CPD Requirements for Architects",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "RA 9266 IRR-supported CPD definition, provider accreditation, PIC renewal, and practice authority",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 0,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-008-cpd-requirements-for-architects--b071e0d5-f3ab-4404-9347-749caea186f0",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-008-cpd-requirements-for-architects--b071e0d5-f3ab-4404-9347-749caea186f0/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004",
+      "source_locators": [
+        {
+          "source_id": "batch101-lea-prac-frm-008-cpd-requirements-for-architects-ra-9266-irr-cpd-and-pic",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 117-119, 221-223, 672-676; refined markdown lines 544-548, 582-584, 636-644, 668-672"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": []
+      },
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION final-depth candidate: exact CPD credit-unit schedules and CPD Act details need a local raw primary CPD source before restoration."
+    }
+  ],
+  "source_hash_gate": {
+    "checks": 21,
+    "failures": 0
+  }
+}

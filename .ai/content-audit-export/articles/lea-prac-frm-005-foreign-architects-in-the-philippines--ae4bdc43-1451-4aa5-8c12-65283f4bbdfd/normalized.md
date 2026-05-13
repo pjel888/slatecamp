@@ -1,64 +1,51 @@
-# RA 9266 Foreign Architect and Temporary Permit Gate
+# Foreign Architects in the Philippines
 
-## Learning objective
+## Board Exam Quick Check
 
-Given a professional-practice question prompt involving a foreign architect, decide whether the person may lawfully perform architectural services in the Philippines and which RA 9266 IRR requirement controls the answer. The safe exam method is to separate definition, association, and permit authority before accepting any answer that sounds administratively convenient.
+For foreign-architect questions, do not stop at home-country licensure. The exam gate is whether the foreign national may perform architectural services in the Philippines, and that gate runs through RA 9266, the Board and Commission temporary or special permit, and the Filipino counterpart requirement.
 
-## Governing source
+## Learning Goal
 
-Use the RA 9266 IRR, especially Section 3 for definitions and Section 38 for temporary or special permits. The definition items used here are from PDF p.5, and the permit gate is from PDF p.20. These are legal-process rules, not design-preference rules.
+After studying this article, you should be able to:
 
-## First gate: definition of foreign architect
+- Identify who counts as a foreign architect under the RA 9266 IRR.
+- Apply the temporary or special permit requirement before practice duties are assumed.
+- Explain the Filipino counterpart requirement.
+- Distinguish consulting participation from the architect-of-record role.
 
-The RA 9266 IRR defines a foreign architect as an architect who is not a Filipino citizen and is not registered and licensed in the Philippines, but who is duly registered and licensed in the architect’s home country. The definition therefore has two sides. It does not mean “any foreign consultant,” and it does not mean “someone with Philippine registration.” It means the person is outside Philippine registration but has home-country architectural licensure.
+## Definition
 
-Source: RA 9266 IRR, Section 3, Item 30, PDF p.5.
+The RA 9266 IRR defines a foreign architect as an architect who is not a Filipino citizen, is not registered and licensed in the Philippines, but is duly registered and licensed in the architect's home country. Home-country licensure matters, but it is only one part of the Philippine practice analysis.
 
-For exam purposes, this matters because many answer choices hide the issue behind broad words such as consultant, designer, or employee. The label is not enough. If the facts describe architectural services in the Philippines, and the person is a foreign national not registered and licensed here, the temporary/special-permit analysis becomes relevant.
+The same IRR defines the Filipino counterpart as the local Philippine architect, partnership, or corporation that must work in association with the foreign architect, partnership, or corporation on a project on Philippine soil.
 
-## Second gate: Filipino counterpart
+## Temporary or Special Permit Gate
 
-The IRR also defines the Filipino counterpart as the local Philippine architect, partnership, or corporation that must work in association with the foreign architect, partnership, or corporation on a project on Philippine soil. This is not decorative wording. It tells you that the foreign architect scenario is not solved simply by saying that the person is qualified abroad.
+RA 9266 Section 38 requires foreign nationals who enter the Philippines to perform professional services as architects or consultants to secure a special or temporary permit from the Board, subject to Commission approval, before assuming duties, functions, and responsibilities as architects or consultants.
 
-Source: RA 9266 IRR, Section 3, Item 31, PDF p.5.
+The PRBoA temporary-permit resolution makes the permit individual, project-specific, and limited in period. It is issued to the individual foreign architect, not to the foreign firm as a blanket authority for every project.
 
-A question prompt may mention a foreign firm, an international design consultant, or a foreign architect whose name appears on project materials. The Filipino-counterpart requirement is a signal that Philippine practice is being regulated through a local professional association structure, not through home-country licensure alone.
+## Filipino Counterpart and Architect of Record
 
-## Third gate: temporary or special permit
+The PRBoA resolution requires the application to identify the Filipino counterpart architect and includes current professional credentials in the supporting materials. It also states that the foreign architect with a temporary or special permit may act as consultant or architectural and interior consulting collaborator, but cannot be the architect of record. The architect-of-record role remains with the Filipino counterpart.
 
-Section 38 is the controlling permit gate. It states that foreign nationals who have entered the Philippines to perform professional services as architects or consultants in foreign-funded or assisted government projects, or who are employed or engaged by Filipino or foreign contractors or private firms, must secure a special/temporary permit from the Board, subject to approval of the Commission, before assuming the duties, functions, and responsibilities as architects or consultants.
+The foreign architect with a permit must comply with Philippine laws, RA 9266, the IRR, the Code of Ethical Conduct, and Standards of Professional Practice. The Filipino counterpart must help educate and advise the foreign architect on those local requirements.
 
-Source: RA 9266 IRR, Section 38, PDF p.20.
+## Real World Scenario
 
-The phrase “before assuming” is important. A later permit is not the same as authority before practice. A contract, invitation, employment arrangement, or foreign license does not erase the requirement. If the question asks what must be secured before the foreign national assumes the architectural consultant role, the answer is the special/temporary permit from the Board subject to Commission approval.
+A Manila developer wants a foreign hotel designer to be named as architect on permit drawings. The source-safe answer is not simply yes because the designer is licensed abroad. First, decide whether the person is a foreign architect under the IRR. Second, check whether a temporary or special permit has been secured before duties are assumed. Third, route the project through a Filipino counterpart RLA who carries the architect-of-record role. The project can use foreign expertise, but it cannot use that expertise to bypass the Philippine practice gate.
 
-## Name on documents can count as practice
+## Exam Traps
 
-Section 38 also treats certain public project representations as practice. The cited provision states that a foreign national or foreign firm whose name or company name, with titles such as architect, architectural consultant, design consultant, consultant, or designer, appears on architectural plans, specifications, and related construction documents for building permits, licenses, government authority clearances, actual building construction in the Philippines, advertisements, or billboards, shall be deemed practicing architecture in the Philippines.
+- Treating home-country licensure as Philippine practice authority.
+- Treating the permit as a firm-wide or unlimited authorization.
+- Treating a foreign consultant as architect of record.
+- Treating the Filipino counterpart as optional professional courtesy.
+- Treating a name on technical documents as harmless if it implies practice.
 
-Source: RA 9266 IRR, Section 38, PDF p.20.
+## Related Articles
 
-This is a frequent trap. A problem statement may avoid saying “the foreign architect designed the building” and instead say that the foreign consultant’s name appears on the plans or permit materials. Under the cited wording, that is not harmless marketing language if it places the person or firm in the role described by Section 38.
-
-## Fee and authority are separate issues
-
-Section 36 of the RA 9266 IRR also states that it is unlawful for any unregistered person to collect a fee for architectural services except as an employee collecting a fee as representative of a Registered Architect.
-
-Source: RA 9266 IRR, Section 36, PDF p.20.
-
-Do not confuse this with the Section 38 permit gate. Section 36 helps you reject the idea that unregistered practice becomes valid simply because the person is paid through an arrangement. Section 38 answers the foreign-national permit question. Both point to the same exam habit: architectural practice authority is controlled by statute and IRR requirements, not by contract wording alone.
-
-## Worked application
-
-If a foreign architect is licensed in the architect’s home country, has been invited by a private developer in Manila, and will act as architectural consultant on Philippine project documents, the home-country license answers only one part of the facts. The person must still work through the required Philippine framework and must secure the special/temporary permit before assuming the duties. If the option says “allowed because the architect is licensed abroad,” it is incomplete. If the option says “allowed after securing the special/temporary permit from the Board, subject to Commission approval,” it tracks Section 38.
-
-## Real-World Application
-
-Suppose a Cebu waterfront hotel owner hires a well-known foreign design consultant to prepare the brand concept for a renovation. During a coordination meeting, the marketing team places the consultant’s name on the presentation cover and asks whether the same name can appear on permit drawings because it will impress investors. Under RA 9266 practice logic, the architect of record cannot treat that as harmless branding. The first question is whether the person is a foreign architect within the meaning discussed in the article. The second question is whether a Filipino counterpart is properly involved. The third question is whether the required temporary or special permit gate has been cleared before the foreign architect performs acts that count as practice in the Philippines. The safe professional response is not to erase the consultant from collaboration, but to document roles, route the statutory practice functions through the proper Philippine professional authority, and prevent names on technical documents from implying unauthorized practice. The practical outcome is a project team that can use foreign design input without turning the permit set into an RA 9266 problem.
-
-## Exam traps
-
-- **Trap 1: foreign license equals Philippine practice authority.** It does not.
-- **Trap 2: Filipino counterpart is treated as optional networking.** The definition says the counterpart must work in association with the foreign architect or firm on Philippine soil.
-- **Trap 3: name on plans is treated as mere publicity.** Section 38 can treat that appearance as practice.
-- **Trap 4: permit timing is ignored.** The permit is required before assuming duties, functions, and responsibilities.
+- [Joint Venture](lea-prac-frm-004)
+- [ASEAN MRA](lea-prac-frm-006)
+- [Reciprocity Principles](lea-prac-frm-007)
+- [RA 9266 Legal Framework](lea-prac-law-001)
