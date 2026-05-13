@@ -1,32 +1,31 @@
 {
   "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:ec269e8a41a4386b37659e9063ed695ccf6c414f3f6545fea5a5e51fc6518c2e",
   "source_count": 2,
   "sources": [
     {
       "source_id": "uap-document-301-general-conditions-local",
       "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
-      "label": "UAP Document 301 - General Conditions for construction contract documents",
+      "label": "UAP Document 301 - General Conditions local PDF",
       "url": null,
       "source_type": "professional_practice_contract_pdf",
-      "description": "Local raw PDF and refined markdown checked for UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090.",
+      "description": "Verified from vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf during source-audited-article-batch-107-local-first. Local construction-contract source for UAP Document 301 definitions, architect status, interpretation, payment certification, bonds, suspension/termination, and time limits.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-11T15:30:00.000+08:00",
-      "updated_at": "2026-05-11T15:30:00.000+08:00",
+      "created_at": "2026-05-13T13:36:34.139+08:00",
+      "updated_at": "2026-05-13T13:36:34.139+08:00",
       "local_source_audit": {
-        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "authority": "United Architects of the Philippines / construction contract general conditions source",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
         "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
         "checked_markdown_lines": [
-          "UAP Document 301 lines 472-545",
-          "UAP Document 301 lines 923-998",
-          "UAP Document 301 lines 1019-1051",
-          "UAP Document 301 lines 1062-1090"
+          "UAP Document 301 lines 472-545 definitions, contract documents, discrepancy handling, and drawing/specification rules",
+          "UAP Document 301 lines 923-998 payment, substantial completion, bonds, insurance, and warranties",
+          "UAP Document 301 lines 1019-1051 disputes, architect status, and project representatives",
+          "UAP Document 301 lines 1062-1090 schedule of time limits"
         ],
         "local_source_checked": true
       }
@@ -34,28 +33,29 @@
     {
       "source_id": "ciap-document-102-private-construction-contract-local",
       "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
-      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction local PDF",
       "url": null,
       "source_type": "construction_contract_pdf",
-      "description": "Local raw PDF and refined markdown checked for CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820.",
+      "description": "Verified from vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf during source-audited-article-batch-107-local-first. Local CIAP cross-check source for private construction-contract definitions, document interpretation, suspension/termination, bonds, and warranty provisions.",
       "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-05-11T15:30:00.000+08:00",
-      "updated_at": "2026-05-11T15:30:00.000+08:00",
+      "created_at": "2026-05-13T13:36:34.139+08:00",
+      "updated_at": "2026-05-13T13:36:34.139+08:00",
       "local_source_audit": {
-        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "authority": "Construction Industry Authority of the Philippines / private construction contract source",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
         "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
         "checked_markdown_lines": [
-          "CIAP Document 102 lines 169-258",
-          "CIAP Document 102 lines 712-761",
-          "CIAP Document 102 lines 807-820"
+          "CIAP Document 102 lines 169-258 definitions, contract documents, interpretation rules, discrepancy reporting, and document priority",
+          "CIAP Document 102 lines 712-761 suspension and termination rules",
+          "CIAP Document 102 lines 807-820 contractor insurance, bonds, and guarantee-warranty provisions"
         ],
         "local_source_checked": true
       }
     }
-  ]
+  ],
+  "sources_hash": "sha256:ad77e21f92c4d11dad223d83fb1b1b37d4badce388daae08552067ac43d9f2fd"
 }

@@ -1,0 +1,120 @@
+{
+  "batch_id": "source-audited-article-batch-107-local-first",
+  "batch_number": "107",
+  "reserved_at": "2026-05-13T13:36:34.139+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "3cc4b127a",
+  "current_head_at_manifest_generation": "3cc4b127a",
+  "previous_batch": {
+    "batch_number": "106",
+    "commit": "3cc4b127a",
+    "status": "accepted_and_pushed"
+  },
+  "manifest_status": "completed_local_first_validated_blocked_at_git_stage_commit_push",
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batch 106 CMP-008/CMP-012; selected CMP-013 plus CTR-001 through CTR-004 with no duplicate article IDs from accepted Batches 087-106.",
+  "inherited_blocker_status": {
+    "status": "clear",
+    "source_blockers": 0,
+    "notes": [
+      "Batch 106 accepted and pushed at 3cc4b127a; Batch 107 starts from that baseline."
+    ]
+  },
+  "article_clusters": [
+    "SPP 202 abandoned/suspended work, non-implementation, owner-ordered changes, and remaining-work suspension fee rules",
+    "Owner-Architect agreement scope, basic services, payment milestones, owner duties, exclusions, and boundary from UAP Document 301",
+    "Basic services, additional services, separately paid services, reimbursables, owner-ordered changes, and excluded services",
+    "Owner-Architect fee consequences under SPP 202 and 401-402, separated from Owner-Contractor construction-contract suspension and termination",
+    "UAP Document 301 construction-contract definitions, document interpretation, Architect status, time limits, and CIAP 102 cross-check"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_real_world_scenarios": 5
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
+      "slug": "lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compensation",
+      "title": "Fees for Abandoned Projects and Partial Services",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compens--eee5c71f-539a-4ec8-a8b2-66e330a0c444"
+    },
+    {
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "slug": "lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure",
+      "title": "Standard Owner-Architect Agreement Core Provisions",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure--a96d6eed-5b52-47de-b752-83459747b468"
+    },
+    {
+      "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+      "slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
+      "title": "Basic Services vs Additional Services",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra--42d02acc-4cd7-4e90-8011-b001fcb26ff0"
+    },
+    {
+      "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
+      "title": "Suspension and Termination of the Owner-Architect Agreement",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb"
+    },
+    {
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
+      "title": "UAP Document 301 Overview",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-106",
+    "duplicate_hits": [],
+    "historical_reaudit_overlap_recorded_separately": [
+      ".ai/content-audit-export/source-audited-article-batch-027-local-first-* for CMP-013/CTR-001/CTR-002 historical local re-audit outputs",
+      ".ai/content-audit-export/source-audited-article-batch-028-local-first-* for CTR-003/CTR-004 historical local re-audit outputs"
+    ]
+  },
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "Historical batch 027/028 artifacts existed but were not accepted in the current serial production-line baseline."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_git_index_write",
+    "expected_commit_message": "chore(content): accept source-audited batch 107",
+    "commit_created": false,
+    "push_performed": false,
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  },
+  "validation_evidence": {
+    "validate_bundles": "PASS 5/5; blockers=0; component-usage warnings only",
+    "ui_block_edit_validation": "PASS 5/5; blockers=0 warnings=0",
+    "scoped_json_parse": "PASS 105 JSON files parsed; failures=0",
+    "marker_scan": "PASS learner-facing article/question-edit/source-evidence scan hits=0; compose/diff report schema fields contain zero placeholder counts only",
+    "source_hash_checks": "PASS 10 unique raw/refined source artifacts; 192 cited source references; failures=0",
+    "linked_question_counts": "PASS linked questions=50 question edits=50",
+    "stale_compose_error_scan": "PASS remaining selected compose-error files=0",
+    "targeted_tests": "PASS bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expects",
+    "scoped_git_diff_check": "PASS git diff --check over Batch 107 scoped article/report/ledger/manifest/handoff paths"
+  }
+}

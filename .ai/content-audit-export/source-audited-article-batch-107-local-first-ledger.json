@@ -1,0 +1,177 @@
+{
+  "batch_id": "source-audited-article-batch-107-local-first",
+  "batch_number": "107",
+  "generated_at": "2026-05-13T13:50:00+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "start_baseline_commit": "3cc4b127a",
+  "previous_accepted_batch_commit": "3cc4b127a",
+  "current_head_at_generation": "3cc4b127a",
+  "status": "pass_local_first_validated_blocked_at_git_stage_commit_push",
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_real_world_scenarios": 5,
+    "source_hash_references_checked": 192,
+    "unique_source_artifacts_checked": 10,
+    "scoped_json_files_parsed": 105
+  },
+  "articles": [
+    {
+      "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
+      "slug": "lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compensation",
+      "title": "Fees for Abandoned Projects and Partial Services",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-013-fees-for-abandoned-projects-and-partial-services-protecting-the-architect-s-compens--eee5c71f-539a-4ec8-a8b2-66e330a0c444",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve the possible final-depth comparison between 2010 SPP 202 ninety-percent wording and older 401-402 proforma eighty-five-percent wording; Batch 107 uses current SPP 202/UAP Standards as the primary rule."
+      ]
+    },
+    {
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "slug": "lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure",
+      "title": "Standard Owner-Architect Agreement Core Provisions",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure--a96d6eed-5b52-47de-b752-83459747b468",
+      "status": "pass_validated_local_first",
+      "sources": 4,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth update check for current UAP owner-architect agreement forms if newer local proforma sources are acquired."
+      ]
+    },
+    {
+      "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+      "slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
+      "title": "Basic Services vs Additional Services",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra--42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+      "status": "pass_validated_local_first",
+      "sources": 3,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth service-scope comparison for current agreement forms if additional UAP owner-architect agreement sources are acquired."
+      ]
+    },
+    {
+      "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
+      "title": "Suspension and Termination of the Owner-Architect Agreement",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "status": "pass_validated_local_first",
+      "sources": 5,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth comparison of owner-architect agreement termination/cure wording if a current, official UAP owner-architect service agreement source is acquired."
+      ]
+    },
+    {
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
+      "title": "UAP Document 301 Overview",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth comparison between UAP Document 301 and CIAP Document 102 where private-project contracts specify one document over the other."
+      ]
+    }
+  ],
+  "gates": {
+    "compose_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0
+    },
+    "diff_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 105,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "matches": [],
+      "scan_scope": "normalized.md, candidate.md, question-edits JSON, and source-audit-evidence.json for selected Batch 107 article folders",
+      "note": "compose-report.json and diff-report.json contain schema fields such as placeholders_found/unresolved_placeholders_count with zero values; those are not content marker hits."
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "references_checked": 192,
+      "unique_source_artifacts_checked": 10,
+      "failures": []
+    },
+    "linked_question_question_edit_count": {
+      "status": "pass",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "remaining_selected_compose_errors": []
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-106",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <Batch 107 scoped paths>"
+    },
+    "cached_git_diff_check": {
+      "status": "blocked_git_index_write",
+      "attempted_command": "git add -- <Batch 107 scoped paths>",
+      "error": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+      "consequence": "No staged diff exists, so git diff --cached --check is not meaningful and commit/push cannot be performed in this sandbox."
+    }
+  },
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "final_depth_findings_preserved": [
+    "Preserve the possible final-depth comparison between 2010 SPP 202 ninety-percent wording and older 401-402 proforma eighty-five-percent wording; Batch 107 uses current SPP 202/UAP Standards as the primary rule.",
+    "Preserve final-depth update check for current UAP owner-architect agreement forms if newer local proforma sources are acquired.",
+    "Preserve final-depth service-scope comparison for current agreement forms if additional UAP owner-architect agreement sources are acquired.",
+    "Preserve final-depth comparison of owner-architect agreement termination/cure wording if a current, official UAP owner-architect service agreement source is acquired.",
+    "Preserve final-depth comparison between UAP Document 301 and CIAP Document 102 where private-project contracts specify one document over the other."
+  ],
+  "git_commit_push_state": {
+    "status": "blocked_git_index_write",
+    "expected_commit_message": "chore(content): accept source-audited batch 107",
+    "commit_created": false,
+    "push_performed": false,
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  }
+}

@@ -1,3 +1,37 @@
+# Batch 107 Source-Audited Production-Line Coordination Update
+
+Updated: 2026-05-13T13:50:00+08:00
+
+## Status
+
+- Batch 107: local-first validated; stage/cached-diff/commit/push blocked by `.git/index.lock` write denial in this sandbox.
+- Branch: 3dlab-gray-viewport-bg
+- Selected articles: 5
+- Linked question edits: 50
+- Forbidden external actions: none performed.
+
+## Batch 107 Gate Summary
+
+- Compose/diff/validate strict 5/5: pass
+- UI-block edit validation: pass
+- Scoped JSON parse: pass; 105 files
+- Placeholder/internal-note/source-gap scan: pass; learner-facing hits=0
+- Source hash checks: pass; 10 unique artifacts / 192 references
+- Linked-question/question-edit count checks: pass
+- Stale compose-error scan: pass
+- Targeted content-audit tests: pass; 34 pass, 0 fail, 328 expects
+- Scoped git diff --check: pass
+- Cached diff check: blocked before stage; `git add` cannot create `.git/index.lock`
+
+## Coordination Notes
+
+- Git gate blocker: `git add -- <Batch 107 scoped paths>` failed with `.git/index.lock` Operation not permitted; no commit or push was created.
+- Batch 106 is accepted and pushed at commit 3cc4b127a.
+- Batch 107 includes both article improvements and linked question edits for every selected article.
+- Next production-line target after Batch 107 commit/push: Batch 108, continuing CTR sequence at CTR-005.
+
+---
+
 # Batch 104 Source-Audited Production-Line Coordination Update
 
 Updated: 2026-05-13T11:58:43+08:00

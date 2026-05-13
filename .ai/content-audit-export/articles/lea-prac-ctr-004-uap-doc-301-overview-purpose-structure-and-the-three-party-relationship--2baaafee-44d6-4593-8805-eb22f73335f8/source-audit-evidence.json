@@ -1,313 +1,207 @@
 {
-  "batch_id": "source-audited-article-batch-028-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T15:30:00.000+08:00",
-  "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
-  "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
-  "title": "UAP Doc 301 Overview Purpose Structure",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
-  "classification": {
-    "legal_or_code_content": true,
-    "requires_raw_pdf_audit": true,
-    "local_first_only": true
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "blockers": [],
-    "warnings": [
-      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
-    ]
-  },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "uap-document-301-general-conditions-local",
-        "label": "UAP Document 301 - General Conditions for construction contract documents",
-        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
-        "source_type": "professional_practice_contract_pdf",
-        "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "checked_markdown_lines": [
-          "UAP Document 301 lines 472-545",
-          "UAP Document 301 lines 923-998",
-          "UAP Document 301 lines 1019-1051",
-          "UAP Document 301 lines 1062-1090"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
-        "source_type": "construction_contract_pdf",
-        "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "checked_markdown_lines": [
-          "CIAP Document 102 lines 169-258",
-          "CIAP Document 102 lines 712-761",
-          "CIAP Document 102 lines 807-820"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
-    "checked_markdown_lines": [
-      "UAP Document 301 lines 472-545",
-      "UAP Document 301 lines 923-998",
-      "UAP Document 301 lines 1019-1051",
-      "UAP Document 301 lines 1062-1090",
-      "CIAP Document 102 lines 169-258",
-      "CIAP Document 102 lines 712-761",
-      "CIAP Document 102 lines 807-820"
-    ]
-  },
-  "claims": [
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-001",
-      "claim_text": "Question 93cb4e1d-3381-4e5e-8678-6965ae5dc5b5 / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-001 rewritten to source-safe local form.",
-      "question_id": "93cb4e1d-3381-4e5e-8678-6965ae5dc5b5",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 472-480",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-002",
-      "claim_text": "Question 9e62295e-bf4e-4dd5-a066-ffed0d28cf6d / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-002 rewritten to source-safe local form.",
-      "question_id": "9e62295e-bf4e-4dd5-a066-ffed0d28cf6d",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 482-486",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-003",
-      "claim_text": "Question efcb9fe3-08a7-4c5d-b208-4f7d75480cfe / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-003 rewritten to source-safe local form.",
-      "question_id": "efcb9fe3-08a7-4c5d-b208-4f7d75480cfe",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 1034-1039",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-004",
-      "claim_text": "Question bdcab46d-30bc-41a4-860a-8a66efd4ac2e / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-004 rewritten to source-safe local form.",
-      "question_id": "bdcab46d-30bc-41a4-860a-8a66efd4ac2e",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 1034-1039",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-005",
-      "claim_text": "Question 7a6b7153-317f-4e4a-bdfd-8bd8b0b2ac14 / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-005 rewritten to source-safe local form.",
-      "question_id": "7a6b7153-317f-4e4a-bdfd-8bd8b0b2ac14",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 1034-1039",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-006",
-      "claim_text": "Question 89b08ba2-acdb-4c8c-a076-894b935193ee / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-006 rewritten to source-safe local form.",
-      "question_id": "89b08ba2-acdb-4c8c-a076-894b935193ee",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 1036-1039",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-007",
-      "claim_text": "Question 08c2d1f7-c489-4d87-878a-785225242445 / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-007 rewritten to source-safe local form.",
-      "question_id": "08c2d1f7-c489-4d87-878a-785225242445",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 523-527",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-008",
-      "claim_text": "Question f5604333-d96c-4c32-8346-35dfd4e5c129 / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-008 rewritten to source-safe local form.",
-      "question_id": "f5604333-d96c-4c32-8346-35dfd4e5c129",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 536-545",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-009",
-      "claim_text": "Question f6101679-b69f-4201-bf4a-b34b050d0052 / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-009 rewritten to source-safe local form.",
-      "question_id": "f6101679-b69f-4201-bf4a-b34b050d0052",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 495-499",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-question-010",
-      "claim_text": "Question cf97d0de-da04-42b1-bebd-7a1b72e60b4a / model BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-010 rewritten to source-safe local form.",
-      "question_id": "cf97d0de-da04-42b1-bebd-7a1b72e60b4a",
-      "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 472-545 and 1034-1039",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    }
-  ],
-  "unverified_or_rejected_claims": [],
-  "sme_review": {
-    "required": false,
-    "status": "PASS"
-  },
-  "removed_or_rewritten_claims": [
-    "Removed unresolved SLATECAMP_UI_BLOCK placeholder sections because ui-blocks.json had zero preserved blocks for these bundles.",
-    "Removed unsupported RA 9184/private-award, AIA, cure-period, lien-remedy, and Civil Code liability claims unless supported by the checked local source set.",
-    "Rewrote linked questions to source-safe prompts and answer keys anchored to exact local source locators."
-  ],
+  "artifact_type": "source_audit_evidence",
+  "schema_version": "source-audited-local-first-v2",
+  "batch_id": "source-audited-article-batch-107-local-first",
+  "audit_mode": "local_raw_pdf_primary_with_refined_markdown_line_locators",
+  "audit_date": "2026-05-13T13:36:34.139+08:00",
+  "audited_at": "2026-05-13T13:36:34.139+08:00",
   "target": {
     "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
     "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
-    "normalized_sha256": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
-    "candidate_sha256": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
-    "sources_sha256": "sha256:3c6e8752c47a0fed758655007affc8948228e32fdc8f87325ceca8a7816084fd",
-    "diff_report_sha256": "sha256:032af8a7f8490e9592ee7fdfeb83f748ac285ee9b6594900446ddb7173689a08",
-    "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
-    "question_edits_count": 10
+    "title": "UAP Document 301 Overview",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/candidate.md",
+    "candidate_sha256": "sha256:7c83f0801eaf7126b94834a64bc99522ee17da8480e7e6bb5222472eb6110d49",
+    "normalized_sha256": "sha256:7c83f0801eaf7126b94834a64bc99522ee17da8480e7e6bb5222472eb6110d49",
+    "linked_questions_sha256": "sha256:4f2adc7ae8138309e96934dd30b8260ed87dbd15afca9e2bc6fb6c20ac1d6871",
+    "sources_sha256": "sha256:8748033b9d0291408577d6180921c0f9bff31f50ee1be319bede5fe585021572"
   },
-  "validation": {
-    "compose_blockers": [],
-    "diff_safe_to_push": true,
-    "diff_blockers": [],
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "content_domain": "Philippine architecture professional practice",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer"
+  },
+  "raw_pdf_gate": {
+    "status": "pass",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 2,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true
+  },
+  "checked_sources": [
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "label": "UAP Document 301 - General Conditions local PDF",
+      "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3"
+    },
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction local PDF",
+      "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15"
+    }
+  ],
+  "raw_sources": [
+    {
+      "authority": "United Architects of the Philippines / construction contract general conditions source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+      "checked_markdown_lines": [
+        "UAP Document 301 lines 472-545 definitions, contract documents, discrepancy handling, and drawing/specification rules",
+        "UAP Document 301 lines 923-998 payment, substantial completion, bonds, insurance, and warranties",
+        "UAP Document 301 lines 1019-1051 disputes, architect status, and project representatives",
+        "UAP Document 301 lines 1062-1090 schedule of time limits"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Construction Industry Authority of the Philippines / private construction contract source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "checked_markdown_lines": [
+        "CIAP Document 102 lines 169-258 definitions, contract documents, interpretation rules, discrepancy reporting, and document priority",
+        "CIAP Document 102 lines 712-761 suspension and termination rules",
+        "CIAP Document 102 lines 807-820 contractor insurance, bonds, and guarantee-warranty provisions"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:article:001",
+      "claim_text": "UAP Document 301 Overview was rewritten with source-safe professional-practice boundaries and local source anchors.",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:scenario:001",
+      "claim_text": "Batch 107 Real World Scenario is source-safe and stays inside checked local source facts.",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:001",
+      "claim_text": "What type of document is UAP Document 301 in this batch?",
+      "support": "UAP Document 301 lines 472-545",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:002",
+      "claim_text": "Which items are part of UAP Document 301 contract documents?",
+      "support": "UAP Document 301 lines 474-481",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:003",
+      "claim_text": "How does UAP Document 301 define the Architect for this construction contract context?",
+      "support": "UAP Document 301 lines 482-488",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:004",
+      "claim_text": "If drawings and specifications vary under UAP Document 301, which controls?",
+      "support": "UAP Document 301 lines 523-526",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:005",
+      "claim_text": "What must the contractor do when discrepancies, errors, omissions, or site-condition conflicts appear?",
+      "support": "UAP Document 301 lines 526-528",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:006",
+      "claim_text": "Under UAP Document 301, how should figures on drawings be treated compared with scaled measurements?",
+      "support": "UAP Document 301 lines 536-540",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:007",
+      "claim_text": "What is the Architect's construction-period status under UAP Document 301?",
+      "support": "UAP Document 301 lines 1034-1038",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:008",
+      "claim_text": "Which questions may the Architect decide under UAP Document 301?",
+      "support": "UAP Document 301 lines 1036-1038",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:009",
+      "claim_text": "Which CIAP Document 102 interpretation rule is source-backed?",
+      "support": "CIAP Document 102 lines 221-242",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship:question:010",
+      "claim_text": "What is the safest exam boundary for UAP Document 301?",
+      "support": "UAP Document 301 lines 472-545",
+      "status": "verified_local_raw_pdf"
+    }
+  ],
+  "source_safe_repair": {
+    "article_rewrite": "completed",
+    "question_edits": "completed_10_of_10",
+    "real_world_scenario": "eligible-added",
+    "source_primary_findings_preserved_for_final_depth": [
+      "Preserve final-depth comparison between UAP Document 301 and CIAP Document 102 where private-project contracts specify one document over the other."
+    ]
+  },
+  "removed_or_rewritten_material": [
+    "Removed generic meta distractors from older question edits.",
+    "Rejected wording that treated UAP Document 301 as the owner-architect professional services agreement."
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "claim": "Removed generic meta distractors from older question edits.",
+      "disposition": "rejected_or_rewritten_source_safe"
+    },
+    {
+      "claim": "Rejected wording that treated UAP Document 301 as the owner-architect professional services agreement.",
+      "disposition": "rejected_or_rewritten_source_safe"
+    }
+  ],
+  "gate_results": {
+    "article_rewrite": "pass_validated_local_first",
+    "question_edits": "pass_10_of_10",
+    "real_world_scenario": "eligible-added",
+    "source_gap_scan": "pass"
+  },
+  "local_validation": {
+    "compose": "PASS: blockers=0; candidate_hash=sha256:7c83f0801eaf7126b94834a64bc99522ee17da8480e7e6bb5222472eb6110d49",
+    "diff": "PASS: changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS 5/5; blockers=0; component-usage warnings only",
+    "ui_block_edits": "PASS 5/5; blockers=0 warnings=0",
+    "scoped_checks": "PASS 105 JSON files parsed; failures=0; PASS learner-facing article/question-edit/source-evidence scan hits=0; compose/diff report schema fields contain zero placeholder counts only; PASS 10 unique raw/refined source artifacts; 192 cited source references; failures=0; PASS linked questions=50 question edits=50; PASS remaining selected compose-error files=0",
+    "tests": "PASS bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expects",
+    "prior_batch_duplicate_selection_scan": "PASS: no selected article ID found in accepted Batches 087-106; historical re-audit overlap recorded separately.",
+    "scoped_git_diff_check": "PASS git diff --check over Batch 107 scoped article/report/ledger/manifest/handoff paths"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  },
+  "sme_review": {
+    "independent_quality_review": ".ai/03_plans/batch-107-independent-quality-review.md",
+    "status": "self-contained separate review pass generated locally"
+  },
+  "paths": {
+    "report": ".ai/content-audit-export/source-audited-article-batch-107-local-first-report.md",
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-107-local-first-ledger.json",
+    "scoped_checks": ".ai/content-audit-export/source-audited-article-batch-107-local-first-scoped-checks.json",
+    "manifest": ".ai/03_plans/production-line-batch-107-manifest.json"
   }
 }

@@ -1,16 +1,16 @@
 {
   "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
   "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
-  "generated_at": "2026-05-10T20:07:12.303Z",
+  "generated_at": "2026-05-13T13:36:34.139+08:00",
   "old_hash": "sha256:781b1986db9df731ef6e2beea17cf78ce62a954eee6bfb8f99f5f8d7ed4031d1",
-  "new_hash": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
+  "new_hash": "sha256:7c83f0801eaf7126b94834a64bc99522ee17da8480e7e6bb5222472eb6110d49",
   "original_hash": "sha256:781b1986db9df731ef6e2beea17cf78ce62a954eee6bfb8f99f5f8d7ed4031d1",
-  "normalized_hash": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
-  "candidate_hash": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
+  "normalized_hash": "sha256:7c83f0801eaf7126b94834a64bc99522ee17da8480e7e6bb5222472eb6110d49",
+  "candidate_hash": "sha256:7c83f0801eaf7126b94834a64bc99522ee17da8480e7e6bb5222472eb6110d49",
   "changed": true,
-  "changed_line_count": 90,
+  "changed_line_count": 100,
   "inserted_line_count": 0,
-  "deleted_line_count": 42,
+  "deleted_line_count": 62,
   "ui_blocks_original_count": 0,
   "ui_blocks_candidate_count": 0,
   "ui_blocks_changed_count": 0,
@@ -18,11 +18,11 @@
   "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 90,
+    "changed": 100,
     "inserted": 0,
-    "deleted": 42,
+    "deleted": 62,
     "original_line_count": 100,
-    "candidate_line_count": 58
+    "candidate_line_count": 38
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
@@ -34,5 +34,5 @@
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Locally safe after recomposition; remote stale check still required before any future push."
 }

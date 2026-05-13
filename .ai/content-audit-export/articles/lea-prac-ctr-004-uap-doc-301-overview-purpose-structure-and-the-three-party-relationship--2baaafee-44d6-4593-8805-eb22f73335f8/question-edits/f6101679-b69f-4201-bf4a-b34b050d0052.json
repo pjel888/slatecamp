@@ -1,71 +1,85 @@
 {
   "question_id": "f6101679-b69f-4201-bf4a-b34b050d0052",
-  "baseline_hash": "sha256:96e1c2e9cb85640726392923970b1c2fcc60a1ff24bcd77c076eee5c0cba368a",
   "action": "replace",
-  "reason": "source-audited-article-batch-028-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship.",
-  "approved_by": "codex-local-source-audit-batch-028",
-  "approved_at": "2026-05-11T15:30:00.000+08:00",
+  "approved_by": "codex-local-source-audit-batch-107",
+  "approved_at": "2026-05-13T13:36:34.139+08:00",
+  "baseline_hash": "sha256:96e1c2e9cb85640726392923970b1c2fcc60a1ff24bcd77c076eee5c0cba368a",
+  "reason": "source-audited-article-batch-107-local-first refreshed this linked professional-practice question against current local raw PDF/source anchors for lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship.",
   "source_audit_support": {
     "parent_article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
     "parent_article_slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
+    "parent_article_title": "UAP Document 301 Overview",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
     "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
     "checked_markdown_lines": [
-      "UAP Document 301 lines 472-545",
-      "UAP Document 301 lines 923-998",
-      "UAP Document 301 lines 1019-1051",
-      "UAP Document 301 lines 1062-1090",
-      "CIAP Document 102 lines 169-258",
-      "CIAP Document 102 lines 712-761",
-      "CIAP Document 102 lines 807-820"
+      "UAP Document 301 lines 472-545 definitions, contract documents, discrepancy handling, and drawing/specification rules",
+      "UAP Document 301 lines 923-998 payment, substantial completion, bonds, insurance, and warranties",
+      "UAP Document 301 lines 1019-1051 disputes, architect status, and project representatives",
+      "UAP Document 301 lines 1062-1090 schedule of time limits",
+      "CIAP Document 102 lines 169-258 definitions, contract documents, interpretation rules, discrepancy reporting, and document priority",
+      "CIAP Document 102 lines 712-761 suspension and termination rules",
+      "CIAP Document 102 lines 807-820 contractor insurance, bonds, and guarantee-warranty provisions"
     ],
     "checked_sources": [
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+        "label": "UAP Document 301 - General Conditions local PDF",
+        "authority": "United Architects of the Philippines / construction contract general conditions source",
+        "source_type": "professional_practice_contract_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 472-545 definitions, contract documents, discrepancy handling, and drawing/specification rules",
+          "UAP Document 301 lines 923-998 payment, substantial completion, bonds, insurance, and warranties",
+          "UAP Document 301 lines 1019-1051 disputes, architect status, and project representatives",
+          "UAP Document 301 lines 1062-1090 schedule of time limits"
+        ],
+        "use": "Local construction-contract source for UAP Document 301 definitions, architect status, interpretation, payment certification, bonds, suspension/termination, and time limits.",
+        "local_source_checked": true
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
-      },
-      {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction local PDF",
+        "authority": "Construction Industry Authority of the Philippines / private construction contract source",
+        "source_type": "construction_contract_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+        "checked_markdown_lines": [
+          "CIAP Document 102 lines 169-258 definitions, contract documents, interpretation rules, discrepancy reporting, and document priority",
+          "CIAP Document 102 lines 712-761 suspension and termination rules",
+          "CIAP Document 102 lines 807-820 contractor insurance, bonds, and guarantee-warranty provisions"
+        ],
+        "use": "Local CIAP cross-check source for private construction-contract definitions, document interpretation, suspension/termination, bonds, and warranty provisions.",
+        "local_source_checked": true
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "source-audited-article-batch-107-local-first refreshed question text, options, answer key, rationale, explanation, and citation to the audited article scope."
   },
   "proposed": {
-    "text": "What is a Bid Bulletin under UAP Document 301?",
+    "text": "What is the safest exam boundary for UAP Document 301?",
     "options": [
       {
         "id": "a",
-        "text": "Additional information on Bid Documents or Contract Documents issued before the date of bidding"
+        "text": "Use it for construction-contract administration, not as the full owner-architect design-services agreement."
       },
       {
         "id": "b",
-        "text": "A rule that changes the party named in the cited source"
+        "text": "Use it to compute every Architect professional fee."
       },
       {
         "id": "c",
-        "text": "An answer that treats the article title as the controlling rule"
+        "text": "Use it as a CPD renewal rule."
       },
       {
         "id": "d",
-        "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
+        "text": "Use it to replace all SPP 202 service provisions."
       }
     ],
     "correct_option_id": "a",
@@ -73,18 +87,18 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Correct because it follows UAP Document 301 lines 495-499. The other options change the party, period, percentage, or document rule stated in the audited source.",
-    "explanation": "Use UAP Document 301 lines 495-499 for this Batch 028 replacement.",
-    "code_citation": "UAP Document 301 lines 495-499",
-    "bloom_level": "remember",
+    "rationale": "The batch keeps UAP 301 in the construction-contract lane and owner-architect services in SPP/401-402 sources.",
+    "explanation": "The batch keeps UAP 301 in the construction-contract lane and owner-architect services in SPP/401-402 sources.",
+    "code_citation": "UAP Document 301 lines 472-545",
+    "bloom_level": "apply",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited batch 028"
+      "source-audited batch 107"
     ],
-    "difficulty": 0.38,
+    "difficulty": 0.58,
     "is_assessment": false,
-    "model_id": "BATCH-028-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-009"
+    "model_id": "BATCH-107-lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship-010"
   }
 }
