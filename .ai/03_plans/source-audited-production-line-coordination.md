@@ -1,3 +1,11 @@
+# Batch 122 Production-Line Coordination
+
+Generated: 2026-05-14T00:20:53.000+08:00
+
+Batch 122 is reserved for the next five sourceable residual bundles after Batch 121: lea-hist-007-02, lea-hist-007-03, lea-hist-007-04, lea-hist-007-05, and lea-hist-007-06. The acceptance path is compose/diff/validate, UI-block edit validation, scoped JSON/source/hash/count scans, targeted content-audit tests, scoped diff checks, then stage only Batch 122/source files. No Supabase push, deploy, production DB mutation, or main merge is authorized. Live git add is blocked in this Codex surface by .git/index.lock permissions; Hermes should perform the real stage/commit/push from the stage list.
+
+---
+
 # Batch 121 Production-Line Coordination
 
 Generated: 2026-05-13T23:57:31+08:00

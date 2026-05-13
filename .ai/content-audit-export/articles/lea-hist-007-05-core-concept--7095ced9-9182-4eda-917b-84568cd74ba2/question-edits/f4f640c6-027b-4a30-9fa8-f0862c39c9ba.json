@@ -1,0 +1,89 @@
+{
+  "question_id": "f4f640c6-027b-4a30-9fa8-f0862c39c9ba",
+  "baseline_hash": "sha256:527cdb76f8b101fd1c86873bdc66e3c83de3e2823087c15a1ab887240db8d536",
+  "action": "replace",
+  "reason": "source-audited-article-batch-122-local-first source-maps lea-hist-007-05-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-122",
+  "approved_at": "2026-05-14T00:20:53.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+    "parent_article_slug": "lea-hist-007-05-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary.",
+    "checked_markdown_lines": [
+      "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch122-lea-hist-007-05-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-05-korean-architecture.source-capture.md",
+        "sha256": "sha256:4da802133d7e4bf410f943db3b20f9416dc9f361f8ad9fb17eab49673f46546f",
+        "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+      },
+      {
+        "source_id": "batch122-lea-hist-007-05-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-05-korean-architecture.refined.md",
+        "sha256": "sha256:1d7de0cd391c61575dcb4532c2459d9025227cf23e17a39f10b7bf78e5a9ed6c",
+        "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+      }
+    ],
+    "local_source_safe_action": "Batch 122 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-122-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "f4f640c6-027b-4a30-9fa8-f0862c39c9ba",
+    "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+    "topic_id": "78df6176-b5a3-4a10-8705-5cc9f4d3c757",
+    "text": "A Korean heating system where hot smoke from a kitchen fire travels through stone or clay channels beneath the floor before exiting through an external chimney, warming interior rooms and enabling winter living on combustible flooring, is called ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dougong"
+      },
+      {
+        "id": "b",
+        "text": "Tatami"
+      },
+      {
+        "id": "c",
+        "text": "Ondol"
+      },
+      {
+        "id": "d",
+        "text": "Chahar bagh"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Dougong is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "b": "Tatami is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "d": "Chahar bagh is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "correct": "Ondol matches the Batch 122 source-map anchors for Korean Architecture.",
+      "takeaway": "Korean Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries."
+    },
+    "explanation": "Ondol matches the Batch 122 source-map anchors for Korean Architecture. Korean Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "ST"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-007-05-001",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.518466+00:00",
+    "updated_at": "2026-05-06T15:39:32.021403+00:00",
+    "content_hash": "sha256:527cdb76f8b101fd1c86873bdc66e3c83de3e2823087c15a1ab887240db8d536"
+  }
+}

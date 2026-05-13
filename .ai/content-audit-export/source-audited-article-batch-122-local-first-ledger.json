@@ -1,0 +1,147 @@
+{
+  "batch_id": "source-audited-article-batch-122-local-first",
+  "generated_at": "2026-05-14T00:20:53.000+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "2916ca0c4",
+  "previous_content_batch_commit": "a8c0f5dc4",
+  "totals": {
+    "article_clusters": 5,
+    "linked_questions": 56,
+    "question_edits": 56,
+    "source_entries": 24,
+    "local_source_artifacts": 10
+  },
+  "articles": [
+    {
+      "article_id": "aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "slug": "lea-hist-007-02-core-concept",
+      "title": "Chinese architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-007-02-core-concept--aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "source_count": 8,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Unsupported feng shui option wording that fixed water north and mountains south was replaced with source-safe orientation/site/axis language.",
+        "The article avoids unsupported exact dimensions and room counts unless a source packet or official capture carries them."
+      ],
+      "original_hash": "sha256:95e796d65038894e37cee2c9fa438e0d5d1305c0ddb8b9409c19b5451a89eebe",
+      "normalized_hash": "sha256:dda97fed6eb6f0b337b63d65270b7448f035b848f024cb441d5839367340c8c4",
+      "candidate_hash": "sha256:dda97fed6eb6f0b337b63d65270b7448f035b848f024cb441d5839367340c8c4",
+      "sources_hash": "sha256:8b4f4839ca04359f5567c5fa1f9d6abc254c2ee01fb4013753b2be763b1b4d7a",
+      "source_locator": "UNESCO Imperial Palaces and Temple of Heaven captures plus Chinese Architecture, HOA Module 3, and Fletcher locators for Forbidden City, Temple of Heaven, dougong, siheyuan, raised platforms, axial/courtyard hierarchy, and Yingzao Fashi vocabulary.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-02-chinese-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-02-chinese-architecture.refined.md"
+      ]
+    },
+    {
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "slug": "lea-hist-007-03-core-concept",
+      "title": "Japanese architecture adapts Chinese and indigenous",
+      "folder": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "source_count": 6,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The pagoda linked question no longer describes domed roofs or relies on broad relic/no-relic claims.",
+        "Katsura aesthetic vocabulary is kept as exam vocabulary, while the named-site anchor is tied to local capture and authoritative locators."
+      ],
+      "original_hash": "sha256:ef78713b99d41dbda306df8a8b34c3af2665ce684d906021192acbeb83076e96",
+      "normalized_hash": "sha256:50aa62416c398e501131b2b1290b006d0375c5d4a9c22430640cc52bece06740",
+      "candidate_hash": "sha256:50aa62416c398e501131b2b1290b006d0375c5d4a9c22430640cc52bece06740",
+      "sources_hash": "sha256:feac37d3a36d082b01794bfb18a82b5bd0f4e4f50e2406caa3db984927deaff3",
+      "source_locator": "Ise Jingu Shikinen Sengu and Amaterasu official capture, Kunaicho/Britannica Katsura locators, and HOA Module 3/Fletcher locators for Ise, torii, pagoda, tatami, shoji/fusuma/engawa, and Japanese adaptation vocabulary.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-03-japanese-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-03-japanese-architecture.refined.md"
+      ]
+    },
+    {
+      "article_id": "10be87c4-e424-42da-8989-a054658cc4a4",
+      "slug": "lea-hist-007-04-core-concept",
+      "title": "Southeast Asian Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-007-04-core-concept--10be87c4-e424-42da-8989-a054658cc4a4",
+      "source_count": 6,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Unsupported Angkor sandstone/mortar/gravity engineering wording was replaced with source-safe Khmer monument identification.",
+        "Borobudur platform wording was corrected to avoid the older internal five-rectangular-versus-nine-platform inconsistency."
+      ],
+      "original_hash": "sha256:fe0ab25315861b8e2cf1e05efd630b67926f80dbb9b77df0fee423d11451cabf",
+      "normalized_hash": "sha256:7fb021abb205a03afac93f5742a6d10f78c18acb8bce496f1524867d18dd0bf1",
+      "candidate_hash": "sha256:7fb021abb205a03afac93f5742a6d10f78c18acb8bce496f1524867d18dd0bf1",
+      "sources_hash": "sha256:f288805d532e3d6ba3b9d8fc8a3b473d2ca98bd696230e4f9dd27fb75bab6ecb",
+      "source_locator": "UNESCO Angkor, Borobudur, and Hoi An captures plus HOA Module 3/Fletcher locators for Khmer Angkor/Angkor Wat/Bayon, Javanese Borobudur mandala-pilgrimage logic, and Vietnamese narrow merchant-house/tube-house guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-04-southeast-asian-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-04-southeast-asian-architecture.refined.md"
+      ]
+    },
+    {
+      "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+      "slug": "lea-hist-007-05-core-concept",
+      "title": "Korean Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-007-05-core-concept--7095ced9-9182-4eda-917b-84568cd74ba2",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Palace questions were narrowed so ondol is not asserted beneath all ceremonial palace floors without a source-specific locator.",
+        "Korean examples are separated into Joseon palace, hanok/ondol, and Silla Buddhist temple/grotto buckets."
+      ],
+      "original_hash": "sha256:1f5046952ea0fcb67a36e72aa6af6c1ffa207ca44e8d3bfc0c2ab03c4da1f15d",
+      "normalized_hash": "sha256:bf4d8379daddfd2d5abe804d1f6c755c6c3efe3ec19e3d64e627b8291a0f7f15",
+      "candidate_hash": "sha256:bf4d8379daddfd2d5abe804d1f6c755c6c3efe3ec19e3d64e627b8291a0f7f15",
+      "sources_hash": "sha256:00c4f51b047d9618c36bb7b703785c7d5fff51c56292906832ee2e5f2da01143",
+      "source_locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-05-korean-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-05-korean-architecture.refined.md"
+      ]
+    },
+    {
+      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+      "slug": "lea-hist-007-06-core-concept",
+      "title": "Pacific Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-007-06-core-concept--1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The older linked-question typo 'flea' was corrected to 'fale'.",
+        "Vernacular claims were narrowed to climate/material/social organization and separated from Sydney Opera House modernism."
+      ],
+      "original_hash": "sha256:a44067b55633b0f2937f928174009f19ebf1e0d264bb79c7aba758605a777135",
+      "normalized_hash": "sha256:83180e200569570ac4fec9792ebdbe0da200ba8724c2efceeabb68d013040d34",
+      "candidate_hash": "sha256:83180e200569570ac4fec9792ebdbe0da200ba8724c2efceeabb68d013040d34",
+      "sources_hash": "sha256:80c660d2ffd8448c40ef57403c8b132131692b92b42e7eab294635d8c148ef32",
+      "source_locator": "UNESCO Sydney Opera House and official Sydney Opera House captures plus Te Ara wharenui and Samoa fale captures for modern Pacific-region landmark identity, Utzon/shell geometry, Bennelong Point, and source-safe Pacific meeting-house vocabulary.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-06-pacific-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-06-pacific-architecture.refined.md"
+      ]
+    }
+  ],
+  "forbidden_actions": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_to_main": false
+  }
+}

@@ -1,128 +1,29 @@
+# Japanese architecture adapts Chinese and indigenous
 
+## LEA Point
 
-## Board Exam Quick Check
+Japanese architecture questions usually test adaptation rather than simple borrowing. Chinese Buddhist forms, timber construction, and palace/garden ideas were absorbed into a local system shaped by Shinto renewal, modular interiors, threshold ritual, and restrained spatial composition.
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+## Source Anchors
 
-**Common mistake:** treating a familiar keyword in **Lea Hist 007 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+- Ise Jingu official material anchors Naiku/Inner Shrine to Amaterasu and the Shikinen Sengu renewal cycle.
+- Katsura official/authoritative material anchors the Kyoto imperial villa as the named residential-garden reference.
+- HOA Module 3 and Fletcher locators carry the exam vocabulary for torii, Japanese pagoda, tatami modules, shoji/fusuma partitions, engawa mediation, tokonoma/tana, and Ise recognition.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+## Exam Pattern
 
-## Learning Goal
+If the stem names a 20-year shrine rebuilding cycle, answer Shikinen Sengu at Ise Jingu. If it names a post-and-lintel threshold to a Shinto sacred precinct, answer torii. If it names floor mats, room proportion, sliding partitions, or flexible interior use, answer tatami, shoji, fusuma, and engawa logic. If it names a Kyoto imperial villa with asymmetrical residential-garden refinement, answer Katsura Imperial Villa.
 
-Identify the five testable markers of Japanese architecture — tatami module, shoji/sliding screens, engawa (veranda), tokonoma alcove, and exposed wood joinery — and explain the cultural values (simplicity, transience, connection to nature) embodied in Japanese building design.
-## Core Concept
+## Guardrails
 
-Japanese architecture adapts Chinese and indigenous traditions through modular spatial systems, natural materials, and spiritual reverence for wood. The **tatami** mat—a straw rectangle measuring 3 shaku × 6 shaku (approximately 0.9m × 1.8m, where 1 shaku = 30.3cm)—determines interior proportions: rooms measure 4.5 mats, 6 mats, 8 mats, etc., and ceiling heights scale proportionally. This module enabled flexible residential design: screens and sliding doors (shoji and fusuma) allow rooms to expand, contract, or merge without structural walls. Permanence and impermanence coexist: wooden posts sink into stone or wooden sills; walls are paper-thin; earthquakes flex rather than fracture the frame.
+Do not describe Japanese pagoda roofs as domes; use tiered-roof vertical Buddhist monument language. Do not claim the Japanese system is merely Chinese copying. Keep Shinto renewal, Buddhist monument forms, and domestic tatami-module planning in separate exam buckets unless a stem explicitly asks for synthesis.
 
+## Real World Scenario
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-hist-007-03-core-concept", layout="single", type="image", status="placeholder", alt="View of Katsura Imperial Villa (Kyoto, 1620–1645), showing the shoji sliding screens, engawa veranda, tatami interior, and the carefully composed garden relationship characteristic of Japanese sukiya-zukuri architecture.", caption="Katsura Imperial Villa — Japanese Residential Architecture", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-
-Sacred architecture emphasizes wooden craft and ritual geography. The **torii gate**—a simple post-and-lintel structure of wood or stone—marks Shinto shrine boundaries, separating sacred from secular space. Multiple torii create ascending gradations of sanctity (as at Fushimi Inari, thousands of vermillion gates tunnel up the mountainside). The **pagoda** (derived from Chinese models) tapers upward through diminishing floor levels, typically 5 or 7 stories, with each story featuring a domed roof and radiating eaves supported by elaborate wooden brackets. Unlike Chinese equivalents, Japanese pagodas often house no relics or statuary—they stand as sculptural monuments affirming celestial aspiration.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Japanese architecture's five testable markers:** 1. **Tatami mats** (3×6 shaku = 0.9m × 1.8m modular unit) 2. **Shoji/fusuma screens** (sliding partitions for flexible space) 3. **Torii gates** (sacred thresholds, often vermillion) 4. **Wooden post-and-beam** (no nails, impermanence-embracing) 5. **Shikinen Sengu** (20-year rebuild at Ise, sacred renewal) Key principle: *Yohaku no bi* (beauty of emptiness) and material honesty.
-[/SLATECAMP_UI_BLOCK]
-
-The **Ise Grand Shrine** (Ise Jingu), dedicated to the sun goddess Amaterasu, embodies a profound principle: every 20 years, the entire sanctuary—Main Shrine (Naiku) and subsidiary shrines (Geku)—is completely disassembled and rebuilt on adjacent ground, a practice (Shikinen Sengu) initiated under Empress Jitō. The first documented Shikinen Sengu cycle occurred in 690 CE (Naiku) and 692 CE (Geku); tradition associates the shrine's origins with centuries earlier. This cycle preserves sacred proportions, wood knowledge, and ritual continuity while renewing the site. The architecture embraces impermanence as sacred law; rebuilding is not maintenance but renewal. The 63rd Shikinen Sengu cycle has been conducted continuously since 690, making it one of the world's oldest preserved construction traditions. **Katsura Imperial Villa** (17th century, Kyoto) demonstrates the refinement possible within timber-frame and tatami logic: a residential palace of humble materials, asymmetrical massing, deep overhanging eaves, interior courtyards, and tea rooms—every element considered for subtlety, proportion, and seasonal change. It embodies *yohaku no bi* (beauty of emptiness), privileging negative space and material honesty over ornament.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Shikinen Sengu (20-year Ise Grand Shrine rebuild) is NOT preservation or restoration in the Western sense. It is sacred renewal and re-enactment of cosmic creation. The architecture intentionally embraces impermanence; each rebuild maintains sacred proportions and knowledge while accepting transience as cosmological law. This is fundamentally different from restoring an ancient structure to "original condition"—Japanese philosophy celebrates cyclical renewal, not permanence. Understanding this s
-[/SLATECAMP_UI_BLOCK]
-
-Garden integration shapes Japanese architectural presence. Buildings sit within carefully composed landscapes where rock, water, and vegetation establish spiritual and aesthetic hierarchies. The veranda (engawa), a wooden platform extending from the building, becomes a liminal zone for viewing and transitioning between interior and exterior, shelter and exposure.
-
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-hist-007-03-core-concept", layout="single", type="image", status="placeholder", alt="Plan diagram showing the tatami module (approx. 1.8 m × 0.9 m) used as a modular grid for room dimensions, with sliding shoji screens on tracks dividing interior space and the engawa (veranda) connecting interior to garden.", caption="Japanese Modular System — Tatami Grid and Shoji Screens", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-
-## Key Facts and Testable Items
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Building/Monument\", \"Type\", \"Designer/Patron\", \"Date\", \"Location\", \"Key Features\"]}", rows="{[[\"**Ise Grand Shrine (Ise Jingu)**\", \"Shinto Shrine\", \"Emperors (continuous rebuild)\", \"Shrine origins predate recorded history; Shikinen Sengu formalized 690 CE; renewed every 20 years\", \"Ise, Mie Prefecture\", \"Naiku (inner) + Geku (outer), wooden post-and-beam, thatched roof, sacred forest, Shikinen Sengu cycle\"], [\"**Katsura Imperial Villa**\", \"Imperial Residence\", \"Imperial court, architects unknown\", \"1620–1663\", \"Kyoto\", \"Timber frame, tatami rooms, sliding shoji/fusuma, asymmetrical massing, garden integration, humble materials\"], [\"**Fushimi Inari Shrine**\", \"Shinto Shrine\", \"Founded 711 CE; expanded medieval–modern\", \"Medieval–modern additions\", \"Kyoto\", \"Thousands of vermillion torii gates, cascading up mountainside, fox (kitsune) shrines, pilgrimage route\"], [\"**Todai-ji Temple (Great Buddha Hall)**\", \"Buddhist Temple\", \"Emperor Shomu\", \"752 CE (current hall from 1709)\", \"Nara\", \"Daibutsu (Great Buddha, 15m tall), original hall 50m × 86m (rebuilt 1709: 57m × 50m × 49m), pagoda compound\"], [\"**Kinkaku-ji (Golden Pavilion)**\", \"Zen Buddhist Temple\", \"Shogun Ashikaga Yoshimitsu\", \"1397\", \"Kyoto\", \"Three-story golden leaf-covered timber structure, mirror pond reflection, garden setting, destroyed 1950 (rebuilt 1955)\"], [\"**Nijo Castle**\", \"Military Fortress/Palace\", \"Shogun Tokugawa Ieyasu\", \"1603–1626\", \"Kyoto\", \"Defensive moat, stone walls, timber keep, *uguisu-bari* (nightinglea floors), garden courtyards\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## How It's Tested on the LEA
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 1:** Module-based spatial calculation. "A room measures 6 tatami mats. Using the standard 3 shaku × 6 shaku proportion, what is the approximate room dimension?" (Answer: ~2.7m × 5.4m, or similar proportional calculation.) Expect to apply tatami logic to interior planning or identify spacing errors.
-[/SLATECAMP_UI_BLOCK]
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 2:** Ritual-spatial questions. "A Shinto shrine's main approach features multiple vermillion gate structures. What is the Japanese term for this gate, and what cosmological function does the series serve?" (Answer: torii; marks ascending gradations of sacred space.) Expect to identify ritual geography and boundary demarcation.
-[/SLATECAMP_UI_BLOCK]
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 3:** Temporal and renewal concepts. "A major Shinto shrine is completely rebuilt every 20 years on adjacent ground. This practice, called ___, reflects which architectural principle?" (Answer: Shikinen Sengu; impermanence and sacred renewal.) Expect to understand how Japanese architecture treats time and impermanence differently from Western permanence-based thinking.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0009 component="Callout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The LEA tests the **tatami module** (3×6 shaku proportions driving interior space), the **torii gate** (Shinto threshold), **pagoda** typology (Buddhist vertical form), **shoji/fusuma screens** (sliding partitions), and specific temples like **Katsura Imperial Villa** (timber refinement) and **Ise Grand Shrine** (20-year rebuilding cycle and sacred archaeology). Recognize modular logic, spatial flexibility, and ritual function.
-[/SLATECAMP_UI_BLOCK]
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="** Confusing tatami dimensions. The standard tatami mat is 3 shaku × 6 shaku (approximately 0.9m × 1.8m in modern metric, or roughly 3ft × 6ft). Some regions vary (Tokyo vs. Kyoto standards differ slightly), but 3×6 is canonical. Don't reverse dimensions or conflate tatami with Western floor area units", correction="Mistake 2:** Treating torii as a uniquely decorative element. Torii are not ornament; they are cosmological thresholds marking the boundary between sacred (kami) and profane (human) space. Their function is spatial demarcation, not aesthetics.", context="Multiple torii create a spiritual progression, not a tourist attraction, in the Shinto worldview."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="** Misunderstanding Shikinen Sengu as preservation. The 20-year rebuild of Ise Grand Shrine is NOT aimed at preserving a fixed original; it is sacred renewal. The architecture intentionally embraces impermanence; each rebuild re-enacts the original act of creation. This is radical for Western preservation thinking—don't conflate it with restoration or conservation", correction="Mistake 4:** Overstating Chinese influence without acknowledging Japanese adaptation. While Japanese architecture incorporates pagoda forms and some structural principles from China, it fundamentally rethinks them through timber, modularity, and spiritual reverence for wood. Japanese architecture is not merely \\", Chinese=true, adapted=true, it=true, is=true, a=true, distinct=true, system=true, context="Acknowledge influence but identify Japanese innovations."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Terms
-
-- **Tatami**: Straw mat measuring 3 shaku × 6 shaku (approximately 0.9m × 1.8m), serving as the modular unit determining interior proportions and room sizes in Japanese residential and temple architecture.
-- **Shaku**: Traditional Japanese unit of measurement (approximately 30.3cm), used to dimension tatami, buildings, and all spatial relationships in classical architecture.
-- **Torii**: Simple post-and-lintel gate structure marking Shinto sacred boundaries, typically wood or stone, often vermillion-painted; gates may number in thousands at major shrines.
-- **Shoji**: Sliding partition screen with wooden frame and translucent paper (or modern materials), allowing flexible interior space division and soft light diffusion.
-- **Fusuma**: Opaque sliding door screen with wooden frame and decorative paper or fabric covering, providing visual and acoustic privacy within rooms.
-- **Engawa**: Wooden veranda or platform extending from a building, serving as a transitional zone between interior and exterior, shelter and exposure.
-- **Shikinen Sengu**: 20-year rebuilding cycle practiced at Ise Grand Shrine, where the entire sanctuary is disassembled and reconstructed on adjacent sacred ground, maintaining proportions and ritual continuity.
-- **Naiku and Geku**: Inner Shrine (Naiku) and Outer Shrine (Geku) at Ise Jingu, each subject to Shikinen Sengu renewal.
-- **Yohaku no bi**: Japanese aesthetic principle emphasizing the beauty of emptiness, negative space, and material simplicity over ornament.
-- **Pagoda (tou)**: Vertical Buddhist monument, typically 5 or 7 stories, with diminishing floor levels, domed roofs, and radiating eaves; often serves as sculptural rather than functional religious structure.
-
-[SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Do not confuse tatami dimensions or reverse them: tatami is **3 shaku × 6 shaku** (~0.9m × 1.8m), not the reverse. Do not treat torii gates as purely decorative—they are cosmological thresholds marking sacred/profane boundaries. Multiple torii (thousands at Fushimi Inari) create spiritual gradations, not visual spectacle. Japanese architecture is not merely "Chinese influenced"—while pagodas and some forms derive from China, Japanese architects fundamentally adapted them through wooden modularit
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0013 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-hist-007-03-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Comparative diagram of Japanese architectural elements: tatami module system, shoji/fusuma sliding screens, engawa veranda, tokonoma alcove, and exposed wood joinery, showing how these features create flexible, nature-connected interior spaces.", caption="Japanese Architecture — Spatial Elements Diagram", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+In a Japanese-inspired learning lounge, the source-safe move is not to paste a torii indoors. Use tatami proportions for planning discipline, sliding partitions for flexible study modes, and garden-edge seating for the engawa idea; reserve torii language for actual sacred-threshold references.
 
 ## Related Articles
 
-See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-02-core-concept**, **lea-hist-007-04-core-concept**, **lea-hist-007-05-core-concept**.
-
-> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+- lea-hist-007-02-core-concept
+- lea-hist-007-05-core-concept
+- lea-hist-007-06-core-concept

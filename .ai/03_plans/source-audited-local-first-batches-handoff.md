@@ -1,3 +1,11 @@
+# Batch 122 Local-First Handoff
+
+Generated: 2026-05-14T00:20:53.000+08:00
+
+Batch 122 selected five sourceable residual History article/question clusters after Batch 121: Chinese, Japanese, Southeast Asian, Korean, and Pacific architecture. Local captures live under vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122; refined conversions live under vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122. Validation passed locally with 56/56 linked question edits; live git add is blocked by .git/index.lock permissions, and the temporary-index cached diff passed for 141 intended files. Acceptance is tracked in .ai/03_plans/production-line-batch-122-manifest.json and .ai/content-audit-export/source-audited-article-batch-122-local-first-scoped-checks.json.
+
+---
+
 # Batch 121 Local-First Handoff
 
 Generated: 2026-05-13T23:57:31+08:00

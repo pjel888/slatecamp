@@ -1,20 +1,38 @@
 {
   "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:b84a33532e937eb8d165f8ef9debd62066ec7ae22f0e8b338611b1f58ee384f2",
-  "source_count": 1,
+  "slug": "lea-hist-007-05-core-concept",
+  "generated_at": "2026-05-14T00:20:53.000+08:00",
+  "batch_id": "source-audited-article-batch-122-local-first",
   "sources": [
     {
-      "source_id": "478eb8e1-d0d3-4501-a472-abc60e4c52ec",
+      "source_id": "batch122-lea-hist-007-05-core-concept-source-map-capture",
       "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
-      "label": "Pratt, Keith L., and Richard Rutt. *Korea: A Historical and Cultural Dictionary*. Routledge Curzon, 1999. Cho, Sung-yoon. *Traditional Korean Architecture*. Yekyung",
+      "label": "Korean Architecture source-map capture",
       "url": null,
-      "source_type": "heritage_body",
-      "description": "2005. UNESCO World Heritage Centre. *Gyeongju Historic Areas and Hanok Districts*. UNESCO reports, 2000–present",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Korean Architecture.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-05-korean-architecture.source-capture.md",
+      "sha256": "sha256:4da802133d7e4bf410f943db3b20f9416dc9f361f8ad9fb17eab49673f46546f",
+      "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T00:20:53.000+08:00",
+      "updated_at": "2026-05-14T00:20:53.000+08:00"
+    },
+    {
+      "source_id": "batch122-lea-hist-007-05-core-concept-source-map-refined",
+      "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+      "label": "Korean Architecture refined source map",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Korean Architecture and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-05-korean-architecture.refined.md",
+      "sha256": "sha256:1d7de0cd391c61575dcb4532c2459d9025227cf23e17a39f10b7bf78e5a9ed6c",
+      "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T00:20:53.000+08:00",
+      "updated_at": "2026-05-14T00:20:53.000+08:00"
     }
   ]
 }

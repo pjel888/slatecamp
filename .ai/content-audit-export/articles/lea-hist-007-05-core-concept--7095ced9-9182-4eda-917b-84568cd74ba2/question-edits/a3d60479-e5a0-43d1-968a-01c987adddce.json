@@ -1,0 +1,89 @@
+{
+  "question_id": "a3d60479-e5a0-43d1-968a-01c987adddce",
+  "baseline_hash": "sha256:2032adec6066e565cc759287983553fa0ae37358a7322cd97378d8ea31f6487b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-122-local-first source-maps lea-hist-007-05-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-122",
+  "approved_at": "2026-05-14T00:20:53.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+    "parent_article_slug": "lea-hist-007-05-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary.",
+    "checked_markdown_lines": [
+      "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch122-lea-hist-007-05-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-05-korean-architecture.source-capture.md",
+        "sha256": "sha256:4da802133d7e4bf410f943db3b20f9416dc9f361f8ad9fb17eab49673f46546f",
+        "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+      },
+      {
+        "source_id": "batch122-lea-hist-007-05-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-05-korean-architecture.refined.md",
+        "sha256": "sha256:1d7de0cd391c61575dcb4532c2459d9025227cf23e17a39f10b7bf78e5a9ed6c",
+        "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+      }
+    ],
+    "local_source_safe_action": "Batch 122 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-122-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "a3d60479-e5a0-43d1-968a-01c987adddce",
+    "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+    "topic_id": "78df6176-b5a3-4a10-8705-5cc9f4d3c757",
+    "text": "What does the hanok's emphasis on restraint, site responsiveness, and timber joinery precision reflect about Korean architectural values compared to Chinese cosmological symbolism?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Restraint indicates poverty and lack of resources in Korean architecture, which is a simplistic view"
+      },
+      {
+        "id": "b",
+        "text": "Restraint is cultivated craft reflecting site responsiveness and timber joinery precision as signs of high status, prioritizing practical sophistication over cosmic symbolism or ornamental display."
+      },
+      {
+        "id": "c",
+        "text": "Korean restraint is identical to Chinese minimalism; the traditions are equivalent, which overlooks cultural nuances"
+      },
+      {
+        "id": "d",
+        "text": "Restraint is accidental and reflects no intentional aesthetic principle, which is inaccurate"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Restraint indicates poverty and lack of resources in Korean architecture, which is a simplistic view is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "c": "Korean restraint is identical to Chinese minimalism; the traditions are equivalent, which overlooks cultural nuances is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "d": "Restraint is accidental and reflects no intentional aesthetic principle, which is inaccurate is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "correct": "Restraint is cultivated craft reflecting site responsiveness and timber joinery precision as signs of high status, prioritizing practical sophistication over cosmic symbolism or ornamental display. matches the Batch 122 source-map anchors for Korean Architecture.",
+      "takeaway": "Korean Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries."
+    },
+    "explanation": "Restraint is cultivated craft reflecting site responsiveness and timber joinery precision as signs of high status, prioritizing practical sophistication over cosmic symbolism or ornamental display. matches the Batch 122 source-map anchors for Korean Architecture. Korean Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries.",
+    "code_citation": null,
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "CON"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-007-05-006",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.518466+00:00",
+    "updated_at": "2026-05-06T15:39:32.381346+00:00",
+    "content_hash": "sha256:2032adec6066e565cc759287983553fa0ae37358a7322cd97378d8ea31f6487b"
+  }
+}

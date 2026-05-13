@@ -1,0 +1,89 @@
+{
+  "question_id": "b3a9da15-ca6e-4d79-aef0-b7205961c3e4",
+  "baseline_hash": "sha256:248989e7e35b3c43c7688a437e0d23a05c77e3ed0147b1688aefa00b4e936194",
+  "action": "replace",
+  "reason": "source-audited-article-batch-122-local-first source-maps lea-hist-007-05-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-122",
+  "approved_at": "2026-05-14T00:20:53.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+    "parent_article_slug": "lea-hist-007-05-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary.",
+    "checked_markdown_lines": [
+      "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch122-lea-hist-007-05-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-05-korean-architecture.source-capture.md",
+        "sha256": "sha256:4da802133d7e4bf410f943db3b20f9416dc9f361f8ad9fb17eab49673f46546f",
+        "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+      },
+      {
+        "source_id": "batch122-lea-hist-007-05-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-05-korean-architecture.refined.md",
+        "sha256": "sha256:1d7de0cd391c61575dcb4532c2459d9025227cf23e17a39f10b7bf78e5a9ed6c",
+        "locator": "UNESCO Changdeokgung and Bulguksa/Seokguram captures plus Korea official Gyeongbokgung and hanok/ondol locators for Joseon palace identity, Korean site integration, Buddhist temple anchors, hanok, and ondol vocabulary."
+      }
+    ],
+    "local_source_safe_action": "Batch 122 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-122-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "b3a9da15-ca6e-4d79-aef0-b7205961c3e4",
+    "article_id": "7095ced9-9182-4eda-917b-84568cd74ba2",
+    "topic_id": "78df6176-b5a3-4a10-8705-5cc9f4d3c757",
+    "text": "How does Korean palace architecture differ from Chinese imperial palaces in terms of climate adaptation, site integration, and heating strategy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chinese and Korean palaces are identical; no meaningful differences exist, which is a common misconception due to superficial similarities"
+      },
+      {
+        "id": "b",
+        "text": "Chinese palaces emphasize axial cosmic geometry and glazed tiles; Korean palaces adapt topography, integrate ondol heating, and use restrained decoration emphasizing site responsiveness."
+      },
+      {
+        "id": "c",
+        "text": "Korean palaces are smaller copies of Chinese models without innovation, lacking distinct architectural identity"
+      },
+      {
+        "id": "d",
+        "text": "Korean palaces emphasize elaborate ornamental display; Chinese palaces use minimalist design, which is contrary to historical evidence"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Chinese and Korean palaces are identical; no meaningful differences exist, which is a common misconception due to superficial similarities is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "c": "Korean palaces are smaller copies of Chinese models without innovation, lacking distinct architectural identity is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "d": "Korean palaces emphasize elaborate ornamental display; Chinese palaces use minimalist design, which is contrary to historical evidence is not the best Batch 122 source-map match for Korean Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "correct": "Chinese palaces emphasize axial cosmic geometry and glazed tiles; Korean palaces adapt topography, integrate ondol heating, and use restrained decoration emphasizing site responsiveness. matches the Batch 122 source-map anchors for Korean Architecture.",
+      "takeaway": "Korean Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries."
+    },
+    "explanation": "Chinese palaces emphasize axial cosmic geometry and glazed tiles; Korean palaces adapt topography, integrate ondol heating, and use restrained decoration emphasizing site responsiveness. matches the Batch 122 source-map anchors for Korean Architecture. Korean Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "design_application",
+    "practice_context": [
+      "CMP"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-007-05-003",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.518466+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:248989e7e35b3c43c7688a437e0d23a05c77e3ed0147b1688aefa00b4e936194"
+  }
+}

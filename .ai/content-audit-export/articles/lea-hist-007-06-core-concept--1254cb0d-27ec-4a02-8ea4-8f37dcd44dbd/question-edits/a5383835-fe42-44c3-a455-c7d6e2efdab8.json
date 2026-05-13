@@ -1,0 +1,89 @@
+{
+  "question_id": "a5383835-fe42-44c3-a455-c7d6e2efdab8",
+  "baseline_hash": "sha256:d936bf2355f4d7af2411110260f869aedfb86e6024dfbe961a64c76d91196574",
+  "action": "replace",
+  "reason": "source-audited-article-batch-122-local-first source-maps lea-hist-007-06-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-122",
+  "approved_at": "2026-05-14T00:20:53.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+    "parent_article_slug": "lea-hist-007-06-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Sydney Opera House and official Sydney Opera House captures plus Te Ara wharenui and Samoa fale captures for modern Pacific-region landmark identity, Utzon/shell geometry, Bennelong Point, and source-safe Pacific meeting-house vocabulary.",
+    "checked_markdown_lines": [
+      "UNESCO Sydney Opera House and official Sydney Opera House captures plus Te Ara wharenui and Samoa fale captures for modern Pacific-region landmark identity, Utzon/shell geometry, Bennelong Point, and source-safe Pacific meeting-house vocabulary."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch122-lea-hist-007-06-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-122/lea-hist-007-06-pacific-architecture.source-capture.md",
+        "sha256": "sha256:a78704e7ac2df2f717045175bacaa3fd0c63f1a72362a887abd6cbe4aee72195",
+        "locator": "UNESCO Sydney Opera House and official Sydney Opera House captures plus Te Ara wharenui and Samoa fale captures for modern Pacific-region landmark identity, Utzon/shell geometry, Bennelong Point, and source-safe Pacific meeting-house vocabulary."
+      },
+      {
+        "source_id": "batch122-lea-hist-007-06-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-122/lea-hist-007-06-pacific-architecture.refined.md",
+        "sha256": "sha256:e23968a477c932c7b5bf3b99e3c3fa07a5a8994fa2e392b9febe54a315a53bbf",
+        "locator": "UNESCO Sydney Opera House and official Sydney Opera House captures plus Te Ara wharenui and Samoa fale captures for modern Pacific-region landmark identity, Utzon/shell geometry, Bennelong Point, and source-safe Pacific meeting-house vocabulary."
+      }
+    ],
+    "local_source_safe_action": "Batch 122 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-122-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "a5383835-fe42-44c3-a455-c7d6e2efdab8",
+    "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+    "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
+    "text": "How do the location (Bennelong Point, harbourfront), material (white tile), and silhouette of the Sydney Opera House contribute to its global iconic status and relationship to its geographic context?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The building's aesthetic is unrelated to its surroundings, which is a common misconception about its design."
+      },
+      {
+        "id": "b",
+        "text": "Waterside site amplifies visual presence and reflection; white cladding responds to harbor light; silhouette echoes sails—maritime symbolism appropriate to coastal Australia—creating global icon status through site integration."
+      },
+      {
+        "id": "c",
+        "text": "The building was moved repeatedly to different locations because its initial siting was unsuccessful, which is historically inaccurate."
+      },
+      {
+        "id": "d",
+        "text": "Geographic context is irrelevant to the building's significance; only the shell form matters, which overlooks the importance of its setting."
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "The building's aesthetic is unrelated to its surroundings, which is a common misconception about its design. is not the best Batch 122 source-map match for Pacific Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "c": "The building was moved repeatedly to different locations because its initial siting was unsuccessful, which is historically inaccurate. is not the best Batch 122 source-map match for Pacific Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "d": "Geographic context is irrelevant to the building's significance; only the shell form matters, which overlooks the importance of its setting. is not the best Batch 122 source-map match for Pacific Architecture. Use the local capture/refined map and the linked article guardrails before relying on older broad wording.",
+      "correct": "Waterside site amplifies visual presence and reflection; white cladding responds to harbor light; silhouette echoes sails—maritime symbolism appropriate to coastal Australia—creating global icon status through site integration. matches the Batch 122 source-map anchors for Pacific Architecture.",
+      "takeaway": "Pacific Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries."
+    },
+    "explanation": "Waterside site amplifies visual presence and reflection; white cladding responds to harbor light; silhouette echoes sails—maritime symbolism appropriate to coastal Australia—creating global icon status through site integration. matches the Batch 122 source-map anchors for Pacific Architecture. Pacific Architecture linked questions should be answered from named monument anchors, source-mapped vocabulary, and cautious claim limits rather than unsupported internet summaries.",
+    "code_citation": null,
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "CON"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-007-06-010",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.518466+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:d936bf2355f4d7af2411110260f869aedfb86e6024dfbe961a64c76d91196574"
+  }
+}
