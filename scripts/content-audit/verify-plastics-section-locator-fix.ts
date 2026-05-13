@@ -2,6 +2,12 @@ import { createHash } from 'node:crypto'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { createContentAuditSupabaseClient, loadEnvLocal } from './lib'
+import type { Json } from '../../src/types/supabase'
+
+function jsonToSearchText(value: Json | null): string {
+  if (value === null) return ''
+  return typeof value === 'string' ? value : JSON.stringify(value)
+}
 
 const articleId = 'c712ee78-2625-434c-bb18-fa7b0f477b33'
 const questionId = 'a1eaf1c8-47ba-4a12-97a4-72dbda1dd150'
@@ -33,7 +39,7 @@ const result = {
     question_id: questionId,
     text: question.text,
     code_citation: question.code_citation,
-    rationale_has_sec_1608: /Sec\. 1608/.test(question.rationale ?? ''),
+    rationale_has_sec_1608: /Sec\. 1608/.test(jsonToSearchText(question.rationale)),
     explanation_has_sec_1608: /Sec\. 1608/.test(question.explanation ?? ''),
   },
   source_evidence: {
