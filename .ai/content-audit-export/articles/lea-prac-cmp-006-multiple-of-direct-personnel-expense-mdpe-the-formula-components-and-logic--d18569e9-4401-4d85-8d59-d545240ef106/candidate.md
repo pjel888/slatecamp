@@ -38,9 +38,11 @@ SPP 202 lists reimbursable items such as transportation, housing and living allo
 
 The source for this batch does not define Direct Personnel Expense as salary plus SSS, PhilHealth, PAG-IBIG, and other statutory benefits. It also does not provide annual billable-hour formulas or fully loaded payroll calculations. Those may be business-accounting methods in practice, but they are not source-supported for this article unless a verified source is added.
 
-### Real-World Application
+### Real-World Scenario
 
 Imagine an architect in Cebu is asked to prepare a research report for a campus planning study. The work involves data gathering, meetings, analysis, and report preparation rather than a full creative building design. MDPE may be appropriate because the work is measurable by technical hours. The architect records the hours of the Architect, consultants, and technical staff, applies the agreed hourly rates, obtains the direct cost, multiplies by the agreed multiplier for overhead and reasonable profit, and then adds reimbursables such as travel or extra printing. If a board question gives hours, rates, multiplier, and reimbursables, the candidate should compute in that sequence. If the question tries to make the candidate use PCC, the topic has shifted to a different compensation method.
+
+The source-safe red flag is whether the work is creative design or measurable non-creative support work. SPP 202 allows MDPE for non-creative work such as accounting, secretarial work, research, data gathering, preparation of reports, and similar work. A full building design problem should not be forced into MDPE unless the question or agreement expressly frames the service that way.
 
 ### Source Locator
 

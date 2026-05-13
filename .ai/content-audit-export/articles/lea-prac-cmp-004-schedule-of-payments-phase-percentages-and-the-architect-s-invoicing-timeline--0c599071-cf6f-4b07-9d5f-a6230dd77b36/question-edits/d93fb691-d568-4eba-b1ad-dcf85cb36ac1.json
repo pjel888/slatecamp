@@ -2,51 +2,49 @@
   "question_id": "d93fb691-d568-4eba-b1ad-dcf85cb36ac1",
   "baseline_hash": "sha256:77f119c6966ad8fb71b6fbd57087198d582b08b8eb96bc75fbd01944a7a72ef2",
   "action": "replace",
-  "reason": "source-audited-article-batch-035-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
-  "approved_by": "codex-local-source-audit-batch-035",
-  "approved_at": "2026-05-11T11:27:41+08:00",
+  "reason": "source-audited-article-batch-105-local-first refreshed linked professional-practice question against current local raw PDF/source anchors for lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
+  "approved_by": "codex-local-source-audit-batch-105",
+  "approved_at": "2026-05-13T12:52:00+08:00",
   "source_audit_support": {
     "parent_article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
     "parent_article_slug": "lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline",
     "parent_article_title": "Schedule of Payments Phase Percentages",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+    "source_locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
     "checked_sources": [
       {
         "source_id": "uap-document-401-402-local",
         "label": "UAP Document 401-402 - Architect-Owner Agreement",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
         "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
         "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
-        "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "source_locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
         "checked_markdown_lines": [
-          "UAP Document 401-402 refined markdown lines 77-89",
-          "UAP Document 401-402 refined markdown lines 119-124",
-          "UAP Standards of Professional Practice refined markdown lines 300-320"
+          "UAP Document 401-402 refined markdown lines 77-89 and 119-124",
+          "Standards of Professional Practice2 refined markdown lines 300-320"
         ]
       },
       {
         "source_id": "uap-standards-professional-practice2-local",
         "label": "UAP Standards of Professional Practice - compiled SPP source",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
         "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
         "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-        "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "source_locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
         "checked_markdown_lines": [
-          "UAP Document 401-402 refined markdown lines 77-89",
-          "UAP Document 401-402 refined markdown lines 119-124",
-          "UAP Standards of Professional Practice refined markdown lines 300-320"
+          "UAP Document 401-402 refined markdown lines 77-89 and 119-124",
+          "Standards of Professional Practice2 refined markdown lines 300-320"
         ]
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+    "local_source_safe_action": "Batch 105 refreshed question text, options, answer key, rationale, explanation, and code citation to the audited article scope."
   },
   "proposed": {
     "text": "At completion of Schematic Design Services, total payment is brought to what cumulative amount?",

@@ -26,9 +26,11 @@ The multiplier is not an arbitrary bonus. It is the factor applied to direct per
 
 Some explanations decompose a multiplier into fixed overhead, profit, and non-technical factors. That can be useful for internal firm accounting, but it is not the source text for this batch. If a question asks for the SPP-supported multiplier range, the answer is 1.5 to 2.5. If a question asks why a multiplier might be higher within that range, the source-supported answer is higher overhead, more complex project demands, office setup, or the Architect's experience.
 
-### Real-World Application
+### Real-World Scenario
 
 Suppose a Manila firm is pricing a technical research assignment using MDPE. The direct personnel cost is PHP 1,200,000. If the agreed multiplier is 2.5, the fee before reimbursables is PHP 3,000,000. If the client asks why the firm cannot use 3.2, the architect should not cite SPP 202 for that number because the checked source gives 1.5 to 2.5. The architect may negotiate contract terms, but for LEA review the candidate must answer from the source-supported range. This is a common board trap: a higher number may look commercially plausible, but the exam is asking for the professional-practice standard.
+
+If the problem gives a multiplier inside 1.5 to 2.5, use it. If it asks for the SPP-supported range, answer the range. If it gives a multiplier above 2.5 and asks whether SPP 202 supports it, reject that citation unless another verified source is supplied. The evidence for this batch supports the range and qualitative factors, not a table of premium add-ons.
 
 ### Exam Traps
 

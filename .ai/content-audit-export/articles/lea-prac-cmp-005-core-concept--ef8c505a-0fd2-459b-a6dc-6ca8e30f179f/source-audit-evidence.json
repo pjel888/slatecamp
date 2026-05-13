@@ -1,9 +1,9 @@
 {
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-034-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T10:59:50+08:00",
+  "batch_id": "source-audited-article-batch-105-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T12:52:00+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
@@ -12,10 +12,10 @@
     "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-005-core-concept--ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-005-core-concept--ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-005-core-concept--ef8c505a-0fd2-459b-a6dc-6ca8e30f179f/candidate.md",
-    "candidate_sha256": "sha256:d8bde9936c751b1e4ae65a5f2f64cc2465fb8b71bb2d719572987340734e2574",
-    "normalized_sha256": "sha256:d8bde9936c751b1e4ae65a5f2f64cc2465fb8b71bb2d719572987340734e2574",
+    "candidate_sha256": "sha256:8f03a035623f72790ec114ac000796ebfd39f6936066434ba4665de36f1c208f",
+    "normalized_sha256": "sha256:8f03a035623f72790ec114ac000796ebfd39f6936066434ba4665de36f1c208f",
     "linked_questions_sha256": "sha256:79d8b841334a2433516168af122d78c8b49dac05089ebe1f79e53c1fe2275699",
-    "sources_sha256": "sha256:0dc03eac1a0855af20f8455dff5854144f1ded511e2e9ee1367dad806717b790"
+    "sources_sha256": "sha256:b60f4b89bef0202fa2d7d96d4e4ceb7ea0734e7392d2cc4e11691505f4bc003e"
   },
   "classification": {
     "content_domain": "LEA Professional Practice and Compensation",
@@ -24,17 +24,18 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "94682cb2-9924-4fed-9179-aab193d2e9a3",
       "161e4f34-2ecd-43c7-a658-74ab9114baee",
       "1fe82534-320b-4634-8380-de5996d8aa8b",
+      "22cb5bdb-5b29-4337-9c0d-caf5878b8e4f",
+      "5e88e784-aace-4e80-b589-f7cf44fb2fa6",
       "69443e83-b35b-43c4-a793-510cf3eb300b",
       "890102e0-0e4d-4bc7-aff7-f3ba890d6d2b",
-      "c0495bb4-7f26-4bb8-9539-a6cc4d602a5d",
-      "22cb5bdb-5b29-4337-9c0d-caf5878b8e4f",
+      "94682cb2-9924-4fed-9179-aab193d2e9a3",
       "aac489aa-4559-47ca-a123-683d99e211a4",
-      "5e88e784-aace-4e80-b589-f7cf44fb2fa6",
-      "ad07d524-766d-49b9-b737-69035179bd37"
-    ]
+      "ad07d524-766d-49b9-b737-69035179bd37",
+      "c0495bb4-7f26-4bb8-9539-a6cc4d602a5d"
+    ],
+    "source_safe_real_world_scenario": "added"
   },
   "paths": {
     "article_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-005-core-concept--ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
@@ -59,65 +60,68 @@
       "source_id": "uap-spp-202-local",
       "label": "UAP SPP Document 202 - Regular Design Services",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
       "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
       "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
-      "source_locator": "UAP SPP 202 refined markdown lines 173-183",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "UAP SPP 202 refined markdown lines 173-183"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     },
     {
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 300-350",
-        "362-418",
-        "475-586",
-        "1036-1077",
-        "1097-1215"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     },
     {
       "source_id": "uap-code-of-ethics-local",
       "label": "UAP Document Code of Ethics",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
       "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
       "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
-      "source_locator": "UAP Code of Ethics refined markdown lines 44-58, 60-71, 81-89",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "UAP Code of Ethics refined markdown lines 44-58",
-        "60-71",
-        "81-89"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     },
     {
       "source_id": "ra-9266-irr-local",
       "label": "RA 9266 IRR Architecture Act of 2004",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
       "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
       "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-      "source_locator": "RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "RA 9266 IRR refined markdown lines 674-680",
-        "688-690",
-        "736-738",
-        "853-855"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     }
   ],
@@ -126,71 +130,74 @@
       "source_id": "uap-spp-202-local",
       "label": "UAP SPP Document 202 - Regular Design Services",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
       "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
       "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
-      "source_locator": "UAP SPP 202 refined markdown lines 173-183",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "UAP SPP 202 refined markdown lines 173-183"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     },
     {
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 300-350",
-        "362-418",
-        "475-586",
-        "1036-1077",
-        "1097-1215"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     },
     {
       "source_id": "uap-code-of-ethics-local",
       "label": "UAP Document Code of Ethics",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
       "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
       "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
-      "source_locator": "UAP Code of Ethics refined markdown lines 44-58, 60-71, 81-89",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "UAP Code of Ethics refined markdown lines 44-58",
-        "60-71",
-        "81-89"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     },
     {
       "source_id": "ra-9266-irr-local",
       "label": "RA 9266 IRR Architecture Act of 2004",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
       "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
       "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-      "source_locator": "RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "source_locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
       "checked_markdown_lines": [
-        "RA 9266 IRR refined markdown lines 674-680",
-        "688-690",
-        "736-738",
-        "853-855"
+        "SPP 202 refined markdown lines 173-183",
+        "Standards of Professional Practice2 refined markdown lines 414-457 and 539-551",
+        "UAP Code of Ethics refined markdown lines 48-56",
+        "RA 9266 IRR refined markdown lines 674-680 and 688-690"
       ]
     }
   ],
   "claims": [
     {
-      "claim_id": "b034-cmp-01",
+      "claim_id": "b105-cmp-01",
       "claim_text": "Regular Design Services are organized into six phases.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -204,7 +211,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-cmp-02",
+      "claim_id": "b105-cmp-02",
       "claim_text": "The compiled SPP describes regular design phase tasks.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -218,7 +225,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-cmp-03",
+      "claim_id": "b105-cmp-03",
       "claim_text": "Regular Design Service compensation may use percentage of PCC and other methods.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -232,7 +239,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-cmp-04",
+      "claim_id": "b105-cmp-04",
       "claim_text": "PCC includes completed building costs but excludes professional fees.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -246,7 +253,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-cmp-05",
+      "claim_id": "b105-cmp-05",
       "claim_text": "The Code requires scope, charges, and commensurate professional fees.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -260,7 +267,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-94682cb2-9924-4fed-9179-aab193d2e9a3",
+      "claim_id": "b105-question-94682cb2-9924-4fed-9179-aab193d2e9a3",
       "claim_text": "Question 94682cb2-9924-4fed-9179-aab193d2e9a3 / ALE-PRAC-CMP-005-008 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -274,7 +281,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-161e4f34-2ecd-43c7-a658-74ab9114baee",
+      "claim_id": "b105-question-161e4f34-2ecd-43c7-a658-74ab9114baee",
       "claim_text": "Question 161e4f34-2ecd-43c7-a658-74ab9114baee / ALE-PRAC-CMP-005-010 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -288,7 +295,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-1fe82534-320b-4634-8380-de5996d8aa8b",
+      "claim_id": "b105-question-1fe82534-320b-4634-8380-de5996d8aa8b",
       "claim_text": "Question 1fe82534-320b-4634-8380-de5996d8aa8b / ALE-PRAC-CMP-005-003 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -302,7 +309,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-69443e83-b35b-43c4-a793-510cf3eb300b",
+      "claim_id": "b105-question-69443e83-b35b-43c4-a793-510cf3eb300b",
       "claim_text": "Question 69443e83-b35b-43c4-a793-510cf3eb300b / ALE-PRAC-CMP-005-009 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -316,7 +323,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-890102e0-0e4d-4bc7-aff7-f3ba890d6d2b",
+      "claim_id": "b105-question-890102e0-0e4d-4bc7-aff7-f3ba890d6d2b",
       "claim_text": "Question 890102e0-0e4d-4bc7-aff7-f3ba890d6d2b / ALE-PRAC-CMP-005-006 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -330,7 +337,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-c0495bb4-7f26-4bb8-9539-a6cc4d602a5d",
+      "claim_id": "b105-question-c0495bb4-7f26-4bb8-9539-a6cc4d602a5d",
       "claim_text": "Question c0495bb4-7f26-4bb8-9539-a6cc4d602a5d / ALE-PRAC-CMP-005-005 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -344,7 +351,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-22cb5bdb-5b29-4337-9c0d-caf5878b8e4f",
+      "claim_id": "b105-question-22cb5bdb-5b29-4337-9c0d-caf5878b8e4f",
       "claim_text": "Question 22cb5bdb-5b29-4337-9c0d-caf5878b8e4f / ALE-PRAC-CMP-005-002 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -358,7 +365,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-aac489aa-4559-47ca-a123-683d99e211a4",
+      "claim_id": "b105-question-aac489aa-4559-47ca-a123-683d99e211a4",
       "claim_text": "Question aac489aa-4559-47ca-a123-683d99e211a4 / ALE-PRAC-CMP-005-001 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -372,7 +379,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-5e88e784-aace-4e80-b589-f7cf44fb2fa6",
+      "claim_id": "b105-question-5e88e784-aace-4e80-b589-f7cf44fb2fa6",
       "claim_text": "Question 5e88e784-aace-4e80-b589-f7cf44fb2fa6 / ALE-PRAC-CMP-005-004 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -386,7 +393,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b034-question-ad07d524-766d-49b9-b737-69035179bd37",
+      "claim_id": "b105-question-ad07d524-766d-49b9-b737-69035179bd37",
       "claim_text": "Question ad07d524-766d-49b9-b737-69035179bd37 / ALE-PRAC-CMP-005-007 has a source-safe question-edits rewrite aligned to lea-prac-cmp-005-core-concept.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -396,6 +403,20 @@
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
         "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
         "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b105-ef8c505a-scenario",
+      "claim_text": "Batch 105 Real-World Scenario adds the percentage-of-PCC decision sequence: service scope, project classification, PCC base, agreement gate, and source-supplied rate.",
+      "claim_type": "source_safe_real_world_scenario",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 202 - Regular Design Services",
+        "locator": "SPP 202 refined markdown lines 173-183; Standards of Professional Practice2 refined markdown lines 414-457 and 539-551; UAP Code of Ethics refined markdown lines 48-56; RA 9266 IRR refined markdown lines 674-680 and 688-690",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "quoted_pdf_excerpt": "Scenario adds application framing only; it does not introduce a new unsourced numeric rule."
       },
       "blockers": []
     }
@@ -414,9 +435,9 @@
     "blockers": []
   },
   "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 034 id> --overwrite --strict; changed candidates; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 034 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 034 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "compose": "PASS: bun scripts/content-audit/compose-candidates.ts --article-id <Batch 105 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun scripts/content-audit/diff-candidates.ts --article-id <Batch 105 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "pending aggregate validation in Batch 105 scoped checks",
     "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
     "supabase_mutation": "not_attempted_by_request"
   },
@@ -428,13 +449,14 @@
     "question_edits_created": 10,
     "answer_key_fields_changed": true,
     "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
+    "external_business_claims_limited_to_source_safe_form": true,
+    "source_safe_real_world_scenario": "added"
   },
   "local_validation": {
     "compose": {
       "passed": true,
       "blockers": [],
-      "candidate_hash": "sha256:d8bde9936c751b1e4ae65a5f2f64cc2465fb8b71bb2d719572987340734e2574",
+      "candidate_hash": "sha256:8f03a035623f72790ec114ac000796ebfd39f6936066434ba4665de36f1c208f",
       "safe_to_diff": true
     },
     "diff": {
@@ -444,14 +466,12 @@
       "changed": true
     },
     "validate": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
-      "warnings": [
-        "expected component-usage.json warning only"
-      ]
+      "warnings": []
     },
     "scoped_checks": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
       "placeholder_matches": []
     }

@@ -1,9 +1,9 @@
 {
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-035-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T11:27:41+08:00",
+  "batch_id": "source-audited-article-batch-105-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T12:52:00+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
@@ -12,10 +12,10 @@
     "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/candidate.md",
-    "candidate_sha256": "sha256:042455a89ee7903780f2ec6888845e93d1ef18f7d939b208aafe94e3f51cbf1a",
-    "normalized_sha256": "sha256:042455a89ee7903780f2ec6888845e93d1ef18f7d939b208aafe94e3f51cbf1a",
-    "linked_questions_sha256": "sha256:b21637ee0f4ad392b81d66d2410e6a40af4b7f5476931aa546e9c38a1b1d48e0",
-    "sources_sha256": "sha256:ee824b29be6cc5216606f4b5b1eeada0dc2068da6bd8975c4704021d9f3504b9"
+    "candidate_sha256": "sha256:82f103d7741a5e7a34235410dafdcc1d5a1346b04beb724a802837b681bc3a37",
+    "normalized_sha256": "sha256:82f103d7741a5e7a34235410dafdcc1d5a1346b04beb724a802837b681bc3a37",
+    "linked_questions_sha256": "sha256:800208c4d012324016edb48562581792c072fed0ac41f26987096131e1c2a748",
+    "sources_sha256": "sha256:d2d685573ab14970a15104b8b8e39503ec76e2f5c572154d2cad97cfa40f97ff"
   },
   "classification": {
     "content_domain": "LEA Professional Practice and PCC",
@@ -24,17 +24,18 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "ee97d4e4-50a8-4c93-a8ed-0397f4c26b6a",
-      "c6907bc2-8c8b-4654-b167-7d65484931b7",
+      "14616f99-a597-44f2-9bc4-2a22675aa078",
       "42b2e06c-d7f8-448e-a673-ec5acd552597",
       "a64d2971-b0e2-4678-bfcb-ade7501b5dc4",
-      "dd7fe46d-6918-4a30-a8f9-26e165bb188a",
-      "f16dd1cf-cf8d-455e-a76d-041a3d632051",
-      "bada848b-412c-4b7e-b547-f033d081f2aa",
-      "14616f99-a597-44f2-9bc4-2a22675aa078",
       "ac4629c9-78cf-4e2a-9c61-2f9cba6b9c57",
-      "b85121c9-dece-4221-b3a1-9335ed7b27b2"
-    ]
+      "b85121c9-dece-4221-b3a1-9335ed7b27b2",
+      "bada848b-412c-4b7e-b547-f033d081f2aa",
+      "c6907bc2-8c8b-4654-b167-7d65484931b7",
+      "dd7fe46d-6918-4a30-a8f9-26e165bb188a",
+      "ee97d4e4-50a8-4c93-a8ed-0397f4c26b6a",
+      "f16dd1cf-cf8d-455e-a76d-041a3d632051"
+    ],
+    "source_safe_real_world_scenario": "added"
   },
   "paths": {
     "article_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
@@ -59,32 +60,30 @@
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 539-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 539-547",
-        "UAP Standards of Professional Practice refined markdown lines 549-551",
-        "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+        "Standards of Professional Practice2 refined markdown lines 539-551",
+        "UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129"
       ]
     },
     {
       "source_id": "uap-document-401-402-local",
       "label": "UAP Document 401-402 - Architect-Owner Agreement",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
       "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
       "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 539-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 539-547",
-        "UAP Standards of Professional Practice refined markdown lines 549-551",
-        "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+        "Standards of Professional Practice2 refined markdown lines 539-551",
+        "UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129"
       ]
     }
   ],
@@ -93,38 +92,36 @@
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 539-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 539-547",
-        "UAP Standards of Professional Practice refined markdown lines 549-551",
-        "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+        "Standards of Professional Practice2 refined markdown lines 539-551",
+        "UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129"
       ]
     },
     {
       "source_id": "uap-document-401-402-local",
       "label": "UAP Document 401-402 - Architect-Owner Agreement",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
       "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
       "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 539-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 539-547",
-        "UAP Standards of Professional Practice refined markdown lines 549-551",
-        "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+        "Standards of Professional Practice2 refined markdown lines 539-551",
+        "UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129"
       ]
     }
   ],
   "claims": [
     {
-      "claim_id": "b035-5967e69f-01",
+      "claim_id": "b105-5967e69f-01",
       "claim_text": "PCC includes completed building work, designed systems, fair-market owner-furnished items, and excludes professional fees/inspector salaries.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -138,7 +135,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-5967e69f-02",
+      "claim_id": "b105-5967e69f-02",
       "claim_text": "Project development cost includes construction plus professional fees, permits, utilities, land, and financing items.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -152,7 +149,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-5967e69f-03",
+      "claim_id": "b105-5967e69f-03",
       "claim_text": "Agreement text covers payment basis, PCC definition, and non-guarantee of SPPCC/cost estimates.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -166,7 +163,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-ee97d4e4-50a8-4c93-a8ed-0397f4c26b6a",
+      "claim_id": "b105-question-ee97d4e4-50a8-4c93-a8ed-0397f4c26b6a",
       "claim_text": "Question ee97d4e4-50a8-4c93-a8ed-0397f4c26b6a / ALE-PRAC-CMP-003-004 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -180,7 +177,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-c6907bc2-8c8b-4654-b167-7d65484931b7",
+      "claim_id": "b105-question-c6907bc2-8c8b-4654-b167-7d65484931b7",
       "claim_text": "Question c6907bc2-8c8b-4654-b167-7d65484931b7 / ALE-PRAC-CMP-003-005 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -194,7 +191,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-42b2e06c-d7f8-448e-a673-ec5acd552597",
+      "claim_id": "b105-question-42b2e06c-d7f8-448e-a673-ec5acd552597",
       "claim_text": "Question 42b2e06c-d7f8-448e-a673-ec5acd552597 / ALE-PRAC-CMP-003-002 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -208,7 +205,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-a64d2971-b0e2-4678-bfcb-ade7501b5dc4",
+      "claim_id": "b105-question-a64d2971-b0e2-4678-bfcb-ade7501b5dc4",
       "claim_text": "Question a64d2971-b0e2-4678-bfcb-ade7501b5dc4 / ALE-PRAC-CMP-003-001 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -222,7 +219,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-dd7fe46d-6918-4a30-a8f9-26e165bb188a",
+      "claim_id": "b105-question-dd7fe46d-6918-4a30-a8f9-26e165bb188a",
       "claim_text": "Question dd7fe46d-6918-4a30-a8f9-26e165bb188a / ALE-PRAC-CMP-003-003 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -236,7 +233,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-f16dd1cf-cf8d-455e-a76d-041a3d632051",
+      "claim_id": "b105-question-f16dd1cf-cf8d-455e-a76d-041a3d632051",
       "claim_text": "Question f16dd1cf-cf8d-455e-a76d-041a3d632051 / ALE-PRAC-CMP-003-006 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -250,7 +247,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-bada848b-412c-4b7e-b547-f033d081f2aa",
+      "claim_id": "b105-question-bada848b-412c-4b7e-b547-f033d081f2aa",
       "claim_text": "Question bada848b-412c-4b7e-b547-f033d081f2aa / ALE-PRAC-CMP-003-008 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -264,7 +261,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-14616f99-a597-44f2-9bc4-2a22675aa078",
+      "claim_id": "b105-question-14616f99-a597-44f2-9bc4-2a22675aa078",
       "claim_text": "Question 14616f99-a597-44f2-9bc4-2a22675aa078 / ALE-PRAC-CMP-003-007 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -278,7 +275,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-ac4629c9-78cf-4e2a-9c61-2f9cba6b9c57",
+      "claim_id": "b105-question-ac4629c9-78cf-4e2a-9c61-2f9cba6b9c57",
       "claim_text": "Question ac4629c9-78cf-4e2a-9c61-2f9cba6b9c57 / ALE-PRAC-CMP-003-009 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -292,7 +289,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-b85121c9-dece-4221-b3a1-9335ed7b27b2",
+      "claim_id": "b105-question-b85121c9-dece-4221-b3a1-9335ed7b27b2",
       "claim_text": "Question b85121c9-dece-4221-b3a1-9335ed7b27b2 / ALE-PRAC-CMP-003-010 has a source-safe question-edits rewrite aligned to lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -302,6 +299,20 @@
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
         "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
         "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited local source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b105-5967e69f-scenario",
+      "claim_text": "Batch 105 Real-World Scenario keeps PCC, excluded professional/inspector costs, and project development cost in separate source-backed buckets.",
+      "claim_type": "source_safe_real_world_scenario",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "Standards of Professional Practice2 refined markdown lines 539-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, and 128-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "Scenario adds application framing only; it does not introduce a new unsourced numeric rule."
       },
       "blockers": []
     }
@@ -320,9 +331,9 @@
     "blockers": []
   },
   "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 035 id> --overwrite --strict; changed candidates; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 035 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 035 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "compose": "PASS: bun scripts/content-audit/compose-candidates.ts --article-id <Batch 105 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun scripts/content-audit/diff-candidates.ts --article-id <Batch 105 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "pending aggregate validation in Batch 105 scoped checks",
     "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
     "supabase_mutation": "not_attempted_by_request"
   },
@@ -334,13 +345,14 @@
     "question_edits_created": 10,
     "answer_key_fields_changed": true,
     "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
+    "external_business_claims_limited_to_source_safe_form": true,
+    "source_safe_real_world_scenario": "added"
   },
   "local_validation": {
     "compose": {
       "passed": true,
       "blockers": [],
-      "candidate_hash": "sha256:042455a89ee7903780f2ec6888845e93d1ef18f7d939b208aafe94e3f51cbf1a",
+      "candidate_hash": "sha256:82f103d7741a5e7a34235410dafdcc1d5a1346b04beb724a802837b681bc3a37",
       "safe_to_diff": true
     },
     "diff": {
@@ -350,14 +362,12 @@
       "changed": true
     },
     "validate": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
-      "warnings": [
-        "expected component-usage.json warning only"
-      ]
+      "warnings": []
     },
     "scoped_checks": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
       "placeholder_matches": []
     }

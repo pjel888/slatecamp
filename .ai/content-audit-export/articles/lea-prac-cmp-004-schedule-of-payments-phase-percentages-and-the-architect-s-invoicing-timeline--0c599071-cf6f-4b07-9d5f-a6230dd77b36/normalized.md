@@ -30,9 +30,11 @@ Article 3.02 states that after award to the winning constructor-bidder, payments
 
 Article 7.08 gives a useful cross-check in the suspension or abandonment context. It states that completion through Contract Documents equals 85.0% of the Architect's work, while the remaining 15.0% is composed of 10.0% for liability under Article 1723 of the Civil Code and 5.0% for construction phase service, including contract document forms and periodic visits during construction.
 
-### Real-World Application
+### Real-World Scenario
 
 Suppose an architect in Davao prepares an invoice after the Owner approves Contract Documents for a small municipal building. The Owner asks why the invoice is not simply another equal phase billing. The architect should point to the cumulative Article 3.02 structure. The contract has already passed Schematic Design and Design Development; completion of Contract Documents brings total payment to 85.0% of the Basic Fee. The invoice should show the total fee base, the cumulative percentage now earned, previous payments already made, and the net amount due. If bidding later produces a winning bid different from the probable cost, Article 3.02 provides an adjustment step tied to the lowest bona fide bid or winning bid price. This is not guesswork; it is the payment sequence stated in the Owner-Architect Agreement form.
+
+For a board computation, write the milestone as a cumulative target, not as a separate phase slice. If previous payments already reached 35.0% at Design Development, the Contract Documents billing is the amount needed to reach 85.0%, not an additional 85.0% on top of earlier payments. That distinction is the common trap.
 
 ### Unsupported Schedules to Avoid
 

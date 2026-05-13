@@ -34,9 +34,11 @@ UAP Document 401-402, Article 9 states that the Architect does not guarantee est
 
 Do not memorize unsupported accuracy bands for this topic unless a source is supplied. The source available for this batch supports the non-guarantee principle, not fixed percentage accuracy ranges by phase.
 
-### Real-World Application
+### Real-World Scenario
 
 Suppose an architect in Iloilo is preparing a school building agreement. The Owner gives a total project budget that includes land acquisition, survey work, consultant coordination, and an allowance for future furniture. For LEA purposes, the architect should not treat that entire budget as PCC. The architect first identifies the cost of the completed building and the designed systems: structure, electrical works, plumbing, fire protection, air-conditioning if included, and site development elements shown in the plans. Then the architect removes the professional fees of the Architect, Engineer, and Specialist Consultants from the PCC base. If the Owner says a supplier will donate some fixtures, the architect still checks the current fair market value rule because SPP 202 does not let an artificially low purchase price distort PCC. This is exactly the professional habit the board wants: classify the cost before calculating the fee.
+
+The source-safe exam move is to separate three buckets before computing: PCC, excluded professional or inspector costs, and broader project development cost. PCC is the cost of the completed building and designed systems. Project development cost can be wider because it includes construction plus professional fees, permits, utilities, land, financing, and similar owner-side items. A question that mixes these buckets is testing classification before arithmetic.
 
 ### Exam Traps
 

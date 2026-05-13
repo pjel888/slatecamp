@@ -1,9 +1,9 @@
 {
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-035-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T11:27:41+08:00",
+  "batch_id": "source-audited-article-batch-105-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T12:52:00+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
@@ -12,10 +12,10 @@
     "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/candidate.md",
-    "candidate_sha256": "sha256:1c366e3a8ef99bbadcf142f470df4349bd0727dbdbe33523eb91e50b39c9624b",
-    "normalized_sha256": "sha256:1c366e3a8ef99bbadcf142f470df4349bd0727dbdbe33523eb91e50b39c9624b",
-    "linked_questions_sha256": "sha256:70a48927a420f1f7ef3d782111c283d57cf54240c08d7c8ec724573bb8cc8efc",
-    "sources_sha256": "sha256:367a5a57185ca3ba9bd817928c82a4dcd33661aa3cb6f559e7bd6512f2a48f2f"
+    "candidate_sha256": "sha256:beb64b08f2c6b4d2bca530778c4985349785a3f2bbcdf7de24c26cfb8105a502",
+    "normalized_sha256": "sha256:beb64b08f2c6b4d2bca530778c4985349785a3f2bbcdf7de24c26cfb8105a502",
+    "linked_questions_sha256": "sha256:ba198ec038c2dcc361433f5992d58a4f192d9d9c74b77758c32b946def70da31",
+    "sources_sha256": "sha256:ddfd167c689b2ec5f2b77e28881769b4704a2fea214c1012c2f587c67c04ea9e"
   },
   "classification": {
     "content_domain": "LEA Professional Practice and MDPE formula",
@@ -24,17 +24,18 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "784da871-b661-4bd9-95e6-41cc531a2eaf",
-      "a91d6194-2330-405d-b263-11e8c40f1ff2",
-      "ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119",
-      "381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3",
-      "e39f2cd6-f73e-4bbb-9fe9-8d48085e3375",
-      "4093f3c5-3cb0-410d-800f-d1db186ecd9d",
       "20e23ea7-ac46-488c-b73b-22901d78d063",
+      "2dfa755c-6509-4f8f-a5b6-8c7861f07b84",
       "344f3bfb-3dfc-4a00-aff4-11475a4b67d3",
+      "381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3",
+      "4093f3c5-3cb0-410d-800f-d1db186ecd9d",
+      "784da871-b661-4bd9-95e6-41cc531a2eaf",
       "9e391e7d-a5b9-4447-8ff9-f3b5b8e8e775",
-      "2dfa755c-6509-4f8f-a5b6-8c7861f07b84"
-    ]
+      "a91d6194-2330-405d-b263-11e8c40f1ff2",
+      "e39f2cd6-f73e-4bbb-9fe9-8d48085e3375",
+      "ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119"
+    ],
+    "source_safe_real_world_scenario": "added"
   },
   "paths": {
     "article_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106",
@@ -59,30 +60,30 @@
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188, 192-193"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     },
     {
       "source_id": "uap-spp-201-local",
       "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
       "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
       "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188, 192-193"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     }
   ],
@@ -91,36 +92,36 @@
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188, 192-193"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     },
     {
       "source_id": "uap-spp-201-local",
       "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
       "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
       "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188, 192-193"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     }
   ],
   "claims": [
     {
-      "claim_id": "b035-d18569e9-01",
+      "claim_id": "b105-d18569e9-01",
       "claim_text": "MDPE applies to non-creative work, uses technical hours, 1.5 to 2.5 multiplier, reimbursables, and Fee + R formula.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -134,7 +135,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-d18569e9-02",
+      "claim_id": "b105-d18569e9-02",
       "claim_text": "Corroborates MDPE computation, multiplier range, variables, and non-creative-work limitation.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -148,7 +149,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-784da871-b661-4bd9-95e6-41cc531a2eaf",
+      "claim_id": "b105-question-784da871-b661-4bd9-95e6-41cc531a2eaf",
       "claim_text": "Question 784da871-b661-4bd9-95e6-41cc531a2eaf / ALE-PRAC-CMP-006-002 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -162,7 +163,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-a91d6194-2330-405d-b263-11e8c40f1ff2",
+      "claim_id": "b105-question-a91d6194-2330-405d-b263-11e8c40f1ff2",
       "claim_text": "Question a91d6194-2330-405d-b263-11e8c40f1ff2 / ALE-PRAC-CMP-006-008 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -176,7 +177,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119",
+      "claim_id": "b105-question-ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119",
       "claim_text": "Question ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119 / ALE-PRAC-CMP-006-010 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -190,7 +191,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3",
+      "claim_id": "b105-question-381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3",
       "claim_text": "Question 381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3 / ALE-PRAC-CMP-006-004 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -204,7 +205,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-e39f2cd6-f73e-4bbb-9fe9-8d48085e3375",
+      "claim_id": "b105-question-e39f2cd6-f73e-4bbb-9fe9-8d48085e3375",
       "claim_text": "Question e39f2cd6-f73e-4bbb-9fe9-8d48085e3375 / ALE-PRAC-CMP-006-003 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -218,7 +219,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-4093f3c5-3cb0-410d-800f-d1db186ecd9d",
+      "claim_id": "b105-question-4093f3c5-3cb0-410d-800f-d1db186ecd9d",
       "claim_text": "Question 4093f3c5-3cb0-410d-800f-d1db186ecd9d / ALE-PRAC-CMP-006-001 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -232,7 +233,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-20e23ea7-ac46-488c-b73b-22901d78d063",
+      "claim_id": "b105-question-20e23ea7-ac46-488c-b73b-22901d78d063",
       "claim_text": "Question 20e23ea7-ac46-488c-b73b-22901d78d063 / ALE-PRAC-CMP-006-009 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -246,7 +247,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-344f3bfb-3dfc-4a00-aff4-11475a4b67d3",
+      "claim_id": "b105-question-344f3bfb-3dfc-4a00-aff4-11475a4b67d3",
       "claim_text": "Question 344f3bfb-3dfc-4a00-aff4-11475a4b67d3 / ALE-PRAC-CMP-006-006 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -260,7 +261,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-9e391e7d-a5b9-4447-8ff9-f3b5b8e8e775",
+      "claim_id": "b105-question-9e391e7d-a5b9-4447-8ff9-f3b5b8e8e775",
       "claim_text": "Question 9e391e7d-a5b9-4447-8ff9-f3b5b8e8e775 / ALE-PRAC-CMP-006-007 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -274,7 +275,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-2dfa755c-6509-4f8f-a5b6-8c7861f07b84",
+      "claim_id": "b105-question-2dfa755c-6509-4f8f-a5b6-8c7861f07b84",
       "claim_text": "Question 2dfa755c-6509-4f8f-a5b6-8c7861f07b84 / ALE-PRAC-CMP-006-005 has a source-safe question-edits rewrite aligned to lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -284,6 +285,20 @@
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
         "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
         "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited local source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b105-d18569e9-scenario",
+      "claim_text": "Batch 105 Real-World Scenario reinforces the MDPE boundary between measurable non-creative work and creative design services.",
+      "claim_type": "source_safe_real_world_scenario",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "Scenario adds application framing only; it does not introduce a new unsourced numeric rule."
       },
       "blockers": []
     }
@@ -302,9 +317,9 @@
     "blockers": []
   },
   "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 035 id> --overwrite --strict; changed candidates; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 035 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 035 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "compose": "PASS: bun scripts/content-audit/compose-candidates.ts --article-id <Batch 105 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun scripts/content-audit/diff-candidates.ts --article-id <Batch 105 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "pending aggregate validation in Batch 105 scoped checks",
     "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
     "supabase_mutation": "not_attempted_by_request"
   },
@@ -316,13 +331,14 @@
     "question_edits_created": 10,
     "answer_key_fields_changed": true,
     "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
+    "external_business_claims_limited_to_source_safe_form": true,
+    "source_safe_real_world_scenario": "added"
   },
   "local_validation": {
     "compose": {
       "passed": true,
       "blockers": [],
-      "candidate_hash": "sha256:1c366e3a8ef99bbadcf142f470df4349bd0727dbdbe33523eb91e50b39c9624b",
+      "candidate_hash": "sha256:beb64b08f2c6b4d2bca530778c4985349785a3f2bbcdf7de24c26cfb8105a502",
       "safe_to_diff": true
     },
     "diff": {
@@ -332,14 +348,12 @@
       "changed": true
     },
     "validate": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
-      "warnings": [
-        "expected component-usage.json warning only"
-      ]
+      "warnings": []
     },
     "scoped_checks": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
       "placeholder_matches": []
     }

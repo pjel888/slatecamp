@@ -1,3 +1,7 @@
+## Board Exam Quick Check
+
+For percentage-of-PCC questions, do not jump straight to a rate. First verify that the problem is about Regular Design Services, that the cost base is PCC rather than total project development cost, and that the rate or group table is actually supplied by the audited source or exam facts.
+
 # Percentage of PCC Method and Regular Design Service Compensation
 
 For Regular Design Services, the safer exam anchor is not a memorized shortcut. Start with the service scope, the project classification, the Project Construction Cost (PCC), and the agreed compensation method.
@@ -13,3 +17,21 @@ Project classification still matters. The compiled SPP groups work by complexity
 The ethical gate is the service agreement. The Code of Ethics requires the architect to ascertain the exact nature and scope of services and the corresponding professional charges at the start of the client relationship, and to charge a professional fee commensurate with the work involved and professional standing. RA 9266 also treats forced architectural services without a written contract or service agreement as prohibited conduct.
 
 Use this order in a fee problem: identify the service scope, classify the project, define PCC correctly, select the compensation method, then apply only rates and arithmetic that are actually supplied by the exam fact pattern or the audited source.
+
+### Real-World Scenario
+
+A client asks a Quezon City architect to quote a percentage fee for a clinic renovation. The safer professional sequence is not to multiply the client's whole budget immediately. The architect first confirms that the commission is Regular Design Services, identifies whether the project is alteration or renovation work under the classification framework, and separates PCC from broader project development cost. The architect then confirms the agreed compensation method in the service agreement and applies only a source-backed or contract-stated percentage. If the client includes land, permits, professional fees, or financing in the budget figure, those items must not silently become the PCC base for a percentage-of-PCC computation.
+
+### Exam Traps
+
+- Do not use total project development cost as the PCC base.
+- Do not include the architect's own professional fee inside PCC.
+- Do not use a percentage rate unless the question or audited source supplies the rate.
+- Do not skip the service agreement gate; scope and professional charges must be clear at the start of the client relationship.
+
+### Source Locator
+
+- SPP 202.pdf, Regular Design Services six phases, refined markdown lines 173-183.
+- Standards of Professional Practice2.pdf, compensation methods, refined markdown lines 414-457.
+- Standards of Professional Practice2.pdf, PCC definition and exclusions, refined markdown lines 539-551.
+- UAP Document Code of Ethics.pdf, client-scope and professional-charge duties, refined markdown lines 48-56.

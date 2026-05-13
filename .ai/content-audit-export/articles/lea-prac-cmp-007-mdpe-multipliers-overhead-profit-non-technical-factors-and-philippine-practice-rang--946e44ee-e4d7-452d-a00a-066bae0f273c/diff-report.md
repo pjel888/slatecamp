@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges
 
-Generated: 2026-05-11T03:45:27.975Z
+Generated: 2026-05-13T04:31:39.754Z
 Article ID: 946e44ee-e4d7-452d-a00a-066bae0f273c
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:e9109bc9e3d449949a6974cc6b74b0e5d5bbbf1567492fbce08d425096da5519`
-- Normalized: `sha256:4bd70ecbdbaa7a4580c42f7274263fe208f2ea8cf63b1bd00aac7fe0d5a7aa13`
-- Candidate: `sha256:4bd70ecbdbaa7a4580c42f7274263fe208f2ea8cf63b1bd00aac7fe0d5a7aa13`
+- Normalized: `sha256:16dbb9d7a61893657588b6addfe4a766d816686262939ee1a43de37bb7d83d8c`
+- Candidate: `sha256:16dbb9d7a61893657588b6addfe4a766d816686262939ee1a43de37bb7d83d8c`
 
 ## Line summary
 
-- Changed lines: 118
+- Changed lines: 117
 - Inserted lines: 0
-- Deleted lines: 70
+- Deleted lines: 68
 
 ## UI block preservation
 

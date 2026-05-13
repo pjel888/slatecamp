@@ -1,9 +1,9 @@
 {
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-035-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T11:27:41+08:00",
+  "batch_id": "source-audited-article-batch-105-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T12:52:00+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
@@ -12,10 +12,10 @@
     "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/candidate.md",
-    "candidate_sha256": "sha256:1ab04d3bb3fe1d20ea0351a731a29e0f507dba67d46ce6c57ce0683dd082d1b5",
-    "normalized_sha256": "sha256:1ab04d3bb3fe1d20ea0351a731a29e0f507dba67d46ce6c57ce0683dd082d1b5",
-    "linked_questions_sha256": "sha256:26355df2b58a23d0431e08e7f82534d41defb4e2981a06962ed1e7ac8da9bd1f",
-    "sources_sha256": "sha256:97bb8e1d13e0eb8f1b0f64320fa6589925a3b4877af23f3811c0bd6dbd2f1952"
+    "candidate_sha256": "sha256:e88c26b329552be8380ea9182d885f17d2e6fcaeb55c8363f2704a1e406a0875",
+    "normalized_sha256": "sha256:e88c26b329552be8380ea9182d885f17d2e6fcaeb55c8363f2704a1e406a0875",
+    "linked_questions_sha256": "sha256:9ee3221a2725f54128d384d0cbb72e970ebbaa7e197a3fe79b0355887e30112c",
+    "sources_sha256": "sha256:fe0cd806fad23db159a4d9cfa0a3a8424a8d847de5ac4693375866a3db037777"
   },
   "classification": {
     "content_domain": "LEA Professional Practice and payment milestones",
@@ -24,17 +24,18 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "1a6e4b92-c0bc-446b-84ca-9eee79ac5062",
-      "d93fb691-d568-4eba-b1ad-dcf85cb36ac1",
       "0d8dd6eb-66d9-43a3-bd99-599837f56dd3",
-      "5d23ab15-2c82-484f-b696-afafd70ec464",
-      "e61473e5-6df2-4795-ad82-ce858d60bfd1",
+      "1a6e4b92-c0bc-446b-84ca-9eee79ac5062",
       "4a369211-8be9-4a03-bc5f-7f0ca4c4687e",
+      "5d23ab15-2c82-484f-b696-afafd70ec464",
       "c3bb9f1d-9a1b-4ef7-a311-d5f0aa06b5fc",
       "ce2f74eb-b185-424c-89b5-7b52d249dad6",
       "d8927e04-98cf-4576-85c5-e068170b4ccd",
+      "d93fb691-d568-4eba-b1ad-dcf85cb36ac1",
+      "e61473e5-6df2-4795-ad82-ce858d60bfd1",
       "f3ad482f-b655-44e7-9b26-0c8bb610ef8f"
-    ]
+    ],
+    "source_safe_real_world_scenario": "added"
   },
   "paths": {
     "article_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36",
@@ -59,32 +60,30 @@
       "source_id": "uap-document-401-402-local",
       "label": "UAP Document 401-402 - Architect-Owner Agreement",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
       "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
       "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
-      "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "source_locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
       "checked_markdown_lines": [
-        "UAP Document 401-402 refined markdown lines 77-89",
-        "UAP Document 401-402 refined markdown lines 119-124",
-        "UAP Standards of Professional Practice refined markdown lines 300-320"
+        "UAP Document 401-402 refined markdown lines 77-89 and 119-124",
+        "Standards of Professional Practice2 refined markdown lines 300-320"
       ]
     },
     {
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
       "checked_markdown_lines": [
-        "UAP Document 401-402 refined markdown lines 77-89",
-        "UAP Document 401-402 refined markdown lines 119-124",
-        "UAP Standards of Professional Practice refined markdown lines 300-320"
+        "UAP Document 401-402 refined markdown lines 77-89 and 119-124",
+        "Standards of Professional Practice2 refined markdown lines 300-320"
       ]
     }
   ],
@@ -93,38 +92,36 @@
       "source_id": "uap-document-401-402-local",
       "label": "UAP Document 401-402 - Architect-Owner Agreement",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
       "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
       "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
-      "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "source_locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
       "checked_markdown_lines": [
-        "UAP Document 401-402 refined markdown lines 77-89",
-        "UAP Document 401-402 refined markdown lines 119-124",
-        "UAP Standards of Professional Practice refined markdown lines 300-320"
+        "UAP Document 401-402 refined markdown lines 77-89 and 119-124",
+        "Standards of Professional Practice2 refined markdown lines 300-320"
       ]
     },
     {
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
       "checked_markdown_lines": [
-        "UAP Document 401-402 refined markdown lines 77-89",
-        "UAP Document 401-402 refined markdown lines 119-124",
-        "UAP Standards of Professional Practice refined markdown lines 300-320"
+        "UAP Document 401-402 refined markdown lines 77-89 and 119-124",
+        "Standards of Professional Practice2 refined markdown lines 300-320"
       ]
     }
   ],
   "claims": [
     {
-      "claim_id": "b035-0c599071-01",
+      "claim_id": "b105-0c599071-01",
       "claim_text": "Payment milestones: mobilization, 15%, 35%, 85%, bid adjustment, remaining 15%, final balance.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -138,7 +135,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-0c599071-02",
+      "claim_id": "b105-0c599071-02",
       "claim_text": "Contract Documents Phase equals 85%; remaining 15% is split 10% liability and 5% construction phase service.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -152,7 +149,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-0c599071-03",
+      "claim_id": "b105-0c599071-03",
       "claim_text": "Design phase deliverables include SPPCC at schematic, design development, and contract document stages.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -166,7 +163,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-1a6e4b92-c0bc-446b-84ca-9eee79ac5062",
+      "claim_id": "b105-question-1a6e4b92-c0bc-446b-84ca-9eee79ac5062",
       "claim_text": "Question 1a6e4b92-c0bc-446b-84ca-9eee79ac5062 / ALE-PRAC-CMP-004-004 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -180,7 +177,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-d93fb691-d568-4eba-b1ad-dcf85cb36ac1",
+      "claim_id": "b105-question-d93fb691-d568-4eba-b1ad-dcf85cb36ac1",
       "claim_text": "Question d93fb691-d568-4eba-b1ad-dcf85cb36ac1 / ALE-PRAC-CMP-004-009 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -194,7 +191,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-0d8dd6eb-66d9-43a3-bd99-599837f56dd3",
+      "claim_id": "b105-question-0d8dd6eb-66d9-43a3-bd99-599837f56dd3",
       "claim_text": "Question 0d8dd6eb-66d9-43a3-bd99-599837f56dd3 / ALE-PRAC-CMP-004-001 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -208,7 +205,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-5d23ab15-2c82-484f-b696-afafd70ec464",
+      "claim_id": "b105-question-5d23ab15-2c82-484f-b696-afafd70ec464",
       "claim_text": "Question 5d23ab15-2c82-484f-b696-afafd70ec464 / ALE-PRAC-CMP-004-007 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -222,7 +219,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-e61473e5-6df2-4795-ad82-ce858d60bfd1",
+      "claim_id": "b105-question-e61473e5-6df2-4795-ad82-ce858d60bfd1",
       "claim_text": "Question e61473e5-6df2-4795-ad82-ce858d60bfd1 / ALE-PRAC-CMP-004-003 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -236,7 +233,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-4a369211-8be9-4a03-bc5f-7f0ca4c4687e",
+      "claim_id": "b105-question-4a369211-8be9-4a03-bc5f-7f0ca4c4687e",
       "claim_text": "Question 4a369211-8be9-4a03-bc5f-7f0ca4c4687e / ALE-PRAC-CMP-004-002 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -250,7 +247,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-c3bb9f1d-9a1b-4ef7-a311-d5f0aa06b5fc",
+      "claim_id": "b105-question-c3bb9f1d-9a1b-4ef7-a311-d5f0aa06b5fc",
       "claim_text": "Question c3bb9f1d-9a1b-4ef7-a311-d5f0aa06b5fc / ALE-PRAC-CMP-004-010 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -264,7 +261,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-ce2f74eb-b185-424c-89b5-7b52d249dad6",
+      "claim_id": "b105-question-ce2f74eb-b185-424c-89b5-7b52d249dad6",
       "claim_text": "Question ce2f74eb-b185-424c-89b5-7b52d249dad6 / ALE-PRAC-CMP-004-005 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -278,7 +275,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-d8927e04-98cf-4576-85c5-e068170b4ccd",
+      "claim_id": "b105-question-d8927e04-98cf-4576-85c5-e068170b4ccd",
       "claim_text": "Question d8927e04-98cf-4576-85c5-e068170b4ccd / ALE-PRAC-CMP-004-008 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -292,7 +289,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-f3ad482f-b655-44e7-9b26-0c8bb610ef8f",
+      "claim_id": "b105-question-f3ad482f-b655-44e7-9b26-0c8bb610ef8f",
       "claim_text": "Question f3ad482f-b655-44e7-9b26-0c8bb610ef8f / ALE-PRAC-CMP-004-006 has a source-safe question-edits rewrite aligned to lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -302,6 +299,20 @@
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
         "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
         "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited local source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b105-0c599071-scenario",
+      "claim_text": "Batch 105 Real-World Scenario clarifies that 15%, 35%, and 85% are cumulative payment targets, not separate additive phase slices.",
+      "claim_type": "source_safe_real_world_scenario",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Document 401-402 - Architect-Owner Agreement",
+        "locator": "UAP Document 401-402 refined markdown lines 77-89 and 119-124; Standards of Professional Practice2 refined markdown lines 300-320",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "quoted_pdf_excerpt": "Scenario adds application framing only; it does not introduce a new unsourced numeric rule."
       },
       "blockers": []
     }
@@ -320,9 +331,9 @@
     "blockers": []
   },
   "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 035 id> --overwrite --strict; changed candidates; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 035 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 035 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "compose": "PASS: bun scripts/content-audit/compose-candidates.ts --article-id <Batch 105 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun scripts/content-audit/diff-candidates.ts --article-id <Batch 105 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "pending aggregate validation in Batch 105 scoped checks",
     "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
     "supabase_mutation": "not_attempted_by_request"
   },
@@ -334,13 +345,14 @@
     "question_edits_created": 10,
     "answer_key_fields_changed": true,
     "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
+    "external_business_claims_limited_to_source_safe_form": true,
+    "source_safe_real_world_scenario": "added"
   },
   "local_validation": {
     "compose": {
       "passed": true,
       "blockers": [],
-      "candidate_hash": "sha256:1ab04d3bb3fe1d20ea0351a731a29e0f507dba67d46ce6c57ce0683dd082d1b5",
+      "candidate_hash": "sha256:e88c26b329552be8380ea9182d885f17d2e6fcaeb55c8363f2704a1e406a0875",
       "safe_to_diff": true
     },
     "diff": {
@@ -350,14 +362,12 @@
       "changed": true
     },
     "validate": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
-      "warnings": [
-        "expected component-usage.json warning only"
-      ]
+      "warnings": []
     },
     "scoped_checks": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
       "placeholder_matches": []
     }

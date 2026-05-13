@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-005-core-concept
 
-Generated: 2026-05-11T03:19:36.435Z
+Generated: 2026-05-13T04:31:29.860Z
 Article ID: ef8c505a-0fd2-459b-a6dc-6ca8e30f179f
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:c8b779111ece07dc2f495dd849d654c2d83e329ab30292746fc4fec0ae4f7767`
-- Normalized: `sha256:d8bde9936c751b1e4ae65a5f2f64cc2465fb8b71bb2d719572987340734e2574`
-- Candidate: `sha256:d8bde9936c751b1e4ae65a5f2f64cc2465fb8b71bb2d719572987340734e2574`
+- Normalized: `sha256:8f03a035623f72790ec114ac000796ebfd39f6936066434ba4665de36f1c208f`
+- Candidate: `sha256:8f03a035623f72790ec114ac000796ebfd39f6936066434ba4665de36f1c208f`
 
 ## Line summary
 
-- Changed lines: 112
+- Changed lines: 106
 - Inserted lines: 0
-- Deleted lines: 101
+- Deleted lines: 78
 
 ## UI block preservation
 

@@ -1,9 +1,9 @@
 {
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-035-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T11:27:41+08:00",
+  "batch_id": "source-audited-article-batch-105-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T12:52:00+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
@@ -12,10 +12,10 @@
     "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/candidate.md",
-    "candidate_sha256": "sha256:4bd70ecbdbaa7a4580c42f7274263fe208f2ea8cf63b1bd00aac7fe0d5a7aa13",
-    "normalized_sha256": "sha256:4bd70ecbdbaa7a4580c42f7274263fe208f2ea8cf63b1bd00aac7fe0d5a7aa13",
-    "linked_questions_sha256": "sha256:812a7fecbb6e683c8bd18a1dca5fd0a136760811141155335db7b011766b471c",
-    "sources_sha256": "sha256:8b6325cbba5960032b18e83191ac176c3e4cab1b4fbb90f97ae25f9f0c95f40d"
+    "candidate_sha256": "sha256:16dbb9d7a61893657588b6addfe4a766d816686262939ee1a43de37bb7d83d8c",
+    "normalized_sha256": "sha256:16dbb9d7a61893657588b6addfe4a766d816686262939ee1a43de37bb7d83d8c",
+    "linked_questions_sha256": "sha256:bee2653b2ce03ab0a41886004add5a3b1c0d4ac46d9aa8cba8008e4904b4e30c",
+    "sources_sha256": "sha256:0ce56c85042dc408c58555298ef3b3f6c4efb266d9a7079d87ab7d1660222ca1"
   },
   "classification": {
     "content_domain": "LEA Professional Practice and MDPE multiplier range",
@@ -24,17 +24,18 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "6c238891-06d7-40cc-b7e3-dd87d108937d",
-      "c345f793-1b09-4d19-9f2d-e045303bff54",
-      "79672571-9965-4604-b18d-9f4a18aa978b",
-      "e8d5bd9e-79ea-460b-9487-c2e0050fdd80",
-      "e5b1465f-86fe-4e33-a1a6-bbe6c557d297",
-      "5cf56df2-5967-4f67-98ab-d325ee7011c0",
-      "330e717d-6e2f-42e1-835e-d6de97657b7f",
+      "04d1074d-a52a-4812-8150-5fa13dee221b",
       "1b739814-7580-462e-83d4-7f4aca631188",
       "2e5a5502-1f77-4d4d-a09d-e0f3e5bbaef0",
-      "04d1074d-a52a-4812-8150-5fa13dee221b"
-    ]
+      "330e717d-6e2f-42e1-835e-d6de97657b7f",
+      "5cf56df2-5967-4f67-98ab-d325ee7011c0",
+      "6c238891-06d7-40cc-b7e3-dd87d108937d",
+      "79672571-9965-4604-b18d-9f4a18aa978b",
+      "c345f793-1b09-4d19-9f2d-e045303bff54",
+      "e5b1465f-86fe-4e33-a1a6-bbe6c557d297",
+      "e8d5bd9e-79ea-460b-9487-c2e0050fdd80"
+    ],
+    "source_safe_real_world_scenario": "added"
   },
   "paths": {
     "article_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c",
@@ -59,30 +60,30 @@
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     },
     {
       "source_id": "uap-spp-201-local",
       "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
       "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
       "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     }
   ],
@@ -91,36 +92,36 @@
       "source_id": "uap-standards-professional-practice2-local",
       "label": "UAP Standards of Professional Practice - compiled SPP source",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
       "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     },
     {
       "source_id": "uap-spp-201-local",
       "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
       "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
       "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-      "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+      "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
       "checked_markdown_lines": [
-        "UAP Standards of Professional Practice refined markdown lines 419-435",
-        "SPP 201 refined markdown lines 165-188"
+        "Standards of Professional Practice2 refined markdown lines 419-435",
+        "SPP 201 refined markdown lines 165-188 and 192-193"
       ]
     }
   ],
   "claims": [
     {
-      "claim_id": "b035-946e44ee-01",
+      "claim_id": "b105-946e44ee-01",
       "claim_text": "Multiplier range, factors, and formula variables.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -134,7 +135,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-946e44ee-02",
+      "claim_id": "b105-946e44ee-02",
       "claim_text": "Corroborates 1.5 to 2.5 multiplier and formula variables.",
       "claim_type": "professional_practice_source_claim",
       "audit_result": "PASS",
@@ -148,7 +149,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-6c238891-06d7-40cc-b7e3-dd87d108937d",
+      "claim_id": "b105-question-6c238891-06d7-40cc-b7e3-dd87d108937d",
       "claim_text": "Question 6c238891-06d7-40cc-b7e3-dd87d108937d / ALE-PRAC-CMP-007-005 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -162,7 +163,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-c345f793-1b09-4d19-9f2d-e045303bff54",
+      "claim_id": "b105-question-c345f793-1b09-4d19-9f2d-e045303bff54",
       "claim_text": "Question c345f793-1b09-4d19-9f2d-e045303bff54 / ALE-PRAC-CMP-007-008 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -176,7 +177,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-79672571-9965-4604-b18d-9f4a18aa978b",
+      "claim_id": "b105-question-79672571-9965-4604-b18d-9f4a18aa978b",
       "claim_text": "Question 79672571-9965-4604-b18d-9f4a18aa978b / ALE-PRAC-CMP-007-002 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -190,7 +191,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-e8d5bd9e-79ea-460b-9487-c2e0050fdd80",
+      "claim_id": "b105-question-e8d5bd9e-79ea-460b-9487-c2e0050fdd80",
       "claim_text": "Question e8d5bd9e-79ea-460b-9487-c2e0050fdd80 / ALE-PRAC-CMP-007-009 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -204,7 +205,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-e5b1465f-86fe-4e33-a1a6-bbe6c557d297",
+      "claim_id": "b105-question-e5b1465f-86fe-4e33-a1a6-bbe6c557d297",
       "claim_text": "Question e5b1465f-86fe-4e33-a1a6-bbe6c557d297 / ALE-PRAC-CMP-007-003 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -218,7 +219,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-5cf56df2-5967-4f67-98ab-d325ee7011c0",
+      "claim_id": "b105-question-5cf56df2-5967-4f67-98ab-d325ee7011c0",
       "claim_text": "Question 5cf56df2-5967-4f67-98ab-d325ee7011c0 / ALE-PRAC-CMP-007-007 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -232,7 +233,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-330e717d-6e2f-42e1-835e-d6de97657b7f",
+      "claim_id": "b105-question-330e717d-6e2f-42e1-835e-d6de97657b7f",
       "claim_text": "Question 330e717d-6e2f-42e1-835e-d6de97657b7f / ALE-PRAC-CMP-007-004 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -246,7 +247,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-1b739814-7580-462e-83d4-7f4aca631188",
+      "claim_id": "b105-question-1b739814-7580-462e-83d4-7f4aca631188",
       "claim_text": "Question 1b739814-7580-462e-83d4-7f4aca631188 / ALE-PRAC-CMP-007-006 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -260,7 +261,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-2e5a5502-1f77-4d4d-a09d-e0f3e5bbaef0",
+      "claim_id": "b105-question-2e5a5502-1f77-4d4d-a09d-e0f3e5bbaef0",
       "claim_text": "Question 2e5a5502-1f77-4d4d-a09d-e0f3e5bbaef0 / ALE-PRAC-CMP-007-010 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -274,7 +275,7 @@
       "blockers": []
     },
     {
-      "claim_id": "b035-question-04d1074d-a52a-4812-8150-5fa13dee221b",
+      "claim_id": "b105-question-04d1074d-a52a-4812-8150-5fa13dee221b",
       "claim_text": "Question 04d1074d-a52a-4812-8150-5fa13dee221b / ALE-PRAC-CMP-007-001 has a source-safe question-edits rewrite aligned to lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
       "claim_type": "linked_question_source_safe_rewrite",
       "audit_result": "PASS",
@@ -284,6 +285,20 @@
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
         "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
         "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited local source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b105-946e44ee-scenario",
+      "claim_text": "Batch 105 Real-World Scenario preserves the source-backed MDPE multiplier range of 1.5 to 2.5 and rejects unsourced premium add-on tables.",
+      "claim_type": "source_safe_real_world_scenario",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "Scenario adds application framing only; it does not introduce a new unsourced numeric rule."
       },
       "blockers": []
     }
@@ -302,9 +317,9 @@
     "blockers": []
   },
   "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 035 id> --overwrite --strict; changed candidates; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 035 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 035 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "compose": "PASS: bun scripts/content-audit/compose-candidates.ts --article-id <Batch 105 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun scripts/content-audit/diff-candidates.ts --article-id <Batch 105 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "pending aggregate validation in Batch 105 scoped checks",
     "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
     "supabase_mutation": "not_attempted_by_request"
   },
@@ -316,13 +331,14 @@
     "question_edits_created": 10,
     "answer_key_fields_changed": true,
     "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
+    "external_business_claims_limited_to_source_safe_form": true,
+    "source_safe_real_world_scenario": "added"
   },
   "local_validation": {
     "compose": {
       "passed": true,
       "blockers": [],
-      "candidate_hash": "sha256:4bd70ecbdbaa7a4580c42f7274263fe208f2ea8cf63b1bd00aac7fe0d5a7aa13",
+      "candidate_hash": "sha256:16dbb9d7a61893657588b6addfe4a766d816686262939ee1a43de37bb7d83d8c",
       "safe_to_diff": true
     },
     "diff": {
@@ -332,14 +348,12 @@
       "changed": true
     },
     "validate": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
-      "warnings": [
-        "expected component-usage.json warning only"
-      ]
+      "warnings": []
     },
     "scoped_checks": {
-      "passed": true,
+      "passed": null,
       "blockers": [],
       "placeholder_matches": []
     }
