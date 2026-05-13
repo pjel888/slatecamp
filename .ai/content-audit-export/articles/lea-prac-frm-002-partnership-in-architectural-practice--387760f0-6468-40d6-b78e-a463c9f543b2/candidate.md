@@ -37,6 +37,10 @@ RA 9266 gives the professional-registration baseline, not a complete dissolution
 
 For projects in progress, the exam-safe answer is to preserve client obligations through a properly authorized registered architect or compliant entity. Do not assume automatic transfer of architect-of-record duties without an agreement and a professional authorization basis.
 
+### Real World Scenario
+
+Three RLAs and one allied technical professional plan to register a design partnership. The source-safe check is not just whether they wrote a private partnership agreement; it is whether the group fits RA 9266's professional-practice conditions: two or more Architects, SEC registration, Board registration, and at least 75 percent RLA composition where the law requires it. If a later withdrawal leaves only one architect, the remaining practice must shift to another compliant form or re-register instead of continuing to call itself an architectural partnership.
+
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

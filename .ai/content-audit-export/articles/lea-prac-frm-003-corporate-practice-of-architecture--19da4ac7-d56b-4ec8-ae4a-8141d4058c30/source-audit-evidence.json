@@ -1,10 +1,11 @@
 {
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-019-local-first",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T23:59:30+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "batch_id": "source-audited-article-batch-100-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T09:54:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_production_db_mutation_no_main_merge",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
   "target": {
     "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
     "slug": "lea-prac-frm-003-corporate-practice-of-architecture",
@@ -12,10 +13,10 @@
     "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/candidate.md",
-    "candidate_sha256": "sha256:c44e70fe335388debc5c2e0677eb0a76c7fe5a5d0973afbc710d8660a7b71723",
-    "normalized_sha256": "sha256:c44e70fe335388debc5c2e0677eb0a76c7fe5a5d0973afbc710d8660a7b71723",
-    "linked_questions_sha256": "sha256:86659756dfa867d7e9bbb0dec761e4853368b5d0d49e8c316e3717ca9a588c98",
-    "sources_sha256": "sha256:61be679e48d68afb8aa4cd4e8148f9423b64c988aacf9f68f7409cab2204fdb3"
+    "candidate_sha256": "sha256:72f89b629d55da3fcc28f2335693fd9f01b34256e09f63fd14d1cbf048c2fb7f",
+    "normalized_sha256": "sha256:72f89b629d55da3fcc28f2335693fd9f01b34256e09f63fd14d1cbf048c2fb7f",
+    "linked_questions_sha256": "sha256:595735ed0f768e9f1dd6e9eaa5163cdc4fcec6bd694df011faf62cb3f3360fad",
+    "sources_sha256": "sha256:eec5c135ae89d2458ef38a680c1a8fd0811496a61d7a5a5fe8a6b7affdcc9a4d"
   },
   "classification": {
     "content_domain": "LEA Professional Practice and Jurisprudence",
@@ -34,7 +35,8 @@
       "d32e8f62-9843-444d-8cd7-53b4221fb775",
       "d4e98688-b5e4-4c4c-9861-82118e717e40",
       "e9a7dcd5-5300-4d8d-8966-dd2a8ebe1725"
-    ]
+    ],
+    "real_world_scenario_status": "eligible-added"
   },
   "paths": {
     "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
@@ -54,61 +56,87 @@
       ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/e9a7dcd5-5300-4d8d-8966-dd2a8ebe1725.json"
     ]
   },
-  "raw_sources": [
-    {
-      "source_key": "ra-9266-irr-architecture-act-2004",
-      "label": "RA 9266 IRR Architecture Act of 2004",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-      "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
-    },
-    {
-      "source_key": "uap-standards-of-professional-practice",
-      "label": "UAP Document Standards of Professional Practice",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
-      "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
-      "source_locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
-    }
-  ],
   "checked_sources": [
     {
-      "source_id": "ra-9266-irr-architecture-act-2004",
+      "source_id": "batch019-lea-prac-frm-003-corporate-practice-of-architecture-ra-9266-irr-architecture-act-2004",
       "label": "RA 9266 IRR Architecture Act of 2004",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "implementing_rules",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
       "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
       "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824",
       "checked_markdown_lines": [
         "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
-      ]
+      ],
+      "local_source_checked": true
     },
     {
-      "source_id": "uap-standards-of-professional-practice",
+      "source_id": "batch019-lea-prac-frm-003-corporate-practice-of-architecture-uap-standards-of-professional-practice",
       "label": "UAP Document Standards of Professional Practice",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "professional_standards",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
       "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
-      "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
       "source_locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
       "checked_markdown_lines": [
         "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
-      ]
+      ],
+      "local_source_checked": true
     }
   ],
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "batch019-lea-prac-frm-003-corporate-practice-of-architecture-ra-9266-irr-architecture-act-2004",
+        "label": "RA 9266 IRR Architecture Act of 2004",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "implementing_rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824",
+        "checked_markdown_lines": [
+          "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+        ],
+        "local_source_checked": true
+      },
+      {
+        "source_id": "batch019-lea-prac-frm-003-corporate-practice-of-architecture-uap-standards-of-professional-practice",
+        "label": "UAP Document Standards of Professional Practice",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "professional_standards",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
+        "checked_markdown_lines": [
+          "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
+    "checked_markdown_lines": [
+      "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824",
+      "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+    ]
+  },
   "claims": [
     {
-      "claim_id": "frm003-claim-01",
-      "claim_text": "Architecture corporation is an incorporated group of architecture/allied professionals with Architects for delivery of professional services.",
+      "claim_id": "batch-100-lea-prac-frm-003-corporate-practice-of-architecture-claim-01",
+      "claim_text": "RA 9266 IRR defines architecture corporation as an incorporated group with Architects delivering professional architecture and allied services.",
       "claim_type": "legal_or_professional_practice_claim",
       "audit_result": "PASS",
+      "support_status": "source_supported",
       "source_support": {
-        "source_label": "RA 9266 IRR",
-        "locator": "raw markdown lines 132-134",
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
         "raw_pdf_paths": [
           "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
           "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
@@ -121,13 +149,14 @@
       "blockers": []
     },
     {
-      "claim_id": "frm003-claim-02",
-      "claim_text": "Architecture corporations must satisfy the 75 percent RLA composition rule and SEC/Board registration.",
+      "claim_id": "batch-100-lea-prac-frm-003-corporate-practice-of-architecture-claim-02",
+      "claim_text": "Section 37 requires SEC and Board registration and at least 75 percent RLA composition across applicable corporate categories.",
       "claim_type": "legal_or_professional_practice_claim",
       "audit_result": "PASS",
+      "support_status": "source_supported",
       "source_support": {
-        "source_label": "RA 9266 IRR",
-        "locator": "raw markdown lines 132-134, 782-803",
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
         "raw_pdf_paths": [
           "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
           "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
@@ -140,13 +169,14 @@
       "blockers": []
     },
     {
-      "claim_id": "frm003-claim-03",
-      "claim_text": "Individual members remain responsible for individual and collective acts as an entity and as provided by law.",
+      "claim_id": "batch-100-lea-prac-frm-003-corporate-practice-of-architecture-claim-03",
+      "claim_text": "The Batch 100 scenario treats non-RLA ownership or governance changes as a professional-practice compliance risk.",
       "claim_type": "legal_or_professional_practice_claim",
       "audit_result": "PASS",
+      "support_status": "source_supported",
       "source_support": {
-        "source_label": "RA 9266 IRR",
-        "locator": "raw markdown lines 794-796",
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824; raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
         "raw_pdf_paths": [
           "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
           "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
@@ -159,14 +189,15 @@
       "blockers": []
     }
   ],
-  "unverified_or_rejected_claims": [
-    "Learner-visible UI marker summaries, internal repair notes, and over-specific business-risk statements were removed from normalized.md and candidate.md.",
-    "Business-liability, insurance, investment, succession, and country-list details were rewritten as separate-source-required where not located in the audited raw sources."
-  ],
-  "removed_or_rewritten_material": [
-    "Removed SLATECAMP_UI_BLOCK marker blocks from normalized.md so candidate.md has no unresolved UI placeholders.",
-    "Rewrote linked questions into source-safe wording aligned to RA 9266 IRR and UAP SPP."
-  ],
+  "question_repair_policy": {
+    "action": "refresh_linked_question_edits_with_batch_100_source_safe_metadata",
+    "source_safe_question_edits": 10,
+    "allowed_question_scope": "Only concepts directly supported by the checked local source lines are used."
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "note": "Batch 100 added a source-safe Real World Scenario grounded in the checked local source lines."
+  },
   "raw_pdf_gate": {
     "status": "PASS",
     "all_legal_code_claims_have_pdf_locator": true,
@@ -174,67 +205,14 @@
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
   },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id 19da4ac7-d56b-4ec8-ae4a-8141d4058c30 --overwrite; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id 19da4ac7-d56b-4ec8-ae4a-8141d4058c30 --summary; safe_to_push=true blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id 19da4ac7-d56b-4ec8-ae4a-8141d4058c30 --summary; valid=true blockers=0 warnings=1 component-usage-only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
-  },
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "source_audit_evidence_json_created": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
-  },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:c44e70fe335388debc5c2e0677eb0a76c7fe5a5d0973afbc710d8660a7b71723"
-    },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "PASS: jq empty over 86 Batch 019 JSON files",
-      "placeholder_marker_scan": "PASS: no learner-visible SLATECAMP_UI_BLOCK, placeholder, previous-version, internal-note, TODO/FIXME/VERIFY, or unsupported markers in normalized/candidate/question-edits",
-      "source_hashes": "PASS: sources.json and evidence raw sources present",
-      "linked_question_edit_count": "PASS",
-      "prior_batch_collision_check": "PASS",
-      "diff_check": "PASS: git diff --check scoped to Batch 019 paths",
-      "test_check": "PASS: bun test scripts/content-audit/content-audit.test.ts (27 pass, 0 fail)"
-    },
-    "checked_at": "2026-05-10T23:59:30+08:00"
-  },
   "overall": {
     "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
-    "local_first_recovery_complete": true,
-    "remote_publish_status": "not_attempted_by_request",
-    "blockers": [],
-    "warnings": [
-      "component-usage.json has not been generated for this article yet; validate treats this as a non-blocking warning."
-    ]
-  },
-  "supabase": {
-    "pushed": false,
-    "deployed": false,
-    "committed": false,
-    "final_publishing_only": true
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false,
+    "blockers": []
   }
 }

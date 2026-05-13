@@ -2,9 +2,9 @@
   "question_id": "393a1da5-b6a8-4bfb-86db-3bd138350df1",
   "baseline_hash": "sha256:0c7269f79e23628364128b10fa9d642cd76cc6f34f34bba8cc8199e32af69064",
   "action": "replace",
-  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
-  "approved_by": "codex-local-source-audit-batch-020",
-  "approved_at": "2026-05-10T16:41:51.472Z",
+  "reason": "source-audited-article-batch-100-local-first retained and refreshed this linked question after local raw-source recheck for lea-prac-svc-025-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-100",
+  "approved_at": "2026-05-13T09:49:00+08:00",
   "source_audit_support": {
     "parent_article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
     "parent_article_slug": "lea-prac-svc-025-core-concept",
@@ -12,13 +12,24 @@
     "support_status": "source_safe_rewrite",
     "checked_sources": [
       {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
         "source_id": "spp-203-uap-local-raw-pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
-        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
-        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "source_id": "spp-203-uap-local-raw-pdf",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
       }
     ],
-    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+    "local_source_safe_action": "Batch 100 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+    ],
+    "batch_id": "source-audited-article-batch-100-local-first"
   },
   "proposed": {
     "text": "Which item belongs to the checked SPP 203 specialized services list?",
@@ -46,16 +57,18 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The checked SPP 203 list includes Architectural Lighting Layout and Design.",
-    "explanation": "The checked SPP 203 list includes Architectural Lighting Layout and Design.",
-    "code_citation": "SPP Document 203",
+    "explanation": "Batch 100 refresh: The checked SPP 203 list includes Architectural Lighting Layout and Design.",
+    "code_citation": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
     "bloom_level": "remember",
-    "application_context": "professional_practice",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
       "SPP Document 203",
-      "Architectural Interiors under SPP 203"
+      "Architectural Interiors under SPP 203",
+      "professional practice",
+      "source-audited batch 100"
     ],
     "difficulty": 0.45,
     "is_assessment": false,
-    "model_id": "BATCH-020-lea-prac-svc-025-core-concept-005"
+    "model_id": "BATCH-100-lea-prac-svc-025-core-concept-002"
   }
 }

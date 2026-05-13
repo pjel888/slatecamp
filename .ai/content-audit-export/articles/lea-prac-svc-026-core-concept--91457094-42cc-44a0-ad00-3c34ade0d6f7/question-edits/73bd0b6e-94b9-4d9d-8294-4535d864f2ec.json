@@ -2,18 +2,17 @@
   "question_id": "73bd0b6e-94b9-4d9d-8294-4535d864f2ec",
   "baseline_hash": "sha256:4b513574fde4eefcd722b7bc84c10e9e65434fcc9f59cb5f5903753a22f8ad20",
   "action": "replace",
-  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-026-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-025",
-  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "reason": "source-audited-article-batch-100-local-first retained and refreshed this linked question after local raw-source recheck for lea-prac-svc-026-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-100",
+  "approved_at": "2026-05-13T09:49:00+08:00",
   "source_audit_support": {
     "parent_article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
     "parent_article_slug": "lea-prac-svc-026-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+    "source_locator": "UAP Standards lines 691-716; UAP Standards lines 1138-1152; SPP 203 lines 101-111",
     "checked_markdown_lines": [
-      "UAP Standards lines 691-716",
-      "UAP Standards lines 1138-1152",
+      "UAP Standards lines 691-716; UAP Standards lines 1138-1152",
       "SPP 203 lines 101-111"
     ],
     "checked_sources": [
@@ -42,7 +41,8 @@
         "locator": "SPP 203 lines 101-111"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 100 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "batch_id": "source-audited-article-batch-100-local-first"
   },
   "proposed": {
     "text": "Under the checked UAP source, Site Development Planning is listed under which service category?",
@@ -70,16 +70,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The checked SPP 203 materials list Site Development Planning as a specialized allied service.",
-    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
-    "code_citation": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+    "explanation": "Batch 100 refresh: This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "code_citation": "UAP Standards lines 691-716; UAP Standards lines 1138-1152; SPP 203 lines 101-111",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 025"
+      "source-audited batch 025",
+      "source-audited batch 100"
     ],
     "difficulty": 0.42,
     "is_assessment": false,
-    "model_id": "BATCH-025-lea-prac-svc-026-core-concept-001"
+    "model_id": "BATCH-100-lea-prac-svc-026-core-concept-006"
   }
 }

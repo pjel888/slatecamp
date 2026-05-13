@@ -1,89 +1,181 @@
 {
-  "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
-  "slug": "lea-prac-svc-025-core-concept",
-  "batch_id": "source-audited-article-batch-020-local-first",
-  "generated_at": "2026-05-10T16:41:51.472Z",
-  "mode": "local_first_no_supabase_no_deploy_no_commit",
-  "status": "locally_source_audited",
-  "raw_pdf_audit": [
-    {
-      "source_id": "spp-203-uap-local-raw-pdf",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
-      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
-      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 203.pdf",
-      "ocr_pdf_sha256": "sha256:b7885f5019524c8f33c9718529c9c42a82f62732ec634bb02b1901cfd57840bc",
-      "checked_markdown_lines": [
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-          "checked_lines": [
-            "101-117"
-          ],
-          "note": "Specialized architectural services list includes Architectural Interiors and related services."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-          "checked_lines": [
-            "121-150"
-          ],
-          "note": "Continuation of the specialized architectural services list."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-          "checked_lines": [
-            "228-231"
-          ],
-          "note": "Manner of providing Architectural Interiors services."
-        }
-      ],
-      "note": "Raw PDF is retained as the authority file; local OCR/refined Markdown was used for line-level verification."
-    }
-  ],
-  "article_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_to_be_recomposed": true,
-    "ui_blocks_removed_from_current_candidate": true,
-    "old_internal_generation_notes_removed": true,
-    "risky_claims_removed_or_rewritten": [
-      "Removed prior fee-percentage examples.",
-      "Removed unverified statute subsection wording.",
-      "Removed UI block summaries that carried unrelated phase-fee material."
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-100-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T09:54:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_production_db_mutation_no_main_merge",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "target": {
+    "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+    "slug": "lea-prac-svc-025-core-concept",
+    "title": "Architectural Interiors under SPP 203",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/candidate.md",
+    "candidate_sha256": "sha256:d1fd6b0d7e73f04a471b2292296d68bdebd7bba9a242b86f7fd60193037a458b",
+    "normalized_sha256": "sha256:d1fd6b0d7e73f04a471b2292296d68bdebd7bba9a242b86f7fd60193037a458b",
+    "linked_questions_sha256": "sha256:88df5df58e0996f9c043bb415a696d66eabc220113291af50bf0afa7ea7a3dbf",
+    "sources_sha256": "sha256:65c086c2f9de3424c88e26f65a0cff1938445bff061437efc2c89a2f282a798d"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "33b10e86-83aa-4c54-9b91-d93ff661e97d",
+      "393a1da5-b6a8-4bfb-86db-3bd138350df1",
+      "4ed0a819-7024-4e11-89c0-65d6c0477b91",
+      "93b1ae06-0615-4715-9d36-14a1d00c6d2e",
+      "a619ef8b-eef4-4492-9747-7e43a8cd78e5",
+      "a77d240a-08e7-4389-ae31-8f740ad9242a",
+      "bd0d9e4e-63ec-43cf-b7c7-c77ff0f85857",
+      "c2b6d57d-40da-4196-a7e3-1be2dd5f856f",
+      "f2e10745-9758-4a7a-b9f3-13ac49198615",
+      "fa2fecb1-8863-4366-ab64-ff53b5693dc5"
+    ],
+    "real_world_scenario_status": "eligible-added"
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/33b10e86-83aa-4c54-9b91-d93ff661e97d.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/393a1da5-b6a8-4bfb-86db-3bd138350df1.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/4ed0a819-7024-4e11-89c0-65d6c0477b91.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/93b1ae06-0615-4715-9d36-14a1d00c6d2e.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/a619ef8b-eef4-4492-9747-7e43a8cd78e5.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/a77d240a-08e7-4389-ae31-8f740ad9242a.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/bd0d9e4e-63ec-43cf-b7c7-c77ff0f85857.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/c2b6d57d-40da-4196-a7e3-1be2dd5f856f.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/f2e10745-9758-4a7a-b9f3-13ac49198615.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits/fa2fecb1-8863-4366-ab64-ff53b5693dc5.json"
     ]
   },
-  "claim_support": [
+  "checked_sources": [
     {
-      "claim": "SPP 203 lists Architectural Interiors among specialized architectural services.",
+      "source_id": "spp-203-uap-local-raw-pdf",
+      "label": "SPP Document 203 - Specialized Architectural Services",
+      "authority": "United Architects of the Philippines Standards of Professional Practice source bundle",
+      "source_type": "local_raw_pdf_with_local_ocr_conversion",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "conversion_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+      "checked_markdown_lines": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "spp-203-uap-local-raw-pdf",
+        "label": "SPP Document 203 - Specialized Architectural Services",
+        "authority": "United Architects of the Philippines Standards of Professional Practice source bundle",
+        "source_type": "local_raw_pdf_with_local_ocr_conversion",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "conversion_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+        "checked_markdown_lines": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-100-lea-prac-svc-025-core-concept-claim-01",
+      "claim_text": "SPP 203 lists Architectural Interiors as a specialized architectural service.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
       "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-203-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
-        }
-      ]
+      "source_support": {
+        "source_label": "SPP Document 203 - Specialized Architectural Services",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a"
+        ]
+      },
+      "blockers": []
     },
     {
-      "claim": "SPP 203 identifies dual-capacity and consulting-architect-only positions for Architectural Interiors services.",
+      "claim_id": "batch-100-lea-prac-svc-025-core-concept-claim-02",
+      "claim_text": "Architectural Interiors services may be provided in dual capacity or as consulting-architect-only service.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
       "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-203-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
-        }
-      ]
+      "source_support": {
+        "source_label": "SPP Document 203 - Specialized Architectural Services",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a"
+        ]
+      },
+      "blockers": []
     },
     {
-      "claim": "Questions in this cluster should avoid unverified fee percentages and statute subsection labels.",
+      "claim_id": "batch-100-lea-prac-svc-025-core-concept-claim-03",
+      "claim_text": "The Batch 100 scenario distinguishes Architectural Interiors from SPP 202 phases and Site Development Planning.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
       "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-203-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
-        }
-      ]
+      "source_support": {
+        "source_label": "SPP Document 203 - Specialized Architectural Services",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a"
+        ]
+      },
+      "blockers": []
     }
   ],
   "question_repair_policy": {
-    "action": "replace_linked_questions_with_source_safe_versions",
-    "answer_key_changes_expected": true,
-    "allowed_question_scope": "Only concepts directly supported by the checked SPP source lines are used."
+    "action": "refresh_linked_question_edits_with_batch_100_source_safe_metadata",
+    "source_safe_question_edits": 10,
+    "allowed_question_scope": "Only concepts directly supported by the checked local source lines are used."
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "note": "Batch 100 added a source-safe Real World Scenario grounded in the checked local source lines."
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false,
+    "blockers": []
   }
 }

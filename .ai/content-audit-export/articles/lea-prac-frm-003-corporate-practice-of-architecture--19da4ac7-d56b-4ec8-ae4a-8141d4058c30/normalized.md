@@ -40,6 +40,10 @@ Use this sequence for corporate practice:
 3. Check the 75 percent RLA composition rule across the categories named in Section 37.
 4. If the item asks about insurance, corporate veil, or succession, require a separate source before treating the detail as law.
 
+### Real World Scenario
+
+A corporation formed for architectural services proposes to add non-architect investors and place non-RLAs in executive roles. The source-safe analysis starts with RA 9266, not ordinary corporation convenience: the firm must remain an architecture corporation registered with the SEC and Board, and RLAs must compose at least 75 percent of the owners, shareholders, members, incorporators, directors, and executive officers as applicable. If a share transfer or governance change drops the RLA composition below the threshold, the exam-safe answer is to correct the structure before relying on the corporation as a lawful architectural-practice vehicle.
+
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

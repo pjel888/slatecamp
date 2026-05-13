@@ -39,6 +39,10 @@ Use this sequence:
 2. Is the registration route DTI for the individual practice plus BOA/PRC authority? If yes, the source-backed requirement is satisfied.
 3. Is the item asking for personal liability, insurance, or succession? If yes, do not answer from RA 9266 alone unless the item provides a separate business-law source.
 
+### Real World Scenario
+
+A newly licensed architect wants to use a studio trade name for residential design work without forming a partnership or corporation. The source-safe classification is sole proprietorship only if the practice remains an individual Architect practice, is DTI-registered for individual architectural practice, and still rests on the architect's BOA/PRC authority. A business name, assistant staff, or an office lease does not by itself convert the practice into an architectural partnership or architecture corporation.
+
 ## Related Articles
 
 - [Partnership](lea-prac-frm-002)

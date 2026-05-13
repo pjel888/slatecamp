@@ -14,6 +14,10 @@ The Architect may act in a dual capacity or as a consultant only, depending on t
 
 Do not treat SDP as only planting design. The checked source ties SDP to the building's surroundings, open spaces, civil works, utilities, softscape, and hardscape. Also do not assume the Architect personally performs every specialized service on large projects; specialist consultants may be required.
 
+## Real World Scenario
+
+A small clinic commission asks the architect to lay out the building, driveway, walks, hardscape edges, and planting zones immediately around the structure. The checked UAP source supports treating that as Site Development Planning because the work coordinates the building with the grounds and surrounding open spaces. If the same commission expands into a large campus with substantial landscape, waterscape, or civil-utility packages, the source-safe answer changes: specialist consultants may be required, and any separately engaged Landscape Architect is paid directly by the Owner/Client rather than deducted from the architect's SDP fee.
+
 ## Source Notes
 
-Local raw PDFs and refined markdown were checked for this Batch 025 repair: UAP Standards lines 691-716 and 1138-1152; SPP 203 lines 101-111.
+Local raw PDFs and refined markdown were rechecked for this Batch 100 production-line pass: UAP Standards lines 691-716 and 1138-1152; SPP 203 lines 101-111.

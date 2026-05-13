@@ -1,0 +1,179 @@
+{
+  "artifact_type": "source_audited_article_batch_ledger",
+  "batch_number": "100",
+  "batch_id": "source-audited-article-batch-100-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-13T09:59:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-100-manifest.json",
+  "blockers": 0,
+  "exact_improved_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits"
+  ],
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 18,
+    "source_hash_failures": 0,
+    "scoped_json_parse_files": 105,
+    "scoped_json_parse_failures": 0,
+    "marker_scan_files": 65,
+    "marker_scan_matches": 0,
+    "stale_compose_error_matches": 0
+  },
+  "articles": [
+    {
+      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+      "slug": "lea-prac-svc-025-core-concept",
+      "title": "Architectural Interiors under SPP 203",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 1,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 020 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:d1fd6b0d7e73f04a471b2292296d68bdebd7bba9a242b86f7fd60193037a458b",
+      "normalized_hash": "sha256:d1fd6b0d7e73f04a471b2292296d68bdebd7bba9a242b86f7fd60193037a458b",
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION candidate for final depth audit because the article is intentionally compact and source-bounded after the local-first pass."
+    },
+    {
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "slug": "lea-prac-svc-026-core-concept",
+      "title": "Site Development Planning (SDP)",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 025 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:c0a9efa48062c7d39a9c0bb6124a705c05fa7109adda63cb4825d830fa9d84d0",
+      "normalized_hash": "sha256:c0a9efa48062c7d39a9c0bb6124a705c05fa7109adda63cb4825d830fa9d84d0",
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION candidate for final depth audit because the article remains concise after source-safe scenario enrichment."
+    },
+    {
+      "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "slug": "lea-prac-frm-001-sole-proprietorship-in-architectural-practice",
+      "title": "Sole Proprietorship in Architectural Practice",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 019 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:f1c324e92d4e90c8d0c761dd9b6c6c43cbb0da0df1c0de68cdf4651a2d5a72f5",
+      "normalized_hash": "sha256:f1c324e92d4e90c8d0c761dd9b6c6c43cbb0da0df1c0de68cdf4651a2d5a72f5",
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "slug": "lea-prac-frm-002-partnership-in-architectural-practice",
+      "title": "Partnership in Architectural Practice",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 019 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:55d5b4c56d2fbc1e74e2e4a9db42707ea9afb848aaba0eee0e8545ed76d63a87",
+      "normalized_hash": "sha256:55d5b4c56d2fbc1e74e2e4a9db42707ea9afb848aaba0eee0e8545ed76d63a87",
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "slug": "lea-prac-frm-003-corporate-practice-of-architecture",
+      "title": "Corporate Practice of Architecture",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 019 local-first source-audited repair artifact"
+      ],
+      "compose_status": "PASS",
+      "diff_status": "PASS",
+      "validate_status": "PASS",
+      "ui_block_edit_validation_status": "PASS",
+      "candidate_hash": "sha256:72f89b629d55da3fcc28f2335693fd9f01b34256e09f63fd14d1cbf048c2fb7f",
+      "normalized_hash": "sha256:72f89b629d55da3fcc28f2335693fd9f01b34256e09f63fd14d1cbf048c2fb7f",
+      "thin_needs_expansion": null
+    }
+  ],
+  "independent_quality_review": {
+    "status": "PASS",
+    "path": ".ai/03_plans/batch-100-independent-quality-review.md",
+    "reviewed_at": "2026-05-13T10:12:00+08:00"
+  }
+}

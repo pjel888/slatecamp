@@ -18,3 +18,7 @@ For Architectural Interiors, the checked SPP 203 source identifies two service p
 ## Exam Use
 
 When a question asks about Architectural Interiors in SPP 203, first classify it as a specialized architectural service. Then distinguish whether the prompt describes dual capacity or consulting-architect-only service. Avoid importing compensation figures or separate statute citations unless the question provides its own verified source.
+
+## Real World Scenario
+
+A condominium client asks one RLA to serve as Architect-of-Record for the shell project and also advise on lobby interiors, while a second tenant asks the same RLA only to review interior layouts as a consulting specialist. Both arrangements can be source-safe under the checked SPP 203 lines: the first is dual capacity as Architect-of-Record and Consulting Architect for Architectural Interiors, while the second is consulting-architect-only service. The exam trap is to treat Architectural Interiors as an SPP 202 phase or as site development work instead of as a specialized architectural service.

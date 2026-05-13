@@ -1,0 +1,320 @@
+{
+  "batch_number": "100",
+  "batch_id": "source-audited-article-batch-100-local-first",
+  "manifest_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "reserved_at": "2026-05-13T09:59:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "0d3eb29e0",
+  "previous_batch": "099",
+  "selection_rule": "Continue after accepted Batch 099 with the final two sourceable professional-services SVC clusters, then the first three professional-practice form clusters. Process exactly five article clusters with linked questions and exact readable local raw source families.",
+  "inherited_blocker_status": "Batch 099 accepted at commit 0d3eb29e0 with blockers=0; Batch 100 starts local-first only with no Supabase push, deploy, production DB mutation, or main merge.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS_CURRENT_SERIAL_SET_WITH_HISTORICAL_OVERLAP_RECORDED",
+    "current_serial_source_audited_batches_checked": [
+      "087",
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094",
+      "095",
+      "096",
+      "097",
+      "098",
+      "099"
+    ],
+    "selected_article_count": 5,
+    "selected_ids_found_in_current_serial_accepted_selected_articles": [],
+    "historical_overlap_recorded_separately": true,
+    "historical_local_first_or_reaudit_artifacts": {
+      "e37575ae-c640-4ddc-911a-7553f338b981": [
+        "Batch 020 local-first source-audited repair artifact"
+      ],
+      "91457094-42cc-44a0-ad00-3c34ade0d6f7": [
+        "Batch 025 local-first source-audited repair artifact"
+      ],
+      "7a53c305-43d6-424a-9a4d-fc4f86de1805": [
+        "Batch 019 local-first source-audited repair artifact"
+      ],
+      "387760f0-6468-40d6-b78e-a463c9f543b2": [
+        "Batch 019 local-first source-audited repair artifact"
+      ],
+      "19da4ac7-d56b-4ec8-ae4a-8141d4058c30": [
+        "Batch 019 local-first source-audited repair artifact"
+      ]
+    }
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+      "slug": "lea-prac-svc-025-core-concept"
+    },
+    {
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "slug": "lea-prac-svc-026-core-concept"
+    },
+    {
+      "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "slug": "lea-prac-frm-001-sole-proprietorship-in-architectural-practice"
+    },
+    {
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "slug": "lea-prac-frm-002-partnership-in-architectural-practice"
+    },
+    {
+      "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "slug": "lea-prac-frm-003-corporate-practice-of-architecture"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "question_edits_existing_before_repair": 50,
+    "stale_question_edit_index_files_removed": 1,
+    "scenarios_expected": 5
+  },
+  "article_clusters": [
+    {
+      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+      "slug": "lea-prac-svc-025-core-concept",
+      "title": "Architectural Interiors under SPP 203",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "Architectural Interiors as an SPP 203 specialized architectural service and dual-capacity/consulting-only service positions",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits",
+      "source_family": "SPP Document 203 - Specialized Architectural Services",
+      "source_locators": [
+        {
+          "source_id": "spp-203-uap-local-raw-pdf",
+          "label": "SPP Document 203 - Specialized Architectural Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "conversion_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "checked_markdown_lines": [
+            "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 020 local-first source-audited repair artifact"
+        ]
+      },
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION candidate for final depth audit because the article is intentionally compact and source-bounded after the local-first pass."
+    },
+    {
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "slug": "lea-prac-svc-026-core-concept",
+      "title": "Site Development Planning (SDP)",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "SPP 203 Site Development Planning scope, surroundings/open-space coordination, specialist consultant boundaries, and Owner-paid landscape consultant rule",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits",
+      "source_family": "UAP Document Standards of Professional Practice - Site Development Planning (SDP); SPP 203 - Specialized Allied Services",
+      "source_locators": [
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-026-core-concept",
+          "label": "UAP Document Standards of Professional Practice - Site Development Planning (SDP)",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "checked_markdown_lines": [
+            "UAP Standards lines 691-716",
+            "UAP Standards lines 1138-1152"
+          ]
+        },
+        {
+          "source_id": "spp203-specialized-allied-services-local",
+          "label": "SPP 203 - Specialized Allied Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "conversion_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "checked_markdown_lines": [
+            "SPP 203 lines 101-111"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 025 local-first source-audited repair artifact"
+        ]
+      },
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION candidate for final depth audit because the article remains concise after source-safe scenario enrichment."
+    },
+    {
+      "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "slug": "lea-prac-frm-001-sole-proprietorship-in-architectural-practice",
+      "title": "Sole Proprietorship in Architectural Practice",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "RA 9266 and UAP SPP registration baseline for individual architectural practice",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+      "source_locators": [
+        {
+          "source_id": "batch019-lea-prac-frm-001-sole-proprietorship-in-architectural-practice-ra-9266-irr-architecture-act-2004",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+          ]
+        },
+        {
+          "source_id": "batch019-lea-prac-frm-001-sole-proprietorship-in-architectural-practice-uap-standards-of-professional-practice",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 019 local-first source-audited repair artifact"
+        ]
+      },
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "slug": "lea-prac-frm-002-partnership-in-architectural-practice",
+      "title": "Partnership in Architectural Practice",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "RA 9266 architectural partnership definition, SEC/Board registration, and 75 percent RLA composition rule",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+      "source_locators": [
+        {
+          "source_id": "batch019-lea-prac-frm-002-partnership-in-architectural-practice-ra-9266-irr-architecture-act-2004",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+          ]
+        },
+        {
+          "source_id": "batch019-lea-prac-frm-002-partnership-in-architectural-practice-uap-standards-of-professional-practice",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 019 local-first source-audited repair artifact"
+        ]
+      },
+      "thin_needs_expansion": null
+    },
+    {
+      "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "slug": "lea-prac-frm-003-corporate-practice-of-architecture",
+      "title": "Corporate Practice of Architecture",
+      "subject": "Professional Practice & Jurisprudence",
+      "focus": "RA 9266 architecture corporation definition, SEC/Board registration, RLA composition, and governance compliance risk",
+      "linked_question_count": 10,
+      "question_edit_count_existing_before_repair": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits",
+      "source_family": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+      "source_locators": [
+        {
+          "source_id": "batch019-lea-prac-frm-003-corporate-practice-of-architecture-ra-9266-irr-architecture-act-2004",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+          ]
+        },
+        {
+          "source_id": "batch019-lea-prac-frm-003-corporate-practice-of-architecture-uap-standards-of-professional-practice",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 019 local-first source-audited repair artifact"
+        ]
+      },
+      "thin_needs_expansion": null
+    }
+  ],
+  "validation_contract": [
+    "compose 5/5",
+    "diff 5/5",
+    "validate strict 5/5",
+    "UI-block edit validation 5/5",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent QA memo"
+  ],
+  "forbidden_operations": [
+    "Supabase push",
+    "deploy",
+    "production DB mutation",
+    "merge to main"
+  ],
+  "final_depth_deferred_findings": [
+    {
+      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+      "slug": "lea-prac-svc-025-core-concept",
+      "finding": "THIN_NEEDS_EXPANSION candidate for final depth audit because the article is intentionally compact and source-bounded after the local-first pass."
+    },
+    {
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "slug": "lea-prac-svc-026-core-concept",
+      "finding": "THIN_NEEDS_EXPANSION candidate for final depth audit because the article remains concise after source-safe scenario enrichment."
+    }
+  ],
+  "stop_condition": "Batch 100 local-first work is complete after blockers=0, independent QA PASS, final staged diff checks, commit, and push; then continue Batch 101 unless a real blocker or tool failure stops advancement."
+}
