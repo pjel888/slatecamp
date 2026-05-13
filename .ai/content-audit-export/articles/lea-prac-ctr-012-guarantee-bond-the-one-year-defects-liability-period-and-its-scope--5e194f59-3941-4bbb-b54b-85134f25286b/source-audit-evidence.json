@@ -1,29 +1,335 @@
 {
-  "batch_id": "source-audited-article-batch-029-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T16:20:00.000+08:00",
-  "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
-  "slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
-  "title": "Guarantee Bond the One Year Defects Liability Period and its Scope",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
+  "artifact_type": "source_audit_evidence",
+  "schema_version": "source-audited-local-first-v2",
+  "batch_id": "source-audited-article-batch-109-local-first",
+  "audit_mode": "local_raw_pdf_primary_with_refined_markdown_line_locators",
+  "audit_date": "2026-05-13T15:32:00+08:00",
+  "audited_at": "2026-05-13T15:32:00+08:00",
+  "target": {
+    "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
+    "slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
+    "title": "Guarantee Bond the One Year Defects Liability Period and its Scope",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/candidate.md",
+    "candidate_sha256": "sha256:974408ef3f643f25b27b0454b283922364ac402b6350310c81b066b237ad78df",
+    "normalized_sha256": "sha256:974408ef3f643f25b27b0454b283922364ac402b6350310c81b066b237ad78df",
+    "linked_questions_sha256": "sha256:e7b2f4e8c80c3742119ab4437958d3f5172dd20c4d22f92d39ba9fd8e8a2c8d4",
+    "sources_sha256": "sha256:2ae7ac9d7d4442d8c501cad2129a0425146dc5437f06d5099930acd205516d94"
+  },
   "classification": {
-    "legal_or_code_content": true,
+    "contains_legal_or_code_claims": true,
     "requires_raw_pdf_audit": true,
-    "local_first_only": true
+    "content_domain": "Philippine architecture professional practice",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "raw_pdf_gate": {
     "status": "PASS",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 3,
     "all_legal_code_claims_have_pdf_locator": true,
     "all_section_numbers_verified_against_raw_pdf": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "label": "UAP Document 301 - General Conditions",
+      "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3"
+    },
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15"
+    },
+    {
+      "source_id": "ra-386-civil-code-local",
+      "label": "RA 386 - Civil Code of the Philippines",
+      "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5"
+    }
+  ],
+  "raw_sources": [
+    {
+      "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "checked_markdown_lines": [
+        "UAP Document 301 line 493",
+        "UAP Document 301 lines 786-790",
+        "UAP Document 301 lines 1078-1090",
+        "CIAP Document 102 lines 671-681",
+        "CIAP Document 102 lines 813-821",
+        "CIAP Document 102 lines 905-911",
+        "RA 386 Civil Code line 349"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "checked_markdown_lines": [
+        "UAP Document 301 line 493",
+        "UAP Document 301 lines 786-790",
+        "UAP Document 301 lines 1078-1090",
+        "CIAP Document 102 lines 671-681",
+        "CIAP Document 102 lines 813-821",
+        "CIAP Document 102 lines 905-911",
+        "RA 386 Civil Code line 349"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Civil Code of the Philippines local legal source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+      "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+      "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "checked_markdown_lines": [
+        "UAP Document 301 line 493",
+        "UAP Document 301 lines 786-790",
+        "UAP Document 301 lines 1078-1090",
+        "CIAP Document 102 lines 671-681",
+        "CIAP Document 102 lines 813-821",
+        "CIAP Document 102 lines 905-911",
+        "RA 386 Civil Code line 349"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "historical_reaudit_overlap": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "prior_local_first_batch_id": "source-audited-article-batch-029-local-first for CTR-012",
+    "current_serial_accepted_batches_checked": "087-108",
+    "duplicate_in_current_serial_accepted_batches": false
+  },
+  "scenario": {
+    "status": "eligible-added",
+    "claim_text": "Batch 109 Real World Scenario checks one-year guarantee correction duties against CIAP Document 102 and keeps Civil Code Article 1723 separate.",
+    "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349"
+  },
+  "source_decisions": [
+    "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope refreshed in Batch 109 with source-safe contract, bond, payment, insurance, and liability boundaries from local raw source families."
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:article:batch-109",
+      "claim_text": "Guarantee Bond the One Year Defects Liability Period and its Scope was refreshed in Batch 109 with source-safe professional-practice boundaries and local source anchors.",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 article refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:scenario:batch-109",
+      "claim_text": "Batch 109 Real World Scenario checks one-year guarantee correction duties against CIAP Document 102 and keeps Civil Code Article 1723 separate.",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 Real World Scenario."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:001:batch-109",
+      "question_id": "110355c2-1a90-4f36-ba9e-a9ed15bd6b8e",
+      "claim_text": "How does UAP Document 301 define the guarantee bond?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:002:batch-109",
+      "question_id": "126f3641-38fe-402a-95a8-b41680762e85",
+      "claim_text": "If a material or workmanship defect develops within the guarantee period, what must the contractor do?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:003:batch-109",
+      "question_id": "17fe5f8c-c0d3-4cfc-a851-af5beb974412",
+      "claim_text": "Under CIAP Document 102, what replaces the performance and payment bonds for release purposes?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:004:batch-109",
+      "question_id": "43268bb2-5c35-4305-bbd7-1857e5c7660c",
+      "claim_text": "What is the CIAP Document 102 amount basis for the guarantee bond?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:005:batch-109",
+      "question_id": "4cd00f3c-80fc-45e5-bac2-e3958205a3ec",
+      "claim_text": "Which distinction is source-safe?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:006:batch-109",
+      "question_id": "580c220c-0eec-4d85-916c-5260620cb6a7",
+      "claim_text": "Which source says the guarantee remedies do not prejudice Civil Code rights?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:007:batch-109",
+      "question_id": "5cffd4f4-a033-458e-802f-ad6da75e6832",
+      "claim_text": "What is the CIAP Document 102 guarantee-bond period?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:008:batch-109",
+      "question_id": "5dca4420-8949-4767-85cd-033ca6e1e140",
+      "claim_text": "What does the CIAP guarantee bond guarantee?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:009:batch-109",
+      "question_id": "94643169-bd6f-40cc-8015-0bf19127dbf4",
+      "claim_text": "What should an exam answer avoid when this article names CIAP Document 102?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope:question:010:batch-109",
+      "question_id": "e171905d-7ae5-4c25-96a5-9650daa778d7",
+      "claim_text": "What does Civil Code Article 1723 address in this batch context?",
+      "support": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    }
+  ],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/110355c2-1a90-4f36-ba9e-a9ed15bd6b8e.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/126f3641-38fe-402a-95a8-b41680762e85.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/17fe5f8c-c0d3-4cfc-a851-af5beb974412.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/43268bb2-5c35-4305-bbd7-1857e5c7660c.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/4cd00f3c-80fc-45e5-bac2-e3958205a3ec.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/580c220c-0eec-4d85-916c-5260620cb6a7.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/5cffd4f4-a033-458e-802f-ad6da75e6832.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/5dca4420-8949-4767-85cd-033ca6e1e140.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/94643169-bd6f-40cc-8015-0bf19127dbf4.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits/e171905d-7ae5-4c25-96a5-9650daa778d7.json"
+  ],
+  "source_hash_check_inputs": {
+    "source_file_paths": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md"
+    ],
+    "question_edit_checked_source_references": 60
+  },
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
   },
   "overall": {
     "source_audit_status": "PASS",
@@ -38,272 +344,7 @@
       "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
     ]
   },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "uap-document-301-general-conditions-local",
-        "label": "UAP Document 301 - General Conditions",
-        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
-        "source_type": "professional_practice_contract_pdf",
-        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "checked_markdown_lines": [
-          "UAP Document 301 line 493",
-          "UAP Document 301 lines 786-790",
-          "UAP Document 301 lines 1078-1090"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
-        "source_type": "construction_contract_pdf",
-        "source_locator": "CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "checked_markdown_lines": [
-          "CIAP Document 102 lines 671-681",
-          "CIAP Document 102 lines 813-821",
-          "CIAP Document 102 lines 905-911"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ra-386-civil-code-local",
-        "label": "RA 386 - Civil Code of the Philippines",
-        "authority": "Civil Code of the Philippines local legal source",
-        "source_type": "law_pdf",
-        "source_locator": "Civil Code Article 1723 refined markdown line 349",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-        "checked_markdown_lines": [
-          "RA 386 Civil Code line 349"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
-    "checked_markdown_lines": [
-      "UAP Document 301 line 493",
-      "UAP Document 301 lines 786-790",
-      "UAP Document 301 lines 1078-1090",
-      "CIAP Document 102 lines 671-681",
-      "CIAP Document 102 lines 813-821",
-      "CIAP Document 102 lines 905-911",
-      "RA 386 Civil Code line 349"
-    ]
-  },
-  "claims": [
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-001",
-      "claim_text": "Question 110355c2-1a90-4f36-ba9e-a9ed15bd6b8e / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-001 rewritten to source-safe local form.",
-      "question_id": "110355c2-1a90-4f36-ba9e-a9ed15bd6b8e",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 line 493",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-002",
-      "claim_text": "Question 17fe5f8c-c0d3-4cfc-a851-af5beb974412 / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-002 rewritten to source-safe local form.",
-      "question_id": "17fe5f8c-c0d3-4cfc-a851-af5beb974412",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 813-821",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-003",
-      "claim_text": "Question 43268bb2-5c35-4305-bbd7-1857e5c7660c / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-003 rewritten to source-safe local form.",
-      "question_id": "43268bb2-5c35-4305-bbd7-1857e5c7660c",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 813-821",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-004",
-      "claim_text": "Question 5cffd4f4-a033-458e-802f-ad6da75e6832 / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-004 rewritten to source-safe local form.",
-      "question_id": "5cffd4f4-a033-458e-802f-ad6da75e6832",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 813-821",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-005",
-      "claim_text": "Question 5dca4420-8949-4767-85cd-033ca6e1e140 / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-005 rewritten to source-safe local form.",
-      "question_id": "5dca4420-8949-4767-85cd-033ca6e1e140",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 813-821",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-006",
-      "claim_text": "Question 126f3641-38fe-402a-95a8-b41680762e85 / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-006 rewritten to source-safe local form.",
-      "question_id": "126f3641-38fe-402a-95a8-b41680762e85",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 815-821",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-007",
-      "claim_text": "Question 580c220c-0eec-4d85-916c-5260620cb6a7 / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-007 rewritten to source-safe local form.",
-      "question_id": "580c220c-0eec-4d85-916c-5260620cb6a7",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 815-821",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-008",
-      "claim_text": "Question e171905d-7ae5-4c25-96a5-9650daa778d7 / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-008 rewritten to source-safe local form.",
-      "question_id": "e171905d-7ae5-4c25-96a5-9650daa778d7",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "Civil Code Article 1723 line 349",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-009",
-      "claim_text": "Question 4cd00f3c-80fc-45e5-bac2-e3958205a3ec / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-009 rewritten to source-safe local form.",
-      "question_id": "4cd00f3c-80fc-45e5-bac2-e3958205a3ec",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 813-821; Civil Code Article 1723 line 349",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-question-010",
-      "claim_text": "Question 94643169-bd6f-40cc-8015-0bf19127dbf4 / model BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-010 rewritten to source-safe local form.",
-      "question_id": "94643169-bd6f-40cc-8015-0bf19127dbf4",
-      "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 813-821",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    }
+  "final_depth_findings_preserved": [
+    "Preserve final-depth distinction between one-year contractual guarantee, Period of Making Good defects, and Civil Code Article 1723 statutory collapse liability."
   ]
 }

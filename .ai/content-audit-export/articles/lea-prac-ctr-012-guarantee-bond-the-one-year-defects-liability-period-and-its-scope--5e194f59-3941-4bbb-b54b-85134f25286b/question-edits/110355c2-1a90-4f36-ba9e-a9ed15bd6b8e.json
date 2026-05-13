@@ -2,9 +2,9 @@
   "question_id": "110355c2-1a90-4f36-ba9e-a9ed15bd6b8e",
   "baseline_hash": "sha256:308d5e4f4a0a374debff4230418134d81b2fac2392c8dc40bb408e21738650a1",
   "action": "replace",
-  "reason": "source-audited-article-batch-029-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope.",
-  "approved_by": "codex-local-source-audit-batch-029",
-  "approved_at": "2026-05-11T16:20:00.000+08:00",
+  "reason": "source-audited-article-batch-109-local-first refreshed this linked question to current source-safe local form for lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope.",
+  "approved_by": "codex-local-source-audit-batch-109",
+  "approved_at": "2026-05-13T15:32:00+08:00",
   "source_audit_support": {
     "parent_article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
     "parent_article_slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
@@ -25,40 +25,40 @@
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090"
+        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090"
+        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911"
+        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911"
+        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
         "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
         "source_id": "ra-386-civil-code-local",
-        "locator": "Civil Code Article 1723 refined markdown line 349"
+        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
         "sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
         "source_id": "ra-386-civil-code-local",
-        "locator": "Civil Code Article 1723 refined markdown line 349"
+        "locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "refreshed prior source-safe wording with Batch 109 article, scenario, citation, and explanation alignment"
   },
   "proposed": {
     "text": "How does UAP Document 301 define the guarantee bond?",
@@ -86,17 +86,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "Correct because it follows UAP Document 301 line 493. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
-    "explanation": "Use UAP Document 301 line 493 for this Batch 029 source-safe replacement.",
+    "explanation": "Use UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349 for this Batch 109 source-safe refresh.",
     "code_citation": "UAP Document 301 line 493",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited-article-batch-029-local-first"
+      "source-audited-article-batch-109-local-first"
     ],
     "difficulty": 0.38,
     "is_assessment": false,
-    "model_id": "BATCH-029-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-001"
+    "model_id": "BATCH-109-lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope-001"
   }
 }

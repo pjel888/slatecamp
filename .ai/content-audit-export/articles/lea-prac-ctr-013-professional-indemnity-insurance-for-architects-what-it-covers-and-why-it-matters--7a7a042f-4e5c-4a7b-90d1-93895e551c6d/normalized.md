@@ -18,6 +18,10 @@ RA 9266 IRR Section 39 separately requires foreign nationals, including former F
 
 Civil Code Article 1723 remains a separate liability rule. It addresses damages when a building collapses within fifteen years from completion due to defects in plans, specifications, ground, construction, inferior materials, or contract violations. Insurance or bond requirements should not be treated as erasing that legal responsibility.
 
+## Real World Scenario
+
+A client asks whether a consulting architect's professional indemnity policy means the architect no longer carries civil responsibility for defective plans. The source-safe answer is no. The checked UAP PACS source frames professional liability insurance or equivalent bond form as a coverage requirement tied to project involvement and compensation, while Civil Code Article 1723 remains a separate liability rule for collapse caused by plan, specification, ground, construction, inferior-material, or contract-violation causes.
+
 ## Exam Boundary
 
 This source-audited article does not teach commercial policy mechanics such as claims-made coverage, deductibles, per-occurrence limits, or insurer defense control because those details are not established by the checked local sources for this batch. If a question asks those mechanics, it needs its own named source.

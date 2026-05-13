@@ -2,9 +2,9 @@
   "question_id": "eefff249-36bc-4122-8e6c-2f298d231850",
   "baseline_hash": "sha256:ca01c592a6e95390ee1653f6433bc11dbb69a8b5263870715a119a5495357521",
   "action": "replace",
-  "reason": "source-audited-article-batch-030-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications.",
-  "approved_by": "codex-local-source-audit-batch-030",
-  "approved_at": "2026-05-11T08:28:21.061+08:00",
+  "reason": "source-audited-article-batch-109-local-first refreshed this linked question to current source-safe local form for lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications.",
+  "approved_by": "codex-local-source-audit-batch-109",
+  "approved_at": "2026-05-13T15:32:00+08:00",
   "source_audit_support": {
     "parent_article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
     "parent_article_slug": "lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications",
@@ -12,7 +12,7 @@
     "support_status": "source_safe_rewrite",
     "source_locator": "UAP Document 301 refined markdown lines 69, 825-827, 840-846; CIAP Document 102 refined markdown lines 634-640 and 652-667",
     "checked_markdown_lines": [
-      "UAP Document 301 lines 69",
+      "UAP Document 301 line 69",
       "UAP Document 301 lines 825-827",
       "UAP Document 301 lines 840-846",
       "CIAP Document 102 lines 634-640",
@@ -23,28 +23,28 @@
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 69, 825-827, 840-846"
+        "locator": "UAP Document 301 refined markdown lines 69, 825-827, 840-846; CIAP Document 102 refined markdown lines 634-640 and 652-667"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
         "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 69, 825-827, 840-846"
+        "locator": "UAP Document 301 refined markdown lines 69, 825-827, 840-846; CIAP Document 102 refined markdown lines 634-640 and 652-667"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 634-640 and 652-667"
+        "locator": "UAP Document 301 refined markdown lines 69, 825-827, 840-846; CIAP Document 102 refined markdown lines 634-640 and 652-667"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
         "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 634-640 and 652-667"
+        "locator": "UAP Document 301 refined markdown lines 69, 825-827, 840-846; CIAP Document 102 refined markdown lines 634-640 and 652-667"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "refreshed prior source-safe wording with Batch 109 article, scenario, citation, and explanation alignment"
   },
   "proposed": {
     "text": "Which party requests payment in the ordinary process described by CIAP Document 102?",
@@ -72,17 +72,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "Correct because it follows CIAP Document 102 line 634. The other options change the timing, party, document, amount, or legal effect stated in the checked local source.",
-    "explanation": "Use CIAP Document 102 line 634 for this Batch 030 source-safe replacement.",
+    "explanation": "Use UAP Document 301 refined markdown lines 69, 825-827, 840-846; CIAP Document 102 refined markdown lines 634-640 and 652-667 for this Batch 109 source-safe refresh.",
     "code_citation": "CIAP Document 102 line 634",
     "bloom_level": "understand",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited-article-batch-030-local-first"
+      "source-audited-article-batch-109-local-first"
     ],
     "difficulty": 0.48,
     "is_assessment": false,
-    "model_id": "BATCH-030-lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications-007"
+    "model_id": "BATCH-109-lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications-008"
   }
 }

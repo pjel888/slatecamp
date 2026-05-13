@@ -14,11 +14,15 @@ UAP Document 301 defines the performance bond as the approved form of security f
 
 ## Amount and Timing in CIAP Document 102
 
-CIAP Document 102 states that before signing the contract, the contractor furnishes a performance bond equal to 15% of the contract amount for the faithful performance of the work. The same provision separately requires a 15% bond covering obligations to workers, subcontractors, and suppliers. These bonds remain in effect until replaced by the contractor's guarantee bond.
+CIAP Document 102 states that before signing the contract, the contractor furnishes a performance bond equal to 15% of the contract amount for faithful performance of the work. The same provision separately requires a 15% bond covering obligations to workers, subcontractors, and suppliers. These bonds remain in effect until replaced by the contractor's guarantee bond.
 
 ## Mandatory Bond Conditions
 
 CIAP Document 102 treats mandatory bond conditions as part of the bond. The checked source states that the bond continues beyond its stated effectivity period if the work or obligation has not been completely performed, and the owner retains recourse until cancellation, replacement, reservation of rights, or unconditional acceptance of the work.
+
+## Real World Scenario
+
+A contractor asks the owner to accept a performance bond that expires on the original completion date even though the project is delayed by approved change orders. The source-safe answer is to reject any reading that cuts off the owner's bond recourse while the work or obligation remains incomplete. CIAP Document 102 makes the mandatory bond conditions part of the bond, including continued effect beyond the stated period when the covered obligation has not been fully performed.
 
 ## Exam Boundary
 

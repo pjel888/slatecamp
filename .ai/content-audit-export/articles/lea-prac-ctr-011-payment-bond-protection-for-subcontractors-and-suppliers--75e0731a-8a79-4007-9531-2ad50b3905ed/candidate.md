@@ -20,6 +20,10 @@ CIAP Document 102 allows the owner to deduct substantiated and unpaid claims by 
 
 As a condition to final payment or release of retention, the contractor must release the work from legal liens arising from unpaid subcontractor or supplier claims. If claims remain unpaid, the contractor must furnish an indemnity bond equal to the unpaid claim amount.
 
+## Real World Scenario
+
+A tile supplier tells the owner that the contractor has not paid for materials already installed in the project. The source-safe response is not to treat the payment bond as a completion guarantee. It protects payment obligations, and CIAP Document 102 also gives the owner payment-control tools: deduct substantiated unpaid claims, require lien releases before final payment or retention release, and require an indemnity bond for unpaid claims.
+
 ## Exam Boundary
 
 Use the payment bond for payment obligations to workers, subcontractors, and suppliers. Use the performance bond for faithful performance of the work. Do not treat the payment bond as the same instrument as the guarantee bond for post-completion workmanship.

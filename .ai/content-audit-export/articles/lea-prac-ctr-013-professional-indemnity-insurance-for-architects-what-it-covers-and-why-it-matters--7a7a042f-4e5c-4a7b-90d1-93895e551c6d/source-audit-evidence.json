@@ -1,29 +1,326 @@
 {
-  "batch_id": "source-audited-article-batch-029-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T16:20:00.000+08:00",
-  "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
-  "slug": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
-  "title": "Professional Indemnity Insurance for Architects What It Covers",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
+  "artifact_type": "source_audit_evidence",
+  "schema_version": "source-audited-local-first-v2",
+  "batch_id": "source-audited-article-batch-109-local-first",
+  "audit_mode": "local_raw_pdf_primary_with_refined_markdown_line_locators",
+  "audit_date": "2026-05-13T15:32:00+08:00",
+  "audited_at": "2026-05-13T15:32:00+08:00",
+  "target": {
+    "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+    "slug": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+    "title": "Professional Indemnity Insurance for Architects What It Covers",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/candidate.md",
+    "candidate_sha256": "sha256:7bc18e6d652ec71a7466092ced66ec4654e0f9556592eed1ad547187f5f71dcb",
+    "normalized_sha256": "sha256:7bc18e6d652ec71a7466092ced66ec4654e0f9556592eed1ad547187f5f71dcb",
+    "linked_questions_sha256": "sha256:3ccd38766cba7f9c348c4ac904c400518eb3592fa4532969b42ab6efd68146f0",
+    "sources_sha256": "sha256:23eaa640d0cc9f778e918f7196a146be39c5755994d65bf8f72fbe6e9073c42e"
+  },
   "classification": {
-    "legal_or_code_content": true,
+    "contains_legal_or_code_claims": true,
     "requires_raw_pdf_audit": true,
-    "local_first_only": true
+    "content_domain": "Philippine architecture professional practice",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "raw_pdf_gate": {
     "status": "PASS",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 3,
     "all_legal_code_claims_have_pdf_locator": true,
     "all_section_numbers_verified_against_raw_pdf": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "uap-standards-professional-practice-local",
+      "label": "UAP Document Standards of Professional Practice",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+    },
+    {
+      "source_id": "ra-9266-irr-local",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+    },
+    {
+      "source_id": "ra-386-civil-code-local",
+      "label": "RA 386 - Civil Code of the Philippines",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5"
+    }
+  ],
+  "raw_sources": [
+    {
+      "authority": "United Architects of the Philippines Standards of Professional Practice source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice lines 1665-1668",
+        "RA 9266 IRR lines 809-813",
+        "RA 9266 IRR lines 841-843",
+        "RA 386 Civil Code line 349"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Professional Regulation Commission / Board of Architecture Architecture Act IRR source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice lines 1665-1668",
+        "RA 9266 IRR lines 809-813",
+        "RA 9266 IRR lines 841-843",
+        "RA 386 Civil Code line 349"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Civil Code of the Philippines local legal source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+      "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice lines 1665-1668",
+        "RA 9266 IRR lines 809-813",
+        "RA 9266 IRR lines 841-843",
+        "RA 386 Civil Code line 349"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "historical_reaudit_overlap": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "prior_local_first_batch_id": "source-audited-article-batch-029-local-first for CTR-013",
+    "current_serial_accepted_batches_checked": "087-108",
+    "duplicate_in_current_serial_accepted_batches": false
+  },
+  "scenario": {
+    "status": "eligible-added",
+    "claim_text": "Batch 109 Real World Scenario checks professional indemnity insurance as a coverage requirement while preserving Civil Code Article 1723 liability.",
+    "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349"
+  },
+  "source_decisions": [
+    "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters refreshed in Batch 109 with source-safe contract, bond, payment, insurance, and liability boundaries from local raw source families."
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:article:batch-109",
+      "claim_text": "Professional Indemnity Insurance for Architects What It Covers was refreshed in Batch 109 with source-safe professional-practice boundaries and local source anchors.",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 article refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:scenario:batch-109",
+      "claim_text": "Batch 109 Real World Scenario checks professional indemnity insurance as a coverage requirement while preserving Civil Code Article 1723 liability.",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 Real World Scenario."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:001:batch-109",
+      "question_id": "01ce6619-19a3-4abb-b25b-ca169a0829f0",
+      "claim_text": "Which statement is source-safe for this article?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:002:batch-109",
+      "question_id": "1e23938b-0065-4600-bc49-7362278478db",
+      "claim_text": "How does RA 9266 IRR size the liability insurance or equivalent bond for temporary or special permit practice?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:003:batch-109",
+      "question_id": "8733cefd-e7e3-4d80-8ae1-5a13d44f3b53",
+      "claim_text": "What does RA 9266 IRR Section 39 require for foreign nationals under temporary or special permit practice?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:004:batch-109",
+      "question_id": "92d70317-d9d8-44cd-8485-c081cb875e3a",
+      "claim_text": "Who is charged the cost of the Professional Consulting Architect's professional liability insurance under the UAP SPP source?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:005:batch-109",
+      "question_id": "972cab95-683e-4066-849f-c99f6efbc1c6",
+      "claim_text": "Which source connects the IAPOA role with compliance recommendations for temporary or special permit liability insurance?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:006:batch-109",
+      "question_id": "9c53ef70-fbeb-4b3d-9f89-3206c581ab11",
+      "claim_text": "How should the professional liability insurance or bond be sized under the UAP SPP source?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:007:batch-109",
+      "question_id": "a3121d4d-bc77-4a38-bd2c-bfd9a732ddc8",
+      "claim_text": "What should not be imported into this article without another named source?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:008:batch-109",
+      "question_id": "b25048dd-53fd-47d2-9918-68272abe1532",
+      "claim_text": "Which distinction is source-safe?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:009:batch-109",
+      "question_id": "d0c464f2-adfa-4861-ac0c-e3b468e98f09",
+      "claim_text": "What does Civil Code Article 1723 separately address?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    },
+    {
+      "claim_id": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters:question:010:batch-109",
+      "question_id": "f8db0a13-b15a-445f-a317-93ac760f7e34",
+      "claim_text": "What does the UAP Standards of Professional Practice require for a Professional Consulting Architect where applicable?",
+      "support": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+      "status": "verified_local_raw_pdf",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this Batch 109 source-safe question refresh."
+      }
+    }
+  ],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/01ce6619-19a3-4abb-b25b-ca169a0829f0.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/1e23938b-0065-4600-bc49-7362278478db.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/8733cefd-e7e3-4d80-8ae1-5a13d44f3b53.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/92d70317-d9d8-44cd-8485-c081cb875e3a.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/972cab95-683e-4066-849f-c99f6efbc1c6.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/9c53ef70-fbeb-4b3d-9f89-3206c581ab11.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/a3121d4d-bc77-4a38-bd2c-bfd9a732ddc8.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/b25048dd-53fd-47d2-9918-68272abe1532.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/d0c464f2-adfa-4861-ac0c-e3b468e98f09.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits/f8db0a13-b15a-445f-a317-93ac760f7e34.json"
+  ],
+  "source_hash_check_inputs": {
+    "source_file_paths": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md"
+    ],
+    "question_edit_checked_source_references": 60
+  },
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
   },
   "overall": {
     "source_audit_status": "PASS",
@@ -38,266 +335,7 @@
       "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
     ]
   },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "uap-standards-professional-practice-local",
-        "label": "UAP Standards of Professional Practice",
-        "authority": "United Architects of the Philippines Standards of Professional Practice source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "checked_markdown_lines": [
-          "UAP Standards of Professional Practice lines 1665-1668"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ra-9266-irr-local",
-        "label": "RA 9266 IRR - Architecture Act of 2004",
-        "authority": "Professional Regulation Commission / Board of Architecture Architecture Act IRR source",
-        "source_type": "architecture_law_irr_pdf",
-        "source_locator": "RA 9266 IRR refined markdown lines 809-813 and 841-843",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-        "checked_markdown_lines": [
-          "RA 9266 IRR lines 809-813",
-          "RA 9266 IRR lines 841-843"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ra-386-civil-code-local",
-        "label": "RA 386 - Civil Code of the Philippines",
-        "authority": "Civil Code of the Philippines local legal source",
-        "source_type": "law_pdf",
-        "source_locator": "Civil Code Article 1723 refined markdown line 349",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-        "checked_markdown_lines": [
-          "RA 386 Civil Code line 349"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
-    "checked_markdown_lines": [
-      "UAP Standards of Professional Practice lines 1665-1668",
-      "RA 9266 IRR lines 809-813",
-      "RA 9266 IRR lines 841-843",
-      "RA 386 Civil Code line 349"
-    ]
-  },
-  "claims": [
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-001",
-      "claim_text": "Question f8db0a13-b15a-445f-a317-93ac760f7e34 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-001 rewritten to source-safe local form.",
-      "question_id": "f8db0a13-b15a-445f-a317-93ac760f7e34",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards of Professional Practice lines 1665-1668",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-002",
-      "claim_text": "Question 9c53ef70-fbeb-4b3d-9f89-3206c581ab11 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-002 rewritten to source-safe local form.",
-      "question_id": "9c53ef70-fbeb-4b3d-9f89-3206c581ab11",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards of Professional Practice lines 1665-1668",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-003",
-      "claim_text": "Question 92d70317-d9d8-44cd-8485-c081cb875e3a / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-003 rewritten to source-safe local form.",
-      "question_id": "92d70317-d9d8-44cd-8485-c081cb875e3a",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards of Professional Practice lines 1665-1668",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-004",
-      "claim_text": "Question 8733cefd-e7e3-4d80-8ae1-5a13d44f3b53 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-004 rewritten to source-safe local form.",
-      "question_id": "8733cefd-e7e3-4d80-8ae1-5a13d44f3b53",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "RA 9266 IRR lines 809-813",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-005",
-      "claim_text": "Question 1e23938b-0065-4600-bc49-7362278478db / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-005 rewritten to source-safe local form.",
-      "question_id": "1e23938b-0065-4600-bc49-7362278478db",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "RA 9266 IRR lines 809-813",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-006",
-      "claim_text": "Question 972cab95-683e-4066-849f-c99f6efbc1c6 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-006 rewritten to source-safe local form.",
-      "question_id": "972cab95-683e-4066-849f-c99f6efbc1c6",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "RA 9266 IRR lines 841-843",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-007",
-      "claim_text": "Question 01ce6619-19a3-4abb-b25b-ca169a0829f0 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-007 rewritten to source-safe local form.",
-      "question_id": "01ce6619-19a3-4abb-b25b-ca169a0829f0",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards of Professional Practice lines 1665-1668",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-008",
-      "claim_text": "Question a3121d4d-bc77-4a38-bd2c-bfd9a732ddc8 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-008 rewritten to source-safe local form.",
-      "question_id": "a3121d4d-bc77-4a38-bd2c-bfd9a732ddc8",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards of Professional Practice lines 1665-1668; RA 9266 IRR lines 809-813",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-009",
-      "claim_text": "Question d0c464f2-adfa-4861-ac0c-e3b468e98f09 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-009 rewritten to source-safe local form.",
-      "question_id": "d0c464f2-adfa-4861-ac0c-e3b468e98f09",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "Civil Code Article 1723 line 349",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-question-010",
-      "claim_text": "Question b25048dd-53fd-47d2-9918-68272abe1532 / model BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-010 rewritten to source-safe local form.",
-      "question_id": "b25048dd-53fd-47d2-9918-68272abe1532",
-      "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-professional-practice-local",
-        "ra-9266-irr-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards of Professional Practice lines 1665-1668; CIAP Document 102 lines 813-814",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    }
+  "final_depth_findings_preserved": [
+    "Preserve final-depth insurance-policy mechanics as source-needed; Batch 109 does not teach claims-made coverage, deductibles, policy exclusions, or insurer defense mechanics."
   ]
 }

@@ -20,6 +20,10 @@ CIAP Document 102 states that the contractor guarantees, for one year or a longe
 
 The same source preserves the owner's rights under the Civil Code and other laws. Civil Code Article 1723 separately addresses collapse of a building within fifteen years from completion due to defects in plans, specifications, ground, construction, inferior materials, or violation of contract terms.
 
+## Real World Scenario
+
+Six months after retention is released and the guarantee bond is posted, cracked tile work appears and the owner sends written notice. Under CIAP Document 102, the exam-safe analysis starts with the contractual guarantee: if the defect is due to material or workmanship fault, the contractor must begin corrective work within five days after written notice and bear the expense. Do not convert that one-year guarantee into the separate fifteen-year Civil Code Article 1723 collapse rule.
+
 ## Exam Boundary
 
 For this article, keep two rules separate: the contract guarantee bond addresses materials and workmanship for the guarantee period; Civil Code Article 1723 is a separate statutory liability rule for building collapse.

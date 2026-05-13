@@ -1,7 +1,7 @@
 {
   "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:3673b80c45b1c68da8183245cccb6127c6063b605bd305ffb9b5bab6ff6f993d",
+  "sources_hash": "sha256:2ae7ac9d7d4442d8c501cad2129a0425146dc5437f06d5099930acd205516d94",
   "source_count": 3,
   "sources": [
     {
@@ -10,22 +10,26 @@
       "label": "UAP Document 301 - General Conditions",
       "url": null,
       "source_type": "professional_practice_contract_pdf",
-      "description": "Local raw PDF and refined markdown checked for UAP Document 301 refined markdown lines 493, 786-790, 1078-1090.",
+      "description": "Local raw PDF and refined markdown checked for UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-11T16:20:00.000+08:00",
-      "updated_at": "2026-05-11T16:20:00.000+08:00",
+      "created_at": "2026-05-13T14:20:00.000+08:00",
+      "updated_at": "2026-05-13T14:20:00.000+08:00",
       "local_source_audit": {
         "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
         "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
         "checked_markdown_lines": [
           "UAP Document 301 line 493",
           "UAP Document 301 lines 786-790",
-          "UAP Document 301 lines 1078-1090"
+          "UAP Document 301 lines 1078-1090",
+          "CIAP Document 102 lines 671-681",
+          "CIAP Document 102 lines 813-821",
+          "CIAP Document 102 lines 905-911",
+          "RA 386 Civil Code line 349"
         ],
         "local_source_checked": true
       }
@@ -36,22 +40,26 @@
       "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
       "url": null,
       "source_type": "construction_contract_pdf",
-      "description": "Local raw PDF and refined markdown checked for CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911.",
+      "description": "Local raw PDF and refined markdown checked for UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349.",
       "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-05-11T16:20:00.000+08:00",
-      "updated_at": "2026-05-11T16:20:00.000+08:00",
+      "created_at": "2026-05-13T14:20:00.000+08:00",
+      "updated_at": "2026-05-13T14:20:00.000+08:00",
       "local_source_audit": {
         "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
         "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
         "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "source_locator": "CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
         "checked_markdown_lines": [
+          "UAP Document 301 line 493",
+          "UAP Document 301 lines 786-790",
+          "UAP Document 301 lines 1078-1090",
           "CIAP Document 102 lines 671-681",
           "CIAP Document 102 lines 813-821",
-          "CIAP Document 102 lines 905-911"
+          "CIAP Document 102 lines 905-911",
+          "RA 386 Civil Code line 349"
         ],
         "local_source_checked": true
       }
@@ -62,19 +70,25 @@
       "label": "RA 386 - Civil Code of the Philippines",
       "url": null,
       "source_type": "law_pdf",
-      "description": "Local raw PDF and refined markdown checked for Civil Code Article 1723 refined markdown line 349.",
+      "description": "Local raw PDF and refined markdown checked for UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349.",
       "is_verified": true,
       "sort_order": 3,
-      "created_at": "2026-05-11T16:20:00.000+08:00",
-      "updated_at": "2026-05-11T16:20:00.000+08:00",
+      "created_at": "2026-05-13T14:20:00.000+08:00",
+      "updated_at": "2026-05-13T14:20:00.000+08:00",
       "local_source_audit": {
         "authority": "Civil Code of the Philippines local legal source",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
         "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
         "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-        "source_locator": "Civil Code Article 1723 refined markdown line 349",
+        "source_locator": "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090; CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911; Civil Code Article 1723 refined markdown line 349",
         "checked_markdown_lines": [
+          "UAP Document 301 line 493",
+          "UAP Document 301 lines 786-790",
+          "UAP Document 301 lines 1078-1090",
+          "CIAP Document 102 lines 671-681",
+          "CIAP Document 102 lines 813-821",
+          "CIAP Document 102 lines 905-911",
           "RA 386 Civil Code line 349"
         ],
         "local_source_checked": true

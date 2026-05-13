@@ -1,0 +1,113 @@
+{
+  "batch_id": "source-audited-article-batch-109-local-first",
+  "batch_number": "109",
+  "reserved_at": "2026-05-13T14:30:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "bfa0931a3",
+  "current_head_at_manifest_generation": "bfa0931a3",
+  "previous_batch": {
+    "batch_number": "108",
+    "commit": "bfa0931a3",
+    "status": "accepted_and_pushed"
+  },
+  "manifest_status": "local_first_validated_git_blocked",
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batch 108 CTR-009; selected CTR-010 through CTR-014 with no duplicate article IDs from accepted Batches 087-108.",
+  "inherited_blocker_status": {
+    "status": "clear",
+    "source_blockers": 0,
+    "notes": [
+      "Batch 108 is accepted and pushed at bfa0931a3; Batch 109 starts from this clean baseline."
+    ]
+  },
+  "article_clusters": [
+    "CIAP/UAP performance bond purpose, 15% amount, replacement by guarantee bond, and mandatory bond conditions",
+    "Payment bond protection for workers, subcontractors, suppliers, lien releases, deductions, and indemnity bond boundary",
+    "Guarantee bond one-year defects liability, materials/workmanship scope, and Civil Code Article 1723 boundary",
+    "Professional indemnity/liability insurance source boundary for PACS and temporary/special permit practice",
+    "Certificate of payment request, architect certification/withholding, monthly billing, owner action, and written-reasons boundary"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "source_safe_real_world_scenarios_expected": 5
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+      "title": "Performance Bond Purpose Typical Amount",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf"
+    },
+    {
+      "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
+      "slug": "lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
+      "title": "Payment Bond Protection for Subcontractors and Suppliers",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed"
+    },
+    {
+      "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
+      "slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
+      "title": "Guarantee Bond the One Year Defects Liability Period and its Scope",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b"
+    },
+    {
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "slug": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "title": "Professional Indemnity Insurance for Architects What It Covers",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d"
+    },
+    {
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "slug": "lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications",
+      "title": "Certificate of Payment Issuance Process Architect's Certification",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-108",
+    "duplicate_hits": [],
+    "historical_reaudit_overlap_recorded_separately": [
+      "source-audited-article-batch-029-local-first for lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+      "source-audited-article-batch-029-local-first for lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
+      "source-audited-article-batch-029-local-first for lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
+      "source-audited-article-batch-029-local-first for lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "source-audited-article-batch-030-local-first for lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications"
+    ]
+  },
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "Historical batch 029/030 artifacts existed but were not accepted in the current serial Batch 087-108 baseline for these selected IDs."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_real_git_and_network_push",
+    "expected_commit_message": "chore(content): accept source-audited batch 109",
+    "commit_created": false,
+    "push_performed": false,
+    "temporary_index_cached_diff_check": "pass",
+    "blocker": "real git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted; push failed with Could not resolve host: github.com"
+  }
+}
