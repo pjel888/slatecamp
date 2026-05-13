@@ -1,56 +1,92 @@
 {
   "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:951059930c6abdb1d8b8be7e53e7425629544410424b8596cb9929ff049c0172",
-  "source_count": 4,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "c4479a61-2f8a-444a-aa69-56ed608bff03",
+      "source_id": "batch-134-lea-theo-005-05-core-concept-raw-source-capture",
       "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
-      "label": "Venturi, Robert. *Complexity and Contradiction in Architecture*. Museum of Modern Art Papers on Architecture No. 1, 1966",
+      "label": "Batch 134 raw source capture - Postmodernism in Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Postmodernism in Architecture; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:25:00.000+08:00",
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md",
+      "local_sha256": "sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md#sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c",
+      "checked_markdown_lines": [
+        "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+        "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+        "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+        "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+        "MoMA press release, https://press.moma.org/wp-content/uploads/2019/07/CC_pressrelease_FINAL-1.pdf, lines 5-14 and 18-22: Complexity and Contradiction was first published in 1966, is foundational to postmodernism, and argues against purist postwar modernist simplification.",
+        "MoMA event, https://www.moma.org/calendar/events/2430, lines 142-144 and 220-228: Complexity and Contradiction was a MoMA-published gentle manifesto and the program included Venturi Vanna Venturi House."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
     },
     {
-      "source_id": "893f5df2-170d-48e6-809e-1683620ea456",
+      "source_id": "batch-134-lea-theo-005-05-core-concept-refined-source-map",
       "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
-      "label": "Venturi, Robert, Denise Scott Brown, and Steven Izenour. *Learning from Las Vegas: The Forgotten Symbolism of Architectural Form*. MIT Press, 1972",
+      "label": "Batch 134 refined source conversion - Postmodernism in Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion of the Batch 134 raw source capture for Postmodernism in Architecture.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "e627476f-5103-4c05-a101-7f07f1f50e46",
-      "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
-      "label": "Jencks, Charles. *Language of Post-Modern Architecture*. Rizzoli, 1977",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "c4b4b0b1-f6de-4f0d-a36a-342f66ec46e2",
-      "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
-      "label": "Rossi, Aldo. *The Architecture of the City*. Translated by Diane Ghirardo. MIT Press, 1982",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:25:00.000+08:00",
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md",
+      "local_sha256": "sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md#sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md",
+      "upstream_capture_sha256": "sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c",
+      "checked_markdown_lines": [
+        "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+        "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+        "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+        "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+        "MoMA press release, https://press.moma.org/wp-content/uploads/2019/07/CC_pressrelease_FINAL-1.pdf, lines 5-14 and 18-22: Complexity and Contradiction was first published in 1966, is foundational to postmodernism, and argues against purist postwar modernist simplification.",
+        "MoMA event, https://www.moma.org/calendar/events/2430, lines 142-144 and 220-228: Complexity and Contradiction was a MoMA-published gentle manifesto and the program included Venturi Vanna Venturi House."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
-  ]
+  ],
+  "sources_hash": "sha256:76116bbf6bf1c4b6a891f81118b12cd8fd0b0248188214656c3a24531cfb8169"
 }

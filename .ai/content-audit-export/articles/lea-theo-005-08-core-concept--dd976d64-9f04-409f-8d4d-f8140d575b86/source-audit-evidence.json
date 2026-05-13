@@ -1,0 +1,190 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-134-local-first",
+  "batch_number": 134,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:25:00.000+08:00",
+  "target": {
+    "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+    "slug": "lea-theo-005-08-core-concept",
+    "title": "Phenomenology in Architecture",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-08-core-concept--dd976d64-9f04-409f-8d4d-f8140d575b86",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-08-core-concept--dd976d64-9f04-409f-8d4d-f8140d575b86/question-edits",
+    "linked_questions": 11,
+    "question_edits": 11,
+    "normalized_sha256": "sha256:2d8e50ba50972fa453e24a0eac0af59a29bb2dd0ca144316992e351408a7af74",
+    "original_sha256": "sha256:d0a2192c706a4f6864186bb9dfb1db78dc677298f17276a644a0e8480b56e88f",
+    "candidate_sha256": "sha256:2d8e50ba50972fa453e24a0eac0af59a29bb2dd0ca144316992e351408a7af74"
+  },
+  "local_source_gate": {
+    "status": "PASS",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus refined conversion under 002_Raw-Conversion-Layer",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "claims_cite_local_capture_hash": true,
+    "official_web_claims_captured_locally_first": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-08-core-concept-raw-source-capture",
+        "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+        "label": "Batch 134 raw source capture - Phenomenology in Architecture",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Phenomenology in Architecture; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md",
+        "local_sha256": "sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md#sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28",
+        "checked_markdown_lines": [
+          "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+          "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+          "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience.",
+          "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 240-268: phenomenology analyzes perception, thought, action, cultural conditions, and embodied/lived-body experience.",
+          "Pritzker Prize Peter Zumthor, https://www.pritzkerprize.com/laureates/2009, lines 203-206: Zumthor connects site, local culture, history, moving-through experience, and materials."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          }
+        ],
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-08-core-concept-refined-source-map",
+        "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+        "label": "Batch 134 refined source conversion - Phenomenology in Architecture",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 134 raw source capture for Phenomenology in Architecture.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md",
+        "local_sha256": "sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md#sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md",
+        "upstream_capture_sha256": "sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28",
+        "checked_markdown_lines": [
+          "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+          "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+          "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience.",
+          "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 240-268: phenomenology analyzes perception, thought, action, cultural conditions, and embodied/lived-body experience.",
+          "Pritzker Prize Peter Zumthor, https://www.pritzkerprize.com/laureates/2009, lines 203-206: Zumthor connects site, local culture, history, moving-through experience, and materials."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          }
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-phenomenology",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": false,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "3e3d4416-1804-4937-8988-fb00501e500f",
+      "e754f2be-fc0a-4547-95af-f468d6269004",
+      "c658aa2c-f637-4111-8271-774e8aef6d5b",
+      "b6f402f0-5874-4baa-8d74-98fccadd3189",
+      "2c23c74f-42e7-4656-a858-41744e551c8a",
+      "66c44ab0-9adc-46e8-83d1-e531ba4e9c4f",
+      "64d2f78b-6e2a-4f39-8ea0-ea9fc48a9fee",
+      "6cb82290-b8a5-44de-9413-0e7ba736c336",
+      "09551067-bd88-4a18-96c2-d91ddc6d97f4",
+      "3af68b8d-0792-4bdf-bf6b-84e72b60f185",
+      "b71ce2bc-83dd-4fcc-a962-1b5afe5ad97a"
+    ],
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A small memorial chapel is reviewed through body-scale movement, threshold, local stone, shaded light, acoustic quiet, weather, and memory of the site. The reviewer avoids claiming unsupported Heidegger terminology and instead asks how the place is experienced by occupants moving through it."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-005-08-core-concept-b134-claim-01",
+      "claim_text": "Phenomenology in Architecture is limited to checked local Batch 134 source capture and refined conversion artifacts.",
+      "source_support": {
+        "source_ids": [
+          "batch-134-lea-theo-005-08-core-concept-raw-source-capture",
+          "batch-134-lea-theo-005-08-core-concept-refined-source-map"
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          }
+        ],
+        "checked_locators": [
+          "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+          "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+          "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience.",
+          "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 240-268: phenomenology analyzes perception, thought, action, cultural conditions, and embodied/lived-body experience.",
+          "Pritzker Prize Peter Zumthor, https://www.pritzkerprize.com/laureates/2009, lines 203-206: Zumthor connects site, local culture, history, moving-through experience, and materials."
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+    "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+    "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience.",
+    "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 240-268: phenomenology analyzes perception, thought, action, cultural conditions, and embodied/lived-body experience.",
+    "Pritzker Prize Peter Zumthor, https://www.pritzkerprize.com/laureates/2009, lines 203-206: Zumthor connects site, local culture, history, moving-through experience, and materials."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported exact Heidegger Fourfold testing claims, unsourced Norberg-Schulz chapter claims, and broad Pallasmaa/Zumthor method lists beyond checked locators are excluded."
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_required_after_content_generation",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "pending_compose_diff_validate",
+    "validate_gate": "pending_compose_diff_validate",
+    "ui_block_edits_gate": "pending_ui_block_validation"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_handoff": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

@@ -1,3 +1,13 @@
+## Batch 134 Local-First Handoff - 2026-05-14T06:45:00.000+08:00
+
+Local validation passed for 5 sourceable residual theory bundles: lea-theo-005-01-core-concept, lea-theo-005-02-core-concept, lea-theo-005-04-core-concept, lea-theo-005-05-core-concept, lea-theo-005-08-core-concept. Batch 134 applies 58/58 linked-question rewrites with zero answer-key changes and local captured source artifacts.
+
+Ready for acceptance commit: `chore(content): accept source-audited batch 134`. Intended paths are recorded in `.ai/03_plans/batch-134-git-handoff-stage-paths.txt`; unrelated dirty work remains excluded.
+
+Git index blocker observed: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted
+
+---
+
 ## Batch 133 Local-First Handoff - 2026-05-14T18:58:00.000+08:00
 
 Local validation passed, but Codex could not write .git/index.lock: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should stage the Batch 133 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 133`, and push `origin/3dlab-gray-viewport-bg`.

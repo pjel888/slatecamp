@@ -1,56 +1,76 @@
 {
   "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:ca54bc3abbe2933fa233f6f403ae580f7f7aaaf66e0b4b545ffc8aa61b9f1dee",
-  "source_count": 4,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "d9597bca-d653-4cd5-97b4-fca153e2a7d7",
+      "source_id": "batch-134-lea-theo-005-08-core-concept-raw-source-capture",
       "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
-      "label": "Heidegger, Martin. \"Building Dwelling Thinking.\" In *Poetry, Language, Thought*. Translated by Albert Hofstadter. Harper & Row, 1971",
+      "label": "Batch 134 raw source capture - Phenomenology in Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Phenomenology in Architecture; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:25:00.000+08:00",
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md",
+      "local_sha256": "sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md#sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28",
+      "checked_markdown_lines": [
+        "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+        "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+        "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience.",
+        "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 240-268: phenomenology analyzes perception, thought, action, cultural conditions, and embodied/lived-body experience.",
+        "Pritzker Prize Peter Zumthor, https://www.pritzkerprize.com/laureates/2009, lines 203-206: Zumthor connects site, local culture, history, moving-through experience, and materials."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 1 (Intro to Theory)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+        }
+      ],
+      "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
     },
     {
-      "source_id": "4645be39-9070-4a94-8190-71fce4967d88",
+      "source_id": "batch-134-lea-theo-005-08-core-concept-refined-source-map",
       "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
-      "label": "Norberg-Schulz, Christian. *Genius Loci: Towards a Phenomenology of Architecture*. Rizzoli, 1980",
+      "label": "Batch 134 refined source conversion - Phenomenology in Architecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion of the Batch 134 raw source capture for Phenomenology in Architecture.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "8632d542-f407-4abc-9aaf-26bbf211f6e1",
-      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
-      "label": "Zumthor, Peter. *Atmospheres: Architectural Environments—Surrounding Objects*. Birkhäuser, 2006",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "5cd61eb7-5976-46f4-a9f3-6c361a83cfe8",
-      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
-      "label": "Pallasmaa, Juhani. *The Eyes of the Skin: Architecture and the Senses*. John Wiley & Sons, 2005",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:25:00.000+08:00",
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md",
+      "local_sha256": "sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md#sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md",
+      "upstream_capture_sha256": "sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28",
+      "checked_markdown_lines": [
+        "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+        "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+        "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience.",
+        "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 240-268: phenomenology analyzes perception, thought, action, cultural conditions, and embodied/lived-body experience.",
+        "Pritzker Prize Peter Zumthor, https://www.pritzkerprize.com/laureates/2009, lines 203-206: Zumthor connects site, local culture, history, moving-through experience, and materials."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 1 (Intro to Theory)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
-  ]
+  ],
+  "sources_hash": "sha256:74d92b0cca1bdf328ecffab65c99b4c47864eb89fb5f8c954579ea4dee5b7cae"
 }

@@ -1,0 +1,60 @@
+{
+  "question_id": "55c9884a-f1c1-4af2-9b38-d4fa3b48c2dc",
+  "baseline_hash": "sha256:53f07f26fe72cc41f94d163d96e54a3b999a713ae0460d4fcbd1b58453e8a3f0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-134-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Postmodernism in Architecture.",
+  "approved_by": "codex-local-first-batch-134",
+  "approved_at": "2026-05-14T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
+    "parent_article_slug": "lea-theo-005-05-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md#sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md#sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5",
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-05-core-concept-raw-source-capture",
+        "label": "Batch 134 raw source capture - Postmodernism in Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md",
+        "sha256": "sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c"
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-05-core-concept-refined-source-map",
+        "label": "Batch 134 refined source conversion - Postmodernism in Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md",
+        "sha256": "sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 134 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How does postmodernism differ from the Miesian \"less is more\" position in this bundle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It rejects every form of meaning."
+      },
+      {
+        "id": "b",
+        "text": "It treats reduction as the only architectural value."
+      },
+      {
+        "id": "c",
+        "text": "It is the same position under another name."
+      },
+      {
+        "id": "d",
+        "text": "It challenges purist reduction through complexity, contradiction, historical reference, and symbolic communication."
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "It challenges purist reduction through complexity, contradiction, historical reference, and symbolic communication. This stays inside the Batch 134 local source map for Postmodernism in Architecture.",
+      "takeaway": "Use the local Batch 134 source capture and refined conversion for Postmodernism in Architecture; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md#sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md#sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5"
+    },
+    "explanation": "It challenges purist reduction through complexity, contradiction, historical reference, and symbolic communication. Supported by Batch 134 local source artifacts for Postmodernism in Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md#sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md#sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md#sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md#sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5"
+  },
+  "batch_question_template_index": 7
+}

@@ -1,0 +1,220 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-134-local-first",
+  "batch_number": 134,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:25:00.000+08:00",
+  "target": {
+    "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+    "slug": "lea-theo-005-01-core-concept",
+    "title": "Classical Architectural Theory",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-01-core-concept--128400dd-8642-4275-a64f-c411f6836d6d",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-01-core-concept--128400dd-8642-4275-a64f-c411f6836d6d/question-edits",
+    "linked_questions": 12,
+    "question_edits": 12,
+    "normalized_sha256": "sha256:b320c7019fa8d7f1a05d61694230a145c57240c5d5d1daff1e28095143c1ac2f",
+    "original_sha256": "sha256:3a938f1d9c5adf0ffaa5b1329814ec882a83cb06cbe5610893b7e774b4e52d2f",
+    "candidate_sha256": "sha256:b320c7019fa8d7f1a05d61694230a145c57240c5d5d1daff1e28095143c1ac2f"
+  },
+  "local_source_gate": {
+    "status": "PASS",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus refined conversion under 002_Raw-Conversion-Layer",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "claims_cite_local_capture_hash": true,
+    "official_web_claims_captured_locally_first": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-01-core-concept-raw-source-capture",
+        "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+        "label": "Batch 134 raw source capture - Classical Architectural Theory",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Classical Architectural Theory; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md",
+        "local_sha256": "sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15",
+        "checked_markdown_lines": [
+          "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+          "TOA 2 lines 1743-1795 connect classical orders, Renaissance mathematical proportions, Palladio, the Four Books, and proportional room-height methods.",
+          "TOA 2 lines 1801-1855 give Palladio examples including Villa Capra, Palazzo Chiericati, and Villa Thiene room sizes.",
+          "Britannica Architecture, https://www.britannica.com/topic/architecture/Commodity-firmness-and-delight-the-ultimate-synthesis, lines 272-276: Vitruvius triad is firmitas, utilitas, venustas; Palladio/Wotton order differs.",
+          "Britannica Ten Books on Architecture, https://www.britannica.com/topic/Ten-Books-on-Architecture, lines 79-97: Alberti De re aedificatoria is also Ten Books on Architecture, linked to concinnitas and printed in 1485.",
+          "Palladio Museum, https://www.palladiomuseum.org/en/exhibitions/PalladioAndHisLegacy2, lines 59-63: Palladio synthesized ancient/Renaissance lessons, mastered classical orders/proportion/harmony, and published I Quattro Libri in 1570.",
+          "Palladio Museum, https://www.palladiomuseum.org/en/museum/rooms/grain, lines 78-83: Palladian villas integrate residence/farm functions; room types use 3:2 and 4:3 ratios and the Four Books act as a user manual."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          },
+          {
+            "label": "TOA 2 (Elements + Principles)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+            "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+            "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+          }
+        ],
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-01-core-concept-refined-source-map",
+        "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+        "label": "Batch 134 refined source conversion - Classical Architectural Theory",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 134 raw source capture for Classical Architectural Theory.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md",
+        "local_sha256": "sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md",
+        "upstream_capture_sha256": "sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15",
+        "checked_markdown_lines": [
+          "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+          "TOA 2 lines 1743-1795 connect classical orders, Renaissance mathematical proportions, Palladio, the Four Books, and proportional room-height methods.",
+          "TOA 2 lines 1801-1855 give Palladio examples including Villa Capra, Palazzo Chiericati, and Villa Thiene room sizes.",
+          "Britannica Architecture, https://www.britannica.com/topic/architecture/Commodity-firmness-and-delight-the-ultimate-synthesis, lines 272-276: Vitruvius triad is firmitas, utilitas, venustas; Palladio/Wotton order differs.",
+          "Britannica Ten Books on Architecture, https://www.britannica.com/topic/Ten-Books-on-Architecture, lines 79-97: Alberti De re aedificatoria is also Ten Books on Architecture, linked to concinnitas and printed in 1485.",
+          "Palladio Museum, https://www.palladiomuseum.org/en/exhibitions/PalladioAndHisLegacy2, lines 59-63: Palladio synthesized ancient/Renaissance lessons, mastered classical orders/proportion/harmony, and published I Quattro Libri in 1570.",
+          "Palladio Museum, https://www.palladiomuseum.org/en/museum/rooms/grain, lines 78-83: Palladian villas integrate residence/farm functions; room types use 3:2 and 4:3 ratios and the Four Books act as a user manual."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          },
+          {
+            "label": "TOA 2 (Elements + Principles)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+            "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+            "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+          }
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-classical-theory",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": false,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "4baf8136-462f-49e1-a93a-3873dc573145",
+      "36350452-7bde-4644-b6e7-ba589b171c2c",
+      "8ee5ccd4-dee2-4027-acbb-a23779ca0a77",
+      "6bdd8eea-15a0-4ea8-bf49-815955aeb38f",
+      "76f3cc68-a31d-4949-a6a2-030e837519f5",
+      "e0f65daf-8801-4b1f-94e3-2020a3941ca7",
+      "2bd071de-5b36-4e6d-aed8-6442e51b62d0",
+      "9d269c22-2cb6-4eb0-ad7f-399fd42e98fd",
+      "b416dc5c-58f4-4719-be46-c4c674ef22fb",
+      "794dd209-1150-4f48-80a4-72272d8a28e8",
+      "a694fcf2-9421-469b-a8be-719010b11c01",
+      "5980ae86-2f75-4f63-a07c-64e987018bdf"
+    ],
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A studio jury reviewing a small civic hall uses the classical theory lineage as a checklist: the building must stand, fit its civic use, and present ordered beauty. The critic then asks whether the room proportions and entrance sequence are justified by the plan instead of copied as decoration."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-005-01-core-concept-b134-claim-01",
+      "claim_text": "Classical Architectural Theory is limited to checked local Batch 134 source capture and refined conversion artifacts.",
+      "source_support": {
+        "source_ids": [
+          "batch-134-lea-theo-005-01-core-concept-raw-source-capture",
+          "batch-134-lea-theo-005-01-core-concept-refined-source-map"
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          },
+          {
+            "label": "TOA 2 (Elements + Principles)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+            "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+            "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+          }
+        ],
+        "checked_locators": [
+          "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+          "TOA 2 lines 1743-1795 connect classical orders, Renaissance mathematical proportions, Palladio, the Four Books, and proportional room-height methods.",
+          "TOA 2 lines 1801-1855 give Palladio examples including Villa Capra, Palazzo Chiericati, and Villa Thiene room sizes.",
+          "Britannica Architecture, https://www.britannica.com/topic/architecture/Commodity-firmness-and-delight-the-ultimate-synthesis, lines 272-276: Vitruvius triad is firmitas, utilitas, venustas; Palladio/Wotton order differs.",
+          "Britannica Ten Books on Architecture, https://www.britannica.com/topic/Ten-Books-on-Architecture, lines 79-97: Alberti De re aedificatoria is also Ten Books on Architecture, linked to concinnitas and printed in 1485.",
+          "Palladio Museum, https://www.palladiomuseum.org/en/exhibitions/PalladioAndHisLegacy2, lines 59-63: Palladio synthesized ancient/Renaissance lessons, mastered classical orders/proportion/harmony, and published I Quattro Libri in 1570.",
+          "Palladio Museum, https://www.palladiomuseum.org/en/museum/rooms/grain, lines 78-83: Palladian villas integrate residence/farm functions; room types use 3:2 and 4:3 ratios and the Four Books act as a user manual."
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+    "TOA 2 lines 1743-1795 connect classical orders, Renaissance mathematical proportions, Palladio, the Four Books, and proportional room-height methods.",
+    "TOA 2 lines 1801-1855 give Palladio examples including Villa Capra, Palazzo Chiericati, and Villa Thiene room sizes.",
+    "Britannica Architecture, https://www.britannica.com/topic/architecture/Commodity-firmness-and-delight-the-ultimate-synthesis, lines 272-276: Vitruvius triad is firmitas, utilitas, venustas; Palladio/Wotton order differs.",
+    "Britannica Ten Books on Architecture, https://www.britannica.com/topic/Ten-Books-on-Architecture, lines 79-97: Alberti De re aedificatoria is also Ten Books on Architecture, linked to concinnitas and printed in 1485.",
+    "Palladio Museum, https://www.palladiomuseum.org/en/exhibitions/PalladioAndHisLegacy2, lines 59-63: Palladio synthesized ancient/Renaissance lessons, mastered classical orders/proportion/harmony, and published I Quattro Libri in 1570.",
+    "Palladio Museum, https://www.palladiomuseum.org/en/museum/rooms/grain, lines 78-83: Palladian villas integrate residence/farm functions; room types use 3:2 and 4:3 ratios and the Four Books act as a user manual."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported exact Palladian motif diagrams, unsourced claim that one triad term is always superior, and broad canon claims beyond the checked local and official locators are excluded."
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_required_after_content_generation",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "pending_compose_diff_validate",
+    "validate_gate": "pending_compose_diff_validate",
+    "ui_block_edits_gate": "pending_ui_block_validation"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_handoff": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

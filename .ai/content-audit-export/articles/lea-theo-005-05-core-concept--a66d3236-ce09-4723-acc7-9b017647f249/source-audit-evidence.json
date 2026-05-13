@@ -1,0 +1,216 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-134-local-first",
+  "batch_number": 134,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:25:00.000+08:00",
+  "target": {
+    "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
+    "slug": "lea-theo-005-05-core-concept",
+    "title": "Postmodernism in Architecture",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-05-core-concept--a66d3236-ce09-4723-acc7-9b017647f249",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-05-core-concept--a66d3236-ce09-4723-acc7-9b017647f249/question-edits",
+    "linked_questions": 12,
+    "question_edits": 12,
+    "normalized_sha256": "sha256:ba85ee781cb90eb5913720515554b8ecc80d42b8f8a979b3e7f23bde5c4ba04c",
+    "original_sha256": "sha256:5d2d3407ab856eb92c37eb7f864fc3735c20affa89ef7283e0d8bb4095c5b201",
+    "candidate_sha256": "sha256:ba85ee781cb90eb5913720515554b8ecc80d42b8f8a979b3e7f23bde5c4ba04c"
+  },
+  "local_source_gate": {
+    "status": "PASS",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus refined conversion under 002_Raw-Conversion-Layer",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "claims_cite_local_capture_hash": true,
+    "official_web_claims_captured_locally_first": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-05-core-concept-raw-source-capture",
+        "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
+        "label": "Batch 134 raw source capture - Postmodernism in Architecture",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Postmodernism in Architecture; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md",
+        "local_sha256": "sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md#sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c",
+        "checked_markdown_lines": [
+          "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+          "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+          "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+          "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+          "MoMA press release, https://press.moma.org/wp-content/uploads/2019/07/CC_pressrelease_FINAL-1.pdf, lines 5-14 and 18-22: Complexity and Contradiction was first published in 1966, is foundational to postmodernism, and argues against purist postwar modernist simplification.",
+          "MoMA event, https://www.moma.org/calendar/events/2430, lines 142-144 and 220-228: Complexity and Contradiction was a MoMA-published gentle manifesto and the program included Venturi Vanna Venturi House."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-05-core-concept-refined-source-map",
+        "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
+        "label": "Batch 134 refined source conversion - Postmodernism in Architecture",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 134 raw source capture for Postmodernism in Architecture.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md",
+        "local_sha256": "sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.refined.md#sha256:fae2851e435ad814f554f2374263d3db4c30fb4b2ae8f88930cb3e600008b8f5",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-05-core-concept-postmodernism-in-architecture.source-capture.md",
+        "upstream_capture_sha256": "sha256:61b53710745c821a72941a882ee8206117d819fbe087de758d9998913801c39c",
+        "checked_markdown_lines": [
+          "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+          "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+          "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+          "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+          "MoMA press release, https://press.moma.org/wp-content/uploads/2019/07/CC_pressrelease_FINAL-1.pdf, lines 5-14 and 18-22: Complexity and Contradiction was first published in 1966, is foundational to postmodernism, and argues against purist postwar modernist simplification.",
+          "MoMA event, https://www.moma.org/calendar/events/2430, lines 142-144 and 220-228: Complexity and Contradiction was a MoMA-published gentle manifesto and the program included Venturi Vanna Venturi House."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-postmodernism",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": false,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "6c93e412-9447-4c70-a393-3d9a17ef85d7",
+      "a2081354-fb51-4358-8fc9-da7ed50aad7f",
+      "59b37754-3a1a-4142-bd97-bdcd39252613",
+      "691c8393-bdc9-4ebc-840b-554df9bc6703",
+      "78d585c3-9700-4972-bd24-af27e9a98178",
+      "dd79f151-a883-4717-8024-7dbe193969c4",
+      "55c9884a-f1c1-4af2-9b38-d4fa3b48c2dc",
+      "b3560df4-f940-4885-aac4-96fc361f38a7",
+      "459b18aa-adc1-4871-85d6-869c02463ced",
+      "d1575ba3-d171-4e55-952b-89b1da4e9b72",
+      "60e3d713-687b-4716-8d73-658bc4634ada",
+      "56ee72f6-461c-4e81-aed7-72e8daed5f3e"
+    ],
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A cultural center addition uses a simplified classical profile, bright color, and a sign-like entrance to speak to the street. The reviewer asks whether these moves communicate context and public meaning or simply paste historical fragments onto a weak plan."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-005-05-core-concept-b134-claim-01",
+      "claim_text": "Postmodernism in Architecture is limited to checked local Batch 134 source capture and refined conversion artifacts.",
+      "source_support": {
+        "source_ids": [
+          "batch-134-lea-theo-005-05-core-concept-raw-source-capture",
+          "batch-134-lea-theo-005-05-core-concept-refined-source-map"
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "checked_locators": [
+          "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+          "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+          "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+          "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+          "MoMA press release, https://press.moma.org/wp-content/uploads/2019/07/CC_pressrelease_FINAL-1.pdf, lines 5-14 and 18-22: Complexity and Contradiction was first published in 1966, is foundational to postmodernism, and argues against purist postwar modernist simplification.",
+          "MoMA event, https://www.moma.org/calendar/events/2430, lines 142-144 and 220-228: Complexity and Contradiction was a MoMA-published gentle manifesto and the program included Venturi Vanna Venturi House."
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+    "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+    "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+    "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+    "MoMA press release, https://press.moma.org/wp-content/uploads/2019/07/CC_pressrelease_FINAL-1.pdf, lines 5-14 and 18-22: Complexity and Contradiction was first published in 1966, is foundational to postmodernism, and argues against purist postwar modernist simplification.",
+    "MoMA event, https://www.moma.org/calendar/events/2430, lines 142-144 and 220-228: Complexity and Contradiction was a MoMA-published gentle manifesto and the program included Venturi Vanna Venturi House."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported Jencks/Pruitt-Igoe date claims, exhaustive deconstructivist taxonomy, and broad Graves/Gehry/Libeskind attribution claims beyond checked locators are excluded."
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_required_after_content_generation",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "pending_compose_diff_validate",
+    "validate_gate": "pending_compose_diff_validate",
+    "ui_block_edits_gate": "pending_ui_block_validation"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_handoff": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

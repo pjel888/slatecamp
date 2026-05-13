@@ -1,0 +1,60 @@
+{
+  "question_id": "2c23c74f-42e7-4656-a858-41744e551c8a",
+  "baseline_hash": "sha256:391c4151778ebd6ccfe35789dbf872ce38e0853d40f4380278adc33104e9ed3e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-134-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Phenomenology in Architecture.",
+  "approved_by": "codex-local-first-batch-134",
+  "approved_at": "2026-05-14T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+    "parent_article_slug": "lea-theo-005-08-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md#sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md#sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8",
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-08-core-concept-raw-source-capture",
+        "label": "Batch 134 raw source capture - Phenomenology in Architecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md",
+        "sha256": "sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28"
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-08-core-concept-refined-source-map",
+        "label": "Batch 134 refined source conversion - Phenomenology in Architecture",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md",
+        "sha256": "sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 134 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why does this rewrite avoid exact Heidegger Fourfold testing claims?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Batch 134 checked locators do not directly source that exact list, so introducing it would exceed the source boundary."
+      },
+      {
+        "id": "b",
+        "text": "Phenomenology never discusses dwelling."
+      },
+      {
+        "id": "c",
+        "text": "The Fourfold belongs to Palladio."
+      },
+      {
+        "id": "d",
+        "text": "The local source proves it is a structural formula."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "The Batch 134 checked locators do not directly source that exact list, so introducing it would exceed the source boundary. This stays inside the Batch 134 local source map for Phenomenology in Architecture.",
+      "takeaway": "Use the local Batch 134 source capture and refined conversion for Phenomenology in Architecture; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md#sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md#sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8"
+    },
+    "explanation": "The Batch 134 checked locators do not directly source that exact list, so introducing it would exceed the source boundary. Supported by Batch 134 local source artifacts for Phenomenology in Architecture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md#sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md#sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.source-capture.md#sha256:282c90a1ad5939909f633d6d3f83749ded59be2e863fab405819214e30041b28; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-08-core-concept-phenomenology-in-architecture.refined.md#sha256:c6867fac08483dca9e72758b254cb760ff5f7123bbabb5e1e603abbb3431a6b8"
+  },
+  "batch_question_template_index": 5
+}

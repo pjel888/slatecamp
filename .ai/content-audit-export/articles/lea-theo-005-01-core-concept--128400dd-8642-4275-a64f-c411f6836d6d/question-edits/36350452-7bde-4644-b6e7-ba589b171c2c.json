@@ -1,0 +1,60 @@
+{
+  "question_id": "36350452-7bde-4644-b6e7-ba589b171c2c",
+  "baseline_hash": "sha256:158b2e68d0fe01cc75220955b1387a1eaaf1e86579cfd5b6a03e8ee85a84500a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-134-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Classical Architectural Theory.",
+  "approved_by": "codex-local-first-batch-134",
+  "approved_at": "2026-05-14T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+    "parent_article_slug": "lea-theo-005-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-01-core-concept-raw-source-capture",
+        "label": "Batch 134 raw source capture - Classical Architectural Theory",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md",
+        "sha256": "sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15"
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-01-core-concept-refined-source-map",
+        "label": "Batch 134 refined source conversion - Classical Architectural Theory",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md",
+        "sha256": "sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 134 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which pairing is the most source-safe for the Vitruvian triad?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firmitas = color, utilitas = ornament, venustas = property value."
+      },
+      {
+        "id": "b",
+        "text": "Firmitas = stability, utilitas = appropriate use, venustas = beauty or attractive appearance."
+      },
+      {
+        "id": "c",
+        "text": "Firmitas = landscape, utilitas = sculpture, venustas = acoustics only."
+      },
+      {
+        "id": "d",
+        "text": "Firmitas = furniture, utilitas = biography, venustas = building height."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "correct": "Firmitas = stability, utilitas = appropriate use, venustas = beauty or attractive appearance. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+      "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
+    },
+    "explanation": "Firmitas = stability, utilitas = appropriate use, venustas = beauty or attractive appearance. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
+  },
+  "batch_question_template_index": 2
+}

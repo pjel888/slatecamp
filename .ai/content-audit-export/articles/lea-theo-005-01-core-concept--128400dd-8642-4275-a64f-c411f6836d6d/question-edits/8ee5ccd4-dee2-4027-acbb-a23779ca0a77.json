@@ -1,0 +1,60 @@
+{
+  "question_id": "8ee5ccd4-dee2-4027-acbb-a23779ca0a77",
+  "baseline_hash": "sha256:7e4cf5af04d4bb2b60213d7a554492f85ac29fb506bd1c99a07a894f0ef2c9f4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-134-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Classical Architectural Theory.",
+  "approved_by": "codex-local-first-batch-134",
+  "approved_at": "2026-05-14T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+    "parent_article_slug": "lea-theo-005-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-01-core-concept-raw-source-capture",
+        "label": "Batch 134 raw source capture - Classical Architectural Theory",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md",
+        "sha256": "sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15"
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-01-core-concept-refined-source-map",
+        "label": "Batch 134 refined source conversion - Classical Architectural Theory",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md",
+        "sha256": "sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 134 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "A designer says a civic hall is classical because it has columns. What is the best critique?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Columns automatically prove classical theory."
+      },
+      {
+        "id": "b",
+        "text": "Classical theory is only about historical costume."
+      },
+      {
+        "id": "c",
+        "text": "Columns make use and structure irrelevant."
+      },
+      {
+        "id": "d",
+        "text": "The answer should check order, proportion, use, structure, and overall harmony, not columns alone."
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "The answer should check order, proportion, use, structure, and overall harmony, not columns alone. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+      "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
+    },
+    "explanation": "The answer should check order, proportion, use, structure, and overall harmony, not columns alone. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
+  },
+  "batch_question_template_index": 3
+}

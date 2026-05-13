@@ -1,30 +1,29 @@
 {
   "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:07b9665d78d9b9a9e065754c2ab6709e5131580a3139b2f8c2ac41fadeca9761",
   "question_count": 12,
   "questions": [
     {
       "question_id": "4baf8136-462f-49e1-a93a-3873dc573145",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "The progression from Vitruvius to Alberti to Palladio reveals a shift in architectural theory from describing existing practice to theorizing ideals to systematizing knowledge. Which aspect of this progression most directly enabled architecture's transformation into a discipline teachable through rational, transmissible principles?",
+      "text": "A prompt asks what Vitruvius contributes to classical theory. Which answer stays inside the Batch 134 source map?",
       "options": [
         {
           "id": "a",
-          "text": "The mutual agreement of all three theorists on the primacy of beauty over function, which established a unified aesthetic standard"
+          "text": "He rejected structure and use in favor of ornament alone."
         },
         {
           "id": "b",
-          "text": "Alberti's elevation of the architect as intellectual and his emphasis on paper-based design authority over craftspeople, which shifted the focus from manual to intellectual labor"
+          "text": "He invented modern reinforced concrete frame design."
         },
         {
           "id": "c",
-          "text": "Vitruvius's establishment of the classical orders as universal standards, providing a foundational framework for architectural education"
+          "text": "He made Palladio irrelevant by ending Renaissance theory."
         },
         {
           "id": "d",
-          "text": "Palladio's publication of measured drawings and proportional systems that could be replicated and taught across regions and generations"
+          "text": "He framed architecture through firmitas, utilitas, and venustas, with the architect as a learned professional."
         }
       ],
       "correct_option_id": "d",
@@ -33,14 +32,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory does not establish that all three agreed on beauty's primacy; rather, it traces an evolution in how architects understood and transmitted their discipline.",
-        "b": "Alberti's theoretical contributions were crucial, but systematization for universal teachability required Palladio's published measured drawings.",
-        "c": "While Vitruvius established orders, transmission of knowledge for universal application came through Palladio's method.",
-        "correct": "Concluding paragraph directly emphasizes that Palladio achieved the 'systematizing knowledge for universal application,' and the text emphasizes that his measured drawings created 'a visual language that architects could study and imitate,' enabling transmission of principles across the centuries. This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve.",
-        "takeaway": "This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve."
+        "correct": "He framed architecture through firmitas, utilitas, and venustas, with the architect as a learned professional. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": "architectural theory does not establish that all three agreed on beauty's primacy; rather, it traces an evolution in how architects understood and transmitted their discipline. Alberti's theoretical contributions were crucial, but systematization for universal teachability required Palladio's published measured drawings. While Vitruvius established orders, transmission of knowledge for universal application came through Palladio's method. Concluding paragraph directly emphasizes that Palladio achieved the 'systematizing knowledge for universal application,' and the text emphasizes that his measured drawings created 'a visual language that architects could study and imitate,' enabling transmission of principles across the centuries. This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve. This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve.",
-      "code_citation": null,
+      "explanation": "He framed architecture through firmitas, utilitas, and venustas, with the architect as a learned professional. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +50,30 @@
       "model_id": "ALE-THEO-005-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T14:48:28.294619+00:00",
-      "content_hash": "sha256:e011988e3cd6ff24c51e7d70fda47fa0019d2111b06ff1ed32f41a80c95cf9d8"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:e1185b91ab1ebdcd3451c881a17347b80c1d4498b0aef3d7a41d45d656553403"
     },
     {
       "question_id": "36350452-7bde-4644-b6e7-ba589b171c2c",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "The Palladian motif (Serliana) consists of what architectural arrangement?",
+      "text": "Which pairing is the most source-safe for the Vitruvian triad?",
       "options": [
         {
           "id": "a",
-          "text": "A single large arched window with flanking rectangular windows on each side"
+          "text": "Firmitas = color, utilitas = ornament, venustas = property value."
         },
         {
           "id": "b",
-          "text": "A central arched opening flanked by two smaller rectangular openings"
+          "text": "Firmitas = stability, utilitas = appropriate use, venustas = beauty or attractive appearance."
         },
         {
           "id": "c",
-          "text": "A series of paired columns supporting a unified arch"
+          "text": "Firmitas = landscape, utilitas = sculpture, venustas = acoustics only."
         },
         {
           "id": "d",
-          "text": "Three identical arched openings arranged in a linear sequence"
+          "text": "Firmitas = furniture, utilitas = biography, venustas = building height."
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +82,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes a related but distinct window arrangement without the proportional logic of the Palladian motif.",
-        "c": "This describes a columnar arcade rather than the specific arched-rectangular-rectangular arrangement of the Palladian motif.",
-        "d": "This represents equal repetition rather than the hierarchical center-flanked composition.",
-        "correct": "architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design.",
-        "takeaway": "architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design."
+        "correct": "Firmitas = stability, utilitas = appropriate use, venustas = beauty or attractive appearance. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": "This describes a related but distinct window arrangement without the proportional logic of the Palladian motif. This describes a columnar arcade rather than the specific arched-rectangular-rectangular arrangement of the Palladian motif. This represents equal repetition rather than the hierarchical center-flanked composition. architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design. architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design.",
-      "code_citation": null,
+      "explanation": "Firmitas = stability, utilitas = appropriate use, venustas = beauty or attractive appearance. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -105,30 +100,30 @@
       "model_id": "ALE-THEO-005-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T14:48:28.543463+00:00",
-      "content_hash": "sha256:af5df313d369fd063e80b9729e1d071f874e5392980e5e0f0b392f5af680a2d9"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:158b2e68d0fe01cc75220955b1387a1eaaf1e86579cfd5b6a03e8ee85a84500a"
     },
     {
       "question_id": "8ee5ccd4-dee2-4027-acbb-a23779ca0a77",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "How did Alberti's insistence that the architect should design on paper with drawings and plans before construction differ fundamentally from the medieval craft-guild model, and what theoretical implication did this distinction carry?",
+      "text": "A designer says a civic hall is classical because it has columns. What is the best critique?",
       "options": [
         {
           "id": "a",
-          "text": "Alberti's method was faster than guild methods, enabling quicker construction by reducing the time spent on on-site adjustments and modifications."
+          "text": "Columns automatically prove classical theory."
         },
         {
           "id": "b",
-          "text": "Alberti invented architectural drawings whereas guilds relied entirely on built prototypes, marking a shift towards a more conceptual approach to design."
+          "text": "Classical theory is only about historical costume."
         },
         {
           "id": "c",
-          "text": "Alberti required all architects to be trained in mathematics, whereas guilds allowed practical experience, emphasizing the importance of theoretical knowledge in architectural practice."
+          "text": "Columns make use and structure irrelevant."
         },
         {
           "id": "d",
-          "text": "Alberti separated the architect's intellectual authority and conception from the craftspeople's execution, positioning architecture as a rational discipline governed by intelligible rules rather than craft secrecy"
+          "text": "The answer should check order, proportion, use, structure, and overall harmony, not columns alone."
         }
       ],
       "correct_option_id": "d",
@@ -137,14 +132,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Speed of construction is not addressed as a distinguishing feature.",
-        "b": "Architectural drawings existed before Alberti; the distinction is about his methodological emphasis on paper-based authority, not invention of drawings.",
-        "c": "While Alberti valued mathematical knowledge, architectural theory does not establish this as the primary distinction from guild training.",
-        "correct": "Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology.",
-        "takeaway": "Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology."
+        "correct": "The answer should check order, proportion, use, structure, and overall harmony, not columns alone. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": "Speed of construction is not addressed as a distinguishing feature. Architectural drawings existed before Alberti; the distinction is about his methodological emphasis on paper-based authority, not invention of drawings. While Alberti valued mathematical knowledge, architectural theory does not establish this as the primary distinction from guild training. Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology. Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology.",
-      "code_citation": null,
+      "explanation": "The answer should check order, proportion, use, structure, and overall harmony, not columns alone. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -157,30 +150,30 @@
       "model_id": "ALE-THEO-005-01-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T14:48:28.664341+00:00",
-      "content_hash": "sha256:b5f6587f55524938d28bb79831c14a3407e7528bd72317ba1af30cad35b869ba"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:7e4cf5af04d4bb2b60213d7a554492f85ac29fb506bd1c99a07a894f0ef2c9f4"
     },
     {
       "question_id": "6bdd8eea-15a0-4ea8-bf49-815955aeb38f",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "Why did Palladio's published measured drawings of classical buildings and his own designs prove more influential than Alberti's theoretical framework alone?",
+      "text": "What does Alberti add to the classical theory lineage in an exam-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "Palladio rejected mathematical proportion in favor of intuitive design, which appealed to architects seeking more creative freedom"
+          "text": "A rejection of reasoned design."
         },
         {
           "id": "b",
-          "text": "Alberti's work was never read by practicing architects, limiting its influence to academic circles"
+          "text": "A mechanical code for every room in every climate."
         },
         {
           "id": "c",
-          "text": "Palladio presented a visual language that architects could directly study and imitate, making classical principles practically transmissible across generations and regions"
+          "text": "A Renaissance theory of beauty as ordered relationship among parts and architecture as intellectual work."
         },
         {
           "id": "d",
-          "text": "Palladio's drawings were more beautifully rendered than Alberti's, capturing the attention of architects and patrons alike"
+          "text": "A claim that architecture should ignore drawings."
         }
       ],
       "correct_option_id": "c",
@@ -189,14 +182,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Palladio explicitly systematized mathematical proportional ratios; this contradicts content.",
-        "b": "Both Alberti and Palladio as influential; the distinction is methodological, not about accessibility.",
-        "d": "Aesthetic rendering quality is not the basis for the difference in influence discussed .",
-        "correct": "Palladio's 'genius lay in demonstrating that classical principles could be rationally applied to contemporary needs' through visual demonstration via measured drawings, creating 'a visual language that architects could study and imitate,' making him 'perhaps the most directly influential architect in Western history.'",
-        "takeaway": "Palladio's 'genius lay in demonstrating that classical principles could be rationally applied to contemporary needs' through visual demonstration via measured drawings, creating 'a visual language that architects could study and imitate,' making him 'perhaps the most directly influential architect in Western history.'."
+        "correct": "A Renaissance theory of beauty as ordered relationship among parts and architecture as intellectual work. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A Renaissance theory of beauty as ordered relationship among parts and architecture as intellectual work. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +200,30 @@
       "model_id": "ALE-THEO-005-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ccf6067fac753a429a0346b19782532856d90a538ae8f756680c21a3a3b54cf5"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:3f6708d3e62d6bdd6d29d9a08de80626e80154455203d77b514111d5a0119b47"
     },
     {
       "question_id": "76f3cc68-a31d-4949-a6a2-030e837519f5",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "How does Palladio's approach to proportional ratios differ from Vitruvius's classical orders in scope and application?",
+      "text": "Which statement about Palladio is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Palladio rejected classical principles entirely in favor of Renaissance innovation, focusing on new forms and styles"
+          "text": "He removed proportion from villa design."
         },
         {
           "id": "b",
-          "text": "Both architects developed identical proportional systems with no meaningful differences, applying them uniformly across all designs"
+          "text": "He published no architectural theory."
         },
         {
           "id": "c",
-          "text": "Vitruvius codified abstract proportional principles; Palladio systematized and published measured drawings applying these principles to contemporary villa design"
+          "text": "He systematized classical orders, proportion, harmony, and villa organization through the Four Books."
         },
         {
           "id": "d",
-          "text": "Vitruvius established column orders; Palladio reduced architectural proportion to decoration, emphasizing aesthetic over structural integrity"
+          "text": "He worked only on Gothic churches."
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +232,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Palladio explicitly built upon classical principles, not rejected them.",
-        "b": "Clear differences in how each theorist systematized and communicated proportional knowledge.",
-        "d": "Both Vitruvius and Palladio address more than column orders; this misrepresents both approaches.",
-        "correct": "Vitruvius as describing what architects do with Palladio as systematizing knowledge for universal application. Palladio's Four Books presented measured drawings of ancient buildings alongside his own designs, making proportional principles practically applicable to contemporary needs through the villa typology.",
-        "takeaway": "Palladio's Four Books presented measured drawings of ancient buildings alongside his own designs, making proportional principles practically applicable to contemporary needs through the villa typology."
+        "correct": "He systematized classical orders, proportion, harmony, and villa organization through the Four Books. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "He systematized classical orders, proportion, harmony, and villa organization through the Four Books. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +250,30 @@
       "model_id": "ALE-THEO-005-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d220f783827c7bc564882225a2dda83d0d7cf5e7c6e017857d5c77f7f620830d"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:0f184f72db585d1c3d4110a27670d242322524dbd86bde50c6192373bc0e4dbb"
     },
     {
       "question_id": "e0f65daf-8801-4b1f-94e3-2020a3941ca7",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "Vitruvius wrote De Architectura during the reign of Emperor Augustus, positioning the treatise as:",
+      "text": "A source-safe article should avoid which claim?",
       "options": [
         {
           "id": "a",
-          "text": "A practical construction manual for military engineers, focusing on fortifications and siege engines"
+          "text": "Palladio published I Quattro Libri in 1570."
         },
         {
           "id": "b",
-          "text": "A comprehensive system of architecture worthy of imperial attention and establishing the architect as a learned professional"
+          "text": "Every Palladian building must use one fixed modern classroom ratio."
         },
         {
           "id": "c",
-          "text": "A critique of Hellenistic architectural principles, emphasizing Roman innovations"
+          "text": "Vitruvian theory includes stability, use, and beauty."
         },
         {
           "id": "d",
-          "text": "A guide to decorative systems and ornamental orders, including detailed illustrations of column styles"
+          "text": "Alberti is linked to De re aedificatoria."
         }
       ],
       "correct_option_id": "b",
@@ -293,14 +282,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While Vitruvius was a military engineer, De Architectura extends far beyond practical construction into theoretical systematization.",
-        "c": "The text does not indicate the treatise was a critique of Hellenistic architecture but rather an establishment of foundational principles.",
-        "d": "While the text addresses ornamental orders, this option reduces the treatise's scope too narrowly.",
-        "correct": "Vitruvius addressed the treatise to Emperor Augustus himself, 'positioning architecture as a discipline worthy of imperial attention' and established the ideal architect as one who must possess knowledge spanning mathematics, geometry, optics, history, philosophy, medicine, and jurisprudence.",
-        "takeaway": "Vitruvius addressed the treatise to Emperor Augustus himself, 'positioning architecture as a discipline worthy of imperial attention' and established the ideal architect as one who must possess knowledge spanning mathematics, geometry, optics, history, philosophy, medicine, and jurisprudence."
+        "correct": "Every Palladian building must use one fixed modern classroom ratio. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Every Palladian building must use one fixed modern classroom ratio. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +300,30 @@
       "model_id": "ALE-THEO-005-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a80289563b1624c198eb067c7fa98abf1bb9ad633af118013e04eeef0fedd813"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:2f1ba1327b139c691b71ca27d73ae01c1db689832e81925a408692080fe265d0"
     },
     {
       "question_id": "2bd071de-5b36-4e6d-aed8-6442e51b62d0",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "Villa Rotonda, Palladio's masterwork, exemplifies his architectural philosophy primarily through:",
+      "text": "How should the LEA treat the sequence firmitas, utilitas, venustas?",
       "options": [
         {
           "id": "a",
-          "text": "Its elaborate ornamental facade and decorative details, showcasing Palladio's attention to aesthetic embellishments"
+          "text": "As proof that beauty never matters."
         },
         {
           "id": "b",
-          "text": "Its symmetrical design with four identical porticoes referencing classical temple fronts, demonstrating harmonic proportion and the villa typology"
+          "text": "As an integrated triad whose order may vary in later writers but whose three requirements remain central."
         },
         {
           "id": "c",
-          "text": "Its practical accommodation of rural agricultural functions, reflecting Palladio's integration of utility and form"
+          "text": "As a modern fire-code table."
         },
         {
           "id": "d",
-          "text": "Its innovative structural engineering techniques never before attempted, highlighting Palladio's pioneering approach"
+          "text": "As a Palladio-only phrase."
         }
       ],
       "correct_option_id": "b",
@@ -345,14 +332,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While the villa is refined, architectural theory does not emphasize ornamental elaboration as its primary philosophical exemplification.",
-        "c": "The villa is designed for the Venetian merchant class's leisure retreat, not for agricultural functions.",
-        "d": "Structural innovation is not highlighted as the key philosophical contribution in discussion.",
-        "correct": "Villa Rotonda as 'a symmetrical country residence with four identical porticoes, each referencing a classical temple front' and explicitly identifies it as an example that 'exemplifies harmonic proportion and the villa typology.'",
-        "takeaway": "Villa Rotonda as 'a symmetrical country residence with four identical porticoes, each referencing a classical temple front' and explicitly identifies it as an example that 'exemplifies harmonic proportion and the villa typology.'."
+        "correct": "As an integrated triad whose order may vary in later writers but whose three requirements remain central. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "As an integrated triad whose order may vary in later writers but whose three requirements remain central. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +350,30 @@
       "model_id": "ALE-THEO-005-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e128098c874837e769676620981377d97eb11d4246f40670afdb06202acfdee9"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:4d98d3e6fadf2b6c31e1f1efa4efab95acb7479eeb3dd80c3db0927c4f412022"
     },
     {
       "question_id": "9d269c22-2cb6-4eb0-ad7f-399fd42e98fd",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "Consider the statement: 'Classical proportions are not decorative but fundamental to spatial experience.' Which aspect of classical theory best supports this assertion?",
+      "text": "Why is the architect-as-learned-professional idea important in classical theory?",
       "options": [
         {
           "id": "a",
-          "text": "Proportion is primarily a visual phenomenon independent of human embodied experience, focusing solely on aesthetic appeal"
+          "text": "It removes the need for construction knowledge."
         },
         {
           "id": "b",
-          "text": "Classical architects applied ornamental proportions to enhance decorative features, emphasizing visual richness"
+          "text": "It says architects only need taste."
         },
         {
           "id": "c",
-          "text": "The visual beauty of proportional relationships creates aesthetic pleasure, contributing to the overall harmony of the space"
+          "text": "It makes theory unrelated to practice."
         },
         {
           "id": "d",
-          "text": "The proportional ratios (1:1, 2:3, 3:5) used by Palladio for room dimensions derive from harmonic musical intervals and create acoustic and spatial qualities that shape human experience in those spaces"
+          "text": "It grounds architectural authority in broad knowledge, judgment, proportion, construction, and use."
         }
       ],
       "correct_option_id": "d",
@@ -397,14 +382,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This contradicts emphasis that proportion fundamentally shapes spatial and acoustic experience.",
-        "b": "This reverses argument; proportions are structural/acoustic, not ornamental.",
-        "c": "While visual pleasure may result, this does not explain why proportion is 'fundamental' to experience rather than merely decorative.",
-        "correct": "Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics.",
-        "takeaway": "Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics."
+        "correct": "It grounds architectural authority in broad knowledge, judgment, proportion, construction, and use. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": "This contradicts emphasis that proportion fundamentally shapes spatial and acoustic experience. This reverses argument; proportions are structural/acoustic, not ornamental. While visual pleasure may result, this does not explain why proportion is 'fundamental' to experience rather than merely decorative. Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics. Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics.",
-      "code_citation": null,
+      "explanation": "It grounds architectural authority in broad knowledge, judgment, proportion, construction, and use. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -417,30 +400,30 @@
       "model_id": "ALE-THEO-005-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T14:48:28.180564+00:00",
-      "content_hash": "sha256:ca944031b2e90973e92192877432bcca365ee9ca0d0b2d087222dd66a4e7c237"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:66934cbc56e15a497e84e162159112235853055dbd4fa28a128c969b26fe26ca"
     },
     {
       "question_id": "b416dc5c-58f4-4719-be46-c4c674ef22fb",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "Concinnitas, as defined in Alberti's theory, refers to:",
+      "text": "Which answer best describes Palladian proportional reasoning?",
       "options": [
         {
           "id": "a",
-          "text": "The decorative application of classical ornament, often used to enhance the aesthetic appeal of facades and interiors"
+          "text": "A random decorative preference."
         },
         {
           "id": "b",
-          "text": "The ratio of height to width in classical columns, which is crucial for maintaining visual harmony and structural stability"
+          "text": "A rule that every room must be square."
         },
         {
           "id": "c",
-          "text": "The harmonious proportion and geometric relationship among all parts such that removing or altering any element destroys the beauty"
+          "text": "A published design system using harmonious relationships among room dimensions and building parts."
         },
         {
           "id": "d",
-          "text": "The structural integrity required of all buildings, ensuring that they can withstand environmental and load stresses"
+          "text": "A rejection of classical orders."
         }
       ],
       "correct_option_id": "c",
@@ -449,14 +432,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Concinnitas is not about applied ornament but about the geometric and proportional relationships among parts.",
-        "b": "While classical proportional ratios relate to concinnitas, this option oversimplifies to a single column measurement.",
-        "d": "This describes firmitas from the Vitruvian triad, not Alberti's concinnitas.",
-        "correct": "Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion.",
-        "takeaway": "Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion."
+        "correct": "A published design system using harmonious relationships among room dimensions and building parts. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": "Concinnitas is not about applied ornament but about the geometric and proportional relationships among parts. While classical proportional ratios relate to concinnitas, this option oversimplifies to a single column measurement. This describes firmitas from the Vitruvian triad, not Alberti's concinnitas. Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion. Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion.",
-      "code_citation": null,
+      "explanation": "A published design system using harmonious relationships among room dimensions and building parts. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -469,30 +450,30 @@
       "model_id": "ALE-THEO-005-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T14:48:28.421361+00:00",
-      "content_hash": "sha256:88181b42c06c38044d923c64cdddf839484b97f7839aa35c4fe7e4f60212ef3d"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:19438dc45b3368150eb02b47ecc22bd66e3126c24da7b9ca9fb0d2be886bb9fe"
     },
     {
       "question_id": "794dd209-1150-4f48-80a4-72272d8a28e8",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "Which architect authored De re aedificatoria and introduced the concept of concinnitas as harmonious beauty grounded in mathematical proportion?",
+      "text": "A student attributes concinnitas to Palladio because both discuss proportion. What correction is most defensible?",
       "options": [
         {
           "id": "a",
-          "text": "Donato Bramante, known for his work on St. Peter's Basilica in Rome"
+          "text": "Concinnitas belongs to Le Corbusier."
         },
         {
           "id": "b",
-          "text": "Vitruvius, the ancient Roman architect who wrote De Architectura"
+          "text": "Concinnitas is a structural material."
         },
         {
           "id": "c",
-          "text": "Andrea Palladio, famous for his villas in the Veneto region"
+          "text": "Concinnitas is a postmodern term."
         },
         {
           "id": "d",
-          "text": "Leon Battista Alberti"
+          "text": "Concinnitas is tied to Alberti and beauty as ordered harmony among parts."
         }
       ],
       "correct_option_id": "d",
@@ -501,14 +482,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Bramante was a designer and architect but did not author the theoretical treatise introducing concinnitas.",
-        "b": "Vitruvius developed the triadic framework and classical orders, predating Alberti by over 1,500 years.",
-        "c": "Palladio authored The Four Books on Architecture and systematized proportional ratios, but did not develop the concinnitas concept.",
-        "correct": "Leon Battista Alberti (1404-1472) authored De re aedificatoria (1485) and explicitly developed the concept of concinnitas as the harmonious, reasoned relationship among all parts yielding perfect proportion.",
-        "takeaway": "Leon Battista Alberti (1404-1472) authored De re aedificatoria (1485) and explicitly developed the concept of concinnitas as the harmonious, reasoned relationship among all parts yielding perfect proportion."
+        "correct": "Concinnitas is tied to Alberti and beauty as ordered harmony among parts. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Concinnitas is tied to Alberti and beauty as ordered harmony among parts. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -521,30 +500,30 @@
       "model_id": "ALE-THEO-005-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b279346ed2066c847dfd34bbdae8c1df3a604ab0d1d7d935ee00569bdc85b00d"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:cdfcdc6a7c8ccca0c6e05bac5db22eae5cc4922df19fec5cadbf35e14aa7b5b8"
     },
     {
       "question_id": "a694fcf2-9421-469b-a8be-719010b11c01",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "Which of the following correctly defines the three components of Vitruvius's triadic framework?",
+      "text": "Which study habit is most useful for classical theory questions?",
       "options": [
         {
           "id": "a",
-          "text": "Proportion, harmony, and beauty, which are considered essential for aesthetic balance"
+          "text": "Memorize one facade image and apply it to every question."
         },
         {
           "id": "b",
-          "text": "Firmitas (structural integrity), utilitas (function), and venustas (beauty)"
+          "text": "Match each theorist to treatise, concept, and design logic before selecting the option."
         },
         {
           "id": "c",
-          "text": "Geometry, proportion, and ornament, focusing on the mathematical and decorative aspects"
+          "text": "Ignore source boundaries and use any remembered trivia."
         },
         {
           "id": "d",
-          "text": "Function, material, and form, emphasizing the practical and physical elements of design"
+          "text": "Treat Vitruvius, Alberti, and Palladio as the same person."
         }
       ],
       "correct_option_id": "b",
@@ -553,14 +532,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While these terms relate to classical architecture, they do not capture the precise Vitruvian terminology and framework.",
-        "c": "This conflates classical proportional systems with the triadic framework; Vitruvius addresses both but this option does not specify the triad itself.",
-        "d": "This reflects modernist functional thinking rather than Vitruvius's classical framework.",
-        "correct": "The Vitruvian Triad is explicitly defined as firmitas (firmness/structural integrity), utilitas (utility/function), and venustas (beauty/aesthetics)—the three components that must coexist in equilibrium.",
-        "takeaway": "The Vitruvian Triad is explicitly defined as firmitas (firmness/structural integrity), utilitas (utility/function), and venustas (beauty/aesthetics)—the three components that must coexist in equilibrium."
+        "correct": "Match each theorist to treatise, concept, and design logic before selecting the option. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Match each theorist to treatise, concept, and design logic before selecting the option. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -573,30 +550,30 @@
       "model_id": "ALE-THEO-005-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ed797479d01ed7200ff585eedadd581a0fb7a713ddaaa407e417100bffda33bf"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:1de8481c7e4a8695492de770578e2dec58f7d8c17a4f740d1c32363f03ae6ab0"
     },
     {
       "question_id": "5980ae86-2f75-4f63-a07c-64e987018bdf",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "How does the concept of 'architect as intellectual' elevated by Alberti and Palladio contrast with Vitruvius's vision of the ideal architect, and what does this evolution reveal about changing attitudes toward architectural knowledge?",
+      "text": "In the real-world scenario, why is copying a classical portico without plan logic weak?",
       "options": [
         {
           "id": "a",
-          "text": "All three theorists held identical views; there is no meaningful evolution, as they all emphasized the same aspects of architectural practice without any significant divergence"
+          "text": "Because classical theory bans beauty."
         },
         {
           "id": "b",
-          "text": "Vitruvius valued only practical construction skills; Alberti and Palladio invented intellectual rigor for the discipline, introducing a new paradigm that shifted the focus from mere construction to theoretical exploration"
+          "text": "Because classical theory applies only to ruins."
         },
         {
           "id": "c",
-          "text": "Palladio rejected intellectual rigor in favor of practical empiricism, focusing solely on the tangible aspects of architecture without engaging in theoretical discourse"
+          "text": "Because a copied portico always violates law."
         },
         {
           "id": "d",
-          "text": "Vitruvius established the architect as learned professional requiring diverse knowledge (mathematics, geometry, philosophy, medicine); Alberti and Palladio elevated this further by establishing the architect's theoretical and paper-based authority independent of craft execution"
+          "text": "Because classical theory requires the form to answer order, use, proportion, and construction rather than decoration alone."
         }
       ],
       "correct_option_id": "d",
@@ -605,14 +582,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "architectural theory explicitly traces evolution from describing existing practice to theorizing ideals to systematizing knowledge.",
-        "b": "This misrepresents Vitruvius, who already established the architect as learned, not merely practical.",
-        "c": "Palladio explicitly systematized and published theoretical proportional knowledge; this contradicts the option.",
-        "correct": "architectural theory shows Vitruvius already described the ideal architect as 'a learned person' requiring knowledge spanning 'mathematics, geometry, optics, history, philosophy, medicine, and jurisprudence.' Alberti and Palladio built upon this, with Alberti explicitly challenging the guild model and establishing the architect as intellectual equal to philosophers, and Palladio demonstrating how theoretical principles could be systematically documented and transmitted. The evolution shows deepening of the architect's intellectual authority.",
-        "takeaway": "The evolution shows deepening of the architect's intellectual authority."
+        "correct": "Because classical theory requires the form to answer order, use, proportion, and construction rather than decoration alone. This stays inside the Batch 134 local source map for Classical Architectural Theory.",
+        "takeaway": "Use the local Batch 134 source capture and refined conversion for Classical Architectural Theory; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Because classical theory requires the form to answer order, use, proportion, and construction rather than decoration alone. Supported by Batch 134 local source artifacts for Classical Architectural Theory: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.source-capture.md#sha256:5a23df86f9e69ee36b5a202352bc7adb016ef9bc0e3a33d562f23371557d3c15; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-01-core-concept-classical-architectural-theory.refined.md#sha256:e40d4f228932fb53d220eb8def9680efcb4e1ef53c7c5ebc06af1da42ac56de2",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -625,8 +600,9 @@
       "model_id": "ALE-THEO-005-01-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:396fc65fd53a283b3a24591f2c7c1f6ba0b508a2ff1e31f9fcb1dc748cf2ad2a"
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "content_hash": "sha256:1147c834a7295d7b3df2acac1e63270c7d1665f099100fff97a60eb9e5bf86c2"
     }
-  ]
+  ],
+  "linked_questions_hash": "sha256:1674ca43f975d21a1e3a2c03159475dc5ba5dae40725c2a47e13a6892a54d812"
 }

@@ -1,0 +1,60 @@
+{
+  "question_id": "0ce551e5-7a00-45fd-b85d-af56fedecacd",
+  "baseline_hash": "sha256:2808beb7860706b2d78dff44ccccc20dd01f2932b6808aa974b7b6abf819a945",
+  "action": "replace",
+  "reason": "source-audited-article-batch-134-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Architectural Modernism.",
+  "approved_by": "codex-local-first-batch-134",
+  "approved_at": "2026-05-14T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+    "parent_article_slug": "lea-theo-005-02-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md#sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md#sha256:c10620d9addb48726f471d0a2316911524a9b534071a45ef01c2b76f4380f6d9",
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-02-core-concept-raw-source-capture",
+        "label": "Batch 134 raw source capture - Architectural Modernism",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md",
+        "sha256": "sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c"
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-02-core-concept-refined-source-map",
+        "label": "Batch 134 refined source conversion - Architectural Modernism",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md",
+        "sha256": "sha256:c10620d9addb48726f471d0a2316911524a9b534071a45ef01c2b76f4380f6d9"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 134 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which statement keeps Mies inside the checked evidence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mies is defined by historical ornament."
+      },
+      {
+        "id": "b",
+        "text": "Mies rejected reduction and detail."
+      },
+      {
+        "id": "c",
+        "text": "Mies is sourceable through disciplined reduction, less is more, and careful detail."
+      },
+      {
+        "id": "d",
+        "text": "Mies wrote the Four Books."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "correct": "Mies is sourceable through disciplined reduction, less is more, and careful detail. This stays inside the Batch 134 local source map for Architectural Modernism.",
+      "takeaway": "Use the local Batch 134 source capture and refined conversion for Architectural Modernism; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md#sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md#sha256:c10620d9addb48726f471d0a2316911524a9b534071a45ef01c2b76f4380f6d9"
+    },
+    "explanation": "Mies is sourceable through disciplined reduction, less is more, and careful detail. Supported by Batch 134 local source artifacts for Architectural Modernism: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md#sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md#sha256:c10620d9addb48726f471d0a2316911524a9b534071a45ef01c2b76f4380f6d9.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md#sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md#sha256:c10620d9addb48726f471d0a2316911524a9b534071a45ef01c2b76f4380f6d9"
+  },
+  "batch_question_template_index": 7
+}

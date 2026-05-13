@@ -1,56 +1,132 @@
 {
   "article_id": "976957b7-c288-4a63-8e76-9e26dcf6f199",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:1511780001181195d0452424b038bb814e94e1f7846d0d3b8c276a6f1ab1bd0c",
-  "source_count": 4,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "59790206-3dbe-4e1b-baa2-3f208827a45f",
+      "source_id": "batch-134-lea-theo-005-04-core-concept-raw-source-capture",
       "article_id": "976957b7-c288-4a63-8e76-9e26dcf6f199",
-      "label": "Vitruvius. *De architectura* (Ten Books on Architecture). Translated by Morris Hicky Morgan. Dover Publications, 1960",
+      "label": "Batch 134 raw source capture - Architectural Canon",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Architectural Canon; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:25:00.000+08:00",
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md",
+      "local_sha256": "sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md#sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3",
+      "checked_markdown_lines": [
+        "TOA 1 lines 27-56 locate LEA theory scope: design principles, signs and symbols, anthropometrics, ergonomics, proxemics, kinesthetics, tropical design, and major architects/philosophies.",
+        "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+        "TOA 2 lines 1743-1795 connect classical orders, Renaissance mathematical proportions, Palladio, the Four Books, and proportional room-height methods.",
+        "TOA 2 lines 1859-1919 describe Le Corbusier Modulor, golden section/Fibonacci reference, human scale, and Unite d Habitation measures.",
+        "TOA 5 lines 256-262 describe Le Corbusier, Villa Savoye, machine-for-living framing, and the Five Points.",
+        "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+        "Getty Canons and Values, https://shop.getty.edu/products/canons-and-values-ancient-to-modern-978-1606065976, lines 177-180: canons are constructed and contested; value systems shape hierarchies; Eurocentric canons are being rethought without dismissing canon study.",
+        "Britannica Architecture, https://www.britannica.com/topic/architecture/Commodity-firmness-and-delight-the-ultimate-synthesis, lines 272-276: Vitruvius triad is firmitas, utilitas, venustas; Palladio/Wotton order differs.",
+        "Palladio Museum, https://www.palladiomuseum.org/en/exhibitions/PalladioAndHisLegacy2, lines 59-63: Palladio synthesized ancient/Renaissance lessons, mastered classical orders/proportion/harmony, and published I Quattro Libri in 1570.",
+        "RIBA Modernism, https://www.riba.org/explore/riba-collections/architectural-styles/modernism-movement/, lines 60-76: modernism rejects ornament, uses analytical function, rational materials, structural innovation, volume, asymmetry, flat roofs, open plan, and minimal ornament.",
+        "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+        "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 1 (Intro to Theory)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+        },
+        {
+          "label": "TOA 2 (Elements + Principles)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+          "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+          "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+        },
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
     },
     {
-      "source_id": "22aa4bfd-8648-4ae4-92ac-2ea06999dfcb",
+      "source_id": "batch-134-lea-theo-005-04-core-concept-refined-source-map",
       "article_id": "976957b7-c288-4a63-8e76-9e26dcf6f199",
-      "label": "Alberti, Leon Battista. *On the Art of Building in Ten Books*. Translated by Joseph Rykwert et al. MIT Press, 1988",
+      "label": "Batch 134 refined source conversion - Architectural Canon",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion of the Batch 134 raw source capture for Architectural Canon.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "bb81a091-20ee-45fa-83e0-9a4ab0dbdd07",
-      "article_id": "976957b7-c288-4a63-8e76-9e26dcf6f199",
-      "label": "Palladio, Andrea. *The Four Books on Architecture*. Translated by Robert Tavernor and Richard Schofield. MIT Press, 1997",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "f57ef132-0af5-46e7-993f-6a3a4a942da1",
-      "article_id": "976957b7-c288-4a63-8e76-9e26dcf6f199",
-      "label": "Le Corbusier. *Towards a New Architecture*. Translated by Frederick Etchells. Dover Publications, 1986",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-14T06:25:00.000+08:00",
+      "updated_at": "2026-05-14T06:25:00.000+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md",
+      "local_sha256": "sha256:db26fac7813a724cd607ef39eca3b48fc4078b56f87d7d4b8ec941a9db79b53e",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md#sha256:db26fac7813a724cd607ef39eca3b48fc4078b56f87d7d4b8ec941a9db79b53e",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md",
+      "upstream_capture_sha256": "sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3",
+      "checked_markdown_lines": [
+        "TOA 1 lines 27-56 locate LEA theory scope: design principles, signs and symbols, anthropometrics, ergonomics, proxemics, kinesthetics, tropical design, and major architects/philosophies.",
+        "TOA 1 lines 98-160 distinguish theory as descriptive/prescriptive and frame architecture as art, science, space, structure, enclosure, movement, and sensory experience.",
+        "TOA 2 lines 1743-1795 connect classical orders, Renaissance mathematical proportions, Palladio, the Four Books, and proportional room-height methods.",
+        "TOA 2 lines 1859-1919 describe Le Corbusier Modulor, golden section/Fibonacci reference, human scale, and Unite d Habitation measures.",
+        "TOA 5 lines 256-262 describe Le Corbusier, Villa Savoye, machine-for-living framing, and the Five Points.",
+        "TOA 5 lines 548-558 describe Robert Venturi, Vanna Venturi House, precedent-based symbolic decoration, separation of structure and decoration, and cultural meaning.",
+        "Getty Canons and Values, https://shop.getty.edu/products/canons-and-values-ancient-to-modern-978-1606065976, lines 177-180: canons are constructed and contested; value systems shape hierarchies; Eurocentric canons are being rethought without dismissing canon study.",
+        "Britannica Architecture, https://www.britannica.com/topic/architecture/Commodity-firmness-and-delight-the-ultimate-synthesis, lines 272-276: Vitruvius triad is firmitas, utilitas, venustas; Palladio/Wotton order differs.",
+        "Palladio Museum, https://www.palladiomuseum.org/en/exhibitions/PalladioAndHisLegacy2, lines 59-63: Palladio synthesized ancient/Renaissance lessons, mastered classical orders/proportion/harmony, and published I Quattro Libri in 1570.",
+        "RIBA Modernism, https://www.riba.org/explore/riba-collections/architectural-styles/modernism-movement/, lines 60-76: modernism rejects ornament, uses analytical function, rational materials, structural innovation, volume, asymmetry, flat roofs, open plan, and minimal ornament.",
+        "RIBA Postmodernism, https://www.architecture.com/knowledge-and-resources/knowledge-landing-page/postmodernism, lines 113-126 and 146-155: postmodernism reacts to modernism, uses Venturi, signs/symbols, historical allusion, classical motifs, color, playfulness, materials, and shapes.",
+        "Stanford Encyclopedia of Philosophy Phenomenology, https://plato.stanford.edu/entries/phenomenology/, lines 57-83 and 147: phenomenology studies structures of experience/consciousness from the first-person point of view, including embodiment, spatial awareness, and lived experience."
+      ],
+      "local_source_families": [
+        {
+          "label": "TOA 1 (Intro to Theory)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+        },
+        {
+          "label": "TOA 2 (Elements + Principles)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+          "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+          "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+        },
+        {
+          "label": "TOA 5 (Masters of Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+          "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+          "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+        },
+        {
+          "label": "Quotes (1)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+          "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+          "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
-  ]
+  ],
+  "sources_hash": "sha256:afe11a39998ad2e201a8d363025f5109f44047057abee8fb317885acd2171532"
 }

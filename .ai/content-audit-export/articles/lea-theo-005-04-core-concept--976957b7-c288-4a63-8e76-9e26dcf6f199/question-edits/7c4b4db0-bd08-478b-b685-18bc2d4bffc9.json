@@ -1,0 +1,60 @@
+{
+  "question_id": "7c4b4db0-bd08-478b-b685-18bc2d4bffc9",
+  "baseline_hash": "sha256:aad720c45a17111fd776f5fa022f96512dbacde9c5a7b3393bbc58a2d0d0e187",
+  "action": "replace",
+  "reason": "source-audited-article-batch-134-local-first: unsupported or over-specific local-first rewrite constrained to checked local source artifacts for Architectural Canon.",
+  "approved_by": "codex-local-first-batch-134",
+  "approved_at": "2026-05-14T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "976957b7-c288-4a63-8e76-9e26dcf6f199",
+    "parent_article_slug": "lea-theo-005-04-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md#sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md#sha256:db26fac7813a724cd607ef39eca3b48fc4078b56f87d7d4b8ec941a9db79b53e",
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-04-core-concept-raw-source-capture",
+        "label": "Batch 134 raw source capture - Architectural Canon",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md",
+        "sha256": "sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3"
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-04-core-concept-refined-source-map",
+        "label": "Batch 134 refined source conversion - Architectural Canon",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md",
+        "sha256": "sha256:db26fac7813a724cd607ef39eca3b48fc4078b56f87d7d4b8ec941a9db79b53e"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 134 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How should an LEA student use a canon list?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a substitute for reading source claims."
+      },
+      {
+        "id": "b",
+        "text": "As proof that local context never matters."
+      },
+      {
+        "id": "c",
+        "text": "As a retrieval framework for recurring names, texts, works, and ideas, checked against source and context."
+      },
+      {
+        "id": "d",
+        "text": "As a license to invent unsupported facts."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "correct": "As a retrieval framework for recurring names, texts, works, and ideas, checked against source and context. This stays inside the Batch 134 local source map for Architectural Canon.",
+      "takeaway": "Use the local Batch 134 source capture and refined conversion for Architectural Canon; avoid unsupported exact formulas, chronology, or broad attribution claims.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md#sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md#sha256:db26fac7813a724cd607ef39eca3b48fc4078b56f87d7d4b8ec941a9db79b53e"
+    },
+    "explanation": "As a retrieval framework for recurring names, texts, works, and ideas, checked against source and context. Supported by Batch 134 local source artifacts for Architectural Canon: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md#sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md#sha256:db26fac7813a724cd607ef39eca3b48fc4078b56f87d7d4b8ec941a9db79b53e.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.source-capture.md#sha256:95ffaa4b841a85616f2fd192e516c2d92a127f7cd13480a554b593acb3dbeff3; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-04-core-concept-architectural-canon.refined.md#sha256:db26fac7813a724cd607ef39eca3b48fc4078b56f87d7d4b8ec941a9db79b53e"
+  },
+  "batch_question_template_index": 3
+}

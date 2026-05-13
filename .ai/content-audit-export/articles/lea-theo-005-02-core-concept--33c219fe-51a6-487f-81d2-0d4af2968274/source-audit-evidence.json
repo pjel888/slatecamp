@@ -1,0 +1,274 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-134-local-first",
+  "batch_number": 134,
+  "audit_mode": "local_first_captured_source_artifacts",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:25:00.000+08:00",
+  "target": {
+    "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+    "slug": "lea-theo-005-02-core-concept",
+    "title": "Architectural Modernism",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274/question-edits",
+    "linked_questions": 12,
+    "question_edits": 12,
+    "normalized_sha256": "sha256:0881c985235e9df23c99ed6c6d2d672f8cdcb2a8895d4a6d7af7b7c96ba4e722",
+    "original_sha256": "sha256:abe87278cfb94ea7e8ca8d1ec10a1039c349bed454445a3eae64acb3b8092dc1",
+    "candidate_sha256": "sha256:0881c985235e9df23c99ed6c6d2d672f8cdcb2a8895d4a6d7af7b7c96ba4e722"
+  },
+  "local_source_gate": {
+    "status": "PASS",
+    "primary_truth": "local source capture under vitruvius-connection/001_Raw-Source-Layer plus refined conversion under 002_Raw-Conversion-Layer",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "claims_cite_local_capture_hash": true,
+    "official_web_claims_captured_locally_first": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "batch-134-lea-theo-005-02-core-concept-raw-source-capture",
+        "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+        "label": "Batch 134 raw source capture - Architectural Modernism",
+        "url": null,
+        "source_type": "local_source_capture",
+        "description": "Local raw-source-layer capture for Architectural Modernism; includes checked local source family hashes plus authoritative web locators. Claims cite this artifact hash.",
+        "is_verified": true,
+        "sort_order": 0,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md",
+        "local_sha256": "sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md#sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c",
+        "checked_markdown_lines": [
+          "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+          "TOA 2 lines 1859-1919 describe Le Corbusier Modulor, golden section/Fibonacci reference, human scale, and Unite d Habitation measures.",
+          "TOA 5 lines 122-146 describe Frank Lloyd Wright, organic architecture as harmony with humanity and environment, Fallingwater, Prairie houses, planes, and horizontality.",
+          "TOA 5 lines 256-262 describe Le Corbusier, Villa Savoye, machine-for-living framing, and the Five Points.",
+          "TOA 5 lines 608-612 connect Bauhaus/Gropius to modern technology, teamwork, standardization, and prefabrication.",
+          "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+          "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+          "RIBA Modernism, https://www.riba.org/explore/riba-collections/architectural-styles/modernism-movement/, lines 60-76: modernism rejects ornament, uses analytical function, rational materials, structural innovation, volume, asymmetry, flat roofs, open plan, and minimal ornament.",
+          "Villa Savoye / Centre des monuments nationaux, https://www.villa-savoye.fr/en/discover/le-corbusier-s-5-points-of-modern-architecture, lines 75-139: 1927 Five Points, pilotis, roof garden, free plan, free facade, banded windows, and Villa Savoye as manifesto.",
+          "Getty Research Institute Bauhaus, https://www.getty.edu/research/exhibitions_events/exhibitions/bauhaus/new_artist/history/, lines 97-123: Gropius/Bauhaus unite arts, design, craft, architecture, and workshop collaboration."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          },
+          {
+            "label": "TOA 2 (Elements + Principles)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+            "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+            "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+          },
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Official web sources are used only through the locally captured source map; article and question claims cite local artifacts."
+      },
+      {
+        "source_id": "batch-134-lea-theo-005-02-core-concept-refined-source-map",
+        "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+        "label": "Batch 134 refined source conversion - Architectural Modernism",
+        "url": null,
+        "source_type": "local_refined_conversion",
+        "description": "Refined local conversion of the Batch 134 raw source capture for Architectural Modernism.",
+        "is_verified": true,
+        "sort_order": 1,
+        "created_at": "2026-05-14T06:25:00.000+08:00",
+        "updated_at": "2026-05-14T06:25:00.000+08:00",
+        "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md",
+        "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md",
+        "local_sha256": "sha256:c10620d9addb48726f471d0a2316911524a9b534071a45ef01c2b76f4380f6d9",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.refined.md#sha256:c10620d9addb48726f471d0a2316911524a9b534071a45ef01c2b76f4380f6d9",
+        "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-134/lea-theo-005-02-core-concept-architectural-modernism.source-capture.md",
+        "upstream_capture_sha256": "sha256:e5e58894c45ac4741ae432b9249a8176b54cdc3162a47238b66a91749462a88c",
+        "checked_markdown_lines": [
+          "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+          "TOA 2 lines 1859-1919 describe Le Corbusier Modulor, golden section/Fibonacci reference, human scale, and Unite d Habitation measures.",
+          "TOA 5 lines 122-146 describe Frank Lloyd Wright, organic architecture as harmony with humanity and environment, Fallingwater, Prairie houses, planes, and horizontality.",
+          "TOA 5 lines 256-262 describe Le Corbusier, Villa Savoye, machine-for-living framing, and the Five Points.",
+          "TOA 5 lines 608-612 connect Bauhaus/Gropius to modern technology, teamwork, standardization, and prefabrication.",
+          "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+          "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+          "RIBA Modernism, https://www.riba.org/explore/riba-collections/architectural-styles/modernism-movement/, lines 60-76: modernism rejects ornament, uses analytical function, rational materials, structural innovation, volume, asymmetry, flat roofs, open plan, and minimal ornament.",
+          "Villa Savoye / Centre des monuments nationaux, https://www.villa-savoye.fr/en/discover/le-corbusier-s-5-points-of-modern-architecture, lines 75-139: 1927 Five Points, pilotis, roof garden, free plan, free facade, banded windows, and Villa Savoye as manifesto.",
+          "Getty Research Institute Bauhaus, https://www.getty.edu/research/exhibitions_events/exhibitions/bauhaus/new_artist/history/, lines 97-123: Gropius/Bauhaus unite arts, design, craft, architecture, and workshop collaboration."
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          },
+          {
+            "label": "TOA 2 (Elements + Principles)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+            "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+            "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+          },
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-modernism",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": false,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "61efef1f-a3d6-4fcd-ae72-e50ba5f7e141",
+      "accc9c86-9dbd-43bf-b0d4-9eeabe5fcba8",
+      "d2dbe4cb-796a-4ab4-a782-be92df6de9ff",
+      "120d2011-df73-43de-9c07-3c0552f09bb2",
+      "243e69d0-41d8-4a84-a77c-0bc687accf9f",
+      "4249dc10-c04a-44ac-a017-5b296dbb4dc7",
+      "0ce551e5-7a00-45fd-b85d-af56fedecacd",
+      "61f6ff10-535a-4d75-ba53-f7967fa7d7ef",
+      "a443feb9-74f8-4b02-8c09-95898544c1f1",
+      "da2ddd6a-2b5b-49ff-b9fd-5fa33e4f461d",
+      "723664a6-920f-4654-b1cf-cbf9bcfd5fe9",
+      "49c78a07-b037-4d82-ad78-5f361373fd80"
+    ],
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A public library proposal uses a flat roof, open reading floor, ribbon-like windows, and exposed structural order. The review should ask whether the plan, light, structure, material logic, and public use support a modernist argument rather than treating white walls and minimal detail as enough."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-005-02-core-concept-b134-claim-01",
+      "claim_text": "Architectural Modernism is limited to checked local Batch 134 source capture and refined conversion artifacts.",
+      "source_support": {
+        "source_ids": [
+          "batch-134-lea-theo-005-02-core-concept-raw-source-capture",
+          "batch-134-lea-theo-005-02-core-concept-refined-source-map"
+        ],
+        "local_source_families": [
+          {
+            "label": "TOA 1 (Intro to Theory)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+            "rawHash": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+            "refinedHash": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6"
+          },
+          {
+            "label": "TOA 2 (Elements + Principles)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+            "rawHash": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+            "refinedHash": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+          },
+          {
+            "label": "TOA 5 (Masters of Architecture)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+            "rawHash": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+            "refinedHash": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423"
+          },
+          {
+            "label": "Quotes (1)",
+            "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/Quotes (1).pdf",
+            "rawHash": "sha256:703d8edd0c8fc1c678ff3aa9068cab7339dbc0b7382b51b1c70957860bb4a887",
+            "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/Quotes (1).md",
+            "refinedHash": "sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360"
+          }
+        ],
+        "checked_locators": [
+          "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+          "TOA 2 lines 1859-1919 describe Le Corbusier Modulor, golden section/Fibonacci reference, human scale, and Unite d Habitation measures.",
+          "TOA 5 lines 122-146 describe Frank Lloyd Wright, organic architecture as harmony with humanity and environment, Fallingwater, Prairie houses, planes, and horizontality.",
+          "TOA 5 lines 256-262 describe Le Corbusier, Villa Savoye, machine-for-living framing, and the Five Points.",
+          "TOA 5 lines 608-612 connect Bauhaus/Gropius to modern technology, teamwork, standardization, and prefabrication.",
+          "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+          "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+          "RIBA Modernism, https://www.riba.org/explore/riba-collections/architectural-styles/modernism-movement/, lines 60-76: modernism rejects ornament, uses analytical function, rational materials, structural innovation, volume, asymmetry, flat roofs, open plan, and minimal ornament.",
+          "Villa Savoye / Centre des monuments nationaux, https://www.villa-savoye.fr/en/discover/le-corbusier-s-5-points-of-modern-architecture, lines 75-139: 1927 Five Points, pilotis, roof garden, free plan, free facade, banded windows, and Villa Savoye as manifesto.",
+          "Getty Research Institute Bauhaus, https://www.getty.edu/research/exhibitions_events/exhibitions/bauhaus/new_artist/history/, lines 97-123: Gropius/Bauhaus unite arts, design, craft, architecture, and workshop collaboration."
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 1 lines 184-252 connect architecture to context, climate, geography, sensory and cultural characteristics, and Villa Savoye spatial/structural/circulation/context readings.",
+    "TOA 2 lines 1859-1919 describe Le Corbusier Modulor, golden section/Fibonacci reference, human scale, and Unite d Habitation measures.",
+    "TOA 5 lines 122-146 describe Frank Lloyd Wright, organic architecture as harmony with humanity and environment, Fallingwater, Prairie houses, planes, and horizontality.",
+    "TOA 5 lines 256-262 describe Le Corbusier, Villa Savoye, machine-for-living framing, and the Five Points.",
+    "TOA 5 lines 608-612 connect Bauhaus/Gropius to modern technology, teamwork, standardization, and prefabrication.",
+    "TOA 5 lines 648-787 preserve Mies, Le Corbusier, Sullivan, and modernist quote locators including less is more, form follows function, and forms in light.",
+    "Quotes (1) lines 13-81 preserve Le Corbusier, Mies, Venturi, Sullivan, and Wright quote locators including machine for living, less is more, less is a bore, form follows function, space, and organic architecture.",
+    "RIBA Modernism, https://www.riba.org/explore/riba-collections/architectural-styles/modernism-movement/, lines 60-76: modernism rejects ornament, uses analytical function, rational materials, structural innovation, volume, asymmetry, flat roofs, open plan, and minimal ornament.",
+    "Villa Savoye / Centre des monuments nationaux, https://www.villa-savoye.fr/en/discover/le-corbusier-s-5-points-of-modern-architecture, lines 75-139: 1927 Five Points, pilotis, roof garden, free plan, free facade, banded windows, and Villa Savoye as manifesto.",
+    "Getty Research Institute Bauhaus, https://www.getty.edu/research/exhibitions_events/exhibitions/bauhaus/new_artist/history/, lines 97-123: Gropius/Bauhaus unite arts, design, craft, architecture, and workshop collaboration."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported claims that all modernists held one philosophy, exact universal-space definitions beyond the checked locators, and broad Aalto/Kahn claims without local support are excluded."
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_required_after_content_generation",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "pending_compose_diff_validate",
+    "validate_gate": "pending_compose_diff_validate",
+    "ui_block_edits_gate": "pending_ui_block_validation"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_handoff": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}
