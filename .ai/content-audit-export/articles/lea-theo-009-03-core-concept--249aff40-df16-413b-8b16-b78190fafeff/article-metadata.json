@@ -1,6 +1,6 @@
 {
   "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
-  "title": "Space standards serve three purposes: they ensure human",
+  "title": "Space Standards and Performance Requirements",
   "slug": "lea-theo-009-03-core-concept",
   "subject_label": "Theory of Architecture",
   "difficulty_label": null,
@@ -11,16 +11,16 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:09.555398+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:56:30.429802+00:00",
-  "updated_by": null,
-  "updated_note": null,
+  "updated_at": "2026-05-13T23:38:36.673Z",
+  "updated_by": "codex-local-first-batch-137",
+  "updated_note": "Source-audited local-first Batch 137 content and linked-question replacement; claims cite local captured source artifacts.",
   "content_hash": "sha256:b390f7da9208fd1bb0c1c7bd6d3668f08b700f3c101e9427fa1ed1b4dfc61291",
   "original_content_hash": "sha256:b390f7da9208fd1bb0c1c7bd6d3668f08b700f3c101e9427fa1ed1b4dfc61291",
-  "normalized_content_hash": "sha256:6c47697fe0a11577c97319b6988f560d880738c1d2af1ed54b58715f08df1e52",
-  "candidate_content_hash": "sha256:6c47697fe0a11577c97319b6988f560d880738c1d2af1ed54b58715f08df1e52",
+  "normalized_content_hash": "sha256:10a796d8c77bfe241b190000a2d9a44cec0a89028976ef804f37ef90560c6961",
+  "candidate_content_hash": "sha256:10a796d8c77bfe241b190000a2d9a44cec0a89028976ef804f37ef90560c6961",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:657a87bb59db5fe9b09ec34bb708500b7f656fa5ecb65b3a6a8cbb8c2c80da42",
-  "sources_hash": "sha256:508751c77158afc0f5c79c4aa79c6f84a009e7d1ca0ed38683d2f01a8db9eca8",
+  "linked_questions_hash": "sha256:5d609e14b3e1d5c90fcd3bc26c0b671d5423ad004c20df52a4df71f59f68ad32",
+  "sources_hash": "sha256:14e991a80083dc1792b655c8800e128b9062ef931300391666c790d7bc732091",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:01.161Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
@@ -31,5 +31,34 @@
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "batch-137",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "raw_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "refined_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+      "raw_sha256": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+      "refined_sha256": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "raw_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "refined_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+    }
+  ],
+  "blocked_residuals_logged": [
+    "lea-theo-008-02",
+    "lea-theo-008-03"
+  ]
 }

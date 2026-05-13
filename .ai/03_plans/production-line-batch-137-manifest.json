@@ -1,0 +1,151 @@
+{
+  "batch_id": "source-audited-article-batch-137-local-first",
+  "batch_number": 137,
+  "generated_at": "2026-05-13T23:40:36.125Z",
+  "baseline_commit": "c94e1afe4",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_pending",
+  "selection": {
+    "selected_clusters": [
+      "lea-theo-008-04",
+      "lea-theo-008-08",
+      "lea-theo-009-01",
+      "lea-theo-009-02",
+      "lea-theo-009-03"
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-008-02",
+        "title": "Spatial Justice",
+        "reason": "Blocked for Batch 137 because the checked local source layer did not safely support Edward Soja, spatial justice, displacement, participatory planning, co-design, or equity framework claims.",
+        "next_action": "Source an authoritative spatial justice or participatory planning reference before rewriting."
+      },
+      {
+        "cluster_id": "lea-theo-008-03",
+        "title": "Digital Architecture",
+        "reason": "Blocked for Batch 137 because the checked local source layer did not safely support AI, BIM, VR, computational workflow, parametric practice, or fabrication claims.",
+        "next_action": "Source a current authoritative digital architecture, BIM, or computational design reference before rewriting."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Selected the next sourceable residual Theory clusters after Batch 136 stopped at lea-theo-007-14. lea-theo-008-02 and lea-theo-008-03 were blocked for local-source gaps; selected lea-theo-008-04, 008-08, 009-01, 009-02, and 009-03."
+  },
+  "articles": [
+    {
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "cluster_id": "lea-theo-008-04",
+      "slug": "lea-theo-008-04-core-concept",
+      "title": "Filipino Architectural Identity",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-008-04-core-concept--ee50e412-f6d8-45f0-9016-55785c60773f",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:53061525f7abf3015ff105481da8e84183d1d63c1ab59573fcc57fc90c2d49b6",
+      "candidate_hash": "sha256:53061525f7abf3015ff105481da8e84183d1d63c1ab59573fcc57fc90c2d49b6",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
+      "cluster_id": "lea-theo-008-08",
+      "slug": "lea-theo-008-08-core-concept",
+      "title": "Philippine Design Identity Spectrum",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-008-08-core-concept--cc009103-96bb-4852-85c9-9067a4359336",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:36ca0466f8a90126835f60513f2a8013e96be49f1fd93685d65b33c0f1d38692",
+      "candidate_hash": "sha256:36ca0466f8a90126835f60513f2a8013e96be49f1fd93685d65b33c0f1d38692",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "cluster_id": "lea-theo-009-01",
+      "slug": "lea-theo-009-01-core-concept",
+      "title": "Architectural Programming",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:7ae34b3957004a1f52e4f87d7bcb756ab74ea4ec4ddecd956b4241976b05e3ca",
+      "candidate_hash": "sha256:7ae34b3957004a1f52e4f87d7bcb756ab74ea4ec4ddecd956b4241976b05e3ca",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "cluster_id": "lea-theo-009-02",
+      "slug": "lea-theo-009-02-core-concept",
+      "title": "Bubble Diagrams and Adjacency Thinking",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-02-core-concept--c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:347041ebce28f9a7776a6cfd31f73f8e3b963ded6afc88771696bab5ca098fba",
+      "candidate_hash": "sha256:347041ebce28f9a7776a6cfd31f73f8e3b963ded6afc88771696bab5ca098fba",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    },
+    {
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "cluster_id": "lea-theo-009-03",
+      "slug": "lea-theo-009-03-core-concept",
+      "title": "Space Standards and Performance Requirements",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-03-core-concept--249aff40-df16-413b-8b16-b78190fafeff",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:10a796d8c77bfe241b190000a2d9a44cec0a89028976ef804f37ef90560c6961",
+      "candidate_hash": "sha256:10a796d8c77bfe241b190000a2d9a44cec0a89028976ef804f37ef90560c6961",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "added_source_safe"
+    }
+  ],
+  "validation": {
+    "compose_diff_validate_passed": true,
+    "ui_block_validation_passed": true,
+    "scoped_json_parse_passed": true,
+    "marker_source_gap_scan_passed": true,
+    "source_hash_checks_passed": true,
+    "question_edit_count_passed": true,
+    "stale_compose_error_scan_passed": true,
+    "targeted_tests_passed": true,
+    "scoped_git_diff_check_passed": true
+  },
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/sync-state.json",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "handoff": {
+    "intended_commit": "chore(content): accept source-audited batch 137",
+    "exact_stage_paths_file": ".ai/03_plans/batch-137-git-handoff-stage-paths.txt",
+    "no_supabase_or_deploy": true
+  }
+}

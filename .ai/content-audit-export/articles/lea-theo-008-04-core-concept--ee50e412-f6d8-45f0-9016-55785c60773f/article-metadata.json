@@ -1,6 +1,6 @@
 {
   "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-  "title": "Filipino architectural identity",
+  "title": "Filipino Architectural Identity",
   "slug": "lea-theo-008-04-core-concept",
   "subject_label": "Theory of Architecture",
   "difficulty_label": null,
@@ -11,25 +11,54 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:09.555398+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:52:37.785457+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:fa8e92e1a87c7efc5e2b09b03a2e0dd15f3c50c6c1dda9071d940f2c19bc7ae9",
-  "original_content_hash": "sha256:fa8e92e1a87c7efc5e2b09b03a2e0dd15f3c50c6c1dda9071d940f2c19bc7ae9",
-  "normalized_content_hash": "sha256:fa8e92e1a87c7efc5e2b09b03a2e0dd15f3c50c6c1dda9071d940f2c19bc7ae9",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-13T23:38:36.673Z",
+  "updated_by": "codex-local-first-batch-137",
+  "updated_note": "Source-audited local-first Batch 137 content and linked-question replacement; claims cite local captured source artifacts.",
+  "content_hash": "sha256:b5006c8b6ae753c2909c72268a5aef21d4d5a00d605926cb75a2d4e2eb036c53",
+  "original_content_hash": "sha256:b5006c8b6ae753c2909c72268a5aef21d4d5a00d605926cb75a2d4e2eb036c53",
+  "normalized_content_hash": "sha256:53061525f7abf3015ff105481da8e84183d1d63c1ab59573fcc57fc90c2d49b6",
+  "candidate_content_hash": "sha256:53061525f7abf3015ff105481da8e84183d1d63c1ab59573fcc57fc90c2d49b6",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:6e6c24066de90c81e6cfce5bda6618a359feff802d8ee47b81be2ae6041e62b2",
-  "sources_hash": "sha256:f70957e44d3ab1823173dc2288027d038e960a8e659006e4cd9502e52b234749",
+  "linked_questions_hash": "sha256:60a7b257935898374a55e41ee484db2ea475011d1a20b9c5487abb2b0847fd5c",
+  "sources_hash": "sha256:06f13f6af62cffb24e0b7202346264ce1609fb0b1872eae6fd579fed91b8771f",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:27.484Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
   "export_version": "content-roundtrip-v1",
   "source_table": "wiki_articles",
-  "source_count": 4,
+  "source_count": 2,
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "batch-137",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+      "raw_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+      "refined_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+      "raw_sha256": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+      "refined_sha256": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+    }
+  ],
+  "blocked_residuals_logged": [
+    "lea-theo-008-02",
+    "lea-theo-008-03"
+  ]
 }

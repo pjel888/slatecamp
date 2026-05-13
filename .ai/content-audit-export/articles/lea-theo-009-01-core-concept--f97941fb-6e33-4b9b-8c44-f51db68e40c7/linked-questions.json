@@ -1,30 +1,30 @@
 {
   "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:42e9cd71c62cbf647c6a954f9072e82fad7769cc4a8c0e7a2c9c0207d21711cf",
+  "linked_questions_hash": "sha256:3adb60127d612f5d70d4a2221b0a2884beaddff48ddce5e8ac96554786fb3066",
   "question_count": 10,
   "questions": [
     {
       "question_id": "f44656c8-77a7-4412-819e-b31b330df916",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "What is the primary distinction between Net Assignable Area (NAA) and Gross Building Area (GBA)?",
+      "text": "What is architectural programming in the source-safe Batch 137 article?",
       "options": [
         {
           "id": "a",
-          "text": "NAA is calculated from finished dimensions; GBA is calculated from structural dimensions of the building envelope"
+          "text": "Jumping to form before gathering facts, issues, values, goals, users, site constraints, and performance needs"
         },
         {
           "id": "b",
-          "text": "NAA and GBA are the same measure using different terminology in different countries and professional standards"
+          "text": "Inventing exact area, code, or efficiency numbers without a captured source"
         },
         {
           "id": "c",
-          "text": "NAA is usable floor area dedicated to program functions; GBA is total enclosed floor area including circulation and infrastructure"
+          "text": "The problem-seeking phase that gathers, organizes, analyzes, interprets, and presents project information before design decisions are fixed"
         },
         {
           "id": "d",
-          "text": "NAA includes corridors and mechanical space; GBA includes only functional spaces designated for occupant activities"
+          "text": "A final decorative style chosen after construction"
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The distinction is not about measurement basis but about which spaces are counted.",
-        "b": "NAA and GBA are distinct measures reflecting different aspects of building area.",
-        "d": "This reverses the definitions; NAA excludes, not includes, circulation and mechanical.",
-        "correct": "NAA excludes corridors, mechanical, and structural elements and accounts for program functions only. GBA includes all spaces. The relationship is: GBA = NAA ÷ efficiency factor.",
-        "takeaway": "The relationship is: GBA = NAA ÷ efficiency factor."
+        "a": "Jumping to form before gathering facts, issues, values, goals, users, site constraints, and performance needs is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "Inventing exact area, code, or efficiency numbers without a captured source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "c": "The problem-seeking phase that gathers, organizes, analyzes, interprets, and presents project information before design decisions are fixed This is the source-safe answer for Architectural Programming.",
+        "d": "A final decorative style chosen after construction is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "correct": "The problem-seeking phase that gathers, organizes, analyzes, interprets, and presents project information before design decisions are fixed This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The problem-seeking phase that gathers, organizes, analyzes, interprets, and presents project information before design decisions are fixed Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-009-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0a67c8c085b7a8a72acaa23d79e5d2fed16f19d371f33a5f53bcf450882f2575"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:60a4faa71d570545ca34cdb42a397984fe54acacaa3be4d77eb757254fb495ff",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "ceec0691-0c61-415a-a7d8-9e24d0735fbb",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "Which of the following best defines architectural programming in relation to design?",
+      "text": "What is the existing-state and future-state distinction?",
       "options": [
         {
           "id": "a",
-          "text": "The detailed design development phase where architects finalize material specifications, including finishes and fixtures for all spaces"
+          "text": "Existing state is the final floor plan and future state is furniture color"
         },
         {
           "id": "b",
-          "text": "The process of creating conceptual sketches and preliminary design layouts, often involving client feedback and iterative revisions"
+          "text": "Existing and future state are identical terms"
         },
         {
           "id": "c",
-          "text": "The systematic investigation phase that documents space, performance, and functional requirements prior to design"
+          "text": "Existing state studies current setting, site, users, client, and constraints; future state frames mission, goals, performance, and concepts"
         },
         {
           "id": "d",
-          "text": "The project management phase that oversees construction scheduling and cost control, ensuring adherence to budget and timelines"
+          "text": "Future state means ignoring site facts"
         }
       ],
       "correct_option_id": "c",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Material specifications belong to design development, not the programming phase.",
-        "b": "Sketches and preliminary layouts are design activities, which occur after programming is complete.",
-        "d": "Project management and construction oversight are separate professional functions from programming.",
-        "correct": "Programming is explicitly the systematic analysis phase that precedes design. It answers the 'what' and 'why' before design begins answering 'how.'",
-        "takeaway": "It answers the 'what' and 'why' before design begins answering 'how.'."
+        "a": "Existing state is the final floor plan and future state is furniture color is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "Existing and future state are identical terms is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "c": "Existing state studies current setting, site, users, client, and constraints; future state frames mission, goals, performance, and concepts This is the source-safe answer for Architectural Programming.",
+        "d": "Future state means ignoring site facts is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "correct": "Existing state studies current setting, site, users, client, and constraints; future state frames mission, goals, performance, and concepts This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": "Material specifications belong to design development, not the programming phase. Sketches and preliminary layouts are design activities, which occur after programming is complete. Project management and construction oversight are separate professional functions from programming. Programming is explicitly the systematic analysis phase that precedes design. It answers the 'what' and 'why' before design begins answering 'how.' It answers the 'what' and 'why' before design begins answering 'how.'.",
-      "code_citation": null,
+      "explanation": "Existing state studies current setting, site, users, client, and constraints; future state frames mission, goals, performance, and concepts Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-009-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T11:48:48.372645+00:00",
-      "content_hash": "sha256:d60faf205be3043c994b34b0fb11caa93eab8b21b1093126a6e93c2fa9a39ede"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:d0bac9262b6f70389624da3024142b670b58f855082d94b59b0b9943ac884689",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "4c9d74a0-304c-4e73-91c9-080c9fe00e07",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "In William Peña's Problem Seeking methodology, what is the correct sequence of the first three steps?",
+      "text": "Which set best matches the program document structure captured locally?",
       "options": [
         {
           "id": "a",
-          "text": "Gather facts, establish goals, establish the client"
+          "text": "Paint colors, brand slogans, furniture price lists, and contractor preference"
         },
         {
           "id": "b",
-          "text": "Establish the client, establish goals, gather facts"
+          "text": "Issues, facts, values, goals, performance requirements, and concepts"
         },
         {
           "id": "c",
-          "text": "Gather facts, establish the client, establish goals"
+          "text": "Only building code section numbers"
         },
         {
           "id": "d",
-          "text": "Establish goals, establish the client, gather facts"
+          "text": "Only a bubble diagram with no supporting facts"
         }
       ],
       "correct_option_id": "b",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Facts must follow client and goal identification for structured programming.",
-        "c": "This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research.",
-        "d": "Establishing goals before identifying all stakeholders may miss important client categories.",
-        "correct": "Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data.",
-        "takeaway": "This sequence ensures you understand who you're serving and what they aim to achieve before collecting data."
+        "a": "Paint colors, brand slogans, furniture price lists, and contractor preference is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "Issues, facts, values, goals, performance requirements, and concepts This is the source-safe answer for Architectural Programming.",
+        "c": "Only building code section numbers is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "Only a bubble diagram with no supporting facts is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "correct": "Issues, facts, values, goals, performance requirements, and concepts This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": "Facts must follow client and goal identification for structured programming. This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research. Establishing goals before identifying all stakeholders may miss important client categories. Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data.",
-      "code_citation": null,
+      "explanation": "Issues, facts, values, goals, performance requirements, and concepts Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-009-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T11:48:47.808247+00:00",
-      "content_hash": "sha256:66da8b9d8b8d19b0ca9c2139a7ae615a157d2097e327de6546eaf4bf5d7062a4"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:9a8131e45f4e5f67949d4e3b925550368e7090225dffb7e709f867533e1f8081",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "ad744e14-166f-4e73-b685-6eb72722cf9e",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "In Step 5 of Problem Seeking (Test the Problem), a programmer simulates patient flow through a proposed hospital clinic program and discovers that nursing stations cannot effectively supervise all patient waiting areas from their current positions. What does this reveal?",
+      "text": "What is a performance requirement in this source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Additional staff or technology is required to execute the program; nothing in the program itself needs change"
+          "text": "A personal style preference with no project basis"
         },
         {
           "id": "b",
-          "text": "The program is incomplete or inaccurate; the adjacency relationships or space layouts require revision"
+          "text": "A design direction related to function or quality that can guide later translation into measurable design parameters"
         },
         {
           "id": "c",
-          "text": "The simulation method is inappropriate for healthcare; testing should rely on historical data instead"
+          "text": "A universal exact room size invented without source support"
         },
         {
           "id": "d",
-          "text": "The design is flawed; testing confirms the program cannot be implemented as conceived"
+          "text": "A reason to avoid user and site analysis"
         }
       ],
       "correct_option_id": "b",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution.",
-        "c": "Simulation testing is specifically recommended by Peña; this method is entirely appropriate.",
-        "d": "Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy.",
-        "correct": "Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved.",
-        "takeaway": "The program is incomplete until this is resolved."
+        "a": "A personal style preference with no project basis is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "A design direction related to function or quality that can guide later translation into measurable design parameters This is the source-safe answer for Architectural Programming.",
+        "c": "A universal exact room size invented without source support is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "A reason to avoid user and site analysis is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "correct": "A design direction related to function or quality that can guide later translation into measurable design parameters This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution. Simulation testing is specifically recommended by Peña; this method is entirely appropriate. Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy. Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved. The program is incomplete until this is resolved.",
-      "code_citation": null,
+      "explanation": "A design direction related to function or quality that can guide later translation into measurable design parameters Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-009-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T11:48:50.592728+00:00",
-      "content_hash": "sha256:dc05a8677a0c9bc995377c97b0b452254f83b80a52ee8166ff4d281d8f6fefcd"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:c8cf5ddf6078f09044f1453535796ec165405f74729b54c167ca664a2206ef67",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "During a programming interview for a new law firm office, a senior partner mentions that attorneys currently spend significant time retrieving files from the central storage. Which information-gathering category does this observation address?",
+      "text": "Which action is the clearest programming error?",
       "options": [
         {
           "id": "a",
-          "text": "Relationships — which functions must be adjacent or separated"
+          "text": "Jumping to building form before gathering facts, clarifying issues, values, goals, users, site constraints, and performance needs"
         },
         {
           "id": "b",
-          "text": "Physical — site characteristics and infrastructure capacity"
+          "text": "Interviewing users and documenting site constraints"
         },
         {
           "id": "c",
-          "text": "Human — demographic and psychological needs of occupants"
+          "text": "Mapping space relationships before schematic design"
         },
         {
           "id": "d",
-          "text": "Activity — what tasks occur, frequency, and duration"
+          "text": "Writing goals and performance requirements"
         }
       ],
       "correct_option_id": "a",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Physical site conditions are not what this observation addresses; it's about internal functional organization.",
-        "c": "This addresses user behavior but doesn't directly reveal relationship requirements.",
-        "d": "While file retrieval is an activity, the key issue is the spatial relationship between activity locations.",
-        "correct": "This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow.",
-        "takeaway": "The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
+        "a": "Jumping to building form before gathering facts, clarifying issues, values, goals, users, site constraints, and performance needs This is the source-safe answer for Architectural Programming.",
+        "b": "Interviewing users and documenting site constraints is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "c": "Mapping space relationships before schematic design is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "Writing goals and performance requirements is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "correct": "Jumping to building form before gathering facts, clarifying issues, values, goals, users, site constraints, and performance needs This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Jumping to building form before gathering facts, clarifying issues, values, goals, users, site constraints, and performance needs Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-009-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:40277c241a56e11db63a3fda69e5d54b808a45803e5adc654dbebf0eef892e51",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "bd183a62-e105-432e-be0c-3c30f1dacd12",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "Which of these statements would be most appropriate as a goal in an architectural program for a community health clinic?",
+      "text": "In the clinic scenario, what should the architect do first?",
       "options": [
         {
           "id": "a",
-          "text": "The clinic will include treatment rooms with dimensions of 10 feet by 12 feet minimum, ensuring adequate space for medical equipment and patient comfort"
+          "text": "Choose a facade image and retrofit all functions into it"
         },
         {
           "id": "b",
-          "text": "The clinic will contain 4,500 net square feet of space arranged in an open-plan configuration to facilitate flexible use and future expansion"
+          "text": "Use a generic area formula not captured in the local source"
         },
         {
           "id": "c",
-          "text": "The clinic will be constructed using single-story steel frame with concrete foundation, providing structural stability and ease of maintenance"
+          "text": "Skip programming because the client named a building type"
         },
         {
           "id": "d",
-          "text": "The waiting room will accommodate 30 seated patients and reduce patient anxiety through design that conveys calm and dignity"
+          "text": "Organize client, user, site, constraint, space, relationship, and performance information before committing to a scheme"
         }
       ],
       "correct_option_id": "d",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is a space standard, not a goal. It specifies dimensions but not why those dimensions matter or what they should accomplish.",
-        "b": "This mixes a space standard (4,500 SF) with a design decision (open-plan) rather than stating a goal about clinic mission or function.",
-        "c": "This is a design decision (structural system), not a programming goal; it prescribes form prematurely.",
-        "correct": "This goal is testable, mission-driven, and addresses what the space should achieve. It constrains design (conveying calm and dignity) without prescribing how (which is the designer's responsibility). It establishes measurable outcomes.",
-        "takeaway": "It establishes measurable outcomes."
+        "a": "Choose a facade image and retrofit all functions into it is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "Use a generic area formula not captured in the local source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "c": "Skip programming because the client named a building type is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "Organize client, user, site, constraint, space, relationship, and performance information before committing to a scheme This is the source-safe answer for Architectural Programming.",
+        "correct": "Organize client, user, site, constraint, space, relationship, and performance information before committing to a scheme This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Organize client, user, site, constraint, space, relationship, and performance information before committing to a scheme Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-009-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3c19bd2fb893d9ba0926b61b459aa910ce3d5f8d109dbb8f7dee2cbdd86c48ab"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:fd1c8c1ab187044b6c9a8f72e96344ba8763af6f60f2b726480131e764ae0337",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "b242498c-9f31-43c1-ba8d-38bed393271b",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "An architect receives a program document that lists all required spaces, areas, and functional relationships, but does not include performance standards for acoustic isolation, lighting levels, or thermal comfort. Which component is missing and what is its significance?",
+      "text": "Why does programming include values as well as facts?",
       "options": [
         {
           "id": "a",
-          "text": "Performance Specifications; essential for understanding environmental and operational constraints that inform design"
+          "text": "Facts describe objective conditions, while values explain what the client or users consider important in the project"
         },
         {
           "id": "b",
-          "text": "Stakeholder Analysis; identifying all decision-makers is required before programming can proceed, ensuring that all voices are considered in the design process"
+          "text": "Values replace facts completely"
         },
         {
           "id": "c",
-          "text": "Code Compliance Matrix; failure to address zoning and building code requirements, which could lead to legal and functional issues during construction"
+          "text": "Facts and values are both decoration choices"
         },
         {
           "id": "d",
-          "text": "Area Summary Table; without it, the total building area cannot be calculated, potentially leading to discrepancies in space allocation and usage"
+          "text": "Values are only legal citations"
         }
       ],
       "correct_option_id": "a",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Stakeholder analysis is done before programming; this is a component of the program document itself.",
-        "c": "Code compliance is important but separate from performance specifications; this program issue is not primarily about code.",
-        "d": "The area summary table is separate; the question addresses environmental and experiential requirements, not area calculations.",
-        "correct": "Performance Specifications quantify testable requirements for environmental conditions, acoustics, lighting, and thermal behavior. Without them, designers lack clear targets for design decisions and cannot verify whether designs satisfy the program.",
-        "takeaway": "Without them, designers lack clear targets for design decisions and cannot verify whether designs satisfy the program."
+        "a": "Facts describe objective conditions, while values explain what the client or users consider important in the project This is the source-safe answer for Architectural Programming.",
+        "b": "Values replace facts completely is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "c": "Facts and values are both decoration choices is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "Values are only legal citations is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "correct": "Facts describe objective conditions, while values explain what the client or users consider important in the project This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Facts describe objective conditions, while values explain what the client or users consider important in the project Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-009-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6beb94105a5fdde5a2d42f491a97018a67efb89c111abb1778c8c4e614984247"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:d6ee9619b287f8efe23b6b048dddb1a928062612b3a63858f3a7248823c2cb22",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "d58ae72e-0ebe-44ec-b45d-387d28d5e7b9",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "A hospital program specifies 50,000 NSF of clinical and support spaces. Using a typical healthcare efficiency factor of 1.40 (or 0.71 as ratio), what is the anticipated gross building area?",
+      "text": "How do concepts fit into programming?",
       "options": [
         {
           "id": "a",
-          "text": "35,714 GSF"
+          "text": "They are random sketches unrelated to requirements"
         },
         {
           "id": "b",
-          "text": "50,000 GSF"
+          "text": "They are only structural calculations"
         },
         {
           "id": "c",
-          "text": "102,500 GSF"
+          "text": "They eliminate the need for space lists"
         },
         {
           "id": "d",
-          "text": "70,435 GSF"
+          "text": "They express important relationships and design directions that emerge from analyzed information, not arbitrary forms chosen before analysis"
         }
       ],
       "correct_option_id": "d",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This represents NAA × 0.71, which is incorrect; GBA must be larger than NAA.",
-        "b": "This ignores circulation and service area requirements entirely.",
-        "c": "This overshoots; multiplying rather than dividing produces unrealistic area.",
-        "correct": "GBA = NAA ÷ efficiency factor = 50,000 ÷ 0.71 ≈ 70,423 GSF. Healthcare buildings require larger multipliers than offices due to extensive corridor systems and mechanical infrastructure.",
-        "takeaway": "Healthcare buildings require larger multipliers than offices due to extensive corridor systems and mechanical infrastructure."
+        "a": "They are random sketches unrelated to requirements is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "They are only structural calculations is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "c": "They eliminate the need for space lists is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "They express important relationships and design directions that emerge from analyzed information, not arbitrary forms chosen before analysis This is the source-safe answer for Architectural Programming.",
+        "correct": "They express important relationships and design directions that emerge from analyzed information, not arbitrary forms chosen before analysis This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They express important relationships and design directions that emerge from analyzed information, not arbitrary forms chosen before analysis Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-009-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:82a236bf1b1482622e643140c8ceaafbadf2bbd315968ca92423ebd19f49cf52"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:8d81392bb60840d692453a7678c655b69757f39e3b57ff8c1c96bb2b286166c0",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "cbbf5a9d-3618-4062-ab13-cfb7c00eb195",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "A school program specifies that a library must accommodate 100 simultaneous users, provide 10,000 book volumes, and integrate collaborative learning spaces. Using standards (15 SF per reader, 0.1 SF per volume), what is minimum NAA, and how should the programmer address the resulting GBA?",
+      "text": "What should a student avoid when answering area-planning questions from this article?",
       "options": [
         {
           "id": "a",
-          "text": "NAA = 2,500 SF; programmer applies 0.75 efficiency factor to calculate GBA = 3,333 SF total, ensuring compliance with spatial standards"
+          "text": "Explaining that programming organizes project information"
         },
         {
           "id": "b",
-          "text": "NAA = 2,500 SF; programmer must determine realistic efficiency for library (0.60–0.70) and verify GBA fits site and school capacity"
+          "text": "Using exact NAA/GBA ratios, efficiency factors, or room sizes unless the specific numbers are captured by a checked source"
         },
         {
           "id": "c",
-          "text": "NAA calculation is unnecessary; library size should be determined by budget constraints, not user counts, which may lead to underutilization"
+          "text": "Discussing spaces, descriptions, and relationships"
         },
         {
           "id": "d",
-          "text": "NAA = 1,500 SF; collaborative spaces reduce area requirements despite circulation overhead, allowing for flexible space usage"
+          "text": "Distinguishing goals from facts"
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75.",
-        "c": "Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it.",
-        "d": "Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader.",
-        "correct": "NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible.",
-        "takeaway": "The programmer must verify this fits the site, aligns with school program scope, and is financially feasible."
+        "a": "Explaining that programming organizes project information is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "Using exact NAA/GBA ratios, efficiency factors, or room sizes unless the specific numbers are captured by a checked source This is the source-safe answer for Architectural Programming.",
+        "c": "Discussing spaces, descriptions, and relationships is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "Distinguishing goals from facts is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "correct": "Using exact NAA/GBA ratios, efficiency factors, or room sizes unless the specific numbers are captured by a checked source This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75. Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it. Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader. NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible.",
-      "code_citation": null,
+      "explanation": "Using exact NAA/GBA ratios, efficiency factors, or room sizes unless the specific numbers are captured by a checked source Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-009-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T11:48:49.054878+00:00",
-      "content_hash": "sha256:0e1042b29dc46d90e64f86a52fdf7e306618bb7c3117ca15a0fbe7e73b6519e1"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:702af969f60dd8c4282774575328b3b76fcc9b03007049e90defd17b5b931f53",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     },
     {
       "question_id": "de404aeb-a5b5-4609-84f3-a2103e5bb73a",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "A developer commissions a program for a mixed-use building but states: 'We want a building that is flexible.' What is the programmer's most appropriate response?",
+      "text": "What is the LEA takeaway from architectural programming?",
       "options": [
         {
           "id": "a",
-          "text": "Draft a program without this goal and present alternative flexibility strategies during design, considering potential future uses and adaptability."
+          "text": "Treat programming as optional paperwork after the design is complete"
         },
         {
           "id": "b",
-          "text": "Accept this as a valid goal and design a building with modular, easily reconfigured spaces, allowing for diverse tenant needs and future changes."
+          "text": "Replace programming with unsourced code numbers"
         },
         {
           "id": "c",
-          "text": "Recommend against mixed-use development as it inherently constrains flexibility, due to zoning regulations and specific use requirements."
+          "text": "Assume the first sketch is the program"
         },
         {
           "id": "d",
-          "text": "Clarify what 'flexible' means: Does flexibility involve residential unit reconfiguration? Office space subdivision? Commercial tenant fit-out? What timeframe for change?"
+          "text": "Define the problem and decision criteria before design by organizing facts, issues, values, goals, performance needs, spaces, and relationships"
         }
       ],
       "correct_option_id": "d",
@@ -501,14 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The goal should be incorporated into the program, not bypassed; clarity is the programmer's responsibility.",
-        "b": "Accepting vague goals leads to programs that don't constrain design effectively; this abdicates programming responsibility.",
-        "c": "Mixed-use doesn't eliminate flexibility; this dismisses the goal rather than clarifying it.",
-        "correct": "Programming requires testable, specific goals. 'Flexible' is vague. The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification').",
-        "takeaway": "The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification')."
+        "a": "Treat programming as optional paperwork after the design is complete is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "b": "Replace programming with unsourced code numbers is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "c": "Assume the first sketch is the program is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Architectural Programming.",
+        "d": "Define the problem and decision criteria before design by organizing facts, issues, values, goals, performance needs, spaces, and relationships This is the source-safe answer for Architectural Programming.",
+        "correct": "Define the problem and decision criteria before design by organizing facts, issues, values, goals, performance needs, spaces, and relationships This stays inside the Batch 137 local source map for Architectural Programming.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Architectural Programming; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381"
       },
-      "explanation": "The goal should be incorporated into the program, not bypassed; clarity is the programmer's responsibility. Accepting vague goals leads to programs that don't constrain design effectively; this abdicates programming responsibility. Mixed-use doesn't eliminate flexibility; this dismisses the goal rather than clarifying it. Programming requires testable, specific goals. 'Flexible' is vague. The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification'). The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification').",
-      "code_citation": null,
+      "explanation": "Define the problem and decision criteria before design by organizing facts, issues, values, goals, performance needs, spaces, and relationships Supported by Batch 137 local source artifacts for Architectural Programming: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,8 +568,11 @@
       "model_id": "ALE-THEO-009-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T11:48:49.739067+00:00",
-      "content_hash": "sha256:a50aeb9d56946c858847577abd29abaf0c3a7d2669c191198a8201558146bc8b"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:86a8e4041ee7256350eb23cf1c1351bf422e6f0b5f8db6f916989ee25bf89fa9",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md#sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md#sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+      "source_notes": "Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams."
     }
   ]
 }

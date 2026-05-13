@@ -1,228 +1,114 @@
 {
-  "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-075-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T03:00:00.000+08:00",
-  "target": {
-    "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-    "slug": "lea-theo-009-01-core-concept",
-    "title": "Architectural programming",
-    "article_folder": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-    "normalized_sha256": "sha256:eaa541035ed8ae6075ef43459a04b964111edbd9f0d1789e44a6123001973c0a",
-    "candidate_sha256": "sha256:eaa541035ed8ae6075ef43459a04b964111edbd9f0d1789e44a6123001973c0a",
-    "candidate_path": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7/candidate.md"
-  },
-  "classification": {
-    "topic_family": "architectural_programming",
-    "local_first_batch": "075",
-    "source_sensitivity": "legal_or_code",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "legal_or_code",
-    "requires_raw_pdf_audit": true
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
-    "blockers": []
-  },
-  "checked_sources": [
+  "batch": "batch-137",
+  "batch_number": 137,
+  "cluster_id": "lea-theo-009-01",
+  "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+  "slug": "lea-theo-009-01-core-concept",
+  "title": "Architectural Programming",
+  "generated_at": "2026-05-13T23:38:36.673Z",
+  "baseline": "c94e1afe4",
+  "branch": "3dlab-gray-viewport-bg",
+  "locators": [
     {
-      "source_id": "design-process-programming-b075",
+      "family": "designProcess",
+      "lines": "59-68",
+      "note": "Programming is the problem-seeking phase that gathers, organizes, analyzes, interprets, and presents project information."
+    },
+    {
+      "family": "designProcess",
+      "lines": "74-87",
+      "note": "Programming studies existing state and future state through setting, site, client, users, constraints, mission, goals, and performance."
+    },
+    {
+      "family": "designProcess",
+      "lines": "89-94",
+      "note": "A program document can organize issue, fact, values, goals, performance, and concept statements."
+    },
+    {
+      "family": "designProcess",
+      "lines": "107-127",
+      "note": "Issues, facts, values, goals, and performance requirements are defined as programming inputs."
+    },
+    {
+      "family": "designProcess",
+      "lines": "360-411",
+      "note": "Concepts and translation guidelines emerge from analysis and prescribe performance or quality standards."
+    },
+    {
+      "family": "theoryLecture",
+      "lines": "99-132",
+      "note": "The theory lecture says programming manages information affecting the design outcome and includes spaces, descriptions, interrelationships, matrix, and bubble diagram."
+    }
+  ],
+  "source_families": [
+    {
+      "family": "designProcess",
       "label": "Design Process",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-      "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-      "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
-      "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430"
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "raw_sha256": "867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "expected_raw_sha256": "867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "refined_sha256": "c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "expected_refined_sha256": "c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80"
     },
     {
-      "source_id": "ra9266-irr-architecture-act-b075",
-      "label": "RA 9266 IRR - Architecture Act of 2004",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-      "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710"
+      "family": "theoryLecture",
+      "label": "Theory Lecture",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "raw_sha256": "83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "expected_raw_sha256": "83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "refined_sha256": "f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "expected_refined_sha256": "f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
     }
   ],
-  "claims": [
+  "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md",
+  "source_capture_hash": "sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82",
+  "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md",
+  "refined_source_map_hash": "sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+  "real_world_scenario": "A city health office asks for a new clinic but has conflicting user needs, site limits, and budget constraints. A source-safe programming phase gathers and organizes facts, issues, values, goals, performance needs, spaces, descriptions, and relationships before schematic form-making.",
+  "excluded_claims": "The rewrite excludes exact NAA/GBA ratios, efficiency factors, room-area formulas, and legal-contract overclaims unless separately captured.",
+  "question_edit_count": 10,
+  "preserving_correct_option_ids": [
     {
-      "claim_id": "lea-theo-009-01-core-concept-article-b075",
-      "claim_text": "Article lea-theo-009-01-core-concept was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "article_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "f44656c8-77a7-4412-819e-b31b330df916",
+      "correct_option_id": "c"
     },
     {
-      "claim_id": "question-f44656c8-77a7-4412-819e-b31b330df916-ALE-THEO-009-01-003-b075",
-      "claim_text": "Question f44656c8-77a7-4412-819e-b31b330df916 ALE-THEO-009-01-003 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "ceec0691-0c61-415a-a7d8-9e24d0735fbb",
+      "correct_option_id": "c"
     },
     {
-      "claim_id": "question-ceec0691-0c61-415a-a7d8-9e24d0735fbb-ALE-THEO-009-01-001-b075",
-      "claim_text": "Question ceec0691-0c61-415a-a7d8-9e24d0735fbb ALE-THEO-009-01-001 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "4c9d74a0-304c-4e73-91c9-080c9fe00e07",
+      "correct_option_id": "b"
     },
     {
-      "claim_id": "question-4c9d74a0-304c-4e73-91c9-080c9fe00e07-ALE-THEO-009-01-002-b075",
-      "claim_text": "Question 4c9d74a0-304c-4e73-91c9-080c9fe00e07 ALE-THEO-009-01-002 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "ad744e14-166f-4e73-b685-6eb72722cf9e",
+      "correct_option_id": "b"
     },
     {
-      "claim_id": "question-ad744e14-166f-4e73-b685-6eb72722cf9e-ALE-THEO-009-01-009-b075",
-      "claim_text": "Question ad744e14-166f-4e73-b685-6eb72722cf9e ALE-THEO-009-01-009 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+      "correct_option_id": "a"
     },
     {
-      "claim_id": "question-dede4a4a-1ed5-431c-9374-cac9e5312de4-ALE-THEO-009-01-005-b075",
-      "claim_text": "Question dede4a4a-1ed5-431c-9374-cac9e5312de4 ALE-THEO-009-01-005 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "bd183a62-e105-432e-be0c-3c30f1dacd12",
+      "correct_option_id": "d"
     },
     {
-      "claim_id": "question-bd183a62-e105-432e-be0c-3c30f1dacd12-ALE-THEO-009-01-007-b075",
-      "claim_text": "Question bd183a62-e105-432e-be0c-3c30f1dacd12 ALE-THEO-009-01-007 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "b242498c-9f31-43c1-ba8d-38bed393271b",
+      "correct_option_id": "a"
     },
     {
-      "claim_id": "question-b242498c-9f31-43c1-ba8d-38bed393271b-ALE-THEO-009-01-006-b075",
-      "claim_text": "Question b242498c-9f31-43c1-ba8d-38bed393271b ALE-THEO-009-01-006 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "d58ae72e-0ebe-44ec-b45d-387d28d5e7b9",
+      "correct_option_id": "d"
     },
     {
-      "claim_id": "question-d58ae72e-0ebe-44ec-b45d-387d28d5e7b9-ALE-THEO-009-01-004-b075",
-      "claim_text": "Question d58ae72e-0ebe-44ec-b45d-387d28d5e7b9 ALE-THEO-009-01-004 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "cbbf5a9d-3618-4062-ab13-cfb7c00eb195",
+      "correct_option_id": "b"
     },
     {
-      "claim_id": "question-cbbf5a9d-3618-4062-ab13-cfb7c00eb195-ALE-THEO-009-01-010-b075",
-      "claim_text": "Question cbbf5a9d-3618-4062-ab13-cfb7c00eb195 ALE-THEO-009-01-010 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "question-de404aeb-a5b5-4609-84f3-a2103e5bb73a-ALE-THEO-009-01-008-b075",
-      "claim_text": "Question de404aeb-a5b5-4609-84f3-a2103e5bb73a ALE-THEO-009-01-008 was rewritten to the checked architectural_programming source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710",
-        "quoted_pdf_excerpt": "Architectural programming is the problem-seeking phase and gathers project information."
-      },
-      "blockers": []
+      "question_id": "de404aeb-a5b5-4609-84f3-a2103e5bb73a",
+      "correct_option_id": "d"
     }
-  ],
-  "unverified_or_rejected_claims": [],
-  "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "note": "No Real World Scenario section was added; scenario enrichment remained nonblocking while source correctness and question safety were completed."
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required",
-    "notes": "Local raw-source audit only; no external SME review required for Batch 075 local-first gate."
-  }
+  ]
 }

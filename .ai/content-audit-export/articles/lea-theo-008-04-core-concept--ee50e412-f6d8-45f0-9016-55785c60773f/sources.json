@@ -1,56 +1,104 @@
 {
   "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:f70957e44d3ab1823173dc2288027d038e960a8e659006e4cd9502e52b234749",
-  "source_count": 4,
+  "sources_hash": "sha256:06f13f6af62cffb24e0b7202346264ce1609fb0b1872eae6fd579fed91b8771f",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "6dc6f6fb-eeee-486d-b8ca-b89097104738",
+      "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-      "label": "Philippine Cultural Education Online. \"Nakpil, Juan – CulturEd: Philippine Cultural Education Online.\" 2024. https://philippineculturaleducation.com.ph/nakpil-juan/",
+      "label": "Batch 137 raw source capture - Filipino Architectural Identity",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Filipino Architectural Identity; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:38:36.673Z",
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md",
+      "local_sha256": "sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac",
+      "checked_markdown_lines": [
+        "Filipino Architecture lines 40-59: Filipino architecture is framed as a mixture of racial and cultural influences shaped through pre-colonial, Spanish, and independence periods.",
+        "Filipino Architecture lines 90-106: The local source describes a light, open, transparent, tropical character and names local professional schools and organizations.",
+        "TOA 4 (Tropical Architecture) lines 1599-1620: Bahay kubo and bahay na bato are captured as Philippine climate-responsive reference forms with raised floors, high roofs, wide eaves, and ventilation.",
+        "Theory of Architecture Reviewer lines 142-145: Francisco Manosa is associated with native architectural forms and materials for a distinctively Filipino architecture.",
+        "Filipino Architecture lines 930-1040: The source lists modern Philippine examples including churches, civic, institutional, commercial, and cultural buildings."
+      ],
+      "local_source_families": [
+        {
+          "label": "Filipino Architecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+          "rawHash": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+          "refinedHash": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1"
+        },
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        },
+        {
+          "label": "Theory of Architecture Reviewer",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+          "rawHash": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+          "refinedHash": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 137 source capture/refined conversion boundary."
     },
     {
-      "source_id": "bf7b1522-43c7-48e3-aec9-c72f8463bfc0",
+      "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-      "label": "Kanto. \"Designing Filipino: The Indigenous Architecture of Francisco Manosa.\" Illustrado Magazine, 2024. https://illustradolife.com/francisco-manosa/",
+      "label": "Batch 137 refined source conversion - Filipino Architectural Identity",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Filipino Architectural Identity.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "72c811ba-b293-4f07-8218-a7e89249daca",
-      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-      "label": "Order of National Artists. \"NCCA: Philippine National Artists of the Philippines.\" National Commission for Culture and the Arts",
-      "url": null,
-      "source_type": "heritage_body",
-      "description": "https://ncca.gov.ph/about-culture-and-arts/culture-profile/national-artists-of-the-philippines/",
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "4d0a3f48-8c6a-4d51-b696-4bb6e0802b6e",
-      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-      "label": "Kanto Creative Corners. \"Man Made Modern: Lor Calma (1928-2026) - A Pillar of Philippine Modernist Architecture.\" 2026. https://kanto.ph/voices/lor-calma/",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:38:36.673Z",
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md",
+      "local_sha256": "sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac",
+      "checked_markdown_lines": [
+        "Filipino Architecture lines 40-59: Filipino architecture is framed as a mixture of racial and cultural influences shaped through pre-colonial, Spanish, and independence periods.",
+        "Filipino Architecture lines 90-106: The local source describes a light, open, transparent, tropical character and names local professional schools and organizations.",
+        "TOA 4 (Tropical Architecture) lines 1599-1620: Bahay kubo and bahay na bato are captured as Philippine climate-responsive reference forms with raised floors, high roofs, wide eaves, and ventilation.",
+        "Theory of Architecture Reviewer lines 142-145: Francisco Manosa is associated with native architectural forms and materials for a distinctively Filipino architecture.",
+        "Filipino Architecture lines 930-1040: The source lists modern Philippine examples including churches, civic, institutional, commercial, and cultural buildings."
+      ],
+      "local_source_families": [
+        {
+          "label": "Filipino Architecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+          "rawHash": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+          "refinedHash": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1"
+        },
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        },
+        {
+          "label": "Theory of Architecture Reviewer",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+          "rawHash": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+          "refinedHash": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

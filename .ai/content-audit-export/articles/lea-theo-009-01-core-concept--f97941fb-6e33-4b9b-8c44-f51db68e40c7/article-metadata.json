@@ -1,6 +1,6 @@
 {
   "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-  "title": "Architectural programming",
+  "title": "Architectural Programming",
   "slug": "lea-theo-009-01-core-concept",
   "subject_label": "Theory of Architecture",
   "difficulty_label": null,
@@ -11,16 +11,16 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:09.555398+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:41:15.045157+00:00",
-  "updated_by": null,
-  "updated_note": null,
+  "updated_at": "2026-05-13T23:38:36.673Z",
+  "updated_by": "codex-local-first-batch-137",
+  "updated_note": "Source-audited local-first Batch 137 content and linked-question replacement; claims cite local captured source artifacts.",
   "content_hash": "sha256:5dc7e8c160954e5c7fed4956833ddeb2682eb14ea59bbea1c9267745365eaf44",
   "original_content_hash": "sha256:5dc7e8c160954e5c7fed4956833ddeb2682eb14ea59bbea1c9267745365eaf44",
-  "normalized_content_hash": "sha256:eaa541035ed8ae6075ef43459a04b964111edbd9f0d1789e44a6123001973c0a",
-  "candidate_content_hash": "sha256:eaa541035ed8ae6075ef43459a04b964111edbd9f0d1789e44a6123001973c0a",
+  "normalized_content_hash": "sha256:7ae34b3957004a1f52e4f87d7bcb756ab74ea4ec4ddecd956b4241976b05e3ca",
+  "candidate_content_hash": "sha256:7ae34b3957004a1f52e4f87d7bcb756ab74ea4ec4ddecd956b4241976b05e3ca",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:42e9cd71c62cbf647c6a954f9072e82fad7769cc4a8c0e7a2c9c0207d21711cf",
-  "sources_hash": "sha256:219a3e9614420a6be9221ba8ec6f5cfa50252ac5544f7b9d17165d0c5631b656",
+  "linked_questions_hash": "sha256:3adb60127d612f5d70d4a2221b0a2884beaddff48ddce5e8ac96554786fb3066",
+  "sources_hash": "sha256:d1789879845e9a7580c75b07a96ab7f65490856cbf54f3ab2bae30a2c6a244c2",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:03:01.183Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
@@ -31,5 +31,28 @@
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "batch-137",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "raw_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "refined_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80"
+    },
+    {
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "raw_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "refined_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+    }
+  ],
+  "blocked_residuals_logged": [
+    "lea-theo-008-02",
+    "lea-theo-008-03"
+  ]
 }

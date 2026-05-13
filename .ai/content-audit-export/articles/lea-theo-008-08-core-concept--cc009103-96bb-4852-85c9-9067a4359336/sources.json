@@ -1,56 +1,106 @@
 {
   "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:66054b086f0ed8d7b3acdfa5026c3ba71349c58f6a54b7c54f1150bc3d49eda2",
-  "source_count": 4,
+  "sources_hash": "sha256:7455aebb185b0d69036cb787d81951b32f3c0cf1e8fa6a3b1550c5f658cc79ca",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "56059c04-ee3f-48a7-b178-3beafce4de33",
+      "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture",
       "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
-      "label": "Kenneth Cobonpue Official Website. \"The Brand | Kenneth Cobonpue.\" 2024. https://kennethcobonpue.com/the-brand",
+      "label": "Batch 137 raw source capture - Philippine Design Identity Spectrum",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Philippine Design Identity Spectrum; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:38:36.673Z",
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md",
+      "local_sha256": "sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md#sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e",
+      "checked_markdown_lines": [
+        "Filipino Architecture lines 40-59: Philippine design identity is locally sourceable as layered historical influence rather than a single fixed style.",
+        "Filipino Architecture lines 821-848: American-period planning, education, institutions, and professionalization appear as one layer in Philippine architectural identity.",
+        "Filipino Architecture lines 930-1040: Modern Philippine examples support a spectrum of identity across civic, religious, institutional, and commercial work.",
+        "TOA 4 (Tropical Architecture) lines 630-670: Tropical passive design supports climate response as an identity-relevant design layer: shade, ventilation, orientation, and protected openings.",
+        "TOA 4 (Tropical Architecture) lines 1599-1620: Bahay kubo and bahay na bato offer local climate and form references that can inform contemporary translation.",
+        "Theory of Architecture Reviewer lines 1962-1964: The reviewer captures the principle that architecture must respond to local conditions."
+      ],
+      "local_source_families": [
+        {
+          "label": "Filipino Architecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+          "rawHash": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+          "refinedHash": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1"
+        },
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        },
+        {
+          "label": "Theory of Architecture Reviewer",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+          "rawHash": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+          "refinedHash": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 137 source capture/refined conversion boundary."
     },
     {
-      "source_id": "0a311fdc-5e6a-4c3a-a906-a8e299b1cca3",
+      "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map",
       "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
-      "label": "WIPO. \"Filipino Design: Breaking New Ground.\" WIPO Magazine, 2023. https://www.wipo.int/en/web/wipo-magazine/articles/filipino-design-breaking-new-ground-38099",
+      "label": "Batch 137 refined source conversion - Philippine Design Identity Spectrum",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Philippine Design Identity Spectrum.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "327efc96-a380-4bcf-b501-e32b9a4764a7",
-      "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
-      "label": "GMA Network. \"Championing Filipino Artistry and Identity, One Furniture at a Time.\" 2024",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": "https://www.gmanetwork.com/lifestyle/infocus/championing-filipino-artistry-and-identity-one-furniture-at-a-time",
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "45dc8784-11a5-4e6f-a18b-4084273155bc",
-      "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
-      "label": "Kanto Creative Corners. \"Man Made Modern: Lor Calma (1928-2026).\" 2026. https://kanto.ph/voices/lor-calma/",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-13T23:38:36.673Z",
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md",
+      "local_sha256": "sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md#sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e",
+      "checked_markdown_lines": [
+        "Filipino Architecture lines 40-59: Philippine design identity is locally sourceable as layered historical influence rather than a single fixed style.",
+        "Filipino Architecture lines 821-848: American-period planning, education, institutions, and professionalization appear as one layer in Philippine architectural identity.",
+        "Filipino Architecture lines 930-1040: Modern Philippine examples support a spectrum of identity across civic, religious, institutional, and commercial work.",
+        "TOA 4 (Tropical Architecture) lines 630-670: Tropical passive design supports climate response as an identity-relevant design layer: shade, ventilation, orientation, and protected openings.",
+        "TOA 4 (Tropical Architecture) lines 1599-1620: Bahay kubo and bahay na bato offer local climate and form references that can inform contemporary translation.",
+        "Theory of Architecture Reviewer lines 1962-1964: The reviewer captures the principle that architecture must respond to local conditions."
+      ],
+      "local_source_families": [
+        {
+          "label": "Filipino Architecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+          "rawHash": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+          "refinedHash": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1"
+        },
+        {
+          "label": "TOA 4 (Tropical Architecture)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "rawHash": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "refinedHash": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+        },
+        {
+          "label": "Theory of Architecture Reviewer",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+          "rawHash": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+          "refinedHash": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

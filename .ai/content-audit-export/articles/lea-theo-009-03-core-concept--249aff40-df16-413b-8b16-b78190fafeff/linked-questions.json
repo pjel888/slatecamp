@@ -1,30 +1,30 @@
 {
   "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:657a87bb59db5fe9b09ec34bb708500b7f656fa5ecb65b3a6a8cbb8c2c80da42",
+  "linked_questions_hash": "sha256:5d609e14b3e1d5c90fcd3bc26c0b671d5423ad004c20df52a4df71f59f68ad32",
   "question_count": 10,
   "questions": [
     {
       "question_id": "a9c96a9e-72d9-426c-a08a-b882d95ffe2e",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "A programmer specifies a secondary bedroom as 9 feet × 10 feet (90 SF), claiming this is code-compliant under PD 1096. Why is this inadequate as standard practice?",
+      "text": "What is the safest Batch 137 meaning of space standards?",
       "options": [
         {
           "id": "a",
-          "text": "The bedroom would fail accessibility standards requiring larger dimensions for wheelchair access, especially in multi-story buildings"
+          "text": "Inventing exact area, code, or efficiency numbers without a captured source"
         },
         {
           "id": "b",
-          "text": "Code minimum and design standard practice are different; minimum code dimensions produce cramped, inadequate spaces"
+          "text": "Evidence-based dimensional or quality criteria that translate program goals and performance requirements into design guidance"
         },
         {
           "id": "c",
-          "text": "PD 1096 does not establish bedroom dimensions; this dimension violates code entirely, leading to potential legal issues"
+          "text": "Jumping to form before gathering facts, issues, values, goals, users, site constraints, and performance needs"
         },
         {
           "id": "d",
-          "text": "This size cannot accommodate standard bed dimensions and basic furniture movement, making it impractical for regular use"
+          "text": "A decorative style manual with no relation to users or function"
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Accessibility applies to specific spaces; typical bedrooms are not required to be wheelchair-accessible unless specified.",
-        "c": "PD 1096 does establish minimum bedroom dimensions (though smaller than practice standard); this dimension would comply with code but not practice.",
-        "d": "90 SF can accommodate a bed and minimal furniture; the issue is comfort and functionality, not impossibility.",
-        "correct": "WWhile PD 1096 requires light/ventilation but no area minimum, standard design practice allocates 120 SF for secondary bedrooms...s to accommodate a bed, dresser, desk/chair, and comfortable circulation without forced layout. Code minimum and design standard are distinct; this is a common ALE mistake.",
-        "takeaway": "Code minimum and design standard are distinct; this is a common ALE mistake."
+        "a": "Inventing exact area, code, or efficiency numbers without a captured source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "Evidence-based dimensional or quality criteria that translate program goals and performance requirements into design guidance This is the source-safe answer for Space Standards and Performance Requirements.",
+        "c": "Jumping to form before gathering facts, issues, values, goals, users, site constraints, and performance needs is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "A decorative style manual with no relation to users or function is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "Evidence-based dimensional or quality criteria that translate program goals and performance requirements into design guidance This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Evidence-based dimensional or quality criteria that translate program goals and performance requirements into design guidance Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-009-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:01bae7c0ec083c3e1eef119a62b4bccc70c37f8c25ddceb91d7063572f470005"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:212885cc126a45e2b93512d1fb0469a50e3f6d74d737e13eb6f64592a186afa5",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "ce51345d-5cbc-4dcc-9e71-d7810524bfe8",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "A school library program must accommodate 100 simultaneous student study positions, 10,000 book volumes, and staff workspace. Using standards (15 SF per student reader, 0.1 SF per volume, 100 SF for staff desk/office), calculate minimum NAA. Then, considering library circulation requirements (0.65 efficiency factor typical), what is the anticipated GBA?",
+      "text": "Why do performance requirements matter for space standards?",
       "options": [
         {
           "id": "a",
-          "text": "NAA = 2,600 SF; GBA = 4,000 SF"
+          "text": "They connect project goals and functions to measurable or checkable design criteria before detailed planning"
         },
         {
           "id": "b",
-          "text": "NAA = 2,500 SF; GBA = 3,846 SF"
+          "text": "They replace all user and site facts"
         },
         {
           "id": "c",
-          "text": "NAA = 1,600 SF; GBA = 2,462 SF"
+          "text": "They are random numbers copied without context"
         },
         {
           "id": "d",
-          "text": "NAA = 2,600 SF; GBA = 3,380 SF"
+          "text": "They only describe facade appearance"
         }
       ],
       "correct_option_id": "a",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "2,500 SF omits the 100 SF staff workspace component. GBA of 3,846 SF follows from this undercount (2,500 ÷ 0.65 = 3,846).",
-        "c": "1,600 SF miscalculates the volume allocation as 10,000 × 0.06 = 600 SF instead of the correct 10,000 × 0.1 = 1,000 SF, then omits staff space. This is the most common student error.",
-        "d": "While NAA is correctly calculated at 2,600 SF, GBA of 3,380 SF uses a 0.77 efficiency factor (typical for offices) instead of the 0.65 factor specified for library circulation requirements.",
-        "correct": "NAA = (100 readers × 15 SF) + (10,000 volumes × 0.1 SF) + 100 SF staff = 1,500 + 1,000 + 100 = 2,600 SF. GBA = 2,600 ÷ 0.65 = 4,000 SF. Library efficiency factors account for circulation aisles, reference desks, and stack access paths.",
-        "takeaway": "Library efficiency factors account for circulation aisles, reference desks, and stack access paths."
+        "a": "They connect project goals and functions to measurable or checkable design criteria before detailed planning This is the source-safe answer for Space Standards and Performance Requirements.",
+        "b": "They replace all user and site facts is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "c": "They are random numbers copied without context is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "They only describe facade appearance is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "They connect project goals and functions to measurable or checkable design criteria before detailed planning This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": "2,500 SF omits the 100 SF staff workspace component. GBA of 3,846 SF follows from this undercount (2,500 ÷ 0.65 = 3,846). 1,600 SF miscalculates the volume allocation as 10,000 × 0.06 = 600 SF instead of the correct 10,000 × 0.1 = 1,000 SF, then omits staff space. This is the most common student error. While NAA is correctly calculated at 2,600 SF, GBA of 3,380 SF uses a 0.77 efficiency factor (typical for offices) instead of the 0.65 factor specified for library circulation requirements. NAA = (100 readers × 15 SF) + (10,000 volumes × 0.1 SF) + 100 SF staff = 1,500 + 1,000 + 100 = 2,600 SF. GBA = 2,600 ÷ 0.65 = 4,000 SF. Library efficiency factors account for circulation aisles, reference desks, and stack access paths. Library efficiency factors account for circulation aisles, reference desks, and stack access paths.",
-      "code_citation": null,
+      "explanation": "They connect project goals and functions to measurable or checkable design criteria before detailed planning Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-009-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T15:59:04.71005+00:00",
-      "content_hash": "sha256:4063b779b7eb5b6fc0b45c502cd7b4a0bc094a94295e86c0a618f793971a50ae"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:792268f7f1574343ae310597a362d48738092b9cdd2c01f5641402bb0a30c00d",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "c4744db4-0d45-4993-a11f-f701c6a87f0c",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "According to standard residential practice in standard practice, what is the minimum appropriate dimension for a primary (master) bedroom?",
+      "text": "How do anthropometry and ergonomics support standards?",
       "options": [
         {
           "id": "a",
-          "text": "14 feet × 16 feet (224 SF)"
+          "text": "They are irrelevant to space planning"
         },
         {
           "id": "b",
-          "text": "12 feet × 14 feet (168 SF)"
+          "text": "They coordinate design with human physiological and psychological capacities, requirements, and use patterns"
         },
         {
           "id": "c",
-          "text": "10 feet × 12 feet (120 SF)"
+          "text": "They prove every room has one universal size"
         },
         {
           "id": "d",
-          "text": "10 feet × 10 feet (100 SF)"
+          "text": "They replace source checks for code numbers"
         }
       ],
       "correct_option_id": "b",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While luxury bedrooms reach this size, it exceeds the minimum standard.",
-        "c": "This is appropriate for secondary bedrooms (120 SF), not primary bedrooms.",
-        "d": "This is below minimum practice; 100 SF is too small for comfortable primary bedroom.",
-        "correct": "Standard practice specifies 12 feet × 14 feet (168 SF) minimum for a primary bedroom to accommodate a queen bed, bedside tables, dresser, circulation, and door swing without forced furniture layout.",
-        "takeaway": "Standard practice specifies 12 feet × 14 feet (168 SF) minimum for a primary bedroom to accommodate a queen bed, bedside tables, dresser, circulation, and door swing without forced furniture layout."
+        "a": "They are irrelevant to space planning is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "They coordinate design with human physiological and psychological capacities, requirements, and use patterns This is the source-safe answer for Space Standards and Performance Requirements.",
+        "c": "They prove every room has one universal size is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "They replace source checks for code numbers is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "They coordinate design with human physiological and psychological capacities, requirements, and use patterns This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They coordinate design with human physiological and psychological capacities, requirements, and use patterns Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-009-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6087c81e1b3bba1c0f57eeebccb6cf9bf622fb7f27ea61b598dc06b3fbfbf35a"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:0a7a4c7049c93442cdeb8ccb464c95230a3f2adea58921a8b30af548a2785f11",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "295a0582-404f-4ce5-bee1-ac9526cca0ad",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "What is the minimum dimension standard for a full bathroom (toilet, sink, and shower/tub) in contemporary design practice?",
+      "text": "What is the source-boundary rule for exact area numbers?",
       "options": [
         {
           "id": "a",
-          "text": "5 feet × 5 feet (25 SF)"
+          "text": "Always invent a number if the question feels practical"
         },
         {
           "id": "b",
-          "text": "5 feet × 8 feet (40 SF)"
+          "text": "Use one international formula for every Philippine project"
         },
         {
           "id": "c",
-          "text": "8 feet × 9 feet (72 SF)"
+          "text": "Do not cite exact bedroom, library, classroom, efficiency, or code-minimum numbers unless the specific value is captured by a checked source"
         },
         {
           "id": "d",
-          "text": "10 feet × 12 feet (120 SF)"
+          "text": "Treat unsourced online memory as a source artifact"
         }
       ],
       "correct_option_id": "c",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is a powder room (toilet and sink only), not a full bathroom.",
-        "b": "This is appropriate for a half-bathroom without tub/shower.",
-        "d": "This exceeds standard practice; it represents luxury or primary bathroom with extra amenities.",
-        "correct": "Standard practice allocates 8 feet × 9 feet (72 SF) minimum for a comfortable full bathroom with fixtures on opposing walls. While code minimum in some contexts is lower, professional standards require this for functionality and comfort.",
-        "takeaway": "While code minimum in some contexts is lower, professional standards require this for functionality and comfort."
+        "a": "Always invent a number if the question feels practical is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "Use one international formula for every Philippine project is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "c": "Do not cite exact bedroom, library, classroom, efficiency, or code-minimum numbers unless the specific value is captured by a checked source This is the source-safe answer for Space Standards and Performance Requirements.",
+        "d": "Treat unsourced online memory as a source artifact is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "Do not cite exact bedroom, library, classroom, efficiency, or code-minimum numbers unless the specific value is captured by a checked source This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Do not cite exact bedroom, library, classroom, efficiency, or code-minimum numbers unless the specific value is captured by a checked source Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-009-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4c491b7beb9e239afc2bf57f1f928c0ee0677a27776c7ba6eb13263c01955399"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:cc10de8bd98beb681e5dfb1722ff09b5710a2cb60d2f98436f5adc67d3211396",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "73a6caed-ed81-4968-bb20-8cb44561f7ed",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "Standard residential kitchens should accommodate appliances and counter workspace. What is the minimum dimension for a standard residential kitchen?",
+      "text": "Which item is safely supported as a standards-related output?",
       "options": [
         {
           "id": "a",
-          "text": "8 feet × 8 feet (64 SF)"
+          "text": "A universal NAA/GBA ratio not captured locally"
         },
         {
           "id": "b",
-          "text": "12 feet × 14 feet (168 SF)"
+          "text": "A legal citation not checked in the artifact"
         },
         {
           "id": "c",
-          "text": "10 feet × 12 feet (120 SF)"
+          "text": "A translation guideline that turns design parameters and performance requirements into quality or dimensional targets"
         },
         {
           "id": "d",
-          "text": "8 feet × 10 feet (80 SF)"
+          "text": "A final structural calculation from a bubble diagram"
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "64 SF is too small for standard appliance and counter requirements.",
-        "b": "This exceeds standard practice; it represents large or luxury kitchens.",
-        "d": "80 SF is minimal and uncomfortable; not standard practice.",
-        "correct": "10 feet × 12 feet (120 SF) is standard practice minimum, accommodating refrigerator, stove, sink, counters on multiple walls, and island or additional workspace. PD 1096 does not specify kitchen dimensions; code focuses on light/ventilation while practice requires minimum 120 SF for functionality.",
-        "takeaway": "PD 1096 does not specify kitchen dimensions; code focuses on light/ventilation while practice requires minimum 120 SF for functionality."
+        "a": "A universal NAA/GBA ratio not captured locally is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "A legal citation not checked in the artifact is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "c": "A translation guideline that turns design parameters and performance requirements into quality or dimensional targets This is the source-safe answer for Space Standards and Performance Requirements.",
+        "d": "A final structural calculation from a bubble diagram is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "A translation guideline that turns design parameters and performance requirements into quality or dimensional targets This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A translation guideline that turns design parameters and performance requirements into quality or dimensional targets Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-009-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:51d6ca6a0b21a2a5f6e359a3be1c9af349bbceb16ddcef1d77bd62a720cea781"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:7078f8b1b2099fbb96022d299c14c070f9e0083d40b8b126820926ac6b01e654",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "db16a5dc-5c7a-4bbc-bac3-686a7a605572",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "A residential programmer calculates a 3-bedroom, 2-bath home program: primary bedroom 168 SF, two secondary bedrooms 120 SF each, two full bathrooms 72 SF each, kitchen 120 SF, living room 200 SF, dining room 120 SF, hallways and circulation 150 SF. What is the total NAA, and using an efficiency factor of 0.75, what is the anticipated GBA?",
+      "text": "In the small college scenario, what should the standards pass do?",
       "options": [
         {
           "id": "a",
-          "text": "NAA = 1,300 SF; GBA = 1,733 SF"
+          "text": "Start with a fixed area number from memory"
         },
         {
           "id": "b",
-          "text": "NAA = 1,220 SF; GBA = 1,627 SF"
+          "text": "Ignore ergonomics because standards are only aesthetics"
         },
         {
           "id": "c",
-          "text": "NAA = 1,070 SF; GBA = 1,427 SF"
+          "text": "Choose a facade style before understanding room needs"
         },
         {
           "id": "d",
-          "text": "NAA = 1,142 SF; GBA = 1,523 SF"
+          "text": "Translate program goals into sourced dimensional and quality guidelines, then check human use, circulation, and relationships"
         }
       ],
       "correct_option_id": "d",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This overestimates NAA; recount spaces and areas against listed program.",
-        "b": "This overestimates NAA; check individual space dimensions against standards.",
-        "c": "This underestimates NAA; calculation is missing components or dimensions.",
-        "correct": "NAA = 168 + 120 + 120 + 72 + 72 + 120 + 200 + 120 + 150 = 1,142 SF. GBA = 1,142 ÷ 0.75 = 1,523 SF. The efficiency factor accounts for walls, mechanical chases, and structural elements.",
-        "takeaway": "The efficiency factor accounts for walls, mechanical chases, and structural elements."
+        "a": "Start with a fixed area number from memory is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "Ignore ergonomics because standards are only aesthetics is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "c": "Choose a facade style before understanding room needs is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "Translate program goals into sourced dimensional and quality guidelines, then check human use, circulation, and relationships This is the source-safe answer for Space Standards and Performance Requirements.",
+        "correct": "Translate program goals into sourced dimensional and quality guidelines, then check human use, circulation, and relationships This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Translate program goals into sourced dimensional and quality guidelines, then check human use, circulation, and relationships Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-009-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4ffebe57b23c539e795e19efaf93713da3966ba19a49afb551c67b2f0e884ec2"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:f662b08b9d1deacacc62fa409cce759224c8524fe525cbbefbb7fa492f676542",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "c8d4be55-c2d1-4fd4-b39a-b4c2406e7cda",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "A designer proposes a hotel guest room of 12 feet × 20 feet (240 SF) for double occupancy. According to standards (250–300 SF minimum), is this adequate, and what is the professional concern?",
+      "text": "Why is the Modulor reference relevant but limited?",
       "options": [
         {
           "id": "a",
-          "text": "This exceeds standards for budget hotels and represents luxurious allocation; overly generous for typical hospitality projects, potentially increasing costs unnecessarily"
+          "text": "It supplies every Philippine code dimension"
         },
         {
           "id": "b",
-          "text": "This falls below standard minimum (250 SF); while close, inadequate space compromises guest comfort and competitive positioning"
+          "text": "It shows a human-body-based proportional system, but it does not authorize unsourced universal room standards for this batch"
         },
         {
           "id": "c",
-          "text": "Size matters less than layout quality; excellent design can make 240 SF feel spacious if partitioned well, though it may not meet all regulatory requirements"
+          "text": "It proves users do not matter"
         },
         {
           "id": "d",
-          "text": "This is adequate; 240 SF approaches the 250 SF minimum and represents efficient design, balancing space and functionality"
+          "text": "It replaces anthropometry and ergonomics"
         }
       ],
       "correct_option_id": "b",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "250–300 SF is industry standard, not luxury; budget hotels may be smaller, but this 240 SF proposal is below even that.",
-        "c": "Layout helps but cannot compensate for fundamental area insufficiency; the room lacks area for all required functions.",
-        "d": "While 240 SF approaches minimum, it still falls short; approaching a minimum is not the same as meeting standard.",
-        "correct": "Standard practice is 220–250 SF net for double-occupancy hotel rooms including bathroom. At 240 SF, this room falls short and risks inadequate space for luggage storage, movement around furniture, and guest satisfaction. In competitive markets, undersizing relative to standard creates disadvantage.",
-        "takeaway": "In competitive markets, undersizing relative to standard creates disadvantage."
+        "a": "It supplies every Philippine code dimension is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "It shows a human-body-based proportional system, but it does not authorize unsourced universal room standards for this batch This is the source-safe answer for Space Standards and Performance Requirements.",
+        "c": "It proves users do not matter is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "It replaces anthropometry and ergonomics is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "It shows a human-body-based proportional system, but it does not authorize unsourced universal room standards for this batch This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It shows a human-body-based proportional system, but it does not authorize unsourced universal room standards for this batch Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-009-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b1f60f03b803fb4fb8b29fe4f2832df4a10af588b9e317f34d53ecc0fcee9ccb"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:bd1d7f81f06bc340f805775b773c2d41518d47fa7b31a39d99be3ebca8aa8251",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "31bfbd84-bcca-44c6-a47f-05ff4fd6386d",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "In commercial office space, what area allocation per workstation is typical in modern open-plan offices?",
+      "text": "What is the difference between a standard and an arbitrary number?",
       "options": [
         {
           "id": "a",
-          "text": "50–70 SF per workstation"
+          "text": "There is no difference if the number looks precise"
         },
         {
           "id": "b",
-          "text": "100–150 SF per workstation"
+          "text": "A standard is only a decorative preference"
         },
         {
           "id": "c",
-          "text": "35–50 SF per workstation"
+          "text": "Any number from memory is source-safe"
         },
         {
           "id": "d",
-          "text": "70–100 SF per workstation"
+          "text": "A standard is tied to performance, use, source evidence, and design parameters; an arbitrary number lacks that support"
         }
       ],
       "correct_option_id": "d",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Philippine practice often uses this, but international standards recommend higher.",
-        "b": "This exceeds typical open-plan allocation; it approaches private office sizing.",
-        "c": "This is below standard minimum and represents high-density, low-comfort allocation.",
-        "correct": "Time-Saver Standards reference 70–100 SF per person in modern open office. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF.",
-        "takeaway": "Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF."
+        "a": "There is no difference if the number looks precise is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "A standard is only a decorative preference is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "c": "Any number from memory is source-safe is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "A standard is tied to performance, use, source evidence, and design parameters; an arbitrary number lacks that support This is the source-safe answer for Space Standards and Performance Requirements.",
+        "correct": "A standard is tied to performance, use, source evidence, and design parameters; an arbitrary number lacks that support This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": "Philippine practice often uses this, but international standards recommend higher. This exceeds typical open-plan allocation; it approaches private office sizing. This is below standard minimum and represents high-density, low-comfort allocation. Time-Saver Standards reference 70–100 SF per person in modern open office. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF.",
-      "code_citation": null,
+      "explanation": "A standard is tied to performance, use, source evidence, and design parameters; an arbitrary number lacks that support Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-009-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T15:59:04.829702+00:00",
-      "content_hash": "sha256:1676eed3fec2b5340bb2cec4f1641f73cd2f80c9f9cc00d40fd3655610cadb6b"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:e312b8f69e3f1c71b242724eceb49bbf39ffa032e4c0030735067e8a584c453d",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "a541b08f-849c-43e2-960d-93979b1c5b33",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "A clinic program specifies four 80 SF examination rooms per AIA guidelines (Neufert minimum) for a physician-led practice. The clinic operator argues this meets code and should be adequate. What additional consideration should the programmer raise?",
+      "text": "Which answer best protects LEA accuracy?",
       "options": [
         {
           "id": "a",
-          "text": "Neufert standards (80 SF minimum) apply only to teaching clinics; private practices require larger spaces to accommodate additional equipment and staff"
+          "text": "Hide uncertainty by stating exact values anyway"
         },
         {
           "id": "b",
-          "text": "80 SF is code-acceptable minimum but constrains physician comfort; AIA standards recommend 120 SF minimum for contemporary infection control and physician workspace optimization"
+          "text": "Use source-backed performance and human-use reasoning, and flag exact values as unsupported when the local artifact does not contain them"
         },
         {
           "id": "c",
-          "text": "AIA guidelines recommend 150 SF minimum for all exam rooms regardless of practice type; 80 SF violates AIA standards and may not support modern medical equipment"
+          "text": "Ignore the difference between examples and universal standards"
         },
         {
           "id": "d",
-          "text": "80 SF exam rooms are standard; the operator's argument is valid and no additional space is necessary, assuming no future expansion"
+          "text": "Treat all sample guidelines as mandatory for every project"
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "AIA standards apply across practice types; they are not limited to teaching settings.",
-        "c": "150 SF exceeds AIA recommendations; 120 SF is the referenced standard.",
-        "d": "While 80 SF may be code-acceptable, it is below contemporary practice standard; the programmer should document this trade-off.",
-        "correct": "Neufert establishes 80 SF minimum but AIA guidelines recommend 120 SF for physician comfort and infection control compliance. This distinction between minimum (adequate but tight) and standard practice (comfortable and professional) is testable on the ALE.",
-        "takeaway": "This distinction between minimum (adequate but tight) and standard practice (comfortable and professional) is testable on the ALE."
+        "a": "Hide uncertainty by stating exact values anyway is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "b": "Use source-backed performance and human-use reasoning, and flag exact values as unsupported when the local artifact does not contain them This is the source-safe answer for Space Standards and Performance Requirements.",
+        "c": "Ignore the difference between examples and universal standards is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "Treat all sample guidelines as mandatory for every project is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "Use source-backed performance and human-use reasoning, and flag exact values as unsupported when the local artifact does not contain them This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Use source-backed performance and human-use reasoning, and flag exact values as unsupported when the local artifact does not contain them Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-009-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:126fb4acefb66efe9473236df6997b89a9b72da3046c76e8600c6255cfb329d2"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:6510761f24b9e0984514428a1f893467f3e364e723de1d90c4f688250b07fe5f",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     },
     {
       "question_id": "cd54f247-3358-4e7e-b374-7cbfd9ed3952",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "PD 1096 specifies a minimum kitchen area of approximately 63 SF (5.9 m²) for single-family dwellings. A developer proposes kitchens at exactly this code minimum for a mid-range residential condominium. What is the primary professional concern with this approach?",
+      "text": "What is the LEA takeaway from space standards?",
       "options": [
         {
           "id": "a",
-          "text": "Code minimum kitchens cannot accommodate standard appliance configurations and counter workspace; standard practice requires 10 feet × 12 feet (120 SF) minimum for functional residential kitchens"
+          "text": "Standards should make project goals, human requirements, performance needs, and relationships measurable enough to guide design"
         },
         {
           "id": "b",
-          "text": "63 SF kitchens are adequate for condominium units since compact living is expected in multi-family residential, aligning with urban living trends"
+          "text": "Standards are only memorized numbers without context"
         },
         {
           "id": "c",
-          "text": "PD 1096 kitchen minimums apply only to single-family dwellings and cannot legally be used for condominium design, which requires separate standards"
+          "text": "Standards eliminate programming and bubble diagrams"
         },
         {
           "id": "d",
-          "text": "The minimum is acceptable if the developer provides a separate pantry or utility area adjacent to the kitchen, enhancing overall functionality"
+          "text": "Standards are safest when invented late in design"
         }
       ],
       "correct_option_id": "a",
@@ -500,9 +545,17 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": null,
-      "explanation": null,
-      "code_citation": null,
+      "rationale": {
+        "a": "Standards should make project goals, human requirements, performance needs, and relationships measurable enough to guide design This is the source-safe answer for Space Standards and Performance Requirements.",
+        "b": "Standards are only memorized numbers without context is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "c": "Standards eliminate programming and bubble diagrams is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "d": "Standards are safest when invented late in design is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Space Standards and Performance Requirements.",
+        "correct": "Standards should make project goals, human requirements, performance needs, and relationships measurable enough to guide design This stays inside the Batch 137 local source map for Space Standards and Performance Requirements.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Space Standards and Performance Requirements; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950"
+      },
+      "explanation": "Standards should make project goals, human requirements, performance needs, and relationships measurable enough to guide design Supported by Batch 137 local source artifacts for Space Standards and Performance Requirements: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -513,8 +566,11 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-04-01T17:10:27.309183+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eab0cc423bbda108b042018d9bb449439a569231cf6a045e1bdc81ff0cb91ec1"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:647495d5cb6d8af58e51091c77f8ee543da8b85ab199233d080c1c5fd33e034a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md#sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md#sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+      "source_notes": "Batch 137 grounds space standards in checked local sources: facts, values, goals, performance requirements, translation guidelines, human-body proportion, anthropometry, ergonomics, and program spaces with descriptions, dimensions, matrix, and bubble diagram."
     }
   ]
 }

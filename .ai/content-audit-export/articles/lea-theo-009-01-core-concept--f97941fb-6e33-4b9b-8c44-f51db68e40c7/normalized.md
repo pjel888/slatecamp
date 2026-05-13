@@ -1,70 +1,43 @@
-## Board Exam Quick Check
+# Architectural Programming
 
-Before answering a programming item, identify whether the question is asking for project requirements, design form, legal scope, or a contract deliverable. Programming questions should stay in the problem-definition and information-analysis stage unless the item explicitly shifts to design or construction documents.
+## Source-Safe Scope
 
-## What You Need to Know for the LEA
+Batch 137 narrows architectural programming to checked local design-process sources: problem seeking, information management, existing and future state analysis, issue/fact/value/goal/performance/concept structure, spaces, descriptions, and relationship diagrams.
 
-Architectural programming is the problem-seeking part of the design process. The local Design Process source defines it as the orderly definition of the architectural problem, articulation of project requirements, and gathering, organizing, analyzing, interpreting, and presenting information relevant to the project.
-
-RA 9266 IRR also places building programming, site analysis, planning, architectural lay-outing, and utilization of spaces within the scope of architectural practice. For LEA review, the safe distinction is this: programming clarifies the problem and required performance; design proposes the architectural response.
-
-## Learning Goal
-
-- Define architectural programming as the source-audited problem-definition phase before design form-making.
-- Separate existing-state analysis from future-state requirements.
-- Identify programming outputs that later guide concepts, translation guidelines, and design decisions.
+This Batch 137 rewrite is intentionally narrower than the residual article when the residual claims exceeded the local source layer. The rewrite excludes exact NAA/GBA ratios, efficiency factors, room-area formulas, and legal-contract overclaims unless separately captured.
 
 ## Core Concept
 
-The Design Process source frames design as managing information so the right information is available at the right stage. Programming is the stage that organizes that information before the architect commits to a design solution.
+Use programming to define the problem before design: gather facts, clarify values and goals, set performance requirements, and map spaces and relationships.
 
-A source-safe programming workflow asks two paired questions:
+Use the concept as an exam reasoning tool, not as a loose style label. The safest answer starts from the checked local source boundary, identifies the project information the source actually supports, and refuses unsupported exact values, awards, legal rules, global-market statements, or technology claims.
 
-| Programming focus | What is checked |
-| --- | --- |
-| Existing state | Setting, physical conditions, site data, client or user profile, and constraints. |
-| Future state | Mission, goals, performance requirements, and concepts. |
+## Real World Scenario
 
-This matters because a program is not a sketch. A program can state the mission, the user needs, the site and legal constraints, performance requirements, and relationship logic. A design then turns those requirements into form, layout, materials, and detailed documents.
+A city health office asks for a new clinic but has conflicting user needs, site limits, and budget constraints. A source-safe programming phase gathers and organizes facts, issues, values, goals, performance needs, spaces, descriptions, and relationships before schematic form-making.
 
-RA 9266 IRR supports this broader professional scope. It identifies pre-design services, site analysis, architectural and operational planning, planning and utilization of spaces, and building programming as part of architectural practice. It also lists architectural programs among architectural documents.
+## Exam Use
 
-## Key Facts and Testable Items
+When a question asks for the best design move, choose the answer that keeps the source-backed relationship intact. When a question adds exact numbers, legal claims, global awards, or building-type rules, treat those additions as unsafe unless the local source artifact explicitly captures them.
 
-| Exam cue | Source-safe answer |
-| --- | --- |
-| "Problem-seeking phase" | Architectural programming. |
-| "Existing state" | Existing setting, physical conditions, user profile, and constraints. |
-| "Future state" | Mission, goals, performance requirements, and concepts. |
-| "Building programming" in RA 9266 IRR | Part of the scope of architectural practice. |
-| Concept statement | A diagram and words that express relationships among controlled design elements. |
-| Translation guidelines | Program-derived performance and quality standards that guide later design. |
+## Local Source Boundary
 
-## How It's Tested on the LEA
+Raw capture: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md
 
-Expect questions that ask you to classify a task as programming or design. If the task gathers and organizes project requirements, it belongs to programming. If it chooses a form, finish, wall layout, or construction detail, it has moved into design or contract documentation.
+Refined conversion: vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md
 
-Expect scenario questions about incomplete programs. Missing user profile, site constraints, legal requirements, mission, or performance criteria should be resolved before design assumptions are locked.
+Checked locators:
 
-## Common Mistakes
+- Design Process lines 59-68: Programming is the problem-seeking phase that gathers, organizes, analyzes, interprets, and presents project information.
+- Design Process lines 74-87: Programming studies existing state and future state through setting, site, client, users, constraints, mission, goals, and performance.
+- Design Process lines 89-94: A program document can organize issue, fact, values, goals, performance, and concept statements.
+- Design Process lines 107-127: Issues, facts, values, goals, and performance requirements are defined as programming inputs.
+- Design Process lines 360-411: Concepts and translation guidelines emerge from analysis and prescribe performance or quality standards.
+- Theory Lecture lines 99-132: The theory lecture says programming manages information affecting the design outcome and includes spaces, descriptions, interrelationships, matrix, and bubble diagram.
 
-- Treating programming as sketching. Programming defines the problem; design proposes the solution.
-- Using a favorite design idea before confirming user needs and constraints.
-- Ignoring the difference between existing-state facts and future-state goals.
-- Assuming building programming is informal only. RA 9266 IRR treats it as part of architectural practice.
+Source file hashes:
 
-## Key Terms
-
-**Architectural Programming** - The source-audited problem-definition phase that gathers, organizes, analyzes, interprets, and presents project information before design.
-
-**Existing State** - The present setting, physical condition, site data, client/user profile, and constraints.
-
-**Future State** - The mission, goals, performance requirements, and concepts the project should achieve.
-
-**Translation Guidelines** - Program-derived performance and quality standards used to guide later design.
-
-**Architectural Program** - An architectural document identified in RA 9266 IRR as one of the outputs of an architect.
-
-## Related Articles
-
-See also: **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, and **lea-theo-009-05-core-concept**.
+- vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35
+- vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80
+- vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738
+- vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b

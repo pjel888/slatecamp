@@ -1,0 +1,64 @@
+{
+  "question_id": "dd36291e-b307-4fb5-af89-1a02b4041a31",
+  "baseline_hash": "sha256:9273eab8252a2596f0d46012fc0988c99b286749bdb131934299ef17aa269564",
+  "action": "replace",
+  "reason": "source-audited-article-batch-137-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Philippine Design Identity Spectrum.",
+  "approved_by": "codex-local-first-batch-137",
+  "approved_at": "2026-05-13T23:38:36.673Z",
+  "source_audit_support": {
+    "parent_article_id": "cc009103-96bb-4852-85c9-9067a4359336",
+    "parent_article_slug": "lea-theo-008-08-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md#sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md#sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b",
+    "checked_sources": [
+      {
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture",
+        "label": "Batch 137 raw source capture - Philippine Design Identity Spectrum",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md",
+        "sha256": "sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e"
+      },
+      {
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map",
+        "label": "Batch 137 refined source conversion - Philippine Design Identity Spectrum",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md",
+        "sha256": "sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 137 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What should a Batch 137 answer avoid?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Source-backed statements about tropical response"
+      },
+      {
+        "id": "b",
+        "text": "Source-backed references to layered Philippine history"
+      },
+      {
+        "id": "c",
+        "text": "Unsupported claims about specific contemporary product designers, awards, global markets, digital methods, or legal status not in the local artifacts"
+      },
+      {
+        "id": "d",
+        "text": "Source-backed references to local conditions"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Source-backed statements about tropical response is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Philippine Design Identity Spectrum.",
+      "b": "Source-backed references to layered Philippine history is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Philippine Design Identity Spectrum.",
+      "c": "Unsupported claims about specific contemporary product designers, awards, global markets, digital methods, or legal status not in the local artifacts This is the source-safe answer for Philippine Design Identity Spectrum.",
+      "d": "Source-backed references to local conditions is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Philippine Design Identity Spectrum.",
+      "correct": "Unsupported claims about specific contemporary product designers, awards, global markets, digital methods, or legal status not in the local artifacts This stays inside the Batch 137 local source map for Philippine Design Identity Spectrum.",
+      "takeaway": "Use the local Batch 137 source capture and refined conversion for Philippine Design Identity Spectrum; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md#sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md#sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b"
+    },
+    "explanation": "Unsupported claims about specific contemporary product designers, awards, global markets, digital methods, or legal status not in the local artifacts Supported by Batch 137 local source artifacts for Philippine Design Identity Spectrum: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md#sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md#sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md#sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md#sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b"
+  },
+  "batch_question_template_index": 10
+}

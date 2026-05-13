@@ -1,30 +1,30 @@
 {
   "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6e6c24066de90c81e6cfce5bda6618a359feff802d8ee47b81be2ae6041e62b2",
+  "linked_questions_hash": "sha256:60a7b257935898374a55e41ee484db2ea475011d1a20b9c5487abb2b0847fd5c",
   "question_count": 10,
   "questions": [
     {
       "question_id": "dc14199f-7cd0-4f51-bf06-7d4b977ea6c4",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "How should contemporary Filipino architects balance aspiration for international recognition (Pritzker Prize, global publications) with commitment to distinctively Filipino identity grounded in local values and vernacular traditions?",
+      "text": "What is the safest Batch 137 reading of Filipino architectural identity?",
       "options": [
         {
           "id": "a",
-          "text": "Pursuing international recognition necessarily requires abandoning cultural identity; choose one or the other, as they are mutually exclusive"
+          "text": "Copying a visible motif while ignoring climate, use, materials, and local conditions"
         },
         {
           "id": "b",
-          "text": "International recognition and local identity are unrelated; architects should focus on technical excellence regardless of cultural grounding, as this is the primary measure of success"
+          "text": "Making global-award, market, digital, or legal claims not captured in the local source artifacts"
         },
         {
           "id": "c",
-          "text": "Genuine cultural specificity, pursued with integrity and rigor, achieves international resonance precisely because it arises from authentic conviction rather than attempting to dissolve difference into generic internationalism"
+          "text": "A layered design judgment that studies Philippine climate, local forms and materials, and historical influences before translating them into present programs"
         },
         {
           "id": "d",
-          "text": "International recognition should be actively rejected; focus exclusively on local practice within Philippines, as this ensures cultural preservation"
+          "text": "A single fixed style that every Philippine building must copy exactly"
         }
       ],
       "correct_option_id": "c",
@@ -33,13 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The examples show this false choice; both recognition and identity are achievable.",
-        "b": "Technical excellence without cultural grounding produces adequate but uninspired architecture; culture and quality are inseparable.",
-        "d": "Rejecting international engagement ignores the reality that ideas circulate globally; Filipino architects benefit from participating in broader conversations.",
-        "correct": "architectural theory (and the broader design culture it describes) demonstrates that Nakpil, Mañosa, and Locsin achieved both local respect and international influence precisely through genuine cultural commitment. Kenneth Cobonpue's rattan furniture gains global acclaim because it represents authentic cultural expression, not exotic styling. Specificity and universality are compatible when rooted in genuine conviction."
+        "a": "Copying a visible motif while ignoring climate, use, materials, and local conditions is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "Making global-award, market, digital, or legal claims not captured in the local source artifacts is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "A layered design judgment that studies Philippine climate, local forms and materials, and historical influences before translating them into present programs This is the source-safe answer for Filipino Architectural Identity.",
+        "d": "A single fixed style that every Philippine building must copy exactly is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "correct": "A layered design judgment that studies Philippine climate, local forms and materials, and historical influences before translating them into present programs This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": "The examples show this false choice; both recognition and identity are achievable. Technical excellence without cultural grounding produces adequate but uninspired architecture; culture and quality are inseparable. Rejecting international engagement ignores the reality that ideas circulate globally; Filipino architects benefit from participating in broader conversations. architectural theory (and the broader design culture it describes) demonstrates that Nakpil, Mañosa, and Locsin achieved both local respect and international influence precisely through genuine cultural commitment. Kenneth Cobonpue's rattan furniture gains global acclaim because it represents authentic cultural expression, not exotic styling. Specificity and universality are compatible when rooted in genuine conviction.",
-      "code_citation": null,
+      "explanation": "A layered design judgment that studies Philippine climate, local forms and materials, and historical influences before translating them into present programs Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -52,30 +55,33 @@
       "model_id": "ale-theo-008-04-q10",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:19.561897+00:00",
-      "content_hash": "sha256:fd18fe596a9a041ad4bb7a394c3162b63d566ffe4606c44cbdb36ee70960ce2b"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:0006cf1039d691224fb83dddb1e1808f977219ac1cd3ae61b60f32b91b68a8b5",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "5cc84913-5c62-4492-812f-b50d88c202a9",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "states that the future of Filipino architectural identity involves integrating climate crisis, digital tools, global supply chains, and rapid urbanization. How should emerging architects understand their role in this evolving conversation?",
+      "text": "Why does the bahay kubo matter in this article?",
       "options": [
         {
           "id": "a",
-          "text": "Identity conversation is concluded; contemporary architects should focus purely on technical solutions to current problems, ignoring cultural and historical contexts"
+          "text": "It proves every new building must be a literal nipa hut"
         },
         {
           "id": "b",
-          "text": "Emerging architects should abandon all reference to tradition and adopt whatever global trends are fashionable, regardless of local relevance or sustainability"
+          "text": "It removes the need for current safety and program checks"
         },
         {
           "id": "c",
-          "text": "Emerging architects should creatively engage established identity principles while responding to contemporary conditions, asking how tradition, sustainability, digital capability, and cultural values can synthesize to produce distinctively Filipino solutions to new challenges"
+          "text": "It records climate-responsive lessons such as raised living, high roof form, wide overhangs, large openings, cross ventilation, and local materials"
         },
         {
           "id": "d",
-          "text": "Emerging architects should simply follow established precedents from Nakpil, Mañosa, and Locsin without modification, adhering strictly to past methodologies"
+          "text": "Making global-award, market, digital, or legal claims not captured in the local source artifacts"
         }
       ],
       "correct_option_id": "c",
@@ -84,13 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Technical problem-solving without cultural grounding risks disconnection from what makes Filipino architecture distinctive.",
-        "b": "Fashion-following would erase the conversations previous architects established.",
-        "d": "Simple replication would be cultural stasis, not authentic identity.",
-        "correct": "Identity as 'ongoing conversation,' not concluded project. Emerging architects inherit the foundation (Nakpil's cultural consciousness, Mañosa's material integrity, Locsin's synthesis) but must ask new questions: Can digital architecture be Filipino? How do indigenous materials sustain under climate pressure? This creative extension is their professional responsibility."
+        "a": "It proves every new building must be a literal nipa hut is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "It removes the need for current safety and program checks is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "It records climate-responsive lessons such as raised living, high roof form, wide overhangs, large openings, cross ventilation, and local materials This is the source-safe answer for Filipino Architectural Identity.",
+        "d": "Making global-award, market, digital, or legal claims not captured in the local source artifacts is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "correct": "It records climate-responsive lessons such as raised living, high roof form, wide overhangs, large openings, cross ventilation, and local materials This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": "Technical problem-solving without cultural grounding risks disconnection from what makes Filipino architecture distinctive. Fashion-following would erase the conversations previous architects established. Simple replication would be cultural stasis, not authentic identity. Identity as 'ongoing conversation,' not concluded project. Emerging architects inherit the foundation (Nakpil's cultural consciousness, Mañosa's material integrity, Locsin's synthesis) but must ask new questions: Can digital architecture be Filipino? How do indigenous materials sustain under climate pressure? This creative extension is their professional responsibility.",
-      "code_citation": null,
+      "explanation": "It records climate-responsive lessons such as raised living, high roof form, wide overhangs, large openings, cross ventilation, and local materials Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -103,30 +112,33 @@
       "model_id": "ale-theo-008-04-q09",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:19.982263+00:00",
-      "content_hash": "sha256:7e25a235258f6cc5787ca73b224418f4bba11201620ad6510a81fbc01a7a5ccf"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:d7ede78176dcfe5e126ed0f452288107df99c69ca8df21dd8ef75a6349d05364",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "ac98daa2-80de-4ac2-b9d7-a6e886fcaa16",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "What is the bahay kubo, and why is it significant in Filipino architectural identity?",
+      "text": "How should Francisco Manosa and native materials be used in the source-safe boundary?",
       "options": [
         {
           "id": "a",
-          "text": "An urban housing project built by the government, aimed at providing affordable housing solutions"
+          "text": "As a license to paste bamboo texture on any facade"
         },
         {
           "id": "b",
-          "text": "A modern apartment building style developed in the 1960s, reflecting the architectural trends of that era"
+          "text": "As proof that imported methods can never be used"
         },
         {
           "id": "c",
-          "text": "A Spanish colonial house type used only for historical preservation, representing the colonial past of the Philippines"
+          "text": "As a global branding claim not present in the sources"
         },
         {
           "id": "d",
-          "text": "The traditional nipa hut characterized by elevated structure, deep overhangs, natural ventilation, and local materials; it became a design reference point for contemporary Filipino architects seeking cultural grounding"
+          "text": "As evidence that native forms and materials can inform distinct Filipino architecture when adapted critically to current needs"
         }
       ],
       "correct_option_id": "d",
@@ -135,13 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Bahay kubo is not a modern government program; it's traditional architecture.",
-        "b": "Bahay kubo is traditional vernacular, not modern apartment type.",
-        "c": "While preserved historically, its significance is conceptual for contemporary design.",
-        "correct": "The bahay kubo is a centuries-old vernacular form that contemporary Filipino architects reference for design principles: elevation for ventilation, deep overhangs managing tropical weather, responsive materials. It's not about literal copying but extracting principles applicable to modern design."
+        "a": "As a license to paste bamboo texture on any facade is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "As proof that imported methods can never be used is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "As a global branding claim not present in the sources is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "d": "As evidence that native forms and materials can inform distinct Filipino architecture when adapted critically to current needs This is the source-safe answer for Filipino Architectural Identity.",
+        "correct": "As evidence that native forms and materials can inform distinct Filipino architecture when adapted critically to current needs This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": "Bahay kubo is not a modern government program; it's traditional architecture. Bahay kubo is traditional vernacular, not modern apartment type. While preserved historically, its significance is conceptual for contemporary design. The bahay kubo is a centuries-old vernacular form that contemporary Filipino architects reference for design principles: elevation for ventilation, deep overhangs managing tropical weather, responsive materials. It's not about literal copying but extracting principles applicable to modern design.",
-      "code_citation": null,
+      "explanation": "As evidence that native forms and materials can inform distinct Filipino architecture when adapted critically to current needs Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -154,30 +169,33 @@
       "model_id": "ale-theo-008-04-q03",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:20.116747+00:00",
-      "content_hash": "sha256:195f36c43e312ff06d86664c9ed0191f8162574dc22a1788fa29610deecf8377"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:3cd7da6f3aff1f09dcf165c5af544c97ec5b74f925c19485667cb5a486b488c2",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "e08706ec-8742-4aef-845d-c92b86eabeb3",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "A contemporary Filipino architect is designing a residential complex using bamboo for primary structural elements, referencing bahay kubo principles for ventilation and spatial organization, and digital parametric tools to optimize structural geometry. From the perspective of the ongoing identity conversation, is this approach coherent with established Filipino architectural values?",
+      "text": "Which claim is outside the Batch 137 source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, but only if no digital tools are used; technology and tradition are incompatible, which is a debated perspective"
+          "text": "Filipino architecture includes layered cultural influences"
         },
         {
           "id": "b",
-          "text": "No; using digital tools violates traditional Filipino principles and represents cultural selling-out, according to some purists"
+          "text": "Tropical openness and lightness can be part of local character"
         },
         {
           "id": "c",
-          "text": "Yes; this demonstrates evolutionary engagement with tradition—maintaining material and spatial principles while adopting contemporary tools that enable innovation and precision not available to earlier architects"
+          "text": "A statement that Filipino identity is proven by global product awards, export markets, or digital fabrication claims not captured locally"
         },
         {
           "id": "d",
-          "text": "No; bahay kubo reference is superficial unless the building looks identical to traditional structures, which is a narrow interpretation"
+          "text": "Bahay na bato and bahay kubo can inform climate response"
         }
       ],
       "correct_option_id": "c",
@@ -186,13 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Tradition and digital tools are not inherently opposed; their integration can be generative.",
-        "b": "Digital tools are neutral; their appropriateness depends on how they serve design goals.",
-        "d": "Abstraction of principles, not literal copying; cultural authenticity doesn't require visual replication.",
-        "correct": "Filipino identity as dynamic and evolving, not static. Using bamboo and bahay kubo principles while leveraging parametric tools for optimization represents creative synthesis—maintaining cultural roots while responding to contemporary possibilities. This is continuation of the identity conversation, not betrayal of it."
+        "a": "Filipino architecture includes layered cultural influences is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "Tropical openness and lightness can be part of local character is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "A statement that Filipino identity is proven by global product awards, export markets, or digital fabrication claims not captured locally This is the source-safe answer for Filipino Architectural Identity.",
+        "d": "Bahay na bato and bahay kubo can inform climate response is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "correct": "A statement that Filipino identity is proven by global product awards, export markets, or digital fabrication claims not captured locally This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": "Tradition and digital tools are not inherently opposed; their integration can be generative. Digital tools are neutral; their appropriateness depends on how they serve design goals. Abstraction of principles, not literal copying; cultural authenticity doesn't require visual replication. Filipino identity as dynamic and evolving, not static. Using bamboo and bahay kubo principles while leveraging parametric tools for optimization represents creative synthesis—maintaining cultural roots while responding to contemporary possibilities. This is continuation of the identity conversation, not betrayal of it.",
-      "code_citation": null,
+      "explanation": "A statement that Filipino identity is proven by global product awards, export markets, or digital fabrication claims not captured locally Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -205,30 +226,33 @@
       "model_id": "ale-theo-008-04-q06",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:20.25785+00:00",
-      "content_hash": "sha256:b4385c9dba9af92f0407bdf3419e82c7d54465ee782dfd7c1e9f34fe03949f5f"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:3e4ae6393c87569dfec6d0bc4adfd825c970cb145ae7e76cc9eb59bd6bd48ed3",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "ff7f3d74-8d05-4ac8-863f-560ebd7a978f",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "What is the distinction between Nakpil's and Locsin's approaches to establishing Filipino architectural identity?",
+      "text": "Which design move is tokenism rather than Filipino architectural identity?",
       "options": [
         {
           "id": "a",
-          "text": "Both architects used identical approaches; differences are minimal, focusing on the integration of local and international styles."
+          "text": "Adapting wide eaves and shaded openings for a civic hall"
         },
         {
           "id": "b",
-          "text": "Locsin rejected Filipino identity; his work was purely Western, devoid of any local cultural influences."
+          "text": "Studying local community use before shaping shared space"
         },
         {
           "id": "c",
-          "text": "Nakpil used only traditional materials; Locsin used modern materials exclusively, reflecting their differing philosophies on materiality."
+          "text": "Using local material vocabulary with current performance checks"
         },
         {
           "id": "d",
-          "text": "Nakpil engaged Philippine vernacular tradition explicitly; Locsin pursued modernist synthesis of oriental and occidental traditions without direct traditional reference"
+          "text": "Adding native-looking cladding to a sealed hot building while ignoring orientation, ventilation, use, and local material logic"
         }
       ],
       "correct_option_id": "d",
@@ -237,13 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Their philosophies differ significantly; this distinction matters for understanding Filipino architecture.",
-        "b": "Locsin's work is modernist but distinctively Filipino; not Western derivative.",
-        "c": "Neither confined themselves to single material approach.",
-        "correct": "Nakpil's dignified formalism was grounded in cultural consciousness; Locsin believed Filipino identity emerged as synthesis of oriental and occidental traditions, expressed through modernist formal language. Both are valid; they represent different yet legitimate approaches to the same identity project."
+        "a": "Adapting wide eaves and shaded openings for a civic hall is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "Studying local community use before shaping shared space is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "Using local material vocabulary with current performance checks is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "d": "Adding native-looking cladding to a sealed hot building while ignoring orientation, ventilation, use, and local material logic This is the source-safe answer for Filipino Architectural Identity.",
+        "correct": "Adding native-looking cladding to a sealed hot building while ignoring orientation, ventilation, use, and local material logic This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Adding native-looking cladding to a sealed hot building while ignoring orientation, ventilation, use, and local material logic Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -256,30 +283,33 @@
       "model_id": "ale-theo-008-04-q05",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a7727aff100fb5046271eda9ea374babbaae0f6daec715ffc614cd53d75a2f32"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:da0172c28d981a12642c9ae460a658d709478d85c3104e221b2f4081d46279cf",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "529ca027-334a-41b7-af33-884619204eee",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "Who is acknowledged as the father of Philippine architecture and the first National Artist for Architecture?",
+      "text": "In the provincial civic center scenario, what should the designer do first?",
       "options": [
         {
           "id": "a",
-          "text": "Pablo Antonio (1952)"
+          "text": "Choose a motif first and force the program to fit it"
         },
         {
           "id": "b",
-          "text": "Juan Nakpil (1973)"
+          "text": "Study climate response, community use, and local form or material lessons before deciding which identity cues belong in the design"
         },
         {
           "id": "c",
-          "text": "Leandro Locsin (1990)"
+          "text": "Claim international identity without a local source"
         },
         {
           "id": "d",
-          "text": "Francisco Mañosa (1968)"
+          "text": "Ignore bahay kubo and bahay na bato because the building is modern"
         }
       ],
       "correct_option_id": "b",
@@ -288,13 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Pablo Antonio was an important Art Deco pioneer but not first National Artist for Architecture.",
-        "c": "Locsin (National Artist 1990) represented modernist synthesis approach.",
-        "d": "Mañosa (National Artist) came later and represented materials approach.",
-        "correct": "Juan Nakpil, named first National Artist for Architecture in 1973, founded the project of establishing distinctively Filipino architectural identity. His prolific output (200 buildings) demonstrated that Filipino identity could sustain an entire career."
+        "a": "Choose a motif first and force the program to fit it is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "Study climate response, community use, and local form or material lessons before deciding which identity cues belong in the design This is the source-safe answer for Filipino Architectural Identity.",
+        "c": "Claim international identity without a local source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "d": "Ignore bahay kubo and bahay na bato because the building is modern is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "correct": "Study climate response, community use, and local form or material lessons before deciding which identity cues belong in the design This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": "Pablo Antonio was an important Art Deco pioneer but not first National Artist for Architecture. Locsin (National Artist 1990) represented modernist synthesis approach. Mañosa (National Artist) came later and represented materials approach. Juan Nakpil, named first National Artist for Architecture in 1973, founded the project of establishing distinctively Filipino architectural identity. His prolific output (200 buildings) demonstrated that Filipino identity could sustain an entire career.",
-      "code_citation": null,
+      "explanation": "Study climate response, community use, and local form or material lessons before deciding which identity cues belong in the design Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -307,30 +340,33 @@
       "model_id": "ale-theo-008-04-q01",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:19.709451+00:00",
-      "content_hash": "sha256:b495056fe90094a2483213b242af3dc8f18b746468997625192a9e97f442f53c"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:dc2453bd2f82b2241f864badcdcf46a1c3e308a59f9b37ea3f890458f1e706f1",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "68dd059c-bbbb-4abe-befd-a68b8bd4e014",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "Which architect is most associated with championing indigenous materials (bamboo, rattan, abaca, coconut) as structural and expressive design elements?",
+      "text": "How should colonial and modern examples inform identity?",
       "options": [
         {
           "id": "a",
-          "text": "Leandro Locsin, known for his modernist approach and use of concrete"
+          "text": "As proof that identity has no local climate dimension"
         },
         {
           "id": "b",
-          "text": "Tomas Mapua, a pioneer in Philippine architecture with a focus on colonial styles"
+          "text": "As a command to replicate one historic facade everywhere"
         },
         {
           "id": "c",
-          "text": "Francisco Mañosa"
+          "text": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy"
         },
         {
           "id": "d",
-          "text": "Juan Nakpil, recognized for his contributions to Philippine heritage architecture"
+          "text": "As evidence for unsourced digital-architecture claims"
         }
       ],
       "correct_option_id": "c",
@@ -339,13 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Locsin pursued modernist synthesis; material specificity was secondary to formal language.",
-        "b": "Mapua was first licensed Filipino architect, not primarily known for materials advocacy.",
-        "d": "Nakpil established identity through formalism and cultural consciousness, not material advocacy.",
-        "correct": "Francisco Mañosa's philosophy was 'I design Filipino, nothing else.' He used indigenous materials not decoratively but structurally, in works like the Coconut Palace and Amanpulo Resort. This approach demonstrated that cultural authenticity could achieve international acclaim."
+        "a": "As proof that identity has no local climate dimension is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "As a command to replicate one historic facade everywhere is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy This is the source-safe answer for Filipino Architectural Identity.",
+        "d": "As evidence for unsourced digital-architecture claims is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "correct": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": "Locsin pursued modernist synthesis; material specificity was secondary to formal language. Mapua was first licensed Filipino architect, not primarily known for materials advocacy. Nakpil established identity through formalism and cultural consciousness, not material advocacy. Francisco Mañosa's philosophy was 'I design Filipino, nothing else.' He used indigenous materials not decoratively but structurally, in works like the Coconut Palace and Amanpulo Resort. This approach demonstrated that cultural authenticity could achieve international acclaim.",
-      "code_citation": null,
+      "explanation": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -358,30 +397,33 @@
       "model_id": "ale-theo-008-04-q04",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:19.843818+00:00",
-      "content_hash": "sha256:487887e574bcf890c1d50d499fe82d60883b696564cd1c70ca22f92c9ee46e88"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:48b3236f49581558c3b9a5af73f8f3104d574a10c821a854f634d54e73fca648",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "f1568d63-148e-4440-b7c7-80ee5d9590b6",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "A Filipino architect argues that authentic national identity requires exclusive use of indigenous materials and traditional formal references. How should this position be evaluated from the perspective of discussion of Filipino architectural identity?",
+      "text": "Why is generic internationalism a weak answer here?",
       "options": [
         {
           "id": "a",
-          "text": "This position is too narrow; history demonstrates that Filipino identity has never been monolithic, with Nakpil, Mañosa, and Locsin representing distinct yet legitimate approaches, all worthy of respect"
+          "text": "It can erase local conditions, while the local sources support climate response, open tropical character, native material lessons, and layered history"
         },
         {
           "id": "b",
-          "text": "This position is correct; cultural authenticity requires material and formal constraints, ensuring that architecture remains true to its roots and reflects the nation's heritage"
+          "text": "Because all global construction methods are forbidden"
         },
         {
           "id": "c",
-          "text": "This position is correct only for residential architecture; commercial work can ignore cultural identity, as it often prioritizes functionality and economic considerations over cultural expression"
+          "text": "Because Filipino identity is only old ornament"
         },
         {
           "id": "d",
-          "text": "This position is outdated; Filipino architecture should completely abandon tradition in favor of global modernism, embracing international styles and technologies to remain competitive"
+          "text": "Because modern Philippine examples should be ignored"
         }
       ],
       "correct_option_id": "a",
@@ -390,13 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Authenticity operates at level of principle and commitment, not material prescription.",
-        "c": "The identity conversation applies across building types.",
-        "d": "This represents the false choice architectural theory rejects; both tradition and innovation can coexist.",
-        "correct": "Filipino architectural identity has been contested terrain with multiple legitimate approaches. Requiring a single material or formal approach would erase the plurality that makes Filipino architecture vital. The question 'What is Filipino architecture?' has always had multiple defensible answers."
+        "a": "It can erase local conditions, while the local sources support climate response, open tropical character, native material lessons, and layered history This is the source-safe answer for Filipino Architectural Identity.",
+        "b": "Because all global construction methods are forbidden is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "Because Filipino identity is only old ornament is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "d": "Because modern Philippine examples should be ignored is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "correct": "It can erase local conditions, while the local sources support climate response, open tropical character, native material lessons, and layered history This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It can erase local conditions, while the local sources support climate response, open tropical character, native material lessons, and layered history Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -409,30 +454,33 @@
       "model_id": "ale-theo-008-04-q07",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0c37dcff989dd35b68fc0b2bbf3324d997aa4e0749b793623b808a9c476bb9e4"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:7bf4186140a5fd44125fc418070e59ac9a85b1ba16eea25c97ccccf7ea073627",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "f6489584-a0d5-4e79-b617-527ca0ff3211",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "Lor Calma (1928–2008) represented multidisciplinary modernism across architecture, interiors, and furniture. Why is his work significant...or understanding Filipino architectural identity beyond buildings themselves?",
+      "text": "What is the LEA takeaway from Filipino architectural identity?",
       "options": [
         {
           "id": "a",
-          "text": "Calma's work proves that Filipino identity is irrelevant; modernism eliminates cultural specificity, focusing instead on universal design principles"
+          "text": "Memorize one decorative look and apply it to every project"
         },
         {
           "id": "b",
-          "text": "Calma demonstrates that Filipino design identity operates at multiple scales and disciplines, united by consistent sensibility (clean lines, local materials, functional clarity) that transcends individual building types"
+          "text": "Identify the local intelligence behind climate, material, form, community use, and historical layer, then translate it carefully"
         },
         {
           "id": "c",
-          "text": "Calma's longevity shows that once an architect establishes identity, no change is necessary across fifty years, maintaining a consistent design language"
+          "text": "Treat identity as a market slogan without source support"
         },
         {
           "id": "d",
-          "text": "His multidisciplinary work is less important than his architecture; design scale hierarchy should privilege buildings over other forms of design expression"
+          "text": "Avoid function because identity is only symbolic"
         }
       ],
       "correct_option_id": "b",
@@ -441,13 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Modernism is compatible with cultural specificity when pursued with genuine conviction.",
-        "c": "Calma's influence extended through evolutionary development, not static repetition; the identity conversation continued across his career.",
-        "d": "Design identity operates across scales; furniture and interiors are equally legitimate expressions of Filipino values.",
-        "correct": "Calma's significance is demonstrating that Filipino identity is coherent across scales and disciplines. Consistent principles (modernist clarity, material responsiveness, functional integrity) apply whether designing buildings, interiors, or furniture. This shows identity is philosophical orientation, not superficial material choice or formal style."
+        "a": "Memorize one decorative look and apply it to every project is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "Identify the local intelligence behind climate, material, form, community use, and historical layer, then translate it carefully This is the source-safe answer for Filipino Architectural Identity.",
+        "c": "Treat identity as a market slogan without source support is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "d": "Avoid function because identity is only symbolic is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "correct": "Identify the local intelligence behind climate, material, form, community use, and historical layer, then translate it carefully This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": "Modernism is compatible with cultural specificity when pursued with genuine conviction. Calma's influence extended through evolutionary development, not static repetition; the identity conversation continued across his career. Design identity operates across scales; furniture and interiors are equally legitimate expressions of Filipino values. Calma's significance is demonstrating that Filipino identity is coherent across scales and disciplines. Consistent principles (modernist clarity, material responsiveness, functional integrity) apply whether designing buildings, interiors, or furniture. This shows identity is philosophical orientation, not superficial material choice or formal style.",
-      "code_citation": null,
+      "explanation": "Identify the local intelligence behind climate, material, form, community use, and historical layer, then translate it carefully Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -460,30 +511,33 @@
       "model_id": "ale-theo-008-04-q08",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:09:20.393336+00:00",
-      "content_hash": "sha256:40ae4aca50ccbc04af8780fdabafe6dcbe500382018094d9e2fc78a26ab12263"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:4af4560980d5a3c9662d515cff7c9166264e56ce6d2b6f9982402b8b491d8aac",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     },
     {
       "question_id": "f869900e-f50f-4c1d-99c9-6f165eab6220",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "What is the 'filipinization' movement in architecture?",
+      "text": "Which statement best preserves the Batch 137 source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "A government mandate requiring all buildings to use indigenous materials exclusively, regardless of the building's function or location"
+          "text": "Use any famous Filipino design claim without checking the local artifact"
         },
         {
           "id": "b",
-          "text": "The practice of hiring Filipino workers on international architectural projects, ensuring that at least 50% of the workforce is of Filipino descent"
+          "text": "Replace source locators with personal preference"
         },
         {
           "id": "c",
-          "text": "A marketing strategy for selling Philippine architectural services internationally, focusing on the unique cultural and historical aspects of Filipino design"
+          "text": "Treat a single material as automatic identity"
         },
         {
           "id": "d",
-          "text": "The 1970s shift toward explicit engagement with traditional Philippine forms and indigenous materials, moving beyond superficial cultural reference toward substantive design grounding"
+          "text": "Use the captured Filipino Architecture, TOA 4, and Theory Reviewer claims; avoid unsourced awards, global market, digital, and legal claims"
         }
       ],
       "correct_option_id": "d",
@@ -492,13 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "No such mandate exists; filipinization is cultural movement, not regulation.",
-        "b": "Employment practices are unrelated to filipinization movement.",
-        "c": "Filipinization is authentic cultural project, not commercial strategy.",
-        "correct": "Filipinization (1970s) represented architects moving from importing foreign styles to genuinely engaging Philippine tradition. Rather than copying forms literally, forward-looking architects abstracted principles from bahay kubo and bahay na bato, creating contemporary buildings rooted in culture."
+        "a": "Use any famous Filipino design claim without checking the local artifact is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "b": "Replace source locators with personal preference is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "c": "Treat a single material as automatic identity is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+        "d": "Use the captured Filipino Architecture, TOA 4, and Theory Reviewer claims; avoid unsourced awards, global market, digital, and legal claims This is the source-safe answer for Filipino Architectural Identity.",
+        "correct": "Use the captured Filipino Architecture, TOA 4, and Theory Reviewer claims; avoid unsourced awards, global market, digital, and legal claims This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Use the captured Filipino Architecture, TOA 4, and Theory Reviewer claims; avoid unsourced awards, global market, digital, and legal claims Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -511,8 +568,11 @@
       "model_id": "ale-theo-008-04-q02",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b9663562ee3c69c6c6a574026013719d1568a1a44cf1a9b85a20e4b9bbfd33ea"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:8c3b37175464b7a765033def8fdcddbaaa09a002c029ca4df739545950edc8b3",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+      "source_notes": "Batch 137 grounds Filipino architectural identity in checked local sources: layered historical influence, tropical open character, bahay kubo and bahay na bato climate lessons, Manosa native forms and materials, and modern Philippine examples."
     }
   ]
 }

@@ -1,32 +1,104 @@
 {
   "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:5c9ab1203634d1463931d87970874cc620a02dac90146aed42bc216dd475c2e5",
+  "sources_hash": "sha256:3ba84e61013582438919b4e0cc794e2c1cccb2adea3fbd60d9be94c676df9751",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "design-process-programming-b075",
+      "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
-      "label": "Design Process",
+      "label": "Batch 137 raw source capture - Bubble Diagrams and Adjacency Thinking",
       "url": null,
-      "source_type": "primary_course_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-075-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf; raw_pdf_sha256=sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md; refined_markdown_sha256=sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80; checked_locator=Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction",
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Bubble Diagrams and Adjacency Thinking; includes checked local source family hashes and refined conversion locators.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-12T02:55:00.000+08:00",
-      "updated_at": "2026-05-12T02:55:00.000+08:00"
+      "created_at": "2026-05-13T23:38:36.673Z",
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md",
+      "local_sha256": "sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55",
+      "checked_markdown_lines": [
+        "Theory Lecture lines 129-132: The program can list spaces, descriptions, dimensions, a space interrelationship matrix, and a bubble diagram.",
+        "Design Process lines 200-214: Concepts organize relationships among form, material, texture, color, and adjacency; a concept statement may use a single diagram and a few words.",
+        "TOA 3 (Design Perception) lines 51-56: The local design-perception source defines basic space relationships: within, interlocking, adjacent, and linked by a common space.",
+        "TOA 3 (Design Perception) lines 60-104: Adjacent spaces remain individually defined and can respond to functional or symbolic requirements.",
+        "TOA 3 (Design Perception) lines 152-164: Centralized organization and circulation around a dominant central space support diagrammatic organization thinking."
+      ],
+      "local_source_families": [
+        {
+          "label": "Theory Lecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+        },
+        {
+          "label": "Design Process",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+          "rawHash": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+          "refinedHash": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80"
+        },
+        {
+          "label": "TOA 3 (Design Perception)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+          "rawHash": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+          "refinedHash": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 137 source capture/refined conversion boundary."
     },
     {
-      "source_id": "ra9266-irr-architecture-act-b075",
+      "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
-      "label": "RA 9266 IRR - Architecture Act of 2004",
+      "label": "Batch 137 refined source conversion - Bubble Diagrams and Adjacency Thinking",
       "url": null,
-      "source_type": "primary_law_irr_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-075-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf; raw_pdf_sha256=sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md; refined_markdown_sha256=sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0; checked_locator=RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction",
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Bubble Diagrams and Adjacency Thinking.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-12T02:55:00.000+08:00",
-      "updated_at": "2026-05-12T02:55:00.000+08:00"
+      "created_at": "2026-05-13T23:38:36.673Z",
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md",
+      "local_sha256": "sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55",
+      "checked_markdown_lines": [
+        "Theory Lecture lines 129-132: The program can list spaces, descriptions, dimensions, a space interrelationship matrix, and a bubble diagram.",
+        "Design Process lines 200-214: Concepts organize relationships among form, material, texture, color, and adjacency; a concept statement may use a single diagram and a few words.",
+        "TOA 3 (Design Perception) lines 51-56: The local design-perception source defines basic space relationships: within, interlocking, adjacent, and linked by a common space.",
+        "TOA 3 (Design Perception) lines 60-104: Adjacent spaces remain individually defined and can respond to functional or symbolic requirements.",
+        "TOA 3 (Design Perception) lines 152-164: Centralized organization and circulation around a dominant central space support diagrammatic organization thinking."
+      ],
+      "local_source_families": [
+        {
+          "label": "Theory Lecture",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "rawHash": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refinedHash": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
+        },
+        {
+          "label": "Design Process",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+          "rawHash": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+          "refinedHash": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80"
+        },
+        {
+          "label": "TOA 3 (Design Perception)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+          "rawHash": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+          "refinedHash": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

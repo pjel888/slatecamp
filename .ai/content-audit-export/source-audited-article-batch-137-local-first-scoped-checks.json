@@ -1,0 +1,664 @@
+{
+  "batch_id": "source-audited-article-batch-137-local-first",
+  "generated_at": "2026-05-13T23:40:36.125Z",
+  "status": "passed_local_validation_git_handoff_pending",
+  "passed": true,
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/sync-state.json",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "selection": {
+    "selected_clusters": [
+      "lea-theo-008-04",
+      "lea-theo-008-08",
+      "lea-theo-009-01",
+      "lea-theo-009-02",
+      "lea-theo-009-03"
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-008-02",
+        "title": "Spatial Justice",
+        "reason": "Blocked for Batch 137 because the checked local source layer did not safely support Edward Soja, spatial justice, displacement, participatory planning, co-design, or equity framework claims.",
+        "next_action": "Source an authoritative spatial justice or participatory planning reference before rewriting."
+      },
+      {
+        "cluster_id": "lea-theo-008-03",
+        "title": "Digital Architecture",
+        "reason": "Blocked for Batch 137 because the checked local source layer did not safely support AI, BIM, VR, computational workflow, parametric practice, or fabrication claims.",
+        "next_action": "Source a current authoritative digital architecture, BIM, or computational design reference before rewriting."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Selected the next sourceable residual Theory clusters after Batch 136 stopped at lea-theo-007-14. lea-theo-008-02 and lea-theo-008-03 were blocked for local-source gaps; selected lea-theo-008-04, 008-08, 009-01, 009-02, and 009-03."
+  },
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+        "slug": "lea-theo-008-04-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
+        "slug": "lea-theo-008-08-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "slug": "lea-theo-009-01-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+        "slug": "lea-theo-009-02-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+        "slug": "lea-theo-009-03-core-concept",
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+        "slug": "lea-theo-008-04-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
+        "slug": "lea-theo-008-08-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "slug": "lea-theo-009-01-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+        "slug": "lea-theo-009-02-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+        "slug": "lea-theo-009-03-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "parsed_count": 102,
+    "failures": []
+  },
+  "marker_source_gap_scan": {
+    "passed": true,
+    "scanned_count": 75,
+    "matches": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md",
+        "expected": "sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac",
+        "actual": "sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "expected": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "actual": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture:raw:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "expected": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "actual": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture:refined:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "expected": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "actual": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture:raw:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "expected": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "actual": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture:refined:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md",
+        "expected": "sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+        "actual": "sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "expected": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "actual": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map:raw:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "expected": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "actual": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map:refined:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "expected": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "actual": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map:raw:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "expected": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "actual": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map:refined:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-08-core-concept.source-capture.md",
+        "expected": "sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e",
+        "actual": "sha256:9ffc8281411011a1cd942a19728b23162b97c9f53fbba2eb35b530482206aa5e",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "expected": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "actual": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture:raw:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "expected": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "actual": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture:refined:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "expected": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "actual": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture:raw:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "expected": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "actual": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-raw-source-capture:refined:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-08-core-concept.refined.md",
+        "expected": "sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b",
+        "actual": "sha256:e2cb0f2927fc96aef5365f1c7bb8cc816642c637d93b147644bcd90115fef31b",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "expected": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "actual": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map:raw:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "expected": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "actual": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map:refined:Filipino Architecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map:raw:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map:refined:TOA 4 (Tropical Architecture)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "expected": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "actual": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map:raw:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "expected": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "actual": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-008-08-core-concept-refined-source-map:refined:Theory of Architecture Reviewer"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-01-core-concept.source-capture.md",
+        "expected": "sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82",
+        "actual": "sha256:1ec0249b5613996af9132cf939c61f67070fb8fa672c98d6657b00ea7c646e82",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-raw-source-capture:raw:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-raw-source-capture:refined:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-raw-source-capture:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-raw-source-capture:refined:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-01-core-concept.refined.md",
+        "expected": "sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+        "actual": "sha256:7745337141d313d28df9262a2c1c8e622c30da552f9e3c1370e4c4ef3532a381",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-refined-source-map:raw:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-refined-source-map:refined:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-refined-source-map:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-01-core-concept-refined-source-map:refined:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md",
+        "expected": "sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55",
+        "actual": "sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture:refined:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture:raw:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture:refined:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "expected": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "actual": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture:raw:TOA 3 (Design Perception)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "expected": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "actual": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture:refined:TOA 3 (Design Perception)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md",
+        "expected": "sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+        "actual": "sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map:refined:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map:raw:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map:refined:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "expected": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "actual": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map:raw:TOA 3 (Design Perception)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "expected": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "actual": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map:refined:TOA 3 (Design Perception)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-03-core-concept.source-capture.md",
+        "expected": "sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825",
+        "actual": "sha256:49d3b2bf16bfe620d7ae71aa11e508e8bf97264610724dd4130f3b9ca5347825",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-raw-source-capture"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-raw-source-capture:raw:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-raw-source-capture:refined:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+        "expected": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+        "actual": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-raw-source-capture:raw:TOA 2 (Elements + Principles)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+        "expected": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+        "actual": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-raw-source-capture:refined:TOA 2 (Elements + Principles)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-raw-source-capture:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-raw-source-capture:refined:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-03-core-concept.refined.md",
+        "expected": "sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+        "actual": "sha256:7b553909e845057e1b94dbc7dfbc56ae41f224ace592834a49bc26f56e9c7950",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-refined-source-map"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-refined-source-map:raw:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-refined-source-map:refined:Design Process"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 2 (Elements + Principles).pdf",
+        "expected": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+        "actual": "sha256:533f8bda6e07b9663fc568fa35290e49c36fc1f2e2b22a34884b3bf12f919201",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-refined-source-map:raw:TOA 2 (Elements + Principles)"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 2 (Elements + Principles).md",
+        "expected": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+        "actual": "sha256:282971993d7b6a6eddf6a05a4d80a20061adac2eec981f99655617a4ce028878",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-refined-source-map:refined:TOA 2 (Elements + Principles)"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "expected": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "actual": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-refined-source-map:raw:Theory Lecture"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "expected": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "actual": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "passed": true,
+        "source_id": "batch-137-lea-theo-009-03-core-concept-refined-source-map:refined:Theory Lecture"
+      }
+    ]
+  },
+  "question_edit_count": {
+    "passed": true,
+    "expected": 50,
+    "actual": 50,
+    "answer_key_changes": 0,
+    "articles": [
+      {
+        "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+        "slug": "lea-theo-008-04-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "cc009103-96bb-4852-85c9-9067a4359336",
+        "slug": "lea-theo-008-08-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "slug": "lea-theo-009-01-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+        "slug": "lea-theo-009-02-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      },
+      {
+        "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+        "slug": "lea-theo-009-03-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "stale_files": []
+  },
+  "targeted_tests": {
+    "passed": true,
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts"
+  },
+  "scoped_git_diff_check": {
+    "passed": true,
+    "command": "git diff --check -- <batch-137-stage-paths>",
+    "output": ""
+  }
+}

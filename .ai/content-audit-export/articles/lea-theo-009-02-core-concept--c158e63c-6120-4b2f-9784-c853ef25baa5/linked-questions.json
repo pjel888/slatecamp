@@ -1,30 +1,30 @@
 {
   "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6d66b783d4ac5d0ade54a2520b9684ea3ab9339053e5908a0c52487422e125c2",
+  "linked_questions_hash": "sha256:1c85b0c79c59b32ca205500e73b46b7603cd15231401c994b396fd0aa79f9a2b",
   "question_count": 10,
   "questions": [
     {
       "question_id": "3a69f754-97b2-47bf-a2d5-65ccdf06b22f",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "A medical clinic program includes examination rooms, treatment room, laboratory, waiting area, reception, and administrative office. In the adjacency matrix, what should the relationship be between the laboratory and the mechanical equipment room?",
+      "text": "What is a bubble diagram in this Batch 137 source-safe article?",
       "options": [
         {
           "id": "a",
-          "text": "D (Desirable) — proximity to mechanical systems can reduce operating costs"
+          "text": "Treating an abstract relationship diagram as a dimensioned construction plan"
         },
         {
           "id": "b",
-          "text": "E (Essential) — laboratory equipment requires direct mechanical system access"
+          "text": "Inventing exact area, code, or efficiency numbers without a captured source"
         },
         {
           "id": "c",
-          "text": "U (Unimportant) — there is no functional relationship between laboratory and mechanical systems"
+          "text": "A finished construction drawing with exact wall thicknesses"
         },
         {
           "id": "d",
-          "text": "X (Undesirable) — mechanical vibration and noise compromise sensitive laboratory work"
+          "text": "An abstract diagram that tests spatial relationships, adjacency, hierarchy, and links before producing a dimensioned plan"
         }
       ],
       "correct_option_id": "d",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Proximity does not reduce costs enough to justify compromising lab performance.",
-        "b": "While lab equipment may connect to building systems, the space itself must be away from mechanical noise/vibration.",
-        "c": "The relationship is significant; it's undesirable rather than unimportant.",
-        "correct": "Vibration from mechanical equipment and noise compromise lab precision work. They must be separated or adequately isolated. This is an undesirable adjacency requiring intentional separation in the design.",
-        "takeaway": "This is an undesirable adjacency requiring intentional separation in the design."
+        "a": "Treating an abstract relationship diagram as a dimensioned construction plan is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "Inventing exact area, code, or efficiency numbers without a captured source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "c": "A finished construction drawing with exact wall thicknesses is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "An abstract diagram that tests spatial relationships, adjacency, hierarchy, and links before producing a dimensioned plan This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "An abstract diagram that tests spatial relationships, adjacency, hierarchy, and links before producing a dimensioned plan This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": "Proximity does not reduce costs enough to justify compromising lab performance. While lab equipment may connect to building systems, the space itself must be away from mechanical noise/vibration. The relationship is significant; it's undesirable rather than unimportant. Vibration from mechanical equipment and noise compromise lab precision work. They must be separated or adequately isolated. This is an undesirable adjacency requiring intentional separation in the design. This is an undesirable adjacency requiring intentional separation in the design.",
-      "code_citation": null,
+      "explanation": "An abstract diagram that tests spatial relationships, adjacency, hierarchy, and links before producing a dimensioned plan Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-009-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T14:43:20.172248+00:00",
-      "content_hash": "sha256:adf6547f433cc121db2c5937d327f1858a60026d52e72234829b6cb3409ef63e"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:830ba45275529d14af14b5bba7e38e11f73b3dbba540c54648ef0cff5a96d22a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "cd4bc609-41ab-46f9-ace4-8932e392655f",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "What critical distinction should an architect maintain when creating a bubble diagram?",
+      "text": "Why does the program mention both a matrix and a bubble diagram?",
       "options": [
         {
           "id": "a",
-          "text": "Bubbles must be drawn to scale so designers can measure exact dimensions from the diagram, ensuring precise planning"
+          "text": "The matrix replaces all design judgment"
         },
         {
           "id": "b",
-          "text": "Bubbles represent spaces but should be abstract; the diagram constrains relationships but does not prescribe architectural form"
+          "text": "The matrix can organize space interrelationships, while the bubble diagram visualizes those relationships for early design thinking"
         },
         {
           "id": "c",
-          "text": "Bubbles should include internal wall layouts and furniture to guide subsequent design decisions, providing a detailed preliminary plan"
+          "text": "The bubble diagram is a legal permit drawing"
         },
         {
           "id": "d",
-          "text": "Bubbles must be circular; other shapes are inappropriate and confuse the design team, leading to potential misinterpretations"
+          "text": "Both are only graphic decoration"
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Bubble diagrams are intentionally not to scale; size indicates approximate area relationship loosely, not precise dimensions.",
-        "c": "Including walls and furniture transforms a bubble diagram into a preliminary design sketch, conflating programming with design.",
-        "d": "Bubbles may be circles, squares, or irregular shapes; shape carries no architectural meaning.",
-        "correct": "Bubble diagrams are abstract analytical tools. They show which spaces must be adjacent and which must be separated, but intentionally avoid prescribing form. The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc.",
-        "takeaway": "The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc."
+        "a": "The matrix replaces all design judgment is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "The matrix can organize space interrelationships, while the bubble diagram visualizes those relationships for early design thinking This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "c": "The bubble diagram is a legal permit drawing is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "Both are only graphic decoration is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "The matrix can organize space interrelationships, while the bubble diagram visualizes those relationships for early design thinking This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": "Bubble diagrams are intentionally not to scale; size indicates approximate area relationship loosely, not precise dimensions. Including walls and furniture transforms a bubble diagram into a preliminary design sketch, conflating programming with design. Bubbles may be circles, squares, or irregular shapes; shape carries no architectural meaning. Bubble diagrams are abstract analytical tools. They show which spaces must be adjacent and which must be separated, but intentionally avoid prescribing form. The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc. The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc.",
-      "code_citation": null,
+      "explanation": "The matrix can organize space interrelationships, while the bubble diagram visualizes those relationships for early design thinking Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-009-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T14:45:50.118995+00:00",
-      "content_hash": "sha256:36fb1e32aa180924418180651bc9ef0ce1bc54190c65c0f327a5f1efef33a1da"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:fa609506d21067feb331034579887d3e32f71f718bbd40e5abcd5fa657176ed2",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "c74e7b54-9d7e-4a3d-adc5-87de989716f3",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "In a hospital program, the nursing station is coded as having an essential (E) adjacency to patient rooms, but the imaging/radiology department is coded as unimportant (U) or undesirable (X) to patient rooms. Which design strategy best respects both relationships?",
+      "text": "What does adjacency mean in the checked spatial-relationship source?",
       "options": [
         {
           "id": "a",
-          "text": "Place all departments in one central location so they are equidistant from patient rooms"
+          "text": "All rooms must merge into one undifferentiated space"
         },
         {
           "id": "b",
-          "text": "Create an open-plan design with nursing station in the center and all functions radiating outward equally"
+          "text": "Adjacent spaces are always separated by a highway-width corridor"
         },
         {
           "id": "c",
-          "text": "Prioritize patient convenience and co-locate all services adjacent to patient rooms regardless of the matrix"
+          "text": "Adjacency is only about color matching"
         },
         {
           "id": "d",
-          "text": "Place patient rooms in a linear hallway with nursing station at the end; locate imaging in a separate wing"
+          "text": "Spaces can be placed next to each other while remaining individually defined and responsive to functional or symbolic requirements"
         }
       ],
       "correct_option_id": "d",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Equidistant placement ignores the difference between essential and undesirable relationships.",
-        "b": "Open-plan does not separate imaging from patients or allow nursing supervision of a defined zone.",
-        "c": "Patient convenience must be balanced against functional requirements; imaging separation is necessary for patient safety and rest.",
-        "correct": "Nursing stations need proximity to observe and access patient areas frequently (essential). Imaging creates noise, vibration, and radiation safety concerns requiring separation from patient rest areas. Linear hallway organization satisfies the first; separate wing satisfies the second.",
-        "takeaway": "Linear hallway organization satisfies the first; separate wing satisfies the second."
+        "a": "All rooms must merge into one undifferentiated space is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "Adjacent spaces are always separated by a highway-width corridor is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "c": "Adjacency is only about color matching is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "Spaces can be placed next to each other while remaining individually defined and responsive to functional or symbolic requirements This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "Spaces can be placed next to each other while remaining individually defined and responsive to functional or symbolic requirements This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": "Equidistant placement ignores the difference between essential and undesirable relationships. Open-plan does not separate imaging from patients or allow nursing supervision of a defined zone. Patient convenience must be balanced against functional requirements; imaging separation is necessary for patient safety and rest. Nursing stations need proximity to observe and access patient areas frequently (essential). Imaging creates noise, vibration, and radiation safety concerns requiring separation from patient rest areas. Linear hallway organization satisfies the first; separate wing satisfies the second. Linear hallway organization satisfies the first; separate wing satisfies the second.",
-      "code_citation": null,
+      "explanation": "Spaces can be placed next to each other while remaining individually defined and responsive to functional or symbolic requirements Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-009-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T14:45:50.60024+00:00",
-      "content_hash": "sha256:4f03a5e7b9869660e648298bce716788faf611bd4cd53c518c56bc48fd19b58e"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:b08f53661de071b4a2a8e70c1ff12f881fcfef1d7d4ee83a8b0659d6156f280f",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "57b1474b-a6e0-4b3e-9fc4-c964a2647828",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "A completed bubble diagram satisfies all essential adjacencies and minimizes undesirable adjacencies. The diagram is presented to the client, who approves it. Does this approval authorize the designer to proceed directly to final design, or should additional steps occur?",
+      "text": "Which relationship type is source-supported?",
       "options": [
         {
           "id": "a",
-          "text": "Additional refinement is needed only if the site constraints make implementation impossible; otherwise the diagram is complete and ready for the next phase"
+          "text": "Any hospital department rule not captured in the local source"
         },
         {
           "id": "b",
-          "text": "The diagram should be validated through review by end users, testing against operational scenarios, and verification that no conflicts remain unresolved"
+          "text": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space"
         },
         {
           "id": "c",
-          "text": "Approval is sufficient; the diagram represents the complete program and design can proceed immediately"
+          "text": "A universal rule that all spaces must be centralized"
         },
         {
           "id": "d",
-          "text": "The diagram represents preliminary thinking; extensive design development and multiple iterations are normal before construction documents, ensuring all client needs are met"
+          "text": "An exact acoustic rating invented for every adjacency"
         }
       ],
       "correct_option_id": "b",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Validation should occur regardless of site constraints; this ensures the program itself is complete and accurate.",
-        "c": "Client approval doesn't eliminate the need for rigorous validation; the diagram may contain latent conflicts.",
-        "d": "Extensive iteration occurs in design; the bubble diagram should be validated and stable before design begins.",
-        "correct": "Client approval is important but not sufficient. The bubble diagram should be tested through user review, operational scenario testing (e.g., patient flow simulation), and verification that all constraints have been adequately addressed. This validation mirrors Step 5 of Problem Seeking (Test the Problem).",
-        "takeaway": "This validation mirrors Step 5 of Problem Seeking (Test the Problem)."
+        "a": "Any hospital department rule not captured in the local source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "c": "A universal rule that all spaces must be centralized is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "An exact acoustic rating invented for every adjacency is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": "Validation should occur regardless of site constraints; this ensures the program itself is complete and accurate. Client approval doesn't eliminate the need for rigorous validation; the diagram may contain latent conflicts. Extensive iteration occurs in design; the bubble diagram should be validated and stable before design begins. Client approval is important but not sufficient. The bubble diagram should be tested through user review, operational scenario testing (e.g., patient flow simulation), and verification that all constraints have been adequately addressed. This validation mirrors Step 5 of Problem Seeking (Test the Problem). This validation mirrors Step 5 of Problem Seeking (Test the Problem).",
-      "code_citation": null,
+      "explanation": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-009-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T14:43:20.050312+00:00",
-      "content_hash": "sha256:4e86ffcd8ccf555a397fb978668e03983a2fb011e90b552c02bb7f3b90dc90c6"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:8b13ba0101224011ab02b3f368ba86e9d820f17bd97f54b70ef30ff4972461d1",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "411ef3e1-f35f-4b79-82ea-ebcae6e270ed",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "During bubble diagram development, the programmer discovers that two space groups with an essential adjacency cannot physically fit next to each other on the site without creating unacceptable circulation inefficiency. What is the appropriate next step?",
+      "text": "In the barangay learning center scenario, what should the diagram test?",
       "options": [
         {
           "id": "a",
-          "text": "Abandon the essential adjacency requirement and redesignate it as desirable, which may compromise the design intent"
+          "text": "Exact structural member sizes"
         },
         {
           "id": "b",
-          "text": "Increase the site area requirement to accommodate ideal adjacency, potentially making the project infeasible due to budget constraints"
+          "text": "A final furniture purchasing list"
         },
         {
           "id": "c",
-          "text": "Accept that the constraint cannot be met and proceed with design anyway, which could lead to functional issues"
+          "text": "A facade style unrelated to space relationships"
         },
         {
           "id": "d",
-          "text": "Document this as a trade-off, explicitly acknowledging the constraint conflict and proposing design strategies to manage it"
+          "text": "Which spaces need closeness, separation, shared access, or a linking common space before dimensions are fixed"
         }
       ],
       "correct_option_id": "d",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Changing the program to fit the site reverses proper sequencing; the program should guide site selection or inform design trade-offs.",
-        "b": "This may not be practical; trade-off documentation is the appropriate programming response.",
-        "c": "Proceeding without acknowledging the constraint leads to inadequate design.",
-        "correct": "Not all constraints can always be simultaneously satisfied. When conflicts exist, the programmer should explicitly document the trade-off and propose solutions: perhaps vertical stacking, connecting corridors, or operational procedures to mitigate the adjacency loss. This allows the designer to work consciously within constraints.",
-        "takeaway": "This allows the designer to work consciously within constraints."
+        "a": "Exact structural member sizes is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "A final furniture purchasing list is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "c": "A facade style unrelated to space relationships is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "Which spaces need closeness, separation, shared access, or a linking common space before dimensions are fixed This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "Which spaces need closeness, separation, shared access, or a linking common space before dimensions are fixed This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Which spaces need closeness, separation, shared access, or a linking common space before dimensions are fixed Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-009-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b4f3fd749b4c1d9d674048f57c14451b0d3a644219cd625c103f960336e248df"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:3a68a6cbd457e7abd6bbd92be1d77e1fea3a54a010aab83725563316f4943090",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "86afc6db-a26c-4e4d-a7fa-314c69591cb2",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "A designer presents a bubble diagram in which all bubbles are arranged in a tight grid pattern with equal spacing, each bubble is drawn at precisely calculated sclea, and internal partitions are sketched inside each bubble. What error has the designer made?",
+      "text": "Which answer best distinguishes a bubble diagram from a floor plan?",
       "options": [
         {
           "id": "a",
-          "text": "The bubble sizes should be circular, not grid-aligned; irregular arrangement better represents functional relationships"
+          "text": "They are identical documents"
         },
         {
           "id": "b",
-          "text": "The diagram should be color-coded by functional zone; monochromatic presentation lacks clarity"
+          "text": "A bubble diagram is more detailed than construction drawings"
         },
         {
           "id": "c",
-          "text": "The spacing should vary to emphasize essential versus desirable adjacencies; equal spacing loses this information"
+          "text": "A floor plan never considers relationships"
         },
         {
           "id": "d",
-          "text": "The diagram has crossed the line from programming analysis into preliminary design; it includes design decisions prematurely"
+          "text": "A bubble diagram shows relational intent; a floor plan fixes dimensions, walls, openings, and technical layout"
         }
       ],
       "correct_option_id": "d",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Shape flexibility is appropriate; the error isn't about circularity but about including architectural form prematurely.",
-        "b": "Color-coding may aid clarity but isn't the fundamental issue; the core error is premature design detailing.",
-        "c": "While spacing could emphasize relationships, the primary error is including design decisions at all.",
-        "correct": "Bubble diagrams should remain abstract—showing relationships but not prescribing form. Exact scale, internal partitions, and grid arrangement are design decisions. Including them transforms the programming tool into a preliminary design sketch, conflating two separate phases.",
-        "takeaway": "Including them transforms the programming tool into a preliminary design sketch, conflating two separate phases."
+        "a": "They are identical documents is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "A bubble diagram is more detailed than construction drawings is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "c": "A floor plan never considers relationships is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "A bubble diagram shows relational intent; a floor plan fixes dimensions, walls, openings, and technical layout This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "A bubble diagram shows relational intent; a floor plan fixes dimensions, walls, openings, and technical layout This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A bubble diagram shows relational intent; a floor plan fixes dimensions, walls, openings, and technical layout Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "analyze",
       "application_context": "calculation",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-009-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ed4e7fe04b60ee7f024840a23be96a19ba79eb78dc400c4195ccfbf6c9e43539"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:a612f1c26deddca9c9fe7f9d1ec5449240aae126d690f6e789e3322289ec453e",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "beaf13aa-a088-4bc2-a93d-066b5f2d680c",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "Which adjacency relationship code indicates that two spaces must be separated to prevent functional conflict or safety risk?",
+      "text": "How can a common space function in early diagramming?",
       "options": [
         {
           "id": "a",
-          "text": "D (Desirable)"
+          "text": "It makes every room private and isolated"
         },
         {
           "id": "b",
-          "text": "X (Undesirable)"
+          "text": "It can link several spaces and help organize circulation or shared activity without yet fixing final dimensions"
         },
         {
           "id": "c",
-          "text": "U (Unimportant)"
+          "text": "It supplies exact code-required widths without sourcing"
         },
         {
           "id": "d",
-          "text": "E (Essential)"
+          "text": "It prevents hierarchy or circulation thinking"
         }
       ],
       "correct_option_id": "b",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "D indicates beneficial but non-mandatory proximity.",
-        "c": "U indicates no functional relationship or no proximity requirement.",
-        "d": "E indicates spaces that must be immediately adjacent or nearly connected.",
-        "correct": "Undesirable (X) relationships indicate required separation. For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies.",
-        "takeaway": "For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies."
+        "a": "It makes every room private and isolated is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "It can link several spaces and help organize circulation or shared activity without yet fixing final dimensions This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "c": "It supplies exact code-required widths without sourcing is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "It prevents hierarchy or circulation thinking is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "It can link several spaces and help organize circulation or shared activity without yet fixing final dimensions This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": "D indicates beneficial but non-mandatory proximity. U indicates no functional relationship or no proximity requirement. E indicates spaces that must be immediately adjacent or nearly connected. Undesirable (X) relationships indicate required separation. For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies. For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies.",
-      "code_citation": null,
+      "explanation": "It can link several spaces and help organize circulation or shared activity without yet fixing final dimensions Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-009-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T14:45:50.333077+00:00",
-      "content_hash": "sha256:0d7987d0fa06dc6030a05f12b74d77f2c94163832b5335a0b59b2ac0903ab34b"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:44d0ff0aa86f2f9c9eb89cc96feb0db46e121ab8f3b2df03e6bf15a92526f2c5",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "4cb5065c-3c22-4b93-986d-0a421ce9eb75",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "What is the primary purpose of an adjacency matrix in architectural programming?",
+      "text": "What is the main source-boundary caution for this article?",
       "options": [
         {
           "id": "a",
-          "text": "To systematically document spatial relationships between all programmed spaces using codes (E, D, U, X)"
+          "text": "Do not add hospital, acoustic, security, or code adjacency rules unless those exact claims are separately sourced"
         },
         {
           "id": "b",
-          "text": "To specify material selections and construction details for each space, which is not the primary function"
+          "text": "Do not discuss adjacency at all"
         },
         {
           "id": "c",
-          "text": "To create a visual representation of the final building design and floor layout, which is not the primary function"
+          "text": "Do not use diagrams in programming"
         },
         {
           "id": "d",
-          "text": "To calculate the total building area and cost estimates, which is not the primary function"
+          "text": "Do not distinguish spaces from one another"
         }
       ],
       "correct_option_id": "a",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Material and construction details are design decisions, not programming content.",
-        "c": "Adjacency matrices are analytical tools; they do not prescribe final design form.",
-        "d": "Area calculation uses area summary tables, not adjacency matrices.",
-        "correct": "An adjacency matrix ensures all functional pairs are evaluated for their spatial relationship: Essential (E), Desirable (D), Unimportant (U), or Undesirable (X). This systematic approach prevents overlooking relationships and ensures comprehensive programming.",
-        "takeaway": "This systematic approach prevents overlooking relationships and ensures comprehensive programming."
+        "a": "Do not add hospital, acoustic, security, or code adjacency rules unless those exact claims are separately sourced This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "b": "Do not discuss adjacency at all is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "c": "Do not use diagrams in programming is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "Do not distinguish spaces from one another is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "Do not add hospital, acoustic, security, or code adjacency rules unless those exact claims are separately sourced This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": "Material and construction details are design decisions, not programming content. Adjacency matrices are analytical tools; they do not prescribe final design form. Area calculation uses area summary tables, not adjacency matrices. An adjacency matrix ensures all functional pairs are evaluated for their spatial relationship: Essential (E), Desirable (D), Unimportant (U), or Undesirable (X). This systematic approach prevents overlooking relationships and ensures comprehensive programming. This systematic approach prevents overlooking relationships and ensures comprehensive programming.",
-      "code_citation": null,
+      "explanation": "Do not add hospital, acoustic, security, or code adjacency rules unless those exact claims are separately sourced Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-009-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T14:45:50.46844+00:00",
-      "content_hash": "sha256:f42baddfdca0d9032cc44c9c569dc4cb37a59120cb214f660e053e5a15abc07d"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:9e270f8fd4a57e75e843eb6793e859408acfeaf308985672340e9ada5fbc1818",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "7e549119-0db1-4342-b417-e3c1fbac7e78",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "A proposed retail shopping center layout places the stockroom adjacent to the customer shopping floor, with only a thin partition separating them. The adjacency matrix codes this as an undesirable relationship. What specific problems does this layout create?",
+      "text": "Which bubble-diagram answer is weakest?",
       "options": [
         {
           "id": "a",
-          "text": "Noise from stockroom restocking activities may distract customers; lack of buffer zone creates operational conflicts"
+          "text": "Using bubbles to compare closeness and separation"
         },
         {
           "id": "b",
-          "text": "Both visual and operational problems; stockroom should be interior or semi-public, not visible from customer retail space"
+          "text": "Treating the bubbles as final room sizes and construction documents before checking program relationships"
         },
         {
           "id": "c",
-          "text": "The layout creates a fire code violation requiring additional emergency exits from the stockroom"
+          "text": "Using a matrix to support relationship decisions"
         },
         {
           "id": "d",
-          "text": "Visual clutter of stockroom visible from retail floor reduces customer perception of cleanliness and reduces sales appeal"
+          "text": "Using a common space to link related rooms"
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This identifies the operational problem but misses the aesthetic/perception dimension.",
-        "c": "While fire code matters, the adjacency issue is not primarily about code compliance; it's about functional separation.",
-        "d": "This identifies one problem but misses the operational dimension.",
-        "correct": "Undesirable adjacency between stockroom and customer retail creates both aesthetic problems (customers see work activity, clutter, or signage) and operational problems (storage noise, staff movement, loading conflicts). The stockroom should be interior, semi-public, or service zone—separated from customer view.",
-        "takeaway": "The stockroom should be interior, semi-public, or service zone—separated from customer view."
+        "a": "Using bubbles to compare closeness and separation is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "Treating the bubbles as final room sizes and construction documents before checking program relationships This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "c": "Using a matrix to support relationship decisions is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "Using a common space to link related rooms is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "Treating the bubbles as final room sizes and construction documents before checking program relationships This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Treating the bubbles as final room sizes and construction documents before checking program relationships Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-009-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:70a7932ad0ab2b176f3f8333fd180fb2031ae19c6696544992cb6314bb9d9dd2"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:eae474f720556dd7a450d51d5cc2f758619907b98bb0d2c1d4bf2288ff83731a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     },
     {
       "question_id": "d95f3476-5f1b-42e6-8202-c4593c011dc8",
       "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
       "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
-      "text": "A mixed-use building program requires retail (essential adjacency to customer entry), office (desirable adjacency to retail but requiring separate elevators), and residential (undesirable adjacency to retail noise). How should the bubble diagram and resulting design organize these competing adjacency requirements?",
+      "text": "What is the LEA takeaway from bubble diagrams?",
       "options": [
         {
           "id": "a",
-          "text": "Create an open-plan structure where all uses mix freely to promote integration and reduce separation barriers, which may lead to conflicts in privacy and noise control."
+          "text": "They are decorative graphics with no programming value"
         },
         {
           "id": "b",
-          "text": "Arrange horizontally: retail on primary frontage, office alongside, residential in rear; shared elevators, which may compromise security and privacy for residential occupants."
+          "text": "They replace all later planning and technical coordination"
         },
         {
           "id": "c",
-          "text": "Prioritize retail visibility and customer flow; design office and residential as secondary tenants with minimal adjacency consideration, potentially leading to tenant dissatisfaction."
+          "text": "They prove exact areas without a source"
         },
         {
           "id": "d",
-          "text": "Stack all uses vertically with retail at street level, office middle, residential top; separate elevator banks and service circulation"
+          "text": "They are early reasoning tools for program relationships, adjacency, hierarchy, and circulation, not final measured plans"
         }
       ],
       "correct_option_id": "d",
@@ -501,14 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Open-plan violates the undesirable (X) adjacency between retail noise and residential; it increases conflict rather than managing it.",
-        "b": "Horizontal arrangement creates longer separation distances and shared elevators create mixing rather than separation.",
-        "c": "This treats office and residential as afterthoughts; their specific adjacency requirements demand strategic integration.",
-        "correct": "Vertical stacking satisfies all relationships: retail at street activates entry (E to customer circulation); office above benefits from retail proximity (D) but with separate elevators preventing customer/office conflicts; residential at top is physically separated from retail noise (X). Separate service circulation prevents operational conflict.",
-        "takeaway": "Separate service circulation prevents operational conflict."
+        "a": "They are decorative graphics with no programming value is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "b": "They replace all later planning and technical coordination is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "c": "They prove exact areas without a source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+        "d": "They are early reasoning tools for program relationships, adjacency, hierarchy, and circulation, not final measured plans This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+        "correct": "They are early reasoning tools for program relationships, adjacency, hierarchy, and circulation, not final measured plans This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+        "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They are early reasoning tools for program relationships, adjacency, hierarchy, and circulation, not final measured plans Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -521,8 +568,11 @@
       "model_id": "ALE-THEO-009-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:01e5b6131bcee3873bae07c80aa05dfcb3ea9be2fac5f523439bc55c4cdf4859"
+      "updated_at": "2026-05-13T23:38:36.673Z",
+      "content_hash": "sha256:5e309e4d8cb3e26919f95a18546c4e5be8fb988be3f8d502a3c1e3e16af89025",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
+      "source_notes": "Batch 137 grounds bubble diagrams in checked local sources: program lists, space descriptions, interrelationship matrix, bubble diagram, adjacency, concept diagrams, and basic spatial relationships."
     }
   ]
 }

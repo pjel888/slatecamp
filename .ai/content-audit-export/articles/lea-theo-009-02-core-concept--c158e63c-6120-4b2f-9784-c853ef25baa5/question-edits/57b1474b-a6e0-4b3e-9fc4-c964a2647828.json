@@ -2,64 +2,63 @@
   "question_id": "57b1474b-a6e0-4b3e-9fc4-c964a2647828",
   "baseline_hash": "sha256:4e86ffcd8ccf555a397fb978668e03983a2fb011e90b552c02bb7f3b90dc90c6",
   "action": "replace",
-  "reason": "source-audited-article-batch-075-local-first aligned linked question with checked local raw PDF/source evidence for lea-theo-009-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-075",
-  "approved_at": "2026-05-12T02:55:00.000+08:00",
+  "reason": "source-audited-article-batch-137-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Bubble Diagrams and Adjacency Thinking.",
+  "approved_by": "codex-local-first-batch-137",
+  "approved_at": "2026-05-13T23:38:36.673Z",
   "source_audit_support": {
     "parent_article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
     "parent_article_slug": "lea-theo-009-02-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction",
-      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165",
     "checked_sources": [
       {
-        "source_id": "design-process-programming-b075",
-        "label": "Design Process",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "raw_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
-        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction"
+        "source_id": "batch-137-lea-theo-009-02-core-concept-raw-source-capture",
+        "label": "Batch 137 raw source capture - Bubble Diagrams and Adjacency Thinking",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md",
+        "sha256": "sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55"
       },
       {
-        "source_id": "ra9266-irr-architecture-act-b075",
-        "label": "RA 9266 IRR - Architecture Act of 2004",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction"
+        "source_id": "batch-137-lea-theo-009-02-core-concept-refined-source-map",
+        "label": "Batch 137 refined source conversion - Bubble Diagrams and Adjacency Thinking",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md",
+        "sha256": "sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 075 local raw-source-audited article scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 137 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "What does the source say a concept statement is made up of?",
+    "text": "Which relationship type is source-supported?",
     "options": [
       {
         "id": "a",
-        "text": "A single diagram and a few words."
+        "text": "Any hospital department rule not captured in the local source"
       },
       {
         "id": "b",
-        "text": "A full set of structural calculations."
+        "text": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space"
       },
       {
         "id": "c",
-        "text": "A notarized owner-contractor agreement."
+        "text": "A universal rule that all spaces must be centralized"
       },
       {
         "id": "d",
-        "text": "A certificate of occupancy."
+        "text": "An exact acoustic rating invented for every adjacency"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The checked source states that a concept statement is made up of a single diagram and a few words.",
-    "explanation": "The checked source states that a concept statement is made up of a single diagram and a few words.",
-    "code_citation": "Design Process"
-  }
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Any hospital department rule not captured in the local source is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+      "b": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space This is the source-safe answer for Bubble Diagrams and Adjacency Thinking.",
+      "c": "A universal rule that all spaces must be centralized is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+      "d": "An exact acoustic rating invented for every adjacency is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Bubble Diagrams and Adjacency Thinking.",
+      "correct": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space This stays inside the Batch 137 local source map for Bubble Diagrams and Adjacency Thinking.",
+      "takeaway": "Use the local Batch 137 source capture and refined conversion for Bubble Diagrams and Adjacency Thinking; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
+    },
+    "explanation": "Space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space Supported by Batch 137 local source artifacts for Bubble Diagrams and Adjacency Thinking: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-009-02-core-concept.source-capture.md#sha256:d0f77b11615fdb912e24a36020feda011b8ca5cf41a868a267c1da4994c5fd55; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-009-02-core-concept.refined.md#sha256:61d83d622ef707326b339fab62c18ae8990affcec59b698a03a988b654384165"
+  },
+  "batch_question_template_index": 4
 }

@@ -1,0 +1,64 @@
+{
+  "question_id": "68dd059c-bbbb-4abe-befd-a68b8bd4e014",
+  "baseline_hash": "sha256:487887e574bcf890c1d50d499fe82d60883b696564cd1c70ca22f92c9ee46e88",
+  "action": "replace",
+  "reason": "source-audited-article-batch-137-local-first: unsupported or over-specific residual rewrite constrained to checked local source artifacts for Filipino Architectural Identity.",
+  "approved_by": "codex-local-first-batch-137",
+  "approved_at": "2026-05-13T23:38:36.673Z",
+  "source_audit_support": {
+    "parent_article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+    "parent_article_slug": "lea-theo-008-04-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3",
+    "checked_sources": [
+      {
+        "source_id": "batch-137-lea-theo-008-04-core-concept-raw-source-capture",
+        "label": "Batch 137 raw source capture - Filipino Architectural Identity",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md",
+        "sha256": "sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac"
+      },
+      {
+        "source_id": "batch-137-lea-theo-008-04-core-concept-refined-source-map",
+        "label": "Batch 137 refined source conversion - Filipino Architectural Identity",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md",
+        "sha256": "sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 137 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How should colonial and modern examples inform identity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As proof that identity has no local climate dimension"
+      },
+      {
+        "id": "b",
+        "text": "As a command to replicate one historic facade everywhere"
+      },
+      {
+        "id": "c",
+        "text": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy"
+      },
+      {
+        "id": "d",
+        "text": "As evidence for unsourced digital-architecture claims"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "As proof that identity has no local climate dimension is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+      "b": "As a command to replicate one historic facade everywhere is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+      "c": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy This is the source-safe answer for Filipino Architectural Identity.",
+      "d": "As evidence for unsourced digital-architecture claims is not the best answer because it either overclaims, reverses the relationship, or leaves the Batch 137 source boundary for Filipino Architectural Identity.",
+      "correct": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy This stays inside the Batch 137 local source map for Filipino Architectural Identity.",
+      "takeaway": "Use the local Batch 137 source capture and refined conversion for Filipino Architectural Identity; avoid unsupported exact numbers, legal claims, global awards, market claims, digital claims, or project-specific rules.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
+    },
+    "explanation": "As historical layers and examples that help explain Philippine architectural development, not as one style all projects must copy Supported by Batch 137 local source artifacts for Filipino Architectural Identity: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-137/lea-theo-008-04-core-concept.source-capture.md#sha256:4d2c1679c43a2f9d9eb2dcd681f7b6151b806eddf5363b95d05a2cdd95cbe2ac; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-137/lea-theo-008-04-core-concept.refined.md#sha256:a05fe073165b5898449de3c8d63b6c93685c7a6415965c62cfb3ec845dc4d2f3"
+  },
+  "batch_question_template_index": 7
+}
