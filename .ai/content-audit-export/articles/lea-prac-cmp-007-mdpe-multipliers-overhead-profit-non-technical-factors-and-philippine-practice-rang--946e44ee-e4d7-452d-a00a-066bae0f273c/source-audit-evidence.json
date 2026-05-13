@@ -319,7 +319,7 @@
   "gate_results": {
     "compose": "PASS: bun scripts/content-audit/compose-candidates.ts --article-id <Batch 105 id> --overwrite --strict; changed candidates; blockers=0",
     "diff": "PASS: bun scripts/content-audit/diff-candidates.ts --article-id <Batch 105 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
-    "validate": "pending aggregate validation in Batch 105 scoped checks",
+    "validate": "PASS: bun scripts/content-audit/validate-bundles.ts --article-id <Batch 105 id> --summary; valid=true; blockers=0; component-usage warning only",
     "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
     "supabase_mutation": "not_attempted_by_request"
   },
@@ -348,12 +348,14 @@
       "changed": true
     },
     "validate": {
-      "passed": null,
+      "passed": true,
       "blockers": [],
-      "warnings": []
+      "warnings": [
+        "component-usage.json warning is expected for these local-first bundles"
+      ]
     },
     "scoped_checks": {
-      "passed": null,
+      "passed": true,
       "blockers": [],
       "placeholder_matches": []
     }

@@ -196,3 +196,17 @@ Current serial accepted-batch overlap check passed for Batches 087-098: no selec
 Batch 100 followed the fixed manifest, produced current local-first source-audit evidence, refreshed 50/50 question edits, removed stale SVC-025 `question-edits/index.json` and stale FRM compose-error sidecars, added five source-safe scenarios, and made no Supabase push/deploy/production DB mutation/merge-to-main. Required gates passed: compose 5/5, diff 5/5, validate strict 5/5, UI-block edit validation 5/5, scoped JSON parse 105 files, source hash checks 18/18, linked-question/question-edit counts 50/50, targeted content-audit tests 34 pass, independent QA PASS, and scoped `git diff --check` PASS.
 
 Current serial accepted-batch overlap check passed for Batches 087-099: no selected Batch 100 article ID appeared in that current serial accepted set. Historical local-first/re-audit overlap is present and explicitly classified separately: SVC-025 in Batch 020 artifacts, SVC-026 in Batch 025 artifacts, and FRM-001 through FRM-003 in Batch 019 artifacts. SVC-025 and SVC-026 are preserved as THIN_NEEDS_EXPANSION candidates for the final depth audit after local-first production-line batches complete.
+
+<!-- batch-105-acceptance:start -->
+
+### Batch 105 local-first acceptance - 2026-05-13T13:02:00+08:00
+
+Batch 105 followed the fixed/eligible production-line rule and selected the next CMP sequence after Batch 104: CMP-003 through CMP-007. Current serial accepted-batch overlap check passed for Batches 087-104: no selected Batch 105 article ID appeared in that accepted set. Historical local-first/re-audit overlap is present from earlier non-current artifacts and is treated separately from accepted production-line duplication.
+
+Batch 105 produced current local-first source-audit evidence, refreshed 50/50 linked question edits, added or tightened five source-safe Real World Scenario sections, removed stale PARKED evidence sidecars where current PASS evidence exists, and made no Supabase push/deploy/production DB mutation/merge-to-main. Required gates passed: compose 5/5, diff 5/5, validate 5/5, UI-block edit validation 5/5, scoped JSON parse, source hash checks, linked-question/question-edit counts, targeted content-audit tests, and duplicate selection scan.
+
+Content preservation commits were observed before the final acceptance artifact commit: 45834681d, 732e535b5, 083c676f1. The final Batch 105 acceptance commit should carry the report, ledger, scoped checks, manifest, independent QA memo, and handoff/coordination updates.
+
+Next production-line target: Batch 106, continuing with the next eligible CMP clusters after CMP-007 unless live artifacts show a later completed batch.
+
+<!-- batch-105-acceptance:end -->

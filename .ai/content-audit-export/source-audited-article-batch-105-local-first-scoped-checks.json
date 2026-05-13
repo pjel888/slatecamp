@@ -1,0 +1,324 @@
+{
+  "batch_id": "source-audited-article-batch-105-local-first",
+  "batch_number": "105",
+  "generated_at": "2026-05-13T13:02:00+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "start_baseline_commit": "3c9a12279",
+  "current_head_at_generation": "083c676f1",
+  "content_preservation_commits": [
+    "45834681d",
+    "732e535b5",
+    "083c676f1"
+  ],
+  "selected_article_ids": [
+    "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+    "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+    "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+    "d18569e9-4401-4d85-8d59-d545240ef106",
+    "946e44ee-e4d7-452d-a00a-066bae0f273c"
+  ],
+  "gates": {
+    "compose_strict_5_of_5": true,
+    "diff_strict_5_of_5": true,
+    "validate_strict_5_of_5": true,
+    "ui_block_edit_validation_5_of_5": true,
+    "scoped_json_parse": {
+      "pass": true,
+      "parsed_files": 113,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "pass": true,
+      "findings": []
+    },
+    "source_hash_checks": {
+      "pass": true,
+      "checked_files": 24,
+      "failures": []
+    },
+    "linked_question_question_edit_counts": {
+      "pass": true,
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "pass": true,
+      "stale_compose_errors": 0
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "pass": true,
+      "checked_batches": "087-104",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+      "pass": true,
+      "commands": [
+        "bun test scripts/content-audit/content-audit.test.ts (27 pass)",
+        "bun test scripts/content-audit/source-verification-invariants.test.ts (7 pass)"
+      ]
+    },
+    "scoped_git_diff_check": {
+      "status": "pass"
+    },
+    "cached_diff_check": {
+      "status": "pass"
+    }
+  },
+  "articles": [
+    {
+      "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+      "slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
+      "title": "Project Construction Cost PCC Definition Inclusions",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+      "cluster": "CMP-003 PCC definition, inclusions, exclusions, and fair-market value rule",
+      "candidate_sha256": "sha256:82f103d7741a5e7a34235410dafdcc1d5a1346b04beb724a802837b681bc3a37",
+      "normalized_sha256": "sha256:82f103d7741a5e7a34235410dafdcc1d5a1346b04beb724a802837b681bc3a37",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_real_world_scenario": "added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "source_hash_checks": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "expected": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "actual": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "expected": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "actual": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "expected": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "actual": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "pass": true
+        }
+      ],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "slug": "lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline",
+      "title": "Schedule of Payments Phase Percentages",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "cluster": "CMP-004 cumulative schedule of payment milestones",
+      "candidate_sha256": "sha256:e88c26b329552be8380ea9182d885f17d2e6fcaeb55c8363f2704a1e406a0875",
+      "normalized_sha256": "sha256:e88c26b329552be8380ea9182d885f17d2e6fcaeb55c8363f2704a1e406a0875",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_real_world_scenario": "added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "source_hash_checks": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "expected": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "actual": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "expected": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "actual": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "expected": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "actual": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "pass": true
+        }
+      ],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "slug": "lea-prac-cmp-005-core-concept",
+      "title": "Percentage of PCC Method and Regular Design Service Compensation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-005-core-concept--ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "cluster": "CMP-005 percentage of PCC method and Regular Design Service compensation",
+      "candidate_sha256": "sha256:8f03a035623f72790ec114ac000796ebfd39f6936066434ba4665de36f1c208f",
+      "normalized_sha256": "sha256:8f03a035623f72790ec114ac000796ebfd39f6936066434ba4665de36f1c208f",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_real_world_scenario": "added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "source_hash_checks": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "expected": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "actual": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "expected": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "actual": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "expected": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "actual": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "expected": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "actual": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "expected": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "actual": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+          "expected": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+          "actual": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "expected": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "actual": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "pass": true
+        }
+      ],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
+      "slug": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic",
+      "title": "Multiple of Direct Personnel Expense MDPE the Formula Components",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106",
+      "cluster": "CMP-006 MDPE formula components and sequence",
+      "candidate_sha256": "sha256:beb64b08f2c6b4d2bca530778c4985349785a3f2bbcdf7de24c26cfb8105a502",
+      "normalized_sha256": "sha256:beb64b08f2c6b4d2bca530778c4985349785a3f2bbcdf7de24c26cfb8105a502",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_real_world_scenario": "added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "source_hash_checks": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "expected": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "actual": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "expected": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "actual": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "expected": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "actual": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "expected": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "actual": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "pass": true
+        }
+      ],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
+      "slug": "lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges",
+      "title": "MDPE Multipliers Overhead Profit Non Technical Factors",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c",
+      "cluster": "CMP-007 source-backed MDPE multiplier range and factors",
+      "candidate_sha256": "sha256:16dbb9d7a61893657588b6addfe4a766d816686262939ee1a43de37bb7d83d8c",
+      "normalized_sha256": "sha256:16dbb9d7a61893657588b6addfe4a766d816686262939ee1a43de37bb7d83d8c",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_real_world_scenario": "added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "source_hash_checks": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "expected": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "actual": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "expected": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "actual": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "expected": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "actual": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "expected": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "actual": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "pass": true
+        }
+      ],
+      "stale_compose_error": false
+    }
+  ],
+  "forbidden_actions_observed": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_to_main": false
+  }
+}

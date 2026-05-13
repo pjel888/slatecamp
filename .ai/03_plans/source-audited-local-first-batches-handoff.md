@@ -8671,3 +8671,17 @@ Independent QA for Batch 095 passed all structural/content gates but requested c
 Acceptance rationale: Batch 095 followed the fixed 093-095 manifest, produced current local-first source-audit evidence, repaired/validated 50/50 question edits, added source-safe scenarios, passed independent UAP SPP quality review, and made no Supabase push/deploy. This local-first production line is establishing a frozen source-audited state before any future final publishing review; prior historical publication/re-audit artifacts do not invalidate the current local repair, but they expose a reservation-process gap.
 
 Process advisory: future reservation coordinators must record three separate categories: (1) current serially accepted source-audited batches, (2) historical local-first/re-audit artifacts, and (3) historical published/article/question batches. Manifests must not report overlap as zero when any of these historical categories contain the selected IDs.
+
+<!-- batch-105-acceptance:start -->
+
+### Batch 105 local-first acceptance - 2026-05-13T13:02:00+08:00
+
+Batch 105 followed the fixed/eligible production-line rule and selected the next CMP sequence after Batch 104: CMP-003 through CMP-007. Current serial accepted-batch overlap check passed for Batches 087-104: no selected Batch 105 article ID appeared in that accepted set. Historical local-first/re-audit overlap is present from earlier non-current artifacts and is treated separately from accepted production-line duplication.
+
+Batch 105 produced current local-first source-audit evidence, refreshed 50/50 linked question edits, added or tightened five source-safe Real World Scenario sections, removed stale PARKED evidence sidecars where current PASS evidence exists, and made no Supabase push/deploy/production DB mutation/merge-to-main. Required gates passed: compose 5/5, diff 5/5, validate 5/5, UI-block edit validation 5/5, scoped JSON parse, source hash checks, linked-question/question-edit counts, targeted content-audit tests, and duplicate selection scan.
+
+Content preservation commits were observed before the final acceptance artifact commit: 45834681d, 732e535b5, 083c676f1. The final Batch 105 acceptance commit should carry the report, ledger, scoped checks, manifest, independent QA memo, and handoff/coordination updates.
+
+Next production-line target: Batch 106, continuing with the next eligible CMP clusters after CMP-007 unless live artifacts show a later completed batch.
+
+<!-- batch-105-acceptance:end -->
