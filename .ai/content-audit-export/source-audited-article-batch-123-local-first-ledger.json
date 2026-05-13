@@ -1,0 +1,169 @@
+{
+  "batch_id": "source-audited-article-batch-123-local-first",
+  "generated_at": "2026-05-14T01:06:00.000+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "4cf9d812c",
+  "previous_content_batch_commit": "4cf9d812c",
+  "totals": {
+    "article_clusters": 5,
+    "linked_questions": 54,
+    "question_edits": 54,
+    "answer_key_changes": 1,
+    "option_text_changes": 4,
+    "source_entries": 10,
+    "local_source_artifacts": 10
+  },
+  "articles": [
+    {
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "slug": "lea-hist-008-01-core-concept",
+      "title": "The 19th Century: Industrial Revolution and Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The Crystal Palace option that implied a brick base was left as a wrong-answer cue only and not treated as a factual support claim.",
+        "Gothic Revival contrast wording was narrowed so the question no longer implies Gothic Revival used only wood and stone.",
+        "Home Insurance Building support was limited to early internal iron-and-steel frame high-rise development and does not claim full curtain-wall modernism."
+      ],
+      "original_hash": "sha256:cfa08bcf258279e66354dc93aa1b1c4b832dc3d6d635474eeb52435ce60e7a5c",
+      "normalized_hash": "sha256:808e3b50fe50019b8d6d0b493af2feaccca06f88a69f064aeeb58e550c043466",
+      "candidate_hash": null,
+      "sources_hash": "sha256:a26e1bd5eee7aa2ab3aeb1cc97316945e5003f2fc4fa88aca679dd69e3d2e803",
+      "linked_questions_hash": "sha256:703eab723581d1e178d16898ce58be67d5392ea7220a68681a3c0c48f2c82760",
+      "source_locator": "Britannica Crystal Palace/Eiffel Tower/Jenney and Chicago Architecture Center Home Insurance anchors plus HOA Module 2 and Salvan locators for Crystal Palace, Eiffel Tower, Home Insurance Building, Sullivan, Arts and Crafts, iron/glass, and skeleton-frame vocabulary.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-01-core-concept-19th-century-industrial-revolution-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-01-core-concept-19th-century-industrial-revolution-architecture.refined.md"
+      ]
+    },
+    {
+      "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+      "slug": "lea-hist-008-02-core-concept",
+      "title": "Art Nouveau and Art Deco",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The older article typo \"William Van Lean\" was corrected to William Van Alen.",
+        "Art Nouveau and Art Deco were separated so whiplash/organic cues are not assigned to Deco and machine-age geometric cues are not assigned to Nouveau.",
+        "Zoning/setback language is kept as exam-safe massing vocabulary and not expanded into unsupported code-history detail."
+      ],
+      "original_hash": "sha256:9fdf86e83dc8fbbfcfca0f98f70083ed2d209a5fe6c4d42eeb45aee7e42de30e",
+      "normalized_hash": "sha256:bb3c99f4a793abeed02b09f8d0bf82965b6c450a93e9dc7d340677e08089bde9",
+      "candidate_hash": null,
+      "sources_hash": "sha256:95a2d90e7eb2048a2c485ee8b8a4a65f9305ee8f6984092e6eca0f3ff72d1eb0",
+      "linked_questions_hash": "sha256:a26f1b7cc097cc0f62656ccace470a21606acc5a0cc087c0ae9de991a540954a",
+      "source_locator": "V&A Art Nouveau/Whiplash and Art Deco captures plus Britannica Chrysler Building, 30-Second New York, HOA Module 2, and Salvan locators for Horta, Guimard, Gaudi, 1925 Paris exposition, William Van Alen, Chrysler Building, geometric Art Deco, and setback/crown vocabulary.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-02-core-concept-art-nouveau-art-deco.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-02-core-concept-art-nouveau-art-deco.refined.md"
+      ]
+    },
+    {
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "slug": "lea-hist-008-03a-core-concept",
+      "title": "Le Corbusier",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-03a-core-concept--c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 1,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The article corrected the Five Points date from older 1926 wording to the source-safe 1927 formulation.",
+        "The Villa Savoye linked question corrected the older 1929-1931 shorthand to the source-safe 1928-1931 range, with one answer-key change.",
+        "Later Le Corbusier works are kept as separate anchors and not used to overgeneralize the Five Points."
+      ],
+      "original_hash": "sha256:adf32703073f26bf1e5cd026e7491f864494b3ad60cf1f05c6889c58b20b0c09",
+      "normalized_hash": "sha256:16501cd7e22ab86569681234653bbb153ec1660dc788ca762700246438284ee2",
+      "candidate_hash": null,
+      "sources_hash": "sha256:ef75fcf17d60b09a2af3d53496a5fc5f5ac71192515853354e11ca0b33f26696",
+      "linked_questions_hash": "sha256:26af3b3850f1e9d3d32b58e05ea3dde7b38b000aeebd896d6b9002ac7e09df9c",
+      "source_locator": "Villa Savoye official/Fondation Le Corbusier captures plus 20th Century Architects 3, HOA Module 2, and Salvan locators for Five Points, 1927 formulation, Villa Savoye 1928-1931, pilotis, roof garden, free plan, ribbon windows, free facade, reinforced concrete, Modulor, Unite, Chandigarh, and Ronchamp guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03a-core-concept-le-corbusier.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03a-core-concept-le-corbusier.refined.md"
+      ]
+    },
+    {
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "slug": "lea-hist-008-03b-core-concept",
+      "title": "Ludwig Mies van der Rohe",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-03b-core-concept--79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Farnsworth House date wording was changed from a broad 1946-1951 construction claim to designed 1945 and constructed 1950-1951.",
+        "Seagram bronze I-beam wording was narrowed to expressive curtain-wall rhythm/detail and not treated as load-bearing structure.",
+        "Mies vocabulary was separated from Brutalist rough concrete vocabulary."
+      ],
+      "original_hash": "sha256:a0051b0cadbc224894fae8098b9f1d1d83715f199ea3e01c47520d4ae34792ee",
+      "normalized_hash": "sha256:b2c70af6d74858878eb49ee7bbbf8aa1da4fcd9f45125191041dd535e782431c",
+      "candidate_hash": null,
+      "sources_hash": "sha256:bf641a5efc8bffea40c99636a5788e440d7737c096f6d9b060d733c0e9df2095",
+      "linked_questions_hash": "sha256:1f2c341cff52410cd629d405ef60d6e5a8a4ebb7f34b32302eebbceb140f45bf",
+      "source_locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.refined.md"
+      ]
+    },
+    {
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "slug": "lea-hist-008-03c-core-concept",
+      "title": "Walter Gropius",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-03c-core-concept--faa3088f-8700-4d60-a871-1c1e97f53570",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Bauhaus is described as a school and pedagogy, not merely a decorative style.",
+        "Gropius House is separated from the Dessau Bauhaus campus and tied to 1938 Lincoln/Harvard context.",
+        "Gropius/Sullivan/Mies/Hannes Meyer roles are separated to avoid attribution drift."
+      ],
+      "original_hash": "sha256:2a1f3c76590dc498f4dbb3e2048980ef6ef97317c1250b12010646c1189c8c0b",
+      "normalized_hash": "sha256:e049e434c72f7c9b3a5bc14fd35f3f5e2812b797cb88e48873cc8f5250964643",
+      "candidate_hash": null,
+      "sources_hash": "sha256:0d485bdcf96edb516067c29d3cdcc7810dee17ec0ea263655e10d0967e24060e",
+      "linked_questions_hash": "sha256:fe5b15141c674d510ba85c0066e2eeeda95b7738eae1999ce25af98a0872174f",
+      "source_locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03c-core-concept-walter-gropius.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03c-core-concept-walter-gropius.refined.md"
+      ]
+    }
+  ],
+  "forbidden_actions": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_to_main": false
+  }
+}

@@ -1,3 +1,20 @@
+## Batch 123 Git Finalization Blocker - 2026-05-14
+
+- Local validation passed, but Codex could not stage because .git/index.lock creation is blocked by the environment.
+- Handoff stage list: `.ai/03_plans/batch-123-git-handoff-stage-list.md`.
+- Hermes should run cached diff check, commit, and push from a git-capable environment.
+
+---
+
+## Batch 123 Handoff - 2026-05-14
+
+- Batch 123 continues after accepted Batch 122 and consumes `lea-hist-008-01`, `lea-hist-008-02`, `lea-hist-008-03a`, `lea-hist-008-03b`, and `lea-hist-008-03c`.
+- Required local artifacts are present or pending validation under `.ai/03_plans`, `.ai/content-audit-export`, selected article folders, and `vitruvius-connection/.../source-map-batch-123`.
+- Next residual pointer after a successful commit: continue with `lea-hist-008-04` or the next sourceable non-prac residual cluster after `lea-hist-008-03c`.
+- If git index or GitHub DNS blocks finalization, Hermes should stage only the intended Batch 123 paths listed in the manifest.
+
+---
+
 # Batch 122 Local-First Handoff
 
 Generated: 2026-05-14T00:20:53.000+08:00

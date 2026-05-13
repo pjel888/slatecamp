@@ -1,0 +1,89 @@
+{
+  "question_id": "b773afca-25f4-454a-9e83-88310c8f49d8",
+  "baseline_hash": "sha256:fd936a9f76088c059635a754e1315a2030586fe2c8174fbcaaae0939c5696bdd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-01-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-123",
+  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+    "parent_article_slug": "lea-hist-008-01-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Britannica Crystal Palace/Eiffel Tower/Jenney and Chicago Architecture Center Home Insurance anchors plus HOA Module 2 and Salvan locators for Crystal Palace, Eiffel Tower, Home Insurance Building, Sullivan, Arts and Crafts, iron/glass, and skeleton-frame vocabulary.",
+    "checked_markdown_lines": [
+      "Britannica Crystal Palace/Eiffel Tower/Jenney and Chicago Architecture Center Home Insurance anchors plus HOA Module 2 and Salvan locators for Crystal Palace, Eiffel Tower, Home Insurance Building, Sullivan, Arts and Crafts, iron/glass, and skeleton-frame vocabulary."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch123-lea-hist-008-01-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-01-core-concept-19th-century-industrial-revolution-architecture.source-capture.md",
+        "sha256": "sha256:32e9f80c764676557e1f3c1928c1d3339855502034b0bf48532ac0ec3c0c584b",
+        "locator": "Britannica Crystal Palace/Eiffel Tower/Jenney and Chicago Architecture Center Home Insurance anchors plus HOA Module 2 and Salvan locators for Crystal Palace, Eiffel Tower, Home Insurance Building, Sullivan, Arts and Crafts, iron/glass, and skeleton-frame vocabulary."
+      },
+      {
+        "source_id": "batch123-lea-hist-008-01-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-01-core-concept-19th-century-industrial-revolution-architecture.refined.md",
+        "sha256": "sha256:2c7110e0769d21e680c6b6833f3f5b4ce7e72f086222ea7f9fd2e2594019bd4c",
+        "locator": "Britannica Crystal Palace/Eiffel Tower/Jenney and Chicago Architecture Center Home Insurance anchors plus HOA Module 2 and Salvan locators for Crystal Palace, Eiffel Tower, Home Insurance Building, Sullivan, Arts and Crafts, iron/glass, and skeleton-frame vocabulary."
+      }
+    ],
+    "local_source_safe_action": "Batch 123 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-123-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "b773afca-25f4-454a-9e83-88310c8f49d8",
+    "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+    "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+    "text": "Modular construction, demonstrated in the Crystal Palace, allowed efficient assembly on-site. What was the primary architectural advantage this innovation offered beyond speed of construction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It reduced the need for skilled craftsmen on the building site, lowering labor costs"
+      },
+      {
+        "id": "b",
+        "text": "It proved that complex forms could be achieved through repetitive, simple components, democratizing quality design"
+      },
+      {
+        "id": "c",
+        "text": "It eliminated the need for architectural drawings or planning, simplifying the design process"
+      },
+      {
+        "id": "d",
+        "text": "It proved that temporary buildings could be more beautiful than permanent ones, challenging traditional aesthetics"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "It reduced the need for skilled craftsmen on the building site, lowering labor costs is not the source-safe match for this article; check whether the cue is Paxton, Eiffel, Jenney, Sullivan, or Arts and Crafts before choosing.",
+      "c": "It eliminated the need for architectural drawings or planning, simplifying the design process is not the source-safe match for this article; check whether the cue is Paxton, Eiffel, Jenney, Sullivan, or Arts and Crafts before choosing.",
+      "d": "It proved that temporary buildings could be more beautiful than permanent ones, challenging traditional aesthetics is not the source-safe match for this article; check whether the cue is Paxton, Eiffel, Jenney, Sullivan, or Arts and Crafts before choosing.",
+      "correct": "It proved that complex forms could be achieved through repetitive, simple components, democratizing quality design matches the Batch 123 local source anchors for nineteenth-century industrial architecture: Paxton/Crystal Palace, Eiffel/open-lattice iron, Jenney/Home Insurance, Sullivan/function, and Arts and Crafts material reform.",
+      "takeaway": "Answer these questions by matching the named nineteenth-century anchor to its specific industrial or reform cue, not by treating all modernizing architecture as one movement."
+    },
+    "explanation": "It proved that complex forms could be achieved through repetitive, simple components, democratizing quality design matches the Batch 123 local source anchors for nineteenth-century industrial architecture: Paxton/Crystal Palace, Eiffel/open-lattice iron, Jenney/Home Insurance, Sullivan/function, and Arts and Crafts material reform. Answer these questions by matching the named nineteenth-century anchor to its specific industrial or reform cue, not by treating all modernizing architecture as one movement.",
+    "code_citation": null,
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "ST"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-008-01-010",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:25.310909+00:00",
+    "updated_at": "2026-05-14T01:06:00.000+08:00",
+    "content_hash": "sha256:fd936a9f76088c059635a754e1315a2030586fe2c8174fbcaaae0939c5696bdd"
+  }
+}

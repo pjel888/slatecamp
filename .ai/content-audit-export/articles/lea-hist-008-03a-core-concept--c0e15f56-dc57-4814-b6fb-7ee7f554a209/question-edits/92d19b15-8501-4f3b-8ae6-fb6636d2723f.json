@@ -1,0 +1,89 @@
+{
+  "question_id": "92d19b15-8501-4f3b-8ae6-fb6636d2723f",
+  "baseline_hash": "sha256:7e035beaeff7aad9770b654ce9b3fe77f111331927f10b1ffbf9db8752a39024",
+  "action": "replace",
+  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-03a-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-123",
+  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+    "parent_article_slug": "lea-hist-008-03a-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Villa Savoye official/Fondation Le Corbusier captures plus 20th Century Architects 3, HOA Module 2, and Salvan locators for Five Points, 1927 formulation, Villa Savoye 1928-1931, pilotis, roof garden, free plan, ribbon windows, free facade, reinforced concrete, Modulor, Unite, Chandigarh, and Ronchamp guardrails.",
+    "checked_markdown_lines": [
+      "Villa Savoye official/Fondation Le Corbusier captures plus 20th Century Architects 3, HOA Module 2, and Salvan locators for Five Points, 1927 formulation, Villa Savoye 1928-1931, pilotis, roof garden, free plan, ribbon windows, free facade, reinforced concrete, Modulor, Unite, Chandigarh, and Ronchamp guardrails."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch123-lea-hist-008-03a-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03a-core-concept-le-corbusier.source-capture.md",
+        "sha256": "sha256:001cf4670584b2de25c543304026e47c7955e4e8cdfdf38ee18ab303688fc004",
+        "locator": "Villa Savoye official/Fondation Le Corbusier captures plus 20th Century Architects 3, HOA Module 2, and Salvan locators for Five Points, 1927 formulation, Villa Savoye 1928-1931, pilotis, roof garden, free plan, ribbon windows, free facade, reinforced concrete, Modulor, Unite, Chandigarh, and Ronchamp guardrails."
+      },
+      {
+        "source_id": "batch123-lea-hist-008-03a-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03a-core-concept-le-corbusier.refined.md",
+        "sha256": "sha256:4f1ebf5d6c8a35b79749d62390af008806fcc621be08bbce699429d8d4174b94",
+        "locator": "Villa Savoye official/Fondation Le Corbusier captures plus 20th Century Architects 3, HOA Module 2, and Salvan locators for Five Points, 1927 formulation, Villa Savoye 1928-1931, pilotis, roof garden, free plan, ribbon windows, free facade, reinforced concrete, Modulor, Unite, Chandigarh, and Ronchamp guardrails."
+      }
+    ],
+    "local_source_safe_action": "Batch 123 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-123-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "92d19b15-8501-4f3b-8ae6-fb6636d2723f",
+    "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+    "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+    "text": "Which of these buildings most clearly demonstrates all Five Points of Architecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Notre-Dame du Haut"
+      },
+      {
+        "id": "b",
+        "text": "Unité d'Habitation"
+      },
+      {
+        "id": "c",
+        "text": "Villa Savoye"
+      },
+      {
+        "id": "d",
+        "text": "Chandigarh"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Notre-Dame du Haut does not match the source-safe Le Corbusier cue in the linked article.",
+      "b": "Unité d'Habitation does not match the source-safe Le Corbusier cue in the linked article.",
+      "d": "Chandigarh does not match the source-safe Le Corbusier cue in the linked article.",
+      "correct": "Villa Savoye matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+      "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
+    },
+    "explanation": "Villa Savoye matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "ID"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-008-03A-002",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:25.729652+00:00",
+    "updated_at": "2026-05-14T01:06:00.000+08:00",
+    "content_hash": "sha256:7e035beaeff7aad9770b654ce9b3fe77f111331927f10b1ffbf9db8752a39024"
+  }
+}

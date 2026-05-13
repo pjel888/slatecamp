@@ -1,32 +1,38 @@
 {
   "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:3556d697b946c1ed69a0abf559871759c6bcfd9ef9a39e003b7b56a6d279374c",
+  "sources_hash": "sha256:95a2d90e7eb2048a2c485ee8b8a4a65f9305ee8f6984092e6eca0f3ff72d1eb0",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "47e3f1a0-19ae-4e02-bc7b-c1d73e93d8b5",
+      "source_id": "batch123-lea-hist-008-02-core-concept-source-map-capture",
       "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
-      "label": "Massey, Anne. *Art Deco, 1920–1940*. Oxford University Press. — Greenhalgh, Paul, ed. *Art Nouveau, 1890–1914*. V&A Publications. — Frampton, Kenneth. *Modern Architecture: A Critical History*. 4th ed",
+      "label": "Art Nouveau and Art Deco source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Art Nouveau and Art Deco.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-02-core-concept-art-nouveau-art-deco.source-capture.md",
+      "sha256": "sha256:f3e20d30b08d6b7a47e30fb6e6fc776b9f76a878ff3df211ca64d6c49ed91644",
+      "locator": "V&A Art Nouveau/Whiplash and Art Deco captures plus Britannica Chrysler Building, 30-Second New York, HOA Module 2, and Salvan locators for Horta, Guimard, Gaudi, 1925 Paris exposition, William Van Alen, Chrysler Building, geometric Art Deco, and setback/crown vocabulary.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     },
     {
-      "source_id": "1b9e60ae-cfb3-4e09-8a43-e038d814bffa",
+      "source_id": "batch123-lea-hist-008-02-core-concept-source-map-refined",
       "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
-      "label": "Thames & Hudson",
+      "label": "Art Nouveau and Art Deco refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Art Nouveau and Art Deco and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-02-core-concept-art-nouveau-art-deco.refined.md",
+      "sha256": "sha256:b9ee7903a87472e318f8b6a37742ecfff46e555f690557abed2ee2d0be11b46c",
+      "locator": "V&A Art Nouveau/Whiplash and Art Deco captures plus Britannica Chrysler Building, 30-Second New York, HOA Module 2, and Salvan locators for Horta, Guimard, Gaudi, 1925 Paris exposition, William Van Alen, Chrysler Building, geometric Art Deco, and setback/crown vocabulary.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     }
   ]
 }

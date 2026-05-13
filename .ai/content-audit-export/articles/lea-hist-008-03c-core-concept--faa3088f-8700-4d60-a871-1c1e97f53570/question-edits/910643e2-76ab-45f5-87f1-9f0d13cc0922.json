@@ -1,0 +1,89 @@
+{
+  "question_id": "910643e2-76ab-45f5-87f1-9f0d13cc0922",
+  "baseline_hash": "sha256:1933a24023577dff6434d26e14dab8719f76299380fbb01692b078191b295a00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-03c-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-123",
+  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+    "parent_article_slug": "lea-hist-008-03c-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails.",
+    "checked_markdown_lines": [
+      "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch123-lea-hist-008-03c-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03c-core-concept-walter-gropius.source-capture.md",
+        "sha256": "sha256:648ca301b8da942720d5ce22d03e76544343f6d23a73068c217c180a244814bd",
+        "locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails."
+      },
+      {
+        "source_id": "batch123-lea-hist-008-03c-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03c-core-concept-walter-gropius.refined.md",
+        "sha256": "sha256:e2b16ba192434e26926aef947df74fa9d0915ebb0590a90927f31073e4c5907b",
+        "locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails."
+      }
+    ],
+    "local_source_safe_action": "Batch 123 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-123-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "910643e2-76ab-45f5-87f1-9f0d13cc0922",
+    "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+    "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+    "text": "Which of these statements best describes Walter Gropius's role in the Bauhaus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "He directed the school during its most austere and geometric phase, emphasizing minimalism and simplicity"
+      },
+      {
+        "id": "b",
+        "text": "He founded the school and set its foundational philosophy of total design integration; directed 1919–1928"
+      },
+      {
+        "id": "c",
+        "text": "He emphasized functionalism and social responsibility for working-class needs, focusing on practical design solutions"
+      },
+      {
+        "id": "d",
+        "text": "He closed the school when the Nazi regime came to power, marking the end of an era in design education"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "He directed the school during its most austere and geometric phase, emphasizing minimalism and simplicity does not match the source-safe Walter Gropius/Bauhaus cue in the linked article.",
+      "c": "He emphasized functionalism and social responsibility for working-class needs, focusing on practical design solutions does not match the source-safe Walter Gropius/Bauhaus cue in the linked article.",
+      "d": "He closed the school when the Nazi regime came to power, marking the end of an era in design education does not match the source-safe Walter Gropius/Bauhaus cue in the linked article.",
+      "correct": "He founded the school and set its foundational philosophy of total design integration; directed 1919–1928 matches the Batch 123 local source anchors for Walter Gropius, Bauhaus founding and pedagogy, Dessau, Fagus Factory, and Gropius House.",
+      "takeaway": "Treat Bauhaus as a school and design pedagogy, not only a visual style; keep Gropius, Hannes Meyer, and Mies directorships distinct."
+    },
+    "explanation": "He founded the school and set its foundational philosophy of total design integration; directed 1919–1928 matches the Batch 123 local source anchors for Walter Gropius, Bauhaus founding and pedagogy, Dessau, Fagus Factory, and Gropius House. Treat Bauhaus as a school and design pedagogy, not only a visual style; keep Gropius, Hannes Meyer, and Mies directorships distinct.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "ID"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-008-03C-002",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:25.729652+00:00",
+    "updated_at": "2026-05-14T01:06:00.000+08:00",
+    "content_hash": "sha256:1933a24023577dff6434d26e14dab8719f76299380fbb01692b078191b295a00"
+  }
+}

@@ -1,56 +1,38 @@
 {
   "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:a14ae4dfaf1207414fbb0b5a39c4769b394e78f14cdfc02838b54fc46acce80f",
-  "source_count": 4,
+  "sources_hash": "sha256:ef75fcf17d60b09a2af3d53496a5fc5f5ac71192515853354e11ca0b33f26696",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "d5ae2e6d-f2b2-4d7b-a97e-74e3ebf8a26f",
+      "source_id": "batch123-lea-hist-008-03a-core-concept-source-map-capture",
       "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
-      "label": "Le Corbusier. *Towards a New Architecture*. Translated by Frederick Etchells",
+      "label": "Le Corbusier source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "bc517bd2-6784-4cea-9806-08e8af027a7c",
-      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
-      "label": "Dover Publications. — Frampton, Kenneth. *Modern Architecture: A Critical History*. 4th ed",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Le Corbusier.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03a-core-concept-le-corbusier.source-capture.md",
+      "sha256": "sha256:001cf4670584b2de25c543304026e47c7955e4e8cdfdf38ee18ab303688fc004",
+      "locator": "Villa Savoye official/Fondation Le Corbusier captures plus 20th Century Architects 3, HOA Module 2, and Salvan locators for Five Points, 1927 formulation, Villa Savoye 1928-1931, pilotis, roof garden, free plan, ribbon windows, free facade, reinforced concrete, Modulor, Unite, Chandigarh, and Ronchamp guardrails.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     },
     {
-      "source_id": "9e52c899-8a7d-428c-8d24-20d7d5b3e21b",
+      "source_id": "batch123-lea-hist-008-03a-core-concept-source-map-refined",
       "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
-      "label": "Thames & Hudson. — Giedion, Sigfried. *Space, Time and Architecture*. 5th ed",
+      "label": "Le Corbusier refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Le Corbusier and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03a-core-concept-le-corbusier.refined.md",
+      "sha256": "sha256:4f1ebf5d6c8a35b79749d62390af008806fcc621be08bbce699429d8d4174b94",
+      "locator": "Villa Savoye official/Fondation Le Corbusier captures plus 20th Century Architects 3, HOA Module 2, and Salvan locators for Five Points, 1927 formulation, Villa Savoye 1928-1931, pilotis, roof garden, free plan, ribbon windows, free facade, reinforced concrete, Modulor, Unite, Chandigarh, and Ronchamp guardrails.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "6218e3db-87f2-4abf-bd10-b8244d808be8",
-      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
-      "label": "Harvard University Press",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     }
   ]
 }

@@ -1,0 +1,89 @@
+{
+  "question_id": "e4edb290-4e67-4585-806f-5d95860d3fa3",
+  "baseline_hash": "sha256:5dc81f6c2e16d89f58c49d24b2057c0589e64ddc4f6cb981287b6498db6951f8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-02-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-123",
+  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "parent_article_slug": "lea-hist-008-02-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "V&A Art Nouveau/Whiplash and Art Deco captures plus Britannica Chrysler Building, 30-Second New York, HOA Module 2, and Salvan locators for Horta, Guimard, Gaudi, 1925 Paris exposition, William Van Alen, Chrysler Building, geometric Art Deco, and setback/crown vocabulary.",
+    "checked_markdown_lines": [
+      "V&A Art Nouveau/Whiplash and Art Deco captures plus Britannica Chrysler Building, 30-Second New York, HOA Module 2, and Salvan locators for Horta, Guimard, Gaudi, 1925 Paris exposition, William Van Alen, Chrysler Building, geometric Art Deco, and setback/crown vocabulary."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch123-lea-hist-008-02-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-02-core-concept-art-nouveau-art-deco.source-capture.md",
+        "sha256": "sha256:f3e20d30b08d6b7a47e30fb6e6fc776b9f76a878ff3df211ca64d6c49ed91644",
+        "locator": "V&A Art Nouveau/Whiplash and Art Deco captures plus Britannica Chrysler Building, 30-Second New York, HOA Module 2, and Salvan locators for Horta, Guimard, Gaudi, 1925 Paris exposition, William Van Alen, Chrysler Building, geometric Art Deco, and setback/crown vocabulary."
+      },
+      {
+        "source_id": "batch123-lea-hist-008-02-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-02-core-concept-art-nouveau-art-deco.refined.md",
+        "sha256": "sha256:b9ee7903a87472e318f8b6a37742ecfff46e555f690557abed2ee2d0be11b46c",
+        "locator": "V&A Art Nouveau/Whiplash and Art Deco captures plus Britannica Chrysler Building, 30-Second New York, HOA Module 2, and Salvan locators for Horta, Guimard, Gaudi, 1925 Paris exposition, William Van Alen, Chrysler Building, geometric Art Deco, and setback/crown vocabulary."
+      }
+    ],
+    "local_source_safe_action": "Batch 123 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-123-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "e4edb290-4e67-4585-806f-5d95860d3fa3",
+    "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "topic_id": "ad5324e6-626d-46e8-ad5d-69c9ae4a485e",
+    "text": "A building features bold geometric chevrons, setback massing stepping back from lower facades, a gleaming metal crown, and celebrates vertical lines and machine-age technology. Which design movement does this describe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Art Nouveau"
+      },
+      {
+        "id": "b",
+        "text": "Art Deco"
+      },
+      {
+        "id": "c",
+        "text": "Streamline Moderne"
+      },
+      {
+        "id": "d",
+        "text": "Gothic Revival"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Art Nouveau does not match the source-safe Art Nouveau versus Art Deco cue in the linked article.",
+      "c": "Streamline Moderne does not match the source-safe Art Nouveau versus Art Deco cue in the linked article.",
+      "d": "Gothic Revival does not match the source-safe Art Nouveau versus Art Deco cue in the linked article.",
+      "correct": "Art Deco matches the Batch 123 local source anchors that separate Art Nouveau organic whiplash/integrated design from Art Deco geometric machine-age vocabulary.",
+      "takeaway": "Use whiplash, Horta, Guimard, and organic line for Art Nouveau; use 1925 Paris, geometric motifs, Van Alen, and Chrysler for Art Deco."
+    },
+    "explanation": "Art Deco matches the Batch 123 local source anchors that separate Art Nouveau organic whiplash/integrated design from Art Deco geometric machine-age vocabulary. Use whiplash, Horta, Guimard, and organic line for Art Nouveau; use 1925 Paris, geometric motifs, Van Alen, and Chrysler for Art Deco.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "recall",
+    "practice_context": [
+      "DESC"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-008-02-003",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:25.310909+00:00",
+    "updated_at": "2026-05-14T01:06:00.000+08:00",
+    "content_hash": "sha256:5dc81f6c2e16d89f58c49d24b2057c0589e64ddc4f6cb981287b6498db6951f8"
+  }
+}

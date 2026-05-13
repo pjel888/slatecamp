@@ -1,0 +1,89 @@
+{
+  "question_id": "bd92bd05-8552-4549-b61b-02be80e33d22",
+  "baseline_hash": "sha256:923925b6eb2272afcdc8c8e5781fd1a8f2a647fae44297f1bd765eeafc2689d5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-03c-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-123",
+  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+    "parent_article_slug": "lea-hist-008-03c-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails.",
+    "checked_markdown_lines": [
+      "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch123-lea-hist-008-03c-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03c-core-concept-walter-gropius.source-capture.md",
+        "sha256": "sha256:648ca301b8da942720d5ce22d03e76544343f6d23a73068c217c180a244814bd",
+        "locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails."
+      },
+      {
+        "source_id": "batch123-lea-hist-008-03c-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03c-core-concept-walter-gropius.refined.md",
+        "sha256": "sha256:e2b16ba192434e26926aef947df74fa9d0915ebb0590a90927f31073e4c5907b",
+        "locator": "Bauhaus-Archiv chronology, Bauhaus Dessau Foundation, UNESCO Fagus Factory, Historic New England Gropius House, 20th Century Architects 2, HOA Module 2, and Salvan locators for Bauhaus founding, Dessau move/building, craft-industry pedagogy, Fagus curtain-wall prototype, and Gropius House guardrails."
+      }
+    ],
+    "local_source_safe_action": "Batch 123 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-123-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "bd92bd05-8552-4549-b61b-02be80e33d22",
+    "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+    "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+    "text": "The Bauhaus approach to design integrated craft mastery with industrial production by [blank].",
+    "options": [
+      {
+        "id": "a",
+        "text": "abandoning handcraft entirely in favor of purely industrial methods, which was a radical departure from traditional practices"
+      },
+      {
+        "id": "b",
+        "text": "proving that artistic principles could improve mass-produced objects, creating beautiful products accessible to everyone"
+      },
+      {
+        "id": "c",
+        "text": "rejecting industrial production as soulless and returning exclusively to traditional craft, emphasizing the value of handmade quality"
+      },
+      {
+        "id": "d",
+        "text": "separating craft and industry into specialized schools, which allowed for focused development in each area"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "abandoning handcraft entirely in favor of purely industrial methods, which was a radical departure from traditional practices does not match the source-safe Walter Gropius/Bauhaus cue in the linked article.",
+      "c": "rejecting industrial production as soulless and returning exclusively to traditional craft, emphasizing the value of handmade quality does not match the source-safe Walter Gropius/Bauhaus cue in the linked article.",
+      "d": "separating craft and industry into specialized schools, which allowed for focused development in each area does not match the source-safe Walter Gropius/Bauhaus cue in the linked article.",
+      "correct": "proving that artistic principles could improve mass-produced objects, creating beautiful products accessible to everyone matches the Batch 123 local source anchors for Walter Gropius, Bauhaus founding and pedagogy, Dessau, Fagus Factory, and Gropius House.",
+      "takeaway": "Treat Bauhaus as a school and design pedagogy, not only a visual style; keep Gropius, Hannes Meyer, and Mies directorships distinct."
+    },
+    "explanation": "proving that artistic principles could improve mass-produced objects, creating beautiful products accessible to everyone matches the Batch 123 local source anchors for Walter Gropius, Bauhaus founding and pedagogy, Dessau, Fagus Factory, and Gropius House. Treat Bauhaus as a school and design pedagogy, not only a visual style; keep Gropius, Hannes Meyer, and Mies directorships distinct.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "ST"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-008-03C-009",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:25.729652+00:00",
+    "updated_at": "2026-05-14T01:06:00.000+08:00",
+    "content_hash": "sha256:923925b6eb2272afcdc8c8e5781fd1a8f2a647fae44297f1bd765eeafc2689d5"
+  }
+}

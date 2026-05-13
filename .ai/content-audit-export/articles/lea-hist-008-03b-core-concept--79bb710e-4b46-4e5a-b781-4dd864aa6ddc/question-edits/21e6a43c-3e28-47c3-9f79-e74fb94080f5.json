@@ -1,0 +1,89 @@
+{
+  "question_id": "21e6a43c-3e28-47c3-9f79-e74fb94080f5",
+  "baseline_hash": "sha256:1abff2ff1c6b4cdd896af80a3e516cbde4f44e9d2735b49b81d856c943a15b66",
+  "action": "replace",
+  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-03b-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-123",
+  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+    "parent_article_slug": "lea-hist-008-03b-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails.",
+    "checked_markdown_lines": [
+      "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch123-lea-hist-008-03b-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.source-capture.md",
+        "sha256": "sha256:903df6ca26b70892acccc28a2814f85b0ed4a7cbf16dda308d3dfd118c6a9024",
+        "locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails."
+      },
+      {
+        "source_id": "batch123-lea-hist-008-03b-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.refined.md",
+        "sha256": "sha256:cc6095184e625dad8d131a0b3ab7cc93a118963ce0035631fa6b7fd619d444a4",
+        "locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails."
+      }
+    ],
+    "local_source_safe_action": "Batch 123 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-123-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "21e6a43c-3e28-47c3-9f79-e74fb94080f5",
+    "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+    "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+    "text": "How does Mies van der Rohe's approach to program and space fundamentally differ from Le Corbusier's?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mies organizes space according to function; Le Corbusier prioritizes artistic expression, often disregarding functional constraints"
+      },
+      {
+        "id": "b",
+        "text": "Mies prioritizes reduction and essence over functional organization; Le Corbusier organizes space according to specific programmatic requirements"
+      },
+      {
+        "id": "c",
+        "text": "Both architects use identical design methodologies, focusing on modernist principles without deviation"
+      },
+      {
+        "id": "d",
+        "text": "Le Corbusier focuses on structure; Mies focuses on aesthetics, emphasizing minimalism and open space"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Mies organizes space according to function; Le Corbusier prioritizes artistic expression, often disregarding functional constraints does not match the source-safe Mies cue in the linked article.",
+      "c": "Both architects use identical design methodologies, focusing on modernist principles without deviation does not match the source-safe Mies cue in the linked article.",
+      "d": "Le Corbusier focuses on structure; Mies focuses on aesthetics, emphasizing minimalism and open space does not match the source-safe Mies cue in the linked article.",
+      "correct": "Mies prioritizes reduction and essence over functional organization; Le Corbusier organizes space according to specific programmatic requirements matches the Batch 123 local source anchors for Mies: less-is-more reduction, Barcelona Pavilion, Farnsworth House, Seagram Building, steel/glass/bronze detail, and universal-space vocabulary.",
+      "takeaway": "For Mies questions, separate Barcelona Pavilion, Farnsworth House, and Seagram Building cues and avoid importing Brutalist concrete vocabulary."
+    },
+    "explanation": "Mies prioritizes reduction and essence over functional organization; Le Corbusier organizes space according to specific programmatic requirements matches the Batch 123 local source anchors for Mies: less-is-more reduction, Barcelona Pavilion, Farnsworth House, Seagram Building, steel/glass/bronze detail, and universal-space vocabulary. For Mies questions, separate Barcelona Pavilion, Farnsworth House, and Seagram Building cues and avoid importing Brutalist concrete vocabulary.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "design_application",
+    "practice_context": [
+      "CMP"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-008-03B-004",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:25.729652+00:00",
+    "updated_at": "2026-05-14T01:06:00.000+08:00",
+    "content_hash": "sha256:1abff2ff1c6b4cdd896af80a3e516cbde4f44e9d2735b49b81d856c943a15b66"
+  }
+}

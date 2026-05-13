@@ -1,3 +1,13 @@
+## Batch 123 Freeze Readiness - 2026-05-14
+
+- Status: pending final validation gates.
+- Source readiness: official/authoritative URLs captured locally and refined for all five selected article clusters.
+- Question readiness: 54/54 linked question edits generated and applied locally.
+- Known source-sensitive corrections: Villa Savoye date range, Five Points date, Farnsworth date wording, Van Alen spelling, Seagram expressive bronze/I-beam guardrail, Bauhaus-as-school guardrail.
+- Freeze condition: only after compose/diff/validate, UI-block edit validation, scoped JSON/hash/placeholder/question/stale-error checks, targeted content-audit tests, and git diff checks pass.
+
+---
+
 # Batch 122 Freeze Readiness
 
 Generated: 2026-05-14T00:20:53.000+08:00

@@ -1,44 +1,38 @@
 {
   "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:7e6e50156c62606f22d01db525c8a9e0d59f26a35aded437654829fd24620000",
-  "source_count": 3,
+  "sources_hash": "sha256:a26e1bd5eee7aa2ab3aeb1cc97316945e5003f2fc4fa88aca679dd69e3d2e803",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "a40ab461-e9ba-4dd6-84d7-509aa5e22d8c",
+      "source_id": "batch123-lea-hist-008-01-core-concept-source-map-capture",
       "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
-      "label": "Giedion, Sigfried. *Space, Time and Architecture*. 5th ed",
+      "label": "The 19th Century: Industrial Revolution and Architecture source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "47b5d9a1-6f02-4bc9-ab29-7fdcb3ae523f",
-      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
-      "label": "Harvard University Press. — Frampton, Kenneth. *Modern Architecture: A Critical History*. 4th ed",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for The 19th Century: Industrial Revolution and Architecture.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-01-core-concept-19th-century-industrial-revolution-architecture.source-capture.md",
+      "sha256": "sha256:32e9f80c764676557e1f3c1928c1d3339855502034b0bf48532ac0ec3c0c584b",
+      "locator": "Britannica Crystal Palace/Eiffel Tower/Jenney and Chicago Architecture Center Home Insurance anchors plus HOA Module 2 and Salvan locators for Crystal Palace, Eiffel Tower, Home Insurance Building, Sullivan, Arts and Crafts, iron/glass, and skeleton-frame vocabulary.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     },
     {
-      "source_id": "c12f6061-97be-49db-bd40-53a03bd72803",
+      "source_id": "batch123-lea-hist-008-01-core-concept-source-map-refined",
       "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
-      "label": "Thames & Hudson",
+      "label": "The 19th Century: Industrial Revolution and Architecture refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for The 19th Century: Industrial Revolution and Architecture and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-01-core-concept-19th-century-industrial-revolution-architecture.refined.md",
+      "sha256": "sha256:2c7110e0769d21e680c6b6833f3f5b4ce7e72f086222ea7f9fd2e2594019bd4c",
+      "locator": "Britannica Crystal Palace/Eiffel Tower/Jenney and Chicago Architecture Center Home Insurance anchors plus HOA Module 2 and Salvan locators for Crystal Palace, Eiffel Tower, Home Insurance Building, Sullivan, Arts and Crafts, iron/glass, and skeleton-frame vocabulary.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     }
   ]
 }

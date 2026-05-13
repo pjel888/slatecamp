@@ -1,3 +1,13 @@
+## Batch 123 Coordination Update - 2026-05-14
+
+- Mode: internet-enabled local-first source-map/reservation pass.
+- Selected bundles: lea-hist-008-01-core-concept, lea-hist-008-02-core-concept, lea-hist-008-03a-core-concept, lea-hist-008-03b-core-concept, lea-hist-008-03c-core-concept.
+- Scope evidence: 5 article clusters, 54 linked questions, 54 question edits, 10 local source artifacts.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main.
+- Stop condition: run compose/diff/validate, scoped checks, targeted tests, diff checks, then stage only Batch 123/source files for `chore(content): accept source-audited batch 123`.
+
+---
+
 # Batch 122 Production-Line Coordination
 
 Generated: 2026-05-14T00:20:53.000+08:00

@@ -1,0 +1,89 @@
+{
+  "question_id": "327e00eb-bcb4-4c73-b7c1-0e36a4557a90",
+  "baseline_hash": "sha256:d9d6361986f062a5721239cdf332b94bd2d1d05ea60f0733e9e5a8606430eefd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-03b-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-123",
+  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+    "parent_article_slug": "lea-hist-008-03b-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails.",
+    "checked_markdown_lines": [
+      "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "batch123-lea-hist-008-03b-core-concept-source-map-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.source-capture.md",
+        "sha256": "sha256:903df6ca26b70892acccc28a2814f85b0ed4a7cbf16dda308d3dfd118c6a9024",
+        "locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails."
+      },
+      {
+        "source_id": "batch123-lea-hist-008-03b-core-concept-source-map-refined",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.refined.md",
+        "sha256": "sha256:cc6095184e625dad8d131a0b3ab7cc93a118963ce0035631fa6b7fd619d444a4",
+        "locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails."
+      }
+    ],
+    "local_source_safe_action": "Batch 123 source-mapped the article and linked questions together using local captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-123-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "327e00eb-bcb4-4c73-b7c1-0e36a4557a90",
+    "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+    "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+    "text": "Which source-safe design-to-construction anchor best fits the Farnsworth House?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Designed 1936; constructed 1938"
+      },
+      {
+        "id": "b",
+        "text": "Designed 1943; constructed 1945"
+      },
+      {
+        "id": "c",
+        "text": "Designed 1945; constructed 1950-1951"
+      },
+      {
+        "id": "d",
+        "text": "Designed 1952; constructed 1955"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Designed 1936; constructed 1938 does not match the source-safe Mies cue in the linked article.",
+      "b": "Designed 1943; constructed 1945 does not match the source-safe Mies cue in the linked article.",
+      "d": "Designed 1952; constructed 1955 does not match the source-safe Mies cue in the linked article.",
+      "correct": "Designed 1945; constructed 1950-1951 matches the Batch 123 local source anchors for Mies: less-is-more reduction, Barcelona Pavilion, Farnsworth House, Seagram Building, steel/glass/bronze detail, and universal-space vocabulary.",
+      "takeaway": "For Mies questions, separate Barcelona Pavilion, Farnsworth House, and Seagram Building cues and avoid importing Brutalist concrete vocabulary."
+    },
+    "explanation": "Designed 1945; constructed 1950-1951 matches the Batch 123 local source anchors for Mies: less-is-more reduction, Barcelona Pavilion, Farnsworth House, Seagram Building, steel/glass/bronze detail, and universal-space vocabulary. For Mies questions, separate Barcelona Pavilion, Farnsworth House, and Seagram Building cues and avoid importing Brutalist concrete vocabulary.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "CH"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-008-03B-007",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:25.729652+00:00",
+    "updated_at": "2026-05-14T01:06:00.000+08:00",
+    "content_hash": "sha256:d9d6361986f062a5721239cdf332b94bd2d1d05ea60f0733e9e5a8606430eefd"
+  }
+}

@@ -1,32 +1,38 @@
 {
   "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:3a29cde5becebed0865e001de8da52104a908e39e1db6d1285555309d2ec1442",
+  "sources_hash": "sha256:bf641a5efc8bffea40c99636a5788e440d7737c096f6d9b060d733c0e9df2095",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "94db7a78-f202-4322-96ca-98349a638bc7",
+      "source_id": "batch123-lea-hist-008-03b-core-concept-source-map-capture",
       "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
-      "label": "Frampton, Kenneth. *Mies van der Rohe*. Thames & Hudson. — Schulze, Franz. *Mies van der Rohe: A Life*. University of Chicago Press. — Giedion, Sigfried. *Space, Time and Architecture*. 5th ed",
+      "label": "Ludwig Mies van der Rohe source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Ludwig Mies van der Rohe.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.source-capture.md",
+      "sha256": "sha256:903df6ca26b70892acccc28a2814f85b0ed4a7cbf16dda308d3dfd118c6a9024",
+      "locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     },
     {
-      "source_id": "c7b77502-44d4-432e-827b-84590138f62f",
+      "source_id": "batch123-lea-hist-008-03b-core-concept-source-map-refined",
       "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
-      "label": "Harvard University Press",
+      "label": "Ludwig Mies van der Rohe refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Ludwig Mies van der Rohe and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-123/lea-hist-008-03b-core-concept-ludwig-mies-van-der-rohe.refined.md",
+      "sha256": "sha256:cc6095184e625dad8d131a0b3ab7cc93a118963ce0035631fa6b7fd619d444a4",
+      "locator": "Fundacio Mies van der Rohe Pavilion, NPS Farnsworth House, Britannica Seagram Building, HDC Seagram, 20th Century Architects 2, HOA Module 2, and 30-Second New York locators for Barcelona Pavilion, less is more, universal space, Farnsworth design/construction, Seagram bronze/glass curtain wall, and Mies-versus-Brutalism guardrails.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:06:00.000+08:00",
+      "updated_at": "2026-05-14T01:06:00.000+08:00"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:606b8436f6296adb32c8cd572c36ed5a9e82ff431c56f18b4c0947ba76070cc6",
+  "linked_questions_hash": "sha256:26af3b3850f1e9d3d32b58e05ea3dde7b38b000aeebd896d6b9002ac7e09df9c",
   "question_count": 12,
   "questions": [
     {
@@ -33,13 +33,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Le Corbusier was explicitly anti-intuitive; he believed in rational, theoretical foundations.",
-        "c": "Modernism explicitly rejected historical copying.",
-        "d": "Le Corbusier integrated aesthetics with function; neither is purely separate.",
-        "correct": "Le Corbusier's systematic articulation and demonstration of principles in actual buildings shows his belief that architecture can be based on teachable, communicable principles—not intuition or tradition.",
-        "takeaway": "Le Corbusier's systematic articulation and demonstration of principles in actual buildings shows his belief that architecture can be based on teachable, communicable principles—not intuition or tradition."
+        "a": "Design as intuitive artistic expression without theoretical framework, relying solely on the architect's vision does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "Design as copying historical precedents, without adaptation to modern needs or contexts does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "Design as purely functional, with no aesthetic consideration, focusing only on utility does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "Design as a system of principles that can be methodically applied and demonstrated in specific buildings matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "Le Corbusier was explicitly anti-intuitive; he believed in rational, theoretical foundations. Modernism explicitly rejected historical copying. Le Corbusier integrated aesthetics with function; neither is purely separate. Le Corbusier's systematic articulation and demonstration of principles in actual buildings shows his belief that architecture can be based on teachable, communicable principles—not intuition or tradition. Le Corbusier's systematic articulation and demonstration of principles in actual buildings shows his belief that architecture can be based on teachable, communicable principles—not intuition or tradition.",
+      "explanation": "Design as a system of principles that can be methodically applied and demonstrated in specific buildings matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -53,8 +53,8 @@
       "model_id": "ALE-HIST-008-03A-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.002382+00:00",
-      "content_hash": "sha256:a731280433472ef3cd4754d573bf2f0a9b4643f5578adfade63369044860bbce"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:180083c262ed6d0c28172a030339e22f803213bdf388c564ccf48467ad97f137"
     },
     {
       "question_id": "dad4f6d7-8850-4c57-be01-a6b1a37fa9e2",
@@ -85,13 +85,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Modernism rejected ornamental styling; the free facade enabled functional design, not stylistic freedom.",
-        "c": "External cladding was still necessary; the point was design freedom, not elimination.",
-        "d": "Facades remain functionally important (weather protection, thermal control); the point is liberation from structural constraint, not irrelevance.",
-        "correct": "The free facade's significance is that it removed the tyranny of structural necessity. The exterior could now be designed for its specific performance requirements and aesthetic intentions, not dictated by column positions.",
-        "takeaway": "The exterior could now be designed for its specific performance requirements and aesthetic intentions, not dictated by column positions."
+        "a": "It allowed architects to apply any ornamental style they preferred to the facade, enhancing aesthetic flexibility does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "It eliminated the need for any external cladding material, reducing construction costs and simplifying design does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "It proved that facades were purely decorative and not functionally important, challenging traditional architectural norms does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "It liberated the facade from structural necessity, enabling design for performance (light, views, climate) rather than structural expression matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "Modernism rejected ornamental styling; the free facade enabled functional design, not stylistic freedom. External cladding was still necessary; the point was design freedom, not elimination. Facades remain functionally important (weather protection, thermal control); the point is liberation from structural constraint, not irrelevance. The free facade's significance is that it removed the tyranny of structural necessity. The exterior could now be designed for its specific performance requirements and aesthetic intentions, not dictated by column positions. The exterior could now be designed for its specific performance requirements and aesthetic intentions, not dictated by column positions.",
+      "explanation": "It liberated the facade from structural necessity, enabling design for performance (light, views, climate) rather than structural expression matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -105,8 +105,8 @@
       "model_id": "ALE-HIST-008-03A-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.783693+00:00",
-      "content_hash": "sha256:26df33edee10817640958cefcf0dcb205e4690eb71b4b8bcf37b9e426d1994b2"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:a8a5402123366f497e48a6d8f3de4e930228dbddca871aef80dd130ddcdb1a36"
     },
     {
       "question_id": "e5864778-4887-4f7d-b524-0f8289b71bd9",
@@ -137,13 +137,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While Le Corbusier pursued geometric principles, they always served human function and scale.",
-        "c": "The Modulor actually advocates modular, standardized proportions.",
-        "d": "Le Corbusier rejected ornament; the Modulor isn't about justifying decoration.",
-        "correct": "The Modulor represents Le Corbusier's humanistic modernism: despite his geometric rationalism, he insisted all design must relate to human body and behavior. Science serves humanity, not abstraction.",
-        "takeaway": "Science serves humanity, not abstraction."
+        "a": "That architecture should be purely geometric and abstract, devoid of any human-centric considerations does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "That architects should never use standard modular components, as they limit creative expression does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "That ornament is acceptable if mathematically justified, aligning with the principles of classical architecture does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "That scientific design methods should ensure all elements relate to human measurements and behavior matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "While Le Corbusier pursued geometric principles, they always served human function and scale. The Modulor actually advocates modular, standardized proportions. Le Corbusier rejected ornament; the Modulor isn't about justifying decoration. The Modulor represents Le Corbusier's humanistic modernism: despite his geometric rationalism, he insisted all design must relate to human body and behavior. Science serves humanity, not abstraction. Science serves humanity, not abstraction.",
+      "explanation": "That scientific design methods should ensure all elements relate to human measurements and behavior matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -157,8 +157,8 @@
       "model_id": "ALE-HIST-008-03A-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.925615+00:00",
-      "content_hash": "sha256:5f65e7a472d9e05d6520bc5cb448c191f7b3887d50139de41d89dc4cb25cc2c0"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:b528b5e3470d8f44ac433f471ac028fd0674cc8cb3164fe97bf0906ada1d5e97"
     },
     {
       "question_id": "e378f659-75df-4f5d-9464-fcf99ff980f1",
@@ -189,13 +189,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Free plan refers to interior organization, not fenestration.",
-        "b": "Pilotis are structural columns, not windows.",
-        "c": "Roof gardens are habitable spaces, not fenestration features.",
-        "correct": "Ribbon windows are continuous horizontal glazing enabled by the free facade. They dissolve boundaries and express the horizontal geometry of modern slabs.",
-        "takeaway": "They dissolve boundaries and express the horizontal geometry of modern slabs."
+        "a": "Free plan, which allows for flexible interior layouts without structural constraints does not match the source-safe Le Corbusier cue in the linked article.",
+        "b": "Pilotis, which are columns that lift the building above the ground, providing open space underneath does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "Roof garden, which integrates green space on the roof for environmental and aesthetic benefits does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "Ribbon windows matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "Free plan refers to interior organization, not fenestration. Pilotis are structural columns, not windows. Roof gardens are habitable spaces, not fenestration features. Ribbon windows are continuous horizontal glazing enabled by the free facade. They dissolve boundaries and express the horizontal geometry of modern slabs. They dissolve boundaries and express the horizontal geometry of modern slabs.",
+      "explanation": "Ribbon windows matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "recall",
@@ -209,8 +209,8 @@
       "model_id": "ALE-HIST-008-03A-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.395487+00:00",
-      "content_hash": "sha256:c6cc225642c19562f0b848d24ad9372430440bd9b8cf37c07e17b7eeaed4eb5e"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:f631cd0c8b9c298e1d4cda4df52f88668866ce09ff6200bef5107d94e21c5344"
     },
     {
       "question_id": "4e161f47-ed20-4813-bbd7-d4c884aea051",
@@ -241,13 +241,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1920 is too early; Le Corbusier was still developing his theoretical framework.",
-        "c": "1929 was when Villa Savoye was designed; the principles were formulated three years earlier.",
-        "d": "1932 was after the Five Points were already established and demonstrated in buildings.",
-        "correct": "Le Corbusier formulated the Five Points in 1926. These principles became the foundational DNA of modernism.",
-        "takeaway": "These principles became the foundational DNA of modernism."
+        "a": "1920 does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "1929 does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "1932 does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "1927 matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "1920 is too early; Le Corbusier was still developing his theoretical framework. 1929 was when Villa Savoye was designed; the principles were formulated three years earlier. 1932 was after the Five Points were already established and demonstrated in buildings. Le Corbusier formulated the Five Points in 1926. These principles became the foundational DNA of modernism. These principles became the foundational DNA of modernism.",
+      "explanation": "1927 matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -261,8 +261,8 @@
       "model_id": "ALE-HIST-008-03A-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:02.858871+00:00",
-      "content_hash": "sha256:997f93e04e6093a83dd8ba2ee957c0a05a661d32c5e33b5678ef82e205393dc6"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:82f04b268f7c44d64056157e7fdfe332a4025c72e39e4d48f63c56cf818e294a"
     },
     {
       "question_id": "21e32e48-0231-4386-891e-cfa8deceea5d",
@@ -293,13 +293,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Ornament elimination is a tactic, not the fundamental philosophical break.",
-        "c": "Superiority claims are subjective; the point is structural and philosophical difference.",
-        "d": "The Five Points maintain durability concerns; the difference is about freedom, not negligence.",
-        "correct": "The philosophical revolution is that design decisions are no longer dictated by structural constraints. Walls can be anywhere; facades can be designed freely; roofs become habitable. This shift enables human-centered, functional design.",
-        "takeaway": "This shift enables human-centered, functional design."
+        "a": "They eliminate all ornament from architecture entirely, focusing solely on function and form does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "They prove that modern buildings are superior to traditional ones in every way, which is a subjective interpretation does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "They abandon all consideration of durability in favor of aesthetic innovation, which is a controversial stance does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "They liberate interior and exterior design from structural necessity, allowing design to serve function, aesthetics, and human experience rather than being constrained by construction logic matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "Ornament elimination is a tactic, not the fundamental philosophical break. Superiority claims are subjective; the point is structural and philosophical difference. The Five Points maintain durability concerns; the difference is about freedom, not negligence. The philosophical revolution is that design decisions are no longer dictated by structural constraints. Walls can be anywhere; facades can be designed freely; roofs become habitable. This shift enables human-centered, functional design. This shift enables human-centered, functional design.",
+      "explanation": "They liberate interior and exterior design from structural necessity, allowing design to serve function, aesthetics, and human experience rather than being constrained by construction logic matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -313,8 +313,8 @@
       "model_id": "ALE-HIST-008-03A-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:02.731656+00:00",
-      "content_hash": "sha256:750c0aca0d04fff5426e2d581f4fa30afffcb326f3ec3089ec14044b334eefb4"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:7802cda2b4dd8ff5a6e6e3834e6d7e8be563a19a930f4bcf8951f8c6cd66431c"
     },
     {
       "question_id": "f906ac3e-3523-47a7-acc5-05d3768c782d",
@@ -345,13 +345,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Dimensions weren't reduced; walls could be any size because they had no structural function.",
-        "c": "Zoning laws don't require open interiors; the point is that walls *could* be anywhere, not that they must be absent.",
-        "d": "Cost is a practical concern, but the theoretical innovation is structural freedom, not economics.",
-        "correct": "The reinforced concrete frame carries all loads; interior walls become non-structural screens. This liberation from structural necessity is the essence of the free plan.",
-        "takeaway": "This liberation from structural necessity is the essence of the free plan."
+        "b": "interior dimensions were reduced, allowing more flexible room configurations, especially in urban high-rise buildings where space is at a premium does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "zoning laws required all interior space to be open and unpartitioned, which was a common misconception during the early 20th century does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "the cost of interior partitions decreased, making them economical to add or remove, particularly in commercial office spaces does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "walls no longer needed to be load-bearing and could be moved freely without affecting structural stability matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": null,
+      "explanation": "walls no longer needed to be load-bearing and could be moved freely without affecting structural stability matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -365,8 +365,8 @@
       "model_id": "ALE-HIST-008-03A-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1169c8a4c7bf4013cc6927b7c15d20c5c6bed7104d103e85363ead03f48c80f4"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:47a48b3a7796d8abeac70e93aec6b6fa6bff8e0bc355881273c110bdfc465abc"
     },
     {
       "question_id": "d64084f2-8212-444c-b509-a6f168217e7e",
@@ -397,13 +397,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While steel frames also enabled modernism, Le Corbusier's Five Points specifically exploit concrete's qualities.",
-        "b": "Cast iron was a 19th-century innovation; concrete was modernism's enabling material.",
-        "d": "Glass and aluminum are cladding materials; concrete provides the structural skeleton.",
-        "correct": "Reinforced concrete enabled pilotis, free plans, and long spans with minimal supports. The Five Points directly respond to concrete's structural capabilities and required this material.",
-        "takeaway": "The Five Points directly respond to concrete's structural capabilities and required this material."
+        "a": "Steel frame structures does not match the source-safe Le Corbusier cue in the linked article.",
+        "b": "Cast iron lattice does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "Glass and aluminum curtain walls does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "Reinforced concrete matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "While steel frames also enabled modernism, Le Corbusier's Five Points specifically exploit concrete's qualities. Cast iron was a 19th-century innovation; concrete was modernism's enabling material. Glass and aluminum are cladding materials; concrete provides the structural skeleton. Reinforced concrete enabled pilotis, free plans, and long spans with minimal supports. The Five Points directly respond to concrete's structural capabilities and required this material. The Five Points directly respond to concrete's structural capabilities and required this material.",
+      "explanation": "Reinforced concrete matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -417,8 +417,8 @@
       "model_id": "ALE-HIST-008-03A-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.126143+00:00",
-      "content_hash": "sha256:fea58bd809cca19217e5a8149e38af10e184de2186266a3a7651f029ba45e110"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:639562d3904871961a71e75c355ff9cd0747e708a546d6eae9501b7ba0b0e834"
     },
     {
       "question_id": "92d19b15-8501-4f3b-8ae6-fb6636d2723f",
@@ -449,13 +449,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Notre-Dame du Haut (1950–1955) is architecturally important but represents a departure from the systematic Five Points doctrine; it's more sculptural and less dogmatic.",
-        "b": "Unité d'Habitation demonstrates some points (pilotis, free plan, facade, ribbon windows, roof garden) but at a megastructure scale different from Villa Savoye.",
-        "d": "Chandigarh is a city-scale master plan, not a building that demonstrates all Five Points.",
-        "correct": "Villa Savoye (1929–1931) is the canonical text for all Five Points: pilotis, free interior plan, free facade, ribbon windows, and roof garden are all clearly demonstrated.",
-        "takeaway": "Villa Savoye (1929–1931) is the canonical text for all Five Points: pilotis, free interior plan, free facade, ribbon windows, and roof garden are all clearly demonstrated."
+        "a": "Notre-Dame du Haut does not match the source-safe Le Corbusier cue in the linked article.",
+        "b": "Unité d'Habitation does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "Chandigarh does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "Villa Savoye matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "Notre-Dame du Haut (1950–1955) is architecturally important but represents a departure from the systematic Five Points doctrine; it's more sculptural and less dogmatic. Unité d'Habitation demonstrates some points (pilotis, free plan, facade, ribbon windows, roof garden) but at a megastructure scale different from Villa Savoye. Chandigarh is a city-scale master plan, not a building that demonstrates all Five Points. Villa Savoye (1929–1931) is the canonical text for all Five Points: pilotis, free interior plan, free facade, ribbon windows, and roof garden are all clearly demonstrated. Villa Savoye (1929–1931) is the canonical text for all Five Points: pilotis, free interior plan, free facade, ribbon windows, and roof garden are all clearly demonstrated.",
+      "explanation": "Villa Savoye matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -469,8 +469,8 @@
       "model_id": "ALE-HIST-008-03A-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.252395+00:00",
-      "content_hash": "sha256:6b762015a49da4142f8b9bb010bd19c986bc2fc5b4d61ad463e3f0f974eb357b"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:7e035beaeff7aad9770b654ce9b3fe77f111331927f10b1ffbf9db8752a39024"
     },
     {
       "question_id": "cefa8c7f-00cf-42ed-8d9b-2c712db79814",
@@ -501,13 +501,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Free plan refers to flexible interior layout, not structural support.",
-        "c": "Ribbon windows are continuous horizontal glazing, not structural columns.",
-        "d": "Roof gardens are habitable spaces on flat roofs, not structural elements.",
-        "correct": "Pilotis are free-standing posts that lift the building, creating open ground-floor space. This point directly reflects structural and philosophical principles of modernism.",
-        "takeaway": "This point directly reflects structural and philosophical principles of modernism."
+        "a": "Free plan does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "Ribbon windows does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "Roof garden does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "Pilotis matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "Free plan refers to flexible interior layout, not structural support. Ribbon windows are continuous horizontal glazing, not structural columns. Roof gardens are habitable spaces on flat roofs, not structural elements. Pilotis are free-standing posts that lift the building, creating open ground-floor space. This point directly reflects structural and philosophical principles of modernism. This point directly reflects structural and philosophical principles of modernism.",
+      "explanation": "Pilotis matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -521,45 +521,45 @@
       "model_id": "ALE-HIST-008-03A-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.52691+00:00",
-      "content_hash": "sha256:8a8e74e5fc2e24b6903ee8bec6dbea9c4a55e2b43e4a6585ca8a33ade42f2cc0"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:331d4d557d095546cdf07b14501cd3851eacfd3e2ab0091f5ef455f36f8b50a2"
     },
     {
       "question_id": "c9781bfa-2cfb-451f-a01c-74ec38b9af36",
       "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
       "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
-      "text": "Villa Savoye was designed in 1929 and constructed during which years?",
+      "text": "Villa Savoye is source-mapped to which design/build date range?",
       "options": [
         {
           "id": "a",
-          "text": "1926–1928"
+          "text": "1926-1928"
         },
         {
           "id": "b",
-          "text": "1928–1930"
+          "text": "1928-1931"
         },
         {
           "id": "c",
-          "text": "1929–1931"
+          "text": "1929-1930"
         },
         {
           "id": "d",
-          "text": "1931–1933"
+          "text": "1931-1933"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1926–1928 predates or overlaps construction; the building was completed later.",
-        "b": "1928–1930 dates overlap, but construction extended to 1931.",
-        "d": "1931–1933 is after construction began; the building was completed in 1931.",
-        "correct": "Villa Savoye's construction was 1929–1931, following its 1928 design. This timing makes it the first major public demonstration of all Five Points.",
-        "takeaway": "This timing makes it the first major public demonstration of all Five Points."
+        "a": "1926-1928 does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "1929-1930 does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "1931-1933 does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "1928-1931 matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": "1926–1928 predates or overlaps construction; the building was completed later. 1928–1930 dates overlap, but construction extended to 1931. 1931–1933 is after construction began; the building was completed in 1931. Villa Savoye's construction was 1929–1931, following its 1928 design. This timing makes it the first major public demonstration of all Five Points. This timing makes it the first major public demonstration of all Five Points.",
+      "explanation": "1928-1931 matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -573,8 +573,8 @@
       "model_id": "ALE-HIST-008-03A-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-05-06T15:46:03.652337+00:00",
-      "content_hash": "sha256:3e13cec36353fbdedf4084a3ef97033659e26d8900103495d6c818a1cd1598ac"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:e6ddc9de2515966b20f63512083a36baa94433155948cdf889f2599ca776c15f"
     },
     {
       "question_id": "6ff1fea4-9865-4586-9b1e-67c0eaefc3b4",
@@ -605,13 +605,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Arts and Crafts didn't reject all industrial materials; they opposed mass production's soullessness, which is different.",
-        "c": "Both movements unified aesthetic and functional concerns; neither was purely one or the other.",
-        "d": "While both emphasized honesty, the Five Points are specific architectural innovations, not a general design philosophy.",
-        "correct": "Both valued honesty, but the Five Points are specific structural-spatial innovations made possible by reinforced concrete and modern manufacturing. Arts and Crafts was a broader design philosophy about craftsmanship and materials.",
-        "takeaway": "Arts and Crafts was a broader design philosophy about craftsmanship and materials."
+        "a": "The Five Points embrace industrial materials, while Arts and Crafts rejected them entirely, focusing on traditional craftsmanship does not match the source-safe Le Corbusier cue in the linked article.",
+        "c": "The Five Points are purely aesthetic, while Arts and Crafts are purely functional, which oversimplifies both movements does not match the source-safe Le Corbusier cue in the linked article.",
+        "d": "There is no meaningful difference; both movements sought honest design, which is inaccurate does not match the source-safe Le Corbusier cue in the linked article.",
+        "correct": "The Five Points are structural and spatial principles enabling functional modernism; Arts and Crafts emphasized handcrafted quality and material honesty across all work matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
+        "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
       },
-      "explanation": null,
+      "explanation": "The Five Points are structural and spatial principles enabling functional modernism; Arts and Crafts emphasized handcrafted quality and material honesty across all work matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -625,8 +625,8 @@
       "model_id": "ALE-HIST-008-03A-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:70bc7e409e4ba56864d1e5ac76063cd8d7cf0f446a7f0f76acbe158906f7a625"
+      "updated_at": "2026-05-14T01:06:00.000+08:00",
+      "content_hash": "sha256:075784f01b85f8c06a2c7c498ac469abc8991259b4a73b438f94cd11d65e7882"
     }
   ]
 }
