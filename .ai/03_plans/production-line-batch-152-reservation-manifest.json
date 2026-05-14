@@ -1,0 +1,164 @@
+{
+  "batch": 152,
+  "batch_id": "reservation-batch-152-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T12:22:52+08:00",
+  "baseline": "d3d2ec5ee1",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after accepted Batch 151.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after accepted Batch 151 from the known next candidate lea-matl-007-04, then reserve the next sourceable materials finishing clusters in sorted residual order using verified local Vitruvius sources.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..151}-manifest.json",
+    "inspected_report_glob": ".ai/content-audit-export/source-audited-article-batch-{087..151}-local-first-*",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_artifacts": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "known_deferrals_not_reserved": [
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-009-01",
+    "lea-strc-009-02",
+    "lea-strc-009-03",
+    "lea-strc-012-01"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-matl-007-04",
+      "slug": "lea-matl-007-04-core-concept",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "title": "Paint systems",
+      "linked_question_count": 10,
+      "source_family": "paint_systems_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "salvan-building-materials-b077",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "bci-5e-b077",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "The article already carries verified local Salvan and BCI source records for paint/material preparation and construction assembly context.",
+      "risks": [
+        "Avoid unsupported VOC, DFT, ASTM adhesion, proprietary coating, or exact coverage-rate claims unless production captures additional source support.",
+        "Keep paint-system claims bounded to general material-system roles and preparation sequences supported by the local texts."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; only noted as a Batch 151 size-cap residual; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-007-05",
+      "slug": "lea-matl-007-05-core-concept",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "title": "Finish schedule",
+      "linked_question_count": 10,
+      "source_family": "finish_schedule_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "bci-5e-b078",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "salvan-building-materials-b078",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local BCI and Salvan records cover finish assemblies and finish-material coordination, enough for a source-audited finish-schedule rewrite.",
+      "risks": [
+        "Avoid treating schedule-format conventions as code requirements unless a production source expressly supports them.",
+        "Keep examples limited to coordination, finish identification, and cross-reference use."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; not present in Batches 149-151 consumed clusters; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-007-06",
+      "slug": "lea-matl-007-06-core-concept",
+      "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+      "title": "Countertop materials range from high-performance engineered",
+      "linked_question_count": 10,
+      "source_family": "countertop_materials_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "bci-5e-b079",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 13754-13820; raw PDF page 372.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "salvan-building-materials-b079",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local BCI and Salvan records support countertop/material family distinctions and general material selection constraints.",
+      "risks": [
+        "Avoid unsupported manufacturer, chemical-resistance, heat-resistance, and exact stain-resistance performance claims.",
+        "Do not overstate engineered-surface superiority without product/system-specific technical documentation."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; not present in Batches 149-151 consumed clusters; not hard-blocked; not lea-prac."
+    }
+  ],
+  "residual_not_reserved_due_batch_size_cap": [
+    {
+      "cluster_id": "lea-matl-008-01",
+      "reason": "Next locally sourceable hardware/materials residual, deferred because Batch 152 is capped at three clusters."
+    }
+  ],
+  "reservation_stop_condition": "Batch 152 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git stage/commit/push, Supabase, deploy, DB, or main-merge action."
+}

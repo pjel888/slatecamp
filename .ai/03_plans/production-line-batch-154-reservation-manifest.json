@@ -1,0 +1,178 @@
+{
+  "batch": 154,
+  "batch_id": "reservation-batch-154-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T12:22:52+08:00",
+  "baseline": "d3d2ec5ee1",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after Batch 153 reservations.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after Batch 153 reservations with the next sourceable materials residuals, skipping hard-blocked lea-matl-009-02 and using verified local Vitruvius sources only.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..151}-manifest.json",
+    "inspected_report_glob": ".ai/content-audit-export/source-audited-article-batch-{087..151}-local-first-*",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_artifacts": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "known_deferrals_not_reserved": [
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-009-01",
+    "lea-strc-009-02",
+    "lea-strc-009-03",
+    "lea-strc-012-01"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-matl-008-04",
+      "slug": "lea-matl-008-04-core-concept",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "title": "Window operations",
+      "linked_question_count": 10,
+      "source_family": "window_operations_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "bci-5e-b079",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 10594-10790; raw PDF pages 297-301.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "salvan-building-materials-b079",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 13190-13198 and 11664-11678; raw PDF pages 355 and 317.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local BCI and Salvan records support window operation types and basic assembly/material coordination.",
+      "risks": [
+        "Avoid exact egress, wind-load, acoustic, thermal, and code-compliance claims unless captured in production from authoritative code or manufacturer docs.",
+        "Keep window-operation descriptions separate from glazing-performance specifications."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; reserved after Batch 152-153 ids only; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-008-05",
+      "slug": "lea-matl-008-05-core-concept",
+      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "title": "Adhesive Systems",
+      "linked_question_count": 10,
+      "source_family": "adhesive_systems_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "bci-5e-b080",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 16020-16145; raw PDF page 438.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "salvan-building-materials-b080",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 2678-2854; raw PDF pages 91-94.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local BCI and Salvan records support adhesive use as part of construction material assemblies.",
+      "risks": [
+        "Avoid proprietary adhesive chemistry, bond-strength values, VOC limits, substrate moisture limits, and manufacturer warranty claims.",
+        "If production needs exact technical limits, use manufacturer technical docs as bounded supplemental sources."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; reserved after Batch 152-153 ids only; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-009-01",
+      "slug": "lea-matl-009-01-core-concept",
+      "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "title": "Architectural specifications",
+      "linked_question_count": 10,
+      "source_family": "architectural_specifications_ra9266_uap_spp",
+      "source_candidates": [
+        {
+          "source_id": "ra9266-irr-architecture-act-b075",
+          "source_family": "ra_9266_irr",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md"
+          },
+          "checked_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "uap-spp-202-regular-design-services-b075",
+          "source_family": "uap_spp_202",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md"
+          },
+          "checked_locator": "SPP 202 refined markdown lines 173-183; raw PDF readability checked locally.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "uap-spp-203-specialized-services-b075",
+          "source_family": "uap_spp_203",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md"
+          },
+          "checked_locator": "SPP 203 refined markdown lines 101-140; raw PDF pages 7 and 95.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local RA 9266 IRR and UAP SPP records support architectural services, professional documents, and specification-scope concepts without needing external discovery.",
+      "risks": [
+        "Avoid unsupported CSI/MasterFormat taxonomy claims; lea-matl-009-02 remains hard-blocked.",
+        "Keep specification claims tied to professional service/document scope rather than importing external specification-system rules."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; lea-matl-009-02 skipped as hard-blocked; not lea-prac."
+    }
+  ],
+  "residual_not_reserved_due_batch_size_cap": [
+    {
+      "cluster_id": "lea-matl-009-03",
+      "reason": "Likely locally sourceable drawings/schedules residual, deferred because Batch 154 is capped at three clusters and lea-matl-009-02 is hard-blocked."
+    },
+    {
+      "cluster_id": "lea-matl-009-04",
+      "reason": "Likely locally sourceable quality-control residual, deferred because Batch 154 is capped at three clusters."
+    }
+  ],
+  "reservation_stop_condition": "Batch 154 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git stage/commit/push, Supabase, deploy, DB, or main-merge action."
+}

@@ -1,0 +1,164 @@
+{
+  "batch": 153,
+  "batch_id": "reservation-batch-153-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T12:22:52+08:00",
+  "baseline": "d3d2ec5ee1",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after Batch 152 reservations.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after Batch 152 reservations with the next sourceable materials hardware/joint/fastener clusters in sorted residual order using verified local Vitruvius sources.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..151}-manifest.json",
+    "inspected_report_glob": ".ai/content-audit-export/source-audited-article-batch-{087..151}-local-first-*",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_artifacts": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "known_deferrals_not_reserved": [
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-009-01",
+    "lea-strc-009-02",
+    "lea-strc-009-03",
+    "lea-strc-012-01"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-matl-008-01",
+      "slug": "lea-matl-008-01-core-concept",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "title": "Door hardware",
+      "linked_question_count": 10,
+      "source_family": "door_hardware_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "bci-5e-b079",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "salvan-building-materials-b079",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 5941-5960, 6117-6208, and 6486-6578; raw PDF pages 173, 177, and 181-183.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local BCI and Salvan records support door hardware types, functions, and construction coordination.",
+      "risks": [
+        "Avoid unsupported fire-door, accessibility, panic-hardware, or exact code-trigger claims unless production captures code-specific sources.",
+        "Keep claims about hardware categories and functions source-bound to the local construction/material texts."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; reserved after Batch 152 ids only; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-008-02",
+      "slug": "lea-matl-008-02-core-concept",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "title": "Structural joints serve distinct purposes in building",
+      "linked_question_count": 10,
+      "source_family": "structural_joints_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "bci-5e-b079",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "salvan-building-materials-b079",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local BCI and Salvan records support joint categories, movement accommodation, and construction-interface concepts.",
+      "risks": [
+        "Avoid exact joint spacing, seismic, firestopping, waterproofing, or sealant-performance claims without more specific sources.",
+        "Separate general construction joints from code-required expansion/seismic details during production."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; reserved after Batch 152 ids only; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-008-03",
+      "slug": "lea-matl-008-03-core-concept",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "Fastener Systems",
+      "linked_question_count": 10,
+      "source_family": "fastener_systems_bci_salvan",
+      "source_candidates": [
+        {
+          "source_id": "bci-5e-b079",
+          "source_family": "bci_5e",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md"
+          },
+          "checked_locator": "BCI refined markdown lines 16020-16138; raw PDF pages 436-438.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "salvan-building-materials-b079",
+          "source_family": "salvan_building_materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md"
+          },
+          "checked_locator": "Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local BCI and Salvan records support fastening categories, basic applications, and assembly coordination.",
+      "risks": [
+        "Avoid exact pull-out values, corrosion classes, proprietary anchor capacities, and structural design claims.",
+        "Keep examples general unless product/system technical data is later captured."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-151 manifest/report/ledger selected-cluster scans; reserved after Batch 152 ids only; not hard-blocked; not lea-prac."
+    }
+  ],
+  "residual_not_reserved_due_batch_size_cap": [
+    {
+      "cluster_id": "lea-matl-008-04",
+      "reason": "Next locally sourceable window/materials residual, deferred because Batch 153 is capped at three clusters."
+    }
+  ],
+  "reservation_stop_condition": "Batch 153 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git stage/commit/push, Supabase, deploy, DB, or main-merge action."
+}
