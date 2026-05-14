@@ -1,65 +1,80 @@
 {
+  "batch": 150,
+  "batch_id": "source-audited-batch-150-local-first",
+  "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+  "cluster_id": "lea-matl-006-04",
   "question_id": "cc29799c-e70f-4e78-b92d-7bf467fdcbe3",
-  "baseline_hash": "sha256:9db23e9335327ed3f41596b7cc8eb7336467e321eb4730003dad4e24164d4ea8",
-  "action": "replace",
-  "reason": "source-audited-article-batch-077-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-006-04-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-077",
-  "approved_at": "2026-05-12T04:10:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
-    "parent_article_slug": "lea-matl-006-04-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
-      "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "salvan-building-materials-b077",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "bci-5e-b077",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 077 local raw-source-audited thermal_insulation scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:e97fab57d520336afcfc5f0849477f5e05e442d127f5a3f3bef9c251bddc4198",
+  "after_hash": "sha256:e97fab57d520336afcfc5f0849477f5e05e442d127f5a3f3bef9c251bddc4198",
+  "baseline_hash": "sha256:e97fab57d520336afcfc5f0849477f5e05e442d127f5a3f3bef9c251bddc4198",
+  "correct_answer_preserved": true,
+  "answer_key_status": "preserved",
+  "source_ids": [
+    "salvan-building-materials-b150"
+  ],
+  "reason": "Batch 150 local-first rewrite aligned to reserved source boundary and preserved existing correct-option id.",
   "proposed": {
     "text": "Which heat-transfer modes does Salvan identify for thermal insulation study?",
     "options": [
       {
         "id": "a",
-        "text": "Conduction, radiation, and convection"
+        "text": "Only sound reflection and absorption."
       },
       {
         "id": "b",
-        "text": "Only sound reflection"
+        "text": "Conduction, radiation, and convection."
       },
       {
         "id": "c",
-        "text": "Only paint oxidation"
+        "text": "Only paint oxidation."
       },
       {
         "id": "d",
-        "text": "Only waterstop swelling"
+        "text": "Only waterstop swelling."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Salvan explains heat transfer through conduction, radiation, and convection.",
-    "explanation": "Salvan explains heat transfer through conduction, radiation, and convection.",
-    "code_citation": "George Salvan Architectural Building Materials; Building Construction Illustrated, 5th Edition"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Only sound reflection and absorption. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+      "b": "Conduction, radiation, and convection. This stays inside the Batch 150 local source boundary.",
+      "c": "Only paint oxidation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+      "d": "Only waterstop swelling. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+      "correct": "Conduction, radiation, and convection. Supported by salvan-building-materials-b150.",
+      "takeaway": "For lea-matl-006-04, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "salvan-building-materials-b150",
+      "checked_sources": [
+        "salvan-building-materials-b150"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Salvan refined markdown lines 2874-3025.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-150-local-first",
+      "salvan-building-materials-b150"
+    ]
+  },
+  "rationale": {
+    "a": "Only sound reflection and absorption. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+    "b": "Conduction, radiation, and convection. This stays inside the Batch 150 local source boundary.",
+    "c": "Only paint oxidation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+    "d": "Only waterstop swelling. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+    "correct": "Conduction, radiation, and convection. Supported by salvan-building-materials-b150.",
+    "takeaway": "For lea-matl-006-04, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "salvan-building-materials-b150",
+    "checked_sources": [
+      "salvan-building-materials-b150"
+    ]
+  },
+  "source_audit_support": {
+    "parent_article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+    "parent_article_slug": "lea-matl-006-04-core-concept",
+    "support_status": "source_safe_rewrite",
+    "answer_key_fields_changed": false,
+    "checked_sources": [
+      "salvan-building-materials-b150"
+    ],
+    "source_locator": "Local source boundary: Salvan refined markdown lines 2874-3025."
   }
 }

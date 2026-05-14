@@ -1,30 +1,30 @@
 {
   "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:fc48ea56ed62b864408306043cbb07bd5eec577730ce60d855c36fadb59a4e78",
+  "linked_questions_hash": "sha256:e8459702c61addc76b0fa5de71544d6c6ffe5b8df268e8f8610f4f5f654721d1",
   "question_count": 10,
   "questions": [
     {
       "question_id": "b7735dc1-0e8b-498b-8c79-1b18cc5420c5",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "Polyurethane sealant (ASTM C1619) is preferred over silicone for hybrid glass-metal curtain wall joints in the Philippines because ___.",
+      "text": "What must an effective joint sealant have according to BCI?",
       "options": [
         {
           "id": "a",
-          "text": "Polyurethane has superior UV stability compared to silicone, ensuring longer lifespan"
+          "text": "Only pigment and no binder."
         },
         {
           "id": "b",
-          "text": "Polyurethane provides excellent adhesion to both glass and metal and cures faster in tropical humidity"
+          "text": "Durability, resilience, cohesive strength, and adhesive strength."
         },
         {
           "id": "c",
-          "text": "Polyurethane offers non-corrosive properties suitable for salt spray, protecting structural integrity"
+          "text": "Only thermal resistance."
         },
         {
           "id": "d",
-          "text": "Polyurethane is lower cost and requires no substrate preparation, reducing installation time"
+          "text": "Only roof slope."
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Silicone has superior UV stability; polyurethane can yellow/degrade under prolonged UV without topcoat.",
-        "c": "Silicone is non-corrosive and superior in salt-spray; polyurethane is adequate but not optimal for coastal zones.",
-        "d": "Polyurethane requires moisture-management during application and cure; not lower cost than silicone.",
-        "correct": "Polyurethane (ASTM C1619) adheres strongly to glass, metal, and painted surfaces (critical for curtain walls). Cure is rapid (24-48 hrs walkable in tropical heat/humidity), where silicone may require 7+ days. Moisture-accelerated polymerization is advantageous in tropical humidity.",
-        "takeaway": "Polyurethane = practical choice for glass-metal bonds and rapid cure in humid tropics. Silicone = premium choice for UV/salt spray. Match sealant to substrate and cure conditions."
+        "a": "Only pigment and no binder. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "Durability, resilience, cohesive strength, and adhesive strength. This stays inside the Batch 150 local source boundary.",
+        "c": "Only thermal resistance. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "d": "Only roof slope. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "Durability, resilience, cohesive strength, and adhesive strength. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
-      "explanation": "Silicone has superior UV stability; polyurethane can yellow/degrade under prolonged UV without topcoat. Silicone is non-corrosive and superior in salt-spray; polyurethane is adequate but not optimal for coastal zones. Polyurethane requires moisture-management during application and cure; not lower cost than silicone. Polyurethane (ASTM C1619) adheres strongly to glass, metal, and painted surfaces (critical for curtain walls). Cure is rapid (24-48 hrs walkable in tropical heat/humidity), where silicone may require 7+ days. Moisture-accelerated polymerization is advantageous in tropical humidity. Polyurethane = practical choice for glass-metal bonds and rapid cure in humid tropics. Silicone = premium choice for UV/salt spray. Match sealant to substrate and cure conditions.",
-      "code_citation": "ASTM C1619, Sealant Selection Guidelines",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9490-9530.",
       "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-05-06T15:15:17.565597+00:00",
-      "content_hash": "sha256:cc399ededf9ef89472d75ae0cc4923dde26a44cd928af8fae5c3ab0c18cf67ad"
+      "content_hash": "sha256:de92e4037c20b283a3c3a7ba66448192d2cf057e81a73e39a77055bda17c61bc"
     },
     {
       "question_id": "981843ac-0c8c-479f-a668-7cef7eafb50b",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "A window perimeter joint in Manila is selead with silicone (ASTM C1733) on a damp concrete surround (90% RH) at 32°C ambient during the rainy season. The sealant is expected to achieve tack-free cure within 24 hours. Will this specification likely succeed?",
+      "text": "What substrate condition does BCI require before applying sealant?",
       "options": [
         {
           "id": "a",
-          "text": "Yes; 90% humidity and 32°C accelerate silicone cure, ensuring a quick tack-free time."
+          "text": "The substrate should be dusty and wet."
         },
         {
           "id": "b",
-          "text": "No; silicone cure is inhibited by moisture above 85% RH; tack-free time may extend to 7+ days"
+          "text": "The substrate must be clean, dry, and compatible with the sealant."
         },
         {
           "id": "c",
-          "text": "Yes; tropical heat accelerates all sealant cure regardless of humidity, making it suitable for quick application."
+          "text": "The substrate does not affect sealant performance."
         },
         {
           "id": "d",
-          "text": "No; only polyurethane can tolerate damp tropical conditions; silicone will remain tacky and may not cure properly."
+          "text": "The substrate should be loose gravel."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "90% humidity inhibits silicone cure, not accelerates it.",
-        "c": "Heat accelerates evaporative processes but not acid-catalyzed condensation reactions.",
-        "d": "Silicone can tolerate damp; it is not cured by moisture (unlike polyurethane). Damp substrate prevents cure, not enables it.",
-        "correct": "Silicone (acetic or oxime condensation-cure) releases acetic/oxime acid during cure; water (from 90% RH) inhibits this acid-catalyzed process. Tack-free cure extends from 24 hrs to 7+ days in high humidity. Polyurethane (moisture-activated polymerization) would cure faster in this condition.",
-        "takeaway": "Silicone + high humidity = extended cure (7-14 days). Polyurethane + high humidity = accelerated cure (12-24 hrs). For tropical applications, verify humidity conditions during cure; specify polyurethane for damp/humid sites."
+        "a": "The substrate should be dusty and wet. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "The substrate must be clean, dry, and compatible with the sealant. This stays inside the Batch 150 local source boundary.",
+        "c": "The substrate does not affect sealant performance. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "d": "The substrate should be loose gravel. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "The substrate must be clean, dry, and compatible with the sealant. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C1733 (Silicone Cure Requirements), Tropical Application Challenges",
+      "code_citation": "Local source boundary: BCI refined markdown lines 9520-9528.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c33742c49d75254334a36c059cdfa321bba73830d554651328d2bbb17cc0116e"
+      "content_hash": "sha256:8a2c36f2a10f73ba78ea4724ca290df9d8d804247467be377c0515574aaa9ec4"
     },
     {
       "question_id": "1e139061-1002-4cdd-a353-43a60aa7d121",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "A building expansion joint in a seismic zone is designed for ±50 mm movement (earthquake/settling). A Class 50 ASTM C920 sealant is specified. What is the critical limitation, and what alternative specification is recommended?",
+      "text": "Which sealant range does BCI connect with significant movement joints?",
       "options": [
         {
           "id": "a",
-          "text": "Class 50 accommodates ±5 mm for 10 mm joint; 50 mm movement requires Class 100/50 sealant or 100+ mm joint width (exceeds practical limits); recommend compression seal, structural movement joint, or non-sealant systems"
+          "text": "High-range sealants such as polysulfides, polyurethanes, and silicones."
         },
         {
           "id": "b",
-          "text": "Class 50 is adequate; 50 mm movement stretches sealant to 500% elongation, acceptable for emergency seismic conditions, although not ideal for long-term performance"
+          "text": "Low-range oil-based caulking only."
         },
         {
           "id": "c",
-          "text": "Silicone Class 50 is insufficient; upgrade to polyurethane Class 50 for better elongation and enhanced flexibility under dynamic loads"
+          "text": "Paint primer only."
         },
         {
           "id": "d",
-          "text": "Sealant cannot accommodate 50 mm movement; specify rigid rebar-reinforced joint instead, which is typically used in non-movement scenarios"
+          "text": "Loose-fill insulation only."
         }
       ],
       "correct_option_id": "a",
@@ -133,16 +149,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "500% elongation is unrealistic; Class 50 = 50% strain, not 500%.",
-        "c": "Reinforced rebar joint is structural, not sealant solution; may be appropriate but requires engineering analysis.",
-        "correct": "Class 50 for 10 mm joint = ±5 mm capacity. 50 mm movement requires 100+ mm joint width (50 mm ÷ 2 = 25 mm depth per ASTM C920 2:1 ratio; 50 mm movement ÷ ±50% = 100 mm width minimum). This exceeds practical gun-application limits (38 mm max). Solutions: (1) compression seal (elastic foam core in rigid extrusion, accommodates unlimited movement), (2) structural gap with flexible connections, (3) honeycombed sealant (multiple small joints), or (4) non-sealant systems (expansion cap, roof hinge). Recommend seismic joint specialist design.",
-        "takeaway": "For extreme movement (>15 mm), sealants are inadequate. Use compression seals or structural movement systems. Sealants are designed for typical building movement (±3-10 mm range)."
+        "a": "High-range sealants such as polysulfides, polyurethanes, and silicones. This stays inside the Batch 150 local source boundary.",
+        "b": "Low-range oil-based caulking only. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "c": "Paint primer only. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "d": "Loose-fill insulation only. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "High-range sealants such as polysulfides, polyurethanes, and silicones. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C920, Seismic Joint Design Standards",
+      "code_citation": "Local source boundary: BCI refined markdown lines 9508-9525.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -151,29 +176,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d6f0219bb2c4350b6528b3bd63d078dc34f623f11f48d0c6c46f213b15131d34"
+      "content_hash": "sha256:b2dcf34a983af045453718367ea971818b229f099c60be2112207ae627810302"
     },
     {
       "question_id": "7a66edba-1773-4be9-9c78-15511e2b96ce",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "Which sealant chemistry offers the best combination of UV stability, high-temperature performance (-40 to +200°C), and long service life, but at the highest cost?",
+      "text": "Which BCI depth rule is source-safe for joints at least 1/2 inch wide?",
       "options": [
         {
           "id": "a",
-          "text": "Acrylic latex (ASTM C834)"
+          "text": "Depth should always be four times the width."
         },
         {
           "id": "b",
-          "text": "Polyurethane (ASTM C920)"
+          "text": "Depth is unrelated to joint width."
         },
         {
           "id": "c",
-          "text": "Silicone (ASTM C1733)"
+          "text": "Sealant depth should be half the joint width but not more than 2 inches."
         },
         {
           "id": "d",
-          "text": "Polysulfide (ASTM C920)"
+          "text": "Depth should be zero."
         }
       ],
       "correct_option_id": "c",
@@ -182,17 +207,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Acrylic offers lowest cost but poor temperature range (-20 to +60°C) and short service life (3-5 years).",
-        "b": "Polyurethane is cost-effective with good durability (10-15 years) but not superior to silicone in temperature range.",
-        "d": "Polysulfide is fuel-resistant and durable but slow-curing and has distinct odor.",
-        "correct": "Silicone offers superior UV/temperature stability (-40 to +200°C), non-staining (non-corrosive to metals), high elongation (300-400%), and 15-20 year service life. Cost is 2-3× polyurethane and polysulfide.",
-        "takeaway": "Silicone = premium choice for UV/temperature extremes. Polyurethane = practical choice for adhesion/cost balance. Polysulfide = specialized (fuel/chemical). Acrylic = budget interior."
+        "a": "Depth should always be four times the width. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "Depth is unrelated to joint width. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "c": "Sealant depth should be half the joint width but not more than 2 inches. This stays inside the Batch 150 local source boundary.",
+        "d": "Depth should be zero. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "Sealant depth should be half the joint width but not more than 2 inches. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C1733, Sealant Performance Comparison",
+      "code_citation": "Local source boundary: BCI refined markdown lines 9496-9505.",
       "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -201,29 +234,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ab28ebd2fc81a880827997b1d2e5074cf1c23c5d68078a7082429718e9a01f83"
+      "content_hash": "sha256:e511b599a4a6bd24b41fc5d5d00e93174dfa552b1d4963794ebd67830f99f6eb"
     },
     {
       "question_id": "85799e5e-633a-444f-b836-35d50db10dca",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "The recommended joint design ratio (width-to-depth) for elastomeric sealants is 2:1 per industry joint design guidelines (not directly specified in ASTM C920).",
+      "text": "When does BCI describe low-range sealants or caulking as appropriate?",
       "options": [
         {
           "id": "a",
-          "text": "1:1 (equal width and depth)"
+          "text": "For all working joints with significant structural movement."
         },
         {
           "id": "b",
-          "text": "2:1 (width is twice depth)"
+          "text": "For small joints where little movement is expected."
         },
         {
           "id": "c",
-          "text": "1:2 (depth is twice width)"
+          "text": "Only for thermal insulation boards."
         },
         {
           "id": "d",
-          "text": "3:1 (width is three times depth)"
+          "text": "Only for footing drains."
         }
       ],
       "correct_option_id": "b",
@@ -232,17 +265,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1:1 ratio underutilizes joint width; excessively deep sealant.",
-        "c": "1:2 ratio (inverted) results in excessive depth; 10 mm wide = 20 mm deep; exceeds ASTM C920 maximum depth (12.7 mm) and fails from lack of tensile strength.",
-        "d": "3:1 ratio is not standard; does not align with ASTM C920.",
-        "correct": "ASTM C920 specifies 2:1 ratio: for a 10 mm wide joint, sealant depth = 5 mm (10 mm ÷ 2). This ratio distributes stress evenly and prevents excessive depth (which concentrates stress at sealant center).",
-        "takeaway": "2:1 ratio: width ÷ 2 = depth. Memorize this critical rule for joint design."
+        "a": "For all working joints with significant structural movement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "For small joints where little movement is expected. This stays inside the Batch 150 local source boundary.",
+        "c": "Only for thermal insulation boards. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "d": "Only for footing drains. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "For small joints where little movement is expected. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C920",
+      "code_citation": "Local source boundary: BCI refined markdown lines 9508-9518.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -251,29 +292,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:edc0ef045e463d722f8bbd8c3c3b3886e999751471fd2718a1adcc85654f8cde"
+      "content_hash": "sha256:5bdcbb6f5cdd8355427b884400032b376b56beab3998f87447d2974e5e89c09c"
     },
     {
       "question_id": "cd08d50d-b45d-44f6-924d-925d631197fc",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "ASTM C920 specifies a substrate temperature range during sealant application of ___.",
+      "text": "What does BCI say influences sealant joint width?",
       "options": [
         {
           "id": "a",
-          "text": "-20 to +60°C"
+          "text": "Only the paint color."
         },
         {
           "id": "b",
-          "text": "0 to +50°C"
+          "text": "Only the room occupancy name."
         },
         {
           "id": "c",
-          "text": "+4 to +38°C"
+          "text": "Joint spacing, expected temperature range, wind or structural displacement, and sealant movement capability."
         },
         {
           "id": "d",
-          "text": "+10 to +40°C"
+          "text": "Only the number of primer coats."
         }
       ],
       "correct_option_id": "c",
@@ -282,17 +323,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "-20 to +60°C is too broad; includes temperatures unsuitable for application.",
-        "b": "0 to +50°C extends beyond ASTM C920 limits.",
-        "d": "+10 to +40°C is narrower range within ASTM limits; acceptable but 4°C is the official minimum.",
-        "correct": "Industry standard substrate temperature range for ASTM C920 sealants is 4-38°C (40-100°F) per application guidelines. for proper sealant application and cure. Below 4°C, polymerization slows significantly; above 38°C, evaporative-cure materials (acrylic, silicone) may skin-over prematurely.",
-        "takeaway": "Application temperature 4-38°C per ASTM C920. Early morning or evening application in tropical heat often necessary to stay within limits."
+        "a": "Only the paint color. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "Only the room occupancy name. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "c": "Joint spacing, expected temperature range, wind or structural displacement, and sealant movement capability. This stays inside the Batch 150 local source boundary.",
+        "d": "Only the number of primer coats. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "Joint spacing, expected temperature range, wind or structural displacement, and sealant movement capability. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C920",
+      "code_citation": "Local source boundary: BCI refined markdown lines 9496-9506.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -301,29 +350,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3a83be6fcc801b5ebae3f7db48faf20eae1005fdc09b745f24c2419775e23010"
+      "content_hash": "sha256:63558aa95989c94cc0a551ba69a62f89fc96bed89332db4d2d397c35e912528c"
     },
     {
       "question_id": "21a12144-a805-45f1-b819-534217e88c14",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "ASTM C920 Class 50 sealant indicates movement capability of ___.",
+      "text": "Why is backup material or joint filler important in a watertight joint?",
       "options": [
         {
           "id": "a",
-          "text": "±12.5% strain"
+          "text": "It replaces all joint surfaces."
         },
         {
           "id": "b",
-          "text": "±25% strain"
+          "text": "It is a paint pigment."
         },
         {
           "id": "c",
-          "text": "±50% strain"
+          "text": "It controls sealant depth and serves as a bond breaker so the material can elongate."
         },
         {
           "id": "d",
-          "text": "±100% strain (tension) and ±50% (compression)"
+          "text": "It eliminates the need for adhesion."
         }
       ],
       "correct_option_id": "c",
@@ -332,17 +381,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "±12.5% is Class 12.5 (minimal movement).",
-        "b": "±25% is Class 25 (light movement).",
-        "d": "±100/±50 is Class 100/50 (maximum movement; polyurethane/polysulfide only).",
-        "correct": "Class 50 = ±50% movement capability in both tension and compression. A 10 mm wide Class 50 joint can accommodate 5 mm expansion and 5 mm contraction.",
-        "takeaway": "ASTM C920 Classes: 12.5, 25, 35, 50, 100/50. Higher = more movement tolerance. Class 50 is standard commercial sealant."
+        "a": "It replaces all joint surfaces. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "It is a paint pigment. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "c": "It controls sealant depth and serves as a bond breaker so the material can elongate. This stays inside the Batch 150 local source boundary.",
+        "d": "It eliminates the need for adhesion. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "It controls sealant depth and serves as a bond breaker so the material can elongate. Supported by bci-5e-envelope-b150, salvan-building-materials-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150, salvan-building-materials-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150",
+          "salvan-building-materials-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C920",
+      "code_citation": "Local source boundary: BCI lines 9525-9528; Salvan lines 2848-2854.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150",
+        "salvan-building-materials-b150"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -351,29 +410,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8520c69e94b119fe6a8b24a1a539ee64fc264ef30fca282b74058a0f7384b041"
+      "content_hash": "sha256:19d8f0fe020bb7b894a4e45ef678d4277e3b137f74c2d50016113cb6b2f33678"
     },
     {
       "question_id": "85e6babf-ac6e-4dc1-9b3b-79ca35739a69",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "An expansion joint in a concrete building exterior is 15 mm wide. Per ASTM C920 (2:1 width-to-depth ratio), what is the required sealant depth, and what backer rod diameter is required (1.25-1.5× joint width)?",
+      "text": "When there is insufficient depth for a compressible filler, what does BCI require to prevent adhesion to the bottom of the recess?",
       "options": [
         {
           "id": "a",
-          "text": "Depth 7.5 mm; backer rod 19-23 mm diameter"
+          "text": "A bond breaker such as polyethylene tape."
         },
         {
           "id": "b",
-          "text": "Depth 5 mm; backer rod 18-22 mm diameter"
+          "text": "A deeper coat of paint."
         },
         {
           "id": "c",
-          "text": "Depth 30 mm; backer rod 10 mm diameter"
+          "text": "Loose gravel behind the sealant."
         },
         {
           "id": "d",
-          "text": "Depth 10 mm; backer rod 25 mm diameter"
+          "text": "No treatment because three-sided adhesion is preferred."
         }
       ],
       "correct_option_id": "a",
@@ -382,17 +441,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Depth 5 mm is 15 mm ÷ 3, incorrect ratio application.",
-        "c": "Depth 30 mm is inverted ratio (2:1 backwards); exceeds ASTM C920 maximum depth (12.7 mm).",
-        "d": "Depth 10 mm is 15 mm ÷ 1.5, incorrect; rod 25 mm is excessive for 15 mm joint.",
-        "correct": "Depth = 15 mm ÷ 2 = 7.5 mm. Backer rod: 1.25-1.5 × 15 mm = 18.75-22.5 mm, rounded to 19-22 mm diameter. Backer rod prevents three-sided bonding and allows sealant to flex properly.",
-        "takeaway": "Joint design: depth = width / 2. Backer rod sizing: 1.25-1.5× joint width. These are standard calculations for sealant specifications."
+        "a": "A bond breaker such as polyethylene tape. This stays inside the Batch 150 local source boundary.",
+        "b": "A deeper coat of paint. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "c": "Loose gravel behind the sealant. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "d": "No treatment because three-sided adhesion is preferred. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "A bond breaker such as polyethylene tape. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C920, ASTM C1247",
+      "code_citation": "Local source boundary: BCI refined markdown lines 9525-9529.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -401,29 +468,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:122f5e3c38acef614982def0428d8efd219433a07e486495d1e4802b77729c40"
+      "content_hash": "sha256:821891002eba7efc373bcf2663aba247bc72c912bf41902eeeccbf601d42568e"
     },
     {
       "question_id": "ca978faa-b967-4558-81aa-92fa843249c0",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "A concrete expansion joint in a tropical climate experiences ±30 mm seasonal width variation (thermal expansion/contraction). A Class 50 sealant is proposed for a 10 mm wide joint. Will this specification be adequate?",
+      "text": "What does Salvan say caulking material must do as joints change width?",
       "options": [
         {
           "id": "a",
-          "text": "Yes; Class 50 accommodates ±50% movement (±5 mm for 10 mm joint, sufficient for 30 mm total variation)"
+          "text": "Become a rigid structural column."
         },
         {
           "id": "b",
-          "text": "No; Class 50 only accommodates ±5 mm total; 30 mm variation requires Class 100/50 or wider joint design"
+          "text": "Stretch or elongate with joint-width changes and recover after extension or compression."
         },
         {
           "id": "c",
-          "text": "Yes; concrete expansion is minimal in tropical climates; Class 50 is conservative"
+          "text": "Dissolve the substrate."
         },
         {
           "id": "d",
-          "text": "No; tropical heat causes excessive expansion; joint width must be 60+ mm for Class 50 adequacy"
+          "text": "Serve as a roof drain."
         }
       ],
       "correct_option_id": "b",
@@ -432,17 +499,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Calculation error; ±5 mm capacity for 10 mm wide Class 50 joint is correct, but this is insufficient for 30 mm variation.",
-        "c": "Tropical expansion is significant but not excessive; joint design must account for actual movement.",
-        "d": "Correct general principle (60+ mm joint width needed) but overstates tropical factor.",
-        "correct": "Class 50 for 10 mm joint = ±5 mm movement (±50% of 10 mm). The 30 mm seasonal variation exceeds this capacity. Two options: (1) Increase joint width to 60+ mm (30 mm ÷ 2 = 15 mm depth; 30 mm movement ÷ 50% = 60 mm width minimum), which exceeds practical gun-application limits (38 mm max), or (2) Use Class 100/50 sealant (±10 mm for 10 mm wide joint, still insufficient for 30 mm), or (3) staged joint design (multiple 20 mm joints). 30 mm movement on 10 mm joint is unrealistic specification.",
-        "takeaway": "For large movements (>10-15 mm), reconsider joint design: use wider joints (compression seals for 40+ mm), multiple small joints, or alternative systems (structural movement joints)."
+        "a": "Become a rigid structural column. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "Stretch or elongate with joint-width changes and recover after extension or compression. This stays inside the Batch 150 local source boundary.",
+        "c": "Dissolve the substrate. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "d": "Serve as a roof drain. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "Stretch or elongate with joint-width changes and recover after extension or compression. Supported by salvan-building-materials-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "salvan-building-materials-b150",
+        "checked_sources": [
+          "salvan-building-materials-b150"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C920, Joint Design Fundamentals",
+      "code_citation": "Local source boundary: Salvan refined markdown lines 2774-2854.",
       "bloom_level": "understand",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "salvan-building-materials-b150"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -451,29 +526,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f23f0d8e4acafb6beaeff309454d232655046ae94511b5e312c2389ab634bf60"
+      "content_hash": "sha256:f70445d5dfe10ee92a8ae30a9def924ff93dbf4d42693d44e0343f4d1bb44660"
     },
     {
       "question_id": "936f591d-64ce-48f4-b164-fff615380d6f",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
       "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "Backer rod is installed behind sealant to prevent ___ bonding, which concentrates stress and causes premature failure.",
+      "text": "Which material form can serve as a joint filler in BCI?",
       "options": [
         {
           "id": "a",
-          "text": "Two-sided"
+          "text": "A roof tile used as a beam."
         },
         {
           "id": "b",
-          "text": "Three-sided"
+          "text": "A rod or tubing of polyethylene foam, polyurethane foam, neoprene, or butyl rubber."
         },
         {
           "id": "c",
-          "text": "One-sided"
+          "text": "A paint color chip only."
         },
         {
           "id": "d",
-          "text": "Multi-directional"
+          "text": "A window schedule."
         }
       ],
       "correct_option_id": "b",
@@ -482,17 +557,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Two-sided bonding (top and sides) is correct; backer rod prevents three-sided.",
-        "c": "One-sided bonding would be non-functional; sealant must bond at least two sides.",
-        "d": "Multi-directional is not a relevant term for bonding surfaces.",
-        "correct": "Backer rod prevents three-sided bonding (adhesion on all three surfaces: top, sides, bottom). With backer rod, sealant bonds only to top and sides, allowing proper flex. Three-sided bonding concentrates stress at the center bottom and prevents elongation.",
-        "takeaway": "Backer rod is mandatory for all elastomeric sealant applications. Prevents stress concentration and enables proper sealant movement."
+        "a": "A roof tile used as a beam. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "b": "A rod or tubing of polyethylene foam, polyurethane foam, neoprene, or butyl rubber. This stays inside the Batch 150 local source boundary.",
+        "c": "A paint color chip only. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "d": "A window schedule. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 150 local source boundary.",
+        "correct": "A rod or tubing of polyethylene foam, polyurethane foam, neoprene, or butyl rubber. Supported by bci-5e-envelope-b150.",
+        "takeaway": "For lea-matl-006-05, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bci-5e-envelope-b150",
+        "checked_sources": [
+          "bci-5e-envelope-b150"
+        ]
       },
-      "explanation": "Two-sided bonding (top and sides) is correct; backer rod prevents three-sided. One-sided bonding would be non-functional; sealant must bond at least two sides. Multi-directional is not a relevant term for bonding surfaces. Backer rod prevents three-sided bonding (adhesion on all three surfaces: top, sides, bottom). With backer rod, sealant bonds only to top and sides, allowing proper flex. Three-sided bonding concentrates stress at the center bottom and prevents elongation. Backer rod is mandatory for all elastomeric sealant applications. Prevents stress concentration and enables proper sealant movement.",
-      "code_citation": "ASTM C920, ASTM C1247",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9525-9528.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-150-local-first",
+        "bci-5e-envelope-b150"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -501,7 +584,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-05-06T15:15:17.731436+00:00",
-      "content_hash": "sha256:fd981a6abddffd01f395ac409d4f926fe0db0f0471c80ec0a66da58a92839fc3"
+      "content_hash": "sha256:27e03e1741d65ee074986fd55d5ebbabfb0109daaf20f573a4f9d2560b156dff"
     }
   ]
 }

@@ -1,233 +1,138 @@
 {
-  "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-077-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T04:10:00.000+08:00",
-  "target": {
-    "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
-    "slug": "lea-matl-006-05-core-concept",
-    "title": "Sealants differ from caulks by durability and movement",
-    "article_folder": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
-    "normalized_sha256": "sha256:b70ad1c102dd45db1023d3ac1ee6b138732c04dca1de299b4e4873e4ba54781b",
-    "candidate_sha256": "sha256:b70ad1c102dd45db1023d3ac1ee6b138732c04dca1de299b4e4873e4ba54781b",
-    "candidate_path": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/candidate.md"
-  },
-  "classification": {
-    "topic_family": "sealants",
-    "local_first_batch": "077",
-    "source_sensitivity": "technical_materials",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "source_bound_materials",
-    "requires_raw_pdf_audit": true
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
-    "blockers": []
-  },
-  "checked_sources": [
+  "batch": 150,
+  "batch_id": "source-audited-batch-150-local-first",
+  "cluster_id": "lea-matl-006-05",
+  "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
     {
-      "source_id": "salvan-building-materials-b077",
-      "label": "George Salvan Architectural Building Materials",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-      "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
+      "id": "salvan-building-materials-b150",
+      "title": "George Salvan Architectural Building Materials - waterproofing, insulation, and sealants",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-150/salvan-building-materials-b150.source-capture.md",
+      "local_capture_sha256": "sha256:95bc69e72cefb3d7c07a77fbd7c29492fd011fe8b605f4a976a0898ed08f1780",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-150/salvan-building-materials-b150.refined.md",
+      "refined_capture_sha256": "sha256:77f95a09deb048da2cea5dd19d755a46ecc8d5991f68a0ef8bb365c5b6d666cf",
+      "locator": "refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417",
+      "safe_claims": [
+        "Sealers protect material surfaces against water or other liquid penetration by filling pores and forming a continuous skin.",
+        "Effective waterproofing sealers need elastomeric character so they can bridge small cracks and joint movement without rupture.",
+        "Salvan names waterproofing groupings and materials used for surfaces such as concrete, masonry, roof decks, foundation exteriors, swimming pools, and flashing areas.",
+        "Thermal insulation prevents transfer of heat, and Salvan frames heat transfer through conduction, radiation, and convection.",
+        "Salvan lists loose-fill, blanket, batt, board, rigid slab, foamed plastic, and reflective insulation families.",
+        "Caulking compounds must adhere, remain workable over temperature change, form an elastic skin, stretch with joint-width changes, recover after extension or compression, resist water sensitivity, and provide service performance.",
+        "Backup materials control joint depth, help protect the bond, and serve as bond breakers so caulking can elongate.",
+        "Paint and coating work requires surfaces to be examined and cleaned of dust, dirt, grease, or other foreign substances before finishing."
+      ],
+      "use_limits": [
+        "This batch does not state ASTM classifications, movement class numbers, manufacturer-specific waterproofing thicknesses, rainfall intensities, or product coverage values unless separately captured.",
+        "This batch does not turn Salvan specification examples into mandatory Philippine code requirements.",
+        "This batch does not use acoustic NRC/STC or mass-law claims for the thermal insulation article."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "bci-5e-b077",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-      "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
+      "id": "bci-5e-envelope-b150",
+      "title": "Building Construction Illustrated, 5th Edition - envelope, insulation, waterproofing, and sealants",
+      "source_type": "local_building_construction_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-150/bci-5e-envelope-b150.source-capture.md",
+      "local_capture_sha256": "sha256:acf4aad581fc61ab073433fa8b6107d69a2cec0138e17a93c089f2078d0f239d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-150/bci-5e-envelope-b150.refined.md",
+      "refined_capture_sha256": "sha256:7fe7fd8b07788d0a8241fe374f1dab6bcb8c82181b046c0248248507fdcc0c40",
+      "locator": "refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558",
+      "safe_claims": [
+        "Dampproofing applies when hydrostatic pressure from groundwater is not expected; foundation walls should be waterproofed when hydrostatic pressure may occur.",
+        "Foundation dampproofing or waterproofing should extend from above grade down to the top of the footing, with drainage and membrane protection during backfilling.",
+        "BCI identifies bentonite clay or another waterstop at the foundation wall-slab joint where waterproofing is needed.",
+        "Thermal insulation controls heat transfer through exterior assemblies and should remain continuous at foundation, floor, wall, and roof junctions.",
+        "R is thermal resistance, Rt is the sum of component R-values in an assembly, and U-value is the reciprocal of R-value for a component or assembly.",
+        "BCI groups insulating materials as batt or blanket, rigid foam, foamed-in-place, loose-fill, and reflective insulation; effective insulation usually incorporates captured dead air space.",
+        "Roof insulation may be located below the roof deck, between deck and membrane, or above the membrane in a protected membrane system.",
+        "Condensation can reduce insulation effectiveness, be absorbed by materials, and deteriorate finishes.",
+        "A joint sealant must be durable, resilient, and have both cohesive and adhesive strength; movement range, joint depth, substrate condition, filler, and bond breaking control performance."
+      ],
+      "use_limits": [
+        "This batch does not use BCI preliminary R-value tables as Philippine code minimums.",
+        "This batch does not restore exact seam-overlap, dry-film thickness, curing-time, or tropical rainfall values not captured in this source boundary.",
+        "This batch does not claim a project-specific sealant product, substrate temperature range, or ASTM class value."
+      ],
+      "sort_order": 1
     }
   ],
-  "claims": [
+  "normalized_sha256": "sha256:9bbf5863b84b4cee13be9af7ffcca4798ae43f3272e849b7a0d7c2f9f656a904",
+  "candidate_sha256": "sha256:9bbf5863b84b4cee13be9af7ffcca4798ae43f3272e849b7a0d7c2f9f656a904",
+  "question_count": 10,
+  "question_hashes": [
     {
-      "claim_id": "lea-matl-006-05-core-concept-article-b077",
-      "claim_text": "Article lea-matl-006-05-core-concept was rewritten to the checked sealants source scope.",
-      "claim_type": "article_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "b7735dc1-0e8b-498b-8c79-1b18cc5420c5",
+      "content_hash": "sha256:de92e4037c20b283a3c3a7ba66448192d2cf057e81a73e39a77055bda17c61bc",
+      "correct_option_id": "b"
     },
     {
-      "claim_id": "question-b7735dc1-0e8b-498b-8c79-1b18cc5420c5-ALE-MATL-006-05-007-b077",
-      "claim_text": "Question b7735dc1-0e8b-498b-8c79-1b18cc5420c5 ALE-MATL-006-05-007 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "981843ac-0c8c-479f-a668-7cef7eafb50b",
+      "content_hash": "sha256:8a2c36f2a10f73ba78ea4724ca290df9d8d804247467be377c0515574aaa9ec4",
+      "correct_option_id": "b"
     },
     {
-      "claim_id": "question-981843ac-0c8c-479f-a668-7cef7eafb50b-ALE-MATL-006-05-009-b077",
-      "claim_text": "Question 981843ac-0c8c-479f-a668-7cef7eafb50b ALE-MATL-006-05-009 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "1e139061-1002-4cdd-a353-43a60aa7d121",
+      "content_hash": "sha256:b2dcf34a983af045453718367ea971818b229f099c60be2112207ae627810302",
+      "correct_option_id": "a"
     },
     {
-      "claim_id": "question-1e139061-1002-4cdd-a353-43a60aa7d121-ALE-MATL-006-05-010-b077",
-      "claim_text": "Question 1e139061-1002-4cdd-a353-43a60aa7d121 ALE-MATL-006-05-010 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "7a66edba-1773-4be9-9c78-15511e2b96ce",
+      "content_hash": "sha256:e511b599a4a6bd24b41fc5d5d00e93174dfa552b1d4963794ebd67830f99f6eb",
+      "correct_option_id": "c"
     },
     {
-      "claim_id": "question-7a66edba-1773-4be9-9c78-15511e2b96ce-ALE-MATL-006-05-004-b077",
-      "claim_text": "Question 7a66edba-1773-4be9-9c78-15511e2b96ce ALE-MATL-006-05-004 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "85799e5e-633a-444f-b836-35d50db10dca",
+      "content_hash": "sha256:5bdcbb6f5cdd8355427b884400032b376b56beab3998f87447d2974e5e89c09c",
+      "correct_option_id": "b"
     },
     {
-      "claim_id": "question-85799e5e-633a-444f-b836-35d50db10dca-ALE-MATL-006-05-001-b077",
-      "claim_text": "Question 85799e5e-633a-444f-b836-35d50db10dca ALE-MATL-006-05-001 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "cd08d50d-b45d-44f6-924d-925d631197fc",
+      "content_hash": "sha256:63558aa95989c94cc0a551ba69a62f89fc96bed89332db4d2d397c35e912528c",
+      "correct_option_id": "c"
     },
     {
-      "claim_id": "question-cd08d50d-b45d-44f6-924d-925d631197fc-ALE-MATL-006-05-008-b077",
-      "claim_text": "Question cd08d50d-b45d-44f6-924d-925d631197fc ALE-MATL-006-05-008 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "21a12144-a805-45f1-b819-534217e88c14",
+      "content_hash": "sha256:19d8f0fe020bb7b894a4e45ef678d4277e3b137f74c2d50016113cb6b2f33678",
+      "correct_option_id": "c"
     },
     {
-      "claim_id": "question-21a12144-a805-45f1-b819-534217e88c14-ALE-MATL-006-05-003-b077",
-      "claim_text": "Question 21a12144-a805-45f1-b819-534217e88c14 ALE-MATL-006-05-003 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "85e6babf-ac6e-4dc1-9b3b-79ca35739a69",
+      "content_hash": "sha256:821891002eba7efc373bcf2663aba247bc72c912bf41902eeeccbf601d42568e",
+      "correct_option_id": "a"
     },
     {
-      "claim_id": "question-85e6babf-ac6e-4dc1-9b3b-79ca35739a69-ALE-MATL-006-05-002-b077",
-      "claim_text": "Question 85e6babf-ac6e-4dc1-9b3b-79ca35739a69 ALE-MATL-006-05-002 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "ca978faa-b967-4558-81aa-92fa843249c0",
+      "content_hash": "sha256:f70445d5dfe10ee92a8ae30a9def924ff93dbf4d42693d44e0343f4d1bb44660",
+      "correct_option_id": "b"
     },
     {
-      "claim_id": "question-ca978faa-b967-4558-81aa-92fa843249c0-ALE-MATL-006-05-005-b077",
-      "claim_text": "Question ca978faa-b967-4558-81aa-92fa843249c0 ALE-MATL-006-05-005 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "question-936f591d-64ce-48f4-b164-fff615380d6f-ALE-MATL-006-05-006-b077",
-      "claim_text": "Question 936f591d-64ce-48f4-b164-fff615380d6f ALE-MATL-006-05-006 was rewritten to the checked sealants source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 9490-9558; Salvan refined markdown lines 2676-2854; raw PDF pages 92-96 and 274 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "durable, resilient, and have both cohesive and adhesive strength"
-      },
-      "blockers": []
+      "question_id": "936f591d-64ce-48f4-b164-fff615380d6f",
+      "content_hash": "sha256:27e03e1741d65ee074986fd55d5ebbabfb0109daaf20f573a4f9d2560b156dff",
+      "correct_option_id": "b"
     }
   ],
-  "unverified_or_rejected_claims": [],
-  "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
-  },
-  "local_first_publication": {
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "ready_for_final_publishing_review": true
-  }
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact legal, code, numeric, product, or climate-performance values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore ASTM C920/C1619/C1733 class values or substrate temperature ranges.",
+    "No local source in this batch was used to state manufacturer-specific cure times, movement percentages beyond BCI ranges, or Philippine climate performance guarantees.",
+    "No local source in this batch was used to select a proprietary sealant chemistry for every curtain wall, glass, metal, or concrete joint."
+  ],
+  "answer_key_policy": "Existing correct-option IDs preserved while replacing unsupported stems/options/rationales."
 }

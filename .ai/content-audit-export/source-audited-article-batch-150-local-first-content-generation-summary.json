@@ -1,0 +1,44 @@
+{
+  "batch": 150,
+  "batch_id": "source-audited-batch-150-local-first",
+  "generated_at": "2026-05-14T03:55:37.306Z",
+  "status": "passed_local_validation_git_handoff_ready",
+  "articles": [
+    {
+      "cluster_id": "lea-matl-006-03",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "title": "Waterproofing differs from damp-proofing",
+      "source_ids": [
+        "salvan-building-materials-b150",
+        "bci-5e-envelope-b150"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:a942ef18fdbebc74137659b537e254cea0fb8b77c896cccf63073b252b5eaae2",
+      "candidate_sha256": "sha256:a942ef18fdbebc74137659b537e254cea0fb8b77c896cccf63073b252b5eaae2"
+    },
+    {
+      "cluster_id": "lea-matl-006-04",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "title": "Thermal Insulation reduces heat transmission through",
+      "source_ids": [
+        "salvan-building-materials-b150",
+        "bci-5e-envelope-b150"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:4c0cf57c70a4123b08e07c66cb8a8ae27d117e69bfc79b3f75b5892e35dcde44",
+      "candidate_sha256": "sha256:4c0cf57c70a4123b08e07c66cb8a8ae27d117e69bfc79b3f75b5892e35dcde44"
+    },
+    {
+      "cluster_id": "lea-matl-006-05",
+      "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+      "title": "Sealants differ from caulks by durability and movement",
+      "source_ids": [
+        "salvan-building-materials-b150",
+        "bci-5e-envelope-b150"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:9bbf5863b84b4cee13be9af7ffcca4798ae43f3272e849b7a0d7c2f9f656a904",
+      "candidate_sha256": "sha256:9bbf5863b84b4cee13be9af7ffcca4798ae43f3272e849b7a0d7c2f9f656a904"
+    }
+  ]
+}

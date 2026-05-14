@@ -1,0 +1,311 @@
+{
+  "batch": 150,
+  "batch_id": "source-audited-batch-150-local-first",
+  "baseline": "d9c43fa57",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T03:55:37.306Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-150-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-matl-006-03",
+    "lea-matl-006-04",
+    "lea-matl-006-05"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-matl-006-03",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "slug": "lea-matl-006-03-core-concept",
+      "title": "Waterproofing differs from damp-proofing",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "salvan-building-materials-b150",
+        "bci-5e-envelope-b150"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:a942ef18fdbebc74137659b537e254cea0fb8b77c896cccf63073b252b5eaae2",
+      "candidate_sha256": "sha256:a942ef18fdbebc74137659b537e254cea0fb8b77c896cccf63073b252b5eaae2",
+      "source_evidence_sha256": "sha256:26038d0d3146044b59de8ea717dc6830de93ea03392113effb4249479a0fd159",
+      "linked_questions_sha256": "sha256:feec9f21e85a1da568a73a8f04113ca2484ede7e480dffe01f73c29cad4cc766",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore ASTM waterproofing system labels, dry-film thicknesses, seam overlaps, cure times, or tropical rainfall rates.",
+        "No local source in this batch was used to state Philippine code requirements for below-grade waterproofing.",
+        "No local source in this batch was used to make interior negative-side coatings equivalent to exterior drainage and membrane protection."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/scoped-validation-batch-150.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/ca24ab09-70b5-4acf-90a3-306c93691bb8.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/c82532e0-7b73-4891-9292-acf89dd2251f.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/d3f421c9-847a-4ad0-b6c4-ddc8b930db3e.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/ce7be606-4c04-4e42-bd2d-7e250aa6f6bd.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/2b4ac2db-bb95-4ac8-a4c5-9a91e45e3582.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/9590a306-6a4b-43df-aee5-4eab728a63dd.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/3996c993-d015-431d-a982-eaa8573a59a2.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/743de1a4-bafa-4929-b0be-8fca30a58446.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/a615ce9f-571a-4071-b60b-35b2d3d31539.json",
+          ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/question-edits/6fc3290a-b8ac-4f00-8f88-a2375566a0cb.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-matl-006-04",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "slug": "lea-matl-006-04-core-concept",
+      "title": "Thermal Insulation reduces heat transmission through",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "salvan-building-materials-b150",
+        "bci-5e-envelope-b150"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:4c0cf57c70a4123b08e07c66cb8a8ae27d117e69bfc79b3f75b5892e35dcde44",
+      "candidate_sha256": "sha256:4c0cf57c70a4123b08e07c66cb8a8ae27d117e69bfc79b3f75b5892e35dcde44",
+      "source_evidence_sha256": "sha256:446bae3c2764bbca9011767d2561f2db734a1a71bd184d1ba6a52557a2d639df",
+      "linked_questions_sha256": "sha256:79dffadcaba5229a3a0b47ce92e0da1ead7e5a44374cd8a0b4e581260dd4b503",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore Philippine energy-code R-value or U-value minimums.",
+        "No local source in this batch was used to retain acoustic NRC/STC or mass-law questions under this thermal-insulation cluster.",
+        "No local source in this batch was used to calculate product-specific R-values from unstated manufacturer data."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/scoped-validation-batch-150.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/5cc8794e-0930-4790-8438-c7014cc210c6.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/cc29799c-e70f-4e78-b92d-7bf467fdcbe3.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/8a8b8d25-2b14-4c30-85d3-2d8260f6aee4.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/d43372cf-f536-4457-ae95-95291181c73c.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/23798e74-081b-4ab5-8bc6-e28883a91cb8.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/4e491cc9-809e-499c-ac93-ab08605ce1f5.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/02cc16b6-1743-43b3-a9dc-5313535cd6aa.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/7d7228b7-af46-482e-8ae9-67742a9f90fb.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/76ccbbe1-82e0-4fc2-b48e-05788412909a.json",
+          ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/question-edits/d926901d-e273-4e49-91af-5cf49525b7ba.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-matl-006-05",
+      "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+      "slug": "lea-matl-006-05-core-concept",
+      "title": "Sealants differ from caulks by durability and movement",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "salvan-building-materials-b150",
+        "bci-5e-envelope-b150"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:9bbf5863b84b4cee13be9af7ffcca4798ae43f3272e849b7a0d7c2f9f656a904",
+      "candidate_sha256": "sha256:9bbf5863b84b4cee13be9af7ffcca4798ae43f3272e849b7a0d7c2f9f656a904",
+      "source_evidence_sha256": "sha256:b99554e6916b618e8479da4bf20cb4485d878df30551ed50276f997349ecc0be",
+      "linked_questions_sha256": "sha256:e8459702c61addc76b0fa5de71544d6c6ffe5b8df268e8f8610f4f5f654721d1",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore ASTM C920/C1619/C1733 class values or substrate temperature ranges.",
+        "No local source in this batch was used to state manufacturer-specific cure times, movement percentages beyond BCI ranges, or Philippine climate performance guarantees.",
+        "No local source in this batch was used to select a proprietary sealant chemistry for every curtain wall, glass, metal, or concrete joint."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/scoped-validation-batch-150.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/b7735dc1-0e8b-498b-8c79-1b18cc5420c5.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/981843ac-0c8c-479f-a668-7cef7eafb50b.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/1e139061-1002-4cdd-a353-43a60aa7d121.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/7a66edba-1773-4be9-9c78-15511e2b96ce.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/85799e5e-633a-444f-b836-35d50db10dca.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/cd08d50d-b45d-44f6-924d-925d631197fc.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/21a12144-a805-45f1-b819-534217e88c14.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/85e6babf-ac6e-4dc1-9b3b-79ca35739a69.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/ca978faa-b967-4558-81aa-92fa843249c0.json",
+          ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/question-edits/936f591d-64ce-48f4-b164-fff615380d6f.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3/compose-error.json"
+      }
+    }
+  ],
+  "source_records": {
+    "salvan-building-materials-b150": {
+      "id": "salvan-building-materials-b150",
+      "title": "George Salvan Architectural Building Materials - waterproofing, insulation, and sealants",
+      "locator": "refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "exists": true,
+        "bytes": 51997841,
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "exists": true,
+        "bytes": 577457,
+        "sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-150/salvan-building-materials-b150.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:95bc69e72cefb3d7c07a77fbd7c29492fd011fe8b605f4a976a0898ed08f1780"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-150/salvan-building-materials-b150.refined.md",
+        "exists": true,
+        "sha256": "sha256:77f95a09deb048da2cea5dd19d755a46ecc8d5991f68a0ef8bb365c5b6d666cf"
+      },
+      "source_boundary_sha256": "sha256:7445bdd5c2a1de0944cd11c4c5ea579c8d7c192211f1880f51e320530cd5fc55"
+    },
+    "bci-5e-envelope-b150": {
+      "id": "bci-5e-envelope-b150",
+      "title": "Building Construction Illustrated, 5th Edition - envelope, insulation, waterproofing, and sealants",
+      "locator": "refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "exists": true,
+        "bytes": 41001593,
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "exists": true,
+        "bytes": 1144595,
+        "sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-150/bci-5e-envelope-b150.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:acf4aad581fc61ab073433fa8b6107d69a2cec0138e17a93c089f2078d0f239d"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-150/bci-5e-envelope-b150.refined.md",
+        "exists": true,
+        "sha256": "sha256:7fe7fd8b07788d0a8241fe374f1dab6bcb8c82181b046c0248248507fdcc0c40"
+      },
+      "source_boundary_sha256": "sha256:8ef3de9b1548d8471b41ba002cdce0a13613757d108d0e8c6f4659efdc7add61"
+    }
+  },
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preservation_or_documented_correction": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "source_hash_checks": [
+    {
+      "source_id": "salvan-building-materials-b150",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-150/salvan-building-materials-b150.source-capture.md",
+      "capture_sha256": "sha256:95bc69e72cefb3d7c07a77fbd7c29492fd011fe8b605f4a976a0898ed08f1780",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-150/salvan-building-materials-b150.refined.md",
+      "refined_capture_sha256": "sha256:77f95a09deb048da2cea5dd19d755a46ecc8d5991f68a0ef8bb365c5b6d666cf",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-5e-envelope-b150",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-150/bci-5e-envelope-b150.source-capture.md",
+      "capture_sha256": "sha256:acf4aad581fc61ab073433fa8b6107d69a2cec0138e17a93c089f2078d0f239d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-150/bci-5e-envelope-b150.refined.md",
+      "refined_capture_sha256": "sha256:7fe7fd8b07788d0a8241fe374f1dab6bcb8c82181b046c0248248507fdcc0c40",
+      "status": "pass"
+    }
+  ],
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "no_stage_commit_push": true,
+    "manifest_scoped_only": true
+  },
+  "off_limits_not_touched": [
+    ".ai/00_performance",
+    ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+    ".ai/README.md",
+    ".hermes/skills",
+    ".ai/00_system/philip-ux-ui-calibration.md",
+    ".ai/03_plans/blocked-source-recovery/",
+    ".ai/content-audit-export/sync-state.json",
+    "non-Batch-150 content-roundtrip run directories"
+  ]
+}
