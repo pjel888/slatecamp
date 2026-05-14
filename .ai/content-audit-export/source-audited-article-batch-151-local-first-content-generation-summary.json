@@ -1,0 +1,44 @@
+{
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
+  "generated_at": "2026-05-14T03:54:25.348Z",
+  "status": "passed_local_validation_git_handoff_ready",
+  "articles": [
+    {
+      "cluster_id": "lea-matl-007-01",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "title": "Floor finishes serve dual functions as protective layers",
+      "source_ids": [
+        "bci-5e-floor-finishes-b151",
+        "salvan-floor-finishes-b151"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:22c195e48696c6a062be5f6403268e61e4d03860d4842afcb3d0b9a097e04d86",
+      "candidate_sha256": "sha256:22c195e48696c6a062be5f6403268e61e4d03860d4842afcb3d0b9a097e04d86"
+    },
+    {
+      "cluster_id": "lea-matl-007-02",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "title": "Wall finishes range from paint systems",
+      "source_ids": [
+        "bci-5e-wall-finishes-b151",
+        "salvan-wall-paint-finishes-b151"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:6fe223d903d91227d76bd7dc7be54d181bbfffa511061a0a31985f6db8619be7",
+      "candidate_sha256": "sha256:6fe223d903d91227d76bd7dc7be54d181bbfffa511061a0a31985f6db8619be7"
+    },
+    {
+      "cluster_id": "lea-matl-007-03",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "title": "Ceiling finishes fall into four categories: suspended",
+      "source_ids": [
+        "bci-5e-ceiling-finishes-b151",
+        "salvan-ceiling-acoustical-finishes-b151"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:f6039dab7fb42c5afd1d1b88971a514a407020acf70696748ae06b4da5788840",
+      "candidate_sha256": "sha256:f6039dab7fb42c5afd1d1b88971a514a407020acf70696748ae06b4da5788840"
+    }
+  ]
+}

@@ -1,65 +1,69 @@
 {
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
+  "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+  "cluster_id": "lea-matl-007-03",
   "question_id": "117d447b-0598-4981-876b-298a11f16e07",
-  "baseline_hash": "sha256:c5c9f6e76cfefa9d7e3a8186529a2e7c1d498f3c2d92e737c207f9e37f278f97",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-03-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
-    "parent_article_slug": "lea-matl-007-03-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 12889-13016 and 13505-13562; raw PDF pages 345-365 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 12889-13016 and 13505-13562; raw PDF pages 345-365 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 9848-9920; raw PDF pages 289-291 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 12889-13016 and 13505-13562; raw PDF pages 345-365 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 9848-9920; raw PDF pages 289-291 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited ceiling_finishes scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ac7063681390d73009f820aa57f64dd131d1fe07488eeeac020f095742fc83a6",
+  "after_hash": "sha256:ac7063681390d73009f820aa57f64dd131d1fe07488eeeac020f095742fc83a6",
+  "baseline_hash": "sha256:ac7063681390d73009f820aa57f64dd131d1fe07488eeeac020f095742fc83a6",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-ceiling-finishes-b151"
+  ],
+  "reason": "Batch 151 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "A ceiling finish must leave access to ductwork, conduit, and plumbing above. Which system best fits the checked source?",
+    "text": "Which acoustical ceiling tile module is explicitly listed by BCI among common manufactured sizes?",
     "options": [
       {
         "id": "a",
-        "text": "Suspended acoustical ceiling"
+        "text": "6 x 6 in. only"
       },
       {
         "id": "b",
-        "text": "Adhesive-set direct tile only"
+        "text": "18 x 36 in. only"
       },
       {
         "id": "c",
-        "text": "Wood strip flooring"
+        "text": "24 x 24 in."
       },
       {
         "id": "d",
-        "text": "Terrazzo flooring"
+        "text": "80 x 80 cm only"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI states that suspended acoustical ceilings provide concealed space for ductwork, conduit, and plumbing lines.",
-    "explanation": "BCI states that suspended acoustical ceilings provide concealed space for ductwork, conduit, and plumbing lines.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "6 x 6 in. only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "b": "18 x 36 in. only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "c": "24 x 24 in. This stays inside the Batch 151 local source boundary.",
+      "d": "80 x 80 cm only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "correct": "24 x 24 in. Supported by bci-5e-ceiling-finishes-b151.",
+      "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+      "source_boundary": "bci-5e-ceiling-finishes-b151",
+      "checked_sources": [
+        "bci-5e-ceiling-finishes-b151"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 13505-13508.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-151-local-first",
+      "bci-5e-ceiling-finishes-b151"
+    ]
+  },
+  "rationale": {
+    "a": "6 x 6 in. only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "b": "18 x 36 in. only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "c": "24 x 24 in. This stays inside the Batch 151 local source boundary.",
+    "d": "80 x 80 cm only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "correct": "24 x 24 in. Supported by bci-5e-ceiling-finishes-b151.",
+    "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+    "source_boundary": "bci-5e-ceiling-finishes-b151",
+    "checked_sources": [
+      "bci-5e-ceiling-finishes-b151"
+    ]
   }
 }

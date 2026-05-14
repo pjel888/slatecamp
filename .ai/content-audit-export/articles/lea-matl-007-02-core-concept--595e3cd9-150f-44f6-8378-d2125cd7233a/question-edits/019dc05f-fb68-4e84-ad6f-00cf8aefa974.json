@@ -1,65 +1,69 @@
 {
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
+  "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+  "cluster_id": "lea-matl-007-02",
   "question_id": "019dc05f-fb68-4e84-ad6f-00cf8aefa974",
-  "baseline_hash": "sha256:af215952394c9b4e4c0701afa202a861802499697f8324c57f657e59cb090705",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
-    "parent_article_slug": "lea-matl-007-02-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited wall_finishes scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:0bc4954cc660c064c14251944150bbb0d88de45088c16d0b93336e369d22b46a",
+  "after_hash": "sha256:0bc4954cc660c064c14251944150bbb0d88de45088c16d0b93336e369d22b46a",
+  "baseline_hash": "sha256:0bc4954cc660c064c14251944150bbb0d88de45088c16d0b93336e369d22b46a",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "salvan-wall-paint-finishes-b151"
+  ],
+  "reason": "Batch 151 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "What is a key function of tapered gypsum board edges?",
+    "text": "A painter proposes skipping surface examination and primer because the finish coat will hide minor wall defects. Which response is source-safe?",
     "options": [
       {
         "id": "a",
-        "text": "They allow joints to be taped and filled for smooth monolithic-looking surfaces."
+        "text": "Accept the shortcut because paint preparation is optional."
       },
       {
         "id": "b",
-        "text": "They make ceramic tile unnecessary in all wet rooms."
+        "text": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified."
       },
       {
         "id": "c",
-        "text": "They convert a wall into a roof truss."
+        "text": "Approve only if the wall is wet so paint flows better."
       },
       {
         "id": "d",
-        "text": "They replace primer and finish coats."
+        "text": "Replace the paint system with carpet to avoid wall preparation."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI states that tapered gypsum board edges allow joints to be taped and filled for smooth monolithic-looking surfaces.",
-    "explanation": "BCI states that tapered gypsum board edges allow joints to be taped and filled for smooth monolithic-looking surfaces.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Accept the shortcut because paint preparation is optional. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "b": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified. This stays inside the Batch 151 local source boundary.",
+      "c": "Approve only if the wall is wet so paint flows better. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "d": "Replace the paint system with carpet to avoid wall preparation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "correct": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified. Supported by salvan-wall-paint-finishes-b151.",
+      "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+      "source_boundary": "salvan-wall-paint-finishes-b151",
+      "checked_sources": [
+        "salvan-wall-paint-finishes-b151"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Salvan refined markdown lines 13397-13422.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-151-local-first",
+      "salvan-wall-paint-finishes-b151"
+    ]
+  },
+  "rationale": {
+    "a": "Accept the shortcut because paint preparation is optional. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "b": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified. This stays inside the Batch 151 local source boundary.",
+    "c": "Approve only if the wall is wet so paint flows better. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "d": "Replace the paint system with carpet to avoid wall preparation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "correct": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified. Supported by salvan-wall-paint-finishes-b151.",
+    "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+    "source_boundary": "salvan-wall-paint-finishes-b151",
+    "checked_sources": [
+      "salvan-wall-paint-finishes-b151"
+    ]
   }
 }

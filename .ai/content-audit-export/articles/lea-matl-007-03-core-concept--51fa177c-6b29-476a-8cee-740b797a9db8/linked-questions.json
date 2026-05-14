@@ -1,30 +1,30 @@
 {
   "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:269565be5a259d9e3f18fc3aa65284f8d47c37f6cfa061472262d1ae0e92b77b",
+  "linked_questions_hash": "sha256:85403e68a08ac615f56f9459e2cc89aa3059a76969fd4740e2f7ad944e3dc295",
   "question_count": 10,
   "questions": [
     {
       "question_id": "f6cbcf2f-7e97-4684-885d-578b4f282677",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "What is the standard T-bar grid width for mineral fiber acoustic tile suspension systems per ASTM C635?",
+      "text": "Why would a designer choose a suspended acoustical ceiling instead of direct-applied tile where ducts and conduits must remain accessible?",
       "options": [
         {
           "id": "a",
-          "text": "A) 3/8-inch"
+          "text": "Suspended ceilings eliminate the need for any suspension grid."
         },
         {
           "id": "b",
-          "text": "B) 9/16-inch"
+          "text": "They create concealed space for services, and many systems allow tile removal for replacement or access."
         },
         {
           "id": "c",
-          "text": "C) 3/4-inch"
+          "text": "They are the same as adhesive-set tiles on a solid backing."
         },
         {
           "id": "d",
-          "text": "D) 15/16-inch"
+          "text": "They automatically provide any requested fire-hour rating without manufacturer data."
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "3/8-inch is too narrow; insufficient tile support.",
-        "c": "3/4-inch does not align with standard mineral fiber grid.",
-        "d": "15/16-inch is heavy-duty aluminum grid, not standard.",
-        "correct": "9/16-inch is the most common grid flange width compatible with standard mineral fiber tiles, per market practice and ASTM C635 load-rated systems. This is the cost-effective, most common standard.",
-        "takeaway": "Standard = 9/16 inch. Heavy-duty aluminum = 15/16 inch. Match grid width to tile specification."
+        "a": "Suspended ceilings eliminate the need for any suspension grid. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "They create concealed space for services, and many systems allow tile removal for replacement or access. This stays inside the Batch 151 local source boundary.",
+        "c": "They are the same as adhesive-set tiles on a solid backing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "They automatically provide any requested fire-hour rating without manufacturer data. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "They create concealed space for services, and many systems allow tile removal for replacement or access. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
-      "explanation": "3/8-inch is too narrow; insufficient tile support. 3/4-inch does not align with standard mineral fiber grid. 15/16-inch is heavy-duty aluminum grid, not standard. 9/16-inch is the most common grid flange width compatible with standard mineral fiber tiles, per market practice and ASTM C635 load-rated systems. This is the cost-effective, most common standard. Standard = 9/16 inch. Heavy-duty aluminum = 15/16 inch. Match grid width to tile specification.",
-      "code_citation": "ASTM C635 Standard Specification for Steel Suspension Systems",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 13535-13542.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T15:59:01.451173+00:00",
-      "content_hash": "sha256:256935dce91bb7a691053b50bf00f13dfe406ca5184bd7878a27f10c04bdac6b"
+      "content_hash": "sha256:cfe126e4ef587bceb10bf8584fea525fe18a151f2b4f66edde16d56d995ce847"
     },
     {
       "question_id": "cea067d8-8697-482c-a007-9db0b743fe5a",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "A law office specifies standard mineral fiber acoustic tiles (NRC 0.65) for cost savings. Is this appropriate for achieving speech privacy between offices?",
+      "text": "A direct-applied acoustical tile ceiling is proposed over an uneven base. What does BCI require before that direct application can work?",
       "options": [
         {
           "id": "a",
-          "text": "A) Yes; NRC 0.65 is adequate for any office"
+          "text": "No backing is needed if the tile is acoustical."
         },
         {
           "id": "b",
-          "text": "B) No; offices require NRC ≥0.75 minimum for speech privacy; specify perforated tiles (NRC 0.80+) or acoustic baffles"
+          "text": "A solid backing is needed, or furring must establish a flat, level base when the surface is unsuitable."
         },
         {
           "id": "c",
-          "text": "C) Only if offices are separated by full-height walls with no penetrations or openings"
+          "text": "The tiles must be hung from plumbing lines."
         },
         {
           "id": "d",
-          "text": "D) Yes; speech privacy depends on partition height, not ceiling NRC, and can be supplemented with sound masking systems"
+          "text": "The ceiling must be treated as terrazzo flooring."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "NRC 0.65 is acceptable for retail, not offices.",
-        "c": "Full-height walls eliminate sound transmission but do not address acoustic absorption in office spaces.",
-        "d": "Partition height affects direct sound; ceiling NRC affects reflected sound. Both matter.",
-        "correct": "NRC 0.65 is insufficient for office speech privacy. Sound reflects off low-absorption tiles, traveling between offices via return air path. NRC ≥0.75 (preferably 0.80+) is needed. Cost savings here create design failure and client complaints.",
-        "takeaway": "Match NRC to space function. Office = 0.75+. Don't compromise acoustic performance for cost."
+        "a": "No backing is needed if the tile is acoustical. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "A solid backing is needed, or furring must establish a flat, level base when the surface is unsuitable. This stays inside the Batch 151 local source boundary.",
+        "c": "The tiles must be hung from plumbing lines. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "The ceiling must be treated as terrazzo flooring. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "A solid backing is needed, or furring must establish a flat, level base when the surface is unsuitable. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
-      "explanation": "NRC 0.65 is acceptable for retail, not offices. Full-height walls eliminate sound transmission but do not address acoustic absorption in office spaces. Partition height affects direct sound; ceiling NRC affects reflected sound. Both matter. NRC 0.65 is insufficient for office speech privacy. Sound reflects off low-absorption tiles, traveling between offices via return air path. NRC ≥0.75 (preferably 0.80+) is needed. Cost savings here create design failure and client complaints. Match NRC to space function. Office = 0.75+. Don't compromise acoustic performance for cost.",
-      "code_citation": "Acoustic design standards; office requirements",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 13512-13531.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T15:59:01.32095+00:00",
-      "content_hash": "sha256:52fd6ffceaf85ce381f49f013922123858e51c5930b860290676403f2f8b8b8d"
+      "content_hash": "sha256:27b7dadcf1a47a2c5bbd42421d0a8c8de7e69177fae26ae2d2c52b4cf52a5117"
     },
     {
       "question_id": "117d447b-0598-4981-876b-298a11f16e07",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "A rectangular office space measures 6m × 8m. You specify 600×600mm suspended ceiling tiles. How many tiles will be required (without considering waste or partial tiles at edges)?",
+      "text": "Which acoustical ceiling tile module is explicitly listed by BCI among common manufactured sizes?",
       "options": [
         {
           "id": "a",
-          "text": "A) 40 tiles, calculated based on the total area divided by the area of one tile"
+          "text": "6 x 6 in. only"
         },
         {
           "id": "b",
-          "text": "B) 110 tiles, assuming a layout that maximizes coverage with minimal cutting"
+          "text": "18 x 36 in. only"
         },
         {
           "id": "c",
-          "text": "Add option E) 130 tiles and mark as correct, or change dimensions to yield 120 exactly (e.g., 6m x 7.2m)"
+          "text": "24 x 24 in."
         },
         {
           "id": "d",
-          "text": "D) 160 tiles, accounting for potential layout inefficiencies and overlaps"
+          "text": "80 x 80 cm only"
         }
       ],
       "correct_option_id": "c",
@@ -133,17 +149,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "40 is too low; miscalculation.",
-        "b": "110 is plausible but off by ~10-20 tiles.",
-        "d": "160 suggests overstocking.",
-        "correct": "6m / 0.6m = 10 tiles; 8m / 0.6m = 13.33, round to 14 tiles minimum. 10 × 14 = 140 tiles (accounting for trim and partial at one edge, approximately 120 is close). Exact answer: 10 × 13 = 130 full tiles + edge pieces.",
-        "takeaway": "Grid layout calculation: (length / tile size) × (width / tile size). Always plan for trim perimeter and partial tiles. Budget 5-10% waste."
+        "a": "6 x 6 in. only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "18 x 36 in. only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "c": "24 x 24 in. This stays inside the Batch 151 local source boundary.",
+        "d": "80 x 80 cm only is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "24 x 24 in. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "Ceiling grid sizing calculation",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13505-13508.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +176,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c5c9f6e76cfefa9d7e3a8186529a2e7c1d498f3c2d92e737c207f9e37f278f97"
+      "content_hash": "sha256:ac7063681390d73009f820aa57f64dd131d1fe07488eeeac020f095742fc83a6"
     },
     {
       "question_id": "f063d4c4-2ad9-4bb6-a80c-cb8092ba6eaf",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "A 20-story office building in Metro Manila includes suspended ceilings throughout. The contractor omits lateral bracing (IBC Section 13.5.7) to save cost. What is the structural and code compliance consequence?",
+      "text": "A specification needs acoustic performance, fire rating, light reflectance, and suspension details for acoustical ceiling tile. What is the source-backed next step?",
       "options": [
         {
           "id": "a",
-          "text": "A) Minimal impact; bracing is optional in occupied buildings unless specified otherwise by local amendments"
+          "text": "Invent a standard value because all ceiling tiles perform alike."
         },
         {
           "id": "b",
-          "text": "B) Code violation and seismic collapse risk; suspended ceilings without bracing will fall during an earthquake, endangering occupants"
+          "text": "Consult the ceiling tile manufacturer for those exact performance and suspension details."
         },
         {
           "id": "c",
-          "text": "C) Only a concern in Seismic Zone 5; Zone 4 does not require bracing unless the building exceeds 30 meters in height"
+          "text": "Use carpet pile height as the ceiling performance value."
         },
         {
           "id": "d",
-          "text": "D) Bracing is required for ceilings <3m high only, except in high-occupancy areas where additional measures are mandated"
+          "text": "Ignore performance data if the tile is mineral fiber."
         }
       ],
       "correct_option_id": "b",
@@ -183,17 +207,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Bracing is mandatory, not optional.",
-        "c": "Philippines is Zone 4, requiring bracing; Zone 5 does not apply.",
-        "d": "Bracing applies to all suspended ceilings.",
-        "correct": "IBC Section 13.5.7 is mandatory in Seismic Design Category D (Philippines Zone 4). Omitting lateral and diagonal bracing at 900-1200mm spacing violates code and creates catastrophic collapse risk during earthquakes. Suspended ceilings without bracing fall as discrete tiles or entire sections, injuring occupants below.",
-        "takeaway": "Seismic bracing is non-negotiable. Inspect during construction. Cost savings that omit safety requirements = major liability."
+        "a": "Invent a standard value because all ceiling tiles perform alike. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Consult the ceiling tile manufacturer for those exact performance and suspension details. This stays inside the Batch 151 local source boundary.",
+        "c": "Use carpet pile height as the ceiling performance value. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "Ignore performance data if the tile is mineral fiber. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Consult the ceiling tile manufacturer for those exact performance and suspension details. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "IBC Section 13.5.7; Philippine Seismic Design Standards (PHVS)",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13512-13518.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +234,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4f1ac3d208cf0ba5a4f5c88059fb0d01cbc783504b4bccd9a7dcf17b4941ed38"
+      "content_hash": "sha256:67f1cb165457aa6da0f7d9a4597655d9215e5a45763ebcd954bd6b950722e0e3"
     },
     {
       "question_id": "07078c5d-5161-44e1-9e0b-6743cea5f0b0",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "A hospital ceiling assembly must achieve a 2-hour fire rating. Standard Class A mineral fiber acoustic tiles are specified. Is this adequate?",
+      "text": "Why are many suspended acoustical ceiling tiles removable?",
       "options": [
         {
           "id": "a",
-          "text": "A) Yes; Class A tiles provide 2-hour fire rating, which meets the necessary fire safety standards for hospital environments"
+          "text": "To convert the grid into wall tile backing."
         },
         {
           "id": "b",
-          "text": "B) No; Class A is surface fire rating only; structural 2-hour rating requires additional gypsum, intumescent paint, or rated assembly details"
+          "text": "For replacement or access into the ceiling space."
         },
         {
           "id": "c",
-          "text": "C) Yes if tiles are >25mm thick, which may provide additional fire resistance but is not a guaranteed solution"
+          "text": "To eliminate the need for main runners and cross tees."
         },
         {
           "id": "d",
-          "text": "D) Only if combined with non-rated drywall above, which may not provide the required fire rating without further modifications"
+          "text": "To cure terrazzo faster."
         }
       ],
       "correct_option_id": "b",
@@ -233,17 +265,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Class A is surface-only; not structural rating.",
-        "c": "Thickness does not provide structural rating.",
-        "d": "Non-rated drywall does not help.",
-        "correct": "Class A fire rating (flame spread <25 FRA, smoke <450 SMOG) is a surface property, not structural rating. 2-hour fire rating requires structural design: 5/8-inch Type X gypsum, intumescent paint, or rated assembly. Two different specifications needed.",
-        "takeaway": "Class A = surface fire rating. 2-hour = structural rating. Specify both separately; confirm assembly with fire consultant."
+        "a": "To convert the grid into wall tile backing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "For replacement or access into the ceiling space. This stays inside the Batch 151 local source boundary.",
+        "c": "To eliminate the need for main runners and cross tees. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "To cure terrazzo faster. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "For replacement or access into the ceiling space. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "IBC fire-rating definitions; ASTM E84 surface testing vs. structural assembly testing",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13535-13542.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +292,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:458f1dd0dc34c82c244b275fe05e8723fff6ead672e7b844a01b832b8624ade8"
+      "content_hash": "sha256:1a34db323b0b4052aee5cdf2be1092cbce0b48698eada46176f4bddaafc66040"
     },
     {
       "question_id": "9567ae14-4aaf-46b0-bf34-f61a403c07a1",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "Design a ceiling system for a 15m × 10m open-plan office in Quezon City requiring: (1) speech privacy (NRC ≥0.80), (2) 2-hour fire rating, (3) seismic compliance (Zone 4), (4) easy MEP access. Which specification best meets all requirements?",
+      "text": "An open office ceiling must coordinate acoustics, lighting, and air distribution. Which source-backed system concept fits that coordination goal?",
       "options": [
         {
           "id": "a",
-          "text": "A) Standard mineral fiber 600×600 tiles (NRC 0.65), 9/16-inch grid, no special bracing, which may not meet seismic requirements"
+          "text": "A finish floor system, because floor finishes control air distribution."
         },
         {
           "id": "b",
-          "text": "B) Perforated acoustic tiles (NRC 0.85), 9/16-inch ASTM C635 grid with lateral and diagonal bracing per IBC 13.5.7; gypsum return air plenum with intumescent paint for 2-hour rating"
+          "text": "An integrated ceiling system that combines acoustical, lighting, and air-handling components."
         },
         {
           "id": "c",
-          "text": "C) Flat gypsum drywall ceiling with paint, no suspended system, which limits MEP access and may not meet acoustic requirements"
+          "text": "Adhesive-set tile on an uneven base with no service space."
         },
         {
           "id": "d",
-          "text": "D) Metal ceiling panels (NRC 0.40) with seismic bracing only, which may not provide adequate acoustic performance"
+          "text": "A gypsum board wall finish with no ceiling coordination."
         }
       ],
       "correct_option_id": "b",
@@ -283,17 +323,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Standard tiles fail NRC requirement (0.65 < 0.80); no fire rating design.",
-        "c": "Flat gypsum limits MEP access; 2-hour rating requires assembly detail.",
-        "d": "Metal panels fail NRC requirement (0.40).",
-        "correct": "Option B satisfies all requirements: perforated tiles deliver NRC 0.85 for speech privacy; ASTM C635 grid with seismic bracing meets Zone 4 compliance; gypsum + intumescent paint assembly achieves 2-hour fire rating; suspended system allows MEP access above. Perforated tiles add cost but essential for design requirements.",
-        "takeaway": "Integrate acoustic, fire, seismic, and MEP requirements into unified ceiling specification. Cost savings that sacrifice function = design failure."
+        "a": "A finish floor system, because floor finishes control air distribution. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "An integrated ceiling system that combines acoustical, lighting, and air-handling components. This stays inside the Batch 151 local source boundary.",
+        "c": "Adhesive-set tile on an uneven base with no service space. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "A gypsum board wall finish with no ceiling coordination. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "An integrated ceiling system that combines acoustical, lighting, and air-handling components. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "Integrated design standards: acoustics, fire, seismic, MEP coordination",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13549-13555.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +350,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:91eecb45f52480379edbbb03c8ad3a2b4c468df0e5a7d87d51243488d9a26eb4"
+      "content_hash": "sha256:18be33739032d977e11d451da005ceb4a5942693445d0bbd39fe08e4ee40eead"
     },
     {
       "question_id": "e9ab80b7-cc32-46e9-8539-c497c82a85e7",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "Why is seismic bracing required for suspended ceiling systems in the Philippines per NSCP 2015 Section 408.3.2 (referencing ASCE 7 Chapter 13)?",
+      "text": "A suspended acoustical ceiling grid is missing its secondary members. Which component set is source-supported for the suspension system?",
       "options": [
         {
           "id": "a",
-          "text": "A) To improve acoustic performance by reducing sound transmission through structural elements"
+          "text": "Only terrazzo divider strips and carpet backing."
         },
         {
           "id": "b",
-          "text": "B) To prevent ceiling sag under normal loads, especially in areas with high humidity and temperature fluctuations"
+          "text": "Only gypsum board tapered edges."
         },
         {
           "id": "c",
-          "text": "C) To prevent collapse during lateral (earthquake) motion"
+          "text": "Main runners, cross tees, and splines."
         },
         {
           "id": "d",
-          "text": "D) To reduce vibration from HVAC equipment, ensuring quieter operation and increased occupant comfort"
+          "text": "Only a painted concrete slab with no grid."
         }
       ],
       "correct_option_id": "c",
@@ -333,17 +381,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Bracing is not about acoustics.",
-        "b": "Spacing and grid strength address sag; bracing addresses lateral motion.",
-        "d": "Isolation pads address vibration; bracing addresses seismic forces.",
-        "correct": "IBC Section 13.5.7 mandates lateral and diagonal bracing to resist seismic (earthquake) forces. The Philippines is in Seismic Zone 4; bracing prevents catastrophic ceiling collapse during earthquakes.",
-        "takeaway": "Seismic bracing = earthquake resistance. Zone 4 (Philippines) = mandatory. It's not optional for cost savings."
+        "a": "Only terrazzo divider strips and carpet backing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Only gypsum board tapered edges. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "c": "Main runners, cross tees, and splines. This stays inside the Batch 151 local source boundary.",
+        "d": "Only a painted concrete slab with no grid. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Main runners, cross tees, and splines. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "IBC Section 13.5.7; Philippine Seismic Design Category",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13541-13548.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +408,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c6bb9a1b012a119ff3695770f2fffaafda95d94336213b1a87f1825bc79bb2c3"
+      "content_hash": "sha256:064a57be54db267beff37db807a847b4ce5908ddc4e5592e8952cda6db4080fc"
     },
     {
       "question_id": "df773c56-1fd4-4553-bdb0-50152db2cfe7",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "What Noise Reduction Coefficient (NRC) is appropriate for an office environment requiring speech privacy?",
+      "text": "How can a linear metal ceiling contribute to sound absorption according to BCI?",
       "options": [
         {
           "id": "a",
-          "text": "A) NRC 0.50, suitable for environments with moderate noise control needs"
+          "text": "By replacing every acoustical material with ceramic wall tile."
         },
         {
           "id": "b",
-          "text": "B) NRC 0.65, providing a balance between cost and acoustic performance"
+          "text": "By using closed slots with no backing material."
         },
         {
           "id": "c",
-          "text": "C) NRC 0.75 or higher"
+          "text": "Open slots can permit sound absorption when backed by batt insulation in the ceiling space."
         },
         {
           "id": "d",
-          "text": "D) NRC 0.95 (maximum), ensuring the highest level of sound absorption for critical areas"
+          "text": "By eliminating lighting and air-handling coordination."
         }
       ],
       "correct_option_id": "c",
@@ -383,17 +439,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "NRC 0.50 is minimal absorption; inadequate for offices.",
-        "b": "NRC 0.65 is for retail corridors, light-duty spaces; insufficient for offices.",
-        "d": "NRC 0.95 is maximum available; not necessary.",
-        "correct": "Offices require NRC ≥0.75 for adequate sound absorption and speech privacy. NRC 0.75+ controls reverberation and limits sound transmission between offices.",
-        "takeaway": "Offices = 0.75+. Retail/corridors = 0.65. Match NRC to space function."
+        "a": "By replacing every acoustical material with ceramic wall tile. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "By using closed slots with no backing material. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "c": "Open slots can permit sound absorption when backed by batt insulation in the ceiling space. This stays inside the Batch 151 local source boundary.",
+        "d": "By eliminating lighting and air-handling coordination. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Open slots can permit sound absorption when backed by batt insulation in the ceiling space. Supported by bci-5e-ceiling-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "Acoustic design standards; office speech-privacy requirements",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13549-13555.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +466,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6a5eb8a6b423683f5e653cd2be0f5cebef397b0fe0937273b9bd99f6489659f9"
+      "content_hash": "sha256:c91de7a9eaf52352e81cc3488269342f2437e156d20eb52179412cf1b6afd2d2"
     },
     {
       "question_id": "a2b94fca-bc04-4096-bed4-b9a2f76aa976",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "What is the most common suspended ceiling tile size in Philippine commercial construction?",
+      "text": "A designer wants acoustical treatment on an irregular ceiling shape. Which source-safe option may fit before manufacturer/product review?",
       "options": [
         {
           "id": "a",
-          "text": "A) 400×400mm, typically used in smaller spaces where larger tiles are impractical"
+          "text": "Use terrazzo topping over the ceiling."
         },
         {
           "id": "b",
-          "text": "B) 600×600mm (2×2 ft)"
+          "text": "Use sprayed acoustical material over a suitable hard surface or lath, following the captured source treatment logic."
         },
         {
           "id": "c",
-          "text": "C) 800×800mm, often chosen for its aesthetic appeal in larger open areas"
+          "text": "Use suspended tiles without any support system."
         },
         {
           "id": "d",
-          "text": "D) 1200×1200mm, suitable for expansive spaces requiring fewer joints"
+          "text": "Use ordinary carpet as a direct ceiling finish."
         }
       ],
       "correct_option_id": "b",
@@ -433,17 +497,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "400×400mm is less common; increases labor (more tiles to handle).",
-        "c": "800×800mm exists but is less cost-effective than 600×600.",
-        "d": "1200×1200mm is oversized for typical projects.",
-        "correct": "600×600mm (2×2 ft) is the standard global and Philippine market size. It optimizes cost, installation speed, and fit to typical office/retail bays.",
-        "takeaway": "600×600mm is default standard. 600×1200mm is also common for long spaces. Custom sizes increase cost."
+        "a": "Use terrazzo topping over the ceiling. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Use sprayed acoustical material over a suitable hard surface or lath, following the captured source treatment logic. This stays inside the Batch 151 local source boundary.",
+        "c": "Use suspended tiles without any support system. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "Use ordinary carpet as a direct ceiling finish. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Use sprayed acoustical material over a suitable hard surface or lath, following the captured source treatment logic. Supported by bci-5e-ceiling-finishes-b151, salvan-ceiling-acoustical-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-ceiling-finishes-b151, salvan-ceiling-acoustical-finishes-b151",
+        "checked_sources": [
+          "bci-5e-ceiling-finishes-b151",
+          "salvan-ceiling-acoustical-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "Market practice, ASTM C635 compatibility",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13523-13531; Salvan lines 9848-9854.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-ceiling-finishes-b151",
+        "salvan-ceiling-acoustical-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +526,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:52eb62d44549b17feec774e7a51bedcbf4b7b7689b76c594e2a6e3c34c9117b2"
+      "content_hash": "sha256:3c9066256483b1422917ea575d52e5cb6c93d99407741c418369631f96c2cb49"
     },
     {
       "question_id": "9be36e02-f086-4b3b-afc3-8e2a20862fa5",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
       "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "Standard mineral fiber acoustic tiles are specified for a bathroom ceiling area. What risk does this create in a tropical Philippine climate?",
+      "text": "Salvan describes mineral-fiber acoustical treatment. Which installation cue is source-supported?",
       "options": [
         {
           "id": "a",
-          "text": "A) No risk; tiles are fire-rated and thus unaffected by moisture or humidity"
+          "text": "Apply fibers dry over loose dust with no adhesive."
         },
         {
           "id": "b",
-          "text": "B) High risk; mineral fiber absorbs moisture and deteriorates within 3-5 years in high-humidity bathrooms"
+          "text": "Prime the area with adhesive, then spray the prepared fiber treatment in one or more coats as needed."
         },
         {
           "id": "c",
-          "text": "C) Low risk if tiles are painted with waterproof coating, which can prevent moisture absorption"
+          "text": "Install the fibers only as floor tile grout."
         },
         {
           "id": "d",
-          "text": "D) Risk only if bathrooms are above occupied spaces, where moisture could seep through and cause damage"
+          "text": "Use the treatment to replace every ceiling suspension detail."
         }
       ],
       "correct_option_id": "b",
@@ -483,17 +557,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Fire rating does not prevent moisture absorption.",
-        "c": "Waterproof coating is temporary; substrate still absorbs moisture.",
-        "d": "Location does not affect material moisture performance.",
-        "correct": "Standard mineral fiber tiles are hydroscopic (absorb moisture). In bathrooms with continuous high humidity (70-95% RH), tiles absorb water, sag, and deteriorate within 3-5 years. Specify moisture-rated gypsum (USG Firecode C) or metal panels for wet areas.",
-        "takeaway": "Bathrooms, kitchens, pool areas = moisture-rated or metal ceiling. Standard tiles fail in tropical climates."
+        "a": "Apply fibers dry over loose dust with no adhesive. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Prime the area with adhesive, then spray the prepared fiber treatment in one or more coats as needed. This stays inside the Batch 151 local source boundary.",
+        "c": "Install the fibers only as floor tile grout. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "Use the treatment to replace every ceiling suspension detail. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Prime the area with adhesive, then spray the prepared fiber treatment in one or more coats as needed. Supported by salvan-ceiling-acoustical-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "salvan-ceiling-acoustical-finishes-b151",
+        "checked_sources": [
+          "salvan-ceiling-acoustical-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "Material durability; tropical humidity effects",
+      "code_citation": "Local source boundary: Salvan refined markdown lines 9848-9854.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "salvan-ceiling-acoustical-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +584,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:98807e98809bea37dfc1a51ad76bcc54cd05261ed5c5fbe0ca06575f337ee8da"
+      "content_hash": "sha256:5f45689fb1e91f71d759b34fe15fdec1c2c79955fa9e24958b99d6a09115ae24"
     }
   ]
 }

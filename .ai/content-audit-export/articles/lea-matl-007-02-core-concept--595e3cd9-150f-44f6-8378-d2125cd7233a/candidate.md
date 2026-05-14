@@ -1,26 +1,49 @@
 ## Board Exam Quick Check
 
-For wall-finish questions, identify the base surface first: plaster, gypsum board, masonry, tile backing, wood finish, or paint system. A finish that works on a dry wall may fail when the item describes moisture, uneven backing, or poor surface preparation.
+For wall-finish questions, identify the base surface before naming the finish: plaster, gypsum board, masonry, tile backing, wood finish, or paint system. A finish that works on a dry interior wall can fail when the item describes moisture, uneven backing, or poor preparation.
+
+**Common trap:** answering with an ASTM paint test, a DFT value, a moisture percentage, or a proprietary board claim when the checked local source only supports substrate matching, surface preparation, and general finish behavior.
 
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
-Classify wall finishes by substrate, finish layer, moisture exposure, surface preparation, and coordination with adjacent finishes.
+Classify wall finishes by substrate, moisture exposure, surface preparation, finish layer, and coordination with adjacent trades.
 
 ## Core Concept
 
-BCI states that interior walls should be resistant to wear and cleanable. The finish must match the base. Plaster can serve as a finish surface or as a base for decoration. Gypsum plaster is durable, relatively lightweight, and fire-resistant for wall or ceiling surfaces that are not subject to moist or wet conditions; portland cement plaster is used on exterior walls and areas subject to wet or moist conditions.
+BCI states that interior walls should resist wear and be cleanable. The finish must match the base. Gypsum plaster can serve as a finish surface or as a base for decoration, but BCI limits it to wall or ceiling surfaces not subject to moist or wet conditions. Portland cement plaster is the source-supported choice for exterior walls and areas subject to wet or moist conditions.
 
-Gypsum board is a sheet material for covering walls or acting as lath. BCI describes it as having good fire resistance and dimensional stability, with large sheets that make installation economical. Tapered edges allow joints to be taped and filled to form smooth, monolithic-looking surfaces that can be painted or covered with paper, vinyl, or fabric wall covering.
+### Gypsum Board and Smooth Walls
 
-Wall tile requires a suitable backing. BCI describes solid backing such as masonry, plaster, gypsum board, or well-braced framing for tile applications, and notes cementitious backer board or water-resistant gypsum board for wet locations. Gypsum board applied to masonry or concrete needs dry, smooth, even surfaces free of oil or parting materials.
+Gypsum board is a sheet material with good fire resistance and dimensional stability. Its large sheet size makes it economical. The common tapered edge allows joints to be taped and filled so the wall can read as a smooth, monolithic-looking surface before painting or wall covering.
 
-Salvan adds the local material vocabulary for interior finishes: wood boards, wood sheets, plywood, trim materials, gypsum plaster, gypsum board, and painted surfaces. For painting, the source-safe specification pattern is surface examination, cleaning, sanding, sealing if needed, original labeled containers, manufacturer-directed mixing, and three-coat work of primer plus finish coats unless the specification says otherwise.
+Gypsum board over masonry or concrete is not a shortcut over a bad base. BCI requires dry, smooth, even surfaces free of oil or parting materials. Furring is used when the base is not flat, supports are too far apart, or added space for thermal or acoustic insulation is needed.
+
+### Tile and Wet Areas
+
+Wall tile needs a suitable backing. BCI describes solid backing such as masonry, plaster, gypsum board, or well-braced framing, and identifies cementitious backer board or water-resistant gypsum board in wet locations. The safe LEA move is to ask what the backing and exposure are before selecting the finish.
+
+### Paint Work
+
+Salvan supplies the source-safe local specification pattern for painting:
+
+- examine the receiving surface before work starts;
+- clean, sand, and seal if needed;
+- use manufacturer-recommended paint in original labeled containers;
+- mix only as specified;
+- avoid painting over wet or damp surfaces;
+- use primer plus finish coats unless the specification says otherwise.
+
+Do not restore exact ASTM ratings, dry film thickness, humidity limits, or concrete moisture values unless those values are in the active source packet.
+
+## Real World Scenario
+
+A contractor proposes painting a ground-floor wall while plaster work nearby is still curing and the wall surface is damp. The source-safe response is to stop the finish work until the surface is examined, cleaned, dry, and ready to receive the specified paint system. The answer does not need an uncaptured adhesion rating; the defect is already visible in the source-supported preparation sequence.
 
 ## How It's Tested
 
-LEA-style items usually ask whether the proposed wall finish fits the substrate or exposure. If the question describes wet conditions, do not choose a finish that the checked source limits to dry interior use. If the question describes painting, choose the answer that includes surface preparation and manufacturer directions.
+LEA-style questions usually ask whether the proposed wall finish fits the substrate or exposure. If the question describes wet or moist conditions, avoid dry-only gypsum plaster logic. If the question describes paint, choose the answer that includes examination, cleaning, sanding/sealing when needed, manufacturer directions, and dry receiving surfaces.
 
 ## Common Mistakes
 
@@ -28,7 +51,7 @@ LEA-style items usually ask whether the proposed wall finish fits the substrate 
 - Painting over dust, grease, dampness, or unfinished trade work.
 - Using ordinary gypsum board as if it were automatically suitable for every wet wall.
 - Ignoring edge treatment and joint finishing when the question asks for a smooth wall plane.
-- Naming a brand or test number when the source-supported issue is substrate preparation.
+- Naming a brand, ASTM method, or test rating when the source-supported issue is substrate preparation.
 
 ## Related Articles
 

@@ -1,28 +1,46 @@
 ## Board Exam Quick Check
 
-For floor-finish questions, identify the substrate, exposure to moisture, desired wearing surface, and installation method before choosing the material. Most traps come from matching a finish to the wrong backing or moisture condition.
+For floor-finish questions, start with the support condition: backing, moisture, traffic, comfort, and maintenance. Appearance is never enough. The safe answer matches the finish to its substrate and exposure before adding any performance value.
+
+**Common trap:** importing ASTM absorption classes, PEI ratings, COF values, or accessibility friction thresholds when the checked local sources only support finish properties, installation methods, and substrate preparation.
 
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
-Compare ceramic tile, terrazzo, wood flooring, stone flooring, resilient flooring, and carpeting by material behavior, substrate requirements, and finish performance.
+Compare ceramic tile, terrazzo, wood flooring, stone flooring, resilient flooring, and carpeting by material behavior, substrate requirements, installation method, and source-supported use limits.
 
 ## Core Concept
 
-BCI frames floor finishes as surfaces that should be durable, comfortable, and safe to walk on. The finish is not selected by appearance alone. Rigid finishes that can span short distances may use a supporting grid or bed, while flexible finishes need a solid, rigid backing.
+BCI frames floor finishes as walking surfaces that must be durable, comfortable, and safe. A finish is selected as part of an assembly: rigid finishes may span short distances on a supporting grid, while flexible finishes require a solid, rigid backing.
 
-Ceramic tiles are small modular surfacing units made of clay or other ceramic material fired at high temperature. BCI describes them as durable, tough, dense, water-resistant, difficult to stain, easy to clean, and available glazed or unglazed. Thinset tile work uses a thin bond coat over a continuous stable backing; thickset tile work uses a portland cement mortar bed that can create accurate slopes and true planes.
+### Source-Safe Selection Sequence
 
-Terrazzo is a mosaic floor or paving made from marble or other stone chips set in a cementitious or resinous matrix, then ground and polished when dry. Divider strips help localize shrinkage cracking, serve as construction joints, separate colors, and act as decorative elements.
+1. Identify the substrate: concrete slab, wood subfloor, mortar bed, underlayment, or existing finish.
+2. Identify the exposure: wet, damp, dry, high-traffic, quiet, or comfort-focused.
+3. Match the finish to the installation method: thinset, thickset, mortar bed, adhesive, sleeper/subfloor, or direct placement.
+4. Exclude exact ratings unless the rating is present in the checked source packet.
 
-Wood flooring provides durability, wear resistance, comfort, and warmth, but it responds to moisture. BCI says wood flooring should not be installed until the building is enclosed, permanent lighting and the heating plant are installed, and materials are dry; the flooring should be stored in the space to acclimate before installation.
+### Finish Families
 
-Resilient flooring provides a dense, nonabsorbent surface that is durable and easy to maintain. Its comfort depends on resilience, backing, and the hardness of the substrate. The surface receiving resilient flooring should be smooth, firm, clean, and dry. Carpeting adds softness, resilience, warmth, sound absorption, and impact-noise reduction.
+| Finish | Source-supported strength | Coordination cue |
+|---|---|---|
+| Ceramic tile | Durable, dense, water-resistant, difficult to stain, and easy to clean. | Thinset needs continuous stable backing; thickset uses a portland cement mortar bed that can form slopes and true planes. |
+| Terrazzo | Dense, smooth, durable mosaic floor of stone chips in a cementitious or resinous matrix. | Divider strips localize shrinkage cracking, act as joints, separate colors, and add decoration. |
+| Wood flooring | Durable, warm, and comfortable. | Install only after the building is enclosed, services are installed, materials are dry, and the flooring has acclimated. |
+| Stone flooring | Durable finish with texture, abrasion, slip, and dead-load implications. | Often uses mortar-bed or thinset logic similar to ceramic tile. |
+| Resilient flooring | Dense, nonabsorbent, durable, easy to maintain, quiet, and comfortable underfoot. | Surface must be smooth, firm, clean, and dry. |
+| Carpeting | Softness, resilience, warmth, sound absorption, and impact-noise reduction. | Needs firm underlayment and edge control; use product data for exact accessibility or indoor-air claims. |
+
+Salvan adds local material vocabulary: wood strip and parquet, concrete floors, clay tile, terrazzo, plastic/vinyl flooring, rubber, cork, linoleum, pebble washout, and marble. Use this vocabulary for recognition, but do not turn legacy brand or product notes into mandatory code claims.
+
+## Real World Scenario
+
+A renovation team wants one floor finish for a lobby, toilet vestibule, and quiet study room. A source-safe review separates the conditions instead of forcing one material everywhere: terrazzo may suit durable public circulation with divider-strip coordination, ceramic tile may suit cleanable wet-adjacent areas when the backing is correct, and carpet may suit acoustic comfort in the study room. Exact slip, absorption, or accessibility values must come from a current product or code source, not from this batch.
 
 ## How It's Tested
 
-Exam items often ask for the best finish for a condition: wet area, high traffic, wood appearance, quiet walking surface, or modular tile work. Use the source-supported properties and installation method instead of unchecked product ratings.
+Exam items usually ask which finish fits a condition: wet area, high traffic, quiet walking surface, wood appearance, or modular tile work. Answer with the source-supported material behavior and installation cue. Reject options that depend on uncaptured ASTM, PEI, COF, manufacturer, or accessibility values.
 
 ## Common Mistakes
 
@@ -31,6 +49,7 @@ Exam items often ask for the best finish for a condition: wet area, high traffic
 - Omitting divider strips from terrazzo coordination.
 - Installing wood flooring before the space is dry and enclosed.
 - Specifying resilient flooring over a dirty, damp, uneven, or soft surface.
+- Treating old brand/product examples as current mandatory specifications.
 
 ## Related Articles
 

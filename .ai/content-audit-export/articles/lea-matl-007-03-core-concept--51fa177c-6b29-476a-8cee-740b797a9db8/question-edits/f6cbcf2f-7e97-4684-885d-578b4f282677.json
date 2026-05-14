@@ -1,65 +1,69 @@
 {
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
+  "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+  "cluster_id": "lea-matl-007-03",
   "question_id": "f6cbcf2f-7e97-4684-885d-578b4f282677",
-  "baseline_hash": "sha256:256935dce91bb7a691053b50bf00f13dfe406ca5184bd7878a27f10c04bdac6b",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-03-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
-    "parent_article_slug": "lea-matl-007-03-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 12889-13016 and 13505-13562; raw PDF pages 345-365 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 12889-13016 and 13505-13562; raw PDF pages 345-365 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 9848-9920; raw PDF pages 289-291 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 12889-13016 and 13505-13562; raw PDF pages 345-365 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 9848-9920; raw PDF pages 289-291 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited ceiling_finishes scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:cfe126e4ef587bceb10bf8584fea525fe18a151f2b4f66edde16d56d995ce847",
+  "after_hash": "sha256:cfe126e4ef587bceb10bf8584fea525fe18a151f2b4f66edde16d56d995ce847",
+  "baseline_hash": "sha256:cfe126e4ef587bceb10bf8584fea525fe18a151f2b4f66edde16d56d995ce847",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-ceiling-finishes-b151"
+  ],
+  "reason": "Batch 151 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "What are acoustical ceiling tiles made to do in BCI?",
+    "text": "Why would a designer choose a suspended acoustical ceiling instead of direct-applied tile where ducts and conduits must remain accessible?",
     "options": [
       {
         "id": "a",
-        "text": "Absorb sound through soft materials such as cork, mineral fiber, or glass fiber"
+        "text": "Suspended ceilings eliminate the need for any suspension grid."
       },
       {
         "id": "b",
-        "text": "Carry roof loads as truss top chords"
+        "text": "They create concealed space for services, and many systems allow tile removal for replacement or access."
       },
       {
         "id": "c",
-        "text": "Serve as ceramic tile setting beds"
+        "text": "They are the same as adhesive-set tiles on a solid backing."
       },
       {
         "id": "d",
-        "text": "Act as terrazzo divider strips"
+        "text": "They automatically provide any requested fire-hour rating without manufacturer data."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI describes acoustical ceiling tiles as soft sound-absorbing materials such as cork, mineral fiber, or glass fiber.",
-    "explanation": "BCI describes acoustical ceiling tiles as soft sound-absorbing materials such as cork, mineral fiber, or glass fiber.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Suspended ceilings eliminate the need for any suspension grid. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "b": "They create concealed space for services, and many systems allow tile removal for replacement or access. This stays inside the Batch 151 local source boundary.",
+      "c": "They are the same as adhesive-set tiles on a solid backing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "d": "They automatically provide any requested fire-hour rating without manufacturer data. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "correct": "They create concealed space for services, and many systems allow tile removal for replacement or access. Supported by bci-5e-ceiling-finishes-b151.",
+      "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+      "source_boundary": "bci-5e-ceiling-finishes-b151",
+      "checked_sources": [
+        "bci-5e-ceiling-finishes-b151"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 13535-13542.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-151-local-first",
+      "bci-5e-ceiling-finishes-b151"
+    ]
+  },
+  "rationale": {
+    "a": "Suspended ceilings eliminate the need for any suspension grid. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "b": "They create concealed space for services, and many systems allow tile removal for replacement or access. This stays inside the Batch 151 local source boundary.",
+    "c": "They are the same as adhesive-set tiles on a solid backing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "d": "They automatically provide any requested fire-hour rating without manufacturer data. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "correct": "They create concealed space for services, and many systems allow tile removal for replacement or access. Supported by bci-5e-ceiling-finishes-b151.",
+    "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+    "source_boundary": "bci-5e-ceiling-finishes-b151",
+    "checked_sources": [
+      "bci-5e-ceiling-finishes-b151"
+    ]
   }
 }

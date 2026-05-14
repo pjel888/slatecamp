@@ -1,32 +1,77 @@
 {
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
   "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:e98b7fa334f5d81b5cadb99ab192249a1b9621f07ba6f4844fa5c73bf7774f90",
+  "cluster_id": "lea-matl-007-03",
+  "slug": "lea-matl-007-03-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:5dc39c3209bcd0c5699b8bb61cda68858e6f6b26fe4ccf2cc187df4fa68a734f",
   "sources": [
     {
-      "source_id": "bci-5e-b078",
-      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "url": null,
+      "id": "bci-5e-ceiling-finishes-b151",
+      "title": "Building Construction Illustrated, 5th Edition - gypsum and acoustical ceilings",
       "source_type": "primary_building_construction_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 12889-13016 and 13505-13562; raw PDF pages 345-365 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-12T05:20:00.000+08:00",
-      "updated_at": "2026-05-12T05:20:00.000+08:00"
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-151/bci-5e-ceiling-finishes-b151.source-capture.md",
+      "local_capture_sha256": "sha256:ff4886cc3535c2e20bad55022059bb6a7f5b19e44849be3f8bdbf5857893cdf9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-151/bci-5e-ceiling-finishes-b151.refined.md",
+      "refined_capture_sha256": "sha256:eb4e0f61536324f118e34ee5e7c566e91f111893b5070640414b32b86beb51a2",
+      "locator": "refined markdown lines 12889-13016 and 13505-13555",
+      "safe_claims": [
+        "Gypsum board can cover ceilings directly or be supported by a grid of furring channels as a suspended ceiling.",
+        "Acoustical ceiling tiles are modular units made from soft sound-absorbing materials such as cork, mineral fiber, or glass fiber.",
+        "BCI lists common acoustical tile modules including 12 x 12 in., 24 x 24 in., and 24 x 48 in.",
+        "BCI instructs designers to consult manufacturers for sizes, patterns, finishes, noise-reduction coefficient, fire rating, light reflectance, and suspension-system details.",
+        "Direct-applied acoustical ceilings require a solid backing or furring when the base is not flat enough.",
+        "Suspended acoustical ceilings create concealed space for mechanical ductwork, electrical conduit, and plumbing lines.",
+        "Suspension systems use main runners, cross tees, and splines, and many tiles are removable for replacement or access.",
+        "Integrated ceiling systems combine acoustical, lighting, and air-handling components; linear metal ceilings can absorb sound when open slots are backed by insulation."
+      ],
+      "use_limits": [
+        "Do not state ASTM C635 grid widths, NRC target values, seismic bracing code sections, fire-hour ratings, or Philippine zone claims from this batch.",
+        "Do not treat every ceiling tile as removable; the source distinguishes direct applications from suspended systems.",
+        "Do not replace manufacturer data for acoustic, fire, light reflectance, or suspension details."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b078",
-      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
-      "label": "George Salvan Architectural Building Materials",
-      "url": null,
-      "source_type": "primary_building_materials_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 9848-9920; raw PDF pages 289-291 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-12T05:20:00.000+08:00",
-      "updated_at": "2026-05-12T05:20:00.000+08:00"
+      "id": "salvan-ceiling-acoustical-finishes-b151",
+      "title": "George Salvan Architectural Building Materials - ceiling and acoustical treatments",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-151/salvan-ceiling-acoustical-finishes-b151.source-capture.md",
+      "local_capture_sha256": "sha256:c211745316e6fa074de4c7a63aef209dc8df81d4f26063296b64de289f160c09",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-151/salvan-ceiling-acoustical-finishes-b151.refined.md",
+      "refined_capture_sha256": "sha256:0a532c2f2b175b193b8f62fa1b760bfd6a8e11f8cca6f544369580ad66936acd",
+      "locator": "refined markdown lines 9848-9920",
+      "safe_claims": [
+        "Salvan describes perlite acoustical plaster using calcined gypsum as binder and notes hand or machine application.",
+        "Salvan describes mineral-fiber acoustical treatment as fibers mixed with adhesive and sprayed over a primed surface.",
+        "Salvan notes cork and corkboard ceiling/acoustical boards as decorative, sound absorbing, and heat insulating materials."
+      ],
+      "use_limits": [
+        "Do not preserve old asbestos examples as a current recommended material.",
+        "Do not state acoustic coefficients as current performance requirements unless separately captured.",
+        "Do not use brand names or legacy product lists as mandatory specifications."
+      ],
+      "sort_order": 1
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore ASTM C635 grid flange widths, exact NRC targets, or fire-hour ratings.",
+    "No local source in this batch was used to restore NSCP/IBC seismic bracing sections or Philippine seismic zone claims.",
+    "No local source in this batch was used to recommend asbestos-containing acoustical treatments as current practice."
   ]
 }

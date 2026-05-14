@@ -1,30 +1,30 @@
 {
   "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:dd47e7774be795183dc6a35850b581fdefbdfb7d8a1ea1da215231fbfb73f0ad",
+  "linked_questions_hash": "sha256:a96ac4815640aaeead83b04f6884ccbd26f97f4e8eec1026070d6cd421bf5d76",
   "question_count": 10,
   "questions": [
     {
       "question_id": "79a048fe-1a14-4567-9dcb-593fe8c52e7c",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "What is the typical dry film thickness (DFT) range for a paint primer according to ASTM standards?",
+      "text": "A wall surface is not subject to moist or wet conditions and needs a durable plaster finish. Which source-supported plaster type fits that dry interior condition?",
       "options": [
         {
           "id": "a",
-          "text": "A) 10-30µm"
+          "text": "Portland cement plaster only, because gypsum plaster is never used indoors."
         },
         {
           "id": "b",
-          "text": "B) 30-50µm"
+          "text": "Gypsum plaster, because BCI describes it for wall or ceiling surfaces not subject to moist or wet conditions."
         },
         {
           "id": "c",
-          "text": "C) 75-150µm"
+          "text": "Ceramic floor tile, because all wall finishes are floor finishes."
         },
         {
           "id": "d",
-          "text": "D) 200-300µm"
+          "text": "Carpet backing, because it makes walls cleanable."
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "10-30µm is too thin; primer would not adequately seal substrate.",
-        "c": "75-150µm is the topcoat range, not primer.",
-        "d": "200-300µm exceeds both primer and topcoat requirements.",
-        "correct": "Typical primer DFT is 25-50µm per manufacturer specifications and industry practice (not specified in ASTM D3359). This seals the substrate and promotes topcoat adhesion.",
-        "takeaway": "Primer 30-50µm; topcoat 75-150µm. Measure with wet-film thickness gauge during application."
+        "a": "Portland cement plaster only, because gypsum plaster is never used indoors. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Gypsum plaster, because BCI describes it for wall or ceiling surfaces not subject to moist or wet conditions. This stays inside the Batch 151 local source boundary.",
+        "c": "Ceramic floor tile, because all wall finishes are floor finishes. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "Carpet backing, because it makes walls cleanable. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Gypsum plaster, because BCI describes it for wall or ceiling surfaces not subject to moist or wet conditions. Supported by bci-5e-wall-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-wall-finishes-b151",
+        "checked_sources": [
+          "bci-5e-wall-finishes-b151"
+        ]
       },
-      "explanation": "10-30µm is too thin; primer would not adequately seal substrate. 75-150µm is the topcoat range, not primer. 200-300µm exceeds both primer and topcoat requirements. Typical primer DFT is 25-50µm per manufacturer specifications and industry practice (not specified in ASTM D3359). This seals the substrate and promotes topcoat adhesion. Primer 30-50µm; topcoat 75-150µm. Measure with wet-film thickness gauge during application.",
-      "code_citation": "ASTM D3359 Test Methods for Measuring Adhesion by Tape",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12567.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-wall-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:22:16.353884+00:00",
-      "content_hash": "sha256:db6338f6f66062d9cadddbb87f0b3d50b5443c9699d31b72393b08134d6846b7"
+      "content_hash": "sha256:4475a17f3e3f31781414034f9ccd4daba91fc7ddfeed79679274bfa9bdcccf06"
     },
     {
       "question_id": "766af87c-5846-4db9-903d-fb8aea71a759",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "Why is it critical to maintain application conditions per ASTM D3276 (10°C minimum, <50% RH, no rain) during paint application?",
+      "text": "Why does gypsum board commonly use tapered edges?",
       "options": [
         {
           "id": "a",
-          "text": "A) To ensure the painter's comfort, which indirectly affects the quality of work performed."
+          "text": "To make gypsum board waterproof in all wet rooms."
         },
         {
           "id": "b",
-          "text": "B) To achieve proper curing and prevent moisture entrapment during film formation"
+          "text": "To allow joints to be taped and filled for strong, smooth, monolithic-looking surfaces."
         },
         {
           "id": "c",
-          "text": "C) To reduce paint consumption per project, thereby lowering overall costs."
+          "text": "To replace furring whenever the wall base is uneven."
         },
         {
           "id": "d",
-          "text": "D) To allow faster drying so recoats can be applied sooner, minimizing project delays."
+          "text": "To eliminate all painting preparation."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Painter comfort is not relevant to coating performance.",
-        "c": "Faster drying does not ensure proper chemical cure; conditions matter more.",
-        "d": "Paint consumption is unaffected by application conditions.",
-        "correct": "ASTM D3276 conditions optimize curing kinetics. Low temperature (<10°C) slows evaporation, trapping moisture in the film. High RH (>50%) and rain introduce moisture into the forming film, causing blistering, delamination, and adhesion loss.",
-        "takeaway": "Poor conditions (high humidity, low temperature, rain) cause future failures. Delaying work is cheaper than repainting."
+        "a": "To make gypsum board waterproof in all wet rooms. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "To allow joints to be taped and filled for strong, smooth, monolithic-looking surfaces. This stays inside the Batch 151 local source boundary.",
+        "c": "To replace furring whenever the wall base is uneven. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "To eliminate all painting preparation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "To allow joints to be taped and filled for strong, smooth, monolithic-looking surfaces. Supported by bci-5e-wall-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-wall-finishes-b151",
+        "checked_sources": [
+          "bci-5e-wall-finishes-b151"
+        ]
       },
-      "explanation": "Painter comfort is not relevant to coating performance. Faster drying does not ensure proper chemical cure; conditions matter more. Paint consumption is unaffected by application conditions. ASTM D3276 conditions optimize curing kinetics. Low temperature (<10°C) slows evaporation, trapping moisture in the film. High RH (>50%) and rain introduce moisture into the forming film, causing blistering, delamination, and adhesion loss. Poor conditions (high humidity, low temperature, rain) cause future failures. Delaying work is cheaper than repainting.",
-      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 12889-12900.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-wall-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:22:16.647757+00:00",
-      "content_hash": "sha256:4fa3b1f53b267558d36caf9c91406fbff752d3dadfc8b12e9fa9ec1d0939df00"
+      "content_hash": "sha256:1da2dceb2418d2e201a028be597cdb93f2ee20ee91828058703d3a4dbcc79e0c"
     },
     {
       "question_id": "cba1db3a-8f02-498e-b367-9dd1e1b4b9a3",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "Concrete moisture test in a ground-floor bathroom shows 5% CM (calcium chloride method). The specification requires <3% CM. What is the appropriate action?",
+      "text": "Ceramic wall tile is proposed in a wet area. Which source-backed backing requirement should be checked?",
       "options": [
         {
           "id": "a",
-          "text": "A) Proceed with painting; 5% is acceptable for residential use, especially if the area is well-ventilated and not prone to water exposure"
+          "text": "Tile can be applied over any damp, oily, uneven base."
         },
         {
           "id": "b",
-          "text": "B) Wait for concrete to cure further or install a moisture barrier before painting"
+          "text": "Wet locations need suitable backing such as cementitious backer board or water-resistant gypsum board as captured by BCI."
         },
         {
           "id": "c",
-          "text": "C) Use a high-VOC paint that cures faster and traps moisture, which can be suitable for temporary solutions in non-critical areas"
+          "text": "A carpet pad is the required tile backing."
         },
         {
           "id": "d",
-          "text": "D) Apply a thin primer coat to test adhesion, ensuring that the primer is compatible with high moisture levels"
+          "text": "The only backing requirement is paint color."
         }
       ],
       "correct_option_id": "b",
@@ -133,17 +149,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "5% CM exceeds the safe limit; will cause blistering.",
-        "c": "High-VOC paint does not cure faster; moisture still causes failure.",
-        "d": "Test coats do not solve the underlying moisture problem.",
-        "correct": "ASTM F1869 (Calcium Chloride) <3lbs/1000sf/24hr or ASTM F2170 <85% RH establishes moisture threshold. to prevent vapor-induced blistering and delamination. Concrete at 5% CM will cause paint failure within 4-6 months. Defer painting or install vapor-barrier systems.",
-        "takeaway": "ASTM F2170: <3% CM is non-negotiable. Test before painting every time. Defer work or install moisture barrier."
+        "a": "Tile can be applied over any damp, oily, uneven base. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Wet locations need suitable backing such as cementitious backer board or water-resistant gypsum board as captured by BCI. This stays inside the Batch 151 local source boundary.",
+        "c": "A carpet pad is the required tile backing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "The only backing requirement is paint color. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Wet locations need suitable backing such as cementitious backer board or water-resistant gypsum board as captured by BCI. Supported by bci-5e-wall-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-wall-finishes-b151",
+        "checked_sources": [
+          "bci-5e-wall-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM F2170 Standard Test Method for Moisture in Concrete",
+      "code_citation": "Local source boundary: BCI refined markdown lines 13135-13163.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-wall-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +176,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:feaa70abd1753f33771dd665cf6b22a63519fd2624dcb56ccd2093923c77f224"
+      "content_hash": "sha256:b109232a82ee1ed82c5c3de685fe7adb2f27e868cabeeb824d3d275df3377cf3"
     },
     {
       "question_id": "019dc05f-fb68-4e84-ad6f-00cf8aefa974",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "A multi-story residential project in Manila specifies: (1) gypsum drywall walls primed with fungicide-treated primer, (2) topcoat per ASTM D3359 minimum rating 3, (3) ground-floor areas use Hardiflex instead of gypsum. Ambient humidity is 72% year-round. A contractor proposes skipping primer on upper floors where humidity is lower. Evaluate this proposal.",
+      "text": "A painter proposes skipping surface examination and primer because the finish coat will hide minor wall defects. Which response is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "A) Acceptable; upper floors have lower ambient humidity, so fungicide primer is unnecessary"
+          "text": "Accept the shortcut because paint preparation is optional."
         },
         {
           "id": "b",
-          "text": "B) Unacceptable; All drywall requires primer per manufacturer instructions and tropical climate best practice. regardless of location; fungicide protects against condensation risk in air-conditioned spaces transitioning to tropical air"
+          "text": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified."
         },
         {
           "id": "c",
-          "text": "C) Acceptable if paint is applied only in <50% RH conditions per ASTM D3276"
+          "text": "Approve only if the wall is wet so paint flows better."
         },
         {
           "id": "d",
-          "text": "D) Unacceptable only if annual rainfall exceeds 2000mm"
+          "text": "Replace the paint system with carpet to avoid wall preparation."
         }
       ],
       "correct_option_id": "b",
@@ -183,17 +207,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Lower ambient humidity does not eliminate condensation risk inside A/C spaces.",
-        "c": "ASTM D3276 conditions are application requirements, not exemption criteria.",
-        "d": "Rainfall is irrelevant to interior humidity and condensation risk.",
-        "correct": "Fungicide primer is non-negotiable in the Philippines' tropical climate. Upper floors face condensation risk when air-conditioned interiors meet warm humid outside air, promoting mold on unprimed substrate. ASTM D3276 and field experience in SE Asia demand primer on all gypsum, regardless of floor. Hardiflex ground-floor choice is appropriate due to flood risk.",
-        "takeaway": "Primer is mandatory on all drywall in tropical zones. No exceptions. Hardiflex + painted drywall = dual strategy for moisture resilience."
+        "a": "Accept the shortcut because paint preparation is optional. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified. This stays inside the Batch 151 local source boundary.",
+        "c": "Approve only if the wall is wet so paint flows better. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "Replace the paint system with carpet to avoid wall preparation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Reject the shortcut; the local specification pattern requires examination, cleaning/sanding/sealing when needed, and primer plus finish coats unless otherwise specified. Supported by salvan-wall-paint-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "salvan-wall-paint-finishes-b151",
+        "checked_sources": [
+          "salvan-wall-paint-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM D3276, Philippine humidity/mold patterns, best practice",
+      "code_citation": "Local source boundary: Salvan refined markdown lines 13397-13422.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "salvan-wall-paint-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +234,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:af215952394c9b4e4c0701afa202a861802499697f8324c57f657e59cb090705"
+      "content_hash": "sha256:0bc4954cc660c064c14251944150bbb0d88de45088c16d0b93336e369d22b46a"
     },
     {
       "question_id": "3d532852-78fd-453f-9b6b-0658504031ec",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "Which paint system is most appropriate for a high-humidity bathroom in Metro Manila where mold growth is a risk?",
+      "text": "Which wall-finish choice best matches BCI for an area subject to wet or moist conditions?",
       "options": [
         {
           "id": "a",
-          "text": "A) Standard latex paint without primer, which may not provide adequate protection against moisture and mold."
+          "text": "Gypsum plaster, because it is source-limited to moist or wet conditions."
         },
         {
           "id": "b",
-          "text": "B) Wallpaper with standard adhesive, which is not recommended due to potential moisture retention and mold growth."
+          "text": "Untreated ordinary gypsum board with no backing review."
         },
         {
           "id": "c",
-          "text": "C) Latex or enamel with fungicide-treated primer (e.g., Boysen formulations)"
+          "text": "Portland cement plaster or a tile assembly with suitable wet-area backing."
         },
         {
           "id": "d",
-          "text": "D) Unprimed enamel topcoat only, which lacks the necessary mold-resistant properties for high-humidity environments."
+          "text": "Paper wall covering installed before the base is dry."
         }
       ],
       "correct_option_id": "c",
@@ -233,17 +265,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Unprimed latex allows moisture absorption and mold on substrate.",
-        "b": "Wallpaper without fungicide base primer is unsuitable for high humidity.",
-        "d": "Unprimed enamel offers no substrate seal or mold protection.",
-        "correct": "High-humidity bathrooms require fungicide-treated primer to prevent mold and mildew on the drywall substrate. Boysen and Davies offer fungicide-rich primers designed for tropical climates. Latex topcoat over fungicide primer provides durable, mold-resistant finish.",
-        "takeaway": "High-humidity zones = fungicide primer + paint topcoat. Never skip primer. Boysen, Davies have proven fungicide formulations."
+        "a": "Gypsum plaster, because it is source-limited to moist or wet conditions. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Untreated ordinary gypsum board with no backing review. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "c": "Portland cement plaster or a tile assembly with suitable wet-area backing. This stays inside the Batch 151 local source boundary.",
+        "d": "Paper wall covering installed before the base is dry. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Portland cement plaster or a tile assembly with suitable wet-area backing. Supported by bci-5e-wall-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-wall-finishes-b151",
+        "checked_sources": [
+          "bci-5e-wall-finishes-b151"
+        ]
       },
-      "explanation": "Unprimed latex allows moisture absorption and mold on substrate. Wallpaper without fungicide base primer is unsuitable for high humidity. Unprimed enamel offers no substrate seal or mold protection. High-humidity bathrooms require fungicide-treated primer to prevent mold and mildew on the drywall substrate. Boysen and Davies offer fungicide-rich primers designed for tropical climates. Latex topcoat over fungicide primer provides durable, mold-resistant finish. High-humidity zones = fungicide primer + paint topcoat. Never skip primer. Boysen, Davies have proven fungicide formulations.",
-      "code_citation": "Philippine paint brands (Boysen, Davies); humidity management practice",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 12567 and 13135-13163.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-wall-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +292,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:22:16.050357+00:00",
-      "content_hash": "sha256:95c9fde02c92e5bb2584e237296f723e9084e341b24d13b455287b5d8fe17c4f"
+      "content_hash": "sha256:8f451002abdac82c930d036a8ffaa632c2f51cde6d18e004a9ba927ce8294815"
     },
     {
       "question_id": "f6f38d2c-0a92-46a1-87e6-afd1f273a3ac",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "What sandpaper grit is required for drywall surface preparation prior to painting per ASTM D3276?",
+      "text": "A gypsum board wall was sanded but not wiped clean before painting. Which source-backed failure risk is most direct?",
       "options": [
         {
           "id": "a",
-          "text": "A) 80-120 grit, typically used for initial smoothing of rough surfaces before finer grits are applied"
+          "text": "No risk; dust improves coating adhesion."
         },
         {
           "id": "b",
-          "text": "B) 120-180 grit, which is often recommended for intermediate sanding to remove minor imperfections"
+          "text": "The wall automatically becomes a cement plaster surface."
         },
         {
           "id": "c",
-          "text": "C) 220 grit or higher"
+          "text": "Dust or foreign substances can interfere with satisfactory execution and permanence of paint work."
         },
         {
           "id": "d",
-          "text": "D) 320 grit or higher, generally reserved for final finishing to achieve a very smooth surface"
+          "text": "The only issue is acoustical ceiling access."
         }
       ],
       "correct_option_id": "c",
@@ -283,17 +323,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "80-120 grit leaves surface too coarse and leaves dust; fails D3276.",
-        "b": "120-180 grit is insufficient; adhesion issues arise.",
-        "d": "320 grit or higher is excessive for drywall; 220 is standard.",
-        "correct": "Drywall manufacturers (USG, National Gypsum) recommend 220-grit minimum for paint prep per industry practice. to ensure adequate surface roughness for paint adhesion and to remove contaminants.",
-        "takeaway": "Always 220-grit minimum. Wipe dust-free after sanding. Coarse grit = poor adhesion = future delamination."
+        "a": "No risk; dust improves coating adhesion. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "The wall automatically becomes a cement plaster surface. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "c": "Dust or foreign substances can interfere with satisfactory execution and permanence of paint work. This stays inside the Batch 151 local source boundary.",
+        "d": "The only issue is acoustical ceiling access. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Dust or foreign substances can interfere with satisfactory execution and permanence of paint work. Supported by salvan-wall-paint-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "salvan-wall-paint-finishes-b151",
+        "checked_sources": [
+          "salvan-wall-paint-finishes-b151"
+        ]
       },
-      "explanation": "80-120 grit leaves surface too coarse and leaves dust; fails D3276. 120-180 grit is insufficient; adhesion issues arise. 320 grit or higher is excessive for drywall; 220 is standard. Drywall manufacturers (USG, National Gypsum) recommend 220-grit minimum for paint prep per industry practice. to ensure adequate surface roughness for paint adhesion and to remove contaminants. Always 220-grit minimum. Wipe dust-free after sanding. Coarse grit = poor adhesion = future delamination.",
-      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
+      "explanation": null,
+      "code_citation": "Local source boundary: Salvan refined markdown lines 13412-13422.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "salvan-wall-paint-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +350,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:22:16.210137+00:00",
-      "content_hash": "sha256:7d0786ae6837a048baedc6ca233de0fc74caef2bd5037e4afe04ffe69656a094"
+      "content_hash": "sha256:d41038ee8a1bb508b3267c951112b013f22fdefd1e45d2eabfda53a9885c60c0"
     },
     {
       "question_id": "12d32db4-e405-47cf-9939-ca441eea46a0",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "A specification calls for Hardiflex fiber cement board in a bathroom wall subject to high moisture. What is a key advantage over gypsum drywall?",
+      "text": "A wall finish is needed for an exterior wall or wet/moist area. Which plaster-related answer stays inside the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "A) Lower cost, though it may not offer the same level of moisture resistance"
+          "text": "Use gypsum plaster because BCI says it is for wet exterior conditions."
         },
         {
           "id": "b",
-          "text": "B) Easier to cut and install, which can reduce labor costs and installation time"
+          "text": "Use gypsum board directly over damp masonry."
         },
         {
           "id": "c",
-          "text": "C) Mold resistance and moisture immunity per specifications like MoldBlock Technology"
+          "text": "Use portland cement plaster, also known as stucco, for exterior walls and areas subject to wet or moist conditions."
         },
         {
           "id": "d",
-          "text": "D) Superior paint adhesion, allowing for a more durable and aesthetically pleasing finish"
+          "text": "Use carpet because it is cleanable."
         }
       ],
       "correct_option_id": "c",
@@ -333,17 +381,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Hardiflex costs 20-30% more than drywall; not cheaper.",
-        "b": "Fiber cement is harder to cut than drywall; requires saws.",
-        "d": "Paint adhesion is similar; the substrate durability is the advantage.",
-        "correct": "Hardiflex (fiber cement) resists water, mold, and termites, unlike gypsum. HardiFlex NexGen with MoldBlock Technology is specifically engineered for moist environments. Gypsum absorbs moisture and deteriorates, requiring replacement.",
-        "takeaway": "High-moisture zones (kitchens, bathrooms, flood-prone areas) = Hardiflex. Gypsum will fail; Hardiflex survives."
+        "a": "Use gypsum plaster because BCI says it is for wet exterior conditions. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Use gypsum board directly over damp masonry. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "c": "Use portland cement plaster, also known as stucco, for exterior walls and areas subject to wet or moist conditions. This stays inside the Batch 151 local source boundary.",
+        "d": "Use carpet because it is cleanable. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Use portland cement plaster, also known as stucco, for exterior walls and areas subject to wet or moist conditions. Supported by bci-5e-wall-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-wall-finishes-b151",
+        "checked_sources": [
+          "bci-5e-wall-finishes-b151"
+        ]
       },
-      "explanation": "Hardiflex costs 20-30% more than drywall; not cheaper. Fiber cement is harder to cut than drywall; requires saws. Paint adhesion is similar; the substrate durability is the advantage. Hardiflex (fiber cement) resists water, mold, and termites, unlike gypsum. HardiFlex NexGen with MoldBlock Technology is specifically engineered for moist environments. Gypsum absorbs moisture and deteriorates, requiring replacement. High-moisture zones (kitchens, bathrooms, flood-prone areas) = Hardiflex. Gypsum will fail; Hardiflex survives.",
-      "code_citation": "James Hardie Philippines product literature; fiber cement properties",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown line 12567.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-wall-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +408,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:22:16.501264+00:00",
-      "content_hash": "sha256:d11f2ed6d6b4b2a31f3d671987ad2e32d1092e88000ff2301ce65d41c080fbcf"
+      "content_hash": "sha256:84007662790b0e636a63e844a37d04b8dce73bee4c24bc1436509cad0fd9520a"
     },
     {
       "question_id": "64caca33-4249-4624-8b58-7bd479f7db72",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "Paint blistering appears 3 months after application on a ground-floor concrete wall in Cebu. ASTM D3359 adhesion test shows rating 3 (acceptable). Concrete moisture is 4% CM. What is the root cause?",
+      "text": "Gypsum board is proposed over an above-grade masonry wall that is oily and uneven. What should be corrected first?",
       "options": [
         {
           "id": "a",
-          "text": "A) Paint adhesion failure per ASTM D3359 (rating 3 is below spec), indicating a need for re-evaluation of the substrate preparation process"
+          "text": "Proceed because gypsum board hides all base defects."
         },
         {
           "id": "b",
-          "text": "B) Concrete moisture (4% CM) exceeds ASTM F2170 threshold, causing vapor-induced blistering beneath the film"
+          "text": "Provide a dry, smooth, even base free of oil or parting materials, or use furring where the base is unsuitable."
         },
         {
           "id": "c",
-          "text": "C) High ambient humidity in Cebu causes topcoat incompatibility, particularly with solvent-based paints"
+          "text": "Apply wall tile without checking backing."
         },
         {
           "id": "d",
-          "text": "D) Insufficient primer thickness, which fails to provide adequate sealing against moisture ingress"
+          "text": "Wet the wall so the board bonds more strongly."
         }
       ],
       "correct_option_id": "b",
@@ -383,17 +439,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Rating 3 meets minimum spec; not the cause.",
-        "c": "High humidity affects surface moisture, not subsurface vapor-drive.",
-        "d": "Primer thickness does not prevent vapor diffusion; moisture barrier would.",
-        "correct": "Adhesion rating 3 is acceptable per ASTM D3359. Blistering with acceptable adhesion indicates moisture vapor-drive from substrate. Concrete at 4% CM exceeds ASTM F2170 threshold (<3% CM). Moisture vapor pressure builds behind the film, causing blisters.",
-        "takeaway": "Blistering + acceptable adhesion = moisture problem in substrate. Always test concrete moisture per ASTM F2170 before painting."
+        "a": "Proceed because gypsum board hides all base defects. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Provide a dry, smooth, even base free of oil or parting materials, or use furring where the base is unsuitable. This stays inside the Batch 151 local source boundary.",
+        "c": "Apply wall tile without checking backing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "Wet the wall so the board bonds more strongly. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Provide a dry, smooth, even base free of oil or parting materials, or use furring where the base is unsuitable. Supported by bci-5e-wall-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-wall-finishes-b151",
+        "checked_sources": [
+          "bci-5e-wall-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM F2170, ASTM D3359; concrete moisture failure modes",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12962-12990.",
       "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-wall-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +466,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cea344a8c6320666d4047b739b8467a8ada368664bdf3b2d7bcea209286756a9"
+      "content_hash": "sha256:d269335e378628d47ef23c1d21094a678da1a373337ef86569b8e838926479fd"
     },
     {
       "question_id": "a4b0ab65-2c30-4876-998d-adae88195d11",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "According to ASTM D3359, what adhesion rating on the 0-5 sclea is the minimum acceptable for interior wall paint?",
+      "text": "A wall finish has modular dimensions. Which design issue does BCI say should be considered?",
       "options": [
         {
           "id": "a",
-          "text": "A) 0 (complete adhesion)"
+          "text": "Ignore module dimensions because they never affect wall layout."
         },
         {
           "id": "b",
-          "text": "B) 2 (5-15% adhesion loss)"
+          "text": "Use only uncaptured ASTM paint ratings."
         },
         {
           "id": "c",
-          "text": "C) 3 (5-15% adhesion loss)"
+          "text": "Use the unit dimensions to regulate the wall surface and coordinate how the finish meets adjacent materials."
         },
         {
           "id": "d",
-          "text": "D) 5 (complete adhesion loss)"
+          "text": "Install the finish before the substrate is selected."
         }
       ],
       "correct_option_id": "c",
@@ -433,17 +497,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "0 is perfect adhesion (no loss); not the minimum, the ideal.",
-        "b": "2 indicates 15-35% loss (ASTM D3359 classification), unacceptable per typical specifications.",
-        "d": "5 is complete failure; rejected.",
-        "correct": "ASTM D3359 defines rating 3 as 5-15% adhesion loss (moderate flaking). Rating 4 (<5% loss) is superior, but many specifications accept rating 3 as the minimum for interior walls. Ratings 0, 1, and 2 indicate higher loss and are generally rejected. Always refer to project-specific requirements.",
-        "takeaway": "Spec minimum often rating 3 (5-15% loss). Rating 4 or better is preferred. Verify project requirements."
+        "a": "Ignore module dimensions because they never affect wall layout. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Use only uncaptured ASTM paint ratings. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "c": "Use the unit dimensions to regulate the wall surface and coordinate how the finish meets adjacent materials. This stays inside the Batch 151 local source boundary.",
+        "d": "Install the finish before the substrate is selected. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Use the unit dimensions to regulate the wall surface and coordinate how the finish meets adjacent materials. Supported by bci-5e-wall-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "bci-5e-wall-finishes-b151",
+        "checked_sources": [
+          "bci-5e-wall-finishes-b151"
+        ]
       },
-      "explanation": "0 is perfect adhesion (no loss); not the minimum, the ideal. 2 indicates 15-35% loss (ASTM D3359 classification), unacceptable per typical specifications. 5 is complete failure; rejected. ASTM D3359 defines rating 3 as 5-15% adhesion loss (moderate flaking). Rating 4 (<5% loss) is superior, but many specifications accept rating 3 as the minimum for interior walls. Ratings 0, 1, and 2 indicate higher loss and are generally rejected. Always refer to project-specific requirements. Spec minimum often rating 3 (5-15% loss). Rating 4 or better is preferred. Verify project requirements.",
-      "code_citation": "ASTM D3359 Standard Test Methods",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12559.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "bci-5e-wall-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +524,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:22:16.793707+00:00",
-      "content_hash": "sha256:3612aaafec7ee321423e6293b8faab633f46f2204ef121427240c08123da8f4e"
+      "content_hash": "sha256:3ffa804dcd0c54a41ddf1d593a880ca222074f0d1074399b4366f3c14b29efcf"
     },
     {
       "question_id": "48ee239e-7dfc-480f-926e-5b6276be4c19",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
       "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "A painter applies latex topcoat to gypsum drywall sanded with 120-grit paper and not wiped. What failure is most likely to occur within 12 months?",
+      "text": "Painting is about to start with lighting plates and finish hardware still exposed. Which source-safe instruction should the architect give?",
       "options": [
         {
           "id": "a",
-          "text": "A) Cracking due to substrate movement, which can occur if the underlying structure shifts or settles over time"
+          "text": "Paint over all fixtures because protection is outside finish work."
         },
         {
           "id": "b",
-          "text": "B) Delamination due to poor adhesion from dust and coarse surface profile"
+          "text": "Remove or protect finish hardware, lighting fixtures, plates, and similar items during painting, then reposition them after completion."
         },
         {
           "id": "c",
-          "text": "C) Fading due to UV exposure, especially if the paint is not UV-resistant and the area receives direct sunlight"
+          "text": "Skip cleaning because hardware protection replaces surface preparation."
         },
         {
           "id": "d",
-          "text": "D) Mold growth due to fungus, which can happen in areas with high humidity and poor ventilation"
+          "text": "Use wet walls to speed paint curing."
         }
       ],
       "correct_option_id": "b",
@@ -483,17 +555,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cracking is a substrate issue, not a prep failure.",
-        "c": "Fading is UV-related, not adhesion.",
-        "d": "Mold requires fungicide-free primer, not prep issues.",
-        "correct": "Inadequate surface prep (120-grit, not 220; dust residue) violates ASTM D3276. Paint fails to grip the surface, causing delamination and peeling within 6-12 months.",
-        "takeaway": "Surface prep failures show as delamination/peeling, not cracking or fading. Poor prep is the #1 cause of paint failure."
+        "a": "Paint over all fixtures because protection is outside finish work. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "b": "Remove or protect finish hardware, lighting fixtures, plates, and similar items during painting, then reposition them after completion. This stays inside the Batch 151 local source boundary.",
+        "c": "Skip cleaning because hardware protection replaces surface preparation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "d": "Use wet walls to speed paint curing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+        "correct": "Remove or protect finish hardware, lighting fixtures, plates, and similar items during painting, then reposition them after completion. Supported by salvan-wall-paint-finishes-b151.",
+        "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+        "source_boundary": "salvan-wall-paint-finishes-b151",
+        "checked_sources": [
+          "salvan-wall-paint-finishes-b151"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM D3276; Field failure analysis",
+      "code_citation": "Local source boundary: Salvan refined markdown lines 13419-13422.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-151-local-first",
+        "salvan-wall-paint-finishes-b151"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +582,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e721817bc52d7c725e1e0fda1c193b71d1e637db20c84e9e8e90cce3f0e3e9b6"
+      "content_hash": "sha256:b67ddcea8eb8d8fde0ed40068c360dad0262abb73db2de4d2e61654e22fd4eec"
     }
   ]
 }

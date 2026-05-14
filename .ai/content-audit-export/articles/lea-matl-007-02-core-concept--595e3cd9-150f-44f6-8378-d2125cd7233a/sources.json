@@ -1,32 +1,79 @@
 {
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
   "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:a55adfad0ef60a99e714417e644a9b351c651616002fc248c83dce69f47baa5e",
+  "cluster_id": "lea-matl-007-02",
+  "slug": "lea-matl-007-02-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:3f3fe5d431e5d6d280407a199c9448295e7e01efbe8461fdb879ce51f9c561f5",
   "sources": [
     {
-      "source_id": "bci-5e-b078",
-      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "url": null,
+      "id": "bci-5e-wall-finishes-b151",
+      "title": "Building Construction Illustrated, 5th Edition - wall finishes and gypsum board",
       "source_type": "primary_building_construction_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-12T05:20:00.000+08:00",
-      "updated_at": "2026-05-12T05:20:00.000+08:00"
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-151/bci-5e-wall-finishes-b151.source-capture.md",
+      "local_capture_sha256": "sha256:e2d6bd24f3ff46f4ba3c1fc5d1526dcfc76a11e690f790f7f864b028f282e90d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-151/bci-5e-wall-finishes-b151.refined.md",
+      "refined_capture_sha256": "sha256:419e94cecfbfbbdb05786bab8ea97901da8e003cf7968498c3f35534ac1dda86",
+      "locator": "refined markdown lines 12549-12600, 12889-13016, and 13036-13163",
+      "safe_claims": [
+        "Interior walls should resist wear and be cleanable.",
+        "Gypsum plaster is durable, relatively lightweight, and fire-resistant for wall or ceiling surfaces not subject to moist or wet conditions.",
+        "Portland cement plaster is used on exterior walls and in areas subject to wet or moist conditions.",
+        "Gypsum board has good fire resistance and dimensional stability and can form smooth monolithic-looking surfaces when tapered edges are taped and filled.",
+        "Gypsum board on masonry or concrete requires dry, smooth, even surfaces free of oil or parting materials.",
+        "Wood or metal furring is required when the base is not flat, supports are too far apart, or space for thermal/acoustic insulation is desired.",
+        "Wall tile requires a smooth solid backing; wet areas use cementitious backer board or water-resistant gypsum board as captured by BCI."
+      ],
+      "use_limits": [
+        "Do not state ASTM paint adhesion ratings, dry film thickness values, concrete moisture percentages, or grit requirements from this batch.",
+        "Do not make ordinary gypsum board automatically suitable for every wet wall.",
+        "Do not turn general fire-resistance language into a specific rated assembly without a rated assembly source."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b078",
-      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
-      "label": "George Salvan Architectural Building Materials",
-      "url": null,
-      "source_type": "primary_building_materials_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-12T05:20:00.000+08:00",
-      "updated_at": "2026-05-12T05:20:00.000+08:00"
+      "id": "salvan-wall-paint-finishes-b151",
+      "title": "George Salvan Architectural Building Materials - wall, gypsum, and paint preparation",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-151/salvan-wall-paint-finishes-b151.source-capture.md",
+      "local_capture_sha256": "sha256:7baa02f769e9f28f346b36525bd8c7767e4c23e644f55f7483409363dcd646c8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-151/salvan-wall-paint-finishes-b151.refined.md",
+      "refined_capture_sha256": "sha256:dccb0b26adbaaf160062eaf0c6fe5f318842fa4697d6df7beb9ede2ec9fc3396",
+      "locator": "refined markdown lines 8601-8655 and 13397-13422",
+      "safe_claims": [
+        "Salvan records interior wood boards, wood sheets, plywood, trim, gypsum plaster, and gypsum board as interior finish materials.",
+        "Salvan describes gypsum board joints and corners as taped and filled before sizing and painting.",
+        "Salvan specifies painting as three-coat work of one primer and finish coats unless otherwise specified.",
+        "Salvan requires paint materials to be manufacturer-recommended, kept in original labeled containers, and mixed only as specified.",
+        "Salvan requires surfaces to be examined, cleaned, sanded, and sealed if needed before painting.",
+        "Salvan says no paint or finish treatment should be applied over wet or damp surfaces."
+      ],
+      "use_limits": [
+        "Do not retain brand names as required products.",
+        "Do not claim exact paint test ratings, DFT values, humidity thresholds, or ASTM method requirements.",
+        "Do not use old local specification text to override current project specifications or safety standards."
+      ],
+      "sort_order": 1
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore ASTM D3359 adhesion ratings, ASTM D3276 conditions, primer DFT values, or sandpaper grit requirements.",
+    "No local source in this batch was used to restore concrete moisture percentage thresholds or proprietary anti-mold paint claims.",
+    "No local source in this batch was used to make ordinary gypsum board suitable for every wet wall."
   ]
 }

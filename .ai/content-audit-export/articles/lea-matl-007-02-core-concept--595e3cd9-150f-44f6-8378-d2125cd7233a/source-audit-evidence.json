@@ -1,233 +1,123 @@
 {
-  "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-078-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T05:20:00.000+08:00",
-  "target": {
-    "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
-    "slug": "lea-matl-007-02-core-concept",
-    "title": "Wall finishes range from paint systems",
-    "article_folder": ".ai/content-audit-export/articles/lea-matl-007-02-core-concept--595e3cd9-150f-44f6-8378-d2125cd7233a",
-    "normalized_sha256": "sha256:9229ff0a91820910554e617c2ed2d0beb32a8e88123373cac6e100c0602dc28a",
-    "candidate_sha256": "sha256:9229ff0a91820910554e617c2ed2d0beb32a8e88123373cac6e100c0602dc28a",
-    "candidate_path": ".ai/content-audit-export/articles/lea-matl-007-02-core-concept--595e3cd9-150f-44f6-8378-d2125cd7233a/candidate.md"
-  },
-  "classification": {
-    "topic_family": "wall_finishes",
-    "local_first_batch": "078",
-    "source_sensitivity": "technical_materials",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "source_bound_materials",
-    "requires_raw_pdf_audit": true
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
-    "blockers": []
-  },
-  "checked_sources": [
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
+  "cluster_id": "lea-matl-007-02",
+  "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
     {
-      "source_id": "bci-5e-b078",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-      "locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction"
+      "id": "bci-5e-wall-finishes-b151",
+      "title": "Building Construction Illustrated, 5th Edition - wall finishes and gypsum board",
+      "source_type": "primary_building_construction_pdf",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-151/bci-5e-wall-finishes-b151.source-capture.md",
+      "local_capture_sha256": "sha256:e2d6bd24f3ff46f4ba3c1fc5d1526dcfc76a11e690f790f7f864b028f282e90d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-151/bci-5e-wall-finishes-b151.refined.md",
+      "refined_capture_sha256": "sha256:419e94cecfbfbbdb05786bab8ea97901da8e003cf7968498c3f35534ac1dda86",
+      "locator": "refined markdown lines 12549-12600, 12889-13016, and 13036-13163",
+      "safe_claims": [
+        "Interior walls should resist wear and be cleanable.",
+        "Gypsum plaster is durable, relatively lightweight, and fire-resistant for wall or ceiling surfaces not subject to moist or wet conditions.",
+        "Portland cement plaster is used on exterior walls and in areas subject to wet or moist conditions.",
+        "Gypsum board has good fire resistance and dimensional stability and can form smooth monolithic-looking surfaces when tapered edges are taped and filled.",
+        "Gypsum board on masonry or concrete requires dry, smooth, even surfaces free of oil or parting materials.",
+        "Wood or metal furring is required when the base is not flat, supports are too far apart, or space for thermal/acoustic insulation is desired.",
+        "Wall tile requires a smooth solid backing; wet areas use cementitious backer board or water-resistant gypsum board as captured by BCI."
+      ],
+      "use_limits": [
+        "Do not state ASTM paint adhesion ratings, dry film thickness values, concrete moisture percentages, or grit requirements from this batch.",
+        "Do not make ordinary gypsum board automatically suitable for every wet wall.",
+        "Do not turn general fire-resistance language into a specific rated assembly without a rated assembly source."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b078",
-      "label": "George Salvan Architectural Building Materials",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-      "locator": "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
+      "id": "salvan-wall-paint-finishes-b151",
+      "title": "George Salvan Architectural Building Materials - wall, gypsum, and paint preparation",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-151/salvan-wall-paint-finishes-b151.source-capture.md",
+      "local_capture_sha256": "sha256:7baa02f769e9f28f346b36525bd8c7767e4c23e644f55f7483409363dcd646c8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-151/salvan-wall-paint-finishes-b151.refined.md",
+      "refined_capture_sha256": "sha256:dccb0b26adbaaf160062eaf0c6fe5f318842fa4697d6df7beb9ede2ec9fc3396",
+      "locator": "refined markdown lines 8601-8655 and 13397-13422",
+      "safe_claims": [
+        "Salvan records interior wood boards, wood sheets, plywood, trim, gypsum plaster, and gypsum board as interior finish materials.",
+        "Salvan describes gypsum board joints and corners as taped and filled before sizing and painting.",
+        "Salvan specifies painting as three-coat work of one primer and finish coats unless otherwise specified.",
+        "Salvan requires paint materials to be manufacturer-recommended, kept in original labeled containers, and mixed only as specified.",
+        "Salvan requires surfaces to be examined, cleaned, sanded, and sealed if needed before painting.",
+        "Salvan says no paint or finish treatment should be applied over wet or damp surfaces."
+      ],
+      "use_limits": [
+        "Do not retain brand names as required products.",
+        "Do not claim exact paint test ratings, DFT values, humidity thresholds, or ASTM method requirements.",
+        "Do not use old local specification text to override current project specifications or safety standards."
+      ],
+      "sort_order": 1
     }
   ],
-  "claims": [
+  "normalized_sha256": "sha256:6fe223d903d91227d76bd7dc7be54d181bbfffa511061a0a31985f6db8619be7",
+  "candidate_sha256": "sha256:6fe223d903d91227d76bd7dc7be54d181bbfffa511061a0a31985f6db8619be7",
+  "question_count": 10,
+  "question_hashes": [
     {
-      "claim_id": "lea-matl-007-02-core-concept-article-b078",
-      "claim_text": "Article lea-matl-007-02-core-concept was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "article_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "79a048fe-1a14-4567-9dcb-593fe8c52e7c",
+      "content_hash": "sha256:4475a17f3e3f31781414034f9ccd4daba91fc7ddfeed79679274bfa9bdcccf06"
     },
     {
-      "claim_id": "question-79a048fe-1a14-4567-9dcb-593fe8c52e7c-ALE-MATL-007-02-001-b078",
-      "claim_text": "Question 79a048fe-1a14-4567-9dcb-593fe8c52e7c ALE-MATL-007-02-001 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "766af87c-5846-4db9-903d-fb8aea71a759",
+      "content_hash": "sha256:1da2dceb2418d2e201a028be597cdb93f2ee20ee91828058703d3a4dbcc79e0c"
     },
     {
-      "claim_id": "question-766af87c-5846-4db9-903d-fb8aea71a759-ALE-MATL-007-02-007-b078",
-      "claim_text": "Question 766af87c-5846-4db9-903d-fb8aea71a759 ALE-MATL-007-02-007 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "cba1db3a-8f02-498e-b367-9dd1e1b4b9a3",
+      "content_hash": "sha256:b109232a82ee1ed82c5c3de685fe7adb2f27e868cabeeb824d3d275df3377cf3"
     },
     {
-      "claim_id": "question-cba1db3a-8f02-498e-b367-9dd1e1b4b9a3-ALE-MATL-007-02-005-b078",
-      "claim_text": "Question cba1db3a-8f02-498e-b367-9dd1e1b4b9a3 ALE-MATL-007-02-005 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "019dc05f-fb68-4e84-ad6f-00cf8aefa974",
+      "content_hash": "sha256:0bc4954cc660c064c14251944150bbb0d88de45088c16d0b93336e369d22b46a"
     },
     {
-      "claim_id": "question-019dc05f-fb68-4e84-ad6f-00cf8aefa974-ALE-MATL-007-02-010-b078",
-      "claim_text": "Question 019dc05f-fb68-4e84-ad6f-00cf8aefa974 ALE-MATL-007-02-010 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "3d532852-78fd-453f-9b6b-0658504031ec",
+      "content_hash": "sha256:8f451002abdac82c930d036a8ffaa632c2f51cde6d18e004a9ba927ce8294815"
     },
     {
-      "claim_id": "question-3d532852-78fd-453f-9b6b-0658504031ec-ALE-MATL-007-02-006-b078",
-      "claim_text": "Question 3d532852-78fd-453f-9b6b-0658504031ec ALE-MATL-007-02-006 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "f6f38d2c-0a92-46a1-87e6-afd1f273a3ac",
+      "content_hash": "sha256:d41038ee8a1bb508b3267c951112b013f22fdefd1e45d2eabfda53a9885c60c0"
     },
     {
-      "claim_id": "question-f6f38d2c-0a92-46a1-87e6-afd1f273a3ac-ALE-MATL-007-02-003-b078",
-      "claim_text": "Question f6f38d2c-0a92-46a1-87e6-afd1f273a3ac ALE-MATL-007-02-003 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "12d32db4-e405-47cf-9939-ca441eea46a0",
+      "content_hash": "sha256:84007662790b0e636a63e844a37d04b8dce73bee4c24bc1436509cad0fd9520a"
     },
     {
-      "claim_id": "question-12d32db4-e405-47cf-9939-ca441eea46a0-ALE-MATL-007-02-008-b078",
-      "claim_text": "Question 12d32db4-e405-47cf-9939-ca441eea46a0 ALE-MATL-007-02-008 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "64caca33-4249-4624-8b58-7bd479f7db72",
+      "content_hash": "sha256:d269335e378628d47ef23c1d21094a678da1a373337ef86569b8e838926479fd"
     },
     {
-      "claim_id": "question-64caca33-4249-4624-8b58-7bd479f7db72-ALE-MATL-007-02-009-b078",
-      "claim_text": "Question 64caca33-4249-4624-8b58-7bd479f7db72 ALE-MATL-007-02-009 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "a4b0ab65-2c30-4876-998d-adae88195d11",
+      "content_hash": "sha256:3ffa804dcd0c54a41ddf1d593a880ca222074f0d1074399b4366f3c14b29efcf"
     },
     {
-      "claim_id": "question-a4b0ab65-2c30-4876-998d-adae88195d11-ALE-MATL-007-02-002-b078",
-      "claim_text": "Question a4b0ab65-2c30-4876-998d-adae88195d11 ALE-MATL-007-02-002 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "question-48ee239e-7dfc-480f-926e-5b6276be4c19-ALE-MATL-007-02-004-b078",
-      "claim_text": "Question 48ee239e-7dfc-480f-926e-5b6276be4c19 ALE-MATL-007-02-004 was rewritten to the checked wall_finishes source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "resistant to wear and be cleanable"
-      },
-      "blockers": []
+      "question_id": "48ee239e-7dfc-480f-926e-5b6276be4c19",
+      "content_hash": "sha256:b67ddcea8eb8d8fde0ed40068c360dad0262abb73db2de4d2e61654e22fd4eec"
     }
   ],
-  "unverified_or_rejected_claims": [],
-  "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
-  },
-  "local_first_publication": {
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "ready_for_final_publishing_review": true
-  }
+  "real_world_scenario_status": "included",
+  "exact_claim_policy": "exact legal, code, test-method, product, or numeric performance values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore ASTM D3359 adhesion ratings, ASTM D3276 conditions, primer DFT values, or sandpaper grit requirements.",
+    "No local source in this batch was used to restore concrete moisture percentage thresholds or proprietary anti-mold paint claims.",
+    "No local source in this batch was used to make ordinary gypsum board suitable for every wet wall."
+  ]
 }

@@ -1,65 +1,69 @@
 {
+  "batch": 151,
+  "batch_id": "source-audited-batch-151-local-first",
+  "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+  "cluster_id": "lea-matl-007-01",
   "question_id": "c7ae46cd-f4c9-4aa5-b056-861f2f64f0b9",
-  "baseline_hash": "sha256:d9940e2f0d4a95a9a076682ad894af95f682957d90f71492dae2c7011102a41f",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-01-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
-    "parent_article_slug": "lea-matl-007-01-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 12549-12620 and 13036-13496; raw PDF pages 343-365 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 12549-12620 and 13036-13496; raw PDF pages 343-365 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 8010-8245, 8448-8505, and 8560-8665; raw PDF pages 235-254 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 12549-12620 and 13036-13496; raw PDF pages 343-365 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 8010-8245, 8448-8505, and 8560-8665; raw PDF pages 235-254 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited floor_finishes scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:7e0ce1cec2c9cf56270b7a2c79e90f238af5b45ccf03142a0f686cdc05a8c61b",
+  "after_hash": "sha256:7e0ce1cec2c9cf56270b7a2c79e90f238af5b45ccf03142a0f686cdc05a8c61b",
+  "baseline_hash": "sha256:7e0ce1cec2c9cf56270b7a2c79e90f238af5b45ccf03142a0f686cdc05a8c61b",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-floor-finishes-b151"
+  ],
+  "reason": "Batch 151 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "Which tile process uses a thin bond coat over a continuous stable backing?",
+    "text": "A tile detail must form accurate slopes to drain and true planes over a mortar bed. Which installation method matches BCI?",
     "options": [
       {
         "id": "a",
-        "text": "Thinset process"
+        "text": "Thinset over any uneven base, because the adhesive corrects all slope problems."
       },
       {
         "id": "b",
-        "text": "Thickset process only"
+        "text": "Thickset tile work over a portland cement mortar bed."
       },
       {
         "id": "c",
-        "text": "Terrazzo divider strip process"
+        "text": "Wall-to-wall carpet over a soft pad."
       },
       {
         "id": "d",
-        "text": "Carpet loop-pile process"
+        "text": "Wood strip flooring before the building is enclosed."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI defines the thinset process as ceramic tile bonded to a continuous stable backing with a thin coat of mortar or adhesive.",
-    "explanation": "BCI defines the thinset process as ceramic tile bonded to a continuous stable backing with a thin coat of mortar or adhesive.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Thinset over any uneven base, because the adhesive corrects all slope problems. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "b": "Thickset tile work over a portland cement mortar bed. This stays inside the Batch 151 local source boundary.",
+      "c": "Wall-to-wall carpet over a soft pad. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "d": "Wood strip flooring before the building is enclosed. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+      "correct": "Thickset tile work over a portland cement mortar bed. Supported by bci-5e-floor-finishes-b151.",
+      "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+      "source_boundary": "bci-5e-floor-finishes-b151",
+      "checked_sources": [
+        "bci-5e-floor-finishes-b151"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 13100-13130.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-151-local-first",
+      "bci-5e-floor-finishes-b151"
+    ]
+  },
+  "rationale": {
+    "a": "Thinset over any uneven base, because the adhesive corrects all slope problems. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "b": "Thickset tile work over a portland cement mortar bed. This stays inside the Batch 151 local source boundary.",
+    "c": "Wall-to-wall carpet over a soft pad. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "d": "Wood strip flooring before the building is enclosed. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 151 local source boundary.",
+    "correct": "Thickset tile work over a portland cement mortar bed. Supported by bci-5e-floor-finishes-b151.",
+    "takeaway": "For finish questions, match the finish to substrate, exposure, and source-supported coordination before using exact ratings.",
+    "source_boundary": "bci-5e-floor-finishes-b151",
+    "checked_sources": [
+      "bci-5e-floor-finishes-b151"
+    ]
   }
 }
