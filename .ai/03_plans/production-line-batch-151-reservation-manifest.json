@@ -1,0 +1,167 @@
+{
+  "batch": 151,
+  "batch_id": "reservation-batch-151-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T11:30:56+08:00",
+  "baseline": "6fb4fcb0f5",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after Batch 150 reservations.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after Batch 150 reservations with the next sourceable materials finishing clusters in sorted residual order. Use verified local BCI 5e and Salvan source records and avoid unsupported manufacturer, code, or performance claims.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..148}-manifest.json",
+    "inspected_report_glob": ".ai/content-audit-export/source-audited-article-batch-{087..148}-local-first-*",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_artifacts": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "known_deferrals_not_reserved": [
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-009-01",
+    "lea-strc-009-02",
+    "lea-strc-009-03",
+    "lea-strc-012-01"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-matl-007-01",
+      "slug": "lea-matl-007-01-core-concept",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-01-core-concept--20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "title": "Floor finishes serve dual functions as protective layers",
+      "linked_question_count": 10,
+      "source_family": "floor_finishes_bci_salvan",
+      "source_path_candidates": [
+        {
+          "source_family": "bci_5e_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records BCI 5e as a verified local raw PDF source for floor finishes.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable BCI local text includes checked floor finish locator ranges.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable Salvan local text supports floor finish material context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified BCI and Salvan local source records support floor finish functions, protective layers, and finish-selection concepts.",
+      "known_risks": [
+        "Avoid unsupported slip-resistance, fire-rating, or manufacturer-specific performance values.",
+        "Use production source maps for any exact material property claims."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans and absent from Batch 149-150 reservations; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-007-02",
+      "slug": "lea-matl-007-02-core-concept",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-02-core-concept--595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "title": "Wall finishes range from paint systems",
+      "linked_question_count": 10,
+      "source_family": "wall_finishes_bci_salvan",
+      "source_path_candidates": [
+        {
+          "source_family": "bci_5e_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records BCI 5e as a verified local raw PDF source for finish assemblies.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable BCI local text supports wall finish assembly and material-selection context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable Salvan local text supports paint and wall finish material context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified BCI and Salvan local source records support wall finish ranges, paint systems, and finish coordination concepts.",
+      "known_risks": [
+        "Avoid unsupported VOC, fire-rating, proprietary system, or exact specification claims.",
+        "Keep claims source-bound to finish types and application coordination."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans and absent from Batch 149-150 reservations; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-007-03",
+      "slug": "lea-matl-007-03-core-concept",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-03-core-concept--51fa177c-6b29-476a-8cee-740b797a9db8",
+      "title": "Ceiling finishes fall into four categories: suspended",
+      "linked_question_count": 10,
+      "source_family": "ceiling_finishes_bci_salvan",
+      "source_path_candidates": [
+        {
+          "source_family": "bci_5e_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records BCI 5e as a verified local raw PDF source for ceiling finish systems.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable BCI local text supports ceiling and suspended finish assembly context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable Salvan local text supports ceiling finish material context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified BCI and Salvan local source records support ceiling finish categories, suspended assemblies, and material coordination.",
+      "known_risks": [
+        "Avoid unsupported fire/acoustic rating or suspension-spacing values unless captured in production.",
+        "Keep examples general and source-bound to the checked local texts."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans and absent from Batch 149-150 reservations; not hard-blocked; not lea-prac."
+    }
+  ],
+  "residual_not_reserved_due_batch_size_cap": [
+    {
+      "cluster_id": "lea-matl-007-04",
+      "reason": "Next likely sourceable paint-systems residual, deferred because Batch 151 is capped at three clusters."
+    }
+  ],
+  "reservation_stop_condition": "Batch 151 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git stage/commit/push, Supabase, deploy, DB, or main-merge action."
+}

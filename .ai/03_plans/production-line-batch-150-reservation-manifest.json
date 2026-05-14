@@ -1,0 +1,167 @@
+{
+  "batch": 150,
+  "batch_id": "reservation-batch-150-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T11:30:56+08:00",
+  "baseline": "6fb4fcb0f5",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after Batch 149 reservations.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after Batch 149 reservations. With no additional locally sourceable structures cluster after lea-strc-011-03, reserve the next sourceable materials clusters in sorted residual order using verified local Salvan and BCI source records.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..148}-manifest.json",
+    "inspected_report_glob": ".ai/content-audit-export/source-audited-article-batch-{087..148}-local-first-*",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_artifacts": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "known_deferrals_not_reserved": [
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-009-01",
+    "lea-strc-009-02",
+    "lea-strc-009-03",
+    "lea-strc-012-01"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-matl-006-03",
+      "slug": "lea-matl-006-03-core-concept",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "title": "Waterproofing differs from damp-proofing",
+      "linked_question_count": 10,
+      "source_family": "waterproofing_salvan_bci",
+      "source_path_candidates": [
+        {
+          "source_family": "salvan_building_materials_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records this local PDF as verified for the waterproofing/materials source boundary.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local Salvan text supports waterproofing, damp-proofing, sealant, and envelope-material distinctions.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable BCI local text supports roof and wall envelope assembly context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local Salvan and BCI source records already exist for this article, and the topic can be rewritten conservatively around waterproofing versus damp-proofing distinctions.",
+      "known_risks": [
+        "Avoid exact proprietary membrane performance values unless captured in the production source map.",
+        "Do not overstate code requirements beyond locally captured source text."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans and absent from Batch 149 reservations; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-006-04",
+      "slug": "lea-matl-006-04-core-concept",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "title": "Thermal Insulation reduces heat transmission through",
+      "linked_question_count": 10,
+      "source_family": "thermal_insulation_salvan_bci",
+      "source_path_candidates": [
+        {
+          "source_family": "salvan_building_materials_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records this local PDF as verified for the insulation/materials source boundary.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local Salvan text supports thermal-insulation material and heat-transfer distinctions.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable BCI local text supports envelope assembly and insulation placement context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local Salvan and BCI source records exist, and the topic can be source-bound to insulation functions and heat-transfer control without unsupported energy-code claims.",
+      "known_risks": [
+        "Avoid precise R-values, U-values, or code minimums unless captured locally.",
+        "Keep examples material-generic unless the source map supports a named product type."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans and absent from Batch 149 reservations; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-006-05",
+      "slug": "lea-matl-006-05-core-concept",
+      "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+      "title": "Sealants differ from caulks by durability and movement",
+      "linked_question_count": 10,
+      "source_family": "sealants_salvan_bci",
+      "source_path_candidates": [
+        {
+          "source_family": "salvan_building_materials_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records this local PDF as verified for the sealant/materials source boundary.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local Salvan text supports sealant, caulk, joint, and movement-control distinctions.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable BCI local text supports envelope and joint assembly context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Verified local Salvan and BCI source records exist, and the topic can be source-bound to sealant-versus-caulk function, movement, durability, and envelope coordination.",
+      "known_risks": [
+        "Do not state ASTM classifications, movement percentages, or manufacturer-specific performance without a fresh local capture.",
+        "Preserve answer keys while replacing unsupported specification claims."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans and absent from Batch 149 reservations; not hard-blocked; not lea-prac."
+    }
+  ],
+  "residual_not_reserved_due_batch_size_cap": [
+    {
+      "cluster_id": "lea-matl-007-01",
+      "reason": "Next sourceable materials residual, deferred to Batch 151 because Batch 150 is capped at three clusters."
+    }
+  ],
+  "reservation_stop_condition": "Batch 150 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git stage/commit/push, Supabase, deploy, DB, or main-merge action."
+}

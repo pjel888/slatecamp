@@ -1,0 +1,185 @@
+{
+  "batch": 149,
+  "batch_id": "reservation-batch-149-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T11:30:56+08:00",
+  "baseline": "6fb4fcb0f5",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after accepted Batch 148.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after accepted Batch 148 consumed lea-strc-010-02, lea-strc-011-01, and lea-strc-011-02. Reserve the remaining locally sourceable geotechnical structures cluster first, skip exact wind-code claims without a completed local capture, then move to the next sourceable materials clusters in sorted residual order.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..148}-manifest.json",
+    "inspected_report_glob": ".ai/content-audit-export/source-audited-article-batch-{087..148}-local-first-*",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_artifacts": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "known_deferrals_not_reserved": [
+    {
+      "cluster_id": "lea-strc-007-03",
+      "reason": "Exact local NSCP deflection/thickness table support remains undiscovered."
+    },
+    {
+      "cluster_id": "lea-strc-007-05",
+      "reason": "Exact embedded-conduit limit support remains undiscovered in readable local structural sources."
+    },
+    {
+      "cluster_id": "lea-strc-009-01",
+      "reason": "Timber durability/species support remains weaker than required for exact local claims."
+    },
+    {
+      "cluster_id": "lea-strc-009-02",
+      "reason": "Timber stress-group/species-table support remains weaker than required for exact local claims."
+    },
+    {
+      "cluster_id": "lea-strc-009-03",
+      "reason": "Timber allowable-stress/species/group claims still need better exact local support."
+    },
+    {
+      "cluster_id": "lea-strc-012-01",
+      "reason": "Wind load provisions rely on exact NSCP/ASCE/IBC-style code support; no completed readable local capture was found for a claim-safe reservation."
+    }
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-strc-011-03",
+      "slug": "lea-strc-011-03-core-concept",
+      "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+      "title": "Geotechnical engineering characterizes soil, predicts",
+      "linked_question_count": 10,
+      "source_family": "geotechnical_foundation_engineering",
+      "source_path_candidates": [
+        {
+          "source_family": "foundation_engineering_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Local foundation engineering source used and hash-checked in Batch 148 for foundation, pile, serviceability, settlement, and soil-behavior boundaries.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "foundation_engineering_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local text supports conservative geotechnical characterization, soil behavior, foundation selection, and settlement/serviceability discussion.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable local BSI text supports foundation system and load-transfer context already used in Batch 148.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Batch 148 proved the local Foundation Engineering raw/refined source and BSI refined source paths. Those sources cover the conservative soil and foundation behavior needed for a local-first geotechnical rewrite without relying on exact unavailable ASTM, NSCP, or PBC section claims.",
+      "known_risks": [
+        "Existing article source labels mention PBC, NSCP, ASTM, Bowles, and Terzaghi/Peck/Mesri; production must cite only locally captured Foundation Engineering or BSI claims unless a new safe capture is created.",
+        "Avoid restoring exact SPT, Proctor, field-density, or code-section requirements from memory."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans after slug normalization; not in the hard-blocked carry-forward list; not in the known timber/detailing deferral list."
+    },
+    {
+      "cluster_id": "lea-matl-006-01",
+      "slug": "lea-matl-006-01-core-concept",
+      "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "title": "Roofing materials serve three critical functions: weather",
+      "linked_question_count": 10,
+      "source_family": "roofing_materials_salvan_bci",
+      "source_path_candidates": [
+        {
+          "source_family": "salvan_building_materials_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records this as a verified local raw PDF source for the roofing/materials source boundary.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local Salvan text includes the checked roofing and materials locator ranges recorded in article sources.json.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable BCI source supports building-envelope and roofing assembly context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "The article already carries verified local Salvan and BCI source records with raw and refined local paths, enough for a conservative roofing-materials pass.",
+      "known_risks": [
+        "Keep claims at material-function and assembly level unless the production source map captures exact manufacturer or code values.",
+        "Create fresh Batch 149 source-map artifacts during production; do not rely on old batch labels as current evidence."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans after slug normalization; not hard-blocked; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-006-02",
+      "slug": "lea-matl-006-02-core-concept",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "title": "Roof trusses transfer roof loads through triangulated",
+      "linked_question_count": 10,
+      "source_family": "roof_trusses_bci_salvan",
+      "source_path_candidates": [
+        {
+          "source_family": "bci_5e_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Article sources.json records BCI 5e as a verified local raw PDF source for roof truss context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "bci_5e_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable BCI local text includes the checked roof/truss locator ranges recorded in article sources.json.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "salvan_building_materials_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable Salvan source is a local supporting source for the same article source boundary.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "The article already carries verified local BCI and Salvan source records for roof truss and roof assembly concepts.",
+      "known_risks": [
+        "Do not infer engineering span tables, connection capacities, or code design values unless captured in the production source map.",
+        "Keep the production pass focused on truss load path, triangulation, and architectural coordination claims supported by local text."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-148 manifest/report/ledger scans after slug normalization; not hard-blocked; not lea-prac."
+    }
+  ],
+  "residual_not_reserved_due_batch_size_cap": [
+    {
+      "cluster_id": "lea-matl-006-03",
+      "reason": "Next sourceable materials residual, deferred to Batch 150 because Batch 149 is capped at three clusters."
+    }
+  ],
+  "reservation_stop_condition": "Batch 149 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git stage/commit/push, Supabase, deploy, DB, or main-merge action."
+}
