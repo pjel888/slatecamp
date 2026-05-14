@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "cluster_id": "lea-strc-011-02",
+  "question_id": "ed656ad5-af59-47d2-b0fd-9279f449f71c",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:761ed9852672976736600d092be52a9d6ef9813393853aa57eb83398a8252c09",
+  "after_hash": "sha256:761ed9852672976736600d092be52a9d6ef9813393853aa57eb83398a8252c09",
+  "baseline_hash": "sha256:761ed9852672976736600d092be52a9d6ef9813393853aa57eb83398a8252c09",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-masonry-foundation-grids",
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A heavier tower and lighter podium share a site with different load demands and variable ground conditions. Which strategy best follows the captured source logic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use shallow footings everywhere solely to minimize initial cost."
+      },
+      {
+        "id": "b",
+        "text": "Use deep piles everywhere without checking whether the lighter portion has adequate shallow support."
+      },
+      {
+        "id": "c",
+        "text": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it."
+      },
+      {
+        "id": "d",
+        "text": "Use one arbitrary mat everywhere because mats always eliminate differential settlement."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Use shallow footings everywhere solely to minimize initial cost. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Use deep piles everywhere without checking whether the lighter portion has adequate shallow support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "c": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it. This stays inside the Batch 148 local source boundary.",
+      "d": "Use one arbitrary mat everywhere because mats always eliminate differential settlement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+      "checked_sources": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI lines 1890-1900; Foundation Engineering lines 1040-1088, 23345-23395.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "Use shallow footings everywhere solely to minimize initial cost. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Use deep piles everywhere without checking whether the lighter portion has adequate shallow support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "c": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it. This stays inside the Batch 148 local source boundary.",
+    "d": "Use one arbitrary mat everywhere because mats always eliminate differential settlement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+    "checked_sources": [
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  }
+}

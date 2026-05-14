@@ -1,30 +1,30 @@
 {
   "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:29cc6d6b2453258d2ad6ad3c8033e05016f06cc9b6efb0102f41b03c8d10c3f8",
+  "linked_questions_hash": "sha256:08a7b3b6ddec5d6859b7a6c6217159eff020df7e2fd8a5b3646975f1334ff73c",
   "question_count": 10,
   "questions": [
     {
       "question_id": "2ccdc921-cd19-4a4f-99f6-5568c428a3df",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "A shallow foundation is defined by which of the following criteria?",
+      "text": "Which statement best describes a shallow or spread foundation within the captured source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Any footing placed less than 5 m below the ground surface, typically used for light structures"
+          "text": "Any foundation less than one fixed depth, regardless of soil support."
         },
         {
           "id": "b",
-          "text": "A footing with depth-to-width ratio Df/B < 1, placed typically ≤ 3 m below grade, transferring load via direct bearing pressure on soil immediately below the footing."
+          "text": "A foundation used when stable soil of adequate bearing capacity occurs relatively near the ground surface and loads can be transferred directly by vertical pressure."
         },
         {
           "id": "c",
-          "text": "A footing that uses surface preparation and compaction, ensuring stability without deep excavation"
+          "text": "A foundation selected only because surface compaction is visible."
         },
         {
           "id": "d",
-          "text": "Any foundation that does not require pile driving or drilling, suitable for stable soil conditions"
+          "text": "Any foundation that avoids reinforcement."
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Shallow foundations are characterized by Df/B < 1 (depth much less than width) and depths typically ≤ 3 m. Load is transferred by direct bearing pressure on soil at or near the footing base. This is the fundamental distinction from deep foundations.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Any foundation less than one fixed depth, regardless of soil support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "A foundation used when stable soil of adequate bearing capacity occurs relatively near the ground surface and loads can be transferred directly by vertical pressure. This stays inside the Batch 148 local source boundary.",
+        "c": "A foundation selected only because surface compaction is visible. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Any foundation that avoids reinforcement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "A foundation used when stable soil of adequate bearing capacity occurs relatively near the ground surface and loads can be transferred directly by vertical pressure. Supported by bsi-masonry-foundation-grids.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Foundation Design)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 743-751 and 1890-1900.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d433b17a42749628dc2ea860f5586c68d5cfc889da4f5fa831990ce6a07c504f"
+      "content_hash": "sha256:dbda82037312fd3029e1cbaf50bce7a59eb428a805608a9cbbf1da0a1be87467"
     },
     {
       "question_id": "158cce46-3a76-4e5c-bb8c-c25dc6a855b3",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "A strip footing (wall footing) runs 50 m along a building facade, carrying a uniform wall load. Compare the settlement behavior of this strip footing to an isolated footing under a single column of equal load intensity (load per meter).",
+      "text": "A long wall load and a single column load are both being supported on soil with adequate bearing capacity. Which source-backed distinction helps choose footing geometry?",
       "options": [
         {
           "id": "a",
-          "text": "Strip and isolated footings settle identically; geometry has no effect, as both are subject to the same soil conditions and load intensity."
+          "text": "Wall and column footings are identical because geometry has no effect on load distribution."
         },
         {
           "id": "b",
-          "text": "An isolated footing settles more because load is concentrated at a point. A strip footing distributes load linearly, reducing settlement concentration and causing more uniform subsidence along the wall. Settlement is calculated as continuous, not point-concentrated."
+          "text": "A wall footing behaves as line support, while a column footing behaves as point support; each should distribute its load without exceeding allowable soil bearing capacity."
         },
         {
           "id": "c",
-          "text": "A strip footing settles more because it is longer, which increases the potential for differential settlement along its length."
+          "text": "Wall footings always settle more solely because they are longer."
         },
         {
           "id": "d",
-          "text": "Settlement behavior is independent of footing geometry; it depends only on soil bearing capacity, assuming uniform soil conditions across the site."
+          "text": "Footing geometry is independent of the superstructure layout."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "An isolated footing concentrates load in a small area, causing localized stress concentration and differential settlement (higher beneath the footing center, lower at edges). A strip footing distributes load continuously over length, producing more uniform stress distribution and more uniform settlement profile. Strip footing settlement is calculated as a continuous problem; isolated footing settlement requires integration over the footing area. The strip footing is more favorable from a settlement standpoint.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Wall and column footings are identical because geometry has no effect on load distribution. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "A wall footing behaves as line support, while a column footing behaves as point support; each should distribute its load without exceeding allowable soil bearing capacity. This stays inside the Batch 148 local source boundary.",
+        "c": "Wall footings always settle more solely because they are longer. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Footing geometry is independent of the superstructure layout. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "A wall footing behaves as line support, while a column footing behaves as point support; each should distribute its load without exceeding allowable soil bearing capacity. Supported by bsi-masonry-foundation-grids.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Strip and Isolated Footings); Bowles (1996); Coduto (2001)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 743-751 and 1890-1900.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e6544a88a590bc64761fd51d67015e9bbd845790d8819f1ea1f25ef6068e913d"
+      "content_hash": "sha256:9c62c224e796e4f3877497bb2fefe1b71a721f14618a314b5702dc0f15c870b4"
     },
     {
       "question_id": "84d196f4-17c5-45f9-81c2-e06e104d5ecc",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "Explain the difference between a deep foundation and a shallow foundation in terms of load transfer mechanism and when each is employed.",
+      "text": "Explain the source-backed difference between shallow/spread foundations and pile or caisson foundations.",
       "options": [
         {
           "id": "a",
-          "text": "Deep foundations are deeper; shallow foundations are shallower. Load transfer is identical, which is a common misconception."
+          "text": "They transfer load in the same way; only the name changes."
         },
         {
           "id": "b",
-          "text": "Shallow foundations transfer load via direct bearing pressure on soil at/near the footing base (Df ≤ 2 m, Df/B < 1). Deep foundations transfer load via friction along the shaft or bearing at depth (Df > 3 m, often much deeper). Shallow: firm soil exists nearby. Deep: firm soil is distant or absent."
+          "text": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance."
         },
         {
           "id": "c",
-          "text": "Deep foundations are always stronger than shallow; shallow should never be used, which is not accurate as both have specific applications."
+          "text": "Deep foundations are always stronger and shallow foundations should never be used."
         },
         {
           "id": "d",
-          "text": "Shallow foundations transfer load at depth; deep foundations transfer load at the surface, which is incorrect as it reverses the actual mechanisms."
+          "text": "Shallow foundations transfer load at depth and deep foundations transfer load at the surface."
         }
       ],
       "correct_option_id": "b",
@@ -133,17 +149,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Load transfer mechanism is the fundamental distinction. Shallow foundations push load straight down through direct bearing. Deep foundations hang load via friction or grip a distant firm layer with the tip. Shallow is viable when firm soil is close (< 2–3 m). Deep is mandatory when firm soil is far or absent, which is the typical condition in deep alluvial deposits.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They transfer load in the same way; only the name changes. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance. This stays inside the Batch 148 local source boundary.",
+        "c": "Deep foundations are always stronger and shallow foundations should never be used. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Shallow foundations transfer load at depth and deep foundations transfer load at the surface. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids",
+          "foundation-engineering-piles"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Foundation Classification)",
+      "code_citation": "Local source boundary: BSI lines 743-751, 1890-1900; Foundation Engineering lines 22935-22971.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-piles"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +178,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:441e01cd08e2688c30e5181df82adb3bf4469e28797aedd638be6a9fed2988a0"
+      "content_hash": "sha256:4cbebf0b53075a6d9219f648197881b5b0da70ae0c34b9b5ef8e37c8cef8db8d"
     },
     {
       "question_id": "9655dccc-c302-4c29-933c-f4162de3a642",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "Compare a mat (raft) foundation to a system of isolated footings for a 16-column building. Which statement best captures the advantage of the mat over isolated footings?",
+      "text": "A building has many interior column footings that are becoming too large for the available soil support. Which statement best captures the advantage of a mat foundation?",
       "options": [
         {
           "id": "a",
-          "text": "Isolated footings are always cheaper; mats should be used only for aesthetic reasons, not structural benefits"
+          "text": "A mat is selected only for appearance and has no structural role."
         },
         {
           "id": "b",
-          "text": "A mat foundation is a single continuous reinforced concrete slab that distributes load across the entire footprint, reducing differential settlement and allowing design on marginal soils where isolated footings would be uneconomical or unsafe."
+          "text": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk."
         },
         {
           "id": "c",
-          "text": "Isolated footings provide faster construction because they are smaller and require less material"
+          "text": "A mat eliminates all settlement and therefore needs no serviceability review."
         },
         {
           "id": "d",
-          "text": "Mats eliminate all settlement; isolated footings always settle significantly, leading to potential structural issues"
+          "text": "A mat is a pile cap for exactly one pile only."
         }
       ],
       "correct_option_id": "b",
@@ -183,17 +209,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A mat foundation is a unified slab that distributes loads from all columns across a large area, minimizing pressure variations and differential settlement. On marginal soils or heterogeneous sites, mats allow a lower, more uniform pressure that would be unachievable with 16 separate isolated footings. This is the key advantage, especially in soft clay or variable bearing soils.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A mat is selected only for appearance and has no structural role. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk. This stays inside the Batch 148 local source boundary.",
+        "c": "A mat eliminates all settlement and therefore needs no serviceability review. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "A mat is a pile cap for exactly one pile only. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk. Supported by bsi-masonry-foundation-grids, foundation-engineering-serviceability.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-serviceability",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids",
+          "foundation-engineering-serviceability"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Mat Foundation)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 743-751 and 1890-1900; Foundation Engineering lines 1048-1088.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-serviceability"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +238,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3defb4b85a3ca1b0e379d53be09c43f19e726f0644183760a187e4b9ea5598ba"
+      "content_hash": "sha256:bc468101aed7abba77c8da2adc15bf53c81015a0dddfb9c6203fa56a4299bb7a"
     },
     {
       "question_id": "5b6d1ddf-e0f3-4dd2-87f2-831827049eff",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "A combined footing supports two columns 6 m apart. Explain the purpose of a combined footing and distinguish it from a mat foundation.",
+      "text": "A detail compares a column footing, a wall footing, and a mat foundation. Which option matches the source-backed geometric distinction?",
       "options": [
         {
           "id": "a",
-          "text": "A combined footing and mat are the same; naming is arbitrary, with no functional distinction between the two"
+          "text": "All three are the same, with no functional distinction."
         },
         {
           "id": "b",
-          "text": "A combined footing is a single reinforced concrete slab supporting 2–4 aligned columns, used to reduce eccentric loading and control differential settlement between the two columns. A mat is a large slab covering many columns (entire footprint), providing broader load distribution."
+          "text": "A column footing is point support, a wall footing is line support, and a mat foundation is plane support for many columns or a large footprint."
         },
         {
           "id": "c",
-          "text": "A combined footing is always cheaper than two isolated footings, offering a cost-effective solution for certain projects"
+          "text": "A wall footing is only lateral bracing, while a mat is only a finish slab."
         },
         {
           "id": "d",
-          "text": "Combined footings are used for lateral bracing; mats are used for bearing, each serving distinct structural purposes"
+          "text": "Mats are used only when soil bearing capacity is unlimited."
         }
       ],
       "correct_option_id": "b",
@@ -233,17 +269,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A combined footing ties two (or more) columns together with a single reinforced concrete slab, reducing eccentric loading and ensuring uniform settlement beneath the two columns. A mat is a similar slab but covers many columns (or the entire footprint), distributing load across a much larger area. Combined footings are intermediate solutions; mats are comprehensive load-spreading systems.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All three are the same, with no functional distinction. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "A column footing is point support, a wall footing is line support, and a mat foundation is plane support for many columns or a large footprint. This stays inside the Batch 148 local source boundary.",
+        "c": "A wall footing is only lateral bracing, while a mat is only a finish slab. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Mats are used only when soil bearing capacity is unlimited. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "A column footing is point support, a wall footing is line support, and a mat foundation is plane support for many columns or a large footprint. Supported by bsi-masonry-foundation-grids.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Combined and Mat Foundations)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 743-751 and 1890-1900.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +296,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0e9fb49590bab9c417562d27ceb755ec290cb31b378f6912888a0de29915c42d"
+      "content_hash": "sha256:544b12f227f955f67db8eaeb733690518c3c8065645359cd54dea53d2996bde4"
     },
     {
       "question_id": "fb83458b-d990-4b58-bd7f-4d2b25de3fc5",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "A 3-story low-cost residential building (500 kN total weight) is designed on a site with compressible clay 4 m deep and an excavation area of 200 m². The soil weight of excavated material is estimated at 4000 kN (20 kN/m³ × 200 m² × 1 m avg depth). Determine if a floating foundation is viable for this building and calculate the net stress increase (or decrease) at foundation level.",
+      "text": "A site has variable soil bearing capacity, and isolated footings are likely to settle differently. Which source-backed foundation response is most appropriate to evaluate?",
       "options": [
         {
           "id": "a",
-          "text": "Floating foundation is not viable; the structure is too heavy (500 kN > typical floating building limits), and additional measures are required to ensure stability."
+          "text": "Ignore the variability because any shallow footing is acceptable if it is cheaper."
         },
         {
           "id": "b",
-          "text": "Floating foundation is viable. Net stress = (500 kN − 4000 kN) / 200 m² = −17.5 kN/m². The negative value indicates that the excavation weight exceeds structure weight, creating a net _reduction_ in stress. This is excellent for minimizing settlement."
+          "text": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement."
         },
         {
           "id": "c",
-          "text": "Floating foundation is viable. Net stress = (500 kN + 4000 kN) / 200 m² = 22.5 kN/m². Stress increases, so floating is ineffective, and alternative foundation solutions should be considered."
+          "text": "Add the structure weight and excavated soil weight to claim a specialty foundation balance without source support."
         },
         {
           "id": "d",
-          "text": "Floating foundation is impossible; stress always increases under buildings, regardless of excavation or soil conditions."
+          "text": "Assume settlement is impossible under reinforced concrete."
         }
       ],
       "correct_option_id": "b",
@@ -283,17 +327,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A floating foundation is viable when excavation weight ≥ structure weight. Here, excavation (4000 kN) >> structure (500 kN). Net change in stress = (500 − 4000) / 200 = −17.5 kN/m², meaning stress is actually _reduced_ below the original ground stress. This is ideal for minimal settlement. The building is literally lighter than the soil it removes, so consolidation is minimal or even rebounds slightly occur. This demonstrates the floating foundation principle perfectly.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Ignore the variability because any shallow footing is acceptable if it is cheaper. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement. This stays inside the Batch 148 local source boundary.",
+        "c": "Add the structure weight and excavated soil weight to claim a specialty foundation balance without source support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Assume settlement is impossible under reinforced concrete. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement. Supported by bsi-masonry-foundation-grids, foundation-engineering-serviceability.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-serviceability",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids",
+          "foundation-engineering-serviceability"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Floating Foundation Design)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 1890-1900; Foundation Engineering lines 1048-1088.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-serviceability"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +356,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1995b9ae000286bf0e8291a88197b5589a930fbd8955babb422a6cc77061a187"
+      "content_hash": "sha256:3df28b02f7ffd2409497f5d3592c88086fa0f7e75fae02b4ee58b24a9ebe28c0"
     },
     {
       "question_id": "ed656ad5-af59-47d2-b0fd-9279f449f71c",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "A mixed-use development includes a 15-story tower and a 2-story retail podium on the same site with variable soil conditions: soft clay (0–20 m), stiff clay (20–40 m), and sand (40 m+). The tower and podium loads are very different. Propose a foundation strategy that accommodates both structures and justify.",
+      "text": "A heavier tower and lighter podium share a site with different load demands and variable ground conditions. Which strategy best follows the captured source logic?",
       "options": [
         {
           "id": "a",
-          "text": "Use shallow footings for both; cost is minimized, but differential settlement may occur due to varying loads and soil conditions"
+          "text": "Use shallow footings everywhere solely to minimize initial cost."
         },
         {
           "id": "b",
-          "text": "Use deep piles for both; this avoids all differentiation, but may be unnecessarily costly for the podium"
+          "text": "Use deep piles everywhere without checking whether the lighter portion has adequate shallow support."
         },
         {
           "id": "c",
-          "text": "Tower: deep pile foundation to firm sand at 40 m (or friction piles in stiff clay), bypassing soft clay. Podium: shallow footing on compacted fill or intermediate-depth footing in stiff clay (20–25 m), if bearing capacity is adequate. Separate foundations allow each structure to be designed for its own load and settlement tolerance. Differential settlement between tower and podium is managed by proper design depth selection and settlement analysis."
+          "text": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it."
         },
         {
           "id": "d",
-          "text": "Combine both structures under a unified mat; it is always the best solution, though it may not address differential settlement effectively"
+          "text": "Use one arbitrary mat everywhere because mats always eliminate differential settlement."
         }
       ],
       "correct_option_id": "c",
@@ -333,17 +387,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Different structures with different loads and settlement tolerances require different foundation depths and types. The tower's heavy load and strict tolerance mandate piles to firm strata or deep friction piles. The lighter podium can be shallower (footing in stiff clay at 20–25 m depth) if bearing capacity allows. This strategy optimizes cost and performance. Differential settlement between tower and podium is a design consideration (isolation, expansion joints, structural details) but is manageable with proper planning.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Use shallow footings everywhere solely to minimize initial cost. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Use deep piles everywhere without checking whether the lighter portion has adequate shallow support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "c": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it. This stays inside the Batch 148 local source boundary.",
+        "d": "Use one arbitrary mat everywhere because mats always eliminate differential settlement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Select support by load, soil bearing capacity, and settlement: the heavier portion may need mat or pile support, while lighter areas may use spread support if soil capacity and settlement checks allow it. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids",
+          "foundation-engineering-piles"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Foundation Design Strategies)",
+      "code_citation": "Local source boundary: BSI lines 1890-1900; Foundation Engineering lines 1040-1088, 23345-23395.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-piles"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +416,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:36a90dba666bec0ab29e73bba815f469799dd039b4e339b2909b53918ec002fc"
+      "content_hash": "sha256:761ed9852672976736600d092be52a9d6ef9813393853aa57eb83398a8252c09"
     },
     {
       "question_id": "955ac82c-c550-4ea5-85d3-c42dd66215d9",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "An engineer is designing a 10-story office building on a site with firm soil at shallow depth (bearing capacity 300 kN/m²). Shallow footing design is feasible from a bearing capacity standpoint, but settlement analysis shows differential settlement of 150 mm between corner columns and center columns. Recommend a revised foundation approach and justify.",
+      "text": "A shallow footing scheme appears stable against failure, but predicted settlement would impair building performance. What revision is source-safe to consider?",
       "options": [
         {
           "id": "a",
-          "text": "Proceed with isolated footings; 150 mm settlement is acceptable for all buildings, including those with flexible structural systems"
+          "text": "Proceed because stability against failure is the only foundation requirement."
         },
         {
           "id": "b",
-          "text": "Reduce building height to decrease load; settlement will reduce proportionally, though this may not be feasible for the intended use"
+          "text": "Reduce building height without checking the foundation system."
         },
         {
           "id": "c",
-          "text": "Replace isolated footings with a mat foundation. A mat provides stiffness and reduces differential settlement by distributing load uniformly across the footprint. For an office building where differential settlement > 80–100 mm can cause cracking and functional issues, a mat is superior despite higher cost."
+          "text": "Consider a mat or deep foundation strategy because serviceability settlement can govern even when strength appears adequate."
         },
         {
           "id": "d",
-          "text": "Increase footing width indefinitely; width has no effect on settlement, but may affect other design parameters"
+          "text": "Increase footing width indefinitely because settlement is unrelated to foundation geometry."
         }
       ],
       "correct_option_id": "c",
@@ -383,17 +447,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "150 mm differential settlement is excessive for a 10-story office building; it causes cracking, misalignment of doors/windows, structural distress, and functional problems. Although shallow bearing capacity is adequate, settlement control is inadequate. A mat foundation unifies all columns, reduces differential settlement significantly, and is the correct solution. Cost is justified by avoiding cracking, repairs, and functional issues.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Proceed because stability against failure is the only foundation requirement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Reduce building height without checking the foundation system. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "c": "Consider a mat or deep foundation strategy because serviceability settlement can govern even when strength appears adequate. This stays inside the Batch 148 local source boundary.",
+        "d": "Increase footing width indefinitely because settlement is unrelated to foundation geometry. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Consider a mat or deep foundation strategy because serviceability settlement can govern even when strength appears adequate. Supported by bsi-masonry-foundation-grids, foundation-engineering-serviceability.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-serviceability",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids",
+          "foundation-engineering-serviceability"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Settlement Control); Bowles (1996)",
+      "code_citation": "Local source boundary: Foundation Engineering lines 1048-1088; BSI lines 1890-1900.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-serviceability"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +476,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5e5dc724ada1b7411dc7caa654bdda38c67e79229b47733c1f1a11607fddc62f"
+      "content_hash": "sha256:e57f8cd06698a76e8198694b9301b7d100a213875a310bf0b04b641d162ae65f"
     },
     {
       "question_id": "1432eed5-ec63-4001-9adb-79a627965dcd",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "A floating foundation design aims to minimize settlement. Explain the principle of a floating foundation and state the condition required for viability.",
+      "text": "A review question asks why a mat foundation may be selected instead of many individual interior column footings. Which answer is supported by the local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Floating foundations float on water; they are used for waterfront structures only, where buoyancy can be utilized to support the structure"
+          "text": "A mat foundation floats on water and is used only for waterfront structures."
         },
         {
           "id": "b",
-          "text": "A floating foundation is a deep mat or plate placed at sufficient depth that the weight of excavated soil removed equals (or nearly equals) the weight of the superstructure. The net stress increase on the soil is minimal, theoretically reducing settlement to near zero. Viability requires: structure is light, soil is deep and compressible, and Df is sufficient to balance excavation and structure weight."
+          "text": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary."
         },
         {
           "id": "c",
-          "text": "Floating foundations are ordinary mat foundations with no specific design criteria, typically used in standard construction without special considerations"
+          "text": "A mat is an ordinary finish slab with no bearing role."
         },
         {
           "id": "d",
-          "text": "Floating foundations prevent all settlement; they require no settlement calculations, as they are designed to be completely stable under all conditions"
+          "text": "A mat prevents all settlement and requires no design checks."
         }
       ],
       "correct_option_id": "b",
@@ -433,17 +507,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A floating foundation is designed such that the weight of excavated soil roughly equals the weight of the structure. This reduces the _net_ pressure increase on the soil beneath the foundation to near zero, minimizing consolidation settlement. Floating foundations work only for light structures (low-rise residential, small buildings) and are practical in compressible clay where excavation weight is substantial. Very tall or heavy structures cannot float effectively.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A mat foundation floats on water and is used only for waterfront structures. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary. This stays inside the Batch 148 local source boundary.",
+        "c": "A mat is an ordinary finish slab with no bearing role. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "A mat prevents all settlement and requires no design checks. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary. Supported by bsi-masonry-foundation-grids.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Floating Foundation Design)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 743-751 and 1890-1900.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids"
+      ],
       "difficulty": 0.9,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +534,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cd898289e367ded5904d29c456e172784d61c74b2b4118553440d3d243044465"
+      "content_hash": "sha256:cae5641aa67edad5d3060072f7bbe491b30dc4f4f625a7c315eccbb38f944a3c"
     },
     {
       "question_id": "ed74d187-6ab5-435c-815e-9857039ae820",
       "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
       "topic_id": "e2026222-a27a-4107-ac89-eb23080863ae",
-      "text": "A building site has soft clay to 35 m depth with bearing capacity 60 kN/m² at shallow depth. Name the suitable foundation type and explain why shallow footings are not viable.",
+      "text": "A building load exceeds the bearing capacity of the supporting soil near the surface. Which foundation type is suitable to evaluate first, and why?",
       "options": [
         {
           "id": "a",
-          "text": "Shallow footing; bearing capacity 60 kN/m² is acceptable for any building, though it may lead to excessive settlement in soft clay"
+          "text": "Shallow footing, because any low bearing capacity can be ignored if the building is small."
         },
         {
           "id": "b",
-          "text": "Shallow footing with deep soil improvement (grouting); cost is equivalent to deep piles, but may not provide adequate long-term stability"
+          "text": "Shallow footing with no settlement check, because serviceability is outside foundation design."
         },
         {
           "id": "c",
-          "text": "Deep pile foundation; soft clay offers no firm shallow bearing stratum, and friction piles develop capacity over the 35 m shaft. Bearing capacity 60 kN/m² is too low for economical wide footings, and settlement would be excessive and time-dependent."
+          "text": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate."
         },
         {
           "id": "d",
-          "text": "Floating foundation; the building is floating on the soft clay without settlement, though this is rarely practical for large structures"
+          "text": "A specialty excavation-balance system, because every building reduces soil stress after excavation."
         }
       ],
       "correct_option_id": "c",
@@ -483,17 +565,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "With 35 m of soft clay and bearing capacity only 60 kN/m², shallow footings would require very large areas (footing width B >> footing depth Df) to distribute load, making them uneconomical. Differential settlement would be significant and uncontrolled. Piles or caissons are mandatory. Friction piles develop capacity along the 35 m depth. This is the standard condition in deep alluvial deposits like Metro Manila.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Shallow footing, because any low bearing capacity can be ignored if the building is small. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Shallow footing with no settlement check, because serviceability is outside foundation design. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "c": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate. This stays inside the Batch 148 local source boundary.",
+        "d": "A specialty excavation-balance system, because every building reduces soil stress after excavation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+        "checked_sources": [
+          "bsi-masonry-foundation-grids",
+          "foundation-engineering-piles"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Deep Foundations)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 1890-1900; Foundation Engineering lines 22935-22971.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-piles"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +594,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a407206dca9b58de95d8df2a658aa75bb1e2b9bca821aea14bea12ec7c7193c8"
+      "content_hash": "sha256:472e633e921fdf5388ae728eb311851fd8f1f7e97fd4e61d650aa3be965b01c0"
     }
   ]
 }

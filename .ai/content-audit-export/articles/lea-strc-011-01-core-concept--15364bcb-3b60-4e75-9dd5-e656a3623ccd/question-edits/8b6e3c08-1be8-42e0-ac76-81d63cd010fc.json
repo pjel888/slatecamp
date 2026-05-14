@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "cluster_id": "lea-strc-011-01",
+  "question_id": "8b6e3c08-1be8-42e0-ac76-81d63cd010fc",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:9b17d9f6f8b9ea433661a26d090e3fd01d23b5b8fb5f8ec6df7a542af94a9070",
+  "after_hash": "sha256:9b17d9f6f8b9ea433661a26d090e3fd01d23b5b8fb5f8ec6df7a542af94a9070",
+  "baseline_hash": "sha256:9b17d9f6f8b9ea433661a26d090e3fd01d23b5b8fb5f8ec6df7a542af94a9070",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-piles",
+    "bsi-masonry-foundation-grids"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A site lacks suitable shallow bearing material, but a pile system can develop support through shaft friction and toe resistance. Which answer matches the source-backed selection logic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use a toe-bearing pile only and ignore pile caps for group behavior."
+      },
+      {
+        "id": "b",
+        "text": "Use a pile foundation selected for the actual ground conditions; capacity may come from shaft friction, toe resistance, or both, and pile groups need cap/load-distribution design."
+      },
+      {
+        "id": "c",
+        "text": "Either pile type is chosen by diameter alone."
+      },
+      {
+        "id": "d",
+        "text": "Use a shallow footing because deep foundations cannot transfer load by friction."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Use a toe-bearing pile only and ignore pile caps for group behavior. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Use a pile foundation selected for the actual ground conditions; capacity may come from shaft friction, toe resistance, or both, and pile groups need cap/load-distribution design. This stays inside the Batch 148 local source boundary.",
+      "c": "Either pile type is chosen by diameter alone. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "Use a shallow footing because deep foundations cannot transfer load by friction. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Use a pile foundation selected for the actual ground conditions; capacity may come from shaft friction, toe resistance, or both, and pile groups need cap/load-distribution design. Supported by foundation-engineering-piles, bsi-masonry-foundation-grids.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "foundation-engineering-piles, bsi-masonry-foundation-grids",
+      "checked_sources": [
+        "foundation-engineering-piles",
+        "bsi-masonry-foundation-grids"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI refined markdown lines 1890-1900; Foundation Engineering lines 22935-22971, 23345-23395.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "foundation-engineering-piles",
+      "bsi-masonry-foundation-grids"
+    ]
+  },
+  "rationale": {
+    "a": "Use a toe-bearing pile only and ignore pile caps for group behavior. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Use a pile foundation selected for the actual ground conditions; capacity may come from shaft friction, toe resistance, or both, and pile groups need cap/load-distribution design. This stays inside the Batch 148 local source boundary.",
+    "c": "Either pile type is chosen by diameter alone. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "Use a shallow footing because deep foundations cannot transfer load by friction. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Use a pile foundation selected for the actual ground conditions; capacity may come from shaft friction, toe resistance, or both, and pile groups need cap/load-distribution design. Supported by foundation-engineering-piles, bsi-masonry-foundation-grids.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "foundation-engineering-piles, bsi-masonry-foundation-grids",
+    "checked_sources": [
+      "foundation-engineering-piles",
+      "bsi-masonry-foundation-grids"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "cluster_id": "lea-strc-011-01",
+  "question_id": "1069929b-de3f-4d2a-80f1-9f20a14c2386",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:e53dc422716cbed3e614566de3081655953f5c194ac3d89ad8c5f0570fdba4ac",
+  "after_hash": "sha256:e53dc422716cbed3e614566de3081655953f5c194ac3d89ad8c5f0570fdba4ac",
+  "baseline_hash": "sha256:e53dc422716cbed3e614566de3081655953f5c194ac3d89ad8c5f0570fdba4ac",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-piles",
+    "foundation-engineering-serviceability"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A pile load test indicates that most of the pile-head load is transferred along the shaft rather than at the toe. Which interpretation matches the local foundation engineering source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pile is automatically superior to all other pile types and settlement checks are unnecessary."
+      },
+      {
+        "id": "b",
+        "text": "The pile behaves primarily as a friction pile; design still needs settlement and performance review because ground displacement can govern serviceability."
+      },
+      {
+        "id": "c",
+        "text": "The pile behavior depends only on diameter, not load transfer."
+      },
+      {
+        "id": "d",
+        "text": "The pile has no settlement because shaft friction is distributed."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The pile is automatically superior to all other pile types and settlement checks are unnecessary. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "The pile behaves primarily as a friction pile; design still needs settlement and performance review because ground displacement can govern serviceability. This stays inside the Batch 148 local source boundary.",
+      "c": "The pile behavior depends only on diameter, not load transfer. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "The pile has no settlement because shaft friction is distributed. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "The pile behaves primarily as a friction pile; design still needs settlement and performance review because ground displacement can govern serviceability. Supported by foundation-engineering-piles, foundation-engineering-serviceability.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "foundation-engineering-piles, foundation-engineering-serviceability",
+      "checked_sources": [
+        "foundation-engineering-piles",
+        "foundation-engineering-serviceability"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined markdown lines 22959-22971, 23443-23545, 1048-1088.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "foundation-engineering-piles",
+      "foundation-engineering-serviceability"
+    ]
+  },
+  "rationale": {
+    "a": "The pile is automatically superior to all other pile types and settlement checks are unnecessary. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "The pile behaves primarily as a friction pile; design still needs settlement and performance review because ground displacement can govern serviceability. This stays inside the Batch 148 local source boundary.",
+    "c": "The pile behavior depends only on diameter, not load transfer. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "The pile has no settlement because shaft friction is distributed. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "The pile behaves primarily as a friction pile; design still needs settlement and performance review because ground displacement can govern serviceability. Supported by foundation-engineering-piles, foundation-engineering-serviceability.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "foundation-engineering-piles, foundation-engineering-serviceability",
+    "checked_sources": [
+      "foundation-engineering-piles",
+      "foundation-engineering-serviceability"
+    ]
+  }
+}

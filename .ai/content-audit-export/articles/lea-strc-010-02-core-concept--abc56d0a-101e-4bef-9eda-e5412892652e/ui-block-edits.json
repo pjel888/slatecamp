@@ -1,11 +1,48 @@
 {
   "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
   "slug": "lea-strc-010-02-core-concept",
-  "generated_at": "2026-05-09T17:04:25.877Z",
+  "generated_at": "2026-05-14T03:21:48.604Z",
   "parser_version": "ui-block-parser-v1",
-  "edit_count": 0,
-  "edits": [],
+  "edit_count": 4,
+  "edits": [
+    {
+      "block_id": "ui_0001",
+      "status": "approved",
+      "raw_hash": "sha256:bf7f146c690fb8cb489f9d22612448c3039d6cb66c7e4eea04f4b29e30e9f468",
+      "proposed_raw": "<ArticleMedia id=\"media-lea-strc-010-02-core-concept\" type=\"image\" caption=\"Masonry Unit and CHB Source Boundary\" description=\"Diagram comparing one masonry unit, a two-or-three-cell CHB, full mortar bedding, 10 mm joints, and a reinforced cell filled with cement mortar. Labels the local lecture size family: 100 mm, 150 mm, and 200 mm thickness by 200 mm height by 400 mm length.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    },
+    {
+      "block_id": "ui_0002",
+      "status": "approved",
+      "raw_hash": "sha256:6e7fc04fcefd5e6b520b98b0ba4faf2d8d11bc34e03154842b257cb3a451da9d",
+      "proposed_raw": "<Tip>\n\nMemory aid: unit, cells, bed, fill. CHB is a cement-and-aggregate masonry unit with two or three cells; the local lecture size family is 100/150/200 mm by 200 mm by 400 mm; CHB is laid on a full mortar bed, and reinforced cells are filled.\n\n</Tip>",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    },
+    {
+      "block_id": "ui_0003",
+      "status": "approved",
+      "raw_hash": "sha256:6bde6103b7090f4c7510444d7a0b2e80fa434bc776bc938d1779da0a8ae38276",
+      "proposed_raw": "<Warn>\n\nKeep CHB answers inside the captured source boundary. This batch does not support net-area percentages, allowable stresses, code section numbers, or supplier-specific bearing values.\n\n</Warn>",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    },
+    {
+      "block_id": "ui_0004",
+      "status": "approved",
+      "raw_hash": "sha256:dc94fecb6b885468f59dac4d0cce3d8a6bc1a87b1f508207e6782753ce425726",
+      "proposed_raw": "<WikiMistakeList mistakes={[\n  \"Importing a hollow-versus-solid percentage threshold when the local source only supports CHB cells, composition, dimensions, mortar bedding, and reinforced-cell fill.\",\n  \"Using supplier net area, bearing stress, or allowable strength values without a project specification or cited source.\",\n  \"Treating 100 mm CHB as exterior wall material when the local lecture limits it to interior partitions where weather-tightness is not required.\",\n  \"Assuming every CHB cell is reinforced or filled; the source only says cells containing reinforcement are filled with cement mortar.\",\n  \"Confusing one masonry unit with the complete wall assembly.\",\n  \"Forgetting that full mortar bedding and 10 mm joints are part of the source-backed workmanship check.\"\n]} />",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    }
+  ],
   "warnings": [
-    "Intentional UI block edits are not part of the current milestone. Preserve raw UI block content unless a future audited workflow explicitly records edits here."
+    "Original article exports contained SlateCamp placeholders without block ownership records; Batch 148 reconstructs source-safe UI blocks so candidate composition is marker-free."
   ]
 }

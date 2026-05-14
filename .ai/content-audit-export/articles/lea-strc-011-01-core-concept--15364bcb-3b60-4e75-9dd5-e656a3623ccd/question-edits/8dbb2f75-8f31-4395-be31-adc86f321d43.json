@@ -1,0 +1,69 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "cluster_id": "lea-strc-011-01",
+  "question_id": "8dbb2f75-8f31-4395-be31-adc86f321d43",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:51bf2a91daf3c388a3f28e5b12bdfe2d9c963cf54b807fdd3fb20bd6aa99f18a",
+  "after_hash": "sha256:51bf2a91daf3c388a3f28e5b12bdfe2d9c963cf54b807fdd3fb20bd6aa99f18a",
+  "baseline_hash": "sha256:51bf2a91daf3c388a3f28e5b12bdfe2d9c963cf54b807fdd3fb20bd6aa99f18a",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A lateral support detail for a sheet pile wall uses inclined support piles outside the active soil zone. Which statement stays inside the captured source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vertical toe-bearing piles are the only possible lateral support because inclination is never used."
+      },
+      {
+        "id": "b",
+        "text": "Friction piles must always be inclined at one fixed slope for every site."
+      },
+      {
+        "id": "c",
+        "text": "Vertical or battered piles may be used as lateral support elements, but the source does not prescribe one universal batter slope."
+      },
+      {
+        "id": "d",
+        "text": "Sheet piles carry the building column load, so no separate support design is needed."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Vertical toe-bearing piles are the only possible lateral support because inclination is never used. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Friction piles must always be inclined at one fixed slope for every site. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "c": "Vertical or battered piles may be used as lateral support elements, but the source does not prescribe one universal batter slope. This stays inside the Batch 148 local source boundary.",
+      "d": "Sheet piles carry the building column load, so no separate support design is needed. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Vertical or battered piles may be used as lateral support elements, but the source does not prescribe one universal batter slope. Supported by foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "foundation-engineering-piles",
+      "checked_sources": [
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined markdown line 20676.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "Vertical toe-bearing piles are the only possible lateral support because inclination is never used. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Friction piles must always be inclined at one fixed slope for every site. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "c": "Vertical or battered piles may be used as lateral support elements, but the source does not prescribe one universal batter slope. This stays inside the Batch 148 local source boundary.",
+    "d": "Sheet piles carry the building column load, so no separate support design is needed. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Vertical or battered piles may be used as lateral support elements, but the source does not prescribe one universal batter slope. Supported by foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "foundation-engineering-piles",
+    "checked_sources": [
+      "foundation-engineering-piles"
+    ]
+  }
+}

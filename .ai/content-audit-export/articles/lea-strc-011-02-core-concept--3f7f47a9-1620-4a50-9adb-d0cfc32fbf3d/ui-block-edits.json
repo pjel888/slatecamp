@@ -1,11 +1,48 @@
 {
   "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
   "slug": "lea-strc-011-02-core-concept",
-  "generated_at": "2026-05-09T17:04:24.225Z",
+  "generated_at": "2026-05-14T03:21:48.604Z",
   "parser_version": "ui-block-parser-v1",
-  "edit_count": 0,
-  "edits": [],
+  "edit_count": 4,
+  "edits": [
+    {
+      "block_id": "ui_0001",
+      "status": "approved",
+      "raw_hash": "sha256:2e3b69848226b6a0bf3093bfdecdc0c405516855a29d0206aa62863fcd4dbb56",
+      "proposed_raw": "<ArticleMedia id=\"media-lea-strc-011-02-core-concept\" type=\"image\" caption=\"Foundation Selection Source Boundary\" description=\"Decision diagram showing shallow or spread support where stable near-surface soil has adequate capacity, mat foundation as a load-spreading slab for many supports or variable soil, and piles or caissons when loads exceed shallow soil bearing capacity.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    },
+    {
+      "block_id": "ui_0002",
+      "status": "approved",
+      "raw_hash": "sha256:ceb2bd61027e175fb45cde227498a0159fa5b91d7ae1e17b73b1ce5a102974ea",
+      "proposed_raw": "<Tip>\n\nMemory aid: spread, mat, deep, settle. Spread foundations need adequate near-surface support; mats merge and distribute loads to reduce differential settlement; piles or caissons are evaluated when shallow bearing is inadequate; serviceability settlement can still govern.\n\n</Tip>",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    },
+    {
+      "block_id": "ui_0003",
+      "status": "approved",
+      "raw_hash": "sha256:b422c218badf9f95f309506b6c045eb0487f8a232781acec9247e522b34a5f7f",
+      "proposed_raw": "<Warn>\n\nAvoid unsupported depth limits, formula-style depth rules, concrete-cover citations, settlement tolerances, and specialty-foundation calculations. Use soil bearing capacity, load distribution, and settlement behavior from the captured sources.\n\n</Warn>",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    },
+    {
+      "block_id": "ui_0004",
+      "status": "approved",
+      "raw_hash": "sha256:1c6fd16b4b588a1b0ed12ae3bae703049417ccc9b5c8412b606c1d9c2ec8fbc6",
+      "proposed_raw": "<WikiMistakeList mistakes={[\n  \"Choosing shallow or deep support from a memorized depth number instead of soil capacity and load-transfer conditions.\",\n  \"Calling a mat foundation a finish slab; the captured source treats it as a thick reinforced foundation slab.\",\n  \"Assuming stability against failure is enough even when settlement would impair building performance.\",\n  \"Selecting piles only because a building is important, without checking whether shallow support is adequate.\",\n  \"Adding concrete-cover or code-section citations that were not captured for this batch.\",\n  \"Using specialty-foundation calculations without source support.\"\n]} />",
+      "reason": "Batch 148 reconstructed source-safe UI block raw from pre-existing SlateCamp placeholder metadata.",
+      "approved_by": "batch-148-local-first-worker",
+      "approved_at": "2026-05-14T03:21:48.604Z"
+    }
+  ],
   "warnings": [
-    "Intentional UI block edits are not part of the current milestone. Preserve raw UI block content unless a future audited workflow explicitly records edits here."
+    "Original article exports contained SlateCamp placeholders without block ownership records; Batch 148 reconstructs source-safe UI blocks so candidate composition is marker-free."
   ]
 }

@@ -1,0 +1,45 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "generated_at": "2026-05-14T03:21:48.604Z",
+  "status": "passed_local_validation_git_handoff_ready",
+  "articles": [
+    {
+      "cluster_id": "lea-strc-010-02",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "title": "Masonry unit",
+      "source_ids": [
+        "masonry-lecture-chb-units",
+        "bsi-masonry-foundation-grids"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:8aa24bcbc9dcf6c7d084c35570b279a5d813a011b84ab4f76274fec86f99c029",
+      "candidate_sha256": "sha256:3356210209abe44a4fccc3206fb951593806c23700d4c3ed98416a22b8cc0da2"
+    },
+    {
+      "cluster_id": "lea-strc-011-01",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "title": "Pile is a slender structural element driven or drilled",
+      "source_ids": [
+        "foundation-engineering-piles",
+        "bsi-masonry-foundation-grids"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:7b653cdeda963aa95abb83e40c92c115e4a3151c343689fbe89e7bb5e877a79d",
+      "candidate_sha256": "sha256:eeb933651f378387726fe53b6302fd0ff22e2e08da56bd2d39cfebadc1892e92"
+    },
+    {
+      "cluster_id": "lea-strc-011-02",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "title": "Foundation",
+      "source_ids": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-serviceability",
+        "foundation-engineering-piles"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:5883a9a04cce6764b826f3be2bcd2f2472f20042e5ceea7ca53794ef3e905bb1",
+      "candidate_sha256": "sha256:19a1cdc6a16cbbe0a03fb447a7ccacf62db509ccc7bc1ea3fdb57555bcc584c1"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "cluster_id": "lea-strc-011-02",
+  "question_id": "ed74d187-6ab5-435c-815e-9857039ae820",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:472e633e921fdf5388ae728eb311851fd8f1f7e97fd4e61d650aa3be965b01c0",
+  "after_hash": "sha256:472e633e921fdf5388ae728eb311851fd8f1f7e97fd4e61d650aa3be965b01c0",
+  "baseline_hash": "sha256:472e633e921fdf5388ae728eb311851fd8f1f7e97fd4e61d650aa3be965b01c0",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-masonry-foundation-grids",
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A building load exceeds the bearing capacity of the supporting soil near the surface. Which foundation type is suitable to evaluate first, and why?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shallow footing, because any low bearing capacity can be ignored if the building is small."
+      },
+      {
+        "id": "b",
+        "text": "Shallow footing with no settlement check, because serviceability is outside foundation design."
+      },
+      {
+        "id": "c",
+        "text": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate."
+      },
+      {
+        "id": "d",
+        "text": "A specialty excavation-balance system, because every building reduces soil stress after excavation."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Shallow footing, because any low bearing capacity can be ignored if the building is small. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Shallow footing with no settlement check, because serviceability is outside foundation design. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "c": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate. This stays inside the Batch 148 local source boundary.",
+      "d": "A specialty excavation-balance system, because every building reduces soil stress after excavation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+      "checked_sources": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI refined markdown lines 1890-1900; Foundation Engineering lines 22935-22971.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "Shallow footing, because any low bearing capacity can be ignored if the building is small. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Shallow footing with no settlement check, because serviceability is outside foundation design. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "c": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate. This stays inside the Batch 148 local source boundary.",
+    "d": "A specialty excavation-balance system, because every building reduces soil stress after excavation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Pile or caisson foundation, because loads must be transferred to more suitable material or carried through pile-soil resistance when shallow bearing is inadequate. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+    "checked_sources": [
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  }
+}

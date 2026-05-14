@@ -1,0 +1,69 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "cluster_id": "lea-strc-011-01",
+  "question_id": "d2958d29-592e-48b5-97ca-dbbd49348012",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:174625d68ff8cd8b66ffcff6dd722d7e2acfd7f59dfb7ccaa4a5247e21ad14fe",
+  "after_hash": "sha256:174625d68ff8cd8b66ffcff6dd722d7e2acfd7f59dfb7ccaa4a5247e21ad14fe",
+  "baseline_hash": "sha256:174625d68ff8cd8b66ffcff6dd722d7e2acfd7f59dfb7ccaa4a5247e21ad14fe",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A pile transfers most of the pile-head load through friction along the shaft and only a smaller portion through toe resistance. How should it be classified by load-transfer mechanism?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toe-bearing pile, because all deep piles bear only at the toe."
+      },
+      {
+        "id": "b",
+        "text": "Friction pile, because most load is transferred to surrounding soil through friction along the pile shaft."
+      },
+      {
+        "id": "c",
+        "text": "Batter pile, because all friction piles are inclined."
+      },
+      {
+        "id": "d",
+        "text": "Sheet pile, because all shaft friction belongs to retaining walls."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Toe-bearing pile, because all deep piles bear only at the toe. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Friction pile, because most load is transferred to surrounding soil through friction along the pile shaft. This stays inside the Batch 148 local source boundary.",
+      "c": "Batter pile, because all friction piles are inclined. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "Sheet pile, because all shaft friction belongs to retaining walls. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Friction pile, because most load is transferred to surrounding soil through friction along the pile shaft. Supported by foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "foundation-engineering-piles",
+      "checked_sources": [
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined markdown lines 22959-22971 and 23443-23545.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "Toe-bearing pile, because all deep piles bear only at the toe. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Friction pile, because most load is transferred to surrounding soil through friction along the pile shaft. This stays inside the Batch 148 local source boundary.",
+    "c": "Batter pile, because all friction piles are inclined. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "Sheet pile, because all shaft friction belongs to retaining walls. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Friction pile, because most load is transferred to surrounding soil through friction along the pile shaft. Supported by foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "foundation-engineering-piles",
+    "checked_sources": [
+      "foundation-engineering-piles"
+    ]
+  }
+}

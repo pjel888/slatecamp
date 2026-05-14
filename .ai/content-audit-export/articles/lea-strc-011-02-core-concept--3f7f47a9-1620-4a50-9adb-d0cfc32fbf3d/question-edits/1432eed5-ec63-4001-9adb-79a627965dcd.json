@@ -1,0 +1,69 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "cluster_id": "lea-strc-011-02",
+  "question_id": "1432eed5-ec63-4001-9adb-79a627965dcd",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:cae5641aa67edad5d3060072f7bbe491b30dc4f4f625a7c315eccbb38f944a3c",
+  "after_hash": "sha256:cae5641aa67edad5d3060072f7bbe491b30dc4f4f625a7c315eccbb38f944a3c",
+  "baseline_hash": "sha256:cae5641aa67edad5d3060072f7bbe491b30dc4f4f625a7c315eccbb38f944a3c",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-masonry-foundation-grids"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A review question asks why a mat foundation may be selected instead of many individual interior column footings. Which answer is supported by the local source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A mat foundation floats on water and is used only for waterfront structures."
+      },
+      {
+        "id": "b",
+        "text": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary."
+      },
+      {
+        "id": "c",
+        "text": "A mat is an ordinary finish slab with no bearing role."
+      },
+      {
+        "id": "d",
+        "text": "A mat prevents all settlement and requires no design checks."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "A mat foundation floats on water and is used only for waterfront structures. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary. This stays inside the Batch 148 local source boundary.",
+      "c": "A mat is an ordinary finish slab with no bearing role. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "A mat prevents all settlement and requires no design checks. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary. Supported by bsi-masonry-foundation-grids.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-masonry-foundation-grids",
+      "checked_sources": [
+        "bsi-masonry-foundation-grids"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI refined markdown lines 743-751 and 1890-1900.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "bsi-masonry-foundation-grids"
+    ]
+  },
+  "rationale": {
+    "a": "A mat foundation floats on water and is used only for waterfront structures. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary. This stays inside the Batch 148 local source boundary.",
+    "c": "A mat is an ordinary finish slab with no bearing role. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "A mat prevents all settlement and requires no design checks. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "A mat is a thick, heavily reinforced concrete slab that can serve as one monolithic footing when individual footings become too large or settlement would vary. Supported by bsi-masonry-foundation-grids.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-masonry-foundation-grids",
+    "checked_sources": [
+      "bsi-masonry-foundation-grids"
+    ]
+  }
+}

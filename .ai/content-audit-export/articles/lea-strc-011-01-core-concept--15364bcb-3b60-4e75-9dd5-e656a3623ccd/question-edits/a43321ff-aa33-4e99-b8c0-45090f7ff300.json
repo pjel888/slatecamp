@@ -1,0 +1,69 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "cluster_id": "lea-strc-011-01",
+  "question_id": "a43321ff-aa33-4e99-b8c0-45090f7ff300",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:6cfc68192a284c84ecb841c832a8f9cb0d1657e611ed9856e394505975e8470a",
+  "after_hash": "sha256:6cfc68192a284c84ecb841c832a8f9cb0d1657e611ed9856e394505975e8470a",
+  "baseline_hash": "sha256:6cfc68192a284c84ecb841c832a8f9cb0d1657e611ed9856e394505975e8470a",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A problem asks about a pile installed at an inclination to help a lateral support system. What is the source-safe design implication?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The inclination is arbitrary and has no effect on load direction or detailing."
+      },
+      {
+        "id": "b",
+        "text": "All lateral force is ignored once a pile is inclined."
+      },
+      {
+        "id": "c",
+        "text": "Inclination is a design choice for lateral support, so the engineer must resolve forces and choose the angle for the actual support condition."
+      },
+      {
+        "id": "d",
+        "text": "Inclination reverses the direction of the lateral load automatically."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "The inclination is arbitrary and has no effect on load direction or detailing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "All lateral force is ignored once a pile is inclined. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "c": "Inclination is a design choice for lateral support, so the engineer must resolve forces and choose the angle for the actual support condition. This stays inside the Batch 148 local source boundary.",
+      "d": "Inclination reverses the direction of the lateral load automatically. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Inclination is a design choice for lateral support, so the engineer must resolve forces and choose the angle for the actual support condition. Supported by foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "foundation-engineering-piles",
+      "checked_sources": [
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined markdown line 20676.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "The inclination is arbitrary and has no effect on load direction or detailing. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "All lateral force is ignored once a pile is inclined. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "c": "Inclination is a design choice for lateral support, so the engineer must resolve forces and choose the angle for the actual support condition. This stays inside the Batch 148 local source boundary.",
+    "d": "Inclination reverses the direction of the lateral load automatically. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Inclination is a design choice for lateral support, so the engineer must resolve forces and choose the angle for the actual support condition. Supported by foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "foundation-engineering-piles",
+    "checked_sources": [
+      "foundation-engineering-piles"
+    ]
+  }
+}

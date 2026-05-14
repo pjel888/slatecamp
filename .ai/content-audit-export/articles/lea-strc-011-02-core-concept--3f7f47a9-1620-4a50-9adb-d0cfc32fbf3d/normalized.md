@@ -1,103 +1,107 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+Before answering, decide whether the question is about foundation purpose, shallow/deep selection, mat behavior, pile action, or settlement/serviceability. A foundation item usually fails when a student names a foundation type without checking soil bearing capacity, load distribution, and settlement behavior.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 011 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+**Common mistake:** memorizing a depth number as if it controls every foundation. In this batch, the source-safe distinction is functional: shallow/spread foundations bear on stable soil near the surface, while piles or caissons transfer loads to more suitable material or through pile-soil resistance when shallow support is inadequate.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+**Retrieval prompt:** What fact in the question tells you whether the foundation should spread load near the surface, merge footings into a mat, or transfer load through piles/caissons?
+
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
 By the end of this article, you will be able to:
 
-- Distinguish between shallow and deep foundations
-- Identify the four shallow foundation types: isolated, strip, combined, and mat
-- Explain the floating foundation concept
-- Apply foundation selection criteria based on soil bearing capacity, settlement, and cost
+- State the purpose of a foundation system.
+- Distinguish shallow/spread foundations from pile or caisson foundations using source-backed selection cues.
+- Explain why mat foundations reduce differential settlement risk.
+- Connect foundation selection to bearing capacity, soil variability, and serviceability.
+- Avoid unsupported depth, cover, specialty-foundation calculation, and code-section claims.
 
 ---
+
 ## Core Concept
 [SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
 Extracted summary:
-- Props: id="media-lea-strc-011-02-core-concept", type="image", caption="Foundation Typology — Shallow vs Deep Foundation Systems", description="Cross-section comparison of foundation types: (1) Shallow foundations — isolated footing, combined footing, strip footing, mat/raft foundation; (2) Deep foundations — pile foundation (end-bearing/friction), drilled pier/caisson (≥600mm). Each type shown with soil bearing pressure distribution, reinforcement layout, and typical depth range. Decision tree for foundation selection based on soil conditions and building loads.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Props: id="media-lea-strc-011-02-core-concept", type="image", caption="Foundation Selection Source Boundary", description="Decision diagram showing shallow or spread support where stable near-surface soil has adequate capacity, mat foundation as a load-spreading slab for many supports or variable soil, and piles or caissons when loads exceed shallow soil bearing capacity.", suggestedAsset="Diagram or reference image", status="placeholder"
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
-A foundation is the structural system that transfers building load from the superstructure to the soil. Foundation selection is governed by three factors: _soil bearing capacity_, _allowable settlement_, and _site constraints_ (depth to groundwater, adjacent structures, available space).
 
-**Foundation Classification by Depth:**
+A **foundation system** supports and anchors the superstructure and transmits its loads safely into the earth. Building Structures Illustrated frames the foundation as the critical link between the building above and the soil, rock, and water conditions below.
 
-_Shallow Foundations_ are characterized by a depth-to-width ratio (Df/B) less than 1, typically placed at depths ≤ 2–3 m below grade, though actual depth depends on footing width and soil conditions. Load transfer occurs through direct bearing pressure on the soil immediately below the footing. Common types include:
-- _Isolated footing_: A single footing supporting one column. Economical for low to moderate loads on firm soils.
-- _Strip footing (wall footing)_: A continuous footing supporting a linear load (wall). Width (B) is constant; length extends indefinitely. Settlement is calculated as continuous rather than isolated.
-- _Mat (raft) foundation_: A large, continuous reinforced concrete slab covering the entire building footprint (or a major portion). Used when isolated or strip footings would be too numerous or when bearing capacity is marginal. Mats provide stiffness and reduce differential settlement.
-- _Combined footing_: A single footing supporting two or more columns, typically aligned in a line. Used to reduce eccentric loading or when column spacing precludes independent footings.
+The source-safe selection logic is:
 
-_Deep Foundations_ are placed below the zone of significant stress distribution and transfer loads via friction along the shaft or bearing at depth. Actual depth varies based on soil profile and competent stratum location, typically ≥ 3 m but may be deeper or shallower depending on site conditions. Load is transferred via friction along the shaft or bearing at depth. Piles and caissons are the primary deep foundation elements (taxonomy detailed in LEA-STRC-011-01). Deep foundations are selected when:
-- No competent shallow bearing stratum exists.
-- Soil bearing capacity at shallow depth is insufficient.
-- Settlement tolerance is very strict.
-- Presence of deep fill or compressible layers mandates bypass.
+1. If stable soil with adequate bearing capacity occurs near the ground surface, use a shallow or spread foundation concept.
+2. If individual footings become too large, uneconomical, or likely to settle differently, merge support through a mat foundation.
+3. If building loads exceed the supporting soil's bearing capacity, use piles or caissons to reach more suitable bearing material or to develop support through pile-soil resistance.
+4. Confirm serviceability, not just strength: the foundation engineering source warns that a structure can be stable against failure but still unusable if settlement is excessive.
 
-**Floating Foundations:**
+### Shallow or Spread Foundations
 
-A _floating foundation_ is a specialized deep mat or plate placed at sufficient depth that the weight of excavated soil removed equals (or nearly equals) the weight of the superstructure. The net pressure increase on the soil is minimal, theoretically reducing settlement to near zero. Floating foundations are most practical for low-rise, light structures (e.g., low-cost housing, small multi-story buildings) in compressible clay. They are not viable for tall, heavy structures.
+Shallow or spread foundations transfer building loads directly to supporting soil by vertical pressure. The source-backed condition is not a universal depth number; it is the presence of stable soil with adequate bearing capacity relatively near the surface.
 
-**Foundation Selection Criteria:**
+Common geometric forms in Building Structures Illustrated include:
 
-| **Criterion** | **Shallow** | **Deep** |
-|---|---|---|
-| Depth to competent soil | < 2–3 m | > 3 m; no shallow option available |
-| Bearing capacity required | High; firm soil present | Lower soil; friction and tip compensate |
-| Settlement tolerance | Moderate (50–75 mm typical) | Lower; friction piles exhibit time-dependent settlement |
-| Cost | Lower (smaller concrete volume) | Higher (drilling, deeper excavation, pile caps) |
-| Construction time | Shorter | Longer (drilling, curing, driving) |
-| Soil compatibility | Limited (requires firm soil) | Broader (works in soft clay, loose sand, heterogeneous profiles) |
+| Form | Source-safe use |
+|---|---|
+| Point support | Column footing. |
+| Line support | Foundation wall or wall footing. |
+| Plane support | Mat foundation. |
 
-**Concrete Cover (Reference Only):**
+### Mat Foundations
 
-Footing concrete cast against earth requires 50 mm minimum cover to reinforcement per PD 1096 2004 IRR Rule VIII Section 805 (or verify against current NSCP 2015 requirements). This value is controlled by LEA-STRC-007-01 (Concrete Cover and Protection) and is referenced here only for completeness.
+A **mat foundation** is a thick, heavily reinforced concrete slab that acts as a single monolithic footing for many columns or an entire building. It is used when soil bearing capacity is low relative to building loads, when interior column footings become so large that it is more economical to merge them, or when soil capacity varies enough that individual spread footings could settle differently.
+
+### Pile and Caisson Foundations
+
+Pile or caisson foundations are used when building loads exceed the bearing capacity of the supporting soil. Piles may be driven or bored, and their load may be carried through shaft friction, toe resistance, or both. Individual piles are typically joined by a cast-in-place concrete cap that supports a building column.
+
+The foundation engineering source treats pile selection as an engineering process that considers site environment, logistics, cost, and technical ground conditions. Do not reduce pile selection to one memorized threshold.
 
 ## Key Provisions
 
-| **Foundation Type** | **Typical Depth Df** | **Bearing Mechanism** | **Settlement Behavior** | **Soil Requirements** |
-|---|---|---|---|---|
-| Isolated footing | 0.75–1.5 m | Direct bearing | Elastic + immediate; minimal if soil is firm | Firm sand, stiff clay; low-compressibility soils |
-| Strip footing | 0.75–2.0 m | Direct bearing | Continuous load; settlement reduces with length | Firm to moderate soils |
-| Combined footing | 1.0–2.0 m | Direct bearing; eccentric reduction | Moderate; depends on soil uniformity | Moderate to firm soils |
-| Mat (raft) foundation | 1.0–3.0 m (shallow to intermediate) | Distributed bearing across slab | Reduced differential settlement; higher uniformity | Weak to moderate soils; heterogeneous profiles |
-| Floating foundation | 2.0–4.0 m | Excavation weight ≈ structure weight | Minimal (near zero if designed correctly) | Compressible clay; light structures only |
-| Pile/caisson foundation | > 3 m (variable) | Friction and/or tip bearing | Time-dependent; friction piles exhibit settlement; end-bearing more stable | Any soil profile; mandatory in soft alluvial deposits |
+| Selection cue | Source-safe foundation response | Avoid |
+|---|---|---|
+| Stable soil near surface with adequate capacity | Shallow/spread foundation concept. | Choosing piles just because the building is important. |
+| Many large isolated footings or variable soil capacity | Mat foundation to distribute loads and reduce differential settlement. | Treating each footing as isolated when differential settlement is the issue. |
+| Building loads exceed shallow soil bearing capacity | Pile or caisson foundation. | Widening shallow footings without checking settlement and serviceability. |
+| Soil strength is adequate but settlement is excessive | Revise foundation strategy for serviceability, often toward mat or deep support. | Passing the design because factor of safety alone is acceptable. |
+| Several piles under one column | Use a pile cap to distribute the column load to the group. | Drawing piles as independent supports with no group load transfer. |
 
 ## Philippine Practice Context
-In Metro Manila and coastal alluvial plains, shallow footings are viable only in small, low-rise projects on elevated or well-compacted sites. The majority of urban construction employs pile or mat foundations to bypass soft clay layers 15–50 m deep. Floating foundations are rare but appear in low-cost housing schemes (60 sq.m. max) in controlled subsurface conditions. Mindanao volcanic regions often allow shallower foundations due to firmer upper soils. Typhoon-prone areas use mats and deep foundations for lateral stability combined with architectural overturning resistance.
+
+In local LEA review, do not answer foundation questions by reciting an unsupported "typical depth." First ask what the soil can carry, how uniform the support is, whether the load can be spread near the surface, and whether settlement remains acceptable. That sequence keeps the answer inside the captured local source boundary.
+
+## Real World Scenario
+
+A two-story portion and a taller block share a site with variable soil. The source-safe response is not to force one foundation type everywhere. The lighter portion may use spread support if stable near-surface soil is adequate, while the heavier block may need a mat or pile/caisson system. The final choice must be checked for load transfer and settlement compatibility, especially where the two building masses meet.
 
 ## How It's Tested
-1. **Foundation Type Selection:** Given a site with soft clay to 30 m depth and bearing capacity 50 kN/m², select the foundation type and justify based on bearing capacity and settlement criteria.
-2. **Mat vs. Isolated Footing:** A 20-column building on marginal soil compares a mat foundation to 20 isolated footings. Analyze differential settlement and load distribution advantages of the mat.
-3. **Floating Foundation Viability:** For a 3-story residential building (500 kN total), soil depth 4 m with excavated soil weight 4000 kN, determine if a floating foundation is viable and calculate net pressure increase.
+
+1. **Foundation purpose:** Select the statement that says the foundation supports and anchors the superstructure and transmits load into the earth.
+2. **Shallow vs. deep selection:** Match shallow/spread foundations to adequate near-surface support and piles/caissons to inadequate shallow support.
+3. **Mat foundation behavior:** Identify mat foundations as load-spreading slabs that help reduce differential settlement where individual footings are not efficient.
+4. **Serviceability:** Recognize that settlement can govern even when strength or bearing capacity appears acceptable.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Memory Aid:** Shallow footings are direct pushers—they shove load straight down into soil. Deep piles and caissons are deep anchors—they hang onto the soil with friction or grip a firm layer with their tip. Mats are load-spreaders—they flatten pressure across a wide area to reduce settlement. Floating foundations are weight-balancers—they remove as much soil weight as they place in structure.
+- Text: Memory aid: spread, mat, deep, settle. Spread foundations need adequate near-surface support; mats merge and distribute loads to reduce differential settlement; piles or caissons are evaluated when shallow bearing is inadequate; serviceability settlement can still govern.
 [/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
-See also: **Piles** (lea-strc-011-01) for deep foundation details, **Geotechnical Engineering** (lea-strc-011-03) for soil properties governing selection, and **Concrete Materials** (lea-strc-006-01) for footing concrete requirements.
+See also: **Piles** (lea-strc-011-01) for deep foundation load transfer, **Geotechnical Engineering** (lea-strc-011-03) for soil behavior, and **Concrete Materials** (lea-strc-006-01) for concrete-related construction materials.
 
 ## Common Mistakes
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+- Text: Avoid unsupported depth limits, formula-style depth rules, concrete-cover citations, settlement tolerances, and specialty-foundation calculations. Use soil bearing capacity, load distribution, and settlement behavior from the captured sources.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
 Extracted summary:
-- Props: mistakes="{[\"Assuming shallow foundations are always cheaper; deep foundations are often mandatory in soft soil and eliminate costly settlement repair later.\",\"Confusing floating foundation with a raft foundation; floating requires Df and excavation weight to nearly equal structure weight; ordinary mats are intermediate supports, not floating.\",\"Treating combined footing and mat as equivleant; combined footings support 2–4 columns; mats cover the entire footprint and provide greater stiffness and load distribution.\",\"Placing mats at arbitrary depth; mat depth is selected to balance bearing capacity and settlement. Deeper mats reduce pressure but increase cost. Optimization is required.\",\"Omitting the role of groundwater and compressibility in foundation selection; soft, saturated clays mandate deep foundations and settlement monitoring, not shortcuts to shallow systems.\"]}"
+- Props: mistakes=["Choosing shallow or deep support from a memorized depth number instead of soil capacity and load-transfer conditions.","Calling a mat foundation a finish slab; the captured source treats it as a thick reinforced foundation slab.","Assuming stability against failure is enough even when settlement would impair building performance.","Selecting piles only because a building is important, without checking whether shallow support is adequate.","Adding concrete-cover or code-section citations that were not captured for this batch.","Using specialty-foundation calculations without source support."]
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]

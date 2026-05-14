@@ -1,0 +1,69 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+  "cluster_id": "lea-strc-010-02",
+  "question_id": "980666c7-2bd4-4b7d-a071-4efc77da8dd5",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c74d9a89083802e19a7701a7b1acf2ac71ce491b006c33649cac25182fc5fd3c",
+  "after_hash": "sha256:c74d9a89083802e19a7701a7b1acf2ac71ce491b006c33649cac25182fc5fd3c",
+  "baseline_hash": "sha256:c74d9a89083802e19a7701a7b1acf2ac71ce491b006c33649cac25182fc5fd3c",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "masonry-lecture-chb-units"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A supplier submittal for CHB changes the wall-unit details from the standard lecture description. What is the safest source-backed review response before accepting the units for a structural wall?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accept the change automatically because all hollow blocks have identical strength and contact behavior."
+      },
+      {
+        "id": "b",
+        "text": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value."
+      },
+      {
+        "id": "c",
+        "text": "Ignore the submittal because CHB dimensions alone prove structural adequacy."
+      },
+      {
+        "id": "d",
+        "text": "Approve only if the unit has fewer cells, because fewer cells always increase capacity."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Accept the change automatically because all hollow blocks have identical strength and contact behavior. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value. This stays inside the Batch 148 local source boundary.",
+      "c": "Ignore the submittal because CHB dimensions alone prove structural adequacy. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "Approve only if the unit has fewer cells, because fewer cells always increase capacity. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value. Supported by masonry-lecture-chb-units.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "masonry-lecture-chb-units",
+      "checked_sources": [
+        "masonry-lecture-chb-units"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 314-319 and 353-361.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "masonry-lecture-chb-units"
+    ]
+  },
+  "rationale": {
+    "a": "Accept the change automatically because all hollow blocks have identical strength and contact behavior. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value. This stays inside the Batch 148 local source boundary.",
+    "c": "Ignore the submittal because CHB dimensions alone prove structural adequacy. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "Approve only if the unit has fewer cells, because fewer cells always increase capacity. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value. Supported by masonry-lecture-chb-units.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "masonry-lecture-chb-units",
+    "checked_sources": [
+      "masonry-lecture-chb-units"
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "cluster_id": "lea-strc-011-02",
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "source_strategy": "local_first",
+  "source_count": 3,
+  "sources": [
+    {
+      "id": "bsi-masonry-foundation-grids",
+      "title": "Building Structures Illustrated - masonry walls and foundation grids",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_artifact_bytes": 38160628,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_artifact_bytes": 576829,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/bsi-masonry-foundation-grids.source-capture.md",
+      "local_capture_sha256": "sha256:1f54e06454c7e8264b822b5ff7834c23fd66f5b7d4edf451e47d288cb071f94d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/bsi-masonry-foundation-grids.refined.md",
+      "refined_capture_sha256": "sha256:18334dc9712d2d192d2780fde614b8b18506e89a4bef1a3410cf7d76aa7fecd1",
+      "locator": "refined markdown lines 718-751, 1890-1900, 3699-3701",
+      "safe_claims": [
+        "Masonry construction uses natural or manufactured units, such as stone, brick, or concrete block, usually with mortar as a bonding agent.",
+        "Concrete masonry units commonly have two or three cores; concrete block is economical and easily reinforced for bearing walls.",
+        "A foundation system supports and anchors the superstructure and transmits loads safely into the earth.",
+        "Shallow or spread foundations are used when stable soil with adequate bearing capacity occurs relatively near the ground surface.",
+        "Mat foundations are thick, heavily reinforced concrete slabs used to distribute loads and reduce differential settlement where individual footings are uneconomical or soil capacity varies.",
+        "Pile or caisson foundations are used when building loads exceed the bearing capacity of the supporting soil.",
+        "Individual piles are typically joined by a cast-in-place concrete cap that supports a building column."
+      ],
+      "use_limits": [
+        "This batch does not state Philippine code section numbers for masonry or foundation provisions.",
+        "This batch does not claim exact shallow-foundation depth limits, Df/B thresholds, or settlement tolerance values.",
+        "This batch does not use BSI estimating tables as mandatory code requirements."
+      ],
+      "sort_order": 0
+    },
+    {
+      "id": "foundation-engineering-serviceability",
+      "title": "Foundation Engineering Analysis and Design - stability, settlement, and soil behavior",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_artifact_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_artifact_bytes": 26919935,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_artifact_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_artifact_bytes": 1336057,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-serviceability.source-capture.md",
+      "local_capture_sha256": "sha256:aef1b368558a8f3e7fc04df893db10cdcc0731e3cf2eaa7271d8ac54e0343bb8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-serviceability.refined.md",
+      "refined_capture_sha256": "sha256:4a6c0814ddddc02bfec7be758f2770992d786540bddcfff1c998c7a9c775f3b3",
+      "locator": "refined markdown lines 1040-1088, 26031-26033, 26426-26432",
+      "safe_claims": [
+        "A foundation transmits superstructure load to the ground, and design must keep the ground mass stable and the structure performing as required.",
+        "Safety analysis checks resistance against demand, while performance analysis predicts ground displacement under expected loading.",
+        "A structure can be stable against failure but still unusable if settlement is excessive.",
+        "Compressibility, strength, and permeability are key soil properties for foundation design.",
+        "For saturated clay soils, settlement response is time-dependent because pore pressure dissipates slowly.",
+        "Pile-group settlement can be evaluated by treating the group as an equivalent footing for load distribution."
+      ],
+      "use_limits": [
+        "This batch does not state project-specific allowable settlement limits.",
+        "This batch does not calculate bearing capacity, safety factors, or consolidation settlement from unstated soil parameters.",
+        "This batch does not restore floating-foundation or compensated-foundation calculations because no local source capture supported them."
+      ],
+      "sort_order": 1
+    },
+    {
+      "id": "foundation-engineering-piles",
+      "title": "Foundation Engineering Analysis and Design - pile classification, selection, and load transfer",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_artifact_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_artifact_bytes": 26919935,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_artifact_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_artifact_bytes": 1336057,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-piles.source-capture.md",
+      "local_capture_sha256": "sha256:84bb40993ba347b96fc91483426ffc2b35828f4523d6259e7e16841c377ca57a",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-piles.refined.md",
+      "refined_capture_sha256": "sha256:fb1861c37053b3e8424722fb9951d0d9194e26c4dc6062a676dfa563b1a950ee",
+      "locator": "refined markdown lines 22935-22971, 23285-23399, 23443-23545, 27859-27925",
+      "safe_claims": [
+        "The source uses deep foundation and pile interchangeably for its chapter terminology.",
+        "Piles may be classified by material, geometry, load transfer mechanism, ground displacement, and installation method.",
+        "A friction pile transfers most load through friction along the pile shaft; a toe-bearing pile transfers most load through resistance at the pile toe.",
+        "Driven piles are installed by impact hammer or vibration; bored piles are cast in place by drilling and then filling the borehole with concrete.",
+        "Driven piles can cause noise, vibration, and soil displacement; bored piles can have lower noise and vibration and can be adjusted during construction as ground conditions are encountered.",
+        "Pile type selection considers project environment, logistics, cost, and technical ground conditions; no single selection procedure fits every site.",
+        "The load at the pile head is transferred through shaft friction and toe resistance.",
+        "Bored-pile quality depends on subsurface exploration, constructability, and quality assurance during borehole drilling and concrete placement.",
+        "In slurry construction, a tremie pipe places concrete from the base of a slurry-filled borehole."
+      ],
+      "use_limits": [
+        "This batch does not restore exact NSCP pile, caisson, or drilled-shaft code section references.",
+        "This batch does not state a universal pile-versus-caisson diameter threshold.",
+        "This batch does not prescribe a standard batter angle, pile spacing, pile capacity, or load-test acceptance value."
+      ],
+      "sort_order": 2
+    }
+  ],
+  "normalized_sha256": "sha256:5883a9a04cce6764b826f3be2bcd2f2472f20042e5ceea7ca53794ef3e905bb1",
+  "candidate_sha256": "sha256:19a1cdc6a16cbbe0a03fb447a7ccacf62db509ccc7bc1ea3fdb57555bcc584c1",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "2ccdc921-cd19-4a4f-99f6-5568c428a3df",
+      "content_hash": "sha256:dbda82037312fd3029e1cbaf50bce7a59eb428a805608a9cbbf1da0a1be87467"
+    },
+    {
+      "question_id": "158cce46-3a76-4e5c-bb8c-c25dc6a855b3",
+      "content_hash": "sha256:9c62c224e796e4f3877497bb2fefe1b71a721f14618a314b5702dc0f15c870b4"
+    },
+    {
+      "question_id": "84d196f4-17c5-45f9-81c2-e06e104d5ecc",
+      "content_hash": "sha256:4cbebf0b53075a6d9219f648197881b5b0da70ae0c34b9b5ef8e37c8cef8db8d"
+    },
+    {
+      "question_id": "9655dccc-c302-4c29-933c-f4162de3a642",
+      "content_hash": "sha256:bc468101aed7abba77c8da2adc15bf53c81015a0dddfb9c6203fa56a4299bb7a"
+    },
+    {
+      "question_id": "5b6d1ddf-e0f3-4dd2-87f2-831827049eff",
+      "content_hash": "sha256:544b12f227f955f67db8eaeb733690518c3c8065645359cd54dea53d2996bde4"
+    },
+    {
+      "question_id": "fb83458b-d990-4b58-bd7f-4d2b25de3fc5",
+      "content_hash": "sha256:3df28b02f7ffd2409497f5d3592c88086fa0f7e75fae02b4ee58b24a9ebe28c0"
+    },
+    {
+      "question_id": "ed656ad5-af59-47d2-b0fd-9279f449f71c",
+      "content_hash": "sha256:761ed9852672976736600d092be52a9d6ef9813393853aa57eb83398a8252c09"
+    },
+    {
+      "question_id": "955ac82c-c550-4ea5-85d3-c42dd66215d9",
+      "content_hash": "sha256:e57f8cd06698a76e8198694b9301b7d100a213875a310bf0b04b641d162ae65f"
+    },
+    {
+      "question_id": "1432eed5-ec63-4001-9adb-79a627965dcd",
+      "content_hash": "sha256:cae5641aa67edad5d3060072f7bbe491b30dc4f4f625a7c315eccbb38f944a3c"
+    },
+    {
+      "question_id": "ed74d187-6ab5-435c-815e-9857039ae820",
+      "content_hash": "sha256:472e633e921fdf5388ae728eb311851fd8f1f7e97fd4e61d650aa3be965b01c0"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore exact shallow-foundation depth, Df/B, or settlement tolerance thresholds.",
+    "No local source in this batch was used to restore concrete-cover values or PD1096/NSCP section citations.",
+    "No local source in this batch was used to restore floating-foundation calculations or project-specific bearing capacity values."
+  ],
+  "blocked_residuals_considered": []
+}

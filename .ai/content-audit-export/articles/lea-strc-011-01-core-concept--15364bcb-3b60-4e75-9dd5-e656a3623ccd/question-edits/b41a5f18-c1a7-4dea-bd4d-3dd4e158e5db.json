@@ -1,0 +1,69 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "cluster_id": "lea-strc-011-01",
+  "question_id": "b41a5f18-c1a7-4dea-bd4d-3dd4e158e5db",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:5f1b4dfe19977730157c172413f7f416993eaf62c71346006fb34728b9766ed3",
+  "after_hash": "sha256:5f1b4dfe19977730157c172413f7f416993eaf62c71346006fb34728b9766ed3",
+  "baseline_hash": "sha256:5f1b4dfe19977730157c172413f7f416993eaf62c71346006fb34728b9766ed3",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A bored pile is constructed under slurry, and the method statement calls for a tremie pipe. What is the tremie doing in the captured source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It drains all groundwater before drilling starts."
+      },
+      {
+        "id": "b",
+        "text": "It drives the pile into the ground by vibration."
+      },
+      {
+        "id": "c",
+        "text": "It places concrete from the base of the slurry-filled borehole, supporting controlled concrete placement."
+      },
+      {
+        "id": "d",
+        "text": "It is only a surface vibrator for architectural finish."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "It drains all groundwater before drilling starts. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "It drives the pile into the ground by vibration. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "c": "It places concrete from the base of the slurry-filled borehole, supporting controlled concrete placement. This stays inside the Batch 148 local source boundary.",
+      "d": "It is only a surface vibrator for architectural finish. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "It places concrete from the base of the slurry-filled borehole, supporting controlled concrete placement. Supported by foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "foundation-engineering-piles",
+      "checked_sources": [
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined markdown lines 27859-27925.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "It drains all groundwater before drilling starts. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "It drives the pile into the ground by vibration. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "c": "It places concrete from the base of the slurry-filled borehole, supporting controlled concrete placement. This stays inside the Batch 148 local source boundary.",
+    "d": "It is only a surface vibrator for architectural finish. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "It places concrete from the base of the slurry-filled borehole, supporting controlled concrete placement. Supported by foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "foundation-engineering-piles",
+    "checked_sources": [
+      "foundation-engineering-piles"
+    ]
+  }
+}

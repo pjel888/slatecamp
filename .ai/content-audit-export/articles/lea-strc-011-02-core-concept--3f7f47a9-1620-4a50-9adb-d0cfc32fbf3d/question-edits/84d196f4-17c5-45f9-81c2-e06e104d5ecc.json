@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "cluster_id": "lea-strc-011-02",
+  "question_id": "84d196f4-17c5-45f9-81c2-e06e104d5ecc",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:4cbebf0b53075a6d9219f648197881b5b0da70ae0c34b9b5ef8e37c8cef8db8d",
+  "after_hash": "sha256:4cbebf0b53075a6d9219f648197881b5b0da70ae0c34b9b5ef8e37c8cef8db8d",
+  "baseline_hash": "sha256:4cbebf0b53075a6d9219f648197881b5b0da70ae0c34b9b5ef8e37c8cef8db8d",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-masonry-foundation-grids",
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "Explain the source-backed difference between shallow/spread foundations and pile or caisson foundations.",
+    "options": [
+      {
+        "id": "a",
+        "text": "They transfer load in the same way; only the name changes."
+      },
+      {
+        "id": "b",
+        "text": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance."
+      },
+      {
+        "id": "c",
+        "text": "Deep foundations are always stronger and shallow foundations should never be used."
+      },
+      {
+        "id": "d",
+        "text": "Shallow foundations transfer load at depth and deep foundations transfer load at the surface."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "They transfer load in the same way; only the name changes. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance. This stays inside the Batch 148 local source boundary.",
+      "c": "Deep foundations are always stronger and shallow foundations should never be used. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "Shallow foundations transfer load at depth and deep foundations transfer load at the surface. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+      "checked_sources": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI lines 743-751, 1890-1900; Foundation Engineering lines 22935-22971.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "They transfer load in the same way; only the name changes. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance. This stays inside the Batch 148 local source boundary.",
+    "c": "Deep foundations are always stronger and shallow foundations should never be used. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "Shallow foundations transfer load at depth and deep foundations transfer load at the surface. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Shallow/spread foundations transfer loads directly to adequate near-surface soil; piles or caissons are used when loads must be transferred to more suitable material or through pile-soil resistance. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+    "checked_sources": [
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  }
+}

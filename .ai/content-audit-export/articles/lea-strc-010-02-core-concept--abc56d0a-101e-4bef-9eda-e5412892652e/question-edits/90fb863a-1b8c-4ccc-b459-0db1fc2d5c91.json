@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+  "cluster_id": "lea-strc-010-02",
+  "question_id": "90fb863a-1b8c-4ccc-b459-0db1fc2d5c91",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:9bdd95a0dd865ad88ad6d69624b1f4327472647bcd08bcae437349a3497a0239",
+  "after_hash": "sha256:9bdd95a0dd865ad88ad6d69624b1f4327472647bcd08bcae437349a3497a0239",
+  "baseline_hash": "sha256:9bdd95a0dd865ad88ad6d69624b1f4327472647bcd08bcae437349a3497a0239",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "masonry-lecture-chb-units",
+    "bsi-masonry-foundation-grids"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "Why is concrete block commonly treated as a practical bearing-wall masonry unit in the captured sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar."
+      },
+      {
+        "id": "b",
+        "text": "Concrete block is always stronger than reinforced concrete and needs no reinforcement."
+      },
+      {
+        "id": "c",
+        "text": "Concrete block is used only as a veneer and cannot form a bearing wall."
+      },
+      {
+        "id": "d",
+        "text": "Concrete block works because its hollow cells act as shock absorbers in every seismic design."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar. This stays inside the Batch 148 local source boundary.",
+      "b": "Concrete block is always stronger than reinforced concrete and needs no reinforcement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "c": "Concrete block is used only as a veneer and cannot form a bearing wall. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "Concrete block works because its hollow cells act as shock absorbers in every seismic design. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar. Supported by masonry-lecture-chb-units, bsi-masonry-foundation-grids.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "masonry-lecture-chb-units, bsi-masonry-foundation-grids",
+      "checked_sources": [
+        "masonry-lecture-chb-units",
+        "bsi-masonry-foundation-grids"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI refined markdown lines 3699-3701; Masonry Lecture lines 353-361.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "masonry-lecture-chb-units",
+      "bsi-masonry-foundation-grids"
+    ]
+  },
+  "rationale": {
+    "a": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar. This stays inside the Batch 148 local source boundary.",
+    "b": "Concrete block is always stronger than reinforced concrete and needs no reinforcement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "c": "Concrete block is used only as a veneer and cannot form a bearing wall. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "Concrete block works because its hollow cells act as shock absorbers in every seismic design. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar. Supported by masonry-lecture-chb-units, bsi-masonry-foundation-grids.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "masonry-lecture-chb-units, bsi-masonry-foundation-grids",
+    "checked_sources": [
+      "masonry-lecture-chb-units",
+      "bsi-masonry-foundation-grids"
+    ]
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "baseline": "5b9cf4943b",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T03:21:48.604Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-148-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-strc-010-02",
+    "lea-strc-011-01",
+    "lea-strc-011-02"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-strc-010-02",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "slug": "lea-strc-010-02-core-concept",
+      "title": "Masonry unit",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "masonry-lecture-chb-units",
+        "bsi-masonry-foundation-grids"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:8aa24bcbc9dcf6c7d084c35570b279a5d813a011b84ab4f76274fec86f99c029",
+      "candidate_sha256": "sha256:3356210209abe44a4fccc3206fb951593806c23700d4c3ed98416a22b8cc0da2",
+      "source_evidence_sha256": "sha256:867271ff8a246b42c4ebe2870ec10bc8c89a71291786c33160ea1319ed3f08ae",
+      "linked_questions_sha256": "sha256:1fbdcc507b0207767bc0e2246d2cd277975583e47462bb02bdc92d9b5681d312",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore an NBP/ACI hollow-versus-solid percentage threshold.",
+        "No local source in this batch was used to state supplier-specific net area, bedded area, bearing stress, or allowable masonry strength values.",
+        "No local source in this batch was used to replace project specifications for reinforced masonry inspection or grouting schedules."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/scoped-validation-batch-148.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/8708c400-3f73-401a-8684-0725f9052109.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/980666c7-2bd4-4b7d-a071-4efc77da8dd5.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/7d557a4f-03e4-4ef0-8e29-92b0de46dd83.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/36908fd7-e3f7-406b-99ee-9972eeb85ead.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/54803f09-c55b-4706-af46-37901a67c476.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/90fb863a-1b8c-4ccc-b459-0db1fc2d5c91.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/73c5b75a-0255-4875-83d2-97be0eace9d5.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/41bcdd39-88d5-4d5a-817b-8a6ffec636c3.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/c99e0fb0-5c62-4459-8bc7-6436f9a64473.json",
+          ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/question-edits/e5b59c4e-243c-4759-a428-953a69bc7b36.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-011-01",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "slug": "lea-strc-011-01-core-concept",
+      "title": "Pile is a slender structural element driven or drilled",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "foundation-engineering-piles",
+        "bsi-masonry-foundation-grids"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:7b653cdeda963aa95abb83e40c92c115e4a3151c343689fbe89e7bb5e877a79d",
+      "candidate_sha256": "sha256:eeb933651f378387726fe53b6302fd0ff22e2e08da56bd2d39cfebadc1892e92",
+      "source_evidence_sha256": "sha256:ff7734ad9e9f5899e27157b0eb500e255c835e09bbf5f92c8d456e77000bf333",
+      "linked_questions_sha256": "sha256:4d20e440c700bf4ce188fd958619be11cbbf07e25c7615e40a81966d3dd61afe",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore exact NSCP pile, caisson, or drilled-shaft code section references.",
+        "No local source in this batch was used to state a universal pile-versus-caisson diameter threshold.",
+        "No local source in this batch was used to prescribe a standard batter angle, pile spacing, pile capacity, or load-test acceptance value."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/scoped-validation-batch-148.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/1069929b-de3f-4d2a-80f1-9f20a14c2386.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/e2b621e5-e485-47b2-95dd-2b488503674f.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/8dbb2f75-8f31-4395-be31-adc86f321d43.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/a43321ff-aa33-4e99-b8c0-45090f7ff300.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/d2958d29-592e-48b5-97ca-dbbd49348012.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/b41a5f18-c1a7-4dea-bd4d-3dd4e158e5db.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/065f8b57-3b0b-4712-8195-1d0fb2b01fd5.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/8b6e3c08-1be8-42e0-ac76-81d63cd010fc.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/9ce68797-21a4-4ad2-8bd9-c313522f5583.json",
+          ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/question-edits/f09d7118-1b31-4c08-bede-0a426f30298c.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-011-02",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "slug": "lea-strc-011-02-core-concept",
+      "title": "Foundation",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-serviceability",
+        "foundation-engineering-piles"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:5883a9a04cce6764b826f3be2bcd2f2472f20042e5ceea7ca53794ef3e905bb1",
+      "candidate_sha256": "sha256:19a1cdc6a16cbbe0a03fb447a7ccacf62db509ccc7bc1ea3fdb57555bcc584c1",
+      "source_evidence_sha256": "sha256:55733c74be9eded18a7b70556d68a9436fc0129ea36026ad357e00fcb606c7d9",
+      "linked_questions_sha256": "sha256:08a7b3b6ddec5d6859b7a6c6217159eff020df7e2fd8a5b3646975f1334ff73c",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore exact shallow-foundation depth, Df/B, or settlement tolerance thresholds.",
+        "No local source in this batch was used to restore concrete-cover values or PD1096/NSCP section citations.",
+        "No local source in this batch was used to restore floating-foundation calculations or project-specific bearing capacity values."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/scoped-validation-batch-148.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/2ccdc921-cd19-4a4f-99f6-5568c428a3df.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/158cce46-3a76-4e5c-bb8c-c25dc6a855b3.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/84d196f4-17c5-45f9-81c2-e06e104d5ecc.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/9655dccc-c302-4c29-933c-f4162de3a642.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/5b6d1ddf-e0f3-4dd2-87f2-831827049eff.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/fb83458b-d990-4b58-bd7f-4d2b25de3fc5.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/ed656ad5-af59-47d2-b0fd-9279f449f71c.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/955ac82c-c550-4ea5-85d3-c42dd66215d9.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/1432eed5-ec63-4001-9adb-79a627965dcd.json",
+          ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/question-edits/ed74d187-6ab5-435c-815e-9857039ae820.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d/compose-error.json"
+      }
+    }
+  ],
+  "source_records": {
+    "masonry-lecture-chb-units": {
+      "id": "masonry-lecture-chb-units",
+      "title": "Masonry Lecture - CHB composition, sizes, mortar bedding, and reinforcement practice",
+      "locator": "refined markdown lines 109-147, 314-319, 353-361",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "exists": true,
+        "bytes": 923032,
+        "sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "exists": true,
+        "bytes": 19305,
+        "sha256": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/masonry-lecture-chb-units.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:70b01a4ec886d3e4c6c2065cc49e05cf1f4c841cf2fa68df84cd6c5d6914b368"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/masonry-lecture-chb-units.refined.md",
+        "exists": true,
+        "sha256": "sha256:9085e19aedb5289b972e27c058fd985b588647c050f1f65f4db099c82a8b780f"
+      },
+      "source_boundary_sha256": "sha256:2e468fcdc136d7fd25c18edfcf85b2ce3d8f8905251c49e9e98b1402c7eb866f"
+    },
+    "bsi-masonry-foundation-grids": {
+      "id": "bsi-masonry-foundation-grids",
+      "title": "Building Structures Illustrated - masonry walls and foundation grids",
+      "locator": "refined markdown lines 718-751, 1890-1900, 3699-3701",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+        "exists": true,
+        "bytes": 38160628,
+        "sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+        "exists": true,
+        "bytes": 576829,
+        "sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/bsi-masonry-foundation-grids.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:1f54e06454c7e8264b822b5ff7834c23fd66f5b7d4edf451e47d288cb071f94d"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/bsi-masonry-foundation-grids.refined.md",
+        "exists": true,
+        "sha256": "sha256:18334dc9712d2d192d2780fde614b8b18506e89a4bef1a3410cf7d76aa7fecd1"
+      },
+      "source_boundary_sha256": "sha256:f51a70c2ad888d7e85b113698832e1565e6f610b20f63b79823db50015d71961"
+    },
+    "foundation-engineering-piles": {
+      "id": "foundation-engineering-piles",
+      "title": "Foundation Engineering Analysis and Design - pile classification, selection, and load transfer",
+      "locator": "refined markdown lines 22935-22971, 23285-23399, 23443-23545, 27859-27925",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+        "exists": true,
+        "bytes": 26919935,
+        "sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+        "exists": true,
+        "bytes": 1336057,
+        "sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-piles.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:84bb40993ba347b96fc91483426ffc2b35828f4523d6259e7e16841c377ca57a"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-piles.refined.md",
+        "exists": true,
+        "sha256": "sha256:fb1861c37053b3e8424722fb9951d0d9194e26c4dc6062a676dfa563b1a950ee"
+      },
+      "source_boundary_sha256": "sha256:8dae480f2a9edc76548aa837be852c9801c334731314f0ccd9c9017d02cf8962"
+    },
+    "foundation-engineering-serviceability": {
+      "id": "foundation-engineering-serviceability",
+      "title": "Foundation Engineering Analysis and Design - stability, settlement, and soil behavior",
+      "locator": "refined markdown lines 1040-1088, 26031-26033, 26426-26432",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+        "exists": true,
+        "bytes": 26919935,
+        "sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+        "exists": true,
+        "bytes": 1336057,
+        "sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-serviceability.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:aef1b368558a8f3e7fc04df893db10cdcc0731e3cf2eaa7271d8ac54e0343bb8"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-serviceability.refined.md",
+        "exists": true,
+        "sha256": "sha256:4a6c0814ddddc02bfec7be758f2770992d786540bddcfff1c998c7a9c775f3b3"
+      },
+      "source_boundary_sha256": "sha256:f03515f3c6f54924b7e2774b65e58ee65d8605bba490cc5c17c67a14fd6a4c2d"
+    }
+  },
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "source_hash_checks": [
+    {
+      "source_id": "masonry-lecture-chb-units",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+      "raw_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+      "refined_sha256": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/masonry-lecture-chb-units.source-capture.md",
+      "capture_sha256": "sha256:70b01a4ec886d3e4c6c2065cc49e05cf1f4c841cf2fa68df84cd6c5d6914b368",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/masonry-lecture-chb-units.refined.md",
+      "refined_capture_sha256": "sha256:9085e19aedb5289b972e27c058fd985b588647c050f1f65f4db099c82a8b780f",
+      "status": "pass"
+    },
+    {
+      "source_id": "bsi-masonry-foundation-grids",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/bsi-masonry-foundation-grids.source-capture.md",
+      "capture_sha256": "sha256:1f54e06454c7e8264b822b5ff7834c23fd66f5b7d4edf451e47d288cb071f94d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/bsi-masonry-foundation-grids.refined.md",
+      "refined_capture_sha256": "sha256:18334dc9712d2d192d2780fde614b8b18506e89a4bef1a3410cf7d76aa7fecd1",
+      "status": "pass"
+    },
+    {
+      "source_id": "foundation-engineering-piles",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-piles.source-capture.md",
+      "capture_sha256": "sha256:84bb40993ba347b96fc91483426ffc2b35828f4523d6259e7e16841c377ca57a",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-piles.refined.md",
+      "refined_capture_sha256": "sha256:fb1861c37053b3e8424722fb9951d0d9194e26c4dc6062a676dfa563b1a950ee",
+      "status": "pass"
+    },
+    {
+      "source_id": "foundation-engineering-serviceability",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-serviceability.source-capture.md",
+      "capture_sha256": "sha256:aef1b368558a8f3e7fc04df893db10cdcc0731e3cf2eaa7271d8ac54e0343bb8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-serviceability.refined.md",
+      "refined_capture_sha256": "sha256:4a6c0814ddddc02bfec7be758f2770992d786540bddcfff1c998c7a9c775f3b3",
+      "status": "pass"
+    }
+  ],
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "no_stage_commit_push": true,
+    "manifest_scoped_only": true
+  },
+  "off_limits_not_touched": [
+    ".ai/00_performance",
+    ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+    ".ai/README.md",
+    ".hermes/skills",
+    ".ai/00_system/philip-ux-ui-calibration.md",
+    "old .ai/content-audit-export/runs/content-roundtrip-* dirs",
+    ".ai/03_plans/blocked-source-recovery/"
+  ]
+}

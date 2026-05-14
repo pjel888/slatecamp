@@ -1,0 +1,127 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "cluster_id": "lea-strc-011-01",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "foundation-engineering-piles",
+      "title": "Foundation Engineering Analysis and Design - pile classification, selection, and load transfer",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_artifact_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_artifact_bytes": 26919935,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_artifact_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_artifact_bytes": 1336057,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-piles.source-capture.md",
+      "local_capture_sha256": "sha256:84bb40993ba347b96fc91483426ffc2b35828f4523d6259e7e16841c377ca57a",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-piles.refined.md",
+      "refined_capture_sha256": "sha256:fb1861c37053b3e8424722fb9951d0d9194e26c4dc6062a676dfa563b1a950ee",
+      "locator": "refined markdown lines 22935-22971, 23285-23399, 23443-23545, 27859-27925",
+      "safe_claims": [
+        "The source uses deep foundation and pile interchangeably for its chapter terminology.",
+        "Piles may be classified by material, geometry, load transfer mechanism, ground displacement, and installation method.",
+        "A friction pile transfers most load through friction along the pile shaft; a toe-bearing pile transfers most load through resistance at the pile toe.",
+        "Driven piles are installed by impact hammer or vibration; bored piles are cast in place by drilling and then filling the borehole with concrete.",
+        "Driven piles can cause noise, vibration, and soil displacement; bored piles can have lower noise and vibration and can be adjusted during construction as ground conditions are encountered.",
+        "Pile type selection considers project environment, logistics, cost, and technical ground conditions; no single selection procedure fits every site.",
+        "The load at the pile head is transferred through shaft friction and toe resistance.",
+        "Bored-pile quality depends on subsurface exploration, constructability, and quality assurance during borehole drilling and concrete placement.",
+        "In slurry construction, a tremie pipe places concrete from the base of a slurry-filled borehole."
+      ],
+      "use_limits": [
+        "This batch does not restore exact NSCP pile, caisson, or drilled-shaft code section references.",
+        "This batch does not state a universal pile-versus-caisson diameter threshold.",
+        "This batch does not prescribe a standard batter angle, pile spacing, pile capacity, or load-test acceptance value."
+      ],
+      "sort_order": 0
+    },
+    {
+      "id": "bsi-masonry-foundation-grids",
+      "title": "Building Structures Illustrated - masonry walls and foundation grids",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_artifact_bytes": 38160628,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_artifact_bytes": 576829,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/bsi-masonry-foundation-grids.source-capture.md",
+      "local_capture_sha256": "sha256:1f54e06454c7e8264b822b5ff7834c23fd66f5b7d4edf451e47d288cb071f94d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/bsi-masonry-foundation-grids.refined.md",
+      "refined_capture_sha256": "sha256:18334dc9712d2d192d2780fde614b8b18506e89a4bef1a3410cf7d76aa7fecd1",
+      "locator": "refined markdown lines 718-751, 1890-1900, 3699-3701",
+      "safe_claims": [
+        "Masonry construction uses natural or manufactured units, such as stone, brick, or concrete block, usually with mortar as a bonding agent.",
+        "Concrete masonry units commonly have two or three cores; concrete block is economical and easily reinforced for bearing walls.",
+        "A foundation system supports and anchors the superstructure and transmits loads safely into the earth.",
+        "Shallow or spread foundations are used when stable soil with adequate bearing capacity occurs relatively near the ground surface.",
+        "Mat foundations are thick, heavily reinforced concrete slabs used to distribute loads and reduce differential settlement where individual footings are uneconomical or soil capacity varies.",
+        "Pile or caisson foundations are used when building loads exceed the bearing capacity of the supporting soil.",
+        "Individual piles are typically joined by a cast-in-place concrete cap that supports a building column."
+      ],
+      "use_limits": [
+        "This batch does not state Philippine code section numbers for masonry or foundation provisions.",
+        "This batch does not claim exact shallow-foundation depth limits, Df/B thresholds, or settlement tolerance values.",
+        "This batch does not use BSI estimating tables as mandatory code requirements."
+      ],
+      "sort_order": 1
+    }
+  ],
+  "normalized_sha256": "sha256:7b653cdeda963aa95abb83e40c92c115e4a3151c343689fbe89e7bb5e877a79d",
+  "candidate_sha256": "sha256:eeb933651f378387726fe53b6302fd0ff22e2e08da56bd2d39cfebadc1892e92",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "1069929b-de3f-4d2a-80f1-9f20a14c2386",
+      "content_hash": "sha256:e53dc422716cbed3e614566de3081655953f5c194ac3d89ad8c5f0570fdba4ac"
+    },
+    {
+      "question_id": "e2b621e5-e485-47b2-95dd-2b488503674f",
+      "content_hash": "sha256:b064d5e73666ab07f44b3d35a6c428f1b9af21719bb8973ca6fa93b5039c4803"
+    },
+    {
+      "question_id": "8dbb2f75-8f31-4395-be31-adc86f321d43",
+      "content_hash": "sha256:51bf2a91daf3c388a3f28e5b12bdfe2d9c963cf54b807fdd3fb20bd6aa99f18a"
+    },
+    {
+      "question_id": "a43321ff-aa33-4e99-b8c0-45090f7ff300",
+      "content_hash": "sha256:6cfc68192a284c84ecb841c832a8f9cb0d1657e611ed9856e394505975e8470a"
+    },
+    {
+      "question_id": "d2958d29-592e-48b5-97ca-dbbd49348012",
+      "content_hash": "sha256:174625d68ff8cd8b66ffcff6dd722d7e2acfd7f59dfb7ccaa4a5247e21ad14fe"
+    },
+    {
+      "question_id": "b41a5f18-c1a7-4dea-bd4d-3dd4e158e5db",
+      "content_hash": "sha256:5f1b4dfe19977730157c172413f7f416993eaf62c71346006fb34728b9766ed3"
+    },
+    {
+      "question_id": "065f8b57-3b0b-4712-8195-1d0fb2b01fd5",
+      "content_hash": "sha256:e38d974186c7433448fa3113488bcbd0e43f5cf45f7df19fab285034307b84f7"
+    },
+    {
+      "question_id": "8b6e3c08-1be8-42e0-ac76-81d63cd010fc",
+      "content_hash": "sha256:9b17d9f6f8b9ea433661a26d090e3fd01d23b5b8fb5f8ec6df7a542af94a9070"
+    },
+    {
+      "question_id": "9ce68797-21a4-4ad2-8bd9-c313522f5583",
+      "content_hash": "sha256:9300ed0c309e23ecb7c7c20a2571b327902e1c52694f1455fcf664503520f0a7"
+    },
+    {
+      "question_id": "f09d7118-1b31-4c08-bede-0a426f30298c",
+      "content_hash": "sha256:99364e83bfc22c3765ada3ffb05112f518496cd62ea830ba65a8a09079189add"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore exact NSCP pile, caisson, or drilled-shaft code section references.",
+    "No local source in this batch was used to state a universal pile-versus-caisson diameter threshold.",
+    "No local source in this batch was used to prescribe a standard batter angle, pile spacing, pile capacity, or load-test acceptance value."
+  ],
+  "blocked_residuals_considered": []
+}

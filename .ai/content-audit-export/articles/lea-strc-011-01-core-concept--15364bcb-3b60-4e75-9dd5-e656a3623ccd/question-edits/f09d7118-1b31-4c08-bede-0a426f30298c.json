@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "cluster_id": "lea-strc-011-01",
+  "question_id": "f09d7118-1b31-4c08-bede-0a426f30298c",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:99364e83bfc22c3765ada3ffb05112f518496cd62ea830ba65a8a09079189add",
+  "after_hash": "sha256:99364e83bfc22c3765ada3ffb05112f518496cd62ea830ba65a8a09079189add",
+  "baseline_hash": "sha256:99364e83bfc22c3765ada3ffb05112f518496cd62ea830ba65a8a09079189add",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-masonry-foundation-grids",
+    "foundation-engineering-piles"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A column is supported by a group of piles. Why is a pile cap part of the source-backed load path?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is optional decoration because each pile independently supports the column with no group action."
+      },
+      {
+        "id": "b",
+        "text": "A cast-in-place concrete cap joins individual piles and supports the building column, distributing the column load to the pile group."
+      },
+      {
+        "id": "c",
+        "text": "It is only a shaft coupling and does not transfer load."
+      },
+      {
+        "id": "d",
+        "text": "It braces only horizontal loads and is unrelated to vertical support."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It is optional decoration because each pile independently supports the column with no group action. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "A cast-in-place concrete cap joins individual piles and supports the building column, distributing the column load to the pile group. This stays inside the Batch 148 local source boundary.",
+      "c": "It is only a shaft coupling and does not transfer load. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "It braces only horizontal loads and is unrelated to vertical support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "A cast-in-place concrete cap joins individual piles and supports the building column, distributing the column load to the pile group. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+      "checked_sources": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-piles"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI refined markdown lines 1890-1900; Foundation Engineering lines 23349-23355.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  },
+  "rationale": {
+    "a": "It is optional decoration because each pile independently supports the column with no group action. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "A cast-in-place concrete cap joins individual piles and supports the building column, distributing the column load to the pile group. This stays inside the Batch 148 local source boundary.",
+    "c": "It is only a shaft coupling and does not transfer load. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "It braces only horizontal loads and is unrelated to vertical support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "A cast-in-place concrete cap joins individual piles and supports the building column, distributing the column load to the pile group. Supported by bsi-masonry-foundation-grids, foundation-engineering-piles.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-piles",
+    "checked_sources": [
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-piles"
+    ]
+  }
+}

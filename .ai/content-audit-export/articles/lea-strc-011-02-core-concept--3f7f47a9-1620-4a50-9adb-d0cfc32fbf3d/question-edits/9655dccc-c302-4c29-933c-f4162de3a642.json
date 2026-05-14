@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "cluster_id": "lea-strc-011-02",
+  "question_id": "9655dccc-c302-4c29-933c-f4162de3a642",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:bc468101aed7abba77c8da2adc15bf53c81015a0dddfb9c6203fa56a4299bb7a",
+  "after_hash": "sha256:bc468101aed7abba77c8da2adc15bf53c81015a0dddfb9c6203fa56a4299bb7a",
+  "baseline_hash": "sha256:bc468101aed7abba77c8da2adc15bf53c81015a0dddfb9c6203fa56a4299bb7a",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-masonry-foundation-grids",
+    "foundation-engineering-serviceability"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A building has many interior column footings that are becoming too large for the available soil support. Which statement best captures the advantage of a mat foundation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A mat is selected only for appearance and has no structural role."
+      },
+      {
+        "id": "b",
+        "text": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk."
+      },
+      {
+        "id": "c",
+        "text": "A mat eliminates all settlement and therefore needs no serviceability review."
+      },
+      {
+        "id": "d",
+        "text": "A mat is a pile cap for exactly one pile only."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "A mat is selected only for appearance and has no structural role. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk. This stays inside the Batch 148 local source boundary.",
+      "c": "A mat eliminates all settlement and therefore needs no serviceability review. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "A mat is a pile cap for exactly one pile only. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk. Supported by bsi-masonry-foundation-grids, foundation-engineering-serviceability.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-serviceability",
+      "checked_sources": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-serviceability"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI refined markdown lines 743-751 and 1890-1900; Foundation Engineering lines 1048-1088.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-serviceability"
+    ]
+  },
+  "rationale": {
+    "a": "A mat is selected only for appearance and has no structural role. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk. This stays inside the Batch 148 local source boundary.",
+    "c": "A mat eliminates all settlement and therefore needs no serviceability review. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "A mat is a pile cap for exactly one pile only. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "A mat is a thick reinforced slab that can merge many footings, distribute concentrated loads, and reduce differential settlement risk. Supported by bsi-masonry-foundation-grids, foundation-engineering-serviceability.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-serviceability",
+    "checked_sources": [
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-serviceability"
+    ]
+  }
+}

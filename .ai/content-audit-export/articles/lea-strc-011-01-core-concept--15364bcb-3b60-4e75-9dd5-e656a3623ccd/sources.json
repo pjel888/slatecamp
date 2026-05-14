@@ -1,32 +1,82 @@
 {
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
   "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:fb923897bda081d6324d901bdba53f7847f3f67fab48814e1b0c487bdc802730",
+  "cluster_id": "lea-strc-011-01",
+  "slug": "lea-strc-011-01-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:c8963a1b81600dc9288aa3d7a671ae8897ec7b1e8d7b56be2386beccfaa9e99f",
   "sources": [
     {
-      "source_id": "85678bf2-d3d6-40ea-8261-0fed109e2a28",
-      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
-      "label": "PD 1096 Rule VIII (Foundations); National Structural Code of the Philippines (NSCP) 2015 Edition, Chapter 1-C (Pile Foundation and Caisson Foundation); Bowles, J. E. (1996)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": "Foundation Analysis and Design, 5th ed",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "foundation-engineering-piles",
+      "title": "Foundation Engineering Analysis and Design - pile classification, selection, and load transfer",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_artifact_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_artifact_bytes": 26919935,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_artifact_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_artifact_bytes": 1336057,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/foundation-engineering-piles.source-capture.md",
+      "local_capture_sha256": "sha256:84bb40993ba347b96fc91483426ffc2b35828f4523d6259e7e16841c377ca57a",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/foundation-engineering-piles.refined.md",
+      "refined_capture_sha256": "sha256:fb1861c37053b3e8424722fb9951d0d9194e26c4dc6062a676dfa563b1a950ee",
+      "locator": "refined markdown lines 22935-22971, 23285-23399, 23443-23545, 27859-27925",
+      "safe_claims": [
+        "The source uses deep foundation and pile interchangeably for its chapter terminology.",
+        "Piles may be classified by material, geometry, load transfer mechanism, ground displacement, and installation method.",
+        "A friction pile transfers most load through friction along the pile shaft; a toe-bearing pile transfers most load through resistance at the pile toe.",
+        "Driven piles are installed by impact hammer or vibration; bored piles are cast in place by drilling and then filling the borehole with concrete.",
+        "Driven piles can cause noise, vibration, and soil displacement; bored piles can have lower noise and vibration and can be adjusted during construction as ground conditions are encountered.",
+        "Pile type selection considers project environment, logistics, cost, and technical ground conditions; no single selection procedure fits every site.",
+        "The load at the pile head is transferred through shaft friction and toe resistance.",
+        "Bored-pile quality depends on subsurface exploration, constructability, and quality assurance during borehole drilling and concrete placement.",
+        "In slurry construction, a tremie pipe places concrete from the base of a slurry-filled borehole."
+      ],
+      "use_limits": [
+        "This batch does not restore exact NSCP pile, caisson, or drilled-shaft code section references.",
+        "This batch does not state a universal pile-versus-caisson diameter threshold.",
+        "This batch does not prescribe a standard batter angle, pile spacing, pile capacity, or load-test acceptance value."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "3df36f27-289a-4b50-bcd1-baf5f6c860ef",
-      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
-      "label": "McGraw-Hill; Reese, L. C., & Van Impe, W. F. (2001). Single Piles and Pile Groups under Lateral Loading. Rotterdam: A.A. Balkema",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "bsi-masonry-foundation-grids",
+      "title": "Building Structures Illustrated - masonry walls and foundation grids",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_artifact_bytes": 38160628,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_artifact_bytes": 576829,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/bsi-masonry-foundation-grids.source-capture.md",
+      "local_capture_sha256": "sha256:1f54e06454c7e8264b822b5ff7834c23fd66f5b7d4edf451e47d288cb071f94d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/bsi-masonry-foundation-grids.refined.md",
+      "refined_capture_sha256": "sha256:18334dc9712d2d192d2780fde614b8b18506e89a4bef1a3410cf7d76aa7fecd1",
+      "locator": "refined markdown lines 718-751, 1890-1900, 3699-3701",
+      "safe_claims": [
+        "Masonry construction uses natural or manufactured units, such as stone, brick, or concrete block, usually with mortar as a bonding agent.",
+        "Concrete masonry units commonly have two or three cores; concrete block is economical and easily reinforced for bearing walls.",
+        "A foundation system supports and anchors the superstructure and transmits loads safely into the earth.",
+        "Shallow or spread foundations are used when stable soil with adequate bearing capacity occurs relatively near the ground surface.",
+        "Mat foundations are thick, heavily reinforced concrete slabs used to distribute loads and reduce differential settlement where individual footings are uneconomical or soil capacity varies.",
+        "Pile or caisson foundations are used when building loads exceed the bearing capacity of the supporting soil.",
+        "Individual piles are typically joined by a cast-in-place concrete cap that supports a building column."
+      ],
+      "use_limits": [
+        "This batch does not state Philippine code section numbers for masonry or foundation provisions.",
+        "This batch does not claim exact shallow-foundation depth limits, Df/B thresholds, or settlement tolerance values.",
+        "This batch does not use BSI estimating tables as mandatory code requirements."
+      ],
+      "sort_order": 1
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore exact NSCP pile, caisson, or drilled-shaft code section references.",
+    "No local source in this batch was used to state a universal pile-versus-caisson diameter threshold.",
+    "No local source in this batch was used to prescribe a standard batter angle, pile spacing, pile capacity, or load-test acceptance value."
   ]
 }

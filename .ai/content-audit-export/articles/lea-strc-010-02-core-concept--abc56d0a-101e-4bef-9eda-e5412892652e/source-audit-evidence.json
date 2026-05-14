@@ -1,0 +1,124 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "cluster_id": "lea-strc-010-02",
+  "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "masonry-lecture-chb-units",
+      "title": "Masonry Lecture - CHB composition, sizes, mortar bedding, and reinforcement practice",
+      "source_type": "local_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+      "raw_artifact_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+      "raw_artifact_bytes": 923032,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+      "refined_artifact_sha256": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+      "refined_artifact_bytes": 19305,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/masonry-lecture-chb-units.source-capture.md",
+      "local_capture_sha256": "sha256:70b01a4ec886d3e4c6c2065cc49e05cf1f4c841cf2fa68df84cd6c5d6914b368",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/masonry-lecture-chb-units.refined.md",
+      "refined_capture_sha256": "sha256:9085e19aedb5289b972e27c058fd985b588647c050f1f65f4db099c82a8b780f",
+      "locator": "refined markdown lines 109-147, 314-319, 353-361",
+      "safe_claims": [
+        "Masonry is construction with clay, concrete, or stone units set in mortar.",
+        "Concrete hollow block is a hollow masonry unit with two or three cells or cores made with water, Portland cement, and aggregates.",
+        "Standard CHB sizes in the lecture are 100 mm, 150 mm, and 200 mm thicknesses by 200 mm height by 400 mm length.",
+        "The lecture limits 100 mm CHB to interior partition use where weather-tightness is not required.",
+        "Concrete hollow blocks are laid on a full bed of mortar with 10 mm horizontal and vertical joints.",
+        "Cells containing reinforcement are filled with cement mortar."
+      ],
+      "use_limits": [
+        "This batch does not restore an NBP/ACI hollow-versus-solid percentage threshold.",
+        "This batch does not claim supplier-specific net area, bedded area, bearing stress, or allowable masonry strength values.",
+        "This batch does not replace project specifications for reinforced masonry design, inspection, or grouting schedules."
+      ],
+      "sort_order": 0
+    },
+    {
+      "id": "bsi-masonry-foundation-grids",
+      "title": "Building Structures Illustrated - masonry walls and foundation grids",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_artifact_bytes": 38160628,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_artifact_bytes": 576829,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-148/bsi-masonry-foundation-grids.source-capture.md",
+      "local_capture_sha256": "sha256:1f54e06454c7e8264b822b5ff7834c23fd66f5b7d4edf451e47d288cb071f94d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-148/bsi-masonry-foundation-grids.refined.md",
+      "refined_capture_sha256": "sha256:18334dc9712d2d192d2780fde614b8b18506e89a4bef1a3410cf7d76aa7fecd1",
+      "locator": "refined markdown lines 718-751, 1890-1900, 3699-3701",
+      "safe_claims": [
+        "Masonry construction uses natural or manufactured units, such as stone, brick, or concrete block, usually with mortar as a bonding agent.",
+        "Concrete masonry units commonly have two or three cores; concrete block is economical and easily reinforced for bearing walls.",
+        "A foundation system supports and anchors the superstructure and transmits loads safely into the earth.",
+        "Shallow or spread foundations are used when stable soil with adequate bearing capacity occurs relatively near the ground surface.",
+        "Mat foundations are thick, heavily reinforced concrete slabs used to distribute loads and reduce differential settlement where individual footings are uneconomical or soil capacity varies.",
+        "Pile or caisson foundations are used when building loads exceed the bearing capacity of the supporting soil.",
+        "Individual piles are typically joined by a cast-in-place concrete cap that supports a building column."
+      ],
+      "use_limits": [
+        "This batch does not state Philippine code section numbers for masonry or foundation provisions.",
+        "This batch does not claim exact shallow-foundation depth limits, Df/B thresholds, or settlement tolerance values.",
+        "This batch does not use BSI estimating tables as mandatory code requirements."
+      ],
+      "sort_order": 1
+    }
+  ],
+  "normalized_sha256": "sha256:8aa24bcbc9dcf6c7d084c35570b279a5d813a011b84ab4f76274fec86f99c029",
+  "candidate_sha256": "sha256:3356210209abe44a4fccc3206fb951593806c23700d4c3ed98416a22b8cc0da2",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "8708c400-3f73-401a-8684-0725f9052109",
+      "content_hash": "sha256:3df2e002dbae749a03bf3f0ff824c28bc2b4e0909bd5c09f035e28f79a3b89f8"
+    },
+    {
+      "question_id": "980666c7-2bd4-4b7d-a071-4efc77da8dd5",
+      "content_hash": "sha256:c74d9a89083802e19a7701a7b1acf2ac71ce491b006c33649cac25182fc5fd3c"
+    },
+    {
+      "question_id": "7d557a4f-03e4-4ef0-8e29-92b0de46dd83",
+      "content_hash": "sha256:0551717ce430efc53c5177ce096c0d9c37b12ce8830b63d8ccd28f5920db57b2"
+    },
+    {
+      "question_id": "36908fd7-e3f7-406b-99ee-9972eeb85ead",
+      "content_hash": "sha256:d235f90836ddf403ed26527d67444b7e531c2d29ffd3df99f737129f03735939"
+    },
+    {
+      "question_id": "54803f09-c55b-4706-af46-37901a67c476",
+      "content_hash": "sha256:f1bfb4d70515d812b9886d8cd9258d5c0ddf324f760f171ae6b4edc2520b511b"
+    },
+    {
+      "question_id": "90fb863a-1b8c-4ccc-b459-0db1fc2d5c91",
+      "content_hash": "sha256:9bdd95a0dd865ad88ad6d69624b1f4327472647bcd08bcae437349a3497a0239"
+    },
+    {
+      "question_id": "73c5b75a-0255-4875-83d2-97be0eace9d5",
+      "content_hash": "sha256:b01933c07916dde0b43a203ec2c44ae587c24ffaac088aedb8070ac4b54d523d"
+    },
+    {
+      "question_id": "41bcdd39-88d5-4d5a-817b-8a6ffec636c3",
+      "content_hash": "sha256:69cb04c2b2045674f4f2842bfd7dca4f92646c86ed63310645aa1a6ced52d391"
+    },
+    {
+      "question_id": "c99e0fb0-5c62-4459-8bc7-6436f9a64473",
+      "content_hash": "sha256:655ca5b77e00498a37ded6571aa4645910a09bc1c1aec7c430665de7da631532"
+    },
+    {
+      "question_id": "e5b59c4e-243c-4759-a428-953a69bc7b36",
+      "content_hash": "sha256:f270cf272b3e9b0df77a26a11b68db954dfdc04f2496d14e4f7928ecccd17bf8"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore an NBP/ACI hollow-versus-solid percentage threshold.",
+    "No local source in this batch was used to state supplier-specific net area, bedded area, bearing stress, or allowable masonry strength values.",
+    "No local source in this batch was used to replace project specifications for reinforced masonry inspection or grouting schedules."
+  ],
+  "blocked_residuals_considered": []
+}

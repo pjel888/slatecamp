@@ -1,30 +1,30 @@
 {
   "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:603fe43d9086d4a2e426532b0f9d9d3786d0617771ac8fc64b725b4eb17995b3",
+  "linked_questions_hash": "sha256:1fbdcc507b0207767bc0e2246d2cd277975583e47462bb02bdc92d9b5681d312",
   "question_count": 10,
   "questions": [
     {
       "question_id": "8708c400-3f73-401a-8684-0725f9052109",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "A standard 6-inch (150 mm thick) concrete hollow block measures 150 mm (thickness) × 400 mm (length) at the bed face. Typical cell voids account for 50% of the unit volume. What is the classification of this unit?",
+      "text": "A local masonry lecture describes concrete hollow block as a hollow masonry unit with two or three cells or cores made from water, Portland cement, and aggregates. Which classification best matches that source-backed description?",
       "options": [
         {
           "id": "a",
-          "text": "Solid, because the unit is 150 mm thick"
+          "text": "Solid brick, because all masonry units are fired clay products."
         },
         {
           "id": "b",
-          "text": "Hollow, because net area (50% of gross) is less than 75%"
+          "text": "Concrete hollow block, because the unit is hollow and has two or three cells or cores."
         },
         {
           "id": "c",
-          "text": "Neither hollow nor solid; thickness is independent of void classification"
+          "text": "Stone ashlar, because the unit is defined only by mortar bedding."
         },
         {
           "id": "d",
-          "text": "Solid, because 150 mm is a standard nominal dimension"
+          "text": "Plain concrete wall, because CHB has no separate unit identity."
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Net area = 50% of gross area. Since 50% < 75%, the unit is HOLLOW. Unit thickness and nominal dimensions do not determine classification; only the net-to-gross area ratio does. A thick unit can be hollow; a thin unit can be solid (high web density).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Solid brick, because all masonry units are fired clay products. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Concrete hollow block, because the unit is hollow and has two or three cells or cores. This stays inside the Batch 148 local source boundary.",
+        "c": "Stone ashlar, because the unit is defined only by mortar bedding. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Plain concrete wall, because CHB has no separate unit identity. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Concrete hollow block, because the unit is hollow and has two or three cells or cores. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1907.1; ACI 530-19, Sec. 2.1.1.1",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 314-319.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:680ac917db8ad512d1cc43f9d95417e38cf1291ddba7324999bcc5fe90844340"
+      "content_hash": "sha256:3df2e002dbae749a03bf3f0ff824c28bc2b4e0909bd5c09f035e28f79a3b89f8"
     },
     {
       "question_id": "980666c7-2bd4-4b7d-a071-4efc77da8dd5",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "A design office uses a simplified approach: they assume all concrete hollow blocks have a bedded area equal to 60% of gross area and apply this 60% multiplier to all bearing stress calculations without verifying actual unit properties for each project. A new CHB supplier provides units with a bedded area of only 48% of gross area. Evaluate the risk of this simplified approach and explain the structural consequence when these new units are used without design revision.",
+      "text": "A supplier submittal for CHB changes the wall-unit details from the standard lecture description. What is the safest source-backed review response before accepting the units for a structural wall?",
       "options": [
         {
           "id": "a",
-          "text": "The simplified approach is acceptable because 60% is a conservative average. The new 48% units provide a 12% additional safety margin, which is beneficial for structural integrity."
+          "text": "Accept the change automatically because all hollow blocks have identical strength and contact behavior."
         },
         {
           "id": "b",
-          "text": "The simplified approach masks actual unit properties. Using 48% units without revision results in underestimated bearing stress and increases crushing risk. Actual stress is 25% higher than the simplified 60% assumption predicts, creating inadequacy."
+          "text": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value."
         },
         {
           "id": "c",
-          "text": "The bedded area difference is negligible (<15%); the simplified approach is acceptable for all suppliers, as it falls within typical industry tolerances."
+          "text": "Ignore the submittal because CHB dimensions alone prove structural adequacy."
         },
         {
           "id": "d",
-          "text": "The simplified approach requires adjustment only if the new units have net area < 40% of gross; a 48% bedded area is always adequate for standard load conditions."
+          "text": "Approve only if the unit has fewer cells, because fewer cells always increase capacity."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Simplified assumption: stress = load ÷ (0.60 × gross). Actual stress with 48% bedded: stress = load ÷ (0.48 × gross) = (0.60 ÷ 0.48) × assumed stress = 1.25× assumed stress. The 25% stress amplification means actual stress is 25% higher than designed, risking bearing failure. The simplified approach is inadequate and dangerous; bedded area must be verified for each unit type and supplier. This error violates ALE design principles and NBP requirements.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Accept the change automatically because all hollow blocks have identical strength and contact behavior. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value. This stays inside the Batch 148 local source boundary.",
+        "c": "Ignore the submittal because CHB dimensions alone prove structural adequacy. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Approve only if the unit has fewer cells, because fewer cells always increase capacity. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Check the actual unit properties and project specification because source-backed CHB facts do not supply a universal bearing or strength value. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1907.5 (Bearing Strength Design); ACI 530-19, Sec. 3.3.4.3",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 314-319 and 353-361.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.9,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:29a6947ec8bf1d92f3184fbabeb57bdcdda464bd0bd1f08b2ff0e31b5f8dfa55"
+      "content_hash": "sha256:c74d9a89083802e19a7701a7b1acf2ac71ce491b006c33649cac25182fc5fd3c"
     },
     {
       "question_id": "7d557a4f-03e4-4ef0-8e29-92b0de46dd83",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "Which of the following best describes the relationship between net area, gross area, and bedded area for a concrete hollow block?",
+      "text": "Which statement best connects masonry units, mortar, and CHB cells within the captured local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "All three are equal; the terms are synonymous and interchangeable, which simplifies calculations"
+          "text": "Masonry, mortar, units, and cells are interchangeable names for the same object."
         },
         {
           "id": "b",
-          "text": "Gross area > net area > bedded area; bedded area is the portion of solid material actually contacting mortar in the bed joint."
+          "text": "Masonry is built from units set in mortar; CHB is one hollow unit type with cells or cores that may contain reinforcement."
         },
         {
           "id": "c",
-          "text": "Bedded area > net area > gross area; bedded area includes both solid material and partial void contact, affecting structural integrity"
+          "text": "Mortar is the hollow part of the block, while the cells are the wall finish."
         },
         {
           "id": "d",
-          "text": "Net area = bedded area; gross area is a theoretical measurement used only for classification, not practical application"
+          "text": "A CHB cell is a separate foundation unit unrelated to the block."
         }
       ],
       "correct_option_id": "b",
@@ -133,17 +149,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Gross area is the total bounding cross-section (including all voids). Net area is the solid material (voids excluded). Bedded area is the portion of solid material that actually contacts mortar in the bed joint. For typical CHB with shells contacting mortar: gross > net > bedded. Bedded area is typically 50–60% of gross and slightly less than net area (because not all internal solid walls contact mortar).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Masonry, mortar, units, and cells are interchangeable names for the same object. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Masonry is built from units set in mortar; CHB is one hollow unit type with cells or cores that may contain reinforcement. This stays inside the Batch 148 local source boundary.",
+        "c": "Mortar is the hollow part of the block, while the cells are the wall finish. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "A CHB cell is a separate foundation unit unrelated to the block. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Masonry is built from units set in mortar; CHB is one hollow unit type with cells or cores that may contain reinforcement. Supported by masonry-lecture-chb-units, bsi-masonry-foundation-grids.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units, bsi-masonry-foundation-grids",
+        "checked_sources": [
+          "masonry-lecture-chb-units",
+          "bsi-masonry-foundation-grids"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1907.1; ACI 530-19, Sec. 2.1.1.2",
+      "code_citation": "Local source boundary: Masonry Lecture lines 109-147, 314-319, 353-361; BSI lines 3699-3701.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units",
+        "bsi-masonry-foundation-grids"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +178,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9f68bda2f534916401d60f4a6ba59b885ab1f7ebc6590e442a353c3b68972cf3"
+      "content_hash": "sha256:0551717ce430efc53c5177ce096c0d9c37b12ce8830b63d8ccd28f5920db57b2"
     },
     {
       "question_id": "36908fd7-e3f7-406b-99ee-9972eeb85ead",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "An inspector discovers that a three-story concrete hollow block wall is experiencing localized crushing failure at bed joints (visible spalling and mortar extrusion). The wall was designed using gross area instead of bedded area for the bearing stress calculation. Explain why this design error occurred, quantify the actual vs. calculated stress, and propose a remedial design strategy.",
+      "text": "A site detail shows CHB courses without a full mortar bed and with reinforced cells left unfilled. Which source-backed concern should the reviewer raise first?",
       "options": [
         {
           "id": "a",
-          "text": "Using gross area underestimated the actual bearing stress by approximately 40–50%, leading to higher actual stress than designed. Remediation requires reducing load, thickening the wall, or injecting grout to increase bedded area. Design correction: always use bedded area (55–60% of gross for typical CHB), not gross area."
+          "text": "The detail conflicts with the local lecture practice that CHB should be laid on a full bed of mortar and cells with reinforcement are filled with cement mortar."
         },
         {
           "id": "b",
-          "text": "Using gross area overestimated stress, providing a safety margin. No remediation is required; the crushing is due to poor workmanship, not design."
+          "text": "No concern is needed because mortar joints are decorative and reinforced cells are optional in all walls."
         },
         {
           "id": "c",
-          "text": "Gross and bedded area differences are negligible for design purposes; the crushing is unrelated to area calculation methods."
+          "text": "The only issue is paint finish because CHB structural behavior is independent of mortar bedding."
         },
         {
           "id": "d",
-          "text": "The design error is irreversible; the wall must be demolished and reconstructed with a different unit type."
+          "text": "The wall must be demolished immediately because no field correction is ever possible."
         }
       ],
       "correct_option_id": "a",
@@ -183,17 +209,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Gross area for 6-inch CHB ≈ 60,000 mm²; bedded area ≈ 33,000–36,000 mm² (55–60% of gross). If design used gross (60,000 mm²), actual stress = load ÷ bedded (33,000 mm²) = 1.82× the designed stress. This 82% stress amplification easily causes crushing. Remediation: (1) reduce applied load (post-tensioning relief), (2) increase wall thickness (spreads load over more units), or (3) grout all cells (increases effective bedded area). Future designs must use bedded area exclusively.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The detail conflicts with the local lecture practice that CHB should be laid on a full bed of mortar and cells with reinforcement are filled with cement mortar. This stays inside the Batch 148 local source boundary.",
+        "b": "No concern is needed because mortar joints are decorative and reinforced cells are optional in all walls. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "c": "The only issue is paint finish because CHB structural behavior is independent of mortar bedding. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "The wall must be demolished immediately because no field correction is ever possible. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "The detail conflicts with the local lecture practice that CHB should be laid on a full bed of mortar and cells with reinforcement are filled with cement mortar. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1907.5 (Allowable Stress Design); ACI 530-19, Sec. 3.3.4.3",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 353-361.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +236,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c08bda2783d55c01e9c364da037693723bc34e37240b94afd37ab518311ca43c"
+      "content_hash": "sha256:d235f90836ddf403ed26527d67444b7e531c2d29ffd3df99f737129f03735939"
     },
     {
       "question_id": "54803f09-c55b-4706-af46-37901a67c476",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "A masonry wall constructed of standard 6-inch CHB (gross area = 60,000 mm², bedded area = 33,000 mm²) carries a service (unfactored) axial load of 250 kN per unit width. The allowable bearing strength for this masonry is 3.5 MPa. Calculate the required bedded area and determine if the unit is adequate. If not, propose a mitigation strategy.",
+      "text": "Which size family is explicitly listed by the local masonry lecture for standard CHB?",
       "options": [
         {
           "id": "a",
-          "text": "Required bedded area = 250 kN ÷ 3.5 MPa = 71,429 mm² (exact); available bedded area is 33,000 mm² (INADEQUATE). Mitigation: increase wall thickness or use higher-strength grout in all cells to increase effective bearing area."
+          "text": "100 mm, 150 mm, or 200 mm thickness by 200 mm height by 400 mm length."
         },
         {
           "id": "b",
-          "text": "Required bedded area = 250 kN ÷ 3.5 MPa = 71,400 mm²; available bedded area exceeds this (ADEQUATE). No mitigation required."
+          "text": "75 mm thickness by 300 mm height by 700 mm length for all structural CHB."
         },
         {
           "id": "c",
-          "text": "Bedded area does not apply to service loads; only factored loads require bearing checks. The unit is adequate."
+          "text": "Only 150 mm thickness, with height and length left unstated."
         },
         {
           "id": "d",
-          "text": "Required area = 250 kN ÷ 3.5 MPa = 71.4 mm² (ADEQUATE for all practical walls)."
+          "text": "Any thickness is standard if the block is made with cement."
         }
       ],
       "correct_option_id": "a",
@@ -233,17 +267,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bearing stress = 250 kN ÷ (33,000 mm² ÷ 1,000,000 mm²/m²) = 250 ÷ 0.033 = 7.58 MPa > 3.5 MPa allowable (INADEQUATE). To reduce stress, either: (1) increase wall thickness (increases bedded area and divides load into more units), or (2) use higher-strength grout (increases effective bedded area through cell filling). Full-cell grouting is a practical mitigation that converts some void area to solid material, increasing bedded area.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "100 mm, 150 mm, or 200 mm thickness by 200 mm height by 400 mm length. This stays inside the Batch 148 local source boundary.",
+        "b": "75 mm thickness by 300 mm height by 700 mm length for all structural CHB. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "c": "Only 150 mm thickness, with height and length left unstated. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Any thickness is standard if the block is made with cement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "100 mm, 150 mm, or 200 mm thickness by 200 mm height by 400 mm length. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1907.5 (Allowable Stress Design—Bearing Strength); ACI 530-19, Sec. 3.3.4.3",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 314-319.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +294,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b715bd4fa11923ff851f2ae93a68bd1f972813ffbe6c60aa8b82bc75918a6ee0"
+      "content_hash": "sha256:f1bfb4d70515d812b9886d8cd9258d5c0ddf324f760f171ae6b4edc2520b511b"
     },
     {
       "question_id": "90fb863a-1b8c-4ccc-b459-0db1fc2d5c91",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "Compare solid masonry units (net area ≥ 75% of gross) and hollow masonry units (net area < 75% of gross) in terms of structural behavior under compression, bearing stress development, lateral bond capacity, grouting strategy, and applicability in seismic design. Provide specific examples and explain why hollow units dominate in Philippine practice despite lower net area.",
+      "text": "Why is concrete block commonly treated as a practical bearing-wall masonry unit in the captured sources?",
       "options": [
         {
           "id": "a",
-          "text": "Solid units have uniform stress distribution and high bearing capacity; hollow units have concentration at shells and higher bedded stress, but hollow units dominate in the Philippines due to lower material cost and availability of CHB production capacity, not superior structural performance."
+          "text": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar."
         },
         {
           "id": "b",
-          "text": "Hollow units are stronger than solid units; they are preferred for seismic design because empty cells act as shock absorbers, which is a common misconception."
+          "text": "Concrete block is always stronger than reinforced concrete and needs no reinforcement."
         },
         {
           "id": "c",
-          "text": "Solid and hollow units have identical structural performance if grouted equally; selection is purely economic, often influenced by local market conditions."
+          "text": "Concrete block is used only as a veneer and cannot form a bearing wall."
         },
         {
           "id": "d",
-          "text": "Hollow units cannot be used in high-rise buildings; solid units are mandatory for structures over three stories, which is a regulatory requirement in some regions."
+          "text": "Concrete block works because its hollow cells act as shock absorbers in every seismic design."
         }
       ],
       "correct_option_id": "a",
@@ -283,17 +325,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Solid units (≥75% net) distribute stress uniformly; hollow units (<75% net) concentrate stress at solid shells, requiring bearing verification via bedded area. Solid units have simpler design and higher bearing capacity. However, hollow CHB dominates in the Philippines because: (1) significant cost savings (less material per unit), (2) established production infrastructure for CHB, (3) proven performance with appropriate grouting strategy, and (4) thermal benefits (ungrouted cells provide insulation). Hollow units are fully structural when designed correctly with strategic grouting at reinforcement and header locations.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar. This stays inside the Batch 148 local source boundary.",
+        "b": "Concrete block is always stronger than reinforced concrete and needs no reinforcement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "c": "Concrete block is used only as a veneer and cannot form a bearing wall. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Concrete block works because its hollow cells act as shock absorbers in every seismic design. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Concrete block is economical and easily reinforced, and local CHB practice includes reinforced cells filled with cement mortar. Supported by masonry-lecture-chb-units, bsi-masonry-foundation-grids.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units, bsi-masonry-foundation-grids",
+        "checked_sources": [
+          "masonry-lecture-chb-units",
+          "bsi-masonry-foundation-grids"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1907-1908 (Masonry); ACI 530-19, Sec. 2.1 (Unit Properties)",
+      "code_citation": "Local source boundary: BSI refined markdown lines 3699-3701; Masonry Lecture lines 353-361.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units",
+        "bsi-masonry-foundation-grids"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +354,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9ae865c2f84438a8b2d94e0ce3f7e4551073c5bf9da985b69880209b8aa13a5c"
+      "content_hash": "sha256:9bdd95a0dd865ad88ad6d69624b1f4327472647bcd08bcae437349a3497a0239"
     },
     {
       "question_id": "73c5b75a-0255-4875-83d2-97be0eace9d5",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "Standard concrete hollow blocks are produced with net-to-gross area ratios typically between 45% and 55%. A manufacturer proposes a new 'super-hollow' block with a net-to-gross ratio of 40% to reduce material cost. How does this change affect the structural classification and design considerations?",
+      "text": "A manufacturer proposes a CHB with different cell geometry from the blocks described in the local lecture. What design consequence follows from the source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Classification remains hollow; bearing stress increases, potentially requiring thicker walls or lower allowable stress design values to avoid local crushing."
+          "text": "The unit remains a CHB candidate, but its actual properties must be checked against the project specification before structural use."
         },
         {
           "id": "b",
-          "text": "The unit would be reclassified as 'ultra-hollow' and cannot be used in structural masonry due to insufficient material for load-bearing applications."
+          "text": "It becomes a new code category that is automatically prohibited in all walls."
         },
         {
           "id": "c",
-          "text": "Bearing stress decreases because less material means lighter load transfer, which may affect the overall stability of the structure."
+          "text": "Changing cells always decreases bearing stress, so the design is automatically safer."
         },
         {
           "id": "d",
-          "text": "Classification changes from hollow to a new intermediate category; existing design methods do not apply, necessitating new engineering assessments."
+          "text": "Existing CHB source facts no longer apply to any part of the wall assembly."
         }
       ],
       "correct_option_id": "a",
@@ -333,17 +385,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "40% < 75%, so the unit remains HOLLOW in classification. However, lower net area (40% vs. typical 50%) means lower bedded area and proportionally higher bearing stress for the same applied load. The unit remains usable but requires careful design: bedded area is even smaller, stress is higher, and local crushing risk increases. Design must explicitly address this higher bearing stress, potentially through thicker walls, higher-strength grout, or reinforcement strategies.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The unit remains a CHB candidate, but its actual properties must be checked against the project specification before structural use. This stays inside the Batch 148 local source boundary.",
+        "b": "It becomes a new code category that is automatically prohibited in all walls. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "c": "Changing cells always decreases bearing stress, so the design is automatically safer. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Existing CHB source facts no longer apply to any part of the wall assembly. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "The unit remains a CHB candidate, but its actual properties must be checked against the project specification before structural use. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1907.1 (Masonry Unit Properties); ACI 530-19, Sec. 3.3.4.3 (Bearing Strength)",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 314-319 and 353-361.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +412,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cfd4f8bb531a4bed8b27b372577721dd2f2afd8f18fe0a65e822b7a8905ec710"
+      "content_hash": "sha256:b01933c07916dde0b43a203ec2c44ae587c24ffaac088aedb8070ac4b54d523d"
     },
     {
       "question_id": "41bcdd39-88d5-4d5a-817b-8a6ffec636c3",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "No change needed (math correct), but confirm units consistent. The solid material (excluding all cells) measures 0.035 m². What is the net area, and is this unit classified as hollow or solid?",
+      "text": "A note says 100 mm CHB will be used on an exterior wall where weather-tightness is required. Which option matches the local lecture limitation?",
       "options": [
         {
           "id": "a",
-          "text": "Net area = 0.035 m²; classification = solid (because 0.035 > 0.030)"
+          "text": "100 mm CHB is preferred for all exterior walls because it is lighter."
         },
         {
           "id": "b",
-          "text": "Net area = 0.035 m²; classification = hollow (because 0.035 ÷ 0.060 = 58.3% < 75%)"
+          "text": "The lecture limits 100 mm CHB to interior partition walls where weather-tightness is not required."
         },
         {
           "id": "c",
-          "text": "Net area = 0.025 m²; classification = solid (because gross area is large)"
+          "text": "100 mm CHB is classified as natural stone and therefore weatherproof."
         },
         {
           "id": "d",
-          "text": "Net area = 0.035 m²; classification = indeterminate (requires field testing)"
+          "text": "The source gives no use limitation for 100 mm CHB."
         }
       ],
       "correct_option_id": "b",
@@ -383,17 +443,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Net area is the solid material only = 0.035 m². Classification: 0.035 ÷ 0.060 = 0.583 = 58.3% < 75%, so the unit is HOLLOW. The 75% threshold is the code criterion: net area ≥ 75% of gross = solid; < 75% = hollow.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "100 mm CHB is preferred for all exterior walls because it is lighter. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "The lecture limits 100 mm CHB to interior partition walls where weather-tightness is not required. This stays inside the Batch 148 local source boundary.",
+        "c": "100 mm CHB is classified as natural stone and therefore weatherproof. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "The source gives no use limitation for 100 mm CHB. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "The lecture limits 100 mm CHB to interior partition walls where weather-tightness is not required. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Section 610 (Masonry), referencing ACI 530-13/ASCE 5-13/TMS 402-13 Sec. 2.1; or PNS 49:2002 (Concrete Hollow Blocks)",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 318-319.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +470,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bdf877fe321bf5056b82511d31c3a1824b3aa51ec10886230def670d447de310"
+      "content_hash": "sha256:69cb04c2b2045674f4f2842bfd7dca4f92646c86ed63310645aa1a6ced52d391"
     },
     {
       "question_id": "c99e0fb0-5c62-4459-8bc7-6436f9a64473",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "In a concrete hollow block wall, a factored axial load is transmitted through a single course. If the gross area of one CHB unit is 60,000 mm² and the bedded area is 35,000 mm² (approximately 58% of gross), what is the key implication for design?",
+      "text": "In a CHB wall detail, why should the reviewer care whether the block is laid on a full bed of mortar?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing stress must be calculated using gross area to avoid overestimation of stress, ensuring safety margins are maintained."
+          "text": "The reviewer should use only gross wall area and ignore mortar contact."
         },
         {
           "id": "b",
-          "text": "Bearing stress is higher than if calculated using gross area, increasing the risk of local crushing at bed joints."
+          "text": "The local lecture requires CHB to be laid on a full bed of mortar, so the bed joint is part of the source-backed load path and workmanship check."
         },
         {
           "id": "c",
-          "text": "Bedded area and gross area produce the same bearing stress; the difference is negligible for design, allowing for simplified calculations."
+          "text": "Mortar bed requirements apply only to clay tile, not CHB."
         },
         {
           "id": "d",
-          "text": "Bedded area applies only to unreinforced masonry; reinforced masonry uses gross area, which affects the choice of design methodology."
+          "text": "Full mortar bedding is prohibited when a block has cells."
         }
       ],
       "correct_option_id": "b",
@@ -433,17 +501,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bearing stress = load ÷ bedded area (35,000 mm²), not gross area (60,000 mm²). Because bedded area is only 58% of gross, the bearing stress is correspondingly higher (load ÷ 0.58 × original). This higher stress increases the risk of local crushing and must be explicitly verified in design. Bearing strength of hollow masonry is typically lower than solid masonry for this reason.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The reviewer should use only gross wall area and ignore mortar contact. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "The local lecture requires CHB to be laid on a full bed of mortar, so the bed joint is part of the source-backed load path and workmanship check. This stays inside the Batch 148 local source boundary.",
+        "c": "Mortar bed requirements apply only to clay tile, not CHB. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Full mortar bedding is prohibited when a block has cells. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "The local lecture requires CHB to be laid on a full bed of mortar, so the bed joint is part of the source-backed load path and workmanship check. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Section 610-3.3.4 (Bearing Strength, referencing ACI 530 Sec. 3.3.4); ACI 530-19, Sec. 3.3.4.3",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 353-361.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +528,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2bb68645f301615dd7560d28585e3f15d14a951a72f7fa77cd667dd5051b4d4e"
+      "content_hash": "sha256:655ca5b77e00498a37ded6571aa4645910a09bc1c1aec7c430665de7da631532"
     },
     {
       "question_id": "e5b59c4e-243c-4759-a428-953a69bc7b36",
       "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
       "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
-      "text": "A structural designer is deciding between full-cell grouting (all cells filled) and strategic cell grouting (only cells at reinforcement locations and specified intervals) for a four-story hollow CHB building. From a structural and economic perspective, what is the primary advantage of strategic grouting?",
+      "text": "A structural note calls for reinforcing bars in selected CHB cells. Which source-backed statement best explains the required follow-through?",
       "options": [
         {
           "id": "a",
-          "text": "Full-cell grouting provides uniform strength throughout; strategic grouting is weaker and acceptable only for non-seismic buildings, which do not require the same level of reinforcement."
+          "text": "All unreinforced cells must remain empty and reinforced cells are also left empty."
         },
         {
           "id": "b",
-          "text": "Strategic grouting provides required vertical load paths and lateral confinement around reinforcement while reducing material cost and preserving thermal insulation in ungrouted cells."
+          "text": "Cells with reinforcement are filled with cement mortar, tying the reinforcement detail to the masonry unit."
         },
         {
           "id": "c",
-          "text": "Strategic grouting is cosmetically superior and requires no structural justification, making it a choice for projects where aesthetics are prioritized over structural integrity."
+          "text": "Reinforcement is cosmetic and does not affect CHB construction."
         },
         {
           "id": "d",
-          "text": "Full-cell grouting is prohibited in seismic zones; strategic grouting is the only code-approved method, ensuring compliance with local building regulations."
+          "text": "Full-cell grouting is prohibited in every CHB wall regardless of design."
         }
       ],
       "correct_option_id": "b",
@@ -483,17 +559,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Strategic grouting places grout where structurally necessary: in cells with vertical reinforcement (load transfer), at header courses (lateral tying), and at specified intervals. Ungrouted cells maintain insulation value. Full grouting is structurally redundant in these locations and increases cost without proportional structural benefit. Strategic grouting is code-compliant for both seismic and non-seismic design.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All unreinforced cells must remain empty and reinforced cells are also left empty. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "b": "Cells with reinforcement are filled with cement mortar, tying the reinforcement detail to the masonry unit. This stays inside the Batch 148 local source boundary.",
+        "c": "Reinforcement is cosmetic and does not affect CHB construction. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "d": "Full-cell grouting is prohibited in every CHB wall regardless of design. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+        "correct": "Cells with reinforcement are filled with cement mortar, tying the reinforcement detail to the masonry unit. Supported by masonry-lecture-chb-units.",
+        "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-chb-units",
+        "checked_sources": [
+          "masonry-lecture-chb-units"
+        ]
       },
       "explanation": null,
-      "code_citation": "NBP 2020, Sec. 1908.7 (Grouting); ACI 530-19, Sec. 2.4.1",
+      "code_citation": "Local source boundary: Masonry Lecture refined markdown lines 353-361.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-148-local-first",
+        "masonry-lecture-chb-units"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +586,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:89ca278b2188eac86e258936a6a10fb07921828dfc4c3c100353b20145c8a5b2"
+      "content_hash": "sha256:f270cf272b3e9b0df77a26a11b68db954dfdc04f2496d14e4f7928ecccd17bf8"
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "batch": 148,
+  "batch_id": "source-audited-batch-148-local-first",
+  "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+  "cluster_id": "lea-strc-011-02",
+  "question_id": "fb83458b-d990-4b58-bd7f-4d2b25de3fc5",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:3df28b02f7ffd2409497f5d3592c88086fa0f7e75fae02b4ee58b24a9ebe28c0",
+  "after_hash": "sha256:3df28b02f7ffd2409497f5d3592c88086fa0f7e75fae02b4ee58b24a9ebe28c0",
+  "baseline_hash": "sha256:3df28b02f7ffd2409497f5d3592c88086fa0f7e75fae02b4ee58b24a9ebe28c0",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-masonry-foundation-grids",
+    "foundation-engineering-serviceability"
+  ],
+  "reason": "Batch 148 local-first rewrite aligned to reserved source boundary.",
+  "proposed": {
+    "text": "A site has variable soil bearing capacity, and isolated footings are likely to settle differently. Which source-backed foundation response is most appropriate to evaluate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore the variability because any shallow footing is acceptable if it is cheaper."
+      },
+      {
+        "id": "b",
+        "text": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement."
+      },
+      {
+        "id": "c",
+        "text": "Add the structure weight and excavated soil weight to claim a specialty foundation balance without source support."
+      },
+      {
+        "id": "d",
+        "text": "Assume settlement is impossible under reinforced concrete."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Ignore the variability because any shallow footing is acceptable if it is cheaper. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "b": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement. This stays inside the Batch 148 local source boundary.",
+      "c": "Add the structure weight and excavated soil weight to claim a specialty foundation balance without source support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "d": "Assume settlement is impossible under reinforced concrete. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+      "correct": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement. Supported by bsi-masonry-foundation-grids, foundation-engineering-serviceability.",
+      "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-serviceability",
+      "checked_sources": [
+        "bsi-masonry-foundation-grids",
+        "foundation-engineering-serviceability"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BSI refined markdown lines 1890-1900; Foundation Engineering lines 1048-1088.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-148-local-first",
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-serviceability"
+    ]
+  },
+  "rationale": {
+    "a": "Ignore the variability because any shallow footing is acceptable if it is cheaper. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "b": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement. This stays inside the Batch 148 local source boundary.",
+    "c": "Add the structure weight and excavated soil weight to claim a specialty foundation balance without source support. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "d": "Assume settlement is impossible under reinforced concrete. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 148 local source boundary.",
+    "correct": "Evaluate a mat foundation because it can distribute concentrated loads to areas of higher-capacity soil and reduce differential settlement. Supported by bsi-masonry-foundation-grids, foundation-engineering-serviceability.",
+    "takeaway": "For this article, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-masonry-foundation-grids, foundation-engineering-serviceability",
+    "checked_sources": [
+      "bsi-masonry-foundation-grids",
+      "foundation-engineering-serviceability"
+    ]
+  }
+}
