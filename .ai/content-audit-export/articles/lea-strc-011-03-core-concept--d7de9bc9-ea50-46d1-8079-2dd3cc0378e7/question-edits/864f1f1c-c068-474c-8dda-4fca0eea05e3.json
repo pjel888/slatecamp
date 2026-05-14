@@ -1,0 +1,73 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "cluster_id": "lea-strc-011-03",
+  "question_id": "864f1f1c-c068-474c-8dda-4fca0eea05e3",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:d363467a9221dfe48612e35537192cecee021fd59d50b342f23163bb2251fdda",
+  "after_hash": "sha256:599942998300e0176367ef4c5172e2f3fe50b74add95eec6c2d522d4b8bed694",
+  "baseline_hash": "sha256:d363467a9221dfe48612e35537192cecee021fd59d50b342f23163bb2251fdda",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-geotechnical-b149",
+    "bsi-foundation-context-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
+  "proposed": {
+    "text": "A site has weak near-surface soil, groundwater observations, and a deeper competent stratum indicated by exploration. Which foundation strategy is the best source-safe direction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore the exploration and use a shallow footing because all buildings start at grade."
+      },
+      {
+        "id": "b",
+        "text": "Use the cheapest footing type regardless of bearing capacity or settlement."
+      },
+      {
+        "id": "c",
+        "text": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability."
+      },
+      {
+        "id": "d",
+        "text": "Use a decorative slab because groundwater cancels bearing-capacity concerns."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Ignore the exploration and use a shallow footing because all buildings start at grade. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "Use the cheapest footing type regardless of bearing capacity or settlement. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "c": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability. This stays inside the Batch 149 local source boundary.",
+      "d": "Use a decorative slab because groundwater cancels bearing-capacity concerns. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability. Supported by foundation-engineering-geotechnical-b149, bsi-foundation-context-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "foundation-engineering-geotechnical-b149, bsi-foundation-context-b149",
+      "checked_sources": [
+        "foundation-engineering-geotechnical-b149",
+        "bsi-foundation-context-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined lines 6844-6868 and BSI refined lines 1888-1902.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "foundation-engineering-geotechnical-b149",
+      "bsi-foundation-context-b149"
+    ]
+  },
+  "rationale": {
+    "a": "Ignore the exploration and use a shallow footing because all buildings start at grade. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "Use the cheapest footing type regardless of bearing capacity or settlement. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "c": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability. This stays inside the Batch 149 local source boundary.",
+    "d": "Use a decorative slab because groundwater cancels bearing-capacity concerns. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability. Supported by foundation-engineering-geotechnical-b149, bsi-foundation-context-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "foundation-engineering-geotechnical-b149, bsi-foundation-context-b149",
+    "checked_sources": [
+      "foundation-engineering-geotechnical-b149",
+      "bsi-foundation-context-b149"
+    ]
+  }
+}

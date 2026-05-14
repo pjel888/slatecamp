@@ -1,65 +1,69 @@
 {
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+  "cluster_id": "lea-matl-006-02",
   "question_id": "8c5f0540-4251-4ba2-9829-c1ea1c7fac14",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:cc1795188bb61e8987e24bdef8636e2a4a6d78159749448460266f85fa2280e4",
+  "after_hash": "sha256:ab268b18720e2fd0ffe5c004b942978ed9e41bf20358058df9ef995906b07c82",
   "baseline_hash": "sha256:cc1795188bb61e8987e24bdef8636e2a4a6d78159749448460266f85fa2280e4",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-006-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
-    "parent_article_slug": "lea-matl-006-02-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
-      "Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited roof_trusses scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-roof-trusses-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
   "proposed": {
-    "text": "What connection method does BCI associate with pre-engineered wood trussed rafters?",
+    "text": "What should be checked first when roof loads are applied to a truss?",
     "options": [
       {
         "id": "a",
-        "text": "Metal-toothed plate connectors"
+        "text": "Whether loads enter at panel points so members remain primarily axial and secondary bending is avoided."
       },
       {
         "id": "b",
-        "text": "Terrazzo divider strips"
+        "text": "Whether the roof color matches the truss type."
       },
       {
         "id": "c",
-        "text": "Carpet tackless strips only"
+        "text": "Whether the truss can be treated as a solid concrete slab."
       },
       {
         "id": "d",
-        "text": "Tile thinset mortar"
+        "text": "Whether purlins are intentionally placed between panel points to increase bending."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "BCI states that wood trussed rafter members are connected with metal-toothed plate connectors.",
-    "explanation": "BCI states that wood trussed rafter members are connected with metal-toothed plate connectors.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "rationale": {
+      "a": "Whether loads enter at panel points so members remain primarily axial and secondary bending is avoided. This stays inside the Batch 149 local source boundary.",
+      "b": "Whether the roof color matches the truss type. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "c": "Whether the truss can be treated as a solid concrete slab. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "Whether purlins are intentionally placed between panel points to increase bending. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Whether loads enter at panel points so members remain primarily axial and secondary bending is avoided. Supported by bci-roof-trusses-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "bci-roof-trusses-b149",
+      "checked_sources": [
+        "bci-roof-trusses-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined lines 1862-1871 and 7376-7468.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "bci-roof-trusses-b149"
+    ]
+  },
+  "rationale": {
+    "a": "Whether loads enter at panel points so members remain primarily axial and secondary bending is avoided. This stays inside the Batch 149 local source boundary.",
+    "b": "Whether the roof color matches the truss type. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "c": "Whether the truss can be treated as a solid concrete slab. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "Whether purlins are intentionally placed between panel points to increase bending. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Whether loads enter at panel points so members remain primarily axial and secondary bending is avoided. Supported by bci-roof-trusses-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "bci-roof-trusses-b149",
+    "checked_sources": [
+      "bci-roof-trusses-b149"
+    ]
   }
 }

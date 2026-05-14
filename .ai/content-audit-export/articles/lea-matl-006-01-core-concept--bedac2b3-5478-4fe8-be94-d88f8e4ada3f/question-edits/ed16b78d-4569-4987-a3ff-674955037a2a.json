@@ -1,65 +1,69 @@
 {
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+  "cluster_id": "lea-matl-006-01",
   "question_id": "ed16b78d-4569-4987-a3ff-674955037a2a",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:12348994eee65d6f14ef21dac827bb748371df105bbd2f20b29d8725525e3c26",
+  "after_hash": "sha256:236a0c7ca2a76e9695158f31421a0c4bbc282467984be3b9081d479d6bb57d8c",
   "baseline_hash": "sha256:12348994eee65d6f14ef21dac827bb748371df105bbd2f20b29d8725525e3c26",
-  "action": "replace",
-  "reason": "source-audited-article-batch-077-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-006-01-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-077",
-  "approved_at": "2026-05-12T04:10:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
-    "parent_article_slug": "lea-matl-006-01-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 695-710, 6412-6454, and 7990-8012; Salvan refined markdown lines 3152-3337; raw PDF pages 30, 197, and 111 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
-      "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "salvan-building-materials-b077",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "bci-5e-b077",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 077 local raw-source-audited roofing_materials scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-roofing-systems-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
   "proposed": {
-    "text": "What other performance functions can a roof assembly control besides rain?",
+    "text": "Which answer correctly classifies roof materials by slope under the captured BCI source?",
     "options": [
       {
         "id": "a",
-        "text": "Moisture vapor, air infiltration, heat flow, solar radiation, and sometimes fire spread"
+        "text": "Flat roofs should use loose shingles only."
       },
       {
         "id": "b",
-        "text": "Only furniture layout"
+        "text": "Low-slope roofs should use clay tile only."
       },
       {
         "id": "c",
-        "text": "Only paint color"
+        "text": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials."
       },
       {
         "id": "d",
-        "text": "Only door hardware height"
+        "text": "All slopes use the same roofing material."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI describes roof construction as controlling moisture vapor, air infiltration, heat flow, solar radiation, and possible fire spread.",
-    "explanation": "BCI describes roof construction as controlling moisture vapor, air infiltration, heat flow, solar radiation, and possible fire spread.",
-    "code_citation": "George Salvan Architectural Building Materials; Building Construction Illustrated, 5th Edition"
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Flat roofs should use loose shingles only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "Low-slope roofs should use clay tile only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "c": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials. This stays inside the Batch 149 local source boundary.",
+      "d": "All slopes use the same roofing material. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials. Supported by bci-roofing-systems-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "bci-roofing-systems-b149",
+      "checked_sources": [
+        "bci-roofing-systems-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined lines 6412-6454.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "bci-roofing-systems-b149"
+    ]
+  },
+  "rationale": {
+    "a": "Flat roofs should use loose shingles only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "Low-slope roofs should use clay tile only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "c": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials. This stays inside the Batch 149 local source boundary.",
+    "d": "All slopes use the same roofing material. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials. Supported by bci-roofing-systems-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "bci-roofing-systems-b149",
+    "checked_sources": [
+      "bci-roofing-systems-b149"
+    ]
   }
 }

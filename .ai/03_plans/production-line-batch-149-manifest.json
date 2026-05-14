@@ -1,0 +1,470 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "baseline": "d9c43fa57",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_scoped_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T04:03:57.778Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-149-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-strc-011-03",
+    "lea-matl-006-01",
+    "lea-matl-006-02"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-strc-011-03",
+      "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+      "title": "Geotechnical engineering characterizes soil, predicts",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "foundation-engineering-geotechnical-b149",
+        "bsi-foundation-context-b149"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8",
+      "candidate_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8",
+      "linked_questions_sha256": "sha256:c0fad5e0a1e27ded3c28fd64c47b8d0f9fd8d2cfdc2bf3f92fc58bd79174556f",
+      "source_evidence_sha256": "sha256:2b457772c9aa15b4f6dfa897098f15a897e0c52c76ea18eadaf5450f9a2303ee",
+      "compose_status": "pass",
+      "diff_safe_to_push": false,
+      "real_world_scenario_status": "included",
+      "answer_key_preserved": true,
+      "marker_matches": [],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/scoped-validation-batch-149.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/f4fef38e-33e8-4fed-bffd-5fadb3f6f892.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/6dac5259-3ed3-4684-8b3a-598f89af308e.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/754dbca3-4dec-4003-b5c3-9ecf4c8bc388.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/a9a7db7e-1793-428b-b98a-28e9614edfe7.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/267979d0-57bf-41ca-8162-bc4ebd0d5918.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/379760b9-47dd-493f-9971-9786596d52c2.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/6178e8e3-0ea8-4abd-9447-c301e845b9dd.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/e06c39bc-1e63-411c-8449-e0c4c59adfa1.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/864f1f1c-c068-474c-8dda-4fca0eea05e3.json",
+          ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/818f8fd2-0b83-4415-95cb-7396a6f931e7.json"
+        ]
+      }
+    },
+    {
+      "cluster_id": "lea-matl-006-01",
+      "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "title": "Roofing materials serve three critical functions: weather",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bci-roofing-systems-b149",
+        "salvan-roofing-materials-b149"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:d4bfeea13d4293d20c627cf7b8924c7b0200f592d8438b6021f1fa8bb2653af3",
+      "candidate_sha256": "sha256:d4bfeea13d4293d20c627cf7b8924c7b0200f592d8438b6021f1fa8bb2653af3",
+      "linked_questions_sha256": "sha256:4a8a2f5c7870e99455c4323e2b0db14519ce637562e0f41aceacecc25737af52",
+      "source_evidence_sha256": "sha256:a096800d782663b620febe1434400ade90a97b027e57e565bcdc47d9c2ef34b4",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "answer_key_preserved": true,
+      "marker_matches": [],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/scoped-validation-batch-149.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/ca94ef68-517a-4810-8179-7bb665d046f7.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/28f5c91f-035d-4db5-a86c-928ae3a61adc.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/904b42c2-5141-4084-8f37-63cdc0fbaea1.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/d26bc013-509e-4528-9ea5-8e2890d7a462.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/e1cd6c1d-a2c2-400d-b31a-cb08dc3d7c13.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/ae9bdbca-d0b4-4d3b-b479-42549d0de804.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/7b3d896b-b074-4690-bca0-032f77dcbf23.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/ed16b78d-4569-4987-a3ff-674955037a2a.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/341e820a-2368-4a6d-9b1f-96da1233be29.json",
+          ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/18901ecf-d150-4699-862b-a799741c8674.json"
+        ]
+      }
+    },
+    {
+      "cluster_id": "lea-matl-006-02",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "title": "Roof trusses transfer roof loads through triangulated",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bci-roof-trusses-b149",
+        "salvan-truss-supporting-materials-b149"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:c21aae906943bc4d8e4f9abec4c5f93339a4f0208954dce76c2c696a27c535de",
+      "candidate_sha256": "sha256:c21aae906943bc4d8e4f9abec4c5f93339a4f0208954dce76c2c696a27c535de",
+      "linked_questions_sha256": "sha256:20be1faa9c83865f7d66235030478a3d9575e0975c5132784aa6f97ffedef9dd",
+      "source_evidence_sha256": "sha256:a0730406e991bc78455da576f9bf4a4e70169aa541083fa5ef61b2ad3e6bd43e",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "answer_key_preserved": true,
+      "marker_matches": [],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/scoped-validation-batch-149.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/0aaee778-7a09-41f0-91b6-b483ec500ff9.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/dbadb794-cc3c-4faa-bf1f-21cda09a81b1.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/76bebe1d-277a-43cc-a2ff-0985fc7b17d8.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/8c5f0540-4251-4ba2-9829-c1ea1c7fac14.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/b7d8abf2-0bdf-40b6-902a-4042401ad542.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/fc99634d-3876-409e-9a13-2f677b39c079.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/584be4d0-a3c8-4e0e-a7c3-2028bf97e1fd.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/810cd2d3-796f-4b60-be52-fc44836ad4ed.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/3bd45ddd-62e4-4c58-8693-67f49dc8b745.json",
+          ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/9aa44c93-7e84-4863-a2d7-d4a69436f8ea.json"
+        ]
+      }
+    }
+  ],
+  "source_records": {
+    "foundation-engineering-geotechnical-b149": {
+      "id": "foundation-engineering-geotechnical-b149",
+      "title": "Foundation Engineering Analysis and Design - geotechnical characterization, SPT, groundwater, consolidation, and compaction boundaries",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_artifact_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_artifact_bytes": 26919935,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_artifact_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_artifact_bytes": 1336057,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/foundation-engineering-geotechnical.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/foundation-engineering-geotechnical.refined.md",
+      "locator": "refined markdown lines 1040-1095, 1320-1330, 1610-1620, 6844-6868, 6910-6922, 7399-7412, 7527-7568, 7644-7650, 17246-17256",
+      "safe_claims": [
+        "Subsurface exploration provides ground stratigraphy, soil and rock properties, groundwater conditions, geotechnical parameters, settlement inputs, and construction-problem warnings for foundation design.",
+        "Foundation design must check both safety/stability and performance/serviceability; settlement can govern even when stability is adequate.",
+        "Soil properties depend on density, void ratio, water content, effective stress, drainage condition, compressibility, strength, and permeability.",
+        "Groundwater level affects bearing capacity and settlement and should be observed during exploration.",
+        "SPT gives an N value from the last 300 mm of split-spoon penetration and provides disturbed soil samples for basic physical property tests.",
+        "Saturated clay consolidation is time-dependent as excess pore pressure dissipates; secondary consolidation continues after primary consolidation.",
+        "The captured Standard Proctor detail is limited to the source example of MSE backfill placement and compaction."
+      ],
+      "use_limits": [
+        "No exact SPT-to-bearing-capacity table was captured for this batch.",
+        "No Philippine code section, ASTM acceptance requirement, or project-specific settlement tolerance was captured for this batch.",
+        "No universal fill-compaction rule outside the captured source/project specification is claimed."
+      ],
+      "sort_order": 0,
+      "local_capture_sha256": "sha256:fea18f042b14dd7fea71e41cc188d053b5ccd2dbc41ee09bc9855f8d87157332",
+      "refined_capture_sha256": "sha256:c4b2e886bfc2a49a3bb728ab9aea8a738600270a895716d7a56dba41fa8ad758"
+    },
+    "bsi-foundation-context-b149": {
+      "id": "bsi-foundation-context-b149",
+      "title": "Building Structures Illustrated - foundation system context",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_artifact_bytes": 38160628,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_artifact_bytes": 576829,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/bsi-foundation-context.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/bsi-foundation-context.refined.md",
+      "locator": "refined markdown lines 718-756 and 1888-1902",
+      "safe_claims": [
+        "A foundation supports and anchors the superstructure and transmits loads safely into the earth.",
+        "Foundation selection responds to soil, rock, and water conditions below the building.",
+        "Shallow foundations fit stable near-surface soil with adequate bearing capacity.",
+        "Mat foundations distribute concentrated loads and help manage differential settlement.",
+        "Pile or caisson foundations are used when building loads exceed supporting-soil bearing capacity."
+      ],
+      "use_limits": [
+        "No exact foundation depth threshold, settlement tolerance, or local code citation is captured here."
+      ],
+      "sort_order": 1,
+      "local_capture_sha256": "sha256:b1f3b712f816170a6bce649f397acdfd84d2134cc4552b4171511d6ca33351db",
+      "refined_capture_sha256": "sha256:d4e92609278c2599ba8c37666fd75513a6100a7298f66d87c68a257c07620d0a"
+    },
+    "bci-roofing-systems-b149": {
+      "id": "bci-roofing-systems-b149",
+      "title": "Building Construction Illustrated, 5th Edition - roof systems, slope, drainage, and envelope control",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/bci-roofing-systems.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/bci-roofing-systems.refined.md",
+      "locator": "refined markdown lines 695-710, 1493-1498, 6412-6454, 7990-8012, 9073-9223, 9286-9335",
+      "safe_claims": [
+        "The roof shelters interior spaces and controls moisture, heat, and air flow.",
+        "Roof form and slope must match the roofing material used to shed water toward drains, gutters, or downspouts.",
+        "Flat roofs require continuous membrane roofing, recommended minimum slope of 1/4 inch per foot or 1:50, and drainage to drains or scuppers.",
+        "Low-slope roofs require roll or continuous membrane roofing; medium- and high-slope roofs may use shingles, tiles, or sheet materials.",
+        "Roof systems carry gravity loads, rain/snow loads where applicable, equipment loads, and wind uplift, and may need fire resistance and thermal/moisture control."
+      ],
+      "use_limits": [
+        "No ASTM coating weight, roof-sheet gauge table, clay-tile dead-load table, membrane mil-thickness comparison, or NSCP rainfall rule is captured for this batch."
+      ],
+      "sort_order": 0,
+      "local_capture_sha256": "sha256:101d742d0871d1386a4dd28604954e599d51d1b3fb77d15639f849571d46b285",
+      "refined_capture_sha256": "sha256:8b223120b2cbff95a659eca981a9997289804a6cb8383bcf8da616e4fc6cd6d8"
+    },
+    "salvan-roofing-materials-b149": {
+      "id": "salvan-roofing-materials-b149",
+      "title": "George Salvan Architectural Building Materials - waterproofing, coatings, and material preparation",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/salvan-roofing-materials.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/salvan-roofing-materials.refined.md",
+      "locator": "refined markdown lines 3070-3185, 4332-4468, 5919-5948, 13397-13417",
+      "safe_claims": [
+        "Waterproofing protects surfaces from destructive water effects.",
+        "Membrane waterproofing is recommended where direct rain or standing water is expected.",
+        "Fluid-applied elastomeric waterproofing can be monolithic, seamless, flexible, and elastic over a wide temperature range.",
+        "Rustproofing protects ferrous materials such as steel and iron from rusting or corrosion.",
+        "Painting and coating work depends on manufacturer-recommended materials and clean, prepared surfaces."
+      ],
+      "use_limits": [
+        "No exact galvanized coating weights, sheet gauges, proprietary performance guarantee, or roof span table is captured for this batch."
+      ],
+      "sort_order": 1,
+      "local_capture_sha256": "sha256:e9c17604ec3f9171bdf36360af2a77c8868e01245eb23eef213b39f2f57a2618",
+      "refined_capture_sha256": "sha256:07e0a5ae8ce2961b236cbfc0be6248a2554bd57830addc2449cb8566c36e3be9"
+    },
+    "bci-roof-trusses-b149": {
+      "id": "bci-roof-trusses-b149",
+      "title": "Building Construction Illustrated, 5th Edition - roof trusses, panel points, purlins, and bracing",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/bci-roof-trusses.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/bci-roof-trusses.refined.md",
+      "locator": "refined markdown lines 1862-1871, 6614-6658, 7376-7468",
+      "safe_claims": [
+        "A truss uses triangular rigidity and linear members primarily in axial tension or compression.",
+        "Top and bottom chords, web members, panels, heels, and panel points define truss anatomy.",
+        "Loads should be applied at panel points to avoid secondary stresses; purlins away from panel points create local bending in the top chord.",
+        "Steel trusses use welded or bolted members and gusset plates.",
+        "Warren, Belgian, Fink, Pratt, and Howe trusses are distinguished by web arrangement and tension/compression behavior.",
+        "Wood trusses and trussed rafters require bracing, anchorage, manufacturer/engineer guidance, and attention to panel-point loading."
+      ],
+      "use_limits": [
+        "No residential span table by truss name, typhoon wind-speed rule, collar-tie placement rule, bolt torque value, or timber allowable stress is captured for this batch."
+      ],
+      "sort_order": 0,
+      "local_capture_sha256": "sha256:5ba6ea6b2aacec582f4b3e347820482e86d9d11c86a1fd958c01dc2b3e8b89b2",
+      "refined_capture_sha256": "sha256:fd5d58aad379f5537d1c58e2483bb2d5dba294530ae474a8463c6535f94134ca"
+    },
+    "salvan-truss-supporting-materials-b149": {
+      "id": "salvan-truss-supporting-materials-b149",
+      "title": "George Salvan Architectural Building Materials - supporting truss material vocabulary",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/salvan-truss-supporting-materials.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/salvan-truss-supporting-materials.refined.md",
+      "locator": "refined markdown lines 1304-1308, 1448, 2033, 2125",
+      "safe_claims": [
+        "Salvan provides supporting vocabulary for woods, galvanized steel, and open-web steel joists around framing/truss material discussions.",
+        "Batch 149 truss behavior relies on BCI for panel points, truss types, purlins, and bracing."
+      ],
+      "use_limits": [
+        "No span table, connection capacity, wind-speed rule, or timber stress value is captured from Salvan for this batch."
+      ],
+      "sort_order": 1,
+      "local_capture_sha256": "sha256:6152c80132e16c914f4bfd28bdf0df807e7c6ae0eba299bdde6f6d98fbf005bc",
+      "refined_capture_sha256": "sha256:87b953c1ff656332aac7dd17393d674eda36202da7469ebbde1dd33f0b5b510a"
+    }
+  },
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "partial_pass_compose_diff_ui_all_validate_2_of_3_strc_blocked_by_root_sync_state_outside_batch149_write_boundary",
+    "scoped_git_diff_check": "pass"
+  },
+  "source_hash_checks": [
+    {
+      "source_id": "foundation-engineering-geotechnical-b149",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/foundation-engineering-geotechnical.source-capture.md",
+      "capture_sha256": "sha256:fea18f042b14dd7fea71e41cc188d053b5ccd2dbc41ee09bc9855f8d87157332",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/foundation-engineering-geotechnical.refined.md",
+      "refined_capture_sha256": "sha256:c4b2e886bfc2a49a3bb728ab9aea8a738600270a895716d7a56dba41fa8ad758",
+      "status": "pass"
+    },
+    {
+      "source_id": "bsi-foundation-context-b149",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/bsi-foundation-context.source-capture.md",
+      "capture_sha256": "sha256:b1f3b712f816170a6bce649f397acdfd84d2134cc4552b4171511d6ca33351db",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/bsi-foundation-context.refined.md",
+      "refined_capture_sha256": "sha256:d4e92609278c2599ba8c37666fd75513a6100a7298f66d87c68a257c07620d0a",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-roofing-systems-b149",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/bci-roofing-systems.source-capture.md",
+      "capture_sha256": "sha256:101d742d0871d1386a4dd28604954e599d51d1b3fb77d15639f849571d46b285",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/bci-roofing-systems.refined.md",
+      "refined_capture_sha256": "sha256:8b223120b2cbff95a659eca981a9997289804a6cb8383bcf8da616e4fc6cd6d8",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-roofing-materials-b149",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/salvan-roofing-materials.source-capture.md",
+      "capture_sha256": "sha256:e9c17604ec3f9171bdf36360af2a77c8868e01245eb23eef213b39f2f57a2618",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/salvan-roofing-materials.refined.md",
+      "refined_capture_sha256": "sha256:07e0a5ae8ce2961b236cbfc0be6248a2554bd57830addc2449cb8566c36e3be9",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-roof-trusses-b149",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/bci-roof-trusses.source-capture.md",
+      "capture_sha256": "sha256:5ba6ea6b2aacec582f4b3e347820482e86d9d11c86a1fd958c01dc2b3e8b89b2",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/bci-roof-trusses.refined.md",
+      "refined_capture_sha256": "sha256:fd5d58aad379f5537d1c58e2483bb2d5dba294530ae474a8463c6535f94134ca",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-truss-supporting-materials-b149",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/salvan-truss-supporting-materials.source-capture.md",
+      "capture_sha256": "sha256:6152c80132e16c914f4bfd28bdf0df807e7c6ae0eba299bdde6f6d98fbf005bc",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/salvan-truss-supporting-materials.refined.md",
+      "refined_capture_sha256": "sha256:87b953c1ff656332aac7dd17393d674eda36202da7469ebbde1dd33f0b5b510a",
+      "status": "pass"
+    }
+  ],
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "no_stage_commit_push": true,
+    "manifest_scoped_only": true
+  },
+  "off_limits_not_touched": [
+    "Batch 150 article directories and handoff files",
+    "Batch 151 article directories and handoff files",
+    "clusters outside .ai/03_plans/production-line-batch-149-reservation-manifest.json",
+    "Supabase, deploy, production database, main merge, git staging/commit/push"
+  ],
+  "validation_runs": {
+    "scoped_local_validation": {
+      "status": "pass",
+      "evidence": "Bun scoped validator: 92 stage paths, 67 JSON files, 3 article bundles, 6 source hash checks, 46 marker/source-gap scanned files; errors=[]"
+    },
+    "targeted_content_audit_dry_run": {
+      "status": "partial_pass_with_documented_external_sync_state_gap",
+      "compose": "pass: exit 0 for all three reserved article IDs; candidates already existed, dry-run composed 0",
+      "diff": "pass: exit 0 and safe_to_push=true with blockers=[] for all three reserved article IDs",
+      "validate": "partial: exit 0 valid=true for lea-matl-006-01 and lea-matl-006-02; lea-strc-011-03 exit 1 only because .ai/content-audit-export/sync-state.json original_hash is stale, and that root sync-state file is outside the Batch 149 reserved write paths",
+      "ui_block_edits": "pass: exit 0 valid=true blockers=0 warnings=0 for all three reserved article IDs"
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <92 paths from .ai/03_plans/batch-149-git-handoff-stage-paths.txt>",
+      "stdout": [],
+      "stderr": []
+    }
+  }
+}

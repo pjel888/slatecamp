@@ -1,0 +1,98 @@
+# Batch 149 Git Handoff Stage List
+
+Do not stage, commit, or push automatically. Stage only the paths listed in .ai/03_plans/batch-149-git-handoff-stage-paths.txt after review.
+
+## Paths
+
+- .ai/03_plans/batch-149-git-handoff-stage-list.md
+- .ai/03_plans/batch-149-git-handoff-stage-paths.txt
+- .ai/03_plans/batch-149-independent-quality-review.md
+- .ai/03_plans/production-line-batch-149-manifest.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/article-metadata.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/candidate.md
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/compose-report.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/diff-report.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/diff-report.md
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/linked-questions.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/normalized.md
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/parser-errors.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/18901ecf-d150-4699-862b-a799741c8674.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/28f5c91f-035d-4db5-a86c-928ae3a61adc.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/341e820a-2368-4a6d-9b1f-96da1233be29.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/7b3d896b-b074-4690-bca0-032f77dcbf23.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/904b42c2-5141-4084-8f37-63cdc0fbaea1.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/ae9bdbca-d0b4-4d3b-b479-42549d0de804.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/ca94ef68-517a-4810-8179-7bb665d046f7.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/d26bc013-509e-4528-9ea5-8e2890d7a462.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/e1cd6c1d-a2c2-400d-b31a-cb08dc3d7c13.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/question-edits/ed16b78d-4569-4987-a3ff-674955037a2a.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/scoped-validation-batch-149.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/source-audit-evidence.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/sources.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/ui-block-edit-validation.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/ui-block-edits.json
+- .ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f/ui-blocks.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/article-metadata.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/candidate.md
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/compose-report.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/diff-report.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/diff-report.md
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/linked-questions.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/normalized.md
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/parser-errors.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/0aaee778-7a09-41f0-91b6-b483ec500ff9.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/3bd45ddd-62e4-4c58-8693-67f49dc8b745.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/584be4d0-a3c8-4e0e-a7c3-2028bf97e1fd.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/76bebe1d-277a-43cc-a2ff-0985fc7b17d8.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/810cd2d3-796f-4b60-be52-fc44836ad4ed.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/8c5f0540-4251-4ba2-9829-c1ea1c7fac14.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/9aa44c93-7e84-4863-a2d7-d4a69436f8ea.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/b7d8abf2-0bdf-40b6-902a-4042401ad542.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/dbadb794-cc3c-4faa-bf1f-21cda09a81b1.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/question-edits/fc99634d-3876-409e-9a13-2f677b39c079.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/scoped-validation-batch-149.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/source-audit-evidence.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/sources.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/ui-block-edit-validation.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/ui-block-edits.json
+- .ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/ui-blocks.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/article-metadata.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/candidate.md
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/compose-report.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/diff-report.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/diff-report.md
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/linked-questions.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/normalized.md
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/parser-errors.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/267979d0-57bf-41ca-8162-bc4ebd0d5918.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/379760b9-47dd-493f-9971-9786596d52c2.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/6178e8e3-0ea8-4abd-9447-c301e845b9dd.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/6dac5259-3ed3-4684-8b3a-598f89af308e.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/754dbca3-4dec-4003-b5c3-9ecf4c8bc388.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/818f8fd2-0b83-4415-95cb-7396a6f931e7.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/864f1f1c-c068-474c-8dda-4fca0eea05e3.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/a9a7db7e-1793-428b-b98a-28e9614edfe7.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/e06c39bc-1e63-411c-8449-e0c4c59adfa1.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/question-edits/f4fef38e-33e8-4fed-bffd-5fadb3f6f892.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/scoped-validation-batch-149.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/source-audit-evidence.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/sources.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/ui-block-edit-validation.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/ui-block-edits.json
+- .ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/ui-blocks.json
+- .ai/content-audit-export/source-audited-article-batch-149-local-first-content-generation-summary.json
+- .ai/content-audit-export/source-audited-article-batch-149-local-first-ledger.json
+- .ai/content-audit-export/source-audited-article-batch-149-local-first-report.md
+- .ai/content-audit-export/source-audited-article-batch-149-local-first-scoped-checks.json
+- vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/bci-roof-trusses.source-capture.md
+- vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/bci-roofing-systems.source-capture.md
+- vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/salvan-roofing-materials.source-capture.md
+- vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/salvan-truss-supporting-materials.source-capture.md
+- vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/bsi-foundation-context.source-capture.md
+- vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/foundation-engineering-geotechnical.source-capture.md
+- vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/bci-roof-trusses.refined.md
+- vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/bci-roofing-systems.refined.md
+- vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/salvan-roofing-materials.refined.md
+- vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/salvan-truss-supporting-materials.refined.md
+- vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/bsi-foundation-context.refined.md
+- vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/foundation-engineering-geotechnical.refined.md

@@ -1,0 +1,56 @@
+{
+  "cluster_id": "lea-strc-011-03",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "article_dir": ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "compose_status": "pass",
+  "diff_safe_to_push": false,
+  "ui_block_validation": "pass",
+  "parser_errors": "pass",
+  "json_parse": "pass",
+  "marker_source_gap_scan": "pass",
+  "marker_matches": [],
+  "linked_question_count": 10,
+  "expected_question_count": 10,
+  "question_edit_count": 10,
+  "answer_key_preserved": "pass",
+  "stale_compose_error_scan": "pass",
+  "source_count": 2,
+  "source_hashes_present": "pass",
+  "real_world_scenario_status": "included",
+  "normalized_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8",
+  "candidate_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8",
+  "linked_questions_sha256": "sha256:c0fad5e0a1e27ded3c28fd64c47b8d0f9fd8d2cfdc2bf3f92fc58bd79174556f",
+  "source_evidence_sha256": "sha256:2b457772c9aa15b4f6dfa897098f15a897e0c52c76ea18eadaf5450f9a2303ee",
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "partial_pass_compose_diff_ui_all_validate_2_of_3_strc_blocked_by_root_sync_state_outside_batch149_write_boundary",
+    "scoped_git_diff_check": "pass"
+  },
+  "validation_runs": {
+    "scoped_local_validation": {
+      "status": "pass",
+      "evidence": "Bun scoped validator: 92 stage paths, 67 JSON files, 3 article bundles, 6 source hash checks, 46 marker/source-gap scanned files; errors=[]"
+    },
+    "targeted_content_audit_dry_run": {
+      "status": "partial_pass_with_documented_external_sync_state_gap",
+      "compose": "pass: exit 0 for all three reserved article IDs; candidates already existed, dry-run composed 0",
+      "diff": "pass: exit 0 and safe_to_push=true with blockers=[] for all three reserved article IDs",
+      "validate": "partial: exit 0 valid=true for lea-matl-006-01 and lea-matl-006-02; lea-strc-011-03 exit 1 only because .ai/content-audit-export/sync-state.json original_hash is stale, and that root sync-state file is outside the Batch 149 reserved write paths",
+      "ui_block_edits": "pass: exit 0 valid=true blockers=0 warnings=0 for all three reserved article IDs"
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <92 paths from .ai/03_plans/batch-149-git-handoff-stage-paths.txt>",
+      "stdout": [],
+      "stderr": []
+    }
+  }
+}

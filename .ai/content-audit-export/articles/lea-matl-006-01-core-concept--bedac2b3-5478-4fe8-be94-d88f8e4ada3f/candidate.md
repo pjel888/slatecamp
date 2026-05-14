@@ -1,36 +1,50 @@
 ## Board Exam Quick Check
 
-For roofing-material questions, identify roof pitch, drainage path, membrane or overlapping-unit behavior, and substrate condition before choosing a material.
+For roofing-material questions, first identify roof slope, drainage path, water-shedding mechanism, substrate condition, and envelope role. Then choose the material family that matches those conditions.
 
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
-Select roofing materials by the way they shed water, the roof slope they require, and the preparation needed for reliable installation.
+Select roofing materials by matching roof slope, drainage, membrane or overlapping-unit behavior, substrate preparation, and environmental control requirements.
 
 ## Core Concept
 
-The roof is the primary sheltering element for interior spaces. BCI states that roof form and slope must be compatible with the roofing material used to shed water toward drains, gutters, or downspouts. This is the key classification: flat roofs depend on continuous membrane roofing, low-slope roofs generally require roll or continuous membrane roofing, and medium- to high-slope roofs may use shingles, tiles, or sheet materials.
+The roof is the primary sheltering element for interior spaces. Building Construction Illustrated states that the form and slope of a roof must be compatible with the roofing material used to shed rainwater toward drains, gutters, or downspouts. This is the safe classification rule for Batch 149.
 
-A flat roof is not actually designed as a water-holding plane. BCI gives a minimum recommended slope of 1/4 inch per foot, or 1:50, and points the slope toward interior drains. Secondary overflow drains or scuppers matter where water could be trapped if the primary drains are blocked.
+| Roof condition | Source-safe material logic | Key detail |
+|---|---|---|
+| Flat roof | Continuous membrane roofing. | Recommended minimum slope is 1/4 inch per foot, or 1:50, toward drains. |
+| Low-slope roof | Roll roofing or continuous membrane roofing. | Some shingles and sheet materials may be used only at suitable low-slope pitches. |
+| Medium- to high-slope roof | Shingles, tiles, or sheet materials. | The roof sheds water to eave gutters more easily. |
 
-Roofing also has structural and environmental tasks. The roof carries its own weight, attached equipment, rain or snow loads where applicable, and wind uplift forces. Its construction can control moisture vapor, air infiltration, heat flow, solar radiation, and, depending on construction type, resistance to fire spread.
+A flat roof is not a water-storage tray. BCI notes that secondary emergency overflow drains or scuppers are needed where water could be trapped if primary drains are blocked. The roof also carries gravity loads, attached equipment, rain or snow loads where applicable, wind uplift, and sometimes lateral forces.
 
-Salvan's built-up roofing specifications reinforce the construction side of the concept: roof decks and membrane substrates should be smooth, firm, dry, clean, free from loose or foreign materials, and graded to drain. Material substitutions should be authorized in writing before work starts.
+Roofing is also part of the enclosure system. The roof and exterior walls shelter interior spaces and control moisture, heat, and air flow. BCI connects roof assemblies to vapor control, thermal insulation, air infiltration, heat flow, solar radiation, and, depending on construction type, fire spread resistance.
+
+Salvan supports the material-preparation side of the same concept. Waterproofing protects surfaces from destructive water effects. Membrane waterproofing is used where direct rain or standing water is expected. Fluid-applied elastomeric waterproofing can form a monolithic, seamless, flexible coating. Protective coatings and rustproofing matter where ferrous materials are exposed to corrosion risk. Coating work should use appropriate materials and clean, prepared surfaces.
+
+## Source Boundary
+
+Batch 149 does not use unsupported coating weights, roof-sheet gauge tables, clay-tile dead-load tables, membrane thickness comparisons, or rainfall/ponding rules. If an item asks for one of those exact values, the value must be provided by the question itself or by a separate captured source.
+
+## Real World Scenario
+
+A small school building has a low-slope concrete roof over a corridor and a steeper metal roof over classrooms. The source-safe specification separates the two conditions: the low-slope roof needs membrane behavior, slope to drains, and overflow protection; the steeper classroom roof may use a sheet material if its slope, fastening, guttering, and corrosion protection are coordinated. Treating both roofs as the same material problem would miss drainage and substrate behavior.
 
 ## How It's Tested
 
-Expect questions that ask which material family fits a roof slope, why a flat roof needs a continuous membrane, or why drains and scuppers are part of roofing design. Source-safe answers connect pitch, water shedding, substrate preparation, flashing, and drainage.
+Expect questions asking why flat roofs need continuous membranes, why overflow drains or scuppers matter, which material families fit low-slope versus steeper roofs, or why substrate preparation and corrosion protection affect roofing performance.
 
 ## Common Mistakes
 
 - Applying shingle or tile logic to a flat roof that needs membrane behavior.
-- Treating a flat roof as level instead of sloped toward drains or scuppers.
-- Using gauge or coating values not found in the checked sources when the checked sources only support roof-system principles.
-- Ignoring substrate dryness, cleanliness, and written approval for material substitutions.
+- Calling a flat roof level and omitting slope toward drains or scuppers.
+- Answering with gauge, coating, dead-load, or membrane-thickness values not captured in the checked sources.
+- Ignoring moisture, thermal, air-flow, and substrate-preparation requirements.
 
 ## Related Articles
 
-See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-02-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**, **lea-matl-006-05-core-concept**.
+See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-02-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**, and **lea-matl-006-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.

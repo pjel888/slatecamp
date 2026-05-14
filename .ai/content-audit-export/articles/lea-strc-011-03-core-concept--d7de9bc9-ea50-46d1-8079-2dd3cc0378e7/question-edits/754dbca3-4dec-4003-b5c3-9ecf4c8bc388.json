@@ -1,0 +1,69 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "cluster_id": "lea-strc-011-03",
+  "question_id": "754dbca3-4dec-4003-b5c3-9ecf4c8bc388",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:b18ae058fd8487a2776c021677b9ab648f57fcad46875cb12864ef6104b6f0d0",
+  "after_hash": "sha256:9b9f3458c23db8f3707d0c66f177cb8d95d1676b53099f29bd7ab36b5c52f381",
+  "baseline_hash": "sha256:b18ae058fd8487a2776c021677b9ab648f57fcad46875cb12864ef6104b6f0d0",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-geotechnical-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
+  "proposed": {
+    "text": "Which answer best distinguishes immediate foundation response from primary consolidation in the captured source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are the same process and differ only by the name used by the examiner."
+      },
+      {
+        "id": "b",
+        "text": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process."
+      },
+      {
+        "id": "c",
+        "text": "Primary consolidation is faster than any immediate response because clay drains quickly."
+      },
+      {
+        "id": "d",
+        "text": "Immediate settlement can occur only after secondary consolidation is complete."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "They are the same process and differ only by the name used by the examiner. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process. This stays inside the Batch 149 local source boundary.",
+      "c": "Primary consolidation is faster than any immediate response because clay drains quickly. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "Immediate settlement can occur only after secondary consolidation is complete. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process. Supported by foundation-engineering-geotechnical-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "foundation-engineering-geotechnical-b149",
+      "checked_sources": [
+        "foundation-engineering-geotechnical-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined lines 1084-1095 and 1208-1218.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "foundation-engineering-geotechnical-b149"
+    ]
+  },
+  "rationale": {
+    "a": "They are the same process and differ only by the name used by the examiner. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process. This stays inside the Batch 149 local source boundary.",
+    "c": "Primary consolidation is faster than any immediate response because clay drains quickly. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "Immediate settlement can occur only after secondary consolidation is complete. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process. Supported by foundation-engineering-geotechnical-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "foundation-engineering-geotechnical-b149",
+    "checked_sources": [
+      "foundation-engineering-geotechnical-b149"
+    ]
+  }
+}

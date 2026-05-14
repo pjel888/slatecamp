@@ -1,0 +1,69 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "cluster_id": "lea-strc-011-03",
+  "question_id": "a9a7db7e-1793-428b-b98a-28e9614edfe7",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:f44008d0569cb7f882653f5a7667b648a41dc6c6378711ab0529bdf49ba46f1f",
+  "after_hash": "sha256:f9a5e4b0c00fc2bbaf3f8cd349e5c0c12da5112a5598baae9d9036c595545ae7",
+  "baseline_hash": "sha256:f44008d0569cb7f882653f5a7667b648a41dc6c6378711ab0529bdf49ba46f1f",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-geotechnical-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
+  "proposed": {
+    "text": "Why must groundwater observations be included in subsurface exploration for foundation design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Groundwater is only a construction nuisance and has no effect on foundation behavior."
+      },
+      {
+        "id": "b",
+        "text": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record."
+      },
+      {
+        "id": "c",
+        "text": "Groundwater readings replace SPT blow counts and soil descriptions."
+      },
+      {
+        "id": "d",
+        "text": "Groundwater matters only for plumbing design and not for foundations."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Groundwater is only a construction nuisance and has no effect on foundation behavior. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record. This stays inside the Batch 149 local source boundary.",
+      "c": "Groundwater readings replace SPT blow counts and soil descriptions. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "Groundwater matters only for plumbing design and not for foundations. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record. Supported by foundation-engineering-geotechnical-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "foundation-engineering-geotechnical-b149",
+      "checked_sources": [
+        "foundation-engineering-geotechnical-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined lines 7399-7412.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "foundation-engineering-geotechnical-b149"
+    ]
+  },
+  "rationale": {
+    "a": "Groundwater is only a construction nuisance and has no effect on foundation behavior. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record. This stays inside the Batch 149 local source boundary.",
+    "c": "Groundwater readings replace SPT blow counts and soil descriptions. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "Groundwater matters only for plumbing design and not for foundations. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record. Supported by foundation-engineering-geotechnical-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "foundation-engineering-geotechnical-b149",
+    "checked_sources": [
+      "foundation-engineering-geotechnical-b149"
+    ]
+  }
+}

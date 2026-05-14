@@ -1,134 +1,76 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For geotechnical questions, identify what the item is asking you to use: exploration purpose, soil behavior, SPT procedure, groundwater observation, compaction acceptance, or settlement behavior. Do not import unsupported SPT-to-bearing-capacity tables or local code thresholds unless the question gives them.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 011 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
-By the end of this article, you will be able to:
+Explain how geotechnical information supports foundation selection by connecting subsurface exploration, soil properties, groundwater, SPT data, compaction, and settlement/serviceability.
 
-- Classify soil by type (clay, silt, sand, gravel) and estimate bearing capacity from SPT N-values
-- Define Proctor compaction and verify fill compliance from field density data
-- Distinguish immediate, primary consolidation, and secondary settlement
-- Explain how groundwater and soil compressibility affect foundation design
-
----
 ## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-011-03-core-concept", type="image", caption="Geotechnical Investigation — Soil Profile and Bearing Capacity", description="Diagram of a geotechnical boring log showing: (1) Soil profile layers (topsoil, clay, sand, weathered rock, bedrock); (2) Standard Penetration Test (SPT) N-values at each depth; (3) Groundwater table elevation; (4) Soil classification per USCS; (5) Allowable bearing capacity calculated from soil properties. Boring location plan on site map showing required number of borings per structure type.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Geotechnical engineering characterizes soil, predicts its behavior under load, and specifies construction practices to achieve stable foundations. Five core topics unite this field:
 
-**1. Soil Classification and Properties:**
+Geotechnical engineering gives the foundation designer a source-backed picture of the ground. The captured foundation engineering source says subsurface exploration should provide soil and rock stratigraphy, soil properties, groundwater conditions, design parameters for foundation type and depth, bearing capacity, settlement estimates, and construction problems that may be encountered.
 
-Soil is classified by grain size and plasticity. Classification systems include USCS (Unified Soil Classification System):
-- _Clay_: Fine-grained soil (< 0.005 mm) with significant cohesion and plasticity. Exhibits strength gain with compaction and age. Highly compressible; consolidation settlement is significant and time-dependent.
-- _Silt_: Fine-grained soil (0.005–0.075 mm) with intermediate plasticity and compressibility. Often exhibits poor drainage.
-- _Sand_: Coarse-grained soil (0.075–4.75 mm) with negligible cohesion. Strength depends on density and confining pressure. Low compressibility; immediate settlement dominates.
-- _Gravel_: Coarse-grained soil (> 4.75 mm). High strength and low compressibility.
+The important LEA distinction is that foundation work is not only a strength check. The source separates safety analysis from performance analysis: a foundation may be stable against failure, yet still perform poorly if settlement or deformation is excessive.
 
-Plasticity Index (PI = LL − PL, where LL is liquid limit, PL is plastic limit) quantifies clay behavior. High PI clays are highly compressible and problematic for foundations.
+### Soil Behavior
 
-**2. Fill and Fill Compaction:**
+The checked source groups soils broadly as fine-grained or cohesive soils and coarse-grained or granular soils. Clay and sand are the examples used. Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, compressibility, strength, and permeability.
 
-_Fill_ is soil brought to a site for raising grades, backfilling, or material replacement. Fill quality is crucial; poor fill causes differential settlement, cracking, and foundation failure.
+For exam use, keep the explanation functional:
 
-_Compaction_ is the process of densifying soil by mechanical means (rollers, tampers, vibrators) to increase bearing capacity, reduce permeability, and minimize future settlement. Compaction is measured by:
-- _Dry unit weight_ (γd, in kN/m³): mass of solids per unit volume, excluding water.
-- _Moisture content_ (w, in %): water mass as a percentage of solids mass.
-- _Standard Proctor Test_: lab test determining the moisture-unit weight relationship. Maximum dry unit weight (γd max) occurs at optimum moisture content (OMC). Specification: "90% Proctor density at OMC ± 2%" means compacted fill must achieve 90% of the lab-determined maximum.
-- _Field density test_ (sand replacement, nuclear density gauge): on-site verification that fill has been compacted to specification (typically 90–95% Proctor).
-
-**3. Standard Penetration Test (SPT) and Bearing Capacity:**
-
-The _Standard Penetration Test_ (SPT) is a field test in which a 63.5 kg hammer falls 76 cm and drives a 50 mm split-spoon sampler into the soil. The number of blows required to advance 300 mm is the _SPT N-value_. SPT N-values correlate with soil density and approximate bearing capacity:
-- N < 4: very loose/very soft (clay); bearing capacity 50–100 kN/m² (poor).
-- 4 ≤ N < 10: loose/soft; bearing capacity 100–200 kN/m² (marginal).
-- 10 ≤ N < 30: medium dense/medium stiff; bearing capacity 200–400 kN/m² (acceptable).
-- 30 ≤ N < 50: dense/stiff; bearing capacity 400–800 kN/m² (good).
-- N ≥ 50: very dense/very stiff; bearing capacity > 800 kN/m² (excellent).
-
-SPT is used to estimate bearing capacity, select foundation depth, and assess liquefaction potential.
-
-**4. Consolidation and Settlement Types:**
-
-Settlement is the downward movement of a structure due to soil compression. Three types exist:
-
-- _Immediate (elastic) settlement_: occurs during or immediately after loading, due to elastic compression of soil solids and air expulsion, before pore water drains. Significant in sandy soils; minor in clay.
-- _Primary consolidation settlement_: occurs over months to years as pore water is expelled from clay under load. The rate decreases with time (logarithmic pattern). This is the dominant settlement type in soft clay.
-- _Secondary consolidation (creep)_: occurs over years to decades after primary consolidation is complete, due to viscous deformation of soil solids. Minor but can be important for very long-term structures.
-
-_Consolidation_ is the process of pore water expulsion and soil volume reduction under constant load. The coefficient of consolidation (cv) quantifies the rate of consolidation; low cv values (typical in soft clay) indicate slow settlement that continues for years.
-
-**5. Bearing Capacity Calculation (Overview):**
-
-Bearing capacity (qult) is the maximum stress the soil can support before failure (shear failure or excessive settlement). Ultimate bearing capacity is the stress at which the soil fails; allowable bearing capacity (qa) is qult divided by a safety factor (typically 2–3). Bearing capacity depends on:
-- _Soil cohesion_ (c): clay strength; higher c means higher bearing capacity.
-- _Soil friction angle_ (φ, phi): sand/gravel strength angle; higher φ (30–45° typical) means higher bearing capacity.
-- _Footing depth_ (Df): deeper footings have higher bearing capacity (depth factor).
-- _Footing size_ (B, width): larger footings can support higher loads, but bearing capacity per unit area may decrease due to stress distribution.
-- _Groundwater level_: saturated soil has lower effective stress and lower bearing capacity.
-
-Bearing capacity is calculated via empirical correlations with SPT N-values or theoretical formulas (Terzaghi, Meyerhof, Hansen). No shortcut; analysis is required for each site.
-
-## Key Provisions
-
-| **Soil Type** | **Typical Bearing Capacity (kN/m²)** | **Compressibility** | **Drainage** | **SPT Typical N** | **Foundation Implication** |
-|---|---|---|---|---|---|
-| Clay (soft) | 50–150 | Very high | Poor | < 4 | Piles required; time-dependent settlement |
-| Clay (stiff) | 200–400 | High | Poor | 10–20 | Shallow footing possible; monitor settlement |
-| Silt | 100–250 | High | Poor to fair | 5–15 | Marginal for shallow; prefer deep |
-| Sand (loose) | 100–300 | Moderate | Good | < 10 | Shallow footing with wide base or deep pile |
-| Sand (dense) | 400–800 | Low | Good | > 20 | Shallow footing viable; minimal settlement |
-| Gravel | 600–1200 | Low | Excellent | > 30 | Excellent bearing; shallow footing ideal |
-
-| **Compaction Standard** | **Application** | **Field Verification** |
+| Concept | Source-safe meaning | Design implication |
 |---|---|---|
-| 90% Proctor, OMC ± 2% | Structural fill (building pad, embankment) | Sand replacement test, nuclear gauge |
-| 95% Proctor, OMC ± 2% | High-performance fill (near structures, utility trenches) | Field density test required every 1–2 m |
-| 100% Proctor (lab max) | Critical structures (rare); typically not required | Lab-determined maximum; field verification |
+| Strength | Soil resistance used in safety analysis. | Check whether the ground can resist the applied load. |
+| Compressibility | Soil deformation behavior used in performance analysis. | Settlement can govern even when failure is not expected. |
+| Permeability/drainage | Whether water pressure dissipates quickly or slowly during loading. | Clay often needs undrained or time-dependent thinking; sand/gravel often drain more quickly. |
+| Effective stress | Total pressure less pore-water pressure acting through the soil skeleton. | Groundwater and pore pressure affect behavior. |
 
-| **Settlement Type** | **Timeframe** | **Soil Type** | **Magnitude** | **Design Implication** |
-|---|---|---|---|---|
-| Immediate | Hours to days | Sand; gravel | 10–50 mm typical | Occurs quickly; may be acceptable for tolerant structures |
-| Primary consolidation | Months to years | Clay; silt | 50–200+ mm typical | Slow; building may crack if differential settlement > 50–80 mm |
-| Secondary consolidation | Years to decades | Clay | 5–50% of primary | Minor; important for very long-term structures |
+### Subsurface Exploration and SPT
 
-## Philippine Practice Context
-Metro Manila buildings almost universally encounter soft alluvial clay with SPT N < 10 to depths of 15–40 m. Bearing capacity is typically 50–150 kN/m², mandating piles or deep mats. Compaction standards for building pad fill are 90% Proctor (some contractors claim 95%, but verification is inconsistent). Settlement of 50–100 mm over 2–5 years is common in large buildings on piles. Soil liquefaction is a concern in Mindanao and coastal zones during earthquakes (N < 15, saturated sand). SPT boring is standard; Cone Penetration Test (CPT) is becoming more common for refined analysis.
+Subsurface exploration is planned so the borings, samples, field tests, and laboratory tests are sufficient for the foundation problem. The source warns that there are no reliable universal rules for the number and spacing of explorations for all projects; the goal is enough information for foundation design at reasonable cost.
+
+The Standard Penetration Test is an in-situ test and sampling method. In the captured source, a split-spoon sampler is driven from the bottom of a borehole by repeated hammer blows. The standard penetration number, or N value, is the sum of the blows for the last two 152.4 mm intervals, about 300 mm of penetration. The same operation also recovers disturbed soil samples that can be used for basic physical property tests such as grain-size distribution and specific gravity.
+
+SPT is useful, but it is not a magic bearing-capacity answer. Batch 149 did not capture an exact source-safe SPT-to-allowable-bearing-capacity table, so questions in this batch use SPT for sampling, relative field resistance, and foundation judgment rather than unsupported numeric bearing values.
+
+### Groundwater
+
+Groundwater level is a required geotechnical observation because the presence or fluctuation of groundwater can affect bearing capacity and settlement. Field logs should record boring location, drilling and sampling methods, blow counts from SPT, visual soil description, moisture condition, and groundwater information.
+
+### Compaction
+
+The captured Proctor detail is limited. The foundation source gives a construction criterion for mechanically stabilized earth backfill: place soil in lifts not more than 300 mm thick and compact to 95 percent of maximum dry unit weight within +2 percent of optimum water content according to the Standard Proctor compaction test.
+
+Use that as a concept boundary: Proctor language compares field dry density and moisture to a laboratory maximum dry unit weight and optimum water content. Do not claim a general building-pad acceptance rule unless a project specification gives it.
+
+### Settlement and Consolidation
+
+Settlement belongs to performance analysis. In saturated clay, external load initially increases excess pore pressure; with time, pore pressure dissipates and the load transfers to the soil skeleton. That time-dependent response is primary consolidation. The source also describes secondary consolidation as continued void-ratio decrease after primary consolidation is complete.
+
+The review habit is simple: ask whether the problem is testing immediate response, time-dependent consolidation, groundwater/pore-pressure effects, or long-term serviceability.
+
+## Real World Scenario
+
+A low-rise addition is planned beside an existing classroom building. The boring log shows variable fill, a shallow groundwater reading, and SPT blow counts recorded at depth. The source-safe response is not to pick a footing type from memory. The architect and engineer use the exploration to confirm soil layers, groundwater, sample descriptions, and settlement risk, then select a foundation strategy that satisfies both stability and serviceability. If a fill area is used, the acceptance language must come from the project specification and field density/moisture verification.
 
 ## How It's Tested
-1. **Soil Classification and Bearing Capacity:** Given an SPT boring log with N = 8 at 5 m depth in clay and N = 25 at 12 m in sand, classify the soils and estimate bearing capacity at each layer.
-2. **Compaction Specification and Verification:** A building pad requires 90% Proctor compaction at OMC ± 2%. Standard Proctor test gives γd max = 18 kN/m³ at w = 12%. A field density test on the finished pad reads γd = 16.2 kN/m³ and w = 11.8%. Verify compliance.
-3. **Consolidation Settlement Prediction:** Soft clay (H = 8 m, cv = 1 m²/year) underlies a mat foundation. Calculate primary consolidation settlement time to 90% completion and assess risk of cracking if differential settlement is 50 mm.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Aid:** SPT N-value is your soil's report card. N 30 = strong, dense, shallow footing easy. Compaction is the contractor's promise: "90% Proctor" means 90% as stiff as the lab sample. Clay settles slow (consolidation); sand settles fast (immediate). Know your settlement type or face cracking.
-[/SLATECAMP_UI_BLOCK]
+1. **Exploration purpose:** Choose the answer that ties borings and tests to foundation type, depth, bearing behavior, settlement, groundwater, and construction risk.
+2. **SPT procedure:** Remember that N is based on the last 300 mm of split-spoon penetration, not the whole boring depth.
+3. **Groundwater:** Select the answer that recognizes water level and pore pressure as foundation-performance inputs.
+4. **Compaction:** Treat Proctor values as density/moisture verification language, not a universal guarantee.
+5. **Settlement:** Separate stability from serviceability and recognize time-dependent consolidation in saturated clay.
 
 ## Related Articles
 
-See also: **Foundations** (lea-strc-011-02) for how soil properties drive foundation selection, **Piles** (lea-strc-011-01) for deep foundation soil-structure interaction, and **Earthquake Fundamentals** (lea-strc-004-01) for liquefaction and seismic soil behavior.
+See also: **Foundations** (lea-strc-011-02) for foundation selection and **Piles** (lea-strc-011-01) for deep-foundation load transfer.
 
 ## Common Mistakes
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Assuming SPT N-values are absolute and precise; N-values have ±20% uncertainty and are affected by boring method, hammer efficiency, and soil moisture. Use N-values as estimates, not gospel.\",\"Specifying compaction without verification; many projects specify 90% Proctor but never perform field density tests. Without verification, fill may be 70–80% Proctor, leading to settlement and failure.\",\"Ignoring time-dependent settlement in clay; a building on soft clay may appear stable at 6 months (only immediate settlement has occurred) but crack at 2 years as primary consolidation continues. Monitor long-term.\",\"Confusing bearing capacity with settlement. A soil may have adequate bearing capacity (no shear failure) but unacceptable settlement (foundation drops 100 mm). Both must be checked.\",\"Omitting groundwater effects in bearing capacity; saturated soil has lower effective stress and lower bearing capacity than dry soil at the same SPT N-value. Always consider groundwater level.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Turning SPT N values into unsupported exact allowable bearing capacities.
+- Ignoring groundwater because the soil description looks adequate.
+- Treating factor of safety as the only foundation requirement when settlement may govern.
+- Applying a Proctor percentage without checking the project specification and field verification.
+- Confusing the purpose of exploration with the final foundation design itself.

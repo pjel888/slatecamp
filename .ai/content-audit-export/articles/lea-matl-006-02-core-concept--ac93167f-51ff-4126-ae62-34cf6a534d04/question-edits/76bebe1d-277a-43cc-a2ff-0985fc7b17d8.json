@@ -1,65 +1,69 @@
 {
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+  "cluster_id": "lea-matl-006-02",
   "question_id": "76bebe1d-277a-43cc-a2ff-0985fc7b17d8",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:7b01b635dc61338f8f9dee474de64fee318041ef794957e6f835513bf1d400e9",
+  "after_hash": "sha256:9b87b8baf3ef0ca91311e1bf730762510073de4fc7827265cd2c976acfede2b5",
   "baseline_hash": "sha256:7b01b635dc61338f8f9dee474de64fee318041ef794957e6f835513bf1d400e9",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-006-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
-    "parent_article_slug": "lea-matl-006-02-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
-      "Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited roof_trusses scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-roof-trusses-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
   "proposed": {
-    "text": "Which description matches a Fink truss in the checked BCI source?",
+    "text": "Which source-safe description identifies a Fink truss?",
     "options": [
       {
         "id": "a",
-        "text": "A Belgian truss with subdiagonals that shorten compression web members near the center"
+        "text": "A truss with only curved chords and no web members."
       },
       {
         "id": "b",
-        "text": "A flat truss with parallel top and bottom chords only"
+        "text": "A truss with no subdiagonals and no compression members."
       },
       {
         "id": "c",
-        "text": "A truss with vertical web members in tension and diagonal web members in compression"
+        "text": "A Belgian truss with subdiagonals that reduce compression web-member length near the centerline."
       },
       {
         "id": "d",
-        "text": "A ceiling grid made only of main runners and cross tees"
+        "text": "A Vierendeel frame with rigid rectangular panels."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI defines a Fink truss as a Belgian truss with subdiagonals that reduce the length of compression web members toward the centerline.",
-    "explanation": "BCI defines a Fink truss as a Belgian truss with subdiagonals that reduce the length of compression web members toward the centerline.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "A truss with only curved chords and no web members. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "A truss with no subdiagonals and no compression members. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "c": "A Belgian truss with subdiagonals that reduce compression web-member length near the centerline. This stays inside the Batch 149 local source boundary.",
+      "d": "A Vierendeel frame with rigid rectangular panels. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "A Belgian truss with subdiagonals that reduce compression web-member length near the centerline. Supported by bci-roof-trusses-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "bci-roof-trusses-b149",
+      "checked_sources": [
+        "bci-roof-trusses-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined lines 6614-6658.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "bci-roof-trusses-b149"
+    ]
+  },
+  "rationale": {
+    "a": "A truss with only curved chords and no web members. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "A truss with no subdiagonals and no compression members. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "c": "A Belgian truss with subdiagonals that reduce compression web-member length near the centerline. This stays inside the Batch 149 local source boundary.",
+    "d": "A Vierendeel frame with rigid rectangular panels. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "A Belgian truss with subdiagonals that reduce compression web-member length near the centerline. Supported by bci-roof-trusses-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "bci-roof-trusses-b149",
+    "checked_sources": [
+      "bci-roof-trusses-b149"
+    ]
   }
 }

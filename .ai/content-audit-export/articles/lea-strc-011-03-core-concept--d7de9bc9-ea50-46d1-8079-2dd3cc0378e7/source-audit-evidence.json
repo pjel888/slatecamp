@@ -1,0 +1,121 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "cluster_id": "lea-strc-011-03",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "source_strategy": "local_first_manifest_reserved",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "foundation-engineering-geotechnical-b149",
+      "title": "Foundation Engineering Analysis and Design - geotechnical characterization, SPT, groundwater, consolidation, and compaction boundaries",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+      "raw_artifact_sha256": "sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65",
+      "raw_artifact_bytes": 26919935,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+      "refined_artifact_sha256": "sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab",
+      "refined_artifact_bytes": 1336057,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/foundation-engineering-geotechnical.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/foundation-engineering-geotechnical.refined.md",
+      "locator": "refined markdown lines 1040-1095, 1320-1330, 1610-1620, 6844-6868, 6910-6922, 7399-7412, 7527-7568, 7644-7650, 17246-17256",
+      "safe_claims": [
+        "Subsurface exploration provides ground stratigraphy, soil and rock properties, groundwater conditions, geotechnical parameters, settlement inputs, and construction-problem warnings for foundation design.",
+        "Foundation design must check both safety/stability and performance/serviceability; settlement can govern even when stability is adequate.",
+        "Soil properties depend on density, void ratio, water content, effective stress, drainage condition, compressibility, strength, and permeability.",
+        "Groundwater level affects bearing capacity and settlement and should be observed during exploration.",
+        "SPT gives an N value from the last 300 mm of split-spoon penetration and provides disturbed soil samples for basic physical property tests.",
+        "Saturated clay consolidation is time-dependent as excess pore pressure dissipates; secondary consolidation continues after primary consolidation.",
+        "The captured Standard Proctor detail is limited to the source example of MSE backfill placement and compaction."
+      ],
+      "use_limits": [
+        "No exact field-test-to-bearing-capacity table was captured for this batch.",
+        "No external code acceptance rule or project-specific settlement tolerance was captured for this batch.",
+        "No universal fill-compaction rule outside the captured source/project specification is claimed."
+      ],
+      "sort_order": 0,
+      "local_capture_sha256": "sha256:fea18f042b14dd7fea71e41cc188d053b5ccd2dbc41ee09bc9855f8d87157332",
+      "refined_capture_sha256": "sha256:c4b2e886bfc2a49a3bb728ab9aea8a738600270a895716d7a56dba41fa8ad758"
+    },
+    {
+      "id": "bsi-foundation-context-b149",
+      "title": "Building Structures Illustrated - foundation system context",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_artifact_bytes": 38160628,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_artifact_bytes": 576829,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/bsi-foundation-context.source-capture.md",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/bsi-foundation-context.refined.md",
+      "locator": "refined markdown lines 718-756 and 1888-1902",
+      "safe_claims": [
+        "A foundation supports and anchors the superstructure and transmits loads safely into the earth.",
+        "Foundation selection responds to soil, rock, and water conditions below the building.",
+        "Shallow foundations fit stable near-surface soil with adequate bearing capacity.",
+        "Mat foundations distribute concentrated loads and help manage differential settlement.",
+        "Pile or caisson foundations are used when building loads exceed supporting-soil bearing capacity."
+      ],
+      "use_limits": [
+        "No exact foundation depth threshold, settlement tolerance, or local code citation is captured here."
+      ],
+      "sort_order": 1,
+      "local_capture_sha256": "sha256:b1f3b712f816170a6bce649f397acdfd84d2134cc4552b4171511d6ca33351db",
+      "refined_capture_sha256": "sha256:d4e92609278c2599ba8c37666fd75513a6100a7298f66d87c68a257c07620d0a"
+    }
+  ],
+  "normalized_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8",
+  "candidate_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "f4fef38e-33e8-4fed-bffd-5fadb3f6f892",
+      "content_hash": "sha256:d261e653c9456c850e97bad0e1919997219915fb9f68209fd061685d190761dc"
+    },
+    {
+      "question_id": "6dac5259-3ed3-4684-8b3a-598f89af308e",
+      "content_hash": "sha256:5e51e86d64f51d43f84d8e9a50188971eda8ed885dabb8424f3d55b44d668d24"
+    },
+    {
+      "question_id": "754dbca3-4dec-4003-b5c3-9ecf4c8bc388",
+      "content_hash": "sha256:9b9f3458c23db8f3707d0c66f177cb8d95d1676b53099f29bd7ab36b5c52f381"
+    },
+    {
+      "question_id": "a9a7db7e-1793-428b-b98a-28e9614edfe7",
+      "content_hash": "sha256:f9a5e4b0c00fc2bbaf3f8cd349e5c0c12da5112a5598baae9d9036c595545ae7"
+    },
+    {
+      "question_id": "267979d0-57bf-41ca-8162-bc4ebd0d5918",
+      "content_hash": "sha256:5fd4720b5bd207279141a94acd4ad6c1a9a5ec658eb32e4b9f5ed4b23ef786fe"
+    },
+    {
+      "question_id": "379760b9-47dd-493f-9971-9786596d52c2",
+      "content_hash": "sha256:09f1b798d8238133f6e7896f2f9c99e350643a3536fbd7a9363a7ba4fb023900"
+    },
+    {
+      "question_id": "6178e8e3-0ea8-4abd-9447-c301e845b9dd",
+      "content_hash": "sha256:2c092df37482d0b6183d28850ecf4960e9f4a80ea783734b3304e4c2f7eb0719"
+    },
+    {
+      "question_id": "e06c39bc-1e63-411c-8449-e0c4c59adfa1",
+      "content_hash": "sha256:0d280b6af64c5ee314c64bf43bd010e93d4f2395889ed1daf252fbaa328c7813"
+    },
+    {
+      "question_id": "864f1f1c-c068-474c-8dda-4fca0eea05e3",
+      "content_hash": "sha256:599942998300e0176367ef4c5172e2f3fe50b74add95eec6c2d522d4b8bed694"
+    },
+    {
+      "question_id": "818f8fd2-0b83-4415-95cb-7396a6f931e7",
+      "content_hash": "sha256:0c075b9d4028d45b7dfdc0d41f40f72011cb5566aa67261e96f49f885d311a24"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact legal, code, material, or numeric claims omitted unless present in the captured local source boundary",
+  "no_exact_code_claims": [
+    "No exact SPT-to-allowable-bearing-capacity table was used.",
+    "No external code acceptance rule or project-specific settlement tolerance was restored.",
+    "No universal building-pad compaction percentage was claimed outside captured source/project-specification language."
+  ],
+  "blocked_residuals_considered": []
+}

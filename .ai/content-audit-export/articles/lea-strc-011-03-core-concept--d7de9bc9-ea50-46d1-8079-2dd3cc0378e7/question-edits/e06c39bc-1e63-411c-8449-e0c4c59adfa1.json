@@ -1,0 +1,69 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "cluster_id": "lea-strc-011-03",
+  "question_id": "e06c39bc-1e63-411c-8449-e0c4c59adfa1",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:9d4ace2127ab4deb27d523410682a0659b53c2154dd516c461835c489a98400b",
+  "after_hash": "sha256:0d280b6af64c5ee314c64bf43bd010e93d4f2395889ed1daf252fbaa328c7813",
+  "baseline_hash": "sha256:9d4ace2127ab4deb27d523410682a0659b53c2154dd516c461835c489a98400b",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-geotechnical-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
+  "proposed": {
+    "text": "Which soil-behavior statement is supported by the captured source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All soils behave the same once a foundation is loaded."
+      },
+      {
+        "id": "b",
+        "text": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability."
+      },
+      {
+        "id": "c",
+        "text": "Only grain color controls foundation design."
+      },
+      {
+        "id": "d",
+        "text": "Permeability and pore pressure are unrelated to settlement."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "All soils behave the same once a foundation is loaded. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability. This stays inside the Batch 149 local source boundary.",
+      "c": "Only grain color controls foundation design. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "Permeability and pore pressure are unrelated to settlement. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability. Supported by foundation-engineering-geotechnical-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "foundation-engineering-geotechnical-b149",
+      "checked_sources": [
+        "foundation-engineering-geotechnical-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined lines 1056-1095.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "foundation-engineering-geotechnical-b149"
+    ]
+  },
+  "rationale": {
+    "a": "All soils behave the same once a foundation is loaded. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability. This stays inside the Batch 149 local source boundary.",
+    "c": "Only grain color controls foundation design. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "Permeability and pore pressure are unrelated to settlement. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability. Supported by foundation-engineering-geotechnical-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "foundation-engineering-geotechnical-b149",
+    "checked_sources": [
+      "foundation-engineering-geotechnical-b149"
+    ]
+  }
+}

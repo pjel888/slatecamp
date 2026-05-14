@@ -1,32 +1,32 @@
 {
   "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:163672e2117b56638a8d2eba26290a0909ec2f925b2c6842e331264274bd2fef",
+  "sources_hash": "sha256:02dcd41ac9fa528dce1709a28cdbef52f985bf6eddd6dadcbed4978c1ab21c4f",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "4331b265-88c9-4751-9599-0dea4cb16b0e",
+      "source_id": "foundation-engineering-geotechnical-b149",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
-      "label": "Philippine Building Code (PBC) Section 803 (Foundation Design); National Structural Code of the Philippines (NSCP) 2015 Edition, Chapter 1-C (Foundation Design)",
+      "label": "Foundation Engineering Analysis and Design - geotechnical characterization, SPT, groundwater, consolidation, and compaction boundaries",
       "url": null,
-      "source_type": "primary_law",
-      "description": "American Society for Testing and Materials (ASTM) D1586 (Standard Penetration Test), D698 (Standard Proctor Compaction), D2922 (Field Density Test); Bowles, J. E. (1996). Foundation Analysis and Design, 5th ed",
-      "is_verified": false,
+      "source_type": "local_authoritative_or_training_reference",
+      "description": "Batch 149 local-first source boundary. raw_path=vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf; raw_sha256=sha256:4755891a0aad4bfa7c7a6f6f8eaf33e933e08ea9529ae932eeda45374ed1bc65; refined_path=vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md; refined_sha256=sha256:2eaec5ff4bd5f82376996bb7e847fb810c4b1ac225b7a2b04214d45feb2d8fab; capture_path=vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/foundation-engineering-geotechnical.source-capture.md; capture_sha256=sha256:fea18f042b14dd7fea71e41cc188d053b5ccd2dbc41ee09bc9855f8d87157332; refined_capture_path=vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/foundation-engineering-geotechnical.refined.md; refined_capture_sha256=sha256:c4b2e886bfc2a49a3bb728ab9aea8a738600270a895716d7a56dba41fa8ad758; locator=refined markdown lines 1040-1095, 1320-1330, 1610-1620, 6844-6868, 6910-6922, 7399-7412, 7527-7568, 7644-7650, 17246-17256; use_limits=No exact field-test-to-bearing-capacity table was captured for this batch. | No external code acceptance rule or project-specific settlement tolerance was captured for this batch. | No universal fill-compaction rule outside the captured source/project specification is claimed.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T04:03:57.778Z",
+      "updated_at": "2026-05-14T04:03:57.778Z"
     },
     {
-      "source_id": "0530f6c6-6ad3-4d1f-8597-9fbf1a943967",
+      "source_id": "bsi-foundation-context-b149",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
-      "label": "McGraw-Hill; Terzaghi, K., Peck, R. B., & Mesri, G. (1996). Soil Mechanics in Engineering Practice, 3rd ed",
+      "label": "Building Structures Illustrated - foundation system context",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_authoritative_or_training_reference",
+      "description": "Batch 149 local-first source boundary. raw_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf; raw_sha256=sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace; refined_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md; refined_sha256=sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491; capture_path=vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-149/bsi-foundation-context.source-capture.md; capture_sha256=sha256:b1f3b712f816170a6bce649f397acdfd84d2134cc4552b4171511d6ca33351db; refined_capture_path=vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-149/bsi-foundation-context.refined.md; refined_capture_sha256=sha256:d4e92609278c2599ba8c37666fd75513a6100a7298f66d87c68a257c07620d0a; locator=refined markdown lines 718-756 and 1888-1902; use_limits=No exact foundation depth threshold, settlement tolerance, or local code citation is captured here.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T04:03:57.778Z",
+      "updated_at": "2026-05-14T04:03:57.778Z"
     }
   ]
 }

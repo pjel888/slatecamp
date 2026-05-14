@@ -1,0 +1,69 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "cluster_id": "lea-strc-011-03",
+  "question_id": "6178e8e3-0ea8-4abd-9447-c301e845b9dd",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:1096c2689e58af89a66e1c79918324ad4d4dc274a4e42820acb8a44e99773ecc",
+  "after_hash": "sha256:2c092df37482d0b6183d28850ecf4960e9f4a80ea783734b3304e4c2f7eb0719",
+  "baseline_hash": "sha256:1096c2689e58af89a66e1c79918324ad4d4dc274a4e42820acb8a44e99773ecc",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-geotechnical-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
+  "proposed": {
+    "text": "What is the main reason subsurface exploration is performed before foundation selection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To avoid recording soil samples, groundwater, or test data."
+      },
+      {
+        "id": "b",
+        "text": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design."
+      },
+      {
+        "id": "c",
+        "text": "To prove that every site can use shallow footings."
+      },
+      {
+        "id": "d",
+        "text": "To replace engineering judgment with a single boring depth rule."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "To avoid recording soil samples, groundwater, or test data. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design. This stays inside the Batch 149 local source boundary.",
+      "c": "To prove that every site can use shallow footings. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "To replace engineering judgment with a single boring depth rule. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design. Supported by foundation-engineering-geotechnical-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "foundation-engineering-geotechnical-b149",
+      "checked_sources": [
+        "foundation-engineering-geotechnical-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined lines 6844-6868.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "foundation-engineering-geotechnical-b149"
+    ]
+  },
+  "rationale": {
+    "a": "To avoid recording soil samples, groundwater, or test data. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design. This stays inside the Batch 149 local source boundary.",
+    "c": "To prove that every site can use shallow footings. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "To replace engineering judgment with a single boring depth rule. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design. Supported by foundation-engineering-geotechnical-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "foundation-engineering-geotechnical-b149",
+    "checked_sources": [
+      "foundation-engineering-geotechnical-b149"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+  "cluster_id": "lea-strc-011-03",
+  "question_id": "6dac5259-3ed3-4684-8b3a-598f89af308e",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:25116d6985274154e95818fad3518fa25a2317a2e15eb4e92698b8f1d64546ca",
+  "after_hash": "sha256:5e51e86d64f51d43f84d8e9a50188971eda8ed885dabb8424f3d55b44d668d24",
+  "baseline_hash": "sha256:25116d6985274154e95818fad3518fa25a2317a2e15eb4e92698b8f1d64546ca",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "foundation-engineering-geotechnical-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
+  "proposed": {
+    "text": "A structure on saturated clay is stable against shear failure but shows continuing settlement. What is the best source-safe interpretation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Settlement must already be complete if no shear failure occurred."
+      },
+      {
+        "id": "b",
+        "text": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate."
+      },
+      {
+        "id": "c",
+        "text": "Clay settlement cannot be evaluated because pore pressure is unrelated to soil behavior."
+      },
+      {
+        "id": "d",
+        "text": "Cracking proves the superstructure is defective and excludes foundation serviceability concerns."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Settlement must already be complete if no shear failure occurred. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate. This stays inside the Batch 149 local source boundary.",
+      "c": "Clay settlement cannot be evaluated because pore pressure is unrelated to soil behavior. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "Cracking proves the superstructure is defective and excludes foundation serviceability concerns. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate. Supported by foundation-engineering-geotechnical-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "foundation-engineering-geotechnical-b149",
+      "checked_sources": [
+        "foundation-engineering-geotechnical-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Foundation Engineering refined lines 1040-1088 and 1208-1218.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "foundation-engineering-geotechnical-b149"
+    ]
+  },
+  "rationale": {
+    "a": "Settlement must already be complete if no shear failure occurred. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate. This stays inside the Batch 149 local source boundary.",
+    "c": "Clay settlement cannot be evaluated because pore pressure is unrelated to soil behavior. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "Cracking proves the superstructure is defective and excludes foundation serviceability concerns. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate. Supported by foundation-engineering-geotechnical-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "foundation-engineering-geotechnical-b149",
+    "checked_sources": [
+      "foundation-engineering-geotechnical-b149"
+    ]
+  }
+}

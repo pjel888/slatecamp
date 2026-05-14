@@ -1,0 +1,44 @@
+{
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "generated_at": "2026-05-14T04:03:57.778Z",
+  "status": "passed_scoped_validation_git_handoff_ready",
+  "articles": [
+    {
+      "cluster_id": "lea-strc-011-03",
+      "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
+      "title": "Geotechnical engineering characterizes soil, predicts",
+      "source_ids": [
+        "foundation-engineering-geotechnical-b149",
+        "bsi-foundation-context-b149"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8",
+      "candidate_sha256": "sha256:b000b8d936a1d5866dbd026e0d27af0bd7ab60a33f8fc5607542d08625dc2eb8"
+    },
+    {
+      "cluster_id": "lea-matl-006-01",
+      "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "title": "Roofing materials serve three critical functions: weather",
+      "source_ids": [
+        "bci-roofing-systems-b149",
+        "salvan-roofing-materials-b149"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:d4bfeea13d4293d20c627cf7b8924c7b0200f592d8438b6021f1fa8bb2653af3",
+      "candidate_sha256": "sha256:d4bfeea13d4293d20c627cf7b8924c7b0200f592d8438b6021f1fa8bb2653af3"
+    },
+    {
+      "cluster_id": "lea-matl-006-02",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "title": "Roof trusses transfer roof loads through triangulated",
+      "source_ids": [
+        "bci-roof-trusses-b149",
+        "salvan-truss-supporting-materials-b149"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:c21aae906943bc4d8e4f9abec4c5f93339a4f0208954dce76c2c696a27c535de",
+      "candidate_sha256": "sha256:c21aae906943bc4d8e4f9abec4c5f93339a4f0208954dce76c2c696a27c535de"
+    }
+  ]
+}

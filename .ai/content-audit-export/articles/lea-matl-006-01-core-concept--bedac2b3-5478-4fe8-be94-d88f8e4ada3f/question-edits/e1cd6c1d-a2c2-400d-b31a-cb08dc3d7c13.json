@@ -1,65 +1,69 @@
 {
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+  "cluster_id": "lea-matl-006-01",
   "question_id": "e1cd6c1d-a2c2-400d-b31a-cb08dc3d7c13",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:cc43e6e2d2f1d004a55eeb32f0854a5e77d3f225bcee63968226e18a5c49ac86",
+  "after_hash": "sha256:3da6f3d216c02eea205d3b2e61b1d18367bf823a2108654c4de2217a8596c254",
   "baseline_hash": "sha256:cc43e6e2d2f1d004a55eeb32f0854a5e77d3f225bcee63968226e18a5c49ac86",
-  "action": "replace",
-  "reason": "source-audited-article-batch-077-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-006-01-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-077",
-  "approved_at": "2026-05-12T04:10:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
-    "parent_article_slug": "lea-matl-006-01-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 695-710, 6412-6454, and 7990-8012; Salvan refined markdown lines 3152-3337; raw PDF pages 30, 197, and 111 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
-      "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "salvan-building-materials-b077",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "bci-5e-b077",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 077 local raw-source-audited roofing_materials scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "salvan-roofing-materials-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
   "proposed": {
-    "text": "Which statement is source-safe for low-slope roofs?",
+    "text": "A coastal metal-roof specification omits protective coating and rustproofing discussion. What is the source-safe concern?",
     "options": [
       {
         "id": "a",
-        "text": "They generally require roll or continuous membrane roofing"
+        "text": "Fire rating is automatically lost."
       },
       {
         "id": "b",
-        "text": "They always require clay tiles only"
+        "text": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures."
       },
       {
         "id": "c",
-        "text": "They never need drainage"
+        "text": "The roof cannot shed water because it is metal."
       },
       {
         "id": "d",
-        "text": "They are unrelated to pitch"
+        "text": "The membrane must be concrete."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI states that low-slope roofs require roll or continuous membrane roofing, with some sheet materials on 3:12 pitches.",
-    "explanation": "BCI states that low-slope roofs require roll or continuous membrane roofing, with some sheet materials on 3:12 pitches.",
-    "code_citation": "George Salvan Architectural Building Materials; Building Construction Illustrated, 5th Edition"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Fire rating is automatically lost. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures. This stays inside the Batch 149 local source boundary.",
+      "c": "The roof cannot shed water because it is metal. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "The membrane must be concrete. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures. Supported by salvan-roofing-materials-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "salvan-roofing-materials-b149",
+      "checked_sources": [
+        "salvan-roofing-materials-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Salvan refined lines 3070-3185 and 4332-4468.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "salvan-roofing-materials-b149"
+    ]
+  },
+  "rationale": {
+    "a": "Fire rating is automatically lost. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures. This stays inside the Batch 149 local source boundary.",
+    "c": "The roof cannot shed water because it is metal. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "The membrane must be concrete. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures. Supported by salvan-roofing-materials-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "salvan-roofing-materials-b149",
+    "checked_sources": [
+      "salvan-roofing-materials-b149"
+    ]
   }
 }

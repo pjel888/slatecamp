@@ -1,30 +1,30 @@
 {
   "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:f1d6aba38fd8029b2a8160f34aca2afad8cec899dfe81440f4a0e6800964567f",
+  "linked_questions_hash": "sha256:0bbf615e3efe469e118b78d2d18fcb15f8351ce4b0a1ce9f9d7f87a4b46a3ae4",
   "question_count": 10,
   "questions": [
     {
       "question_id": "f4fef38e-33e8-4fed-bffd-5fadb3f6f892",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "A contractor installs structural fill and claims it is '100% Proctor compacted.' The project engineer should be skeptical of this claim. Explain why.",
+      "text": "Which statement stays inside the Batch 149 source boundary for a Proctor-style compaction requirement?",
       "options": [
         {
           "id": "a",
-          "text": "100% Proctor is not possible; the Proctor test determines the maximum achievable density, and field compaction cannot exceed this laboratory maximum (under standard conditions)."
+          "text": "It compares field dry density and moisture content with a laboratory maximum dry unit weight and optimum moisture content stated by the specification."
         },
         {
           "id": "b",
-          "text": "100% Proctor is easily achieved with modern equipment; the claim is credible and requires no further verification."
+          "text": "It proves that any fill is acceptable without field density or moisture verification."
         },
         {
           "id": "c",
-          "text": "100% Proctor means the fill is perfect and requires no further testing or quality assurance monitoring."
+          "text": "It gives a universal Philippine building-pad percentage for every project even when the project specification is silent."
         },
         {
           "id": "d",
-          "text": "100% Proctor is impossible because the contractor has different equipment than the lab and cannot replicate conditions."
+          "text": "It replaces the need for subsurface exploration because compacted fill always controls settlement."
         }
       ],
       "correct_option_id": "a",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The Standard Proctor test defines γd_max in a controlled laboratory environment with specific energy input (manual compaction). Field compaction uses different equipment and conditions (rollers, variable compaction energy) and cannot, in practice, exceed the lab maximum under standard conditions. Achieving 100% Proctor in the field is theoretically possible but practically very rare. A claim of 100% Proctor should be met with skepticism; the contractor may not understand the test or may be inflating the claim. Typical field compaction is 90–95% Proctor. Verification via field density test is essential.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It compares field dry density and moisture content with a laboratory maximum dry unit weight and optimum moisture content stated by the specification. This stays inside the Batch 149 local source boundary.",
+        "b": "It proves that any fill is acceptable without field density or moisture verification. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "c": "It gives a universal Philippine building-pad percentage for every project even when the project specification is silent. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "It replaces the need for subsurface exploration because compacted fill always controls settlement. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "It compares field dry density and moisture content with a laboratory maximum dry unit weight and optimum moisture content stated by the specification. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM D698 (Standard Proctor Test); NSCP 2015 (Fill Compaction Requirements)",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 17246-17256.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ab345adfef954b5a9705c87659c428c047f0abbfe181bdddf038164a3ccf49a0"
+      "content_hash": "sha256:d261e653c9456c850e97bad0e1919997219915fb9f68209fd061685d190761dc"
     },
     {
       "question_id": "6dac5259-3ed3-4684-8b3a-598f89af308e",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "A building on soft clay exhibits 80 mm differential settlement between corner and center columns over 3 years. Cracking appears in partition walls. The soil consolidation coefficient is cv = 0.5 m²/year. Analyze whether consolidation is complete and what design action is appropriate.",
+      "text": "A structure on saturated clay is stable against shear failure but shows continuing settlement. What is the best source-safe interpretation?",
       "options": [
         {
           "id": "a",
-          "text": "Consolidation is definitely complete at 3 years; the building will not settle further. Cracking is a construction defect, not a foundation issue, and requires immediate repair"
+          "text": "Settlement must already be complete if no shear failure occurred."
         },
         {
           "id": "b",
-          "text": "Consolidation may still be ongoing. With cv = 0.5 m²/year and clay depth H = 8 m (typical), time to 90% consolidation is T90 ≈ (H²/cv) × 0.848 ≈ (64/0.5) × 0.848 ≈ 108 years. After 3 years, consolidation is only a small fraction complete. Future settlement will continue over decades, causing additional cracking. Design action: monitor settlement, install crack gauges, underpinning provisions, and differential settlement tolerances."
+          "text": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate."
         },
         {
           "id": "c",
-          "text": "Soft clay never consolidates; settlement is permanent and cannot be calculated, making any design action futile"
+          "text": "Clay settlement cannot be evaluated because pore pressure is unrelated to soil behavior."
         },
         {
           "id": "d",
-          "text": "80 mm differential settlement is normal and acceptable for any building type, requiring no further action or monitoring"
+          "text": "Cracking proves the superstructure is defective and excludes foundation serviceability concerns."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Consolidation rate is governed by cv and soil layer thickness. For soft clay (cv often 0.1–1 m²/year) and deep deposits, consolidation to 90% completion can take 100–200+ years. At 3 years, only a small fraction of primary consolidation may be complete. Future settlement is inevitable and will cause additional cracking. Design must anticipate this: monitor settlement, establish tolerance limits (50–80 mm differential for office buildings), install crack gauges, provide underpinning provisions in critical areas, and warn the client of continued movement. This is not a failure; it is a design reality for buildings on soft clay.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Settlement must already be complete if no shear failure occurred. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate. This stays inside the Batch 149 local source boundary.",
+        "c": "Clay settlement cannot be evaluated because pore pressure is unrelated to soil behavior. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Cracking proves the superstructure is defective and excludes foundation serviceability concerns. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Performance can still govern; saturated clay settlement is time-dependent as pore pressure dissipates, so monitoring and serviceability review are appropriate. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "Bowles (1996); Terzaghi et al. (1996); NSCP 2015 (Settlement Monitoring)",
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 1040-1088 and 1208-1218.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:25116d6985274154e95818fad3518fa25a2317a2e15eb4e92698b8f1d64546ca"
+      "content_hash": "sha256:5e51e86d64f51d43f84d8e9a50188971eda8ed885dabb8424f3d55b44d668d24"
     },
     {
       "question_id": "754dbca3-4dec-4003-b5c3-9ecf4c8bc388",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "Distinguish between immediate (elastic) settlement and primary consolidation settlement in terms of mechanism, soil type, and duration.",
+      "text": "Which answer best distinguishes immediate foundation response from primary consolidation in the captured source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Immediate and primary are the same process; naming is arbitrary, and there is no significant difference in their effects"
+          "text": "They are the same process and differ only by the name used by the examiner."
         },
         {
           "id": "b",
-          "text": "Immediate settlement is elastic compression of soil solids and air expulsion without pore water drainage (fast, hours to days). Primary consolidation is pore water expulsion from clay under constant load (slow, months to years). Immediate: all soil types; significant in sand. Primary: clay and silt dominant; minor in sand. Sand settles fast (immediate); clay settles slow (primary consolidation)."
+          "text": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process."
         },
         {
           "id": "c",
-          "text": "Immediate settlement occurs in clay; primary consolidation occurs in sand, which is contrary to typical soil behavior"
+          "text": "Primary consolidation is faster than any immediate response because clay drains quickly."
         },
         {
           "id": "d",
-          "text": "Primary consolidation is faster than immediate settlement, which contradicts the usual understanding of soil mechanics"
+          "text": "Immediate settlement can occur only after secondary consolidation is complete."
         }
       ],
       "correct_option_id": "b",
@@ -133,17 +149,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Immediate settlement is elastic deformation and rapid air expulsion, occurring in hours to days in all soils. Primary consolidation is pore water expulsion and volume reduction in clay under constant load, occurring in months to years. Sand has high permeability; pore water drains quickly and primary settlement is minor. Clay has low permeability; pore water drains slowly and primary settlement is dominant. This is the fundamental distinction between soil types and settlement behavior.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They are the same process and differ only by the name used by the examiner. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process. This stays inside the Batch 149 local source boundary.",
+        "c": "Primary consolidation is faster than any immediate response because clay drains quickly. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Immediate settlement can occur only after secondary consolidation is complete. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Primary consolidation in saturated clay is time-dependent because excess pore pressure dissipates and load transfers to the soil skeleton; immediate response is not that drainage process. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C; Bowles (1996); Terzaghi et al. (1996)",
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 1084-1095 and 1208-1218.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +176,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b18ae058fd8487a2776c021677b9ab648f57fcad46875cb12864ef6104b6f0d0"
+      "content_hash": "sha256:9b9f3458c23db8f3707d0c66f177cb8d95d1676b53099f29bd7ab36b5c52f381"
     },
     {
       "question_id": "a9a7db7e-1793-428b-b98a-28e9614edfe7",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "A soft clay layer (H = 10 m, c = 30 kPa, φ = 15°) underlies a building. Explain how bearing capacity is affected by (a) increasing footing depth Df, (b) increasing footing width B, and (c) lowering the groundwater level.",
+      "text": "Why must groundwater observations be included in subsurface exploration for foundation design?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing capacity is unaffected by Df, B, or groundwater; it depends only on cohesion and friction angle, which are intrinsic soil properties unaffected by external changes"
+          "text": "Groundwater is only a construction nuisance and has no effect on foundation behavior."
         },
         {
           "id": "b",
-          "text": "Df increases bearing capacity (larger depth factor). B has minimal effect on ultimate bearing capacity per unit area qu (independent of B for sands; slight increase for clays per shape factors). Total capacity qult × B × L increases with B. Lowering groundwater increases effective stress in the saturated zone, increasing bearing capacity."
+          "text": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record."
         },
         {
           "id": "c",
-          "text": "Df decreases bearing capacity (deeper = higher surcharge, lower bearing capacity). B decreases bearing capacity (wider footings settle more). Groundwater has no effect on bearing capacity, as it does not alter the soil's inherent properties"
+          "text": "Groundwater readings replace SPT blow counts and soil descriptions."
         },
         {
           "id": "d",
-          "text": "All three factors decrease bearing capacity, leading to potential structural instability and increased risk of settlement"
+          "text": "Groundwater matters only for plumbing design and not for foundations."
         }
       ],
       "correct_option_id": "b",
@@ -183,17 +207,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bearing capacity is affected by multiple factors beyond cohesion and friction angle. (a) Depth factor increases bearing capacity as Df increases; deeper footings have higher bearing capacity due to confining pressure. (b) Width factor is complex: larger B can support larger total load, but bearing capacity per unit area depends on stress distribution. Very large B (mat foundations) flatten pressure but load-carrying capacity is still substantial. (c) Lowering groundwater increases effective stress in the zone above the water table, increasing bearing capacity in that zone. These are standard factors in bearing capacity equations (Terzaghi, Meyerhof, Hansen).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Groundwater is only a construction nuisance and has no effect on foundation behavior. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record. This stays inside the Batch 149 local source boundary.",
+        "c": "Groundwater readings replace SPT blow counts and soil descriptions. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Groundwater matters only for plumbing design and not for foundations. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Groundwater presence or fluctuation can affect bearing capacity and settlement, so field logs and measurements are part of the exploration record. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "Bowles (1996); Terzaghi et al. (1996)",
-      "bloom_level": "analyze",
-      "application_context": "calculation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 7399-7412.",
+      "bloom_level": "remember",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.9,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +234,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f44008d0569cb7f882653f5a7667b648a41dc6c6378711ab0529bdf49ba46f1f"
+      "content_hash": "sha256:f9a5e4b0c00fc2bbaf3f8cd349e5c0c12da5112a5598baae9d9036c595545ae7"
     },
     {
       "question_id": "267979d0-57bf-41ca-8162-bc4ebd0d5918",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "A building foundation settles 10 mm in the first week after construction and another 5 mm over the next 6 months. The soil is soft clay with low permeability. Identify the settlement types occurring and explain the time-dependent behavior.",
+      "text": "A foundation settles shortly after loading and then continues to settle slowly in saturated clay. Which explanation is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Only immediate settlement occurs; the 10 mm in week 1 is all the settlement the building will ever experience, which is unlikely given the soil type"
+          "text": "Only immediate movement is possible; later movement is unrelated to the soil."
         },
         {
           "id": "b",
-          "text": "Week 1 (10 mm) is immediate (elastic) settlement. Months 1–6 (5 mm additional) is primary consolidation as pore water slowly drains from the clay under the footing pressure. In soft clay, primary consolidation continues over months to years; the 5 mm over 6 months will likely continue, perhaps with decreasing rate, for 2–3 more years."
+          "text": "The later movement can be primary consolidation as excess pore pressure dissipates; long-term settlement must be checked for serviceability."
         },
         {
           "id": "c",
-          "text": "All 15 mm is primary consolidation; no immediate settlement occurs in clay, which contradicts typical settlement behavior"
+          "text": "All movement is secondary consolidation because primary consolidation occurs only in sand."
         },
         {
           "id": "d",
-          "text": "The building is failing; all 15 mm indicates a structural problem, which is an overstatement without further evidence"
+          "text": "Any settlement means the bearing capacity has already failed."
         }
       ],
       "correct_option_id": "b",
@@ -233,17 +265,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In soft clay, immediate settlement occurs rapidly (within hours to days) as soils solids compress elastically. Primary consolidation follows over months to years as pore water drains and soil volume reduces under constant load. The 10 mm in week 1 is immediate settlement. The 5 mm over 6 months is the beginning of primary consolidation. In soft clay, the total primary settlement can exceed 50–100 mm and take 2–5 years to complete. This is normal; the building must be designed for this movement (differential settlement limits, monitoring).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only immediate movement is possible; later movement is unrelated to the soil. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "The later movement can be primary consolidation as excess pore pressure dissipates; long-term settlement must be checked for serviceability. This stays inside the Batch 149 local source boundary.",
+        "c": "All movement is secondary consolidation because primary consolidation occurs only in sand. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Any settlement means the bearing capacity has already failed. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "The later movement can be primary consolidation as excess pore pressure dissipates; long-term settlement must be checked for serviceability. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Settlement Types); Bowles (1996)",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 1084-1095, 1208-1218, and 1610-1620.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +292,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d63796dfce944f5907a550a9cb25cdc6766a6a71fa04bd9a2d2f07d9bc452485"
+      "content_hash": "sha256:5fd4720b5bd207279141a94acd4ad6c1a9a5ec658eb32e4b9f5ed4b23ef786fe"
     },
     {
       "question_id": "379760b9-47dd-493f-9971-9786596d52c2",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "A Standard Proctor compaction test produces γd_max = 18.5 kN/m³ at OMC = 11%. A field density test on the building pad shows γd_field = 16.8 kN/m³ at w = 10.5%. Determine if the field fill complies with a '90% Proctor at OMC ± 2%' specification.",
+      "text": "For the captured MSE backfill example, soil is placed in lifts not more than 300 mm thick and must reach 95 percent of maximum dry unit weight within +2 percent of optimum water content. Lab maximum dry unit weight is 18.0 kN/m3 at 11 percent OMC; field dry unit weight is 17.2 kN/m3 at 12 percent water content. Which conclusion follows?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, it complies. Field moisture 10.5% is within OMC ± 2% (9–13%); field density 16.8 kN/m³ ÷ 18.5 kN/m³ = 90.8%, which exceeds 90%. Specification is satisfied."
+          "text": "It satisfies the captured criterion because 17.2/18.0 is about 95.6 percent and 12 percent is within the +2 percent moisture boundary."
         },
         {
           "id": "b",
-          "text": "No, it does not comply. Field moisture 10.5% is outside the OMC ± 2% range, which is critical for achieving the required compaction."
+          "text": "It fails because field dry unit weight must equal exactly 18.0 kN/m3."
         },
         {
           "id": "c",
-          "text": "Yes, it always complies because the field density is above 16 kN/m³, which is generally considered adequate for most construction purposes."
+          "text": "It passes only if the water content is exactly 11 percent."
         },
         {
           "id": "d",
-          "text": "No, it does not comply because the field density is not equal to the lab maximum, which is necessary for full compliance with the specification."
+          "text": "It cannot be checked because Proctor language never uses dry unit weight."
         }
       ],
       "correct_option_id": "a",
@@ -283,17 +323,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Compliance requires two conditions: (1) field moisture within OMC ± 2%, and (2) field density ≥ 90% γd_max. Field moisture 10.5% is within 11% ± 2% (range 9–13%), satisfying condition 1. Field density 16.8 / 18.5 = 90.8% ≥ 90%, satisfying condition 2. Both conditions are met; the fill complies. However, note: 90.8% is barely above the 90% threshold, leaving no margin for additional testing or variation. Future density tests should verify continued compliance.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It satisfies the captured criterion because 17.2/18.0 is about 95.6 percent and 12 percent is within the +2 percent moisture boundary. This stays inside the Batch 149 local source boundary.",
+        "b": "It fails because field dry unit weight must equal exactly 18.0 kN/m3. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "c": "It passes only if the water content is exactly 11 percent. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "It cannot be checked because Proctor language never uses dry unit weight. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "It satisfies the captured criterion because 17.2/18.0 is about 95.6 percent and 12 percent is within the +2 percent moisture boundary. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM D698 (Standard Proctor Test); ASTM D2922 (Field Density Test)",
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 17246-17256.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +350,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e3cfa9fba4ceeaf1a7c82c3b80a07933868109ac4d3d016314e3e8654af95879"
+      "content_hash": "sha256:09f1b798d8238133f6e7896f2f9c99e350643a3536fbd7a9363a7ba4fb023900"
     },
     {
       "question_id": "6178e8e3-0ea8-4abd-9447-c301e845b9dd",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "What is the primary purpose of compaction in structural fill, and what does the specification '90% Proctor at OMC ± 2%' mean?",
+      "text": "What is the main reason subsurface exploration is performed before foundation selection?",
       "options": [
         {
           "id": "a",
-          "text": "Compaction removes all air voids; 90% Proctor means 90% of all voids are eliminated, which is a common misconception"
+          "text": "To avoid recording soil samples, groundwater, or test data."
         },
         {
           "id": "b",
-          "text": "Compaction increases soil density and bearing capacity, and reduces future settlement. The specification means the field fill must achieve 90% of the dry unit weight determined by the Standard Proctor lab test, at the lab-determined optimum moisture content ± 2%."
+          "text": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design."
         },
         {
           "id": "c",
-          "text": "Compaction is aesthetic; the percentage is arbitrary, often misunderstood in engineering contexts"
+          "text": "To prove that every site can use shallow footings."
         },
         {
           "id": "d",
-          "text": "90% Proctor means 90% of the fill is water; the rest is air, which is incorrect but sometimes believed"
+          "text": "To replace engineering judgment with a single boring depth rule."
         }
       ],
       "correct_option_id": "b",
@@ -333,17 +381,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Compaction densifies soil to increase bearing capacity and reduce compressibility. The Standard Proctor test identifies γd max (maximum dry unit weight) at OMC (optimum moisture content, typically 10–15%). A specification of 90% Proctor means field compaction must achieve γd_field ≥ 0.90 × γd_max at moisture within OMC ± 2%. This is a quantitative, verifiable requirement.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "To avoid recording soil samples, groundwater, or test data. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design. This stays inside the Batch 149 local source boundary.",
+        "c": "To prove that every site can use shallow footings. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "To replace engineering judgment with a single boring depth rule. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "To obtain ground stratigraphy, soil properties, groundwater conditions, design parameters, settlement inputs, and construction-risk information for safe and economical foundation design. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C; ASTM D698 (Standard Proctor Test)",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 6844-6868.",
+      "bloom_level": "remember",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +408,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1096c2689e58af89a66e1c79918324ad4d4dc274a4e42820acb8a44e99773ecc"
+      "content_hash": "sha256:2c092df37482d0b6183d28850ecf4960e9f4a80ea783734b3304e4c2f7eb0719"
     },
     {
       "question_id": "e06c39bc-1e63-411c-8449-e0c4c59adfa1",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "Explain the relationship between soil grain size classification (clay, silt, sand, gravel) and bearing capacity, compressibility, and drainage characteristics.",
+      "text": "Which soil-behavior statement is supported by the captured source?",
       "options": [
         {
           "id": "a",
-          "text": "Grain size does not affect bearing capacity, compressibility, or drainage; all soils behave identically, which is a common misconception"
+          "text": "All soils behave the same once a foundation is loaded."
         },
         {
           "id": "b",
-          "text": "Clay (fine-grained, < 0.005 mm) has high compressibility, poor drainage, and moderate bearing capacity (depends on cohesion and consolidation state). Sand (0.075–4.75 mm) has low compressibility, good drainage, and high bearing capacity (depends on density and friction angle). Gravel has very high bearing capacity and excellent drainage. Silt is intermediate. Grain size directly governs behavior; fine soils are weaker and compressible; coarse soils are strong and stable."
+          "text": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability."
         },
         {
           "id": "c",
-          "text": "Fine-grained soils (clay) have higher bearing capacity than coarse soils (sand), which is contrary to typical engineering principles"
+          "text": "Only grain color controls foundation design."
         },
         {
           "id": "d",
-          "text": "Drainage is independent of grain size; all soils drain equally fast, which is not supported by empirical evidence"
+          "text": "Permeability and pore pressure are unrelated to settlement."
         }
       ],
       "correct_option_id": "b",
@@ -383,17 +439,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Grain size is the primary classifier of soil behavior. Clay particles (< 0.005 mm) pack closely with no internal friction; cohesion (bonding between particles) provides strength. Clays are very compressible and drain slowly (low permeability). Sand particles (coarser) lock together via friction; cohesion is negligible. Sands are less compressible and drain quickly (high permeability). Gravel is strongest and drains best. Bearing capacity, compressibility, and drainage are all strongly correlated with grain size. This relationship is fundamental to geotechnical engineering and foundation design.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All soils behave the same once a foundation is loaded. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability. This stays inside the Batch 149 local source boundary.",
+        "c": "Only grain color controls foundation design. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Permeability and pore pressure are unrelated to settlement. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Soil behavior depends on density state, void ratio, water content, effective stress, drainage condition, strength, compressibility, and permeability. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Soil Classification); Bowles (1996)",
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 1056-1095.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +466,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9d4ace2127ab4deb27d523410682a0659b53c2154dd516c461835c489a98400b"
+      "content_hash": "sha256:0d280b6af64c5ee314c64bf43bd010e93d4f2395889ed1daf252fbaa328c7813"
     },
     {
       "question_id": "864f1f1c-c068-474c-8dda-4fca0eea05e3",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "A site investigation reports soil with SPT N = 35 in sand at 18 m depth, overlain by clay with N = 8 at 5 m depth. The groundwater table is at 3 m depth. Recommend a foundation strategy and justify based on bearing capacity, settlement, and soil profile characteristics.",
+      "text": "A site has weak near-surface soil, groundwater observations, and a deeper competent stratum indicated by exploration. Which foundation strategy is the best source-safe direction?",
       "options": [
         {
           "id": "a",
-          "text": "Use a shallow footing at 1 m depth on the surface; SPT data are not relevant to foundation selection, focusing on surface conditions"
+          "text": "Ignore the exploration and use a shallow footing because all buildings start at grade."
         },
         {
           "id": "b",
-          "text": "Use a shallow footing at 3 m depth (above groundwater) bearing on clay (N = 8). Bearing capacity is only 100–200 kN/m² (marginal); settlement will be moderate but acceptable, considering cost efficiency"
+          "text": "Use the cheapest footing type regardless of bearing capacity or settlement."
         },
         {
           "id": "c",
-          "text": "Use a deep pile or caisson foundation extending to the sand at 18 m depth (N = 35). Sand provides high bearing capacity (400–800+ kN/m²) and low compressibility. Piles/caissons bypass the weak clay, achieving stable bearing and minimal settlement. Groundwater at 3 m requires special construction methods (casing, tremie if water entry occurs)."
+          "text": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability."
         },
         {
           "id": "d",
-          "text": "Use a floating foundation; groundwater at 3 m makes floating viable, reducing construction complexity"
+          "text": "Use a decorative slab because groundwater cancels bearing-capacity concerns."
         }
       ],
       "correct_option_id": "c",
@@ -433,17 +497,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Clay at 5 m (N = 8) has marginal bearing capacity (100–200 kN/m²) and significant compressibility. This layer is unsuitable for anything but light single-story structures. The dense sand at 18 m (N = 35) has excellent bearing capacity (400–800+ kN/m²) and low compressibility. A deep pile or caisson foundation extending to the sand is the robust solution. Groundwater at 3 m is managed via casing during installation and tremie placement for bored piles. This strategy is typical for deep alluvial sites in the Philippines: bypass weak clay, anchor in strong sand.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Ignore the exploration and use a shallow footing because all buildings start at grade. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Use the cheapest footing type regardless of bearing capacity or settlement. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "c": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability. This stays inside the Batch 149 local source boundary.",
+        "d": "Use a decorative slab because groundwater cancels bearing-capacity concerns. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Consider a deep foundation or other revised strategy that transfers load to suitable material and checks settlement/serviceability. Supported by foundation-engineering-geotechnical-b149, bsi-foundation-context-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149, bsi-foundation-context-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149",
+          "bsi-foundation-context-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 1-C (Foundation Design Strategy); Bowles (1996)",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 6844-6868 and BSI refined lines 1888-1902.",
+      "bloom_level": "analyze",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149",
+        "bsi-foundation-context-b149"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +526,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d363467a9221dfe48612e35537192cecee021fd59d50b342f23163bb2251fdda"
+      "content_hash": "sha256:599942998300e0176367ef4c5172e2f3fe50b74add95eec6c2d522d4b8bed694"
     },
     {
       "question_id": "818f8fd2-0b83-4415-95cb-7396a6f931e7",
       "article_id": "d7de9bc9-ea50-46d1-8079-2dd3cc0378e7",
       "topic_id": "7fa45388-0075-4a69-b874-94ca6af47554",
-      "text": "An SPT boring reaches a layer with N = 6 (blows per 300 mm). Classify the soil state and estimate the bearing capacity range.",
+      "text": "In the Standard Penetration Test, what does the N value represent in the captured procedure?",
       "options": [
         {
           "id": "a",
-          "text": "SPT N = 6 is dense soil; bearing capacity > 800 kN/m²."
+          "text": "The total depth of the borehole in meters."
         },
         {
           "id": "b",
-          "text": "SPT N = 6 is loose/soft soil; bearing capacity is approximately 100–200 kN/m² (marginal). Shallow footing design is risky; piles or deep foundations are preferred."
+          "text": "The sum of the blows for the last two 152.4 mm intervals, approximately the last 300 mm of split-spoon penetration."
         },
         {
           "id": "c",
-          "text": "SPT N = 6 indicates perfect soil for any foundation; no further testing is needed."
+          "text": "The groundwater depth measured by tape."
         },
         {
           "id": "d",
-          "text": "SPT N = 6 is sand; clay cannot have N < 10."
+          "text": "The final allowable bearing capacity of the foundation."
         }
       ],
       "correct_option_id": "b",
@@ -483,17 +557,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "SPT N = 6 falls in the 4 ≤ N < 10 range, indicating loose or soft soil with bearing capacity approximately 100–200 kN/m². This is marginal for shallow footings; differential settlement is likely. Deep foundations (piles or caissons) are preferred for structural loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The total depth of the borehole in meters. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "The sum of the blows for the last two 152.4 mm intervals, approximately the last 300 mm of split-spoon penetration. This stays inside the Batch 149 local source boundary.",
+        "c": "The groundwater depth measured by tape. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "The final allowable bearing capacity of the foundation. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "The sum of the blows for the last two 152.4 mm intervals, approximately the last 300 mm of split-spoon penetration. Supported by foundation-engineering-geotechnical-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "foundation-engineering-geotechnical-b149",
+        "checked_sources": [
+          "foundation-engineering-geotechnical-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Section 101 (or appropriate foundation/soil section) (SPT Correlation with Bearing Capacity)",
+      "code_citation": "Local source boundary: Foundation Engineering refined lines 7527-7568.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "foundation-engineering-geotechnical-b149"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +584,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e553e705a7e988a81a3e35eef05638c90d1ba2041b7d2b5166bce06c030ec290"
+      "content_hash": "sha256:0c075b9d4028d45b7dfdc0d41f40f72011cb5566aa67261e96f49f885d311a24"
     }
   ]
 }

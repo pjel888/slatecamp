@@ -1,65 +1,69 @@
 {
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+  "cluster_id": "lea-matl-006-02",
   "question_id": "dbadb794-cc3c-4faa-bf1f-21cda09a81b1",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:0a50bd0e1a0ebbea228592edea6767f81174197a253b4ec2f327b2d174bc9de2",
+  "after_hash": "sha256:52facb497efa99833665e5998c591ccb224d8b35cdbf5e82db43886a4fd618e0",
   "baseline_hash": "sha256:0a50bd0e1a0ebbea228592edea6767f81174197a253b4ec2f327b2d174bc9de2",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-006-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
-    "parent_article_slug": "lea-matl-006-02-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
-      "Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited roof_trusses scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-roof-trusses-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
   "proposed": {
-    "text": "A purlin bears between panel points on a truss top chord. What is the exam-safe concern?",
+    "text": "A purlin is shifted so it no longer bears at a truss panel point. What is the source-safe risk?",
     "options": [
       {
         "id": "a",
-        "text": "The top chord is subject to local bending."
+        "text": "The truss automatically becomes stronger."
       },
       {
         "id": "b",
-        "text": "The truss becomes a suspended ceiling."
+        "text": "The purlin can subject the top chord to local bending in addition to truss action."
       },
       {
         "id": "c",
-        "text": "The bottom chord becomes a vapor retarder."
+        "text": "The bottom chord becomes waterproof."
       },
       {
         "id": "d",
-        "text": "The purlin changes the tile grout width."
+        "text": "Panel points no longer matter once roof sheathing is installed."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI warns that purlins not bearing at panel points subject the top chord to local bending.",
-    "explanation": "BCI warns that purlins not bearing at panel points subject the top chord to local bending.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The truss automatically becomes stronger. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "The purlin can subject the top chord to local bending in addition to truss action. This stays inside the Batch 149 local source boundary.",
+      "c": "The bottom chord becomes waterproof. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "Panel points no longer matter once roof sheathing is installed. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "The purlin can subject the top chord to local bending in addition to truss action. Supported by bci-roof-trusses-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "bci-roof-trusses-b149",
+      "checked_sources": [
+        "bci-roof-trusses-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined lines 6614-6658.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "bci-roof-trusses-b149"
+    ]
+  },
+  "rationale": {
+    "a": "The truss automatically becomes stronger. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "The purlin can subject the top chord to local bending in addition to truss action. This stays inside the Batch 149 local source boundary.",
+    "c": "The bottom chord becomes waterproof. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "Panel points no longer matter once roof sheathing is installed. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "The purlin can subject the top chord to local bending in addition to truss action. Supported by bci-roof-trusses-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "bci-roof-trusses-b149",
+    "checked_sources": [
+      "bci-roof-trusses-b149"
+    ]
   }
 }

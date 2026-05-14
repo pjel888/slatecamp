@@ -1,65 +1,69 @@
 {
+  "batch": 149,
+  "batch_id": "source-audited-article-batch-149-local-first",
+  "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+  "cluster_id": "lea-matl-006-01",
   "question_id": "d26bc013-509e-4528-9ea5-8e2890d7a462",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:678eee4c1ef43253c724fd0b17346c844a311e676bd8c2ef004f27bd2c6c3052",
+  "after_hash": "sha256:73a150469fa5356c3eaea42c300ea43b49574957528996fb4fdca76b79e067be",
   "baseline_hash": "sha256:678eee4c1ef43253c724fd0b17346c844a311e676bd8c2ef004f27bd2c6c3052",
-  "action": "replace",
-  "reason": "source-audited-article-batch-077-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-006-01-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-077",
-  "approved_at": "2026-05-12T04:10:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
-    "parent_article_slug": "lea-matl-006-01-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 695-710, 6412-6454, and 7990-8012; Salvan refined markdown lines 3152-3337; raw PDF pages 30, 197, and 111 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
-      "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "salvan-building-materials-b077",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "bci-5e-b077",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 077 local raw-source-audited roofing_materials scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-roofing-systems-b149"
+  ],
+  "reason": "Batch 149 local-first rewrite aligned to reservation-manifest source boundary.",
   "proposed": {
-    "text": "Why do flat roofs need drains, scuppers, or overflow provisions?",
+    "text": "In a protected membrane roof assembly, what is the key source-safe tradeoff when insulation is placed over the membrane?",
     "options": [
       {
         "id": "a",
-        "text": "To move rainwater off the roof and avoid trapped water if primary drains are blocked"
+        "text": "It eliminates all moisture concerns permanently."
       },
       {
         "id": "b",
-        "text": "To replace the roof structure"
+        "text": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present."
       },
       {
         "id": "c",
-        "text": "To eliminate all need for flashing"
+        "text": "It means drains and scuppers are no longer needed."
       },
       {
         "id": "d",
-        "text": "To make shingles mandatory"
+        "text": "It converts a flat roof into a steep roof."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI describes interior drains or scuppers and secondary overflow drains where water might be trapped.",
-    "explanation": "BCI describes interior drains or scuppers and secondary overflow drains where water might be trapped.",
-    "code_citation": "George Salvan Architectural Building Materials; Building Construction Illustrated, 5th Edition"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It eliminates all moisture concerns permanently. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "b": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present. This stays inside the Batch 149 local source boundary.",
+      "c": "It means drains and scuppers are no longer needed. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "d": "It converts a flat roof into a steep roof. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+      "correct": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present. Supported by bci-roofing-systems-b149.",
+      "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+      "source_boundary": "bci-roofing-systems-b149",
+      "checked_sources": [
+        "bci-roofing-systems-b149"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined lines 7990-8012.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-149-local-first",
+      "bci-roofing-systems-b149"
+    ]
+  },
+  "rationale": {
+    "a": "It eliminates all moisture concerns permanently. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "b": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present. This stays inside the Batch 149 local source boundary.",
+    "c": "It means drains and scuppers are no longer needed. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "d": "It converts a flat roof into a steep roof. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+    "correct": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present. Supported by bci-roofing-systems-b149.",
+    "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+    "source_boundary": "bci-roofing-systems-b149",
+    "checked_sources": [
+      "bci-roofing-systems-b149"
+    ]
   }
 }

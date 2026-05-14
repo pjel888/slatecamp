@@ -1,30 +1,30 @@
 {
   "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:9f523313d2074c2fd9827b07e89fd7fe3658b0d90a64bb34a368f16b813ec28d",
+  "linked_questions_hash": "sha256:6aab43553a825fd7e7bfced8f733d9aea3705ab9f4aadc4c4883bc93daa00ac6",
   "question_count": 10,
   "questions": [
     {
       "question_id": "ca94ef68-517a-4810-8179-7bb665d046f7",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "According to ASTM A653 and Philippine building code, what is the minimum thickness specification for Gauge 26 galvanized corrugated roofing sheets?",
+      "text": "A flat roof is being detailed for a school corridor. Which source-safe roofing approach fits BCI guidance?",
       "options": [
         {
           "id": "a",
-          "text": "0.31 mm, which is below the standard requirement for structural integrity"
+          "text": "Use overlapping shingles because flat roofs shed water quickly by gravity alone."
         },
         {
           "id": "b",
-          "text": "0.40 mm (per PH PAES 317:2002)"
+          "text": "Use continuous membrane roofing with slope toward drains and provide overflow drainage where trapped water is possible."
         },
         {
           "id": "c",
-          "text": "0.61 mm, often used for heavier duty applications requiring additional strength"
+          "text": "Use clay tiles because tile weight prevents leakage."
         },
         {
           "id": "d",
-          "text": "0.76 mm, typically reserved for industrial applications with higher load demands"
+          "text": "Use any sheet material without checking slope or drainage."
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "0.31 mm is Gauge 30, too thin for primary roofing in Philippines.",
-        "c": "0.61 mm is Gauge 24, a common upgrade but not the minimum specification.",
-        "d": "0.76 mm is Gauge 22, rarely used in residential applications.",
-        "correct": "Gauge 26 per ASTM A653 specifies 0.46 mm thickness, which is the Philippine code minimum for residential roofing.",
-        "takeaway": "Gauge 26 = 0.46 mm is the baseline specification; lower gauge numbers equal thicker material."
+        "a": "Use overlapping shingles because flat roofs shed water quickly by gravity alone. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Use continuous membrane roofing with slope toward drains and provide overflow drainage where trapped water is possible. This stays inside the Batch 149 local source boundary.",
+        "c": "Use clay tiles because tile weight prevents leakage. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Use any sheet material without checking slope or drainage. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Use continuous membrane roofing with slope toward drains and provide overflow drainage where trapped water is possible. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM A653/A653M, PH PAES 317:2002",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: BCI refined lines 6412-6454.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:370b519f74050c2cf153487f5dc347965740bc4856ca552822198176f92f8164"
+      "content_hash": "sha256:d8551bbadafa69e35baf328592170f760c9b888492f6e60670191f6ff57a7d8f"
     },
     {
       "question_id": "28f5c91f-035d-4db5-a86c-928ae3a61adc",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "For a GI corrugated roofing project, the specification calls for 150 mm horizontal lap and 200 mm vertical lap between sheets. A roof area is 2000 m² with 1000 mm sheet width and 2000 mm sheet length. Approximately how much additional roofing area (as waste/overlap) must be purchased to account for lap?",
+      "text": "Primary roof drains on a flat roof may be blocked during a storm. What source-safe detail addresses trapped water risk?",
       "options": [
         {
           "id": "a",
-          "text": "150 m²"
+          "text": "Remove the roof slope because drains are present."
         },
         {
           "id": "b",
-          "text": "250 m²"
+          "text": "Rely on paint coating only."
         },
         {
           "id": "c",
-          "text": "400 m²"
+          "text": "Use a steeper finish color."
         },
         {
           "id": "d",
-          "text": "600 m²"
+          "text": "Provide secondary emergency overflow drains or scuppers where water might be trapped."
         }
       ],
       "correct_option_id": "d",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "150 m² underestimates lap waste; reflects only 7.5% waste factor.",
-        "b": "250 m² reflects ~12% waste, insufficient for specified 150/200 mm laps.",
-        "c": "400 m² reflects only 20% waste; actual waste is ~30% when properly calculated.",
-        "correct": "Each sheet covers 1000 × 2000 mm = 2 m² nominally; with laps, effective coverage = (1000-150) × (2000-200) = 850 × 1800 = 1.53 m². Total sheets required = 2000 m² / 1.53 m² per sheet = 1307 sheets. Total material to purchase = 1307 sheets × 2 m² = 2614 m². Waste/overlap = 2614 - 2000 = 614 m² ≈ 600 m² (30.7% waste factor accounts for both lap overlap and edge trim loss).",
-        "takeaway": "Calculate effective sheet coverage by subtracting lap dimensions. Material waste for standard lap overlaps ranges 25-30% of roof area."
+        "a": "Remove the roof slope because drains are present. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Rely on paint coating only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "c": "Use a steeper finish color. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Provide secondary emergency overflow drains or scuppers where water might be trapped. This stays inside the Batch 149 local source boundary.",
+        "correct": "Provide secondary emergency overflow drains or scuppers where water might be trapped. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "Roofing Installation Best Practices, ASTM A653",
-      "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: BCI refined lines 695-710 and 6412-6454.",
+      "bloom_level": "remember",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1796747a86aa61944d5deb0f34e289ad63f71b707ebbc212ca49d9b12ed1fa5d"
+      "content_hash": "sha256:9782d5ede36f777ea89065dc1f1fa92eee789789c629c7aed37f90d6a7134f99"
     },
     {
       "question_id": "904b42c2-5141-4084-8f37-63cdc0fbaea1",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "Compare Gauge 26 (0.46 mm) and Gauge 24 (0.61 mm) GI roofing in terms of rafter spacing allowance. If Gauge 26 allows 1200 mm OC spacing, approximately what spacing can Gauge 24 support?",
+      "text": "What is the most source-safe reason roof slope affects material selection?",
       "options": [
         {
           "id": "a",
-          "text": "900 mm OC"
+          "text": "Slope matters only for appearance."
         },
         {
           "id": "b",
-          "text": "1200 mm OC"
+          "text": "Slope matters only for cost estimates."
         },
         {
           "id": "c",
-          "text": "1400 mm OC"
+          "text": "Slope is unrelated to underlayment, flashing, and wind loads."
         },
         {
           "id": "d",
-          "text": "1600 mm OC"
+          "text": "Roof slope affects the roofing material, underlayment and eave flashing requirements, and design wind loads."
         }
       ],
       "correct_option_id": "d",
@@ -133,17 +149,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "900 mm is a reduction; Gauge 24 is stronger than Gauge 26.",
-        "b": "1200 mm OC is the baseline; Gauge 24 allows greater spacing.",
-        "c": "1400 mm OC underestimates the strength increase; 1600 mm OC is more accurate for the thickness ratio.",
-        "correct": "Bending capacity increases with the cube of thickness (I ∝ t³ proportionally). Gauge 24 (0.61 mm) vs Gauge 26 (0.46 mm) = 1.33× thickness ratio yields approximately 1.33³ ≈ 2.4× bending capacity, allowing rafter spacing to increase ~40-50% or to approximately 1600 mm OC.",
-        "takeaway": "Moment of inertia (I) depends on thickness cubed; small gauge changes yield substantial span increases. Gauge 24 upgrade enables 30-50% wider rafter spacing."
+        "a": "Slope matters only for appearance. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Slope matters only for cost estimates. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "c": "Slope is unrelated to underlayment, flashing, and wind loads. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Roof slope affects the roofing material, underlayment and eave flashing requirements, and design wind loads. This stays inside the Batch 149 local source boundary.",
+        "correct": "Roof slope affects the roofing material, underlayment and eave flashing requirements, and design wind loads. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM A653/A653M, Structural Design Mechanics - Bending Capacity",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: BCI refined lines 6412-6454.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +176,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2271fbc88524bbc4beea140597121fa98f10d881d3ebd72b40085af01b026a68"
+      "content_hash": "sha256:3ee723306af005033cb8ecb8efbd058309f7abed1d832f809a0a9d40c719d69c"
     },
     {
       "question_id": "d26bc013-509e-4528-9ea5-8e2890d7a462",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "A project specifies single-ply PVC membrane roofing (ASTM D4434) at 60 mils thickness on a 3000 m² flat roof in an area prone to foot traffic and equipment placement. What is the primary advantage of 60 mils over 45 mils, and what is the trade-off?",
+      "text": "In a protected membrane roof assembly, what is the key source-safe tradeoff when insulation is placed over the membrane?",
       "options": [
         {
           "id": "a",
-          "text": "60 mils provides 3× puncture resistance with no cost increase, which is not accurate"
+          "text": "It eliminates all moisture concerns permanently."
         },
         {
           "id": "b",
-          "text": "60 mils increases UV durability and puncture resistance but adds 15-20% material cost"
+          "text": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present."
         },
         {
           "id": "c",
-          "text": "60 mils reduces seam leakage risk but requires specialized welding equipment, which can increase installation complexity"
+          "text": "It means drains and scuppers are no longer needed."
         },
         {
           "id": "d",
-          "text": "60 mils is mandatory for flat roofs; 45 mils is only for low-slope applications, which is not a standard requirement"
+          "text": "It converts a flat roof into a steep roof."
         }
       ],
       "correct_option_id": "b",
@@ -183,17 +207,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "3× puncture resistance overstates the benefit; t² relationship yields ~1.77× improvement.",
-        "c": "Seam performance depends on welding protocol, not thickness; both 45 and 60 mils require ASTM D4437 field welding standards.",
-        "d": "ASTM D4434 does not mandate thickness by slope; 45 mils is used on both low-slope and flat roofs depending on exposure.",
-        "correct": "Per ASTM D4434, 60 mils (1.52 mm) vs 45 mils (1.14 mm) = 33% thickness increase. Bending moment during puncture scales with t² (thickness squared); 1.33× thickness yields approximately 1.77× puncture resistance. UV protection improves with thicker polymer. Trade-off: 15-20% additional material cost for 3000 m² ≈ 15% cost premium.",
-        "takeaway": "Single-ply thickness trade-off: thicker = better durability but higher cost. For high-traffic roofs, 60 mils justified despite cost. For protected roofs, 45 mils adequate."
+        "a": "It eliminates all moisture concerns permanently. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present. This stays inside the Batch 149 local source boundary.",
+        "c": "It means drains and scuppers are no longer needed. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "It converts a flat roof into a steep roof. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "It protects the roofing membrane from temperature extremes, but the insulation and membrane condition still need attention because dampness can remain present. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM D4434 (PVC Sheet Roofing), ASTM D4437 (Field Seaming of PVC Membranes)",
-      "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: BCI refined lines 7990-8012.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +234,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:678eee4c1ef43253c724fd0b17346c844a311e676bd8c2ef004f27bd2c6c3052"
+      "content_hash": "sha256:73a150469fa5356c3eaea42c300ea43b49574957528996fb4fdca76b79e067be"
     },
     {
       "question_id": "e1cd6c1d-a2c2-400d-b31a-cb08dc3d7c13",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "A coastal residential project in Quezon Province requires GI roofing. The project budget allows G60 coating. What is the primary concern with this specification in a tropical maritime climate?",
+      "text": "A coastal metal-roof specification omits protective coating and rustproofing discussion. What is the source-safe concern?",
       "options": [
         {
           "id": "a",
-          "text": "Insufficient tensile strength for wind loads, which could lead to structural failure during typhoons"
+          "text": "Fire rating is automatically lost."
         },
         {
           "id": "b",
-          "text": "Premature rust and accelerated corrosion in salt spray"
+          "text": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures."
         },
         {
           "id": "c",
-          "text": "Inadequate fire rating per NFPA 101, potentially compromising safety standards"
+          "text": "The roof cannot shed water because it is metal."
         },
         {
           "id": "d",
-          "text": "Incompatibility with standard fastening systems, which may require specialized installation techniques"
+          "text": "The membrane must be concrete."
         }
       ],
       "correct_option_id": "b",
@@ -233,17 +265,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Tensile strength difference between G60 and G90 is negligible; gauge (thickness) affects strength, not coating weight.",
-        "c": "GI roofing inherently achieves NFPA 101 Class A fire rating; coating weight does not affect fire performance.",
-        "d": "Fastening systems are independent of coating weight; G60 and G90 use identical fasteners.",
-        "correct": "G60 (0.60 oz/ft² or 183 g/m²) provides inadequate zinc coating for salt-air corrosion; G90 is mandatory for coastal zones. Lifecycle cost analysis shows rust perforation within 10-15 years.",
-        "takeaway": "Coating weight (G-rating) directly affects corrosion resistance in tropical maritime climates. Always specify G90 in coastal zones regardless of first-cost pressure."
+        "a": "Fire rating is automatically lost. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures. This stays inside the Batch 149 local source boundary.",
+        "c": "The roof cannot shed water because it is metal. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "The membrane must be concrete. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Ferrous materials can rust or corrode unless protected by appropriate rustproofing or coating measures. Supported by salvan-roofing-materials-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "salvan-roofing-materials-b149",
+        "checked_sources": [
+          "salvan-roofing-materials-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM A653/A653M, Tropical Corrosion Durability Studies",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: Salvan refined lines 3070-3185 and 4332-4468.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "salvan-roofing-materials-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +292,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cc43e6e2d2f1d004a55eeb32f0854a5e77d3f225bcee63968226e18a5c49ac86"
+      "content_hash": "sha256:3da6f3d216c02eea205d3b2e61b1d18367bf823a2108654c4de2217a8596c254"
     },
     {
       "question_id": "ae9bdbca-d0b4-4d3b-b479-42549d0de804",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "Which roofing material type is best suited for a sloped residential roof spanning 12 meters in a tropical climate with minimal maintenance budget?",
+      "text": "Which material family is source-safe for a medium- to high-slope roof when slope, fastening, and drainage are coordinated?",
       "options": [
         {
           "id": "a",
-          "text": "Built-up roofing (BUR)"
+          "text": "Only continuous membrane roofing."
         },
         {
           "id": "b",
-          "text": "Single-ply membrane (TPO/PVC)"
+          "text": "Only cast-in-place concrete."
         },
         {
           "id": "c",
-          "text": "Long-span metal roofing"
+          "text": "Shingles, tiles, or sheet materials."
         },
         {
           "id": "d",
-          "text": "Clay roof tiles"
+          "text": "No roofing material because steep roofs need no enclosure."
         }
       ],
       "correct_option_id": "c",
@@ -283,17 +323,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BUR requires 3-5 year recoating cycle in tropical UV; high maintenance cost.",
-        "b": "Single-ply membranes are designed for low-slope roofs; unsuitable for sloped applications.",
-        "d": "Clay tiles provide excellent thermal mass but require robust structural framing (5-6 kN/m² weight); higher installed cost.",
-        "correct": "Long-span metal roofing (trapezoidal corrugated profiles) spans 6-12 meters without intermediate purlins, reducing framing cost and maintenance. GI corrugated sheets are durable in tropical UV and salt air when properly coated (G90). Metal standing seam eliminates fastener leaks common in corrugated lap joints.",
-        "takeaway": "For sloped tropical roofs on budget, metal long-span or GI corrugated is optimal. BUR and TPO suit low-slope applications."
+        "a": "Only continuous membrane roofing. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Only cast-in-place concrete. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "c": "Shingles, tiles, or sheet materials. This stays inside the Batch 149 local source boundary.",
+        "d": "No roofing material because steep roofs need no enclosure. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Shingles, tiles, or sheet materials. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM A653, Long-Span Metal Roofing Design Guide",
-      "bloom_level": "understand",
-      "application_context": "design_application",
-      "practice_context": [],
+      "code_citation": "Local source boundary: BCI refined lines 6412-6454.",
+      "bloom_level": "remember",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +350,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:88503909f0e94c76e79c06e5de0a52066adc06c6124a53224a68337226cc36e4"
+      "content_hash": "sha256:d38aa7a8055542ce84b161f448430e3071100539c26957bfac87089a9ac9c9d1"
     },
     {
       "question_id": "7b3d896b-b074-4690-bca0-032f77dcbf23",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "According to ASTM C1167, what is the approximate dead load (self-weight) of clay roof tile coverage?",
+      "text": "Before selecting a heavy roof covering, what source-safe coordination issue should be checked?",
       "options": [
         {
           "id": "a",
-          "text": "2-3 kN/m²"
+          "text": "Only the color of the roof finish."
         },
         {
           "id": "b",
-          "text": "5-6 kN/m²"
+          "text": "The roof structure must carry its own weight and attached or accumulated loads, so gravity-load compatibility must be checked."
         },
         {
           "id": "c",
-          "text": "8-9 kN/m²"
+          "text": "The roof load disappears if a gutter is added."
         },
         {
           "id": "d",
-          "text": "11-12 kN/m²"
+          "text": "Material weight is irrelevant to roof design."
         }
       ],
       "correct_option_id": "b",
@@ -333,17 +381,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2-3 kN/m² is typical for asphalt shingles, not clay tiles.",
-        "c": "8-9 kN/m² is concrete tile weight; clay tiles are slightly lighter.",
-        "d": "11-12 kN/m² exceeds typical tile loads; would require heavy-timber framing.",
-        "correct": "Clay roof tiles impose 5-6 kN/m² dead load, requiring substantial rafter and truss sizing. This is significantly heavier than metal or asphalt alternatives.",
-        "takeaway": "Clay tiles = 5-6 kN/m² dead load; this drives structural member sizing and project cost. Memory aid: tile is heavy, drives rafter spacing reduction to 450-600 mm OC vs 1200 mm OC for metal."
+        "a": "Only the color of the roof finish. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "The roof structure must carry its own weight and attached or accumulated loads, so gravity-load compatibility must be checked. This stays inside the Batch 149 local source boundary.",
+        "c": "The roof load disappears if a gutter is added. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Material weight is irrelevant to roof design. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "The roof structure must carry its own weight and attached or accumulated loads, so gravity-load compatibility must be checked. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM C1167 (Standard Specification for Clay Roof Tiles)",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "code_citation": "Local source boundary: BCI refined lines 6412-6454.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +408,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0594ddccd782285ee4274be7bed08040c8fe493d5a965a41b47b0916c7425c6d"
+      "content_hash": "sha256:8bef24a75bd4443b486e7bacc68714366442595b32a04054a301a8dae2f6489f"
     },
     {
       "question_id": "ed16b78d-4569-4987-a3ff-674955037a2a",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "What is the metric equivleant coating weight for G90 galvanized steel per ASTM A653?",
+      "text": "Which answer correctly classifies roof materials by slope under the captured BCI source?",
       "options": [
         {
           "id": "a",
-          "text": "180 g/m²"
+          "text": "Flat roofs should use loose shingles only."
         },
         {
           "id": "b",
-          "text": "225 g/m²"
+          "text": "Low-slope roofs should use clay tile only."
         },
         {
           "id": "c",
-          "text": "275 g/m²"
+          "text": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials."
         },
         {
           "id": "d",
-          "text": "305 g/m²"
+          "text": "All slopes use the same roofing material."
         }
       ],
       "correct_option_id": "c",
@@ -383,17 +439,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "180 g/m² is below standard and does not meet G90 specification.",
-        "b": "225 g/m² approximates G74 coating, insufficient for tropical corrosion resistance.",
-        "d": "305 g/m² exceeds G90; may refer to conversion factor error (1 oz/ft² = 305 g/m²).",
-        "correct": "G90 (0.90 oz/ft²) converts to Z275 (275 g/m²); this coating is mandatory for tropical maritime salt-air exposure.",
-        "takeaway": "G90 = Z275 = 275 g/m² is the tropical-zone standard; memorize the metric equivalent."
+        "a": "Flat roofs should use loose shingles only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Low-slope roofs should use clay tile only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "c": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials. This stays inside the Batch 149 local source boundary.",
+        "d": "All slopes use the same roofing material. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Flat and low-slope roofs rely on membrane or roll roofing behavior; medium- and high-slope roofs may use shingles, tiles, or sheet materials. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
-      "explanation": "180 g/m² is below standard and does not meet G90 specification. 225 g/m² approximates G74 coating, insufficient for tropical corrosion resistance. 305 g/m² exceeds G90; may refer to conversion factor error (1 oz/ft² = 305 g/m²). G90 (0.90 oz/ft²) converts to Z275 (275 g/m²); this coating is mandatory for tropical maritime salt-air exposure. G90 = Z275 = 275 g/m² is the tropical-zone standard; memorize the metric equivalent.",
-      "code_citation": "ASTM A653/A653M, Galvanized Steel Coating Specification Guide",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined lines 6412-6454.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +466,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-05-06T12:47:36.483556+00:00",
-      "content_hash": "sha256:12348994eee65d6f14ef21dac827bb748371df105bbd2f20b29d8725525e3c26"
+      "content_hash": "sha256:236a0c7ca2a76e9695158f31421a0c4bbc282467984be3b9081d479d6bb57d8c"
     },
     {
       "question_id": "341e820a-2368-4a6d-9b1f-96da1233be29",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "A BUR (built-up roofing) specification on a 1500 m² flat roof calls for 4-ply system with mineral cap sheet. Total material thickness will be approximately 20 mm. If the roof must accommodate 1.5 meters of water ponding during extreme rainfall without membrane rupture, what additional structural reinforcement is required?",
+      "text": "A large flat roof has locations where blocked primary drains could trap rainwater. What is the best source-safe response?",
       "options": [
         {
           "id": "a",
-          "text": "None; 4-ply BUR is rated for unrestricted ponding, assuming no additional structural loads are present"
+          "text": "Assume membrane roofing is rated for unlimited ponding."
         },
         {
           "id": "b",
-          "text": "Structural beams resized for additional 1500 kg/m² (1500 mm water)"
+          "text": "Provide secondary overflow drainage or scuppers and coordinate the structure for roof loads."
         },
         {
           "id": "c",
-          "text": "Elevated roof deck with 150 mm minimum drainage channel, ensuring rapid water evacuation during heavy rainfall"
+          "text": "Delete the roof slope to keep water spread evenly."
         },
         {
           "id": "d",
-          "text": "None if roof slope is increased to 1/4:12 minimum, which naturally prevents significant water accumulation"
+          "text": "Use paint alone as the drainage system."
         }
       ],
       "correct_option_id": "b",
@@ -433,17 +497,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BUR explicitly requires slope ≥ 1/4:12 to prevent ponding; unrestricted ponding violates warranty.",
-        "c": "Drainage channels mitigate but do not eliminate need for structural reinforcement under extreme loads.",
-        "d": "1/4:12 slope improves drainage but cannot accommodate 1.5 m standing water; structural reinforcement is still mandatory.",
-        "correct": "1500 mm water depth = 1500 liters/m² = 1500 kg/m² hydrostatic load plus dynamic storm surges. ASTM D6162 BUR specifications assume proper slope and drainage; standing water exceeding 150 mm is non-compliant. Additional 1500 kg/m² requires structural beam reinforcement or elevated deck with drainage. Note: 1.5 m water ponding is extreme and suggests failed drainage design; structural fix is reinforcement, not material change.",
-        "takeaway": "Hydrostatic loads from ponding (1 m water = 1000 kg/m²) require structural analysis. BUR is not designed for unrestricted ponding; proper roof slope and drainage are non-negotiable."
+        "a": "Assume membrane roofing is rated for unlimited ponding. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "Provide secondary overflow drainage or scuppers and coordinate the structure for roof loads. This stays inside the Batch 149 local source boundary.",
+        "c": "Delete the roof slope to keep water spread evenly. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "Use paint alone as the drainage system. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "Provide secondary overflow drainage or scuppers and coordinate the structure for roof loads. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "ASTM D6162 (Built-Up Bituminous Roofing), Structural Design for Hydrostatic Load",
+      "code_citation": "Local source boundary: BCI refined lines 695-710 and 6412-6454.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +524,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:25d7b06b5407fbeee80230d9c576893c72a077c6b6cf8074be585a7501427e64"
+      "content_hash": "sha256:04834579e66665f4295a855cd18e863dd2c8eee726d6e64d57424911318aec1f"
     },
     {
       "question_id": "18901ecf-d150-4699-862b-a799741c8674",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
       "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
-      "text": "A specification requires 'minimum roof slope for water drainage per NSCP 2015.' What is the minimum slope value?",
+      "text": "What recommended minimum flat-roof slope is captured by BCI for drainage?",
       "options": [
         {
           "id": "a",
-          "text": "1:12, which is a common standard for low-slope roofs"
+          "text": "1:12."
         },
         {
           "id": "b",
-          "text": "1/4:12"
+          "text": "1/4 inch per foot, or about 1:50."
         },
         {
           "id": "c",
-          "text": "1/2:12, often used for steeper roof designs to ensure rapid water runoff"
+          "text": "1/2 inch per foot for all roofs."
         },
         {
           "id": "d",
-          "text": "2:12, typically applied in regions with heavy rainfall to prevent water accumulation"
+          "text": "2:12 for membrane roofs only."
         }
       ],
       "correct_option_id": "b",
@@ -483,17 +555,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1:12 (8.3%) is steeper than required and increases construction cost unnecessarily.",
-        "c": "1/2:12 (4%) is more than minimum but not the baseline code requirement.",
-        "d": "2:12 (16.7%) is appropriate for pitched roofs with tile or shingle coverage, not flat roofs.",
-        "correct": "PD 1096 Rule VII Sec. 703 specifies minimum 1/2:12 (4.17%) for roof drainage for flat roof drainage to ensure water runoff without stagnation.",
-        "takeaway": "Minimum flat roof slope per NSCP 2015 is 1/4:12 or 2%. This is the ALE baseline for code compliance questions."
+        "a": "1:12. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "b": "1/4 inch per foot, or about 1:50. This stays inside the Batch 149 local source boundary.",
+        "c": "1/2 inch per foot for all roofs. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "d": "2:12 for membrane roofs only. is not the best answer because it adds an unsupported claim or misses the source-backed concept.",
+        "correct": "1/4 inch per foot, or about 1:50. Supported by bci-roofing-systems-b149.",
+        "takeaway": "Use the captured local source boundary before applying memorized code, numeric, or product claims.",
+        "source_boundary": "bci-roofing-systems-b149",
+        "checked_sources": [
+          "bci-roofing-systems-b149"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Chapter 2 (General Requirements)",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "code_citation": "Local source boundary: BCI refined lines 6412-6454.",
+      "bloom_level": "remember",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-149-local-first",
+        "bci-roofing-systems-b149"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +582,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cd573e1392ee35c2809444e60dca3fb61b367fbda791bcc55b4ed29b27ba4129"
+      "content_hash": "sha256:3faebb9b6e0693bca562e09dd3e0ffb3b172c73dc42446bea3badd9adba53c29"
     }
   ]
 }

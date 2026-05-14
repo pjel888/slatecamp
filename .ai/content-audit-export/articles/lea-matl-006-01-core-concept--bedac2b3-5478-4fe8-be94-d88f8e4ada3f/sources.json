@@ -1,32 +1,32 @@
 {
   "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:fb23e2b2b6de6b484a227c44a1132f6325f5bfd8042f033d3187c0ee399a137a",
+  "sources_hash": "sha256:cd21a0cfd6094333aea23833614b09db1a3dd9d3ce1b0631f62e89eb9fdb7f30",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "salvan-building-materials-b077",
+      "source_id": "bci-roofing-systems-b149",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
-      "label": "George Salvan Architectural Building Materials",
+      "label": "Building Construction Illustrated, 5th Edition - roof systems, slope, drainage, and envelope control",
       "url": null,
-      "source_type": "primary_building_materials_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-077-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
+      "source_type": "local_authoritative_or_training_reference",
+      "description": "Batch 149 local-first source boundary. raw_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; capture_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/bci-roofing-systems.source-capture.md; capture_sha256=sha256:101d742d0871d1386a4dd28604954e599d51d1b3fb77d15639f849571d46b285; refined_capture_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/bci-roofing-systems.refined.md; refined_capture_sha256=sha256:8b223120b2cbff95a659eca981a9997289804a6cb8383bcf8da616e4fc6cd6d8; locator=refined markdown lines 695-710, 1493-1498, 6412-6454, 7990-8012, 9073-9223, 9286-9335; use_limits=No coating-weight table, roof-sheet gauge table, clay-tile dead-load table, membrane thickness comparison, or rainfall rule is captured for this batch.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-12T04:10:00.000+08:00",
-      "updated_at": "2026-05-12T04:10:00.000+08:00"
+      "created_at": "2026-05-14T04:03:57.778Z",
+      "updated_at": "2026-05-14T04:03:57.778Z"
     },
     {
-      "source_id": "bci-5e-b077",
+      "source_id": "salvan-roofing-materials-b149",
       "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
-      "label": "Building Construction Illustrated, 5th Edition",
+      "label": "George Salvan Architectural Building Materials - waterproofing, coatings, and material preparation",
       "url": null,
-      "source_type": "primary_building_construction_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-077-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction",
+      "source_type": "local_authoritative_or_training_reference",
+      "description": "Batch 149 local-first source boundary. raw_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; capture_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-149/salvan-roofing-materials.source-capture.md; capture_sha256=sha256:e9c17604ec3f9171bdf36360af2a77c8868e01245eb23eef213b39f2f57a2618; refined_capture_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-149/salvan-roofing-materials.refined.md; refined_capture_sha256=sha256:07e0a5ae8ce2961b236cbfc0be6248a2554bd57830addc2449cb8566c36e3be9; locator=refined markdown lines 3070-3185, 4332-4468, 5919-5948, 13397-13417; use_limits=No exact galvanized coating weights, sheet gauges, proprietary performance guarantee, or roof span table is captured for this batch.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-12T04:10:00.000+08:00",
-      "updated_at": "2026-05-12T04:10:00.000+08:00"
+      "created_at": "2026-05-14T04:03:57.778Z",
+      "updated_at": "2026-05-14T04:03:57.778Z"
     }
   ]
 }
