@@ -1,0 +1,78 @@
+# Batch 163 Git Handoff Stage List
+
+Generated: 2026-05-14T18:07:28+08:00
+
+Do not auto-stage from this worker. Hermes/watchdog remains the serial accepter.
+
+## Scope
+
+- Batch: 163
+- Baseline: 0c0f08510 chore(content): accept source-audited batch 162
+- Selected clusters: lea-util-004-05, lea-util-004-08
+- Linked question edits: 30
+- Answer-key changes: 0
+- Blockers for selected content: 0
+
+## Intended Paths
+
+- .ai/03_plans/batch-163-git-handoff-stage-list.md
+- .ai/03_plans/batch-163-git-handoff-stage-paths.txt
+- .ai/03_plans/batch-163-independent-quality-review.md
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/article-metadata.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/candidate.md
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/component-usage.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/compose-error.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/compose-report.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/diff-report.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/diff-report.md
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/normalized.md
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/00f76274-9125-4e6c-8eae-473634d9511b.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0863616e-8994-4ed6-91c7-e3b5684ed4a5.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/16abc24a-8747-48b9-96f6-93da3d0b017b.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/27e3b467-5bed-4061-95f6-c8d7a8a85863.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/2b17803b-3aa6-4188-bbe2-8d88091f712e.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/31f01fa7-d997-4a9f-aff6-5762d82be418.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/7e3698a4-7da8-43e3-ad9d-1d9ef857020c.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/961a0025-7d66-4687-a931-e9a1ac59e619.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/9c6a6587-1493-430c-9ae9-cad501989ed5.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/ad388f32-8ec2-45d8-8a4f-1726da564759.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b495ee57-be6f-4e97-a4bf-39ee822e7aa0.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b683dad1-83ca-4973-a6d2-dd80480182af.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/c7b1786e-3a56-45f4-b7c9-a2eae78515a4.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/e89766e7-b8ff-4981-8d2c-e2a2cf599820.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/source-audit-evidence.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/sources.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/ui-block-edits.json
+- .ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/ui-blocks.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/article-metadata.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/candidate.md
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/component-usage.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/compose-error.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/compose-report.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/diff-report.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/diff-report.md
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/normalized.md
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/02b11a14-0f2e-41ee-82cf-2d83c09af0e2.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/05cd5a06-3183-4848-9b1f-f8cb6a36f581.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/1c85cd70-7225-435d-ba16-00c211e62b29.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/21b3a069-8ad6-402b-9423-608071bdf1e6.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/3f4dce01-3e79-4f74-9005-118a14543cfe.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/488b3c49-4af9-4d33-a76e-af7501a57702.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/5c74d1f9-f1fb-48ab-95f2-6be2ee361d52.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/7f510800-98bb-49e7-a123-9d71257fca12.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/a72c9aa8-a967-4b0f-8180-a9b3558261c6.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/aa3e5e12-6f4d-460e-b251-da273a19e59c.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/b3958f33-180d-4bf5-b1fb-dc1c6c02857e.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/c1ed334c-bcb3-4322-b56a-a6add8b96b84.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/dc6455d2-06ab-438d-835d-01d050258c3f.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e5179a2a-67ba-4c10-8218-82d980349bfb.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e9538c8d-119a-4361-ac95-53d7a8747bc9.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/source-audit-evidence.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/sources.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/ui-block-edits.json
+- .ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/ui-blocks.json
+- .ai/content-audit-export/runs/source-audited-batch-163-local-runner.mjs
+- .ai/content-audit-export/source-audited-article-batch-163-local-first-ledger.json
+- .ai/content-audit-export/source-audited-article-batch-163-local-first-report.md
+- .ai/content-audit-export/source-audited-article-batch-163-local-first-scoped-checks.json

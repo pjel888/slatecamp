@@ -1,0 +1,630 @@
+{
+  "batch_id": "source-audited-batch-163-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T18:07:28+08:00",
+  "target": {
+    "cluster_id": "lea-util-004-05",
+    "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+    "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+    "title": "Building Mechanical, Electrical, Plumbing, and Fire (MEPF)",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+    "normalized_sha256": "sha256:c622cce8493239809ae8f4563da2691543f60f4396b8c85b1c5d33ce310d6608",
+    "candidate_sha256": "sha256:c622cce8493239809ae8f4563da2691543f60f4396b8c85b1c5d33ce310d6608",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/candidate.md"
+  },
+  "classification": {
+    "local_first_batch": "163",
+    "source_sensitivity": "nscp_nonstructural_equipment_seismic_restraint_and_flood_utility_boundary",
+    "source_risk_tier": "local_primary_code_ocr_required",
+    "requires_raw_local_source": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "No Supabase upload was run for Batch 163; this is a local-only production-line handoff."
+    ]
+  },
+  "raw_local_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "valid_source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "valid_source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "source_metadata": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "rejected_source": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+    "rejected_source_reason": "Null-byte corrupted file; not used as evidence.",
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05",
+        "label": "NSCP 2015 Volume I, Section 208.9 nonstructural components and equipment seismic restraint with flood utility boundary",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md"
+        ],
+        "page_markdown_sha256": {
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md": "sha256:fb6337314ce5f56c41c7efa0ba58b8f3068ab7832a7a5495e16d910ea973815c",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md": "sha256:7c4de241fd07a906fabe6b86eeefe216289df0f9212219aabead52e204043e59",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md": "sha256:190c43dbbde540a3a2d4aa6785d82eabf86927b4b785efe550d3b7c12d148995",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md": "sha256:85e2ee3fafd580a37dc7a1191641db699d3fe2f4ec0ec6c37b3b82b86ad9f1a7",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md": "sha256:44318852139f925e206b31339cbbe9d65080914094236d6833e1f2737fc9017e",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md": "sha256:b3e782209199619753d5e4d9066f57a37c96fe0c923423206f5a0995324ef180",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md": "sha256:a445798ca9b9c2f9b3337a234f53325da9650dc0cb1d2370e17ab933c4fa29e3",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md": "sha256:e24c96cf979707b2668199c77ae56a85780aa68ce78b15a06ddb72c253bcf9db",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md": "sha256:2c214bd8f54cc55212cece4a6019f1e78f117fdb26f565ff324c41324ffdf7e2"
+        }
+      }
+    ],
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable."
+    ]
+  },
+  "scenario_enrichment": {
+    "policy_status": "satisfied",
+    "eligibility_status": "included_source_safe: scenarios retained only where they can be framed as NSCP nonstructural equipment restraint, relative-motion, or flood utility boundary checks.",
+    "blocker_status": "none",
+    "notes": "Article and question scenarios were constrained to checked NSCP nonstructural equipment, anchorage, flexibility, vibration-isolator, seismic-zone, and flood utility anchors."
+  },
+  "thin_needs_expansion": {
+    "previous_status": "source-auditable residual with unsupported mixed-authority claims",
+    "batch_163_status": "resolved_with_source_safe_rewrite",
+    "evidence": "normalized.md removes unsupported operational, manufacturer, and proprietary details and replaces them with checked local NSCP OCR-supported material."
+  },
+  "question_alignment": {
+    "linked_question_count": 15,
+    "question_edit_count": 15,
+    "answer_key_changes": 0,
+    "scope": "nscp_nonstructural_equipment_seismic_restraint_and_flood_utility_boundary"
+  },
+  "checked_sources": [
+    {
+      "source_id": "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05",
+      "label": "NSCP 2015 Volume I, Section 208.9 nonstructural components and equipment seismic restraint with flood utility boundary",
+      "url": null,
+      "source_type": "primary_code_local_ocr",
+      "publisher": "Association of Structural Engineers of the Philippines",
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable.",
+      "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+      "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+      "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+      "page_markdown_paths": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md"
+      ],
+      "page_markdown_sha256": {
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md": "sha256:fb6337314ce5f56c41c7efa0ba58b8f3068ab7832a7a5495e16d910ea973815c",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md": "sha256:7c4de241fd07a906fabe6b86eeefe216289df0f9212219aabead52e204043e59",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md": "sha256:190c43dbbde540a3a2d4aa6785d82eabf86927b4b785efe550d3b7c12d148995",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md": "sha256:85e2ee3fafd580a37dc7a1191641db699d3fe2f4ec0ec6c37b3b82b86ad9f1a7",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md": "sha256:44318852139f925e206b31339cbbe9d65080914094236d6833e1f2737fc9017e",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md": "sha256:b3e782209199619753d5e4d9066f57a37c96fe0c923423206f5a0995324ef180",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md": "sha256:a445798ca9b9c2f9b3337a234f53325da9650dc0cb1d2370e17ab933c4fa29e3",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md": "sha256:e24c96cf979707b2668199c77ae56a85780aa68ce78b15a06ddb72c253bcf9db",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md": "sha256:2c214bd8f54cc55212cece4a6019f1e78f117fdb26f565ff324c41324ffdf7e2"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-1",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-2",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-3",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-4",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-5",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-6",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-7",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-8",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-9",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-10",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-11",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-12",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-13",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-14",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-15",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-16",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-01-961a0025-7d66-4687-a931-e9a1ac59e619",
+      "question_id": "961a0025-7d66-4687-a931-e9a1ac59e619",
+      "model_id": "ALE-UTIL-004-05-014",
+      "claim_text": "961a0025-7d66-4687-a931-e9a1ac59e619 ALE-UTIL-004-05-014: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-02-b495ee57-be6f-4e97-a4bf-39ee822e7aa0",
+      "question_id": "b495ee57-be6f-4e97-a4bf-39ee822e7aa0",
+      "model_id": "ALE-UTIL-004-05-015",
+      "claim_text": "b495ee57-be6f-4e97-a4bf-39ee822e7aa0 ALE-UTIL-004-05-015: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-03-e89766e7-b8ff-4981-8d2c-e2a2cf599820",
+      "question_id": "e89766e7-b8ff-4981-8d2c-e2a2cf599820",
+      "model_id": "ALE-UTIL-004-05-012",
+      "claim_text": "e89766e7-b8ff-4981-8d2c-e2a2cf599820 ALE-UTIL-004-05-012: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as c.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-04-2b17803b-3aa6-4188-bbe2-8d88091f712e",
+      "question_id": "2b17803b-3aa6-4188-bbe2-8d88091f712e",
+      "model_id": "ALE-UTIL-004-05-024",
+      "claim_text": "2b17803b-3aa6-4188-bbe2-8d88091f712e ALE-UTIL-004-05-024: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-05-27e3b467-5bed-4061-95f6-c8d7a8a85863",
+      "question_id": "27e3b467-5bed-4061-95f6-c8d7a8a85863",
+      "model_id": "ALE-UTIL-004-05-025",
+      "claim_text": "27e3b467-5bed-4061-95f6-c8d7a8a85863 ALE-UTIL-004-05-025: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-06-00f76274-9125-4e6c-8eae-473634d9511b",
+      "question_id": "00f76274-9125-4e6c-8eae-473634d9511b",
+      "model_id": "ALE-UTIL-004-05-021",
+      "claim_text": "00f76274-9125-4e6c-8eae-473634d9511b ALE-UTIL-004-05-021: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as c.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-07-9c6a6587-1493-430c-9ae9-cad501989ed5",
+      "question_id": "9c6a6587-1493-430c-9ae9-cad501989ed5",
+      "model_id": "ALE-UTIL-004-05-023",
+      "claim_text": "9c6a6587-1493-430c-9ae9-cad501989ed5 ALE-UTIL-004-05-023: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as c.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-08-0863616e-8994-4ed6-91c7-e3b5684ed4a5",
+      "question_id": "0863616e-8994-4ed6-91c7-e3b5684ed4a5",
+      "model_id": "ALE-UTIL-004-05-022",
+      "claim_text": "0863616e-8994-4ed6-91c7-e3b5684ed4a5 ALE-UTIL-004-05-022: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as c.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-09-0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9",
+      "question_id": "0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9",
+      "model_id": "ALE-UTIL-004-05-018",
+      "claim_text": "0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9 ALE-UTIL-004-05-018: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as d.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-10-16abc24a-8747-48b9-96f6-93da3d0b017b",
+      "question_id": "16abc24a-8747-48b9-96f6-93da3d0b017b",
+      "model_id": "ALE-UTIL-004-05-016",
+      "claim_text": "16abc24a-8747-48b9-96f6-93da3d0b017b ALE-UTIL-004-05-016: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-11-31f01fa7-d997-4a9f-aff6-5762d82be418",
+      "question_id": "31f01fa7-d997-4a9f-aff6-5762d82be418",
+      "model_id": "ALE-UTIL-004-05-013",
+      "claim_text": "31f01fa7-d997-4a9f-aff6-5762d82be418 ALE-UTIL-004-05-013: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-12-7e3698a4-7da8-43e3-ad9d-1d9ef857020c",
+      "question_id": "7e3698a4-7da8-43e3-ad9d-1d9ef857020c",
+      "model_id": "ALE-UTIL-004-05-011",
+      "claim_text": "7e3698a4-7da8-43e3-ad9d-1d9ef857020c ALE-UTIL-004-05-011: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-13-b683dad1-83ca-4973-a6d2-dd80480182af",
+      "question_id": "b683dad1-83ca-4973-a6d2-dd80480182af",
+      "model_id": "ALE-UTIL-004-05-017",
+      "claim_text": "b683dad1-83ca-4973-a6d2-dd80480182af ALE-UTIL-004-05-017: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-14-ad388f32-8ec2-45d8-8a4f-1726da564759",
+      "question_id": "ad388f32-8ec2-45d8-8a4f-1726da564759",
+      "model_id": "ALE-UTIL-004-05-019",
+      "claim_text": "ad388f32-8ec2-45d8-8a4f-1726da564759 ALE-UTIL-004-05-019: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-question-15-c7b1786e-3a56-45f4-b7c9-a2eae78515a4",
+      "question_id": "c7b1786e-3a56-45f4-b7c9-a2eae78515a4",
+      "model_id": "ALE-UTIL-004-05-020",
+      "claim_text": "c7b1786e-3a56-45f4-b7c9-a2eae78515a4 ALE-UTIL-004-05-020: question edit rewritten under checked NSCP 2015 Section 208.9 source boundary; correct_option_id preserved as b.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99",
+      "status": "PASS"
+    }
+  ],
+  "source_primary_findings": [
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-1",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-2",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-3",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-4",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-5",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-6",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-7",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-8",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-9",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-10",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-11",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-12",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-13",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-14",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-15",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-util-004-05-b163-source-primary-16",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable.",
+      "source_ids": [
+        "nscp-2015-section-208-9-nonstructural-equipment-b163-lea-util-004-05"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable.",
+      "status": "PASS"
+    }
+  ],
+  "resolved_findings": [
+    "source-primary",
+    "question-alignment",
+    "scenario/depth",
+    "unsupported-claim-removal"
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "lea-util-004-05-b163-rejected-1",
+      "claim_text": "Exact generator transfer, runtime, fuel-filter, and post-earthquake maintenance protocol claims.",
+      "reason": "Outside the Batch 163 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-util-004-05-b163-rejected-2",
+      "claim_text": "Exact gas shutoff valve mechanism, activation threshold, response time, and price claims.",
+      "reason": "Outside the Batch 163 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-util-004-05-b163-rejected-3",
+      "claim_text": "Exact smoke-control, PA intelligibility, and emergency communication duration claims.",
+      "reason": "Outside the Batch 163 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-util-004-05-b163-rejected-4",
+      "claim_text": "Exact ASME, AISC, ASTM, manufacturer, or proprietary details not present in the checked local NSCP anchors.",
+      "reason": "Outside the Batch 163 checked local NSCP OCR source boundary."
+    }
+  ]
+}

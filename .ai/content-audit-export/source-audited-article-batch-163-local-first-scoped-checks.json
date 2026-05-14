@@ -1,0 +1,115 @@
+{
+  "batch_id": "source-audited-batch-163-local-first",
+  "generated_at": "2026-05-14T18:10:04+08:00",
+  "repo": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline": "0c0f08510 chore(content): accept source-audited batch 162",
+  "selected_article_ids": [
+    "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+    "585425ad-355a-4180-b64b-a872115f39f6"
+  ],
+  "selected_clusters": [
+    {
+      "cluster": "lea-util-004-05",
+      "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "answer_key_changes": 0,
+      "blockers": 0,
+      "normalized_sha256": "sha256:c622cce8493239809ae8f4563da2691543f60f4396b8c85b1c5d33ce310d6608",
+      "candidate_sha256": "sha256:c622cce8493239809ae8f4563da2691543f60f4396b8c85b1c5d33ce310d6608"
+    },
+    {
+      "cluster": "lea-util-004-08",
+      "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "answer_key_changes": 0,
+      "blockers": 0,
+      "normalized_sha256": "sha256:5c762257309e822812b027d15e5d10fdb252e0618f78ccfc9dfda96e0dd78481",
+      "candidate_sha256": "sha256:5c762257309e822812b027d15e5d10fdb252e0618f78ccfc9dfda96e0dd78481"
+    }
+  ],
+  "source_evidence": {
+    "valid_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "valid_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "checked_markdown_lines_per_article": 16,
+    "pass_claims_per_article": 31,
+    "source_hash_check": "PASS"
+  },
+  "gates": [
+    {
+      "name": "compose strict lea-util-004-05",
+      "command": "bun run content-audit:compose -- --article 1caee82f-c2c8-409b-a3bf-41576bc702c5 --dry-run --strict --overwrite",
+      "status": "PASS",
+      "evidence": "DRY compose 1caee82f-c2c8-409b-a3bf-41576bc702c5: changed; blockers=0; Composed 1 candidate(s)."
+    },
+    {
+      "name": "compose strict lea-util-004-08",
+      "command": "bun run content-audit:compose -- --article 585425ad-355a-4180-b64b-a872115f39f6 --dry-run --strict --overwrite",
+      "status": "PASS",
+      "evidence": "DRY compose 585425ad-355a-4180-b64b-a872115f39f6: changed; blockers=0; Composed 1 candidate(s)."
+    },
+    {
+      "name": "diff strict lea-util-004-05",
+      "command": "bun run content-audit:diff -- --article 1caee82f-c2c8-409b-a3bf-41576bc702c5 --dry-run --strict --summary",
+      "status": "PASS",
+      "evidence": "changed=true; safe_to_push=true; blockers=[]."
+    },
+    {
+      "name": "diff strict lea-util-004-08",
+      "command": "bun run content-audit:diff -- --article 585425ad-355a-4180-b64b-a872115f39f6 --dry-run --strict --summary",
+      "status": "PASS",
+      "evidence": "changed=true; safe_to_push=true; blockers=[]."
+    },
+    {
+      "name": "official scoped validate",
+      "command": "bun scripts/content-audit/validate-bundles.ts --input .ai/content-audit-export/batch-163-scoped-validation-root --dry-run --json",
+      "status": "PASS",
+      "evidence": "Scoped root contained only the two selected article bundles. Validator returned valid=true, article_count=2, blockers=[], warnings=[]. The scoped root was moved to /tmp/slatecamp-batch-163-scoped-validation-root.evidence after validation."
+    },
+    {
+      "name": "source verification invariants",
+      "command": "bun run test:source-verification",
+      "status": "PASS",
+      "evidence": "7 pass, 0 fail, 244 expect() calls."
+    },
+    {
+      "name": "JSON parse",
+      "command": "Bun JSON parse over intended Batch 163 JSON paths, excluding deleted compose-error.json paths",
+      "status": "PASS",
+      "evidence": "48 JSON files checked; failures=[]."
+    },
+    {
+      "name": "linked question and question-edit parity",
+      "command": "Bun parity scan over selected linked-questions.json and question-edits directories",
+      "status": "PASS",
+      "evidence": "lea-util-004-05 linked_questions=15 question_edits=15; lea-util-004-08 linked_questions=15 question_edits=15; correct_option_id preserved for every edit; answer_key_changes=0; failures=[]."
+    },
+    {
+      "name": "source evidence hashes and locators",
+      "command": "Bun source-audit-evidence scan over selected article folders",
+      "status": "PASS",
+      "evidence": "Expected PDF hash sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03 matched; each article has source_status=PASS, checked_sources=1, checked_lines=16, pass_claims=31, failures=[]."
+    },
+    {
+      "name": "placeholder/internal-note/acquisition-blocker scan",
+      "command": "Bun scan over existing intended Batch 163 paths for UI placeholders, maintenance markers, HTML comments, acquisition blocker labels, internal-note labels, AI-note labels, and stale validation markers",
+      "status": "PASS",
+      "evidence": "59 existing intended files scanned; matches=[]. Deleted compose-error.json paths were omitted from content scan because they no longer exist."
+    },
+    {
+      "name": "git diff whitespace check",
+      "command": "git diff --check -- $(cat .ai/03_plans/batch-163-git-handoff-stage-paths.txt)",
+      "status": "PASS",
+      "evidence": "Exit code 0; no whitespace errors reported."
+    }
+  ],
+  "pending_gates_before_final": [],
+  "blockers": [],
+  "warnings": [
+    "A first attempt to build a validation root under /tmp exposed that validate-bundles refuses inputs outside .ai/content-audit-export. The successful official scoped validation used an in-repo temporary root and moved it out after the dry-run.",
+    "No Supabase push, deploy, production DB mutation, main merge, force-push, staging, commit, or push was performed."
+  ]
+}
