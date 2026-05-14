@@ -1,0 +1,308 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-141-local-first",
+  "batch_number": 141,
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T01:01:53.831Z",
+  "target": {
+    "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+    "slug": "lea-strc-002-03-core-concept",
+    "title": "Moment-resisting frame (MRF)",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-002-03-core-concept--437762da-b636-4be1-bfed-bb47ec6c0cd3",
+    "normalized_sha256": "sha256:e9657c5fa2ff79d148e63a6330daba784925c600a0873aa96f61b3ac241769d2",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-002-03-core-concept--437762da-b636-4be1-bfed-bb47ec6c0cd3/candidate.md"
+  },
+  "classification": {
+    "topic_family": "lea-strc-002-03-core-concept",
+    "category": "Structural Conceptualization",
+    "source_sensitivity": "technical_structural_exam_content",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_source_capture": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_source_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch-141-lea-strc-002-03-core-concept-raw-source-capture",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "label": "Batch 141 raw source capture - Moment-resisting frame (MRF)",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Moment-resisting frame (MRF); includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-14T01:01:53.831Z",
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+      "local_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A truss is based on triangular geometry and its members are intended to work in axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Loadbearing walls transmit compressive forces to the ground and are most vulnerable to forces perpendicular to their plane. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Openings in loadbearing walls weaken continuity and need a lintel or arch to carry load around the opening. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Building vertical support may be provided by loadbearing walls or by a column-and-beam framework. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid floor diaphragms can transfer lateral loads to shear walls, braced frames, or rigid frames. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Shear walls, braced frames, and rigid frames can be used singly or in combination for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid frames are useful where braced frames or shear walls would create unwanted barriers, but they are less efficient for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Taller buildings often need rigid frames supplemented by bracing mechanisms such as diagonal bracing or a rigid core. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Wood truss loads should be applied at panel points to avoid secondary bending, and bracing or diaphragm action may be needed for lateral wind or seismic forces. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 141 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-141-lea-strc-002-03-core-concept-refined-source-map",
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "label": "Batch 141 refined source conversion - Moment-resisting frame (MRF)",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Moment-resisting frame (MRF).",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:01:53.831Z",
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+      "local_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A truss is based on triangular geometry and its members are intended to work in axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Loadbearing walls transmit compressive forces to the ground and are most vulnerable to forces perpendicular to their plane. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Openings in loadbearing walls weaken continuity and need a lintel or arch to carry load around the opening. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Building vertical support may be provided by loadbearing walls or by a column-and-beam framework. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid floor diaphragms can transfer lateral loads to shear walls, braced frames, or rigid frames. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Shear walls, braced frames, and rigid frames can be used singly or in combination for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid frames are useful where braced frames or shear walls would create unwanted barriers, but they are less efficient for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Taller buildings often need rigid frames supplemented by bracing mechanisms such as diagonal bracing or a rigid core. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Wood truss loads should be applied at panel points to avoid secondary bending, and bracing or diaphragm action may be needed for lateral wind or seismic forces. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-strc-002-03-core-concept-article-batch-141",
+      "claim_text": "Article lea-strc-002-03-core-concept was rewritten to the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2d65e34f-dedd-407a-a89b-1e3389e44e4c-batch-141",
+      "claim_text": "Linked question 2d65e34f-dedd-407a-a89b-1e3389e44e4c was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d0902cc0-0d58-4ac3-89b6-4685716fc74e-batch-141",
+      "claim_text": "Linked question d0902cc0-0d58-4ac3-89b6-4685716fc74e was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0c30c79b-1f77-4c07-9eb0-6e12929805ab-batch-141",
+      "claim_text": "Linked question 0c30c79b-1f77-4c07-9eb0-6e12929805ab was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f58b8ffc-7feb-4e41-a632-e7bc957e2e94-batch-141",
+      "claim_text": "Linked question f58b8ffc-7feb-4e41-a632-e7bc957e2e94 was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-15f6a22b-ffba-487c-9b5c-ae66483bbfd0-batch-141",
+      "claim_text": "Linked question 15f6a22b-ffba-487c-9b5c-ae66483bbfd0 was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-cd5bca5b-903c-49a6-8fbe-306aede1180d-batch-141",
+      "claim_text": "Linked question cd5bca5b-903c-49a6-8fbe-306aede1180d was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1d26ad96-457e-4b01-9b44-4e798537169c-batch-141",
+      "claim_text": "Linked question 1d26ad96-457e-4b01-9b44-4e798537169c was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-cc07a1a8-b437-48bc-aaa9-c05dbbbc142b-batch-141",
+      "claim_text": "Linked question cc07a1a8-b437-48bc-aaa9-c05dbbbc142b was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7c7a5a3e-b25b-4358-af5c-017d120da2e2-batch-141",
+      "claim_text": "Linked question 7c7a5a3e-b25b-4358-af5c-017d120da2e2 was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d3043c2b-5fdd-49f4-989a-8cabbcefb6cf-batch-141",
+      "claim_text": "Linked question d3043c2b-5fdd-49f4-989a-8cabbcefb6cf was rewritten inside the checked local source scope for Moment-resisting frame (MRF).",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      },
+      "blockers": []
+    }
+  ],
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+  },
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_carried_forward",
+      "reason": "No completed CSI MasterFormat source-recovery report is present, so the exact classification claim scope remains uncaptured locally."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_carried_forward",
+      "reason": "No completed seismic utilities recovery report is present, so utilities seismic-bracing claims still lack a safe local refined conversion boundary."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_carried_forward",
+      "reason": "The raw NSCP 2015 PDF exists locally, but no completed NSCP-specific refined conversion/recovery report is present for this pass."
+    }
+  ]
+}

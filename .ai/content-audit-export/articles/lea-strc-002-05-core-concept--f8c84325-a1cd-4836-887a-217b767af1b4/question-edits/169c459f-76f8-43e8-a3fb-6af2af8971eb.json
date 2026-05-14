@@ -1,0 +1,64 @@
+{
+  "question_id": "169c459f-76f8-43e8-a3fb-6af2af8971eb",
+  "baseline_hash": "sha256:bfb4cdeba41afd69115b57853439d3ec50dde7bc15dd1900a074c026eed60187",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Truss is a structural system of straight members.",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+    "parent_article_slug": "lea-strc-002-05-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Truss is a structural system of straight members",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+        "sha256": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Truss is a structural system of straight members",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md",
+        "sha256": "sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "A roof truss carries roofing load across its top. What source-safe issue matters before analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Loads should be applied anywhere along each member."
+      },
+      {
+        "id": "b",
+        "text": "Loads should be transferred to panel points to avoid secondary bending in truss members."
+      },
+      {
+        "id": "c",
+        "text": "Panel points are architectural decoration."
+      },
+      {
+        "id": "d",
+        "text": "The support type does not affect member forces."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Loads should be applied anywhere along each member. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "b": "Loads should be transferred to panel points to avoid secondary bending in truss members. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+      "c": "Panel points are architectural decoration. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "The support type does not affect member forces. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "Loads should be transferred to panel points to avoid secondary bending in truss members. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+    },
+    "explanation": "Loads should be transferred to panel points to avoid secondary bending in truss members. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+  },
+  "batch_question_template_index": 3
+}

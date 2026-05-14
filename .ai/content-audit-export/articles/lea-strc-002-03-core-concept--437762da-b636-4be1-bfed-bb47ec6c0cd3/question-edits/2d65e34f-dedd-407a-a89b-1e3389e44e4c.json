@@ -1,0 +1,64 @@
+{
+  "question_id": "2d65e34f-dedd-407a-a89b-1e3389e44e4c",
+  "baseline_hash": "sha256:4d1e3194070d36e16c86180a5a755787ceee35065f3f9f72acd2e6cbce58718e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Moment-resisting frame (MRF).",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+    "parent_article_slug": "lea-strc-002-03-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Moment-resisting frame (MRF)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Moment-resisting frame (MRF)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the source-safe purpose of confinement or connection detailing in a frame question?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quote a transverse reinforcement spacing from memory."
+      },
+      {
+        "id": "b",
+        "text": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source."
+      },
+      {
+        "id": "c",
+        "text": "Treat detailing as a nonstructural finish."
+      },
+      {
+        "id": "d",
+        "text": "Say connections do not affect frame behavior."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Quote a transverse reinforcement spacing from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "b": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+      "c": "Treat detailing as a nonstructural finish. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "Say connections do not affect frame behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+    },
+    "explanation": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+  },
+  "batch_question_template_index": 1
+}

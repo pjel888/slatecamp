@@ -1,20 +1,86 @@
 {
   "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:3f03391f66cb08fa92614abf8fc12f76b949c6669e6a7ecb0266b15b21fb2dff",
-  "source_count": 1,
+  "sources_hash": "sha256:b4a78ab146c35e0c1706f8c740388cc70481b7b76552dc6e6c24c68b56d46882",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "7282b912-4512-49b5-9e69-92b2bb451afb",
+      "source_id": "batch-141-lea-strc-002-01-core-concept-raw-source-capture",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
-      "label": "NSCP Section 202 (Definitions); Section 701 (Building Planning); Seismic Design Manual (ASCE 7 principles adapted to PH seismic zones)",
+      "label": "Batch 141 raw source capture - Bearing wall system relies on walls to resist both",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Bearing wall system relies on walls to resist both; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:01:53.831Z",
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md",
+      "local_sha256": "sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A truss is based on triangular geometry and its members are intended to work in axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Loadbearing walls transmit compressive forces to the ground and are most vulnerable to forces perpendicular to their plane. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Openings in loadbearing walls weaken continuity and need a lintel or arch to carry load around the opening. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Building vertical support may be provided by loadbearing walls or by a column-and-beam framework. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid floor diaphragms can transfer lateral loads to shear walls, braced frames, or rigid frames. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Shear walls, braced frames, and rigid frames can be used singly or in combination for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid frames are useful where braced frames or shear walls would create unwanted barriers, but they are less efficient for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Taller buildings often need rigid frames supplemented by bracing mechanisms such as diagonal bracing or a rigid core. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Wood truss loads should be applied at panel points to avoid secondary bending, and bracing or diaphragm action may be needed for lateral wind or seismic forces. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 141 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-141-lea-strc-002-01-core-concept-refined-source-map",
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "label": "Batch 141 refined source conversion - Bearing wall system relies on walls to resist both",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Bearing wall system relies on walls to resist both.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:01:53.831Z",
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md",
+      "local_sha256": "sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A truss is based on triangular geometry and its members are intended to work in axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Loadbearing walls transmit compressive forces to the ground and are most vulnerable to forces perpendicular to their plane. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Openings in loadbearing walls weaken continuity and need a lintel or arch to carry load around the opening. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Building vertical support may be provided by loadbearing walls or by a column-and-beam framework. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid floor diaphragms can transfer lateral loads to shear walls, braced frames, or rigid frames. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Shear walls, braced frames, and rigid frames can be used singly or in combination for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid frames are useful where braced frames or shear walls would create unwanted barriers, but they are less efficient for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Taller buildings often need rigid frames supplemented by bracing mechanisms such as diagonal bracing or a rigid core. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Wood truss loads should be applied at panel points to avoid secondary bending, and bracing or diaphragm action may be needed for lateral wind or seismic forces. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }

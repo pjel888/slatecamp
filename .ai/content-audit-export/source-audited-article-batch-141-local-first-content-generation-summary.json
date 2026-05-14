@@ -1,0 +1,200 @@
+{
+  "batch_id": "source-audited-article-batch-141-local-first",
+  "batch_number": 141,
+  "generated_at": "2026-05-14T01:01:53.831Z",
+  "baseline_commit": "a94a600e2",
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-strc-002-01-core-concept",
+      "slug": "lea-strc-002-01-core-concept",
+      "title": "Bearing wall system relies on walls to resist both",
+      "category": "Structural Conceptualization",
+      "status": "selected_sourceable_batch_141",
+      "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+    },
+    {
+      "cluster_id": "lea-strc-002-02-core-concept",
+      "slug": "lea-strc-002-02-core-concept",
+      "title": "Shear wall",
+      "category": "Structural Conceptualization",
+      "status": "selected_sourceable_batch_141",
+      "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+    },
+    {
+      "cluster_id": "lea-strc-002-03-core-concept",
+      "slug": "lea-strc-002-03-core-concept",
+      "title": "Moment-resisting frame (MRF)",
+      "category": "Structural Conceptualization",
+      "status": "selected_sourceable_batch_141",
+      "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+    },
+    {
+      "cluster_id": "lea-strc-002-04-core-concept",
+      "slug": "lea-strc-002-04-core-concept",
+      "title": "Bearing wall",
+      "category": "Structural Conceptualization",
+      "status": "selected_sourceable_batch_141",
+      "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+    },
+    {
+      "cluster_id": "lea-strc-002-05-core-concept",
+      "slug": "lea-strc-002-05-core-concept",
+      "title": "Truss is a structural system of straight members",
+      "category": "Structural Conceptualization",
+      "status": "selected_sourceable_batch_141",
+      "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+    }
+  ],
+  "blocked_clusters": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_carried_forward",
+      "reason": "No completed CSI MasterFormat source-recovery report is present, so the exact classification claim scope remains uncaptured locally."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_carried_forward",
+      "reason": "No completed seismic utilities recovery report is present, so utilities seismic-bracing claims still lack a safe local refined conversion boundary."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_carried_forward",
+      "reason": "The raw NSCP 2015 PDF exists locally, but no completed NSCP-specific refined conversion/recovery report is present for this pass."
+    }
+  ],
+  "selection_note": "Batch 141 skipped the carried-forward theory/materials/utilities blocked residuals because no completed recovery reports were present, then selected the next five sourceable non-prac structural system clusters with local raw/refined BCI and Hibbeler artifacts.",
+  "articles": [
+    {
+      "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "cluster_id": "lea-strc-002-01-core-concept",
+      "slug": "lea-strc-002-01-core-concept",
+      "title": "Bearing wall system relies on walls to resist both",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-002-01-core-concept--3fbb9789-4f15-4c22-a982-1b4686df8219",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:dda820d7d9541019b7854fb5e1b783abf06840ca2932037d416ff1fd794cae08",
+      "candidate_hash": "sha256:dda820d7d9541019b7854fb5e1b783abf06840ca2932037d416ff1fd794cae08",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
+      "source_safe_real_world_scenario": true,
+      "diff_safe_to_push": true,
+      "compose_safe_to_diff": true
+    },
+    {
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "cluster_id": "lea-strc-002-02-core-concept",
+      "slug": "lea-strc-002-02-core-concept",
+      "title": "Shear wall",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-002-02-core-concept--76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:4020b109bf2bb9b4e5122ea02f643755448d76fa3df25c302320c2a1cde2543f",
+      "candidate_hash": "sha256:4020b109bf2bb9b4e5122ea02f643755448d76fa3df25c302320c2a1cde2543f",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
+      "source_safe_real_world_scenario": true,
+      "diff_safe_to_push": true,
+      "compose_safe_to_diff": true
+    },
+    {
+      "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "cluster_id": "lea-strc-002-03-core-concept",
+      "slug": "lea-strc-002-03-core-concept",
+      "title": "Moment-resisting frame (MRF)",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-002-03-core-concept--437762da-b636-4be1-bfed-bb47ec6c0cd3",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:e9657c5fa2ff79d148e63a6330daba784925c600a0873aa96f61b3ac241769d2",
+      "candidate_hash": "sha256:e9657c5fa2ff79d148e63a6330daba784925c600a0873aa96f61b3ac241769d2",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+      "source_safe_real_world_scenario": true,
+      "diff_safe_to_push": true,
+      "compose_safe_to_diff": true
+    },
+    {
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "cluster_id": "lea-strc-002-04-core-concept",
+      "slug": "lea-strc-002-04-core-concept",
+      "title": "Bearing wall",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-002-04-core-concept--7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:de80ce237a5a427a9d1e4e7595a385d26e56fd206c32c0ea8461037b73b22b41",
+      "candidate_hash": "sha256:de80ce237a5a427a9d1e4e7595a385d26e56fd206c32c0ea8461037b73b22b41",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
+      "source_safe_real_world_scenario": true,
+      "diff_safe_to_push": true,
+      "compose_safe_to_diff": true
+    },
+    {
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "cluster_id": "lea-strc-002-05-core-concept",
+      "slug": "lea-strc-002-05-core-concept",
+      "title": "Truss is a structural system of straight members",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-002-05-core-concept--f8c84325-a1cd-4836-887a-217b767af1b4",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:50606cb3c4c73983e58ad48a22d4c4b25841cbd41cd9480394648aaac1b491b1",
+      "candidate_hash": "sha256:50606cb3c4c73983e58ad48a22d4c4b25841cbd41cd9480394648aaac1b491b1",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+      "source_safe_real_world_scenario": true,
+      "diff_safe_to_push": true,
+      "compose_safe_to_diff": true
+    }
+  ],
+  "totals": {
+    "article_count": 5,
+    "linked_question_count": 50,
+    "question_edit_count": 50,
+    "source_artifact_count": 10
+  },
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "unrelated_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/sync-state.json",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs",
+      ".ai/03_plans/blocked-source-recovery prompts/reports from parallel source-recovery lanes"
+    ]
+  }
+}

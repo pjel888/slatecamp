@@ -6,21 +6,21 @@
   "difficulty_label": null,
   "status": "published",
   "read_time": null,
-  "reviewed_at": null,
-  "reviewed_by": null,
-  "reviewer_comments": null,
+  "reviewed_at": "2026-05-14T01:01:53.831Z",
+  "reviewed_by": "codex-source-audited-article-batch-141-local-first",
+  "reviewer_comments": "Batch 141 local-first source-audited rewrite constrained to Building Construction Illustrated and Hibbeler local source artifacts.",
   "created_at": "2026-03-23T19:27:05.909117+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:52:44.24149+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:ee9a12cd6bdd41d097490760f65fa63ca1f6e5b30b4bd2118cb94bdde3ea3ec3",
-  "original_content_hash": "sha256:ee9a12cd6bdd41d097490760f65fa63ca1f6e5b30b4bd2118cb94bdde3ea3ec3",
-  "normalized_content_hash": "sha256:ee9a12cd6bdd41d097490760f65fa63ca1f6e5b30b4bd2118cb94bdde3ea3ec3",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-14T01:01:53.831Z",
+  "updated_by": "codex-source-audited-article-batch-141-local-first",
+  "updated_note": "Batch 141 local-first source-audited article and linked-question rewrite; no Supabase mutation.",
+  "content_hash": "sha256:60d2ec887948b9318ab849dde7d15f82e30e5e4cf1bd7e4070bc54b8e0deb0bf",
+  "original_content_hash": "sha256:60d2ec887948b9318ab849dde7d15f82e30e5e4cf1bd7e4070bc54b8e0deb0bf",
+  "normalized_content_hash": "sha256:de80ce237a5a427a9d1e4e7595a385d26e56fd206c32c0ea8461037b73b22b41",
+  "candidate_content_hash": "sha256:de80ce237a5a427a9d1e4e7595a385d26e56fd206c32c0ea8461037b73b22b41",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:aa6d17a3c5025dfe050e78764adf3a2e57c169bac836e92485130d8abdbba506",
-  "sources_hash": "sha256:a78f9e12fb0c4b9bfe933a8e3372f8e845bf7a7bb334fc562ca9838e2b706ef6",
+  "linked_questions_hash": "sha256:8c0d37f6cca5861a9b8509d79ec4baa174fdcace691619252118d017962de354",
+  "sources_hash": "sha256:eaffa59dfb1f559eaed6a3807e2fab88fb8a55174355eba681324d28aa8a6dbf",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:19.887Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
@@ -31,5 +31,20 @@
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "source-audited-article-batch-141-local-first",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md",
+      "sha256": "sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md",
+      "sha256": "sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
+    }
+  ]
 }

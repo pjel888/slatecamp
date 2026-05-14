@@ -1,0 +1,64 @@
+{
+  "question_id": "e4d0dcdc-87a0-49cd-9ce4-35088017576e",
+  "baseline_hash": "sha256:c0906d9a67a53e112d8b131b4e1bacb31d77fd2765d6e4e2faa4c40882b56185",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Truss is a structural system of straight members.",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+    "parent_article_slug": "lea-strc-002-05-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Truss is a structural system of straight members",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+        "sha256": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Truss is a structural system of straight members",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md",
+        "sha256": "sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "In a pitched roof truss, when should zero-force member rules be applied?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whenever a member looks short."
+      },
+      {
+        "id": "b",
+        "text": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule."
+      },
+      {
+        "id": "c",
+        "text": "Whenever a joint is at the roof apex."
+      },
+      {
+        "id": "d",
+        "text": "Only by using a code table."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Whenever a member looks short. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "b": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+      "c": "Whenever a joint is at the roof apex. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "Only by using a code table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+    },
+    "explanation": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+  },
+  "batch_question_template_index": 9
+}

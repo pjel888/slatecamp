@@ -1,30 +1,30 @@
 {
   "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:ecc35b8034b22569baeea8dd85b8f66b23d8915f379947d1c3ba9f2d770881f1",
+  "linked_questions_hash": "sha256:903a227e8ff13b397668332590e3f1a87421a09c110fbef70f9d15232efe0ee1",
   "question_count": 10,
   "questions": [
     {
       "question_id": "2764051d-11bc-4237-b05a-c96c2d15fe10",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "At a joint in a truss, two members meet at an angle, and no external load is applied at the joint. One member is vertical and the other is diagonal. What can you conclude about the forces in these members?",
+      "text": "At an unloaded joint, two non-collinear truss members meet. What is the source-safe conclusion?",
       "options": [
         {
           "id": "a",
-          "text": "Both members must carry equal tension, assuming symmetrical loading conditions"
+          "text": "One member must carry the entire roof load."
         },
         {
           "id": "b",
-          "text": "One of the members is a zero-force member because two non-collinear members cannot both carry load at a joint with no external force"
+          "text": "Both members are zero-force members under that loading condition."
         },
         {
           "id": "c",
-          "text": "Both members must be in compression, which is typical in certain truss configurations"
+          "text": "Both members are always compression members."
         },
         {
           "id": "d",
-          "text": "The vertical must be in tension and the diagonal in compression, based on typical load distribution"
+          "text": "The conclusion cannot be made from joint equilibrium."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "When only two members meet at a joint with no external load, and they are not collinear (not in a line), equilibrium requires one member to have zero force. The non-collinear geometry prevents both members from carrying load simultaneously.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "One member must carry the entire roof load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Both members are zero-force members under that loading condition. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "Both members are always compression members. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "The conclusion cannot be made from joint equilibrium. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Both members are zero-force members under that loading condition. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "Structural Analysis (method of joints)",
+      "explanation": "Both members are zero-force members under that loading condition. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-002-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8d42ab578fe1bf14e77b9d9c6993a18e2400a33e7d73458a4f2d509b2c877fef"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:d5152107d76729c9060282a7242e4327b2fe88dd98a67083591d4120ae9a4196"
     },
     {
       "question_id": "881d96c3-3af6-459b-9d4d-2717c429161e",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "Describe the diagonal member orientation in a Pratt truss.",
+      "text": "How should a Pratt-truss orientation question be handled in this pass?",
       "options": [
         {
           "id": "a",
-          "text": "Diagonals slope outward from the bottom chord, providing stability against lateral forces"
+          "text": "Invent a diagram that is not in the local source map."
         },
         {
           "id": "b",
-          "text": "Diagonals slope inward from the bottom chord toward the top chord"
+          "text": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium."
         },
         {
           "id": "c",
-          "text": "Diagonals are always vertical, which is a common misconception about truss design"
+          "text": "Claim the pattern is irrelevant to every truss."
         },
         {
           "id": "d",
-          "text": "Diagonals slope outward from the top chord, which is typical in other truss types but not in Pratt trusses"
+          "text": "Use a code table value."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In a Pratt truss, diagonals slope inward (upward and inward) from the bottom toward the top chord. This configuration places diagonals in tension and verticals in compression under gravity load—an efficient arrangement because long members (diagonals) are in tension (can handle tension well) and short members (verticals) are in compression (resist buckling better).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Invent a diagram that is not in the local source map. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "Claim the pattern is irrelevant to every truss. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Use a code table value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 202; Structural design references",
+      "explanation": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-002-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c6656ce6ffd1a42d92918c04c2687c97365cf237fe46e61e21e7dd3a00db7a33"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:ba148f62dbbd0a9d27584bf19c8d14597d5a970c0c8007f488b6371c8b1df829"
     },
     {
       "question_id": "169c459f-76f8-43e8-a3fb-6af2af8971eb",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "A roof truss spans 24 meters and carries distributed load from roofing materials. Which truss type is most appropriate for this application?",
+      "text": "A roof truss carries roofing load across its top. What source-safe issue matters before analysis?",
       "options": [
         {
           "id": "a",
-          "text": "Simple truss (single triangle), which is generally used for smaller spans and not suitable for distributed loads over long distances"
+          "text": "Loads should be applied anywhere along each member."
         },
         {
           "id": "b",
-          "text": "Pratt truss or Warren truss, as both are efficient for medium-to-long spans and distributed loads"
+          "text": "Loads should be transferred to panel points to avoid secondary bending in truss members."
         },
         {
           "id": "c",
-          "text": "Howe truss exclusively, which is typically used for specific load conditions and may not be the best choice for distributed loads"
+          "text": "Panel points are architectural decoration."
         },
         {
           "id": "d",
-          "text": "Beam-column frame (not a truss), which is an alternative structural system but not a truss type suitable for this span"
+          "text": "The support type does not affect member forces."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "For a 24-meter roof truss span with distributed load, Pratt trusses (diagonals in tension, economical) and Warren trusses (excellent load distribution) are both suitable. Simple trusses are typically used for shorter spans (up to 10-12 m); Howe trusses are less common and less efficient than Pratt.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Loads should be applied anywhere along each member. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Loads should be transferred to panel points to avoid secondary bending in truss members. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "Panel points are architectural decoration. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "The support type does not affect member forces. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Loads should be transferred to panel points to avoid secondary bending in truss members. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 202; AISC Truss Design",
+      "explanation": "Loads should be transferred to panel points to avoid secondary bending in truss members. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-002-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bfb4cdeba41afd69115b57853439d3ec50dde7bc15dd1900a074c026eed60187"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:97a344fedaa0cfc27968e2fd7e6c38f5df24c72dbfc70ef9b6f5ead0958f4a20"
     },
     {
       "question_id": "6bb5bd75-b17c-4cb7-875e-456900d08520",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "What is the fundamental principle that makes trusses structurally efficient?",
+      "text": "What makes trusses structurally efficient in the checked sources?",
       "options": [
         {
           "id": "a",
-          "text": "Trusses are made of very strong materials, which inherently increases their load-bearing capacity"
+          "text": "Every member carries bending only."
         },
         {
           "id": "b",
-          "text": "Triangular geometry is rigid—it cannot change shape without changing member lengths—allowing members to carry axial loads (tension/compression) rather than bending"
+          "text": "Triangular geometry and two-force members allow primary axial tension or compression."
         },
         {
           "id": "c",
-          "text": "Trusses eliminate the need for foundations, which reduces construction costs and simplifies site preparation"
+          "text": "They work because joints are fully fixed."
         },
         {
           "id": "d",
-          "text": "Trusses can span unlimited distances, making them ideal for large-scale structures without intermediate supports"
+          "text": "They avoid all need for bracing and anchorage."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The triangle is the only polygon that cannot change shape without member length change. This inherent rigidity means truss members primarily carry axial loads, not bending moments. Bending requires larger sections; axial loading is more efficient.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Every member carries bending only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Triangular geometry and two-force members allow primary axial tension or compression. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "They work because joints are fully fixed. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "They avoid all need for bracing and anchorage. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Triangular geometry and two-force members allow primary axial tension or compression. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Chapter 5 Section 307 (Trusses)",
+      "explanation": "Triangular geometry and two-force members allow primary axial tension or compression. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-002-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6d125a63337453f428a802357deb8078af9f181918756c34562ff3666438b61f"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:d68dc71e60389a936260a4a29c0133d205b8afe0021691ea29957b585feaf57d"
     },
     {
       "question_id": "5c1da5d4-97dd-4743-9fe7-b3b4bccbeda4",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "What is a zero-force member in a truss?",
+      "text": "What is a zero-force member?",
       "options": [
         {
           "id": "a",
-          "text": "A member that has no strength and should be removed from the truss, as it does not contribute to the structural integrity"
+          "text": "A member that must be removed from construction."
         },
         {
           "id": "b",
-          "text": "A member that carries no axial load (zero tension or compression) under a given loading condition"
+          "text": "A member that carries no direct load for the given loading condition but may be useful for stability or changed loading."
         },
         {
           "id": "c",
-          "text": "A member that is decorative and not part of the structural system, often used for aesthetic purposes only"
+          "text": "A member that always carries maximum compression."
         },
         {
           "id": "d",
-          "text": "A member that is always vertical in orientation, regardless of the truss design"
+          "text": "A member with unknown material."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A zero-force member carries no load under a specific loading condition (found through equilibrium analysis). The member may still be included for redundancy, other load cases, or constructability, but under the given loads, its axial force is zero.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A member that must be removed from construction. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "A member that carries no direct load for the given loading condition but may be useful for stability or changed loading. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "A member that always carries maximum compression. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "A member with unknown material. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "A member that carries no direct load for the given loading condition but may be useful for stability or changed loading. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "Structural Analysis (truss analysis methods)",
+      "explanation": "A member that carries no direct load for the given loading condition but may be useful for stability or changed loading. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-002-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1ff68bca501cccdbccaa0c0409677c9018f820fa2bf19ef6cdbce55c0f73cb17"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:be37d0abc281f78a961f9b4879dfa7574a9a4590cd55e3d3b7372719068aa896"
     },
     {
       "question_id": "8f8c16de-beed-4ee9-9c2e-abeb3e9646d5",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "In a Warren truss, how is the diagonal pattern described?",
+      "text": "How should Warren-pattern recall be treated here?",
       "options": [
         {
           "id": "a",
-          "text": "All diagonals slope in the same direction (inward or outward), creating a consistent load distribution across the truss"
+          "text": "Quote an uncaptured image description as fact."
         },
         {
           "id": "b",
-          "text": "Diagonals alternate direction, forming a zigzag or W pattern"
+          "text": "Use only source-supported truss fundamentals unless a captured configuration diagram is available."
         },
         {
           "id": "c",
-          "text": "Diagonals are perpendicular to both chords, providing maximum structural stability and load-bearing capacity"
+          "text": "Say Warren trusses are not trusses."
         },
         {
           "id": "d",
-          "text": "Warren trusses have no diagonals, only verticals, which simplifies construction but limits load distribution"
+          "text": "Answer with a wall-system rule."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A Warren truss has diagonals that alternate direction, creating a distinctive zigzag or W pattern. This pattern provides efficient load distribution for distributed loads and good lateral bracing.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Quote an uncaptured image description as fact. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Use only source-supported truss fundamentals unless a captured configuration diagram is available. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "Say Warren trusses are not trusses. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Answer with a wall-system rule. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Use only source-supported truss fundamentals unless a captured configuration diagram is available. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 202; Truss design references",
+      "explanation": "Use only source-supported truss fundamentals unless a captured configuration diagram is available. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-002-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f9774764b2ca19897e5bf859284dcde98e29087b01c35bb7607cc94ae0304c06"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:01d02028c3b396bcb05d4f51adf911e539ef4bd454869869395ac0e97e4dfceb"
     },
     {
       "question_id": "bc8f7217-eb58-44b4-b755-9f422ee2f458",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "Compare the stress states (tension or compression) in Pratt and Howe trusses under gravity loading.",
+      "text": "What is safe to say about tension and compression in truss members?",
       "options": [
         {
           "id": "a",
-          "text": "Both trusses have identical stress distributions in all members, which is a common misconception in structural analysis."
+          "text": "Every diagonal is tension in every truss."
         },
         {
           "id": "b",
-          "text": "Pratt: diagonals in tension, verticals in compression; Howe: diagonals in compression, verticals in tension (opposite stress patterns)"
+          "text": "Under the pin-joint assumptions, member force acts along the member axis as either tension or compression."
         },
         {
           "id": "c",
-          "text": "Both trusses put all members in tension under gravity, which is not typically the case in practical applications."
+          "text": "Every vertical is compression in every truss."
         },
         {
           "id": "d",
-          "text": "Stress distribution depends only on material, not geometry, which overlooks the influence of truss design."
+          "text": "Trusses carry only bending and never axial force."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The diagonal orientation determines stress state. In Pratt, inward-sloping diagonals develop tension (good use of slender members). In Howe, outward-sloping diagonals develop compression. The stress distributions are opposite, making Pratt generally more efficient for gravity loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Every diagonal is tension in every truss. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Under the pin-joint assumptions, member force acts along the member axis as either tension or compression. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "Every vertical is compression in every truss. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Trusses carry only bending and never axial force. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Under the pin-joint assumptions, member force acts along the member axis as either tension or compression. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "Structural Analysis (method of sections or joints); AISC Manual",
+      "explanation": "Under the pin-joint assumptions, member force acts along the member axis as either tension or compression. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-002-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:22c57db4fd6d810829f34cf6f40dd0830694165de22e2e35e04305c7a7ede464"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:cf51819953ea888c580fc9d35088acf2195f1c66a59fa5f134f960472ce94ea0"
     },
     {
       "question_id": "be02abf9-bcb4-4c09-a949-e3f117045ae3",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "Name the four primary members of a simple truss.",
+      "text": "Name the member groups that are safe from the checked truss source boundary.",
       "options": [
         {
           "id": "a",
-          "text": "Top chord, bottom chord, verticals, and diagonals"
+          "text": "Chords and web members, with joints or panel points organizing the truss."
         },
         {
           "id": "b",
-          "text": "Left column, right column, cross-braces, and purlins, which are not typically part of a simple truss"
+          "text": "Curtain wall, parapet, and cavity."
         },
         {
           "id": "c",
-          "text": "Beams, columns, ties, and shears, which are more common in frame structures"
+          "text": "Fixture, riser, and vent."
         },
         {
           "id": "d",
-          "text": "Stringers, webs, flanges, and connectors, terms more associated with steel beams"
+          "text": "Setback, easement, and RROW."
         }
       ],
       "correct_option_id": "a",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Truss members are classified as: top chord (upper boundary), bottom chord (lower boundary), verticals (perpendicular connectors), and diagonals (angled members). Together they form the triangulated structure.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Chords and web members, with joints or panel points organizing the truss. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "b": "Curtain wall, parapet, and cavity. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "Fixture, riser, and vent. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Setback, easement, and RROW. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Chords and web members, with joints or panel points organizing the truss. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "Structural engineering principles (no specific NSCP section)",
+      "explanation": "Chords and web members, with joints or panel points organizing the truss. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-002-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6dc00ee2d57a89c8650d73d76a6bd615d3ad8fd53a503d5c65917ca51b814b63"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:32bab47a1a006a816c860f4e84937e49fb0d17619f3ec62a65d3ce12593d8573"
     },
     {
       "question_id": "e4d0dcdc-87a0-49cd-9ce4-35088017576e",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "In a pitched roof truss with a concentrated load at the apex (top), which member(s) are most likely to experience zero force?",
+      "text": "In a pitched roof truss, when should zero-force member rules be applied?",
       "options": [
         {
           "id": "a",
-          "text": "The bottom chord; it is farthest from the load"
+          "text": "Whenever a member looks short."
         },
         {
           "id": "b",
-          "text": "Members at the apex joint that meet the specific zero-force criteria (two non-collinear with no external load, or three with two collinear)"
+          "text": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule."
         },
         {
           "id": "c",
-          "text": "All diagonal members, because they do not support the load directly"
+          "text": "Whenever a joint is at the roof apex."
         },
         {
           "id": "d",
-          "text": "No members can be zero-force under concentrated loading"
+          "text": "Only by using a code table."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "At the apex of a pitched roof truss with a concentrated load at the peak, members meeting the geometric criteria for zero-force (two non-collinear non-loaded, or three with two collinear) will have zero force, depending on truss geometry. Not all members are zero-force, but some may be based on their configuration relative to the load.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Whenever a member looks short. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "Whenever a joint is at the roof apex. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Only by using a code table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "Structural Analysis (method of joints)",
+      "explanation": "Only after checking the joint has no external load or support reaction and the member geometry matches the rule. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-002-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c0906d9a67a53e112d8b131b4e1bacb31d77fd2765d6e4e2faa4c40882b56185"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:be64e048aa1da38f082087806f77c427de9b7f9234e01857ba3dd0b0ec3ebd74"
     },
     {
       "question_id": "3a18db99-1aba-4482-8d2b-0a9a7fb98cc1",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
       "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
-      "text": "At a truss joint, three members meet: two are collinear (form a straight line through the joint), and the third is at an angle. No external load is applied at the joint. What is the zero-force member?",
+      "text": "At an unloaded joint with three members, two collinear and one not collinear, which member is zero-force?",
       "options": [
         {
           "id": "a",
-          "text": "The two collinear members both have zero force, as they do not contribute to the joint's stability"
+          "text": "Both collinear members."
         },
         {
           "id": "b",
-          "text": "The angled member has zero force because the collinear members form a continuous load path"
+          "text": "The non-collinear third member."
         },
         {
           "id": "c",
-          "text": "All three members have zero force, indicating a state of equilibrium at the joint"
+          "text": "All members at every support."
         },
         {
           "id": "d",
-          "text": "No zero-force member exists; all three must carry load due to the structural configuration"
+          "text": "No member can be identified by inspection."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "When three members meet at a joint with no external load, two are collinear, and one is at an angle, equilibrium requires the angled member to have zero force. The collinear members can form a straight load path; the third member adds nothing to equilibrium.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Both collinear members. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "The non-collinear third member. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+        "c": "All members at every support. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "No member can be identified by inspection. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "The non-collinear third member. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+        "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
       },
-      "explanation": null,
-      "code_citation": "Structural Analysis (method of joints)",
+      "explanation": "The non-collinear third member. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-002-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0b4484d4d72fcc529043086a566987fbb102235fa7fcfea09c0e107086660788"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:87ca66bc436426149e87f093fffe4c6bc4307e93204fdb8fb84e97faa2e537d5"
     }
   ]
 }

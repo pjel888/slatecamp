@@ -1,30 +1,30 @@
 {
   "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c8ead6298dc77dc0628a4c830f77fba5fc7b7d45c0e616e0fd84e53bd3d32774",
+  "linked_questions_hash": "sha256:8577ac244e0f7de3206ad99d593a5eb2247855c46b99c865781fda42a570eb3b",
   "question_count": 10,
   "questions": [
     {
       "question_id": "1c674382-ef0a-4416-af11-5096072231dc",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "A building code official challenges a bearing wall design for a 10-story mixed-use building in Seismic Zone 2, citing inefficiency. What is the most accurate response?",
+      "text": "A tall mixed-use project is being discussed as a bearing-wall scheme. What is the source-safe response?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing walls are prohibited for buildings taller than 6 stories by NSCP, which mandates alternative structural systems for taller buildings"
+          "text": "Bearing walls are locally prohibited above a fixed story count in this source packet."
         },
         {
           "id": "b",
-          "text": "The official is correct—at 10 stories, bearing walls require excessive thickness and cost; a frame system with moment resistance or shear wall bracing is more practical"
+          "text": "Do not cite a height ban; explain that loadbearing walls become limiting when openness and lateral stability demands grow, so a frame plus lateral system is often more practical."
         },
         {
           "id": "c",
-          "text": "Bearing walls are always more efficient and the official is wrong, as they provide superior load distribution"
+          "text": "Bearing walls always outperform frames for every tall building."
         },
         {
           "id": "d",
-          "text": "The building height is irrelevant to structural system choice, as long as the design meets all other code requirements"
+          "text": "The number of stories is irrelevant to structural system selection."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP does not forbid bearing walls at any height, but as buildings get taller, bearing walls become massive and uneconomical. A frame system allows thinner elements and flexible architecture.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Bearing walls are locally prohibited above a fixed story count in this source packet. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Do not cite a height ban; explain that loadbearing walls become limiting when openness and lateral stability demands grow, so a frame plus lateral system is often more practical. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "c": "Bearing walls always outperform frames for every tall building. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "The number of stories is irrelevant to structural system selection. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Do not cite a height ban; explain that loadbearing walls become limiting when openness and lateral stability demands grow, so a frame plus lateral system is often more practical. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4",
+      "explanation": "Do not cite a height ban; explain that loadbearing walls become limiting when openness and lateral stability demands grow, so a frame plus lateral system is often more practical. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-002-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a1571b19c07407d1d98a9b27cf3519b6f634be5c35479e16950b166d2f53ba27"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:dad43a25d8700e7b0509708e31777c7e7615e6bd923041d534af539265da9aea"
     },
     {
       "question_id": "c969d5d6-9289-4ca0-b0ca-6a363d65589b",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "A 12-story commercial office building is planned in Seismic Zone 2. Why would a frame system with moment-resisting capability be preferred over a bearing wall system?",
+      "text": "Why might a frame system be preferred for a 12-story office program?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing wall systems cannot resist seismic loads, making them unsuitable for high-risk seismic zones"
+          "text": "Bearing walls cannot carry any lateral force."
         },
         {
           "id": "b",
-          "text": "At this height, walls would be excessively thick and uneconomical; a frame allows column spacing flexibility and uses lateral bracing (shear walls or moment connections) efficiently"
+          "text": "Columns and beams can give more open planning while shear walls, braced frames, or rigid frames handle lateral stability."
         },
         {
           "id": "c",
-          "text": "Frame systems are always cheaper than bearing walls, providing a cost-effective solution for high-rise buildings"
+          "text": "Frames are automatically cheaper for every project regardless of layout."
         },
         {
           "id": "d",
-          "text": "Bearing walls are only allowed in buildings shorter than 6 stories, limiting their application in taller structures"
+          "text": "Bearing walls are locally allowed only below six stories by this source packet."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "For tall buildings, bearing walls become massive and costly. Frames with moment-resisting connections or coupled shear walls provide efficient lateral resistance and allow larger floor-to-floor heights and open floor plans.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Bearing walls cannot carry any lateral force. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Columns and beams can give more open planning while shear walls, braced frames, or rigid frames handle lateral stability. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "c": "Frames are automatically cheaper for every project regardless of layout. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Bearing walls are locally allowed only below six stories by this source packet. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Columns and beams can give more open planning while shear walls, braced frames, or rigid frames handle lateral stability. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4.3; ASCE 7 principles",
+      "explanation": "Columns and beams can give more open planning while shear walls, braced frames, or rigid frames handle lateral stability. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-002-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0acd9481b176e7d52828da7534228556006660e37964f65436f934855c134d0d"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:0bcc94ec225a57c0e3300f92c2a7d1cd105fb066e2b59776ecec563f3f3ef821"
     },
     {
       "question_id": "9f65281a-fe58-41ed-8cf4-cac750020cf0",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "A designer proposes a 4-story residential building in a provincial area using a bearing wall system. What is the primary structural advantage in this context?",
+      "text": "What is the main advantage of a low-rise bearing-wall layout when walls stack cleanly?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing walls eliminate the need for lateral bracing or shear walls, simplifying construction"
+          "text": "It removes the need for foundations."
         },
         {
           "id": "b",
-          "text": "The integrated load path (gravity + lateral in walls) reduces total structural material and cost while providing adequate stiffness for a short building"
+          "text": "Walls can act as the primary vertical support and define repeated rooms with a direct compression load path."
         },
         {
           "id": "c",
-          "text": "Bearing walls are stronger than frames and will never fail, ensuring absolute safety"
+          "text": "It guarantees absolute seismic safety without lateral checks."
         },
         {
           "id": "d",
-          "text": "Bearing walls allow larger floor-to-floor heights than frames, offering more design flexibility"
+          "text": "It gives larger open spans than a frame."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "At 4 stories, bearing walls efficiently carry both vertical and lateral loads with minimal additional bracing, reducing structural cost and complexity.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It removes the need for foundations. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Walls can act as the primary vertical support and define repeated rooms with a direct compression load path. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "c": "It guarantees absolute seismic safety without lateral checks. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "It gives larger open spans than a frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Walls can act as the primary vertical support and define repeated rooms with a direct compression load path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4.2",
+      "explanation": "Walls can act as the primary vertical support and define repeated rooms with a direct compression load path. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-002-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cd495db5bef8c40fabd1487b3a4536741ebcf29bfc32ce270e17f9cb8ce32390"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:bb9aa4457407b89b37a0490b931167bb937fc457abc00bdd6a17319029ffd3e4"
     },
     {
       "question_id": "b491c02b-73ee-4fd9-a3ca-bd64844e658d",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "Why are bearing wall systems economical for low-rise residential buildings in the Philippines?",
+      "text": "Why can bearing walls be economical in simple low-rise layouts?",
       "options": [
         {
           "id": "a",
-          "text": "They eliminate the need for foundations, which significantly reduces construction costs and simplifies the building process"
+          "text": "They eliminate all structural engineering."
         },
         {
           "id": "b",
-          "text": "Walls serve dual structural purposes (gravity + lateral), reducing the number of structural elements and material cost"
+          "text": "The wall can serve enclosure, space division, and vertical support when the plan aligns with the load path."
         },
         {
           "id": "c",
-          "text": "They are only economical because masonry is unavailable elsewhere, making it a unique cost-saving measure in the region"
+          "text": "Masonry is the only material available for walls."
         },
         {
           "id": "d",
-          "text": "They automatically meet seismic requirements without additional bracing, thus avoiding the need for costly retrofitting measures"
+          "text": "They automatically satisfy every lateral force condition."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bearing walls integrate load-bearing and lateral-resisting functions in one element, reducing overall material, formwork, and labor costs—ideal for 1–6 story structures.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They eliminate all structural engineering. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "The wall can serve enclosure, space division, and vertical support when the plan aligns with the load path. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "c": "Masonry is the only material available for walls. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "They automatically satisfy every lateral force condition. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "The wall can serve enclosure, space division, and vertical support when the plan aligns with the load path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4.2; Philippine construction practice",
+      "explanation": "The wall can serve enclosure, space division, and vertical support when the plan aligns with the load path. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-002-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d82c815b480061ba097389b2e567c0dac06c71dd9b9887ac81d4be33aa001963"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:29e98c0c9c9e8fda1799d7d817d98f011c0d096d396b8665c1dfac7591764b9b"
     },
     {
       "question_id": "74e385a7-9d62-49ac-a6b3-ceeb24a3e989",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "What is the defining characteristic of a bearing wall system?",
+      "text": "What defines a bearing wall system in this Batch 141 source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Walls serve as the primary load-bearing elements for both gravity and lateral loads"
+          "text": "Vertical support is provided mainly by loadbearing walls rather than by a column-and-beam skeleton."
         },
         {
           "id": "b",
-          "text": "Walls are non-structural and used only for partition, providing no load-bearing capacity"
+          "text": "Walls are nonstructural partitions only."
         },
         {
           "id": "c",
-          "text": "All walls must be made of masonry, ensuring uniformity in material use"
+          "text": "All walls must be masonry regardless of loads."
         },
         {
           "id": "d",
-          "text": "Walls carry lateral loads but not vertical loads, which are supported by columns"
+          "text": "Walls carry lateral loads but never vertical load."
         }
       ],
       "correct_option_id": "a",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bearing walls integrate gravity and lateral load paths, transferring loads directly to the foundation through compression.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Vertical support is provided mainly by loadbearing walls rather than by a column-and-beam skeleton. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "b": "Walls are nonstructural partitions only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "All walls must be masonry regardless of loads. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Walls carry lateral loads but never vertical load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Vertical support is provided mainly by loadbearing walls rather than by a column-and-beam skeleton. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4.2",
+      "explanation": "Vertical support is provided mainly by loadbearing walls rather than by a column-and-beam skeleton. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-002-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:45b9cd238c716f06460ffb48798b4e30bcc9db9f8665b3e75dbf98fdeed518cd"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:11abc9a7463de316fe02048a5e6b7081d437d33934bfa1e41d3b7f54e2643b35"
     },
     {
       "question_id": "22321fa2-0112-4711-bed0-0c977fc4d26b",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "What architectural advantage do frame systems provide that bearing wall systems do not?",
+      "text": "What planning advantage does a frame system usually have over a bearing-wall system?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing walls also allow open floor plans if they are thin enough, but this compromises structural integrity"
+          "text": "Bearing walls also allow unlimited openings if they are thin."
         },
         {
           "id": "b",
-          "text": "Frame systems allow columns to be spaced widely and positioned flexibly, enabling larger open floor areas and free facade placement"
+          "text": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads."
         },
         {
           "id": "c",
-          "text": "Frame systems reduce construction time but bearing walls do not, due to the complexity of wall construction"
+          "text": "Frames always shorten construction time by themselves."
         },
         {
           "id": "d",
-          "text": "Bearing walls provide better thermal insulation than frames, which can be advantageous in certain climates"
+          "text": "Frames provide thermal insulation as their main structural benefit."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Because beams span between columns rather than relying on walls, frames enable large column spacing, flexible wall positioning, and architectural freedom.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Bearing walls also allow unlimited openings if they are thin. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "c": "Frames always shorten construction time by themselves. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Frames provide thermal insulation as their main structural benefit. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4.3",
+      "explanation": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-002-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2a7fa4ba799c12901821f330adfcf07f23e609d7763945ae9af6964a308ca5ea"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:3a480c22e3529e517a3d08210d929a6a3a8c82d0d13610220d8cd9928d1a41c7"
     },
     {
       "question_id": "dec0cd19-a011-4654-9572-99d8308b16fd",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "In a frame system, what is the typical load path for vertical (gravity) loads?",
+      "text": "In a frame system, how do gravity loads typically reach the foundation?",
       "options": [
         {
           "id": "a",
-          "text": "Loads travel directly through walls to the foundation, bypassing any intermediate structural elements"
+          "text": "Loads bypass beams and go directly through every partition."
         },
         {
           "id": "b",
-          "text": "Loads are carried by beams that span to columns, which compress loads to the foundation"
+          "text": "Floor loads go to beams, then to columns, and then down to foundations."
         },
         {
           "id": "c",
-          "text": "Loads are distributed equally to all walls regardless of location, assuming uniform wall strength and material"
+          "text": "Loads are distributed equally to all walls regardless of support."
         },
         {
           "id": "d",
-          "text": "Loads bypass the frame and are carried by shear walls only, which are designed to handle both lateral and vertical forces"
+          "text": "Loads are carried only by shear walls."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Frame systems use a skeletal structure—beams bend to carry floor loads, columns axially compress to transfer loads to the foundation.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Loads bypass beams and go directly through every partition. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Floor loads go to beams, then to columns, and then down to foundations. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "c": "Loads are distributed equally to all walls regardless of support. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Loads are carried only by shear walls. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Floor loads go to beams, then to columns, and then down to foundations. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4.3",
+      "explanation": "Floor loads go to beams, then to columns, and then down to foundations. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-002-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:030dd0b97be664952e223d6b2801ce1f309a22091df5e42e64c983f0a5b1faa5"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:872c13233ecdd9b6bc3983e1985ddeeadafebac3c07f6fea43044e9aeff3d35e"
     },
     {
       "question_id": "313b2265-d3bb-4901-ba61-568d71e8bfd0",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "Which statement correctly distinguishes lateral load resistance between bearing wall and frame systems?",
+      "text": "Which lateral-stability distinction is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing walls resist lateral loads through their mass; frames resist through rigidity or separate bracing"
+          "text": "Bearing walls need lateral support for out-of-plane forces, while frames may rely on rigid joints, bracing, or shear walls."
         },
         {
           "id": "b",
-          "text": "Frame systems cannot have lateral bracing and must rely on wall compression, which limits their application in high-seismic areas"
+          "text": "Frames cannot use lateral bracing."
         },
         {
           "id": "c",
-          "text": "Bearing walls and frames resist lateral loads identically through moment connections, which is a common misconception"
+          "text": "Both systems resist lateral loads identically through wall mass."
         },
         {
           "id": "d",
-          "text": "Lateral loads are only resisted by shear walls, never by frames or bearing walls, which is incorrect for most modern designs"
+          "text": "Only shear walls ever resist lateral loads."
         }
       ],
       "correct_option_id": "a",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bearing walls provide lateral resistance through high stiffness and large cross-sectional area. Frames rely on moment-resisting connections or dedicated shear wall bracing.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Bearing walls need lateral support for out-of-plane forces, while frames may rely on rigid joints, bracing, or shear walls. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "b": "Frames cannot use lateral bracing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "Both systems resist lateral loads identically through wall mass. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Only shear walls ever resist lateral loads. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Bearing walls need lateral support for out-of-plane forces, while frames may rely on rigid joints, bracing, or shear walls. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4",
+      "explanation": "Bearing walls need lateral support for out-of-plane forces, while frames may rely on rigid joints, bracing, or shear walls. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-002-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:aa59e325a3788844bcee8634cf48544d48a07751f50f0b348ff90bc293a34c9c"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:b1533e4094bdb5f7f38f9f43b4d241932276d56329c8397c195655f4d5f5e521"
     },
     {
       "question_id": "a38b1251-2a1b-47ef-9635-455ca0380868",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "Which integrated load path characteristic distinguishes bearing wall systems from frame systems?",
+      "text": "What is the clearest load-path difference between bearing walls and frames?",
       "options": [
         {
           "id": "a",
-          "text": "Gravity loads and lateral loads follow the same structural element (the wall); in frames, these paths are typically separated"
+          "text": "Bearing-wall layouts route vertical support through walls; frames route vertical support through beams and columns."
         },
         {
           "id": "b",
-          "text": "Frames also integrate gravity and lateral loads in the same element, which is not typically the case"
+          "text": "Frames and bearing walls always use the same element for all load effects."
         },
         {
           "id": "c",
-          "text": "Load paths are not relevant to structural system classification, which is a misunderstanding"
+          "text": "Load paths are not part of system classification."
         },
         {
           "id": "d",
-          "text": "Bearing walls separate gravity and lateral loads more than frames do, which contradicts typical structural behavior"
+          "text": "Bearing walls separate vertical and lateral behavior more than frames in every case."
         }
       ],
       "correct_option_id": "a",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "This is the defining feature: bearing walls carry both loads through the same thick element. Frames separate loads—beams/columns for gravity, shear walls or moment connections for lateral.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Bearing-wall layouts route vertical support through walls; frames route vertical support through beams and columns. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "b": "Frames and bearing walls always use the same element for all load effects. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "Load paths are not part of system classification. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Bearing walls separate vertical and lateral behavior more than frames in every case. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Bearing-wall layouts route vertical support through walls; frames route vertical support through beams and columns. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4.2",
+      "explanation": "Bearing-wall layouts route vertical support through walls; frames route vertical support through beams and columns. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-002-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a8b781b8ef6d472fa91bf9cb56796f1145340e72acbd5faa3268ae200de96d35"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:c8b336439fff7e053921135ba3b14933c78d3d755826270a940f3355b2b0e1ed"
     },
     {
       "question_id": "93606072-84cb-4bed-967b-7a6e58a32704",
       "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
       "topic_id": "2cac75d7-475d-4ff7-bf88-38ceb727423e",
-      "text": "Compare the seismic behavior of a bearing wall system and a moment-resisting frame system. Which statement is accurate?",
+      "text": "What is a safe comparison of bearing walls and moment frames under lateral effects?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing walls are more flexible and allow large displacements; frames are stiffer, providing better resistance to lateral forces"
+          "text": "Bearing walls are always more flexible than frames."
         },
         {
           "id": "b",
-          "text": "Frames are more flexible (larger displacements); bearing walls are stiffer due to mass and cross-section"
+          "text": "Loadbearing walls are stiff but vulnerable out of plane; rigid frames can keep space open but are less efficient unless supplemented for lateral stability."
         },
         {
           "id": "c",
-          "text": "Both systems have identical seismic response regardless of material or configuration, which is a common misconception"
+          "text": "Both systems respond identically regardless of configuration."
         },
         {
           "id": "d",
-          "text": "Bearing walls cannot be used in seismic zones; only frames are seismic-safe, which is a regulatory requirement"
+          "text": "Bearing walls are never usable where lateral forces exist."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bearing walls have high lateral stiffness (large cross-section, high modulus). Moment-resisting frames are more flexible and undergo larger displacements unless stiffened by shear walls.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Bearing walls are always more flexible than frames. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Loadbearing walls are stiff but vulnerable out of plane; rigid frames can keep space open but are less efficient unless supplemented for lateral stability. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+        "c": "Both systems respond identically regardless of configuration. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Bearing walls are never usable where lateral forces exist. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Loadbearing walls are stiff but vulnerable out of plane; rigid frames can keep space open but are less efficient unless supplemented for lateral stability. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+        "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.4; ASCE 7",
+      "explanation": "Loadbearing walls are stiff but vulnerable out of plane; rigid frames can keep space open but are less efficient unless supplemented for lateral stability. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-002-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:aaf52f2b2543f6f3d86b1745efa5de706873252f56256c180eeb8dbb62df1b4d"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:ccbf1d23f5daca09f3ad8725e857938e8cf8b4eababcf822e5d2c3f9fd390350"
     }
   ]
 }

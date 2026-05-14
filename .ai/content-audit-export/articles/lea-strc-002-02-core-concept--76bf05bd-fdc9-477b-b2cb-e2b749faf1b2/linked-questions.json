@@ -1,30 +1,30 @@
 {
   "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:125370b4354bfa0759d41ee2eb3cc50b28bffb07e4ea2b6b2a6364a82da24481",
+  "linked_questions_hash": "sha256:00b447b417fc8e63459cc7c91d4d218cfbc20079475c37e4448f46856d2caca9",
   "question_count": 10,
   "questions": [
     {
       "question_id": "ed3d2c20-6362-4646-9a16-ef33a403a920",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "What is the primary function of a shear wall in lateral force resistance?",
+      "text": "What is the primary source-safe role of a shear wall?",
       "options": [
         {
           "id": "a",
-          "text": "To carry vertical loads only, without contributing to lateral stability"
+          "text": "It carries only plumbing loads."
         },
         {
           "id": "b",
-          "text": "To resist horizontal (lateral) loads through in-plane shear and bending"
+          "text": "It is a vertical lateral-resisting element that receives forces from floor or roof diaphragms."
         },
         {
           "id": "c",
-          "text": "To separate rooms and provide privacy, without structural contribution"
+          "text": "It is a nonstructural finish panel."
         },
         {
           "id": "d",
-          "text": "To increase the thermal insulation of the building, enhancing energy efficiency"
+          "text": "It replaces foundations."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Shear walls are vertical structural elements designed to transfer lateral forces (wind, seismic) from diaphragms down to the foundation through in-plane shear and bending action.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It carries only plumbing loads. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "It is a vertical lateral-resisting element that receives forces from floor or roof diaphragms. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "It is a nonstructural finish panel. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "It replaces foundations. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "It is a vertical lateral-resisting element that receives forces from floor or roof diaphragms. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 202",
+      "explanation": "It is a vertical lateral-resisting element that receives forces from floor or roof diaphragms. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-002-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b74207fe69fa87c1b56a3b68806a7a0f809e9bf89cf9d2dd2640390086f46d79"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:c8156253511cdbc8a6cddc057df41fa460abc877a0b7ac22d6442092866b21e2"
     },
     {
       "question_id": "f43df552-293f-494d-86c2-20f6343cb6d8",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "A building has shear walls positioned asymmetrically (not centered on the floor plan). Why might collectors be required?",
+      "text": "Why might extra transfer members be needed when shear walls are not aligned with the floor load path?",
       "options": [
         {
           "id": "a",
-          "text": "Collectors are always required in all buildings regardless of wall layout, as a standard practice"
+          "text": "Collectors are required by the article title alone."
         },
         {
           "id": "b",
-          "text": "Asymmetric shear wall positions create a situation where diaphragm forces do not naturally align with wall locations; collectors redirect forces and prevent torsional imbalance"
+          "text": "The diaphragm must provide a reliable path so lateral forces can reach the resisting walls."
         },
         {
           "id": "c",
-          "text": "Collectors are only required if the building exceeds 10 stories, according to specific structural guidelines"
+          "text": "Asymmetry makes lateral loads disappear."
         },
         {
           "id": "d",
-          "text": "Collectors are not necessary because shear walls can resist forces from any direction, which is a common misconception"
+          "text": "Wall position never affects force transfer."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "When shear walls are offset from the center of the diaphragm, lateral forces must be actively redirected via collectors to ensure all forces reach the walls. Without collectors, portions of the diaphragm may be unbraced, causing torsion and load concentration.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Collectors are required by the article title alone. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "The diaphragm must provide a reliable path so lateral forces can reach the resisting walls. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "Asymmetry makes lateral loads disappear. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Wall position never affects force transfer. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "The diaphragm must provide a reliable path so lateral forces can reach the resisting walls. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 430; ASCE 7",
+      "explanation": "The diaphragm must provide a reliable path so lateral forces can reach the resisting walls. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-002-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f51ad4baaf4da67cd274dc759b643e617b9040f0c64e9eebb12fe48ffe596884"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:e09850821fca751b9180af9828580a619a796ba04876d4b8ae5925abd1d8e444"
     },
     {
       "question_id": "102f5ee2-5e2a-44f4-820f-6ad84a8cd9d5",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "An L-shaped building has shear walls concentrated on one leg of the L. The diaphragm must transfer forces from the other leg to the shear walls. What combination of structural elements ensures this load path?",
+      "text": "An irregular floor plan must send lateral force to a few wall lines. What source-safe idea controls the answer?",
       "options": [
         {
           "id": "a",
-          "text": "Only the diaphragm is needed; it will naturally transfer all forces, assuming no irregularities in the structure"
+          "text": "The floor slab has no lateral role."
         },
         {
           "id": "b",
-          "text": "Collectors must bridge the gap between the loaded area and the shear walls, with the diaphragm distributing forces to those collectors"
+          "text": "A diaphragm acts as a horizontal deep beam transferring force to shear walls, braced frames, or rigid frames."
         },
         {
           "id": "c",
-          "text": "An additional shear wall in the unbraced leg is the only solution, which may not be feasible in all designs"
+          "text": "Only wall thickness matters; the load path does not."
         },
         {
           "id": "d",
-          "text": "No special provisions are needed; the structure will perform safely without collectors, which is a risky assumption"
+          "text": "A code zone number alone proves the load path."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In an L-shaped building with offset shear walls, collectors (drag struts) must span across the diaphragm to redirect forces toward the shear walls. The diaphragm distributes lateral loads to the collectors, which then transfer forces to the walls, ensuring continuity.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The floor slab has no lateral role. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "A diaphragm acts as a horizontal deep beam transferring force to shear walls, braced frames, or rigid frames. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "Only wall thickness matters; the load path does not. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "A code zone number alone proves the load path. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "A diaphragm acts as a horizontal deep beam transferring force to shear walls, braced frames, or rigid frames. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 430; ASCE 7",
+      "explanation": "A diaphragm acts as a horizontal deep beam transferring force to shear walls, braced frames, or rigid frames. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-002-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f2530e5eeabd6c83d9a2dc17ec12d54b235ff890a3946af8bc2f4b48e2d9dd1e"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:2b9745fc487cd1d4156c481a628739e0172bc63489643cc0f77022adbd7fc363"
     },
     {
       "question_id": "1a453b8a-12ad-41ba-8656-a06f8aa75c7a",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "What is a boundary element in a shear wall, and what is its critical function?",
+      "text": "If a question asks about a boundary element but this batch lacks a captured boundary-detailing source, what should the answer do?",
       "options": [
         {
           "id": "a",
-          "text": "A boundary element is the edge of a shear wall; it requires additional reinforcement to prevent crushing and ensure proper confinement"
+          "text": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path."
         },
         {
           "id": "b",
-          "text": "A boundary element is only needed if the shear wall has openings, which is a common misconception in structural design"
+          "text": "Invent transverse-reinforcement rules."
         },
         {
           "id": "c",
-          "text": "A boundary element is a non-structural trim used to finish the wall surface, often mistaken for a critical structural component"
+          "text": "Quote uncaptured NSCP detailing values."
         },
         {
           "id": "d",
-          "text": "A boundary element is required only in walls shorter than 3 meters, which is not a standard practice in engineering"
+          "text": "Ignore source boundaries because the term is familiar."
         }
       ],
       "correct_option_id": "a",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Boundary elements are reinforced zones at shear wall edges and corners. They prevent premature crushing and buckling under high compressive stress and ensure transverse reinforcement confines the concrete.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "b": "Invent transverse-reinforcement rules. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "Quote uncaptured NSCP detailing values. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Ignore source boundaries because the term is familiar. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 430 (Reinforced Concrete Shear Walls)",
+      "explanation": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-002-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:37be09ff0865147bdd5c3a05ee0aa305141d4327ef30b4545dee2caa98391086"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:68eda625829ca7149facb3ef494c2d9ca86ae764175331a16bfa5f581d376d70"
     },
     {
       "question_id": "506bd0ff-543b-4d86-ab0b-daf11784d056",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "Define a collector (drag strut) and explain when it is necessary.",
+      "text": "What is the safest description of a collector or drag strut in this pass?",
       "options": [
         {
           "id": "a",
-          "text": "A collector is a beam that connects two buildings; it is used in all multi-story structures to ensure lateral stability and load distribution"
+          "text": "Assign a fixed reinforcement schedule."
         },
         {
           "id": "b",
-          "text": "A collector transfers diaphragm forces to shear walls; it is necessary when shear walls are not directly aligned with diaphragm loads"
+          "text": "Treat it as a load-path transfer member only when the checked source boundary supports the diaphragm-to-wall path, not as a detailed code design rule."
         },
         {
           "id": "c",
-          "text": "A collector is a non-structural element used only for aesthetic purposes, often to enhance the visual appeal of a building's facade"
+          "text": "Call it a finish material."
         },
         {
           "id": "d",
-          "text": "A collector connects columns to foundations and is required in all frames to maintain structural integrity and load path continuity"
+          "text": "Say it is never needed in irregular plans."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Collectors are beams or trusses that channel forces from the diaphragm to shear walls, especially critical when the diaphragm geometry or shear wall layout requires force redirection to prevent torsion and load imbalance.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Assign a fixed reinforcement schedule. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Treat it as a load-path transfer member only when the checked source boundary supports the diaphragm-to-wall path, not as a detailed code design rule. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "Call it a finish material. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Say it is never needed in irregular plans. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Treat it as a load-path transfer member only when the checked source boundary supports the diaphragm-to-wall path, not as a detailed code design rule. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 202, 430",
+      "explanation": "Treat it as a load-path transfer member only when the checked source boundary supports the diaphragm-to-wall path, not as a detailed code design rule. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-002-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b055257ad67a55827e9c0adb624c8888a99a751a90f6066c3cbfd8e38ad09790"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:537e79f5f52da1b4791afd5f86d1774fd99ff3384d7100295f67b7ae6b92ad4a"
     },
     {
       "question_id": "56fd7f92-a709-49a4-b148-1a69ff3d28e0",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "What is the role of a diaphragm in a lateral force-resisting system?",
+      "text": "What does a horizontal diaphragm do in the local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "To provide lateral resistance by spanning vertically between shear walls, ensuring stability during seismic events"
+          "text": "It only carries paint finishes."
         },
         {
           "id": "b",
-          "text": "To collect lateral inertial forces from the floor mass and distribute them to shear walls"
+          "text": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames."
         },
         {
           "id": "c",
-          "text": "To carry gravity loads from the structure above, which is not its primary function in lateral force resistance"
+          "text": "It prevents all vertical loads from reaching columns."
         },
         {
           "id": "d",
-          "text": "To serve only as a floor and not participate in lateral design, which is a common misconception"
+          "text": "It is always flexible and never rigid."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Diaphragms are horizontal structural elements that act as large beams, collecting inertial forces from floor masses during earthquakes and distributing them to vertical shear walls.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It only carries paint finishes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "It prevents all vertical loads from reaching columns. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "It is always flexible and never rigid. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 202",
+      "explanation": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-002-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:331e45d0afaf91559c355b8d371307ca8f6c574c23235507a1a17fbf096aedd8"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:c967349d96280c71504f829a2fca2475c51299a4625d293541d8410ffb9f90f5"
     },
     {
       "question_id": "63ce3d2e-8f55-489a-8c1b-f63094c42563",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "Distinguish between a rigid diaphragm and a flexible diaphragm in terms of lateral load distribution.",
+      "text": "What is the source-safe distinction between rigid and flexible diaphragm claims in this pass?",
       "options": [
         {
           "id": "a",
-          "text": "Rigid diaphragms are stronger and flexible diaphragms are weaker; rigid ones are always better, which is a common misconception in structural engineering"
+          "text": "Rigid diaphragms always distribute loads equally."
         },
         {
           "id": "b",
-          "text": "A rigid diaphragm distributes lateral loads to shear walls proportional to their stiffness; a flexible diaphragm distributes to the nearest walls only"
+          "text": "Only the general diaphragm transfer role is captured; detailed rigid-versus-flexible distribution rules need a more specific source."
         },
         {
           "id": "c",
-          "text": "Both rigid and flexible diaphragms distribute loads identically, which is incorrect as they have different load distribution characteristics"
+          "text": "Flexible diaphragms have no structural function."
         },
         {
           "id": "d",
-          "text": "Flexible diaphragms are required for all buildings; rigid diaphragms are not allowed in seismic zones, which is a misunderstanding of building code requirements"
+          "text": "The source packet gives a full design table."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Rigid diaphragms behave like plates that resist bending and distribute forces proportional to wall stiffness. Flexible diaphragms act as one-way slabs, distributing loads to the nearest shear walls only.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Rigid diaphragms always distribute loads equally. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Only the general diaphragm transfer role is captured; detailed rigid-versus-flexible distribution rules need a more specific source. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "Flexible diaphragms have no structural function. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "The source packet gives a full design table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Only the general diaphragm transfer role is captured; detailed rigid-versus-flexible distribution rules need a more specific source. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 430; ASCE 7 Chapter 12",
+      "explanation": "Only the general diaphragm transfer role is captured; detailed rigid-versus-flexible distribution rules need a more specific source. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-002-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1d6e53a2a06ebad91d08685b8af34d7a26290b3a45795de7ed804872f81c4e7d"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:88dc267d584045aa30ac8a2131a9109c1e8c93781a4469618f5c762631fef55a"
     },
     {
       "question_id": "a411ab2b-fcc4-4dc8-a9f2-d6bae7072a02",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "A floor plan shows shear walls on the perimeter of a building with an irregular boundary. How should collectors be configured to ensure proper load transfer?",
+      "text": "How should collectors be discussed for an irregular perimeter wall layout?",
       "options": [
         {
           "id": "a",
-          "text": "Collectors are not needed because shear walls on the perimeter are inherently symmetrical, which naturally balances the forces"
+          "text": "As decorative trim around the floor plate."
         },
         {
           "id": "b",
-          "text": "Collectors should connect inboard diaphragm load concentrations to the perimeter shear walls to bridge any gaps in alignment and ensure continuous force transfer"
+          "text": "As part of the lateral-force path that must connect diaphragm action to the resisting wall or frame system."
         },
         {
           "id": "c",
-          "text": "All diaphragm forces naturally flow to perimeter shear walls without collectors, assuming uniform distribution of loads"
+          "text": "As a replacement for all shear walls."
         },
         {
           "id": "d",
-          "text": "Collectors are only required for interior shear walls, never for perimeter walls, unless specified by the structural engineer"
+          "text": "As a code value that can be quoted without source."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Irregular building boundaries can create zones where diaphragm loads do not naturally align with shear walls. Collectors bridge these gaps, ensuring that all inertial forces are positively transferred to the shear wall system.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "As decorative trim around the floor plate. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "As part of the lateral-force path that must connect diaphragm action to the resisting wall or frame system. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "As a replacement for all shear walls. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "As a code value that can be quoted without source. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "As part of the lateral-force path that must connect diaphragm action to the resisting wall or frame system. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 430",
+      "explanation": "As part of the lateral-force path that must connect diaphragm action to the resisting wall or frame system. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-002-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3b9b6e6d1a7dcdd89e313e40d73e3ddf64582fca73740ebdac948e3be8a1a410"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:215ea1f5a23d5cab4e1098c10731e80de65aa055da9ac0d75785b2b6c37273c2"
     },
     {
       "question_id": "bea82b7d-4622-4113-8d53-342507a336e8",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "In Seismic Zone 2, a concrete building has two shear walls separated by 8 meters and a monolithic concrete floor slab. What role does the floor slab serve in lateral design?",
+      "text": "In a concrete floor with separated shear walls, what source-safe role can the slab serve?",
       "options": [
         {
           "id": "a",
-          "text": "The floor slab carries only gravity loads; lateral design is independent, which overlooks its role as a diaphragm"
+          "text": "It has no lateral load function."
         },
         {
           "id": "b",
-          "text": "The floor slab acts as a diaphragm, collecting lateral inertial forces from the floor mass and transferring them to the two shear walls"
+          "text": "It can act as a diaphragm transferring lateral force toward the vertical resisting elements."
         },
         {
           "id": "c",
-          "text": "The floor slab prevents lateral movement but shear walls provide lateral resistance, which is a partial understanding"
+          "text": "It becomes a bearing wall."
         },
         {
           "id": "d",
-          "text": "The floor slab is non-structural and does not participate in lateral design, which is incorrect"
+          "text": "It automatically proves all detailing is compliant."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Monolithic concrete floor slabs function as rigid diaphragms in lateral systems. The slab collects inertial forces from the floor mass and transfers them to the shear walls, allowing the walls to resist the lateral forces.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It has no lateral load function. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "It can act as a diaphragm transferring lateral force toward the vertical resisting elements. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "It becomes a bearing wall. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "It automatically proves all detailing is compliant. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "It can act as a diaphragm transferring lateral force toward the vertical resisting elements. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 430; ASCE 7",
+      "explanation": "It can act as a diaphragm transferring lateral force toward the vertical resisting elements. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-002-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f50e8dd019a285bc1e9e9b36e8497bb47827d8973456783ede1b9e837cb06da8"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:2d0c43502589bd6f6c07d918dd33d8a909e6c7b6a755054f6a7f1b17ea7b52a9"
     },
     {
       "question_id": "d4200585-ac93-4283-93cc-9c7f923fae59",
       "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
       "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
-      "text": "What is the relationship between shear wall confinement reinforcement and boundary elements?",
+      "text": "What is the safe relationship between confinement detailing and shear-wall boundary elements in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Boundary elements are separate from confinement reinforcement; they serve different purposes, such as providing additional stability."
+          "text": "The packet proves every boundary spacing value."
         },
         {
           "id": "b",
-          "text": "Boundary elements provide the primary confinement reinforcement at shear wall edges and corners to prevent crushing and lateral buckling of the wall"
+          "text": "Detailed confinement requirements are outside the captured source, so keep the answer to the checked concept that shear walls are vertical lateral-resisting elements."
         },
         {
           "id": "c",
-          "text": "Confinement reinforcement is only needed in columns, not in shear walls, which is a misunderstanding of structural requirements."
+          "text": "Boundary elements are architectural finishes."
         },
         {
           "id": "d",
-          "text": "Boundary elements are decorative features that do not affect structural performance, which is incorrect as they play a critical role in stability."
+          "text": "Confinement is the same as floor diaphragm action."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Boundary elements are reinforced zones that provide transverse reinforcement and confinement at shear wall perimeters. This confinement prevents premature concrete crushing and ensures ductile behavior under high compressive stress.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The packet proves every boundary spacing value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Detailed confinement requirements are outside the captured source, so keep the answer to the checked concept that shear walls are vertical lateral-resisting elements. This stays inside the Batch 141 local source boundary for Shear wall.",
+        "c": "Boundary elements are architectural finishes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Confinement is the same as floor diaphragm action. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Detailed confinement requirements are outside the captured source, so keep the answer to the checked concept that shear walls are vertical lateral-resisting elements. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+        "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 430",
+      "explanation": "Detailed confinement requirements are outside the captured source, so keep the answer to the checked concept that shear walls are vertical lateral-resisting elements. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-002-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c83a799e0cae04f33421327f22e6d4c609a053e633a4a6625bab569a3715afb9"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:1b6d29642318af437fe9cee4449c0959dbac305eca7bbb5e17dfdc0f40a6e794"
     }
   ]
 }

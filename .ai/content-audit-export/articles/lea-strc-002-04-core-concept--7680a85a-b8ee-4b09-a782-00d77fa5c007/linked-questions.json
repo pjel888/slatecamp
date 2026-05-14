@@ -1,30 +1,30 @@
 {
   "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:aa6d17a3c5025dfe050e78764adf3a2e57c169bac836e92485130d8abdbba506",
+  "linked_questions_hash": "sha256:8c0d37f6cca5861a9b8509d79ec4baa174fdcace691619252118d017962de354",
   "question_count": 10,
   "questions": [
     {
       "question_id": "08787dff-085a-46c6-9592-85eafca7d1dd",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "In a seismic zone, a non-bearing curtain wall is attached to a moment-resisting frame. What is the primary structural concern?",
+      "text": "A nonbearing curtain wall is attached to a frame. What is the source-safe structural concern?",
       "options": [
         {
           "id": "a",
-          "text": "The wall must carry the weight of the floors above, which requires additional structural support"
+          "text": "It automatically becomes a bearing wall."
         },
         {
           "id": "b",
-          "text": "The wall and its anchors must resist out-of-plane wind and seismic forces and accommodate building drift"
+          "text": "It must be supported and attached for imposed lateral or out-of-plane effects without treating it as the primary gravity system."
         },
         {
           "id": "c",
-          "text": "The wall must be designed as a shear wall, providing lateral stability to the structure"
+          "text": "It needs no support because it is nonbearing."
         },
         {
           "id": "d",
-          "text": "Non-bearing walls are exempt from seismic design, as they do not contribute to the building's structural integrity"
+          "text": "It replaces the frame."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "By definition, a non-bearing wall does not support the floors above.",
-        "c": "Shear walls are part of the lateral force-resisting system; a curtain wall is a non-structural component.",
-        "d": "NSCP Chapter 2 (Loads) and Chapter 6 (Wind) explicitly require seismic and wind design for non-structural components like cladding.",
-        "correct": "Curtain walls must be designed to 'drift' with the building frame during an earthquake. The anchors must prevent the wall from falling off (out-of-plane forces) while allowing for horizontal movement relative to the floors.",
-        "takeaway": "Curtain walls must accommodate inter-story drift and resist lateral pressures."
+        "a": "It automatically becomes a bearing wall. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "It must be supported and attached for imposed lateral or out-of-plane effects without treating it as the primary gravity system. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "It needs no support because it is nonbearing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "It replaces the frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "It must be supported and attached for imposed lateral or out-of-plane effects without treating it as the primary gravity system. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": "By definition, a non-bearing wall does not support the floors above. Shear walls are part of the lateral force-resisting system; a curtain wall is a non-structural component. NSCP Chapter 2 (Loads) and Chapter 6 (Wind) explicitly require seismic and wind design for non-structural components like cladding. Curtain walls must be designed to 'drift' with the building frame during an earthquake. The anchors must prevent the wall from falling off (out-of-plane forces) while allowing for horizontal movement relative to the floors. Curtain walls must accommodate inter-story drift and resist lateral pressures.",
-      "code_citation": "NSCP 2015 Section 208",
+      "explanation": "It must be supported and attached for imposed lateral or out-of-plane effects without treating it as the primary gravity system. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-002-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-05-06T15:15:20.151057+00:00",
-      "content_hash": "sha256:159eee691818f7e5c976cd341eafc5370c6e5dd43bd81952e6bb747bb7faaad2"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:c971df5d4af156b6d18eeb7ef5ea621e47a5e2ba8482fba91a24d5a87a1e41d8"
     },
     {
       "question_id": "9f1fea3d-8917-489b-98ee-71ca19c3a4e2",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "What distinguishes a parapet wall from other wall types?",
+      "text": "What distinguishes a parapet wall in a source-safe wall question?",
       "options": [
         {
           "id": "a",
-          "text": "A parapet wall is any exterior wall of a building, typically designed to provide additional structural support"
+          "text": "It is always a foundation wall."
         },
         {
           "id": "b",
-          "text": "A parapet wall is the portion of a wall that extends above the roofline"
+          "text": "It is a wall portion extending above the roof line and must be considered for out-of-plane stability rather than assumed harmless."
         },
         {
           "id": "c",
-          "text": "A parapet wall is always load-bearing, ensuring stability against lateral forces"
+          "text": "It is always a floor diaphragm."
         },
         {
           "id": "d",
-          "text": "A parapet wall carries only seismic loads, specifically designed to resist earthquake forces"
+          "text": "It is never exposed to lateral effects."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Exterior walls include the entire building envelope; a parapet is specifically the portion above the roof.",
-        "c": "Parapets are typically non-bearing as they do not support floor or roof loads above them.",
-        "d": "Parapets must resist both wind and seismic lateral forces.",
-        "correct": "A parapet is defined as that part of any wall entirely above the roof line. It is exposed to environmental loads (wind) on both sides and must be designed as a cantilever.",
-        "takeaway": "Parapet = portion of wall above the roof line."
+        "a": "It is always a foundation wall. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "It is a wall portion extending above the roof line and must be considered for out-of-plane stability rather than assumed harmless. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "It is always a floor diaphragm. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "It is never exposed to lateral effects. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "It is a wall portion extending above the roof line and must be considered for out-of-plane stability rather than assumed harmless. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": "Exterior walls include the entire building envelope; a parapet is specifically the portion above the roof. Parapets are typically non-bearing as they do not support floor or roof loads above them. Parapets must resist both wind and seismic lateral forces. A parapet is defined as that part of any wall entirely above the roof line. It is exposed to environmental loads (wind) on both sides and must be designed as a cantilever. Parapet = portion of wall above the roof line.",
-      "code_citation": "NSCP 2015 Section 202",
+      "explanation": "It is a wall portion extending above the roof line and must be considered for out-of-plane stability rather than assumed harmless. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-002-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-05-06T15:15:20.295328+00:00",
-      "content_hash": "sha256:f35f80f2e3127338a34c34446e309aaec54b2df828a9f8d7a63328addc26f6c2"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:e249b274ac5498156c3ed9ab8efc8fd8ef8d6a3ecb5e1d0f47158f8bf1cb5c1b"
     },
     {
       "question_id": "d00a6b51-8903-4ebb-9596-d02c98a2e132",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "What is the bearing wall classification threshold per NSCP 2015?",
+      "text": "What should replace an NSCP bearing-wall threshold question in this pass?",
       "options": [
         {
           "id": "a",
-          "text": "Greater than 1.45 kN/m superimposed load"
+          "text": "Quote the threshold from memory."
         },
         {
           "id": "b",
-          "text": "Greater than 2.90 kN/m superimposed load"
+          "text": "Use a cavity-wall air-space value."
         },
         {
           "id": "c",
-          "text": "Any vertical load in addition to its own weight"
+          "text": "A source-boundary answer: exact local threshold values are excluded unless a refined code source is captured."
         },
         {
           "id": "d",
-          "text": "Only loads exceeding the weight of the wall itself"
+          "text": "Assume every wall is bearing."
         }
       ],
       "correct_option_id": "c",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1.45 kN/m was the legacy NSCP 2010 threshold for light-frame bearing walls.",
-        "b": "2.90 kN/m was the legacy NSCP 2010 threshold for masonry/concrete bearing walls.",
-        "d": "The threshold is not a comparison to wall weight, but the presence of any superimposed vertical load.",
-        "correct": "The NSCP 2015 simplified the definition of a bearing wall in Section 202 to any wall supporting any vertical load in addition to its own weight, removing the specific kN/m thresholds found in previous editions.",
-        "takeaway": "NSCP 2015 removed numeric load thresholds for bearing wall definitions."
+        "a": "Quote the threshold from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Use a cavity-wall air-space value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "A source-boundary answer: exact local threshold values are excluded unless a refined code source is captured. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "d": "Assume every wall is bearing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "A source-boundary answer: exact local threshold values are excluded unless a refined code source is captured. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202",
+      "explanation": "A source-boundary answer: exact local threshold values are excluded unless a refined code source is captured. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-002-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:110db85f2ab788ba83ec77e81fddf5b6267e6960938233736c2a1cd048efa903"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:7d91c2a2473e8c22599285e3251681ab5d58fe860803109b21904cb97cc833db"
     },
     {
       "question_id": "2f75d983-8b44-4bdf-a52b-300084fb59d2",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "A cavity wall has an air space of 120 mm. Does this comply with NSCP 2015 limits?",
+      "text": "A cavity wall air-space item appears, but no source map captures that limit. What is the correct action?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, any air space larger than 50 mm is acceptable, provided it does not exceed the maximum allowable thickness for structural stability"
+          "text": "Invent a maximum air space."
         },
         {
           "id": "b",
-          "text": "No, the maximum thickness of the cavity is 115 mm"
+          "text": "Do not assert compliance values; answer only within the checked wall-load and opening-support concepts."
         },
         {
           "id": "c",
-          "text": "No, the maximum thickness is 75 mm, which is the standard for ensuring adequate thermal insulation and moisture control"
+          "text": "Treat the cavity as a shear wall."
         },
         {
           "id": "d",
-          "text": "Yes, if the wall is reinforced concrete, as this material can accommodate larger cavity spaces without compromising structural integrity"
+          "text": "Use the old answer because it sounds familiar."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While it satisfies the 50 mm minimum, it fails the 115 mm maximum.",
-        "c": "75 mm is a common practical width but not the legal maximum.",
-        "d": "Cavity wall requirements in Chapter 7 specifically apply to masonry construction.",
-        "correct": "Per NSCP 2015 Section 707.1.4.2, the maximum thickness of the cavity (air space) is 115 mm. A design of 120 mm exceeds this limit and would require special structural justification.",
-        "takeaway": "NSCP 2015 Cavity Wall Air Space: Maximum 115 mm."
+        "a": "Invent a maximum air space. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Do not assert compliance values; answer only within the checked wall-load and opening-support concepts. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "Treat the cavity as a shear wall. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Use the old answer because it sounds familiar. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Do not assert compliance values; answer only within the checked wall-load and opening-support concepts. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 707.1.4.2",
+      "explanation": "Do not assert compliance values; answer only within the checked wall-load and opening-support concepts. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-002-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5a3f9acaf2a12c803586730ab19bd0f5c2484cbd0fa68ca21c631c3661670034"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:4efc03c0dba7e3481133de0b81ce92afaa3d5df77d948fe9412cbfd938b16456"
     },
     {
       "question_id": "1c4b9ae6-aef2-468e-8d84-159ccaffa478",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "A concrete masonry wall supports a 0.5 kN/m superimposed load. How is this wall classified per NSCP 2015?",
+      "text": "A masonry wall carries only a small superimposed load. What source-safe classification approach applies?",
       "options": [
         {
           "id": "a",
-          "text": "Non-bearing because the load is very small"
+          "text": "Use a memorized NSCP number without a source."
         },
         {
           "id": "b",
-          "text": "Bearing wall"
+          "text": "Determine whether it is intended as loadbearing from its actual support role, not from uncaptured numeric thresholds."
         },
         {
           "id": "c",
-          "text": "Curtain wall"
+          "text": "Classify it by paint finish."
         },
         {
           "id": "d",
-          "text": "Non-structural partition"
+          "text": "Assume all masonry is nonbearing."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is a common error based on legacy codes that had numeric minimums (like 2.90 kN/m). 2015 removes these minimums.",
-        "c": "A curtain wall is an exterior non-bearing wall supported by the building frame, not supporting superimposed loads.",
-        "d": "A partition wall is interior and typically non-bearing.",
-        "correct": "Under NSCP 2015 Section 202, any wall supporting any vertical load in addition to its own weight is a bearing wall. Even a small superimposed load of 0.5 kN/m triggers this classification.",
-        "takeaway": "If it carries any extra weight, it's legally a bearing wall."
+        "a": "Use a memorized NSCP number without a source. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Determine whether it is intended as loadbearing from its actual support role, not from uncaptured numeric thresholds. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "Classify it by paint finish. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Assume all masonry is nonbearing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Determine whether it is intended as loadbearing from its actual support role, not from uncaptured numeric thresholds. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202",
+      "explanation": "Determine whether it is intended as loadbearing from its actual support role, not from uncaptured numeric thresholds. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-002-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ebc9e41b5d965e3381057085906fc4c0b5f5c52fe9bb2c3248ad6ab5e9d779cd"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:de9d3ab8746580e47cac4decf711ae1a4dfd4a3c1dc66b19bf3da21a20a8fc6a"
     },
     {
       "question_id": "bcc18f85-6c59-4dd7-8c8d-5f92b20a8e80",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "In retaining wall design, what is the difference between a counterfort and a buttress?",
+      "text": "What is the source-safe distinction between buttressing and wall support in this packet?",
       "options": [
         {
           "id": "a",
-          "text": "A counterfort is on the outer face; a buttress is on the inner face, which is a common misconception in structural design."
+          "text": "Counterfort dimensions are fully captured here."
         },
         {
           "id": "b",
-          "text": "A counterfort is on the inner (soil) face; a buttress is on the outer (exposed) face"
+          "text": "Loadbearing walls vulnerable to out-of-plane force need lateral support from buttressing, cross walls, transverse frames, or slabs."
         },
         {
           "id": "c",
-          "text": "Counterforts are for masonry; buttresses are for timber, which is not typically the case in modern construction practices."
+          "text": "Buttressing is only a decorative treatment."
         },
         {
           "id": "d",
-          "text": "Counterforts resist gravity; buttresses resist wind, which oversimplifies their structural roles."
+          "text": "Wall support is unrelated to lateral stability."
         }
       ],
       "correct_option_id": "b",
@@ -283,15 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This reverses the correct orientation. Buttresses are visible; counterforts are buried.",
-        "b": "This is the standard engineering distinction based on which side of the wall the support rib is placed.",
-        "c": "Both are common in reinforced concrete retaining wall systems.",
-        "d": "Both are used to resist the lateral earth pressure of the retained soil.",
-        "correct": "Counterforts are structural ribs located on the soil side (back) of the wall and are in tension. Buttresses are located on the front (exposed) side and are in compression.",
-        "takeaway": "Counterfort = Soil side (Tension); Buttress = Exposed side (Compression)."
+        "a": "Counterfort dimensions are fully captured here. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Loadbearing walls vulnerable to out-of-plane force need lateral support from buttressing, cross walls, transverse frames, or slabs. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "Buttressing is only a decorative treatment. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Wall support is unrelated to lateral stability. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Loadbearing walls vulnerable to out-of-plane force need lateral support from buttressing, cross walls, transverse frames, or slabs. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 413",
+      "explanation": "Loadbearing walls vulnerable to out-of-plane force need lateral support from buttressing, cross walls, transverse frames, or slabs. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -302,30 +313,30 @@
       "model_id": "ALE-STRC-002-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e47dd0c9dbae0099c5cf2c49277dc8c6477fd6a3907433a88fda53e409567d5a"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:8897edb507d73bc1777b899302b13cfedd1cd1f6e70299716edf88b5c09f6054"
     },
     {
       "question_id": "269078be-1120-48f1-b70c-0af9dc1ca40c",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "A wood stud wall supports a superimposed load of 2.0 kN/m. Is this wall classified as bearing or non-bearing per NSCP 2015?",
+      "text": "A wood stud wall carries load. How should this batch classify it?",
       "options": [
         {
           "id": "a",
-          "text": "Non-bearing (superimposed load is below numeric code thresholds), which is a common misinterpretation"
+          "text": "By a fixed threshold quoted from memory."
         },
         {
           "id": "b",
-          "text": "Bearing (it supports vertical load in addition to its own weight)"
+          "text": "By its support role and load path, while excluding uncaptured code threshold values."
         },
         {
           "id": "c",
-          "text": "Neither—walls are classified only by lateral resistance, which is not accurate for vertical load considerations"
+          "text": "By finish material only."
         },
         {
           "id": "d",
-          "text": "Bearing only if the wall is a shear wall, which is a misunderstanding of the classification criteria"
+          "text": "By assuming all wood studs are nonbearing."
         }
       ],
       "correct_option_id": "b",
@@ -334,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Numeric thresholds (like the 1.45 kN/m limit from NSCP 2010) are no longer used in the 2015 definition; any superimposed load triggers bearing status.",
-        "c": "Wall classification is primarily determined by vertical load transmission (bearing vs. non-bearing) and lateral load resistance.",
-        "d": "A wall can be bearing without being a shear wall. Bearing status refers to gravity loads, while shear status refers to lateral loads.",
-        "correct": "Per NSCP 2015 Section 202, a Bearing Wall is defined as any wall that supports any vertical load in addition to its own weight. Since the wall supports a superimposed load of 2.0 kN/m, it is classified as a bearing wall.",
-        "takeaway": "NSCP 2015 Definition: Bearing wall = supports any vertical load + own weight."
+        "a": "By a fixed threshold quoted from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "By its support role and load path, while excluding uncaptured code threshold values. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "By finish material only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "By assuming all wood studs are nonbearing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "By its support role and load path, while excluding uncaptured code threshold values. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202",
+      "explanation": "By its support role and load path, while excluding uncaptured code threshold values. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -352,30 +365,30 @@
       "model_id": "ALE-STRC-002-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1f14a2296d6ce775d5d4cd8893406bda12ce4180c3d0ba7babbc353e0e90b3b6"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:5b228dc4db49f05ba246bdf2dbcf222e158d4526e68b8040046a00df8a2ce90c"
     },
     {
       "question_id": "6214cf66-8bc9-4063-bd57-9b7797e96d2d",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "Why are bearing and non-bearing walls designed differently?",
+      "text": "Why are bearing and nonbearing walls designed differently?",
       "options": [
         {
           "id": "a",
-          "text": "Bearing walls must resist axial compression from gravity loads; non-bearing walls carry only self-weight and lateral loads"
+          "text": "A loadbearing wall transmits compression to the ground; a nonbearing partition does not serve that primary load path."
         },
         {
           "id": "b",
-          "text": "Non-bearing walls are not required to resist wind loads, which means they can be constructed with lighter materials and simpler connections"
+          "text": "Only color differs."
         },
         {
           "id": "c",
-          "text": "Bearing walls must be thicker than 200 mm by law, especially in high-rise buildings where additional stability is required"
+          "text": "Nonbearing walls always carry more load."
         },
         {
           "id": "d",
-          "text": "Only bearing walls require foundation anchoring, as they transfer significant loads to the foundation, unlike non-bearing walls"
+          "text": "The source says they are identical."
         }
       ],
       "correct_option_id": "a",
@@ -384,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "All exterior walls, including non-bearing ones, must be designed to resist wind pressure.",
-        "c": "Thickness depends on structural calculation and material (e.g., 150 mm for concrete), not a flat 200 mm rule for all types.",
-        "d": "All walls must be properly anchored to the building frame or foundation for stability.",
-        "correct": "Bearing walls are structural members designed to transmit vertical loads from the roof or upper floors to the foundation. Non-bearing walls are primarily partitions or cladding that must only support their own mass and resist out-of-plane wind or seismic loads.",
-        "takeaway": "Bearing walls transmit superimposed gravity loads; non-bearing walls do not."
+        "a": "A loadbearing wall transmits compression to the ground; a nonbearing partition does not serve that primary load path. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "b": "Only color differs. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "Nonbearing walls always carry more load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "The source says they are identical. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "A loadbearing wall transmits compression to the ground; a nonbearing partition does not serve that primary load path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202",
+      "explanation": "A loadbearing wall transmits compression to the ground; a nonbearing partition does not serve that primary load path. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -402,30 +417,30 @@
       "model_id": "ALE-STRC-002-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:755afac02c14e69ea437679881588ca4d6f2933f236973f038073497260ea6be"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:26fb43d5ff916fc9d3751fe564d720074d9347c5c4db36e7d902f33d9fd45848"
     },
     {
       "question_id": "72946c68-ab67-4175-8096-a859728f31b0",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "A cavity wall is designed with an air space of 40 mm. Does this comply with NSCP 2015 limits for masonry?",
+      "text": "What should an examiner do with a wall-opening scenario?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, 40 mm is the standard required width for most applications, ensuring adequate insulation and moisture control."
+          "text": "Ignore the opening."
         },
         {
           "id": "b",
-          "text": "No, the minimum air space (cavity thickness) is 50 mm"
+          "text": "Recognize that openings weaken loadbearing continuity and need a lintel or arch to carry load around the opening."
         },
         {
           "id": "c",
-          "text": "No, the maximum air space is 25 mm, which is critical for structural stability and thermal performance."
+          "text": "Treat every opening as a diaphragm."
         },
         {
           "id": "d",
-          "text": "Yes, provided the wall is less than 3 meters high, which allows for some flexibility in design."
+          "text": "Assume an opening strengthens the wall."
         }
       ],
       "correct_option_id": "b",
@@ -434,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "40 mm is below the legal minimum required for moisture control and drainage.",
-        "c": "The maximum thickness is actually 115 mm, not 25 mm.",
-        "d": "The 50 mm minimum applies regardless of the wall height to ensure proper drainage and air circulation.",
-        "correct": "Per NSCP 2015 Section 707.1.4.2, the minimum thickness of the cavity (air space) in a cavity wall shall be 50 mm. A design of 40 mm is insufficient to satisfy this requirement.",
-        "takeaway": "NSCP 2015 Cavity Wall Air Space: Minimum 50 mm."
+        "a": "Ignore the opening. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Recognize that openings weaken loadbearing continuity and need a lintel or arch to carry load around the opening. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "Treat every opening as a diaphragm. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Assume an opening strengthens the wall. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Recognize that openings weaken loadbearing continuity and need a lintel or arch to carry load around the opening. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 707.1.4.2",
+      "explanation": "Recognize that openings weaken loadbearing continuity and need a lintel or arch to carry load around the opening. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -452,30 +469,30 @@
       "model_id": "ALE-STRC-002-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e4a52ef7d14a66b1c17fa4d1f51e71f20d6cc497ec189d630f427a6778d8adfd"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:eb4e68226840c92dfb6402e62bf43b5018d9b1a0f30baab820a144da8012cc9f"
     },
     {
       "question_id": "3889466b-4987-4d4c-87dc-b218207ebb1a",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "A designer provides a wood stud wall that carries a 0.2 kN/m load from a decorative ceiling. Is this wall bearing?",
+      "text": "A wall carries a decorative ceiling load. What is the source-safe decision path?",
       "options": [
         {
           "id": "a",
-          "text": "No, because the load is purely decorative and does not contribute to structural support."
+          "text": "Use a remembered threshold without local evidence."
         },
         {
           "id": "b",
-          "text": "Yes, it supports vertical load in addition to its own weight"
+          "text": "Read whether the wall is intended to support superimposed load and avoid unsupported numeric thresholds in this pass."
         },
         {
           "id": "c",
-          "text": "No, wood walls must carry at least 1.45 kN/m to be bearing, according to specific building codes."
+          "text": "Declare every decorative-load wall bearing."
         },
         {
           "id": "d",
-          "text": "Only if the wall is taller than 2.4 meters, which is a common misconception about bearing walls."
+          "text": "Ignore the load path entirely."
         }
       ],
       "correct_option_id": "b",
@@ -484,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The nature of the load (decorative vs. structural) does not change the classification; only the presence of load matters.",
-        "c": "1.45 kN/m is the legacy threshold from NSCP 2010 and is no longer part of the 2015 definition.",
-        "d": "Height is not a factor in the basic bearing/non-bearing classification.",
-        "correct": "NSCP 2015 Section 202 defines a bearing wall by the presence of any superimposed vertical load. Regardless of the load source (decorative or structural), the addition of 0.2 kN/m classifies it as a bearing wall.",
-        "takeaway": "Legacy load thresholds (1.45 and 2.90) are frequently tested as 'trap' answers; the 2015 code uses a qualitative trigger."
+        "a": "Use a remembered threshold without local evidence. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Read whether the wall is intended to support superimposed load and avoid unsupported numeric thresholds in this pass. This stays inside the Batch 141 local source boundary for Bearing wall.",
+        "c": "Declare every decorative-load wall bearing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Ignore the load path entirely. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Read whether the wall is intended to support superimposed load and avoid unsupported numeric thresholds in this pass. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+        "takeaway": "For Bearing wall, read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202",
+      "explanation": "Read whether the wall is intended to support superimposed load and avoid unsupported numeric thresholds in this pass. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md#sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md#sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -502,8 +521,8 @@
       "model_id": "ALE-STRC-002-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5b49238feb0a1ebc1d8c3887f61879f353ba4951643850891e34fe689f406560"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:c4170169aebe7fd7c2fb83c2cee2dee69867ad82a202e6565b984ca071363ffc"
     }
   ]
 }

@@ -1,0 +1,64 @@
+{
+  "question_id": "d3043c2b-5fdd-49f4-989a-8cabbcefb6cf",
+  "baseline_hash": "sha256:490f6a85955f0eb490af05c0fc87571aa439f33580bcb588503da1f9b561e371",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Moment-resisting frame (MRF).",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+    "parent_article_slug": "lea-strc-002-03-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Moment-resisting frame (MRF)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "sha256": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Moment-resisting frame (MRF)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "sha256": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the safest answer to a question asking for maximum R factor and force reduction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the largest remembered number."
+      },
+      {
+        "id": "b",
+        "text": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction."
+      },
+      {
+        "id": "c",
+        "text": "Use any value because force reduction is decorative."
+      },
+      {
+        "id": "d",
+        "text": "Use a bearing-wall threshold instead."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Use the largest remembered number. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "b": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+      "c": "Use any value because force reduction is decorative. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "Use a bearing-wall threshold instead. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+    },
+    "explanation": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
+  },
+  "batch_question_template_index": 10
+}

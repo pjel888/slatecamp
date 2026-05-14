@@ -1,20 +1,118 @@
 {
   "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:138d5c048c1c6d16b2bd50de387d25afb370e7ae76a75bc1ba913acd64a40d6e",
-  "source_count": 1,
+  "sources_hash": "sha256:b0da4b923f79ce773459f57789ffd8cc25f78b18c17cb57c496332e67b2eed2d",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "15ac422c-8117-47f2-9904-da63cc934969",
+      "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture",
       "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
-      "label": "NSCP Section 202 (Truss Definitions); AISC Manual of Steel Construction (Truss Design); Hibbeler Structural Analysis (zero-force member method)",
+      "label": "Batch 141 raw source capture - Truss is a structural system of straight members",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Truss is a structural system of straight members; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:01:53.831Z",
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+      "local_sha256": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A truss is based on triangular geometry and its members are intended to work in axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Loadbearing walls transmit compressive forces to the ground and are most vulnerable to forces perpendicular to their plane. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Openings in loadbearing walls weaken continuity and need a lintel or arch to carry load around the opening. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Building vertical support may be provided by loadbearing walls or by a column-and-beam framework. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid floor diaphragms can transfer lateral loads to shear walls, braced frames, or rigid frames. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Shear walls, braced frames, and rigid frames can be used singly or in combination for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid frames are useful where braced frames or shear walls would create unwanted barriers, but they are less efficient for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Taller buildings often need rigid frames supplemented by bracing mechanisms such as diagonal bracing or a rigid core. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Wood truss loads should be applied at panel points to avoid secondary bending, and bracing or diaphragm action may be needed for lateral wind or seismic forces. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Hibbeler Statics 13th Edition: A truss is composed of slender members joined at their endpoints. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Planar trusses are commonly used for roofs and bridges. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Truss analysis assumes loads act at joints and joints are treated as pins. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Under those assumptions, each member acts as a two-force member carrying tension or compression along its axis. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: A simple truss begins with a triangular unit and can be expanded by adding members and joints. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Zero-force members may be identified by joint equilibrium when no external load or support reaction acts at the joint. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Two non-collinear members at an unloaded joint are zero-force members. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: For three members at an unloaded joint, if two are collinear, the third is a zero-force member. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+        },
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 141 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "label": "Batch 141 refined source conversion - Truss is a structural system of straight members",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Truss is a structural system of straight members.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:01:53.831Z",
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md",
+      "local_sha256": "sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A truss is based on triangular geometry and its members are intended to work in axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Loadbearing walls transmit compressive forces to the ground and are most vulnerable to forces perpendicular to their plane. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Openings in loadbearing walls weaken continuity and need a lintel or arch to carry load around the opening. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Building vertical support may be provided by loadbearing walls or by a column-and-beam framework. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid floor diaphragms can transfer lateral loads to shear walls, braced frames, or rigid frames. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Shear walls, braced frames, and rigid frames can be used singly or in combination for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Rigid frames are useful where braced frames or shear walls would create unwanted barriers, but they are less efficient for lateral stability. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Taller buildings often need rigid frames supplemented by bracing mechanisms such as diagonal bracing or a rigid core. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Building Construction Illustrated (5th Edition): Wood truss loads should be applied at panel points to avoid secondary bending, and bracing or diaphragm action may be needed for lateral wind or seismic forces. Locator: Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415",
+        "Hibbeler Statics 13th Edition: A truss is composed of slender members joined at their endpoints. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Planar trusses are commonly used for roofs and bridges. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Truss analysis assumes loads act at joints and joints are treated as pins. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Under those assumptions, each member acts as a two-force member carrying tension or compression along its axis. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: A simple truss begins with a triangular unit and can be expanded by adding members and joints. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Zero-force members may be identified by joint equilibrium when no external load or support reaction acts at the joint. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: Two non-collinear members at an unloaded joint are zero-force members. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271",
+        "Hibbeler Statics 13th Edition: For three members at an unloaded joint, if two are collinear, the third is a zero-force member. Locator: Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1860-1873, 1885-1905, 1921-1997, 2007-2010, 2025-2031, and 7300-7415"
+        },
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 21217-21290, 21320-21378, 21693-21758, 21825-21921, and 21927-22271"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }

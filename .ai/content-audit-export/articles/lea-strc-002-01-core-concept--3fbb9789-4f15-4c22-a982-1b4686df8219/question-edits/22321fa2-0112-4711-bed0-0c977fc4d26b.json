@@ -1,0 +1,64 @@
+{
+  "question_id": "22321fa2-0112-4711-bed0-0c977fc4d26b",
+  "baseline_hash": "sha256:2a7fa4ba799c12901821f330adfcf07f23e609d7763945ae9af6964a308ca5ea",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Bearing wall system relies on walls to resist both.",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+    "parent_article_slug": "lea-strc-002-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Bearing wall system relies on walls to resist both",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md",
+        "sha256": "sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Bearing wall system relies on walls to resist both",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md",
+        "sha256": "sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What planning advantage does a frame system usually have over a bearing-wall system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bearing walls also allow unlimited openings if they are thin."
+      },
+      {
+        "id": "b",
+        "text": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads."
+      },
+      {
+        "id": "c",
+        "text": "Frames always shorten construction time by themselves."
+      },
+      {
+        "id": "d",
+        "text": "Frames provide thermal insulation as their main structural benefit."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Bearing walls also allow unlimited openings if they are thin. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "b": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads. This stays inside the Batch 141 local source boundary for Bearing wall system relies on walls to resist both.",
+      "c": "Frames always shorten construction time by themselves. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "Frames provide thermal insulation as their main structural benefit. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+      "takeaway": "For Bearing wall system relies on walls to resist both, read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
+    },
+    "explanation": "Nonstructural partitions can be placed more freely because beams and columns carry the primary vertical loads. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md#sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md#sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7"
+  },
+  "batch_question_template_index": 6
+}

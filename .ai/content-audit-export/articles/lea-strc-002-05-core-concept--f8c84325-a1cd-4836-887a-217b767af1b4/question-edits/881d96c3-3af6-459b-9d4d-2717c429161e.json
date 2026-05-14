@@ -1,0 +1,64 @@
+{
+  "question_id": "881d96c3-3af6-459b-9d4d-2717c429161e",
+  "baseline_hash": "sha256:c6656ce6ffd1a42d92918c04c2687c97365cf237fe46e61e21e7dd3a00db7a33",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Truss is a structural system of straight members.",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+    "parent_article_slug": "lea-strc-002-05-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Truss is a structural system of straight members",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+        "sha256": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Truss is a structural system of straight members",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md",
+        "sha256": "sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "How should a Pratt-truss orientation question be handled in this pass?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Invent a diagram that is not in the local source map."
+      },
+      {
+        "id": "b",
+        "text": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium."
+      },
+      {
+        "id": "c",
+        "text": "Claim the pattern is irrelevant to every truss."
+      },
+      {
+        "id": "d",
+        "text": "Use a code table value."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Invent a diagram that is not in the local source map. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "b": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium. This stays inside the Batch 141 local source boundary for Truss is a structural system of straight members.",
+      "c": "Claim the pattern is irrelevant to every truss. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "Use a code table value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+      "takeaway": "For Truss is a structural system of straight members, read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+    },
+    "explanation": "Avoid unsupported pattern recall and answer from checked truss principles: loads at joints, axial members, and equilibrium. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md#sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md#sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f"
+  },
+  "batch_question_template_index": 2
+}

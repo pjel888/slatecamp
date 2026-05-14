@@ -1,0 +1,64 @@
+{
+  "question_id": "1a453b8a-12ad-41ba-8656-a06f8aa75c7a",
+  "baseline_hash": "sha256:37be09ff0865147bdd5c3a05ee0aa305141d4327ef30b4545dee2caa98391086",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Shear wall.",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+    "parent_article_slug": "lea-strc-002-02-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Shear wall",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md",
+        "sha256": "sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Shear wall",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md",
+        "sha256": "sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "If a question asks about a boundary element but this batch lacks a captured boundary-detailing source, what should the answer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path."
+      },
+      {
+        "id": "b",
+        "text": "Invent transverse-reinforcement rules."
+      },
+      {
+        "id": "c",
+        "text": "Quote uncaptured NSCP detailing values."
+      },
+      {
+        "id": "d",
+        "text": "Ignore source boundaries because the term is familiar."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path. This stays inside the Batch 141 local source boundary for Shear wall.",
+      "b": "Invent transverse-reinforcement rules. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "c": "Quote uncaptured NSCP detailing values. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "Ignore source boundaries because the term is familiar. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
+    },
+    "explanation": "Stay at the source-safe level: identify wall-edge detailing as outside this packet and answer only the checked wall/diaphragm load path. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
+  },
+  "batch_question_template_index": 4
+}

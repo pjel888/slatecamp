@@ -1,0 +1,512 @@
+{
+  "batch_id": "source-audited-article-batch-141-local-first",
+  "generated_at": "2026-05-14T01:01:53.831Z",
+  "status": "passed_local_validation_git_handoff_pending",
+  "passed": true,
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "baseline_commit": "a94a600e2",
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/sync-state.json",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs",
+      ".ai/03_plans/blocked-source-recovery prompts/reports from parallel source-recovery lanes"
+    ]
+  },
+  "selection": {
+    "selected_clusters": [
+      {
+        "cluster_id": "lea-strc-002-01-core-concept",
+        "slug": "lea-strc-002-01-core-concept",
+        "title": "Bearing wall system relies on walls to resist both",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_141",
+        "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-002-02-core-concept",
+        "slug": "lea-strc-002-02-core-concept",
+        "title": "Shear wall",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_141",
+        "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-002-03-core-concept",
+        "slug": "lea-strc-002-03-core-concept",
+        "title": "Moment-resisting frame (MRF)",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_141",
+        "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-002-04-core-concept",
+        "slug": "lea-strc-002-04-core-concept",
+        "title": "Bearing wall",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_141",
+        "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-002-05-core-concept",
+        "slug": "lea-strc-002-05-core-concept",
+        "title": "Truss is a structural system of straight members",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_141",
+        "reason": "Next sourceable residual non-prac structural-system bundle after Batch 140; constrained to existing local Building Construction Illustrated and Hibbeler Statics raw/refined source artifacts."
+      }
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-008-02-core-concept",
+        "title": "Articulation of form",
+        "status": "blocked_carried_forward",
+        "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+      },
+      {
+        "cluster_id": "lea-theo-008-03-core-concept",
+        "title": "Transformation of form",
+        "status": "blocked_carried_forward",
+        "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+      },
+      {
+        "cluster_id": "lea-matl-009-02-core-concept",
+        "title": "CSI MasterFormat",
+        "status": "blocked_carried_forward",
+        "reason": "No completed CSI MasterFormat source-recovery report is present, so the exact classification claim scope remains uncaptured locally."
+      },
+      {
+        "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+        "title": "Seismic bracing and earthquake resilience",
+        "status": "blocked_carried_forward",
+        "reason": "No completed seismic utilities recovery report is present, so utilities seismic-bracing claims still lack a safe local refined conversion boundary."
+      },
+      {
+        "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+        "title": "Seismic bracing requirements per NSCP 2015",
+        "status": "blocked_carried_forward",
+        "reason": "The raw NSCP 2015 PDF exists locally, but no completed NSCP-specific refined conversion/recovery report is present for this pass."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Batch 141 skipped the carried-forward theory/materials/utilities blocked residuals because no completed recovery reports were present, then selected the next five sourceable non-prac structural system clusters with local raw/refined BCI and Hibbeler artifacts."
+  },
+  "totals": {
+    "article_count": 5,
+    "linked_question_count": 50,
+    "question_edit_count": 50,
+    "source_artifact_count": 10,
+    "blocked_count": 5
+  },
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+        "slug": "lea-strc-002-01-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+        "slug": "lea-strc-002-02-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+        "slug": "lea-strc-002-03-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+        "slug": "lea-strc-002-04-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+        "slug": "lea-strc-002-05-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+        "slug": "lea-strc-002-01-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+        "slug": "lea-strc-002-02-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+        "slug": "lea-strc-002-03-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+        "slug": "lea-strc-002-04-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+        "slug": "lea-strc-002-05-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "parsed_count": 107,
+    "failures": []
+  },
+  "marker_source_gap_scan": {
+    "passed": true,
+    "scanned_count": 75,
+    "matches": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-01-core-concept.source-capture.md",
+        "expected": "sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2",
+        "actual": "sha256:2ac59144de46a03fc8ed7d4df2a02feda9ee226ad8131be6431379cba958f5b2",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-raw-source-capture:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-raw-source-capture:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-01-core-concept.refined.md",
+        "expected": "sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
+        "actual": "sha256:eb73e70701413c08e08d7fdce6a70cc2ab3ba6cd37119b25d113ca38365c1ab7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-refined-source-map:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-01-core-concept-refined-source-map:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md",
+        "expected": "sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2",
+        "actual": "sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-raw-source-capture:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-raw-source-capture:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md",
+        "expected": "sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
+        "actual": "sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-refined-source-map:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-refined-source-map:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md",
+        "expected": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "actual": "sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-raw-source-capture:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-raw-source-capture:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md",
+        "expected": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "actual": "sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-refined-source-map:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-03-core-concept-refined-source-map:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-04-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-04-core-concept.source-capture.md",
+        "expected": "sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94",
+        "actual": "sha256:bfb2df4365e41bfda6898bbb0289a0eb0b9e47fbb503b8e01f2684f6bd15eb94",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-04-core-concept-raw-source-capture:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-04-core-concept-raw-source-capture:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-04-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-04-core-concept.refined.md",
+        "expected": "sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
+        "actual": "sha256:63e089359f380fb654de353fa2ae94bdb29776b9670cee3db9b831839971cedd",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-04-core-concept-refined-source-map:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-04-core-concept-refined-source-map:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-05-core-concept.source-capture.md",
+        "expected": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671",
+        "actual": "sha256:b6be37782f51f9c7d91fd550ca3070a726879ec27f8f6ee552a8fc3379550671",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-raw-source-capture:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-05-core-concept.refined.md",
+        "expected": "sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+        "actual": "sha256:6fab9ce833f99d64c6b5562732e1270620ef2542595b230a5b71ca8676eba03f",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map:raw:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map:refined:Building Construction Illustrated (5th Edition)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-05-core-concept-refined-source-map:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      }
+    ]
+  },
+  "question_edit_count": {
+    "passed": true,
+    "expected": 50,
+    "actual": 50,
+    "answer_key_changes": 0,
+    "articles": [
+      {
+        "article_id": "3fbb9789-4f15-4c22-a982-1b4686df8219",
+        "slug": "lea-strc-002-01-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+        "slug": "lea-strc-002-02-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
+        "slug": "lea-strc-002-03-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+        "slug": "lea-strc-002-04-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+        "slug": "lea-strc-002-05-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "stale_files": []
+  },
+  "targeted_tests": {
+    "passed": true,
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts"
+  },
+  "scoped_git_diff_check": {
+    "passed": true,
+    "command": "git diff --check -- <batch-141-stage-paths>",
+    "output": ""
+  }
+}

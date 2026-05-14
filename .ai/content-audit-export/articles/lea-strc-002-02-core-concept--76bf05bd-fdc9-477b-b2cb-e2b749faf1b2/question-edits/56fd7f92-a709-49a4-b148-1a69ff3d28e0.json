@@ -1,0 +1,64 @@
+{
+  "question_id": "56fd7f92-a709-49a4-b148-1a69ff3d28e0",
+  "baseline_hash": "sha256:331e45d0afaf91559c355b8d371307ca8f6c574c23235507a1a17fbf096aedd8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-141-local-first: residual local-first rewrite constrained to checked local source artifacts for Shear wall.",
+  "approved_by": "codex-local-first-source-audited-article-batch-141-local-first",
+  "approved_at": "2026-05-14T01:01:53.831Z",
+  "source_audit_support": {
+    "parent_article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+    "parent_article_slug": "lea-strc-002-02-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f",
+    "checked_sources": [
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-raw-source-capture",
+        "label": "Batch 141 raw source capture - Shear wall",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md",
+        "sha256": "sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2"
+      },
+      {
+        "source_id": "batch-141-lea-strc-002-02-core-concept-refined-source-map",
+        "label": "Batch 141 refined source conversion - Shear wall",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md",
+        "sha256": "sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 141 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What does a horizontal diaphragm do in the local source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It only carries paint finishes."
+      },
+      {
+        "id": "b",
+        "text": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames."
+      },
+      {
+        "id": "c",
+        "text": "It prevents all vertical loads from reaching columns."
+      },
+      {
+        "id": "d",
+        "text": "It is always flexible and never rigid."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It only carries paint finishes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "b": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames. This stays inside the Batch 141 local source boundary for Shear wall.",
+      "c": "It prevents all vertical loads from reaching columns. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "d": "It is always flexible and never rigid. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+      "correct": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+      "takeaway": "For Shear wall, read the structural load path first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
+    },
+    "explanation": "It transfers lateral loads to vertical shear walls, braced frames, or rigid frames. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-02-core-concept.source-capture.md#sha256:bdbbac5d9b40d9ade9b30d15151b9c4fc7e8d16aec044d4fa547374aa9a18dc2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-02-core-concept.refined.md#sha256:1a48422d6802629099ea27394812ba9bd4731b60ef87133e1535d813532df62f"
+  },
+  "batch_question_template_index": 6
+}

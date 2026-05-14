@@ -1,30 +1,30 @@
 {
   "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:4efa4a7d5b1c738802713a83c0b8647558350c031dae9236599aa6b65164523f",
+  "linked_questions_hash": "sha256:d8f30f1e7a050c4bfb83a6ff92c181a705a49baed7c545952847a8a77ef6cf49",
   "question_count": 10,
   "questions": [
     {
       "question_id": "2d65e34f-dedd-407a-a89b-1e3389e44e4c",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "In a concrete SMRF, what is the purpose of confining transverse reinforcement in columns?",
+      "text": "What is the source-safe purpose of confinement or connection detailing in a frame question?",
       "options": [
         {
           "id": "a",
-          "text": "To increase the axial strength of the column for gravity loads, ensuring stability under vertical forces"
+          "text": "Quote a transverse reinforcement spacing from memory."
         },
         {
           "id": "b",
-          "text": "To prevent lateral buckling of longitudinal bars and confine concrete, ensuring ductile behavior during inelastic deformation in seismic events"
+          "text": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source."
         },
         {
           "id": "c",
-          "text": "To reduce the cost of reinforcement, optimizing the budget for construction without compromising safety"
+          "text": "Treat detailing as a nonstructural finish."
         },
         {
           "id": "d",
-          "text": "To comply with architectural requirements for appearance, maintaining aesthetic consistency with the overall design"
+          "text": "Say connections do not affect frame behavior."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In SMRF, confining transverse reinforcement (ties, spirals) restrains the concrete core and prevents buckling of longitudinal bars during inelastic deformation. This ensures ductile (safe) failure, critical for SMRF to achieve R = 8.0.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Quote a transverse reinforcement spacing from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "Treat detailing as a nonstructural finish. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Say connections do not affect frame behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 418 (Concrete MRF)",
+      "explanation": "Do not invent detailing rules; answer that frame performance depends on the connection and lateral system captured by the source. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-002-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4d1e3194070d36e16c86180a5a755787ceee35065f3f9f72acd2e6cbce58718e"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:f46c74fd503dc4622574676381856ee1257b60bbfc246a83f853763204512877"
     },
     {
       "question_id": "d0902cc0-0d58-4ac3-89b6-4685716fc74e",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "Why does SMRF require more stringent detailing than OMRF?",
+      "text": "Why is a specially detailed frame conceptually more demanding than an ordinary rigid frame?",
       "options": [
         {
           "id": "a",
-          "text": "SMRF is stronger and must prevent all inelastic deformation, ensuring structural integrity under all conditions"
+          "text": "Because ordinary frames are locally illegal by this source packet."
         },
         {
           "id": "b",
-          "text": "SMRF is designed to undergo controlled inelastic deformation with energy dissipation; stringent detailing ensures ductile (safe) failure modes and confines reinforcement"
+          "text": "Because the connection and member detailing must support the intended lateral behavior, but exact categories require a code source not captured here."
         },
         {
           "id": "c",
-          "text": "SMRF detailing is more expensive, so it requires more details to justify the cost, including additional reinforcement and connections"
+          "text": "Because the source packet gives exact R factors."
         },
         {
           "id": "d",
-          "text": "SMRF and OMRF detailing are identical; the only difference is the R factor, which affects the seismic response"
+          "text": "Because detailing has no effect on lateral behavior."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "SMRF is designed to allow inelastic deformation (large displacements). Stringent detailing (full-penetration welds, confinement reinforcement, plastic hinge details) ensures that when the frame yields, it does so in a controlled, ductile manner without brittle failure.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Because ordinary frames are locally illegal by this source packet. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Because the connection and member detailing must support the intended lateral behavior, but exact categories require a code source not captured here. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "Because the source packet gives exact R factors. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Because detailing has no effect on lateral behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Because the connection and member detailing must support the intended lateral behavior, but exact categories require a code source not captured here. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408, 418",
+      "explanation": "Because the connection and member detailing must support the intended lateral behavior, but exact categories require a code source not captured here. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-002-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:59aa3e29a1ad6ac39b7cc4e9b01fc8649537a1ae1e192277f35956ef8245bbac"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:8a3008cd0101d8de3bac9a6d737c9a7b58fd599cd27375788357c7ee8ba155b7"
     },
     {
       "question_id": "0c30c79b-1f77-4c07-9eb0-6e12929805ab",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "What is the critical design difference between IMRF (R = 5.5) and SMRF (R = 8.0)?",
+      "text": "What is the safe difference between named moment-frame categories in this pass?",
       "options": [
         {
           "id": "a",
-          "text": "IMRF and SMRF are identical; R is the only difference, which affects the seismic response modification factor"
+          "text": "IMRF and SMRF values can be quoted from memory."
         },
         {
           "id": "b",
-          "text": "SMRF requires full-penetration welds at beam-column connections and extensive confinement reinforcement; IMRF connections can be more conventional"
+          "text": "The category labels and R factors are not source-supported here; keep the article to rigid-frame behavior and lateral-stability tradeoffs."
         },
         {
           "id": "c",
-          "text": "IMRF is used only in steel; SMRF is used only in concrete, reflecting material-specific design strategies"
+          "text": "All named frame categories have the same requirements."
         },
         {
           "id": "d",
-          "text": "SMRF is only for very tall buildings; IMRF is for all mid-rise buildings, based on height and structural requirements"
+          "text": "The title alone validates the exact code table."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "SMRF requires extensive seismic detailing: full-penetration welds (steel), plastic hinge zones in beams, and confined transverse reinforcement in concrete columns. IMRF has intermediate detailing with some reinforcement but not the full SMRF package.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "IMRF and SMRF values can be quoted from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "The category labels and R factors are not source-supported here; keep the article to rigid-frame behavior and lateral-stability tradeoffs. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "All named frame categories have the same requirements. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "The title alone validates the exact code table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "The category labels and R factors are not source-supported here; keep the article to rigid-frame behavior and lateral-stability tradeoffs. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408, 418",
+      "explanation": "The category labels and R factors are not source-supported here; keep the article to rigid-frame behavior and lateral-stability tradeoffs. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-002-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6db171a7044f478134be0f56cb4cfc200a7dbbaee2b88d45a026817012ff22a1"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:a50ed67cce9cb0f40c73800551f2b0dbbed5fe42a6fe0e3b8e191f531363f932"
     },
     {
       "question_id": "f58b8ffc-7feb-4e41-a632-e7bc957e2e94",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "A designer proposes using an OMRF (R = 3.5) for a 6-story residential building in Seismic Zone 2. What is the primary code concern with this proposal?",
+      "text": "A designer proposes a rigid frame as the main lateral system. What source-safe concern should be checked?",
       "options": [
         {
           "id": "a",
-          "text": "OMRF is too stiff and will damage the building foundation, leading to potential structural failures"
+          "text": "A fixed R factor from an uncaptured table."
         },
         {
           "id": "b",
-          "text": "OMRF has limited ductility and detailing; it does not meet NSCP requirements for Zone 2, which mandate SMRF for moment-resisting frame systems"
+          "text": "Rigid frames can preserve open space but are less efficient laterally and may need bracing or a rigid core as height increases."
         },
         {
           "id": "c",
-          "text": "OMRF is only allowed in buildings shorter than 4 stories, according to current building codes"
+          "text": "A rule that rigid frames cannot resist any lateral load."
         },
         {
           "id": "d",
-          "text": "OMRF would be acceptable if the building owner accepts liability, transferring risk from the designer"
+          "text": "A claim that frames require no lateral analysis."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP explicitly requires SMRF (R = 8.0) for moment-resisting frame systems in Seismic Zone 2. OMRF (R = 3.5) lacks the stringent detailing and ductility needed for safe performance in the most severe seismic zone. Accepting OMRF would violate building code.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A fixed R factor from an uncaptured table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Rigid frames can preserve open space but are less efficient laterally and may need bracing or a rigid core as height increases. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "A rule that rigid frames cannot resist any lateral load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "A claim that frames require no lateral analysis. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Rigid frames can preserve open space but are less efficient laterally and may need bracing or a rigid core as height increases. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408, 418; Section 202 (Seismic Zone 2)",
+      "explanation": "Rigid frames can preserve open space but are less efficient laterally and may need bracing or a rigid core as height increases. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-002-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4bbd53013e4de5713d279a7c29b0765c3d69e4b85487ebe3acf34b1b7353b44d"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:a8f2fcfe8ba7ecfd8a586ffdabc38326a70c0b70cf38ce4a991afd8f08e380a0"
     },
     {
       "question_id": "15f6a22b-ffba-487c-9b5c-ae66483bbfd0",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "Which moment-resisting frame type is appropriate for Seismic Zone 2 in the Philippines?",
+      "text": "Which moment-frame type is appropriate for a Philippine seismic zone according to this packet?",
       "options": [
         {
           "id": "a",
-          "text": "OMRF (R = 3.5)"
+          "text": "Ordinary moment frame in every case."
         },
         {
           "id": "b",
-          "text": "IMRF (R = 5.5)"
+          "text": "Intermediate moment frame in every case."
         },
         {
           "id": "c",
-          "text": "SMRF (R = 8.0)"
+          "text": "The packet does not support choosing a code category; it supports only the general rigid-frame concept and need for captured code before category selection."
         },
         {
           "id": "d",
-          "text": "Any of the three, depending on building height"
+          "text": "Special moment frame in every case."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Seismic Zone 2 is a high-seismic-hazard zone in the Philippines. SMRF is required by NSCP for moment-resisting frame systems in Zone 2 (and Zones 3 and 4). Zone 4 is the most severe seismic zone.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Ordinary moment frame in every case. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Intermediate moment frame in every case. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "The packet does not support choosing a code category; it supports only the general rigid-frame concept and need for captured code before category selection. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "d": "Special moment frame in every case. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "The packet does not support choosing a code category; it supports only the general rigid-frame concept and need for captured code before category selection. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408, 418; Section 202 (Zone 2 definition)",
+      "explanation": "The packet does not support choosing a code category; it supports only the general rigid-frame concept and need for captured code before category selection. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-002-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9862af15f3b8da3821b3b298e28f87d1a0810f5398defbf1f23c7c7ee2ce04ae"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:4532cb0152925e5e355dfd50934e9c08fde2acc4f91421182cd8cfdf031f84f1"
     },
     {
       "question_id": "cd5bca5b-903c-49a6-8fbe-306aede1180d",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "What does the R factor represent in seismic frame design?",
+      "text": "What can be said safely about an R factor in this Batch 141 boundary?",
       "options": [
         {
           "id": "a",
-          "text": "A safety factor that multiplies the design force, ensuring structural integrity under seismic loads"
+          "text": "It is always 8.0 for every frame."
         },
         {
           "id": "b",
-          "text": "A reduction factor that allows the design force to be reduced from elastic demand because the frame can deform inelastically and dissipate energy"
+          "text": "It is excluded unless a local refined code source is captured; do not use an R factor to answer these rewritten questions."
         },
         {
           "id": "c",
-          "text": "A factor that increases the strength of the frame, providing additional support during seismic events"
+          "text": "It is a wall thickness value."
         },
         {
           "id": "d",
-          "text": "A factor that measures the rigidity of beam-column connections, which is crucial for maintaining structural stability"
+          "text": "It replaces the need for lateral stability."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The R factor is a **reduction** factor. Higher R means the design force can be smaller (divided by R) because the structure is allowed to yield and dissipate energy through inelastic deformation. R reflects ductility, not strength or safety.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It is always 8.0 for every frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "It is excluded unless a local refined code source is captured; do not use an R factor to answer these rewritten questions. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "It is a wall thickness value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "It replaces the need for lateral stability. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "It is excluded unless a local refined code source is captured; do not use an R factor to answer these rewritten questions. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "ASCE 7 Section 12.2; NSCP Seismic Design provisions",
+      "explanation": "It is excluded unless a local refined code source is captured; do not use an R factor to answer these rewritten questions. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-002-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:104d010ce8cfcebee62ffd6146646890f3f2f4acff517296c577d39f559b554c"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:471e6d1865afec01bc684f8de7b45f35a7c54f17148453ebfd3b6bb342df543f"
     },
     {
       "question_id": "1d26ad96-457e-4b01-9b44-4e798537169c",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "What is the seismic response modification factor (R factor) for a Special Moment-Resisting Frame (SMRF)?",
+      "text": "What should replace a question asking for the exact SMRF R factor?",
       "options": [
         {
           "id": "a",
-          "text": "R = 3.5"
+          "text": "A memorized value with no local locator."
         },
         {
           "id": "b",
-          "text": "R = 5.5"
+          "text": "A claim that R factors do not exist."
         },
         {
           "id": "c",
-          "text": "R = 8.0"
+          "text": "A source-boundary answer: exact R factors are not asserted in this local packet."
         },
         {
           "id": "d",
-          "text": "R = 10.0"
+          "text": "A wall-opening rule."
         }
       ],
       "correct_option_id": "c",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "SMRF (Special Moment-Resisting Frame) has R = 8.0 per NSCP Section 408/418 and ASCE 7. This high R reflects extensive seismic detailing and ductility.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A memorized value with no local locator. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "A claim that R factors do not exist. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "c": "A source-boundary answer: exact R factors are not asserted in this local packet. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "d": "A wall-opening rule. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "A source-boundary answer: exact R factors are not asserted in this local packet. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408 (Steel MRF) or Section 418 (Concrete MRF); ASCE 7 Table 12.2-1",
+      "explanation": "A source-boundary answer: exact R factors are not asserted in this local packet. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-002-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:aab5b23aa29178c45fe73859ec1d26c5925436a0468cbf5d54ff301a2b409182"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:f2ab81bdd7600cb200cf8faa7b56eb0fd081527fdaf4f35aefc39c42162bb482"
     },
     {
       "question_id": "cc07a1a8-b437-48bc-aaa9-c05dbbbc142b",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "How do full-penetration welds at beam-column connections in SMRF contribute to the frame's R factor of 8.0?",
+      "text": "How should weld or connection claims be handled here?",
       "options": [
         {
           "id": "a",
-          "text": "Full-penetration welds are cheaper than bolted connections, which can be a consideration in cost-sensitive projects but not in structural performance"
+          "text": "Quote full-penetration weld rules from memory."
         },
         {
           "id": "b",
-          "text": "Full-penetration welds ensure moment transfer without early fracture, enabling the frame to undergo controlled inelastic deformation and energy dissipation, justifying R = 8.0"
+          "text": "Keep them general: rigid frame behavior depends on joints capable of transferring moment, while exact weld requirements need a captured design source."
         },
         {
           "id": "c",
-          "text": "Full-penetration welds increase the frame stiffness, which is a factor in overall structural integrity but not directly related to the R factor"
+          "text": "Say all frame joints are pinned."
         },
         {
           "id": "d",
-          "text": "Full-penetration welds are only aesthetic and do not affect structural performance, which is a misconception in structural engineering"
+          "text": "Treat welds as unrelated to lateral behavior."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Full-penetration welds create a robust connection that can transmit moment and rotate inelastically without fracturing. This ductility is essential—SMRF R = 8.0 depends on the frame yielding in a controlled manner. Weak connections would fail prematurely, voiding the high R assumption.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Quote full-penetration weld rules from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Keep them general: rigid frame behavior depends on joints capable of transferring moment, while exact weld requirements need a captured design source. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "Say all frame joints are pinned. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Treat welds as unrelated to lateral behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Keep them general: rigid frame behavior depends on joints capable of transferring moment, while exact weld requirements need a captured design source. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408 (Steel MRF)",
+      "explanation": "Keep them general: rigid frame behavior depends on joints capable of transferring moment, while exact weld requirements need a captured design source. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-002-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:779914878d23bbfd927065e4e7b1be393481d3c5586118964446e3c4616d5795"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:b4bc1b86fecf2c838dabd9a9d0058bec4b7e00b8cf213fe9edf82fceb987a798"
     },
     {
       "question_id": "7c7a5a3e-b25b-4358-af5c-017d120da2e2",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "Given that a moment frame in a Seismic Zone 2 building is designed with R = 8.0, what design assumption must be valid for the building to perform safely?",
+      "text": "What assumption must be valid for a rigid frame to act as a lateral system?",
       "options": [
         {
           "id": "a",
-          "text": "The frame will remain elastic (no yielding) under the design earthquake, maintaining full structural integrity without deformation"
+          "text": "The floor plan must have no columns."
         },
         {
           "id": "b",
-          "text": "The frame will yield and undergo inelastic deformation in a controlled, ductile manner, dissipating energy without brittle failure or collapse"
+          "text": "Its joints and members must provide the intended moment transfer and stability path."
         },
         {
           "id": "c",
-          "text": "The frame will not deform at all under seismic loading because the R factor guarantees complete rigidity"
+          "text": "All walls must be nonbearing."
         },
         {
           "id": "d",
-          "text": "The frame strength will always exceed lateral forces so that no energy dissipation mechanism is required"
+          "text": "The R factor can be guessed."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "R = 8.0 inherently assumes the frame **will** yield and deform inelastically, but in a ductile manner. The frame is designed to absorb seismic energy through plastic deformation, not to remain elastic. If the frame cannot yield safely (due to poor detailing), R = 8.0 is not valid.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The floor plan must have no columns. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Its joints and members must provide the intended moment transfer and stability path. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "All walls must be nonbearing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "The R factor can be guessed. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Its joints and members must provide the intended moment transfer and stability path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408, 418; ASCE 7",
+      "explanation": "Its joints and members must provide the intended moment transfer and stability path. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-002-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9c91221b434b92f8cdbf90fe5503848447d72b53b5abfc1aaccb65265de8eceb"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:5f49e1fd5ae1e31f87a1017853a555dc0061254a3a9ae0fb68ac7e1886a65c6a"
     },
     {
       "question_id": "d3043c2b-5fdd-49f4-989a-8cabbcefb6cf",
       "article_id": "437762da-b636-4be1-bfed-bb47ec6c0cd3",
       "topic_id": "ee5ecaf3-faa8-4b08-a1f5-240724a2f556",
-      "text": "An 8-story office building in Seismic Zone 2 uses a moment-resisting frame system. What is the maximum R factor allowed, and what does this permit the designer to do?",
+      "text": "What is the safest answer to a question asking for maximum R factor and force reduction?",
       "options": [
         {
           "id": "a",
-          "text": "R = 5.5; design forces can be reduced to 1/5.5 of the elastic demand, which is typical for moderate seismic zones"
+          "text": "Use the largest remembered number."
         },
         {
           "id": "b",
-          "text": "R = 8.0; SMRF detailing is required, and design forces can be reduced to 1/8 of the elastic demand"
+          "text": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction."
         },
         {
           "id": "c",
-          "text": "R = 3.5; OMRF is always used regardless of zone, which simplifies design considerations"
+          "text": "Use any value because force reduction is decorative."
         },
         {
           "id": "d",
-          "text": "R = 10.0 for tall buildings in Zone 2, allowing for significant reduction in design forces"
+          "text": "Use a bearing-wall threshold instead."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Zone 2 requires SMRF with R = 8.0. This means design forces are reduced to 1/8 of the elastic seismic demand, provided the frame meets SMRF detailing requirements (full-penetration welds, confined reinforcement, controlled plastic hinges).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Use the largest remembered number. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "b": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction. This stays inside the Batch 141 local source boundary for Moment-resisting frame (MRF).",
+        "c": "Use any value because force reduction is decorative. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "d": "Use a bearing-wall threshold instead. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 141 local source boundary.",
+        "correct": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+        "takeaway": "For Moment-resisting frame (MRF), read the structural load path first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f"
       },
-      "explanation": null,
-      "code_citation": "NSCP Section 408, 418; ASCE 7",
+      "explanation": "Do not answer with an uncaptured code value; state that the current source boundary supports only rigid-frame behavior, not code-table force reduction. Supported by the Batch 141 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-141/lea-strc-002-03-core-concept.source-capture.md#sha256:5fd9a8793313b1d2cf7140854afecb0b66ec94ebeada654b3b0689c8e45315cc; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-141/lea-strc-002-03-core-concept.refined.md#sha256:f43bf51f4a10933a526011c0ef0ba6eeabccc824a502aa45d52a4d5a29bc1e4f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-002-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:490f6a85955f0eb490af05c0fc87571aa439f33580bcb588503da1f9b561e371"
+      "updated_at": "2026-05-14T01:01:53.831Z",
+      "content_hash": "sha256:fb13160adeb1b96430879c385993f59febfd1b8e88389f5584badc024f9b9ef5"
     }
   ]
 }
