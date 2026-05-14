@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "0913e1c6-52f4-4967-b941-6afedcdabc3e",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:e50280e9782c8394e66579fba27e73422a4b4c8f08ca36fa0298297a06e6e704",
+  "after_hash": "sha256:643071f0c4f937979e080eead3f7f43e10eaa768c5f2f464b2f333119589c4b5",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "A random field bend with no extension. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "A 135-degree bend with the required extension. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "A straight bar with no anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "A paint mark at the bar end. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "A 135-degree bend with the required extension. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

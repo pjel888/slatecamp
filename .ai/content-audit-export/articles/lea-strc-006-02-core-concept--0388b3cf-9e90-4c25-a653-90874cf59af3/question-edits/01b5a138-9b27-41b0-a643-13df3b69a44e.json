@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "01b5a138-9b27-41b0-a643-13df3b69a44e",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:69bce5e5a54e9a7c356d1ff82d39439250c778232f6ec3bdee1d0942e7296870",
+  "after_hash": "sha256:969b946699a5b76f6794910100ce6d02bdb3c6ccd84cf458ad4846b09b755b21",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "To reduce concrete cover to zero. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "To anchor reinforcement through a specified bend and extension. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "To remove clear spacing requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "To replace all stirrups in beams. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "To anchor reinforcement through a specified bend and extension. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "cluster_id": "lea-strc-005-03",
+  "question_id": "7398985d-e3a6-4e52-b62a-96088a4e37a0",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:a52dca1bbf80efd8b580f29964edd4b261f046a792cf63281f8995326d748431",
+  "after_hash": "sha256:13483ae78bcf51f075fa54db774eddd876c9da845fa3ff2b75cf4fc934b9d182",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "mechanics-allowable",
+    "bsi-design"
+  ],
+  "rationale": {
+    "a": "Because allowable stress checks never consider safety. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Deflection, vibration, buckling, stability, or connection behavior may still govern. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+    "c": "Because service load values are always illegal. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Because section properties cannot affect stress. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Deflection, vibration, buckling, stability, or connection behavior may still govern. Supported by mechanics-allowable; bsi-design.",
+    "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "mechanics-allowable; bsi-design",
+    "checked_sources": [
+      "mechanics-allowable",
+      "bsi-design",
+      "bsi-bending"
+    ]
+  }
+}

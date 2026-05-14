@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "31b56717-88a8-4074-98ba-d0f6c4953f46",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:0308264d8c2d0784d4f38d4a419fef6099619d023189f4c1dbc70446fe6dfd9a",
+  "after_hash": "sha256:4e074ff2303f31ab46c2c27a59f717494865ad85b48853bbedae899708bb6c53",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "The load path becomes unnecessary. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Concrete may not consolidate properly around the bars. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "Cover automatically increases. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "The aggregate becomes smaller by itself. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Concrete may not consolidate properly around the bars. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}

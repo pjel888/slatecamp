@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "e4998612-b0ea-4188-9cd5-e236b11b4800",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:aa6408d44ce89c91755cb8d10278ebb0f294f4e3124cfc7f2eaf35369176855e",
+  "after_hash": "sha256:d80385112c976c23ca48daf7acd1f0050eed3177ba7c740e39d49e298eda891d",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "Only the title block size. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Proper concrete placement, consolidation, cover, and bond. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "Only the drawing border lineweight. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Only the north arrow. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Proper concrete placement, consolidation, cover, and bond. Supported by detailing-concrete.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

@@ -1,30 +1,30 @@
 {
   "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:63dc30de334df64797bd098cfb286fef7a38433e1314ca4d0d1d296550d6f2f3",
+  "linked_questions_hash": "sha256:57140e70458b59fab1eb762f74f70773a08b6eb6616982ecaf1a89a507c96973",
   "question_count": 10,
   "questions": [
     {
       "question_id": "8a7e1f04-76b5-41c5-9c43-dc9e74d5c3fb",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "The concrete crushing strain in reinforced concrete design is defined as:",
+      "text": "What happens at the neutral axis of a member in bending?",
       "options": [
         {
           "id": "a",
-          "text": "0.001 (1 part per thousand)"
+          "text": "All shear force disappears from the structure."
         },
         {
           "id": "b",
-          "text": "0.003 (3 parts per thousand)"
+          "text": "Bending stress changes from compression to tension at that reference location."
         },
         {
           "id": "c",
-          "text": "0.0021 (2.1 parts per thousand)"
+          "text": "The beam no longer needs reinforcement."
         },
         {
           "id": "d",
-          "text": "0.010 (10 parts per thousand)"
+          "text": "Concrete cover becomes zero."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The ultimate compressive strain of concrete is ε_u = 0.003 (3 parts per thousand). This is the strain at which concrete is assumed to crush in design calculations. This value is fixed and is used across all reinforced concrete design standards (PNSC, ACI 318).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All shear force disappears from the structure. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Bending stress changes from compression to tension at that reference location. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "The beam no longer needs reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Concrete cover becomes zero. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Bending stress changes from compression to tension at that reference location. Supported by bsi-bending.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-bending",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 3.2",
+      "explanation": "Bending stress changes from compression to tension at that reference location. Supported by the Batch 144 local source boundary: bsi-bending.",
+      "code_citation": "bsi-bending",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +58,36 @@
       "model_id": "ALE-STRC-006-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e5411cb944912f776d9952bc1182220799496a5484873be274135e67cca18494"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:5f233552761c21fb9e7f44ab82cbc6c30a559516ecd9596a33eccac3fcd09b03",
+      "source_ids": [
+        "bsi-bending"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "4d7e99ff-b57c-4bba-8571-d25439ec21fa",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "A balanced reinforced concrete section is defined as the condition where:",
+      "text": "Where are bending stresses greatest in a beam section?",
       "options": [
         {
           "id": "a",
-          "text": "The reinforcement ratio equals the percentage of concrete area, ensuring equal stress distribution"
+          "text": "Only at the exact neutral axis."
         },
         {
           "id": "b",
-          "text": "The steel and concrete reach their ultimate strains (0.0021 and 0.003, respectively) at the same time"
+          "text": "At the fibers farthest from the neutral axis."
         },
         {
           "id": "c",
-          "text": "The bending moment is equally distributed between steel and concrete, maintaining structural equilibrium"
+          "text": "Only at the sheet title."
         },
         {
           "id": "d",
-          "text": "The section contains equal amounts (by weight) of steel and concrete, which is a common misconception"
+          "text": "Uniformly at every point in all sections."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +96,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A balanced section is the transition case where the steel reaches its yield strain (ε_s = 0.0021 for Grade 60) exactly as the concrete reaches its crushing strain (ε_c = 0.003). At this point, both materials are at their limits simultaneously. The balanced reinforcement ratio (ρ_b) is a specific calculated value for each concrete grade and steel grade combination.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only at the exact neutral axis. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "At the fibers farthest from the neutral axis. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "Only at the sheet title. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Uniformly at every point in all sections. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "At the fibers farthest from the neutral axis. Supported by bsi-bending.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-bending",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "explanation": "At the fibers farthest from the neutral axis. Supported by the Batch 144 local source boundary: bsi-bending.",
+      "code_citation": "bsi-bending",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +121,36 @@
       "model_id": "ALE-STRC-006-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:845edb3a1cfe2fc1de3720bb2abe732f13e7ba89e528451ec01ba9ae26bff541"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:a154e309f31d10be0cc90fee4c5f81391a7a709e5a1565143c5b3dce8cdd51e6",
+      "source_ids": [
+        "bsi-bending"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "32e6ba83-baa0-4058-bd03-d1ba4341b1f9",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "A design engineer calculates that a beam requires 4,500 mm² of longitudinal reinforcement. The balanced reinforcement area for this section is 3,600 mm². By comparing actual to balanced, the designer can infer:",
+      "text": "Why is tension reinforcement placed in reinforced concrete flexural members?",
       "options": [
         {
           "id": "a",
-          "text": "The beam is balanced and optimally designed"
+          "text": "To remove all compression from the section."
         },
         {
           "id": "b",
-          "text": "The beam is underreinforced and will fail ductilely"
+          "text": "To replace concrete cover."
         },
         {
           "id": "c",
-          "text": "The beam is overreinforced and will fail suddenly"
+          "text": "To resist tensile force and help control cracking where concrete is weak in tension."
         },
         {
           "id": "d",
-          "text": "Cannot determine without knowing the concrete strength and bar size"
+          "text": "To make support anchorage unnecessary."
         }
       ],
       "correct_option_id": "c",
@@ -133,14 +159,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "If the actual reinforcement (4,500 mm²) exceeds the balanced reinforcement (3,600 mm²), the section has more steel than the balanced point. This means the concrete will reach crushing strain (0.003) before the steel reaches yield strain. The section is overreinforced and will fail in a brittle manner (concrete crushes first).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "To remove all compression from the section. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "To replace concrete cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "c": "To resist tensile force and help control cracking where concrete is weak in tension. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "d": "To make support anchorage unnecessary. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "To resist tensile force and help control cracking where concrete is weak in tension. Supported by bsi-bending; fundamentals-strength.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-bending; fundamentals-strength",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "explanation": "To resist tensile force and help control cracking where concrete is weak in tension. Supported by the Batch 144 local source boundary: bsi-bending; fundamentals-strength.",
+      "code_citation": "bsi-bending; fundamentals-strength",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +184,37 @@
       "model_id": "ALE-STRC-006-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3e0c1285156cfcb7255346d7efe916ebbbd679dcbb608a04a9d7a26b0aed40bf"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:f699efe06f9e6e0fde97e1e1fa7a32a3ad365ff6153d44c457e99111f05e6592",
+      "source_ids": [
+        "bsi-bending",
+        "fundamentals-strength"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "adf18fe4-61e2-403c-9cfb-cb6aaf9b903a",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "An underreinforced concrete beam section is characterized by:",
+      "text": "What does ductility contribute to flexural behavior?",
       "options": [
         {
           "id": "a",
-          "text": "The concrete reaches its crushing strain (0.003) before the steel reaches its yield strain, indicating a brittle failure mode"
+          "text": "A reason to ignore load paths."
         },
         {
           "id": "b",
-          "text": "The steel reaches its yield strain (≈0.0021) before the concrete reaches its crushing strain (0.003)"
+          "text": "Deformation capacity and warning before brittle failure."
         },
         {
           "id": "c",
-          "text": "Both steel and concrete reach their ultimate strains simultaneously, which is not typical for underreinforced sections"
+          "text": "A guarantee that detailing is unnecessary."
         },
         {
           "id": "d",
-          "text": "The reinforcement ratio is below the minimum allowed by code, leading to potential structural inadequacy"
+          "text": "A replacement for reinforcement anchorage."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +223,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In an underreinforced section, the steel yields first (at ε_s ≈ 0.0021), allowing plastic deformation and large deflection. Only after steel yields does the concrete continue to strain and eventually crush (at ε_c = 0.003). This sequence provides visible warning (large deflection) before failure—a ductile behavior preferred in code design.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A reason to ignore load paths. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Deformation capacity and warning before brittle failure. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "A guarantee that detailing is unnecessary. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "A replacement for reinforcement anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Deformation capacity and warning before brittle failure. Supported by bsi-design; detailing-flexural.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-design; detailing-flexural",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10",
+      "explanation": "Deformation capacity and warning before brittle failure. Supported by the Batch 144 local source boundary: bsi-design; detailing-flexural.",
+      "code_citation": "bsi-design; detailing-flexural",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -201,30 +248,37 @@
       "model_id": "ALE-STRC-006-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:57b8d2747f35eb287be8f64d58fc3d824d15184fe215e366a0befab8f3253c73"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:46962dc03dee58ec993e134a0140bc719bd239845d5c6986f79758211babf7b6",
+      "source_ids": [
+        "bsi-design",
+        "detailing-flexural"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "f71fc536-952c-4314-9c74-c16ce53cf754",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "In a detailed strength design analysis, an engineer finds that for a critical high-rise column in a seismic region, the design requires an overreinforced section to meet the required axial load and moment. The engineer proposes to use this overreinforced design to save space and reduce concrete size. What should the structural designer do?",
+      "text": "Why are lap splice restrictions important near critical regions?",
       "options": [
         {
           "id": "a",
-          "text": "Approve the design because the strength requirement is met and overreinforced sections carry higher loads, which can be beneficial in certain scenarios"
+          "text": "Splices are only architectural symbols."
         },
         {
           "id": "b",
-          "text": "Reject the overreinforced design and redesign with a larger section or concrete strength to achieve underreinforced behavior, even if it means more material. Ductility and seismic safety take precedence over cost savings."
+          "text": "Splice location can affect continuity and ductile behavior where demand is high."
         },
         {
           "id": "c",
-          "text": "Use the overreinforced design but add special spiraling to improve ductility, ensuring that the structure can withstand seismic forces"
+          "text": "Splices remove all need for hoops."
         },
         {
           "id": "d",
-          "text": "Accept the design but require more inspection and testing to ensure it meets quality standards, particularly in high-risk seismic areas"
+          "text": "Splice location does not matter in any beam."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +287,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In seismic design, ductility is non-negotiable. Code requirements and good engineering practice mandate underreinforced or balanced behavior to ensure the structure can absorb earthquake energy and warn occupants. An overreinforced section violates this principle, regardless of load-carrying capacity. The design must be revised to achieve ductile behavior, even if it requires increasing the member size or concrete strength.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Splices are only architectural symbols. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Splice location can affect continuity and ductile behavior where demand is high. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "Splices remove all need for hoops. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Splice location does not matter in any beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Splice location can affect continuity and ductile behavior where demand is high. Supported by detailing-flexural.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-flexural",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10; Seismic Design Principles",
+      "explanation": "Splice location can affect continuity and ductile behavior where demand is high. Supported by the Batch 144 local source boundary: detailing-flexural.",
+      "code_citation": "detailing-flexural",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +312,36 @@
       "model_id": "ALE-STRC-006-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b592458bd2eed52e9e6c512adf213c6308053e780d1ff43e626da5d06564c0b1"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:75d1840236ac602d9f093ca08a545a3f29576d29cb464f60b1e0a19c6057e312",
+      "source_ids": [
+        "detailing-flexural"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "9ebeb33b-0b42-4328-8351-cd32b3962c01",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "A reinforced concrete T-beam is analyzed and the calculated steel strain at ultimate is 0.0018 (1.8 parts per thousand), which is less than the Grade 60 yield strain of 0.0021. The section is:",
+      "text": "What do hoops and closed ties support in ductile detailing?",
       "options": [
         {
           "id": "a",
-          "text": "Underreinforced, and will fail in a ductile manner, allowing for significant deformation before failure"
+          "text": "Only wall paint layout."
         },
         {
           "id": "b",
-          "text": "Overreinforced, and will fail in a brittle manner when concrete crushes"
+          "text": "Confinement, shear detailing, and restraint of reinforcement near critical regions."
         },
         {
           "id": "c",
-          "text": "Balanced, because the steel strain is close to 0.0021, indicating a proportionate failure mode between steel and concrete"
+          "text": "Only the ceiling finish schedule."
         },
         {
           "id": "d",
-          "text": "Cannot be classified without knowing the concrete strain, as both steel and concrete properties are crucial for accurate assessment"
+          "text": "Only the room naming convention."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +350,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "If the steel strain (0.0018) is less than the yield strain (0.0021) at ultimate, the concrete has reached crushing strain (0.003) before the steel yields. This is the definition of overreinforced: concrete crushes first, with no plastic deformation in the steel. The section will fail suddenly and brittle.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only wall paint layout. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Confinement, shear detailing, and restraint of reinforcement near critical regions. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "Only the ceiling finish schedule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Only the room naming convention. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Confinement, shear detailing, and restraint of reinforcement near critical regions. Supported by detailing-flexural.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-flexural",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "explanation": "Confinement, shear detailing, and restraint of reinforcement near critical regions. Supported by the Batch 144 local source boundary: detailing-flexural.",
+      "code_citation": "detailing-flexural",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +375,36 @@
       "model_id": "ALE-STRC-006-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:73ef5695d512b0dcf282e631b28161d3f40363aaaf797e5597420fac66278dc0"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:c6ffe5ab6ed6b75e3bcbfdf6993a7f342ee4af4269913655bde4011ad9e523d2",
+      "source_ids": [
+        "detailing-flexural"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "2c357b48-3367-4292-9263-3ef24985542d",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "An overreinforced concrete beam section fails in a brittle manner because:",
+      "text": "Which review is incomplete for a garage beam over a wide opening?",
       "options": [
         {
           "id": "a",
-          "text": "The excessive reinforcement reduces concrete strength, leading to premature failure without warning"
+          "text": "Tracing the wall load to supports."
         },
         {
           "id": "b",
-          "text": "The concrete crushes before the steel yields, providing no plastic deformation or visible warning"
+          "text": "Checking only midspan steel area while ignoring anchorage, supports, confinement, and load path."
         },
         {
           "id": "c",
-          "text": "The beam is too stiff and cannot accommodate environmental movements, which can lead to unexpected cracking"
+          "text": "Checking tension reinforcement location."
         },
         {
           "id": "d",
-          "text": "Excessive reinforcement causes early bond failure between steel and concrete, compromising structural integrity"
+          "text": "Reviewing stirrup and hoop detailing near supports."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +413,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In an overreinforced section, the concrete strain reaches 0.003 (crushing) while the steel strain is still below 0.0021 (yield). The steel is still in the elastic range when concrete suddenly crushes. There is no plastic deformation, no visible deflection warning, and no time for evacuation or repair. Failure is sudden and brittle—undesirable.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Tracing the wall load to supports. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Checking only midspan steel area while ignoring anchorage, supports, confinement, and load path. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "Checking tension reinforcement location. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Reviewing stirrup and hoop detailing near supports. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Checking only midspan steel area while ignoring anchorage, supports, confinement, and load path. Supported by bsi-bending; detailing-flexural.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-bending; detailing-flexural",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "explanation": "Checking only midspan steel area while ignoring anchorage, supports, confinement, and load path. Supported by the Batch 144 local source boundary: bsi-bending; detailing-flexural.",
+      "code_citation": "bsi-bending; detailing-flexural",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +438,37 @@
       "model_id": "ALE-STRC-006-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9a3f40db22ed3a55f76b945303f5436b1b6092b8b2c22c3991ae684d45a99a45"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:09fea3a49e4359bb98362ba442790b6dde67e4dff92c2ac1eb93688295ff70c5",
+      "source_ids": [
+        "bsi-bending",
+        "detailing-flexural"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "652cfeb6-9fe2-423d-ab06-9b9091f242e6",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "Why are underreinforced and balanced sections preferred in seismic design over overreinforced sections?",
+      "text": "Why should an exam answer avoid unsupported exact stress-block constants?",
       "options": [
         {
           "id": "a",
-          "text": "They use less reinforcement, reducing cost, which is beneficial for budget-conscious projects."
+          "text": "Stress-block constants are never used in reinforced concrete."
         },
         {
           "id": "b",
-          "text": "They are easier to construct and require no special inspection, simplifying the construction process."
+          "text": "Neutral axis behavior is unrelated to flexure."
         },
         {
           "id": "c",
-          "text": "They provide ductility (large deformation capacity before failure) and visible warning of distress, allowing energy dissipation and time for evacuation"
+          "text": "Exact constants must come from the applicable code or captured source table."
         },
         {
           "id": "d",
-          "text": "They have higher ultimate strength, which is often misunderstood as the primary factor in seismic design."
+          "text": "Tension reinforcement replaces all code rules."
         }
       ],
       "correct_option_id": "c",
@@ -383,14 +477,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In seismic design, structures must absorb earthquake energy through controlled deformation without sudden collapse. Underreinforced and balanced sections fail in a ductile manner (steel yields first, concrete continues to strain), providing large deformations, visible cracking, and time for occupants to react. Overreinforced sections fail suddenly (concrete crushes, no warning) and are dangerous in earthquakes.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Stress-block constants are never used in reinforced concrete. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Neutral axis behavior is unrelated to flexure. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "c": "Exact constants must come from the applicable code or captured source table. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "d": "Tension reinforcement replaces all code rules. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Exact constants must come from the applicable code or captured source table. Supported by detailing-flexural; bsi-bending.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-flexural; bsi-bending",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10",
+      "explanation": "Exact constants must come from the applicable code or captured source table. Supported by the Batch 144 local source boundary: detailing-flexural; bsi-bending.",
+      "code_citation": "detailing-flexural; bsi-bending",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +502,37 @@
       "model_id": "ALE-STRC-006-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ed28583f1de9889ffda385ec49c4ffd1a7c9eeb14391e16d3afb4a3325c246b2"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:145421e3fca65ae9145bed29a24d8f46671fe7fc203bb34a4db4e83c96173bd6",
+      "source_ids": [
+        "detailing-flexural",
+        "bsi-bending"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "41b435a7-37af-4095-9116-0d3af76b423d",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "During a pushover test of a reinforced concrete frame structure in a high-rise building in Manila, the corner column shows small cracks at low load levels but continues to carry load with large deflections until failure. A similar column nearby fails suddenly at a slightly higher load with no visible cracking prior to failure. Based on these observations, what can be inferred about the reinforcement in each column?",
+      "text": "What is detail continuity in reinforced concrete flexure?",
       "options": [
         {
           "id": "a",
-          "text": "Both columns are underreinforced; the difference is due to concrete quality and not reinforcement"
+          "text": "A decorative line style in the drawing."
         },
         {
           "id": "b",
-          "text": "The first column is likely underreinforced (ductile); the second column is likely overreinforced (brittle) and poses greater risk in earthquakes"
+          "text": "Anchorage, splices, ties, hoops, and load path working together across the member and supports."
         },
         {
           "id": "c",
-          "text": "The second column is stronger because it carries more load before failure, indicating superior material properties"
+          "text": "A way to skip support checks."
         },
         {
           "id": "d",
-          "text": "The difference is due to the direction of loading and has nothing to do with reinforcement, which is consistent across both columns"
+          "text": "A concrete color requirement."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +541,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The first column (cracks visible, large deflection before failure) exhibits ductile behavior characteristic of underreinforced design. The second column (sudden failure, no cracking) exhibits brittle behavior characteristic of overreinforced design. In seismic/earthquake conditions, the first column is safer because it provides warning and absorbs energy through deformation. The second column is dangerous because it fails without warning.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A decorative line style in the drawing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Anchorage, splices, ties, hoops, and load path working together across the member and supports. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "A way to skip support checks. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "A concrete color requirement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Anchorage, splices, ties, hoops, and load path working together across the member and supports. Supported by detailing-flexural; bsi-design.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-flexural; bsi-design",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10",
+      "explanation": "Anchorage, splices, ties, hoops, and load path working together across the member and supports. Supported by the Batch 144 local source boundary: detailing-flexural; bsi-design.",
+      "code_citation": "detailing-flexural; bsi-design",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +566,37 @@
       "model_id": "ALE-STRC-006-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5f37ab714bf73f3b81ad91f294b0fa1a7accd15af05c304e9fc5c302e3ee45a4"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:18543479115ef95feed0604eb66cffe7262c4296320ed2a8f4661eb22b39404e",
+      "source_ids": [
+        "detailing-flexural",
+        "bsi-design"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "627f1624-6508-4794-a8ef-ef18938735bb",
       "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
       "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
-      "text": "Grade 60 reinforcing steel reaches its yield strain at approximately:",
+      "text": "What is the safest conceptual summary of reinforced concrete flexure?",
       "options": [
         {
           "id": "a",
-          "text": "0.003 (same as concrete crushing), which indicates a high level of deformation before failure"
+          "text": "Steel area alone proves the beam is safe."
         },
         {
           "id": "b",
-          "text": "0.0021 (about 2.1 parts per thousand)"
+          "text": "Compression, tension reinforcement, neutral-axis behavior, ductility, anchorage, and confinement must align."
         },
         {
           "id": "c",
-          "text": "0.005 (5 parts per thousand), suggesting a significant margin of safety in structural applications"
+          "text": "Neutral axis location is a finish issue."
         },
         {
           "id": "d",
-          "text": "0.001 (1 part per thousand), a relatively low strain indicating early yield under stress"
+          "text": "Ductile detailing is unrelated to beam behavior."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +605,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Yield strain = Fy / E = 414 MPa / 200,000 MPa = 0.00207 ≈ 0.0021. This is the strain at which Grade 60 steel enters the plastic region and begins permanent deformation. This value is less than concrete crushing strain (0.003), which is why steel yields before concrete in underreinforced sections.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Steel area alone proves the beam is safe. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Compression, tension reinforcement, neutral-axis behavior, ductility, anchorage, and confinement must align. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+        "c": "Neutral axis location is a finish issue. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Ductile detailing is unrelated to beam behavior. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Compression, tension reinforcement, neutral-axis behavior, ductility, anchorage, and confinement must align. Supported by bsi-bending; detailing-flexural.",
+        "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-bending; detailing-flexural",
+        "checked_sources": [
+          "bsi-bending",
+          "fundamentals-strength",
+          "detailing-flexural"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Section 5.1; ACI 318, Section 3.2",
+      "explanation": "Compression, tension reinforcement, neutral-axis behavior, ductility, anchorage, and confinement must align. Supported by the Batch 144 local source boundary: bsi-bending; detailing-flexural.",
+      "code_citation": "bsi-bending; detailing-flexural",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +630,15 @@
       "model_id": "ALE-STRC-006-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c653c048789aaa19e06a4e002af52bb887ef452958f7a96b1e5803e6076f512d"
+      "updated_at": "2026-05-14T02:09:00.152Z",
+      "content_hash": "sha256:24cd52981a120a1e08cae846a9dca66da25646a04d152841792f44e5bb8f70c3",
+      "source_ids": [
+        "bsi-bending",
+        "detailing-flexural"
+      ],
+      "cluster_id": "lea-strc-006-03",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

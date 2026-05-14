@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "cluster_id": "lea-strc-005-03",
+  "question_id": "be352df0-c71e-48bc-ae25-ac18bf1c8814",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:2bc8b9ec2af93f0eb50195a3baa711d25cf20a0dd2ac3d62b1bf19707584de2d",
+  "after_hash": "sha256:7d3037ba475e9e7e3be390e7ce3d9b74d5dd98410aa5bd69c7f4a82ca06d875f",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "mechanics-allowable"
+  ],
+  "rationale": {
+    "a": "Inventing or restoring exact material fractions without the applicable source table. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+    "b": "Stating that stress checks require consistent units. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "Computing axial stress from force and area. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Checking deflection separately from stress. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Inventing or restoring exact material fractions without the applicable source table. Supported by mechanics-allowable.",
+    "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "mechanics-allowable",
+    "checked_sources": [
+      "mechanics-allowable",
+      "bsi-design",
+      "bsi-bending"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+  "cluster_id": "lea-strc-005-02",
+  "question_id": "7febc9cf-73c8-486d-8fe9-29f9c714b462",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:82020611c427646e6f00ad35261b91542e02e06074549bc8efebe510f0fa635b",
+  "after_hash": "sha256:3d7a1a4e745bec046fd262faed5a80c22dd96e66fa16a5745a6136373900ca12",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "fundamentals-strength"
+  ],
+  "rationale": {
+    "a": "Exact factors are never used in structural design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "All factors are chosen by the architect during schematic design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "Exact factors must come from the applicable code table or a captured source. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+    "d": "Factored demand is the same as service stress. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Exact factors must come from the applicable code table or a captured source. Supported by fundamentals-strength.",
+    "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "fundamentals-strength",
+    "checked_sources": [
+      "fundamentals-strength",
+      "bsi-design"
+    ]
+  }
+}

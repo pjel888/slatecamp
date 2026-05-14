@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "f242783b-a63f-4ed0-9fa9-638ae204dc09",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:3b89be3fc336c8916c2a7589bd877668ca14f4d52c068e92d90bf010e50f4ca2",
+  "after_hash": "sha256:9856b39ecbf9948136d3e557b1d3fa5ea9bb9a249cc8f0cf68dcce02423f4728",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "It is only a graphic hatch with no construction effect. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "It protects reinforcement and helps preserve durability under the exposure condition. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "It replaces all bar spacing requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "It is checked only after the building is occupied. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "It protects reinforcement and helps preserve durability under the exposure condition. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}

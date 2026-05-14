@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "32e6ba83-baa0-4058-bd03-d1ba4341b1f9",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c11847d6139202496093108c9f8e0ec5bdff921110b009c414203859fb94e0b0",
+  "after_hash": "sha256:f699efe06f9e6e0fde97e1e1fa7a32a3ad365ff6153d44c457e99111f05e6592",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-bending",
+    "fundamentals-strength"
+  ],
+  "rationale": {
+    "a": "To remove all compression from the section. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "To replace concrete cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "To resist tensile force and help control cracking where concrete is weak in tension. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "d": "To make support anchorage unnecessary. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "To resist tensile force and help control cracking where concrete is weak in tension. Supported by bsi-bending; fundamentals-strength.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-bending; fundamentals-strength",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

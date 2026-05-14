@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "2c357b48-3367-4292-9263-3ef24985542d",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:19840bb9d248b546365b5b12971a7f0f94e917840b0de47b53baf8d804696f7f",
+  "after_hash": "sha256:09fea3a49e4359bb98362ba442790b6dde67e4dff92c2ac1eb93688295ff70c5",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-bending",
+    "detailing-flexural"
+  ],
+  "rationale": {
+    "a": "Tracing the wall load to supports. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Checking only midspan steel area while ignoring anchorage, supports, confinement, and load path. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "c": "Checking tension reinforcement location. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Reviewing stirrup and hoop detailing near supports. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Checking only midspan steel area while ignoring anchorage, supports, confinement, and load path. Supported by bsi-bending; detailing-flexural.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-bending; detailing-flexural",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

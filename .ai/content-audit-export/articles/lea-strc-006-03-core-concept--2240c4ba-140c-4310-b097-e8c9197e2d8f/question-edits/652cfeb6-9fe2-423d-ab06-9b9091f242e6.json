@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "652cfeb6-9fe2-423d-ab06-9b9091f242e6",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:b42a642e1c514d9b731b2591d8f5d5491b115adcecb0aa206ddb193d9b3eb66f",
+  "after_hash": "sha256:145421e3fca65ae9145bed29a24d8f46671fe7fc203bb34a4db4e83c96173bd6",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-flexural",
+    "bsi-bending"
+  ],
+  "rationale": {
+    "a": "Stress-block constants are never used in reinforced concrete. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Neutral axis behavior is unrelated to flexure. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "Exact constants must come from the applicable code or captured source table. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "d": "Tension reinforcement replaces all code rules. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Exact constants must come from the applicable code or captured source table. Supported by detailing-flexural; bsi-bending.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-flexural; bsi-bending",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

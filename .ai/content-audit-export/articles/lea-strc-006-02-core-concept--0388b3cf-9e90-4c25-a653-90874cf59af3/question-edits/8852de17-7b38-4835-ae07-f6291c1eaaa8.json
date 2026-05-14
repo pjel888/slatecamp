@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "8852de17-7b38-4835-ae07-f6291c1eaaa8",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c2f3d7f2ddd8d3d16f5b467a79e73f6b42690f1ea97bd42335315ae44898cb4d",
+  "after_hash": "sha256:25db6efd3e9fa4890a5967280621c4baa31386612f1fa94eb17b11ee5ec964ff",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "Approve it if the bars are visible. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Check anchorage, confinement, cover, spacing, and whether splice location matches detailing intent. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "Ignore the issue because concrete will hide it. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Replace the structural review with a finish inspection. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Check anchorage, confinement, cover, spacing, and whether splice location matches detailing intent. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

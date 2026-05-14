@@ -1,30 +1,30 @@
 {
   "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:ec79b76ac25f4fef0817f78bf2dd58a3f09b62755981d09cad2de7d47056d361",
+  "linked_questions_hash": "sha256:b189adb82efa4f2c721eb667c627a38a338996799fbe6024fb997dbbd3600df5",
   "question_count": 10,
   "questions": [
     {
       "question_id": "ccf2e8d9-478a-44d0-aa29-afe9cd8b9df0",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "What is the strength reduction factor (φ) for flexure in a reinforced concrete beam?",
+      "text": "What is the safest first move in a structural capacity check?",
       "options": [
         {
           "id": "a",
-          "text": "φ = 0.70, applicable to compression-controlled sections"
+          "text": "Select the largest beam depth before checking the load path."
         },
         {
           "id": "b",
-          "text": "φ = 0.75, typically used for sections with moderate ductility"
+          "text": "Use allowable stress values for every structural method."
         },
         {
           "id": "c",
-          "text": "φ = 0.85, generally for sections with high ductility demands"
+          "text": "Ignore serviceability once a strength value is available."
         },
         {
           "id": "d",
-          "text": "φ = 0.90 (tension-controlled members only, ε_t ≥ 0.005)"
+          "text": "Identify the demand, resistance, design format, and load path before comparing values."
         }
       ],
       "correct_option_id": "d",
@@ -33,14 +33,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "φ = 0.70 applies to tied axial compression and bearing, not flexure.",
-        "b": "φ = 0.75 applies to spirally reinforced axial compression.",
-        "c": "φ = 0.85 applies to shear, torsion, and post-tensioned anchorage.",
-        "correct": "Flexure is a ductile failure mode; the steel reinforcement yields and elongates before the concrete crushes, providing visible warning. The highest φ factor (0.90) reflects this ductility.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Select the largest beam depth before checking the load path. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Use allowable stress values for every structural method. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "c": "Ignore serviceability once a strength value is available. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Identify the demand, resistance, design format, and load path before comparing values. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "correct": "Identify the demand, resistance, design format, and load path before comparing values. Supported by fundamentals-strength; bsi-design.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "fundamentals-strength; bsi-design",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": "φ = 0.70 applies to tied axial compression and bearing, not flexure. φ = 0.75 applies to spirally reinforced axial compression. φ = 0.85 applies to shear, torsion, and post-tensioned anchorage. Flexure is a ductile failure mode; the steel reinforcement yields and elongates before the concrete crushes, providing visible warning. The highest φ factor (0.90) reflects this ductility. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2015, Section 4.2, Strength Reduction Factors",
+      "explanation": "Identify the demand, resistance, design format, and load path before comparing values. Supported by the Batch 144 local source boundary: fundamentals-strength; bsi-design.",
+      "code_citation": "fundamentals-strength; bsi-design",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +57,37 @@
       "model_id": "ALE-STRC-005-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:53:16.675233+00:00",
-      "content_hash": "sha256:dd8a22111b8616acc7a9d0e4926d678a6dd975f1c7a7fba28e1ee961bc93cb3e"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:a8e1662f2b25c75ed5218e32fa1b1240b40c8e2a6ce59721fc98723d81bb4706",
+      "source_ids": [
+        "fundamentals-strength",
+        "bsi-design"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "8a104f41-185d-4ab8-8f19-5906b53eb21e",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "For a reinforced concrete column with rectangular tie reinforcement, what is the strength reduction factor for axial compression?",
+      "text": "Why must demand and capacity be compared in the same design format?",
       "options": [
         {
           "id": "a",
-          "text": "φ = 0.75"
+          "text": "Because all structural design methods use service loads only."
         },
         {
           "id": "b",
-          "text": "φ = 0.70"
+          "text": "Because factored demand belongs with matching strength resistance, while service stress belongs with allowable stress."
         },
         {
           "id": "c",
-          "text": "φ = 0.85"
+          "text": "Because allowable stress and factored resistance are identical terms."
         },
         {
           "id": "d",
-          "text": "φ = 0.90"
+          "text": "Because serviceability replaces strength checks in every case."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +96,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "φ = 0.75 applies to spirally reinforced (not tied) columns.",
-        "c": "φ = 0.85 applies to shear and torsion.",
-        "d": "φ = 0.90 applies to flexure and tension.",
-        "correct": "Tied columns have rectangular or square ties that confine the concrete core, but less effectively than spiral reinforcement. The lower φ = 0.70 reflects the reduced ductility and brittleness of this failure mode.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Because all structural design methods use service loads only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Because factored demand belongs with matching strength resistance, while service stress belongs with allowable stress. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "c": "Because allowable stress and factored resistance are identical terms. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Because serviceability replaces strength checks in every case. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Because factored demand belongs with matching strength resistance, while service stress belongs with allowable stress. Supported by fundamentals-strength; mechanics-allowable.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "fundamentals-strength; mechanics-allowable",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": "φ = 0.75 applies to spirally reinforced (not tied) columns. φ = 0.85 applies to shear and torsion. φ = 0.90 applies to flexure and tension. Tied columns have rectangular or square ties that confine the concrete core, but less effectively than spiral reinforcement. The lower φ = 0.70 reflects the reduced ductility and brittleness of this failure mode. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2015, Section 409.2.2, Strength Reduction Factors for Compression",
+      "explanation": "Because factored demand belongs with matching strength resistance, while service stress belongs with allowable stress. Supported by the Batch 144 local source boundary: fundamentals-strength; mechanics-allowable.",
+      "code_citation": "fundamentals-strength; mechanics-allowable",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +120,37 @@
       "model_id": "ALE-STRC-005-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:53:17.683166+00:00",
-      "content_hash": "sha256:2fa04c13429e94ba6fafcbe43adb0a1ccb89d9590f2e3e1ac0119a359a9c3823"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:cb34ad927df1132431d0e7433a1035f06287ebe104ba5242cee787dbfcd3ee73",
+      "source_ids": [
+        "fundamentals-strength",
+        "mechanics-allowable"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "869dc89f-4616-4130-89d3-8e3c27fb9947",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "Why does a spirally reinforced column receive a higher strength reduction factor (φ = 0.75) compared to a tied column (φ = 0.70)?",
+      "text": "In a strength-design example, what does a factored load such as Pu represent?",
       "options": [
         {
           "id": "a",
-          "text": "Spiral reinforcement is stronger in tension than tie bars, providing enhanced structural integrity"
+          "text": "A measured crack width under service loading."
         },
         {
           "id": "b",
-          "text": "Spiral confinement prevents core concrete from bursting and provides post-peak ductility, allowing load redistribution."
+          "text": "An amplified design demand used for a strength-format comparison."
         },
         {
           "id": "c",
-          "text": "Spiral columns are always taller than tied columns, so they are more stable and less prone to buckling"
+          "text": "The allowable stress of the material."
         },
         {
           "id": "d",
-          "text": "The NSCP arbitrarily assigns higher φ to spiral columns to encourage their use in specific applications"
+          "text": "The final architectural occupancy load only."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +159,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Strength of the reinforcement steel is not the governing factor; confinement is.",
-        "c": "Column height and stability relate to slenderness, not the φ factor for a given failure mode.",
-        "d": "Code decisions are based on structural mechanics, not arbitrary preferences.",
-        "correct": "The continuous helical spiral reinforcement wraps the concrete core, preventing lateral expansion and concrete spalling. When axial load is applied, the spiral confines the core, allowing the column to sustain load even after the outer concrete cracks. This provides ductility and warning before collapse.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A measured crack width under service loading. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "An amplified design demand used for a strength-format comparison. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "c": "The allowable stress of the material. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "The final architectural occupancy load only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "An amplified design demand used for a strength-format comparison. Supported by fundamentals-strength.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "fundamentals-strength",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": "Strength of the reinforcement steel is not the governing factor; confinement is. Column height and stability relate to slenderness, not the φ factor for a given failure mode. Code decisions are based on structural mechanics, not arbitrary preferences. The continuous helical spiral reinforcement wraps the concrete core, preventing lateral expansion and concrete spalling. When axial load is applied, the spiral confines the core, allowing the column to sustain load even after the outer concrete cracks. This provides ductility and warning before collapse. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 4.2, Commentary on Strength Reduction Factors and Column Confinement",
+      "explanation": "An amplified design demand used for a strength-format comparison. Supported by the Batch 144 local source boundary: fundamentals-strength.",
+      "code_citation": "fundamentals-strength",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +183,36 @@
       "model_id": "ALE-STRC-005-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:53:16.843523+00:00",
-      "content_hash": "sha256:95048723a11c9457201285c1bdcaadf52d08b81e7f84a24271c6c0d80833bac6"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:99396a7a3b0d3ded7b56e4c0e3a9575d8aa805d1755e7d895bfd7fcae4060408",
+      "source_ids": [
+        "fundamentals-strength"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "3c657ee2-5f0e-401a-8b1a-36f9f45c4c00",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "Post-tensioned concrete beams have anchorage zones where stress is transferred from the tendons to the concrete. The NSCP assigns φ = 0.85 to this failure mode. Based on the φ factor hierarchy, why is it different from φ = 0.90 (flexure) and φ = 0.70 (bearing)?",
+      "text": "Which item is a serviceability concern rather than a pure strength comparison?",
       "options": [
         {
           "id": "a",
-          "text": "Anchorage zones are purely brittle, like bearing, so they should use φ = 0.70, which is more appropriate for brittle failure modes"
+          "text": "The spelling of the member mark."
         },
         {
           "id": "b",
-          "text": "Anchorage zones exhibit mixed behavior: some ductility from spreading stresses in surrounding concrete, plus some local crushing. The intermediate φ = 0.85 reflects this hybrid behavior."
+          "text": "Excessive deflection or vibration under use conditions."
         },
         {
           "id": "c",
-          "text": "Post-tensioned beams are always stronger than reinforced beams, so φ = 0.85 is used to prevent over-design, ensuring safety without excessive material use"
+          "text": "The color of the structural drawing sheet."
         },
         {
           "id": "d",
-          "text": "φ = 0.85 is assigned to anchorage zones to match the shear φ factor arbitrarily, without specific consideration of the actual behavior"
+          "text": "The room name printed beside the beam."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +221,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Anchorage zones are not purely brittle; they benefit from stress redistribution in surrounding concrete.",
-        "c": "Material strength has no bearing on the φ factor; ductility and predictability do.",
-        "d": "The match to shear φ is coincidental; each φ is assigned based on failure mode characteristics.",
-        "correct": "Anchorage zones involve stress transfer that is partly ductile (concrete around the anchor deforms and redistributes stress) and partly prone to local bearing failure. The intermediate φ = 0.85 reflects this hybrid nature—less conservative than pure bearing (0.70), more conservative than pure flexure (0.90).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The spelling of the member mark. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Excessive deflection or vibration under use conditions. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "c": "The color of the structural drawing sheet. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "The room name printed beside the beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Excessive deflection or vibration under use conditions. Supported by bsi-design.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-design",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": "Anchorage zones are not purely brittle; they benefit from stress redistribution in surrounding concrete. Material strength has no bearing on the φ factor; ductility and predictability do. The match to shear φ is coincidental; each φ is assigned based on failure mode characteristics. Anchorage zones involve stress transfer that is partly ductile (concrete around the anchor deforms and redistributes stress) and partly prone to local bearing failure. The intermediate φ = 0.85 reflects this hybrid nature—less conservative than pure bearing (0.70), more conservative than pure flexure (0.90). Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 4.2, Strength Reduction Factors and Anchorage Zone Design",
+      "explanation": "Excessive deflection or vibration under use conditions. Supported by the Batch 144 local source boundary: bsi-design.",
+      "code_citation": "bsi-design",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +245,36 @@
       "model_id": "ALE-STRC-005-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:53:17.010334+00:00",
-      "content_hash": "sha256:49b2e0d160c06b8cefad168c86180e73bf5b7620a0d6f93d634807bd9670b147"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:6ab199e388ada5711f084f8d9b13f53beedc62e1d64ff5d59a10bfd08bc729bd",
+      "source_ids": [
+        "bsi-design"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "da1869ef-90e3-48b6-8d8c-37ea69e63e85",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "A reinforced concrete beam must resist a required shear force V_u = 250 kN. The nominal shear strength is V_n = 300 kN. Is the beam adequate for shear?",
+      "text": "What does redundancy add to a structural system?",
       "options": [
         {
           "id": "a",
-          "text": "φVn = 0.90 × 300 = 270 kN ≥ 250 kN; adequate."
+          "text": "A rule that connections no longer need design."
         },
         {
           "id": "b",
-          "text": "φVn = 0.85 × 300 = 255 kN ≥ 250 kN; adequate."
+          "text": "Alternate load paths that reduce dependence on one isolated member."
         },
         {
           "id": "c",
-          "text": "φVn = 0.75 × 300 = 225 kN < 250 kN; not adequate."
+          "text": "A way to remove foundations from the load path."
         },
         {
           "id": "d",
-          "text": "φVn = 0.70 × 300 = 210 kN < 250 kN; not adequate."
+          "text": "A replacement for checking member demand."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +283,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Flexure uses φ = 0.90, not shear.",
-        "c": "Spiral compression uses φ = 0.75.",
-        "d": "Tied compression and bearing use φ = 0.70.",
-        "correct": "Shear uses φ = 0.85. Design capacity = 0.85(300) = 255 kN. Required shear = 250 kN. Since 255 ≥ 250, the beam is adequate for shear.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A rule that connections no longer need design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Alternate load paths that reduce dependence on one isolated member. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "c": "A way to remove foundations from the load path. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "A replacement for checking member demand. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Alternate load paths that reduce dependence on one isolated member. Supported by bsi-design.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-design",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": "Flexure uses φ = 0.90, not shear. Spiral compression uses φ = 0.75. Tied compression and bearing use φ = 0.70. Shear uses φ = 0.85. Design capacity = 0.85(300) = 255 kN. Required shear = 250 kN. Since 255 ≥ 250, the beam is adequate for shear. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 4.3, Shear Design and Reduction Factors",
+      "explanation": "Alternate load paths that reduce dependence on one isolated member. Supported by the Batch 144 local source boundary: bsi-design.",
+      "code_citation": "bsi-design",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +307,36 @@
       "model_id": "ALE-STRC-005-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:53:17.17463+00:00",
-      "content_hash": "sha256:baf9973c892e41aa04be6874a37fc6a48f74bbe7fff904da3ecbb9e68af90af3"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:a62e9a98cf6f6a9d255440c8806d6d18c70fdf135060e706f8e9dfe54659633e",
+      "source_ids": [
+        "bsi-design"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "9ac04b85-2eb6-4967-b05d-c039c3087424",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "Why is the strength reduction factor for bearing on concrete (φ = 0.70) the same as for tied column compression (φ = 0.70)?",
+      "text": "Why is ductility valuable in structural safety?",
       "options": [
         {
           "id": "a",
-          "text": "Both are ductile failure modes that provide warning before collapse, allowing for timely intervention and repair to prevent catastrophic failure."
+          "text": "It eliminates every serviceability check."
         },
         {
           "id": "b",
-          "text": "Both are brittle or less predictable failure modes with limited ductility and high variability in construction quality."
+          "text": "It can provide visible deformation and reserve behavior before brittle failure."
         },
         {
           "id": "c",
-          "text": "The NSCP randomly assigns the same φ to unrelated failure modes, which can lead to inconsistencies in design safety margins."
+          "text": "It makes all members stronger than their material limits."
         },
         {
           "id": "d",
-          "text": "Bearing and tied compression have the same nominal strength calculations, ensuring uniformity in design approach across different structural elements."
+          "text": "It removes the need for continuity in the load path."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +345,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Both are relatively brittle (not ductile) compared to flexure.",
-        "c": "Code provisions are based on structural behavior, not randomness.",
-        "d": "The calculation methods differ; the φ factor reflects similar levels of predictability and ductility.",
-        "correct": "Both bearing on concrete and tied column compression are relatively brittle. Bearing failure occurs suddenly when the bearing stress exceeds the local concrete strength; there is no gradual plastic deformation to warn the structure. Tied columns lack the ductility of spirally reinforced columns. Both receive φ = 0.70 because they are less forgiving.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It eliminates every serviceability check. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "It can provide visible deformation and reserve behavior before brittle failure. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "c": "It makes all members stronger than their material limits. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "It removes the need for continuity in the load path. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "It can provide visible deformation and reserve behavior before brittle failure. Supported by bsi-design.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-design",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": "Both are relatively brittle (not ductile) compared to flexure. Code provisions are based on structural behavior, not randomness. The calculation methods differ; the φ factor reflects similar levels of predictability and ductility. Both bearing on concrete and tied column compression are relatively brittle. Bearing failure occurs suddenly when the bearing stress exceeds the local concrete strength; there is no gradual plastic deformation to warn the structure. Tied columns lack the ductility of spirally reinforced columns. Both receive φ = 0.70 because they are less forgiving. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Sections 4.2 and 4.4, Strength Reduction Factor Philosophy",
+      "explanation": "It can provide visible deformation and reserve behavior before brittle failure. Supported by the Batch 144 local source boundary: bsi-design.",
+      "code_citation": "bsi-design",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +369,36 @@
       "model_id": "ALE-STRC-005-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:53:17.337306+00:00",
-      "content_hash": "sha256:c78d4f7bb3fd6b8e23963a2d39f66708af62c89e9f86fdc649e3720ce5098a30"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:4846f87ff0bedc6f31cb8226b18349c4907fbd7a3b4f333c501db745db396269",
+      "source_ids": [
+        "bsi-design"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "7febc9cf-73c8-486d-8fe9-29f9c714b462",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "For shear and torsion failure modes, the NSCP strength reduction factor is:",
+      "text": "Why should an exam answer avoid unsupported exact reduction-factor tables?",
       "options": [
         {
           "id": "a",
-          "text": "φ = 0.70"
+          "text": "Exact factors are never used in structural design."
         },
         {
           "id": "b",
-          "text": "φ = 0.75"
+          "text": "All factors are chosen by the architect during schematic design."
         },
         {
           "id": "c",
-          "text": "φ = 0.85"
+          "text": "Exact factors must come from the applicable code table or a captured source."
         },
         {
           "id": "d",
-          "text": "φ = 0.90"
+          "text": "Factored demand is the same as service stress."
         }
       ],
       "correct_option_id": "c",
@@ -333,14 +407,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "φ = 0.70 applies to tied compression and bearing.",
-        "b": "φ = 0.75 applies to spiral compression.",
-        "d": "φ = 0.90 applies to flexure and tension.",
-        "correct": "Shear and torsion failures are less ductile than flexure; they occur with less warning. The intermediate φ = 0.85 reflects this reduced ductility compared to flexure.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Exact factors are never used in structural design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "All factors are chosen by the architect during schematic design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "c": "Exact factors must come from the applicable code table or a captured source. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "d": "Factored demand is the same as service stress. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Exact factors must come from the applicable code table or a captured source. Supported by fundamentals-strength.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "fundamentals-strength",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": "φ = 0.70 applies to tied compression and bearing. φ = 0.75 applies to spiral compression. φ = 0.90 applies to flexure and tension. Shear and torsion failures are less ductile than flexure; they occur with less warning. The intermediate φ = 0.85 reflects this reduced ductility compared to flexure. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 4.2, Strength Reduction Factors for Shear and Torsion",
+      "explanation": "Exact factors must come from the applicable code table or a captured source. Supported by the Batch 144 local source boundary: fundamentals-strength.",
+      "code_citation": "fundamentals-strength",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +431,36 @@
       "model_id": "ALE-STRC-005-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:53:17.522054+00:00",
-      "content_hash": "sha256:0b6cf5f3b6a8da78adbf86d1dc38af7ff73bf958d8220cc5833a4a7a6a589e70"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:3d7a1a4e745bec046fd262faed5a80c22dd96e66fa16a5745a6136373900ca12",
+      "source_ids": [
+        "fundamentals-strength"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "f36b62c4-3461-4043-a07d-3fa57804e653",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "A column in a residential building is designed as a tied column with dimensions 400 mm × 400 mm and reinforcement ratio ρ_g = 0.02. The nominal axial compression strength is P_n = 1200 kN. Using φ = 0.70, the design axial compression capacity is:",
+      "text": "A heavy tank is added above an existing frame. What is the most defensible review sequence?",
       "options": [
         {
           "id": "a",
-          "text": "φPn = 0.75 × 1200 = 900 kN"
+          "text": "Approve it if the tank fits on the roof plan."
         },
         {
           "id": "b",
-          "text": "φPn = 0.70 × 1200 = 840 kN"
+          "text": "Trace the load path, identify demand format, compare matching capacity, and check serviceability."
         },
         {
           "id": "c",
-          "text": "φPn = 0.85 × 1200 = 1020 kN"
+          "text": "Check only the paint specification of the frame."
         },
         {
           "id": "d",
-          "text": "φPn = 0.90 × 1200 = 1080 kN"
+          "text": "Use a service stress value as a factored resistance."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +469,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "φ = 0.75 applies to spiral columns, not tied columns.",
-        "c": "φ = 0.85 applies to shear and torsion.",
-        "d": "φ = 0.90 applies to flexure and tension.",
-        "correct": "The column is tied (not spiral), so φ = 0.70. Design capacity = 0.70(1200) = 840 kN. This is the maximum axial load the column can safely support.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Approve it if the tank fits on the roof plan. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "c": "Check only the paint specification of the frame. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Use a service stress value as a factored resistance. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. Supported by bsi-design; fundamentals-strength.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-design; fundamentals-strength",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2001, Section 4.2, Axial Compression Design and φ Factors",
+      "explanation": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. Supported by the Batch 144 local source boundary: bsi-design; fundamentals-strength.",
+      "code_citation": "bsi-design; fundamentals-strength",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +493,37 @@
       "model_id": "ALE-STRC-005-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:976b416095545fd77d2f620762cb3216297bdb12a55ff0ed237c449ceab9e4f4"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:05e28a714667373d90ccf104591d6564708fc455870d34321dbff3aabd837e68",
+      "source_ids": [
+        "bsi-design",
+        "fundamentals-strength"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "9ab67928-0f20-4fbe-b3d1-798702b6534a",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "A reinforced concrete beam is required to support a factored load that produces an internal moment. The nominal moment strength is M_n = 180 kN·m. Calculate the design moment capacity φM_n and determine if it is adequate for a required moment of 165 kN·m.",
+      "text": "What is capacity or resistance in a structural check?",
       "options": [
         {
           "id": "a",
-          "text": "φMn = 0.85 × 180 = 153 kN·m; not adequate (153 < 165). The beam must be redesigned or reinforced to meet the required moment capacity."
+          "text": "The architectural finish area of the member."
         },
         {
           "id": "b",
-          "text": "φMn = 0.90 × 180 = 162 kN·m; not adequate (162 < 165). Additional reinforcement or a higher strength concrete mix may be necessary."
+          "text": "The name of the structural drawing scale."
         },
         {
           "id": "c",
-          "text": "φMn = 0.90 × 180 = 162 kN·m; adequate if required is ≤162 kN·m; barely not adequate here."
+          "text": "The ability of a member or system to resist the imposed demand."
         },
         {
           "id": "d",
-          "text": "φMn = 0.75 × 180 = 135 kN·m; not adequate (135 < 165). Consider increasing the beam depth or using a different reinforcement layout."
+          "text": "The service load before any comparison is made."
         }
       ],
       "correct_option_id": "c",
@@ -433,14 +532,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Shear uses φ = 0.85, not flexure. Also, even if correct, the calculation would yield 153 kN·m, which is not adequate.",
-        "b": "The φ factor is correct, but the conclusion is wrong. 162 < 165, so NOT adequate.",
-        "d": "Spiral compression uses φ = 0.75, not flexure.",
-        "correct": "For flexure, φ = 0.90. Design capacity = 0.90(180) = 162 kN·m. Required capacity = 165 kN·m. Since 162 < 165, the section is not adequate; the beam must be redesigned with more reinforcement to increase M_n.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The architectural finish area of the member. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "The name of the structural drawing scale. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "c": "The ability of a member or system to resist the imposed demand. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "d": "The service load before any comparison is made. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "The ability of a member or system to resist the imposed demand. Supported by bsi-design.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-design",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2001, Section 4.2, Design Requirements φSn ≥ U",
+      "explanation": "The ability of a member or system to resist the imposed demand. Supported by the Batch 144 local source boundary: bsi-design.",
+      "code_citation": "bsi-design",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +556,36 @@
       "model_id": "ALE-STRC-005-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:08253cc66d63b53f1745b3b30037d2132435e68bf18c6e6b177557fa1cc5c042"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:240fd9e4d5a0338482a202e23f400a0595071a6449ca89ef74d1a8f8a595b6e9",
+      "source_ids": [
+        "bsi-design"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "b8b8591e-b88c-47ed-b32d-39b646ae8623",
       "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
       "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "A design engineer is preparing a reinforced concrete column schedule. The column is specified with spiral reinforcement. Which φ factor should be used for axial compression design, and what is the engineering rationlea?",
+      "text": "Which habit best prevents capacity-check errors?",
       "options": [
         {
           "id": "a",
-          "text": "φ = 0.70; spiral and tied columns have the same reduction factor because they perform equally, which is incorrect"
+          "text": "Memorize one answer format for every material."
         },
         {
           "id": "b",
-          "text": "φ = 0.65 (tied), φ = 0.75 (spiral) for compression-controlled; spiral reinforcement provides continuous lateral confinement, allowing ductile behavior and higher capacity utilization."
+          "text": "Label the method, units, demand, resistance, and comparison format before solving."
         },
         {
           "id": "c",
-          "text": "φ = 0.85; spiral is as ductile as shear failure modes, which is not accurate"
+          "text": "Ignore support and connection behavior."
         },
         {
           "id": "d",
-          "text": "φ = 0.90; spiral reinforcement is as strong as flexural reinforcement, which is misleading"
+          "text": "Use the same value for all service and strength checks."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +594,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Spiral and tied columns perform differently; spiral provides better confinement.",
-        "c": "Spiral is more ductile than shear modes but less ductile than flexure; φ = 0.85 is too high.",
-        "d": "Flexure has the highest φ (0.90) because it is the most ductile. Spiral compression is less ductile.",
-        "correct": "Spiral reinforcement consists of continuous helical hoops that confine the concrete core. This confinement increases ductility, allowing the column to redistribute load and deform visibly before collapse. The higher φ = 0.75 (compared to 0.70 for tied) recognizes this improved behavior.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Memorize one answer format for every material. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Label the method, units, demand, resistance, and comparison format before solving. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+        "c": "Ignore support and connection behavior. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Use the same value for all service and strength checks. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Label the method, units, demand, resistance, and comparison format before solving. Supported by fundamentals-strength; bsi-design.",
+        "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "fundamentals-strength; bsi-design",
+        "checked_sources": [
+          "fundamentals-strength",
+          "bsi-design"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2001, Section 4.2, Strength Reduction Factors and Spiral vs. Tied Columns",
+      "explanation": "Label the method, units, demand, resistance, and comparison format before solving. Supported by the Batch 144 local source boundary: fundamentals-strength; bsi-design.",
+      "code_citation": "fundamentals-strength; bsi-design",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +618,15 @@
       "model_id": "ALE-STRC-005-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c4cebdbe1be408983f930426830576268c20dcfa927e4ae2f880efb7758c78ee"
+      "updated_at": "2026-05-14T02:09:00.126Z",
+      "content_hash": "sha256:7c59cee50c3fdee8655941cc4ebeaed497d88b7164f0f2efbc2b61101a9cd683",
+      "source_ids": [
+        "fundamentals-strength",
+        "bsi-design"
+      ],
+      "cluster_id": "lea-strc-005-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

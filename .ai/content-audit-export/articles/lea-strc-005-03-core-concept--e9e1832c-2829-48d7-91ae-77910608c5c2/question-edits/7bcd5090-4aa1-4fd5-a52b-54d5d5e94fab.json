@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "cluster_id": "lea-strc-005-03",
+  "question_id": "7bcd5090-4aa1-4fd5-a52b-54d5d5e94fab",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:5304cfbf32967077139b443d3038ae77140e028c78253c4a9fa024fd7a0ccb79",
+  "after_hash": "sha256:b618a677445adc2fb33cfeb31129293ee33a4a26490cebbd1cb435a047eab325",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "mechanics-allowable"
+  ],
+  "rationale": {
+    "a": "Computed stress should always exceed allowable stress. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Axial stress is unrelated to force and area. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "Computed tensile stress should be less than or equal to allowable tensile stress. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+    "d": "Allowable stress is checked only after deflection fails. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Computed tensile stress should be less than or equal to allowable tensile stress. Supported by mechanics-allowable.",
+    "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "mechanics-allowable",
+    "checked_sources": [
+      "mechanics-allowable",
+      "bsi-design",
+      "bsi-bending"
+    ]
+  }
+}

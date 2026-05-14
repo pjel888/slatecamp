@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "4d7e99ff-b57c-4bba-8571-d25439ec21fa",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:409827a7d6f2672ff377c88418bb6a0eeeaff8f4def2919bf587c7add57bd048",
+  "after_hash": "sha256:a154e309f31d10be0cc90fee4c5f81391a7a709e5a1565143c5b3dce8cdd51e6",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-bending"
+  ],
+  "rationale": {
+    "a": "Only at the exact neutral axis. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "At the fibers farthest from the neutral axis. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "c": "Only at the sheet title. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Uniformly at every point in all sections. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "At the fibers farthest from the neutral axis. Supported by bsi-bending.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-bending",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

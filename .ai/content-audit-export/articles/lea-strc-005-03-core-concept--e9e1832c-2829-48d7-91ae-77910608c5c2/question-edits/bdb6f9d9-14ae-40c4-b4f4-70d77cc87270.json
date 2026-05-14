@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "cluster_id": "lea-strc-005-03",
+  "question_id": "bdb6f9d9-14ae-40c4-b4f4-70d77cc87270",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:735fa3c8a76c85fea51d8259077027b0cce1bd7e1b955fceae4236831b9e88df",
+  "after_hash": "sha256:c2bab7104563bd8630d19da09e55e240d35e8165a264e56368b8c1515e73d2ae",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-bending",
+    "mechanics-allowable"
+  ],
+  "rationale": {
+    "a": "Only at the centerline where bending stress changes sign. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "At the extreme fibers farthest from the neutral axis. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+    "c": "Only at the drawing title block. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Uniformly at every point regardless of distance from the neutral axis. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "At the extreme fibers farthest from the neutral axis. Supported by bsi-bending; mechanics-allowable.",
+    "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-bending; mechanics-allowable",
+    "checked_sources": [
+      "mechanics-allowable",
+      "bsi-design",
+      "bsi-bending"
+    ]
+  }
+}

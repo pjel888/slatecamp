@@ -1,0 +1,144 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "cluster_id": "lea-strc-006-02",
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "detailing-rebar",
+      "title": "Detailing of Reinforcement in Concrete Structures - bars, hooks, spacing, and surface condition",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-rebar.source-capture.md",
+      "local_capture_sha256": "sha256:ec7fc54e9609e5a111552f13d3500d496333f69ed7da5f5e601a9c1351bdd7c9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-rebar.refined.md",
+      "refined_capture_sha256": "sha256:875db4a8bc2669d1d6d9999e4b7fd1d0f770949c12f8535c5144b6fe074cfa3c",
+      "locator": "refined markdown lines 7-35, 46-80, 176-206",
+      "safe_claims": [
+        "The source identifies 180-degree hooks, 90-degree hooks, and 135-degree bends for stirrup and tie anchorage.",
+        "Minimum bend diameters depend on bar size and hook type.",
+        "Reinforcement surfaces must be free from harmful coatings, while ordinary rust or mill scale can be acceptable when bar dimensions and weight remain compliant.",
+        "Spirals and ties confine compression reinforcement and have specific size and spacing limits."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore a complete Philippine reinforcing-bar grade table.",
+        "No local source in this batch was used to state unsupported development-length equations.",
+        "No local source in this batch was used to replace project-specific bar marking or mill-certificate requirements."
+      ]
+    },
+    {
+      "id": "detailing-concrete",
+      "title": "Detailing of Reinforcement in Concrete Structures - cover, exposure, spacing, and mix limits",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-concrete.source-capture.md",
+      "local_capture_sha256": "sha256:eca9f3ccd9b5dd5c41d42f73c8c3ff540cd5a2c813ac32d223baa9936f7131f0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-concrete.refined.md",
+      "refined_capture_sha256": "sha256:ef728f7901e8227a0dd4e3eaa5e34629810b3c60ff5f15fe71bfc31f8b7f4129",
+      "locator": "refined markdown lines 46-80, 91-132",
+      "safe_claims": [
+        "Reinforcement must be accurately placed and adequately supported before concrete is placed.",
+        "Minimum spacing between parallel bars is tied to bar diameter, aggregate size, and clear dimension requirements.",
+        "Cover requirements vary with exposure, contact with earth or weather, and concrete member type.",
+        "The source links exposure conditions to maximum water-cement ratio, minimum cement content, and aggregate size."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore a complete Philippine reinforcing-bar grade table.",
+        "No local source in this batch was used to state unsupported development-length equations.",
+        "No local source in this batch was used to replace project-specific bar marking or mill-certificate requirements."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:2cbe0a88e3402e104865a56a8e4d9db3f5079ce666d2b36e32a7db09548e81ee",
+  "candidate_sha256": "sha256:2cbe0a88e3402e104865a56a8e4d9db3f5079ce666d2b36e32a7db09548e81ee",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "9556ec7e-e872-4a67-81c8-7bba8f856370",
+      "content_hash": "sha256:e5e94852e45ff4fa49b1847ce8f00c9102f682986a3cc1dbe39f7144569e69ac"
+    },
+    {
+      "question_id": "01b5a138-9b27-41b0-a643-13df3b69a44e",
+      "content_hash": "sha256:969b946699a5b76f6794910100ce6d02bdb3c6ccd84cf458ad4846b09b755b21"
+    },
+    {
+      "question_id": "0913e1c6-52f4-4967-b941-6afedcdabc3e",
+      "content_hash": "sha256:643071f0c4f937979e080eead3f7f43e10eaa768c5f2f464b2f333119589c4b5"
+    },
+    {
+      "question_id": "4987d103-c0cf-4912-ba97-42804ee56f6d",
+      "content_hash": "sha256:150517ee908e7e1306f86bd23ca44792926bce1c0a00c9abe33304059aacdbb3"
+    },
+    {
+      "question_id": "5946cd54-365a-47bb-8e06-0b43480bfac9",
+      "content_hash": "sha256:174a2a8138f33c25c08c50bede52068c1ba034f43151b5f18663df1e2db7d1ce"
+    },
+    {
+      "question_id": "b9b5597d-f7a4-46d7-9822-c6690e8d8ceb",
+      "content_hash": "sha256:50e55fb3bc427d6e9afaa4c74e094b5984f3ce934c1d3b84edf74648457596d3"
+    },
+    {
+      "question_id": "7044eee0-f6aa-4583-a5d5-0855fc76271c",
+      "content_hash": "sha256:75506d7518a9c1d5f3e161a75f18cca6433b01c9a26fa2e8623dd3ddae7ba8df"
+    },
+    {
+      "question_id": "fb30219c-aa24-41b2-86df-7949b948d963",
+      "content_hash": "sha256:821bdc745c2cdf14f7fc5b14c5d1ee9b4ed3746d4351f9365ecc88c484f5003b"
+    },
+    {
+      "question_id": "e4998612-b0ea-4188-9cd5-e236b11b4800",
+      "content_hash": "sha256:d80385112c976c23ca48daf7acd1f0050eed3177ba7c740e39d49e298eda891d"
+    },
+    {
+      "question_id": "8852de17-7b38-4835-ae07-f6291c1eaaa8",
+      "content_hash": "sha256:25db6efd3e9fa4890a5967280621c4baa31386612f1fa94eb17b11ee5ec964ff"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code or table values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore a complete Philippine reinforcing-bar grade table.",
+    "No local source in this batch was used to state unsupported development-length equations.",
+    "No local source in this batch was used to replace project-specific bar marking or mill-certificate requirements."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    }
+  ]
+}

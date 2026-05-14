@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "cluster_id": "lea-strc-005-03",
+  "question_id": "104dbdfe-ec95-4e5c-a4de-1e346e32d5cf",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:dd1ad97ce63173aec43845352165426a8249b6d677ea109b0729559e11abf425",
+  "after_hash": "sha256:493f2a08ff0f1676198b2ec3b00f6859525b890afc0eb012612214eb38ab1238",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "mechanics-allowable",
+    "bsi-bending"
+  ],
+  "rationale": {
+    "a": "It sets the architectural room height. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "It removes all shear effects from a beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "It relates bending moment to maximum bending stress in the section. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+    "d": "It replaces load-path tracing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "It relates bending moment to maximum bending stress in the section. Supported by mechanics-allowable; bsi-bending.",
+    "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "mechanics-allowable; bsi-bending",
+    "checked_sources": [
+      "mechanics-allowable",
+      "bsi-design",
+      "bsi-bending"
+    ]
+  }
+}

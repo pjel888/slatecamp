@@ -1,30 +1,30 @@
 {
   "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:85ad8973bf423d4b7f4a5bdadd0518258a4b2fd20e0bcafbc29d679fa0e51ce4",
+  "linked_questions_hash": "sha256:0e2360ee1a76968fdb5684590b92d8c6bd84ab0629464bc769cb4865c66fe0c1",
   "question_count": 10,
   "questions": [
     {
       "question_id": "9556ec7e-e872-4a67-81c8-7bba8f856370",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "An engineer specifies stirrups in the web of a column rather than ties, and the column subsequently shows longitudinal bar buckling during a load test. What is the primary reason for this failure mode?",
+      "text": "Why are deformed bars used in reinforced concrete?",
       "options": [
         {
           "id": "a",
-          "text": "Stirrups are too weak and cannot carry shear, especially in columns with high axial loads"
+          "text": "They eliminate the need for concrete cover."
         },
         {
           "id": "b",
-          "text": "Stirrups (designed for shear resistance in beams) do not provide lateral confinement of the longitudinal bars; only ties (closed loops at the perimeter) can prevent bar buckling in a column"
+          "text": "Their surface shape improves bond between steel and concrete."
         },
         {
           "id": "c",
-          "text": "The concrete was improperly cured, causing weak bonding with the stirrups, leading to inadequate support"
+          "text": "They replace all hooks and anchorage."
         },
         {
           "id": "d",
-          "text": "Grade 60 bars are not compatible with stirrups; Grade 40 must be used to ensure proper interaction"
+          "text": "They are used only for drawing symbols."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "This is a critical error. Stirrups are designed for shear resistance in beams; they are not closed perimeter loops like ties. When used in a column, stirrups do not provide lateral confinement of the longitudinal reinforcement. Under axial compression, the longitudinal bars buckle outward without lateral support from proper ties. The column fails due to a fundamental detailing mistake: wrong element for wrong location.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They eliminate the need for concrete cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Their surface shape improves bond between steel and concrete. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "They replace all hooks and anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "They are used only for drawing symbols. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Their surface shape improves bond between steel and concrete. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ERR-STRC-013",
+      "explanation": "Their surface shape improves bond between steel and concrete. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +57,36 @@
       "model_id": "ALE-STRC-006-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:32fb4de70e56b7da256d4041456de9a2238ed726b3594fb961d62e6d82f6ef33"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:e5e94852e45ff4fa49b1847ce8f00c9102f682986a3cc1dbe39f7144569e69ac",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "01b5a138-9b27-41b0-a643-13df3b69a44e",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "In a seismic design context in the Philippines, why are spiral columns preferred over tied columns in high-rise structures?",
+      "text": "What is the purpose of a standard hook?",
       "options": [
         {
           "id": "a",
-          "text": "Spiral columns are less expensive and require less reinforcement overall"
+          "text": "To reduce concrete cover to zero."
         },
         {
           "id": "b",
-          "text": "Spiral columns provide continuous uniform confinement, increasing strength and ductility (deformability before collapse), which is critical for absorbing earthquake energy"
+          "text": "To anchor reinforcement through a specified bend and extension."
         },
         {
           "id": "c",
-          "text": "Tied columns are not permitted by PNSC in seismic regions"
+          "text": "To remove clear spacing requirements."
         },
         {
           "id": "d",
-          "text": "Spiral columns require no longitudinal reinforcement, reducing overall complexity"
+          "text": "To replace all stirrups in beams."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +95,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In seismic design, structures must dissipate earthquake energy through controlled deformation (ductility). A spiral column's continuous helical reinforcement provides superior confinement, preventing core concrete spalling and longitudinal bar buckling over large strain cycles. This makes spiral columns much more ductile than tied columns, allowing the structure to absorb seismic energy without sudden collapse.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "To reduce concrete cover to zero. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "To anchor reinforcement through a specified bend and extension. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "To remove clear spacing requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "To replace all stirrups in beams. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "To anchor reinforcement through a specified bend and extension. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 10",
+      "explanation": "To anchor reinforcement through a specified bend and extension. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +119,36 @@
       "model_id": "ALE-STRC-006-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:09bab82cc372e33a277eec4ec73eddaf748999c436d2d6be8e981dbefb0e96a4"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:969b946699a5b76f6794910100ce6d02bdb3c6ccd84cf458ad4846b09b755b21",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "0913e1c6-52f4-4967-b941-6afedcdabc3e",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "The modulus of elasticity of reinforcing steel (all grades) is:",
+      "text": "Which hook form is commonly associated with closed ties and stirrup anchorage?",
       "options": [
         {
           "id": "a",
-          "text": "E = 200 MPa (same as concrete), which is a common misconception"
+          "text": "A random field bend with no extension."
         },
         {
           "id": "b",
-          "text": "E = 200,000 MPa (approximately 9-10 times that of concrete)"
+          "text": "A 135-degree bend with the required extension."
         },
         {
           "id": "c",
-          "text": "E = 100,000 MPa (half that of concrete), which is incorrect for standard grades"
+          "text": "A straight bar with no anchorage."
         },
         {
           "id": "d",
-          "text": "E varies by grade: Grade 40 has E = 180,000 MPa; Grade 60 has E = 220,000 MPa, which is not standard practice"
+          "text": "A paint mark at the bar end."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +157,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The modulus of elasticity for reinforcing steel is E = 200,000 MPa regardless of grade. This value is much higher than concrete (Ec ≈ 20,000–25,000 MPa for typical f'c), meaning steel is much stiffer and carries most of the tension in reinforced concrete.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A random field bend with no extension. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "A 135-degree bend with the required extension. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "A straight bar with no anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "A paint mark at the bar end. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "A 135-degree bend with the required extension. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Section 7.1; ACI 318, Section 3.2",
+      "explanation": "A 135-degree bend with the required extension. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +181,36 @@
       "model_id": "ALE-STRC-006-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:087f6d12ed79048d4e36e4f17f0db7a731dd1bd34c3e7976cba23a820531c989"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:643071f0c4f937979e080eead3f7f43e10eaa768c5f2f464b2f333119589c4b5",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "4987d103-c0cf-4912-ba97-42804ee56f6d",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "The primary function of stirrups in a reinforced concrete beam is to:",
+      "text": "Why does clear spacing between parallel bars matter?",
       "options": [
         {
           "id": "a",
-          "text": "Support the longitudinal reinforcement and prevent it from buckling, which is critical for structural integrity"
+          "text": "It is only for visual symmetry in the drawing."
         },
         {
           "id": "b",
-          "text": "Resist shear forces and confine the concrete core against diagonal tension cracking"
+          "text": "It allows concrete to pass, consolidate, and bond around the reinforcement."
         },
         {
           "id": "c",
-          "text": "Carry the entire bending moment independently, which is a misconception about their role"
+          "text": "It replaces aggregate selection."
         },
         {
           "id": "d",
-          "text": "Reduce concrete shrinkage and prevent surface cracking, although this is not their main purpose"
+          "text": "It eliminates cover requirements."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +219,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Stirrups are closed transverse reinforcement loops placed perpendicular to the longitudinal axis of a beam. They primarily resist shear (diagonal tension) by providing internal ties across potential shear cracks. They also confine the concrete core, preventing spalling and improving ductility.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It is only for visual symmetry in the drawing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "It allows concrete to pass, consolidate, and bond around the reinforcement. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "It replaces aggregate selection. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "It eliminates cover requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "It allows concrete to pass, consolidate, and bond around the reinforcement. Supported by detailing-concrete.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-concrete",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 11",
+      "explanation": "It allows concrete to pass, consolidate, and bond around the reinforcement. Supported by the Batch 144 local source boundary: detailing-concrete.",
+      "code_citation": "detailing-concrete",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -201,30 +243,36 @@
       "model_id": "ALE-STRC-006-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:214bed337271ff248a0075db684e4544bf7174a9e20678c81b3db02ee455a11c"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:150517ee908e7e1306f86bd23ca44792926bce1c0a00c9abe33304059aacdbb3",
+      "source_ids": [
+        "detailing-concrete"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "5946cd54-365a-47bb-8e06-0b43480bfac9",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "A designer has placed vertical reinforcement spaced 40 mm apart in a circular column. The longitudinal bar diameter is 20 mm. Is this reinforcement arrangement acting as a spiral or a tied column?",
+      "text": "How should ordinary rust on reinforcement be treated in an exam-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "It is a tied column because the bars are vertical longitudinal reinforcement arranged at uniform spacing around the perimeter"
+          "text": "All rust always requires immediate demolition."
         },
         {
           "id": "b",
-          "text": "It is a spiral column because the 40 mm spacing is typical pitch for spiral reinforcement in circular compression members"
+          "text": "Rust proves the bar needs no cover."
         },
         {
           "id": "c",
-          "text": "Cannot determine from the given information; the confinement element (spiral or tie) is not described"
+          "text": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired."
         },
         {
           "id": "d",
-          "text": "It must be a tied column because 40 mm is too small for spiral pitch according to standard reinforcement detailing practices"
+          "text": "Rust eliminates the need for inspection."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +281,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The given information describes only the longitudinal vertical bars and their spacing. A spiral or tie is a separate transverse reinforcement element that confines the core. The spacing of longitudinal bars does not indicate whether confinement is provided by a spiral (continuous helical) or ties (discrete loops). Both could potentially use a circular column with these longitudinal bars; the confinement type must be explicitly specified in the design.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All rust always requires immediate demolition. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Rust proves the bar needs no cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "c": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "d": "Rust eliminates the need for inspection. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7",
+      "explanation": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -251,30 +305,36 @@
       "model_id": "ALE-STRC-006-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:47d0d70d438a4ebe9de8902323c794f500931ebf114adfaa9a38cac622f5bf29"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:174a2a8138f33c25c08c50bede52068c1ba034f43151b5f18663df1e2db7d1ce",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "b9b5597d-f7a4-46d7-9822-c6690e8d8ceb",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "Grade 60 reinforcing steel (Fy = 414 MPa) has a yield strain of approximately:",
+      "text": "What do ties do in a reinforced concrete column?",
       "options": [
         {
           "id": "a",
-          "text": "0.003 (3 parts per thousand), typically used in high-strength applications"
+          "text": "They carry all architectural finishes."
         },
         {
           "id": "b",
-          "text": "0.00207 or 0.0021 (about 2.1 parts per thousand)"
+          "text": "They laterally restrain longitudinal bars and contribute to confinement."
         },
         {
           "id": "c",
-          "text": "0.001 (1 part per thousand), suitable for low-stress environments"
+          "text": "They replace longitudinal reinforcement."
         },
         {
           "id": "d",
-          "text": "0.005 (5 parts per thousand), often considered for seismic design"
+          "text": "They remove all axial load from the column."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +343,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Yield strain = Fy / E = 414 MPa / 200,000 MPa = 0.00207 ≈ 0.0021. This is a fundamental property used in strain-based section analysis (balanced section, underreinforced, overreinforced classifications).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They carry all architectural finishes. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "They laterally restrain longitudinal bars and contribute to confinement. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "They replace longitudinal reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "They remove all axial load from the column. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "They laterally restrain longitudinal bars and contribute to confinement. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Section 7.1; ACI 318, Section 3.2",
+      "explanation": "They laterally restrain longitudinal bars and contribute to confinement. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +367,36 @@
       "model_id": "ALE-STRC-006-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0132b3cdccd7d2dba6c71ac4de9f52f8eb5658dd7d4cfeaaa0d50423a3fa38b1"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:50e55fb3bc427d6e9afaa4c74e094b5984f3ce934c1d3b84edf74648457596d3",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "7044eee0-f6aa-4583-a5d5-0855fc76271c",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "A spiral column differs from a tied column in that the spiral:",
+      "text": "What is a spiral in reinforced concrete detailing?",
       "options": [
         {
           "id": "a",
-          "text": "Uses smaller diameter bars and tighter spacing to save cost, which may affect structural integrity"
+          "text": "A roof drainage layout."
         },
         {
           "id": "b",
-          "text": "Is a continuous helical loop that provides uniform confinement in all directions and increases ductility"
+          "text": "Continuous helical reinforcement used for confinement in compression members."
         },
         {
           "id": "c",
-          "text": "Can only be used in square columns, while ties are for rectangular columns, which is a common misconception"
+          "text": "A wall paint texture."
         },
         {
           "id": "d",
-          "text": "Provides the same level of confinement as a single-layer tie at the perimeter, which is not accurate for all cases"
+          "text": "A note that replaces longitudinal bars."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +405,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A spiral is continuous helical reinforcement wound around a circular column core. Each complete loop encircles the core, providing uniform pressure from all sides (unlike ties, which only confine at the corners/edges). This continuous confinement makes spiral columns significantly stronger and more ductile (capable of larger deformations before collapse) than tied columns.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A roof drainage layout. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Continuous helical reinforcement used for confinement in compression members. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "A wall paint texture. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "A note that replaces longitudinal bars. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Continuous helical reinforcement used for confinement in compression members. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 10",
+      "explanation": "Continuous helical reinforcement used for confinement in compression members. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +429,36 @@
       "model_id": "ALE-STRC-006-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:aef9fad5be6327f2f5afa9f919bc208b99505e0cb8990d78a9ea63dbd173cc7f"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:75506d7518a9c1d5f3e161a75f18cca6433b01c9a26fa2e8623dd3ddae7ba8df",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "fb30219c-aa24-41b2-86df-7949b948d963",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "Ties in a reinforced concrete column are distinguished from stirrups by:",
+      "text": "Why are bend diameters controlled?",
       "options": [
         {
           "id": "a",
-          "text": "Ties use 90-degree bends while stirrups use 135-degree bends, which is a common misconception"
+          "text": "To eliminate the need for member design."
         },
         {
           "id": "b",
-          "text": "Ties are used in columns to confine the core and prevent bar buckling; stirrups are used in beams to resist shear"
+          "text": "To anchor reinforcement while avoiding damaging bends and poor detailing behavior."
         },
         {
           "id": "c",
-          "text": "Ties are welded while stirrups are not, which is not a standard practice"
+          "text": "To set the room finish schedule."
         },
         {
           "id": "d",
-          "text": "Ties can be spaced farther apart and do not require corner bends, which is incorrect for structural integrity"
+          "text": "To make all bar sizes identical."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +467,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The key distinction is structural location and function: Ties confine the concrete core in columns and prevent longitudinal bar buckling under compression. Stirrups resist shear in beams. Ties typically have 135-degree corner bends (not 90 degrees), which provide better confinement. This distinction is critical for correct detailing.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "To eliminate the need for member design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "To anchor reinforcement while avoiding damaging bends and poor detailing behavior. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "To set the room finish schedule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "To make all bar sizes identical. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "To anchor reinforcement while avoiding damaging bends and poor detailing behavior. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318",
+      "explanation": "To anchor reinforcement while avoiding damaging bends and poor detailing behavior. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -401,30 +491,36 @@
       "model_id": "ALE-STRC-006-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6965e8cea7de4cebe90d6dee60b4a85554f8c51eaf84904e88cb87c9c4b5af07"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:821bdc745c2cdf14f7fc5b14c5d1ee9b4ed3746d4351f9365ecc88c484f5003b",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "e4998612-b0ea-4188-9cd5-e236b11b4800",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "A 20 mm diameter deformed bar has a cross-sectional area of approximately:",
+      "text": "What does reinforcement congestion threaten?",
       "options": [
         {
           "id": "a",
-          "text": "201 mm²"
+          "text": "Only the title block size."
         },
         {
           "id": "b",
-          "text": "314 mm²"
+          "text": "Proper concrete placement, consolidation, cover, and bond."
         },
         {
           "id": "c",
-          "text": "400 mm²"
+          "text": "Only the drawing border lineweight."
         },
         {
           "id": "d",
-          "text": "491 mm²"
+          "text": "Only the north arrow."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +529,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The cross-sectional area of a 20 mm bar is 314 mm² (π × 10² ≈ 314). The standard values for common bar sizes are: 10mm=78.5, 12mm=113, 16mm=201, 20mm=314, 25mm=491, 32mm=804 mm². These must be memorized for quick calculations.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only the title block size. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Proper concrete placement, consolidation, cover, and bond. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "Only the drawing border lineweight. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Only the north arrow. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Proper concrete placement, consolidation, cover, and bond. Supported by detailing-concrete.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-concrete",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PS 249:2008; PNSC 2015",
+      "explanation": "Proper concrete placement, consolidation, cover, and bond. Supported by the Batch 144 local source boundary: detailing-concrete.",
+      "code_citation": "detailing-concrete",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -451,30 +553,36 @@
       "model_id": "ALE-STRC-006-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9a63ba28926e3fafda0800bd9437db16ec827a4b652a443fc84994a2ffc3a9b0"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:d80385112c976c23ca48daf7acd1f0050eed3177ba7c740e39d49e298eda891d",
+      "source_ids": [
+        "detailing-concrete"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "8852de17-7b38-4835-ae07-f6291c1eaaa8",
       "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
       "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
-      "text": "Deformed reinforcing bars have ribs rolled onto their surface primarily to:",
+      "text": "What is the safest site-inspection reaction to lap splices and wide tie spacing near a joint?",
       "options": [
         {
           "id": "a",
-          "text": "Reduce the weight of the bar and lower cost, which is a common misconception"
+          "text": "Approve it if the bars are visible."
         },
         {
           "id": "b",
-          "text": "Improve mechanical bonding with concrete and prevent slip under load"
+          "text": "Check anchorage, confinement, cover, spacing, and whether splice location matches detailing intent."
         },
         {
           "id": "c",
-          "text": "Increase the cross-sectional area available to carry tension, which is not the primary purpose"
+          "text": "Ignore the issue because concrete will hide it."
         },
         {
           "id": "d",
-          "text": "Protect the bar from corrosion by creating a barrier layer, although this is not the main function"
+          "text": "Replace the structural review with a finish inspection."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +591,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Deformed bars have rolled ribs that mechanically interlock with concrete surrounding the bar. This prevents slip and allows stress transfer without relying on surface friction alone. The ribs are the defining feature that distinguishes 'deformed' bars from smooth bars.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Approve it if the bars are visible. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "b": "Check anchorage, confinement, cover, spacing, and whether splice location matches detailing intent. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+        "c": "Ignore the issue because concrete will hide it. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "d": "Replace the structural review with a finish inspection. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+        "correct": "Check anchorage, confinement, cover, spacing, and whether splice location matches detailing intent. Supported by detailing-rebar.",
+        "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-rebar",
+        "checked_sources": [
+          "detailing-rebar",
+          "detailing-concrete"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PS 249:2008; PNSC 2015, Chapter 7",
+      "explanation": "Check anchorage, confinement, cover, spacing, and whether splice location matches detailing intent. Supported by the Batch 144 local source boundary: detailing-rebar.",
+      "code_citation": "detailing-rebar",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -501,8 +615,14 @@
       "model_id": "ALE-STRC-006-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:29bc21a5088163684117d456e05d959fb60c8ec22f4224c81e2588bfb05e8455"
+      "updated_at": "2026-05-14T02:09:00.146Z",
+      "content_hash": "sha256:25db6efd3e9fa4890a5967280621c4baa31386612f1fa94eb17b11ee5ec964ff",
+      "source_ids": [
+        "detailing-rebar"
+      ],
+      "cluster_id": "lea-strc-006-02",
+      "audit_batch": 144,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "5bbf562c-83e5-45ec-9b01-a2fd23ab51d6",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:f8b1d10df293f89f4c37a6b4211fa9cda3a1e13bf5ec0c526a218f3ad2a40c5c",
+  "after_hash": "sha256:b485d7a3531b6d9b661cafda718858d64bdb133d1d120c813863b541494dbf36",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "Aggregate size decides the drawing sheet size. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Concrete must pass between bars, consolidate, and bond around reinforcement. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "Bar spacing is unrelated to concrete placement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Large aggregate always improves congestion. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Concrete must pass between bars, consolidate, and bond around reinforcement. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "7044eee0-f6aa-4583-a5d5-0855fc76271c",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:d447e6fd6a1f7446834fa6b3c75b9ac5ca8d80fe4a0b7efffe9b8e9a09993e99",
+  "after_hash": "sha256:75506d7518a9c1d5f3e161a75f18cca6433b01c9a26fa2e8623dd3ddae7ba8df",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "A roof drainage layout. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Continuous helical reinforcement used for confinement in compression members. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "A wall paint texture. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "A note that replaces longitudinal bars. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Continuous helical reinforcement used for confinement in compression members. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

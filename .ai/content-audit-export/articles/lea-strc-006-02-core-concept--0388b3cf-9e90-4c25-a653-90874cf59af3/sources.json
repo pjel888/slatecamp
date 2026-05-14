@@ -1,56 +1,68 @@
 {
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
   "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d7308ba9979fe66b725663313b28a301584759b469483eabd9eb1039dc2c9ad9",
-  "source_count": 4,
+  "cluster_id": "lea-strc-006-02",
+  "slug": "lea-strc-006-02-core-concept",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources_hash": "sha256:64707cbb671c36d880a0f8b8317fc1f948c646f910bf2a70849aad16d5c5b3ed",
   "sources": [
     {
-      "source_id": "6636f178-40e7-414f-a684-4e6c7e43f232",
-      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
-      "label": "Philippine Standard PS 249:2008 (Deformed Bars for Reinforced Concrete)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "id": "detailing-rebar",
+      "title": "Detailing of Reinforcement in Concrete Structures - bars, hooks, spacing, and surface condition",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-rebar.source-capture.md",
+      "local_capture_sha256": "sha256:ec7fc54e9609e5a111552f13d3500d496333f69ed7da5f5e601a9c1351bdd7c9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-rebar.refined.md",
+      "refined_capture_sha256": "sha256:875db4a8bc2669d1d6d9999e4b7fd1d0f770949c12f8535c5144b6fe074cfa3c",
+      "locator": "refined markdown lines 7-35, 46-80, 176-206",
+      "safe_claims": [
+        "The source identifies 180-degree hooks, 90-degree hooks, and 135-degree bends for stirrup and tie anchorage.",
+        "Minimum bend diameters depend on bar size and hook type.",
+        "Reinforcement surfaces must be free from harmful coatings, while ordinary rust or mill scale can be acceptable when bar dimensions and weight remain compliant.",
+        "Spirals and ties confine compression reinforcement and have specific size and spacing limits."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore a complete Philippine reinforcing-bar grade table.",
+        "No local source in this batch was used to state unsupported development-length equations.",
+        "No local source in this batch was used to replace project-specific bar marking or mill-certificate requirements."
+      ]
     },
     {
-      "source_id": "e3c796e9-2412-46f7-92d7-6b85be838243",
-      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
-      "label": "PNSC 2015, Chapter 7: Detailing Requirements",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "bc7548f9-63b4-42d6-b8e9-fce83253910b",
-      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
-      "label": "ASTM A370 (Mechanical Testing of Steel Products)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "a1cb667b-208f-4216-bc68-bd1ab53c846d",
-      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
-      "label": "ASTM C234 (Bond Strength)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-concrete",
+      "title": "Detailing of Reinforcement in Concrete Structures - cover, exposure, spacing, and mix limits",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-concrete.source-capture.md",
+      "local_capture_sha256": "sha256:eca9f3ccd9b5dd5c41d42f73c8c3ff540cd5a2c813ac32d223baa9936f7131f0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-concrete.refined.md",
+      "refined_capture_sha256": "sha256:ef728f7901e8227a0dd4e3eaa5e34629810b3c60ff5f15fe71bfc31f8b7f4129",
+      "locator": "refined markdown lines 46-80, 91-132",
+      "safe_claims": [
+        "Reinforcement must be accurately placed and adequately supported before concrete is placed.",
+        "Minimum spacing between parallel bars is tied to bar diameter, aggregate size, and clear dimension requirements.",
+        "Cover requirements vary with exposure, contact with earth or weather, and concrete member type.",
+        "The source links exposure conditions to maximum water-cement ratio, minimum cement content, and aggregate size."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore a complete Philippine reinforcing-bar grade table.",
+        "No local source in this batch was used to state unsupported development-length equations.",
+        "No local source in this batch was used to replace project-specific bar marking or mill-certificate requirements."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore a complete Philippine reinforcing-bar grade table.",
+    "No local source in this batch was used to state unsupported development-length equations.",
+    "No local source in this batch was used to replace project-specific bar marking or mill-certificate requirements."
   ]
 }

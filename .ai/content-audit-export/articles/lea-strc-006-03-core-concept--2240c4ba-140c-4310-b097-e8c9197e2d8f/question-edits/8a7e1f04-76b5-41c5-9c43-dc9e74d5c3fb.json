@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "8a7e1f04-76b5-41c5-9c43-dc9e74d5c3fb",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ce12b5529bfbf7e868a4f3b4efad768e07859af915b083430f1f61d258522ff6",
+  "after_hash": "sha256:5f233552761c21fb9e7f44ab82cbc6c30a559516ecd9596a33eccac3fcd09b03",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-bending"
+  ],
+  "rationale": {
+    "a": "All shear force disappears from the structure. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Bending stress changes from compression to tension at that reference location. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "c": "The beam no longer needs reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Concrete cover becomes zero. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Bending stress changes from compression to tension at that reference location. Supported by bsi-bending.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-bending",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

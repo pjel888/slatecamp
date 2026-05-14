@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "a61a276b-47ec-4e27-9be3-4eaee2fc65b8",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:5b8e16fb6258de019cb014b7312a0a116317d9b96c9a8d2099ad610266cc9c2e",
+  "after_hash": "sha256:9b07583db1567d84956dd32b7cce1fb8a67f0b1a99eb4d19daddd490b9eb086b",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "No cover because weather will wash the concrete. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Tighter durability control, including attention to cover and water-cement limits. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "Larger aggregate regardless of bar spacing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Ignoring reinforcement position during placing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Tighter durability control, including attention to cover and water-cement limits. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}

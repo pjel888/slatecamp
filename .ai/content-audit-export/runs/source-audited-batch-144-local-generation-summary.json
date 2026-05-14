@@ -1,0 +1,62 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "baseline": "71fff2685",
+  "status": "passed_local_validation_git_handoff_pending",
+  "generated_at": "2026-05-14T02:09:00.581Z",
+  "selected_clusters": [
+    "lea-strc-005-02",
+    "lea-strc-005-03",
+    "lea-strc-006-01",
+    "lea-strc-006-02",
+    "lea-strc-006-03"
+  ],
+  "blocked_residuals_not_edited": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    }
+  ],
+  "validation": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "targeted_tests": {
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+    "status": "pass"
+  }
+}

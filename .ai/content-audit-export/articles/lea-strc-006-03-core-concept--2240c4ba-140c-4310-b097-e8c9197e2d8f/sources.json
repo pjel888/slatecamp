@@ -1,44 +1,91 @@
 {
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
   "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:788e3ef4155aafd8fa1699a51902966c18bd8b31dba9519ad2a6d1cccfcb0325",
+  "cluster_id": "lea-strc-006-03",
+  "slug": "lea-strc-006-03-core-concept",
+  "source_strategy": "local_first",
   "source_count": 3,
+  "sources_hash": "sha256:4fcf263ee8b139a3790e42b36eea7b89746eb3605862d8a75f42845885f4c7eb",
   "sources": [
     {
-      "source_id": "3ec53231-afa0-4a1b-a19b-534ecc4f3945",
-      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
-      "label": "PNSC 2015, Chapter 5: Flexural Analysis and Design",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "bsi-bending",
+      "title": "Building Structures Illustrated - beam bending, neutral axis, shear, and deflection",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-bending.source-capture.md",
+      "local_capture_sha256": "sha256:aa2196067719986ba49ee0c57745dab1bc605c455c9bc8128aba8b713399159c",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-bending.refined.md",
+      "refined_capture_sha256": "sha256:b6f1df3325485c8d26c3cf58137d3805858b57d8dcb342c8377157278712d1ef",
+      "locator": "refined markdown lines 1986-2010, 2118-2125",
+      "safe_claims": [
+        "A beam resists bending with compression on one side of the neutral axis and tension on the other.",
+        "Bending stresses increase with distance from the neutral axis.",
+        "Shear and deflection remain part of the beam check and can govern member sizing.",
+        "Concentrated and distributed loads affect the beam response and must be traced to supports."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact Whitney stress-block constants.",
+        "No local source in this batch was used to state exact concrete ultimate strain limits.",
+        "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+      ]
     },
     {
-      "source_id": "9cf35716-50ad-4bcd-a28f-0cdf7248e064",
-      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
-      "label": "ACI 318-14, Chapter 3: Design Assumptions and Strength Criteria. \"Reinforced Concrete Mechanics and Design\" textbooks (standard strain-compatibility principles)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "fundamentals-strength",
+      "title": "Fundamentals of Structural Engineering - service loads, factored loads, and ultimate demand",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+      "raw_artifact_sha256": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+      "refined_artifact_sha256": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+      "local_capture_sha256": "sha256:16402243404c02c1cbfb8dad3137cfaf499b1fcc487a422d586202b9741f0967",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+      "refined_capture_sha256": "sha256:8e4364746011bc38178dce5c23e0aaf573337bc5b2ea36b09872ed1e2481acf7",
+      "locator": "refined markdown lines 30205-30260, 30709-30749, 62077, 62222, 62417",
+      "safe_claims": [
+        "The source distinguishes service load quantities from factored ultimate demand such as Pu in design examples.",
+        "Examples use factored load combinations for strength design while also considering service-load quantities in foundation work.",
+        "Factored axial force and factored moment are demand quantities that must be compared against the corresponding resistance format."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact Whitney stress-block constants.",
+        "No local source in this batch was used to state exact concrete ultimate strain limits.",
+        "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+      ]
     },
     {
-      "source_id": "0981dfeb-0f2a-44c5-b1cd-7dfdce4f0ded",
-      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
-      "label": "ASTM C78 and C293 (Flexural Testing)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-flexural",
+      "title": "Detailing of Reinforcement in Concrete Structures - flexural and seismic detailing",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-flexural.source-capture.md",
+      "local_capture_sha256": "sha256:7363901be4ca11451c1f145c4cd47b7aae73139f98214ea7c0d2403c83a67b1f",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-flexural.refined.md",
+      "refined_capture_sha256": "sha256:8def2b40b5da87ebe98089da396b58169a7599c2445c5ef84e89d1e7aa40ca12",
+      "locator": "refined markdown lines 637-676, 900-910, 923-940",
+      "safe_claims": [
+        "The source gives flexural-member detailing constraints for earthquake-resistant frames, including reinforcement ratio bounds and lap splice restrictions.",
+        "Hoops and closed ties are part of the confinement and shear detailing response around critical regions.",
+        "Support regions and beam-column joints require attention because reinforcement continuity and confinement affect ductile behavior."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact Whitney stress-block constants.",
+        "No local source in this batch was used to state exact concrete ultimate strain limits.",
+        "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore exact Whitney stress-block constants.",
+    "No local source in this batch was used to state exact concrete ultimate strain limits.",
+    "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
   ]
 }

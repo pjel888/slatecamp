@@ -1,0 +1,764 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "baseline": "71fff2685",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_pending",
+  "generated_at": "2026-05-14T02:09:00.580Z",
+  "task": "Residual non-prac local-first article and linked-question pass after Batch 143 structural clusters.",
+  "consumed_previous_batch_clusters": [
+    "lea-strc-004-01",
+    "lea-strc-004-03",
+    "lea-strc-004-04",
+    "lea-strc-004-05",
+    "lea-strc-005-01"
+  ],
+  "blocked_residuals_not_edited": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    }
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-strc-005-02",
+      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+      "slug": "lea-strc-005-02-core-concept",
+      "title": "Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "fundamentals-strength",
+        "bsi-design"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:133df988c42ca252ec6fe842c3228f8e72016b493b06ea7e67070fa6b86f9039",
+      "candidate_sha256": "sha256:133df988c42ca252ec6fe842c3228f8e72016b493b06ea7e67070fa6b86f9039",
+      "source_evidence_sha256": "sha256:2db35b20770e2e465ece739b0991edceb6ab398f09fbf9c6a0ba9d6b0fb83949",
+      "linked_questions_sha256": "sha256:73bccc26d355fb8e600b0f61da5cc22438a029258eaa378dcd6d42c5067078a0",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore exact NSCP strength reduction factor tables.",
+        "No local source in this batch was used to restore a complete load-combination table beyond cited example combinations.",
+        "No local source in this batch was used to state unsupported member-specific resistance formulas."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/scoped-validation-batch-144.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/ccf2e8d9-478a-44d0-aa29-afe9cd8b9df0.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/8a104f41-185d-4ab8-8f19-5906b53eb21e.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/869dc89f-4616-4130-89d3-8e3c27fb9947.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/3c657ee2-5f0e-401a-8b1a-36f9f45c4c00.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/da1869ef-90e3-48b6-8d8c-37ea69e63e85.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/9ac04b85-2eb6-4967-b05d-c039c3087424.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/7febc9cf-73c8-486d-8fe9-29f9c714b462.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/f36b62c4-3461-4043-a07d-3fa57804e653.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/9ab67928-0f20-4fbe-b3d1-798702b6534a.json",
+          ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/b8b8591e-b88c-47ed-b32d-39b646ae8623.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-005-03",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "slug": "lea-strc-005-03-core-concept",
+      "title": "Allowable Stress Design and Working-Stress Checks",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "mechanics-allowable",
+        "bsi-design",
+        "bsi-bending"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:3b4a58f228c30fb1efddf83a82d1f05df64554f39084476e71db2dd5299372fe",
+      "candidate_sha256": "sha256:3b4a58f228c30fb1efddf83a82d1f05df64554f39084476e71db2dd5299372fe",
+      "source_evidence_sha256": "sha256:ac3ede43690f3399daf978f2ac04b0277d8678438734c2832952bb6b9d092f35",
+      "linked_questions_sha256": "sha256:e69b2ac865f635c5b66cdf8cc562d5b46c580cf3cce423070a5a51d21827f46a",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to state exact A36 steel allowable-stress fractions.",
+        "No local source in this batch was used to replace local code tables for material-specific allowable values.",
+        "No local source in this batch was used to collapse buckling or deflection checks into a stress-only rule."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/scoped-validation-batch-144.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/2f11d79e-d2f1-4cb6-853b-a5100c5c0ab0.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/7bcd5090-4aa1-4fd5-a52b-54d5d5e94fab.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/104dbdfe-ec95-4e5c-a4de-1e346e32d5cf.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/bdb6f9d9-14ae-40c4-b4f4-70d77cc87270.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/7398985d-e3a6-4e52-b62a-96088a4e37a0.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/20d482ed-1184-4443-9d6c-957f5cb9e0ce.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/be352df0-c71e-48bc-ae25-ac18bf1c8814.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/73d3f973-45ee-4581-8e57-e2b238ece6c2.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/75e51e43-0a5d-424c-b3c7-4919e7345353.json",
+          ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/ca9430e3-6362-48d4-96a3-55ba5fc787be.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-006-01",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "slug": "lea-strc-006-01-core-concept",
+      "title": "Concrete Materials, Cover, and Exposure-Controlled Mix Limits",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "detailing-concrete",
+        "bsi-concrete"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:5ccaa592c99bbd790ba766312ed5af1aab997a6735b3a6c2d9fb08a5377b1e33",
+      "candidate_sha256": "sha256:5ccaa592c99bbd790ba766312ed5af1aab997a6735b3a6c2d9fb08a5377b1e33",
+      "source_evidence_sha256": "sha256:4dcaa128b3b0f3f6ac8848b812634fa91f3e54de250b9740d85157326075e55a",
+      "linked_questions_sha256": "sha256:d27a63ccbeef5db2ca8b8ba1bb29e543e2cb47b402719c9e878312a3b1d1733a",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore unsupported slump or compressive-strength test details.",
+        "No local source in this batch was used to state a full concrete-classification table beyond the captured cover and exposure material.",
+        "No local source in this batch was used to replace project specification requirements for mix design approval."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/scoped-validation-batch-144.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/f242783b-a63f-4ed0-9fa9-638ae204dc09.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/a61a276b-47ec-4e27-9be3-4eaee2fc65b8.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/5bbf562c-83e5-45ec-9b01-a2fd23ab51d6.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/d1ce9666-9eec-4d7d-bd26-2b0be7d4cd0a.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/1c5e085e-5724-43ac-a77a-0deb8b537aca.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/29f264f6-1a48-4429-be8a-449ddcc34047.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/31b56717-88a8-4074-98ba-d0f6c4953f46.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/a449bc3a-c626-4742-9e33-3f1d1a43a884.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/5ce99a97-aaf0-433e-9fbd-605739633562.json",
+          ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/d52a0538-49ee-437d-819e-a5788d5133aa.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-006-02",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "slug": "lea-strc-006-02-core-concept",
+      "title": "Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "detailing-rebar",
+        "detailing-concrete"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:2cbe0a88e3402e104865a56a8e4d9db3f5079ce666d2b36e32a7db09548e81ee",
+      "candidate_sha256": "sha256:2cbe0a88e3402e104865a56a8e4d9db3f5079ce666d2b36e32a7db09548e81ee",
+      "source_evidence_sha256": "sha256:276face363450652f9a260a44b43c257235ba7494c01a7ebf02c4c56a7ca4503",
+      "linked_questions_sha256": "sha256:1cfac6f6ed43e2db1d6bfef6a9b807070db108f7d4059f3343affcbc368933af",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore a complete Philippine reinforcing-bar grade table.",
+        "No local source in this batch was used to state unsupported development-length equations.",
+        "No local source in this batch was used to replace project-specific bar marking or mill-certificate requirements."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/scoped-validation-batch-144.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/9556ec7e-e872-4a67-81c8-7bba8f856370.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/01b5a138-9b27-41b0-a643-13df3b69a44e.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/0913e1c6-52f4-4967-b941-6afedcdabc3e.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/4987d103-c0cf-4912-ba97-42804ee56f6d.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/5946cd54-365a-47bb-8e06-0b43480bfac9.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/b9b5597d-f7a4-46d7-9822-c6690e8d8ceb.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/7044eee0-f6aa-4583-a5d5-0855fc76271c.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/fb30219c-aa24-41b2-86df-7949b948d963.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/e4998612-b0ea-4188-9cd5-e236b11b4800.json",
+          ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/8852de17-7b38-4835-ae07-f6291c1eaaa8.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-006-03",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "slug": "lea-strc-006-03-core-concept",
+      "title": "Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bsi-bending",
+        "fundamentals-strength",
+        "detailing-flexural"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
+      "candidate_sha256": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
+      "source_evidence_sha256": "sha256:c704ac747f2309b21b0193c8b8939b3e001f8502904d32d49fac784a6b12e7c9",
+      "linked_questions_sha256": "sha256:68da7fff20c82e56a76711ef79cac01d37c0dcb497fe12a417877ecd09267dbf",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore exact Whitney stress-block constants.",
+        "No local source in this batch was used to state exact concrete ultimate strain limits.",
+        "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/scoped-validation-batch-144.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/8a7e1f04-76b5-41c5-9c43-dc9e74d5c3fb.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/4d7e99ff-b57c-4bba-8571-d25439ec21fa.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/32e6ba83-baa0-4058-bd03-d1ba4341b1f9.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/adf18fe4-61e2-403c-9cfb-cb6aaf9b903a.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/f71fc536-952c-4314-9c74-c16ce53cf754.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/9ebeb33b-0b42-4328-8351-cd32b3962c01.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/2c357b48-3367-4292-9263-3ef24985542d.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/652cfeb6-9fe2-423d-ab06-9b9091f242e6.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/41b435a7-37af-4095-9116-0d3af76b423d.json",
+          ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/627f1624-6508-4794-a8ef-ef18938735bb.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/compose-error.json"
+      }
+    }
+  ],
+  "source_records": {
+    "bsiDesign": {
+      "id": "bsi-design",
+      "title": "Building Structures Illustrated - structural design and allowable stress",
+      "locator": "refined markdown lines 799-801, 1020-1026, 1046-1064, 1986-2010, 2118-2125",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+        "exists": true,
+        "bytes": 38160628,
+        "sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+        "exists": true,
+        "bytes": 576829,
+        "sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-design.source-capture.md",
+        "exists": true,
+        "bytes": 2013,
+        "sha256": "sha256:2e95d9e7387a14b50b7485034cdf0259841cbed721d4aeed992441f1fd4a9dd8"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-design.refined.md",
+        "exists": true,
+        "bytes": 1462,
+        "sha256": "sha256:e796721d11e13ab1b935ffa4eca43cadcc12d9f0285871abbe90af968a2e7303"
+      },
+      "source_boundary_sha256": "sha256:19a5509eac3caa0ca645a36da4359e914fa3b88c7debaa6a622fa36314e8afc2"
+    },
+    "bsiBending": {
+      "id": "bsi-bending",
+      "title": "Building Structures Illustrated - beam bending, neutral axis, shear, and deflection",
+      "locator": "refined markdown lines 1986-2010, 2118-2125",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+        "exists": true,
+        "bytes": 38160628,
+        "sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+        "exists": true,
+        "bytes": 576829,
+        "sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-bending.source-capture.md",
+        "exists": true,
+        "bytes": 1770,
+        "sha256": "sha256:aa2196067719986ba49ee0c57745dab1bc605c455c9bc8128aba8b713399159c"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-bending.refined.md",
+        "exists": true,
+        "bytes": 1218,
+        "sha256": "sha256:b6f1df3325485c8d26c3cf58137d3805858b57d8dcb342c8377157278712d1ef"
+      },
+      "source_boundary_sha256": "sha256:5dddd1b0e785c0952f1d5dbe8cf96ab8c4e5294e45b0013582fa97ef660d36ad"
+    },
+    "bsiConcrete": {
+      "id": "bsi-concrete",
+      "title": "Building Structures Illustrated - concrete structural context",
+      "locator": "refined markdown lines 714-801, 1046-1064, 1986-2010",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+        "exists": true,
+        "bytes": 38160628,
+        "sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+        "exists": true,
+        "bytes": 576829,
+        "sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-concrete.source-capture.md",
+        "exists": true,
+        "bytes": 1783,
+        "sha256": "sha256:ad552fa2cb60639c59eaa173a1707d01f440d58c94a685b7ab435a099aa3317d"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-concrete.refined.md",
+        "exists": true,
+        "bytes": 1230,
+        "sha256": "sha256:14ecec82971364f4c398f6f70fe1a7f0aaebe7afe8156b1fde0d0d9fb65e1095"
+      },
+      "source_boundary_sha256": "sha256:fdb367402cbc86badd0a1b8aa00951b2d761f07993775779eec6493ef760421f"
+    },
+    "mechanicsAllowable": {
+      "id": "mechanics-allowable",
+      "title": "Mechanics and Strength of Materials - allowable stress method and bending stress",
+      "locator": "refined markdown lines 8438-8545, 11940-11962, 26528-26538",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+        "exists": true,
+        "bytes": 27722613,
+        "sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+        "exists": true,
+        "bytes": 1093958,
+        "sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/mechanics-allowable.source-capture.md",
+        "exists": true,
+        "bytes": 1841,
+        "sha256": "sha256:59c2854a4e849ea391757011239d56ae1f3d05dc873a10912c9ead47eba60c48"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/mechanics-allowable.refined.md",
+        "exists": true,
+        "bytes": 1289,
+        "sha256": "sha256:fba04162cd9747db2a0c25b504e11ff16d08b1c6f3d63896d4c2b6377a238135"
+      },
+      "source_boundary_sha256": "sha256:fb76a0f9e7f2938548845dd3a492a4ba21b3fc8c43c38ac9d4baed1cee6eb0c5"
+    },
+    "fundamentalsStrength": {
+      "id": "fundamentals-strength",
+      "title": "Fundamentals of Structural Engineering - service loads, factored loads, and ultimate demand",
+      "locator": "refined markdown lines 30205-30260, 30709-30749, 62077, 62222, 62417",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+        "exists": true,
+        "bytes": 23390398,
+        "sha256": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+        "exists": true,
+        "bytes": 1200827,
+        "sha256": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+        "exists": true,
+        "bytes": 1822,
+        "sha256": "sha256:16402243404c02c1cbfb8dad3137cfaf499b1fcc487a422d586202b9741f0967"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+        "exists": true,
+        "bytes": 1269,
+        "sha256": "sha256:8e4364746011bc38178dce5c23e0aaf573337bc5b2ea36b09872ed1e2481acf7"
+      },
+      "source_boundary_sha256": "sha256:034474a5ae5e4efefca366ad7582c43a2ecff3e991710ae7f783176884e506f8"
+    },
+    "detailingConcrete": {
+      "id": "detailing-concrete",
+      "title": "Detailing of Reinforcement in Concrete Structures - cover, exposure, spacing, and mix limits",
+      "locator": "refined markdown lines 46-80, 91-132",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+        "exists": true,
+        "bytes": 719226,
+        "sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+        "exists": true,
+        "bytes": 86165,
+        "sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-concrete.source-capture.md",
+        "exists": true,
+        "bytes": 1859,
+        "sha256": "sha256:eca9f3ccd9b5dd5c41d42f73c8c3ff540cd5a2c813ac32d223baa9936f7131f0"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-concrete.refined.md",
+        "exists": true,
+        "bytes": 1307,
+        "sha256": "sha256:ef728f7901e8227a0dd4e3eaa5e34629810b3c60ff5f15fe71bfc31f8b7f4129"
+      },
+      "source_boundary_sha256": "sha256:a56dff34c72bb4cef9cdc0e97cdedfe40338a18dc715866c45fd5d7dad1cd671"
+    },
+    "detailingRebar": {
+      "id": "detailing-rebar",
+      "title": "Detailing of Reinforcement in Concrete Structures - bars, hooks, spacing, and surface condition",
+      "locator": "refined markdown lines 7-35, 46-80, 176-206",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+        "exists": true,
+        "bytes": 719226,
+        "sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+        "exists": true,
+        "bytes": 86165,
+        "sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-rebar.source-capture.md",
+        "exists": true,
+        "bytes": 1876,
+        "sha256": "sha256:ec7fc54e9609e5a111552f13d3500d496333f69ed7da5f5e601a9c1351bdd7c9"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-rebar.refined.md",
+        "exists": true,
+        "bytes": 1324,
+        "sha256": "sha256:875db4a8bc2669d1d6d9999e4b7fd1d0f770949c12f8535c5144b6fe074cfa3c"
+      },
+      "source_boundary_sha256": "sha256:3acdd4eb4309c7e132e42ad6ceb36e26057a6cb68ab21cb7183504dc6fd0bf34"
+    },
+    "detailingFlexural": {
+      "id": "detailing-flexural",
+      "title": "Detailing of Reinforcement in Concrete Structures - flexural and seismic detailing",
+      "locator": "refined markdown lines 637-676, 900-910, 923-940",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+        "exists": true,
+        "bytes": 719226,
+        "sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+        "exists": true,
+        "bytes": 86165,
+        "sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-flexural.source-capture.md",
+        "exists": true,
+        "bytes": 1835,
+        "sha256": "sha256:7363901be4ca11451c1f145c4cd47b7aae73139f98214ea7c0d2403c83a67b1f"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-flexural.refined.md",
+        "exists": true,
+        "bytes": 1282,
+        "sha256": "sha256:8def2b40b5da87ebe98089da396b58169a7599c2445c5ef84e89d1e7aa40ca12"
+      },
+      "source_boundary_sha256": "sha256:196e629dd0c36512cd244e4bf8d60f2b853d90b65eca6e554284acf16df62b78"
+    }
+  },
+  "validation": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "required_artifacts": {
+    "manifest": ".ai/03_plans/production-line-batch-144-manifest.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-144-local-first-report.md",
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-144-local-first-ledger.json",
+    "scopedChecks": ".ai/content-audit-export/source-audited-article-batch-144-local-first-scoped-checks.json",
+    "qualityReview": ".ai/03_plans/batch-144-independent-quality-review.md",
+    "stageList": ".ai/03_plans/batch-144-git-handoff-stage-list.md",
+    "stagePaths": ".ai/03_plans/batch-144-git-handoff-stage-paths.txt",
+    "generationSummary": ".ai/content-audit-export/runs/source-audited-batch-144-local-generation-summary.json",
+    "contentGenerationSummary": ".ai/content-audit-export/source-audited-article-batch-144-local-first-content-generation-summary.json"
+  },
+  "stage_paths": [
+    ".ai/03_plans/batch-144-git-handoff-stage-list.md",
+    ".ai/03_plans/batch-144-git-handoff-stage-paths.txt",
+    ".ai/03_plans/batch-144-independent-quality-review.md",
+    ".ai/03_plans/production-line-batch-144-manifest.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/3c657ee2-5f0e-401a-8b1a-36f9f45c4c00.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/7febc9cf-73c8-486d-8fe9-29f9c714b462.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/869dc89f-4616-4130-89d3-8e3c27fb9947.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/8a104f41-185d-4ab8-8f19-5906b53eb21e.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/9ab67928-0f20-4fbe-b3d1-798702b6534a.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/9ac04b85-2eb6-4967-b05d-c039c3087424.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/b8b8591e-b88c-47ed-b32d-39b646ae8623.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/ccf2e8d9-478a-44d0-aa29-afe9cd8b9df0.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/da1869ef-90e3-48b6-8d8c-37ea69e63e85.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/question-edits/f36b62c4-3461-4043-a07d-3fa57804e653.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/scoped-validation-batch-144.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/104dbdfe-ec95-4e5c-a4de-1e346e32d5cf.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/20d482ed-1184-4443-9d6c-957f5cb9e0ce.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/2f11d79e-d2f1-4cb6-853b-a5100c5c0ab0.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/7398985d-e3a6-4e52-b62a-96088a4e37a0.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/73d3f973-45ee-4581-8e57-e2b238ece6c2.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/75e51e43-0a5d-424c-b3c7-4919e7345353.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/7bcd5090-4aa1-4fd5-a52b-54d5d5e94fab.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/bdb6f9d9-14ae-40c4-b4f4-70d77cc87270.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/be352df0-c71e-48bc-ae25-ac18bf1c8814.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/question-edits/ca9430e3-6362-48d4-96a3-55ba5fc787be.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/scoped-validation-batch-144.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/1c5e085e-5724-43ac-a77a-0deb8b537aca.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/29f264f6-1a48-4429-be8a-449ddcc34047.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/31b56717-88a8-4074-98ba-d0f6c4953f46.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/5bbf562c-83e5-45ec-9b01-a2fd23ab51d6.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/5ce99a97-aaf0-433e-9fbd-605739633562.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/a449bc3a-c626-4742-9e33-3f1d1a43a884.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/a61a276b-47ec-4e27-9be3-4eaee2fc65b8.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/d1ce9666-9eec-4d7d-bd26-2b0be7d4cd0a.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/d52a0538-49ee-437d-819e-a5788d5133aa.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/question-edits/f242783b-a63f-4ed0-9fa9-638ae204dc09.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/scoped-validation-batch-144.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/01b5a138-9b27-41b0-a643-13df3b69a44e.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/0913e1c6-52f4-4967-b941-6afedcdabc3e.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/4987d103-c0cf-4912-ba97-42804ee56f6d.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/5946cd54-365a-47bb-8e06-0b43480bfac9.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/7044eee0-f6aa-4583-a5d5-0855fc76271c.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/8852de17-7b38-4835-ae07-f6291c1eaaa8.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/9556ec7e-e872-4a67-81c8-7bba8f856370.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/b9b5597d-f7a4-46d7-9822-c6690e8d8ceb.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/e4998612-b0ea-4188-9cd5-e236b11b4800.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/question-edits/fb30219c-aa24-41b2-86df-7949b948d963.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/scoped-validation-batch-144.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/2c357b48-3367-4292-9263-3ef24985542d.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/32e6ba83-baa0-4058-bd03-d1ba4341b1f9.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/41b435a7-37af-4095-9116-0d3af76b423d.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/4d7e99ff-b57c-4bba-8571-d25439ec21fa.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/627f1624-6508-4794-a8ef-ef18938735bb.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/652cfeb6-9fe2-423d-ab06-9b9091f242e6.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/8a7e1f04-76b5-41c5-9c43-dc9e74d5c3fb.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/9ebeb33b-0b42-4328-8351-cd32b3962c01.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/adf18fe4-61e2-403c-9cfb-cb6aaf9b903a.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/question-edits/f71fc536-952c-4314-9c74-c16ce53cf754.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/scoped-validation-batch-144.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f/ui-blocks.json",
+    ".ai/content-audit-export/runs/source-audited-batch-144-local-generation-summary.json",
+    ".ai/content-audit-export/runs/source-audited-batch-144-local-runner.mjs",
+    ".ai/content-audit-export/source-audited-article-batch-144-local-first-content-generation-summary.json",
+    ".ai/content-audit-export/source-audited-article-batch-144-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-144-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-144-local-first-scoped-checks.json",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-bending.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-concrete.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-design.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-concrete.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-flexural.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-rebar.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/mechanics-allowable.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-bending.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-concrete.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-design.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-concrete.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-flexural.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-rebar.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/mechanics-allowable.refined.md"
+  ],
+  "exclusions": [
+    ".ai/00_performance",
+    ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+    ".ai/README.md",
+    ".hermes/skills",
+    ".ai/00_system/philip-ux-ui-calibration.md",
+    "old unrelated content-roundtrip run dirs",
+    ".ai/03_plans/blocked-source-recovery/ prompts/reports",
+    ".ai/content-audit-export/sync-state.json"
+  ],
+  "no_supabase": true,
+  "no_deploy": true,
+  "no_prod_db": true,
+  "no_main_merge": true
+}

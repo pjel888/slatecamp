@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "cluster_id": "lea-strc-005-03",
+  "question_id": "20d482ed-1184-4443-9d6c-957f5cb9e0ce",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:5ebc44b5b3b9b6b432d1a711fffb23908ba08bcf5abfad34d9634f361d8c7b04",
+  "after_hash": "sha256:4f15eded212adfa16ef9cf5244334501bca71ef00e74e779bd1037a4562ec0c5",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "mechanics-allowable",
+    "fundamentals-strength"
+  ],
+  "rationale": {
+    "a": "ASD and strength design are the same comparison with different labels only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "ASD uses service stress versus allowable stress; strength design uses factored demand versus matching resistance. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+    "c": "Strength design uses service stress only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "ASD requires ignoring material behavior. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "ASD uses service stress versus allowable stress; strength design uses factored demand versus matching resistance. Supported by mechanics-allowable; fundamentals-strength.",
+    "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "mechanics-allowable; fundamentals-strength",
+    "checked_sources": [
+      "mechanics-allowable",
+      "bsi-design",
+      "bsi-bending"
+    ]
+  }
+}

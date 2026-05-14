@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "9556ec7e-e872-4a67-81c8-7bba8f856370",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:be621007992d2419db009e66a112372773f64d9d1d87547e39f79f78fbda1e19",
+  "after_hash": "sha256:e5e94852e45ff4fa49b1847ce8f00c9102f682986a3cc1dbe39f7144569e69ac",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "They eliminate the need for concrete cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Their surface shape improves bond between steel and concrete. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "They replace all hooks and anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "They are used only for drawing symbols. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Their surface shape improves bond between steel and concrete. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

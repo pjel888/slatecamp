@@ -1,0 +1,167 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "cluster_id": "lea-strc-006-03",
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "source_strategy": "local_first",
+  "source_count": 3,
+  "sources": [
+    {
+      "id": "bsi-bending",
+      "title": "Building Structures Illustrated - beam bending, neutral axis, shear, and deflection",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-bending.source-capture.md",
+      "local_capture_sha256": "sha256:aa2196067719986ba49ee0c57745dab1bc605c455c9bc8128aba8b713399159c",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-bending.refined.md",
+      "refined_capture_sha256": "sha256:b6f1df3325485c8d26c3cf58137d3805858b57d8dcb342c8377157278712d1ef",
+      "locator": "refined markdown lines 1986-2010, 2118-2125",
+      "safe_claims": [
+        "A beam resists bending with compression on one side of the neutral axis and tension on the other.",
+        "Bending stresses increase with distance from the neutral axis.",
+        "Shear and deflection remain part of the beam check and can govern member sizing.",
+        "Concentrated and distributed loads affect the beam response and must be traced to supports."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact Whitney stress-block constants.",
+        "No local source in this batch was used to state exact concrete ultimate strain limits.",
+        "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+      ]
+    },
+    {
+      "id": "fundamentals-strength",
+      "title": "Fundamentals of Structural Engineering - service loads, factored loads, and ultimate demand",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+      "raw_artifact_sha256": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+      "refined_artifact_sha256": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+      "local_capture_sha256": "sha256:16402243404c02c1cbfb8dad3137cfaf499b1fcc487a422d586202b9741f0967",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+      "refined_capture_sha256": "sha256:8e4364746011bc38178dce5c23e0aaf573337bc5b2ea36b09872ed1e2481acf7",
+      "locator": "refined markdown lines 30205-30260, 30709-30749, 62077, 62222, 62417",
+      "safe_claims": [
+        "The source distinguishes service load quantities from factored ultimate demand such as Pu in design examples.",
+        "Examples use factored load combinations for strength design while also considering service-load quantities in foundation work.",
+        "Factored axial force and factored moment are demand quantities that must be compared against the corresponding resistance format."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact Whitney stress-block constants.",
+        "No local source in this batch was used to state exact concrete ultimate strain limits.",
+        "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+      ]
+    },
+    {
+      "id": "detailing-flexural",
+      "title": "Detailing of Reinforcement in Concrete Structures - flexural and seismic detailing",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-flexural.source-capture.md",
+      "local_capture_sha256": "sha256:7363901be4ca11451c1f145c4cd47b7aae73139f98214ea7c0d2403c83a67b1f",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-flexural.refined.md",
+      "refined_capture_sha256": "sha256:8def2b40b5da87ebe98089da396b58169a7599c2445c5ef84e89d1e7aa40ca12",
+      "locator": "refined markdown lines 637-676, 900-910, 923-940",
+      "safe_claims": [
+        "The source gives flexural-member detailing constraints for earthquake-resistant frames, including reinforcement ratio bounds and lap splice restrictions.",
+        "Hoops and closed ties are part of the confinement and shear detailing response around critical regions.",
+        "Support regions and beam-column joints require attention because reinforcement continuity and confinement affect ductile behavior."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact Whitney stress-block constants.",
+        "No local source in this batch was used to state exact concrete ultimate strain limits.",
+        "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
+  "candidate_sha256": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "8a7e1f04-76b5-41c5-9c43-dc9e74d5c3fb",
+      "content_hash": "sha256:5f233552761c21fb9e7f44ab82cbc6c30a559516ecd9596a33eccac3fcd09b03"
+    },
+    {
+      "question_id": "4d7e99ff-b57c-4bba-8571-d25439ec21fa",
+      "content_hash": "sha256:a154e309f31d10be0cc90fee4c5f81391a7a709e5a1565143c5b3dce8cdd51e6"
+    },
+    {
+      "question_id": "32e6ba83-baa0-4058-bd03-d1ba4341b1f9",
+      "content_hash": "sha256:f699efe06f9e6e0fde97e1e1fa7a32a3ad365ff6153d44c457e99111f05e6592"
+    },
+    {
+      "question_id": "adf18fe4-61e2-403c-9cfb-cb6aaf9b903a",
+      "content_hash": "sha256:46962dc03dee58ec993e134a0140bc719bd239845d5c6986f79758211babf7b6"
+    },
+    {
+      "question_id": "f71fc536-952c-4314-9c74-c16ce53cf754",
+      "content_hash": "sha256:75d1840236ac602d9f093ca08a545a3f29576d29cb464f60b1e0a19c6057e312"
+    },
+    {
+      "question_id": "9ebeb33b-0b42-4328-8351-cd32b3962c01",
+      "content_hash": "sha256:c6ffe5ab6ed6b75e3bcbfdf6993a7f342ee4af4269913655bde4011ad9e523d2"
+    },
+    {
+      "question_id": "2c357b48-3367-4292-9263-3ef24985542d",
+      "content_hash": "sha256:09fea3a49e4359bb98362ba442790b6dde67e4dff92c2ac1eb93688295ff70c5"
+    },
+    {
+      "question_id": "652cfeb6-9fe2-423d-ab06-9b9091f242e6",
+      "content_hash": "sha256:145421e3fca65ae9145bed29a24d8f46671fe7fc203bb34a4db4e83c96173bd6"
+    },
+    {
+      "question_id": "41b435a7-37af-4095-9116-0d3af76b423d",
+      "content_hash": "sha256:18543479115ef95feed0604eb66cffe7262c4296320ed2a8f4661eb22b39404e"
+    },
+    {
+      "question_id": "627f1624-6508-4794-a8ef-ef18938735bb",
+      "content_hash": "sha256:24cd52981a120a1e08cae846a9dca66da25646a04d152841792f44e5bb8f70c3"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code or table values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore exact Whitney stress-block constants.",
+    "No local source in this batch was used to state exact concrete ultimate strain limits.",
+    "No local source in this batch was used to replace local code tables for minimum or maximum flexural steel ratios beyond captured source notes."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    }
+  ]
+}

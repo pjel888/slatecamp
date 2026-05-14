@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "29f264f6-1a48-4429-be8a-449ddcc34047",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:5be6e2dc58d1d12a49d60ca2c06ec9436bc90dd750beef6aca4cb4358aa04de4",
+  "after_hash": "sha256:a17465402f1aa0dd76b8579bf40b2c11dd87def257b10448f389e7d6af2a942b",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "The room name beside the beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Exposure-related cover and water-cement control. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "The color of the title block. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "The sheet border thickness. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Exposure-related cover and water-cement control. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}

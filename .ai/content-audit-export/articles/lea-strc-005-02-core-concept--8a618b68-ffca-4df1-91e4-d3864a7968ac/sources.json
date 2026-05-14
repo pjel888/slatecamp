@@ -1,44 +1,68 @@
 {
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
   "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:5b49a4514c99bc60fc4601492c742686a6deb63545fe92cc24c870e764f59a30",
-  "source_count": 3,
+  "cluster_id": "lea-strc-005-02",
+  "slug": "lea-strc-005-02-core-concept",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources_hash": "sha256:99a98a390081bb71f0df78d60420879859a4e3c8a6ff7ad0a55ddda945aab904",
   "sources": [
     {
-      "source_id": "44127672-21e7-4d6a-815f-6fa395cccd9b",
-      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
-      "label": "National Structural Code of the Philippines (NSCP) 2015, Section 5.3.11 (Strength Reduction Factors)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "fundamentals-strength",
+      "title": "Fundamentals of Structural Engineering - service loads, factored loads, and ultimate demand",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+      "raw_artifact_sha256": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+      "refined_artifact_sha256": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+      "local_capture_sha256": "sha256:16402243404c02c1cbfb8dad3137cfaf499b1fcc487a422d586202b9741f0967",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+      "refined_capture_sha256": "sha256:8e4364746011bc38178dce5c23e0aaf573337bc5b2ea36b09872ed1e2481acf7",
+      "locator": "refined markdown lines 30205-30260, 30709-30749, 62077, 62222, 62417",
+      "safe_claims": [
+        "The source distinguishes service load quantities from factored ultimate demand such as Pu in design examples.",
+        "Examples use factored load combinations for strength design while also considering service-load quantities in foundation work.",
+        "Factored axial force and factored moment are demand quantities that must be compared against the corresponding resistance format."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact NSCP strength reduction factor tables.",
+        "No local source in this batch was used to restore a complete load-combination table beyond cited example combinations.",
+        "No local source in this batch was used to state unsupported member-specific resistance formulas."
+      ]
     },
     {
-      "source_id": "f3625f41-a817-497c-bc5d-425bff3d99fd",
-      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
-      "label": "NSCP 2015, Section 5.3.11 (Strength Reduction Factors)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "6aa89d36-fe72-472a-b437-a5623d17c46d",
-      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
-      "label": "ACI 318 (Building Code Requirements for Structural Concrete), which forms the basis for NSCP concrete provisions",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "bsi-design",
+      "title": "Building Structures Illustrated - structural design and allowable stress",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-design.source-capture.md",
+      "local_capture_sha256": "sha256:2e95d9e7387a14b50b7485034cdf0259841cbed721d4aeed992441f1fd4a9dd8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-design.refined.md",
+      "refined_capture_sha256": "sha256:e796721d11e13ab1b935ffa4eca43cadcc12d9f0285871abbe90af968a2e7303",
+      "locator": "refined markdown lines 799-801, 1020-1026, 1046-1064, 1986-2010, 2118-2125",
+      "safe_claims": [
+        "Structural analysis checks whether a structure can safely carry loads without material distress, excessive deformation, or failure.",
+        "Structural design sizes and proportions members so stresses stay within the intended design limit.",
+        "Redundancy and ductility improve safety because alternate paths and plastic deformation can provide warning and reserve strength.",
+        "Load paths must remain continuous through beams, columns, walls, connections, and foundations.",
+        "Service behavior such as deflection and vibration can control even when strength appears adequate."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact NSCP strength reduction factor tables.",
+        "No local source in this batch was used to restore a complete load-combination table beyond cited example combinations.",
+        "No local source in this batch was used to state unsupported member-specific resistance formulas."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore exact NSCP strength reduction factor tables.",
+    "No local source in this batch was used to restore a complete load-combination table beyond cited example combinations.",
+    "No local source in this batch was used to state unsupported member-specific resistance formulas."
   ]
 }

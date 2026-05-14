@@ -1,26 +1,26 @@
 {
   "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
-  "title": "In a reinforced concrete section under bending",
+  "title": "Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity",
   "slug": "lea-strc-006-03-core-concept",
   "subject_label": "Structural Conceptualization",
   "difficulty_label": null,
   "status": "published",
   "read_time": null,
-  "reviewed_at": null,
-  "reviewed_by": null,
-  "reviewer_comments": null,
+  "reviewed_at": "2026-05-14T02:09:00.152Z",
+  "reviewed_by": "codex-source-audited-batch-144-local-first",
+  "reviewer_comments": "Batch 144 local-first source-audited rewrite constrained to checked local structural source artifacts; no Supabase mutation.",
   "created_at": "2026-03-23T19:27:05.553002+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:46:36.532713+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:85bfbb08658a8cf127579e682ee089e00e4378410adae19238a927a57fc7d4f0",
-  "original_content_hash": "sha256:85bfbb08658a8cf127579e682ee089e00e4378410adae19238a927a57fc7d4f0",
-  "normalized_content_hash": "sha256:85bfbb08658a8cf127579e682ee089e00e4378410adae19238a927a57fc7d4f0",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-14T02:09:00.152Z",
+  "updated_by": "codex-source-audited-batch-144-local-first",
+  "updated_note": "Batch 144 local-first source-audited article and linked-question rewrite; no Supabase mutation.",
+  "content_hash": "sha256:9aa492072390096886792ae031cdd472fb6459541ada4487617e44a92b98ef9d",
+  "original_content_hash": "sha256:9aa492072390096886792ae031cdd472fb6459541ada4487617e44a92b98ef9d",
+  "normalized_content_hash": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
+  "candidate_content_hash": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:63dc30de334df64797bd098cfb286fef7a38433e1314ca4d0d1d296550d6f2f3",
-  "sources_hash": "sha256:788e3ef4155aafd8fa1699a51902966c18bd8b31dba9519ad2a6d1cccfcb0325",
+  "linked_questions_hash": "sha256:57140e70458b59fab1eb762f74f70773a08b6eb6616982ecaf1a89a507c96973",
+  "sources_hash": "sha256:4fcf263ee8b139a3790e42b36eea7b89746eb3605862d8a75f42845885f4c7eb",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:48.350Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
@@ -31,5 +31,43 @@
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "batch": 144,
+  "audit_batch": 144,
+  "audit_baseline": "71fff2685",
+  "source_audit_status": "source_audited_local_first",
+  "source_audit_batch_id": "source-audited-batch-144-local-first",
+  "source_audit_primary_source_id": "bsi-bending",
+  "source_audit_source_count": 3,
+  "source_audit_question_count": 10,
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "source-audited-batch-144-local-first",
+  "source_reference_count": 3,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-bending.source-capture.md",
+      "sha256": "sha256:aa2196067719986ba49ee0c57745dab1bc605c455c9bc8128aba8b713399159c"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-bending.refined.md",
+      "sha256": "sha256:b6f1df3325485c8d26c3cf58137d3805858b57d8dcb342c8377157278712d1ef"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+      "sha256": "sha256:16402243404c02c1cbfb8dad3137cfaf499b1fcc487a422d586202b9741f0967"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+      "sha256": "sha256:8e4364746011bc38178dce5c23e0aaf573337bc5b2ea36b09872ed1e2481acf7"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-flexural.source-capture.md",
+      "sha256": "sha256:7363901be4ca11451c1f145c4cd47b7aae73139f98214ea7c0d2403c83a67b1f"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-flexural.refined.md",
+      "sha256": "sha256:8def2b40b5da87ebe98089da396b58169a7599c2445c5ef84e89d1e7aa40ca12"
+    }
+  ]
 }

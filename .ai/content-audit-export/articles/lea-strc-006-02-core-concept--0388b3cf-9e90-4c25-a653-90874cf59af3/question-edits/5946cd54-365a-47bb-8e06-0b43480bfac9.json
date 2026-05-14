@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "5946cd54-365a-47bb-8e06-0b43480bfac9",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:f66bbde9080409a1d1f746aceedc772d6a1325e15bceee0e82a2fc1c2377b417",
+  "after_hash": "sha256:174a2a8138f33c25c08c50bede52068c1ba034f43151b5f18663df1e2db7d1ce",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "All rust always requires immediate demolition. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Rust proves the bar needs no cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "d": "Rust eliminates the need for inspection. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

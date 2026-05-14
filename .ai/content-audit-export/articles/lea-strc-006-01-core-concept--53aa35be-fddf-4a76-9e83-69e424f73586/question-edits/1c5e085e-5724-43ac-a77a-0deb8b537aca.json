@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "1c5e085e-5724-43ac-a77a-0deb8b537aca",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:499d7269030ba442c81e3158f6daa5c341146e90735977b7687d40d89456773f",
+  "after_hash": "sha256:529eae891261db1fd0c3c5dd485749a97f4b76cbf31aabac4bce8d070f9211ba",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "It may float freely as long as the plan notes show steel. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "It must be accurately positioned and adequately supported. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "It should be removed until the concrete hardens. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "It needs no relation to cover or spacing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "It must be accurately positioned and adequately supported. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}

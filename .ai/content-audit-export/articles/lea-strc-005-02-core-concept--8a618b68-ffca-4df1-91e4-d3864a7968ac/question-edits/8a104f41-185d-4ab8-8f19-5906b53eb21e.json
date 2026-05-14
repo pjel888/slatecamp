@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+  "cluster_id": "lea-strc-005-02",
+  "question_id": "8a104f41-185d-4ab8-8f19-5906b53eb21e",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:e8185fdaff0b30fdf6822179901c0a89ccb69939f65ee4d178371ab0a8a2b168",
+  "after_hash": "sha256:cb34ad927df1132431d0e7433a1035f06287ebe104ba5242cee787dbfcd3ee73",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "fundamentals-strength",
+    "mechanics-allowable"
+  ],
+  "rationale": {
+    "a": "Because all structural design methods use service loads only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Because factored demand belongs with matching strength resistance, while service stress belongs with allowable stress. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+    "c": "Because allowable stress and factored resistance are identical terms. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Because serviceability replaces strength checks in every case. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Because factored demand belongs with matching strength resistance, while service stress belongs with allowable stress. Supported by fundamentals-strength; mechanics-allowable.",
+    "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "fundamentals-strength; mechanics-allowable",
+    "checked_sources": [
+      "fundamentals-strength",
+      "bsi-design"
+    ]
+  }
+}

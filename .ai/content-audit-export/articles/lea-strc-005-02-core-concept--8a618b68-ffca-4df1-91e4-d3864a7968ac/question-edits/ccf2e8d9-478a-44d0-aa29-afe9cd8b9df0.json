@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+  "cluster_id": "lea-strc-005-02",
+  "question_id": "ccf2e8d9-478a-44d0-aa29-afe9cd8b9df0",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:fc154309befeaa4d346679592a220239634acc79848cd6a9fa8b1c34c6dddbb9",
+  "after_hash": "sha256:a8e1662f2b25c75ed5218e32fa1b1240b40c8e2a6ce59721fc98723d81bb4706",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "fundamentals-strength",
+    "bsi-design"
+  ],
+  "rationale": {
+    "a": "Select the largest beam depth before checking the load path. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Use allowable stress values for every structural method. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "c": "Ignore serviceability once a strength value is available. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Identify the demand, resistance, design format, and load path before comparing values. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+    "correct": "Identify the demand, resistance, design format, and load path before comparing values. Supported by fundamentals-strength; bsi-design.",
+    "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "fundamentals-strength; bsi-design",
+    "checked_sources": [
+      "fundamentals-strength",
+      "bsi-design"
+    ]
+  }
+}

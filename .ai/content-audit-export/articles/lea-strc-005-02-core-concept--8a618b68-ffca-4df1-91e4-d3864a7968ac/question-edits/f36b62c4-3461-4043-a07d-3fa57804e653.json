@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+  "cluster_id": "lea-strc-005-02",
+  "question_id": "f36b62c4-3461-4043-a07d-3fa57804e653",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:49c5fa8866ba182f7cc3566e5faf9e2f993c990f702701b59138a5aa7d0bd79d",
+  "after_hash": "sha256:05e28a714667373d90ccf104591d6564708fc455870d34321dbff3aabd837e68",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-design",
+    "fundamentals-strength"
+  ],
+  "rationale": {
+    "a": "Approve it if the tank fits on the roof plan. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+    "c": "Check only the paint specification of the frame. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Use a service stress value as a factored resistance. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. Supported by bsi-design; fundamentals-strength.",
+    "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-design; fundamentals-strength",
+    "checked_sources": [
+      "fundamentals-strength",
+      "bsi-design"
+    ]
+  }
+}

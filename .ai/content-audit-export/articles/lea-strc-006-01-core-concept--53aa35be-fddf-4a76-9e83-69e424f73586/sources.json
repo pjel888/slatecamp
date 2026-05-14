@@ -1,44 +1,67 @@
 {
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
   "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d34b1e1e53292ed890daeb03d8fa59a8d9393fefc0551e27f4b3057e1cf1a686",
-  "source_count": 3,
+  "cluster_id": "lea-strc-006-01",
+  "slug": "lea-strc-006-01-core-concept",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources_hash": "sha256:ccc13e959e525eb51d66f5fb17be459f06a96318f350e8784d6b147b63b55068",
   "sources": [
     {
-      "source_id": "4f62daef-b133-4adb-a7dc-2c5639e12454",
-      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
-      "label": "Philippine National Structural Code (PNSC) 2015, Chapter 3: Concrete (Sections 3.1–3.5)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "id": "detailing-concrete",
+      "title": "Detailing of Reinforcement in Concrete Structures - cover, exposure, spacing, and mix limits",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-concrete.source-capture.md",
+      "local_capture_sha256": "sha256:eca9f3ccd9b5dd5c41d42f73c8c3ff540cd5a2c813ac32d223baa9936f7131f0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-concrete.refined.md",
+      "refined_capture_sha256": "sha256:ef728f7901e8227a0dd4e3eaa5e34629810b3c60ff5f15fe71bfc31f8b7f4129",
+      "locator": "refined markdown lines 46-80, 91-132",
+      "safe_claims": [
+        "Reinforcement must be accurately placed and adequately supported before concrete is placed.",
+        "Minimum spacing between parallel bars is tied to bar diameter, aggregate size, and clear dimension requirements.",
+        "Cover requirements vary with exposure, contact with earth or weather, and concrete member type.",
+        "The source links exposure conditions to maximum water-cement ratio, minimum cement content, and aggregate size."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore unsupported slump or compressive-strength test details.",
+        "No local source in this batch was used to state a full concrete-classification table beyond the captured cover and exposure material.",
+        "No local source in this batch was used to replace project specification requirements for mix design approval."
+      ]
     },
     {
-      "source_id": "2520afc6-7e57-42f5-8506-999db2e15f53",
-      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
-      "label": "ACI 318-14, Chapter 2: Concrete Quality, Mixing, and Placement",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "88931ab2-48d9-414c-a01d-06ec5c1c4f06",
-      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
-      "label": "ASTM C39 (Compressive Strength), ASTM C143 (Slump), ASTM C138 (Unit Weight)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "id": "bsi-concrete",
+      "title": "Building Structures Illustrated - concrete structural context",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-concrete.source-capture.md",
+      "local_capture_sha256": "sha256:ad552fa2cb60639c59eaa173a1707d01f440d58c94a685b7ab435a099aa3317d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-concrete.refined.md",
+      "refined_capture_sha256": "sha256:14ecec82971364f4c398f6f70fe1a7f0aaebe7afe8156b1fde0d0d9fb65e1095",
+      "locator": "refined markdown lines 714-801, 1046-1064, 1986-2010",
+      "safe_claims": [
+        "Concrete members participate in the same structural system requirement: loads must be collected, supported, and transmitted to the ground.",
+        "The member check must consider material distress, deflection, stability, and connection continuity.",
+        "Beam bending produces compression and tension zones that reinforcement detailing must address in reinforced concrete work."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore unsupported slump or compressive-strength test details.",
+        "No local source in this batch was used to state a full concrete-classification table beyond the captured cover and exposure material.",
+        "No local source in this batch was used to replace project specification requirements for mix design approval."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore unsupported slump or compressive-strength test details.",
+    "No local source in this batch was used to state a full concrete-classification table beyond the captured cover and exposure material.",
+    "No local source in this batch was used to replace project specification requirements for mix design approval."
   ]
 }

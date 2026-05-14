@@ -1,0 +1,144 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "cluster_id": "lea-strc-005-02",
+  "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "fundamentals-strength",
+      "title": "Fundamentals of Structural Engineering - service loads, factored loads, and ultimate demand",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+      "raw_artifact_sha256": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+      "refined_artifact_sha256": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+      "local_capture_sha256": "sha256:16402243404c02c1cbfb8dad3137cfaf499b1fcc487a422d586202b9741f0967",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+      "refined_capture_sha256": "sha256:8e4364746011bc38178dce5c23e0aaf573337bc5b2ea36b09872ed1e2481acf7",
+      "locator": "refined markdown lines 30205-30260, 30709-30749, 62077, 62222, 62417",
+      "safe_claims": [
+        "The source distinguishes service load quantities from factored ultimate demand such as Pu in design examples.",
+        "Examples use factored load combinations for strength design while also considering service-load quantities in foundation work.",
+        "Factored axial force and factored moment are demand quantities that must be compared against the corresponding resistance format."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact NSCP strength reduction factor tables.",
+        "No local source in this batch was used to restore a complete load-combination table beyond cited example combinations.",
+        "No local source in this batch was used to state unsupported member-specific resistance formulas."
+      ]
+    },
+    {
+      "id": "bsi-design",
+      "title": "Building Structures Illustrated - structural design and allowable stress",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-design.source-capture.md",
+      "local_capture_sha256": "sha256:2e95d9e7387a14b50b7485034cdf0259841cbed721d4aeed992441f1fd4a9dd8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-design.refined.md",
+      "refined_capture_sha256": "sha256:e796721d11e13ab1b935ffa4eca43cadcc12d9f0285871abbe90af968a2e7303",
+      "locator": "refined markdown lines 799-801, 1020-1026, 1046-1064, 1986-2010, 2118-2125",
+      "safe_claims": [
+        "Structural analysis checks whether a structure can safely carry loads without material distress, excessive deformation, or failure.",
+        "Structural design sizes and proportions members so stresses stay within the intended design limit.",
+        "Redundancy and ductility improve safety because alternate paths and plastic deformation can provide warning and reserve strength.",
+        "Load paths must remain continuous through beams, columns, walls, connections, and foundations.",
+        "Service behavior such as deflection and vibration can control even when strength appears adequate."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact NSCP strength reduction factor tables.",
+        "No local source in this batch was used to restore a complete load-combination table beyond cited example combinations.",
+        "No local source in this batch was used to state unsupported member-specific resistance formulas."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:133df988c42ca252ec6fe842c3228f8e72016b493b06ea7e67070fa6b86f9039",
+  "candidate_sha256": "sha256:133df988c42ca252ec6fe842c3228f8e72016b493b06ea7e67070fa6b86f9039",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "ccf2e8d9-478a-44d0-aa29-afe9cd8b9df0",
+      "content_hash": "sha256:a8e1662f2b25c75ed5218e32fa1b1240b40c8e2a6ce59721fc98723d81bb4706"
+    },
+    {
+      "question_id": "8a104f41-185d-4ab8-8f19-5906b53eb21e",
+      "content_hash": "sha256:cb34ad927df1132431d0e7433a1035f06287ebe104ba5242cee787dbfcd3ee73"
+    },
+    {
+      "question_id": "869dc89f-4616-4130-89d3-8e3c27fb9947",
+      "content_hash": "sha256:99396a7a3b0d3ded7b56e4c0e3a9575d8aa805d1755e7d895bfd7fcae4060408"
+    },
+    {
+      "question_id": "3c657ee2-5f0e-401a-8b1a-36f9f45c4c00",
+      "content_hash": "sha256:6ab199e388ada5711f084f8d9b13f53beedc62e1d64ff5d59a10bfd08bc729bd"
+    },
+    {
+      "question_id": "da1869ef-90e3-48b6-8d8c-37ea69e63e85",
+      "content_hash": "sha256:a62e9a98cf6f6a9d255440c8806d6d18c70fdf135060e706f8e9dfe54659633e"
+    },
+    {
+      "question_id": "9ac04b85-2eb6-4967-b05d-c039c3087424",
+      "content_hash": "sha256:4846f87ff0bedc6f31cb8226b18349c4907fbd7a3b4f333c501db745db396269"
+    },
+    {
+      "question_id": "7febc9cf-73c8-486d-8fe9-29f9c714b462",
+      "content_hash": "sha256:3d7a1a4e745bec046fd262faed5a80c22dd96e66fa16a5745a6136373900ca12"
+    },
+    {
+      "question_id": "f36b62c4-3461-4043-a07d-3fa57804e653",
+      "content_hash": "sha256:05e28a714667373d90ccf104591d6564708fc455870d34321dbff3aabd837e68"
+    },
+    {
+      "question_id": "9ab67928-0f20-4fbe-b3d1-798702b6534a",
+      "content_hash": "sha256:240fd9e4d5a0338482a202e23f400a0595071a6449ca89ef74d1a8f8a595b6e9"
+    },
+    {
+      "question_id": "b8b8591e-b88c-47ed-b32d-39b646ae8623",
+      "content_hash": "sha256:7c59cee50c3fdee8655941cc4ebeaed497d88b7164f0f2efbc2b61101a9cd683"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code or table values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore exact NSCP strength reduction factor tables.",
+    "No local source in this batch was used to restore a complete load-combination table beyond cited example combinations.",
+    "No local source in this batch was used to state unsupported member-specific resistance formulas."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    }
+  ]
+}

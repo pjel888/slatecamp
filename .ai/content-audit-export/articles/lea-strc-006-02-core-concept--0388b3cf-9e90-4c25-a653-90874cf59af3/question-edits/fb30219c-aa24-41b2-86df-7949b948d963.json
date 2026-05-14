@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "fb30219c-aa24-41b2-86df-7949b948d963",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:25f01719b001a3bc1351e7d6c96e39025e7c4e311d68d23300243912d14f8c07",
+  "after_hash": "sha256:821bdc745c2cdf14f7fc5b14c5d1ee9b4ed3746d4351f9365ecc88c484f5003b",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "To eliminate the need for member design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "To anchor reinforcement while avoiding damaging bends and poor detailing behavior. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "To set the room finish schedule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "To make all bar sizes identical. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "To anchor reinforcement while avoiding damaging bends and poor detailing behavior. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

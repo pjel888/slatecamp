@@ -1,0 +1,227 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "baseline": "71fff2685",
+  "status": "passed_local_validation_git_handoff_pending",
+  "generated_at": "2026-05-14T02:09:00.581Z",
+  "entries": [
+    {
+      "cluster_id": "lea-strc-005-02",
+      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+      "title": "Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-005-02-core-concept--8a618b68-ffca-4df1-91e4-d3864a7968ac",
+      "source_ids": [
+        "fundamentals-strength",
+        "bsi-design"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:133df988c42ca252ec6fe842c3228f8e72016b493b06ea7e67070fa6b86f9039",
+      "candidate_sha256": "sha256:133df988c42ca252ec6fe842c3228f8e72016b493b06ea7e67070fa6b86f9039",
+      "linked_questions_sha256": "sha256:73bccc26d355fb8e600b0f61da5cc22438a029258eaa378dcd6d42c5067078a0",
+      "source_evidence_sha256": "sha256:2db35b20770e2e465ece739b0991edceb6ab398f09fbf9c6a0ba9d6b0fb83949",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-005-03",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "title": "Allowable Stress Design and Working-Stress Checks",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-005-03-core-concept--e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "source_ids": [
+        "mechanics-allowable",
+        "bsi-design",
+        "bsi-bending"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:3b4a58f228c30fb1efddf83a82d1f05df64554f39084476e71db2dd5299372fe",
+      "candidate_sha256": "sha256:3b4a58f228c30fb1efddf83a82d1f05df64554f39084476e71db2dd5299372fe",
+      "linked_questions_sha256": "sha256:e69b2ac865f635c5b66cdf8cc562d5b46c580cf3cce423070a5a51d21827f46a",
+      "source_evidence_sha256": "sha256:ac3ede43690f3399daf978f2ac04b0277d8678438734c2832952bb6b9d092f35",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-01",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "title": "Concrete Materials, Cover, and Exposure-Controlled Mix Limits",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-01-core-concept--53aa35be-fddf-4a76-9e83-69e424f73586",
+      "source_ids": [
+        "detailing-concrete",
+        "bsi-concrete"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:5ccaa592c99bbd790ba766312ed5af1aab997a6735b3a6c2d9fb08a5377b1e33",
+      "candidate_sha256": "sha256:5ccaa592c99bbd790ba766312ed5af1aab997a6735b3a6c2d9fb08a5377b1e33",
+      "linked_questions_sha256": "sha256:d27a63ccbeef5db2ca8b8ba1bb29e543e2cb47b402719c9e878312a3b1d1733a",
+      "source_evidence_sha256": "sha256:4dcaa128b3b0f3f6ac8848b812634fa91f3e54de250b9740d85157326075e55a",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-02",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "title": "Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-02-core-concept--0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "source_ids": [
+        "detailing-rebar",
+        "detailing-concrete"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:2cbe0a88e3402e104865a56a8e4d9db3f5079ce666d2b36e32a7db09548e81ee",
+      "candidate_sha256": "sha256:2cbe0a88e3402e104865a56a8e4d9db3f5079ce666d2b36e32a7db09548e81ee",
+      "linked_questions_sha256": "sha256:1cfac6f6ed43e2db1d6bfef6a9b807070db108f7d4059f3343affcbc368933af",
+      "source_evidence_sha256": "sha256:276face363450652f9a260a44b43c257235ba7494c01a7ebf02c4c56a7ca4503",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-03",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "title": "Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-03-core-concept--2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "source_ids": [
+        "bsi-bending",
+        "fundamentals-strength",
+        "detailing-flexural"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
+      "candidate_sha256": "sha256:61545ddd52bfd51036f65d69393037c37fe3f2bf41d02d5525821375c4d83a71",
+      "linked_questions_sha256": "sha256:68da7fff20c82e56a76711ef79cac01d37c0dcb497fe12a417877ecd09267dbf",
+      "source_evidence_sha256": "sha256:c704ac747f2309b21b0193c8b8939b3e001f8502904d32d49fac784a6b12e7c9",
+      "real_world_scenario_status": "included"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "source_id": "bsi-design",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-design.source-capture.md",
+      "capture_sha256": "sha256:2e95d9e7387a14b50b7485034cdf0259841cbed721d4aeed992441f1fd4a9dd8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-design.refined.md",
+      "refined_capture_sha256": "sha256:e796721d11e13ab1b935ffa4eca43cadcc12d9f0285871abbe90af968a2e7303",
+      "status": "pass"
+    },
+    {
+      "source_id": "bsi-bending",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-bending.source-capture.md",
+      "capture_sha256": "sha256:aa2196067719986ba49ee0c57745dab1bc605c455c9bc8128aba8b713399159c",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-bending.refined.md",
+      "refined_capture_sha256": "sha256:b6f1df3325485c8d26c3cf58137d3805858b57d8dcb342c8377157278712d1ef",
+      "status": "pass"
+    },
+    {
+      "source_id": "bsi-concrete",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-concrete.source-capture.md",
+      "capture_sha256": "sha256:ad552fa2cb60639c59eaa173a1707d01f440d58c94a685b7ab435a099aa3317d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-concrete.refined.md",
+      "refined_capture_sha256": "sha256:14ecec82971364f4c398f6f70fe1a7f0aaebe7afe8156b1fde0d0d9fb65e1095",
+      "status": "pass"
+    },
+    {
+      "source_id": "mechanics-allowable",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+      "raw_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+      "refined_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/mechanics-allowable.source-capture.md",
+      "capture_sha256": "sha256:59c2854a4e849ea391757011239d56ae1f3d05dc873a10912c9ead47eba60c48",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/mechanics-allowable.refined.md",
+      "refined_capture_sha256": "sha256:fba04162cd9747db2a0c25b504e11ff16d08b1c6f3d63896d4c2b6377a238135",
+      "status": "pass"
+    },
+    {
+      "source_id": "fundamentals-strength",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+      "raw_sha256": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+      "refined_sha256": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/fundamentals-strength.source-capture.md",
+      "capture_sha256": "sha256:16402243404c02c1cbfb8dad3137cfaf499b1fcc487a422d586202b9741f0967",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/fundamentals-strength.refined.md",
+      "refined_capture_sha256": "sha256:8e4364746011bc38178dce5c23e0aaf573337bc5b2ea36b09872ed1e2481acf7",
+      "status": "pass"
+    },
+    {
+      "source_id": "detailing-concrete",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-concrete.source-capture.md",
+      "capture_sha256": "sha256:eca9f3ccd9b5dd5c41d42f73c8c3ff540cd5a2c813ac32d223baa9936f7131f0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-concrete.refined.md",
+      "refined_capture_sha256": "sha256:ef728f7901e8227a0dd4e3eaa5e34629810b3c60ff5f15fe71bfc31f8b7f4129",
+      "status": "pass"
+    },
+    {
+      "source_id": "detailing-rebar",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-rebar.source-capture.md",
+      "capture_sha256": "sha256:ec7fc54e9609e5a111552f13d3500d496333f69ed7da5f5e601a9c1351bdd7c9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-rebar.refined.md",
+      "refined_capture_sha256": "sha256:875db4a8bc2669d1d6d9999e4b7fd1d0f770949c12f8535c5144b6fe074cfa3c",
+      "status": "pass"
+    },
+    {
+      "source_id": "detailing-flexural",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-flexural.source-capture.md",
+      "capture_sha256": "sha256:7363901be4ca11451c1f145c4cd47b7aae73139f98214ea7c0d2403c83a67b1f",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-flexural.refined.md",
+      "refined_capture_sha256": "sha256:8def2b40b5da87ebe98089da396b58169a7599c2445c5ef84e89d1e7aa40ca12",
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  }
+}

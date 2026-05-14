@@ -1,0 +1,170 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "cluster_id": "lea-strc-005-03",
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "source_strategy": "local_first",
+  "source_count": 3,
+  "sources": [
+    {
+      "id": "mechanics-allowable",
+      "title": "Mechanics and Strength of Materials - allowable stress method and bending stress",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+      "raw_artifact_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+      "refined_artifact_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/mechanics-allowable.source-capture.md",
+      "local_capture_sha256": "sha256:59c2854a4e849ea391757011239d56ae1f3d05dc873a10912c9ead47eba60c48",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/mechanics-allowable.refined.md",
+      "refined_capture_sha256": "sha256:fba04162cd9747db2a0c25b504e11ff16d08b1c6f3d63896d4c2b6377a238135",
+      "locator": "refined markdown lines 8438-8545, 11940-11962, 26528-26538",
+      "safe_claims": [
+        "The safety stress or allowable stress method requires computed stress not to exceed the allowable stress.",
+        "For axial tension, the source presents a check in the form stress demand less than or equal to allowable stress.",
+        "For bending, maximum stress is evaluated with section modulus and compared with allowable stress.",
+        "A stress-only check may be insufficient when deformation limits or buckling stability govern."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to state exact A36 steel allowable-stress fractions.",
+        "No local source in this batch was used to replace local code tables for material-specific allowable values.",
+        "No local source in this batch was used to collapse buckling or deflection checks into a stress-only rule."
+      ]
+    },
+    {
+      "id": "bsi-design",
+      "title": "Building Structures Illustrated - structural design and allowable stress",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-design.source-capture.md",
+      "local_capture_sha256": "sha256:2e95d9e7387a14b50b7485034cdf0259841cbed721d4aeed992441f1fd4a9dd8",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-design.refined.md",
+      "refined_capture_sha256": "sha256:e796721d11e13ab1b935ffa4eca43cadcc12d9f0285871abbe90af968a2e7303",
+      "locator": "refined markdown lines 799-801, 1020-1026, 1046-1064, 1986-2010, 2118-2125",
+      "safe_claims": [
+        "Structural analysis checks whether a structure can safely carry loads without material distress, excessive deformation, or failure.",
+        "Structural design sizes and proportions members so stresses stay within the intended design limit.",
+        "Redundancy and ductility improve safety because alternate paths and plastic deformation can provide warning and reserve strength.",
+        "Load paths must remain continuous through beams, columns, walls, connections, and foundations.",
+        "Service behavior such as deflection and vibration can control even when strength appears adequate."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to state exact A36 steel allowable-stress fractions.",
+        "No local source in this batch was used to replace local code tables for material-specific allowable values.",
+        "No local source in this batch was used to collapse buckling or deflection checks into a stress-only rule."
+      ]
+    },
+    {
+      "id": "bsi-bending",
+      "title": "Building Structures Illustrated - beam bending, neutral axis, shear, and deflection",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-bending.source-capture.md",
+      "local_capture_sha256": "sha256:aa2196067719986ba49ee0c57745dab1bc605c455c9bc8128aba8b713399159c",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-bending.refined.md",
+      "refined_capture_sha256": "sha256:b6f1df3325485c8d26c3cf58137d3805858b57d8dcb342c8377157278712d1ef",
+      "locator": "refined markdown lines 1986-2010, 2118-2125",
+      "safe_claims": [
+        "A beam resists bending with compression on one side of the neutral axis and tension on the other.",
+        "Bending stresses increase with distance from the neutral axis.",
+        "Shear and deflection remain part of the beam check and can govern member sizing.",
+        "Concentrated and distributed loads affect the beam response and must be traced to supports."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to state exact A36 steel allowable-stress fractions.",
+        "No local source in this batch was used to replace local code tables for material-specific allowable values.",
+        "No local source in this batch was used to collapse buckling or deflection checks into a stress-only rule."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:3b4a58f228c30fb1efddf83a82d1f05df64554f39084476e71db2dd5299372fe",
+  "candidate_sha256": "sha256:3b4a58f228c30fb1efddf83a82d1f05df64554f39084476e71db2dd5299372fe",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "2f11d79e-d2f1-4cb6-853b-a5100c5c0ab0",
+      "content_hash": "sha256:e95855862925f47873835ab5fc22d796fd0ad270f370e460330251a2e2d45b6c"
+    },
+    {
+      "question_id": "7bcd5090-4aa1-4fd5-a52b-54d5d5e94fab",
+      "content_hash": "sha256:b618a677445adc2fb33cfeb31129293ee33a4a26490cebbd1cb435a047eab325"
+    },
+    {
+      "question_id": "104dbdfe-ec95-4e5c-a4de-1e346e32d5cf",
+      "content_hash": "sha256:493f2a08ff0f1676198b2ec3b00f6859525b890afc0eb012612214eb38ab1238"
+    },
+    {
+      "question_id": "bdb6f9d9-14ae-40c4-b4f4-70d77cc87270",
+      "content_hash": "sha256:c2bab7104563bd8630d19da09e55e240d35e8165a264e56368b8c1515e73d2ae"
+    },
+    {
+      "question_id": "7398985d-e3a6-4e52-b62a-96088a4e37a0",
+      "content_hash": "sha256:13483ae78bcf51f075fa54db774eddd876c9da845fa3ff2b75cf4fc934b9d182"
+    },
+    {
+      "question_id": "20d482ed-1184-4443-9d6c-957f5cb9e0ce",
+      "content_hash": "sha256:4f15eded212adfa16ef9cf5244334501bca71ef00e74e779bd1037a4562ec0c5"
+    },
+    {
+      "question_id": "be352df0-c71e-48bc-ae25-ac18bf1c8814",
+      "content_hash": "sha256:7d3037ba475e9e7e3be390e7ce3d9b74d5dd98410aa5bd69c7f4a82ca06d875f"
+    },
+    {
+      "question_id": "73d3f973-45ee-4581-8e57-e2b238ece6c2",
+      "content_hash": "sha256:90410eeb670a73068d4b71736da3d836ccca78593846a3ec41187ef8386013e6"
+    },
+    {
+      "question_id": "75e51e43-0a5d-424c-b3c7-4919e7345353",
+      "content_hash": "sha256:9ad4eb26ab76ef0180d80cb3137867d8ff9f37b9fde5c9da9e9ad50cd247847e"
+    },
+    {
+      "question_id": "ca9430e3-6362-48d4-96a3-55ba5fc787be",
+      "content_hash": "sha256:525355c5b40cedafad290693113d27676ad4d50ccdf504526fe532cdbb3c6860"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code or table values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to state exact A36 steel allowable-stress fractions.",
+    "No local source in this batch was used to replace local code tables for material-specific allowable values.",
+    "No local source in this batch was used to collapse buckling or deflection checks into a stress-only rule."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    }
+  ]
+}

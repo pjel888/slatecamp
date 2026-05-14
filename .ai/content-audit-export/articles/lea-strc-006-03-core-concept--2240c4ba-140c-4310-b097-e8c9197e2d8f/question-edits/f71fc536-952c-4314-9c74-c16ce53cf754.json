@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "f71fc536-952c-4314-9c74-c16ce53cf754",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:be2818c50a9f133a0174c28debddb6ec4ebe55ccce460dc450dbd474cd8f78fe",
+  "after_hash": "sha256:75d1840236ac602d9f093ca08a545a3f29576d29cb464f60b1e0a19c6057e312",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-flexural"
+  ],
+  "rationale": {
+    "a": "Splices are only architectural symbols. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Splice location can affect continuity and ductile behavior where demand is high. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "c": "Splices remove all need for hoops. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Splice location does not matter in any beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Splice location can affect continuity and ductile behavior where demand is high. Supported by detailing-flexural.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-flexural",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

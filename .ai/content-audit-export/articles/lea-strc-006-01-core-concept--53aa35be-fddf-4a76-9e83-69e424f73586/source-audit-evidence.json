@@ -1,0 +1,143 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "cluster_id": "lea-strc-006-01",
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "detailing-concrete",
+      "title": "Detailing of Reinforcement in Concrete Structures - cover, exposure, spacing, and mix limits",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-concrete.source-capture.md",
+      "local_capture_sha256": "sha256:eca9f3ccd9b5dd5c41d42f73c8c3ff540cd5a2c813ac32d223baa9936f7131f0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-concrete.refined.md",
+      "refined_capture_sha256": "sha256:ef728f7901e8227a0dd4e3eaa5e34629810b3c60ff5f15fe71bfc31f8b7f4129",
+      "locator": "refined markdown lines 46-80, 91-132",
+      "safe_claims": [
+        "Reinforcement must be accurately placed and adequately supported before concrete is placed.",
+        "Minimum spacing between parallel bars is tied to bar diameter, aggregate size, and clear dimension requirements.",
+        "Cover requirements vary with exposure, contact with earth or weather, and concrete member type.",
+        "The source links exposure conditions to maximum water-cement ratio, minimum cement content, and aggregate size."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore unsupported slump or compressive-strength test details.",
+        "No local source in this batch was used to state a full concrete-classification table beyond the captured cover and exposure material.",
+        "No local source in this batch was used to replace project specification requirements for mix design approval."
+      ]
+    },
+    {
+      "id": "bsi-concrete",
+      "title": "Building Structures Illustrated - concrete structural context",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/bsi-concrete.source-capture.md",
+      "local_capture_sha256": "sha256:ad552fa2cb60639c59eaa173a1707d01f440d58c94a685b7ab435a099aa3317d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/bsi-concrete.refined.md",
+      "refined_capture_sha256": "sha256:14ecec82971364f4c398f6f70fe1a7f0aaebe7afe8156b1fde0d0d9fb65e1095",
+      "locator": "refined markdown lines 714-801, 1046-1064, 1986-2010",
+      "safe_claims": [
+        "Concrete members participate in the same structural system requirement: loads must be collected, supported, and transmitted to the ground.",
+        "The member check must consider material distress, deflection, stability, and connection continuity.",
+        "Beam bending produces compression and tension zones that reinforcement detailing must address in reinforced concrete work."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore unsupported slump or compressive-strength test details.",
+        "No local source in this batch was used to state a full concrete-classification table beyond the captured cover and exposure material.",
+        "No local source in this batch was used to replace project specification requirements for mix design approval."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:5ccaa592c99bbd790ba766312ed5af1aab997a6735b3a6c2d9fb08a5377b1e33",
+  "candidate_sha256": "sha256:5ccaa592c99bbd790ba766312ed5af1aab997a6735b3a6c2d9fb08a5377b1e33",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "f242783b-a63f-4ed0-9fa9-638ae204dc09",
+      "content_hash": "sha256:9856b39ecbf9948136d3e557b1d3fa5ea9bb9a249cc8f0cf68dcce02423f4728"
+    },
+    {
+      "question_id": "a61a276b-47ec-4e27-9be3-4eaee2fc65b8",
+      "content_hash": "sha256:9b07583db1567d84956dd32b7cce1fb8a67f0b1a99eb4d19daddd490b9eb086b"
+    },
+    {
+      "question_id": "5bbf562c-83e5-45ec-9b01-a2fd23ab51d6",
+      "content_hash": "sha256:b485d7a3531b6d9b661cafda718858d64bdb133d1d120c813863b541494dbf36"
+    },
+    {
+      "question_id": "d1ce9666-9eec-4d7d-bd26-2b0be7d4cd0a",
+      "content_hash": "sha256:a24ffba8e030cebce4744d24cdef8d7e036796ffc0cd0541c3293c8489c5ffd5"
+    },
+    {
+      "question_id": "1c5e085e-5724-43ac-a77a-0deb8b537aca",
+      "content_hash": "sha256:529eae891261db1fd0c3c5dd485749a97f4b76cbf31aabac4bce8d070f9211ba"
+    },
+    {
+      "question_id": "29f264f6-1a48-4429-be8a-449ddcc34047",
+      "content_hash": "sha256:a17465402f1aa0dd76b8579bf40b2c11dd87def257b10448f389e7d6af2a942b"
+    },
+    {
+      "question_id": "31b56717-88a8-4074-98ba-d0f6c4953f46",
+      "content_hash": "sha256:4e074ff2303f31ab46c2c27a59f717494865ad85b48853bbedae899708bb6c53"
+    },
+    {
+      "question_id": "a449bc3a-c626-4742-9e33-3f1d1a43a884",
+      "content_hash": "sha256:dd54f60fe3e800ac5142ba8ebcfa0d140d28b152a9fb93d6aba173300a061641"
+    },
+    {
+      "question_id": "5ce99a97-aaf0-433e-9fbd-605739633562",
+      "content_hash": "sha256:22ceba0d2ca7be75afb6d022a0e7a9b55d6485ac26111ae2b32cc99eed369b83"
+    },
+    {
+      "question_id": "d52a0538-49ee-437d-819e-a5788d5133aa",
+      "content_hash": "sha256:b40155f72c13f7ba871b749110e2e312df6988d5a08b1adea125a92574d052ba"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code or table values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore unsupported slump or compressive-strength test details.",
+    "No local source in this batch was used to state a full concrete-classification table beyond the captured cover and exposure material.",
+    "No local source in this batch was used to replace project specification requirements for mix design approval."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_from_batch_143",
+      "reason": "No completed blocked-source-recovery report was present at generation time; source recovery is still read-only."
+    }
+  ]
+}

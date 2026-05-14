@@ -1,0 +1,64 @@
+{
+  "batch": 144,
+  "batch_id": "source-audited-batch-144-local-first",
+  "status": "passed_local_validation_git_handoff_pending",
+  "articles": [
+    {
+      "cluster_id": "lea-strc-005-02",
+      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+      "title": "Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison",
+      "source_ids": [
+        "fundamentals-strength",
+        "bsi-design"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-005-03",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "title": "Allowable Stress Design and Working-Stress Checks",
+      "source_ids": [
+        "mechanics-allowable",
+        "bsi-design",
+        "bsi-bending"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-01",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "title": "Concrete Materials, Cover, and Exposure-Controlled Mix Limits",
+      "source_ids": [
+        "detailing-concrete",
+        "bsi-concrete"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-02",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "title": "Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals",
+      "source_ids": [
+        "detailing-rebar",
+        "detailing-concrete"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-03",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "title": "Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity",
+      "source_ids": [
+        "bsi-bending",
+        "fundamentals-strength",
+        "detailing-flexural"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    }
+  ]
+}

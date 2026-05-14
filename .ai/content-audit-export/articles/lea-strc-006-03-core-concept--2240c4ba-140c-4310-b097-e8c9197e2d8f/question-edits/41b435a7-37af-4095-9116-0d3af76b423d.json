@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "41b435a7-37af-4095-9116-0d3af76b423d",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:7811ef37bcbb204e433c17677328b4ab26c74ad8dfabe1302406c86957ad05a2",
+  "after_hash": "sha256:18543479115ef95feed0604eb66cffe7262c4296320ed2a8f4661eb22b39404e",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-flexural",
+    "bsi-design"
+  ],
+  "rationale": {
+    "a": "A decorative line style in the drawing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Anchorage, splices, ties, hoops, and load path working together across the member and supports. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "c": "A way to skip support checks. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "A concrete color requirement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Anchorage, splices, ties, hoops, and load path working together across the member and supports. Supported by detailing-flexural; bsi-design.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-flexural; bsi-design",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

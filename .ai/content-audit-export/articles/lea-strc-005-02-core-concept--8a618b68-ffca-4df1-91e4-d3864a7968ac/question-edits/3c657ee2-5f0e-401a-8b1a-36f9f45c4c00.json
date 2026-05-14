@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+  "cluster_id": "lea-strc-005-02",
+  "question_id": "3c657ee2-5f0e-401a-8b1a-36f9f45c4c00",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:361da7e1543ac6162d7ecef1dc0f06fa0773cb317d3e1f22e0204e29d2aaf06d",
+  "after_hash": "sha256:6ab199e388ada5711f084f8d9b13f53beedc62e1d64ff5d59a10bfd08bc729bd",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-design"
+  ],
+  "rationale": {
+    "a": "The spelling of the member mark. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Excessive deflection or vibration under use conditions. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+    "c": "The color of the structural drawing sheet. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "The room name printed beside the beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Excessive deflection or vibration under use conditions. Supported by bsi-design.",
+    "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-design",
+    "checked_sources": [
+      "fundamentals-strength",
+      "bsi-design"
+    ]
+  }
+}

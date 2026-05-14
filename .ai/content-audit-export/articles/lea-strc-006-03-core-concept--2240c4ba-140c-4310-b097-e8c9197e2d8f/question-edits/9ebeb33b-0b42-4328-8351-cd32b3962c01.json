@@ -1,0 +1,27 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "9ebeb33b-0b42-4328-8351-cd32b3962c01",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:a55f0d9029bf2a4585e3ef55b7081f485e87c58da62469b2619f3efd380d1358",
+  "after_hash": "sha256:c6ffe5ab6ed6b75e3bcbfdf6993a7f342ee4af4269913655bde4011ad9e523d2",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-flexural"
+  ],
+  "rationale": {
+    "a": "Only wall paint layout. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Confinement, shear detailing, and restraint of reinforcement near critical regions. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "c": "Only the ceiling finish schedule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Only the room naming convention. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Confinement, shear detailing, and restraint of reinforcement near critical regions. Supported by detailing-flexural.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-flexural",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

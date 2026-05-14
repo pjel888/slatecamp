@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "d1ce9666-9eec-4d7d-bd26-2b0be7d4cd0a",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c349cf8c7ea0ded3d152b60b1a0526ed54561e0e9f9b3a76ebd1329ca874a9d1",
+  "after_hash": "sha256:a24ffba8e030cebce4744d24cdef8d7e036796ffc0cd0541c3293c8489c5ffd5",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "It changes the north arrow location. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "It can undermine the intended water-cement control and durability performance. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "It improves every durability requirement automatically. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "It removes the need for reinforcement support. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "It can undermine the intended water-cement control and durability performance. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}

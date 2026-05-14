@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "cluster_id": "lea-strc-006-02",
+  "question_id": "b9b5597d-f7a4-46d7-9822-c6690e8d8ceb",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:4794380c0dc0f16c5e39ceadde69b0df17e46d025a7c5d820036d13c771a5168",
+  "after_hash": "sha256:50e55fb3bc427d6e9afaa4c74e094b5984f3ce934c1d3b84edf74648457596d3",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-rebar"
+  ],
+  "rationale": {
+    "a": "They carry all architectural finishes. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "They laterally restrain longitudinal bars and contribute to confinement. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+    "c": "They replace longitudinal reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "They remove all axial load from the column. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "They laterally restrain longitudinal bars and contribute to confinement. Supported by detailing-rebar.",
+    "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-rebar",
+    "checked_sources": [
+      "detailing-rebar",
+      "detailing-concrete"
+    ]
+  }
+}

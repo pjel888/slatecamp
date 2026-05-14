@@ -1,0 +1,28 @@
+{
+  "batch": 144,
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "cluster_id": "lea-strc-006-03",
+  "question_id": "627f1624-6508-4794-a8ef-ef18938735bb",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:1147247672d8fdcc32d5e9d46e96cf959a341dca706b47c97cdd5085b767df66",
+  "after_hash": "sha256:24cd52981a120a1e08cae846a9dca66da25646a04d152841792f44e5bb8f70c3",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-bending",
+    "detailing-flexural"
+  ],
+  "rationale": {
+    "a": "Steel area alone proves the beam is safe. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Compression, tension reinforcement, neutral-axis behavior, ductility, anchorage, and confinement must align. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+    "c": "Neutral axis location is a finish issue. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Ductile detailing is unrelated to beam behavior. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Compression, tension reinforcement, neutral-axis behavior, ductility, anchorage, and confinement must align. Supported by bsi-bending; detailing-flexural.",
+    "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-bending; detailing-flexural",
+    "checked_sources": [
+      "bsi-bending",
+      "fundamentals-strength",
+      "detailing-flexural"
+    ]
+  }
+}

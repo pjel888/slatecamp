@@ -1,0 +1,26 @@
+{
+  "batch": 144,
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "cluster_id": "lea-strc-006-01",
+  "question_id": "5ce99a97-aaf0-433e-9fbd-605739633562",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:9be6b47073c4439d2aac3201c88d77d68156e4365423c0bc9f2e45b8726531a6",
+  "after_hash": "sha256:22ceba0d2ca7be75afb6d022a0e7a9b55d6485ac26111ae2b32cc99eed369b83",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-concrete"
+  ],
+  "rationale": {
+    "a": "Because reinforcement position matters only after demolition. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "b": "Because the intended cover and spacing are lost if reinforcement shifts during placing. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+    "c": "Because bar support replaces concrete curing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "d": "Because cover is unrelated to durability. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+    "correct": "Because the intended cover and spacing are lost if reinforcement shifts during placing. Supported by detailing-concrete.",
+    "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-concrete",
+    "checked_sources": [
+      "detailing-concrete",
+      "bsi-concrete"
+    ]
+  }
+}
