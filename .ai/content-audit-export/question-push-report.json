@@ -1,29 +1,37 @@
 {
-  "question_id": "edbae089-2b69-424c-8abd-4082fd647dcf",
-  "attempted_at": "2026-05-10T04:58:30.612Z",
+  "question_id": "ff3dd962-75e0-4e37-a01e-58001e23d407",
+  "attempted_at": "2026-05-14T16:41:54.684Z",
   "dry_run": false,
   "apply": true,
   "pushed": true,
   "blockers": [],
   "warnings": [],
   "updated_rows_count": 1,
-  "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
-  "article_folder": "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
-  "exported_hash": "sha256:12505d7bd5b8c0f6c251323519727435383f79225863acb5604a7feb7bd0454e",
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:6ec195ed64cdb10884254a16722d07ad094a02dba74f006d05518c57e77f9da4",
   "source_audit": {
     "source_audit_status": "PASS",
     "safe_for_supabase_upload": true,
     "question_claim_found": true
   },
   "proposed_field_names": [
+    "application_context",
+    "bloom_level",
     "code_citation",
     "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
     "options",
+    "practice_context",
     "rationale",
     "text"
   ],
-  "remote_hash_before": "sha256:12505d7bd5b8c0f6c251323519727435383f79225863acb5604a7feb7bd0454e",
-  "expected_baseline_hash": "sha256:12505d7bd5b8c0f6c251323519727435383f79225863acb5604a7feb7bd0454e",
+  "remote_hash_before": "sha256:6ec195ed64cdb10884254a16722d07ad094a02dba74f006d05518c57e77f9da4",
+  "expected_baseline_hash": "sha256:6ec195ed64cdb10884254a16722d07ad094a02dba74f006d05518c57e77f9da4",
   "stale_check_passed": true,
-  "updated_at_after": "2026-05-10T04:58:30.91146+00:00"
+  "updated_at_after": "2026-05-14T16:41:55.005223+00:00"
 }

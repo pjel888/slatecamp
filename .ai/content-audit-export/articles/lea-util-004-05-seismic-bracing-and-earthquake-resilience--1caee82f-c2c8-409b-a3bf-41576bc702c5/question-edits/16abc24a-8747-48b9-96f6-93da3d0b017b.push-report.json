@@ -1,14 +1,12 @@
 {
   "question_id": "16abc24a-8747-48b9-96f6-93da3d0b017b",
-  "attempted_at": "2026-05-14T15:03:19.365Z",
-  "dry_run": true,
-  "apply": false,
-  "pushed": false,
+  "attempted_at": "2026-05-14T16:41:06.238Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
   "blockers": [],
-  "warnings": [
-    "Dry-run mode: no question mutation was performed."
-  ],
-  "updated_rows_count": 0,
+  "warnings": [],
+  "updated_rows_count": 1,
   "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
   "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
   "exported_hash": "sha256:3d74954897877d4852db2c28a323d49d38d09f6cad96f2cec745c3424f4923f4",
@@ -36,5 +34,6 @@
   ],
   "remote_hash_before": "sha256:3d74954897877d4852db2c28a323d49d38d09f6cad96f2cec745c3424f4923f4",
   "expected_baseline_hash": "sha256:3d74954897877d4852db2c28a323d49d38d09f6cad96f2cec745c3424f4923f4",
-  "stale_check_passed": true
+  "stale_check_passed": true,
+  "updated_at_after": "2026-05-14T16:41:06.567624+00:00"
 }

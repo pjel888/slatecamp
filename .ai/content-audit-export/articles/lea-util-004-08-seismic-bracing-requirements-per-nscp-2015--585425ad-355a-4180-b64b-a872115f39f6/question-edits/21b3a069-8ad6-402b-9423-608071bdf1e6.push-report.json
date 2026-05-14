@@ -1,14 +1,12 @@
 {
   "question_id": "21b3a069-8ad6-402b-9423-608071bdf1e6",
-  "attempted_at": "2026-05-14T15:03:21.271Z",
-  "dry_run": true,
-  "apply": false,
-  "pushed": false,
+  "attempted_at": "2026-05-14T16:41:08.946Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
   "blockers": [],
-  "warnings": [
-    "Dry-run mode: no question mutation was performed."
-  ],
-  "updated_rows_count": 0,
+  "warnings": [],
+  "updated_rows_count": 1,
   "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
   "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
   "exported_hash": "sha256:6047939124b6d1897203f5f688c6208d62636af172cb85c5ea3772ae03a5b4a6",
@@ -36,5 +34,6 @@
   ],
   "remote_hash_before": "sha256:6047939124b6d1897203f5f688c6208d62636af172cb85c5ea3772ae03a5b4a6",
   "expected_baseline_hash": "sha256:6047939124b6d1897203f5f688c6208d62636af172cb85c5ea3772ae03a5b4a6",
-  "stale_check_passed": true
+  "stale_check_passed": true,
+  "updated_at_after": "2026-05-14T16:41:09.505951+00:00"
 }

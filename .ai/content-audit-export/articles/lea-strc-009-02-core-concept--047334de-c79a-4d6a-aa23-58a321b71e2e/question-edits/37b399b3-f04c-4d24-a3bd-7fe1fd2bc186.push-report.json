@@ -1,14 +1,12 @@
 {
   "question_id": "37b399b3-f04c-4d24-a3bd-7fe1fd2bc186",
-  "attempted_at": "2026-05-14T15:03:22.909Z",
-  "dry_run": true,
-  "apply": false,
-  "pushed": false,
+  "attempted_at": "2026-05-14T16:41:14.335Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
   "blockers": [],
-  "warnings": [
-    "Dry-run mode: no question mutation was performed."
-  ],
-  "updated_rows_count": 0,
+  "warnings": [],
+  "updated_rows_count": 1,
   "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
   "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
   "exported_hash": "sha256:aba99a613ab4ecf002a9067206f4a2be1fa6aaad62b00d7f9b2d87d4e649397d",
@@ -34,5 +32,6 @@
   ],
   "remote_hash_before": "sha256:aba99a613ab4ecf002a9067206f4a2be1fa6aaad62b00d7f9b2d87d4e649397d",
   "expected_baseline_hash": "sha256:aba99a613ab4ecf002a9067206f4a2be1fa6aaad62b00d7f9b2d87d4e649397d",
-  "stale_check_passed": true
+  "stale_check_passed": true,
+  "updated_at_after": "2026-05-14T16:41:14.924522+00:00"
 }
