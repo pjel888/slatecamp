@@ -1,97 +1,38 @@
-
+# Standard Hooks, Bend Diameters, and Seismic Hook Closure
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+Hook questions are easy to over-answer from memory. First identify the bar use: ordinary bar hook, stirrup or tie anchorage, closed tie, continuously wound tie, cross tie, or hoop. Then apply only the bend, extension, and inside-bend-diameter rule supported by the cited source.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 007 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+## What You Need To Know
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
-## Learning Goal
-By the end of this article, you will be able to:
+The source defines a standard hook by bend shape and free-end extension. A 180-deg bend has an extension of at least 4 bar diameters and not less than 65 mm. A 90-deg bend has an extension of at least 12 bar diameters.
 
-- Define a hook and explain its purpose in reinforcing bar anchorage
-- Distinguish between standard hooks (90°, 180°) and seismic hooks (135°)
-- State minimum hook dimensions and extension lengths
-- Identify hooks in stirrups, ties, and main reinforcement
+Stirrups and ties have separate anchorage rules. For 16 mm and smaller bars, a 90-deg bend has an extension of at least 6 bar diameters. For 19 mm to 25 mm bars, a 90-deg bend has an extension of at least 12 bar diameters. For 25 mm and smaller bars, a 135-deg bend has an extension of at least 6 bar diameters.
 
-Standard hooks anchor reinforcement at supports and splices. The LEA tests your exact knowledge of hook geometry—bend angle, extension length, and minimum diameter—across three contexts: longitudinal bars, stirrups, and seismic confinement. Critical values: 180° hook = 4_db_ (min 65mm), 90° hook = 12_db_, seismic 135° = 6_db_ (min 75mm).
+Closed ties and continuously wound ties are stricter: they use a 135-deg bend with an extension of at least 6 bar diameters, but not less than 75 mm. The same source defines a hoop as a closed tie or continuously wound tie with 135-deg hook closure and a six-diameter extension that engages the longitudinal reinforcement, again not less than 75 mm.
 
-## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-007-02-core-concept", type="image", caption="Rebar Hook Types — 90°, 180°, Stirrup, and Seismic Hooks", description="Dimensioned diagram of standard rebar hooks: (1) 90° hook — 12db extension for standard, 6db for seismic; (2) 180° hook — 4db minimum bend diameter, 12db extension; (3) Standard stirrup hook — 90° or 135° on closed stirrups; (4) Seismic hook — 135° bend with 6db extension (min 75mm). Bend diameter requirements per ACI/NSCP for different bar sizes.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Inside bend diameter is a separate check. For standard hooks other than small stirrups and ties, the captured table uses 6db for 10 mm through 25 mm bars, 8db for bars larger than 25 mm through 40 mm, and 10db for bars larger than 40 mm through 57 mm. For stirrup and tie hooks, 16 mm and smaller bars use an inside bend diameter not less than 4 bar diameters; larger bars follow the table.
 
-A hook is a bend at the end of a reinforcing bar or stirrup that provides anchorage by mechanical interlock with concrete. Hook design balances two requirements: the bend must be sharp enough to develop anchorage (controlled by _db_, the inside diameter of the bend) and long enough to provide sufficient embedment (controlled by extension length, measured from the inside of the bend).
+## Real World Scenario
 
-Standard hooks follow precise geometry defined by NSCP/ACI to ensure reproducible, reliable anchorage. Different applications—longitudinal bars, stirrups, seismic confinement—require different hook profiles. The _db_ limits (6_db_, 8_db_, 10_db_) prevent concrete crushing on the inside of the bend; the extension lengths (4_db_, 6_db_, 12_db_) guarantee sufficient bearing length.
+A column cage arrives with 90-deg tie ends in a region detailed as hoop confinement. The source-safe review does not jump straight to a general development-length equation. It asks whether the detail is a closed tie, continuously wound tie, cross tie, or ordinary stirrup, then checks whether the hook angle, extension, and inside bend diameter match the applicable captured rule.
 
-## Key Provisions
+## High-Yield Distinctions
 
-### Standard Hook Geometry (NSCP 7.1.1, ACI 318 Section 25.3)
-
-| **Hook Type** | **Bend Angle** | **Inside Diameter (db)** | **Extension Length** | **Minimum Total Length** | **Typical Use** |
-|---|---|---|---|---|---|
-| 180° (U-hook, longitudinal) | 180° | 4_db_ (min 65mm) | 4_db_ (min 65mm) | 12_db_ (min 150mm) | Bar ends at interior supports |
-| 90° (L-hook, longitudinal) | 90° | 12_db_ | 12_db_ | 24_db_ | Bar ends at beam faces |
-| 90° (stirrup/tie, ≤16mm) | 90° | 4_db_ | 6_db_ | 10_db_ | Standard stirrup hooks |
-| 90° (stirrup/tie, 20–25mm) | 90° | 6_db_ (inside) | 12_db_ | 18_db_ | Large stirrups |
-| 135° (alternate, ≤25mm) | 135° | 6_db_ (inside) | 6_db_ | 12_db_ | Seismic or congested regions |
-| 135° (seismic hoop, SMRF) | 135° | 6_db_ (inside) | 6_db_ min 75mm | 12_db_ + 75mm min | Seismic column confinement |
-
-### Minimum Bend Diameters for Hooks and Stirrups (NSCP 7.1.2, ACI 318 Section 25.2)
-
-These limits control the crushing stress on the inside of the bend:
-
-| **Bar/Tie Size** | **Application** | **Minimum Inside Diameter (db)** |
-|---|---|---|
-| 10–16mm | Longitudinal bars, hooks | 6_db_ |
-| 16–25mm | Stirrups and ties (≤16mm) | 4_db_ |
-| 20–25mm | Stirrups and ties (20–25mm) | 6_db_ |
-| 28mm | Longitudinal bars, hooks | 8_db_ |
-| 32mm | Longitudinal bars, hooks | 8_db_ |
-| 36mm | Longitudinal bars, hooks | 10_db_ |
-
-### Seismic Hooks — Special Requirements (NSCP 2015 Section 7.1 & Chapter 12 Seismic Design)
-
-Seismic lateral confinement hoops in Intermediate Moment Frames (IMF) and Special Moment Frames (SMF) must use _special seismic hooks_ to prevent bar buckling and lateral instability:
-
-- **Bend angle:** 135° (NOT 90°) for hoops; crossties may alternate 90° and 135° hooks per ACI 318-19 Section 25.3.5
-- **Inside diameter:** 6_db_
-- **Extension:** 6_db_ minimum **75mm** (take the larger value)
-- **Hook placement:** Corner hoops and leg hoops must close the loop; alternating legs may use 135° hooks
-
-## Philippine Practice Context
-
-Standard 180° hooks are most common in Philippine construction for negative moment anchorage at intermediate supports of continuous beams. Stirrup hooks (90°, 6_db_) are ubiquitous in building frames. Seismic hook requirements (135°, min 75mm extension) apply strictly in MRF design in high-seismic zones or for irregular buildings, but many designers incorrectly use 90° hooks in seismic details, triggering ERR-STRC-014.
-
-## How It's Tested
-
-1. **Hook geometry recall:** "A 180° standard hook on a 20mm bar must have a minimum inside bend diameter of __db. What is db in mm?" (Answer: 4_db_ = 80mm; difficulty 0.3)
-
-2. **Stirrup hook extension:** "Stirrups with 16mm diameter ties need 90° hooks. What is the minimum extension length from the inside of the bend?" (Answer: 6_db_ = 96mm; difficulty 0.5)
-
-3. **Seismic confinement scenario:** "Seismic column hoops in an SMRF require special hooks. What is the bend angle, and what is the minimum extension?" (Answer: 135° with 6_db_ min 75mm extension; difficulty 0.7)
-
-4. **Bend diameter selection:** "Design a 90° hook for a 36mm longitudinal bar. What is the minimum inside bend diameter?" (Answer: 10_db_ = 360mm; difficulty 0.7)
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Hook memory: 180° = 4_db_ min 65mm (small bend, short extension). 90° longitudinal = 12_db_ (wide bend, long extension). Stirrup 90° ≤16mm = 4_db_ inside (tight bend). Seismic 135° = 6_db_ with min 75mm extension (mandatory minimum). Bend diameter increases with bar size: 6_db_ (10–25mm), 8_db_ (28–32mm), 10_db_ (36mm).
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Concrete Cover** (lea-strc-007-01) for how hooks relate to cover requirements, **Deformed Bars** (lea-strc-006-02) for the bar sizes used with hooks, and **Column Ties** (lea-strc-007-04) for seismic hook requirements in columns.
+| Detail | Source-safe rule |
+| --- | --- |
+| 180-deg standard hook | Extension at least 4 bar diameters and not less than 65 mm. |
+| 90-deg standard hook | Extension at least 12 bar diameters. |
+| 90-deg stirrup or tie, 16 mm and smaller | Extension at least 6 bar diameters. |
+| 90-deg stirrup or tie, 19 mm to 25 mm | Extension at least 12 bar diameters. |
+| 135-deg stirrup or tie, 25 mm and smaller | Extension at least 6 bar diameters. |
+| Closed tie or continuously wound tie | 135-deg bend, extension at least 6 bar diameters and not less than 75 mm. |
+| Standard hook bend table | 6db, 8db, or 10db by bar-size range. |
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
+- Treating a 180-deg hook extension as a complete total hook-length rule.
+- Applying ordinary bar-hook rules to closed ties, continuously wound ties, hoops, or cross ties.
+- Forgetting the 75 mm minimum for closed ties, continuously wound ties, and hoop closure where the source states it.
+- Confusing inside bend diameter with free-end extension.

@@ -1,0 +1,26 @@
+{
+  "batch": 146,
+  "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+  "cluster_id": "lea-strc-007-04",
+  "question_id": "c5c06df4-e0dc-42ae-a615-037b330ba0ee",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ddb826cba5c5aea272b4ab9b8c8d3fedd3adf015f4542572a38e61b54716dc7d",
+  "after_hash": "sha256:80f3ad08f3ff2ed751bfb002c740d0a3c9478320e07a2ac2cde6d62b8285617e",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-column-ties"
+  ],
+  "rationale": {
+    "a": "No vertical bar is farther than 150 mm clear on each side along the tie from a laterally supported bar. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+    "b": "No vertical bar is farther than 600 mm from any support. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "c": "The source gives no lateral-support layout rule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "Unsupported bars are allowed anywhere if the tie is closed. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "No vertical bar is farther than 150 mm clear on each side along the tie from a laterally supported bar. Supported by detailing-column-ties.",
+    "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-column-ties",
+    "checked_sources": [
+      "detailing-column-ties",
+      "detailing-hooks"
+    ]
+  }
+}

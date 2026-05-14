@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "d31cc278-1509-49b8-ac36-a38dbbd0c72d",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ebe5d63ddbb80c8f31348b6d83d5998cd5dd0838a739a6b318f49343e0276713",
+  "after_hash": "sha256:9aaffa71cb70419b0d3a22c0507ee60c7eef5e95ba08b985ab02e6144ef79d44",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "Spacing each way is unlimited. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Reinforcement spacing each way does not exceed 450 mm. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "Spacing each way is always 1200 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "Spacing is controlled only by architectural tile layout. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Reinforcement spacing each way does not exceed 450 mm. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

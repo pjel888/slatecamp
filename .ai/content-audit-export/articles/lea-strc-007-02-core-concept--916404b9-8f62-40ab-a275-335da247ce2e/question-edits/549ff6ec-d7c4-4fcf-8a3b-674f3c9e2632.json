@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "549ff6ec-d7c4-4fcf-8a3b-674f3c9e2632",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:de83f598ea6ee9d933e838b04cbdfa03b4d93c998cc9af5690e7552f143c102d",
+  "after_hash": "sha256:c89a25853b4d359e7b650bc35da89ba040321f86d0f2c00603f535af74c3baf6",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "Hook geometry never appears in the source. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "The local capture supports bend and extension definitions, not a complete total hook-length table for every condition. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "c": "All hook values are replaced by concrete cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "Total hook length is always zero in seismic work. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "The local capture supports bend and extension definitions, not a complete total hook-length table for every condition. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "fce6b57e-4b4c-4a6e-ab14-3aaafde6a1e1",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:1a4822952b92ee34215f1eb8f313f143c0fc89a6fd9ce65472b93e0d1cccd46d",
+  "after_hash": "sha256:09f3064c4ec1c0486fe4bfafeb7f1b7fb5ee797d9b11c17768636b7f83c6d134",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "Use unsupported floor-joint numbers from memory. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Keep the answer inside the wall/diaphragm roughening and continuity source boundary unless another source is supplied. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "Treat every joint type as identical. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "Ignore whether the question is about a wall, diaphragm, beam, or slab. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Keep the answer inside the wall/diaphragm roughening and continuity source boundary unless another source is supplied. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

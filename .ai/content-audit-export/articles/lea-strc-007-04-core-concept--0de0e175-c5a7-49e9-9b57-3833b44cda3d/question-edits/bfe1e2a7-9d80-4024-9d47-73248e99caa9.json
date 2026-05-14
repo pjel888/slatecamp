@@ -1,0 +1,26 @@
+{
+  "batch": 146,
+  "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+  "cluster_id": "lea-strc-007-04",
+  "question_id": "bfe1e2a7-9d80-4024-9d47-73248e99caa9",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:2801fd4524d8fd5633c2fa13cfa78572cc4d00370b487f5bad85edd9121b6a4c",
+  "after_hash": "sha256:d737c479407b2fef0ff9ff5bfad80ae2acf8e82ea8a15f8099d25e65f26a96b8",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-column-ties"
+  ],
+  "rationale": {
+    "a": "Every corner and alternate longitudinal bar has lateral support from a tie corner with included angle not more than 135 deg. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+    "b": "Only one bar in the entire column needs lateral support. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "c": "Tie corners must ignore alternate longitudinal bars. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "The included angle is unlimited. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Every corner and alternate longitudinal bar has lateral support from a tie corner with included angle not more than 135 deg. Supported by detailing-column-ties.",
+    "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-column-ties",
+    "checked_sources": [
+      "detailing-column-ties",
+      "detailing-hooks"
+    ]
+  }
+}

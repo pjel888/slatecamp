@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "566dec00-4d8d-4f21-844b-cb975f49cd37",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:fc975144603f78a19d725290e42bada1448d4fa452f3ed8762436b5e2ad3219f",
+  "after_hash": "sha256:5981f85e40f0e85cbb2fe56dbb50226afb48085b43b495d6a94f68cb573aa83d",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "A hoop is any open U-bar with no closure. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "A closed tie hoop uses 135-deg hooks with six-diameter extensions at each end, but not less than 75 mm. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "c": "A hoop extension is optional when bars are large. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "A hoop never engages longitudinal reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "A closed tie hoop uses 135-deg hooks with six-diameter extensions at each end, but not less than 75 mm. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

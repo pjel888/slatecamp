@@ -1,0 +1,26 @@
+{
+  "batch": 146,
+  "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+  "cluster_id": "lea-strc-007-04",
+  "question_id": "615fd0ed-83cb-4e93-9726-8fad1115829f",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:79668dd26f48bab2ca7370657c95f5430fa9f7afc0e654df1d03b3a385341f5b",
+  "after_hash": "sha256:960bc4dee07f43ccc5aa34db83ca4ecd12c0a511378bb29c38fd4a4484e999f2",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-column-ties"
+  ],
+  "rationale": {
+    "a": "The remaining column length needs no transverse reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Spiral or hoop reinforcement is spaced not more than the smaller of 6 longitudinal bar diameters or 150 mm. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+    "c": "Spacing may exceed 600 mm if ties are large. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "The remaining length uses only architectural grid spacing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Spiral or hoop reinforcement is spaced not more than the smaller of 6 longitudinal bar diameters or 150 mm. Supported by detailing-column-ties.",
+    "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-column-ties",
+    "checked_sources": [
+      "detailing-column-ties",
+      "detailing-hooks"
+    ]
+  }
+}

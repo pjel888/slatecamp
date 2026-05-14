@@ -1,118 +1,38 @@
-
+# Column Ties and Transverse Confinement
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+Column tie questions usually test classification before calculation. Decide whether the item concerns ordinary compression-member ties, spirals, beam compression reinforcement, cross ties, hoops, or special transverse reinforcement near a joint face.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 007 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+## What You Need To Know
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
-## Learning Goal
-By the end of this article, you will be able to:
+For ordinary compression members, tie reinforcement encloses all longitudinal bars. The captured source sets minimum tie size at 10 mm for longitudinal bars 32 mm and smaller, and 12 mm for 36 mm to 57 mm and bundled longitudinal bars.
 
-- Define column ties and explain their two functions: holding longitudinal bars and confining the core
-- Distinguish between standard ties and seismic (hoop) ties
-- State tie spacing requirements per NSCP
-- Identify proper tie configuration for different column sizes
+Ordinary tie spacing is controlled by the most restrictive of three limits: 16 longitudinal bar diameters, 48 tie diameters, or the least dimension of the compression member. The source also requires tie arrangement so every corner and alternate longitudinal bar has lateral support from a tie corner with included angle not more than 135 deg. No vertical bar should be farther than 150 mm clear on each side along the tie from a laterally supported bar.
 
-Column ties provide transverse confinement to longitudinal bars and prevent buckling during compression. The LEA tests your mastery of _three independent spacing criteria_ and how to select the most restrictive, plus seismic special requirements for SMRF columns. Critical values: normal ties use smallest of (16_db_, 48×tie_dia, least column dimension); seismic confinement length = max(column dim, L/6, 450mm).
+Spirals are a different transverse-reinforcement form. For cast-in-place columns, the source gives a minimum spiral size of 10 mm, clear spacing between 25 mm and 75 mm, and anchorage by 1.5 extra turns at each end.
 
-## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-007-04-core-concept", type="image", caption="Column Ties and Spirals — Confinement Reinforcement Detailing", description="Column cross-section and elevation diagrams showing: (1) Tie patterns (single, overlapping, cross-ties, 135° seismic hooks); (2) Tie spacing requirements — minimum db/4, 10db longitudinal, 300mm max; (3) Spiral reinforcement — continuous helix, pitch requirements, core confinement; (4) Plastic hinge zone detailing at column ends with reduced spacing. Comparison of tied vs spiral column behavior under axial load.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Special transverse reinforcement adds its own checks. Single or overlapping hoops and cross ties engage peripheral longitudinal bars. Spacing is not more than one-quarter of the minimum member dimension nor 100 mm, and cross tie or overlapping hoop leg spacing is not more than 350 mm on center perpendicular to the member axis. The special transverse reinforcement length from a joint face is not less than the member depth, one-sixth of clear span, and 450 mm.
 
-Column ties serve two purposes: (1) hold longitudinal bars in position during construction and concrete placement, and (2) confine concrete and prevent bar buckling. Tie spacing is controlled by the most restrictive of three criteria, each addressing a different failure mode:
+## Real World Scenario
 
-1. _16_db_: limits longitudinal bar buckling (bar diameter-based)
-2. _48×tie_dia_: ensures adequate confinement density (tie strength-based)
-3. _Least column dimension_: limits bar migration perpendicular to tie plane
+A site detail shows 10 mm ties around 36 mm longitudinal bars. The source-safe review first checks the ordinary tie-size rule, then checks the three spacing limits and lateral support arrangement. If the same column is in a special transverse-reinforcement region, the review switches to the hoop, cross-tie, spacing, and length requirements captured for that condition.
 
-Seismic design adds critical requirements for SMRF columns: confined zones at member ends and mid-height, 135° seismic hooks, and tighter hoop spacing near plastic hinge regions.
+## High-Yield Distinctions
 
-## Key Provisions
-
-### Column Tie Spacing — Non-Seismic (NSCP 7.10.9.1)
-
-| **Criterion** | **Formula** | **Controls** | **Notes** |
-|---|---|---|---|
-| Bar buckling | 16_db_ (db = long bar diameter) | Longitudinal bar slenderness | For 20mm bars: 16×20 = 320mm |
-| Tie confinement strength | 48×_t_tie (t_tie = tie diameter) | Confining stress; hoop effectiveness | For 10mm ties: 48×10 = 480mm |
-| Column geometry | Least column dimension | Physical constraint; bar position | For 300mm × 400mm: 300mm minimum |
-| **Maximum spacing** | **Smallest of three above** | **Most restrictive governs** | **Select the minimum value** |
-
-**Example:** 300mm × 400mm column with 20mm longitudinal bars and 10mm ties:
-- 16_db_ = 320mm
-- 48×tie_dia = 480mm
-- Least dimension = 300mm
-- **Maximum spacing = 300mm** (governs)
-
-### Tie Diameter and Size Requirements (NSCP 7.10.9.2)
-
-| **Longitudinal Bar Size** | **Minimum Tie Diameter** | **Spacing Limit if Exceeded** |
-|---|---|---|
-| ≤ 32mm | 10mm | Standard spacing applies |
-| 36mm or larger | 12mm | Standard spacing applies |
-| Bundled bars (any) | 12mm | Standard spacing applies |
-
-**Rule:** No longitudinal bar shall be more than 150mm clear distance from a laterally supported bar (by tie or spiral) in any direction.
-
-### Seismic Column Confinement — SMRF (NSCP 12.13.5)
-
-Seismic-resistant moment-resisting frames require enhanced confinement near plastic hinge zones:
-
-| **Seismic Requirement** | **Specification** | **Application** |
-|---|---|---|
-| Confinement zone length | max(member dimension, L/6, 450mm) | At each end of column; mid-height not required for regular frames |
-| Hoop spacing in zone | min(b/4, 6_db_long, 150mm) | Tightest spacing to confine plastic hinging |
-| Hoop angle | 135° bend angle (not 90°) | Seismic hooks required (ERR-STRC-014) |
-| Hook extension | 6_db_ min 75mm | Ensures closure and anchorage |
-| Outside confinement zone | Standard NSCP 7.10.9 spacing applies | Relaxed spacing farther from ends |
-
-**Example:** 500mm × 500mm column, h_column = 4 m, 8 × 28mm bars, 12mm hoops:
-
-- Confinement zone = max(500, 4000/6, 450) = max(500, 667, 450) = **667mm at each end**
-- Hoop spacing in zone = min(500/4, 6×28, 150) = min(125, 168, 150) = **125mm**
-- Hoop angle = **135°** with 6×12 = 72mm extension, min 75mm → **75mm extension**
-- Outside zone = smallest of (16×28=448, 48×12=576, 500) = **448mm**
-
-## Philippine Practice Context
-
-Standard 300mm × 400mm building columns with 12 bars of 20mm and 10mm ties are ubiquitous in residential construction. Contractors often space ties at 400mm or 500mm without checking the three-criteria rule, leading to under-confinement and potential failure during lateral shaking. SMRF columns in high-seismic zones (Zones 4–5, Metro Manila, Baguio) require strict seismic hook detailing; many engineers specify 90° hooks in error (ERR-STRC-014), which the LEA frequently tests.
-
-## How It's Tested
-
-1. **Direct calculation:** "A 400mm × 400mm square column contains 20mm bars with 10mm ties. Calculate maximum tie spacing." (Answer: smallest of 320mm, 480mm, 400mm = 320mm; difficulty 0.3)
-
-2. **Three-criteria scenario:** "A column is 300mm × 500mm with 28mm bars and 12mm ties. What is the maximum tie spacing?" (Answer: smallest of 448mm, 576mm, 300mm = 300mm; difficulty 0.5)
-
-3. **Seismic confinement zone:** "An SMRF column is 600mm × 600mm, 5 m tall, with 12mm hoops. What is the confinement zone length and hoop spacing within the zone?" (Answer: zone = max(600, 833, 450) = 833mm; spacing = min(150, 72mm, 150) = 72mm if 36mm bars; difficulty 0.7)
-
-4. **Hook angle error detection:** "A column detail shows 90° hooks for seismic confinement. Is this compliant?" (Answer: No; seismic requires 135° hooks (ERR-STRC-014); difficulty 0.5)
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Three-criteria rule: _smallest_ of (16_db_, 48×_t_tie_, least dim). Always calculate all three; choose the smallest. Seismic hook = 135° (not 90°), with min 75mm extension. Confinement zone = max(dim, L/6, 450mm). Inside zone: spacing = min(b/4, 6_db_, 150mm) (tight). Outside zone: standard spacing applies (relaxed).
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Hooks** (lea-strc-007-02) for the 135° seismic hook used in ties, **Concrete Cover** (lea-strc-007-01) for tie cover requirements, and **Deformed Bars** (lea-strc-006-02) for the rebar grades used in ties.
+| Detail | Source-safe rule |
+| --- | --- |
+| Ordinary tie size, 32 mm and smaller longitudinal bars | At least 10 mm tie diameter. |
+| Ordinary tie size, 36 mm to 57 mm or bundled bars | At least 12 mm tie diameter. |
+| Ordinary tie spacing | Not more than 16 longitudinal bar diameters, 48 tie diameters, or least member dimension. |
+| Lateral support layout | Every corner and alternate bar laterally supported; unsupported clear distance limited to 150 mm each side along tie. |
+| Spiral column reinforcement | At least 10 mm diameter, 25 mm to 75 mm clear spacing, 1.5 extra turns anchorage. |
+| Special transverse spacing | Not more than one-quarter minimum member dimension nor 100 mm. |
+| Special transverse length | Not less than member depth, one-sixth clear span, and 450 mm from the joint face. |
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[ \"Only 16_db_ controls tie spacing — WRONG. All three criteria must be checked; the smallest governs (ERR-STRC-023).\", \"Tie spacing = 48 × bar diameter (confusing bar and tie size) — WRONG. Formula is 48 × tie_dia, not bar dia.\", \"Seismic hoop = 90° — WRONG. Seismic requires 135° bend angle (ERR-STRC-014).\", \"Minimum tie diameter always 10mm — WRONG. 36mm or larger bars and bundles require 12mm ties (ERR-STRC-026).\", \"Seismic hoop extension = 6_db_ only (no 75mm minimum) — WRONG. Must satisfy 6_db_ AND min 75mm (largest).\", \"No confinement required outside seismic zone — WRONG. Standard NSCP 7.10.9 spacing applies outside confinement length; it is relaxed but still required.\" ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Using only one tie-spacing criterion and skipping the least member dimension.
+- Using 10 mm ties with 36 mm or larger longitudinal bars when the source calls for 12 mm.
+- Treating spirals, ordinary ties, cross ties, and hoops as the same detail.
+- Applying special transverse-reinforcement values outside the condition the question gives.

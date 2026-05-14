@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "897ab3f6-8a98-4471-9643-d721bbe5aee3",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:7fcbee2f48a3843bf2ce7a366d2fc2a64337276f8e0e6a1bb84265206076c185",
+  "after_hash": "sha256:d68e4bbe922ec0b70c2dbcd00a2ae434e2f86e4fc815df91cf87b77af9901554",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "Every bar size uses exactly 4db. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "10 mm through 25 mm bars use 6db, over 25 mm through 40 mm use 8db, and over 40 mm through 57 mm use 10db. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "c": "Every bar size uses exactly 12db. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "The source does not classify bend diameter by bar-size range. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "10 mm through 25 mm bars use 6db, over 25 mm through 40 mm use 8db, and over 40 mm through 57 mm use 10db. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

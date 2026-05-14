@@ -1,0 +1,38 @@
+{
+  "batch": 146,
+  "batch_id": "source-audited-batch-146-local-first",
+  "status": "passed_local_validation_git_handoff_pending",
+  "articles": [
+    {
+      "cluster_id": "lea-strc-007-02",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "title": "Standard Hooks, Bend Diameters, and Seismic Hook Closure",
+      "source_ids": [
+        "detailing-hooks"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-007-04",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "title": "Column Ties and Transverse Confinement",
+      "source_ids": [
+        "detailing-column-ties",
+        "detailing-hooks"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-007-06",
+      "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+      "title": "Construction Joints in Walls and Diaphragms",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    }
+  ]
+}

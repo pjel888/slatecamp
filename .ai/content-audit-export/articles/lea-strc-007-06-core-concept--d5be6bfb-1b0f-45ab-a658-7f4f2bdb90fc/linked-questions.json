@@ -1,30 +1,30 @@
 {
   "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:13313eb92d95b8e4101447a1396372bcc87e37aa0a7a88c874b0b2746e76319c",
+  "linked_questions_hash": "sha256:827c6050cc8a2a5b4e283c764269ffce43effa4febc41aa75f47556839589a64",
   "question_count": 10,
   "questions": [
     {
       "question_id": "22faa6e6-2c35-4c63-a941-b6c42f2e42af",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "A 200 mm thick concrete slab has a construction joint. What is the minimum steel area required for temporary/shrinkage reinforcement across 1 meter width of the joint (fy = 420 MPa, Grade 60)?",
+      "text": "Which construction-joint scope is supported by this Batch 146 local capture?",
       "options": [
         {
           "id": "a",
-          "text": "200 mm²"
+          "text": "All floor-slab middle-third placement rules."
         },
         {
           "id": "b",
-          "text": "360 mm²"
+          "text": "Construction joints in walls and diaphragms, including roughened contact surfaces."
         },
         {
           "id": "c",
-          "text": "500 mm²"
+          "text": "All girder offset calculations."
         },
         {
           "id": "d",
-          "text": "400 mm²"
+          "text": "All temporary shrinkage-steel formulas."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "200 mm² = 0.001 × 1000 × 200 (underestimated ratio).",
-        "c": "500 mm² = 0.0025 × 1000 × 200 (overestimated ratio).",
-        "d": "400 mm² is close but not exact (0.002 × 1000 × 200).",
-        "correct": "Temporary/shrinkage reinforcement at construction joints requires ρ_temp = 0.0018 (NSCP 6.4.2, for Grade 60 steel). Steel area = ρ × b × h = 0.0018 × 1000 mm × 200 mm = 360 mm² for 1 m width.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All floor-slab middle-third placement rules. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "Construction joints in walls and diaphragms, including roughened contact surfaces. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "All girder offset calculations. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "All temporary shrinkage-steel formulas. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "Construction joints in walls and diaphragms, including roughened contact surfaces. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.2 (Temporary/Shrinkage Steel — Grade 60, ρ = 0.0018)",
+      "explanation": "Construction joints in walls and diaphragms, including roughened contact surfaces. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "remember",
       "application_context": "calculation",
       "practice_context": [],
@@ -51,30 +56,36 @@
       "model_id": "ALE-STRC-007-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f31efd5e85905ab61b331d0b8a53ec53156affb5ea861de6e7633e11a42cb6f8"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:804ea6c7a204b1a130f1e3736eab3edfe0dc01edb6e8ae409ad97fcc7c51e32f",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "82f0d052-1df1-4147-9cbb-b4096267cc64",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "A floor construction joint is located 2.8 m from one support in a 7 m span girder. The girder is 500 mm wide. What is the minimum offset distance from this floor joint to place the girder's construction joint per NSCP?",
+      "text": "What does the source say about contact surfaces at wall and diaphragm construction joints?",
       "options": [
         {
           "id": "a",
-          "text": "500 mm"
+          "text": "They are polished smooth in all cases."
         },
         {
           "id": "b",
-          "text": "1000 mm"
+          "text": "They are roughened as specified by the cited source provision."
         },
         {
           "id": "c",
-          "text": "2000 mm"
+          "text": "They are ignored after the next pour starts."
         },
         {
           "id": "d",
-          "text": "1400 mm"
+          "text": "They need only paint, not surface preparation."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +94,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "500 mm = 1× beam width only — the code requires 2× beam width minimum offset.",
-        "c": "2000 mm = 4× beam width — exceeds the minimum requirement. The minimum is 2× beam width = 1000 mm.",
-        "d": "1400 mm is an arbitrary value with no code basis. The offset is calculated as 2 × beam width.",
-        "correct": "NSCP 6.4.1 requires the girder construction joint to be offset at least 2× the width of the intersecting beam. For a 500 mm wide girder: 2 × 500 = 1000 mm minimum offset from the floor joint location.",
-        "takeaway": "Girder construction joint offset = 2 × beam width. For a 500 mm beam, the minimum offset is 1000 mm."
+        "a": "They are polished smooth in all cases. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "They are roughened as specified by the cited source provision. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "They are ignored after the next pour starts. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "They need only paint, not surface preparation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "They are roughened as specified by the cited source provision. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.1 (Construction Joint Offset — girder/floor coordination)",
+      "explanation": "They are roughened as specified by the cited source provision. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -101,30 +117,36 @@
       "model_id": "ALE-STRC-007-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d5850efc7aedfda246de503b177067119be28bf4e7634cccc19e3faa7c696826"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:f29e0c627ee1fd805f85717750db247a754641f8c02133d6b00b363d550a0698",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "c73d1432-7890-4099-890c-11892d08cdcf",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "A 250 mm beam at a construction joint requires temporary shrinkage steel. For a 3 m length of beam, what is the total steel area (A_s) required for 1 m width of the joint, using fy = 420 MPa (Grade 60)?",
+      "text": "How is a structural diaphragm described in the captured source?",
       "options": [
         {
           "id": "a",
-          "text": "450 mm²"
+          "text": "It transmits inertial forces to lateral-force-resisting members."
         },
         {
           "id": "b",
-          "text": "500 mm²"
+          "text": "It is only a nonstructural ceiling finish."
         },
         {
           "id": "c",
-          "text": "600 mm²"
+          "text": "It carries no lateral force path."
         },
         {
           "id": "d",
-          "text": "750 mm²"
+          "text": "It replaces all wall reinforcement."
         }
       ],
       "correct_option_id": "a",
@@ -133,14 +155,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "500 mm² = 0.002 × 1000 × 250 (overestimated ratio).",
-        "c": "600 mm² = 0.0024 × 1000 × 250 (too high).",
-        "d": "750 mm² = 0.003 × 1000 × 250 (far too high).",
-        "correct": "Temp/shrinkage steel area = ρ × b × h = 0.0018 × 1000 mm × 250 mm = 450 mm² for 1 m width of joint (NSCP 6.4.2). The beam length (3 m) does not affect this calculation; it is area per unit width of joint.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It transmits inertial forces to lateral-force-resisting members. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "b": "It is only a nonstructural ceiling finish. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "c": "It carries no lateral force path. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "It replaces all wall reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "It transmits inertial forces to lateral-force-resisting members. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.2 (Temp Steel calculation — Grade 60)",
+      "explanation": "It transmits inertial forces to lateral-force-resisting members. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -151,30 +178,36 @@
       "model_id": "ALE-STRC-007-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a3bb2309c5fb7bff57d619f253b590292dcefd09cebaa58d997aa1f031f24909"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:32df4eb6dfbeffe3ec476af15ef3aee4ec111864ddec3c4d3a7b89e3b256d21d",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "d31cc278-1509-49b8-ac36-a38dbbd0c72d",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "A one-way floor slab spans 6 meters between supports. Per NSCP, within which region must a construction joint be located to minimize flexural stress?",
+      "text": "What wall reinforcement spacing limit is captured for the cited structural wall condition?",
       "options": [
         {
           "id": "a",
-          "text": "0 to 2 meters from support, which is typically avoided to prevent stress concentration"
+          "text": "Spacing each way is unlimited."
         },
         {
           "id": "b",
-          "text": "2 to 4 meters from support (middle third)"
+          "text": "Reinforcement spacing each way does not exceed 450 mm."
         },
         {
           "id": "c",
-          "text": "4 to 6 meters from support, which may lead to increased flexural stress"
+          "text": "Spacing each way is always 1200 mm."
         },
         {
           "id": "d",
-          "text": "Exactly at 3 meters (center), which is not recommended due to potential stress issues"
+          "text": "Spacing is controlled only by architectural tile layout."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +216,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "0–2 m is the end third, near the support where moment and shear are high.",
-        "c": "4–6 m is the other end third, also near support with high stresses.",
-        "d": "The center (3 m) is within the middle third (2–4 m) but the entire region 2–4 m is acceptable.",
-        "correct": "Construction joints for continuous or simply supported slabs must be located within the middle third of the span (NSCP 6.4.1). For a 6 m span, the middle third spans from 2 m to 4 m from support. Bending moment is lowest in this region.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Spacing each way is unlimited. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "Reinforcement spacing each way does not exceed 450 mm. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "Spacing each way is always 1200 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "Spacing is controlled only by architectural tile layout. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "Reinforcement spacing each way does not exceed 450 mm. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.1 (Construction Joint Locations — floor slabs)",
+      "explanation": "Reinforcement spacing each way does not exceed 450 mm. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +239,36 @@
       "model_id": "ALE-STRC-007-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9ec5d095bf33527461e94b7a753f2158d58445dd2b54f3058770e0a8c2a72cd7"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:9aaffa71cb70419b0d3a22c0507ee60c7eef5e95ba08b985ab02e6144ef79d44",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "853bd03a-1614-44c7-931b-065ea2b1ca46",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "For a 180 mm thick slab at a construction joint, what is the maximum spacing of temporary shrinkage reinforcement bars per NSCP?",
+      "text": "What reinforcement ratio is captured for structural walls along longitudinal and transverse directions?",
       "options": [
         {
           "id": "a",
-          "text": "900 mm"
+          "text": "Exactly 0.0000 because walls do not need reinforcement."
         },
         {
           "id": "b",
-          "text": "450 mm"
+          "text": "Not less than 0.0025."
         },
         {
           "id": "c",
-          "text": "600 mm"
+          "text": "At least 0.0100 for every wall regardless of source."
         },
         {
           "id": "d",
-          "text": "360 mm"
+          "text": "No ratio is mentioned for any wall condition."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +277,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "900 mm = 5h but exceeds the 450 mm absolute maximum.",
-        "c": "600 mm is between 450 mm and 900 mm but is not the code value.",
-        "d": "360 mm is more restrictive than required.",
-        "correct": "Maximum spacing = min(5h, 450 mm) where h = slab thickness (NSCP 6.4.2). For 180 mm slab: min(5 × 180, 450) = min(900, 450) = 450 mm. The 450 mm cap governs.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Exactly 0.0000 because walls do not need reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "Not less than 0.0025. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "At least 0.0100 for every wall regardless of source. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "No ratio is mentioned for any wall condition. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "Not less than 0.0025. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.2 (Temp Steel Spacing — max 5h or 450 mm)",
+      "explanation": "Not less than 0.0025. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +300,36 @@
       "model_id": "ALE-STRC-007-06-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:20505c9f15f13d3899878888cf539cc90fcb39df5ebbb44e9161d4128458cec1"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:9e40af1cf760e6a4d6d311a88afdcfb00e1731c9b71aa0db8bebad10661573c9",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "afd77613-066a-4e53-a3dd-0ad923152aad",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "At a construction joint between a beam and a column in a moment frame, what is the minimum percentage of the beam's primary flexural reinforcement that must be continued across the joint as dowels?",
+      "text": "How should shear reinforcement be treated across the shear plane in the captured wall/diaphragm source?",
       "options": [
         {
           "id": "a",
-          "text": "25%"
+          "text": "It is intentionally stopped at every construction joint."
         },
         {
           "id": "b",
-          "text": "50%"
+          "text": "It is continuous and distributed across the shear plane."
         },
         {
           "id": "c",
-          "text": "75%"
+          "text": "It is placed only where finishes require it."
         },
         {
           "id": "d",
-          "text": "100%"
+          "text": "It is replaced by a smooth joint surface."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +338,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "25% is insufficient for adequate shear transfer in moment-frame joints.",
-        "c": "75% is more restrictive than required.",
-        "d": "100% is overly conservative; 50% is the code minimum.",
-        "correct": "At construction joints at beam-column intersections, aAll primary flexural reinforcement must be properly developed/anchored through the joint per detailing requirements (NSCP 2015 §12.12 for development lengths; no specific % dowel requirement at construction joints)to ensure rigid shear transfer (NSCP 6.4.2, ACI 318-19 § 6.5.3).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It is intentionally stopped at every construction joint. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "It is continuous and distributed across the shear plane. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "It is placed only where finishes require it. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "It is replaced by a smooth joint surface. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "It is continuous and distributed across the shear plane. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": "25% is insufficient for adequate shear transfer in moment-frame joints. 75% is more restrictive than required. 100% is overly conservative; 50% is the code minimum. At construction joints at beam-column intersections, aAll primary flexural reinforcement must be properly developed/anchored through the joint per detailing requirements (NSCP 2015 §12.12 for development lengths; no specific % dowel requirement at construction joints)to ensure rigid shear transfer (NSCP 6.4.2, ACI 318-19 § 6.5.3). Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2015 § 6.4.2 (Dowels at beam-column construction joints)",
+      "explanation": "It is continuous and distributed across the shear plane. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +361,36 @@
       "model_id": "ALE-STRC-007-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-05-06T15:42:44.060549+00:00",
-      "content_hash": "sha256:be8711a2294033ee7825f476c6026d8609889d408f8f6c9b555898a07fb2e911"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:104f2bb47716541375069a3a86244cfbcbc913fec31a6c1940ce50760851a314",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "c32f66dd-4583-419d-9744-290770b3e823",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "A construction joint in a floor slab is detailed with temp steel bars spaced at 600 mm center-to-center. The slab is 150 mm thick. Is this spacing compliant per NSCP?",
+      "text": "How is continuous reinforcement in walls, diaphragms, struts, ties, chords, and collectors handled?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, compliant; spacing is within 5h = 750 mm, which is the maximum allowable spacing for this slab thickness"
+          "text": "It is cut off without anchorage at every pour break."
         },
         {
           "id": "b",
-          "text": "No, non-compliant; maximum allowed spacing is 450 mm (cap overrules 5h)."
+          "text": "It is anchored or spliced according to reinforcement-in-tension provisions."
         },
         {
           "id": "c",
-          "text": "Yes, compliant; 600 mm < 750 mm, which is within the allowable range for this application"
+          "text": "It is governed only by paint color."
         },
         {
           "id": "d",
-          "text": "No, non-compliant; spacing must be < 300 mm for all slabs, which is a stricter interpretation"
+          "text": "It never needs splices or anchorage."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +399,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While 5h = 750 mm, the 450 mm cap is the controlling criterion.",
-        "c": "600 mm > 450 mm, so it violates the spacing limit.",
-        "d": "300 mm is more restrictive than required (but would be acceptable as conservative design).",
-        "correct": "Maximum spacing = min(5h, 450 mm) = min(750, 450) = 450 mm (NSCP 6.4.2). The 450 mm absolute cap governs. Specified 600 mm exceeds this limit and is non-compliant. Bars must be tightened to ≤450 mm spacing.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It is cut off without anchorage at every pour break. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "It is anchored or spliced according to reinforcement-in-tension provisions. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "It is governed only by paint color. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "It never needs splices or anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "It is anchored or spliced according to reinforcement-in-tension provisions. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.2 (Temp Steel Spacing verification)",
+      "explanation": "It is anchored or spliced according to reinforcement-in-tension provisions. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +422,36 @@
       "model_id": "ALE-STRC-007-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f215b57cb2a76b72f1ec42e318cfcf357a93fda88262885e75bd422be26c4c41"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:17816b65e4ae8773873ef5149beb50c856015c582a91bca9b13ee9d02e4fe563",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "45fdfbe6-52ab-4e4b-bb81-f7fb4fa4f0d7",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "Before pouring concrete at a construction joint, the existing concrete surface must be treated per NSCP. Which action is correct?",
+      "text": "What boundary-member concept is source-backed for walls and diaphragms?",
       "options": [
         {
           "id": "a",
-          "text": "Seal the surface with epoxy to prevent water infiltration and ensure long-term durability of the joint"
+          "text": "Boundary members are always decorative only."
         },
         {
           "id": "b",
-          "text": "Remove laitance and expose aggregate; saturate with water (but no free standing water)."
+          "text": "Required boundary members at edges or openings use transverse reinforcement where required by the cited condition."
         },
         {
           "id": "c",
-          "text": "Leave the surface as-is; bonding agent will handle adhesion, which simplifies the preparation process"
+          "text": "Boundary members cannot occur around openings."
         },
         {
           "id": "d",
-          "text": "Use a power washer and dry completely before the new pour to remove debris and ensure a clean bonding surface"
+          "text": "Boundary members cancel wall axial and overturning actions."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +460,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Epoxy sealing is not the standard method; it can interfere with concrete bonding.",
-        "c": "Leaving the surface untreated compromises bond; laitance is a weak layer.",
-        "d": "Complete drying prevents hydration of the new concrete at the interface. The surface should be moist (SSD), not dry.",
-        "correct": "Construction joint surface preparation per NSCP 6.4.3: (1) remove laitance by light chipping or grinding to expose aggregate, (2) saturate the surface with water but remove excess free water (SSD condition), and (3) optionally apply bonding agent if desired (NSCP permits but does not require it). This maximizes mechanical interlock and bond between old and new concrete.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Boundary members are always decorative only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "Required boundary members at edges or openings use transverse reinforcement where required by the cited condition. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "Boundary members cannot occur around openings. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "Boundary members cancel wall axial and overturning actions. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "Required boundary members at edges or openings use transverse reinforcement where required by the cited condition. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.3 (Construction Joint Surface Preparation)",
+      "explanation": "Required boundary members at edges or openings use transverse reinforcement where required by the cited condition. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +483,36 @@
       "model_id": "ALE-STRC-007-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7e716730967d2ffec41c1e4a91cf1719bf64c82e3c63be5478220711625a9055"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:edc8e86b51915201664f55ef9ee7cf731fce4cff788dba52d62e4025e18aa84e",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "01d6e589-eec0-4b0e-87a9-7c327d42793a",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "A 4 m clear span floor slab requires a construction joint. The architect proposes placement at 3.5 m from one support. Is this compliant with NSCP location requirements?",
+      "text": "Why were floor middle-third and shrinkage-steel questions rewritten in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, compliant; 3.5 m is within the span."
+          "text": "They were rewritten because construction joints are never structural."
         },
         {
           "id": "b",
-          "text": "No, non-compliant; joint is outside the middle third (1.33–2.67 m from support)."
+          "text": "Those exact claims were not captured in the Batch 146 local source boundary."
         },
         {
           "id": "c",
-          "text": "Yes, compliant; any location away from supports is acceptable."
+          "text": "They were rewritten to remove all source discipline."
         },
         {
           "id": "d",
-          "text": "No, must be placed exactly at 2 m (center of span)."
+          "text": "They were rewritten because walls and diaphragms have no reinforcement."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +521,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Compliance requires the joint to be within the middle third, not just anywhere in the span.",
-        "c": "Not any location is acceptable; middle third is required.",
-        "d": "The joint does not have to be at the exact center; anywhere in the middle third (1.33–2.67 m) is acceptable.",
-        "correct": "For a 4 m span, the middle third = 4/3 ≈ 1.33 m at each end, so the valid region is 1.33–2.67 m from one support (NSCP 6.4.1). The proposed 3.5 m location is in the outer third (beyond 2.67 m), where moment is higher. This is non-compliant.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They were rewritten because construction joints are never structural. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "Those exact claims were not captured in the Batch 146 local source boundary. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "They were rewritten to remove all source discipline. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "They were rewritten because walls and diaphragms have no reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "Those exact claims were not captured in the Batch 146 local source boundary. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 § 6.4.1 (Construction Joint Location — middle third)",
+      "explanation": "Those exact claims were not captured in the Batch 146 local source boundary. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +544,36 @@
       "model_id": "ALE-STRC-007-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2b672a53dc9ee4174f2b25d3a98a29c23f195afe0ddc1e0e0ad6030772c9458f"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:a74d6411d4ab6ae2f2381aeb571258bfd36558c9615409f7b29ed6114bbe02b6",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "fce6b57e-4b4c-4a6e-ab14-3aaafde6a1e1",
       "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
       "topic_id": "3675ce3d-05f6-4e32-963d-4ac604de9b22",
-      "text": "A construction joint in a slab is detailed with temporary steel bars running perpendicular to the joint (i.e., crossing the joint). Is this detailing correct per NSCP?",
+      "text": "What is the safest exam habit for this construction-joint article?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, perpendicular bars are correct for shear transfer across the joint, ensuring structural integrity"
+          "text": "Use unsupported floor-joint numbers from memory."
         },
         {
           "id": "b",
-          "text": "No, temp steel must run parallel to the joint, normal to the shear flow direction (NSCP 6.4.2)."
+          "text": "Keep the answer inside the wall/diaphragm roughening and continuity source boundary unless another source is supplied."
         },
         {
           "id": "c",
-          "text": "Yes, either parallel or perpendicular is acceptable, depending on the specific load conditions"
+          "text": "Treat every joint type as identical."
         },
         {
           "id": "d",
-          "text": "No, no reinforcement is required at construction joints, as they are designed to accommodate movement"
+          "text": "Ignore whether the question is about a wall, diaphragm, beam, or slab."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +582,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Perpendicular bars serve as dowels, not as temp/shrinkage steel (different purpose).",
-        "c": "The orientation is not interchangeable; the standard is parallel to the joint.",
-        "d": "Reinforcement is required: temp steel (parallel) and often dowels (perpendicular) for shear.",
-        "correct": "Temporary/shrinkage reinforcement at construction joints must be placed parallel to the joint, oriented normal to the principal shear flow direction (NSCP 6.4.2). This configuration resTemporary/shrinkage reinforcement must be placed perpendicular to the joint (crossing it) to control cracking (consistent with ACI 318/NSCP shrinkage & temp reinforcement orientation)for rigid shear transfer.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Use unsupported floor-joint numbers from memory. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "b": "Keep the answer inside the wall/diaphragm roughening and continuity source boundary unless another source is supplied. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+        "c": "Treat every joint type as identical. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "d": "Ignore whether the question is about a wall, diaphragm, beam, or slab. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+        "correct": "Keep the answer inside the wall/diaphragm roughening and continuity source boundary unless another source is supplied. Supported by detailing-wall-diaphragm-construction-joints.",
+        "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-wall-diaphragm-construction-joints",
+        "checked_sources": [
+          "detailing-wall-diaphragm-construction-joints"
+        ]
       },
-      "explanation": "Perpendicular bars serve as dowels, not as temp/shrinkage steel (different purpose). The orientation is not interchangeable; the standard is parallel to the joint. Reinforcement is required: temp steel (parallel) and often dowels (perpendicular) for shear. Temporary/shrinkage reinforcement at construction joints must be placed parallel to the joint, oriented normal to the principal shear flow direction (NSCP 6.4.2). This configuration resTemporary/shrinkage reinforcement must be placed perpendicular to the joint (crossing it) to control cracking (consistent with ACI 318/NSCP shrinkage & temp reinforcement orientation)for rigid shear transfer. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2015 § 6.4.2 (Temp Steel Orientation — parallel to joint)",
+      "explanation": "Keep the answer inside the wall/diaphragm roughening and continuity source boundary unless another source is supplied. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+      "code_citation": "detailing-wall-diaphragm-construction-joints",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +605,14 @@
       "model_id": "ALE-STRC-007-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-05-06T15:42:44.274498+00:00",
-      "content_hash": "sha256:8e243edf9941f0632461a7fa08cc7ef323953b83958748b59b8e2a10c7f8516b"
+      "updated_at": "2026-05-14T03:04:38.977Z",
+      "content_hash": "sha256:09f3064c4ec1c0486fe4bfafeb7f1b7fb5ee797d9b11c17768636b7f83c6d134",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "cluster_id": "lea-strc-007-06",
+      "audit_batch": 146,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

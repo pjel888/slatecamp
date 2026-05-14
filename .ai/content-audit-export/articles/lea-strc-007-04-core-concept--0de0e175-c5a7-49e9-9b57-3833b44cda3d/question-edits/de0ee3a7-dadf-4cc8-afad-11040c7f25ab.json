@@ -1,0 +1,26 @@
+{
+  "batch": 146,
+  "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+  "cluster_id": "lea-strc-007-04",
+  "question_id": "de0ee3a7-dadf-4cc8-afad-11040c7f25ab",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:a23b1e6ad1af90304bef3c8a97f8e812f003fce3a80f178dbec1406118d04fa1",
+  "after_hash": "sha256:d8cd8739fb4d110e1ddeda0010c6fcc4f9d5aa8cf831ab82f7059b1a0b1f8627",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-column-ties"
+  ],
+  "rationale": {
+    "a": "At least 6 mm tie diameter for every column. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "At least 10 mm tie diameter. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+    "c": "At least 12 mm tie diameter only when bars are 25 mm or smaller. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "No tie-size minimum if cover is provided. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "At least 10 mm tie diameter. Supported by detailing-column-ties.",
+    "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-column-ties",
+    "checked_sources": [
+      "detailing-column-ties",
+      "detailing-hooks"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "3ebec821-c978-47d0-bb83-969e334bd40d",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ddc88cc80a9e25f160e253b3d6378465ca6c3ca880b71911e0529c94478156b1",
+  "after_hash": "sha256:3eb3d1cc2e68eb05dc9b0a0f9a1e04ac06f8428643d186f841c9d5364921b5ed",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "Both ends must be straight with no hook. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "One end has a hook not less than 135 deg with a six-diameter extension and 75 mm minimum, and the other end has a hook not less than 90 deg with a six-diameter extension. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "c": "A cross tie can ignore peripheral longitudinal bars. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "A cross tie is only an architectural layout line. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "One end has a hook not less than 135 deg with a six-diameter extension and 75 mm minimum, and the other end has a hook not less than 90 deg with a six-diameter extension. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

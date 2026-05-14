@@ -1,32 +1,48 @@
 {
+  "batch": 146,
+  "batch_id": "source-audited-batch-146-local-first",
   "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:b171224592ee6d709e27e9b5865e32697fe27879740510d47e27f9e17ced019e",
-  "source_count": 2,
+  "cluster_id": "lea-strc-007-06",
+  "slug": "lea-strc-007-06-core-concept",
+  "source_strategy": "local_first",
+  "source_count": 1,
+  "sources_hash": "sha256:8859cf4dd846943dea9ac6e130b68b85dd51f1c6bd672cba39370c2d7ada9281",
   "sources": [
     {
-      "source_id": "6c6b2f2b-fe2a-48ec-b9db-2fc471fe30c7",
-      "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
-      "label": "National Structural Code of the Philippines (NSCP) 2015, Section 6.4 (Construction (Cold) Joints)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "6efee990-d65c-4a47-ba7e-c09913317d52",
-      "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
-      "label": "ACI 318-19, Section 6.5 (Joints in Concrete Structures) and commentary on construction joint placement and reinforcement",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-wall-diaphragm-construction-joints",
+      "title": "Detailing of Reinforcement - wall and diaphragm construction joints",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-wall-diaphragm-construction-joints.source-capture.md",
+      "local_capture_sha256": "sha256:19c84f4916ead24c747b81643bf0164dcec71b73554c972f12478d9d441848db",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-wall-diaphragm-construction-joints.refined.md",
+      "refined_capture_sha256": "sha256:d4607df61b9b2a2f9ffa1243233f2ab2685e064e62c629b7b01cc4cf223836f6",
+      "locator": "refined markdown lines 600-610, 772-799",
+      "safe_claims": [
+        "Structural diaphragms transmit inertial forces to lateral-force-resisting members; structural walls resist combinations of earthquake-induced shear, moment, and axial force.",
+        "The cited section applies to structural walls serving as earthquake-force-resisting parts and to diaphragms, struts, ties, chords, and collector members that transmit earthquake forces.",
+        "Structural wall reinforcement ratio is not less than 0.0025 along longitudinal and transverse directions, and spacing each way does not exceed 450 mm.",
+        "Reinforcement provided for shear strength is continuous and distributed across the shear plane.",
+        "At least two reinforcement layers are used in a wall if the assigned in-plane factored shear force exceeds the cited threshold.",
+        "Continuous reinforcement in structural walls, diaphragms, trusses, struts, ties, chords, and collectors is anchored or spliced according to reinforcement-in-tension provisions.",
+        "Boundary members are provided at wall and diaphragm boundaries and opening edges when the cited stress condition requires them, and required boundary members have transverse reinforcement.",
+        "Transverse reinforcement terminating at wall edges without boundary elements uses a standard hook engaging the edge reinforcement or equivalent U-stirrups, subject to the cited exception.",
+        "All construction joints in walls and diaphragms conform to the cited construction-joint provision, and contact surfaces are roughened as specified by the source."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore floor-slab middle-third placement rules.",
+        "No local source in this batch was used to restore girder offset calculations, shrinkage-steel ratios, or maximum temporary-bar spacing.",
+        "No local source in this batch was used to state a complete shear-friction equation or substitute for project-specific joint design."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore floor-slab middle-third placement rules.",
+    "No local source in this batch was used to restore girder offset calculations, shrinkage-steel ratios, or maximum temporary-bar spacing.",
+    "No local source in this batch was used to state a complete shear-friction equation or substitute for project-specific joint design."
   ]
 }

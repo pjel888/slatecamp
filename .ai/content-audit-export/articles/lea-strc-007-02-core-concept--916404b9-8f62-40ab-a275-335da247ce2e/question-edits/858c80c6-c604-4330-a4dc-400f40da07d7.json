@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "858c80c6-c604-4330-a4dc-400f40da07d7",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:421a1465ba6dd5ed89abdd894b954a1cf15682f9ce34e742e6a5ed43b430e6ce",
+  "after_hash": "sha256:3f7b566b8e2abd133262f8a44976ae18614087a6108760a21e14a196ebd0cc21",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "An extension of at least 6 bar diameters at the free end. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "b": "Only a 90-deg bend is permitted. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "c": "No extension is required after the bend. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "The extension must be exactly 12 bar diameters in every case. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "An extension of at least 6 bar diameters at the free end. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

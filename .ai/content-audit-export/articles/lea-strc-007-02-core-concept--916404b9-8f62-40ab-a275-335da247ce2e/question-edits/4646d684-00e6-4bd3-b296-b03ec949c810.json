@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "4646d684-00e6-4bd3-b296-b03ec949c810",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:76468c9c6797f00c917a5f2ca6fcb9c6b42f470b9d85fdf3ce23c476549283e3",
+  "after_hash": "sha256:7d97e230167a195b8403fb87c0c1781ee01435ca3767c4005393d9177cd6ecac",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "At least 12 bar diameters for every small stirrup. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "At least 6 bar diameters at the free end. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "c": "Exactly 75 mm for every stirrup regardless of bar size. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "No extension because a stirrup is transverse steel. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "At least 6 bar diameters at the free end. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

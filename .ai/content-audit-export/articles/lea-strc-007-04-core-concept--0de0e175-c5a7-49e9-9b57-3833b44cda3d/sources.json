@@ -1,32 +1,83 @@
 {
+  "batch": 146,
+  "batch_id": "source-audited-batch-146-local-first",
   "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:405995b8b8c59feb4d9e7eb2f9d2f183fa9ed6370786396fb69fb19070348e2c",
+  "cluster_id": "lea-strc-007-04",
+  "slug": "lea-strc-007-04-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:35444f563fcec24c656e1ddc1844c2fac0b25c995b750d814f7b00ac7aee7321",
   "sources": [
     {
-      "source_id": "a296375a-cb45-40cb-9d58-bfcb03106dba",
-      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
-      "label": "National Structural Code of the Philippines (NSCP) 2015, Section 7.10.9 (Transverse Reinforcement for Columns) and Section 12.13.5 (Seismic Design — Column Confinement)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-column-ties",
+      "title": "Detailing of Reinforcement - column ties and transverse confinement",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-column-ties.source-capture.md",
+      "local_capture_sha256": "sha256:2d521feb064f3cb7daa5af60a5bb39b035cdf1fbcafb417c10386349367970f0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-column-ties.refined.md",
+      "refined_capture_sha256": "sha256:040a1ce71142555877ef80834ba0b8896e88f2e81dee0092cd3fe20a2f8972b8",
+      "locator": "refined markdown lines 176-206, 604-608, 734-758, 887-889",
+      "safe_claims": [
+        "Column lateral reinforcement includes spirals and ties for compression members.",
+        "Spirals for cast-in-place columns are not less than 10 mm diameter, have clear spacing between 25 mm and 75 mm, and are anchored by 1.5 extra turns at each end.",
+        "Tie reinforcement encloses all bars; ties are at least 10 mm for longitudinal bars 32 mm and smaller, and at least 12 mm for 36 mm to 57 mm and bundled longitudinal bars.",
+        "Vertical spacing of ties does not exceed 16 longitudinal bar diameters, 48 tie diameters, or the least dimension of the compression member.",
+        "Ties are arranged so every corner and alternate longitudinal bar has lateral support by a tie corner with included angle not more than 135 deg.",
+        "No vertical bar is farther than 150 mm clear on each side along the tie from a laterally supported bar.",
+        "Compression reinforcement in beams is enclosed by ties or stirrups satisfying the column tie size and spacing limits where compression reinforcement is required.",
+        "Special transverse reinforcement can use single or overlapping hoops or cross ties of the same bar size and spacing, and cross ties engage peripheral longitudinal bars.",
+        "Special transverse reinforcement is not spaced more than one-quarter of the minimum member dimension nor 100 mm, and cross tie or overlapping hoop leg spacing is not more than 350 mm on center perpendicular to the member axis.",
+        "The special transverse reinforcement length from a joint face is not less than the member depth at the joint face, one-sixth of clear span, and 450 mm.",
+        "Where special transverse reinforcement is not provided throughout the full column length, the remaining length contains spiral or hoop reinforcement at not more than the smaller of 6 times the longitudinal column bar diameter or 150 mm.",
+        "A later frame-member tie rule in the same source requires hooks not less than 135 deg with extensions not less than six tie-bar diameters or 60 mm."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore unsupported SMRF spacing formulas that differ from the captured source text.",
+        "No local source in this batch was used to state a complete volumetric hoop-reinforcement equation with all missing symbols restored.",
+        "No local source in this batch was used to replace project-specific seismic detailing, confinement, or inspection requirements."
+      ]
     },
     {
-      "source_id": "a3129452-bc60-4655-9b03-e88ada0fc23b",
-      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
-      "label": "ACI 318-19, Sections 18.7.5 (Transverse Reinforcement in Columns) and 18.7.6 (Transverse Reinforcement in Special Moment-Resisting Frame Columns)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-hooks",
+      "title": "Detailing of Reinforcement - standard hooks, bend diameters, and seismic hook closure",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-hooks.source-capture.md",
+      "local_capture_sha256": "sha256:90bddc72b9911110948bdfa4c48e0e565943d16ea36211ad6a8170cd5684fbb3",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-hooks.refined.md",
+      "refined_capture_sha256": "sha256:0d22721b6e18df90bdf2ea29842c7e3d1e68bf93a2b116475a68a5c0094e74d9",
+      "locator": "refined markdown lines 9-35, 604-608, 887",
+      "safe_claims": [
+        "A standard hook can be a 180-deg bend with an extension of at least 4 bar diameters and not less than 65 mm.",
+        "A standard hook can be a 90-deg bend with an extension of at least 12 bar diameters.",
+        "For stirrup and tie anchorage, 16 mm and smaller bars may use a 90-deg bend with an extension of at least 6 bar diameters.",
+        "For stirrup and tie anchorage, 19 mm to 25 mm bars using a 90-deg bend need an extension of at least 12 bar diameters.",
+        "For 25 mm and smaller stirrup or tie anchorage, a 135-deg bend needs an extension of at least 6 bar diameters.",
+        "Closed ties and continuously wound ties use a 135-deg bend plus an extension of at least 6 bar diameters, but not less than 75 mm.",
+        "Minimum inside bend diameters for standard hooks other than small stirrups and ties follow the table: 10 mm through 25 mm bars use 6db, bars larger than 25 mm through 40 mm use 8db, and bars larger than 40 mm through 57 mm use 10db.",
+        "For stirrup and tie hooks, inside bend diameter is not less than 4 bar diameters for 16 mm and smaller bars; larger bars follow the table.",
+        "A cross tie has a hook not less than 135 deg with at least a six-diameter extension, but not less than 75 mm, at one end and a hook not less than 90 deg with at least a six-diameter extension at the other end.",
+        "A hoop is a closed tie or continuously wound tie; closed tie elements use 135-deg hooks with six-diameter extensions at each end, but not less than 75 mm.",
+        "A later frame-member tie rule in the same source requires hooks not less than 135 deg with extensions not less than six tie-bar diameters or 60 mm."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore unsupported SMRF spacing formulas that differ from the captured source text.",
+        "No local source in this batch was used to state a complete volumetric hoop-reinforcement equation with all missing symbols restored.",
+        "No local source in this batch was used to replace project-specific seismic detailing, confinement, or inspection requirements."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore unsupported SMRF spacing formulas that differ from the captured source text.",
+    "No local source in this batch was used to state a complete volumetric hoop-reinforcement equation with all missing symbols restored.",
+    "No local source in this batch was used to replace project-specific seismic detailing, confinement, or inspection requirements."
   ]
 }

@@ -1,0 +1,124 @@
+{
+  "batch": 146,
+  "batch_id": "source-audited-batch-146-local-first",
+  "cluster_id": "lea-strc-007-06",
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "source_strategy": "local_first",
+  "source_count": 1,
+  "sources": [
+    {
+      "id": "detailing-wall-diaphragm-construction-joints",
+      "title": "Detailing of Reinforcement - wall and diaphragm construction joints",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-wall-diaphragm-construction-joints.source-capture.md",
+      "local_capture_sha256": "sha256:19c84f4916ead24c747b81643bf0164dcec71b73554c972f12478d9d441848db",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-wall-diaphragm-construction-joints.refined.md",
+      "refined_capture_sha256": "sha256:d4607df61b9b2a2f9ffa1243233f2ab2685e064e62c629b7b01cc4cf223836f6",
+      "locator": "refined markdown lines 600-610, 772-799",
+      "safe_claims": [
+        "Structural diaphragms transmit inertial forces to lateral-force-resisting members; structural walls resist combinations of earthquake-induced shear, moment, and axial force.",
+        "The cited section applies to structural walls serving as earthquake-force-resisting parts and to diaphragms, struts, ties, chords, and collector members that transmit earthquake forces.",
+        "Structural wall reinforcement ratio is not less than 0.0025 along longitudinal and transverse directions, and spacing each way does not exceed 450 mm.",
+        "Reinforcement provided for shear strength is continuous and distributed across the shear plane.",
+        "At least two reinforcement layers are used in a wall if the assigned in-plane factored shear force exceeds the cited threshold.",
+        "Continuous reinforcement in structural walls, diaphragms, trusses, struts, ties, chords, and collectors is anchored or spliced according to reinforcement-in-tension provisions.",
+        "Boundary members are provided at wall and diaphragm boundaries and opening edges when the cited stress condition requires them, and required boundary members have transverse reinforcement.",
+        "Transverse reinforcement terminating at wall edges without boundary elements uses a standard hook engaging the edge reinforcement or equivalent U-stirrups, subject to the cited exception.",
+        "All construction joints in walls and diaphragms conform to the cited construction-joint provision, and contact surfaces are roughened as specified by the source."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore floor-slab middle-third placement rules.",
+        "No local source in this batch was used to restore girder offset calculations, shrinkage-steel ratios, or maximum temporary-bar spacing.",
+        "No local source in this batch was used to state a complete shear-friction equation or substitute for project-specific joint design."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:eb2e790080050ba035be51c6e137113c10c9aff29d2e56ae4645f6812e179d1f",
+  "candidate_sha256": "sha256:eb2e790080050ba035be51c6e137113c10c9aff29d2e56ae4645f6812e179d1f",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "22faa6e6-2c35-4c63-a941-b6c42f2e42af",
+      "content_hash": "sha256:804ea6c7a204b1a130f1e3736eab3edfe0dc01edb6e8ae409ad97fcc7c51e32f"
+    },
+    {
+      "question_id": "82f0d052-1df1-4147-9cbb-b4096267cc64",
+      "content_hash": "sha256:f29e0c627ee1fd805f85717750db247a754641f8c02133d6b00b363d550a0698"
+    },
+    {
+      "question_id": "c73d1432-7890-4099-890c-11892d08cdcf",
+      "content_hash": "sha256:32df4eb6dfbeffe3ec476af15ef3aee4ec111864ddec3c4d3a7b89e3b256d21d"
+    },
+    {
+      "question_id": "d31cc278-1509-49b8-ac36-a38dbbd0c72d",
+      "content_hash": "sha256:9aaffa71cb70419b0d3a22c0507ee60c7eef5e95ba08b985ab02e6144ef79d44"
+    },
+    {
+      "question_id": "853bd03a-1614-44c7-931b-065ea2b1ca46",
+      "content_hash": "sha256:9e40af1cf760e6a4d6d311a88afdcfb00e1731c9b71aa0db8bebad10661573c9"
+    },
+    {
+      "question_id": "afd77613-066a-4e53-a3dd-0ad923152aad",
+      "content_hash": "sha256:104f2bb47716541375069a3a86244cfbcbc913fec31a6c1940ce50760851a314"
+    },
+    {
+      "question_id": "c32f66dd-4583-419d-9744-290770b3e823",
+      "content_hash": "sha256:17816b65e4ae8773873ef5149beb50c856015c582a91bca9b13ee9d02e4fe563"
+    },
+    {
+      "question_id": "45fdfbe6-52ab-4e4b-bb81-f7fb4fa4f0d7",
+      "content_hash": "sha256:edc8e86b51915201664f55ef9ee7cf731fce4cff788dba52d62e4025e18aa84e"
+    },
+    {
+      "question_id": "01d6e589-eec0-4b0e-87a9-7c327d42793a",
+      "content_hash": "sha256:a74d6411d4ab6ae2f2381aeb571258bfd36558c9615409f7b29ed6114bbe02b6"
+    },
+    {
+      "question_id": "fce6b57e-4b4c-4a6e-ab14-3aaafde6a1e1",
+      "content_hash": "sha256:09f3064c4ec1c0486fe4bfafeb7f1b7fb5ee797d9b11c17768636b7f83c6d134"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore floor-slab middle-third placement rules.",
+    "No local source in this batch was used to restore girder offset calculations, shrinkage-steel ratios, or maximum temporary-bar spacing.",
+    "No local source in this batch was used to state a complete shear-friction equation or substitute for project-specific joint design."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster from the Batch 146 reservation manifest; not selected or edited."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster from the Batch 146 reservation manifest; not selected or edited."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster from the Batch 146 reservation manifest; not selected or edited."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster from the Batch 146 reservation manifest; not selected or edited."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster from the Batch 146 reservation manifest; not selected or edited."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster from the Batch 146 reservation manifest; not selected or edited."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "afd77613-066a-4e53-a3dd-0ad923152aad",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:31996546efd8d2c883f1824eb84cc788a866b7864015458dfa7e41860a26b8f2",
+  "after_hash": "sha256:104f2bb47716541375069a3a86244cfbcbc913fec31a6c1940ce50760851a314",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "It is intentionally stopped at every construction joint. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "It is continuous and distributed across the shear plane. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "It is placed only where finishes require it. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "It is replaced by a smooth joint surface. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "It is continuous and distributed across the shear plane. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

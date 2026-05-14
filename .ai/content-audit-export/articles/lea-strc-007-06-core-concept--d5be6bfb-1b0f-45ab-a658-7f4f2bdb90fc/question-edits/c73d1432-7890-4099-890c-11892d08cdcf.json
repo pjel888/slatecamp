@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "c73d1432-7890-4099-890c-11892d08cdcf",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:46c6889c3cc3b77d88f16efe3c1445442c3b484afb9d53ee7ad64739e835ec48",
+  "after_hash": "sha256:32df4eb6dfbeffe3ec476af15ef3aee4ec111864ddec3c4d3a7b89e3b256d21d",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "It transmits inertial forces to lateral-force-resisting members. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "b": "It is only a nonstructural ceiling finish. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "c": "It carries no lateral force path. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "It replaces all wall reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "It transmits inertial forces to lateral-force-resisting members. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

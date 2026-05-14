@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "1ef88733-edbd-4739-95fd-f726a3cbef11",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:32a7cbe00120cc86dba60a42c069de733a0ac3b53258e9c458f1395a42927937",
+  "after_hash": "sha256:9a32cdec7f5ffa155468b56ee220c4da285792919850ea2de27ac18c3c1f0da3",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "At least 4 bar diameters and no minimum. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "At least 12 bar diameters. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "c": "Only the bar radius. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "No extension if the bar is deformed. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "At least 12 bar diameters. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

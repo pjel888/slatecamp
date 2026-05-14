@@ -1,0 +1,26 @@
+{
+  "batch": 146,
+  "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+  "cluster_id": "lea-strc-007-04",
+  "question_id": "fbe53cbf-bf61-4006-b4f1-c71ac92268c9",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:70a2ea58b854b6c943e7215df37d8c1254e2b0b4ba23cbd5e121fa81a9e1f408",
+  "after_hash": "sha256:e7de5e82be484ae6d538596186482eaad2014a6b163838cb0c454b1c7a5b52b1",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-column-ties"
+  ],
+  "rationale": {
+    "a": "Spacing is controlled only by 48 times the longitudinal bar diameter. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Spacing does not exceed 16 longitudinal bar diameters, 48 tie diameters, or the least compression-member dimension. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+    "c": "Spacing is always exactly 450 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "Spacing is not limited if the column is square. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Spacing does not exceed 16 longitudinal bar diameters, 48 tie diameters, or the least compression-member dimension. Supported by detailing-column-ties.",
+    "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-column-ties",
+    "checked_sources": [
+      "detailing-column-ties",
+      "detailing-hooks"
+    ]
+  }
+}

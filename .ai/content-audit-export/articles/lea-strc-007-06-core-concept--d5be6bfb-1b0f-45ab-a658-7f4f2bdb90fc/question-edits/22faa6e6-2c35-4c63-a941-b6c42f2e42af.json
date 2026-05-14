@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "22faa6e6-2c35-4c63-a941-b6c42f2e42af",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:4d68cbe9d0ac8fa9f6ed5323fab753207ff2d5699b716f20bd4589de67510edb",
+  "after_hash": "sha256:804ea6c7a204b1a130f1e3736eab3edfe0dc01edb6e8ae409ad97fcc7c51e32f",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "All floor-slab middle-third placement rules. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Construction joints in walls and diaphragms, including roughened contact surfaces. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "All girder offset calculations. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "All temporary shrinkage-steel formulas. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Construction joints in walls and diaphragms, including roughened contact surfaces. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

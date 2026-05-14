@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "82f0d052-1df1-4147-9cbb-b4096267cc64",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ed47ca34be0eafabf5b9618a5a54c1a9bda538b2418f163ae7ff88dfb3274aad",
+  "after_hash": "sha256:f29e0c627ee1fd805f85717750db247a754641f8c02133d6b00b363d550a0698",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "They are polished smooth in all cases. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "They are roughened as specified by the cited source provision. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "They are ignored after the next pour starts. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "They need only paint, not surface preparation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "They are roughened as specified by the cited source provision. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

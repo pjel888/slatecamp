@@ -1,0 +1,117 @@
+{
+  "batch": 146,
+  "batch_id": "source-audited-batch-146-local-first",
+  "baseline": "5b9cf4943",
+  "status": "passed_local_validation_git_handoff_pending",
+  "generated_at": "2026-05-14T03:04:39.264Z",
+  "entries": [
+    {
+      "cluster_id": "lea-strc-007-02",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "title": "Standard Hooks, Bend Diameters, and Seismic Hook Closure",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-02-core-concept--916404b9-8f62-40ab-a275-335da247ce2e",
+      "source_ids": [
+        "detailing-hooks"
+      ],
+      "source_count": 1,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:ef40024a35fa12a524708429a4a1a155d44347d9f3239c7e6b85bd769c665213",
+      "candidate_sha256": "sha256:ef40024a35fa12a524708429a4a1a155d44347d9f3239c7e6b85bd769c665213",
+      "linked_questions_sha256": "sha256:d6403a18c92787d1f62113d03114e926634123476832e59621ee63037aa8cb85",
+      "source_evidence_sha256": "sha256:05a7d85fd98d418e286f5ff332394e75f701b2cae87cb3a2008d4c1ad419fd05",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-007-04",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "title": "Column Ties and Transverse Confinement",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-04-core-concept--0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "source_ids": [
+        "detailing-column-ties",
+        "detailing-hooks"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:35a5c4da3e833a5777716156d60da45c97b57d66aec91fd25ba4eb0e11658bf0",
+      "candidate_sha256": "sha256:35a5c4da3e833a5777716156d60da45c97b57d66aec91fd25ba4eb0e11658bf0",
+      "linked_questions_sha256": "sha256:ecc36370b8fc56397f4cf343f3437af66ced3a19fd8c6a44d12b195955d55c8c",
+      "source_evidence_sha256": "sha256:cc66e7944880468bb4f092177304266bb4b20f488f054a6405359753bea27892",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-007-06",
+      "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+      "title": "Construction Joints in Walls and Diaphragms",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-06-core-concept--d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+      "source_ids": [
+        "detailing-wall-diaphragm-construction-joints"
+      ],
+      "source_count": 1,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:eb2e790080050ba035be51c6e137113c10c9aff29d2e56ae4645f6812e179d1f",
+      "candidate_sha256": "sha256:eb2e790080050ba035be51c6e137113c10c9aff29d2e56ae4645f6812e179d1f",
+      "linked_questions_sha256": "sha256:8b3b9ace5060b8ee81041a37b35c7f24bce37a9c745d04cc8e86ffda02008701",
+      "source_evidence_sha256": "sha256:6079cbd23e89fbd9196b998c14c3332c3d7b94d934ce6d45fa51b904cd02ef00",
+      "real_world_scenario_status": "included"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "source_id": "detailing-hooks",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-hooks.source-capture.md",
+      "capture_sha256": "sha256:90bddc72b9911110948bdfa4c48e0e565943d16ea36211ad6a8170cd5684fbb3",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-hooks.refined.md",
+      "refined_capture_sha256": "sha256:0d22721b6e18df90bdf2ea29842c7e3d1e68bf93a2b116475a68a5c0094e74d9",
+      "status": "pass"
+    },
+    {
+      "source_id": "detailing-column-ties",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-column-ties.source-capture.md",
+      "capture_sha256": "sha256:2d521feb064f3cb7daa5af60a5bb39b035cdf1fbcafb417c10386349367970f0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-column-ties.refined.md",
+      "refined_capture_sha256": "sha256:040a1ce71142555877ef80834ba0b8896e88f2e81dee0092cd3fe20a2f8972b8",
+      "status": "pass"
+    },
+    {
+      "source_id": "detailing-wall-diaphragm-construction-joints",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-wall-diaphragm-construction-joints.source-capture.md",
+      "capture_sha256": "sha256:19c84f4916ead24c747b81643bf0164dcec71b73554c972f12478d9d441848db",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-wall-diaphragm-construction-joints.refined.md",
+      "refined_capture_sha256": "sha256:d4607df61b9b2a2f9ffa1243233f2ab2685e064e62c629b7b01cc4cf223836f6",
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  }
+}

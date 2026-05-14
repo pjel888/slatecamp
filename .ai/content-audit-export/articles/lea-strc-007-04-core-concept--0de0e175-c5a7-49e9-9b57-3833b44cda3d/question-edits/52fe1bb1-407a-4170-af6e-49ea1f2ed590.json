@@ -1,0 +1,26 @@
+{
+  "batch": 146,
+  "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+  "cluster_id": "lea-strc-007-04",
+  "question_id": "52fe1bb1-407a-4170-af6e-49ea1f2ed590",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:6198d6c16a08cb3fd8a1ced819bacac6d33e294eecb50ede41ecab3cc5b136be",
+  "after_hash": "sha256:cb81b7fc6bddb9aefea01d081d2ecd3b34b9d7934d1ecf94ef1a26876370e0de",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-column-ties"
+  ],
+  "rationale": {
+    "a": "The source proves hoops are decorative only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Volumetric reinforcement is never structural. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "c": "The local capture has missing equation symbols, so exact equation use must come from the applicable complete source. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+    "d": "All equation values can be invented from memory. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "The local capture has missing equation symbols, so exact equation use must come from the applicable complete source. Supported by detailing-column-ties.",
+    "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-column-ties",
+    "checked_sources": [
+      "detailing-column-ties",
+      "detailing-hooks"
+    ]
+  }
+}

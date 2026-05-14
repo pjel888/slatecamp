@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "515ee63e-bb82-4862-96de-7ae8d95638e0",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:60c198b9d8ffa921ff3ca34214ec46f5471c07fe3f16c05433701182782b9917",
+  "after_hash": "sha256:b345b4ef05e10eab29c2bfde7769cce6f85bd733992363e7a612848dc1a3f78a",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "It has no required free-end extension. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "It always uses the same extension as a 90-deg standard hook. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "c": "It uses an extension of at least 4 bar diameters and not less than 65 mm. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "d": "It is a complete total hook-length rule for every bar condition. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "It uses an extension of at least 4 bar diameters and not less than 65 mm. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}

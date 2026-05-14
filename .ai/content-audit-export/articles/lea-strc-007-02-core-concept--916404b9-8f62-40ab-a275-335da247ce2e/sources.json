@@ -1,32 +1,50 @@
 {
+  "batch": 146,
+  "batch_id": "source-audited-batch-146-local-first",
   "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:8b1c6452bf5e4025d1bb6dd35e0a7ba2c0923bc73006ebc453a4a8294fe71f84",
-  "source_count": 2,
+  "cluster_id": "lea-strc-007-02",
+  "slug": "lea-strc-007-02-core-concept",
+  "source_strategy": "local_first",
+  "source_count": 1,
+  "sources_hash": "sha256:92840d094942a32fdbea5312da244e368c1526fc1498a5c55a32907e184fa5ad",
   "sources": [
     {
-      "source_id": "d666fc1d-7903-4dd4-9abb-901e5368917e",
-      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
-      "label": "National Structural Code of the Philippines (NSCP) 2015, Section 7.1 (Development of Reinforcement) and Section 12.13.5 (Seismic Column Confinement)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "3cce0b7f-4120-4077-8d4c-4d54de616f7c",
-      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
-      "label": "ACI 318-19, Sections 25.2–25.3 (Development of Reinforcement and Standard Hooks)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-hooks",
+      "title": "Detailing of Reinforcement - standard hooks, bend diameters, and seismic hook closure",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-146/detailing-hooks.source-capture.md",
+      "local_capture_sha256": "sha256:90bddc72b9911110948bdfa4c48e0e565943d16ea36211ad6a8170cd5684fbb3",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-146/detailing-hooks.refined.md",
+      "refined_capture_sha256": "sha256:0d22721b6e18df90bdf2ea29842c7e3d1e68bf93a2b116475a68a5c0094e74d9",
+      "locator": "refined markdown lines 9-35, 604-608, 887",
+      "safe_claims": [
+        "A standard hook can be a 180-deg bend with an extension of at least 4 bar diameters and not less than 65 mm.",
+        "A standard hook can be a 90-deg bend with an extension of at least 12 bar diameters.",
+        "For stirrup and tie anchorage, 16 mm and smaller bars may use a 90-deg bend with an extension of at least 6 bar diameters.",
+        "For stirrup and tie anchorage, 19 mm to 25 mm bars using a 90-deg bend need an extension of at least 12 bar diameters.",
+        "For 25 mm and smaller stirrup or tie anchorage, a 135-deg bend needs an extension of at least 6 bar diameters.",
+        "Closed ties and continuously wound ties use a 135-deg bend plus an extension of at least 6 bar diameters, but not less than 75 mm.",
+        "Minimum inside bend diameters for standard hooks other than small stirrups and ties follow the table: 10 mm through 25 mm bars use 6db, bars larger than 25 mm through 40 mm use 8db, and bars larger than 40 mm through 57 mm use 10db.",
+        "For stirrup and tie hooks, inside bend diameter is not less than 4 bar diameters for 16 mm and smaller bars; larger bars follow the table.",
+        "A cross tie has a hook not less than 135 deg with at least a six-diameter extension, but not less than 75 mm, at one end and a hook not less than 90 deg with at least a six-diameter extension at the other end.",
+        "A hoop is a closed tie or continuously wound tie; closed tie elements use 135-deg hooks with six-diameter extensions at each end, but not less than 75 mm.",
+        "A later frame-member tie rule in the same source requires hooks not less than 135 deg with extensions not less than six tie-bar diameters or 60 mm."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore unsupported total hook-length rules beyond the captured bend and extension definitions.",
+        "No local source in this batch was used to state a complete development-length equation for every hook condition.",
+        "No local source in this batch was used to replace project-specific bar bending schedules, seismic detailing notes, or inspection requirements."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore unsupported total hook-length rules beyond the captured bend and extension definitions.",
+    "No local source in this batch was used to state a complete development-length equation for every hook condition.",
+    "No local source in this batch was used to replace project-specific bar bending schedules, seismic detailing notes, or inspection requirements."
   ]
 }

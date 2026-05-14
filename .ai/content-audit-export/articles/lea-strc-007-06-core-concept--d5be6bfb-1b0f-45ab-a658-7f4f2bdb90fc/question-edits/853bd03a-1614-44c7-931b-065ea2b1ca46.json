@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "853bd03a-1614-44c7-931b-065ea2b1ca46",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:047af7513eb54820ece4a7d610610a07faddc645f3103546c3f5cec61bffcd5b",
+  "after_hash": "sha256:9e40af1cf760e6a4d6d311a88afdcfb00e1731c9b71aa0db8bebad10661573c9",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "Exactly 0.0000 because walls do not need reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Not less than 0.0025. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "At least 0.0100 for every wall regardless of source. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "No ratio is mentioned for any wall condition. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Not less than 0.0025. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

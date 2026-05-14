@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "45fdfbe6-52ab-4e4b-bb81-f7fb4fa4f0d7",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:f7da860c6f1d5b2d7761b580873cf0915f20dd8d6ef0f2acf7a3e176f6558920",
+  "after_hash": "sha256:edc8e86b51915201664f55ef9ee7cf731fce4cff788dba52d62e4025e18aa84e",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "Boundary members are always decorative only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Required boundary members at edges or openings use transverse reinforcement where required by the cited condition. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "Boundary members cannot occur around openings. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "Boundary members cancel wall axial and overturning actions. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Required boundary members at edges or openings use transverse reinforcement where required by the cited condition. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

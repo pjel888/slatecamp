@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "01d6e589-eec0-4b0e-87a9-7c327d42793a",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:497da202ea1484bea3c7b8bc2be4d69151c1504ddb96f42146bd9199d276a6f2",
+  "after_hash": "sha256:a74d6411d4ab6ae2f2381aeb571258bfd36558c9615409f7b29ed6114bbe02b6",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "They were rewritten because construction joints are never structural. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "Those exact claims were not captured in the Batch 146 local source boundary. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "They were rewritten to remove all source discipline. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "They were rewritten because walls and diaphragms have no reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "Those exact claims were not captured in the Batch 146 local source boundary. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

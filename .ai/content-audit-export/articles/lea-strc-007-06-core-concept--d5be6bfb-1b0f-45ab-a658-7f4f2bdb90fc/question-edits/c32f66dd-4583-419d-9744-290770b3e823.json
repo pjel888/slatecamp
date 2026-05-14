@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+  "cluster_id": "lea-strc-007-06",
+  "question_id": "c32f66dd-4583-419d-9744-290770b3e823",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:b96babea6672bab069622ff613ecadae24e3eb41144e1be961045b49d1a6dcba",
+  "after_hash": "sha256:17816b65e4ae8773873ef5149beb50c856015c582a91bca9b13ee9d02e4fe563",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-wall-diaphragm-construction-joints"
+  ],
+  "rationale": {
+    "a": "It is cut off without anchorage at every pour break. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "It is anchored or spliced according to reinforcement-in-tension provisions. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+    "c": "It is governed only by paint color. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "It never needs splices or anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "correct": "It is anchored or spliced according to reinforcement-in-tension provisions. Supported by detailing-wall-diaphragm-construction-joints.",
+    "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-wall-diaphragm-construction-joints",
+    "checked_sources": [
+      "detailing-wall-diaphragm-construction-joints"
+    ]
+  }
+}

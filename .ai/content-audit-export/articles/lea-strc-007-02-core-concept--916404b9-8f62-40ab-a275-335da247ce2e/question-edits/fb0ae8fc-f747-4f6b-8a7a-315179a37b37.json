@@ -1,0 +1,25 @@
+{
+  "batch": 146,
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "cluster_id": "lea-strc-007-02",
+  "question_id": "fb0ae8fc-f747-4f6b-8a7a-315179a37b37",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:83b65871c185b0f540d90a9ceb4cbc0a8d2a5e817bd17fb43bbd3eaf775f8d57",
+  "after_hash": "sha256:274777717cc78ba5741f195cd67c52c743ac0285971e78bffabaed856f32431f",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-hooks"
+  ],
+  "rationale": {
+    "a": "A 90-deg bend with no extension. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "b": "A straight lap with no hook at either end. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "c": "Any angle selected by the contractor. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+    "d": "A 135-deg bend with an extension of at least 6 bar diameters, but not less than 75 mm. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+    "correct": "A 135-deg bend with an extension of at least 6 bar diameters, but not less than 75 mm. Supported by detailing-hooks.",
+    "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-hooks",
+    "checked_sources": [
+      "detailing-hooks"
+    ]
+  }
+}
