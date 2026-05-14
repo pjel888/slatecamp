@@ -1,0 +1,27 @@
+{
+  "batch": 145,
+  "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+  "cluster_id": "lea-strc-006-05",
+  "question_id": "3e1a8d73-4607-4f6a-b1b5-92b57584cd47",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:df78fc0d437b19933b6236c2296d46e29bf59a541427015135e7e81ff1ff414e",
+  "after_hash": "sha256:97fe7e689ef267bc203e633cbd32025e79946a22ebf77850ef574a70a8c6c765",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-prestress-precast"
+  ],
+  "rationale": {
+    "a": "By removing reinforcement at all bearings. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "By bonding the reinforced topping to the precast units. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+    "c": "By avoiding contact between topping and units. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "By relying only on the panel label. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "correct": "By bonding the reinforced topping to the precast units. Supported by bsi-prestress-precast.",
+    "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-prestress-precast",
+    "checked_sources": [
+      "bsi-prestress-precast",
+      "detailing-precast-integrity",
+      "detailing-cover"
+    ]
+  }
+}

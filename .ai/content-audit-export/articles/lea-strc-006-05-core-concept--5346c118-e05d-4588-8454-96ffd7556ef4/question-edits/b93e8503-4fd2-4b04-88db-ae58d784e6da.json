@@ -1,0 +1,27 @@
+{
+  "batch": 145,
+  "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+  "cluster_id": "lea-strc-006-05",
+  "question_id": "b93e8503-4fd2-4b04-88db-ae58d784e6da",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:8cd780317a7c97ea506c4313726bc6eb599ddc22127452311cbf8e7f4c1dad77",
+  "after_hash": "sha256:29c9ea4636fb79bbc276fb6580b2961ca25f24618c677ebf250aaa0c01725161",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-precast-integrity"
+  ],
+  "rationale": {
+    "a": "It is a decorative line with no structural review. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+    "c": "It automatically creates composite action without preparation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "It cancels all connection and tie requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "correct": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. Supported by detailing-precast-integrity.",
+    "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-precast-integrity",
+    "checked_sources": [
+      "bsi-prestress-precast",
+      "detailing-precast-integrity",
+      "detailing-cover"
+    ]
+  }
+}

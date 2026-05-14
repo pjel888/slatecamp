@@ -1,0 +1,26 @@
+{
+  "batch": 145,
+  "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+  "cluster_id": "lea-strc-007-01",
+  "question_id": "babf53c7-3371-490f-bd34-c2e41e8bcd8b",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:628b48698811b9dec1483e02e0bc2764f1770322ba7740e7169f37d7a6ed389d",
+  "after_hash": "sha256:8b58798b2016f98c1a67cd95b2406628ce28ad604c7a344001697b9724698009",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-cover"
+  ],
+  "rationale": {
+    "a": "16 mm because all protected slab values apply outdoors. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "50 mm for 19 mm through 57 mm bars exposed to earth or weather. This stays inside the Batch 145 local source boundary for Concrete Cover: Exposure, Member Type, and Larger-Value Rule.",
+    "c": "75 mm only when it is cast against and permanently exposed to earth. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "0 mm because weather exposure removes cover requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "correct": "50 mm for 19 mm through 57 mm bars exposed to earth or weather. Supported by detailing-cover.",
+    "takeaway": "For Concrete Cover: Exposure, Member Type, and Larger-Value Rule, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-cover",
+    "checked_sources": [
+      "detailing-cover",
+      "detailing-precast-integrity"
+    ]
+  }
+}

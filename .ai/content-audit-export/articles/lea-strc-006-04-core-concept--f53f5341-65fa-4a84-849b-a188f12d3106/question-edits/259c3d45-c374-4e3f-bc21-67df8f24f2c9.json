@@ -1,0 +1,25 @@
+{
+  "batch": 145,
+  "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
+  "cluster_id": "lea-strc-006-04",
+  "question_id": "259c3d45-c374-4e3f-bc21-67df8f24f2c9",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:e95a9f56fe3b0133a5af6662bc837ba94f767a6746dc9f6019ffd6e9d287988b",
+  "after_hash": "sha256:f7283396ad1604004e0dd14eee48013975917c2f0f23af428c4b16502a85477c",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-prestress-precast"
+  ],
+  "rationale": {
+    "a": "Prestressed precast units cannot be transported. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "Prestressing can improve efficiency, producing less depth, reduced weight, and longer spans. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+    "c": "Prestressing makes every unit nonstructural. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "Precast units never need planned handling. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "correct": "Prestressing can improve efficiency, producing less depth, reduced weight, and longer spans. Supported by bsi-prestress-precast.",
+    "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-prestress-precast",
+    "checked_sources": [
+      "bsi-prestress-precast"
+    ]
+  }
+}

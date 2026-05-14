@@ -1,0 +1,26 @@
+{
+  "batch": 145,
+  "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+  "cluster_id": "lea-strc-007-01",
+  "question_id": "dddc14fa-914b-4a3e-b645-0167dd1f80d6",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:110983675b5ad972a100ddac2bf3cbb463302469016daa9886d4aee6976cdb62",
+  "after_hash": "sha256:3d665ad068116b1fc216bedd73a64acc4a739a99105695f10eb60576e3fec337",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-cover"
+  ],
+  "rationale": {
+    "a": "10 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "40 mm. This stays inside the Batch 145 local source boundary for Concrete Cover: Exposure, Member Type, and Larger-Value Rule.",
+    "c": "16 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "75 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "correct": "40 mm. Supported by detailing-cover.",
+    "takeaway": "For Concrete Cover: Exposure, Member Type, and Larger-Value Rule, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-cover",
+    "checked_sources": [
+      "detailing-cover",
+      "detailing-precast-integrity"
+    ]
+  }
+}

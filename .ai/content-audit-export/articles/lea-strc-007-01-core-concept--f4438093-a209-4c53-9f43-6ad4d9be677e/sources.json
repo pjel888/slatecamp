@@ -1,32 +1,74 @@
 {
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
   "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:83bccee68868981e5a27248f813574d44a34245e243f59219e5f7fb7648e5ac0",
+  "cluster_id": "lea-strc-007-01",
+  "slug": "lea-strc-007-01-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:8ef1fd085b12befa3f1556fa1d1508ac3ad4e6cb867c9d667aebb933c3d50f97",
   "sources": [
     {
-      "source_id": "bc91d325-f745-44c3-8eb4-7c0f51175566",
-      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
-      "label": "National Structural Code of the Philippines (NSCP) 2015, Chapter 6.7 (Concrete Cover and Durability)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-cover",
+      "title": "Detailing of Reinforcement - cover, exposure, and plant-control precast categories",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-cover.source-capture.md",
+      "local_capture_sha256": "sha256:c6a6b104be25295c8878d37a1ed6379f207ac0feb1175778679d56a593ff3586",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-cover.refined.md",
+      "refined_capture_sha256": "sha256:419b8115c828b988401245615c1d349e80248d221aabcf1ebbb11adbcf9a11d7",
+      "locator": "refined markdown lines 51-68, 91-156",
+      "safe_claims": [
+        "Reinforcement must be accurately placed and adequately supported before concrete is placed, and cover tolerances are controlled.",
+        "For cast-in-place concrete cast against and permanently exposed to earth, the source states 75 mm minimum cover.",
+        "For cast-in-place concrete exposed to earth or weather, the source states 50 mm cover for 19 mm through 57 mm bars and 40 mm cover for 16 mm and smaller bars.",
+        "For cast-in-place surfaces not exposed to weather or ground, the source states 20 mm cover for slabs and walls with 36 mm and smaller bars.",
+        "For cast-in-place beams and columns not exposed to weather or ground, the source states 40 mm cover for primary reinforcement, ties, stirrups, and spirals.",
+        "For plant-control precast wall panels exposed to earth or weather, the source states 40 mm cover for 40 mm through 57 mm bars and 20 mm cover for 36 mm and smaller bars.",
+        "For plant-control precast slabs and walls not exposed to weather or ground, the source states 30 mm cover for 40 mm through 57 mm bars and 16 mm cover for 36 mm and smaller bars.",
+        "The source treats plant-control precast beams and columns as a separate cover category; this batch does not collapse that category into the cast-in-place beam and column value.",
+        "If cover values conflict, the source says the larger value governs. Fire protection or corrosive exposure can also require greater cover."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore an unsupported prestressed-member cover table.",
+        "No local source in this batch was used to collapse plant-control precast cover categories into cast-in-place values.",
+        "No local source in this batch was used to replace fire-rating, corrosion, or project specification cover requirements."
+      ]
     },
     {
-      "source_id": "83abf052-4dc7-4f19-a3eb-2cb3aecabd9f",
-      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
-      "label": "ACI 318-19, Section 20.7 (Concrete Cover)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "detailing-precast-integrity",
+      "title": "Detailing of Reinforcement - precast integrity, ties, connections, and joints",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-precast-integrity.source-capture.md",
+      "local_capture_sha256": "sha256:93b1be5d2122d889fe64c7f740e690f7b22212d33a0fb01433e7280f6b9b9b9e",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-precast-integrity.refined.md",
+      "refined_capture_sha256": "sha256:5b2bc8d38ea5ec8e3018d6f1c31b4d779b8be0b88f419cb9674cecbf913ad9a0",
+      "locator": "refined markdown lines 231-248 and 797",
+      "safe_claims": [
+        "Structural members should be effectively tied together to improve overall integrity.",
+        "For precast concrete construction, tension ties are required in transverse, longitudinal, and vertical directions and around the structure perimeter.",
+        "Connections should enclose splices and anchor terminating reinforcement at principal framing elements.",
+        "Connections can be enclosed by external concrete or by internal closed ties, spirals, or stirrups.",
+        "Construction joints in walls and diaphragms require conforming contact surfaces that are roughened as specified by the source."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore an unsupported prestressed-member cover table.",
+        "No local source in this batch was used to collapse plant-control precast cover categories into cast-in-place values.",
+        "No local source in this batch was used to replace fire-rating, corrosion, or project specification cover requirements."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore an unsupported prestressed-member cover table.",
+    "No local source in this batch was used to collapse plant-control precast cover categories into cast-in-place values.",
+    "No local source in this batch was used to replace fire-rating, corrosion, or project specification cover requirements."
   ]
 }

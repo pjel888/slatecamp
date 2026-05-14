@@ -1,56 +1,48 @@
 {
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
   "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:2d41d083b9e027f6aaa830a3b67cf2c3a464210c4c6c29fb9ac9a46611e5fbc6",
-  "source_count": 4,
+  "cluster_id": "lea-strc-006-04",
+  "slug": "lea-strc-006-04-core-concept",
+  "source_strategy": "local_first",
+  "source_count": 1,
+  "sources_hash": "sha256:72396c0cc6ea1ddb2221e03a457ee199fb5ce95dca237029e2829d97f731af8c",
   "sources": [
     {
-      "source_id": "13a89d9f-c519-438f-8192-2af986320617",
-      "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
-      "label": "PNSC 2015, Chapter 9: Prestressed Concrete",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "0bc9a539-f7b7-4be7-995e-e953397169f9",
-      "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
-      "label": "ACI 318-14, Chapter 18: Prestressed Concrete",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "96231fda-72a0-48c8-af2f-9f1793e346c9",
-      "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
-      "label": "ASTM A416 (Strand Specifications)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "971b0d07-1604-4eb7-b95c-5e12b660cbfc",
-      "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
-      "label": "ASTM A422 (Wire Specifications). \"Prestressed Concrete Structures\" by T.Y. Lin and Ned H. Burns (reference text on pre- and post-tensioning methods)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "bsi-prestress-precast",
+      "title": "Building Structures Illustrated - prestressed and precast concrete systems",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/bsi-prestress-precast.source-capture.md",
+      "local_capture_sha256": "sha256:d906a4c31e20ebb5353a95d766fcb3145ef09861d101a1fcf0a25a90385d7fc9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/bsi-prestress-precast.refined.md",
+      "refined_capture_sha256": "sha256:2056f45e7b5f8de6f146e94563173b6a9e2478ed9e38fe533551b02a7ba97e2a",
+      "locator": "refined markdown lines 2365, 2528, 2543-2545, 3202, 3659-3667, 5033-5035, 5682",
+      "safe_claims": [
+        "Flat plates can achieve greater spans or reduced slab thicknesses with post-tensioning, and post-tensioning improves control of deflection and cracking.",
+        "Ribbed concrete construction can extend to longer spans when post-tensioning is used.",
+        "Precast concrete slabs are one-way spanning units that may be supported by site-cast concrete, precast concrete, masonry bearing walls, or structural frames.",
+        "Precast units may be manufactured with normal-density or structural lightweight concrete and prestressed for greater structural efficiency, resulting in less depth, reduced weight, and longer spans.",
+        "A reinforced concrete topping can bond with precast units to form a composite structural unit.",
+        "For diaphragm behavior, steel reinforcement should tie precast slab units together at supports and end bearings.",
+        "Concrete members may be prestressed by pretensioning at a factory site or by posttensioning at the construction site.",
+        "Cast-in-place post-tensioned concrete systems inherently provide moment resistance where columns, beams, and slabs meet.",
+        "Precast walls can provide high-quality concrete finishes and may be prestressed."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact tendon grouting sequence requirements.",
+        "No local source in this batch was used to state jacking stress limits, prestress loss equations, or strand yield strengths.",
+        "No local source in this batch was used to replace project specifications for stressing, anchorage, duct protection, or inspection."
+      ]
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore exact tendon grouting sequence requirements.",
+    "No local source in this batch was used to state jacking stress limits, prestress loss equations, or strand yield strengths.",
+    "No local source in this batch was used to replace project specifications for stressing, anchorage, duct protection, or inspection."
   ]
 }

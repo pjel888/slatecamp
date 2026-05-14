@@ -1,0 +1,26 @@
+{
+  "batch": 145,
+  "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+  "cluster_id": "lea-strc-007-01",
+  "question_id": "5e8d911d-42a4-4df0-8823-f5f078ac99fe",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:0ce6e7811143e415798a8314c4865bf9e41554169175117d10cc9daaf610644e",
+  "after_hash": "sha256:9ebc07e68e7ad5e269310425b3d9144affd71a240ca89488277ec4e5dd3a32a1",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-cover"
+  ],
+  "rationale": {
+    "a": "Precast beams never contain reinforcement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "The captured source treats plant-control precast beams and columns as a separate category. This stays inside the Batch 145 local source boundary for Concrete Cover: Exposure, Member Type, and Larger-Value Rule.",
+    "c": "Cast-in-place cover values are always zero. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "Plant-control precast work cannot be exposed to weather. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "correct": "The captured source treats plant-control precast beams and columns as a separate category. Supported by detailing-cover.",
+    "takeaway": "For Concrete Cover: Exposure, Member Type, and Larger-Value Rule, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-cover",
+    "checked_sources": [
+      "detailing-cover",
+      "detailing-precast-integrity"
+    ]
+  }
+}

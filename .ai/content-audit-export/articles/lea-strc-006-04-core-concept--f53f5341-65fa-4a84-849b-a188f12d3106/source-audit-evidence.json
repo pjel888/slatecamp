@@ -1,0 +1,124 @@
+{
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
+  "cluster_id": "lea-strc-006-04",
+  "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
+  "source_strategy": "local_first",
+  "source_count": 1,
+  "sources": [
+    {
+      "id": "bsi-prestress-precast",
+      "title": "Building Structures Illustrated - prestressed and precast concrete systems",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/bsi-prestress-precast.source-capture.md",
+      "local_capture_sha256": "sha256:d906a4c31e20ebb5353a95d766fcb3145ef09861d101a1fcf0a25a90385d7fc9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/bsi-prestress-precast.refined.md",
+      "refined_capture_sha256": "sha256:2056f45e7b5f8de6f146e94563173b6a9e2478ed9e38fe533551b02a7ba97e2a",
+      "locator": "refined markdown lines 2365, 2528, 2543-2545, 3202, 3659-3667, 5033-5035, 5682",
+      "safe_claims": [
+        "Flat plates can achieve greater spans or reduced slab thicknesses with post-tensioning, and post-tensioning improves control of deflection and cracking.",
+        "Ribbed concrete construction can extend to longer spans when post-tensioning is used.",
+        "Precast concrete slabs are one-way spanning units that may be supported by site-cast concrete, precast concrete, masonry bearing walls, or structural frames.",
+        "Precast units may be manufactured with normal-density or structural lightweight concrete and prestressed for greater structural efficiency, resulting in less depth, reduced weight, and longer spans.",
+        "A reinforced concrete topping can bond with precast units to form a composite structural unit.",
+        "For diaphragm behavior, steel reinforcement should tie precast slab units together at supports and end bearings.",
+        "Concrete members may be prestressed by pretensioning at a factory site or by posttensioning at the construction site.",
+        "Cast-in-place post-tensioned concrete systems inherently provide moment resistance where columns, beams, and slabs meet.",
+        "Precast walls can provide high-quality concrete finishes and may be prestressed."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore exact tendon grouting sequence requirements.",
+        "No local source in this batch was used to state jacking stress limits, prestress loss equations, or strand yield strengths.",
+        "No local source in this batch was used to replace project specifications for stressing, anchorage, duct protection, or inspection."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:7b8e75f744f390a117572a60f7ded10fb1db10da3928efe803ecaeab509e0166",
+  "candidate_sha256": "sha256:7b8e75f744f390a117572a60f7ded10fb1db10da3928efe803ecaeab509e0166",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "43a81932-43c1-4cdf-9f6e-bf7c1b909341",
+      "content_hash": "sha256:58afc08f0d936cf2e8001cbaa0afa592936892dee992b2c9d189b054d9e4d5e5"
+    },
+    {
+      "question_id": "6e745d22-1b0d-4b89-975a-b2a715552308",
+      "content_hash": "sha256:1bc2ed223943d73fab977266e52ec71f96671cc0d85973d536ac910d0cfabc61"
+    },
+    {
+      "question_id": "f478d20f-8f73-4307-995f-397cb3687493",
+      "content_hash": "sha256:87f4c599b4d8321a549f0663bb3a8af5b2466632d95c1982b74cff228df3964f"
+    },
+    {
+      "question_id": "749e714e-c242-45aa-9814-6d5723f9dbf7",
+      "content_hash": "sha256:693ca5f14082e00a5db92604c498c75b65f8ad8c2375f00e86730740fcfada93"
+    },
+    {
+      "question_id": "8d34a974-5449-4e8a-8a44-0e93d4875a0b",
+      "content_hash": "sha256:6ba3f4e6a3ef8e569d6bf835006918ff17c28d0f89fa2ef93488ad8d4530ef3e"
+    },
+    {
+      "question_id": "b60812af-8a40-4a20-aba4-80caecf728cd",
+      "content_hash": "sha256:afbea9c17473f8a2fcc6f9bb300b0fb258bd37aafec3e6e0e446854835a1f0ba"
+    },
+    {
+      "question_id": "259c3d45-c374-4e3f-bc21-67df8f24f2c9",
+      "content_hash": "sha256:f7283396ad1604004e0dd14eee48013975917c2f0f23af428c4b16502a85477c"
+    },
+    {
+      "question_id": "fcebc043-55bc-4672-a91e-14517af63260",
+      "content_hash": "sha256:47a658e0386bff9edfc7c62e38957bb4fd6716b7cb5dd70a7fa15158e05496d1"
+    },
+    {
+      "question_id": "799689f0-493e-4378-ba3a-a10a5a3f2dd2",
+      "content_hash": "sha256:1e18c39fa8c9a47d8f45d223ce3435058cf50a83dc4178f0abf47774eeffd49a"
+    },
+    {
+      "question_id": "b176c760-0845-4c1d-9e0c-99d98ce8fa2d",
+      "content_hash": "sha256:c81c4df665635f8f4d24c41a5bd7b5a19158178e02b1a1abcfd3abc482707bf6"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore exact tendon grouting sequence requirements.",
+    "No local source in this batch was used to state jacking stress limits, prestress loss equations, or strand yield strengths.",
+    "No local source in this batch was used to replace project specifications for stressing, anchorage, duct protection, or inspection."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    }
+  ]
+}

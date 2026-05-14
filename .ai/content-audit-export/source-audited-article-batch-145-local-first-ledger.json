@@ -1,0 +1,119 @@
+{
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
+  "baseline": "7e5a2e32d",
+  "status": "passed_local_validation_git_handoff_pending",
+  "generated_at": "2026-05-14T02:34:50.722Z",
+  "entries": [
+    {
+      "cluster_id": "lea-strc-006-04",
+      "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
+      "title": "Prestressing and Post-Tensioned Concrete Systems",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "source_count": 1,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:7b8e75f744f390a117572a60f7ded10fb1db10da3928efe803ecaeab509e0166",
+      "candidate_sha256": "sha256:7b8e75f744f390a117572a60f7ded10fb1db10da3928efe803ecaeab509e0166",
+      "linked_questions_sha256": "sha256:4f4dc6a893417b647e59b5c6c7bc2a123cf47be2676e1bfa847540e32fc381b5",
+      "source_evidence_sha256": "sha256:153ef211562d9948797ffe39b58e970e1a3b9ec1214fe0ab07838cf7245cd5bc",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-05",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "title": "Precast Concrete, Composite Topping, and Connection Integrity",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4",
+      "source_ids": [
+        "bsi-prestress-precast",
+        "detailing-precast-integrity",
+        "detailing-cover"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:cc49292bc5c9383e8fcbdd288da6a24ae62d88ae0a90be3065d11fd2d954d5ec",
+      "candidate_sha256": "sha256:cc49292bc5c9383e8fcbdd288da6a24ae62d88ae0a90be3065d11fd2d954d5ec",
+      "linked_questions_sha256": "sha256:848b012902c6c95267140c5beeac6e042ce62e976ff5ca3970488f8f3998dd92",
+      "source_evidence_sha256": "sha256:55684a698e81f900e49343889b69e9a32d1e7a835ec8c26b7babbbe08e2efb35",
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-007-01",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "title": "Concrete Cover: Exposure, Member Type, and Larger-Value Rule",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "source_ids": [
+        "detailing-cover",
+        "detailing-precast-integrity"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:44c87ad62af0f927cc6dc8dcf14d48315efe126dca1d18f356a85cf6a3fc93ab",
+      "candidate_sha256": "sha256:44c87ad62af0f927cc6dc8dcf14d48315efe126dca1d18f356a85cf6a3fc93ab",
+      "linked_questions_sha256": "sha256:d47fcd6b5cb343a3e5282573c4e274110cb97e579a53f3d996af13f1f7def202",
+      "source_evidence_sha256": "sha256:283d2127e1caf427024d4b5f3979ba179bf459e31a647f4c45b053544f76fd92",
+      "real_world_scenario_status": "included"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "source_id": "bsi-prestress-precast",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/bsi-prestress-precast.source-capture.md",
+      "capture_sha256": "sha256:d906a4c31e20ebb5353a95d766fcb3145ef09861d101a1fcf0a25a90385d7fc9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/bsi-prestress-precast.refined.md",
+      "refined_capture_sha256": "sha256:2056f45e7b5f8de6f146e94563173b6a9e2478ed9e38fe533551b02a7ba97e2a",
+      "status": "pass"
+    },
+    {
+      "source_id": "detailing-cover",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-cover.source-capture.md",
+      "capture_sha256": "sha256:c6a6b104be25295c8878d37a1ed6379f207ac0feb1175778679d56a593ff3586",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-cover.refined.md",
+      "refined_capture_sha256": "sha256:419b8115c828b988401245615c1d349e80248d221aabcf1ebbb11adbcf9a11d7",
+      "status": "pass"
+    },
+    {
+      "source_id": "detailing-precast-integrity",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "raw_exists": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "refined_exists": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-precast-integrity.source-capture.md",
+      "capture_sha256": "sha256:93b1be5d2122d889fe64c7f740e690f7b22212d33a0fb01433e7280f6b9b9b9e",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-precast-integrity.refined.md",
+      "refined_capture_sha256": "sha256:5b2bc8d38ea5ec8e3018d6f1c31b4d779b8be0b88f419cb9674cecbf913ad9a0",
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  }
+}

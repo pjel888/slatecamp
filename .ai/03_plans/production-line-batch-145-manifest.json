@@ -1,0 +1,440 @@
+{
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
+  "baseline": "7e5a2e32d",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_pending",
+  "generated_at": "2026-05-14T02:34:50.722Z",
+  "task": "Residual non-prac local-first article and linked-question pass after Batch 144 structural clusters.",
+  "consumed_previous_batch_clusters": [
+    "lea-strc-005-02",
+    "lea-strc-005-03",
+    "lea-strc-006-01",
+    "lea-strc-006-02",
+    "lea-strc-006-03"
+  ],
+  "blocked_residuals_not_edited": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    }
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-strc-006-04",
+      "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
+      "slug": "lea-strc-006-04-core-concept",
+      "title": "Prestressing and Post-Tensioned Concrete Systems",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "source_count": 1,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:7b8e75f744f390a117572a60f7ded10fb1db10da3928efe803ecaeab509e0166",
+      "candidate_sha256": "sha256:7b8e75f744f390a117572a60f7ded10fb1db10da3928efe803ecaeab509e0166",
+      "source_evidence_sha256": "sha256:153ef211562d9948797ffe39b58e970e1a3b9ec1214fe0ab07838cf7245cd5bc",
+      "linked_questions_sha256": "sha256:4f4dc6a893417b647e59b5c6c7bc2a123cf47be2676e1bfa847540e32fc381b5",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore exact tendon grouting sequence requirements.",
+        "No local source in this batch was used to state jacking stress limits, prestress loss equations, or strand yield strengths.",
+        "No local source in this batch was used to replace project specifications for stressing, anchorage, duct protection, or inspection."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/scoped-validation-batch-145.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/43a81932-43c1-4cdf-9f6e-bf7c1b909341.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/6e745d22-1b0d-4b89-975a-b2a715552308.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/f478d20f-8f73-4307-995f-397cb3687493.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/749e714e-c242-45aa-9814-6d5723f9dbf7.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/8d34a974-5449-4e8a-8a44-0e93d4875a0b.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/b60812af-8a40-4a20-aba4-80caecf728cd.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/259c3d45-c374-4e3f-bc21-67df8f24f2c9.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/fcebc043-55bc-4672-a91e-14517af63260.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/799689f0-493e-4378-ba3a-a10a5a3f2dd2.json",
+          ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/b176c760-0845-4c1d-9e0c-99d98ce8fa2d.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-006-05",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "slug": "lea-strc-006-05-core-concept",
+      "title": "Precast Concrete, Composite Topping, and Connection Integrity",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bsi-prestress-precast",
+        "detailing-precast-integrity",
+        "detailing-cover"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:cc49292bc5c9383e8fcbdd288da6a24ae62d88ae0a90be3065d11fd2d954d5ec",
+      "candidate_sha256": "sha256:cc49292bc5c9383e8fcbdd288da6a24ae62d88ae0a90be3065d11fd2d954d5ec",
+      "source_evidence_sha256": "sha256:55684a698e81f900e49343889b69e9a32d1e7a835ec8c26b7babbbe08e2efb35",
+      "linked_questions_sha256": "sha256:848b012902c6c95267140c5beeac6e042ce62e976ff5ca3970488f8f3998dd92",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore precast lifting or release-strength percentages.",
+        "No local source in this batch was used to state shear-friction coefficients or a complete construction-joint design equation.",
+        "No local source in this batch was used to replace project-specific shop drawing, handling, erection, or connection design requirements."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/scoped-validation-batch-145.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/18f9fb08-8589-46ce-b67b-a3e1a8a4c21e.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/2af2fd61-f674-4f03-8cac-2d39352e2a14.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/31644fc8-2c2f-46a4-b618-7d43e3ae3860.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/f0a33b6a-0322-4c42-9835-9fa96a8b5f92.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/d0bc39af-b869-4994-86bc-210fcfd5340f.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/86266369-d20e-4284-b170-a8ee05378acf.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/8b318858-ce00-42e1-8834-24600fe2dcc7.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/31e66765-f6d2-4850-8d60-10e7006bbb4f.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/3e1a8d73-4607-4f6a-b1b5-92b57584cd47.json",
+          ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/b93e8503-4fd2-4b04-88db-ae58d784e6da.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-strc-007-01",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "slug": "lea-strc-007-01-core-concept",
+      "title": "Concrete Cover: Exposure, Member Type, and Larger-Value Rule",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "detailing-cover",
+        "detailing-precast-integrity"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:44c87ad62af0f927cc6dc8dcf14d48315efe126dca1d18f356a85cf6a3fc93ab",
+      "candidate_sha256": "sha256:44c87ad62af0f927cc6dc8dcf14d48315efe126dca1d18f356a85cf6a3fc93ab",
+      "source_evidence_sha256": "sha256:283d2127e1caf427024d4b5f3979ba179bf459e31a647f4c45b053544f76fd92",
+      "linked_questions_sha256": "sha256:d47fcd6b5cb343a3e5282573c4e274110cb97e579a53f3d996af13f1f7def202",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No local source in this batch was used to restore an unsupported prestressed-member cover table.",
+        "No local source in this batch was used to collapse plant-control precast cover categories into cast-in-place values.",
+        "No local source in this batch was used to replace fire-rating, corrosion, or project specification cover requirements."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/scoped-validation-batch-145.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/3db9548b-71c4-42e7-9e32-9e03769e6c74.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/babf53c7-3371-490f-bd34-c2e41e8bcd8b.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/c61d003e-5701-4571-bcfa-5f0cfbb4afb3.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/9d664a25-f37e-4b05-b197-168181ec4a8a.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/6199c598-c7ae-4580-aa3c-b0311aa98d9b.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/88bc30d2-2a51-47ea-b89b-9f4c0d28beb0.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/9efa4356-724f-4a97-8f13-027e9ca00c0b.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/5e8d911d-42a4-4df0-8823-f5f078ac99fe.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/dddc14fa-914b-4a3e-b645-0167dd1f80d6.json",
+          ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/3cb0b95e-c0cc-4947-add4-d235c7a96573.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/compose-error.json"
+      }
+    }
+  ],
+  "source_records": {
+    "bsiPrestressPrecast": {
+      "id": "bsi-prestress-precast",
+      "title": "Building Structures Illustrated - prestressed and precast concrete systems",
+      "locator": "refined markdown lines 2365, 2528, 2543-2545, 3202, 3659-3667, 5033-5035, 5682",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+        "exists": true,
+        "bytes": 38160628,
+        "sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+        "exists": true,
+        "bytes": 576829,
+        "sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/bsi-prestress-precast.source-capture.md",
+        "exists": true,
+        "bytes": 2795,
+        "sha256": "sha256:d906a4c31e20ebb5353a95d766fcb3145ef09861d101a1fcf0a25a90385d7fc9"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/bsi-prestress-precast.refined.md",
+        "exists": true,
+        "bytes": 2074,
+        "sha256": "sha256:2056f45e7b5f8de6f146e94563173b6a9e2478ed9e38fe533551b02a7ba97e2a"
+      },
+      "source_boundary_sha256": "sha256:997fee29ddda76816736d786e4174dd11d9d838e96dfaa31dcfe9ec959a61494"
+    },
+    "detailingCover": {
+      "id": "detailing-cover",
+      "title": "Detailing of Reinforcement - cover, exposure, and plant-control precast categories",
+      "locator": "refined markdown lines 51-68, 91-156",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+        "exists": true,
+        "bytes": 719226,
+        "sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+        "exists": true,
+        "bytes": 86165,
+        "sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-cover.source-capture.md",
+        "exists": true,
+        "bytes": 3006,
+        "sha256": "sha256:c6a6b104be25295c8878d37a1ed6379f207ac0feb1175778679d56a593ff3586"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-cover.refined.md",
+        "exists": true,
+        "bytes": 2285,
+        "sha256": "sha256:419b8115c828b988401245615c1d349e80248d221aabcf1ebbb11adbcf9a11d7"
+      },
+      "source_boundary_sha256": "sha256:e3e7b08509fce04b927fc2e60a31b8f3dc325c1b3c44289771469675a20d3556"
+    },
+    "detailingPrecastIntegrity": {
+      "id": "detailing-precast-integrity",
+      "title": "Detailing of Reinforcement - precast integrity, ties, connections, and joints",
+      "locator": "refined markdown lines 231-248 and 797",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+        "exists": true,
+        "bytes": 719226,
+        "sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+        "exists": true,
+        "bytes": 86165,
+        "sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-precast-integrity.source-capture.md",
+        "exists": true,
+        "bytes": 2198,
+        "sha256": "sha256:93b1be5d2122d889fe64c7f740e690f7b22212d33a0fb01433e7280f6b9b9b9e"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-precast-integrity.refined.md",
+        "exists": true,
+        "bytes": 1473,
+        "sha256": "sha256:5b2bc8d38ea5ec8e3018d6f1c31b4d779b8be0b88f419cb9674cecbf913ad9a0"
+      },
+      "source_boundary_sha256": "sha256:a07952f99f93647343e2829f7ca6659de3fcd8500c20c6b69377f7e416c4d6d1"
+    }
+  },
+  "validation": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "required_artifacts": {
+    "manifest": ".ai/03_plans/production-line-batch-145-manifest.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-145-local-first-report.md",
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-145-local-first-ledger.json",
+    "scopedChecks": ".ai/content-audit-export/source-audited-article-batch-145-local-first-scoped-checks.json",
+    "qualityReview": ".ai/03_plans/batch-145-independent-quality-review.md",
+    "stageList": ".ai/03_plans/batch-145-git-handoff-stage-list.md",
+    "stagePaths": ".ai/03_plans/batch-145-git-handoff-stage-paths.txt",
+    "generationSummary": ".ai/content-audit-export/runs/source-audited-batch-145-local-generation-summary.json",
+    "contentGenerationSummary": ".ai/content-audit-export/source-audited-article-batch-145-local-first-content-generation-summary.json"
+  },
+  "stage_paths": [
+    ".ai/03_plans/batch-145-git-handoff-stage-list.md",
+    ".ai/03_plans/batch-145-git-handoff-stage-paths.txt",
+    ".ai/03_plans/batch-145-independent-quality-review.md",
+    ".ai/03_plans/production-line-batch-145-manifest.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/259c3d45-c374-4e3f-bc21-67df8f24f2c9.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/43a81932-43c1-4cdf-9f6e-bf7c1b909341.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/6e745d22-1b0d-4b89-975a-b2a715552308.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/749e714e-c242-45aa-9814-6d5723f9dbf7.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/799689f0-493e-4378-ba3a-a10a5a3f2dd2.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/8d34a974-5449-4e8a-8a44-0e93d4875a0b.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/b176c760-0845-4c1d-9e0c-99d98ce8fa2d.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/b60812af-8a40-4a20-aba4-80caecf728cd.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/f478d20f-8f73-4307-995f-397cb3687493.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/question-edits/fcebc043-55bc-4672-a91e-14517af63260.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/scoped-validation-batch-145.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-006-04-core-concept--f53f5341-65fa-4a84-849b-a188f12d3106/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/18f9fb08-8589-46ce-b67b-a3e1a8a4c21e.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/2af2fd61-f674-4f03-8cac-2d39352e2a14.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/31644fc8-2c2f-46a4-b618-7d43e3ae3860.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/31e66765-f6d2-4850-8d60-10e7006bbb4f.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/3e1a8d73-4607-4f6a-b1b5-92b57584cd47.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/86266369-d20e-4284-b170-a8ee05378acf.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/8b318858-ce00-42e1-8834-24600fe2dcc7.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/b93e8503-4fd2-4b04-88db-ae58d784e6da.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/d0bc39af-b869-4994-86bc-210fcfd5340f.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/question-edits/f0a33b6a-0322-4c42-9835-9fa96a8b5f92.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/scoped-validation-batch-145.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-006-05-core-concept--5346c118-e05d-4588-8454-96ffd7556ef4/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/candidate.md",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/compose-error.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/compose-report.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/diff-report.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/diff-report.md",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/normalized.md",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/3cb0b95e-c0cc-4947-add4-d235c7a96573.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/3db9548b-71c4-42e7-9e32-9e03769e6c74.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/5e8d911d-42a4-4df0-8823-f5f078ac99fe.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/6199c598-c7ae-4580-aa3c-b0311aa98d9b.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/88bc30d2-2a51-47ea-b89b-9f4c0d28beb0.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/9d664a25-f37e-4b05-b197-168181ec4a8a.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/9efa4356-724f-4a97-8f13-027e9ca00c0b.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/babf53c7-3371-490f-bd34-c2e41e8bcd8b.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/c61d003e-5701-4571-bcfa-5f0cfbb4afb3.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/question-edits/dddc14fa-914b-4a3e-b645-0167dd1f80d6.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/scoped-validation-batch-145.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/sources.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-strc-007-01-core-concept--f4438093-a209-4c53-9f43-6ad4d9be677e/ui-blocks.json",
+    ".ai/content-audit-export/runs/source-audited-batch-145-local-generation-summary.json",
+    ".ai/content-audit-export/runs/source-audited-batch-145-local-runner.mjs",
+    ".ai/content-audit-export/source-audited-article-batch-145-local-first-content-generation-summary.json",
+    ".ai/content-audit-export/source-audited-article-batch-145-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-145-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-145-local-first-scoped-checks.json",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/bsi-prestress-precast.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-cover.source-capture.md",
+    "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-precast-integrity.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/bsi-prestress-precast.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-cover.refined.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-precast-integrity.refined.md"
+  ],
+  "exclusions": [
+    ".ai/00_performance",
+    ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+    ".ai/README.md",
+    ".hermes/skills",
+    ".ai/00_system/philip-ux-ui-calibration.md",
+    "old unrelated content-roundtrip run dirs",
+    ".ai/03_plans/blocked-source-recovery/",
+    ".ai/content-audit-export/sync-state.json"
+  ],
+  "no_supabase": true,
+  "no_deploy": true,
+  "no_prod_db": true,
+  "no_main_merge": true
+}

@@ -1,30 +1,30 @@
 {
   "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
-  "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:e4534011c55ad196312a1cc7cfe0ad3ff6eff14b1f7f16b7b3b40e1a65039a5b",
   "question_count": 10,
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:58698c8de491c1fad642acd20cea873dc55d5b43d4a3ab9e01b87911bfacbf6e",
   "questions": [
     {
       "question_id": "43a81932-43c1-4cdf-9f6e-bf7c1b909341",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "The primary function of grouting post-tensioned ducts after tendons are anchored is to:",
+      "text": "What source-backed benefit does post-tensioning provide for flat plates?",
       "options": [
         {
           "id": "a",
-          "text": "Add weight to the structure for better stability, which is crucial in seismic zones"
+          "text": "It removes all need for anchors and stressing records."
         },
         {
           "id": "b",
-          "text": "Bond the tendons to concrete and protect them from corrosion"
+          "text": "It can increase span or reduce slab thickness while improving control of deflection and cracking."
         },
         {
           "id": "c",
-          "text": "Reduce the cost of post-tensioning systems by minimizing material usage"
+          "text": "It changes concrete into structural steel."
         },
         {
           "id": "d",
-          "text": "Increase the shear strength of the concrete member, enhancing overall structural integrity"
+          "text": "It makes cover and exposure requirements irrelevant."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Grouting the ducts (filling with cement grout) after tensioning bonds the tendon to the concrete, transfers stress over the full length (not just at the anchors), and protects the high-strength steel from corrosion. Grouting is essential for long-term durability and service, especially in aggressive (coastal, saline) environments.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It removes all need for anchors and stressing records. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "It can increase span or reduce slab thickness while improving control of deflection and cracking. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "It changes concrete into structural steel. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "It makes cover and exposure requirements irrelevant. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "It can increase span or reduce slab thickness while improving control of deflection and cracking. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Section 18.13",
+      "explanation": "It can increase span or reduce slab thickness while improving control of deflection and cracking. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +56,36 @@
       "model_id": "ALE-STRC-006-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:522985972d9ac2bf1972454354d72ad86178d058a13989efc7516b3d9c936020"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:58afc08f0d936cf2e8001cbaa0afa592936892dee992b2c9d189b054d9e4d5e5",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "6e745d22-1b0d-4b89-975a-b2a715552308",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "Pre-tensioning is defined as the process of:",
+      "text": "Which statement best matches the captured pretensioning and posttensioning distinction?",
       "options": [
         {
           "id": "a",
-          "text": "Tensioning steel tendons after concrete has hardened and reached full strength, ensuring the structure's integrity"
+          "text": "Both methods are always performed after occupancy."
         },
         {
           "id": "b",
-          "text": "Tensioning steel tendons before concrete is placed, then releasing after concrete gains strength"
+          "text": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site."
         },
         {
           "id": "c",
-          "text": "Applying load to a finished concrete structure to verify its capacity, which is a crucial step in quality assurance"
+          "text": "Pretensioning means no prestress is introduced."
         },
         {
           "id": "d",
-          "text": "Stretching the formwork before concrete placement to ensure proper alignment and structural stability"
+          "text": "Posttensioning is only an architectural finish operation."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +94,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Pre-tensioning is the process of stretching (tensioning) steel tendons and holding them in tension on a form or frame BEFORE concrete is placed. After concrete reaches sufficient strength, the tendons are released, and the tension is transferred to the concrete, compressing it. This is the definition and distinguishing characteristic of pre-tensioning.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Both methods are always performed after occupancy. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "Pretensioning means no prestress is introduced. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Posttensioning is only an architectural finish operation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Chapter 9; ACI 318, Chapter 18",
+      "explanation": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +117,36 @@
       "model_id": "ALE-STRC-006-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c7ac1b950902fd1bf146a30de248c1d4b1f20c4fdeb1405dc50584b83e9cbe07"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:1bc2ed223943d73fab977266e52ec71f96671cc0d85973d536ac910d0cfabc61",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "f478d20f-8f73-4307-995f-397cb3687493",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "Post-tensioned concrete members are typically used in which of the following applications?",
+      "text": "Where does the local source support post-tensioning as especially useful?",
       "options": [
         {
           "id": "a",
-          "text": "Residential precast roof slabs with short spans (< 8 m), typically not requiring post-tensioning due to their limited load demands"
+          "text": "Only in nonstructural plaster ceiling work."
         },
         {
           "id": "b",
-          "text": "Cast-in-place construction, large-span bridges, long cantilevers, and parking structures"
+          "text": "In flat plate and ribbed concrete systems where longer spans or reduced depth are desired."
         },
         {
           "id": "c",
-          "text": "Temporary shoring and bracing for excavations, which generally rely on steel or timber supports rather than post-tensioned concrete"
+          "text": "Only in soil compaction below foundations."
         },
         {
           "id": "d",
-          "text": "Non-structural architectural cladding panels, which are usually lightweight and do not benefit from post-tensioning"
+          "text": "Only in wood roof trusses."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +155,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Post-tensioning is ideal for cast-in-place construction, large spans (20–60+ m in bridges), long cantilevers, and unique geometries because it does not require external bed frames or precasting facilities. The system can be tensioned after concrete reaches strength and allows multiple stages of tensioning. This is standard for major structures in the Philippines.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only in nonstructural plaster ceiling work. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "In flat plate and ribbed concrete systems where longer spans or reduced depth are desired. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "Only in soil compaction below foundations. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Only in wood roof trusses. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "In flat plate and ribbed concrete systems where longer spans or reduced depth are desired. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Chapter 18",
+      "explanation": "In flat plate and ribbed concrete systems where longer spans or reduced depth are desired. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -151,30 +178,36 @@
       "model_id": "ALE-STRC-006-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6b503f121cc6420dfa06d368ad9de502c1920a7521057c1a6476532b68e6d6c8"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:87f4c599b4d8321a549f0663bb3a8af5b2466632d95c1982b74cff228df3964f",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "749e714e-c242-45aa-9814-6d5723f9dbf7",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "A post-tensioned slab in a parking structure has been tensioned and anchored but the ducts have not yet been grouted. The contractor asks whether the structure can be opened to traffic before grouting is completed. From a structural safety perspective, what is the engineer's response?",
+      "text": "A project asks for a post-tensioning grouting rule not captured in this batch. What is the safest answer?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the structure can be opened; grouting is only for aesthetic purposes and does not affect structural integrity"
+          "text": "Approve any duct condition because the slab has already been stressed."
         },
         {
           "id": "b",
-          "text": "Yes, tensioning provides all required compression; grouting is optional unless specified otherwise in the contract"
+          "text": "Ignore tendon protection because deflection control was mentioned."
         },
         {
           "id": "c",
-          "text": "No, grouting must be completed before the structure is loaded. Ungrouted ducts leave tendons unprotected from corrosion and unanchored for full-length stress distribution"
+          "text": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule."
         },
         {
           "id": "d",
-          "text": "No, but only because of time delay; grouting can be done later if additional load capacity is needed, provided safety measures are in place"
+          "text": "Assume all grouting rules are identical for every system."
         }
       ],
       "correct_option_id": "c",
@@ -183,14 +216,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Grouting is NOT optional for permanent service. Ungrouted ducts expose high-strength tendons to moisture and oxygen, leading to rapid corrosion (especially in coastal/aggressive environments common in the Philippines). Additionally, stress is transferred only at the anchorages (ends); without grouting, the tendon cannot distribute stress along its full length. The structure may carry temporary testing loads without grouting, but permanent service requires grouting. This is a critical safety issue.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Approve any duct condition because the slab has already been stressed. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Ignore tendon protection because deflection control was mentioned. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "c": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "d": "Assume all grouting rules are identical for every system. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Section 18.13",
+      "explanation": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +239,36 @@
       "model_id": "ALE-STRC-006-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:28c6758aacce5bbb15b20f3f4d1466df9699f6b18c143fe81afaad7452aff296"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:693ca5f14082e00a5db92604c498c75b65f8ad8c2375f00e86730740fcfada93",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "8d34a974-5449-4e8a-8a44-0e93d4875a0b",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "A precast I-beam has been pre-tensioned in a precasting plant with an initial prestress of 1,200 MPa in the strands. After 1 year of service (accounting for losses due to creep, shrinkage, and relaxation), the residual prestress is measured at 800 MPa. The designer must account for this reduction because:",
+      "text": "Why should this batch avoid exact prestress-loss percentages?",
       "options": [
         {
           "id": "a",
-          "text": "The beam has failed and cannot be used, requiring immediate replacement to ensure structural integrity"
+          "text": "Prestress losses never occur in concrete."
         },
         {
           "id": "b",
-          "text": "Prestress losses are expected and normal; the initial prestress must be higher than the required final prestress to compensate for losses over time"
+          "text": "The selected local source boundary did not capture a loss equation or percentage table."
         },
         {
           "id": "c",
-          "text": "The concrete has deteriorated and grouting must be done to restore the structural capacity of the beam"
+          "text": "Losses are architectural room names."
         },
         {
           "id": "d",
-          "text": "The tendon has slipped and the anchorage must be re-tensioned to restore the original prestress level"
+          "text": "Loss percentages replace span and deflection checks."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +277,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Prestress losses due to elastic deformation, concrete creep and shrinkage, and steel relaxation are inevitable and significant (typically 10–30% of initial prestress). The designer applies a higher initial prestress (1,200 MPa) than the required final prestress (e.g., 900 MPa) to account for these losses. After losses (800 MPa in this example), the beam retains adequate compression. This is design by anticipation, not a failure.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Prestress losses never occur in concrete. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "The selected local source boundary did not capture a loss equation or percentage table. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "Losses are architectural room names. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Loss percentages replace span and deflection checks. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "The selected local source boundary did not capture a loss equation or percentage table. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Section 18.4",
+      "explanation": "The selected local source boundary did not capture a loss equation or percentage table. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +300,36 @@
       "model_id": "ALE-STRC-006-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a554c8f4e5f36260f94ff2645162e26c534757c661b67be67cef00997a1e41c2"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:6ba3f4e6a3ef8e569d6bf835006918ff17c28d0f89fa2ef93488ad8d4530ef3e",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "b60812af-8a40-4a20-aba4-80caecf728cd",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "Post-tensioning is defined as the process of:",
+      "text": "How should post-tensioning be described inside this source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Tensioning steel tendons before concrete is cast, which is a method used in pre-tensioning"
+          "text": "As a paint system for precast wall panels."
         },
         {
           "id": "b",
-          "text": "Tensioning steel tendons inside ducts after concrete has hardened and reached full strength"
+          "text": "As construction-site prestressing used in cast-in-place systems to improve span and service behavior."
         },
         {
           "id": "c",
-          "text": "Removing temporary support from a finished concrete structure, which is part of the curing process"
+          "text": "As the same thing as ordinary untensioned reinforcing bars."
         },
         {
           "id": "d",
-          "text": "Testing the concrete structure after construction to verify strength, ensuring it meets design specifications"
+          "text": "As a complete substitute for all code requirements."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +338,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Post-tensioning is the process of tensioning steel tendons AFTER the concrete has hardened (typically at 28 days or later). The tendons are placed in pre-cast ducts and pulled (tensioned) using hydraulic jacks, then anchored at the ends. This is the defining process and timing of post-tensioning.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "As a paint system for precast wall panels. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "As construction-site prestressing used in cast-in-place systems to improve span and service behavior. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "As the same thing as ordinary untensioned reinforcing bars. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "As a complete substitute for all code requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "As construction-site prestressing used in cast-in-place systems to improve span and service behavior. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Chapter 18",
+      "explanation": "As construction-site prestressing used in cast-in-place systems to improve span and service behavior. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -301,30 +361,36 @@
       "model_id": "ALE-STRC-006-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4b40f9633872f4f4d2e80f27fa9b473c69edb1f08189e9cc032f62fceb6311c8"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:afbea9c17473f8a2fcc6f9bb300b0fb258bd37aafec3e6e0e446854835a1f0ba",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "259c3d45-c374-4e3f-bc21-67df8f24f2c9",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "In pre-tensioning, the stress is transferred from the stretched tendon to the concrete through:",
+      "text": "What does the captured source say about prestressed precast units?",
       "options": [
         {
           "id": "a",
-          "text": "Instantaneous mechanical anchorage at the release point, ensuring immediate load transfer and structural stability"
+          "text": "Prestressed precast units cannot be transported."
         },
         {
           "id": "b",
-          "text": "Gradual frictional grip as the tendon shortens and pulls on the concrete"
+          "text": "Prestressing can improve efficiency, producing less depth, reduced weight, and longer spans."
         },
         {
           "id": "c",
-          "text": "Grouted ducts and wedge anchors, which provide a secure and reliable connection between the tendon and the concrete"
+          "text": "Prestressing makes every unit nonstructural."
         },
         {
           "id": "d",
-          "text": "Welding the tendons to the concrete surface, which is not a standard practice in pre-tensioning due to potential structural weaknesses"
+          "text": "Precast units never need planned handling."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +399,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In pre-tensioning, when the tendons are released from the external frame, they attempt to retract but are bonded to the concrete. The frictional grip between the strand surface and the concrete gradually transfers the stress over a 'transfer length' (typically 0.5–2.0 m from the release point). This differs from post-tensioning, where stress transfer is instantaneous at the anchors.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Prestressed precast units cannot be transported. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Prestressing can improve efficiency, producing less depth, reduced weight, and longer spans. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "Prestressing makes every unit nonstructural. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Precast units never need planned handling. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Prestressing can improve efficiency, producing less depth, reduced weight, and longer spans. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Section 18.10",
+      "explanation": "Prestressing can improve efficiency, producing less depth, reduced weight, and longer spans. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +422,36 @@
       "model_id": "ALE-STRC-006-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:843e983b218e95ef98de7c555a0fe4b673bf705d41a7c3569ec8be29a99eeea0"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:f7283396ad1604004e0dd14eee48013975917c2f0f23af428c4b16502a85477c",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "fcebc043-55bc-4672-a91e-14517af63260",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "A bridge engineer is choosing between pre-tensioning and post-tensioning for a 35-meter single-span deck. Which method is more appropriate and why?",
+      "text": "Which conceptual choice is supported for a long-span concrete floor system?",
       "options": [
         {
           "id": "a",
-          "text": "Pre-tensioning is better because it can be done in any location and is always more economical, regardless of span length"
+          "text": "Use post-tensioning only to change the room finish schedule."
         },
         {
           "id": "b",
-          "text": "Post-tensioning is more appropriate because the 35-meter span requires a single large member that cannot be easily transported; post-tensioning allows casting in place and applying compression after concrete gains strength"
+          "text": "Consider post-tensioning when longer spans or improved deflection and cracking control are needed."
         },
         {
           "id": "c",
-          "text": "Pre-tensioning and post-tensioning have identical performance; the choice depends only on cost and availability of materials"
+          "text": "Avoid checking service behavior because span is long."
         },
         {
           "id": "d",
-          "text": "Neither method is suitable; ordinary reinforced concrete is better for large spans, providing more flexibility in design"
+          "text": "Choose the system without checking supports or load path."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +460,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A 35-meter span is too long for economical transportation of a single pre-tensioned member; truck/trailer size limits and handling difficulties make it impractical. Post-tensioning allows the span to be cast in place (in segments if needed) and tensioned after concrete hardens. This is the standard and appropriate method for large-span cast-in-place structures, especially in the Philippines where bridges are often built segment-by-segment.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Use post-tensioning only to change the room finish schedule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Consider post-tensioning when longer spans or improved deflection and cracking control are needed. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "Avoid checking service behavior because span is long. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Choose the system without checking supports or load path. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Consider post-tensioning when longer spans or improved deflection and cracking control are needed. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Chapter 18; Bridge Design Standards",
+      "explanation": "Consider post-tensioning when longer spans or improved deflection and cracking control are needed. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +483,36 @@
       "model_id": "ALE-STRC-006-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f25892e9425a6d8f535644ad179d4d00a1a4ae7ccc2ccec20fd7786fe56b7caf"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:47a658e0386bff9edfc7c62e38957bb4fd6716b7cb5dd70a7fa15158e05496d1",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "799689f0-493e-4378-ba3a-a10a5a3f2dd2",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "Pre-tensioned concrete members are commonly manufactured in:",
+      "text": "Where are pre-tensioned concrete members commonly associated in the captured source?",
       "options": [
         {
           "id": "a",
-          "text": "Casting yards at the construction site using a single casting bed, which allows for on-site adjustments"
+          "text": "Only with on-site masonry plastering."
         },
         {
           "id": "b",
-          "text": "Precasting plants with multiple long bed frames and repeated casting/release cycles"
+          "text": "With factory-site precast production where handling and transport must be planned."
         },
         {
           "id": "c",
-          "text": "During the final stages of construction assembly, integrating with other structural elements"
+          "text": "Only with loose aggregate stockpiles."
         },
         {
           "id": "d",
-          "text": "Underground facilities to avoid weather exposure, ensuring consistent curing conditions"
+          "text": "Only with temporary drawing annotations."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +521,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Pre-tensioning requires long bed frames (50–100+ meters) to hold tendons in tension, and repeated casting, curing, and release cycles. This is ideal for controlled factory environments (precasting plants) where many identical members can be produced efficiently. Single-site casting is not economical for pre-tensioning.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only with on-site masonry plastering. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "With factory-site precast production where handling and transport must be planned. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "c": "Only with loose aggregate stockpiles. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Only with temporary drawing annotations. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "With factory-site precast production where handling and transport must be planned. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ACI 318, Chapter 18",
+      "explanation": "With factory-site precast production where handling and transport must be planned. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -451,30 +544,36 @@
       "model_id": "ALE-STRC-006-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6fe9dd3c4af7d6c28a649ab0f8463c577b8c7cedb75a7305d1e4bcd4fd62f066"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:1e18c39fa8c9a47d8f45d223ce3435058cf50a83dc4178f0abf47774eeffd49a",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "b176c760-0845-4c1d-9e0c-99d98ce8fa2d",
       "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
       "topic_id": "abc73b37-db19-449a-88b5-6b74e70e8dba",
-      "text": "Prestressing steel (seven-wire strand or wire) typically has a yield strength of:",
+      "text": "What is the safest treatment of exact prestressing steel strength in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "414 MPa (same as Grade 60 reinforcing bars, commonly used in standard construction)"
+          "text": "Invent a value from memory and cite no source."
         },
         {
           "id": "b",
-          "text": "275 MPa (same as Grade 40 reinforcing bars, suitable for light structural applications)"
+          "text": "Use slab thickness as the steel yield strength."
         },
         {
           "id": "c",
-          "text": "1,770–1,960 MPa (much higher than ordinary reinforcing bars)"
+          "text": "Treat exact steel strength as source-table dependent because the captured local source did not provide it."
         },
         {
           "id": "d",
-          "text": "600 MPa (intermediate between ordinary bars and prestressing strands, often used in specialized applications)"
+          "text": "Assume all prestressing steel has the same project value."
         }
       ],
       "correct_option_id": "c",
@@ -483,14 +582,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Prestressing steel (strands and wires) has a yield strength of approximately 1,770–1,960 MPa, which is about 4–5 times higher than Grade 60 ordinary reinforcing bars (414 MPa). This high strength allows large compression forces with small cross-sectional area, making prestressing economical for long spans and large loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Invent a value from memory and cite no source. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Use slab thickness as the steel yield strength. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "c": "Treat exact steel strength as source-table dependent because the captured local source did not provide it. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+        "d": "Assume all prestressing steel has the same project value. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Treat exact steel strength as source-table dependent because the captured local source did not provide it. Supported by bsi-prestress-precast.",
+        "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 9; ASTM A416; ASTM A422",
+      "explanation": "Treat exact steel strength as source-table dependent because the captured local source did not provide it. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +605,14 @@
       "model_id": "ALE-STRC-006-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:648ac6ba06ab70fb96e6692fd311f2b2d5e3eba46ea2b99006761d47705775bb"
+      "updated_at": "2026-05-14T02:34:50.429Z",
+      "content_hash": "sha256:c81c4df665635f8f4d24c41a5bd7b5a19158178e02b1a1abcfd3abc482707bf6",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-04",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

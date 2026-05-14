@@ -1,0 +1,25 @@
+{
+  "batch": 145,
+  "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
+  "cluster_id": "lea-strc-006-04",
+  "question_id": "f478d20f-8f73-4307-995f-397cb3687493",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c8fc0ba53ef9618cfe31eecc980f1c44e902b462dffe20cd890ed77a8a3538e5",
+  "after_hash": "sha256:87f4c599b4d8321a549f0663bb3a8af5b2466632d95c1982b74cff228df3964f",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-prestress-precast"
+  ],
+  "rationale": {
+    "a": "Only in nonstructural plaster ceiling work. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "In flat plate and ribbed concrete systems where longer spans or reduced depth are desired. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+    "c": "Only in soil compaction below foundations. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "Only in wood roof trusses. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "correct": "In flat plate and ribbed concrete systems where longer spans or reduced depth are desired. Supported by bsi-prestress-precast.",
+    "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-prestress-precast",
+    "checked_sources": [
+      "bsi-prestress-precast"
+    ]
+  }
+}

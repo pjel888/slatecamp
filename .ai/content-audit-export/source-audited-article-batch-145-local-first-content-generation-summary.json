@@ -1,0 +1,40 @@
+{
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
+  "status": "passed_local_validation_git_handoff_pending",
+  "articles": [
+    {
+      "cluster_id": "lea-strc-006-04",
+      "article_id": "f53f5341-65fa-4a84-849b-a188f12d3106",
+      "title": "Prestressing and Post-Tensioned Concrete Systems",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-006-05",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "title": "Precast Concrete, Composite Topping, and Connection Integrity",
+      "source_ids": [
+        "bsi-prestress-precast",
+        "detailing-precast-integrity",
+        "detailing-cover"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-007-01",
+      "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+      "title": "Concrete Cover: Exposure, Member Type, and Larger-Value Rule",
+      "source_ids": [
+        "detailing-cover",
+        "detailing-precast-integrity"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    }
+  ]
+}

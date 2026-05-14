@@ -1,0 +1,180 @@
+{
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
+  "cluster_id": "lea-strc-006-05",
+  "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+  "source_strategy": "local_first",
+  "source_count": 3,
+  "sources": [
+    {
+      "id": "bsi-prestress-precast",
+      "title": "Building Structures Illustrated - prestressed and precast concrete systems",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/bsi-prestress-precast.source-capture.md",
+      "local_capture_sha256": "sha256:d906a4c31e20ebb5353a95d766fcb3145ef09861d101a1fcf0a25a90385d7fc9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/bsi-prestress-precast.refined.md",
+      "refined_capture_sha256": "sha256:2056f45e7b5f8de6f146e94563173b6a9e2478ed9e38fe533551b02a7ba97e2a",
+      "locator": "refined markdown lines 2365, 2528, 2543-2545, 3202, 3659-3667, 5033-5035, 5682",
+      "safe_claims": [
+        "Flat plates can achieve greater spans or reduced slab thicknesses with post-tensioning, and post-tensioning improves control of deflection and cracking.",
+        "Ribbed concrete construction can extend to longer spans when post-tensioning is used.",
+        "Precast concrete slabs are one-way spanning units that may be supported by site-cast concrete, precast concrete, masonry bearing walls, or structural frames.",
+        "Precast units may be manufactured with normal-density or structural lightweight concrete and prestressed for greater structural efficiency, resulting in less depth, reduced weight, and longer spans.",
+        "A reinforced concrete topping can bond with precast units to form a composite structural unit.",
+        "For diaphragm behavior, steel reinforcement should tie precast slab units together at supports and end bearings.",
+        "Concrete members may be prestressed by pretensioning at a factory site or by posttensioning at the construction site.",
+        "Cast-in-place post-tensioned concrete systems inherently provide moment resistance where columns, beams, and slabs meet.",
+        "Precast walls can provide high-quality concrete finishes and may be prestressed."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore precast lifting or release-strength percentages.",
+        "No local source in this batch was used to state shear-friction coefficients or a complete construction-joint design equation.",
+        "No local source in this batch was used to replace project-specific shop drawing, handling, erection, or connection design requirements."
+      ]
+    },
+    {
+      "id": "detailing-precast-integrity",
+      "title": "Detailing of Reinforcement - precast integrity, ties, connections, and joints",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-precast-integrity.source-capture.md",
+      "local_capture_sha256": "sha256:93b1be5d2122d889fe64c7f740e690f7b22212d33a0fb01433e7280f6b9b9b9e",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-precast-integrity.refined.md",
+      "refined_capture_sha256": "sha256:5b2bc8d38ea5ec8e3018d6f1c31b4d779b8be0b88f419cb9674cecbf913ad9a0",
+      "locator": "refined markdown lines 231-248 and 797",
+      "safe_claims": [
+        "Structural members should be effectively tied together to improve overall integrity.",
+        "For precast concrete construction, tension ties are required in transverse, longitudinal, and vertical directions and around the structure perimeter.",
+        "Connections should enclose splices and anchor terminating reinforcement at principal framing elements.",
+        "Connections can be enclosed by external concrete or by internal closed ties, spirals, or stirrups.",
+        "Construction joints in walls and diaphragms require conforming contact surfaces that are roughened as specified by the source."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore precast lifting or release-strength percentages.",
+        "No local source in this batch was used to state shear-friction coefficients or a complete construction-joint design equation.",
+        "No local source in this batch was used to replace project-specific shop drawing, handling, erection, or connection design requirements."
+      ]
+    },
+    {
+      "id": "detailing-cover",
+      "title": "Detailing of Reinforcement - cover, exposure, and plant-control precast categories",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-cover.source-capture.md",
+      "local_capture_sha256": "sha256:c6a6b104be25295c8878d37a1ed6379f207ac0feb1175778679d56a593ff3586",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-cover.refined.md",
+      "refined_capture_sha256": "sha256:419b8115c828b988401245615c1d349e80248d221aabcf1ebbb11adbcf9a11d7",
+      "locator": "refined markdown lines 51-68, 91-156",
+      "safe_claims": [
+        "Reinforcement must be accurately placed and adequately supported before concrete is placed, and cover tolerances are controlled.",
+        "For cast-in-place concrete cast against and permanently exposed to earth, the source states 75 mm minimum cover.",
+        "For cast-in-place concrete exposed to earth or weather, the source states 50 mm cover for 19 mm through 57 mm bars and 40 mm cover for 16 mm and smaller bars.",
+        "For cast-in-place surfaces not exposed to weather or ground, the source states 20 mm cover for slabs and walls with 36 mm and smaller bars.",
+        "For cast-in-place beams and columns not exposed to weather or ground, the source states 40 mm cover for primary reinforcement, ties, stirrups, and spirals.",
+        "For plant-control precast wall panels exposed to earth or weather, the source states 40 mm cover for 40 mm through 57 mm bars and 20 mm cover for 36 mm and smaller bars.",
+        "For plant-control precast slabs and walls not exposed to weather or ground, the source states 30 mm cover for 40 mm through 57 mm bars and 16 mm cover for 36 mm and smaller bars.",
+        "The source treats plant-control precast beams and columns as a separate cover category; this batch does not collapse that category into the cast-in-place beam and column value.",
+        "If cover values conflict, the source says the larger value governs. Fire protection or corrosive exposure can also require greater cover."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore precast lifting or release-strength percentages.",
+        "No local source in this batch was used to state shear-friction coefficients or a complete construction-joint design equation.",
+        "No local source in this batch was used to replace project-specific shop drawing, handling, erection, or connection design requirements."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:cc49292bc5c9383e8fcbdd288da6a24ae62d88ae0a90be3065d11fd2d954d5ec",
+  "candidate_sha256": "sha256:cc49292bc5c9383e8fcbdd288da6a24ae62d88ae0a90be3065d11fd2d954d5ec",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "18f9fb08-8589-46ce-b67b-a3e1a8a4c21e",
+      "content_hash": "sha256:34eda4d3aaa470b9267ec6645747b364d9e58eb445c005cabe474b642f1b4d5d"
+    },
+    {
+      "question_id": "2af2fd61-f674-4f03-8cac-2d39352e2a14",
+      "content_hash": "sha256:2f7602e5909f2e21e9db3622f74c384fd9db14c8c97b7e138db6b228e0246633"
+    },
+    {
+      "question_id": "31644fc8-2c2f-46a4-b618-7d43e3ae3860",
+      "content_hash": "sha256:9176b480a3982308f64253695142e6144de3330c550f7f600a4942eea2fa863b"
+    },
+    {
+      "question_id": "f0a33b6a-0322-4c42-9835-9fa96a8b5f92",
+      "content_hash": "sha256:786c8a4f8a3c668591469182ee2d947fdf12e02559fa492d3a8a27aafe8a6e4b"
+    },
+    {
+      "question_id": "d0bc39af-b869-4994-86bc-210fcfd5340f",
+      "content_hash": "sha256:ff69149f02b42528d26cff89cee80cae992e5cfb945a5f89a61cf53ee999fe78"
+    },
+    {
+      "question_id": "86266369-d20e-4284-b170-a8ee05378acf",
+      "content_hash": "sha256:1dc535495a71c1dc1b7ec48589aa445ebff5dd7fcff50a17e77bff3b8fc9c7cc"
+    },
+    {
+      "question_id": "8b318858-ce00-42e1-8834-24600fe2dcc7",
+      "content_hash": "sha256:9868535a6710fbe30df04ce4802e224eff0a2d410f95fa3db6ce8dbc9285f452"
+    },
+    {
+      "question_id": "31e66765-f6d2-4850-8d60-10e7006bbb4f",
+      "content_hash": "sha256:b79b275a0dc6a2a757ffa2d9f7faebd9f76ecd508de60ba3f8f5b32349705210"
+    },
+    {
+      "question_id": "3e1a8d73-4607-4f6a-b1b5-92b57584cd47",
+      "content_hash": "sha256:97fe7e689ef267bc203e633cbd32025e79946a22ebf77850ef574a70a8c6c765"
+    },
+    {
+      "question_id": "b93e8503-4fd2-4b04-88db-ae58d784e6da",
+      "content_hash": "sha256:29c9ea4636fb79bbc276fb6580b2961ca25f24618c677ebf250aaa0c01725161"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore precast lifting or release-strength percentages.",
+    "No local source in this batch was used to state shear-friction coefficients or a complete construction-joint design equation.",
+    "No local source in this batch was used to replace project-specific shop drawing, handling, erection, or connection design requirements."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    }
+  ]
+}

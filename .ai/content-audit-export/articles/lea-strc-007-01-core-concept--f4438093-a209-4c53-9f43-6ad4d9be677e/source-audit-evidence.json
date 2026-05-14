@@ -1,0 +1,150 @@
+{
+  "batch": 145,
+  "batch_id": "source-audited-batch-145-local-first",
+  "cluster_id": "lea-strc-007-01",
+  "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "detailing-cover",
+      "title": "Detailing of Reinforcement - cover, exposure, and plant-control precast categories",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-cover.source-capture.md",
+      "local_capture_sha256": "sha256:c6a6b104be25295c8878d37a1ed6379f207ac0feb1175778679d56a593ff3586",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-cover.refined.md",
+      "refined_capture_sha256": "sha256:419b8115c828b988401245615c1d349e80248d221aabcf1ebbb11adbcf9a11d7",
+      "locator": "refined markdown lines 51-68, 91-156",
+      "safe_claims": [
+        "Reinforcement must be accurately placed and adequately supported before concrete is placed, and cover tolerances are controlled.",
+        "For cast-in-place concrete cast against and permanently exposed to earth, the source states 75 mm minimum cover.",
+        "For cast-in-place concrete exposed to earth or weather, the source states 50 mm cover for 19 mm through 57 mm bars and 40 mm cover for 16 mm and smaller bars.",
+        "For cast-in-place surfaces not exposed to weather or ground, the source states 20 mm cover for slabs and walls with 36 mm and smaller bars.",
+        "For cast-in-place beams and columns not exposed to weather or ground, the source states 40 mm cover for primary reinforcement, ties, stirrups, and spirals.",
+        "For plant-control precast wall panels exposed to earth or weather, the source states 40 mm cover for 40 mm through 57 mm bars and 20 mm cover for 36 mm and smaller bars.",
+        "For plant-control precast slabs and walls not exposed to weather or ground, the source states 30 mm cover for 40 mm through 57 mm bars and 16 mm cover for 36 mm and smaller bars.",
+        "The source treats plant-control precast beams and columns as a separate cover category; this batch does not collapse that category into the cast-in-place beam and column value.",
+        "If cover values conflict, the source says the larger value governs. Fire protection or corrosive exposure can also require greater cover."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore an unsupported prestressed-member cover table.",
+        "No local source in this batch was used to collapse plant-control precast cover categories into cast-in-place values.",
+        "No local source in this batch was used to replace fire-rating, corrosion, or project specification cover requirements."
+      ]
+    },
+    {
+      "id": "detailing-precast-integrity",
+      "title": "Detailing of Reinforcement - precast integrity, ties, connections, and joints",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+      "raw_artifact_sha256": "sha256:7763043f3d3af7cccb728e0d708395b42da41c0452c07367a4f6b10b393aa73c",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+      "refined_artifact_sha256": "sha256:588641c28124ff01f06fd749ac46650740b25516e4a70acf12fe50c9908994d4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-145/detailing-precast-integrity.source-capture.md",
+      "local_capture_sha256": "sha256:93b1be5d2122d889fe64c7f740e690f7b22212d33a0fb01433e7280f6b9b9b9e",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-precast-integrity.refined.md",
+      "refined_capture_sha256": "sha256:5b2bc8d38ea5ec8e3018d6f1c31b4d779b8be0b88f419cb9674cecbf913ad9a0",
+      "locator": "refined markdown lines 231-248 and 797",
+      "safe_claims": [
+        "Structural members should be effectively tied together to improve overall integrity.",
+        "For precast concrete construction, tension ties are required in transverse, longitudinal, and vertical directions and around the structure perimeter.",
+        "Connections should enclose splices and anchor terminating reinforcement at principal framing elements.",
+        "Connections can be enclosed by external concrete or by internal closed ties, spirals, or stirrups.",
+        "Construction joints in walls and diaphragms require conforming contact surfaces that are roughened as specified by the source."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore an unsupported prestressed-member cover table.",
+        "No local source in this batch was used to collapse plant-control precast cover categories into cast-in-place values.",
+        "No local source in this batch was used to replace fire-rating, corrosion, or project specification cover requirements."
+      ]
+    }
+  ],
+  "normalized_sha256": "sha256:44c87ad62af0f927cc6dc8dcf14d48315efe126dca1d18f356a85cf6a3fc93ab",
+  "candidate_sha256": "sha256:44c87ad62af0f927cc6dc8dcf14d48315efe126dca1d18f356a85cf6a3fc93ab",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "3db9548b-71c4-42e7-9e32-9e03769e6c74",
+      "content_hash": "sha256:bb676e9e4a135ef01423a6b27cefdd5e093dd94f983524cf1c46705faf6f3158"
+    },
+    {
+      "question_id": "babf53c7-3371-490f-bd34-c2e41e8bcd8b",
+      "content_hash": "sha256:8b58798b2016f98c1a67cd95b2406628ce28ad604c7a344001697b9724698009"
+    },
+    {
+      "question_id": "c61d003e-5701-4571-bcfa-5f0cfbb4afb3",
+      "content_hash": "sha256:bceb6472ea788540d834def376080e5ee299135a47ee09f9d64c739e439ae92b"
+    },
+    {
+      "question_id": "9d664a25-f37e-4b05-b197-168181ec4a8a",
+      "content_hash": "sha256:b5aa5031c80b1ecd5728933c2f1c3c6e4bb4e991969551013f7021fdbad295ad"
+    },
+    {
+      "question_id": "6199c598-c7ae-4580-aa3c-b0311aa98d9b",
+      "content_hash": "sha256:a8e53e961c178d070395c550f4a08e251bc0ce11ecd37a423aae8f71e514f43e"
+    },
+    {
+      "question_id": "88bc30d2-2a51-47ea-b89b-9f4c0d28beb0",
+      "content_hash": "sha256:070d79efca5e45669552922b5005826ff78c325ec252ee1dda6de5557f85e133"
+    },
+    {
+      "question_id": "9efa4356-724f-4a97-8f13-027e9ca00c0b",
+      "content_hash": "sha256:34b900827f75c072c20f6c0334510a6c289208d159ec34c37d791c73500181f3"
+    },
+    {
+      "question_id": "5e8d911d-42a4-4df0-8823-f5f078ac99fe",
+      "content_hash": "sha256:9ebc07e68e7ad5e269310425b3d9144affd71a240ca89488277ec4e5dd3a32a1"
+    },
+    {
+      "question_id": "dddc14fa-914b-4a3e-b645-0167dd1f80d6",
+      "content_hash": "sha256:3d665ad068116b1fc216bedd73a64acc4a739a99105695f10eb60576e3fec337"
+    },
+    {
+      "question_id": "3cb0b95e-c0cc-4947-add4-d235c7a96573",
+      "content_hash": "sha256:f1fde3cbedd5428967aba9b5d8d0bae7f1d11f98f50973a6a150f48784d9a639"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore an unsupported prestressed-member cover table.",
+    "No local source in this batch was used to collapse plant-control precast cover categories into cast-in-place values.",
+    "No local source in this batch was used to replace fire-rating, corrosion, or project specification cover requirements."
+  ],
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carried_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster for Batch 145 retry; no completed source recovery artifact was used."
+    }
+  ]
+}

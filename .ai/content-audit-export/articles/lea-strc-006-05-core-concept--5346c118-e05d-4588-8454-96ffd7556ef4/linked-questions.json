@@ -1,30 +1,30 @@
 {
   "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
-  "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6a35e41742bac9c80e1ed2decec491dc46869107a8f4e10a98337946ad5baba2",
   "question_count": 10,
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9b6f1091f207f1a2d05196bb435de8dec547f0115ae8c81ca42907f5fd2980ba",
   "questions": [
     {
       "question_id": "18f9fb08-8589-46ce-b67b-a3e1a8a4c21e",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "In a coastal Philippine project, precast hollow-core slabs were assembled, then the cast-in-place topping and connections were placed. During the first rainy season, water infiltrated through joints between precast units, causing rust staining on the soffit and corrosion of reinforcement. This problem occurred because:",
+      "text": "In a precast slab floor that must act as a diaphragm, what source-backed detail matters?",
       "options": [
         {
           "id": "a",
-          "text": "Precast concrete is inherently more porous than cast-in-place concrete"
+          "text": "All supports can be ignored once a topping is poured."
         },
         {
           "id": "b",
-          "text": "The joints between precast units were not properly sealed or grouted, allowing water infiltration to reach reinforcement in the tropical humid/salty environment"
+          "text": "Steel reinforcement should tie precast slab units at supports and end bearings."
         },
         {
           "id": "c",
-          "text": "The project used ordinary reinforcing steel instead of stainless steel (not required but would have prevented corrosion)"
+          "text": "The units should remain completely untied for diaphragm action."
         },
         {
           "id": "d",
-          "text": "Cast-in-place topping concrete was applied too quickly, before the precast units fully cured"
+          "text": "The finish schedule replaces structural continuity."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In coastal and tropical environments (common in the Philippines), water infiltration through unsealed or poorly grouted joints is the primary cause of corrosion failure. Joints between precast units must be sealed or grouted to prevent water from reaching reinforcement. The combination of humidity, salt spray, and water infiltration accelerates corrosion. This is a critical durability issue in Philippine precast construction.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All supports can be ignored once a topping is poured. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Steel reinforcement should tie precast slab units at supports and end bearings. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "The units should remain completely untied for diaphragm action. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "The finish schedule replaces structural continuity. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Steel reinforcement should tie precast slab units at supports and end bearings. Supported by bsi-prestress-precast; detailing-precast-integrity.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast; detailing-precast-integrity",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapters 6 and Appendix D",
+      "explanation": "Steel reinforcement should tie precast slab units at supports and end bearings. Supported by the Batch 145 local source boundary: bsi-prestress-precast; detailing-precast-integrity.",
+      "code_citation": "bsi-prestress-precast; detailing-precast-integrity",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +58,37 @@
       "model_id": "ALE-STRC-006-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e026f4ebf40eaaec108bdccafecb19285493c79f11b7af939be13aab50c3063f"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:34eda4d3aaa470b9267ec6645747b364d9e58eb445c005cabe474b642f1b4d5d",
+      "source_ids": [
+        "bsi-prestress-precast",
+        "detailing-precast-integrity"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "2af2fd61-f674-4f03-8cac-2d39352e2a14",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "Precast concrete is defined as concrete that is:",
+      "text": "Which definition best stays inside the captured source boundary for precast concrete slabs?",
       "options": [
         {
           "id": "a",
-          "text": "Cast and cured at the construction site in temporary forms, which allows for immediate integration into the structure"
+          "text": "They are always cast monolithically with every column and footing."
         },
         {
           "id": "b",
-          "text": "Cast and cured at an off-site facility (precasting plant), then transported to the site for assembly"
+          "text": "They are one-way spanning units made before placement in the final supported floor system."
         },
         {
           "id": "c",
-          "text": "Prepared in a truck and poured continuously during construction, ensuring a seamless finish"
+          "text": "They are nonstructural decorative panels only."
         },
         {
           "id": "d",
-          "text": "Made from recycled concrete waste mixed with new cement, promoting sustainability in construction"
+          "text": "They never require support or bearing review."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +97,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Precast concrete is manufactured at a dedicated facility (precasting plant) in controlled conditions, cured to full strength, and then transported to the construction site for placement. This is the definition and distinguishing characteristic of precast versus cast-in-place concrete.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They are always cast monolithically with every column and footing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "They are one-way spanning units made before placement in the final supported floor system. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "They are nonstructural decorative panels only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "They never require support or bearing review. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "They are one-way spanning units made before placement in the final supported floor system. Supported by bsi-prestress-precast.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 6",
+      "explanation": "They are one-way spanning units made before placement in the final supported floor system. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -101,30 +122,36 @@
       "model_id": "ALE-STRC-006-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b0cfcca42a164147d496b1ed148b34d2f07325d6a63a669c44b0d4a95b011f4b"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:2f7602e5909f2e21e9db3622f74c384fd9db14c8c97b7e138db6b228e0246633",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "31644fc8-2c2f-46a4-b618-7d43e3ae3860",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "A composite beam system consists of a precast I-beam topped with cast-in-place concrete slab. During design load testing, the precast beam and CIP slab show different deflection patterns—the beam deflects more than the slab—indicating that the two are not acting compositely. What is the most likely cause?",
+      "text": "What creates composite action in the captured precast slab description?",
       "options": [
         {
           "id": "a",
-          "text": "The concrete strengths are different, which prevents composite action due to incompatible material properties"
+          "text": "Painting the precast units after installation."
         },
         {
           "id": "b",
-          "text": "The CIP slab thickness is too thin compared to the precast beam, leading to insufficient stiffness and load distribution"
+          "text": "Leaving all units disconnected at the supports."
         },
         {
           "id": "c",
-          "text": "The interface is poorly bonded or lacks shear reinforcement (dowels), preventing force transfer between the elements"
+          "text": "A reinforced concrete topping bonding with the precast units."
         },
         {
           "id": "d",
-          "text": "The project is over-designed and should have used a smaller beam to match the slab capacity, which would have ensured better composite action"
+          "text": "Removing all steel fabric and reinforcing bars."
         }
       ],
       "correct_option_id": "c",
@@ -133,14 +160,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Differential deflection (beam and slab deflecting independently) indicates loss of composite action. This occurs when the interface cannot transfer shear: either the concrete-to-concrete bond is poor (smooth, contaminated surface) or shear reinforcement (dowels) is absent or insufficient. Without these connections, the elements act separately and the system is not composite. This is a failure of the connection design or execution.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Painting the precast units after installation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Leaving all units disconnected at the supports. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "c": "A reinforced concrete topping bonding with the precast units. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "d": "Removing all steel fabric and reinforcing bars. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "A reinforced concrete topping bonding with the precast units. Supported by bsi-prestress-precast.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.3",
+      "explanation": "A reinforced concrete topping bonding with the precast units. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +185,36 @@
       "model_id": "ALE-STRC-006-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5dc24d373cb556eb07af136b3679aed33e56a9e56d3df8ccb91e78af6cff4663"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:9176b480a3982308f64253695142e6144de3330c550f7f600a4942eea2fa863b",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "f0a33b6a-0322-4c42-9835-9fa96a8b5f92",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "A design engineer specifies that construction joint shear reinforcement (dowels) be placed perpendicular to the joint surface and extending into both the old and new concrete. An inspector notices that some dowels are placed parallel (parallel to the joint plane) instead. Why is this error significant?",
+      "text": "A reviewer asks for a construction-joint shear number not captured here. What should the answer do?",
       "options": [
         {
           "id": "a",
-          "text": "Parallel dowels are more economical and should be accepted, as cost savings are prioritized over structural integrity"
+          "text": "Invent a coefficient because the joint is visible."
         },
         {
           "id": "b",
-          "text": "Parallel dowels do not cross the joint interface and cannot transfer shear across the joint, making the connection ineffective and potentially causing joint failure"
+          "text": "Use the applicable source; this batch only captured roughened contact surfaces and integrity tie concepts."
         },
         {
           "id": "c",
-          "text": "The orientation does not matter as long as the total steel area is correct, assuming uniform stress distribution"
+          "text": "Treat roughening as a replacement for all design checks."
         },
         {
           "id": "d",
-          "text": "Parallel dowels are actually better because they allow more flexibility, accommodating potential movement"
+          "text": "Ignore the joint because concrete will hide it."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +223,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Dowels (shear reinforcement) must be perpendicular to the joint interface to mechanically transfer shear across the joint. If dowels are parallel to the joint plane, they lie entirely within one concrete layer and do not cross the interface—they do not connect the two concretes. This is a critical detailing error that makes the joint ineffective. Shear will cause slip and potential failure.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Invent a coefficient because the joint is visible. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Use the applicable source; this batch only captured roughened contact surfaces and integrity tie concepts. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "Treat roughening as a replacement for all design checks. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Ignore the joint because concrete will hide it. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Use the applicable source; this batch only captured roughened contact surfaces and integrity tie concepts. Supported by detailing-precast-integrity.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-precast-integrity",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4.1",
+      "explanation": "Use the applicable source; this batch only captured roughened contact surfaces and integrity tie concepts. Supported by the Batch 145 local source boundary: detailing-precast-integrity.",
+      "code_citation": "detailing-precast-integrity",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +248,36 @@
       "model_id": "ALE-STRC-006-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:30096f733c84b6a714fbbb8047519980d5a05e5f2d0844dc0b40f3ad57b1ddfc"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:786c8a4f8a3c668591469182ee2d947fdf12e02559fa492d3a8a27aafe8a6e4b",
+      "source_ids": [
+        "detailing-precast-integrity"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "d0bc39af-b869-4994-86bc-210fcfd5340f",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "Precast members can typically be removed from forms and lifted when concrete strength reaches:",
+      "text": "How should precast lifting or release strength be handled in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "20% of design f'c, which is generally insufficient for structural integrity"
+          "text": "Approve lifting at any concrete age."
         },
         {
           "id": "b",
-          "text": "50–70% of design f'c, or 10–14 MPa, whichever is higher"
+          "text": "Use the project specification or code source because this batch did not capture a release-strength percentage."
         },
         {
           "id": "c",
-          "text": "Exactly 100% of design f'c (full 28-day strength), ensuring maximum durability"
+          "text": "Use the topping thickness as a release-strength rule."
         },
         {
           "id": "d",
-          "text": "80% of design f'c, allowing for early removal with caution"
+          "text": "Assume every precast plant has the same uncited value."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +286,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Precast members can be removed and lifted when they have gained sufficient strength to support self-weight plus handling and lifting stresses. This is typically 50–70% of design f'c, or 10–14 MPa minimum (whichever is higher). Sample cylinders cured with the member are tested to verify this strength is reached before removal.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Approve lifting at any concrete age. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "Use the project specification or code source because this batch did not capture a release-strength percentage. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "Use the topping thickness as a release-strength rule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "Assume every precast plant has the same uncited value. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "Use the project specification or code source because this batch did not capture a release-strength percentage. Supported by bsi-prestress-precast.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.2",
+      "explanation": "Use the project specification or code source because this batch did not capture a release-strength percentage. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +311,36 @@
       "model_id": "ALE-STRC-006-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e7297a83bcb25a7279dc208313c35429c01284e6a6992f07711aa06fc84b6dc4"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:ff69149f02b42528d26cff89cee80cae992e5cfb945a5f89a61cf53ee999fe78",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "86266369-d20e-4284-b170-a8ee05378acf",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "A precast hollow-core slab is topped with cast-in-place concrete to create a composite slab system. The interface between the two concretes requires shear reinforcement (dowels) because:",
+      "text": "What happens when a topping bonds with precast units in the captured source?",
       "options": [
         {
           "id": "a",
-          "text": "The dowels add weight and stiffness to the slab, enhancing its load-bearing capacity"
+          "text": "The topping prevents all diaphragm ties."
         },
         {
           "id": "b",
-          "text": "Dowels mechanically connect the precast and CIP concrete, allowing shear forces to be transferred between them without slipping, enabling composite action"
+          "text": "The topping and precast units can form a composite structural unit."
         },
         {
           "id": "c",
-          "text": "Dowels are required by code even if composite action is not needed, ensuring compliance with structural standards"
+          "text": "The units stop spanning in one direction."
         },
         {
           "id": "d",
-          "text": "Dowels allow the two concretes to slide relative to each other, which improves flexibility, accommodating thermal expansion"
+          "text": "The supports become nonstructural."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +349,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Dowels (shear reinforcement crossing the interface) are essential to composite action. They prevent slipping between the precast and CIP concrete by mechanically connecting the two elements. Without dowels, the interface relies only on friction (roughened surface) and concrete-to-concrete bond, which may be insufficient in high-shear regions. Dowels ensure force transfer and true composite behavior.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The topping prevents all diaphragm ties. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "The topping and precast units can form a composite structural unit. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "The units stop spanning in one direction. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "The supports become nonstructural. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "The topping and precast units can form a composite structural unit. Supported by bsi-prestress-precast.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4",
+      "explanation": "The topping and precast units can form a composite structural unit. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +374,36 @@
       "model_id": "ALE-STRC-006-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2ae571784c7bc3f3e05edc623f150466ca445df67a4430c0d88562211f4cfebd"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:1dc535495a71c1dc1b7ec48589aa445ebff5dd7fcff50a17e77bff3b8fc9c7cc",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "8b318858-ce00-42e1-8834-24600fe2dcc7",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "Before placing new concrete against an existing concrete surface at a construction joint, the most important preparation step is:",
+      "text": "Before placing new concrete against a construction-joint surface in a wall or diaphragm, what does the source support?",
       "options": [
         {
           "id": "a",
-          "text": "Apply a waterproof coating to the old surface to prevent water infiltration, ensuring long-term durability"
+          "text": "The contact surface should be polished smooth in every case."
         },
         {
           "id": "b",
-          "text": "Clean, scarify, or sandblast the old surface to expose aggregate and create mechanical bond, removing laitance"
+          "text": "The contact surface should be roughened as specified by the source."
         },
         {
           "id": "c",
-          "text": "Heat the old surface to dry it completely before new concrete is placed, preventing moisture-related issues"
+          "text": "The surface condition never affects the joint."
         },
         {
           "id": "d",
-          "text": "Apply a bond-breaking agent to allow independent movement of the two pours, avoiding stress transfer"
+          "text": "The joint should be hidden without review."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +412,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The old concrete surface must be cleaned (sandblasted, scarified, or wire-brushed) to expose aggregate and remove laitance (weak cement paste layer). This creates mechanical interlocking and friction between old and new concrete. The surface must be moist (but not saturated) to ensure good hydration of new paste but not slippery. This is the critical preparation that enables force transfer.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The contact surface should be polished smooth in every case. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "The contact surface should be roughened as specified by the source. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "The surface condition never affects the joint. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "The joint should be hidden without review. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "The contact surface should be roughened as specified by the source. Supported by detailing-precast-integrity.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-precast-integrity",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4.1",
+      "explanation": "The contact surface should be roughened as specified by the source. Supported by the Batch 145 local source boundary: detailing-precast-integrity.",
+      "code_citation": "detailing-precast-integrity",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +437,36 @@
       "model_id": "ALE-STRC-006-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ed285f4482d29053a6f56fd2d610d9f74809aa3a8b6c953c9e731c1491928fcb"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:9868535a6710fbe30df04ce4802e224eff0a2d410f95fa3db6ce8dbc9285f452",
+      "source_ids": [
+        "detailing-precast-integrity"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "31e66765-f6d2-4850-8d60-10e7006bbb4f",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "The primary advantage of using precast concrete in urban construction (such as in Manila) is:",
+      "text": "Which source-backed advantage is stated for precast wall panels?",
       "options": [
         {
           "id": "a",
-          "text": "Precast always produces stronger concrete than cast-in-place, ensuring superior structural integrity in all conditions"
+          "text": "They eliminate all lateral-load checks."
         },
         {
           "id": "b",
-          "text": "Factory quality control, parallel construction scheduling, reduced site labor, and acceleration of project timeline"
+          "text": "They can provide high-quality concrete finishes and may be prestressed."
         },
         {
           "id": "c",
-          "text": "Precast eliminates the need for any construction joints in the building, which simplifies the construction process significantly"
+          "text": "They never need connections."
         },
         {
           "id": "d",
-          "text": "Precast members are always less expensive than cast-in-place alternatives, providing a cost-effective solution for large-scale projects"
+          "text": "They replace every diaphragm requirement."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +475,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Precast offers multiple advantages: (1) Factory quality control ensures consistent strength and durability; (2) Parallel scheduling—precasting occurs while site work proceeds; (3) Reduced on-site labor—assembly is faster than forming, pouring, and curing; (4) Faster occupancy—the critical path is shortened. These factors, combined, accelerate projects and reduce costs (indirectly, through schedule), especially in high-density urban environments like Manila.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They eliminate all lateral-load checks. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "They can provide high-quality concrete finishes and may be prestressed. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "They never need connections. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "They replace every diaphragm requirement. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "They can provide high-quality concrete finishes and may be prestressed. Supported by bsi-prestress-precast.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; Construction Industry Practice",
+      "explanation": "They can provide high-quality concrete finishes and may be prestressed. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +500,36 @@
       "model_id": "ALE-STRC-006-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7605833b7c7f2b986185f070f253be07d29770718bd4eb00b62e41159bab39c9"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:b79b275a0dc6a2a757ffa2d9f7faebd9f76ecd508de60ba3f8f5b32349705210",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "3e1a8d73-4607-4f6a-b1b5-92b57584cd47",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "A composite concrete member (precast slab with cast-in-place topping) achieves composite action primarily through:",
+      "text": "How does a precast slab with cast-in-place topping achieve composite behavior in the captured source?",
       "options": [
         {
           "id": "a",
-          "text": "The weight of the topping providing lateral support to the precast member, which is crucial for stability in seismic zones"
+          "text": "By removing reinforcement at all bearings."
         },
         {
           "id": "b",
-          "text": "Mechanical bonding, interface roughness, and shear reinforcement (dowels or hooked bars) crossing the interface"
+          "text": "By bonding the reinforced topping to the precast units."
         },
         {
           "id": "c",
-          "text": "Achieving the same compressive strength in both the precast and cast-in-place concrete, ensuring uniform load distribution"
+          "text": "By avoiding contact between topping and units."
         },
         {
           "id": "d",
-          "text": "Using the same concrete mix design for both the precast and CIP portions to maintain consistency in material properties"
+          "text": "By relying only on the panel label."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +538,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Composite action (two elements acting as a single structural unit) depends on:1) Mechanical bond (roughened interface), 2) Shear reinforcement crossing the interface (dowels or hooked bars), and 3) Adequate concrete strength in both materials. These elements ensure stress is transferred between the precast and CIP concrete without slipping.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "By removing reinforcement at all bearings. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "By bonding the reinforced topping to the precast units. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "By avoiding contact between topping and units. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "By relying only on the panel label. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "By bonding the reinforced topping to the precast units. Supported by bsi-prestress-precast.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-prestress-precast",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 6",
+      "explanation": "By bonding the reinforced topping to the precast units. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+      "code_citation": "bsi-prestress-precast",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +563,36 @@
       "model_id": "ALE-STRC-006-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c1ea7723d93da5770f179a406b94eb09649328194955d47d216474427bfcbb79"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:97fe7e689ef267bc203e633cbd32025e79946a22ebf77850ef574a70a8c6c765",
+      "source_ids": [
+        "bsi-prestress-precast"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "b93e8503-4fd2-4b04-88db-ae58d784e6da",
       "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
       "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
-      "text": "A construction joint is best defined as:",
+      "text": "What is an exam-safe construction-joint answer for this batch?",
       "options": [
         {
           "id": "a",
-          "text": "An unintended crack or separation in concrete due to poor workmanship, often leading to structural issues"
+          "text": "It is a decorative line with no structural review."
         },
         {
           "id": "b",
-          "text": "A planned, designed discontinuity where two concrete pours meet, prepared to transfer shear and other forces"
+          "text": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement."
         },
         {
           "id": "c",
-          "text": "A flexible gap filled with sealant to relieve internal stresses and allow thermal movement, ensuring durability"
+          "text": "It automatically creates composite action without preparation."
         },
         {
           "id": "d",
-          "text": "A permanent separation between precast members that prevents composite action, maintaining individual integrity"
+          "text": "It cancels all connection and tie requirements."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +601,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A construction joint is a planned, intentional discontinuity (weak point) where concrete from two different pours meets. It is designed to transfer shear, normal stress, and moment across the interface through mechanical bonding, surface roughness, and shear reinforcement. It is not an error; it is a structural feature that simplifies construction scheduling.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It is a decorative line with no structural review. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "b": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+        "c": "It automatically creates composite action without preparation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "d": "It cancels all connection and tie requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+        "correct": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. Supported by detailing-precast-integrity.",
+        "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+        "source_boundary": "detailing-precast-integrity",
+        "checked_sources": [
+          "bsi-prestress-precast",
+          "detailing-precast-integrity",
+          "detailing-cover"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4",
+      "explanation": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. Supported by the Batch 145 local source boundary: detailing-precast-integrity.",
+      "code_citation": "detailing-precast-integrity",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +626,14 @@
       "model_id": "ALE-STRC-006-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a7c9a643085b3c828233e3038efacdbcb5c7174446ac4bf73b73d8f46aa04090"
+      "updated_at": "2026-05-14T02:34:50.435Z",
+      "content_hash": "sha256:29c9ea4636fb79bbc276fb6580b2961ca25f24618c677ebf250aaa0c01725161",
+      "source_ids": [
+        "detailing-precast-integrity"
+      ],
+      "cluster_id": "lea-strc-006-05",
+      "audit_batch": 145,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "batch": 145,
+  "article_id": "f4438093-a209-4c53-9f43-6ad4d9be677e",
+  "cluster_id": "lea-strc-007-01",
+  "question_id": "9efa4356-724f-4a97-8f13-027e9ca00c0b",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:83d3d96fa3e2434c8b805f8c013b451f768b1bd2191a45534229777d2ae39f7f",
+  "after_hash": "sha256:34b900827f75c072c20f6c0334510a6c289208d159ec34c37d791c73500181f3",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "detailing-cover"
+  ],
+  "rationale": {
+    "a": "Always use the smallest number in the list. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "b": "Ignore exposure once a member is indoors. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "c": "Use only architectural finish thickness. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+    "d": "Use the larger or more severe required cover value. This stays inside the Batch 145 local source boundary for Concrete Cover: Exposure, Member Type, and Larger-Value Rule.",
+    "correct": "Use the larger or more severe required cover value. Supported by detailing-cover.",
+    "takeaway": "For Concrete Cover: Exposure, Member Type, and Larger-Value Rule, classify the structural condition and source boundary before using memorized exact values.",
+    "source_boundary": "detailing-cover",
+    "checked_sources": [
+      "detailing-cover",
+      "detailing-precast-integrity"
+    ]
+  }
+}
