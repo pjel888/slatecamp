@@ -1,0 +1,189 @@
+{
+  "batch": 155,
+  "batch_id": "reservation-batch-155-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T12:53:38+08:00",
+  "baseline": "5d9d05e944",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after accepted Batch 154.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Reserve the only two currently sourceable non-prac residual clusters named after Batch 154, skipping hard-blocked lea-matl-009-02 and all structural deferrals without exact source support.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS_FIXED_PRODUCTION_LINE_SCOPE",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..154}-manifest.json and .ai/03_plans/production-line-batch-{146..154}-reservation-manifest.json",
+    "inspected_report_glob": ".ai/content-audit-export/source-audited-article-batch-{087..154}-local-first-*",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected and reserved slugs.",
+    "reserved_ids_found_in_fixed_production_line_accepted_artifacts": [],
+    "historical_context_note": "Older local-only Batch 076 artifacts mention lea-matl-009-03 and lea-matl-009-04, but Batch 154's accepted reservation summary still records them as residual not reserved; production execution should verify whether those historical local-only artifacts are canonical before editing."
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "known_deferrals_not_reserved": [
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-009-01",
+    "lea-strc-009-02",
+    "lea-strc-009-03",
+    "lea-strc-012-01"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-matl-009-03",
+      "slug": "lea-matl-009-03-core-concept",
+      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b",
+      "title": "Schedules serve as a bridge between graphical drawings",
+      "linked_question_count": 10,
+      "source_family": "drawing_schedules_ra9266_pd1096_uap_spp",
+      "source_candidates": [
+        {
+          "source_id": "ra9266-irr-b076",
+          "source_family": "ra_9266_irr",
+          "source_type": "primary_law_irr_pdf",
+          "label": "RA 9266 IRR - Architecture Act of 2004",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md"
+          },
+          "checked_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "pd1096-rirr-b076",
+          "source_family": "pd_1096_rirr",
+          "source_type": "primary_code_irr_pdf",
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md"
+          },
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "uap-spp203-b076",
+          "source_family": "uap_spp_203",
+          "source_type": "primary_professional_practice_pdf",
+          "label": "UAP SPP Doc. 203 - Specialized Architectural Services",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md"
+          },
+          "checked_locator": "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction.",
+          "exists_checked": true
+        }
+      ],
+      "internet_source_targets": [],
+      "why_sourceable": "The article has 10 linked questions and verified local RA 9266, PD 1096, and UAP SPP 203 source records that can support drawing/schedule coordination claims without opening CSI MasterFormat or proprietary specification-taxonomy issues.",
+      "risks": [
+        "Do not import CSI/MasterFormat schedule taxonomy or section numbering from the hard-blocked lea-matl-009-02 cluster.",
+        "Keep schedule claims at the professional-document and permit/document-coordination level unless production captures exact authoritative specification-system support.",
+        "Historical Batch 076 local-only artifacts mention this cluster; production should reconcile whether those files are canonical before rewriting."
+      ],
+      "non_overlap_proof": "Absent from fixed production-line Batch 087-154 selected/reserved cluster scans except as Batch 154 residual-not-reserved; not in the hard-blocked carry-forward list; not lea-prac."
+    },
+    {
+      "cluster_id": "lea-matl-009-04",
+      "slug": "lea-matl-009-04-core-concept",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8",
+      "title": "Quality control operates through a systematic process",
+      "linked_question_count": 10,
+      "source_family": "quality_control_pd1096_ra9266_uap_spp_design_process",
+      "source_candidates": [
+        {
+          "source_id": "pd1096-rirr-b076",
+          "source_family": "pd_1096_rirr",
+          "source_type": "primary_code_irr_pdf",
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md"
+          },
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "ra9266-irr-b076",
+          "source_family": "ra_9266_irr",
+          "source_type": "primary_law_irr_pdf",
+          "label": "RA 9266 IRR - Architecture Act of 2004",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md"
+          },
+          "checked_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "uap-spp203-b076",
+          "source_family": "uap_spp_203",
+          "source_type": "primary_professional_practice_pdf",
+          "label": "UAP SPP Doc. 203 - Specialized Architectural Services",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md"
+          },
+          "checked_locator": "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction.",
+          "exists_checked": true
+        },
+        {
+          "source_id": "design-process-b076",
+          "source_family": "design_process",
+          "source_type": "primary_course_pdf",
+          "label": "Design Process",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md"
+          },
+          "checked_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by prior local PyMuPDF extraction.",
+          "exists_checked": true
+        }
+      ],
+      "internet_source_targets": [],
+      "why_sourceable": "The article has 10 linked questions and verified local PD 1096, RA 9266, UAP SPP 203, and Design Process source records that can support quality-control process and professional-document review boundaries.",
+      "risks": [
+        "Avoid ISO 9001, ASTM, DPWH Blue Book, proprietary inspection checklist, manufacturer tolerance, and warranty claims unless separately captured from authoritative sources.",
+        "Keep quality control framed as review, coordination, documentation, and compliance discipline inside the local source boundary.",
+        "Historical Batch 076 local-only artifacts mention this cluster; production should reconcile whether those files are canonical before rewriting."
+      ],
+      "non_overlap_proof": "Absent from fixed production-line Batch 087-154 selected/reserved cluster scans except as Batch 154 residual-not-reserved; not in the hard-blocked carry-forward list; not lea-prac."
+    }
+  ],
+  "residual_inventory_after_this_manifest": {
+    "eligible_sourceable_residuals_remaining": [],
+    "hard_blocked_remaining": [
+      "lea-theo-008-02",
+      "lea-theo-008-03",
+      "lea-matl-009-02",
+      "lea-util-004-05",
+      "lea-util-004-08",
+      "lea-strc-004-02"
+    ],
+    "structural_deferrals_remaining": [
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-009-01",
+      "lea-strc-009-02",
+      "lea-strc-009-03",
+      "lea-strc-012-01"
+    ]
+  },
+  "reservation_stop_condition": "Batch 155 reserves exactly the two remaining eligible non-prac sourceable residual clusters and performs no article, source, question-edit, package, code, git stage/commit/push, Supabase, deploy, DB, or main-merge action."
+}
