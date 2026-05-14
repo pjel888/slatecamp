@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "feda56eb-137d-4555-bd06-d0a5e06e68cc",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:023433fdf35f6d0d9f6296d8dc3b2334a2a9c1dd0ed06651803d71cdd9fc8799",
+  "after_hash": "sha256:d86f8f7ed11ad36b0383d46e1deebf8570de23c761e9f2dbc98e8009e4b162af",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "Only water penetration through a masonry cavity. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "c": "Only the color of shop primer. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Only the number of courses in a masonry bond. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

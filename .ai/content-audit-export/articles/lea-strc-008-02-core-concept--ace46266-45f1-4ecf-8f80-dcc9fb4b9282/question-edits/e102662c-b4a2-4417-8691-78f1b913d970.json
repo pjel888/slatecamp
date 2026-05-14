@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "e102662c-b4a2-4417-8691-78f1b913d970",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:2612ec7913db8a46eb23706e3816f98e34c49bbbf479d98a5a40bd867e4db722",
+  "after_hash": "sha256:c4a32922e41cbb50cfafde6fd365dd3a7fb6a5d292ccfcfcb4a413cb91ac09ff",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "It allows free rotation like a hinge. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "It restrains rotation and translation and provides force and moment resistance. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "c": "It is a CHB cell filled with mortar. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "It is only a roof drainage detail. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "It restrains rotation and translation and provides force and moment resistance. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

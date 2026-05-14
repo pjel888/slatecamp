@@ -1,0 +1,26 @@
+{
+  "batch": 147,
+  "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+  "cluster_id": "lea-strc-010-01",
+  "question_id": "7f30a350-0792-44c3-8b0f-ff508684f01f",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:d23ad9d73756124aabfc07eea205129582964a44741f64136b046eece3c7759a",
+  "after_hash": "sha256:81469c6a967d2be3e2681d0b30271d25738a80e941c1ce2ca04a930ce888409f",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "masonry-lecture-terms-chb"
+  ],
+  "rationale": {
+    "a": "Bolt pitch. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Wythe or tier. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+    "c": "Web stiffener. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Rigid frame. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Wythe or tier. Supported by masonry-lecture-terms-chb.",
+    "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "masonry-lecture-terms-chb",
+    "checked_sources": [
+      "masonry-lecture-terms-chb",
+      "bsi-masonry-walls"
+    ]
+  }
+}

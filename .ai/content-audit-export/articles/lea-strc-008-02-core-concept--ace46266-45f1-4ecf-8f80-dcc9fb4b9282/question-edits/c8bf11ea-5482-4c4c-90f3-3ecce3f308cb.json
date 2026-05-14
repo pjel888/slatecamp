@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "c8bf11ea-5482-4c4c-90f3-3ecce3f308cb",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:f06e0acd2b95c026a9cd2ba2da0a639295f455cfedc3f56147fae7c5aff21fd6",
+  "after_hash": "sha256:6ddfcf5e111e40260267e52c9046ed69dc63a730a0d643a32a4cae86545589b1",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "Measure from the nearest masonry course instead. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Use any value as long as the bolt is visible. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "c": "Do not publish the edge distance from memory; verify it from the applicable connection table. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "d": "Treat edge distance as irrelevant in all bolted joints. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Do not publish the edge distance from memory; verify it from the applicable connection table. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

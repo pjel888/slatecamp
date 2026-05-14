@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "a0c6caae-dbe4-4555-99ff-f865526df883",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:3c6f0de8de3e4eb67c5363873eb5078a3267900e9b007ded595faf436bf63eb9",
+  "after_hash": "sha256:45360e21255b62c88710b9570b4fcdfb55ac3dfc7d8ee0d0c69793d387fd5be7",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "Stiffeners replace all connection design. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Concentrated-load locations can require local stiffening instead of only a larger span member. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "c": "Concentrated loads are always ignored in steel framing. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Web stiffeners are masonry bond patterns. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Concentrated-load locations can require local stiffening instead of only a larger span member. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

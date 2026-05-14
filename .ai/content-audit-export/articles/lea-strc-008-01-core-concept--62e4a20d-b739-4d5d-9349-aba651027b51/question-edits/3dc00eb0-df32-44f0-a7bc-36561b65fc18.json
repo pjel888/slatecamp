@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "3dc00eb0-df32-44f0-a7bc-36561b65fc18",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:97d6f3d67b811d61e7e6322f663221276d498452a807f377daa1d279e07358a9",
+  "after_hash": "sha256:5ada4e6729dda795d6bab3c80922e8fca44358596d76398a39844e0a223cc111",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "Declare compliance from memory because every tension and compression member has the same limit. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Treat the exact slenderness limit as standard-controlled and verify it from the applicable steel design source before publishing compliance. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "c": "Ignore slenderness because only section shape matters. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Use the masonry lecture to set the steel member limit. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Treat the exact slenderness limit as standard-controlled and verify it from the applicable steel design source before publishing compliance. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

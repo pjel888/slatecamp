@@ -1,0 +1,27 @@
+{
+  "batch": 147,
+  "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+  "cluster_id": "lea-strc-010-01",
+  "question_id": "f75f1764-4c73-430a-b061-769779596de2",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:00ca1e33fb932460e2ea503485b02e418a03c8134d96971cfb7d2fb43ed2f8c7",
+  "after_hash": "sha256:0a0a207daf44e498c8e2765413bc67adf7f0342cd0b4a59031cee7feed338149",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "masonry-lecture-terms-chb",
+    "bsi-masonry-walls"
+  ],
+  "rationale": {
+    "a": "Declare compliance because two wythes are visible. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Do not claim code compliance without the applicable code source; use the lecture only for terms such as wythe, bond, header, and stretcher. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+    "c": "Use AISC bolt spacing to approve masonry. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Ignore bond and reinforcement because masonry is decorative only. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Do not claim code compliance without the applicable code source; use the lecture only for terms such as wythe, bond, header, and stretcher. Supported by masonry-lecture-terms-chb; bsi-masonry-walls.",
+    "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "masonry-lecture-terms-chb; bsi-masonry-walls",
+    "checked_sources": [
+      "masonry-lecture-terms-chb",
+      "bsi-masonry-walls"
+    ]
+  }
+}

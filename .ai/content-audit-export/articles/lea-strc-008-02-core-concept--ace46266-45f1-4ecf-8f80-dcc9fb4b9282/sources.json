@@ -1,56 +1,59 @@
 {
+  "batch": 147,
+  "batch_id": "source-audited-batch-147-local-first",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-147-reservation-manifest.json",
   "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:61d73b2aa09429689390803385560c7b2c45bc72408c95ccdf8e191ae2e43ad0",
-  "source_count": 4,
+  "cluster_id": "lea-strc-008-02",
+  "slug": "lea-strc-008-02-core-concept",
+  "source_strategy": "local_first_fixed_manifest",
+  "source_count": 1,
+  "sources_hash": "sha256:a6ff1704f5505b9caacdb27bdfe3b76bf6579aafd5a76528fbb43245f490e501",
   "sources": [
     {
-      "source_id": "76696bb6-933b-4395-bd69-cb8439c723cf",
-      "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
-      "label": "AISC 360-16: Specification for Structural Steel Buildings (Chapter J: Fasteners and Connections, Section J3: Bolted Connections)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "5e2ad84a-7e87-4dbb-877c-3a46bb234ef9",
-      "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
-      "label": "AISC Steel Construction Manual, 15th ed. (2017), Part 7: Bolted and Riveted Connections",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "6cbe494b-a6c9-4200-8aa9-31ff63b35a28",
-      "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
-      "label": "AWS D1.1: Structural Welding Code—Steel (supplemental guidance on hole placement near welds)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "ffbcf7ae-5925-4148-8e2a-c7b06a655ac5",
-      "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
-      "label": "Philippine Association of Structural Engineers (PASE) Guidelines on Bolted Connection Design",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "bsi-steel-connections",
+      "title": "Building Structures Illustrated - bolted, welded, pin, and rigid connection concepts",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/bsi-steel-connections.source-capture.md",
+      "local_capture_sha256": "sha256:c8d0578070a9823958e1a47c7145859593f0c784d9360a6897d062af115b55a6",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/bsi-steel-connections.refined.md",
+      "refined_capture_sha256": "sha256:6c4c1b8a1252a9b51efac8f5b6f774ff231c5007c59cafe1f1767f1fa77e081e",
+      "locator": "refined markdown lines 827-840, 2617-2618, 3209-3216, 5984-5986",
+      "safe_claims": [
+        "Structural connections can be categorized geometrically as point bolted connections, line welded connections, and plane glued connections.",
+        "Connections usually use transitional elements such as steel angles, tees, or plates.",
+        "Pin or hinge joints allow rotation but resist translation, while rigid or fixed joints restrain rotation and translation and provide force and moment resistance.",
+        "Steel column-beam connections can be made moment-resistant by bolting or welding the beam flanges to the column.",
+        "Braced frames can use simply connected pin joints, making their fabrication and erection more economical than moment-resisting connections.",
+        "Eccentrically braced frames introduce bending and shear into the frame, lowering stiffness but increasing ductility."
+      ],
+      "exclusions": [
+        "This capture does not supply A307, A325, or A490 bolt strength values.",
+        "This capture does not supply bolt-hole clearances, minimum edge distances, pitch limits, pretension values, or inspection methods.",
+        "This capture does not supply AISC Chapter J section-number support."
+      ],
+      "use_limits": [
+        "No local readable source in this batch was used to restore A307, A325, or A490 strength values.",
+        "No local readable source in this batch was used to restore bolt-hole clearances, edge-distance tables, pitch limits, or pretension values.",
+        "No local readable source in this batch was used to restore turn-of-nut, calibrated-wrench, or DTI inspection requirements."
+      ]
     }
+  ],
+  "source_candidates_checked": [
+    {
+      "source_id": "aisc-steel-manual-13th-raw",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+      "status": "checked_raw_hash_only_not_used_for_exact_claims",
+      "reason": "Local raw PDF exists, but no reliable readable local capture was available in this run; exact AISC slenderness, grade, hole, spacing, edge-distance, and pretension values were not restored."
+    }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local readable source in this batch was used to restore A307, A325, or A490 strength values.",
+    "No local readable source in this batch was used to restore bolt-hole clearances, edge-distance tables, pitch limits, or pretension values.",
+    "No local readable source in this batch was used to restore turn-of-nut, calibrated-wrench, or DTI inspection requirements."
   ]
 }

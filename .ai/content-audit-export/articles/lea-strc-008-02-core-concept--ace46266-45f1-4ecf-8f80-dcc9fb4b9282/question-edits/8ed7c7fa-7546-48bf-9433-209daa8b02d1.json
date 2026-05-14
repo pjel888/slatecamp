@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "8ed7c7fa-7546-48bf-9433-209daa8b02d1",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:dd46a91e65d351e5702b1497282720325ad10a41384969e1aefc50492921c8f5",
+  "after_hash": "sha256:c84e66ddf5759f239903c9ef5c2ecdbd1a3d28765289e2275f8d50e64a8a10c3",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "Invent the pretension value from memory. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Leave the exact pretension value to the applicable bolting standard because this capture did not supply it. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "c": "Use the beam span rule of thumb as bolt pretension. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Say pretension never matters in a steel connection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Leave the exact pretension value to the applicable bolting standard because this capture did not supply it. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

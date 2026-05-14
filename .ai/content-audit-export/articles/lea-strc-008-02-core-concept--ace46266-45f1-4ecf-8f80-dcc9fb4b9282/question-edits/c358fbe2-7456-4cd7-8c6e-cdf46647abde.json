@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "c358fbe2-7456-4cd7-8c6e-cdf46647abde",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:68c0a362ea995b21ce777218ffc8e276a968f8068a7d88db2769214e78cbff36",
+  "after_hash": "sha256:05c0815f67e117524c61cf9d5d6bc1a2bc924f5a49c79153c913b56d95c6d245",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "Ignore holes because the connection is bolted. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "State that hole effects and final capacity are design-standard controlled and require the applicable source. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "c": "Use only the member paint specification. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Use a CHB lintel note as the steel capacity equation. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "State that hole effects and final capacity are design-standard controlled and require the applicable source. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

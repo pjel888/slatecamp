@@ -1,30 +1,30 @@
 {
   "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:79a88fdc0758155987d6fa3601deeb33eb2787cbf38c877be7152f76ffc6aaa9",
+  "linked_questions_hash": "sha256:b854bf1621312144b96c0f773711caf70e6c5c72a45bc85ff1e3d6a1e6373334",
   "question_count": 10,
   "questions": [
     {
       "question_id": "9e85e893-bcbc-4d2e-8af3-3114c5458738",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "In concrete hollow block (CHB) masonry, which of the following best describes a cell?",
+      "text": "In concrete hollow block masonry, which definition of a cell stays inside the local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "The horizontal mortar joint between courses, which provides stability and alignment for the masonry units"
+          "text": "The horizontal surface where units lie in a course."
         },
         {
           "id": "b",
-          "text": "The air space between two wythes, often used for insulation or to accommodate reinforcement bars"
+          "text": "A complete layer of masonry units."
         },
         {
           "id": "c",
-          "text": "The enclosed void within an individual masonry unit"
+          "text": "A cell or core is one of the hollow voids within a CHB unit."
         },
         {
           "id": "d",
-          "text": "The bond pattern connecting units, which can vary to enhance structural integrity and aesthetic appeal"
+          "text": "A steel bolted point connection."
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +33,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is a bed joint.",
-        "b": "This is a cavity or collar joint.",
-        "d": "Bond patterns refer to the arrangement of units (e.g., Running, Stack).",
-        "correct": "Cells (or cores) are the hollow voids in CHBs. Per NSCP 2015, these are often reinforced with vertical bars and filled with grout to enhance structural capacity. [cite: 23, 44]",
-        "takeaway": "Cell = core/void in a hollow unit."
+        "a": "The horizontal surface where units lie in a course. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "A complete layer of masonry units. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "A cell or core is one of the hollow voids within a CHB unit. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "d": "A steel bolted point connection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "A cell or core is one of the hollow voids within a CHB unit. Supported by masonry-lecture-terms-chb; bsi-masonry-walls.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb; bsi-masonry-walls",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": "This is a bed joint. This is a cavity or collar joint. Bond patterns refer to the arrangement of units (e.g., Running, Stack). Cells (or cores) are the hollow voids in CHBs. Per NSCP 2015, these are often reinforced with vertical bars and filled with grout to enhance structural capacity. [cite: 23, 44] Cell = core/void in a hollow unit.",
-      "code_citation": "NSCP 2015 Section 702",
+      "explanation": "A cell or core is one of the hollow voids within a CHB unit. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb; bsi-masonry-walls.",
+      "code_citation": "masonry-lecture-terms-chb; bsi-masonry-walls",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +57,37 @@
       "model_id": "ALE-STRC-010-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:42:43.453261+00:00",
-      "content_hash": "sha256:1e92c89d22639e6ac9ccb9263f8db3c6231834067d9934d6459cee923f7a34e4"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:666bcd8e6fdcd87f0cdf5e94a941099ea07d78b35ce89f25aa54d4732504e6c3",
+      "source_ids": [
+        "masonry-lecture-terms-chb",
+        "bsi-masonry-walls"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "12a09035-e746-41da-b8f4-7cc4be9eabc7",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "Which bond pattern requires specific continuous horizontal reinforcement in Seismic Zone 4 (high seismic risk) because of its lack of natural interlock?",
+      "text": "A question asks for a code-backed stack-bond seismic rule. What should Batch 147 do?",
       "options": [
         {
           "id": "a",
-          "text": "English bond"
+          "text": "Publish the seismic rule from memory."
         },
         {
           "id": "b",
-          "text": "Flemish bond"
+          "text": "Use an AISC bolting concept as the masonry code."
         },
         {
           "id": "c",
-          "text": "Stack bond"
+          "text": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement."
         },
         {
           "id": "d",
-          "text": "Running bond"
+          "text": "Treat stack bond as automatically code-compliant in all cases."
         }
       ],
       "correct_option_id": "c",
@@ -83,14 +96,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "English bond provides strong mechanical interlock through alternating header/stretcher courses.",
-        "b": "Flemish bond provides interlock through alternating units in each course.",
-        "d": "Running bond is the standard interlocking pattern where head joints are offset by at least 1/4 of the unit length.",
-        "correct": "Stack bond has vertical head joints that align. In high seismic zones (Seismic Zone 4), the NSCP 2015 requires stack bond walls to have continuous horizontal reinforcement to compensate for the lack of overlapping units. [cite: 42, 44]",
-        "takeaway": "Stack bond lacks overlap and requires extra reinforcement in high seismic zones."
+        "a": "Publish the seismic rule from memory. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Use an AISC bolting concept as the masonry code. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "d": "Treat stack bond as automatically code-compliant in all cases. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement. Supported by masonry-lecture-terms-chb.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": "English bond provides strong mechanical interlock through alternating header/stretcher courses. Flemish bond provides interlock through alternating units in each course. Running bond is the standard interlocking pattern where head joints are offset by at least 1/4 of the unit length. Stack bond has vertical head joints that align. In high seismic zones (Seismic Zone 4), the NSCP 2015 requires stack bond walls to have continuous horizontal reinforcement to compensate for the lack of overlapping units. [cite: 42, 44] Stack bond lacks overlap and requires extra reinforcement in high seismic zones.",
-      "code_citation": "NSCP 2015 Section 707.2.2.2; PD 1096 Rule VIII",
+      "explanation": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+      "code_citation": "masonry-lecture-terms-chb",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +120,36 @@
       "model_id": "ALE-STRC-010-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:42:43.605449+00:00",
-      "content_hash": "sha256:16f9da70c10944c1ea4b7ca2bc258222e5f82b368694293172f16c1a0e35f3b9"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:b00ae2adf4d8fb1f07aa0b57ca203acc9758eaa08df98f56ba8f882db22033b7",
+      "source_ids": [
+        "masonry-lecture-terms-chb"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "cef523d7-e9b8-42c2-84ac-c8c890c9cae9",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "A structural engineer specifies that for a building in Seismic Zone 4, cells at header courses must be solid-grouted. What is the structural rationlea for this in a cavity wall?",
+      "text": "A masonry question asks for solid-grouting requirements in a seismic cavity wall. What is the source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "Grout in header course cells increases the axial load capacity of headers and provides lateral continuity."
+          "text": "Approve every cavity wall without code review."
         },
         {
           "id": "b",
-          "text": "Grout creates vertical load paths and solidifies the lateral tie between wythes."
+          "text": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts."
         },
         {
           "id": "c",
-          "text": "Grouting increases the compressive strength uniformly across all wythes."
+          "text": "Use steel beam flange width as the grouting rule."
         },
         {
           "id": "d",
-          "text": "Grouting cells eliminates the need for wall ties."
+          "text": "Assume all cells remain empty even when reinforcement is present."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +158,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While it increases axial capacity, the main seismic concern is shear transfer and wythe continuity.",
-        "c": "Compressive strength increase is a benefit, but the spacing and placement targets lateral stability.",
-        "d": "Grouting header cells complements but does not necessarily eliminate the requirement for metal wall ties unless specifically engineered as a bonded wall.",
-        "correct": "In Seismic Zone 4, the integration of grout and reinforcement is critical. Solidly grouting the cells where headers occur ensures that the 'bridge' between the two wythes is stiff and capable of transferring seismic shear forces. [cite: 2, 44]",
-        "takeaway": "Grout at headers ensures wythes act together during seismic sway."
+        "a": "Approve every cavity wall without code review. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "c": "Use steel beam flange width as the grouting rule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Assume all cells remain empty even when reinforcement is present. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts. Supported by masonry-lecture-terms-chb; bsi-masonry-walls.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb; bsi-masonry-walls",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": "While it increases axial capacity, the main seismic concern is shear transfer and wythe continuity. Compressive strength increase is a benefit, but the spacing and placement targets lateral stability. Grouting header cells complements but does not necessarily eliminate the requirement for metal wall ties unless specifically engineered as a bonded wall. In Seismic Zone 4, the integration of grout and reinforcement is critical. Solidly grouting the cells where headers occur ensures that the 'bridge' between the two wythes is stiff and capable of transferring seismic shear forces. [cite: 2, 44] Grout at headers ensures wythes act together during seismic sway.",
-      "code_citation": "NSCP 2015 Section 707.1",
+      "explanation": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb; bsi-masonry-walls.",
+      "code_citation": "masonry-lecture-terms-chb; bsi-masonry-walls",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +182,37 @@
       "model_id": "ALE-STRC-010-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:42:43.750847+00:00",
-      "content_hash": "sha256:acaeaa3106b0a3f5ebb40c18a444eae25c93b6cd5b97cfdaa7543ddb2774eaf5"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:32bc955618818ffb7fdd5f700f318ec9f5ed1786a74abbbf033b9b2fce565ba6",
+      "source_ids": [
+        "masonry-lecture-terms-chb",
+        "bsi-masonry-walls"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "ddee1d6a-c697-4a37-b17e-bc64ab417afa",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "What is the structural difference between cavity wall construction and single-wythe masonry in terms of lateral load resistance?",
+      "text": "What is a wythe or tier in the local masonry lecture?",
       "options": [
         {
           "id": "a",
-          "text": "Single-wythe walls act as a monolithic unit; cavity walls require mechanical headers or ties to prevent wythes from acting independently."
+          "text": "A continuous vertical wall section one masonry unit thick."
         },
         {
           "id": "b",
-          "text": "Cavity walls have inherently greater strength because of the air space insulation, which provides additional thermal resistance and moisture control."
+          "text": "A bolt pretension inspection washer."
         },
         {
           "id": "c",
-          "text": "Headers function identically in both; they are used only for aesthetic texture, and do not contribute to structural integrity or lateral load resistance."
+          "text": "A steel moment connection."
         },
         {
           "id": "d",
-          "text": "Cavity walls do not require ties if the cavity is filled with moisture-resistant insulation, which is assumed to provide sufficient structural stability."
+          "text": "A roof deck diaphragm weld."
         }
       ],
       "correct_option_id": "a",
@@ -183,14 +221,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Air space provides thermal and moisture benefits, but actually complicates structural load transfer.",
-        "c": "Headers in single-wythe walls are purely decorative; in multi-wythe walls, they are structural ties.",
-        "d": "Insulation has no structural bonding capacity; mechanical ties or headers are always required.",
-        "correct": "A single-wythe wall is a solid, continuous mass. A cavity wall consists of two distinct leaves; without headers or ties, each leaf would buckle or sway independently, significantly reducing the total lateral resistance. [cite: 2, 7, 15]",
-        "takeaway": "Composite action in cavity walls requires mechanical connection."
+        "a": "A continuous vertical wall section one masonry unit thick. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "b": "A bolt pretension inspection washer. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "A steel moment connection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "A roof deck diaphragm weld. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "A continuous vertical wall section one masonry unit thick. Supported by masonry-lecture-terms-chb.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": "Air space provides thermal and moisture benefits, but actually complicates structural load transfer. Headers in single-wythe walls are purely decorative; in multi-wythe walls, they are structural ties. Insulation has no structural bonding capacity; mechanical ties or headers are always required. A single-wythe wall is a solid, continuous mass. A cavity wall consists of two distinct leaves; without headers or ties, each leaf would buckle or sway independently, significantly reducing the total lateral resistance. [cite: 2, 7, 15] Composite action in cavity walls requires mechanical connection.",
-      "code_citation": "NSCP 2015 Section 707.2",
+      "explanation": "A continuous vertical wall section one masonry unit thick. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+      "code_citation": "masonry-lecture-terms-chb",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +245,36 @@
       "model_id": "ALE-STRC-010-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:42:43.896862+00:00",
-      "content_hash": "sha256:dc649ce4bc593b1f3a5fc610053ce99ba75a1cdde50ddf0cb6e807c28a01eac7"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:924c10a63c2e7f2a1e6f3d5770cb540a44674c449c606d2c5bac61c749be2424",
+      "source_ids": [
+        "masonry-lecture-terms-chb"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "9f0b64cd-6c2a-4b40-ac80-ee955fe93d39",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "In a running bond pattern for multi-wythe walls, what is the primary structural function of header courses?",
+      "text": "What is the structural idea behind masonry bond in the local lecture?",
       "options": [
         {
           "id": "a",
-          "text": "To increase the horizontal tensile strength of individual courses"
+          "text": "Units are aligned so every vertical joint stacks continuously."
         },
         {
           "id": "b",
-          "text": "To tie parallel wythes together to ensure composite action"
+          "text": "Units are lapped so vertical joints do not fall over each other, helping the work act as a connected mass."
         },
         {
           "id": "c",
-          "text": "To reduce the quantity of mortar required"
+          "text": "Bond means only the paint applied to masonry."
         },
         {
           "id": "d",
-          "text": "To simplify construction by eliminating bed joints"
+          "text": "Bond is a high-strength steel bolt grade."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +283,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Tension in masonry is primarily handled by reinforcement, not the orientation of units.",
-        "c": "Header courses do not significantly reduce mortar consumption.",
-        "d": "Bed joints are always required in standard masonry regardless of the unit orientation.",
-        "correct": "Headers are units laid perpendicular to the wall plane. Their primary job is to provide a mechanical tie between parallel wythes so the wall resists loads as a single structural unit. [cite: 7, 20]",
-        "takeaway": "Headers = Wythe bonding/composite action."
+        "a": "Units are aligned so every vertical joint stacks continuously. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Units are lapped so vertical joints do not fall over each other, helping the work act as a connected mass. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "c": "Bond means only the paint applied to masonry. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Bond is a high-strength steel bolt grade. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Units are lapped so vertical joints do not fall over each other, helping the work act as a connected mass. Supported by masonry-lecture-terms-chb.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": "Tension in masonry is primarily handled by reinforcement, not the orientation of units. Header courses do not significantly reduce mortar consumption. Bed joints are always required in standard masonry regardless of the unit orientation. Headers are units laid perpendicular to the wall plane. Their primary job is to provide a mechanical tie between parallel wythes so the wall resists loads as a single structural unit. [cite: 7, 20] Headers = Wythe bonding/composite action.",
-      "code_citation": "NSCP 2015 Section 707.2; PD 1096 Rule VIII Section 804",
+      "explanation": "Units are lapped so vertical joints do not fall over each other, helping the work act as a connected mass. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+      "code_citation": "masonry-lecture-terms-chb",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +307,36 @@
       "model_id": "ALE-STRC-010-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:39:34.893328+00:00",
-      "content_hash": "sha256:8e5d00214ea3fc29f0a5820c9046276ce0e811fa6d0efa4723f26891eae7627b"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:c022012e8ab1b9fd24951d517362b6b7e62fab392f39b47ad3f961269e109fc4",
+      "source_ids": [
+        "masonry-lecture-terms-chb"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "0b57197a-6c6b-4fd3-8f0e-761841149ef3",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "Compare English bond and Flemish bond in terms of their mechanical bonding capacity for multi-wythe walls.",
+      "text": "Which comparison of English bond and Flemish bond is source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "English bond provides more frequent header-ties (alternating header/stretcher courses) than Flemish bond."
+          "text": "English bond alternates courses of stretchers and headers; Flemish bond alternates headers and stretchers in each course."
         },
         {
           "id": "b",
-          "text": "Flemish bond is structurally superior to English bond because it uses more mortar, which is believed to enhance the wall's overall stability"
+          "text": "English bond is a steel flange weld and Flemish bond is a bolt hole."
         },
         {
           "id": "c",
-          "text": "Both are inferior to stack bond in Seismic Zone 4, where lateral forces are a significant concern for structural integrity"
+          "text": "Both are exact NSCP seismic section numbers captured in this batch."
         },
         {
           "id": "d",
-          "text": "Running bond is the only pattern allowed in the Philippines, according to local building regulations"
+          "text": "Both require no lapping of masonry units."
         }
       ],
       "correct_option_id": "a",
@@ -283,14 +345,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Mortar quantity does not dictate structural superiority; the arrangement of units (bond) does.",
-        "c": "Stack bond is the weakest of all patterns and is restricted in Zone 4.",
-        "d": "While Running Bond is the most common, English and Flemish bonds are legally permissible and structurally sound.",
-        "correct": "English bond consists of alternating courses of all-headers and all-stretchers, resulting in a high density of transverse ties. Flemish bond alternates headers and stretchers within the same course, providing strong but less frequent bonding than the English bond. [cite: 7, 13]",
-        "takeaway": "English Bond = maximum transverse header frequency."
+        "a": "English bond alternates courses of stretchers and headers; Flemish bond alternates headers and stretchers in each course. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "b": "English bond is a steel flange weld and Flemish bond is a bolt hole. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "Both are exact NSCP seismic section numbers captured in this batch. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Both require no lapping of masonry units. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "English bond alternates courses of stretchers and headers; Flemish bond alternates headers and stretchers in each course. Supported by masonry-lecture-terms-chb.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": "Mortar quantity does not dictate structural superiority; the arrangement of units (bond) does. Stack bond is the weakest of all patterns and is restricted in Zone 4. While Running Bond is the most common, English and Flemish bonds are legally permissible and structurally sound. English bond consists of alternating courses of all-headers and all-stretchers, resulting in a high density of transverse ties. Flemish bond alternates headers and stretchers within the same course, providing strong but less frequent bonding than the English bond. [cite: 7, 13] English Bond = maximum transverse header frequency.",
-      "code_citation": "NSCP 2015 Section 702; PD 1096 Rule VIII Section 804",
+      "explanation": "English bond alternates courses of stretchers and headers; Flemish bond alternates headers and stretchers in each course. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+      "code_citation": "masonry-lecture-terms-chb",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +369,36 @@
       "model_id": "ALE-STRC-010-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-05-06T15:42:43.263657+00:00",
-      "content_hash": "sha256:a550e2cc851afd2c7d1e51b65273a8ae2d4e21fadb054ae3ece72f4f145b0c16"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:7cdfaf4b936b45cba6d3777c723fc0ea8865f3bb57baef4335e18c80cbd7693d",
+      "source_ids": [
+        "masonry-lecture-terms-chb"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "7f30a350-0792-44c3-8b0f-ff508684f01f",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "A continuous vertical section of masonry one unit thick is called a ___. In a cavity wall, there are typically two of these parallel sections separated by an air space.",
+      "text": "A continuous vertical section of masonry one unit thick is called a ___.",
       "options": [
         {
           "id": "a",
-          "text": "Cell"
+          "text": "Bolt pitch."
         },
         {
           "id": "b",
-          "text": "Wythe"
+          "text": "Wythe or tier."
         },
         {
           "id": "c",
-          "text": "Course"
+          "text": "Web stiffener."
         },
         {
           "id": "d",
-          "text": "Header"
+          "text": "Rigid frame."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +407,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cells are the voids within a Concrete Hollow Block (CHB).",
-        "c": "A course is a continuous horizontal layer of masonry units.",
-        "d": "A header is a masonry unit laid with its longest dimension perpendicular to the wall face.",
-        "correct": "A wythe is a continuous vertical section of masonry one unit in thickness. Cavity walls consist of two wythes (inner and outer) separated by a cavity. [cite: 7, 15]",
-        "takeaway": "Wythe = vertical section; Course = horizontal layer."
+        "a": "Bolt pitch. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Wythe or tier. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "c": "Web stiffener. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Rigid frame. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Wythe or tier. Supported by masonry-lecture-terms-chb.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 702",
+      "explanation": "Wythe or tier. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+      "code_citation": "masonry-lecture-terms-chb",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +431,36 @@
       "model_id": "ALE-STRC-010-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6053cf655621d0a9c1270b5c78dab7ab540d27c53ac3c94d0e9dbcf625d6fc65"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:81469c6a967d2be3e2681d0b30271d25738a80e941c1ce2ca04a930ce888409f",
+      "source_ids": [
+        "masonry-lecture-terms-chb"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "f75f1764-4c73-430a-b061-769779596de2",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "A masonry inspector in the Philippines finds a two-wythe wall relying solely on mortar in the collar joint for bonding, with no header units or metal ties. Does this comply with Philippine codes?",
+      "text": "A two-wythe wall question asks whether the detail complies with Philippine code. What is the source-safe answer style?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, if the mortar is high-strength Type M or S, which can provide sufficient bonding strength in certain conditions"
+          "text": "Declare compliance because two wythes are visible."
         },
         {
           "id": "b",
-          "text": "No, both PD 1096 and NSCP 2015 require mechanical bonding via headers or ties for multi-wythe walls."
+          "text": "Do not claim code compliance without the applicable code source; use the lecture only for terms such as wythe, bond, header, and stretcher."
         },
         {
           "id": "c",
-          "text": "Yes, if the wall is a non-bearing partition, as structural requirements are less stringent"
+          "text": "Use AISC bolt spacing to approve masonry."
         },
         {
           "id": "d",
-          "text": "Yes, but only in Seismic Zone 2, where seismic forces are considered moderate and less demanding"
+          "text": "Ignore bond and reinforcement because masonry is decorative only."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +469,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mortar grade increases local compressive strength but does not provide the perpendicular 'tie' required for composite action.",
-        "c": "Even non-bearing walls must resist out-of-plane wind and seismic forces; bonding is still required.",
-        "d": "High seismic risk in the Philippines (Zone 4) makes these mechanical ties absolutely mandatory for safety.",
-        "correct": "Per NSCP 2015 Section 707.2.2 and PD 1096 Rule VIII Section 804, multi-wythe walls must be bonded with masonry headers or non-corrosive metal ties. Mortar adhesion alone is insufficient for structural bonding in multi-story or seismic applications. [cite: 44]",
-        "takeaway": "Mortar alone is not a structural tie between wythes."
+        "a": "Declare compliance because two wythes are visible. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Do not claim code compliance without the applicable code source; use the lecture only for terms such as wythe, bond, header, and stretcher. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "c": "Use AISC bolt spacing to approve masonry. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Ignore bond and reinforcement because masonry is decorative only. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Do not claim code compliance without the applicable code source; use the lecture only for terms such as wythe, bond, header, and stretcher. Supported by masonry-lecture-terms-chb; bsi-masonry-walls.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb; bsi-masonry-walls",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VIII; NSCP 2015 Section 707.2",
+      "explanation": "Do not claim code compliance without the applicable code source; use the lecture only for terms such as wythe, bond, header, and stretcher. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb; bsi-masonry-walls.",
+      "code_citation": "masonry-lecture-terms-chb; bsi-masonry-walls",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +493,37 @@
       "model_id": "ALE-STRC-010-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f198994d13550df47e09a7bd16b3591a787281f3aeadcf2cfaa3c75bc9f03691"
+      "updated_at": "2026-05-14T03:03:42.111Z",
+      "content_hash": "sha256:0a0a207daf44e498c8e2765413bc67adf7f0342cd0b4a59031cee7feed338149",
+      "source_ids": [
+        "masonry-lecture-terms-chb",
+        "bsi-masonry-walls"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "b64a1601-0c37-4a02-a85c-1fafc63a8275",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "According to the NSCP 2015, the air space (cavity) in a cavity wall must comply with which of the following dimension limits?",
+      "text": "A question asks for NSCP cavity air-space limits. What did Batch 147 capture?",
       "options": [
         {
           "id": "a",
-          "text": "Minimum 25 mm to maximum 75 mm"
+          "text": "A complete NSCP cavity table with section number."
         },
         {
           "id": "b",
-          "text": "Minimum 50 mm to maximum 115 mm"
+          "text": "No NSCP cavity dimension table; the exact limit must be verified from the applicable code source."
         },
         {
           "id": "c",
-          "text": "Minimum 100 mm to maximum 200 mm"
+          "text": "An A325 bolt pretension table."
         },
         {
           "id": "d",
-          "text": "Any dimension provided it is filled with grout"
+          "text": "A rule that cavities never need source verification."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +532,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "25 mm is too narrow for proper moisture drainage and tie placement.",
-        "c": "100 mm is near the maximum limit; 200 mm is too wide for standard wall ties to act effectively.",
-        "d": "If the cavity is filled with grout, it is no longer defined as a cavity wall but as a 'grouted multi-wythe wall.'",
-        "correct": "NSCP 2015 Section 707.1.4.2 explicitly states that the minimum thickness of the cavity shall be 50 mm and the maximum thickness shall be 115 mm. [cite: 44]",
-        "takeaway": "NSCP Cavity Limits: 50 mm to 115 mm."
+        "a": "A complete NSCP cavity table with section number. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "No NSCP cavity dimension table; the exact limit must be verified from the applicable code source. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "c": "An A325 bolt pretension table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "A rule that cavities never need source verification. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "No NSCP cavity dimension table; the exact limit must be verified from the applicable code source. Supported by masonry-lecture-terms-chb.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 707.1.4.2",
+      "explanation": "No NSCP cavity dimension table; the exact limit must be verified from the applicable code source. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+      "code_citation": "masonry-lecture-terms-chb",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +556,36 @@
       "model_id": "ALE-STRC-010-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a24b0a27cb33fdd3f9f762c048e6dd35460164c24ae907bc38a6bc3fdad58dea"
+      "updated_at": "2026-05-14T03:03:42.112Z",
+      "content_hash": "sha256:46a13541ddb3bd880901ab26c74c21056f05a18b5a62c4271f82d81f670d936b",
+      "source_ids": [
+        "masonry-lecture-terms-chb"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "f1569344-0da1-4a0b-abad-ca1f8509ed83",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "Which joint type separates two parallel wythes in a cavity wall and may be filled with mortar, grout, or left as air space?",
+      "text": "Which local-source term best answers a question about a one-unit-thick vertical wall section?",
       "options": [
         {
           "id": "a",
-          "text": "Bed joint, typically used to provide horizontal alignment and support for masonry units"
+          "text": "Collar-joint code table."
         },
         {
           "id": "b",
-          "text": "Collar joint"
+          "text": "Wythe or tier."
         },
         {
           "id": "c",
-          "text": "Head joint, which is primarily vertical and helps in aligning the masonry units vertically"
+          "text": "Bolt edge distance."
         },
         {
           "id": "d",
-          "text": "Shear joint, designed to resist lateral forces and provide stability in the structure"
+          "text": "Steel flange weld."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +594,20 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Bed joints are the horizontal layers of mortar on which masonry units are laid.",
-        "c": "Head joints are the vertical mortar joints between ends of masonry units in the same course.",
-        "d": "Shear joint is not a standard masonry definition used for the space between wythes.",
-        "correct": "The collar joint is the longitudinal vertical space between wythes of masonry units. Per PD 1096, it may be filled with mortar or grout to create a composite wall or left as an air space in a cavity wall. [cite: 44]",
-        "takeaway": "Collar joint = vertical space between wythes."
+        "a": "Collar-joint code table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Wythe or tier. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+        "c": "Bolt edge distance. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Steel flange weld. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Wythe or tier. Supported by masonry-lecture-terms-chb.",
+        "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "masonry-lecture-terms-chb",
+        "checked_sources": [
+          "masonry-lecture-terms-chb",
+          "bsi-masonry-walls"
+        ]
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Revised IRR, Rule VIII; NSCP 2015 Section 702",
+      "explanation": "Wythe or tier. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+      "code_citation": "masonry-lecture-terms-chb",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +618,14 @@
       "model_id": "ALE-STRC-010-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f157788aa0244218ddcf91dbc1076d8111e737162528e7858bbe3a89092b93c6"
+      "updated_at": "2026-05-14T03:03:42.112Z",
+      "content_hash": "sha256:57a668b5216eaa010633dd163da703bdd8b175b129e972fb26ae4fb3a8cbbae5",
+      "source_ids": [
+        "masonry-lecture-terms-chb"
+      ],
+      "cluster_id": "lea-strc-010-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

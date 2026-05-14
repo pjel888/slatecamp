@@ -1,44 +1,63 @@
 {
+  "batch": 147,
+  "batch_id": "source-audited-batch-147-local-first",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-147-reservation-manifest.json",
   "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:34961382472d10a6edae938256016561a6f844774472f5d4178c596c965e3c84",
-  "source_count": 3,
+  "cluster_id": "lea-strc-008-01",
+  "slug": "lea-strc-008-01-core-concept",
+  "source_strategy": "local_first_fixed_manifest",
+  "source_count": 1,
+  "sources_hash": "sha256:fef0d6cbd0c3a2ad03cb6baad8d31be2dad1e944580dcef3aae41998e93a65f4",
   "sources": [
     {
-      "source_id": "39267204-d70f-4511-af6f-32b275eedaa1",
-      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
-      "label": "AISC 360-16: Specification for Structural Steel Buildings (Section E3: Slenderness Limits)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "799777f6-bfad-4b7d-a244-9539b9e8bc7a",
-      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
-      "label": "AISC Steel Construction Manual, 15th ed. (2017), Part 1: Dimensions and Properties",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "79802d81-5719-4a11-a55f-e6c88d0033fc",
-      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
-      "label": "Philippine Association of Structural Engineers (PASE) Guidelines on Structural Steel Design (aligned with AISC 360)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "id": "bsi-steel-members",
+      "title": "Building Structures Illustrated - structural steel members and framing",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/bsi-steel-members.source-capture.md",
+      "local_capture_sha256": "sha256:9bf2ec152a2e2197d3bd483c7381c6f9d8c8afffaa1285b0ceeaf71156512030",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/bsi-steel-members.refined.md",
+      "refined_capture_sha256": "sha256:5848a4460b01c6ca95d57b2ece7029e74b0e7b62f74d40277ac72ca141dcd964",
+      "locator": "refined markdown lines 827-840, 1016-1022, 2002-2012, 2613-2633, 2781, 3209-3216, 3545-3549, 5960-5986",
+      "safe_claims": [
+        "Structural steel girders, beams, trusses, and columns are used to construct skeleton frames, and steel is normally cut, shaped, and drilled in a fabrication shop.",
+        "Wide-flange W shapes have largely superseded classic S shapes, and beams may also be channels, structural tubing, or composite sections.",
+        "Steel framing is efficient when columns support a regular grid of girders, beams, and joists.",
+        "The general objective is to use the lightest steel section that resists bending and shear within allowable stress limits and without excessive deflection.",
+        "Lateral buckling can be induced by compressive stresses in a slender portion, and increasing steel beam flange width increases resistance to lateral buckling.",
+        "Connections usually use transitional elements such as steel angles, tees, or plates, and actual connections are more often bolted or welded.",
+        "Bolted connections are point connections, welded connections are line connections, pin joints allow rotation, and rigid or fixed joints restrain rotation and translation.",
+        "Steel column-beam connections can be made moment-resistant by bolting or welding beam flanges to the column.",
+        "Braced frames use vertical trusses with diagonal bracing to increase stiffness and moderate drift; they can be simply connected with pin joints.",
+        "Web stiffeners are required where concentrated loads might cripple joist webs, such as at joist ends or interior supports."
+      ],
+      "exclusions": [
+        "This capture does not supply AISC KL/r limit values.",
+        "This capture does not supply ASTM grade yield or tensile strengths.",
+        "This capture does not supply compactness limits, section property tables, or steel member capacity equations."
+      ],
+      "use_limits": [
+        "No local readable source in this batch was used to restore AISC KL/r limit values.",
+        "No local readable source in this batch was used to restore ASTM steel grade Fy or Fu values.",
+        "No local readable source in this batch was used to restore compactness limits, section-property tables, or steel member capacity equations."
+      ]
     }
+  ],
+  "source_candidates_checked": [
+    {
+      "source_id": "aisc-steel-manual-13th-raw",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+      "status": "checked_raw_hash_only_not_used_for_exact_claims",
+      "reason": "Local raw PDF exists, but no reliable readable local capture was available in this run; exact AISC slenderness, grade, hole, spacing, edge-distance, and pretension values were not restored."
+    }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local readable source in this batch was used to restore AISC KL/r limit values.",
+    "No local readable source in this batch was used to restore ASTM steel grade Fy or Fu values.",
+    "No local readable source in this batch was used to restore compactness limits, section-property tables, or steel member capacity equations."
   ]
 }

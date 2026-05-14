@@ -1,0 +1,38 @@
+{
+  "batch": 147,
+  "batch_id": "source-audited-batch-147-local-first",
+  "status": "passed_local_validation_git_handoff_pending",
+  "articles": [
+    {
+      "cluster_id": "lea-strc-008-01",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "title": "Structural Steel Members and Load Paths",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-008-02",
+      "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+      "title": "Bolted Steel Connections and Source Limits",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    },
+    {
+      "cluster_id": "lea-strc-010-01",
+      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+      "title": "Masonry Construction Terms and CHB Source Boundaries",
+      "source_ids": [
+        "masonry-lecture-terms-chb",
+        "bsi-masonry-walls"
+      ],
+      "question_count": 10,
+      "real_world_scenario_status": "included"
+    }
+  ]
+}

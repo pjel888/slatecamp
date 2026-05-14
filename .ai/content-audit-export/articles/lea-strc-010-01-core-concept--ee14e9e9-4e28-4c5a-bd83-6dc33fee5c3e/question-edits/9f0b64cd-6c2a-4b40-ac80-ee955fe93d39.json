@@ -1,0 +1,26 @@
+{
+  "batch": 147,
+  "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+  "cluster_id": "lea-strc-010-01",
+  "question_id": "9f0b64cd-6c2a-4b40-ac80-ee955fe93d39",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:2c8818138b6b60fe9573ab1ea38c09f83dce56024a0352f5293014db3279d7e8",
+  "after_hash": "sha256:c022012e8ab1b9fd24951d517362b6b7e62fab392f39b47ad3f961269e109fc4",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "masonry-lecture-terms-chb"
+  ],
+  "rationale": {
+    "a": "Units are aligned so every vertical joint stacks continuously. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Units are lapped so vertical joints do not fall over each other, helping the work act as a connected mass. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+    "c": "Bond means only the paint applied to masonry. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Bond is a high-strength steel bolt grade. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Units are lapped so vertical joints do not fall over each other, helping the work act as a connected mass. Supported by masonry-lecture-terms-chb.",
+    "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "masonry-lecture-terms-chb",
+    "checked_sources": [
+      "masonry-lecture-terms-chb",
+      "bsi-masonry-walls"
+    ]
+  }
+}

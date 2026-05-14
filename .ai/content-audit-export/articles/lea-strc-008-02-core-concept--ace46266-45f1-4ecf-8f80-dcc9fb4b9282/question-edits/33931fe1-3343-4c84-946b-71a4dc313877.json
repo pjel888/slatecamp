@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "33931fe1-3343-4c84-946b-71a4dc313877",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:50672f06708bfc9f7ede267457dcbd62a1da54fe81e734a69ab5443250d129bf",
+  "after_hash": "sha256:d1f2666ac384a6d2b981bfa86b6610c9dbce990b137a004fac407a65365487cc",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "That bolted connections are point connections. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "c": "That welded connections are line connections. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "That plates, tees, and angles can be transitional elements. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

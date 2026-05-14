@@ -1,0 +1,135 @@
+{
+  "batch": 147,
+  "batch_id": "source-audited-batch-147-local-first",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-147-reservation-manifest.json",
+  "cluster_id": "lea-strc-008-02",
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "source_strategy": "local_first_fixed_manifest",
+  "source_count": 1,
+  "sources": [
+    {
+      "id": "bsi-steel-connections",
+      "title": "Building Structures Illustrated - bolted, welded, pin, and rigid connection concepts",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/bsi-steel-connections.source-capture.md",
+      "local_capture_sha256": "sha256:c8d0578070a9823958e1a47c7145859593f0c784d9360a6897d062af115b55a6",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/bsi-steel-connections.refined.md",
+      "refined_capture_sha256": "sha256:6c4c1b8a1252a9b51efac8f5b6f774ff231c5007c59cafe1f1767f1fa77e081e",
+      "locator": "refined markdown lines 827-840, 2617-2618, 3209-3216, 5984-5986",
+      "safe_claims": [
+        "Structural connections can be categorized geometrically as point bolted connections, line welded connections, and plane glued connections.",
+        "Connections usually use transitional elements such as steel angles, tees, or plates.",
+        "Pin or hinge joints allow rotation but resist translation, while rigid or fixed joints restrain rotation and translation and provide force and moment resistance.",
+        "Steel column-beam connections can be made moment-resistant by bolting or welding the beam flanges to the column.",
+        "Braced frames can use simply connected pin joints, making their fabrication and erection more economical than moment-resisting connections.",
+        "Eccentrically braced frames introduce bending and shear into the frame, lowering stiffness but increasing ductility."
+      ],
+      "exclusions": [
+        "This capture does not supply A307, A325, or A490 bolt strength values.",
+        "This capture does not supply bolt-hole clearances, minimum edge distances, pitch limits, pretension values, or inspection methods.",
+        "This capture does not supply AISC Chapter J section-number support."
+      ],
+      "use_limits": [
+        "No local readable source in this batch was used to restore A307, A325, or A490 strength values.",
+        "No local readable source in this batch was used to restore bolt-hole clearances, edge-distance tables, pitch limits, or pretension values.",
+        "No local readable source in this batch was used to restore turn-of-nut, calibrated-wrench, or DTI inspection requirements."
+      ]
+    }
+  ],
+  "source_candidates_checked": [
+    {
+      "source_id": "aisc-steel-manual-13th-raw",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+      "status": "checked_raw_hash_only_not_used_for_exact_claims",
+      "reason": "Local raw PDF exists, but no reliable readable local capture was available in this run; exact AISC slenderness, grade, hole, spacing, edge-distance, and pretension values were not restored."
+    }
+  ],
+  "normalized_sha256": "sha256:412b0599fdcfce8adcc625ba168af8b7cdf056fa7a9fe4c581dc2063adb3d87d",
+  "candidate_sha256": "sha256:412b0599fdcfce8adcc625ba168af8b7cdf056fa7a9fe4c581dc2063adb3d87d",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "45785298-2eb2-432e-81a7-2008ce8dbe69",
+      "content_hash": "sha256:a1beb18286a4b9e848213b83e29df58f32358955efa6a318211a82277e4ae829"
+    },
+    {
+      "question_id": "4fc347e2-0ca6-4da1-b78a-14748dafc0e6",
+      "content_hash": "sha256:815efa7d1a47f13f0e818f1246b6f8bddc32721aecaa97b8f23d534cba507448"
+    },
+    {
+      "question_id": "c8bf11ea-5482-4c4c-90f3-3ecce3f308cb",
+      "content_hash": "sha256:6ddfcf5e111e40260267e52c9046ed69dc63a730a0d643a32a4cae86545589b1"
+    },
+    {
+      "question_id": "2bd18980-2efa-4bd2-95a7-a12adf9c1b6f",
+      "content_hash": "sha256:6679e421bbb5900d938947709e07faa427a3adeed68c1197eb5e6048d621e853"
+    },
+    {
+      "question_id": "c358fbe2-7456-4cd7-8c6e-cdf46647abde",
+      "content_hash": "sha256:05c0815f67e117524c61cf9d5d6bc1a2bc924f5a49c79153c913b56d95c6d245"
+    },
+    {
+      "question_id": "8ed7c7fa-7546-48bf-9433-209daa8b02d1",
+      "content_hash": "sha256:c84e66ddf5759f239903c9ef5c2ecdbd1a3d28765289e2275f8d50e64a8a10c3"
+    },
+    {
+      "question_id": "b48bcc5c-ac35-4a83-9e77-ca24a870f1d1",
+      "content_hash": "sha256:8d4bc17c84d3f82bc2522d792d98fa04ed190ea7c0fa174ae0a959e0dd3a1a17"
+    },
+    {
+      "question_id": "e102662c-b4a2-4417-8691-78f1b913d970",
+      "content_hash": "sha256:c4a32922e41cbb50cfafde6fd365dd3a7fb6a5d292ccfcfcb4a413cb91ac09ff"
+    },
+    {
+      "question_id": "ca5640b7-78a3-41f4-b579-29e7cd295478",
+      "content_hash": "sha256:0856fb322749f9938fbc17024a0b752e4c7bc7dd76287d28805b901473995364"
+    },
+    {
+      "question_id": "33931fe1-3343-4c84-946b-71a4dc313877",
+      "content_hash": "sha256:d1f2666ac384a6d2b981bfa86b6610c9dbce990b137a004fac407a65365487cc"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, table, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local readable source in this batch was used to restore A307, A325, or A490 strength values.",
+    "No local readable source in this batch was used to restore bolt-hole clearances, edge-distance tables, pitch limits, or pretension values.",
+    "No local readable source in this batch was used to restore turn-of-nut, calibrated-wrench, or DTI inspection requirements."
+  ],
+  "blocked_residuals_not_edited": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "ca5640b7-78a3-41f4-b579-29e7cd295478",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:6170bc842bc3d2e315a9e170f60eb60bc8a03100ead296bc3b91f49d37d5faaf",
+  "after_hash": "sha256:0856fb322749f9938fbc17024a0b752e4c7bc7dd76287d28805b901473995364",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "The masonry lecture bond-pattern list. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "The applicable bolting standard or project specification, because this batch captured connection concepts but not installation sequence rules. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "c": "The article title alone. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "No source, because installation sequence never affects bolted work. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "The applicable bolting standard or project specification, because this batch captured connection concepts but not installation sequence rules. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "511d343c-b827-43fd-ae79-373d6ac2f6e6",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ef83ad2162c3f5381b0e9297d05d6cca063549013901e6d91f35d9c0b7f5cce9",
+  "after_hash": "sha256:18008048fd882507a31a6a1080f4c894f524c33f9f7512de45b646f40495da55",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "W shape numbers automatically prove exact capacity without a table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "c": "W shapes are masonry wythes. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "W shapes never need connection checks. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "batch": 147,
+  "batch_id": "source-audited-batch-147-local-first",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-147-reservation-manifest.json",
+  "cluster_id": "lea-strc-010-01",
+  "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+  "source_strategy": "local_first_fixed_manifest",
+  "source_count": 2,
+  "sources": [
+    {
+      "id": "masonry-lecture-terms-chb",
+      "title": "Masonry Lecture - masonry terms, bonds, and CHB construction notes",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+      "raw_artifact_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+      "refined_artifact_sha256": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/masonry-lecture-terms-chb.source-capture.md",
+      "local_capture_sha256": "sha256:4a726707980fe307f5be7ec1eb33a9a632e5a57c8d7e2702585c2164e37a4f3d",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/masonry-lecture-terms-chb.refined.md",
+      "refined_capture_sha256": "sha256:29d5d4804ddf16218291dc263df397c82e05a6efa1102bb555c17d2841a4e9f9",
+      "locator": "refined markdown lines 109-129, 291-293, 310-318, 353-361",
+      "safe_claims": [
+        "Masonry is built-up construction or a combination of clay, concrete, or stone set in mortar, or plain concrete.",
+        "A bed is the horizontal surface on which stones or bricks lie in courses, and a course is a continuous layer of masonry units.",
+        "A wythe or tier is each continuous vertical section of wall one masonry unit thick.",
+        "Bond is the connection formed by lapping masonry units to prevent vertical joints from falling over each other.",
+        "A stretcher is laid lengthwise of a wall; a header extends over the thickness of a wall; a heading course is all headers.",
+        "Common bond consists of five stretcher courses and then a header course.",
+        "English bond consists of alternate courses of stretchers and headers.",
+        "Flemish bond consists of alternate headers and stretchers in each course.",
+        "Concrete hollow block is a hollow masonry unit with two or three cells or cores.",
+        "The lecture lists common CHB sizes as 100 mm, 150 mm, and 200 mm thick by 200 mm high by 400 mm long.",
+        "The lecture states CHB should be laid on a full bed of mortar with horizontal and vertical joints 10 mm thick.",
+        "The lecture states reinforcement intersections should be tied, reinforced cells filled with cement mortar, lintel or beam block course every twelfth course, and column stiffener every 4.80 m length."
+      ],
+      "exclusions": [
+        "This capture does not supply NSCP section numbers.",
+        "This capture does not supply PD 1096 masonry section numbers.",
+        "This capture does not supply a code-backed seismic-zone rule for stack bond or cavity-wall air-space limits."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore NSCP masonry section numbers.",
+        "No local source in this batch was used to restore PD 1096 masonry section numbers.",
+        "No local source in this batch was used to publish a code-backed stack-bond seismic rule or cavity-wall air-space limit."
+      ]
+    },
+    {
+      "id": "bsi-masonry-walls",
+      "title": "Building Structures Illustrated - masonry walls, CMU, reinforcement, and load path",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/bsi-masonry-walls.source-capture.md",
+      "local_capture_sha256": "sha256:ee0fb162aba84c414c679a43b9643cc686bf89babbe9e78a9a733f6a7a98c4cb",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/bsi-masonry-walls.refined.md",
+      "refined_capture_sha256": "sha256:524d8d448149556a93580a9cc791453e5b1e046364a09a145c40c2766d686738",
+      "locator": "refined markdown lines 3648-3655, 3699-3715, 3735-3738",
+      "safe_claims": [
+        "A bearing wall supports imposed loads and transmits compressive forces through the wall plane to the foundation.",
+        "Bearing walls should be continuous from floor to floor and vertically aligned from roof to foundation.",
+        "Masonry construction uses units of stone, brick, or concrete block with mortar to form durable, fire-resistant walls efficient in compression.",
+        "The most common structural masonry units are precast concrete masonry units or concrete block.",
+        "Standard CMU blocks have two or three cores.",
+        "Mortar joints vary from 1/4 inch to 1/2 inch, typically 3/8 inch or 10 mm.",
+        "Masonry bearing walls should be reinforced in seismic zones by embedding steel bars in thickened joints or cavities with grout for greater strength and lateral resistance.",
+        "A strong bond should develop between reinforcing steel, grout, and masonry units."
+      ],
+      "exclusions": [
+        "This capture does not supply local Philippine code section numbers for masonry.",
+        "This capture does not supply complete engineered wall capacity tables for publication."
+      ],
+      "use_limits": [
+        "No local source in this batch was used to restore NSCP masonry section numbers.",
+        "No local source in this batch was used to restore PD 1096 masonry section numbers.",
+        "No local source in this batch was used to publish a code-backed stack-bond seismic rule or cavity-wall air-space limit."
+      ]
+    }
+  ],
+  "source_candidates_checked": [
+    {
+      "source_id": "aisc-steel-manual-13th-raw",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+      "status": "checked_raw_hash_only_not_used_for_exact_claims",
+      "reason": "Local raw PDF exists, but no reliable readable local capture was available in this run; exact AISC slenderness, grade, hole, spacing, edge-distance, and pretension values were not restored."
+    }
+  ],
+  "normalized_sha256": "sha256:16de10f4d67cf1e51dc70bb754cc6c7f340d8aff6b306059db5d30221f1976f1",
+  "candidate_sha256": "sha256:16de10f4d67cf1e51dc70bb754cc6c7f340d8aff6b306059db5d30221f1976f1",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "9e85e893-bcbc-4d2e-8af3-3114c5458738",
+      "content_hash": "sha256:666bcd8e6fdcd87f0cdf5e94a941099ea07d78b35ce89f25aa54d4732504e6c3"
+    },
+    {
+      "question_id": "12a09035-e746-41da-b8f4-7cc4be9eabc7",
+      "content_hash": "sha256:b00ae2adf4d8fb1f07aa0b57ca203acc9758eaa08df98f56ba8f882db22033b7"
+    },
+    {
+      "question_id": "cef523d7-e9b8-42c2-84ac-c8c890c9cae9",
+      "content_hash": "sha256:32bc955618818ffb7fdd5f700f318ec9f5ed1786a74abbbf033b9b2fce565ba6"
+    },
+    {
+      "question_id": "ddee1d6a-c697-4a37-b17e-bc64ab417afa",
+      "content_hash": "sha256:924c10a63c2e7f2a1e6f3d5770cb540a44674c449c606d2c5bac61c749be2424"
+    },
+    {
+      "question_id": "9f0b64cd-6c2a-4b40-ac80-ee955fe93d39",
+      "content_hash": "sha256:c022012e8ab1b9fd24951d517362b6b7e62fab392f39b47ad3f961269e109fc4"
+    },
+    {
+      "question_id": "0b57197a-6c6b-4fd3-8f0e-761841149ef3",
+      "content_hash": "sha256:7cdfaf4b936b45cba6d3777c723fc0ea8865f3bb57baef4335e18c80cbd7693d"
+    },
+    {
+      "question_id": "7f30a350-0792-44c3-8b0f-ff508684f01f",
+      "content_hash": "sha256:81469c6a967d2be3e2681d0b30271d25738a80e941c1ce2ca04a930ce888409f"
+    },
+    {
+      "question_id": "f75f1764-4c73-430a-b061-769779596de2",
+      "content_hash": "sha256:0a0a207daf44e498c8e2765413bc67adf7f0342cd0b4a59031cee7feed338149"
+    },
+    {
+      "question_id": "b64a1601-0c37-4a02-a85c-1fafc63a8275",
+      "content_hash": "sha256:46a13541ddb3bd880901ab26c74c21056f05a18b5a62c4271f82d81f670d936b"
+    },
+    {
+      "question_id": "f1569344-0da1-4a0b-abad-ca1f8509ed83",
+      "content_hash": "sha256:57a668b5216eaa010633dd163da703bdd8b175b129e972fb26ae4fb3a8cbbae5"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, table, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore NSCP masonry section numbers.",
+    "No local source in this batch was used to restore PD 1096 masonry section numbers.",
+    "No local source in this batch was used to publish a code-backed stack-bond seismic rule or cavity-wall air-space limit."
+  ],
+  "blocked_residuals_not_edited": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    }
+  ]
+}

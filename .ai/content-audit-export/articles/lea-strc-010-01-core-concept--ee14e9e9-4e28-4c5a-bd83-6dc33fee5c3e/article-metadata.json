@@ -1,35 +1,73 @@
 {
   "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
-  "title": "Masonry Construction",
+  "title": "Masonry Construction Terms and CHB Source Boundaries",
   "slug": "lea-strc-010-01-core-concept",
   "subject_label": "Structural Conceptualization",
   "difficulty_label": null,
   "status": "published",
   "read_time": null,
-  "reviewed_at": null,
-  "reviewed_by": null,
-  "reviewer_comments": null,
+  "reviewed_at": "2026-05-14T03:03:42.112Z",
+  "reviewed_by": "codex-source-audited-batch-147-local-first",
+  "reviewer_comments": "Batch 147 local-first source-audited rewrite constrained to checked local structural source artifacts; no Supabase mutation.",
   "created_at": "2026-03-23T19:27:06.758398+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:52:47.873005+00:00",
-  "updated_by": null,
-  "updated_note": null,
-  "content_hash": "sha256:5cbde8940dfd48668c3977c37853c28e602964f56f53e448993f07cac80d5536",
-  "original_content_hash": "sha256:5cbde8940dfd48668c3977c37853c28e602964f56f53e448993f07cac80d5536",
-  "normalized_content_hash": "sha256:5cbde8940dfd48668c3977c37853c28e602964f56f53e448993f07cac80d5536",
-  "candidate_content_hash": null,
+  "updated_at": "2026-05-14T03:03:42.112Z",
+  "updated_by": "codex-source-audited-batch-147-local-first",
+  "updated_note": "Batch 147 local-first source-audited article and linked-question rewrite; no Supabase mutation.",
+  "content_hash": "sha256:461c958c5fde8e3dc112db81979f464a5a4f3daa8fe3d5179add6e2775d834c2",
+  "original_content_hash": "sha256:461c958c5fde8e3dc112db81979f464a5a4f3daa8fe3d5179add6e2775d834c2",
+  "normalized_content_hash": "sha256:16de10f4d67cf1e51dc70bb754cc6c7f340d8aff6b306059db5d30221f1976f1",
+  "candidate_content_hash": "sha256:16de10f4d67cf1e51dc70bb754cc6c7f340d8aff6b306059db5d30221f1976f1",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:79a88fdc0758155987d6fa3601deeb33eb2787cbf38c877be7152f76ffc6aaa9",
-  "sources_hash": "sha256:b08c8b2edc5da233ed0e8bd864d7b3496df51b068967bb6ef7617932ba807926",
+  "linked_questions_hash": "sha256:b854bf1621312144b96c0f773711caf70e6c5c72a45bc85ff1e3d6a1e6373334",
+  "sources_hash": "sha256:16814d1ab91942a1cf8ddcf380046aca3c8d93ab31288a6193dd6576ccdb4a0e",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:15.592Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
   "export_version": "content-roundtrip-v1",
   "source_table": "wiki_articles",
-  "source_count": 1,
+  "source_count": 2,
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "batch": 147,
+  "audit_batch": 147,
+  "audit_baseline": "5b9cf4943b",
+  "source_audit_status": "source_audited_local_first",
+  "source_audit_batch_id": "source-audited-batch-147-local-first",
+  "source_audit_primary_source_id": "masonry-lecture-terms-chb",
+  "source_audit_source_count": 2,
+  "source_audit_question_count": 10,
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "source-audited-batch-147-local-first",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/masonry-lecture-terms-chb.source-capture.md",
+      "sha256": "sha256:4a726707980fe307f5be7ec1eb33a9a632e5a57c8d7e2702585c2164e37a4f3d"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/masonry-lecture-terms-chb.refined.md",
+      "sha256": "sha256:29d5d4804ddf16218291dc263df397c82e05a6efa1102bb555c17d2841a4e9f9"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/bsi-masonry-walls.source-capture.md",
+      "sha256": "sha256:ee0fb162aba84c414c679a43b9643cc686bf89babbe9e78a9a733f6a7a98c4cb"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/bsi-masonry-walls.refined.md",
+      "sha256": "sha256:524d8d448149556a93580a9cc791453e5b1e046364a09a145c40c2766d686738"
+    }
+  ],
+  "source_candidates_checked": [
+    {
+      "source_id": "aisc-steel-manual-13th-raw",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+      "status": "checked_raw_hash_only_not_used_for_exact_claims",
+      "reason": "Local raw PDF exists, but no reliable readable local capture was available in this run; exact AISC slenderness, grade, hole, spacing, edge-distance, and pretension values were not restored."
+    }
+  ]
 }

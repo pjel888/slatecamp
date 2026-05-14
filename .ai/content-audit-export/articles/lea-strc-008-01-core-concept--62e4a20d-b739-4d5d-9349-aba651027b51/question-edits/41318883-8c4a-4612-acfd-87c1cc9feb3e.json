@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "41318883-8c4a-4612-acfd-87c1cc9feb3e",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:34ae7114c51998b4338ebda8f016b4dcc9120112cd1bfd0108e47338f3728a96",
+  "after_hash": "sha256:398d7590ddcef90fd4aa379dc2c44d512a8edd1e75447a5d121a803eaeb8e12a",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "Select the smallest visible shape without checking stability. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Use a CHB reinforcement note as the steel design table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "c": "Match the shape to the load path, support condition, connection, and source-backed design check. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "d": "Assume any shape is correct if it is drawn in elevation. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Match the shape to the load path, support condition, connection, and source-backed design check. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

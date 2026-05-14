@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "a5ba96c4-0d78-4fb7-81c8-543b53717984",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:62b880ffde8d8f66dc4ba6e84423afb6b9506fa2cf2e194d3e7261e22679e47e",
+  "after_hash": "sha256:b0ff45748b8ae3b6b20aa2145cddf2100a6489bbbd75f23277bcbe7ca7f63cae",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "Invent values from memory and cite no source. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Use the applicable steel standard or project source instead of restoring uncaptured values. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "c": "Use mortar joint thickness as the steel strength. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Assume every steel grade has the same strength. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Use the applicable steel standard or project source instead of restoring uncaptured values. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

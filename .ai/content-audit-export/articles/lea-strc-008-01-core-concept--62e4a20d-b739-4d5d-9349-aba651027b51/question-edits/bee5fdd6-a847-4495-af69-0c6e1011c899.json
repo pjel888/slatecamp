@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "bee5fdd6-a847-4495-af69-0c6e1011c899",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:6c2bb0243b09e9c501fb6dff79424cce8d7a76d72ad1aa4b382893ecdf4c2241",
+  "after_hash": "sha256:15538753147ce25058806a024aca0ddcfb9f67f31b9630b0ac3147cd20bcf724",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "It sets the number of masonry courses. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "It replaces all allowable-stress checks. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "c": "Increasing steel beam flange width increases resistance to lateral buckling. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "d": "It proves the bolt grade without inspection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Increasing steel beam flange width increases resistance to lateral buckling. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

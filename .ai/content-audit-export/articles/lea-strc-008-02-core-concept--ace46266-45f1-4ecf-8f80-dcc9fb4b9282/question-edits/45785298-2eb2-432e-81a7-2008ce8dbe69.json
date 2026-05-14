@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "45785298-2eb2-432e-81a7-2008ce8dbe69",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:1e090f261a0444f4c13888dc6419d758f23950f79c173e1d2a73c64768d966a4",
+  "after_hash": "sha256:a1beb18286a4b9e848213b83e29df58f32358955efa6a318211a82277e4ae829",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "Use the same strength for every bolt grade. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Verify exact bolt grade properties from the applicable bolting standard because this batch did not capture those values. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "c": "Use masonry CHB dimensions to set bolt strength. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Treat bolt grade as an architectural finish. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Verify exact bolt grade properties from the applicable bolting standard because this batch did not capture those values. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

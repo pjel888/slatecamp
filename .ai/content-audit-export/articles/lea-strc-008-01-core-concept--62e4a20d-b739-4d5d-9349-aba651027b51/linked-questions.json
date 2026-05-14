@@ -1,30 +1,30 @@
 {
   "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:2d754d8103858374b2ffec54171da4500c69f893c27ffcadc8146a515a9e8242",
+  "linked_questions_hash": "sha256:95acafb025e8a370c507ef58e5bef93890312e01a47c3f19f24cdc36b6418baa",
   "question_count": 10,
   "questions": [
     {
       "question_id": "3dc00eb0-df32-44f0-a7bc-36561b65fc18",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "A tension member (tie rod) in a pin-jointed truss has an effective length KL = 4.5 m and radius of gyration r = 18 mm. Calculate KL/r and determine if it meets the preferred slenderness standard for tension.",
+      "text": "A steel member item gives a KL/r value but this batch did not capture the governing AISC table. What is the source-safe response?",
       "options": [
         {
           "id": "a",
-          "text": "KL/r = 200; non-compliant (exceeds preferred 300)"
+          "text": "Declare compliance from memory because every tension and compression member has the same limit."
         },
         {
           "id": "b",
-          "text": "KL/r = 250; compliant (below preferred 300)"
+          "text": "Treat the exact slenderness limit as standard-controlled and verify it from the applicable steel design source before publishing compliance."
         },
         {
           "id": "c",
-          "text": "KL/r = 300; on the boundary; marginally acceptable"
+          "text": "Ignore slenderness because only section shape matters."
         },
         {
           "id": "d",
-          "text": "KL/r = 250; non-compliant for tension (compression limit applies)"
+          "text": "Use the masonry lecture to set the steel member limit."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "KL/r = 4500 mm ÷ 18 mm = 250. This is less than 300 and meets the maximum slenderness limit for tension members.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Declare compliance from memory because every tension and compression member has the same limit. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Treat the exact slenderness limit as standard-controlled and verify it from the applicable steel design source before publishing compliance. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "c": "Ignore slenderness because only section shape matters. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Use the masonry lecture to set the steel member limit. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Treat the exact slenderness limit as standard-controlled and verify it from the applicable steel design source before publishing compliance. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section E3",
+      "explanation": "Treat the exact slenderness limit as standard-controlled and verify it from the applicable steel design source before publishing compliance. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -51,30 +56,36 @@
       "model_id": "ALE-STRC-008-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8b0cc46d33c4df54e826f377828ef5135951748f3753aa4a3c49becea52232b4"
+      "updated_at": "2026-05-14T03:03:42.095Z",
+      "content_hash": "sha256:5ada4e6729dda795d6bab3c80922e8fca44358596d76398a39844e0a223cc111",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "d8c2a1b5-420e-4da5-abcf-2af576c4a176",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "In a bolted connection between two C-channels (back-to-back), the engineer must provide a transition element to distribute concentrated load. What is this component called?",
+      "text": "A bolted steel connection needs a transition piece between a member and its fasteners or welds. Which source-backed family of elements fits that role?",
       "options": [
         {
           "id": "a",
-          "text": "Shear connector"
+          "text": "A concrete topping used only to bond precast slabs."
         },
         {
           "id": "b",
-          "text": "Gusset plate"
+          "text": "A transitional steel element such as an angle, tee, or plate."
         },
         {
           "id": "c",
-          "text": "Shear stud"
+          "text": "A masonry heading course."
         },
         {
           "id": "d",
-          "text": "Splice plate"
+          "text": "A roof finish schedule."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +94,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A gusset plate is a transition piece (often triangular or rectangular) that distributes concentrated load from a member into fasteners or welds. It handles stress concentration.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A concrete topping used only to bond precast slabs. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "A transitional steel element such as an angle, tee, or plate. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "c": "A masonry heading course. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "A roof finish schedule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "A transitional steel element such as an angle, tee, or plate. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC Steel Construction Manual, Part 9: Connections",
+      "explanation": "A transitional steel element such as an angle, tee, or plate. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -101,30 +117,36 @@
       "model_id": "ALE-STRC-008-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f42e842e4ae61eaab82b8050cc99c00f9f598bb813e02031b22ff1f60906b8e2"
+      "updated_at": "2026-05-14T03:03:42.095Z",
+      "content_hash": "sha256:a4488876b50e19eb29833601e41db40b8e2976a93d103d7d4d491a7e24d4d0a9",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "feda56eb-137d-4555-bd06-d0a5e06e68cc",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "A compression member in a braced frame has KL/r = 185. Is this member compliant with slenderness limits, and what is the governing standard value?",
+      "text": "A compression member is described as slender. What source-backed failure concern should be checked before accepting the member?",
       "options": [
         {
           "id": "a",
-          "text": "Non-compliant; KL/r must be ≤ 150, according to standard design codes for structural stability"
+          "text": "Only water penetration through a masonry cavity."
         },
         {
           "id": "b",
-          "text": "Compliant; maximum allowed is 200 for compression"
+          "text": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity."
         },
         {
           "id": "c",
-          "text": "Compliant; maximum allowed is 300, which applies to specific cases under certain conditions"
+          "text": "Only the color of shop primer."
         },
         {
           "id": "d",
-          "text": "Non-compliant; AISC has no upper limit for compression, but practical limits are often applied"
+          "text": "Only the number of courses in a masonry bond."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +155,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "AISC 360-16 Section E3 sets maximum KL/r = 200 for compression members. KL/r = 185 is well below this threshold and is compliant.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only water penetration through a masonry cavity. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "c": "Only the color of shop primer. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Only the number of courses in a masonry bond. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section E3: Slenderness Limits",
+      "explanation": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +178,36 @@
       "model_id": "ALE-STRC-008-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:de9509133a68a0989c989af47accc146e21609c87173b56437861fdca28e36dc"
+      "updated_at": "2026-05-14T03:03:42.095Z",
+      "content_hash": "sha256:d86f8f7ed11ad36b0383d46e1deebf8570de23c761e9f2dbc98e8009e4b162af",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "41318883-8c4a-4612-acfd-87c1cc9feb3e",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "Which of the following section types is most appropriate for a bracing member that must resist a tensile pull in a truss?",
+      "text": "Which source-safe habit best prevents overclaiming when selecting a steel bracing or secondary member?",
       "options": [
         {
           "id": "a",
-          "text": "W-section (wide flange)"
+          "text": "Select the smallest visible shape without checking stability."
         },
         {
           "id": "b",
-          "text": "S-section (American standard)"
+          "text": "Use a CHB reinforcement note as the steel design table."
         },
         {
           "id": "c",
-          "text": "L-section (angle)"
+          "text": "Match the shape to the load path, support condition, connection, and source-backed design check."
         },
         {
           "id": "d",
-          "text": "T-section (tee)"
+          "text": "Assume any shape is correct if it is drawn in elevation."
         }
       ],
       "correct_option_id": "c",
@@ -183,14 +216,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "L-angles are standard for truss bracing because they are lightweight, handle pure tension well, and connect easily via bolts through a single leg.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Select the smallest visible shape without checking stability. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Use a CHB reinforcement note as the steel design table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "Match the shape to the load path, support condition, connection, and source-backed design check. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "d": "Assume any shape is correct if it is drawn in elevation. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Match the shape to the load path, support condition, connection, and source-backed design check. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section A1: General Requirements",
+      "explanation": "Match the shape to the load path, support condition, connection, and source-backed design check. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +239,36 @@
       "model_id": "ALE-STRC-008-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:400f4273443714915dd5f3479533d5142446f71729a54a974729b82033d431ea"
+      "updated_at": "2026-05-14T03:03:42.095Z",
+      "content_hash": "sha256:398d7590ddcef90fd4aa379dc2c44d512a8edd1e75447a5d121a803eaeb8e12a",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "a0c6caae-dbe4-4555-99ff-f865526df883",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "A wide-flange section (W610×82) is used as a primary beam in a building frame. The web develops local buckling near the point of concentrated load. To prevent this failure, which component should be welded to the section?",
+      "text": "The local source notes web stiffeners where concentrated loads might cripple joist webs. What does this teach for LEA reasoning?",
       "options": [
         {
           "id": "a",
-          "text": "Gusset plate"
+          "text": "Stiffeners replace all connection design."
         },
         {
           "id": "b",
-          "text": "Web stiffener"
+          "text": "Concentrated-load locations can require local stiffening instead of only a larger span member."
         },
         {
           "id": "c",
-          "text": "Shear connector"
+          "text": "Concentrated loads are always ignored in steel framing."
         },
         {
           "id": "d",
-          "text": "Splice plate"
+          "text": "Web stiffeners are masonry bond patterns."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +277,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A web stiffener (vertical steel plate) is welded transversely across the web to prevent local buckling and bearing failure under concentrated loads. This is standard practice near reactions and heavy loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Stiffeners replace all connection design. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Concentrated-load locations can require local stiffening instead of only a larger span member. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "c": "Concentrated loads are always ignored in steel framing. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Web stiffeners are masonry bond patterns. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Concentrated-load locations can require local stiffening instead of only a larger span member. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC Steel Construction Manual, Part 9: Design for Concentrated Forces",
+      "explanation": "Concentrated-load locations can require local stiffening instead of only a larger span member. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +300,36 @@
       "model_id": "ALE-STRC-008-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:57b1e76a3e075f3bb9c4c8aafb4eb32ec025f55815ce6329fa15e6540eac0018"
+      "updated_at": "2026-05-14T03:03:42.095Z",
+      "content_hash": "sha256:45360e21255b62c88710b9570b4fcdfb55ac3dfc7d8ee0d0c69793d387fd5be7",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "511d343c-b827-43fd-ae79-373d6ac2f6e6",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "A W460×89 section is selected for a primary column in a braced frame. What does the '460' refer to?",
+      "text": "Which statement about W shapes stays inside the local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Flange width in millimeters, which is critical for determining the load distribution across the section."
+          "text": "W shape numbers automatically prove exact capacity without a table."
         },
         {
           "id": "b",
-          "text": "Depth of the section in millimeters"
+          "text": "Wide-flange W shapes have largely superseded classic S shapes for steel beams."
         },
         {
           "id": "c",
-          "text": "Moment of inertia in 10⁶ mm⁴, a measure of the section's resistance to bending."
+          "text": "W shapes are masonry wythes."
         },
         {
           "id": "d",
-          "text": "Section modulus in 10³ mm³, indicating the strength of the section in resisting bending moments."
+          "text": "W shapes never need connection checks."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +338,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "W-sections are designated W(depth)×(unit weight). W460×89 means 460 mm deep (nominal), 89 kg/m unit weight.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "W shape numbers automatically prove exact capacity without a table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "c": "W shapes are masonry wythes. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "W shapes never need connection checks. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC Steel Construction Manual, 15th ed., Part 1: Dimensions and Properties",
+      "explanation": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -301,30 +361,36 @@
       "model_id": "ALE-STRC-008-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8a63ec0327dfffc565fedb7ad692d50a460a31974a793727c29e95cd938b9a8a"
+      "updated_at": "2026-05-14T03:03:42.096Z",
+      "content_hash": "sha256:18008048fd882507a31a6a1080f4c894f524c33f9f7512de45b646f40495da55",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "20091ac7-2715-479e-bbfb-30e9aa2c2f6e",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "A truss node is formed by welding three members: two diagonals and one vertical. The engineer elects to minimize stress concentration by designing a large triangular gusset plate. However, field inspection reveals the gusset plate is not fully welded to the vertical member along its entire edge. What is the consequence?",
+      "text": "A truss or frame connection is shown with welded members and a plate. What is the source-safe review focus?",
       "options": [
         {
           "id": "a",
-          "text": "The vertical member will experience bending instead of pure axial compression, which can lead to unexpected structural behavior"
+          "text": "Assume the connection works because a plate is visible."
         },
         {
           "id": "b",
-          "text": "Stress concentration will concentrate at the toe of the partial weld, potentially causing fatigue crack initiation"
+          "text": "Confirm the plate or other transitional element completes the intended load path through the welds or bolts."
         },
         {
           "id": "c",
-          "text": "The gusset plate will slip and allow excessive joint rotation, which is a common misconception about weld integrity"
+          "text": "Check only the wall paint color."
         },
         {
           "id": "d",
-          "text": "The joint will experience no adverse effect; partial welds are acceptable in modern design, which is incorrect as full welds are typically required for structural integrity"
+          "text": "Use a CHB cell count as the weld acceptance rule."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +399,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Partial welds create a discontinuity and a stress concentration at the weld termination (toe). Under cyclic loading (common in highway bridges and industrial frames), this is a fatigue crack initiation point. Full penetration and continuous welds are required.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Assume the connection works because a plate is visible. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Confirm the plate or other transitional element completes the intended load path through the welds or bolts. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "c": "Check only the wall paint color. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Use a CHB cell count as the weld acceptance rule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Confirm the plate or other transitional element completes the intended load path through the welds or bolts. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J2: Welds. AWS D1.1: Structural Welding Code—Steel",
+      "explanation": "Confirm the plate or other transitional element completes the intended load path through the welds or bolts. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +422,36 @@
       "model_id": "ALE-STRC-008-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6fed6aefa8e925417d0a96d30117aef127e8f04997879398339f9ac43665596d"
+      "updated_at": "2026-05-14T03:03:42.096Z",
+      "content_hash": "sha256:3406a570ae5b440aa2a14970b9954d13150718c5dd2d32aa0190671407ea4788",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "bee5fdd6-a847-4495-af69-0c6e1011c899",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "An engineer selects a C-section (channel) for a purlin in a roof structure and orients the channel with its web horizontal (opening downward). Later, it is discovered that this orientation reduces the bending strength by ~25% compared to a vertical web orientation. Explain the structural reason.",
+      "text": "Why does flange width matter in the local steel member source?",
       "options": [
         {
           "id": "a",
-          "text": "Horizontal webs have lower shear capacity, which can lead to increased deflection and potential structural failure under load"
+          "text": "It sets the number of masonry courses."
         },
         {
           "id": "b",
-          "text": "The neutral axis shifts when the web is horizontal, reducing moment arm, which affects the overall structural integrity and load distribution"
+          "text": "It replaces all allowable-stress checks."
         },
         {
           "id": "c",
-          "text": "The section modulus decreases because the flanges are no longer the furthest fibers from the neutral axis; bending strength depends on flange distance and web contribution"
+          "text": "Increasing steel beam flange width increases resistance to lateral buckling."
         },
         {
           "id": "d",
-          "text": "Horizontal channels are never acceptable for purlins due to their inability to effectively distribute loads across the span"
+          "text": "It proves the bolt grade without inspection."
         }
       ],
       "correct_option_id": "c",
@@ -383,14 +460,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Section modulus S = I/c, where c is the distance from neutral axis to extreme fiber. With a vertical web (typical), the flanges are the furthest fibers. With a horizontal web, the geometry inverts; the effective moment arm and section modulus decline, reducing bending capacity.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It sets the number of masonry courses. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "It replaces all allowable-stress checks. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "Increasing steel beam flange width increases resistance to lateral buckling. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "d": "It proves the bolt grade without inspection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Increasing steel beam flange width increases resistance to lateral buckling. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC Steel Construction Manual, Part 1: Section Properties and Orientation",
+      "explanation": "Increasing steel beam flange width increases resistance to lateral buckling. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +483,36 @@
       "model_id": "ALE-STRC-008-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ec7f219e7c298c1ea9e8bb0a5aa0655e63f773549b123c5a355ffa4f57aa580e"
+      "updated_at": "2026-05-14T03:03:42.096Z",
+      "content_hash": "sha256:15538753147ce25058806a024aca0ddcfb9f67f31b9630b0ac3147cd20bcf724",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "a5ba96c4-0d78-4fb7-81c8-543b53717984",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "A long tied-arch bridge has main tie rods made from L-sections (angles). The effective length is KL = 12 m and the selected angle has r_min = 25 mm (minimum radius of gyration). Calculate KL/r and evaluate whether this design is at risk if the tie rod transitions from dead load (tension) to wind-induced oscillation (potential compression due to aeroelastic flutter). Assume AISC limits: tension ≤ 300, compression ≤ 200.",
+      "text": "A question asks for exact steel grade Fy and Fu values, but Batch 147 did not capture a readable grade table. What should the answer do?",
       "options": [
         {
           "id": "a",
-          "text": "KL/r = 480; non-compliant for both tension and compression; angle is undersized and may require redesign"
+          "text": "Invent values from memory and cite no source."
         },
         {
           "id": "b",
-          "text": "KL/r = 480; non-compliant for both tension (exceeds 300) and compression (exceeds 200); angle is undersized with risk if flutter induces compression"
+          "text": "Use the applicable steel standard or project source instead of restoring uncaptured values."
         },
         {
           "id": "c",
-          "text": "KL/r = 300; marginally acceptable for tension and compression; no risk, but close monitoring is advised"
+          "text": "Use mortar joint thickness as the steel strength."
         },
         {
           "id": "d",
-          "text": "KL/r = 480; acceptable for all loads under AISC flexibility provisions for special bridges, though this is rarely applicable"
+          "text": "Assume every steel grade has the same strength."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +521,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "KL/r = 12,000 mm ÷ 25 mm = 480.This exceeds both limits (300 preferred for tension, 200 for compression). The tie rod is non-compliant even as a primary tension member.ons, but if wind flutter induces local compression reversals, the 480 ratio far exceeds the 200 compression limit. The design is at risk.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Invent values from memory and cite no source. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Use the applicable steel standard or project source instead of restoring uncaptured values. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "c": "Use mortar joint thickness as the steel strength. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Assume every steel grade has the same strength. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Use the applicable steel standard or project source instead of restoring uncaptured values. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section E3: Slenderness Limits. ASCE Guideline 6-19: Aeroelastic Effects on Structures",
+      "explanation": "Use the applicable steel standard or project source instead of restoring uncaptured values. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "analyze",
       "application_context": "calculation",
       "practice_context": [],
@@ -451,30 +544,36 @@
       "model_id": "ALE-STRC-008-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:80b15c767994e1d738878d1fb5d55e49067dfd7783bd3b47d6aa926ea857773d"
+      "updated_at": "2026-05-14T03:03:42.096Z",
+      "content_hash": "sha256:b0ff45748b8ae3b6b20aa2145cddf2100a6489bbbd75f23277bcbe7ca7f63cae",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "542a5dcc-6a5f-4737-aa30-16d9bafb248c",
       "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
       "topic_id": "0e2d89a6-a14e-4d70-98a5-b40b334e63f7",
-      "text": "A hollow structural section (HSS) is selected over a built-up section for a heavily loaded column. What is the primary advantage of HSS?",
+      "text": "Which source-backed statement is safest for structural tubing or hollow tubular steel members?",
       "options": [
         {
           "id": "a",
-          "text": "Lower fabrication cost, which can be significant in large-scale projects"
+          "text": "Structural tubing always eliminates lateral-force design."
         },
         {
           "id": "b",
-          "text": "Higher section modulus per unit weight, providing better structural efficiency"
+          "text": "Structural tubing is the same as a masonry collar joint."
         },
         {
           "id": "c",
-          "text": "Closed section geometry and uniform torsional rigidity"
+          "text": "Structural tubing is a recognized steel member form, but exact capacity and suitability still require the applicable design check."
         },
         {
           "id": "d",
-          "text": "Easier field splicing without welding, reducing on-site labor requirements"
+          "text": "Structural tubing never needs fabrication or connection review."
         }
       ],
       "correct_option_id": "c",
@@ -483,14 +582,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "HSS is a closed section, providing symmetrical properties, high torsional stiffness, and uniform strength in all directions. Built-up sections are open and require bracing for torsion.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Structural tubing always eliminates lateral-force design. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Structural tubing is the same as a masonry collar joint. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "Structural tubing is a recognized steel member form, but exact capacity and suitability still require the applicable design check. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+        "d": "Structural tubing never needs fabrication or connection review. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Structural tubing is a recognized steel member form, but exact capacity and suitability still require the applicable design check. Supported by bsi-steel-members.",
+        "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-members",
+        "checked_sources": [
+          "bsi-steel-members"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC Steel Construction Manual, Part 1: Section Properties",
+      "explanation": "Structural tubing is a recognized steel member form, but exact capacity and suitability still require the applicable design check. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+      "code_citation": "bsi-steel-members",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +605,14 @@
       "model_id": "ALE-STRC-008-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c163690c0b067a5f066f724c98897a72bfe2f38a8cd8df2b99adac08aed00d15"
+      "updated_at": "2026-05-14T03:03:42.096Z",
+      "content_hash": "sha256:f2bb3af931d2e19ebe029273f1453ae6b7fae0637c050669b8741e5d35415b7b",
+      "source_ids": [
+        "bsi-steel-members"
+      ],
+      "cluster_id": "lea-strc-008-01",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

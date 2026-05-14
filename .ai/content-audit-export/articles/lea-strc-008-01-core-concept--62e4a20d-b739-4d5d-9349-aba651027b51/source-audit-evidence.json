@@ -1,0 +1,139 @@
+{
+  "batch": 147,
+  "batch_id": "source-audited-batch-147-local-first",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-147-reservation-manifest.json",
+  "cluster_id": "lea-strc-008-01",
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "source_strategy": "local_first_fixed_manifest",
+  "source_count": 1,
+  "sources": [
+    {
+      "id": "bsi-steel-members",
+      "title": "Building Structures Illustrated - structural steel members and framing",
+      "source_type": "local_authoritative_or_training_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+      "raw_artifact_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+      "refined_artifact_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-147/bsi-steel-members.source-capture.md",
+      "local_capture_sha256": "sha256:9bf2ec152a2e2197d3bd483c7381c6f9d8c8afffaa1285b0ceeaf71156512030",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-147/bsi-steel-members.refined.md",
+      "refined_capture_sha256": "sha256:5848a4460b01c6ca95d57b2ece7029e74b0e7b62f74d40277ac72ca141dcd964",
+      "locator": "refined markdown lines 827-840, 1016-1022, 2002-2012, 2613-2633, 2781, 3209-3216, 3545-3549, 5960-5986",
+      "safe_claims": [
+        "Structural steel girders, beams, trusses, and columns are used to construct skeleton frames, and steel is normally cut, shaped, and drilled in a fabrication shop.",
+        "Wide-flange W shapes have largely superseded classic S shapes, and beams may also be channels, structural tubing, or composite sections.",
+        "Steel framing is efficient when columns support a regular grid of girders, beams, and joists.",
+        "The general objective is to use the lightest steel section that resists bending and shear within allowable stress limits and without excessive deflection.",
+        "Lateral buckling can be induced by compressive stresses in a slender portion, and increasing steel beam flange width increases resistance to lateral buckling.",
+        "Connections usually use transitional elements such as steel angles, tees, or plates, and actual connections are more often bolted or welded.",
+        "Bolted connections are point connections, welded connections are line connections, pin joints allow rotation, and rigid or fixed joints restrain rotation and translation.",
+        "Steel column-beam connections can be made moment-resistant by bolting or welding beam flanges to the column.",
+        "Braced frames use vertical trusses with diagonal bracing to increase stiffness and moderate drift; they can be simply connected with pin joints.",
+        "Web stiffeners are required where concentrated loads might cripple joist webs, such as at joist ends or interior supports."
+      ],
+      "exclusions": [
+        "This capture does not supply AISC KL/r limit values.",
+        "This capture does not supply ASTM grade yield or tensile strengths.",
+        "This capture does not supply compactness limits, section property tables, or steel member capacity equations."
+      ],
+      "use_limits": [
+        "No local readable source in this batch was used to restore AISC KL/r limit values.",
+        "No local readable source in this batch was used to restore ASTM steel grade Fy or Fu values.",
+        "No local readable source in this batch was used to restore compactness limits, section-property tables, or steel member capacity equations."
+      ]
+    }
+  ],
+  "source_candidates_checked": [
+    {
+      "source_id": "aisc-steel-manual-13th-raw",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+      "status": "checked_raw_hash_only_not_used_for_exact_claims",
+      "reason": "Local raw PDF exists, but no reliable readable local capture was available in this run; exact AISC slenderness, grade, hole, spacing, edge-distance, and pretension values were not restored."
+    }
+  ],
+  "normalized_sha256": "sha256:1902a7b91aae1ceb0c8bf611dd17289d84d7dbd8d5ed5ac7e903016ac00ef01b",
+  "candidate_sha256": "sha256:1902a7b91aae1ceb0c8bf611dd17289d84d7dbd8d5ed5ac7e903016ac00ef01b",
+  "question_count": 10,
+  "question_hashes": [
+    {
+      "question_id": "3dc00eb0-df32-44f0-a7bc-36561b65fc18",
+      "content_hash": "sha256:5ada4e6729dda795d6bab3c80922e8fca44358596d76398a39844e0a223cc111"
+    },
+    {
+      "question_id": "d8c2a1b5-420e-4da5-abcf-2af576c4a176",
+      "content_hash": "sha256:a4488876b50e19eb29833601e41db40b8e2976a93d103d7d4d491a7e24d4d0a9"
+    },
+    {
+      "question_id": "feda56eb-137d-4555-bd06-d0a5e06e68cc",
+      "content_hash": "sha256:d86f8f7ed11ad36b0383d46e1deebf8570de23c761e9f2dbc98e8009e4b162af"
+    },
+    {
+      "question_id": "41318883-8c4a-4612-acfd-87c1cc9feb3e",
+      "content_hash": "sha256:398d7590ddcef90fd4aa379dc2c44d512a8edd1e75447a5d121a803eaeb8e12a"
+    },
+    {
+      "question_id": "a0c6caae-dbe4-4555-99ff-f865526df883",
+      "content_hash": "sha256:45360e21255b62c88710b9570b4fcdfb55ac3dfc7d8ee0d0c69793d387fd5be7"
+    },
+    {
+      "question_id": "511d343c-b827-43fd-ae79-373d6ac2f6e6",
+      "content_hash": "sha256:18008048fd882507a31a6a1080f4c894f524c33f9f7512de45b646f40495da55"
+    },
+    {
+      "question_id": "20091ac7-2715-479e-bbfb-30e9aa2c2f6e",
+      "content_hash": "sha256:3406a570ae5b440aa2a14970b9954d13150718c5dd2d32aa0190671407ea4788"
+    },
+    {
+      "question_id": "bee5fdd6-a847-4495-af69-0c6e1011c899",
+      "content_hash": "sha256:15538753147ce25058806a024aca0ddcfb9f67f31b9630b0ac3147cd20bcf724"
+    },
+    {
+      "question_id": "a5ba96c4-0d78-4fb7-81c8-543b53717984",
+      "content_hash": "sha256:b0ff45748b8ae3b6b20aa2145cddf2100a6489bbbd75f23277bcbe7ca7f63cae"
+    },
+    {
+      "question_id": "542a5dcc-6a5f-4737-aa30-16d9bafb248c",
+      "content_hash": "sha256:f2bb3af931d2e19ebe029273f1453ae6b7fae0637c050669b8741e5d35415b7b"
+    }
+  ],
+  "real_world_scenario_status": "included",
+  "exact_code_claim_policy": "exact code, material, table, or procedure values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local readable source in this batch was used to restore AISC KL/r limit values.",
+    "No local readable source in this batch was used to restore ASTM steel grade Fy or Fu values.",
+    "No local readable source in this batch was used to restore compactness limits, section-property tables, or steel member capacity equations."
+  ],
+  "blocked_residuals_not_edited": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    },
+    {
+      "cluster_id": "lea-strc-004-02",
+      "status": "blocked_carry_forward_not_edited",
+      "reason": "Hard blocked carry-forward cluster listed in the Batch 147 reservation manifest; not swapped into this batch."
+    }
+  ]
+}

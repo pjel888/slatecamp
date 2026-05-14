@@ -1,0 +1,27 @@
+{
+  "batch": 147,
+  "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+  "cluster_id": "lea-strc-010-01",
+  "question_id": "9e85e893-bcbc-4d2e-8af3-3114c5458738",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:b4117950835d751b61f3cd045e027ab46e1c3e99cc39d9727ae7833e8849073b",
+  "after_hash": "sha256:666bcd8e6fdcd87f0cdf5e94a941099ea07d78b35ce89f25aa54d4732504e6c3",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "masonry-lecture-terms-chb",
+    "bsi-masonry-walls"
+  ],
+  "rationale": {
+    "a": "The horizontal surface where units lie in a course. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "A complete layer of masonry units. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "c": "A cell or core is one of the hollow voids within a CHB unit. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+    "d": "A steel bolted point connection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "A cell or core is one of the hollow voids within a CHB unit. Supported by masonry-lecture-terms-chb; bsi-masonry-walls.",
+    "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "masonry-lecture-terms-chb; bsi-masonry-walls",
+    "checked_sources": [
+      "masonry-lecture-terms-chb",
+      "bsi-masonry-walls"
+    ]
+  }
+}

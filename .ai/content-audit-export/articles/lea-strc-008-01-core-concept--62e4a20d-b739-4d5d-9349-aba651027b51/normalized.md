@@ -1,89 +1,40 @@
-
+# Structural Steel Members and Load Paths
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For structural steel member questions, classify the member by load-path role before reaching for a formula. Ask whether the item is about a beam, girder, joist, truss, column, bracing member, or connection condition. This batch supports conceptual member behavior and shape families; it does not restore exact AISC table values.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 008 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+## What You Need To Know
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
-## Learning Goal
-By the end of this article, you will be able to:
+Structural steel girders, beams, trusses, and columns form skeleton frames. The local source notes that structural steel is normally cut, shaped, and drilled in a fabrication shop, which supports fast and precise frame construction.
 
-- Identify common steel section shapes: W, S, C, L, T, and HSS
-- State the slenderness limits: KL/r ≤ 200 for compression, KL/r ≤ 300 for tension
-- Identify connection components: gusset plates, splice plates, stiffeners
-- Recall A36 steel properties: Fy = 248 MPa, Fu = 400 MPa
-Steel section shapes and connection geometry define load paths; slenderness limits control buckling risk and design viability in both compression and tension members.
+For horizontal members, wide-flange W shapes have largely superseded classic S shapes. The same source also names channel sections, structural tubing, and composite sections as possible beam forms. The exam-safe distinction is not that one shape is always correct; the safe habit is to match the shape to the load path, support condition, connection, and serviceability check.
 
-## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-008-01-core-concept", type="image", caption="Steel Section Shapes — W, S, C, L, T, and HSS Profiles", description="Cross-section illustrations of standard hot-rolled steel shapes: (1) W-shape (wide flange) — parallel flange surfaces; (2) S-shape (American Standard) — sloped flanges; (3) C-channel — channel section with sloped flanges; (4) L-angle — equal and unequal leg angles; (5) T-section — cut from W or S shapes; (6) HSS (hollow structural section) — round, square, rectangular. Each with nominal dimension notation (d, bf, tf, tw).", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Structural steel members are manufactured in standardized section shapes to optimize strength-to-weight ratio. The major rolled shapes—W-sections (wide flange), S-sections (American standard), C-channels, L-angles, T-sections, and hollow structural sections (HSS)—each serve distinct roles in framing. W-sections dominate primary beams and columns because their wide flanges resist bending efficiently; S-sections see less use today; channels and angles work well as bracing, purlins, and secondary members; T-sections split off from wide flanges for gusset plates and special connections; built-up sections (welded or riveted plates) solve odd geometric needs. Connections transmit force between members through gusset plates (triangular or rectangular transition pieces), splice plates (overlap elements), stiffeners (vertical reinforcement), and fasteners. Slenderness (the ratio KL/r, where K is effective length factor, L is member length, and r is radius of gyration) limits member stability. The AISC Standard (owned by LEA-STRC-003-04) sets maximum KL/r values: compression members shall not exceed 200, and tension members (preferred practice) shall not exceed 300. These limits prevent excessive lateral deflection and ensure member reliability; oversized slenderness ratios indicate undersized cross-sections or overly long spans between lateral supports. A36 steel (Fu = 400 MPa, Fy = 248 MPa) remains common for structural work; reference stresses owned by LEA-STRC-005-03 provide design thresholds.
+The source gives two stability cues that matter for LEA reasoning. First, the design objective is to use the lightest steel section that can resist bending and shear within allowable stress limits and without excessive deflection. Second, lateral buckling can occur when compressive stresses act on a slender portion that lacks enough lateral rigidity. Increasing flange width improves a steel beam's resistance to lateral buckling.
 
-## Key Provisions
+Connections complete the load path. The local source describes transitional elements such as steel angles, tees, and plates, with actual connections more often bolted or welded. It also distinguishes pin joints, which allow rotation, from rigid or fixed joints, which restrain rotation and translation and provide force and moment resistance. Steel column-beam connections can become moment-resistant when the beam flanges are bolted or welded to the column.
 
-| Section Type | Primary Use | Typical Orientation | Why Used |
-|---|---|---|---|
-| W-section (wide flange) | Beams, columns, rigid frames | Flanges horizontal for bending | Maximum bending resistance; high section modulus |
-| S-section (American standard) | Legacy beams, floor systems | Flanges horizontal | Older standard; less efficient than W-shapes |
-| C-channel | Purlins, secondary beams, bracing | Web vertical or horizontal | Open section; lighter; handles modest loads |
-| L-angle | Tie rods, bracing, gusset transition | Any orientation | Small cross-section; high slenderness acceptable in tension |
-| T-section | Gusset plates, flanges, split beams | Web vertical or horizontal | Created by splitting W-shapes; economical for transition |
-| HSS (hollow) | Columns, bracing, architectural | Any orientation | Closed section; high torsional rigidity; uniform properties |
-| Built-up (welded or riveted) | Heavy columns, long spans, custom | Custom | Tailored geometry for oddly loaded members |
+Do not import unsupported numbers. This batch does not publish AISC KL/r limits, A36 Fy or Fu values, section property tables, compactness limits, or steel capacity equations because the readable local capture did not provide those exact claims.
 
-**Slenderness Limits (KL/r):**
+## Real World Scenario
 
-| Member Type | Maximum KL/r | Rationale |
-|---|---|---|
-| Compression (primary) | 200 | Avoids Euler buckling; ensures reliable compressive capacity |
-| Tension (preferred) | 300 | Permits flexibility; controls vibration and serviceability |
-| Tension (allowable) | No AISC limit specified | Rare; design judgment required |
+A small commercial roof frame has W-shape beams on a regular column grid, channels for secondary framing, and a braced bay for lateral stability. The review sequence is to trace deck loads to joists or beams, then to girders and columns, then through the bracing and foundations. Exact section capacity, slenderness, and steel grade checks still come from the applicable design standard and project calculations.
 
-**Connection Components:**
+## High-Yield Distinctions
 
-| Component | Function | Material |
-|---|---|---|
-| Gusset plate | Transition force from member to fasteners or welds | Steel (same grade or higher) |
-| Splice plate | Joins two members end-to-end; transfers axial force | Steel; typically bolted |
-| Stiffener | Prevents web crippling or local buckling near concentrated loads | Steel; welded to web/flange |
-| Shear connector (stud) | Bonds concrete slab to steel beam | Headed stud; welded through slab |
-
-## Philippine Practice Context
-Philippine practice follows ASEP standards aligned with AISC and ISO guidelines. Local suppliers provide A36 and A500 Grade B (HSS); A325 bolts are standard for structural work. Tropical humidity and typhoon-driven deflection sensitivities make slenderness control and bolt pretensioning critical. Gusset plate design in truss nodes must account for stress concentration; undersized gussets are a common cause of fatigue failure in heavily trafficked highway bridges.
-
-## How It's Tested
-
-**Pattern 1 — Section Selection:**
-"A secondary purlin must carry 50 kN across a 3 m span with side-sway braced. Select from C-section or L-angle. Which is more typical, and why?"
-_Tests recognition that C-channels are standard for purlins; angles better for ties and bracing._
-
-**Pattern 2 — Slenderness Verification:**
-"A tie rod in a truss has KL/r = 320. Is this acceptable? What is the issue?"
-_Tests threshold knowledge: 320 > 300 (preferred limit for tension). Candidate must recognize that 200 limit applies to compression; 300 is preferred for tension._
-
-**Pattern 3 — Connection Geometry:**
-"A bolted lap splice connects two L-angles in tension. Name the three components required and their function."
-_Tests vocabulary: splice plates, gusset plate (if needed), and fasteners. Reinforces that splice geometry must match member shape._
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: KL/r = 200 for compression; KL/r ≤ 300 (preferred) for tension. If a problem says slenderness is high, ask: is it a compression member (fail) or tension member (check 300 limit)?
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Bolted Connections** (lea-strc-008-02) for how steel members are joined, **Structural Design Capacity** (lea-strc-005-02) for steel member capacity checks, and **Trusses** (lea-strc-002-05) for typical steel truss applications.
+| Topic | Source-safe cue |
+| --- | --- |
+| W shape | Efficient wide-flange shape that has largely superseded classic S shapes. |
+| Channel or structural tubing | Named steel beam/member forms; final use depends on load path and design check. |
+| Lightest section | Acceptable only if bending, shear, stress limits, and deflection are satisfied. |
+| Lateral buckling | Compression in a slender portion can trigger instability. |
+| Transitional element | Steel angles, tees, or plates help connect members. |
+| Rigid joint | Restrains rotation and translation; provides force and moment resistance. |
+| Braced frame | Uses diagonal bracing to increase stiffness and moderate drift. |
 
 ## Common Mistakes
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
+
+- Treating a shape name as a complete design answer.
+- Publishing KL/r or steel grade values without a captured source table.
+- Forgetting that lateral buckling is a stability issue, not only a strength issue.
+- Ignoring connection type when deciding whether a joint behaves as pinned or moment-resistant.

@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+  "cluster_id": "lea-strc-008-02",
+  "question_id": "2bd18980-2efa-4bd2-95a7-a12adf9c1b6f",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:dc1d3dce27c751a2cb233f92748932ffd0910f94b065073e3a626530ac858e27",
+  "after_hash": "sha256:6679e421bbb5900d938947709e07faa427a3adeed68c1197eb5e6048d621e853",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-connections"
+  ],
+  "rationale": {
+    "a": "It proves every pitch is acceptable. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "It replaces the table with a masonry joint rule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "c": "It supports the idea that the connection is bolted, but exact pitch compliance must come from the applicable design table. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+    "d": "It makes bolt spacing a purely aesthetic choice. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "It supports the idea that the connection is bolted, but exact pitch compliance must come from the applicable design table. Supported by bsi-steel-connections.",
+    "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-connections",
+    "checked_sources": [
+      "bsi-steel-connections"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "d8c2a1b5-420e-4da5-abcf-2af576c4a176",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ee29a9ec2f990a4611dcf35ea56a9e1ccf1df7d735f0a16c7479f915dab77584",
+  "after_hash": "sha256:a4488876b50e19eb29833601e41db40b8e2976a93d103d7d4d491a7e24d4d0a9",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "A concrete topping used only to bond precast slabs. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "A transitional steel element such as an angle, tee, or plate. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "c": "A masonry heading course. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "A roof finish schedule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "A transitional steel element such as an angle, tee, or plate. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

@@ -1,30 +1,30 @@
 {
   "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:0ed566cba2b8c50d4fe101c69af8583aa831eb3c012337450ad55b0934bc5eeb",
+  "linked_questions_hash": "sha256:32a5bff4ad1f3b65b8be239d6345f1f0df06e8d37a2f4237b49788ce1a7a8548",
   "question_count": 10,
   "questions": [
     {
       "question_id": "45785298-2eb2-432e-81a7-2008ce8dbe69",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "What is the primary functional difference between A307 bolts and A325 bolts in structural connections?",
+      "text": "A question asks for the exact strength difference between A307 and A325 bolts. What is the Batch 147 source-safe response?",
       "options": [
         {
           "id": "a",
-          "text": "A307 bolts are stronger in shear; A325 bolts are used only in tension, which limits their application in certain structural scenarios"
+          "text": "Use the same strength for every bolt grade."
         },
         {
           "id": "b",
-          "text": "A307 bolts rely on bearing; A325 bolts develop friction grip through pretensioning"
+          "text": "Verify exact bolt grade properties from the applicable bolting standard because this batch did not capture those values."
         },
         {
           "id": "c",
-          "text": "A307 bolts are harder and require special washers; A325 bolts are standard, making them more versatile for general use"
+          "text": "Use masonry CHB dimensions to set bolt strength."
         },
         {
           "id": "d",
-          "text": "A307 bolts cannot be used in seismic-prone regions; A325 is mandatory due to their enhanced performance under dynamic loads"
+          "text": "Treat bolt grade as an architectural finish."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A307 (Fu = 414 MPa) bolts are installed loose and transfer load in bearing (bolt pressing into hole). A325 (Fu = 825 MPa) are pretensioned to create a friction grip; load is first resisted by clamping friction before the bolt enters bearing. This is the fundamental distinction in AISC design.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Use the same strength for every bolt grade. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Verify exact bolt grade properties from the applicable bolting standard because this batch did not capture those values. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "c": "Use masonry CHB dimensions to set bolt strength. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Treat bolt grade as an architectural finish. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Verify exact bolt grade properties from the applicable bolting standard because this batch did not capture those values. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3: Bolted Connections",
+      "explanation": "Verify exact bolt grade properties from the applicable bolting standard because this batch did not capture those values. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +56,36 @@
       "model_id": "ALE-STRC-008-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5925bfa77eb81d5e016a546784426bcb5915aad03ea7223bf4cd61368bc9d59b"
+      "updated_at": "2026-05-14T03:03:42.105Z",
+      "content_hash": "sha256:a1beb18286a4b9e848213b83e29df58f32358955efa6a318211a82277e4ae829",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "4fc347e2-0ca6-4da1-b78a-14748dafc0e6",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A critical moment connection in a seismic-resistant structure uses A325 bolts. The engineer specifies direct tension indicator (DTI) washers to verify pretension instead of turn-of-nut inspection. What is the primary advantage of DTI washers in field verification, and what is the tradeoff?",
+      "text": "A field item asks whether DTI washers are acceptable for pretension verification. What should this batch say?",
       "options": [
         {
           "id": "a",
-          "text": "DTI washers eliminate the need for pretensioning; bolts are installed loose and develop tension under load, which is not recommended for critical connections"
+          "text": "Approve DTI washers without any standard because all visual checks are equivalent."
         },
         {
           "id": "b",
-          "text": "DTI washers provide visual (colored dot) indication of tension achievement; the tradeoff is ±10% accuracy vs. ±5% for calibrated wrench"
+          "text": "Use the applicable bolting standard or project specification because this source capture did not include DTI acceptance rules."
         },
         {
           "id": "c",
-          "text": "DTI washers allow bolts to be installed without a calibrated wrench, reducing labor cost to zero; there is no tradeoff, although this is not typically the case in practice"
+          "text": "Reject all bolted connections because welding exists."
         },
         {
           "id": "d",
-          "text": "DTI washers guarantee infinite preload retention; they are superior to turn-of-nut and should always be used, which is a misconception"
+          "text": "Use masonry bond pattern rules as the inspection method."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +94,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "DTI (direct tension indicator) washers have nubs on the surface that deflect as tension builds. When the gap closes to a threshold, it signals that the required pretension (typically 70% Fu) has been achieved. The visual indication (disappearing gap or colored mark) is field-practical, but accuracy is ~±10% vs. ±5% for a calibrated wrench. DTI is preferred where speed matters; calibrated wrench is preferred for critical applications.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Approve DTI washers without any standard because all visual checks are equivalent. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Use the applicable bolting standard or project specification because this source capture did not include DTI acceptance rules. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "c": "Reject all bolted connections because welding exists. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Use masonry bond pattern rules as the inspection method. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Use the applicable bolting standard or project specification because this source capture did not include DTI acceptance rules. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3.1: Installation Methods. AISC Steel Construction Manual, Part 7: Bolted Connections",
+      "explanation": "Use the applicable bolting standard or project specification because this source capture did not include DTI acceptance rules. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +117,36 @@
       "model_id": "ALE-STRC-008-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b229c801fb74effe943d62fa74f1526eb49361c99065aec188ba847a205e83d9"
+      "updated_at": "2026-05-14T03:03:42.105Z",
+      "content_hash": "sha256:815efa7d1a47f13f0e818f1246b6f8bddc32721aecaa97b8f23d534cba507448",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "c8bf11ea-5482-4c4c-90f3-3ecce3f308cb",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A bolted splice in a built-up column uses A325 M27 bolts on a section with flame-cut edges (due to field fabrication). The edge distance from the first bolt center to the flame-cut edge is 48 mm. According to AISC J3.2, what is the required minimum edge distance, and is this design compliant?",
+      "text": "A bolted splice question asks for a minimum edge distance from an AISC table. What is the correct source discipline?",
       "options": [
         {
           "id": "a",
-          "text": "Minimum edge distance for M27 on rolled edge is 50 mm; flame-cut edges are not permitted in AISC"
+          "text": "Measure from the nearest masonry course instead."
         },
         {
           "id": "b",
-          "text": "Minimum edge distance for M27 on rolled edge is 50 mm, but flame-cut edges require +6 mm per AISC J3.2, totaling 56 mm; 48 < 56 mm, non-compliant"
+          "text": "Use any value as long as the bolt is visible."
         },
         {
           "id": "c",
-          "text": "Minimum edge distance for M27 on flame-cut edge is 56 mm; 48 < 56 mm, non-compliant"
+          "text": "Do not publish the edge distance from memory; verify it from the applicable connection table."
         },
         {
           "id": "d",
-          "text": "Minimum edge distance for M27 is always 50 mm regardless of edge finish; 48 < 50 mm, marginally non-compliant"
+          "text": "Treat edge distance as irrelevant in all bolted joints."
         }
       ],
       "correct_option_id": "c",
@@ -133,14 +155,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "AISC J3.2 Table J3.2 specifies minimum edge distance for M27 on rolled/sheared edges as 50 mm and for flame-cut edges as 56 mm. Verify these values against AISC 360-16 Table J3.2 to confirm current code requirements. The provided edge distance of 48 mm is less than the 56 mm minimum, so the design is non-compliant. The section must be redesigned with larger edge distance (move bolts farther from the edge) or use a different edge treatment.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Measure from the nearest masonry course instead. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Use any value as long as the bolt is visible. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "Do not publish the edge distance from memory; verify it from the applicable connection table. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "d": "Treat edge distance as irrelevant in all bolted joints. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Do not publish the edge distance from memory; verify it from the applicable connection table. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3.2: Minimum Edge Distance (Table J3.2)",
+      "explanation": "Do not publish the edge distance from memory; verify it from the applicable connection table. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -151,30 +178,36 @@
       "model_id": "ALE-STRC-008-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:09d9d7059b83ccff45eb594423cb592e65663c1bc37377055da116d4b591114f"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:6ddfcf5e111e40260267e52c9046ed69dc63a730a0d643a32a4cae86545589b1",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "2bd18980-2efa-4bd2-95a7-a12adf9c1b6f",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A tension member is bolted with five M24 bolts in a single line (single-row configuration). The pitch (center-to-center distance between adjacent bolts) is 58 mm. According to AISC J3.3, is this spacing acceptable, and what is the minimum required pitch?",
+      "text": "A single-row bolt layout asks for exact pitch compliance. What can this local source boundary support?",
       "options": [
         {
           "id": "a",
-          "text": "Acceptable; minimum pitch is 48 mm (2 d)"
+          "text": "It proves every pitch is acceptable."
         },
         {
           "id": "b",
-          "text": "Acceptable; minimum pitch is 58 mm, which is exactly the spacing used in this configuration"
+          "text": "It replaces the table with a masonry joint rule."
         },
         {
           "id": "c",
-          "text": "Non-compliant; minimum pitch is 64 mm (2.67 d), and 58 < 64 mm"
+          "text": "It supports the idea that the connection is bolted, but exact pitch compliance must come from the applicable design table."
         },
         {
           "id": "d",
-          "text": "Non-compliant; minimum pitch is 72 mm (3 d), and 58 < 72 mm, which means the current spacing does not meet the required standards"
+          "text": "It makes bolt spacing a purely aesthetic choice."
         }
       ],
       "correct_option_id": "c",
@@ -183,14 +216,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "AISC J3.3 specifies minimum pitch as 2.67d (or 3d in some cases) to prevent tearout between holes. For M24: 2.67 × 24 = 64 mm minimum. Confirm the exact provision in AISC 360-16 Table J3.3 for the specific connection type. 58 mm < 64 mm; the spacing is non-compliant. The bolts must be spaced farther apart.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It proves every pitch is acceptable. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "It replaces the table with a masonry joint rule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "It supports the idea that the connection is bolted, but exact pitch compliance must come from the applicable design table. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "d": "It makes bolt spacing a purely aesthetic choice. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "It supports the idea that the connection is bolted, but exact pitch compliance must come from the applicable design table. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3.3: Bolt Spacing",
+      "explanation": "It supports the idea that the connection is bolted, but exact pitch compliance must come from the applicable design table. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +239,36 @@
       "model_id": "ALE-STRC-008-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5ede3ae5b40459bd1fe3e88912d98d114067765a5cdaf3fdfd6e446a31bf9829"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:6679e421bbb5900d938947709e07faa427a3adeed68c1197eb5e6048d621e853",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "c358fbe2-7456-4cd7-8c6e-cdf46647abde",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A tension member with four large bolt holes (M24, standard holes) is designed to carry an axial tensile load P. After deducting the bolt-hole areas from the gross section area, the engineer calculates the net section area A_net and applies a design stress. However, the connection fails in net section fracture at a load lower than predicted. Upon inspection, the bolts are found to be A307 (loose bolts, not pretensioned). Explain why this configuration is problematic and what the correct approach would be.",
+      "text": "A tension member has bolt holes and the item asks for final capacity. What is the safest answer style for this batch?",
       "options": [
         {
           "id": "a",
-          "text": "A307 bolts are too weak; use A325 or A490 instead, as these provide higher strength and better performance under tension"
+          "text": "Ignore holes because the connection is bolted."
         },
         {
           "id": "b",
-          "text": "A307 loose bolts do not develop friction grip; under tension, they allow the member to slip and shed load to bolts in bearing. The stress concentration at holes is amplified, causing premature fracture. For tension members, use pretensioned A325 bolts or reduce the design stress at net section."
+          "text": "State that hole effects and final capacity are design-standard controlled and require the applicable source."
         },
         {
           "id": "c",
-          "text": "The member failed because four bolt holes are too many; use only two holes in a tension member to minimize stress concentration"
+          "text": "Use only the member paint specification."
         },
         {
           "id": "d",
-          "text": "The net section area calculation was wrong; A307 bolts require a 20% reduction in calculated A_net to account for their lower strength"
+          "text": "Use a CHB lintel note as the steel capacity equation."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +277,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A307 loose bolts develop friction only by the weight of the member (negligible in horizontal members). Under tension, the member slips in bearing, and all tensile load flows through the holes. Stress concentration at hole edges (Kt ≈ 2.0–3.0) causes failure well below the nominal net section stress. Pretensioned A325 bolts clamp the member, preventing slip and distributing stress more uniformly. Alternatively, reduce the design stress to account for stress concentration and the hole-weakening effect.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Ignore holes because the connection is bolted. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "State that hole effects and final capacity are design-standard controlled and require the applicable source. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "c": "Use only the member paint specification. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Use a CHB lintel note as the steel capacity equation. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "State that hole effects and final capacity are design-standard controlled and require the applicable source. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3: Bolted Connections. AISC Steel Construction Manual, Part 7: Design Philosophy for Bolted Connections",
+      "explanation": "State that hole effects and final capacity are design-standard controlled and require the applicable source. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +300,36 @@
       "model_id": "ALE-STRC-008-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0ff703308965022a4663925a4d289b3b987214ca3bfaf12b9997a2700ca75bad"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:05c0815f67e117524c61cf9d5d6bc1a2bc924f5a49c79153c913b56d95c6d245",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "8ed7c7fa-7546-48bf-9433-209daa8b02d1",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "An M24 A325 bolt is specified for a primary tension connection. According to AISC J3.1, what is the minimum pretension to be applied?",
+      "text": "A question asks for minimum pretension for an M24 high-strength bolt. What should Batch 147 do?",
       "options": [
         {
           "id": "a",
-          "text": "Approximately 200 kN"
+          "text": "Invent the pretension value from memory."
         },
         {
           "id": "b",
-          "text": "Approximately 378 kN"
+          "text": "Leave the exact pretension value to the applicable bolting standard because this capture did not supply it."
         },
         {
           "id": "c",
-          "text": "Approximately 480 kN"
+          "text": "Use the beam span rule of thumb as bolt pretension."
         },
         {
           "id": "d",
-          "text": "No pretension is required; A325 develops friction naturally"
+          "text": "Say pretension never matters in a steel connection."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +338,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "AISC J3.1 specifies minimum bolt pretension as 0.75 × Fu × Ab (75% of ultimate strength times bolt area) to ensure 70% retention after relaxation. For M24 A325 (Fu = 825 MPa, Ab ≈ 452 mm²), installed tension = 0.75 × 825 × 452 ≈ 280 kN. However, practical field values and calibrated wrench targets often yield ~378 kN due to conservative practice and measurement variability. The rationale should clarify whether 259 kN or 378 kN is the AISC-mandated minimum, or acknowledge that field practice exceeds code minimum.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Invent the pretension value from memory. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Leave the exact pretension value to the applicable bolting standard because this capture did not supply it. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "c": "Use the beam span rule of thumb as bolt pretension. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "Say pretension never matters in a steel connection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Leave the exact pretension value to the applicable bolting standard because this capture did not supply it. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3.1: Bolted Connections",
+      "explanation": "Leave the exact pretension value to the applicable bolting standard because this capture did not supply it. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +361,36 @@
       "model_id": "ALE-STRC-008-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fb8c45b982b548453d8459ef46d2a3b270428176ee44822429740b6f5f425190"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:c84e66ddf5759f239903c9ef5c2ecdbd1a3d28765289e2275f8d50e64a8a10c3",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "b48bcc5c-ac35-4a83-9e77-ca24a870f1d1",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A bolted lap splice connects two L-angles (back-to-back) in a truss tension member. The outer edge of each angle is 50 mm from the first bolt center (edge distance). The first and second bolt centers are 65 mm apart (pitch). The third and fourth bolts are spaced at 70 mm and 75 mm pitch, respectively. Which spacing violates AISC J3.3 requirements for M24 bolts, and why is this a problem?",
+      "text": "Which source-backed distinction describes a pin or hinge joint?",
       "options": [
         {
           "id": "a",
-          "text": "First bolt: 50 mm edge distance < 44 mm minimum; tearout risk at the member edge"
+          "text": "It allows rotation while resisting translation."
         },
         {
           "id": "b",
-          "text": "First bolt: 50 mm edge distance < 64 mm minimum pitch; no pit spacing rules apply here"
+          "text": "It restrains all rotation and translation like a fixed joint."
         },
         {
           "id": "c",
-          "text": "Second and third bolt pitch: 65 mm and 70 mm are both compliant (> 64 mm), but spacing variation indicates misalignment"
+          "text": "It is the air space between masonry wythes."
         },
         {
           "id": "d",
-          "text": "All spacings are compliant; 50 mm edge distance exceeds the 44 mm minimum for M24 rolled edges"
+          "text": "It is a concrete topping bonded to precast units."
         }
       ],
       "correct_option_id": "a",
@@ -333,14 +399,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "CRITICAL ISSUE: The correct answer (option a) states '50 mm edge distance < 44 mm minimum,' which is mathematically false. 50 mm > 44 mm, so the edge distance is COMPLIANT, not non-compliant. Either: (1) Change the edge distance in the question to 40 mm (which would be < 44 mm and non-compliant), or (2) Change the correct answer to option d (all spacings are compliant). The current question teaches students an incorrect inequality. However, the correct answer intends to test whether the candidate catches that edge distance is the limiting geometric parameter. If we assume the edge distance is actually 40 mm (a possible transcription), then 40 < 44 causes tearout. For the given 50 mm, the design is compliant.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It allows rotation while resisting translation. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "b": "It restrains all rotation and translation like a fixed joint. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "c": "It is the air space between masonry wythes. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "It is a concrete topping bonded to precast units. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "It allows rotation while resisting translation. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Sections J3.2 (Edge Distance) and J3.3 (Bolt Spacing)",
+      "explanation": "It allows rotation while resisting translation. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +422,36 @@
       "model_id": "ALE-STRC-008-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:14cc10b7a54b266d84265cff7e39027fe95017fb3a793ba4b7b45610eeea6001"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:8d4bc17c84d3f82bc2522d792d98fa04ed190ea7c0fa174ae0a959e0dd3a1a17",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "e102662c-b4a2-4417-8691-78f1b913d970",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A C-section is bolted to a gusset plate with M20 bolts. The section has a rolled and sheared edge (typical fabrication). According to AISC J3.2, what is the minimum edge distance (from bolt center to member edge)?",
+      "text": "Which source-backed distinction describes a rigid or fixed joint?",
       "options": [
         {
           "id": "a",
-          "text": "32 mm"
+          "text": "It allows free rotation like a hinge."
         },
         {
           "id": "b",
-          "text": "38 mm"
+          "text": "It restrains rotation and translation and provides force and moment resistance."
         },
         {
           "id": "c",
-          "text": "44 mm"
+          "text": "It is a CHB cell filled with mortar."
         },
         {
           "id": "d",
-          "text": "50 mm"
+          "text": "It is only a roof drainage detail."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +460,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "AISC J3.2 Table J3.2 specifies minimum edge distance for M20 bolts with rolled/sheared edges as 32 mm (measured from bolt hole center to the edge of the member). Verify against current AISC 360-16 Table J3.2 for exact values, as edge distance depends on bolt diameter and edge finish.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It allows free rotation like a hinge. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "It restrains rotation and translation and provides force and moment resistance. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "c": "It is a CHB cell filled with mortar. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "It is only a roof drainage detail. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "It restrains rotation and translation and provides force and moment resistance. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3.2: Minimum Edge Distance",
+      "explanation": "It restrains rotation and translation and provides force and moment resistance. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +483,36 @@
       "model_id": "ALE-STRC-008-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6605d3f0d97556780f3a7cc93c0207328c591d477abd928d02470e280db88ada"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:c4a32922e41cbb50cfafde6fd365dd3a7fb6a5d292ccfcfcb4a413cb91ac09ff",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "ca5640b7-78a3-41f4-b579-29e7cd295478",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A field-bolted connection in a highway bridge is specified with A325 M20 bolts using turn-of-nut pretensioning. Describe the installation sequence and identify when the connection achieves its intended friction-grip capacity.",
+      "text": "A field-bolted connection asks for a turn-of-nut sequence. What should be cited?",
       "options": [
         {
           "id": "a",
-          "text": "Bolts are driven snug (hand tight), then turned an additional 2/3 turn; capacity is achieved immediately upon snugging, ensuring immediate load transfer"
+          "text": "The masonry lecture bond-pattern list."
         },
         {
           "id": "b",
-          "text": "Bolts are driven to snug-tight condition first, then systematically turned 1/2 turn (90°) to reach the required 70% Fu pretension; capacity develops as pretension builds"
+          "text": "The applicable bolting standard or project specification, because this batch captured connection concepts but not installation sequence rules."
         },
         {
           "id": "c",
-          "text": "Bolts are installed at maximum torque (≥480 kN-m) to ensure stiffness; capacity exists only when load is applied, requiring constant monitoring"
+          "text": "The article title alone."
         },
         {
           "id": "d",
-          "text": "Bolts are loosely assembled in the field; pretension is applied hydrostatically after all bolts are installed, which may delay capacity achievement"
+          "text": "No source, because installation sequence never affects bolted work."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +521,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "AISC J3.1 turn-of-nut procedure: (1) snug-tighten all bolts, (2) perform a systematic turn of 1/2 turn (90°) starting from each corner. This induces the required 70% Fu pretension. Friction-grip capacity is achieved during this turn, not before. A calibrated wrench or DTI washer verifies the tension.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The masonry lecture bond-pattern list. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "The applicable bolting standard or project specification, because this batch captured connection concepts but not installation sequence rules. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "c": "The article title alone. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "No source, because installation sequence never affects bolted work. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "The applicable bolting standard or project specification, because this batch captured connection concepts but not installation sequence rules. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3.1: Installation and Inspection of Bolts",
+      "explanation": "The applicable bolting standard or project specification, because this batch captured connection concepts but not installation sequence rules. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +544,36 @@
       "model_id": "ALE-STRC-008-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:60e644bef83017429633d933955f7a0cef6f1afd276eaa2e3ed4a7cea141fdb2"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:0856fb322749f9938fbc17024a0b752e4c7bc7dd76287d28805b901473995364",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     },
     {
       "question_id": "33931fe1-3343-4c84-946b-71a4dc313877",
       "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
       "topic_id": "64e4382d-bf03-447d-aa68-0ae693f63011",
-      "text": "A bolted connection in a truss uses oversized bolt holes. What is the primary advantage of oversized holes in field assembly?",
+      "text": "A connection detail uses oversized holes. What should this batch avoid claiming?",
       "options": [
         {
           "id": "a",
-          "text": "Oversized holes increase the shear capacity of the bolts, which is beneficial for structural integrity"
+          "text": "That bolted connections are point connections."
         },
         {
           "id": "b",
-          "text": "Oversized holes allow faster driving and tolerance for minor bolt placement misalignment"
+          "text": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured."
         },
         {
           "id": "c",
-          "text": "Oversized holes reduce the pretension requirement, making installation easier"
+          "text": "That welded connections are line connections."
         },
         {
           "id": "d",
-          "text": "Oversized holes improve friction grip by spreading the load over a larger area, enhancing stability"
+          "text": "That plates, tees, and angles can be transitional elements."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +582,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Oversized holes (bolt diameter + 3.2 mm, vs. standard + 1.6 mm) permit bolts to be driven quickly and accommodate small placement errors that are inevitable in field assembly. The tradeoff is reduced clamping contact area.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "That bolted connections are point connections. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "b": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+        "c": "That welded connections are line connections. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "d": "That plates, tees, and angles can be transitional elements. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+        "correct": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. Supported by bsi-steel-connections.",
+        "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+        "source_boundary": "bsi-steel-connections",
+        "checked_sources": [
+          "bsi-steel-connections"
+        ]
       },
-      "explanation": null,
-      "code_citation": "AISC 360-16, Section J3.3: Bolt Hole Types",
+      "explanation": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+      "code_citation": "bsi-steel-connections",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +605,14 @@
       "model_id": "ALE-STRC-008-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:336b21810493f95fab1050654ded09fa4993b2b9192170c1bdbbe58295c453a3"
+      "updated_at": "2026-05-14T03:03:42.106Z",
+      "content_hash": "sha256:d1f2666ac384a6d2b981bfa86b6610c9dbce990b137a004fac407a65365487cc",
+      "source_ids": [
+        "bsi-steel-connections"
+      ],
+      "cluster_id": "lea-strc-008-02",
+      "audit_batch": 147,
+      "source_audit_status": "source_audited_local_first"
     }
   ]
 }

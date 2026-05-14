@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "20091ac7-2715-479e-bbfb-30e9aa2c2f6e",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:cc33228393b4c7161d4dd33459a293029254bdf2f0fdc4b62cf4a8ae7e4f2023",
+  "after_hash": "sha256:3406a570ae5b440aa2a14970b9954d13150718c5dd2d32aa0190671407ea4788",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "Assume the connection works because a plate is visible. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Confirm the plate or other transitional element completes the intended load path through the welds or bolts. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "c": "Check only the wall paint color. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "d": "Use a CHB cell count as the weld acceptance rule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Confirm the plate or other transitional element completes the intended load path through the welds or bolts. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}

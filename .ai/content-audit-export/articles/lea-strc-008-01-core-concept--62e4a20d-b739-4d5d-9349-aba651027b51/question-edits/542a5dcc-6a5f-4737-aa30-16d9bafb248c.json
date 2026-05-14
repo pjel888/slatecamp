@@ -1,0 +1,25 @@
+{
+  "batch": 147,
+  "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+  "cluster_id": "lea-strc-008-01",
+  "question_id": "542a5dcc-6a5f-4737-aa30-16d9bafb248c",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:ce6dd4b8964959ee3c15976e04a2660619bcfe2976f5908a8b4ebada627a781d",
+  "after_hash": "sha256:f2bb3af931d2e19ebe029273f1453ae6b7fae0637c050669b8741e5d35415b7b",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bsi-steel-members"
+  ],
+  "rationale": {
+    "a": "Structural tubing always eliminates lateral-force design. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "b": "Structural tubing is the same as a masonry collar joint. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "c": "Structural tubing is a recognized steel member form, but exact capacity and suitability still require the applicable design check. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+    "d": "Structural tubing never needs fabrication or connection review. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+    "correct": "Structural tubing is a recognized steel member form, but exact capacity and suitability still require the applicable design check. Supported by bsi-steel-members.",
+    "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+    "source_boundary": "bsi-steel-members",
+    "checked_sources": [
+      "bsi-steel-members"
+    ]
+  }
+}
