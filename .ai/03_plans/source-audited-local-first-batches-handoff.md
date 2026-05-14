@@ -1,3 +1,15 @@
+## Batch 160 Local-First Closure Handoff - 2026-05-14T15:26:35+08:00
+
+Batch 160 opened after accepted/pushed Batch 159 at `326d29c726c92480c111d1f7e17be9ef1ea097a2`. It selected zero article clusters and zero linked-question edits because no eligible source-auditable residual cluster remains under the local-first rule.
+
+Closure evidence is recorded in `.ai/content-audit-export/source-audited-article-batch-160-local-first-report.md`, `.ai/content-audit-export/source-audited-article-batch-160-local-first-ledger.json`, `.ai/content-audit-export/source-audited-article-batch-160-local-first-scoped-checks.json`, and `.ai/03_plans/production-line-batch-160-reservation-manifest.json`. QA-ready memo: `.ai/03_plans/batch-160-independent-quality-review.md`.
+
+Remaining blockers are six NSCP/seismic/wind residuals (`lea-strc-004-02`, `lea-strc-007-03`, `lea-strc-007-05`, `lea-strc-012-01`, `lea-util-004-05`, `lea-util-004-08`) and two timber-specific residuals (`lea-strc-009-01`, `lea-strc-009-02`). Reopen only after legitimate NSCP acquisition/extraction, timber-specific source acquisition, or explicit production-owner scope expansion.
+
+Exact stage paths are listed in `.ai/03_plans/batch-160-git-handoff-stage-paths.txt`; stage only those paths for `chore(content): close source-audited batch 160`. No Supabase push, deploy, production DB mutation, main merge, force-push, article folder edit, question edit, source folder edit, or unrelated dirty-file staging is authorized.
+
+---
+
 ## Batch 135 Local-First Handoff - 2026-05-14T07:05:00.000+08:00
 
 Local validation passed for 5 sourceable residual theory bundles: lea-theo-005-09-core-concept, lea-theo-005-10-core-concept, lea-theo-005-11-core-concept, lea-theo-006-04-core-concept, lea-theo-007-01-core-concept. Batch 135 applies 54/54 linked-question rewrites with zero answer-key changes and local captured source artifacts.

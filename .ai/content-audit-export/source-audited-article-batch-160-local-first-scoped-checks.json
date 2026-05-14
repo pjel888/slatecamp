@@ -1,0 +1,105 @@
+{
+  "batch": 160,
+  "batch_id": "source-audited-batch-160-local-first-closure",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T15:26:35+08:00",
+  "scope": {
+    "selected_articles": [],
+    "selected_article_count": 0,
+    "selected_question_edit_count": 0,
+    "article_folder_edits": [],
+    "source_folder_edits": [],
+    "closure_artifacts": [
+      ".ai/content-audit-export/source-audited-article-batch-160-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-160-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-160-local-first-scoped-checks.json",
+      ".ai/03_plans/production-line-batch-160-reservation-manifest.json",
+      ".ai/03_plans/batch-160-independent-quality-review.md",
+      ".ai/03_plans/batch-160-git-handoff-stage-list.md",
+      ".ai/03_plans/batch-160-git-handoff-stage-paths.txt",
+      ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+      ".ai/03_plans/source-audited-production-line-coordination.md"
+    ]
+  },
+  "checks": [
+    {
+      "name": "batch_160_absence_scan",
+      "status": "pass",
+      "evidence": "No Batch 160 report, ledger, scoped checks, manifest, QA memo, or handoff paths existed before this closure packet."
+    },
+    {
+      "name": "branch_head_origin_batch_159_baseline",
+      "status": "pass",
+      "evidence": "HEAD and origin/3dlab-gray-viewport-bg both resolve to 326d29c726c92480c111d1f7e17be9ef1ea097a2."
+    },
+    {
+      "name": "residual_eligibility_scan",
+      "status": "pass_no_eligible_clusters",
+      "evidence": "Batch 156, 158, and 159 consumed the last residuals with local source support; remaining residuals are six NSCP/seismic/wind clusters and two timber-specific clusters without legitimate local source support."
+    },
+    {
+      "name": "nscp_hash_evidence_check",
+      "status": "pass_blocked_null_byte_file_confirmed",
+      "evidence": "Local NSCP 2015 path exists at 92,666,420 bytes but file reports data and first 32 bytes are null bytes."
+    },
+    {
+      "name": "timber_specific_source_scan",
+      "status": "pass_no_exact_species_or_stress_group_source",
+      "evidence": "Local searches returned generic wood/forest/mechanics references, not NatCor, species durability tables, Philippine stress group values, or legitimate NSCP timber tables."
+    },
+    {
+      "name": "compose_diff_validate",
+      "status": "not_applicable_no_selected_articles",
+      "evidence": "No article folders were selected or edited."
+    },
+    {
+      "name": "ui_block_validation",
+      "status": "not_applicable_no_selected_articles",
+      "evidence": "No UI block edits were made."
+    },
+    {
+      "name": "linked_question_question_edit_parity",
+      "status": "not_applicable_no_selected_articles",
+      "evidence": "No linked-question bundle was selected; question_edit_count is 0 by closure design."
+    },
+    {
+      "name": "stale_compose_error_scan",
+      "status": "not_applicable_no_selected_article_folders",
+      "evidence": "Batch 160 did not select article folders, so stale compose-error checks are limited to preserving existing unrelated dirty/deleted sidecars outside this closure scope."
+    },
+    {
+      "name": "json_parse",
+      "status": "pass",
+      "evidence": "Node JSON.parse succeeded for Batch 160 ledger, scoped checks, and reservation manifest."
+    },
+    {
+      "name": "placeholder_internal_note_source_gap_scan",
+      "status": "pass",
+      "evidence": "Scoped scan over Batch 160 closure artifacts found no task/fix placeholders, internal-note markers, raw UI markers, or unresolved template markers."
+    },
+    {
+      "name": "targeted_content_audit_tests",
+      "status": "pass",
+      "evidence": "bun test scripts/content-audit/source-verification-invariants.test.ts passed: 7 pass, 0 fail."
+    },
+    {
+      "name": "scoped_git_diff_check",
+      "status": "pass",
+      "evidence": "Scoped diff check passed for 2 tracked paths and 7 untracked Batch 160 paths listed in .ai/03_plans/batch-160-git-handoff-stage-paths.txt."
+    }
+  ],
+  "blockers": {
+    "count": 8,
+    "clusters": [
+      "lea-strc-004-02",
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-012-01",
+      "lea-util-004-05",
+      "lea-util-004-08",
+      "lea-strc-009-01",
+      "lea-strc-009-02"
+    ]
+  },
+  "final_status": "passed_local_validation_git_handoff_ready"
+}

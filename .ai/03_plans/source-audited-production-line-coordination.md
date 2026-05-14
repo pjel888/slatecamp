@@ -1,3 +1,14 @@
+## Batch 160 Closure Coordination Update - 2026-05-14T15:26:35+08:00
+
+- Mode: local-first residual eligibility closure.
+- Selected bundles: none.
+- Scope evidence: 0 article clusters, 0 linked-question edits, 8 preserved blockers.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main, no force-push, no article/source/question edits, no unrelated dirty-file staging.
+- Closure basis: Batch 156 consumed `lea-strc-009-03`, Batch 158 consumed `lea-matl-009-02`, and Batch 159 consumed `lea-theo-008-02` plus `lea-theo-008-03`. Remaining residuals still require legitimate NSCP/seismic/wind source acquisition or timber-specific NatCor/forestry/code evidence.
+- Stop condition: write Batch 160 closure artifacts, parse/check them, then stage only `.ai/03_plans/batch-160-git-handoff-stage-paths.txt` for `chore(content): close source-audited batch 160`. Reopen only after legitimate source acquisition or explicit production-owner scope expansion.
+
+---
+
 ## Batch 135 Coordination Update - 2026-05-14T07:05:00.000+08:00
 
 - Mode: local-first source-map/reservation pass.

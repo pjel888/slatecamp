@@ -1,0 +1,70 @@
+{
+  "batch": 160,
+  "batch_id": "reservation-batch-160-local-first-closure",
+  "manifest_type": "production_line_reservation_closure",
+  "status": "freeze_no_eligible_source_auditable_clusters",
+  "generated_at": "2026-05-14T15:26:35+08:00",
+  "baseline": "326d29c726c92480c111d1f7e17be9ef1ea097a2",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "post_batch_159_eligibility_gate",
+  "task": "Select the next eligible source-auditable residual cluster after accepted Batch 159, or close if none remains.",
+  "constraints": {
+    "local_only": true,
+    "no_supabase_push": true,
+    "no_deploy": true,
+    "no_db_mutation": true,
+    "no_main_merge": true,
+    "no_force_push": true,
+    "no_git_stage_commit_push": true,
+    "preserve_unrelated_dirty_files": true,
+    "no_article_or_question_edits_without_sourceable_selection": true,
+    "preserve_audit_intelligence": true
+  },
+  "selection_rule": "Reserve only clusters whose article and linked questions can both be source-audited against local raw/refined sources or already captured authoritative provenance. After accepted Batch 159, no remaining residual cluster satisfies that rule.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "latest_accepted_batch": 159,
+    "latest_accepted_commit": "326d29c726c92480c111d1f7e17be9ef1ea097a2",
+    "reserved_ids_found_in_batch_160_scope": [],
+    "notes": [
+      "Batch 156 consumed lea-strc-009-03.",
+      "Batch 158 consumed lea-matl-009-02.",
+      "Batch 159 consumed lea-theo-008-02 and lea-theo-008-03.",
+      "No Batch 160 or later live artifacts existed before this closure packet."
+    ]
+  },
+  "reserved_clusters": [],
+  "selected_clusters": [],
+  "excluded_clusters": {
+    "requires_legitimate_nscp_purchase_or_extraction": [
+      "lea-strc-004-02",
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-012-01",
+      "lea-util-004-05",
+      "lea-util-004-08"
+    ],
+    "requires_timber_specific_source_acquisition": [
+      "lea-strc-009-01",
+      "lea-strc-009-02"
+    ]
+  },
+  "source_capture_status": {
+    "new_source_maps_created": [],
+    "source_hashes_checked": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+        "status": "blocked_unreadable_null_byte_file",
+        "bytes": 92666420,
+        "first_32_bytes_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ],
+    "status": "PASS_NO_NEW_SOURCE_CLAIMS",
+    "notes": [
+      "No internet capture was attempted.",
+      "No source folder was edited.",
+      "No article or linked-question content was changed."
+    ]
+  },
+  "reservation_stop_condition": "Batch 160 is a closure packet. Reopen only after legitimate NSCP acquisition/extraction, timber-specific source acquisition, or an explicit production-owner scope change."
+}

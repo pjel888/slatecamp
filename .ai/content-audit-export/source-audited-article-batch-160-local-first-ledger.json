@@ -1,0 +1,122 @@
+{
+  "batch": 160,
+  "batch_id": "source-audited-batch-160-local-first-closure",
+  "status": "closure_no_eligible_source_auditable_clusters",
+  "generated_at": "2026-05-14T15:26:35+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline": {
+    "head": "326d29c726c92480c111d1f7e17be9ef1ea097a2",
+    "origin": "326d29c726c92480c111d1f7e17be9ef1ea097a2",
+    "accepted_prior_batch": 159,
+    "accepted_prior_commit": "326d29c726c92480c111d1f7e17be9ef1ea097a2"
+  },
+  "selected_clusters": [],
+  "entries": [],
+  "article_count": 0,
+  "question_edit_count": 0,
+  "answer_key_changes": 0,
+  "blockers": 8,
+  "blocked_clusters": [
+    {
+      "cluster_id": "lea-strc-004-02",
+      "title": "NSCP seismic zones",
+      "blocker_type": "legitimate_nscp_source_required",
+      "reason": "Exact Philippine seismic zone factors and code-source claims require legitimate NSCP text; local NSCP file is corrupted null-byte data."
+    },
+    {
+      "cluster_id": "lea-strc-007-03",
+      "title": "Deflection limits",
+      "blocker_type": "legitimate_nscp_source_required",
+      "reason": "Exact NSCP table and section support for deflection limits is unavailable locally."
+    },
+    {
+      "cluster_id": "lea-strc-007-05",
+      "title": "Embedded conduits",
+      "blocker_type": "legitimate_nscp_source_required",
+      "reason": "Exact NSCP conduit size, spacing, cover, and reinforcement compensation claims are unavailable locally."
+    },
+    {
+      "cluster_id": "lea-strc-012-01",
+      "title": "Wind load provisions",
+      "blocker_type": "legitimate_nscp_source_required",
+      "reason": "Exact Philippine wind-speed, exposure, enclosure, and low-rise/flexible-structure thresholds require legitimate NSCP source support."
+    },
+    {
+      "cluster_id": "lea-util-004-05",
+      "title": "Seismic bracing and earthquake resilience",
+      "blocker_type": "legitimate_nscp_and_nonstructural_source_required",
+      "reason": "MEPF seismic/wind/emergency-power claims depend on NSCP and supplementary nonstructural standards that are not locally captured for the residual."
+    },
+    {
+      "cluster_id": "lea-util-004-08",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "blocker_type": "legitimate_nscp_and_nonstructural_source_required",
+      "reason": "Exact NSCP nonstructural component tables and related PHIVOLCS/ASME/FEMA claims are not locally captured in a source-safe packet."
+    },
+    {
+      "cluster_id": "lea-strc-009-01",
+      "title": "Timber decay and termite resistance",
+      "blocker_type": "timber_specific_source_required",
+      "reason": "Species durability, heartwood/sapwood, and termite/decay tables need NatCor, forestry, or legitimate code evidence; generic wood references are insufficient."
+    },
+    {
+      "cluster_id": "lea-strc-009-02",
+      "title": "Philippine timber stress groups",
+      "blocker_type": "timber_specific_source_required",
+      "reason": "Philippine species stress groups and allowable stress values need NatCor, forestry, or legitimate NSCP timber evidence."
+    }
+  ],
+  "confirmed_consumed_residuals": [
+    {
+      "batch": 156,
+      "cluster_id": "lea-strc-009-03",
+      "source_boundary": "generic ASD mechanics only"
+    },
+    {
+      "batch": 158,
+      "cluster_id": "lea-matl-009-02",
+      "source_boundary": "CSI/WBDG public MasterFormat and SectionFormat source maps"
+    },
+    {
+      "batch": 159,
+      "cluster_id": "lea-theo-008-02",
+      "source_boundary": "locally captured spatial justice / PRC / RA 9266 / CPDAS / academic context sources"
+    },
+    {
+      "batch": 159,
+      "cluster_id": "lea-theo-008-03",
+      "source_boundary": "locally captured digital architecture / PRC / RA 9266 / SPP / CPDAS / academic sources"
+    }
+  ],
+  "evidence_paths": [
+    ".ai/content-audit-export/source-audited-article-batch-160-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-160-local-first-scoped-checks.json",
+    ".ai/03_plans/production-line-batch-160-reservation-manifest.json",
+    ".ai/03_plans/batch-160-independent-quality-review.md",
+    ".ai/03_plans/batch-160-git-handoff-stage-list.md",
+    ".ai/03_plans/batch-160-git-handoff-stage-paths.txt"
+  ],
+  "source_hash_checks": [
+    {
+      "artifact_id": "local_nscp_2015_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+      "bytes": 92666420,
+      "file_type": "data",
+      "first_32_bytes_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "blocked_unreadable_null_byte_file"
+    }
+  ],
+  "validation_claims": {
+    "batch_160_absence_scan": "pass",
+    "branch_head_origin_batch_159_baseline": "pass",
+    "residual_eligibility_scan": "pass_no_eligible_clusters",
+    "selected_article_count": "pass_0",
+    "question_edit_count": "pass_0",
+    "no_article_folder_edits": "pass",
+    "no_source_folder_edits": "pass",
+    "json_parse": "pass",
+    "targeted_content_audit_tests": "pass_bun_test_source_verification_invariants_7_pass_0_fail",
+    "scoped_git_diff_check": "pass_batch_160_paths"
+  },
+  "stop_condition": "Closure packet only; no article/question/source edit is authorized until legitimate NSCP or timber-specific source acquisition creates eligible residual work."
+}
