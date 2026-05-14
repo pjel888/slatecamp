@@ -1,0 +1,166 @@
+{
+  "recovery_id": "nscp-2015-recovery-2026-05-14",
+  "date": "2026-05-14",
+  "repository": "slatecamp",
+  "target_document": "National Structural Code of the Philippines 2015",
+  "edition": "7th Edition, Volume I: Buildings, Towers, and Other Vertical Structures",
+  "isbn": "978-621-96063-1-8",
+  "publisher": "Association of Structural Engineers of the Philippines, Inc. (ASEP)",
+  "publication_year": "2015 (First Printing 2016)",
+  "copyright": "ASEP — all rights reserved",
+  "superseded_by": "NSCP 2024 (8th Edition), announced May 2024 at ASEP SMART Conference",
+
+  "local_file_status": {
+    "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+    "size_bytes": 92666420,
+    "size_mb": 88.37,
+    "sha256": "12e04770e37571def323e6d0f29b0d20c7c4d4e088d39f519e0f2e0b5d91cc54",
+    "file_type": "data (not a valid PDF)",
+    "first_1024_bytes_all_null": true,
+    "verdict": "CORRUPTED — 88 MB of null bytes, unrecoverable via any PDF reader or extraction tool"
+  },
+
+  "recovery_attempts": [
+    {
+      "source": "ASEP Official (aseponline.org)",
+      "type": "publisher direct purchase",
+      "contact": "aseponline@gmail.com, (+632) 410-0483",
+      "address": "Suite 713, Future Point Plaza Condominium 1, 112 Fanay Avenue, Quezon City, Philippines 1100",
+      "url": "https://aseponline.org/",
+      "status": "Site down (500 error) on access date; publication is commercial, must purchase",
+      "accessible": false,
+      "authoritative": true,
+      "notes": "Cleanest path: purchase legitimate copy, then extract text via OCR for educational fair use"
+    },
+    {
+      "source": "Internet Archive (archive.org/details/NSCP2015)",
+      "type": "community-uploaded OCR text (DJVU)",
+      "url": "https://archive.org/details/NSCP2015",
+      "text_url": "https://archive.org/stream/NSCP2015/NSCP-2015_djvu.txt",
+      "uploader": "Unknown (not ASEP-authorized)",
+      "ocr_engine": "ABBYY FineReader 11.0, 600 PPI",
+      "size": "~1.7 GB (all formats)",
+      "views": "344,588 as of access date",
+      "accessible": true,
+      "authoritative": false,
+      "legal_status": "GRAY AREA — uploaded without ASEP authorization; 'Community Texts' repository; no stated license. May be used for text extraction experiments but CANNOT be cited as canonical source.",
+      "notes": "Full OCR text available for download. The only machine-readable full-text source found. Extraction quality appears good (Professional OCR). USE WITH CAUTION — unauthorized upload."
+    },
+    {
+      "source": "ideCAD (idecad.com)",
+      "type": "commercial software marketing page",
+      "url": "https://idecad.com/architecture-engineering-construction/building-design/nscp-2015/",
+      "accessible": true,
+      "authoritative": false,
+      "notes": "Turkish BIM software company. 'Download Free PDF E-Book' button leads to lead-generation gate. Not an authoritative ASEP channel."
+    },
+    {
+      "source": "DPWH FOI Portal (foi.gov.ph)",
+      "type": "Philippine government Freedom of Information request response",
+      "url": "https://foi.gov.ph/agencies/dpwh/nscp-1992-and-2001",
+      "accessible": true,
+      "authoritative": true,
+      "notes": "DPWH explicitly states NSCP distribution is under ASEP authority. Government does NOT provide free copies. Confirms NSCP is a commercial publication, not public domain."
+    },
+    {
+      "source": "Philippine university libraries (UP Diliman, Mapua, DLSU, JHCSC, etc.)",
+      "type": "physical library holdings",
+      "accessible": "in-person only",
+      "authoritative": true,
+      "notes": "Physical copies exist in Philippine university libraries. ISBN 978-621-96063-1-8 confirmed via J.H. Cerilles State College OPAC catalog."
+    },
+    {
+      "source": "Scribd, PDFCoffee, Academia.edu",
+      "type": "unauthorized uploads / piracy conduits",
+      "accessible": true,
+      "authoritative": false,
+      "verdict": "DO NOT USE — unauthorized uploads of copyrighted ASEP publication. DMCA/Copyright notices present. Would expose SlateCamp to takedown risk."
+    }
+  ],
+
+  "secondary_sources_legitimate": [
+    {
+      "title": "Frederick Sison NSCP 2015 Overview",
+      "type": "ASEP lecture series slides (103 slides)",
+      "url": "https://scribd.com/document/441832301",
+      "notes": "Engineer-authored educational summary of NSCP 2015 updates. Safe to cite."
+    },
+    {
+      "title": "Ronaldo Ison NSCP 2015 Ch2 Loads Update (PP03)",
+      "type": "ASEP lecture slides",
+      "url": "https://kupdf.net/download/pp03-asep-nscp-2015-update-on-ch2-minimum-design-loadspdf",
+      "notes": "Load combination lecture. Safe educational reference."
+    },
+    {
+      "title": "ASEP NSCP 2015 Ch1 Overview (PP02)",
+      "type": "ASEP lecture slides",
+      "url": "https://scribd.com/document/345351837",
+      "notes": "Chapter 1 revisions summary."
+    }
+  ],
+
+  "nscp_edition_history": {
+    "1st_1972": "NSCB, based on UBC 1970",
+    "2nd_1981": "Based on UBC 1979",
+    "3rd_1987": "Based on UBC 1988",
+    "4th_1992": "PRC adoption; based on UBC 1988",
+    "5th_2001": "Based on UBC 1997",
+    "6th_2010": "Based on ASCE/SEI 7-05",
+    "7th_2015": "NSCP 2015 — THIS EDITION — based on ASCE/SEI 7-10, ACI 318-14",
+    "8th_2024": "NSCP 2024 — CURRENT EDITION — announced May 2024, ASCE 7 alignment"
+  },
+
+  "blocked_clusters": [
+    {
+      "cluster_id": "lea-strc-004-02",
+      "title": "NSCP Seismic Zones",
+      "needs": "NSCP 2015 Section 5.2 (seismic zones and zone coefficients), Figure 5-2 (seismic zone map), Z=0.2 for Palawan/Tawi-Tawi/Sulu, Z=0.4 for all other provinces",
+      "status": "BLOCKED — needs NSCP text extraction"
+    },
+    {
+      "cluster_id": "lea-strc-007-03",
+      "title": "Deflection Limits",
+      "needs": "NSCP 2015 Table 9.5.1 (span-to-depth ratios: L/20, L/24, L/28, L/10 for solid slabs; L/16, L/18.5, L/21, L/8 for beams/ribbed slabs), Section 409.9.2.2 (joist top slab thickness)",
+      "status": "BLOCKED — needs NSCP text extraction"
+    },
+    {
+      "cluster_id": "lea-strc-007-05",
+      "title": "Embedded Conduits",
+      "needs": "NSCP 2015 Section 406.3 (conduit size limits: h/3 for slabs/beams, 0.04A for columns, w_rib/4 for joists; spacing 3 diameters; cover requirements)",
+      "status": "BLOCKED — needs NSCP text extraction"
+    },
+    {
+      "cluster_id": "lea-strc-012-01",
+      "title": "Wind Load Provisions",
+      "needs": "NSCP 2015 wind load chapter (basic wind speed V, Exposure A/B/C definitions, 50-year return period, low-rise ≤18m, flexible structure thresholds)",
+      "status": "BLOCKED — needs NSCP text extraction"
+    },
+    {
+      "cluster_id": "lea-strc-009-01",
+      "title": "Timber Decay/Termite Resistance",
+      "needs": "NatCor timber standards or NSCP 2015 timber chapter (Philippine species durability tables: Narra, Kamagong, Dao, Tangile; heartwood/sapwood rules; 5% sapwood limit; 90% face rule)",
+      "status": "STILL BLOCKED — also needs NatCor/Philippine Forestry Code source capture beyond NSCP"
+    },
+    {
+      "cluster_id": "lea-strc-009-02",
+      "title": "Philippine Timber Stress Groups",
+      "needs": "NSCP timber stress tables or NatCor stress group classifications (Group I/II/III allowable stresses: Fb, Fv, Fc for Philippine species)",
+      "status": "STILL BLOCKED — also needs NatCor/Philippine Forestry Code source capture beyond NSCP"
+    },
+    {
+      "cluster_id": "lea-strc-009-03",
+      "title": "Timber ASD (Allowable Stress Design)",
+      "needs": "Generic ASD formulas (fb=M/S, fv=3V/2A) sourceable from local textbooks; NSCP timber adjustment factors (CD, CM, Ct, CL, Cf, Ci) not yet captured",
+      "status": "READY_WITH_LOCAL_SOURCES — generic formulas from local textbooks; NSCP adjust factors deferred"
+    }
+  ],
+
+  "recommended_next_steps": [
+    "1. PURCHASE: Contact ASEP (aseponline@gmail.com) to purchase a legitimate NSCP 2015 7th Edition copy. Price was ₱1,299–₱2,959 at retail.",
+    "2. EXTRACT: Once purchased, run PyMuPDF OCR extraction on the legitimate copy. Focus chapters: 1-5 (seismic), 9 (concrete serviceability), 4 (concrete embedment), wind load chapter.",
+    "3. CONVERT: Produce raw_markdown and refined_markdown in vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/.",
+    "4. UNBLOCK: After extraction, lea-strc-004-02, 007-03, 007-05, 012-01 become eligible for Batch 156+ reservation.",
+    "5. SECONDARY: For timber clusters (009-01, 009-02), also acquire NatCor timber standards or Philippine Forestry Code — NSCP alone may not suffice for species-specific durability/stress tables.",
+    "6. TIMELINE: Consider whether to wait for NSCP 2024 (8th Edition) instead, as it is the current edition. The 2015 edition may still be used for exam prep while the new edition transitions."
+  ]
+}
