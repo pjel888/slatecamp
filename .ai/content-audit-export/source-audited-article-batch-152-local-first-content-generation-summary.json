@@ -1,0 +1,44 @@
+{
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "generated_at": "2026-05-14T04:41:29.386Z",
+  "status": "passed_local_validation_git_handoff_ready",
+  "articles": [
+    {
+      "cluster_id": "lea-matl-007-04",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "title": "Paint systems",
+      "source_ids": [
+        "salvan-paint-protective-coatings-b152",
+        "bci-5e-finish-selection-basics-b152"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:422c4640d5c8f303bc9fa60d086133656eb145df28fc7c043895a7af885d35c5",
+      "candidate_sha256": "sha256:422c4640d5c8f303bc9fa60d086133656eb145df28fc7c043895a7af885d35c5"
+    },
+    {
+      "cluster_id": "lea-matl-007-05",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "title": "Finish schedule",
+      "source_ids": [
+        "bci-5e-finish-selection-basics-b152",
+        "salvan-finish-specification-paint-b152"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:7b02626960fa55faf4de3bb7c793afefc2d7d2213b578440a7cd6c054c2587af",
+      "candidate_sha256": "sha256:7b02626960fa55faf4de3bb7c793afefc2d7d2213b578440a7cd6c054c2587af"
+    },
+    {
+      "cluster_id": "lea-matl-007-06",
+      "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+      "title": "Countertop materials range from high-performance engineered",
+      "source_ids": [
+        "bci-5e-plastic-laminate-countertops-b152",
+        "salvan-plastic-laminates-b152"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:85f54fe2e33376fd82dc33c5262176997a1b9fa77851d85be224f7e378fdf72a",
+      "candidate_sha256": "sha256:85f54fe2e33376fd82dc33c5262176997a1b9fa77851d85be224f7e378fdf72a"
+    }
+  ]
+}

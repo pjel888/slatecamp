@@ -1,65 +1,69 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+  "cluster_id": "lea-matl-007-05",
   "question_id": "011b5df2-94f0-4ae7-9383-193ad275bb71",
-  "baseline_hash": "sha256:3d706f7bd281f3d96ded3237392d0d29a943c48c5d6b0fc49ddfc3af1a7754c8",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-05-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
-    "parent_article_slug": "lea-matl-007-05-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited finish_schedule scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:845f75135b866d9384c55f6c44e9e433d151409e8cbefee7b732db0b6270f679",
+  "after_hash": "sha256:845f75135b866d9384c55f6c44e9e433d151409e8cbefee7b732db0b6270f679",
+  "baseline_hash": "sha256:845f75135b866d9384c55f6c44e9e433d151409e8cbefee7b732db0b6270f679",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "salvan-finish-specification-paint-b152"
+  ],
+  "reason": "Batch 152 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "For a paint finish entry, which information is source-safe from Salvan?",
+    "text": "A wall finish schedule entry says only \"paint.\" What critical paint-system information is still missing?",
     "options": [
       {
         "id": "a",
-        "text": "Primer plus finish coats, surface preparation, original labeled materials, and manufacturer-directed mixing"
+        "text": "Nothing; paint does not need preparation or references."
       },
       {
         "id": "b",
-        "text": "No surface inspection and unlabeled materials"
+        "text": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information."
       },
       {
         "id": "c",
-        "text": "Only a tile deflection number"
+        "text": "Only the Mohs hardness of marble."
       },
       {
         "id": "d",
-        "text": "Only a carpet loop name"
+        "text": "Only the countertop edge profile."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Salvan supports surface preparation, labeled containers, manufacturer directions, and three-coat painting unless otherwise specified.",
-    "explanation": "Salvan supports surface preparation, labeled containers, manufacturer directions, and three-coat painting unless otherwise specified.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Nothing; paint does not need preparation or references. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "b": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information. This stays inside the Batch 152 local source boundary.",
+      "c": "Only the Mohs hardness of marble. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "d": "Only the countertop edge profile. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "correct": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information. Supported by salvan-finish-specification-paint-b152.",
+      "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+      "source_boundary": "salvan-finish-specification-paint-b152",
+      "checked_sources": [
+        "salvan-finish-specification-paint-b152"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Salvan refined markdown lines 13388-13422.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-152-local-first",
+      "salvan-finish-specification-paint-b152"
+    ]
+  },
+  "rationale": {
+    "a": "Nothing; paint does not need preparation or references. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "b": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information. This stays inside the Batch 152 local source boundary.",
+    "c": "Only the Mohs hardness of marble. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "d": "Only the countertop edge profile. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "correct": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information. Supported by salvan-finish-specification-paint-b152.",
+    "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+    "source_boundary": "salvan-finish-specification-paint-b152",
+    "checked_sources": [
+      "salvan-finish-specification-paint-b152"
+    ]
   }
 }

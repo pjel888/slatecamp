@@ -1,32 +1,79 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
   "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:826efc3cd6175187acc1ab6dc2b919c4dc88a2f0350651ac7fda907c1827a2b7",
+  "cluster_id": "lea-matl-007-05",
+  "slug": "lea-matl-007-05-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:598c282ff11934913516855457c0bda79eeed5f0a809c8be01ff9e06ef8239d1",
   "sources": [
     {
-      "source_id": "bci-5e-b078",
-      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "url": null,
+      "id": "bci-5e-finish-selection-basics-b152",
+      "source_id": "bci-5e-finish-selection-basics-b152",
+      "title": "Building Construction Illustrated, 5th Edition - finish selection basics",
       "source_type": "primary_building_construction_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-12T05:20:00.000+08:00",
-      "updated_at": "2026-05-12T05:20:00.000+08:00"
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/bci-5e-finish-selection-basics-b152.source-capture.md",
+      "local_capture_sha256": "sha256:9a0c85b67bf24fbf1d96c85a988d484b8f2c3905869fa1d2ce3b813369dd751e",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/bci-5e-finish-selection-basics-b152.refined.md",
+      "refined_capture_sha256": "sha256:4721722ecface194e4f82083a67cf277b74fb2542e769cfbe01a2ed90cdf5d99",
+      "locator": "refined markdown lines 12549-12620, 13036-13496, and 13505-13562",
+      "safe_claims": [
+        "Finish work covers interior wall, ceiling, and floor surfaces.",
+        "Interior walls should resist wear and be cleanable, floors should be durable, comfortable, and safe to walk on, and ceilings should be relatively maintenance-free.",
+        "Flexible finish materials require a solid, rigid backing, while rigid finish materials can span short distances on a supporting grid.",
+        "Finish selection should consider color, texture, pattern, joints, acoustic qualities, fire resistance, thermal insulation value, and how the material meets adjacent materials.",
+        "Ceramic tile, terrazzo, wood flooring, resilient flooring, carpeting, gypsum/plaster wall finishes, and acoustical ceiling systems each carry different substrate and coordination requirements."
+      ],
+      "use_limits": [
+        "Do not convert general finish-selection guidance into a code requirement.",
+        "Do not cite uncaptured manufacturer performance values for slip resistance, acoustic ratings, fire ratings, or emissions.",
+        "Do not use this source as a complete finish-schedule drafting standard; use it only for material coordination and schedule logic."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b078",
-      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
-      "label": "George Salvan Architectural Building Materials",
-      "url": null,
-      "source_type": "primary_building_materials_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-12T05:20:00.000+08:00",
-      "updated_at": "2026-05-12T05:20:00.000+08:00"
+      "id": "salvan-finish-specification-paint-b152",
+      "source_id": "salvan-finish-specification-paint-b152",
+      "title": "George Salvan Architectural Building Materials - interior finishes and paint specification",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/salvan-finish-specification-paint-b152.source-capture.md",
+      "local_capture_sha256": "sha256:ac71ce8fbb6efe65e31debf40b679b11012fd5ac90ab47380049f060077e8d91",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/salvan-finish-specification-paint-b152.refined.md",
+      "refined_capture_sha256": "sha256:d0321968c05aae540312693ef6ffb9b6b7be72dd586637262da98cc7b70f2867",
+      "locator": "refined markdown lines 8560-8665 and 13388-13422",
+      "safe_claims": [
+        "Salvan records interior finish families such as wood boards, wood sheets, plywood, trim, gypsum plaster, and gypsum board.",
+        "Gypsum board joints and corners are taped and filled before sizing and painting.",
+        "Painting specification entries require approved color, tint, finish, or shade selection by the architect.",
+        "Painting is three-coat work of one primer and finish coats unless otherwise specified.",
+        "Paint materials should be manufacturer-recommended, delivered in original labeled containers, and mixed only as specified by the manufacturer.",
+        "Surfaces must be examined, cleaned, sanded, and sealed if necessary before painting, and neither paint nor finish treatment should be applied over wet or damp surfaces."
+      ],
+      "use_limits": [
+        "Do not retain brand examples as mandatory specifications.",
+        "Do not use this source to assert current mold-resistance, low-VOC, or product-specific paint performance.",
+        "Do not use vague schedule labels where substrate, finish, color/texture, and reference data are needed."
+      ],
+      "sort_order": 1
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore brand/color mandates, ASTM/ANSI/BP 344 labels, NRC values, grid-width values, or proprietary coating requirements.",
+    "No local source in this batch was used to treat schedule format conventions as code requirements.",
+    "No local source in this batch was used to make vague TBD finish entries acceptable for field execution."
   ]
 }

@@ -1,30 +1,30 @@
 {
   "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:7785067c195346b8b9be277a28db8f67daadca4afb202f2ce979fc402fab2092",
+  "linked_questions_hash": "sha256:e5c4f59f164eb22a28dce77a2a85457d3a7559c2157a2b4fc82056df3c57f9fe",
   "question_count": 10,
   "questions": [
     {
       "question_id": "a6275c53-fecc-499a-be58-71003916d6a7",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "Which three types of schedules are commonly found in interior finish documentation?",
+      "text": "Which three interior surface groups does BCI organize finish work around?",
       "options": [
         {
           "id": "a",
-          "text": "A) Paint, tile, and wood schedules"
+          "text": "Only doors, windows, and cabinet pulls."
         },
         {
           "id": "b",
-          "text": "B) Room finish, door, and window schedules"
+          "text": "Interior walls, floors, and ceilings."
         },
         {
           "id": "c",
-          "text": "C) Exterior, interior, and basement schedules"
+          "text": "Only roof decks, gutters, and downspouts."
         },
         {
           "id": "d",
-          "text": "D) Floor, wall, and ceiling schedules"
+          "text": "Only plumbing fixtures, wiring, and structural frames."
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types.",
-        "c": "Exterior/interior/basement is a location split; schedules are organized by room number, not location.",
-        "d": "Floor/wall/ceiling are finish elements listed within a single room finish schedule.",
-        "correct": "Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs.",
-        "takeaway": "Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure."
+        "a": "Only doors, windows, and cabinet pulls. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "Interior walls, floors, and ceilings. This stays inside the Batch 152 local source boundary.",
+        "c": "Only roof decks, gutters, and downspouts. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "Only plumbing fixtures, wiring, and structural frames. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "Interior walls, floors, and ceilings. Supported by bci-5e-finish-selection-basics-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152"
+        ]
       },
-      "explanation": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types. Exterior/interior/basement is a location split; schedules are organized by room number, not location. Floor/wall/ceiling are finish elements listed within a single room finish schedule. Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs. Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure.",
-      "code_citation": "CSI MasterFormat; AIA construction document standards",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12559.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:20:03.534837+00:00",
-      "content_hash": "sha256:56a4a93d5beb311c4b35a62a4fcb92b89402cd1589e3934f51a967c5da9a073e"
+      "content_hash": "sha256:3f26637a058cb78d446575f8dcc562f882b76d26d9d38063ea5801d4a73108b4"
     },
     {
       "question_id": "e68187ad-8741-4a34-a724-2e3b2e6357e8",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "A finish schedule shows 'Floor: Porcelain tile, 600×600mm, grout color: TBD.' What field problems will result?",
+      "text": "A finish schedule says only \"floor: tile\" for a room. What field problem remains unresolved?",
       "options": [
         {
           "id": "a",
-          "text": "A) No problem; grout color can be chosen on-site, allowing for flexibility in design decisions"
+          "text": "Nothing; a material name is enough for all field work."
         },
         {
           "id": "b",
-          "text": "B) Grout color TBD causes rework; when tile is laid, grout color becomes visible and often does not match designer intent. Specify exact grout brand/color (e.g., 'Mapei Ultracolor Plus, Light Gray') to prevent mis-execution"
+          "text": "The entry does not identify the substrate, thinset or thickset setting logic, joint/edge condition, color or texture, and detail reference."
         },
         {
           "id": "c",
-          "text": "C) Grout color variation is acceptable; it darkens with age, which can be considered a natural patina effect"
+          "text": "The entry is wrong because tile can never be used on floors."
         },
         {
           "id": "d",
-          "text": "D) Only a problem if tiles are light-colored, as darker tiles can mask grout color discrepancies more effectively"
+          "text": "The entry should be replaced with an uncaptured brand warranty."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Field choice is construction management failure, not acceptable.",
-        "c": "Grout darkens slightly but initial color mismatch is primary risk.",
-        "d": "Dark tiles hide grout variation; light tiles highlight it. Both require spec.",
-        "correct": "Grout color is critical to aesthetic; omitting it (TBD) allows contractor to select based on cost/availability, not design intent. Default grout is often darker than intended. Specify exact brand and color code in schedule. Visible rework occurs when grout is removed and replaced.",
-        "takeaway": "Specify grout color in schedule: brand + color code (e.g., 'Mapei #LG-05'). No TBD. Prevents rework."
+        "a": "Nothing; a material name is enough for all field work. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "The entry does not identify the substrate, thinset or thickset setting logic, joint/edge condition, color or texture, and detail reference. This stays inside the Batch 152 local source boundary.",
+        "c": "The entry is wrong because tile can never be used on floors. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "The entry should be replaced with an uncaptured brand warranty. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "The entry does not identify the substrate, thinset or thickset setting logic, joint/edge condition, color or texture, and detail reference. Supported by bci-5e-finish-selection-basics-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "Field failure analysis; finish specification standards",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12559 and 13036-13163.",
       "bloom_level": "analyze",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c791a8db13aa1c86aa543dbf535abeec0b445765587f49ed8578e5abb816c541"
+      "content_hash": "sha256:52427dcaa18ccbbab9fb7defe1e05551ee148682e35b8d809389fee451895b31"
     },
     {
       "question_id": "90603524-c5ac-4738-87d6-ba1f3afc8491",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "A multi-story residential building schedules different paint colors for Units on the same floor (Unit 201: Boysen #B150; Unit 301: 'light beige'). What specification and execution problems does this create?",
+      "text": "A paint schedule names a finish in one room but uses \"light color\" in another. What source-safe issue does this create?",
       "options": [
         {
           "id": "a",
-          "text": "A) No problem; units are customizable by owner preference, which may lead to inconsistencies in appearance and quality"
+          "text": "No issue; vague finish descriptions improve coordination."
         },
         {
           "id": "b",
-          "text": "B) Inconsistent product spec (one named, one vague) prevents bulk sourcing, creates quality variance, and allows field substitution on Unit 301"
+          "text": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution."
         },
         {
           "id": "c",
-          "text": "C) Color variation is expected in residential; no standard applies, which overlooks the importance of uniformity in multi-unit developments"
+          "text": "It converts the paint into terrazzo."
         },
         {
           "id": "d",
-          "text": "D) Problem only if units are adjacent, which ignores potential issues with overall building aesthetics"
+          "text": "It automatically satisfies every product performance requirement."
         }
       ],
       "correct_option_id": "b",
@@ -133,17 +149,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Residential standardization (not customization) is industry practice for cost and quality control.",
-        "c": "Color variation is not 'expected'; consistency is the standard.",
-        "d": "Adjacency is irrelevant; consistency applies to all same-type units.",
-        "correct": "Unit 201 is fully specified (brand, code); Unit 301 is vague. Vagueness on Unit 301 allows contractor substitution, color mismatch, and quality variance. Bulk purchasing is impossible with mixed specs. Standard practice: all standard units use identical finishes; custom finishes are documented separately with cost tracking.",
-        "takeaway": "Standardize finishes for like spaces. Custom finishes are exceptions, documented separately with cost approval. Avoid mix of specific and vague specs."
+        "a": "No issue; vague finish descriptions improve coordination. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution. This stays inside the Batch 152 local source boundary.",
+        "c": "It converts the paint into terrazzo. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "It automatically satisfies every product performance requirement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution. Supported by salvan-finish-specification-paint-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "salvan-finish-specification-paint-b152",
+        "checked_sources": [
+          "salvan-finish-specification-paint-b152"
+        ]
       },
-      "explanation": "Residential standardization (not customization) is industry practice for cost and quality control. Color variation is not 'expected'; consistency is the standard. Adjacency is irrelevant; consistency applies to all same-type units. Unit 201 is fully specified (brand, code); Unit 301 is vague. Vagueness on Unit 301 allows contractor substitution, color mismatch, and quality variance. Bulk purchasing is impossible with mixed specs. Standard practice: all standard units use identical finishes; custom finishes are documented separately with cost tracking. Standardize finishes for like spaces. Custom finishes are exceptions, documented separately with cost approval. Avoid mix of specific and vague specs.",
-      "code_citation": "Residential project best practice; cost control",
+      "explanation": null,
+      "code_citation": "Local source boundary: Salvan refined markdown lines 13388-13412.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "salvan-finish-specification-paint-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +176,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-05-06T13:20:03.672418+00:00",
-      "content_hash": "sha256:24f8ef03b574d97549f71e098c8b6e4fb69647199ea9f4ea5910e0b3933db95d"
+      "content_hash": "sha256:c9a422272acf04a3660a75b72e5ef7fa47d17984e62335b0444faf0e46d1d0c8"
     },
     {
       "question_id": "65873363-85b0-408b-be1c-d6e334f617b6",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "Create a complete finish schedule entry for a law office (high-privacy requirement, accessible path per BP 344, coastal location). Specify: floor, wall, ceiling, base. Address: (1) speech privacy, (2) slip resistance on level surface, (3) salt-air durability.",
+      "text": "Which finish-schedule entry is most source-safe for an office conference room?",
       "options": [
         {
           "id": "a",
-          "text": "A) Floor—tile; Walls—paint; Ceiling—tile; Base—standard, ensuring compliance with BP 344 for accessibility and durability in coastal environments"
+          "text": "Floor, wall, and ceiling: nice finish, contractor to decide."
         },
         {
           "id": "b",
-          "text": "B) Floor: Porcelain tile 600×600mm, Mariwasa #S-02, grout Light Gray, COF per ANSI A137.1 ≥0.65 per Section 3.3 Floor Finishes; Walls: Boysen Permacoat #B150, matte, fungicide primer, per Section 2.0.5 Paint Systems; Ceiling: Suspended acoustic tile NRC 0.85, 9/16-inch ASTM C635 grid, per Section 3.4 Ceiling Systems; Base: Wood trim, 100mm height, marine-grade sealant per Section 6.2 Millwork"
+          "text": "Floor: durable finish with substrate and setting method; walls: cleanable finish or paint system with preparation and primer logic; ceiling: direct or suspended system with access/acoustic coordination; base and transitions referenced by detail."
         },
         {
           "id": "c",
-          "text": "C) Floor—slip-resistant; Walls—painted; Ceiling—acoustic; Base—to match design, with materials selected for high durability and compliance with privacy standards"
+          "text": "Only one brand name and no substrate information."
         },
         {
           "id": "d",
-          "text": "D) Floor—level surface finishes; Walls—interior paint; Ceiling—sound control; Base—standard wood, all materials chosen for their resistance to salt air and ability to maintain privacy"
+          "text": "Only uncaptured acoustic, slip, and fire-rating numbers."
         }
       ],
       "correct_option_id": "b",
@@ -183,17 +207,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Generic entries (tile, paint, tile, standard) provide no direction.",
-        "c": "Vague entries (slip-resistant, painted, acoustic, to match) lack product specificity.",
-        "d": "Category names (level surface, interior, sound control) are not product specs.",
-        "correct": "Option B addresses all requirements: porcelain floor with verified COF ≥0.65 (BP 344 accessibility); Boysen paint (salt-air durability in coastal zone) with fungicide primer (moisture resistance); NRC 0.85 ceiling (speech privacy); marine-grade trim sealant (coastal corrosion). All entries include spec-section cross-references and product-specific details.",
-        "takeaway": "Integrated finish specification requires: (1) material selection by function (speech privacy = NRC 0.85; slip resistance = COF ≥0.60; durability = marine sealant), (2) exact product names and codes, (3) cross-references to spec sections. No vague or TBD entries."
+        "a": "Floor, wall, and ceiling: nice finish, contractor to decide. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "Floor: durable finish with substrate and setting method; walls: cleanable finish or paint system with preparation and primer logic; ceiling: direct or suspended system with access/acoustic coordination; base and transitions referenced by detail. This stays inside the Batch 152 local source boundary.",
+        "c": "Only one brand name and no substrate information. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "Only uncaptured acoustic, slip, and fire-rating numbers. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "Floor: durable finish with substrate and setting method; walls: cleanable finish or paint system with preparation and primer logic; ceiling: direct or suspended system with access/acoustic coordination; base and transitions referenced by detail. Supported by bci-5e-finish-selection-basics-b152, salvan-finish-specification-paint-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152, salvan-finish-specification-paint-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152",
+          "salvan-finish-specification-paint-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "Integrated finish schedule; multi-criteria design",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12620, 13036-13562; Salvan lines 13388-13422.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152",
+        "salvan-finish-specification-paint-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +236,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e6e60b429a5ac35b09d1279fd71ca4ea8a2f45e2c3b7861ae676559f06d9d0ce"
+      "content_hash": "sha256:ea5d7176bf5033ce546bbae9361a12b20cdf9d009e99e4d3468d55d8b435965f"
     },
     {
       "question_id": "29784988-50f9-4b4d-8e9b-d31b9530c7b3",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "What is the primary purpose of a finish schedule in construction documents?",
+      "text": "What is the primary purpose of a source-safe finish schedule?",
       "options": [
         {
           "id": "a",
-          "text": "A) To show architectural style preferences, which are subjective and vary by project"
+          "text": "To replace drawings and specifications with informal color notes."
         },
         {
           "id": "b",
-          "text": "B) To specify all surface treatments (walls, floors, ceilings) for each room with product details and standards, preventing field interpretation and rework"
+          "text": "To coordinate room-by-room surface finishes, substrates, installation methods, appearance, edges, and references so field interpretation is reduced."
         },
         {
           "id": "c",
-          "text": "C) To estimate project cost, providing a preliminary financial overview for stakeholders"
+          "text": "To list only furniture brands."
         },
         {
           "id": "d",
-          "text": "D) To list contractor requirements, ensuring compliance with project specifications and timelines"
+          "text": "To hide unresolved finish decisions until construction."
         }
       ],
       "correct_option_id": "b",
@@ -233,17 +267,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Schedules reflect design intent via finish selection, not style preference alone.",
-        "c": "Schedules inform cost but are not primarily for estimation.",
-        "d": "Schedules specify finishes, not contractor requirements.",
-        "correct": "Finish schedules serve as the builder's instruction set, specifying exact finishes (material, color, size, spec section) for every space. They prevent ambiguity and rework.",
-        "takeaway": "Finish schedules = contract document specifying finishes with exact product names, colors, sizes, and spec-section cross-references."
+        "a": "To replace drawings and specifications with informal color notes. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "To coordinate room-by-room surface finishes, substrates, installation methods, appearance, edges, and references so field interpretation is reduced. This stays inside the Batch 152 local source boundary.",
+        "c": "To list only furniture brands. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "To hide unresolved finish decisions until construction. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "To coordinate room-by-room surface finishes, substrates, installation methods, appearance, edges, and references so field interpretation is reduced. Supported by bci-5e-finish-selection-basics-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "CSI MasterFormat; construction document standards",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12559.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +294,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:42ead20866ab2d44ed6ddc1b76fb5ee6bc8c051dc7614319f39a29bede1aad7d"
+      "content_hash": "sha256:f512c5c91c01415ebb63cfd17a5ad9600c42f961da20a83a8b2a3cf4d9f8ba85"
     },
     {
       "question_id": "011b5df2-94f0-4ae7-9383-193ad275bb71",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "A room finish schedule entry shows: 'Walls—Boysen Permacoat, Color #B150.' What critical information is missing that could lead to specification failure?",
+      "text": "A wall finish schedule entry says only \"paint.\" What critical paint-system information is still missing?",
       "options": [
         {
           "id": "a",
-          "text": "A) Nothing; the entry is complete and provides all necessary details for the painting contractor to proceed without further clarification"
+          "text": "Nothing; paint does not need preparation or references."
         },
         {
           "id": "b",
-          "text": "B) Sheen level (matte/satin/gloss), primer type, surface prep standard, and specification section reference"
+          "text": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information."
         },
         {
           "id": "c",
-          "text": "C) Paint brand alternative, which allows for flexibility in sourcing materials without compromising quality"
+          "text": "Only the Mohs hardness of marble."
         },
         {
           "id": "d",
-          "text": "D) Room location (floor number), which is essential for coordinating the work schedule and ensuring the correct area is painted"
+          "text": "Only the countertop edge profile."
         }
       ],
       "correct_option_id": "b",
@@ -283,17 +325,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Entry is incomplete without these details.",
-        "c": "Alternatives create uncertainty; one specified product is standard.",
-        "d": "Room location is identified by room number, not in finish entry.",
-        "correct": "Incomplete entry omits sheen (affects appearance and maintenance), primer type (affects adhesion), surface prep (affects durability), and spec-section reference (prevents builders from reading full details). These details prevent rework.",
-        "takeaway": "Schedule entries are abbreviated pointers. Detail specification in spec sections (e.g., Section 2.0.5). Reference the section in the schedule."
+        "a": "Nothing; paint does not need preparation or references. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information. This stays inside the Batch 152 local source boundary.",
+        "c": "Only the Mohs hardness of marble. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "Only the countertop edge profile. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "Receiving surface, approved color/tint/finish, surface preparation, primer and finish-coat logic, manufacturer direction, and reference information. Supported by salvan-finish-specification-paint-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "salvan-finish-specification-paint-b152",
+        "checked_sources": [
+          "salvan-finish-specification-paint-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "CSI specification format; construction document practice",
+      "code_citation": "Local source boundary: Salvan refined markdown lines 13388-13422.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "salvan-finish-specification-paint-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +352,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3d706f7bd281f3d96ded3237392d0d29a943c48c5d6b0fc49ddfc3af1a7754c8"
+      "content_hash": "sha256:845f75135b866d9384c55f6c44e9e433d151409e8cbefee7b732db0b6270f679"
     },
     {
       "question_id": "8ec65acf-9fa7-41ee-ac65-70c1dece2e95",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "A door schedule shows 'Door Type A: wood composite, finish—per 2.0.10.' What does 'per 2.0.10' direct the builder to do?",
+      "text": "A schedule note says \"finish per detail reference.\" What does that reference direct the builder to do?",
       "options": [
         {
           "id": "a",
-          "text": "A) Order the door from supplier #2.0.10, ensuring that all specifications match the detailed requirements listed in the supplier's catalog."
+          "text": "Ignore the detail and choose any finish."
         },
         {
           "id": "b",
-          "text": "B) Skip the finish detail; the door is pre-finished and does not require any additional treatment or coating as per the manufacturer's guidelines."
+          "text": "Use the reference only as a color name."
         },
         {
           "id": "c",
-          "text": "C) Consult Specification Section 2.0.10 (Door Finishes) for detailed application standards (primer, topcoat, sanding, hardness test)"
+          "text": "Consult the referenced drawing, detail, or specification for the assembly, installation, edge, joint, or finish requirements."
         },
         {
           "id": "d",
-          "text": "D) Choose any finish matching the style, provided it adheres to the general aesthetic guidelines outlined in the project's design brief."
+          "text": "Treat every surface as the same material."
         }
       ],
       "correct_option_id": "c",
@@ -333,17 +383,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2.0.10 is a specification section number, not a supplier.",
-        "b": "Cross-reference indicates detailed specs exist; not pre-finished.",
-        "d": "Specification section defines exact standards; no field choice.",
-        "correct": "CSI format cross-reference 'per 2.0.10' directs builders to Specification Section 2.0.10, which details finish prep, primers, topcoats, application sequence, and quality standards. Schedule is abbreviated; spec is detailed.",
-        "takeaway": "Schedule entries reference spec sections. Cross-references are the link. Builder reads schedule, then reads detailed spec section."
+        "a": "Ignore the detail and choose any finish. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "Use the reference only as a color name. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "c": "Consult the referenced drawing, detail, or specification for the assembly, installation, edge, joint, or finish requirements. This stays inside the Batch 152 local source boundary.",
+        "d": "Treat every surface as the same material. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "Consult the referenced drawing, detail, or specification for the assembly, installation, edge, joint, or finish requirements. Supported by bci-5e-finish-selection-basics-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "CSI MasterFormat; construction document organization",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12559.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +410,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:579ad59aaf22fd7ca30b54b7a531063eec44352b8f692bc632deeab7f8c367f3"
+      "content_hash": "sha256:2eb01528fd36712b94408c67e7fa49b99c51400ecce6d61ad6aae785627d90f3"
     },
     {
       "question_id": "fbb2f72b-31c5-4dd3-8d19-fed57cd197b3",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "Create a finish schedule entry for a bathroom wall requiring mold-resistant paint in a high-humidity environment in the Philippines.",
+      "text": "A wall finish is scheduled for a wet or moist room. Which entry best stays inside the source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "A) Walls—Paint, ensuring that the selected paint is suitable for high-humidity environments to prevent mold growth."
+          "text": "Use ordinary dry-only finish logic and paint over damp surfaces."
         },
         {
           "id": "b",
-          "text": "B) Walls—Boysen Permacoat, Color #B150, matte, fungicide primer, per Section 2.0.5 Paint Systems for Humid Environments"
+          "text": "Identify a moisture-suitable wall base or backing, require dry and prepared receiving surfaces, and cite the finish system or detail reference."
         },
         {
           "id": "c",
-          "text": "C) Walls—Semi-gloss enamel, Color TBD, with additional moisture-resistant properties to enhance durability."
+          "text": "Specify only a brand color with no substrate check."
         },
         {
           "id": "d",
-          "text": "D) Walls—Paint, light color, per specification, ensuring compliance with local building codes for moisture control."
+          "text": "Use low-pressure laminate because all wet rooms are tabletops."
         }
       ],
       "correct_option_id": "b",
@@ -383,17 +441,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Generic 'Paint' provides no direction.",
-        "c": "TBD (to be determined) and 'light color' are vague; unacceptable in working docs.",
-        "d": "'Per specification' without section number is incomplete cross-reference.",
-        "correct": "Option B specifies brand, color, sheen, primer type (fungicide), and spec-section reference. This prevents mold and ensures moisture resistance in high-humidity bathroom. Boysen formulations include fungicide.",
-        "takeaway": "High-humidity zones = fungicide primer + specific paint product. Schedule entry must mandate fungicide; spec section details application."
+        "a": "Use ordinary dry-only finish logic and paint over damp surfaces. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "Identify a moisture-suitable wall base or backing, require dry and prepared receiving surfaces, and cite the finish system or detail reference. This stays inside the Batch 152 local source boundary.",
+        "c": "Specify only a brand color with no substrate check. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "Use low-pressure laminate because all wet rooms are tabletops. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "Identify a moisture-suitable wall base or backing, require dry and prepared receiving surfaces, and cite the finish system or detail reference. Supported by bci-5e-finish-selection-basics-b152, salvan-finish-specification-paint-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152, salvan-finish-specification-paint-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152",
+          "salvan-finish-specification-paint-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "Philippine humidity management; finish specification standards",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12560-12570 and 13135-13163; Salvan lines 13412-13422.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152",
+        "salvan-finish-specification-paint-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +470,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:02e916c471100b22d57e51bc1d0c4f2ffc6483d85028b21caf261d2094365ab2"
+      "content_hash": "sha256:e24e3558aecfb358b256ed18cd5be15422c4bae59f83c590747b994444a80cd5"
     },
     {
       "question_id": "f5ca4347-c9b3-4e67-841d-6151a59da160",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "What information must be included in a finish schedule entry to prevent field ambiguity?",
+      "text": "What information helps prevent ambiguity in a finish schedule entry?",
       "options": [
         {
           "id": "a",
-          "text": "A) Room name and general material type (e.g., 'paint' or 'tile'), along with the intended application area"
+          "text": "Only a vague adjective such as nice or premium."
         },
         {
           "id": "b",
-          "text": "B) Product brand/model, color code, size, and specification section reference (e.g., 'Boysen Permacoat #B150 per Section 2.0.5')"
+          "text": "Space, surface, finish material, substrate or backing, installation method, color or texture, joint/edge condition, and reference."
         },
         {
           "id": "c",
-          "text": "C) Only the finish material name, which should be cross-referenced with the project specifications"
+          "text": "Only the contractor name."
         },
         {
           "id": "d",
-          "text": "D) Approximate cost and supplier, ensuring that budget constraints are met"
+          "text": "Only an uncaptured product performance number."
         }
       ],
       "correct_option_id": "b",
@@ -433,17 +501,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "General material type (paint, tile) is insufficient; builders need exact product to source.",
-        "c": "Material name alone allows substitution and quality variance.",
-        "d": "Cost and supplier are project management, not finish specification.",
-        "correct": "Complete specification includes brand, model, color code, size/dimensions, and cross-reference to detailed spec sections. This prevents substitution and ensures quality.",
-        "takeaway": "Every schedule entry = product name + color code + size + spec-section reference. No vague entries like 'paint TBD.'"
+        "a": "Only a vague adjective such as nice or premium. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "Space, surface, finish material, substrate or backing, installation method, color or texture, joint/edge condition, and reference. This stays inside the Batch 152 local source boundary.",
+        "c": "Only the contractor name. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "Only an uncaptured product performance number. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "Space, surface, finish material, substrate or backing, installation method, color or texture, joint/edge condition, and reference. Supported by bci-5e-finish-selection-basics-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "CSI format; construction specification standards",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12559.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +528,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:584db34b40c05c82d4bd7238902a8b458ede6fc8cd37d3be247c8edc4eebd9a2"
+      "content_hash": "sha256:25887cb7d8aece285a89e02a9ef2eb475f490cf29db7ff65d75421691af9ad66"
     },
     {
       "question_id": "7028f39f-8941-4838-8fdb-3e298beb880e",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "Why is a key/legend sheet with material and color samples essential in Philippine residential projects?",
+      "text": "Why is a material/color legend useful alongside a finish schedule?",
       "options": [
         {
           "id": "a",
-          "text": "A) It is optional; the schedule text is sufficient for most projects unless specified otherwise by the client"
+          "text": "It removes the need to coordinate substrates and installation."
         },
         {
           "id": "b",
-          "text": "B) It displays actual material/color samples, reducing field ambiguity and preventing rework from color/material mismatches"
+          "text": "It helps coordinate color, texture, pattern, joints, and how finish materials meet adjacent materials."
         },
         {
           "id": "c",
-          "text": "C) It serves as a cost estimate document, which is not its primary purpose but can be used as a reference"
+          "text": "It turns every material into paint."
         },
         {
           "id": "d",
-          "text": "D) It is required only for commercial projects, not typically for residential unless specified by local codes"
+          "text": "It replaces manufacturer and detail references for performance data."
         }
       ],
       "correct_option_id": "b",
@@ -483,17 +559,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Samples are essential; text alone permits interpretation variance.",
-        "c": "Key sheet is a project document, not cost estimate.",
-        "d": "Samples benefit all projects; residential especially, due to volume and standardization.",
-        "correct": "Key/legend sheets with actual samples prevent 'color match disputes' and 'material substitution' in the field. Pantone numbers and product codes are abstract; physical samples confirm intent. Critical in residential projects with multiple units.",
-        "takeaway": "In Philippine residential: create key sheet with approved color chips + material samples. Include in bid docs and site office. Reduces rework and disputes."
+        "a": "It removes the need to coordinate substrates and installation. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "b": "It helps coordinate color, texture, pattern, joints, and how finish materials meet adjacent materials. This stays inside the Batch 152 local source boundary.",
+        "c": "It turns every material into paint. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "d": "It replaces manufacturer and detail references for performance data. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+        "correct": "It helps coordinate color, texture, pattern, joints, and how finish materials meet adjacent materials. Supported by bci-5e-finish-selection-basics-b152.",
+        "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+        "source_boundary": "bci-5e-finish-selection-basics-b152",
+        "checked_sources": [
+          "bci-5e-finish-selection-basics-b152"
+        ]
       },
       "explanation": null,
-      "code_citation": "Philippine construction practice; field experience",
+      "code_citation": "Local source boundary: BCI refined markdown lines 12549-12559.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-152-local-first",
+        "bci-5e-finish-selection-basics-b152"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +586,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:baf3c93cac3f6be637c78c9ae34999887f62c9fbe0dad20484b6dda1d95e30d7"
+      "content_hash": "sha256:760f8f4ec1b34d4745fcbb35e11be3716e1c6df490edd311bcbc08aaa0dd63d7"
     }
   ]
 }

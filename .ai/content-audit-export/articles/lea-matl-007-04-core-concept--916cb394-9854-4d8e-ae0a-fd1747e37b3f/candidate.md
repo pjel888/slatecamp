@@ -1,31 +1,51 @@
 ## Board Exam Quick Check
 
-For paint-system questions, first identify the surface, exposure, required finish, and whether the item is asking for a paint, varnish, enamel, sealer, or specialty coating. Do not answer from brand memory when the question is testing the function of the coating system.
+For paint-system questions, identify the substrate, exposure, coating family, preparation step, and required finish function. The safe answer stays with the coating behavior the source actually supports: paint, varnish, enamel, shellac, stain, sealer, metallic paint, intumescent paint, or another protective coating.
+
+**Common trap:** importing VOC limits, ASTM test numbers, dry-film thicknesses, coverage rates, or BP 344/ANSI slip values when the checked local sources only support coating families, surface preparation, manufacturer directions, and general film behavior.
 
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
-Classify paint and protective coating systems by composition, film formation, substrate preparation, and intended performance.
+Classify paint and protective coating systems by binder or vehicle, pigment use, surface preparation, film function, and source-supported use limits.
 
 ## Core Concept
 
-Paint is a coating made from a vehicle or binder, pigments when color or hiding power is needed, and the additives or thinners that let the material be applied. Once applied, it forms an adherent continuous film. Salvan's material taxonomy is a safer basis than memorizing product claims not found in the checked sources: oil paints use drying oils; alkyd paints use synthetic alkyd resin; resin-emulsion or latex paints use a synthetic resin emulsion with water as the thinner; metallic paints suspend fine metal flakes in a vehicle; and intumescent paints are fire-retardant coatings that swell into an insulating crust when exposed to heat.
+Salvan defines paint as a coating made from vehicles or binders, with or without coloring pigments, adjusted by additives and thinners so that it forms an adherent continuous film. Painting may serve decoration, sanitation, preservation, improved lighting or working conditions, safety, and economy.
 
-Varnish is different from true paint because it is a protective resin solution without pigment. When pigment is added to varnish, the result is an enamel, and the durability of that enamel depends partly on the quality of the pigment and undercoat. Shellac, lacquers, stains, fillers, and sealers are adjacent finishes, but they should not be treated as interchangeable with opaque paint.
+### Coating Families
 
-Surface preparation is part of the coating system, not a separate afterthought. A source-safe painting specification calls for clean, sound, suitable surfaces; materials in original containers with labels intact; mixing according to manufacturer directions; and a three-coat approach of primer plus finish coats unless the specification says otherwise.
+| Coating family | Source-supported cue | LEA use |
+|---|---|---|
+| Oil paint | Uses a drying oil vehicle, commonly modified by thinners and driers. | Recognize the vehicle logic rather than a brand claim. |
+| Alkyd paint | Uses synthetic alkyd resin and may have weathering and water-resistance advantages in exposed conditions. | Choose it when the item asks about alkyd resin behavior, not modern VOC compliance. |
+| Resin-emulsion or latex paint | Uses a synthetic resin emulsion with water as the thinner. | Identify water-thinned emulsion paint. |
+| Metallic paint | Suspends fine metal flakes in a vehicle; spraying helps produce a uniform film and even flake deposition. | Select for the metallic-flake behavior, not corrosion warranties. |
+| Intumescent paint | Puffs up under heat and forms an insulating crust. | Recognize fire-retardant coating behavior without inventing fire-rating values. |
+| Varnish | Transparent protective coating that lets the original surface show. | Do not confuse it with opaque paint. |
+| Enamel | Varnish with pigment added; good results depend on pigment quality and undercoat. | Use when the question points to pigmented varnish logic. |
+| Shellac, stains, fillers, sealers | Adjacent finishing materials for sealing, coloring, filling, or preparing surfaces. | Do not treat all finish liquids as paint. |
+
+### Surface Preparation
+
+Surface preparation is part of the paint system. A source-safe specification requires manufacturer-recommended materials in original labeled containers, mixing only as specified, careful examination of surfaces, cleaning, sanding, sealing when needed, and no paint or finish treatment over wet or damp surfaces. Painting is three-coat work of primer plus finish coats unless the specification says otherwise.
+
+## Real World Scenario
+
+A contractor wants to paint gypsum board while plaster work nearby is still curing and the wall is damp. A source-safe response does not need an uncaptured adhesion test or VOC number: stop the painting, examine the receiving surface, clean and sand it, seal if necessary, follow manufacturer mixing directions, and wait until the surface is dry enough for the specified primer and finish coats.
 
 ## How It's Tested
 
-LEA-style items often ask which coating family matches the substrate and performance task. If the item asks for an emulsion paint, look for water as the thinner and a synthetic resin emulsion vehicle. If it asks for a transparent protective finish, varnish is the safer answer than paint. If it asks for a fire-retardant coating that swells under heat, intumescent paint is the tested concept.
+LEA-style items usually ask which coating family or preparation step fits a condition. If the item asks for water-thinned emulsion paint, choose resin-emulsion or latex paint. If it asks for a transparent protective film, choose varnish. If it asks for heat-swelling fire-retardant behavior, choose intumescent paint. Reject options that depend on uncaptured ASTM, VOC, DFT, BP 344, ANSI, coverage-rate, or brand-specific values.
 
 ## Common Mistakes
 
-- Treating every wall finish as ordinary paint even when the source distinguishes varnish, enamel, shellac, lacquer, stain, filler, and sealer.
-- Memorizing VOC limits not found in the checked sources or brand claims when the checked sources only support coating families and application principles.
-- Skipping surface preparation, primer, or manufacturer instructions in a specification question.
-- Calling an intumescent coating a normal decorative paint.
+- Treating paint, varnish, enamel, shellac, lacquer, stain, filler, and sealer as interchangeable.
+- Skipping surface examination, cleaning, sanding, sealing, primer, or manufacturer directions.
+- Painting over wet or damp surfaces.
+- Treating intumescent paint as ordinary decorative paint.
+- Repeating modern performance values not present in the active local source packet.
 
 ## Related Articles
 

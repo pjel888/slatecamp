@@ -1,65 +1,69 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+  "cluster_id": "lea-matl-007-06",
   "question_id": "a39e9de5-9677-4db3-b519-2e4777b1cdcd",
-  "baseline_hash": "sha256:5a81e9af62f85ed0951f87d4be9072657e9402fdfa945a862da4fa17c170c5fb",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-06-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
-    "parent_article_slug": "lea-matl-007-06-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited countertop_materials scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c95bba0d6a6c7636f86bd27776e2a418f8bd901f71627cfb71fabab05c1b0706",
+  "after_hash": "sha256:c95bba0d6a6c7636f86bd27776e2a418f8bd901f71627cfb71fabab05c1b0706",
+  "baseline_hash": "sha256:c95bba0d6a6c7636f86bd27776e2a418f8bd901f71627cfb71fabab05c1b0706",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-plastic-laminate-countertops-b152"
+  ],
+  "reason": "Batch 152 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "Low-pressure laminate is source-safe for which use category in BCI?",
+    "text": "What is Formica identified as in the checked BCI source?",
     "options": [
       {
         "id": "a",
-        "text": "Vertical and low-wear applications"
+        "text": "A generic name for all stone countertops."
       },
       {
         "id": "b",
-        "text": "Heavy horizontal countertop use only"
+        "text": "A trademark for a brand of plastic laminate."
       },
       {
         "id": "c",
-        "text": "Roof truss bracing"
+        "text": "A type of gypsum plaster."
       },
       {
         "id": "d",
-        "text": "Window weatherstripping"
+        "text": "A suspended ceiling system."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI identifies low-pressure laminate for vertical and low-wear applications.",
-    "explanation": "BCI identifies low-pressure laminate for vertical and low-wear applications.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "A generic name for all stone countertops. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "b": "A trademark for a brand of plastic laminate. This stays inside the Batch 152 local source boundary.",
+      "c": "A type of gypsum plaster. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "d": "A suspended ceiling system. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "correct": "A trademark for a brand of plastic laminate. Supported by bci-5e-plastic-laminate-countertops-b152.",
+      "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+      "source_boundary": "bci-5e-plastic-laminate-countertops-b152",
+      "checked_sources": [
+        "bci-5e-plastic-laminate-countertops-b152"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 13778-13782.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-152-local-first",
+      "bci-5e-plastic-laminate-countertops-b152"
+    ]
+  },
+  "rationale": {
+    "a": "A generic name for all stone countertops. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "b": "A trademark for a brand of plastic laminate. This stays inside the Batch 152 local source boundary.",
+    "c": "A type of gypsum plaster. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "d": "A suspended ceiling system. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "correct": "A trademark for a brand of plastic laminate. Supported by bci-5e-plastic-laminate-countertops-b152.",
+    "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+    "source_boundary": "bci-5e-plastic-laminate-countertops-b152",
+    "checked_sources": [
+      "bci-5e-plastic-laminate-countertops-b152"
+    ]
   }
 }

@@ -1,32 +1,80 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
   "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:31ed4c2a4d74facad890e669fa40377a4a9e1eb48eb1785158fbc7f6d5d083ef",
+  "cluster_id": "lea-matl-007-06",
+  "slug": "lea-matl-007-06-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:0eabfe257b1ba589feed8f682ff2e4f34de15858964fbcc861fcc1abec144024",
   "sources": [
     {
-      "source_id": "bci-5e-b079",
-      "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "url": null,
+      "id": "bci-5e-plastic-laminate-countertops-b152",
+      "source_id": "bci-5e-plastic-laminate-countertops-b152",
+      "title": "Building Construction Illustrated, 5th Edition - plastic laminate countertops",
       "source_type": "primary_building_construction_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-079-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-12T06:20:00.000+08:00",
-      "updated_at": "2026-05-12T06:20:00.000+08:00"
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/bci-5e-plastic-laminate-countertops-b152.source-capture.md",
+      "local_capture_sha256": "sha256:49f59663e68f84215de21fd5454b1042d8a7eeaaeb112d29acae94f27cd9fc72",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/bci-5e-plastic-laminate-countertops-b152.refined.md",
+      "refined_capture_sha256": "sha256:7559259f59d5a8b110a687e66b241f27b7575cf65e84dca090ad3d4a1f70c397",
+      "locator": "refined markdown lines 13754-13820",
+      "safe_claims": [
+        "Plastic laminate is a hard surfacing material made from layered papers, foil, wood veneer, or fabric impregnated with melamine and phenolic resins and fused under heat and pressure.",
+        "Plastic laminate provides a durable, heat-resistant, and water-resistant surface covering for countertops, furniture, doors, and wall panels.",
+        "Plastic laminate may be applied to smooth plywood, hardboard, particleboard, and other common core materials.",
+        "Field bonding may use contact adhesive, while shop bonding may use thermosetting adhesive under pressure.",
+        "High-pressure laminate is used for horizontal applications such as countertops and tabletops; low-pressure laminate is used for vertical and low-wear applications.",
+        "A backer sheet should be applied to the opposite side of unsupported panels to keep them from warping.",
+        "Edge choices include beveled corners, metal edging, postformed edges, and edge banding."
+      ],
+      "use_limits": [
+        "Do not restore Mohs hardness, water-absorption percentages, quartz/solid-surface superiority claims, annual sealing requirements, or quarry-specific quality claims from this batch.",
+        "Do not treat Formica as a generic technical class beyond the source statement that it is a trademark for a brand of plastic laminate.",
+        "Do not state exact chemical, heat, stain, or scratch performance without product-specific documentation."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b079",
-      "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
-      "label": "George Salvan Architectural Building Materials",
-      "url": null,
-      "source_type": "primary_building_materials_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-079-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-12T06:20:00.000+08:00",
-      "updated_at": "2026-05-12T06:20:00.000+08:00"
+      "id": "salvan-plastic-laminates-b152",
+      "source_id": "salvan-plastic-laminates-b152",
+      "title": "George Salvan Architectural Building Materials - plastic laminates and adhesives",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/salvan-plastic-laminates-b152.source-capture.md",
+      "local_capture_sha256": "sha256:be42e339b531e9ebda4b31955d6bfb4cda160383397b047b12e5f3ac0aa1c2d9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/salvan-plastic-laminates-b152.refined.md",
+      "refined_capture_sha256": "sha256:1640a7353fba29a60c24657dc85479896154d96f661709da3c2265675f10f41d",
+      "locator": "refined markdown lines 1916-1920, 2630-2710, and 2676-2854",
+      "safe_claims": [
+        "Salvan describes plastic laminates as three or more material layers bonded with plastic adhesive under high pressure.",
+        "Salvan describes a base of kraft paper impregnated with phenolic, amino, or epoxy resin, covered with a printed pattern sheet saturated with melamine resin.",
+        "Salvan records use of plastic laminates for cabinets and tabletops with many colors and patterns.",
+        "Neoprene-rubber adhesives are noted as used to cement plastic laminates to walls or flat surfaces.",
+        "Plastic-coated or vinyl-covered rigid panels are recorded as nonstructural finish materials."
+      ],
+      "use_limits": [
+        "Do not use old standard thickness lists as a current product mandate unless the item explicitly asks about the captured source.",
+        "Do not make countertop claims about engineered quartz, marble, granite, or solid surface without a captured source.",
+        "Do not imply that every adhesive in the adhesive chapter is suitable for every countertop condition."
+      ],
+      "sort_order": 1
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No local source in this batch was used to restore Mohs hardness, water-absorption percentages, quartz/solid-surface superiority, annual sealing, quarry-quality, or exact stain/heat/scratch performance claims.",
+    "No local source in this batch was used to make engineered quartz, marble, granite, or branded solid-surface materials the answer key.",
+    "Exact laminate dimensions and pressure values were kept out of learner-facing answers unless the item expressly asks from the captured source."
   ]
 }

@@ -1,65 +1,69 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+  "cluster_id": "lea-matl-007-06",
   "question_id": "09bfee5a-27b2-4879-8717-940b5a09b32b",
-  "baseline_hash": "sha256:9cb9c51bab7ad24c1fe857f791ebb7ae454d978048d6c7b5da0946eb7f007551",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-06-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
-    "parent_article_slug": "lea-matl-007-06-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited countertop_materials scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c75edbe5ed720e09f4551dbc0efc3e5a194ad488dd28644eaa6355937d03887d",
+  "after_hash": "sha256:c75edbe5ed720e09f4551dbc0efc3e5a194ad488dd28644eaa6355937d03887d",
+  "baseline_hash": "sha256:c75edbe5ed720e09f4551dbc0efc3e5a194ad488dd28644eaa6355937d03887d",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-plastic-laminate-countertops-b152"
+  ],
+  "reason": "Batch 152 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "Which answer best coordinates a plastic-laminate countertop detail?",
+    "text": "A client asks for a source-backed durable countertop surface from this batch only. Which answer is best?",
     "options": [
       {
         "id": "a",
-        "text": "High-pressure laminate, smooth core, correct adhesive, backer sheet, and protected edge"
+        "text": "A marble or quartz performance claim without a captured source."
       },
       {
         "id": "b",
-        "text": "Only a color name"
+        "text": "A low-wear vertical laminate used as if it were a countertop."
       },
       {
         "id": "c",
-        "text": "Only a lockset type"
+        "text": "High-pressure plastic laminate over a suitable smooth core, with adhesive method, edge treatment, and backer-sheet coordination resolved."
       },
       {
         "id": "d",
-        "text": "Only a window operation type"
+        "text": "A paint schedule with no countertop assembly."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI supports coordinating laminate type, core material, bonding method, panel balance, and edge treatment.",
-    "explanation": "BCI supports coordinating laminate type, core material, bonding method, panel balance, and edge treatment.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "A marble or quartz performance claim without a captured source. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "b": "A low-wear vertical laminate used as if it were a countertop. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "c": "High-pressure plastic laminate over a suitable smooth core, with adhesive method, edge treatment, and backer-sheet coordination resolved. This stays inside the Batch 152 local source boundary.",
+      "d": "A paint schedule with no countertop assembly. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "correct": "High-pressure plastic laminate over a suitable smooth core, with adhesive method, edge treatment, and backer-sheet coordination resolved. Supported by bci-5e-plastic-laminate-countertops-b152.",
+      "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+      "source_boundary": "bci-5e-plastic-laminate-countertops-b152",
+      "checked_sources": [
+        "bci-5e-plastic-laminate-countertops-b152"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 13754-13820.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-152-local-first",
+      "bci-5e-plastic-laminate-countertops-b152"
+    ]
+  },
+  "rationale": {
+    "a": "A marble or quartz performance claim without a captured source. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "b": "A low-wear vertical laminate used as if it were a countertop. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "c": "High-pressure plastic laminate over a suitable smooth core, with adhesive method, edge treatment, and backer-sheet coordination resolved. This stays inside the Batch 152 local source boundary.",
+    "d": "A paint schedule with no countertop assembly. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "correct": "High-pressure plastic laminate over a suitable smooth core, with adhesive method, edge treatment, and backer-sheet coordination resolved. Supported by bci-5e-plastic-laminate-countertops-b152.",
+    "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+    "source_boundary": "bci-5e-plastic-laminate-countertops-b152",
+    "checked_sources": [
+      "bci-5e-plastic-laminate-countertops-b152"
+    ]
   }
 }

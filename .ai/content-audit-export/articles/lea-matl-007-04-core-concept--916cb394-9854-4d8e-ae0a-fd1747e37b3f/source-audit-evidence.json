@@ -1,233 +1,125 @@
 {
-  "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-077-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T04:10:00.000+08:00",
-  "target": {
-    "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
-    "slug": "lea-matl-007-04-core-concept",
-    "title": "Paint systems",
-    "article_folder": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f",
-    "normalized_sha256": "sha256:aecbec20789ed7bb4d5414eb6979d31ce614616411cf837e242c26d483ec36ec",
-    "candidate_sha256": "sha256:aecbec20789ed7bb4d5414eb6979d31ce614616411cf837e242c26d483ec36ec",
-    "candidate_path": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/candidate.md"
-  },
-  "classification": {
-    "topic_family": "paint_systems",
-    "local_first_batch": "077",
-    "source_sensitivity": "technical_materials",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "source_bound_materials",
-    "requires_raw_pdf_audit": true
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
-    "blockers": []
-  },
-  "checked_sources": [
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "cluster_id": "lea-matl-007-04",
+  "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
     {
-      "source_id": "salvan-building-materials-b077",
-      "label": "George Salvan Architectural Building Materials",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-      "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
+      "id": "salvan-paint-protective-coatings-b152",
+      "source_id": "salvan-paint-protective-coatings-b152",
+      "title": "George Salvan Architectural Building Materials - paints and protective coatings",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/salvan-paint-protective-coatings-b152.source-capture.md",
+      "local_capture_sha256": "sha256:043402bfd630ee5c7b49db65965d986c61fe98dae2db331a98e4b495420cf271",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/salvan-paint-protective-coatings-b152.refined.md",
+      "refined_capture_sha256": "sha256:6211abf3c3bfd394fea02304ac7c41c27065ee2d74a195f3f6c8f93b08b68d39",
+      "locator": "refined markdown lines 4332-4468, 5919-5948, and 13388-13422",
+      "safe_claims": [
+        "Paint is made from vehicles or binders, with or without coloring pigments, plus additives and thinners, and forms an adherent continuous film on a surface.",
+        "Painting is used for decoration, sanitation, preservation, improved lighting or heating effects, working conditions, safety, and economy.",
+        "Oil paint uses a drying oil vehicle; alkyd paint uses synthetic alkyd resin; resin-emulsion or latex paint uses a synthetic resin emulsion and water as thinner.",
+        "Metallic paint contains fine metallic flakes suspended in a vehicle and is best sprayed for a uniform film and even flake deposition.",
+        "Intumescent paint is a fire-retardant coating that puffs up under heat and forms an insulating crust.",
+        "Varnish is a transparent protective liquid that lets the original surface show; adding pigment to varnish creates enamel.",
+        "Shellac can serve as a seal coat over stains and fillers, and oils or turpentine can seal wood before paint or varnish so the vehicle is not absorbed.",
+        "Painting specifications require manufacturer-recommended materials in original labeled containers, mixing only as specified, careful examination, cleaning, sanding, sealing when needed, and no coating over wet or damp surfaces."
+      ],
+      "use_limits": [
+        "Do not restore VOC limits, EPA or ASTM labels, DFT values, ANSI/BP 344 slip-resistance language, or modern coverage-rate claims from this source packet.",
+        "Do not treat legacy brand names as required products.",
+        "Do not turn general fire-retardant coating behavior into a specific structural fire-rating claim."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "bci-5e-b077",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-      "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
+      "id": "bci-5e-finish-selection-basics-b152",
+      "source_id": "bci-5e-finish-selection-basics-b152",
+      "title": "Building Construction Illustrated, 5th Edition - finish selection basics",
+      "source_type": "primary_building_construction_pdf",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/bci-5e-finish-selection-basics-b152.source-capture.md",
+      "local_capture_sha256": "sha256:9a0c85b67bf24fbf1d96c85a988d484b8f2c3905869fa1d2ce3b813369dd751e",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/bci-5e-finish-selection-basics-b152.refined.md",
+      "refined_capture_sha256": "sha256:4721722ecface194e4f82083a67cf277b74fb2542e769cfbe01a2ed90cdf5d99",
+      "locator": "refined markdown lines 12549-12620, 13036-13496, and 13505-13562",
+      "safe_claims": [
+        "Finish work covers interior wall, ceiling, and floor surfaces.",
+        "Interior walls should resist wear and be cleanable, floors should be durable, comfortable, and safe to walk on, and ceilings should be relatively maintenance-free.",
+        "Flexible finish materials require a solid, rigid backing, while rigid finish materials can span short distances on a supporting grid.",
+        "Finish selection should consider color, texture, pattern, joints, acoustic qualities, fire resistance, thermal insulation value, and how the material meets adjacent materials.",
+        "Ceramic tile, terrazzo, wood flooring, resilient flooring, carpeting, gypsum/plaster wall finishes, and acoustical ceiling systems each carry different substrate and coordination requirements."
+      ],
+      "use_limits": [
+        "Do not convert general finish-selection guidance into a code requirement.",
+        "Do not cite uncaptured manufacturer performance values for slip resistance, acoustic ratings, fire ratings, or emissions.",
+        "Do not use this source as a complete finish-schedule drafting standard; use it only for material coordination and schedule logic."
+      ],
+      "sort_order": 1
     }
   ],
-  "claims": [
+  "normalized_sha256": "sha256:422c4640d5c8f303bc9fa60d086133656eb145df28fc7c043895a7af885d35c5",
+  "candidate_sha256": "sha256:422c4640d5c8f303bc9fa60d086133656eb145df28fc7c043895a7af885d35c5",
+  "question_count": 10,
+  "question_hashes": [
     {
-      "claim_id": "lea-matl-007-04-core-concept-article-b077",
-      "claim_text": "Article lea-matl-007-04-core-concept was rewritten to the checked paint_systems source scope.",
-      "claim_type": "article_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "2cf1eed7-790f-4002-8d93-d6879f5fad7d",
+      "content_hash": "sha256:c26408656e3eac729a048efd0eef4b9c408f0b93c9ff9d1bfd79a5cc4554eb76"
     },
     {
-      "claim_id": "question-2cf1eed7-790f-4002-8d93-d6879f5fad7d-ALE-MATL-007-04-001-b077",
-      "claim_text": "Question 2cf1eed7-790f-4002-8d93-d6879f5fad7d ALE-MATL-007-04-001 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "57faa581-99fa-4ba9-a995-6a61c1c2ad68",
+      "content_hash": "sha256:7886a55d7cb8bb845cc5d6ae77e290c817fb0094727f12e9d37ea0d0c8c16d8b"
     },
     {
-      "claim_id": "question-57faa581-99fa-4ba9-a995-6a61c1c2ad68-ALE-MATL-007-04-006-b077",
-      "claim_text": "Question 57faa581-99fa-4ba9-a995-6a61c1c2ad68 ALE-MATL-007-04-006 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "13b9b3e9-3eb1-4eab-819e-a1a66131cd6e",
+      "content_hash": "sha256:11c6767f28e03f6e09a10260270cbfed88c19eea10834823cc871e775bede731"
     },
     {
-      "claim_id": "question-13b9b3e9-3eb1-4eab-819e-a1a66131cd6e-ALE-MATL-007-04-004-b077",
-      "claim_text": "Question 13b9b3e9-3eb1-4eab-819e-a1a66131cd6e ALE-MATL-007-04-004 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "505dbdd9-66bd-4247-a4e6-0d3b256bbc25",
+      "content_hash": "sha256:212dedddbb311a269acf41ccc6cbf46488faa15c4d1969823a68ac49ada51a56"
     },
     {
-      "claim_id": "question-505dbdd9-66bd-4247-a4e6-0d3b256bbc25-ALE-MATL-007-04-003-b077",
-      "claim_text": "Question 505dbdd9-66bd-4247-a4e6-0d3b256bbc25 ALE-MATL-007-04-003 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "80b07487-5a8d-4a9e-a44d-90e20589ce9e",
+      "content_hash": "sha256:b3d577f304dd557965a138a960b1a692729fbfa23acdb32f0b07b1c724f3710b"
     },
     {
-      "claim_id": "question-80b07487-5a8d-4a9e-a44d-90e20589ce9e-ALE-MATL-007-04-002-b077",
-      "claim_text": "Question 80b07487-5a8d-4a9e-a44d-90e20589ce9e ALE-MATL-007-04-002 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "57ddd270-7dde-43ef-be87-99b05738d44d",
+      "content_hash": "sha256:e11df37ef77d53ecac2a43b092664b1cc62daf57c52aa0c89b6c60d4c606da45"
     },
     {
-      "claim_id": "question-57ddd270-7dde-43ef-be87-99b05738d44d-ALE-MATL-007-04-008-b077",
-      "claim_text": "Question 57ddd270-7dde-43ef-be87-99b05738d44d ALE-MATL-007-04-008 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "459f76fa-0eff-4f4f-95ff-0350dae9a802",
+      "content_hash": "sha256:94042ec5b00fb2d8c37cc09895cfb50ac4460d60379facdf8fe0c9314d375f4b"
     },
     {
-      "claim_id": "question-459f76fa-0eff-4f4f-95ff-0350dae9a802-ALE-MATL-007-04-007-b077",
-      "claim_text": "Question 459f76fa-0eff-4f4f-95ff-0350dae9a802 ALE-MATL-007-04-007 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "bdec829a-7639-4e67-8d3b-15cb5144479b",
+      "content_hash": "sha256:5833c23b3099473e18e902a1df866cbbd733154f080ca5b6af89112db2b92f30"
     },
     {
-      "claim_id": "question-bdec829a-7639-4e67-8d3b-15cb5144479b-ALE-MATL-007-04-010-b077",
-      "claim_text": "Question bdec829a-7639-4e67-8d3b-15cb5144479b ALE-MATL-007-04-010 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "f8ac3693-3320-4498-a348-18b0208bf945",
+      "content_hash": "sha256:7010fadea1a5e2ae5cc92fa9a99faa9abebe595987aa74a620f51b8e4f79f098"
     },
     {
-      "claim_id": "question-f8ac3693-3320-4498-a348-18b0208bf945-ALE-MATL-007-04-005-b077",
-      "claim_text": "Question f8ac3693-3320-4498-a348-18b0208bf945 ALE-MATL-007-04-005 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "question-888958aa-5c04-4f46-a222-474c6b965767-ALE-MATL-007-04-009-b077",
-      "claim_text": "Question 888958aa-5c04-4f46-a222-474c6b965767 ALE-MATL-007-04-009 was rewritten to the checked paint_systems source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "forms an adherent continuous film"
-      },
-      "blockers": []
+      "question_id": "888958aa-5c04-4f46-a222-474c6b965767",
+      "content_hash": "sha256:13a5a44179ead4043f64d6abf2ce5289b7c40f4386e509d3537f695a3b73fb99"
     }
   ],
-  "unverified_or_rejected_claims": [],
-  "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
-  },
-  "local_first_publication": {
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "ready_for_final_publishing_review": true
-  }
+  "real_world_scenario_status": "included",
+  "exact_claim_policy": "exact legal, code, test-method, product, or numeric performance values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No local source in this batch was used to restore VOC limits, EPA/ASTM labels, DFT values, ANSI/BP 344 slip-resistance language, or modern coverage-rate claims.",
+    "No local source in this batch was used to make brand-specific paint or primer requirements mandatory.",
+    "No local source in this batch was used to convert intumescent coating behavior into a specific structural fire-rating requirement."
+  ]
 }

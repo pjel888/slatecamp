@@ -1,65 +1,69 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+  "cluster_id": "lea-matl-007-05",
   "question_id": "90603524-c5ac-4738-87d6-ba1f3afc8491",
-  "baseline_hash": "sha256:24f8ef03b574d97549f71e098c8b6e4fb69647199ea9f4ea5910e0b3933db95d",
-  "action": "replace",
-  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-05-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-078",
-  "approved_at": "2026-05-12T05:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
-    "parent_article_slug": "lea-matl-007-05-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b078",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 12549-12620, 13036-13496, and 13505-13562; raw PDF pages 343-365 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b078",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited finish_schedule scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:c9a422272acf04a3660a75b72e5ef7fa47d17984e62335b0444faf0e46d1d0c8",
+  "after_hash": "sha256:c9a422272acf04a3660a75b72e5ef7fa47d17984e62335b0444faf0e46d1d0c8",
+  "baseline_hash": "sha256:c9a422272acf04a3660a75b72e5ef7fa47d17984e62335b0444faf0e46d1d0c8",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "salvan-finish-specification-paint-b152"
+  ],
+  "reason": "Batch 152 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "Which field belongs in a source-safe finish schedule entry?",
+    "text": "A paint schedule names a finish in one room but uses \"light color\" in another. What source-safe issue does this create?",
     "options": [
       {
         "id": "a",
-        "text": "Surface and finish material with substrate or backing and installation method"
+        "text": "No issue; vague finish descriptions improve coordination."
       },
       {
         "id": "b",
-        "text": "Only the designer initials"
+        "text": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution."
       },
       {
         "id": "c",
-        "text": "Only a roof span"
+        "text": "It converts the paint into terrazzo."
       },
       {
         "id": "d",
-        "text": "Only a future color note"
+        "text": "It automatically satisfies every product performance requirement."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "A usable finish schedule should identify surface, finish, substrate or backing, and installation method.",
-    "explanation": "A usable finish schedule should identify surface, finish, substrate or backing, and installation method.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "No issue; vague finish descriptions improve coordination. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "b": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution. This stays inside the Batch 152 local source boundary.",
+      "c": "It converts the paint into terrazzo. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "d": "It automatically satisfies every product performance requirement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "correct": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution. Supported by salvan-finish-specification-paint-b152.",
+      "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+      "source_boundary": "salvan-finish-specification-paint-b152",
+      "checked_sources": [
+        "salvan-finish-specification-paint-b152"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Salvan refined markdown lines 13388-13412.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-152-local-first",
+      "salvan-finish-specification-paint-b152"
+    ]
+  },
+  "rationale": {
+    "a": "No issue; vague finish descriptions improve coordination. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "b": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution. This stays inside the Batch 152 local source boundary.",
+    "c": "It converts the paint into terrazzo. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "d": "It automatically satisfies every product performance requirement. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "correct": "The architect-approved color, tint, finish, or shade and manufacturer-directed paint system are not consistently defined for field execution. Supported by salvan-finish-specification-paint-b152.",
+    "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+    "source_boundary": "salvan-finish-specification-paint-b152",
+    "checked_sources": [
+      "salvan-finish-specification-paint-b152"
+    ]
   }
 }

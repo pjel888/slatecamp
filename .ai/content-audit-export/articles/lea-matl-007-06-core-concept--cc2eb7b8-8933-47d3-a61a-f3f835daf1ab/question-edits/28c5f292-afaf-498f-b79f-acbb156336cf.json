@@ -1,65 +1,69 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+  "cluster_id": "lea-matl-007-06",
   "question_id": "28c5f292-afaf-498f-b79f-acbb156336cf",
-  "baseline_hash": "sha256:ea35d46e9618264b371b12c83ee3663b3ea8850a954ec2b6bb68c9bff01efe76",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-06-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
-    "parent_article_slug": "lea-matl-007-06-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited countertop_materials scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:b2a8a66f4e79de2b38bb3746ea925529d47ca4b673515679177520a66b20fd90",
+  "after_hash": "sha256:b2a8a66f4e79de2b38bb3746ea925529d47ca4b673515679177520a66b20fd90",
+  "baseline_hash": "sha256:b2a8a66f4e79de2b38bb3746ea925529d47ca4b673515679177520a66b20fd90",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-plastic-laminate-countertops-b152"
+  ],
+  "reason": "Batch 152 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "Which substrate group can receive plastic laminate according to BCI?",
+    "text": "Why should a backer sheet be applied to the opposite side of an unsupported laminate panel?",
     "options": [
       {
         "id": "a",
-        "text": "Smooth plywood, hardboard, particleboard, and similar core materials"
+        "text": "To make the panel a fire-rated ceiling."
       },
       {
         "id": "b",
-        "text": "Only loose carpet pad"
+        "text": "To keep the unsupported panel from warping."
       },
       {
         "id": "c",
-        "text": "Only unbraced roof trusses"
+        "text": "To replace all edge treatment."
       },
       {
         "id": "d",
-        "text": "Only wet masonry with no backing"
+        "text": "To turn low-pressure laminate into marble."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI says plastic laminate may be applied to smooth plywood, hardboard, particleboard, and other common core materials.",
-    "explanation": "BCI says plastic laminate may be applied to smooth plywood, hardboard, particleboard, and other common core materials.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "To make the panel a fire-rated ceiling. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "b": "To keep the unsupported panel from warping. This stays inside the Batch 152 local source boundary.",
+      "c": "To replace all edge treatment. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "d": "To turn low-pressure laminate into marble. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "correct": "To keep the unsupported panel from warping. Supported by bci-5e-plastic-laminate-countertops-b152.",
+      "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+      "source_boundary": "bci-5e-plastic-laminate-countertops-b152",
+      "checked_sources": [
+        "bci-5e-plastic-laminate-countertops-b152"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 13790-13808.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-152-local-first",
+      "bci-5e-plastic-laminate-countertops-b152"
+    ]
+  },
+  "rationale": {
+    "a": "To make the panel a fire-rated ceiling. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "b": "To keep the unsupported panel from warping. This stays inside the Batch 152 local source boundary.",
+    "c": "To replace all edge treatment. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "d": "To turn low-pressure laminate into marble. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "correct": "To keep the unsupported panel from warping. Supported by bci-5e-plastic-laminate-countertops-b152.",
+    "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+    "source_boundary": "bci-5e-plastic-laminate-countertops-b152",
+    "checked_sources": [
+      "bci-5e-plastic-laminate-countertops-b152"
+    ]
   }
 }

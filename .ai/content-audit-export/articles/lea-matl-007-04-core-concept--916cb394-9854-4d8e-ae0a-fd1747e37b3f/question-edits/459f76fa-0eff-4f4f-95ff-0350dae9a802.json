@@ -1,65 +1,69 @@
 {
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+  "cluster_id": "lea-matl-007-04",
   "question_id": "459f76fa-0eff-4f4f-95ff-0350dae9a802",
-  "baseline_hash": "sha256:3bdbda9896c0bddc7289635c9794bc2f0311468d0fb8ed6aba2af020884b89a2",
-  "action": "replace",
-  "reason": "source-audited-article-batch-077-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-04-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-077",
-  "approved_at": "2026-05-12T04:10:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
-    "parent_article_slug": "lea-matl-007-04-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Salvan refined markdown lines 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 145-146 and 361 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
-      "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "salvan-building-materials-b077",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "bci-5e-b077",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 077 local raw-source-audited paint_systems scope."
-  },
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:94042ec5b00fb2d8c37cc09895cfb50ac4460d60379facdf8fe0c9314d375f4b",
+  "after_hash": "sha256:94042ec5b00fb2d8c37cc09895cfb50ac4460d60379facdf8fe0c9314d375f4b",
+  "baseline_hash": "sha256:94042ec5b00fb2d8c37cc09895cfb50ac4460d60379facdf8fe0c9314d375f4b",
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "salvan-paint-protective-coatings-b152"
+  ],
+  "reason": "Batch 152 local-first rewrite aligned to reserved source boundary.",
   "proposed": {
-    "text": "What happens when pigment is added to a varnish according to Salvan?",
+    "text": "What distinguishes intumescent paint in the checked source?",
     "options": [
       {
         "id": "a",
-        "text": "The result is an enamel"
+        "text": "It is ordinary decorative paint with no heat response."
       },
       {
         "id": "b",
-        "text": "The result is a footing drain"
+        "text": "It puffs up under heat or fire and forms an insulating crust that retards heat penetration."
       },
       {
         "id": "c",
-        "text": "The material becomes a vapor retarder only"
+        "text": "It is a transparent varnish used only to show wood grain."
       },
       {
         "id": "d",
-        "text": "The material becomes loose-fill insulation"
+        "text": "It is a grout color schedule."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Salvan states that adding pigment to varnish results in enamel, whose durability depends partly on pigment quality.",
-    "explanation": "Salvan states that adding pigment to varnish results in enamel, whose durability depends partly on pigment quality.",
-    "code_citation": "George Salvan Architectural Building Materials; Building Construction Illustrated, 5th Edition"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It is ordinary decorative paint with no heat response. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "b": "It puffs up under heat or fire and forms an insulating crust that retards heat penetration. This stays inside the Batch 152 local source boundary.",
+      "c": "It is a transparent varnish used only to show wood grain. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "d": "It is a grout color schedule. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+      "correct": "It puffs up under heat or fire and forms an insulating crust that retards heat penetration. Supported by salvan-paint-protective-coatings-b152.",
+      "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+      "source_boundary": "salvan-paint-protective-coatings-b152",
+      "checked_sources": [
+        "salvan-paint-protective-coatings-b152"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: Salvan refined markdown lines 4407-4426.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-152-local-first",
+      "salvan-paint-protective-coatings-b152"
+    ]
+  },
+  "rationale": {
+    "a": "It is ordinary decorative paint with no heat response. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "b": "It puffs up under heat or fire and forms an insulating crust that retards heat penetration. This stays inside the Batch 152 local source boundary.",
+    "c": "It is a transparent varnish used only to show wood grain. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "d": "It is a grout color schedule. is not the best answer because it changes the source-backed concept or adds a claim outside the Batch 152 local source boundary.",
+    "correct": "It puffs up under heat or fire and forms an insulating crust that retards heat penetration. Supported by salvan-paint-protective-coatings-b152.",
+    "takeaway": "Match the finish or countertop assembly to the checked source boundary before using exact ratings or product claims.",
+    "source_boundary": "salvan-paint-protective-coatings-b152",
+    "checked_sources": [
+      "salvan-paint-protective-coatings-b152"
+    ]
   }
 }

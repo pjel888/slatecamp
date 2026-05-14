@@ -1,0 +1,476 @@
+{
+  "batch": 152,
+  "batch_id": "source-audited-batch-152-local-first",
+  "status": "pass",
+  "generated_at": "2026-05-14T04:41:29.386Z",
+  "baseline": "9c637523d3",
+  "branch": "3dlab-gray-viewport-bg",
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "article_checks": [
+    {
+      "cluster_id": "lea-matl-007-04",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "ui_block_validation": "pass",
+      "parser_errors": "pass",
+      "json_parse": "pass",
+      "marker_source_gap_scan": "pass",
+      "marker_matches": [],
+      "unsupported_exact_claim_matches": [],
+      "linked_question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_parity": "pass",
+      "answer_key_preserved": "pass",
+      "stale_compose_error_scan": "pass",
+      "source_count": 2,
+      "source_hashes_present": "pass",
+      "real_world_scenario_status": "included",
+      "normalized_sha256": "sha256:422c4640d5c8f303bc9fa60d086133656eb145df28fc7c043895a7af885d35c5",
+      "candidate_sha256": "sha256:422c4640d5c8f303bc9fa60d086133656eb145df28fc7c043895a7af885d35c5",
+      "linked_questions_sha256": "sha256:9e0fdc55d51a9d16c097c60017c8c137b10ebfe6f62d72de3f374f5404842b2a",
+      "source_evidence_sha256": "sha256:a3d04e961cb1c021d3b57aede6160a40ca7148e813e9f55e19fa6b229d4a891b"
+    },
+    {
+      "cluster_id": "lea-matl-007-05",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "ui_block_validation": "pass",
+      "parser_errors": "pass",
+      "json_parse": "pass",
+      "marker_source_gap_scan": "pass",
+      "marker_matches": [],
+      "unsupported_exact_claim_matches": [],
+      "linked_question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_parity": "pass",
+      "answer_key_preserved": "pass",
+      "stale_compose_error_scan": "pass",
+      "source_count": 2,
+      "source_hashes_present": "pass",
+      "real_world_scenario_status": "included",
+      "normalized_sha256": "sha256:7b02626960fa55faf4de3bb7c793afefc2d7d2213b578440a7cd6c054c2587af",
+      "candidate_sha256": "sha256:7b02626960fa55faf4de3bb7c793afefc2d7d2213b578440a7cd6c054c2587af",
+      "linked_questions_sha256": "sha256:e5c4f59f164eb22a28dce77a2a85457d3a7559c2157a2b4fc82056df3c57f9fe",
+      "source_evidence_sha256": "sha256:a52113ff9e5b12f4a6c6952e5a33601d4950c95a9d4b9e0460ab4aa0f0804847"
+    },
+    {
+      "cluster_id": "lea-matl-007-06",
+      "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "ui_block_validation": "pass",
+      "parser_errors": "pass",
+      "json_parse": "pass",
+      "marker_source_gap_scan": "pass",
+      "marker_matches": [],
+      "unsupported_exact_claim_matches": [],
+      "linked_question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_parity": "pass",
+      "answer_key_preserved": "pass",
+      "stale_compose_error_scan": "pass",
+      "source_count": 2,
+      "source_hashes_present": "pass",
+      "real_world_scenario_status": "included",
+      "normalized_sha256": "sha256:85f54fe2e33376fd82dc33c5262176997a1b9fa77851d85be224f7e378fdf72a",
+      "candidate_sha256": "sha256:85f54fe2e33376fd82dc33c5262176997a1b9fa77851d85be224f7e378fdf72a",
+      "linked_questions_sha256": "sha256:8d5102c7ccf29aca8c607ba5af0234f66cf9092bb85a0a809f4d14a9a9268246",
+      "source_evidence_sha256": "sha256:b806d71e2c0c2a0ef70e8e8d3e11e3f03a11f514c2719bcf327e246c38ff492b"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "source_id": "salvan-paint-protective-coatings-b152",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/salvan-paint-protective-coatings-b152.source-capture.md",
+      "capture_sha256": "sha256:043402bfd630ee5c7b49db65965d986c61fe98dae2db331a98e4b495420cf271",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/salvan-paint-protective-coatings-b152.refined.md",
+      "refined_capture_sha256": "sha256:6211abf3c3bfd394fea02304ac7c41c27065ee2d74a195f3f6c8f93b08b68d39",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-5e-finish-selection-basics-b152",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/bci-5e-finish-selection-basics-b152.source-capture.md",
+      "capture_sha256": "sha256:9a0c85b67bf24fbf1d96c85a988d484b8f2c3905869fa1d2ce3b813369dd751e",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/bci-5e-finish-selection-basics-b152.refined.md",
+      "refined_capture_sha256": "sha256:4721722ecface194e4f82083a67cf277b74fb2542e769cfbe01a2ed90cdf5d99",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-finish-specification-paint-b152",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/salvan-finish-specification-paint-b152.source-capture.md",
+      "capture_sha256": "sha256:ac71ce8fbb6efe65e31debf40b679b11012fd5ac90ab47380049f060077e8d91",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/salvan-finish-specification-paint-b152.refined.md",
+      "refined_capture_sha256": "sha256:d0321968c05aae540312693ef6ffb9b6b7be72dd586637262da98cc7b70f2867",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-5e-plastic-laminate-countertops-b152",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/bci-5e-plastic-laminate-countertops-b152.source-capture.md",
+      "capture_sha256": "sha256:49f59663e68f84215de21fd5454b1042d8a7eeaaeb112d29acae94f27cd9fc72",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/bci-5e-plastic-laminate-countertops-b152.refined.md",
+      "refined_capture_sha256": "sha256:7559259f59d5a8b110a687e66b241f27b7575cf65e84dca090ad3d4a1f70c397",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-plastic-laminates-b152",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-152/salvan-plastic-laminates-b152.source-capture.md",
+      "capture_sha256": "sha256:be42e339b531e9ebda4b31955d6bfb4cda160383397b047b12e5f3ac0aa1c2d9",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-152/salvan-plastic-laminates-b152.refined.md",
+      "refined_capture_sha256": "sha256:1640a7353fba29a60c24657dc85479896154d96f661709da3c2265675f10f41d",
+      "status": "pass"
+    }
+  ],
+  "scoped_json_parse": [
+    {
+      "file": ".ai/03_plans/production-line-batch-152-manifest.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/source-audited-article-batch-152-local-first-ledger.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/source-audited-article-batch-152-local-first-scoped-checks.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/source-audited-article-batch-152-local-first-content-generation-summary.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/2cf1eed7-790f-4002-8d93-d6879f5fad7d.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/57faa581-99fa-4ba9-a995-6a61c1c2ad68.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/13b9b3e9-3eb1-4eab-819e-a1a66131cd6e.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/505dbdd9-66bd-4247-a4e6-0d3b256bbc25.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/80b07487-5a8d-4a9e-a44d-90e20589ce9e.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/57ddd270-7dde-43ef-be87-99b05738d44d.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/459f76fa-0eff-4f4f-95ff-0350dae9a802.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/bdec829a-7639-4e67-8d3b-15cb5144479b.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/f8ac3693-3320-4498-a348-18b0208bf945.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/question-edits/888958aa-5c04-4f46-a222-474c6b965767.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/article-metadata.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/compose-report.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/diff-report.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/linked-questions.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/parser-errors.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/scoped-validation-batch-152.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/source-audit-evidence.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/sources.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/taxonomy.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/ui-block-edit-validation.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/ui-block-edits.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f/ui-blocks.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/a6275c53-fecc-499a-be58-71003916d6a7.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/e68187ad-8741-4a34-a724-2e3b2e6357e8.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/90603524-c5ac-4738-87d6-ba1f3afc8491.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/65873363-85b0-408b-be1c-d6e334f617b6.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/29784988-50f9-4b4d-8e9b-d31b9530c7b3.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/011b5df2-94f0-4ae7-9383-193ad275bb71.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/8ec65acf-9fa7-41ee-ac65-70c1dece2e95.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/fbb2f72b-31c5-4dd3-8d19-fed57cd197b3.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/f5ca4347-c9b3-4e67-841d-6151a59da160.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/question-edits/7028f39f-8941-4838-8fdb-3e298beb880e.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/article-metadata.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/compose-report.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/diff-report.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/linked-questions.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/parser-errors.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/scoped-validation-batch-152.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/source-audit-evidence.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/sources.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/taxonomy.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/ui-block-edit-validation.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/ui-block-edits.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278/ui-blocks.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/8691a1fc-83d2-4f6c-aba0-90ea7d1681e8.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/28c5f292-afaf-498f-b79f-acbb156336cf.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/121cc4a8-9eb0-4b7b-b2ab-e719423f8e86.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/1621c2ad-8b85-4a50-b6ca-061f18f3e804.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/144dbf84-2b68-4609-9ed5-25f148d2f30f.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/61d9ebbe-f867-484b-ae60-282fdbf37902.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/92ae060a-e88c-4b3d-90e0-9ef20ba56f82.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/e3fa2535-6cac-4096-8759-7021126a0e80.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/a39e9de5-9677-4db3-b519-2e4777b1cdcd.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/question-edits/09bfee5a-27b2-4879-8717-940b5a09b32b.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/article-metadata.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/compose-report.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/diff-report.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/linked-questions.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/parser-errors.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/scoped-validation-batch-152.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/source-audit-evidence.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/sources.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/taxonomy.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/ui-block-edit-validation.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/ui-block-edits.json",
+      "status": "pass"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab/ui-blocks.json",
+      "status": "pass"
+    }
+  ],
+  "validation_boundary": "Batch 152 reserved clusters and batch-specific source artifacts only; no global cluster selection."
+}
