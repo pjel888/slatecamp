@@ -1,0 +1,149 @@
+{
+  "batch": 172,
+  "batch_id": "source-audited-batch-172-local-first-zero_content_closure",
+  "status": "local_validation_passed_independent_qa_passed_ready_for_exact_path_commit",
+  "generated_at": "2026-05-15T01:18:23+08:00",
+  "scope": {
+    "closure_type": "zero_content_closure",
+    "selected_articles": [],
+    "selected_article_count": 0,
+    "selected_linked_question_count": 0,
+    "selected_question_edit_count": 0,
+    "article_edits": 0,
+    "source_edits": 0,
+    "answer_key_changes": 0,
+    "eligible_queue_blockers": 0,
+    "article_folder_edits": [],
+    "source_folder_edits": [],
+    "question_edit_files_touched": [],
+    "closure_artifacts": [
+      ".ai/content-audit-export/source-audited-article-batch-172-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-172-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-172-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-172-git-handoff-stage-paths.txt"
+    ],
+    "shared_state_files_touched": []
+  },
+  "checks": [
+    {
+      "name": "latest_accepted_content_state",
+      "status": "pass",
+      "command": "git rev-parse HEAD origin/3dlab-gray-viewport-bg && git log -1 --format=%H%x09%s HEAD",
+      "evidence": "HEAD and origin/3dlab-gray-viewport-bg both resolve to 1bb67ea251a8d6717b56019b2880f369b196206b, subject chore(content): record final supabase apply closure."
+    },
+    {
+      "name": "batch_171_baseline_ancestry",
+      "status": "pass",
+      "command": "git show --name-status --oneline 81f42e48697a566d48ebb454f2e920ea30291703 && git merge-base --is-ancestor 81f42e48697a566d48ebb454f2e920ea30291703 HEAD",
+      "evidence": "Batch 171 commit exists with exactly five accepted closure artifacts and is an ancestor of current HEAD."
+    },
+    {
+      "name": "live_git_status_and_dirty_scope",
+      "status": "pass",
+      "command": "git status --short --untracked-files=all; git diff --name-only; git ls-files --others --exclude-standard",
+      "evidence": "Pre-existing unrelated dirty/untracked files exist in docs, shared export state, Hermes, marketing, 3D, tests, prompts, run directories, and tmp. Batch 172 writes only exact intended closure paths."
+    },
+    {
+      "name": "repo_orientation",
+      "status": "pass",
+      "command": "Read README.md, AGENTS.md, CLAUDE.md, .ai/AGENTS.md, .ai/00_system/CODEX_ENABLEMENT_GUIDE.md, .ai/00_system/repo-map.md, and package.json.",
+      "evidence": "Repo is a pre-launch MVP, Bun-first, with .ai as operational intelligence. No nearer active AGENTS.md exists under .ai/content-audit-export or active .ai/03_plans Batch 172 paths."
+    },
+    {
+      "name": "residual_eligibility_reconciliation",
+      "status": "pass",
+      "command": "Node JSON scan over .ai/content-audit-export/source-audited-article-batch-*-local-first-ledger.json plus targeted rg over batch reports, scoped checks, final-second-audit, and residual planning artifacts.",
+      "evidence": "Selection-time scan found 148 local-first batch ledgers, max batch 171, and zero nonempty residual fields. Batch 160 listed eight blocked residual clusters; Batches 161-163 consumed all eight; Batch 164 remediated question alignment across the same eight; Batches 165-171 recorded zero-content closures. Historical SOURCEABLE_DEFERRED appears only as consumed by Batch 162."
+    },
+    {
+      "name": "post_batch_171_apply_closure",
+      "status": "pass",
+      "command": "jq '.' .ai/03_plans/final-second-audit/final-supabase-apply-closure-2026-05-14.json",
+      "evidence": "Final apply closure verdict PASS: question Batch 164 total 90, pushed_true 90, updated_rows_count_1 90; article Batches 161-163 total 8, pushed_true 8, updated_rows_count_1 8, readback_matched 8, remote_raw_placeholders 0."
+    },
+    {
+      "name": "selected_article_count",
+      "status": "pass",
+      "command": "Batch 172 ledger invariant",
+      "evidence": "zero_content_closure selected_clusters=[], selected_article_count=0, linked_question_count=0, question_edit_count=0, article_edits=0, source_edits=0, answer_key_changes=0, eligible_queue_blockers=0."
+    },
+    {
+      "name": "compose_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:compose -- --article-id <id> --dry-run --strict --overwrite",
+      "evidence": "No article bundle was selected or edited in Batch 172."
+    },
+    {
+      "name": "diff_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:diff -- --article-id <id> --dry-run --strict --summary",
+      "evidence": "No article bundle was selected or edited in Batch 172."
+    },
+    {
+      "name": "official_scoped_validate",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun scripts/content-audit/validate-bundles.ts --input <scoped selected-article root> --dry-run --json",
+      "evidence": "No selected article bundle exists. No temporary validation root was created."
+    },
+    {
+      "name": "linked_question_json_parse",
+      "status": "not_applicable_no_selected_articles",
+      "command": "node JSON.parse over touched question-edits/*.json",
+      "evidence": "No question-edit JSON files were touched or created in Batch 172."
+    },
+    {
+      "name": "linked_question_question_edit_parity",
+      "status": "pass",
+      "command": "Batch 172 ledger invariant",
+      "evidence": "0 selected linked questions equals 0 generated question edits; answer-key changes=0."
+    },
+    {
+      "name": "source_evidence_hashes_and_locators",
+      "status": "pass",
+      "command": "test -f/test -d over accepted NSCP source family; shasum -a 256 over raw NSCP PDF and Batch 171/final apply artifacts",
+      "evidence": "Accepted NSCP raw PDF, conversion pages directory, and SOURCE-METADATA.json exist. Raw PDF SHA-256 is 2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03. Batch 171 and final apply artifact hashes are recorded in the ledger."
+    },
+    {
+      "name": "json_parse",
+      "status": "pass",
+      "command": "node JSON.parse over Batch 172 JSON artifacts",
+      "evidence": "Batch 172 ledger and scoped-checks JSON parsed successfully."
+    },
+    {
+      "name": "marker_internal_note_source_gap_scan",
+      "status": "pass",
+      "command": "rg scan over the Batch 172 handoff paths for unresolved editorial markers plus source-gap/backlog terms",
+      "evidence": "Scan found only intentional preserved backlog/source-gap terms and the historical consumed SOURCEABLE_DEFERRED reference. No unresolved placeholder, SLATECAMP_UI_BLOCK, TODO, FIXME, TBD, or internal-note marker was found."
+    },
+    {
+      "name": "source_verification_invariants",
+      "status": "pass",
+      "command": "bun run test:source-verification",
+      "evidence": "7 pass, 0 fail, 244 expect() calls."
+    },
+    {
+      "name": "git_diff_whitespace_check",
+      "status": "pass",
+      "command": "git diff --check -- $(cat .ai/03_plans/batch-172-git-handoff-stage-paths.txt) plus no-index checks if needed for untracked paths",
+      "evidence": "git diff --check exited 0. Direct whitespace scan found no trailing whitespace and no missing final newline in the four Batch 172 handoff paths."
+    },
+    {
+      "name": "independent_quality_review",
+      "status": "pass",
+      "command": "Hermes read-only artifact QA over Batch 172 closure ledger/report/scoped-checks and exact handoff paths",
+      "evidence": "PASS recorded at .ai/03_plans/final-second-audit/overnight-release-readiness/batch-172-independent-qa-2026-05-15.json; zero selected articles, zero question edits, zero answer-key changes, exact four closure paths present and parseable."
+    },
+    {
+      "name": "git_stage_exact_paths",
+      "status": "ready",
+      "command": "git add --pathspec-from-file=.ai/03_plans/batch-172-git-handoff-stage-paths.txt only if all gates pass",
+      "evidence": "Exact four Batch 172 paths plus independent QA artifact are ready for scoped staging; unrelated dirty tree remains excluded."
+    }
+  ],
+  "warnings": [
+    "Batch 172 intentionally excludes shared export state files because no selected article requires shared state churn.",
+    "Batch 172 intentionally excludes stale article compose/diff sidecar modifications, the deleted compose-error artifact under lea-strc-011-03, and all unrelated dirty product, 3D, marketing, Hermes, prompt, docs, run-directory, and tmp files.",
+    "Final-audit THIN_NEEDS_EXPANSION, scenario/depth, question-alignment, source-primary/source-needed, and source-gap/proprietary-source findings remain final-remediation backlog."
+  ],
+  "final_status": "local_validation_passed_independent_qa_passed_ready_for_exact_path_commit"
+}
