@@ -2,40 +2,50 @@
   "question_id": "658f2f0c-ed59-48d2-8ab0-6411ba3f8a4e",
   "baseline_hash": "sha256:798a0dfdf037c9fb1b983ec84437f4f98b11985a7d21edcb7035813869225f65",
   "action": "replace",
-  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-05-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-080",
-  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "reason": "source-audited-batch-154-local-first refreshed linked question support with Batch 154 checked local raw/refined source evidence for lea-matl-008-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-154",
+  "approved_at": "2026-05-14T04:47:45.262Z",
   "source_audit_support": {
     "parent_article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
     "parent_article_slug": "lea-matl-008-05-core-concept",
+    "batch_id": "source-audited-batch-154-local-first",
     "answer_key_fields_changed": true,
+    "answer_key_policy": "Existing source-audited corrected answer key preserved; original unsupported answer-key changes remain documented by the prior local source audit.",
     "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 16020-16145; raw PDF page 438 checked by local PyMuPDF extraction",
+    "source_locator": "refined markdown lines 16121-16137; raw PDF page 438; refined markdown lines 2678-2854; raw PDF pages 91-94",
     "checked_markdown_lines": [
-      "BCI refined markdown lines 16020-16145; raw PDF page 438 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 2678-2854; raw PDF pages 91-94 checked by local PyMuPDF extraction"
+      "refined markdown lines 16121-16137; raw PDF page 438",
+      "refined markdown lines 2678-2854; raw PDF pages 91-94"
     ],
     "checked_sources": [
       {
-        "source_id": "bci-5e-b080",
+        "source_id": "bci-5e-adhesive-systems-b154",
         "label": "Building Construction Illustrated, 5th Edition",
         "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
         "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 16020-16145; raw PDF page 438 checked by local PyMuPDF extraction"
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "refined markdown lines 16121-16137; raw PDF page 438",
+        "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/bci-5e-adhesive-systems-b154.source-capture.md",
+        "capture_sha256": "sha256:27165ec80510ea41e660bc680e9b619c4d87e4acc74f3c150a0774c623d96342",
+        "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/bci-5e-adhesive-systems-b154.refined.md",
+        "refined_capture_sha256": "sha256:89ac229941db52cd861ab8f32f4f4e07532fbba5cd522836ecd34c6af28fb50c"
       },
       {
-        "source_id": "salvan-building-materials-b080",
+        "source_id": "salvan-adhesive-sealer-systems-b154",
         "label": "George Salvan Architectural Building Materials",
         "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
         "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2678-2854; raw PDF pages 91-94 checked by local PyMuPDF extraction"
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "refined markdown lines 2678-2854; raw PDF pages 91-94",
+        "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/salvan-adhesive-sealer-systems-b154.source-capture.md",
+        "capture_sha256": "sha256:52b07782ee777a8efe17a890623fe551fdb9b9f87956e0d1a1ead3f1d951db06",
+        "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/salvan-adhesive-sealer-systems-b154.refined.md",
+        "refined_capture_sha256": "sha256:a31e95126583664738ccba7054d1fb7b6b1e7c267ff15e136c5f1137ba24cf01"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited adhesive_systems scope."
+    "local_source_safe_action": "Question text/options/rationale retained or lightly tightened within the Batch 154 local raw/refined source boundary for lea-matl-008-05."
   },
   "proposed": {
     "text": "What is the basic purpose of an adhesive in BCI?",

@@ -8,11 +8,13 @@ RA 9266 IRR treats specifications as part of architectural practice and architec
 
 The same IRR defines contract documents as including drawings and specifications. It requires architectural plans, drawings, specifications, and contract documents prepared by or under the architect's direct supervision to bear the architect's seal. It also states that drawings and specifications duly signed, stamped, or sealed are instruments of service and intellectual property of the architect.
 
+SPP 202 places the Contract Document Phase within the regular design-service sequence. SPP 203 lists Contract Documentation and Review among Specialized Architectural Services. Those sources support the professional-document role of specifications, but they do not source-audit external specification-type taxonomy for this cluster.
+
 ## Learning Goal
 
 - Identify specifications as both architectural documents and contract documents in RA 9266 IRR.
 - Recognize the architect-of-record responsibility attached to signed and sealed specifications.
-- Avoid unsupported specification-type labels unless the source or item provides them.
+- Place specifications in the contract-document phase/service context without importing unsupported specification-type labels.
 
 ## Core Concept
 
@@ -24,9 +26,7 @@ Specifications are not just notes beside drawings. In the checked RA 9266 IRR te
 | Architectural documents | Technical specifications and cost estimates are among architectural outputs. |
 | Contract documents | Specifications are listed with drawings and other bid documents. |
 
-UAP SPP 203 also identifies contract documentation and review as a specialized architectural service and connects it with specifications writing, estimation and quantity survey, architectural production, architectural software, support services, and contract document review.
-
-Therefore, the LEA-safe view is legal and professional: specifications carry responsibility. They must be coordinated with drawings, prepared under the proper professional scope, and treated as instruments of service.
+Therefore, the LEA-safe view is legal and professional: specifications carry responsibility. They must be coordinated with drawings, prepared under the proper professional scope, signed and sealed when required, and treated as instruments of service.
 
 ## Key Facts and Testable Items
 
@@ -34,9 +34,14 @@ Therefore, the LEA-safe view is legal and professional: specifications carry res
 | --- | --- |
 | "Specifications" in RA 9266 IRR | Architectural documents and contract documents. |
 | "Prepared under direct supervision" | Architect's seal and responsibility rules apply. |
-| "Contract documentation and review" | Specialized architectural service in UAP SPP 203. |
+| "Contract Document Phase" | Regular design-service phase listed in SPP 202. |
+| "Contract Documentation and Review" | Specialized architectural service listed in SPP 203. |
 | "Drawings and specifications" | Instruments of service and intellectual property when duly signed, stamped, or sealed. |
 | "Specification type" | Use only if the question or checked source gives the classification basis. |
+
+## Real World Scenario
+
+A contractor submits an alternate finish after bidding and says the specification was "only a note." The source-safe response is to treat the specification as a formal architectural and contract document, check it against the drawings and contract documents, and keep the architect-of-record responsibility tied to documents issued under the architect's seal or authorized signature. Do not answer by inventing an external substitution procedure unless that procedure is given in the question or captured in a separate source packet.
 
 ## How It's Tested on the LEA
 

@@ -1,0 +1,530 @@
+{
+  "batch": 154,
+  "batch_id": "source-audited-batch-154-local-first",
+  "baseline": "9c637523d3",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T04:47:45.262Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-154-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-matl-008-04",
+    "lea-matl-008-05",
+    "lea-matl-009-01"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-matl-008-04",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "slug": "lea-matl-008-04-core-concept",
+      "title": "Window operations",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bci-5e-window-operations-b154",
+        "salvan-window-operations-b154"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:131f7b7444641a4423236fafcf0e6107219102d6257ae1c1fc1781b93ea3c381",
+      "candidate_sha256": "sha256:131f7b7444641a4423236fafcf0e6107219102d6257ae1c1fc1781b93ea3c381",
+      "source_evidence_sha256": "sha256:74c6f63df2ecb5ad5202a561116661bb06a51537287f4f9d41b3266f9e6c0aef",
+      "linked_questions_sha256": "sha256:3e06d722cb88577d1a77e53cfcf2a67c94ca91eeac139f556337a66c1d5f5d4c",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No AAMA Gold Label ratings, exact wind-load classes, water-infiltration rates, crank force values, or thermal derating calculations were restored.",
+        "No Philippine egress, safety-glazing, accessibility, acoustic, or thermal code requirement was asserted from this materials-only source boundary.",
+        "No manufacturer-specific rough opening, profile dimension, frame performance, or glass thickness claim was converted into a universal rule."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/scoped-validation-batch-154.json",
+        "taxonomy": ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/taxonomy.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/24857268-6703-438e-94b4-03e3037385ae.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/3cd3bff5-3609-42b2-a1c3-2f59678b66d4.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/46efddd1-bb9f-4b88-a135-7e7c42cd4775.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/61d7a99d-1e51-4b14-86e1-80189abf8068.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/7418747e-05ea-42e6-b324-35c8cee0bb0f.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/85543a8c-10dd-4d02-8525-544ef5e3d6ec.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/b2050540-d62a-4315-9765-73435d98f600.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/b2c38567-3eef-4e5f-97ef-184396faeedc.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/ece3877b-c961-413d-8851-31653e444d9b.json",
+          ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006/question-edits/ed3ba734-4c18-4574-ad29-7f947cf37546.json"
+        ]
+      },
+      "sources_hash": "sha256:c75c08787c8aed474c7d1691952a1774d2bbd846e6bb8cb8e75fc6d030b90566"
+    },
+    {
+      "cluster_id": "lea-matl-008-05",
+      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "slug": "lea-matl-008-05-core-concept",
+      "title": "Adhesive Systems",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bci-5e-adhesive-systems-b154",
+        "salvan-adhesive-sealer-systems-b154"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:06219b3aadf21d71995b85a428f4646d1f972cbd21503eba3deaf77e522319a8",
+      "candidate_sha256": "sha256:06219b3aadf21d71995b85a428f4646d1f972cbd21503eba3deaf77e522319a8",
+      "source_evidence_sha256": "sha256:bb9fdf7b6bf621747cc900ecdd02a76c3737bad9ee38fdd3ef9f757dd5e7bd76",
+      "linked_questions_sha256": "sha256:e47e68133244c5259766fcecc813ab7ddf264cd5db2c3bd52f5542092343adfd",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No ASTM C920 class, proprietary bond-strength, VOC, movement-class, warranty, service-life, or cure-time values were restored.",
+        "No tropical derating or manufacturer-specific chemistry claim was asserted from this batch.",
+        "Legacy Salvan psi, temperature, coverage, recovery, and asbestos-containing examples were excluded from learner-facing claims."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/scoped-validation-batch-154.json",
+        "taxonomy": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/taxonomy.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/40327fb6-c5dc-46e0-811e-bc1729bed4ee.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/4972fc6b-1dc3-483d-bfc5-dfc3a932654c.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/55b5ab8f-f29e-45e6-937d-7d621933b95d.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/658f2f0c-ed59-48d2-8ab0-6411ba3f8a4e.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/9ac51a05-5a1a-4b76-867e-bb6ebbf03193.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/b05d11fe-15fd-4759-894e-69e74486c310.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/c99f78a2-e10a-42cc-a604-d0937967c595.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/e9f78201-79f2-439a-8f25-27003fb280c7.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/ecfcd7f3-6bfd-4986-961b-ed087bb7cc08.json",
+          ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/f092ecd5-bd75-430a-86e3-faaca7a6b76d.json"
+        ]
+      },
+      "sources_hash": "sha256:9d0ff919b5ebd0caf101807ebc1dfabb87f750084781a0edfe9dc4e2375676e6"
+    },
+    {
+      "cluster_id": "lea-matl-009-01",
+      "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "slug": "lea-matl-009-01-core-concept",
+      "title": "Architectural specifications",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "ra9266-irr-architectural-specifications-b154",
+        "uap-spp-202-contract-document-phase-b154",
+        "uap-spp-203-contract-documentation-review-b154"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:18b48d13d0a4c4846df3b0d92c8b21f21ef9d804f6b159fa81dae6fb2c2197bc",
+      "candidate_sha256": "sha256:18b48d13d0a4c4846df3b0d92c8b21f21ef9d804f6b159fa81dae6fb2c2197bc",
+      "source_evidence_sha256": "sha256:7af7d1ee2578a493a79b2fe7b4cba5e6e543ec23d5af9a7ec2921e9bb55be96c",
+      "linked_questions_sha256": "sha256:18fd32e48a2a5690f8a4310965aa71f2eacf9e854ae1137b7cde20092bd5309b",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No CSI, MasterFormat, ASTM, DPWH, NSCP, public-procurement, or proprietary specification taxonomy was imported.",
+        "No unverified RA 9266 section outside the checked IRR source boundary was cited.",
+        "SPP 203 was limited to listing Contract Documentation and Review as a specialized architectural service."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/scoped-validation-batch-154.json",
+        "taxonomy": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/taxonomy.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/16a93424-b435-4d55-a838-5bd0d21ad34e.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/192e884c-c76e-4a6a-ad14-5594b7c40a7c.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/3ce2f5ff-77d2-4de0-9382-5df59eb73734.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/605d8ee7-f662-43b6-9bec-0e46a09ee7e0.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/7b5a8cff-0c81-401a-ae5b-4d04f80ab8b0.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/84244e30-e30a-41df-80ec-6e06b830ebc2.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/cee7b716-cd29-4ef1-9e5c-214d6eb8be3b.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/dc6bdc0a-f45d-4283-a195-d4feb0ac5c16.json",
+          ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/question-edits/f31d96d3-7317-4edf-a024-24ee4c6bff8c.json"
+        ]
+      },
+      "sources_hash": "sha256:1cff89c8c33b105171ebd19d77ed19be94498b41a84ed718713d36115c4169b9"
+    }
+  ],
+  "source_records": {
+    "bci-5e-window-operations-b154": {
+      "id": "bci-5e-window-operations-b154",
+      "title": "Building Construction Illustrated, 5th Edition - window elements, operation, and frame coordination",
+      "locator": "refined markdown lines 10594-10790; raw PDF pages 297-301",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "exists": true,
+        "bytes": 41001593,
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "exists": true,
+        "bytes": 1144595,
+        "sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/bci-5e-window-operations-b154.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:bb84bd37c8640d38c6b9c5ea01d08c610360ab686fb9332a87e6d9d124591734"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/bci-5e-window-operations-b154.refined.md",
+        "exists": true,
+        "sha256": "sha256:c70fd832fb50c4c5d7408134ec87549bb1b8cd67b7d3d19693f315a19460e78f"
+      },
+      "source_boundary_sha256": "sha256:3f7dc2baaf61fcee692a5f537bbd5b9701bb360e52365933a4dcadf497215194"
+    },
+    "salvan-window-operations-b154": {
+      "id": "salvan-window-operations-b154",
+      "title": "George Salvan Architectural Building Materials - local window schedule and specification examples",
+      "locator": "refined markdown lines 11664-11678 and 13190-13198; raw PDF pages 317 and 355",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "exists": true,
+        "bytes": 51997841,
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "exists": true,
+        "bytes": 577457,
+        "sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/salvan-window-operations-b154.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:75e37f9777a8c6da1ae513027aaff10b5c2ceabf18aa87befdef1f728b76933c"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/salvan-window-operations-b154.refined.md",
+        "exists": true,
+        "sha256": "sha256:5807f7470646e04a96e512e09fb9995e6f45ce6b00a9fb96d819e48540003d2c"
+      },
+      "source_boundary_sha256": "sha256:dc28490d9c0a0e28bfe575fc4d61c73bbbfb35032fe9922006309b0ad109193e"
+    },
+    "bci-5e-adhesive-systems-b154": {
+      "id": "bci-5e-adhesive-systems-b154",
+      "title": "Building Construction Illustrated, 5th Edition - adhesives",
+      "locator": "refined markdown lines 16121-16137; raw PDF page 438",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "exists": true,
+        "bytes": 41001593,
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "exists": true,
+        "bytes": 1144595,
+        "sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/bci-5e-adhesive-systems-b154.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:27165ec80510ea41e660bc680e9b619c4d87e4acc74f3c150a0774c623d96342"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/bci-5e-adhesive-systems-b154.refined.md",
+        "exists": true,
+        "sha256": "sha256:89ac229941db52cd861ab8f32f4f4e07532fbba5cd522836ecd34c6af28fb50c"
+      },
+      "source_boundary_sha256": "sha256:67141564d41bd205b3f464aafc0f2ebe697c2174a5fd96e37b4a5f6490eeefc1"
+    },
+    "salvan-adhesive-sealer-systems-b154": {
+      "id": "salvan-adhesive-sealer-systems-b154",
+      "title": "George Salvan Architectural Building Materials - glues, sealers, glazing, and caulking compounds",
+      "locator": "refined markdown lines 2678-2854; raw PDF pages 91-94",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "exists": true,
+        "bytes": 51997841,
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "exists": true,
+        "bytes": 577457,
+        "sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/salvan-adhesive-sealer-systems-b154.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:52b07782ee777a8efe17a890623fe551fdb9b9f87956e0d1a1ead3f1d951db06"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/salvan-adhesive-sealer-systems-b154.refined.md",
+        "exists": true,
+        "sha256": "sha256:a31e95126583664738ccba7054d1fb7b6b1e7c267ff15e136c5f1137ba24cf01"
+      },
+      "source_boundary_sha256": "sha256:276a42861089cd80d60945c6d8399590987bc7a909ff770ef469891ec527d855"
+    },
+    "ra9266-irr-architectural-specifications-b154": {
+      "id": "ra9266-irr-architectural-specifications-b154",
+      "title": "RA 9266 IRR - specifications, architectural documents, contract documents, seal, and ownership",
+      "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "exists": true,
+        "bytes": 94234,
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "exists": true,
+        "bytes": 77502,
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+        "exists": true,
+        "sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+      },
+      "source_boundary_sha256": "sha256:8e1f5d7cf2ce0dafb876dec0e1e693d952f1b712b27c405d8a96c0eeab20350e"
+    },
+    "uap-spp-202-contract-document-phase-b154": {
+      "id": "uap-spp-202-contract-document-phase-b154",
+      "title": "UAP SPP 202 - regular design service phases",
+      "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "exists": true,
+        "bytes": 3473385,
+        "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "exists": true,
+        "bytes": 50144,
+        "sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+        "exists": true,
+        "sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+      },
+      "source_boundary_sha256": "sha256:0f2d4816685dfa3b4e90d57a053a4056d771bb9ca5d63c28494c68a436f1a126"
+    },
+    "uap-spp-203-contract-documentation-review-b154": {
+      "id": "uap-spp-203-contract-documentation-review-b154",
+      "title": "UAP SPP 203 - contract documentation and review as specialized architectural service",
+      "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "exists": true,
+        "bytes": 4098824,
+        "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "exists": true,
+        "bytes": 47330,
+        "sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+        "exists": true,
+        "sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+      },
+      "source_boundary_sha256": "sha256:deddc9db45d57f6d387223a03d229b0006c056de5c2855d735e8d9dd2e2b4c26"
+    }
+  },
+  "source_hash_checks": [
+    {
+      "source_id": "bci-5e-window-operations-b154",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/bci-5e-window-operations-b154.source-capture.md",
+      "capture_sha256": "sha256:bb84bd37c8640d38c6b9c5ea01d08c610360ab686fb9332a87e6d9d124591734",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/bci-5e-window-operations-b154.refined.md",
+      "refined_capture_sha256": "sha256:c70fd832fb50c4c5d7408134ec87549bb1b8cd67b7d3d19693f315a19460e78f",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-window-operations-b154",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/salvan-window-operations-b154.source-capture.md",
+      "capture_sha256": "sha256:75e37f9777a8c6da1ae513027aaff10b5c2ceabf18aa87befdef1f728b76933c",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/salvan-window-operations-b154.refined.md",
+      "refined_capture_sha256": "sha256:5807f7470646e04a96e512e09fb9995e6f45ce6b00a9fb96d819e48540003d2c",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-5e-adhesive-systems-b154",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/bci-5e-adhesive-systems-b154.source-capture.md",
+      "capture_sha256": "sha256:27165ec80510ea41e660bc680e9b619c4d87e4acc74f3c150a0774c623d96342",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/bci-5e-adhesive-systems-b154.refined.md",
+      "refined_capture_sha256": "sha256:89ac229941db52cd861ab8f32f4f4e07532fbba5cd522836ecd34c6af28fb50c",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-adhesive-sealer-systems-b154",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-154/salvan-adhesive-sealer-systems-b154.source-capture.md",
+      "capture_sha256": "sha256:52b07782ee777a8efe17a890623fe551fdb9b9f87956e0d1a1ead3f1d951db06",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-154/salvan-adhesive-sealer-systems-b154.refined.md",
+      "refined_capture_sha256": "sha256:a31e95126583664738ccba7054d1fb7b6b1e7c267ff15e136c5f1137ba24cf01",
+      "status": "pass"
+    },
+    {
+      "source_id": "ra9266-irr-architectural-specifications-b154",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "raw_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_actual_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "refined_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "refined_actual_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+      "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+      "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8",
+      "status": "pass"
+    },
+    {
+      "source_id": "uap-spp-202-contract-document-phase-b154",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+      "raw_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+      "raw_actual_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+      "refined_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+      "refined_actual_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+      "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+      "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a",
+      "status": "pass"
+    },
+    {
+      "source_id": "uap-spp-203-contract-documentation-review-b154",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "raw_actual_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "refined_actual_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+      "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+      "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec",
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_preserved_or_documented_correction": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  }
+}

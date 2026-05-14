@@ -1,20 +1,20 @@
 {
   "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-075-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T03:00:00.000+08:00",
+  "batch_id": "source-audited-batch-154-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T04:47:45.262Z",
   "target": {
     "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
     "slug": "lea-matl-009-01-core-concept",
     "title": "Architectural specifications",
     "article_folder": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820",
-    "normalized_sha256": "sha256:6109addf1da986f8ef148eb039202c63839926b40db520091a19672aab717bd4",
-    "candidate_sha256": "sha256:6109addf1da986f8ef148eb039202c63839926b40db520091a19672aab717bd4",
+    "normalized_sha256": "sha256:18b48d13d0a4c4846df3b0d92c8b21f21ef9d804f6b159fa81dae6fb2c2197bc",
+    "candidate_sha256": "sha256:18b48d13d0a4c4846df3b0d92c8b21f21ef9d804f6b159fa81dae6fb2c2197bc",
     "candidate_path": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/candidate.md"
   },
   "classification": {
     "topic_family": "architectural_specifications",
-    "local_first_batch": "075",
+    "local_first_batch": "154",
     "source_sensitivity": "legal_or_code",
     "contains_legal_or_code_claims": true,
     "source_risk_tier": "legal_or_code",
@@ -34,204 +34,644 @@
     "all_section_numbers_verified_against_raw_pdf": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
+    "local_pdf_extraction_method": "existing local raw/refined Vitruvius source packet plus batch source captures",
     "blockers": []
   },
   "checked_sources": [
     {
-      "source_id": "ra9266-irr-architecture-act-b075",
+      "source_id": "ra9266-irr-architectural-specifications-b154",
       "label": "RA 9266 IRR - Architecture Act of 2004",
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
       "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
       "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-      "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710"
+      "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+      "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+      "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
     },
     {
-      "source_id": "uap-spp-202-regular-design-services-b075",
+      "source_id": "uap-spp-202-contract-document-phase-b154",
       "label": "UAP SPP 202 - Regular Design Services",
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
       "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
       "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
-      "locator": "SPP 202 refined markdown lines 173-183"
+      "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+      "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+      "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
     },
     {
-      "source_id": "uap-spp-203-specialized-services-b075",
+      "source_id": "uap-spp-203-contract-documentation-review-b154",
       "label": "UAP SPP 203 - Specialized Architectural Services",
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
       "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
       "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
-      "locator": "SPP 203 refined markdown lines 101-140"
+      "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+      "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+      "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
     }
   ],
   "claims": [
     {
-      "claim_id": "lea-matl-009-01-core-concept-article-b075",
-      "claim_text": "Article lea-matl-009-01-core-concept was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "lea-matl-009-01-core-concept-article-b154",
+      "claim_text": "Article lea-matl-009-01-core-concept was refreshed to the Batch 154 checked local source boundary and includes a source-safe Real World Scenario.",
       "claim_type": "article_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-cee7b716-cd29-4ef1-9e5c-214d6eb8be3b-ALE-MATL-009-01-004-b075",
-      "claim_text": "Question cee7b716-cd29-4ef1-9e5c-214d6eb8be3b ALE-MATL-009-01-004 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-16a93424-b435-4d55-a838-5bd0d21ad34e-lea-matl-009-01-b154",
+      "claim_text": "Question 16a93424-b435-4d55-a838-5bd0d21ad34e was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-f31d96d3-7317-4edf-a024-24ee4c6bff8c-ALE-MATL-009-01-001-b075",
-      "claim_text": "Question f31d96d3-7317-4edf-a024-24ee4c6bff8c ALE-MATL-009-01-001 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-192e884c-c76e-4a6a-ad14-5594b7c40a7c-lea-matl-009-01-b154",
+      "claim_text": "Question 192e884c-c76e-4a6a-ad14-5594b7c40a7c was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-192e884c-c76e-4a6a-ad14-5594b7c40a7c-ALE-MATL-009-01-009-b075",
-      "claim_text": "Question 192e884c-c76e-4a6a-ad14-5594b7c40a7c ALE-MATL-009-01-009 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-3ce2f5ff-77d2-4de0-9382-5df59eb73734-lea-matl-009-01-b154",
+      "claim_text": "Question 3ce2f5ff-77d2-4de0-9382-5df59eb73734 was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-16a93424-b435-4d55-a838-5bd0d21ad34e-ALE-MATL-009-01-006-b075",
-      "claim_text": "Question 16a93424-b435-4d55-a838-5bd0d21ad34e ALE-MATL-009-01-006 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb-lea-matl-009-01-b154",
+      "claim_text": "Question 4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb-ALE-MATL-009-01-003-b075",
-      "claim_text": "Question 4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb ALE-MATL-009-01-003 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-605d8ee7-f662-43b6-9bec-0e46a09ee7e0-lea-matl-009-01-b154",
+      "claim_text": "Question 605d8ee7-f662-43b6-9bec-0e46a09ee7e0 was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-7b5a8cff-0c81-401a-ae5b-4d04f80ab8b0-ALE-MATL-009-01-008-b075",
-      "claim_text": "Question 7b5a8cff-0c81-401a-ae5b-4d04f80ab8b0 ALE-MATL-009-01-008 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-7b5a8cff-0c81-401a-ae5b-4d04f80ab8b0-lea-matl-009-01-b154",
+      "claim_text": "Question 7b5a8cff-0c81-401a-ae5b-4d04f80ab8b0 was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-3ce2f5ff-77d2-4de0-9382-5df59eb73734-ALE-MATL-009-01-007-b075",
-      "claim_text": "Question 3ce2f5ff-77d2-4de0-9382-5df59eb73734 ALE-MATL-009-01-007 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-84244e30-e30a-41df-80ec-6e06b830ebc2-lea-matl-009-01-b154",
+      "claim_text": "Question 84244e30-e30a-41df-80ec-6e06b830ebc2 was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-84244e30-e30a-41df-80ec-6e06b830ebc2-ALE-MATL-009-01-005-b075",
-      "claim_text": "Question 84244e30-e30a-41df-80ec-6e06b830ebc2 ALE-MATL-009-01-005 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-cee7b716-cd29-4ef1-9e5c-214d6eb8be3b-lea-matl-009-01-b154",
+      "claim_text": "Question cee7b716-cd29-4ef1-9e5c-214d6eb8be3b was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-605d8ee7-f662-43b6-9bec-0e46a09ee7e0-ALE-MATL-009-01-010-b075",
-      "claim_text": "Question 605d8ee7-f662-43b6-9bec-0e46a09ee7e0 ALE-MATL-009-01-010 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-dc6bdc0a-f45d-4283-a195-d4feb0ac5c16-lea-matl-009-01-b154",
+      "claim_text": "Question dc6bdc0a-f45d-4283-a195-d4feb0ac5c16 was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "question-dc6bdc0a-f45d-4283-a195-d4feb0ac5c16-ALE-MATL-009-01-002-b075",
-      "claim_text": "Question dc6bdc0a-f45d-4283-a195-d4feb0ac5c16 ALE-MATL-009-01-002 was rewritten to the checked architectural_specifications source scope.",
+      "claim_id": "question-f31d96d3-7317-4edf-a024-24ee4c6bff8c-lea-matl-009-01-b154",
+      "claim_text": "Question f31d96d3-7317-4edf-a024-24ee4c6bff8c was kept aligned to the checked lea-matl-009-01 source boundary.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
-        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+        "source_locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19; refined markdown lines 173-183; raw PDF readability checked locally; refined markdown lines 101-140; raw PDF pages 7 and 95",
+        "checked_sources": [
+          {
+            "source_id": "ra9266-irr-architectural-specifications-b154",
+            "label": "RA 9266 IRR - Architecture Act of 2004",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+            "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+            "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+            "locator": "refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/ra9266-irr-architectural-specifications-b154.source-capture.md",
+            "capture_sha256": "sha256:6b90deb684274d9fa36a4b4481b7eeefbd36a5273be9034fc57825b7ef1aa141",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/ra9266-irr-architectural-specifications-b154.refined.md",
+            "refined_capture_sha256": "sha256:9551d2fb8383b45cee02d4171dda81d732fbcd703c6a94c7508a087b94d38bb8"
+          },
+          {
+            "source_id": "uap-spp-202-contract-document-phase-b154",
+            "label": "UAP SPP 202 - Regular Design Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+            "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+            "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+            "locator": "refined markdown lines 173-183; raw PDF readability checked locally",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-202-contract-document-phase-b154.source-capture.md",
+            "capture_sha256": "sha256:e78a5a9b6d3df4e1f2be29524ab684e89bacc29dd1dbe81e8b2fd35ef6fcbb09",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-202-contract-document-phase-b154.refined.md",
+            "refined_capture_sha256": "sha256:994a2f6604f2d344a16c67aa95ba525d6e4af499917ab7a5793932dfede6f21a"
+          },
+          {
+            "source_id": "uap-spp-203-contract-documentation-review-b154",
+            "label": "UAP SPP 203 - Specialized Architectural Services",
+            "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+            "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+            "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+            "locator": "refined markdown lines 101-140; raw PDF pages 7 and 95",
+            "capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.source-capture.md",
+            "capture_sha256": "sha256:b78b592553c428b8aee467a4054bdce94ecd9246ceca66fe8840519658138872",
+            "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-154/uap-spp-203-contract-documentation-review-b154.refined.md",
+            "refined_capture_sha256": "sha256:65fa1f3df5c70472124fe599a35465827d13718e7a95655499612ff39952a1ec"
+          }
+        ]
       },
       "blockers": []
     }
   ],
-  "unverified_or_rejected_claims": [],
+  "unverified_or_rejected_claims": [
+    {
+      "claim": "No CSI, MasterFormat, ASTM, DPWH, NSCP, public-procurement, or proprietary specification taxonomy was imported.",
+      "disposition": "excluded_from_student_surface",
+      "reason": "outside Batch 154 checked local source boundary"
+    },
+    {
+      "claim": "No unverified RA 9266 section outside the checked IRR source boundary was cited.",
+      "disposition": "excluded_from_student_surface",
+      "reason": "outside Batch 154 checked local source boundary"
+    },
+    {
+      "claim": "SPP 203 was limited to listing Contract Documentation and Review as a specialized architectural service.",
+      "disposition": "excluded_from_student_surface",
+      "reason": "outside Batch 154 checked local source boundary"
+    }
+  ],
   "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "note": "No Real World Scenario section was added; scenario enrichment remained nonblocking while source correctness and question safety were completed."
+    "policy_status": "complete",
+    "eligibility_status": "included",
+    "blocker_status": "none",
+    "notes": "A source-safe Real World Scenario section is present in the candidate article."
   },
   "sme_review": {
     "required": false,
-    "status": "not_required",
-    "notes": "Local raw-source audit only; no external SME review required for Batch 075 local-first gate."
+    "status": "not_required"
+  },
+  "local_first_publication": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "ready_for_final_publishing_review": true
   }
 }
