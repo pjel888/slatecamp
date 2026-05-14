@@ -1,0 +1,164 @@
+# Batch 142 Git Handoff Stage List
+
+Generated: 2026-05-14T01:20:31.862Z
+Status: passed_local_validation_git_handoff_pending
+
+## Validation Snapshot
+
+- Compose/diff/validate: PASS
+- UI-block validation: PASS
+- JSON parse: PASS
+- Source hash checks: PASS
+- Question edits: PASS
+- Targeted tests: PASS
+- Scoped git diff --check: PASS
+
+## Stage Command
+
+```bash
+git add -f \
+  ".ai/03_plans/batch-142-git-handoff-stage-list.md" \
+  ".ai/03_plans/batch-142-git-handoff-stage-paths.txt" \
+  ".ai/03_plans/batch-142-independent-quality-review.md" \
+  ".ai/03_plans/production-line-batch-142-manifest.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/article-metadata.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/candidate.md" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/compose-error.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/compose-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/diff-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/diff-report.md" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/linked-questions.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/normalized.md" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/parser-errors.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/0f30f642-44c3-4ba8-9b31-0550260d258e.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/13f2ab19-eb9e-47f9-a2d9-748da3d2290e.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/22fac734-61b5-45b2-ae50-d1f574f10f29.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/71be28e5-f4ba-4de4-9f47-db814b03d54d.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/7307731e-d5cf-4c15-a27e-423935437821.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/832773a5-297c-4d8a-9f83-79c7695651b2.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/88fafbf8-1364-480b-ba50-2448c2a38f04.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/bf2c3f37-a72d-4e7e-b8c1-1554fb4fafa9.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/c3481fec-dd83-4c04-aa09-63c6f6137790.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/question-edits/e6f8c4d4-b1f5-45f8-88aa-cb8dd1fa34a8.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/source-audit-evidence.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/sources.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/ui-block-edit-validation.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/ui-block-edits.json" \
+  ".ai/content-audit-export/articles/lea-strc-002-06-core-concept--79c137a5-245a-441d-899b-652cf8eb1640/ui-blocks.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/article-metadata.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/candidate.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/compose-error.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/compose-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/diff-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/diff-report.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/linked-questions.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/normalized.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/parser-errors.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/138b0aa5-f1d9-4295-bec9-8e5876e2dc9b.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/3b9d2339-8bbf-4112-8d99-712a22c3807e.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/513fd85c-8324-49c9-bf57-525932e6ee19.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/52947971-6fdb-4678-adc2-44e11f014f7c.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/55ee080a-30e3-4e90-ade4-bcccc2c4e3e2.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/5ac10454-b2da-4c43-abaf-fe73ab192445.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/849adeca-2245-43c1-a348-0761f7be1137.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/84a45e59-09ee-4b37-a9eb-c52ba379026f.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/9756aa23-682e-480a-af90-822a2987b797.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/question-edits/e2e6b7b8-54fe-436d-b83d-a8440b1039fb.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/source-audit-evidence.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/sources.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/ui-block-edit-validation.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/ui-block-edits.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-01-core-concept--79ca7e09-9492-49b1-9289-88d444451275/ui-blocks.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/article-metadata.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/candidate.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/compose-error.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/compose-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/diff-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/diff-report.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/linked-questions.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/normalized.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/parser-errors.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/040d0938-c89e-48dc-9256-4334e2180228.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/0e6086b5-ad53-414c-822a-73b8f8a42c80.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/29b2b02a-6d33-476e-bfe0-b1f2d31f57fa.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/51151ce3-2682-40df-b419-5407f2526057.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/5f0d4854-4ac5-4592-8a58-8008811e6112.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/7251a6cb-ef5a-44af-8d3f-570e6357d233.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/8ddb85a4-a7d3-421f-8f2e-396513682028.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/b1385a6d-68b3-418c-bf20-85816c2c05da.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/c2ad177e-426e-4806-8c75-de1965f54c2b.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/question-edits/d77ce0cf-f15e-4418-9c02-cd978a1f9a3d.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/source-audit-evidence.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/sources.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/ui-block-edit-validation.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/ui-block-edits.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-02-core-concept--30d062c7-9934-4627-8287-08885d95db5d/ui-blocks.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/article-metadata.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/candidate.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/compose-error.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/compose-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/diff-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/diff-report.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/linked-questions.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/normalized.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/parser-errors.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/30589f53-147d-4915-ba82-3f55b6a280ac.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/37a971d3-829d-46e1-9129-b7a618e50c19.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/654c22df-4d59-4f75-b87c-857acf11645d.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/70e6279c-47e0-4773-999d-d130f013488e.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/7475711a-5cd9-455c-afec-ad27afd407cf.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/a63b5873-344d-4306-852d-4f84e4b59172.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/ccbbedee-edc9-4e5e-90fd-1087f4de08ce.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/d4c158cb-1153-4e4b-bb28-803efd07ba44.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/f0cde53e-5158-46ec-a729-ca89eaa46059.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/question-edits/f59550ae-7bc0-4a56-99ee-fb42ba618bda.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/source-audit-evidence.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/sources.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/ui-block-edit-validation.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/ui-block-edits.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/ui-blocks.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/article-metadata.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/candidate.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/compose-error.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/compose-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/diff-report.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/diff-report.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/linked-questions.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/normalized.md" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/parser-errors.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/056e3237-b29b-42f2-844e-3093eac999ec.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/12b7dbc4-e79a-4624-8534-2b0feeadbf6d.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/14922cc7-cfd5-4e61-a675-ed77a34e05d1.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/1b1f0cff-02cb-4173-9ef2-f2dece83f2cc.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/290e8c56-bb35-47ea-a100-c08c6b380d11.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/2f5f2514-fb02-4cd3-ad9a-24220e93d9d9.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/773e71c5-d2c8-4e8f-8109-1575dfc9b17d.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/7b243d75-c79d-4c53-a8c1-66cab3379bf4.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/850378e9-4dd3-4d88-908e-983f10ead976.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/question-edits/e5d3a413-d0c0-4d4c-9fd3-119918592779.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/source-audit-evidence.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/sources.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/ui-block-edit-validation.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/ui-block-edits.json" \
+  ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/ui-blocks.json" \
+  ".ai/content-audit-export/runs/source-audited-batch-142-local-generation-summary.json" \
+  ".ai/content-audit-export/runs/source-audited-batch-142-local-runner.mjs" \
+  ".ai/content-audit-export/source-audited-article-batch-142-local-first-content-generation-summary.json" \
+  ".ai/content-audit-export/source-audited-article-batch-142-local-first-ledger.json" \
+  ".ai/content-audit-export/source-audited-article-batch-142-local-first-report.md" \
+  ".ai/content-audit-export/source-audited-article-batch-142-local-first-scoped-checks.json" \
+  ".ai/content-audit-export/ui-block-edit-validation.json" \
+  ".ai/content-audit-export/validation-report.json" \
+  "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md" \
+  "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md" \
+  "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md" \
+  "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md" \
+  "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md" \
+  "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md" \
+  "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md" \
+  "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md" \
+  "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md" \
+  "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md"
+```
+
+The `vitruvius-connection` paths may be ignored by git defaults, so keep `-f` for this handoff.

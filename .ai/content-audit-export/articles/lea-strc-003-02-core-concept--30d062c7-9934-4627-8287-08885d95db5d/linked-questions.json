@@ -1,30 +1,30 @@
 {
   "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:14fb2518a8249b3a17917539d732a279574da4dbe218d07d1a1d92d28da107dd",
+  "linked_questions_hash": "sha256:8a9b308c97a4862a9473e10a7d611712b5226642eb224ee55b7cf4c00f98d995",
   "question_count": 10,
   "questions": [
     {
       "question_id": "0e6086b5-ad53-414c-822a-73b8f8a42c80",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "What is creep, and under what conditions does it occur in structural materials?",
+      "text": "What is ductility?",
       "options": [
         {
           "id": "a",
-          "text": "Instantaneous plastic deformation at room temperature under any load, which is a common misconception"
+          "text": "The ability to resist vapor diffusion."
         },
         {
           "id": "b",
-          "text": "Time-dependent permanent deformation under sustained constant load, especially at elevated temperature"
+          "text": "The ability to undergo considerable plastic deformation in tension before rupture."
         },
         {
           "id": "c",
-          "text": "Elastic recovery that occurs gradually over time, often confused with creep"
+          "text": "The ability to act as a two-way roof frame."
         },
         {
           "id": "d",
-          "text": "The process of strain hardening during tensile loading, which is unrelated to creep"
+          "text": "The absence of any plastic deformation."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Creep is time-dependent plastic flow under constant stress. In metals, creep becomes significant only at elevated temperatures (above ~40% of absolute melting temperature). In concrete, creep occurs at any temperature under sustained load. The key distinction: creep is gradual over hours/days/years, not instantaneous.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The ability to resist vapor diffusion. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "The ability to undergo considerable plastic deformation in tension before rupture. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "The ability to act as a two-way roof frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "The absence of any plastic deformation. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "The ability to undergo considerable plastic deformation in tension before rupture. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The ability to undergo considerable plastic deformation in tension before rupture. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-003-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ee1cf3734f4c8535aa560475104147ecefdfac5b8509401237060228cebef51d"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:e1a578ad5ec4a0e1657d1598aa5f05274009b3815bec6603d7dbc012da3f42b1"
     },
     {
       "question_id": "040d0938-c89e-48dc-9256-4334e2180228",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "Two materials have identical yield strengths but different stress-strain diagrams: Material A shows a small plastic region before rupture (8% elongation); Material B shows a large plastic region before rupture (25% elongation). Which material is tougher, and why?",
+      "text": "What is brittleness?",
       "options": [
         {
           "id": "a",
-          "text": "Material A is tougher because it reaches yield at the same stress as Material B"
+          "text": "High plastic deformation before rupture."
         },
         {
           "id": "b",
-          "text": "Material B is tougher because it absorbs more energy (larger area under the stress-strain curve) due to its greater plastic deformation capacity"
+          "text": "Failure with little or no plastic deformation and little warning."
         },
         {
           "id": "c",
-          "text": "Both materials are equally tough because they have the same yield strength"
+          "text": "The ability to hammer into sheets."
         },
         {
           "id": "d",
-          "text": "Material A is tougher because it fails at lower total strain, avoiding excessive deformation"
+          "text": "A service-load combination."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Toughness is the area under the entire stress-strain curve (elastic + plastic regions). With identical yield stresses, both materials start at the same elastic region area. However, Material B's larger plastic region (25% vs. 8% elongation) means more area under the curve. Material B absorbs more energy before fracture, making it tougher.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "High plastic deformation before rupture. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Failure with little or no plastic deformation and little warning. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "The ability to hammer into sheets. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "A service-load combination. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Failure with little or no plastic deformation and little warning. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Failure with little or no plastic deformation and little warning. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-003-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9d868ce932697ad39e6cf1073d79dfeca75e6ad212a5f68795e54f00502a83e2"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:36ae8b68426efc041bc2a857a77c8c5b73f0368431395e42acd0431e405df671"
     },
     {
       "question_id": "51151ce3-2682-40df-b419-5407f2526057",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "Which of the following best defines ductility?",
+      "text": "What is malleability?",
       "options": [
         {
           "id": "a",
-          "text": "The ability to hammer a material into thin sheets without cracking"
+          "text": "The ability to draw into wire under tension."
         },
         {
           "id": "b",
-          "text": "The ability to draw a material into wire through tensile loading"
+          "text": "The ability to undergo considerable plastic deformation in compression, such as hammering or rolling."
         },
         {
           "id": "c",
-          "text": "The ability to return to original shape after unloading"
+          "text": "The maximum stress in a factored load case."
         },
         {
           "id": "d",
-          "text": "The resistance to fracture under sudden impact"
+          "text": "A property of support bay geometry."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Ductility is the capacity for permanent elongation under tension. Drawing into wire is the defining test of ductility. It measures how much the material can be plastically deformed without breaking.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The ability to draw into wire under tension. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "The ability to undergo considerable plastic deformation in compression, such as hammering or rolling. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "The maximum stress in a factored load case. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "A property of support bay geometry. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "The ability to undergo considerable plastic deformation in compression, such as hammering or rolling. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The ability to undergo considerable plastic deformation in compression, such as hammering or rolling. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-003-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:92c90ece4e399bde4e41d6d53cc2a791109a2badac9c1145806e0551760b241f"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:9157cae061ea38da571f22e0b5c79f56f73450c7c15a2a8a55af81dd0b338473"
     },
     {
       "question_id": "d77ce0cf-f15e-4418-9c02-cd978a1f9a3d",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "What is the primary distinction between ductility and malleability?",
+      "text": "What is toughness in the checked source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Ductility applies to metals; malleability applies only to non-metals, which is a common misconception"
+          "text": "The slope of the elastic line only."
         },
         {
           "id": "b",
-          "text": "Ductility is tension-based (drawing into wire); malleability is compression-based (hammering into sheets)"
+          "text": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture."
         },
         {
           "id": "c",
-          "text": "Ductility is reversible; malleability is permanent, which is not typically the case in material science"
+          "text": "A code table for occupancy loads."
         },
         {
           "id": "d",
-          "text": "Ductility is strength; malleability is stiffness, though these terms are often confused in engineering contexts"
+          "text": "The lack of any deformation before failure."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Ductility and malleability are deformation-mode properties. Ductility measures elongation under tensile (pulling) stress—drawing into wire. Malleability measures deformation under compressive stress—hammering into sheets. A material can exhibit one without the other, though many metals exhibit both.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The slope of the elastic line only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "A code table for occupancy loads. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "The lack of any deformation before failure. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-003-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e911e243ed8da81c29b27cad80ab4a6eba0e821399e1a5caffa0b5158655227b"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:623723efb07c59dc1c0c0f2367e2a48fe781d02e9702a701bc8583a0d1e65e18"
     },
     {
       "question_id": "5f0d4854-4ac5-4592-8a58-8008811e6112",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "Which property describes the ability of a material to return to its original dimensions immediately after the load is completely removed?",
+      "text": "What is resilience?",
       "options": [
         {
           "id": "a",
-          "text": "Ductility"
+          "text": "The total plastic damage after rupture."
         },
         {
           "id": "b",
-          "text": "Malleability"
+          "text": "A field assembly method for long-span trusses."
         },
         {
           "id": "c",
-          "text": "Elasticity"
+          "text": "Elastic energy absorption and recovery before exceeding the elastic limit."
         },
         {
           "id": "d",
-          "text": "Toughness"
+          "text": "The same as brittleness."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Elasticity is the property to return to original dimensions upon unloading. It applies to all stresses up to the elastic limit. Once that limit is exceeded, permanent deformation occurs, and elasticity is violated.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The total plastic damage after rupture. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "A field assembly method for long-span trusses. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "Elastic energy absorption and recovery before exceeding the elastic limit. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "d": "The same as brittleness. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Elastic energy absorption and recovery before exceeding the elastic limit. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Elastic energy absorption and recovery before exceeding the elastic limit. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-003-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:13232350d5644e8343da1e585a06f4758cbe0f9385ac9371a0fbc6a340c64235"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:0f1307beacd4fb10f03f6fbfbdfb4497419f77c1861f5ae16c051178ac0fc171"
     },
     {
       "question_id": "7251a6cb-ef5a-44af-8d3f-570e6357d233",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "A prestressed concrete beam shows a measurable loss of prestress over a period of several years. Explain which material property is primarily responsible for this loss, and identify all contributors.",
+      "text": "What is creep?",
       "options": [
         {
           "id": "a",
-          "text": "Elasticity; the concrete returns to its original shape over time, which is not typically a permanent deformation"
+          "text": "Instant rupture under one impact."
         },
         {
           "id": "b",
-          "text": "Creep in the concrete and relaxation in the prestressing steel; permanent deformation accumulates, reducing the effective clamping force"
+          "text": "Time-dependent deformation increase under unchanged load."
         },
         {
           "id": "c",
-          "text": "Brittleness; the concrete becomes more brittle and cannot maintain stress, leading to potential cracking"
+          "text": "The first linear part of a truss diagram."
         },
         {
           "id": "d",
-          "text": "Ductility; the steel tendon yields and loses its tension, which is unlikely in prestressed applications"
+          "text": "A response-factor category."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Prestress loss has two main sources: (1) Creep in the concrete under sustained compressive stress reduces the overall dimensions, allowing the steel to relax. (2) Stress relaxation in the steel tendon (a time-dependent phenomenon in stressed steel) causes the steel to lose some of its tension. Both are permanent, time-dependent phenomena, not reversible elastic recovery.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Instant rupture under one impact. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Time-dependent deformation increase under unchanged load. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "The first linear part of a truss diagram. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "A response-factor category. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Time-dependent deformation increase under unchanged load. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Time-dependent deformation increase under unchanged load. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-003-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:27412bba6dc00e70028394bd6a3e4faa58074dbfc9eb33b2725836351329dcea"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:f4b02dec36c17c47bc2cbb81b062e1334342d1c442b84712ff71207d385977fa"
     },
     {
       "question_id": "8ddb85a4-a7d3-421f-8f2e-396513682028",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "In structural design, why do engineers specify ductile materials (like structural steel) for seismic applications rather than brittle materials (like cast iron or unreinforced concrete), even if the brittle material could theoretically be made very strong?",
+      "text": "How does Poisson ratio enter a basic material-property question?",
       "options": [
         {
           "id": "a",
-          "text": "Brittle materials are always more expensive, which makes them less desirable for large-scale projects."
+          "text": "It gives the number of members in a tetrahedron."
         },
         {
           "id": "b",
-          "text": "Ductile materials provide warning before failure through visible plastic deformation and energy absorption, reducing catastrophic collapse risk"
+          "text": "It relates lateral strain to longitudinal strain under axial loading."
         },
         {
           "id": "c",
-          "text": "Brittle materials cannot achieve high strength values, which limits their application in critical structural components."
+          "text": "It is the same as ultimate strength."
         },
         {
           "id": "d",
-          "text": "Ductile materials have higher elastic moduli, which contributes to their ability to withstand dynamic loads."
+          "text": "It chooses between ASD and LRFD."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Seismic loading is dynamic and cyclic. Ductile materials yield and deform plastically, absorbing energy and providing visible warning. Brittle materials fracture suddenly without warning, leading to catastrophic collapse. Ductility is the margin of safety in seismic design. A ductile structure survives because it deforms; a brittle structure shatters.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It gives the number of members in a tetrahedron. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "It relates lateral strain to longitudinal strain under axial loading. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "It is the same as ultimate strength. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "It chooses between ASD and LRFD. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "It relates lateral strain to longitudinal strain under axial loading. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It relates lateral strain to longitudinal strain under axial loading. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-003-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b2d4a0fbe2a9ea5b843c3cc280ec0dba1c8673f781f33aad0db47c212d4fae9b"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:509ef6bd4b60b05ad621cb671b730e89ea01d83bbdd7508d6cab21427b171a1e"
     },
     {
       "question_id": "c2ad177e-426e-4806-8c75-de1965f54c2b",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "A concrete beam is loaded with a constant service load and allowed to rest for several years. The total deflection at the end of the period is significantly larger than the deflection measured immediately after loading. Which phenomenon best explains this difference?",
+      "text": "Which statement about concrete in the checked source boundary is safe?",
       "options": [
         {
           "id": "a",
-          "text": "The concrete is yielding under the constant load, which is unlikely unless the load exceeds the design capacity"
+          "text": "Concrete always yields like mild steel."
         },
         {
           "id": "b",
-          "text": "Creep in the concrete causes additional time-dependent deformation"
+          "text": "Concrete is commonly treated as brittle in tension compared with ductile metals."
         },
         {
           "id": "c",
-          "text": "The elastic modulus of the concrete has decreased due to environmental factors such as temperature and humidity"
+          "text": "Concrete has no compressive behavior."
         },
         {
           "id": "d",
-          "text": "The load has increased over time due to additional weight from accumulated debris or structural modifications"
+          "text": "Concrete is a cable material only."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Concrete creeps under sustained constant load at room temperature, unlike structural steel. The immediate deflection is elastic (proportional to load and inversely proportional to E). The long-term deflection includes additional creep strains that accumulate over months and years. Design practice accounts for this with a time-dependent amplification factor (typically 2–3).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Concrete always yields like mild steel. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Concrete is commonly treated as brittle in tension compared with ductile metals. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "Concrete has no compressive behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Concrete is a cable material only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Concrete is commonly treated as brittle in tension compared with ductile metals. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Concrete is commonly treated as brittle in tension compared with ductile metals. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-003-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:83a45caf81cb8eb20bacde06b371bbe531cf341bb45f8b271d84e896df29ee00"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:cc07a54d698b953787bef833f9c51273f3f64ada87a0e93dac130530473fd63a"
     },
     {
       "question_id": "29b2b02a-6d33-476e-bfe0-b1f2d31f57fa",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "Why is toughness described as a combination of strength and ductility rather than either property alone?",
+      "text": "Why is toughness not just high strength?",
       "options": [
         {
           "id": "a",
-          "text": "Because toughness requires high yield strength to resist deformation and plastic deformation capacity to absorb energy without breaking"
+          "text": "Toughness needs both stress capacity and deformation capacity before rupture."
         },
         {
           "id": "b",
-          "text": "Because toughness is simply the average of strength and ductility, which is a common misconception"
+          "text": "Strength alone is always enough."
         },
         {
           "id": "c",
-          "text": "Because only strong materials can be tough, ignoring the role of ductility"
+          "text": "Toughness ignores plastic deformation."
         },
         {
           "id": "d",
-          "text": "Because only ductile materials can be tough, which overlooks the importance of strength"
+          "text": "Toughness is only a color or finish property."
         }
       ],
       "correct_option_id": "a",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Toughness is energy absorption capacity. A material must be strong enough to store energy (high yield stress) and ductile enough to deform plastically without fracturing (permanent deformation capacity). A brittle material, no matter how strong, shatters without warning and absorbs little energy. A soft material, no matter how ductile, offers no resistance.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Toughness needs both stress capacity and deformation capacity before rupture. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "b": "Strength alone is always enough. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "Toughness ignores plastic deformation. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Toughness is only a color or finish property. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Toughness needs both stress capacity and deformation capacity before rupture. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Toughness needs both stress capacity and deformation capacity before rupture. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-003-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:27e30e4cc24e868e33809dd2c4ade4e95f629039555f1b8ca69c18e84540c368"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:7d50fe96d3544a69c0c1288a641567ec1c112804581d23533f17ce59d1580f25"
     },
     {
       "question_id": "b1385a6d-68b3-418c-bf20-85816c2c05da",
       "article_id": "30d062c7-9934-4627-8287-08885d95db5d",
       "topic_id": "7fdee631-01ff-4f1c-9748-80920c69b1b6",
-      "text": "A material fractures suddenly with very little visible plastic deformation. What is this material characterized as?",
+      "text": "What should a question compare when asking ductile versus brittle behavior?",
       "options": [
         {
           "id": "a",
-          "text": "Ductile"
+          "text": "Only whether the material is imported."
         },
         {
           "id": "b",
-          "text": "Brittle"
+          "text": "Plastic deformation and warning before rupture, not just the name of the material."
         },
         {
           "id": "c",
-          "text": "Elastic"
+          "text": "Only the building occupancy."
         },
         {
           "id": "d",
-          "text": "Tough"
+          "text": "Only the architectural style."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Brittleness is characterized by fracture with little or no plastic deformation. The stress-strain diagram shows a steep elastic region followed by sudden failure. No yield plateau; no warning. Glass, cast iron, and concrete are brittle materials.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only whether the material is imported. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Plastic deformation and warning before rupture, not just the name of the material. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+        "c": "Only the building occupancy. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Only the architectural style. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Plastic deformation and warning before rupture, not just the name of the material. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+        "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Plastic deformation and warning before rupture, not just the name of the material. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-003-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:31088ada69c3c58ea2665465deb6ae49ca09424ff2bb1575cfcab96e5e06f5c1"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:a3f00fcc489dd1a43c7b4d5a5dfcacac353d24b0cfd451443444b859d5762757"
     }
   ]
 }

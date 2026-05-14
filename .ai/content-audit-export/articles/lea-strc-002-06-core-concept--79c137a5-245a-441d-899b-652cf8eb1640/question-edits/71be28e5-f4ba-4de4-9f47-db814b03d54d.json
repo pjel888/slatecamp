@@ -1,0 +1,64 @@
+{
+  "question_id": "71be28e5-f4ba-4de4-9f47-db814b03d54d",
+  "baseline_hash": "sha256:3f15bf1355e9a690f0cb4c96c94a726c9e13040cef232af332dd3762a3d061a9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Space frame (or 3D truss).",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+    "parent_article_slug": "lea-strc-002-06-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-002-06-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Space frame (or 3D truss)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md",
+        "sha256": "sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9"
+      },
+      {
+        "source_id": "batch-142-lea-strc-002-06-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Space frame (or 3D truss)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md",
+        "sha256": "sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "A large terminal wants a column-free roof. What long-span issue should be checked first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the visual pattern matters."
+      },
+      {
+        "id": "b",
+        "text": "Long spans remove the need for lateral stability."
+      },
+      {
+        "id": "c",
+        "text": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system."
+      },
+      {
+        "id": "d",
+        "text": "Any system over 30 m is automatically a space frame."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Only the visual pattern matters. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "Long spans remove the need for lateral stability. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "c": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+      "d": "Any system over 30 m is automatically a space frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+    },
+    "explanation": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+  },
+  "batch_question_template_index": 4
+}

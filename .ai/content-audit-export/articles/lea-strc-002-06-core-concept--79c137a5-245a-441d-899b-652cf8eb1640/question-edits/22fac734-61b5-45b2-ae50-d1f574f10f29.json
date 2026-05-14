@@ -1,0 +1,64 @@
+{
+  "question_id": "22fac734-61b5-45b2-ae50-d1f574f10f29",
+  "baseline_hash": "sha256:754634699188ad71d627bccf46578b121bb4d78ccf34a7f46da96d03634455af",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Space frame (or 3D truss).",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+    "parent_article_slug": "lea-strc-002-06-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-002-06-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Space frame (or 3D truss)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md",
+        "sha256": "sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9"
+      },
+      {
+        "source_id": "batch-142-lea-strc-002-06-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Space frame (or 3D truss)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md",
+        "sha256": "sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What source-safe cue separates a space frame from a plane truss?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is any roof truss with timber members."
+      },
+      {
+        "id": "b",
+        "text": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units."
+      },
+      {
+        "id": "c",
+        "text": "It is a flat two-member joint analyzed only in one plane."
+      },
+      {
+        "id": "d",
+        "text": "It is defined by a fixed Philippine span limit in this packet."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It is any roof truss with timber members. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+      "c": "It is a flat two-member joint analyzed only in one plane. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "d": "It is defined by a fixed Philippine span limit in this packet. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+    },
+    "explanation": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+  },
+  "batch_question_template_index": 1
+}

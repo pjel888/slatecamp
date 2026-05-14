@@ -1,20 +1,78 @@
 {
   "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4230b28904a94261a2942d14b9450b5a1dc11ad5e8a173ae1f36aa6a048cdb68",
-  "source_count": 1,
+  "sources_hash": "sha256:551ff8f738e120097c1d093c1de16fff61b44244af24a55d7a3a4b6b0067a9fc",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "4d8cb97a-a190-4e87-b507-16e5dd2d7dc9",
+      "source_id": "batch-142-lea-strc-003-01-core-concept-raw-source-capture",
       "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
-      "label": "National Structural Code of the Philippines (NSCP) 2015. Philippine Architecture Licensure Examination Syllabus, Area B — Structural Design",
+      "label": "Batch 142 raw source capture - Stress measures the internal force per unit area within",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Stress measures the internal force per unit area within; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md",
+      "local_sha256": "sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 142 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-142-lea-strc-003-01-core-concept-refined-source-map",
+      "article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+      "label": "Batch 142 refined source conversion - Stress measures the internal force per unit area within",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Stress measures the internal force per unit area within.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md",
+      "local_sha256": "sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }

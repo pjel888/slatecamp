@@ -1,0 +1,326 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-142-local-first",
+  "batch_number": 142,
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T01:20:31.862Z",
+  "target": {
+    "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+    "slug": "lea-strc-003-03-core-concept",
+    "title": "Modulus is a measure of a material's resistance",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+    "normalized_sha256": "sha256:51e4ef026edda43df7dc7927b3ca92426d0395f94e0b684000f02e7e6441dd9f",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-003-03-core-concept--e0548d9a-2a95-4ef0-9724-7e2c667b3674/candidate.md"
+  },
+  "classification": {
+    "topic_family": "lea-strc-003-03-core-concept",
+    "category": "Structural Conceptualization",
+    "source_sensitivity": "technical_structural_exam_content",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_source_capture": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_source_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch-142-lea-strc-003-03-core-concept-raw-source-capture",
+      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+      "label": "Batch 142 raw source capture - Modulus is a measure of a material's resistance",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Modulus is a measure of a material's resistance; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+      "local_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Mechanics and Strength of Materials: Elastic deformation is recoverable and plastic deformation is non-recoverable. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Ductile materials undergo substantial plastic deformation before rupture; brittle materials rupture with little non-elastic deformation. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Creep is deformation increase over time without a load change. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Young modulus, shear modulus, bulk modulus, and Poisson coefficient describe linear elastic behavior. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Elastic work can be stored and recovered when the stress-strain relation is the same during loading and unloading. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        },
+        {
+          "label": "Mechanics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+          "rawHash": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+          "refinedHash": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+          "checked_locator": "Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 142 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-142-lea-strc-003-03-core-concept-refined-source-map",
+      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+      "label": "Batch 142 refined source conversion - Modulus is a measure of a material's resistance",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Modulus is a measure of a material's resistance.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+      "local_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Mechanics and Strength of Materials: Elastic deformation is recoverable and plastic deformation is non-recoverable. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Ductile materials undergo substantial plastic deformation before rupture; brittle materials rupture with little non-elastic deformation. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Creep is deformation increase over time without a load change. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Young modulus, shear modulus, bulk modulus, and Poisson coefficient describe linear elastic behavior. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339",
+        "Mechanics and Strength of Materials: Elastic work can be stored and recovered when the stress-strain relation is the same during loading and unloading. Locator: Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        },
+        {
+          "label": "Mechanics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+          "rawHash": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+          "refinedHash": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+          "checked_locator": "Mechanics and Strength refined markdown lines 4685-4709, 4996-5318, 5394-5548, and 5882-6339"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-strc-003-03-core-concept-article-batch-142",
+      "claim_text": "Article lea-strc-003-03-core-concept was rewritten to the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ccbbedee-edc9-4e5e-90fd-1087f4de08ce-batch-142",
+      "claim_text": "Linked question ccbbedee-edc9-4e5e-90fd-1087f4de08ce was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a63b5873-344d-4306-852d-4f84e4b59172-batch-142",
+      "claim_text": "Linked question a63b5873-344d-4306-852d-4f84e4b59172 was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-37a971d3-829d-46e1-9129-b7a618e50c19-batch-142",
+      "claim_text": "Linked question 37a971d3-829d-46e1-9129-b7a618e50c19 was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7475711a-5cd9-455c-afec-ad27afd407cf-batch-142",
+      "claim_text": "Linked question 7475711a-5cd9-455c-afec-ad27afd407cf was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-70e6279c-47e0-4773-999d-d130f013488e-batch-142",
+      "claim_text": "Linked question 70e6279c-47e0-4773-999d-d130f013488e was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-30589f53-147d-4915-ba82-3f55b6a280ac-batch-142",
+      "claim_text": "Linked question 30589f53-147d-4915-ba82-3f55b6a280ac was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f59550ae-7bc0-4a56-99ee-fb42ba618bda-batch-142",
+      "claim_text": "Linked question f59550ae-7bc0-4a56-99ee-fb42ba618bda was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-654c22df-4d59-4f75-b87c-857acf11645d-batch-142",
+      "claim_text": "Linked question 654c22df-4d59-4f75-b87c-857acf11645d was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f0cde53e-5158-46ec-a729-ca89eaa46059-batch-142",
+      "claim_text": "Linked question f0cde53e-5158-46ec-a729-ca89eaa46059 was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d4c158cb-1153-4e4b-bb28-803efd07ba44-batch-142",
+      "claim_text": "Linked question d4c158cb-1153-4e4b-bb28-803efd07ba44 was rewritten inside the checked local source scope for Modulus is a measure of a material's resistance.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      },
+      "blockers": []
+    }
+  ],
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+  },
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_carried_forward",
+      "reason": "No completed CSI MasterFormat source-recovery report is present, so the exact classification claim scope remains uncaptured locally."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_carried_forward",
+      "reason": "No completed seismic utilities recovery report is present, so utilities seismic-bracing claims still lack a safe local refined conversion boundary."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_carried_forward",
+      "reason": "The raw NSCP 2015 PDF exists locally, but no completed NSCP-specific refined conversion/recovery report is present for this pass."
+    }
+  ]
+}

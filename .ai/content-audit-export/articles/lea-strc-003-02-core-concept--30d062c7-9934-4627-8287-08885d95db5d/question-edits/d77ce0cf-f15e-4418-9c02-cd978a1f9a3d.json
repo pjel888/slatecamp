@@ -1,0 +1,64 @@
+{
+  "question_id": "d77ce0cf-f15e-4418-9c02-cd978a1f9a3d",
+  "baseline_hash": "sha256:e911e243ed8da81c29b27cad80ab4a6eba0e821399e1a5caffa0b5158655227b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Material properties describe how materials deform, store.",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+    "parent_article_slug": "lea-strc-003-02-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-003-02-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Material properties describe how materials deform, store",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md",
+        "sha256": "sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6"
+      },
+      {
+        "source_id": "batch-142-lea-strc-003-02-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Material properties describe how materials deform, store",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md",
+        "sha256": "sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is toughness in the checked source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The slope of the elastic line only."
+      },
+      {
+        "id": "b",
+        "text": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture."
+      },
+      {
+        "id": "c",
+        "text": "A code table for occupancy loads."
+      },
+      {
+        "id": "d",
+        "text": "The lack of any deformation before failure."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The slope of the elastic line only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+      "c": "A code table for occupancy loads. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "d": "The lack of any deformation before failure. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
+    },
+    "explanation": "Energy absorption to rupture, represented by the area under the stress-strain curve to rupture. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
+  },
+  "batch_question_template_index": 4
+}

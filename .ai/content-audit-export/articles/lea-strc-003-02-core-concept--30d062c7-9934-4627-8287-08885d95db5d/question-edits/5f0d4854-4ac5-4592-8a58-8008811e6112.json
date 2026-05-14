@@ -1,0 +1,64 @@
+{
+  "question_id": "5f0d4854-4ac5-4592-8a58-8008811e6112",
+  "baseline_hash": "sha256:13232350d5644e8343da1e585a06f4758cbe0f9385ac9371a0fbc6a340c64235",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Material properties describe how materials deform, store.",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "30d062c7-9934-4627-8287-08885d95db5d",
+    "parent_article_slug": "lea-strc-003-02-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-003-02-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Material properties describe how materials deform, store",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md",
+        "sha256": "sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6"
+      },
+      {
+        "source_id": "batch-142-lea-strc-003-02-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Material properties describe how materials deform, store",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md",
+        "sha256": "sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is resilience?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The total plastic damage after rupture."
+      },
+      {
+        "id": "b",
+        "text": "A field assembly method for long-span trusses."
+      },
+      {
+        "id": "c",
+        "text": "Elastic energy absorption and recovery before exceeding the elastic limit."
+      },
+      {
+        "id": "d",
+        "text": "The same as brittleness."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "The total plastic damage after rupture. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "A field assembly method for long-span trusses. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "c": "Elastic energy absorption and recovery before exceeding the elastic limit. This stays inside the Batch 142 local source boundary for Material properties describe how materials deform, store.",
+      "d": "The same as brittleness. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "Elastic energy absorption and recovery before exceeding the elastic limit. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+      "takeaway": "For Material properties describe how materials deform, store, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
+    },
+    "explanation": "Elastic energy absorption and recovery before exceeding the elastic limit. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-02-core-concept.source-capture.md#sha256:3a47f12f719606a0b2f2c932a5c60815e41a9f39cbc71f67832f4ac8e318a4b6; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-02-core-concept.refined.md#sha256:735d73f31969c1daeaaad16a0b0a9dd432c9fc74114c833fd9abdaa0d3b1ac99"
+  },
+  "batch_question_template_index": 5
+}

@@ -1,30 +1,30 @@
 {
   "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6d4d6428c8ef5bddd96b91ad1940e35161c33894d6ab7e7c69ddbbe101b252da",
+  "linked_questions_hash": "sha256:5c1dd7372151a6cbc9a71c0adb3ad14a77b115f1e8141b8d608303c34b11e722",
   "question_count": 10,
   "questions": [
     {
       "question_id": "22fac734-61b5-45b2-ae50-d1f574f10f29",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "What is the defining characteristic of an arch or barrel vault structural system?",
+      "text": "What source-safe cue separates a space frame from a plane truss?",
       "options": [
         {
           "id": "a",
-          "text": "Cables hold a flat deck suspended horizontally, providing tension support across the span"
+          "text": "It is any roof truss with timber members."
         },
         {
           "id": "b",
-          "text": "A curved form distributes loads primarily through compression along the curve, reducing bending moments in the structure"
+          "text": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units."
         },
         {
           "id": "c",
-          "text": "Vertical columns support horizontal beams, which are designed to carry loads through bending"
+          "text": "It is a flat two-member joint analyzed only in one plane."
         },
         {
           "id": "d",
-          "text": "Arches require internal bracing to prevent lateral deflection, ensuring stability under load"
+          "text": "It is defined by a fixed Philippine span limit in this packet."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes a suspension or cable-stayed system.",
-        "c": "This describes a post-and-beam (trabeated) system.",
-        "d": "While arches produce lateral thrust at supports, the form itself is designed to minimize internal bending through its geometry.",
-        "correct": "Arches and vault systems are curved forms in which loads are distributed primarily through compression along the curve. This compression-dominated behavior is highly efficient and allows large spans (40–200+ m) without significant bending moments.",
-        "takeaway": "Arches convert vertical loads into compressive forces along their curve."
+        "a": "It is any roof truss with timber members. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "c": "It is a flat two-member joint analyzed only in one plane. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "It is defined by a fixed Philippine span limit in this packet. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": "This describes a suspension or cable-stayed system. This describes a post-and-beam (trabeated) system. While arches produce lateral thrust at supports, the form itself is designed to minimize internal bending through its geometry. Arches and vault systems are curved forms in which loads are distributed primarily through compression along the curve. This compression-dominated behavior is highly efficient and allows large spans (40–200+ m) without significant bending moments. Arches convert vertical loads into compressive forces along their curve.",
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "A space frame is a three-dimensional triangulated system, commonly built from tetrahedral units. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-002-06-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-05-06T16:21:47.505879+00:00",
-      "content_hash": "sha256:754634699188ad71d627bccf46578b121bb4d78ccf34a7f46da96d03634455af"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:0e3f02f26d35b5ae166d1219e126c080da20476a4145189b8eea8a3d34c11c12"
     },
     {
       "question_id": "13f2ab19-eb9e-47f9-a2d9-748da3d2290e",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "A bridge project spans 300 meters over a wide water channel. Comparing cable-stayed and suspension systems, which is more appropriate for this span, and why?",
+      "text": "Why does the support bay shape matter for a space frame?",
       "options": [
         {
           "id": "a",
-          "text": "Cable-stayed is best; suspension is only for very long spans above 500 meters, where the structural efficiency of suspension cables becomes necessary"
+          "text": "A narrow one-way bay always improves two-way action."
         },
         {
           "id": "b",
-          "text": "Either system is viable; cable-stayed (100–500 m) or suspension (200–2000+ m) both work. Choice depends on aesthetics, local experience, and specific project constraints"
+          "text": "A square or nearly square support bay helps it act as a two-way structure."
         },
         {
           "id": "c",
-          "text": "Neither system is suitable; a truss bridge is required for 300 meters, as it provides the necessary rigidity and support for medium spans"
+          "text": "Support shape is irrelevant once members are steel."
         },
         {
           "id": "d",
-          "text": "Suspension is mandatory for all spans above 200 meters, as it offers superior load distribution and flexibility for longer spans"
+          "text": "A triangular roof plan is required by code in this packet."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Suspension bridges are commonly used for spans starting at 200m.",
-        "c": "A 300m truss bridge would be massive and likely more expensive than a cable-supported alternative.",
-        "d": "There is no 'mandatory' threshold; engineering selection is based on optimization of multiple factors.",
-        "correct": "At 300 meters, both cable-stayed (practical range 100–500 m) and suspension (practical range 200–2000+ m) are feasible. The choice depends on architectural preferences, local construction expertise, maintenance experience, and specific project constraints—not on span alone.",
-        "takeaway": "The choice between cable-stayed and suspension is multi-factorial at the 300m span."
+        "a": "A narrow one-way bay always improves two-way action. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "A square or nearly square support bay helps it act as a two-way structure. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "c": "Support shape is irrelevant once members are steel. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "A triangular roof plan is required by code in this packet. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "A square or nearly square support bay helps it act as a two-way structure. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "A square or nearly square support bay helps it act as a two-way structure. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-002-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d2521815f9164e6c1529f8872208217fedea7f648d927a7914348e691cfff6b5"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:bf3c39bad299661d4c46045c44891d7277a82a1b84acd7b09b8c6b9260151bdc"
     },
     {
       "question_id": "7307731e-d5cf-4c15-a27e-423935437821",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "What is a geodesic dome, and why is it efficient?",
+      "text": "Which force action is source-safe for ideal space-frame members?",
       "options": [
         {
           "id": "a",
-          "text": "A flat grid of members; no special efficiency, often used in simple structures where load distribution is not a primary concern"
+          "text": "All members are designed mainly for torsion."
         },
         {
           "id": "b",
-          "text": "A spherical or hemispherical triangulated frame with members in great-circle chords; efficient because loads are distributed evenly in all directions through short axial members"
+          "text": "Members are treated primarily as axial tension or compression elements."
         },
         {
           "id": "c",
-          "text": "A suspension cable system for large roofs, primarily used for its aesthetic appeal rather than structural efficiency"
+          "text": "All members are decorative and nonstructural."
         },
         {
           "id": "d",
-          "text": "A simple arch system that requires significant buttressing, making it less efficient in terms of material usage and load distribution"
+          "text": "Every member must carry only bending moment."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Domes are inherently non-planar; their efficiency comes from their three-dimensional curvature.",
-        "c": "Geodesic domes are rigid frame structures, not cable-based tensile structures.",
-        "d": "A dome is a 3D extension of an arch, but its geometry makes it more efficient at distributing loads without heavy external buttressing.",
-        "correct": "Geodesic domes are 3D triangulated spheres (or hemispheres) where members follow great-circle paths. This geometry distributes loads evenly in all directions, minimizing bending moments and allowing efficient use of material. They can enclose very large areas with minimal self-weight.",
-        "takeaway": "Geodesic domes use triangulation and spherical geometry to maximize span-to-weight ratios."
+        "a": "All members are designed mainly for torsion. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Members are treated primarily as axial tension or compression elements. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "c": "All members are decorative and nonstructural. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Every member must carry only bending moment. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Members are treated primarily as axial tension or compression elements. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": "Domes are inherently non-planar; their efficiency comes from their three-dimensional curvature. Geodesic domes are rigid frame structures, not cable-based tensile structures. A dome is a 3D extension of an arch, but its geometry makes it more efficient at distributing loads without heavy external buttressing. Geodesic domes are 3D triangulated spheres (or hemispheres) where members follow great-circle paths. This geometry distributes loads evenly in all directions, minimizing bending moments and allowing efficient use of material. They can enclose very large areas with minimal self-weight. Geodesic domes use triangulation and spherical geometry to maximize span-to-weight ratios.",
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "Members are treated primarily as axial tension or compression elements. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-002-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-05-06T16:21:47.381579+00:00",
-      "content_hash": "sha256:832898feb18c3c78ca6c0198df55c47564315fc37046d3d79e1d08e21d18e6c9"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:8d53af30454abe501d62f0e85bc11e5026c74042e34a02ae5823104834a7bf17"
     },
     {
       "question_id": "71be28e5-f4ba-4de4-9f47-db814b03d54d",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "A designer must select a structural system to cover a 150-meter span with minimal interior supports. Which system is most economical?",
+      "text": "A large terminal wants a column-free roof. What long-span issue should be checked first?",
       "options": [
         {
           "id": "a",
-          "text": "2D truss system, which may require additional supports and materials, increasing overall costs"
+          "text": "Only the visual pattern matters."
         },
         {
           "id": "b",
-          "text": "Arch system, which can be aesthetically pleasing but may not be the most cost-effective for long spans"
+          "text": "Long spans remove the need for lateral stability."
         },
         {
           "id": "c",
-          "text": "Cable-stayed or suspension system"
+          "text": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system."
         },
         {
           "id": "d",
-          "text": "Simple beam system, which is typically not suitable for such long spans due to deflection issues"
+          "text": "Any system over 30 m is automatically a space frame."
         }
       ],
       "correct_option_id": "c",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2D trusses become prohibitively heavy and deep at a 150m span.",
-        "b": "An arch for a 150m span would require massive abutments to resist horizontal thrust.",
-        "d": "Simple beams are restricted to much shorter spans (typically < 30m) due to excessive deflection.",
-        "correct": "A 150-meter span is beyond the practical range of trusses (20–60 m) and most arches without extreme depth. Cable-stayed (100–500 m range) or suspension (200–2000+ m range) systems are efficient and economical for this span.",
-        "takeaway": "Cable-supported systems are the most efficient for spans exceeding 100 meters."
+        "a": "Only the visual pattern matters. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Long spans remove the need for lateral stability. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "d": "Any system over 30 m is automatically a space frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "Deflection, drainage or ponding, lateral stability, and load path should be checked before choosing a system. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-002-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3f15bf1355e9a690f0cb4c96c94a726c9e13040cef232af332dd3762a3d061a9"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:c46c3c964f91d08f68528cd0fd8ef16d7d9c568e11a2522de0a6db4c09d3f514"
     },
     {
       "question_id": "0f30f642-44c3-4ba8-9b31-0550260d258e",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "In a cable-stayed bridge, how are the main cables configured?",
+      "text": "What is the simplest spatial unit named for a space frame in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Cables hang in a catenary shape from end to end, supporting the deck indirectly, which inaccurately describes cable-stayed bridge design"
+          "text": "A rectangular portal frame."
         },
         {
           "id": "b",
-          "text": "Cables run directly from towers or masts to the deck in a fan or harp pattern, transferring loads to the towers"
+          "text": "A tetrahedron with four joints and six members."
         },
         {
           "id": "c",
-          "text": "Cables are buried beneath the roadway, which is incorrect for cable-stayed bridges"
+          "text": "A two-member pin joint."
         },
         {
           "id": "d",
-          "text": "Cable-stayed bridges do not use cables; they are purely truss-based, which is a fundamental misunderstanding"
+          "text": "A single compression arch."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "A catenary shape is characteristic of suspension bridges, not cable-stayed bridges.",
-        "c": "Cables are structural elements above the deck designed to support it through tension.",
-        "d": "Cable-stayed bridges rely fundamentally on cables to transfer deck loads to the masts.",
-        "correct": "In cable-stayed systems, cables run directly from towers/masts to the deck (fan or harp pattern). Cables are in tension; towers are in compression. This direct connection is the defining characteristic and differs from suspension systems where cables hang in catenary.",
-        "takeaway": "Cable-stayed bridges use straight, inclined cables connected directly to towers."
+        "a": "A rectangular portal frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "A tetrahedron with four joints and six members. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "c": "A two-member pin joint. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "A single compression arch. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "A tetrahedron with four joints and six members. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "A tetrahedron with four joints and six members. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-002-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c92aadea3ded01582bfea8917ea1dea6b5211358564d6f5119eea27a13fb3bcb"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:b605de63811ec518b4b4ad761cffe6e431173469d3235ce9095447a27b37d3e0"
     },
     {
       "question_id": "bf2c3f37-a72d-4e7e-b8c1-1554fb4fafa9",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "A folded-plate roof structure consists of planar concrete elements bent at angles. Why is this form efficient for large roof spans?",
+      "text": "Which comparison between space frames and domes is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Bending between the folds increases the moment of inertia, stiffening the plates; shear transfer between folds distributes loads"
+          "text": "Both can act as two-way long-span systems, but a dome uses spherical surface geometry while a space frame uses three-dimensional triangulated members."
         },
         {
           "id": "b",
-          "text": "Folded plates eliminate the need for any support structure, making them ideal for open spaces"
+          "text": "They are identical because both are roofs."
         },
         {
           "id": "c",
-          "text": "Folded plates are only efficient for very short spans (< 10 m) and not suitable for large spans"
+          "text": "A dome is always a cable-stayed bridge."
         },
         {
           "id": "d",
-          "text": "Folding reduces the weight but does not improve bending stiffness, which is crucial for large spans"
+          "text": "A space frame has no triangular geometry."
         }
       ],
       "correct_option_id": "a",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Folded plates still require support at their boundaries (columns or beams).",
-        "c": "Folded plates are specifically used for medium-to-long spans where a flat slab would be too heavy.",
-        "d": "The primary structural benefit of folding is a drastic increase in the section's bending stiffness.",
-        "correct": "Folded plates gain rigidity through the 3D geometry created by bends. The effective moment of inertia increases, allowing the plates to span longer distances with less depth than flat slabs. Shear transfer between folds also contributes to load distribution.",
-        "takeaway": "Geometric stiffness allows thin plates to span large distances."
+        "a": "Both can act as two-way long-span systems, but a dome uses spherical surface geometry while a space frame uses three-dimensional triangulated members. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "b": "They are identical because both are roofs. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "A dome is always a cable-stayed bridge. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "A space frame has no triangular geometry. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Both can act as two-way long-span systems, but a dome uses spherical surface geometry while a space frame uses three-dimensional triangulated members. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "Both can act as two-way long-span systems, but a dome uses spherical surface geometry while a space frame uses three-dimensional triangulated members. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-002-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3558722dcfcb6c1bde9ef75fd2322fbef5cc1827fa0ce9246ff4c5d4d6b62be4"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:9cdbbd67a11439f7a1d81311082514f725e18c076b9bc7f73812436fe3bcb277"
     },
     {
       "question_id": "832773a5-297c-4d8a-9f83-79c7695651b2",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "What distinguishes a space frame from a 2D truss?",
+      "text": "Why should a long-span roof avoid ponding?",
       "options": [
         {
           "id": "a",
-          "text": "Space frames are three-dimensional grid structures with rigidly connected members resisting axial, shear, and bending forces; 2D trusses have pin-connected members in one plane resisting only axial forces at nodes"
+          "text": "Deflection can trap water, which adds load and can worsen deflection."
         },
         {
           "id": "b",
-          "text": "Space frames are the same as 2D trusses; the terms are interchangeable, with no structural differences"
+          "text": "Ponding makes steel lighter."
         },
         {
           "id": "c",
-          "text": "Space frames use cables; 2D trusses use rigid members only, which affects their load distribution capabilities"
+          "text": "Ponding increases redundancy in every long-span roof."
         },
         {
           "id": "d",
-          "text": "Space frames cannot span more than 20 meters, limiting their application in large structures"
+          "text": "Ponding is only an architectural finish issue."
         }
       ],
       "correct_option_id": "a",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Space frames are distinct from 2D trusses due to their multi-directional load distribution.",
-        "c": "Cables are primarily used in tensile structures, whereas space frames typically use rigid tubular or solid members.",
-        "d": "Space frames are specifically designed for long-span applications and can easily exceed 20 meters.",
-        "correct": "Space frames (3D trusses) extend structural capacity in three dimensions through triangulated node geometry. This 3D network is more efficient than planar trusses for large areas and provides rigidity in all directions without separate lateral bracing.",
-        "takeaway": "Space frames utilize 3D geometry to distribute loads efficiently across a grid."
+        "a": "Deflection can trap water, which adds load and can worsen deflection. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "b": "Ponding makes steel lighter. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "Ponding increases redundancy in every long-span roof. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Ponding is only an architectural finish issue. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Deflection can trap water, which adds load and can worsen deflection. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "Deflection can trap water, which adds load and can worsen deflection. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-002-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b63350ba8b0ef9c5623dccc9b34a64803acbd9b15c93ec59d33f2b5f8ed693fe"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:9a70df9720bf8e7a65bcc72c027a553c8b710fcecb257837c47ee6de53e2ac69"
     },
     {
       "question_id": "c3481fec-dd83-4c04-aa09-63c6f6137790",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "An exhibition hall requires an unobstructed interior space of 80m × 80m. Which system is most suitable, and what is the reasoning?",
+      "text": "What should replace an unsupported exact span-range question for this bundle?",
       "options": [
         {
           "id": "a",
-          "text": "Simple beam and column frame (most economical) but limited in span without additional supports"
+          "text": "Quote a remembered code span limit."
         },
         {
           "id": "b",
-          "text": "Space frame (3D truss, 20–60 m practical span) or geodesic dome (30–200+ m diameter); both can enclose large areas with minimal depth and interior obstruction"
+          "text": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold."
         },
         {
           "id": "c",
-          "text": "Suspension system; required for all large enclosed areas, though typically used for bridges"
+          "text": "Treat all spans as short spans."
         },
         {
           "id": "d",
-          "text": "Cable-stayed system; it is the only system suitable for roofs, though primarily used in bridge construction"
+          "text": "Ignore span because geometry never matters."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "A simple frame would require massive columns and incredibly deep beams to span 80m without intermediate support.",
-        "c": "While possible, suspension systems for roofs are complex to anchor and are usually reserved for much larger spans or specific architectural forms.",
-        "d": "Cable-stayed systems are more common in bridge engineering and are rarely the 'only' solution for building roofs.",
-        "correct": "For an 80m × 80m space, space frames or geodesic domes are ideal. Both provide large unobstructed areas with minimal self-weight and interior supports by distributing loads across a 3D network.",
-        "takeaway": "3D triangulated systems are best for long-span, unobstructed interior spaces."
+        "a": "Quote a remembered code span limit. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "c": "Treat all spans as short spans. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Ignore span because geometry never matters. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-002-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:288548db437176425ec3061f2b89a7c218ac0d6cbb4e137504d5a4499703fbb5"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:288ff2b6d46df2f5068ab5459c0c549cfd32e1ddd3b06812470a62147b53af4f"
     },
     {
       "question_id": "88fafbf8-1364-480b-ba50-2448c2a38f04",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "What is the fundamental operating principle of a tensile structure (fabric/membrane system)?",
+      "text": "Which statement about field assembly is supported by the local long-span source?",
       "options": [
         {
           "id": "a",
-          "text": "The fabric is compressed by internal air pressure or external loads, which is a common misconception about tensile structures"
+          "text": "All long-span members are shipped as one piece without constraints."
         },
         {
           "id": "b",
-          "text": "The fabric membrane is held under tension by cables or rigid frames; tension carries loads and provides stiffness"
+          "text": "Long-span members can be difficult to transport and may require field assembly and crane planning."
         },
         {
           "id": "c",
-          "text": "Tensile structures are identical to truss systems, which is incorrect as truss systems rely on compression and tension in a different manner"
+          "text": "Transport limits prove the structural system type by themselves."
         },
         {
           "id": "d",
-          "text": "Tensile structures cannot withstand wind or snow loads, which is false as they are designed to handle such environmental factors"
+          "text": "Field assembly is prohibited for space frames."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Fabric has negligible compressive strength; it must be pre-tensioned to maintain its shape.",
-        "c": "Truss systems use members in both tension and compression, whereas tensile membranes strictly utilize tension.",
-        "d": "When properly engineered and pre-tensioned, these structures are highly effective at resisting environmental loads.",
-        "correct": "Tensile structures rely on membrane material held under tension. Tension provides stiffness and allows the structure to resist loads through membrane action. Cables or frames maintain tension by providing boundary support.",
-        "takeaway": "Tension is the primary force that provides form and stability to membrane structures."
+        "a": "All long-span members are shipped as one piece without constraints. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Long-span members can be difficult to transport and may require field assembly and crane planning. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "c": "Transport limits prove the structural system type by themselves. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Field assembly is prohibited for space frames. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Long-span members can be difficult to transport and may require field assembly and crane planning. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "Long-span members can be difficult to transport and may require field assembly and crane planning. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-002-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8a13f137b0084607a225790a9fc6e29ff9ff898b5ddd2648ddade33292245ab8"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:9e15eddb27df68ce39f0a0c1d662323132ae30fe7b5166060eb09f818b165477"
     },
     {
       "question_id": "e6f8c4d4-b1f5-45f8-88aa-cb8dd1fa34a8",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
       "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "What is the primary load path in a suspension bridge?",
+      "text": "What is the source-safe exam answer when a description mentions a 3D truss roof with many nodes?",
       "options": [
         {
           "id": "a",
-          "text": "Loads are distributed evenly to all support points equally, ensuring uniform stress distribution across the structure"
+          "text": "Classify it as a bearing wall system."
         },
         {
           "id": "b",
-          "text": "Main cables hang in a catenary shape and support the deck via vertical suspender cables; towers transfer the catenary tension to the anchorages"
+          "text": "Classify it as a space frame or space truss and explain the three-dimensional axial member load path."
         },
         {
           "id": "c",
-          "text": "All loads are carried by rigid trusses; cables are only for wind resistance, which is a common misconception"
+          "text": "Call it a folded plate because it has many panels."
         },
         {
           "id": "d",
-          "text": "Suspension bridges cannot span more than 100 meters, which limits their application to small-scale projects"
+          "text": "Answer with a seismic response factor."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Structural systems have specific hierarchies of load transfer; they are rarely 'equal' to all points.",
-        "c": "The cables are the primary load-bearing elements in a suspension bridge, not just for wind resistance.",
-        "d": "Suspension bridges are the gold standard for long spans, capable of crossing thousands of meters.",
-        "correct": "Suspension bridges have main cables in catenary (hanging shape) that support the deck through vertical suspender cables. The main cables develop tension; towers develop compression. This configuration is economical for very long spans (200–2000+ m).",
-        "takeaway": "Main cables (tension) transfer loads to towers (compression) and anchorages."
+        "a": "Classify it as a bearing wall system. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Classify it as a space frame or space truss and explain the three-dimensional axial member load path. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+        "c": "Call it a folded plate because it has many panels. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Answer with a seismic response factor. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Classify it as a space frame or space truss and explain the three-dimensional axial member load path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+        "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "explanation": "Classify it as a space frame or space truss and explain the three-dimensional axial member load path. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-002-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cf14fd940eeff70d4865b47d72748bd10a699689eea6ff31c057885526a78ea1"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:4bae2e622762b9369c4070950813127bf91484f5828bae528250a25434643ade"
     }
   ]
 }

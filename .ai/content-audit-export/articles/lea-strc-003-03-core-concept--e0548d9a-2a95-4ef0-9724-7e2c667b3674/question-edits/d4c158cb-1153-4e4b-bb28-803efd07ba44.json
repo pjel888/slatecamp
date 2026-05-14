@@ -1,0 +1,64 @@
+{
+  "question_id": "d4c158cb-1153-4e4b-bb28-803efd07ba44",
+  "baseline_hash": "sha256:eb384f15d1f4f900d3abd59e55fcca11704eeb403068782c47c066d554efff06",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Modulus is a measure of a material's resistance.",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+    "parent_article_slug": "lea-strc-003-03-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-003-03-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Modulus is a measure of a material's resistance",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429"
+      },
+      {
+        "source_id": "batch-142-lea-strc-003-03-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Modulus is a measure of a material's resistance",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What should an LEA answer do when a modulus formula depends on uncaptured code values?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Restore memorized code values without source."
+      },
+      {
+        "id": "b",
+        "text": "Stay with the captured concept and use only values provided by the item or local source."
+      },
+      {
+        "id": "c",
+        "text": "Use the largest value in memory."
+      },
+      {
+        "id": "d",
+        "text": "Avoid checking units."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Restore memorized code values without source. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "Stay with the captured concept and use only values provided by the item or local source. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+      "c": "Use the largest value in memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "d": "Avoid checking units. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "Stay with the captured concept and use only values provided by the item or local source. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+    },
+    "explanation": "Stay with the captured concept and use only values provided by the item or local source. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+  },
+  "batch_question_template_index": 10
+}

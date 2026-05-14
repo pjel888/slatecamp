@@ -1,0 +1,64 @@
+{
+  "question_id": "70e6279c-47e0-4773-999d-d130f013488e",
+  "baseline_hash": "sha256:5928ed1867b5cfcf55ed5277f43135b585f79e1b38901bcd6e8c73b5b58f4c21",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Modulus is a measure of a material's resistance.",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+    "parent_article_slug": "lea-strc-003-03-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-003-03-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Modulus is a measure of a material's resistance",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md",
+        "sha256": "sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429"
+      },
+      {
+        "source_id": "batch-142-lea-strc-003-03-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Modulus is a measure of a material's resistance",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md",
+        "sha256": "sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What does bulk modulus describe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A beam-column joint category."
+      },
+      {
+        "id": "b",
+        "text": "A material color specification."
+      },
+      {
+        "id": "c",
+        "text": "Resistance to volumetric strain under mean normal stress."
+      },
+      {
+        "id": "d",
+        "text": "A truss zero-force rule."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "A beam-column joint category. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "A material color specification. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "c": "Resistance to volumetric strain under mean normal stress. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+      "d": "A truss zero-force rule. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "Resistance to volumetric strain under mean normal stress. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+    },
+    "explanation": "Resistance to volumetric strain under mean normal stress. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
+  },
+  "batch_question_template_index": 5
+}

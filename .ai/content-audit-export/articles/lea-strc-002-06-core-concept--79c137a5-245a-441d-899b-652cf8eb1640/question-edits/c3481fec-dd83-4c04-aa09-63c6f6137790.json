@@ -1,0 +1,64 @@
+{
+  "question_id": "c3481fec-dd83-4c04-aa09-63c6f6137790",
+  "baseline_hash": "sha256:288548db437176425ec3061f2b89a7c218ac0d6cbb4e137504d5a4499703fbb5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Space frame (or 3D truss).",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+    "parent_article_slug": "lea-strc-002-06-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-002-06-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Space frame (or 3D truss)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md",
+        "sha256": "sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9"
+      },
+      {
+        "source_id": "batch-142-lea-strc-002-06-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Space frame (or 3D truss)",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md",
+        "sha256": "sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What should replace an unsupported exact span-range question for this bundle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quote a remembered code span limit."
+      },
+      {
+        "id": "b",
+        "text": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold."
+      },
+      {
+        "id": "c",
+        "text": "Treat all spans as short spans."
+      },
+      {
+        "id": "d",
+        "text": "Ignore span because geometry never matters."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Quote a remembered code span limit. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold. This stays inside the Batch 142 local source boundary for Space frame (or 3D truss).",
+      "c": "Treat all spans as short spans. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "d": "Ignore span because geometry never matters. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+      "takeaway": "For Space frame (or 3D truss), read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+    },
+    "explanation": "Use the checked long-span concept and load-path cues instead of inventing a fixed local threshold. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f"
+  },
+  "batch_question_template_index": 8
+}

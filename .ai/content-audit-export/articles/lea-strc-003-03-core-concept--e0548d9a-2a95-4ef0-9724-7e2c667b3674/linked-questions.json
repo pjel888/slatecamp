@@ -1,30 +1,30 @@
 {
   "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:269db625236173ae3b0152b7e36f70d8c0bf51c10849926faecddffca58868f8",
+  "linked_questions_hash": "sha256:82e2defebf3d158dceaa199d77a0fbfc6f00bd2fe5d3c8a171918103e3756680",
   "question_count": 10,
   "questions": [
     {
       "question_id": "ccbbedee-edc9-4e5e-90fd-1087f4de08ce",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "What is the Modulus of Elasticity for structural steel, and does it vary with steel grade?",
+      "text": "What is Young modulus or modulus of elasticity?",
       "options": [
         {
           "id": "a",
-          "text": "E varies significantly (from 180,000 to 220,000 MPa) based on the carbon content and alloy of the steel grade"
+          "text": "The rupture stress after necking."
         },
         {
           "id": "b",
-          "text": "E = 200,000 MPa for all structural steel grades; grade designation specifies Fy and Fu, not E"
+          "text": "The stress-to-strain ratio, or slope of the linear elastic stress-strain response."
         },
         {
           "id": "c",
-          "text": "E = 200,000 MPa only for A36; higher strength grades like Grade 50 have higher E values to resist deflection"
+          "text": "A long-span roof type."
         },
         {
           "id": "d",
-          "text": "E is not a material property; it depends entirely on the thickness and geometry of the member"
+          "text": "The number of columns in a bay."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "E is a constant material property of steel and does not fluctuate with grade designations[cite: 1].",
-        "c": "Higher strength steel allows for higher loads before yielding, but it does not change the initial stiffness (slope of the elastic region)[cite: 1].",
-        "d": "E is an intrinsic material property; geometry determines the moment of inertia (I), not the modulus of elasticity[cite: 1].",
-        "correct": "E = 200,000 MPa (200 GPa) is considered a material constant for all structural steel grades. While yield strength (Fy) and ultimate strength (Fu) vary by grade, the stiffness (E) does not[cite: 1].",
-        "takeaway": "Structural steel E is constant at 200,000 MPa regardless of grade[cite: 1]."
+        "a": "The rupture stress after necking. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "The stress-to-strain ratio, or slope of the linear elastic stress-strain response. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "c": "A long-span roof type. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "The number of columns in a bay. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "The stress-to-strain ratio, or slope of the linear elastic stress-strain response. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": "E is a constant material property of steel and does not fluctuate with grade designations[cite: 1]. Higher strength steel allows for higher loads before yielding, but it does not change the initial stiffness (slope of the elastic region)[cite: 1]. E is an intrinsic material property; geometry determines the moment of inertia (I), not the modulus of elasticity[cite: 1]. E = 200,000 MPa (200 GPa) is considered a material constant for all structural steel grades. While yield strength (Fy) and ultimate strength (Fu) vary by grade, the stiffness (E) does not[cite: 1]. Structural steel E is constant at 200,000 MPa regardless of grade[cite: 1].",
-      "code_citation": "NSCP 2015 Section 420.2.2.2",
+      "explanation": "The stress-to-strain ratio, or slope of the linear elastic stress-strain response. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-003-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:59:03.743643+00:00",
-      "content_hash": "sha256:8668889c8897b2e762ade865da5ecb94c5dfaa2d8bff3fece97a81b4446c34b1"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:22b07f2ffe5b59890d9c481e168c7a9dc5cf489858f31e5e8a10405ef3e03511"
     },
     {
       "question_id": "a63b5873-344d-4306-852d-4f84e4b59172",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "For A36 steel with Fy = 248 MPa and E = 200,000 MPa, calculate the Modulus of Resilience.",
+      "text": "When is E = stress/strain source-safe to use?",
       "options": [
         {
           "id": "a",
-          "text": "UR ≈ 0.077 MPa"
+          "text": "After rupture."
         },
         {
           "id": "b",
-          "text": "UR ≈ 0.154 MPa"
+          "text": "Within the proportional linear elastic range."
         },
         {
           "id": "c",
-          "text": "UR ≈ 0.309 MPa"
+          "text": "After any amount of plastic strain without checking limits."
         },
         {
           "id": "d",
-          "text": "UR ≈ 0.620 MPa"
+          "text": "Only for pneumatic membranes."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This result occurs if you forget the factor of 2 in the denominator[cite: 1].",
-        "c": "This result occurs if you use Fy / E without squaring Fy[cite: 1].",
-        "d": "This is Fy / E multiplied by a factor; it does not follow the strain energy density formula[cite: 1].",
-        "correct": "UR = Fy² / (2E) = (248)² / (2 × 200,000) = 61,504 / 400,000 = 0.15376 ≈ 0.154 MPa[cite: 1].",
-        "takeaway": "For A36, Modulus of Resilience is approximately 0.154 MPa[cite: 1]."
+        "a": "After rupture. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Within the proportional linear elastic range. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "c": "After any amount of plastic strain without checking limits. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Only for pneumatic membranes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Within the proportional linear elastic range. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": "This result occurs if you forget the factor of 2 in the denominator[cite: 1]. This result occurs if you use Fy / E without squaring Fy[cite: 1]. This is Fy / E multiplied by a factor; it does not follow the strain energy density formula[cite: 1]. UR = Fy² / (2E) = (248)² / (2 × 200,000) = 61,504 / 400,000 = 0.15376 ≈ 0.154 MPa[cite: 1]. For A36, Modulus of Resilience is approximately 0.154 MPa[cite: 1].",
-      "code_citation": "Strength of Materials; NSCP 2015 Section 420.2.2.2",
+      "explanation": "Within the proportional linear elastic range. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-003-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:59:03.267837+00:00",
-      "content_hash": "sha256:bbdef67aeff5486d8be11119fb752a1a238f616d6507534b7ba0c1072e8548d3"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:ade2bdd8e8cf998089c003934243fe6479e6675b1aef942a534f3009c6f096e4"
     },
     {
       "question_id": "37a971d3-829d-46e1-9129-b7a618e50c19",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "Two reinforced concrete beams have the same span and loading. Beam A uses f'c = 25 MPa; Beam B uses f'c = 40 MPa. If both have the same gross moment of inertia (Ig), how do their deflections compare?",
+      "text": "What does a higher modulus usually mean in a stiffness comparison?",
       "options": [
         {
           "id": "a",
-          "text": "Beam B deflects 60% more because higher strength allows for more flexibility"
+          "text": "Lower stiffness for every member."
         },
         {
           "id": "b",
-          "text": "Beam A deflects more because it has lower E; the ratio of deflections is approximately 1.27:1"
+          "text": "Less elastic strain for the same stress, assuming the same conditions."
         },
         {
           "id": "c",
-          "text": "Both beams deflect the same amount because deflection depends only on Ig, not f'c"
+          "text": "More strain for the same stress."
         },
         {
           "id": "d",
-          "text": "Beam B deflects 1.6 times less because strength is directly proportional to deflection"
+          "text": "No effect on deflection."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Higher strength concrete is stiffer, meaning it deflects less, not more[cite: 1].",
-        "c": "Deflection calculation (δ = kPL³/EI) requires the Modulus of Elasticity (E), which changes with f'c[cite: 1].",
-        "d": "Strength (f'c) is not linearly proportional to deflection; it is related via the square root in the E calculation[cite: 1].",
-        "correct": "Deflection is inversely proportional to E. Ec(25) = 4700√25 = 23,500 MPa. Ec(40) = 4700√40 ≈ 29,725 MPa. Ratio: 29,725 / 23,500 ≈ 1.265 (rounded to 1.27). Beam A (lower E) deflects more[cite: 1].",
-        "takeaway": "Deflection varies with the square root of concrete compressive strength[cite: 1]."
+        "a": "Lower stiffness for every member. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Less elastic strain for the same stress, assuming the same conditions. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "c": "More strain for the same stress. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "No effect on deflection. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Less elastic strain for the same stress, assuming the same conditions. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": "Higher strength concrete is stiffer, meaning it deflects less, not more[cite: 1]. Deflection calculation (δ = kPL³/EI) requires the Modulus of Elasticity (E), which changes with f'c[cite: 1]. Strength (f'c) is not linearly proportional to deflection; it is related via the square root in the E calculation[cite: 1]. Deflection is inversely proportional to E. Ec(25) = 4700√25 = 23,500 MPa. Ec(40) = 4700√40 ≈ 29,725 MPa. Ratio: 29,725 / 23,500 ≈ 1.265 (rounded to 1.27). Beam A (lower E) deflects more[cite: 1]. Deflection varies with the square root of concrete compressive strength[cite: 1].",
-      "code_citation": "NSCP 2015 Section 419.2.2.1",
+      "explanation": "Less elastic strain for the same stress, assuming the same conditions. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-003-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:59:03.508794+00:00",
-      "content_hash": "sha256:3e23a64dcf39c2b39fd2480bb4d51996e60469a67f2a7376a0c7349827c7e839"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:8394a03168c6021d0737cbd862e338d0444fa8605648004ea159e43eb58f5363"
     },
     {
       "question_id": "7475711a-5cd9-455c-afec-ad27afd407cf",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "What is the formula for the Modulus of Elasticity of normal-weight concrete per NSCP 2015?",
+      "text": "What does the shear modulus G relate?",
       "options": [
         {
           "id": "a",
-          "text": "Ec = 4,700 × f'c (f'c in MPa)"
+          "text": "Axial stress to longitudinal strain only."
         },
         {
           "id": "b",
-          "text": "Ec = 4,700√f'c (f'c in MPa)"
+          "text": "Shear stress to shear strain."
         },
         {
           "id": "c",
-          "text": "Ec = 3,000√f'c (f'c in MPa)"
+          "text": "Ponding load to roof slope."
         },
         {
           "id": "d",
-          "text": "Ec = f'c / 0.003"
+          "text": "Service load to occupancy group."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The relationship is non-linear; it depends on the square root of f'c, not the direct value[cite: 1].",
-        "c": "3,000 is an incorrect coefficient; the code specifically mandates 4,700 for normal-weight concrete[cite: 1].",
-        "d": "0.003 is the assumed maximum usable strain at the extreme concrete compression fiber, not a factor for the modulus of elasticity[cite: 1].",
-        "correct": "Per NSCP 2015 Section 419.2.2.1, the modulus of elasticity for concrete is calculated as 4,700 times the square root of the specified compressive strength[cite: 1].",
-        "takeaway": "Ec = 4,700√f'c for normal-weight concrete[cite: 1]."
+        "a": "Axial stress to longitudinal strain only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Shear stress to shear strain. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "c": "Ponding load to roof slope. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Service load to occupancy group. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Shear stress to shear strain. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 419.2.2.1",
+      "explanation": "Shear stress to shear strain. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-003-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:77c553a8e884f098b42315fc1f6aa3819c3831bc26641789c6ac9b44dea01099"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:b1d0b63a166b8f304c6aa0d57b5b6cfafb29200ea6196a6eb45f50c34b434285"
     },
     {
       "question_id": "70e6279c-47e0-4773-999d-d130f013488e",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "For normal-weight concrete with f'c = 30 MPa, calculate the Modulus of Elasticity using the standard formula.",
+      "text": "What does bulk modulus describe?",
       "options": [
         {
           "id": "a",
-          "text": "Ec ≈ 15,900 MPa"
+          "text": "A beam-column joint category."
         },
         {
           "id": "b",
-          "text": "Ec ≈ 23,500 MPa"
+          "text": "A material color specification."
         },
         {
           "id": "c",
-          "text": "Ec ≈ 25,743 MPa"
+          "text": "Resistance to volumetric strain under mean normal stress."
         },
         {
           "id": "d",
-          "text": "Ec ≈ 141,000 MPa"
+          "text": "A truss zero-force rule."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This value is incorrect and does not follow the NSCP coefficient[cite: 1].",
-        "b": "This is the result for f'c = 25 MPa (4,700 × 5 = 23,500), which is a common distraction strength[cite: 1].",
-        "d": "This result occurs if you fail to take the square root of 30 before multiplying[cite: 1].",
-        "correct": "Ec = 4,700√f'c = 4,700 × √30 ≈ 4,700 × 5.4772 = 25,742.96 ≈ 25,743 MPa[cite: 1].",
-        "takeaway": "Ec for 30 MPa concrete is approximately 25,743 MPa[cite: 1]."
+        "a": "A beam-column joint category. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "A material color specification. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "Resistance to volumetric strain under mean normal stress. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "d": "A truss zero-force rule. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Resistance to volumetric strain under mean normal stress. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 419.2.2.1",
+      "explanation": "Resistance to volumetric strain under mean normal stress. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-003-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5928ed1867b5cfcf55ed5277f43135b585f79e1b38901bcd6e8c73b5b58f4c21"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:719d57dd33facefc6adf524ff1e1c22a3a664a7d7211a4652f3be12fd3b7c973"
     },
     {
       "question_id": "30589f53-147d-4915-ba82-3f55b6a280ac",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "Define the Modulus of Rigidity (Shear Modulus) and explain its relationship to the Modulus of Elasticity.",
+      "text": "What relation between E, G, and Poisson ratio is supported in the mechanics source?",
       "options": [
         {
           "id": "a",
-          "text": "G is the resistance to shear deformation; G ≈ E / 2 for most materials, indicating a proportional relationship"
+          "text": "G is unrelated to E in every material."
         },
         {
           "id": "b",
-          "text": "G is the resistance to shear deformation; G = E / (2(1 + ν)), where ν is Poisson's ratio"
+          "text": "For isotropic linear elastic behavior, shear modulus relates to Young modulus and Poisson ratio."
         },
         {
           "id": "c",
-          "text": "G is identical to E; they are interchangeable terms, which is a common misconception"
+          "text": "Poisson ratio is a span length."
         },
         {
           "id": "d",
-          "text": "G is always greater than E because shear resistance is stronger than normal resistance, which is incorrect"
+          "text": "E is always calculated from roof ponding."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "G ≈ E/2 is a very rough approximation; the exact formula includes the 1 + ν term[cite: 1].",
-        "c": "E measures axial stiffness (normal stress/strain), whereas G measures shear stiffness[cite: 1].",
-        "d": "Since Poisson's ratio for structural materials is positive (0.25 to 0.35), G is always significantly less than E[cite: 1].",
-        "correct": "The shear modulus (G) represents the ratio of shear stress to shear strain. For isotropic materials, it is related to E and Poisson's ratio (ν) by G = E / [2(1+ν)][cite: 1].",
-        "takeaway": "G = E / [2(1+ν)][cite: 1]."
+        "a": "G is unrelated to E in every material. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "For isotropic linear elastic behavior, shear modulus relates to Young modulus and Poisson ratio. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "c": "Poisson ratio is a span length. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "E is always calculated from roof ponding. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "For isotropic linear elastic behavior, shear modulus relates to Young modulus and Poisson ratio. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": null,
-      "code_citation": "Strength of Materials; General Structural Principles",
+      "explanation": "For isotropic linear elastic behavior, shear modulus relates to Young modulus and Poisson ratio. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-003-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:60190c2ae0be4234c393ce8b3e526589951e9cc306d5967e7fd26b29eb625611"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:1f6c791aa76a81d21db569ec9c8c572326f757f6fa639a4596f4658d0073c8f1"
     },
     {
       "question_id": "f59550ae-7bc0-4a56-99ee-fb42ba618bda",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "What does the Modulus of Resilience measure, and what is its relationship to the yield strength and Modulus of Elasticity?",
+      "text": "How should exact steel E values be handled in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "The total energy absorbed from zero stress to rupture; UR = Fy² / (2E), which is crucial for understanding material toughness"
+          "text": "Invent a different E for every steel grade."
         },
         {
           "id": "b",
-          "text": "The maximum elastic energy stored per unit volume without permanent deformation; UR = Fy² / (2E)"
+          "text": "Use the captured approximate steel modulus values or values supplied in the question, not an unsupported grade table."
         },
         {
           "id": "c",
-          "text": "The material's ability to resist impact; UR = Fu / E, which is often used in dynamic loading scenarios"
+          "text": "Ignore units."
         },
         {
           "id": "d",
-          "text": "The stress level at which the material yields; UR = Fy, typically used in basic structural analysis"
+          "text": "Use an occupancy load factor instead."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Energy absorbed up to rupture is the Modulus of Toughness, not Resilience[cite: 1].",
-        "c": "Impact resistance is related to toughness and ductility, but the formula provided is incorrect[cite: 1].",
-        "d": "Fy is the yield stress, which is a single point on the curve; resilience is the energy (area) accumulated up to that point[cite: 1].",
-        "correct": "Resilience is the capacity of a material to absorb energy when it is deformed elastically. It is the area under the elastic portion of the stress-strain curve, calculated as UR = Fy² / (2E)[cite: 1].",
-        "takeaway": "Modulus of Resilience (UR) = Fy² / (2E)[cite: 1]."
+        "a": "Invent a different E for every steel grade. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Use the captured approximate steel modulus values or values supplied in the question, not an unsupported grade table. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "c": "Ignore units. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Use an occupancy load factor instead. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Use the captured approximate steel modulus values or values supplied in the question, not an unsupported grade table. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": "Energy absorbed up to rupture is the Modulus of Toughness, not Resilience[cite: 1]. Impact resistance is related to toughness and ductility, but the formula provided is incorrect[cite: 1]. Fy is the yield stress, which is a single point on the curve; resilience is the energy (area) accumulated up to that point[cite: 1]. Resilience is the capacity of a material to absorb energy when it is deformed elastically. It is the area under the elastic portion of the stress-strain curve, calculated as UR = Fy² / (2E)[cite: 1]. Modulus of Resilience (UR) = Fy² / (2E)[cite: 1].",
-      "code_citation": "Strength of Materials; General Structural Principles",
+      "explanation": "Use the captured approximate steel modulus values or values supplied in the question, not an unsupported grade table. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-003-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:59:03.389174+00:00",
-      "content_hash": "sha256:8107137a82e3b2aab932e0a0fd74313c18284d4246e253e45c279e68c54ee1cb"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:0de7d62aeefccf2e8bffcc68247b71536264152a714884ee3a3675a033c48d37"
     },
     {
       "question_id": "654c22df-4d59-4f75-b87c-857acf11645d",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "For structural steel with E = 200,000 MPa and Poisson's ratio ν = 0.30, calculate the Modulus of Rigidity using the relationship G = E / (2(1 + ν)).",
+      "text": "Why can two members with the same material still deflect differently?",
       "options": [
         {
           "id": "a",
-          "text": "G ≈ 76,923 MPa"
+          "text": "Member geometry and moment of inertia also affect deflection, even when material modulus is the same."
         },
         {
           "id": "b",
-          "text": "G ≈ 100,000 MPa"
+          "text": "Because E changes with beam depth by itself."
         },
         {
           "id": "c",
-          "text": "G ≈ 153,846 MPa"
+          "text": "Because stress and strain are unrelated."
         },
         {
           "id": "d",
-          "text": "G ≈ 200,000 MPa"
+          "text": "Because support conditions never matter."
         }
       ],
       "correct_option_id": "a",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This result assumes Poisson's ratio is 0, which is incorrect for steel[cite: 1].",
-        "c": "This result occurs if you multiply instead of divide by the (1 + ν) factor[cite: 1].",
-        "d": "G cannot be equal to E for materials with a positive Poisson's ratio[cite: 1].",
-        "correct": "G = 200,000 / [2(1 + 0.30)] = 200,000 / 2.6 = 76,923.07 ≈ 76,923 MPa[cite: 1].",
-        "takeaway": "The shear modulus for structural steel is approximately 76,923 MPa[cite: 1]."
+        "a": "Member geometry and moment of inertia also affect deflection, even when material modulus is the same. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "b": "Because E changes with beam depth by itself. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "Because stress and strain are unrelated. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Because support conditions never matter. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Member geometry and moment of inertia also affect deflection, even when material modulus is the same. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": "This result assumes Poisson's ratio is 0, which is incorrect for steel[cite: 1]. This result occurs if you multiply instead of divide by the (1 + ν) factor[cite: 1]. G cannot be equal to E for materials with a positive Poisson's ratio[cite: 1]. G = 200,000 / [2(1 + 0.30)] = 200,000 / 2.6 = 76,923.07 ≈ 76,923 MPa[cite: 1]. The shear modulus for structural steel is approximately 76,923 MPa[cite: 1].",
-      "code_citation": "Strength of Materials; NSCP 2015 420.2.2.2",
+      "explanation": "Member geometry and moment of inertia also affect deflection, even when material modulus is the same. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-003-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:59:03.628637+00:00",
-      "content_hash": "sha256:3d04c24a196627e318680e3d35d95f6be20317c08777839bd04e6a37e428bb24"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:0cd09e25244cb89d0e9bbfbff3648f8af954117c197e140afbc2f9623324362c"
     },
     {
       "question_id": "f0cde53e-5158-46ec-a729-ca89eaa46059",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "Two beams have identical dimensions and carry identical loads: one is made of steel (E = 200,000 MPa) and one of concrete (Ec ≈ 25,000 MPa). If the steel beam deflects 5 mm, what is the approximate deflection of the concrete beam?",
+      "text": "What is the safe difference between strength and modulus?",
       "options": [
         {
           "id": "a",
-          "text": "5 mm (same as steel)"
+          "text": "They are identical words."
         },
         {
           "id": "b",
-          "text": "20 mm (4 times more)"
+          "text": "Modulus is always rupture strength."
         },
         {
           "id": "c",
-          "text": "40 mm (8 times more)"
+          "text": "Strength concerns failure capacity; modulus concerns elastic deformation response."
         },
         {
           "id": "d",
-          "text": "0.625 mm (eight times less)"
+          "text": "Strength is only a diaphragm term."
         }
       ],
       "correct_option_id": "c",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The beams have different materials; stiffness (E) dictates that their deflections will differ[cite: 1].",
-        "b": "The ratio of E values is 8, not 4[cite: 1].",
-        "d": "Concrete is less stiff than steel, so it must deflect more, not less[cite: 1].",
-        "correct": "Deflection is inversely proportional to stiffness (E). The ratio of deflections is E_steel / E_concrete = 200,000 / 25,000 = 8. Thus, the concrete beam deflects 8 times more: 8 × 5 mm = 40 mm[cite: 1].",
-        "takeaway": "Lower Modulus of Elasticity results in proportionally higher deflection[cite: 1]."
+        "a": "They are identical words. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Modulus is always rupture strength. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "c": "Strength concerns failure capacity; modulus concerns elastic deformation response. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "d": "Strength is only a diaphragm term. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Strength concerns failure capacity; modulus concerns elastic deformation response. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": null,
-      "code_citation": "General Structural Principles; NSCP 2015 419.2.2.1 / 420.2.2.2",
+      "explanation": "Strength concerns failure capacity; modulus concerns elastic deformation response. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-003-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a69701ffda74a0e53d353b09f6a87e341de90296cbe7029a2e0c72d44b0126e6"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:9eed5cfd532f48d598decb9d20babf28cc5557a00de7bf64ef7b71b5cf796f4e"
     },
     {
       "question_id": "d4c158cb-1153-4e4b-bb28-803efd07ba44",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "Explain the difference between Modulus of Resilience and Modulus of Toughness in terms of the stress-strain diagram regions they represent.",
+      "text": "What should an LEA answer do when a modulus formula depends on uncaptured code values?",
       "options": [
         {
           "id": "a",
-          "text": "Resilience represents the entire stress-strain curve; Toughness represents only the elastic region, which is incorrect"
+          "text": "Restore memorized code values without source."
         },
         {
           "id": "b",
-          "text": "Resilience represents only the elastic region (linear portion); Toughness represents the entire curve from origin to rupture"
+          "text": "Stay with the captured concept and use only values provided by the item or local source."
         },
         {
           "id": "c",
-          "text": "Both represent the same thing; they are synonymous measures of energy, which is a common misconception"
+          "text": "Use the largest value in memory."
         },
         {
           "id": "d",
-          "text": "Resilience measures material strength; Toughness measures axial stiffness, which is not accurate"
+          "text": "Avoid checking units."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This reverses the definitions[cite: 1].",
-        "c": "They are different measures; toughness includes the much larger area of the plastic region[cite: 1].",
-        "d": "Both are measures of energy density (energy per volume), not pure strength or stiffness[cite: 1].",
-        "correct": "Resilience is the energy stored elastically (recoverable), whereas Toughness is the total energy absorbed by the material before it fractures (includes non-recoverable plastic deformation)[cite: 1].",
-        "takeaway": "Toughness represents total energy capacity; Resilience represents elastic energy capacity[cite: 1]."
+        "a": "Restore memorized code values without source. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "b": "Stay with the captured concept and use only values provided by the item or local source. This stays inside the Batch 142 local source boundary for Modulus is a measure of a material's resistance.",
+        "c": "Use the largest value in memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "d": "Avoid checking units. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+        "correct": "Stay with the captured concept and use only values provided by the item or local source. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+        "takeaway": "For Modulus is a measure of a material's resistance, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc"
       },
-      "explanation": null,
-      "code_citation": "Strength of Materials; General Structural Principles",
+      "explanation": "Stay with the captured concept and use only values provided by the item or local source. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-03-core-concept.source-capture.md#sha256:7e08d2ee2fff6f326273f4da107faebdf6ff30eb289b1c056952afbce78ae429; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-03-core-concept.refined.md#sha256:d7a72228e0f178c1f4e161ae03d0b668ccd4887ca121dea989e43a8a3ad070cc",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-003-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eb384f15d1f4f900d3abd59e55fcca11704eeb403068782c47c066d554efff06"
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "content_hash": "sha256:5ba1ae8e4a6344d2af3208944945d654353059b38ff183e855720da63ac730bd"
     }
   ]
 }

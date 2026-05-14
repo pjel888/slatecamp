@@ -1,0 +1,328 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-142-local-first",
+  "batch_number": 142,
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T01:20:31.862Z",
+  "target": {
+    "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+    "slug": "lea-strc-003-04-core-concept",
+    "title": "Both ASD and LRFD aim to ensure safety, but they achieve it",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+    "normalized_sha256": "sha256:2436fcbd431f8af87db0804f21179ff695655df9686402f4aa5bda7f402c4a00",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c/candidate.md"
+  },
+  "classification": {
+    "topic_family": "lea-strc-003-04-core-concept",
+    "category": "Structural Conceptualization",
+    "source_sensitivity": "technical_structural_exam_content",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_source_capture": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "ASD/LRFD article intentionally excludes full NSCP/AISC/resistance-factor tables pending a captured code/manual source."
+    ]
+  },
+  "raw_source_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch-142-lea-strc-003-04-core-concept-raw-source-capture",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "label": "Batch 142 raw source capture - Both ASD and LRFD aim to ensure safety, but they achieve it",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Both ASD and LRFD aim to ensure safety, but they achieve it; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+      "local_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Fundamentals of Structural Engineering: Conventional structural design philosophy satisfies safety and serviceability. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Safety is checked by requiring resistance to exceed demand for extreme loading. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Serviceability checks keep structures operational under service loads. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Local examples use service loads for footing dimensioning and factored loads for shear and moment diagrams. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: The source references AISC ASD/LRFD and AASHTO LRFD manuals but does not provide a full local NSCP factor table. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        },
+        {
+          "label": "Fundamentals of Structural Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+          "rawHash": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+          "refinedHash": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+          "checked_locator": "Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 142 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-142-lea-strc-003-04-core-concept-refined-source-map",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "label": "Batch 142 refined source conversion - Both ASD and LRFD aim to ensure safety, but they achieve it",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+      "local_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Fundamentals of Structural Engineering: Conventional structural design philosophy satisfies safety and serviceability. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Safety is checked by requiring resistance to exceed demand for extreme loading. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Serviceability checks keep structures operational under service loads. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Local examples use service loads for footing dimensioning and factored loads for shear and moment diagrams. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: The source references AISC ASD/LRFD and AASHTO LRFD manuals but does not provide a full local NSCP factor table. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        },
+        {
+          "label": "Fundamentals of Structural Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+          "rawHash": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+          "refinedHash": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+          "checked_locator": "Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-strc-003-04-core-concept-article-batch-142",
+      "claim_text": "Article lea-strc-003-04-core-concept was rewritten to the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-14922cc7-cfd5-4e61-a675-ed77a34e05d1-batch-142",
+      "claim_text": "Linked question 14922cc7-cfd5-4e61-a675-ed77a34e05d1 was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2f5f2514-fb02-4cd3-ad9a-24220e93d9d9-batch-142",
+      "claim_text": "Linked question 2f5f2514-fb02-4cd3-ad9a-24220e93d9d9 was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-290e8c56-bb35-47ea-a100-c08c6b380d11-batch-142",
+      "claim_text": "Linked question 290e8c56-bb35-47ea-a100-c08c6b380d11 was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7b243d75-c79d-4c53-a8c1-66cab3379bf4-batch-142",
+      "claim_text": "Linked question 7b243d75-c79d-4c53-a8c1-66cab3379bf4 was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-850378e9-4dd3-4d88-908e-983f10ead976-batch-142",
+      "claim_text": "Linked question 850378e9-4dd3-4d88-908e-983f10ead976 was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-773e71c5-d2c8-4e8f-8109-1575dfc9b17d-batch-142",
+      "claim_text": "Linked question 773e71c5-d2c8-4e8f-8109-1575dfc9b17d was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-12b7dbc4-e79a-4624-8534-2b0feeadbf6d-batch-142",
+      "claim_text": "Linked question 12b7dbc4-e79a-4624-8534-2b0feeadbf6d was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1b1f0cff-02cb-4173-9ef2-f2dece83f2cc-batch-142",
+      "claim_text": "Linked question 1b1f0cff-02cb-4173-9ef2-f2dece83f2cc was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e5d3a413-d0c0-4d4c-9fd3-119918592779-batch-142",
+      "claim_text": "Linked question e5d3a413-d0c0-4d4c-9fd3-119918592779 was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-056e3237-b29b-42f2-844e-3093eac999ec-batch-142",
+      "claim_text": "Linked question 056e3237-b29b-42f2-844e-3093eac999ec was rewritten inside the checked local source scope for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      },
+      "blockers": []
+    }
+  ],
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+  },
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_carried_forward",
+      "reason": "No completed CSI MasterFormat source-recovery report is present, so the exact classification claim scope remains uncaptured locally."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_carried_forward",
+      "reason": "No completed seismic utilities recovery report is present, so utilities seismic-bracing claims still lack a safe local refined conversion boundary."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_carried_forward",
+      "reason": "The raw NSCP 2015 PDF exists locally, but no completed NSCP-specific refined conversion/recovery report is present for this pass."
+    }
+  ]
+}

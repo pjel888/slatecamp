@@ -1,0 +1,64 @@
+{
+  "question_id": "55ee080a-30e3-4e90-ade4-bcccc2c4e3e2",
+  "baseline_hash": "sha256:5ebb2b3f6514038d2fcec597276f8b7f30e4c2ec3fca9d37c2310653aade2c87",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Stress measures the internal force per unit area within.",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+    "parent_article_slug": "lea-strc-003-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-003-01-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Stress measures the internal force per unit area within",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md",
+        "sha256": "sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88"
+      },
+      {
+        "source_id": "batch-142-lea-strc-003-01-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Stress measures the internal force per unit area within",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md",
+        "sha256": "sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is ultimate strength on a stress-strain curve?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The first point where strain is visible."
+      },
+      {
+        "id": "b",
+        "text": "The maximum stress the material can develop during the test."
+      },
+      {
+        "id": "c",
+        "text": "The same as every allowable stress."
+      },
+      {
+        "id": "d",
+        "text": "The point where stress is zero after unloading."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The first point where strain is visible. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "The maximum stress the material can develop during the test. This stays inside the Batch 142 local source boundary for Stress measures the internal force per unit area within.",
+      "c": "The same as every allowable stress. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "d": "The point where stress is zero after unloading. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "The maximum stress the material can develop during the test. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3.",
+      "takeaway": "For Stress measures the internal force per unit area within, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3"
+    },
+    "explanation": "The maximum stress the material can develop during the test. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3"
+  },
+  "batch_question_template_index": 6
+}

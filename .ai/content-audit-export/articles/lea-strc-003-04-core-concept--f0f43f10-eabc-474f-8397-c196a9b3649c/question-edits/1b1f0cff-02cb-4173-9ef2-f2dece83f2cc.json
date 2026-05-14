@@ -1,0 +1,64 @@
+{
+  "question_id": "1b1f0cff-02cb-4173-9ef2-f2dece83f2cc",
+  "baseline_hash": "sha256:c15286c464f909fcb033e8362df8c48d48256afb1bd600b075753e906faf73ef",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+    "parent_article_slug": "lea-strc-003-04-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-003-04-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Both ASD and LRFD aim to ensure safety, but they achieve it",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+        "sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734"
+      },
+      {
+        "source_id": "batch-142-lea-strc-003-04-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Both ASD and LRFD aim to ensure safety, but they achieve it",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+        "sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Which statement is source-safe about AISC ASD/LRFD in this packet?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The local source references AISC ASD/LRFD manuals, but this batch does not reproduce a full manual table."
+      },
+      {
+        "id": "b",
+        "text": "The batch contains every AISC and NSCP design table."
+      },
+      {
+        "id": "c",
+        "text": "AISC references prove all Philippine code values."
+      },
+      {
+        "id": "d",
+        "text": "ASD and LRFD are not structural design methods."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "The local source references AISC ASD/LRFD manuals, but this batch does not reproduce a full manual table. This stays inside the Batch 142 local source boundary for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "b": "The batch contains every AISC and NSCP design table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "c": "AISC references prove all Philippine code values. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "d": "ASD and LRFD are not structural design methods. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "The local source references AISC ASD/LRFD manuals, but this batch does not reproduce a full manual table. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef.",
+      "takeaway": "For Both ASD and LRFD aim to ensure safety, but they achieve it, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+    },
+    "explanation": "The local source references AISC ASD/LRFD manuals, but this batch does not reproduce a full manual table. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef"
+  },
+  "batch_question_template_index": 8
+}

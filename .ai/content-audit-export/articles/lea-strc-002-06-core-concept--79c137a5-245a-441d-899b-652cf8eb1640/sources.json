@@ -1,32 +1,124 @@
 {
   "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:fb854c67212b40b3a2b1e2d472cc10e6ea64e97d6cfe20c957cf30c885a8a784",
+  "sources_hash": "sha256:f5b9670a5a283030d8e8055648585a4559a963fb3ed1657777f9efe4f088f853",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "a7262adc-b781-472c-875c-94979e58218a",
+      "source_id": "batch-142-lea-strc-002-06-core-concept-raw-source-capture",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
-      "label": "NSCP Section 202 (Structural System Definitions); AISC Design Guide (Long-Span Systems); ISO 6707-1 (Structural Vocabulary)",
+      "label": "Batch 142 raw source capture - Space frame (or 3D truss)",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Space frame (or 3D truss); includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md",
+      "local_sha256": "sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md#sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A space frame is a long-spanning three-dimensional plate structure based on triangular rigidity. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): Space-frame members are linear elements subject primarily to axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): The simplest spatial unit is a tetrahedron with four joints and six members. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): A space-frame supporting bay should be square or nearly square so the system acts as a two-way structure. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): Folded plates, domes, suspension/cable-stayed structures, and pneumatic structures have distinct load-path cues. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Structures Illustrated (2nd Edition): Long-span structures are used for large column-free spaces such as arenas, theaters, hangars, terminals, and warehouses. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): For this source, spans over 60 ft (18 m) are treated as long span. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): Deflection, ponding, redundancy, thrust, and lateral stability are major long-span design issues. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): Two-way systems such as space frames and domes require nearly square or circular support patterns. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): Transport and field assembly constraints matter for long-span members. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Hibbeler Statics 13th Edition: A space truss is a three-dimensional truss built from tetrahedral elements. Locator: Hibbeler Statics refined markdown line 26514",
+        "Hibbeler Statics 13th Edition: Space truss joints are assumed as ball-and-socket connections in the checked statics source. Locator: Hibbeler Statics refined markdown line 26514"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682"
+        },
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980"
+        },
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown line 26514"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 142 source capture/refined conversion boundary."
     },
     {
-      "source_id": "db976477-b569-4c0e-b4e7-2eaa2dc7dcbf",
+      "source_id": "batch-142-lea-strc-002-06-core-concept-refined-source-map",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
-      "label": "Detailed design references: ASCE Manual of Practice (Cable-Supported Bridges), Fentiman Design of Cable-Stayed Bridges, Tedesko Shell Structures",
+      "label": "Batch 142 refined source conversion - Space frame (or 3D truss)",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Space frame (or 3D truss).",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md",
+      "local_sha256": "sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-002-06-core-concept.refined.md#sha256:8b31ffeedc341922faccf354eb84c8bc84c918c7c9ef118463d908474abc8c5f",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-002-06-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:153b58be1b01e66bbc89ee447c6042bba92a31a83465742d99b7d908f05c5dc9",
+      "checked_markdown_lines": [
+        "Building Construction Illustrated (5th Edition): A space frame is a long-spanning three-dimensional plate structure based on triangular rigidity. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): Space-frame members are linear elements subject primarily to axial tension or compression. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): The simplest spatial unit is a tetrahedron with four joints and six members. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): A space-frame supporting bay should be square or nearly square so the system acts as a two-way structure. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Construction Illustrated (5th Edition): Folded plates, domes, suspension/cable-stayed structures, and pneumatic structures have distinct load-path cues. Locator: Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682",
+        "Building Structures Illustrated (2nd Edition): Long-span structures are used for large column-free spaces such as arenas, theaters, hangars, terminals, and warehouses. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): For this source, spans over 60 ft (18 m) are treated as long span. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): Deflection, ponding, redundancy, thrust, and lateral stability are major long-span design issues. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): Two-way systems such as space frames and domes require nearly square or circular support patterns. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Building Structures Illustrated (2nd Edition): Transport and field assembly constraints matter for long-span members. Locator: Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980",
+        "Hibbeler Statics 13th Edition: A space truss is a three-dimensional truss built from tetrahedral elements. Locator: Hibbeler Statics refined markdown line 26514",
+        "Hibbeler Statics 13th Edition: Space truss joints are assumed as ball-and-socket connections in the checked statics source. Locator: Hibbeler Statics refined markdown line 26514"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 1901-1905, 2063-2132, and 6655-6682"
+        },
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 4925-4961 and 4979-4980"
+        },
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown line 26514"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }

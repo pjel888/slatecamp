@@ -1,0 +1,64 @@
+{
+  "question_id": "849adeca-2245-43c1-a348-0761f7be1137",
+  "baseline_hash": "sha256:f680e08cbce91b6d9084945d8020a278d18c6e0df926172b118bf1c2b2cde546",
+  "action": "replace",
+  "reason": "source-audited-article-batch-142-local-first: residual local-first rewrite constrained to checked local source artifacts for Stress measures the internal force per unit area within.",
+  "approved_by": "codex-local-first-source-audited-article-batch-142-local-first",
+  "approved_at": "2026-05-14T01:20:31.862Z",
+  "source_audit_support": {
+    "parent_article_id": "79ca7e09-9492-49b1-9289-88d444451275",
+    "parent_article_slug": "lea-strc-003-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3",
+    "checked_sources": [
+      {
+        "source_id": "batch-142-lea-strc-003-01-core-concept-raw-source-capture",
+        "label": "Batch 142 raw source capture - Stress measures the internal force per unit area within",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md",
+        "sha256": "sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88"
+      },
+      {
+        "source_id": "batch-142-lea-strc-003-01-core-concept-refined-source-map",
+        "label": "Batch 142 refined source conversion - Stress measures the internal force per unit area within",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md",
+        "sha256": "sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 142 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the best exam habit for stress-strain diagrams?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Memorize only the picture color."
+      },
+      {
+        "id": "b",
+        "text": "Name the point, then state whether behavior is linear elastic, elastic but nonproportional, plastic, maximum stress, or rupture."
+      },
+      {
+        "id": "c",
+        "text": "Skip unloading behavior."
+      },
+      {
+        "id": "d",
+        "text": "Use LRFD factors to identify every point."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Memorize only the picture color. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "b": "Name the point, then state whether behavior is linear elastic, elastic but nonproportional, plastic, maximum stress, or rupture. This stays inside the Batch 142 local source boundary for Stress measures the internal force per unit area within.",
+      "c": "Skip unloading behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "d": "Use LRFD factors to identify every point. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 142 local source boundary.",
+      "correct": "Name the point, then state whether behavior is linear elastic, elastic but nonproportional, plastic, maximum stress, or rupture. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3.",
+      "takeaway": "For Stress measures the internal force per unit area within, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3"
+    },
+    "explanation": "Name the point, then state whether behavior is linear elastic, elastic but nonproportional, plastic, maximum stress, or rupture. Supported by the Batch 142 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-01-core-concept.source-capture.md#sha256:ce1a00d91814fb92f3b0d7ecf036cd547cf6d0076f8e81e067433923f5211f88; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-01-core-concept.refined.md#sha256:31a5f66153ee5869b12d88f557435e7cf44614421221428d65456f0213c86ef3"
+  },
+  "batch_question_template_index": 10
+}

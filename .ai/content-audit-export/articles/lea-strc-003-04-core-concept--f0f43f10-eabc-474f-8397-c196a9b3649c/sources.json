@@ -1,20 +1,104 @@
 {
   "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:7fb321aad54a1c406870f8b446c52017b1b0827889f184e99622c2e1b03e9a2c",
-  "source_count": 1,
+  "sources_hash": "sha256:a1f8ca5719259855ba988255994ea022a77a3c82f5bf9fda258531fd7e86a759",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "20e9b0b2-2cb9-46ab-873f-c1202d32760f",
+      "source_id": "batch-142-lea-strc-003-04-core-concept-raw-source-capture",
       "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
-      "label": "National Structural Code of the Philippines (NSCP) 2015. Philippine Architecture Licensure Examination Syllabus, Area B — Structural Design",
+      "label": "Batch 142 raw source capture - Both ASD and LRFD aim to ensure safety, but they achieve it",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Both ASD and LRFD aim to ensure safety, but they achieve it; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+      "local_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md#sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Fundamentals of Structural Engineering: Conventional structural design philosophy satisfies safety and serviceability. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Safety is checked by requiring resistance to exceed demand for extreme loading. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Serviceability checks keep structures operational under service loads. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Local examples use service loads for footing dimensioning and factored loads for shear and moment diagrams. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: The source references AISC ASD/LRFD and AASHTO LRFD manuals but does not provide a full local NSCP factor table. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        },
+        {
+          "label": "Fundamentals of Structural Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+          "rawHash": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+          "refinedHash": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+          "checked_locator": "Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 142 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-142-lea-strc-003-04-core-concept-refined-source-map",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "label": "Batch 142 refined source conversion - Both ASD and LRFD aim to ensure safety, but they achieve it",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Both ASD and LRFD aim to ensure safety, but they achieve it.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:20:31.862Z",
+      "updated_at": "2026-05-14T01:20:31.862Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md",
+      "local_sha256": "sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-142/lea-strc-003-04-core-concept.refined.md#sha256:457167b742140ecef1ab06f2e64badddbf873c668ba1dcf170ebfe12e0d082ef",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-142/lea-strc-003-04-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:6e6b8ea7a4bc2a353ebf77f5836af3f04e808ad0f1312e56b76137599173e734",
+      "checked_markdown_lines": [
+        "Applied Statics and Strength of Materials: Hooke law applies while stress is proportional to strain and the proportional limit is not exceeded. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The elastic limit is the greatest stress without permanent elongation after unloading; many practical treatments use it close to the proportional limit. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: The yield point begins plastic behavior; ultimate strength is the maximum stress; rupture is the breaking point. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Ductility, brittleness, malleability, toughness, resilience, and Poisson ratio are defined from material behavior and tests. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Applied Statics and Strength of Materials: Modulus of elasticity is the stress-to-strain ratio in the linear range; shear modulus relates shear stress to shear strain. Locator: Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269",
+        "Fundamentals of Structural Engineering: Conventional structural design philosophy satisfies safety and serviceability. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Safety is checked by requiring resistance to exceed demand for extreme loading. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Serviceability checks keep structures operational under service loads. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: Local examples use service loads for footing dimensioning and factored loads for shear and moment diagrams. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589",
+        "Fundamentals of Structural Engineering: The source references AISC ASD/LRFD and AASHTO LRFD manuals but does not provide a full local NSCP factor table. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+      ],
+      "local_source_families": [
+        {
+          "label": "Applied Statics and Strength of Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Statics and Strength of Materials.pdf",
+          "rawHash": "sha256:617249a618e4a2cf40fadfae9dcf0c7cf1bc61cfd79de66bc87f8aefa35e0548",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Statics and Strength of Materials.md",
+          "refinedHash": "sha256:e6d8f3958f84a2f863edf33a2323f44663c667768815bab153af6eefea64bcbe",
+          "checked_locator": "Applied Statics and Strength refined markdown lines 10370-10436, 11155-11227, 11261-11296, and 12069-12269"
+        },
+        {
+          "label": "Fundamentals of Structural Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+          "rawHash": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+          "refinedHash": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+          "checked_locator": "Fundamentals of Structural Engineering refined markdown lines 1217-1221, 2074, 30189-30258, 61490-61549, and 62395-62589"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }
