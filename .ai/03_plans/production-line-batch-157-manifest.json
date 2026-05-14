@@ -1,0 +1,58 @@
+{
+  "batch": 157,
+  "batch_id": "source-audited-batch-157-local-first-freeze",
+  "requested_content_baseline": "0c25e7f5b",
+  "current_head_at_generation": "0c25e7f5b",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_freeze_closure_no_content_changes",
+  "generated_at": "2026-05-14T06:08:30Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-157-reservation-manifest.json",
+  "reserved_clusters_only": [],
+  "selected_clusters": [],
+  "source_records": [],
+  "source_hash_checks": [],
+  "content_generation": {
+    "article_edits": 0,
+    "question_edits": 0,
+    "ui_block_edits": 0,
+    "source_folder_edits": 0,
+    "reason": "No eligible source-auditable residual cluster remained after accepted Batch 156."
+  },
+  "validation_claims": {
+    "blockers": 0,
+    "report": "pass",
+    "ledger": "pass",
+    "scoped_checks": "pass",
+    "compose_diff_validate": "not_applicable_no_selected_articles",
+    "ui_block_validation": "not_applicable_no_selected_articles",
+    "json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass_no_selected_articles",
+    "unsupported_exact_claim_scan": "pass_no_selected_articles",
+    "source_hash_checks": "pass_no_new_sources",
+    "question_edit_count": "pass_zero_selected_zero_edits",
+    "linked_question_question_edit_parity": "pass_zero_selected_zero_edits",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "targeted_content_audit_tests": "pass_bun_test_source_verification_invariants_7_pass_0_fail",
+    "scoped_git_diff_check": "pass_batch_157_paths"
+  },
+  "excluded_from_batch_157": {
+    "ready_if_captured_from_web_not_reserved": [
+      "lea-theo-008-02",
+      "lea-theo-008-03",
+      "lea-matl-009-02"
+    ],
+    "nscp_purchase_or_extraction_required": [
+      "lea-strc-004-02",
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-012-01",
+      "lea-util-004-05",
+      "lea-util-004-08"
+    ],
+    "timber_specific_sources_required": [
+      "lea-strc-009-01",
+      "lea-strc-009-02"
+    ]
+  },
+  "stop_condition": "Stop with closure artifacts only. Do not create article/question edits until a residual cluster has local provenance-bearing source support."
+}

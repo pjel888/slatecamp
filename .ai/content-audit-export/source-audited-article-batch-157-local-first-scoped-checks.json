@@ -1,0 +1,67 @@
+{
+  "batch": 157,
+  "batch_id": "source-audited-batch-157-local-first-freeze",
+  "status": "pass_freeze_closure_no_content_changes",
+  "generated_at": "2026-05-14T06:08:30Z",
+  "blockers": 0,
+  "selected_clusters": [],
+  "checks": {
+    "reservation_scope": {
+      "status": "pass",
+      "evidence": "No cluster reserved because no post-Batch-156 residual has local provenance-bearing source support."
+    },
+    "source_capture": {
+      "status": "pass_no_new_sources",
+      "evidence": "No Batch 157 source-map files exist or were created."
+    },
+    "article_edits": {
+      "status": "pass_none",
+      "count": 0
+    },
+    "question_edits": {
+      "status": "pass_none",
+      "count": 0
+    },
+    "ui_block_edits": {
+      "status": "pass_none",
+      "count": 0
+    },
+    "compose_diff_validate": {
+      "status": "not_applicable",
+      "reason": "No selected article paths."
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass_no_selected_articles",
+      "reason": "No article, candidate, linked-question, or question-edit artifacts were edited."
+    },
+    "unsupported_exact_claim_scan": {
+      "status": "pass_no_selected_articles",
+      "reason": "No article or question content was generated."
+    },
+    "linked_question_question_edit_parity": {
+      "status": "pass_zero_selected_zero_edits",
+      "linked_question_count": 0,
+      "question_edit_count": 0
+    },
+    "answer_key_review": {
+      "status": "pass_no_answer_key_changes",
+      "answer_key_changes": 0
+    },
+    "json_parse": {
+      "status": "pass"
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "7 pass, 0 fail"
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "scope": ".ai/03_plans/batch-157-git-handoff-stage-paths.txt"
+    }
+  },
+  "protected_dirty_file_policy": {
+    "status": "pass_not_touched",
+    "note": "Batch 157 closure artifacts do not edit protected dirty files, aggregate validation files, content-roundtrip sidecars, blocked-source prompt files, or unrelated compose-error artifacts."
+  }
+}

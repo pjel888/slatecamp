@@ -1,0 +1,33 @@
+{
+  "batch": 157,
+  "batch_id": "source-audited-batch-157-local-first-freeze",
+  "requested_content_baseline": "0c25e7f5b",
+  "current_head_at_generation": "0c25e7f5b",
+  "status": "pass_freeze_closure_no_content_changes",
+  "generated_at": "2026-05-14T06:08:30Z",
+  "entries": [],
+  "blockers": 0,
+  "source_hash_checks": [],
+  "validation_claims": {
+    "report": "pass",
+    "ledger": "pass",
+    "scoped_checks": "pass",
+    "json_parse": "pass",
+    "source_hash_checks": "pass_no_new_sources",
+    "question_edit_count": "pass_zero_selected_zero_edits",
+    "linked_question_question_edit_parity": "pass_zero_selected_zero_edits",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "targeted_content_audit_tests": "pass_bun_test_source_verification_invariants_7_pass_0_fail",
+    "scoped_git_diff_check": "pass_batch_157_paths"
+  },
+  "residual_decision": {
+    "selected_clusters": [],
+    "reason": "No residual cluster has local provenance-bearing source support after accepted Batch 156.",
+    "preserved_for_future_remediation": [
+      "THIN_NEEDS_EXPANSION findings",
+      "scenario findings",
+      "question-alignment findings",
+      "source-primary findings"
+    ]
+  }
+}

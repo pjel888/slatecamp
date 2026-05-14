@@ -1,0 +1,157 @@
+{
+  "batch": 157,
+  "batch_id": "reservation-batch-157-local-first-freeze",
+  "manifest_type": "production_line_reservation_closure",
+  "status": "freeze_no_eligible_source_auditable_clusters",
+  "generated_at": "2026-05-14T06:08:30Z",
+  "generated_at_local": "2026-05-14T14:08:30+08:00",
+  "baseline": "0c25e7f5b",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "post_batch_156_eligibility_gate",
+  "task": "Select and reserve the next sourceable residual article plus linked-question cluster after accepted Batch 156, or freeze if no eligible source-auditable cluster remains.",
+  "constraints": {
+    "local_only": true,
+    "no_supabase_push": true,
+    "no_deploy": true,
+    "no_db_mutation": true,
+    "no_main_merge": true,
+    "no_force_push": true,
+    "no_git_stage_commit_push": true,
+    "preserve_unrelated_dirty_files": true,
+    "no_live_internet_capture_performed": true,
+    "no_article_or_question_edits": true
+  },
+  "selection_rule": "Reserve only residual clusters with locally captured, provenance-bearing source support sufficient to edit the article and all linked questions together. After accepted Batch 156, no residual cluster satisfies that rule.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "latest_accepted_batch": 156,
+    "latest_accepted_commit": "0c25e7f5b",
+    "inspected_artifacts": [
+      ".ai/03_plans/production-line-batch-156-reservation-manifest.json",
+      ".ai/03_plans/production-line-batch-156-manifest.json",
+      ".ai/content-audit-export/source-audited-article-batch-156-local-first-report.md",
+      ".ai/03_plans/blocked-source-recovery/lane-a-theory-legal-commanded-by-swarm.md",
+      ".ai/03_plans/blocked-source-recovery/lane-b2-materials-utilities-opencode-fallback.md",
+      ".ai/03_plans/blocked-source-recovery/lane-c-structural-kimi-opencode.md",
+      ".ai/03_plans/blocked-source-recovery/nscp-2015-acquisition-and-extraction-report.md"
+    ],
+    "reserved_ids_found_in_accepted_batch_157_scope": [],
+    "notes": [
+      "Batch 156 consumed lea-strc-009-03, the only residual marked READY_WITH_LOCAL_SOURCES.",
+      "Batch 156 explicitly excluded theory clusters until authoritative web sources are locally captured with provenance.",
+      "No source-map-batch-157 files exist under the raw or conversion layers."
+    ]
+  },
+  "reserved_clusters": [],
+  "selected_clusters": [],
+  "excluded_clusters": {
+    "requires_authoritative_web_capture_not_locally_captured": [
+      {
+        "cluster_id": "lea-theo-008-02",
+        "slug": "lea-theo-008-02-core-concept",
+        "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+        "title": "Pursuit of spatial justice in architecture",
+        "verdict": "not_eligible_for_batch_157",
+        "source_recovery_status": "READY_IF_CAPTURED_FROM_WEB",
+        "reason": "The recovery report identifies web targets for Soja, PRC/BOA syllabi, and related context, but no local Batch 157 source capture/refined map exists."
+      },
+      {
+        "cluster_id": "lea-theo-008-03",
+        "slug": "lea-theo-008-03-core-concept",
+        "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+        "title": "Digital architecture fundamentally",
+        "verdict": "not_eligible_for_batch_157",
+        "source_recovery_status": "READY_IF_CAPTURED_FROM_WEB",
+        "reason": "The recovery report identifies PRC/RA/UAP and digital-practice web targets, but no local Batch 157 source capture/refined map exists."
+      },
+      {
+        "cluster_id": "lea-matl-009-02",
+        "slug": "lea-matl-009-02-core-concept",
+        "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+        "title": "CSI MasterFormat",
+        "verdict": "not_eligible_for_batch_157",
+        "source_recovery_status": "READY_IF_CAPTURED_FROM_WEB",
+        "reason": "CSI/MasterFormat needs CSI/WBDG/DPWH source capture; no local capture exists."
+      }
+    ],
+    "requires_legitimate_nscp_purchase_or_extraction": [
+      {
+        "cluster_id": "lea-strc-004-02",
+        "slug": "lea-strc-004-02-core-concept",
+        "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+        "title": "NSCP seismic zones",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "NSCP 2015 local file is corrupted null-byte data and cannot support exact seismic zone claims."
+      },
+      {
+        "cluster_id": "lea-strc-007-03",
+        "slug": "lea-strc-007-03-core-concept",
+        "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+        "title": "Deflection limits",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "Exact NSCP table support is unavailable until a legitimate NSCP source is acquired and extracted."
+      },
+      {
+        "cluster_id": "lea-strc-007-05",
+        "slug": "lea-strc-007-05-core-concept",
+        "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+        "title": "Embedded conduits",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "Exact NSCP conduit limits are unavailable until a legitimate NSCP source is acquired and extracted."
+      },
+      {
+        "cluster_id": "lea-strc-012-01",
+        "slug": "lea-strc-012-01-core-concept",
+        "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+        "title": "Wind load provisions",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "Exact NSCP wind provisions are unavailable until a legitimate NSCP source is acquired and extracted."
+      },
+      {
+        "cluster_id": "lea-util-004-05",
+        "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+        "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+        "title": "Seismic bracing and earthquake resilience",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "MEPF seismic claims depend on NSCP and supplementary standards that are not locally captured for this residual."
+      },
+      {
+        "cluster_id": "lea-util-004-08",
+        "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+        "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+        "title": "Seismic bracing requirements per NSCP 2015",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "Exact NSCP nonstructural component tables and related PHIVOLCS/ASME/FEMA evidence are not locally captured for this residual."
+      }
+    ],
+    "requires_timber_specific_source_acquisition": [
+      {
+        "cluster_id": "lea-strc-009-01",
+        "slug": "lea-strc-009-01-core-concept",
+        "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+        "title": "Decay and termite resistance in timber",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "Philippine species durability and heartwood/sapwood claims need NatCor, forestry, or legitimate NSCP timber evidence."
+      },
+      {
+        "cluster_id": "lea-strc-009-02",
+        "slug": "lea-strc-009-02-core-concept",
+        "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+        "title": "Philippine timber stress groups",
+        "verdict": "not_eligible_for_batch_157",
+        "reason": "Philippine stress group values need NatCor, forestry, or legitimate NSCP timber evidence."
+      }
+    ]
+  },
+  "source_capture_status": {
+    "new_source_maps_created": [],
+    "source_hashes_checked": [],
+    "status": "PASS_NO_NEW_SOURCE_CLAIMS",
+    "notes": [
+      "No internet capture was attempted.",
+      "No source folder was edited.",
+      "No article or linked-question content was changed."
+    ]
+  },
+  "reservation_stop_condition": "Batch 157 is a freeze/closure packet: no cluster is reserved until an authoritative web capture, CSI capture, legitimate NSCP extraction, or timber-specific source acquisition is completed locally with provenance."
+}

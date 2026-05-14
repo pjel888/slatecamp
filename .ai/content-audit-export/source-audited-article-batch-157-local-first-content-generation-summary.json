@@ -1,0 +1,23 @@
+{
+  "batch": 157,
+  "batch_id": "source-audited-batch-157-local-first-freeze",
+  "status": "no_content_generated_freeze_closure",
+  "generated_at": "2026-05-14T06:08:30Z",
+  "content_generation": {
+    "article_count": 0,
+    "article_edits": 0,
+    "candidate_edits": 0,
+    "ui_block_edits": 0,
+    "linked_question_files_edited": 0,
+    "question_edit_files_created": 0,
+    "answer_key_changes": 0,
+    "source_records_created": 0,
+    "source_maps_created": 0
+  },
+  "why_no_generation": "No eligible source-auditable residual article plus linked-question cluster remains after Batch 156 under the local-first provenance rule.",
+  "next_unlock_conditions": [
+    "Capture authoritative web sources locally with provenance for lea-theo-008-02, lea-theo-008-03, or lea-matl-009-02.",
+    "Acquire and extract a legitimate NSCP source before reopening NSCP-dependent structural or utilities clusters.",
+    "Acquire timber-specific NatCor, forestry, or legitimate NSCP timber evidence before reopening lea-strc-009-01 or lea-strc-009-02."
+  ]
+}
