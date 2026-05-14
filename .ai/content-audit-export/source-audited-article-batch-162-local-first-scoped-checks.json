@@ -1,0 +1,90 @@
+{
+  "batch_id": "source-audited-batch-162-local-first",
+  "generated_at": "2026-05-14T17:43:00+08:00",
+  "repo": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "selected_articles": [
+    {
+      "cluster": "lea-strc-009-02",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "slug": "lea-strc-009-02-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "compose_dry_run_strict_overwrite",
+      "command": "bun scripts/content-audit/compose-candidates.ts --article 047334de-c79a-4d6a-aa23-58a321b71e2e --dry-run --strict --overwrite",
+      "status": "PASS",
+      "evidence": "DRY compose 047334de-c79a-4d6a-aa23-58a321b71e2e: changed; blockers=0; Composed 1 candidate(s)"
+    },
+    {
+      "name": "diff_dry_run_strict_summary",
+      "command": "bun scripts/content-audit/diff-candidates.ts --article 047334de-c79a-4d6a-aa23-58a321b71e2e --dry-run --strict --summary",
+      "status": "PASS",
+      "evidence": "changed=true safe_to_push=true blockers=[]"
+    },
+    {
+      "name": "official_validate_temp_scoped_root",
+      "command": "bun /Users/philiplewis/slatecamp/scripts/content-audit/validate-bundles.ts --input .ai/content-audit-export --article 047334de-c79a-4d6a-aa23-58a321b71e2e --dry-run --json (from /private/tmp scoped export root)",
+      "status": "PASS",
+      "evidence": "article_count=1 valid=true blockers=0 warnings=0"
+    },
+    {
+      "name": "source_verification_invariants",
+      "command": "bun run test:source-verification",
+      "status": "PASS",
+      "evidence": "7 pass, 0 fail"
+    },
+    {
+      "name": "json_parse_selected",
+      "command": "node JSON parse scan over selected article/source/question/report JSON files",
+      "status": "PASS",
+      "evidence": "JSON_PARSE_PASS 21"
+    },
+    {
+      "name": "linked_question_parity",
+      "command": "node linked-questions to question-edits parity and answer-key preservation scan",
+      "status": "PASS",
+      "evidence": "QUESTION_PARITY_PASS linked=10 edits=10 answer_key_changes=0"
+    },
+    {
+      "name": "placeholder_internal_note_source_gap_scan",
+      "command": "rg -n \"\\[SLATECAMP_UI_BLOCK:|TODO|FIXME|<!--|source gap|SOURCE_GAP|VERIFY\" selected normalized/candidate/question-edits",
+      "status": "PASS",
+      "evidence": "No matches"
+    },
+    {
+      "name": "source_evidence_invariant",
+      "command": "node source-audit-evidence anchor/status scan",
+      "status": "PASS",
+      "evidence": "SOURCE_EVIDENCE_PASS anchors=5 claims=15"
+    },
+    {
+      "name": "scoped_git_diff_check",
+      "command": "git diff --check -- <Batch 162 intended paths>",
+      "status": "PASS",
+      "evidence": "No whitespace errors reported."
+    },
+    {
+      "name": "cached_git_diff_check",
+      "command": "git diff --cached --check",
+      "status": "BLOCKED_NOT_RUN",
+      "evidence": "Exact git staging failed: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+    }
+  ],
+  "overall": {
+    "qa_status": "PASS_GIT_INDEX_BLOCKED",
+    "content_blockers": 0,
+    "source_blockers": 0,
+    "question_parity": "PASS",
+    "scoped_checks": "PASS_GIT_INDEX_BLOCKED",
+    "git_index_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "supabase_push": "NOT_RUN",
+    "deploy": "NOT_RUN",
+    "production_db_mutation": "NOT_RUN"
+  }
+}

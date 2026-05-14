@@ -1,0 +1,65 @@
+{
+  "batch_id": "source-audited-batch-162-local-first",
+  "generated_at": "2026-05-14T17:40:10+08:00",
+  "repo": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline": "ee1283991 chore(content): accept source-audited batch 161",
+  "source_policy": "local_first_only_no_supabase_no_deploy_no_db_no_main_merge_no_force_push_until_all_gates_pass",
+  "valid_source": {
+    "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "source_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "page_sha256": {
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md": "sha256:02d81dc3ee45184252e89c8d9f7c380d4151ac81198305b1c9e817b297f268df",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md": "sha256:e9ab642f0d9780a931fdf385d57ae5d74a40cf7594b951ed875bf11b97f1ab81"
+    },
+    "source_metadata": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+    "corrupted_source_rejected": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf"
+  },
+  "selected_clusters": [
+    {
+      "cluster": "lea-strc-009-02",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "slug": "lea-strc-009-02-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic": "NSCP Table 615.2-1 timber stress groups and Section 622 machine-graded lumber",
+      "anchors": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "blockers": [],
+      "normalized_sha256": "sha256:f07241fb50b96500213b4da899c505ee0528ab18cb30169f9b7b0ed0c9b5b599",
+      "candidate_sha256": "sha256:f07241fb50b96500213b4da899c505ee0528ab18cb30169f9b7b0ed0c9b5b599",
+      "sources_sha256": "sha256:db7654604c6fbfbfb6657fe2f05471923011645044ef25bb9ab53cc67a7162af",
+      "source_audit_status": "PASS",
+      "scenario_status": "included_source_safe"
+    }
+  ],
+  "unselected_clusters": [
+    {
+      "cluster": "lea-util-004-05",
+      "status": "UNSUPPORTED_FOR_BATCH_162",
+      "reason": "Linked questions require mixed authority beyond the checked NSCP timber anchors, including disaster, PD 1096, MEPF, utility, generator, and operational resilience claims.",
+      "next_source_need": "Exact local anchors for every linked utility/MEPF claim before article and question edits."
+    },
+    {
+      "cluster": "lea-util-004-08",
+      "status": "UNSUPPORTED_FOR_BATCH_162",
+      "reason": "Linked questions require exact local support for gas valves, generators, flexible couplings, mechanical/electrical anchorage, and post-earthquake inspection claims beyond the selected NSCP timber anchors.",
+      "next_source_need": "Exact local NSCP nonstructural/mechanical-electrical anchorage anchors plus authoritative utility/manufacturer/operational standards."
+    }
+  ],
+  "totals": {
+    "selected_clusters": 1,
+    "linked_questions": 10,
+    "question_edits": 10,
+    "answer_key_changes": 0,
+    "selected_blockers": 0
+  }
+}

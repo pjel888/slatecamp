@@ -1,104 +1,57 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Strc 009 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+Timber stress-group questions are table-lookup questions. First identify whether the item is asking about visually stress-graded Philippine woods under NSCP Table 615.2-1 or machine-graded lumber under NSCP Section 622.
 
 ## Learning Goal
 
 By the end of this article, you will be able to:
 
-- Define Philippine timber stress groups: Group I (highest strength) through Group IV
-- Identify which stress group a given species belongs to
-- Explain how stress group affects allowable bending and compression values
-- State the basis for stress group classification (testing of small clear specimens)
+- Use NSCP 2015 Table 615.2-1 as the local source for visually stress-graded unseasoned structural timber of Philippine woods.
+- Recognize the listed strength groups and common species examples from the checked OCR page.
+- Explain when Section 622 permits machine-graded lumber instead of species-table lookup.
+- Apply the Section 622 moisture and marking rules without importing unsupported nominal-size, fiberboard, or hardboard claims.
 
----
 ## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-009-02-core-concept", type="image", caption="Philippine Timber Stress Groups — Bending and Tension/Compression Ratings", description="Reference diagram showing Philippine timber stress groups ranked by bending stress Fb: Group I (highest strength), Group II (intermediate), Group III (lowest). Each group shown with allowable stress values for bending, tension parallel to grain, compression parallel/perpendicular to grain, shear parallel to grain, and modulus of elasticity. Common species listed for each group (e.g., Narra, Yakal, Mahogany, Guijo, Red Lauan).", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Philippine timber stress groups rank species by bending and compression capacity, with Group I (highest strength) and Group IV (lowest strength) as the extremes. Within each group, species show similar allowable stresses under the Allowable Stress Design method. Timber products fall into three main categories: solid sawn lumber, fiberboard (density >160 but &lt;497 kg/m³), and hardboard (density ≥497 kg/m³). Grading is not cosmetic—it is a mechanical classification tied to defect tolerance, knot size, slope-of-grain limits, and moisture content. A timber element graded as "Select Structural" (best grade) has stricter knot and defect limits than "No. 2 Common" (standard grade), and allowable stresses differ accordingly. Lumber dimensions follow nominal (timber size as marketed) and actual (true milled size) conventions: a nominal 2×4 is actually 1.5" × 3.5" (38 × 89 mm). The distinction is critical in design calculations. Fiberboard and hardboard are engineered products with uniform density and are not interchangeable with solid lumber—they are specified by density range and intended use (sheathing, subflooring, acoustic backing). Unit weight for Philippine hardwood timber ranges from 5–12 kN/m³; fiberboard (1.6–5.0 kN/m³) and hardboard have specified densities for non-structural uses.
 
-## Key Provisions
+NSCP 2015 Table 615.2-1 gives reference values for visually stress-graded unseasoned structural timber of Philippine woods at the 80 percent stress grade. The checked table is organized by strength group and lists columns for bending and tension parallel to grain, modulus of elasticity in bending, compression parallel to grain, compression perpendicular to grain, and shear parallel to grain.
 
-### Philippine Timber Stress Groups
+For this source-audited batch, use the group names and listed species as the safe exam boundary. Do not use this article to infer product-density rules for fiberboard or hardboard, nominal-to-actual lumber sizes, or unverified grade-defect schedules. Those claims require separate local authority and were excluded from Batch 162.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Stress Group\", \"Bending Capacity\", \"Example Species\"]}", rows="{[  [\"I (Highest)\", \"Very High\", \"Yakal, Molave, Malabayabas, Sasalit\"], [\"II\", \"High\", \"Apitong, Narra, Tindalo, Guijo, Ipil\"] [\"III\", \"Moderate\", \"Lauan, Tanguile, Red Lauan\"], [\"IV (Lowest)\", \"Lower\", \"White Lauan, Almaciga\"] ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## NSCP Table 615.2-1 Groups
 
-### Lumber Grade Definitions
-- _Select Structural_: Highest quality. Minimal knots, tight grain, tight wane. Used for exposed, high-stress applications.
-- _No. 1 Common_: Good quality. Larger knots permitted. Suitable for standard structural use.
-- _No. 2 Common_: Standard grade. Defects more visible. Allowable stresses reduced. General-purpose framing and non-exposed use.
-- _Construction Grade_: Lowest quality. High knot frequency, larger checks permitted. Limited to temporary or lightly loaded applications.
+| Group in checked source | Safe species examples from OCR page 889 |
+| --- | --- |
+| I. High Strength Group | Agoho, Liusin, Malabayabas, Manggachapui, Molave, Narig, Sasalit, Yakal |
+| II. Moderately High Strength Group | Antipolo, Binggas, Bokbok, Dao, Gatasan, Guijo, Kamagong, Kamatog, Katmon, Kato, Lomarau, Big-leafed Mahogany, Makaasim, Malakauayan, Narra, Pahutan |
+| III. Medium Strength Group | Apitong, Bagtikan, Dangkalan, Gisau, Lanutan-bagyo, Lauan, Malaanonang, Malasaging, Malugai, Miau, Nato, Palosapis, Pine, Salakin, Vidal Janutan |
+| IV. Moderately Low Strength Group | Almaciga, Bayok, Lingo-lingo, Mangasinoro, Raintree, Yemane |
 
-### Dimension Definitions
-- _Nominal_: Timber size as marketed (e.g., 2×4, 4×12). Used for material orders.
-- _Actual_: True milled size after surfacing (e.g., 2×4 nominal = 1.5" × 3.5" actual). Used for all design calculations.
-- _Adjustment_: Design tables account for moisture content (green vs. dry). Green timber (≥19% moisture) has lower allowable stresses than kiln-dried (≤15%).
+## Machine-Graded Lumber Boundary
 
-### Wood Product Density Classifications
-  ["Solid Lumber", "Varies by species", "Beams, joists, columns, primary structure"]
-  ]}
-/>
+Section 622.1 says machine-graded lumber can be used for general and structural applications when a particular wood species is not known and working stresses cannot be found in Table 615.2-1.
 
-### Allowable Stress Selection Logic
-- _Step 1_: Identify species and stress group (I, II, III, IV).
-- _Step 2_: Identify grade (Select Structural, No. 1, No. 2, Construction).
-- _Step 3_: Identify moisture condition (green or dry). Apply adjustment factor if required.
-- _Step 4_: Look up allowable bending (Fb) and horizontal shear (Fv) stresses from Philippine timber design manual or NatCor supplement.
+Section 622.2 ties machine-graded lumber design properties to Forest Products Research and Development Institute tables. Those properties apply to dry lumber with moisture content less than 16 percent. For green lumber with moisture content greater than 28 percent, design strength is reduced by 40 percent and modulus of elasticity by 20 percent. For moisture content between 16 percent and 28 percent, the design properties may be obtained by direct interpolation.
 
-## Philippine Practice Context
-Philippine lumber grading is governed by the National Timber Code and referenced by the Philippine Building Code. Yakal (Group I) commands premium allowable stresses due to high density and strength; Lauan and Red Lauan (Group III) are more economical and widely available. Fiberboard and hardboard are imported engineered products or locally manufactured; their use in structural design is limited to non-primary-load paths (infill, backing, insulation). Field verification of grade markings is common practice in Philippine construction—unmarked or undocumented timber is often reclassified by visual inspection or reduced to the lowest safe grade by the engineer.
+Section 622.6 adds a field-control check: before use, each machine-graded piece should be inspected for a mark showing the mill, the organization certifying the grading procedure, timber size, stress grade, and moisture content.
 
-## How It's Tested
+## How It Is Tested
 
-### Pattern 1: Stress Group Identification
-"A timber lintel is designed from Narra. Which stress group applies?"
-- Answer: Group II (Narra is classified as Group II).
-- Takeaway: Species determines group; grade refinement comes next.
+### Pattern 1: Species Group Identification
 
-### Pattern 2: Dimension Conversion
-"A beam is specified as nominal 6×12 lumber, actual dimensions 5.5" × 11.5". Which dimension set is used in the section modulus calculation?"
-- Answer: Actual dimensions (5.5" × 11.5") are used in all structural calculations.
-- Takeaway: Nominal is for purchasing; actual is for design.
+If the item names a species from Table 615.2-1, choose the group from the table. Yakal appears in the High Strength Group. Narra appears in the Moderately High Strength Group. Apitong and Lauan appear in the Medium Strength Group. Almaciga appears in the Moderately Low Strength Group.
 
-### Pattern 3: Product Suitability
-"Can fiberboard (density 250 kg/m³) be used as a primary load-bearing beam in a multi-story building?"
-- Answer: No. Fiberboard is an infill/backing product, not a primary structural element. Solid lumber or engineered lumber (LVL, glulam) must be used.
-- Takeaway: Product category, not just density, determines application scope.
+### Pattern 2: Substitution Check
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.
-[/SLATECAMP_UI_BLOCK]
+If a design changes from one listed species to another, do not assume equal capacity from similar dimensions or common trade use. Recheck the table group and the applicable reference values. A Narra member and a Lauan member are not source-equivalent under the checked table boundary.
 
-## Related Articles
+### Pattern 3: Unknown Species or Machine-Graded Lumber
 
-See also: **Timber Durability** (lea-strc-009-01) for complementary wood properties, **Timber ASD** (lea-strc-009-03) for how stress group values enter design, and **Stress-Strain** (lea-strc-003-01) for the material behavior foundation.
+If the species is unknown and Table 615.2-1 cannot supply working stresses, Section 622 is the source-supported path. Check machine-graded lumber design properties, moisture condition, and required markings.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[ \"Using nominal dimensions in design calculations. Nominal 2×4 is 1.5×3.5; actual dimensions are required.\", \"Confusing Narra (Group II) with Yakal or Molave (Group I) and applying wrong allowable stresses.\", \"Treating fiberboard and hardboard as interchangeable with solid lumber. Density alone does not qualify them for primary structural duty.\", \"Ignoring moisture adjustment factors. Green lumber (≥19% MC) may have 10–15% lower allowable stresses than kiln-dried.\", \"Applying allowable stresses from a different species group without re-verifying the table.\" ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Treating all Philippine hardwood names as interchangeable.
+- Memorizing unsupported species examples not present in the checked OCR anchors.
+- Importing fiberboard, hardboard, or nominal-dimension rules into a table-lookup item.
+- Forgetting that Section 622 dry-lumber properties apply below 16 percent moisture content, while green lumber above 28 percent requires reductions.
+- Accepting unmarked machine-graded lumber without checking mill, certifier, size, stress grade, and moisture-content markings.

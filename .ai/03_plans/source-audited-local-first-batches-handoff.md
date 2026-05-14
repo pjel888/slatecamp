@@ -1,3 +1,15 @@
+## Batch 162 Local-First Handoff - 2026-05-14T17:43:00+08:00
+
+Batch 162 consumes the Batch 161 deferred sourceable timber residual `lea-strc-009-02`. It applies a local NSCP-only rewrite for NSCP 2015 Table 615.2-1 timber stress groups and Section 622 machine-graded lumber, with 10/10 linked-question rewrites and zero answer-key changes.
+
+Validation passed locally: compose dry-run strict 1/1, diff dry-run strict 1/1 safe=true, scoped official validate 1/1 blockers=0 warnings=0, source-verification invariants 7/7, selected marker scan clean, source evidence invariant 5 anchors/15 claims, and linked-question parity 10/10. Shared sync-state and aggregate validation files remain excluded/off-limits.
+
+Ready for acceptance staging from `.ai/03_plans/batch-162-git-handoff-stage-paths.txt`. Codex attempted exact staging, but git index creation was blocked: `fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted`. Do not stage unrelated dirty files, existing content-roundtrip runs, shared aggregate files, blocked-source-recovery prompts, or utility residuals.
+
+Remaining source gaps after Batch 162: `lea-util-004-05` and `lea-util-004-08` remain unsupported until exact local authoritative anchors cover every linked MEPF/disaster/utility/generator/gas-valve/flexible-coupling/inspection claim.
+
+---
+
 ## Batch 161 Local-First Handoff - 2026-05-14T17:10:00+08:00
 
 Batch 161 reopens five residual NSCP/timber blockers now that the valid local NSCP 2015 conversion is available: lea-strc-004-02, lea-strc-007-03, lea-strc-007-05, lea-strc-012-01, lea-strc-009-01. It applies 50/50 linked-question rewrites with zero answer-key changes and local NSCP OCR anchors in each source-audit-evidence.json.

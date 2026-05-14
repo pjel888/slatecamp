@@ -1,3 +1,15 @@
+## Batch 162 Coordination Update - 2026-05-14T17:43:00+08:00
+
+- Mode: local-first NSCP timber residual recovery.
+- Selected bundle: lea-strc-009-02.
+- Scope evidence: 1 article cluster, 10 linked questions, 10 question edits, zero answer-key changes.
+- Source boundary: NSCP OCR `page-0889.md` lines 5-65 and `page-0943.md` lines 51-96 from valid local PDF sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main, no force-push, and off-limits dirty files excluded.
+- Stop condition: Batch 162 artifacts written, validation evidence recorded, final scoped git diff check complete, and exact staging attempted. Staging is blocked in this surface by `.git/index.lock` permissions; acceptance must stage only `.ai/03_plans/batch-162-git-handoff-stage-paths.txt` paths from a git-capable environment.
+- Carry-forward source gaps: lea-util-004-05 and lea-util-004-08 remain blocked pending exact local authority for all linked utility/MEPF/disaster claims.
+
+---
+
 ## Batch 161 Coordination Update - 2026-05-14T17:10:00+08:00
 
 - Mode: local-first NSCP source-audited residual recovery.
