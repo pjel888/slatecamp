@@ -1,0 +1,186 @@
+{
+  "batch_id": "source-audited-batch-161-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T16:35:00.000+08:00",
+  "target": {
+    "cluster_id": "lea-strc-009-01",
+    "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+    "slug": "lea-strc-009-01-core-concept",
+    "title": "Decay and termite resistance in timber",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+    "normalized_sha256": "sha256:c92cd220910ae47bb8e9be0ed6ec7178907446815996d83700b1cd8d659709b9",
+    "candidate_sha256": "sha256:c92cd220910ae47bb8e9be0ed6ec7178907446815996d83700b1cd8d659709b9",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/candidate.md"
+  },
+  "classification": {
+    "local_first_batch": "161",
+    "source_sensitivity": "structural_timber_decay_termite_protection",
+    "source_risk_tier": "local_primary_code_ocr_required",
+    "requires_raw_local_source": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
+    ]
+  },
+  "raw_local_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "valid_source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "valid_source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "source_metadata": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "rejected_source": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+    "rejected_source_reason": "Null-byte corrupted file; not used as evidence.",
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-605-decay-termite-protection-b161",
+        "label": "NSCP 2015 Volume I, Section 605, decay and termite protection for wood",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md"
+        ]
+      }
+    ],
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering."
+    ]
+  },
+  "scenario_enrichment": {
+    "policy_status": "satisfied",
+    "eligibility_status": "included_source_safe",
+    "blocker_status": "none",
+    "notes": "A concise source-safe scenario was included because the checked NSCP anchor supports practical application without adding unsupported facts."
+  },
+  "thin_needs_expansion": {
+    "previous_status": "thin_or_unsourced_residual",
+    "batch_161_status": "resolved_with_source_safe_expansion",
+    "evidence": "normalized.md removes unsupported residual claims and replaces them with checked NSCP OCR-supported material."
+  },
+  "question_alignment": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_changes": 0,
+    "scope": "structural_timber_decay_termite_protection"
+  },
+  "checked_sources": [
+    {
+      "source_id": "nscp-2015-section-605-decay-termite-protection-b161",
+      "label": "NSCP 2015 Volume I, Section 605, decay and termite protection for wood",
+      "url": null,
+      "source_type": "primary_code_local_ocr",
+      "publisher": "Association of Structural Engineers of the Philippines",
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+      "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+      "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+      "page_markdown_paths": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md"
+      ]
+    }
+  ],
+  "source_primary_findings": [
+    {
+      "claim_id": "lea-strc-009-01-b161-source-primary-1",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-009-01-b161-source-primary-2",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-009-01-b161-source-primary-3",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-009-01-b161-source-primary-4",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-009-01-b161-source-primary-5",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-009-01-b161-source-primary-6",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS"
+    }
+  ],
+  "resolved_findings": [
+    "THIN_NEEDS_EXPANSION",
+    "source-primary",
+    "question-alignment",
+    "scenario/depth"
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "lea-strc-009-01-b161-rejected-1",
+      "claim_text": "Unsupported Narra/Kamagong/Dao/Tangile resistance table claims.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-009-01-b161-rejected-2",
+      "claim_text": "Unsupported sapwood percentage acceptance claims.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-009-01-b161-rejected-3",
+      "claim_text": "Species-specific substitution rules outside NSCP Section 605 anchors.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    }
+  ]
+}

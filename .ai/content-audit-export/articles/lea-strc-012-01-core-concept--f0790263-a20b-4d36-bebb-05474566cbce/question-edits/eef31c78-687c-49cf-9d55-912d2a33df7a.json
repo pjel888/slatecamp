@@ -1,0 +1,96 @@
+{
+  "question_id": "eef31c78-687c-49cf-9d55-912d2a33df7a",
+  "baseline_hash": "sha256:3f9e5abb150e1b459e4de0c1b25a2d86ef9ac8931c4d8e135729becc7d9e8b87",
+  "action": "replace",
+  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-012-01 to checked local NSCP OCR anchors and remove unsupported residual claims.",
+  "approved_by": "codex-local-source-audit-batch-161",
+  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+    "parent_article_slug": "lea-strc-012-01-core-concept",
+    "batch_id": "source-audited-batch-161-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage.",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-207-wind-load-classification-b161",
+        "label": "NSCP 2015 Volume I, Section 207A/207B, wind-load parameters and classifications",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to match structural_wind_load_classification source boundary.",
+    "excluded_claims": [
+      "0.02 annual exceedance probability / 50-year MRI claim for this checked NSCP wind-map anchor.",
+      "Exposure A as an NSCP 2015 wind exposure category in this checked section.",
+      "Height-ratio flexibility claims not supported by the checked flexible-building definition."
+    ]
+  },
+  "proposed": {
+    "text": "Which condition indicates a flexible building or structure under the checked NSCP definition?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mean roof height 22 m with natural frequency 1.2 Hz"
+      },
+      {
+        "id": "b",
+        "text": "A measured fundamental natural frequency of 0.8 Hz"
+      },
+      {
+        "id": "c",
+        "text": "A 15 m low-rise warehouse with frequency 1.5 Hz"
+      },
+      {
+        "id": "d",
+        "text": "All buildings over 30 m tall regardless of frequency"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "correct": "The source-supported flexible criterion is fundamental natural frequency less than 1.0 Hz; 0.8 Hz meets it.",
+      "a": "Not selected: Mean roof height 22 m with natural frequency 1.2 Hz",
+      "b": "Not selected: A measured fundamental natural frequency of 0.8 Hz",
+      "c": "Not selected: A 15 m low-rise warehouse with frequency 1.5 Hz",
+      "d": "Not selected: All buildings over 30 m tall regardless of frequency",
+      "takeaway": "The source-supported flexible criterion is fundamental natural frequency less than 1.0 Hz; 0.8 Hz meets it.",
+      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+    },
+    "explanation": "The source-supported flexible criterion is fundamental natural frequency less than 1.0 Hz; 0.8 Hz meets it.",
+    "code_citation": "NSCP 2015 Vol. I, Section 207A/207B; OCR pages 60, 80, 81, 92, 95, and 121.",
+    "application_context": "source_audited_nscp_wind_load_classification",
+    "practice_context": [
+      "structural",
+      "wind loads",
+      "source-audited batch 161"
+    ],
+    "bloom_level": "apply",
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-012-01-007"
+  }
+}

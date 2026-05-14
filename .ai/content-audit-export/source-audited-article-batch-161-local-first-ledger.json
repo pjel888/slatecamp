@@ -1,0 +1,141 @@
+{
+  "batch_id": "source-audited-batch-161-local-first",
+  "generated_at": "2026-05-14T17:10:00+08:00",
+  "repo": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline": "HEAD 28743d0e0 (chore(content): add NSCP OCR conversion tooling) after Batch 160 closure commit 3dc61a3d5",
+  "source_policy": "local_first_only_no_supabase_no_deploy_no_db_no_git_stage_commit_push",
+  "valid_source": {
+    "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "source_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "corrupted_source_rejected": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf"
+  },
+  "selected_clusters": [
+    {
+      "cluster": "lea-strc-004-02",
+      "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+      "slug": "lea-strc-004-02-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+      "topic": "NSCP seismic Zone 2 / Zone 4 Z factors",
+      "anchors": [
+        "page-0240.md lines 16-26: Section 208.4.4.1 and Table 208-3"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "blockers": [],
+      "normalized_sha256": "sha256:ad91cd3f12c32324c6ef80bed03183a191fa3ec126178128f81b4eafcb42ce3b",
+      "candidate_sha256": "sha256:ad91cd3f12c32324c6ef80bed03183a191fa3ec126178128f81b4eafcb42ce3b",
+      "source_audit_status": "PASS",
+      "scenario_status": "included_source_safe"
+    },
+    {
+      "cluster": "lea-strc-007-03",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "slug": "lea-strc-007-03-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "topic": "NSCP Section 424 serviceability and deflection checks",
+      "anchors": [
+        "page-0482.md lines 7-89: Section 424.1, 424.2, Table 424.2.2",
+        "page-0483.md lines 36-68: Table 424.2.4.1.3"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "blockers": [],
+      "normalized_sha256": "sha256:a03d4ca1d0001c2da4cc207208b389ca73adbe5ff283759c5516895d2caf55f0",
+      "candidate_sha256": "sha256:a03d4ca1d0001c2da4cc207208b389ca73adbe5ff283759c5516895d2caf55f0",
+      "source_audit_status": "PASS",
+      "scenario_status": "included_source_safe"
+    },
+    {
+      "cluster": "lea-strc-007-05",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "slug": "lea-strc-007-05-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic": "NSCP embedments, pipe reinforcement, cover, and review",
+      "anchors": [
+        "page-0463.md lines 60-81: Section 420.7",
+        "page-0508.md lines 3-27: Section 426.8 continuation"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "blockers": [],
+      "normalized_sha256": "sha256:04de20307fa55b6763d3b13cf96d8970996fb41f90e2f8c2b3be41d5574ee6a7",
+      "candidate_sha256": "sha256:04de20307fa55b6763d3b13cf96d8970996fb41f90e2f8c2b3be41d5574ee6a7",
+      "source_audit_status": "PASS",
+      "scenario_status": "included_source_safe"
+    },
+    {
+      "cluster": "lea-strc-012-01",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "slug": "lea-strc-012-01-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic": "NSCP wind speed, exposure, enclosure, low-rise, and flexible definitions",
+      "anchors": [
+        "page-0060.md lines 21-82: building definitions",
+        "page-0080.md lines 37-81: procedures and basic wind speed",
+        "page-0081.md lines 9-17: wind parameter outline",
+        "page-0092.md lines 5-13: Occupancy II wind-map probability note",
+        "page-0095.md lines 49-79: Exposure B/C/D",
+        "page-0121.md lines 5-59: MWFRS pressure context"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "blockers": [],
+      "normalized_sha256": "sha256:ac0bc857f5edd7ea1a962a5834ff9f5a0e2ff5c56d09dfa7bfbc6411277c57ba",
+      "candidate_sha256": "sha256:ac0bc857f5edd7ea1a962a5834ff9f5a0e2ff5c56d09dfa7bfbc6411277c57ba",
+      "source_audit_status": "PASS",
+      "scenario_status": "included_source_safe"
+    },
+    {
+      "cluster": "lea-strc-009-01",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "slug": "lea-strc-009-01-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic": "NSCP Section 605 timber decay and termite protection conditions",
+      "anchors": [
+        "page-0870.md lines 13-113: Section 605.1 through 605.7",
+        "page-0871.md lines 3-16 and 35-42: wood-earth separation and treated-wood moisture content"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "blockers": [],
+      "normalized_sha256": "sha256:c92cd220910ae47bb8e9be0ed6ec7178907446815996d83700b1cd8d659709b9",
+      "candidate_sha256": "sha256:c92cd220910ae47bb8e9be0ed6ec7178907446815996d83700b1cd8d659709b9",
+      "source_audit_status": "PASS",
+      "scenario_status": "included_source_safe"
+    }
+  ],
+  "unselected_clusters": [
+    {
+      "cluster": "lea-strc-009-02",
+      "status": "SOURCEABLE_DEFERRED",
+      "reason": "Exact NSCP support exists in Table 615.2-1 and machine-graded lumber provisions, but Batch 161 was capped at five clusters to preserve the requested small-batch shape.",
+      "next_source_need": "Use NSCP OCR page-0889.md lines 5-65 and page-0943.md lines 51-96 in a later batch; rewrite unsupported hardboard/fiberboard/nominal-size questions or source them separately."
+    },
+    {
+      "cluster": "lea-util-004-05",
+      "status": "UNSUPPORTED_FOR_BATCH_161",
+      "reason": "Linked questions require mixed authority beyond the checked NSCP conversion: flood contamination, RA 10121 resilience, PD 1096, ASTM rooftop fasteners, emergency transfer timing, generator autonomy, emergency communications, and MEPF operational resilience. NSCP OCR alone does not exactly support all linked questions.",
+      "next_source_need": "Exact local anchors for RA 10121, PD 1096, applicable ASTM/ASCE/NSCP MEPF anchorage provisions, and utility/emergency-system standards before article and 15 linked-question edits."
+    },
+    {
+      "cluster": "lea-util-004-08",
+      "status": "UNSUPPORTED_FOR_BATCH_161",
+      "reason": "Linked questions mix gas shutoff valve mechanics, emergency generator inspection, positive mechanical connection/friction claims, flexible transitions across expansion joints, generator auto-start timing, equipment restraints, corrosion inspections, and Zone 4 Z factor. The current NSCP OCR has partial seismic anchors, but not exact support for every linked operational/MEPF claim.",
+      "next_source_need": "Exact NSCP nonstructural component/mechanical-electrical anchorage pages plus local standards or manufacturer/operational sources for gas valves, generators, flexible couplings, and post-earthquake inspection requirements."
+    }
+  ],
+  "totals": {
+    "selected_clusters": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "answer_key_changes": 0,
+    "selected_blockers": 0
+  }
+}

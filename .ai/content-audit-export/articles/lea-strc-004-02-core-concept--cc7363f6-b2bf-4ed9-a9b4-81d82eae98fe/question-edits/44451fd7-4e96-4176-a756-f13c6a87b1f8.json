@@ -1,0 +1,86 @@
+{
+  "question_id": "44451fd7-4e96-4176-a756-f13c6a87b1f8",
+  "baseline_hash": "sha256:6253bcffb61a106832aa77208690b6d458113e86ca10c90fc3c1544df58e6a42",
+  "action": "replace",
+  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-004-02 to checked local NSCP OCR anchors and remove unsupported residual claims.",
+  "approved_by": "codex-local-source-audit-batch-161",
+  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+    "parent_article_slug": "lea-strc-004-02-core-concept",
+    "batch_id": "source-audited-batch-161-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-208-4-4-seismic-zone-b161",
+        "label": "NSCP 2015 Volume I, Section 208.4.4.1 and Table 208-3, seismic zones and Z factors",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to match structural_seismic_zone_factor source boundary.",
+    "excluded_claims": [
+      "Zone 1 / Zone 2 naming for NSCP 2015 seismic zones.",
+      "Geological explanations for province assignment not stated in the checked NSCP anchor.",
+      "Spectral acceleration map claims as a replacement for this Z-factor article."
+    ]
+  },
+  "proposed": {
+    "text": "A design calculated with Z = 0.20 is later used at a Zone 4 site where Z = 0.40. What is the source-safe structural consequence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The design remains equivalent because the zones differ only by name."
+      },
+      {
+        "id": "b",
+        "text": "The lateral design force has been underestimated because the controlling Z factor should be twice as large."
+      },
+      {
+        "id": "c",
+        "text": "The issue is only architectural, not structural."
+      },
+      {
+        "id": "d",
+        "text": "The code allows the lower Z value if the building is low-rise."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "correct": "With the same I, C, and W, using 0.20 instead of 0.40 halves the Z portion of the base-shear calculation.",
+      "a": "Not selected: The design remains equivalent because the zones differ only by name.",
+      "b": "Not selected: The lateral design force has been underestimated because the controlling Z factor should be twice as large.",
+      "c": "Not selected: The issue is only architectural, not structural.",
+      "d": "Not selected: The code allows the lower Z value if the building is low-rise.",
+      "takeaway": "With the same I, C, and W, using 0.20 instead of 0.40 halves the Z portion of the base-shear calculation.",
+      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+    },
+    "explanation": "With the same I, C, and W, using 0.20 instead of 0.40 halves the Z portion of the base-shear calculation.",
+    "code_citation": "NSCP 2015 Vol. I, Section 208.4.4.1 and Table 208-3; OCR page 240 lines 16-26.",
+    "application_context": "source_audited_nscp_seismic_zone_factor",
+    "practice_context": [
+      "structural",
+      "seismic design",
+      "source-audited batch 161"
+    ],
+    "bloom_level": "analyze",
+    "difficulty": 0.9,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-004-02-007"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "batch_id": "source-audited-batch-161-local-first",
+  "generated_at": "2026-05-14T17:10:00+08:00",
+  "selected_cluster_count": 5,
+  "linked_question_count": 50,
+  "question_edit_count": 50,
+  "answer_key_changes": 0,
+  "blockers_for_selected": 0,
+  "commands": [
+    {
+      "command": "bun run content-audit:compose -- --article <each selected id> --dry-run --strict --overwrite",
+      "status": "PASS",
+      "evidence": "5/5 composed; blockers=0; processed=1 for each selected bundle."
+    },
+    {
+      "command": "bun run content-audit:diff -- --article <each selected id> --dry-run --strict --json",
+      "status": "PASS",
+      "evidence": "5/5 diff dry-runs safe=true; blockers=[] for each selected bundle."
+    },
+    {
+      "command": "bun run content-audit:validate -- --input .ai/content-audit-export/.batch-161-validation-root --dry-run --strict --json",
+      "status": "PASS",
+      "evidence": "Temporary scoped root with selected articles only returned valid=true, article_count=5, blockers=0, warnings=0; temp root removed after validation."
+    },
+    {
+      "command": "bun test scripts/content-audit/source-verification-invariants.test.ts",
+      "status": "PASS",
+      "evidence": "7 tests passed, 0 failed, 244 assertions."
+    },
+    {
+      "command": "custom selected linked-question/question-edit scan",
+      "status": "PASS",
+      "evidence": "50 linked questions, 50 question edits, 0 answer key changes."
+    },
+    {
+      "command": "custom selected article marker/internal-note scan",
+      "status": "PASS",
+      "evidence": "10 normalized/candidate files scanned; no raw UI markers, placeholders, source-gap wording, TODOs, AI notes, or internal Batch 161 phrasing."
+    },
+    {
+      "command": "final selected JSON and artifact parse scan",
+      "status": "PASS",
+      "evidence": "json parse ok files=98."
+    },
+    {
+      "command": "stage path exclusion scan",
+      "status": "PASS",
+      "evidence": "124 stage paths, forbidden_matches=0."
+    },
+    {
+      "command": "git diff --check -- $(cat .ai/03_plans/batch-161-git-handoff-stage-paths.txt)",
+      "status": "PASS",
+      "evidence": "No whitespace errors reported for intended tracked diff paths."
+    }
+  ],
+  "note": "Shared .ai/content-audit-export/sync-state.json is intentionally not edited because it is off-limits and already dirty; official validate was run against a temporary scoped root to prove selected bundle validity without mutating that file.",
+  "final_status": "PASS",
+  "updated_at": "2026-05-14T17:18:00+08:00"
+}

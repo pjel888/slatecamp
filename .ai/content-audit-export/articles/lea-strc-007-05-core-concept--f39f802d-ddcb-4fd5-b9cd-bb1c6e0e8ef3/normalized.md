@@ -1,116 +1,48 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For embedded utilities, ask whether the item is about structural impairment, concrete cover, material compatibility, reinforcement around pipe embedments, or construction-document review.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 007 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
 ## Learning Goal
+
 By the end of this article, you will be able to:
 
-- Define embedded conduits and identify common types (electrical, plumbing, HVAC)
-- Explain the NSCP limitations on conduit placement within structural members
-- State the maximum conduit size relative to member thickness
-- Describe proper coordination between structural and MEP trades
-
-Embedded conduits (for electrical, mechanical, or plumbing services) weaken concrete sections by reducing cross-sectional area and creating stress concentrations. The LEA tests your mastery of size and spacing limits to protect structural integrity. Critical limits: max 1/3 of slab/beam thickness, max 4% of column cross-section, min 3 diameters spacing between conduits, and supplemental reinforcement requirements.
+- State the NSCP 2015 rule that embedments must not significantly impair structural strength or fire protection.
+- Identify the minimum reinforcement and cover requirements explicitly supported for pipe embedments.
+- Recognize when embedments must be shown in construction documents or submitted for review.
+- Use NSCP embedment requirements for structural impairment, cover, reinforcement, and review.
 
 ## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-007-05-core-concept", type="image", caption="Embedded Conduits in Concrete — Placement Rules and Sleeve Details", description="Beam and slab cross-sections showing: (1) Conduit placement zones avoiding tension regions; (2) Maximum conduit size (≤1/3 member depth); (3) Horizontal and vertical spacing requirements; (4) Sleeve details at beam penetrations; (5) Grouping limitations. Areas where conduits are prohibited (compression zones, plastic hinge regions) highlighted in red.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
-Embedded conduits—electrical, HVAC, plumbing ducts, and utility sleeves—must not compromise structural capacity. NSCP 2015 Chapter 4, Section 406.3 sets maximum cross-sectional area limits and spacing rules. The underlying principle: the void from an embedded pipe reduces the concrete's ability to carry load and creates a weak plane. Larger conduits or too many conduits in a small region can lead to local crushing, cracking, or shear transfer failure.
+NSCP 2015 Section 420.7 treats embedments as structural-detailing risks. The code does not let pipes, sleeves, conduits, fittings, or other embedded items become an unreviewed weakness in concrete. Embedments must not significantly impair the strength of the structure and must not reduce fire protection.
 
-Two design approaches: (1) limit conduit size/area to avoid weakening, or (2) provide supplemental reinforcement to compensate. Most designs use approach (1)—sizing limits that ensure the structure remains safe without redesign.
+The checked NSCP rules are:
 
-## Key Provisions
+| Requirement | NSCP-supported rule |
+| --- | --- |
+| Structural effect | Embedments shall not significantly impair strength or reduce fire protection. |
+| Material compatibility | Embedment materials shall not be harmful to concrete or reinforcement. |
+| Aluminum embedments | Coat or cover to prevent aluminum-concrete reaction and electrolytic action with steel. |
+| Pipe-embedment reinforcement | Provide reinforcement perpendicular to pipe embedments with area at least 0.002 times the concrete section area. |
+| Pipe cover exposed to earth or weather | At least 40 mm cover to pipe embedments and fittings. |
+| Pipe cover not exposed to weather and not in contact with ground | At least 20 mm cover to pipe embedments and fittings. |
 
-### Conduit Size Limits (NSCP 2015 Section 406.3)
+## Construction Coordination
 
-| **Member Type** | **Maximum Conduit Size** | **Expression** | **Notes** |
-|---|---|---|---|
-| Slabs (one-way or two-way) | 1/3 of slab thickness | h/3 | Largest single conduit; applies to solid slabs only |
-| Beams | 1/3 of beam depth | h/3 | Same rule as slabs; for rectangular beams |
-| Joist/Ribbed slabs | 1/4 of rib width | w_rib/4 | Tighter limit due to slender ribs |
-| Columns | 4% of cross-sectional area | 0.04 × A_column | For circular or rectangular columns |
-| Walls | 1/3 of wall thickness | t/3 | Similar to slabs; applied to wall thickness |
+Section 426.8 adds the coordination rule. Construction documents should include type, size, details, and location of embedments; reinforcement perpendicular to pipe embedments; concrete cover for pipe embedments and fittings; and corrosion protection for exposed embedments intended for future work. If an embedment is not shown in the construction documents, it must be submitted for review by the licensed design professional.
 
-**Example — Slab:** 150 mm solid slab → max conduit diameter = 150/3 = 50 mm.
-**Example — Column:** 400 mm × 400 mm column (A = 160,000 mm²) → max area = 0.04 × 160,000 = 6,400 mm² → max circular conduit dia ≈ 90 mm.
+Additional compliance rules include keeping aluminum embedments coated or covered, designing pipes and fittings for their material, pressure, and temperature effects, delaying liquid/gas/vapor use until concrete reaches specified strength except for water not exceeding 32 degrees C or 0.35 MPa, placing most solid-slab piping between top and bottom reinforcement, and installing conduit or piping without cutting, bending, or displacing reinforcement from its specified location.
 
-### Conduit Spacing Requirements (NSCP 2015 Section 406.3)
+## Real World Scenario
 
-| **Spacing Criterion** | **Minimum Clear Distance** | **Application** |
-|---|---|---|
-| Between adjacent conduits | 3 diameters (center-to-center) | Prevents local failure zone from merging |
-| From surface (clear cover) | 25–40 mm (per cover requirements) | Standard concrete cover |
-| From reinforcement | 10–20 mm clear (varies) | Avoid bar interference |
-| Within same cross-section | Check cumulative area | Multiple small pipes count together |
-
-**Spacing Rule:** If spacing is less than 3 diameters, treat multiple conduits as a single larger equivalent void.
-
-### Reinforcement for Conduit Openings (NSCP 2015 Section 406.3)
-
-If conduits exceed the size limits, reinforcement around the opening can compensate:
-
-| **Condition** | **Reinforcement Required** | **Notes** |
-|---|---|---|
-| Within size limits (no supplemental) | None required (already counted in design) | Standard design suffices |
-| Larger than limits | Add reinforcement perpendicular to pipe axis (verify exact ratio and area definition in NSCP 2015 Section 406.3) |
-| Cover-exposed pipes | 40 mm concrete cover minimum | For exterior or weather-exposed elements |
-
-**Example:** A 100 mm conduit in a 200 mm slab (exceeds h/3 = 67 mm limit) requires: (1) reduction to ≤67 mm, OR (2) supplemental reinforcement around the opening area.
-
-### Cover Requirements for Embedded Pipes (NSCP 2015 Chapter 4, Section 406.3 and durability provisions)
-
-Pipes exposed to weather or embedded near exposed surfaces require standard concrete cover (see Article LEA-STRC-007-01 for cover details):
-
-| **Condition** | **Minimum Cover to Pipe (mm)** |
-|---|---|
-| Exposed to weather | 50 mm (bars ≥20 mm equivalent rule) |
-| Interior (protected) | 40 mm (standard beam/column cover) |
-| Cast against earth | 75 mm (if pipe touching soil) |
-
-## Philippine Practice Context
-
-Electrical conduits (PVC, 16–25 mm) in floor slabs are ubiquitous in Philippine buildings. Contractors often run multiple conduits along a single beam without spacing them adequately or checking cumulative area, leading to weak spots and cracking during construction or service. Larger utility sleeves (50–100 mm) for HVAC ducts in beams must be carefully detailed with reinforcement; many contractors simply cut holes without consulting the engineer, creating localized shear and flexural failures.
+A contractor wants to add an unshown pipe sleeve through a slab after the structural drawings are issued. The correct response is to route the sleeve through review rather than rely on a field diameter shortcut. The sleeve must be submitted for licensed design professional review, checked so it does not impair strength or fire protection, detailed with required cover, and coordinated so reinforcement is not displaced.
 
 ## How It's Tested
 
-1. **Direct conduit limit:** "A 200 mm deep beam has conduits embedded. What is the maximum diameter per NSCP?" (Answer: 200/3 ≈ 67 mm; difficulty 0.3)
-
-2. **Column area calculation:** "A 300 mm × 300 mm column allows what maximum area of embedded pipes per NSCP?" (Answer: 0.04 × 90,000 = 3,600 mm²; difficulty 0.5)
-
-3. **Spacing rule:** "Two 25 mm conduits are embedded in a slab. What is the minimum clear distance between their centerlines?" (Answer: 3 × 25 = 75 mm on center; difficulty 0.5)
-
-4. **Cumulative area and reinforcement:** "A beam (500 mm deep) has four 40 mm conduits. Is this within limits? If not, what compensation is required?" (Answer: exceeds h/3 = 167 mm; requires reinforcement or downsizing; difficulty 0.7)
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Slab/Beam = max h/3. Column = max 4% area. Spacing = 3 diameters center-to-center. If conduit exceeds limit, either (1) downsize, or (2) add reinforcement normal to pipe (0.002 × area). Always check cumulative area if multiple pipes in same section. Cover = 40–75 mm per exposure (same as rebar cover rules).
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Concrete Cover** (lea-strc-007-01) for how conduits affect cover requirements, **Construction Joints** (lea-strc-007-06) for how conduits cross joints, and **Concrete Materials** (lea-strc-006-01) for how conduits affect concrete placement.
+Questions usually test the principle and the inspection trigger: no significant strength impairment, no harmful embedment material, 0.002 perpendicular reinforcement for pipe embedments, 40 mm or 20 mm pipe cover depending on exposure, and review of embedments not shown in the documents.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[ \"Slab conduit max = 1/2 thickness — WRONG. Always h/3 (ERR-STRC-024).\", \"Column conduit max = 3% of area — WRONG. Always 4% per NSCP (ERR-STRC-024).\", \"Conduit spacing = 2 diameters — WRONG. Code requires 3 diameters minimum.\", \"Multiple small conduits can be bunched if total area is OK — WRONG. Spacing (3 dia) must be maintained; clustering violates code.\", \"No reinforcement needed if conduit within size limits — CORRECT (no additional reinforcement beyond design loads).\", \"Pipes exposed to weather need no special cover — WRONG. Weather-exposed pipes require 50 mm cover (like ≥20 mm bars).\" ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Repeating conduit diameter, area, or spacing shortcuts that are not established by the checked embedment anchors.
+- Forgetting that aluminum embedments need separation from concrete and steel interaction.
+- Letting MEP routing cut or bend structural reinforcement.
+- Treating an unshown embedment as a field convenience instead of a design-professional review item.

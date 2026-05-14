@@ -1,0 +1,96 @@
+{
+  "question_id": "136a9f76-4115-4c68-ac4a-aa015e09f5aa",
+  "baseline_hash": "sha256:d9f7f5966fd109c30a3e5b07770bc01df57736671e18c6242771fae3b303b8e5",
+  "action": "replace",
+  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-009-01 to checked local NSCP OCR anchors and remove unsupported residual claims.",
+  "approved_by": "codex-local-source-audit-batch-161",
+  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+    "parent_article_slug": "lea-strc-009-01-core-concept",
+    "batch_id": "source-audited-batch-161-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-605-decay-termite-protection-b161",
+        "label": "NSCP 2015 Volume I, Section 605, decay and termite protection for wood",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to match structural_timber_decay_termite_protection source boundary.",
+    "excluded_claims": [
+      "Unsupported Narra/Kamagong/Dao/Tangile resistance table claims.",
+      "Unsupported sapwood percentage acceptance claims.",
+      "Species-specific substitution rules outside NSCP Section 605 anchors."
+    ]
+  },
+  "proposed": {
+    "text": "What does NSCP Section 605.2 require for wood embedded in the ground or in direct earth contact when it supports permanent structures?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treated wood, unless continuously below the groundwater line or submerged in fresh water"
+      },
+      {
+        "id": "b",
+        "text": "Any hardwood species without treatment"
+      },
+      {
+        "id": "c",
+        "text": "Only painted sapwood"
+      },
+      {
+        "id": "d",
+        "text": "No durability requirement if concrete surrounds the member"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 605.2 requires treated wood for earth-contact permanent supports, with the stated groundwater/submerged fresh-water exception.",
+      "a": "Not selected: Treated wood, unless continuously below the groundwater line or submerged in fresh water",
+      "b": "Not selected: Any hardwood species without treatment",
+      "c": "Not selected: Only painted sapwood",
+      "d": "Not selected: No durability requirement if concrete surrounds the member",
+      "takeaway": "Section 605.2 requires treated wood for earth-contact permanent supports, with the stated groundwater/submerged fresh-water exception.",
+      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+    },
+    "explanation": "Section 605.2 requires treated wood for earth-contact permanent supports, with the stated groundwater/submerged fresh-water exception.",
+    "code_citation": "NSCP 2015 Vol. I, Section 605; OCR pages 870-871.",
+    "application_context": "source_audited_nscp_timber_decay_termite_protection",
+    "practice_context": [
+      "structural",
+      "timber durability",
+      "source-audited batch 161"
+    ],
+    "bloom_level": "remember",
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-009-01-002"
+  }
+}

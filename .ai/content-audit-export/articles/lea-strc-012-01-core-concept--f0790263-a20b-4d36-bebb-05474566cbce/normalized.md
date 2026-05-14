@@ -1,77 +1,49 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Strc 012 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+Wind-load questions start with classification. Identify the wind-speed definition, exposure category, enclosure classification, low-rise status, and whether the structure is flexible before selecting a procedure.
 
 ## Learning Goal
 
 By the end of this article, you will be able to:
 
-- Define basic wind speed (V) as a 3-second gust at 10 m in Exposure C
-- State the return period (50-year, 0.02 annual probability)
-- Classify a building as open, enclosed, or partially enclosed
-- Classify a building as low-rise and determine if flexible structure provisions apply
-- Identify Exposure A, B, and C terrain categories
+- Define basic wind speed V in NSCP 2015 terms.
+- Identify the basic parameters used to determine wind loads.
+- Classify open, enclosed, partially enclosed, low-rise, rigid, and flexible buildings using source-supported definitions.
+- State the wind-map probability note from the checked NSCP source.
 
----
 ## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-012-01-core-concept", type="image", caption="Wind Load Provisions — Basic Wind Speed and Building Classification", description="Philippine wind load reference diagram showing: (1) Basic wind speed map with 3-second gust contours per NSCP; (2) Building classification — Open (≤10% wall area), Enclosed, Partially Enclosed; (3) Low-rise vs flexible structure criteria; (4) Exposure categories (A, B, C, D). Wind pressure distribution on building surfaces (windward positive pressure, leeward/side suction, roof uplift zones).", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Wind load provisions begin with establishing a baseline wind hazard and then classifying the specific building that experiences it. The _basic wind speed V_ is defined as a 3-second peak gust speed measured 10 meters above the ground in Exposure C terrain. This speed has a 0.02 annual probability of exceedance, corresponding to a 50-year mean recurrence interval—the standard hazard level for Philippine structural design codes.
 
-The exposure category depends on the roughness and obstructions surrounding the site. _Exposure A_ applies to smooth terrain with scattered obstructions (harbors, flat agricultural land); _Exposure B_ to suburban or light industrial areas with moderate surface roughness; and _Exposure C_ to open terrain with occasional obstructions (grassland, scattered trees, undeveloped land). The exposure classification affects how wind speed is adjusted upward or downward as a function of height.
+NSCP 2015 Section 207 begins wind design by defining basic parameters and then routing the structure to the correct procedure. Basic wind speed V is a three-second gust speed at 10 m above the ground in Exposure C terrain. The Occupancy Category II wind-map note states that the mapped speeds correspond approximately to a 7 percent probability of exceedance in 50 years, with annual exceedance probability 0.00143 and mean recurrence interval 700 years.
 
-Buildings are further classified by how wind can enter or escape. An _open building_ has all external walls at least 80% open (allowing free passage of wind through the structure). An _enclosed building_ has all external walls less than 80% open and negligible volume of air enclosed (effectively impermeable). A _partially enclosed building_ has some walls that are at least 80% open but not all. This classification changes internal pressure coefficients and therefore the overall wind force magnitude.
-
-Finally, the structural system itself is classified. A _low-rise building_ has a mean roof height not exceeding 18 meters AND a mean roof height not exceeding the least horizontal dimension of the building plan. Structures taller or more slender than this are subject to stricter dynamic analysis provisions. A _flexible structure_ has a fundamental natural frequency less than 1 Hz or a height exceeding 4 times the least horizontal dimension—criteria that require consideration of wind-induced resonance.
+The process outline lists these basic parameters: basic wind speed V, wind directionality factor, exposure category, topographic factor, gust effect factor, enclosure classification, and internal pressure coefficient. MWFRS design may use the directional procedure for buildings of all heights, the envelope procedure for low-rise buildings, the directional procedure for appurtenances and other structures, or the wind tunnel procedure. Components and cladding are handled by the Section 207E analytical procedures or wind tunnel procedure.
 
 ## Key Provisions
 
-| Parameter | Definition | Application |
-|---|---|---|
-| Basic Wind Speed (V) | 3-second gust at 10 m in Exposure C | Reference hazard; adjusted by exposure category and height |
-| Annual Probability | 0.02 (1 in 50 year) | Risk level for standard design |
-| Exposure A | Smooth terrain, scattered obstructions | Harbors, flat agricultural areas |
-| Exposure B | Moderate surface roughness | Suburban, light industrial |
-| Exposure C | Open terrain, occasional obstructions | Grassland, scattered trees, undeveloped |
-| Open Building | ≥80% of all walls open | All wind faces allow interior wind flow |
-| Enclosed Building | &lt;80% walls open, negligible enclosed air | No interior pressure buildup |
-| Partially Enclosed | Some walls ≥80% open, others &lt;80% | Mixed interior pressure behavior |
-| Low-Rise Building (height condition) | Mean roof height ≤ 18 m | Simpler wind load procedure applies |
-| Low-Rise Building (plan condition) | Mean roof height ≤ least horizontal dimension | Avoids slender structure effects |
-| Flexible Structure (frequency) | Fundamental natural frequency < 1 Hz | Resonance analysis required |
-| Flexible Structure (height) | Height > 4 × least horizontal dimension | Geometry-based flexibility indicator |
+| Classification item | Source-safe rule |
+| --- | --- |
+| Basic wind speed V | Three-second gust speed at 10 m above ground in Exposure C. |
+| Wind-map probability note | Approximately 7 percent probability of exceedance in 50 years; AEP = 0.00143; MRI = 700 years. |
+| Open building | Each wall is at least 80 percent open. |
+| Enclosed building | Does not comply with the requirements for open or partially enclosed buildings. |
+| Partially enclosed building | Windward-wall openings exceed balance openings by more than 10 percent and satisfy the additional area/balance limits. |
+| Low-rise building | Enclosed or partially enclosed; mean roof height h <= 18 m; h does not exceed the least horizontal dimension. |
+| Flexible building or structure | Fundamental natural frequency less than 1.0 Hz. |
+| Rigid building or structure | Fundamental frequency greater than or equal to 1.0 Hz. |
+| Exposure B | Surface Roughness B must prevail in the upwind direction for the required distance. |
+| Exposure C | Applies where Exposures B and D do not apply; includes open terrain with scattered obstructions less than 9 m. |
+| Exposure D | Applies to flat, unobstructed areas and water surfaces meeting the required upwind fetch or proximity rules. |
 
-## Philippine Practice Context
-The Philippines lies in a typhoon belt where wind speeds regularly exceed 200 km/h. The National Building Code adopts a 50-year recurrence interval (0.02 annual probability) for basic wind speed, aligning with international practice but acknowledging the extreme nature of Philippine cyclone exposure. Engineers must verify that their site exposure classification reflects actual terrain roughness—terrain change from open shoreline to dense urban development significantly reduces design wind speed. Typhoon surge and rain-driven load combinations are addressed in separate provisions.
+## Real World Scenario
+
+A 12 m warehouse in open agricultural terrain can be low-rise if the mean roof height is not greater than the least horizontal plan dimension. The site terrain still matters: open terrain with scattered low obstructions points to Exposure C, which affects velocity pressure coefficients and the resulting design pressures.
 
 ## How It's Tested
-**Question Type 1:** Recognize the exact definition of basic wind speed and its return period.
-**Question Type 2:** Classify a site or building scenario as Exposure A, B, or C; identify open, enclosed, or partially enclosed classification.
-**Question Type 3:** Determine whether a given building qualifies as low-rise and whether it must be treated as flexible.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: _Basic Wind Speed_ = 3-sec gust at 10m, Exposure C baseline. If you cannot state this in one sentence, you will fail the exam. The 0.02 probability is non-negotiable; it defines the entire hazard level.
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Load Types** (lea-strc-001-02) for wind load as a load category, **Required Strength** (lea-strc-005-01) for wind load combinations, and **Base Shear** (lea-strc-004-03) for comparison with seismic lateral loads.
+Expect direct classification questions: a 20 m building fails the low-rise height criterion; an 85 percent open wall condition can support open-building classification only if each wall meets the open-building rule; a measured frequency below 1.0 Hz indicates a flexible structure; and old annual-probability shorthand should be checked against the wind-map note for Occupancy Category II speeds.
 
 ## Common Mistakes
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
+
+- Using an old annual-exceedance shortcut instead of the checked wind-map note. The checked page states AEP = 0.00143 and MRI = 700 years.
+- Adding exposure categories not present in the checked NSCP wind exposure source.
+- Calling a 20 m building low-rise just because the plan is large.
+- Calling a building flexible without checking its fundamental natural frequency.

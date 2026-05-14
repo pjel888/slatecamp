@@ -1,0 +1,89 @@
+{
+  "batch_id": "source-audited-batch-161-local-first",
+  "generated_at": "2026-05-14T17:10:00+08:00",
+  "mode": "local_first_source_audited_content_batch",
+  "repo": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline": "HEAD 28743d0e0 (chore(content): add NSCP OCR conversion tooling) after Batch 160 closure commit 3dc61a3d5",
+  "selected_clusters": [
+    {
+      "cluster": "lea-strc-004-02",
+      "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+      "slug": "lea-strc-004-02-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "blockers": []
+    },
+    {
+      "cluster": "lea-strc-007-03",
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "slug": "lea-strc-007-03-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "blockers": []
+    },
+    {
+      "cluster": "lea-strc-007-05",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "slug": "lea-strc-007-05-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "blockers": []
+    },
+    {
+      "cluster": "lea-strc-012-01",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "slug": "lea-strc-012-01-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "blockers": []
+    },
+    {
+      "cluster": "lea-strc-009-01",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "slug": "lea-strc-009-01-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "blockers": []
+    }
+  ],
+  "unselected_clusters": [
+    {
+      "cluster": "lea-strc-009-02",
+      "status": "SOURCEABLE_DEFERRED",
+      "reason": "Exact NSCP support exists in Table 615.2-1 and machine-graded lumber provisions, but Batch 161 was capped at five clusters to preserve the requested small-batch shape.",
+      "next_source_need": "Use NSCP OCR page-0889.md lines 5-65 and page-0943.md lines 51-96 in a later batch; rewrite unsupported hardboard/fiberboard/nominal-size questions or source them separately."
+    },
+    {
+      "cluster": "lea-util-004-05",
+      "status": "UNSUPPORTED_FOR_BATCH_161",
+      "reason": "Linked questions require mixed authority beyond the checked NSCP conversion: flood contamination, RA 10121 resilience, PD 1096, ASTM rooftop fasteners, emergency transfer timing, generator autonomy, emergency communications, and MEPF operational resilience. NSCP OCR alone does not exactly support all linked questions.",
+      "next_source_need": "Exact local anchors for RA 10121, PD 1096, applicable ASTM/ASCE/NSCP MEPF anchorage provisions, and utility/emergency-system standards before article and 15 linked-question edits."
+    },
+    {
+      "cluster": "lea-util-004-08",
+      "status": "UNSUPPORTED_FOR_BATCH_161",
+      "reason": "Linked questions mix gas shutoff valve mechanics, emergency generator inspection, positive mechanical connection/friction claims, flexible transitions across expansion joints, generator auto-start timing, equipment restraints, corrosion inspections, and Zone 4 Z factor. The current NSCP OCR has partial seismic anchors, but not exact support for every linked operational/MEPF claim.",
+      "next_source_need": "Exact NSCP nonstructural component/mechanical-electrical anchorage pages plus local standards or manufacturer/operational sources for gas valves, generators, flexible couplings, and post-earthquake inspection requirements."
+    }
+  ],
+  "forbidden_actions_performed": [],
+  "constraints_held": [
+    "no Supabase push",
+    "no deploy",
+    "no production DB mutation",
+    "no merge main",
+    "no force-push",
+    "no git stage",
+    "no commit",
+    "no push",
+    "off-limits dirty files excluded"
+  ],
+  "acceptance_status": "passed_local_validation_ready_for_handoff",
+  "updated_at": "2026-05-14T17:18:00+08:00"
+}

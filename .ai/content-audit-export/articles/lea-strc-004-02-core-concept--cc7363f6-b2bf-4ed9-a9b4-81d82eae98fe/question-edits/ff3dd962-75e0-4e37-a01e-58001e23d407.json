@@ -1,0 +1,86 @@
+{
+  "question_id": "ff3dd962-75e0-4e37-a01e-58001e23d407",
+  "baseline_hash": "sha256:947693dd4e1086f5580a61ca8a2cc133528b24bc262731df1ae83f3be09b266c",
+  "action": "replace",
+  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-004-02 to checked local NSCP OCR anchors and remove unsupported residual claims.",
+  "approved_by": "codex-local-source-audit-batch-161",
+  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+    "parent_article_slug": "lea-strc-004-02-core-concept",
+    "batch_id": "source-audited-batch-161-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-208-4-4-seismic-zone-b161",
+        "label": "NSCP 2015 Volume I, Section 208.4.4.1 and Table 208-3, seismic zones and Z factors",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to match structural_seismic_zone_factor source boundary.",
+    "excluded_claims": [
+      "Zone 1 / Zone 2 naming for NSCP 2015 seismic zones.",
+      "Geological explanations for province assignment not stated in the checked NSCP anchor.",
+      "Spectral acceleration map claims as a replacement for this Z-factor article."
+    ]
+  },
+  "proposed": {
+    "text": "How should this article treat claims about spectral acceleration maps versus the checked Zone 2/Zone 4 Z-factor source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the Z-factor table entirely because spectral maps make it obsolete in every exam item."
+      },
+      {
+        "id": "b",
+        "text": "Use the checked Section 208.4.4.1 and Table 208-3 Z-factor rule for this cluster, and do not add unsupported spectral-map claims."
+      },
+      {
+        "id": "c",
+        "text": "Derive spectral accelerations directly from Z by a fixed nationwide formula."
+      },
+      {
+        "id": "d",
+        "text": "Treat Z = 0.20 and Z = 0.40 as identical to all spectral acceleration values."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "correct": "Batch 161 only reopens this cluster for exact support from Section 208.4.4.1 and Table 208-3. Spectral-map scope is excluded unless separately sourced.",
+      "a": "Not selected: Replace the Z-factor table entirely because spectral maps make it obsolete in every exam item.",
+      "b": "Not selected: Use the checked Section 208.4.4.1 and Table 208-3 Z-factor rule for this cluster, and do not add unsupported spectral-map claims.",
+      "c": "Not selected: Derive spectral accelerations directly from Z by a fixed nationwide formula.",
+      "d": "Not selected: Treat Z = 0.20 and Z = 0.40 as identical to all spectral acceleration values.",
+      "takeaway": "Batch 161 only reopens this cluster for exact support from Section 208.4.4.1 and Table 208-3. Spectral-map scope is excluded unless separately sourced.",
+      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+    },
+    "explanation": "Batch 161 only reopens this cluster for exact support from Section 208.4.4.1 and Table 208-3. Spectral-map scope is excluded unless separately sourced.",
+    "code_citation": "NSCP 2015 Vol. I, Section 208.4.4.1 and Table 208-3; OCR page 240 lines 16-26.",
+    "application_context": "source_audited_nscp_seismic_zone_factor",
+    "practice_context": [
+      "structural",
+      "seismic design",
+      "source-audited batch 161"
+    ],
+    "bloom_level": "understand",
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-004-02-010"
+  }
+}

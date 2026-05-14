@@ -1,3 +1,13 @@
+## Batch 161 Coordination Update - 2026-05-14T17:10:00+08:00
+
+- Mode: local-first NSCP source-audited residual recovery.
+- Selected bundles: lea-strc-004-02, lea-strc-007-03, lea-strc-007-05, lea-strc-012-01, lea-strc-009-01.
+- Scope evidence: 5 article clusters, 50 linked questions, 50 question edits, zero answer-key changes.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main, no force-push, no git staging/commit/push, and off-limits dirty files excluded.
+- Stop condition: Batch 161 artifacts written, validation evidence recorded, final JSON/diff checks complete, then Hermes stages only .ai/03_plans/batch-161-git-handoff-stage-paths.txt paths.
+
+---
+
 ## Batch 160 Closure Coordination Update - 2026-05-14T15:26:35+08:00
 
 - Mode: local-first residual eligibility closure.

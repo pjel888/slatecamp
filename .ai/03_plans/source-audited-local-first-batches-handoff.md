@@ -1,3 +1,13 @@
+## Batch 161 Local-First Handoff - 2026-05-14T17:10:00+08:00
+
+Batch 161 reopens five residual NSCP/timber blockers now that the valid local NSCP 2015 conversion is available: lea-strc-004-02, lea-strc-007-03, lea-strc-007-05, lea-strc-012-01, lea-strc-009-01. It applies 50/50 linked-question rewrites with zero answer-key changes and local NSCP OCR anchors in each source-audit-evidence.json.
+
+Validation passed locally: compose dry-run strict 5/5, diff dry-run strict 5/5 safe=true, scoped official validate 5/5 blockers=0, source-verification invariants 7/7, selected marker scan clean, and linked-question parity 50/50. Shared sync-state and aggregate validation files remain excluded/off-limits.
+
+Ready for acceptance staging from .ai/03_plans/batch-161-git-handoff-stage-paths.txt. Do not stage unrelated dirty files, existing content-roundtrip runs, the stale lea-strc-011-03 compose-error deletion, or shared aggregate files.
+
+---
+
 ## Batch 160 Local-First Closure Handoff - 2026-05-14T15:26:35+08:00
 
 Batch 160 opened after accepted/pushed Batch 159 at `326d29c726c92480c111d1f7e17be9ef1ea097a2`. It selected zero article clusters and zero linked-question edits because no eligible source-auditable residual cluster remains under the local-first rule.

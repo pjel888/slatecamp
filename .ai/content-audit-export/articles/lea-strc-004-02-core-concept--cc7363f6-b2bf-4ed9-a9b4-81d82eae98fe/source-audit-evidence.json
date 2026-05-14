@@ -1,0 +1,126 @@
+{
+  "batch_id": "source-audited-batch-161-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T16:35:00.000+08:00",
+  "target": {
+    "cluster_id": "lea-strc-004-02",
+    "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+    "slug": "lea-strc-004-02-core-concept",
+    "title": "NSCP 2015 divides the Philippines into two seismic",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+    "normalized_sha256": "sha256:ad91cd3f12c32324c6ef80bed03183a191fa3ec126178128f81b4eafcb42ce3b",
+    "candidate_sha256": "sha256:ad91cd3f12c32324c6ef80bed03183a191fa3ec126178128f81b4eafcb42ce3b",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/candidate.md"
+  },
+  "classification": {
+    "local_first_batch": "161",
+    "source_sensitivity": "structural_seismic_zone_factor",
+    "source_risk_tier": "local_primary_code_ocr_required",
+    "requires_raw_local_source": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
+    ]
+  },
+  "raw_local_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "valid_source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "valid_source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "source_metadata": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "rejected_source": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+    "rejected_source_reason": "Null-byte corrupted file; not used as evidence.",
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-208-4-4-seismic-zone-b161",
+        "label": "NSCP 2015 Volume I, Section 208.4.4.1 and Table 208-3, seismic zones and Z factors",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md"
+        ]
+      }
+    ],
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40."
+    ]
+  },
+  "scenario_enrichment": {
+    "policy_status": "satisfied",
+    "eligibility_status": "included_source_safe",
+    "blocker_status": "none",
+    "notes": "A concise source-safe scenario was included because the checked NSCP anchor supports practical application without adding unsupported facts."
+  },
+  "thin_needs_expansion": {
+    "previous_status": "thin_or_unsourced_residual",
+    "batch_161_status": "resolved_with_source_safe_expansion",
+    "evidence": "normalized.md removes unsupported residual claims and replaces them with checked NSCP OCR-supported material."
+  },
+  "question_alignment": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_changes": 0,
+    "scope": "structural_seismic_zone_factor"
+  },
+  "checked_sources": [
+    {
+      "source_id": "nscp-2015-section-208-4-4-seismic-zone-b161",
+      "label": "NSCP 2015 Volume I, Section 208.4.4.1 and Table 208-3, seismic zones and Z factors",
+      "url": null,
+      "source_type": "primary_code_local_ocr",
+      "publisher": "Association of Structural Engineers of the Philippines",
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+      "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+      "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+      "page_markdown_paths": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md"
+      ]
+    }
+  ],
+  "source_primary_findings": [
+    {
+      "claim_id": "lea-strc-004-02-b161-source-primary-1",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS"
+    }
+  ],
+  "resolved_findings": [
+    "THIN_NEEDS_EXPANSION",
+    "source-primary",
+    "question-alignment",
+    "scenario/depth"
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "lea-strc-004-02-b161-rejected-1",
+      "claim_text": "Zone 1 / Zone 2 naming for NSCP 2015 seismic zones.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-004-02-b161-rejected-2",
+      "claim_text": "Geological explanations for province assignment not stated in the checked NSCP anchor.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-004-02-b161-rejected-3",
+      "claim_text": "Spectral acceleration map claims as a replacement for this Z-factor article.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    }
+  ]
+}

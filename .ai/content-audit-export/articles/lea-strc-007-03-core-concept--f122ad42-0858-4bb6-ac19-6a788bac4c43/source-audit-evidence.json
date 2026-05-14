@@ -1,0 +1,162 @@
+{
+  "batch_id": "source-audited-batch-161-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T16:35:00.000+08:00",
+  "target": {
+    "cluster_id": "lea-strc-007-03",
+    "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+    "slug": "lea-strc-007-03-core-concept",
+    "title": "Deflection limits are based",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+    "normalized_sha256": "sha256:a03d4ca1d0001c2da4cc207208b389ca73adbe5ff283759c5516895d2caf55f0",
+    "candidate_sha256": "sha256:a03d4ca1d0001c2da4cc207208b389ca73adbe5ff283759c5516895d2caf55f0",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/candidate.md"
+  },
+  "classification": {
+    "local_first_batch": "161",
+    "source_sensitivity": "structural_concrete_serviceability",
+    "source_risk_tier": "local_primary_code_ocr_required",
+    "requires_raw_local_source": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
+    ]
+  },
+  "raw_local_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "valid_source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "valid_source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "source_metadata": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "rejected_source": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+    "rejected_source_reason": "Null-byte corrupted file; not used as evidence.",
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-424-serviceability-b161",
+        "label": "NSCP 2015 Volume I, Section 424.2 and Table 424.2.2, concrete serviceability and deflection limits",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md"
+        ]
+      }
+    ],
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+    ]
+  },
+  "scenario_enrichment": {
+    "policy_status": "satisfied",
+    "eligibility_status": "included_source_safe",
+    "blocker_status": "none",
+    "notes": "A concise source-safe scenario was included because the checked NSCP anchor supports practical application without adding unsupported facts."
+  },
+  "thin_needs_expansion": {
+    "previous_status": "thin_or_unsourced_residual",
+    "batch_161_status": "resolved_with_source_safe_expansion",
+    "evidence": "normalized.md removes unsupported residual claims and replaces them with checked NSCP OCR-supported material."
+  },
+  "question_alignment": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_changes": 0,
+    "scope": "structural_concrete_serviceability"
+  },
+  "checked_sources": [
+    {
+      "source_id": "nscp-2015-section-424-serviceability-b161",
+      "label": "NSCP 2015 Volume I, Section 424.2 and Table 424.2.2, concrete serviceability and deflection limits",
+      "url": null,
+      "source_type": "primary_code_local_ocr",
+      "publisher": "Association of Structural Engineers of the Philippines",
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+      "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+      "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+      "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+      "page_markdown_paths": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md"
+      ]
+    }
+  ],
+  "source_primary_findings": [
+    {
+      "claim_id": "lea-strc-007-03-b161-source-primary-1",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.",
+      "source_ids": [
+        "nscp-2015-section-424-serviceability-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-007-03-b161-source-primary-2",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.",
+      "source_ids": [
+        "nscp-2015-section-424-serviceability-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-007-03-b161-source-primary-3",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.",
+      "source_ids": [
+        "nscp-2015-section-424-serviceability-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-007-03-b161-source-primary-4",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+      "source_ids": [
+        "nscp-2015-section-424-serviceability-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+      "status": "PASS"
+    }
+  ],
+  "resolved_findings": [
+    "THIN_NEEDS_EXPANSION",
+    "source-primary",
+    "question-alignment",
+    "scenario/depth"
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "lea-strc-007-03-b161-rejected-1",
+      "claim_text": "Unsupported Table 9.5.1 span-to-depth ratios in the selected source boundary.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-007-03-b161-rejected-2",
+      "claim_text": "Unsupported joist top-slab thickness rules in the selected source boundary.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-007-03-b161-rejected-3",
+      "claim_text": "Strength adequacy as a substitute for serviceability checking.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    }
+  ]
+}

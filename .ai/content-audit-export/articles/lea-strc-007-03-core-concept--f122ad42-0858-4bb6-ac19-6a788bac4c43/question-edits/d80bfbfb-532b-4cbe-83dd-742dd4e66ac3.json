@@ -1,0 +1,92 @@
+{
+  "question_id": "d80bfbfb-532b-4cbe-83dd-742dd4e66ac3",
+  "baseline_hash": "sha256:a5d78b4bc7427ac4ef86263e075d782096fc7cb3006505e945b38c3309bfefad",
+  "action": "replace",
+  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-007-03 to checked local NSCP OCR anchors and remove unsupported residual claims.",
+  "approved_by": "codex-local-source-audit-batch-161",
+  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+    "parent_article_slug": "lea-strc-007-03-core-concept",
+    "batch_id": "source-audited-batch-161-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-424-serviceability-b161",
+        "label": "NSCP 2015 Volume I, Section 424.2 and Table 424.2.2, concrete serviceability and deflection limits",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to match structural_concrete_serviceability source boundary.",
+    "excluded_claims": [
+      "Unsupported Table 9.5.1 span-to-depth ratios in the selected source boundary.",
+      "Unsupported joist top-slab thickness rules in the selected source boundary.",
+      "Strength adequacy as a substitute for serviceability checking."
+    ]
+  },
+  "proposed": {
+    "text": "In Table 424.2.4.1.3, what time-dependent factor applies to sustained loads lasting 60 months or more?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.0"
+      },
+      {
+        "id": "b",
+        "text": "1.2"
+      },
+      {
+        "id": "c",
+        "text": "1.4"
+      },
+      {
+        "id": "d",
+        "text": "2.0"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "correct": "The time-dependent factor table gives 2.0 for sustained load duration of 60 months or more.",
+      "a": "Not selected: 1.0",
+      "b": "Not selected: 1.2",
+      "c": "Not selected: 1.4",
+      "d": "Not selected: 2.0",
+      "takeaway": "The time-dependent factor table gives 2.0 for sustained load duration of 60 months or more.",
+      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+    },
+    "explanation": "The time-dependent factor table gives 2.0 for sustained load duration of 60 months or more.",
+    "code_citation": "NSCP 2015 Vol. I, Section 424.2, Table 424.2.2, and Table 424.2.4.1.3; OCR pages 482-483.",
+    "application_context": "source_audited_nscp_serviceability_deflection",
+    "practice_context": [
+      "structural",
+      "concrete serviceability",
+      "source-audited batch 161"
+    ],
+    "bloom_level": "analyze",
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-007-03-008"
+  }
+}

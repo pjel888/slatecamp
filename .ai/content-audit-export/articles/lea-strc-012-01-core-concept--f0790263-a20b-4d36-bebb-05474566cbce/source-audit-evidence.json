@@ -1,0 +1,186 @@
+{
+  "batch_id": "source-audited-batch-161-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T16:35:00.000+08:00",
+  "target": {
+    "cluster_id": "lea-strc-012-01",
+    "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+    "slug": "lea-strc-012-01-core-concept",
+    "title": "Wind load provisions",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+    "normalized_sha256": "sha256:ac0bc857f5edd7ea1a962a5834ff9f5a0e2ff5c56d09dfa7bfbc6411277c57ba",
+    "candidate_sha256": "sha256:ac0bc857f5edd7ea1a962a5834ff9f5a0e2ff5c56d09dfa7bfbc6411277c57ba",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/candidate.md"
+  },
+  "classification": {
+    "local_first_batch": "161",
+    "source_sensitivity": "structural_wind_load_classification",
+    "source_risk_tier": "local_primary_code_ocr_required",
+    "requires_raw_local_source": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
+    ]
+  },
+  "raw_local_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "valid_source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "valid_source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "source_metadata": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+    "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+    "rejected_source": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+    "rejected_source_reason": "Null-byte corrupted file; not used as evidence.",
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-section-207-wind-load-classification-b161",
+        "label": "NSCP 2015 Volume I, Section 207A/207B, wind-load parameters and classifications",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md"
+        ]
+      }
+    ],
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage."
+    ]
+  },
+  "scenario_enrichment": {
+    "policy_status": "satisfied",
+    "eligibility_status": "included_source_safe",
+    "blocker_status": "none",
+    "notes": "A concise source-safe scenario was included because the checked NSCP anchor supports practical application without adding unsupported facts."
+  },
+  "thin_needs_expansion": {
+    "previous_status": "thin_or_unsourced_residual",
+    "batch_161_status": "resolved_with_source_safe_expansion",
+    "evidence": "normalized.md removes unsupported residual claims and replaces them with checked NSCP OCR-supported material."
+  },
+  "question_alignment": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_changes": 0,
+    "scope": "structural_wind_load_classification"
+  },
+  "checked_sources": [
+    {
+      "source_id": "nscp-2015-section-207-wind-load-classification-b161",
+      "label": "NSCP 2015 Volume I, Section 207A/207B, wind-load parameters and classifications",
+      "url": null,
+      "source_type": "primary_code_local_ocr",
+      "publisher": "Association of Structural Engineers of the Philippines",
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage.",
+      "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+      "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+      "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+      "page_markdown_paths": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md"
+      ]
+    }
+  ],
+  "source_primary_findings": [
+    {
+      "claim_id": "lea-strc-012-01-b161-source-primary-1",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.",
+      "source_ids": [
+        "nscp-2015-section-207-wind-load-classification-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-012-01-b161-source-primary-2",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.",
+      "source_ids": [
+        "nscp-2015-section-207-wind-load-classification-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-012-01-b161-source-primary-3",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.",
+      "source_ids": [
+        "nscp-2015-section-207-wind-load-classification-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-012-01-b161-source-primary-4",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.",
+      "source_ids": [
+        "nscp-2015-section-207-wind-load-classification-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-012-01-b161-source-primary-5",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.",
+      "source_ids": [
+        "nscp-2015-section-207-wind-load-classification-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "lea-strc-012-01-b161-source-primary-6",
+      "claim_text": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage.",
+      "source_ids": [
+        "nscp-2015-section-207-wind-load-classification-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage.",
+      "status": "PASS"
+    }
+  ],
+  "resolved_findings": [
+    "THIN_NEEDS_EXPANSION",
+    "source-primary",
+    "question-alignment",
+    "scenario/depth"
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "lea-strc-012-01-b161-rejected-1",
+      "claim_text": "0.02 annual exceedance probability / 50-year MRI claim for this checked NSCP wind-map anchor.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-012-01-b161-rejected-2",
+      "claim_text": "Exposure A as an NSCP 2015 wind exposure category in this checked section.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-strc-012-01-b161-rejected-3",
+      "claim_text": "Height-ratio flexibility claims not supported by the checked flexible-building definition.",
+      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
+    }
+  ]
+}

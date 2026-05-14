@@ -1,90 +1,49 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Strc 009 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+Timber durability questions are code-condition questions. Identify whether the member touches earth, is near earth, is under a floor, enters masonry, is exposed to weather, or is being covered before it can dry.
 
 ## Learning Goal
 
 By the end of this article, you will be able to:
 
-- Identify the primary durability threats to timber: decay (fungus) and termites
-- Describe preservation treatments for decay and termite resistance
-- Explain how moisture content affects timber durability
-- Distinguish between heartwood (naturally resistant) and sapwood (susceptible)
+- Apply NSCP 2015 Section 605 requirements for decay and termite protection.
+- Identify when treated wood or approved wood of natural resistance is required.
+- Recall key clearance, ventilation, pedestal, air-space, and moisture-content thresholds.
+- Avoid species-resistance shortcuts when the source only proves code conditions.
 
----
 ## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="unknown"]
-Extracted summary:
-- Props: id="media-lea-strc-009-01-core-concept", type="image", caption="Timber Durability — Decay Zones and Termite Resistance", description=true, Cross-section=true, of=true, a=true, timber=true, member=true, showing=true, Heartwood=true, naturally=true
-- Text: 19% MC); (3) Preservation treatment penetration depth for pressure-treated lumber; (4) Termite attack pathways; (5) Philippine wood species durability classification table with Group A (highly durable), Group B, and Group C." suggestedAsset="Diagram or reference image" status="placeholder" />
-[/SLATECAMP_UI_BLOCK]
-Decay and termite resistance in timber depend on extractive compounds in the _heartwood_ that inhibit fungal and insect attack. In the Philippines, structural grading standards recognize four species with measurable natural durability: Narra, Kamagong, Dao, and Tangile. Narra and Kamagong are the only species that combine both decay and termite resistance, making them premium choices for harsh environments. Dao and Tangile resist decay but offer no termite protection. Species classification by resistance is not voluntary—it is a mandatory design decision whenever timber contacts soil, water, or high-moisture conditions. Sapwood (outer growth rings) contains no protective extractives and is always susceptible; only heartwood (inner core) qualifies. When sapwood contamination is acceptable under NatCor or ASEAN standards, a maximum of 5% sapwood is tolerated on individual pieces, provided at least 90% of each side face displays heartwood. Resistance classification does not affect allowable stress values—it determines _suitability_, not _capacity_.
+
+NSCP 2015 Section 605 gives condition-based rules for decay and termite protection. The checked rule is not a species list. It is a set of triggers that require treated wood, approved wood of natural resistance to decay, separation from earth, ventilation, air space, or moisture control.
+
+The strongest exam pattern is direct contact with earth. Wood embedded in the ground or in direct contact with earth and used to support permanent structures must be treated wood unless it is continuously below the groundwater line or submerged in fresh water. Posts, poles, and sawn timber columns embedded in concrete or masonry in contact with earth or exposed to weather must be treated for ground contact.
 
 ## Key Provisions
 
-### Philippine Timber Species Durability Classification
+| Condition | NSCP-supported requirement |
+| --- | --- |
+| Building-site preparation | Remove stumps and roots at least 300 mm below ground; remove loose/casual wood from ground contact under the building. |
+| Wood embedded in ground or direct earth contact supporting permanent structures | Treated wood, unless continuously below groundwater line or submerged in fresh water. |
+| Joists or structural floor bottoms closer than 450 mm to exposed ground, or girders closer than 300 mm | Floor assembly must be approved natural-resistance wood or treated wood. |
+| Under-floor access | Minimum unobstructed opening of 450 mm by 600 mm. |
+| Foundation plates, sills, sleepers, and sills on foundations | Treated wood marked or branded by an approved agency, with limited building-official approval exceptions. |
+| Columns/posts on exposed floors, decks, water-splash locations, or basements | Concrete piers or metal pedestals unless approved natural-resistance or treated wood is used. |
+| Pedestal projection | At least 200 mm above exposed earth or 25 mm above finished floor. |
+| Wood girder ends entering masonry or concrete walls | 15 mm air space on tops, sides, and ends unless approved natural-resistance or treated wood is used. |
+| Under-floor ventilation | Net opening area at least 0.07 m2 for each 10 m2 of under-floor area, with corrosion-resistant 6 mm mesh. |
+| Wood nearer than 150 mm to earth | Treated wood or wood of natural resistance to decay, with a slab/membrane exception in dry protected conditions. |
+| Treated wood in enclosed locations where drying cannot readily occur | Moisture content 19 percent or less before covering. |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Species\", \"Decay Resistant\", \"Termite Resistant\", \"Common Use\"]}", rows="{[ [\"Narra\", \"YES\", \"YES\", \"Ground contact, coastal exposure\"], [\"Kamagong\", \"YES\", \"YES\", \"Ground contact, harsh environments\"], [\"Dao\", \"YES\", \"NO\", \"Above-ground, dry conditions\"], [\"Tangile\", \"YES\", \"NO\", \"Above-ground, dry conditions\"] ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Real World Scenario
 
-### Heartwood vs. Sapwood Acceptance Rules
-- _Heartwood_: Provides all documented resistance. Always acceptable in any proportion.
-- _Sapwood_: Contains no protective extractives. Maximum 5% on linear dimension acceptable only if ≥90% of each side face is heartwood.
-- _Implication_: A timber piece may have sapwood on a corner if the majority of exposed faces remain heartwood-dominant.
-
-### Species Not Listed
-Yakal, Molave, Ipil, Guijo, Mangkono, Apitong, Tindalo, Lauan, Tanguile, Red Lauan, White Lauan, and Red Balau have no documented resistance classification in the NatCor standard. When resistance is required, these species must be treated or excluded.
-
-## Philippine Practice Context
-Philippines Forestry Code and NatCor timber standards mandate resistance classification for all structural timber used in damproofing-critical applications. Decay in tropical climates accelerates rapidly—timber exposed to fluctuating moisture can lose 50% of cross-section within 10 years if unprotected. Termite pressure in the Philippines is severe year-round, particularly in Mindanao and Visayas regions. Premium Narra and Kamagong are in declining supply; substitution with treated lower-resistance timber is common, but design standards require explicit notation of treatment when heartwood alone is insufficient.
+A raised timber floor over an unexcavated crawlspace has joists only 400 mm above exposed ground. Section 605.3 is triggered: the floor assembly, including posts, girders, joists, and subfloor, must use approved wood of natural resistance to decay or treated wood. The issue is the clearance and exposure condition, not a generic hardwood label.
 
 ## How It's Tested
 
-### Pattern 1: Identification
-"A timber beam is to be placed on a concrete foundation subject to occasional splash. Which species provides both decay and termite protection _without_ treatment?"
-- Answer: Narra or Kamagong.
-- Takeaway: Only two species qualify; no others are sufficient.
-
-### Pattern 2: Sapwood Judgment
-"A Narra timber piece shows 8% sapwood on one corner, with 92% heartwood on each face. Is this acceptable for ground-contact use?"
-- Answer: Yes (sapwood within 5% limit and heartwood ≥90% per face).
-- Takeaway: Sapwood is tolerable if minority and faces are predominantly heartwood.
-
-### Pattern 3: Untreated Species Limitation
-"Apitong is selected for a cantilever beam in a high-moisture environment. What design action is required?"
-- Answer: Specify treatment or select Narra/Kamagong.
-- Takeaway: Absence from the resistance table means no untreated use in harsh conditions.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Narra + Kamagong = BOTH. Dao + Tangile = decay ONLY. This 2+2 rule is the entire resistance spectrum for Philippine timber.
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Timber Stress Groups** (lea-strc-009-02) for strength grading, **Timber ASD** (lea-strc-009-03) for allowable stress design in wood, and **Trusses** (lea-strc-002-05) for timber truss applications.
+Questions usually test thresholds: 300 mm stump/root removal, 450 mm joist clearance, 300 mm girder clearance, 450 mm by 600 mm access, 200 mm or 25 mm pedestal projection, 15 mm girder-end air space, 0.07 m2 per 10 m2 under-floor ventilation, 150 mm wood-earth separation, and 19 percent moisture content before enclosed treated wood is covered.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[ \"Assuming Dao or Tangile resists termites because they resist decay. Decay and termite resistance are separate mechanisms.\", \"Accepting sapwood freely because the piece has 'mostly heartwood.' The 5% rule is absolute; 6% sapwood fails ground-contact use.\", \"Treating Yakal or Apitong as naturally durable alternatives to Narra. They have no documented resistance; treatment is mandatory for resistance claims.\", \"Confusing heartwood color with heartwood identity. Heartwood must be chemically extractive-rich, not just visually distinct.\" ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Claiming specific Philippine species are naturally decay- and termite-resistant without a checked source anchor.
+- Treating preservative treatment as optional for earth-contact permanent supports.
+- Forgetting the under-floor ventilation and access requirements.
+- Ignoring moisture content before treated wood is covered in enclosed locations.

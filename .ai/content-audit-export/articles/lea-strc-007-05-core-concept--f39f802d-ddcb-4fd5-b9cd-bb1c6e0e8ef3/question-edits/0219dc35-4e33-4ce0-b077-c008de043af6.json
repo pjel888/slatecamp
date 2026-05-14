@@ -1,0 +1,88 @@
+{
+  "question_id": "0219dc35-4e33-4ce0-b077-c008de043af6",
+  "baseline_hash": "sha256:c3618e7c83ae54e2fe0a7aa02c5eabaa1d3b63d031200397e1196216063af41f",
+  "action": "replace",
+  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-007-05 to checked local NSCP OCR anchors and remove unsupported residual claims.",
+  "approved_by": "codex-local-source-audit-batch-161",
+  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+    "parent_article_slug": "lea-strc-007-05-core-concept",
+    "batch_id": "source-audited-batch-161-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+    "checked_markdown_lines": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.",
+      "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "nscp-2015-sections-420-7-426-8-embedments-b161",
+        "label": "NSCP 2015 Volume I, Sections 420.7 and 426.8, concrete embedments and pipe embedment coordination",
+        "url": null,
+        "source_type": "primary_code_local_ocr",
+        "publisher": "Association of Structural Engineers of the Philippines",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "source_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "source_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+        "page_markdown_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to match structural_concrete_embedments source boundary.",
+    "excluded_claims": [
+      "Unsupported h/3 conduit diameter rule in the selected source boundary.",
+      "Unsupported 4 percent column embedment area rule in the selected source boundary.",
+      "Unsupported three-diameter spacing rule in the selected source boundary."
+    ]
+  },
+  "proposed": {
+    "text": "Which embedment information belongs in the construction documents under the checked Section 426.8 source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Type, size, details, and location of embedments, plus related pipe reinforcement and cover information"
+      },
+      {
+        "id": "b",
+        "text": "Only the architectural finish schedule"
+      },
+      {
+        "id": "c",
+        "text": "Only the contractor preferred routing after concrete placement"
+      },
+      {
+        "id": "d",
+        "text": "Only the supplier brand of the conduit"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 426.8 identifies type, size, details, and location of embedments, pipe-embedment reinforcement, cover, and corrosion protection details as design-document information.",
+      "a": "Not selected: Type, size, details, and location of embedments, plus related pipe reinforcement and cover information",
+      "b": "Not selected: Only the architectural finish schedule",
+      "c": "Not selected: Only the contractor preferred routing after concrete placement",
+      "d": "Not selected: Only the supplier brand of the conduit",
+      "takeaway": "Section 426.8 identifies type, size, details, and location of embedments, pipe-embedment reinforcement, cover, and corrosion protection details as design-document information.",
+      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+    },
+    "explanation": "Section 426.8 identifies type, size, details, and location of embedments, pipe-embedment reinforcement, cover, and corrosion protection details as design-document information.",
+    "code_citation": "NSCP 2015 Vol. I, Sections 420.7 and 426.8; OCR pages 463 and 508.",
+    "application_context": "source_audited_nscp_concrete_embedments",
+    "practice_context": [
+      "structural",
+      "concrete embedments",
+      "source-audited batch 161"
+    ],
+    "bloom_level": "remember",
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-007-05-001"
+  }
+}
