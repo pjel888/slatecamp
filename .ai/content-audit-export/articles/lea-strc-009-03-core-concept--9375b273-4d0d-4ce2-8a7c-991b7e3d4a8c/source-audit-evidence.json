@@ -1,0 +1,164 @@
+{
+  "batch_id": "source-audited-batch-156-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T05:56:30.196Z",
+  "target": {
+    "cluster_id": "lea-strc-009-03",
+    "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+    "slug": "lea-strc-009-03-core-concept",
+    "title": "Allowable Stress Design (ASD)",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+    "normalized_sha256": "sha256:8b47b67bdc0646d994114740cda621d2953838a9fe439a669fc131113f7808cb",
+    "candidate_sha256": "sha256:8b47b67bdc0646d994114740cda621d2953838a9fe439a669fc131113f7808cb",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/candidate.md"
+  },
+  "classification": {
+    "local_first_batch": "156",
+    "source_sensitivity": "structural_mechanics",
+    "source_risk_tier": "source_primary_required",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "No Supabase upload was run for Batch 156; this is a local-only production-line handoff."
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_map_raw": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-156/asd-mechanics.source-capture.md",
+    "source_map_refined": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-156/asd-mechanics.refined.md",
+    "checked_sources": [
+      {
+        "source_id": "mechanics-strength-materials-b156",
+        "label": "Mechanics and Strength of Materials",
+        "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+        "raw_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+        "refined_markdown_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+        "locator": "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus"
+      },
+      {
+        "source_id": "applied-strength-materials-b156",
+        "label": "Applied Strength of Materials",
+        "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf",
+        "raw_sha256": "sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md",
+        "refined_markdown_sha256": "sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf",
+        "locator": "Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A"
+      }
+    ],
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "policy_status": "satisfied",
+    "eligibility_status": "included",
+    "blocker_status": "none",
+    "notes": "Batch 156 includes a source-safe Real World Scenario constrained to checked mechanics sources and supplied allowable values."
+  },
+  "thin_needs_expansion": {
+    "previous_status": "thin",
+    "batch_156_status": "resolved_with_source_safe_expansion",
+    "evidence": "normalized.md contains THIN_NEEDS_EXPANSION resolution, scenario, question alignment, source-primary finding, mini-checks, and explicit source limits."
+  },
+  "question_alignment": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_changes": 0,
+    "scope": "ASD inequality, unit conversion, section modulus, moment of inertia, rectangular maximum shear, and supplied-factor arithmetic only."
+  },
+  "checked_sources": [
+    {
+      "source_id": "mechanics-strength-materials-b156",
+      "label": "Mechanics and Strength of Materials",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+      "raw_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+      "refined_markdown_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+      "locator": "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus"
+    },
+    {
+      "source_id": "applied-strength-materials-b156",
+      "label": "Applied Strength of Materials",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf",
+      "raw_sha256": "sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md",
+      "refined_markdown_sha256": "sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf",
+      "locator": "Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A"
+    }
+  ],
+  "source_primary_findings": [
+    {
+      "claim_id": "asd-allowable-stress-method-b156",
+      "claim_text": "Allowable or safety stress method compares computed stress against an allowable stress.",
+      "source_ids": [
+        "mechanics-strength-materials-b156"
+      ],
+      "locator": "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "bending-section-modulus-b156",
+      "claim_text": "Bending stress checks may use fb = M/S and rectangular section modulus S = b h^2 / 6.",
+      "source_ids": [
+        "mechanics-strength-materials-b156"
+      ],
+      "locator": "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "rectangular-shear-b156",
+      "claim_text": "Maximum shear stress in a rectangular beam is 1.5 times average shear, so fv = 3V/(2A).",
+      "source_ids": [
+        "applied-strength-materials-b156"
+      ],
+      "locator": "Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A",
+      "status": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "nscp-timber-adjustment-factors-b156",
+      "claim_text": "Exact NSCP timber adjustment-factor values.",
+      "reason": "No legitimate local NSCP extraction is available; the local NSCP PDF is corrupted per recovery findings."
+    },
+    {
+      "rejected_claim_id": "natcor-species-values-b156",
+      "claim_text": "Philippine timber species stress group values.",
+      "reason": "Not captured in the Batch 156 local source boundary."
+    },
+    {
+      "rejected_claim_id": "pd1096-wood-details-b156",
+      "claim_text": "Exact PD 1096 Rule 8 wood stress provisions.",
+      "reason": "Not captured for this batch and not needed for generic ASD mechanics refresh."
+    }
+  ],
+  "local_first_publication": {
+    "batch_id": "source-audited-batch-156-local-first",
+    "generated_at": "2026-05-14T05:56:30.196Z",
+    "question_edit_paths": [
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/dc29ab94-d8ca-4aec-9e18-1e5084f80961.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/79f576af-0763-4ca8-baf9-fc346d8e5959.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/2d840f08-ed72-4783-95b2-3ac3ad1c7217.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/3d38aa6d-f47f-4094-a00f-59b2a4dba55f.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/335c9bff-6b7d-446c-8652-12fb8b751353.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/96df75fa-d48a-4a5f-a6af-d9442b923714.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/20a01d1b-e767-4e9f-80a2-b7d91ceb0d31.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/010599cc-0cf8-486d-b6bd-9048f1cc6ec2.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/2edfcbd3-d95d-4555-b441-5ca08d22d895.json",
+      ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/ba6d4d7a-d64a-4036-8785-fa6077a5c58a.json"
+    ]
+  },
+  "sme_review": {
+    "reviewer": "codex-local-source-audit-batch-156",
+    "reviewed_at": "2026-05-14T05:56:30.196Z",
+    "status": "pass",
+    "notes": "Source-safe refresh uses only local mechanics sources and excludes unsupported exact code/table claims."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "batch": 156,
+  "batch_id": "source-audited-batch-156-local-first",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T05:56:30.196Z",
+  "requested_content_baseline": "80d1f473c",
+  "current_head_at_generation": "460938766",
+  "branch": "3dlab-gray-viewport-bg",
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "unsupported_exact_claim_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "article_checks": [
+    {
+      "cluster_id": "lea-strc-009-03",
+      "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "ui_block_validation": "pass",
+      "parser_errors": "pass",
+      "json_parse": "pass",
+      "placeholder_internal_note_source_gap_scan": "pass",
+      "placeholder_matches": [],
+      "unsupported_exact_claim_scan": "pass",
+      "unsupported_exact_claim_matches": [],
+      "linked_question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_parity": "pass",
+      "answer_key_change_review": "pass_no_answer_key_changes",
+      "answer_key_changes": [],
+      "stale_compose_error_scan": "pass",
+      "source_count": 2,
+      "source_hashes_present": "pass",
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "normalized_sha256": "sha256:8b47b67bdc0646d994114740cda621d2953838a9fe439a669fc131113f7808cb",
+      "candidate_sha256": "sha256:8b47b67bdc0646d994114740cda621d2953838a9fe439a669fc131113f7808cb",
+      "linked_questions_sha256": "sha256:0bbcea6f9eac6ad6ab55153482b3cea84866dc602ffa238331433dbd5b39b5dc",
+      "source_evidence_sha256": "sha256:3d5bae60da8f288aea78e939e1a2ae273ceb3668ef34d545e3141f8d1a609b4b"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "source_id": "mechanics-strength-materials-b156",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+      "raw_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+      "refined_markdown_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+      "refined_exists": true,
+      "status": "pass"
+    },
+    {
+      "source_id": "applied-strength-materials-b156",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf",
+      "raw_sha256": "sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md",
+      "refined_markdown_sha256": "sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf",
+      "refined_exists": true,
+      "status": "pass"
+    }
+  ],
+  "scoped_json_parse": {
+    "status": "pass",
+    "checked_path_count": 28
+  },
+  "source_boundary": {
+    "internet_sources_used": false,
+    "wikipedia_used": false,
+    "local_vitruvius_sources_first": true,
+    "source_map_raw": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-156/asd-mechanics.source-capture.md",
+    "source_map_refined": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-156/asd-mechanics.refined.md",
+    "note": "Batch 156 uses only local Mechanics and Applied Strength sources. Theory web sources and NSCP-dependent clusters remain excluded."
+  }
+}

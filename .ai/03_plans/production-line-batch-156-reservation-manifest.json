@@ -1,0 +1,121 @@
+{
+  "batch": 156,
+  "batch_id": "reservation-batch-156-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T13:45:43+08:00",
+  "baseline": "80d1f473c",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "continuation_gate_reservation",
+  "task": "Fixed non-overlapping reservation manifest for the one source-safe residual structural cluster unlocked after accepted Batch 155.",
+  "constraints": {
+    "fixed_manifest_only": true,
+    "no_supabase_push": true,
+    "no_deploy": true,
+    "no_db_mutation": true,
+    "no_main_merge": true,
+    "no_force_push": true,
+    "preserve_unrelated_dirty_files": true,
+    "no_lea_prac": true,
+    "do_not_stage_active_read_only_recovery_reports": true
+  },
+  "selection_rule": "Reserve only lea-strc-009-03 because completed structural recovery identified it as READY_WITH_LOCAL_SOURCES and local raw/refined mechanics sources were verified. Exclude theory clusters until authoritative web sources are locally captured with provenance; exclude NSCP-dependent structural/utilities clusters until a legitimate NSCP source is acquired and extracted.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS_FIXED_PRODUCTION_LINE_SCOPE",
+    "inspected_artifacts": [
+      ".ai/03_plans/production-line-batch-{087..155}-manifest.json",
+      ".ai/03_plans/production-line-batch-{146..155}-reservation-manifest.json",
+      ".ai/content-audit-export/source-audited-article-batch-{087..155}-local-first-*"
+    ],
+    "reserved_ids_found_in_fixed_production_line_accepted_artifacts": [],
+    "notes": [
+      "lea-strc-009-03 appears only in reservation/deferral artifacts, not as an accepted selected cluster.",
+      "Batch 155 accepted/pushed at 80d1f473c and consumed lea-matl-009-03 plus lea-matl-009-04."
+    ]
+  },
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-strc-009-03",
+      "slug": "lea-strc-009-03-core-concept",
+      "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "title": "Allowable Stress Design (ASD)",
+      "linked_question_count": 10,
+      "source_family": "generic_asd_mechanics_local_textbooks",
+      "source_candidates": [
+        {
+          "source_id": "mechanics-strength-materials-b156",
+          "source_family": "mechanics_strength_of_materials",
+          "source_type": "local_structural_mechanics_textbook",
+          "label": "Mechanics and Strength of Materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md"
+          },
+          "checked_locator": "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus.",
+          "raw_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+          "refined_markdown_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+          "exists_checked": true
+        },
+        {
+          "source_id": "applied-strength-materials-b156",
+          "source_family": "applied_strength_of_materials",
+          "source_type": "local_structural_mechanics_textbook",
+          "label": "Applied Strength of Materials",
+          "local_paths": {
+            "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf",
+            "refined_markdown": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md"
+          },
+          "checked_locator": "Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A.",
+          "raw_sha256": "sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0",
+          "refined_markdown_sha256": "sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf",
+          "exists_checked": true
+        }
+      ],
+      "internet_source_targets": [],
+      "why_sourceable": "The cluster can be rewritten around generic ASD mechanics already supported by local raw/refined structural textbooks: computed stress <= allowable stress, fb = M/S, S = bh^2/6 for rectangular bending, I = bh^3/12, and maximum rectangular shear as 1.5 V/A. It must not assert NSCP timber adjustment-factor values, Philippine species groups, NatCor stress tables, or exact Philippine code section numbers.",
+      "source_boundary": {
+        "included": [
+          "generic allowable/safety stress inequality",
+          "bending stress calculation with section modulus",
+          "rectangular section modulus and moment of inertia formulas",
+          "maximum shear stress in rectangular beams as 3V/(2A)",
+          "worked calculation discipline and unit consistency"
+        ],
+        "excluded": [
+          "NSCP 2015 timber adjustment-factor values",
+          "NatCor or Philippine species stress groups",
+          "Narra/Kamagong/Dao/Tangile species values",
+          "PD 1096 Rule 8 wood provisions not locally captured for this batch",
+          "ASEP/NSCP copyrighted text from corrupted or gray-area sources"
+        ]
+      },
+      "risks": [
+        "Original article and linked questions cite unsupported NSCP/PWES/NatCor-style timber values; Batch 156 must rewrite those to generic source-safe mechanics values or mark exact values as supplied-table dependent.",
+        "The local NSCP 2015 PDF is corrupted and cannot support exact NSCP timber claims.",
+        "This one-cluster batch is intentionally small because no other residual cluster is source-safe under the current local evidence."
+      ],
+      "non_overlap_proof": "Absent from accepted selected/reserved cluster scans through Batch 155 except as a structural deferral; not in the hard-blocked carry-forward list; not lea-prac."
+    }
+  ],
+  "excluded_clusters": {
+    "theory_ready_if_captured_from_web_not_reserved": [
+      "lea-theo-008-02",
+      "lea-theo-008-03"
+    ],
+    "hard_blocked_no_completed_capture": [
+      "lea-matl-009-02",
+      "lea-util-004-05",
+      "lea-util-004-08",
+      "lea-strc-004-02"
+    ],
+    "nscp_or_timber_still_blocked": [
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-009-01",
+      "lea-strc-009-02",
+      "lea-strc-012-01"
+    ]
+  },
+  "reservation_stop_condition": "Batch 156 reserves exactly one source-safe structural cluster, lea-strc-009-03, and opens no theory, NSCP-dependent, timber-species, utilities, materials CSI, or lea-prac work."
+}

@@ -1,14 +1,14 @@
 {
   "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:20e48c555c32b344558a4741890ba838dfa58fa18a0e6b8f99d7e1af33b68e0e",
+  "linked_questions_hash": "sha256:0bbcea6f9eac6ad6ab55153482b3cea84866dc602ffa238331433dbd5b39b5dc",
   "question_count": 10,
   "questions": [
     {
       "question_id": "dc29ab94-d8ca-4aec-9e18-1e5084f80961",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "A rectangular beam is 60 mm × 280 mm (actual dimensions). Applied shear V = 20 kN. Allowable shear stress Fv = 1.3 MPa. Calculate applied shear stress fv and determine compliance.",
+      "text": "A rectangular beam is 60 mm x 280 mm. Applied shear V = 20 kN. Supplied allowable shear stress Fv = 1.3 MPa. Calculate the maximum applied shear stress fv and determine compliance.",
       "options": [
         {
           "id": "a",
@@ -16,15 +16,15 @@
         },
         {
           "id": "b",
-          "text": "fv = 0.893 MPa < Fv = 1.3 MPa. The member PASSES the shear check."
+          "text": "fv = 1.190 MPa < Fv = 1.3 MPa. The member PASSES after using average shear only."
         },
         {
           "id": "c",
-          "text": "fv = 1.19 MPa < Fv = 1.3 MPa. The member PASSES the shear check."
+          "text": "fv = 0.595 MPa < Fv = 1.3 MPa. The member PASSES after dividing average shear by 2."
         },
         {
           "id": "d",
-          "text": "fv = 3.57 MPa > Fv = 1.3 MPa. The member FAILS the shear check."
+          "text": "fv = 3.571 MPa > Fv = 1.3 MPa. The member FAILS after doubling the maximum shear."
         }
       ],
       "correct_option_id": "a",
@@ -33,17 +33,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "fv = V/A (no 3/2 factor) = 20,000 / 16,800 = 1.19 MPa. This is the average shear, not the maximum; the 3/2 factor is mandatory.",
-        "d": "This is 0.5 × 1.786 MPa (missing the 3/2 factor entirely or dividing by 2 instead of multiplying).",
-        "correct": "A = 60 × 280 = 16,800 mm². V = 20 kN = 20,000 N. fv = 3V/(2A) = 3 × 20,000 / (2 × 16,800) = 60,000 / 33,600 = 1.786 MPa. Since 1.786 > 1.3, the check FAILS.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "A = 60 x 280 = 16,800 mm^2. V = 20,000 N. fv = 3V/(2A) = 60,000 / 33,600 = 1.786 MPa. Since 1.786 > 1.3, the member fails.",
+        "takeaway": "For rectangular sections, maximum shear is 1.5 times average V/A.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2.3 (Horizontal Shear Stress)",
+      "explanation": "A = 60 x 280 = 16,800 mm^2. V = 20,000 N. fv = 3V/(2A) = 60,000 / 33,600 = 1.786 MPa. Since 1.786 > 1.3, the member fails.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -51,30 +55,30 @@
       "model_id": "ALE-STRC-009-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:814f757c5258b4ea23d5d333a9deffab5cf51012f44c3778a4cc59780d72b17c"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:89fd63cf3f1a00d02b41bff3d2a81e0aae668b11548fe5313a9b692540bab591"
     },
     {
       "question_id": "79f576af-0763-4ca8-baf9-fc346d8e5959",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "A timber beam must satisfy both bending and shear checks. The bending check yields fb = 9 MPa (Fb = 12 MPa, OK), and the shear check yields fv = 1.6 MPa (Fv = 1.2 MPa, FAIL). What is the controlling factor, and what design change is most efficient?",
+      "text": "A member passes bending with fb = 9 MPa and supplied Fb = 12 MPa, but fails shear with fv = 1.6 MPa and supplied Fv = 1.2 MPa. What governs the redesign?",
       "options": [
         {
           "id": "a",
-          "text": "Shear is controlling. Increase width (b) or height (h) to reduce fv = 3V/(2bh). Height is less efficient than width for shear."
+          "text": "Shear governs because fv exceeds Fv; increase area, reduce shear demand, or use a source-supported higher allowable shear value."
         },
         {
           "id": "b",
-          "text": "Bending is controlling. Increase depth (h) to increase S = bh²/6 and reduce fb, ensuring the beam can handle greater loads"
+          "text": "Bending governs because any beam check starts with moment before shear."
         },
         {
           "id": "c",
-          "text": "Both checks fail equally; increase both strength and stiffness simultaneously, which may involve using a different material or cross-section"
+          "text": "The member passes because at least one ASD check is acceptable."
         },
         {
           "id": "d",
-          "text": "Shear failure is less critical; proceed with the current design and monitor in service, accepting the risk of potential failure"
+          "text": "The member can be approved if the uncited code factor is assumed to increase Fv."
         }
       ],
       "correct_option_id": "a",
@@ -83,17 +87,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Bending passes; it is not the controlling check. Increasing h (depth) _increases_ S and reduces fb, which has already passed.",
-        "d": "Both do not fail. The check that fails is the one that governs the design.",
-        "correct": "Shear fails (1.6 > 1.2); bending passes (9 < 12). Shear is the governing (limiting) check. To reduce fv, increase A = bh. Since fv is inversely proportional to h (in the denominator), increasing height helps, but _width_ has equal effect on A and is mechanically simpler to increase without affecting bending adversely.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "ASD requires each applicable stress check to satisfy demand <= allowable. Bending passes, but shear fails because 1.6 MPa > 1.2 MPa, so shear controls the redesign.",
+        "takeaway": "A passing bending check does not cancel a failing shear check.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2 (Combined Stress Checks); ASEAN TCS 1-2019 Section 6.2",
+      "explanation": "ASD requires each applicable stress check to satisfy demand <= allowable. Bending passes, but shear fails because 1.6 MPa > 1.2 MPa, so shear controls the redesign.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -101,30 +109,30 @@
       "model_id": "ALE-STRC-009-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ea97052ae206057a031919e65840e2f357c02841c90a6b155c0f54d091f241b9"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:2c6bdd4e257e56dcbbdee85c1c58e36f7a23396383d77adeff32ee97099173ae"
     },
     {
       "question_id": "2d840f08-ed72-4783-95b2-3ac3ad1c7217",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "A design uses a timber beam with section modulus S = 1,200,000 mm³ and allowable bending stress Fb = 11 MPa. What is the maximum moment the beam can safely carry?",
+      "text": "A rectangular timber beam has section modulus S = 1,200,000 mm^3 and supplied allowable bending stress Fb = 11 MPa. What maximum moment reaches the allowable bending limit?",
       "options": [
         {
           "id": "a",
-          "text": "M_max = 13.2 kN·m"
+          "text": "Mmax = 13.2 kN-m"
         },
         {
           "id": "b",
-          "text": "M_max = 132 kN·m"
+          "text": "Mmax = 132 kN-m"
         },
         {
           "id": "c",
-          "text": "M_max = 1.32 kN·m"
+          "text": "Mmax = 1.32 kN-m"
         },
         {
           "id": "d",
-          "text": "M_max = 1,320 kN·m"
+          "text": "Mmax = 1,320 kN-m"
         }
       ],
       "correct_option_id": "a",
@@ -133,17 +141,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "132 kN·m would require S = 12,000,000 mm³ (ten times larger).",
-        "d": "1.32 kN·m is 1/10 of the correct answer (dimensional error in converting N·mm to kN·m).",
-        "correct": "From fb = M/S, rearranging: M = fb × S. At the allowable limit, fb = Fb = 11 MPa = 11 N/mm². M_max = 11 × 1,200,000 = 13,200,000 N·mm = 13.2 kN·m.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "At the allowable limit, M = Fb x S = 11 N/mm^2 x 1,200,000 mm^3 = 13,200,000 N-mm = 13.2 kN-m.",
+        "takeaway": "Use N and mm consistently, then convert N-mm to kN-m.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2.1 (Bending Moment Capacity)",
+      "explanation": "At the allowable limit, M = Fb x S = 11 N/mm^2 x 1,200,000 mm^3 = 13,200,000 N-mm = 13.2 kN-m.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -151,30 +163,30 @@
       "model_id": "ALE-STRC-009-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0574acf0a09a94083665ad85b07309ad07274cec0cf896fe45e642eb2baf8ade"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:09907e460f568b7569ae993356247a12e9c36b0ff6dd46018e65c6337f489f44"
     },
     {
       "question_id": "3d38aa6d-f47f-4094-a00f-59b2a4dba55f",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "In ASD timber design, the bending stress check is fb ≤ Fb. What does fb represent?",
+      "text": "In an ASD bending check written as fb <= Fb, what does lowercase fb represent?",
       "options": [
         {
           "id": "a",
-          "text": "Applied bending stress, calculated as M/S"
+          "text": "Computed bending stress from the load effect and section modulus, fb = M/S."
         },
         {
           "id": "b",
-          "text": "Allowable bending stress, looked up from design tables"
+          "text": "The supplied allowable bending stress from the applicable source or item."
         },
         {
           "id": "c",
-          "text": "Fiber allowable stress, always equal to 12 MPa"
+          "text": "A universal timber value that is always 12 MPa."
         },
         {
           "id": "d",
-          "text": "Buckling factor for lateral instability"
+          "text": "A buckling coefficient for lateral instability."
         }
       ],
       "correct_option_id": "a",
@@ -183,17 +195,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Fb (uppercase) is the allowable stress, not fb.",
-        "d": "Fb is 'fiber allowable,' but its value varies by species and grade, not fixed at 12 MPa.",
-        "correct": "Lowercase fb = applied bending stress = M/S. It is computed from loads (moment M) and section properties (S). Uppercase Fb = allowable bending stress from tables.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Lowercase fb is the demand stress calculated from the applied moment and section modulus. Uppercase Fb is the supplied allowable bending stress.",
+        "takeaway": "Keep demand stresses and allowable stresses separate.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2 (Timber Design - ASD); ASEAN TCS 1-2019 Section 6.2",
+      "explanation": "Lowercase fb is the demand stress calculated from the applied moment and section modulus. Uppercase Fb is the supplied allowable bending stress.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -201,14 +217,14 @@
       "model_id": "ALE-STRC-009-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d039ab6c0f4e350cd857f31d38bc932cd556ee9cd941b7cb78428e409581f37d"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:9045b24b9940680dc272a88cd28502712cedbcac6e8e97d4df188c285d0a693a"
     },
     {
       "question_id": "335c9bff-6b7d-446c-8652-12fb8b751353",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "A timber beam experiences an applied moment M = 18 kN·m and has section modulus S = 800,000 mm³. Calculate the applied bending stress fb.",
+      "text": "A beam has M = 18 kN-m and S = 800,000 mm^3. What is the computed bending stress fb?",
       "options": [
         {
           "id": "a",
@@ -233,17 +249,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This results from incorrect unit conversion; 18 kN·m ÷ 800,000 × 10⁻⁹ (wrong power of 10).",
-        "d": "This is approximately 18 × 10⁶ / 800,000 / 1000 (extra factor of 1000). Units must be consistent (all N·mm or all kN·m with mm³ adjusted).",
-        "correct": "M = 18 kN·m = 18 × 10⁶ N·mm. fb = M/S = 18 × 10⁶ / 800,000 = 22.5 N/mm² = 22.5 MPa.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "M = 18,000,000 N-mm. fb = M/S = 18,000,000 / 800,000 = 22.5 N/mm^2 = 22.5 MPa.",
+        "takeaway": "The common error is failing to convert kN-m to N-mm.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2.1 (Bending Stress)",
+      "explanation": "M = 18,000,000 N-mm. fb = M/S = 18,000,000 / 800,000 = 22.5 N/mm^2 = 22.5 MPa.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -251,30 +271,30 @@
       "model_id": "ALE-STRC-009-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:64519e6073493cf2286bd253b964891703e3edf867eb769aff35bb9607682fc0"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:70a6a1a20bc7225160688bb0b55054dcb6971db5f294a2e9c44d87520430d731"
     },
     {
       "question_id": "96df75fa-d48a-4a5f-a6af-d9442b923714",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "A timber beam shows applied bending stress fb = 14 MPa and allowable bending stress Fb = 12 MPa. What design action is required?",
+      "text": "A member has computed bending stress fb = 14 MPa while the supplied allowable bending stress is Fb = 12 MPa. What source-safe design action is required?",
       "options": [
         {
           "id": "a",
-          "text": "The member fails the bending check (fb > Fb). Increase dimensions, select higher grade, or use stiffer species."
+          "text": "The bending check fails; resize the member, reduce the demand, or use a source-supported higher allowable value."
         },
         {
           "id": "b",
-          "text": "The member passes the check with a safety margin. No action is required, as the current design is sufficient for the applied loads."
+          "text": "The member passes because the computed value is close to the allowable value."
         },
         {
           "id": "c",
-          "text": "Reduce the applied load to make fb equal to Fb, ensuring that the stress does not exceed the allowable limit."
+          "text": "Use Fb/fb = 0.86 as an uncited strength increase factor."
         },
         {
           "id": "d",
-          "text": "Use the ratio Fb/fb = 0.86 as a strength reduction factor in subsequent calculations, which may affect future design considerations."
+          "text": "Ignore the check if shear is acceptable."
         }
       ],
       "correct_option_id": "a",
@@ -283,17 +303,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "The inequality is NOT satisfied (14 > 12); the member fails, not passes.",
-        "d": "Reducing load is not a structural design action; it changes the load case and requires project scope modification.",
-        "correct": "fb = 14 MPa exceeds Fb = 12 MPa. The member is undersized and non-compliant. Redesign is mandatory: increase b or h (depth h has greatest effect due to h² term), specify a higher grade, or select a higher-strength species.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "The ASD inequality is not satisfied because 14 MPa > 12 MPa. The member needs redesign or a source-supported allowable value.",
+        "takeaway": "An ASD check fails whenever demand stress exceeds allowable stress.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2 (ASD Timber Design Criteria)",
+      "explanation": "The ASD inequality is not satisfied because 14 MPa > 12 MPa. The member needs redesign or a source-supported allowable value.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -301,30 +325,30 @@
       "model_id": "ALE-STRC-009-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:925188e8b0cb593bf13802550e5b3fced3fc3d956a7ef7b1e7fa95a4d5e1fd44"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:3f97e7a7d7ee1b3e1804ece6762513d2d7655ffa5ce6557272086796bbd6e94d"
     },
     {
       "question_id": "20a01d1b-e767-4e9f-80a2-b7d91ceb0d31",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "For a rectangular timber section, what is the moment of inertia I used in deflection checks?",
+      "text": "For a rectangular section bent about its strong axis, what moment of inertia I is used for stiffness checks?",
       "options": [
         {
           "id": "a",
-          "text": "I = bh³/12"
+          "text": "I = b h^3 / 12"
         },
         {
           "id": "b",
-          "text": "I = bh²/6"
+          "text": "I = b h^2 / 6"
         },
         {
           "id": "c",
-          "text": "I = bh²/12"
+          "text": "I = b h^2 / 12"
         },
         {
           "id": "d",
-          "text": "I = b³h/12"
+          "text": "I = b^3 h / 12 for the same strong-axis orientation."
         }
       ],
       "correct_option_id": "a",
@@ -333,17 +357,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "I = bh²/6 is the section modulus S, not moment of inertia. S is used for stress; I is used for deflection.",
-        "d": "I = bh²/12 is dimensionally incorrect for moment of inertia (missing one h).",
-        "correct": "I = bh³/12. Moment of inertia is proportional to the _cube_ of the larger dimension (depth h in vertical bending). The 12 is the denominator for rectangular sections.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "For the usual strong-axis rectangular beam orientation, I = b h^3 / 12. Section modulus S = b h^2 / 6 is a different property used for stress.",
+        "takeaway": "Use I for stiffness and S for bending stress.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2.2 (Section Properties); structural mechanics textbooks",
+      "explanation": "For the usual strong-axis rectangular beam orientation, I = b h^3 / 12. Section modulus S = b h^2 / 6 is a different property used for stress.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -351,30 +379,30 @@
       "model_id": "ALE-STRC-009-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7d824799afe18c1296b202bedcd2fd54e578e537d091d1487e7c1a8be1ef1f23"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:aa938bea0260efd3cd95a4619d8de37db0e70b675b855523727a69a6cce11195"
     },
     {
       "question_id": "010599cc-0cf8-486d-b6bd-9048f1cc6ec2",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "A timber beam of nominal dimensions 4×10 (actual 89 mm × 240 mm) is designed for bending using Fb = 10 MPa from the design table. During construction, green timber (higher moisture) is delivered, and the engineer must apply a moisture adjustment factor of 0.9. What is the effective allowable bending stress for the green timber, and what design action is required if the applied stress fb = 9.5 MPa?",
+      "text": "An item supplies Fb = 10 MPa and also supplies a service adjustment factor of 0.90. If computed fb = 9.5 MPa, what is the effective allowable and result?",
       "options": [
         {
           "id": "a",
-          "text": "Effective Fb = 9.0 MPa. Since fb = 9.5 MPa > 9.0 MPa, the member FAILS under green conditions and must be reinforced or replaced with kiln-dried timber."
+          "text": "Effective Fb = 9.0 MPa; the member fails because 9.5 MPa > 9.0 MPa."
         },
         {
           "id": "b",
-          "text": "Effective Fb = 10 MPa (adjustment factors apply only to strength, not to design); the member remains acceptable, as the design stress is within allowable limits"
+          "text": "Effective Fb = 10.0 MPa; the member passes because supplied factors are optional."
         },
         {
           "id": "c",
-          "text": "Effective Fb = 11.1 MPa (adjustment increases allowable); the member improves under green conditions, providing additional safety margin"
+          "text": "Effective Fb = 11.1 MPa; the member passes because the factor increases strength."
         },
         {
           "id": "d",
-          "text": "The moisture adjustment factor only affects compression; bending stresses are unaffected, allowing the member to be used without modification"
+          "text": "Effective Fb = 0.90 MPa; the member fails because factors replace stresses."
         }
       ],
       "correct_option_id": "a",
@@ -383,17 +411,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Adjustment factors are mandatory and directly applied to allowable stress. Ignoring them is non-compliant.",
-        "d": "Green timber has lower strength; the adjustment factor < 1.0, reducing Fb, not increasing it.",
-        "correct": "Adjustment factors multiply the tabulated allowable stress. Fb_green = Fb_dry × 0.9 = 10 × 0.9 = 9.0 MPa. Applied fb = 9.5 MPa exceeds the adjusted allowable (9.0 MPa). The member fails under green conditions and cannot be used without redesign or drying.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Use the value supplied by the item: effective Fb = 10 x 0.90 = 9.0 MPa. Since fb = 9.5 MPa exceeds 9.0 MPa, the member fails.",
+        "takeaway": "This batch only uses adjustment values when the item supplies them explicitly.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.3.2 (Adjustment Factors - Wet Service); ASEAN TCS 1-2019 Section 5.2",
+      "explanation": "Use the value supplied by the item: effective Fb = 10 x 0.90 = 9.0 MPa. Since fb = 9.5 MPa exceeds 9.0 MPa, the member fails.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.9,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -401,30 +433,30 @@
       "model_id": "ALE-STRC-009-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c6c26db178e6fcf6f1187f6be86c0b4202e942aca34b2f507eb43f532bc0cf4f"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:119b112d3107556052b509436f546bfd6e56d04fdb212898b43a75a4b397b525"
     },
     {
       "question_id": "2edfcbd3-d95d-4555-b441-5ca08d22d895",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "Identify the correct formula for horizontal shear stress in a rectangular timber section.",
+      "text": "Which formula gives maximum shear stress in a rectangular section for this source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "fv = 3V/(2A), where A = bh"
+          "text": "fv = 3V/(2A), where A = b h."
         },
         {
           "id": "b",
-          "text": "fv = V/A, where A = bh, which is a simplified version often used for quick calculations"
+          "text": "fv = V/A, where A = b h, because average shear is the maximum."
         },
         {
           "id": "c",
-          "text": "fv = 1.5V/A, where A = bh/2, which is incorrect due to the division by 2"
+          "text": "fv = V/(2A), because shear is shared by two sides."
         },
         {
           "id": "d",
-          "text": "fv = V/(bh²), which is a common error in understanding the formula"
+          "text": "fv = V/(b h^2), because depth is squared in every beam formula."
         }
       ],
       "correct_option_id": "a",
@@ -433,17 +465,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "fv = V/A (no 3/2 factor) is the average shear; it underestimates maximum shear by 50%.",
-        "d": "This is dimensionally incorrect; bh/2 is not the appropriate area for shear stress.",
-        "correct": "fv = 3V/(2A) is the exact formula for rectangular sections. The 3/2 factor accounts for the parabolic shear distribution, with peak shear at the neutral axis.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "The rectangular maximum shear stress is 1.5 times average shear, so fv = 3V/(2A) with A = b h.",
+        "takeaway": "Do not use average shear as the maximum rectangular shear stress.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2.3 (Horizontal Shear); ASEAN TCS 1-2019 Section 6.2",
+      "explanation": "The rectangular maximum shear stress is 1.5 times average shear, so fv = 3V/(2A) with A = b h.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -451,30 +487,30 @@
       "model_id": "ALE-STRC-009-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d41ea0fe88da24cd0fff5bc8b5b10cb660545cdd07b3aea9e53c18695a733768"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:ae48cc037ff51988d65026379f458721acddd54c801e61c2490db249299eab43"
     },
     {
       "question_id": "ba6d4d7a-d64a-4036-8785-fa6077a5c58a",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
       "topic_id": "0f628684-dc15-4ec7-902d-f21f458865c7",
-      "text": "A rectangular timber beam is 80 mm wide × 250 mm deep. What is the section modulus S?",
+      "text": "A rectangular beam is 80 mm wide and 250 mm deep. What is its section modulus S?",
       "options": [
         {
           "id": "a",
-          "text": "S = 833,333 mm³"
+          "text": "S = 833,333 mm^3"
         },
         {
           "id": "b",
-          "text": "S = 20,000 mm³"
+          "text": "S = 20,000 mm^3"
         },
         {
           "id": "c",
-          "text": "S = 130,208 mm³"
+          "text": "S = 130,208 mm^3"
         },
         {
           "id": "d",
-          "text": "S = 260,417 mm³"
+          "text": "S = 260,417 mm^3"
         }
       ],
       "correct_option_id": "a",
@@ -483,17 +519,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "S = bh/6 (missing h exponent) = 80 × 250 / 6 = 3,333 mm³. This is wrong; the exponent is mandatory.",
-        "d": "This is I/r calculation or a dimensional error; it does not match the formula.",
-        "correct": "S = bh²/6 = 80 × 250² / 6 = 80 × 62,500 / 6 = 5,000,000 / 6 = 833,333 mm³. The h² (height squared) is critical.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "S = b h^2 / 6 = 80 x 250^2 / 6 = 80 x 62,500 / 6 = 833,333 mm^3.",
+        "takeaway": "The depth is squared in rectangular section modulus.",
+        "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+        "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+        "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+        "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 6.2.2 (Section Properties for Timber)",
+      "explanation": "S = b h^2 / 6 = 80 x 250^2 / 6 = 80 x 62,500 / 6 = 833,333 mm^3.",
+      "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_structural_mechanics",
+      "practice_context": [
+        "structural mechanics",
+        "source-audited batch 156"
+      ],
       "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -501,8 +541,8 @@
       "model_id": "ALE-STRC-009-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a91241bff0baf6ef6f06967d4e9a2e852e8c22bda9238a126246fa7bb7290ff8"
+      "updated_at": "2026-05-14T05:56:30.196Z",
+      "content_hash": "sha256:1c0720f83fc8758afbe262577be66510269d40ea647e1043a2df1413a41df3c4"
     }
   ]
 }

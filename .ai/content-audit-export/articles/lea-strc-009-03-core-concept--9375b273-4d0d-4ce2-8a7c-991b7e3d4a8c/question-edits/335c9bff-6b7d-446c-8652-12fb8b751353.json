@@ -1,0 +1,85 @@
+{
+  "question_id": "335c9bff-6b7d-446c-8652-12fb8b751353",
+  "baseline_hash": "sha256:443c57b8f2fbacbf9af034a903a78f94c4540b85117cacec73c42904683bfd08",
+  "action": "replace",
+  "reason": "Batch 156 source-audited rewrite: constrain ASD question to locally verified mechanics sources and remove unsupported Philippine timber-table claims.",
+  "approved_by": "codex-local-source-audit-batch-156",
+  "approved_at": "2026-05-14T05:56:30.196Z",
+  "source_audit_support": {
+    "parent_article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+    "parent_article_slug": "lea-strc-009-03-core-concept",
+    "batch_id": "source-audited-batch-156-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers were preserved from the baseline question while unsupported citations and rationales were replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus; Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A",
+    "checked_markdown_lines": [
+      "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus",
+      "Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "mechanics-strength-materials-b156",
+        "label": "Mechanics and Strength of Materials",
+        "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+        "raw_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+        "refined_markdown_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+        "locator": "Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus"
+      },
+      {
+        "source_id": "applied-strength-materials-b156",
+        "label": "Applied Strength of Materials",
+        "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf",
+        "raw_sha256": "sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md",
+        "refined_markdown_sha256": "sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf",
+        "locator": "Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A"
+      }
+    ],
+    "local_source_safe_action": "Question rewritten around generic ASD inequality, bending stress, section modulus, moment of inertia, rectangular maximum shear, or explicitly supplied factors.",
+    "excluded_claims": [
+      "NSCP timber adjustment-factor values",
+      "Philippine timber species stress groups",
+      "Uncaptured PD 1096 wood provision details"
+    ]
+  },
+  "proposed": {
+    "text": "A beam has M = 18 kN-m and S = 800,000 mm^3. What is the computed bending stress fb?",
+    "options": [
+      {
+        "id": "a",
+        "text": "fb = 22.5 MPa"
+      },
+      {
+        "id": "b",
+        "text": "fb = 0.0225 MPa"
+      },
+      {
+        "id": "c",
+        "text": "fb = 44.4 MPa"
+      },
+      {
+        "id": "d",
+        "text": "fb = 225 MPa"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "M = 18,000,000 N-mm. fb = M/S = 18,000,000 / 800,000 = 22.5 N/mm^2 = 22.5 MPa.",
+      "takeaway": "The common error is failing to convert kN-m to N-mm.",
+      "b": "Incorrect within the Batch 156 source boundary. Recheck the ASD inequality, rectangular section property, or unit conversion.",
+      "c": "Incorrect within the Batch 156 source boundary. This option uses the wrong arithmetic, property, or source assumption.",
+      "d": "Incorrect within the Batch 156 source boundary. Do not import unsupported values or formulas.",
+      "source_boundary": "Batch 156 supports generic ASD mechanics only. Exact Philippine timber table values must be supplied by the item or deferred until locally captured."
+    },
+    "explanation": "M = 18,000,000 N-mm. fb = M/S = 18,000,000 / 800,000 = 22.5 N/mm^2 = 22.5 MPa.",
+    "code_citation": "Batch 156 local source map: mechanics-strength-materials-b156 and applied-strength-materials-b156.",
+    "application_context": "source_audited_structural_mechanics",
+    "practice_context": [
+      "structural mechanics",
+      "source-audited batch 156"
+    ],
+    "model_id": "ALE-STRC-009-03-005"
+  }
+}

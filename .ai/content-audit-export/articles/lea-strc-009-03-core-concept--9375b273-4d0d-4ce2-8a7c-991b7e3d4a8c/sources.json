@@ -1,32 +1,32 @@
 {
   "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:733bb2209ab4b8e4b9e92e06e3f384e14a31245371a6aa8c0667e26193939ce8",
+  "sources_hash": "sha256:1f0523c997ff010f300142f6d7f7c430292be1a2eefb93a2dcdedd2918ae0397",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "dd9fffae-c709-47b3-8555-7e2646fa0068",
+      "source_id": "mechanics-strength-materials-b156",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
-      "label": "PD 1096 National Building Code, Rule 8 (Wood), Sections 801-811. Tabulated allowable stresses from Philippine Wood Engineering Society (PWES) or UAP Document 208",
+      "label": "Mechanics and Strength of Materials",
       "url": null,
-      "source_type": "primary_law",
-      "description": "Cross-referenced with ASEAN Timber Standard TCS 1-2019, Section 6.2: Stress Limit States (ASD method)",
-      "is_verified": false,
+      "source_type": "local_structural_mechanics_textbook",
+      "description": "Batch 156 local-first source capture for generic ASD mechanics only.; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf; raw_pdf_sha256=sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f; raw_pdf_bytes=27722613; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md; refined_markdown_sha256=sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385; refined_markdown_bytes=1093958; checked_locator=Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus; source_boundary=generic allowable-stress inequality, bending stress with section modulus, rectangular section properties, and maximum rectangular shear only",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T05:56:30.196Z",
+      "updated_at": "2026-05-14T05:56:30.196Z"
     },
     {
-      "source_id": "1861dab9-c3a9-4e4d-93e1-9b0971e3cbe2",
+      "source_id": "applied-strength-materials-b156",
       "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
-      "label": "Timber Engineering by Leland Selbo, Timber as an Engineering Material (textbook reference for mechanics verification)",
+      "label": "Applied Strength of Materials",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_structural_mechanics_textbook",
+      "description": "Batch 156 local-first source capture for generic ASD mechanics only.; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf; raw_pdf_sha256=sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0; raw_pdf_bytes=75188141; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md; refined_markdown_sha256=sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf; refined_markdown_bytes=1777604; checked_locator=Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A; source_boundary=generic allowable-stress inequality, bending stress with section modulus, rectangular section properties, and maximum rectangular shear only",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T05:56:30.196Z",
+      "updated_at": "2026-05-14T05:56:30.196Z"
     }
   ]
 }

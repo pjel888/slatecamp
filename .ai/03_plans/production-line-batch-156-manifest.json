@@ -1,0 +1,174 @@
+{
+  "batch": 156,
+  "batch_id": "source-audited-batch-156-local-first",
+  "requested_content_baseline": "80d1f473c",
+  "current_head_at_generation": "460938766",
+  "reservation_baseline": "80d1f473c",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T05:56:30.196Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-156-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-strc-009-03"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-strc-009-03",
+      "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "slug": "lea-strc-009-03-core-concept",
+      "title": "Allowable Stress Design (ASD)",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "status": "source_audited_local_first_generic_asd_mechanics",
+      "source_ids": [
+        "mechanics-strength-materials-b156",
+        "applied-strength-materials-b156"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "normalized_sha256": "sha256:8b47b67bdc0646d994114740cda621d2953838a9fe439a669fc131113f7808cb",
+      "candidate_sha256": "sha256:8b47b67bdc0646d994114740cda621d2953838a9fe439a669fc131113f7808cb",
+      "source_evidence_sha256": "sha256:3d5bae60da8f288aea78e939e1a2ae273ceb3668ef34d545e3141f8d1a609b4b",
+      "linked_questions_sha256": "sha256:0bbcea6f9eac6ad6ab55153482b3cea84866dc602ffa238331433dbd5b39b5dc",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "source_boundary": {
+        "included": [
+          "generic allowable/safety stress inequality",
+          "bending stress calculation with section modulus",
+          "rectangular section modulus and moment of inertia formulas",
+          "maximum shear stress in rectangular beams as 3V/(2A)",
+          "worked calculation discipline and unit consistency"
+        ],
+        "excluded": [
+          "NSCP 2015 timber adjustment-factor values",
+          "NatCor or Philippine species stress groups",
+          "Narra/Kamagong/Dao/Tangile species values",
+          "PD 1096 Rule 8 wood provisions not locally captured for this batch",
+          "ASEP/NSCP copyrighted text from corrupted or gray-area sources"
+        ]
+      },
+      "excluded_claims": [
+        "NSCP 2015 timber adjustment-factor values",
+        "NatCor or Philippine species stress groups",
+        "Narra/Kamagong/Dao/Tangile species values",
+        "PD 1096 Rule 8 wood provisions not locally captured for this batch",
+        "ASEP/NSCP copyrighted text from corrupted or gray-area sources"
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/compose-report.json",
+        "composeErrorDeletion": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/compose-error.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/scoped-validation-batch-156.json",
+        "taxonomy": ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/taxonomy.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/dc29ab94-d8ca-4aec-9e18-1e5084f80961.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/79f576af-0763-4ca8-baf9-fc346d8e5959.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/2d840f08-ed72-4783-95b2-3ac3ad1c7217.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/3d38aa6d-f47f-4094-a00f-59b2a4dba55f.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/335c9bff-6b7d-446c-8652-12fb8b751353.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/96df75fa-d48a-4a5f-a6af-d9442b923714.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/20a01d1b-e767-4e9f-80a2-b7d91ceb0d31.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/010599cc-0cf8-486d-b6bd-9048f1cc6ec2.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/2edfcbd3-d95d-4555-b441-5ca08d22d895.json",
+          ".ai/content-audit-export/articles/lea-strc-009-03-core-concept--9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c/question-edits/ba6d4d7a-d64a-4036-8785-fa6077a5c58a.json"
+        ],
+        "sourceMaps": [
+          "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-156/asd-mechanics.source-capture.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-156/asd-mechanics.refined.md"
+        ]
+      }
+    }
+  ],
+  "source_records": [
+    {
+      "cluster_id": "lea-strc-009-03",
+      "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "source_id": "mechanics-strength-materials-b156",
+      "label": "Mechanics and Strength of Materials",
+      "source_type": "local_structural_mechanics_textbook",
+      "description": "Batch 156 local-first source capture for generic ASD mechanics only.; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf; raw_pdf_sha256=sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f; raw_pdf_bytes=27722613; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md; refined_markdown_sha256=sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385; refined_markdown_bytes=1093958; checked_locator=Refined markdown lines 8439-8545 for allowable/safety stress method and lines 11945-11973 for section modulus, allowable bending stress check, and rectangular-section modulus; source_boundary=generic allowable-stress inequality, bending stress with section modulus, rectangular section properties, and maximum rectangular shear only"
+    },
+    {
+      "cluster_id": "lea-strc-009-03",
+      "article_id": "9375b273-4d0d-4ce2-8a7c-991b7e3d4a8c",
+      "source_id": "applied-strength-materials-b156",
+      "label": "Applied Strength of Materials",
+      "source_type": "local_structural_mechanics_textbook",
+      "description": "Batch 156 local-first source capture for generic ASD mechanics only.; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf; raw_pdf_sha256=sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0; raw_pdf_bytes=75188141; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md; refined_markdown_sha256=sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf; refined_markdown_bytes=1777604; checked_locator=Refined markdown lines 25013-25023 for maximum shear at the neutral axis and lines 25698-25776 for the rectangular beam maximum shear formula, including maximum shear as 1.5 times average V/A; source_boundary=generic allowable-stress inequality, bending stress with section modulus, rectangular section properties, and maximum rectangular shear only"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "source_id": "mechanics-strength-materials-b156",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Mechanics and Strength of Materials.pdf",
+      "raw_sha256": "sha256:3e2ec9a0a52f3b2f000ab71c5bb41a39e6eaf89843a576c66c33e2b856500c7f",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Mechanics and Strength of Materials.md",
+      "refined_markdown_sha256": "sha256:a7b53be5d55ff45c60fa56529fc629cc6c37ce018bec5c538027e331b21d6385",
+      "refined_exists": true,
+      "status": "pass"
+    },
+    {
+      "source_id": "applied-strength-materials-b156",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Applied Strength of Materials.pdf",
+      "raw_sha256": "sha256:0bade504a124cad6a63e2b14e3767cab77c4a48efec9d12ccf3312a4c6d6a8a0",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Applied Strength of Materials.md",
+      "refined_markdown_sha256": "sha256:0b54595c44af457a3e95194d59e2ae9da813a8585a633ce14d87ba94046c4ddf",
+      "refined_exists": true,
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "unsupported_exact_claim_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "excluded_from_batch_156": {
+    "theory_ready_if_captured_from_web_not_reserved": [
+      "lea-theo-008-02",
+      "lea-theo-008-03"
+    ],
+    "hard_blocked_no_completed_capture": [
+      "lea-matl-009-02",
+      "lea-util-004-05",
+      "lea-util-004-08",
+      "lea-strc-004-02"
+    ],
+    "nscp_or_timber_still_blocked": [
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-009-01",
+      "lea-strc-009-02",
+      "lea-strc-012-01"
+    ]
+  },
+  "stop_condition": "Stop after the single reserved cluster lea-strc-009-03 is source-audited, locally validated, QA-reviewed, and handed off for exact staging only."
+}
