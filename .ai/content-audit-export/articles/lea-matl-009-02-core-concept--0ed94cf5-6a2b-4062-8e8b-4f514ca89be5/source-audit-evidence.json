@@ -1,0 +1,206 @@
+{
+  "batch_id": "source-audited-batch-158-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T06:41:53.915Z",
+  "target": {
+    "cluster_id": "lea-matl-009-02",
+    "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+    "slug": "lea-matl-009-02-core-concept",
+    "title": "CSI MasterFormat",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+    "normalized_sha256": "sha256:abd9c20e4c609e95f325bccc5ef4ee3c86c81fd07940797df5e5b0ef9b8b0734",
+    "candidate_sha256": "sha256:abd9c20e4c609e95f325bccc5ef4ee3c86c81fd07940797df5e5b0ef9b8b0734",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/candidate.md"
+  },
+  "classification": {
+    "local_first_batch": "158",
+    "source_sensitivity": "masterformat_sectionformat",
+    "source_risk_tier": "official_web_source_primary_required",
+    "requires_raw_web_capture": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": [
+      "No Supabase upload was run for Batch 158; this is a local-only production-line handoff."
+    ]
+  },
+  "raw_web_gate": {
+    "status": "PASS",
+    "official_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_map_raw": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+    "source_metadata": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+    "source_map_refined": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md",
+    "checked_sources": [
+      {
+        "source_id": "csi-standards-overview-b158",
+        "label": "Construction Specifications Institute, Standards Overview: MasterFormat",
+        "url": "https://www.csiresources.org/standards/overview",
+        "source_type": "official_web_page",
+        "publisher": "Construction Specifications Institute",
+        "locator": "web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+      },
+      {
+        "source_id": "csi-masterformat-2020-ebook-toc-b158",
+        "label": "Construction Specifications Institute, MasterFormat 2020 Edition public ebook table of contents",
+        "url": "https://ebooks.csiresources.org/1e7bnm9/",
+        "source_type": "official_web_preview",
+        "publisher": "Construction Specifications Institute",
+        "locator": "web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+      },
+      {
+        "source_id": "wbdg-specsintact-sectionformat-b158",
+        "label": "WBDG SpecsIntact Help, SectionFormat and PageFormat",
+        "url": "https://www.wbdg.org/tools/specsintact/Help/SIGeneral/SectionFormat.htm",
+        "source_type": "government_reference",
+        "publisher": "Whole Building Design Guide / SpecsIntact",
+        "locator": "web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+      }
+    ],
+    "blockers": [],
+    "note": "Shell curl could not resolve official hosts in the sandbox, so the local raw source layer stores official-source provenance and claim-safe source-capture excerpts from Codex web.open retrieval."
+  },
+  "scenario_enrichment": {
+    "policy_status": "satisfied",
+    "eligibility_status": "included",
+    "blocker_status": "none",
+    "notes": "Batch 158 includes a source-safe specification navigation scenario constrained to captured MasterFormat and SectionFormat sources."
+  },
+  "thin_needs_expansion": {
+    "previous_status": "thin",
+    "batch_158_status": "resolved_with_source_safe_expansion",
+    "evidence": "normalized.md contains THIN_NEEDS_EXPANSION resolution, scenario, question alignment, source-primary finding, and explicit source limits."
+  },
+  "question_alignment": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_changes": 0,
+    "scope": "MasterFormat purpose, visible public division navigation, SectionFormat three-part order, and source-safe coordination logic."
+  },
+  "checked_sources": [
+    {
+      "source_id": "csi-standards-overview-b158",
+      "label": "Construction Specifications Institute, Standards Overview: MasterFormat",
+      "url": "https://www.csiresources.org/standards/overview",
+      "source_type": "official_web_page",
+      "publisher": "Construction Specifications Institute",
+      "locator": "web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status.",
+      "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+      "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+    },
+    {
+      "source_id": "csi-masterformat-2020-ebook-toc-b158",
+      "label": "Construction Specifications Institute, MasterFormat 2020 Edition public ebook table of contents",
+      "url": "https://ebooks.csiresources.org/1e7bnm9/",
+      "source_type": "official_web_preview",
+      "publisher": "Construction Specifications Institute",
+      "locator": "web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles.",
+      "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+      "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+    },
+    {
+      "source_id": "wbdg-specsintact-sectionformat-b158",
+      "label": "WBDG SpecsIntact Help, SectionFormat and PageFormat",
+      "url": "https://www.wbdg.org/tools/specsintact/Help/SIGeneral/SectionFormat.htm",
+      "source_type": "government_reference",
+      "publisher": "Whole Building Design Guide / SpecsIntact",
+      "locator": "web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure.",
+      "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+      "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+    }
+  ],
+  "source_primary_findings": [
+    {
+      "claim_id": "masterformat-purpose-b158",
+      "claim_text": "MasterFormat organizes construction information for specifications and cost information by work results, materials, and methods.",
+      "source_ids": [
+        "csi-standards-overview-b158"
+      ],
+      "locator": "web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "masterformat-visible-division-titles-b158",
+      "claim_text": "Public CSI 2020 TOC supports the visible division titles used for high-yield navigation.",
+      "source_ids": [
+        "csi-masterformat-2020-ebook-toc-b158"
+      ],
+      "locator": "web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles.",
+      "status": "PASS"
+    },
+    {
+      "claim_id": "sectionformat-three-part-order-b158",
+      "claim_text": "SectionFormat organizes sections into Part 1 General, Part 2 Products, and Part 3 Execution.",
+      "source_ids": [
+        "wbdg-specsintact-sectionformat-b158"
+      ],
+      "locator": "web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure.",
+      "status": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "batch-158-excluded-1",
+      "claim_text": "Paid MasterFormat tables not visible in the official public preview.",
+      "reason": "Outside the Batch 158 captured official/public source boundary."
+    },
+    {
+      "rejected_claim_id": "batch-158-excluded-2",
+      "claim_text": "Leaked or gray-area MasterFormat PDFs.",
+      "reason": "Outside the Batch 158 captured official/public source boundary."
+    },
+    {
+      "rejected_claim_id": "batch-158-excluded-3",
+      "claim_text": "Uncaptured DPWH standard specification details.",
+      "reason": "Outside the Batch 158 captured official/public source boundary."
+    },
+    {
+      "rejected_claim_id": "batch-158-excluded-4",
+      "claim_text": "Board of Architecture educational guideline claims not locally captured for Batch 158.",
+      "reason": "Outside the Batch 158 captured official/public source boundary."
+    },
+    {
+      "rejected_claim_id": "batch-158-excluded-5",
+      "claim_text": "Uncaptured ASTM/ACI exact test methods, edition claims, and numeric acceptance thresholds.",
+      "reason": "Outside the Batch 158 captured official/public source boundary."
+    }
+  ],
+  "local_first_publication": {
+    "batch_id": "source-audited-batch-158-local-first",
+    "generated_at": "2026-05-14T06:41:53.915Z",
+    "question_edit_paths": [
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/1a5864dc-ab7d-4362-bab2-dcaf66272723.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/74eba686-bd8c-4ef9-8ef9-8737d665dd19.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/7e104218-5338-4c24-a709-de5b132b5890.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/2e6723f0-5ed3-4907-a007-413c6b602739.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/4776bd81-4c8f-43c3-a82b-58233c17a354.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/8c38503e-b527-41ce-9ba5-b484019cdabd.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/79402125-80a4-4032-92aa-c3ec87dbf8a9.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/95df8e2b-8c8b-40bd-91a8-62eee4ab76f7.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/116f42de-5cee-407a-b14b-318bec2aa3f6.json",
+      ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/1a970a29-bfa1-4c4b-9650-0b0feb6063ef.json"
+    ]
+  },
+  "sme_review": {
+    "reviewer": "codex-local-source-audit-batch-158",
+    "reviewed_at": "2026-05-14T06:41:53.915Z",
+    "status": "pass",
+    "notes": "Self-QA passed after official-source web capture, article rewrite, linked-question parity, and source-boundary exclusions."
+  }
+}

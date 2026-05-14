@@ -1,0 +1,48 @@
+{
+  "batch": 158,
+  "batch_id": "source-audited-batch-158-local-first",
+  "generated_at": "2026-05-14T06:41:53.915Z",
+  "target_cluster": "lea-matl-009-02",
+  "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+  "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md",
+  "capture_policy": {
+    "raw_source_first": true,
+    "authoritative_web_sources_only": true,
+    "general_encyclopedia_used": false,
+    "pirated_or_leaked_sources_used": false,
+    "shell_network_status": "curl DNS failed in sandbox; provenance captured from Codex web.open official-source retrieval."
+  },
+  "sources": [
+    {
+      "source_id": "csi-standards-overview-b158",
+      "label": "Construction Specifications Institute, Standards Overview: MasterFormat",
+      "url": "https://www.csiresources.org/standards/overview",
+      "source_type": "official_web_page",
+      "publisher": "Construction Specifications Institute",
+      "locator": "web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status."
+    },
+    {
+      "source_id": "csi-masterformat-2020-ebook-toc-b158",
+      "label": "Construction Specifications Institute, MasterFormat 2020 Edition public ebook table of contents",
+      "url": "https://ebooks.csiresources.org/1e7bnm9/",
+      "source_type": "official_web_preview",
+      "publisher": "Construction Specifications Institute",
+      "locator": "web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles."
+    },
+    {
+      "source_id": "wbdg-specsintact-sectionformat-b158",
+      "label": "WBDG SpecsIntact Help, SectionFormat and PageFormat",
+      "url": "https://www.wbdg.org/tools/specsintact/Help/SIGeneral/SectionFormat.htm",
+      "source_type": "government_reference",
+      "publisher": "Whole Building Design Guide / SpecsIntact",
+      "locator": "web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure."
+    }
+  ],
+  "use_limits": [
+    "Paid MasterFormat tables not visible in the official public preview.",
+    "Leaked or gray-area MasterFormat PDFs.",
+    "Uncaptured DPWH standard specification details.",
+    "Board of Architecture educational guideline claims not locally captured for Batch 158.",
+    "Uncaptured ASTM/ACI exact test methods, edition claims, and numeric acceptance thresholds."
+  ]
+}

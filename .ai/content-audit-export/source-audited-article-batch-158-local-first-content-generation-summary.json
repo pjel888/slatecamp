@@ -1,0 +1,31 @@
+{
+  "batch": 158,
+  "batch_id": "source-audited-batch-158-local-first",
+  "generated_at": "2026-05-14T06:41:53.915Z",
+  "current_head_at_generation": "ff7679369",
+  "content_generation": {
+    "article_count": 1,
+    "article_edits": 1,
+    "candidate_edits": 1,
+    "ui_block_edits": 0,
+    "linked_question_files_edited": 1,
+    "question_edit_files_created": 10,
+    "answer_key_changes": 0,
+    "source_records_created": 3,
+    "source_maps_created": 3
+  },
+  "articles": [
+    {
+      "cluster_id": "lea-matl-009-02",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "slug": "lea-matl-009-02-core-concept",
+      "question_edit_count": 10,
+      "candidate_sha256": "sha256:abd9c20e4c609e95f325bccc5ef4ee3c86c81fd07940797df5e5b0ef9b8b0734",
+      "source_map_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+        "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+        "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+      ]
+    }
+  ]
+}

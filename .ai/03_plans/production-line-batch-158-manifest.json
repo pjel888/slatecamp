@@ -1,0 +1,178 @@
+{
+  "batch": 158,
+  "batch_id": "source-audited-batch-158-local-first",
+  "requested_content_baseline": "ff7679369",
+  "current_head_at_generation": "ff7679369",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T06:41:53.915Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-158-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-matl-009-02"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-matl-009-02",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "slug": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "status": "source_audited_local_first_masterformat_sectionformat",
+      "source_ids": [
+        "csi-standards-overview-b158",
+        "csi-masterformat-2020-ebook-toc-b158",
+        "wbdg-specsintact-sectionformat-b158"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "normalized_sha256": "sha256:abd9c20e4c609e95f325bccc5ef4ee3c86c81fd07940797df5e5b0ef9b8b0734",
+      "candidate_sha256": "sha256:abd9c20e4c609e95f325bccc5ef4ee3c86c81fd07940797df5e5b0ef9b8b0734",
+      "source_evidence_sha256": "sha256:8e515488e60a498eb5a5d862f049001bf79e34c863dfbc17e4d93b4d0e0af892",
+      "linked_questions_sha256": "sha256:f09f1eee2d18108919eea32b639a798dd4272c6d017d2747f7b906ccdb57db2b",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "source_boundary": {
+        "included": [
+          "MasterFormat purpose as a CSI classification/organization framework.",
+          "MasterFormat group/subgroup structure and visible public 2020 division titles from the CSI-hosted ebook preview.",
+          "SectionFormat three-part organization: Part 1 General, Part 2 Products, Part 3 Execution.",
+          "High-yield division identification limited to the visible public CSI TOC and generic section organization."
+        ],
+        "excluded": [
+          "Paid MasterFormat tables not visible in the official public preview.",
+          "Leaked or gray-area MasterFormat PDFs.",
+          "Uncaptured DPWH standard specification details.",
+          "Board of Architecture educational guideline claims not locally captured for Batch 158.",
+          "Uncaptured ASTM/ACI exact test methods, edition claims, and numeric acceptance thresholds."
+        ]
+      },
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/compose-report.json",
+        "composeErrorDeletion": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/compose-error.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/scoped-validation-batch-158.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/1a5864dc-ab7d-4362-bab2-dcaf66272723.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/74eba686-bd8c-4ef9-8ef9-8737d665dd19.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/7e104218-5338-4c24-a709-de5b132b5890.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/2e6723f0-5ed3-4907-a007-413c6b602739.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/4776bd81-4c8f-43c3-a82b-58233c17a354.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/8c38503e-b527-41ce-9ba5-b484019cdabd.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/79402125-80a4-4032-92aa-c3ec87dbf8a9.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/95df8e2b-8c8b-40bd-91a8-62eee4ab76f7.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/116f42de-5cee-407a-b14b-318bec2aa3f6.json",
+          ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/1a970a29-bfa1-4c4b-9650-0b0feb6063ef.json"
+        ],
+        "sourceMaps": [
+          "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+          "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+          "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+        ]
+      }
+    }
+  ],
+  "source_records": [
+    {
+      "cluster_id": "lea-matl-009-02",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "source_id": "csi-standards-overview-b158",
+      "label": "Construction Specifications Institute, Standards Overview: MasterFormat",
+      "source_type": "official_web_page",
+      "url": "https://www.csiresources.org/standards/overview",
+      "description": "Batch 158 official web source capture for MasterFormat/SectionFormat only; publisher=Construction Specifications Institute; locator=web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md; raw_capture_sha256=sha256:ccf52e210231c37c5438061df922afed3e8d18c41d2506398e4f061e3a55d1ef; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json; source_metadata_sha256=sha256:58ef2516232680670105883bc02354c687c7eaff7ee17caafb0a92cd4e95d9bc; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md; refined_markdown_sha256=sha256:681188f82c67953af0bfe806222edaf5e9ee61ea72b7c772c7c74107ebddb540; source_boundary=MasterFormat purpose as a CSI classification/organization framework. | MasterFormat group/subgroup structure and visible public 2020 division titles from the CSI-hosted ebook preview. | SectionFormat three-part organization: Part 1 General, Part 2 Products, Part 3 Execution. | High-yield division identification limited to the visible public CSI TOC and generic section organization."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "source_id": "csi-masterformat-2020-ebook-toc-b158",
+      "label": "Construction Specifications Institute, MasterFormat 2020 Edition public ebook table of contents",
+      "source_type": "official_web_preview",
+      "url": "https://ebooks.csiresources.org/1e7bnm9/",
+      "description": "Batch 158 official web source capture for MasterFormat/SectionFormat only; publisher=Construction Specifications Institute; locator=web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md; raw_capture_sha256=sha256:ccf52e210231c37c5438061df922afed3e8d18c41d2506398e4f061e3a55d1ef; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json; source_metadata_sha256=sha256:58ef2516232680670105883bc02354c687c7eaff7ee17caafb0a92cd4e95d9bc; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md; refined_markdown_sha256=sha256:681188f82c67953af0bfe806222edaf5e9ee61ea72b7c772c7c74107ebddb540; source_boundary=MasterFormat purpose as a CSI classification/organization framework. | MasterFormat group/subgroup structure and visible public 2020 division titles from the CSI-hosted ebook preview. | SectionFormat three-part organization: Part 1 General, Part 2 Products, Part 3 Execution. | High-yield division identification limited to the visible public CSI TOC and generic section organization."
+    },
+    {
+      "cluster_id": "lea-matl-009-02",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "source_id": "wbdg-specsintact-sectionformat-b158",
+      "label": "WBDG SpecsIntact Help, SectionFormat and PageFormat",
+      "source_type": "government_reference",
+      "url": "https://www.wbdg.org/tools/specsintact/Help/SIGeneral/SectionFormat.htm",
+      "description": "Batch 158 official web source capture for MasterFormat/SectionFormat only; publisher=Whole Building Design Guide / SpecsIntact; locator=web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md; raw_capture_sha256=sha256:ccf52e210231c37c5438061df922afed3e8d18c41d2506398e4f061e3a55d1ef; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json; source_metadata_sha256=sha256:58ef2516232680670105883bc02354c687c7eaff7ee17caafb0a92cd4e95d9bc; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md; refined_markdown_sha256=sha256:681188f82c67953af0bfe806222edaf5e9ee61ea72b7c772c7c74107ebddb540; source_boundary=MasterFormat purpose as a CSI classification/organization framework. | MasterFormat group/subgroup structure and visible public 2020 division titles from the CSI-hosted ebook preview. | SectionFormat three-part organization: Part 1 General, Part 2 Products, Part 3 Execution. | High-yield division identification limited to the visible public CSI TOC and generic section organization."
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "artifact_id": "raw_source_capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+      "sha256": "sha256:ccf52e210231c37c5438061df922afed3e8d18c41d2506398e4f061e3a55d1ef",
+      "bytes": 3823,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "source_metadata",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+      "sha256": "sha256:58ef2516232680670105883bc02354c687c7eaff7ee17caafb0a92cd4e95d9bc",
+      "bytes": 2647,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "refined_source_map",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md",
+      "sha256": "sha256:681188f82c67953af0bfe806222edaf5e9ee61ea72b7c772c7c74107ebddb540",
+      "bytes": 2189,
+      "exists": true,
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "unsupported_exact_claim_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass_10",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass_bun_test_source_verification_invariants_7_pass_0_fail",
+    "scoped_git_diff_check": "pass_batch_158_stage_paths"
+  },
+  "excluded_from_batch_158": {
+    "preserved_theory_web_candidates_not_selected": [
+      "lea-theo-008-02",
+      "lea-theo-008-03"
+    ],
+    "preserved_nscp_and_timber_residuals": [
+      "lea-strc-004-02",
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-009-01",
+      "lea-strc-009-02",
+      "lea-strc-012-01",
+      "lea-util-004-05",
+      "lea-util-004-08"
+    ]
+  },
+  "stop_condition": "Stop after lea-matl-009-02 is source-audited, locally validated, QA-reviewed, and handed off for exact staging only."
+}

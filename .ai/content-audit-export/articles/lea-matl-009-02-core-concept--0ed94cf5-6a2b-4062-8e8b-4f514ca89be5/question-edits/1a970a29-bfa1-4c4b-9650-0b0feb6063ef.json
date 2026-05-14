@@ -1,0 +1,103 @@
+{
+  "question_id": "1a970a29-bfa1-4c4b-9650-0b0feb6063ef",
+  "baseline_hash": "sha256:cf1b5e0115025d69ae0d153a887358b2ec8a28f88838c71b714bfefb676a3e60",
+  "action": "replace",
+  "reason": "Batch 158 source-audited rewrite: constrain CSI MasterFormat and SectionFormat questions to captured official/public sources.",
+  "approved_by": "codex-local-source-audit-batch-158",
+  "approved_at": "2026-05-14T06:41:53.915Z",
+  "source_audit_support": {
+    "parent_article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+    "parent_article_slug": "lea-matl-009-02-core-concept",
+    "batch_id": "source-audited-batch-158-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers were preserved while unsupported citations and rationales were replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status.; web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles.; web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure.",
+    "checked_markdown_lines": [
+      "web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status.",
+      "web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles.",
+      "web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "csi-standards-overview-b158",
+        "label": "Construction Specifications Institute, Standards Overview: MasterFormat",
+        "url": "https://www.csiresources.org/standards/overview",
+        "source_type": "official_web_page",
+        "publisher": "Construction Specifications Institute",
+        "locator": "web.open capture lines 79-85, 93-105, 112-118, and 149-152 for MasterFormat purpose, groups, subscription boundary, and latest-edition status.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+      },
+      {
+        "source_id": "csi-masterformat-2020-ebook-toc-b158",
+        "label": "Construction Specifications Institute, MasterFormat 2020 Edition public ebook table of contents",
+        "url": "https://ebooks.csiresources.org/1e7bnm9/",
+        "source_type": "official_web_preview",
+        "publisher": "Construction Specifications Institute",
+        "locator": "web.open capture lines 48-68 and 83-128 for official 2020 edition context and visible division titles.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+      },
+      {
+        "source_id": "wbdg-specsintact-sectionformat-b158",
+        "label": "WBDG SpecsIntact Help, SectionFormat and PageFormat",
+        "url": "https://www.wbdg.org/tools/specsintact/Help/SIGeneral/SectionFormat.htm",
+        "source_type": "government_reference",
+        "publisher": "Whole Building Design Guide / SpecsIntact",
+        "locator": "web.open capture lines 18, 34-43, and 46-48 for CSI SectionFormat conformance and Part 1/2/3 structure.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md"
+      }
+    ],
+    "local_source_safe_action": "Question rewritten around MasterFormat purpose, visible public division titles, three-part SectionFormat structure, or source-safe coordination logic.",
+    "excluded_claims": [
+      "Paid MasterFormat tables not visible in the official public preview.",
+      "Leaked or gray-area MasterFormat PDFs.",
+      "Uncaptured DPWH standard specification details.",
+      "Board of Architecture educational guideline claims not locally captured for Batch 158.",
+      "Uncaptured ASTM/ACI exact test methods, edition claims, and numeric acceptance thresholds."
+    ]
+  },
+  "proposed": {
+    "text": "A specification states: 'Apply epoxy floor coating in two coats, keep the required wet film thickness, and cure before allowing foot traffic.' Which three-part format location is most appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Part 3: Execution"
+      },
+      {
+        "id": "b",
+        "text": "Part 1: General"
+      },
+      {
+        "id": "c",
+        "text": "Part 2: Products"
+      },
+      {
+        "id": "d",
+        "text": "Part 0: Administrative"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "The statement describes application, field control, and curing. Those are execution requirements.",
+      "takeaway": "If the text explains how the work is installed or protected in the field, it belongs in Part 3.",
+      "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+      "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+      "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+      "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
+    },
+    "explanation": "The statement describes application, field control, and curing. Those are execution requirements.",
+    "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
+    "application_context": "source_audited_masterformat_sectionformat",
+    "practice_context": [
+      "specifications",
+      "source-audited batch 158"
+    ],
+    "model_id": "ALE-MATL-009-02-005"
+  }
+}

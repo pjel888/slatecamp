@@ -1,0 +1,62 @@
+# Batch 158 Git Handoff Stage List
+
+## Stage Only These Paths
+
+```text
+.ai/03_plans/batch-158-git-handoff-stage-list.md
+.ai/03_plans/batch-158-git-handoff-stage-paths.txt
+.ai/03_plans/batch-158-independent-quality-review.md
+.ai/03_plans/production-line-batch-158-manifest.json
+.ai/03_plans/production-line-batch-158-reservation-manifest.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/article-metadata.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/candidate.md
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/compose-error.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/compose-report.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/diff-report.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/diff-report.md
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/linked-questions.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/normalized.md
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/parser-errors.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/116f42de-5cee-407a-b14b-318bec2aa3f6.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/1a5864dc-ab7d-4362-bab2-dcaf66272723.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/1a970a29-bfa1-4c4b-9650-0b0feb6063ef.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/2e6723f0-5ed3-4907-a007-413c6b602739.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/4776bd81-4c8f-43c3-a82b-58233c17a354.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/74eba686-bd8c-4ef9-8ef9-8737d665dd19.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/79402125-80a4-4032-92aa-c3ec87dbf8a9.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/7e104218-5338-4c24-a709-de5b132b5890.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/8c38503e-b527-41ce-9ba5-b484019cdabd.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/question-edits/95df8e2b-8c8b-40bd-91a8-62eee4ab76f7.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/scoped-validation-batch-158.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/source-audit-evidence.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/sources.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/ui-block-edit-validation.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/ui-block-edits.json
+.ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5/ui-blocks.json
+.ai/content-audit-export/runs/source-audited-batch-158-local-runner.mjs
+.ai/content-audit-export/source-audited-article-batch-158-local-first-content-generation-summary.json
+.ai/content-audit-export/source-audited-article-batch-158-local-first-ledger.json
+.ai/content-audit-export/source-audited-article-batch-158-local-first-report.md
+.ai/content-audit-export/source-audited-article-batch-158-local-first-scoped-checks.json
+vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json
+vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md
+vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md
+```
+
+## Staging Note
+
+Use pathspec staging from .ai/03_plans/batch-158-git-handoff-stage-paths.txt. The stage list includes the selected article bundle, 10 question edits, Batch 158 source maps, validation artifacts, QA, report, ledger, runner, and handoff files only.
+
+## Do Not Stage
+
+- .ai/00_performance
+- .ai/00_system/DOCS_SOURCE_OF_TRUTH.md
+- .ai/README.md
+- .ai/content-audit-export/sync-state.json
+- .ai/content-audit-export/ui-block-edit-validation.json
+- .ai/content-audit-export/validation-report.json
+- .hermes/skills
+- .ai/03_plans/final-second-audit/rolling-readonly-swarm/opencode-deepseek-batches-115-144-depth-scenario-audit.md
+- .ai/03_plans/blocked-source-recovery prompt files
+- content-roundtrip run directories not listed in Stage Only These Paths
+- unrelated deleted compose-error.json artifacts outside Batch 158

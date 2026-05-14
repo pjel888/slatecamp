@@ -1,14 +1,14 @@
 {
   "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6a66859cfd94af1ba4ad7f5297b047f2072173c1df929eaf70b4607033a89df2",
+  "linked_questions_hash": "sha256:f09f1eee2d18108919eea32b639a798dd4272c6d017d2747f7b906ccdb57db2b",
   "question_count": 10,
   "questions": [
     {
       "question_id": "1a5864dc-ab7d-4362-bab2-dcaf66272723",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "According to CSI MasterFormat 2018, which division covers concrete mixing, placement, curing, and testing?",
+      "text": "Using the Batch 158 public CSI MasterFormat source boundary, which division covers concrete work?",
       "options": [
         {
           "id": "a",
@@ -33,17 +33,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Division 04 is Masonry, not concrete.",
-        "c": "Division 05 is Metals (structural steel).",
-        "d": "Division 07 is Thermal & Moisture Protection (waterproofing, insulation).",
-        "correct": "Division 03 is Concrete and covers all aspects of cast-in-place concrete including mixing, placement, curing, and testing per ACI 301 (Specifications for Structural Concrete) and applicable ASTM standards.",
-        "takeaway": "Division 03 is foundational for any construction project involving concrete structures. Memorize the core divisions: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes."
+        "correct": "The public CSI MasterFormat 2020 table of contents identifies Division 03 as Concrete.",
+        "takeaway": "Division 03 is the high-yield MasterFormat location for concrete work.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": "Division 04 is Masonry, not concrete. Division 05 is Metals (structural steel). Division 07 is Thermal & Moisture Protection (waterproofing, insulation). Division 03 is Concrete and covers all aspects of cast-in-place concrete including mixing, placement, curing, and testing per ACI 301 (Specifications for Structural Concrete) and applicable ASTM standards. Division 03 is foundational for any construction project involving concrete structures. Memorize the core divisions: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.",
-      "code_citation": "CSI MasterFormat 2018 Division Structure",
+      "explanation": "The public CSI MasterFormat 2020 table of contents identifies Division 03 as Concrete.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -51,30 +55,30 @@
       "model_id": "ALE-MATL-009-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:42:48.526379+00:00",
-      "content_hash": "sha256:ee241a612af2491d233025e714dc2aff3cf44338e7ce6048c823640d6bd8607f"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:1ccbaa857f1423b3296fb63bc6d4978387fef27d150e536b82b19fd7ac878d6a"
     },
     {
       "question_id": "74eba686-bd8c-4ef9-8ef9-8737d665dd19",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "A contractor provides specifications organized as: Scope (1 page), Materials List (1 page), Installation Sequence (2 pages). When the architect attempts to align this with CSI MasterFormat 3-part structure for contract review, what reorganization is needed and why?",
+      "text": "A contractor submits an informal specification organized as Scope, Materials List, and Installation Sequence. How should the architect map it to three-part format for review?",
       "options": [
         {
           "id": "a",
-          "text": "Scope and Materials List belong in Part 2: Products; Installation Sequence belongs in Part 3: Execution. However, critical Part 1: General information is missing: quality standards, applicable codes (ASTM, NSCP), testing/inspection requirements, submittals, and warranties. Part 1 must be developed by the architect and added."
+          "text": "Put scope, references, submittals, and quality requirements in Part 1; materials and products in Part 2; and installation sequence, preparation, and protection in Part 3."
         },
         {
           "id": "b",
-          "text": "The contractor's structure is appropriate and requires no reorganization, as it already aligns with industry standards"
+          "text": "Accept it unchanged because any three headings satisfy SectionFormat."
         },
         {
           "id": "c",
-          "text": "All content should be consolidated into a single 'General' section, simplifying the document structure"
+          "text": "Consolidate all content into one General section."
         },
         {
           "id": "d",
-          "text": "The Scope should be placed in Part 3: Execution instead of Part 2, to better reflect the sequence of work"
+          "text": "Place the scope only in Part 3 because construction happens in sequence."
         }
       ],
       "correct_option_id": "a",
@@ -83,17 +87,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "The contractor's structure is incomplete; architect intervention is necessary.",
-        "c": "Consolidating into one section loses the benefits of 3-part organization (clarity, coordination).",
-        "d": "Scope is administrative and strategic; it doesn't belong in Part 3 (execution).",
-        "correct": "The contractor's informal structure (Scope, Materials, Installation) lacks the governance framework of Part 1: General. The architect must add quality standards, applicable codes, testing protocols, submittals, and warranties. The contractor's Materials List and Installation Sequence map to CSI Parts 2 and 3, but Part 1 (the foundation) is missing. In Philippine practice, architects often receive contractor specifications and must reformat them into CSI structure, ensuring completeness.",
-        "takeaway": "When reviewing contractor specifications, verify that all three parts are present: Part 1 (quality/standards), Part 2 (products), Part 3 (execution). Missing Part 1 is a common deficiency, particularly in informal specifications."
+        "correct": "The informal outline must be normalized into the three-part section structure: framework in Part 1, supplied items in Part 2, and field execution in Part 3.",
+        "takeaway": "Do not confuse a contractor outline with a complete SectionFormat section.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": null,
-      "code_citation": "CSI SectionFormat Standards; Architectural Specification Review Practice",
+      "explanation": "The informal outline must be normalized into the three-part section structure: framework in Part 1, supplied items in Part 2, and field execution in Part 3.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -101,30 +109,30 @@
       "model_id": "ALE-MATL-009-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:651b9d2dbab40b7d43329959e0d15d7ecd958c918ca60684efb9a1ff32cb0026"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:612c0c2cffe5dd8f20ec7a91fc6dfaec0873904467889b38d7b7f292b12478d9"
     },
     {
       "question_id": "7e104218-5338-4c24-a709-de5b132b5890",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "What is the primary purpose of Part 1: General in a CSI specification?",
+      "text": "What is the best source-safe role of Part 1: General in a specification section?",
       "options": [
         {
           "id": "a",
-          "text": "To establish the quality standards, testing requirements, submittals, warranties, and referenced standards that govern the work"
+          "text": "To establish the section framework, references, submittals, quality assurance, and administrative/procedural requirements."
         },
         {
           "id": "b",
-          "text": "To list the specific products and materials that will be supplied, ensuring all components meet project specifications"
+          "text": "To list only the physical products and manufactured units supplied for the work."
         },
         {
           "id": "c",
-          "text": "To describe the installation procedures and execution sequence, providing a clear roadmap for construction activities"
+          "text": "To describe only the installation sequence and field application steps."
         },
         {
           "id": "d",
-          "text": "To provide a summary of the project budget and timeline, offering a comprehensive overview of financial and scheduling expectations"
+          "text": "To provide the complete project budget and financing plan."
         }
       ],
       "correct_option_id": "a",
@@ -133,17 +141,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Product details belong in Part 2.",
-        "c": "Installation procedures belong in Part 3.",
-        "d": "Budget and timeline are not typically in specifications; these are contract matters.",
-        "correct": "Part 1: General sets the overall framework and compliance requirements for the work. It defines quality standards, testing protocols, submittal documentation, warranties, and applicable codes (ACI, ASTM, NSCP).",
-        "takeaway": "Part 1 is the governance framework. Without clear Part 1 standards, disputes arise over what 'quality' means or when testing is required. Part 1 is often the most important section."
+        "correct": "Part 1: General contains the general and administrative/procedural requirements for the section, including the framework for references, submittals, and quality assurance.",
+        "takeaway": "Part 1 governs how the section is controlled before products and execution are detailed.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": null,
-      "code_citation": "CSI SectionFormat Standard",
+      "explanation": "Part 1: General contains the general and administrative/procedural requirements for the section, including the framework for references, submittals, and quality assurance.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -151,30 +163,30 @@
       "model_id": "ALE-MATL-009-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6f7f3031c98d40641201d1d5cf7fe44c5af1f4410b9763ef53d703737d2d9cd9"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:09b52ebd81f4bbe79703a8b56e88bea5a7d9c0634c5e3e481009c0501e1f740a"
     },
     {
       "question_id": "2e6723f0-5ed3-4907-a007-413c6b602739",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "Review a specification: 'Division 09.65.00 Resilient Flooring. Part 1: General. Quality Standards: Flooring shall meet ASTM F1817 slip resistance (DCOF >= 0.42). Part 2: Products: PVC sheet flooring, manufacturers Tarkett or equivleant. Part 3: Execution: Install over concrete substrate, acclimate 48 hours prior to installation, seam-weld using hot-air Review a specification: '...' Identify any deficiencies or missing elements in this specification and propose corrections..",
+      "text": "Review this finish-section outline: Part 1 names no submittals or acceptance checks, Part 2 says only \"PVC sheet flooring,\" and Part 3 says only \"install over concrete.\" What is the source-safe deficiency review?",
       "options": [
         {
           "id": "a",
-          "text": "The specification lacks clear acceptance testing and inspections in Part 1 (missing ASTM F1817 testing protocol frequency, who performs testing, when). Part 2 should specify PVC thickness, commercial vs. residential grade, antimicrobial treatment for healthcare use. Part 3 is appropriate but should reference substrate condition (flatness, moisture content per ASTM F2170)."
+          "text": "Part 1 needs source-supported submittal/quality/acceptance requirements, Part 2 needs product characteristics, and Part 3 needs substrate and installation requirements."
         },
         {
           "id": "b",
-          "text": "The specification is complete and requires no corrections."
+          "text": "The outline is complete because it has all three headings."
         },
         {
           "id": "c",
-          "text": "Part 1 and Part 3 are reversed; they should be reorganized to maintain logical flow and coherence."
+          "text": "Part 1 and Part 3 should be reversed."
         },
         {
           "id": "d",
-          "text": "The 'or equivalent' clause in Part 2 is inappropriate; only Tarkett should be specified to ensure consistency and quality control across all installations."
+          "text": "All product characteristics should be removed so the contractor can decide."
         }
       ],
       "correct_option_id": "a",
@@ -183,17 +195,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "The specification has issues; assuming completeness misses the learning objective.",
-        "c": "Parts are in correct order; this is not the problem.",
-        "d": "'Or equivalent' with objective criteria is acceptable; removing it reduces flexibility unnecessarily.",
-        "correct": "The specification has logical structure (Part 1 framework, Part 2 products, Part 3 execution) but lacks completeness. Part 1 must define ASTM F1817 testing frequency (e.g., one test per 100 m2), acceptance criteria (DCOF >= 0.42), and who performs testing. Part 2 must specify product characteristics (thickness, grade, healthcare antimicrobial treatment if required). Part 3 must reference substrate conditions (concrete flatness tolerance, moisture content per ASTM F2170). These are typical ALE test questions: identifying what's missing from a specification.",
-        "takeaway": "Complete CSI specifications include: (1) Part 1 testing protocols and acceptance criteria with frequency, (2) Part 2 product characteristics with material grade, (3) Part 3 substrate conditions and installation sequence. Incomplete specifications lead to quality disputes."
+        "correct": "Having the headings is not enough. The section must put the framework in Part 1, products in Part 2, and execution/substrate requirements in Part 3.",
+        "takeaway": "The three-part format is a structure for complete requirements, not a checklist of headings only.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": null,
-      "code_citation": "CSI SectionFormat Completeness Standards; ASTM F1817 Slip Resistance Test",
+      "explanation": "Having the headings is not enough. The section must put the framework in Part 1, products in Part 2, and execution/substrate requirements in Part 3.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -201,30 +217,30 @@
       "model_id": "ALE-MATL-009-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d96942285b0a0fc6d9e88f88d59edf6c95b955809a0bd86c3045c2674c394586"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:c429f59d772d8fb831eba13cefca63f03bfeed7b15ad3992f2595bc50676134a"
     },
     {
       "question_id": "4776bd81-4c8f-43c3-a82b-58233c17a354",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "A Philippine architectural firm must develop specifications for a mixed-use building that will be coordinated with both a private developer and a DPWH-funded public plaza component. The architect must decide: use CSI MasterFormat for the private portion and DPWH Standard Specifications for the public portion, or use CSI throughout for consistency. Evaluate the advantages and disadvantages of each approach and recommend the best practice.",
+      "text": "A project has one scope area using MasterFormat and another area governed by a separate owner-required specification standard. What is the source-safe recommendation?",
       "options": [
         {
           "id": "a",
-          "text": "Use CSI MasterFormat for the private portion and DPWH Standard Specifications for the public portion, organized with clear demarcation. Advantages: aligns with each agency's standards and expectations, reduces rework of specifications. Disadvantages: requires architect familiarity with both systems, coordination at project boundaries becomes complex. [Cannot verify without access to DPWH Standard Specifications documentation and Philippine mixed-use project coordination guidelines. This question requires sources beyond CSI MasterFormat.]"
+          "text": "Use the required standard for each scope area, clearly demarcate boundaries, and coordinate interfaces in Part 1 or equivalent general requirements."
         },
         {
           "id": "b",
-          "text": "Use CSI MasterFormat throughout for consistency. Advantages: simplicity, unified specification structure. Disadvantages: DPWH does not recognize CSI; public portions may face design review rejection."
+          "text": "Force MasterFormat throughout even when the contract requires another standard."
         },
         {
           "id": "c",
-          "text": "Use DPWH Standard Specifications for the entire project. Advantages: single framework. Disadvantages: private developer may reject unfamiliar format; CSI is industry standard for private practice."
+          "text": "Ignore MasterFormat and use the other standard for every private-scope item."
         },
         {
           "id": "d",
-          "text": "Develop a hybrid specification system that combines CSI and DPWH frameworks. Advantages: comprehensive. Disadvantages: overly complex, confusing to contractors."
+          "text": "Invent a hybrid numbering system without documenting which standard governs each scope."
         }
       ],
       "correct_option_id": "a",
@@ -233,17 +249,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "CSI throughout ignores DPWH requirements; public portion would likely fail design review.",
-        "c": "DPWH throughout is inappropriate for private development; developer would likely refuse.",
-        "d": "Hybrid systems, while comprehensive, create confusion and rework. Better to use each system appropriately.",
-        "correct": "Philippine mixed-use projects often involve multiple agencies with different standards. The best practice is to use the appropriate standard for each portion: CSI for private work (industry standard, architect familiarity), DPWH specs for public components (regulatory requirement). The architect must establish clear coordination at boundaries, typically through a general specification section (Part 1) addressing how the two systems interface. This requires sophisticated architectural knowledge but reflects Philippine market reality.",
-        "takeaway": "Philippine architects must understand both CSI MasterFormat (industry standard, private projects) and DPWH Standard Specifications (public work requirement). The ability to navigate and coordinate between two specification systems is an advanced professional skill tested on the ALE."
+        "correct": "MasterFormat organizes information, but it does not override the project contract. The source-safe practice is to follow the required standard for each scope and document coordination at boundaries.",
+        "takeaway": "Verify owner and contract requirements before applying a specification framework.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": null,
-      "code_citation": "Philippine Architectural Practice; CSI MasterFormat; DPWH Standard Specifications; Professional Specification Coordination",
+      "explanation": "MasterFormat organizes information, but it does not override the project contract. The source-safe practice is to follow the required standard for each scope and document coordination at boundaries.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "evaluate",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -251,30 +271,30 @@
       "model_id": "ALE-MATL-009-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:43e5f320c827cce263af81e6a87de8616d8912a03ad025b4ca6b7f3685774648"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:15ba315010cf1701aaf2369f53ef34638ab570b226775b007a99bebd27f7cbf2"
     },
     {
       "question_id": "8c38503e-b527-41ce-9ba5-b484019cdabd",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "A concrete specification in Division 03 requires curing for 28 days at high humidity, while Division 07 (waterproofing) requires waterproofing membrane application within 7 days of concrete placement. This presents a potential conflict. How should Part 1: General address this coordination?",
+      "text": "A Division 03 concrete section and a Division 07 waterproofing section contain timing requirements that could conflict. What should the specification writer do?",
       "options": [
         {
           "id": "a",
-          "text": "Part 1 of Division 03 should reference Division 07 and specify that waterproofing application is permitted on 7-day-old concrete, with curing continuing for an additional 21 days after waterproofing, or Part 1 of Division 07 should state that waterproofing is applied before final curing completion."
+          "text": "Use Part 1 coordination language to cross-reference the related section and state the required timing or surface-condition relationship."
         },
         {
           "id": "b",
-          "text": "The conflict should be resolved by eliminating the 7-day waterproofing requirement, allowing for a more flexible construction schedule"
+          "text": "Delete one requirement without documenting the design reason."
         },
         {
           "id": "c",
-          "text": "Each specification should operate independently without cross-reference, maintaining separate guidelines for curing and waterproofing"
+          "text": "Let each section operate independently without cross-reference."
         },
         {
           "id": "d",
-          "text": "The 28-day curing requirement should be extended to accommodate waterproofing application timing, ensuring compatibility between the two processes"
+          "text": "Move both requirements into Part 2 because they mention materials."
         }
       ],
       "correct_option_id": "a",
@@ -283,17 +303,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Eliminating requirements doesn't resolve the underlying coordination need; both are valid requirements.",
-        "c": "Independent specs without cross-reference create contradictions that confuse the contractor.",
-        "d": "Extending curing negates the design intent of early waterproofing application.",
-        "correct": "Part 1: General is designed to establish coordination points and resolve conflicts. Cross-division coordination requires that Part 1 of one division reference the other (e.g., Part 1 of Division 03 must acknowledge that Division 07 waterproofing requires 7-day-old concrete). The specifications must be mutually consistent.",
-        "takeaway": "Part 1: General is the place to establish coordination between divisions. Cross-division references should state timing, surface condition requirements, and precedence."
+        "correct": "Part 1 is the proper place to record section coordination, references, and administrative/procedural requirements that keep related sections consistent.",
+        "takeaway": "Cross-division coordination belongs in the specification framework, not in an unsupported assumption.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": null,
-      "code_citation": "CSI SectionFormat Coordination Standards",
+      "explanation": "Part 1 is the proper place to record section coordination, references, and administrative/procedural requirements that keep related sections consistent.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -301,30 +325,30 @@
       "model_id": "ALE-MATL-009-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cef666bec604630fe9fea91f0fc7aeb37a5befd58233c5a494cb69ff8c987f60"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:e571de3a1b0c34656dde9cfde006056bd215167937f27cd6f4cd3eee59e4096e"
     },
     {
       "question_id": "79402125-80a4-4032-92aa-c3ec87dbf8a9",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "The standard CSI specification format consists of three parts. In order, these are Part 1: ___, Part 2: ___, and Part 3: ___.",
+      "text": "The standard three-part specification section format is organized in which order?",
       "options": [
         {
           "id": "a",
-          "text": "General; Products; Execution"
+          "text": "Part 1: General; Part 2: Products; Part 3: Execution"
         },
         {
           "id": "b",
-          "text": "Products; General; Execution"
+          "text": "Part 1: Products; Part 2: General; Part 3: Execution"
         },
         {
           "id": "c",
-          "text": "Execution; General; Products"
+          "text": "Part 1: Execution; Part 2: General; Part 3: Products"
         },
         {
           "id": "d",
-          "text": "General; Execution; Products"
+          "text": "Part 1: General; Part 2: Execution; Part 3: Products"
         }
       ],
       "correct_option_id": "a",
@@ -333,17 +357,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Changing the order disrupts the logical flow from framework to materials to installation.",
-        "c": "Execution cannot precede General because the quality framework is needed first.",
-        "d": "This illogical order would confuse specifications and contractor understanding.",
-        "correct": "The 3-part CSI SectionFormat is standardized as Part 1 (General: quality, standards, testing, submittals), Part 2 (Products: materials and equipment specifications), and Part 3 (Execution: installation procedures and quality control).",
-        "takeaway": "The 3-part format is the industry standard. Always organize: Part 1 (What standards apply?), Part 2 (What is being supplied?), Part 3 (How is it installed?)."
+        "correct": "SectionFormat divides sections into Part 1: General, Part 2: Products, and Part 3: Execution.",
+        "takeaway": "Use the order General, Products, Execution.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": "Changing the order disrupts the logical flow from framework to materials to installation. Execution cannot precede General because the quality framework is needed first. This illogical order would confuse specifications and contractor understanding. The 3-part CSI SectionFormat is standardized as Part 1 (General: quality, standards, testing, submittals), Part 2 (Products: materials and equipment specifications), and Part 3 (Execution: installation procedures and quality control). The 3-part format is the industry standard. Always organize: Part 1 (What standards apply?), Part 2 (What is being supplied?), Part 3 (How is it installed?).",
-      "code_citation": "CSI SectionFormat Standard",
+      "explanation": "SectionFormat divides sections into Part 1: General, Part 2: Products, and Part 3: Execution.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -351,30 +379,30 @@
       "model_id": "ALE-MATL-009-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-05-06T15:42:48.776159+00:00",
-      "content_hash": "sha256:4c5a5f4cc46a5a146233c197528186d45172fe100a923fba07c6533b7c4bb783"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:1cef13612d481d986beacd28f4fdffb4da74716227b5df1d6f1559fdc79076a0"
     },
     {
       "question_id": "95df8e2b-8c8b-40bd-91a8-62eee4ab76f7",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "For a Philippine hospital project in a tropical, high-humidity coastal area, which Division 09 (Finishes) specification requires enhancement beyond standard CSI guidelines to address local climate?",
+      "text": "For a high-humidity project, where should a finish section state measurable performance requirements such as washability or mold resistance, while the product itself remains in the product part?",
       "options": [
         {
           "id": "a",
-          "text": "Paint specification should add mold/mildew resistance criteria, UV stability for high-light environments, and washability for pollution and humidity control"
+          "text": "Part 1 should state source-supported quality or acceptance requirements, Part 2 should identify the finish product, and Part 3 should state execution requirements."
         },
         {
           "id": "b",
-          "text": "Paint specification should remain unchanged from CSI standard, which may not address local environmental challenges"
+          "text": "Leave the section unchanged because MasterFormat automatically supplies local climate requirements."
         },
         {
           "id": "c",
-          "text": "Paint should be specified only in Part 2: Products, omitting climate-specific quality standards in Part 1, which could lead to inadequate performance"
+          "text": "Put every climate concern only in Part 2 and omit Part 1 quality requirements."
         },
         {
           "id": "d",
-          "text": "Paint specification should defer all decisions to the contractor based on experience, potentially leading to inconsistent quality"
+          "text": "Defer all requirements to the contractor without written acceptance criteria."
         }
       ],
       "correct_option_id": "a",
@@ -383,17 +411,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "CSI standards are generic; Philippine architects must add climate-specific performance criteria.",
-        "c": "Quality standards belong in Part 1, not just product selection in Part 2.",
-        "d": "Contractor selection without specified standards leads to disputes over acceptability.",
-        "correct": "Philippine tropical construction requires customization of CSI specifications. High humidity promotes mold growth, intense solar radiation requires UV-stable paint, and coastal/pollution exposure requires washable, durable finishes. These are additions to CSI baseline standards, not replacements.",
-        "takeaway": "CSI MasterFormat is a framework; Philippine architects customize it for local climate, materials availability, and regulatory requirements. Tropical durability, typhoon resistance, and humidity control are regular additions to CSI specifications."
+        "correct": "SectionFormat separates the framework from the product and execution requirements. Source-supported quality criteria belong in Part 1, product descriptions in Part 2, and installation in Part 3.",
+        "takeaway": "MasterFormat organizes the section; it does not automatically supply project-specific performance criteria.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": "CSI standards are generic; Philippine architects must add climate-specific performance criteria. Quality standards belong in Part 1, not just product selection in Part 2. Contractor selection without specified standards leads to disputes over acceptability. Philippine tropical construction requires customization of CSI specifications. High humidity promotes mold growth, intense solar radiation requires UV-stable paint, and coastal/pollution exposure requires washable, durable finishes. These are additions to CSI baseline standards, not replacements. CSI MasterFormat is a framework; Philippine architects customize it for local climate, materials availability, and regulatory requirements. Tropical durability, typhoon resistance, and humidity control are regular additions to CSI specifications.",
-      "code_citation": "Philippine Architectural Practice; CSI Specification Adaptation Guidelines",
+      "explanation": "SectionFormat separates the framework from the product and execution requirements. Source-supported quality criteria belong in Part 1, product descriptions in Part 2, and installation in Part 3.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -401,14 +433,14 @@
       "model_id": "ALE-MATL-009-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-05-06T15:42:48.993982+00:00",
-      "content_hash": "sha256:41022f794184d4074bb994bd8ec9d0558360abe32df0127daaa15177900f733d"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:d8028ae8f85d6d0d5ff1e4774abf74dea8ae0c9416eadf7d7d9581f08e3c29ed"
     },
     {
       "question_id": "116f42de-5cee-407a-b14b-318bec2aa3f6",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "Which CSI division covers doors, windows, glazing, and hardware?",
+      "text": "Which CSI MasterFormat division covers openings such as doors and windows?",
       "options": [
         {
           "id": "a",
@@ -433,17 +465,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Division 06 covers Wood, Plastics, and Composites (structural wood, not window frames).",
-        "c": "Division 07 covers Thermal & Moisture Protection (waterproofing, insulation, sealants).",
-        "d": "Division 09 covers Finishes (paint, flooring, ceiling systems).",
-        "correct": "Division 08 is Openings and covers all window and door systems, glazing, hardware, and weatherstripping.",
-        "takeaway": "Division 08 (Openings) is distinct from Division 09 (Finishes). This is a frequent exam error: students incorrectly place window or door specifications in Division 09."
+        "correct": "The public CSI MasterFormat 2020 table of contents identifies Division 08 as Openings.",
+        "takeaway": "Doors, windows, glazing, and related opening work are not Division 09 finishes.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": "Division 06 covers Wood, Plastics, and Composites (structural wood, not window frames). Division 07 covers Thermal & Moisture Protection (waterproofing, insulation, sealants). Division 09 covers Finishes (paint, flooring, ceiling systems). Division 08 is Openings and covers all window and door systems, glazing, hardware, and weatherstripping. Division 08 (Openings) is distinct from Division 09 (Finishes). This is a frequent exam error: students incorrectly place window or door specifications in Division 09.",
-      "code_citation": "CSI MasterFormat 2018 Division Structure",
+      "explanation": "The public CSI MasterFormat 2020 table of contents identifies Division 08 as Openings.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -451,14 +487,14 @@
       "model_id": "ALE-MATL-009-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-05-06T15:42:48.656122+00:00",
-      "content_hash": "sha256:bc178a2c7f149308ef5efde328850d6126cb27973e5fd783f92638f26e32bc4e"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:25ca3e47fe84b931d905623aa7340a589c1e783761d5e8862b473741dcbf487e"
     },
     {
       "question_id": "1a970a29-bfa1-4c4b-9650-0b0feb6063ef",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "A specification states: 'Apply epoxy floor coating in two coats, each at 150 microns dry film thickness. Cure for 72 hours at 23 degrees Celsius before allowing foot traffic.' Which part of the 3-part CSI format is this content most appropriate for?",
+      "text": "A specification states: 'Apply epoxy floor coating in two coats, keep the required wet film thickness, and cure before allowing foot traffic.' Which three-part format location is most appropriate?",
       "options": [
         {
           "id": "a",
@@ -474,7 +510,7 @@
         },
         {
           "id": "d",
-          "text": "Part 0: Administrative (outside standard 3-part format)"
+          "text": "Part 0: Administrative"
         }
       ],
       "correct_option_id": "a",
@@ -483,17 +519,21 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Part 1 addresses quality standards and testing requirements, not application procedures.",
-        "c": "Part 2 specifies the product (epoxy resin type, color, specification).",
-        "d": "Curing and application procedures are not administrative matters.",
-        "correct": "This is Part 3: Execution content. It specifies application procedure (two coats, dry film thickness), installation conditions (temperature), and curing time. These are installation and quality control procedures.",
-        "takeaway": "Application sequences, coating thickness, curing conditions, and installation procedures belong in Part 3. If you're describing how to do the work, it's Part 3."
+        "correct": "The statement describes application, field control, and curing. Those are execution requirements.",
+        "takeaway": "If the text explains how the work is installed or protected in the field, it belongs in Part 3.",
+        "b": "Incorrect within the Batch 158 source boundary. Recheck the MasterFormat division, SectionFormat part, or project-standard coordination rule.",
+        "c": "Incorrect within the Batch 158 source boundary. This option mixes framework, product, or execution requirements.",
+        "d": "Incorrect within the Batch 158 source boundary. Do not import unsupported standards or defer required criteria.",
+        "source_boundary": "Batch 158 supports MasterFormat structure, visible public CSI division titles, and SectionFormat organization only."
       },
-      "explanation": "Part 1 addresses quality standards and testing requirements, not application procedures. Part 2 specifies the product (epoxy resin type, color, specification). Curing and application procedures are not administrative matters. This is Part 3: Execution content. It specifies application procedure (two coats, dry film thickness), installation conditions (temperature), and curing time. These are installation and quality control procedures. Application sequences, coating thickness, curing conditions, and installation procedures belong in Part 3. If you're describing how to do the work, it's Part 3.",
-      "code_citation": "CSI SectionFormat Standard",
+      "explanation": "The statement describes application, field control, and curing. Those are execution requirements.",
+      "code_citation": "Batch 158 local source map: csi-standards-overview-b158, csi-masterformat-2020-ebook-toc-b158, and wbdg-specsintact-sectionformat-b158.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_masterformat_sectionformat",
+      "practice_context": [
+        "specifications",
+        "source-audited batch 158"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -501,8 +541,8 @@
       "model_id": "ALE-MATL-009-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-05-06T15:42:49.114595+00:00",
-      "content_hash": "sha256:cf1b5e0115025d69ae0d153a887358b2ec8a28f88838c71b714bfefb676a3e60"
+      "updated_at": "2026-05-14T06:41:53.915Z",
+      "content_hash": "sha256:1c8c52787a2f593f28a29220b72d89dc84811064a7f715fa7d2f00b5d9d5c825"
     }
   ]
 }

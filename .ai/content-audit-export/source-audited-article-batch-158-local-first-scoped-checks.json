@@ -1,0 +1,96 @@
+{
+  "batch": 158,
+  "batch_id": "source-audited-batch-158-local-first",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T06:41:53.915Z",
+  "requested_content_baseline": "ff7679369",
+  "current_head_at_generation": "ff7679369",
+  "branch": "3dlab-gray-viewport-bg",
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "unsupported_exact_claim_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass_10",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass_bun_test_source_verification_invariants_7_pass_0_fail",
+    "scoped_git_diff_check": "pass_batch_158_stage_paths"
+  },
+  "article_checks": [
+    {
+      "cluster_id": "lea-matl-009-02",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-02-core-concept--0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "ui_block_validation": "pass",
+      "parser_errors": "pass",
+      "json_parse": "pass",
+      "placeholder_internal_note_source_gap_scan": "pass",
+      "placeholder_matches": [],
+      "unsupported_exact_claim_scan": "pass",
+      "unsupported_exact_claim_matches": [],
+      "linked_question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_parity": "pass",
+      "answer_key_change_review": "pass_no_answer_key_changes",
+      "answer_key_changes": [],
+      "stale_compose_error_scan": "pass",
+      "source_count": 3,
+      "source_hashes_present": "pass",
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "normalized_sha256": "sha256:abd9c20e4c609e95f325bccc5ef4ee3c86c81fd07940797df5e5b0ef9b8b0734",
+      "candidate_sha256": "sha256:abd9c20e4c609e95f325bccc5ef4ee3c86c81fd07940797df5e5b0ef9b8b0734",
+      "linked_questions_sha256": "sha256:f09f1eee2d18108919eea32b639a798dd4272c6d017d2747f7b906ccdb57db2b",
+      "source_evidence_sha256": "sha256:8e515488e60a498eb5a5d862f049001bf79e34c863dfbc17e4d93b4d0e0af892"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "artifact_id": "raw_source_capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+      "sha256": "sha256:ccf52e210231c37c5438061df922afed3e8d18c41d2506398e4f061e3a55d1ef",
+      "bytes": 3823,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "source_metadata",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+      "sha256": "sha256:58ef2516232680670105883bc02354c687c7eaff7ee17caafb0a92cd4e95d9bc",
+      "bytes": 2647,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "refined_source_map",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md",
+      "sha256": "sha256:681188f82c67953af0bfe806222edaf5e9ee61ea72b7c772c7c74107ebddb540",
+      "bytes": 2189,
+      "exists": true,
+      "status": "pass"
+    }
+  ],
+  "scoped_json_parse": {
+    "status": "pass",
+    "checked_path_count": 28
+  },
+  "source_boundary": {
+    "internet_sources_used": true,
+    "authoritative_web_sources_captured_locally": true,
+    "general_encyclopedia_used": false,
+    "pirated_or_leaked_sources_used": false,
+    "raw_source_capture": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/lea-matl-009-02-masterformat-authoritative-web.source-capture.md",
+    "source_metadata": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-158/SOURCE-METADATA.json",
+    "refined_source_map": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-158/lea-matl-009-02-masterformat-sectionformat.refined.md",
+    "note": "Batch 158 captures official/public web provenance locally and limits content to captured MasterFormat/SectionFormat claims."
+  }
+}
