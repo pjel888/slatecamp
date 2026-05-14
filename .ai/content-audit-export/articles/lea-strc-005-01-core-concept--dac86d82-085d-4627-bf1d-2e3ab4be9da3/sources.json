@@ -1,32 +1,104 @@
 {
   "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:e9fbff1aa6b17960bc4cdb88668513cf0e744989c9400161ad6a3ddda77feaf4",
+  "sources_hash": "sha256:40d4cdbe2838369cfe110be82e02d03d7f9c56469793a598a23df07c77563ab7",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "5c06a632-9ea4-4912-bea2-e0fcbc72880f",
+      "source_id": "batch-143-lea-strc-005-01-core-concept-raw-source-capture",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
-      "label": "National Structural Code of the Philippines (NSCP) 2001 & 2015, Chapter 2 (Design Loads) and Section 3.2 (Required Strength LRFD Method)",
+      "label": "Batch 143 raw source capture - Required strength and factored demand",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Required strength and factored demand; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:45:07.966Z",
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md",
+      "local_sha256": "sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a",
+      "checked_markdown_lines": [
+        "Fundamentals of Structural Engineering: Structural design philosophy satisfies safety and serviceability. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: Safety is checked by requiring resistance to exceed demand for extreme loading. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: Serviceability checks keep structures operational under service loads. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: Strength-design examples use factored load combinations and envelopes to identify governing design actions. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: The checked source contains example load combinations but is not a complete NSCP factor table for this batch. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Building Structures Illustrated (2nd Edition): Live loads are moving or movable loads created by occupancy, collected water or snow, and movable equipment or objects. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Dead loads are static loads from construction weight, permanent fixtures, and permanently attached equipment. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Loads trace from slab or deck through beams, girders, columns, and walls to the foundation. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Distributed and concentrated loading differ in how load reaches the spanning system. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Floor systems must be stiff while remaining elastic because deflection and vibration can control design. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876"
+      ],
+      "local_source_families": [
+        {
+          "label": "Fundamentals of Structural Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+          "rawHash": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+          "refinedHash": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+          "checked_locator": "Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417"
+        },
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 143 source capture and refined conversion boundary."
     },
     {
-      "source_id": "f2d1804c-a047-40e5-ad90-fa2fb77be8a1",
+      "source_id": "batch-143-lea-strc-005-01-core-concept-refined-source-map",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
-      "label": "NSCP Commentary on Load Combinations and Design Earthquake Loads",
+      "label": "Batch 143 refined source conversion - Required strength and factored demand",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Required strength and factored demand.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:45:07.966Z",
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md",
+      "local_sha256": "sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a",
+      "checked_markdown_lines": [
+        "Fundamentals of Structural Engineering: Structural design philosophy satisfies safety and serviceability. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: Safety is checked by requiring resistance to exceed demand for extreme loading. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: Serviceability checks keep structures operational under service loads. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: Strength-design examples use factored load combinations and envelopes to identify governing design actions. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Fundamentals of Structural Engineering: The checked source contains example load combinations but is not a complete NSCP factor table for this batch. Locator: Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417",
+        "Building Structures Illustrated (2nd Edition): Live loads are moving or movable loads created by occupancy, collected water or snow, and movable equipment or objects. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Dead loads are static loads from construction weight, permanent fixtures, and permanently attached equipment. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Loads trace from slab or deck through beams, girders, columns, and walls to the foundation. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Distributed and concentrated loading differ in how load reaches the spanning system. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Floor systems must be stiff while remaining elastic because deflection and vibration can control design. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876"
+      ],
+      "local_source_families": [
+        {
+          "label": "Fundamentals of Structural Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Fundamentals of Structural Engineering.pdf",
+          "rawHash": "sha256:03a2036e55420dec317ebe3f0202e6b86629638820fe9536f9bdc5514b66ad86",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Fundamentals of Structural Engineering.md",
+          "refinedHash": "sha256:911ad37516d54a6b5db720fa85255216f9921056c2e647450c781c04e8e23e53",
+          "checked_locator": "Fundamentals of Structural Engineering refined markdown lines 1217-1223, 61490-61509, 62119-62128, and 62390-62417"
+        },
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }

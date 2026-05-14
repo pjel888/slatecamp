@@ -1,0 +1,64 @@
+{
+  "question_id": "60912f19-0204-4bb1-9b22-dc96e20f031a",
+  "baseline_hash": "sha256:7f2c57e452735b1304e7c8cf17a1faf01b61c8ffaf18d8064b7feaa945972661",
+  "action": "replace",
+  "reason": "source-audited-article-batch-143-local-first: residual local-first rewrite constrained to checked local source artifacts for Required strength and factored demand.",
+  "approved_by": "codex-local-first-source-audited-article-batch-143-local-first",
+  "approved_at": "2026-05-14T01:45:07.966Z",
+  "source_audit_support": {
+    "parent_article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+    "parent_article_slug": "lea-strc-005-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
+    "checked_sources": [
+      {
+        "source_id": "batch-143-lea-strc-005-01-core-concept-raw-source-capture",
+        "label": "Batch 143 raw source capture - Required strength and factored demand",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md",
+        "sha256": "sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a"
+      },
+      {
+        "source_id": "batch-143-lea-strc-005-01-core-concept-refined-source-map",
+        "label": "Batch 143 refined source conversion - Required strength and factored demand",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md",
+        "sha256": "sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 143 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is required strength in a strength-design check?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The same as architectural read time."
+      },
+      {
+        "id": "b",
+        "text": "The demand side produced by loads and load combinations for comparison with available resistance."
+      },
+      {
+        "id": "c",
+        "text": "The permanent weight of finishes only."
+      },
+      {
+        "id": "d",
+        "text": "A material color schedule."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The same as architectural read time. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "b": "The demand side produced by loads and load combinations for comparison with available resistance. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+      "c": "The permanent weight of finishes only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "d": "A material color schedule. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "correct": "The demand side produced by loads and load combinations for comparison with available resistance. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
+    },
+    "explanation": "The demand side produced by loads and load combinations for comparison with available resistance. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
+  },
+  "batch_question_template_index": 1
+}

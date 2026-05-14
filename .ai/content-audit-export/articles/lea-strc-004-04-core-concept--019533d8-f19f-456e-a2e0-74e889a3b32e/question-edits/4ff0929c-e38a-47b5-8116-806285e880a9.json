@@ -1,0 +1,64 @@
+{
+  "question_id": "4ff0929c-e38a-47b5-8116-806285e880a9",
+  "baseline_hash": "sha256:78e2a6b4778f4ba16ce0c88e150b53b2074e0218381cc5b5d829111333113b29",
+  "action": "replace",
+  "reason": "source-audited-article-batch-143-local-first: residual local-first rewrite constrained to checked local source artifacts for Accelerographs and strong-motion records.",
+  "approved_by": "codex-local-first-source-audited-article-batch-143-local-first",
+  "approved_at": "2026-05-14T01:45:07.966Z",
+  "source_audit_support": {
+    "parent_article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
+    "parent_article_slug": "lea-strc-004-04-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
+    "checked_sources": [
+      {
+        "source_id": "batch-143-lea-strc-004-04-core-concept-raw-source-capture",
+        "label": "Batch 143 raw source capture - Accelerographs and strong-motion records",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md",
+        "sha256": "sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7"
+      },
+      {
+        "source_id": "batch-143-lea-strc-004-04-core-concept-refined-source-map",
+        "label": "Batch 143 refined source conversion - Accelerographs and strong-motion records",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md",
+        "sha256": "sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 143 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What did digital accelerographs improve in the checked source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They can record the onset of ground motion with short memory, reducing missing-baseline problems."
+      },
+      {
+        "id": "b",
+        "text": "They make earthquakes smaller."
+      },
+      {
+        "id": "c",
+        "text": "They remove all need for analysis."
+      },
+      {
+        "id": "d",
+        "text": "They change live loads to dead loads."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "They can record the onset of ground motion with short memory, reducing missing-baseline problems. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+      "b": "They make earthquakes smaller. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "c": "They remove all need for analysis. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "d": "They change live loads to dead loads. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "correct": "They can record the onset of ground motion with short memory, reducing missing-baseline problems. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
+    },
+    "explanation": "They can record the onset of ground motion with short memory, reducing missing-baseline problems. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
+  },
+  "batch_question_template_index": 6
+}

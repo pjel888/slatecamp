@@ -1,30 +1,30 @@
 {
   "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b4b14d27b85fa32436b4748e5ea10d5e4d6247b57bf829e680da52ab3425202b",
+  "linked_questions_hash": "sha256:602b948b530c4f248ff546b79e81578614c8163c87382b41247573f5c222d0c6",
   "question_count": 10,
   "questions": [
     {
       "question_id": "5d75baae-ee30-44ea-bd5b-736a4a4d331f",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "A warehouse owner upgrades from light storage (6.0 kPa) to heavy storage (12.0 kPa) and the floor beams begin to sag. Who is structurally liable if the original design documents specified light storage?",
+      "text": "What is a live load in the checked source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "The structural engineer, for not allowing a 100% safety margin, which is a standard engineering practice"
+          "text": "The permanent self-weight of the structure."
         },
         {
           "id": "b",
-          "text": "The owner, for exceeding the design load limits specified in the plans."
+          "text": "A moving or movable load caused by occupancy, collected water or snow, or movable equipment and objects."
         },
         {
           "id": "c",
-          "text": "The contractor, for using weaker steel than specified, which compromises structural integrity"
+          "text": "The color of a finish material."
         },
         {
           "id": "d",
-          "text": "The insurance company, as it is an 'Act of God', which is typically excluded from coverage"
+          "text": "The earthquake zone factor."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses.",
-        "c": "Unless the contractor deviated from plans, the failure is due to overloading, not material quality.",
-        "d": "Structural overloading is a human error/negligence, not an 'Act of God'.",
-        "correct": "The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity.",
-        "takeaway": "Owners must adhere to design load limits."
+        "a": "The permanent self-weight of the structure. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "A moving or movable load caused by occupancy, collected water or snow, or movable equipment and objects. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "c": "The color of a finish material. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "The earthquake zone factor. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "A moving or movable load caused by occupancy, collected water or snow, or movable equipment and objects. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses. Unless the contractor deviated from plans, the failure is due to overloading, not material quality. Structural overloading is a human error/negligence, not an 'Act of God'. The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity. Owners must adhere to design load limits.",
-      "code_citation": "NSCP 2015, Section 205.2",
+      "explanation": "A moving or movable load caused by occupancy, collected water or snow, or movable equipment and objects. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-004-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T12:47:37.516982+00:00",
-      "content_hash": "sha256:b183847ff009973e0e187776dd22299664c320ae9456362e02c02f53009538b3"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:3aaa24c88be3dc4e8ec12131ab08b1d1a43a09a65006233afecb7f33c15d0403"
     },
     {
       "question_id": "0c09fd99-64dd-4e2c-a224-3ed90b644bc2",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "In a mixed-use building, which occupancy generally requires the highest design live load among those listed?",
+      "text": "What is a dead load?",
       "options": [
         {
           "id": "a",
-          "text": "Residential bedrooms, which typically have lower live load requirements due to limited occupancy"
+          "text": "A crowd moving through a lobby."
         },
         {
           "id": "b",
-          "text": "General office space, designed for moderate live loads to accommodate furniture and equipment"
+          "text": "Temporary stored boxes only."
         },
         {
           "id": "c",
-          "text": "Assembly area with movable seats (e.g. multi-purpose hall)"
+          "text": "A static load from the weight of construction, permanent fixtures, and permanently attached equipment."
         },
         {
           "id": "d",
-          "text": "School classrooms, which are designed for higher live loads to account for student activities"
+          "text": "A lateral response spectrum."
         }
       ],
       "correct_option_id": "c",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Residential bedrooms are 1.9 kPa.",
-        "b": "General office space is 2.4 kPa.",
-        "d": "School classrooms are 1.9 kPa.",
-        "correct": "Table 205-1 requires 4.8 kPa for assembly areas with movable seats. This is higher than residential (1.9), office (2.4), and classrooms (1.9).",
-        "takeaway": "Assembly areas with movable seats = 4.8 kPa."
+        "a": "A crowd moving through a lobby. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Temporary stored boxes only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "A static load from the weight of construction, permanent fixtures, and permanently attached equipment. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "d": "A lateral response spectrum. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "A static load from the weight of construction, permanent fixtures, and permanently attached equipment. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Table 205-1",
+      "explanation": "A static load from the weight of construction, permanent fixtures, and permanently attached equipment. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-004-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:658466d59d4eddcf3c68bffe229b3817aeb8e58bcf98c651a06ab38b56736e3b"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:22c5db8d45b4267187281a9da0ed47d9ef3f768e1dd2222c6f0f3773f0ed5a5f"
     },
     {
       "question_id": "4d543c2d-afb3-4c30-a2da-fcf5066a180b",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "A column in an office building supports a tributary area (At) of 18 m². For an office live load (L0 = 2.4 kPa), can the designer apply a live load reduction per NSCP 2015?",
+      "text": "What does load tracing require?",
       "options": [
         {
           "id": "a",
-          "text": "No, because the tributary area must exceed 50 m² for columns."
+          "text": "Listing only the room name."
         },
         {
           "id": "b",
-          "text": "No, because the influence area (Ai = Kll × At) is only 72 m², which is less than the 100 m² threshold."
+          "text": "Stopping at the floor finish."
         },
         {
           "id": "c",
-          "text": "Yes, because the influence area (Ai = 4 × 18 = 72 m²) exceeds the 37.2 m² threshold."
+          "text": "Following loads from the surface or deck through members and supports to the foundation."
         },
         {
           "id": "d",
-          "text": "Yes, but only if the column supports at least three floor levels."
+          "text": "Replacing all loads with a single code factor."
         }
       ],
       "correct_option_id": "c",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The threshold is based on Influence Area (37.2 m²), not a flat Tributary Area of 50 m².",
-        "b": "The threshold is 37.2 m², not 100 m².",
-        "d": "The number of floors is not a trigger; the influence area is the trigger.",
-        "correct": "Per NSCP 2015 Section 205.5.1, reduction is permitted when the influence area Ai (Ai = Kll × At) is 37.2 m² or more. For a column, Kll = 4. Thus, Ai = 4 × 18 = 72 m². Since 72 > 37.2, reduction is permitted.",
-        "takeaway": "Floor LL reduction trigger: Ai >= 37.2 m²."
+        "a": "Listing only the room name. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Stopping at the floor finish. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "Following loads from the surface or deck through members and supports to the foundation. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "d": "Replacing all loads with a single code factor. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Following loads from the surface or deck through members and supports to the foundation. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 205.5.1",
+      "explanation": "Following loads from the surface or deck through members and supports to the foundation. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-004-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:baf68969b24f8495ea221aac06d535571b8a23614ba4c54b6958da7e2f0c1b95"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:dfc8e3ef567090846bbe2d6732c9b28c6420e6192c43d00051d131f091cd9fc8"
     },
     {
       "question_id": "7a9f729a-66c0-4613-ac0a-fa64813b29b6",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "What is the minimum design live load for corridors above the first floor in a multi-story office building per NSCP 2015?",
+      "text": "How do distributed and concentrated loads differ?",
       "options": [
         {
           "id": "a",
-          "text": "1.9 kPa"
+          "text": "They are identical in every member."
         },
         {
           "id": "b",
-          "text": "2.4 kPa"
+          "text": "Only concentrated loads can be vertical."
         },
         {
           "id": "c",
-          "text": "3.8 kPa"
+          "text": "Distributed loads spread over area or length, while concentrated loads act over a small area or point."
         },
         {
           "id": "d",
-          "text": "4.8 kPa"
+          "text": "Distributed loads apply only during earthquakes."
         }
       ],
       "correct_option_id": "c",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1.9 kPa is for residential rooms.",
-        "b": "2.4 kPa is for the office rooms themselves.",
-        "d": "4.8 kPa is for first-floor corridors and lobbies.",
-        "correct": "Table 205-1 specifies 3.8 kPa for office corridors above the first floor to account for concentrated foot traffic.",
-        "takeaway": "Office corridors (above 1st floor) = 3.8 kPa."
+        "a": "They are identical in every member. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Only concentrated loads can be vertical. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "Distributed loads spread over area or length, while concentrated loads act over a small area or point. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "d": "Distributed loads apply only during earthquakes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Distributed loads spread over area or length, while concentrated loads act over a small area or point. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Table 205-1",
+      "explanation": "Distributed loads spread over area or length, while concentrated loads act over a small area or point. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-004-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:55b9b3e16d48649240e07f19b55727562e230bd4dd508faa0b09a83028c0e21a"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:485de41af46912e0c8396ef4c8eb3d517bce4bcc4fc1ed40b156bd86b4b63a7e"
     },
     {
       "question_id": "84f6ca75-5671-4ab0-ba9d-76031d73d633",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "An office floor is designed with the following loads: office LL = 2.4 kPa, partition load = 1.0 kPa, structural slab self-weight = 2.5 kPa. What is the total nominal gravity load the slab must support?",
+      "text": "Why can a concentrated load control a floor check?",
       "options": [
         {
           "id": "a",
-          "text": "2.4 kPa"
+          "text": "It always has zero reaction."
         },
         {
           "id": "b",
-          "text": "3.4 kPa"
+          "text": "It proves the structure is a space frame."
         },
         {
           "id": "c",
-          "text": "5.9 kPa"
+          "text": "It may demand larger local support than a light uniform load pattern."
         },
         {
           "id": "d",
-          "text": "6.5 kPa"
+          "text": "It has no relation to member sizing."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This excludes dead loads.",
-        "b": "This excludes the self-weight of the slab itself.",
-        "d": "This is a miscalculation.",
-        "correct": "The slab must support the sum of all superimposed and dead loads: 2.4 (LL) + 1.0 (Partition) + 2.5 (Slab weight) = 5.9 kPa.",
-        "takeaway": "Total Load = Dead Load + Live Load."
+        "a": "It always has zero reaction. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It proves the structure is a space frame. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "It may demand larger local support than a light uniform load pattern. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "d": "It has no relation to member sizing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It may demand larger local support than a light uniform load pattern. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 204 & 205",
+      "explanation": "It may demand larger local support than a light uniform load pattern. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-004-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ad9ea25cb83025c4d958f5bc67bbd2a295715eb5e0d8c1a8c5f0abdd46b89b6d"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:4e6e2ddb74980da9d2333a5258953e838d9047d27aade0d2d5a78ec198c22a62"
     },
     {
       "question_id": "917a7ad9-d9ae-4880-a135-422afb86c297",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "According to the NSCP 2015, the minimum design live load for private rooms and corridors serving them in a residential apartment building is:",
+      "text": "Why can deflection or vibration control a floor system?",
       "options": [
         {
           "id": "a",
-          "text": "1.0 kPa"
+          "text": "Deflection is never part of service behavior."
         },
         {
           "id": "b",
-          "text": "1.5 kPa"
+          "text": "Only collapse matters for every floor."
         },
         {
           "id": "c",
-          "text": "1.9 kPa"
+          "text": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed."
         },
         {
           "id": "d",
-          "text": "4.8 kPa"
+          "text": "Vibration applies only to plumbing pipes."
         }
       ],
       "correct_option_id": "c",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1.0 kPa is the minimum partition load requirement (Section 205.3.1), not the floor live load.",
-        "b": "1.5 kPa has no application for residential floor loads in the NSCP.",
-        "d": "4.8 kPa is required for public rooms, lobbies, and corridors serving public spaces in residential buildings.",
-        "correct": "Per NSCP 2015 Table 205-1, residential occupancies (apartments, hotels, and houses) require 1.9 kPa for private rooms and the corridors serving them.",
-        "takeaway": "Residential private areas = 1.9 kPa; Public areas = 4.8 kPa."
+        "a": "Deflection is never part of service behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Only collapse matters for every floor. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "d": "Vibration applies only to plumbing pipes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Table 205-1",
+      "explanation": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-004-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c9e72816ceac438f20d09d4e5470bace85b004e31be05b970a63494807586dd9"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:b314cedb46700693fce5a403a0367ebb4a30b75838c2ff156246f36630a43333"
     },
     {
       "question_id": "4d9b1e26-d911-4bd5-ace6-f2e6c8fb4cec",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "Per NSCP 2015 Section 205.3.1, what is the minimum load that must be included in the design for partitions where such partitions are present or anticipated?",
+      "text": "What should an architect flag when a room use changes to dense movable storage?",
       "options": [
         {
           "id": "a",
-          "text": "0.5 kPa"
+          "text": "The dead load automatically becomes zero."
         },
         {
           "id": "b",
-          "text": "1.0 kPa"
+          "text": "The live-load demand may change and needs structural review against the intended occupancy/load case."
         },
         {
           "id": "c",
-          "text": "1.5 kPa"
+          "text": "The lateral load path disappears."
         },
         {
           "id": "d",
-          "text": "2.0 kPa"
+          "text": "Only wall color must be checked."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "0.5 kPa is insufficient per code.",
-        "c": "1.5 kPa is higher than the minimum required.",
-        "d": "2.0 kPa is double the required minimum.",
-        "correct": "NSCP 2015 Section 205.3.1 requires a minimum partition load of 1.0 kPa. This is treated as a dead load if the partitions are permanent, or as part of the live load if movable.",
-        "takeaway": "Anticipated partition load = 1.0 kPa."
+        "a": "The dead load automatically becomes zero. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The live-load demand may change and needs structural review against the intended occupancy/load case. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "c": "The lateral load path disappears. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Only wall color must be checked. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The live-load demand may change and needs structural review against the intended occupancy/load case. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 205.3.1",
+      "explanation": "The live-load demand may change and needs structural review against the intended occupancy/load case. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-004-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6a80b1fcb0474d992182dfc3b62781a67c0701f4f506003d57453ebfc124e430"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:4e21afade4f97ba524795227513244d48346c743905d9dd6780ceb131557bab7"
     },
     {
       "question_id": "65246ba0-cc21-4ca4-991a-db7720d8b8a3",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "A residential apartment floor is designed for a minimum live load of 1.9 kPa. If the owner converts the space to an office (2.4 kPa) without structural verification, who is legally liable for potential failure?",
+      "text": "How can a diaphragm relate to floor systems?",
       "options": [
         {
           "id": "a",
-          "text": "The original designer, for not anticipating the change in occupancy and failing to provide a flexible design."
+          "text": "It is only a ceiling finish."
         },
         {
           "id": "b",
-          "text": "The building official, for issuing the permit without verifying the intended use and load capacity."
+          "text": "It stores water for drainage."
         },
         {
           "id": "c",
-          "text": "The owner/occupant, for violating the intended occupancy and exceeding the design capacity."
+          "text": "A rigid floor plane can transfer lateral forces to shear walls or other resisting elements."
         },
         {
           "id": "d",
-          "text": "No one; 1.9 kPa and 2.4 kPa are considered structurally equivalent, which is a common misconception."
+          "text": "It removes live load from the floor."
         }
       ],
       "correct_option_id": "c",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Designers are only required to design for the contracted/intended use.",
-        "b": "Permits are based on provided documents; illegal changes after occupancy are the owner's responsibility.",
-        "d": "A difference of 0.5 kPa is significant in structural safety factors over a large floor area.",
-        "correct": "Structural integrity is predicated on specific occupancy assumptions. Increasing the live load by 26% (from 1.9 to 2.4 kPa) without a structural audit constitutes a violation of the building's design intent, making the owner/occupant liable.",
-        "takeaway": "Occupancy change requires structural re-evaluation."
+        "a": "It is only a ceiling finish. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It stores water for drainage. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "A rigid floor plane can transfer lateral forces to shear walls or other resisting elements. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "d": "It removes live load from the floor. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "A rigid floor plane can transfer lateral forces to shear walls or other resisting elements. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 205.2",
+      "explanation": "A rigid floor plane can transfer lateral forces to shear walls or other resisting elements. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-004-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1ec3cc078a294fd54b5ff7bf60f6e3d6e6f40a252e8e5a76a3c773382a6854bb"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:2389ca861da219832f6517416c374a11a0b684e63591f5d02fc1484ed8ec1933"
     },
     {
       "question_id": "d8cb7417-9f1e-489d-9b40-13c384407b3e",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "The minimum design live load for a typical office space in an office building per NSCP 2015 is:",
+      "text": "Why should exact NSCP live-load table values stay out of this batch?",
       "options": [
         {
           "id": "a",
-          "text": "1.9 kPa"
+          "text": "All live loads are the same value."
         },
         {
           "id": "b",
-          "text": "2.4 kPa"
+          "text": "The exact local code table was not safely captured, so use source concepts or values supplied by the item."
         },
         {
           "id": "c",
-          "text": "3.8 kPa"
+          "text": "Memorized numbers are always safe."
         },
         {
           "id": "d",
-          "text": "4.8 kPa"
+          "text": "Occupancy never affects live load."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1.9 kPa is for residential private rooms.",
-        "c": "3.8 kPa is for office corridors above the first floor.",
-        "d": "4.8 kPa is for office lobbies and first-floor corridors.",
-        "correct": "Per NSCP 2015 Table 205-1, the minimum live load for office use is 2.4 kPa.",
-        "takeaway": "Office space = 2.4 kPa."
+        "a": "All live loads are the same value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The exact local code table was not safely captured, so use source concepts or values supplied by the item. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "c": "Memorized numbers are always safe. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Occupancy never affects live load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The exact local code table was not safely captured, so use source concepts or values supplied by the item. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Table 205-1",
+      "explanation": "The exact local code table was not safely captured, so use source concepts or values supplied by the item. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-004-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e9893ea755c67ca62620d78b4155192c897f093292526fe4837eb93bed390f67"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:8ba3927d58602e7c1b29b903d07df8866d65026ca21d43f8bdd2f39121b50a50"
     },
     {
       "question_id": "4a2ddfd2-8028-408c-983d-82da532b3ba0",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
       "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "The minimum live load for storage of heavy items (machinery, steel, bulk dense materials) is:",
+      "text": "What is the best LEA habit for live-load questions here?",
       "options": [
         {
           "id": "a",
-          "text": "4.8 kPa"
+          "text": "Apply one number to every occupancy."
         },
         {
           "id": "b",
-          "text": "6.0 kPa"
+          "text": "Skip units and tributary area."
         },
         {
           "id": "c",
-          "text": "9.6 kPa"
+          "text": "Treat every load as seismic base shear."
         },
         {
           "id": "d",
-          "text": "12.0 kPa"
+          "text": "Identify whether the item asks for load type, load path, distribution, or supplied code value before calculating."
         }
       ],
       "correct_option_id": "d",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "4.8 kPa is for public assembly or lobbies.",
-        "b": "6.0 kPa is the requirement for light storage.",
-        "c": "9.6 kPa is not a standard storage load in Table 205-1.",
-        "correct": "Table 205-1 specifies 6.0 kPa for light storage and 12.0 kPa for heavy storage.",
-        "takeaway": "Light Storage = 6.0 kPa; Heavy Storage = 12.0 kPa."
+        "a": "Apply one number to every occupancy. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Skip units and tributary area. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "Treat every load as seismic base shear. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Identify whether the item asks for load type, load path, distribution, or supplied code value before calculating. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+        "correct": "Identify whether the item asks for load type, load path, distribution, or supplied code value before calculating. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+        "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Table 205-1",
+      "explanation": "Identify whether the item asks for load type, load path, distribution, or supplied code value before calculating. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-004-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:adbcf3ffe612a5a986de3cecb5456cd0e5cc0da9675c4a9814b556d3c75764ed"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:e8c389ec393f33dcb71b7d3ee2bae04d7caf5961ca9a37a694482d6b76eeadc5"
     }
   ]
 }

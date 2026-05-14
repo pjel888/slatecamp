@@ -1,30 +1,30 @@
 {
   "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:dc350f0464c21d12297334c69e1f81681bbd745d65d0bccf0924bd8c7829fcdd",
+  "linked_questions_hash": "sha256:d197c6f83fe75e5626dbbf612c43e40a159d165ddf0747ed425ff1e377bcb66d",
   "question_count": 10,
   "questions": [
     {
       "question_id": "4d77f866-96c7-43dd-8441-dbb571995027",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "The point where a fault rupture initiates at depth is called the:",
+      "text": "What is the safest first principle for explaining earthquake response in this source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Epicenter, which is the point on the Earth's surface directly above the hypocenter"
+          "text": "A single memorized zone number explains the full response."
         },
         {
           "id": "b",
-          "text": "Hypocenter (or focus)"
+          "text": "A building response depends on ground motion, structural configuration and stiffness, mass, and supporting ground material."
         },
         {
           "id": "c",
-          "text": "Epicentral distance, which measures the distance from the epicenter to a specific location"
+          "text": "Only the finish material matters."
         },
         {
           "id": "d",
-          "text": "Seismic zone boundary, which defines the limits of seismic activity in a region"
+          "text": "The structure can be evaluated without a load path."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The hypocenter (also called focus) is the exact point in the Earth where rupture begins. It is always at depth.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A single memorized zone number explains the full response. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "A building response depends on ground motion, structural configuration and stiffness, mass, and supporting ground material. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "Only the finish material matters. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "The structure can be evaluated without a load path. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "A building response depends on ground motion, structural configuration and stiffness, mass, and supporting ground material. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A building response depends on ground motion, structural configuration and stiffness, mass, and supporting ground material. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-004-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e35ec14bbb11d85281c65907fb1001c922db2ac6e908c34060ddaf06aadea73b"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:bedccc5f602cc8b31dd58ab8a63c77a405eaf8836b2b895025195394fd5e37eb"
     },
     {
       "question_id": "8502c7e5-eb80-483d-97c2-6e8ed26593c8",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "The geographic location on the surface directly above the rupture point is called the:",
+      "text": "Why is a continuous load path central to seismic design?",
       "options": [
         {
           "id": "a",
-          "text": "Hypocenter"
+          "text": "It removes the need for diaphragms."
         },
         {
           "id": "b",
-          "text": "Epicenter"
+          "text": "It transfers earthquake-induced forces from their points of application through the structure to the foundation."
         },
         {
           "id": "c",
-          "text": "Focal depth"
+          "text": "It converts all seismic force into gravity load."
         },
         {
           "id": "d",
-          "text": "Magnitude zone"
+          "text": "It applies only to plumbing equipment."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The epicenter is the surface projection of the hypocenter. It is the location where surveyors measure intensity and where we reference earthquake distances.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It removes the need for diaphragms. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It transfers earthquake-induced forces from their points of application through the structure to the foundation. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "It converts all seismic force into gravity load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It applies only to plumbing equipment. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It transfers earthquake-induced forces from their points of application through the structure to the foundation. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3",
+      "explanation": "It transfers earthquake-induced forces from their points of application through the structure to the foundation. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-004-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b8a5b3e407c1206a243b343e2d6a28371f1788326e8a13be64c857dfe1886313"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:a5f66112b58fc44e2f80d66ec5cbce3d44c56ac7b2728fb0d0611aa4bbc89c3b"
     },
     {
       "question_id": "29362f8e-f219-499c-a101-8c183b45ae16",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "Why does the Richter sclea (local magnitude ML) become unreliable for earthquakes larger than magnitude 6.5?",
+      "text": "What is the source-safe meaning of seismic inertial force?",
       "options": [
         {
           "id": "a",
-          "text": "The seismic moment equation breaks down for large events, leading to inaccuracies in magnitude estimation"
+          "text": "It is a permanent dead load value only."
         },
         {
           "id": "b",
-          "text": "The amplitude recorded on a Wood-Anderson seismograph saturates, preventing accurate measurement of larger amplitudes."
+          "text": "It is the force associated with mass resisting acceleration during ground shaking."
         },
         {
           "id": "c",
-          "text": "The hypocenter becomes too deep to measure accurately, affecting the reliability of the magnitude calculation"
+          "text": "It is the same as wind suction."
         },
         {
           "id": "d",
-          "text": "Intensity data becomes unavailable in remote regions, which complicates the assessment of earthquake magnitude"
+          "text": "It is a code edition number."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The Wood-Anderson instrument has a limited amplitude recording range. For large events, the trace goes off-scale, so ML cannot be reliably calculated. Moment magnitude Mw is used instead.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It is a permanent dead load value only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It is the force associated with mass resisting acceleration during ground shaking. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "It is the same as wind suction. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It is a code edition number. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It is the force associated with mass resisting acceleration during ground shaking. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3; Kanamori & Anderson (1975)",
+      "explanation": "It is the force associated with mass resisting acceleration during ground shaking. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-004-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:315991b102834496defd1a928dc8a6eed512c8851e87e4525d248d8009989854"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:3b11272b523e8392f32254e4a9bca2c6291f4c80752fc714d665afb4aecf4867"
     },
     {
       "question_id": "7bbccda7-b0f8-4a2b-8d30-a2c3602c0eb2",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "Why is moment magnitude (Mw) preferred over local magnitude (ML) for earthquakes larger than magnitude 6.5 in modern seismic hazard assessment?",
+      "text": "Why can reducing building mass improve seismic behavior?",
       "options": [
         {
           "id": "a",
-          "text": "Moment magnitude is easier to calculate from eyewitness reports, which is a misconception"
+          "text": "More mass always lowers all seismic force."
         },
         {
           "id": "b",
-          "text": "Local magnitude saturates due to instrument limitations, whereas moment magnitude is based on seismic moment and does not saturate."
+          "text": "Less mass can reduce earthquake inertial force for the same acceleration."
         },
         {
           "id": "c",
-          "text": "Moment magnitude directly measures the intensity of shaking, whereas local magnitude cannot, which is not entirely accurate"
+          "text": "Mass has no relation to earthquake response."
         },
         {
           "id": "d",
-          "text": "Local magnitude is only defined for earthquakes in California; moment magnitude applies globally, which is an oversimplification"
+          "text": "Only plan color affects seismic response."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The Wood-Anderson seismograph used for ML has a limited amplitude range. For large events, the trace saturates (goes off-scale). Moment magnitude Mw, based on M0 and the rigidity and rupture dimensions, continues to be accurate for all event sizes.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "More mass always lowers all seismic force. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Less mass can reduce earthquake inertial force for the same acceleration. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "Mass has no relation to earthquake response. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Only plan color affects seismic response. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Less mass can reduce earthquake inertial force for the same acceleration. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3; Kanamori & Anderson (1975)",
+      "explanation": "Less mass can reduce earthquake inertial force for the same acceleration. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-004-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b41fb040f7a5dbd89018115ea71487bdeea6a6686b77696a16fc1822aa595032"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ac8c2bd9dd7d6b92d948a502953d5dffdf2df6704b1b6c1e28a4a55fef8270cb"
     },
     {
       "question_id": "ff10c77a-678c-476f-8e0c-dc61a2d39d63",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "The 1990 Luzon earthquake (magnitude 7.8) caused significant damage in Metro Manila even though the epicenter was over 100 km away. Which factors contributed to the high intensity experienced in Manila despite the distance?",
+      "text": "What is seismic base shear at the concept level?",
       "options": [
         {
           "id": "a",
-          "text": "Manila experienced a higher magnitude version of the same earthquake locally, due to unique geological conditions"
+          "text": "The vertical soil bearing pressure only."
         },
         {
           "id": "b",
-          "text": "The 7.8 magnitude at the epicenter is exaggerated; the true local magnitude at Manila was higher, according to some reports"
+          "text": "A roof drainage load."
         },
         {
           "id": "c",
-          "text": "Soil conditions in Manila (soft alluvial deposits) amplified seismic waves, and the epicentral distance was far enough to avoid the most extreme near-field effects yet close enough for significant motion."
+          "text": "The minimum design total lateral seismic force assumed at the structure base."
         },
         {
           "id": "d",
-          "text": "Distance alone determines intensity; the 100+ km distance proves the damage must have been minimal, contradicting observed effects"
+          "text": "A material-property value."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Site amplification in Manila's soft alluvial soils (especially in areas built on filled-in marshes and lagoons) can double or triple ground motion. The epicentral distance of 100+ km placed Manila in a zone where (1) seismic waves had sufficient amplitude and (2) soil amplification significantly increased the local effects. This is a classic illustration of why intensity depends on both source distance and local site conditions.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The vertical soil bearing pressure only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "A roof drainage load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "The minimum design total lateral seismic force assumed at the structure base. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "d": "A material-property value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The minimum design total lateral seismic force assumed at the structure base. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3; PHIVOLCS 1990 Luzon Earthquake Report",
+      "explanation": "The minimum design total lateral seismic force assumed at the structure base. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-004-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1599c446c0ff3711e1a261d8d3861d38ad2b0985bb849f654893c98308683ad1"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:96139fff46302f549eac963a878651c967e8580870ee61ac7e189dc432801727"
     },
     {
       "question_id": "b5a6f08a-fa6a-4058-b0af-05851ad4511a",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "A single magnitude 7.2 earthquake occurs in Mindanao. At the epicenter, surveyors observe nearly total destruction (MMI X). At a location 150 km away on stable ground, residents report minor cracking in walls (MMI IV). Which statement is correct?",
+      "text": "Which project should be flagged for more complex dynamic analysis in this source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "The earthquake has two magnitudes: 7.2 near the epicenter and a lower magnitude 150 km away, which is a misunderstanding of how magnitude is measured"
+          "text": "A perfectly regular low-risk one-story storage shed only."
         },
         {
           "id": "b",
-          "text": "The earthquake has one magnitude (7.2) but produces different intensity values (X and IV) due to distance, soil conditions, and building quality."
+          "text": "A high-rise or irregular structure, or a structure on soft or plastic soil susceptible to poor seismic behavior."
         },
         {
           "id": "c",
-          "text": "Both locations experienced the same intensity; the difference in damage is due to construction quality only, which oversimplifies the factors affecting intensity"
+          "text": "Any project with painted steel."
         },
         {
           "id": "d",
-          "text": "Intensity is measured by seismographs; the MMI X and IV values are calculated from recorded accelerations, which is incorrect as intensity is observed"
+          "text": "A site with no lateral forces."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The earthquake's magnitude is a single value determined by the seismic moment. Intensity varies by location based on distance from epicenter, local soil amplification, and building design. MMI X near the epicenter and MMI IV at distance is physically expected.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A perfectly regular low-risk one-story storage shed only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "A high-rise or irregular structure, or a structure on soft or plastic soil susceptible to poor seismic behavior. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "Any project with painted steel. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "A site with no lateral forces. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "A high-rise or irregular structure, or a structure on soft or plastic soil susceptible to poor seismic behavior. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3; PHIVOLCS intensity assignment protocol",
+      "explanation": "A high-rise or irregular structure, or a structure on soft or plastic soil susceptible to poor seismic behavior. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-004-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:931c9435e39e1b31a2ee47c5a75ee229c40bf36e20c13580c36bc853a975370a"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:c6f708d5c95c6efb3cb5b00ee05c2a1874b90f43d0e2e186eea626b7d930d98c"
     },
     {
       "question_id": "0ca6006e-a7fb-4486-80ff-30fb85da531e",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "Approximately how many times more energy does a magnitude 8.0 earthquake release compared to a magnitude 7.0 earthquake?",
+      "text": "What does a response spectrum help organize?",
       "options": [
         {
           "id": "a",
-          "text": "2 times"
+          "text": "Only architectural style periods."
         },
         {
           "id": "b",
-          "text": "8 times"
+          "text": "Only the number of columns in a grid."
         },
         {
           "id": "c",
-          "text": "32 times"
+          "text": "Peak structural response over a range of vibration periods and damping levels."
         },
         {
           "id": "d",
-          "text": "64 times"
+          "text": "Only live-load occupancy labels."
         }
       ],
       "correct_option_id": "c",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Each unit increase in magnitude corresponds to a factor of approximately **31.6×** increase in energy released (10^{1.5}). This follows from the logarithmic relationship between magnitude and seismic moment.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only architectural style periods. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Only the number of columns in a grid. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "Peak structural response over a range of vibration periods and damping levels. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "d": "Only live-load occupancy labels. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Peak structural response over a range of vibration periods and damping levels. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3",
+      "explanation": "Peak structural response over a range of vibration periods and damping levels. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-004-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9f452570c89d07715e8da35360e4cf89dceaa5d4e172fea2f4e3f933a9a823c7"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:74e6017749c4ee3185e394de7d15a8595ef48991d82cedf1c514c7649127fc30"
     },
     {
       "question_id": "67203726-11ec-4021-99d5-09ddf8c46901",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "The seismic moment M0 is defined as μ × A × d. Which of these is the correct interpretation of the terms?",
+      "text": "Why can two earthquake records at similar distance differ?",
       "options": [
         {
           "id": "a",
-          "text": "μ = magnitude unit; A = area affected; d = duration of shaking"
+          "text": "Distance is the only variable."
         },
         {
           "id": "b",
-          "text": "μ = rigidity modulus; A = fault area; d = average displacement on the fault"
+          "text": "Local soil conditions and other site effects can make recorded accelerations vary significantly."
         },
         {
           "id": "c",
-          "text": "μ = moment magnitude; A = amplitude of seismic waves; d = distance from epicenter"
+          "text": "The accelerograph changes the earthquake source."
         },
         {
           "id": "d",
-          "text": "μ = mass of rock; A = acceleration; d = depth of hypocenter"
+          "text": "All soils record identical shaking."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Seismic moment M0 = μ × A × d where μ is the rigidity (shear modulus) of rock, A is the area of the fault that ruptured, and d is the average amount of displacement on that fault. M0 is used to calculate moment magnitude Mw.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Distance is the only variable. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Local soil conditions and other site effects can make recorded accelerations vary significantly. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "The accelerograph changes the earthquake source. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "All soils record identical shaking. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Local soil conditions and other site effects can make recorded accelerations vary significantly. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3; Kanamori & Anderson (1975)",
+      "explanation": "Local soil conditions and other site effects can make recorded accelerations vary significantly. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-004-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d28080859fab3a61e651aba651ebc2571197d05a7d752830e2a350049e48a462"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:8892cd412fe21e478209616be1d2d4b328e8482bc4998467e95d2e2e5ffa586d"
     },
     {
       "question_id": "d44b99d7-6c29-4d45-87f8-4938cb2bfca5",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "Which statement correctly distinguishes magnitude and intensity?",
+      "text": "What foundation action is source-safe for earthquake review?",
       "options": [
         {
           "id": "a",
-          "text": "Magnitude varies by location; intensity is the same for an entire earthquake, which is incorrect as intensity varies by location."
+          "text": "The foundation carries vertical load only."
         },
         {
           "id": "b",
-          "text": "Magnitude measures energy released; intensity measures perceived effects and damage at specific locations."
+          "text": "The foundation must help anchor the superstructure against ground movement and related lateral effects."
         },
         {
           "id": "c",
-          "text": "Intensity is calculated from seismic instruments; magnitude is assigned by eyewitness reports, which is a reversal of the actual definitions."
+          "text": "The foundation eliminates all need for bracing."
         },
         {
           "id": "d",
-          "text": "Magnitude and intensity are equivalent terms used interchangeably in seismic design, which is a common misconception."
+          "text": "The foundation changes live load to dead load."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A single earthquake has one magnitude (energy). That same earthquake produces many intensity values across different locations depending on distance, soil, and building quality.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The foundation carries vertical load only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The foundation must help anchor the superstructure against ground movement and related lateral effects. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "The foundation eliminates all need for bracing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "The foundation changes live load to dead load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The foundation must help anchor the superstructure against ground movement and related lateral effects. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3; PHIVOLCS Magnitude vs Intensity",
+      "explanation": "The foundation must help anchor the superstructure against ground movement and related lateral effects. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-004-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:85eaa32db270d1bf6d78afa8a07eaf388522535da4a4820de7c1d68b28b2d97c"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:b9c2b278e20882cf6a713ccf4f060fa1ae8c6e52e586edbf77f455a708e4c733"
     },
     {
       "question_id": "b9baf760-5d48-4a3e-a1fc-3d8c2ca91a88",
       "article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
       "topic_id": "9bbc44a9-e103-4ad1-94ac-aa38705810c8",
-      "text": "A seismic hazard map for a design location shows Ss = 1.2 g and S1 = 0.5 g. Which statement correctly relates these values to earthquake magnitude and intensity?",
+      "text": "How should exact Philippine seismic zone values be handled in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Ss and S1 are intensity values; they directly define the earthquake magnitude for the region, which is crucial for initial design considerations"
+          "text": "Restore the remembered values from memory."
         },
         {
           "id": "b",
-          "text": "Ss and S1 are spectral accelerations from seismic hazard analysis that account for magnitude, distance, and soil effects; they are inputs to the seismic design formula, not magnitude or intensity."
+          "text": "Do not use them unless a readable local source or completed recovery report supplies the exact code claim."
         },
         {
           "id": "c",
-          "text": "Ss is magnitude; S1 is intensity. A higher Ss means the region has experienced only large earthquakes, which is a common misconception"
+          "text": "Use any zone table from another country."
         },
         {
           "id": "d",
-          "text": "Ss and S1 are calculated from post-earthquake intensity surveys to update magnitude scales, which is a method used in some regions"
+          "text": "Treat zone factor as a live load."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Ss (short-period spectral acceleration) and S1 (1-second period spectral acceleration) are outputs of seismic hazard analysis. They incorporate earthquake magnitude, distance, and local soil amplification to predict ground motion at a design location. They are not magnitudes or intensities; they are engineering inputs.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Restore the remembered values from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Do not use them unless a readable local source or completed recovery report supplies the exact code claim. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+        "c": "Use any zone table from another country. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Treat zone factor as a live load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Do not use them unless a readable local source or completed recovery report supplies the exact code claim. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+        "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.3; PHIVOLCS Seismic Hazard Maps",
+      "explanation": "Do not use them unless a readable local source or completed recovery report supplies the exact code claim. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-004-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4f282311e3901608c6633f527054e4a34fc414841ceb23043d8e1521084a272b"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:5e6f27fc071de7a5f42cda7b8715fcbf02296ec01b8c1cda08fba0052f363130"
     }
   ]
 }

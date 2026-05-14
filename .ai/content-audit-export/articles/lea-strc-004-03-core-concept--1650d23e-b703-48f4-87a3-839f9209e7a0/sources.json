@@ -1,68 +1,130 @@
 {
   "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9de1c703a0e52b341307ca4c36b735e3f4a2c04a0c9b4db4bff28c1c4cb4abcd",
-  "source_count": 5,
+  "sources_hash": "sha256:90151e219a645af098e9454cf89e0d6964acfddcb6b0b6fb302cfd4b41709c2d",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "2341ab36-3ae8-46f8-aa42-ed89c136cd25",
+      "source_id": "batch-143-lea-strc-004-03-core-concept-raw-source-capture",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
-      "label": "NSCP 2015, Section 5.2.3 (Seismic irregularities) and Section 5.8.11 (Story drift limits)",
+      "label": "Batch 143 raw source capture - Base shear and vertical irregularities",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Base shear and vertical irregularities; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:45:07.966Z",
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md",
+      "local_sha256": "sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b",
+      "checked_markdown_lines": [
+        "Building Structures Illustrated (2nd Edition): Seismic response depends on ground motion magnitude, duration, and harmonic character, plus structure size, configuration, stiffness, and ground material. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Continuous load paths transfer earthquake-induced forces from points of application through the structure to the foundation. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Seismic inertial force follows mass times acceleration; reducing mass can lessen inertial force. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Seismic base shear is the minimum design total lateral seismic force assumed at the base for concept-level design. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Vertical irregularities include soft stories, weak stories, load-path discontinuities, geometric irregularities, and weight or mass irregularities. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Construction Illustrated (5th Edition): Foundations support vertical dead and live loads and also anchor against earthquake ground movement, wind sliding, overturning, and uplift. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Floor and roof systems support dead, live, and lateral loads; rigid floor planes can act as diaphragms that transfer lateral forces to shear walls. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Earthquakes can move a building base suddenly and induce shaking in all directions, with horizontal components treated as most important in structural design. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Under earthquake loading, building mass develops inertial force as it resists horizontal ground acceleration. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Heavy buildings can resist wind overturning by weight but are susceptible to larger earthquake inertial forces. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: A strong-motion accelerograph records three components of earthquake ground shaking and is triggered by arriving earthquake waves. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Accelerographs must be maintained and serviced so they produce a record when shaking occurs. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Acceleration-time records can be integrated to velocity and displacement, but baseline and triggering issues affect accuracy. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Peak base shear relates to structure weight and pseudo-acceleration through a base shear or lateral force coefficient. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Response spectra organize peak deformation, pseudo-velocity, and pseudo-acceleration response over vibration periods and damping levels. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917"
+        },
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197"
+        },
+        {
+          "label": "Dynamics of Structures: Theory and Applications to Earthquake Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Dynamics of Structures_ Theory and applications to earthquake engineering.pdf",
+          "rawHash": "sha256:274f728d2cea0e6515e70241323abfa54a1864b5086a7acee0b5fc6ef48394e1",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Dynamics of Structures_ Theory and applications to earthquake engineering.md",
+          "refinedHash": "sha256:d45ac917832e84d3f255730a4e04e50b026be115f76c8b2cf78d6420f6104f7c",
+          "checked_locator": "Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 143 source capture and refined conversion boundary."
     },
     {
-      "source_id": "933443fd-9279-4386-92ca-726fa5cf8f4a",
+      "source_id": "batch-143-lea-strc-004-03-core-concept-refined-source-map",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
-      "label": "Nagarajaiah, S., & Narasimhan, S. (2006)",
+      "label": "Batch 143 refined source conversion - Base shear and vertical irregularities",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Base shear and vertical irregularities.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "2bc680c9-bcdc-497d-98c4-46e3ac070619",
-      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
-      "label": "Smart base isolated building with variable friction dampers",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "136d805a-2a09-477a-b5c3-c1946c41d42f",
-      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
-      "label": "Journal of Structural Engineering, 132(7), 1055–1067. American Society of Civil Engineers",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
-    },
-    {
-      "source_id": "c23f509c-8820-4695-aa01-04eaa7b8d399",
-      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
-      "label": "ASCE 7-22: Minimum Design Loads and Associated Criteria for Buildings and Other Structures (Chapter 12: Seismic Design Requirements)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-14T01:45:07.966Z",
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md",
+      "local_sha256": "sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b",
+      "checked_markdown_lines": [
+        "Building Structures Illustrated (2nd Edition): Seismic response depends on ground motion magnitude, duration, and harmonic character, plus structure size, configuration, stiffness, and ground material. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Continuous load paths transfer earthquake-induced forces from points of application through the structure to the foundation. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Seismic inertial force follows mass times acceleration; reducing mass can lessen inertial force. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Seismic base shear is the minimum design total lateral seismic force assumed at the base for concept-level design. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Structures Illustrated (2nd Edition): Vertical irregularities include soft stories, weak stories, load-path discontinuities, geometric irregularities, and weight or mass irregularities. Locator: Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917",
+        "Building Construction Illustrated (5th Edition): Foundations support vertical dead and live loads and also anchor against earthquake ground movement, wind sliding, overturning, and uplift. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Floor and roof systems support dead, live, and lateral loads; rigid floor planes can act as diaphragms that transfer lateral forces to shear walls. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Earthquakes can move a building base suddenly and induce shaking in all directions, with horizontal components treated as most important in structural design. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Under earthquake loading, building mass develops inertial force as it resists horizontal ground acceleration. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Heavy buildings can resist wind overturning by weight but are susceptible to larger earthquake inertial forces. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: A strong-motion accelerograph records three components of earthquake ground shaking and is triggered by arriving earthquake waves. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Accelerographs must be maintained and serviced so they produce a record when shaking occurs. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Acceleration-time records can be integrated to velocity and displacement, but baseline and triggering issues affect accuracy. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Peak base shear relates to structure weight and pseudo-acceleration through a base shear or lateral force coefficient. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Response spectra organize peak deformation, pseudo-velocity, and pseudo-acceleration response over vibration periods and damping levels. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 4289-4309, 4332-4333, and 4867-4917"
+        },
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197"
+        },
+        {
+          "label": "Dynamics of Structures: Theory and Applications to Earthquake Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Dynamics of Structures_ Theory and applications to earthquake engineering.pdf",
+          "rawHash": "sha256:274f728d2cea0e6515e70241323abfa54a1864b5086a7acee0b5fc6ef48394e1",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Dynamics of Structures_ Theory and applications to earthquake engineering.md",
+          "refinedHash": "sha256:d45ac917832e84d3f255730a4e04e50b026be115f76c8b2cf78d6420f6104f7c",
+          "checked_locator": "Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }

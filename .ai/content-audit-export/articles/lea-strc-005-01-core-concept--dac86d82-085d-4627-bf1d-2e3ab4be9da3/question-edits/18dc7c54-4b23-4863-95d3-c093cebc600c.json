@@ -1,0 +1,64 @@
+{
+  "question_id": "18dc7c54-4b23-4863-95d3-c093cebc600c",
+  "baseline_hash": "sha256:f679e9d94f4724360dbe5292abf63d6a3e1a69892e6090dc7cd51c00809be8d1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-143-local-first: residual local-first rewrite constrained to checked local source artifacts for Required strength and factored demand.",
+  "approved_by": "codex-local-first-source-audited-article-batch-143-local-first",
+  "approved_at": "2026-05-14T01:45:07.966Z",
+  "source_audit_support": {
+    "parent_article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
+    "parent_article_slug": "lea-strc-005-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
+    "checked_sources": [
+      {
+        "source_id": "batch-143-lea-strc-005-01-core-concept-raw-source-capture",
+        "label": "Batch 143 raw source capture - Required strength and factored demand",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md",
+        "sha256": "sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a"
+      },
+      {
+        "source_id": "batch-143-lea-strc-005-01-core-concept-refined-source-map",
+        "label": "Batch 143 refined source conversion - Required strength and factored demand",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md",
+        "sha256": "sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 143 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why are envelopes useful in the checked examples?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They identify governing moment, shear, or axial demand among multiple load combinations."
+      },
+      {
+        "id": "b",
+        "text": "They are only drawing-title blocks."
+      },
+      {
+        "id": "c",
+        "text": "They cancel all load cases."
+      },
+      {
+        "id": "d",
+        "text": "They are plumbing details."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "They identify governing moment, shear, or axial demand among multiple load combinations. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+      "b": "They are only drawing-title blocks. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "c": "They cancel all load cases. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "d": "They are plumbing details. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "correct": "They identify governing moment, shear, or axial demand among multiple load combinations. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
+    },
+    "explanation": "They identify governing moment, shear, or axial demand among multiple load combinations. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
+  },
+  "batch_question_template_index": 5
+}

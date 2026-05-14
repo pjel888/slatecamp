@@ -1,30 +1,30 @@
 {
   "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:8da3d3eb7b21da8db30748eb9f6c24a702bacc7e9255bae3d8881afaeee1a2bf",
+  "linked_questions_hash": "sha256:59d6d9586eea2dab47fd321954c7cc7e69bcf674fd364552210dd88613369ec3",
   "question_count": 10,
   "questions": [
     {
       "question_id": "21ac38fe-0c4b-4939-91a7-2616add69fee",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "Lateral stiffness of Story 3 is 8000 kN/mm. Lateral stiffness of Story 4 (above Story 3) is 10,000 kN/mm. Is Story 3 a soft story?",
+      "text": "What is the source-safe relationship behind base shear?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because 8000 < 10,000, indicating a significant reduction in stiffness"
+          "text": "It is independent of mass."
         },
         {
           "id": "b",
-          "text": "No, because 8000 ÷ 10,000 = 0.80 = 80%, which exceeds the 70% threshold."
+          "text": "It is tied to the inertial force from structural mass or weight and acceleration response."
         },
         {
           "id": "c",
-          "text": "Yes, because 8000 ÷ 10,000 = 0.80, which is less than the 90% threshold, indicating potential vulnerability"
+          "text": "It is only a vertical compression stress."
         },
         {
           "id": "d",
-          "text": "Cannot determine without knowing the story height, as height affects stiffness calculations"
+          "text": "It is a finish schedule item."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A soft story is one where stiffness is less than 70% of the story above. Here, K3 / K4 = 8000 / 10,000 = 80% = 0.80. Since 0.80 > 0.70, Story 3 is not a soft story. It must exceed 70% to avoid being soft.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It is independent of mass. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It is tied to the inertial force from structural mass or weight and acceleration response. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "It is only a vertical compression stress. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It is a finish schedule item. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It is tied to the inertial force from structural mass or weight and acceleration response. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.2.3",
+      "explanation": "It is tied to the inertial force from structural mass or weight and acceleration response. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-004-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a15eaae4a6c8c1e42e6fc6018b882541cdcd5968522b6f4644525d15e8f513bf"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:fa50aa2a056942d946027001648efeb7705e397884ec67ae9fcf2dd2d80dc5df"
     },
     {
       "question_id": "d0c80a4a-a257-462e-97f7-800baae751bd",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "Which statement correctly distinguishes a soft story from a weak story?",
+      "text": "What does a base shear coefficient do conceptually?",
       "options": [
         {
           "id": "a",
-          "text": "A soft story has lower strength; a weak story has lower stiffness."
+          "text": "It chooses paint color."
         },
         {
           "id": "b",
-          "text": "A soft story has lower stiffness; a weak story has lower strength."
+          "text": "It multiplies structural weight to represent an equivalent lateral seismic force."
         },
         {
           "id": "c",
-          "text": "Both terms describe the same condition and are used interchangeably."
+          "text": "It sets the number of stairs."
         },
         {
           "id": "d",
-          "text": "A soft story is a vertical alignment deficiency; a weak story is a horizontal alignment deficiency."
+          "text": "It removes all lateral-force analysis."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Soft story refers to insufficient lateral stiffness (< 70%); weak story refers to insufficient lateral strength (< 80%). Stiffness and strength are distinct properties.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It chooses paint color. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It multiplies structural weight to represent an equivalent lateral seismic force. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "It sets the number of stairs. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It removes all lateral-force analysis. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It multiplies structural weight to represent an equivalent lateral seismic force. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.2.3",
+      "explanation": "It multiplies structural weight to represent an equivalent lateral seismic force. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-004-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:de7231e9a6dc9a3fb6741e5d69e50ae415bcb195e534d5322f8224dc52be11d1"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:0f1e7d5f2638a212fa8f2414133f525f015727910249c52ca153ff635fd1ee1e"
     },
     {
       "question_id": "1f26030b-db3a-4a24-b673-e9aa1b580cac",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "What is the relationship between story drift and P-delta (second-order) effects?",
+      "text": "Which condition is a soft-story warning at source-safe level?",
       "options": [
         {
           "id": "a",
-          "text": "Story drift and P-delta are unrelated; P-delta is caused by axial loads alone, independent of lateral displacement, and does not influence structural stability"
+          "text": "The story has softer flooring only."
         },
         {
           "id": "b",
-          "text": "As story drift increases, gravity loads (P) create additional overturning moment (delta effect) that amplifies lateral displacement. Excessive drift triggers P-delta and can cause instability."
+          "text": "One story is significantly more flexible laterally than the story above or below."
         },
         {
           "id": "c",
-          "text": "P-delta effects reduce story drift by stiffening the structure laterally, providing additional resistance against lateral forces"
+          "text": "The story uses a lighter paint color."
         },
         {
           "id": "d",
-          "text": "Story drift limits are set independently of P-delta; they serve different purposes and are not related, ensuring separate compliance checks"
+          "text": "The story has no mass."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "When a building sways laterally (story drift), gravity loads (P) on columns create an additional overturning moment (P × Δ). This moment amplifies the lateral displacement beyond what base shear alone would cause. Large drift → large P-delta moment → potential instability or failure. The 0.02H drift limit is partly set to keep P-delta effects manageable.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The story has softer flooring only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "One story is significantly more flexible laterally than the story above or below. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "The story uses a lighter paint color. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "The story has no mass. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "One story is significantly more flexible laterally than the story above or below. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 208C.5",
+      "explanation": "One story is significantly more flexible laterally than the story above or below. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-004-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:883f69e3adb35b49b2748910a98810ac39a91ee269da412742b24136de34e70a"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:7d0e613080a49d74c160fc444821822be01d9c4385e10a84e0902dd175a9059c"
     },
     {
       "question_id": "e7309a24-ee5e-496e-b23e-98cc7d41ad22",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "A soft story is defined as a story where lateral stiffness is less than _____ percent of the story immediately above it.",
+      "text": "Which condition is a weak-story warning at source-safe level?",
       "options": [
         {
           "id": "a",
-          "text": "60%"
+          "text": "The story has less daylight."
         },
         {
           "id": "b",
-          "text": "70%"
+          "text": "One story has significantly less lateral strength than adjacent stories."
         },
         {
           "id": "c",
-          "text": "80%"
+          "text": "The story has more plumbing fixtures."
         },
         {
           "id": "d",
-          "text": "90%"
+          "text": "The story uses smaller room numbers."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The NSCP defines a soft story as one where lateral stiffness is less than 70% of the story above. Lateral stiffness is the force per unit displacement (kN/mm).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The story has less daylight. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "One story has significantly less lateral strength than adjacent stories. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "The story has more plumbing fixtures. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "The story uses smaller room numbers. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "One story has significantly less lateral strength than adjacent stories. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 208, Table 208-1",
+      "explanation": "One story has significantly less lateral strength than adjacent stories. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-004-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c1a046ea32c8d3ca800a6a9c78eae552afe70f663d1ac92a6b44d41c495b169e"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ac724504cbcc1749c0c0dc6b0e1a005ad1a0ce9494d41e83d4e441db29f7a723"
     },
     {
       "question_id": "c2583859-e4e3-461f-afa6-e23b25c95ca9",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "A weak story is defined as a story where lateral strength is less than _____ percent of the story immediately above it.",
+      "text": "What is story drift?",
       "options": [
         {
           "id": "a",
-          "text": "70%"
+          "text": "The total building dead load."
         },
         {
           "id": "b",
-          "text": "75%"
+          "text": "The vertical distance from footing to roof."
         },
         {
           "id": "c",
-          "text": "80%"
+          "text": "The relative horizontal displacement between adjacent floors or stories."
         },
         {
           "id": "d",
-          "text": "85%"
+          "text": "A material yield value."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The NSCP defines a weak story as one where lateral strength (shear capacity) is less than 80% of the story above.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The total building dead load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The vertical distance from footing to roof. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "The relative horizontal displacement between adjacent floors or stories. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "d": "A material yield value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The relative horizontal displacement between adjacent floors or stories. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.2.3",
+      "explanation": "The relative horizontal displacement between adjacent floors or stories. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-004-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:affb0c9836afa1b0e6137ef19b66053cdb4f66f44c08d658241cf78a20834879"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ae3137ac411b2ddcdc547a51532cf399b824fd39185a967cf01c640c4d964306"
     },
     {
       "question_id": "7e6afa0b-d788-4814-af95-5e02042545d5",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "A structural engineer identifies a weak story at mid-height of a 10-story building. The shear capacity of the story is 3500 kN, and the story above it has a capacity of 4500 kN. Is this a weak story, and what is the recommended remediation?",
+      "text": "Why is a discontinuous shear wall or lateral system risky?",
       "options": [
         {
           "id": "a",
-          "text": "No, because 3500 < 4500 but the difference is small. Proceed with construction, as the variance is within acceptable limits"
+          "text": "It always improves the load path."
         },
         {
           "id": "b",
-          "text": "Yes, because 3500 ÷ 4500 = 77.8%, which is less than the 80% threshold. Remediation: increase the weak story's shear capacity (via additional walls, diagonal bracing) or redesign the system."
+          "text": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories."
         },
         {
           "id": "c",
-          "text": "Yes, but remediation is not necessary because weak stories are common and acceptable in certain design contexts"
+          "text": "It only changes acoustics."
         },
         {
           "id": "d",
-          "text": "No, because 4500 ÷ 3500 = 1.29, which does not violate any code threshold, allowing construction to continue"
+          "text": "It makes all floors independent of lateral load."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Weak story is defined as V(this) / V(above) < 0.80. Here, 3500 / 4500 = 0.778 = 77.8% < 80%. This is a weak story. The code requires remediation: strengthen the story to at least 0.80 × 4500 = 3600 kN, or redesign the lateral system to eliminate the irregularity.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It always improves the load path. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "It only changes acoustics. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It makes all floors independent of lateral load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 208, Table 208-1",
+      "explanation": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-004-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:199c3c3d918c2f3ca5c779ae1a3e6d569d594ca433505e3180c83118a80af301"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:91c9f361280823f26d24e97ce42ae515923a2b289ec7d1b0c63f24c6a78a7400"
     },
     {
       "question_id": "c913ff2f-b49a-406e-a4cb-7fc81ef17281",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "What is story drift, and what is the typical code limit for story drift in the NSCP?",
+      "text": "What happens when heavy mass is added high in a building?",
       "options": [
         {
           "id": "a",
-          "text": "Story drift is the permanent displacement remaining after an earthquake; limit is 0.01H, which is a conservative estimate"
+          "text": "It always reduces base shear."
         },
         {
           "id": "b",
-          "text": "Story drift is the lateral displacement of one story relative to the story below; limit is 0.02H (0.02 times story height)."
+          "text": "It can increase earthquake inertial demand and lateral-force effects at upper levels."
         },
         {
           "id": "c",
-          "text": "Story drift is the cumulative horizontal displacement from base to roof; limit is 0.03H, which is rarely exceeded in practice"
+          "text": "It affects only room temperature."
         },
         {
           "id": "d",
-          "text": "Story drift is the vertical settlement of a story; limit is 0.01H, although this is not typically a concern in modern buildings"
+          "text": "It cancels story drift automatically."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Story drift (Δ) is the lateral displacement of one story relative to the story immediately below. The NSCP limit is Δ ≤ 0.02H, where H is the story height. For a 4 m story, the limit is 80 mm.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It always reduces base shear. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It can increase earthquake inertial demand and lateral-force effects at upper levels. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "It affects only room temperature. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It cancels story drift automatically. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It can increase earthquake inertial demand and lateral-force effects at upper levels. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 208C.5 or 503.5",
+      "explanation": "It can increase earthquake inertial demand and lateral-force effects at upper levels. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-004-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:623cfd48b28eb82ab4d1ccf5a78be2a415c9343df67243fe33927be72ec21849"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:21bc6105cc01bc1180b2bb85812e59d846e8d5aff84175725b0a714e584a7c93"
     },
     {
       "question_id": "5ba16c9b-db5a-4237-9971-5da68f194fe3",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "A commercial building has a ground floor designed as open space (retail) with minimal lateral bracing. The stories above (2–5) are enclosed office spaces with perimeter shear walls. Which structural condition is most likely present?",
+      "text": "What is the role of diaphragms in this source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "A weak story at the ground floor due to lower strength."
+          "text": "They are purely decorative ceiling panels."
         },
         {
           "id": "b",
-          "text": "A soft story at the ground floor due to lower stiffness."
+          "text": "They distribute lateral forces to vertical resisting elements such as shear walls or frames."
         },
         {
           "id": "c",
-          "text": "A regular building with no irregularities."
+          "text": "They carry only plumbing pressure."
         },
         {
           "id": "d",
-          "text": "A strong story, which is beneficial and requires no special design."
+          "text": "They remove the need for foundations."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The open ground floor (minimal bracing) has much lower lateral stiffness than the enclosed upper floors with perimeter shear walls. The ground story stiffness is likely less than 70% of Story 2's stiffness, making it a soft story.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They are purely decorative ceiling panels. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "They distribute lateral forces to vertical resisting elements such as shear walls or frames. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "They carry only plumbing pressure. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "They remove the need for foundations. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "They distribute lateral forces to vertical resisting elements such as shear walls or frames. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.2.3",
+      "explanation": "They distribute lateral forces to vertical resisting elements such as shear walls or frames. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-004-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:182a2cd1fb4a220b1f705f5a4e9f1041d6795bc9ba0c8d014ffc6dd92bfc2110"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ccb61f1516873123872837de28cb34809b93ac841b8f913330cb9cf4ecf3afbf"
     },
     {
       "question_id": "3fd534c8-f322-4d9b-932c-14313dce0157",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "A building story has a story height of 4 meters. What is the maximum allowable story drift according to the NSCP?",
+      "text": "Why should exact NSCP soft-story percentages stay out of this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Δ ≤ 40 mm (0.01 × 4000 mm)"
+          "text": "The thresholds are unnecessary in every future task."
         },
         {
           "id": "b",
-          "text": "Δ ≤ 80 mm (0.02 × 4000 mm)"
+          "text": "The local NSCP source was not readable, so exact threshold values are outside the checked source boundary."
         },
         {
           "id": "c",
-          "text": "Δ ≤ 100 mm (0.025 × 4000 mm)"
+          "text": "The values can be invented from memory."
         },
         {
           "id": "d",
-          "text": "Δ ≤ 120 mm (0.03 × 4000 mm)"
+          "text": "A different source category can supply any code number."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The NSCP drift limit is Δ ≤ 0.02 × H. For H = 4 m = 4000 mm, the limit is 0.02 × 4000 = 80 mm.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The thresholds are unnecessary in every future task. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The local NSCP source was not readable, so exact threshold values are outside the checked source boundary. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "The values can be invented from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "A different source category can supply any code number. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The local NSCP source was not readable, so exact threshold values are outside the checked source boundary. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.8.11",
+      "explanation": "The local NSCP source was not readable, so exact threshold values are outside the checked source boundary. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-004-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2eb6198d692542b578dbfa7bbb031eb962073b713ac43e027c2d889773b8152b"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:9a7afcf6e348b0e925a9e4b09b4a5b1864c43f032b6052a87a23f08e6a7992dc"
     },
     {
       "question_id": "dcd667af-af41-4696-80dc-8c865ea07cfe",
       "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
       "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
-      "text": "A building has a soft story at the second floor. What is the most likely structural consequence during a seismic event?",
+      "text": "What is the best exam strategy for vertical irregularity questions here?",
       "options": [
         {
           "id": "a",
-          "text": "The top floors experience excessive damage; the soft story is protected, which is contrary to typical structural behavior during seismic events"
+          "text": "Start by quoting an uncaptured code table."
         },
         {
           "id": "b",
-          "text": "Lateral displacement concentrates at the soft story, causing disproportionately large story drift and non-structural damage in that story."
+          "text": "Identify the behavior cue, then answer with the load-path, mass, stiffness, strength, or drift concept supported by the local sources."
         },
         {
           "id": "c",
-          "text": "The base shear is reduced by 30% because of the soft story, which is not a typical outcome of having a soft story"
+          "text": "Ignore configuration and only calculate floor area."
         },
         {
           "id": "d",
-          "text": "The soft story distributes seismic forces more evenly across all floors, improving the structure, which is a misconception about soft story behavior"
+          "text": "Treat all irregularities as live-load reductions."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A soft story is more flexible. Lateral displacement concentration there is a consequence of lower stiffness. The softer the story, the more it deforms relative to surrounding stories. This causes cracking in partitions, window breakage, and potential failure of the soft-story columns if moment-rotation capacity is exceeded.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Start by quoting an uncaptured code table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Identify the behavior cue, then answer with the load-path, mass, stiffness, strength, or drift concept supported by the local sources. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+        "c": "Ignore configuration and only calculate floor area. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Treat all irregularities as live-load reductions. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Identify the behavior cue, then answer with the load-path, mass, stiffness, strength, or drift concept supported by the local sources. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+        "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.2.3",
+      "explanation": "Identify the behavior cue, then answer with the load-path, mass, stiffness, strength, or drift concept supported by the local sources. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-004-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7c8bb216f0b2aa3e9d25fe4f30eb9b7659aa98ebf650fceaae4229f86214a35f"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:3ec88315ee0127821e9ae2272fb1eb2ed153309ffba0e0a156337c5b5ff60b39"
     }
   ]
 }

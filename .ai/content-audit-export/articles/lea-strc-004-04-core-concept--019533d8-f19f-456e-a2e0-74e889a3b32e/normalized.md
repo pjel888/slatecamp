@@ -1,87 +1,36 @@
-
+# Accelerographs and Strong-Motion Records
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+An accelerograph is a measurement instrument, not a code table. The checked source supports three-component ground-shaking records, triggered operation, maintenance needs, acceleration-time histories, and the care required when deriving velocity and displacement.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 004 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
-## Learning Goal
-By the end of this article, you will be able to:
 
-- Define an accelerograph and distinguish it from a seismograph and seismoscope
-- Explain what an accelerogram records (acceleration vs. time)
-- Describe how accelerograph data feeds into seismic design spectra
-- Identify the purpose of each seismic instrument type
+Dynamics of Structures identifies the strong-motion accelerograph as the basic instrument for recording three components of earthquake ground shaking. It does not record continuously in the ordinary setup described by the source. It is triggered by the first waves of an earthquake and continues recording while shaking is present.
 
-High-rise buildings must have accelerographs per NSCP 2015 Section 208.12.6 (exact height threshold to be verified from code)—seismic instruments that record ground motion. The owner is responsible for maintenance. Essential facilities (hospitals, fire stations, emergency centers) require an importance factor I per NSCP 2015 Table 208-1 (typically 1.25 for essential facilities) in the design base shear formula, meaning they must be designed for 25% higher seismic forces.
+The instrument must be maintained and serviced so that it produces a record when shaking occurs. This practical point matters because earthquakes are uncertain in time and location, and strong-motion stations are limited by installation and maintenance budgets.
 
-## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-004-04-core-concept", type="image", caption="Accelerograph and Strong Motion Instrumentation", description="Diagram of an accelerograph installation showing: (1) Sensor unit with three orthogonal accelerometers (X, Y, Z); (2) Recording/storage module; (3) Typical placement in building (basement, mid-height, roof). Sample acceleration time-history output showing peak ground acceleration (PGA) recording. Philippine strong motion instrumentation program locations.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+An accelerogram is an acceleration-time record. Engineers can integrate acceleration to estimate velocity and displacement, but the checked source warns that triggering and baseline issues affect accuracy. Digital instruments help by retaining short memory so the onset of ground motion is measured more reliably.
 
-An _accelerograph_ is an instrument that records the acceleration of ground motion during an earthquake. Unlike older seismographs (which measure displacement or velocity), accelerographs directly measure acceleration in units of g (gravitational acceleration = 9.8 m/s²) and are therefore most relevant to structural design. Recorded acceleration data is used to validate seismic hazard models and inform future design standards.
+Recorded accelerations tend to be larger near the earthquake source, but similar distances can still produce different records because local soil conditions and site effects matter. This article does not assert exact NSCP instrumentation story counts, instrument quantities, or importance-factor requirements.
 
-The NSCP requires accelerographs in buildings of 14 stories or more. The requirement is: accelerographs positioned to record structural response as required by NSCP 2015 Section 208.12.6 These three locations capture the vertical distribution of ground motion effects and structural response.
+## Real World Scenario
 
-_Owner responsibility_ is explicit: the building owner must maintain the accelerographs and ensure they remain operational throughout the building's service life. This includes battery replacement, data retrieval, and coordination with seismic monitoring authorities (e.g., PHIVOLCS). Neglect of maintenance voids the seismic compliance record for the building.
+A city wants to compare how two nearby sites shook during the same earthquake. Strong-motion records can show different peak accelerations even when distances are similar, so the source-safe analysis checks local soil and record quality before drawing conclusions. The accelerograph data supports hazard understanding, but it does not replace a readable local code requirement.
 
-An _essential facility_ is defined by the NSCP as a structure designated to remain operational after an earthquake. Common examples include hospitals, fire and police stations, emergency operations centers, water treatment plants, power distribution centers, and telecommunications hubs. Essential facilities must be designed with an _importance factor_ I = 1.25 in the base shear formula, rather than the standard I = 1.0. This increases the design base shear by 25%:
+## Key Facts and Testable Items
 
-V = Z × 1.25 × C × W (essential) vs. V = Z × 1.0 × C × W (standard)
-
-The I = 1.25 mandate is non-negotiable. No calculations, waivers, or exceptions are permitted. The added cost and complexity of designing essential facilities for higher seismic demand is justified by their critical post-earthquake mission.
-
-## Key Provisions
-
-| Requirement | Value/Description | LEA Context |
-|-------------|-------------------|-------------|
-| Accelerograph height threshold | 14 stories (min.) | Only buildings ≥ 14 stories must have accelerographs |
-| Number of instruments | 3 minimum (basement, mid-height, roof) | Captures vertical ground motion and response profile |
-| Owner responsibility | Mandatory maintenance | Owner maintains instruments; compliance record required |
-| Essential facility definition | Hospitals, fire/police, emergency centers, utilities | Non-negotiable; no exceptions |
-| Importance factor (essential) | I = 1.25 | Multiplies base shear: V = Z × I × C × W |
-| Importance factor (standard) | I = 1.0 | Standard buildings |
-
-The 14-story threshold is a code compromise: buildings short enough to not require accelerographs (< 14 stories) are assumed to have simpler dynamics that can be analyzed without recorded data; taller buildings with complex modes and interaction effects benefit from actual response records.
-
-## Philippine Practice Context
-
-Major hospitals in Metro Manila (Philippine General Hospital, Makati Medical Center, St. Luke's) are essential facilities in Zone 2, designed with I = 1.25 and equipped with accelerographs. Fire and police stations in seismic zones must similarly be designed to remain operational post-event, a critical lifeline function. PHIVOLCS maintains a network of accelerograph stations nationwide; building-mounted instruments feed data into this network. Designers must coordinate with local authorities to register new instruments. The 2013 Bohol earthquake highlighted the importance of recorded data; post-event accelerograph records from damaged buildings provided evidence of ground motion intensity that helped refine seismic hazard maps. Hospitals that failed were redesigned with I = 1.25 compliance explicitly verified.
-
-## How It's Tested
-
-**Pattern 1: Height threshold identification.** "A 12-story office building is being designed. Are accelerographs required?" → No; the threshold is 14 stories. A 14-story or taller building requires them.
-
-**Pattern 2: Instrument placement.** "Accelerographs in a 16-story hospital must be located at..." → At least 3 locations: basement/ground level, mid-height, and roof/near top. These capture the motion profile.
-
-**Pattern 3: Importance factor application.** "An essential facility in Zone 2 is designed with standard I = 1.0. Is this compliant?" → No. Essential facilities require I = 1.25. This is a code mandate, not optional.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 14 stories = accelerograph threshold. 3 instruments = bottom, middle, top. I = 1.25 = essential (add 25% to base shear). Owner = responsible for maintenance forever.
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Earthquake Fundamentals** (lea-strc-004-01) for how earthquakes are measured, **Base Shear** (lea-strc-004-03) for how acceleration data becomes design force, and **Seismic Zones** (lea-strc-004-02) for zoning based on historical records.
+| Exam cue | Source-safe answer |
+| --- | --- |
+| Accelerograph | Records three components of ground shaking. |
+| Triggering | Starts when earthquake waves arrive. |
+| Accelerogram | Acceleration-time ground-motion record. |
+| Integration caution | Velocity and displacement depend on baseline and record quality. |
+| Site variation | Local soil can change recorded accelerations. |
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Using 10 stories or 12 stories as the accelerograph threshold. The code specifies 14 stories minimum, not 10 or 12.\",\"Specifying only 2 accelerographs. The code requires at least 3: basement, mid-height, roof. All three are needed to capture the building's response.\",\"Treating accelerograph maintenance as a one-time commissioning task. Maintenance is continuous and is the owner's responsibility for the life of the building.\",\"Using I = 1.0 for essential facilities. Essential facilities MUST use I = 1.25. This is not negotiable and is not optional.\",\"Confusing I = 1.25 (essential facility) with I = 1.5 (other codes or contexts). The NSCP specifies I = 1.25 for essential facilities, not 1.5.\",\"Thinking accelerographs are optional or decorative. They are code-mandated equipment in tall buildings and serve critical roles in validation and future design updates.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Treating an accelerograph as a bracing device.
+- Forgetting that records need maintenance-ready instruments.
+- Assuming acceleration records automatically give perfect displacement.
+- Restoring exact NSCP instrumentation thresholds without a captured code source.

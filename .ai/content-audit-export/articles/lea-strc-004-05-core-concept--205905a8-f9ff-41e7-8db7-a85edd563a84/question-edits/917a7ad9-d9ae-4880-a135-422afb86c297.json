@@ -1,0 +1,64 @@
+{
+  "question_id": "917a7ad9-d9ae-4880-a135-422afb86c297",
+  "baseline_hash": "sha256:c9e72816ceac438f20d09d4e5470bace85b004e31be05b970a63494807586dd9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-143-local-first: residual local-first rewrite constrained to checked local source artifacts for Live loads, load tracing, and floor behavior.",
+  "approved_by": "codex-local-first-source-audited-article-batch-143-local-first",
+  "approved_at": "2026-05-14T01:45:07.966Z",
+  "source_audit_support": {
+    "parent_article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+    "parent_article_slug": "lea-strc-004-05-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+    "checked_sources": [
+      {
+        "source_id": "batch-143-lea-strc-004-05-core-concept-raw-source-capture",
+        "label": "Batch 143 raw source capture - Live loads, load tracing, and floor behavior",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c"
+      },
+      {
+        "source_id": "batch-143-lea-strc-004-05-core-concept-refined-source-map",
+        "label": "Batch 143 refined source conversion - Live loads, load tracing, and floor behavior",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 143 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why can deflection or vibration control a floor system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deflection is never part of service behavior."
+      },
+      {
+        "id": "b",
+        "text": "Only collapse matters for every floor."
+      },
+      {
+        "id": "c",
+        "text": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed."
+      },
+      {
+        "id": "d",
+        "text": "Vibration applies only to plumbing pipes."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Deflection is never part of service behavior. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "b": "Only collapse matters for every floor. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "c": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+      "d": "Vibration applies only to plumbing pipes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "correct": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+    },
+    "explanation": "The floor must remain stiff while elastic so finishes, ceilings, and occupant comfort are not harmed. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+  },
+  "batch_question_template_index": 6
+}

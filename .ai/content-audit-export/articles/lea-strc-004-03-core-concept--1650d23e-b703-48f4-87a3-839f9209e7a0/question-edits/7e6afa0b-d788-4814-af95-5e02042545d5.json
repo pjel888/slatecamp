@@ -1,0 +1,64 @@
+{
+  "question_id": "7e6afa0b-d788-4814-af95-5e02042545d5",
+  "baseline_hash": "sha256:199c3c3d918c2f3ca5c779ae1a3e6d569d594ca433505e3180c83118a80af301",
+  "action": "replace",
+  "reason": "source-audited-article-batch-143-local-first: residual local-first rewrite constrained to checked local source artifacts for Base shear and vertical irregularities.",
+  "approved_by": "codex-local-first-source-audited-article-batch-143-local-first",
+  "approved_at": "2026-05-14T01:45:07.966Z",
+  "source_audit_support": {
+    "parent_article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+    "parent_article_slug": "lea-strc-004-03-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06",
+    "checked_sources": [
+      {
+        "source_id": "batch-143-lea-strc-004-03-core-concept-raw-source-capture",
+        "label": "Batch 143 raw source capture - Base shear and vertical irregularities",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md",
+        "sha256": "sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b"
+      },
+      {
+        "source_id": "batch-143-lea-strc-004-03-core-concept-refined-source-map",
+        "label": "Batch 143 refined source conversion - Base shear and vertical irregularities",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md",
+        "sha256": "sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 143 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why is a discontinuous shear wall or lateral system risky?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It always improves the load path."
+      },
+      {
+        "id": "b",
+        "text": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories."
+      },
+      {
+        "id": "c",
+        "text": "It only changes acoustics."
+      },
+      {
+        "id": "d",
+        "text": "It makes all floors independent of lateral load."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It always improves the load path. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "b": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories. This stays inside the Batch 143 local source boundary for Base shear and vertical irregularities.",
+      "c": "It only changes acoustics. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "d": "It makes all floors independent of lateral load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "correct": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+      "takeaway": "For Base shear and vertical irregularities, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
+    },
+    "explanation": "It interrupts the load path and can force lateral effects into transfer elements or weaker stories. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-03-core-concept.source-capture.md#sha256:12d2e8a91227b4fc9e736ecf58422d17c8fd8579407637c0e4e3551c6d9b895b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-03-core-concept.refined.md#sha256:a623ae82145be3aa849529d96ff07d3acce401ed793a78c8c3b83ebdb4782d06"
+  },
+  "batch_question_template_index": 6
+}

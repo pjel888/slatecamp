@@ -1,30 +1,30 @@
 {
   "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:bedf967fdcb1dd4f12d2223b3ec98501ed8cb24245b2c8d2cdb5a778c210f5aa",
+  "linked_questions_hash": "sha256:cb836b6bf36c041650e63a4316ef57fbbb4b529af3343e274b5aad4838a1cca2",
   "question_count": 10,
   "questions": [
     {
       "question_id": "ad0718a0-7b26-4c2e-9c37-9c8dbd15380d",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "Who is responsible for maintaining the accelerographs in a tall building after construction is complete?",
+      "text": "What does a strong-motion accelerograph record?",
       "options": [
         {
           "id": "a",
-          "text": "The local government authority (city or province)"
+          "text": "Only room temperature."
         },
         {
           "id": "b",
-          "text": "The building owner"
+          "text": "Three components of earthquake ground shaking."
         },
         {
           "id": "c",
-          "text": "The structural engineer who designed the building"
+          "text": "Only total dead load."
         },
         {
           "id": "d",
-          "text": "PHIVOLCS (Philippine Institute of Volcanology and Seismology)"
+          "text": "Only final building displacement after repairs."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The guidelines require building owners to upgrade non-conforming ERI and maintain instruments as part of Certificate of Occupancy compliance. Ongoing maintenance responsibility should be verified in the full NSCP Section 105.2 text.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only room temperature. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Three components of earthquake ground shaking. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "c": "Only total dead load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Only final building displacement after repairs. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Three components of earthquake ground shaking. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.12",
+      "explanation": "Three components of earthquake ground shaking. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-004-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:807146a47bf622f09b8d05f842fbabd5699493e13ab6aa2625d27d5b6ab8e8f9"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:08abc4fe87c21bfce8f04be0f4cf5e805d8a61adbfe44f99311754d7d3af03cb"
     },
     {
       "question_id": "679e6c09-773d-4e45-8b7e-62b8378d6c08",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "An essential facility is being designed in Zone 2. If a standard building (I = 1.0) in the same zone has a design base shear of 500 kN, what is the design base shear for the essential facility?",
+      "text": "When does the checked source say the accelerograph begins recording?",
       "options": [
         {
           "id": "a",
-          "text": "500 kN (same)"
+          "text": "It records continuously forever in every installation."
         },
         {
           "id": "b",
-          "text": "575 kN"
+          "text": "It starts only after structural collapse."
         },
         {
           "id": "c",
-          "text": "625 kN"
+          "text": "It is triggered into motion by the first arriving earthquake waves."
         },
         {
           "id": "d",
-          "text": "750 kN"
+          "text": "It starts when live load changes."
         }
       ],
       "correct_option_id": "c",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The base shear formula is V = Z × I × C × W. For the essential facility, I = 1.25 instead of 1.0. The ratio is 1.25 / 1.0 = 1.25, so V(essential) = 500 × 1.25 = 625 kN.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It records continuously forever in every installation. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It starts only after structural collapse. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "It is triggered into motion by the first arriving earthquake waves. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "d": "It starts when live load changes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It is triggered into motion by the first arriving earthquake waves. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.1, 5.2",
+      "explanation": "It is triggered into motion by the first arriving earthquake waves. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-004-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:27c9abfe8db8bb5cd579a4872f3cc20045bef42237b22bf3acddbbd2518af315"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:7dde2ef8183bf666c04fa49c2cd4588c816617db23eedfac84c9fd217c40239c"
     },
     {
       "question_id": "1a20a8a7-ee51-468d-8abc-5fa0b82c552c",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "According to the NSCP, accelerographs are required in buildings of ______ stories or more.",
+      "text": "Why must accelerographs be maintained and serviced?",
       "options": [
         {
           "id": "a",
-          "text": "10 stories"
+          "text": "They are used only as permanent bracing."
         },
         {
           "id": "b",
-          "text": "12 stories"
+          "text": "They replace the foundation."
         },
         {
           "id": "c",
-          "text": "14 stories"
+          "text": "They must be ready to produce a record when shaking occurs."
         },
         {
           "id": "d",
-          "text": "16 stories"
+          "text": "They determine floor finishes."
         }
       ],
       "correct_option_id": "c",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The NSCP 2010/2015 requires accelerographs in buildings in Seismic Zone 4 that are over 50 meters in height. The requirement is based on HEIGHT, not story count. Buildings outside the 200-km radius of Type A faults may require only a single accelerograph.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They are used only as permanent bracing. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "They replace the foundation. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "They must be ready to produce a record when shaking occurs. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "d": "They determine floor finishes. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "They must be ready to produce a record when shaking occurs. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.12",
+      "explanation": "They must be ready to produce a record when shaking occurs. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-004-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:48e6039e36cbc1a3273b44922614f9b52f483eb8f13de0e72544fef3693d7616"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:6d7488cf1c2ef65894364cd0e33671159a74fe864aeabcac8494b4685b3f68b2"
     },
     {
       "question_id": "3972bade-646d-4206-8e0a-20f518bf5c52",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "An accelerograph at mid-height of a tall building records peak ground acceleration (PGA) of 0.35 g during an earthquake. What does this measurement tell a structural engineer?",
+      "text": "What is an accelerogram?",
       "options": [
         {
           "id": "a",
-          "text": "The building experienced 35% of gravitational acceleration at the mid-height location, providing data on ground motion intensity and structural response at that elevation."
+          "text": "An acceleration-time record of ground motion."
         },
         {
           "id": "b",
-          "text": "The building failed because 0.35 g exceeds all design thresholds, which is an incorrect assumption without further analysis."
+          "text": "A floor framing plan."
         },
         {
           "id": "c",
-          "text": "The accelerograph is malfunctioning because 0.35 g is too low to cause any damage, which is a misunderstanding of seismic data."
+          "text": "A dead-load inventory."
         },
         {
           "id": "d",
-          "text": "The measurement is irrelevant without knowing the building's fundamental period, which is a common misconception."
+          "text": "A concrete mix table."
         }
       ],
       "correct_option_id": "a",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The accelerograph record of 0.35 g at mid-height indicates the acceleration recorded at that location during the earthquake. This data is compared to design assumptions (Ss, S1, or Z factors) to validate seismic hazard models. The record is used to calibrate future design standards and assess building response. 0.35 g is a realistic and significant measurement that informs engineering judgment.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "An acceleration-time record of ground motion. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "b": "A floor framing plan. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "A dead-load inventory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "A concrete mix table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "An acceleration-time record of ground motion. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.12",
+      "explanation": "An acceleration-time record of ground motion. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-004-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:58e0432778763b568143c3530565c8ea8db786530816cd4b8cfd50b6c0278cb9"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:f84bccb2eed1ec335997737c0ab6b47f9641de09ada2bab890b1e66ec0973cc6"
     },
     {
       "question_id": "06d2df56-79ef-46a7-be60-e1fec01c79a6",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "Which of the following is NOT classified as an essential facility in the NSCP?",
+      "text": "Why can velocity and displacement from an acceleration record be difficult to determine?",
       "options": [
         {
           "id": "a",
-          "text": "A hospital emergency room, which is critical for immediate medical response and disaster management"
+          "text": "Velocity and displacement are unrelated to acceleration."
         },
         {
           "id": "b",
-          "text": "A fire station, essential for emergency response and public safety"
+          "text": "The record contains only occupancy names."
         },
         {
           "id": "c",
-          "text": "A residential apartment building"
+          "text": "Triggering and baseline issues can affect integration of the acceleration-time record."
         },
         {
           "id": "d",
-          "text": "A water treatment plant, vital for ensuring public health and sanitation"
+          "text": "Digital instruments cannot store onset data."
         }
       ],
       "correct_option_id": "c",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Residential apartment buildings are standard occupancy, not essential facilities. Hospitals, fire stations, emergency operations centers, water plants, power distribution, and telecommunications hubs are essential facilities. Essential status is reserved for facilities that must remain operational for post-earthquake response and recovery.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Velocity and displacement are unrelated to acceleration. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The record contains only occupancy names. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "Triggering and baseline issues can affect integration of the acceleration-time record. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "d": "Digital instruments cannot store onset data. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Triggering and baseline issues can affect integration of the acceleration-time record. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.2",
+      "explanation": "Triggering and baseline issues can affect integration of the acceleration-time record. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-004-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7714904f422711527f529847bddd0422dffbfc776e4f839e4ce663ee8f59fa32"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:66900e7d28613f810f0974494ec9bd1dd60ce6d9f60d3037d858d62ef697cd51"
     },
     {
       "question_id": "4ff0929c-e38a-47b5-8116-806285e880a9",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "A 14-story office building is being designed in Zone 1 (Z = 0.2) with I = 1.0 and C = 0.10. The effective seismic weight is W = 4000 kN. The building owner is responsible for maintaining accelerographs. What is the design base shear?",
+      "text": "What did digital accelerographs improve in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "V = 80 kN"
+          "text": "They can record the onset of ground motion with short memory, reducing missing-baseline problems."
         },
         {
           "id": "b",
-          "text": "V = 160 kN"
+          "text": "They make earthquakes smaller."
         },
         {
           "id": "c",
-          "text": "V = 200 kN"
+          "text": "They remove all need for analysis."
         },
         {
           "id": "d",
-          "text": "V = 320 kN"
+          "text": "They change live loads to dead loads."
         }
       ],
       "correct_option_id": "a",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "V = Z × I × C × W = 0.2 × 1.0 × 0.10 × 4000 = 80 kN. Accelerograph requirements are based on HEIGHT (50 meters in Seismic Zone 4), not story count. Whether this 14-story building requires accelerographs depends on its actual height and seismic zone location, not the number of stories.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They can record the onset of ground motion with short memory, reducing missing-baseline problems. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "b": "They make earthquakes smaller. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "They remove all need for analysis. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "They change live loads to dead loads. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "They can record the onset of ground motion with short memory, reducing missing-baseline problems. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.1, 5.12",
+      "explanation": "They can record the onset of ground motion with short memory, reducing missing-baseline problems. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-004-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:78e2a6b4778f4ba16ce0c88e150b53b2074e0218381cc5b5d829111333113b29"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ffd43fa441557b9c61a77de308f548a0c39327bab00b7ae9183e3781d1efd0e8"
     },
     {
       "question_id": "10c2f930-8e32-495a-ba8e-b785d91c06e0",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "A hospital (essential facility) is designed in Zone 2 with the standard importance factor I = 1.0. The design base shear is calculated as 1200 kN. After plan review, the engineer is told the building must comply with I = 1.25. What is the corrected design base shear?",
+      "text": "Why are many stations desirable before an earthquake?",
       "options": [
         {
           "id": "a",
-          "text": "1200 kN (no change; the importance factor is applied after base shear calculation)"
+          "text": "They guarantee identical data at every site."
         },
         {
           "id": "b",
-          "text": "1500 kN (1200 × 1.25)"
+          "text": "They improve the chance of recording strong shaking near the region of interest."
         },
         {
           "id": "c",
-          "text": "1440 kN (1200 × 1.20)"
+          "text": "They replace code review."
         },
         {
           "id": "d",
-          "text": "1320 kN (1200 × 1.10)"
+          "text": "They are needed only for wind tunnel tests."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The importance factor I is a direct multiplier in the base shear formula V = Z × I × C × W. If the initial calculation used I = 1.0 and produced V = 1200 kN, then using I = 1.25 yields V = 1200 × (1.25 / 1.0) = 1500 kN.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They guarantee identical data at every site. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "They improve the chance of recording strong shaking near the region of interest. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "c": "They replace code review. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "They are needed only for wind tunnel tests. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "They improve the chance of recording strong shaking near the region of interest. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.1, 5.2",
+      "explanation": "They improve the chance of recording strong shaking near the region of interest. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-004-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8c355935b9a678778a0772969fc4fa014c76aefb7ec926b1662b9811827ea20a"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:8ac4337544e9034d1f2f95976a8f6617c5793d5c000ad501bb5ee278d61511b9"
     },
     {
       "question_id": "1f1f9eb6-68e8-453f-b088-007436f66243",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "What is the importance factor (I) for an essential facility such as a hospital in the NSCP?",
+      "text": "Why can recorded peak accelerations vary at similar distances?",
       "options": [
         {
           "id": "a",
-          "text": "I = 1.0 (same as standard buildings)"
+          "text": "All variation is a math error."
         },
         {
           "id": "b",
-          "text": "I = 1.15"
+          "text": "Only building color controls records."
         },
         {
           "id": "c",
-          "text": "I = 1.25"
+          "text": "Local soil conditions can cause significant variation."
         },
         {
           "id": "d",
-          "text": "I = 1.50"
+          "text": "Distance is never relevant."
         }
       ],
       "correct_option_id": "c",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Essential facilities (hospitals, fire stations, emergency centers, water treatment plants) are required to have an importance factor I = 1.25 in the design base shear formula. This increases the design forces by 25% to ensure the facility remains operational post-earthquake.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All variation is a math error. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Only building color controls records. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "Local soil conditions can cause significant variation. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "d": "Distance is never relevant. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Local soil conditions can cause significant variation. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.2",
+      "explanation": "Local soil conditions can cause significant variation. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-004-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b891195ecc8d9d4e17851057a87e101c3fa4d5cd300a2e0ac09429de48eda5d9"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:f6e4967293f8b133864e84850887954f8ccedbf851d72d93e54e185cba1df876"
     },
     {
       "question_id": "86182076-964b-4b50-98f8-11d571eb7cfe",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "How many accelerographs are required in a 15-story building, and at which locations must they be positioned?",
+      "text": "How should accelerograph data be used in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "1 accelerograph at the roof, primarily for monitoring seismic activity at the highest point"
+          "text": "As a replacement for all structural judgment."
         },
         {
           "id": "b",
-          "text": "2 accelerographs at the basement and roof, ensuring coverage from the lowest to the highest structural points"
+          "text": "As a way to invent Philippine code values."
         },
         {
           "id": "c",
-          "text": "3 accelerographs at the basement, mid-height, and roof"
+          "text": "As source-supported evidence for measuring ground motion and structural response, not as a substitute for uncaptured code tables."
         },
         {
           "id": "d",
-          "text": "4 accelerographs, one per 4 stories, to provide comprehensive seismic monitoring throughout the building"
+          "text": "As proof that live loads are zero."
         }
       ],
       "correct_option_id": "c",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The NSCP permits multiple configurations: (1) Three accelerographs at basement, mid-height, and roof; OR (2) One accelerograph at basement with two accelerometers at mid-height and roof; OR (3) Three accelerometers with common data logger at the same three locations. Option C represents one acceptable configuration. These three locations capture the vertical distribution of ground motion and structural response.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "As a replacement for all structural judgment. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "As a way to invent Philippine code values. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "As source-supported evidence for measuring ground motion and structural response, not as a substitute for uncaptured code tables. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "d": "As proof that live loads are zero. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "As source-supported evidence for measuring ground motion and structural response, not as a substitute for uncaptured code tables. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.12",
+      "explanation": "As source-supported evidence for measuring ground motion and structural response, not as a substitute for uncaptured code tables. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-004-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3e6ec3754ff07c6cb3502b71813e07b5d2768c3238a3893933df256e21c42886"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ff9e02dedb746fd0df9eaee7dd5b7f8d73cad28cabcaaada8a3789c8f154c847"
     },
     {
       "question_id": "f0ce530a-0882-4eb6-850a-8d6ae9378b58",
       "article_id": "019533d8-f19f-456e-a2e0-74e889a3b32e",
       "topic_id": "e0dad9ff-8a2a-45a6-a992-f49a19a3e6a4",
-      "text": "During the 2013 Bohol earthquake, accelerographs in nearby buildings recorded peak accelerations of 0.42 g at the base and 0.28 g at the roof. Why is the mid-height accelerograph reading (0.32 g) critical for engineers reviewing the building's performance?",
+      "text": "Which NSCP instrumentation thresholds are excluded here?",
       "options": [
         {
           "id": "a",
-          "text": "The mid-height reading proves the building is safe; no further analysis is needed, simplifying the evaluation process"
+          "text": "All measurement concepts are excluded."
         },
         {
           "id": "b",
-          "text": "The three records (base, mid-height, roof) together show how ground motion was amplified or reduced at different elevations, validating soil amplification models and structural response assumptions used in design. This data informs future design standards and retrofit decisions."
+          "text": "Exact story-count, quantity, and importance-factor thresholds are excluded until a readable NSCP source is captured."
         },
         {
           "id": "c",
-          "text": "The mid-height reading is irrelevant; only the base acceleration matters for design, focusing solely on foundational stability"
+          "text": "The accelerograph definition is excluded."
         },
         {
           "id": "d",
-          "text": "The accelerograph readings prove the building code is inadequate and must be abandoned, necessitating a complete overhaul of regulations"
+          "text": "Ground motion records are irrelevant."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Three accelerographs at different elevations (base, mid, roof) provide a vertical profile of ground motion and structural response. The difference between base (0.42 g) and roof (0.28 g) reflects the building's dynamic response and soil amplification effects. Post-earthquake analysis of these records helps validate hazard models, calibrate code factors, and improve future designs. The complete profile is far more valuable than any single reading.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "All measurement concepts are excluded. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Exact story-count, quantity, and importance-factor thresholds are excluded until a readable NSCP source is captured. This stays inside the Batch 143 local source boundary for Accelerographs and strong-motion records.",
+        "c": "The accelerograph definition is excluded. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Ground motion records are irrelevant. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Exact story-count, quantity, and importance-factor thresholds are excluded until a readable NSCP source is captured. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+        "takeaway": "For Accelerographs and strong-motion records, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 5.12 (Guidelines on Earthquake Recording Instrumentation for Buildings). Historical earthquake data from PHIVOLCS may inform engineering judgment but is not a code citation.",
+      "explanation": "Exact story-count, quantity, and importance-factor thresholds are excluded until a readable NSCP source is captured. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-04-core-concept.source-capture.md#sha256:57a76ad2c041f10392b83a2f9fd98c29dec15aabf75cbb1b0bc439d4c0b773b7; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-04-core-concept.refined.md#sha256:10b75bc9ef9c13bd67a151a4acc65c63e05e30e78274b90634d0b62f5805a079",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-004-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c70904520e9922e225b9f7608bfa754223b0b21e474a7435dc6b4204014301d0"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ad4a74701b60036a2f3f31b7857c6fe337014ced95c9c507b7315ed71ed51d96"
     }
   ]
 }

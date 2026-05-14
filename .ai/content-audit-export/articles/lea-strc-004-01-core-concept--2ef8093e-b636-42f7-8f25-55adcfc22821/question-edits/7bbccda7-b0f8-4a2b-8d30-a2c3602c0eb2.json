@@ -1,0 +1,64 @@
+{
+  "question_id": "7bbccda7-b0f8-4a2b-8d30-a2c3602c0eb2",
+  "baseline_hash": "sha256:b41fb040f7a5dbd89018115ea71487bdeea6a6686b77696a16fc1822aa595032",
+  "action": "replace",
+  "reason": "source-audited-article-batch-143-local-first: residual local-first rewrite constrained to checked local source artifacts for Earthquake ground motion and structural response.",
+  "approved_by": "codex-local-first-source-audited-article-batch-143-local-first",
+  "approved_at": "2026-05-14T01:45:07.966Z",
+  "source_audit_support": {
+    "parent_article_id": "2ef8093e-b636-42f7-8f25-55adcfc22821",
+    "parent_article_slug": "lea-strc-004-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca",
+    "checked_sources": [
+      {
+        "source_id": "batch-143-lea-strc-004-01-core-concept-raw-source-capture",
+        "label": "Batch 143 raw source capture - Earthquake ground motion and structural response",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md",
+        "sha256": "sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b"
+      },
+      {
+        "source_id": "batch-143-lea-strc-004-01-core-concept-refined-source-map",
+        "label": "Batch 143 refined source conversion - Earthquake ground motion and structural response",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md",
+        "sha256": "sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 143 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why can reducing building mass improve seismic behavior?",
+    "options": [
+      {
+        "id": "a",
+        "text": "More mass always lowers all seismic force."
+      },
+      {
+        "id": "b",
+        "text": "Less mass can reduce earthquake inertial force for the same acceleration."
+      },
+      {
+        "id": "c",
+        "text": "Mass has no relation to earthquake response."
+      },
+      {
+        "id": "d",
+        "text": "Only plan color affects seismic response."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "More mass always lowers all seismic force. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "b": "Less mass can reduce earthquake inertial force for the same acceleration. This stays inside the Batch 143 local source boundary for Earthquake ground motion and structural response.",
+      "c": "Mass has no relation to earthquake response. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "d": "Only plan color affects seismic response. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "correct": "Less mass can reduce earthquake inertial force for the same acceleration. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+      "takeaway": "For Earthquake ground motion and structural response, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
+    },
+    "explanation": "Less mass can reduce earthquake inertial force for the same acceleration. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-01-core-concept.source-capture.md#sha256:e51805c268882cb379844ebca7101dd99db0ea45a1d2d96e657e983514ef276b; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-01-core-concept.refined.md#sha256:4b8fe508bea4818555610969f710d58ab96f4dd495b3510121222923a6ca07ca"
+  },
+  "batch_question_template_index": 4
+}

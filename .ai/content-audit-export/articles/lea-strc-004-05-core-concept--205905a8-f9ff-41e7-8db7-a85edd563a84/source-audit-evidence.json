@@ -1,0 +1,360 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-143-local-first",
+  "batch_number": 143,
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T01:45:07.966Z",
+  "target": {
+    "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+    "slug": "lea-strc-004-05-core-concept",
+    "title": "Live loads, load tracing, and floor behavior",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-004-05-core-concept--205905a8-f9ff-41e7-8db7-a85edd563a84",
+    "normalized_sha256": "sha256:f6eb4667cb7d8f5f71b94d481e49757b928343468cc14d9bb7c816334b0e8777",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-004-05-core-concept--205905a8-f9ff-41e7-8db7-a85edd563a84/candidate.md"
+  },
+  "classification": {
+    "topic_family": "lea-strc-004-05-core-concept",
+    "category": "Structural Conceptualization",
+    "source_sensitivity": "technical_structural_exam_content",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_source_capture": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_source_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch-143-lea-strc-004-05-core-concept-raw-source-capture",
+      "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+      "label": "Batch 143 raw source capture - Live loads, load tracing, and floor behavior",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Live loads, load tracing, and floor behavior; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-14T01:45:07.966Z",
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+      "local_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+      "checked_markdown_lines": [
+        "Building Structures Illustrated (2nd Edition): Live loads are moving or movable loads created by occupancy, collected water or snow, and movable equipment or objects. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Dead loads are static loads from construction weight, permanent fixtures, and permanently attached equipment. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Loads trace from slab or deck through beams, girders, columns, and walls to the foundation. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Distributed and concentrated loading differ in how load reaches the spanning system. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Floor systems must be stiff while remaining elastic because deflection and vibration can control design. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Construction Illustrated (5th Edition): Foundations support vertical dead and live loads and also anchor against earthquake ground movement, wind sliding, overturning, and uplift. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Floor and roof systems support dead, live, and lateral loads; rigid floor planes can act as diaphragms that transfer lateral forces to shear walls. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Earthquakes can move a building base suddenly and induce shaking in all directions, with horizontal components treated as most important in structural design. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Under earthquake loading, building mass develops inertial force as it resists horizontal ground acceleration. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Heavy buildings can resist wind overturning by weight but are susceptible to larger earthquake inertial forces. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: A strong-motion accelerograph records three components of earthquake ground shaking and is triggered by arriving earthquake waves. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Accelerographs must be maintained and serviced so they produce a record when shaking occurs. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Acceleration-time records can be integrated to velocity and displacement, but baseline and triggering issues affect accuracy. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Peak base shear relates to structure weight and pseudo-acceleration through a base shear or lateral force coefficient. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Response spectra organize peak deformation, pseudo-velocity, and pseudo-acceleration response over vibration periods and damping levels. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876"
+        },
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197"
+        },
+        {
+          "label": "Dynamics of Structures: Theory and Applications to Earthquake Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Dynamics of Structures_ Theory and applications to earthquake engineering.pdf",
+          "rawHash": "sha256:274f728d2cea0e6515e70241323abfa54a1864b5086a7acee0b5fc6ef48394e1",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Dynamics of Structures_ Theory and applications to earthquake engineering.md",
+          "refinedHash": "sha256:d45ac917832e84d3f255730a4e04e50b026be115f76c8b2cf78d6420f6104f7c",
+          "checked_locator": "Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 143 source capture and refined conversion boundary."
+    },
+    {
+      "source_id": "batch-143-lea-strc-004-05-core-concept-refined-source-map",
+      "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+      "label": "Batch 143 refined source conversion - Live loads, load tracing, and floor behavior",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Live loads, load tracing, and floor behavior.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:45:07.966Z",
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+      "local_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+      "checked_markdown_lines": [
+        "Building Structures Illustrated (2nd Edition): Live loads are moving or movable loads created by occupancy, collected water or snow, and movable equipment or objects. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Dead loads are static loads from construction weight, permanent fixtures, and permanently attached equipment. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Loads trace from slab or deck through beams, girders, columns, and walls to the foundation. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Distributed and concentrated loading differ in how load reaches the spanning system. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Structures Illustrated (2nd Edition): Floor systems must be stiff while remaining elastic because deflection and vibration can control design. Locator: Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876",
+        "Building Construction Illustrated (5th Edition): Foundations support vertical dead and live loads and also anchor against earthquake ground movement, wind sliding, overturning, and uplift. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Floor and roof systems support dead, live, and lateral loads; rigid floor planes can act as diaphragms that transfer lateral forces to shear walls. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Earthquakes can move a building base suddenly and induce shaking in all directions, with horizontal components treated as most important in structural design. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Under earthquake loading, building mass develops inertial force as it resists horizontal ground acceleration. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Building Construction Illustrated (5th Edition): Heavy buildings can resist wind overturning by weight but are susceptible to larger earthquake inertial forces. Locator: Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: A strong-motion accelerograph records three components of earthquake ground shaking and is triggered by arriving earthquake waves. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Accelerographs must be maintained and serviced so they produce a record when shaking occurs. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Acceleration-time records can be integrated to velocity and displacement, but baseline and triggering issues affect accuracy. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Peak base shear relates to structure weight and pseudo-acceleration through a base shear or lateral force coefficient. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331",
+        "Dynamics of Structures: Theory and Applications to Earthquake Engineering: Response spectra organize peak deformation, pseudo-velocity, and pseudo-acceleration response over vibration periods and damping levels. Locator: Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+      ],
+      "local_source_families": [
+        {
+          "label": "Building Structures Illustrated (2nd Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "rawHash": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "refinedHash": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491",
+          "checked_locator": "Building Structures Illustrated refined markdown lines 2077-2133 and 2872-2876"
+        },
+        {
+          "label": "Building Construction Illustrated (5th Edition)",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "rawHash": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refinedHash": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "checked_locator": "Building Construction Illustrated refined markdown lines 720, 2107-2143, 4149-4153, and 4189-4197"
+        },
+        {
+          "label": "Dynamics of Structures: Theory and Applications to Earthquake Engineering",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Dynamics of Structures_ Theory and applications to earthquake engineering.pdf",
+          "rawHash": "sha256:274f728d2cea0e6515e70241323abfa54a1864b5086a7acee0b5fc6ef48394e1",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Dynamics of Structures_ Theory and applications to earthquake engineering.md",
+          "refinedHash": "sha256:d45ac917832e84d3f255730a4e04e50b026be115f76c8b2cf78d6420f6104f7c",
+          "checked_locator": "Dynamics of Structures refined markdown lines 11592-11608, 11711-11713, 12096-12110, 12183-12185, and 12315-12331"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-strc-004-05-core-concept-article-batch-143",
+      "claim_text": "Article lea-strc-004-05-core-concept was rewritten to the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5d75baae-ee30-44ea-bd5b-736a4a4d331f-batch-143",
+      "claim_text": "Linked question 5d75baae-ee30-44ea-bd5b-736a4a4d331f was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0c09fd99-64dd-4e2c-a224-3ed90b644bc2-batch-143",
+      "claim_text": "Linked question 0c09fd99-64dd-4e2c-a224-3ed90b644bc2 was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4d543c2d-afb3-4c30-a2da-fcf5066a180b-batch-143",
+      "claim_text": "Linked question 4d543c2d-afb3-4c30-a2da-fcf5066a180b was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7a9f729a-66c0-4613-ac0a-fa64813b29b6-batch-143",
+      "claim_text": "Linked question 7a9f729a-66c0-4613-ac0a-fa64813b29b6 was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-84f6ca75-5671-4ab0-ba9d-76031d73d633-batch-143",
+      "claim_text": "Linked question 84f6ca75-5671-4ab0-ba9d-76031d73d633 was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-917a7ad9-d9ae-4880-a135-422afb86c297-batch-143",
+      "claim_text": "Linked question 917a7ad9-d9ae-4880-a135-422afb86c297 was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4d9b1e26-d911-4bd5-ace6-f2e6c8fb4cec-batch-143",
+      "claim_text": "Linked question 4d9b1e26-d911-4bd5-ace6-f2e6c8fb4cec was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-65246ba0-cc21-4ca4-991a-db7720d8b8a3-batch-143",
+      "claim_text": "Linked question 65246ba0-cc21-4ca4-991a-db7720d8b8a3 was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d8cb7417-9f1e-489d-9b40-13c384407b3e-batch-143",
+      "claim_text": "Linked question d8cb7417-9f1e-489d-9b40-13c384407b3e was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4a2ddfd2-8028-408c-983d-82da532b3ba0-batch-143",
+      "claim_text": "Linked question 4a2ddfd2-8028-408c-983d-82da532b3ba0 was rewritten inside the checked local source scope for Live loads, load tracing, and floor behavior.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      },
+      "blockers": []
+    }
+  ],
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+  },
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "No completed recovery report is present under .ai/03_plans/blocked-source-recovery, so the theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_carried_forward",
+      "reason": "No completed CSI MasterFormat source-recovery report is present, so the exact classification claim scope remains uncaptured locally."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_carried_forward",
+      "reason": "No completed seismic utilities recovery report is present, so utilities seismic-bracing claims still lack a safe local refined conversion boundary."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_carried_forward",
+      "reason": "No completed NSCP-specific refined conversion or recovery report is present for this pass."
+    },
+    {
+      "cluster_id": "lea-strc-004-02-core-concept",
+      "title": "Seismic zone factor and NSCP 2015 zone claims",
+      "status": "blocked_batch_143",
+      "reason": "The local NSCP 2015 PDF exists but is unreadable as a PDF in this workspace, with a zero-byte-style header and parser failures; no completed recovery report supplies a safe local or web-capture path for exact seismic-zone claims.",
+      "attempted_local_source": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+      "attempted_local_source_sha256": "sha256:12e04770e37571def323e6d0f29b0d20c7c4d4e088d39f519e0f2e0b5d91cc54"
+    }
+  ]
+}

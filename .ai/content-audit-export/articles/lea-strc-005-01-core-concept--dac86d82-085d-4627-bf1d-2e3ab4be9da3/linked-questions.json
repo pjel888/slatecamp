@@ -1,30 +1,30 @@
 {
   "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:d8c9ca5cedd6fdec5ee0cca7d6288ffa4a77fee01e97e3ec20e0b3b0522b41b4",
+  "linked_questions_hash": "sha256:a70edf75d5c2f0a4e33b4025288d1df620cdecbefe6272592c761e4496e940a9",
   "question_count": 10,
   "questions": [
     {
       "question_id": "60912f19-0204-4bb1-9b22-dc96e20f031a",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "A bridge foundation must resist dead load 800 kN, live load 300 kN, and earth pressure 150 kN. Under the older NSCP, which load combination governs?",
+      "text": "What is required strength in a strength-design check?",
       "options": [
         {
           "id": "a",
-          "text": "U = 1.4D + 1.7L = 1.4(800) + 1.7(300) = 1630 kN, which does not account for earth pressure"
+          "text": "The same as architectural read time."
         },
         {
           "id": "b",
-          "text": "U = 1.4D + 1.7L + 1.7H = 1.4(800) + 1.7(300) + 1.7(150) = 1630 + 255 = 1885 kN"
+          "text": "The demand side produced by loads and load combinations for comparison with available resistance."
         },
         {
           "id": "c",
-          "text": "U = 0.9D + 1.7H = 0.9(800) + 1.7(150) = 975 kN, which is insufficient for live load"
+          "text": "The permanent weight of finishes only."
         },
         {
           "id": "d",
-          "text": "U = 1.2D + 1.6L + 1.6H = 2180 kN (NSCP 2015 formula), which is not applicable to the older NSCP"
+          "text": "A material color schedule."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Omits the earth pressure term; incomplete combination.",
-        "c": "Applies the reduced-gravity formula with earth pressure, which is not a standard NSCP combination.",
-        "d": "This is an NSCP 2015 formula; the question specifies older NSCP, and values do not match calculation.",
-        "correct": "When earth/water pressure acts, the older NSCP specifies U = 1.4D + 1.7L + 1.7H. All factors (1.4, 1.7, 1.7) apply without reduction.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The same as architectural read time. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The demand side produced by loads and load combinations for comparison with available resistance. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "c": "The permanent weight of finishes only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "A material color schedule. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The demand side produced by loads and load combinations for comparison with available resistance. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": "Omits the earth pressure term; incomplete combination. Applies the reduced-gravity formula with earth pressure, which is not a standard NSCP combination. This is an NSCP 2015 formula; the question specifies older NSCP, and values do not match calculation. When earth/water pressure acts, the older NSCP specifies U = 1.4D + 1.7L + 1.7H. All factors (1.4, 1.7, 1.7) apply without reduction. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 3.2, Load Combinations with Earth and Hydrostatic Pressure",
+      "explanation": "The demand side produced by loads and load combinations for comparison with available resistance. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-005-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:15:18.468657+00:00",
-      "content_hash": "sha256:7f2c57e452735b1304e7c8cf17a1faf01b61c8ffaf18d8064b7feaa945972661"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:4ec11181d4a3e05d5c01ca99c1212f3701378351ab6a0f8686ee8208a5f69cbc"
     },
     {
       "question_id": "b15885f3-1ea8-4ffd-b370-599522d4c9f4",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "Under the older NSCP, the earthquake load factor within a combined load combination is 1.87. However, because of the 0.75 reduction factor applied to the full combination, the effective earthquake factor becomes approximately what value?",
+      "text": "What is the source-safe safety check?",
       "options": [
         {
           "id": "a",
-          "text": "1.87 (no change)"
+          "text": "Demand must exceed resistance."
         },
         {
           "id": "b",
-          "text": "1.40"
+          "text": "Resistance must exceed demand for extreme loading."
         },
         {
           "id": "c",
-          "text": "1.0"
+          "text": "Service loads are ignored in every method."
         },
         {
           "id": "d",
-          "text": "1.25"
+          "text": "The drawing scale decides capacity."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1.87 is the stated factor, but the 0.75 reduction modifies the effective value in the combined formula.",
-        "c": "NSCP 2015 uses 1.0; older NSCP yields 1.40 after the 0.75 reduction.",
-        "d": "Incorrect arithmetic; 0.75 × 1.87 = 1.4025, not 1.25.",
-        "correct": "The formula U = 0.75(1.4D + 1.7L + 1.87E) means the effective earthquake factor is 0.75 × 1.87 ≈ 1.40.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Demand must exceed resistance. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Resistance must exceed demand for extreme loading. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "c": "Service loads are ignored in every method. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "The drawing scale decides capacity. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Resistance must exceed demand for extreme loading. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": "1.87 is the stated factor, but the 0.75 reduction modifies the effective value in the combined formula. NSCP 2015 uses 1.0; older NSCP yields 1.40 after the 0.75 reduction. Incorrect arithmetic; 0.75 × 1.87 = 1.4025, not 1.25. The formula U = 0.75(1.4D + 1.7L + 1.87E) means the effective earthquake factor is 0.75 × 1.87 ≈ 1.40. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 3.2, Combined Load with Earthquake Effect",
+      "explanation": "Resistance must exceed demand for extreme loading. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-005-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:15:18.610983+00:00",
-      "content_hash": "sha256:40dcf32095a7a661cde4c267cd911a33f6ca4953a0948bdab72342b4c5c0dd4a"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:aa2b62a8b8b9cf37a01ae593ff7f6a2d148b24d838b6ba1187b0de17dfb1ad26"
     },
     {
       "question_id": "7a5e5382-12a0-4411-b074-42ddd64344f9",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "Under NSCP 2015, what is the required strength when both dead load and live load act on a column?",
+      "text": "How is serviceability different from strength safety?",
       "options": [
         {
           "id": "a",
-          "text": "U = 1.2D + 1.6L"
+          "text": "Serviceability keeps the structure operational under service loads, including deformation and motion limits."
         },
         {
           "id": "b",
-          "text": "U = 1.4D + 1.7L"
+          "text": "It is identical to collapse prevention."
         },
         {
           "id": "c",
-          "text": "U = 0.9D + 1.2L"
+          "text": "It applies only to color selection."
         },
         {
           "id": "d",
-          "text": "U = 1.2D + 1.0L + 0.6W"
+          "text": "It removes all need for load combinations."
         }
       ],
       "correct_option_id": "a",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Older NSCP factors.",
-        "c": "The 0.9D factor applies only when wind or earthquake reduces gravity loads, not for the basic gravity combination.",
-        "d": "This mixes NSCP 2015 gravity with wind; the correct form is 1.2D + 1.0W + L (not 0.6W).",
-        "correct": "NSCP 2015 specifies DL = 1.2 and LL = 1.6 for the basic gravity combination.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Serviceability keeps the structure operational under service loads, including deformation and motion limits. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "b": "It is identical to collapse prevention. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "It applies only to color selection. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It removes all need for load combinations. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Serviceability keeps the structure operational under service loads, including deformation and motion limits. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": "Older NSCP factors. The 0.9D factor applies only when wind or earthquake reduces gravity loads, not for the basic gravity combination. This mixes NSCP 2015 gravity with wind; the correct form is 1.2D + 1.0W + L (not 0.6W). NSCP 2015 specifies DL = 1.2 and LL = 1.6 for the basic gravity combination. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2015, Section 2.3, Design Load Combinations",
+      "explanation": "Serviceability keeps the structure operational under service loads, including deformation and motion limits. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-005-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:15:19.147405+00:00",
-      "content_hash": "sha256:045893796ec2da8ba64a8afc242b934a80e362a1823271faf963611f162ea65a"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:b3e6e1ec275564300b05a610f9469707db3bcc082aa2f62cd36f69e87388e963"
     },
     {
       "question_id": "b2ff42c6-5837-4c10-ba15-d47b13d1db2a",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "In NSCP 2015, when wind load must be considered alongside gravity loads, which statement correctly describes the load combination rules?",
+      "text": "What do factored load combinations do?",
       "options": [
         {
           "id": "a",
-          "text": "Use U = 1.2D + 1.0W + L for the combined case, and U = 0.9D + 1.0W when wind governs."
+          "text": "They amplify or combine load effects to find governing strength-design demand."
         },
         {
           "id": "b",
-          "text": "Use U = 0.75(1.2D + 1.0W + 1.6L) when wind is present, regardless of magnitude."
+          "text": "They change the building occupancy label only."
         },
         {
           "id": "c",
-          "text": "Always use U = 1.2D + 1.6L; wind loads are handled separately in a different design phase."
+          "text": "They replace all structural analysis."
         },
         {
           "id": "d",
-          "text": "Use U = 1.2D + 1.0W + 0.5L when wind is dominant, and U = 1.2D + 1.6L when gravity dominates."
+          "text": "They apply only to nonstructural paint."
         }
       ],
       "correct_option_id": "a",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "The 0.75 reduction is an older NSCP feature, not used in NSCP 2015.",
-        "c": "Wind loads are integrated into the design load combinations; they are not deferred to a separate phase.",
-        "d": "NSCP 2015 does not use a 0.5 factor on live load; the 1.0 wind factor reflects the fact that E and W already include uncertainties.",
-        "correct": "NSCP 2015 specifies two distinct formulas: the combined case U = 1.2D + 1.0W + L (L = full service live load, unfactored) and the wind-governs case U = 0.9D + 1.0W. No 0.75 reduction factor is applied in NSCP 2015.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They amplify or combine load effects to find governing strength-design demand. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "b": "They change the building occupancy label only. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "They replace all structural analysis. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "They apply only to nonstructural paint. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "They amplify or combine load effects to find governing strength-design demand. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": "The 0.75 reduction is an older NSCP feature, not used in NSCP 2015. Wind loads are integrated into the design load combinations; they are not deferred to a separate phase. NSCP 2015 does not use a 0.5 factor on live load; the 1.0 wind factor reflects the fact that E and W already include uncertainties. NSCP 2015 specifies two distinct formulas: the combined case U = 1.2D + 1.0W + L (L = full service live load, unfactored) and the wind-governs case U = 0.9D + 1.0W. No 0.75 reduction factor is applied in NSCP 2015. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2015, Section 2.3, Design Load Combinations with Wind and Seismic Effects",
+      "explanation": "They amplify or combine load effects to find governing strength-design demand. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-005-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:15:19.584582+00:00",
-      "content_hash": "sha256:e6c2fb462a881b51213a3e82ac8ee5383e6848f0f41b49b59697d1419c408aeb"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:02331762f33f132b10e5c261286e630db0c691535cd5e9c61df33c8a6068c650"
     },
     {
       "question_id": "18dc7c54-4b23-4863-95d3-c093cebc600c",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "Under the older NSCP, a beam must satisfy load combinations for temperature effects. The two relevant formulas are U = 0.75(1.4D + 1.4T + 1.7L) and U = 1.4(D + T). For a case where D = 50 kN, L = 30 kN, and T = 10 kN (tension), which formula governs?",
+      "text": "Why are envelopes useful in the checked examples?",
       "options": [
         {
           "id": "a",
-          "text": "Combined: U = 0.75(1.4×50 + 1.4×10 + 1.7×30) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 kN; Minimum: U = 1.4(50 + 10) = 84 kN; Combined controls."
+          "text": "They identify governing moment, shear, or axial demand among multiple load combinations."
         },
         {
           "id": "b",
-          "text": "Combined: U = 0.75(1.4×50 + 1.4×10 + 1.7×30) = 85 kN; Minimum: U = 1.4(50 + 10) = 84 kN; Combined controls."
+          "text": "They are only drawing-title blocks."
         },
         {
           "id": "c",
-          "text": "Minimum: U = 1.4(50 + 10) = 84 kN always controls for temperature."
+          "text": "They cancel all load cases."
         },
         {
           "id": "d",
-          "text": "Combined: U = 0.75(70 + 14 + 51) = 84 kN; Minimum: U = 1.4(50 + 10) = 84 kN; They are equal."
+          "text": "They are plumbing details."
         }
       ],
       "correct_option_id": "a",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Calculation is close but arithmetic differs slightly.",
-        "c": "The combined formula often controls for temperature because it includes live load; the minimum formula is a lower-bound safeguard.",
-        "d": "Coincidentally equal in this example, but the controlling formula must be identified by calculation.",
-        "correct": "Combined: 0.75(1.4(50) + 1.4(10) + 1.7(30)) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 ≈ 118 kN. Wait, let me recalculate: 0.75(70 + 14 + 51) = 0.75(135) = 101.25. Minimum: 1.4(50 + 10) = 84 kN. Combined is larger. Combined: 0.75(1.4(50) + 1.4(10) + 1.7(30)) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 kN > Minimum: 1.4(50 + 10) = 84 kN. Combined controls.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They identify governing moment, shear, or axial demand among multiple load combinations. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "b": "They are only drawing-title blocks. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "They cancel all load cases. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "They are plumbing details. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "They identify governing moment, shear, or axial demand among multiple load combinations. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": "Calculation is close but arithmetic differs slightly. The combined formula often controls for temperature because it includes live load; the minimum formula is a lower-bound safeguard. Coincidentally equal in this example, but the controlling formula must be identified by calculation. Combined: 0.75(1.4(50) + 1.4(10) + 1.7(30)) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 ≈ 118 kN. Wait, let me recalculate: 0.75(70 + 14 + 51) = 0.75(135) = 101.25. Minimum: 1.4(50 + 10) = 84 kN. Combined is larger. Combined: 0.75(1.4(50) + 1.4(10) + 1.7(30)) = 0.75(70 + 14 + 51) = 0.75(135) = 101.25 kN > Minimum: 1.4(50 + 10) = 84 kN. Combined controls. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 3.2, Load Combinations with Thermal Effects",
+      "explanation": "They identify governing moment, shear, or axial demand among multiple load combinations. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-005-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:15:18.318115+00:00",
-      "content_hash": "sha256:f679e9d94f4724360dbe5292abf63d6a3e1a69892e6090dc7cd51c00809be8d1"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:a836224b66a8b4ae53a8728cb691c9ded4e9c3898fe591ef239948628f9393c0"
     },
     {
       "question_id": "a5f4d738-0ea8-4be1-b834-407aed7b7f60",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "A design engineer working on a high-rise building in Manila has calculated earthquake demands under seismic analysis. Under NSCP 2015, the earthquake load factor applied to the seismic demand is 1.0. Why does NSCP 2015 not use a factor like 1.87 as in the older NSCP?",
+      "text": "What is the risk of mixing design formats?",
       "options": [
         {
           "id": "a",
-          "text": "Because earthquakes are less common in the Philippines under NSCP 2015, which is a misconception"
+          "text": "Mixing formats is always more accurate."
         },
         {
           "id": "b",
-          "text": "Because the seismic demand value E already incorporates design uncertainties; therefore 1.0 E is appropriate."
+          "text": "Comparing service-level demand to factored resistance, or factored demand to allowable stress, can produce an invalid check."
         },
         {
           "id": "c",
-          "text": "Because NSCP 2015 requires a separate safety check, making load factors for earthquake redundant, which is not entirely accurate"
+          "text": "It affects only typography."
         },
         {
           "id": "d",
-          "text": "To reduce the cost of structural members in seismic regions by using smaller factors, which may compromise safety"
+          "text": "It is required by every source."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Earthquake frequency has not changed; this is a philosophical and methodological difference in how uncertainty is handled.",
-        "c": "NSCP 2015 does not introduce a separate safety check; the philosophy is that E already includes the uncertainty.",
-        "d": "Code changes are not cost-driven; they reflect evolving engineering science about how to model seismic uncertainty.",
-        "correct": "NSCP 2015 adopts a design earthquake (determined via seismic hazard analysis) that already reflects acceptable risk and design uncertainty. Therefore, no additional multiplier beyond 1.0 is needed. This differs from the older NSCP philosophy.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Mixing formats is always more accurate. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Comparing service-level demand to factored resistance, or factored demand to allowable stress, can produce an invalid check. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "c": "It affects only typography. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It is required by every source. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Comparing service-level demand to factored resistance, or factored demand to allowable stress, can produce an invalid check. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 2.3 Commentary, Design Earthquake Approach and Load Factor Philosophy",
+      "explanation": "Comparing service-level demand to factored resistance, or factored demand to allowable stress, can produce an invalid check. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-005-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1c0368bee63e69f2d13d1775f3dcb4b8456872bc7562a5e25dba24239accfa63"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:260acc4af20fd09769340c2a7db016335a7f0df6fc4eed3c289682c2ad378f31"
     },
     {
       "question_id": "6cb5fc43-77f7-4c1d-ae82-c690d2fda453",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "In the older NSCP, when both dead load and wind load must be considered, what reduction factor applies to the load combination?",
+      "text": "What should happen when a question supplies D, L, W, or E values?",
       "options": [
         {
           "id": "a",
-          "text": "No reduction; use 1.4D + 1.7W, ensuring that the structure can withstand maximum expected loads without failure"
+          "text": "Invent a different combination from memory."
         },
         {
           "id": "b",
-          "text": "Multiply the combination by 0.75: U = 0.75(1.4D + 1.7W)"
+          "text": "Identify the load types and use the item-supplied combination or the captured source rule."
         },
         {
           "id": "c",
-          "text": "Use 0.9D + 1.3W only if wind governs, which is determined by site-specific wind speed analysis"
+          "text": "Ignore load labels."
         },
         {
           "id": "d",
-          "text": "Divide all factors by 1.33, a method that simplifies calculations but may not account for all load scenarios"
+          "text": "Treat every value as live load."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Ignores the 0.75 reduction rule in the older NSCP.",
-        "c": "The 0.9D + 1.3W form applies only when wind governs (wind effect is larger). Option B is the general combined formula.",
-        "d": "No such divisor rule exists in the NSCP.",
-        "correct": "The older NSCP applies a 0.75 factor to combined load combinations involving gravity plus wind or earthquake. This reflects the lower probability of simultaneous maximum gravity and maximum environmental loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Invent a different combination from memory. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "Identify the load types and use the item-supplied combination or the captured source rule. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "c": "Ignore load labels. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Treat every value as live load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Identify the load types and use the item-supplied combination or the captured source rule. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2001, Section 3.2, Load Combinations with Wind and Earthquake",
+      "explanation": "Identify the load types and use the item-supplied combination or the captured source rule. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-005-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1d932669719e8748fc2f2d4fab472734e9dcd29a9c66a066751faa2215d4314d"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:1e1274be635479836fb92ffcdccb9b936acb8cf9d041e599b6efa8c5f8e50456"
     },
     {
       "question_id": "045a3392-649e-4a19-85a9-1ee858e137a4",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "A structural engineer is comparing the basic gravity load combination under both editions. Under the older NSCP, U = 1.4D + 1.7L produces a required strength of 300 kN for a given dead and live load. If the same loads were analyzed under NSCP 2015 using U = 1.2D + 1.6L, what can be concluded about the NSCP 2015 required strength?",
+      "text": "Why is a full NSCP load-combination table excluded here?",
       "options": [
         {
           "id": "a",
-          "text": "It will be larger than 300 kN because NSCP 2015 factors are more conservative."
+          "text": "Load combinations do not exist."
         },
         {
           "id": "b",
-          "text": "It will be smaller than 300 kN because NSCP 2015 uses lower load factors overall."
+          "text": "The readable local source boundary did not supply the full current NSCP table for this batch."
         },
         {
           "id": "c",
-          "text": "It will be equal to 300 kN; both editions are equivalent."
+          "text": "Every factor can be guessed safely."
         },
         {
           "id": "d",
-          "text": "It will be approximately 10–15% smaller than 300 kN due to the reduction in load factors."
+          "text": "NSCP tables are replaced by accelerographs."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "NSCP 2015 factors are less conservative (smaller), not more.",
-        "c": "The load factors differ; the required strengths will differ.",
-        "d": "While the direction is correct, the magnitude depends on the relative proportions of D and L. A general statement about 10–15% is imprecise.",
-        "correct": "NSCP 2015 uses DL = 1.2 (vs. 1.4) and LL = 1.6 (vs. 1.7), both lower factors. Consequently, U from NSCP 2015 will be smaller for the same loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Load combinations do not exist. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "The readable local source boundary did not supply the full current NSCP table for this batch. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "c": "Every factor can be guessed safely. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "NSCP tables are replaced by accelerographs. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "The readable local source boundary did not supply the full current NSCP table for this batch. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": "NSCP 2015 factors are less conservative (smaller), not more. The load factors differ; the required strengths will differ. While the direction is correct, the magnitude depends on the relative proportions of D and L. A general statement about 10–15% is imprecise. NSCP 2015 uses DL = 1.2 (vs. 1.4) and LL = 1.6 (vs. 1.7), both lower factors. Consequently, U from NSCP 2015 will be smaller for the same loads. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001 and 2015, Comparison of Load Factors and Design Philosophies",
+      "explanation": "The readable local source boundary did not supply the full current NSCP table for this batch. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-005-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:15:19.296806+00:00",
-      "content_hash": "sha256:06d380c7ca1b9bf34a82d4088518c6c50c11fc6d861cfa01d6889943366c95e0"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:ba704afd28d454ac1beb472f302204e7a815a7613127830205da8b82dc57b773"
     },
     {
       "question_id": "64a25888-983a-4c7b-950c-ec6ab84282e1",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "Under the older NSCP edition, the basic required strength for a beam supporting both dead load and live load is calculated using which load combination?",
+      "text": "What does the checked Fundamentals source allow this batch to say?",
       "options": [
         {
           "id": "a",
-          "text": "U = 1.2D + 1.6L"
+          "text": "It supplies every Philippine code formula."
         },
         {
           "id": "b",
-          "text": "U = 1.4D + 1.7L"
+          "text": "It supports strength-design examples with factored load combinations and governing envelopes, but not a complete local code table."
         },
         {
           "id": "c",
-          "text": "U = 0.75(1.4D + 1.7L)"
+          "text": "It removes serviceability from design."
         },
         {
           "id": "d",
-          "text": "U = 0.9D + 1.3L"
+          "text": "It proves all structures use one factor."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "NSCP 2015 factors, not older NSCP.",
-        "c": "The 0.75 reduction applies only when wind or earthquake is included in the combination.",
-        "d": "The 0.9D reduction applies only when wind or earthquake governs and gravity is secondary.",
-        "correct": "The older NSCP specifies DL = 1.4 and LL = 1.7 for the basic gravity load combination without wind or earthquake.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It supplies every Philippine code formula. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "b": "It supports strength-design examples with factored load combinations and governing envelopes, but not a complete local code table. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "c": "It removes serviceability from design. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "It proves all structures use one factor. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "It supports strength-design examples with factored load combinations and governing envelopes, but not a complete local code table. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": "NSCP 2015 factors, not older NSCP. The 0.75 reduction applies only when wind or earthquake is included in the combination. The 0.9D reduction applies only when wind or earthquake governs and gravity is secondary. The older NSCP specifies DL = 1.4 and LL = 1.7 for the basic gravity load combination without wind or earthquake. Review the correct answer and associated code provision.",
-      "code_citation": "NSCP 2001, Section 3.2, Load Combinations for Required Strength",
+      "explanation": "It supports strength-design examples with factored load combinations and governing envelopes, but not a complete local code table. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-005-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-05-06T15:15:19.441407+00:00",
-      "content_hash": "sha256:5b4e1dd35711ae1ae26c1bbee25366cf89da5a96daf9e05a44cd36d2b9e7cbd3"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:0600d2e7da129b513189aed68d3a9366c0d471711f29322e383b297fbb2e5ce7"
     },
     {
       "question_id": "c5c610d9-5ca5-44a4-9538-d98c0546da6e",
       "article_id": "dac86d82-085d-4627-bf1d-2e3ab4be9da3",
       "topic_id": "f63aefce-e88e-462e-96d5-e7fd101092c8",
-      "text": "A warehouse in Cebu experiences dead load 100 kN, live load 80 kN, and wind load 60 kN. Calculate the required strength under the older NSCP, testing both the combined wind formula and the wind-governs formula, and identify which produces the larger U.",
+      "text": "What is the best exam habit for required-strength items?",
       "options": [
         {
           "id": "a",
-          "text": "Combined: U = 283.5 kN; Wind-governs: U = 168 kN; Combined controls."
+          "text": "Name the design format, identify loads, apply the supplied combination, and compare demand with resistance in the same format."
         },
         {
           "id": "b",
-          "text": "Combined: U = 283.5 kN; Wind-governs: U = 204 kN; Wind-governs controls."
+          "text": "Start with an uncaptured factor table."
         },
         {
           "id": "c",
-          "text": "Combined: U = 350 kN; Wind-governs: U = 240 kN; Combined controls."
+          "text": "Compare any demand to any capacity."
         },
         {
           "id": "d",
-          "text": "Combined: U = 309 kN; Wind-governs: U = 168 kN; Combined controls."
+          "text": "Skip units and load direction."
         }
       ],
       "correct_option_id": "a",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Combined: U = 0.75(1.4×100 + 1.7×80 + 1.7×60) = 0.75(140 + 136 + 102) = 0.75(378) = 283.5 kN. Wind-governs: U = 0.9×100 + 1.3×60 = 90 + 78 = 168 kN. Combined (283.5 kN) is larger, so it controls the design.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Name the design format, identify loads, apply the supplied combination, and compare demand with resistance in the same format. This stays inside the Batch 143 local source boundary for Required strength and factored demand.",
+        "b": "Start with an uncaptured factor table. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "c": "Compare any demand to any capacity. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "d": "Skip units and load direction. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+        "correct": "Name the design format, identify loads, apply the supplied combination, and compare demand with resistance in the same format. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+        "takeaway": "For Required strength and factored demand, read the structural behavior and source boundary before using memorized values.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2001, Section 3.2, Load Combination Selection and Comparison",
+      "explanation": "Name the design format, identify loads, apply the supplied combination, and compare demand with resistance in the same format. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-005-01-core-concept.source-capture.md#sha256:8ef813ccf324a182c146322e9255d427f547ec8e5462b0d074587a0cf139b67a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-005-01-core-concept.refined.md#sha256:3f5f15eb313f69778c8887bd91aee78d4ee3d60dff6167f6827ce5c74abe5a30",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-005-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:25924ea8bf165d7099891e002597042821e9e853e4ffe3ddd8a4c6b851a3472c"
+      "updated_at": "2026-05-14T01:45:07.966Z",
+      "content_hash": "sha256:e3edb44fdb41178eb448e36320014981bc2bc74c4faa8b1122ad104c067e4695"
     }
   ]
 }

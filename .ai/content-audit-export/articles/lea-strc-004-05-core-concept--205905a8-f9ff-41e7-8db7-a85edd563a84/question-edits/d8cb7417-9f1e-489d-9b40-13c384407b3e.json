@@ -1,0 +1,64 @@
+{
+  "question_id": "d8cb7417-9f1e-489d-9b40-13c384407b3e",
+  "baseline_hash": "sha256:e9893ea755c67ca62620d78b4155192c897f093292526fe4837eb93bed390f67",
+  "action": "replace",
+  "reason": "source-audited-article-batch-143-local-first: residual local-first rewrite constrained to checked local source artifacts for Live loads, load tracing, and floor behavior.",
+  "approved_by": "codex-local-first-source-audited-article-batch-143-local-first",
+  "approved_at": "2026-05-14T01:45:07.966Z",
+  "source_audit_support": {
+    "parent_article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+    "parent_article_slug": "lea-strc-004-05-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544",
+    "checked_sources": [
+      {
+        "source_id": "batch-143-lea-strc-004-05-core-concept-raw-source-capture",
+        "label": "Batch 143 raw source capture - Live loads, load tracing, and floor behavior",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md",
+        "sha256": "sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c"
+      },
+      {
+        "source_id": "batch-143-lea-strc-004-05-core-concept-refined-source-map",
+        "label": "Batch 143 refined source conversion - Live loads, load tracing, and floor behavior",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md",
+        "sha256": "sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 143 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why should exact NSCP live-load table values stay out of this batch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All live loads are the same value."
+      },
+      {
+        "id": "b",
+        "text": "The exact local code table was not safely captured, so use source concepts or values supplied by the item."
+      },
+      {
+        "id": "c",
+        "text": "Memorized numbers are always safe."
+      },
+      {
+        "id": "d",
+        "text": "Occupancy never affects live load."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "All live loads are the same value. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "b": "The exact local code table was not safely captured, so use source concepts or values supplied by the item. This stays inside the Batch 143 local source boundary for Live loads, load tracing, and floor behavior.",
+      "c": "Memorized numbers are always safe. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "d": "Occupancy never affects live load. is not the best answer because it either changes the structural concept or adds a claim outside the Batch 143 local source boundary.",
+      "correct": "The exact local code table was not safely captured, so use source concepts or values supplied by the item. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+      "takeaway": "For Live loads, load tracing, and floor behavior, read the structural behavior and source boundary before using memorized values.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+    },
+    "explanation": "The exact local code table was not safely captured, so use source concepts or values supplied by the item. Supported by the Batch 143 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-143/lea-strc-004-05-core-concept.source-capture.md#sha256:02f04f4e980b6ca6632c0c9036cc1d42410db0c22014ddebe89caadb4676229c; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-143/lea-strc-004-05-core-concept.refined.md#sha256:d126778d062f3dd0f239b5f6efd9159167dffa6ede1581840317937360888544"
+  },
+  "batch_question_template_index": 9
+}
