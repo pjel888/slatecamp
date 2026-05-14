@@ -1,65 +1,69 @@
 {
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+  "cluster_id": "lea-matl-008-03",
   "question_id": "eebb183f-a0e6-4571-a8e9-3d8bd018878e",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:532be9a12076f5efe89fc7bd1d12be9e82cdfd3cc8ec4ffc8285790f9897b344",
+  "after_hash": "sha256:4bc74dec664b2d8895c9b7ad46db02c48de52ec3a295a741ae649e1610b64681",
   "baseline_hash": "sha256:532be9a12076f5efe89fc7bd1d12be9e82cdfd3cc8ec4ffc8285790f9897b344",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-03-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "f34aade8-a870-458c-9609-562419eb1238",
-    "parent_article_slug": "lea-matl-008-03-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited fastener_systems scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-fastener-systems-b153"
+  ],
+  "reason": "Batch 153 local-first rewrite aligned to fixed reservation manifest and source boundary.",
   "proposed": {
-    "text": "Which screw type is designed to tap female threads as it is driven?",
+    "text": "Which screw type is described as designed to tap corresponding female threads as it is driven?",
     "options": [
       {
         "id": "a",
-        "text": "Self-tapping screw"
+        "text": "Wood screw only"
       },
       {
         "id": "b",
-        "text": "Finish nail"
+        "text": "Self-tapping screw"
       },
       {
         "id": "c",
-        "text": "Toggle bolt wing"
+        "text": "Carriage bolt"
       },
       {
         "id": "d",
-        "text": "Panic bar"
+        "text": "Rivet"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI states that self-tapping screws are designed to tap corresponding female threads as they are driven.",
-    "explanation": "BCI states that self-tapping screws are designed to tap corresponding female threads as they are driven.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Wood screw only is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "b": "Self-tapping screw This is the source-supported answer inside the Batch 153 local-first source boundary.",
+      "c": "Carriage bolt is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "d": "Rivet is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "correct": "Self-tapping screw Supported by bci-5e-fastener-systems-b153.",
+      "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+      "source_boundary": "bci-5e-fastener-systems-b153",
+      "checked_sources": [
+        "bci-5e-fastener-systems-b153"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 16061-16080.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-153-local-first",
+      "bci-5e-fastener-systems-b153"
+    ]
+  },
+  "rationale": {
+    "a": "Wood screw only is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "b": "Self-tapping screw This is the source-supported answer inside the Batch 153 local-first source boundary.",
+    "c": "Carriage bolt is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "d": "Rivet is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "correct": "Self-tapping screw Supported by bci-5e-fastener-systems-b153.",
+    "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+    "source_boundary": "bci-5e-fastener-systems-b153",
+    "checked_sources": [
+      "bci-5e-fastener-systems-b153"
+    ]
   }
 }

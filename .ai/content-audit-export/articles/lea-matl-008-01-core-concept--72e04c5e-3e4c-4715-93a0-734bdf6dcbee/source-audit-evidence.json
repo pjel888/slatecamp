@@ -1,233 +1,123 @@
 {
-  "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-079-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T06:20:00.000+08:00",
-  "target": {
-    "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-    "slug": "lea-matl-008-01-core-concept",
-    "title": "Door hardware",
-    "article_folder": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-    "normalized_sha256": "sha256:5bf2ad02a42ad4754a9f8a4f3d68d1af008bcb9a3bc255beb575ca5390c2cc6b",
-    "candidate_sha256": "sha256:5bf2ad02a42ad4754a9f8a4f3d68d1af008bcb9a3bc255beb575ca5390c2cc6b",
-    "candidate_path": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/candidate.md"
-  },
-  "classification": {
-    "topic_family": "door_hardware",
-    "local_first_batch": "079",
-    "source_sensitivity": "technical_materials",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "source_bound_materials",
-    "requires_raw_pdf_audit": true
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
-    "blockers": []
-  },
-  "checked_sources": [
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "cluster_id": "lea-matl-008-01",
+  "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
     {
-      "source_id": "bci-5e-b079",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-      "locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction"
+      "id": "bci-5e-door-hardware-b153",
+      "title": "Building Construction Illustrated, 5th Edition - door hardware",
+      "source_type": "primary_building_construction_pdf",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-door-hardware-b153.source-capture.md",
+      "local_capture_sha256": "sha256:5d92c512f823918a4b7c41289d5a19c28ba990959a15b2b4a31f6d5ac46566aa",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-door-hardware-b153.refined.md",
+      "refined_capture_sha256": "sha256:9107593cc1330d4e5141be13aa12570ed6985b522ef74914c434205e6f5d54bb",
+      "locator": "refined markdown lines 10332-10535; raw PDF pages 291-294",
+      "safe_claims": [
+        "Finish door hardware includes locksets, hinges, closers, panic hardware, push and pull bars or plates, kick plates, stops, holders, bumpers, thresholds, weatherstripping, tracks, and guides.",
+        "Hardware selection factors include function and ease of operation, recessed or surface-mounted installation, material, finish, texture, color, durability by frequency of use, and exposure to weather or corrosive conditions.",
+        "Door hand conventions are used when specifying hardware such as locksets and closers.",
+        "Butt hinges use two leaves joined by a pin and may be mortised or surface-mounted in several configurations.",
+        "Special-purpose hinges include spring, double-acting, piano, invisible, and floor hinges.",
+        "Locksets are complete manufactured assemblies; BCI distinguishes mortise, unit/integral, and cylinder locks and tells users to consult manufacturers for exact functions and installation requirements.",
+        "Panic hardware releases when pressure is applied to a horizontal bar across the interior face of an emergency exit door.",
+        "Door closers automatically close doors and may be surface-mounted, concealed, or mounted on the push or pull side."
+      ],
+      "use_limits": [
+        "Do not claim ANSI/BHMA grades, cycle counts, force tests, UL fire-door listings, or accessibility code triggers from this batch.",
+        "Do not state that a specific lockset or hinge is mandatory for all commercial, hospital, fire-rated, or accessible doors without a code or manufacturer source.",
+        "Do not convert BCI accessibility notes into Philippine BP 344 or current code requirements."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b079",
-      "label": "George Salvan Architectural Building Materials",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-      "locator": "Salvan refined markdown lines 5941-5960, 6117-6208, and 6486-6578; raw PDF pages 173, 177, and 181-183 checked by local PyMuPDF extraction"
+      "id": "salvan-door-hardware-b153",
+      "title": "George Salvan Architectural Building Materials - finishing and rough hardware",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-door-hardware-b153.source-capture.md",
+      "local_capture_sha256": "sha256:b407065c44022304475e07c04ce18fdac48e6f81c691d20db7a330bdc09e289c",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-door-hardware-b153.refined.md",
+      "refined_capture_sha256": "sha256:c6c118192977b1b4dadc8fe8d616e9bb46123dc2c1ecdeac29018a7d3b6a5525",
+      "locator": "refined markdown lines 5941-5960, 6117-6208, and 6486-6578; raw PDF pages 173, 177, and 181-183",
+      "safe_claims": [
+        "Salvan classifies finishing hardware as exposed hardware with finished appearance and function, especially for doors, windows, and cabinets.",
+        "Salvan classifies rough hardware as concealed construction hardware such as bolts, nails, screws, spikes, rods, and other metal fittings.",
+        "Salvan defines a hinge as a movable joint with two plates joined by a pin that supports and turns a door about a pivot.",
+        "Salvan identifies butt, fixed-pin, full-surface, loose-joint, loose-pin, spring, and pivot hinge vocabulary.",
+        "Salvan defines a lockset as a complete lock system with the locking mechanism and accessories such as knobs, escutcheons, and plates.",
+        "Salvan records latch, night latch, lift latch, dead bolt, strike, bored lock, cylinder lock, hasp, padlock, hook bolt, threaded rod, and door stopper vocabulary."
+      ],
+      "use_limits": [
+        "Do not use brand lists as required specifications.",
+        "Do not use legacy local vocabulary as a current fire, accessibility, or security certification claim.",
+        "Do not treat every hardware item as interchangeable; keep function and location distinct."
+      ],
+      "sort_order": 1
     }
   ],
-  "claims": [
+  "normalized_sha256": "sha256:65778eecb03d8cb1389048cdeebc24f43db7e3292fef2c3f212963a7ca974eee",
+  "candidate_sha256": "sha256:65778eecb03d8cb1389048cdeebc24f43db7e3292fef2c3f212963a7ca974eee",
+  "question_count": 10,
+  "question_hashes": [
     {
-      "claim_id": "lea-matl-008-01-core-concept-article-b079",
-      "claim_text": "Article lea-matl-008-01-core-concept was rewritten to the checked door_hardware source scope.",
-      "claim_type": "article_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f",
+      "content_hash": "sha256:6a6cfc89dc8228628d051db3c9d4866e68e0a9470190017cd01335dbdff29817"
     },
     {
-      "claim_id": "question-ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f-ALE-MATL-008-01-007-b079",
-      "claim_text": "Question ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f ALE-MATL-008-01-007 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "c068c19d-7e23-450c-bdbc-53852432cf2a",
+      "content_hash": "sha256:f8932784965096c10a22d5fff50b001109fb4bad13b600bd8591afa3395a5edb"
     },
     {
-      "claim_id": "question-c068c19d-7e23-450c-bdbc-53852432cf2a-ALE-MATL-008-01-001-b079",
-      "claim_text": "Question c068c19d-7e23-450c-bdbc-53852432cf2a ALE-MATL-008-01-001 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "f3c6dcbe-28ad-44e1-8143-b4a6146c9e43",
+      "content_hash": "sha256:1a678d26fad83f003c9ca67f05f6a461981a2944f0a45a5b95396342f215c331"
     },
     {
-      "claim_id": "question-f3c6dcbe-28ad-44e1-8143-b4a6146c9e43-ALE-MATL-008-01-009-b079",
-      "claim_text": "Question f3c6dcbe-28ad-44e1-8143-b4a6146c9e43 ALE-MATL-008-01-009 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "7dee3af4-e6b5-4ea8-8fde-2608e2e41713",
+      "content_hash": "sha256:0bc31fb5bbd58a9eda6dc4df0b701f714e1a48c1787ff86bbcbd2aa531905aa1"
     },
     {
-      "claim_id": "question-7dee3af4-e6b5-4ea8-8fde-2608e2e41713-ALE-MATL-008-01-008-b079",
-      "claim_text": "Question 7dee3af4-e6b5-4ea8-8fde-2608e2e41713 ALE-MATL-008-01-008 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "3c42003d-f148-4331-9694-9f86f067021a",
+      "content_hash": "sha256:07499f300dd9f95d139f991dca7883089a168e608f02b17c828e322331b4542a"
     },
     {
-      "claim_id": "question-3c42003d-f148-4331-9694-9f86f067021a-ALE-MATL-008-01-005-b079",
-      "claim_text": "Question 3c42003d-f148-4331-9694-9f86f067021a ALE-MATL-008-01-005 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "459a1bba-4de2-4235-94c5-13c15a5f9294",
+      "content_hash": "sha256:8d347524cd848c8365265801ca4fd8d7ec37746def306a7ce19c62110aa57ed4"
     },
     {
-      "claim_id": "question-459a1bba-4de2-4235-94c5-13c15a5f9294-ALE-MATL-008-01-010-b079",
-      "claim_text": "Question 459a1bba-4de2-4235-94c5-13c15a5f9294 ALE-MATL-008-01-010 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "76e589b2-5b3c-4ad9-82f3-55e9cffc2f1d",
+      "content_hash": "sha256:dd87befb791133fa33305fcd12e63f125ea52b26bc2be1b65f717d3c97b2fa9f"
     },
     {
-      "claim_id": "question-76e589b2-5b3c-4ad9-82f3-55e9cffc2f1d-ALE-MATL-008-01-006-b079",
-      "claim_text": "Question 76e589b2-5b3c-4ad9-82f3-55e9cffc2f1d ALE-MATL-008-01-006 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "d6811b63-ffb1-42f8-8e94-b4e867f4d60d",
+      "content_hash": "sha256:6bd2ded3db5c7763f13fccad6cc32a66c2ff2b089073151ac47f646466f9407e"
     },
     {
-      "claim_id": "question-d6811b63-ffb1-42f8-8e94-b4e867f4d60d-ALE-MATL-008-01-003-b079",
-      "claim_text": "Question d6811b63-ffb1-42f8-8e94-b4e867f4d60d ALE-MATL-008-01-003 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "9c9816fd-a7a9-4fd4-8f67-f9a930cd349e",
+      "content_hash": "sha256:86b5e0523c41af6258c4a713b6d1854ad17f5b3dc94a382597c60480a8b8bf58"
     },
     {
-      "claim_id": "question-9c9816fd-a7a9-4fd4-8f67-f9a930cd349e-ALE-MATL-008-01-002-b079",
-      "claim_text": "Question 9c9816fd-a7a9-4fd4-8f67-f9a930cd349e ALE-MATL-008-01-002 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "question-974e116a-cda2-430c-834b-736d82703a1f-ALE-MATL-008-01-004-b079",
-      "claim_text": "Question 974e116a-cda2-430c-834b-736d82703a1f ALE-MATL-008-01-004 was rewritten to the checked door_hardware source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "function and ease of operation"
-      },
-      "blockers": []
+      "question_id": "974e116a-cda2-430c-834b-736d82703a1f",
+      "content_hash": "sha256:38c9082619933efb29b1ae99ba3da59bc6e9b2e08fed6af0974184db240f9f6e"
     }
   ],
-  "unverified_or_rejected_claims": [],
-  "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
-  },
-  "local_first_publication": {
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "ready_for_final_publishing_review": true
-  }
+  "real_world_scenario_status": "included",
+  "exact_claim_policy": "exact legal, code, standards-grade, proprietary, or structural-capacity values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No ANSI/BHMA grade, cycle-count, force-test, UL fire-door listing, or BP 344/ADA trigger was claimed as an answer-key fact.",
+    "Hardware choices were limited to BCI and Salvan functions, mounting choices, material/exposure considerations, and manufacturer-consultation limits."
+  ]
 }

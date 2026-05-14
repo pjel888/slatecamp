@@ -1,0 +1,44 @@
+{
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "generated_at": "2026-05-14T04:44:53.627Z",
+  "status": "passed_local_validation_git_handoff_ready",
+  "articles": [
+    {
+      "cluster_id": "lea-matl-008-01",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "title": "Door hardware",
+      "source_ids": [
+        "bci-5e-door-hardware-b153",
+        "salvan-door-hardware-b153"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:65778eecb03d8cb1389048cdeebc24f43db7e3292fef2c3f212963a7ca974eee",
+      "candidate_sha256": "sha256:65778eecb03d8cb1389048cdeebc24f43db7e3292fef2c3f212963a7ca974eee"
+    },
+    {
+      "cluster_id": "lea-matl-008-02",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "title": "Structural joints serve distinct purposes in building",
+      "source_ids": [
+        "bci-5e-structural-joints-b153",
+        "salvan-structural-joints-b153"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:fea0b82d3153dda01c5b1a73f7fd801654c853c910ff6f4c5bd820c3bce8ca92",
+      "candidate_sha256": "sha256:fea0b82d3153dda01c5b1a73f7fd801654c853c910ff6f4c5bd820c3bce8ca92"
+    },
+    {
+      "cluster_id": "lea-matl-008-03",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "title": "Fastener Systems",
+      "source_ids": [
+        "bci-5e-fastener-systems-b153",
+        "salvan-fastener-systems-b153"
+      ],
+      "question_count": 10,
+      "normalized_sha256": "sha256:514f90aa81dd9b886344b27ee61e3a4b2daea7242ddc0597c713bb91db13ac6d",
+      "candidate_sha256": "sha256:514f90aa81dd9b886344b27ee61e3a4b2daea7242ddc0597c713bb91db13ac6d"
+    }
+  ]
+}

@@ -1,18 +1,18 @@
 {
   "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5c2e19d4d049f02eeb4e93373f470da0c335bf461ce6292f8ece07d81ea0dfd3",
+  "linked_questions_hash": "sha256:caf781c32354d114d6adb63efc27929d6915100b717766ea84208d55e5673787",
   "question_count": 10,
   "questions": [
     {
       "question_id": "ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "Which type of lockset provides the best security and is mandatory for Grade 1 commercial applications?",
+      "text": "A lock body is cut into the door edge so the mechanism is concealed except for the faceplate, trim, knob or lever, and cylinder. Which lockset type matches that source description?",
       "options": [
         {
           "id": "a",
-          "text": "Cylindrical lock"
+          "text": "Cylinder lock housed in bored holes"
         },
         {
           "id": "b",
@@ -20,11 +20,11 @@
         },
         {
           "id": "c",
-          "text": "Push-button lock"
+          "text": "Door stop"
         },
         {
           "id": "d",
-          "text": "Deadbolt-only lock"
+          "text": "Kick plate"
         }
       ],
       "correct_option_id": "b",
@@ -33,17 +33,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cylindrical locks are faster to install but offer lower security; typical for Grade 2-3 applications.",
-        "c": "Push-button locks are specialty hardware; not standard for commercial grades.",
-        "d": "Deadbolt-only locks lack a latch mechanism for automatic closure.",
-        "correct": "Mortise locks have separate latch and deadbolt mechanisms housed in the frame, providing superior security and durability compared to cylindrical locks (all components in the knob). Grade 1 commercial can be either mortise or cylindrical if certified.",
-        "takeaway": "Mortise lock = Grade 1 commercial; Cylindrical lock = Grade 2-3 residential or light commercial."
+        "a": "Cylinder lock housed in bored holes is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Mortise lock This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Door stop is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Kick plate is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Mortise lock Supported by bci-5e-door-hardware-b153, salvan-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153, salvan-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153",
+          "salvan-door-hardware-b153"
+        ]
       },
-      "explanation": "Cylindrical locks are faster to install but offer lower security; typical for Grade 2-3 applications. Push-button locks are specialty hardware; not standard for commercial grades. Deadbolt-only locks lack a latch mechanism for automatic closure. Mortise locks have separate latch and deadbolt mechanisms housed in the frame, providing superior security and durability compared to cylindrical locks (all components in the knob). Grade 1 commercial can be either mortise or cylindrical if certified. Mortise lock = Grade 1 commercial; Cylindrical lock = Grade 2-3 residential or light commercial.",
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 10415-10448; Salvan lines 6486-6578.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153",
+        "salvan-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +62,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:46:02.468383+00:00",
-      "content_hash": "sha256:e3ad7048d3e849e35014c815e2549dfa4a270476a71dac67bffb156754939ee3"
+      "content_hash": "sha256:6a6cfc89dc8228628d051db3c9d4866e68e0a9470190017cd01335dbdff29817"
     },
     {
       "question_id": "c068c19d-7e23-450c-bdbc-53852432cf2a",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "What is the minimum cycle count that ANSI/BHMA Grade 1 door hardware must withstand?",
+      "text": "Which factor is explicitly part of BCI door-hardware selection?",
       "options": [
         {
           "id": "a",
-          "text": "200,000 cycles"
+          "text": "Paint color only, regardless of use"
         },
         {
           "id": "b",
-          "text": "400,000 cycles"
+          "text": "The furniture layout in the next room only"
         },
         {
           "id": "c",
-          "text": "1,000,000 cycles"
+          "text": "Durability based on anticipated frequency of use and possible weather or corrosive exposure"
         },
         {
           "id": "d",
-          "text": "800,000 cycles"
+          "text": "A fixed cycle count from this local source packet"
         }
       ],
       "correct_option_id": "c",
@@ -83,17 +93,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "200,000 cycles is the Grade 3 residential threshold.",
-        "b": "400,000 cycles is the minimum for Grade 2 medium-duty threshold.",
-        "d": "800,000 cycles is a possible Grade 2 rating, but Grade 1 requires 1,000,000 cycles.",
-        "correct": "Grade 1 hardware is rated for a minimum of 1,000,000 cycles, the highest BHMA performance tier for heavy commercial applications.",
-        "takeaway": "Memorize the cycle counts: Grade 1 = 1,000,000, Grade 2 = 400,000–800,000, Grade 3 = 200,000."
+        "a": "Paint color only, regardless of use is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "The furniture layout in the next room only is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "Durability based on anticipated frequency of use and possible weather or corrosive exposure This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "d": "A fixed cycle count from this local source packet is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Durability based on anticipated frequency of use and possible weather or corrosive exposure Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
-      "explanation": "200,000 cycles is the Grade 3 residential threshold. 400,000 cycles is the minimum for Grade 2 medium-duty threshold. 800,000 cycles is a possible Grade 2 rating, but Grade 1 requires 1,000,000 cycles. Grade 1 hardware is rated for a minimum of 1,000,000 cycles, the highest BHMA performance tier for heavy commercial applications. Memorize the cycle counts: Grade 1 = 1,000,000, Grade 2 = 400,000–800,000, Grade 3 = 200,000.",
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 10348-10358.",
       "bloom_level": "understand",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +120,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:46:02.232864+00:00",
-      "content_hash": "sha256:6832d9ae3922ad0e8aaa5ddf4cba946f9c7aea98d7634a981c49295806a27f01"
+      "content_hash": "sha256:f8932784965096c10a22d5fff50b001109fb4bad13b600bd8591afa3395a5edb"
     },
     {
       "question_id": "f3c6dcbe-28ad-44e1-8143-b4a6146c9e43",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "A shopping mall in a coastal typhoon zone specifies standard stainless steel hardware for all entry doors. What is the primary concern with this specification?",
+      "text": "A coastal entry door will receive heavy public use. Which source-safe hardware review is most appropriate?",
       "options": [
         {
           "id": "a",
-          "text": "Stainless steel is more expensive than other materials, which may impact the overall budget allocation for the project"
+          "text": "Choose only by the color of the hardware finish."
         },
         {
           "id": "b",
-          "text": "Standard stainless steel may corrode under salt spray exposure; saltwater-grade (duplex stainless or super-duplex) certification is required."
+          "text": "Review material, finish, durability, frequency of use, and possible weather or corrosive exposure."
         },
         {
           "id": "c",
-          "text": "Stainless steel is incompatible with aluminum door frames, potentially leading to galvanic corrosion if not properly isolated"
+          "text": "Assume any stainless finish has identical salt-exposure performance without manufacturer data."
         },
         {
           "id": "d",
-          "text": "Stainless steel hardware requires more frequent maintenance due to potential surface staining in harsh environments"
+          "text": "Ignore exposure because door hardware is always indoors."
         }
       ],
       "correct_option_id": "b",
@@ -133,17 +151,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cost is a business concern, not a code requirement.",
-        "c": "Stainless steel is compatible with aluminum; they are often used together.",
-        "d": "Proper stainless hardware requires less, not more, maintenance.",
-        "correct": "Coastal environments expose hardware to salt spray, which causes crevice corrosion and pitting in standard stainless steel (304/316 grades). Saltwater-grade hardware (duplex 2205 or super-duplex) resists this attack. This is critical for Philippine typhoon zones.",
-        "takeaway": "Coastal regions require saltwater-grade hardware certification; do not assume standard stainless is sufficient."
+        "a": "Choose only by the color of the hardware finish. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Review material, finish, durability, frequency of use, and possible weather or corrosive exposure. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Assume any stainless finish has identical salt-exposure performance without manufacturer data. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Ignore exposure because door hardware is always indoors. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Review material, finish, durability, frequency of use, and possible weather or corrosive exposure. Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
-      "explanation": "Cost is a business concern, not a code requirement. Stainless steel is compatible with aluminum; they are often used together. Proper stainless hardware requires less, not more, maintenance. Coastal environments expose hardware to salt spray, which causes crevice corrosion and pitting in standard stainless steel (304/316 grades). Saltwater-grade hardware (duplex 2205 or super-duplex) resists this attack. This is critical for Philippine typhoon zones. Coastal regions require saltwater-grade hardware certification; do not assume standard stainless is sufficient.",
-      "code_citation": "General corrosion resistance practice for coastal areas (NSCP 2015 materials provisions)",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 10348-10358.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,29 +178,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:46:01.719798+00:00",
-      "content_hash": "sha256:83a70713f9950a9ceb29baeb0a777ec7fef946398a1fe552036b86f848c45ea6"
+      "content_hash": "sha256:1a678d26fad83f003c9ca67f05f6a461981a2944f0a45a5b95396342f215c331"
     },
     {
       "question_id": "7dee3af4-e6b5-4ea8-8fde-2608e2e41713",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "Which hinge type is best suited for supporting heavy glass doors?",
+      "text": "A door is intended to rotate about pivots rather than ordinary butt-hinge leaves. Which hinge vocabulary best fits the source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Butt hinges"
+          "text": "Ordinary full-mortise butt hinge"
         },
         {
           "id": "b",
-          "text": "Pivot hinges"
+          "text": "Pivot or floor hinge"
         },
         {
           "id": "c",
-          "text": "Concealed hinges"
+          "text": "Door bumper"
         },
         {
           "id": "d",
-          "text": "Spring hinges"
+          "text": "Weatherstripping"
         }
       ],
       "correct_option_id": "b",
@@ -183,17 +209,27 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Butt hinges are for standard wooden doors; they cannot support glass doors without a substantial frame.",
-        "c": "Concealed hinges are hidden within the door but are not rated for glass door loads.",
-        "d": "Spring hinges are for automatic closure, not weight support.",
-        "correct": "Pivot hinges mount at the top and bottom of the door frame, supporting the full weight of heavy or frameless glass doors through a top-mounted pivot mechanism. Butt hinges cannot support glass door frames effectively.",
-        "takeaway": "Pivot hinges = heavy/glass doors; butt hinges = standard wood doors."
+        "a": "Ordinary full-mortise butt hinge is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Pivot or floor hinge This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Door bumper is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Weatherstripping is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Pivot or floor hinge Supported by bci-5e-door-hardware-b153, salvan-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153, salvan-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153",
+          "salvan-door-hardware-b153"
+        ]
       },
-      "explanation": "Butt hinges are for standard wooden doors; they cannot support glass doors without a substantial frame. Concealed hinges are hidden within the door but are not rated for glass door loads. Spring hinges are for automatic closure, not weight support. Pivot hinges mount at the top and bottom of the door frame, supporting the full weight of heavy or frameless glass doors through a top-mounted pivot mechanism. Butt hinges cannot support glass door frames effectively. Pivot hinges = heavy/glass doors; butt hinges = standard wood doors.",
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 10388-10412; Salvan lines 6117-6208.",
       "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153",
+        "salvan-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +238,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:46:02.603991+00:00",
-      "content_hash": "sha256:9b6ef8665ff56b65601ce3d5803b851e3236047923918d2519f7fdd876abf1d8"
+      "content_hash": "sha256:0bc31fb5bbd58a9eda6dc4df0b701f714e1a48c1787ff86bbcbd2aa531905aa1"
     },
     {
       "question_id": "3c42003d-f148-4331-9694-9f86f067021a",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "What is the primary advantage of continuous (piano) hinges over butt hinges?",
+      "text": "What distinguishes a piano hinge in BCI door-hardware vocabulary?",
       "options": [
         {
           "id": "a",
-          "text": "Continuous hinges are cheaper to install, although this may vary depending on the specific application and material costs"
+          "text": "It is a latch bolt without a dead bolt."
         },
         {
           "id": "b",
-          "text": "Continuous hinges distribute load evenly along the full door height, preferred for fire-rated doors."
+          "text": "It is a long, narrow hinge running the full length of the two joined surfaces."
         },
         {
           "id": "c",
-          "text": "Continuous hinges allow the door to swing in both directions, which is beneficial in certain design scenarios but not universally applicable"
+          "text": "It is a threshold at the bottom of the door."
         },
         {
           "id": "d",
-          "text": "Continuous hinges hide the hinge hardware completely, providing a cleaner aesthetic but not necessarily a functional advantage"
+          "text": "It is a concealed lock cylinder."
         }
       ],
       "correct_option_id": "b",
@@ -233,17 +269,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Continuous hinges are typically more expensive due to their length and fabrication.",
-        "c": "Neither hinge type allows bidirectional swing without additional hardware.",
-        "d": "Continuous hinges are visible on the edge of the door; concealed hinges hide the mechanism.",
-        "correct": "Continuous hinges extend the full door height, distributing stress along the entire hinge length rather than at discrete points (butt hinge locations). This is essential for heavy doors and fire-rated assemblies.",
-        "takeaway": "Continuous hinges = load distribution; use them for heavy doors and fire-rated assemblies."
+        "a": "It is a latch bolt without a dead bolt. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "It is a long, narrow hinge running the full length of the two joined surfaces. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "It is a threshold at the bottom of the door. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "It is a concealed lock cylinder. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "It is a long, narrow hinge running the full length of the two joined surfaces. Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
-      "explanation": "Continuous hinges are typically more expensive due to their length and fabrication. Neither hinge type allows bidirectional swing without additional hardware. Continuous hinges are visible on the edge of the door; concealed hinges hide the mechanism. Continuous hinges extend the full door height, distributing stress along the entire hinge length rather than at discrete points (butt hinge locations). This is essential for heavy doors and fire-rated assemblies. Continuous hinges = load distribution; use them for heavy doors and fire-rated assemblies.",
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 10396-10402.",
       "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +296,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:46:01.952418+00:00",
-      "content_hash": "sha256:f40596099211afbd4611c847d29ba9083b8cd65c0b51a391f672f4773644d1d0"
+      "content_hash": "sha256:07499f300dd9f95d139f991dca7883089a168e608f02b17c828e322331b4542a"
     },
     {
       "question_id": "459a1bba-4de2-4235-94c5-13c15a5f9294",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "During LEA exam analysis, a hospital project specifies 50-pound frameless glass doors with a single Grade 1 butt hinge pair (1,500 lbf total capacity). Is this specification adequate?",
+      "text": "A glass entrance door needs controlled closing and compatible support hardware. Which answer stays inside the checked source packet?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because 1,500 lbf exceeds the 50-pound door weight, providing adequate load capacity for the hinge connection."
+          "text": "Use any butt hinge pair because this packet gives a universal load capacity."
         },
         {
           "id": "b",
-          "text": "No, because frameless glass doors require pivot hinges, and butt hinges cannot support the concentrated load at the hinge mortises."
+          "text": "Coordinate the hinge or floor-hinge support and closer type with the door and manufacturer requirements."
         },
         {
           "id": "c",
-          "text": "Yes, because Grade 1 butt hinges are the strongest available and suitable for all door types regardless of material or mounting."
+          "text": "Use a kick plate as the primary support hinge."
         },
         {
           "id": "d",
-          "text": "No, because the hinge capacity must be at least twice the door weight for safety, and 1,500 lbf is insufficient margin."
+          "text": "Reject all concealed floor closers because BCI says closers can only be surface-mounted."
         }
       ],
       "correct_option_id": "b",
@@ -283,17 +327,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Capacity is adequate in theory, but hinge type is wrong for the application.",
-        "c": "Grade 1 capacity is high, but wrong hinge type for glass.",
-        "d": "Safety factor is not the issue; application-specific hinge selection is.",
-        "correct": "Although 1,500 lbf capacity exceeds the door weight, frameless glass doors have no frame to mortise butt hinges into. Pivot hinges are specifically designed for this application, with top and bottom support. Using butt hinges on glass creates a glass failure hazard.",
-        "takeaway": "Hinge selection must match application: butt for wood doors, pivot for glass doors, regardless of load capacity."
+        "a": "Use any butt hinge pair because this packet gives a universal load capacity. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Coordinate the hinge or floor-hinge support and closer type with the door and manufacturer requirements. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Use a kick plate as the primary support hinge. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Reject all concealed floor closers because BCI says closers can only be surface-mounted. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Coordinate the hinge or floor-hinge support and closer type with the door and manufacturer requirements. Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
-      "explanation": "Capacity is adequate in theory, but hinge type is wrong for the application. Grade 1 capacity is high, but wrong hinge type for glass. Safety factor is not the issue; application-specific hinge selection is. Although 1,500 lbf capacity exceeds the door weight, frameless glass doors have no frame to mortise butt hinges into. Pivot hinges are specifically designed for this application, with top and bottom support. Using butt hinges on glass creates a glass failure hazard. Hinge selection must match application: butt for wood doors, pivot for glass doors, regardless of load capacity.",
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware and LEA exam design principles",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 10388-10412 and 10505-10535.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +354,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:46:02.089945+00:00",
-      "content_hash": "sha256:9b2352e6c1180fd566667340ad1cb4bb24310cc2c2a02bd29fd218255c028d4c"
+      "content_hash": "sha256:8d347524cd848c8365265801ca4fd8d7ec37746def306a7ce19c62110aa57ed4"
     },
     {
       "question_id": "76e589b2-5b3c-4ad9-82f3-55e9cffc2f1d",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "A Grade 1 interconnected lock (panic device) must withstand a minimum force of how many pounds-force (lbf) to pass ANSI/BHMA testing?",
+      "text": "What is the defining operation of panic hardware in the checked BCI source?",
       "options": [
         {
           "id": "a",
-          "text": "250 lbf"
+          "text": "It locks only when a key turns from the exterior."
         },
         {
           "id": "b",
-          "text": "300 lbf"
+          "text": "It holds the door open with a wall stop."
         },
         {
           "id": "c",
-          "text": "500 lbf"
+          "text": "It disengages the latch when pressure is applied to a horizontal bar across the inside face."
         },
         {
           "id": "d",
-          "text": "750 lbf"
+          "text": "It seals the bottom of the door against weather."
         }
       ],
       "correct_option_id": "c",
@@ -333,17 +385,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "250 lbf is the Grade 3 minimum.",
-        "b": "300 lbf is the Grade 2 minimum.",
-        "d": "750 lbf is not a standard reference for hinges or locks in BHMA testing.",
-        "correct": "Grade 1 interconnected locks are tested to withstand 500 lbf; Grade 2 requires 300 lbf; Grade 3 requires 250 lbf. This simulates panic conditions and forced egress.",
-        "takeaway": "Interconnected lock forces vary by grade: Grade 1 > Grade 2 > Grade 3. Use these values in exam calculations."
+        "a": "It locks only when a key turns from the exterior. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "It holds the door open with a wall stop. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "It disengages the latch when pressure is applied to a horizontal bar across the inside face. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "d": "It seals the bottom of the door against weather. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "It disengages the latch when pressure is applied to a horizontal bar across the inside face. Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "code_citation": "Local source boundary: BCI refined markdown lines 10471-10499.",
       "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +412,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:91415be96c2e3eb1c4b3b93a4d8117510befed21340eb5660ae7f78b2c164a1f"
+      "content_hash": "sha256:dd87befb791133fa33305fcd12e63f125ea52b26bc2be1b65f717d3c97b2fa9f"
     },
     {
       "question_id": "d6811b63-ffb1-42f8-8e94-b4e867f4d60d",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "According to ADA 2010 Standards, which hardware element is prohibited on doors within an accessible route?",
+      "text": "Which operating-trim choice is identified by BCI as generally easier for people with disabilities to grasp?",
       "options": [
         {
           "id": "a",
-          "text": "Lever handles"
+          "text": "A hidden threshold"
         },
         {
           "id": "b",
-          "text": "Panic bars"
+          "text": "A door track"
         },
         {
           "id": "c",
-          "text": "Butt hinges"
+          "text": "A hinge pin"
         },
         {
           "id": "d",
-          "text": "Door knobs"
+          "text": "Lever-operated, push-type, or U-shaped handle mechanisms"
         }
       ],
       "correct_option_id": "d",
@@ -383,17 +443,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Lever handles are required, not prohibited.",
-        "b": "Panic bars are compliant with ADA and required in high-traffic egress paths.",
-        "c": "Butt hinges are not restricted by ADA; continuous hinges are also acceptable.",
-        "correct": "ADA 2010 requires lever handles (not knobs) on all accessible routes because levers require less grip strength and can be operated with a closed fist or forearm.",
-        "takeaway": "Knobs are a common ADA violation. Always specify levers on accessible doors."
+        "a": "A hidden threshold is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "A door track is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "A hinge pin is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Lever-operated, push-type, or U-shaped handle mechanisms This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "correct": "Lever-operated, push-type, or U-shaped handle mechanisms Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "ADA 2010 Standards Sec 404.2.6 / BP 344 2024 IRR Sec 5.4.2 (easy-to-operate handles)",
+      "code_citation": "Local source boundary: BCI refined markdown lines 10452-10469.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +470,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f0edefbe6b49a3786a5144d4d704ae7a28b232bd430919f44861f5ac7c9d7b29"
+      "content_hash": "sha256:6bd2ded3db5c7763f13fccad6cc32a66c2ff2b089073151ac47f646466f9407e"
     },
     {
       "question_id": "9c9816fd-a7a9-4fd4-8f67-f9a930cd349e",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "A hospital lobby has a main entry door that opens approximately 400 times per day. Using the ANSI/BHMA cycle formula (cycles/day ÷ expected service life), which grade of hardware ensures at least 5 years of service life?",
+      "text": "A lobby door will be opened many times each day. Which BCI selection factor should control before choosing exact product data?",
       "options": [
         {
           "id": "a",
-          "text": "Grade 3 only"
+          "text": "Only whether the hardware color matches nearby furniture"
         },
         {
           "id": "b",
-          "text": "Grade 2 only"
+          "text": "Only whether the item is concealed from view"
         },
         {
           "id": "c",
-          "text": "Grade 1 only"
+          "text": "Durability in terms of anticipated frequency of use"
         },
         {
           "id": "d",
-          "text": "Grade 2 or Grade 1"
+          "text": "A cycle formula supplied by this source packet"
         }
       ],
       "correct_option_id": "c",
@@ -433,17 +501,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Grade 3 totals only 200,000 cycles, or 500 days at 400 cycles/day (insufficient).",
-        "b": "Grade 2 (minimum 400,000) provides only ~1,000 days at 400 cycles/day, or ~2.7 years, which may fail the 5‑year requirement unless a high‑end Grade 2 product is selected.",
-        "d": "Only Grade 1 guarantees the requirement; Grade 2 does not guarantee it.",
-        "correct": "At 400 cycles/day for 5 years (1,825 days), total cycles needed = 730,000. Grade 2 has a minimum rating of 400,000 cycles, but the maximum within Grade 2 can be up to 800,000; however, to \"ensure\" the 5‑year service life with the standard minimum, Grade 1 (1,000,000 cycles) is required. Grade 2 may or may not meet the requirement depending on the specific product, while Grade 1 always does.",
-        "takeaway": "High-traffic commercial spaces require Grade 1; use cycle count and expected life to justify the grade selection."
+        "a": "Only whether the hardware color matches nearby furniture is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Only whether the item is concealed from view is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "Durability in terms of anticipated frequency of use This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "d": "A cycle formula supplied by this source packet is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Durability in terms of anticipated frequency of use Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "code_citation": "Local source boundary: BCI refined markdown lines 10348-10358.",
       "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +528,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:53f45ee08b41f35d3f6b8c9855fbf9e80eb65a6cf0e96c8915fc541e3fc83214"
+      "content_hash": "sha256:86b5e0523c41af6258c4a713b6d1854ad17f5b3dc94a382597c60480a8b8bf58"
     },
     {
       "question_id": "974e116a-cda2-430c-834b-736d82703a1f",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "A fire-rated stairwell door in a commercial building fails inspection because the door closer is surface-mounted instead of concelead. Why is this a code violation?",
+      "text": "A reviewer objects only because a closer is surface-mounted rather than concealed. Which source-safe response is best?",
       "options": [
         {
           "id": "a",
-          "text": "Surface-mounted closers are not UL-listed for fire ratings, which is a requirement for compliance with fire safety standards"
+          "text": "Surface-mounted closers never exist in the BCI source."
         },
         {
           "id": "b",
-          "text": "Both surface-mounted and concealed closers can be fire-rated if listed (e.g., UL 10C). The issue is likely improper installation or lack of listing."
+          "text": "BCI lists both surface-mounted and concealed closer arrangements; exact listing or code acceptance needs the applicable manufacturer and code source."
         },
         {
           "id": "c",
-          "text": "Surface-mounted closers are more expensive, which can lead to budget overruns and non-compliance with cost management protocols"
+          "text": "A closer is the same thing as a threshold."
         },
         {
           "id": "d",
-          "text": "ADA 2010 prohibits surface-mounted closers, as they may interfere with accessibility requirements for individuals with disabilities"
+          "text": "Door closers are only for sliding doors."
         }
       ],
       "correct_option_id": "b",
@@ -483,17 +559,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Surface-mounted closers can be UL-listed; listing is not exclusive to concealed closers.",
-        "c": "Cost is not a code requirement; concealed closers are typically more expensive.",
-        "d": "ADA does not restrict closer mounting type.",
-        "correct": "Fire-rated doors require closers that are listed and labeled for fire door applications. Both surface-mounted and concealed closers can be UL 10C listed if they meet the standard. The violation likely stems from using a non‑listed closer or improper installation, not merely the mounting type.",
-        "takeaway": "Always verify that the closer is listed for fire door use and installed per manufacturer instructions. The mounting type alone does not determine code compliance."
+        "a": "Surface-mounted closers never exist in the BCI source. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "BCI lists both surface-mounted and concealed closer arrangements; exact listing or code acceptance needs the applicable manufacturer and code source. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "A closer is the same thing as a threshold. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Door closers are only for sliding doors. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "BCI lists both surface-mounted and concealed closer arrangements; exact listing or code acceptance needs the applicable manufacturer and code source. Supported by bci-5e-door-hardware-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-door-hardware-b153",
+        "checked_sources": [
+          "bci-5e-door-hardware-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "RA 9514 (Fire Code of the Philippines) and UL 10C",
+      "code_citation": "Local source boundary: BCI refined markdown lines 10505-10535.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-door-hardware-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +586,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6aa3208a6722967061b8a6d3a28da7a4bbd1653c9890befbdc4e5545c2bcb42e"
+      "content_hash": "sha256:38c9082619933efb29b1ae99ba3da59bc6e9b2e08fed6af0974184db240f9f6e"
     }
   ]
 }

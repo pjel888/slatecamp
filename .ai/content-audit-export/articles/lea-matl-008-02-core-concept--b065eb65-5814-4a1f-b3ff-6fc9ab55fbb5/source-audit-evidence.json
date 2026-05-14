@@ -1,233 +1,120 @@
 {
-  "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-079-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T06:20:00.000+08:00",
-  "target": {
-    "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
-    "slug": "lea-matl-008-02-core-concept",
-    "title": "Structural joints serve distinct purposes in building",
-    "article_folder": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
-    "normalized_sha256": "sha256:8df55d3fa1d6b77bac292c71fa5e3ca742674d0fcc5fcfd5e2b77c7d2c3a59f1",
-    "candidate_sha256": "sha256:8df55d3fa1d6b77bac292c71fa5e3ca742674d0fcc5fcfd5e2b77c7d2c3a59f1",
-    "candidate_path": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/candidate.md"
-  },
-  "classification": {
-    "topic_family": "structural_joints",
-    "local_first_batch": "079",
-    "source_sensitivity": "technical_materials",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "source_bound_materials",
-    "requires_raw_pdf_audit": true
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
-    "blockers": []
-  },
-  "checked_sources": [
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "cluster_id": "lea-matl-008-02",
+  "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+  "source_strategy": "local_first",
+  "source_count": 2,
+  "sources": [
     {
-      "source_id": "bci-5e-b079",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-      "locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction"
+      "id": "bci-5e-structural-joints-b153",
+      "title": "Building Construction Illustrated, 5th Edition - joints, connections, and movement joints",
+      "source_type": "primary_building_construction_pdf",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-structural-joints-b153.source-capture.md",
+      "local_capture_sha256": "sha256:7c718c035eb291c8b3373c5271830e9038d8f3f5abde74593618ca96f62720d0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-structural-joints-b153.refined.md",
+      "refined_capture_sha256": "sha256:3df39837f9aec1f60756d56944741da72ec5c6a229cdf07773130c301d99ea20",
+      "locator": "refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273",
+      "safe_claims": [
+        "Joints and connections strongly affect how forces transfer between structural elements and how the system performs as a whole.",
+        "Structural elements may be joined by butt joints, overlapping joints, or molded/shaped joints.",
+        "Connectors may act as a point, line, or surface; BCI gives bolt, weld, and glue as examples.",
+        "Pinned joints allow rotation but resist translation; fixed joints maintain angular relationship and resist rotation and translation.",
+        "Roller joints allow rotation and movement useful for expansion and contraction; cable anchorage resists translation only along the cable direction.",
+        "All building materials expand and contract with temperature, and some swell, shrink, or deflect; movement joints allow movement while maintaining weathertightness.",
+        "Expansion joints are continuous unobstructed slots; control joints form a plane of weakness to regulate cracking; isolation joints divide structures so differential movement or settlement can occur."
+      ],
+      "use_limits": [
+        "Do not state exact control-joint spacing, dowel spacing, seismic-frame requirements, bolt grades, or NSCP/ASTM claims from this batch.",
+        "Do not treat movement joints as the same thing as structural force-transfer connections.",
+        "Do not present general BCI concepts as final structural design for a specific building."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b079",
-      "label": "George Salvan Architectural Building Materials",
-      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-      "locator": "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355 checked by local PyMuPDF extraction"
+      "id": "salvan-structural-joints-b153",
+      "title": "George Salvan Architectural Building Materials - metals, reinforcement, plastics, and joint materials",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-structural-joints-b153.source-capture.md",
+      "local_capture_sha256": "sha256:60c5b546e5a6a742d69120b05fe7208f415e3d89bd8c8581f1606948773c333a",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-structural-joints-b153.refined.md",
+      "refined_capture_sha256": "sha256:2c1785cb1d93ac14028ba7eb0c5cacf5157152e3ac7bf7d3fafa4d105dc813e4",
+      "locator": "refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355",
+      "safe_claims": [
+        "Salvan notes corrosion-resistant metal uses, including stainless steel for exterior wall panels, frames for doors, expansion joints, flashings, copings, fascia, and gravel stops.",
+        "Salvan identifies reinforcing bars as plain or deformed, with lugs or deformations that provide anchorage in concrete.",
+        "Salvan identifies water stops and expansion-joint materials among construction uses of plastics.",
+        "Salvan describes workmanship language around mortise, tenon, splice, join, blocking, nailing, screwing, and bolting in millwork."
+      ],
+      "use_limits": [
+        "Do not infer current structural design values, seismic requirements, or code spacing from these local material notes.",
+        "Do not rely on line references for exact joint dimensions unless the capture explicitly states them.",
+        "Do not turn material examples into mandatory product specifications."
+      ],
+      "sort_order": 1
     }
   ],
-  "claims": [
+  "normalized_sha256": "sha256:fea0b82d3153dda01c5b1a73f7fd801654c853c910ff6f4c5bd820c3bce8ca92",
+  "candidate_sha256": "sha256:fea0b82d3153dda01c5b1a73f7fd801654c853c910ff6f4c5bd820c3bce8ca92",
+  "question_count": 10,
+  "question_hashes": [
     {
-      "claim_id": "lea-matl-008-02-core-concept-article-b079",
-      "claim_text": "Article lea-matl-008-02-core-concept was rewritten to the checked structural_joints source scope.",
-      "claim_type": "article_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "dc4b2ccb-c761-48dd-b4a1-ce7289b975c5",
+      "content_hash": "sha256:62fdd764bb622ec6f547750d470bacde41b2699662ee0d88a7b2b9a3bd93f68f"
     },
     {
-      "claim_id": "question-dc4b2ccb-c761-48dd-b4a1-ce7289b975c5-ALE-MATL-008-02-005-b079",
-      "claim_text": "Question dc4b2ccb-c761-48dd-b4a1-ce7289b975c5 ALE-MATL-008-02-005 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "f875ea2b-e341-47d6-a3fd-bc9527ba25b4",
+      "content_hash": "sha256:0b40df8ce1bac77be872399af184f42b15f5ab68734109fa94ab1e4e5add7043"
     },
     {
-      "claim_id": "question-f875ea2b-e341-47d6-a3fd-bc9527ba25b4-ALE-MATL-008-02-003-b079",
-      "claim_text": "Question f875ea2b-e341-47d6-a3fd-bc9527ba25b4 ALE-MATL-008-02-003 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "34066ba1-043c-468e-9c14-e1da001cbfb3",
+      "content_hash": "sha256:c61f287c516ac06b6aec3377d8b62788c9b2308f71caa2e44f1720155a44c994"
     },
     {
-      "claim_id": "question-34066ba1-043c-468e-9c14-e1da001cbfb3-ALE-MATL-008-02-009-b079",
-      "claim_text": "Question 34066ba1-043c-468e-9c14-e1da001cbfb3 ALE-MATL-008-02-009 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "4d0ba4e9-0578-43b7-b967-ff87cf040c27",
+      "content_hash": "sha256:96fe4b9dcb340f06720c9fd69c77de369196f6ffa749587e3535de51005b8dac"
     },
     {
-      "claim_id": "question-4d0ba4e9-0578-43b7-b967-ff87cf040c27-ALE-MATL-008-02-006-b079",
-      "claim_text": "Question 4d0ba4e9-0578-43b7-b967-ff87cf040c27 ALE-MATL-008-02-006 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "ba6f430c-26f3-43d2-b022-4d7be552200d",
+      "content_hash": "sha256:e17e0248a49816a99df01f8ad398f4e438767267dbece5b64980df21d6da9613"
     },
     {
-      "claim_id": "question-ba6f430c-26f3-43d2-b022-4d7be552200d-ALE-MATL-008-02-010-b079",
-      "claim_text": "Question ba6f430c-26f3-43d2-b022-4d7be552200d ALE-MATL-008-02-010 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8",
+      "content_hash": "sha256:d5ceb0d472a160fbac4734d78dd09557b061eaf6176e00d5e2fa02b8f4fd4168"
     },
     {
-      "claim_id": "question-fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8-ALE-MATL-008-02-002-b079",
-      "claim_text": "Question fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8 ALE-MATL-008-02-002 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "88765cc5-82d4-4877-9dfc-a700b7b5c4f8",
+      "content_hash": "sha256:100e496a6aa01041fd9bfc7710dcdd0b57d0ac06486de3fdc9d16968033c1b12"
     },
     {
-      "claim_id": "question-88765cc5-82d4-4877-9dfc-a700b7b5c4f8-ALE-MATL-008-02-004-b079",
-      "claim_text": "Question 88765cc5-82d4-4877-9dfc-a700b7b5c4f8 ALE-MATL-008-02-004 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "887bd3ab-f020-4174-8e3f-5efab5067597",
+      "content_hash": "sha256:0506947cfdb533f24dfc6c12d72f784b15fdbe82790641c297cfa1678a128b96"
     },
     {
-      "claim_id": "question-887bd3ab-f020-4174-8e3f-5efab5067597-ALE-MATL-008-02-001-b079",
-      "claim_text": "Question 887bd3ab-f020-4174-8e3f-5efab5067597 ALE-MATL-008-02-001 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "8b3a89a7-67c3-4291-bfcf-b1f2a228602c",
+      "content_hash": "sha256:b841966264866dce80c70932e7fb55807ecc037e42388b0903dc1d1aa7c47d49"
     },
     {
-      "claim_id": "question-8b3a89a7-67c3-4291-bfcf-b1f2a228602c-ALE-MATL-008-02-007-b079",
-      "claim_text": "Question 8b3a89a7-67c3-4291-bfcf-b1f2a228602c ALE-MATL-008-02-007 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "question-38633d41-612b-4cc2-b0c1-d28e46909051-ALE-MATL-008-02-008-b079",
-      "claim_text": "Question 38633d41-612b-4cc2-b0c1-d28e46909051 ALE-MATL-008-02-008 was rewritten to the checked structural_joints source scope.",
-      "claim_type": "question_edit_rewrite",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-        "quoted_pdf_excerpt": "allow this movement to occur"
-      },
-      "blockers": []
+      "question_id": "38633d41-612b-4cc2-b0c1-d28e46909051",
+      "content_hash": "sha256:5102472122b970d48e07996ce80d7ab0fd575a469153f2486e440b0857920d24"
     }
   ],
-  "unverified_or_rejected_claims": [],
-  "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
-  },
-  "local_first_publication": {
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "ready_for_final_publishing_review": true
-  }
+  "real_world_scenario_status": "included",
+  "exact_claim_policy": "exact legal, code, standards-grade, proprietary, or structural-capacity values omitted unless present in captured local source boundary",
+  "no_exact_code_claims": [
+    "No NSCP, ASTM bolt-grade, seismic-frame, dowel-spacing, or control-joint-spacing claim was used as an answer-key fact.",
+    "Structural force-transfer joints were kept separate from movement joints."
+  ]
 }

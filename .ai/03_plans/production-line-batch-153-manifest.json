@@ -1,0 +1,494 @@
+{
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "baseline": "9c637523d3",
+  "reservation_manifest_baseline": "d3d2ec5ee1",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T04:44:53.627Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-153-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-matl-008-01",
+    "lea-matl-008-02",
+    "lea-matl-008-03"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-matl-008-01",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "slug": "lea-matl-008-01-core-concept",
+      "title": "Door hardware",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bci-5e-door-hardware-b153",
+        "salvan-door-hardware-b153"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:65778eecb03d8cb1389048cdeebc24f43db7e3292fef2c3f212963a7ca974eee",
+      "candidate_sha256": "sha256:65778eecb03d8cb1389048cdeebc24f43db7e3292fef2c3f212963a7ca974eee",
+      "source_evidence_sha256": "sha256:e9bf44c6dbe8f0530bdf869566690249c7aa330d98334a08ebc8b12036f470b7",
+      "linked_questions_sha256": "sha256:caf781c32354d114d6adb63efc27929d6915100b717766ea84208d55e5673787",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No ANSI/BHMA grade, cycle-count, force-test, UL fire-door listing, or BP 344/ADA trigger was claimed as an answer-key fact.",
+        "Hardware choices were limited to BCI and Salvan functions, mounting choices, material/exposure considerations, and manufacturer-consultation limits."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/scoped-validation-batch-153.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/c068c19d-7e23-450c-bdbc-53852432cf2a.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/f3c6dcbe-28ad-44e1-8143-b4a6146c9e43.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/7dee3af4-e6b5-4ea8-8fde-2608e2e41713.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/3c42003d-f148-4331-9694-9f86f067021a.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/459a1bba-4de2-4235-94c5-13c15a5f9294.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/76e589b2-5b3c-4ad9-82f3-55e9cffc2f1d.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/d6811b63-ffb1-42f8-8e94-b4e867f4d60d.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/9c9816fd-a7a9-4fd4-8f67-f9a930cd349e.json",
+          ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/question-edits/974e116a-cda2-430c-834b-736d82703a1f.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-matl-008-02",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "slug": "lea-matl-008-02-core-concept",
+      "title": "Structural joints serve distinct purposes in building",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bci-5e-structural-joints-b153",
+        "salvan-structural-joints-b153"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:fea0b82d3153dda01c5b1a73f7fd801654c853c910ff6f4c5bd820c3bce8ca92",
+      "candidate_sha256": "sha256:fea0b82d3153dda01c5b1a73f7fd801654c853c910ff6f4c5bd820c3bce8ca92",
+      "source_evidence_sha256": "sha256:a6c6b595e144148589d19af74f77f50d356081c94791b07bd73f2e13225ba922",
+      "linked_questions_sha256": "sha256:f43ec7d74d055ab786ee8bc97ad8b5563ccba70c52df71b71a23be7c85c23ef4",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No NSCP, ASTM bolt-grade, seismic-frame, dowel-spacing, or control-joint-spacing claim was used as an answer-key fact.",
+        "Structural force-transfer joints were kept separate from movement joints."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/scoped-validation-batch-153.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/dc4b2ccb-c761-48dd-b4a1-ce7289b975c5.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/f875ea2b-e341-47d6-a3fd-bc9527ba25b4.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/34066ba1-043c-468e-9c14-e1da001cbfb3.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/4d0ba4e9-0578-43b7-b967-ff87cf040c27.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/ba6f430c-26f3-43d2-b022-4d7be552200d.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/88765cc5-82d4-4877-9dfc-a700b7b5c4f8.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/887bd3ab-f020-4174-8e3f-5efab5067597.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/8b3a89a7-67c3-4291-bfcf-b1f2a228602c.json",
+          ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/question-edits/38633d41-612b-4cc2-b0c1-d28e46909051.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5/compose-error.json"
+      }
+    },
+    {
+      "cluster_id": "lea-matl-008-03",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "slug": "lea-matl-008-03-core-concept",
+      "title": "Fastener Systems",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "status": "source_audited_local_first",
+      "source_ids": [
+        "bci-5e-fastener-systems-b153",
+        "salvan-fastener-systems-b153"
+      ],
+      "source_count": 2,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "normalized_sha256": "sha256:514f90aa81dd9b886344b27ee61e3a4b2daea7242ddc0597c713bb91db13ac6d",
+      "candidate_sha256": "sha256:514f90aa81dd9b886344b27ee61e3a4b2daea7242ddc0597c713bb91db13ac6d",
+      "source_evidence_sha256": "sha256:222bb19ff9fe2c0104661817402eb64644763fe01b91205d466029019f736fa7",
+      "linked_questions_sha256": "sha256:dacae4e30d7516c9993961e0cc9d0803ff14beda2b24ffbe14957e8e04075440",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "no_exact_code_claims": [
+        "No ASTM grade, tensile-strength, pull-out-capacity, NDS/ACI, proprietary anchor, or corrosion-class claim was used as an answer-key fact.",
+        "Fastener examples were limited to BCI and Salvan type, action, installation, and use-limit claims."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/scoped-validation-batch-153.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/50dc43ed-973a-4b42-9144-dd4266489810.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/b9b3fcdb-ba8c-4dc3-ae1b-5caa87c2f763.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/a859ca44-02d2-4c4a-aa47-eb1531b59303.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/2a53ef7b-88cb-4b1a-b4db-3fa74717f27e.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/ff360930-c8fc-4daa-b7ea-bbc16baf9828.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/dfffaca4-9448-498c-8e9d-20ae3529617d.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/8952cfa3-ed9a-4863-8896-902b890237c7.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/eebb183f-a0e6-4571-a8e9-3d8bd018878e.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/2ceaa0e4-8e40-42d6-8ed7-6b352fe26949.json",
+          ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/question-edits/b97f6b23-3213-4bff-831a-c1e687cfa0f0.json"
+        ],
+        "composeError": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238/compose-error.json"
+      }
+    }
+  ],
+  "source_records": {
+    "bci-5e-door-hardware-b153": {
+      "id": "bci-5e-door-hardware-b153",
+      "title": "Building Construction Illustrated, 5th Edition - door hardware",
+      "locator": "refined markdown lines 10332-10535; raw PDF pages 291-294",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "exists": true,
+        "bytes": 41001593,
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "exists": true,
+        "bytes": 1144595,
+        "sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-door-hardware-b153.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:5d92c512f823918a4b7c41289d5a19c28ba990959a15b2b4a31f6d5ac46566aa"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-door-hardware-b153.refined.md",
+        "exists": true,
+        "sha256": "sha256:9107593cc1330d4e5141be13aa12570ed6985b522ef74914c434205e6f5d54bb"
+      },
+      "source_boundary_sha256": "sha256:ddf3a4a10a80550c84441b62d486be384c26242563bdfd55c5a777ac91d0ffc5"
+    },
+    "salvan-door-hardware-b153": {
+      "id": "salvan-door-hardware-b153",
+      "title": "George Salvan Architectural Building Materials - finishing and rough hardware",
+      "locator": "refined markdown lines 5941-5960, 6117-6208, and 6486-6578; raw PDF pages 173, 177, and 181-183",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "exists": true,
+        "bytes": 51997841,
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "exists": true,
+        "bytes": 577457,
+        "sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-door-hardware-b153.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:b407065c44022304475e07c04ce18fdac48e6f81c691d20db7a330bdc09e289c"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-door-hardware-b153.refined.md",
+        "exists": true,
+        "sha256": "sha256:c6c118192977b1b4dadc8fe8d616e9bb46123dc2c1ecdeac29018a7d3b6a5525"
+      },
+      "source_boundary_sha256": "sha256:9148f43ebe129c8d74bba2fcf1bcd6ad58a67cac60bd32c5ee095a820c9a825d"
+    },
+    "bci-5e-structural-joints-b153": {
+      "id": "bci-5e-structural-joints-b153",
+      "title": "Building Construction Illustrated, 5th Edition - joints, connections, and movement joints",
+      "locator": "refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "exists": true,
+        "bytes": 41001593,
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "exists": true,
+        "bytes": 1144595,
+        "sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-structural-joints-b153.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:7c718c035eb291c8b3373c5271830e9038d8f3f5abde74593618ca96f62720d0"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-structural-joints-b153.refined.md",
+        "exists": true,
+        "sha256": "sha256:3df39837f9aec1f60756d56944741da72ec5c6a229cdf07773130c301d99ea20"
+      },
+      "source_boundary_sha256": "sha256:a714ab416988258ed009f321ea8c8af619d323b0422e3988c4bd14d7f3e7c3ff"
+    },
+    "salvan-structural-joints-b153": {
+      "id": "salvan-structural-joints-b153",
+      "title": "George Salvan Architectural Building Materials - metals, reinforcement, plastics, and joint materials",
+      "locator": "refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "exists": true,
+        "bytes": 51997841,
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "exists": true,
+        "bytes": 577457,
+        "sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-structural-joints-b153.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:60c5b546e5a6a742d69120b05fe7208f415e3d89bd8c8581f1606948773c333a"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-structural-joints-b153.refined.md",
+        "exists": true,
+        "sha256": "sha256:2c1785cb1d93ac14028ba7eb0c5cacf5157152e3ac7bf7d3fafa4d105dc813e4"
+      },
+      "source_boundary_sha256": "sha256:4e1f25951c4ed365a6f2c7ba28fb48997ad48905712554f8b95820fd84160ed5"
+    },
+    "bci-5e-fastener-systems-b153": {
+      "id": "bci-5e-fastener-systems-b153",
+      "title": "Building Construction Illustrated, 5th Edition - nails, screws, bolts, miscellaneous fastenings, and adhesives",
+      "locator": "refined markdown lines 16020-16138; raw PDF pages 436-438",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "exists": true,
+        "bytes": 41001593,
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "exists": true,
+        "bytes": 1144595,
+        "sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-fastener-systems-b153.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:e0a39c44f2b7ff30561bc119bd2e34fc5fdf2ccde283d7a078aedbfc998c96af"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-fastener-systems-b153.refined.md",
+        "exists": true,
+        "sha256": "sha256:0efef680e6f37c31f1091ec75be2c6ea4c49faa27e59f9f1ee54f4e9ad74a005"
+      },
+      "source_boundary_sha256": "sha256:7ac24a2f4ae32b25d0889c6fdd796d759864d43913be17b6c268afb532985459"
+    },
+    "salvan-fastener-systems-b153": {
+      "id": "salvan-fastener-systems-b153",
+      "title": "George Salvan Architectural Building Materials - nails, screws, washers, bolts, nuts, inserts, and rods",
+      "locator": "refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183",
+      "raw_source": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "exists": true,
+        "bytes": 51997841,
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba"
+      },
+      "refined_source": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "exists": true,
+        "bytes": 577457,
+        "sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42"
+      },
+      "capture_artifact": {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-fastener-systems-b153.source-capture.md",
+        "exists": true,
+        "sha256": "sha256:3ffbaea2992e3e34aa3d62a19c5c7c85c78e20b626918db5a43cf358ca7df4e4"
+      },
+      "refined_capture_artifact": {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-fastener-systems-b153.refined.md",
+        "exists": true,
+        "sha256": "sha256:4688732ddd695deaf2b4bcedae9a6bf14c71d4be78b208180eb7cafe28bdb646"
+      },
+      "source_boundary_sha256": "sha256:9a77dbf2cd70007da8e7f4a320a4330226dbcbe8d1a8df8bb8db171bf3a1168e"
+    }
+  },
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_preserved": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  },
+  "source_hash_checks": [
+    {
+      "source_id": "bci-5e-door-hardware-b153",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-door-hardware-b153.source-capture.md",
+      "capture_sha256": "sha256:5d92c512f823918a4b7c41289d5a19c28ba990959a15b2b4a31f6d5ac46566aa",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-door-hardware-b153.refined.md",
+      "refined_capture_sha256": "sha256:9107593cc1330d4e5141be13aa12570ed6985b522ef74914c434205e6f5d54bb",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-door-hardware-b153",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-door-hardware-b153.source-capture.md",
+      "capture_sha256": "sha256:b407065c44022304475e07c04ce18fdac48e6f81c691d20db7a330bdc09e289c",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-door-hardware-b153.refined.md",
+      "refined_capture_sha256": "sha256:c6c118192977b1b4dadc8fe8d616e9bb46123dc2c1ecdeac29018a7d3b6a5525",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-5e-structural-joints-b153",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-structural-joints-b153.source-capture.md",
+      "capture_sha256": "sha256:7c718c035eb291c8b3373c5271830e9038d8f3f5abde74593618ca96f62720d0",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-structural-joints-b153.refined.md",
+      "refined_capture_sha256": "sha256:3df39837f9aec1f60756d56944741da72ec5c6a229cdf07773130c301d99ea20",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-structural-joints-b153",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-structural-joints-b153.source-capture.md",
+      "capture_sha256": "sha256:60c5b546e5a6a742d69120b05fe7208f415e3d89bd8c8581f1606948773c333a",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-structural-joints-b153.refined.md",
+      "refined_capture_sha256": "sha256:2c1785cb1d93ac14028ba7eb0c5cacf5157152e3ac7bf7d3fafa4d105dc813e4",
+      "status": "pass"
+    },
+    {
+      "source_id": "bci-5e-fastener-systems-b153",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-fastener-systems-b153.source-capture.md",
+      "capture_sha256": "sha256:e0a39c44f2b7ff30561bc119bd2e34fc5fdf2ccde283d7a078aedbfc998c96af",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-fastener-systems-b153.refined.md",
+      "refined_capture_sha256": "sha256:0efef680e6f37c31f1091ec75be2c6ea4c49faa27e59f9f1ee54f4e9ad74a005",
+      "status": "pass"
+    },
+    {
+      "source_id": "salvan-fastener-systems-b153",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_actual_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_exists": true,
+      "raw_hash_matches": true,
+      "refined_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_actual_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_exists": true,
+      "refined_hash_matches": true,
+      "capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-fastener-systems-b153.source-capture.md",
+      "capture_sha256": "sha256:3ffbaea2992e3e34aa3d62a19c5c7c85c78e20b626918db5a43cf358ca7df4e4",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-fastener-systems-b153.refined.md",
+      "refined_capture_sha256": "sha256:4688732ddd695deaf2b4bcedae9a6bf14c71d4be78b208180eb7cafe28bdb646",
+      "status": "pass"
+    }
+  ],
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "no_stage_commit_push": true,
+    "manifest_scoped_only": true
+  },
+  "off_limits_not_touched": [
+    ".ai/00_performance",
+    ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+    ".ai/README.md",
+    ".ai/content-audit-export/sync-state.json",
+    ".ai/content-audit-export/ui-block-edit-validation.json",
+    ".hermes/skills",
+    ".ai/00_system/philip-ux-ui-calibration.md",
+    "old .ai/content-audit-export/runs/content-roundtrip-* dirs",
+    ".ai/03_plans/blocked-source-recovery/"
+  ]
+}

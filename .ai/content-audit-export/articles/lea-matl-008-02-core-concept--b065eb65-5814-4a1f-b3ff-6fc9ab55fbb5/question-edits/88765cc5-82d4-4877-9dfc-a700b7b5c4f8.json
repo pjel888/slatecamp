@@ -1,65 +1,69 @@
 {
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+  "cluster_id": "lea-matl-008-02",
   "question_id": "88765cc5-82d4-4877-9dfc-a700b7b5c4f8",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:203ec0d232e42803093b475322ab1abe0466585f420aab8fce9908b647d994af",
+  "after_hash": "sha256:100e496a6aa01041fd9bfc7710dcdd0b57d0ac06486de3fdc9d16968033c1b12",
   "baseline_hash": "sha256:203ec0d232e42803093b475322ab1abe0466585f420aab8fce9908b647d994af",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
-    "parent_article_slug": "lea-matl-008-02-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited structural_joints scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-structural-joints-b153"
+  ],
+  "reason": "Batch 153 local-first rewrite aligned to fixed reservation manifest and source boundary.",
   "proposed": {
-    "text": "What is an expansion joint?",
+    "text": "Which movement joint is a continuous, unobstructed slot between two parts of a building or structure?",
     "options": [
       {
         "id": "a",
-        "text": "A continuous unobstructed slot permitting expansion without damage"
+        "text": "Pinned structural joint"
       },
       {
         "id": "b",
-        "text": "A hinge pin in a door leaf"
+        "text": "Expansion joint"
       },
       {
         "id": "c",
-        "text": "A sheet-metal screw"
+        "text": "Cable anchorage"
       },
       {
         "id": "d",
-        "text": "A fixed window sash"
+        "text": "Point connector"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI defines expansion joints as continuous unobstructed slots that permit thermal or moisture expansion without damage.",
-    "explanation": "BCI defines expansion joints as continuous unobstructed slots that permit thermal or moisture expansion without damage.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Pinned structural joint is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "b": "Expansion joint This is the source-supported answer inside the Batch 153 local-first source boundary.",
+      "c": "Cable anchorage is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "d": "Point connector is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "correct": "Expansion joint Supported by bci-5e-structural-joints-b153.",
+      "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+      "source_boundary": "bci-5e-structural-joints-b153",
+      "checked_sources": [
+        "bci-5e-structural-joints-b153"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 9422-9428.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-153-local-first",
+      "bci-5e-structural-joints-b153"
+    ]
+  },
+  "rationale": {
+    "a": "Pinned structural joint is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "b": "Expansion joint This is the source-supported answer inside the Batch 153 local-first source boundary.",
+    "c": "Cable anchorage is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "d": "Point connector is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "correct": "Expansion joint Supported by bci-5e-structural-joints-b153.",
+    "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+    "source_boundary": "bci-5e-structural-joints-b153",
+    "checked_sources": [
+      "bci-5e-structural-joints-b153"
+    ]
   }
 }

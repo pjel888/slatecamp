@@ -1,30 +1,30 @@
 {
   "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:98b00455766122705a0a72b77ad54fadd0324da6cfaf204b5d8c28a166ca8fe0",
+  "linked_questions_hash": "sha256:f43ec7d74d055ab786ee8bc97ad8b5563ccba70c52df71b71a23be7c85c23ef4",
   "question_count": 10,
   "questions": [
     {
       "question_id": "dc4b2ccb-c761-48dd-b4a1-ce7289b975c5",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "What is an isolation joint in structural construction?",
+      "text": "What is the source-supported purpose of an isolation joint?",
       "options": [
         {
           "id": "a",
-          "text": "A joint that controls random cracking during concrete curing by allowing minor movements"
+          "text": "To act only as a line connector like a weld"
         },
         {
           "id": "b",
-          "text": "A joint that accommodates thermal movement, especially in large concrete slabs exposed to temperature variations"
+          "text": "To make two members fully fixed against rotation"
         },
         {
           "id": "c",
-          "text": "A joint that completely separates two structural systems, allowing independent movement"
+          "text": "To divide a large or complex structure into sections so differential movement or settlement can occur"
         },
         {
           "id": "d",
-          "text": "A joint that transfers shear loads between concrete sections, ensuring structural integrity under lateral forces"
+          "text": "To replace all weathertightness detailing"
         }
       ],
       "correct_option_id": "c",
@@ -33,17 +33,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That is a control joint function.",
-        "b": "That is an expansion joint function.",
-        "d": "That is a construction joint function via dowel bars.",
-        "correct": "Isolation joints (or isolation bearings) provide complete separation between adjacent structures, allowing independent vertical and lateral movement without rigid connection.",
-        "takeaway": "Isolation = complete separation (used between new additions and existing buildings). Think 'no connection at all.'"
+        "a": "To act only as a line connector like a weld is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "To make two members fully fixed against rotation is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "To divide a large or complex structure into sections so differential movement or settlement can occur This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "d": "To replace all weathertightness detailing is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "To divide a large or complex structure into sections so differential movement or settlement can occur Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
-      "explanation": "That is a control joint function. That is an expansion joint function. That is a construction joint function via dowel bars. Isolation joints (or isolation bearings) provide complete separation between adjacent structures, allowing independent vertical and lateral movement without rigid connection. Isolation = complete separation (used between new additions and existing buildings). Think 'no connection at all.'",
-      "code_citation": "NSCP 2015 Structural Design Provisions",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9436-9443.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -52,29 +60,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:15:14.306445+00:00",
-      "content_hash": "sha256:2ac855ef53ca68c1ff231d71d23e49fc1f42f6002a5ee7af5a5f9b07e2a9177a"
+      "content_hash": "sha256:62fdd764bb622ec6f547750d470bacde41b2699662ee0d88a7b2b9a3bd93f68f"
     },
     {
       "question_id": "f875ea2b-e341-47d6-a3fd-bc9527ba25b4",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "What is the typical spacing interval for control joints in concrete slabs?",
+      "text": "Which statement best describes a control joint within this source packet?",
       "options": [
         {
           "id": "a",
-          "text": "10 to 15 feet"
+          "text": "It is a cable anchorage that resists translation only along the cable."
         },
         {
           "id": "b",
-          "text": "15 to 25 feet"
+          "text": "It forms a plane of weakness to regulate the location and amount of cracking."
         },
         {
           "id": "c",
-          "text": "25 to 40 feet"
+          "text": "It is a bolt grade requirement."
         },
         {
           "id": "d",
-          "text": "40 to 60 feet"
+          "text": "It is a permanent prohibition against movement."
         }
       ],
       "correct_option_id": "b",
@@ -83,17 +91,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "10-15 feet is too close; closer spacing increases construction costs unnecessarily.",
-        "c": "25-40 feet exceeds typical control joint spacing; expansion joints are spaced much farther (100+ ft) or per thermal analysis.",
-        "d": "40-60 feet exceeds standard control joint intervals.",
-        "correct": "Control joints are spaced 15 to 25 feet apart to manage drying shrinkage and prevent random cracking. Spacing depends on slab thickness and reinforcement.",
-        "takeaway": "Control joints (15-25 ft) are closer than expansion joints (25-40 ft) because shrinkage is more aggressive than thermal movement."
+        "a": "It is a cable anchorage that resists translation only along the cable. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "It forms a plane of weakness to regulate the location and amount of cracking. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "It is a bolt grade requirement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "It is a permanent prohibition against movement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "It forms a plane of weakness to regulate the location and amount of cracking. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Concrete Design Provisions",
+      "code_citation": "Local source boundary: BCI refined markdown lines 5215-5238 and 9429-9435.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -102,29 +118,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:13610a7e9645deaf602f1c1dbd6c2ee4008b6e1f02019a6c6af02c7488d3568a"
+      "content_hash": "sha256:0b40df8ce1bac77be872399af184f42b15f5ab68734109fa94ab1e4e5add7043"
     },
     {
       "question_id": "34066ba1-043c-468e-9c14-e1da001cbfb3",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "What is the standard grade of structural bolts specified in NSCP 2015 for most structural steel connections?",
+      "text": "BCI gives which example of a point connector?",
       "options": [
         {
           "id": "a",
-          "text": "ASTM A307 (60 ksi)"
+          "text": "Glue"
         },
         {
           "id": "b",
-          "text": "ASTM A325 (120 ksi)"
+          "text": "Bolt"
         },
         {
           "id": "c",
-          "text": "ASTM A490 (150 ksi)"
+          "text": "Weld"
         },
         {
           "id": "d",
-          "text": "ASTM A36 (36 ksi)"
+          "text": "Backer rod"
         }
       ],
       "correct_option_id": "b",
@@ -133,17 +149,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "A307 is a general-purpose low-strength bolt; inadequate for structural work.",
-        "c": "A490 is typically reserved for critical connections in high-stress situations.",
-        "d": "A36 is a structural steel grade, not a bolt specification.",
-        "correct": "ASTM A325 bolts with 120,000 psi tensile strength are the standard structural bolt grade for most applications. A490 is reserved for ultra-high-stress applications.",
-        "takeaway": "A325 = standard structural bolt; A490 = ultra-high-stress only. Verify the code section for any exceptions."
+        "a": "Glue is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Bolt This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Weld is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Backer rod is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Bolt Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Steel Design Provisions",
+      "code_citation": "Local source boundary: BCI refined markdown lines 2147-2152.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -152,25 +176,25 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5714c57fd4e76292e888e2c9b201221c2396f52d08ef0be506017aa447429bbe"
+      "content_hash": "sha256:c61f287c516ac06b6aec3377d8b62788c9b2308f71caa2e44f1720155a44c994"
     },
     {
       "question_id": "4d0ba4e9-0578-43b7-b967-ff87cf040c27",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "A new office building addition is being connected to an existing structure. The soil beneath each building has different bearing capacity, leading to potential differential settlement. Which joint type is appropriate?",
+      "text": "A new addition adjoins an existing structure and differential movement is expected. Which movement-joint category best fits the source logic?",
       "options": [
         {
           "id": "a",
-          "text": "Expansion joint"
+          "text": "Expansion joint only for color separation"
         },
         {
           "id": "b",
-          "text": "Control joint"
+          "text": "Control joint only for surface scoring"
         },
         {
           "id": "c",
-          "text": "Construction joint"
+          "text": "Point connector"
         },
         {
           "id": "d",
@@ -183,17 +207,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Expansion joints handle thermal movement, not settlement accommodation.",
-        "b": "Control joints manage shrinkage cracking, not differential settlement.",
-        "c": "Construction joints use dowels to transfer load; they do not allow independent movement.",
-        "correct": "An isolation joint (or isolation bearing) allows independent settlement of each building without transferring loads or restricting movement. Rigid connections would crack under differential settlement.",
-        "takeaway": "When in doubt about differential settlement or incompatible structures, specify isolation joints with bearing pads."
+        "a": "Expansion joint only for color separation is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Control joint only for surface scoring is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "Point connector is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Isolation joint This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "correct": "Isolation joint Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
-      "explanation": "Expansion joints handle thermal movement, not settlement accommodation. Control joints manage shrinkage cracking, not differential settlement. Construction joints use dowels to transfer load; they do not allow independent movement. An isolation joint (or isolation bearing) allows independent settlement of each building without transferring loads or restricting movement. Rigid connections would crack under differential settlement. When in doubt about differential settlement or incompatible structures, specify isolation joints with bearing pads.",
-      "code_citation": "NSCP 2015 Structural Design Provisions",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9402-9443.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -202,29 +234,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:15:13.954385+00:00",
-      "content_hash": "sha256:539fc2824250cbce945587b97369943aa0917ce552282d089597522bd513ad28"
+      "content_hash": "sha256:96fe4b9dcb340f06720c9fd69c77de369196f6ffa749587e3535de51005b8dac"
     },
     {
       "question_id": "ba6f430c-26f3-43d2-b022-4d7be552200d",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "During LEA exam analysis, you observe that dowel bars in construction joints of a concrete slab are placed on the top surface instead of at mid-depth. What is the consequence of this error?",
+      "text": "A movement joint in an exterior assembly must permit movement. What second requirement does BCI keep in view?",
       "options": [
         {
           "id": "a",
-          "text": "The dowels will prevent thermal expansion; the slab will buckle, leading to potential structural failure"
+          "text": "It must transfer all bending moments across the joint."
         },
         {
           "id": "b",
-          "text": "The dowels will be less effective at transferring shear; differential settlement and spalling can occur."
+          "text": "It should maintain the weathertightness of the construction."
         },
         {
           "id": "c",
-          "text": "The dowels will rust faster due to exposure, increasing maintenance costs and reducing lifespan"
+          "text": "It should eliminate all sealant and filler."
         },
         {
           "id": "d",
-          "text": "The placement has no structural impact, as dowels are not critical in this context"
+          "text": "It must be treated as a screw connection."
         }
       ],
       "correct_option_id": "b",
@@ -233,17 +265,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Dowel placement does not affect thermal expansion accommodation.",
-        "c": "Corrosion is a concern but not the primary structural consequence.",
-        "d": "Dowel placement is critical to structural performance.",
-        "correct": "Mid-depth placement ensures dowels are fully effective at transferring shear between the two concrete pours. Surface placement leaves most of the slab thickness unbraced, reducing shear capacity and allowing relative movement.",
-        "takeaway": "Dowel bars must be at mid-depth for full effectiveness. Surface placement = construction defect."
+        "a": "It must transfer all bending moments across the joint. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "It should maintain the weathertightness of the construction. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "It should eliminate all sealant and filler. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "It must be treated as a screw connection. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "It should maintain the weathertightness of the construction. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
-      "explanation": "Dowel placement does not affect thermal expansion accommodation. Corrosion is a concern but not the primary structural consequence. Dowel placement is critical to structural performance. Mid-depth placement ensures dowels are fully effective at transferring shear between the two concrete pours. Surface placement leaves most of the slab thickness unbraced, reducing shear capacity and allowing relative movement. Dowel bars must be at mid-depth for full effectiveness. Surface placement = construction defect.",
-      "code_citation": "NSCP 2015 Concrete Design Provisions and ACI 318",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9402-9421.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -252,29 +292,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:15:14.103618+00:00",
-      "content_hash": "sha256:79909b490ec43f8e06a8f0ddfe4b0a4b2ea750a77119441bd42a7a0a801fbb48"
+      "content_hash": "sha256:e17e0248a49816a99df01f8ad398f4e438767267dbece5b64980df21d6da9613"
     },
     {
       "question_id": "fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "A concrete parking slab 100 feet long experiences a 50-degree Fahrenheit temperature swing. Using the thermal expansion coefficient of 6 × 10⁻⁶ in/in/°F for concrete, what is the expansion movement and required joint width?",
+      "text": "A long building surface is expected to expand and contract with temperature and moisture. Which answer stays inside the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "0.18 inches movement; 0.36 inch joint"
+          "text": "Do not allow any movement because all materials stay dimensionally fixed."
         },
         {
           "id": "b",
-          "text": "0.36 inches movement; 0.72 inch joint"
+          "text": "Use movement-joint logic so expansion or contraction can occur without damaging the materials."
         },
         {
           "id": "c",
-          "text": "0.72 inches movement; 1.44 inch joint"
+          "text": "Use only a glued surface connector for all movement."
         },
         {
           "id": "d",
-          "text": "1.0 inch movement; 2.0 inch joint"
+          "text": "Calculate a final joint width from this batch without project data."
         }
       ],
       "correct_option_id": "b",
@@ -283,17 +323,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Uses incorrect coefficient or calculation error.",
-        "c": "Doubles the correct joint width; calculation error.",
-        "d": "Over-estimates by 3×; likely assumes higher temperature change.",
-        "correct": "Thermal movement ΔL = α × L × ΔT = (6×10⁻⁶ in/in/°F) × (100 ft × 12 in/ft) × 50°F = 6×10⁻⁶ × 1,200 × 50 = 0.36 inches. Joint width must accommodate anticipated movement range (typically ±ΔL plus safety factor) based on design specifications.",
-        "takeaway": "Use the formula: ΔL = α × L × ΔT, where α = 6×10⁻⁶ in/in/°F for concrete. Joint width accommodates movement in both directions (±ΔL), so total width ≈ 2 × ΔL."
+        "a": "Do not allow any movement because all materials stay dimensionally fixed. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Use only a glued surface connector for all movement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Calculate a final joint width from this batch without project data. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Concrete Design Provisions and ASTM thermal expansion standards",
+      "code_citation": "Local source boundary: BCI refined markdown lines 9402-9435.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -302,29 +350,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f608d4c423744aa98666342ba33ef93bc11905a95f212605a1f01de2a1fd9bd7"
+      "content_hash": "sha256:d5ceb0d472a160fbac4734d78dd09557b061eaf6176e00d5e2fa02b8f4fd4168"
     },
     {
       "question_id": "88765cc5-82d4-4877-9dfc-a700b7b5c4f8",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "A construction joint in a concrete foundation occurs where concrete is poured in two stages. Dowel bars are placed at mid-depth horizontally. What is the dowel bar spacing requirement?",
+      "text": "Which movement joint is a continuous, unobstructed slot between two parts of a building or structure?",
       "options": [
         {
           "id": "a",
-          "text": "6 inches, which is typically too close for most applications"
+          "text": "Pinned structural joint"
         },
         {
           "id": "b",
-          "text": "12 to 18 inches"
+          "text": "Expansion joint"
         },
         {
           "id": "c",
-          "text": "24 inches, which may be used in specific structural conditions"
+          "text": "Cable anchorage"
         },
         {
           "id": "d",
-          "text": "36 inches, which is generally too wide for effective load transfer"
+          "text": "Point connector"
         }
       ],
       "correct_option_id": "b",
@@ -333,17 +381,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "6 inches is unnecessarily close and increases cost.",
-        "c": "24 inches spacing is too wide; shear transfer capacity is compromised.",
-        "d": "36 inches exceeds safe spacing for dowel load transfer.",
-        "correct": "Dowel bar spacing (typically 6-24 inches) depends on shear demand and bar size per design. and prevents differential settlement.",
-        "takeaway": "Dowel spacing directly affects shear transfer capacity. Tighter spacing (12 in) is preferred in high-load applications."
+        "a": "Pinned structural joint is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Expansion joint This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Cable anchorage is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Point connector is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Expansion joint Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
-      "explanation": "6 inches is unnecessarily close and increases cost. 24 inches spacing is too wide; shear transfer capacity is compromised. 36 inches exceeds safe spacing for dowel load transfer. Dowel bar spacing (typically 6-24 inches) depends on shear demand and bar size per design. and prevents differential settlement. Dowel spacing directly affects shear transfer capacity. Tighter spacing (12 in) is preferred in high-load applications.",
-      "code_citation": "NSCP 2015 Concrete Design Provisions",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9422-9428.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -352,29 +408,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:15:14.583855+00:00",
-      "content_hash": "sha256:203ec0d232e42803093b475322ab1abe0466585f420aab8fce9908b647d994af"
+      "content_hash": "sha256:100e496a6aa01041fd9bfc7710dcdd0b57d0ac06486de3fdc9d16968033c1b12"
     },
     {
       "question_id": "887bd3ab-f020-4174-8e3f-5efab5067597",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "What is the primary function of an expansion joint in concrete construction?",
+      "text": "What is the primary source-supported function of an expansion joint?",
       "options": [
         {
           "id": "a",
-          "text": "To control random cracking during concrete curing, which is a secondary benefit"
+          "text": "To act as a weld between steel members"
         },
         {
           "id": "b",
-          "text": "To accommodate thermal movement caused by temperature changes"
+          "text": "To permit thermal or moisture expansion without damage to either part"
         },
         {
           "id": "c",
-          "text": "To transfer shear loads between adjacent concrete sections, which is not its primary function"
+          "text": "To make the joint fully rigid against rotation"
         },
         {
           "id": "d",
-          "text": "To separate incompatible materials, which is a different type of joint function"
+          "text": "To replace all structural connectors"
         }
       ],
       "correct_option_id": "b",
@@ -383,17 +439,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That is the function of control joints, not expansion joints.",
-        "c": "Dowel bars in construction joints transfer shear; expansion joints are for movement accommodation.",
-        "d": "That is the function of isolation joints.",
-        "correct": "Expansion joints allow continuous gaps that accommodate thermal expansion as temperature rises, preventing stress buildup and buckling.",
-        "takeaway": "Expansion = thermal movement; Control = drying shrinkage; Construction = shear transfer; Isolation = complete separation."
+        "a": "To act as a weld between steel members is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "To permit thermal or moisture expansion without damage to either part This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "To make the joint fully rigid against rotation is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "To replace all structural connectors is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "To permit thermal or moisture expansion without damage to either part Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
-      "explanation": "That is the function of control joints, not expansion joints. Dowel bars in construction joints transfer shear; expansion joints are for movement accommodation. That is the function of isolation joints. Expansion joints allow continuous gaps that accommodate thermal expansion as temperature rises, preventing stress buildup and buckling. Expansion = thermal movement; Control = drying shrinkage; Construction = shear transfer; Isolation = complete separation.",
-      "code_citation": "NSCP 2015 Concrete Design Provisions",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9422-9428.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -402,29 +466,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:15:14.729809+00:00",
-      "content_hash": "sha256:748eaa49cfb0a1acbf30248b0902da68f528352b3fc23360b674ad272beb4a82"
+      "content_hash": "sha256:0506947cfdb533f24dfc6c12d72f784b15fdbe82790641c297cfa1678a128b96"
     },
     {
       "question_id": "8b3a89a7-67c3-4291-bfcf-b1f2a228602c",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "In steel construction, what is the primary difference between a moment connection and a shear connection?",
+      "text": "What is the key behavior difference between a fixed joint and a pinned joint in BCI?",
       "options": [
         {
           "id": "a",
-          "text": "Moment connections are more economical; shear connections are stronger, providing enhanced load-bearing capacity"
+          "text": "Fixed joints allow all movement; pinned joints resist all rotation and translation."
         },
         {
           "id": "b",
-          "text": "Moment connections transfer bending moments and full member strength; shear connections transfer only vertical loads and allow rotation."
+          "text": "Fixed joints maintain angular relationship and resist rotation and translation; pinned joints allow rotation but resist translation."
         },
         {
           "id": "c",
-          "text": "Moment connections are bolted; shear connections are welded, affecting the ease of assembly and disassembly"
+          "text": "Fixed joints are always adhesive-only; pinned joints are always waterproofing-only."
         },
         {
           "id": "d",
-          "text": "Moment connections are used in residential buildings; shear connections are used in commercial buildings, based on structural requirements"
+          "text": "There is no behavioral difference."
         }
       ],
       "correct_option_id": "b",
@@ -433,17 +497,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Moment connections are more expensive, not economical.",
-        "c": "Both types can be bolted or welded; fastening method is independent of connection type.",
-        "d": "Both types are used in all building classifications depending on structural demands.",
-        "correct": "Moment connections are rigid and transfer full bending moments required for lateral stability (e.g., seismic frames). Shear (simple) connections allow rotation and transfer only gravity loads.",
-        "takeaway": "Moment = rigid (seismic); Shear = simple (gravity). Seismic zones demand moment connections."
+        "a": "Fixed joints allow all movement; pinned joints resist all rotation and translation. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Fixed joints maintain angular relationship and resist rotation and translation; pinned joints allow rotation but resist translation. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Fixed joints are always adhesive-only; pinned joints are always waterproofing-only. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "There is no behavioral difference. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Fixed joints maintain angular relationship and resist rotation and translation; pinned joints allow rotation but resist translation. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
-      "explanation": "Moment connections are more expensive, not economical. Both types can be bolted or welded; fastening method is independent of connection type. Both types are used in all building classifications depending on structural demands. Moment connections are rigid and transfer full bending moments required for lateral stability (e.g., seismic frames). Shear (simple) connections allow rotation and transfer only gravity loads. Moment = rigid (seismic); Shear = simple (gravity). Seismic zones demand moment connections.",
-      "code_citation": "NSCP 2015 Steel Design Provisions",
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 2153-2160.",
       "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -452,29 +524,29 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-05-06T15:15:14.87812+00:00",
-      "content_hash": "sha256:87f9e9a928e90c49470f8b08e1e60b8c45a039faeb0bd325e0ad2f0477c97f5a"
+      "content_hash": "sha256:b841966264866dce80c70932e7fb55807ecc037e42388b0903dc1d1aa7c47d49"
     },
     {
       "question_id": "38633d41-612b-4cc2-b0c1-d28e46909051",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "A moment-resisting special steel frame in a seismic zone must transfer bending moments to resist lateral loads. What type of connection is required, and why would a simple (shear) connection fail?",
+      "text": "A connection must maintain the angular relationship between joined elements and resist rotation. Which source-supported behavior is required?",
       "options": [
         {
           "id": "a",
-          "text": "Shear connection; moment transfer is not essential in seismic design, which is a common misconception."
+          "text": "Expansion joint behavior"
         },
         {
           "id": "b",
-          "text": "Pin connection; it allows flexible rotation, which is beneficial in non-seismic applications but not suitable for seismic zones."
+          "text": "Pinned behavior only"
         },
         {
           "id": "c",
-          "text": "Moment connection; shear connections do not restrain rotation and cannot transfer bending moments required for lateral stability."
+          "text": "Fixed or rigid joint behavior"
         },
         {
           "id": "d",
-          "text": "Expansion joint; it allows structural movement, which is useful for thermal expansion but not for resisting seismic forces."
+          "text": "Control joint behavior"
         }
       ],
       "correct_option_id": "c",
@@ -483,17 +555,25 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Moment transfer is critical in seismic design; without it, lateral stability fails.",
-        "b": "Pin connections are even worse; they have zero moment capacity.",
-        "d": "Expansion joints are for material accommodation, not structural connections.",
-        "correct": "Moment connections are rigidly welded or bolted to transfer bending moments required to develop moment resistance. Shear connections with pin-type behavior allow rotation, preventing moment transfer, and the frame would collapse under lateral load.",
-        "takeaway": "In seismic zones, always specify moment connections. Shear connections in lateral frames = automatic failure."
+        "a": "Expansion joint behavior is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Pinned behavior only is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "Fixed or rigid joint behavior This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "d": "Control joint behavior is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Fixed or rigid joint behavior Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 Seismic Design Category Provisions",
+      "code_citation": "Local source boundary: BCI refined markdown lines 2153-2158.",
       "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
@@ -502,7 +582,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0e36614a1dd7281552c3b328570d4555719408cc97049380c23855d29b97d7f2"
+      "content_hash": "sha256:5102472122b970d48e07996ce80d7ab0fd575a469153f2486e440b0857920d24"
     }
   ]
 }

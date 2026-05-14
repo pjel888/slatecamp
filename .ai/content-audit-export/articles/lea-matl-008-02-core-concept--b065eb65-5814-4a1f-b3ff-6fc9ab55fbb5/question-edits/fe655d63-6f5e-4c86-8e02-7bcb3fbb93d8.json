@@ -1,65 +1,69 @@
 {
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+  "cluster_id": "lea-matl-008-02",
   "question_id": "fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:f608d4c423744aa98666342ba33ef93bc11905a95f212605a1f01de2a1fd9bd7",
+  "after_hash": "sha256:d5ceb0d472a160fbac4734d78dd09557b061eaf6176e00d5e2fa02b8f4fd4168",
   "baseline_hash": "sha256:f608d4c423744aa98666342ba33ef93bc11905a95f212605a1f01de2a1fd9bd7",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
-    "parent_article_slug": "lea-matl-008-02-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited structural_joints scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-structural-joints-b153"
+  ],
+  "reason": "Batch 153 local-first rewrite aligned to fixed reservation manifest and source boundary.",
   "proposed": {
-    "text": "Why are movement joints needed?",
+    "text": "A long building surface is expected to expand and contract with temperature and moisture. Which answer stays inside the checked source?",
     "options": [
       {
         "id": "a",
-        "text": "Materials expand, contract, swell, shrink, deflect, or settle and need room to move."
+        "text": "Do not allow any movement because all materials stay dimensionally fixed."
       },
       {
         "id": "b",
-        "text": "Door handles need polished finishes only."
+        "text": "Use movement-joint logic so expansion or contraction can occur without damaging the materials."
       },
       {
         "id": "c",
-        "text": "Plastic laminate needs no core."
+        "text": "Use only a glued surface connector for all movement."
       },
       {
         "id": "d",
-        "text": "Screws have no threads."
+        "text": "Calculate a final joint width from this batch without project data."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI explains that materials move due to temperature, moisture, loading, and settlement effects.",
-    "explanation": "BCI explains that materials move due to temperature, moisture, loading, and settlement effects.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Do not allow any movement because all materials stay dimensionally fixed. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "b": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+      "c": "Use only a glued surface connector for all movement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "d": "Calculate a final joint width from this batch without project data. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "correct": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. Supported by bci-5e-structural-joints-b153.",
+      "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+      "source_boundary": "bci-5e-structural-joints-b153",
+      "checked_sources": [
+        "bci-5e-structural-joints-b153"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 9402-9435.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-153-local-first",
+      "bci-5e-structural-joints-b153"
+    ]
+  },
+  "rationale": {
+    "a": "Do not allow any movement because all materials stay dimensionally fixed. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "b": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+    "c": "Use only a glued surface connector for all movement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "d": "Calculate a final joint width from this batch without project data. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "correct": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. Supported by bci-5e-structural-joints-b153.",
+    "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+    "source_boundary": "bci-5e-structural-joints-b153",
+    "checked_sources": [
+      "bci-5e-structural-joints-b153"
+    ]
   }
 }

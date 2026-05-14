@@ -1,65 +1,69 @@
 {
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+  "cluster_id": "lea-matl-008-03",
   "question_id": "b97f6b23-3213-4bff-831a-c1e687cfa0f0",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:250f4637c81bda34f7b768bee2c7340cf2dca75c3863eecda39c37513d8b3a9d",
+  "after_hash": "sha256:73ef08c580df3e53399fa5a77ac1e0d690f72dda7425384cd3e632b768366961",
   "baseline_hash": "sha256:250f4637c81bda34f7b768bee2c7340cf2dca75c3863eecda39c37513d8b3a9d",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-03-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "f34aade8-a870-458c-9609-562419eb1238",
-    "parent_article_slug": "lea-matl-008-03-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited fastener_systems scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-fastener-systems-b153"
+  ],
+  "reason": "Batch 153 local-first rewrite aligned to fixed reservation manifest and source boundary.",
   "proposed": {
-    "text": "When is a carriage bolt useful?",
+    "text": "When are carriage bolts identified as useful in BCI?",
     "options": [
       {
         "id": "a",
-        "text": "Where the head may be inaccessible during tightening"
+        "text": "When a fastener must work as an adhesive"
       },
       {
         "id": "b",
-        "text": "Only where no nut is used"
+        "text": "Where the head may be inaccessible during tightening"
       },
       {
         "id": "c",
-        "text": "Only in gypsum plaster"
+        "text": "Only when a toggle wing opens behind a hollow wall"
       },
       {
         "id": "d",
-        "text": "Only as a window muntin"
+        "text": "Only when no drilled hole is present"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI states carriage bolts are used where the head may be inaccessible during tightening.",
-    "explanation": "BCI states carriage bolts are used where the head may be inaccessible during tightening.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "When a fastener must work as an adhesive is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "b": "Where the head may be inaccessible during tightening This is the source-supported answer inside the Batch 153 local-first source boundary.",
+      "c": "Only when a toggle wing opens behind a hollow wall is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "d": "Only when no drilled hole is present is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "correct": "Where the head may be inaccessible during tightening Supported by bci-5e-fastener-systems-b153.",
+      "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+      "source_boundary": "bci-5e-fastener-systems-b153",
+      "checked_sources": [
+        "bci-5e-fastener-systems-b153"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 16081-16092.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-153-local-first",
+      "bci-5e-fastener-systems-b153"
+    ]
+  },
+  "rationale": {
+    "a": "When a fastener must work as an adhesive is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "b": "Where the head may be inaccessible during tightening This is the source-supported answer inside the Batch 153 local-first source boundary.",
+    "c": "Only when a toggle wing opens behind a hollow wall is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "d": "Only when no drilled hole is present is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "correct": "Where the head may be inaccessible during tightening Supported by bci-5e-fastener-systems-b153.",
+    "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+    "source_boundary": "bci-5e-fastener-systems-b153",
+    "checked_sources": [
+      "bci-5e-fastener-systems-b153"
+    ]
   }
 }

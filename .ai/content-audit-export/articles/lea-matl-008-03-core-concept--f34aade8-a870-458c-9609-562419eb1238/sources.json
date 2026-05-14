@@ -1,32 +1,79 @@
 {
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
   "article_id": "f34aade8-a870-458c-9609-562419eb1238",
-  "hash_algorithm": "sha256",
-  "sources_hash": "sha256:53f14899550005ebc0f83ae3a220418a042970d0108fa714d7ee43933d6aba28",
+  "cluster_id": "lea-matl-008-03",
+  "slug": "lea-matl-008-03-core-concept",
+  "source_strategy": "local_first",
   "source_count": 2,
+  "sources_hash": "sha256:46e9161e85ec3d0ce1b5650b0e016b226dbc3a5e9a07203663d87182a708a5ce",
   "sources": [
     {
-      "source_id": "bci-5e-b079",
-      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
-      "label": "Building Construction Illustrated, 5th Edition",
-      "url": null,
+      "id": "bci-5e-fastener-systems-b153",
+      "title": "Building Construction Illustrated, 5th Edition - nails, screws, bolts, miscellaneous fastenings, and adhesives",
       "source_type": "primary_building_construction_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-079-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-12T06:20:00.000+08:00",
-      "updated_at": "2026-05-12T06:20:00.000+08:00"
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_artifact_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_artifact_bytes": 41001593,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_artifact_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "refined_artifact_bytes": 1144595,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/bci-5e-fastener-systems-b153.source-capture.md",
+      "local_capture_sha256": "sha256:e0a39c44f2b7ff30561bc119bd2e34fc5fdf2ccde283d7a078aedbfc998c96af",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/bci-5e-fastener-systems-b153.refined.md",
+      "refined_capture_sha256": "sha256:0efef680e6f37c31f1091ec75be2c6ea4c49faa27e59f9f1ee54f4e9ad74a005",
+      "locator": "refined markdown lines 16020-16138; raw PDF pages 436-438",
+      "safe_claims": [
+        "Nails may be mild steel, aluminum, copper, brass, zinc, or stainless steel; the metal should be compatible with secured materials to avoid loss of holding power and staining.",
+        "Nail lengths are designated by penny and should be about three times the thickness of the material being secured.",
+        "Large diameter nails are used for heavy work; lighter nails are used for finish work; finish-nail heads are only slightly larger than the shaft.",
+        "Serrated, barbed, threaded, fluted, twisted, cement-coated, and zinc-coated shanks change grip or corrosion resistance.",
+        "Screws have tapered, helically threaded shanks; threads give them greater holding power than nails and make them easier to remove.",
+        "Wood screws should be slightly shorter than the combined board thickness, with part of the screw penetrating the base material; ordinary screw holes should be predrilled.",
+        "Bolts are threaded metal pins or rods inserted through holes and secured with a mating nut; carriage bolts suit cases where the head may be inaccessible during tightening.",
+        "Washers distribute pressure, prevent leakage, relieve friction, or insulate incompatible materials.",
+        "Expansion bolts and shields engage drilled holes in masonry or concrete; toggle bolts open behind hollow wall surfaces; rivets permanently join steel members; adhesives bond surfaces and require manufacturer recommendations."
+      ],
+      "use_limits": [
+        "Do not claim exact pull-out strengths, ASTM bolt grades, proprietary anchor capacities, NDS/ACI calculations, or structural design capacities from this batch.",
+        "Do not use general fastener descriptions as final engineering design.",
+        "Do not ignore manufacturer data for adhesives, anchors, or specialty fasteners."
+      ],
+      "sort_order": 0
     },
     {
-      "source_id": "salvan-building-materials-b079",
-      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
-      "label": "George Salvan Architectural Building Materials",
-      "url": null,
-      "source_type": "primary_building_materials_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-079-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-12T06:20:00.000+08:00",
-      "updated_at": "2026-05-12T06:20:00.000+08:00"
+      "id": "salvan-fastener-systems-b153",
+      "title": "George Salvan Architectural Building Materials - nails, screws, washers, bolts, nuts, inserts, and rods",
+      "source_type": "local_building_materials_reference",
+      "raw_artifact_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_artifact_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "raw_artifact_bytes": 51997841,
+      "refined_artifact_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_artifact_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "refined_artifact_bytes": 577457,
+      "local_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-153/salvan-fastener-systems-b153.source-capture.md",
+      "local_capture_sha256": "sha256:3ffbaea2992e3e34aa3d62a19c5c7c85c78e20b626918db5a43cf358ca7df4e4",
+      "refined_capture_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-153/salvan-fastener-systems-b153.refined.md",
+      "refined_capture_sha256": "sha256:4688732ddd695deaf2b4bcedae9a6bf14c71d4be78b208180eb7cafe28bdb646",
+      "locator": "refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183",
+      "safe_claims": [
+        "Salvan records rough-hardware vocabulary for common wire nails, box nails, finishing nails, casing nails, masonry nails, screws, washers, bolts, nuts, concrete inserts, hook bolts, and threaded rods.",
+        "Salvan repeats the practical nail-length rule: choose a nail about three times longer than the top thickness being fastened.",
+        "Salvan classifies screws by gauge, length, head type, and metallic makeup.",
+        "Salvan describes bolts as threaded shafts that receive nuts after being pushed through drilled holes.",
+        "Salvan identifies concrete inserts as anchors or supports for attached loads in walls or ceilings."
+      ],
+      "use_limits": [
+        "Do not use old line drawings as current structural capacity data.",
+        "Do not restore exact pull-out values, proprietary fastener ratings, or corrosion classes from this source.",
+        "Do not treat rough-hardware vocabulary as a substitute for project specifications."
+      ],
+      "sort_order": 1
     }
+  ],
+  "source_safe_real_world_scenario": "included",
+  "exact_claim_limits": [
+    "No ASTM grade, tensile-strength, pull-out-capacity, NDS/ACI, proprietary anchor, or corrosion-class claim was used as an answer-key fact.",
+    "Fastener examples were limited to BCI and Salvan type, action, installation, and use-limit claims."
   ]
 }

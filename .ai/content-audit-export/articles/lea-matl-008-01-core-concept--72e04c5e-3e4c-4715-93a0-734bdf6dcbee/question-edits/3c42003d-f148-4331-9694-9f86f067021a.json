@@ -1,65 +1,69 @@
 {
+  "batch": 153,
+  "batch_id": "source-audited-batch-153-local-first",
+  "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+  "cluster_id": "lea-matl-008-01",
   "question_id": "3c42003d-f148-4331-9694-9f86f067021a",
+  "status": "rewritten_source_audited",
+  "before_hash": "sha256:f40596099211afbd4611c847d29ba9083b8cd65c0b51a391f672f4773644d1d0",
+  "after_hash": "sha256:07499f300dd9f95d139f991dca7883089a168e608f02b17c828e322331b4542a",
   "baseline_hash": "sha256:f40596099211afbd4611c847d29ba9083b8cd65c0b51a391f672f4773644d1d0",
-  "action": "replace",
-  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-01-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-079",
-  "approved_at": "2026-05-12T06:20:00.000+08:00",
-  "source_audit_support": {
-    "parent_article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-    "parent_article_slug": "lea-matl-008-01-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
-      "Salvan refined markdown lines 5941-5960, 6117-6208, and 6486-6578; raw PDF pages 173, 177, and 181-183 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bci-5e-b079",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "salvan-building-materials-b079",
-        "label": "George Salvan Architectural Building Materials",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
-        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
-        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
-        "locator": "Salvan refined markdown lines 5941-5960, 6117-6208, and 6486-6578; raw PDF pages 173, 177, and 181-183 checked by local PyMuPDF extraction"
-      }
-    ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited door_hardware scope."
-  },
+  "correct_answer_preserved": true,
+  "source_ids": [
+    "bci-5e-door-hardware-b153"
+  ],
+  "reason": "Batch 153 local-first rewrite aligned to fixed reservation manifest and source boundary.",
   "proposed": {
-    "text": "Which hinge runs the full length of the two surfaces being joined?",
+    "text": "What distinguishes a piano hinge in BCI door-hardware vocabulary?",
     "options": [
       {
         "id": "a",
-        "text": "Piano hinge"
+        "text": "It is a latch bolt without a dead bolt."
       },
       {
         "id": "b",
-        "text": "Cylinder lock"
+        "text": "It is a long, narrow hinge running the full length of the two joined surfaces."
       },
       {
         "id": "c",
-        "text": "Door stop"
+        "text": "It is a threshold at the bottom of the door."
       },
       {
         "id": "d",
-        "text": "Threshold"
+        "text": "It is a concealed lock cylinder."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BCI describes piano hinges as long, narrow hinges running the full length of the two joined surfaces.",
-    "explanation": "BCI describes piano hinges as long, narrow hinges running the full length of the two joined surfaces.",
-    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It is a latch bolt without a dead bolt. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "b": "It is a long, narrow hinge running the full length of the two joined surfaces. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+      "c": "It is a threshold at the bottom of the door. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "d": "It is a concealed lock cylinder. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+      "correct": "It is a long, narrow hinge running the full length of the two joined surfaces. Supported by bci-5e-door-hardware-b153.",
+      "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+      "source_boundary": "bci-5e-door-hardware-b153",
+      "checked_sources": [
+        "bci-5e-door-hardware-b153"
+      ]
+    },
+    "explanation": null,
+    "code_citation": "Local source boundary: BCI refined markdown lines 10396-10402.",
+    "application_context": "source_audited_local_first",
+    "practice_context": [
+      "batch-153-local-first",
+      "bci-5e-door-hardware-b153"
+    ]
+  },
+  "rationale": {
+    "a": "It is a latch bolt without a dead bolt. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "b": "It is a long, narrow hinge running the full length of the two joined surfaces. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+    "c": "It is a threshold at the bottom of the door. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "d": "It is a concealed lock cylinder. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+    "correct": "It is a long, narrow hinge running the full length of the two joined surfaces. Supported by bci-5e-door-hardware-b153.",
+    "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+    "source_boundary": "bci-5e-door-hardware-b153",
+    "checked_sources": [
+      "bci-5e-door-hardware-b153"
+    ]
   }
 }

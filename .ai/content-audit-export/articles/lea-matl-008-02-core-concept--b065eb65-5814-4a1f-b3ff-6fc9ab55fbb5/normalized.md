@@ -1,34 +1,51 @@
 ## Board Exam Quick Check
 
-For joint questions, identify whether the item is about force transfer between members or movement control between materials. Those are different problems and use different joint vocabulary.
+For joint questions, decide whether the item is about force transfer between members or movement control between materials. Those are different problems and use different vocabulary.
+
+**Common trap:** answering a movement-joint item with a structural connector term, or answering a force-transfer item with a spacing, lateral-load, or code value not present in the checked local source packet.
 
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 
-Distinguish structural connection joints from movement joints, and classify connectors by how they transfer force or allow movement.
+Distinguish structural connection joints from movement joints, and classify each by how it transfers force, resists rotation, permits movement, or protects the assembly from cracking and water entry.
 
 ## Core Concept
 
-BCI states that the way forces transfer from one structural element to the next depends strongly on joints and connections. Butt joints allow one element to remain continuous and usually need a mediating element. Overlapping joints let connected elements bypass each other and continue across the joint. Molded or shaped joints form the connection through the shape of the joined members.
+BCI states that the way forces transfer from one structural element to the next depends strongly on joints and connections. A structural connection may be a butt joint, an overlapping joint, or a molded or shaped joint. The connector itself may act as a point, line, or surface: BCI gives a bolt as the point connector example, a weld as the line connector example, and glue as the surface connector example.
 
-Connectors may act as points, lines, or surfaces: a bolt is a point connector, a weld is a line connector, and glue is a surface connector. Linear and surface connectors resist rotation, while a point connector does not resist rotation unless multiple points are distributed across a large area.
+### Structural Connection Behavior
 
-BCI also distinguishes pinned, fixed, roller, and cable anchorage behavior. Pinned joints theoretically allow rotation but resist translation. Fixed joints maintain the angular relationship between elements and resist rotation and translation. Roller joints allow rotation and movement for expansion or contraction in one direction. Cable anchorages allow rotation and resist translation only along the cable direction.
+| Behavior | Source-supported meaning | Exam cue |
+|---|---|---|
+| Pinned joint | Allows rotation but resists translation. | Rotation is allowed; member ends are not fully fixed. |
+| Fixed or rigid joint | Maintains angular relationship and resists rotation and translation. | Moment or angular restraint is the concept, but exact lateral-load design needs another source. |
+| Roller joint | Allows rotation and movement for expansion or contraction in one direction. | Movement is intentional. |
+| Cable anchorage | Allows rotation and resists translation only along the cable direction. | Force follows the cable line. |
 
-Movement joints solve a different problem. BCI says materials expand and contract with temperature, moisture, loading, and settlement effects; joints must allow movement to prevent distortion, cracking, or breaks while keeping the construction weathertight. Expansion joints are continuous, unobstructed slots that permit thermal or moisture expansion. Control joints create a planned plane of weakness to regulate cracking. Isolation joints divide large or geometrically complex structures so differential movement or settlement can occur.
+### Movement Joints
+
+Movement joints solve a different problem. BCI states that building materials expand and contract with temperature, and some swell, shrink, or deflect. Joints must allow movement to prevent distortion, cracking, or breaks while maintaining the weathertightness of the construction.
+
+Expansion joints are continuous, unobstructed slots that permit thermal or moisture expansion. Control joints form a planned plane of weakness to regulate cracking from drying shrinkage, thermal stress, or structural movement. Isolation joints divide a large or geometrically complex structure so differential movement or settlement can occur.
+
+Salvan adds supporting local material vocabulary: stainless steel and plastics appear in expansion-joint, flashing, water-stop, and related exterior construction uses; deformed reinforcing bars have surface deformations for anchorage in concrete. Use those as material-recognition clues, not as spacing or capacity rules.
+
+## Real World Scenario
+
+A small addition is placed beside an existing building, while a long exposed wall and a steel canopy connection are also being detailed. The safe review separates the issues: the addition may need isolation logic for differential movement, the long wall may need movement-joint logic to prevent cracking while staying weathertight, and the canopy connection needs structural connection behavior. Exact joint spacing, dowel design, and lateral-load detailing remain outside this batch unless a project structural source supplies them.
 
 ## How It's Tested
 
-LEA-style items often mix the two families. If the question asks how beams, walls, or frames transfer force, use connection vocabulary. If it asks about expansion, shrinkage, cracking, settlement, or long surfaces, use movement-joint vocabulary.
+LEA-style questions often mix the two families. If the question asks how beams, frames, or walls transfer force, use connection vocabulary. If it asks about expansion, shrinkage, cracking, settlement, or long surfaces, use movement-joint vocabulary.
 
 ## Common Mistakes
 
 - Calling every separation an expansion joint.
-- Confusing a point connector such as a bolt with a surface connector such as glue.
-- Treating pinned and fixed joints as the same structural behavior.
-- Omitting sealant, filler, or weather protection from movement-joint thinking.
-- Using structural connection terms when the question is really about material movement.
+- Confusing a point connector such as a bolt with a line connector such as a weld or a surface connector such as glue.
+- Treating pinned and fixed joints as the same behavior.
+- Omitting sealant, filler, water stop, or weathertightness from movement-joint thinking.
+- Using standards, lateral-load, dowel, or spacing claims without a captured source.
 
 ## Related Articles
 
