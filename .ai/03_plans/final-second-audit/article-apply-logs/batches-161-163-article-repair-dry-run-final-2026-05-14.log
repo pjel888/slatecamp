@@ -1,0 +1,32 @@
+=== ARTICLE REPAIR FINAL DRY RUN 1 batch=161 article=cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe slug=lea-strc-004-02-core-concept ===
+✓ push dry/safe-check cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe" --strict --repair-placeholders
+EXIT_CODE=0
+=== ARTICLE REPAIR FINAL DRY RUN 2 batch=161 article=f122ad42-0858-4bb6-ac19-6a788bac4c43 slug=lea-strc-007-03-core-concept ===
+✓ push dry/safe-check f122ad42-0858-4bb6-ac19-6a788bac4c43: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "f122ad42-0858-4bb6-ac19-6a788bac4c43" --strict --repair-placeholders
+EXIT_CODE=0
+=== ARTICLE REPAIR FINAL DRY RUN 3 batch=161 article=f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3 slug=lea-strc-007-05-core-concept ===
+✓ push dry/safe-check f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3" --strict --repair-placeholders
+EXIT_CODE=0
+=== ARTICLE REPAIR FINAL DRY RUN 4 batch=161 article=84cf250f-9168-4bba-9b7a-55dd370f1c31 slug=lea-strc-009-01-core-concept ===
+✓ push dry/safe-check 84cf250f-9168-4bba-9b7a-55dd370f1c31: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "84cf250f-9168-4bba-9b7a-55dd370f1c31" --strict --repair-placeholders
+EXIT_CODE=0
+=== ARTICLE REPAIR FINAL DRY RUN 5 batch=161 article=f0790263-a20b-4d36-bebb-05474566cbce slug=lea-strc-012-01-core-concept ===
+✓ push dry/safe-check f0790263-a20b-4d36-bebb-05474566cbce: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "f0790263-a20b-4d36-bebb-05474566cbce" --strict --repair-placeholders
+EXIT_CODE=0
+=== ARTICLE REPAIR FINAL DRY RUN 6 batch=162 article=047334de-c79a-4d6a-aa23-58a321b71e2e slug=lea-strc-009-02-core-concept ===
+✓ push dry/safe-check 047334de-c79a-4d6a-aa23-58a321b71e2e: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "047334de-c79a-4d6a-aa23-58a321b71e2e" --strict --repair-placeholders
+EXIT_CODE=0
+=== ARTICLE REPAIR FINAL DRY RUN 7 batch=163 article=1caee82f-c2c8-409b-a3bf-41576bc702c5 slug=lea-util-004-05-seismic-bracing-and-earthquake-resilience ===
+✓ push dry/safe-check 1caee82f-c2c8-409b-a3bf-41576bc702c5: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "1caee82f-c2c8-409b-a3bf-41576bc702c5" --strict --repair-placeholders
+EXIT_CODE=0
+=== ARTICLE REPAIR FINAL DRY RUN 8 batch=163 article=585425ad-355a-4180-b64b-a872115f39f6 slug=lea-util-004-08-seismic-bracing-requirements-per-nscp-2015 ===
+✓ push dry/safe-check 585425ad-355a-4180-b64b-a872115f39f6: blockers=0
+$ bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run --article-id "585425ad-355a-4180-b64b-a872115f39f6" --strict --repair-placeholders
+EXIT_CODE=0

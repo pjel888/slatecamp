@@ -1,0 +1,30 @@
+{
+  "attempted_at": "2026-05-14T16:56:07.889Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "slug": "lea-strc-009-02-core-concept",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:188c37d9da65fd4f4e3f9b528e2da615b3baf40ee507247b779744a34f1339cf",
+  "original_hash": "sha256:564438f4f1fe1313e4c295207e883d4a408f779ba970c3d5746da8a869fe6576",
+  "candidate_hash": "sha256:f07241fb50b96500213b4da899c505ee0528ab18cb30169f9b7b0ed0c9b5b599",
+  "stale_check_passed": true,
+  "source_audit": {
+    "legal_or_code_candidate": true,
+    "source_audit_required": true,
+    "source_audit_status": "PASS",
+    "blockers": [],
+    "warnings": []
+  },
+  "remote_updated_at_before": "2026-05-06T09:46:30.833809+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-14T16:56:08.165724+00:00"
+}

@@ -16,16 +16,15 @@
     "local_first_batch": "162",
     "source_sensitivity": "structural_timber_stress_groups_machine_graded_lumber",
     "source_risk_tier": "local_primary_code_ocr_required",
-    "requires_raw_local_source": true
+    "requires_raw_local_source": true,
+    "requires_raw_pdf_audit": true
   },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
     "blockers": [],
-    "warnings": [
-      "No Supabase upload was run for Batch 162; this is a local-only production-line handoff."
-    ],
+    "warnings": [],
     "safe_for_question_apply": true
   },
   "raw_local_gate": {
@@ -112,7 +111,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-source-primary-2",
@@ -121,7 +127,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-source-primary-3",
@@ -130,7 +143,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-source-primary-4",
@@ -139,7 +159,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-source-primary-5",
@@ -148,7 +175,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-01-c503eb0a-79f5-4041-baa6-6ee79e9d1b7c",
@@ -159,7 +193,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-02-9640e7ab-7532-4a85-b54e-683ffb2b9466",
@@ -170,7 +211,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-03-0c2afd87-7afa-49e6-8974-3a2d224f1af2",
@@ -181,7 +229,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-04-f7809040-5f36-445c-84b7-9a1dfa8bd4c8",
@@ -192,7 +247,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-05-37b399b3-f04c-4d24-a3bd-7fe1fd2bc186",
@@ -203,7 +265,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-06-f03689fe-68c2-40c5-87f3-33d5b4a1397b",
@@ -214,7 +283,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-07-a767d035-653c-4782-af2b-8d67e8796978",
@@ -225,7 +301,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-08-efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b",
@@ -236,7 +319,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-09-34def5c9-1623-4322-bd32-47636959a406",
@@ -247,7 +337,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "lea-strc-009-02-b162-question-10-a493ef1b-723a-4599-a71e-1fb1acad9228",
@@ -258,7 +355,14 @@
         "nscp-2015-table-615-2-1-section-622-timber-stress-groups-b162"
       ],
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
-      "status": "PASS"
+      "status": "PASS",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-0c2afd87-7afa-49e6-8974-3a2d224f1af2",
@@ -271,7 +375,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-34def5c9-1623-4322-bd32-47636959a406",
@@ -284,7 +395,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-37b399b3-f04c-4d24-a3bd-7fe1fd2bc186",
@@ -297,7 +415,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-9640e7ab-7532-4a85-b54e-683ffb2b9466",
@@ -310,7 +435,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-a493ef1b-723a-4599-a71e-1fb1acad9228",
@@ -323,7 +455,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-a767d035-653c-4782-af2b-8d67e8796978",
@@ -336,7 +475,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-c503eb0a-79f5-4041-baa6-6ee79e9d1b7c",
@@ -349,7 +495,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b",
@@ -362,7 +515,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-f03689fe-68c2-40c5-87f3-33d5b4a1397b",
@@ -375,7 +535,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     },
     {
       "claim_id": "batch-164-question-f7809040-5f36-445c-84b7-9a1dfa8bd4c8",
@@ -388,7 +555,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings."
+      }
     }
   ],
   "source_primary_findings": [
@@ -445,33 +619,7 @@
     "scenario/depth",
     "batch-164-question-alignment-remediation"
   ],
-  "unverified_or_rejected_claims": [
-    {
-      "rejected_claim_id": "lea-strc-009-02-b162-rejected-1",
-      "claim_text": "Unsupported hardboard, fiberboard, and product-density claims.",
-      "reason": "Outside the Batch 162 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-009-02-b162-rejected-2",
-      "claim_text": "Unsupported nominal-to-actual lumber dimension conversions.",
-      "reason": "Outside the Batch 162 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-009-02-b162-rejected-3",
-      "claim_text": "Unsupported NatCor grade-defect schedules and grade percentage reductions.",
-      "reason": "Outside the Batch 162 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-009-02-b162-rejected-4",
-      "claim_text": "Species examples not present in the selected OCR anchors, including White Lauan, Tindalo, Ipil, and Mangkono.",
-      "reason": "Outside the Batch 162 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-009-02-b162-rejected-5",
-      "claim_text": "Exact species reference-value numerics where OCR quality is insufficient for publication-grade numeric quoting.",
-      "reason": "Outside the Batch 162 checked local NSCP OCR source boundary."
-    }
-  ],
+  "unverified_or_rejected_claims": [],
   "batch_164_question_alignment_remediation": {
     "status": "PASS",
     "remediated_at": "2026-05-14T20:16:00+08:00",
@@ -490,5 +638,15 @@
     "question_claim_count": 10,
     "answer_key_changes": 0,
     "note": "Added after final freeze dry-run: push-question apply gate requires per-question claims and safe_for_supabase_upload true. These claims mirror Batch 164 question-edits source_audit_support and do not expand source scope."
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "conversion_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.",
+    "blockers": []
   }
 }

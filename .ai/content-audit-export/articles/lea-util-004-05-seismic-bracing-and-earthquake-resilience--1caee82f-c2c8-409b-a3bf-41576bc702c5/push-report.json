@@ -1,0 +1,30 @@
+{
+  "attempted_at": "2026-05-14T16:56:08.379Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:927b41f90c8288a97cc4a1d2cf350cbc0e982d1e9f1b187cfebdee84060c8d13",
+  "original_hash": "sha256:ddbec9e9749e5510b287584e97eba8119a5b8d71d149dfb4c0f6127ce028c9ac",
+  "candidate_hash": "sha256:c622cce8493239809ae8f4563da2691543f60f4396b8c85b1c5d33ce310d6608",
+  "stale_check_passed": true,
+  "source_audit": {
+    "legal_or_code_candidate": true,
+    "source_audit_required": true,
+    "source_audit_status": "PASS",
+    "blockers": [],
+    "warnings": []
+  },
+  "remote_updated_at_before": "2026-05-06T10:28:49.557446+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-14T16:56:08.686147+00:00"
+}

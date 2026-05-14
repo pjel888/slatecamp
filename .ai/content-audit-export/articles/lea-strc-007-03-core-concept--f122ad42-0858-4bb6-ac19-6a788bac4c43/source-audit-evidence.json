@@ -16,16 +16,15 @@
     "local_first_batch": "161",
     "source_sensitivity": "structural_concrete_serviceability",
     "source_risk_tier": "local_primary_code_ocr_required",
-    "requires_raw_local_source": true
+    "requires_raw_local_source": true,
+    "requires_raw_pdf_audit": true
   },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
     "blockers": [],
-    "warnings": [
-      "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
-    ],
+    "warnings": [],
     "safe_for_question_apply": true
   },
   "raw_local_gate": {
@@ -144,23 +143,7 @@
     "scenario/depth",
     "batch-164-question-alignment-remediation"
   ],
-  "unverified_or_rejected_claims": [
-    {
-      "rejected_claim_id": "lea-strc-007-03-b161-rejected-1",
-      "claim_text": "Unsupported Table 9.5.1 span-to-depth ratios in the selected source boundary.",
-      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-007-03-b161-rejected-2",
-      "claim_text": "Unsupported joist top-slab thickness rules in the selected source boundary.",
-      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-007-03-b161-rejected-3",
-      "claim_text": "Strength adequacy as a substitute for serviceability checking.",
-      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
-    }
-  ],
+  "unverified_or_rejected_claims": [],
   "batch_164_question_alignment_remediation": {
     "status": "PASS",
     "remediated_at": "2026-05-14T20:16:00+08:00",
@@ -192,7 +175,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-425007a6-69a2-4550-b17a-0e6e188d3bd6",
@@ -205,7 +195,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-68e4364f-84b2-4396-8a29-541ff0147809",
@@ -218,7 +215,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-7ac3ba8b-5381-4299-ab78-4161de86e9b4",
@@ -231,7 +235,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-94abda41-a060-4bbe-943a-2d981037bf9e",
@@ -244,7 +255,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-994be8d3-da40-4bef-adde-fa327cfe6cd1",
@@ -257,7 +275,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-d37a4ca3-16c9-415f-bfaf-4e22292d6998",
@@ -270,7 +295,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-d7192cdc-b9bb-4e30-b920-43d70262b701",
@@ -283,7 +315,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-d80bfbfb-532b-4cbe-83dd-742dd4e66ac3",
@@ -296,7 +335,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     },
     {
       "claim_id": "batch-164-question-f88b1cee-f81c-4809-b056-b2ab90d425e9",
@@ -309,7 +355,24 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads."
+      }
     }
-  ]
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "conversion_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.",
+    "blockers": []
+  }
 }

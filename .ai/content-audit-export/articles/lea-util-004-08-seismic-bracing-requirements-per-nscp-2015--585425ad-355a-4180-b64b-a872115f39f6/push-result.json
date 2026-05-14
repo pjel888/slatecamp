@@ -1,0 +1,30 @@
+{
+  "attempted_at": "2026-05-14T16:56:08.910Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:f22d713ad93e344c3afdc044f5a39626b46c57ff53e6b17b78eaf4e0a89a07c2",
+  "original_hash": "sha256:f15ef5d30f72c92f94a7401ba2d3fd52250862fc9191b5fd06833de7a6cd39c0",
+  "candidate_hash": "sha256:5c762257309e822812b027d15e5d10fdb252e0618f78ccfc9dfda96e0dd78481",
+  "stale_check_passed": true,
+  "source_audit": {
+    "legal_or_code_candidate": true,
+    "source_audit_required": true,
+    "source_audit_status": "PASS",
+    "blockers": [],
+    "warnings": []
+  },
+  "remote_updated_at_before": "2026-05-06T10:32:07.486276+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-14T16:56:09.32771+00:00"
+}

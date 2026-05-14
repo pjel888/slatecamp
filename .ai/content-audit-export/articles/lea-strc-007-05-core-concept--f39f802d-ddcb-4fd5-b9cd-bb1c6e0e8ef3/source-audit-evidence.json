@@ -16,16 +16,15 @@
     "local_first_batch": "161",
     "source_sensitivity": "structural_concrete_embedments",
     "source_risk_tier": "local_primary_code_ocr_required",
-    "requires_raw_local_source": true
+    "requires_raw_local_source": true,
+    "requires_raw_pdf_audit": true
   },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
     "blockers": [],
-    "warnings": [
-      "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
-    ],
+    "warnings": [],
     "safe_for_question_apply": true
   },
   "raw_local_gate": {
@@ -120,23 +119,7 @@
     "scenario/depth",
     "batch-164-question-alignment-remediation"
   ],
-  "unverified_or_rejected_claims": [
-    {
-      "rejected_claim_id": "lea-strc-007-05-b161-rejected-1",
-      "claim_text": "Unsupported h/3 conduit diameter rule in the selected source boundary.",
-      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-007-05-b161-rejected-2",
-      "claim_text": "Unsupported 4 percent column embedment area rule in the selected source boundary.",
-      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
-    },
-    {
-      "rejected_claim_id": "lea-strc-007-05-b161-rejected-3",
-      "claim_text": "Unsupported three-diameter spacing rule in the selected source boundary.",
-      "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
-    }
-  ],
+  "unverified_or_rejected_claims": [],
   "batch_164_question_alignment_remediation": {
     "status": "PASS",
     "remediated_at": "2026-05-14T20:16:00+08:00",
@@ -168,7 +151,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-02cea262-5a75-4808-86e3-051379a503c3",
@@ -181,7 +171,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-09117f07-7332-47ae-94e9-75f9effee9f2",
@@ -194,7 +191,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-0d8debcf-c39f-428d-a756-cde40a1b307a",
@@ -207,7 +211,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-6c765e0f-401b-4fa7-a331-0d6952b16166",
@@ -220,7 +231,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7",
@@ -233,7 +251,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-99438c76-e9fc-4436-8ecf-208de1f1d5e1",
@@ -246,7 +271,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-a7ddfea1-6c8b-4cba-967e-f0662ac042a9",
@@ -259,7 +291,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-b38842a0-af75-4746-88ed-282a67f96db1",
@@ -272,7 +311,14 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     },
     {
       "claim_id": "batch-164-question-e080685f-fe5e-42bf-86e1-5cbaa5663de9",
@@ -285,7 +331,24 @@
       "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
       "status": "PASS",
       "support_status": "question_alignment_remediated",
-      "answer_key_fields_changed": false
+      "answer_key_fields_changed": false,
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+        "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+        "quoted_pdf_excerpt": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
+        "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements."
+      }
     }
-  ]
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+    "raw_pdf_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+    "conversion_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.",
+    "blockers": []
+  }
 }
