@@ -1,0 +1,122 @@
+{
+  "batch": 168,
+  "batch_id": "source-audited-batch-168-local-first-closure",
+  "status": "passed_local_validation_git_stage_blocked",
+  "generated_at": "2026-05-14T20:42:00+08:00",
+  "scope": {
+    "selected_articles": [],
+    "selected_article_count": 0,
+    "selected_linked_question_count": 0,
+    "selected_question_edit_count": 0,
+    "answer_key_changes": 0,
+    "article_folder_edits": [],
+    "source_folder_edits": [],
+    "closure_artifacts": [
+      ".ai/content-audit-export/source-audited-article-batch-168-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-168-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-168-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-168-independent-quality-review.md",
+      ".ai/03_plans/batch-168-git-handoff-stage-paths.txt",
+      ".ai/03_plans/batch-168-git-handoff-stage-list.md"
+    ],
+    "shared_state_files_touched": []
+  },
+  "checks": [
+    {
+      "name": "latest_accepted_content_state",
+      "status": "pass",
+      "command": "git rev-parse HEAD; git rev-parse origin/3dlab-gray-viewport-bg; git log -1 --format",
+      "evidence": "HEAD and origin/3dlab-gray-viewport-bg both resolve to 1cfaf9e8daade8a93c060932f9d5467a621d9e78, subject chore(content): accept source-audited batch 167."
+    },
+    {
+      "name": "residual_eligibility_reconciliation",
+      "status": "pass",
+      "command": "Node JSON scan over source-audited Batch 160-167 ledgers and production-line manifests",
+      "evidence": "Batch 160 listed eight blocked residual clusters. Batches 161-163 consumed all eight. Batch 164 remediated question alignment across the same eight clusters with 90 question edits and 0 answer-key changes. Batches 165-167 then recorded remaining_blocked_clusters=[]. The only sourceable-deferred old item, lea-strc-009-02, was consumed by Batch 162."
+    },
+    {
+      "name": "artifact_discrepancy_reconciliation",
+      "status": "pass",
+      "command": "Read Batch 164-167 reports/ledgers and recompute current HEAD git-object hashes",
+      "evidence": "Batch 168 uses live git state and current HEAD hashes because older closure prose and embedded hashes are stale in places. The stale artifact text does not create an eligible residual cluster."
+    },
+    {
+      "name": "selected_article_count",
+      "status": "pass",
+      "command": "Batch 168 ledger invariant",
+      "evidence": "selected_clusters=[], article_count=0, linked_question_count=0, question_edit_count=0, answer_key_changes=0, selected_blockers=0."
+    },
+    {
+      "name": "compose_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:compose -- --article-id <id> --dry-run --strict --overwrite",
+      "evidence": "No article bundle was selected or edited in Batch 168."
+    },
+    {
+      "name": "diff_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:diff -- --article-id <id> --dry-run --strict --summary",
+      "evidence": "No article bundle was selected or edited in Batch 168."
+    },
+    {
+      "name": "official_scoped_validate",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun scripts/content-audit/validate-bundles.ts --input <scoped selected-article root> --dry-run --json",
+      "evidence": "No selected article bundle exists. No temporary validation root was created."
+    },
+    {
+      "name": "linked_question_question_edit_parity",
+      "status": "pass",
+      "command": "Batch 168 ledger invariant",
+      "evidence": "0 selected linked questions equals 0 generated question edits; answer-key changes=0."
+    },
+    {
+      "name": "source_evidence_hashes_and_locators",
+      "status": "pass",
+      "command": "git show HEAD:<Batch 160-167 ledger> | shasum -a 256; git show HEAD:<source-audit-evidence.json> | shasum -a 256 for eight accepted residual source-evidence files",
+      "evidence": "Current HEAD ledger hashes and current HEAD source-evidence hashes are recorded in the Batch 168 ledger. Batch 168 does not rely on stale embedded hash fields from prior closure artifacts."
+    },
+    {
+      "name": "json_parse",
+      "status": "pass",
+      "command": "node JSON.parse over Batch 168 JSON artifacts",
+      "evidence": "Batch 168 ledger and scoped-checks JSON parsed successfully."
+    },
+    {
+      "name": "marker_internal_note_source_gap_scan",
+      "status": "pass",
+      "command": "marker scan over Batch 168 intended paths",
+      "evidence": "Initial scan only found final status placeholders. Those were replaced, and the final scan returned no matches."
+    },
+    {
+      "name": "source_verification_invariants",
+      "status": "pass",
+      "command": "bun run test:source-verification",
+      "evidence": "7 pass, 0 fail, 244 expect() calls."
+    },
+    {
+      "name": "independent_qa",
+      "status": "pass",
+      "command": "Native independent QA pass, no child worker spawned per user instruction",
+      "evidence": "Native QA found no content-selection blocker and verified live baseline, residual exhaustion, old deferred resolution, stale artifact reconciliation, current HEAD hashes, closure scope, and final remediation backlog preservation."
+    },
+    {
+      "name": "git_diff_whitespace_check",
+      "status": "pass",
+      "command": "git diff --check -- $(cat .ai/03_plans/batch-168-git-handoff-stage-paths.txt) plus no-index checks for untracked paths",
+      "evidence": "Scoped git diff --check plus no-index whitespace checks exited 0 for all six intended Batch 168 paths."
+    },
+    {
+      "name": "git_stage_exact_paths",
+      "status": "blocked",
+      "command": "git add --pathspec-from-file=.ai/03_plans/batch-168-git-handoff-stage-paths.txt",
+      "evidence": "Failed with: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. No cached diff, commit, or push was attempted after this blocker."
+    }
+  ],
+  "warnings": [
+    "Batch 168 intentionally excludes shared export state files because no selected article requires shared state churn.",
+    "Batch 168 intentionally excludes the stale deleted compose-error artifact under lea-strc-011-03 and all unrelated dirty product, 3D, Hermes, prompt, and run-directory files.",
+    "Final-audit THIN_NEEDS_EXPANSION, scenario, question-alignment, and source-primary findings remain final-remediation backlog."
+  ],
+  "final_status": "passed_local_validation_git_stage_blocked"
+}
