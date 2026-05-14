@@ -1,0 +1,303 @@
+{
+  "batch": 171,
+  "batch_id": "source-audited-batch-171-local-first-zero_content_closure",
+  "status": "zero_content_closure_residual_queue_exhausted_after_accepted_batch_170_no_git_stage_by_user_instruction",
+  "generated_at": "2026-05-14T22:03:44+08:00",
+  "repo": "/Users/philiplewis/slatecamp",
+  "target_branch": "3dlab-gray-viewport-bg",
+  "observed_current_branch_at_selection": "3dlab-gray-viewport-bg",
+  "source_policy": "local_first_only_no_supabase_push_no_deploy_no_db_mutation_no_main_merge_no_force_push_no_git_stage_commit_or_push_exact_batch_171_handoff_paths_only",
+  "baseline": {
+    "accepted_batch_170_commit": "1cfff965bffa619a93061a2fc218b494329985ae",
+    "accepted_batch_170_subject": "chore(content): accept source-audited batch 170",
+    "origin_3dlab_gray_viewport_bg": "1cfff965bffa619a93061a2fc218b494329985ae",
+    "baseline_verified_by": "git rev-parse HEAD origin/3dlab-gray-viewport-bg; git log -1 --format=%H%x09%s HEAD; git show --stat --oneline --name-status 1cfff965b"
+  },
+  "working_tree_context": {
+    "pre_existing_dirty_tree": true,
+    "off_limits_dirty_context_observed_before_batch_171": [
+      ".ai/00_performance/results/dev_server_memory_profile_dev-server.json",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/compose-error.json",
+      ".ai/content-audit-export/sync-state.json",
+      ".ai/content-audit-export/ui-block-edit-validation.json",
+      ".ai/content-audit-export/validation-report.json",
+      ".hermes/skills/README.md",
+      "src/components/marketing/**",
+      "src/features/3d-lab/**",
+      "tests/vitest/components/marketing/**",
+      ".ai/03_plans/3d-modules/**",
+      ".ai/03_plans/blocked-source-recovery/prompt-*.md",
+      ".ai/03_plans/codex-batch-16*-production-worker-prompt.md",
+      ".ai/03_plans/codex-batch-170-production-worker-prompt.md",
+      ".ai/03_plans/codex-batch-171-production-worker-prompt.md",
+      ".ai/03_plans/opencode-batch-*.md",
+      ".ai/content-audit-export/runs/**"
+    ],
+    "batch_171_allowed_new_paths_only": [
+      ".ai/content-audit-export/source-audited-article-batch-171-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-171-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-171-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-171-independent-quality-review.md",
+      ".ai/03_plans/batch-171-git-handoff-stage-paths.txt"
+    ]
+  },
+  "repo_orientation_evidence": {
+    "skills_used": [
+      "superpowers:using-superpowers"
+    ],
+    "docs_read": [
+      "AGENTS.md via user-provided root instructions",
+      ".ai/AGENTS.md",
+      ".ai/00_system/slatecamp-authoritative-reference.md",
+      ".ai/00_system/vitruvius-source-reference.md",
+      ".ai/03_plans/source-audited-production-line-coordination.md",
+      ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+      ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+      ".ai/03_plans/production-line-residual-exhaustion-after-154.md",
+      ".ai/03_plans/final-second-audit/final-readiness-aggregation-after-batch-159.md",
+      ".ai/03_plans/codex-batch-171-production-worker-prompt.md",
+      ".ai/content-audit-export/source-audited-article-batch-170-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-170-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-170-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-170-git-handoff-stage-paths.txt",
+      ".ai/03_plans/batch-170-independent-quality-review.md"
+    ],
+    "nested_agents_in_scope": {
+      ".ai/content-audit-export": [],
+      ".ai/03_plans": [],
+      "applied": "Root AGENTS.md and .ai/AGENTS.md govern the active Batch 171 artifact paths; no nearer active AGENTS.md exists under .ai/content-audit-export or the active .ai/03_plans paths used for Batch 171."
+    }
+  },
+  "selection_result": {
+    "closure_type": "zero_content_closure",
+    "selected_clusters": [],
+    "entries": [],
+    "article_count": 0,
+    "selected_article_count": 0,
+    "linked_question_count": 0,
+    "question_edit_count": 0,
+    "article_edits": 0,
+    "source_edits": 0,
+    "answer_key_changes": 0,
+    "eligible_queue_blockers": 0,
+    "selected_blockers": 0,
+    "scenario_status": "not_applicable_no_selected_articles"
+  },
+  "closure_reason": "No Batch 171 article was selected because live accepted artifacts through Batch 170 show no remaining eligible source-auditable residual article plus linked-question cluster. Batch 160 listed eight residual blockers; Batches 161, 162, and 163 consumed all eight; Batch 164 remediated question alignment across the same eight clusters; Batches 165 through 170 recorded zero-content closures.",
+  "batch160_blocked_clusters": [
+    "lea-strc-004-02",
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-012-01",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-009-01",
+    "lea-strc-009-02"
+  ],
+  "consumed_residuals": [
+    {
+      "batch": 161,
+      "clusters": [
+        "lea-strc-004-02",
+        "lea-strc-007-03",
+        "lea-strc-007-05",
+        "lea-strc-012-01",
+        "lea-strc-009-01"
+      ],
+      "linked_questions": 50,
+      "question_edits": 50,
+      "selected_blockers": 0,
+      "answer_key_changes": 0
+    },
+    {
+      "batch": 162,
+      "clusters": [
+        "lea-strc-009-02"
+      ],
+      "linked_questions": 10,
+      "question_edits": 10,
+      "selected_blockers": 0,
+      "answer_key_changes": 0
+    },
+    {
+      "batch": 163,
+      "clusters": [
+        "lea-util-004-05",
+        "lea-util-004-08"
+      ],
+      "linked_questions": 30,
+      "question_edits": 30,
+      "selected_blockers": 0,
+      "answer_key_changes": 0
+    },
+    {
+      "batch": 164,
+      "clusters": [
+        "lea-strc-004-02",
+        "lea-strc-007-03",
+        "lea-strc-007-05",
+        "lea-strc-012-01",
+        "lea-strc-009-01",
+        "lea-strc-009-02",
+        "lea-util-004-05",
+        "lea-util-004-08"
+      ],
+      "article_body_edits": 0,
+      "linked_question_count": 90,
+      "question_edit_count": 90,
+      "answer_key_changes": 0,
+      "purpose": "question_alignment_remediation_for_batches_161_to_163"
+    }
+  ],
+  "latest_closure_chain": [
+    {
+      "batch": 165,
+      "status": "closure_no_selected_articles_residual_queue_already_exhausted_after_batch_164",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 166,
+      "status": "closure_no_selected_articles_residual_queue_already_exhausted_after_batch_165",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 167,
+      "status": "closure_no_selected_articles_residual_queue_already_exhausted_after_batch_166_git_stage_blocked",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 168,
+      "status": "closure_no_selected_articles_residual_queue_exhausted_after_batch_167_git_stage_blocked",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 169,
+      "status": "closure_no_selected_articles_residual_queue_exhausted_after_batch_168_no_git_stage_by_user_instruction",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 170,
+      "status": "closure_no_selected_articles_residual_queue_exhausted_after_batch_169_no_git_stage_by_user_instruction",
+      "remaining_blocked_clusters": []
+    }
+  ],
+  "residual_queue_scan_summary": {
+    "source_audited_batch_ledgers_scanned": 147,
+    "max_batch_ledger_seen": 170,
+    "remaining_blocked_clusters_after_batch_170": [],
+    "remaining_sourceable_deferred_clusters_after_batch_170": [],
+    "remaining_proprietary_source_acquisition_blockers_for_eligible_queue": [],
+    "eligible_batch_171_clusters": [],
+    "blockers_for_eligible_queue": 0
+  },
+  "source_evidence_boundary": {
+    "new_source_evidence_created": false,
+    "accepted_nscp_source_family": {
+      "raw_source": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+      "raw_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+      "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+      "metadata": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json"
+    }
+  },
+  "current_head_ledger_hashes": [
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-160-local-first-ledger.json",
+      "sha256": "sha256:6c8f6ac1bf27185ba18c78d4a938eb53917b9997d587bb5986378cc9a1f2cb20"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-161-local-first-ledger.json",
+      "sha256": "sha256:be50212497eaba799e86082245deadc4438416b95b178a344fe18695c14f871a"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-162-local-first-ledger.json",
+      "sha256": "sha256:bd40c2645baf4e9d78647bcca29691a59747f9e0b587905eb809732eff485f00"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-163-local-first-ledger.json",
+      "sha256": "sha256:179eddf901b9486f0e0cba25af5b04f5746b2121f9b675c1276039bb835af278"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-164-local-first-ledger.json",
+      "sha256": "sha256:632550a4d82fc78b8655664b99cfed83c959c9019a7a192abdd96d51052469b7"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-165-local-first-ledger.json",
+      "sha256": "sha256:44c4862b5f6d281462773229a3f6faf9ddaef06663f70a7d08a79cbd2efa3497"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-166-local-first-ledger.json",
+      "sha256": "sha256:27141f8445f7f170f8dbd9cca8961390c91541c0eebb3a29db8c0c442e273180"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-167-local-first-ledger.json",
+      "sha256": "sha256:3b4edc78f1d3f79f7d930335e41732da2e0cd61eb13fda68f7f4559f3aa0ed96"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-168-local-first-ledger.json",
+      "sha256": "sha256:e823fbf057483c6784200fe05690334f543bc89921cf9640097bd9eb5fff0a67"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-169-local-first-ledger.json",
+      "sha256": "sha256:1d52b6ad6bcc324eee98ff311c815451c6e9a09e74ce79c96b328e0a1e022a8d"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-170-local-first-ledger.json",
+      "sha256": "sha256:dd2b5a674bc8b1a2d5a56c4a47679dce7ee796f8d0f351304cd027479dec906b"
+    }
+  ],
+  "current_head_batch170_artifact_hashes": [
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-170-local-first-report.md",
+      "sha256": "sha256:62a1e2eea091a2e0bf9c02739513e94fd77d207f71dc8003a6b746a25e7b10e2"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-170-local-first-ledger.json",
+      "sha256": "sha256:dd2b5a674bc8b1a2d5a56c4a47679dce7ee796f8d0f351304cd027479dec906b"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-170-local-first-scoped-checks.json",
+      "sha256": "sha256:f3fea0f5842da8ac5c93a93a7e8b6bf3d69145a2b9c8ccebd286e3f2455b5281"
+    },
+    {
+      "path": ".ai/03_plans/batch-170-independent-quality-review.md",
+      "sha256": "sha256:8e4c5d7e11c55ac7a8e2f5d06f0f748c5ccc238ede7ceb1c544f5b56369e55c8"
+    },
+    {
+      "path": ".ai/03_plans/batch-170-independent-quality-review-opencode.md",
+      "sha256": "sha256:1c972481210241b228033a5c376343e77baba3cbca272ed27ad989bf1d6f23cb"
+    },
+    {
+      "path": ".ai/03_plans/batch-170-git-handoff-stage-paths.txt",
+      "sha256": "sha256:29a3dbc128484ac075fa1983996c8c568fe22c72dbc4c2813807bc35c2fd94b7"
+    }
+  ],
+  "final_remediation_backlog_preserved": [
+    "THIN_NEEDS_EXPANSION final-depth candidates",
+    "scenario/depth findings and source-safe scenario opportunities",
+    "question-alignment findings outside accepted Batch 164 remediation scope",
+    "source-primary/source-needed enrichment findings",
+    "BIM/LOD/IFC/ISO 19650 enrichment",
+    "RA 10173/NPC detail enrichment",
+    "QS/BOQ/estimating standards",
+    "older thin theory/professional-practice depth",
+    "CTR-020 form/template depth",
+    "waterproofing source depth",
+    "taxonomy/passport backfill",
+    "Batch 159 refinements"
+  ],
+  "validation_claims": {
+    "zero_content_closure": "pass",
+    "selected_article_count": 0,
+    "article_source_edits": 0,
+    "eligible_queue_blockers": 0,
+    "residual_eligibility_scan": "pass_no_eligible_clusters",
+    "json_parse": "pass_recorded_in_scoped_checks",
+    "marker_internal_note_source_gap_scan": "pass_recorded_in_scoped_checks",
+    "source_verification_invariants": "pass_7_pass_0_fail",
+    "scoped_git_diff_check": "pass_recorded_in_scoped_checks"
+  },
+  "stop_condition": "Closure packet only; do not stage, commit, push, Supabase push, deploy, mutate DB state, merge to main, force-push, or edit unrelated dirty files."
+}

@@ -1,0 +1,132 @@
+{
+  "batch": 171,
+  "batch_id": "source-audited-batch-171-local-first-zero_content_closure",
+  "status": "passed_local_validation_no_git_stage_by_user_instruction",
+  "generated_at": "2026-05-14T22:03:44+08:00",
+  "scope": {
+    "closure_type": "zero_content_closure",
+    "selected_articles": [],
+    "selected_article_count": 0,
+    "selected_linked_question_count": 0,
+    "selected_question_edit_count": 0,
+    "article_edits": 0,
+    "source_edits": 0,
+    "answer_key_changes": 0,
+    "eligible_queue_blockers": 0,
+    "article_folder_edits": [],
+    "source_folder_edits": [],
+    "question_edit_files_touched": [],
+    "closure_artifacts": [
+      ".ai/content-audit-export/source-audited-article-batch-171-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-171-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-171-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-171-independent-quality-review.md",
+      ".ai/03_plans/batch-171-git-handoff-stage-paths.txt"
+    ],
+    "shared_state_files_touched": []
+  },
+  "checks": [
+    {
+      "name": "latest_accepted_content_state",
+      "status": "pass",
+      "command": "git rev-parse HEAD origin/3dlab-gray-viewport-bg && git log -1 --format='%H%x09%s' HEAD && git show --stat --oneline --name-status 1cfff965b",
+      "evidence": "HEAD and origin/3dlab-gray-viewport-bg both resolve to 1cfff965bffa619a93061a2fc218b494329985ae, subject chore(content): accept source-audited batch 170. git show confirms the six Batch 170 closure/readiness artifacts were added."
+    },
+    {
+      "name": "live_git_status_and_dirty_scope",
+      "status": "pass",
+      "command": "git status --short --untracked-files=all",
+      "evidence": "Pre-existing unrelated dirty files exist in docs, shared export state, Hermes, marketing, 3D, tests, prompts, and run directories. Batch 171 writes only the five intended handoff paths."
+    },
+    {
+      "name": "repo_orientation",
+      "status": "pass",
+      "command": "Read .ai/AGENTS.md, .ai/00_system/slatecamp-authoritative-reference.md, .ai/00_system/vitruvius-source-reference.md, source-audited coordination/handoff/freeze artifacts, Batch 170 artifacts, and the Batch 171 prompt.",
+      "evidence": "Repo is a pre-launch MVP, Bun-first, with .ai as operational intelligence and local source policy anchored in vitruvius-connection/001_Raw-Source-Layer first. No nearer active AGENTS.md exists under .ai/content-audit-export or the active .ai/03_plans paths used for Batch 171."
+    },
+    {
+      "name": "residual_eligibility_reconciliation",
+      "status": "pass",
+      "command": "Node JSON scan over .ai/content-audit-export/source-audited-article-batch-*-local-first-ledger.json, filtering accepted ledgers through Batch 170 before Batch 171 selection",
+      "evidence": "Selection-time scan found 147 accepted batch ledgers, max batch 170. Batch 160 listed eight blocked residual clusters; Batches 161-163 consumed all eight; Batch 164 remediated question alignment across the same eight; Batches 165-170 recorded zero-content closures with no remaining eligible blocked or sourceable-deferred clusters."
+    },
+    {
+      "name": "selected_article_count",
+      "status": "pass",
+      "command": "Batch 171 ledger invariant",
+      "evidence": "zero_content_closure selected_clusters=[], selected_article_count=0, linked_question_count=0, question_edit_count=0, article_edits=0, source_edits=0, answer_key_changes=0, eligible_queue_blockers=0."
+    },
+    {
+      "name": "compose_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:compose -- --article-id <id> --dry-run --strict --overwrite",
+      "evidence": "No article bundle was selected or edited in Batch 171."
+    },
+    {
+      "name": "diff_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:diff -- --article-id <id> --dry-run --strict --summary",
+      "evidence": "No article bundle was selected or edited in Batch 171."
+    },
+    {
+      "name": "official_scoped_validate",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun scripts/content-audit/validate-bundles.ts --input <scoped selected-article root> --dry-run --json",
+      "evidence": "No selected article bundle exists. No temporary validation root was created."
+    },
+    {
+      "name": "linked_question_json_parse",
+      "status": "not_applicable_no_selected_articles",
+      "command": "node JSON.parse over touched question-edits/*.json",
+      "evidence": "No question-edit JSON files were touched or created in Batch 171."
+    },
+    {
+      "name": "linked_question_question_edit_parity",
+      "status": "pass",
+      "command": "Batch 171 ledger invariant",
+      "evidence": "0 selected linked questions equals 0 generated question edits; answer-key changes=0."
+    },
+    {
+      "name": "source_evidence_hashes_and_locators",
+      "status": "pass",
+      "command": "Node crypto SHA-256 over Batch 160-170 ledgers and Batch 170 handoff artifacts",
+      "evidence": "Current ledger hashes and Batch 170 artifact hashes are recorded in the Batch 171 ledger. No new source evidence was created."
+    },
+    {
+      "name": "json_parse",
+      "status": "pass",
+      "command": "node JSON.parse over Batch 171 JSON artifacts",
+      "evidence": "Batch 171 ledger and scoped-checks JSON parsed successfully."
+    },
+    {
+      "name": "marker_internal_note_source_gap_scan",
+      "status": "pass",
+      "command": "rg scan over the Batch 171 handoff paths for unresolved editorial markers plus source-gap/backlog terms",
+      "evidence": "Scan found only intentional preserved backlog/source-gap language in Batch 171 closure artifacts. No unresolved placeholder or internal-note marker was found."
+    },
+    {
+      "name": "source_verification_invariants",
+      "status": "pass",
+      "command": "bun run test:source-verification",
+      "evidence": "7 pass, 0 fail."
+    },
+    {
+      "name": "git_diff_whitespace_check",
+      "status": "pass",
+      "command": "git diff --check -- $(cat .ai/03_plans/batch-171-git-handoff-stage-paths.txt) plus no-index checks for untracked paths",
+      "evidence": "Scoped git diff --check plus no-index whitespace checks exited 0 for all five intended Batch 171 paths."
+    },
+    {
+      "name": "git_stage_exact_paths",
+      "status": "not_attempted_by_user_instruction",
+      "command": "git add --pathspec-from-file=.ai/03_plans/batch-171-git-handoff-stage-paths.txt",
+      "evidence": "User explicitly instructed not to stage, commit, or push. No git add, cached diff, commit, or push was attempted."
+    }
+  ],
+  "warnings": [
+    "Batch 171 intentionally excludes shared export state files because no selected article requires shared state churn.",
+    "Batch 171 intentionally excludes the stale deleted compose-error artifact under lea-strc-011-03 and all unrelated dirty product, 3D, Hermes, prompt, docs, and run-directory files.",
+    "Final-audit THIN_NEEDS_EXPANSION, scenario/depth, question-alignment, source-primary/source-needed, and source-acquisition/enrichment findings remain final-remediation backlog."
+  ],
+  "final_status": "passed_local_validation_no_git_stage_by_user_instruction"
+}
