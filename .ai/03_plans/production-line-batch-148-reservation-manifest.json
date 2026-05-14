@@ -1,0 +1,179 @@
+{
+  "batch": 148,
+  "batch_id": "reservation-batch-148-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T10:42:01+08:00",
+  "baseline": "e200b33563",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after Batch 147 reservations.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after Batch 147 reservations; keep structures first; use locally sourceable masonry and foundation clusters before leaving the remaining geotechnical residual for a later batch.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..145}-manifest.json",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_manifests": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-strc-010-02",
+      "slug": "lea-strc-010-02-core-concept",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-010-02-core-concept--abc56d0a-101e-4bef-9eda-e5412892652e",
+      "title": "Masonry unit",
+      "linked_question_count": 10,
+      "source_family": "masonry_units",
+      "source_path_candidates": [
+        {
+          "source_family": "masonry_lecture_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Local masonry source for unit composition, sizes, CHB practice, and masonry construction terminology.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "masonry_lecture_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local text includes CHB composition, CHB sizes, laying practice, and stiffener context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable local text covers CMU dimensions, concrete masonry, and wall construction context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "pd1096_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Local law source candidate if NBP/PD1096 code text is needed for the production pass.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Local masonry lecture and BSI refined text directly support masonry unit composition, size, CHB, and wall-construction concepts.",
+      "known_risks": [
+        "Article metadata references NBP 2020 and ACI 530; these exact source labels need local capture before precise code-section claims are restored.",
+        "Use local lecture/BSI support for terminology unless production discovers a direct readable NBP or ACI 530 source."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    },
+    {
+      "cluster_id": "lea-strc-011-01",
+      "slug": "lea-strc-011-01-core-concept",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-011-01-core-concept--15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "title": "Pile is a slender structural element driven or drilled",
+      "linked_question_count": 10,
+      "source_family": "foundation_piles",
+      "source_path_candidates": [
+        {
+          "source_family": "foundation_engineering_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Local foundation engineering source candidate for piles, deep foundations, bearing, and geotechnical context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "foundation_engineering_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local foundation source candidate for pile and foundation engineering support.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable local text covers foundations, deep foundations, piles, and foundation-system selection context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "pd1096_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Local law source candidate for PD1096 Rule VIII references if production needs code framing.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Local foundation and BSI source candidates support pile definitions, deep foundation context, and structural/geotechnical foundation selection concepts.",
+      "known_risks": [
+        "Exact NSCP Chapter 1-C or PD1096 pile provisions require local capture before legal/code claims are restored.",
+        "Production should separate general foundation engineering facts from Philippine code requirements."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    },
+    {
+      "cluster_id": "lea-strc-011-02",
+      "slug": "lea-strc-011-02-core-concept",
+      "article_id": "3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-011-02-core-concept--3f7f47a9-1620-4a50-9adb-d0cfc32fbf3d",
+      "title": "Foundation",
+      "linked_question_count": 10,
+      "source_family": "foundation_systems",
+      "source_path_candidates": [
+        {
+          "source_family": "foundation_engineering_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Foundation Engineering Analysis and Design.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Local foundation engineering source candidate for shallow/deep foundation behavior and design context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "foundation_engineering_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Foundation Engineering Analysis and Design.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local foundation source candidate for foundation-system support.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable local text covers foundations, shallow and deep systems, piles, bearing, and settlement context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "pd1096_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Local law source candidate for PD1096 Rule VIII foundation references if needed.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Foundation Engineering and BSI candidates provide direct local support for foundation-system definitions, shallow/deep distinction, bearing, piles, and settlement framing.",
+      "known_risks": [
+        "Any numeric bearing, settlement, embedment, or depth threshold must be checked against local source excerpts during production.",
+        "Exact PD1096 or NSCP references should be used only if the production batch captures the relevant clauses."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    }
+  ],
+  "residual_not_reserved_due_batch_size_cap": [
+    {
+      "cluster_id": "lea-strc-011-03",
+      "reason": "Likely sourceable geotechnical/foundation residual with local Foundation Engineering and BSI candidates, but Batch 148 is capped at three clusters by the reservation brief."
+    }
+  ],
+  "reservation_stop_condition": "Batch 148 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git, Supabase, deploy, DB, or main-merge action."
+}

@@ -1,0 +1,152 @@
+{
+  "batch": 146,
+  "batch_id": "reservation-batch-146-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T10:42:01+08:00",
+  "baseline": "e200b33563",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after accepted Batch 145.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after Batch 145 consumed lea-strc-006-04, lea-strc-006-05, and lea-strc-007-01; prefer sourceable structures residuals; skip hard-blocked clusters and clusters whose exact source support was not discovered locally.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..145}-manifest.json",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_manifests": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-strc-007-02",
+      "slug": "lea-strc-007-02-core-concept",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-02-core-concept--916404b9-8f62-40ab-a275-335da247ce2e",
+      "title": "Hook is a bend at the end of a reinforcing bar or stirrup",
+      "linked_question_count": 10,
+      "source_family": "structural_concrete_reinforcement_detailing",
+      "source_path_candidates": [
+        {
+          "source_family": "structural_concrete_reinforcement_detailing_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+          "candidate_role": "primary",
+          "evidence": "Local raw structural detailing source; article source labels reference NSCP/ACI hook and bend-detailing provisions.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "structural_concrete_reinforcement_detailing_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local text contains standard-hook, minimum bend diameter, hook-development, crosstie, hoop, and seismic-hook references.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "prior_batch_source_capture",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-144/detailing-rebar.source-capture.md",
+          "candidate_role": "supporting",
+          "evidence": "Prior accepted structural source capture for rebar detailing.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "The local reinforcement detailing source family directly covers hooks, bend diameters, hook development, hoops, crossties, and seismic hook concepts needed to source a local-first article pass.",
+      "known_risks": [
+        "Do not restore exact code-table claims from memory; verify any NSCP or ACI section label against the local source capture used by the production worker.",
+        "Raw NSCP PDF support was not treated as sufficient unless a readable capture is created during the production batch."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    },
+    {
+      "cluster_id": "lea-strc-007-04",
+      "slug": "lea-strc-007-04-core-concept",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-04-core-concept--0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "title": "Column ties serve two purposes: (1) hold longitudinal bars",
+      "linked_question_count": 10,
+      "source_family": "structural_concrete_column_ties_and_transverse_reinforcement",
+      "source_path_candidates": [
+        {
+          "source_family": "structural_concrete_reinforcement_detailing_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+          "candidate_role": "primary",
+          "evidence": "Local detailing source for column ties, spirals, transverse reinforcement, tie spacing, and confinement.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "structural_concrete_reinforcement_detailing_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable text contains spirals/ties, transverse reinforcement, and tie spacing references.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "prior_batch_source_capture",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-144/detailing-rebar.refined.md",
+          "candidate_role": "supporting",
+          "evidence": "Prior accepted refined capture for reinforcement detailing.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "The readable structural detailing source supports the core topic of column ties, longitudinal-bar restraint, buckling restraint, and transverse reinforcement without needing an unavailable source family first.",
+      "known_risks": [
+        "Exact tie-spacing formulas and seismic detailing limits must be checked in local source extracts before editing article or questions.",
+        "Article source labels mention NSCP and ACI sections; production should cite only clauses captured locally."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    },
+    {
+      "cluster_id": "lea-strc-007-06",
+      "slug": "lea-strc-007-06-core-concept",
+      "article_id": "d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-007-06-core-concept--d5be6bfb-1b0f-45ab-a658-7f4f2bdb90fc",
+      "title": "Construction joints interrupt the concrete monolith at",
+      "linked_question_count": 10,
+      "source_family": "structural_concrete_construction_joints_and_integrity",
+      "source_path_candidates": [
+        {
+          "source_family": "structural_concrete_reinforcement_detailing_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Detailing of Reinforcment in Concrete Structures.pdf",
+          "candidate_role": "primary",
+          "evidence": "Local detailing source includes construction-joint, wall, diaphragm, continuity, and connection context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "structural_concrete_reinforcement_detailing_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Detailing of Reinforcment in Concrete Structures.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable text references construction joints in walls and diaphragms plus continuity and connection detailing.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "prior_batch_source_capture",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-145/detailing-precast-integrity.refined.md",
+          "candidate_role": "supporting",
+          "evidence": "Prior accepted refined capture for concrete integrity and connection detailing.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Local structural detailing files contain enough construction-joint and integrity context for a conservative local-first pass, especially when paired with prior Batch 145 source-map evidence.",
+      "known_risks": [
+        "Local support is stronger for construction-joint placement and continuity concepts than for complete NSCP Section 6.4 clause restoration.",
+        "Worker should narrow article claims or create fresh local captures before citing exact timing, roughening, shear-friction, or inspection requirements."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    }
+  ],
+  "reservation_stop_condition": "Batch 146 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git, Supabase, deploy, DB, or main-merge action."
+}

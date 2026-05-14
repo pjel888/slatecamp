@@ -1,0 +1,159 @@
+{
+  "batch": 147,
+  "batch_id": "reservation-batch-147-local-first",
+  "manifest_type": "production_line_reservation",
+  "status": "reserved_only_not_started",
+  "generated_at": "2026-05-14T10:42:01+08:00",
+  "baseline": "e200b33563",
+  "branch": "3dlab-gray-viewport-bg",
+  "role": "reservation_only",
+  "task": "Fixed non-overlapping reservation manifest for the next sourceable residual non-prac local-first content batch after Batch 146 reservations.",
+  "constraints": {
+    "no_article_folder_edits": true,
+    "no_question_edits": true,
+    "no_source_folder_edits": true,
+    "no_code_or_package_edits": true,
+    "no_git_stage_commit_push": true,
+    "no_supabase_deploy_db_main_merge": true,
+    "no_lea_prac": true
+  },
+  "selection_rule": "Continue after Batch 146 reservations; keep structures first where sourceable; skip timber clusters whose exact local code/species-table source was not discovered.",
+  "accepted_batch_overlap_scan": {
+    "status": "PASS",
+    "inspected_manifest_glob": ".ai/03_plans/production-line-batch-{087..145}-manifest.json",
+    "normalization": "Compared base cluster ids after stripping trailing -core-concept from selected slugs.",
+    "reserved_ids_found_in_accepted_manifests": []
+  },
+  "hard_blocked_not_reserved": [
+    "lea-theo-008-02",
+    "lea-theo-008-03",
+    "lea-matl-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-004-02"
+  ],
+  "reserved_clusters": [
+    {
+      "cluster_id": "lea-strc-008-01",
+      "slug": "lea-strc-008-01-core-concept",
+      "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-008-01-core-concept--62e4a20d-b739-4d5d-9349-aba651027b51",
+      "title": "Structural steel members",
+      "linked_question_count": 10,
+      "source_family": "structural_steel_members",
+      "source_path_candidates": [
+        {
+          "source_family": "aisc_steel_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Local AISC raw source candidate for structural steel shapes, member behavior, and design checks.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "candidate_role": "supporting_raw",
+          "evidence": "Local structural systems source for steel framing, member shapes, buckling, columns, and connections.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable local text includes structural steel framing, steel column shapes, member slenderness, and buckling context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Readable BSI text plus local AISC raw source candidates provide enough local support for structural steel member identification, framing role, shapes, and stability concepts.",
+      "known_risks": [
+        "AISC equations, compactness limits, and design tables need fresh raw capture before exact numeric claims are restored.",
+        "PASE-specific guidance was not separately discovered as a readable local source during reservation."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    },
+    {
+      "cluster_id": "lea-strc-008-02",
+      "slug": "lea-strc-008-02-core-concept",
+      "article_id": "ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-008-02-core-concept--ace46266-45f1-4ecf-8f80-dcc9fb4b9282",
+      "title": "High-strength bolted",
+      "linked_question_count": 10,
+      "source_family": "structural_steel_connections",
+      "source_path_candidates": [
+        {
+          "source_family": "aisc_steel_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Local AISC raw source candidate for steel connection concepts, bolting, and connection checks.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+          "candidate_role": "supporting_raw",
+          "evidence": "Local systems source for point, bolted, welded, rigid, and high-strength bolting connection context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable local text references bolted and welded steel connections, high-strength bolting, and moment-frame connection context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Local BSI readable text covers the connection family and local AISC raw source can anchor AISC-specific connection terminology during the production pass.",
+      "known_risks": [
+        "Exact AISC bolt-hole, edge-distance, slip-critical, or weld-size requirements require fresh local capture from AISC or another readable source.",
+        "AWS D1.1 was listed by article metadata but was not discovered as a readable local candidate during reservation."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    },
+    {
+      "cluster_id": "lea-strc-010-01",
+      "slug": "lea-strc-010-01-core-concept",
+      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-010-01-core-concept--ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+      "title": "Masonry Construction",
+      "linked_question_count": 10,
+      "source_family": "masonry_construction",
+      "source_path_candidates": [
+        {
+          "source_family": "masonry_lecture_raw",
+          "source_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+          "candidate_role": "primary_raw",
+          "evidence": "Local masonry source for masonry definitions, bond, wythe, units, and construction practices.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "masonry_lecture_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+          "candidate_role": "primary_readable",
+          "evidence": "Readable local text includes masonry terminology, bonds, wythes, CHB, and construction context.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "pd1096_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Local code-law source candidate for PD1096 Rule XIX references if exact provisions are needed.",
+          "exists_checked": true
+        },
+        {
+          "source_family": "building_structures_illustrated_refined",
+          "source_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+          "candidate_role": "supporting_readable",
+          "evidence": "Readable local text includes CMU, bearing-wall, and masonry construction context.",
+          "exists_checked": true
+        }
+      ],
+      "why_sourceable": "Local masonry lecture, BSI, and PD1096 refined candidates support a conservative masonry construction pass without needing blocked theory/materials recovery.",
+      "known_risks": [
+        "Exact PD1096 Rule XIX wording and ACI 530 clauses should be verified from local source extracts before article or question edits.",
+        "Do not treat lecture notes as a substitute for code text where the question asks for legal/code requirements."
+      ],
+      "non_overlap_proof": "Absent from accepted Batch 087-145 selected-cluster scan after slug normalization; not present in the user-provided consumed Batch 143-145 lists; not in the hard-blocked carry-forward list."
+    }
+  ],
+  "reservation_stop_condition": "Batch 147 reserves exactly three eligible non-prac clusters and performs no article, source, question-edit, package, code, git, Supabase, deploy, DB, or main-merge action."
+}
