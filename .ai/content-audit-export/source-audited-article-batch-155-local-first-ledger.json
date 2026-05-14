@@ -1,0 +1,183 @@
+{
+  "batch": 155,
+  "batch_id": "source-audited-batch-155-local-first",
+  "baseline": "ce04893a6c",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T05:13:58.522Z",
+  "entries": [
+    {
+      "cluster_id": "lea-matl-009-03",
+      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+      "slug": "lea-matl-009-03-core-concept",
+      "title": "Schedules serve as a bridge between graphical drawings",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b",
+      "status": "source_audited_local_first_reconciled_batch_076",
+      "source_ids": [
+        "ra9266-irr-b155",
+        "pd1096-rirr-b155",
+        "uap-spp203-b155"
+      ],
+      "source_count": 3,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:f977ca203ad972e8d1da515f89008fd1170b8579842254c816082abfd87393ff",
+      "candidate_sha256": "sha256:f977ca203ad972e8d1da515f89008fd1170b8579842254c816082abfd87393ff",
+      "source_evidence_sha256": "sha256:fe648858d21def51d564dd02a84810ae168d77fcaf91a895324646cf6da66ed9",
+      "linked_questions_sha256": "sha256:fa0ae5eb89d252cda5afc2e6c86835c2c487bb253129a15448404de6262c2d1c",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "batch_076_reconciliation": "Batch 076 local-only evidence was inspected and its source hashes remain valid; Batch 155 refreshes the same two residual clusters to satisfy the current Real World Scenario and production-line handoff requirements.",
+      "no_exact_code_claims": [
+        "CSI/MasterFormat schedule taxonomy and section numbering remain outside this source boundary.",
+        "Door product dimensions, fire ratings, hardware standards, and proprietary manufacturer details were not asserted unless already present in checked local sources.",
+        "NSCP, ADA, AAMA, ASTM, and external product-standard claims were not converted into answers for this schedule cluster."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/scoped-validation-batch-155.json",
+        "taxonomy": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/taxonomy.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/3060b293-dca3-4aaf-84cf-79868c4eb859.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/319f6c8a-d380-490d-8b75-1cc780e66e92.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/32622dd5-9b30-41ff-8e1a-7ad55aa1126d.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/32c7f3d4-1596-4fa2-996a-15e019392a1e.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/4ba62ecc-7734-4141-8852-d588d5e084f4.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/6655162c-80f9-4691-87e6-ef2845525534.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/734504f4-15c1-4dd5-9e09-ee8be01135e6.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/c825d079-a35a-4b9a-897b-1b8237c726f9.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/f5829a73-81ab-4507-94c9-c10174cbc102.json",
+          ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/f6db9f92-7f75-4663-bad6-d1174d82889f.json"
+        ]
+      }
+    },
+    {
+      "cluster_id": "lea-matl-009-04",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "slug": "lea-matl-009-04-core-concept",
+      "title": "Quality control operates through a systematic process",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8",
+      "status": "source_audited_local_first_reconciled_batch_076",
+      "source_ids": [
+        "pd1096-rirr-b155",
+        "ra9266-irr-b155",
+        "uap-spp203-b155",
+        "design-process-b155"
+      ],
+      "source_count": 4,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:8b8727349898131c7157b7fc75397b6284c8e5837208dba4a2840045ab966457",
+      "candidate_sha256": "sha256:8b8727349898131c7157b7fc75397b6284c8e5837208dba4a2840045ab966457",
+      "source_evidence_sha256": "sha256:324194247539054b089740dec9a377f7c6caf0dc8f2f8b9effd1147ec4246718",
+      "linked_questions_sha256": "sha256:28144e1e2e77704eb552388799cb664f63d9a6cca6b6920bec15c2852351d894",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "batch_076_reconciliation": "Batch 076 local-only evidence was inspected and its source hashes remain valid; Batch 155 refreshes the same two residual clusters to satisfy the current Real World Scenario and production-line handoff requirements.",
+      "no_exact_code_claims": [
+        "ASTM, ISO, DPWH Blue Book, and proprietary product-test procedures were not asserted unless the item itself provides that source boundary.",
+        "Manufacturer tolerances, warranties, VOC limits, and product-specific acceptance values remain outside this local-source refresh.",
+        "Quality control is framed as documentation, approved-plan/specification review, inspection, testing where applicable, and professional responsibility."
+      ],
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/compose-report.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/scoped-validation-batch-155.json",
+        "taxonomy": ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/taxonomy.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/0dc0d098-4ea9-4f84-98b7-f3662a00f5d8.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/1fcb89ff-7d50-419e-855d-23e05aef748b.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/4f42cbff-fab0-442c-921d-f52f47778ac2.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/600a1d75-e652-421e-955e-82e0a2b50009.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/727f8889-ee12-4dfa-a3cc-7faf4458a987.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/b15cdf83-db52-4574-a5aa-ec13a7f88cf9.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/ce588630-7c72-4cbc-807e-8aefdf71ebf4.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/d42c3032-e75f-45e9-97cb-e61e5bc6bcac.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/f913b597-9521-47df-81ba-2cd55c79d666.json",
+          ".ai/content-audit-export/articles/lea-matl-009-04-core-concept--69313849-9d45-4777-84fc-4b47430c30b8/question-edits/fbd22e3d-b4ef-431d-aefe-6fcf8072ffda.json"
+        ]
+      }
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "source_id": "ra9266-irr-b155",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "raw_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "refined_exists": true,
+      "status": "pass"
+    },
+    {
+      "source_id": "pd1096-rirr-b155",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "refined_exists": true,
+      "status": "pass"
+    },
+    {
+      "source_id": "uap-spp203-b155",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "refined_exists": true,
+      "status": "pass"
+    },
+    {
+      "source_id": "design-process-b155",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "raw_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "raw_exists": true,
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "refined_exists": true,
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "marker_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_preservation_or_documented_correction": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass",
+    "scoped_git_diff_check": "pass"
+  }
+}

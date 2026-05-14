@@ -40,6 +40,10 @@ A source-safe LEA answer asks: What document controls the requirement? Who is re
 | Specifications | Architect-prepared architectural documents under RA 9266 signing/sealing rules. |
 | Testing and commissioning | Specialized service area under UAP SPP 203. |
 
+## Real World Scenario
+
+A public-building submittal package identifies a wall-panel system but does not show enough information to compare it with the approved plans, specifications, material-quality requirements, and any applicable special tests for prefabricated assemblies. The source-safe response is to require the missing documentation before approval. Do not assume ASTM, ISO, DPWH, warranty, VOC, or manufacturer tolerance values unless those sources are captured for the item.
+
 ## How It's Tested on the LEA
 
 Expect questions that try to pull you toward a generic laboratory standard. If the standard is not named by the question or checked source, answer at the document-control level: specifications, approved plans, inspection, special tests, and architect-of-record responsibility.

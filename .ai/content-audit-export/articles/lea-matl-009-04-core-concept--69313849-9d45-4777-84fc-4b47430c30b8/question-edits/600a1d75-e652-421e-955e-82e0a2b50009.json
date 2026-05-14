@@ -2,63 +2,66 @@
   "question_id": "600a1d75-e652-421e-955e-82e0a2b50009",
   "baseline_hash": "sha256:8307c9b7573c6423db8bbbe12e0ca35aa31f0706904fdca58a0321c21aa8e21f",
   "action": "replace",
-  "reason": "source-audited-article-batch-076-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-009-04-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-076",
-  "approved_at": "2026-05-12T03:12:00.000+08:00",
+  "reason": "source-audited-batch-155-local-first refreshed Batch 076 local-source rewrite with Batch 155 production-line reconciliation and source-safe scenario support for lea-matl-009-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-155",
+  "approved_at": "2026-05-14T05:13:58.522Z",
   "source_audit_support": {
     "parent_article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
     "parent_article_slug": "lea-matl-009-04-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 2915-2922, 3387-3402, 4217, 4363-4364, 4659-4663, and 4742; RA 9266 IRR refined markdown lines 41-76 and 552-580; UAP SPP 203 refined markdown lines 128-140 and 1619-1623; Design Process refined markdown lines 190-204 and 399-411",
+    "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction; UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by prior local PyMuPDF extraction",
     "checked_markdown_lines": [
-      "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction",
-      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction",
-      "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by local PyMuPDF extraction",
-      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by local PyMuPDF extraction"
+      "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction",
+      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction",
+      "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction",
+      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by prior local PyMuPDF extraction"
     ],
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-b076",
+        "source_id": "pd1096-rirr-b155",
         "label": "PD 1096 RIRR 2004 - DPWH Official",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction"
       },
       {
-        "source_id": "ra9266-irr-b076",
+        "source_id": "ra9266-irr-b155",
         "label": "RA 9266 IRR - Architecture Act of 2004",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
         "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction"
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction"
       },
       {
-        "source_id": "uap-spp203-b076",
+        "source_id": "uap-spp203-b155",
         "label": "UAP SPP Doc. 203 - Specialized Architectural Services",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
         "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-        "raw_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
-        "locator": "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by local PyMuPDF extraction"
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "locator": "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction"
       },
       {
-        "source_id": "design-process-b076",
+        "source_id": "design-process-b155",
         "label": "Design Process",
         "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
         "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "raw_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
-        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by local PyMuPDF extraction"
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by prior local PyMuPDF extraction"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 076 local raw-source-audited quality_control_documentation scope."
+    "local_source_safe_action": "Question text/options/rationale preserved or lightly tightened from Batch 076 within the Batch 155 checked local source boundary for quality-control documentation.",
+    "batch_id": "source-audited-batch-155-local-first",
+    "answer_key_policy": "Existing Batch 076 source-audited corrected answer key preserved; Batch 155 made no new answer-key change.",
+    "batch_155_reconciliation": "Batch 076 local-only evidence was inspected and its source hashes remain valid; Batch 155 refreshes the same two residual clusters to satisfy the current Real World Scenario and production-line handoff requirements."
   },
   "proposed": {
-    "text": "In this source-audited batch, what is the safest quality-control baseline?",
+    "text": "For a materials-and-methods review question, what is the safest quality-control baseline?",
     "options": [
       {
         "id": "a",

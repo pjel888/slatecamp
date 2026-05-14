@@ -1,20 +1,20 @@
 {
   "schema_version": "source-audit-evidence-v1",
-  "batch_id": "source-audited-article-batch-076-local-first",
-  "audit_date": "2026-05-12",
-  "audited_at": "2026-05-12T03:18:00.000+08:00",
+  "batch_id": "source-audited-batch-155-local-first",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T05:13:58.522Z",
   "target": {
     "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
     "slug": "lea-matl-009-03-core-concept",
     "title": "Schedules serve as a bridge between graphical drawings",
     "article_folder": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b",
-    "normalized_sha256": "sha256:cf08c03689e004a9045a0cea8b15166d45335cd5f42924f9fe64c2396b2f5f65",
-    "candidate_sha256": "sha256:cf08c03689e004a9045a0cea8b15166d45335cd5f42924f9fe64c2396b2f5f65",
+    "normalized_sha256": "sha256:f977ca203ad972e8d1da515f89008fd1170b8579842254c816082abfd87393ff",
+    "candidate_sha256": "sha256:f977ca203ad972e8d1da515f89008fd1170b8579842254c816082abfd87393ff",
     "candidate_path": ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/candidate.md"
   },
   "classification": {
     "topic_family": "architectural_schedules",
-    "local_first_batch": "076",
+    "local_first_batch": "155",
     "source_sensitivity": "legal_or_code",
     "contains_legal_or_code_claims": true,
     "source_risk_tier": "legal_or_code",
@@ -25,7 +25,9 @@
     "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
     "blockers": [],
-    "warnings": []
+    "warnings": [
+      "No Supabase upload was run for Batch 155; this is a local-only production-line handoff."
+    ]
   },
   "raw_pdf_gate": {
     "status": "PASS",
@@ -34,41 +36,41 @@
     "all_section_numbers_verified_against_raw_pdf": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
+    "local_pdf_extraction_method": "Batch 076 local PyMuPDF extraction reused after Batch 155 hash recheck",
     "blockers": []
   },
   "checked_sources": [
     {
-      "source_id": "ra9266-irr-b076",
+      "source_id": "ra9266-irr-b155",
       "label": "RA 9266 IRR - Architecture Act of 2004",
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
       "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
       "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-      "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction"
+      "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction"
     },
     {
-      "source_id": "pd1096-rirr-b076",
+      "source_id": "pd1096-rirr-b155",
       "label": "PD 1096 RIRR 2004 - DPWH Official",
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-      "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+      "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction"
     },
     {
-      "source_id": "uap-spp203-b076",
+      "source_id": "uap-spp203-b155",
       "label": "UAP SPP Doc. 203 - Specialized Architectural Services",
       "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
       "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
       "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
-      "locator": "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by local PyMuPDF extraction"
+      "locator": "UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction"
     }
   ],
   "claims": [
     {
-      "claim_id": "lea-matl-009-03-core-concept-article-b076",
+      "claim_id": "lea-matl-009-03-core-concept-article-b155",
       "claim_text": "Article lea-matl-009-03-core-concept was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "article_rewrite",
       "audit_result": "PASS",
@@ -82,7 +84,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-6655162c-80f9-4691-87e6-ef2845525534-ALE-MATL-009-03-001-b076",
+      "claim_id": "question-6655162c-80f9-4691-87e6-ef2845525534-ALE-MATL-009-03-001-b155",
       "claim_text": "Question 6655162c-80f9-4691-87e6-ef2845525534 ALE-MATL-009-03-001 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -96,7 +98,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-734504f4-15c1-4dd5-9e09-ee8be01135e6-ALE-MATL-009-03-010-b076",
+      "claim_id": "question-734504f4-15c1-4dd5-9e09-ee8be01135e6-ALE-MATL-009-03-010-b155",
       "claim_text": "Question 734504f4-15c1-4dd5-9e09-ee8be01135e6 ALE-MATL-009-03-010 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -110,7 +112,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-3060b293-dca3-4aaf-84cf-79868c4eb859-ALE-MATL-009-03-003-b076",
+      "claim_id": "question-3060b293-dca3-4aaf-84cf-79868c4eb859-ALE-MATL-009-03-003-b155",
       "claim_text": "Question 3060b293-dca3-4aaf-84cf-79868c4eb859 ALE-MATL-009-03-003 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -124,7 +126,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-32c7f3d4-1596-4fa2-996a-15e019392a1e-ALE-MATL-009-03-008-b076",
+      "claim_id": "question-32c7f3d4-1596-4fa2-996a-15e019392a1e-ALE-MATL-009-03-008-b155",
       "claim_text": "Question 32c7f3d4-1596-4fa2-996a-15e019392a1e ALE-MATL-009-03-008 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -138,7 +140,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-32622dd5-9b30-41ff-8e1a-7ad55aa1126d-ALE-MATL-009-03-006-b076",
+      "claim_id": "question-32622dd5-9b30-41ff-8e1a-7ad55aa1126d-ALE-MATL-009-03-006-b155",
       "claim_text": "Question 32622dd5-9b30-41ff-8e1a-7ad55aa1126d ALE-MATL-009-03-006 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -152,7 +154,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-319f6c8a-d380-490d-8b75-1cc780e66e92-ALE-MATL-009-03-005-b076",
+      "claim_id": "question-319f6c8a-d380-490d-8b75-1cc780e66e92-ALE-MATL-009-03-005-b155",
       "claim_text": "Question 319f6c8a-d380-490d-8b75-1cc780e66e92 ALE-MATL-009-03-005 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -166,7 +168,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-4ba62ecc-7734-4141-8852-d588d5e084f4-ALE-MATL-009-03-007-b076",
+      "claim_id": "question-4ba62ecc-7734-4141-8852-d588d5e084f4-ALE-MATL-009-03-007-b155",
       "claim_text": "Question 4ba62ecc-7734-4141-8852-d588d5e084f4 ALE-MATL-009-03-007 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -180,7 +182,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-c825d079-a35a-4b9a-897b-1b8237c726f9-ALE-MATL-009-03-009-b076",
+      "claim_id": "question-c825d079-a35a-4b9a-897b-1b8237c726f9-ALE-MATL-009-03-009-b155",
       "claim_text": "Question c825d079-a35a-4b9a-897b-1b8237c726f9 ALE-MATL-009-03-009 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -194,7 +196,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-f5829a73-81ab-4507-94c9-c10174cbc102-ALE-MATL-009-03-002-b076",
+      "claim_id": "question-f5829a73-81ab-4507-94c9-c10174cbc102-ALE-MATL-009-03-002-b155",
       "claim_text": "Question f5829a73-81ab-4507-94c9-c10174cbc102 ALE-MATL-009-03-002 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -208,7 +210,7 @@
       "blockers": []
     },
     {
-      "claim_id": "question-f6db9f92-7f75-4663-bad6-d1174d82889f-ALE-MATL-009-03-004-b076",
+      "claim_id": "question-f6db9f92-7f75-4663-bad6-d1174d82889f-ALE-MATL-009-03-004-b155",
       "claim_text": "Question f6db9f92-7f75-4663-bad6-d1174d82889f ALE-MATL-009-03-004 was rewritten to the checked architectural_schedules source scope.",
       "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
@@ -220,23 +222,94 @@
         "quoted_pdf_excerpt": "Architectural documents include schedules, specifications and other instruments of service."
       },
       "blockers": []
+    },
+    {
+      "claim_id": "lea-matl-009-03-core-concept-real-world-scenario-b155",
+      "claim_text": "The Real World Scenario for lea-matl-009-03-core-concept is constrained to checked local source concepts and avoids unsupported exact standard, manufacturer, or product claims.",
+      "claim_type": "real_world_scenario",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "ra9266-irr-b155",
+          "pd1096-rirr-b155",
+          "uap-spp203-b155"
+        ],
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction; PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction; UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction",
+        "source_boundary_note": "Scenario uses document coordination, approved plans/specifications, inspection/testing where applicable, and architect-of-record responsibility only within local source evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "lea-matl-009-03-core-concept-real-world-scenario-b155",
+      "claim_text": "The Real World Scenario for lea-matl-009-03-core-concept is constrained to checked local source concepts and avoids unsupported exact standard, manufacturer, or product claims.",
+      "claim_type": "real_world_scenario",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "ra9266-irr-b155",
+          "pd1096-rirr-b155",
+          "uap-spp203-b155"
+        ],
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by prior local PyMuPDF extraction; PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by prior local PyMuPDF extraction; UAP SPP 203 refined markdown lines 101-140 and 1619-1623; raw PDF pages 78-80 and 95 checked by prior local PyMuPDF extraction",
+        "source_boundary_note": "Scenario uses document coordination, approved plans/specifications, inspection/testing where applicable, and architect-of-record responsibility only within local source evidence."
+      },
+      "blockers": []
     }
   ],
-  "unverified_or_rejected_claims": [],
+  "unverified_or_rejected_claims": [
+    {
+      "rejected_claim_id": "lea-matl-009-03-rejected-1-b155",
+      "claim_text": "CSI/MasterFormat schedule taxonomy and section numbering remain outside this source boundary.",
+      "reason": "Outside Batch 155 checked source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-matl-009-03-rejected-2-b155",
+      "claim_text": "Door product dimensions, fire ratings, hardware standards, and proprietary manufacturer details were not asserted unless already present in checked local sources.",
+      "reason": "Outside Batch 155 checked source boundary."
+    },
+    {
+      "rejected_claim_id": "lea-matl-009-03-rejected-3-b155",
+      "claim_text": "NSCP, ADA, AAMA, ASTM, and external product-standard claims were not converted into answers for this schedule cluster.",
+      "reason": "Outside Batch 155 checked source boundary."
+    }
+  ],
   "scenario_enrichment": {
-    "policy_status": "pending",
-    "eligibility_status": "eligible-deferred",
-    "blocker_status": "nonblocking",
-    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
+    "policy_status": "satisfied",
+    "eligibility_status": "included",
+    "blocker_status": "none",
+    "notes": "Batch 155 added a source-safe Real World Scenario constrained to checked local sources."
   },
   "sme_review": {
     "required": false,
-    "status": "not_required"
+    "status": "pass",
+    "reviewer": "codex-local-source-audit-batch-155",
+    "reviewed_at": "2026-05-14T05:13:58.522Z",
+    "notes": "Batch 076 local-only evidence was inspected and its source hashes remain valid; Batch 155 refreshes the same two residual clusters to satisfy the current Real World Scenario and production-line handoff requirements."
   },
   "local_first_publication": {
     "supabase_push_attempted": false,
     "deploy_attempted": false,
     "commit_attempted": false,
-    "ready_for_final_publishing_review": true
+    "ready_for_final_publishing_review": true,
+    "batch_id": "source-audited-batch-155-local-first",
+    "generated_at": "2026-05-14T05:13:58.522Z",
+    "question_edit_paths": [
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/3060b293-dca3-4aaf-84cf-79868c4eb859.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/319f6c8a-d380-490d-8b75-1cc780e66e92.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/32622dd5-9b30-41ff-8e1a-7ad55aa1126d.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/32c7f3d4-1596-4fa2-996a-15e019392a1e.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/4ba62ecc-7734-4141-8852-d588d5e084f4.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/6655162c-80f9-4691-87e6-ef2845525534.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/734504f4-15c1-4dd5-9e09-ee8be01135e6.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/c825d079-a35a-4b9a-897b-1b8237c726f9.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/f5829a73-81ab-4507-94c9-c10174cbc102.json",
+      ".ai/content-audit-export/articles/lea-matl-009-03-core-concept--b835f8bb-bb09-44fa-855a-37128197c63b/question-edits/f6db9f92-7f75-4663-bad6-d1174d82889f.json"
+    ]
+  },
+  "reconciliation": {
+    "previous_batch": "source-audited-article-batch-076-local-first",
+    "status": "reused_after_hash_recheck",
+    "decision": "Batch 076 local-only evidence was inspected and its source hashes remain valid; Batch 155 refreshes the same two residual clusters to satisfy the current Real World Scenario and production-line handoff requirements.",
+    "reason_for_refresh": "Batch 076 deferred Real World Scenario enrichment; Batch 155 requires scenario coverage and fixed production-line artifacts."
   }
 }

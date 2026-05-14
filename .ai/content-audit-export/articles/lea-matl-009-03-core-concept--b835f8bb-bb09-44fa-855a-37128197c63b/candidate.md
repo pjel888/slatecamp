@@ -39,6 +39,10 @@ UAP SPP 203 also identifies Contract Documentation and Review as a specialized a
 | Signing and sealing | Architect-of-record responsibility applies to architectural documents issued under seal. |
 | Missing schedule | Expect coordination risk, field ambiguity, or incomplete documentation. |
 
+## Real World Scenario
+
+A project architect reviews a permit set for a small clinic. The floor plan uses door marks, room numbers, finish tags, and specification callouts, but one door mark and one finish tag are missing from the schedules. The source-safe correction is to coordinate the drawings, schedules, and specifications before issuance, then keep the architect-of-record responsibility tied to the corrected architectural documents. Do not add product dimensions, fire ratings, or hardware standards unless a checked source in the item supports them.
+
 ## How It's Tested on the LEA
 
 Expect questions asking why schedules are used. Choose the answer that emphasizes coordination, clarity, completeness, and professional documentation. Avoid answers that reduce schedules to cost tracking, installation progress tracking, or purely visual presentation.
