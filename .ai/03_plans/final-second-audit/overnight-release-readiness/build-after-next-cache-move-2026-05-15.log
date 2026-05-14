@@ -1,0 +1,291 @@
+Stopping dev server PIDs on :3000: 37978 38078
+Moved .next to .ai/tmp/.next.backup-2026-05-15-014746
+$ bun scripts/next-build.ts
+▲ Next.js 16.2.3 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+(node:38617) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Found 25 warnings while optimizing generated CSS:
+
+Issue #1:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-\?\?r-stack-\7 \.�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-??r-stack-.�) + 0.5rem);
+[2m┆[22m                             [33m[2m^--[22m Unexpected token Delim('?')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-FAr-stack-\e 0�\)\+0\.5rem\)\] {[22m
+
+Issue #2:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-FAr-stack-\e 0�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-FAr-stack-0�) + 0.5rem);
+[2m┆[22m                                       [33m[2m^--[22m Unexpected token Delim('\u{e}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-slider-stack-height\)\+0\.5rem\)\] {[22m
+
+Issue #3:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-�\>r-stack-�-�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-�>r-stack-�-�) + 0.5rem);
+[2m┆[22m                              [33m[2m^--[22m Unexpected token Delim('>')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-�Ar-stack-Z0�\)\+0\.5rem\)\] {[22m
+
+Issue #4:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-�Wr-stack-\10 E�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-�Wr-stack-E�) + 0.5rem);
+[2m┆[22m                                       [33m[2m^--[22m Unexpected token Delim('\u{10}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-full {[22m
+
+Issue #5:
+[2m│   }[22m
+[2m│   .bg-\[var\(-�\1e \3 j\14 �-bg\)\] {[22m
+[2m│[22m     background-color: var(-�j�-bg);
+[2m┆[22m                           [33m[2m^--[22m Unexpected token Ident("-�")[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bg-accent {[22m
+
+Issue #6:
+[2m│   }[22m
+[2m│   .to-\[var\(--�\13 \6 0�rblue\)\] {[22m
+[2m│[22m     --tw-gradient-to: var(--�0rblue);
+[2m┆[22m                              [33m[2m^--[22m Unexpected token Delim('\u{13}')[39m
+[2m┆[22m
+[2m│     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));[22m
+[2m│   }[22m
+
+Issue #7:
+[2m│   }[22m
+[2m│   .font-\[family-\1f \2 q\:var\(--\18 ��\1a dm-mono\)\] {[22m
+[2m│[22m     font-family: family-q:var(--�dm-mono);
+[2m┆[22m                                   [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\13 bJ��\)\] {[22m
+
+Issue #8:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\13 bJ��\)\] {[22m
+[2m│[22m     font-family: var(--bJ�);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\!dm�Y�\)\] {[22m
+
+Issue #9:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\!dm�Y�\)\] {[22m
+[2m│[22m     font-family: var(--!dm�Y�);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �0dm-1\1 0\)\] {[22m
+
+Issue #10:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �0dm-1\1 0\)\] {[22m
+[2m│[22m     font-family: var(--0dm-10);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �qsyne\)\] {[22m
+
+Issue #11:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �qsyne\)\] {[22m
+[2m│[22m     font-family: var(--qsyne);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\2 dm-mono\)\] {[22m
+
+Issue #12:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\2 dm-mono\)\] {[22m
+[2m│[22m     font-family: var(--�dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\5 dm-mono\)\] {[22m
+
+Issue #13:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\5 dm-mono\)\] {[22m
+[2m│[22m     font-family: var(--�dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\7 dm-mono\)\] {[22m
+
+Issue #14:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\7 dm-mono\)\] {[22m
+[2m│[22m     font-family: var(--�dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\!dm-mono\)\] {[22m
+
+Issue #15:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\!dm-mono\)\] {[22m
+[2m│[22m     font-family: var(--�!dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��boldonse\)\] {[22m
+
+Issue #16:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��boldonse\)\] {[22m
+[2m│[22m     font-family: var(--�boldonse);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��display\)\] {[22m
+
+Issue #17:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��display\)\] {[22m
+[2m│[22m     font-family: var(--�display);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��dm-mono\)\] {[22m
+
+Issue #18:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��dm-mono\)\] {[22m
+[2m│[22m     font-family: var(--�dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--font-body\)\] {[22m
+
+Issue #19:
+[2m│   }[22m
+[2m│   .font-\[family-�\3 q\:var\(--\18 ��\7 dm-mono\)\] {[22m
+[2m│[22m     font-family: family-�q:var(--�dm-mono);
+[2m┆[22m                                   [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-boldonse {[22m
+
+Issue #20:
+[2m│   }[22m
+[2m│   .text-\[M�\!\] {[22m
+[2m│[22m     color: M!;
+[2m┆[22m              [33m[2m^--[22m Unexpected token Delim('!')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .text-\[var\(--color-signal-gold\)\] {[22m
+
+Issue #21:
+[2m│   }[22m
+[2m│   .text-\[��\!\] {[22m
+[2m│[22m     color: �!;
+[2m┆[22m              [33m[2m^--[22m Unexpected token Delim('!')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .text-accent {[22m
+
+Issue #22:
+[2m│   }[22m
+[2m│   .has-\[\>img\:Ֆ\11 -�\3 �\]\:pt-0 {[22m
+[2m│[22m     &:has(>img:Ֆ-��) {
+[2m┆[22m                [33m[2m^--[22m 'Ֆ' is not recognized as a valid pseudo-class. Did you mean '::Ֆ' (pseudo-element) or is this a typo?[39m
+[2m┆[22m
+[2m│       padding-top: calc(var(--spacing) * 0);[22m
+[2m│     }[22m
+
+Issue #23:
+[2m│   .dark\:bg-\[var\(--d\5 p-panel-\1a ��\)\] {[22m
+[2m│     &:is(.dark *) {[22m
+[2m│[22m       background-color: var(--dp-panel-�);
+[2m┆[22m                                [33m[2m^--[22m Unexpected token Delim('\u{5}')[39m
+[2m┆[22m
+[2m│     }[22m
+[2m│   }[22m
+
+Issue #24:
+[2m│   .md\:\[\&\>\*\:first-\=\<�\]\:order-2 {[22m
+[2m│     @media (width >= 48rem) {[22m
+[2m│[22m       &>*:first-=<� {
+[2m┆[22m           [33m[2m^--[22m 'first-' is not recognized as a valid pseudo-class. Did you mean '::first-' (pseudo-element) or is this a typo?[39m
+[2m┆[22m
+[2m│         order: 2;[22m
+[2m│       }[22m
+
+Issue #25:
+[2m│   .md\:\[\&\>\*\:first-\=\<�\]\:order-2 {[22m
+[2m│     @media (width >= 48rem) {[22m
+[2m│[22m       &>*:first-=<� {
+[2m┆[22m                 [33m[2m^--[22m Unexpected token Delim('=')[39m
+[2m┆[22m
+[2m│         order: 2;[22m
+[2m│       }[22m
+
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+./src/app/globals.css:2:174953
+Module not found: Can't resolve '"/images/dashboard/Dashboard-BG-Image.png"'
+  [90m1 |[0m ...
+[31m[1m>[0m [90m2 |[0m ...-\[url\(\[32m"\/images\/dashboard\/Dashboard-BG-Image\.png\"\)\]{background-image:url(/image...[0m
+  [90m  |[0m                                                [31m[1m^[0m
+  [90m3 |[0m ...
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+  Server Component:
+    ./src/app/globals.css
+    ./src/lib/developer/repo-metrics.ts
+    ./src/app/developer/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/globals.css:2:175088
+Module not found: Can't resolve '"/images/dashboard/Dock-Lake-BG-Image.png"'
+  [90m1 |[0m ...
+[31m[1m>[0m [90m2 |[0m ...[32m\"\/images\/dashboard\/Dock-Lake-BG-Image\.png\"\)\]{background-image:url(/images/dashbo...[0m
+  [90m  |[0m                                                [31m[1m^[0m
+  [90m3 |[0m ...
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+  Server Component:
+    ./src/app/globals.css
+    ./src/lib/developer/repo-metrics.ts
+    ./src/app/developer/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/app/globals.css:2:174953)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/globals.css:2:175088)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+error: script "build" exited with code 1
+BUILD_EXIT=1

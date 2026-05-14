@@ -1,0 +1,16 @@
+Stopping dev server PIDs on :3000: 35010 35207
+$ bun scripts/next-build.ts
+▲ Next.js 16.2.3 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+(node:38018) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+> Build error occurred
+Error: ENOENT: no such file or directory, open '/Users/philiplewis/slatecamp/.next/static/rfzePawaGOZFKFx6VYmoO/_buildManifest.js.tmp.gl9k4922s2m'
+    at ignore-listed frames
+error: script "build" exited with code 1
+BUILD_EXIT=1

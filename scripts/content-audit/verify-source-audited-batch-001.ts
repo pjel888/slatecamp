@@ -1,5 +1,6 @@
 import { createContentAuditSupabaseClient, sha256Json } from './lib'
-import { readFileSync, existsSync, writeFileSync } from 'node:fs'
+import { createHash } from 'node:crypto'
+import { readFileSync, existsSync, writeFileSync, readdirSync } from 'node:fs'
 import path from 'node:path'
 
 const articleIds = ['5a8ca807-31d5-4a32-933a-c6b83517c6de','16bb270e-6887-4bbe-a62e-eace6c4d3fdb','ae4bdc43-1451-4aa5-8c12-65283f4bbdfd']
@@ -8,9 +9,9 @@ const root = '.ai/content-audit-export/articles'
 const supabase = createContentAuditSupabaseClient()
 const articleSelect = 'article_id,slug,title,content,updated_at'
 const questionSelect = 'question_id,article_id,topic_id,text,options,correct_option_id,correct_value,accepted_answers,value_tolerance,question_type,rationale,explanation,code_citation,bloom_level,application_context,practice_context,difficulty,difficulty_rating,discrimination_rating,is_assessment,model_id,prompt_image_url,created_at,updated_at'
-function sha256Text(s:string){ const crypto = require('node:crypto'); return 'sha256:'+crypto.createHash('sha256').update(s).digest('hex') }
-function findArticleDir(id:string){ const fs=require('node:fs'); return fs.readdirSync(root).map((d:string)=>path.join(root,d)).find((p:string)=>p.endsWith('--'+id)) }
-function findQuestionEdit(qid:string){ const fs=require('node:fs'); for (const d of fs.readdirSync(root)) { const p=path.join(root,d,'question-edits',qid+'.json'); if (existsSync(p)) return p } }
+function sha256Text(s:string){ return 'sha256:'+createHash('sha256').update(s).digest('hex') }
+function findArticleDir(id:string){ return readdirSync(root).map((d:string)=>path.join(root,d)).find((p:string)=>p.endsWith('--'+id)) }
+function findQuestionEdit(qid:string){ for (const d of readdirSync(root)) { const p=path.join(root,d,'question-edits',qid+'.json'); if (existsSync(p)) return p } }
 const report:any={generated_at:new Date().toISOString(), articles:[], questions:[], ok:true}
 for (const id of articleIds) {
  const dir=findArticleDir(id); const candidate=readFileSync(path.join(dir,'candidate.md'),'utf8')

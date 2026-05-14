@@ -1,0 +1,419 @@
+
+===== type-check =====
+$ bun scripts/type-check.ts
+EXIT_CODE[type-check]=0
+
+===== lint =====
+$ bun run check:storybook && eslint .
+$ bun scripts/check-storybook.ts
+Storybook guard OK: 115 story file(s) scanned; 0 placeholder marker file(s) still tracked.
+Baseline files already cleaned or removed:
+- src/components/shared/action-card.stories.tsx
+- src/components/shared/app-drawer.stories.tsx
+- src/components/shared/breadcrumb.stories.tsx
+- src/components/shared/SlatecampLoader.stories.tsx
+- src/components/shared/content-sidebar.stories.tsx
+- src/components/shared/DashboardHeader.stories.tsx
+- src/components/shared/DashboardPageSkeleton.stories.tsx
+- src/components/shared/data-table.stories.tsx
+- src/components/shared/difficulty-bar.stories.tsx
+- src/components/shared/empty-state.stories.tsx
+- src/components/shared/event-badge.stories.tsx
+- src/components/shared/floating-panel.stories.tsx
+- src/components/shared/InfoTooltip.stories.tsx
+- src/components/shared/legal-citation-badge.stories.tsx
+- src/components/shared/LogoutButton.stories.tsx
+- src/components/shared/mode-button.stories.tsx
+- src/components/shared/Navbar.stories.tsx
+- src/components/shared/NavigationProgress.stories.tsx
+- src/components/shared/Omnibar.stories.tsx
+- src/components/shared/page-header.stories.tsx
+- src/components/shared/PanelCollapseHandle.stories.tsx
+- src/components/shared/question-card.stories.tsx
+- src/components/shared/question-dot-navigator.stories.tsx
+- src/components/shared/QuickStatsRow.stories.tsx
+- src/components/shared/score-display.stories.tsx
+- src/components/shared/section-header.stories.tsx
+- src/components/shared/sidebar-nav.stories.tsx
+- src/components/shared/SourceBadge.stories.tsx
+- src/components/shared/stat-card.stories.tsx
+- src/components/shared/student-view-watermark.stories.tsx
+- src/components/shared/taxonomy-picker.stories.tsx
+- src/components/shared/taxonomy-tree.stories.tsx
+- src/components/shared/ThemeProvider.stories.tsx
+- src/components/shared/ThemeToggle.stories.tsx
+- src/components/shared/WikiSidePanel.stories.tsx
+- src/components/ui/accordion.stories.tsx
+- src/components/ui/alert-dialog.stories.tsx
+- src/components/ui/avatar.stories.tsx
+- src/components/ui/badge.stories.tsx
+- src/components/ui/button.stories.tsx
+- src/components/ui/calendar.stories.tsx
+- src/components/ui/card.stories.tsx
+- src/components/ui/checkbox.stories.tsx
+- src/components/ui/close-button.stories.tsx
+- src/components/ui/command.stories.tsx
+- src/components/ui/dialog.stories.tsx
+- src/components/ui/dropdown-menu.stories.tsx
+- src/components/ui/eyebrow.stories.tsx
+- src/components/ui/form-field.stories.tsx
+- src/components/ui/input.stories.tsx
+- src/components/ui/input-group.stories.tsx
+- src/components/ui/label.stories.tsx
+- src/components/ui/popover.stories.tsx
+- src/components/ui/progress.stories.tsx
+- src/components/ui/progress-bar.stories.tsx
+- src/components/ui/radio-group.stories.tsx
+- src/components/ui/resizable.stories.tsx
+- src/components/ui/scroll-area.stories.tsx
+- src/components/ui/select.stories.tsx
+- src/components/ui/separator.stories.tsx
+- src/components/ui/sheet.stories.tsx
+- src/components/ui/skeleton.stories.tsx
+- src/components/ui/slider.stories.tsx
+- src/components/ui/spinner.stories.tsx
+- src/components/ui/switch.stories.tsx
+- src/components/ui/tabs.stories.tsx
+- src/components/ui/textarea.stories.tsx
+- src/components/ui/toast.stories.tsx
+- src/components/ui/toaster.stories.tsx
+- src/components/ui/toolbar.stories.tsx
+- src/components/ui/tooltip.stories.tsx
+
+/Users/philiplewis/slatecamp/coverage/block-navigation.js
+  1:1  warning  Unused eslint-disable directive (no problems were reported)
+
+/Users/philiplewis/slatecamp/src/app/dashboard/camptrails/[slug]/page.tsx
+  16:7  warning  'INTENSITY_LABELS' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  44:9  warning  'totalSteps' is assigned a value but never used. Allowed unused vars must match /^_/u        @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/layout/HeaderHero.tsx
+  37:3   warning  'category' is defined but never used. Allowed unused args must match /^_/u             @typescript-eslint/no-unused-vars
+  44:17  warning  'CategoryIcon' is defined but never used. Allowed unused args must match /^_/u         @typescript-eslint/no-unused-vars
+  49:9   warning  'accentText' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/article/WikiLearningJourney.tsx
+  33:3  warning  'subject' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  34:3  warning  'difficulty' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  35:3  warning  'readTime' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/quiz/WikiQuizModal.tsx
+  453:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/philiplewis/slatecamp/src/lib/actions/analytics-data.ts
+  4:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+✖ 11 problems (0 errors, 11 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
+EXIT_CODE[lint]=0
+
+===== targeted-vitest =====
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.5 [39m[90m/Users/philiplewis/slatecamp[39m
+
+(node:40330) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[90mstderr[2m | tests/vitest/components/marketing/hero-house-preview.test.tsx
+[22m[39mTHREE.WARNING: Multiple instances of Three.js being imported.
+
+ [32m✓[39m tests/vitest/components/marketing/hero-house-preview.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 149[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/marketing/landing-page-surface.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 174[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m12 passed[39m[22m[90m (12)[39m
+[2m   Start at [22m 01:58:24
+[2m   Duration [22m 3.06s[2m (transform 226ms, setup 345ms, import 3.33s, tests 323ms, environment 1.30s)[22m
+
+EXIT_CODE[targeted-vitest]=0
+
+===== build =====
+$ bun scripts/next-build.ts
+▲ Next.js 16.2.3 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+(node:40371) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Found 25 warnings while optimizing generated CSS:
+
+Issue #1:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-\?\?r-stack-\7 \.�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-??r-stack-.�) + 0.5rem);
+[2m┆[22m                             [33m[2m^--[22m Unexpected token Delim('?')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-FAr-stack-\e 0�\)\+0\.5rem\)\] {[22m
+
+Issue #2:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-FAr-stack-\e 0�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-FAr-stack-0�) + 0.5rem);
+[2m┆[22m                                       [33m[2m^--[22m Unexpected token Delim('\u{e}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-slider-stack-height\)\+0\.5rem\)\] {[22m
+
+Issue #3:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-�\>r-stack-�-�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-�>r-stack-�-�) + 0.5rem);
+[2m┆[22m                              [33m[2m^--[22m Unexpected token Delim('>')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-�Ar-stack-Z0�\)\+0\.5rem\)\] {[22m
+
+Issue #4:
+[2m│   }[22m
+[2m│   .bottom-\[calc\(var\(--hero-�Wr-stack-\10 E�\)\+0\.5rem\)\] {[22m
+[2m│[22m     bottom: calc(var(--hero-�Wr-stack-E�) + 0.5rem);
+[2m┆[22m                                       [33m[2m^--[22m Unexpected token Delim('\u{10}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bottom-full {[22m
+
+Issue #5:
+[2m│   }[22m
+[2m│   .bg-\[var\(-�\1e \3 j\14 �-bg\)\] {[22m
+[2m│[22m     background-color: var(-�j�-bg);
+[2m┆[22m                           [33m[2m^--[22m Unexpected token Ident("-�")[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .bg-accent {[22m
+
+Issue #6:
+[2m│   }[22m
+[2m│   .to-\[var\(--�\13 \6 0�rblue\)\] {[22m
+[2m│[22m     --tw-gradient-to: var(--�0 rblue);
+[2m┆[22m                              [33m[2m^--[22m Unexpected token Delim('\u{13}')[39m
+[2m┆[22m
+[2m│     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));[22m
+[2m│   }[22m
+
+Issue #7:
+[2m│   }[22m
+[2m│   .font-\[family-\1f \2 q\:var\(--\18 ��\1a dm-mono\)\] {[22m
+[2m│[22m     font-family: family-q:var(-- �dm-mono);
+[2m┆[22m                                   [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\13 bJ��\)\] {[22m
+
+Issue #8:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\13 bJ��\)\] {[22m
+[2m│[22m     font-family: var(-- bJ �);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\!dm�Y�\)\] {[22m
+
+Issue #9:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �\!dm�Y�\)\] {[22m
+[2m│[22m     font-family: var(-- !dm�Y�);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �0dm-1\1 0\)\] {[22m
+
+Issue #10:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �0dm-1\1 0\)\] {[22m
+[2m│[22m     font-family: var(-- 0dm-10);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �qsyne\)\] {[22m
+
+Issue #11:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 �qsyne\)\] {[22m
+[2m│[22m     font-family: var(-- qsyne);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\2 dm-mono\)\] {[22m
+
+Issue #12:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\2 dm-mono\)\] {[22m
+[2m│[22m     font-family: var(-- �dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\5 dm-mono\)\] {[22m
+
+Issue #13:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\5 dm-mono\)\] {[22m
+[2m│[22m     font-family: var(-- �dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\7 dm-mono\)\] {[22m
+
+Issue #14:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\7 dm-mono\)\] {[22m
+[2m│[22m     font-family: var(-- �dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\!dm-mono\)\] {[22m
+
+Issue #15:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��\!dm-mono\)\] {[22m
+[2m│[22m     font-family: var(-- �!dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��boldonse\)\] {[22m
+
+Issue #16:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��boldonse\)\] {[22m
+[2m│[22m     font-family: var(-- �boldonse);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��display\)\] {[22m
+
+Issue #17:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��display\)\] {[22m
+[2m│[22m     font-family: var(-- �display);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��dm-mono\)\] {[22m
+
+Issue #18:
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--\18 ��dm-mono\)\] {[22m
+[2m│[22m     font-family: var(-- �dm-mono);
+[2m┆[22m                        [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-\[family-name\:var\(--font-body\)\] {[22m
+
+Issue #19:
+[2m│   }[22m
+[2m│   .font-\[family-�\3 q\:var\(--\18 ��\7 dm-mono\)\] {[22m
+[2m│[22m     font-family: family-�q:var(-- �dm-mono);
+[2m┆[22m                                   [33m[2m^--[22m Unexpected token Delim('\u{18}')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .font-boldonse {[22m
+
+Issue #20:
+[2m│   }[22m
+[2m│   .text-\[M�\!\] {[22m
+[2m│[22m     color: M !;
+[2m┆[22m              [33m[2m^--[22m Unexpected token Delim('!')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .text-\[var\(--color-signal-gold\)\] {[22m
+
+Issue #21:
+[2m│   }[22m
+[2m│   .text-\[��\!\] {[22m
+[2m│[22m     color: � !;
+[2m┆[22m              [33m[2m^--[22m Unexpected token Delim('!')[39m
+[2m┆[22m
+[2m│   }[22m
+[2m│   .text-accent {[22m
+
+Issue #22:
+[2m│   }[22m
+[2m│   .has-\[\>img\:Ֆ\11 -�\3 �\]\:pt-0 {[22m
+[2m│[22m     &:has(>img:Ֆ-��) {
+[2m┆[22m                [33m[2m^--[22m 'Ֆ' is not recognized as a valid pseudo-class. Did you mean '::Ֆ' (pseudo-element) or is this a typo?[39m
+[2m┆[22m
+[2m│       padding-top: calc(var(--spacing) * 0);[22m
+[2m│     }[22m
+
+Issue #23:
+[2m│   .dark\:bg-\[var\(--d\5 p-panel-\1a ��\)\] {[22m
+[2m│     &:is(.dark *) {[22m
+[2m│[22m       background-color: var(--dp-panel- �);
+[2m┆[22m                                [33m[2m^--[22m Unexpected token Delim('\u{5}')[39m
+[2m┆[22m
+[2m│     }[22m
+[2m│   }[22m
+
+Issue #24:
+[2m│   .md\:\[\&\>\*\:first-\=\<�\]\:order-2 {[22m
+[2m│     @media (width >= 48rem) {[22m
+[2m│[22m       &>*:first-=<� {
+[2m┆[22m           [33m[2m^--[22m 'first-' is not recognized as a valid pseudo-class. Did you mean '::first-' (pseudo-element) or is this a typo?[39m
+[2m┆[22m
+[2m│         order: 2;[22m
+[2m│       }[22m
+
+Issue #25:
+[2m│   .md\:\[\&\>\*\:first-\=\<�\]\:order-2 {[22m
+[2m│     @media (width >= 48rem) {[22m
+[2m│[22m       &>*:first-=<� {
+[2m┆[22m                 [33m[2m^--[22m Unexpected token Delim('=')[39m
+[2m┆[22m
+[2m│         order: 2;[22m
+[2m│       }[22m
+
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+./src/app/globals.css:2:175199
+Module not found: Can't resolve '"/images/dashboard/Dashboard-BG-Image.png"'
+  [90m1 |[0m ...
+[31m[1m>[0m [90m2 |[0m ...[32mpng)}.bg-\[url\(\/images\/dashboard\/Dashboard-BG-Image\.png\)\]{background-image:url(/i...[0m
+  [90m  |[0m                                                [31m[1m^[0m
+  [90m3 |[0m ...
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+  Server Component:
+    ./src/app/globals.css
+    ./src/lib/developer/repo-metrics.ts
+    ./src/app/developer/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/globals.css:2:175334
+Module not found: Can't resolve '"/images/dashboard/Dock-Lake-BG-Image.png"'
+  [90m1 |[0m ...
+[31m[1m>[0m [90m2 |[0m ...[32mrl\(\/images\/dashboard\/Dock-Lake-BG-Image\.png\)\]{background-image:url(/images/dashbo...[0m
+  [90m  |[0m                                                [31m[1m^[0m
+  [90m3 |[0m ...
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+  Server Component:
+    ./src/app/globals.css
+    ./src/lib/developer/repo-metrics.ts
+    ./src/app/developer/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/app/globals.css:2:175199)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/globals.css:2:175334)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+error: script "build" exited with code 1
+EXIT_CODE[build]=1

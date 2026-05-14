@@ -1,0 +1,187 @@
+Moving build cache backups out of repo...
+moved .ai/tmp/.next.backup-2026-05-15-inline-015827 -> /tmp/slatecamp-build-cache-backups/.next.backup-2026-05-15-inline-015827-020007
+moved .ai/tmp/.next.backup-2026-05-15-014746 -> /tmp/slatecamp-build-cache-backups/.next.backup-2026-05-15-014746-020007
+moved .ai/tmp/.next.backup-2026-05-15-final-015551 -> /tmp/slatecamp-build-cache-backups/.next.backup-2026-05-15-final-015551-020007
+moved .next -> /tmp/slatecamp-build-cache-backups/.next.current-020007
+$ bun scripts/next-build.ts
+▲ Next.js 16.2.3 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+(node:40681) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✓ Compiled successfully in 18.8s
+  Running TypeScript ...
+  Finished TypeScript in 33.1s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/102) ...
+(node:40771) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40772) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40768) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40767) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40766) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  Generating static pages using 7 workers (25/102)
+  Generating static pages using 7 workers (50/102)
+  Generating static pages using 7 workers (76/102)
+✓ Generating static pages using 7 workers (102/102) in 1806ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /about
+├ ƒ /admin
+├ ƒ /admin/3d-models
+├ ƒ /admin/activity
+├ ƒ /admin/ai-audit
+├ ƒ /admin/ai-audit/articles
+├ ƒ /admin/ai-audit/articles/[articleId]
+├ ƒ /admin/ai-audit/findings
+├ ƒ /admin/ai-audit/findings/[findingId]
+├ ƒ /admin/ai-audit/proposals
+├ ƒ /admin/ai-audit/questions
+├ ƒ /admin/ai-audit/questions/[questionId]
+├ ƒ /admin/ai-audit/runs
+├ ƒ /admin/ai-audit/runs/[runId]
+├ ƒ /admin/assets
+├ ƒ /admin/assets/[id]
+├ ƒ /admin/audit
+├ ƒ /admin/knowledge
+├ ƒ /admin/knowledge/[id]
+├ ƒ /admin/knowledge/analytics
+├ ƒ /admin/knowledge/import
+├ ƒ /admin/knowledge/new
+├ ƒ /admin/knowledge/questions
+├ ƒ /admin/knowledge/questions/[id]
+├ ƒ /admin/knowledge/questions/design-problems
+├ ƒ /admin/knowledge/questions/design-problems/[id]
+├ ƒ /admin/knowledge/questions/new
+├ ƒ /admin/knowledge/questions/scenarios
+├ ƒ /admin/knowledge/questions/scenarios/[id]
+├ ○ /admin/login
+├ ƒ /admin/pipeline
+├ ƒ /admin/preview/[previewId]
+├ ƒ /admin/reviews
+├ ƒ /admin/search
+├ ƒ /admin/settings
+├ ƒ /admin/taxonomy
+├ ƒ /admin/taxonomy/coverage
+├ ƒ /api/admin/flags
+├ ƒ /api/ai/embed
+├ ƒ /api/ai/generate-questions
+├ ƒ /api/ai/socratic
+├ ƒ /api/ai/study-agent
+├ ƒ /api/ai/tutor
+├ ƒ /api/cron/compute-signals
+├ ƒ /api/cron/focus-review-scan
+├ ƒ /api/og/score
+├ ƒ /api/payments/checkout
+├ ƒ /api/webhooks/payrex
+├ ƒ /auth/callback
+├ ○ /auth/reset-password
+├ ƒ /ceo
+├ ƒ /ceo/analytics
+├ ƒ /ceo/financials
+├ ƒ /ceo/insights
+├ ƒ /ceo/team
+├ ƒ /ceo/team/admin-roles
+├ ƒ /ceo/team/permission-audit
+├ ƒ /contact
+├ ƒ /dashboard
+├ ƒ /dashboard/3d-lab
+├ ƒ /dashboard/3d-lab/[moduleId]
+├ ƒ /dashboard/analytics
+├ ƒ /dashboard/analytics/advanced
+├ ƒ /dashboard/area-c
+├ ƒ /dashboard/area-c/calculator
+├ ƒ /dashboard/area-c/design-problems
+├ ƒ /dashboard/area-c/design-problems/[problemId]
+├ ƒ /dashboard/area-c/design-quiz
+├ ƒ /dashboard/area-c/design-quiz/[scenarioId]
+├ ƒ /dashboard/assessment
+├ ƒ /dashboard/camptrails
+├ ƒ /dashboard/camptrails/[slug]
+├ ƒ /dashboard/camptrails/[slug]/day/[dayNumber]/complete
+├ ƒ /dashboard/camptrails/[slug]/today
+├ ƒ /dashboard/code-updates
+├ ƒ /dashboard/cram-card
+├ ƒ /dashboard/dae-mode
+├ ƒ /dashboard/drills
+├ ƒ /dashboard/drills/sessions
+├ ƒ /dashboard/exam-outcome
+├ ƒ /dashboard/flash
+├ ƒ /dashboard/flash/[category]
+├ ƒ /dashboard/notes
+├ ƒ /dashboard/notifications
+├ ƒ /dashboard/pods
+├ ƒ /dashboard/pods/[podId]
+├ ƒ /dashboard/professional
+├ ƒ /dashboard/quiz
+├ ƒ /dashboard/quiz/[mode]/session/[sessionId]
+├ ƒ /dashboard/quiz/[mode]/session/[sessionId]/results
+├ ƒ /dashboard/quiz/[mode]/session/[sessionId]/review
+├ ƒ /dashboard/quiz/[mode]/setup
+├ ƒ /dashboard/quiz/session/[sessionId]
+├ ƒ /dashboard/quiz/session/[sessionId]/results
+├ ƒ /dashboard/quiz/session/[sessionId]/review
+├ ƒ /dashboard/quiz/sessions
+├ ƒ /dashboard/results-day
+├ ƒ /dashboard/score-reveal
+├ ƒ /dashboard/settings
+├ ƒ /dashboard/studio
+├ ƒ /dashboard/tables
+├ ƒ /dashboard/upgrade
+├ ƒ /dashboard/welcome-pro
+├ ƒ /dashboard/wiki
+├ ƒ /dashboard/wiki/[articleId]
+├ ƒ /developer
+├ ƒ /developer/api-reference
+├ ƒ /developer/architecture
+├ ƒ /developer/status
+├ ƒ /developer/status/database
+├ ƒ /developer/status/infrastructure
+├ ƒ /developer/tools
+├ ƒ /developer/tools/console
+├ ƒ /developer/tools/db
+├ ƒ /developer/tools/logs
+├ ƒ /developer/tools/test-data
+├ ○ /forgot-password
+├ ○ /icon.svg
+├ ○ /login
+├ ƒ /onboarding
+├ ƒ /onboarding/comp-exam
+├ ƒ /pricing
+├ ○ /quiz
+├ ƒ /quiz/[mode]/session/[sessionId]
+├ ƒ /quiz/[mode]/session/[sessionId]/results
+├ ƒ /quiz/[mode]/session/[sessionId]/review
+├ ƒ /quiz/[mode]/setup
+├ ƒ /quiz/session/[sessionId]
+├ ƒ /quiz/session/[sessionId]/results
+├ ƒ /quiz/session/[sessionId]/review
+├ ○ /quiz/sessions
+├ ○ /register
+├ ƒ /tools
+├ ○ /tools/chb
+├ ○ /tools/drywall
+├ ƒ /tools/floor-tiles-calculator
+├ ○ /tools/flooring
+├ ƒ /tools/lot-plotter
+├ ○ /tools/paint
+├ ƒ /tools/wall-paint-calculator
+└ ○ /try
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+BUILD_EXIT=0

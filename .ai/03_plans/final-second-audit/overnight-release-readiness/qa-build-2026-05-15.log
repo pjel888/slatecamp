@@ -1,0 +1,1204 @@
+
+===== source-verification =====
+$ bun test scripts/content-audit/source-verification-invariants.test.ts
+bun test v1.3.10 (30e609e0)
+
+scripts/content-audit/source-verification-invariants.test.ts:
+(pass) source verification invariant artifacts > generated status and recommendation fields do not leak forbidden promotion labels [7.33ms]
+(pass) source verification invariant artifacts > locator evidence rows stay blocked and use explicit safe unions [1.82ms]
+(pass) source verification invariant artifacts > packet prep recommendations stay non-promotional and route high-risk rows to review [0.32ms]
+(pass) source verification invariant artifacts > dry-run admin payload cannot imply writes, approvals, source packs, or embeddings [0.12ms]
+(pass) source verification invariant artifacts > source verification smoke output confirms no mutating side effects [0.19ms]
+(pass) source verification invariant artifacts > package scripts for source verification are dry-run/local safety commands [0.51ms]
+(pass) source verification invariant artifacts > forbidden promotion list covers source-pack and embedding readiness terms
+
+ 7 pass
+ 0 fail
+ 244 expect() calls
+Ran 7 tests across 1 file. [333.00ms]
+EXIT_CODE[source-verification]=0
+
+===== type-check =====
+$ bun scripts/type-check.ts
+EXIT_CODE[type-check]=0
+
+===== lint =====
+$ bun run check:storybook && eslint .
+$ bun scripts/check-storybook.ts
+Storybook guard OK: 115 story file(s) scanned; 0 placeholder marker file(s) still tracked.
+Baseline files already cleaned or removed:
+- src/components/shared/action-card.stories.tsx
+- src/components/shared/app-drawer.stories.tsx
+- src/components/shared/breadcrumb.stories.tsx
+- src/components/shared/SlatecampLoader.stories.tsx
+- src/components/shared/content-sidebar.stories.tsx
+- src/components/shared/DashboardHeader.stories.tsx
+- src/components/shared/DashboardPageSkeleton.stories.tsx
+- src/components/shared/data-table.stories.tsx
+- src/components/shared/difficulty-bar.stories.tsx
+- src/components/shared/empty-state.stories.tsx
+- src/components/shared/event-badge.stories.tsx
+- src/components/shared/floating-panel.stories.tsx
+- src/components/shared/InfoTooltip.stories.tsx
+- src/components/shared/legal-citation-badge.stories.tsx
+- src/components/shared/LogoutButton.stories.tsx
+- src/components/shared/mode-button.stories.tsx
+- src/components/shared/Navbar.stories.tsx
+- src/components/shared/NavigationProgress.stories.tsx
+- src/components/shared/Omnibar.stories.tsx
+- src/components/shared/page-header.stories.tsx
+- src/components/shared/PanelCollapseHandle.stories.tsx
+- src/components/shared/question-card.stories.tsx
+- src/components/shared/question-dot-navigator.stories.tsx
+- src/components/shared/QuickStatsRow.stories.tsx
+- src/components/shared/score-display.stories.tsx
+- src/components/shared/section-header.stories.tsx
+- src/components/shared/sidebar-nav.stories.tsx
+- src/components/shared/SourceBadge.stories.tsx
+- src/components/shared/stat-card.stories.tsx
+- src/components/shared/student-view-watermark.stories.tsx
+- src/components/shared/taxonomy-picker.stories.tsx
+- src/components/shared/taxonomy-tree.stories.tsx
+- src/components/shared/ThemeProvider.stories.tsx
+- src/components/shared/ThemeToggle.stories.tsx
+- src/components/shared/WikiSidePanel.stories.tsx
+- src/components/ui/accordion.stories.tsx
+- src/components/ui/alert-dialog.stories.tsx
+- src/components/ui/avatar.stories.tsx
+- src/components/ui/badge.stories.tsx
+- src/components/ui/button.stories.tsx
+- src/components/ui/calendar.stories.tsx
+- src/components/ui/card.stories.tsx
+- src/components/ui/checkbox.stories.tsx
+- src/components/ui/close-button.stories.tsx
+- src/components/ui/command.stories.tsx
+- src/components/ui/dialog.stories.tsx
+- src/components/ui/dropdown-menu.stories.tsx
+- src/components/ui/eyebrow.stories.tsx
+- src/components/ui/form-field.stories.tsx
+- src/components/ui/input.stories.tsx
+- src/components/ui/input-group.stories.tsx
+- src/components/ui/label.stories.tsx
+- src/components/ui/popover.stories.tsx
+- src/components/ui/progress.stories.tsx
+- src/components/ui/progress-bar.stories.tsx
+- src/components/ui/radio-group.stories.tsx
+- src/components/ui/resizable.stories.tsx
+- src/components/ui/scroll-area.stories.tsx
+- src/components/ui/select.stories.tsx
+- src/components/ui/separator.stories.tsx
+- src/components/ui/sheet.stories.tsx
+- src/components/ui/skeleton.stories.tsx
+- src/components/ui/slider.stories.tsx
+- src/components/ui/spinner.stories.tsx
+- src/components/ui/switch.stories.tsx
+- src/components/ui/tabs.stories.tsx
+- src/components/ui/textarea.stories.tsx
+- src/components/ui/toast.stories.tsx
+- src/components/ui/toaster.stories.tsx
+- src/components/ui/toolbar.stories.tsx
+- src/components/ui/tooltip.stories.tsx
+
+/Users/philiplewis/slatecamp/coverage/block-navigation.js
+  1:1  warning  Unused eslint-disable directive (no problems were reported)
+
+/Users/philiplewis/slatecamp/scripts/content-audit/verify-source-audited-batch-001.ts
+  11:47  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  12:46  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  13:49  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+/Users/philiplewis/slatecamp/src/app/dashboard/camptrails/[slug]/page.tsx
+  16:7  warning  'INTENSITY_LABELS' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  44:9  warning  'totalSteps' is assigned a value but never used. Allowed unused vars must match /^_/u        @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/layout/HeaderHero.tsx
+  37:3   warning  'category' is defined but never used. Allowed unused args must match /^_/u             @typescript-eslint/no-unused-vars
+  44:17  warning  'CategoryIcon' is defined but never used. Allowed unused args must match /^_/u         @typescript-eslint/no-unused-vars
+  49:9   warning  'accentText' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/article/WikiLearningJourney.tsx
+  33:3  warning  'subject' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+  34:3  warning  'difficulty' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  35:3  warning  'readTime' is defined but never used. Allowed unused args must match /^_/u    @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/quiz/WikiQuizModal.tsx
+  453:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/philiplewis/slatecamp/src/lib/actions/analytics-data.ts
+  4:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+✖ 14 problems (3 errors, 11 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
+error: script "lint" exited with code 1
+EXIT_CODE[lint]=1
+
+===== unit-tests =====
+bun test v1.3.10 (30e609e0)
+
+src/stores/useGlobalLoadingStore.test.ts:
+(pass) useGlobalLoadingStore > show() adds an operation and makes the overlay visible [2.06ms]
+(pass) useGlobalLoadingStore > hide() removes an operation and hides overlay when no operations remain
+(pass) useGlobalLoadingStore > concurrent operations: hiding one does not hide others [0.75ms]
+(pass) useGlobalLoadingStore > show() with duplicate ID is idempotent
+(pass) useGlobalLoadingStore > isActive() returns correct state
+(pass) useGlobalLoadingStore > show() uses default message when none provided
+(pass) generateOperationId > generates unique IDs
+(pass) generateOperationId > includes prefix [0.18ms]
+(pass) generateOperationId > defaults to "loading" prefix
+
+src/stores/useNavigationPendingStore.test.ts:
+(pass) useNavigationPendingStore > initial state has no pending navigation [0.86ms]
+(pass) useNavigationPendingStore > startNavigation sets pending state
+(pass) useNavigationPendingStore > startNavigation without options sets nullable fields
+(pass) useNavigationPendingStore > finishNavigation resets to initial state
+(pass) useNavigationPendingStore > isPendingHref returns true only for the exact pending href
+(pass) useNavigationPendingStore > isPendingHref returns false when nothing is pending
+(pass) useNavigationPendingStore > isNavigating reflects current state
+(pass) useNavigationPendingStore > startNavigation updates startedAt timestamp [0.38ms]
+(pass) useNavigationPendingStore > NAVIGATION_TIMEOUT_MS is 10 seconds
+(pass) useNavigationPendingStore > calling startNavigation twice overwrites the first [0.03ms]
+(pass) useNavigationPendingStore > resetNavigationPendingStore clears all state
+
+src/lib/rate-limit.test.ts:
+(pass) checkRateLimit > allows first request [1.74ms]
+(pass) checkRateLimit > allows up to 10 requests in a window [0.08ms]
+(pass) checkRateLimit > blocks 11th request in same window [0.20ms]
+(pass) checkRateLimit > different keys have separate limits
+(pass) checkRateLimit > returns retryAfter as a positive integer when blocked [0.22ms]
+(pass) checkRateLimit > first request in a new key does not include retryAfter [0.62ms]
+(pass) checkRateLimit > 10th request (boundary) is still allowed
+(pass) checkRateLimit > 12th request in same window is also blocked
+(pass) checkRateLimit > unique keys at scale do not interfere with each other
+
+src/features/3d-lab/gate-copy.test.ts:
+(pass) 3d lab gate copy > uses canonical paid-tier wording
+(pass) 3d lab gate copy > keeps CTA aligned with the minimum required tier [0.14ms]
+
+src/components/dashboard/HeroCommandBar.test.tsx:
+(pass) HeroCommandBar activity heatmap slot > keeps the annual activity heatmap visible for zero-readiness users [11.69ms]
+
+src/lib/developer/access.test.ts:
+(pass) assertDeveloperAccess > throws for member role [0.80ms]
+(pass) assertDeveloperAccess > throws for anonymous role [0.08ms]
+(pass) assertDeveloperAccess > throws for sme_reviewer role [0.02ms]
+(pass) assertDeveloperAccess > resolves for developer role
+(pass) assertDeveloperAccess > resolves for admin role
+(pass) assertDeveloperAccess > resolves for super_admin role
+(pass) assertDeveloperAccess > resolves for owner role
+(pass) assertDeveloperAccess > resolves for ceo role
+
+src/lib/admin/topic-article-resolution.test.ts:
+(pass) resolveTopicArticleContext > selects the freshest article for a topic and marks ambiguity
+(pass) resolveTopicArticleContext > returns a single unambiguous article mapping when only one primary exists
+
+src/lib/admin/access-policy.test.ts:
+(pass) admin access policy > allows internal tooling roles to see the dev toolbar [0.03ms]
+(pass) admin access policy > excludes sme_reviewer from dev-toolbar access by default [0.02ms]
+(pass) admin access policy > uses the same least-privilege default for internal tier bypass [0.02ms]
+
+src/lib/admin/roles.test.ts:
+(pass) Admin Roles > getUserRole > returns null when no user is authenticated [0.35ms]
+(pass) Admin Roles > getUserRole > returns role from database when present [0.18ms]
+(pass) Admin Roles > getUserRole > returns canonical user_roles rows before auth metadata
+(pass) Admin Roles > getUserRole > returns role from auth metadata before database fallbacks [0.15ms]
+(pass) Admin Roles > getUserRole > returns role from profile when auth metadata is empty
+(pass) Admin Roles > getUserRole > falls back to legacy ADMIN_EMAILS when no DB role exists [0.11ms]
+(pass) Admin Roles > Permission Helpers > isAdmin returns true for super_admin and owner [0.09ms]
+(pass) Admin Roles > Permission Helpers > isAdmin mirrors admin CMS policy for internal staff roles [0.15ms]
+(pass) Admin Roles > Permission Helpers > isSuperAdmin returns true for super_admin and owner [0.11ms]
+(pass) Admin Roles > Permission Helpers > canManageContent excludes reviewer-only roles [0.08ms]
+(pass) Admin Roles > Permission Helpers > canReviewContent matches multiple staff roles [0.02ms]
+(pass) Admin Roles > Permission Helpers > canManageUsers returns true for super_admin and owner [0.13ms]
+(pass) Admin Roles > assertPermission > passes silently when user has permission [16.69ms]
+(pass) Admin Roles > assertPermission > throws when user lacks permission
+(pass) Admin Roles > assertPermission > sme_reviewer can approve content but not create [0.20ms]
+(pass) Admin Roles > assertPermission > developer can edit but not publish [0.07ms]
+
+src/lib/admin/editor-workflow.test.ts:
+(pass) editor workflow status compatibility > normalizes only canonical editor statuses
+(pass) editor workflow status compatibility > emits canonical-only status writes for review submissions
+
+src/lib/admin/ai-audit-utils.test.ts:
+(pass) admin ai audit utils > normalizes list params with safe pagination defaults [0.22ms]
+(pass) admin ai audit utils > maps audit statuses to stable badge variants [0.10ms]
+(pass) admin ai audit utils > derives status cache flags from open findings and staged proposals [19.02ms]
+(pass) admin ai audit utils > derives source and correction flags from risk types [2.00ms]
+(pass) admin ai audit utils > suggests operational next actions from row state [0.03ms]
+
+src/lib/quiz/stamina-analysis.test.ts:
+(pass) analyzeStamina > creates blocks of correct size [0.25ms]
+(pass) analyzeStamina > computes accuracy per block
+(pass) analyzeStamina > handles partial last block [0.08ms]
+(pass) analyzeStamina > computes avg time per question
+(pass) analyzeStamina > handles null time_spent_ms
+(pass) detectFatigue > detects fatigue when accuracy drops >15%
+(pass) detectFatigue > detects fatigue when time increases >30%
+(pass) detectFatigue > no fatigue when performance is stable
+(pass) detectFatigue > returns no fatigue for single block
+(pass) detectFatigue > includes message when fatigue detected [0.35ms]
+
+src/lib/quiz/confidence-calibration.test.ts:
+(pass) computeCalibration > returns zeros for empty input
+(pass) computeCalibration > skips answers without confidence
+(pass) computeCalibration > detects overconfidence (very sure but wrong)
+(pass) computeCalibration > detects lucky guesses (guessing but correct)
+(pass) computeCalibration > perfect calibration: confident=correct, unsure=wrong
+(pass) computeCalibration > generates warning summary for high overconfidence
+(pass) computeCalibration > generates lucky guess summary
+
+src/lib/quiz/adaptive-difficulty.test.ts:
+(pass) createAdaptiveState > creates state with default difficulty 3
+(pass) createAdaptiveState > accepts custom initial difficulty
+(pass) updateAdaptiveState > adds answer to window
+(pass) updateAdaptiveState > window caps at 5 answers [0.02ms]
+(pass) updateAdaptiveState > increases difficulty after 3+ correct at 90%+
+(pass) updateAdaptiveState > decreases difficulty after 3+ wrong at 60%-
+(pass) updateAdaptiveState > stays same in sweet spot
+(pass) updateAdaptiveState > does not adjust with fewer than 3 answers
+(pass) getDifficultyLabel > 1-2 is Easy
+(pass) getDifficultyLabel > 3-4 is Medium
+(pass) getDifficultyLabel > 5 is Hard
+(pass) masteryToDifficulty > high mastery (0.8+) → difficulty 4
+(pass) masteryToDifficulty > medium mastery (0.6-0.79) → difficulty 3
+(pass) masteryToDifficulty > low mastery (0.4-0.59) → difficulty 2
+(pass) masteryToDifficulty > very low mastery (<0.4) → difficulty 1
+
+src/lib/quiz/mode-presets.test.ts:
+(pass) MODE_PRESETS > every mode has a preset
+(pass) MODE_PRESETS > every preset has all required sections
+(pass) MODE_PRESETS > camp defaults to 20 questions, immediate feedback, no timer
+(pass) MODE_PRESETS > chill defaults to 10 questions, free navigation
+(pass) MODE_PRESETS > storm defaults to 50 questions, deferred feedback, timer bar
+(pass) MODE_PRESETS > full_exam has 200 questions, countdown timer, 24h delayed results
+(pass) MODE_PRESETS > endurance has 100 questions, countup timer, stamina chart
+(pass) MODE_PRESETS > focus_review starts with easy difficulty
+(pass) MODE_PRESETS > subject has 25 questions, adaptive difficulty
+(pass) mergeWithPreset > returns preset when no overrides
+(pass) mergeWithPreset > overrides top-level setup fields
+(pass) mergeWithPreset > overrides timer fields while preserving others
+(pass) mergeWithPreset > preserves mode from preset
+(pass) getScoreBand > 70%+ is Passing with emerald color
+(pass) getScoreBand > 50-69% is Building with neutral color
+(pass) getScoreBand > below 50% is Needs review with neutral color (NEVER red)
+(pass) getScoreBand > boundary: exactly 70% is Passing
+(pass) getScoreBand > boundary: exactly 50% is Building
+(pass) getNextDifficulty > returns current difficulty when window is empty
+(pass) getNextDifficulty > increases difficulty when accuracy >= 90%
+(pass) getNextDifficulty > decreases difficulty when accuracy <= 60%
+(pass) getNextDifficulty > stays same when in sweet spot (60-90%)
+(pass) getNextDifficulty > caps at 5 (max difficulty)
+(pass) getNextDifficulty > floors at 1 (min difficulty)
+(pass) MODE_LABELS > every mode has a human-readable label
+
+src/lib/quiz/intelligent-routing.test.ts:
+(pass) intelligent routing history fallback > derives latest question states from canonical interactions
+(pass) intelligent routing history fallback > ignores incomplete interaction rows
+
+src/lib/quiz/to-client-question.test.ts:
+(pass) toDifficultyLabel > maps difficulty bands consistently
+(pass) toClientQuestion > maps metadata and normalizes options for client payloads
+(pass) fetchQuestionsForClient > preserves session order and computes positions from the requested offset [0.63ms]
+
+src/lib/srs/sm2.test.ts:
+(pass) SM-2 Algorithm > calculateNextReview should increase repetitions on success
+(pass) SM-2 Algorithm > calculateNextReview should reset repetitions on failure
+(pass) SM-2 Algorithm > calculateNextReview should increase interval on subsequent successes
+(pass) SM-2 Algorithm > getQuality should return 1 for incorrect answer
+(pass) SM-2 Algorithm > getQuality should return 5 for fast correct answer with high confidence
+(pass) SM-2 Algorithm > getQuality should return 4 for medium speed correct answer
+
+src/lib/srs/irt.test.ts:
+(pass) IRT Algorithm > probabilityCorrect should return ~0.5 when theta equals difficulty [0.11ms]
+(pass) IRT Algorithm > probabilityCorrect should increase with higher theta
+(pass) IRT Algorithm > updateTheta should increase theta on correct answer
+(pass) IRT Algorithm > updateTheta should decrease theta on incorrect answer
+(pass) IRT Algorithm > selectNextQuestion should pick question closest to target p=0.75 [0.11ms]
+
+src/lib/srs/update.test.ts:
+(pass) updateSrsSchedule — failure recovery > resolves to undefined when Supabase select returns error object
+(pass) updateSrsSchedule — failure recovery > resolves to undefined on a successful run
+(pass) updateSrsSchedule — failure recovery > logs error to console.error when Supabase query rejects
+[SRS] updateSrsSchedule failed for user. Session still completed. {
+  error: "Supabase connection failed",
+  timestamp: "2026-05-14T17:37:39.247Z",
+}
+(pass) updateSrsSchedule — failure recovery > does not rethrow — subsequent code runs after failure [2.85ms]
+(pass) updateSrsSchedule — failure recovery > uses fallback interval of 1 when mastery row does not exist
+(pass) deriveQualityRating > returns 1 for any incorrect answer
+(pass) deriveQualityRating > returns 1 for incorrect answer even when marked as lucky guess
+(pass) deriveQualityRating > returns 2 for a correct suspected lucky guess
+(pass) deriveQualityRating > returns 5 for confident + fast correct answers (timeRatio < 1.5)
+(pass) deriveQualityRating > returns 4 for confident but slow correct answers (timeRatio >= 1.5)
+(pass) deriveQualityRating > returns 4 for non-confident fast correct answers (timeRatio < 1.2)
+(pass) deriveQualityRating > returns 3 for non-confident moderate-speed answers (timeRatio >= 1.2)
+(pass) deriveQualityRating > returns 4 when avgTimeMs is 0 (timeRatio defaults to 1)
+(pass) deriveQualityRating > returns 5 when avgTimeMs is 0 and confidence is sure
+(pass) deriveQualityRating > boundary: timeRatio exactly 1.5 with sure confidence returns 4
+(pass) deriveQualityRating > boundary: timeRatio exactly 1.2 with no confidence returns 3
+
+src/lib/ceo/access.test.ts:
+(pass) assertCeoAccess > resolves for allowed entitlements
+(pass) assertCeoAccess > throws when CEO portal access is denied
+
+src/lib/supabase/middleware.test.ts:
+(pass) supabase/middleware > logs getUser failures and still redirects unauthenticated protected routes [1.95ms]
+[application-error] auth.middleware_get_user_failed {
+  namespace: "application_error",
+  severity: "error",
+  family: "auth",
+  eventName: "middleware_get_user_failed",
+  message: "Failed to refresh auth session in middleware.",
+  requestId: "33ea06df-9ecc-40a6-b0e3-4bbef325c8c0",
+  traceId: "43f27372-d63f-4df6-bf16-b76b76644338",
+  routeOrAction: "middleware:/admin",
+  userId: null,
+  sessionId: null,
+  provider: null,
+  eventId: null,
+  fingerprint: "auth|middleware_get_user_failed|middleware:/admin|auth unavailable",
+  metadata: {
+    method: "GET",
+    hostname: "localhost",
+  },
+  error: {
+    name: "Error",
+    message: "auth unavailable",
+    cause: undefined,
+  },
+  createdAt: "2026-05-14T17:37:39.255Z",
+}
+(pass) supabase/middleware > redirects unauthenticated admin root to the admin login surface [0.15ms]
+(pass) supabase/middleware > propagates refreshed auth cookies to the same request and response [0.30ms]
+
+src/lib/env/production-guardrails.test.ts:
+(pass) production environment guardrails > disables developer portal bypass in production even when env flag is true
+(pass) production environment guardrails > disables forced user impersonation in production
+(pass) production environment guardrails > allows dev bypass variables outside production
+(pass) production environment guardrails > throws a non-secret production configuration error for unsafe flags
+
+src/lib/entitlements/middleware-authorization.test.ts:
+(pass) middleware authorization matrix > allows admin cms for content/admin review roles
+(pass) middleware authorization matrix > allows developer portal only through tooling roles or explicit bypass
+(pass) middleware authorization matrix > limits ceo portal to ceo and super admin
+
+src/lib/entitlements/dev-overrides.test.ts:
+(pass) dev overrides > reads cookie payload as-is
+(pass) dev overrides > migrates legacy spoofed tier into simulated tier [0.54ms]
+(pass) dev overrides > captures env-backed override state [0.04ms]
+
+src/lib/entitlements/final-stretch.test.ts:
+(pass) entitlement finalization helpers > rejects legacy tier vocabulary after launch data normalization
+(pass) entitlement finalization helpers > checks paid subscription using canonicalized tier and active statuses
+
+src/lib/entitlements/resolve-entitlements.test.ts:
+(pass) resolve entitlements > denies paid features for free members by default [0.99ms]
+(pass) resolve entitlements > allows paid features for pro users
+(pass) resolve entitlements > applies tooling policy decisions independently from paid tier
+(pass) resolve entitlements > honors explicit feature overrides for 3d lab
+(pass) resolve entitlements > denies disabled feature flags even for paid users
+(pass) resolve entitlements > uses tier-only feature flags for feature decisions
+
+src/lib/entitlements/policy.test.ts:
+(pass) entitlement policy > keeps developer tooling separate from admin cms access
+(pass) entitlement policy > allows reviewer content access without developer tooling
+(pass) entitlement policy > supports explicit developer portal bypass only through policy
+(pass) entitlement policy > limits override writes to internal engineering roles
+(pass) entitlement policy > allows admin cms access for general admin role
+(pass) entitlement policy > keeps ceo portal restricted to ceo and super admin
+(pass) entitlement policy > hasPermission grants owner all admin permissions
+(pass) entitlement policy > hasPermission denies sme_reviewer content creation
+(pass) entitlement policy > hasPermission denies ceo audit log access
+(pass) entitlement policy > hasPermission denies member all admin permissions
+(pass) entitlement policy > getPermissionsForRole returns correct count [0.36ms]
+
+src/lib/entitlements/normalize-feature-flag.test.ts:
+(pass) feature flag normalization > recognizes only canonical database-backed entitlement keys
+(pass) feature flag normalization > keeps unknown target tiers out of entitlement decisions and traces them
+(pass) feature flag normalization > drops legacy paid tier values after launch data normalization
+(pass) feature flag normalization > keeps canonical tiers unchanged
+(pass) feature flag normalization > drops unknown tiers but keeps normalization trace
+
+src/lib/entitlements/resolve-role.test.ts:
+(pass) resolveRoleFromInputs > prefers forced dev user bypass over all other sources [0.02ms]
+(pass) resolveRoleFromInputs > disables forced dev user role override when Playwright neutralizes local impersonation [0.02ms]
+(pass) resolveRoleFromInputs > prefers user_roles as the canonical source over other role surfaces
+(pass) resolveRoleFromInputs > falls back to profiles.role when user_roles are absent [0.01ms]
+(pass) resolveRoleFromInputs > falls back to admin email when no structured role exists
+(pass) resolveRoleFromInputs > returns member for authenticated users without an internal role
+(pass) resolveRoleFromInputs > returns anonymous for missing identity
+
+src/lib/audit/audit-queries.test.ts:
+(pass) audit query fallback > returns real audit rows when audit_logs is available
+(pass) audit query fallback > falls back to synthesized rows when audit_logs is missing from schema cache [0.54ms]
+
+src/lib/__tests__/production-route-surface.test.ts:
+(pass) production route surface > does not include removed debug/test page routes
+
+src/lib/__tests__/wiki-markdown.test.ts:
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > normalizes same-line ExamTip content
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > normalizes same-line Tip content
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > preserves already well-formatted block components
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > preserves self-closing ArticleMedia
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > normalizes multiple malformed components in one document
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > handles components with props
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > does not touch fenced code blocks
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > does not affect markdown headings, lists, or emphasis
+(pass) wiki-markdown utility > normalizeWikiMdxComponentBlocks > does not normalize unknown component tags
+(pass) wiki-markdown utility > sanitizeMDX > removes backslash escaping for quotes in JSX attributes
+(pass) wiki-markdown utility > sanitizeMDX > removes backslashes used for line continuation in JSX tags
+(pass) wiki-markdown utility > sanitizeMDX > preserves escaped newlines inside JSX string props
+(pass) wiki-markdown utility > sanitizeMDX > escapes raw "<" followed by numbers or equals
+(pass) wiki-markdown utility > sanitizeMDX > does not escape valid components
+(pass) wiki-markdown utility > sanitizeMDX > separates inline prose in JSX learning callouts so MDX can parse the block
+(pass) wiki-markdown utility > createMdxFallbackSource > preserves raw SlateCamp UI placeholders as a detectable sentinel instead of normal article prose
+(pass) wiki-markdown utility > createMdxFallbackSource > preserves authored prose while keeping valid registered components
+(pass) wiki-markdown utility > createMdxFallbackSource > unwraps prose-bearing callouts instead of turning the article into a summary
+(pass) wiki-markdown utility > createMdxFallbackSource > preserves valid registered self-closing components like ArticleMedia
+(pass) wiki-markdown utility > createMdxFallbackSource > preserves valid paired known components
+(pass) wiki-markdown utility > createMdxFallbackSource > strips unknown component tags while preserving known ones
+(pass) wiki-markdown utility > createMdxFallbackSource > preserves mixed content with ArticleMedia and malformed ExamTip [1.30ms]
+(pass) wiki-markdown utility > injectEIPrompts > injects EIPrompt component after a matching heading [0.06ms]
+(pass) wiki-markdown utility > injectEIPrompts > is case-insensitive when matching headings
+(pass) wiki-markdown utility > injectEIPrompts > returns original content if no prompts match
+(pass) wiki-markdown utility > injectEIPrompts > handles multiple prompts for the same heading
+(pass) wiki-markdown utility > extractHeadings > extracts h2 and h3 headings with slugified IDs
+(pass) wiki-markdown utility > extractHeadings > keeps repeated heading anchors unique in source order
+(pass) wiki-markdown utility > extractHeadings > falls back to a stable section anchor for punctuation-only headings
+
+src/lib/__tests__/readiness-score.test.ts:
+(pass) zero mastery state > returns overallScore of 0 when no nodes touched [0.25ms]
+(pass) zero mastery state > grey penalty is 0.6 when no nodes touched out of 10
+(pass) zero mastery state > all sub-scores are 0 when no nodes touched
+(pass) zero mastery state > ceiling is active (no level3/4 correct) and set to 70
+(pass) zone boundary: score = 0 > result is exactly 0 with empty state
+(pass) zone boundary: difficulty ceiling at 70 (no level 3 correct) > score is capped at 70 when maxDifficultyCorrect < 3 [0.17ms]
+(pass) zone boundary: difficulty ceiling at 82 (level 3 correct, not 4) > score is capped at 82 when maxDifficultyCorrect is exactly 3 [0.06ms]
+(pass) zone boundary: bloom ceiling at 75 (no apply-level correct) > score capped at 75 when has_bloom_apply_correct is false [0.07ms]
+(pass) zone boundary: bloom ceiling at 87 (apply correct, not analyze) > score capped at 87 when has_bloom_analyze_correct is false [0.05ms]
+(pass) zone boundary: no ceiling when all requirements met > ceilingActive is false when difficulty=4 and both bloom flags true
+(pass) anti-inflation: diminishing returns (Vector 1) > consecutive streak > 1 reduces effective mastery [0.12ms]
+(pass) anti-inflation: recency decay (Vector 6) > stale node scores lower than fresh node [0.07ms]
+(pass) anti-inflation: depth weight (Vector 5) > thin coverage (< 5 distinct questions) reduces subject score vs deep [0.04ms]
+(pass) anti-inflation: depth weight (Vector 5) > medium coverage (5–9 distinct questions) scores lower than deep coverage [0.03ms]
+(pass) anti-inflation: grey node penalty (Vector 3) > grey nodes drag down score proportionally
+(pass) single node > activeCoverageGaps includes node lea_id when distinct_questions_seen < 5
+(pass) single node > activeCoverageGaps is empty when distinct_questions_seen >= 5
+(pass) single node > belowFloorSubjects includes subject when score < 50 [0.14ms]
+(pass) single node > belowFloorSubjects is empty when score >= 50 [0.03ms]
+(pass) day 1 / day 2 split > dayOneScore uses only Area A subjects
+(pass) day 1 / day 2 split > dayTwoScore uses Areas B and C
+(pass) day 1 / day 2 split > dayOneScore is 0 when all touched nodes are in B/C
+(pass) 6-vector computation > result shape includes all required fields [0.13ms]
+(pass) 6-vector computation > overallScore is always floored to 1 decimal place (never rounds up) [0.03ms]
+(pass) 6-vector computation > overallScore does not exceed ceilingValue when ceiling is active
+(pass) 6-vector computation > greyPenalty is between 0 and 0.6 inclusive
+(pass) all nodes mastered > score is positive and ceiling is not active when all requirements met
+(pass) regression guard > fixed input produces stable output within expected range
+(pass) regression guard > zero-input regression: empty nodes always returns zero score
+
+src/lib/__tests__/routes.test.ts:
+(pass) STATIC_PAGE_TITLES regression > settings title remains "Account Settings" (not shortened to "Settings")
+(pass) getPageTitle regression > returns "Dashboard" for /dashboard
+(pass) getPageTitle regression > treats /dashboard/quiz as the canonical quiz hub route
+(pass) getPageTitle regression > returns "Quiz Session" for canonical quiz session URLs
+(pass) getPageTitle regression > collapses legacy modeful helper calls onto the dashboard session route
+(pass) getPageTitle regression > keeps explicit legacy quiz route constants for redirects and old deep links
+(pass) getPageTitle regression > returns exact title for dashboard quiz sessions history
+(pass) getPageTitle regression > uses /tools as the canonical calculator namespace
+(pass) getPageTitle regression > returns "Knowledge Wiki" for /dashboard/wiki/some-slug
+
+src/lib/focus-review/generate-queue.test.ts:
+(pass) generateFocusReviewQueue — active queue guard > returns null when user already has a pending queue
+(pass) generateFocusReviewQueue — active queue guard > returns null when user already has an in_progress queue
+(pass) generateFocusReviewQueue — active queue guard > does not return null when no active queue exists and weak nodes are present
+(pass) generateFocusReviewQueue — no weak nodes > returns null when user has no weak nodes and no grey (untouched) nodes [0.79ms]
+(pass) generateFocusReviewQueue — no weak nodes > returns null when both weakNodes and allLeafNodes are empty [0.06ms]
+(pass) generateFocusReviewQueue — queue creation > returns queueId and nodeIds on successful insert
+(pass) generateFocusReviewQueue — queue creation > includes only weak node ids when no grey nodes [0.14ms]
+(pass) generateFocusReviewQueue — queue creation > includes grey (untouched) nodes when fewer than 3 weak nodes [0.11ms]
+[FOCUS_REVIEW] generateFocusReviewQueue insert failed: {
+  error: "insert constraint violation",
+  timestamp: "2026-05-14T17:37:39.316Z",
+}
+(pass) generateFocusReviewQueue — queue creation > returns null when the insert call returns an error [0.13ms]
+(pass) generateFocusReviewQueue — queue creation > returns null when insert data is null [0.07ms]
+(pass) generateFocusReviewQueue — caps at 3 target nodes > nodeIds length is at most 3 when 3 weak nodes provided [0.07ms]
+(pass) generateFocusReviewQueue — caps at 3 target nodes > nodeIds capped at 3 when weak + grey exceed 3 [0.11ms]
+(pass) generateFocusReviewQueue — caps at 3 target nodes > nodeIds length equals 1 when only a single weak node
+(pass) generateFocusReviewQueue — caps at 3 target nodes > nodeIds = 3 when 2 weak + 1 grey node
+(pass) generateFocusReviewQueue — grey node discovery > only includes untouched leaf nodes as grey nodes
+(pass) generateFocusReviewQueue — grey node discovery > returns null when all leaf nodes touched and mastery above threshold [0.27ms]
+
+src/lib/actions/dashboard-page.test.ts:
+(pass) getDashboardPageData — unauthenticated path > returns emptyDashboard when user is null
+(pass) getDashboardPageData — unauthenticated path > readinessScore defaults to 0
+(pass) getDashboardPageData — unauthenticated path > previousScore defaults to null
+(pass) getDashboardPageData — unauthenticated path > examDate defaults to null
+(pass) getDashboardPageData — unauthenticated path > daysUntilExam defaults to null
+(pass) getDashboardPageData — unauthenticated path > syllabusCoveragePercent defaults to 0 [0.05ms]
+(pass) getDashboardPageData — unauthenticated path > readinessMeta defaults to null
+(pass) getDashboardPageData — unauthenticated path > focusAreas defaults to empty array [0.05ms]
+(pass) getDashboardPageData — unauthenticated path > subjectMastery defaults to empty array
+(pass) getDashboardPageData — unauthenticated path > subjectFloorAlerts defaults to empty array [0.05ms]
+(pass) getDashboardPageData — unauthenticated path > recentSessions defaults to empty array
+(pass) getDashboardPageData — unauthenticated path > recentNotes defaults to empty array [0.09ms]
+(pass) getDashboardPageData — unauthenticated path > inProgressSession defaults to null [0.17ms]
+(pass) getDashboardPageData — unauthenticated path > dailyArticle defaults to null [0.04ms]
+(pass) getDashboardPageData — unauthenticated path > labModuleCount defaults to 0
+(pass) getDashboardPageData — unauthenticated path > scoreUpdatesSinceReveal defaults to 0 [0.05ms]
+(pass) getDashboardPageData — unauthenticated path > isFreeUser defaults to true [0.03ms]
+(pass) getDashboardPageData — unauthenticated path > activeTrailDay defaults to null [0.01ms]
+(pass) getDashboardPageData — unauthenticated path > onboardingState defaults to needs_assessment
+(pass) getDashboardSyncPayload — unauthenticated path > returns only the minimal sync payload defaults [0.24ms]
+(pass) emptyDashboard — heroStats shape > heroStats contains exactly 3 entries
+(pass) emptyDashboard — heroStats shape > all heroStat values are 0
+(pass) emptyDashboard — heroStats shape > all heroStat deltas are null
+(pass) emptyDashboard — heroStats shape > heroStats labels match expected values
+(pass) emptyDashboard — weekStats shape > weekStats contains exactly 3 entries
+(pass) emptyDashboard — weekStats shape > all weekStat values are 0
+(pass) emptyDashboard — weekStats shape > all weekStat deltas are null
+(pass) emptyDashboard — streak shape > streak.currentStreak defaults to 0
+(pass) emptyDashboard — streak shape > streak.longestStreak defaults to 0 [0.31ms]
+(pass) emptyDashboard — streak shape > streak.streakStatus defaults to broken [0.02ms]
+(pass) emptyDashboard — srsReview shape > srsReview.itemsDue defaults to 0
+(pass) emptyDashboard — srsReview shape > srsReview.subjects defaults to empty array
+(pass) emptyDashboard — srsReview shape > srsReview.estimatedMinutes defaults to 0
+(pass) emptyDashboard — action shape > action.type is warmup when no data
+(pass) emptyDashboard — action shape > action.href points to camp mode [0.03ms]
+(pass) emptyDashboard — action shape > action.estimatedMinutes is a positive number
+(pass) emptyDashboard — action shape > action contains required string fields
+(pass) emptyDashboard — userName fallback > userName falls back to 'there' when user is null
+
+src/lib/actions/preview-actions.test.ts:
+(pass) preview-actions > allows content admins to generate draft previews through admin client access
+(pass) preview-actions > updates draft previews and revalidates the preview path [0.23ms]
+
+src/lib/actions/analytics.test.ts:
+(pass) getTaxonomyHeatmap > returns [] when user is not logged in [0.38ms]
+[ANALYTICS] getTaxonomyHeatmap tree query failed: {
+  error: "connection timeout",
+  timestamp: "2026-05-14T17:37:39.345Z",
+}
+(pass) getTaxonomyHeatmap > returns [] when the taxonomy_tree query errors [0.09ms]
+(pass) getTaxonomyHeatmap > returns [] when taxonomy_tree returns null data
+(pass) getTaxonomyHeatmap > returns [] when taxonomy_tree returns empty array
+(pass) getTaxonomyHeatmap > returns clusters shaped correctly when tree and mastery data are present
+(pass) getReadinessTrajectory > returns [] when user is not logged in [0.32ms]
+(pass) getReadinessTrajectory > returns [] when no snapshot data exists [0.02ms]
+(pass) getReadinessTrajectory > returns [] when snapshot query returns null [0.05ms]
+(pass) getReadinessTrajectory > maps snapshots to trajectory points with correct shape [12.76ms]
+(pass) getReadinessTrajectory > rounds scores to integers
+
+src/lib/actions/quiz.test.ts:
+(pass) Pedagogical Algorithms > Lucky Guess Detector speed threshold
+(pass) Pedagogical Algorithms > Mode-aware EMA alpha weighting
+(pass) Pedagogical Algorithms > Review Lock 24h logic
+
+src/lib/api/cron-auth.test.ts:
+(pass) verifyCronRequest > fails closed when CRON_SECRET is missing [1.07ms]
+(pass) verifyCronRequest > fails closed when CRON_SECRET is empty or whitespace
+(pass) verifyCronRequest > rejects wrong Authorization header [0.07ms]
+(pass) verifyCronRequest > rejects empty, null-like, and malformed bearer tokens
+(pass) verifyCronRequest > accepts the exact configured Authorization header
+
+src/lib/import/import-actions.test.ts:
+(pass) importQuestionsToDb > rejects import when manage permission is denied [0.26ms]
+(pass) importQuestionsToDb > rejects JSON import rows with unsupported fifth option [1.23ms]
+
+src/lib/logging/server.test.ts:
+[application-error] admin.questions_create_failed {
+  namespace: "application_error",
+  severity: "error",
+  family: "admin",
+  eventName: "questions_create_failed",
+  message: "Failed to create question.",
+  requestId: "8117903e-b947-45f7-9f76-20af6e219e53",
+  traceId: null,
+  routeOrAction: "admin:questions.create",
+  userId: "user-1",
+  sessionId: null,
+  provider: null,
+  eventId: null,
+  fingerprint: "admin|questions_create_failed|admin:questions.create|boom",
+  metadata: {
+    authorization: "[REDACTED]",
+    topicId: "topic-1",
+  },
+  error: {
+    name: "Error",
+    message: "boom",
+    cause: undefined,
+  },
+  createdAt: "2026-05-14T17:37:39.382Z",
+}
+(pass) logging/server > persists sanitized application errors to analytics_events [0.04ms]
+(pass) logging/server > reads application errors through the dedicated server-side read model
+
+src/app/admin/_components/AdminShell.test.ts:
+(pass) shouldBypassAdminShellChrome > bypasses chrome for admin preview routes
+(pass) shouldBypassAdminShellChrome > keeps chrome for normal admin routes
+
+src/features/wall-configurator/__tests__/engine-validation.test.ts:
+(pass) 10 sqm baseline validation > computes area state correctly
+(pass) 10 sqm baseline validation > computes area state with both sides
+(pass) 10 sqm baseline validation > deducts openings from area
+(pass) 10 sqm baseline validation > clamps opening area to gross area
+(pass) 10 sqm baseline validation > CHB units — 1 side
+(pass) 10 sqm baseline validation > Plaster cement — 1 side [0.21ms]
+(pass) 10 sqm baseline validation > Plaster cement — 2 sides
+(pass) 10 sqm baseline validation > Primer — 1 side (1 coat, 7 sqm/L) [0.10ms]
+(pass) 10 sqm baseline validation > Topcoat — 1 side (2 coats, 7 sqm/L)
+(pass) 10 sqm baseline validation > Paint total — both sides matches 9.43L spec
+(pass) 10 sqm baseline validation > Drywall boards — 1 side
+(pass) 10 sqm baseline validation > Drywall boards — 2 sides
+(pass) 10 sqm baseline validation > Joint compound — 10 lm seam reference [0.09ms]
+
+src/features/3d-lab/config/module-paths.test.ts:
+(pass) 3D Lab module import paths > resolves known modules to their category folder path
+(pass) 3D Lab module import paths > falls back to the raw module id when no mapping exists
+(pass) 3D Lab module import paths > imports a mapped module config from the shared resolver [14.97ms]
+(pass) 3D Lab module import paths > imports full configs for dashboard-visible modules without relying on registry configs [8.75ms]
+
+src/features/3d-lab/constants/nbcp.test.ts:
+(pass) getRrowBhl > 8.00m maps to 5 storeys (>= lower bound)
+(pass) getRrowBhl > 7.99m maps to 3 storeys
+(pass) getRrowBhl > 15m maps to 15 storeys
+(pass) getRrowBhl > 30m maps to 36 storeys
+(pass) getRrowBhl > 12m maps to 12 storeys
+(pass) getBaseSetbacks — R1 > R1, 2 storeys, RROW < 10: front 3.0m [0.32ms]
+(pass) getBaseSetbacks — R1 > R1, 2 storeys, RROW >= 10: front 4.5m
+(pass) getBaseSetbacks — R1 > R1, 3 storeys: front 4.5m regardless of RROW
+(pass) getBaseSetbacks — General (Table VIII.3) > RROW 10m: front 5.0, side 2.0, rear 2.0
+(pass) getBaseSetbacks — General (Table VIII.3) > RROW 15m: front 5.0, side 3.0, rear 3.0
+(pass) getBaseSetbacks — General (Table VIII.3) > RROW 30m: front 8.0, side 5.0, rear 5.0
+(pass) ZONING_TABLE spot checks > R3 FLAR is 5.0, BHL 12 storeys, PSO inside 70%
+(pass) ZONING_TABLE spot checks > R2_MAX BHL is 5 storeys
+(pass) ZONING_TABLE spot checks > C2 is not residential
+
+src/features/3d-lab/stores/useViewportShellStore.test.ts:
+(pass) useViewportShellStore camera commands > defaults to SE perspective fit-to-view on module load [0.06ms]
+(pass) useViewportShellStore camera commands > keeps view direction and projection mode independent [0.07ms]
+(pass) useViewportShellStore camera commands > projection commands do not replace the current named view [0.04ms]
+(pass) useViewportShellStore camera commands > reset returns to perspective SE fit home state [0.02ms]
+(pass) useViewportShellStore camera commands > replays the same preset by issuing a fresh command id
+(pass) useViewportShellStore camera commands > preserves the current named view when zoom-to-fit is triggered [0.06ms]
+(pass) useViewportShellStore camera commands > issues repeatable slider zoom commands without clearing the active view
+(pass) useViewportShellStore camera commands > manual camera movement clears active preset without changing projection mode
+(pass) useViewportShellStore camera commands > zoom commands preserve projection mode after manual orthographic movement
+
+src/features/3d-lab/utils/isometric-camera-fit.test.ts:
+(pass) isometric orthographic camera fitting > computes near/far planes that contain all small scene corners [0.53ms]
+(pass) isometric orthographic camera fitting > computes near/far planes that contain all medium scene corners
+(pass) isometric orthographic camera fitting > computes near/far planes that contain all very large scene corners [0.51ms]
+(pass) isometric orthographic camera fitting > allows a zero near plane when foreground content needs it
+(pass) isometric orthographic camera fitting > fits an orthographic camera to object content and updates controls [0.97ms]
+(pass) isometric orthographic camera fitting > content bounds exclude grid/helper chrome and explicit fit exclusions [0.45ms]
+(pass) isometric orthographic camera fitting > clip bounds can include visible grid chrome without using it for content fit [0.35ms]
+(pass) isometric orthographic camera fitting > clip fitting contains a finite grid without moving the orthographic camera [0.28ms]
+(pass) isometric orthographic camera fitting > ground footprint expands when orthographic zooms out in isometric view [0.28ms]
+(pass) isometric orthographic camera fitting > ground footprint returns finite bounded coverage for SE and non-square frustums
+(pass) isometric orthographic camera fitting > ground footprint envelope is included in orthographic clip planes [0.83ms]
+
+src/features/3d-lab/utils/camera-presets.test.ts:
+(pass) camera preset helpers > keeps projection commands separate from view orientation presets [0.06ms]
+(pass) camera preset helpers > preserves the current selection for zoom commands and resets to the home SE view for reset [0.03ms]
+(pass) camera preset helpers > preserves projection for labeled orientation view commands [0.02ms]
+(pass) camera preset helpers > lets preset projection upgrade the shared scene camera to orthographic [0.02ms]
+(pass) camera preset helpers > tracks which commands should clear manual orbit state [0.02ms]
+
+src/features/3d-lab/utils/nbcpCalculator.test.ts:
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > TLA = 4000
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > BHL effective = 12 (zoning-limited)
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > Front setback = 5.0m (flat base, RROW 15m)
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > Side setbacks = 3.0m each (flat base, RROW 15m)
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > AMBF by setbacks = 3168 (44×72)
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > AMBF by PSO = 2800
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > AMBF = 2800 (PSO more stringent)
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > maxGFA = 20000
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > effectiveStoreys = 7 (FLAR-limited)
+(pass) Scenario A — R3 inside lot 50x80m RROW=15m > No violations (no BHL override active)
+(pass) Scenario B — R1 corner lot 15x20m RROW=8m > TLA = 300
+(pass) Scenario B — R1 corner lot 15x20m RROW=8m > BHL effective = 3 (zoning-limited)
+(pass) Scenario B — R1 corner lot 15x20m RROW=8m > PSO = 0.80 (R-1 corner same as inside)
+(pass) Scenario B — R1 corner lot 15x20m RROW=8m > Front setback = 4.5m (R-1 flat base, RROW<10, 3F)
+(pass) Scenario B — R1 corner lot 15x20m RROW=8m > Left setback = 4.5m (CORNER uses front setback on secondary road side)
+(pass) Scenario B — R1 corner lot 15x20m RROW=8m > No violations
+(pass) Scenario B — R1 corner lot 15x20m RROW=8m > effectiveStoreys = 3
+(pass) Scenario C — R2 Max inside 12x25m RROW=10m, rear+left firewalls > Rear setback = 0 (firewall)
+(pass) Scenario C — R2 Max inside 12x25m RROW=10m, rear+left firewalls > Left setback = 0 (firewall)
+(pass) Scenario C — R2 Max inside 12x25m RROW=10m, rear+left firewalls > Right setback = 2.0m (flat base, no incremental)
+(pass) Scenario C — R2 Max inside 12x25m RROW=10m, rear+left firewalls > AMBF = 200 (setbacks more stringent than PSO)
+(pass) Scenario C — R2 Max inside 12x25m RROW=10m, rear+left firewalls > effectiveStoreys = 4 (FLAR-limited: floor(900/200) = 4)
+(pass) Scenario C — R2 Max inside 12x25m RROW=10m, rear+left firewalls > No violations (no BHL override, ambf > 0)
+(pass) RROW Effect — R3 RROW=8m caps BHL at 5 storeys > bhl_effective = 5 despite R-3 allowing 12
+(pass) Firewall sanitization — R1 cannot have firewalls > No setback is zero despite all firewalls requested
+(pass) Through lot — rear setback equals front setback > rear setback equals front setback (both RROW-based)
+(pass) Through lot — rear setback equals front setback > left and right are standard side setbacks (not RROW front)
+(pass) End lot — right setback equals front setback > right setback equals front setback (secondary road-end side)
+(pass) End lot — right setback equals front setback > left uses standard side setback (not secondary front)
+(pass) floorsOverride — exceeding BHL fires a violation > displayStoreys = 10 (override)
+(pass) floorsOverride — exceeding BHL fires a violation > displayHeight = 30m
+(pass) floorsOverride — exceeding BHL fires a violation > BHL violation fires
+(pass) floorsOverride = 0 — uses code-computed max > displayStoreys = effectiveStoreys (no override)
+(pass) Edge — lot too small for setbacks > ambf = 0
+(pass) Edge — lot too small for setbacks > violation field = ambf
+(pass) Edge — lot too small for setbacks > effectiveStoreys still ≥ 1 (render guard)
+
+src/components/admin/unified-editor/content-editor-index-routing.test.ts:
+(pass) buildContentEditorIndexHref > keeps question-bank state on the question-bank route
+(pass) buildContentEditorIndexHref > drops the topic filter when clearing selection
+
+src/components/wiki/navigation/WikiSidebar.test.ts:
+(pass) WikiSidebar client taxonomy fetch gate > skips client taxonomy fetch when server-fed nodes are present
+(pass) WikiSidebar client taxonomy fetch gate > fetches taxonomy client-side when no initial nodes are provided
+
+src/components/wiki/quiz/WikiQuizModal.test.tsx:
+(pass) WikiQuizModal static render > renders loading state initially [4.01ms]
+(pass) WikiQuizModal static render > header shows topic name and article title [1.51ms]
+(pass) WikiQuizModal static render > header shows results title in template [1.10ms]
+(pass) WikiQuizModal static render > close button has aria-label [1.01ms]
+(pass) WikiQuizModal static render > modal has dialog role and aria-modal [1.12ms]
+(pass) WikiQuizModal static render > modal has aria-labelledby pointing to title [0.37ms]
+(pass) WikiQuizModal static render > modal uses the wiki top-layer z-index and wide responsive shell [0.57ms]
+(pass) WikiQuizModal static render > modal shell keeps body and footer as separate flex regions [0.17ms]
+(pass) WikiQuizModal static render > results actions exist in template [0.55ms]
+(pass) WikiQuizModal static render > retry button exists in template [0.44ms]
+(pass) WikiQuizModal static render > empty state message exists in template [0.46ms]
+(pass) WikiQuizModal static render > SSR-safe without document [0.67ms]
+(pass) WikiQuizModal static render > modal renders without throwing when questions load [1.35ms]
+(pass) WikiQuizModal static render > overlay is intentionally non-dismissible to protect slider drags [0.06ms]
+(pass) WikiQuizModal static render > Escape key does not close the quick review modal [0.21ms]
+
+src/components/wiki/article/WikiLearningJourney.test.tsx:
+(pass) WikiLearningJourney > renders a structured learning module from article headings without turning it into a summary [0.40ms]
+(pass) WikiLearningJourney > handles missing optional metadata and headings gracefully [0.14ms]
+(pass) WikiLearningJourney > renders completion prompts as review actions, not a generic recap [0.27ms]
+
+src/components/wiki/article/WikiArticleMdxFallback.test.tsx:
+(pass) WikiArticle rendering > rejects raw SlateCamp UI block placeholders before MDX can render them as prose [1.69ms]
+(pass) WikiArticle rendering > preserves and renders ArticleMedia with fallback when malformed ExamTip triggers primary compile failure [15.55ms]
+(pass) WikiArticle rendering > renders article prose with fallback when malformed JSX attributes would otherwise fail MDX compilation [2.14ms]
+(pass) WikiArticle rendering > gracefully renders error state when array props use bracket syntax instead of JSX braces [1.07ms]
+
+src/components/wiki/article/WikiArticleHeadingAnchors.test.tsx:
+(pass) compileWikiArticleWithRenderer heading anchors > renders duplicate headings with unique IDs that match table-of-contents extraction [2.46ms]
+
+src/lib/pd1096/__tests__/computationEngine.test.ts:
+(pass) R-1 300sqm Canonical Case > TLA = 300 sqm
+(pass) R-1 300sqm Canonical Case > setbacks: front=4.5, side=2.0, rear=2.0 (no increment for 2 storeys)
+(pass) R-1 300sqm Canonical Case > buildable envelope = (20-2-2) × (15-4.5-2) = 16 × 8.5 = 136 sqm
+(pass) R-1 300sqm Canonical Case > R-1 PSO path N/A — setback always governs
+(pass) R-1 300sqm Canonical Case > TOSL = TLA - AMBF = 164 sqm
+(pass) R-1 300sqm Canonical Case > ISA = 30% × TLA = 90 sqm
+(pass) R-1 300sqm Canonical Case > USA = TLA - AMBF - ISA = 300 - 136 - 90 = 74 sqm
+(pass) R-1 300sqm Canonical Case > MACA = AMBF + ISA = 226 sqm [0.01ms]
+(pass) R-1 300sqm Canonical Case > closure identity: TLA = AMBF + ISA + USA [0.01ms]
+(pass) R-1 300sqm Canonical Case > overall compliant when proposed fits within AMBF [0.01ms]
+(pass) R-2-basic with Firewall > TLA = 160 sqm
+(pass) R-2-basic with Firewall > firewall zeroes left setback [0.03ms]
+(pass) R-2-basic with Firewall > PSO with firewall = 60% → AMBF_PSO = 96 sqm [0.01ms]
+(pass) R-2-basic with Firewall > no incremental setback (removed from base module)
+(pass) R-2-basic with Firewall > closure identity holds
+(pass) Com-1 Commercial > TLA = 1200 sqm
+(pass) Com-1 Commercial > commercial setback from RROW 15m: front=5, side=3, rear=3
+(pass) Com-1 Commercial > PSO no firewall = 65% → AMBF_PSO = 780 sqm
+(pass) Com-1 Commercial > BHL: min(zoning 5 storeys, RROW 15 storeys) = 5
+(pass) Com-1 Commercial > closure identity holds
+(pass) Com-1 Commercial > FLAR midpoint for Com-1 = (1.70+3.00)/2 = 2.35
+(pass) Narrow Lot Violation > narrow lot: buildable width = max(0, 6-2-2) = 2m
+(pass) Narrow Lot Violation > AMBF is small: 2 × 3.5 = 7 sqm
+(pass) Narrow Lot Violation > proposed 5×8=40 sqm exceeds AMBF=7 → violation
+(pass) Narrow Lot Violation > overall not compliant
+(pass) Narrow Lot Violation > closure identity still holds even with violation
+(pass) Floor Height Violation > floor height 2.4m < 2.7m → violation
+(pass) BHL Violation > R-1 BHL = 3 storeys, RROW<8 BHL = 3 → proposed 5 exceeds
+(pass) Incremental Setback Removed > no incremental setback regardless of storey count [0.03ms]
+(pass) All zones compute without error > R-1 computes with valid closure identity [0.04ms]
+(pass) All zones compute without error > R-2-basic computes with valid closure identity
+(pass) All zones compute without error > R-2-max computes with valid closure identity
+(pass) All zones compute without error > R-3-basic computes with valid closure identity [0.04ms]
+(pass) All zones compute without error > R-3-max computes with valid closure identity
+(pass) All zones compute without error > R-4 computes with valid closure identity
+(pass) All zones compute without error > R-5 computes with valid closure identity
+(pass) All zones compute without error > Com-1 computes with valid closure identity [0.05ms]
+(pass) All zones compute without error > Com-2 computes with valid closure identity
+(pass) All zones compute without error > Com-3 computes with valid closure identity
+(pass) All zones compute without error > Ind-1 computes with valid closure identity [0.04ms]
+(pass) All zones compute without error > Ind-2 computes with valid closure identity
+(pass) All zones compute without error > Ind-3 computes with valid closure identity [0.01ms]
+(pass) All zones compute without error > Institutional computes with valid closure identity
+(pass) All zones compute without error > Cultural computes with valid closure identity
+(pass) TGFA Violation > proposed GFA exceeds TGFA limit → violation
+(pass) Polygon Lot with area override > uses lot.area for TLA instead of width×depth
+(pass) Polygon Lot with area override > closure identity holds with polygon area
+(pass) Polygon Lot with area override > polygon vertices trigger polygon inset for AMBF [0.21ms]
+(pass) Polygon Lot with area override > FLAR override works with polygon lots
+
+src/lib/admin/editor-integrity/standard-question.test.ts:
+(pass) standard question integrity > treats editorial states as readable for authoring, but only published for delivery [0.27ms]
+(pass) standard question integrity > allows standard linkage while the parent article is still in editorial authoring states [0.17ms]
+(pass) standard question integrity > allows exception question types to bypass standard linkage rules [0.02ms]
+(pass) standard question integrity > counts only standard questions for article coverage [0.18ms]
+(pass) standard question integrity > filters out standard questions whose topic is not mapped to their article owner [0.05ms]
+(pass) standard question integrity > filters standard delivery questions to published readable linked articles while keeping exception items [0.04ms]
+
+src/lib/actions/admin/content.test.ts:
+(pass) admin/content > updateArticleFull > updates taxonomy mapping when node_id is provided [0.59ms]
+(pass) admin/content > saveArticleFull > creates a new article row and taxonomy mapping when article_id is missing [0.55ms]
+(pass) admin/content > saveArticleFull > updates an existing article through the update path when article_id exists [0.10ms]
+(pass) admin/content > saveArticleFull > fails fast when title is missing on create [0.05ms]
+(pass) admin/content > saveArticleFull > rejects creating an article directly in published status [0.04ms]
+(pass) admin/content > smoke-tests MDX preview compilation for valid article content [0.06ms]
+(pass) admin/content > blocks article save when MDX compilation fails [0.05ms]
+
+src/lib/actions/admin/pipeline.test.ts:
+(pass) admin/pipeline > blocks publish when directly linked question coverage is below threshold [0.56ms]
+(pass) admin/pipeline > publishes after compile validation and sufficient direct question coverage [0.19ms]
+(pass) admin/pipeline > blocks publish until the article has been approved [0.04ms]
+(pass) admin/pipeline > ignores stale cross-topic standard questions when counting publish coverage [0.07ms]
+(pass) admin/pipeline > does not fall back to pending_review when canonical in_review is rejected
+
+src/lib/actions/admin/design-problems.test.ts:
+(pass) admin/design-problems > loads design problem summaries with question counts [0.17ms]
+(pass) admin/design-problems > loads a design problem detail with questions
+(pass) admin/design-problems > updates a design problem question
+(pass) admin/design-problems > creates a new design problem question shell
+
+src/lib/actions/admin/questions.test.ts:
+(pass) admin/questions > throws validation error when article_id is missing [0.66ms]
+(pass) admin/questions > rejects question mutations when manage permission is denied
+(pass) admin/questions > creates a standard question with canonical option shape and article ownership [0.21ms]
+(pass) admin/questions > allows standard questions linked to in-review articles during authoring [0.02ms]
+(pass) admin/questions > rejects updates when article/topic linkage is invalid [0.26ms]
+(pass) admin/questions > rejects exception question types in the standard question flow
+
+src/lib/actions/admin/design-scenarios.test.ts:
+(pass) admin/design-scenarios > loads scenario summaries with question counts
+(pass) admin/design-scenarios > loads a scenario detail with scenario questions
+(pass) admin/design-scenarios > updates a scenario question
+(pass) admin/design-scenarios > creates a new scenario question shell
+
+src/lib/actions/admin/roles.test.ts:
+(pass) admin/roles actions > returns canonical user_roles data when accessible [0.15ms]
+(pass) admin/roles actions > falls back to profiles when user_roles is blocked [0.02ms]
+(pass) admin/roles actions > assignRole updates profiles when user_roles is blocked [0.23ms]
+(pass) admin/roles actions > revokeRole updates profiles when user_roles is blocked [0.08ms]
+
+src/lib/actions/admin/wiki.test.ts:
+(pass) admin/wiki > returns mapping error and logs when taxonomy link creation fails [0.93ms]
+(pass) admin/wiki > approves review items through the canonical review action [0.13ms]
+(pass) admin/wiki > requires comments when requesting changes [0.20ms]
+
+src/lib/actions/admin/assets.test.ts:
+(pass) admin/assets > returns db errors while logging asset creation failures [0.69ms]
+(pass) admin/assets > returns upload errors while logging file upload failures [1.16ms]
+(pass) admin/assets > archives assets through a status update
+
+src/lib/actions/dev/test-data.test.ts:
+(pass) generateTestSessions > rejects when developer access is denied
+(pass) generateTestSessions > quarantines stale test-session generation [0.19ms]
+(pass) generateTestSessions > does not query stale exam/profile tables
+(pass) generateTestOrg > rejects when developer access is denied [0.06ms]
+(pass) generateTestOrg > creates organization successfully
+
+src/lib/actions/dev/db-viewer.test.ts:
+(pass) getTableInfo > returns table info from RPC
+(pass) getTableInfo > falls back to known tables when RPC fails
+
+src/lib/actions/quiz-v2/start-session.test.ts:
+(pass) quiz-v2/start-session > returns the existing typed failure contract and logs once on fatal failure [1.42ms]
+(pass) quiz-v2/start-session > maps the drills hub default subject config to descendant topics and medium difficulty [1.13ms]
+(pass) quiz-v2/start-session > falls back to the live taxonomy graph when the cached graph does not expand a selected subject [0.36ms]
+(pass) quiz-v2/start-session > returns NO_QUESTIONS instead of inserting a zero-question session [0.12ms]
+(pass) quiz-v2/start-session > treats topic ids that fully match question ids as a direct question launch [0.26ms]
+
+src/lib/actions/quiz-v2/get-session-questions.test.ts:
+(pass) getSessionQuestions > uses the server-owned session question order and slices it by offset and limit
+[quiz-v2/get-session-questions] Failed: 35 |     class Definition extends Parent {
+36 |     }
+37 |     Object.defineProperty(Definition, "name", { value: name });
+38 |     function _(def) {
+39 |         var _a;
+40 |         const inst = params?.Parent ? new Definition() : this;
+                                           ^
+ZodError: [
+  {
+    "origin": "number",
+    "code": "too_big",
+    "maximum": 50,
+    "inclusive": true,
+    "path": [
+      "limit"
+    ],
+    "message": "Too big: expected number to be <=50"
+  }
+]
+      at /Users/philiplewis/slatecamp/node_modules/zod/v4/core/core.js:40:39
+
+(pass) getSessionQuestions > rejects invalid slice sizes before any data fetch happens [1.28ms]
+
+src/lib/actions/quiz-v2/submit-answer.test.ts:
+(pass) submitAnswer > returns immediate feedback and triggers background hooks on success [1.13ms]
+(pass) submitAnswer > accepts captured slide gesture traces from the UI [0.99ms]
+(pass) submitAnswer > normalizes out-of-bounds gesture traces instead of rejecting the final answer
+(pass) submitAnswer > final question triggers session completion [0.52ms]
+[submitAnswer] RPC failed, falling back to legacy interaction recording: {
+  message: "Method not found",
+  code: "P0001",
+}
+(pass) submitAnswer > falls back gracefully when RPC fails [0.23ms]
+(pass) submitAnswer > logs and rethrows fatal failures at the action boundary [0.14ms]
+
+src/lib/lot-geometry/__tests__/lot-geometry.test.ts:
+(pass) bearingToAzimuthRad > N 0° E = 0 radians (due North)
+(pass) bearingToAzimuthRad > N 90° E = π/2 radians (due East)
+(pass) bearingToAzimuthRad > S 0° E = π radians (due South)
+(pass) bearingToAzimuthRad > N 90° W = 3π/2 radians (due West)
+(pass) bearingToAzimuthRad > N 45° E = π/4 radians
+(pass) bearingToAzimuthRad > minutes and seconds convert correctly: N 65° 30' 00" E [0.30ms]
+(pass) polarToCartesian > due North (azimuth 0): dx=0, dz=distance [0.01ms]
+(pass) polarToCartesian > due East (azimuth π/2): dx=distance, dz=0
+(pass) buildPolygonFromSegments > returns null for fewer than 3 segments
+(pass) buildPolygonFromSegments > rectangular lot: N→E→S→W = 20×15 = 300 sqm
+(pass) buildPolygonFromSegments > triangular lot: 3 segments
+(pass) buildPolygonFromSegments > closure error detected for unclosed polygon
+(pass) buildRectangularPolygon > 20×15 = 300 sqm with correct bounds
+(pass) buildRectangularPolygon > edges have correct boundary tags
+(pass) bowditchAdjust > adjusts closure error proportionally
+(pass) computeSetbackInsetPolygon > rectangular lot with uniform 2m setback → reduced area
+(pass) computeSetbackInsetPolygon > asymmetric setbacks: front=4.5, rear=2, left=2, right=2
+
+src/app/dashboard/wiki/[articleId]/page.test.tsx:
+(pass) WikiArticlePage metadata fallbacks > uses explicit article learning metadata when available [0.96ms]
+(pass) WikiArticlePage metadata fallbacks > generates route metadata from explicit article learning metadata
+(pass) WikiArticlePage metadata fallbacks > derives safe learning metadata when optional article fields are missing [0.50ms]
+(pass) WikiArticlePage metadata fallbacks > generates route metadata fallbacks without inventing article facts [0.16ms]
+(pass) WikiArticlePage metadata fallbacks > generates no-index metadata for missing articles
+
+src/app/calculators/_lib/__tests__/chb-engine.test.ts:
+(pass) computeCHBEstimate > computes correct gross wall area [0.47ms]
+(pass) computeCHBEstimate > net area equals gross when no openings
+(pass) computeCHBEstimate > deducts opening area correctly [0.25ms]
+(pass) computeCHBEstimate > deducts multiple openings [0.08ms]
+(pass) computeCHBEstimate > computes block module area with mortar
+(pass) computeCHBEstimate > computes course count for 2700mm wall
+(pass) computeCHBEstimate > computes blocks per course for 4000mm wall
+(pass) computeCHBEstimate > applies waste percent correctly
+(pass) computeCHBEstimate > rounds up block count to whole number [0.20ms]
+(pass) computeCHBEstimate > computes mortar volume (horizontal + vertical) [0.04ms]
+(pass) computeCHBEstimate > computes horizontal joint volume
+(pass) computeCHBEstimate > computes vertical joint volume
+(pass) computeCHBEstimate > cement bags rounded up correctly [0.08ms]
+(pass) computeCHBEstimate > sand volume is remainder after cement [0.04ms]
+(pass) computeCHBEstimate > net wall area cannot be negative
+(pass) computeCHBEstimate > generates assumptions list
+(pass) computeCHBEstimate > includes rebar assumptions when enabled
+(pass) computeCHBEstimate > excludes rebar assumptions when disabled [0.15ms]
+(pass) vertical rebar > computes vertical rebar at regular spacing [0.05ms]
+(pass) vertical rebar > computes vertical rebar total length
+(pass) vertical rebar > adds rebar at opening sides [0.07ms]
+(pass) vertical rebar > does not duplicate rebar near existing position
+(pass) vertical rebar > no rebar when disabled [0.07ms]
+(pass) horizontal rebar > computes horizontal rebar at course intervals
+(pass) horizontal rebar > computes horizontal rebar positions as Y in meters
+(pass) horizontal rebar > computes horizontal rebar total length [0.02ms]
+(pass) horizontal rebar > no rebar when disabled
+(pass) horizontal rebar > total rebar length sums vertical and horizontal
+(pass) generateCHBGrid > generates correct number of cells
+(pass) generateCHBGrid > applies running bond offset on odd rows
+(pass) generateCHBGrid > offset is half module width
+(pass) generateCHBGrid > marks edge blocks as cut
+(pass) generateCHBGrid > excludes blocks inside openings
+(pass) generateCHBGrid > returns empty grid for zero dimensions
+(pass) generateCHBGrid > returns empty grid for zero block size
+(pass) generateCHBGrid > caps grid at 5000 cells
+(pass) generateCHBGrid > cell coordinates are in meters
+(pass) CHB_PRESETS > has correct thickness for all sizes
+(pass) CHB_PRESETS > has labels for all sizes
+
+src/app/calculators/_lib/__tests__/flooring-engine.test.ts:
+(pass) computeFlooringEstimate > computes correct gross area for rectangle room [0.31ms]
+(pass) computeFlooringEstimate > net area equals gross when no exclusions
+(pass) computeFlooringEstimate > deducts exclusion area correctly
+(pass) computeFlooringEstimate > computes effective module area with grout
+(pass) computeFlooringEstimate > applies waste percent correctly
+(pass) computeFlooringEstimate > rounds up to whole tiles for buy quantity
+(pass) computeFlooringEstimate > computes boxes to buy when box coverage provided
+(pass) computeFlooringEstimate > returns null boxes when no box coverage
+(pass) computeFlooringEstimate > applies spare percent when provided
+(pass) computeFlooringEstimate > generates assumptions list
+(pass) generateTileGrid > generates correct number of cells
+(pass) generateTileGrid > marks edge tiles as cut
+(pass) generateTileGrid > returns empty grid for zero dimensions
+(pass) generateTileGrid > caps grid at 10000 cells [0.38ms]
+(pass) generateTileGrid > applies brick pattern offset on odd rows [0.04ms]
+(pass) PATTERN_WASTE_DEFAULTS > has defaults for all patterns [0.01ms]
+
+src/app/calculators/_lib/__tests__/drywall-engine.test.ts:
+(pass) computeDrywallEstimate > computes gross wall area
+(pass) computeDrywallEstimate > deducts opening area
+(pass) computeDrywallEstimate > doubles boarded area for two-side
+(pass) computeDrywallEstimate > single side when one-side
+(pass) computeDrywallEstimate > computes base stud count
+(pass) computeDrywallEstimate > adds corner allowance
+(pass) computeDrywallEstimate > adds opening framing studs
+(pass) computeDrywallEstimate > computes track pieces to buy
+(pass) computeDrywallEstimate > header track includes 140mm stud overlap per opening
+(pass) computeDrywallEstimate > rounds up board count
+(pass) computeDrywallEstimate > applies waste percent
+(pass) computeStudPositions > returns positions at correct spacing
+(pass) computeStudPositions > returns empty for zero spacing
+(pass) computeBoardPlacements > generates placements for both faces
+(pass) computeBoardPlacements > marks edge boards as cut
+
+src/app/calculators/_lib/__tests__/paint-engine.test.ts:
+(pass) computePaintEstimate > computes gross wall area for room mode [0.18ms]
+(pass) computePaintEstimate > net wall area equals gross when no openings
+(pass) computePaintEstimate > deducts opening area
+(pass) computePaintEstimate > includes ceiling area when toggled
+(pass) computePaintEstimate > uses ceiling area override when provided [0.09ms]
+(pass) computePaintEstimate > computes topcoat liters with coats and waste
+(pass) computePaintEstimate > computes primer liters when primer coats > 0 [0.02ms]
+(pass) computePaintEstimate > returns null primer when 0 coats
+(pass) computePaintEstimate > suggests can sizes
+(pass) computePaintEstimate > generates per-wall breakdown in room mode
+
+src/app/api/payments/checkout/route.test.ts:
+(pass) payments checkout route > returns 503 when the selected payment provider is unavailable [0.63ms]
+
+src/app/api/webhooks/payrex/route.test.ts:
+(pass) payrex webhook route > upserts subscription before marking a successful payment event processed
+(pass) payrex webhook route > logs replayed events and returns idempotent response
+
+src/features/3d-lab/config/registry/index.test.ts:
+(pass) 3D Lab metadata registry > has unique module IDs [0.48ms]
+(pass) 3D Lab metadata registry > resolves every dashboard-visible module
+(pass) 3D Lab metadata registry > contains metadata-only entries [0.24ms]
+(pass) 3D Lab metadata registry > category registry files do not import full module configs
+
+src/features/3d-lab/components/onboarding/state.test.ts:
+(pass) 3D Lab onboarding state > keeps global orientation as the first overlay
+(pass) 3D Lab onboarding state > shows module context only after global orientation is complete
+(pass) 3D Lab onboarding state > returns none when both global and module onboarding are already complete
+(pass) 3D Lab onboarding state > recognizes current and legacy localStorage keys
+
+src/features/3d-lab/DevControlsModule/stores/useDevControlsStore.test.ts:
+(pass) useDevControlsStore camera commands > issues a fresh command token even when the same preset is selected twice [0.15ms]
+
+src/features/3d-lab/config/modules/08-vertical/stairway-computation.test.ts:
+(pass) computeBlondelComfort > riser=185, tread=250 → comfortable (2R+T=620)
+(pass) computeBlondelComfort > riser=200, tread=300 → too-stretched (2R+T=700)
+(pass) computeBlondelComfort > riser=130, tread=200 → too-cramped (2R+T=460)
+(pass) computeBlondelComfort > boundary: riser=150, tread=300 → comfortable (2R+T=600)
+(pass) computeBlondelComfort > boundary: riser=175, tread=300 → too-stretched (2R+T=650)
+(pass) computePitch > riser=185, tread=250 → steep (~36.5°)
+(pass) computePitch > riser=150, tread=300 → comfortable (~26.6°)
+(pass) computePitch > riser=250, tread=200 → ladder-like (~51.3°)
+(pass) computePitch > riser=50, tread=300 → ramp-like (~9.5°)
+(pass) computeStairState — preset validation > module defaults have no parallel law-card violations [1.38ms]
+(pass) computeStairState — preset validation > parallel law-card dimension failures are exposed for model and slider coloring [0.89ms]
+(pass) computeStairState — preset validation > Standard House preset: no riser/tread violations [0.07ms]
+(pass) computeStairState — preset validation > Exit Stair preset: RA 9514 conflict on riser 190>180 [0.03ms]
+(pass) computeStairState — preset validation > BP 220 Housing preset: BP 220 passes, PD 1096 conflict
+(pass) computeStairState — preset validation > BP 344 handrail failures drive the universal code violation color, not law blue
+(pass) computeStairState — preset validation > international comparison uses the active Philippine baseline
+(pass) computeStairState — preset validation > tolerance mode propagates actual total rise into compliance state
+(pass) computeEgressRequirements > Assembly 300sqm → OL=462, 3 exits
+(pass) computeEgressRequirements > Business 500sqm → OL=54, 2 exits (PD 1096 override) [0.32ms]
+(pass) computeEgressRequirements > Business 600sqm → PD 1096 override (>500sqm)
+(pass) computeEgressRequirements > Residential 100sqm → OL=6, 1 exit
+(pass) computeEgressRequirements > Exit width: 710mm minimum per exit
+(pass) computeEgressRequirements > Stair qualification: width 600mm < 710mm → does not count
+(pass) computeEgressRequirements > Stair qualification: width 900mm ≥ 710mm → counts
+(pass) computeEgressRequirements > egress exposes both provided-exit and required-exit width bases
+(pass) computeEgressRequirements > Travel distance: mercantile unsprinklered = 30m
+(pass) computeEgressRequirements > Travel distance: assembly sprinklered = 61m
+
+src/features/3d-lab/config/modules/08-vertical/stairway-geometry.test.ts:
+(pass) stairway geometry validation > module uses Stairway Code Compliance identity and NW default camera
+(pass) stairway geometry validation > straight stair join planes do not overlap landings and treads [1.14ms]
+(pass) stairway geometry validation > straight stair dimensions render at true meter scale [0.16ms]
+(pass) stairway geometry validation > headroom clearance violation plane is universal red, not law blue [0.16ms]
+(pass) stairway geometry validation > passing physical stair assembly uses one gray color for treads, risers, landings, and railings [0.15ms]
+(pass) stairway geometry validation > violating physical stair parts turn red while unrelated parts stay gray [0.05ms]
+(pass) stairway geometry validation > model turns risers red for any law-card failure, including RA 9514 even when exit-stair toggle is off [0.13ms]
+(pass) stairway geometry validation > width violation turns the stair body red without adding width-gap planes
+(pass) stairway geometry validation > vertical-rise violation turns the whole stair body red including treads, risers, and landings [0.19ms]
+(pass) stairway geometry validation > handrail extensions run horizontally to the landing edges [0.08ms]
+(pass) stairway geometry validation > evacuation dots are deterministic for the same inputs [0.63ms]
+
+src/features/3d-lab/config/modules/08-vertical/stairway-click-targets.test.ts:
+(pass) stairway click target coverage > all meaningful generated ids are inspectable or explicitly non-interactive [0.74ms]
+
+src/features/3d-lab/config/modules/02-accessibility/bp344-accessible-route-ramp.test.ts:
+(pass) BP 344 accessible route ramp source contract > carries complete source-backed metadata for every source rule and fails closed pending human approval [0.23ms]
+(pass) BP 344 accessible route ramp formula checks > passes the general 1:20 ramp case with minimum width, landing, tactile warnings, handrails, and raised edge [0.08ms]
+(pass) BP 344 accessible route ramp formula checks > flags a ramp steeper than 1:20 unless it stays inside the 1:15 special-review envelope
+(pass) BP 344 accessible route ramp formula checks > marks 1:15 envelope cases as source-backed review instead of learner-visible pass [0.04ms]
+(pass) BP 344 accessible route ramp formula checks > requires lower-end railing when vehicular traffic is possible [0.01ms]
+(pass) BP 344 accessible route ramp module contract > adds the BP 344 ramp as a dashboard-visible QA card that still fails closed on source-backed compliance [0.07ms]
+(pass) BP 344 accessible route ramp module contract > defines stable preset IDs before Wiki or Quiz deep-links can target presets
+(pass) BP 344 accessible route ramp module contract > renders as a legible ramp diagram with wedge massing, rails, tactile blocks, travel cue, and teaching labels [0.62ms]
+(pass) BP 344 accessible route ramp module contract > keeps route-context rules as annotations instead of compliance pass/fail until deterministic tests exist
+(pass) BP 344 accessible route ramp module contract > resolves every violation and annotation sourceRuleId to a concrete source card and locator [0.09ms]
+
+src/features/3d-lab/config/modules/16-site-dev/parking-lot-requirements.test.ts:
+(pass) parking lot requirements source-gated module > uses a hidden QA-safe source gate and stable route identity
+(pass) parking lot requirements source-gated module > encodes BP 344 Table A.6.1 accessible parking count bands exactly
+(pass) parking lot requirements source-gated module > encodes BP 220 multi-family parking ratio from raw source extraction
+(pass) parking lot requirements source-gated module > encodes RA 11697 EV parking as an included total-slot subset [0.63ms]
+(pass) parking lot requirements source-gated module > keeps the default parameter surface calculator-first only
+(pass) parking lot requirements source-gated module > keeps default annotations off so advanced BP344/source notes do not clutter first view
+(pass) parking lot requirements source-gated module > computes typology-first parking requirements from PD1096 Table VII.4 source cards [0.10ms]
+(pass) parking lot requirements source-gated module > allows a zero basis to mean no required parking
+(pass) parking lot requirements source-gated module > uses source-located stall dimensions and BP344 4000x5000 accessible geometry
+(pass) parking lot requirements source-gated module > attributes parallel stall checks to the parallel source card
+(pass) parking lot requirements source-gated module > fails closed for PD1096 90-degree aisle width instead of encoding a pass/fail threshold
+(pass) parking lot requirements source-gated module > parking grid layout chooses compact square-ish footprints instead of long strips
+(pass) parking lot requirements source-gated module > geometry renders PWD slots as part of the total required-slot count [1.23ms]
+
+src/features/3d-lab/DevControlsModule/dashboard/splits/bhl-display.test.ts:
+(pass) buildBhlControlDisplay > uses the live floor height for the meter display
+(pass) buildBhlControlDisplay > keeps the current BHL storey value when a custom override is active
+
+ 761 pass
+ 0 fail
+ 5898 expect() calls
+Ran 761 tests across 89 files. [2.10s]
+EXIT_CODE[unit-tests]=0
+
+===== vitest =====
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.5 [39m[90m/Users/philiplewis/slatecamp[39m
+
+(node:34198) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ [32m✓[39m tests/vitest/components/shared/mode-button.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 220[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/shared/action-card.test.tsx [2m([22m[2m8 tests[22m[2m)[22m[32m 221[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/ui/button.test.tsx [2m([22m[2m9 tests[22m[2m)[22m[32m 238[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/empty-state.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[32m 180[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/shared/question-card.test.tsx [2m([22m[2m13 tests[22m[2m)[22m[32m 280[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/ui/search-input.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 673[2mms[22m[39m
+     [33m[2m✓[22m[39m calls onChange after debounce when user types [33m 318[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/theme-toggle.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 168[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/ui/checkbox.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[32m 254[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/wiki-table-tabs.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[32m 177[2mms[22m[39m
+[90mstderr[2m | tests/vitest/components/marketing/hero-house-preview.test.tsx
+[22m[39mTHREE.WARNING: Multiple instances of Three.js being imported.
+
+ [32m✓[39m tests/vitest/components/marketing/hero-house-preview.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 156[2mms[22m[39m
+ [32m✓[39m tests/vitest/components/marketing/landing-page-surface.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 188[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m11 passed[39m[22m[90m (11)[39m
+[2m      Tests [22m [1m[32m69 passed[39m[22m[90m (69)[39m
+[2m   Start at [22m 01:37:41
+[2m   Duration [22m 4.53s[2m (transform 892ms, setup 2.56s, import 11.82s, tests 2.76s, environment 7.59s)[22m
+
+EXIT_CODE[vitest]=0
+
+===== build =====
+$ bun scripts/next-build.ts
+[next-build] Refusing to start while Next dev server 81369 is still alive.
+error: script "build" exited with code 1
+EXIT_CODE[build]=1

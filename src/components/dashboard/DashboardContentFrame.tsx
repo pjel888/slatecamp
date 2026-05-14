@@ -30,7 +30,11 @@ export function DashboardContentFrame({
         <>
           <div
             aria-hidden='true'
-            className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dock-Lake-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-70'
+            className='pointer-events-none absolute inset-0 z-0 bg-cover bg-bottom bg-no-repeat opacity-70'
+            style={{
+              backgroundImage:
+                'url(/images/dashboard/Dock-Lake-BG-Image.png)',
+            }}
           />
           <div
             aria-hidden='true'

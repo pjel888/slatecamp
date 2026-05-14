@@ -94,6 +94,9 @@ const FEATURE_PREVIEWS = [
   },
 ] as const
 
+const LANDING_HERO_SHELL_CLASS =
+  'mx-auto w-full max-w-[1240px] 2xl:max-w-[1440px] [@media(width>=1920px)]:max-w-[1760px] [@media(width>=2560px)]:max-w-[2200px] [@media(width>=3200px)]:max-w-[2600px]'
+
 type FeaturePreview = (typeof FEATURE_PREVIEWS)[number]
 
 const FEATURE_PREVIEW_GRID_VARIANTS: Variants = {
@@ -210,8 +213,11 @@ const HeroBackground = ({
   return (
     <motion.div
       aria-hidden='true'
-      className='pointer-events-none absolute inset-[-6%] z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-90 brightness-[1.10] contrast-[0.92] grayscale-[12%] saturate-[0.86]'
-      style={shouldReduceMotion ? undefined : { scale }}
+      className='pointer-events-none absolute inset-[-6%] z-0 bg-cover bg-bottom bg-no-repeat opacity-90 brightness-[1.10] contrast-[0.92] grayscale-[12%] saturate-[0.86]'
+      style={{
+        backgroundImage: 'url(/images/dashboard/Dashboard-BG-Image.png)',
+        ...(shouldReduceMotion ? {} : { scale }),
+      }}
     />
   )
 }
@@ -350,7 +356,7 @@ export const HeroSection = ({
     <section
       ref={sectionRef}
       aria-label='Supplementary architecture learning resource for Filipino students and LEA reviewees.'
-      className='relative isolate min-h-[100svh] overflow-hidden bg-slate-50 px-6 pb-20 pt-32 text-slate-950 [--hero-feature-strip-height:19.875rem] sm:pt-36 lg:min-h-[100svh] lg:pb-20 lg:pt-36'
+      className='relative isolate min-h-[100svh] overflow-hidden bg-slate-50 px-6 pb-20 pt-32 text-slate-950 [--hero-feature-strip-height:19.875rem] sm:pt-36 xl:px-8 2xl:px-10 lg:min-h-[100svh] lg:pb-20 lg:pt-36 [@media(width>=1920px)]:px-12'
       style={heroStyle}
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
@@ -393,8 +399,8 @@ export const HeroSection = ({
       />
       <NoiseOverlay opacity={0.028} />
 
-      <div className='relative z-10 mx-auto grid min-h-[calc(100svh-18rem)] w-full max-w-[1240px] -translate-y-4 items-start gap-10 pb-40 sm:-translate-y-5 md:translate-y-0 md:pb-48 lg:min-h-[calc(100svh-20rem)] lg:grid-cols-[minmax(0,700px)_minmax(340px,500px)] lg:-translate-y-1 lg:pb-60'>
-        <div className='max-w-[760px] py-8 lg:py-12'>
+      <div className={`${LANDING_HERO_SHELL_CLASS} relative z-10 grid min-h-[calc(100svh-18rem)] -translate-y-4 items-start gap-10 pb-40 sm:-translate-y-5 md:translate-y-0 md:pb-48 lg:min-h-[calc(100svh-20rem)] lg:grid-cols-[minmax(0,700px)_minmax(340px,500px)] lg:-translate-y-1 lg:pb-60 2xl:grid-cols-[minmax(0,760px)_minmax(460px,620px)] 2xl:gap-14 [@media(width>=1920px)]:grid-cols-[minmax(0,820px)_minmax(520px,760px)] [@media(width>=1920px)]:gap-20 [@media(width>=2560px)]:grid-cols-[minmax(0,920px)_minmax(680px,940px)] [@media(width>=2560px)]:gap-24 [@media(width>=3200px)]:grid-cols-[minmax(0,1040px)_minmax(760px,1120px)] [@media(width>=3200px)]:gap-28`}>
+        <div className='max-w-[760px] py-8 lg:py-12 [@media(width>=1920px)]:max-w-[820px]'>
           <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-2'>
             <Starburst className='h-3 w-3 text-primary' />
             <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold uppercase tracking-[0.24em] text-primary'>
@@ -424,7 +430,7 @@ export const HeroSection = ({
             </span>
           </h1>
 
-          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-200 motion-safe:duration-300 mt-7 max-w-[560px] text-[16px] font-semibold leading-[1.48] text-slate-700 sm:text-[17px]'>
+          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-200 motion-safe:duration-300 mt-7 max-w-[560px] text-[16px] font-semibold leading-[1.48] text-slate-700 sm:text-[17px] [@media(width>=1920px)]:max-w-[620px]'>
             SlateCamp shows you how PD 1096, RA 9514, and BP 344 actually work —
             in 3D, with quizzes that explain why, and a quick free check that
             points you to what to study next.
@@ -445,9 +451,9 @@ export const HeroSection = ({
         </div>
       </div>
 
-      <div className='pointer-events-none absolute inset-x-6 bottom-[calc(0.5rem+var(--hero-feature-strip-height))] top-[8.75rem] z-30 hidden lg:block'>
-        <div className='mx-auto h-full max-w-[1240px]'>
-          <div className='pointer-events-auto ml-auto h-full w-full max-w-[500px] min-w-[340px] motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-500 motion-safe:duration-500'>
+      <div className='pointer-events-none absolute inset-x-6 bottom-[calc(0.5rem+var(--hero-feature-strip-height))] top-[8.75rem] z-30 hidden lg:block xl:inset-x-8 2xl:inset-x-10 [@media(width>=1920px)]:inset-x-12'>
+        <div className={`${LANDING_HERO_SHELL_CLASS} h-full`}>
+          <div className='pointer-events-auto ml-auto h-full w-full max-w-[500px] min-w-[340px] motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-500 motion-safe:duration-500 2xl:max-w-[620px] [@media(width>=1920px)]:max-w-[760px] [@media(width>=2560px)]:max-w-[940px] [@media(width>=3200px)]:max-w-[1120px]'>
             <HeroHousePreview />
           </div>
         </div>
@@ -455,9 +461,9 @@ export const HeroSection = ({
 
       <div
         aria-label='SlateCamp feature video launcher'
-        className='absolute inset-x-6 bottom-2 z-20 hidden h-[var(--hero-feature-strip-height)] md:block'
+        className='absolute inset-x-6 bottom-2 z-20 hidden h-[var(--hero-feature-strip-height)] md:block xl:inset-x-8 2xl:inset-x-10 [@media(width>=1920px)]:inset-x-12'
       >
-        <div className='mx-auto max-w-[1240px]'>
+        <div className={LANDING_HERO_SHELL_CLASS}>
           <div className='overflow-hidden rounded-t-lg border border-b-0 border-white/46 bg-white/[0.22] shadow-[0_28px_90px_rgba(15,23,42,0.14)] ring-1 ring-slate-900/[0.035] backdrop-blur-2xl transition-opacity duration-200 [mask-image:linear-gradient(to_bottom,black_0%,black_48%,rgba(0,0,0,0.82)_63%,rgba(0,0,0,0.45)_80%,rgba(0,0,0,0.12)_93%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_0%,black_48%,rgba(0,0,0,0.82)_63%,rgba(0,0,0,0.45)_80%,rgba(0,0,0,0.12)_93%,transparent_100%)]'>
             <div className='flex items-center justify-between border-b border-white/34 bg-white/[0.28] px-4 py-1.5'>
               <div className='flex items-center gap-1.5'>
@@ -475,7 +481,7 @@ export const HeroSection = ({
             </div>
             <TooltipProvider delay={0}>
               <motion.div
-                className='grid gap-2 p-3 pb-12 md:grid-cols-4'
+                className='grid gap-2 p-3 pb-12 md:grid-cols-4 2xl:gap-3 2xl:p-4 2xl:pb-12 [@media(width>=1920px)]:gap-4'
                 variants={FEATURE_PREVIEW_GRID_VARIANTS}
                 initial={shouldReduceMotion ? false : 'hidden'}
                 animate='visible'

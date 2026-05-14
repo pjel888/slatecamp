@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "name": "type-check",
+      "exit_code": 0
+    },
+    {
+      "name": "lint",
+      "exit_code": 0
+    },
+    {
+      "name": "targeted-vitest",
+      "exit_code": 0
+    },
+    {
+      "name": "build",
+      "exit_code": 1
+    }
+  ],
+  "passed": 3,
+  "failed": 1,
+  "log": ".ai/03_plans/final-second-audit/overnight-release-readiness/qa-final-after-inline-bg-fix-2026-05-15.log"
+}
