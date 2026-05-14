@@ -1,7 +1,7 @@
 {
   "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3fcd9753f089a25f88788ce69f29cf9076dcc2274dc11ea935abba9ea91fc7b7",
+  "linked_questions_hash": "sha256:25c7d8f15a7eec82ad3c8808afa9299c9e986f4e21ff375d644c51517308184f",
   "question_count": 10,
   "questions": [
     {
@@ -36,15 +36,18 @@
         "b": "Design quality doesn't prevent market-driven displacement; systemic protections are needed.",
         "c": "While economics are involved, architects have professional responsibility to understand and address these dynamics.",
         "d": "Rising values benefit new residents but displace original communities; justice frameworks challenge treating this as purely positive.",
-        "correct": "Spatial justice requires architects to understand that individual design improvements can trigger broader displacement pressures. Professional responsibility includes anticipating and mitigating these effects through affordability protections, community engagement, and advocacy. Architecture isn't neutral; design choices have social consequences.",
-        "takeaway": "Architecture isn't neutral; design choices have social consequences."
+        "correct": "Spatial justice requires attention to secondary effects such as displacement. A project that improves housing but prices out original residents may reproduce spatial injustice unless affordability, tenure, and community protections are addressed.",
+        "takeaway": "Improvement can still be unjust if it displaces the community it claims to serve.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": "Design quality doesn't prevent market-driven displacement; systemic protections are needed. While economics are involved, architects have professional responsibility to understand and address these dynamics. Rising values benefit new residents but displace original communities; justice frameworks challenge treating this as purely positive. Spatial justice requires architects to understand that individual design improvements can trigger broader displacement pressures. Professional responsibility includes anticipating and mitigating these effects through affordability protections, community engagement, and advocacy. Architecture isn't neutral; design choices have social consequences. Architecture isn't neutral; design choices have social consequences.",
-      "code_citation": null,
+      "explanation": "Spatial justice requires attention to secondary effects such as displacement. A project that improves housing but prices out original residents may reproduce spatial injustice unless affordability, tenure, and community protections are addressed.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "APP"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -53,8 +56,8 @@
       "model_id": "ALE-THEO-008-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:15:17.876966+00:00",
-      "content_hash": "sha256:ae91ec3abde9a6702d9454b0df54cff015e272de89fe033b55eb9bd7b0b2e63a"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:f06cf2c79fb089639648e68df92e2595de1ca5d5a87735a5f747a200e13c29a3"
     },
     {
       "question_id": "6e23ff67-e312-4fdd-9b25-3d730fa1efc4",
@@ -88,15 +91,18 @@
         "b": "Cost minimization without understanding community needs produces inadequate spaces.",
         "c": "International prestige can obscure local needs; community priorities should guide design.",
         "d": "Decorative cultural reference without substantive community engagement is performative, not justice-centered.",
-        "correct": "Spatial justice centers community agency. This requires genuine participation where residents help determine what spaces they need and how they should function, not designer-imposed solutions or superficial cultural reference. The architect's role is facilitator and technical expert, not sole decision-maker.",
-        "takeaway": "The architect's role is facilitator and technical expert, not sole decision-maker."
+        "correct": "Community members must be treated as real participants in programming and design decisions. The architect contributes technical skill while the community helps define priorities, use patterns, and accountability.",
+        "takeaway": "Spatial justice centers community agency, not designer prestige.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": "Cost minimization without understanding community needs produces inadequate spaces. International prestige can obscure local needs; community priorities should guide design. Decorative cultural reference without substantive community engagement is performative, not justice-centered. Spatial justice centers community agency. This requires genuine participation where residents help determine what spaces they need and how they should function, not designer-imposed solutions or superficial cultural reference. The architect's role is facilitator and technical expert, not sole decision-maker. The architect's role is facilitator and technical expert, not sole decision-maker.",
-      "code_citation": null,
+      "explanation": "Community members must be treated as real participants in programming and design decisions. The architect contributes technical skill while the community helps define priorities, use patterns, and accountability.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "CMP"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -105,8 +111,8 @@
       "model_id": "ALE-THEO-008-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:15:18.16959+00:00",
-      "content_hash": "sha256:e0e89e8de8e2a3158e59f222f8314679293ef84b494a848c8de4d78d16379285"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:e4c888a9b91c9d460fa169513277b079e6cb4601d1070956a2c9a0fa537eb4ec"
     },
     {
       "question_id": "dfe29dca-5802-42b4-a462-ab4f283d6377",
@@ -140,15 +146,18 @@
         "b": "Adopting international standards uncritically can erase local values; thoughtful integration is more sophisticated.",
         "c": "Aesthetics are secondary to ethics and social impact.",
         "d": "Many architects maintain both commitments; the tension is generative.",
-        "correct": "This as ongoing professional conversation. Spatial justice doesn't require abandoning technical excellence; it requires channeling excellence toward community wellbeing. Filipino architects like Nakpil and Mañosa achieved both international recognition and local cultural grounding. The tension is productive, not irreconcilable.",
-        "takeaway": "The tension is productive, not irreconcilable."
+        "correct": "Technical rigor and local justice are not opposites. Spatial justice asks architects to aim professional skill toward community wellbeing, cultural continuity, and equitable access rather than treating formal innovation as the only measure of excellence.",
+        "takeaway": "The professional tension is managed through disciplined, community-centered judgment.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Technical rigor and local justice are not opposites. Spatial justice asks architects to aim professional skill toward community wellbeing, cultural continuity, and equitable access rather than treating formal innovation as the only measure of excellence.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "INT"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -157,14 +166,14 @@
       "model_id": "ALE-THEO-008-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ee6b19dd024295c3b9b34436c16d216e98f98a5bfa09807fc91bdf68e31600ca"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:7c99e5c9cea6c7215d428fdc0f3b115423e10e8a02d1a32dac64357388229f6e"
     },
     {
       "question_id": "8b61f45f-3635-442a-96b0-07833cb28cf5",
       "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
       "topic_id": "6fc4f835-b0c3-41ae-b705-2ccdd19d25bc",
-      "text": "What are 'urban edges' in the spatial justice context?",
+      "text": "What are 'urban edges' in the source-safe Philippine spatial justice context?",
       "options": [
         {
           "id": "a",
@@ -192,15 +201,18 @@
         "a": "City limits are administrative boundaries, not urban edges.",
         "c": "Street-building interfaces are important but distinct from urban edges as defined in spatial justice.",
         "d": "Waterfront areas may be developed for any use; they're not defined as edges.",
-        "correct": "Urban edges are spatial manifestations of marginalization. Vulnerable populations are concentrated in flood zones, easements, rail corridors, and other hazardous areas because they lack access to better alternatives. Architecture must confront this spatial inequity.",
-        "takeaway": "Architecture must confront this spatial inequity."
+        "correct": "Urban edges are contextual marginal spaces where environmental risk, informality, and limited access overlap. Batch 159 supports this through Metro Manila flood-risk and informal-settlement evidence, not through a code definition.",
+        "takeaway": "Urban-edge examples are contextual risk geography, not a code term.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Urban edges are contextual marginal spaces where environmental risk, informality, and limited access overlap. Batch 159 supports this through Metro Manila flood-risk and informal-settlement evidence, not through a code definition.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "remember",
-      "application_context": "recall",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "DEF"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -209,8 +221,8 @@
       "model_id": "ALE-THEO-008-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9d802fe081b23b64c9925c2b0ec316ea008f396368d6e5497d11ad56907c2cf2"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:9979a788d482c2a8d5c062a134b450810c06b67194a59fc734287124222bfc91"
     },
     {
       "question_id": "ec4352c6-312c-4368-88b0-14675bdb5c74",
@@ -244,15 +256,18 @@
         "a": "Justice requires earlier integration, not deferral to design phase.",
         "b": "Spatial justice integrates social, environmental, and cultural concerns; they're inseparable from design.",
         "c": "Community-led doesn't mean unstructured; programming rigor is necessary even when community-centered.",
-        "correct": "Spatial justice must be integrated throughout the process: genuine stakeholder identification (not assumed client interests); participatory programming establishing community priorities; design language reflecting cultural values; accountability in construction and occupancy. This requires disciplined process while maintaining community agency and authentic engagement.",
-        "takeaway": "This requires disciplined process while maintaining community agency and authentic engagement."
+        "correct": "Spatial justice belongs in programming, stakeholder analysis, design criteria, review, and post-occupancy accountability. Community voice should shape the brief from the start rather than being added after technical decisions are fixed.",
+        "takeaway": "Justice-centered programming begins before schematic design.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Spatial justice belongs in programming, stakeholder analysis, design criteria, review, and post-occupancy accountability. Community voice should shape the brief from the start rather than being added after technical decisions are fixed.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "SYS"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -261,14 +276,14 @@
       "model_id": "ALE-THEO-008-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:07efc96875b3297f7399435e6ed360131c95653f6dee44e163469dccfff9a065"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:19d34ce51d01361dc359324e06948e921158c67b0fb704366b6ce3b77a40e3e3"
     },
     {
       "question_id": "44abab8d-b9fa-4308-a5ab-d8b1145299f4",
       "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
       "topic_id": "6fc4f835-b0c3-41ae-b705-2ccdd19d25bc",
-      "text": "A government agency commissions an architect to design a 'community improvement project' in an underserved neighborhood. The architect discovers the real intention is to attract investment and upsclea the area, likely displacing current residents. How should a spatially just architect respond?",
+      "text": "A government agency commissions an architect to design a 'community improvement project' in an underserved neighborhood. The architect discovers the real intention is to attract investment and upscale the area, likely displacing current residents. How should a spatially just architect respond?",
       "options": [
         {
           "id": "a",
@@ -296,15 +311,18 @@
         "b": "Warning signage is performative; substantive legal/financial protections are required.",
         "c": "Treating gentrification as inevitable abdicates professional responsibility to resist injustice.",
         "d": "While sometimes refusal is appropriate, engagement with alternative proposals can be more effective.",
-        "correct": "Spatial justice doesn't require rejecting all engagement, but it requires using professional position to advance justice alternatives. If the commission structure serves displacement, proposing and advocating for protection mechanisms honors professional responsibility while maintaining engagement. Outright refusal abandons opportunity to influence; passive acceptance enables injustice.",
-        "takeaway": "Outright refusal abandons opportunity to influence; passive acceptance enables injustice."
+        "correct": "The source-safe response is to use professional position to advocate concrete anti-displacement and community-control alternatives. Passive acceptance enables injustice; immediate refusal may lose the chance to redirect the project.",
+        "takeaway": "Engagement must be tied to real protections and community control.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": "Warning signage is performative; substantive legal/financial protections are required. Treating gentrification as inevitable abdicates professional responsibility to resist injustice. While sometimes refusal is appropriate, engagement with alternative proposals can be more effective. Spatial justice doesn't require rejecting all engagement, but it requires using professional position to advance justice alternatives. If the commission structure serves displacement, proposing and advocating for protection mechanisms honors professional responsibility while maintaining engagement. Outright refusal abandons opportunity to influence; passive acceptance enables injustice. Outright refusal abandons opportunity to influence; passive acceptance enables injustice.",
-      "code_citation": null,
+      "explanation": "The source-safe response is to use professional position to advocate concrete anti-displacement and community-control alternatives. Passive acceptance enables injustice; immediate refusal may lose the chance to redirect the project.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "analyze",
-      "application_context": "design_application",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "ATT"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -313,8 +331,8 @@
       "model_id": "ALE-THEO-008-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:15:18.025997+00:00",
-      "content_hash": "sha256:ce6b039383ddb4780c7c1f3a99189d957cd7f1b00eb6159e0925733e2e54c779"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:050598965f3a18aff65507903ac5bdeebe4e389357a1823d79667cfb06631f61"
     },
     {
       "question_id": "9eef0f77-0766-4b59-b7ca-7d297af1ebbc",
@@ -348,15 +366,18 @@
         "a": "Commercial additions don't ensure justice; they may actually increase displacement pressure.",
         "b": "International standards sometimes contradict local justice; local community priorities should guide design.",
         "d": "Climate response is important but secondary to access issues.",
-        "correct": "Spatial justice requires that design prioritizes community access and use. If design choices (expensive finishes, limited seating) create barriers to access or suggest that certain communities are not welcome, it reinforces exclusion. True justice-centered design makes space genuinely accessible and usable.",
-        "takeaway": "True justice-centered design makes space genuinely accessible and usable."
+        "correct": "A spatial justice answer evaluates whether the public-space design actually supports community access and use. Expensive materials, limited seating, and exclusionary cues can conflict with inclusive public-space goals even if the design is visually refined.",
+        "takeaway": "A public-space upgrade must be judged by access and use, not aesthetics alone.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A spatial justice answer evaluates whether the public-space design actually supports community access and use. Expensive materials, limited seating, and exclusionary cues can conflict with inclusive public-space goals even if the design is visually refined.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "APP"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -365,14 +386,14 @@
       "model_id": "ALE-THEO-008-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f705cfcc9fb84e4d3937aecfab65cf0bc872bcc0ab00805b753aefe204baba64"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:2b00a125970ff24592f7e450e2badc5f52f53cd95b48bd28fa8913bc51f26a31"
     },
     {
       "question_id": "33a404c1-5ed1-44ef-a8e6-c5de5071d3db",
       "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
       "topic_id": "6fc4f835-b0c3-41ae-b705-2ccdd19d25bc",
-      "text": "What does bayanihan represent in the context of Filipino spatial justice?",
+      "text": "What does bayanihan represent when this article applies spatial justice to Filipino design contexts?",
       "options": [
         {
           "id": "a",
@@ -400,15 +421,18 @@
         "b": "Bayanihan is not an architectural style; it's a social value informing design.",
         "c": "Bayanihan is cultural principle, not a government policy.",
         "d": "Zoning is regulatory; bayanihan is cultural and relational.",
-        "correct": "Bayanihan is a Filipino tradition of collaborative community work. In spatial justice, it represents a design value: spaces should support collective decision-making, shared ownership, and communal gathering—reflecting cultural values in the built environment.",
-        "takeaway": "In spatial justice, it represents a design value: spaces should support collective decision-making, shared ownership, and communal gathering—reflecting cultural values in the built environment."
+        "correct": "Bayanihan is used here as a Filipino community-value lens for shared participation and collective use of space. The Batch 159 source boundary supports it as contextual application, not as a Soja term or BLEA line item.",
+        "takeaway": "Use bayanihan as contextual design framing, not as a statutory citation.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Bayanihan is used here as a Filipino community-value lens for shared participation and collective use of space. The Batch 159 source boundary supports it as contextual application, not as a Soja term or BLEA line item.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "remember",
-      "application_context": "recall",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "DEF"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -417,14 +441,14 @@
       "model_id": "ALE-THEO-008-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fba4f5719f10775f1d9b242a2d12e2ad47376cbfa9619ed457fb0667e3768274"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:8a4602fa5288054def29c2afb0522a3acf0e8f987f6cd55987169fd3ec54754b"
     },
     {
       "question_id": "f7eea90c-0665-4700-830e-93f87f8c9d95",
       "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
       "topic_id": "6fc4f835-b0c3-41ae-b705-2ccdd19d25bc",
-      "text": "What is spatial justice in architectural practice?",
+      "text": "Within the Batch 159 source boundary, what is spatial justice in architectural practice?",
       "options": [
         {
           "id": "a",
@@ -452,15 +476,18 @@
         "a": "Code compliance is necessary but distinct from justice.",
         "b": "Real estate pricing is economic, not spatial justice in architectural sense.",
         "d": "Reservation exclusivity contradicts justice principles; spatial justice aims for inclusive access.",
-        "correct": "Spatial justice frames architecture and urbanism as tools for addressing inequality. It recognizes that exclusion and marginalization are spatial phenomena—where and how people are allowed to inhabit space reflects power relations that architecture must confront.",
-        "takeaway": "It recognizes that exclusion and marginalization are spatial phenomena—where and how people are allowed to inhabit space reflects power relations that architecture must confront."
+        "correct": "Spatial justice treats architecture and urban design as part of how access, resources, services, and power are distributed through space. This is source-safe as Soja-based theory and as a sociocultural-trend framing for Theory of Architecture.",
+        "takeaway": "Spatial justice asks who gains access and who is excluded by spatial decisions.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Spatial justice treats architecture and urban design as part of how access, resources, services, and power are distributed through space. This is source-safe as Soja-based theory and as a sociocultural-trend framing for Theory of Architecture.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "remember",
-      "application_context": "recall",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "DEF"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -469,8 +496,8 @@
       "model_id": "ALE-THEO-008-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f0e789e5f728b540a6afb540b7c37d6c63dc1589d409b71baa826421ef75d7fb"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:5d72d269de508ad9428fc23cd03d74c29ff72b5333a45a1d3e4b6eec9484f195"
     },
     {
       "question_id": "2ac99dd0-354f-4e7d-a853-e1d3207006e8",
@@ -504,15 +531,18 @@
         "a": "Technical design alone addresses symptoms, not underlying inequality.",
         "b": "Budget and schedule matter, but ethical commitment to justice cannot be deferred for project constraints.",
         "d": "Professional liability is secondary to community welfare; justice-centered practice prioritizes latter.",
-        "correct": "Technical flood resilience is necessary but insufficient. Spatial justice requires understanding root causes: why are vulnerable people in hazard zones? A justice-centered approach combines immediate housing solutions with advocacy for systemic change—whether improved urban planning, land access, economic opportunity, or relocation assistance.",
-        "takeaway": "A justice-centered approach combines immediate housing solutions with advocacy for systemic change—whether improved urban planning, land access, economic opportunity, or relocation assistance."
+        "correct": "A source-safe spatial justice analysis combines technical flood resilience with the larger question of why vulnerable residents occupy high-risk locations and how design can support stability, choice, and community agency.",
+        "takeaway": "Technical resilience and social vulnerability must be read together.",
+        "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A source-safe spatial justice analysis combines technical flood resilience with the larger question of why vulnerable residents occupy high-risk locations and how design can support stability, choice, and community agency.",
+      "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_spatial_justice",
       "practice_context": [
-        "CMP"
+        "theory",
+        "sociocultural trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -521,8 +551,8 @@
       "model_id": "ALE-THEO-008-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bb7c798593af917ef2e6f9239fcf879b3aa384a0c12bf43f6df159f3f7568c5c"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:7731c6eb25f4a5507ae45c5bee921747ba802172b1f6059fc6f6aafd366375e0"
     }
   ]
 }

@@ -1,0 +1,127 @@
+{
+  "question_id": "d2923fb8-ebc7-4ad8-8cd4-c6d001113cd8",
+  "baseline_hash": "sha256:8efad596dd0895ca1abfb81d32fd8d91b7e9a0d79801d0e37c8e8290562f0a92",
+  "action": "replace",
+  "reason": "Batch 159 source-audited rewrite: constrain lea-theo-008-03 questions to captured authoritative web and local source-map boundaries.",
+  "approved_by": "codex-local-source-audit-batch-159",
+  "approved_at": "2026-05-14T07:17:11.886Z",
+  "source_audit_support": {
+    "parent_article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+    "parent_article_slug": "lea-theo-008-03-core-concept",
+    "batch_id": "source-audited-batch-159-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers were preserved while unsupported citations and rationales were replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.; web.open PRC Board Law lines 50-87 for practice scope, coordination, quality of life, and architectural computer-aided design.; web.open SPP lines 1727-1739 and 1740-1789 for comprehensive service categories and architect coordination role.; web.open NJIT lines 15-32, 83-91, and 132-136 for bibliographic data and digital technologies changing conception, design, and production.; web.open CPDAS lines 7-29 for UAP provider status, lines 254-256 and 292-296 for CAD/BIM/digital tools, lines 670-676 for AI/BIM entries, and lines 1085-1090 for 2025 BIM and technology-and-innovation entries.",
+    "checked_markdown_lines": [
+      "web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.",
+      "web.open PRC Board Law lines 50-87 for practice scope, coordination, quality of life, and architectural computer-aided design.",
+      "web.open SPP lines 1727-1739 and 1740-1789 for comprehensive service categories and architect coordination role.",
+      "web.open NJIT lines 15-32, 83-91, and 132-136 for bibliographic data and digital technologies changing conception, design, and production.",
+      "web.open CPDAS lines 7-29 for UAP provider status, lines 254-256 and 292-296 for CAD/BIM/digital tools, lines 670-676 for AI/BIM entries, and lines 1085-1090 for 2025 BIM and technology-and-innovation entries."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "prc-boa-ra9266-irr-theory-syllabus-b159",
+        "label": "PRC Board of Architecture, IRR of RA 9266, Theory of Architecture syllabus",
+        "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.2-04_IRR_RA9266-coded.pdf",
+        "source_type": "syllabus_authority",
+        "publisher": "Professional Regulatory Board of Architecture",
+        "locator": "web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md"
+      },
+      {
+        "source_id": "prc-ra9266-board-law-cad-b159",
+        "label": "RA 9266 Board Law, scope of architecture practice including architectural computer-aided design",
+        "url": "https://www.prc.gov.ph/sites/default/files/Architecture%20-%20Board%20Law_0.PDF",
+        "source_type": "statutory_authority",
+        "publisher": "Professional Regulation Commission",
+        "locator": "web.open PRC Board Law lines 50-87 for practice scope, coordination, quality of life, and architectural computer-aided design.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md"
+      },
+      {
+        "source_id": "prboa-spp-comprehensive-services-b159",
+        "label": "PRBoA Standards of Professional Practice, SPP Document 206 comprehensive architectural services",
+        "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf",
+        "source_type": "professional_standard",
+        "publisher": "Professional Regulatory Board of Architecture",
+        "locator": "web.open SPP lines 1727-1739 and 1740-1789 for comprehensive service categories and architect coordination role.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md"
+      },
+      {
+        "source_id": "njit-kolarevic-digital-age-b159",
+        "label": "Branko Kolarevic, Architecture in the Digital Age: Design and Manufacturing, NJIT research output record",
+        "url": "https://researchwith.njit.edu/en/publications/architecture-in-the-digital-age-design-and-manufacturing/",
+        "source_type": "academic_bibliographic_record",
+        "publisher": "New Jersey Institute of Technology / Taylor and Francis bibliographic record",
+        "locator": "web.open NJIT lines 15-32, 83-91, and 132-136 for bibliographic data and digital technologies changing conception, design, and production.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md"
+      },
+      {
+        "source_id": "prc-cpdas-uap-digital-tools-b159",
+        "label": "PRC CPDAS provider page for United Architects of the Philippines: BIM, CAD-to-BIM, digital tools, and AI CPD evidence",
+        "url": "https://cpdas.prc.gov.ph/public/providerInfo.aspx?id=VpIrc8e9SYbtHk+jcX+gdw%3D%3D",
+        "source_type": "professional_practice_cpd_evidence",
+        "publisher": "Professional Regulation Commission CPDAS",
+        "locator": "web.open CPDAS lines 7-29 for UAP provider status, lines 254-256 and 292-296 for CAD/BIM/digital tools, lines 670-676 for AI/BIM entries, and lines 1085-1090 for 2025 BIM and technology-and-innovation entries.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md"
+      }
+    ],
+    "local_source_safe_action": "Question refreshed around technological-trend framing, CAD practice scope, digital architecture theory, CPDAS evidence, and professional judgment limits.",
+    "excluded_claims": [
+      "A claim that any software vendor, platform, or AI tool is required by the cited regulators or professional bodies.",
+      "A claim that digital architecture is a standalone BLEA subject.",
+      "A claim that AI outputs, code-compliance automation, or generative design can replace professional judgment.",
+      "General encyclopedia, news, blog, or commercial rendering articles as primary authority."
+    ]
+  },
+  "proposed": {
+    "text": "A design team uses AI-powered generative design to explore structural geometry for a high-rise, producing thousands of automated variations optimized for material efficiency. The team selects an algorithmically-generated solution. What critical evaluation should occur before proceeding?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No further evaluation needed; algorithms produce objectively optimal solutions, eliminating the need for human oversight in the decision-making process"
+      },
+      {
+        "id": "b",
+        "text": "The design should be constructed immediately; AI outputs are more reliable than human judgment, providing a superior basis for construction decisions"
+      },
+      {
+        "id": "c",
+        "text": "The design should be rejected in favor of traditional structural systems; algorithms cannot understand aesthetic goals, which are crucial for architectural integrity"
+      },
+      {
+        "id": "d",
+        "text": "The team should critically evaluate whether the algorithmic solution meets design intent, satisfies human experience and spatial quality criteria, and that optimization hasn't compromised other design values"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "Algorithms optimize specific metrics; they don't determine overall design excellence.",
+      "b": "AI outputs require human verification; blindly accepting them abdicates design responsibility.",
+      "c": "Algorithms and traditional approaches aren't opposed; their combination can be powerful if integrated thoughtfully.",
+      "correct": "Algorithmic outputs must be checked against design intent, human experience, safety, culture, maintainability, and other values that may not be in the optimization target. Digital tools extend judgment; they do not replace it.",
+      "takeaway": "Optimization is not the same as architectural judgment.",
+      "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
+    },
+    "explanation": "Algorithmic outputs must be checked against design intent, human experience, safety, culture, maintainability, and other values that may not be in the optimization target. Digital tools extend judgment; they do not replace it.",
+    "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
+    "application_context": "source_audited_digital_architecture",
+    "practice_context": [
+      "theory",
+      "technological trends",
+      "source-audited batch 159"
+    ],
+    "model_id": "ALE-THEO-008-03-005"
+  }
+}

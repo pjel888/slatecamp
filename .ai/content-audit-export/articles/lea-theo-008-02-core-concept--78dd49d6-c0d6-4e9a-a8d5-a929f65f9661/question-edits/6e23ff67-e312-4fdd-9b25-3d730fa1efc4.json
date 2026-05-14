@@ -1,0 +1,139 @@
+{
+  "question_id": "6e23ff67-e312-4fdd-9b25-3d730fa1efc4",
+  "baseline_hash": "sha256:f1f92afdfbe06cd57077a3f5853696d5f952c8a7fe2238129d59eac47b511bab",
+  "action": "replace",
+  "reason": "Batch 159 source-audited rewrite: constrain lea-theo-008-02 questions to captured authoritative web and local source-map boundaries.",
+  "approved_by": "codex-local-source-audit-batch-159",
+  "approved_at": "2026-05-14T07:17:11.886Z",
+  "source_audit_support": {
+    "parent_article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+    "parent_article_slug": "lea-theo-008-02-core-concept",
+    "batch_id": "source-audited-batch-159-local-first",
+    "answer_key_fields_changed": false,
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers were preserved while unsupported citations and rationales were replaced.",
+    "support_status": "source_safe_rewrite",
+    "source_locator": "web.open University of Minnesota Press lines 104-122 and 147-153 for bibliographic data, spatial justice summary, and source boundary.; web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.; web.open PRC Board Law lines 50-87 for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life practice scope.; web.open Supreme Court E-Library lines 43-80 and 109 for BLEA subject scope, TOS authority, and 2012-and-after applicability.; web.open POLITesi lines 19-23 and 36-41 for Metro Manila flooding, informal settlements, spatial morphology, and community action context.; web.open CPDAS lines 7-29 for UAP provider status and lines 257-263, 291, and 338 for placemaking, community engagement, and socially responsive architecture entries.",
+    "checked_markdown_lines": [
+      "web.open University of Minnesota Press lines 104-122 and 147-153 for bibliographic data, spatial justice summary, and source boundary.",
+      "web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.",
+      "web.open PRC Board Law lines 50-87 for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life practice scope.",
+      "web.open Supreme Court E-Library lines 43-80 and 109 for BLEA subject scope, TOS authority, and 2012-and-after applicability.",
+      "web.open POLITesi lines 19-23 and 36-41 for Metro Manila flooding, informal settlements, spatial morphology, and community action context.",
+      "web.open CPDAS lines 7-29 for UAP provider status and lines 257-263, 291, and 338 for placemaking, community engagement, and socially responsive architecture entries."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ump-soja-seeking-spatial-justice-b159",
+        "label": "Edward W. Soja, Seeking Spatial Justice, University of Minnesota Press",
+        "url": "https://www.upress.umn.edu/9780816666683/seeking-spatial-justice/",
+        "source_type": "academic_primary_publisher_record",
+        "publisher": "University of Minnesota Press",
+        "locator": "web.open University of Minnesota Press lines 104-122 and 147-153 for bibliographic data, spatial justice summary, and source boundary.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md"
+      },
+      {
+        "source_id": "prc-boa-ra9266-irr-theory-syllabus-b159",
+        "label": "PRC Board of Architecture, IRR of RA 9266, Theory of Architecture syllabus",
+        "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.2-04_IRR_RA9266-coded.pdf",
+        "source_type": "syllabus_authority",
+        "publisher": "Professional Regulatory Board of Architecture",
+        "locator": "web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md"
+      },
+      {
+        "source_id": "prc-ra9266-board-law-practice-scope-b159",
+        "label": "RA 9266 Board Law, scope of architecture practice for site, housing, community architecture, and quality of life",
+        "url": "https://www.prc.gov.ph/sites/default/files/Architecture%20-%20Board%20Law_0.PDF",
+        "source_type": "statutory_authority",
+        "publisher": "Professional Regulation Commission",
+        "locator": "web.open PRC Board Law lines 50-87 for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life practice scope.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md"
+      },
+      {
+        "source_id": "sc-elibrary-blea-tos-resolution-05-2011-b159",
+        "label": "PRC Resolution No. 05, Series of 2011, BLEA Tables of Specifications",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/61820",
+        "source_type": "official_exam_scope_reference",
+        "publisher": "Supreme Court E-Library",
+        "locator": "web.open Supreme Court E-Library lines 43-80 and 109 for BLEA subject scope, TOS authority, and 2012-and-after applicability.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md"
+      },
+      {
+        "source_id": "politesi-metro-manila-flood-risk-b159",
+        "label": "POLITesi, Resilient Edges: Metro Manila flood risk assessment",
+        "url": "https://www.politesi.polimi.it/handle/10589/150554",
+        "source_type": "academic_context_repository_record",
+        "publisher": "POLITesi / Politecnico di Milano",
+        "locator": "web.open POLITesi lines 19-23 and 36-41 for Metro Manila flooding, informal settlements, spatial morphology, and community action context.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md"
+      },
+      {
+        "source_id": "prc-cpdas-uap-placemaking-b159",
+        "label": "PRC CPDAS provider page for United Architects of the Philippines: placemaking/community CPD evidence",
+        "url": "https://cpdas.prc.gov.ph/public/providerInfo.aspx?id=VpIrc8e9SYbtHk+jcX+gdw%3D%3D",
+        "source_type": "professional_practice_cpd_evidence",
+        "publisher": "Professional Regulation Commission CPDAS",
+        "locator": "web.open CPDAS lines 7-29 for UAP provider status and lines 257-263, 291, and 338 for placemaking, community engagement, and socially responsive architecture entries.",
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+        "source_metadata_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md"
+      }
+    ],
+    "local_source_safe_action": "Question refreshed around spatial justice theory, sociocultural-trend framing, Philippine contextual risk evidence, and community-centered design logic.",
+    "excluded_claims": [
+      "A claim that the BLEA explicitly names spatial justice.",
+      "A claim that Soja directly writes about bayanihan or Philippine informal settlements.",
+      "General encyclopedia, news, blog, or lifestyle articles as primary authority.",
+      "Legal mandates for community land trusts, anti-displacement instruments, or design outcomes not captured in Batch 159 sources."
+    ]
+  },
+  "proposed": {
+    "text": "A Filipino architect designs a new community center in a low-income neighborhood. The architect wants to ensure the design reflects spatial justice principles. Which approach best demonstrates this commitment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Engage community members as genuine co-designers, understanding local priorities and constraints, designing for community use and adaptability rather than architectural prestige"
+      },
+      {
+        "id": "b",
+        "text": "Minimize costs by using the simplest possible design regardless of community input or needs, which may not address the specific requirements of the neighborhood"
+      },
+      {
+        "id": "c",
+        "text": "Commission a prestigious international architect known for award-winning design to create an iconic building that elevates the neighborhood's status, potentially overlooking local context"
+      },
+      {
+        "id": "d",
+        "text": "Design the building alone, incorporating bayanihan values through decorative elements and cultural references in the finishes, which may not fully engage the community"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "b": "Cost minimization without understanding community needs produces inadequate spaces.",
+      "c": "International prestige can obscure local needs; community priorities should guide design.",
+      "d": "Decorative cultural reference without substantive community engagement is performative, not justice-centered.",
+      "correct": "Community members must be treated as real participants in programming and design decisions. The architect contributes technical skill while the community helps define priorities, use patterns, and accountability.",
+      "takeaway": "Spatial justice centers community agency, not designer prestige.",
+      "source_boundary": "Batch 159 supports spatial justice as Soja-grounded theory and PRC/BOA sociocultural-trend framing, not as an explicitly named BLEA line item."
+    },
+    "explanation": "Community members must be treated as real participants in programming and design decisions. The architect contributes technical skill while the community helps define priorities, use patterns, and accountability.",
+    "code_citation": "Batch 159 local source map: ump-soja-seeking-spatial-justice-b159; prc-boa-ra9266-irr-theory-syllabus-b159; sc-elibrary-blea-tos-resolution-05-2011-b159; politesi-metro-manila-flood-risk-b159; prc-cpdas-uap-placemaking-b159.",
+    "application_context": "source_audited_spatial_justice",
+    "practice_context": [
+      "theory",
+      "sociocultural trends",
+      "source-audited batch 159"
+    ],
+    "model_id": "ALE-THEO-008-02-006"
+  }
+}

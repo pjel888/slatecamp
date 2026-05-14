@@ -1,0 +1,150 @@
+{
+  "batch": 159,
+  "batch_id": "source-audited-batch-159-local-first",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T07:17:11.886Z",
+  "requested_content_baseline": "8f6376877",
+  "current_head_at_generation": "1ca5ca5db",
+  "branch": "3dlab-gray-viewport-bg",
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "ui_marker_source_gap_scan": "pass",
+    "unsupported_claim_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass_20",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass_bun_test_source_verification_invariants",
+    "scoped_git_diff_check": "pass_batch_159_stage_paths"
+  },
+  "article_checks": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "ui_block_validation": "pass",
+      "parser_errors": "pass",
+      "json_parse": "pass",
+      "ui_marker_source_gap_scan": "pass",
+      "ui_marker_source_gap_matches": [],
+      "unsupported_claim_scan": "pass",
+      "unsupported_claim_matches": [],
+      "linked_question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_parity": "pass",
+      "answer_key_change_review": "pass_no_answer_key_changes",
+      "answer_key_changes": [],
+      "stale_compose_error_scan": "pass",
+      "source_count": 6,
+      "source_hashes_present": "pass",
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "normalized_sha256": "sha256:e96dd22a7a393224b78d00cb40da1e99800e358d4ebd35fdcc945ab4ca5e51d0",
+      "candidate_sha256": "sha256:e96dd22a7a393224b78d00cb40da1e99800e358d4ebd35fdcc945ab4ca5e51d0",
+      "linked_questions_sha256": "sha256:25c7d8f15a7eec82ad3c8808afa9299c9e986f4e21ff375d644c51517308184f",
+      "source_evidence_sha256": "sha256:f1b31144cc08291a521ec111ca1fbeeb36975ca38ab373711a713691324de083"
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "ui_block_validation": "pass",
+      "parser_errors": "pass",
+      "json_parse": "pass",
+      "ui_marker_source_gap_scan": "pass",
+      "ui_marker_source_gap_matches": [],
+      "unsupported_claim_scan": "pass",
+      "unsupported_claim_matches": [],
+      "linked_question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_parity": "pass",
+      "answer_key_change_review": "pass_no_answer_key_changes",
+      "answer_key_changes": [],
+      "stale_compose_error_scan": "pass",
+      "source_count": 5,
+      "source_hashes_present": "pass",
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "normalized_sha256": "sha256:335e91a5888efd742594e5a6ae767e0a3bdeb502c9befb8c4a927b39e2ce9405",
+      "candidate_sha256": "sha256:335e91a5888efd742594e5a6ae767e0a3bdeb502c9befb8c4a927b39e2ce9405",
+      "linked_questions_sha256": "sha256:9e8728a35cfcb6fadebcd2989fdbbc634e27b8a33d87133bf50cc3e8075ff794",
+      "source_evidence_sha256": "sha256:0677244fed9a45cc8a96bf35f25f5dab6f26bb6f52cf24a9832cc716fa9be5c0"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "artifact_id": "lea_theo_008_02_spatial_justice_authoritative_web_source_capture_md",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+      "sha256": "sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4",
+      "bytes": 5257,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "lea_theo_008_03_digital_architecture_authoritative_web_source_capture_md",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+      "sha256": "sha256:007ae93c0124ef3596a3aad669ff06cdc61dc5df00e2d8960f1bfa1f51817269",
+      "bytes": 4652,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "source_metadata_json",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+      "sha256": "sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b",
+      "bytes": 9914,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "lea_theo_008_02_spatial_justice_refined_md",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md",
+      "sha256": "sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3",
+      "bytes": 2853,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "lea_theo_008_03_digital_architecture_refined_md",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md",
+      "sha256": "sha256:6cd32fd01c58116af5787f38c5b332cd90598d376c903edb64efd62a1ade24bb",
+      "bytes": 2496,
+      "exists": true,
+      "status": "pass"
+    }
+  ],
+  "scoped_json_parse": {
+    "status": "pass",
+    "checked_path_count": 50
+  },
+  "source_boundary": {
+    "internet_sources_used": true,
+    "authoritative_web_sources_captured_locally": true,
+    "general_encyclopedia_used": false,
+    "blogs_news_or_commercial_sources_used_as_primary": false,
+    "pirated_or_leaked_sources_used": false,
+    "raw_source_captures": [
+      "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+      "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md"
+    ],
+    "source_metadata": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+    "refined_source_maps": [
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md",
+      "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md"
+    ],
+    "note": "Batch 159 captures authoritative web provenance locally and limits content to captured spatial justice and digital architecture claims."
+  }
+}

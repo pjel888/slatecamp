@@ -1,0 +1,338 @@
+{
+  "batch": 159,
+  "batch_id": "source-audited-batch-159-local-first",
+  "requested_content_baseline": "8f6376877",
+  "current_head_at_generation": "1ca5ca5db",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T07:17:11.886Z",
+  "reservation_manifest": ".ai/03_plans/production-line-batch-159-reservation-manifest.json",
+  "reserved_clusters_only": [
+    "lea-theo-008-02",
+    "lea-theo-008-03"
+  ],
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "slug": "lea-theo-008-02-core-concept",
+      "title": "Pursuit of spatial justice in architecture",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "status": "source_audited_local_first_spatial_justice",
+      "source_ids": [
+        "ump-soja-seeking-spatial-justice-b159",
+        "prc-boa-ra9266-irr-theory-syllabus-b159",
+        "prc-ra9266-board-law-practice-scope-b159",
+        "sc-elibrary-blea-tos-resolution-05-2011-b159",
+        "politesi-metro-manila-flood-risk-b159",
+        "prc-cpdas-uap-placemaking-b159"
+      ],
+      "source_count": 6,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "normalized_sha256": "sha256:e96dd22a7a393224b78d00cb40da1e99800e358d4ebd35fdcc945ab4ca5e51d0",
+      "candidate_sha256": "sha256:e96dd22a7a393224b78d00cb40da1e99800e358d4ebd35fdcc945ab4ca5e51d0",
+      "source_evidence_sha256": "sha256:f1b31144cc08291a521ec111ca1fbeeb36975ca38ab373711a713691324de083",
+      "linked_questions_sha256": "sha256:25c7d8f15a7eec82ad3c8808afa9299c9e986f4e21ff375d644c51517308184f",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "source_boundary": {
+        "included": [
+          "Spatial justice as a theory that links justice to geography and distribution of resources, services, and access.",
+          "Spatial justice as a source-safe Theory of Architecture topic when framed as a sociocultural trend, not as a named BLEA line item.",
+          "RA 9266 practice-scope language for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life promotion.",
+          "Philippine informal-settlement and flood-risk examples as contextual application only, supported by academic repository evidence.",
+          "UAP CPDAS placemaking/community/digital placemaking entries as evidence that inclusive public-space discourse appears in professional development."
+        ],
+        "excluded": [
+          "A claim that the BLEA explicitly names spatial justice.",
+          "A claim that Soja directly writes about bayanihan or Philippine informal settlements.",
+          "General encyclopedia, news, blog, or lifestyle articles as primary authority.",
+          "Legal mandates for community land trusts, anti-displacement instruments, or design outcomes not captured in Batch 159 sources."
+        ]
+      },
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/compose-report.json",
+        "composeErrorDeletion": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/compose-error.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/scoped-validation-batch-159.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/591ad076-e9c2-4502-9653-6249b1ebf9da.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/6e23ff67-e312-4fdd-9b25-3d730fa1efc4.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/dfe29dca-5802-42b4-a462-ab4f283d6377.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/8b61f45f-3635-442a-96b0-07833cb28cf5.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/ec4352c6-312c-4368-88b0-14675bdb5c74.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/44abab8d-b9fa-4308-a5ab-d8b1145299f4.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/9eef0f77-0766-4b59-b7ca-7d297af1ebbc.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/33a404c1-5ed1-44ef-a8e6-c5de5071d3db.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/f7eea90c-0665-4700-830e-93f87f8c9d95.json",
+          ".ai/content-audit-export/articles/lea-theo-008-02-core-concept--78dd49d6-c0d6-4e9a-a8d5-a929f65f9661/question-edits/2ac99dd0-354f-4e7d-a853-e1d3207006e8.json"
+        ],
+        "sourceMaps": [
+          "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+          "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+          "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md"
+        ]
+      }
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "slug": "lea-theo-008-03-core-concept",
+      "title": "Digital architecture fundamentally",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "status": "source_audited_local_first_digital_architecture",
+      "source_ids": [
+        "prc-boa-ra9266-irr-theory-syllabus-b159",
+        "prc-ra9266-board-law-cad-b159",
+        "prboa-spp-comprehensive-services-b159",
+        "njit-kolarevic-digital-age-b159",
+        "prc-cpdas-uap-digital-tools-b159"
+      ],
+      "source_count": 5,
+      "question_count": 10,
+      "expected_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_changes": 0,
+      "normalized_sha256": "sha256:335e91a5888efd742594e5a6ae767e0a3bdeb502c9befb8c4a927b39e2ce9405",
+      "candidate_sha256": "sha256:335e91a5888efd742594e5a6ae767e0a3bdeb502c9befb8c4a927b39e2ce9405",
+      "source_evidence_sha256": "sha256:0677244fed9a45cc8a96bf35f25f5dab6f26bb6f52cf24a9832cc716fa9be5c0",
+      "linked_questions_sha256": "sha256:9e8728a35cfcb6fadebcd2989fdbbc634e27b8a33d87133bf50cc3e8075ff794",
+      "compose_status": "pass",
+      "diff_safe_to_push": true,
+      "real_world_scenario_status": "included",
+      "thin_needs_expansion_status": "resolved_marker_preserved",
+      "question_alignment_status": "included",
+      "source_primary_finding_status": "included",
+      "source_boundary": {
+        "included": [
+          "Digital architecture as a technological trend within the Theory of Architecture syllabus boundary.",
+          "Architectural computer-aided design as explicitly within RA 9266/IRR scope of architecture practice.",
+          "Digital technologies changing how buildings are conceived, designed, and produced, supported by an academic bibliographic record for Kolarevic.",
+          "UAP CPDAS evidence of BIM, CAD-to-BIM, digital tools, AI, and technology-and-innovation CPD programs.",
+          "SPP 206 service categories as the professional service frame across pre-design, design, construction, post-construction, and specialized services."
+        ],
+        "excluded": [
+          "A claim that any software vendor, platform, or AI tool is required by the cited regulators or professional bodies.",
+          "A claim that digital architecture is a standalone BLEA subject.",
+          "A claim that AI outputs, code-compliance automation, or generative design can replace professional judgment.",
+          "General encyclopedia, news, blog, or commercial rendering articles as primary authority."
+        ]
+      },
+      "paths": {
+        "metadata": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/article-metadata.json",
+        "normalized": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/sources.json",
+        "sourceEvidence": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/source-audit-evidence.json",
+        "linkedQuestions": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/linked-questions.json",
+        "composeReport": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/compose-report.json",
+        "composeErrorDeletion": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/compose-error.json",
+        "diffReport": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/diff-report.json",
+        "diffMarkdown": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/diff-report.md",
+        "uiBlocks": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/ui-blocks.json",
+        "uiBlockEdits": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/ui-block-edits.json",
+        "uiBlockValidation": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/ui-block-edit-validation.json",
+        "parserErrors": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/parser-errors.json",
+        "scopedValidation": ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/scoped-validation-batch-159.json",
+        "questionEdits": [
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/18190992-b5f7-4782-931f-ed23ff4d4646.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/c021b95d-12bc-4545-b813-430b8cd1e624.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/d2923fb8-ebc7-4ad8-8cd4-c6d001113cd8.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/ed90dab2-c388-4a43-9458-d77fe53f925d.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/088f6f6f-be03-4d0a-9e51-0f6aaafeef8c.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/0d17b957-88c0-47aa-a4d8-08b7737b5902.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/085765e7-9409-4980-9c73-c52f32a4acda.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/92c39f0b-9dbe-4836-b330-327542e6c9de.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/ec9c8f4e-5d7b-4671-b9ff-b2604db0796e.json",
+          ".ai/content-audit-export/articles/lea-theo-008-03-core-concept--4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0/question-edits/548d492f-8c08-4386-be9f-ea0b54067587.json"
+        ],
+        "sourceMaps": [
+          "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+          "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+          "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md"
+        ]
+      }
+    }
+  ],
+  "source_records": [
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "source_id": "ump-soja-seeking-spatial-justice-b159",
+      "label": "Edward W. Soja, Seeking Spatial Justice, University of Minnesota Press",
+      "source_type": "academic_primary_publisher_record",
+      "url": "https://www.upress.umn.edu/9780816666683/seeking-spatial-justice/",
+      "description": "Batch 159 source capture for lea-theo-008-02; publisher=University of Minnesota Press; locator=web.open University of Minnesota Press lines 104-122 and 147-153 for bibliographic data, spatial justice summary, and source boundary.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md; raw_capture_sha256=sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md; refined_markdown_sha256=sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3; source_boundary=Spatial justice as a theory that links justice to geography and distribution of resources, services, and access. | Spatial justice as a source-safe Theory of Architecture topic when framed as a sociocultural trend, not as a named BLEA line item. | RA 9266 practice-scope language for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life promotion. | Philippine informal-settlement and flood-risk examples as contextual application only, supported by academic repository evidence. | UAP CPDAS placemaking/community/digital placemaking entries as evidence that inclusive public-space discourse appears in professional development."
+    },
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "source_id": "prc-boa-ra9266-irr-theory-syllabus-b159",
+      "label": "PRC Board of Architecture, IRR of RA 9266, Theory of Architecture syllabus",
+      "source_type": "syllabus_authority",
+      "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.2-04_IRR_RA9266-coded.pdf",
+      "description": "Batch 159 source capture for lea-theo-008-02; publisher=Professional Regulatory Board of Architecture; locator=web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md; raw_capture_sha256=sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md; refined_markdown_sha256=sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3; source_boundary=Spatial justice as a theory that links justice to geography and distribution of resources, services, and access. | Spatial justice as a source-safe Theory of Architecture topic when framed as a sociocultural trend, not as a named BLEA line item. | RA 9266 practice-scope language for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life promotion. | Philippine informal-settlement and flood-risk examples as contextual application only, supported by academic repository evidence. | UAP CPDAS placemaking/community/digital placemaking entries as evidence that inclusive public-space discourse appears in professional development."
+    },
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "source_id": "prc-ra9266-board-law-practice-scope-b159",
+      "label": "RA 9266 Board Law, scope of architecture practice for site, housing, community architecture, and quality of life",
+      "source_type": "statutory_authority",
+      "url": "https://www.prc.gov.ph/sites/default/files/Architecture%20-%20Board%20Law_0.PDF",
+      "description": "Batch 159 source capture for lea-theo-008-02; publisher=Professional Regulation Commission; locator=web.open PRC Board Law lines 50-87 for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life practice scope.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md; raw_capture_sha256=sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md; refined_markdown_sha256=sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3; source_boundary=Spatial justice as a theory that links justice to geography and distribution of resources, services, and access. | Spatial justice as a source-safe Theory of Architecture topic when framed as a sociocultural trend, not as a named BLEA line item. | RA 9266 practice-scope language for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life promotion. | Philippine informal-settlement and flood-risk examples as contextual application only, supported by academic repository evidence. | UAP CPDAS placemaking/community/digital placemaking entries as evidence that inclusive public-space discourse appears in professional development."
+    },
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "source_id": "sc-elibrary-blea-tos-resolution-05-2011-b159",
+      "label": "PRC Resolution No. 05, Series of 2011, BLEA Tables of Specifications",
+      "source_type": "official_exam_scope_reference",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/61820",
+      "description": "Batch 159 source capture for lea-theo-008-02; publisher=Supreme Court E-Library; locator=web.open Supreme Court E-Library lines 43-80 and 109 for BLEA subject scope, TOS authority, and 2012-and-after applicability.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md; raw_capture_sha256=sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md; refined_markdown_sha256=sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3; source_boundary=Spatial justice as a theory that links justice to geography and distribution of resources, services, and access. | Spatial justice as a source-safe Theory of Architecture topic when framed as a sociocultural trend, not as a named BLEA line item. | RA 9266 practice-scope language for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life promotion. | Philippine informal-settlement and flood-risk examples as contextual application only, supported by academic repository evidence. | UAP CPDAS placemaking/community/digital placemaking entries as evidence that inclusive public-space discourse appears in professional development."
+    },
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "source_id": "politesi-metro-manila-flood-risk-b159",
+      "label": "POLITesi, Resilient Edges: Metro Manila flood risk assessment",
+      "source_type": "academic_context_repository_record",
+      "url": "https://www.politesi.polimi.it/handle/10589/150554",
+      "description": "Batch 159 source capture for lea-theo-008-02; publisher=POLITesi / Politecnico di Milano; locator=web.open POLITesi lines 19-23 and 36-41 for Metro Manila flooding, informal settlements, spatial morphology, and community action context.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md; raw_capture_sha256=sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md; refined_markdown_sha256=sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3; source_boundary=Spatial justice as a theory that links justice to geography and distribution of resources, services, and access. | Spatial justice as a source-safe Theory of Architecture topic when framed as a sociocultural trend, not as a named BLEA line item. | RA 9266 practice-scope language for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life promotion. | Philippine informal-settlement and flood-risk examples as contextual application only, supported by academic repository evidence. | UAP CPDAS placemaking/community/digital placemaking entries as evidence that inclusive public-space discourse appears in professional development."
+    },
+    {
+      "cluster_id": "lea-theo-008-02",
+      "article_id": "78dd49d6-c0d6-4e9a-a8d5-a929f65f9661",
+      "source_id": "prc-cpdas-uap-placemaking-b159",
+      "label": "PRC CPDAS provider page for United Architects of the Philippines: placemaking/community CPD evidence",
+      "source_type": "professional_practice_cpd_evidence",
+      "url": "https://cpdas.prc.gov.ph/public/providerInfo.aspx?id=VpIrc8e9SYbtHk+jcX+gdw%3D%3D",
+      "description": "Batch 159 source capture for lea-theo-008-02; publisher=Professional Regulation Commission CPDAS; locator=web.open CPDAS lines 7-29 for UAP provider status and lines 257-263, 291, and 338 for placemaking, community engagement, and socially responsive architecture entries.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md; raw_capture_sha256=sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md; refined_markdown_sha256=sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3; source_boundary=Spatial justice as a theory that links justice to geography and distribution of resources, services, and access. | Spatial justice as a source-safe Theory of Architecture topic when framed as a sociocultural trend, not as a named BLEA line item. | RA 9266 practice-scope language for site analysis, housing design, community architecture, space planning, building programming, and quality-of-life promotion. | Philippine informal-settlement and flood-risk examples as contextual application only, supported by academic repository evidence. | UAP CPDAS placemaking/community/digital placemaking entries as evidence that inclusive public-space discourse appears in professional development."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "source_id": "prc-boa-ra9266-irr-theory-syllabus-b159",
+      "label": "PRC Board of Architecture, IRR of RA 9266, Theory of Architecture syllabus",
+      "source_type": "syllabus_authority",
+      "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.2-04_IRR_RA9266-coded.pdf",
+      "description": "Batch 159 source capture for lea-theo-008-03; publisher=Professional Regulatory Board of Architecture; locator=web.open RA 9266 IRR lines 659-682 for BLEA subjects and Theory of Architecture sociocultural/technological trends.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md; raw_capture_sha256=sha256:007ae93c0124ef3596a3aad669ff06cdc61dc5df00e2d8960f1bfa1f51817269; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md; refined_markdown_sha256=sha256:6cd32fd01c58116af5787f38c5b332cd90598d376c903edb64efd62a1ade24bb; source_boundary=Digital architecture as a technological trend within the Theory of Architecture syllabus boundary. | Architectural computer-aided design as explicitly within RA 9266/IRR scope of architecture practice. | Digital technologies changing how buildings are conceived, designed, and produced, supported by an academic bibliographic record for Kolarevic. | UAP CPDAS evidence of BIM, CAD-to-BIM, digital tools, AI, and technology-and-innovation CPD programs. | SPP 206 service categories as the professional service frame across pre-design, design, construction, post-construction, and specialized services."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "source_id": "prc-ra9266-board-law-cad-b159",
+      "label": "RA 9266 Board Law, scope of architecture practice including architectural computer-aided design",
+      "source_type": "statutory_authority",
+      "url": "https://www.prc.gov.ph/sites/default/files/Architecture%20-%20Board%20Law_0.PDF",
+      "description": "Batch 159 source capture for lea-theo-008-03; publisher=Professional Regulation Commission; locator=web.open PRC Board Law lines 50-87 for practice scope, coordination, quality of life, and architectural computer-aided design.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md; raw_capture_sha256=sha256:007ae93c0124ef3596a3aad669ff06cdc61dc5df00e2d8960f1bfa1f51817269; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md; refined_markdown_sha256=sha256:6cd32fd01c58116af5787f38c5b332cd90598d376c903edb64efd62a1ade24bb; source_boundary=Digital architecture as a technological trend within the Theory of Architecture syllabus boundary. | Architectural computer-aided design as explicitly within RA 9266/IRR scope of architecture practice. | Digital technologies changing how buildings are conceived, designed, and produced, supported by an academic bibliographic record for Kolarevic. | UAP CPDAS evidence of BIM, CAD-to-BIM, digital tools, AI, and technology-and-innovation CPD programs. | SPP 206 service categories as the professional service frame across pre-design, design, construction, post-construction, and specialized services."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "source_id": "prboa-spp-comprehensive-services-b159",
+      "label": "PRBoA Standards of Professional Practice, SPP Document 206 comprehensive architectural services",
+      "source_type": "professional_standard",
+      "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf",
+      "description": "Batch 159 source capture for lea-theo-008-03; publisher=Professional Regulatory Board of Architecture; locator=web.open SPP lines 1727-1739 and 1740-1789 for comprehensive service categories and architect coordination role.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md; raw_capture_sha256=sha256:007ae93c0124ef3596a3aad669ff06cdc61dc5df00e2d8960f1bfa1f51817269; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md; refined_markdown_sha256=sha256:6cd32fd01c58116af5787f38c5b332cd90598d376c903edb64efd62a1ade24bb; source_boundary=Digital architecture as a technological trend within the Theory of Architecture syllabus boundary. | Architectural computer-aided design as explicitly within RA 9266/IRR scope of architecture practice. | Digital technologies changing how buildings are conceived, designed, and produced, supported by an academic bibliographic record for Kolarevic. | UAP CPDAS evidence of BIM, CAD-to-BIM, digital tools, AI, and technology-and-innovation CPD programs. | SPP 206 service categories as the professional service frame across pre-design, design, construction, post-construction, and specialized services."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "source_id": "njit-kolarevic-digital-age-b159",
+      "label": "Branko Kolarevic, Architecture in the Digital Age: Design and Manufacturing, NJIT research output record",
+      "source_type": "academic_bibliographic_record",
+      "url": "https://researchwith.njit.edu/en/publications/architecture-in-the-digital-age-design-and-manufacturing/",
+      "description": "Batch 159 source capture for lea-theo-008-03; publisher=New Jersey Institute of Technology / Taylor and Francis bibliographic record; locator=web.open NJIT lines 15-32, 83-91, and 132-136 for bibliographic data and digital technologies changing conception, design, and production.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md; raw_capture_sha256=sha256:007ae93c0124ef3596a3aad669ff06cdc61dc5df00e2d8960f1bfa1f51817269; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md; refined_markdown_sha256=sha256:6cd32fd01c58116af5787f38c5b332cd90598d376c903edb64efd62a1ade24bb; source_boundary=Digital architecture as a technological trend within the Theory of Architecture syllabus boundary. | Architectural computer-aided design as explicitly within RA 9266/IRR scope of architecture practice. | Digital technologies changing how buildings are conceived, designed, and produced, supported by an academic bibliographic record for Kolarevic. | UAP CPDAS evidence of BIM, CAD-to-BIM, digital tools, AI, and technology-and-innovation CPD programs. | SPP 206 service categories as the professional service frame across pre-design, design, construction, post-construction, and specialized services."
+    },
+    {
+      "cluster_id": "lea-theo-008-03",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "source_id": "prc-cpdas-uap-digital-tools-b159",
+      "label": "PRC CPDAS provider page for United Architects of the Philippines: BIM, CAD-to-BIM, digital tools, and AI CPD evidence",
+      "source_type": "professional_practice_cpd_evidence",
+      "url": "https://cpdas.prc.gov.ph/public/providerInfo.aspx?id=VpIrc8e9SYbtHk+jcX+gdw%3D%3D",
+      "description": "Batch 159 source capture for lea-theo-008-03; publisher=Professional Regulation Commission CPDAS; locator=web.open CPDAS lines 7-29 for UAP provider status, lines 254-256 and 292-296 for CAD/BIM/digital tools, lines 670-676 for AI/BIM entries, and lines 1085-1090 for 2025 BIM and technology-and-innovation entries.; raw_capture_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md; raw_capture_sha256=sha256:007ae93c0124ef3596a3aad669ff06cdc61dc5df00e2d8960f1bfa1f51817269; source_metadata_path=vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json; source_metadata_sha256=sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md; refined_markdown_sha256=sha256:6cd32fd01c58116af5787f38c5b332cd90598d376c903edb64efd62a1ade24bb; source_boundary=Digital architecture as a technological trend within the Theory of Architecture syllabus boundary. | Architectural computer-aided design as explicitly within RA 9266/IRR scope of architecture practice. | Digital technologies changing how buildings are conceived, designed, and produced, supported by an academic bibliographic record for Kolarevic. | UAP CPDAS evidence of BIM, CAD-to-BIM, digital tools, AI, and technology-and-innovation CPD programs. | SPP 206 service categories as the professional service frame across pre-design, design, construction, post-construction, and specialized services."
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "artifact_id": "lea_theo_008_02_spatial_justice_authoritative_web_source_capture_md",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-02-spatial-justice-authoritative-web.source-capture.md",
+      "sha256": "sha256:3203d90f7c3d6a0a5b854c21a4b9f773cf3a6adbd0e5d569c02921fc1c4af9f4",
+      "bytes": 5257,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "lea_theo_008_03_digital_architecture_authoritative_web_source_capture_md",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/lea-theo-008-03-digital-architecture-authoritative-web.source-capture.md",
+      "sha256": "sha256:007ae93c0124ef3596a3aad669ff06cdc61dc5df00e2d8960f1bfa1f51817269",
+      "bytes": 4652,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "source_metadata_json",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-159/SOURCE-METADATA.json",
+      "sha256": "sha256:dce8a0595bdf61443c5c2ef687c170b2144783d6d296369a874434dba21dbe0b",
+      "bytes": 9914,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "lea_theo_008_02_spatial_justice_refined_md",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-02-spatial-justice.refined.md",
+      "sha256": "sha256:963ee857fe24b451fd4214c1301a1f868501af43527d48c2646443b21b7966f3",
+      "bytes": 2853,
+      "exists": true,
+      "status": "pass"
+    },
+    {
+      "artifact_id": "lea_theo_008_03_digital_architecture_refined_md",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-159/lea-theo-008-03-digital-architecture.refined.md",
+      "sha256": "sha256:6cd32fd01c58116af5787f38c5b332cd90598d376c903edb64efd62a1ade24bb",
+      "bytes": 2496,
+      "exists": true,
+      "status": "pass"
+    }
+  ],
+  "validation_claims": {
+    "compose_diff_validate": "pass",
+    "ui_block_validation": "pass",
+    "json_parse": "pass",
+    "ui_marker_source_gap_scan": "pass",
+    "unsupported_claim_scan": "pass",
+    "source_hash_checks": "pass",
+    "question_edit_count": "pass_20",
+    "linked_question_question_edit_parity": "pass",
+    "answer_key_change_review": "pass_no_answer_key_changes",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass_bun_test_source_verification_invariants",
+    "scoped_git_diff_check": "pass_batch_159_stage_paths"
+  },
+  "excluded_from_batch_159": {
+    "fixed_scope_not_reopened": [
+      "all clusters outside lea-theo-008-02 and lea-theo-008-03"
+    ]
+  },
+  "stop_condition": "Stop after both commanded theory clusters are source-audited, locally validated, QA-reviewed, and handed off for exact staging only."
+}

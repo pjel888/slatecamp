@@ -1,7 +1,7 @@
 {
   "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:69fa984bf3f7ea725646f36215e612ea169d966df1bcb9c6e23877e8d1baf951",
+  "linked_questions_hash": "sha256:9e8728a35cfcb6fadebcd2989fdbbc634e27b8a33d87133bf50cc3e8075ff794",
   "question_count": 10,
   "questions": [
     {
@@ -36,15 +36,18 @@
         "b": "Program conflicts are adjacency issues, not BIM clashes.",
         "c": "While structural analysis uses simulation, clash detection is geometry-based system coordination.",
         "d": "Code compliance checking is separate from clash detection.",
-        "correct": "Clash detection identifies system conflicts: a mechanical duct colliding with a structural beam, an electrical panel behind a plumbing access panel, etc. Catching these before construction saves time, cost, and field coordination problems.",
-        "takeaway": "Catching these before construction saves time, cost, and field coordination problems."
+        "correct": "Clash detection identifies geometric or systems conflicts before construction so teams can resolve coordination problems earlier. It supports professional coordination; it is not the same as code review or programming analysis.",
+        "takeaway": "Clash detection is a coordination tool, not a full design-compliance substitute.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": "Program conflicts are adjacency issues, not BIM clashes. While structural analysis uses simulation, clash detection is geometry-based system coordination. Code compliance checking is separate from clash detection. Clash detection identifies system conflicts: a mechanical duct colliding with a structural beam, an electrical panel behind a plumbing access panel, etc. Catching these before construction saves time, cost, and field coordination problems. Catching these before construction saves time, cost, and field coordination problems.",
-      "code_citation": null,
+      "explanation": "Clash detection identifies geometric or systems conflicts before construction so teams can resolve coordination problems earlier. It supports professional coordination; it is not the same as code review or programming analysis.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "remember",
-      "application_context": "recall",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "DEF"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -53,8 +56,8 @@
       "model_id": "ALE-THEO-008-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:06:21.685401+00:00",
-      "content_hash": "sha256:2728fe44c858f9fe6fa5f75ccec715d84a88fe44d75e77b8b46561535836ac8a"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:59db20179f0ae23015de64bb1555556bb64c90da0e2aaa6734acfc5d9993b827"
     },
     {
       "question_id": "c021b95d-12bc-4545-b813-430b8cd1e624",
@@ -88,15 +91,18 @@
         "a": "Visual coordination doesn't ensure thermal performance.",
         "b": "Renderings are aesthetic; they don't verify environmental performance.",
         "c": "Documentation accuracy matters but doesn't substitute for performance analysis.",
-        "correct": "Tropical climate design requires data-driven optimization. Computational tools simulate airflow, solar radiation, humidity, and thermal behavior across design variations, identifying solutions genuinely responsive to Philippine conditions rather than imported from temperate climates. This is precisely where digital tools add value to sustainability goals.",
-        "takeaway": "This is precisely where digital tools add value to sustainability goals."
+        "correct": "Computational simulation is the best fit because it can test airflow, solar gain, and thermal behavior across design variations. The source boundary supports this as technological-trend reasoning, not as a required software workflow.",
+        "takeaway": "Use digital analysis where it answers the actual performance question.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": "Visual coordination doesn't ensure thermal performance. Renderings are aesthetic; they don't verify environmental performance. Documentation accuracy matters but doesn't substitute for performance analysis. Tropical climate design requires data-driven optimization. Computational tools simulate airflow, solar radiation, humidity, and thermal behavior across design variations, identifying solutions genuinely responsive to Philippine conditions rather than imported from temperate climates. This is precisely where digital tools add value to sustainability goals. This is precisely where digital tools add value to sustainability goals.",
-      "code_citation": null,
+      "explanation": "Computational simulation is the best fit because it can test airflow, solar gain, and thermal behavior across design variations. The source boundary supports this as technological-trend reasoning, not as a required software workflow.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "APP"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -105,8 +111,8 @@
       "model_id": "ALE-THEO-008-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:06:21.851315+00:00",
-      "content_hash": "sha256:1586244f0c83dd1e66cdd978583c8fa6ac08c67c099382c082512577e4c107a6"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:94d1be443e68be3d463e6108ea04bd58a14bb7d8e0c2d54bd0f0a8709c6ecd8e"
     },
     {
       "question_id": "d2923fb8-ebc7-4ad8-8cd4-c6d001113cd8",
@@ -140,15 +146,18 @@
         "a": "Algorithms optimize specific metrics; they don't determine overall design excellence.",
         "b": "AI outputs require human verification; blindly accepting them abdicates design responsibility.",
         "c": "Algorithms and traditional approaches aren't opposed; their combination can be powerful if integrated thoughtfully.",
-        "correct": "AI optimization outputs require human evaluation. Algorithms excel at measurable metrics (material quantity, stress distribution) but may not account for human spatial experience, aesthetic character, or contextual appropriateness. designers must maintain critical judgment; algorithms are tools, not replacements for design thinking.",
-        "takeaway": "designers must maintain critical judgment; algorithms are tools, not replacements for design thinking."
+        "correct": "Algorithmic outputs must be checked against design intent, human experience, safety, culture, maintainability, and other values that may not be in the optimization target. Digital tools extend judgment; they do not replace it.",
+        "takeaway": "Optimization is not the same as architectural judgment.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": "Algorithms optimize specific metrics; they don't determine overall design excellence. AI outputs require human verification; blindly accepting them abdicates design responsibility. Algorithms and traditional approaches aren't opposed; their combination can be powerful if integrated thoughtfully. AI optimization outputs require human evaluation. Algorithms excel at measurable metrics (material quantity, stress distribution) but may not account for human spatial experience, aesthetic character, or contextual appropriateness. designers must maintain critical judgment; algorithms are tools, not replacements for design thinking. designers must maintain critical judgment; algorithms are tools, not replacements for design thinking.",
-      "code_citation": null,
+      "explanation": "Algorithmic outputs must be checked against design intent, human experience, safety, culture, maintainability, and other values that may not be in the optimization target. Digital tools extend judgment; they do not replace it.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "APP"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -157,8 +166,8 @@
       "model_id": "ALE-THEO-008-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-05-06T15:06:21.973035+00:00",
-      "content_hash": "sha256:a53dc263a9c0de413ff1cadfd0228c6180a982324854091dd39baf5632130902"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:fdf131e6bca0098d2d1fdde140bb33bc00b105bc8eee2516dea5c97defbe6aa4"
     },
     {
       "question_id": "ed90dab2-c388-4a43-9458-d77fe53f925d",
@@ -192,15 +201,18 @@
         "a": "Sophisticated tools aren't always appropriate; selection should match project needs.",
         "b": "Digital tools can enhance community work; dismissing them limits capability.",
         "d": "Algorithms are not objective; they embed assumptions and training data biases that require human interrogation.",
-        "correct": "Discernment: using computation where it genuinely helps (tropical climate optimization, material efficiency), while maintaining human judgment and community agency. Digital literacy includes understanding when tools help and when they can harm. Unexamined AI can perpetuate biases; responsible use requires critical awareness.",
-        "takeaway": "Unexamined AI can perpetuate biases; responsible use requires critical awareness."
+        "correct": "Responsible digital use selects tools for real project needs while preserving community input, human judgment, and awareness of bias or access barriers. This aligns digital architecture with professional responsibility.",
+        "takeaway": "The right tool is the one that serves people, performance, and judgment.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Responsible digital use selects tools for real project needs while preserving community input, human judgment, and awareness of bias or access barriers. This aligns digital architecture with professional responsibility.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "CMP"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -209,8 +221,8 @@
       "model_id": "ALE-THEO-008-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b0c25c0b6d7da935867add61fb64f09c999d3dc79e81940fa41709c3bd161042"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:063ed756e079612e2c7c7b4ee9a72c0e74fbc9d348eb1c0d2e5ba1be23266e6a"
     },
     {
       "question_id": "088f6f6f-be03-4d0a-9e51-0f6aaafeef8c",
@@ -244,15 +256,18 @@
         "a": "Statistical analysis is distinct from parametric geometry.",
         "b": "Manual adjustment is traditional CAD, not parametric design.",
         "c": "Hand selection of variations doesn't engage parametric logic.",
-        "correct": "Parametric design establishes relationships between geometric elements. Changing one parameter (e.g., building height) automatically adjusts dependent dimensions (e.g., window spacing, structural sizing). This enables rapid exploration of design variations and optimization.",
-        "takeaway": "This enables rapid exploration of design variations and optimization."
+        "correct": "Parametric design defines relationships through adjustable parameters so variations can be explored systematically. It is useful when parameters serve design intent rather than replace judgment.",
+        "takeaway": "Parameters organize exploration; they do not decide architectural value by themselves.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Parametric design defines relationships through adjustable parameters so variations can be explored systematically. It is useful when parameters serve design intent rather than replace judgment.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "remember",
-      "application_context": "recall",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "DEF"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -261,14 +276,14 @@
       "model_id": "ALE-THEO-008-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b5202db61c98418b237e6ef6a68e8c067f7a5bccfe46ae2c929ee1c00772dd71"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:e65073d9e2ee98331036c1f20b2331c0e48ffc09fc61270f9bbf35b4461bbe8a"
     },
     {
       "question_id": "0d17b957-88c0-47aa-a4d8-08b7737b5902",
       "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
       "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
-      "text": "What is Building Information Modeling (BIM) in architectural practice?",
+      "text": "Within the Batch 159 source boundary, what is Building Information Modeling (BIM) in architectural practice?",
       "options": [
         {
           "id": "a",
@@ -296,15 +311,18 @@
         "a": "3D visualization is one application of BIM, not its primary purpose.",
         "c": "Rendering is a specific output; BIM encompasses the entire information model.",
         "d": "Component databases are tools within or supporting BIM, not BIM itself.",
-        "correct": "BIM is far more than visualization; it's an integrated model maintaining all project information. This enables clash detection, trade coordination, cost tracking, and facility management data. It's a paradigm shift from separate 2D drawing sets to unified, coordinated digital representation.",
-        "takeaway": "It's a paradigm shift from separate 2D drawing sets to unified, coordinated digital representation."
+        "correct": "BIM is best understood as an information-rich coordination workflow, not just a presentation model. Batch 159 supports BIM as professional-development evidence and as a digital-practice topic, not as a vendor mandate.",
+        "takeaway": "BIM is coordination and information management, not merely 3D visualization.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "BIM is best understood as an information-rich coordination workflow, not just a presentation model. Batch 159 supports BIM as professional-development evidence and as a digital-practice topic, not as a vendor mandate.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "remember",
-      "application_context": "recall",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "DEF"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -313,14 +331,14 @@
       "model_id": "ALE-THEO-008-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4980c30b0bcebb8d69da839dd04b7559177fd411d109dbb45e7aa896edf8e28c"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:9ce6e35d298ab64f781571df550422f45660fc133515f445797481c5efe9ada8"
     },
     {
       "question_id": "085765e7-9409-4980-9c73-c52f32a4acda",
       "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
       "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
-      "text": "states that for emerging Filipino architects, 'digital competency is increasingly essential' but also notes that tools remain expensive and knowledge is unevenly distributed. What does this tension suggest about professional development and equity in Philippine architecture?",
+      "text": "The article states that digital competency is increasingly relevant but that tools and knowledge are unevenly distributed. What does this tension suggest about professional development and equity in Philippine architecture?",
       "options": [
         {
           "id": "a",
@@ -348,15 +366,18 @@
         "a": "Tool costs tend to decline, but knowledge access is the primary barrier; this requires proactive professional support.",
         "c": "Market competition will increasingly favor digital-capable firms; smaller practices that lack access are disadvantaged.",
         "d": "architectural theory suggests digital literacy is increasingly essential, not optional.",
-        "correct": "A critical issue: digital competency is becoming necessary for career viability, but access is unequal. This is an equity problem requiring systemic response—improved education, tool accessibility, knowledge-sharing, support for smaller practices. Waiting for market forces to resolve this perpetuates disadvantage.",
-        "takeaway": "Waiting for market forces to resolve this perpetuates disadvantage."
+        "correct": "The profession should expand access to digital education and tools because unequal access can reinforce professional inequality. Batch 159 supports this as a CPD/professional-development concern, not as a licensure mandate.",
+        "takeaway": "Professional digital literacy should be broadened without treating access gaps as individual failure.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The profession should expand access to digital education and tools because unequal access can reinforce professional inequality. Batch 159 supports this as a CPD/professional-development concern, not as a licensure mandate.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "INT"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -365,8 +386,8 @@
       "model_id": "ALE-THEO-008-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8b08e959ac6527aac15c871f36f640aa31ea1ef171e106dff4ba15b4597c7862"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:62a6b67827295d2f9a88f46c55860de994750efe0a499add785f1a0aa220f19f"
     },
     {
       "question_id": "92c39f0b-9dbe-4836-b330-327542e6c9de",
@@ -400,15 +421,18 @@
         "a": "Digital tools need not compromise cultural identity; they can serve cultural values when thoughtfully deployed.",
         "b": "Uncritical adoption may waste resources and distract from substantive design goals.",
         "c": "Design quality and social responsibility are inseparable; tools should serve both.",
-        "correct": "Mature practice requires integrating digital tools thoughtfully into broader commitments. Computation can serve spatial justice (optimizing affordable housing, supporting community-engaged design, improving accessibility) and environmental sustainability (tropical climate simulation, material efficiency). The goal is tools serving human and environmental values, not technology for its own sake. This requires discernment and strategic selection.",
-        "takeaway": "This requires discernment and strategic selection."
+        "correct": "A source-safe approach uses digital tools strategically for analysis, coordination, communication, and iteration while keeping cultural grounding, community agency, cost, maintenance, and professional judgment in control.",
+        "takeaway": "Technology should serve architectural values, not become the value itself.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A source-safe approach uses digital tools strategically for analysis, coordination, communication, and iteration while keeping cultural grounding, community agency, cost, maintenance, and professional judgment in control.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "analyze",
-      "application_context": "code_interpretation",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "SYS"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -417,8 +441,8 @@
       "model_id": "ALE-THEO-008-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:90fc6c5ad5a6a08e2fb8f43b7eb03cf0e6d0ba7e97baa8afc2dcdc94c288802a"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:c6cf552f8f3c63eb8947300bf7095124b9144089a96e2064d7ffde2a5f0ffb81"
     },
     {
       "question_id": "ec9c8f4e-5d7b-4671-b9ff-b2604db0796e",
@@ -452,15 +476,18 @@
         "a": "While skill matters, tools enable or constrain capability; digital coordination is objectively superior when available.",
         "b": "While outcomes might be similar, the second approach is wasteful; efficiency matters.",
         "d": "Craftsmanship includes efficient problem-solving; field coordination is less elegant than thoughtful preconstruction planning.",
-        "correct": "This illustrates BIM's practical value. Detecting clashes before construction prevents expensive change orders and rework. The first approach is more efficient and professional. Field problem-solving can work but wastes resources and often produces inferior solutions. Digital coordination is genuinely superior when properly implemented.",
-        "takeaway": "Digital coordination is genuinely superior when properly implemented."
+        "correct": "The scenario illustrates the value of model-based coordination when it prevents field conflicts and rework. The source-safe claim is efficiency and coordination support, not that BIM is always legally required.",
+        "takeaway": "Digital coordination can reduce waste when properly used.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The scenario illustrates the value of model-based coordination when it prevents field conflicts and rework. The source-safe claim is efficiency and coordination support, not that BIM is always legally required.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "analyze",
-      "application_context": "client_scenario",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "ATT"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -469,8 +496,8 @@
       "model_id": "ALE-THEO-008-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a86030b97da99a030dc297add47832ade59b9ac76fbce8f3254f8fb3c086c1ab"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:545baa0769d805bc937d6d106691e9bc1415db5ff3760e3f395142d2f8efef64"
     },
     {
       "question_id": "548d492f-8c08-4386-be9f-ea0b54067587",
@@ -504,15 +531,18 @@
         "a": "Digital tools assist but don't guarantee excellence; skilled traditional practice remains valuable.",
         "b": "While digital literacy is increasingly important, declaring traditional practices 'outdated' oversimplifies.",
         "d": "Traditional methods aren't inherently more authentic; the issue is equitable access.",
-        "correct": "A 'digital divide in architecture.' Expensive software, powerful hardware, and specialized training concentrate technological capability among large well-resourced firms. This reinforces economic concentration and creates barriers to entry for smaller practices. Professional equity requires addressing this disparity.",
-        "takeaway": "Professional equity requires addressing this disparity."
+        "correct": "The concern is unequal access to software, hardware, training, and project opportunities. CPDAS evidence shows digital topics in professional development, but that does not mean all firms have equal capacity to adopt them.",
+        "takeaway": "Digital capability is a professional equity issue, not just an individual skill issue.",
+        "source_boundary": "Batch 159 supports digital architecture as technological-trend and professional-practice evidence, not as a vendor mandate or standalone BLEA subject."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The concern is unequal access to software, hardware, training, and project opportunities. CPDAS evidence shows digital topics in professional development, but that does not mean all firms have equal capacity to adopt them.",
+      "code_citation": "Batch 159 local source map: prc-boa-ra9266-irr-theory-syllabus-b159; prc-ra9266-board-law-cad-b159; prboa-spp-comprehensive-services-b159; njit-kolarevic-digital-age-b159; prc-cpdas-uap-digital-tools-b159.",
       "bloom_level": "apply",
-      "application_context": "design_application",
+      "application_context": "source_audited_digital_architecture",
       "practice_context": [
-        "CMP"
+        "theory",
+        "technological trends",
+        "source-audited batch 159"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
@@ -521,8 +551,8 @@
       "model_id": "ALE-THEO-008-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dc88c962d79408505fd4c3dee74c30be60be94fd42bd2d6d46aa817aff19d45a"
+      "updated_at": "2026-05-14T07:17:11.886Z",
+      "content_hash": "sha256:c7f811d5d7b073f8e29ac14a3e8d109497b5fdc0de7680efafab96ea86fbb1da"
     }
   ]
 }
