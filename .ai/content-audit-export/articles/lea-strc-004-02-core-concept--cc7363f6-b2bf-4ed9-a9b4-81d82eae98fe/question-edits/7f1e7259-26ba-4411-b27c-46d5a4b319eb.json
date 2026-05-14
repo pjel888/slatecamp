@@ -2,16 +2,16 @@
   "question_id": "7f1e7259-26ba-4411-b27c-46d5a4b319eb",
   "baseline_hash": "sha256:8fc7369f704c166dc517ac4fd415be7384887c88c2010815326e4806c4793b80",
   "action": "replace",
-  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-004-02 to checked local NSCP OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-161",
-  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "reason": "Batch 164 question-alignment remediation: use NSCP 2015 Zone 2 / Zone 4 terminology from the checked local OCR anchor.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
     "parent_article_slug": "lea-strc-004-02-core-concept",
-    "batch_id": "source-audited-batch-161-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40."
@@ -32,11 +32,11 @@
         ]
       }
     ],
-    "local_source_safe_action": "Question rewritten to match structural_seismic_zone_factor source boundary.",
+    "local_source_safe_action": "Question proposal now uses only NSCP 2015 Zone 2 / Zone 4 labels and Table 208-3 Z factors.",
     "excluded_claims": [
-      "Zone 1 / Zone 2 naming for NSCP 2015 seismic zones.",
-      "Geological explanations for province assignment not stated in the checked NSCP anchor.",
-      "Spectral acceleration map claims as a replacement for this Z-factor article."
+      "Legacy seismic-zone naming that does not match NSCP 2015 Zone 2 and Zone 4 terminology.",
+      "Geologic explanations for province assignment not stated in the checked NSCP text.",
+      "Spectral-map claims outside the checked Z-factor source boundary."
     ]
   },
   "proposed": {
@@ -44,38 +44,38 @@
     "options": [
       {
         "id": "a",
-        "text": "Z = 0.20, Zone 2"
+        "text": "Zone 2, Z = 0.20"
       },
       {
         "id": "b",
-        "text": "Z = 0.30, intermediate zone"
+        "text": "Zone 3, Z = 0.30"
       },
       {
         "id": "c",
-        "text": "Z = 0.40, Zone 4"
+        "text": "Zone 4, Z = 0.40"
       },
       {
         "id": "d",
-        "text": "Z = 0.50, special zone"
+        "text": "No seismic zone factor applies."
       }
     ],
     "correct_option_id": "c",
     "rationale": {
-      "correct": "Davao is outside Palawan, Sulu, and Tawi-Tawi, so it is in the rest-of-country Zone 4 category with Z = 0.40.",
-      "a": "Not selected: Z = 0.20, Zone 2",
-      "b": "Not selected: Z = 0.30, intermediate zone",
-      "c": "Not selected: Z = 0.40, Zone 4",
-      "d": "Not selected: Z = 0.50, special zone",
-      "takeaway": "Davao is outside Palawan, Sulu, and Tawi-Tawi, so it is in the rest-of-country Zone 4 category with Z = 0.40.",
-      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+      "correct": "Davao City is not in the listed Zone 2 exceptions, so it falls under Zone 4 with Z = 0.40.",
+      "takeaway": "Only Palawan except Busuanga, Sulu, and Tawi-Tawi are listed in Zone 2; the rest of the country is Zone 4.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Not selected: Zone 2, Z = 0.20",
+      "b": "Not selected: Zone 3, Z = 0.30",
+      "c": "Selected: Zone 4, Z = 0.40",
+      "d": "Not selected: No seismic zone factor applies."
     },
-    "explanation": "Davao is outside Palawan, Sulu, and Tawi-Tawi, so it is in the rest-of-country Zone 4 category with Z = 0.40.",
+    "explanation": "Davao City is not in the listed Zone 2 exceptions, so it falls under Zone 4 with Z = 0.40.",
     "code_citation": "NSCP 2015 Vol. I, Section 208.4.4.1 and Table 208-3; OCR page 240 lines 16-26.",
-    "application_context": "source_audited_nscp_seismic_zone_factor",
+    "application_context": "source_audited_nscp_seismic_zone_factor_batch_164",
     "practice_context": [
       "structural",
       "seismic design",
-      "source-audited batch 161"
+      "batch 164 question alignment"
     ],
     "bloom_level": "understand",
     "difficulty": 0.5,

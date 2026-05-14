@@ -2,16 +2,16 @@
   "question_id": "4864b616-2862-4dad-be1f-8b73baa8e983",
   "baseline_hash": "sha256:9e7b185a5c628539ea4ba9f74b885283cc5bafdbbeed67f786b072b20b950deb",
   "action": "replace",
-  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-009-01 to checked local NSCP OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-161",
-  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "reason": "Batch 164 question-alignment remediation: constrain timber durability questions to checked NSCP Section 605 thresholds.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
     "parent_article_slug": "lea-strc-009-01-core-concept",
-    "batch_id": "source-audited-batch-161-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.",
@@ -42,11 +42,10 @@
         ]
       }
     ],
-    "local_source_safe_action": "Question rewritten to match structural_timber_decay_termite_protection source boundary.",
+    "local_source_safe_action": "Question proposal now tests only Section 605 site preparation, clearance, ventilation, separation, treatment, and moisture thresholds.",
     "excluded_claims": [
-      "Unsupported Narra/Kamagong/Dao/Tangile resistance table claims.",
-      "Unsupported sapwood percentage acceptance claims.",
-      "Species-specific substitution rules outside NSCP Section 605 anchors."
+      "Species-specific durability classifications outside Section 605 clearance, ventilation, moisture, and treatment thresholds.",
+      "Biology or local-material classification claims not present in the checked OCR pages."
     ]
   },
   "proposed": {
@@ -62,30 +61,30 @@
       },
       {
         "id": "c",
-        "text": "600 mm by 900 mm"
+        "text": "150 mm by 450 mm"
       },
       {
         "id": "d",
-        "text": "No fixed opening size is given"
+        "text": "900 mm by 900 mm"
       }
     ],
     "correct_option_id": "a",
     "rationale": {
-      "correct": "Section 605.3 requires an under-floor access opening at least 450 mm by 600 mm, unobstructed by pipes, ducts, and similar construction.",
-      "a": "Not selected: 450 mm by 600 mm",
+      "correct": "Section 605.3 requires a minimum 450 mm by 600 mm opening when the under-floor area must be accessible.",
+      "takeaway": "Under-floor clearance rules include an access-opening requirement.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Selected: 450 mm by 600 mm",
       "b": "Not selected: 300 mm by 300 mm",
-      "c": "Not selected: 600 mm by 900 mm",
-      "d": "Not selected: No fixed opening size is given",
-      "takeaway": "Section 605.3 requires an under-floor access opening at least 450 mm by 600 mm, unobstructed by pipes, ducts, and similar construction.",
-      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+      "c": "Not selected: 150 mm by 450 mm",
+      "d": "Not selected: 900 mm by 900 mm"
     },
-    "explanation": "Section 605.3 requires an under-floor access opening at least 450 mm by 600 mm, unobstructed by pipes, ducts, and similar construction.",
-    "code_citation": "NSCP 2015 Vol. I, Section 605; OCR pages 870-871.",
-    "application_context": "source_audited_nscp_timber_decay_termite_protection",
+    "explanation": "Section 605.3 requires a minimum 450 mm by 600 mm opening when the under-floor area must be accessible.",
+    "code_citation": "NSCP 2015 Vol. I, Section 605; OCR page 870 lines 13-113 and page 871 lines 3-42.",
+    "application_context": "source_audited_nscp_wood_decay_termite_batch_164",
     "practice_context": [
       "structural",
-      "timber durability",
-      "source-audited batch 161"
+      "wood decay and termite protection",
+      "batch 164 question alignment"
     ],
     "bloom_level": "remember",
     "difficulty": 0.3,

@@ -2,16 +2,16 @@
   "question_id": "9c6a6587-1493-430c-9ae9-cad501989ed5",
   "baseline_hash": "sha256:c7549d93a5a8237173c2dfaa8d5940872425bd513c0f337d86e27247ecb2fb5b",
   "action": "replace",
-  "reason": "Batch 163 source-audited rewrite: constrain lea-util-004-05 to checked local NSCP 2015 Section 208.9 and related seismic/flood utility anchors; remove unsupported residual operational or manufacturer claims.",
-  "approved_by": "codex-local-source-audit-batch-163",
-  "approved_at": "2026-05-14T18:07:28+08:00",
+  "reason": "Batch 164 question-alignment remediation: rewrite utility seismic/flood questions to checked NSCP Table 208-1, Table 208-13, Section 208.9, and Section 211.1 anchors only.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
     "parent_article_slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
-    "batch_id": "source-audited-batch-163-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:11-26 Site seismic hazard depends on seismic zone, proximity to active sources, soil profile, and importance; the Philippines is divided into Zone 2 exceptions and the rest under Zone 4 with Z values in Table 208-3.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:5-13 In Zone 4, near-source factors are assigned and essential or high-rise buildings within 2 km of a major fault are recommended for site-specific spectrum review.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0259.md:27-52 Seismic response coefficients Ca and Cv are assigned from Tables 208-7 and 208-8 by soil profile type and seismic zone.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:29-57 Section 208.9 covers permanent nonstructural components, equipment, attachments, anchorages, required bracing, equipment exemptions, approved standards, and the rule that friction from gravity load is not seismic resistance.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0283.md:61-99 Section 208.9.2 defines total design lateral seismic force Fp and uses component amplification and response modification factors from Table 208-13 or dynamic properties.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0284.md:5-18 Section 208.9.3 requires members and connections transferring component forces to seismic-resisting systems to be designed for those forces and critical horizontal loading.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0285.md:5-55 Table 208-13 lists nonstructural component categories and component factor rows.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:11-57 Table 208-13 lists electrical, mechanical, plumbing, emergency power supply, essential communications, battery rack, and fuel tank equipment categories.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0286.md:63-65 Light fixtures and mechanical services installed in metal suspension systems must be independently supported from the structure above.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18 Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:20-62 Seismic restraints may be omitted from selected piping, ducts, and raceways only when listed damage, support, fragility, and motion conditions are satisfied; flexible accommodation is required across different buildings or structural systems.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:64-79 Vibration isolators supporting equipment must be designed for lateral loads or restrained from lateral displacement and vertical uplift; vibration-isolated equipment uses ap/Rp = 2.5/1.5, and shallow or expansion anchors multiply anchor forces by 2.0.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:81-105 Equipment anchorage cannot rely on gravity friction; expansion anchors resisting tension are not used where operational vibrating loads are present; batteries and internal cabinet equipment require restraints.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:107-136 Design specifications for equipment must specify or reference design lateral forces and account for relative motion of attachments; alternative standards or test data are accepted only within stated minimum force boundaries.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0290.md:64-115 Buildings in flood hazard areas must resist flood hazards and use the most restrictive applicable flood hazard area; dry floodproofing includes utility and sanitary facilities made watertight and impermeable.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0237.md:61-96 Table 208-1 assigns occupancy importance factors and gives Ip = 1.5 for anchorage of machinery and equipment required for life-safety systems.",
@@ -66,46 +66,44 @@
         }
       }
     ],
-    "local_source_safe_action": "Question rewritten to match checked local NSCP 2015 Section 208.9 nonstructural component/equipment and related seismic/flood utility anchors.",
+    "local_source_safe_action": "Question proposal now tests only positive NSCP anchors for nonstructural equipment restraint, component forces, load transfer, relative motion, vibration isolators, equipment specifications, and flood utility boundaries.",
     "excluded_claims": [
-      "Exact generator transfer, runtime, fuel-filter, and post-earthquake maintenance protocol claims.",
-      "Exact gas shutoff valve mechanism, activation threshold, response time, and price claims.",
-      "Exact smoke-control, PA intelligibility, and emergency communication duration claims.",
-      "Exact ASME, AISC, ASTM, manufacturer, or proprietary details not present in the checked local NSCP anchors."
+      "Exact service-response, runtime, threshold, inspection-protocol, and proprietary product claims outside checked NSCP anchors.",
+      "Trade-standard or product-specific details outside checked Section 208.9 and Section 211.1 anchors."
     ]
   },
   "proposed": {
-    "text": "For HVAC equipment in a critical facility, which resilience statement stays inside the checked NSCP source boundary?",
+    "text": "For air-handling equipment in a critical facility, which resilience statement stays inside the checked NSCP source boundary?",
     "options": [
       {
         "id": "a",
-        "text": "The checked source requires 72 hours of passive HVAC operation."
+        "text": "Air-handling equipment is never included in equipment examples."
       },
       {
         "id": "b",
-        "text": "The checked source requires one exact chiller runtime for all hospitals."
+        "text": "Only architectural finishes need checking."
       },
       {
         "id": "c",
-        "text": "Treat pumps, air-handling units, cooling towers, controls, and life-safety equipment as equipment requiring source-supported anchorage or restraint checks."
+        "text": "Air-handling units are listed equipment examples, and their attachments must resist Section 208.9.2 seismic forces when applicable."
       },
       {
         "id": "d",
-        "text": "The checked source waives HVAC anchorage if the equipment sits on a heavy base."
+        "text": "Equipment support is governed only by timber provisions."
       }
     ],
     "correct_option_id": "c",
     "rationale": {
-      "correct": "Treat pumps, air-handling units, cooling towers, controls, and life-safety equipment as equipment requiring source-supported anchorage or restraint checks. This is supported by Equipment examples include boilers, chillers, heat exchangers, pumps, air-handling units, cooling towers, control panels, motors, switchgear, transformers, life-safety equipment, major conduit, ducting, piping, and fire sprinkler systems.",
-      "takeaway": "Use the checked NSCP anchor as the answer boundary; remove operational or manufacturer-specific details unless separately sourced.",
-      "source_boundary": "Batch 163 uses checked local NSCP OCR vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18; no external source or unsupported article claim is used.",
-      "a": "Not selected: The checked source requires 72 hours of passive HVAC operation. This is outside the checked Batch 163 source boundary or contradicts it.",
-      "b": "Not selected: The checked source requires one exact chiller runtime for all hospitals. This is outside the checked Batch 163 source boundary or contradicts it.",
-      "c": "Selected: Treat pumps, air-handling units, cooling towers, controls, and life-safety equipment as equipment requiring source-supported anchorage or restraint checks.",
-      "d": "Not selected: The checked source waives HVAC anchorage if the equipment sits on a heavy base. This is outside the checked Batch 163 source boundary or contradicts it."
+      "correct": "The checked Table 208-13 note lists air-handling units as equipment examples, and Section 208.9 requires attachments for permanent equipment to resist prescribed seismic forces.",
+      "takeaway": "Use listed equipment examples plus Section 208.9 anchorage and force rules.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Not selected: Air-handling equipment is never included in equipment examples.",
+      "b": "Not selected: Only architectural finishes need checking.",
+      "c": "Selected: Air-handling units are listed equipment examples, and their attachments must resist Section 208.9.2 seismic forces when applicable.",
+      "d": "Not selected: Equipment support is governed only by timber provisions."
     },
-    "explanation": "Treat pumps, air-handling units, cooling towers, controls, and life-safety equipment as equipment requiring source-supported anchorage or restraint checks. The supporting checked source is vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18.",
-    "code_citation": "NSCP 2015 Vol. I, checked OCR vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0287.md:10-18",
+    "explanation": "The checked Table 208-13 note lists air-handling units as equipment examples, and Section 208.9 requires attachments for permanent equipment to resist prescribed seismic forces.",
+    "code_citation": "NSCP 2015 Vol. I, Table 208-1, Table 208-13, Section 208.9, and Section 211.1; OCR pages 237, 283-287, and 290.",
     "bloom_level": "understand",
     "difficulty": 0.5,
     "difficulty_rating": null,
@@ -113,12 +111,11 @@
     "is_assessment": false,
     "model_id": "ALE-UTIL-004-05-023",
     "prompt_image_url": null,
-    "application_context": "source_audited_nscp_nonstructural_equipment",
+    "application_context": "source_audited_nscp_nonstructural_equipment_batch_164",
     "practice_context": [
-      "building-utilities",
-      "mepf",
-      "seismic-restraint",
-      "source-audited batch 163"
+      "utilities",
+      "seismic bracing",
+      "batch 164 question alignment"
     ]
   }
 }

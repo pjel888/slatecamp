@@ -1,0 +1,129 @@
+{
+  "batch": 167,
+  "batch_id": "source-audited-batch-167-local-first-closure",
+  "status": "passed_local_validation_and_native_independent_qa_git_stage_blocked",
+  "generated_at": "2026-05-14T20:03:11+08:00",
+  "scope": {
+    "selected_articles": [],
+    "selected_article_count": 0,
+    "selected_linked_question_count": 0,
+    "selected_question_edit_count": 0,
+    "answer_key_changes": 0,
+    "article_folder_edits": [],
+    "source_folder_edits": [],
+    "closure_artifacts": [
+      ".ai/content-audit-export/source-audited-article-batch-167-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-167-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-167-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-167-independent-quality-review.md",
+      ".ai/03_plans/batch-167-independent-quality-review-kimi.md",
+      ".ai/03_plans/batch-167-git-handoff-stage-list.md",
+      ".ai/03_plans/batch-167-git-handoff-stage-paths.txt"
+    ],
+    "shared_state_files_touched": []
+  },
+  "checks": [
+    {
+      "name": "latest_accepted_content_state",
+      "status": "pass",
+      "command": "git rev-parse --abbrev-ref HEAD; git rev-parse HEAD; git log --oneline --decorate -n 10; git log --oneline --decorate --all --grep='source-audited batch 167|accept source-audited batch 167|batch 167' -n 20",
+      "evidence": "Current branch is 3dlab-gray-viewport-bg at abf4b153a. Latest accepted source-audited content batch is Batch 166 at 50e74000b; abf4b153a is a later read-only audit commit for Batches 161-163. No accepted Batch 167 commit was found."
+    },
+    {
+      "name": "residual_eligibility_reconciliation",
+      "status": "pass",
+      "command": "Node JSON parse and comparison over Batch 160 blocker ledger, Batch 161-163 selected-cluster ledgers, and Batch 164-166 closure ledgers",
+      "evidence": "Batch 160 listed eight blocked residual clusters. Accepted Batches 161-163 selected all eight with linked_question_count=90, question_edit_count=90, answer_key_changes=0, and selected blockers=0. Accepted Batches 164, 165, and 166 then recorded remaining_blocked_clusters=[]."
+    },
+    {
+      "name": "selected_article_count",
+      "status": "pass",
+      "command": "Batch 167 ledger invariant",
+      "evidence": "selected_clusters=[], article_count=0, linked_question_count=0, question_edit_count=0, answer_key_changes=0, selected_blockers=0."
+    },
+    {
+      "name": "compose_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:compose -- --article-id <id> --dry-run --strict --overwrite",
+      "evidence": "No article bundle was selected or edited in Batch 167, so there is no compose target."
+    },
+    {
+      "name": "diff_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:diff -- --article-id <id> --dry-run --strict --summary",
+      "evidence": "No article bundle was selected or edited in Batch 167, so there is no diff target."
+    },
+    {
+      "name": "official_scoped_validate",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun scripts/content-audit/validate-bundles.ts --input <scoped selected-article root> --dry-run --json",
+      "evidence": "No selected article bundle exists. No temporary validation root was created because there are no article edits."
+    },
+    {
+      "name": "linked_question_question_edit_parity",
+      "status": "pass",
+      "command": "Batch 167 ledger invariant",
+      "evidence": "0 selected linked questions equals 0 generated question edits; answer-key changes=0."
+    },
+    {
+      "name": "source_evidence_hashes_and_locators",
+      "status": "pass",
+      "command": "git show HEAD:<Batch 160-166 ledger> | shasum -a 256; git show HEAD:<source-audit-evidence.json> | shasum -a 256 for the eight accepted source-audit-evidence files",
+      "evidence": "All seven prior ledger git objects and all eight accepted source-evidence git objects at HEAD match the hashes recorded in the Batch 167 ledger. The working-tree copies of the prior evidence files and Batch 164 ledger are dirty and intentionally excluded from Batch 167 staging."
+    },
+    {
+      "name": "json_parse",
+      "status": "pass",
+      "command": "node -e JSON.parse over Batch 167 JSON artifacts",
+      "evidence": "Batch 167 ledger and scoped-checks JSON parsed successfully."
+    },
+    {
+      "name": "placeholder_internal_note_source_gap_scan",
+      "status": "pass_after_draft_placeholder_remediation",
+      "command": "marker scan over Batch 167 intended paths",
+      "evidence": "Initial scan found draft review placeholders. Those placeholders were replaced with concrete Kimi blocker and native QA status, and the scan was rerun with no unresolved marker matches."
+    },
+    {
+      "name": "source_verification_invariants",
+      "status": "pass",
+      "command": "bun run test:source-verification",
+      "evidence": "7 pass, 0 fail, 244 expect() calls."
+    },
+    {
+      "name": "independent_qa",
+      "status": "pass",
+      "command": "kimi --work-dir /Users/philiplewis/slatecamp --quiet -p <Batch 167 read-only review prompt>",
+      "evidence": "Kimi startup was blocked by sandbox permission on /Users/philiplewis/.kimi/logs/kimi.log. Native independent QA found draft-status placeholders, dirty working-tree source-evidence hash drift, and dirty prior-ledger hash drift. Batch 167 was remediated to remove draft statuses and to bind prior evidence and ledger hashes to accepted HEAD git objects, with dirty prior artifacts excluded from the stage list. Final native QA verdict: PASS, no blocker remains before exact staging/commit if only the seven Batch 167 paths are staged."
+    },
+    {
+      "name": "git_diff_whitespace_check",
+      "status": "pass",
+      "command": "git diff --check -- $(cat .ai/03_plans/batch-167-git-handoff-stage-paths.txt) plus no-index checks for untracked paths",
+      "evidence": "Scoped git diff --check exited 0 for the exact Batch 167 handoff path list; no no-index whitespace output was emitted for the untracked Batch 167 files."
+    },
+    {
+      "name": "git_stage_exact_paths",
+      "status": "blocked",
+      "command": "git add --pathspec-from-file=.ai/03_plans/batch-167-git-handoff-stage-paths.txt",
+      "evidence": "Failed with: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. No cached diff, commit, or push was attempted after this blocker."
+    }
+  ],
+  "reviewer_pass": {
+    "status": "pass",
+    "path": ".ai/03_plans/batch-167-independent-quality-review.md",
+    "kimi_blocker_path": ".ai/03_plans/batch-167-independent-quality-review-kimi.md",
+    "verdict": "Native QA PASS after remediation."
+  },
+  "blockers": [
+    {
+      "type": "git_stage_blocker",
+      "command": "git add --pathspec-from-file=.ai/03_plans/batch-167-git-handoff-stage-paths.txt",
+      "error": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+    }
+  ],
+  "warnings": [
+    "Batch 167 intentionally excludes shared export state files because they are pre-existing dirty files and no selected article requires shared state churn.",
+    "Active rolling-readonly-swarm audit reports are not touched."
+  ],
+  "final_status": "blocked_at_exact_git_stage_index_lock_permission"
+}

@@ -2,16 +2,16 @@
   "question_id": "c503eb0a-79f5-4041-baa6-6ee79e9d1b7c",
   "baseline_hash": "sha256:4dfb700591a643600e6fb02b709578bafae919ff870930021b0040b427d3861b",
   "action": "replace",
-  "reason": "Batch 162 source-audited rewrite: constrain lea-strc-009-02 to checked local NSCP Table 615.2-1 and Section 622 OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-162",
-  "approved_at": "2026-05-14T17:40:10+08:00",
+  "reason": "Batch 164 question-alignment remediation: constrain timber stress-group questions to checked NSCP Table 615.2-1 and Section 622.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
     "parent_article_slug": "lea-strc-009-02-core-concept",
-    "batch_id": "source-audited-batch-162-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:51-57 Section 622.1 machine-graded lumber use when species identification is unknown and Table 615.2-1 values cannot be found.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:58-69 Section 622.2 FPRDI design properties, dry-lumber scope, green-lumber reduction, and interpolation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:71-76 Section 622.3 design using machine-graded lumber under NSCP and other appropriate standards.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0943.md:78-96 Sections 622.4-622.6 preservative treatment, moisture-content definitions, and required markings.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0889.md:5-65 Table 615.2-1 reference values and visual stress groups for unseasoned structural timber of Philippine woods.",
@@ -41,13 +41,10 @@
         }
       }
     ],
-    "local_source_safe_action": "Question rewritten to match NSCP Table 615.2-1 and Section 622 timber stress-group and machine-graded lumber source boundary.",
+    "local_source_safe_action": "Question proposal now removes off-anchor product-board and dimension-conversion prompts, corrects the Apitong group pairing, and tests Table 615.2-1 plus Section 622 only.",
     "excluded_claims": [
-      "Unsupported hardboard, fiberboard, and product-density claims.",
-      "Unsupported nominal-to-actual lumber dimension conversions.",
-      "Unsupported NatCor grade-defect schedules and grade percentage reductions.",
-      "Species examples not present in the selected OCR anchors, including White Lauan, Tindalo, Ipil, and Mangkono.",
-      "Exact species reference-value numerics where OCR quality is insufficient for publication-grade numeric quoting."
+      "Product-board and dimension-conversion questions outside Table 615.2-1 and Section 622.",
+      "Any species group assignment that conflicts with Table 615.2-1."
     ]
   },
   "proposed": {
@@ -72,26 +69,26 @@
     ],
     "correct_option_id": "a",
     "rationale": {
-      "correct": "Yakal appears under I. High Strength Group in the checked NSCP Table 615.2-1 OCR anchor.",
-      "a": "Not selected: Yakal",
-      "b": "Not selected: Narra is listed under II. Moderately High Strength Group.",
-      "c": "Not selected: Lauan is listed under III. Medium Strength Group.",
-      "d": "Not selected: Almaciga is listed under IV. Moderately Low Strength Group.",
+      "correct": "Yakal appears under Group I, High Strength Group, in the checked NSCP Table 615.2-1 OCR anchor.",
       "takeaway": "Use the checked Table 615.2-1 group list before applying timber reference values.",
-      "source_boundary": "Batch 162 uses only NSCP OCR page-0889.md lines 5-65 and page-0943.md lines 51-96."
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Selected: Yakal",
+      "b": "Not selected: Narra",
+      "c": "Not selected: Lauan",
+      "d": "Not selected: Almaciga"
     },
-    "explanation": "Yakal is listed in I. High Strength Group on the checked NSCP Table 615.2-1 OCR page.",
-    "code_citation": "NSCP 2015 Vol. I, Table 615.2-1; OCR page 889.",
+    "explanation": "Yakal appears under Group I, High Strength Group, in the checked NSCP Table 615.2-1 OCR anchor.",
+    "code_citation": "NSCP 2015 Vol. I, Table 615.2-1 and Section 622; OCR page 889 lines 5-65 and page 943 lines 51-96.",
     "bloom_level": "remember",
     "difficulty": 0.3,
     "difficulty_rating": null,
     "discrimination_rating": null,
     "model_id": "ALE-STRC-009-02-001",
-    "application_context": "source_audited_nscp_timber_stress_groups",
+    "application_context": "source_audited_nscp_timber_stress_groups_batch_164",
     "practice_context": [
       "structural",
-      "timber",
-      "source-audited batch 162"
+      "wood stress groups",
+      "batch 164 question alignment"
     ]
   }
 }

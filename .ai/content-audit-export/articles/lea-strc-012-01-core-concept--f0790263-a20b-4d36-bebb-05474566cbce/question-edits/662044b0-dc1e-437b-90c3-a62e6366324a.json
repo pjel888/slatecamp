@@ -2,16 +2,16 @@
   "question_id": "662044b0-dc1e-437b-90c3-a62e6366324a",
   "baseline_hash": "sha256:476e73eaebd3f368effe2b3d6eb331b4043f721d9712069734c9f9eeae5b3bdc",
   "action": "replace",
-  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-012-01 to checked local NSCP OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-161",
-  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "reason": "Batch 164 question-alignment remediation: replace non-NSCP citation wording and probability mismatches with checked NSCP 2015 Section 207 anchors.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
     "parent_article_slug": "lea-strc-012-01-core-concept",
-    "batch_id": "source-audited-batch-161-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0080.md:37-81 MWFRS procedures and basic wind speed definition.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0081.md:9-17 wind-load basic parameters and internal pressure/enclosure classification references.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0092.md:5-13 wind-map note for 3-second gust, interpolation, and 7 percent in 50 years / AEP 0.00143 / MRI 700 years.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0095.md:49-79 surface roughness and Exposure B/C/D definitions.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0121.md:5-59 MWFRS pressure equation context and exposure usage.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0060.md:21-82 wind definitions for enclosed, flexible, low-rise, open, partially enclosed, and rigid buildings.",
@@ -42,11 +42,10 @@
         ]
       }
     ],
-    "local_source_safe_action": "Question rewritten to match structural_wind_load_classification source boundary.",
+    "local_source_safe_action": "Question proposal now tests only checked NSCP wind definitions, exposure categories, low-rise/flexible definitions, and the Occupancy Category II wind-map probability note.",
     "excluded_claims": [
-      "0.02 annual exceedance probability / 50-year MRI claim for this checked NSCP wind-map anchor.",
-      "Exposure A as an NSCP 2015 wind exposure category in this checked section.",
-      "Height-ratio flexibility claims not supported by the checked flexible-building definition."
+      "Non-NSCP citation labels and wind-probability shortcuts outside checked Section 207 anchors.",
+      "Imperial low-rise height conversion in place of the checked 18 m definition."
     ]
   },
   "proposed": {
@@ -54,38 +53,38 @@
     "options": [
       {
         "id": "a",
-        "text": "Yes; 20 m is within the low-rise height criterion."
+        "text": "Yes; the least horizontal dimension is greater than h."
       },
       {
         "id": "b",
-        "text": "No; mean roof height of 20 m exceeds the 18 m limit."
+        "text": "No; h exceeds the checked 18 m limit."
       },
       {
         "id": "c",
-        "text": "Yes; any plan wider than 30 m is low-rise."
+        "text": "Yes; any enclosed building is low-rise."
       },
       {
         "id": "d",
-        "text": "Cannot determine because wind speed alone controls low-rise status."
+        "text": "No; the plan must be square."
       }
     ],
     "correct_option_id": "b",
     "rationale": {
-      "correct": "The low-rise definition requires mean roof height h <= 18 m and h not exceeding the least horizontal dimension. The 20 m height fails the first condition.",
-      "a": "Not selected: Yes; 20 m is within the low-rise height criterion.",
-      "b": "Not selected: No; mean roof height of 20 m exceeds the 18 m limit.",
-      "c": "Not selected: Yes; any plan wider than 30 m is low-rise.",
-      "d": "Not selected: Cannot determine because wind speed alone controls low-rise status.",
-      "takeaway": "The low-rise definition requires mean roof height h <= 18 m and h not exceeding the least horizontal dimension. The 20 m height fails the first condition.",
-      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+      "correct": "It does not satisfy the checked low-rise definition because mean roof height exceeds 18 m.",
+      "takeaway": "The 18 m height limit is a hard part of the checked low-rise definition.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Not selected: Yes; the least horizontal dimension is greater than h.",
+      "b": "Selected: No; h exceeds the checked 18 m limit.",
+      "c": "Not selected: Yes; any enclosed building is low-rise.",
+      "d": "Not selected: No; the plan must be square."
     },
-    "explanation": "The low-rise definition requires mean roof height h <= 18 m and h not exceeding the least horizontal dimension. The 20 m height fails the first condition.",
-    "code_citation": "NSCP 2015 Vol. I, Section 207A/207B; OCR pages 60, 80, 81, 92, 95, and 121.",
-    "application_context": "source_audited_nscp_wind_load_classification",
+    "explanation": "It does not satisfy the checked low-rise definition because mean roof height exceeds 18 m.",
+    "code_citation": "NSCP 2015 Vol. I, Section 207 definitions and wind-map notes; OCR pages 60, 80, 92, and 95.",
+    "application_context": "source_audited_nscp_wind_definitions_batch_164",
     "practice_context": [
       "structural",
-      "wind loads",
-      "source-audited batch 161"
+      "wind design",
+      "batch 164 question alignment"
     ],
     "bloom_level": "apply",
     "difficulty": 0.5,

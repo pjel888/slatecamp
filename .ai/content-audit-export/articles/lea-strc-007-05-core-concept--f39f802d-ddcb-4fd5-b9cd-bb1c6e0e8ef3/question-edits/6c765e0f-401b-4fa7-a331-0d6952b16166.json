@@ -2,16 +2,16 @@
   "question_id": "6c765e0f-401b-4fa7-a331-0d6952b16166",
   "baseline_hash": "sha256:a0ede1da40e0e81d0e11fd57daae680afa67cd3b56111c0065867a56752e37fb",
   "action": "replace",
-  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-007-05 to checked local NSCP OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-161",
-  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "reason": "Batch 164 question-alignment remediation: constrain embedment questions to checked NSCP Sections 420.7 and 426.8 and correct pipe-cover values.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
     "parent_article_slug": "lea-strc-007-05-core-concept",
-    "batch_id": "source-audited-batch-161-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0508.md:3-27 Section 426.8 review, pipe design, fluid limits, solid-slab placement, and reinforcement non-displacement requirements.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0463.md:60-81 Section 420.7 embedments, material compatibility, aluminum protection, 0.002 perpendicular reinforcement, and 40/20 mm pipe cover.",
@@ -34,11 +34,10 @@
         ]
       }
     ],
-    "local_source_safe_action": "Question rewritten to match structural_concrete_embedments source boundary.",
+    "local_source_safe_action": "Question proposal now tests only structural impairment, material compatibility, aluminum coating, 0.002 perpendicular reinforcement, 40 mm / 20 mm cover, and Section 426.8 review/installation rules.",
     "excluded_claims": [
-      "Unsupported h/3 conduit diameter rule in the selected source boundary.",
-      "Unsupported 4 percent column embedment area rule in the selected source boundary.",
-      "Unsupported three-diameter spacing rule in the selected source boundary."
+      "Detailed conduit-size, rib-width, spacing, and cumulative-area shortcuts outside Sections 420.7 and 426.8.",
+      "Any pipe-cover value that conflicts with the checked 40 mm and 20 mm Section 420.7.5 values."
     ]
   },
   "proposed": {
@@ -46,38 +45,38 @@
     "options": [
       {
         "id": "a",
-        "text": "At least 0.002 times the area of the concrete section"
+        "text": "At least 0.002 times the area of the concrete section."
       },
       {
         "id": "b",
-        "text": "At least 4 percent of the column gross area"
+        "text": "Exactly the area of the pipe wall."
       },
       {
         "id": "c",
-        "text": "No reinforcement is required for pipe embedments"
+        "text": "No perpendicular reinforcement is mentioned."
       },
       {
         "id": "d",
-        "text": "At least the same area as the largest pipe opening"
+        "text": "At least 10 percent of the beam area."
       }
     ],
     "correct_option_id": "a",
     "rationale": {
       "correct": "Section 420.7.4 requires reinforcement with area at least 0.002 times the concrete section area perpendicular to pipe embedments.",
-      "a": "Not selected: At least 0.002 times the area of the concrete section",
-      "b": "Not selected: At least 4 percent of the column gross area",
-      "c": "Not selected: No reinforcement is required for pipe embedments",
-      "d": "Not selected: At least the same area as the largest pipe opening",
-      "takeaway": "Section 420.7.4 requires reinforcement with area at least 0.002 times the concrete section area perpendicular to pipe embedments.",
-      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+      "takeaway": "The checked anchor gives a reinforcement-area rule for pipe embedments.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Selected: At least 0.002 times the area of the concrete section.",
+      "b": "Not selected: Exactly the area of the pipe wall.",
+      "c": "Not selected: No perpendicular reinforcement is mentioned.",
+      "d": "Not selected: At least 10 percent of the beam area."
     },
     "explanation": "Section 420.7.4 requires reinforcement with area at least 0.002 times the concrete section area perpendicular to pipe embedments.",
-    "code_citation": "NSCP 2015 Vol. I, Sections 420.7 and 426.8; OCR pages 463 and 508.",
-    "application_context": "source_audited_nscp_concrete_embedments",
+    "code_citation": "NSCP 2015 Vol. I, Sections 420.7 and 426.8; OCR page 463 lines 60-81 and page 508 lines 3-27.",
+    "application_context": "source_audited_nscp_embedments_batch_164",
     "practice_context": [
       "structural",
       "concrete embedments",
-      "source-audited batch 161"
+      "batch 164 question alignment"
     ],
     "bloom_level": "analyze",
     "difficulty": 0.3,

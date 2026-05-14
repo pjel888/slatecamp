@@ -1,149 +1,788 @@
 {
   "batch": 164,
-  "batch_id": "source-audited-batch-164-local-first-closure",
-  "status": "closure_no_selected_articles_residual_queue_exhausted_after_batch_163",
-  "generated_at": "2026-05-14T18:24:46+08:00",
+  "batch_id": "source-audited-batch-164-question-alignment-remediation-local-first",
+  "status": "passed_local_validation_git_handoff_ready",
+  "generated_at": "2026-05-14T20:16:30+08:00",
   "repo": "/Users/philiplewis/slatecamp",
   "branch": "3dlab-gray-viewport-bg",
-  "baseline": {
-    "latest_accepted_batch": 163,
-    "latest_accepted_commit": "4b9a17e3d chore(content): accept source-audited batch 163",
-    "evidence": "git log -n 20 and Batch 163 accepted artifacts show Batch 163 is the latest accepted source-audited content batch."
-  },
-  "source_policy": "local_first_only_no_supabase_no_deploy_no_production_db_no_main_merge_no_force_push_no_stage_no_commit_by_batch_worker",
-  "selected_clusters": [],
-  "entries": [],
-  "article_count": 0,
-  "linked_question_count": 0,
-  "question_edit_count": 0,
-  "answer_key_changes": 0,
-  "selected_blockers": 0,
-  "closure_reason": "Batch 160 was the terminal residual closure with eight blocked clusters; accepted Batches 161, 162, and 163 consumed all eight with zero selected blockers. No remaining eligible source-auditable residual cluster was identified for Batch 164.",
-  "batch160_blocked_clusters": [
+  "baseline_head_before_worker": "abf4b153a766db1e31be604d78eedebc8a9a3b1a",
+  "prior_zero_content_closure_superseded": true,
+  "prior_audit_path": ".ai/03_plans/final-second-audit/rolling-readonly-swarm/opencode-kimi-batches-161-163-nscp-pedagogy-depth-audit.md",
+  "source_policy": "local_first_only_no_supabase_no_deploy_no_db_no_main_merge_no_force_push_no_stage_no_commit_by_batch_worker",
+  "selected_clusters": [
     "lea-strc-004-02",
     "lea-strc-007-03",
     "lea-strc-007-05",
     "lea-strc-012-01",
-    "lea-util-004-05",
-    "lea-util-004-08",
     "lea-strc-009-01",
-    "lea-strc-009-02"
+    "lea-strc-009-02",
+    "lea-util-004-05",
+    "lea-util-004-08"
   ],
-  "consumed_residuals_from_batches_161_to_163": [
+  "entries": [
     {
-      "batch": 161,
       "cluster": "lea-strc-004-02",
-      "linked_questions": 10,
-      "question_edits": 10,
+      "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+      "slug": "lea-strc-004-02-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+      "action": "Reconciled question labels to NSCP 2015 Zone 2 / Zone 4 terminology.",
+      "anchors": [
+        "page-0240.md:16-26 Section 208.4.4.1 and Table 208-3"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:efc63c690a97a4df357cdeac7205c161d8efbc327bbb6f03c00ca03780468286",
-      "locator_summary": "Batch 161 report anchors NSCP page-0240.md lines 16-26 for Section 208.4.4.1 and Table 208-3."
+      "source_evidence_sha256": "sha256:2f54d23e5ecdebc3e13c5e5a0c90ce06804527e0fa70ed39fbd52668dabbd688",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/09f7ddea-f3f3-430e-99b0-42814f68e442.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/44451fd7-4e96-4176-a756-f13c6a87b1f8.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/7f1e7259-26ba-4411-b27c-46d5a4b319eb.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/89d46074-1673-472b-a0d9-b6b7eb2d41ca.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/9be09de7-ea4e-4128-9fb3-0267bb7997e9.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/b1599e60-b278-42b4-8f43-002a5f7df349.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/d4d01df7-df76-464c-9424-b1d99104d2a5.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/da6f9fdd-e385-467b-98d6-0d56fe57159a.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/efe5debd-0e8a-49cf-b666-715236dfccc0.json",
+        ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/ff3dd962-75e0-4e37-a01e-58001e23d407.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/09f7ddea-f3f3-430e-99b0-42814f68e442.json",
+          "sha256": "sha256:bf06095d547548f14a6b279a38a874367bb15782ace048c6c831c98b0a9ea28d"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/44451fd7-4e96-4176-a756-f13c6a87b1f8.json",
+          "sha256": "sha256:c59d9238083bb574ccade1af05c6ff532ba00cab96ae5d69d454bf5ab9aefd71"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/7f1e7259-26ba-4411-b27c-46d5a4b319eb.json",
+          "sha256": "sha256:77860ec7bb36547386d35bd50ece8b7baee2feaa77608419a0f55bbb4f4b9df7"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/89d46074-1673-472b-a0d9-b6b7eb2d41ca.json",
+          "sha256": "sha256:566c02fd20247af97f19922114e524537104602994cab6e54ca32c42e0fc2ce3"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/9be09de7-ea4e-4128-9fb3-0267bb7997e9.json",
+          "sha256": "sha256:81e32b53c4147ee0756ed20a66f54e2bb733ca7267489cd12e418989c57e38ee"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/b1599e60-b278-42b4-8f43-002a5f7df349.json",
+          "sha256": "sha256:a4d396a5dce9a074e0bcb30925965242308d6f88e4990ad460cf5b41ca8f28a5"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/d4d01df7-df76-464c-9424-b1d99104d2a5.json",
+          "sha256": "sha256:a6f37353a175c412457e1b446cc26d68ce0a5d0a2f5b8e38912d3076d8de7f71"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/da6f9fdd-e385-467b-98d6-0d56fe57159a.json",
+          "sha256": "sha256:6e7170f4a5134599b2d19552c6c2e9a1e05a1e77ee05d2a952131829ec6a00be"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/efe5debd-0e8a-49cf-b666-715236dfccc0.json",
+          "sha256": "sha256:91244b560aafec695eda460a5a278d8c65b724fca21ef87f710c7b027325a29d"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/ff3dd962-75e0-4e37-a01e-58001e23d407.json",
+          "sha256": "sha256:65077dbc4139423805688b49f69e1bdb4047ff340a79ecf24e75d3c4609b395e"
+        }
+      ]
     },
     {
-      "batch": 161,
       "cluster": "lea-strc-007-03",
-      "linked_questions": 10,
-      "question_edits": 10,
+      "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "slug": "lea-strc-007-03-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+      "action": "Replaced minimum-thickness-ratio prompts with Section 424 serviceability and time-dependent deflection questions.",
+      "anchors": [
+        "page-0482.md:7-89 Section 424.1, 424.2, Table 424.2.2",
+        "page-0483.md:36-68 Table 424.2.4.1.3"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:9edc7522e50535204a1447cc696e27489d53b047a7755ab25e0930a9a55e66df",
-      "locator_summary": "Batch 161 report anchors NSCP page-0482.md lines 7-89 and page-0483.md lines 36-68 for Section 424 and deflection tables."
+      "source_evidence_sha256": "sha256:a0e7a76401577f38c5b42aa58512c63cbad3b2ae1b5f1e10304073998abb542e",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/0ec1aafb-068f-4811-914d-f028558b6227.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/425007a6-69a2-4550-b17a-0e6e188d3bd6.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/68e4364f-84b2-4396-8a29-541ff0147809.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/7ac3ba8b-5381-4299-ab78-4161de86e9b4.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/94abda41-a060-4bbe-943a-2d981037bf9e.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/994be8d3-da40-4bef-adde-fa327cfe6cd1.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d37a4ca3-16c9-415f-bfaf-4e22292d6998.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d7192cdc-b9bb-4e30-b920-43d70262b701.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d80bfbfb-532b-4cbe-83dd-742dd4e66ac3.json",
+        ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/f88b1cee-f81c-4809-b056-b2ab90d425e9.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/0ec1aafb-068f-4811-914d-f028558b6227.json",
+          "sha256": "sha256:b981fb28fb8f9edc96f7318562925b23773b559a46b69747c5fb9fdbc2829d24"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/425007a6-69a2-4550-b17a-0e6e188d3bd6.json",
+          "sha256": "sha256:0cce795fe7773aed8cf61e59a27269e6d13dfe562c0cad7946a8af0043baf810"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/68e4364f-84b2-4396-8a29-541ff0147809.json",
+          "sha256": "sha256:6a7e98d0d67024e8f4679239cbee79fc7a040c69bc585ef51c8fcd363edd7a00"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/7ac3ba8b-5381-4299-ab78-4161de86e9b4.json",
+          "sha256": "sha256:5aae20b5382390db93e73a16831cc5b0cc9417720fd829e5deb91310089d4dc8"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/94abda41-a060-4bbe-943a-2d981037bf9e.json",
+          "sha256": "sha256:e7b6e95e662a031eb24a18503501fac9fa90074b6879009a5703bdc026435ebc"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/994be8d3-da40-4bef-adde-fa327cfe6cd1.json",
+          "sha256": "sha256:ae8b8cae7c84503442531840f1ce366ab6e38ae9e8177b116171c27f3461951c"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d37a4ca3-16c9-415f-bfaf-4e22292d6998.json",
+          "sha256": "sha256:db0827a47085e40dff0d5229d90e0c818f41c31bd48e72ed28bf9678bdab945d"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d7192cdc-b9bb-4e30-b920-43d70262b701.json",
+          "sha256": "sha256:3b5676ae9aee2fd5d635e5f4dab2b962def86ec07541ba6762d7b1f15d73bdf2"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d80bfbfb-532b-4cbe-83dd-742dd4e66ac3.json",
+          "sha256": "sha256:9cea74e63d34d94e8eb937cbad39eebc041da1126ff5d6bb45e2a7e72bc8755c"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/f88b1cee-f81c-4809-b056-b2ab90d425e9.json",
+          "sha256": "sha256:7d479b4bd5292c9543ebfc8ae71cef9b5fc36eee07bd5164cbed75cd6da5f3be"
+        }
+      ]
     },
     {
-      "batch": 161,
       "cluster": "lea-strc-007-05",
-      "linked_questions": 10,
-      "question_edits": 10,
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "slug": "lea-strc-007-05-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "action": "Rewrote embedment prompts to Sections 420.7 and 426.8 and corrected cover to 40 mm exposed / 20 mm protected.",
+      "anchors": [
+        "page-0463.md:60-81 Section 420.7",
+        "page-0508.md:3-27 Section 426.8 continuation"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:f08e1503c7af71c7d444e98b301469cc2d50d51699cca5e80a892e09f54d18fd",
-      "locator_summary": "Batch 161 report anchors NSCP page-0463.md lines 60-81 and page-0508.md lines 3-27 for embedments and conduit constraints."
+      "source_evidence_sha256": "sha256:b01b951a4c38049f7a951b66729336da0f4e7c4f1d2a9bfe3f0245987aa25c8f",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/0219dc35-4e33-4ce0-b077-c008de043af6.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/02cea262-5a75-4808-86e3-051379a503c3.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/09117f07-7332-47ae-94e9-75f9effee9f2.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/0d8debcf-c39f-428d-a756-cde40a1b307a.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/6c765e0f-401b-4fa7-a331-0d6952b16166.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/99438c76-e9fc-4436-8ecf-208de1f1d5e1.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/a7ddfea1-6c8b-4cba-967e-f0662ac042a9.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/b38842a0-af75-4746-88ed-282a67f96db1.json",
+        ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/e080685f-fe5e-42bf-86e1-5cbaa5663de9.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/0219dc35-4e33-4ce0-b077-c008de043af6.json",
+          "sha256": "sha256:7e4eb5b8fd90861757c9981e22192ce290d4e694e8183709c451c3361d6828b6"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/02cea262-5a75-4808-86e3-051379a503c3.json",
+          "sha256": "sha256:bcf7f5e78e22308ffab20a2e6cec3640c6a8ffea64d2c06571c3082a130b0e2a"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/09117f07-7332-47ae-94e9-75f9effee9f2.json",
+          "sha256": "sha256:019b221e115622644bf176d46d2b50346593cfe12bf371a0bb16f009f5c8b03c"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/0d8debcf-c39f-428d-a756-cde40a1b307a.json",
+          "sha256": "sha256:8fee7452f02673617f9c2f149b088f68e3380daa86854c91af8cf71b1c2d7651"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/6c765e0f-401b-4fa7-a331-0d6952b16166.json",
+          "sha256": "sha256:2e45588a9f7036c641bb5f4a99ef339d01f3105a60a69e634acb9f5b32140374"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7.json",
+          "sha256": "sha256:8c08a94e2d6fb161903fc811b041e32087c2601e61bdda2e5a2aa4fdb862410f"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/99438c76-e9fc-4436-8ecf-208de1f1d5e1.json",
+          "sha256": "sha256:323646e0c974989cb195af86ab12425ff1393d060330fcd70a490b95ef950708"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/a7ddfea1-6c8b-4cba-967e-f0662ac042a9.json",
+          "sha256": "sha256:683296e7cd3fed47276ae09e13af31de87209f688818b6bb7fc2ff0fc435f3bc"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/b38842a0-af75-4746-88ed-282a67f96db1.json",
+          "sha256": "sha256:e6298c4f7a7cc38feee79bdd4d2f55219d8a9ae812c0fdc87a6f224dcf6e862f"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/e080685f-fe5e-42bf-86e1-5cbaa5663de9.json",
+          "sha256": "sha256:7306a8fc17191c4ca5238c1c44e1e06bb999a6de511b6e596cff5e672cbb31a7"
+        }
+      ]
     },
     {
-      "batch": 161,
       "cluster": "lea-strc-012-01",
-      "linked_questions": 10,
-      "question_edits": 10,
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "slug": "lea-strc-012-01-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+      "action": "Replaced mixed-code citations and probability mismatch with checked NSCP 2015 wind anchors.",
+      "anchors": [
+        "page-0060.md:21-82 Section 207 definitions",
+        "page-0080.md:37-81 basic wind speed",
+        "page-0092.md:5-13 probability note",
+        "page-0095.md:49-79 exposure categories"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:b4768c202e8a5d3dd98e112d3daffd6d4b0ec92bcbd3af74264bedbb66f69b3b",
-      "locator_summary": "Batch 161 report anchors NSCP page-0060.md, page-0080.md, page-0081.md, page-0092.md, page-0095.md, and page-0121.md for wind definitions and procedure context."
+      "source_evidence_sha256": "sha256:f446748308176a226319df1233653c9148e7dea378814582a692ad066e8e1cde",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/1dba5961-c1da-413b-82fe-fab5c4fc41fe.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/1f1f7b09-f4f6-4de1-83b4-65859acf050d.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/56606db8-efb9-411c-b64a-49124c5a3756.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/6500b2df-2855-4858-8d76-465959e042c7.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/662044b0-dc1e-437b-90c3-a62e6366324a.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/853c8d7f-7eb2-4c74-bf58-7b0f81ab978e.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/995484a4-d309-4bcf-85d9-73e0ecd04f1e.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/a41a4a87-5b33-474c-8365-1e60d2ee225b.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/c13d8387-d38a-47f1-99c3-42ca182f2081.json",
+        ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/eef31c78-687c-49cf-9d55-912d2a33df7a.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/1dba5961-c1da-413b-82fe-fab5c4fc41fe.json",
+          "sha256": "sha256:c62ac90d8b018e254dd446a0e03f9585225f70608542f75f75476db34c9b2002"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/1f1f7b09-f4f6-4de1-83b4-65859acf050d.json",
+          "sha256": "sha256:5657c6ce251c53b5c5e76961d71f5d46d1e2928bcbc63e1a6fecc518272ce403"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/56606db8-efb9-411c-b64a-49124c5a3756.json",
+          "sha256": "sha256:502ca91a1d6067564e2513ba0f39e66f6a164bc4689b676d50792df5ed720556"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/6500b2df-2855-4858-8d76-465959e042c7.json",
+          "sha256": "sha256:ff8c5deac8c4c8c47e7f2cac6ce7394beba047584b65559cd0d45b99edb7d0fe"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/662044b0-dc1e-437b-90c3-a62e6366324a.json",
+          "sha256": "sha256:c24b8f4ed0fb4d2dad9d386b834331206eeb0138b11175297b54ab69461b34fa"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/853c8d7f-7eb2-4c74-bf58-7b0f81ab978e.json",
+          "sha256": "sha256:079c1882f85dfd17f523b375ccafdd4eac5a950e42571b7064088871755e7591"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/995484a4-d309-4bcf-85d9-73e0ecd04f1e.json",
+          "sha256": "sha256:945a6d65fb8aeba0efe76a9bb34853505e1f786cb198bc29f69dd9e8f500edf6"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/a41a4a87-5b33-474c-8365-1e60d2ee225b.json",
+          "sha256": "sha256:2984e6e384c8bf8b11b3cb55941a4c99bc63c7787bfde31d0ca4a4276ea9031b"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/c13d8387-d38a-47f1-99c3-42ca182f2081.json",
+          "sha256": "sha256:b0fd953acab158297057d5a016830babc0b066ebb722985b1fd48b1c264ec7e5"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/eef31c78-687c-49cf-9d55-912d2a33df7a.json",
+          "sha256": "sha256:103000311d0313ea7bef93ed64d0187d122a9edf7588c567f03ac6e0aecee86a"
+        }
+      ]
     },
     {
-      "batch": 161,
       "cluster": "lea-strc-009-01",
-      "linked_questions": 10,
-      "question_edits": 10,
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "slug": "lea-strc-009-01-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "action": "Rewrote species-durability prompts to Section 605 clearances, ventilation, treatment, separation, and moisture thresholds.",
+      "anchors": [
+        "page-0870.md:13-113 Section 605.1-605.7",
+        "page-0871.md:3-16 and 35-42 Section 605.8 and 605.10"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:5220c313c67f518e7b64775de7a098e688b8083877999340fd5551a967442972",
-      "locator_summary": "Batch 161 report anchors NSCP page-0870.md lines 13-113 and page-0871.md lines 3-16 and 35-42 for timber decay and termite protection."
+      "source_evidence_sha256": "sha256:50ecd312180cbf1245ea137c437b9f6dba52962fb78e2915f49c68a829f6c803",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/136a9f76-4115-4c68-ac4a-aa015e09f5aa.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/18988e39-3d86-4bf3-8c1a-a3647ecc8366.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/4864b616-2862-4dad-be1f-8b73baa8e983.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/60a71679-a95f-4b65-8ddd-36e05a2c0ed1.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/96d4546c-eab8-4ac1-ac61-7ccfc81a797f.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/aabd6070-7a57-439b-b95e-64c35c9c83fa.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/c5a6da5f-9d82-4137-a1ed-73a67cbc48b4.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/e4a4c9d2-4019-4e22-8390-d377bf415d73.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/f24e257f-ca78-467f-8719-2d28fe0d3722.json",
+        ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/f8fd0b57-119f-4584-a713-7cd5e2e340d2.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/136a9f76-4115-4c68-ac4a-aa015e09f5aa.json",
+          "sha256": "sha256:d1c9e78fb5d0f814e70338555d8838a64eb204b3af4a92b14ee946cad3ed8d0d"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/18988e39-3d86-4bf3-8c1a-a3647ecc8366.json",
+          "sha256": "sha256:9610a743b2e58d0860373076bad06808b14d5c18318220a2c7f664abefd51b01"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/4864b616-2862-4dad-be1f-8b73baa8e983.json",
+          "sha256": "sha256:8d0ae98cc57e0aad85bf5380a8603b1ec121e0baaac2c37874fd7c0f1042e8d4"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/60a71679-a95f-4b65-8ddd-36e05a2c0ed1.json",
+          "sha256": "sha256:dfff05d703deacb63b061cd18fe73172526408b3f7d2b1570622e32e78467d40"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/96d4546c-eab8-4ac1-ac61-7ccfc81a797f.json",
+          "sha256": "sha256:a599c97a060c7fa95519f0c0dbf6f7a3cd2f0b364ec6f84e895883604988fa39"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/aabd6070-7a57-439b-b95e-64c35c9c83fa.json",
+          "sha256": "sha256:425ec93a2ed3613dbefbc7c75168528816dc6704576ec4a3ced627cf68b21668"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/c5a6da5f-9d82-4137-a1ed-73a67cbc48b4.json",
+          "sha256": "sha256:30737cca92ee2fefe13045dd4edd66f17a5045519ae8f22e0601818dc6cd15f6"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/e4a4c9d2-4019-4e22-8390-d377bf415d73.json",
+          "sha256": "sha256:97c483d2641fbe35e9cd7f9caea38e6fe97007a0e11f98b235665f8b85ccf8fe"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/f24e257f-ca78-467f-8719-2d28fe0d3722.json",
+          "sha256": "sha256:f1de7c4ad5da1599d60ad9353b50689e85ceaeda291f789f088944e3ef722cbe"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/f8fd0b57-119f-4584-a713-7cd5e2e340d2.json",
+          "sha256": "sha256:19e14d0a4fbed98506a758f448095f5a28d395b90f72ffcf924e8409482d6f2f"
+        }
+      ]
     },
     {
-      "batch": 162,
       "cluster": "lea-strc-009-02",
-      "linked_questions": 10,
-      "question_edits": 10,
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "slug": "lea-strc-009-02-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "action": "Removed off-anchor product-board and dimension-conversion prompts, corrected Apitong to Group III, and aligned to Table 615.2-1 / Section 622.",
+      "anchors": [
+        "page-0889.md:5-65 Table 615.2-1",
+        "page-0943.md:51-96 Section 622"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:1c31e8f5a76c19b07fbba45a35db7c8f51b6bc1da5a5be62be9c0271478ae999",
-      "locator_summary": "Batch 162 report anchors NSCP page-0889.md lines 5-65 and page-0943.md lines 51-96 for timber stress groups and machine-graded lumber."
+      "source_evidence_sha256": "sha256:8e2612e03d61e6998f3e0f9ff761b30054caf180e7e2ac2e2776e16cb04c04eb",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/0c2afd87-7afa-49e6-8974-3a2d224f1af2.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/34def5c9-1623-4322-bd32-47636959a406.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/37b399b3-f04c-4d24-a3bd-7fe1fd2bc186.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/9640e7ab-7532-4a85-b54e-683ffb2b9466.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/a493ef1b-723a-4599-a71e-1fb1acad9228.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/a767d035-653c-4782-af2b-8d67e8796978.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/c503eb0a-79f5-4041-baa6-6ee79e9d1b7c.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/f03689fe-68c2-40c5-87f3-33d5b4a1397b.json",
+        ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/f7809040-5f36-445c-84b7-9a1dfa8bd4c8.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/0c2afd87-7afa-49e6-8974-3a2d224f1af2.json",
+          "sha256": "sha256:52506903581ed026808e5900d7dacdca3f495c82c740690aef63e5c44001e844"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/34def5c9-1623-4322-bd32-47636959a406.json",
+          "sha256": "sha256:14994c6b608f52c134be8c03313eb0e7e24f33c152133d2047f607c6972f9c44"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/37b399b3-f04c-4d24-a3bd-7fe1fd2bc186.json",
+          "sha256": "sha256:76a23726c769d32d85d261a4f5d69421cfa46a4df5690a3298c82f36ed86fc14"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/9640e7ab-7532-4a85-b54e-683ffb2b9466.json",
+          "sha256": "sha256:0825dac5b3f209ced156c1592f7c801d3230d2d8e0ffba50e1173617f2fc4110"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/a493ef1b-723a-4599-a71e-1fb1acad9228.json",
+          "sha256": "sha256:0294a5c64fdfe07bc84b1bc03b3d7e71f7ad2ca2b8eee5936ac2ee0348af3f83"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/a767d035-653c-4782-af2b-8d67e8796978.json",
+          "sha256": "sha256:4f6b2da567365b287f12b9cb1d280fdd4a5a8d4c753991248ba1f0e04d66cd35"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/c503eb0a-79f5-4041-baa6-6ee79e9d1b7c.json",
+          "sha256": "sha256:f8202c8241a4f2abfe8121a4640ed2740496b33502d27e4cd96422f38f392fd2"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b.json",
+          "sha256": "sha256:62d4e4dac85c2e6c5dc98da679772f53b7e851f45bf648eda99de5adb35c9416"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/f03689fe-68c2-40c5-87f3-33d5b4a1397b.json",
+          "sha256": "sha256:150d5d68f7eeef61f75ab1d059e5e65cb3c79265c0df47698abf492a73e992b4"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/f7809040-5f36-445c-84b7-9a1dfa8bd4c8.json",
+          "sha256": "sha256:53a76b8cd5dad4165e258f8618463214750196e2e8f96ef243477bb9e2d99714"
+        }
+      ]
     },
     {
-      "batch": 163,
       "cluster": "lea-util-004-05",
-      "linked_questions": 15,
-      "question_edits": 15,
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "folder": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "action": "Rewrote all 15 questions to checked NSCP nonstructural equipment and flood utility anchors.",
+      "anchors": [
+        "page-0237.md:61-96 Table 208-1",
+        "page-0283.md:29-99 Section 208.9.1-208.9.2",
+        "page-0284.md:5-18 Section 208.9.3",
+        "page-0285.md and page-0286.md Table 208-13",
+        "page-0287.md:20-136 equipment notes",
+        "page-0290.md:64-115 Section 211.1 flood boundary"
+      ],
+      "linked_question_count": 15,
+      "question_edit_count": 15,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:eaa2ec425515a28bd25ef0b058e5988d8452e3a70322979f8c31d3fc63661e8a",
-      "locator_summary": "Batch 163 report anchors checked NSCP pages page-0237.md, page-0240.md, page-0259.md, page-0283.md through page-0287.md, and page-0290.md for nonstructural equipment restraint and flood utility boundaries."
+      "source_evidence_sha256": "sha256:5df39c03544605fd9d82825d7c5671a2c5d45581d0ff1a906048700eccf5e5ed",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/00f76274-9125-4e6c-8eae-473634d9511b.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0863616e-8994-4ed6-91c7-e3b5684ed4a5.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/16abc24a-8747-48b9-96f6-93da3d0b017b.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/27e3b467-5bed-4061-95f6-c8d7a8a85863.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/2b17803b-3aa6-4188-bbe2-8d88091f712e.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/31f01fa7-d997-4a9f-aff6-5762d82be418.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/7e3698a4-7da8-43e3-ad9d-1d9ef857020c.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/961a0025-7d66-4687-a931-e9a1ac59e619.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/9c6a6587-1493-430c-9ae9-cad501989ed5.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/ad388f32-8ec2-45d8-8a4f-1726da564759.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b495ee57-be6f-4e97-a4bf-39ee822e7aa0.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b683dad1-83ca-4973-a6d2-dd80480182af.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/c7b1786e-3a56-45f4-b7c9-a2eae78515a4.json",
+        ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/e89766e7-b8ff-4981-8d2c-e2a2cf599820.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/00f76274-9125-4e6c-8eae-473634d9511b.json",
+          "sha256": "sha256:f07d32ea8ce3dc1c4634699d70e799b5304e9f8f0b149e1c1e3e60abcb045f9d"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0863616e-8994-4ed6-91c7-e3b5684ed4a5.json",
+          "sha256": "sha256:09d9ff9c9e618fba544c433175a6e0de82d7d33ca3f7fe696c93b9a4bdb2aa16"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9.json",
+          "sha256": "sha256:bfebdada67782b740a16267412fe58dd510caadf6645704b30b529ab9a5c593d"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/16abc24a-8747-48b9-96f6-93da3d0b017b.json",
+          "sha256": "sha256:9fce99fa716078f0941ac2c29150ebfb4b75f874263e2cf0c60ce0e9d7afec45"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/27e3b467-5bed-4061-95f6-c8d7a8a85863.json",
+          "sha256": "sha256:3e8b1afd39839c61d0c7f464ab99a8929fa9fb02e9eebdc922949aab2b1e5ed1"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/2b17803b-3aa6-4188-bbe2-8d88091f712e.json",
+          "sha256": "sha256:4e8ee9fba26e0ab0f8bc8fa8f441f51876dff96387438ee0f260c3e412543724"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/31f01fa7-d997-4a9f-aff6-5762d82be418.json",
+          "sha256": "sha256:c5037bf18479151f30e7f554621d52a3b104d99447b9a8f3c1dbd0a57613a24f"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/7e3698a4-7da8-43e3-ad9d-1d9ef857020c.json",
+          "sha256": "sha256:687381a5903eae790b7ffa2d8619595c0ad3c84b434b2f52d709c2685643d49c"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/961a0025-7d66-4687-a931-e9a1ac59e619.json",
+          "sha256": "sha256:7c09997922aba2017be446174301dc43dd3f4a0554d0ef69a2154d5c15771d40"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/9c6a6587-1493-430c-9ae9-cad501989ed5.json",
+          "sha256": "sha256:2423b1bc69c734a7a136b0439edfc8ffb518647609e2fa021983452a207d2504"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/ad388f32-8ec2-45d8-8a4f-1726da564759.json",
+          "sha256": "sha256:46372de4912c0d39f7afe38ef75523132e96f4d5322c166b886fcf1f82574643"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b495ee57-be6f-4e97-a4bf-39ee822e7aa0.json",
+          "sha256": "sha256:3e18fc02703f2a8d6513c87b9022c35d5002ab2b3853b3c91b87051f8d1ec691"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b683dad1-83ca-4973-a6d2-dd80480182af.json",
+          "sha256": "sha256:ef2b4a1cc1e1274e90f6d281ef428a1e093833e6877dbb2bd219c99ca54714a6"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/c7b1786e-3a56-45f4-b7c9-a2eae78515a4.json",
+          "sha256": "sha256:b73234220dc865dbd3aa41d1fc28c0cfe1f63e40daad31ff8ef123031b11b834"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/e89766e7-b8ff-4981-8d2c-e2a2cf599820.json",
+          "sha256": "sha256:8512a1b5f30d88b65f90538ee100dd8ce06d376470ea4bd9576eb125c69554a9"
+        }
+      ]
     },
     {
-      "batch": 163,
       "cluster": "lea-util-004-08",
-      "linked_questions": 15,
-      "question_edits": 15,
+      "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+      "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "folder": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+      "action": "Kept aligned Ip and Zone 4 items and rewrote the remaining questions to checked NSCP Section 208.9 anchors.",
+      "anchors": [
+        "page-0237.md:61-96 Table 208-1",
+        "page-0240.md:16-26 Table 208-3",
+        "page-0283.md:29-99 Section 208.9.1-208.9.2",
+        "page-0285.md through page-0287.md Table 208-13 and equipment notes"
+      ],
+      "linked_question_count": 15,
+      "question_edit_count": 15,
       "answer_key_changes": 0,
-      "blockers": 0,
+      "source_audit_status": "PASS",
+      "question_alignment_status": "PASS_REMEDIATED",
       "source_evidence_path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/source-audit-evidence.json",
-      "source_evidence_sha256": "sha256:b4812c65222134278ac7edcae73b88228df1244ff349fbe5e99f37378c4f6c42",
-      "locator_summary": "Batch 163 report anchors checked NSCP pages page-0237.md, page-0240.md, page-0259.md, page-0283.md through page-0287.md, and page-0290.md for seismic bracing workflow and vibration-isolated MEPF equipment."
+      "source_evidence_sha256": "sha256:c72037ce3cc04bafd95077ad549a5ee830591d174343deef62ce0fdbe6e4bcff",
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/02b11a14-0f2e-41ee-82cf-2d83c09af0e2.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/05cd5a06-3183-4848-9b1f-f8cb6a36f581.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/1c85cd70-7225-435d-ba16-00c211e62b29.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/21b3a069-8ad6-402b-9423-608071bdf1e6.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/3f4dce01-3e79-4f74-9005-118a14543cfe.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/488b3c49-4af9-4d33-a76e-af7501a57702.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/5c74d1f9-f1fb-48ab-95f2-6be2ee361d52.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/7f510800-98bb-49e7-a123-9d71257fca12.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/a72c9aa8-a967-4b0f-8180-a9b3558261c6.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/aa3e5e12-6f4d-460e-b251-da273a19e59c.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/b3958f33-180d-4bf5-b1fb-dc1c6c02857e.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/c1ed334c-bcb3-4322-b56a-a6add8b96b84.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/dc6455d2-06ab-438d-835d-01d050258c3f.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e5179a2a-67ba-4c10-8218-82d980349bfb.json",
+        ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e9538c8d-119a-4361-ac95-53d7a8747bc9.json"
+      ],
+      "question_edit_hashes": [
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/02b11a14-0f2e-41ee-82cf-2d83c09af0e2.json",
+          "sha256": "sha256:f659a6313e3b4ba1e4f55e3137533d58a56bb088fc7b12286d80c2cb612d2704"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/05cd5a06-3183-4848-9b1f-f8cb6a36f581.json",
+          "sha256": "sha256:4ea0c45e6c14d2b1a8b141311147f314c7955413c8cd291f1cd2e9e8db3692e3"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/1c85cd70-7225-435d-ba16-00c211e62b29.json",
+          "sha256": "sha256:ea2136896b3def4a50178a30608f520a21d0b926b87f0fe738b975c9bf4b9830"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/21b3a069-8ad6-402b-9423-608071bdf1e6.json",
+          "sha256": "sha256:8f8c2c68235380760a499eb8b9856194591d816cc6485d0df3de8ad527d54b10"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/3f4dce01-3e79-4f74-9005-118a14543cfe.json",
+          "sha256": "sha256:f0e5cd5a61d7c9e577a6e9f81fd456ee4392a05679701305752371847490bb6f"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/488b3c49-4af9-4d33-a76e-af7501a57702.json",
+          "sha256": "sha256:4b90ca0ed322e0280e295bd31beb1057cb20092ac9e3bf690bc30df5eabde340"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/5c74d1f9-f1fb-48ab-95f2-6be2ee361d52.json",
+          "sha256": "sha256:295820cba983b2e52114b77b938adf39d11d313886672362cc1febb37b5cfb27"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/7f510800-98bb-49e7-a123-9d71257fca12.json",
+          "sha256": "sha256:7a252dcb3e38e97123bfb5ef59ecd75881d5ea1543e1be622525da731d23ed11"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/a72c9aa8-a967-4b0f-8180-a9b3558261c6.json",
+          "sha256": "sha256:57caf4c4448df9bf3b787f1bc83b8aeff94ff6924b0f789a80581a4e1e4cc44a"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/aa3e5e12-6f4d-460e-b251-da273a19e59c.json",
+          "sha256": "sha256:054da40972038a0e9897cfda27ce6d97d48d6f4204c657c67d7e04b3652fccce"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/b3958f33-180d-4bf5-b1fb-dc1c6c02857e.json",
+          "sha256": "sha256:0be62c37583abd371cf8af9ebf297a25b44d19eeead489720a5396f135582f3a"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/c1ed334c-bcb3-4322-b56a-a6add8b96b84.json",
+          "sha256": "sha256:30ea4e0cfec77f2c4f20d03303efd146887ed8b5ce146e44e3eb4441b6d8612c"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/dc6455d2-06ab-438d-835d-01d050258c3f.json",
+          "sha256": "sha256:d37b0ce09c68fbbe50a8384e829257399e2cd087461e64dd06c55fa5df57e50e"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e5179a2a-67ba-4c10-8218-82d980349bfb.json",
+          "sha256": "sha256:7d095c4ee2f25b091fc00a727f5c39508b1a25e1bff4216fc832770005655925"
+        },
+        {
+          "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e9538c8d-119a-4361-ac95-53d7a8747bc9.json",
+          "sha256": "sha256:9e46049b3fb6ae178ff9013168b0f33ee3c4aac2234a69fe62c6b0de78d37c45"
+        }
+      ]
     }
   ],
-  "missing_from_accepted_batches_161_to_163": [],
-  "remaining_blocked_clusters": [],
-  "unselected_clusters": [],
+  "article_count": 8,
+  "linked_question_count": 90,
+  "question_edit_count": 90,
+  "answer_key_changes": 0,
+  "article_body_edits": 0,
+  "source_evidence_edits": 8,
+  "question_edit_files_updated": 90,
+  "blockers": [],
+  "warnings": [
+    "Full export-root validate is not used because shared .ai/content-audit-export/sync-state.json and aggregate validation files were already dirty and stale for these article original hashes.",
+    "Scoped validate passed with a temporary current-hash sync-state under .ai/content-audit-export; the temporary root was removed."
+  ],
   "validation_claims": {
-    "latest_accepted_state": "pass_batch_163_at_4b9a17e3d",
-    "residual_reconciliation": "pass_all_8_batch_160_blockers_consumed_by_batches_161_to_163",
-    "selected_article_count": "pass_0",
-    "question_edit_count": "pass_0",
-    "answer_key_changes": "pass_0",
-    "selected_blockers": "pass_0",
-    "compose_strict": "not_applicable_no_selected_articles",
-    "diff_strict": "not_applicable_no_selected_articles",
-    "official_scoped_validate": "not_applicable_no_selected_articles",
-    "linked_question_question_edit_parity": "pass_0_to_0",
-    "source_evidence_hashes_and_locators": "pass_prior_accepted_evidence_hashes_recorded",
-    "json_parse": "pass",
-    "placeholder_internal_note_source_gap_scan": "pass",
-    "git_diff_check": "pass"
+    "compose_dry_run": "pass_8_of_8_blockers_0",
+    "diff_dry_run": "pass_8_of_8_blockers_0",
+    "scoped_validate": "pass_valid_true_blockers_0_warnings_manifest_and_export_summary_missing_only",
+    "json_parse": "pass_114_initial_files_and_batch_artifacts",
+    "linked_question_question_edit_parity": "pass_90_to_90",
+    "answer_key_change_review": "pass_0_mismatches",
+    "risk_term_scan": "pass_no_off_anchor_terms_from_batches_161_to_163_in_question_edit_proposals",
+    "source_anchor_verification": "pass_checked_ocr_pages_exist_and_required_anchor_lines_reviewed",
+    "scoped_git_diff_check": "pass",
+    "generated_artifact_parse": "pass_100_json_files_in_intended_paths",
+    "unresolved_marker_scan": "pass_no_matches",
+    "source_verification_invariants": "pass_7_tests_244_assertions"
   },
   "intended_paths": [
-    ".ai/content-audit-export/source-audited-article-batch-164-local-first-report.md",
-    ".ai/content-audit-export/source-audited-article-batch-164-local-first-ledger.json",
-    ".ai/content-audit-export/source-audited-article-batch-164-local-first-scoped-checks.json",
-    ".ai/03_plans/batch-164-independent-quality-review.md",
     ".ai/03_plans/batch-164-git-handoff-stage-list.md",
-    ".ai/03_plans/batch-164-git-handoff-stage-paths.txt"
+    ".ai/03_plans/batch-164-git-handoff-stage-paths.txt",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/09f7ddea-f3f3-430e-99b0-42814f68e442.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/44451fd7-4e96-4176-a756-f13c6a87b1f8.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/7f1e7259-26ba-4411-b27c-46d5a4b319eb.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/89d46074-1673-472b-a0d9-b6b7eb2d41ca.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/9be09de7-ea4e-4128-9fb3-0267bb7997e9.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/b1599e60-b278-42b4-8f43-002a5f7df349.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/d4d01df7-df76-464c-9424-b1d99104d2a5.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/da6f9fdd-e385-467b-98d6-0d56fe57159a.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/efe5debd-0e8a-49cf-b666-715236dfccc0.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/question-edits/ff3dd962-75e0-4e37-a01e-58001e23d407.json",
+    ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/0ec1aafb-068f-4811-914d-f028558b6227.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/425007a6-69a2-4550-b17a-0e6e188d3bd6.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/68e4364f-84b2-4396-8a29-541ff0147809.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/7ac3ba8b-5381-4299-ab78-4161de86e9b4.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/94abda41-a060-4bbe-943a-2d981037bf9e.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/994be8d3-da40-4bef-adde-fa327cfe6cd1.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d37a4ca3-16c9-415f-bfaf-4e22292d6998.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d7192cdc-b9bb-4e30-b920-43d70262b701.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/d80bfbfb-532b-4cbe-83dd-742dd4e66ac3.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/question-edits/f88b1cee-f81c-4809-b056-b2ab90d425e9.json",
+    ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/0219dc35-4e33-4ce0-b077-c008de043af6.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/02cea262-5a75-4808-86e3-051379a503c3.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/09117f07-7332-47ae-94e9-75f9effee9f2.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/0d8debcf-c39f-428d-a756-cde40a1b307a.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/6c765e0f-401b-4fa7-a331-0d6952b16166.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/99438c76-e9fc-4436-8ecf-208de1f1d5e1.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/a7ddfea1-6c8b-4cba-967e-f0662ac042a9.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/b38842a0-af75-4746-88ed-282a67f96db1.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/question-edits/e080685f-fe5e-42bf-86e1-5cbaa5663de9.json",
+    ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/136a9f76-4115-4c68-ac4a-aa015e09f5aa.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/18988e39-3d86-4bf3-8c1a-a3647ecc8366.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/4864b616-2862-4dad-be1f-8b73baa8e983.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/60a71679-a95f-4b65-8ddd-36e05a2c0ed1.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/96d4546c-eab8-4ac1-ac61-7ccfc81a797f.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/aabd6070-7a57-439b-b95e-64c35c9c83fa.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/c5a6da5f-9d82-4137-a1ed-73a67cbc48b4.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/e4a4c9d2-4019-4e22-8390-d377bf415d73.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/f24e257f-ca78-467f-8719-2d28fe0d3722.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/question-edits/f8fd0b57-119f-4584-a713-7cd5e2e340d2.json",
+    ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/0c2afd87-7afa-49e6-8974-3a2d224f1af2.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/34def5c9-1623-4322-bd32-47636959a406.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/37b399b3-f04c-4d24-a3bd-7fe1fd2bc186.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/9640e7ab-7532-4a85-b54e-683ffb2b9466.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/a493ef1b-723a-4599-a71e-1fb1acad9228.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/a767d035-653c-4782-af2b-8d67e8796978.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/c503eb0a-79f5-4041-baa6-6ee79e9d1b7c.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/f03689fe-68c2-40c5-87f3-33d5b4a1397b.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/question-edits/f7809040-5f36-445c-84b7-9a1dfa8bd4c8.json",
+    ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/1dba5961-c1da-413b-82fe-fab5c4fc41fe.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/1f1f7b09-f4f6-4de1-83b4-65859acf050d.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/56606db8-efb9-411c-b64a-49124c5a3756.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/6500b2df-2855-4858-8d76-465959e042c7.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/662044b0-dc1e-437b-90c3-a62e6366324a.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/853c8d7f-7eb2-4c74-bf58-7b0f81ab978e.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/995484a4-d309-4bcf-85d9-73e0ecd04f1e.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/a41a4a87-5b33-474c-8365-1e60d2ee225b.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/c13d8387-d38a-47f1-99c3-42ca182f2081.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/question-edits/eef31c78-687c-49cf-9d55-912d2a33df7a.json",
+    ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/00f76274-9125-4e6c-8eae-473634d9511b.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0863616e-8994-4ed6-91c7-e3b5684ed4a5.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/16abc24a-8747-48b9-96f6-93da3d0b017b.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/27e3b467-5bed-4061-95f6-c8d7a8a85863.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/2b17803b-3aa6-4188-bbe2-8d88091f712e.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/31f01fa7-d997-4a9f-aff6-5762d82be418.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/7e3698a4-7da8-43e3-ad9d-1d9ef857020c.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/961a0025-7d66-4687-a931-e9a1ac59e619.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/9c6a6587-1493-430c-9ae9-cad501989ed5.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/ad388f32-8ec2-45d8-8a4f-1726da564759.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b495ee57-be6f-4e97-a4bf-39ee822e7aa0.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/b683dad1-83ca-4973-a6d2-dd80480182af.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/c7b1786e-3a56-45f4-b7c9-a2eae78515a4.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/question-edits/e89766e7-b8ff-4981-8d2c-e2a2cf599820.json",
+    ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/02b11a14-0f2e-41ee-82cf-2d83c09af0e2.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/05cd5a06-3183-4848-9b1f-f8cb6a36f581.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/1c85cd70-7225-435d-ba16-00c211e62b29.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/21b3a069-8ad6-402b-9423-608071bdf1e6.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/3f4dce01-3e79-4f74-9005-118a14543cfe.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/488b3c49-4af9-4d33-a76e-af7501a57702.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/5c74d1f9-f1fb-48ab-95f2-6be2ee361d52.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/7f510800-98bb-49e7-a123-9d71257fca12.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/a72c9aa8-a967-4b0f-8180-a9b3558261c6.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/aa3e5e12-6f4d-460e-b251-da273a19e59c.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/b3958f33-180d-4bf5-b1fb-dc1c6c02857e.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/c1ed334c-bcb3-4322-b56a-a6add8b96b84.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/dc6455d2-06ab-438d-835d-01d050258c3f.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e5179a2a-67ba-4c10-8218-82d980349bfb.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/question-edits/e9538c8d-119a-4361-ac95-53d7a8747bc9.json",
+    ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/source-audit-evidence.json",
+    ".ai/content-audit-export/source-audited-article-batch-164-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-164-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-164-local-first-scoped-checks.json"
   ]
 }

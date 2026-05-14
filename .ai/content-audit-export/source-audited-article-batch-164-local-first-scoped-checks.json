@@ -1,86 +1,93 @@
 {
   "batch": 164,
-  "batch_id": "source-audited-batch-164-local-first-closure",
+  "batch_id": "source-audited-batch-164-question-alignment-remediation-local-first",
   "status": "passed_local_validation_git_handoff_ready",
-  "generated_at": "2026-05-14T18:24:46+08:00",
+  "generated_at": "2026-05-14T20:16:30+08:00",
   "scope": {
-    "selected_articles": [],
-    "selected_article_count": 0,
-    "selected_linked_question_count": 0,
-    "selected_question_edit_count": 0,
-    "answer_key_changes": 0,
-    "article_folder_edits": [],
-    "source_folder_edits": [],
-    "closure_artifacts": [
-      ".ai/content-audit-export/source-audited-article-batch-164-local-first-report.md",
-      ".ai/content-audit-export/source-audited-article-batch-164-local-first-ledger.json",
-      ".ai/content-audit-export/source-audited-article-batch-164-local-first-scoped-checks.json",
-      ".ai/03_plans/batch-164-independent-quality-review.md",
-      ".ai/03_plans/batch-164-git-handoff-stage-list.md",
-      ".ai/03_plans/batch-164-git-handoff-stage-paths.txt"
+    "selected_clusters": [
+      "lea-strc-004-02",
+      "lea-strc-007-03",
+      "lea-strc-007-05",
+      "lea-strc-012-01",
+      "lea-strc-009-01",
+      "lea-strc-009-02",
+      "lea-util-004-05",
+      "lea-util-004-08"
     ],
-    "shared_state_files_touched": []
+    "article_count": 8,
+    "linked_question_count": 90,
+    "question_edit_count": 90,
+    "answer_key_changes": 0,
+    "article_body_edits": 0,
+    "source_evidence_edits": 8,
+    "intended_path_count": 103
   },
   "checks": [
     {
-      "name": "latest_accepted_state",
+      "name": "compose_dry_run",
       "status": "pass",
-      "command": "git log --oneline --decorate -n 20",
-      "evidence": "HEAD is 4b9a17e3d (`chore(content): accept source-audited batch 163`); no later accepted source-audited content batch appears in the local log."
+      "command": "bun run content-audit:compose -- --article <8 ids> --dry-run --strict --overwrite",
+      "evidence": "8/8 compose dry-runs exited 0 with blockers=0."
     },
     {
-      "name": "residual_eligibility_reconciliation",
+      "name": "diff_dry_run",
       "status": "pass",
-      "command": "Node JSON parse and comparison over Batch 160 blocker ledger and Batch 161-163 selected-cluster ledgers",
-      "evidence": "Batch 160 listed eight blocked residual clusters. Accepted Batches 161-163 selected all eight with matching linked-question/question-edit counts and blockers=0. missing_from_accepted_161_163=[]."
+      "command": "bun run content-audit:diff -- --article <8 ids> --dry-run --strict --json",
+      "evidence": "8/8 diff dry-runs exited 0 with blockers=[]."
     },
     {
-      "name": "selected_article_count",
+      "name": "scoped_validate_first_attempt",
+      "status": "blocked_then_retried",
+      "command": "bun run content-audit:validate -- --input /private/tmp/<scoped-root> --dry-run --strict --json",
+      "evidence": "Validator refused to write outside .ai/content-audit-export."
+    },
+    {
+      "name": "scoped_validate_second_attempt",
+      "status": "blocked_then_retried",
+      "command": "bun run content-audit:validate -- --input .ai/content-audit-export/.batch-164-validation-root-* --dry-run --strict --json",
+      "evidence": "Scoped root with copied shared sync-state reached article checks but failed on stale sync-state original_hash mismatches; real sync-state was left untouched."
+    },
+    {
+      "name": "scoped_validate_final",
       "status": "pass",
-      "command": "Batch 164 ledger invariant",
-      "evidence": "selected_clusters=[], article_count=0, linked_question_count=0, question_edit_count=0, answer_key_changes=0, selected_blockers=0."
+      "command": "bun run content-audit:validate -- --input .ai/content-audit-export/.batch-164-validation-root-* --dry-run --strict --json",
+      "evidence": "Final scoped root used current original/candidate hashes in temporary sync-state; valid=true, article_count=8, blockers=0. Warnings were limited to missing manifest.json and export-summary.json in the scoped temp root. Temp root removed."
     },
     {
-      "name": "compose_strict",
-      "status": "not_applicable_no_selected_articles",
-      "command": "bun run content-audit:compose -- --article <id> --dry-run --strict --overwrite",
-      "evidence": "No article bundle was selected or edited in Batch 164, so there is no compose target. This preserves off-limits article folders and shared export state."
-    },
-    {
-      "name": "diff_strict",
-      "status": "not_applicable_no_selected_articles",
-      "command": "bun run content-audit:diff -- --article <id> --dry-run --strict --summary",
-      "evidence": "No article bundle was selected or edited in Batch 164, so there is no diff target."
-    },
-    {
-      "name": "official_scoped_validate",
-      "status": "not_applicable_no_selected_articles",
-      "command": "bun scripts/content-audit/validate-bundles.ts --input <scoped selected-article root> --dry-run --json",
-      "evidence": "No selected article bundle exists. No temporary in-repo validation root was created because that would add non-required shared export churn."
+      "name": "json_parse_initial",
+      "status": "pass",
+      "command": "Node JSON.parse over selected article metadata, linked questions, source evidence, and 90 question edits",
+      "evidence": "json parse ok files=114 before generated Batch 164 artifact parse."
     },
     {
       "name": "linked_question_question_edit_parity",
       "status": "pass",
-      "command": "Batch 164 ledger invariant",
-      "evidence": "0 selected linked questions equals 0 generated question edits; answer-key changes=0."
+      "command": "Node comparison over selected linked-questions.json and question-edits/*.json",
+      "evidence": "90 linked questions, 90 question edits."
     },
     {
-      "name": "source_evidence_hashes_and_locators",
+      "name": "answer_key_change_review",
       "status": "pass",
-      "command": "Node SHA-256 scan over source-audit-evidence.json files for all eight Batch 160 residuals consumed by Batches 161-163",
-      "evidence": "All eight accepted source-evidence paths are present and hashable. Hashes and locator summaries are recorded in the Batch 164 ledger."
+      "command": "Node comparison of correct_option_id, correct_value, and accepted_answers",
+      "evidence": "0 mismatches; answer-key fields preserved."
     },
     {
-      "name": "json_parse",
+      "name": "risk_term_scan",
       "status": "pass",
-      "command": "node -e JSON.parse over Batch 164 JSON artifacts",
-      "evidence": "Batch 164 ledger and scoped-checks JSON parsed successfully."
+      "command": "rg over selected question-edits for Batch 161-163 off-anchor terms",
+      "evidence": "No off-anchor terms remain in proposed question text/options/rationales/support metadata. Incidental Section 605 150 mm and 450 mm values are checked source thresholds, not embedment cover conflicts."
     },
     {
-      "name": "placeholder_internal_note_source_gap_scan",
+      "name": "source_anchor_verification",
       "status": "pass",
-      "command": "marker scan over Batch 164 intended paths for UI placeholders, task placeholders, verification placeholders, internal notes, AI notes, HTML comments, and source-gap labels",
-      "evidence": "No matches in Batch 164 intended artifacts."
+      "command": "nl -ba selected NSCP OCR page markdown files",
+      "evidence": "Reviewed page-0240, page-0482, page-0483, page-0463, page-0508, page-0870, page-0871, page-0889, page-0943, page-0237, page-0283, page-0284, page-0285, page-0286, page-0287, page-0290, page-0060, page-0080, page-0092, and page-0095."
+    },
+    {
+      "name": "unresolved_marker_scan",
+      "status": "pass",
+      "command": "rg over intended paths for unresolved markers",
+      "evidence": "No unresolved marker matches in intended paths."
     },
     {
       "name": "source_verification_invariants",
@@ -89,16 +96,16 @@
       "evidence": "7 pass, 0 fail, 244 expect() calls."
     },
     {
-      "name": "git_diff_whitespace_check",
+      "name": "scoped_git_diff_check",
       "status": "pass",
       "command": "git diff --check -- $(cat .ai/03_plans/batch-164-git-handoff-stage-paths.txt)",
-      "evidence": "Literal scoped git diff --check exited 0. A temporary-index cached diff check was also run for the six untracked intended paths and exited 0 with no whitespace errors."
+      "evidence": "git diff --check over the intended Batch 164 handoff paths exited 0."
     }
   ],
   "blockers": [],
   "warnings": [
-    "Batch 164 intentionally does not update broad shared handoff/coordination docs because the user required only scoped Batch 164 artifacts and shared export state files were already dirty.",
-    "No Supabase push, deploy, production DB mutation, main merge, force-push, staging, commit, or push was performed."
+    "Full export-root validate is not used because shared .ai/content-audit-export/sync-state.json and aggregate validation files were already dirty and stale for these article original hashes.",
+    "Scoped validate passed with a temporary current-hash sync-state under .ai/content-audit-export; the temporary root was removed."
   ],
   "final_status": "passed_local_validation_git_handoff_ready"
 }

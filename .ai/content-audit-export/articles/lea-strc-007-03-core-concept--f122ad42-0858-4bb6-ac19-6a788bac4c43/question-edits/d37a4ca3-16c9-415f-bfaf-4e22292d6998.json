@@ -2,16 +2,16 @@
   "question_id": "d37a4ca3-16c9-415f-bfaf-4e22292d6998",
   "baseline_hash": "sha256:f55504bfa36d7eea4c85b557e1c9dff055e302109725be81cb11c44de21d6617",
   "action": "replace",
-  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-007-03 to checked local NSCP OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-161",
-  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "reason": "Batch 164 question-alignment remediation: replace minimum-thickness-ratio questions with checked NSCP Section 424 serviceability and deflection questions.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
     "parent_article_slug": "lea-strc-007-03-core-concept",
-    "batch_id": "source-audited-batch-161-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:41-58 immediate deflection calculation and two-way slab calculation factors.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:60-89 Table 424.2.2 readable deflection limits and ponding note.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0483.md:36-68 time-dependent deflection factor table for sustained loads.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0482.md:7-39 Section 424 scope, serviceability, and deflections due to service-level gravity loads.",
@@ -38,11 +38,10 @@
         ]
       }
     ],
-    "local_source_safe_action": "Question rewritten to match structural_concrete_serviceability source boundary.",
+    "local_source_safe_action": "Question proposal now tests only Section 424 deflection limits, immediate deflection checks, and time-dependent factors.",
     "excluded_claims": [
-      "Unsupported Table 9.5.1 span-to-depth ratios in the selected source boundary.",
-      "Unsupported joist top-slab thickness rules in the selected source boundary.",
-      "Strength adequacy as a substitute for serviceability checking."
+      "Minimum-thickness ratio shortcuts outside the checked Section 424 serviceability source boundary.",
+      "Support-condition span-depth prompts not anchored to the selected OCR pages."
     ]
   },
   "proposed": {
@@ -50,38 +49,38 @@
     "options": [
       {
         "id": "a",
-        "text": "The table limit is not intended to safeguard against ponding; ponding must be checked with added deflection effects."
+        "text": "Ponding must be checked by deflection calculations including added deflections due to ponded water and time-dependent effects."
       },
       {
         "id": "b",
-        "text": "Ponding is automatically covered by l/360."
+        "text": "The table limit automatically safeguards against all ponding."
       },
       {
         "id": "c",
-        "text": "Ponding checks apply only to timber roofs."
+        "text": "Ponding is checked only by occupancy category."
       },
       {
         "id": "d",
-        "text": "Ponding can be ignored when concrete is reinforced."
+        "text": "Ponding is ignored if the roof is concrete."
       }
     ],
     "correct_option_id": "a",
     "rationale": {
-      "correct": "The checked note says the limit is not intended to safeguard against ponding and calls for a separate deflection check including ponded-water effects.",
-      "a": "Not selected: The table limit is not intended to safeguard against ponding; ponding must be checked with added deflection effects.",
-      "b": "Not selected: Ponding is automatically covered by l/360.",
-      "c": "Not selected: Ponding checks apply only to timber roofs.",
-      "d": "Not selected: Ponding can be ignored when concrete is reinforced.",
-      "takeaway": "The checked note says the limit is not intended to safeguard against ponding and calls for a separate deflection check including ponded-water effects.",
-      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+      "correct": "The note says the limit is not intended to safeguard against ponding and that ponding must be checked by calculations including ponded-water and time-dependent effects.",
+      "takeaway": "A deflection table limit does not replace a ponding check.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Selected: Ponding must be checked by deflection calculations including added deflections due to ponded water and time-dependent effects.",
+      "b": "Not selected: The table limit automatically safeguards against all ponding.",
+      "c": "Not selected: Ponding is checked only by occupancy category.",
+      "d": "Not selected: Ponding is ignored if the roof is concrete."
     },
-    "explanation": "The checked note says the limit is not intended to safeguard against ponding and calls for a separate deflection check including ponded-water effects.",
-    "code_citation": "NSCP 2015 Vol. I, Section 424.2, Table 424.2.2, and Table 424.2.4.1.3; OCR pages 482-483.",
-    "application_context": "source_audited_nscp_serviceability_deflection",
+    "explanation": "The note says the limit is not intended to safeguard against ponding and that ponding must be checked by calculations including ponded-water and time-dependent effects.",
+    "code_citation": "NSCP 2015 Vol. I, Section 424.1 and 424.2, Table 424.2.2, and Table 424.2.4.1.3; OCR pages 482-483.",
+    "application_context": "source_audited_nscp_serviceability_deflection_batch_164",
     "practice_context": [
       "structural",
       "concrete serviceability",
-      "source-audited batch 161"
+      "batch 164 question alignment"
     ],
     "bloom_level": "apply",
     "difficulty": 0.5,

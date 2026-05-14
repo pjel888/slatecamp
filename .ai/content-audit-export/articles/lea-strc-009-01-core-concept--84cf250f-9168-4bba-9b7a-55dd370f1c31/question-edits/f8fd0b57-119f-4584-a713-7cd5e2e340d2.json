@@ -2,16 +2,16 @@
   "question_id": "f8fd0b57-119f-4584-a713-7cd5e2e340d2",
   "baseline_hash": "sha256:affc87ffc8cf6b300ac626fabbd32b281aa895605864820045a5d4906d829791",
   "action": "replace",
-  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-009-01 to checked local NSCP OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-161",
-  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "reason": "Batch 164 question-alignment remediation: constrain timber durability questions to checked NSCP Section 605 thresholds.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
     "parent_article_slug": "lea-strc-009-01-core-concept",
-    "batch_id": "source-audited-batch-161-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.",
@@ -42,11 +42,10 @@
         ]
       }
     ],
-    "local_source_safe_action": "Question rewritten to match structural_timber_decay_termite_protection source boundary.",
+    "local_source_safe_action": "Question proposal now tests only Section 605 site preparation, clearance, ventilation, separation, treatment, and moisture thresholds.",
     "excluded_claims": [
-      "Unsupported Narra/Kamagong/Dao/Tangile resistance table claims.",
-      "Unsupported sapwood percentage acceptance claims.",
-      "Species-specific substitution rules outside NSCP Section 605 anchors."
+      "Species-specific durability classifications outside Section 605 clearance, ventilation, moisture, and treatment thresholds.",
+      "Biology or local-material classification claims not present in the checked OCR pages."
     ]
   },
   "proposed": {
@@ -54,38 +53,38 @@
     "options": [
       {
         "id": "a",
-        "text": "50 mm above earth and flush with finished floor"
+        "text": "At least 100 mm above exposed earth and 10 mm above finish floor."
       },
       {
         "id": "b",
-        "text": "At least 200 mm above exposed earth or at least 25 mm above finished floor"
+        "text": "At least 200 mm above exposed earth or at least 25 mm above finish floor level."
       },
       {
         "id": "c",
-        "text": "At least 600 mm above all floors"
+        "text": "Exactly 600 mm above all surfaces."
       },
       {
         "id": "d",
-        "text": "No projection if the post is painted"
+        "text": "No pedestal projection is required."
       }
     ],
     "correct_option_id": "b",
     "rationale": {
-      "correct": "Section 605.5 requires concrete piers or metal pedestals to project at least 200 mm above exposed earth or 25 mm above finished floor unless approved resistant or treated wood is used.",
-      "a": "Not selected: 50 mm above earth and flush with finished floor",
-      "b": "Not selected: At least 200 mm above exposed earth or at least 25 mm above finished floor",
-      "c": "Not selected: At least 600 mm above all floors",
-      "d": "Not selected: No projection if the post is painted",
-      "takeaway": "Section 605.5 requires concrete piers or metal pedestals to project at least 200 mm above exposed earth or 25 mm above finished floor unless approved resistant or treated wood is used.",
-      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+      "correct": "Section 605.5 requires the pedestal to project at least 200 mm above exposed earth or at least 25 mm above finish floor level.",
+      "takeaway": "Section 605.5 uses different pedestal projection thresholds for exposed earth and finished floors.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Not selected: At least 100 mm above exposed earth and 10 mm above finish floor.",
+      "b": "Selected: At least 200 mm above exposed earth or at least 25 mm above finish floor level.",
+      "c": "Not selected: Exactly 600 mm above all surfaces.",
+      "d": "Not selected: No pedestal projection is required."
     },
-    "explanation": "Section 605.5 requires concrete piers or metal pedestals to project at least 200 mm above exposed earth or 25 mm above finished floor unless approved resistant or treated wood is used.",
-    "code_citation": "NSCP 2015 Vol. I, Section 605; OCR pages 870-871.",
-    "application_context": "source_audited_nscp_timber_decay_termite_protection",
+    "explanation": "Section 605.5 requires the pedestal to project at least 200 mm above exposed earth or at least 25 mm above finish floor level.",
+    "code_citation": "NSCP 2015 Vol. I, Section 605; OCR page 870 lines 13-113 and page 871 lines 3-42.",
+    "application_context": "source_audited_nscp_wood_decay_termite_batch_164",
     "practice_context": [
       "structural",
-      "timber durability",
-      "source-audited batch 161"
+      "wood decay and termite protection",
+      "batch 164 question alignment"
     ],
     "bloom_level": "apply",
     "difficulty": 0.7,

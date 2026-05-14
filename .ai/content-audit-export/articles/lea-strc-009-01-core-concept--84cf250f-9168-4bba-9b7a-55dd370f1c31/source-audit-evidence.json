@@ -164,7 +164,8 @@
     "THIN_NEEDS_EXPANSION",
     "source-primary",
     "question-alignment",
-    "scenario/depth"
+    "scenario/depth",
+    "batch-164-question-alignment-remediation"
   ],
   "unverified_or_rejected_claims": [
     {
@@ -182,5 +183,18 @@
       "claim_text": "Species-specific substitution rules outside NSCP Section 605 anchors.",
       "reason": "Outside the Batch 161 checked local NSCP OCR source boundary."
     }
-  ]
+  ],
+  "batch_164_question_alignment_remediation": {
+    "status": "PASS",
+    "remediated_at": "2026-05-14T20:16:00+08:00",
+    "remediated_by": "codex-local-question-alignment-batch-164",
+    "source_policy": "local_first_only_no_supabase_no_deploy_no_db_no_git_stage_commit_push",
+    "remediation_note": "Questions now test Section 605 clearances, ventilation, treatment, separation, and moisture thresholds.",
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_changes": 0,
+    "source_boundary": "Checked local NSCP OCR page markdown under vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages.",
+    "question_edit_support_status": "question_alignment_remediated",
+    "prior_audit_path": ".ai/03_plans/final-second-audit/rolling-readonly-swarm/opencode-kimi-batches-161-163-nscp-pedagogy-depth-audit.md"
+  }
 }

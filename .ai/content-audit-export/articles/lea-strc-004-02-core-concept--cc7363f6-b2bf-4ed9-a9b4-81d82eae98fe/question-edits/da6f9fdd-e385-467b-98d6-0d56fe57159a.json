@@ -2,16 +2,16 @@
   "question_id": "da6f9fdd-e385-467b-98d6-0d56fe57159a",
   "baseline_hash": "sha256:560e045f5450e1973bedf3ac093bbe380295ced76d65dc35690e8c84687a4690",
   "action": "replace",
-  "reason": "Batch 161 source-audited rewrite: constrain lea-strc-004-02 to checked local NSCP OCR anchors and remove unsupported residual claims.",
-  "approved_by": "codex-local-source-audit-batch-161",
-  "approved_at": "2026-05-14T16:35:00.000+08:00",
+  "reason": "Batch 164 question-alignment remediation: use NSCP 2015 Zone 2 / Zone 4 terminology from the checked local OCR anchor.",
+  "approved_by": "codex-local-question-alignment-batch-164",
+  "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
     "parent_article_slug": "lea-strc-004-02-core-concept",
-    "batch_id": "source-audited-batch-161-local-first",
+    "batch_id": "source-audited-batch-164-local-first",
     "answer_key_fields_changed": false,
-    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; unsupported question text and rationales are replaced.",
-    "support_status": "source_safe_rewrite",
+    "answer_key_policy": "Correct option id, correct_value, and accepted_answers are preserved; question wording, options, and rationales are realigned to checked local NSCP anchors.",
+    "support_status": "question_alignment_remediated",
     "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
     "checked_markdown_lines": [
       "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40."
@@ -32,11 +32,11 @@
         ]
       }
     ],
-    "local_source_safe_action": "Question rewritten to match structural_seismic_zone_factor source boundary.",
+    "local_source_safe_action": "Question proposal now uses only NSCP 2015 Zone 2 / Zone 4 labels and Table 208-3 Z factors.",
     "excluded_claims": [
-      "Zone 1 / Zone 2 naming for NSCP 2015 seismic zones.",
-      "Geological explanations for province assignment not stated in the checked NSCP anchor.",
-      "Spectral acceleration map claims as a replacement for this Z-factor article."
+      "Legacy seismic-zone naming that does not match NSCP 2015 Zone 2 and Zone 4 terminology.",
+      "Geologic explanations for province assignment not stated in the checked NSCP text.",
+      "Spectral-map claims outside the checked Z-factor source boundary."
     ]
   },
   "proposed": {
@@ -44,38 +44,38 @@
     "options": [
       {
         "id": "a",
-        "text": "The two zones produce equal Z-factor demand."
+        "text": "Zone 4 is one half of Zone 2."
       },
       {
         "id": "b",
-        "text": "Zone 4 uses twice the Z factor of Zone 2."
+        "text": "Zone 4 is twice Zone 2."
       },
       {
         "id": "c",
-        "text": "Zone 2 uses twice the Z factor of Zone 4."
+        "text": "Zone 4 is equal to Zone 2."
       },
       {
         "id": "d",
-        "text": "The Z factor changes only the importance factor, not base shear."
+        "text": "Zone 4 has no Z factor."
       }
     ],
     "correct_option_id": "b",
     "rationale": {
-      "correct": "Zone 4 has Z = 0.40 and Zone 2 has Z = 0.20, so the Zone 4 Z term is twice the Zone 2 Z term.",
-      "a": "Not selected: The two zones produce equal Z-factor demand.",
-      "b": "Not selected: Zone 4 uses twice the Z factor of Zone 2.",
-      "c": "Not selected: Zone 2 uses twice the Z factor of Zone 4.",
-      "d": "Not selected: The Z factor changes only the importance factor, not base shear.",
-      "takeaway": "Zone 4 has Z = 0.40 and Zone 2 has Z = 0.20, so the Zone 4 Z term is twice the Zone 2 Z term.",
-      "source_boundary": "Batch 161 uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json."
+      "correct": "Zone 4 uses Z = 0.40 while Zone 2 uses Z = 0.20, so the Z factor for Zone 4 is twice that of Zone 2.",
+      "takeaway": "Numeric comparison should follow Table 208-3 directly.",
+      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+      "a": "Not selected: Zone 4 is one half of Zone 2.",
+      "b": "Selected: Zone 4 is twice Zone 2.",
+      "c": "Not selected: Zone 4 is equal to Zone 2.",
+      "d": "Not selected: Zone 4 has no Z factor."
     },
-    "explanation": "Zone 4 has Z = 0.40 and Zone 2 has Z = 0.20, so the Zone 4 Z term is twice the Zone 2 Z term.",
+    "explanation": "Zone 4 uses Z = 0.40 while Zone 2 uses Z = 0.20, so the Z factor for Zone 4 is twice that of Zone 2.",
     "code_citation": "NSCP 2015 Vol. I, Section 208.4.4.1 and Table 208-3; OCR page 240 lines 16-26.",
-    "application_context": "source_audited_nscp_seismic_zone_factor",
+    "application_context": "source_audited_nscp_seismic_zone_factor_batch_164",
     "practice_context": [
       "structural",
       "seismic design",
-      "source-audited batch 161"
+      "batch 164 question alignment"
     ],
     "bloom_level": "understand",
     "difficulty": 0.5,
