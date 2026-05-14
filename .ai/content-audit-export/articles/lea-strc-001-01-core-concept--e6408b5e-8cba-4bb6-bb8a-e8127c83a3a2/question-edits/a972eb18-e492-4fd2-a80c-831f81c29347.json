@@ -1,0 +1,64 @@
+{
+  "question_id": "a972eb18-e492-4fd2-a80c-831f81c29347",
+  "baseline_hash": "sha256:4a9022a47e2702c3a247537db8a4b30f7bce8b9fd6745edb0d699c31123b58bf",
+  "action": "replace",
+  "reason": "source-audited-article-batch-139-local-first: residual local-first rewrite constrained to checked local source artifacts for Force - magnitude, direction, point of application, and resultant effects.",
+  "approved_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "approved_at": "2026-05-14T00:18:12.556Z",
+  "source_audit_support": {
+    "parent_article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+    "parent_article_slug": "lea-strc-001-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+    "checked_sources": [
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-raw-source-capture",
+        "label": "Batch 139 raw source capture - Force - magnitude, direction, point of application, and resultant effects",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+        "sha256": "sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a"
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-refined-source-map",
+        "label": "Batch 139 refined source conversion - Force - magnitude, direction, point of application, and resultant effects",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md",
+        "sha256": "sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 139 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the practical LEA rule for force basics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate."
+      },
+      {
+        "id": "b",
+        "text": "Always use the largest option."
+      },
+      {
+        "id": "c",
+        "text": "Always ignore the line of action."
+      },
+      {
+        "id": "d",
+        "text": "Always treat force as a material property."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+      "b": "Always use the largest option. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "c": "Always ignore the line of action. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "d": "Always treat force as a material property. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "correct": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
+    },
+    "explanation": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
+  },
+  "batch_question_template_index": 10
+}

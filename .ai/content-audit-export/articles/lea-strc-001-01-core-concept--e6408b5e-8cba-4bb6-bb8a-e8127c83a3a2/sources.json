@@ -1,20 +1,76 @@
 {
   "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:2c84b70edc2e7ea859d22463e40da218a7a2c2d3bf5ed8b25000cd72807e3cee",
-  "source_count": 1,
+  "sources_hash": "sha256:cb1ff28d1790536890d0e2b648f2d2dd548b5389e248c7bfaafed4bf4860711c",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "462d7cde-2ed9-4bbc-938a-d204a4387915",
+      "source_id": "batch-139-lea-strc-001-01-core-concept-raw-source-capture",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
-      "label": "NSCP General Chapter on Load and Resistance Factor Design (LRFD); Hibbeler, R. C. (2013). Engineering Mechanics: Statics. Pearson",
+      "label": "Batch 139 raw source capture - Force - magnitude, direction, point of application, and resultant effects",
       "url": null,
-      "source_type": "primary_law",
-      "description": "[Standard definition of force vectors and their three characteristic properties.]",
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Force - magnitude, direction, point of application, and resultant effects; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+      "local_sha256": "sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a",
+      "checked_markdown_lines": [
+        "Hibbeler Statics 13th Edition: Force is treated as a push or pull exerted by one body on another. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075",
+        "Hibbeler Statics 13th Edition: A force is characterized by magnitude, direction, and point of application. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075",
+        "Hibbeler Statics 13th Edition: Force is a vector quantity and may be added or resolved through vector methods. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075",
+        "Hibbeler Statics 13th Edition: Statics uses resultant forces, components, and equilibrium reasoning before selecting formulas. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075"
+      ],
+      "local_source_families": [
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 139 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-139-lea-strc-001-01-core-concept-refined-source-map",
+      "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+      "label": "Batch 139 refined source conversion - Force - magnitude, direction, point of application, and resultant effects",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Force - magnitude, direction, point of application, and resultant effects.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md",
+      "local_sha256": "sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a",
+      "checked_markdown_lines": [
+        "Hibbeler Statics 13th Edition: Force is treated as a push or pull exerted by one body on another. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075",
+        "Hibbeler Statics 13th Edition: A force is characterized by magnitude, direction, and point of application. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075",
+        "Hibbeler Statics 13th Edition: Force is a vector quantity and may be added or resolved through vector methods. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075",
+        "Hibbeler Statics 13th Edition: Statics uses resultant forces, components, and equilibrium reasoning before selecting formulas. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075"
+      ],
+      "local_source_families": [
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, and 2023-2075"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

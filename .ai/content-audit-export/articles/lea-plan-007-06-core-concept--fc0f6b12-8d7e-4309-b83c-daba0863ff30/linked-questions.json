@@ -1,30 +1,30 @@
 {
   "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:780bbdf10858bc9140505c8bc336276da9ac4b61e110e186ea9c11f2a5df5595",
+  "linked_questions_hash": "sha256:09c3fd79bb5a9d4fea42fc659833827b5e5f2e0bdf6bc55361eef9c40a1d7a52",
   "question_count": 10,
   "questions": [
     {
       "question_id": "dcb036ab-8060-4d01-9a9a-c43ee2c8eaea",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Who designed the 1905 Plan of Manila, and what was the primary urban design philosophy that guided this plan?",
+      "text": "A Manila planning question mentions Daniel Burnham, but the task is to guide a current waterfront intervention. What is the safest next source path?",
       "options": [
         {
           "id": "a",
-          "text": "Antonio Toledo; focus on grid-pattern residential neighborhoods with an emphasis on uniformity and predictability in urban layout"
+          "text": "Answer only with a historic style label."
         },
         {
           "id": "b",
-          "text": "Daniel Burnham; City Beautiful Movement with monumental civic spaces and diagonal boulevards"
+          "text": "Use Burnham as the historic cue, then check the current CLUP, zoning, hazards, and implementation documents."
         },
         {
           "id": "c",
-          "text": "Ildefonso P. Santos Jr.; landscape-integrated planning that prioritizes green spaces and ecological harmony"
+          "text": "Apply BGC lot rules without checking Manila sources."
         },
         {
           "id": "d",
-          "text": "Felino Palafox Jr.; mixed-use transit-oriented development that encourages sustainable urban growth and reduced reliance on automobiles"
+          "text": "Treat the project as automatically approved."
         }
       ],
       "correct_option_id": "b",
@@ -33,15 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Toledo was the first Filipino planner, working in the postwar period (1950s–70s), not 1905.",
-        "b": "The 1905 Plan of Manila was designed by American architect Daniel Burnham, who applied City Beautiful Movement principles: grand civic buildings, diagonal boulevards (Taft Avenue), large parks (Luneta), and monumental architecture to elevate civic grandeur.",
-        "c": "Santos was a landscape architect/National Artist, not the designer of the 1905 plan.",
-        "d": "Palafox is a contemporary planner, not the designer of the 1905 plan.",
-        "correct": "The 1905 Plan of Manila was designed by American architect Daniel Burnham, who applied City Beautiful Movement principles: grand civic buildings, diagonal boulevards radiating from civic centers, large parks (Luneta), and monumental architecture to elevate civic grandeur.",
-        "takeaway": "1905 Plan of Manila = Burnham (American) + City Beautiful Movement principles."
+        "a": "Answer only with a historic style label. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Use Burnham as the historic cue, then check the current CLUP, zoning, hazards, and implementation documents. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "c": "Apply BGC lot rules without checking Manila sources. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Treat the project as automatically approved. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Use Burnham as the historic cue, then check the current CLUP, zoning, hazards, and implementation documents. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": "Toledo was the first Filipino planner, working in the postwar period (1950s–70s), not 1905. The 1905 Plan of Manila was designed by American architect Daniel Burnham, who applied City Beautiful Movement principles: grand civic buildings, diagonal boulevards (Taft Avenue), large parks (Luneta), and monumental architecture to elevate civic grandeur. Santos was a landscape architect/National Artist, not the designer of the 1905 plan. Palafox is a contemporary planner, not the designer of the 1905 plan. The 1905 Plan of Manila was designed by American architect Daniel Burnham, who applied City Beautiful Movement principles: grand civic buildings, diagonal boulevards radiating from civic centers, large parks (Luneta), and monumental architecture to elevate civic grandeur. 1905 Plan of Manila = Burnham (American) + City Beautiful Movement principles.",
-      "code_citation": "Burnham, Plan of Manila (1905)",
+      "explanation": "Use Burnham as the historic cue, then check the current CLUP, zoning, hazards, and implementation documents. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -52,30 +53,33 @@
       "model_id": "ALE-PLAN-007-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-05-06T15:00:22.550445+00:00",
-      "content_hash": "sha256:7b8167ff4be602ef164b374e457138b37e9d6b53a4b7b7ba2eb78dced3d2197a"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:0b1d7450163bf9ba9841004b358931bfb5819c03009f71fc847a7bcb17dfee6a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "452413b8-2cfa-43cc-b741-a641e0781e95",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Who was the first Filipino to establish city planning as a recognized profession distinct from architecture?",
+      "text": "What does the Manila CLUP support about Burnham in a source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "Daniel Burnham, who established planning practice early 1900s"
+          "text": "Burnham alone supplies every current zoning rule."
         },
         {
           "id": "b",
-          "text": "Ildefonso P. Santos Jr., who professionalized landscape architecture"
+          "text": "Burnham replaces the local zoning ordinance."
         },
         {
           "id": "c",
-          "text": "Antonio Toledo, who developed planning frameworks in postwar Philippines"
+          "text": "Burnham is part of Manila planning memory tied to waterfront, transport, and amenity value."
         },
         {
           "id": "d",
-          "text": "Felino Palafox Jr., who pioneered contemporary planning methodologies"
+          "text": "Burnham proves all districts must copy BGC."
         }
       ],
       "correct_option_id": "c",
@@ -84,15 +88,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Burnham was American, working in the 1905 colonial period.",
-        "b": "Santos professionalized landscape architecture, not planning broadly.",
-        "c": "Antonio Toledo was the first Filipino city planner, developing planning frameworks and establishing planning practice as distinct from architecture in the postwar period (1950s–1970s). This professionalization was foundational for modern Philippine planning.",
-        "d": "Palafox works in contemporary period; Toledo pioneered the profession earlier.",
-        "correct": "Antonio Toledo was the first Filipino city planner, developing planning frameworks and establishing planning practice as distinct from architecture in the postwar period (1950s–1970s). This professionalization was foundational for modern Philippine planning.",
-        "takeaway": "Antonio Toledo = first Filipino city planner (postwar era)."
+        "a": "Burnham alone supplies every current zoning rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Burnham replaces the local zoning ordinance. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Burnham is part of Manila planning memory tied to waterfront, transport, and amenity value. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "d": "Burnham proves all districts must copy BGC. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Burnham is part of Manila planning memory tied to waterfront, transport, and amenity value. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": "Burnham was American, working in the 1905 colonial period. Santos professionalized landscape architecture, not planning broadly. Antonio Toledo was the first Filipino city planner, developing planning frameworks and establishing planning practice as distinct from architecture in the postwar period (1950s–1970s). This professionalization was foundational for modern Philippine planning. Palafox works in contemporary period; Toledo pioneered the profession earlier. Antonio Toledo was the first Filipino city planner, developing planning frameworks and establishing planning practice as distinct from architecture in the postwar period (1950s–1970s). This professionalization was foundational for modern Philippine planning. Antonio Toledo = first Filipino city planner (postwar era).",
-      "code_citation": "Philippine planning history, postwar period",
+      "explanation": "Burnham is part of Manila planning memory tied to waterfront, transport, and amenity value. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -103,30 +108,33 @@
       "model_id": "ALE-PLAN-007-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-05-06T15:03:06.219535+00:00",
-      "content_hash": "sha256:49034e3acab2d667b6c042d636e2348141c99a4a69eb5e2884c820ed08e9869a"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:442c977fb0d63fcfa40b3d47711a0aa436cb0986454c552d3dcae31a868e8706",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "7f7b9acd-6013-44d5-923e-467444fc050f",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Daniel Burnham's 1905 Plan of Manila incorporated City Beautiful Movement principles. Which of the following was NOT a characteristic of the Burnham Plan?",
+      "text": "A stem asks how a district like BGC is controlled before design submission. Which answer fits the local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Diagonal boulevards radiating from civic centers (e.g., Taft Avenue) creating monumental urban vistas"
+          "text": "Choose the tallest allowable tower by memory."
         },
         {
           "id": "b",
-          "text": "Large monumental parks and public spaces (e.g., Luneta) serving as civic gathering points and urban landmarks"
+          "text": "Skip the district plan because it is private land."
         },
         {
           "id": "c",
-          "text": "Mixed-use neighborhoods with informal, unplanned commercial activity and street vending"
+          "text": "Check the master plan, land-use zones, transit and pedestrian systems, and zoning requirements."
         },
         {
           "id": "d",
-          "text": "Grand civic architecture and classical design principles inspired by European and American Beaux-Arts tradition"
+          "text": "Use only a historical planner name."
         }
       ],
       "correct_option_id": "c",
@@ -135,15 +143,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Diagonal boulevards were signature Burnham elements.",
-        "b": "Large parks and civic spaces were core to City Beautiful.",
-        "c": "The City Beautiful Movement emphasized formal civic grandeur, not informal mixed-use neighborhoods. Mixed-use walkable neighborhoods are a hallmark of New Urbanism (Palafox era), not City Beautiful (Burnham era).",
-        "d": "Monumental classical architecture was fundamental to the movement.",
-        "correct": "The City Beautiful Movement emphasized formal civic grandeur, not informal mixed-use neighborhoods. Mixed-use walkable neighborhoods are a hallmark of New Urbanism (Palafox era), not City Beautiful (Burnham era).",
-        "takeaway": "Burnham/City Beautiful = formal grandeur. Palafox/New Urbanism = mixed-use walkability (different eras)."
+        "a": "Choose the tallest allowable tower by memory. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Skip the district plan because it is private land. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Check the master plan, land-use zones, transit and pedestrian systems, and zoning requirements. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "d": "Use only a historical planner name. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Check the master plan, land-use zones, transit and pedestrian systems, and zoning requirements. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": "Diagonal boulevards were signature Burnham elements. Large parks and civic spaces were core to City Beautiful. The City Beautiful Movement emphasized formal civic grandeur, not informal mixed-use neighborhoods. Mixed-use walkable neighborhoods are a hallmark of New Urbanism (Palafox era), not City Beautiful (Burnham era). Monumental classical architecture was fundamental to the movement. The City Beautiful Movement emphasized formal civic grandeur, not informal mixed-use neighborhoods. Mixed-use walkable neighborhoods are a hallmark of New Urbanism (Palafox era), not City Beautiful (Burnham era). Burnham/City Beautiful = formal grandeur. Palafox/New Urbanism = mixed-use walkability (different eras).",
-      "code_citation": "Burnham Plan of Manila, City Beautiful Movement",
+      "explanation": "Check the master plan, land-use zones, transit and pedestrian systems, and zoning requirements. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [
@@ -158,30 +167,33 @@
       "model_id": "ALE-PLAN-007-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-05-06T15:00:22.222899+00:00",
-      "content_hash": "sha256:0e8be58209c5e95e481d4ebae6bbe9358909f300c5b293945d401656ac88a178"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:ce1f515505bcc50349f21beb4abb51517da7d5240c70da3ca374ec2915d52458",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "2af95339-6efe-4b23-9601-b97ecb323c51",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Why is the evolution from Burnham (1905) to contemporary planners like Palafox significant for understanding Philippine planning history?",
+      "text": "Why is CLUP stronger than a personality answer for current planning decisions?",
       "options": [
         {
           "id": "a",
-          "text": "It shows that planning remains unchanged since 1905; modern planners replicate Burnham, which suggests a lack of innovation"
+          "text": "It is just a biography of planners."
         },
         {
           "id": "b",
-          "text": "It demonstrates the professionalization of planning in the Philippines—from colonial American designs to Filipino-led contemporary practice responsive to Philippine contexts"
+          "text": "The CLUP contains the framework, zoning, sectoral plans, and implementation guidance for local development."
         },
         {
           "id": "c",
-          "text": "It proves that Burnham's approach is superior and should still be followed, disregarding modern advancements"
+          "text": "It cancels all design standards."
         },
         {
           "id": "d",
-          "text": "It indicates that planning is no longer relevant in modern Philippine cities, which challenges the need for urban planning"
+          "text": "It is unrelated to land-use decisions."
         }
       ],
       "correct_option_id": "b",
@@ -190,15 +202,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Contemporary planners have adapted methods significantly.",
-        "b": "The evolution from Burnham's colonial City Beautiful (1905) to Filipino planners (Toledo establishing profession, Palafox applying contemporary methods) reflects the maturation of planning as a Filipino-led, context-responsive discipline. This is a narrative of professionaliza and localization.",
-        "c": "Contemporary approaches integrate, not displace, earlier concepts.",
-        "d": "Planning remains highly relevant; the evolution shows adaptation.",
-        "correct": "The evolution from Burnham's colonial City Beautiful (1905) to Filipino planners (Toledo establishing profession, Palafox applying contemporary methods) reflects the maturation of planning as a Filipino-led, context-responsive discipline. This is a narrative of professionalization and localization.",
-        "takeaway": "Planning evolution in Philippines = colonial American → Filipino professional practice, context-responsive."
+        "a": "It is just a biography of planners. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "The CLUP contains the framework, zoning, sectoral plans, and implementation guidance for local development. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "c": "It cancels all design standards. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "It is unrelated to land-use decisions. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "The CLUP contains the framework, zoning, sectoral plans, and implementation guidance for local development. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": null,
-      "code_citation": "Philippine planning history (Burnham to contemporary)",
+      "explanation": "The CLUP contains the framework, zoning, sectoral plans, and implementation guidance for local development. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -213,30 +226,33 @@
       "model_id": "ALE-PLAN-007-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3d0fab6a4f017e78162930f947db617a31c92cd487be1d3ee9e8c85c5bf28703"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:f179a1c2987a3ccc39540e0c0b14fd84169702c75e4f85ed204f2029d2758cff",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "95f6a300-2af1-48c1-bcfd-19d3af09f1a5",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Which contemporary Philippine planner is known for designing major master plans that emphasize mixed-use development, walkability, and strategic growth corridors?",
+      "text": "A question asks for resilient urban design after identifying a historic planning influence. Which move is most source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Antonio Toledo, known for his work in the early 20th century, focusing on classical architecture"
+          "text": "Repeat the name of the historic planner only."
         },
         {
           "id": "b",
-          "text": "Felino Palafox Jr."
+          "text": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides."
         },
         {
           "id": "c",
-          "text": "Jorge Yupangco, who has contributed to various urban projects but not specifically known for mixed-use development"
+          "text": "Select a facade style as the complete answer."
         },
         {
           "id": "d",
-          "text": "Daniel Burnham, an American architect and urban designer with historical influence in Manila"
+          "text": "Ignore land-use and hazard evidence."
         }
       ],
       "correct_option_id": "b",
@@ -245,15 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Toledo was postwar (1950s–70s), not contemporary.",
-        "b": "Felino Palafox Jr. is the leading contemporary Philippine urban planner. His master plans for Bonifacio Global City and numerous provincial capitals emphasize pedestrian-friendly design, mixed-use development, and strategic growth strategies.",
-        "c": "Yupangco specializes in waterway rehabilitation.",
-        "d": "Burnham was early 1900s City Beautiful.",
-        "correct": "Felino Palafox Jr. is the leading contemporary Philippine urban planner. His master plans for Bonifacio Global City and numerous provincial capitals emphasize pedestrian-friendly design, mixed-use development, and strategic growth strategies.",
-        "takeaway": "Felino Palafox Jr. = contemporary mixed-use, walkable urbanism."
+        "a": "Repeat the name of the historic planner only. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "c": "Select a facade style as the complete answer. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Ignore land-use and hazard evidence. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": null,
-      "code_citation": "Felino Palafox Jr. publications and project portfolio",
+      "explanation": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -264,30 +281,33 @@
       "model_id": "ALE-PLAN-007-06-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6b4eb660ce1265514f62a9152bc336a6ef366cf626cc1b1dde459cd9b83fb8fa"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:fb3d17c70bd1cda1a2951d2e02018a6b7d1d850a331a30dbafcb2eb8c25f76a6",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "3d36469e-d685-4dfd-a746-2487b90d250a",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "What is the significance of Ildefonso P. Santos Jr.'s work in establishing landscape architecture as a recognized profession in the Philippines?",
+      "text": "Which BGC source cue is valid for district planning questions?",
       "options": [
         {
           "id": "a",
-          "text": "It separated landscape from architecture; established design standards; integrated landscape into planning"
+          "text": "Districts can combine land-use zones, transit, pedestrian networks, and submission checks."
         },
         {
           "id": "b",
-          "text": "It eliminated the need for urban planners in the Philippines, thereby streamlining the planning process and reducing bureaucratic overhead."
+          "text": "Every district must be purely residential."
         },
         {
           "id": "c",
-          "text": "It was focused exclusively on decorative gardening without planning integration, limiting its impact on urban development."
+          "text": "All parking and transit concerns are excluded from planning."
         },
         {
           "id": "d",
-          "text": "It created a separate government agency for landscape control, which oversees all landscape-related activities and ensures compliance with national standards."
+          "text": "Mixed-use is never allowed in district planning."
         }
       ],
       "correct_option_id": "a",
@@ -296,15 +316,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Santos elevated landscape architecture from ornamental gardening to a design discipline integrated with architecture and planning. His work established professional standards and demonstrated how landscape design supports livability, environmental quality, and urban form.",
-        "b": "Landscape architecture and urban planning are complementary, not competitive.",
-        "c": "Santos's work transcended decoration—it was design discipline and planning integration.",
-        "d": "Professionalization occurred through practice standards and recognition, not necessarily new agencies.",
-        "correct": "Santos elevated landscape architecture from ornamental gardening to a design discipline integrated with architecture and planning. His work established professional standards and demonstrated how landscape design supports livability, environmental quality, and urban form.",
-        "takeaway": "Santos professionalized landscape architecture as integration of design, planning, and environment."
+        "a": "Districts can combine land-use zones, transit, pedestrian networks, and submission checks. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "b": "Every district must be purely residential. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "All parking and transit concerns are excluded from planning. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Mixed-use is never allowed in district planning. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Districts can combine land-use zones, transit, pedestrian networks, and submission checks. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": "Santos elevated landscape architecture from ornamental gardening to a design discipline integrated with architecture and planning. His work established professional standards and demonstrated how landscape design supports livability, environmental quality, and urban form. Landscape architecture and urban planning are complementary, not competitive. Santos's work transcended decoration—it was design discipline and planning integration. Professionalization occurred through practice standards and recognition, not necessarily new agencies. Santos elevated landscape architecture from ornamental gardening to a design discipline integrated with architecture and planning. His work established professional standards and demonstrated how landscape design supports livability, environmental quality, and urban form. Santos professionalized landscape architecture as integration of design, planning, and environment.",
-      "code_citation": "National Artist for Architecture award (2006), Santos legacy",
+      "explanation": "Districts can combine land-use zones, transit, pedestrian networks, and submission checks. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [
@@ -318,30 +339,33 @@
       "model_id": "ALE-PLAN-007-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-05-06T15:00:22.3835+00:00",
-      "content_hash": "sha256:ad1f15f8358aca820acc4b51f81a9ca5fae1cc273c87ae62b4b0a27b58f6a822"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:86f821fb58fdaa6e19d3481a8536569460dd61fa1a9517eb1d2e184a31098923",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "7404be19-b37f-4f3d-80c4-f245d5d14b94",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "If a contemporary Philippine architect-planner aimed to integrate the legacy of Burnham (monumental civic identity), Santos (landscape-integrated design), and Palafox (walkable mixed-use urbanism) in a city planning project, which combination of principles would most effectively achieve this synthesis?",
+      "text": "What makes a Burnham answer overclaimed?",
       "options": [
         {
           "id": "a",
-          "text": "Replicate only Burnham's diagonal boulevards and civic grandeur; ignore landscape and walkability, focusing solely on monumental aspects"
+          "text": "Checking current CLUP documents."
         },
         {
           "id": "b",
-          "text": "Create grand civic anchors (Burnham) with landscape-integrated corridors (Santos) and pedestrian-focused mixed-use zones (Palafox) that serve community livability"
+          "text": "Using the historic reference as if it were the current complete legal approval path."
         },
         {
           "id": "c",
-          "text": "Reject all historical planning; create entirely new, untested approaches that may not align with proven urban design principles"
+          "text": "Treating waterfront amenity as one planning consideration."
         },
         {
           "id": "d",
-          "text": "Prioritize car infrastructure over pedestrian or civic space, potentially compromising the project's sustainability goals"
+          "text": "Reading district controls before design submission."
         }
       ],
       "correct_option_id": "b",
@@ -350,15 +374,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Burnham alone ignores community livability and environmental integration.",
-        "b": "A synthesis would honor Burnham's civic identity through strategic monuments, integrate Santos's landscape design for environmental livability, and apply Palafox's walkability and mixed-use principles for community function. This creates a layered, historically-informed contemporary design.",
-        "c": "Learning from historical precedents strengthens contemporary design.",
-        "d": "This contradicts Palafox's walkability emphasis and Santos's ecosystem principles.",
-        "correct": "A synthesis would honor Burnham's civic identity through strategic monuments, integrate Santos's landscape design for environmental livability, and apply Palafox's walkability and mixed-use principles for community function. This creates a layered, historically-informed contemporary design.",
-        "takeaway": "Synthesis = Burnham's civic identity + Santos's landscape integration + Palafox's walkability."
+        "a": "Checking current CLUP documents. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Using the historic reference as if it were the current complete legal approval path. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "c": "Treating waterfront amenity as one planning consideration. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Reading district controls before design submission. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Using the historic reference as if it were the current complete legal approval path. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": null,
-      "code_citation": "Planning history synthesis and contemporary practice",
+      "explanation": "Using the historic reference as if it were the current complete legal approval path. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -373,30 +398,33 @@
       "model_id": "ALE-PLAN-007-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:99261076028d48829ffcc60a315abe6cb5ed878d1f65dff8709ebcd154bbfb43"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:ab6dffade86c288e55ac5fc5ce21899da27222eafd4b2298a746f0332dbfd4a7",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "4fb5d579-1273-431f-9b27-a0732faee3dd",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Compare the planning approaches of Burnham (1905 Plan of Manila) and Felino Palafox Jr. (contemporary BGC master plan). What fundamental philosophical shift is evident?",
+      "text": "A city has fragmented land uses and nonconforming activities. Which source family supports a planning response?",
       "options": [
         {
           "id": "a",
-          "text": "Burnham and Palafox share identical approaches; no philosophical shift, as both focus on urban aesthetics"
+          "text": "Only a construction-material schedule."
         },
         {
           "id": "b",
-          "text": "Burnham emphasized monumental civic grandeur and hierarchical space; Palafox emphasizes pedestrian-scale mixed-use walkability and community integration"
+          "text": "The Manila CLUP discussion of land-use issues and responsive zoning."
         },
         {
           "id": "c",
-          "text": "Burnham focused on community participation; Palafox on top-down government control, reflecting a shift in governance style"
+          "text": "Only a structural force diagram."
         },
         {
           "id": "d",
-          "text": "Both emphasize industrial zoning and car-dependent sprawl, which remains a constant in urban planning"
+          "text": "Only a personal preference for symmetry."
         }
       ],
       "correct_option_id": "b",
@@ -405,15 +433,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Their approaches are fundamentally different.",
-        "b": "Burnham (City Beautiful, 1905) used grand civic design and hierarchical spatial organization. Palafox (New Urbanism and contemporary planning) emphasizes human-scale walkability, mixed uses, and community-friendly design. This reflects a shift from monumentalism to livability.",
-        "c": "Both value some form of coordination; Palafox emphasizes community participation more explicitly.",
-        "d": "Neither emphasized industrial sprawl as primary; Palafox explicitly opposes car-dependent sprawl.",
-        "correct": "Burnham (City Beautiful, 1905) used grand civic design and hierarchical spatial organization. Palafox (New Urbanism and contemporary planning) emphasizes human-scale walkability, mixed uses, and community-friendly design. This reflects a shift from monumentalism to livability.",
-        "takeaway": "Burnham (1905): monumental grandeur. Palafox (contemporary): pedestrian walkability—philosophical era shift."
+        "a": "Only a construction-material schedule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "The Manila CLUP discussion of land-use issues and responsive zoning. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "c": "Only a structural force diagram. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Only a personal preference for symmetry. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "The Manila CLUP discussion of land-use issues and responsive zoning. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": "Their approaches are fundamentally different. Burnham (City Beautiful, 1905) used grand civic design and hierarchical spatial organization. Palafox (New Urbanism and contemporary planning) emphasizes human-scale walkability, mixed uses, and community-friendly design. This reflects a shift from monumentalism to livability. Both value some form of coordination; Palafox emphasizes community participation more explicitly. Neither emphasized industrial sprawl as primary; Palafox explicitly opposes car-dependent sprawl. Burnham (City Beautiful, 1905) used grand civic design and hierarchical spatial organization. Palafox (New Urbanism and contemporary planning) emphasizes human-scale walkability, mixed uses, and community-friendly design. This reflects a shift from monumentalism to livability. Burnham (1905): monumental grandeur. Palafox (contemporary): pedestrian walkability—philosophical era shift.",
-      "code_citation": "Burnham Plan of Manila, Palafox contemporary planning",
+      "explanation": "The Manila CLUP discussion of land-use issues and responsive zoning. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -428,30 +457,33 @@
       "model_id": "ALE-PLAN-007-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-05-06T15:03:06.046872+00:00",
-      "content_hash": "sha256:da39a67dde28b3e2a973e42cb70e28188fef4813ab386cd16d49eec53f51a26b"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:402ab34fd3abcf6968f9ad521eb7006b3b30eb274393f7a7ce6db3858aa1a67a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "c0930872-223d-4236-91a8-583af7d52c7f",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Which Filipino planner's work primarily addresses ecological infrastructure and waterway rehabilitation?",
+      "text": "If the stem asks for public-realm and pedestrian connectivity in a district, which source path is relevant?",
       "options": [
         {
           "id": "a",
-          "text": "Ildefonso P. Santos Jr."
+          "text": "A concrete mix specification."
         },
         {
           "id": "b",
-          "text": "Antonio Toledo"
+          "text": "A pure biography item."
         },
         {
           "id": "c",
-          "text": "Felino Palafox Jr."
+          "text": "A plumbing fixture schedule."
         },
         {
           "id": "d",
-          "text": "Jorge Yupangco"
+          "text": "BGC district planning and DHSUD urban design guidance."
         }
       ],
       "correct_option_id": "d",
@@ -460,15 +492,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Santos works on landscape architecture broadly.",
-        "b": "Toledo worked on general planning frameworks.",
-        "c": "Palafox emphasizes urban development, not specialized waterway planning.",
-        "d": "Jorge Yupangco is known for waterway rehabilitation planning, addressing Manila Bay watersheds, estero restoration, and ecological infrastructure.",
-        "correct": "Jorge Yupangco is known for waterway rehabilitation planning, addressing Manila Bay watersheds, estero restoration, and ecological infrastructure.",
-        "takeaway": "Jorge Yupangco = waterway and ecological planning specialist."
+        "a": "A concrete mix specification. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "A pure biography item. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "A plumbing fixture schedule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "BGC district planning and DHSUD urban design guidance. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "correct": "BGC district planning and DHSUD urban design guidance. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": "Santos works on landscape architecture broadly. Toledo worked on general planning frameworks. Palafox emphasizes urban development, not specialized waterway planning. Jorge Yupangco is known for waterway rehabilitation planning, addressing Manila Bay watersheds, estero restoration, and ecological infrastructure. Jorge Yupangco is known for waterway rehabilitation planning, addressing Manila Bay watersheds, estero restoration, and ecological infrastructure. Jorge Yupangco = waterway and ecological planning specialist.",
-      "code_citation": "Yupangco waterway rehabilitation projects",
+      "explanation": "BGC district planning and DHSUD urban design guidance. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -479,30 +512,33 @@
       "model_id": "ALE-PLAN-007-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-05-06T15:03:06.378004+00:00",
-      "content_hash": "sha256:b43e455827d4d21ee735176011b1600d42f04e29c2092a05ff50f35039f2e20a"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:2bf1b7665b296fa0bbdeeb48f42e8f939320aa5aa8e94e9de2e19267855048a4",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     },
     {
       "question_id": "478f57b7-f974-485a-82a3-a158c502b3ff",
       "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
       "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
-      "text": "Which Filipino professional was recognized as the National Artist for Architecture in 2006 and pioneered landscape architecture as a recognized profession in the Philippines?",
+      "text": "What is the exam rule for planning-lineage questions?",
       "options": [
         {
           "id": "a",
-          "text": "Antonio Toledo, known for his work on neoclassical architecture in the Philippines."
+          "text": "Always answer with the oldest name in the options."
         },
         {
           "id": "b",
-          "text": "Felino Palafox Jr., a prominent urban planner and architect with significant contributions to sustainable development."
+          "text": "Ignore the CLUP when a famous planner appears."
         },
         {
           "id": "c",
-          "text": "Ildefonso P. Santos Jr."
+          "text": "Use the historic cue, then answer through the current planning instrument demanded by the stem."
         },
         {
           "id": "d",
-          "text": "Jorge Yupangco, an architect with a focus on modernist design principles."
+          "text": "Treat every district example as nationwide law."
         }
       ],
       "correct_option_id": "c",
@@ -511,15 +547,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Toledo was the first Filipino city planner, not a National Artist.",
-        "b": "Palafox is a prominent contemporary planner but is not the National Artist for Landscape Architecture.",
-        "c": "Ildefonso P. Santos Jr. (1924–2015) received the National Artist for Architecture award in 2006, specifically for his pioneering work in landscape architecture and integration of landscape design with planning and architecture.",
-        "d": "Yupangco specializes in waterway planning, not landscape architecture broadly.",
-        "correct": "Ildefonso P. Santos Jr. (1924–2015) received the National Artist award in 2006 for pioneering work in landscape architecture and integration of landscape design with planning and architecture and integration of landscape design with planning and architecture.",
-        "takeaway": "Ildefonso P. Santos Jr. = National Artist for Architecture (2006), landscape architecture pioneer."
+        "a": "Always answer with the oldest name in the options. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Ignore the CLUP when a famous planner appears. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Use the historic cue, then answer through the current planning instrument demanded by the stem. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+        "d": "Treat every district example as nationwide law. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Use the historic cue, then answer through the current planning instrument demanded by the stem. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+        "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       },
-      "explanation": null,
-      "code_citation": "National Artist for Architecture award (2006)",
+      "explanation": "Use the historic cue, then answer through the current planning instrument demanded by the stem. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -530,8 +567,11 @@
       "model_id": "ALE-PLAN-007-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:507e2f4ad95edb33a77ebe3df3919360ab6cb3f1d166d92e42f5b46a386f517a"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:69dc7876ebf4aa03e140e26d0aa17f7bf8b8acb003197168999df2ad0e16c546",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_notes": "Burnham is treated as a planning-memory cue inside Manila CLUP work, then connected to CLUP control, district planning, and resilient urban design."
     }
   ]
 }

@@ -1,56 +1,148 @@
 {
   "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:c5fff1681ec6b4048ffb6f55f404db30132b1b49ab33aa0c7f27e500f449fd89",
-  "source_count": 4,
+  "sources_hash": "sha256:d919603a5d23a1d9b36e7c3ccf26775339feac670536eceae78050a36ff4c913",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "batch089-lea-plan-008-03-core-concept-dhsud-resilient-urban-design-guidelines",
+      "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture",
       "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
-      "label": "DHSUD Resilient Urban Design and Development Guidelines",
+      "label": "Batch 139 raw source capture - Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning",
       "url": null,
-      "source_type": "planning_guidelines",
-      "description": "dhsud-resilient-urban-design-guidelines; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf; raw_pdf_sha256=sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md; raw_markdown_sha256=sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7; checked_locator=refined markdown lines 41-66 and 260-330",
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning; includes checked local source family hashes and refined conversion locators.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-12T10:35:00.000+08:00",
-      "updated_at": "2026-05-12T10:35:00.000+08:00"
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+      "local_sha256": "sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md#sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4",
+      "checked_markdown_lines": [
+        "DHSUD Resilient Urban Design and Development Guidelines: The guidelines use the CLUP and Zoning Ordinance as strategic tools for green, resilient urban renewal and development. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: They name compact, mixed-use, and transit-oriented development as resilient urban design strategies. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Urban design is framed as an organized spatial development process aligned with local land-use planning. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Local urban design guides and GIS-generated maps are used to connect CLUP goals, hazards, and interventions. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "BGC Design Standards and Guidelines: BGC is described through districts, broad land-use zones, road networks, transit, and pedestrian systems. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: The source includes residential, mixed-use, institutional, commercial, and transit-oriented district cues. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Development proposals must check master plan and zoning requirements before submission. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Pedestrian systems, skywalks, arcades, passageways, and district cooling are source-supported district design topics. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "RA 11285 Energy Efficiency and Conservation Act: The Act institutionalizes energy efficiency and conservation as national policy. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy audit evaluates energy consumption and current energy cost to identify efficiency interventions. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy efficiency means delivering the same service with less energy input or more service with the same input. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: LGUs are supported in local energy efficiency and conservation planning and implementation. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "Manila CLUP 2005-2020: The Manila CLUP is the city framework for development for planning years 2005-2020. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775",
+        "Manila CLUP 2005-2020: The source treats Daniel Burnham as Manila planning memory tied to waterfront, transport, and amenity value. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775",
+        "Manila CLUP 2005-2020: The CLUP links planning to regional frameworks, data review, SWOT analysis, zoning, and implementation documents. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775",
+        "Manila CLUP 2005-2020: The source identifies fragmented land use, nonconforming uses, flooding, and infrastructure concerns as planning issues. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775"
+      ],
+      "local_source_families": [
+        {
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "rawHash": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refinedHash": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618"
+        },
+        {
+          "label": "BGC Design Standards and Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+          "rawHash": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+          "refinedHash": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+          "checked_locator": "BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890"
+        },
+        {
+          "label": "RA 11285 Energy Efficiency and Conservation Act",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+          "rawHash": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+          "refinedHash": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+          "checked_locator": "RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451"
+        },
+        {
+          "label": "Manila CLUP 2005-2020",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+          "rawHash": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+          "refinedHash": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+          "checked_locator": "Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 139 source capture/refined conversion boundary."
     },
     {
-      "source_id": "batch089-lea-plan-008-03-core-concept-bgc-design-standards-and-guidelines",
+      "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map",
       "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
-      "label": "Bonifacio Global City Design Standards and Guidelines",
+      "label": "Batch 139 refined source conversion - Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning",
       "url": null,
-      "source_type": "design_guidelines",
-      "description": "bgc-design-standards-and-guidelines; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf; raw_pdf_sha256=sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md; raw_markdown_sha256=sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43; checked_locator=refined markdown lines 328-432 and 3997-4005",
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-12T10:35:00.000+08:00",
-      "updated_at": "2026-05-12T10:35:00.000+08:00"
-    },
-    {
-      "source_id": "batch089-lea-plan-008-03-core-concept-manila-clup-2005-2020",
-      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
-      "label": "Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020",
-      "url": null,
-      "source_type": "local_plan",
-      "description": "manila-clup-2005-2020; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf; raw_pdf_sha256=sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md; raw_markdown_sha256=sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68; checked_locator=refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
-      "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-12T10:35:00.000+08:00",
-      "updated_at": "2026-05-12T10:35:00.000+08:00"
-    },
-    {
-      "source_id": "batch089-lea-plan-008-03-core-concept-ra-11285-energy-efficiency-conservation-act",
-      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
-      "label": "RA 11285 Energy Efficiency and Conservation Act of 2019",
-      "url": null,
-      "source_type": "law",
-      "description": "ra-11285-energy-efficiency-conservation-act; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf; raw_pdf_sha256=sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md; raw_markdown_sha256=sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4; checked_locator=refined markdown lines 291-307 and 761-824",
-      "is_verified": true,
-      "sort_order": 3,
-      "created_at": "2026-05-12T10:35:00.000+08:00",
-      "updated_at": "2026-05-12T10:35:00.000+08:00"
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md",
+      "local_sha256": "sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md#sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4",
+      "checked_markdown_lines": [
+        "DHSUD Resilient Urban Design and Development Guidelines: The guidelines use the CLUP and Zoning Ordinance as strategic tools for green, resilient urban renewal and development. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: They name compact, mixed-use, and transit-oriented development as resilient urban design strategies. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Urban design is framed as an organized spatial development process aligned with local land-use planning. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Local urban design guides and GIS-generated maps are used to connect CLUP goals, hazards, and interventions. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "BGC Design Standards and Guidelines: BGC is described through districts, broad land-use zones, road networks, transit, and pedestrian systems. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: The source includes residential, mixed-use, institutional, commercial, and transit-oriented district cues. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Development proposals must check master plan and zoning requirements before submission. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Pedestrian systems, skywalks, arcades, passageways, and district cooling are source-supported district design topics. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "RA 11285 Energy Efficiency and Conservation Act: The Act institutionalizes energy efficiency and conservation as national policy. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy audit evaluates energy consumption and current energy cost to identify efficiency interventions. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy efficiency means delivering the same service with less energy input or more service with the same input. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: LGUs are supported in local energy efficiency and conservation planning and implementation. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "Manila CLUP 2005-2020: The Manila CLUP is the city framework for development for planning years 2005-2020. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775",
+        "Manila CLUP 2005-2020: The source treats Daniel Burnham as Manila planning memory tied to waterfront, transport, and amenity value. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775",
+        "Manila CLUP 2005-2020: The CLUP links planning to regional frameworks, data review, SWOT analysis, zoning, and implementation documents. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775",
+        "Manila CLUP 2005-2020: The source identifies fragmented land use, nonconforming uses, flooding, and infrastructure concerns as planning issues. Locator: Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775"
+      ],
+      "local_source_families": [
+        {
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "rawHash": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refinedHash": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618"
+        },
+        {
+          "label": "BGC Design Standards and Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+          "rawHash": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+          "refinedHash": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+          "checked_locator": "BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890"
+        },
+        {
+          "label": "RA 11285 Energy Efficiency and Conservation Act",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+          "rawHash": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+          "refinedHash": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+          "checked_locator": "RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451"
+        },
+        {
+          "label": "Manila CLUP 2005-2020",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+          "rawHash": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+          "refinedHash": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+          "checked_locator": "Manila CLUP refined markdown lines 157-180, 315-347, 411-433, 657-677, and 737-775"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

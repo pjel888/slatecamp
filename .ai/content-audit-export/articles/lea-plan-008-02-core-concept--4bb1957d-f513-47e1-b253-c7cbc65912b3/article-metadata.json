@@ -1,6 +1,6 @@
 {
   "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
-  "title": "Smart city uses interconnected digital systems",
+  "title": "Smart city planning - GIS-supported CLUP and evidence-based urban management",
   "slug": "lea-plan-008-02-core-concept",
   "subject_label": "Planning, Housing & Urban Design",
   "difficulty_label": null,
@@ -11,16 +11,16 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:27:02.250684+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:49:31.316664+00:00",
-  "updated_by": null,
-  "updated_note": null,
+  "updated_at": "2026-05-14T00:18:12.556Z",
+  "updated_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "updated_note": "Source-audited local-first Batch 139 article and linked-question rewrite; claims cite local captured source artifacts.",
   "content_hash": "sha256:025d1f3f17c42677e3fd3fff230286edfa3cb2ba0f916cff785e25e219ebd9a7",
   "original_content_hash": "sha256:025d1f3f17c42677e3fd3fff230286edfa3cb2ba0f916cff785e25e219ebd9a7",
-  "normalized_content_hash": "sha256:b5ab1a1c64068f7f743e870fba0921c94673bab61665e72fcb8a77259b54e65c",
-  "candidate_content_hash": "sha256:b5ab1a1c64068f7f743e870fba0921c94673bab61665e72fcb8a77259b54e65c",
+  "normalized_content_hash": "sha256:9a7b6f75e702d59d5ae1d13ca489cfb5a081a05f3cd50f04a9ea3fced9bd47a3",
+  "candidate_content_hash": "sha256:9a7b6f75e702d59d5ae1d13ca489cfb5a081a05f3cd50f04a9ea3fced9bd47a3",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:a7c10f9787d8f8bb69a89b6ac82d9d37a57b898e3bbbc9448b93783de75aebc2",
-  "sources_hash": "sha256:fb3103f52f063c5b97340d6caa3475d7197798436f23ee104f8ffc68e817cae1",
+  "linked_questions_hash": "sha256:6d1c7dc01378f1d5f7217dcd7a3075bd0f3b51907ceda6c23cd7d3238529d5dd",
+  "sources_hash": "sha256:055b37025ec5ce54620dddc1b473b70c60a75370f2d19f8b529e46ab55f9b219",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:41.739Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
@@ -30,6 +30,21 @@
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
-  "parser_status": "parsed",
-  "content_complexity": "markdown"
+  "parser_status": "passed",
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "source-audited-article-batch-139-local-first",
+  "source_audit_date": "2026-05-14",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+      "sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+      "sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+    }
+  ]
 }

@@ -1,0 +1,195 @@
+{
+  "batch_id": "source-audited-article-batch-139-local-first",
+  "batch_number": 139,
+  "generated_at": "2026-05-14T00:18:12.556Z",
+  "status": "content_generated_compose_diff_validate_pending",
+  "selection_note": "Batch 139 continued after Batch 138 consumed Theory 009-04/009-05 and Design 003-04/003-06/004-05. It selected the next sourceable planning residuals, one sourceable materials bundle, and one sourceable structural bundle after blocking exact CSI and utilities seismic bundles with local-source boundary gaps.",
+  "selected_clusters": [
+    {
+      "cluster_id": "lea-plan-007-06-core-concept",
+      "slug": "lea-plan-007-06-core-concept",
+      "title": "Philippine planning lineage - Burnham, CLUP, and district design",
+      "category": "Planning, Housing & Urban Design",
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "linked_question_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md"
+    },
+    {
+      "cluster_id": "lea-plan-008-02-core-concept",
+      "slug": "lea-plan-008-02-core-concept",
+      "title": "Smart city planning - GIS-supported CLUP and evidence-based urban management",
+      "category": "Planning, Housing & Urban Design",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "linked_question_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md"
+    },
+    {
+      "cluster_id": "lea-plan-008-03-core-concept",
+      "slug": "lea-plan-008-03-core-concept",
+      "title": "Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning",
+      "category": "Planning, Housing & Urban Design",
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "linked_question_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md"
+    },
+    {
+      "cluster_id": "lea-matl-005-10-core-concept",
+      "slug": "lea-matl-005-10-core-concept",
+      "title": "Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+      "category": "Building Materials and Construction Methods",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "linked_question_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md"
+    },
+    {
+      "cluster_id": "lea-strc-001-01-core-concept",
+      "slug": "lea-strc-001-01-core-concept",
+      "title": "Force - magnitude, direction, point of application, and resultant effects",
+      "category": "Structural Conceptualization",
+      "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+      "linked_question_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md"
+    }
+  ],
+  "blocked_clusters": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_batch_139",
+      "reason": "Exact CSI MasterFormat claims were not supported by a captured local source artifact, so the bundle was not rewritten in this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_batch_139",
+      "reason": "The local queue has raw structural references, but the needed utilities seismic-bracing refined conversion boundary was not available for this pass."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_batch_139",
+      "reason": "The raw NSCP 2015 PDF exists locally, but a refined conversion boundary for the required NSCP-specific claims was not available for this pass."
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "cluster_id": "lea-plan-007-06-core-concept",
+      "slug": "lea-plan-007-06-core-concept",
+      "title": "Philippine planning lineage - Burnham, CLUP, and district design",
+      "category": "Planning, Housing & Urban Design",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+      "source_family_count": 3,
+      "source_safe_real_world_scenario": true,
+      "normalized_hash": "sha256:bfae7df72cc977b919ee9685db88e82e1c14f6fd0754538fe9ed0aaa98228516",
+      "candidate_hash": "sha256:bfae7df72cc977b919ee9685db88e82e1c14f6fd0754538fe9ed0aaa98228516",
+      "answer_keys_preserved": true
+    },
+    {
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "cluster_id": "lea-plan-008-02-core-concept",
+      "slug": "lea-plan-008-02-core-concept",
+      "title": "Smart city planning - GIS-supported CLUP and evidence-based urban management",
+      "category": "Planning, Housing & Urban Design",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_family_count": 4,
+      "source_safe_real_world_scenario": true,
+      "normalized_hash": "sha256:9a7b6f75e702d59d5ae1d13ca489cfb5a081a05f3cd50f04a9ea3fced9bd47a3",
+      "candidate_hash": "sha256:9a7b6f75e702d59d5ae1d13ca489cfb5a081a05f3cd50f04a9ea3fced9bd47a3",
+      "answer_keys_preserved": true
+    },
+    {
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "cluster_id": "lea-plan-008-03-core-concept",
+      "slug": "lea-plan-008-03-core-concept",
+      "title": "Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning",
+      "category": "Planning, Housing & Urban Design",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901",
+      "source_family_count": 4,
+      "source_safe_real_world_scenario": true,
+      "normalized_hash": "sha256:ff93f2fa1a6e288bebf00991a8a78dc302a29ec47391392b8d95b14eef817647",
+      "candidate_hash": "sha256:ff93f2fa1a6e288bebf00991a8a78dc302a29ec47391392b8d95b14eef817647",
+      "answer_keys_preserved": true
+    },
+    {
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "cluster_id": "lea-matl-005-10-core-concept",
+      "slug": "lea-matl-005-10-core-concept",
+      "title": "Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+      "category": "Building Materials and Construction Methods",
+      "article_folder": ".ai/content-audit-export/articles/lea-matl-005-10-core-concept--aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+      "source_family_count": 3,
+      "source_safe_real_world_scenario": true,
+      "normalized_hash": "sha256:432abfda154185f60fa5bf4d32137e0530eedded5fc2ed8056b16b59ae55231a",
+      "candidate_hash": "sha256:432abfda154185f60fa5bf4d32137e0530eedded5fc2ed8056b16b59ae55231a",
+      "answer_keys_preserved": true
+    },
+    {
+      "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+      "cluster_id": "lea-strc-001-01-core-concept",
+      "slug": "lea-strc-001-01-core-concept",
+      "title": "Force - magnitude, direction, point of application, and resultant effects",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-001-01-core-concept--e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_family_count": 1,
+      "source_safe_real_world_scenario": true,
+      "normalized_hash": "sha256:99d387307734c43c86ace60f25a7062ccd1c6d3eba0f9c2a156f9fc8d661741a",
+      "candidate_hash": "sha256:99d387307734c43c86ace60f25a7062ccd1c6d3eba0f9c2a156f9fc8d661741a",
+      "answer_keys_preserved": true
+    }
+  ],
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "baseline_commit": "edb0c634e"
+  }
+}

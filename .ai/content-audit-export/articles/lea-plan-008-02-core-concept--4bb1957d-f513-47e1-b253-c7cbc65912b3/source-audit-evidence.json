@@ -1,94 +1,370 @@
 {
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-139-local-first",
+  "batch_number": 139,
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T00:18:12.556Z",
   "target": {
     "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
     "slug": "lea-plan-008-02-core-concept",
-    "candidate_sha256": "sha256:b5ab1a1c64068f7f743e870fba0921c94673bab61665e72fcb8a77259b54e65c",
-    "batch_number": "089"
+    "title": "Smart city planning - GIS-supported CLUP and evidence-based urban management",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3",
+    "normalized_sha256": "sha256:9a7b6f75e702d59d5ae1d13ca489cfb5a081a05f3cd50f04a9ea3fced9bd47a3",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/candidate.md"
   },
   "classification": {
+    "topic_family": "lea-plan-008-02-core-concept",
+    "category": "Planning, Housing & Urban Design",
+    "source_sensitivity": "legal_code_exam_or_technical_content",
     "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
-    "supplemental_internet_used": false
-  },
-  "scenario_enrichment": {
-    "status": "added",
-    "result": "source_safe_exam_useful_real_world_scenario_added",
-    "reason": "Scenario uses only local source-supported planning or accessibility claims."
-  },
-  "claims": [
-    {
-      "claim_id": "batch089-lea-plan-008-02-core-concept-claim-01",
-      "audit_result": "PASS",
-      "claim": "Article and linked question edits were narrowed to claims supported by the listed local raw source packet.",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
-        "raw_pdf_sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
-        "raw_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
-        "locator": "refined markdown lines 676-716, 1036-1074, and 1334-1370",
-        "quoted_pdf_excerpt": "The GIS Cookbook guides CLUP preparation through GIS as a planning and information management tool and produces geographic information products for participatory CLUP formulation."
-      }
-    },
-    {
-      "claim_id": "batch089-lea-plan-008-02-core-concept-claim-02",
-      "audit_result": "PASS",
-      "claim": "Supporting source DHSUD Resilient Urban Design and Development Guidelines checked for this article scope.",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
-        "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
-        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
-        "locator": "refined markdown lines 41-66 and 260-330",
-        "quoted_pdf_excerpt": "DHSUD frames resilient urban design around CLUP/ZO, evidence-based planning, compact mixed-use and transit-oriented development, and green resilient strategies."
-      }
-    },
-    {
-      "claim_id": "batch089-lea-plan-008-02-core-concept-linked-questions",
-      "audit_result": "PASS",
-      "claim": "10 linked question edits created and rewritten to the same local source-safe scope.",
-      "question_ids": [
-        "072c90a5-e8bc-4b40-807d-724b8b1dda68",
-        "98f11a94-64f3-45da-bb3c-1cb1a297b346",
-        "67e46ca4-3ed3-4172-9eb0-3fac72beb1ac",
-        "d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df",
-        "2e21964b-43d2-4671-88ef-0803c2ff3399",
-        "f5785968-ecc8-4776-8bdd-006dc42a8ffe",
-        "4e5ff8fd-644a-4e54-b257-dd5fabf12fa3",
-        "5fc8bb23-e697-4e5b-bd9a-7e9e8c78cc96",
-        "78dc6325-e27a-4334-a859-86b304fc7ad3",
-        "7fcd5545-d063-4637-82a7-000e941fdb23"
-      ],
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
-        "raw_pdf_sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
-        "raw_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
-        "locator": "refined markdown lines 676-716, 1036-1074, and 1334-1370",
-        "quoted_pdf_excerpt": "The GIS Cookbook guides CLUP preparation through GIS as a planning and information management tool and produces geographic information products for participatory CLUP formulation."
-      }
-    }
-  ],
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "source_resolution_notes": [
-    "Article scope retained only where supported by listed local raw-source packets."
-  ],
-  "unverified_or_rejected_claims": [],
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
+    "requires_raw_source_capture": true
   },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
+    "safe_for_supabase_upload": false,
     "blockers": [],
     "warnings": []
-  }
+  },
+  "raw_source_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "label": "Batch 139 raw source capture - Smart city planning - GIS-supported CLUP and evidence-based urban management",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Smart city planning - GIS-supported CLUP and evidence-based urban management; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+      "local_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+      "checked_markdown_lines": [
+        "HLURB CLUP GIS Guidebook: The GIS guidebook is part of the CLUP guideline series for LGU CLUP preparation. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "HLURB CLUP GIS Guidebook: It frames GIS as a planning and information-management tool for geographic information products. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "HLURB CLUP GIS Guidebook: GIS supports participatory CLUP formulation and rational land-use decision-making. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "HLURB CLUP GIS Guidebook: Information products include tables, graphs, and maps in digital and paper formats. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "DHSUD Resilient Urban Design and Development Guidelines: The guidelines use the CLUP and Zoning Ordinance as strategic tools for green, resilient urban renewal and development. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: They name compact, mixed-use, and transit-oriented development as resilient urban design strategies. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Urban design is framed as an organized spatial development process aligned with local land-use planning. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Local urban design guides and GIS-generated maps are used to connect CLUP goals, hazards, and interventions. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "BGC Design Standards and Guidelines: BGC is described through districts, broad land-use zones, road networks, transit, and pedestrian systems. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: The source includes residential, mixed-use, institutional, commercial, and transit-oriented district cues. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Development proposals must check master plan and zoning requirements before submission. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Pedestrian systems, skywalks, arcades, passageways, and district cooling are source-supported district design topics. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "RA 11285 Energy Efficiency and Conservation Act: The Act institutionalizes energy efficiency and conservation as national policy. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy audit evaluates energy consumption and current energy cost to identify efficiency interventions. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy efficiency means delivering the same service with less energy input or more service with the same input. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: LGUs are supported in local energy efficiency and conservation planning and implementation. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451"
+      ],
+      "local_source_families": [
+        {
+          "label": "HLURB CLUP GIS Guidebook",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+          "rawHash": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+          "refinedHash": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+          "checked_locator": "CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374"
+        },
+        {
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "rawHash": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refinedHash": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618"
+        },
+        {
+          "label": "BGC Design Standards and Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+          "rawHash": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+          "refinedHash": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+          "checked_locator": "BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890"
+        },
+        {
+          "label": "RA 11285 Energy Efficiency and Conservation Act",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+          "rawHash": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+          "refinedHash": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+          "checked_locator": "RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 139 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "label": "Batch 139 refined source conversion - Smart city planning - GIS-supported CLUP and evidence-based urban management",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+      "local_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+      "checked_markdown_lines": [
+        "HLURB CLUP GIS Guidebook: The GIS guidebook is part of the CLUP guideline series for LGU CLUP preparation. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "HLURB CLUP GIS Guidebook: It frames GIS as a planning and information-management tool for geographic information products. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "HLURB CLUP GIS Guidebook: GIS supports participatory CLUP formulation and rational land-use decision-making. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "HLURB CLUP GIS Guidebook: Information products include tables, graphs, and maps in digital and paper formats. Locator: CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374",
+        "DHSUD Resilient Urban Design and Development Guidelines: The guidelines use the CLUP and Zoning Ordinance as strategic tools for green, resilient urban renewal and development. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: They name compact, mixed-use, and transit-oriented development as resilient urban design strategies. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Urban design is framed as an organized spatial development process aligned with local land-use planning. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "DHSUD Resilient Urban Design and Development Guidelines: Local urban design guides and GIS-generated maps are used to connect CLUP goals, hazards, and interventions. Locator: DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618",
+        "BGC Design Standards and Guidelines: BGC is described through districts, broad land-use zones, road networks, transit, and pedestrian systems. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: The source includes residential, mixed-use, institutional, commercial, and transit-oriented district cues. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Development proposals must check master plan and zoning requirements before submission. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "BGC Design Standards and Guidelines: Pedestrian systems, skywalks, arcades, passageways, and district cooling are source-supported district design topics. Locator: BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890",
+        "RA 11285 Energy Efficiency and Conservation Act: The Act institutionalizes energy efficiency and conservation as national policy. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy audit evaluates energy consumption and current energy cost to identify efficiency interventions. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: Energy efficiency means delivering the same service with less energy input or more service with the same input. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451",
+        "RA 11285 Energy Efficiency and Conservation Act: LGUs are supported in local energy efficiency and conservation planning and implementation. Locator: RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451"
+      ],
+      "local_source_families": [
+        {
+          "label": "HLURB CLUP GIS Guidebook",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+          "rawHash": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+          "refinedHash": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+          "checked_locator": "CLUP GIS Guidebook refined markdown lines 676-712, 1036-1072, and 1334-1374"
+        },
+        {
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "rawHash": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refinedHash": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "DHSUD RUDD refined markdown lines 41-65, 331-349, 883-884, 1069, 2578-2592, and 2613-2618"
+        },
+        {
+          "label": "BGC Design Standards and Guidelines",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+          "rawHash": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+          "refinedHash": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+          "checked_locator": "BGC DSG refined markdown lines 328-412, 474-480, 498, 883-884, 1411-1415, 3217, and 3890"
+        },
+        {
+          "label": "RA 11285 Energy Efficiency and Conservation Act",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+          "rawHash": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+          "refinedHash": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+          "checked_locator": "RA 11285 refined markdown lines 37-105, 141-153, 185-241, 291-353, and 447-451"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-008-02-core-concept-article-batch-139",
+      "claim_text": "Article lea-plan-008-02-core-concept was rewritten to the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-072c90a5-e8bc-4b40-807d-724b8b1dda68-batch-139",
+      "claim_text": "Linked question 072c90a5-e8bc-4b40-807d-724b8b1dda68 was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-98f11a94-64f3-45da-bb3c-1cb1a297b346-batch-139",
+      "claim_text": "Linked question 98f11a94-64f3-45da-bb3c-1cb1a297b346 was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-67e46ca4-3ed3-4172-9eb0-3fac72beb1ac-batch-139",
+      "claim_text": "Linked question 67e46ca4-3ed3-4172-9eb0-3fac72beb1ac was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df-batch-139",
+      "claim_text": "Linked question d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2e21964b-43d2-4671-88ef-0803c2ff3399-batch-139",
+      "claim_text": "Linked question 2e21964b-43d2-4671-88ef-0803c2ff3399 was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f5785968-ecc8-4776-8bdd-006dc42a8ffe-batch-139",
+      "claim_text": "Linked question f5785968-ecc8-4776-8bdd-006dc42a8ffe was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4e5ff8fd-644a-4e54-b257-dd5fabf12fa3-batch-139",
+      "claim_text": "Linked question 4e5ff8fd-644a-4e54-b257-dd5fabf12fa3 was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5fc8bb23-e697-4e5b-bd9a-7e9e8c78cc96-batch-139",
+      "claim_text": "Linked question 5fc8bb23-e697-4e5b-bd9a-7e9e8c78cc96 was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-78dc6325-e27a-4334-a859-86b304fc7ad3-batch-139",
+      "claim_text": "Linked question 78dc6325-e27a-4334-a859-86b304fc7ad3 was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7fcd5545-d063-4637-82a7-000e941fdb23-batch-139",
+      "claim_text": "Linked question 7fcd5545-d063-4637-82a7-000e941fdb23 was rewritten inside the checked local source scope for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+      },
+      "blockers": []
+    }
+  ],
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+  },
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_batch_139",
+      "reason": "Exact CSI MasterFormat claims were not supported by a captured local source artifact, so the bundle was not rewritten in this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_batch_139",
+      "reason": "The local queue has raw structural references, but the needed utilities seismic-bracing refined conversion boundary was not available for this pass."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_batch_139",
+      "reason": "The raw NSCP 2015 PDF exists locally, but a refined conversion boundary for the required NSCP-specific claims was not available for this pass."
+    }
+  ]
 }

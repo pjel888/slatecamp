@@ -2,84 +2,63 @@
   "question_id": "e8ac5bd4-f744-43ba-bcc0-0fac96da038a",
   "baseline_hash": "sha256:0806f5fe2308a2b7fe12314c804e978885cffe92824558b48ac5fe8ace193d80",
   "action": "replace",
-  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for lea-plan-008-03-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-089",
-  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "reason": "source-audited-article-batch-139-local-first: residual local-first rewrite constrained to checked local source artifacts for Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning.",
+  "approved_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "approved_at": "2026-05-14T00:18:12.556Z",
   "source_audit_support": {
     "parent_article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
     "parent_article_slug": "lea-plan-008-03-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "DHSUD; Manila CLUP; BGC DSG; RA 11285",
-    "checked_markdown_lines": [
-      "refined markdown lines 41-66 and 260-330",
-      "refined markdown lines 328-432 and 3997-4005",
-      "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
-      "refined markdown lines 291-307 and 761-824"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md#sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md#sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901",
     "checked_sources": [
       {
-        "source_id": "dhsud-resilient-urban-design-guidelines",
-        "label": "DHSUD Resilient Urban Design and Development Guidelines",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
-        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
-        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
-        "locator": "refined markdown lines 41-66 and 260-330"
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture",
+        "label": "Batch 139 raw source capture - Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+        "sha256": "sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4"
       },
       {
-        "source_id": "bgc-design-standards-and-guidelines",
-        "label": "Bonifacio Global City Design Standards and Guidelines",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
-        "sha256": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
-        "raw_markdown_sha256": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
-        "locator": "refined markdown lines 328-432 and 3997-4005"
-      },
-      {
-        "source_id": "manila-clup-2005-2020",
-        "label": "Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
-        "sha256": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
-        "raw_markdown_sha256": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
-        "locator": "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002"
-      },
-      {
-        "source_id": "ra-11285-energy-efficiency-conservation-act",
-        "label": "RA 11285 Energy Efficiency and Conservation Act of 2019",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
-        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
-        "raw_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
-        "locator": "refined markdown lines 291-307 and 761-824"
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map",
+        "label": "Batch 139 refined source conversion - Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md",
+        "sha256": "sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 139 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "Which answer best describes sustainable urban development in this local source packet?",
+    "text": "Why is mixed use not automatically correct in every stem?",
     "options": [
       {
-        "id": "A",
-        "text": "A coordinated approach to land use, mobility, public space, resilience, and resource efficiency"
+        "id": "a",
+        "text": "It must fit the local plan, zoning, hazards, access, and district controls described by the source path."
       },
       {
-        "id": "B",
-        "text": "A single imported design style"
+        "id": "b",
+        "text": "Mixed use is banned in all districts."
       },
       {
-        "id": "C",
-        "text": "A rule to maximize parking only"
+        "id": "c",
+        "text": "Mixed use never affects trips."
       },
       {
-        "id": "D",
-        "text": "A ban on mixed use"
+        "id": "d",
+        "text": "The term is only a material property."
       }
     ],
-    "correct_option_id": "A",
-    "rationale": "The local sources connect sustainability with compact mixed use, pedestrian systems, resilience, CLUP/ZO, and energy efficiency.",
-    "explanation": "The local sources connect sustainability with compact mixed use, pedestrian systems, resilience, CLUP/ZO, and energy efficiency.",
-    "code_citation": "DHSUD; Manila CLUP; BGC DSG; RA 11285"
-  }
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "It must fit the local plan, zoning, hazards, access, and district controls described by the source path. This stays inside the Batch 139 local source boundary for Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning.",
+      "b": "Mixed use is banned in all districts. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "c": "Mixed use never affects trips. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "d": "The term is only a material property. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "correct": "It must fit the local plan, zoning, hazards, access, and district controls described by the source path. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md#sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md#sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901.",
+      "takeaway": "For Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning, classify the question cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md#sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md#sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901"
+    },
+    "explanation": "It must fit the local plan, zoning, hazards, access, and district controls described by the source path. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md#sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md#sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md#sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md#sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901"
+  },
+  "batch_question_template_index": 9
 }

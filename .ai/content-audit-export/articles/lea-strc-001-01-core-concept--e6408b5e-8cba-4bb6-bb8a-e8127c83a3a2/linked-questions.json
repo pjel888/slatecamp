@@ -1,30 +1,30 @@
 {
   "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:bb0913248c909425b136eeca24a3c1f1233ca5a01f38bb418082225478448e8f",
+  "linked_questions_hash": "sha256:755a34989ecbff3156aa7517d9145611415f5b25fa54ff0bb46cd2dbc7ac88a3",
   "question_count": 10,
   "questions": [
     {
       "question_id": "48eb0a06-e8e8-4c8f-8a48-911202c4b04e",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "In vector notation, a force is written as **F** = 12**i** − 8**j** kN. Which property is conveyed by the negative sign on the **j** component?",
+      "text": "A force item gives 5 kN but no arrow or contact point. What information is still needed for a complete force description?",
       "options": [
         {
           "id": "a",
-          "text": "The magnitude in the y-direction is negative, indicating a reversal of direction compared to positive values."
+          "text": "Paint color and room name."
         },
         {
           "id": "b",
-          "text": "The sense in the y-direction is downward"
+          "text": "Direction and point of application."
         },
         {
           "id": "c",
-          "text": "The direction is horizontal, which is a misunderstanding of vector components."
+          "text": "Only the project owner."
         },
         {
           "id": "d",
-          "text": "The overall magnitude is negative, which is incorrect as only the direction is affected."
+          "text": "Only the floor finish."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The negative sign on the **j** component (−8**j**) indicates that the y-direction component points downward, opposing the positive y-axis. This is sense—the orientation. The magnitude of this component is still 8 kN (positive).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Paint color and room name. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Direction and point of application. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "c": "Only the project owner. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Only the floor finish. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Direction and point of application. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Vector force representation",
+      "explanation": "Direction and point of application. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -51,30 +53,33 @@
       "model_id": "ALE-STRC-001-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2a42e2b74414eafd7dbe66bb28768f133d3a4d460bf8c152dd89bfbe4ba2fe1e"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:0ea08322cfae98443e85c9c4dc3d62483e4e3137de4e74ef0981136cd1e87d34",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "ffae35cb-f22e-4fd1-8592-597bf0b98c6f",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "Which of the following is NOT one of the three fundamental properties of a force?",
+      "text": "Which definition matches the checked statics source?",
       "options": [
         {
           "id": "a",
-          "text": "Magnitude"
+          "text": "Force is only a material color."
         },
         {
           "id": "b",
-          "text": "Duration"
+          "text": "Force is a push or pull exerted by one body on another."
         },
         {
           "id": "c",
-          "text": "Direction"
+          "text": "Force is only a zoning category."
         },
         {
           "id": "d",
-          "text": "Sense"
+          "text": "Force is only a cost estimate."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +88,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The three properties of a force are magnitude, direction, and sense. Duration (how long the force is applied) is not a defining property of the force itself—it affects load combinations but not the force's inherent character.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Force is only a material color. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Force is a push or pull exerted by one body on another. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "c": "Force is only a zoning category. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Force is only a cost estimate. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Force is a push or pull exerted by one body on another. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Chapter 1 (General Principles) or equivleant mechanics textbook defining force properties; or cite a specific Philippine architectural/structural standard that defines the three properties of force.",
+      "explanation": "Force is a push or pull exerted by one body on another. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +108,33 @@
       "model_id": "ALE-STRC-001-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:628801df68830a34a36fc665423132a178612c6bc4a926d00feb16bbeebd88e1"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:5e16bc44d5712f95af101a5edb3cc7387808cab206803d1143856d556f031073",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "3dfb76f3-abac-44b3-a8dc-5fca814b0fff",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "A structural analyst needs to fully specify a force acting on a beam to a construction team. Which combination of information is necessary and sufficient?",
+      "text": "Why is force treated as a vector in statics?",
       "options": [
         {
           "id": "a",
-          "text": "Magnitude and direction only, assuming uniform material properties and load distribution"
+          "text": "It has no direction."
         },
         {
           "id": "b",
-          "text": "Magnitude, direction, and sense"
+          "text": "It has magnitude, direction, and sense, and it is added or resolved by vector methods."
         },
         {
           "id": "c",
-          "text": "Direction and sense only, which are critical for understanding force application"
+          "text": "It is always a scalar area."
         },
         {
           "id": "d",
-          "text": "Magnitude and sense only, focusing on the intensity and orientation of the force"
+          "text": "It cannot be combined with other forces."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +143,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "All three properties—magnitude (the number), direction (the line of action), and sense (the arrow orientation)—are necessary to completely and unambiguously define a force. Without any one, the specification is incomplete or ambiguous.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It has no direction. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "It has magnitude, direction, and sense, and it is added or resolved by vector methods. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "c": "It is always a scalar area. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "It cannot be combined with other forces. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "It has magnitude, direction, and sense, and it is added or resolved by vector methods. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Force specification and communication standards",
+      "explanation": "It has magnitude, direction, and sense, and it is added or resolved by vector methods. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [],
@@ -151,30 +163,33 @@
       "model_id": "ALE-STRC-001-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f5d9a805674b7713a47632455156f6c5f0cfd08ede769f4b6a82256baefb33f3"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:c5c8f57deb417ee4678afd60c0944bb7de1eef2ce325d5f229c42167fd94a622",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "17d8ed0d-ff64-463a-9a7b-21b9f8eceeb0",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "A 25 kN force acts at 60° from the horizontal. Which statement is true about this force's properties?",
+      "text": "A bracket has two angled cable pulls. What is the safest analysis move?",
       "options": [
         {
           "id": "a",
-          "text": "Its magnitude is 60°"
+          "text": "Add only the printed magnitudes."
         },
         {
           "id": "b",
-          "text": "Its direction is 60° from horizontal"
+          "text": "Resolve the forces into components or find the resultant using vector logic."
         },
         {
           "id": "c",
-          "text": "Its sense is undefined without an arrow"
+          "text": "Ignore the angle of each cable."
         },
         {
           "id": "d",
-          "text": "All three properties are fully specified"
+          "text": "Use a land-use zoning table."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +198,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The phrase 'at 60° from horizontal' specifies the direction—the line of action. Magnitude is 25 kN. Sense requires an arrowhead on the diagram to show which of the two possible ways along the 60° line the force points.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Add only the printed magnitudes. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Resolve the forces into components or find the resultant using vector logic. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "c": "Ignore the angle of each cable. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Use a land-use zoning table. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Resolve the forces into components or find the resultant using vector logic. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Force specification in design",
+      "explanation": "Resolve the forces into components or find the resultant using vector logic. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "understand",
       "application_context": "calculation",
       "practice_context": [],
@@ -201,30 +218,33 @@
       "model_id": "ALE-STRC-001-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0101cf3a41fbeadd354be66a7ce1e429d2ff7287e474739ac08166f2ebc7f7ac"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:6dc638d97573d8798630299bb61ff7bb580e7b7ed389e8a8a9b2768cc7ab6e55",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "32f99e6b-b826-4360-97eb-4e70e0781f4d",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "In Philippine structural practice, a load specification reads: 'A dead load of 2.5 kN/m² is applied to the floor slab.' Identify which property of individual forces this load DOES NOT explicitly specify.",
+      "text": "What is a concentrated force?",
       "options": [
         {
           "id": "a",
-          "text": "Magnitude (per unit area)"
+          "text": "A force spread over all city districts."
         },
         {
           "id": "b",
-          "text": "Direction (perpendicular to slab)"
+          "text": "A material finish schedule."
         },
         {
           "id": "c",
-          "text": "Sense (downward, due to gravity)"
+          "text": "A green-building certificate."
         },
         {
           "id": "d",
-          "text": "The sense is explicitly stated"
+          "text": "A loading idealized as acting at a point when its contact area is small relative to the body."
         }
       ],
       "correct_option_id": "d",
@@ -233,14 +253,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "correct": "A downward load due to gravity is the standard assumption in Philippine strucorrect_option_id should be 'c' (Sense). Rationale should read: 'The specification gives magnitude (2.5 kN/m²) and direction (perpendicular to slab). Sense (downward) is NOT explicitly stated in the load description—it is only implied by the convention that dead loads act downward due to gravity. To be fully explicit, the specification should state: 2.5 kN/m² acting downward (perpendicular to slab).'ecification gives magnitude (2.5 kN/m²) and direction (perpendicular to slab). Sense is understood from context.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A force spread over all city districts. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "A material finish schedule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "A green-building certificate. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "A loading idealized as acting at a point when its contact area is small relative to the body. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "correct": "A loading idealized as acting at a point when its contact area is small relative to the body. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "NSCP Load Specification Conventions",
+      "explanation": "A loading idealized as acting at a point when its contact area is small relative to the body. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -251,30 +273,33 @@
       "model_id": "ALE-STRC-001-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e2c46615a7aa9e3a50c9ac4f7f906d29715bd2bc12fcaeff4e0b59c0ee1c9eba"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:612969c086ba0cfcb0670ed6b34a22273da61869213512f642eb8fdd1a94cfe2",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "90b04775-1fdc-467a-afd5-033b5f4e0004",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "A force of 15 kN acting horizontally to the right and a force of 15 kN acting horizontally to the left differ in which property or properties?",
+      "text": "A question asks for the equivalent single effect of several concurrent forces. What term is being tested?",
       "options": [
         {
           "id": "a",
-          "text": "Magnitude only"
+          "text": "Occupancy group."
         },
         {
           "id": "b",
-          "text": "Direction only"
+          "text": "Waste base case."
         },
         {
           "id": "c",
-          "text": "Sense only"
+          "text": "Resultant force."
         },
         {
           "id": "d",
-          "text": "Magnitude and sense"
+          "text": "Zoning overlay."
         }
       ],
       "correct_option_id": "c",
@@ -283,14 +308,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Both forces have the same magnitude (15 kN) and the same direction (horizontal line of action). They differ only in sense: one points right, the other left.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Occupancy group. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Waste base case. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Resultant force. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "d": "Zoning overlay. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Resultant force. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Force vector concepts",
+      "explanation": "Resultant force. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "understand",
       "application_context": "calculation",
       "practice_context": [],
@@ -301,30 +328,33 @@
       "model_id": "ALE-STRC-001-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e2f018475ac7ed423ffa60b28c0a32a60626488e612e9ac5d4939fae1bc9af50"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:d1c34c70fccb6c989c421d638783c6c9eb0f46c055068375e9afed1b234694f8",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "c35eb41d-3c40-4242-a3ad-34eeae6cf8f7",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "In a free-body diagram, a vertical downward arrow labeled '20 kN' represents a force. Which property is indicated by the downward direction of the arrow?",
+      "text": "Which answer is least source-safe for a force question?",
       "options": [
         {
           "id": "a",
-          "text": "Magnitude"
+          "text": "Identifying the body being analyzed."
         },
         {
           "id": "b",
-          "text": "Direction"
+          "text": "Resolving angled forces into components."
         },
         {
           "id": "c",
-          "text": "Sense"
+          "text": "Reporting only a number while ignoring direction and point of application."
         },
         {
           "id": "d",
-          "text": "Both direction and sense"
+          "text": "Checking whether equilibrium is requested."
         }
       ],
       "correct_option_id": "c",
@@ -333,14 +363,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The downward arrow indicates sense—the specific orientation (up or down) along the vertical line of action. The vertical line itself represents the direction (the line of action); the numerical label (20 kN) is the magnitude. Note: In a free-body diagram, the arrow symbol inherently communicates both direction (via its position/orientation) and sense (via its arrowhead), so option 'd' could be defended; however, the most precise answer is 'c' because sense is the distinguishing property the arrow adds to the line of action.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Identifying the body being analyzed. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Resolving angled forces into components. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Reporting only a number while ignoring direction and point of application. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "d": "Checking whether equilibrium is requested. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Reporting only a number while ignoring direction and point of application. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Free-body diagram conventions",
+      "explanation": "Reporting only a number while ignoring direction and point of application. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "understand",
       "application_context": "calculation",
       "practice_context": [],
@@ -351,30 +383,33 @@
       "model_id": "ALE-STRC-001-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5725a4e368ae13a4751420bffbf1c1861005985737778438393a3a958daaef8d"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:91a6d27f31c22688acd6fde3ed277e7693b50c42662680d6cbc031ebad531ced",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "c65ab666-a1b2-4062-8c01-1832d7ea50f3",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "On a structural drawing, you see a downward arrow at a column base labeled '500 kN.' What does the label '500 kN' represent?",
+      "text": "How does Newton third-law reasoning affect connection forces?",
       "options": [
         {
           "id": "a",
-          "text": "The sense of the force"
+          "text": "They are equal and same direction."
         },
         {
           "id": "b",
-          "text": "The magnitude of the force"
+          "text": "Action and reaction forces between interacting bodies are equal, opposite, and collinear."
         },
         {
           "id": "c",
-          "text": "The direction of the force"
+          "text": "They are unrelated to the body chosen."
         },
         {
           "id": "d",
-          "text": "The angle of inclination"
+          "text": "They remove the need for force direction."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +418,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The numerical value '500 kN' is the magnitude—the intensity or size of the force. The downward arrow gives the sense; the vertical line gives the direction.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They are equal and same direction. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Action and reaction forces between interacting bodies are equal, opposite, and collinear. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "c": "They are unrelated to the body chosen. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "They remove the need for force direction. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Action and reaction forces between interacting bodies are equal, opposite, and collinear. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Structural drawing conventions",
+      "explanation": "Action and reaction forces between interacting bodies are equal, opposite, and collinear. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "remember",
       "application_context": "calculation",
       "practice_context": [],
@@ -401,30 +438,33 @@
       "model_id": "ALE-STRC-001-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fa2b467251bee1f75da0d1824547f7175175529e08403b37373cb991dc9cb3d0"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:407caf22e0fd92d99ca8ed6975e6e9efe9351b03bb0d41284fea3b542d263a8d",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "d6f04ad7-b5c3-41ba-9336-3e35b6a549f6",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "Two forces act on a beam: Force A is 30 kN downward; Force B is 30 kN upward. The structural effects of these forces on the beam will be:",
+      "text": "A beam problem asks whether forces balance. Which source-safe path applies?",
       "options": [
         {
           "id": "a",
-          "text": "Identical, since both have the same magnitude"
+          "text": "Select a planning lineage answer."
         },
         {
           "id": "b",
-          "text": "Opposite, since they differ in sense"
+          "text": "Identify forces, resolve components if needed, and use equilibrium logic."
         },
         {
           "id": "c",
-          "text": "Identical, since both are vertical"
+          "text": "Choose a recycled-content rule."
         },
         {
           "id": "d",
-          "text": "Opposite, since they differ in direction"
+          "text": "Answer only with room occupancy."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +473,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The structural effects are opposite because the forces differ in sense. Force A pushes down; Force B pushes up. Although they share magnitude and direction, their opposite sense means they produce opposite effects—one creates tension at the bottom, the other at the top.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Select a planning lineage answer. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Identify forces, resolve components if needed, and use equilibrium logic. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "c": "Choose a recycled-content rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Answer only with room occupancy. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Identify forces, resolve components if needed, and use equilibrium logic. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Force effects in structural behavior",
+      "explanation": "Identify forces, resolve components if needed, and use equilibrium logic. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -451,30 +493,33 @@
       "model_id": "ALE-STRC-001-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:937f200604f4b08d2fe792826e9ad8314232eecff06d459ed14a31a7741bb86b"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:0c122b622eaefc30adee3e92497a8b60eafbff79be071172c500287d50ea4790",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     },
     {
       "question_id": "a972eb18-e492-4fd2-a80c-831f81c29347",
       "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
       "topic_id": "f20a8596-8128-47e1-b395-be4c5e7cbb79",
-      "text": "An engineer describes a force as 'acting downward along a vertical column.' Which of the three fundamental properties is NOT explicitly stated in this description?",
+      "text": "What is the practical LEA rule for force basics?",
       "options": [
         {
           "id": "a",
-          "text": "Magnitude"
+          "text": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate."
         },
         {
           "id": "b",
-          "text": "Direction"
+          "text": "Always use the largest option."
         },
         {
           "id": "c",
-          "text": "Sense"
+          "text": "Always ignore the line of action."
         },
         {
           "id": "d",
-          "text": "All three are stated"
+          "text": "Always treat force as a material property."
         }
       ],
       "correct_option_id": "a",
@@ -483,14 +528,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The description specifies direction ('along a vertical column') and sense ('downward'). The magnitude—the numerical value—is missing.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+        "b": "Always use the largest option. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Always ignore the line of action. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Always treat force as a material property. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+        "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
       },
-      "explanation": null,
-      "code_citation": "Force definition completeness",
+      "explanation": "Keep magnitude, direction, point of application, components, resultant, and equilibrium cues separate. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -501,8 +548,11 @@
       "model_id": "ALE-STRC-001-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4a9022a47e2702c3a247537db8a4b30f7bce8b9fd6745edb0d699c31123b58bf"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:85cc8d94ef057132192d2d3471c6deb2a2458df1fdfec8e940a048ab551c6ec5",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+      "source_notes": "Force is treated as a vector action characterized by magnitude, direction, and point of application, then resolved through components, resultants, and equilibrium reasoning."
     }
   ]
 }

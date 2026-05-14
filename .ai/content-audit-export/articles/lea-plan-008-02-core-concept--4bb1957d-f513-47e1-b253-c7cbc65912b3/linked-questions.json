@@ -1,30 +1,30 @@
 {
   "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:a7c10f9787d8f8bb69a89b6ac82d9d37a57b898e3bbbc9448b93783de75aebc2",
+  "linked_questions_hash": "sha256:6d1c7dc01378f1d5f7217dcd7a3075bd0f3b51907ceda6c23cd7d3238529d5dd",
   "question_count": 10,
   "questions": [
     {
       "question_id": "072c90a5-e8bc-4b40-807d-724b8b1dda68",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "A municipality uses GIS to overlay its zoning map with flood hazard zones and utility capacity zones. What planning question can this spatial analysis help answer?",
+      "text": "A smart-city stem asks how an LGU should support CLUP decisions with data. Which answer best fits the local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Which neighborhoods have the most residents who support development, based on recent community surveys and public meetings?"
+          "text": "Buy devices before defining planning questions."
         },
         {
           "id": "b",
-          "text": "How many people were surveyed in the most recent census, and what demographic trends were identified?"
+          "text": "Use a facade-style checklist."
         },
         {
           "id": "c",
-          "text": "What historical events shaped the current city boundary, considering past annexations and zoning changes?"
+          "text": "Skip stakeholder and spatial information."
         },
         {
           "id": "d",
-          "text": "Which areas are suitable for new development based on zoning, hazard avoidance, and adequate utility infrastructure?"
+          "text": "Use GIS information products such as maps, tables, and graphs to support CLUP preparation and land-use decisions."
         }
       ],
       "correct_option_id": "d",
@@ -33,15 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Public opinion requires surveys, not GIS spatial analysis.",
-        "b": "Census data is demographic, not spatial constraint analysis.",
-        "c": "Historical research uses archives, not GIS layer analysis.",
-        "d": "Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis.",
-        "correct": "Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis.",
-        "takeaway": "GIS spatial overlay = systematic identification of viable development sites meeting multiple constraints."
+        "a": "Buy devices before defining planning questions. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Use a facade-style checklist. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Skip stakeholder and spatial information. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Use GIS information products such as maps, tables, and graphs to support CLUP preparation and land-use decisions. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "correct": "Use GIS information products such as maps, tables, and graphs to support CLUP preparation and land-use decisions. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": "Public opinion requires surveys, not GIS spatial analysis. Census data is demographic, not spatial constraint analysis. Historical research uses archives, not GIS layer analysis. Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis. Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis. GIS spatial overlay = systematic identification of viable development sites meeting multiple constraints.",
-      "code_citation": "GIS Spatial Analysis; Site Suitability Modeling",
+      "explanation": "Use GIS information products such as maps, tables, and graphs to support CLUP preparation and land-use decisions. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -52,30 +53,33 @@
       "model_id": "ALE-PLAN-008-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-05-06T14:45:57.205+00:00",
-      "content_hash": "sha256:52580d16062478020b6e271cf0a1f3db9b536f20918fa212a634de14c5c7d963"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:c902b8c0644fc756f78cfc04e6f861325e6e262fb0a65261eb0984c8ee23b01f",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "98f11a94-64f3-45da-bb3c-1cb1a297b346",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "Which of the following best describes a smart city approach to urban planning?",
+      "text": "What is the safest meaning of smart planning in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Using integrated digital systems and real-time data to optimize urban services and inform planning decisions"
+          "text": "Evidence-based urban management through GIS, CLUP, hazards, district systems, and energy planning."
         },
         {
           "id": "b",
-          "text": "Installing digital technology without integrating it into decision-making processes, often leading to inefficiencies"
+          "text": "A city is smart only when it has a mobile app."
         },
         {
           "id": "c",
-          "text": "Replacing human planners with artificial intelligence systems, which can lead to a lack of human oversight"
+          "text": "All planning decisions are automated."
         },
         {
           "id": "d",
-          "text": "Focusing only on online engagement while ignoring traditional community participation, which can result in a disconnect"
+          "text": "Architectural style replaces land-use evidence."
         }
       ],
       "correct_option_id": "a",
@@ -84,15 +88,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions.",
-        "b": "Technology without integration is not smart; it is just infrastructure.",
-        "c": "Smart cities use AI and algorithms to support human decisions, not replace planners.",
-        "d": "Equitable smart cities use hybrid engagement (digital + traditional) to reach all populations.",
-        "correct": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions.",
-        "takeaway": "Smart city planning = data-informed, real-time responsive urban management."
+        "a": "Evidence-based urban management through GIS, CLUP, hazards, district systems, and energy planning. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "b": "A city is smart only when it has a mobile app. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "All planning decisions are automated. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Architectural style replaces land-use evidence. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Evidence-based urban management through GIS, CLUP, hazards, district systems, and energy planning. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions. Technology without integration is not smart; it is just infrastructure. Smart cities use AI and algorithms to support human decisions, not replace planners. Equitable smart cities use hybrid engagement (digital + traditional) to reach all populations. Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions. Smart city planning = data-informed, real-time responsive urban management.",
-      "code_citation": "World Economic Forum Smart City Framework; Smart City Definition",
+      "explanation": "Evidence-based urban management through GIS, CLUP, hazards, district systems, and energy planning. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -103,30 +108,33 @@
       "model_id": "ALE-PLAN-008-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-05-06T14:45:57.574316+00:00",
-      "content_hash": "sha256:ef6e07e21fc1a47894f3212954597f0bed5e1569b37c2effb0c40ead77f9c4cd"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:cf229f37ba69b88b19b321a393b1850784e033d3783f9d4d49235bfb427aa239",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "67e46ca4-3ed3-4172-9eb0-3fac72beb1ac",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "A smart city dashboard shows that a newly developed commercial district is generating 40% more traffic than the CLUP's traffic impact assessment predicted. What should the planner do in response?",
+      "text": "A planner uses flood maps and development constraints before selecting urban design interventions. Which source family supports this?",
       "options": [
         {
           "id": "a",
-          "text": "Analyze the discrepancy, assess road network adequacy, consider mitigation measures (transit, signal timing, use restrictions), and update traffic modeling for future CLUPs"
+          "text": "DHSUD resilient urban design and CLUP GIS guidance."
         },
         {
           "id": "b",
-          "text": "Immediately shut down the commercial district, disregarding any economic or social impacts this action might have"
+          "text": "A furniture procurement list."
         },
         {
           "id": "c",
-          "text": "Accept the higher traffic as a positive indicator of economic activity; no action needed, as the increased traffic is seen as beneficial"
+          "text": "A pure historical biography."
         },
         {
           "id": "d",
-          "text": "Replace the GIS system because the data is inaccurate, assuming that the system is the sole source of error without further investigation"
+          "text": "A concrete admixture table."
         }
       ],
       "correct_option_id": "a",
@@ -135,15 +143,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy.",
-        "b": "Shutting down an operational district is not proportionate; mitigation should be explored first.",
-        "c": "Higher-than-predicted congestion is a problem requiring response, not a success metric.",
-        "d": "Students blame the monitoring system when data contradicts predictions, but the confusion is methodological: incomplete planning assumptions (underestimating induced demand, underestimating density, external changes) cause discrepancies, not faulty sensors.",
-        "correct": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy.",
-        "takeaway": "Real-time monitoring enables adaptive planning—using live data to detect and respond to plan implementation gaps."
+        "a": "DHSUD resilient urban design and CLUP GIS guidance. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "b": "A furniture procurement list. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "A pure historical biography. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "A concrete admixture table. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "DHSUD resilient urban design and CLUP GIS guidance. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy. Shutting down an operational district is not proportionate; mitigation should be explored first. Higher-than-predicted congestion is a problem requiring response, not a success metric. Students blame the monitoring system when data contradicts predictions, but the confusion is methodological: incomplete planning assumptions (underestimating induced demand, underestimating density, external changes) cause discrepancies, not faulty sensors. Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy. Real-time monitoring enables adaptive planning—using live data to detect and respond to plan implementation gaps.",
-      "code_citation": "Real-time Urban Monitoring; Adaptive Planning",
+      "explanation": "DHSUD resilient urban design and CLUP GIS guidance. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -154,30 +163,33 @@
       "model_id": "ALE-PLAN-008-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-05-06T14:45:57.703968+00:00",
-      "content_hash": "sha256:38098e7de7c28de48892f610c559b35bc7b9a7b464cfc92b135434508a4e13d4"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:36f2f9f9c8097ffbff7860effe2441f5f3afdf13ef9f3e6dd53a65f762d160a0",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "What is a critical limitation of digital-only civic engagement in smart city planning?",
+      "text": "How does the CLUP GIS Guidebook describe GIS for local planning?",
       "options": [
         {
           "id": "a",
-          "text": "Online platforms are too slow to provide real-time feedback, limiting immediate community response"
+          "text": "As only a rendering program."
         },
         {
           "id": "b",
-          "text": "Digital-only engagement excludes populations without internet access or digital literacy, reducing equity and excluding voices from low-income communities"
+          "text": "As a planning and information-management tool that supports CLUP formulation."
         },
         {
           "id": "c",
-          "text": "Online participation requires approval from the national government before local implementation, delaying processes"
+          "text": "As a substitute for local planning authority."
         },
         {
           "id": "d",
-          "text": "Digital engagement provides no meaningful input compared to in-person consultations, which offer richer interaction"
+          "text": "As a decorative map requirement only."
         }
       ],
       "correct_option_id": "b",
@@ -186,15 +198,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Modern platforms can provide rapid feedback; speed is not the limiting factor.",
-        "b": "Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement.",
-        "c": "Digital engagement tools are local government decisions, not subject to national approval.",
-        "d": "Online engagement can be high-quality and meaningful; the issue is inclusion, not quality.",
-        "correct": "Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement.",
-        "takeaway": "Smart city equity principle: hybrid analog-digital engagement ensures no demographic group is excluded from planning participation."
+        "a": "As only a rendering program. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "As a planning and information-management tool that supports CLUP formulation. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "c": "As a substitute for local planning authority. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "As a decorative map requirement only. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "As a planning and information-management tool that supports CLUP formulation. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": "Modern platforms can provide rapid feedback; speed is not the limiting factor. Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement. Digital engagement tools are local government decisions, not subject to national approval. Online engagement can be high-quality and meaningful; the issue is inclusion, not quality. Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement. Smart city equity principle: hybrid analog-digital engagement ensures no demographic group is excluded from planning participation.",
-      "code_citation": "Digital Equity in Smart Cities; Participatory Planning Standards",
+      "explanation": "As a planning and information-management tool that supports CLUP formulation. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [],
@@ -205,30 +218,33 @@
       "model_id": "ALE-PLAN-008-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-05-06T14:45:57.831715+00:00",
-      "content_hash": "sha256:7ccd89fb114f929f2499ecb8df2025d08f4f47bfa5b08a2ce31e4efc6129a1ce"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:d6b5450b01fcf4cf206fa650c0baa2afd2bc6481194f0527034ba0aededca563",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "2e21964b-43d2-4671-88ef-0803c2ff3399",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "How does digital planning support the integration of climate resilience into CLUPs?",
+      "text": "Which answer overclaims a smart-city item?",
       "options": [
         {
           "id": "a",
-          "text": "By eliminating the need for DRRM provisions in zoning ordinances, which is a common misconception"
+          "text": "Using GIS to prepare information products."
         },
         {
           "id": "b",
-          "text": "By transferring all planning authority to artificial intelligence systems, which is not currently feasible or advisable"
+          "text": "Checking CLUP/ZO integration."
         },
         {
           "id": "c",
-          "text": "By enabling real-time monitoring of flood zones, water levels, and air quality to inform land use decisions and DRRM planning"
+          "text": "Claiming that sensors alone solve land-use, resilience, and energy decisions."
         },
         {
           "id": "d",
-          "text": "By focusing only on technological solutions without land use restrictions, which overlooks the importance of comprehensive planning"
+          "text": "Connecting energy audits to local efficiency planning."
         }
       ],
       "correct_option_id": "c",
@@ -237,15 +253,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Digital tools support DRRM but do not reduce the need for it; resilience provisions remain mandatory.",
-        "b": "Digital systems support human decision-making; they do not replace human planning judgment.",
-        "c": "Real-time environmental monitoring (flood risk, water quality, air quality, heat) provides data that guides DRRM-informed zoning, infrastructure placement, and resilience strategy in CLUPs.",
-        "d": "Smart cities integrate technology with land use controls; technology alone is insufficient for resilience.",
-        "correct": "Real-time environmental monitoring (flood risk, water quality, air quality, heat) provides data that guides DRRM-informed zoning, infrastructure placement, and resilience strategy in CLUPs.",
-        "takeaway": "Digital monitoring + land use planning = integrated climate resilience strategy."
+        "a": "Using GIS to prepare information products. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Checking CLUP/ZO integration. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Claiming that sensors alone solve land-use, resilience, and energy decisions. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "d": "Connecting energy audits to local efficiency planning. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Claiming that sensors alone solve land-use, resilience, and energy decisions. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": null,
-      "code_citation": "Smart City Framework; Climate Resilience Planning Integration",
+      "explanation": "Claiming that sensors alone solve land-use, resilience, and energy decisions. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -256,30 +273,33 @@
       "model_id": "ALE-PLAN-008-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:46da656a5d5ac554ba5ba77a6ecb4c96da923aa0004c2c4ba8b6f6acb86b34e0"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:eb1bbe3d7016e18a5b0aa89ed708fe07b223e9964d0f57b422210c38283e0183",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "f5785968-ecc8-4776-8bdd-006dc42a8ffe",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "What is the primary function of GIS (Geographic Information Systems) in urban planning?",
+      "text": "A district plan coordinates transit, pedestrian systems, land use, and access. Which local example supports that kind of system thinking?",
       "options": [
         {
           "id": "a",
-          "text": "To store historical records of past development projects, providing a comprehensive archive for future reference"
+          "text": "Only a masonry-unit definition."
         },
         {
           "id": "b",
-          "text": "To replace the Comprehensive Land Use Plan with digital maps, streamlining urban planning processes"
+          "text": "Only a roof-finish schedule."
         },
         {
           "id": "c",
-          "text": "To create spatial data layers that can be analyzed and overlaid to identify patterns and constraints"
+          "text": "BGC district design standards and guidelines."
         },
         {
           "id": "d",
-          "text": "To eliminate the need for zoning ordinances, simplifying regulatory frameworks"
+          "text": "Only a personal design preference."
         }
       ],
       "correct_option_id": "c",
@@ -288,15 +308,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "GIS stores current and historical data but its primary function is analysis, not archiving.",
-        "b": "GIS tools support CLUP preparation; they do not replace the CLUP itself.",
-        "c": "GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions.",
-        "d": "GIS provides information for zoning; it does not eliminate the need for zoning ordinances.",
-        "correct": "GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions.",
-        "takeaway": "GIS is the digital equivalent of transparent map overlays—layer analysis for planning insights."
+        "a": "Only a masonry-unit definition. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Only a roof-finish schedule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "BGC district design standards and guidelines. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "d": "Only a personal design preference. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "BGC district design standards and guidelines. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": "GIS stores current and historical data but its primary function is analysis, not archiving. GIS tools support CLUP preparation; they do not replace the CLUP itself. GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions. GIS provides information for zoning; it does not eliminate the need for zoning ordinances. GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions. GIS is the digital equivalent of transparent map overlays—layer analysis for planning insights.",
-      "code_citation": "GIS Fundamentals in Planning; ISO 19115",
+      "explanation": "BGC district design standards and guidelines. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -307,30 +328,33 @@
       "model_id": "ALE-PLAN-008-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-05-06T14:45:57.337957+00:00",
-      "content_hash": "sha256:e51514daf839a3ab534febb36526d917caffa0c6b8ce3864b4634c5ef2b4b54d"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:c4cb7a4db825fd352be0d1b05f4915f668b33d31d4502aeffde68213a15b1780",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "4e5ff8fd-644a-4e54-b257-dd5fabf12fa3",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "A planner uses GIS to identify that three competing zoning changes are proposed for the same area by different municipal departments. The GIS overlay shows that only one is compatible with existing utility capacity and hazard constraints. How does this exemplify smart city planning?",
+      "text": "Where does RA 11285 fit in a smart-city planning answer?",
       "options": [
         {
           "id": "a",
-          "text": "It shows that GIS can settle political conflicts without human input, which is an oversimplification of the tool's capabilities"
+          "text": "It supplies all land-use zoning maps."
         },
         {
           "id": "b",
-          "text": "It demonstrates how spatial data analysis enables evidence-based resolution of planning conflicts, prioritizing proposals that are implementable"
+          "text": "It supports energy-efficiency audits, projects, conservation programs, and local energy planning."
         },
         {
           "id": "c",
-          "text": "It proves that digital tools eliminate the need for departmental coordination, which is a misunderstanding of the collaborative nature of planning"
+          "text": "It replaces the CLUP GIS process."
         },
         {
           "id": "d",
-          "text": "It allows the planner to veto all proposals and start over, which is not a typical or recommended use of GIS in planning"
+          "text": "It determines every pedestrian route."
         }
       ],
       "correct_option_id": "b",
@@ -339,15 +363,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "GIS informs decisions; human deliberation is still required.",
-        "b": "GIS reveals which proposals are feasible given real constraints (utility capacity, hazards). This does not eliminate politics or conflict, but it provides objective information to inform negotiation and decision-making among stakeholders.",
-        "c": "GIS supports coordination; it does not replace the need for inter-departmental dialogue.",
-        "d": "GIS provides information to guide choice among options, not to veto them unilaterally.",
-        "correct": "GIS reveals which proposals are feasible given real constraints (utility capacity, hazards). This does not eliminate politics or conflict, but it provides objective information to inform negotiation and decision-making among stakeholders.",
-        "takeaway": "Smart city planning = data-informed decision-making that gives stakeholders objective ground truth for negotiation."
+        "a": "It supplies all land-use zoning maps. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "It supports energy-efficiency audits, projects, conservation programs, and local energy planning. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "c": "It replaces the CLUP GIS process. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "It determines every pedestrian route. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "It supports energy-efficiency audits, projects, conservation programs, and local energy planning. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": null,
-      "code_citation": "GIS in Planning Conflict Resolution; Evidence-Based Planning",
+      "explanation": "It supports energy-efficiency audits, projects, conservation programs, and local energy planning. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -358,30 +383,33 @@
       "model_id": "ALE-PLAN-008-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d28dda208fa9b0986dc023386c0e9ad83eaf94ff267f00db18bc2adba7b98286"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:614e82157e7d4e74df14dfa4ffdbb83668b5ab595564a76fd4dfb669fa728919",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "5fc8bb23-e697-4e5b-bd9a-7e9e8c78cc96",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "How should a smart city approach address the observation that GIS models predicted adequate traffic capacity but real-world data shows chronic congestion in a district that received more development than originally planned?",
+      "text": "A question asks what information products help communicate the CLUP. What is the source-safe set?",
       "options": [
         {
           "id": "a",
-          "text": "Conclude that GIS is unreliable and abandon it in favor of intuition-based planning, which may lead to subjective and inconsistent results"
+          "text": "Only a slogan and a logo."
         },
         {
           "id": "b",
-          "text": "Assume the discrepancy is due to inaccurate sensor data and replace the monitoring system, potentially overlooking other contributing factors"
+          "text": "Only a building elevation."
         },
         {
           "id": "c",
-          "text": "Accept chronic congestion as an inevitable cost of economic growth, disregarding potential solutions that could alleviate the issue"
+          "text": "Only a material sample board."
         },
         {
           "id": "d",
-          "text": "Use the discrepancy as evidence that traffic assumptions were incomplete; update modeling to include induced demand, reassess the district's carrying capacity, and revise future development limits or implement congestion mitigation"
+          "text": "Tables, graphs, maps, and digital or paper-based GIS products."
         }
       ],
       "correct_option_id": "d",
@@ -390,15 +418,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "One inaccuracy does not invalidate GIS; rather, it shows how GIS reveals problems that paper planning would not catch as quickly.",
-        "b": "Before blaming data, investigate whether the underlying planning assumptions (traffic generation, mode choice, parking) were incomplete.",
-        "c": "Chronic congestion degrades livability and contradicts planning goals; it requires response.",
-        "d": "The value of smart city monitoring is not perfect prediction but rapid detection of implementation problems. When real data contradicts predictions, planners adapt by investigating root causes (in this case, likely induced demand or development density exceeding assumptions), updating models, and adjusting strategy.",
-        "correct": "The value of smart city monitoring is not perfect prediction but rapid detection of implementation problems. When real data contradicts predictions, planners adapt by investigating root causes (in this case, likely induced demand or development density exceeding assumptions), updating models, and adjusting strategy.",
-        "takeaway": "Smart city planning is adaptive: discrepancies between prediction and reality trigger model refinement and strategy adjustment, not system abandonment."
+        "a": "Only a slogan and a logo. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Only a building elevation. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Only a material sample board. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "Tables, graphs, maps, and digital or paper-based GIS products. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "correct": "Tables, graphs, maps, and digital or paper-based GIS products. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": null,
-      "code_citation": "Adaptive Smart City Planning; Real-time Data and Modeling",
+      "explanation": "Tables, graphs, maps, and digital or paper-based GIS products. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [],
@@ -409,30 +438,33 @@
       "model_id": "ALE-PLAN-008-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c72c27d888d39391e29f93c4bc9b5875ee40416a4bf2c2c6d6a0bed83a0c22b1"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:07ca800882195cc192b9311b5918c84853389f4240135d381dbea5981e9252b6",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "78dc6325-e27a-4334-a859-86b304fc7ad3",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "How does a digital civic engagement platform serve planning objectives under RA 7160 (Local Government Code)?",
+      "text": "Why should smart-city answers avoid gadget branding alone?",
       "options": [
         {
           "id": "a",
-          "text": "It allows planners to announce decisions without community input, which may lead to public dissatisfaction"
+          "text": "The sources ban all technology."
         },
         {
           "id": "b",
-          "text": "It provides an online channel for collecting community input on priorities, reporting infrastructure problems, and increasing planning transparency"
+          "text": "The checked local sources emphasize planning evidence, CLUP integration, hazards, systems, and management."
         },
         {
           "id": "c",
-          "text": "It replaces the need for in-person public hearings and consultation, which can limit direct community interaction"
+          "text": "The sources only discuss ornament."
         },
         {
           "id": "d",
-          "text": "It is optional and not required by RA 7160, though it can enhance community engagement"
+          "text": "The sources require no documentation."
         }
       ],
       "correct_option_id": "b",
@@ -441,15 +473,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Engagement platforms should enable two-way communication, not one-way announcements.",
-        "b": "Digital platforms extend participation channels required by RA 7160 by making planning data accessible online and collecting community feedback, priorities, and ground-truth infrastructure data.",
-        "c": "Digital platforms supplement in-person consultations; they do not replace the value of face-to-face dialogue.",
-        "d": "While not explicitly mandated, digital engagement supports RA 7160's participatory planning requirement.",
-        "correct": "Digital platforms extend participation channels required by RA 7160 by making planning data accessible online and collecting community feedback, priorities, and ground-truth infrastructure data.",
-        "takeaway": "Digital engagement = expanded participation channels that support RA 7160's mandatory community involvement in planning."
+        "a": "The sources ban all technology. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "The checked local sources emphasize planning evidence, CLUP integration, hazards, systems, and management. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "c": "The sources only discuss ornament. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "d": "The sources require no documentation. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "The checked local sources emphasize planning evidence, CLUP integration, hazards, systems, and management. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": null,
-      "code_citation": "RA 7160; Digital Civic Engagement; Participatory Planning",
+      "explanation": "The checked local sources emphasize planning evidence, CLUP integration, hazards, systems, and management. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -460,30 +493,33 @@
       "model_id": "ALE-PLAN-008-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f4056b12a384d60fc6551aabcf52fafb9f682a78e74476dd3746ea35f756ff64"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:465f8ad0e14d69993e8f5150bde98580f61fd87552faf6792f68a2aebf7ed67b",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     },
     {
       "question_id": "7fcd5545-d063-4637-82a7-000e941fdb23",
       "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
       "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
-      "text": "A municipality implements IoT sensors throughout the city to track water consumption. Which of the following is the most direct planning benefit of this real-time data?",
+      "text": "What is the best first move when a smart-city stem includes hazard, land-use, and energy facts?",
       "options": [
         {
           "id": "a",
-          "text": "Reducing the need for environmental impact statements, which are often costly and time-consuming to produce"
+          "text": "Choose the newest-sounding term."
         },
         {
           "id": "b",
-          "text": "Determining the historical origin of the city's water system, which can provide insights into past urban planning decisions"
+          "text": "Answer from software marketing language."
         },
         {
           "id": "c",
-          "text": "Identifying water-loss zones in distribution networks and avoiding development in areas where utilities cannot expand capacity"
+          "text": "Classify which source path is being tested: GIS/CLUP, resilient urban design, district systems, or RA 11285 energy management."
         },
         {
           "id": "d",
-          "text": "Enabling the municipality to bill residents more accurately, thereby improving revenue collection and financial planning"
+          "text": "Ignore the local planning process."
         }
       ],
       "correct_option_id": "c",
@@ -492,15 +528,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Environmental impact statements are still required; IoT data may enhance them but does not replace them.",
-        "b": "Historical research is not directly served by real-time IoT data.",
-        "c": "Real-time utility consumption data reveals infrastructure bottlenecks and constraints. Planners use this to avoid directing new development to areas where utilities cannot serve it, and to prioritize infrastructure upgrades in CLUPs.",
-        "d": "Billing is a utility function, not a planning benefit.",
-        "correct": "Real-time utility consumption data reveals infrastructure bottlenecks and constraints. Planners use this to avoid directing new development to areas where utilities cannot serve it, and to prioritize infrastructure upgrades in CLUPs.",
-        "takeaway": "IoT utility monitoring informs land use decisions by revealing where growth is infrastructure-constrained."
+        "a": "Choose the newest-sounding term. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "b": "Answer from software marketing language. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "c": "Classify which source path is being tested: GIS/CLUP, resilient urban design, district systems, or RA 11285 energy management. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+        "d": "Ignore the local planning process. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+        "correct": "Classify which source path is being tested: GIS/CLUP, resilient urban design, district systems, or RA 11285 energy management. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+        "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       },
-      "explanation": null,
-      "code_citation": "IoT and Smart Infrastructure; Utility-Informed Planning",
+      "explanation": "Classify which source path is being tested: GIS/CLUP, resilient urban design, district systems, or RA 11285 energy management. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -511,8 +548,11 @@
       "model_id": "ALE-PLAN-008-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9e9276e1bc0d945627a9a5daf9c5304c93547bb382adf180dfad390945ece6d0"
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "content_hash": "sha256:f4f80966a6d275343eb955913012774d6c929d0a03943e6a7f3c24ef8f2fe4fd",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+      "source_notes": "Smart-city claims are constrained to GIS-supported CLUP information products, evidence-based resilient planning, district systems, and energy-efficiency management."
     }
   ]
 }

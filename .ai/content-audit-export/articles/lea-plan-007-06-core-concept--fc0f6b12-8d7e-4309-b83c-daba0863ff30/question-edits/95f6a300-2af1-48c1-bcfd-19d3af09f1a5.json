@@ -2,74 +2,63 @@
   "question_id": "95f6a300-2af1-48c1-bcfd-19d3af09f1a5",
   "baseline_hash": "sha256:6b4eb660ce1265514f62a9152bc336a6ef366cf626cc1b1dde459cd9b83fb8fa",
   "action": "replace",
-  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for lea-plan-007-06-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-089",
-  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "reason": "source-audited-article-batch-139-local-first: residual local-first rewrite constrained to checked local source artifacts for Philippine planning lineage - Burnham, CLUP, and district design.",
+  "approved_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "approved_at": "2026-05-14T00:18:12.556Z",
   "source_audit_support": {
     "parent_article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
     "parent_article_slug": "lea-plan-007-06-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "DHSUD Resilient Urban Design and Development Guidelines",
-    "checked_markdown_lines": [
-      "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
-      "refined markdown lines 328-432 and 3997-4005",
-      "refined markdown lines 41-66 and 260-330"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
     "checked_sources": [
       {
-        "source_id": "manila-clup-2005-2020",
-        "label": "Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
-        "sha256": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
-        "raw_markdown_sha256": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
-        "locator": "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002"
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture",
+        "label": "Batch 139 raw source capture - Philippine planning lineage - Burnham, CLUP, and district design",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md",
+        "sha256": "sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8"
       },
       {
-        "source_id": "bgc-design-standards-and-guidelines",
-        "label": "Bonifacio Global City Design Standards and Guidelines",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
-        "sha256": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
-        "raw_markdown_sha256": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
-        "locator": "refined markdown lines 328-432 and 3997-4005"
-      },
-      {
-        "source_id": "dhsud-resilient-urban-design-guidelines",
-        "label": "DHSUD Resilient Urban Design and Development Guidelines",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
-        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
-        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
-        "locator": "refined markdown lines 41-66 and 260-330"
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map",
+        "label": "Batch 139 refined source conversion - Philippine planning lineage - Burnham, CLUP, and district design",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md",
+        "sha256": "sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 139 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "How does DHSUD extend planning beyond historical civic design?",
+    "text": "A question asks for resilient urban design after identifying a historic planning influence. Which move is most source-safe?",
     "options": [
       {
-        "id": "A",
-        "text": "By linking urban design with CLUP/ZO, resilience, livability, and sustainability"
+        "id": "a",
+        "text": "Repeat the name of the historic planner only."
       },
       {
-        "id": "B",
-        "text": "By removing local planning tools"
+        "id": "b",
+        "text": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides."
       },
       {
-        "id": "C",
-        "text": "By replacing all plans with monument design"
+        "id": "c",
+        "text": "Select a facade style as the complete answer."
       },
       {
-        "id": "D",
-        "text": "By banning mixed use"
+        "id": "d",
+        "text": "Ignore land-use and hazard evidence."
       }
     ],
-    "correct_option_id": "A",
-    "rationale": "DHSUD frames resilient urban design through CLUP/ZO and strategies for resilience, livability, and sustainability.",
-    "explanation": "DHSUD frames resilient urban design through CLUP/ZO and strategies for resilience, livability, and sustainability.",
-    "code_citation": "DHSUD Resilient Urban Design and Development Guidelines"
-  }
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Repeat the name of the historic planner only. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "b": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides. This stays inside the Batch 139 local source boundary for Philippine planning lineage - Burnham, CLUP, and district design.",
+      "c": "Select a facade style as the complete answer. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "d": "Ignore land-use and hazard evidence. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "correct": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+      "takeaway": "For Philippine planning lineage - Burnham, CLUP, and district design, classify the question cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
+    },
+    "explanation": "Connect the proposal to CLUP/ZO integration, hazards, compact mixed-use strategies, and local urban design guides. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md#sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md#sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14"
+  },
+  "batch_question_template_index": 5
 }

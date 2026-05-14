@@ -1,0 +1,346 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-139-local-first",
+  "batch_number": 139,
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T00:18:12.556Z",
+  "target": {
+    "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+    "slug": "lea-matl-005-10-core-concept",
+    "title": "Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-005-10-core-concept--aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+    "normalized_sha256": "sha256:432abfda154185f60fa5bf4d32137e0530eedded5fc2ed8056b16b59ae55231a",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-005-10-core-concept--aec393fa-0fb3-4b72-8ce2-774c4c2c756a/candidate.md"
+  },
+  "classification": {
+    "topic_family": "lea-matl-005-10-core-concept",
+    "category": "Building Materials and Construction Methods",
+    "source_sensitivity": "legal_code_exam_or_technical_content",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_source_capture": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_source_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "label": "Batch 139 raw source capture - Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+      "local_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+      "checked_markdown_lines": [
+        "BERDE Buildings Version 5.0.0 User Guide: BERDE assesses, measures, monitors, and certifies project performance beyond existing laws and mandatory standards. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "BERDE Buildings Version 5.0.0 User Guide: BERDE certification stages depend on project life-cycle stage, project type, and occupancy type. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "BERDE Buildings Version 5.0.0 User Guide: Specifications document materials, products, equipment, and processes for construction. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "BERDE Buildings Version 5.0.0 User Guide: Deconstruction waste management includes waste base cases, diversion targets, records, reuse, recycling, and landfill diversion. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "Green Building Illustrated: Green building addresses energy, water, material conservation, indoor environmental quality, and environmental impact. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "Green Building Illustrated: Material impacts include extraction, processing, manufacture, transport, hazardous materials, and construction waste. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "Green Building Illustrated: Material conservation is supported by using less material, avoiding waste, salvaging, reusing, and using recycled content. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "Green Building Illustrated: Embodied energy includes the energy to harvest, manufacture, prepare, and transport materials to a construction site. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "George Salvan Architectural Building Materials: The source covers properties, applications, systems of construction, specification methods, and character in use. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458",
+        "George Salvan Architectural Building Materials: It discusses building-material knowledge needed for selection and specification. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458",
+        "George Salvan Architectural Building Materials: Material selection can include durability, use conditions, protection, and construction specifications. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458",
+        "George Salvan Architectural Building Materials: The source includes examples of recycled or byproduct material use such as fly ash as a pozzolan. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458"
+      ],
+      "local_source_families": [
+        {
+          "label": "BERDE Buildings Version 5.0.0 User Guide",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+          "rawHash": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+          "refinedHash": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+          "checked_locator": "BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106"
+        },
+        {
+          "label": "Green Building Illustrated",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "rawHash": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refinedHash": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "checked_locator": "Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535"
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "rawHash": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "refinedHash": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "checked_locator": "Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 139 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "label": "Batch 139 refined source conversion - Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T00:18:12.556Z",
+      "updated_at": "2026-05-14T00:18:12.556Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+      "local_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+      "checked_markdown_lines": [
+        "BERDE Buildings Version 5.0.0 User Guide: BERDE assesses, measures, monitors, and certifies project performance beyond existing laws and mandatory standards. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "BERDE Buildings Version 5.0.0 User Guide: BERDE certification stages depend on project life-cycle stage, project type, and occupancy type. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "BERDE Buildings Version 5.0.0 User Guide: Specifications document materials, products, equipment, and processes for construction. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "BERDE Buildings Version 5.0.0 User Guide: Deconstruction waste management includes waste base cases, diversion targets, records, reuse, recycling, and landfill diversion. Locator: BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106",
+        "Green Building Illustrated: Green building addresses energy, water, material conservation, indoor environmental quality, and environmental impact. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "Green Building Illustrated: Material impacts include extraction, processing, manufacture, transport, hazardous materials, and construction waste. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "Green Building Illustrated: Material conservation is supported by using less material, avoiding waste, salvaging, reusing, and using recycled content. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "Green Building Illustrated: Embodied energy includes the energy to harvest, manufacture, prepare, and transport materials to a construction site. Locator: Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535",
+        "George Salvan Architectural Building Materials: The source covers properties, applications, systems of construction, specification methods, and character in use. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458",
+        "George Salvan Architectural Building Materials: It discusses building-material knowledge needed for selection and specification. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458",
+        "George Salvan Architectural Building Materials: Material selection can include durability, use conditions, protection, and construction specifications. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458",
+        "George Salvan Architectural Building Materials: The source includes examples of recycled or byproduct material use such as fly ash as a pozzolan. Locator: Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458"
+      ],
+      "local_source_families": [
+        {
+          "label": "BERDE Buildings Version 5.0.0 User Guide",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+          "rawHash": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+          "refinedHash": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+          "checked_locator": "BERDE refined markdown lines 123-171, 261-364, 1163-1177, 1347-1377, 1931-2090, and 2100-2106"
+        },
+        {
+          "label": "Green Building Illustrated",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "rawHash": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refinedHash": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "checked_locator": "Green Building Illustrated refined markdown lines 163-169, 271-284, 718-787, and 7323-7535"
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "rawHash": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "refinedHash": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "checked_locator": "Salvan Building Materials refined markdown lines 73-79, 571-573, 1282, 1457-1463, and 12960-13458"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-005-10-core-concept-article-batch-139",
+      "claim_text": "Article lea-matl-005-10-core-concept was rewritten to the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c8e7e98f-a73d-4d1e-a27c-314a6f7e3c33-batch-139",
+      "claim_text": "Linked question c8e7e98f-a73d-4d1e-a27c-314a6f7e3c33 was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-85838bf6-e180-4782-96c2-cb7f7cc57b39-batch-139",
+      "claim_text": "Linked question 85838bf6-e180-4782-96c2-cb7f7cc57b39 was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-bb095102-5db7-4396-a559-74d4494411ac-batch-139",
+      "claim_text": "Linked question bb095102-5db7-4396-a559-74d4494411ac was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-132ed755-7a92-4d48-ab9a-d635ec84c46a-batch-139",
+      "claim_text": "Linked question 132ed755-7a92-4d48-ab9a-d635ec84c46a was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6e8c5c2b-8bc9-4d36-8da8-7c320801b967-batch-139",
+      "claim_text": "Linked question 6e8c5c2b-8bc9-4d36-8da8-7c320801b967 was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-48e24168-922d-430c-b600-31d9a796c272-batch-139",
+      "claim_text": "Linked question 48e24168-922d-430c-b600-31d9a796c272 was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-dc5ba8ac-b4af-4e55-863f-fdcebf4c6016-batch-139",
+      "claim_text": "Linked question dc5ba8ac-b4af-4e55-863f-fdcebf4c6016 was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3e0c3cc1-afa8-4d03-a617-5a29e56f223c-batch-139",
+      "claim_text": "Linked question 3e0c3cc1-afa8-4d03-a617-5a29e56f223c was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-081141d5-4fee-4b19-9833-4d20a23f6bee-batch-139",
+      "claim_text": "Linked question 081141d5-4fee-4b19-9833-4d20a23f6bee was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6b94dd89-2065-47fb-ac22-1b95c4862def-batch-139",
+      "claim_text": "Linked question 6b94dd89-2065-47fb-ac22-1b95c4862def was rewritten inside the checked local source scope for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      },
+      "blockers": []
+    }
+  ],
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+  },
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_batch_139",
+      "reason": "Exact CSI MasterFormat claims were not supported by a captured local source artifact, so the bundle was not rewritten in this batch."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_batch_139",
+      "reason": "The local queue has raw structural references, but the needed utilities seismic-bracing refined conversion boundary was not available for this pass."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_batch_139",
+      "reason": "The raw NSCP 2015 PDF exists locally, but a refined conversion boundary for the required NSCP-specific claims was not available for this pass."
+    }
+  ]
+}

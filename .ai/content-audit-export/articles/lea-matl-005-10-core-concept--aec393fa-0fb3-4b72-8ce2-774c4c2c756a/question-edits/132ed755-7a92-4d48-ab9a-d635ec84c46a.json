@@ -1,0 +1,64 @@
+{
+  "question_id": "132ed755-7a92-4d48-ab9a-d635ec84c46a",
+  "baseline_hash": "sha256:51c1c1663bc5e8ef5c310a771d73107f8bfc36c41e2ee5db6383be59cc2887be",
+  "action": "replace",
+  "reason": "source-audited-article-batch-139-local-first: residual local-first rewrite constrained to checked local source artifacts for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+  "approved_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "approved_at": "2026-05-14T00:18:12.556Z",
+  "source_audit_support": {
+    "parent_article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+    "parent_article_slug": "lea-matl-005-10-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+    "checked_sources": [
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture",
+        "label": "Batch 139 raw source capture - Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1"
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map",
+        "label": "Batch 139 refined source conversion - Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 139 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What does BERDE use specifications for in this topic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Written documentation of materials, products, equipment, and construction processes."
+      },
+      {
+        "id": "b",
+        "text": "A replacement for all building laws."
+      },
+      {
+        "id": "c",
+        "text": "A structural free-body diagram."
+      },
+      {
+        "id": "d",
+        "text": "A biography of the designer."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Written documentation of materials, products, equipment, and construction processes. This stays inside the Batch 139 local source boundary for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "b": "A replacement for all building laws. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "c": "A structural free-body diagram. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "d": "A biography of the designer. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "correct": "Written documentation of materials, products, equipment, and construction processes. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1.",
+      "takeaway": "For Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy, classify the question cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+    },
+    "explanation": "Written documentation of materials, products, equipment, and construction processes. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+  },
+  "batch_question_template_index": 4
+}

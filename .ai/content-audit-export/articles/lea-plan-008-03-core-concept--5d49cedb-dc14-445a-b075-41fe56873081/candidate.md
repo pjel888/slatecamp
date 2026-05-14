@@ -1,39 +1,32 @@
-# Sustainable Urban Development - Compact, Mixed-Use, Transit-Supportive, and Energy-Efficient Planning
+# Sustainable Urban Development: Compact, Mixed-Use, Transit-Supportive, and Energy-Efficient Planning
 
 ## Board Exam Quick Check
 
-Use local source-supported sustainability language: compact development, mixed use, transit-oriented development, pedestrian systems, resilient public realm, CLUP/ZO implementation, and energy efficiency. Do not rely on unsupported global framework labels when the local raw source packet does not verify them.
+For sustainable urban development, separate the source-supported planning moves from broad environmental slogans. The checked local sources support compact development, mixed-use development, transit and pedestrian systems, CLUP/ZO integration, hazard-aware urban design, and energy-efficiency planning.
 
-## Learning Goal
+## What You Need to Know for the LEA
 
-After reading this article, you should be able to apply sustainable urban development principles to Philippine planning scenarios by connecting compact mixed-use form, transit access, pedestrian networks, resilient urban design, and energy efficiency.
+DHSUD's resilient urban design guidance states that climate and disaster impacts require green and resilient strategies such as compact, mixed-use, and transit-oriented development. It also frames urban design as part of the CLUP and Zoning Ordinance process, with local guides, maps, and development constraints feeding the design response.
 
-## Core Concept
-
-Sustainable urban development is not a single design style. In the local planning sources for this batch, it is a coordinated approach to land use, mobility, public space, resilience, and resource efficiency. DHSUD's resilient urban design guidance links compact, mixed-use, and transit-oriented development with resilience, livability, and sustainability. The Manila CLUP similarly treats mixed use as a way to share facilities, improve convenience, encourage pedestrian activity, reduce infrastructure costs, and reduce fuel use.
-
-## Compact and Mixed-Use Planning
-
-Compact mixed-use districts reduce the need for long trips by placing compatible activities near each other. In local planning terms, this supports pedestrian activity, shared infrastructure, and more efficient public services. BGC's standards show this at district scale: business, institutional, residential, retail, entertainment, mixed-use, and station-area functions are organized into a planned urban district.
-
-## Transit and Pedestrian Systems
-
-Transit-supportive development needs safe, continuous pedestrian movement. The BGC guidelines require pedestrian plans that show site movement at grade and, where needed, above or below grade. The Manila CLUP also links walkability, greenery, open spaces, and transport improvements to the city's long-term urban form.
-
-## Energy Efficiency and Resilience
-
-RA 11285 adds the resource-efficiency layer: energy users must use energy resources efficiently and promote efficient technologies and systems. In planning and building terms, this supports the exam logic that sustainability is both spatial and operational: site planning, mobility choices, public realm design, and building energy management reinforce each other.
+BGC provides a district-scale example: residential, mixed-use, institutional, commercial, transit, pedestrian, access, and public-realm systems are coordinated through a master plan and design standards. Manila CLUP adds the local planning frame for managing growth, land-use fragmentation, infrastructure, flooding, waterfront amenity, and zoning. RA 11285 supports energy efficiency and conservation through audits, projects, and local energy efficiency plans.
 
 ## Real World Scenario
 
-A city rezones land around a future transit station. A source-safe sustainable plan clusters compatible residential, office, retail, civic, and open-space uses; designs direct pedestrian routes to the station; keeps sidewalks usable and shaded; integrates flood and heat-risk evidence; and requires energy-efficient public facilities. The result is not simply higher density; it is density organized around access, resilience, and resource efficiency.
+A city wants to redevelop an underused corridor near transit while reducing flood risk and energy demand. A source-safe answer links compact mixed-use allocation to the CLUP/ZO, protects pedestrian and transit connectivity, checks hazards and development constraints, and includes local energy-efficiency planning.
 
-## LEA Recall
+## Key Facts and Testable Items
 
-| Cue | Source-safe response |
+| Exam cue | Source-safe answer |
 | --- | --- |
-| Compact mixed use | Place compatible uses near each other to support shared facilities and pedestrian activity |
-| Transit-oriented development | Organize higher-activity uses around transit access and walkable routes |
-| Complete-street logic in local terms | Safe pedestrian, transit, and public-realm movement before car-only widening |
-| Energy efficiency | RA 11285 supports efficient energy use and conservation measures |
-| Resilience | DHSUD connects CLUP/ZO, urban design, climate risk, and green resilient strategies |
+| Compact development | Higher-density activity mix where locally supported and coordinated with the plan. |
+| Mixed-use development | Residential, commercial, office, institutional, and recreational uses may reduce trips and trip lengths. |
+| Transit-supportive planning | Coordinate land use with pedestrian, transit, access, and public-realm systems. |
+| Resilience | Use hazard, climate, and development-constraint evidence before choosing interventions. |
+| Energy efficiency | Use RA 11285 audits, efficiency projects, and local energy plans. |
+
+## Common Mistakes
+
+- Treating sustainability as only planting or branding.
+- Ignoring CLUP and zoning integration.
+- Applying one district example as a national rule without local plan checks.
+- Adding unsupported performance numbers or imported rating rules.

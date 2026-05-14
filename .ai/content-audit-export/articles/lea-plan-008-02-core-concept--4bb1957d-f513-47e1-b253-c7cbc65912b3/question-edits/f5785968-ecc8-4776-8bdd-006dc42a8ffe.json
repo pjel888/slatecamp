@@ -2,64 +2,63 @@
   "question_id": "f5785968-ecc8-4776-8bdd-006dc42a8ffe",
   "baseline_hash": "sha256:e51514daf839a3ab534febb36526d917caffa0c6b8ce3864b4634c5ef2b4b54d",
   "action": "replace",
-  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for lea-plan-008-02-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-089",
-  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "reason": "source-audited-article-batch-139-local-first: residual local-first rewrite constrained to checked local source artifacts for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+  "approved_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "approved_at": "2026-05-14T00:18:12.556Z",
   "source_audit_support": {
     "parent_article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
     "parent_article_slug": "lea-plan-008-02-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "DHSUD Resilient Urban Design and Development Guidelines",
-    "checked_markdown_lines": [
-      "refined markdown lines 676-716, 1036-1074, and 1334-1370",
-      "refined markdown lines 41-66 and 260-330"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
     "checked_sources": [
       {
-        "source_id": "clup-gis-guidebook-hlurb",
-        "label": "CLUP GIS Guidebook (HLURB)",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
-        "sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
-        "raw_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
-        "locator": "refined markdown lines 676-716, 1036-1074, and 1334-1370"
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture",
+        "label": "Batch 139 raw source capture - Smart city planning - GIS-supported CLUP and evidence-based urban management",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "sha256": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c"
       },
       {
-        "source_id": "dhsud-resilient-urban-design-guidelines",
-        "label": "DHSUD Resilient Urban Design and Development Guidelines",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
-        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
-        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
-        "locator": "refined markdown lines 41-66 and 260-330"
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map",
+        "label": "Batch 139 refined source conversion - Smart city planning - GIS-supported CLUP and evidence-based urban management",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "sha256": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 139 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "How does resilient urban design relate to smart planning in the local source packet?",
+    "text": "A district plan coordinates transit, pedestrian systems, land use, and access. Which local example supports that kind of system thinking?",
     "options": [
       {
-        "id": "A",
-        "text": "It uses evidence-based CLUP/ZO decisions for hazards, mobility, housing, and public space"
+        "id": "a",
+        "text": "Only a masonry-unit definition."
       },
       {
-        "id": "B",
-        "text": "It ignores data"
+        "id": "b",
+        "text": "Only a roof-finish schedule."
       },
       {
-        "id": "C",
-        "text": "It focuses only on software procurement"
+        "id": "c",
+        "text": "BGC district design standards and guidelines."
       },
       {
-        "id": "D",
-        "text": "It bans maps"
+        "id": "d",
+        "text": "Only a personal design preference."
       }
     ],
-    "correct_option_id": "A",
-    "rationale": "DHSUD links resilient urban design to evidence-based planning and CLUP/ZO implementation.",
-    "explanation": "DHSUD links resilient urban design to evidence-based planning and CLUP/ZO implementation.",
-    "code_citation": "DHSUD Resilient Urban Design and Development Guidelines"
-  }
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Only a masonry-unit definition. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "b": "Only a roof-finish schedule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "c": "BGC district design standards and guidelines. This stays inside the Batch 139 local source boundary for Smart city planning - GIS-supported CLUP and evidence-based urban management.",
+      "d": "Only a personal design preference. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "correct": "BGC district design standards and guidelines. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+      "takeaway": "For Smart city planning - GIS-supported CLUP and evidence-based urban management, classify the question cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+    },
+    "explanation": "BGC district design standards and guidelines. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md#sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md#sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79"
+  },
+  "batch_question_template_index": 6
 }

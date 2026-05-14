@@ -1,0 +1,64 @@
+{
+  "question_id": "3dfb76f3-abac-44b3-a8dc-5fca814b0fff",
+  "baseline_hash": "sha256:f5d9a805674b7713a47632455156f6c5f0cfd08ede769f4b6a82256baefb33f3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-139-local-first: residual local-first rewrite constrained to checked local source artifacts for Force - magnitude, direction, point of application, and resultant effects.",
+  "approved_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "approved_at": "2026-05-14T00:18:12.556Z",
+  "source_audit_support": {
+    "parent_article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+    "parent_article_slug": "lea-strc-001-01-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+    "checked_sources": [
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-raw-source-capture",
+        "label": "Batch 139 raw source capture - Force - magnitude, direction, point of application, and resultant effects",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+        "sha256": "sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a"
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-refined-source-map",
+        "label": "Batch 139 refined source conversion - Force - magnitude, direction, point of application, and resultant effects",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md",
+        "sha256": "sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 139 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why is force treated as a vector in statics?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It has no direction."
+      },
+      {
+        "id": "b",
+        "text": "It has magnitude, direction, and sense, and it is added or resolved by vector methods."
+      },
+      {
+        "id": "c",
+        "text": "It is always a scalar area."
+      },
+      {
+        "id": "d",
+        "text": "It cannot be combined with other forces."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It has no direction. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "b": "It has magnitude, direction, and sense, and it is added or resolved by vector methods. This stays inside the Batch 139 local source boundary for Force - magnitude, direction, point of application, and resultant effects.",
+      "c": "It is always a scalar area. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "d": "It cannot be combined with other forces. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "correct": "It has magnitude, direction, and sense, and it is added or resolved by vector methods. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+      "takeaway": "For Force - magnitude, direction, point of application, and resultant effects, classify the question cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
+    },
+    "explanation": "It has magnitude, direction, and sense, and it is added or resolved by vector methods. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md#sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md#sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47"
+  },
+  "batch_question_template_index": 3
+}

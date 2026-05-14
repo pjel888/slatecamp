@@ -1,0 +1,773 @@
+{
+  "batch_id": "source-audited-article-batch-139-local-first",
+  "generated_at": "2026-05-14T00:22:14.909Z",
+  "status": "passed_local_validation_git_handoff_pending",
+  "passed": true,
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "baseline_commit": "edb0c634e",
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/sync-state.json",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "selection": {
+    "selected_clusters": [
+      {
+        "cluster_id": "lea-plan-007-06-core-concept",
+        "slug": "lea-plan-007-06-core-concept",
+        "title": "Philippine planning lineage - Burnham, CLUP, and district design",
+        "category": "Planning, Housing & Urban Design",
+        "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-plan-008-02-core-concept",
+        "slug": "lea-plan-008-02-core-concept",
+        "title": "Smart city planning - GIS-supported CLUP and evidence-based urban management",
+        "category": "Planning, Housing & Urban Design",
+        "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-plan-008-03-core-concept",
+        "slug": "lea-plan-008-03-core-concept",
+        "title": "Sustainable urban development - compact, mixed-use, transit-supportive, and energy-efficient planning",
+        "category": "Planning, Housing & Urban Design",
+        "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-matl-005-10-core-concept",
+        "slug": "lea-matl-005-10-core-concept",
+        "title": "Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+        "category": "Building Materials and Construction Methods",
+        "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-strc-001-01-core-concept",
+        "slug": "lea-strc-001-01-core-concept",
+        "title": "Force - magnitude, direction, point of application, and resultant effects",
+        "category": "Structural Conceptualization",
+        "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md"
+      }
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-008-02-core-concept",
+        "title": "Articulation of form",
+        "status": "blocked_carried_forward",
+        "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+      },
+      {
+        "cluster_id": "lea-theo-008-03-core-concept",
+        "title": "Transformation of form",
+        "status": "blocked_carried_forward",
+        "reason": "Carried forward from earlier batches because the required theory-form claim scope still lacks a sufficient local source boundary."
+      },
+      {
+        "cluster_id": "lea-matl-009-02-core-concept",
+        "title": "CSI MasterFormat",
+        "status": "blocked_batch_139",
+        "reason": "Exact CSI MasterFormat claims were not supported by a captured local source artifact, so the bundle was not rewritten in this batch."
+      },
+      {
+        "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+        "title": "Seismic bracing and earthquake resilience",
+        "status": "blocked_batch_139",
+        "reason": "The local queue has raw structural references, but the needed utilities seismic-bracing refined conversion boundary was not available for this pass."
+      },
+      {
+        "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+        "title": "Seismic bracing requirements per NSCP 2015",
+        "status": "blocked_batch_139",
+        "reason": "The raw NSCP 2015 PDF exists locally, but a refined conversion boundary for the required NSCP-specific claims was not available for this pass."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Batch 139 continued after Batch 138 consumed Theory 009-04/009-05 and Design 003-04/003-06/004-05. It selected the next sourceable planning residuals, one sourceable materials bundle, and one sourceable structural bundle after blocking exact CSI and utilities seismic bundles with local-source boundary gaps."
+  },
+  "totals": {
+    "article_count": 5,
+    "linked_question_count": 50,
+    "question_edit_count": 50,
+    "source_artifact_count": 10,
+    "blocked_count": 5
+  },
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+        "slug": "lea-plan-007-06-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+        "slug": "lea-plan-008-02-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+        "slug": "lea-plan-008-03-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+        "slug": "lea-matl-005-10-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+        "slug": "lea-strc-001-01-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+        "slug": "lea-plan-007-06-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+        "slug": "lea-plan-008-02-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+        "slug": "lea-plan-008-03-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+        "slug": "lea-matl-005-10-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+        "slug": "lea-strc-001-01-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "parsed_count": 102,
+    "failures": []
+  },
+  "marker_source_gap_scan": {
+    "passed": true,
+    "scanned_count": 75,
+    "matches": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-007-06-core-concept.source-capture.md",
+        "expected": "sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8",
+        "actual": "sha256:71f6c235a1f34354b245851b8f178db24d77278ae8badee8109b4186bab226a8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture:raw:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "expected": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "actual": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture:refined:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "expected": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "actual": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture:raw:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "expected": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "actual": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture:refined:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "expected": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "actual": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture:raw:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "expected": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "actual": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-raw-source-capture:refined:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "expected": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "actual": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-007-06-core-concept.refined.md",
+        "expected": "sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+        "actual": "sha256:3c6f366c55e39e16368bbd9b472165ed812ccd5b92b0280506ad60d38e54ff14",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map:raw:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "expected": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "actual": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map:refined:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "expected": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "actual": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map:raw:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "expected": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "actual": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map:refined:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "expected": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "actual": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map:raw:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "expected": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "actual": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-007-06-core-concept-refined-source-map:refined:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "expected": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "actual": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-02-core-concept.source-capture.md",
+        "expected": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "actual": "sha256:5bdc75ea1abde4a3a197f6b2e124c338d7be9e5680a6b2dccf9be33859d1132c",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:raw:HLURB CLUP GIS Guidebook",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "expected": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "actual": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:refined:HLURB CLUP GIS Guidebook",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "expected": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "actual": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:raw:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "expected": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "actual": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:refined:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "expected": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "actual": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:raw:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "expected": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "actual": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:refined:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "expected": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "actual": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:raw:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "expected": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "actual": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-raw-source-capture:refined:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "expected": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "actual": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-02-core-concept.refined.md",
+        "expected": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "actual": "sha256:ee5786cfd7207ec1d73963d8750c65cac5e13a4a1417e940f75a749228be6c79",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:raw:HLURB CLUP GIS Guidebook",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "expected": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "actual": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:refined:HLURB CLUP GIS Guidebook",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "expected": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "actual": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:raw:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "expected": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "actual": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:refined:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "expected": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "actual": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:raw:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "expected": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "actual": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:refined:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "expected": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "actual": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:raw:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "expected": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "actual": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-02-core-concept-refined-source-map:refined:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "expected": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "actual": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-139/lea-plan-008-03-core-concept.source-capture.md",
+        "expected": "sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4",
+        "actual": "sha256:e1e24b198562959caf841b59d4db119ed0d2c27a8b367f2ca64a09344ef418a4",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:raw:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "expected": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "actual": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:refined:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "expected": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "actual": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:raw:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "expected": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "actual": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:refined:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "expected": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "actual": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:raw:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "expected": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "actual": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:refined:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "expected": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "actual": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:raw:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "expected": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "actual": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-raw-source-capture:refined:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "expected": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "actual": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-139/lea-plan-008-03-core-concept.refined.md",
+        "expected": "sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901",
+        "actual": "sha256:438dd84af17b312a76ec1ea2cfc2733ada824a449ca7e0b36547c760dfb2a901",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:raw:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "expected": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "actual": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:refined:DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "expected": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "actual": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:raw:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "expected": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "actual": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:refined:BGC Design Standards and Guidelines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "expected": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "actual": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:raw:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "expected": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "actual": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:refined:RA 11285 Energy Efficiency and Conservation Act",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "expected": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "actual": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:raw:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "expected": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "actual": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-plan-008-03-core-concept-refined-source-map:refined:Manila CLUP 2005-2020",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "expected": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "actual": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "expected": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "actual": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture:raw:BERDE Buildings Version 5.0.0 User Guide",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "expected": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "actual": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture:refined:BERDE Buildings Version 5.0.0 User Guide",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "expected": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+        "actual": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture:raw:Green Building Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "expected": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "actual": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture:refined:Green Building Illustrated",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "expected": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "actual": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture:raw:George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture:refined:George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "expected": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "actual": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map:raw:BERDE Buildings Version 5.0.0 User Guide",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "expected": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "actual": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map:refined:BERDE Buildings Version 5.0.0 User Guide",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "expected": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+        "actual": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map:raw:Green Building Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "expected": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "actual": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map:refined:Green Building Illustrated",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "expected": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "actual": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map:raw:George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map:refined:George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-139/lea-strc-001-01-core-concept.source-capture.md",
+        "expected": "sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a",
+        "actual": "sha256:5e9e85481a09621c08413def12bfc7bfaf7383614bd0d533bc978c65b0e04e7a",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-raw-source-capture:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-raw-source-capture:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-139/lea-strc-001-01-core-concept.refined.md",
+        "expected": "sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+        "actual": "sha256:3e9a4411648a4e05ab8d7bc960e81bddba462541b9a03f055e5060e1ae425d47",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-refined-source-map:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-139-lea-strc-001-01-core-concept-refined-source-map:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      }
+    ]
+  },
+  "question_edit_count": {
+    "passed": true,
+    "expected": 50,
+    "actual": 50,
+    "answer_key_changes": 0,
+    "articles": [
+      {
+        "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+        "slug": "lea-plan-007-06-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+        "slug": "lea-plan-008-02-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+        "slug": "lea-plan-008-03-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+        "slug": "lea-matl-005-10-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2",
+        "slug": "lea-strc-001-01-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "stale_files": []
+  },
+  "targeted_tests": {
+    "passed": true,
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts"
+  },
+  "scoped_git_diff_check": {
+    "passed": true,
+    "command": "git diff --check -- <batch-139-stage-paths>",
+    "output": ""
+  }
+}

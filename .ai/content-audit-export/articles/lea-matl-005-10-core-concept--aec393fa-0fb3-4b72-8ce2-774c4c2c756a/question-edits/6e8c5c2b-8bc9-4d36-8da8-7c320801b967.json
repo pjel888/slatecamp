@@ -1,0 +1,64 @@
+{
+  "question_id": "6e8c5c2b-8bc9-4d36-8da8-7c320801b967",
+  "baseline_hash": "sha256:570c263e39bed556fafe3ddd2be91ba48bfda61c962852e54e02e59dd1bc5e63",
+  "action": "replace",
+  "reason": "source-audited-article-batch-139-local-first: residual local-first rewrite constrained to checked local source artifacts for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+  "approved_by": "codex-local-first-source-audited-article-batch-139-local-first",
+  "approved_at": "2026-05-14T00:18:12.556Z",
+  "source_audit_support": {
+    "parent_article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+    "parent_article_slug": "lea-matl-005-10-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1",
+    "checked_sources": [
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-raw-source-capture",
+        "label": "Batch 139 raw source capture - Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md",
+        "sha256": "sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1"
+      },
+      {
+        "source_id": "batch-139-lea-matl-005-10-core-concept-refined-source-map",
+        "label": "Batch 139 refined source conversion - Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md",
+        "sha256": "sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 139 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "A renovation question mentions doors, flooring, and fixtures removed from an existing building. What is the best answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check salvage, reuse, recycling, handling, storage, collection, and diversion records."
+      },
+      {
+        "id": "b",
+        "text": "Send all components to landfill without review."
+      },
+      {
+        "id": "c",
+        "text": "Answer with a zoning map."
+      },
+      {
+        "id": "d",
+        "text": "Choose a facade style."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Check salvage, reuse, recycling, handling, storage, collection, and diversion records. This stays inside the Batch 139 local source boundary for Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy.",
+      "b": "Send all components to landfill without review. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "c": "Answer with a zoning map. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "d": "Choose a facade style. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 139 local source boundary.",
+      "correct": "Check salvage, reuse, recycling, handling, storage, collection, and diversion records. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1.",
+      "takeaway": "For Material life-cycle thinking - BERDE, waste diversion, reuse, and embodied energy, classify the question cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+    },
+    "explanation": "Check salvage, reuse, recycling, handling, storage, collection, and diversion records. Supported by the Batch 139 local source boundary: vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/source-map-batch-139/lea-matl-005-10-core-concept.source-capture.md#sha256:ea8398a822a4e7a1706d2a8e386a2ea571d7f15f115dd3c2db9dc31369448ac1; vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/source-map-batch-139/lea-matl-005-10-core-concept.refined.md#sha256:39cb798283450d79e1b6aa81891fdd2557769ef56ee25d6e12b663bae90927a1"
+  },
+  "batch_question_template_index": 5
+}
