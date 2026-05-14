@@ -1,0 +1,64 @@
+{
+  "question_id": "98e870f2-5f59-434f-99d4-d062d934f6fd",
+  "baseline_hash": "sha256:521dc35fbcc9e99a18ff4247b68da7d8071910a2169dc9e4d919d3f6a61881b1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Static Determinacy.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+    "parent_article_slug": "lea-strc-001-06-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Static Determinacy",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Static Determinacy",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What should be checked separately from unknown count?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The article slug length."
+      },
+      {
+        "id": "b",
+        "text": "The source file extension only."
+      },
+      {
+        "id": "c",
+        "text": "Stability and proper constraint arrangement."
+      },
+      {
+        "id": "d",
+        "text": "The option order in the MCQ."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "The article slug length. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "b": "The source file extension only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "c": "Stability and proper constraint arrangement. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+      "d": "The option order in the MCQ. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "Stability and proper constraint arrangement. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+    },
+    "explanation": "Stability and proper constraint arrangement. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+  },
+  "batch_question_template_index": 9
+}

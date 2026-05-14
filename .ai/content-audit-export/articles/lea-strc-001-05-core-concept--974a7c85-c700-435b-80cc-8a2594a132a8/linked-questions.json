@@ -1,30 +1,30 @@
 {
   "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:a2a8c6d1982fd1389e4ea16831621b9618423c2652fc63e35a1fb9db5f3b3eae",
+  "linked_questions_hash": "sha256:70caf05b2eecacf28413e46794dedd0ee66a01c653aecc8c29f19c532202ebbe",
   "question_count": 10,
   "questions": [
     {
       "question_id": "4500e14d-4ec8-4e0c-80bf-be0df0574860",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "Shear force in a structural member is characterized by which type of action?",
+      "text": "What is the method used to expose internal loadings in a member?",
       "options": [
         {
           "id": "a",
-          "text": "Pulling along the longitudinal axis, which is typically associated with tensile forces in structural analysis"
+          "text": "Pick a material color from the drawing."
         },
         {
           "id": "b",
-          "text": "Pushing along the longitudinal axis, often related to compressive forces in structural elements"
+          "text": "Use a zoning table."
         },
         {
           "id": "c",
-          "text": "Sliding or cutting action perpendicular to the longitudinal axis"
+          "text": "Pass an imaginary section through the member and draw the free-body diagram of a segment."
         },
         {
           "id": "d",
-          "text": "Twisting about the longitudinal axis, which is generally a result of torsional forces"
+          "text": "Ignore the cut and solve only by memory."
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Shear is a transverse (perpendicular) force that tends to cause one portion of the member to slide past the adjacent portion, as if one section were trying to shear off the other.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Pick a material color from the drawing. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Use a zoning table. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Pass an imaginary section through the member and draw the free-body diagram of a segment. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "d": "Ignore the cut and solve only by memory. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Pass an imaginary section through the member and draw the free-body diagram of a segment. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Shear Concept",
+      "explanation": "Pass an imaginary section through the member and draw the free-body diagram of a segment. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-001-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:208c111415675d8231a952c2120e3403b041f2f0962f57051a8b29cfbc4ec186"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:21139fd84b875bd55bec8d3ca5d23da05201d8736ae372bbff95a9110b72466f"
     },
     {
       "question_id": "b182164e-af71-46f9-a510-9a414aa30f52",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "Torsion in a structural member is best described as:",
+      "text": "What is the normal force at a section?",
       "options": [
         {
           "id": "a",
-          "text": "An axial pulling force, which acts along the length of the member"
+          "text": "The support reaction from a roller only."
         },
         {
           "id": "b",
-          "text": "A transverse shear force, acting perpendicular to the axis of the member"
+          "text": "The centroid of the distributed load."
         },
         {
           "id": "c",
-          "text": "A twisting moment about the longitudinal axis"
+          "text": "The force component perpendicular to the cross section."
         },
         {
           "id": "d",
-          "text": "A bending moment perpendicular to the member, causing deflection"
+          "text": "The code occupancy load."
         }
       ],
       "correct_option_id": "c",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Torsion is a twisting moment that acts about the member's longitudinal axis, causing the member to rotate or spiral. It develops from eccentric loading or when forces are applied with a twisting effect.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The support reaction from a roller only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The centroid of the distributed load. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "The force component perpendicular to the cross section. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "d": "The code occupancy load. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The force component perpendicular to the cross section. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Torsion and Twisting Behavior",
+      "explanation": "The force component perpendicular to the cross section. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-001-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:582a6e19aea7bb9a18f94386fdc5e9123b67dfc8c3c17f2b7b1686a984d6a467"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:3ce51570a8740c9b260836cb535d56e193a999847fbefb081aae70a4e4b96134"
     },
     {
       "question_id": "66154d23-fcc2-40b4-bd57-c60aa95e3bc9",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "Which internal force is characterized by a pulling action along the longitudinal axis of a member?",
+      "text": "What is the shear force at a section?",
       "options": [
         {
           "id": "a",
-          "text": "Compression"
+          "text": "A force that always acts only along the member axis."
         },
         {
           "id": "b",
-          "text": "Tension"
+          "text": "The force component tangent to the cross section."
         },
         {
           "id": "c",
-          "text": "Shear"
+          "text": "A couple moment that twists the whole member."
         },
         {
           "id": "d",
-          "text": "Bending"
+          "text": "A material density value."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Tension is a pulling force that acts along the longitudinal axis, causing the member to stretch or elongate. The fibers are being pulled apart.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A force that always acts only along the member axis. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The force component tangent to the cross section. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "c": "A couple moment that twists the whole member. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A material density value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The force component tangent to the cross section. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Internal Forces",
+      "explanation": "The force component tangent to the cross section. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-001-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b6fe8d392239f6d1907a92f767eaa362cc63c0fcf8f942bed20c02b0c566fbe4"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:4e2830129a58a0af4b9c4a45323c6d880decb8a96f93fc2eebdbb4a0afd26886"
     },
     {
       "question_id": "16dbced7-8a85-4209-9758-ed0434506371",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "A cantilever beam fixed at one end develops which internal forces at the fixed support?",
+      "text": "What is the bending moment at a section?",
       "options": [
         {
           "id": "a",
-          "text": "Shear and compression only"
+          "text": "The area under a live-load table."
         },
         {
           "id": "b",
-          "text": "Bending moment and shear only"
+          "text": "The couple moment that prevents relative rotation between the cut segments."
         },
         {
           "id": "c",
-          "text": "All five internal forces equally"
+          "text": "A support symbol with no force effect."
         },
         {
           "id": "d",
-          "text": "Tension, if the load is large enough"
+          "text": "The number of stories in the building."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A cantilever under downward loading develops shear (to resist the transverse force) and a bending moment (to resist rotation at the fixed end). Tension and compression along the axis are minimal unless there is axial loading. Torsion is absent unless the load is eccentric.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The area under a live-load table. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The couple moment that prevents relative rotation between the cut segments. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "c": "A support symbol with no force effect. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "The number of stories in the building. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The couple moment that prevents relative rotation between the cut segments. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Cantilever Load Analysis",
+      "explanation": "The couple moment that prevents relative rotation between the cut segments. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-001-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f7e9cf2b5cec107e0991c7557ce9bc54e6f94ed44efe469da948ff3d69142124"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:83770796064828474c007292fd42a13da7385e6b113ddfc6bcb6f8b7f55fa26e"
     },
     {
       "question_id": "0963c4a3-78c5-46fe-bd79-095c6f24c7eb",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "In reinforced concrete beam design, longitudinal steel bars are placed near the bottom of a simply supported beam to resist which internal force?",
+      "text": "In three dimensions, which additional moment component can appear as twisting?",
       "options": [
         {
           "id": "a",
-          "text": "Compression in the concrete"
+          "text": "A zoning moment."
         },
         {
           "id": "b",
-          "text": "Tension from bending"
+          "text": "A torsional moment component."
         },
         {
           "id": "c",
-          "text": "Shear at the beam ends"
+          "text": "A read-time value."
         },
         {
           "id": "d",
-          "text": "Torsion in the beam"
+          "text": "A source-pack hash."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In a simply supported beam under downward load, the bottom fibers experience tension (stretching) due to bending. Concrete has low tensile strength, so steel reinforcement is placed at the bottom to resist this tension.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A zoning moment. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "A torsional moment component. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "c": "A read-time value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A source-pack hash. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "A torsional moment component. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Reinforced Concrete Beam Design, Flexure",
+      "explanation": "A torsional moment component. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-001-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b2da6805d0669d2599cb08301805b9f72e000a46076af89cfe017a22e3b81e9c"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:2ebd051d6caacd1bc1140f205466ed673e72cbd98562810a753b49bb5f78705b"
     },
     {
       "question_id": "12762415-a5eb-4c6c-8e08-da815188b1a1",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "A suspension bridge cable is subjected to which primary internal force type?",
+      "text": "Why are moments often summed at the cut section when finding internal loadings?",
       "options": [
         {
           "id": "a",
-          "text": "Bending"
+          "text": "It changes a distributed load into a code citation."
         },
         {
           "id": "b",
-          "text": "Tension"
+          "text": "The normal and shear forces at the section then have zero moment arms."
         },
         {
           "id": "c",
-          "text": "Compression"
+          "text": "It removes all external loads from the segment."
         },
         {
           "id": "d",
-          "text": "Shear"
+          "text": "It proves no free-body diagram is needed."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A suspension bridge cable is pulled by the suspended load and the tension in the cable increases toward the anchor points. Tension is the defining internal force in cables.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It changes a distributed load into a code citation. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The normal and shear forces at the section then have zero moment arms. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "c": "It removes all external loads from the segment. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "It proves no free-body diagram is needed. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The normal and shear forces at the section then have zero moment arms. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Cable and Tension Member Design",
+      "explanation": "The normal and shear forces at the section then have zero moment arms. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-001-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b17430ed33b5d00d5affdf713293213e877119d73ce7fb48cd45544440efe816"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:bae526e6d6d1ab19d1b512f3b552d938be7d9a2886f7a1a5556ee16111131c12"
     },
     {
       "question_id": "91c01223-fa84-4085-92f8-6af37b72a0b1",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "When a beam is loaded perpendicular to its length, it develops internal bending. Bending causes which of the following conditions at the cross-section?",
+      "text": "If solving equilibrium gives a negative scalar for an internal loading, what does that mean?",
       "options": [
         {
           "id": "a",
-          "text": "Uniform compression throughout the cross-section, which is unlikely as bending typically causes differential stress distribution"
+          "text": "The answer is automatically invalid."
         },
         {
           "id": "b",
-          "text": "Compression on one face and tension on the opposite face"
+          "text": "The actual sense is opposite to the assumed direction on the free-body diagram."
         },
         {
           "id": "c",
-          "text": "Uniform tension throughout the cross-section, which contradicts the typical stress profile in bending scenarios"
+          "text": "The member has no internal force."
         },
         {
           "id": "d",
-          "text": "Shear across the entire cross-section, although shear is usually concentrated near the supports"
+          "text": "The source boundary changed."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Bending creates a moment that curves the member. On one side (top, typically under downward load), fibers are compressed; on the opposite side (bottom), fibers are stretched in tension. The neutral axis separates these zones.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The answer is automatically invalid. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The actual sense is opposite to the assumed direction on the free-body diagram. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "c": "The member has no internal force. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "The source boundary changed. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The actual sense is opposite to the assumed direction on the free-body diagram. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Bending and Moment Analysis",
+      "explanation": "The actual sense is opposite to the assumed direction on the free-body diagram. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-001-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6e60b8cb3f595f192277747edb1d786c9518093e4e9ee640a42030c4d2991100"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:304c55adbbad4275054b6038866137d522e5f47b9cbdbca525e1fd4954350d46"
     },
     {
       "question_id": "308c2083-d625-42eb-a210-403ea875752e",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "In a simply supported beam under uniform downward loading, which internal force is typically largest at the supports and decreases toward the center?",
+      "text": "What must be done with distributed loads before applying equilibrium to a cut segment?",
       "options": [
         {
           "id": "a",
-          "text": "Bending moment"
+          "text": "Move every load to the support before sectioning."
         },
         {
           "id": "b",
-          "text": "Shear force"
+          "text": "Keep them in place until the section is made, then replace the load on the chosen segment with its resultant."
         },
         {
           "id": "c",
-          "text": "Compression"
+          "text": "Ignore the load because it is not concentrated."
         },
         {
           "id": "d",
-          "text": "Torsion"
+          "text": "Turn it into a material-strength value."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Shear force is maximum at the supports (where the reactions act) and decreases toward the center of the beam, reaching zero at midspan. This is the characteristic shear distribution for a simply supported beam.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Move every load to the support before sectioning. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Keep them in place until the section is made, then replace the load on the chosen segment with its resultant. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "c": "Ignore the load because it is not concentrated. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Turn it into a material-strength value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Keep them in place until the section is made, then replace the load on the chosen segment with its resultant. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Simply Supported Beam Internal Force Distribution",
+      "explanation": "Keep them in place until the section is made, then replace the load on the chosen segment with its resultant. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-001-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:34e30cbdfc819ad4cd2bc067966b582e225d525ab2b3c55a921d042191377725"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:08537952661fc49ee6a71c04967261d3e4e98a249f7a02be114b88b1632c2ea2"
     },
     {
       "question_id": "58c6baad-a86f-4c53-b55a-66aa63275fa4",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "A column supporting the weight of a building experiences which primary internal force?",
+      "text": "Which pair is most central to a loaded beam under transverse load?",
       "options": [
         {
           "id": "a",
-          "text": "Tension, which occurs when forces act to elongate the column, although this is not typical for columns under normal loading conditions."
+          "text": "Zoning and occupancy only."
         },
         {
           "id": "b",
-          "text": "Compression"
+          "text": "Shear force and bending moment."
         },
         {
           "id": "c",
-          "text": "Shear, which involves forces acting parallel to the cross-section, but is not the primary force in columns."
+          "text": "Color and line weight."
         },
         {
           "id": "d",
-          "text": "Torsion, which involves twisting forces, but is generally not a primary concern for vertical load-bearing columns."
+          "text": "Density and read time."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A column is pushed downward by the load it supports; this creates compression along the column's length. The fibers are being squeezed.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Zoning and occupancy only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Shear force and bending moment. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "c": "Color and line weight. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Density and read time. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Shear force and bending moment. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Column Design, Compression Behavior",
+      "explanation": "Shear force and bending moment. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-001-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0e978baee5210bf3f8e5ad31d0bd8179d57de54277daf701d13d5e2638741328"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:bc4d4d0bc750cdc5d0fbaf4a0c965641924801bd87f4a555c5ea02cdb78eba9c"
     },
     {
       "question_id": "a7300870-da16-46f6-be87-6b8e1872f3f3",
       "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
       "topic_id": "39d5c8c8-6539-4525-8b90-88f28cbd4be0",
-      "text": "An eccentric load is applied to a structural column (not along its centroidal axis). This eccentric load produces which internal forces in the column?",
+      "text": "Which statement is source-safe for a member that carries several effects at once?",
       "options": [
         {
           "id": "a",
-          "text": "Compression and bending, but no shear or torsion"
+          "text": "Every member has only one force type."
         },
         {
           "id": "b",
-          "text": "Compression and torsion only"
+          "text": "Internal forces are assigned without equilibrium."
         },
         {
           "id": "c",
-          "text": "Bending and torsion, but no compression"
+          "text": "Torsion is the same as a vertical support reaction."
         },
         {
           "id": "d",
-          "text": "Compression, bending, and torsion"
+          "text": "A member may have normal force, shear force, bending moment, and torsional moment components depending on loading and section."
         }
       ],
       "correct_option_id": "d",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "correct": "An eccentric load produces: (1) compression from the load's magnitude, (2) bending from the load's offset from the centroid (creating a bending moment), and (3) torsion if the load's line of action is offset in a twisting direction about the column's axis.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Every member has only one force type. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Internal forces are assigned without equilibrium. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Torsion is the same as a vertical support reaction. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A member may have normal force, shear force, bending moment, and torsional moment components depending on loading and section. This stays inside the Batch 140 local source boundary for Load Distribution and Reactions.",
+        "correct": "A member may have normal force, shear force, bending moment, and torsional moment components depending on loading and section. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+        "takeaway": "For Load Distribution and Reactions, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01"
       },
-      "explanation": null,
-      "code_citation": "Eccentric Loading and Internal Forces",
+      "explanation": "A member may have normal force, shear force, bending moment, and torsional moment components depending on loading and section. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md#sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md#sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-001-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3b0b0f806d874258fff0bfc4c867f461a09a51c06cb2a53fd1aec3fb1a23b125"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:97f45c8caa5dae44fd6c0817831fc0df40844bb3017af504af3126a2f35bd2b5"
     }
   ]
 }

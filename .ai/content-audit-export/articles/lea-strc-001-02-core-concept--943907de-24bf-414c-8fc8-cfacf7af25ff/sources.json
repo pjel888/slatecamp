@@ -1,20 +1,84 @@
 {
   "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:fd72c0488ed0b10aa4a828efcdf5dc437d05f6e5974d33ae3026bb795fd24b30",
-  "source_count": 1,
+  "sources_hash": "sha256:2d7589a2d4402ea1269da026870bf2a0e265ad1a24bca5c65ff72804953fa7b1",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "777eb5b8-1420-46eb-8bb5-628106c5fe58",
+      "source_id": "batch-140-lea-strc-001-02-core-concept-raw-source-capture",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
-      "label": "National Structural Code of the Philippines (NSCP) 2015, General Chapter, Tables 201 (Dead Loads) and 202 (Live Loads); NSCP Seismic Chapter, Section 208.4.4 (Seismic Zone Map and Parameters)",
+      "label": "Batch 140 raw source capture - Load is a force or system of forces applied",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Load is a force or system of forces applied; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-14T00:41:45.465Z",
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md",
+      "local_sha256": "sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3",
+      "checked_markdown_lines": [
+        "Hibbeler Statics 13th Edition: A force is characterized by magnitude, direction, and point of application. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Distributed loading along one axis can be represented by an intensity function w(x), and its equivalent resultant force is found from the area under the loading diagram. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: The resultant of a distributed load acts through the centroid or geometric center of the loading area or volume. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A support that restricts translation develops a reaction force in the restrained direction; a support that prevents rotation develops a couple moment. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: For coplanar rigid-body equilibrium, the three scalar equations are sum of horizontal forces, sum of vertical forces, and sum of moments equal to zero. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body with redundant supports is statically indeterminate because it has more unknown loadings than available equilibrium equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body can also be improperly constrained when support reactions are all parallel or concurrent, even if the unknown count matches the equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Internal loadings in members are exposed by the method of sections and include normal force, shear force, bending moment, and in three dimensions torsional moment components. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+      ],
+      "local_source_families": [
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 140 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-140-lea-strc-001-02-core-concept-refined-source-map",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "label": "Batch 140 refined source conversion - Load is a force or system of forces applied",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Load is a force or system of forces applied.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T00:41:45.465Z",
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md",
+      "local_sha256": "sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3",
+      "checked_markdown_lines": [
+        "Hibbeler Statics 13th Edition: A force is characterized by magnitude, direction, and point of application. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Distributed loading along one axis can be represented by an intensity function w(x), and its equivalent resultant force is found from the area under the loading diagram. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: The resultant of a distributed load acts through the centroid or geometric center of the loading area or volume. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A support that restricts translation develops a reaction force in the restrained direction; a support that prevents rotation develops a couple moment. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: For coplanar rigid-body equilibrium, the three scalar equations are sum of horizontal forces, sum of vertical forces, and sum of moments equal to zero. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body with redundant supports is statically indeterminate because it has more unknown loadings than available equilibrium equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body can also be improperly constrained when support reactions are all parallel or concurrent, even if the unknown count matches the equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Internal loadings in members are exposed by the method of sections and include normal force, shear force, bending moment, and in three dimensions torsional moment components. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+      ],
+      "local_source_families": [
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
     }
   ]
 }

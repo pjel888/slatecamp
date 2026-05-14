@@ -1,0 +1,64 @@
+{
+  "question_id": "fe1ec42d-841c-4be0-86c8-b15efb218fb2",
+  "baseline_hash": "sha256:f89c8d24109585dfb18cd3b4f0988a51a2fac7e4823088170ee054a7e1b6d5c3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Support is a constraint that prevents a structure.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+    "parent_article_slug": "lea-strc-001-03-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Support is a constraint that prevents a structure",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md",
+        "sha256": "sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Support is a constraint that prevents a structure",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md",
+        "sha256": "sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is the first analysis step before solving a support-reaction problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start with a deformation equation even for every determinate body."
+      },
+      {
+        "id": "b",
+        "text": "Choose a code table value by occupancy only."
+      },
+      {
+        "id": "c",
+        "text": "Draw the free-body diagram and show all external forces and couple moments."
+      },
+      {
+        "id": "d",
+        "text": "Skip support symbols and solve from the title."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Start with a deformation equation even for every determinate body. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "b": "Choose a code table value by occupancy only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "c": "Draw the free-body diagram and show all external forces and couple moments. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+      "d": "Skip support symbols and solve from the title. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "Draw the free-body diagram and show all external forces and couple moments. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
+    },
+    "explanation": "Draw the free-body diagram and show all external forces and couple moments. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
+  },
+  "batch_question_template_index": 8
+}

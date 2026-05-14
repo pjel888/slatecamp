@@ -1,94 +1,32 @@
-
+# Supports and Reaction Models
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+A support question is asking what movement is restrained. First decide whether the support prevents translation, rotation, or both. Then draw only the reactions required by those restraints.
 
-**Common mistake:** treating a familiar keyword in **Lea Strc 001 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
-## Learning Goal
-By the end of this article, you will be able to:
 
-- Identify the three support types (hinge, roller, fixed) by symbol and constraint
-- State how many degrees of freedom each support restrains
-- Count reaction components for each support type
-- Explain why roller supports are used in long-span structures
+A support is a constraint imposed by the surroundings on a body or member. Hibbeler states the key rule directly: a support that restricts translation develops a force reaction, and a support that prevents rotation develops a couple moment.
 
-This topic covers the three main types of supports (boundary conditions) that anchor structures and constrain their motion. The LEA tests whether you can identify each support type and understand what degrees of freedom it restrains. You will NOT be tested on reaction calculation; focus on recognition and constraint definitions.
+In a two-dimensional beam model, a roller on a horizontal surface is commonly represented by one reaction force perpendicular to the supporting surface. A pin or hinge support prevents translation in two directions but allows rotation, so it is represented by two force components. A fixed support prevents translation and rotation, so it is represented by force components and a couple moment.
 
-## Core Concept
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-strc-001-03-core-concept", type="image", caption="Support Types — Hinge, Roller, and Fixed Comparison", description="Three-panel comparison diagram showing: (1) Hinge/Pin support symbol (circle with dot), 2 restrained DOF, 2 reaction components (Hx, Hy); (2) Roller support symbol (circle over rollers), 1 restrained DOF, 1 reaction component (Hy); (3) Fixed support symbol (solid square), 3 restrained DOF, 3 reaction components (Hx, Hy, M). Each panel shows the structural symbol, degrees of freedom table, and a real-world example.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Real World Scenario
 
-A **support** is a constraint that prevents a structure (or part of a structure) from moving in one or more directions. Supports restrain displacement and may develop reaction forces or moments. Every support type can be defined by which **degrees of freedom** it prevents. In 2D analysis, there are three possible degrees of freedom at any point: horizontal translation (x), vertical translation (y), and rotation about z.
+A beam is shown with a pin at the left end and a roller at the right end. The source-safe reaction model shows two force components at the pin and one vertical reaction at the roller. The roller is not assigned a moment reaction because the model allows rotation there.
 
-**Hinge Support (Pin Support):**
-- Prevents translation in BOTH horizontal and vertical directions (restrains x and y)
-- ALLOWS rotation freely
-- Develops TWO reaction components: horizontal (Hx) and vertical (Hy)
-- Symbol: A pin or dot inside a circle, or a bracket with a pin at the corner
-- Example: A beam resting on a pin at one end
+## Key Facts and Testable Items
 
-**Roller Support:**
-- Prevents translation in ONE direction only (typically vertical; restrains y)
-- ALLOWS horizontal translation and rotation freely
-- Develops ONE reaction component: the one perpendicular to the rolling surface (typically vertical, Hy)
-- Symbol: A circle over a line with small rollers or wheels underneath
-- Example: A bridge beam on elastomeric bearing pads that allow thermal expansion
-
-**Fixed Support (Cantilever Support):**
-- Prevents translation in BOTH directions (restrains x and y)
-- PREVENTS rotation; restrains rotational degree of freedom
-- Develops THREE reaction components: horizontal (Hx), vertical (Hy), and moment (M)
-- Symbol: A solid filled square or cross-hatching at the support
-- Example: A cantilever beam fixed into a wall
-
-The choice of support type affects the structure's ability to move and distribute loads, determining whether it is statically determinate or indeterminate.
-
-## Key Provisions
-
-| Support Type | Degrees of Freedom Restrained | Reaction Components | Symbol | Typical Use |
-|--------------|------|---------|--------|------------|
-| **Hinge (Pin)** | Horizontal + Vertical (2 DOF) | Hx, Hy | Circle with dot/pin | Beam ends; simple supports |
-| **Roller** | One direction only; typically vertical (1 DOF) | Hy (or Hx perpendicular to roll) | Circle over line + wheels | Bridge expansion; thermal movement |
-| **Fixed** | Horizontal + Vertical + Rotation (3 DOF) | Hx, Hy, M | Solid square or hatching | Cantilever walls; embedded columns |
-
-## Philippine Practice Context
-
-In Philippine structural design, supports are drawn on construction plans and detailed in connection design. Hinge supports are common in simple beam bridges and portal frames. Roller supports are critical in long-span structures where thermal expansion and earthquake-induced movement must be accommodated. Fixed supports anchor cantilever slabs and wall-frame junctions. The support type must be clearly indicated in drawings and design notes; ambiguity in support conditions leads to calculation errors and construction misunderstandings.
-
-## How It's Tested
-
-1. **Identification:** "A circular symbol with a dot and two small wheels beneath it represents ___." — tests symbol recognition.
-2. **Constraint Recognition:** "Which support allows horizontal movement?" — tests understanding of degrees of freedom.
-3. **Reaction Count:** "How many reaction components are developed at a fixed support?" — tests counting of reactions.
-4. **Application:** "A 10 m span bridge beam is supported on a hinge at one end and a roller at the other. Why is the roller used instead of another hinge?" — tests conceptual understanding of expansion.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Quick memory rule: HOT supports.** - **H**inge = 2 reactions (Hx, Hy); allows rotation - **O**ne reaction = Roller; allows both translation and rotation in free direction - **T**hree reactions = fixed (Two translations + roTation); allows nothing Or: Hinge = **H**old 2; Roller = **R**estrains 1; Fixed = **F**ixes 3.
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also: **Beam Types** (lea-strc-001-04) for how supports define beam classification, **Static Determinacy** (lea-strc-001-06) for how support count affects solvability, and **Bearing Wall Systems** (lea-strc-002-01) for how walls function as supports.
+| Support cue | Reaction model |
+| --- | --- |
+| Prevents translation | Force reaction in the restrained direction. |
+| Prevents rotation | Couple moment reaction. |
+| Roller on horizontal surface | One reaction perpendicular to the surface. |
+| Pin or hinge in 2D | Two force components; rotation allowed. |
+| Fixed support in 2D | Two force components plus one moment. |
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing hinge and roller: Both allow rotation, but hinge restrains BOTH x and y (develops Hx and Hy), while roller restrains ONLY ONE direction (typically y; develops only Hy).\",\"Forgetting the moment reaction at fixed supports: A fixed support develops NOT just Hx and Hy but also a MOMENT M. This is essential for cantilever analysis.\",\"Drawing roller supports on the wrong surface: A roller perpendicular to a horizontal surface restrains vertical movement. A roller perpendicular to a vertical surface restrains horizontal movement. Orientation matters.\",\"Thinking support type determines if structure is stable: Three hinges or hinges in a collinear pattern do not stabilize a structure. Proper support arrangement, not just type, ensures stability.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Giving every support three reactions.
+- Forgetting that a roller reaction is perpendicular to its support surface.
+- Adding a moment reaction to a pin or roller without a source-supported reason.
+- Solving reactions before drawing a complete free-body diagram.

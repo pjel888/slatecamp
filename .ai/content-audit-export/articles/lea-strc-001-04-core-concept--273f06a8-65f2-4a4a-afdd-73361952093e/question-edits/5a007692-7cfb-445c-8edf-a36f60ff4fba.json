@@ -1,0 +1,64 @@
+{
+  "question_id": "5a007692-7cfb-445c-8edf-a36f60ff4fba",
+  "baseline_hash": "sha256:ceca5c6c9a407245e88304b655bbd4de97053d149b86d32069eb42a86f6170b8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Beam is a structural member subjected primarily to loads.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
+    "parent_article_slug": "lea-strc-001-04-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Beam is a structural member subjected primarily to loads",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md",
+        "sha256": "sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Beam is a structural member subjected primarily to loads",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md",
+        "sha256": "sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What should an exam taker do before naming a beam configuration?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Answer from the first familiar beam word."
+      },
+      {
+        "id": "b",
+        "text": "Use an unsupported table value."
+      },
+      {
+        "id": "c",
+        "text": "Read the supports, restrained motions, and load path shown in the stem."
+      },
+      {
+        "id": "d",
+        "text": "Assume every beam is continuous."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Answer from the first familiar beam word. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "b": "Use an unsupported table value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "c": "Read the supports, restrained motions, and load path shown in the stem. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+      "d": "Assume every beam is continuous. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "Read the supports, restrained motions, and load path shown in the stem. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
+    },
+    "explanation": "Read the supports, restrained motions, and load path shown in the stem. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
+  },
+  "batch_question_template_index": 10
+}

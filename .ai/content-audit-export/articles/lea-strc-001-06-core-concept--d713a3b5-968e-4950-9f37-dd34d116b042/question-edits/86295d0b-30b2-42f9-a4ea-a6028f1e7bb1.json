@@ -1,0 +1,64 @@
+{
+  "question_id": "86295d0b-30b2-42f9-a4ea-a6028f1e7bb1",
+  "baseline_hash": "sha256:300eb4b28cc60b081be7450b3f18122871e6592c6ef937236c795f538314209b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Static Determinacy.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+    "parent_article_slug": "lea-strc-001-06-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Static Determinacy",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Static Determinacy",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "Why is a redundant support important?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It adds unknown reactions beyond those required for equilibrium."
+      },
+      {
+        "id": "b",
+        "text": "It removes the need for all supports."
+      },
+      {
+        "id": "c",
+        "text": "It turns forces into materials."
+      },
+      {
+        "id": "d",
+        "text": "It proves the body is unconstrained."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "It adds unknown reactions beyond those required for equilibrium. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+      "b": "It removes the need for all supports. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "c": "It turns forces into materials. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "d": "It proves the body is unconstrained. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "It adds unknown reactions beyond those required for equilibrium. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+    },
+    "explanation": "It adds unknown reactions beyond those required for equilibrium. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+  },
+  "batch_question_template_index": 4
+}

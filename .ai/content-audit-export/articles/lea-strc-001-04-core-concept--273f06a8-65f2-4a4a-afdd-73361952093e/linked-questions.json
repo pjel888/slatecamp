@@ -1,30 +1,30 @@
 {
   "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:605c373c0dd88a1e11ba0c510a0f9e1ebc400b9c4593286cb12355771a24751c",
+  "linked_questions_hash": "sha256:44678be51581998676c938b2ead418f6325b33257d0fccba7e403d226a04c975",
   "question_count": 10,
   "questions": [
     {
       "question_id": "8bc8ba95-ef32-4894-907e-2749dcfe46cb",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "A beam that is fixed at one end and free at the other is called a:",
+      "text": "What makes a beam analysis problem a statics problem before design checks?",
       "options": [
         {
           "id": "a",
-          "text": "Simply supported beam"
+          "text": "The beam color determines the internal forces."
         },
         {
           "id": "b",
-          "text": "Cantilever beam"
+          "text": "External loads and supports are idealized so equilibrium can be applied."
         },
         {
           "id": "c",
-          "text": "Continuous beam"
+          "text": "A material-strength formula replaces the free-body diagram."
         },
         {
           "id": "d",
-          "text": "Overhanging beam"
+          "text": "A code occupancy label supplies all reactions."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A cantilever beam is fixed at one end (providing three reactions: Hx, Hy, M) and extends freely beyond the fixed support without additional support at the free end.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The beam color determines the internal forces. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "External loads and supports are idealized so equilibrium can be applied. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "A material-strength formula replaces the free-body diagram. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A code occupancy label supplies all reactions. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "External loads and supports are idealized so equilibrium can be applied. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Beam Types",
+      "explanation": "External loads and supports are idealized so equilibrium can be applied. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-001-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:90ae6efed1ec2631b48553e8d46183a1d0d09471dce1ed4a3a7a203f651ac14e"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:c5b4d9077e195bd0fcccf85a0d734e623c0c6ada63bc0853984b62831ff0cf69"
     },
     {
       "question_id": "3c969a43-8b08-426f-b0cd-de2eba994c5c",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "A cantilever balcony slab extends 2.5 m from a building wall. The slab is fixed to the building structure at the wall. In this configuration, where is the maximum bending moment located?",
+      "text": "A cantilever is fixed at one end and loaded at the free portion. What does the fixed support provide in a 2D model?",
       "options": [
         {
           "id": "a",
-          "text": "At the free end of the balcony"
+          "text": "Only one vertical reaction."
         },
         {
           "id": "b",
-          "text": "At the fixed end (wall connection)"
+          "text": "Horizontal and vertical force reactions plus a couple moment."
         },
         {
           "id": "c",
-          "text": "At midspan between the wall and free end"
+          "text": "Only a roller force."
         },
         {
           "id": "d",
-          "text": "Bending moment is constant throughout the balcony"
+          "text": "No moment reaction."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In a cantilever, the maximum bending moment occurs at the fixed end (the wall connection). This is where the largest moment reaction develops to resist the cantilevered loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only one vertical reaction. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Horizontal and vertical force reactions plus a couple moment. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "Only a roller force. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "No moment reaction. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Horizontal and vertical force reactions plus a couple moment. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "Cantilever Beam Moment Analysis",
+      "explanation": "Horizontal and vertical force reactions plus a couple moment. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-001-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1dea11041ecdb47f71970dbb4c599bb4ac5ac69098b31d9243e1874c0e4b181a"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:fda9c829488c318ab1a7c8adf3e399e1c6ca346efa281b9d6d5e8f5c51043bf5"
     },
     {
       "question_id": "26a2f1f8-d7ec-45a7-93db-97c8e2a19fa6",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "Which beam type develops a moment reaction at the support(s)?",
+      "text": "Why can a pin-and-roller beam often be solved by equilibrium alone?",
       "options": [
         {
           "id": "a",
-          "text": "Simply supported beam"
+          "text": "It has no external loads."
         },
         {
           "id": "b",
-          "text": "Cantilever beam"
+          "text": "Its support reactions can match the available coplanar equilibrium equations when properly constrained."
         },
         {
           "id": "c",
-          "text": "Overhanging beam with hinges at supports"
+          "text": "It has no vertical reactions."
         },
         {
           "id": "d",
-          "text": "All beams develop moment reactions"
+          "text": "Its material properties are known."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Only the cantilever beam, which is fixed at one end, develops a moment reaction (M) at the support. The fixed-end condition prevents rotation and thus generates a resisting moment.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It has no external loads. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Its support reactions can match the available coplanar equilibrium equations when properly constrained. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "It has no vertical reactions. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Its material properties are known. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Its support reactions can match the available coplanar equilibrium equations when properly constrained. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "Beam Support Reactions and Moment Development",
+      "explanation": "Its support reactions can match the available coplanar equilibrium equations when properly constrained. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-001-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a69f659d51a5fb587a4de3f1b62545499b9387361076d59d80ccbc49f6b35421"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:8072a44c30caaf9f80b21867445cdae9fd6a1468e54fb505936807436abb16e1"
     },
     {
       "question_id": "b47302a0-2400-420f-8ad5-bf5f6a9b9314",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "A roof canopy extends 4 m beyond its supporting columns. The canopy is supported by two columns with the roof extending past both. This configuration is best classified as a:",
+      "text": "What does a beam develop internally when it is loaded transverse to its length?",
       "options": [
         {
           "id": "a",
-          "text": "Simply supported beam"
+          "text": "Only a code table value."
         },
         {
           "id": "b",
-          "text": "Cantilever beam"
+          "text": "Only a drawing symbol."
         },
         {
           "id": "c",
-          "text": "Overhanging beam"
+          "text": "Shear force and bending moment, with possible normal force depending on loading."
         },
         {
           "id": "d",
-          "text": "Continuous beam"
+          "text": "Only a centroid mark."
         }
       ],
       "correct_option_id": "c",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "An overhanging beam has two or more supports with one or both ends extending beyond the supports. A canopy with two supporting columns and a 4 m overhang beyond the columns fits this definition.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only a code table value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Only a drawing symbol. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Shear force and bending moment, with possible normal force depending on loading. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "d": "Only a centroid mark. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Shear force and bending moment, with possible normal force depending on loading. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "Beam Classification by Support Configuration",
+      "explanation": "Shear force and bending moment, with possible normal force depending on loading. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-001-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c40b6b880b1c9eb075425e73d1db7b9e2ac440e13aa5e88b6126db9cfd4df987"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:15bccad8e721af67074a150301a6ecf5c6a8a0a96d57cc3423daf5f3e122f652"
     },
     {
       "question_id": "c616a5b1-14e3-4de7-993f-0307cb5eb1f2",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "A simply supported beam is characterized by which of the following?",
+      "text": "What is exposed when an imaginary section is cut through a loaded beam?",
       "options": [
         {
           "id": "a",
-          "text": "Fixed at one end; free at the other, allowing for rotational movement"
+          "text": "The building occupancy classification."
         },
         {
           "id": "b",
-          "text": "Supported on two hinges (or hinge + roller) at the ends; no overhang"
+          "text": "Internal force and couple-moment resultants at the section."
         },
         {
           "id": "c",
-          "text": "Supported on three or more points spanning multiple bays, providing additional stability"
+          "text": "The exact concrete mix strength."
         },
         {
           "id": "d",
-          "text": "Supported with one end extending beyond the supports, creating a cantilever effect"
+          "text": "The zoning classification."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A simply supported beam (simple beam) rests on two supports—typically a hinge at one end and a roller at the other, or hinges at both ends—with no overhang. Loads are transmitted directly to the two end supports.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The building occupancy classification. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Internal force and couple-moment resultants at the section. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "The exact concrete mix strength. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "The zoning classification. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Internal force and couple-moment resultants at the section. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Simply Supported Beam",
+      "explanation": "Internal force and couple-moment resultants at the section. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-001-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6869f981791ec509bb19011231698d5c1190ab841e16d9f2a092a3e7a696f1e1"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:51925784eecab334023070490211be5fad28e45a8ec5023b9e92d749ff1f20fb"
     },
     {
       "question_id": "6568b8d4-2b7a-4be8-8c43-0e0da13d3fae",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "In a continuous beam spanning multiple bays, where do negative moments (hogging moments) typically occur?",
+      "text": "Which source-safe statement replaces an unsupported list of five beam types?",
       "options": [
         {
           "id": "a",
-          "text": "At midspan of each span"
+          "text": "Every beam type has the same fixed-end reactions."
         },
         {
           "id": "b",
-          "text": "Over the intermediate supports"
+          "text": "Support conditions control the reaction model and the equilibrium path."
         },
         {
           "id": "c",
-          "text": "At the cantilever overhang"
+          "text": "The beam label alone determines all internal forces."
         },
         {
           "id": "d",
-          "text": "Negative moments do not occur in continuous beams"
+          "text": "A continuous beam can always be solved by three equations without checking redundants."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In a continuous beam, negative moments (hogging, tension on the top) develop over intermediate supports. This is a key difference from simply supported beams, which develop only positive moments at midspan.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Every beam type has the same fixed-end reactions. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Support conditions control the reaction model and the equilibrium path. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "The beam label alone determines all internal forces. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A continuous beam can always be solved by three equations without checking redundants. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Support conditions control the reaction model and the equilibrium path. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "Continuous Beam Analysis and Moment Distribution",
+      "explanation": "Support conditions control the reaction model and the equilibrium path. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-001-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0585e85a545ea92d69955a92e26b4f96c65b00ad61763ec777b6e9d977ff20ea"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:4f6c726b42fa755e30cd27d3efdac1c56dbc01c16ce86252d4dd4473b73c3c9e"
     },
     {
       "question_id": "7bf5786c-ac60-462a-a476-c8a681fc5837",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "An engineer is comparing three beam configurations: (1) a 10 m simple beam, (2) a 5 m cantilever, and (3) a 5 m overhanging beam with a 2.5 m overhang on each side. All carry the same uniform load. Which beam will experience the largest deflection at its free or overhang end?",
+      "text": "In a beam free-body diagram, why are dimensions kept with the loads?",
       "options": [
         {
           "id": "a",
-          "text": "The simple beam (1)"
+          "text": "They decide the material density automatically."
         },
         {
           "id": "b",
-          "text": "The cantilever (2)"
+          "text": "They are needed to compute moments about selected points."
         },
         {
           "id": "c",
-          "text": "The overhanging beam (3)"
+          "text": "They replace support reactions."
         },
         {
           "id": "d",
-          "text": "Deflection cannot be compared without knowing the load magnitude"
+          "text": "They are only graphic decoration."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The cantilever experiences the largest deflection because fixed supports resist rotation very stiffly, but the cantilevered portion has no intermediate support and experiences the full moment effect over its length. Among the three, the 5 m cantilever's deflection rate is steepest.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "They decide the material density automatically. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "They are needed to compute moments about selected points. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "They replace support reactions. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "They are only graphic decoration. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "They are needed to compute moments about selected points. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "Beam Deflection Characteristics",
+      "explanation": "They are needed to compute moments about selected points. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-001-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:383226a20a7c3d071fd788a03880f7975b4cb745ea9bf4a98c642d83d2ea7927"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:89f19391c2fb124b7cfc4db4e016db9db7c05a17adb93e374183b70a9c57c596"
     },
     {
       "question_id": "3045ee67-253c-48ea-895e-369a6aae8781",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "A propped cantilever is a structural configuration that combines characteristics of which two beam types?",
+      "text": "What makes a fixed-ended or redundantly supported beam different from a basic determinate beam?",
       "options": [
         {
           "id": "a",
-          "text": "Simply supported and continuous, providing a balance between flexibility and support"
+          "text": "It has no internal forces."
         },
         {
           "id": "b",
-          "text": "Cantilever and propping support"
+          "text": "It can have more unknown reactions than available equilibrium equations."
         },
         {
           "id": "c",
-          "text": "Overhanging and fixed, offering stability with extended reach"
+          "text": "It carries no load."
         },
         {
           "id": "d",
-          "text": "Continuous and overhanging, allowing for extended spans with intermediate supports"
+          "text": "It cannot be drawn as a free-body diagram."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A propped cantilever is a cantilever beam with an additional support (prop) at or near the free end. It combines the cantilever's fixed end with an intermediate support that reduces deflection compared to a pure cantilever.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It has no internal forces. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "It can have more unknown reactions than available equilibrium equations. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "It carries no load. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "It cannot be drawn as a free-body diagram. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "It can have more unknown reactions than available equilibrium equations. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "Beam Types and Support Configurations",
+      "explanation": "It can have more unknown reactions than available equilibrium equations. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-001-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2151696ece0f320bdf64088ba793f640df49c4b7a10ec55f816c502a7f8467b0"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:f0997b5945122ce040db67ceb839cc22d97e4aa3fed0ca470dbe0a41a443662f"
     },
     {
       "question_id": "32354ae6-f1bc-4052-a64b-f5a1acda6111",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "A multi-story building frame has floor beams that span across multiple columns and develop both positive moments at midspan and negative moments over interior columns. The frame also has exterior walls that cantilever outward for architectural effect. Which statement best describes the overall frame structure and its components?",
+      "text": "For a roof canopy idealized as a cantilever, what is the key support cue?",
       "options": [
         {
           "id": "a",
-          "text": "All floor beams are simply supported; exterior walls are continuous, which is a simplification that does not account for the structural dynamics"
+          "text": "A roller at both ends."
         },
         {
           "id": "b",
-          "text": "Floor beams are continuous across multiple supports; exterior walls are cantilever"
+          "text": "A fixed connection that restrains translation and rotation at one end."
         },
         {
           "id": "c",
-          "text": "All beams are cantilever; the frame is overhanging, which is an incorrect description of the structural system"
+          "text": "No support reactions at the wall."
         },
         {
           "id": "d",
-          "text": "The frame is simply supported; no negative moments occur, which overlooks the complexity of the structural behavior"
+          "text": "A distributed load acting as a material property."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Floor beams spanning across multiple columns are continuous beams, which develop both positive moments (at midspan) and negative moments (over intermediate supports). Cantilevering exterior walls are cantilever beams, which develop moment reactions at the fixed connection to the building.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A roller at both ends. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "A fixed connection that restrains translation and rotation at one end. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "c": "No support reactions at the wall. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A distributed load acting as a material property. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "A fixed connection that restrains translation and rotation at one end. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "Building Frame Analysis and Beam Type Identification",
+      "explanation": "A fixed connection that restrains translation and rotation at one end. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-001-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bc3b6e07f0420eee4b2096c086303ff9969a450892374e8a2abb7e07a6a83f3d"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:75797c8f3cb81ae79f36f45d80a2a141ddea5b1ee173418dfa6d7c330852e02d"
     },
     {
       "question_id": "5a007692-7cfb-445c-8edf-a36f60ff4fba",
       "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
       "topic_id": "45362938-b4d6-4ab9-bafa-02bce2f1cbcd",
-      "text": "A continuous beam spans across four columns, creating three interior spans. This beam type is called:",
+      "text": "What should an exam taker do before naming a beam configuration?",
       "options": [
         {
           "id": "a",
-          "text": "Simply supported"
+          "text": "Answer from the first familiar beam word."
         },
         {
           "id": "b",
-          "text": "Cantilever"
+          "text": "Use an unsupported table value."
         },
         {
           "id": "c",
-          "text": "Continuous"
+          "text": "Read the supports, restrained motions, and load path shown in the stem."
         },
         {
           "id": "d",
-          "text": "Propped cantilever"
+          "text": "Assume every beam is continuous."
         }
       ],
       "correct_option_id": "c",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A continuous beam spans across three or more supports, creating multiple spans. Four columns provide four supports (creating three spans between them); this is the definition of continuous.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Answer from the first familiar beam word. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Use an unsupported table value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Read the supports, restrained motions, and load path shown in the stem. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+        "d": "Assume every beam is continuous. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Read the supports, restrained motions, and load path shown in the stem. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+        "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Continuous Beam",
+      "explanation": "Read the supports, restrained motions, and load path shown in the stem. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-001-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ceca5c6c9a407245e88304b655bbd4de97053d149b86d32069eb42a86f6170b8"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:6b468f5723adde076d10215d6aa1b72c1376e111aaeb9d90c0f3a9c8c6b05dae"
     }
   ]
 }

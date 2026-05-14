@@ -1,0 +1,64 @@
+{
+  "question_id": "c616a5b1-14e3-4de7-993f-0307cb5eb1f2",
+  "baseline_hash": "sha256:6869f981791ec509bb19011231698d5c1190ab841e16d9f2a092a3e7a696f1e1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Beam is a structural member subjected primarily to loads.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
+    "parent_article_slug": "lea-strc-001-04-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Beam is a structural member subjected primarily to loads",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md",
+        "sha256": "sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Beam is a structural member subjected primarily to loads",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md",
+        "sha256": "sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What is exposed when an imaginary section is cut through a loaded beam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The building occupancy classification."
+      },
+      {
+        "id": "b",
+        "text": "Internal force and couple-moment resultants at the section."
+      },
+      {
+        "id": "c",
+        "text": "The exact concrete mix strength."
+      },
+      {
+        "id": "d",
+        "text": "The zoning classification."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The building occupancy classification. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "b": "Internal force and couple-moment resultants at the section. This stays inside the Batch 140 local source boundary for Beam is a structural member subjected primarily to loads.",
+      "c": "The exact concrete mix strength. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "d": "The zoning classification. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "Internal force and couple-moment resultants at the section. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+      "takeaway": "For Beam is a structural member subjected primarily to loads, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
+    },
+    "explanation": "Internal force and couple-moment resultants at the section. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md#sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md#sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b"
+  },
+  "batch_question_template_index": 5
+}

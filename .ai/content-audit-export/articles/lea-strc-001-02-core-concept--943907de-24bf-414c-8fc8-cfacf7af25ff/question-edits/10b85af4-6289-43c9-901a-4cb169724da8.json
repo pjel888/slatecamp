@@ -1,0 +1,64 @@
+{
+  "question_id": "10b85af4-6289-43c9-901a-4cb169724da8",
+  "baseline_hash": "sha256:6774151491d992f93c5ebfb531503b83be019fee39d1305495b57b3ae3ae94a7",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Load is a force or system of forces applied.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+    "parent_article_slug": "lea-strc-001-02-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Load is a force or system of forces applied",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md",
+        "sha256": "sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Load is a force or system of forces applied",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md",
+        "sha256": "sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "A beam carries a uniform stack of material. What source-safe step comes before writing equilibrium equations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Choose the largest option in a load table without checking the stem."
+      },
+      {
+        "id": "b",
+        "text": "Assume the load acts only as a horizontal force."
+      },
+      {
+        "id": "c",
+        "text": "Convert the distributed load into its resultant and locate that resultant."
+      },
+      {
+        "id": "d",
+        "text": "Delete the free-body diagram because the load is uniform."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Choose the largest option in a load table without checking the stem. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "b": "Assume the load acts only as a horizontal force. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "c": "Convert the distributed load into its resultant and locate that resultant. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+      "d": "Delete the free-body diagram because the load is uniform. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "Convert the distributed load into its resultant and locate that resultant. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
+    },
+    "explanation": "Convert the distributed load into its resultant and locate that resultant. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
+  },
+  "batch_question_template_index": 8
+}

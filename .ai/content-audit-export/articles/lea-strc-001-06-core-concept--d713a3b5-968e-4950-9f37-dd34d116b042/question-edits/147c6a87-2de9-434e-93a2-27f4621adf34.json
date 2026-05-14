@@ -1,0 +1,64 @@
+{
+  "question_id": "147c6a87-2de9-434e-93a2-27f4621adf34",
+  "baseline_hash": "sha256:9b0f18f10f2d158e341f7226cc485b3fc22832975ed0f97fef63743886b97f23",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Static Determinacy.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+    "parent_article_slug": "lea-strc-001-06-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Static Determinacy",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Static Determinacy",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "What does statically determinate mean in this source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained."
+      },
+      {
+        "id": "b",
+        "text": "The member material has already been designed."
+      },
+      {
+        "id": "c",
+        "text": "The structure has more supports than needed."
+      },
+      {
+        "id": "d",
+        "text": "The drawing has no dimensions."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+      "b": "The member material has already been designed. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "c": "The structure has more supports than needed. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "d": "The drawing has no dimensions. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+    },
+    "explanation": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+  },
+  "batch_question_template_index": 1
+}

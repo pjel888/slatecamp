@@ -1,0 +1,306 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-140-local-first",
+  "batch_number": 140,
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T00:41:45.465Z",
+  "target": {
+    "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+    "slug": "lea-strc-001-06-core-concept",
+    "title": "Static Determinacy",
+    "article_folder": ".ai/content-audit-export/articles/lea-strc-001-06-core-concept--d713a3b5-968e-4950-9f37-dd34d116b042",
+    "normalized_sha256": "sha256:c3bb56d6387f004928455e56491377fe98ec7ffd42b01a147e2a154de2c990aa",
+    "candidate_path": ".ai/content-audit-export/articles/lea-strc-001-06-core-concept--d713a3b5-968e-4950-9f37-dd34d116b042/candidate.md"
+  },
+  "classification": {
+    "topic_family": "lea-strc-001-06-core-concept",
+    "category": "Structural Conceptualization",
+    "source_sensitivity": "technical_structural_exam_content",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_source_capture": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_source_gate": {
+    "status": "PASS",
+    "local_sources_checked_first": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch-140-lea-strc-001-06-core-concept-raw-source-capture",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "label": "Batch 140 raw source capture - Static Determinacy",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Static Determinacy; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-14T00:41:45.465Z",
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+      "local_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+      "checked_markdown_lines": [
+        "Hibbeler Statics 13th Edition: A force is characterized by magnitude, direction, and point of application. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Distributed loading along one axis can be represented by an intensity function w(x), and its equivalent resultant force is found from the area under the loading diagram. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: The resultant of a distributed load acts through the centroid or geometric center of the loading area or volume. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A support that restricts translation develops a reaction force in the restrained direction; a support that prevents rotation develops a couple moment. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: For coplanar rigid-body equilibrium, the three scalar equations are sum of horizontal forces, sum of vertical forces, and sum of moments equal to zero. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body with redundant supports is statically indeterminate because it has more unknown loadings than available equilibrium equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body can also be improperly constrained when support reactions are all parallel or concurrent, even if the unknown count matches the equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Internal loadings in members are exposed by the method of sections and include normal force, shear force, bending moment, and in three dimensions torsional moment components. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+      ],
+      "local_source_families": [
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 140 source capture/refined conversion boundary."
+    },
+    {
+      "source_id": "batch-140-lea-strc-001-06-core-concept-refined-source-map",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "label": "Batch 140 refined source conversion - Static Determinacy",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Static Determinacy.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T00:41:45.465Z",
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+      "local_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+      "checked_markdown_lines": [
+        "Hibbeler Statics 13th Edition: A force is characterized by magnitude, direction, and point of application. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Distributed loading along one axis can be represented by an intensity function w(x), and its equivalent resultant force is found from the area under the loading diagram. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: The resultant of a distributed load acts through the centroid or geometric center of the loading area or volume. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A support that restricts translation develops a reaction force in the restrained direction; a support that prevents rotation develops a couple moment. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: For coplanar rigid-body equilibrium, the three scalar equations are sum of horizontal forces, sum of vertical forces, and sum of moments equal to zero. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body with redundant supports is statically indeterminate because it has more unknown loadings than available equilibrium equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: A body can also be improperly constrained when support reactions are all parallel or concurrent, even if the unknown count matches the equations. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870",
+        "Hibbeler Statics 13th Edition: Internal loadings in members are exposed by the method of sections and include normal force, shear force, bending moment, and in three dimensions torsional moment components. Locator: Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+      ],
+      "local_source_families": [
+        {
+          "label": "Hibbeler Statics 13th Edition",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+          "rawHash": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+          "refinedHash": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+          "checked_locator": "Hibbeler Statics refined markdown lines 421-458, 472-510, 887-889, 1034-1038, 1061-1065, 1097-1099, 14916-15076, 16424-16580, 17316-17379, 19081-19412, 19476-19484, 21023-21037, and 26721-26870"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map used with the local raw capture."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-strc-001-06-core-concept-article-batch-140",
+      "claim_text": "Article lea-strc-001-06-core-concept was rewritten to the checked local source scope for Static Determinacy.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-147c6a87-2de9-434e-93a2-27f4621adf34-batch-140",
+      "claim_text": "Linked question 147c6a87-2de9-434e-93a2-27f4621adf34 was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6e3aa52a-49d2-4885-8ad4-8f458fbf7011-batch-140",
+      "claim_text": "Linked question 6e3aa52a-49d2-4885-8ad4-8f458fbf7011 was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a25fc81c-1499-491c-a8e4-3afd6f4de016-batch-140",
+      "claim_text": "Linked question a25fc81c-1499-491c-a8e4-3afd6f4de016 was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-86295d0b-30b2-42f9-a4ea-a6028f1e7bb1-batch-140",
+      "claim_text": "Linked question 86295d0b-30b2-42f9-a4ea-a6028f1e7bb1 was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-43cc8681-979b-4de1-a19c-df9c04eb5a75-batch-140",
+      "claim_text": "Linked question 43cc8681-979b-4de1-a19c-df9c04eb5a75 was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-344d7ef4-6e57-4160-8ec9-726ff37f39fa-batch-140",
+      "claim_text": "Linked question 344d7ef4-6e57-4160-8ec9-726ff37f39fa was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3b4cda58-122d-49c6-bec7-40c97aaf5a5c-batch-140",
+      "claim_text": "Linked question 3b4cda58-122d-49c6-bec7-40c97aaf5a5c was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-49de927c-0c98-4854-8958-60063f28fb09-batch-140",
+      "claim_text": "Linked question 49de927c-0c98-4854-8958-60063f28fb09 was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-98e870f2-5f59-434f-99d4-d062d934f6fd-batch-140",
+      "claim_text": "Linked question 98e870f2-5f59-434f-99d4-d062d934f6fd was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6597ee20-dad2-47d9-8b67-6e22bcb35bc1-batch-140",
+      "claim_text": "Linked question 6597ee20-dad2-47d9-8b67-6e22bcb35bc1 was rewritten inside the checked local source scope for Static Determinacy.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+      },
+      "blockers": []
+    }
+  ],
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
+  },
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Still blocked for Batch 140 because the local theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward",
+      "reason": "Still blocked for Batch 140 because the local theory-form source boundary remains insufficient for a claim-safe rewrite."
+    },
+    {
+      "cluster_id": "lea-matl-009-02-core-concept",
+      "title": "CSI MasterFormat",
+      "status": "blocked_carried_forward",
+      "reason": "Still blocked because the exact CSI MasterFormat claim scope lacks a captured local source artifact."
+    },
+    {
+      "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+      "title": "Seismic bracing and earthquake resilience",
+      "status": "blocked_carried_forward",
+      "reason": "Still blocked because utilities seismic-bracing claims require a local refined conversion boundary that is not available in this pass."
+    },
+    {
+      "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+      "title": "Seismic bracing requirements per NSCP 2015",
+      "status": "blocked_carried_forward",
+      "reason": "Still blocked because the raw NSCP 2015 PDF exists locally, but the required NSCP-specific refined conversion boundary is missing."
+    }
+  ]
+}

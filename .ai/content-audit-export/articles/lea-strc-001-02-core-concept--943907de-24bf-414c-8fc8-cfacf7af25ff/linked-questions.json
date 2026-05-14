@@ -1,30 +1,30 @@
 {
   "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:00715a4b7ac57e6c2852010cdd59408e0b67c309721d4402a35b1434adf59738",
+  "linked_questions_hash": "sha256:1964f2f62e2f5c0b5e195acad0a605710b5b81c43a9a5ba0affaf48991300d76",
   "question_count": 10,
   "questions": [
     {
       "question_id": "62f69f86-dcca-458b-96cb-2a62c69ab48a",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "A structural engineer is designing a slab for an outdoor parking garage in the Philippines. Which loads MUST be considered in the design?",
+      "text": "What is the source-safe definition of a load in this bundle?",
       "options": [
         {
           "id": "a",
-          "text": "Dead load and live load only, as these are the primary considerations for structural integrity in most standard designs"
+          "text": "A material strength value assigned after design."
         },
         {
           "id": "b",
-          "text": "Dead load, live load, and wind load only, which are typically sufficient for most non-seismic regions"
+          "text": "A floor-use label that automatically gives a code value."
         },
         {
           "id": "c",
-          "text": "Dead load, live load, wind load, and seismic load"
+          "text": "A force or system of forces acting on a body or member."
         },
         {
           "id": "d",
-          "text": "Live load and seismic load only, focusing on dynamic and earthquake-induced forces"
+          "text": "A drawing note that replaces force equilibrium."
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A structure in the Philippines must be designed for DL (slab and superimposed loads), LL (vehicle loading), wind (typhoon zone exposure), and seismic (Zone 2 applies to most PH). All four are part of the code-required load combinations.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A material strength value assigned after design. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "A floor-use label that automatically gives a code value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "A force or system of forces acting on a body or member. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "d": "A drawing note that replaces force equilibrium. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "A force or system of forces acting on a body or member. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP General Chapter, Required Load Cases",
+      "explanation": "A force or system of forces acting on a body or member. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-001-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a7028bd608219d0184d35cd524466a104989cb0df84288e6f09cb95af4871206"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:15c626e53789e43dc908e478f57fd5225af7efddbc77231a665840985822b40d"
     },
     {
       "question_id": "77cd2e9a-d801-4325-b01b-aa90c1d7cf32",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "The difference between dead load and live load can be best understood as:",
+      "text": "What data must be known before a force can be represented correctly?",
       "options": [
         {
           "id": "a",
-          "text": "Dead load is heavier; live load is lighter, typically involving movable objects"
+          "text": "Only the name of the structural member."
         },
         {
           "id": "b",
-          "text": "Dead load is permanent; live load is temporary and changes with occupancy"
+          "text": "Its magnitude, direction, and point of application."
         },
         {
           "id": "c",
-          "text": "Dead load acts downward; live load acts laterally, affecting structural stability"
+          "text": "Only whether the member is concrete or steel."
         },
         {
           "id": "d",
-          "text": "Dead load includes earthquakes; live load includes wind, both affecting design considerations"
+          "text": "Only the building occupancy classification."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "The fundamental distinction is permanence and changeability. Dead load does not change once the building is constructed. Live load varies with how the building is occupied and used.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only the name of the structural member. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Its magnitude, direction, and point of application. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "c": "Only whether the member is concrete or steel. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Only the building occupancy classification. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Its magnitude, direction, and point of application. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP General Chapter, Load Definitions",
+      "explanation": "Its magnitude, direction, and point of application. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-001-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:be3e39eba6ad5dbf550dc00947e83533d3387f2692b12255f69b51d621563350"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:7a5e245d40d0b6d33806fdefca4e042404a0a988e2ff22ace9d84ea8d0d25f9e"
     },
     {
       "question_id": "7f564971-2a03-4da2-ba62-10ca5fb8709b",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "A corridor in a 6-story office building is designed. According to NSCP, the corridor's live load is:",
+      "text": "In Hibbeler Statics, how is a one-axis distributed load commonly represented?",
       "options": [
         {
           "id": "a",
-          "text": "2.4 kPa (same as office spaces)"
+          "text": "By a single fixed code table for every occupancy."
         },
         {
           "id": "b",
-          "text": "3.8 kPa (corridors above 1st floor)"
+          "text": "By an intensity function such as w(x) acting along the member length."
         },
         {
           "id": "c",
-          "text": "1.9 kPa (same as residential)"
+          "text": "By the member color on a structural drawing."
         },
         {
           "id": "d",
-          "text": "4.8 kPa (assembly without fixed seats)"
+          "text": "By assuming every load acts only at the supports."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP Table 202 specifies corridors above the first floor at 3.8 kPa. Corridors above the 1st floor have higher LL than office spaces (2.4 kPa) due to concentrated foot traffic and transient loads.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "By a single fixed code table for every occupancy. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "By an intensity function such as w(x) acting along the member length. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "c": "By the member color on a structural drawing. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "By assuming every load acts only at the supports. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "By an intensity function such as w(x) acting along the member length. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP Table 202, Corridors",
+      "explanation": "By an intensity function such as w(x) acting along the member length. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-001-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:254a2be4c8815f1979e95c0fef8a6835b66d2949c32e65953cbbbd59da913cce"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:71bcef2bf510be4d9ebd4ce5b898a6a1c53e185abe23df86c55efc996494aec5"
     },
     {
       "question_id": "cd164305-4a4c-419b-8100-2c9e2b2b2530",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "An engineer is reviewing load specifications for a 10-story residential building in the Philippines. The specification lists: (1) dead load from concrete and steel; (2) live load per NSCP for residential; (3) wind load for tropical storm zone; (4) seismic load for Zone 2. Which of the following statements about these loads is correct?",
+      "text": "What does the area under a distributed loading diagram give?",
       "options": [
         {
           "id": "a",
-          "text": "Dead load and live load are the only loads that must be used in design; wind and seismic are optional"
+          "text": "The allowable stress of the material."
         },
         {
           "id": "b",
-          "text": "Seismic load applies only to structures in Zone 1, not Zone 2"
+          "text": "The number of supports required by code."
         },
         {
           "id": "c",
-          "text": "All four load categories must be considered in separate load combinations per NSCP"
+          "text": "The magnitude of the equivalent resultant force."
         },
         {
           "id": "d",
-          "text": "Wind load is negligible for residential buildings; seismic is the only lateral load to consider"
+          "text": "The exact reinforcement spacing in the member."
         }
       ],
       "correct_option_id": "c",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP requires design for gravity (DL + LL), wind, and seismic loads in separate load combinations. All four must be evaluated; the most critical combination governs the design.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The allowable stress of the material. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The number of supports required by code. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "The magnitude of the equivalent resultant force. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "d": "The exact reinforcement spacing in the member. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The magnitude of the equivalent resultant force. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP General Chapter, Load Combinations",
+      "explanation": "The magnitude of the equivalent resultant force. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-001-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b75161a08c94db450423ea57009ce5450fa3004eaf208772413cbc622876550b"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:cd17a0134acdeaba3411ddd3bd42cf8453f47530c351b7779e76d53a47cbb979"
     },
     {
       "question_id": "a65c16a2-85ad-4ce1-846f-edf91fc48d83",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "A warehouse is being designed to store heavy materials. According to NSCP Table 202, which occupancy classification and minimum live load apply?",
+      "text": "Where does the equivalent resultant of a distributed load act?",
       "options": [
         {
           "id": "a",
-          "text": "Heavy storage, 6.0 kPa"
+          "text": "Always at the left support regardless of shape."
         },
         {
           "id": "b",
-          "text": "Heavy storage, 12.0 kPa"
+          "text": "Through the centroid or geometric center of the loading diagram or volume."
         },
         {
           "id": "c",
-          "text": "General storage, 8.0 kPa"
+          "text": "Always at the largest dimension note."
         },
         {
           "id": "d",
-          "text": "Industrial, 10.0 kPa"
+          "text": "At any point chosen for convenience."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP Table 202 specifies heavy storage at 12.0 kPa minimum. This accounts for the concentrated weight of stored goods and the transient nature of warehouse operations.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Always at the left support regardless of shape. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Through the centroid or geometric center of the loading diagram or volume. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "c": "Always at the largest dimension note. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "At any point chosen for convenience. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Through the centroid or geometric center of the loading diagram or volume. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP Table 202, Storage",
+      "explanation": "Through the centroid or geometric center of the loading diagram or volume. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-001-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:19b9b60707d2a38607d9b21cc9c274299b94043298a9333460132c22c1971385"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:f530ac2e6b11246cdce87161ad8e851461754e592a4c75d91f70e44baaf04c0f"
     },
     {
       "question_id": "e3927fe9-0cb5-4a2e-8b21-8fa0cd4e9906",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "Which of the following is an example of a dead load in a reinforced concrete building?",
+      "text": "Why was the old NSCP-value framing removed from this question set?",
       "options": [
         {
           "id": "a",
-          "text": "Weight of office workers and their furniture, which varies and is considered a live load"
+          "text": "The values are never used in Philippine design."
         },
         {
           "id": "b",
-          "text": "Weight of the concrete slab and structural beams"
+          "text": "The local refined source boundary for those code values is not available in this pass."
         },
         {
           "id": "c",
-          "text": "Weight of stored inventory that changes seasonally, classified as a live load due to its variability"
+          "text": "Statics does not use forces or equilibrium."
         },
         {
           "id": "d",
-          "text": "Wind pressure during a typhoon, which is a dynamic load affecting the building's stability"
+          "text": "Every load question must be answered from memory."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Dead load is permanent, constant load from the structure's own material and fixed components. The concrete slab and beams are part of the structure and do not change during the building's life.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The values are never used in Philippine design. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The local refined source boundary for those code values is not available in this pass. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "c": "Statics does not use forces or equilibrium. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Every load question must be answered from memory. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The local refined source boundary for those code values is not available in this pass. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP Table 201",
+      "explanation": "The local refined source boundary for those code values is not available in this pass. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-001-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:235a15a666032601c9ba3bea69e895bc8c7fd6830afd223d0e573b2a5a5e0fa8"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:b783c9e6b69dca91df2a15b6c8c48c9011a5074026783b1c107a7b22c05bc0a2"
     },
     {
       "question_id": "e726c251-5f26-4ea0-b843-006910b6b20d",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "According to NSCP Table 202, the minimum live load for residential occupancy is:",
+      "text": "A wind pressure on a sign is converted to a single force for equilibrium. What statics idea is being used?",
       "options": [
         {
           "id": "a",
-          "text": "1.0 kPa"
+          "text": "Replacing a support reaction with a material property."
         },
         {
           "id": "b",
-          "text": "1.9 kPa"
+          "text": "Replacing a distributed load with an equivalent resultant."
         },
         {
           "id": "c",
-          "text": "2.4 kPa"
+          "text": "Ignoring the pressure because it is not a point load."
         },
         {
           "id": "d",
-          "text": "3.8 kPa"
+          "text": "Changing a load into a beam type."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP Table 202 specifies 1.9 kPa as the minimum live load for residential spaces (dwellings, apartments, houses).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Replacing a support reaction with a material property. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Replacing a distributed load with an equivalent resultant. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "c": "Ignoring the pressure because it is not a point load. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Changing a load into a beam type. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Replacing a distributed load with an equivalent resultant. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP Table 202, Residential",
+      "explanation": "Replacing a distributed load with an equivalent resultant. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-001-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c6e8bb076ff3c723f8bfd011660d2578746ddae214cf4eb5e9bcd4abb0eda24c"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:f8f000333a29d1d88e69965164d6012398e267d56268d763c8841512a41b9ab4"
     },
     {
       "question_id": "10b85af4-6289-43c9-901a-4cb169724da8",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "A 5-story office building is under design in Metro Manila. Which seismic zone applies to this location?",
+      "text": "A beam carries a uniform stack of material. What source-safe step comes before writing equilibrium equations?",
       "options": [
         {
           "id": "a",
-          "text": "Zone 1, with Z = 0.2"
+          "text": "Choose the largest option in a load table without checking the stem."
         },
         {
           "id": "b",
-          "text": "Zone 2, with Z = 0.2"
+          "text": "Assume the load acts only as a horizontal force."
         },
         {
           "id": "c",
-          "text": "Zone 4, with Z = 0.4"
+          "text": "Convert the distributed load into its resultant and locate that resultant."
         },
         {
           "id": "d",
-          "text": "Zone 1, with Z = 0.4"
+          "text": "Delete the free-body diagram because the load is uniform."
         }
       ],
       "correct_option_id": "c",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Metro Manila is in the Philippines' most seismic-active region and falls under Zone 4 (Z = 0.4). Zone 4 covers Eastern Visayas, most of Luzon including Metro Manila, and parts of Mindanao.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Choose the largest option in a load table without checking the stem. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Assume the load acts only as a horizontal force. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Convert the distributed load into its resultant and locate that resultant. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "d": "Delete the free-body diagram because the load is uniform. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Convert the distributed load into its resultant and locate that resultant. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208.1, Figure 208A, Table 208-1",
+      "explanation": "Convert the distributed load into its resultant and locate that resultant. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-001-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6774151491d992f93c5ebfb531503b83be019fee39d1305495b57b3ae3ae94a7"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:34b029da169a91d7205f1daff1ef375123bf557e06231494d47eb9b34c2e88bc"
     },
     {
       "question_id": "e22e3062-b6b3-4497-98b7-20461790e843",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "A floor system with a tributary area of 18 m² is being designed for office use. The designer notes that a live load reduction factor may be applied. This is permissible because:",
+      "text": "Which answer stays inside the Batch 140 source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Office LL is less than residential LL, which allows for certain design flexibilities under specific conditions"
+          "text": "Quote residential live-load values from an uncaptured code conversion."
         },
         {
           "id": "b",
-          "text": "The tributary area exceeds the NSCP minimum of 37 m² (400 ft²)"
+          "text": "Classify loads as forces and distributed intensities, then use resultants and equilibrium."
         },
         {
           "id": "c",
-          "text": "Wind and seismic loads are not critical, provided that the building is not located in a high-risk zone"
+          "text": "Assign a seismic zone value without a refined NSCP locator."
         },
         {
           "id": "d",
-          "text": "The structure is designed for gravity loads only, which simplifies the load calculations and may allow for reductions"
+          "text": "Use snow-load values as the main Philippine design rule."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP specifies that live load reduction is permitted when tributary area exceeds 37 m² (400 ft²) for most occupancies including offices. An 18 m² area exceeds this threshold, making reduction applicable.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Quote residential live-load values from an uncaptured code conversion. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Classify loads as forces and distributed intensities, then use resultants and equilibrium. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "c": "Assign a seismic zone value without a refined NSCP locator. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Use snow-load values as the main Philippine design rule. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Classify loads as forces and distributed intensities, then use resultants and equilibrium. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP Table 202, Live Load Reduction",
+      "explanation": "Classify loads as forces and distributed intensities, then use resultants and equilibrium. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-001-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:035f29e027014a13da180ece4438ec0b6a0d2d11c60c660c1b5c0ad23611332d"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:c01b4b2c3e143126179ada4f086722599d7389b6983c971f8025f8be34af830c"
     },
     {
       "question_id": "5d7b1153-482f-4f88-82cd-daf571dcbd29",
       "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
       "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
-      "text": "A reinforced concrete building's dead load includes the concrete weight (2,400 kg/m³) plus a fixed partition wall that may or may not be present in all future renovations. According to NSCP, how should the partition wall load be treated?",
+      "text": "Why is the resultant location important in a load problem?",
       "options": [
         {
           "id": "a",
-          "text": "Ignore it, since it might be removed later, which is a common oversight in load calculations"
+          "text": "It changes the density of the material."
         },
         {
           "id": "b",
-          "text": "Include it as a superimposed dead load of minimum 1.0 kPa"
+          "text": "It determines the moment effect of the distributed load on the body."
         },
         {
           "id": "c",
-          "text": "Treat it as live load since it might change, which allows for flexibility in future modifications"
+          "text": "It decides whether a support is drawn as a column."
         },
         {
           "id": "d",
-          "text": "Include it only if explicitly shown on construction drawings, ensuring accuracy in load assessments"
+          "text": "It replaces the need for any force summation."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "NSCP requires a minimum superimposed dead load of 1.0 kPa for fixed partitions not shown on plans. This conservative approach accounts for the likelihood that partitions will be added or reconfigured.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It changes the density of the material. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "It determines the moment effect of the distributed load on the body. This stays inside the Batch 140 local source boundary for Load is a force or system of forces applied.",
+        "c": "It decides whether a support is drawn as a column. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "It replaces the need for any force summation. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "It determines the moment effect of the distributed load on the body. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+        "takeaway": "For Load is a force or system of forces applied, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7"
       },
-      "explanation": null,
-      "code_citation": "NSCP Table 201, Superimposed Dead Load",
+      "explanation": "It determines the moment effect of the distributed load on the body. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md#sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md#sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-001-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:16ead96e749bd701d74e53414beeb96e30205b723a82c09806a8f537ea15778f"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:1e7d789556de5a35430cbf5bb5ee08c94de20ee493845e2472adec4a872568a2"
     }
   ]
 }

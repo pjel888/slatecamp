@@ -1,0 +1,64 @@
+{
+  "question_id": "ee951241-18b2-4f66-aa01-b444144164d2",
+  "baseline_hash": "sha256:38b0490fbbb6e701bd7b080ffddc29dc65fa5e70aa0a7891a819f73432fffefc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-140-local-first: residual local-first rewrite constrained to checked local source artifacts for Support is a constraint that prevents a structure.",
+  "approved_by": "codex-local-first-source-audited-article-batch-140-local-first",
+  "approved_at": "2026-05-14T00:41:45.465Z",
+  "source_audit_support": {
+    "parent_article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+    "parent_article_slug": "lea-strc-001-03-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
+    "checked_sources": [
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-raw-source-capture",
+        "label": "Batch 140 raw source capture - Support is a constraint that prevents a structure",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md",
+        "sha256": "sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738"
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-refined-source-map",
+        "label": "Batch 140 refined source conversion - Support is a constraint that prevents a structure",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md",
+        "sha256": "sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 140 local source artifact boundary while preserving the answer key."
+  },
+  "proposed": {
+    "text": "When a support prevents translation in a direction, what reaction is developed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only a material stress value."
+      },
+      {
+        "id": "b",
+        "text": "A force reaction in the restrained direction."
+      },
+      {
+        "id": "c",
+        "text": "Only a drawing title."
+      },
+      {
+        "id": "d",
+        "text": "No reaction because motion is prevented."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Only a material stress value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "b": "A force reaction in the restrained direction. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+      "c": "Only a drawing title. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "d": "No reaction because motion is prevented. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+      "correct": "A force reaction in the restrained direction. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
+    },
+    "explanation": "A force reaction in the restrained direction. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
+  },
+  "batch_question_template_index": 2
+}

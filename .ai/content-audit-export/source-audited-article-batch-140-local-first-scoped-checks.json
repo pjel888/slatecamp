@@ -1,0 +1,483 @@
+{
+  "batch_id": "source-audited-article-batch-140-local-first",
+  "generated_at": "2026-05-14T00:43:10.878Z",
+  "status": "passed_local_validation_git_handoff_pending",
+  "passed": true,
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "baseline_commit": "a633322cd",
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/sync-state.json",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "selection": {
+    "selected_clusters": [
+      {
+        "cluster_id": "lea-strc-001-02-core-concept",
+        "slug": "lea-strc-001-02-core-concept",
+        "title": "Load is a force or system of forces applied",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-03-core-concept",
+        "slug": "lea-strc-001-03-core-concept",
+        "title": "Support is a constraint that prevents a structure",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-04-core-concept",
+        "slug": "lea-strc-001-04-core-concept",
+        "title": "Beam is a structural member subjected primarily to loads",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-05-core-concept",
+        "slug": "lea-strc-001-05-core-concept",
+        "title": "Load Distribution and Reactions",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-06-core-concept",
+        "slug": "lea-strc-001-06-core-concept",
+        "title": "Static Determinacy",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      }
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-008-02-core-concept",
+        "title": "Articulation of form",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked for Batch 140 because the local theory-form source boundary remains insufficient for a claim-safe rewrite."
+      },
+      {
+        "cluster_id": "lea-theo-008-03-core-concept",
+        "title": "Transformation of form",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked for Batch 140 because the local theory-form source boundary remains insufficient for a claim-safe rewrite."
+      },
+      {
+        "cluster_id": "lea-matl-009-02-core-concept",
+        "title": "CSI MasterFormat",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked because the exact CSI MasterFormat claim scope lacks a captured local source artifact."
+      },
+      {
+        "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+        "title": "Seismic bracing and earthquake resilience",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked because utilities seismic-bracing claims require a local refined conversion boundary that is not available in this pass."
+      },
+      {
+        "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+        "title": "Seismic bracing requirements per NSCP 2015",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked because the raw NSCP 2015 PDF exists locally, but the required NSCP-specific refined conversion boundary is missing."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Batch 140 skipped the carried-forward theory/materials/utilities blocked residuals and selected the next five sourceable non-prac structural clusters with local raw and refined Hibbeler Statics artifacts."
+  },
+  "totals": {
+    "article_count": 5,
+    "linked_question_count": 50,
+    "question_edit_count": 50,
+    "source_artifact_count": 10,
+    "blocked_count": 5
+  },
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+        "slug": "lea-strc-001-02-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+        "slug": "lea-strc-001-03-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
+        "slug": "lea-strc-001-04-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+        "slug": "lea-strc-001-05-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      },
+      {
+        "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+        "slug": "lea-strc-001-06-core-concept",
+        "compose_blockers": 0,
+        "compose_safe_to_diff": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "metadata_hashes_match": true
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+        "slug": "lea-strc-001-02-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+        "slug": "lea-strc-001-03-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
+        "slug": "lea-strc-001-04-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+        "slug": "lea-strc-001-05-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      },
+      {
+        "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+        "slug": "lea-strc-001-06-core-concept",
+        "ui_block_count": 0,
+        "validation_valid": true,
+        "normalized_candidate_hash_match": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "parsed_count": 107,
+    "failures": []
+  },
+  "marker_source_gap_scan": {
+    "passed": true,
+    "scanned_count": 75,
+    "matches": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "checks": [
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md",
+        "expected": "sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3",
+        "actual": "sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-raw-source-capture:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-raw-source-capture:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md",
+        "expected": "sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
+        "actual": "sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-refined-source-map:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-02-core-concept-refined-source-map:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md",
+        "expected": "sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738",
+        "actual": "sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-raw-source-capture:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-raw-source-capture:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md",
+        "expected": "sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
+        "actual": "sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-refined-source-map:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-03-core-concept-refined-source-map:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md",
+        "expected": "sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877",
+        "actual": "sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-raw-source-capture:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-raw-source-capture:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md",
+        "expected": "sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
+        "actual": "sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-refined-source-map:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-04-core-concept-refined-source-map:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-05-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md",
+        "expected": "sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba",
+        "actual": "sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-05-core-concept-raw-source-capture:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-05-core-concept-raw-source-capture:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-05-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md",
+        "expected": "sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
+        "actual": "sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-05-core-concept-refined-source-map:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-05-core-concept-refined-source-map:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-raw-source-capture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+        "expected": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "actual": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-raw-source-capture:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-raw-source-capture:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-refined-source-map",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+        "expected": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "actual": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-refined-source-map:raw:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/Hibbeler Statics 13th Ed.pdf",
+        "expected": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "actual": "sha256:bfb8cf6c9d90c81917d67c6ef05fcb2914b76651c6e14783f042708865e22166",
+        "passed": true
+      },
+      {
+        "source_id": "batch-140-lea-strc-001-06-core-concept-refined-source-map:refined:Hibbeler Statics 13th Edition",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/Hibbeler Statics 13th Ed.md",
+        "expected": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "actual": "sha256:37695bb64282f1bde8aa2e153c5be469e603a6081bbc5b23bb64bf383c117867",
+        "passed": true
+      }
+    ]
+  },
+  "question_edit_count": {
+    "passed": true,
+    "expected": 50,
+    "actual": 50,
+    "answer_key_changes": 0,
+    "articles": [
+      {
+        "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+        "slug": "lea-strc-001-02-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+        "slug": "lea-strc-001-03-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
+        "slug": "lea-strc-001-04-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+        "slug": "lea-strc-001-05-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      },
+      {
+        "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+        "slug": "lea-strc-001-06-core-concept",
+        "linked_questions": 10,
+        "question_edits": 10,
+        "answer_key_changes": 0,
+        "answer_key_baseline_available": true
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "stale_files": []
+  },
+  "targeted_tests": {
+    "passed": true,
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts"
+  },
+  "scoped_git_diff_check": {
+    "passed": true,
+    "command": "git diff --check -- <batch-140-stage-paths>",
+    "output": ""
+  }
+}

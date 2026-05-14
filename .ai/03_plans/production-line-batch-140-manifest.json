@@ -1,0 +1,210 @@
+{
+  "batch_id": "source-audited-article-batch-140-local-first",
+  "batch_number": 140,
+  "generated_at": "2026-05-14T00:43:10.878Z",
+  "baseline_commit": "a633322cd",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_pending",
+  "selection": {
+    "selected_clusters": [
+      {
+        "cluster_id": "lea-strc-001-02-core-concept",
+        "slug": "lea-strc-001-02-core-concept",
+        "title": "Load is a force or system of forces applied",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-03-core-concept",
+        "slug": "lea-strc-001-03-core-concept",
+        "title": "Support is a constraint that prevents a structure",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-04-core-concept",
+        "slug": "lea-strc-001-04-core-concept",
+        "title": "Beam is a structural member subjected primarily to loads",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-05-core-concept",
+        "slug": "lea-strc-001-05-core-concept",
+        "title": "Load Distribution and Reactions",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      },
+      {
+        "cluster_id": "lea-strc-001-06-core-concept",
+        "slug": "lea-strc-001-06-core-concept",
+        "title": "Static Determinacy",
+        "category": "Structural Conceptualization",
+        "status": "selected_sourceable_batch_140",
+        "reason": "Next sourceable non-prac residual structural bundle after Batch 139 consumed lea-strc-001-01; constrained to existing Hibbeler Statics raw/refined local source artifacts."
+      }
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-008-02-core-concept",
+        "title": "Articulation of form",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked for Batch 140 because the local theory-form source boundary remains insufficient for a claim-safe rewrite."
+      },
+      {
+        "cluster_id": "lea-theo-008-03-core-concept",
+        "title": "Transformation of form",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked for Batch 140 because the local theory-form source boundary remains insufficient for a claim-safe rewrite."
+      },
+      {
+        "cluster_id": "lea-matl-009-02-core-concept",
+        "title": "CSI MasterFormat",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked because the exact CSI MasterFormat claim scope lacks a captured local source artifact."
+      },
+      {
+        "cluster_id": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
+        "title": "Seismic bracing and earthquake resilience",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked because utilities seismic-bracing claims require a local refined conversion boundary that is not available in this pass."
+      },
+      {
+        "cluster_id": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
+        "title": "Seismic bracing requirements per NSCP 2015",
+        "status": "blocked_carried_forward",
+        "reason": "Still blocked because the raw NSCP 2015 PDF exists locally, but the required NSCP-specific refined conversion boundary is missing."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "Batch 140 skipped the carried-forward theory/materials/utilities blocked residuals and selected the next five sourceable non-prac structural clusters with local raw and refined Hibbeler Statics artifacts."
+  },
+  "articles": [
+    {
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "cluster_id": "lea-strc-001-02-core-concept",
+      "slug": "lea-strc-001-02-core-concept",
+      "title": "Load is a force or system of forces applied",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-001-02-core-concept--943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:31cf083afcf4e32037c0bf7ac9dd2b06aabbdbd6fc18148c6944d15f153065aa",
+      "candidate_hash": "sha256:31cf083afcf4e32037c0bf7ac9dd2b06aabbdbd6fc18148c6944d15f153065aa",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-02-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:c7f198e53f45b35f168bed28a6f9c2fb3e5e58ed7bdec44c41c732a888e572b3",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-02-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:0a4b9e4ee101049996ad0b46a5abd8b04d09d0c511cd3553129e0b6edb4c97a7",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
+      "cluster_id": "lea-strc-001-03-core-concept",
+      "slug": "lea-strc-001-03-core-concept",
+      "title": "Support is a constraint that prevents a structure",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-001-03-core-concept--0297182f-252e-4837-b965-2aa11ecfb539",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:d8aa05cc00bef337da3563dc21faec0a21b0007b72353e3f71a68a1a0ae2c33b",
+      "candidate_hash": "sha256:d8aa05cc00bef337da3563dc21faec0a21b0007b72353e3f71a68a1a0ae2c33b",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "273f06a8-65f2-4a4a-afdd-73361952093e",
+      "cluster_id": "lea-strc-001-04-core-concept",
+      "slug": "lea-strc-001-04-core-concept",
+      "title": "Beam is a structural member subjected primarily to loads",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-001-04-core-concept--273f06a8-65f2-4a4a-afdd-73361952093e",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:b2c86660fc413efb387b3d16e145873093065f283377e89d6618e6669bb52916",
+      "candidate_hash": "sha256:b2c86660fc413efb387b3d16e145873093065f283377e89d6618e6669bb52916",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-04-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:6a06e92e9587ea965b84c48662708cc63479fb82022c0884e441f4da52a96877",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-04-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:d7bdd9ea879faaab8030d709fce633fd690c8ded49fe41f886f671fedc7fcb1b",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
+      "cluster_id": "lea-strc-001-05-core-concept",
+      "slug": "lea-strc-001-05-core-concept",
+      "title": "Load Distribution and Reactions",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-001-05-core-concept--974a7c85-c700-435b-80cc-8a2594a132a8",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:832a27f34c8a65a3f539444d8da4447a5b9ac09e66d8d03c622fe56cf8c425a8",
+      "candidate_hash": "sha256:832a27f34c8a65a3f539444d8da4447a5b9ac09e66d8d03c622fe56cf8c425a8",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-05-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:2003e72490df15ea2211063eafb1f66326dd55f112ba35da1a8bfedf9cc066ba",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-05-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:f0b65e82daeb04b7ae254c8af5cb3b74f1e817c52fff43c0727b54d4dd66ca01",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "cluster_id": "lea-strc-001-06-core-concept",
+      "slug": "lea-strc-001-06-core-concept",
+      "title": "Static Determinacy",
+      "category": "Structural Conceptualization",
+      "article_folder": ".ai/content-audit-export/articles/lea-strc-001-06-core-concept--d713a3b5-968e-4950-9f37-dd34d116b042",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:c3bb56d6387f004928455e56491377fe98ec7ffd42b01a147e2a154de2c990aa",
+      "candidate_hash": "sha256:c3bb56d6387f004928455e56491377fe98ec7ffd42b01a147e2a154de2c990aa",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    }
+  ],
+  "validation": {
+    "compose_diff_validate_passed": true,
+    "ui_block_validation_passed": true,
+    "scoped_json_parse_passed": true,
+    "marker_source_gap_scan_passed": true,
+    "source_hash_checks_passed": true,
+    "question_edit_count_passed": true,
+    "stale_compose_error_scan_passed": true,
+    "targeted_tests_passed": true,
+    "scoped_git_diff_check_passed": true
+  },
+  "constraints": {
+    "no_supabase": true,
+    "no_deploy": true,
+    "no_prod_db": true,
+    "no_main_merge": true,
+    "baseline_commit": "a633322cd",
+    "excluded_dirty_paths_preserved": [
+      ".ai/00_performance",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/sync-state.json",
+      ".hermes/skills",
+      ".ai/00_system/philip-ux-ui-calibration.md",
+      "old unrelated content-roundtrip run dirs"
+    ]
+  },
+  "handoff": {
+    "intended_commit": "Improve residual source-audited batch 140 content",
+    "exact_stage_paths_file": ".ai/03_plans/batch-140-git-handoff-stage-paths.txt",
+    "no_supabase_or_deploy": true
+  }
+}

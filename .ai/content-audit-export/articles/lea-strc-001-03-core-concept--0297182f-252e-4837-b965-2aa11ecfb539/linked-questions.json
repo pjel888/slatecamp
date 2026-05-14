@@ -1,30 +1,30 @@
 {
   "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:1abda9ba612ff9177865c0e7af8a0060064f931ce5cb51f6b39791885a789298",
+  "linked_questions_hash": "sha256:788491bc84c31e601bc3d377ac584d594f175eca9b208e4790b97ee4dcb761ff",
   "question_count": 10,
   "questions": [
     {
       "question_id": "2c0387cf-bfa0-4561-afda-78eb69a7d56f",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "In a simply supported beam with a hinge at the left end and a roller at the right end, which statement is correct?",
+      "text": "What does a support do in statics?",
       "options": [
         {
           "id": "a",
-          "text": "The left support develops a vertical reaction only, which is typical for a hinge support in this configuration"
+          "text": "It removes all external loads from a structure."
         },
         {
           "id": "b",
-          "text": "The right support allows vertical movement, which is characteristic of roller supports in structural systems"
+          "text": "It changes the member material into a stronger one."
         },
         {
           "id": "c",
-          "text": "The left support develops horizontal and vertical reactions"
+          "text": "It constrains translation or rotation and develops corresponding reactions."
         },
         {
           "id": "d",
-          "text": "Both supports develop three reactions each, which is incorrect for this type of beam support configuration"
+          "text": "It gives a code occupancy to the building."
         }
       ],
       "correct_option_id": "c",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "At the hinge (left), two reactions develop: Hx (horizontal) and Hy (vertical). At the roller (right), only Hy develops (vertical). The hinge constrains horizontal motion; the roller allows it.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It removes all external loads from a structure. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "It changes the member material into a stronger one. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "It constrains translation or rotation and develops corresponding reactions. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "d": "It gives a code occupancy to the building. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "It constrains translation or rotation and develops corresponding reactions. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "Simply Supported Beam Analysis",
+      "explanation": "It constrains translation or rotation and develops corresponding reactions. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-001-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:34c12285aad5e12e7ba1da2a525ce741a199a0fde2daad525d7f640df8bf4508"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:17a049a8d130a264bd978ad060582fb64604f2f1194251d96afeec6634708192"
     },
     {
       "question_id": "ee951241-18b2-4f66-aa01-b444144164d2",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "A cantilever beam is a beam that is:",
+      "text": "When a support prevents translation in a direction, what reaction is developed?",
       "options": [
         {
           "id": "a",
-          "text": "Supported on a hinge and a roller at each end"
+          "text": "Only a material stress value."
         },
         {
           "id": "b",
-          "text": "Fixed at one end and free at the other"
+          "text": "A force reaction in the restrained direction."
         },
         {
           "id": "c",
-          "text": "Simply supported on two hinges"
+          "text": "Only a drawing title."
         },
         {
           "id": "d",
-          "text": "Supported on rollers at both ends"
+          "text": "No reaction because motion is prevented."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A cantilever beam is fixed (fully restrained) at one end and extends freely beyond the support. The fixed end develops three reactions (Hx, Hy, M); the free end has none.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only a material stress value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "A force reaction in the restrained direction. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "c": "Only a drawing title. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "No reaction because motion is prevented. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "A force reaction in the restrained direction. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "Beam Classification and Support Types",
+      "explanation": "A force reaction in the restrained direction. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-001-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:38b0490fbbb6e701bd7b080ffddc29dc65fa5e70aa0a7891a819f73432fffefc"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:7b82ad0bfc1c7db4c98744c07fc870da1d2f575eb4faf9b2cf33ad066d0845c0"
     },
     {
       "question_id": "70768658-af0a-43a9-a4d6-91ca42fd7ff8",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "A roller support typically restrains motion in which direction(s)?",
+      "text": "When a support prevents rotation, what reaction can develop?",
       "options": [
         {
           "id": "a",
-          "text": "Horizontal direction only"
+          "text": "A live-load table value."
         },
         {
           "id": "b",
-          "text": "Vertical direction only"
+          "text": "A couple moment reaction."
         },
         {
           "id": "c",
-          "text": "Both horizontal and vertical directions"
+          "text": "A centroid of area only."
         },
         {
           "id": "d",
-          "text": "Rotation only"
+          "text": "A seismic zone number."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A roller support is oriented perpendicular to the rolling surface (typically horizontal surface), allowing horizontal translation and rotation but restraining vertical motion. It develops one reaction: vertical (Hy).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A live-load table value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "A couple moment reaction. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "c": "A centroid of area only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A seismic zone number. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "A couple moment reaction. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Roller Support",
+      "explanation": "A couple moment reaction. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-001-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:db50528c6ab4d0f2e1b666c9155671fd22a18aba0e8a1ab8d26fe3d5374d3328"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:f8629c940261bdfb57c727a7026ba38b62d32f2b44b6cee703e56c322094022a"
     },
     {
       "question_id": "6d72bd7e-eb1c-478c-b9f1-a27cc79d96ea",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "An engineer distinguishes between three support types by their restraint characteristics. Which of the following correctly pairs each support type with its degrees of freedom restraint?",
+      "text": "For a 2D roller on a horizontal surface, what is the usual source-safe reaction model?",
       "options": [
         {
           "id": "a",
-          "text": "Hinge: 3 DOF; Roller: 2 DOF; Fixed: 1 DOF"
+          "text": "Two force components and a moment."
         },
         {
           "id": "b",
-          "text": "Hinge: 2 DOF; Roller: 1 DOF; Fixed: 3 DOF"
+          "text": "One force perpendicular to the supporting surface."
         },
         {
           "id": "c",
-          "text": "Hinge: 1 DOF; Roller: 2 DOF; Fixed: 3 DOF"
+          "text": "No vertical reaction."
         },
         {
           "id": "d",
-          "text": "Hinge: 3 DOF; Roller: 1 DOF; Fixed: 2 DOF"
+          "text": "A moment reaction only."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In 2D: Hinge restrains 2 DOF (x and y translation); Roller restrains 1 DOF (one direction of translation); Fixed restrains all 3 DOF (x, y, and rotation). This matches the number of reaction components each develops.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Two force components and a moment. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "One force perpendicular to the supporting surface. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "c": "No vertical reaction. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A moment reaction only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "One force perpendicular to the supporting surface. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "Structural Analysis, Degrees of Freedom",
+      "explanation": "One force perpendicular to the supporting surface. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-001-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4a7288ef189ce32f191f4d25af3c7e1c612c8d560ba7533c4e7827d74e55008d"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:bc8f4e30687689d43e9831d97071fb5826fc3fd35484705c5dec12dc7f48ef90"
     },
     {
       "question_id": "dc36720c-0763-478e-a8a0-4b75f4a160ea",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "A complex frame structure has multiple supports: hinges at columns 1 and 3, a roller at column 2, and a fixed support at column 4. In analyzing this structure, which column's support will develop a moment reaction?",
+      "text": "For a 2D pin or hinge support used in beam analysis, what is usually shown on the free-body diagram?",
       "options": [
         {
           "id": "a",
-          "text": "Column 1 (hinge)"
+          "text": "One force plus one mandatory fixed moment."
         },
         {
           "id": "b",
-          "text": "Column 2 (roller)"
+          "text": "Only a torsional moment."
         },
         {
           "id": "c",
-          "text": "Column 3 (hinge)"
+          "text": "Only a material property."
         },
         {
           "id": "d",
-          "text": "Column 4 (fixed)"
+          "text": "Two force components, commonly horizontal and vertical."
         }
       ],
       "correct_option_id": "d",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "correct": "Only the fixed support (Column 4) develops a moment reaction. Hinges and rollers both allow rotation freely; they do not develop moment reactions. The fixed support prevents rotation and thus develops a moment reaction (M).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "One force plus one mandatory fixed moment. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Only a torsional moment. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Only a material property. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Two force components, commonly horizontal and vertical. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "correct": "Two force components, commonly horizontal and vertical. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "Frame Analysis and Support Reactions",
+      "explanation": "Two force components, commonly horizontal and vertical. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-001-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:acea101dccb9b328f68d460c54ca45152988f3f5f93ee90c2ee44ae0d1713ae0"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:4be50739989ec266bbbed7b5e9204ffdbfcd023241f7486e6c8a60e43ab83f17"
     },
     {
       "question_id": "298d2ebd-f01b-4be2-8285-5a805d0213bf",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "A structural engineer is designing a wall-to-column connection for a high-rise building. To prevent lateral sway and moment transfer, the engineer specifies a **fixed connection** at the base of the column. How many reaction components does this fixed support develop?",
+      "text": "For a fixed support in a 2D rigid-body model, what reaction set is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "1 (vertical only), which limits the support to a single direction of force"
+          "text": "Only one vertical reaction."
         },
         {
           "id": "b",
-          "text": "2 (horizontal and vertical), allowing for resistance in two perpendicular directions"
+          "text": "Only a horizontal reaction."
         },
         {
           "id": "c",
-          "text": "3 (horizontal, vertical, and moment)"
+          "text": "Two force components and one couple moment."
         },
         {
           "id": "d",
-          "text": "4 (multiple directions and moment), suggesting an overestimation of typical fixed support capabilities"
+          "text": "No reactions because the wall is stiff."
         }
       ],
       "correct_option_id": "c",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A fixed connection at the column base is a fixed support in structural terms. It restrains horizontal translation, vertical translation, and rotation, developing three reactions: Hx, Hy, and M.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only one vertical reaction. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Only a horizontal reaction. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Two force components and one couple moment. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "d": "No reactions because the wall is stiff. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Two force components and one couple moment. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "Frame and Connection Design",
+      "explanation": "Two force components and one couple moment. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-001-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2eb065eebb34cbfaad8c5e06db05adc1b3b939ea2232e2559a1fd56246ba54cc"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:2d800e9acc4f0ede84724d2a8c57ad7216e80e8d86bb48389586570e809187d0"
     },
     {
       "question_id": "f2e03291-6704-482d-ba92-d88662114444",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "A support that prevents horizontal and vertical translation but allows rotation is called a:",
+      "text": "Why should unknown reactions be shown clearly on a free-body diagram?",
       "options": [
         {
           "id": "a",
-          "text": "Roller support, which allows movement in one direction while restricting others"
+          "text": "The diagram is decorative and does not affect calculation."
         },
         {
           "id": "b",
-          "text": "Hinge (pin) support"
+          "text": "Equilibrium equations solve the assumed reaction directions, and negative values show the opposite sense."
         },
         {
           "id": "c",
-          "text": "Fixed support, which restricts all movement and rotation"
+          "text": "It avoids using force or moment equations."
         },
         {
           "id": "d",
-          "text": "Cantilever support, projecting horizontally and supported at only one end"
+          "text": "It proves the member material is adequate."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A hinge support restrains motion in both the horizontal and vertical directions (2 degrees of freedom) but freely allows rotation. It develops two reaction components: Hx and Hy.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The diagram is decorative and does not affect calculation. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Equilibrium equations solve the assumed reaction directions, and negative values show the opposite sense. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "c": "It avoids using force or moment equations. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "It proves the member material is adequate. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Equilibrium equations solve the assumed reaction directions, and negative values show the opposite sense. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Support Types",
+      "explanation": "Equilibrium equations solve the assumed reaction directions, and negative values show the opposite sense. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-001-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:657ae6e8e012423da92a5ac243f0d20b56f7d0ee5bb13f7dba105e439b5542fb"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:369e58ef7b0605b8898bd48712cd8d979160aa4c71172361b4b1437d54edabdb"
     },
     {
       "question_id": "fe1ec42d-841c-4be0-86c8-b15efb218fb2",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "How many reaction components does a fixed (cantilever) support develop?",
+      "text": "What is the first analysis step before solving a support-reaction problem?",
       "options": [
         {
           "id": "a",
-          "text": "One (vertical only), which limits its ability to resist lateral forces"
+          "text": "Start with a deformation equation even for every determinate body."
         },
         {
           "id": "b",
-          "text": "Two (horizontal and vertical), providing basic stability against lateral and vertical loads"
+          "text": "Choose a code table value by occupancy only."
         },
         {
           "id": "c",
-          "text": "Three (horizontal, vertical, and moment)"
+          "text": "Draw the free-body diagram and show all external forces and couple moments."
         },
         {
           "id": "d",
-          "text": "Four (two horizontal, two vertical), which is not typical for cantilever supports"
+          "text": "Skip support symbols and solve from the title."
         }
       ],
       "correct_option_id": "c",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A fixed support restrains all three degrees of freedom in 2D: horizontal translation, vertical translation, and rotation. Therefore, it develops three reaction components: Hx, Hy, and M (moment).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Start with a deformation equation even for every determinate body. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Choose a code table value by occupancy only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Draw the free-body diagram and show all external forces and couple moments. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "d": "Skip support symbols and solve from the title. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Draw the free-body diagram and show all external forces and couple moments. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Fixed Support Reactions",
+      "explanation": "Draw the free-body diagram and show all external forces and couple moments. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-001-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f89c8d24109585dfb18cd3b4f0988a51a2fac7e4823088170ee054a7e1b6d5c3"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:414a9be98faf9ec30f37208e5493a062f2d0f14023657cf38e244aa88ffabb74"
     },
     {
       "question_id": "b439a1bc-33ee-416c-b356-e28911fde076",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "A bridge span has a total length of 40 m and is supported on a hinge at the left abutment and a roller at the right abutment. Why is the roller support essential to this design?",
+      "text": "Which support choice permits rotation while restraining translation in two directions in a 2D model?",
       "options": [
         {
           "id": "a",
-          "text": "To reduce the total number of supports needed, which simplifies the design but is not the primary reason"
+          "text": "A fixed support."
         },
         {
           "id": "b",
-          "text": "To allow horizontal movement due to thermal expansion and prevent axial forces"
+          "text": "A pin or hinge support."
         },
         {
           "id": "c",
-          "text": "To eliminate the need for a bearing pad at the right end, which is a misconception about roller supports"
+          "text": "A distributed load."
         },
         {
           "id": "d",
-          "text": "To prevent vertical movement at the right end, which is not the function of a roller support"
+          "text": "A force resultant."
         }
       ],
       "correct_option_id": "b",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A 40 m span experiences significant thermal expansion and contraction over its life. A hinge at one end fixes the position; a roller at the other end allows horizontal sliding, preventing large axial compressive or tensile forces that would overstress the bridge.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A fixed support. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "A pin or hinge support. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "c": "A distributed load. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A force resultant. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "A pin or hinge support. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "Bridge Engineering, Expansion and Movement",
+      "explanation": "A pin or hinge support. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-001-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e7b145d3618c38e271b92e942dd72a47e134bd8cadb29650bf1d939b3a0171ba"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:2047a77c2f9ec889e49dc77104d8afc0be75bac401cad5a98cb84caff039c993"
     },
     {
       "question_id": "d52f98f6-dbf5-4177-b5b6-7fddd830411b",
       "article_id": "0297182f-252e-4837-b965-2aa11ecfb539",
       "topic_id": "93480e40-9d44-4ed3-bf4b-8507cc66b8a7",
-      "text": "The primary advantage of using a roller support instead of a hinge support at the end of a long-span bridge beam is that the roller:",
+      "text": "Which statement is most consistent with the local source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Prevents moment development, which can lead to structural inefficiencies in certain designs"
+          "text": "Every support develops exactly the same three reactions."
         },
         {
           "id": "b",
-          "text": "Allows thermal expansion and contraction without creating large axial forces"
+          "text": "Reaction type follows the motion restrained by the support."
         },
         {
           "id": "c",
-          "text": "Reduces the number of required supports, thereby minimizing material usage and cost"
+          "text": "Rollers always develop torsional moments."
         },
         {
           "id": "d",
-          "text": "Eliminates the need for bearings, simplifying the construction process and reducing maintenance"
+          "text": "Support symbols are unrelated to equilibrium."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A roller allows horizontal translation while restraining vertical movement. In long spans, thermal expansion and contraction can cause significant axial movement. The roller accommodates this movement freely, preventing large compressive or tensile forces that would otherwise develop in the structure.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Every support develops exactly the same three reactions. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Reaction type follows the motion restrained by the support. This stays inside the Batch 140 local source boundary for Support is a constraint that prevents a structure.",
+        "c": "Rollers always develop torsional moments. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Support symbols are unrelated to equilibrium. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Reaction type follows the motion restrained by the support. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+        "takeaway": "For Support is a constraint that prevents a structure, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297"
       },
-      "explanation": null,
-      "code_citation": "Bridge Design Practice, Thermal Expansion",
+      "explanation": "Reaction type follows the motion restrained by the support. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-03-core-concept.source-capture.md#sha256:c5672dc8093f6812157dcb4b871d3d46b03485d34408c6871ba44523195b7738; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-03-core-concept.refined.md#sha256:8da1cfdab71f6774f109e19b749fbf6afa6306f63882116b1e1d40211504d297",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-001-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:646b4f2c22f6bce3476557725139a4075194d1740fc9f20b8afb4326f92983b3"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:6f8729034db74cf8c370d39071253ad69b406ab46603135577f0b00742b191d7"
     }
   ]
 }

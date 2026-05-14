@@ -1,30 +1,30 @@
 {
   "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:86b25883a9d6701e0e9b056821551311826822a4f99ad0302729934c0c9baa16",
+  "linked_questions_hash": "sha256:7a4ed0cd0e3317b3f87bdbbe329da6e275c29b11467fbc937d4ba5717db37cc3",
   "question_count": 10,
   "questions": [
     {
       "question_id": "147c6a87-2de9-434e-93a2-27f4621adf34",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "Which analysis method is appropriate for a statically determinate beam?",
+      "text": "What does statically determinate mean in this source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "Method of joints (equilibrium only)"
+          "text": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained."
         },
         {
           "id": "b",
-          "text": "Moment distribution method, which is typically used for indeterminate structures but can be adapted for determinate ones with additional assumptions"
+          "text": "The member material has already been designed."
         },
         {
           "id": "c",
-          "text": "Slope-deflection method, generally applied to indeterminate beams but sometimes used in determinate cases for educational purposes"
+          "text": "The structure has more supports than needed."
         },
         {
           "id": "d",
-          "text": "Finite element analysis only, which is a comprehensive method applicable to all types of structures but often unnecessary for simple determinate beams"
+          "text": "The drawing has no dimensions."
         }
       ],
       "correct_option_id": "a",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A determinate structure can be analyzed using only equilibrium equations (ΣFx=0, ΣFy=0, ΣM=0). The method of joints or sections applies equilibrium to solve for reactions and internal forces directly.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "b": "The member material has already been designed. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "The structure has more supports than needed. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "The drawing has no dimensions. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Structural Analysis Methods by Determinacy",
+      "explanation": "The unknown reactions can be found from the available equilibrium equations when the body is properly constrained. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-001-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9b0f18f10f2d158e341f7226cc485b3fc22832975ed0f97fef63743886b97f23"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:ba9a1152eb0a69892e57d68cf05218d181ffad925d7b493d4614f6e45e9db5d2"
     },
     {
       "question_id": "6e3aa52a-49d2-4885-8ad4-8f458fbf7011",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A building frame consists of rigid joints (not pinned) and is supported on four columns. To determine if the frame is statically indeterminate, an engineer must account for which of the following?",
+      "text": "What makes a body statically indeterminate?",
       "options": [
         {
           "id": "a",
-          "text": "The number of columns only, which is insufficient for determining indeterminacy"
+          "text": "It has exactly enough properly arranged constraints."
         },
         {
           "id": "b",
-          "text": "The number of unknown reactions only, which does not consider the complexity of rigid joints"
+          "text": "It has no external loads in the drawing."
         },
         {
           "id": "c",
-          "text": "Unknown reactions AND unknown moments at rigid joints"
+          "text": "It has more unknown loadings or reactions than the available equilibrium equations can solve."
         },
         {
           "id": "d",
-          "text": "The frame is always determinate if columns are vertical, which is a simplification that ignores joint conditions"
+          "text": "It is made from a specific material."
         }
       ],
       "correct_option_id": "c",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A rigid-joint frame develops internal moments (unknown) at each joint in addition to support reactions. The total unknowns include all reactions (at supports) and all internal moments (at rigid joints). These must exceed 3 to determine indeterminacy; the frame is likely indeterminate.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It has exactly enough properly arranged constraints. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "It has no external loads in the drawing. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "It has more unknown loadings or reactions than the available equilibrium equations can solve. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "d": "It is made from a specific material. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "It has more unknown loadings or reactions than the available equilibrium equations can solve. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Rigid-Frame Determinacy Analysis",
+      "explanation": "It has more unknown loadings or reactions than the available equilibrium equations can solve. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-001-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:954a9961cca3f0427f22a2b331a766759c6fec2a0e4956ef2594ffbc8c0e92b6"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:ef1a3b2abfa1106b2f0050be524fadb804d319c736250d7373bc9302beac4cf5"
     },
     {
       "question_id": "a25fc81c-1499-491c-a8e4-3afd6f4de016",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A continuous beam spans across four support columns, each providing one vertical reaction. The degree of indeterminacy (n) of this beam is:",
+      "text": "In a coplanar rigid-body problem, which equations form the basic equilibrium set?",
       "options": [
         {
           "id": "a",
-          "text": "n = 0 (determinate)"
+          "text": "Only a live-load table."
         },
         {
           "id": "b",
-          "text": "n = 1 (one time indeterminate)"
+          "text": "Sum of horizontal forces, sum of vertical forces, and sum of moments equal zero."
         },
         {
           "id": "c",
-          "text": "n = 2 (two times indeterminate)"
+          "text": "Only a material stress formula."
         },
         {
           "id": "d",
-          "text": "n = 4 (four times indeterminate)"
+          "text": "Only a zoning ordinance map."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Four vertical reactions (r = 4) with 3 equilibrium equations in 2D gives n = r − 3 = 4 − 3 = 1. The beam is one time indeterminate; one redundant support exists.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only a live-load table. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Sum of horizontal forces, sum of vertical forces, and sum of moments equal zero. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "c": "Only a material stress formula. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Only a zoning ordinance map. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Sum of horizontal forces, sum of vertical forces, and sum of moments equal zero. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Degree of Indeterminacy Calculation",
+      "explanation": "Sum of horizontal forces, sum of vertical forces, and sum of moments equal zero. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "understand",
       "application_context": "calculation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-001-06-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5b8df5282a506a245ec2a1efd3b678cf6e1507651d31d514d857a2b4b20a70e9"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:89f4609042737ac291fc28f4e4a2fe27a42d0395fa3f6b7996554c08703106d8"
     },
     {
       "question_id": "86295d0b-30b2-42f9-a4ea-a6028f1e7bb1",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A cantilever beam fixed at one end has three reaction components (Hx, Hy, M) at the support. This beam is statically:",
+      "text": "Why is a redundant support important?",
       "options": [
         {
           "id": "a",
-          "text": "Determinate"
+          "text": "It adds unknown reactions beyond those required for equilibrium."
         },
         {
           "id": "b",
-          "text": "Indeterminate"
+          "text": "It removes the need for all supports."
         },
         {
           "id": "c",
-          "text": "Unstable"
+          "text": "It turns forces into materials."
         },
         {
           "id": "d",
-          "text": "Over-constrained"
+          "text": "It proves the body is unconstrained."
         }
       ],
       "correct_option_id": "a",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A cantilever has 3 unknowns (Hx, Hy, M). In 2D analysis, there are exactly 3 equilibrium equations. Three unknowns and three equations match perfectly; the beam is determinate.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "It adds unknown reactions beyond those required for equilibrium. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "b": "It removes the need for all supports. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "It turns forces into materials. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "It proves the body is unconstrained. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "It adds unknown reactions beyond those required for equilibrium. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Cantilever Beam Determinacy",
+      "explanation": "It adds unknown reactions beyond those required for equilibrium. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-001-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:300eb4b28cc60b081be7450b3f18122871e6592c6ef937236c795f538314209b"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:38a787f8c11296666cee389337bd25286eadebe4bf3791dbb554c7c6e8f1cf4e"
     },
     {
       "question_id": "43cc8681-979b-4de1-a19c-df9c04eb5a75",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A support in a statically indeterminate continuous beam settles by 10 mm. How are the internal forces affected?",
+      "text": "Why can equal counts of unknowns and equations still be unsafe?",
       "options": [
         {
           "id": "a",
-          "text": "Internal forces remain unchanged (same as determinate), assuming no additional loads are applied"
+          "text": "The title might be too short."
         },
         {
           "id": "b",
-          "text": "Internal forces change, even though the applied loads have not changed"
+          "text": "The support reactions may be improperly arranged, such as all parallel or concurrent."
         },
         {
           "id": "c",
-          "text": "Internal forces increase proportionally to the settlement amount, which is a common misconception in structural analysis"
+          "text": "The article may have a read-time value."
         },
         {
           "id": "d",
-          "text": "Indeterminate structures are not affected by support settlement, which is incorrect as settlement induces additional forces"
+          "text": "The body may use a common material."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In indeterminate structures, reactions depend on both loads AND support displacements (through deformation compatibility equations). A settling support redistributes loads to other supports, changing internal forces throughout the structure.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The title might be too short. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The support reactions may be improperly arranged, such as all parallel or concurrent. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "c": "The article may have a read-time value. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "The body may use a common material. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The support reactions may be improperly arranged, such as all parallel or concurrent. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Support Settlement Effects on Indeterminate Structures",
+      "explanation": "The support reactions may be improperly arranged, such as all parallel or concurrent. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-001-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0574528c8007689ce67527fd402f1258e7a09c779a1dd3c85dd141dd501a23ca"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:b68040a740b291ddddaa08bf4cd2357e516330680c9b33945da5de7bea06d6e5"
     },
     {
       "question_id": "344d7ef4-6e57-4160-8ec9-726ff37f39fa",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A support in a statically determinate beam settles by 10 mm due to soil compression. How are the internal forces in the beam affected?",
+      "text": "What is the consequence of all support reaction lines being concurrent in the improper-constraint example?",
       "options": [
         {
           "id": "a",
-          "text": "Internal forces increase significantly, potentially leading to structural failure if not addressed"
+          "text": "The body automatically becomes stronger."
         },
         {
           "id": "b",
-          "text": "Internal forces decrease, which may reduce the load-bearing capacity of the beam"
+          "text": "The load disappears from the diagram."
         },
         {
           "id": "c",
-          "text": "Internal forces remain unchanged (support settlement does not affect equilibrium)"
+          "text": "The applied load can rotate the body about the common point or axis."
         },
         {
           "id": "d",
-          "text": "Internal forces oscillate unpredictably, making it difficult to ensure structural stability"
+          "text": "The supports develop no reactions at all."
         }
       ],
       "correct_option_id": "c",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "In a determinate structure, reactions and internal forces depend only on applied loads and geometry, not on support displacement. A small settlement does not change the loads or span lengths, so equilibrium solutions remain identical.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The body automatically becomes stronger. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The load disappears from the diagram. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "The applied load can rotate the body about the common point or axis. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "d": "The supports develop no reactions at all. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "The applied load can rotate the body about the common point or axis. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Support Settlement Effects on Determinate Structures",
+      "explanation": "The applied load can rotate the body about the common point or axis. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-001-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c88f9a362ef1beec7305bbc0f22e3c81b8555d2f1f938944e8b75010b3ef3577"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:111b656ad2e45ed95eb4443de878fff7a07c7bd95f4ea1d29d37c8f7f6f5e89b"
     },
     {
       "question_id": "3b4cda58-122d-49c6-bec7-40c97aaf5a5c",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A designer must choose between a simply supported beam (determinate) and a continuous beam (indeterminate) spanning the same distance with identical loads. Which statement correctly compares these two options?",
+      "text": "What additional information is generally needed for statically indeterminate problems?",
       "options": [
         {
           "id": "a",
-          "text": "The simply supported beam requires less steel; the continuous beam is always superior, which is not always true"
+          "text": "Only a historic style label."
         },
         {
           "id": "b",
-          "text": "The simply supported beam has no redundancy but is easier to analyze; the continuous beam has redundancy but is sensitive to support settlement"
+          "text": "Compatibility or deformation conditions, often involving material and member properties."
         },
         {
           "id": "c",
-          "text": "The continuous beam is always stronger and cheaper, which is a generalization"
+          "text": "Only the article title."
         },
         {
           "id": "d",
-          "text": "Both beams develop identical internal forces; determinacy has no practical impact, which is incorrect"
+          "text": "Only the answer option letter."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Simply supported (determinate): single load path, simple analysis, but if one support fails, collapse follows. Continuous (indeterminate): redundant load paths, more complex analysis, but sensitive to settlement; if one support moves, internal forces redistribute and change.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Only a historic style label. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "Compatibility or deformation conditions, often involving material and member properties. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "c": "Only the article title. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Only the answer option letter. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Compatibility or deformation conditions, often involving material and member properties. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Structural Design Trade-offs: Determinate vs. Indeterminate",
+      "explanation": "Compatibility or deformation conditions, often involving material and member properties. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-001-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:688a9646719e6406c7f0f1ed47388ccbc7c87172fe130d996d2c417d82a3fe21"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:c198e3d07fa899c509811263c6079da7d2d1390e7147fd432417f0021bbf2a70"
     },
     {
       "question_id": "49de927c-0c98-4854-8958-60063f28fb09",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A simply supported beam has two support reactions. This beam is statically:",
+      "text": "Which beam support set is source-safe as a determinate cue when properly arranged?",
       "options": [
         {
           "id": "a",
-          "text": "Determinate"
+          "text": "A pin and roller providing three independent coplanar reactions."
         },
         {
           "id": "b",
-          "text": "Indeterminate"
+          "text": "Five unknown reactions for only three equations."
         },
         {
           "id": "c",
-          "text": "Unstable"
+          "text": "Supports whose reactions are all concurrent with the load moment unresisted."
         },
         {
           "id": "d",
-          "text": "Over-constrained"
+          "text": "A fixed support at both ends with six reaction components in 2D."
         }
       ],
       "correct_option_id": "a",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "A simply supported beam has 2 support reactions (unknowns). With 3 equations of equilibrium available in 2D, the beam is statically determinate. The geometry (two supports, not collinear) ensures stability.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "A pin and roller providing three independent coplanar reactions. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "b": "Five unknown reactions for only three equations. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Supports whose reactions are all concurrent with the load moment unresisted. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "A fixed support at both ends with six reaction components in 2D. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "A pin and roller providing three independent coplanar reactions. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Simply Supported Beam Determinacy",
+      "explanation": "A pin and roller providing three independent coplanar reactions. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-001-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bbbcdc7ac679a63acc14211f693f7164873b39324d0f87ba99adca83aeaf1da7"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:7ea03815cabe8204e5c447b0c8e2d193a4a3bdbfdf08afe68b27398bf6f36c76"
     },
     {
       "question_id": "98e870f2-5f59-434f-99d4-d062d934f6fd",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A fixed-ended beam has two fixed supports (one at each end), developing 3 reactions at each support (Hx, Hy, M at left; Hx, Hy, M at right). The total number of unknowns is 6. The degree of indeterminacy is:",
+      "text": "What should be checked separately from unknown count?",
       "options": [
         {
           "id": "a",
-          "text": "n = 0 (determinate), indicating no additional equations are needed for equilibrium"
+          "text": "The article slug length."
         },
         {
           "id": "b",
-          "text": "n = 1 (one time indeterminate), requiring one additional equation for solution"
+          "text": "The source file extension only."
         },
         {
           "id": "c",
-          "text": "n = 3 (three times indeterminate)"
+          "text": "Stability and proper constraint arrangement."
         },
         {
           "id": "d",
-          "text": "n = 6 (six times indeterminate), necessitating six additional equations for a complete solution"
+          "text": "The option order in the MCQ."
         }
       ],
       "correct_option_id": "c",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "With 6 unknowns and 3 equilibrium equations, n = 6 − 3 = 3. The beam is three times indeterminate; three redundant constraints must be released to analyze it using equilibrium alone.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "The article slug length. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "b": "The source file extension only. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Stability and proper constraint arrangement. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "d": "The option order in the MCQ. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Stability and proper constraint arrangement. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "Fixed-Ended Beam Indeterminacy",
+      "explanation": "Stability and proper constraint arrangement. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "understand",
       "application_context": "recall",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-001-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:521dc35fbcc9e99a18ff4247b68da7d8071910a2169dc9e4d919d3f6a61881b1"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:e9e1ab8ba1c3f60ef7bfaf461fdb89790a9e5e39e247bf7b2ca9fc5301f9c916"
     },
     {
       "question_id": "6597ee20-dad2-47d9-8b67-6e22bcb35bc1",
       "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
       "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
-      "text": "A structure is considered statically determinate if:",
+      "text": "Which answer is the safest Batch 140 exam strategy for determinacy?",
       "options": [
         {
           "id": "a",
-          "text": "All reactions and internal forces can be found using only equilibrium equations"
+          "text": "Count unknown reactions, compare with equilibrium equations, and check that reactions are properly arranged."
         },
         {
           "id": "b",
-          "text": "The structure does not deform under load, maintaining its original shape and dimensions"
+          "text": "Assume all beams are determinate."
         },
         {
           "id": "c",
-          "text": "The structure has more than three support reactions, which are necessary to maintain stability under various loading conditions"
+          "text": "Use deformation methods before drawing a free-body diagram for every problem."
         },
         {
           "id": "d",
-          "text": "The material properties (E and I) are known, allowing for precise calculations of deflection and stress"
+          "text": "Ignore supports and classify by material alone."
         }
       ],
       "correct_option_id": "a",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Static determinacy is defined by the ability to solve for all reactions and forces using only the three equations of equilibrium (ΣFx=0, ΣFy=0, ΣM=0), without needing material properties or deformation information.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "a": "Count unknown reactions, compare with equilibrium equations, and check that reactions are properly arranged. This stays inside the Batch 140 local source boundary for Static Determinacy.",
+        "b": "Assume all beams are determinate. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "c": "Use deformation methods before drawing a free-body diagram for every problem. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "d": "Ignore supports and classify by material alone. is not the best answer because it either changes the statics concept or adds a claim outside the Batch 140 local source boundary.",
+        "correct": "Count unknown reactions, compare with equilibrium equations, and check that reactions are properly arranged. Supported by vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+        "takeaway": "For Static Determinacy, classify the statics cue first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6"
       },
-      "explanation": null,
-      "code_citation": "NSCP Structural Analysis, Static Determinacy",
+      "explanation": "Count unknown reactions, compare with equilibrium equations, and check that reactions are properly arranged. Supported by the Batch 140 local source boundary: vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/source-map-batch-140/lea-strc-001-06-core-concept.source-capture.md#sha256:6d6cdb0e4fda2c6ebb4649e529ae7f5076ae0669f38706a0075f31d3bb1446b2; vitruvius-connection/002_Raw-Conversion-Layer/006 -Structural/refined_markdown/source-map-batch-140/lea-strc-001-06-core-concept.refined.md#sha256:ede4bee9b2a74471bcff2610316bfb9f63fd276e289f0afec341df8d541d0ac6",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +521,8 @@
       "model_id": "ALE-STRC-001-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.016764+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c839a1a1e670bfd3b97f6234c6bd74ff726c14ca011b6167bf043de54b7e5715"
+      "updated_at": "2026-05-14T00:41:45.465Z",
+      "content_hash": "sha256:85e9040919c97f265a0156ff9b27b350c54bc9808cf1b665a023c19060a740b4"
     }
   ]
 }
