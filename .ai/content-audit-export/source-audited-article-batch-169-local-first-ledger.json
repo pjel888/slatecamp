@@ -1,0 +1,384 @@
+{
+  "batch": 169,
+  "batch_id": "source-audited-batch-169-local-first-closure",
+  "status": "closure_no_selected_articles_residual_queue_exhausted_after_batch_168_no_git_stage_by_user_instruction",
+  "generated_at": "2026-05-14T20:55:15+08:00",
+  "repo": "/Users/philiplewis/slatecamp",
+  "target_branch": "3dlab-gray-viewport-bg",
+  "observed_current_branch_at_selection": "3dlab-gray-viewport-bg",
+  "source_policy": "local_first_only_no_supabase_push_no_deploy_no_db_mutation_no_main_merge_no_force_push_no_git_stage_commit_or_push_exact_batch_169_handoff_paths_only",
+  "baseline": {
+    "accepted_batch_168_commit": "737e108b04967964d5238c1eae408b3f154521da",
+    "accepted_batch_168_subject": "chore(content): accept source-audited batch 168",
+    "origin_3dlab_gray_viewport_bg": "737e108b04967964d5238c1eae408b3f154521da",
+    "baseline_verified_by": "git rev-parse HEAD origin/3dlab-gray-viewport-bg; git log -1 --format=%H%x09%s; git show --stat --oneline --name-status HEAD"
+  },
+  "working_tree_context": {
+    "pre_existing_dirty_tree": true,
+    "dirty_paths_observed_before_batch_169": [
+      ".ai/00_performance/results/dev_server_memory_profile_dev-server.json",
+      ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+      ".ai/README.md",
+      ".ai/content-audit-export/articles/lea-strc-011-03-core-concept--d7de9bc9-ea50-46d1-8079-2dd3cc0378e7/compose-error.json",
+      ".ai/content-audit-export/sync-state.json",
+      ".ai/content-audit-export/ui-block-edit-validation.json",
+      ".ai/content-audit-export/validation-report.json",
+      ".hermes/skills/README.md",
+      "src/components/marketing/HeroSection.tsx",
+      "src/components/marketing/MarketingNav.tsx",
+      "src/components/marketing/hero/HeroHousePreview.tsx",
+      "src/features/3d-lab/config/registry/cat-16.ts",
+      "src/features/3d-lab/hooks/useTemplateContent.tsx",
+      "tests/vitest/components/marketing/hero-house-preview.test.tsx",
+      "tests/vitest/components/marketing/landing-page-surface.test.tsx"
+    ],
+    "untracked_dirty_context": "Large pre-existing untracked prompt, run, docs, and 3D/product files were observed in git status. Batch 169 did not read them as source of truth and did not modify them.",
+    "batch_169_allowed_new_paths_only": [
+      ".ai/content-audit-export/source-audited-article-batch-169-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-169-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-169-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-169-independent-quality-review.md",
+      ".ai/03_plans/batch-169-git-handoff-stage-paths.txt"
+    ]
+  },
+  "process_context": {
+    "ps_status": "blocked_operation_not_permitted",
+    "ps_command": "ps -axo pid,ppid,stat,etime,command",
+    "pgrep_status": "blocked_cannot_get_process_list",
+    "pgrep_command": "pgrep -fl 'node|bun|next|supabase|omx|codex|vite|playwright|postgres'",
+    "lsof_status": "pass",
+    "lsof_command": "lsof -nP -iTCP -sTCP:LISTEN",
+    "listener_summary": [
+      "node on *:3000",
+      "bun on 127.0.0.1:37777",
+      "postgres on 127.0.0.1:5432",
+      "mongod on 127.0.0.1:27017",
+      "java on 127.0.0.1:7474 and 127.0.0.1:7687",
+      "system/app listeners on ports 5000, 7000, 49190, 59729, 59730, 56708, 30272, 7265, 3111, 3112, 3113, and 49134"
+    ]
+  },
+  "repo_orientation_evidence": {
+    "skill_used": "repo-orientation",
+    "docs_read": [
+      "README.md",
+      "AGENTS.md via user-provided root instructions",
+      "CLAUDE.md",
+      ".ai/00_system/CODEX_ENABLEMENT_GUIDE.md",
+      ".ai/00_system/repo-map.md"
+    ],
+    "nested_agents_in_scope": {
+      ".ai/content-audit-export": [],
+      ".ai/03_plans": [
+        ".ai/03_plans/preserved/2026-05-05-superseded-content-editorial-pipeline-inputs/slatecamp-ai-audit-admin-ui-docs/AGENTS.md"
+      ],
+      "applied": "No nearer active AGENTS.md exists under .ai/content-audit-export or the active .ai/03_plans paths used for Batch 169."
+    }
+  },
+  "selection_result": {
+    "selected_clusters": [],
+    "entries": [],
+    "article_count": 0,
+    "linked_question_count": 0,
+    "question_edit_count": 0,
+    "answer_key_changes": 0,
+    "selected_blockers": 0,
+    "scenario_status": "not_applicable_no_selected_articles"
+  },
+  "closure_reason": "No Batch 169 article was selected because live accepted artifacts through Batch 168 show no remaining eligible source-auditable residual cluster. Batch 160 listed eight residual blockers; Batches 161, 162, and 163 consumed all eight with article/question source-audited edits; Batch 164 remediated question alignment across the same eight clusters; Batches 165, 166, 167, and 168 then recorded zero-content closures.",
+  "batch160_blocked_clusters": [
+    "lea-strc-004-02",
+    "lea-strc-007-03",
+    "lea-strc-007-05",
+    "lea-strc-012-01",
+    "lea-util-004-05",
+    "lea-util-004-08",
+    "lea-strc-009-01",
+    "lea-strc-009-02"
+  ],
+  "consumed_residuals": [
+    {
+      "batch": 161,
+      "clusters": [
+        "lea-strc-004-02",
+        "lea-strc-007-03",
+        "lea-strc-007-05",
+        "lea-strc-012-01",
+        "lea-strc-009-01"
+      ],
+      "selected_blockers": 0,
+      "answer_key_changes": 0
+    },
+    {
+      "batch": 162,
+      "clusters": [
+        "lea-strc-009-02"
+      ],
+      "selected_blockers": 0,
+      "answer_key_changes": 0
+    },
+    {
+      "batch": 163,
+      "clusters": [
+        "lea-util-004-05",
+        "lea-util-004-08"
+      ],
+      "selected_blockers": 0,
+      "answer_key_changes": 0
+    },
+    {
+      "batch": 164,
+      "clusters": [
+        "lea-strc-004-02",
+        "lea-strc-007-03",
+        "lea-strc-007-05",
+        "lea-strc-012-01",
+        "lea-strc-009-01",
+        "lea-strc-009-02",
+        "lea-util-004-05",
+        "lea-util-004-08"
+      ],
+      "article_body_edits": 0,
+      "linked_question_count": 90,
+      "question_edit_count": 90,
+      "answer_key_changes": 0,
+      "purpose": "question_alignment_remediation_for_batches_161_to_163"
+    }
+  ],
+  "sourceable_deferred_resolution": [
+    {
+      "cluster": "lea-strc-009-02",
+      "old_status": "SOURCEABLE_DEFERRED in Batch 161",
+      "resolution": "Consumed by accepted Batch 162."
+    },
+    {
+      "cluster": "lea-util-004-05",
+      "old_status": "UNSUPPORTED_FOR_BATCH_161 and UNSUPPORTED_FOR_BATCH_162",
+      "resolution": "Consumed by accepted Batch 163 after source scope was narrowed to checked NSCP nonstructural equipment and flood utility boundaries."
+    },
+    {
+      "cluster": "lea-util-004-08",
+      "old_status": "UNSUPPORTED_FOR_BATCH_161 and UNSUPPORTED_FOR_BATCH_162",
+      "resolution": "Consumed by accepted Batch 163 after source scope was narrowed to checked NSCP seismic, anchorage, relative-motion, and equipment-restraint boundaries."
+    }
+  ],
+  "latest_closure_chain": [
+    {
+      "batch": 165,
+      "status": "closure_no_selected_articles_residual_queue_already_exhausted_after_batch_164",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 166,
+      "status": "closure_no_selected_articles_residual_queue_already_exhausted_after_batch_165",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 167,
+      "status": "closure_no_selected_articles_residual_queue_already_exhausted_after_batch_166_git_stage_blocked",
+      "remaining_blocked_clusters": []
+    },
+    {
+      "batch": 168,
+      "status": "closure_no_selected_articles_residual_queue_exhausted_after_batch_167_git_stage_blocked",
+      "remaining_blocked_clusters": []
+    }
+  ],
+  "live_artifact_reconciliation_notes": [
+    {
+      "artifact": "Batch 168 report, ledger, and scoped checks",
+      "observation": "The artifact text records git staging as blocked, but live git now proves Batch 168 was accepted and pushed at 737e108b0 on both HEAD and origin/3dlab-gray-viewport-bg.",
+      "effect_on_batch_169": "Use live git as authoritative for accepted baseline."
+    },
+    {
+      "artifact": "Batch 165 to 168 closure chain",
+      "observation": "Later closure packets preserve final-remediation backlog but do not identify a new content-ready residual cluster.",
+      "effect_on_batch_169": "Final-depth and source-needed items remain backlog, not Batch 169 selected content."
+    },
+    {
+      "artifact": "Working tree dirty files",
+      "observation": "Unrelated product, 3D, Hermes, docs, shared export-state, deleted compose-error, prompt, and run-directory changes exist outside Batch 169 scope.",
+      "effect_on_batch_169": "Batch 169 writes only the five intended handoff paths and does not inspect or modify unrelated dirty files as content targets."
+    }
+  ],
+  "current_head_ledger_hashes": [
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-160-local-first-ledger.json",
+      "sha256": "sha256:6c8f6ac1bf27185ba18c78d4a938eb53917b9997d587bb5986378cc9a1f2cb20"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-161-local-first-ledger.json",
+      "sha256": "sha256:be50212497eaba799e86082245deadc4438416b95b178a344fe18695c14f871a"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-162-local-first-ledger.json",
+      "sha256": "sha256:bd40c2645baf4e9d78647bcca29691a59747f9e0b587905eb809732eff485f00"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-163-local-first-ledger.json",
+      "sha256": "sha256:179eddf901b9486f0e0cba25af5b04f5746b2121f9b675c1276039bb835af278"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-164-local-first-ledger.json",
+      "sha256": "sha256:632550a4d82fc78b8655664b99cfed83c959c9019a7a192abdd96d51052469b7"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-165-local-first-ledger.json",
+      "sha256": "sha256:44c4862b5f6d281462773229a3f6faf9ddaef06663f70a7d08a79cbd2efa3497"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-166-local-first-ledger.json",
+      "sha256": "sha256:27141f8445f7f170f8dbd9cca8961390c91541c0eebb3a29db8c0c442e273180"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-167-local-first-ledger.json",
+      "sha256": "sha256:3b4edc78f1d3f79f7d930335e41732da2e0cd61eb13fda68f7f4559f3aa0ed96"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-168-local-first-ledger.json",
+      "sha256": "sha256:e823fbf057483c6784200fe05690334f543bc89921cf9640097bd9eb5fff0a67"
+    }
+  ],
+  "current_head_batch168_artifact_hashes": [
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-168-local-first-ledger.json",
+      "sha256": "sha256:e823fbf057483c6784200fe05690334f543bc89921cf9640097bd9eb5fff0a67"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-168-local-first-report.md",
+      "sha256": "sha256:23e46971e5a688db8e4b4907d75adffcccc1bcb410f0c83f84869383664c5278"
+    },
+    {
+      "path": ".ai/content-audit-export/source-audited-article-batch-168-local-first-scoped-checks.json",
+      "sha256": "sha256:cec93946b2e81604b96fba076f7f669004a222fedd2291cdb88efa7a28b5fac0"
+    },
+    {
+      "path": ".ai/03_plans/batch-168-independent-quality-review.md",
+      "sha256": "sha256:b97a67bfa9b995485c04d72b0a30a05a91a6b3ad2e8131e6ab26cc35c0921df4"
+    },
+    {
+      "path": ".ai/03_plans/batch-168-git-handoff-stage-paths.txt",
+      "sha256": "sha256:6cdff7adbc2e2b1f897516481b135bab5f20557a75bcc468080e567d29487cae"
+    },
+    {
+      "path": ".ai/03_plans/batch-168-git-handoff-stage-list.md",
+      "sha256": "sha256:9ca21e07e60f0369c5b171c000a10872cd47e86631bd08b6811c228e00526e12"
+    }
+  ],
+  "current_head_source_evidence_hashes": [
+    {
+      "cluster": "lea-strc-004-02",
+      "path": ".ai/content-audit-export/articles/lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe/source-audit-evidence.json",
+      "sha256": "sha256:2f54d23e5ecdebc3e13c5e5a0c90ce06804527e0fa70ed39fbd52668dabbd688",
+      "locator_summary": "NSCP page-0240.md lines 16-26 for Section 208.4.4.1 and Table 208-3."
+    },
+    {
+      "cluster": "lea-strc-007-03",
+      "path": ".ai/content-audit-export/articles/lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43/source-audit-evidence.json",
+      "sha256": "sha256:a0e7a76401577f38c5b42aa58512c63cbad3b2ae1b5f1e10304073998abb542e",
+      "locator_summary": "NSCP page-0482.md lines 7-89 and page-0483.md lines 36-68 for Section 424 and deflection tables."
+    },
+    {
+      "cluster": "lea-strc-007-05",
+      "path": ".ai/content-audit-export/articles/lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3/source-audit-evidence.json",
+      "sha256": "sha256:b01b951a4c38049f7a951b66729336da0f4e7c4f1d2a9bfe3f0245987aa25c8f",
+      "locator_summary": "NSCP page-0463.md lines 60-81 and page-0508.md lines 3-27 for embedments and conduit constraints."
+    },
+    {
+      "cluster": "lea-strc-012-01",
+      "path": ".ai/content-audit-export/articles/lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce/source-audit-evidence.json",
+      "sha256": "sha256:f446748308176a226319df1233653c9148e7dea378814582a692ad066e8e1cde",
+      "locator_summary": "NSCP page-0060.md, page-0080.md, page-0081.md, page-0092.md, page-0095.md, and page-0121.md for wind definitions and procedure context."
+    },
+    {
+      "cluster": "lea-strc-009-01",
+      "path": ".ai/content-audit-export/articles/lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31/source-audit-evidence.json",
+      "sha256": "sha256:50ecd312180cbf1245ea137c437b9f6dba52962fb78e2915f49c68a829f6c803",
+      "locator_summary": "NSCP page-0870.md lines 13-113 and page-0871.md lines 3-16 and 35-42 for timber decay and termite protection."
+    },
+    {
+      "cluster": "lea-strc-009-02",
+      "path": ".ai/content-audit-export/articles/lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e/source-audit-evidence.json",
+      "sha256": "sha256:8e2612e03d61e6998f3e0f9ff761b30054caf180e7e2ac2e2776e16cb04c04eb",
+      "locator_summary": "NSCP page-0889.md lines 5-65 and page-0943.md lines 51-96 for timber stress groups and machine-graded lumber."
+    },
+    {
+      "cluster": "lea-util-004-05",
+      "path": ".ai/content-audit-export/articles/lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5/source-audit-evidence.json",
+      "sha256": "sha256:5df39c03544605fd9d82825d7c5671a2c5d45581d0ff1a906048700eccf5e5ed",
+      "locator_summary": "NSCP pages page-0237.md, page-0240.md, page-0259.md, page-0283.md through page-0287.md, and page-0290.md for nonstructural equipment restraint and flood utility boundaries."
+    },
+    {
+      "cluster": "lea-util-004-08",
+      "path": ".ai/content-audit-export/articles/lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6/source-audit-evidence.json",
+      "sha256": "sha256:c72037ce3cc04bafd95077ad549a5ee830591d174343deef62ce0fdbe6e4bcff",
+      "locator_summary": "NSCP pages page-0237.md, page-0240.md, page-0259.md, page-0283.md through page-0287.md, and page-0290.md for seismic bracing workflow and vibration-isolated MEPF equipment."
+    }
+  ],
+  "source_families_used_for_closure_proof": [
+    {
+      "family": "NSCP 2015 Volume I local OCR",
+      "source_type": "primary_code_local_ocr",
+      "raw_source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National-Structural-Code-of-Ph-7th-Ed.pdf",
+      "raw_source_sha256": "sha256:2cd83a4f520e16a48b558ccc60c50e85f16c2547e34850c60669e7a9e0763e03",
+      "conversion_root": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition",
+      "source_metadata_path": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/SOURCE-METADATA.json",
+      "conversion_page_count": 1008,
+      "provenance_note": "Local source supplied by Philip for internal SlateCamp source-audit conversion. Do not redistribute copyrighted source PDF."
+    },
+    {
+      "family": "Rejected corrupted NSCP-labeled file",
+      "raw_source_path": "vitruvius-connection/001_Raw-Source-Layer/006 -Structural/National Structural Code of the Philippines 2015.pdf",
+      "raw_source_sha256": "sha256:12e04770e37571def323e6d0f29b0d20c7c4d4e088d39f519e0f2e0b5d91cc54",
+      "status": "rejected_null_byte_corrupted_file_not_used"
+    }
+  ],
+  "residual_queue_scan_summary": {
+    "source_audited_batch_ledgers_scanned": 145,
+    "max_batch_ledger_seen": 168,
+    "recent_manifest_scan": "Production-line manifests through Batch 161 and ledgers through Batch 168 were scanned. Older Batch 156 to 160 blocked/deferred records are all resolved by accepted Batches 158, 159, 161, 162, 163, and 164 or are superseded by later zero-content closures.",
+    "remaining_blocked_clusters_after_batch_168": [],
+    "remaining_sourceable_deferred_clusters_after_batch_168": [],
+    "eligible_batch_169_clusters": []
+  },
+  "final_remediation_backlog_preserved": [
+    "THIN_NEEDS_EXPANSION findings remain final-depth remediation candidates and are not marked fixed by this closure.",
+    "Scenario opportunities remain final-remediation pedagogy work unless already source-safe in the selected prior batch evidence.",
+    "Question-alignment findings are preserved; Batch 164 remediated the reopened NSCP set, but this closure does not certify all historic question pedagogy beyond that accepted scope.",
+    "Source-primary/source-needed findings remain a final remediation backlog for deeper enrichment, not Batch 169 content-ready residual work.",
+    "Non-blocking final-readiness items still include high question-count sampling, BIM/LOD/IFC/ISO 19650 enrichment, RA 10173/NPC detail enrichment, QS/BOQ/estimating standards, older thin theory/professional-practice depth, CTR-020 form/template depth, waterproofing source depth, taxonomy/passport backfill, and Batch 159 refinements."
+  ],
+  "blockers": [],
+  "git": {
+    "intended_stage_paths_file": ".ai/03_plans/batch-169-git-handoff-stage-paths.txt",
+    "intended_commit": "chore(content): accept source-audited batch 169",
+    "stage_status": "not_attempted_by_user_instruction",
+    "stage_command": "git add --pathspec-from-file=.ai/03_plans/batch-169-git-handoff-stage-paths.txt",
+    "commit_push_status": "not_attempted_by_user_instruction"
+  },
+  "validation_claims": {
+    "latest_accepted_content_state": "pass_batch_168_at_737e108b0_head_matches_origin",
+    "residual_reconciliation": "pass_no_eligible_source_auditable_clusters_after_batch_168",
+    "selected_article_count": "pass_0",
+    "linked_question_question_edit_parity": "pass_0_to_0",
+    "answer_key_changes": "pass_0",
+    "selected_blockers": "pass_0",
+    "compose_strict": "not_applicable_no_selected_articles",
+    "diff_strict": "not_applicable_no_selected_articles",
+    "official_scoped_validate": "not_applicable_no_selected_articles",
+    "source_evidence_hashes_and_locators": "pass_current_HEAD_hashes_recorded",
+    "json_parse": "pass",
+    "marker_internal_note_source_gap_scan": "pass",
+    "source_verification_invariants": "pass_7_pass_0_fail",
+    "independent_qa": "pass_native_reviewer_no_child_worker_spawned",
+    "git_diff_check": "pass",
+    "git_stage": "not_attempted_by_user_instruction",
+    "git_commit_push": "not_attempted_by_user_instruction"
+  },
+  "intended_paths": [
+    ".ai/content-audit-export/source-audited-article-batch-169-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-169-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-169-local-first-scoped-checks.json",
+    ".ai/03_plans/batch-169-independent-quality-review.md",
+    ".ai/03_plans/batch-169-git-handoff-stage-paths.txt"
+  ]
+}

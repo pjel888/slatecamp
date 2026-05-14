@@ -1,0 +1,140 @@
+{
+  "batch": 169,
+  "batch_id": "source-audited-batch-169-local-first-closure",
+  "status": "passed_local_validation_no_git_stage_by_user_instruction",
+  "generated_at": "2026-05-14T20:55:15+08:00",
+  "scope": {
+    "selected_articles": [],
+    "selected_article_count": 0,
+    "selected_linked_question_count": 0,
+    "selected_question_edit_count": 0,
+    "answer_key_changes": 0,
+    "article_folder_edits": [],
+    "source_folder_edits": [],
+    "closure_artifacts": [
+      ".ai/content-audit-export/source-audited-article-batch-169-local-first-report.md",
+      ".ai/content-audit-export/source-audited-article-batch-169-local-first-ledger.json",
+      ".ai/content-audit-export/source-audited-article-batch-169-local-first-scoped-checks.json",
+      ".ai/03_plans/batch-169-independent-quality-review.md",
+      ".ai/03_plans/batch-169-git-handoff-stage-paths.txt"
+    ],
+    "shared_state_files_touched": []
+  },
+  "checks": [
+    {
+      "name": "latest_accepted_content_state",
+      "status": "pass",
+      "command": "git rev-parse HEAD origin/3dlab-gray-viewport-bg; git log -1 --format=%H%x09%s",
+      "evidence": "HEAD and origin/3dlab-gray-viewport-bg both resolve to 737e108b04967964d5238c1eae408b3f154521da, subject chore(content): accept source-audited batch 168."
+    },
+    {
+      "name": "live_git_status_and_dirty_scope",
+      "status": "pass",
+      "command": "git status --short --branch; git diff --name-only",
+      "evidence": "Branch is 3dlab-gray-viewport-bg tracking origin. Pre-existing unrelated dirty files exist in docs, shared export state, Hermes, marketing, 3D, tests, prompts, and run directories. Batch 169 writes only the five intended handoff paths."
+    },
+    {
+      "name": "os_process_context",
+      "status": "pass_with_limitation",
+      "command": "ps -axo pid,ppid,stat,etime,command; pgrep -fl ...; lsof -nP -iTCP -sTCP:LISTEN",
+      "evidence": "ps and pgrep process listing were blocked by OS/sandbox restrictions. lsof succeeded and showed local listeners including node :3000, bun 127.0.0.1:37777, postgres 127.0.0.1:5432, mongod 127.0.0.1:27017, and Java listeners on 7474/7687."
+    },
+    {
+      "name": "repo_orientation",
+      "status": "pass",
+      "command": "Read README.md, root AGENTS.md from user prompt, CLAUDE.md, .ai/00_system/CODEX_ENABLEMENT_GUIDE.md, .ai/00_system/repo-map.md, and active nested AGENTS search.",
+      "evidence": "Repo is a pre-launch MVP, Bun-first, with .ai as operational intelligence. No nearer active AGENTS.md exists under .ai/content-audit-export or the active .ai/03_plans paths used for Batch 169."
+    },
+    {
+      "name": "residual_eligibility_reconciliation",
+      "status": "pass",
+      "command": "Node JSON scan over source-audited Batch 160-168 ledgers and production-line manifests",
+      "evidence": "Batch 160 listed eight blocked residual clusters. Batches 161-163 consumed all eight. Batch 164 remediated question alignment across the same eight clusters with 90 question edits and 0 answer-key changes. Batches 165-168 then recorded no remaining blocked clusters. The only sourceable-deferred old item, lea-strc-009-02, was consumed by Batch 162."
+    },
+    {
+      "name": "artifact_discrepancy_reconciliation",
+      "status": "pass",
+      "command": "Read Batch 168 report/ledger/scoped checks and compare to live git",
+      "evidence": "Batch 168 artifact text says staging was blocked, but live git proves Batch 168 is accepted and pushed at 737e108b0. Batch 169 uses live git as authority."
+    },
+    {
+      "name": "selected_article_count",
+      "status": "pass",
+      "command": "Batch 169 ledger invariant",
+      "evidence": "selected_clusters=[], article_count=0, linked_question_count=0, question_edit_count=0, answer_key_changes=0, selected_blockers=0."
+    },
+    {
+      "name": "compose_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:compose -- --article-id <id> --dry-run --strict --overwrite",
+      "evidence": "No article bundle was selected or edited in Batch 169."
+    },
+    {
+      "name": "diff_strict",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun run content-audit:diff -- --article-id <id> --dry-run --strict --summary",
+      "evidence": "No article bundle was selected or edited in Batch 169."
+    },
+    {
+      "name": "official_scoped_validate",
+      "status": "not_applicable_no_selected_articles",
+      "command": "bun scripts/content-audit/validate-bundles.ts --input <scoped selected-article root> --dry-run --json",
+      "evidence": "No selected article bundle exists. No temporary validation root was created."
+    },
+    {
+      "name": "linked_question_question_edit_parity",
+      "status": "pass",
+      "command": "Batch 169 ledger invariant",
+      "evidence": "0 selected linked questions equals 0 generated question edits; answer-key changes=0."
+    },
+    {
+      "name": "source_evidence_hashes_and_locators",
+      "status": "pass",
+      "command": "shasum -a 256 over Batch 160-168 ledgers, Batch 168 artifacts, and eight accepted residual source-evidence files",
+      "evidence": "Current HEAD ledger hashes, Batch 168 artifact hashes, and current HEAD source-evidence hashes are recorded in the Batch 169 ledger."
+    },
+    {
+      "name": "json_parse",
+      "status": "pass",
+      "command": "node JSON.parse over Batch 169 JSON artifacts",
+      "evidence": "Batch 169 ledger and scoped-checks JSON parsed successfully."
+    },
+    {
+      "name": "marker_internal_note_source_gap_scan",
+      "status": "pass",
+      "command": "marker/source-risk scan over Batch 169 intended paths",
+      "evidence": "Scan found only intentional preserved backlog terms and historical statuses: THIN_NEEDS_EXPANSION, SOURCEABLE_DEFERRED, UNSUPPORTED_FOR_BATCH_161, and UNSUPPORTED_FOR_BATCH_162. No unresolved placeholder markers were found. Git/deploy/DB operation strings appear only as prohibited or not-attempted handoff text."
+    },
+    {
+      "name": "source_verification_invariants",
+      "status": "pass",
+      "command": "bun run test:source-verification",
+      "evidence": "7 pass, 0 fail, 244 expect() calls."
+    },
+    {
+      "name": "independent_qa",
+      "status": "pass",
+      "command": "Native independent QA pass, no child worker spawned",
+      "evidence": "Native QA found no content-selection blocker and verified live baseline, residual exhaustion, old deferred resolution, Batch 168 acceptance reconciliation, current HEAD hashes, closure scope, process-context limitation disclosure, and final remediation backlog preservation."
+    },
+    {
+      "name": "git_diff_whitespace_check",
+      "status": "pass",
+      "command": "git diff --check -- $(cat .ai/03_plans/batch-169-git-handoff-stage-paths.txt) plus no-index checks for untracked paths",
+      "evidence": "Scoped git diff --check plus no-index whitespace checks exited 0 for all five intended Batch 169 paths."
+    },
+    {
+      "name": "git_stage_exact_paths",
+      "status": "not_attempted_by_user_instruction",
+      "command": "git add --pathspec-from-file=.ai/03_plans/batch-169-git-handoff-stage-paths.txt",
+      "evidence": "User explicitly instructed not to stage, commit, or push. No git add, cached diff, commit, or push was attempted."
+    }
+  ],
+  "warnings": [
+    "Batch 169 intentionally excludes shared export state files because no selected article requires shared state churn.",
+    "Batch 169 intentionally excludes the stale deleted compose-error artifact under lea-strc-011-03 and all unrelated dirty product, 3D, Hermes, prompt, docs, and run-directory files.",
+    "Final-audit THIN_NEEDS_EXPANSION, scenario, question-alignment, and source-primary findings remain final-remediation backlog.",
+    "OS process context is limited because ps and pgrep were blocked; lsof listener context was available."
+  ],
+  "final_status": "passed_local_validation_no_git_stage_by_user_instruction"
+}
